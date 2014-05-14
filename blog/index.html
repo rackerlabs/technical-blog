@@ -1,0 +1,58 @@
+---
+layout: default
+title: Rackspace Developer Center
+---
+ <div class="bodyitem twocol-layout clearfix">
+   <div class="content">
+     <h1>The <span class="highlight-blue">Devops</span> Blog</h1>
+      <span class="page-subtitle">"Devops Rules the Cloud."</span>
+
+      <ul class="blog-entries">
+				{% for post in paginator.posts %}
+          <li class="entry">
+					  <h2 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+              <span class="byline">By {{ post.author }} - Posted on {{ post.date | date: "%b %-d %Y" }}</span>
+                <div class="entry-content">
+                  {{ post.excerpt }}
+                </div>
+                <a href="{{ post.url }}" class="readmore">Continue Reading &raquo;</a>
+          </li>
+			    {% endfor %}
+
+                <li class="pagination-container">
+                    <ul class="pagination">
+                        <li class="page"><a href="/blog">&laquo; First</a></li>
+						 {% for page in (1..paginator.total_pages) %}
+							{% if page == paginator.page %}
+								{% assign page_style = 'current' %}
+							{% else %}
+								{% assign page_style = '' %}
+							{% endif %}
+
+							{% if page == 1 %}
+								<li class="page {{ page_style }}"><a href="/blog">{{ page }}</a></li>
+							{% else %}
+								<li class="page {{ page_style }}"><a href="/blog/page{{ page }}">{{ page }}</a></li>
+							{% endif %}
+
+						{% endfor %}
+                        <li class="page"><a href="/blog/page{{ paginator.total_pages }}">Last &raquo;</a></li>
+                    </ul>
+
+                </li>
+
+            </ul>
+
+        </div>
+		{% include sidebar.html %}
+
+
+
+
+
+
+
+
+
+
+
