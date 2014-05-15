@@ -1,0 +1,51 @@
+@navbar-min-height: 42px;
+@navbar-padding-vertical-custom: 12px;
+.navbar.navbar-static-top {
+  margin-bottom: 0;
+  min-height: @navbar-min-height;
+  border: none;
+
+  .navbar-header .navbar-brand {
+    text-transform: uppercase;
+    color: white;
+    line-height: 20px;
+    font-size: 0.9em;
+    font-weight: 600;
+
+    background: url(/img/rs-logo.svg) no-repeat left center;
+    background-size: 20px;
+    padding: @navbar-padding-vertical-custom @navbar-padding-vertical-custom @navbar-padding-vertical-custom 23px;
+    height: @navbar-min-height;
+  }
+
+  .navbar-header {
+    @media (max-width: @grid-float-breakpoint) {
+      margin-left: 0;
+    }
+  }
+
+  &.navbar-inverse {
+    background-color: black;
+
+    .navbar-nav > li > a {
+      color: white;
+      font-size: 0.9em;
+    }
+  }
+}
+
+.navbar-nav {
+  // Uncollapse the nav
+  @media (min-width: @grid-float-breakpoint) {
+    > li {
+      > a {
+        padding-top: @navbar-padding-vertical-custom - 2;
+        padding-bottom: @navbar-padding-vertical-custom - 2;
+      }
+    }
+  }
+}
+
+.navbar-toggle {
+  padding: 5px 6px;
+}
