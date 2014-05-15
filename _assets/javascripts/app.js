@@ -2,6 +2,4 @@
 // others under this directory. Rather than adding JavaScript here, add it
 // somewhere else in this directory and it'll be included.
 
-//= require jquery
-//= require bootstrap
 //= require_tree .
