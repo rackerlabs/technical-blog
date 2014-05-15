@@ -1,9 +1,0 @@
-/*
- * This is the master, all-in-one CSS file that's derived from all other
- * stylesheet assets under _assets/stylesheets. Don't add styles here; create
- * new .less files under _assets/stylesheets and they'll be compiled and
- * concatenated automatically.
- *
- *= require_tree .
- *
- */
