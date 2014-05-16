@@ -2,4 +2,4 @@
 // others under this directory. Rather than adding JavaScript here, add it
 // somewhere else in this directory and it'll be included.
 
-//= require_tree .
+//= require lib/jquery/jquery-1.11.1
