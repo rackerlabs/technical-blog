@@ -3,3 +3,5 @@
 // somewhere else in this directory and it'll be included.
 
 //= require lib/jquery/jquery-1.11.1
+//= require lib/bootstrap/collapse
+//= require lib/bootstrap/dropdown
