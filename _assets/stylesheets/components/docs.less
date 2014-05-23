@@ -1,5 +1,29 @@
 .docs-content {
-  .headerlink {
-    display: none;
+  h1, h2, h3 {
+    position: relative;
+    margin-left: -20px;
+    padding-left: 20px;
+
+    .headerlink {
+      display: none;
+      position: absolute;
+      color: #dedede;
+    }
+
+    &:hover .headerlink {
+      display: inline;
+    }
+  }
+
+  h1 .headerlink {
+    left: 0;
+  }
+
+  h2 .headerlink {
+    left: 4px;
+  }
+
+  h3 .headerlink {
+    left: 6px;
   }
 }
