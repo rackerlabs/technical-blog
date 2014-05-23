@@ -13,34 +13,32 @@ title: Node.js SDKs
   <hr />
   <h2>Installation</h2>
   <p>Generally, all node.js packages are recommended to be installed via npm, and <strong>pkgcloud</strong> is no different:</p>
-  <pre>
-    npm install pkgcloud
-  </pre>
+  {% highlight sh %}
+$ npm install pkgcloud{% endhighlight %}
   <h2>Using pkgcloud</h2>
   <p>For any combination of service & region, a user should create a single client, and then use that client to access APIs for that service & region combination. If you had assets in both <em>ORD</em> &amp; <em>IAD</em> you would create two clients.</p>
   <p>In this example, we create a single compute client, in the <em>IAD</em> region, and then output a list of server Id's to the console:</p>
 
-    {% codeblock lang:javascript %}
-    var pkgcloud = require('pkgcloud');
+  {% highlight javascript %}
+var pkgcloud = require('pkgcloud');
 
-    var client = pkgcloud.providers.rackspace.createClient({
-      username: 'my-username',
-      apiKey: 'my-api-key',
-      service: 'compute',
-      region: 'IAD'
-    });
+var client = pkgcloud.providers.rackspace.createClient({
+  username: 'my-username',
+  apiKey: 'my-api-key',
+  service: 'compute',
+  region: 'IAD'
+});
 
-    client.getServers(function(err, servers) {
-      if (err) {
-        // handle your error case
-      }
+client.getServers(function(err, servers) {
+  if (err) {
+    // handle your error case
+  }
 
-      // print out each server id
-      servers.forEach(function(server) {
-        console.log(server.id);
-      });
-    });
-    {% endcodeblock %}
+  // print out each server id
+  servers.forEach(function(server) {
+    console.log(server.id);
+  });
+});{% endhighlight %}
 
 </div>
 
