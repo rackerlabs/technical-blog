@@ -3,15 +3,26 @@ layout: sdk-page
 title: Rackspace Developer Center
 ---
 <div>
-  <h1>Python SDKs</h1>
+  <h1>Getting Started with the Python SDK</h1>
+  <p>Rackspace's official SDK for Python is <a target="_blank" href="https://github.com/rackspace/pyrax/"><strong>pyrax</strong></a>, an Apache licensed SDK for OpenStack clouds.</p>
+  <p>A unified <a target="_blank" href="https://wiki.openstack.org/wiki/SDK-Development/PythonOpenStackSDK">OpenStack SDK for Python</a> is in the works.</p>
+  <hr />
+  <h2>Installation</h2>
+  <p>Generally, pyrax should be installed into a virtual environment using pip</p>
+  {% highlight sh %}
+$ pip install pyrax
+  {% endhighlight %}
+  <h2>Getting started with Pyrax</h2>
+  {% highlight python %}
+import pyrax
+
+pyrax.set_setting("identity_type", "rackspace")
+pyrax.set_default_region('DFW')
+pyrax.set_credentials('{username}', '{apiKey}')
+  
+  {% endhighlight %}
+  
+  <ul>
+    <li></li>
+  </ul>
 </div>
-
-
-
-
-
-
-
-
-
-
