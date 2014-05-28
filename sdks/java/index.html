@@ -5,15 +5,15 @@ title: Java SDKs
 <div>
   <h1>Getting Started with Java SDKs</h1>
   <p>Rackspace's official SDK for Java <a target="_blank" href="http://jclouds.apache.org/"><strong>Apache jclouds</strong></a>, an open source multi-cloud toolkit for the Java platform that gives you the freedom to create applications that are portable across clouds while giving you full control to use cloud-specific features.</p>
-  <p>Currently, jclouds has support for multiple Rackspace services: 
+  <p>Currently, jclouds has support for multiple Rackspace services:
     <a href="/docs/cloud-servers/getting-started/?lang=java">Cloud Servers</a>,
-    <a href="/docs/cloud-files/getting-started/?lang=java">Cloud Files</a>, 
-    <a href="/docs/cloud-block-storage/getting-started/?lang=java">Cloud Block Storage</a>, 
-    <a href="/docs/cloud-dns/getting-started/?lang=java">Cloud DNS</a>, 
-    <a href="/docs/cloud-databases/getting-started/?lang=java">Cloud Databases</a>, 
-    <a href="/docs/auto-scaling/getting-started/?lang=java">Auto Scale</a>, 
+    <a href="/docs/cloud-files/getting-started/?lang=java">Cloud Files</a>,
+    <a href="/docs/cloud-block-storage/getting-started/?lang=java">Cloud Block Storage</a>,
+    <a href="/docs/cloud-dns/getting-started/?lang=java">Cloud DNS</a>,
+    <a href="/docs/cloud-databases/getting-started/?lang=java">Cloud Databases</a>,
+    <a href="/docs/auto-scaling/getting-started/?lang=java">Auto Scale</a>,
     <a href="/docs/cloud-images/getting-started/?lang=java">Cloud Images</a>,
-    <a href="/docs/cloud-load-balancers/getting-started/?lang=java">Cloud Load Balancers</a>. 
+    <a href="/docs/cloud-load-balancers/getting-started/?lang=java">Cloud Load Balancers</a>.
     Support for additional services is on-going.</p>
   <hr />
   <h2>Installation</h2>
@@ -23,30 +23,30 @@ title: Java SDKs
 &lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;
   &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
   &lt;properties&gt;
-    &lt;jclouds.version&gt;1.7.2&lt;/jclouds.version&gt;
+    &lt;jclouds.version&gt;1.7.3&lt;/jclouds.version&gt;
   &lt;/properties&gt;
   &lt;groupId&gt;com.mycompany.app&lt;/groupId&gt;
   &lt;artifactId&gt;my-app&lt;/artifactId&gt;
   &lt;version&gt;1.0-SNAPSHOT&lt;/version&gt;
   &lt;dependencies&gt;
     &lt;dependency&gt;
-        &lt;groupId&gt;org.apache.jclouds&lt;/groupId&gt;
-        &lt;artifactId&gt;jclouds-all&lt;/artifactId&gt;
-        &lt;version&gt;${jclouds.version}&lt;/version&gt;
-      &lt;/dependency&gt;
+      &lt;groupId&gt;org.apache.jclouds&lt;/groupId&gt;
+      &lt;artifactId&gt;jclouds-all&lt;/artifactId&gt;
+      &lt;version&gt;${jclouds.version}&lt;/version&gt;
+    &lt;/dependency&gt;
   &lt;/dependencies&gt;
 &lt;/project&gt;
   </pre>
   <h2>Using jclouds</h2>
   <p>The jclouds Compute API provides both a basic abstraction across Compute APIs and lower abstraction layers, such as provider-specific APIs.</p>
-  <p>In this example, we create an API that can access OpenStack Nova API (Cloud Servers compatible) and then get the Server API for the <em>IAD</em> region. Then we get a set of Resources that contain server ids</p>
+  <p>In this example, we create an API that can access OpenStack Nova API (Cloud Servers compatible) and then get the Server API for the <em>IAD</em> region. Then we get a set of Resources that contain server IDs.</p>
   <pre>
   NovaApi novaApi = ContextBuilder.newBuilder("rackspace-cloudservers-us")
           .credentials("myUsername", "myApiKey")
           .buildApi(NovaApi.class);
 
   ServerApi serverApi = novaApi.getServerApiForZone("IAD");
-  Set<Resource> servers = serverApi.listServers();
+  Set&lt;Resource&gt; servers = serverApi.listServers();
   </pre>
 </div>
 
