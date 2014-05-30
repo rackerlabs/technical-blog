@@ -5,19 +5,21 @@ title: Java SDKs
 <div>
   <h1>Getting Started with Java SDKs</h1>
   <p>Rackspace's official SDK for Java <a target="_blank" href="http://jclouds.apache.org/"><strong>Apache jclouds</strong></a>, an open source multi-cloud toolkit for the Java platform that gives you the freedom to create applications that are portable across clouds while giving you full control to use cloud-specific features.</p>
-  <p>Currently, jclouds has support for multiple Rackspace services:
-    <a href="/docs/cloud-servers/getting-started/?lang=java">Cloud Servers</a>,
-    <a href="/docs/cloud-files/getting-started/?lang=java">Cloud Files</a>,
-    <a href="/docs/cloud-block-storage/getting-started/?lang=java">Cloud Block Storage</a>,
-    <a href="/docs/cloud-dns/getting-started/?lang=java">Cloud DNS</a>,
-    <a href="/docs/cloud-databases/getting-started/?lang=java">Cloud Databases</a>,
-    <a href="/docs/auto-scaling/getting-started/?lang=java">Auto Scale</a>,
-    <a href="/docs/cloud-images/getting-started/?lang=java">Cloud Images</a>,
-    <a href="/docs/cloud-load-balancers/getting-started/?lang=java">Cloud Load Balancers</a>.
-    Support for additional services is on-going.</p>
+  <p>Currently, jclouds has support for multiple Rackspace services:</p>
+    <ul>
+      <li><a href="/docs/cloud-servers/getting-started/?lang=java">Cloud Servers</a></li>
+      <li><a href="/docs/cloud-files/getting-started/?lang=java">Cloud Files</a></li>
+      <li><a href="/docs/cloud-block-storage/getting-started/?lang=java">Cloud Block Storage</a></li>
+      <li><a href="/docs/cloud-dns/getting-started/?lang=java">Cloud DNS</a></li>
+      <li><a href="/docs/cloud-databases/getting-started/?lang=java">Cloud Databases</a></li>
+      <li><a href="/docs/auto-scaling/getting-started/?lang=java">Auto Scale</a></li>
+      <li><a href="/docs/cloud-images/getting-started/?lang=java">Cloud Images</a></li>
+      <li><a href="/docs/cloud-load-balancers/getting-started/?lang=java">Cloud Load Balancers</a></li>
+    </ul>
+  <p>Support for additional services is on-going.</p>
   <hr />
   <h2>Installation</h2>
-  <p>The recommended way to install jclouds is to use Apache Maven. If you do not have a pom.xml file, you can copy and paste the one below. If your project already has a pom.xml file, just add the dependency section below into it.</p>
+  <p>The recommended way to install jclouds is to use Apache Maven. If you're new to Maven, read <a href="http://maven.apache.org/guides/getting-started/maven-in-five-minutes.html">Maven in 5 Minutes</a>. If you do not have a pom.xml file, you can copy and paste the one below. If your project already has a pom.xml file, just add the dependency section below into it. The jclouds dependencies are modular, and allow you to pick and choose as needed.</p>
   <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;
@@ -29,13 +31,100 @@ title: Java SDKs
   &lt;artifactId&gt;my-app&lt;/artifactId&gt;
   &lt;version&gt;1.0-SNAPSHOT&lt;/version&gt;
   &lt;dependencies&gt;
+    &lt;!-- jclouds dependencies --&gt;
     &lt;dependency&gt;
-      &lt;groupId&gt;org.apache.jclouds&lt;/groupId&gt;
-      &lt;artifactId&gt;jclouds-all&lt;/artifactId&gt;
+      &lt;groupId&gt;org.apache.jclouds.driver&lt;/groupId&gt;
+      &lt;artifactId&gt;jclouds-slf4j&lt;/artifactId&gt;
       &lt;version&gt;${jclouds.version}&lt;/version&gt;
     &lt;/dependency&gt;
+    &lt;dependency&gt;
+      &lt;groupId&gt;org.apache.jclouds.driver&lt;/groupId&gt;
+      &lt;artifactId&gt;jclouds-sshj&lt;/artifactId&gt;
+      &lt;version&gt;${jclouds.version}&lt;/version&gt;
+    &lt;/dependency&gt;
+    &lt;!-- Rackspace US dependencies --&gt;
+    &lt;dependency&gt;
+      &lt;groupId&gt;org.apache.jclouds.provider&lt;/groupId&gt;
+      &lt;artifactId&gt;rackspace-cloudservers-us&lt;/artifactId&gt;
+      &lt;version&gt;${jclouds.version}&lt;/version&gt;
+    &lt;/dependency&gt;
+    &lt;dependency&gt;
+      &lt;groupId&gt;org.apache.jclouds.labs&lt;/groupId&gt;
+      &lt;artifactId&gt;rackspace-cloudfiles-us&lt;/artifactId&gt;
+      &lt;version&gt;${jclouds.version}&lt;/version&gt;
+    &lt;/dependency&gt;
+    &lt;dependency&gt;
+      &lt;groupId&gt;org.apache.jclouds.provider&lt;/groupId&gt;
+      &lt;artifactId&gt;rackspace-cloudblockstorage-us&lt;/artifactId&gt;
+      &lt;version&gt;${jclouds.version}&lt;/version&gt;
+    &lt;/dependency&gt;
+    &lt;dependency&gt;
+      &lt;groupId&gt;org.apache.jclouds.provider&lt;/groupId&gt;
+      &lt;artifactId&gt;rackspace-clouddatabases-us&lt;/artifactId&gt;
+      &lt;version&gt;${jclouds.version}&lt;/version&gt;
+    &lt;/dependency&gt;
+    &lt;dependency&gt;
+      &lt;groupId&gt;org.apache.jclouds.labs&lt;/groupId&gt;
+      &lt;artifactId&gt;rackspace-cloudqueues-us&lt;/artifactId&gt;
+      &lt;version&gt;${jclouds.version}&lt;/version&gt;
+    &lt;/dependency&gt;
+    &lt;dependency&gt;
+      &lt;groupId&gt;org.apache.jclouds.provider&lt;/groupId&gt;
+      &lt;artifactId&gt;rackspace-cloudloadbalancers-us&lt;/artifactId&gt;
+      &lt;version&gt;${jclouds.version}&lt;/version&gt;
+    &lt;/dependency&gt;
+    &lt;dependency&gt;
+      &lt;groupId&gt;org.apache.jclouds.provider&lt;/groupId&gt;
+      &lt;artifactId&gt;rackspace-clouddns-us&lt;/artifactId&gt;
+      &lt;version&gt;${jclouds.version}&lt;/version&gt;
+    &lt;/dependency&gt;
+    &lt;!-- Rackspace UK dependencies --&gt;
+    &lt;dependency&gt;
+      &lt;groupId&gt;org.apache.jclouds.provider&lt;/groupId&gt;
+      &lt;artifactId&gt;rackspace-cloudservers-uk&lt;/artifactId&gt;
+      &lt;version&gt;${jclouds.version}&lt;/version&gt;
+    &lt;/dependency&gt;
+    &lt;dependency&gt;
+      &lt;groupId&gt;org.apache.jclouds.labs&lt;/groupId&gt;
+      &lt;artifactId&gt;rackspace-cloudfiles-uk&lt;/artifactId&gt;
+      &lt;version&gt;${jclouds.version}&lt;/version&gt;
+    &lt;/dependency&gt;
+    &lt;dependency&gt;
+      &lt;groupId&gt;org.apache.jclouds.provider&lt;/groupId&gt;
+      &lt;artifactId&gt;rackspace-cloudblockstorage-uk&lt;/artifactId&gt;
+      &lt;version&gt;${jclouds.version}&lt;/version&gt;
+    &lt;/dependency&gt;
+    &lt;dependency&gt;
+      &lt;groupId&gt;org.apache.jclouds.provider&lt;/groupId&gt;
+      &lt;artifactId&gt;rackspace-clouddatabases-uk&lt;/artifactId&gt;
+      &lt;version&gt;${jclouds.version}&lt;/version&gt;
+    &lt;/dependency&gt;
+    &lt;dependency&gt;
+      &lt;groupId&gt;org.apache.jclouds.labs&lt;/groupId&gt;
+      &lt;artifactId&gt;rackspace-cloudqueues-uk&lt;/artifactId&gt;
+      &lt;version&gt;${jclouds.version}&lt;/version&gt;
+    &lt;/dependency&gt;
+    &lt;dependency&gt;
+      &lt;groupId&gt;org.apache.jclouds.labs&lt;/groupId&gt;
+      &lt;artifactId&gt;rackspace-autoscale-us&lt;/artifactId&gt;
+      &lt;version&gt;${jclouds.version}&lt;/version&gt;
+    &lt;/dependency&gt;
+    &lt;dependency&gt;
+      &lt;groupId&gt;org.apache.jclouds.provider&lt;/groupId&gt;
+      &lt;artifactId&gt;rackspace-cloudloadbalancers-uk&lt;/artifactId&gt;
+      &lt;version&gt;${jclouds.version}&lt;/version&gt;
+    &lt;/dependency&gt;
+    &lt;dependency&gt;
+      &lt;groupId&gt;org.apache.jclouds.provider&lt;/groupId&gt;
+      &lt;artifactId&gt;rackspace-clouddns-uk&lt;/artifactId&gt;
+      &lt;version&gt;${jclouds.version}&lt;/version&gt;
+   &lt;/dependency&gt;
   &lt;/dependencies&gt;
 &lt;/project&gt;
+  </pre>
+  <p>After your pom.xml file is configured, you can use the following command to download all dependeny jars:</p>
+  <pre>
+    mvn dependency:copy-dependencies "-DoutputDirectory=./lib"
   </pre>
   <h2>Using jclouds</h2>
   <p>The jclouds Compute API provides both a basic abstraction across Compute APIs and lower abstraction layers, such as provider-specific APIs.</p>
