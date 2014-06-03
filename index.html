@@ -80,31 +80,17 @@ title: Rackspace Developer Center
 
     <div class="col-md-9 bodycontent">
 
-      <h1>Welcome to the Rackspace Developer Center!</h1>
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tellus leo. Curabitur ipsum mi, pretium ut
-        dictum sed, mattis et sapien. Ut bibendum nisi quis urna sollicitudin, nec vulputate metus mattis. Etiam mattis,
-        nibh vitae facilisis eleifend, metus dui scelerisque dui, sit amet ultricies purus metus et ipsum. Nunc euismod,
-        velit varius aliquet placerat, massa leo fringilla leo, quis molestie ligula ligula et lectus. Donec blandit
-        augue
-        enim. Ut mollis, elit id iaculis gravida, metus ipsum tempor velit, et vehicula enim lorem sed magna. Class
-        aptent
-        taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut id ante venenatis, ultrices
-        leo
-        vitae, tempus sem.</p>
-
-      <h2>Donec blandit augue</h2>
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tellus leo. Curabitur ipsum mi, pretium ut
-        dictum sed, mattis et sapien. Ut bibendum nisi quis urna sollicitudin, nec vulputate metus mattis. Etiam mattis,
-        nibh vitae facilisis eleifend, metus dui scelerisque dui, sit amet ultricies purus metus et ipsum. Nunc euismod,
-        velit varius aliquet placerat, massa leo fringilla leo, quis molestie ligula ligula et lectus. Donec blandit
-        augue
-        enim. Ut mollis, elit id iaculis gravida, metus ipsum tempor velit, et vehicula enim lorem sed magna. Class
-        aptent
-        taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut id ante venenatis, ultrices
-        leo
-        vitae, tempus sem.</p>
+<ul class="posts">
+  <h2>Latest Blog Posts</h2>
+	{% for post in site.posts limit:3 %}
+	   <li>
+		   <span>{{ post.date | date_to_string }}</span>
+		   <a href="{{ BASE_PATH }}{{ post.url }}">
+		   {{ post.title }}</a>
+       <span>{{post.excerpt}}</span>
+	   </li>
+	{% endfor %}
+</ul>
 
     </div>
   </div>
