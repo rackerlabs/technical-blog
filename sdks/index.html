@@ -5,20 +5,18 @@ title: SDKs &amp; Tools
 <div class="doc-index">
   <div class="row">
     <div class="col-md-12">
+      <p>Rackspace supports SDKs in <a href="/sdks/python/">Python</a>, <a href="/sdks/dot-net/">.NET</a>, <a href="/sdks/java/">Java</a>, <a href="/sdks/node-js/">Node.js</a>, <a href="/sdks/php/">PHP, and <a href="/sdks/ruby/">Ruby</a>.</p>
+      
       <div class="sdk-block">
         <h1>Python
           <a class="btn btn-primary btn-sm pull-right" href="/sdks/python/">&raquo; Learn More</a>
         </h1>
 
-        <p>Python is awesome mmmk. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar, nibh a lobortis
-          pharetra, nisi orci consequat diam, eget aliquet nunc nulla a arcu. Morbi scelerisque dui nec felis placerat
-          fringilla.</p>
-
         <ul class="piped-list">
-          <li><a href="/docs/cloud-servers/getting-started/">Documentation</a></li>
-          <li><a target="_blank" href="#">Release Notes</a></li>
-          <li><a target="_blank" href="#">Examples</a></li>
-          <li><a target="_blank" href="#">Community</a></li>
+          <li><a href="https://github.com/rackspace/pyrax/tree/master/docs">Documentation</a></li>
+          <li><a target="_blank" href="https://github.com/rackspace/pyrax/blob/master/RELEASENOTES.md">Release Notes</a></li>
+          <li><a target="_blank" href="/docs/cloud-servers/getting-started/?lang=python">Examples</a></li>
+          <li><a target="_blank" href="https://github.com/rackspace/pyrax/issues">Community</a></li>
         </ul>
 
         <h3>Installing pyrax</h3>
@@ -34,16 +32,11 @@ import pyrax{% endhighlight %}
           <a class="btn btn-primary btn-sm pull-right" href="/sdks/ruby/">&raquo; Learn More</a>
         </h1>
 
-        <p>Ruby is awesome mmmk. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar, nibh a
-          lobortis
-          pharetra, nisi orci consequat diam, eget aliquet nunc nulla a arcu. Morbi scelerisque dui nec felis placerat
-          fringilla.</p>
-
         <ul class="piped-list">
-          <li><a href="/docs/cloud-servers/getting-started/">Documentation</a></li>
-          <li><a target="_blank" href="#">Release Notes</a></li>
-          <li><a target="_blank" href="#">Examples</a></li>
-          <li><a target="_blank" href="#">Community</a></li>
+          <li><a href="https://github.com/fog/fog/tree/master/lib/fog/rackspace/docs">Documentation</a></li>
+          <li><a target="_blank" href="https://github.com/fog/fog/releases">Release Notes</a></li>
+          <li><a target="_blank" href="/docs/cloud-servers/getting-started/?lang=ruby">Examples</a></li>
+          <li><a target="_blank" href="http://fog.io/">Community</a></li>
         </ul>
 
         <h3>Installing fog</h3>
@@ -51,7 +44,7 @@ import pyrax{% endhighlight %}
         {% highlight sh %}
 $ gem install fog{% endhighlight %}
         {% highlight ruby %}
-ruby is magic{% endhighlight %}
+require 'fog'{% endhighlight %}
       </div>
 
       <div class="sdk-block">
@@ -59,24 +52,24 @@ ruby is magic{% endhighlight %}
           <a class="btn btn-primary btn-sm pull-right" href="/sdks/java/">&raquo; Learn More</a>
         </h1>
 
-        <p>Java is awesome mmmk. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar, nibh a
-          lobortis
-          pharetra, nisi orci consequat diam, eget aliquet nunc nulla a arcu. Morbi scelerisque dui nec felis placerat
-          fringilla.</p>
-
         <ul class="piped-list">
-          <li><a href="/docs/cloud-servers/getting-started/">Documentation</a></li>
-          <li><a target="_blank" href="#">Release Notes</a></li>
-          <li><a target="_blank" href="#">Examples</a></li>
-          <li><a target="_blank" href="#">Community</a></li>
+          <li><a href="http://jclouds.apache.org/guides/rackspace/">Documentation</a></li>
+          <li><a target="_blank" href="https://jclouds.apache.org/releasenotes/">Release Notes</a></li>
+          <li><a target="_blank" href="/docs/cloud-servers/getting-started/?lang=java">Examples</a></li>
+          <li><a target="_blank" href="https://jclouds.apache.org/community/">Community</a></li>
         </ul>
 
         <h3>Installing jClouds</h3>
-
+        
+        <p>The easiest way to install jclouds is using
+          <a href="http://maven.apache.org/guides/getting-started/maven-in-five-minutes.html">Apache Maven</a>. Download <a href="/sdks/java/pom.xml">this pom.xml file</a> or put the dependency section in your project's pom.xml.
         {% highlight sh %}
-$ java --foo --install --jClouds{% endhighlight %}
+$ mvn dependency:copy-dependencies{% endhighlight %}
         {% highlight java %}
-// 250 lines of Java here{% endhighlight %}
+import org.jclouds.ContextBuilder;
+import org.jclouds.openstack.keystone.v2_0.config.CredentialTypes;
+import org.jclouds.openstack.keystone.v2_0.config.KeystoneProperties;
+import org.jclouds.openstack.nova.v2_0.NovaApi;{% endhighlight %}
       </div>
 
       <div class="sdk-block">
@@ -84,16 +77,11 @@ $ java --foo --install --jClouds{% endhighlight %}
           <a class="btn btn-primary btn-sm pull-right" href="/sdks/node-js/">&raquo; Learn More</a>
         </h1>
 
-        <p>Node.js is awesome mmmk. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar, nibh a
-          lobortis
-          pharetra, nisi orci consequat diam, eget aliquet nunc nulla a arcu. Morbi scelerisque dui nec felis placerat
-          fringilla.</p>
-
         <ul class="piped-list">
-          <li><a href="/docs/cloud-servers/getting-started/">Documentation</a></li>
-          <li><a target="_blank" href="#">Release Notes</a></li>
-          <li><a target="_blank" href="#">Examples</a></li>
-          <li><a target="_blank" href="#">Community</a></li>
+          <li><a href="https://github.com/pkgcloud/pkgcloud/tree/master/docs">Documentation</a></li>
+          <li><a target="_blank" href="https://github.com/pkgcloud/pkgcloud/blob/master/CHANGELOG.md">Release Notes</a></li>
+          <li><a target="_blank" href="/docs/cloud-servers/getting-started/?lang=node.js">Examples</a></li>
+          <li><a target="_blank" href="https://github.com/pkgcloud/pkgcloud">Community</a></li>
         </ul>
 
         <h3>Installing pkgcloud</h3>
@@ -111,24 +99,21 @@ var client = pkgcloud.providers.rackspace.createClient({/* ... */});{% endhighli
           <a class="btn btn-primary btn-sm pull-right" href="/sdks/dot-net/">&raquo; Learn More</a>
         </h1>
 
-        <p>.Net is awesome mmmk. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar, nibh a
-          lobortis
-          pharetra, nisi orci consequat diam, eget aliquet nunc nulla a arcu. Morbi scelerisque dui nec felis placerat
-          fringilla.</p>
-
         <ul class="piped-list">
-          <li><a href="/docs/cloud-servers/getting-started/">Documentation</a></li>
-          <li><a target="_blank" href="#">Release Notes</a></li>
-          <li><a target="_blank" href="#">Examples</a></li>
-          <li><a target="_blank" href="#">Community</a></li>
+          <li><a href="http://openstacknetsdk.org/docs">Documentation</a></li>
+          <li><a target="_blank" href="https://github.com/openstacknetsdk/openstack.net/releases">Release Notes</a></li>
+          <li><a target="_blank" href="/docs/cloud-dns/getting-started/?lang=.net">Examples</a></li>
+          <li><a target="_blank" href="https://github.com/openstacknetsdk/openstack.net/wiki">Community</a></li>
         </ul>
 
         <h3>Installing openstack.net</h3>
 
 {% highlight sh %}
-c:\> nuget.exe --do-openstack.net{% endhighlight %}
+PM> Install-Package openstack.net{% endhighlight %}
 {% highlight csharp %}
-// goodness here{% endhighlight%}
+using net.openstack.Providers.Rackspace;
+using net.openstack.Core.Providers;
+using net.openstack.Core.Exceptions.Response;{% endhighlight%}
       </div>
 
       <div class="sdk-block">
@@ -136,35 +121,23 @@ c:\> nuget.exe --do-openstack.net{% endhighlight %}
           <a class="btn btn-primary btn-sm pull-right" href="/sdks/php/">&raquo; Learn More</a>
         </h1>
 
-        <p>PHP is awesome mmmk. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar, nibh a
-          lobortis
-          pharetra, nisi orci consequat diam, eget aliquet nunc nulla a arcu. Morbi scelerisque dui nec felis placerat
-          fringilla.</p>
-
         <ul class="piped-list">
-          <li><a href="/docs/cloud-servers/getting-started/">Documentation</a></li>
-          <li><a target="_blank" href="#">Release Notes</a></li>
-          <li><a target="_blank" href="#">Examples</a></li>
-          <li><a target="_blank" href="#">Community</a></li>
+          <li><a href="https://github.com/rackspace/php-opencloud/tree/master/docs/userguide">Documentation</a></li>
+          <li><a target="_blank" href="https://github.com/rackspace/php-opencloud/releases/">Release Notes</a></li>
+          <li><a target="_blank" href="/docs/cloud-dns/getting-started/?lang=php">Examples</a></li>
+          <li><a target="_blank" href="https://github.com/rackspace/php-opencloud">Community</a></li>
         </ul>
 
         <h3>Installing PHP-Opencloud</h3>
 
 {% highlight sh %}
-$ php --iHaveNoIdea{% endhighlight %}
+$ composer require rackspace/php-opencloud:dev-master{% endhighlight %}
 {% highlight php %}
-// goodness here{% endhighlight%}
+<?php
+require 'vendor/autoload.php';
+
+use OpenCloud\Rackspace;{% endhighlight%}
       </div>
     </div>
   </div>
 </div>
-
-
-
-
-
-
-
-
-
-
