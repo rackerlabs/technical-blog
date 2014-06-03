@@ -60,11 +60,38 @@ require 'fog'{% endhighlight %}
         </ul>
 
         <h3>Installing jClouds</h3>
+        
+        <p>The easiest way to install jclouds is using
+          <a href="http://maven.apache.org/guides/getting-started/maven-in-five-minutes.html">Apache Maven</a>.
+          If you don't have a <code>pom.xml</code> file copy and paste the one below. If your project already
+          has a <code>pom.xml</code> file, just add the dependency section below to it.
+          
+          {% highlight xml %}
+          <?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <properties>
+    <jclouds.version>1.7.3</jclouds.version>
+  </properties>
+  <groupId>com.mycompany.app</groupId>
+  <artifactId>my-app</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <dependencies>
+    <dependency>
+        <groupId>org.apache.jclouds</groupId>
+        <artifactId>jclouds-all</artifactId>
+        <version>${jclouds.version}</version>
+      </dependency>
+  </dependencies>
+</project>{% endhighlight %}
 
         {% highlight sh %}
-$ java --foo --install --jClouds{% endhighlight %}
+$ mvn dependency:copy-dependencies{% endhighlight %}
         {% highlight java %}
-// 250 lines of Java here{% endhighlight %}
+import org.jclouds.ContextBuilder;
+import org.jclouds.openstack.keystone.v2_0.config.CredentialTypes;
+import org.jclouds.openstack.keystone.v2_0.config.KeystoneProperties;
+import org.jclouds.openstack.nova.v2_0.NovaApi;{% endhighlight %}
       </div>
 
       <div class="sdk-block">
@@ -128,6 +155,7 @@ using net.openstack.Core.Exceptions.Response;{% endhighlight%}
 {% highlight sh %}
 $ composer require rackspace/php-opencloud:dev-master{% endhighlight %}
 {% highlight php %}
+<?php
 require 'vendor/autoload.php';
 
 use OpenCloud\Rackspace;{% endhighlight%}
