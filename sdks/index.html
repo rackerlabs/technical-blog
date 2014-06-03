@@ -126,9 +126,11 @@ using net.openstack.Core.Exceptions.Response;{% endhighlight%}
         <h3>Installing PHP-Opencloud</h3>
 
 {% highlight sh %}
-$ php --iHaveNoIdea{% endhighlight %}
+$ composer require rackspace/php-opencloud:dev-master{% endhighlight %}
 {% highlight php %}
-// goodness here{% endhighlight%}
+require 'vendor/autoload.php';
+
+use OpenCloud\Rackspace;{% endhighlight%}
       </div>
     </div>
   </div>
