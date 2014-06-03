@@ -8,13 +8,13 @@ layout: default
 </div>
 <div class="container body-container">
   <div class="row">
-    <div class="col-md-3 sidebar">
+    <div class="col-md-9 col-md-push-3 bodycontent">
+      {{ content }}
+    </div>
+    <div class="col-md-3 col-md-pull-9 sidebar">
       {% include sdk-sidebar.html %}
 
       {% include sidebar-footer.html %}
-    </div>
-    <div class="col-md-9 bodycontent">
-      {{ content }}
     </div>
   </div>
 </div>
