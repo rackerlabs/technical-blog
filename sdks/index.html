@@ -21,15 +21,21 @@ title: SDKs &amp; Tools
 
         <h3>Installing jclouds</h3>
 
-        <p>The easiest way to install jclouds is using
-          <a href="http://maven.apache.org/guides/getting-started/maven-in-five-minutes.html">Apache Maven</a>. Download <a href="/sdks/java/pom.xml">this pom.xml file</a> or put the dependency section in your project's pom.xml.
+        <p>Download <a href="/sdks/java/pom.xml">this pom.xml file</a> or put the dependencies section in your project's pom.xml. Run the Maven command below in the same directory as your pom.xml file.</p>
+
         {% highlight sh %}
 $ mvn dependency:copy-dependencies{% endhighlight %}
+
         {% highlight java %}
 import org.jclouds.ContextBuilder;
-import org.jclouds.openstack.keystone.v2_0.config.CredentialTypes;
-import org.jclouds.openstack.keystone.v2_0.config.KeystoneProperties;
 import org.jclouds.openstack.nova.v2_0.NovaApi;{% endhighlight %}
+
+        <h4>Requirements</h4>
+
+        <ol>
+          <li><a target="_blank" href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Java Development Kit (JDK) version 6 or higher</a></li>
+          <li><a target="_blank" href="http://maven.apache.org/guides/getting-started/maven-in-five-minutes.html">Maven version 3 or later</a></li>
+        </ol>
       </div>
 
       <div class="sdk-block">
