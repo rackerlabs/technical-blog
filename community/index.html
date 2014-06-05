@@ -1,92 +1,148 @@
 ---
-layout: page
+layout: default
 title: Rackspace Developer Center
 ---
-<div>
-  <h1>Community &amp; Outreach</h1>
-  <div>
-    <p>
-    Rackspace is committed to supporting communities. We offer small grants for workshops, hackdays, meetups, and conferences. We can also send Rackers to speak at your event and/or teach and mentor your group. Let us know what kind of support you need, and a Racker will reach out to you.
-    </p>
-    <p>Please fill out and submit this form. We're already excited about your event!</p>
-    <form name="sponsorship_request" method="post" action="">
-      <div class="form-group col-md-8">
-        <label class="sr-only" for="event_name">Event name</label>
-        <input type="text" name="event_name" placeholder="Event name" required="true" class="form-control input-md" />
-      </div>
-      <div class="clearfix"></div>
-      <div class="form-group col-md-4">
-        <label class="sr-only" for="num_attendees">Expected # of attendees</label>
-        <input type="number" name="num_attendees" placeholder="Expected # of attendees" class="form-control input-md" />
-      </div>
-      <div class="clearfix"></div>
-      <div class="form-group col-md-4">
-        <label for="start_date">Start date</label>
-        <input type="date" name="start_date" class="form-control input-md" />
-      </div>
-      <div class="form-group col-md-4">
-        <label for="end_date">End date</label>
-        <input type="date" name="end_date" class="form-control input-md" />
-      </div>
-      <div class="clearfix"></div>
-      <div class="form-group col-md-8">
-        <div class="checkbox">
-          <label><input type="checkbox" name="is_online_only" /> This event takes place online only</label>
-        </div>
-      </div>
-      <div class="clearfix"></div>
-      <div class="form-group col-md-4">
-        <label class="sr-only" for="location">City, State/Province, Country</label>
-        <input type="text" name="location" placeholder="City, State/Province, Country" class="form-control input-md" />
-      </div>
-      <div class="form-group col-md-4">
-        <label class="sr-only" for="venue">Venue</label>
-        <input type="text" name="venue" placeholder="Venue" class="form-control input-md" />
-      </div>
-      <div class="clearfix"></div>
-      <div class="form-group col-md-8">
-        <label class="sr-only" for="event_url">Event URL</label>
-        <input type="url" name="event_url" placeholder="Event URL" class="form-control input-md" />
-      </div>
-      <div class="form-group col-md-8">
-        <label class="sr-only" for="event_twitter_handle">Event Twitter Handle</label>
-        <div class="input-group">
-          <span class="input-group-addon">@</span>
-          <input type="twitter_handle" name="event_twitter_handle" placeholder="Twitter Handle" class="form-control input-md" />
-        </div>
-      </div>
-      <div class="clearfix"></div>
-      <div class="form-group col-md-8">
-        <label class="sr-only" for="type_of_sponsorship">Sponsorship Details</label>
-        <textarea name="type_of_sponsorship" placeholder="What type of sponsorship are you looking for?" rows="10" cols="40"></textarea>
-      </div>
-      <div class="clearfix"></div>
-      <div class="form-group col-md-8">
-        <label for="prospectus">Sponsorship prospectus</label>
-        <input type="file" name="prospectus" />
-      </div>
-      <div class="clearfix"></div>
-      <div class="form-group col-md-4">
-        <label class="sr-only" for="contact_name">Contact name</label>
-        <input type="text" name="contact_name" placeholder="Contact name" class="form-control input-md" />
-      </div>
-      <div class="form-group col-md-4">
-        <label class="sr-only" for="contact_name">Contact email address</label>
-        <input type="email" name="contact_email" placeholder="Contact email address" class="form-control input-md" />
-      </div>
-      <div class="clearfix"></div>
-      <div class="form-group col-md-10">
-        <div class="checkbox">
-          <label>Is there a speaking or workshop opportunity for someone from Rackspace?
-            <input type="checkbox" name="speaking_opportunity" value="yes" />
-          </label>
-        </div>
-      </div>
-      <div class="form-group col-md-8">
-        <div class="col-sm-10">
-          <button type="submit" class="btn btn-default">Submit Sponsorship Request</button>
-        </div>
-      </div>
-    </form>  
+<div class="title-header">
+  <div class="inner">
+    <span class="headline">Community &amp; Outreach</span>
   </div>
 </div>
+<div class="container body-container">
+  <div class="row">
+    <div class="col-md-9">
+      <p class="lead">
+        Rackspace is committed to supporting communities. We offer small grants for workshops, hackdays, meetups, and
+        conferences. We can also send Rackers to speak at your event and/or teach and mentor your group. Let us know
+        what kind of support you need, and a Racker will reach out to you.
+      </p>
+
+      <p>Please fill out and submit this form. We're already excited about your event!</p>
+
+      <form name="sponsorship_request" method="post" action="">
+        <div class="row">
+          <div class="form-group col-md-8">
+            <label class="sr-only" for="event_name">Event name</label>
+            <input type="text" name="event_name" placeholder="Event name" required="true" class="form-control input-md"/>
+          </div>
+          <div class="form-group col-md-4">
+            <label class="sr-only" for="num_attendees">Expected # of attendees</label>
+            <input type="number" name="num_attendees" placeholder="Expected # of attendees"
+                   class="form-control input-md"/>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="form-group col-md-4">
+            <label for="start_date">Start date</label>
+            <input type="date" name="start_date" class="form-control input-md"/>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="end_date">End date</label>
+            <input type="date" name="end_date" class="form-control input-md"/>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="form-group col-md-8">
+            <div class="checkbox">
+              <label><input type="checkbox" name="is_online_only"/> This event takes place online only</label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-md-6">
+            <label class="sr-only" for="location">City, State/Province, Country</label>
+            <input type="text" name="location" placeholder="City, State/Province, Country" class="form-control input-md"/>
+          </div>
+          <div class="form-group col-md-6">
+            <label class="sr-only" for="venue">Venue</label>
+            <input type="text" name="venue" placeholder="Venue" class="form-control input-md"/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-md-12">
+            <label class="sr-only" for="event_url">Event URL</label>
+            <input type="url" name="event_url" placeholder="Event URL" class="form-control input-md"/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-md-8">
+            <label class="sr-only" for="event_twitter_handle">Event Twitter Handle</label>
+
+            <div class="input-group">
+              <span class="input-group-addon">@</span>
+              <input type="twitter_handle" name="event_twitter_handle" placeholder="Twitter Handle"
+                     class="form-control input-md"/>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-md-12">
+            <label class="sr-only" for="type_of_sponsorship">Sponsorship Details</label>
+            <textarea class="form-control" name="type_of_sponsorship" placeholder="What type of sponsorship are you looking for?" rows="10"
+                      cols="40"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-md-8">
+            <label for="prospectus">Sponsorship prospectus</label>
+            <input type="file" name="prospectus"/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-md-6">
+            <label class="sr-only" for="contact_name">Contact name</label>
+            <input type="text" name="contact_name" placeholder="Contact name" class="form-control input-md"/>
+          </div>
+          <div class="form-group col-md-6">
+            <label class="sr-only" for="contact_name">Contact email address</label>
+            <input type="email" name="contact_email" placeholder="Contact email address" class="form-control input-md"/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-md-12">
+            <div class="checkbox">
+              <label>Is there a speaking or workshop opportunity for someone from Rackspace?
+                <input type="checkbox" name="speaking_opportunity" value="yes"/>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-md-8">
+            <button type="submit" class="btn btn-primary">Submit Sponsorship Request</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="sidebar faq col-md-3">
+      <p class="sidebarheader">What type of events does Rackspace sponsor?</p>
+      <p>We most frequently sponsor events that benefit developers and the broader tech community. Hackathons, user group
+      meetings, conferences, and educational workshops (like Rails Girls) are all events we like to know about.</p>
+
+      <p class="sidebarheader">My event is next week. Can you help?</p>
+
+      <p>Because we receive so many requests, our team asks that you give us at least 3 weeks notice before your event. If
+      you've missed it this year, we're happy to have a look next time.</p>
+
+      <p class="sidebarheader">What kind of sponsorships do you provide?</p>
+
+      <p>Depending on the event, it varies. Sometimes we are able to provide financial assistance. Sometimes we can help
+      with an after party or drinkup. Sometimes we will make you cupcakes. It really depends on your circumstance, so
+      let's talk about it.</p>
+
+      <p class="sidebarheader">Can we host our event in Rackspace's space?</p>
+
+      <p>It's possible! Select "Request use of Rackspace HQ" and tell us about your event. If your event is relevant to
+      Rackspace, benefits the community, and fits with our schedule then we'll follow up to work out the details.</p>
+
+      <p class="sidebarheader">What about speakers?</p>
+
+      <p>So maybe you're set for sponsors, but you're looking for a speaker for your event. Let us know! We'd love to talk
+      to you about that, too.</p>
+
+      <p>Still have questions about GitHub sponsorships? Drop our community team a line at sponsorships@rackspace.com
+    </div>
+  </div>
+</div>
+
