@@ -43,8 +43,9 @@ require 'fog'
   :rackspace_region => '{region}'
 )
 
-# List all containers in the requested region with the "directories" collection.
-# (For consistency across providers, fog calls Rackspace containers "directories.")
+# List all containers in the requested region with the "directories" 
+# collection. (For consistency across providers, fog calls Rackspace 
+# containers "directories.")
 @storage.directories.all
 
 # Create a new directory model.
