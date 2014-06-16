@@ -60,24 +60,22 @@ title: Rackspace Developer Center
       </ul>
 
       {% include sidebar-footer.html %}
-
     </div>
 
-
     <div class="col-md-9 bodycontent">
-
-<ul class="posts">
-  <h2>Latest Blog Posts</h2>
-	{% for post in site.posts limit:3 %}
-	   <li>
-		   <span>{{ post.date | date_to_string }}</span>
-		   <a href="{{ BASE_PATH }}{{ post.url }}">
-		   {{ post.title }}</a>
-       <span>{{post.excerpt}}</span>
-	   </li>
-	{% endfor %}
-</ul>
-
+      <div class="blog-preview">
+        <h1>Developer Blog</h1>
+        {% for post in site.posts limit:3 %}
+        <div class="blog-tease">
+          <h2 class="blog-tease-title"><a href="{{ BASE_PATH }}{{ post.url }}">
+            {{ post.title }}</a></h2>
+          <div class="byline">By {{ post.author }} - Posted on {{ post.date | date: "%b %-d %Y" }}</div>
+          <p>{{post.excerpt}}</p>
+          <a href="{{ BASE_PATH }}{{ post.url }}" class="btn btn-primary">Read More</a>
+          <hr/>
+        </div>
+        {% endfor %}
+      </div>
     </div>
   </div>
 </div>

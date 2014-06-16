@@ -7,10 +7,18 @@ body {
 }
 
 .bodycontent {
-  border-left: 1px solid #cdcdcd;
+  border-left: @gutter;
 
   @media (max-width: @screen-sm-max) {
     border-left: none;
+  }
+
+  p, ul, ol {
+    margin-bottom: 20px;
+  }
+
+  li {
+    margin-bottom: 6px;
   }
 }
 

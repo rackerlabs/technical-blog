@@ -22,7 +22,7 @@ create volume call.
 
 Here’s what that looks like in the API:
 
-```
+```bash
 curl https://dfw.blockstorage.api.rackspacecloud.com/v1/<Customer ID>/volumes \
  -X POST -H "X-Auth-Project-Id: <Customer ID>" \
  -H "User-Agent: curl 7.30.0 (x86_64-apple-darwin13.0) libcurl/7.30.0 SecureTransport zlib/1.2.5" -H \
@@ -71,7 +71,7 @@ translates to a faster and less complex volume copy procedure.
 Volume cloning can also be used to change the size and type when creating a
 copy of a volume:
 
-```
+```bash
 curl https://dfw.blockstorage.api.rackspacecloud.com/v1/<Customer ID>/volumes \
 -X POST -H "X-Auth-Project-Id: <Customer ID>" \
 -H "User-Agent: curl 7.30.0 (x86_64-apple-darwin13.0) libcurl/7.30.0 SecureTransport zlib/1.2.5" \
@@ -81,7 +81,7 @@ curl https://dfw.blockstorage.api.rackspacecloud.com/v1/<Customer ID>/volumes \
 
 Once you’ve created a clone of a volume, you can confirm the source volume ID when you list your volume’s details:
 
-```
+```bash
 curl https://dfw.blockstorage.api.rackspacecloud.com/v1/<Customer ID>/volumes/detail \
 -X GET -H "X-Auth-Project-Id: <Customer ID>" \
 -H "User-Agent: curl 7.30.0 (x86_64-apple-darwin13.0) libcurl/7.30.0 SecureTransport zlib/1.2.5" \

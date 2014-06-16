@@ -1,36 +1,30 @@
 ---
-layout: default
+layout: blog-page
 ---
 
-<div class="bodyitem twocol-layout clearfix">
-	<div class="content">
-       <ul class="blog-entries">
-          <li class="entry single">
-	          <h1 class="title">{{ page.title }}</h1>
-						<span class="byline">By {{ page.author }} - Posted on {{ page.date | date: "%b %-d %Y" }}</span>
-							<div class="entry-content">
-								{{ content }}
-							</div>
-						</span>
-					</li>
-					<li class="relatedentries clearfix">
-			      <ul>
-			          <li class="previous">
-									{% if page.previous %}
-					<span class="related-pretitle">previous article:</span>
-			              <span class="related-title"><a href="{{ page.previous.url }}">{{ page.previous.title }}</a></span>
-									 {% endif %}
-			          </li>
+<h1 class="title">{{ page.title }}</h1>
+<div class="byline">By {{ page.author }} - Posted on {{ page.date | date: "%b %-d %Y" }}</div>
+<p>{{ content }}</p>
 
-			          <li class="next">
-									{% if page.next %}
-			              <span class="related-pretitle">next article: </span>
-			              <span class="related-title"><a href="{{ page.next.url }}">{{ page.next.title }}</a></span>
-									{% endif %}
-			          </li>
-			      </ul>
-				</li>
-				</ul>
-	</div>
+{% if page.previous || page.next %}
+<div class="row">
+  <div class="col-md-12">
+    <hr />
+  </div>
+</div>
+<div class="row">
+  {% if page.previous %}
+  <div class="col-md-6">
+    <div class="related-pretitle">Previous Article</div>
+    <span class="related-title"><a href="{{ page.previous.url }}">{{ page.previous.title }}</a></span>
+  </div>
+  {% endif %}
+  {% if page.next %}
+  <div class="col-md-6">
+    <div class="related-pretitle">Next Article</div>
+    <span class="related-title"><a href="{{ page.next.url }}">{{ page.next.title }}</a></span>
+  </div>
+  {% endif %}
+</div>
+{% endif %}
 
-{% include sidebar.html %}
