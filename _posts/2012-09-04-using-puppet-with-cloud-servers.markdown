@@ -25,9 +25,9 @@ First, we need to create the Cloud Servers that will serve as our puppetmaster a
 
 Once the servers are built, log in and update all your packages:
 
-    
-    apt-get update && apt-get -y upgrade && reboot
-
+```bash
+apt-get update && apt-get -y upgrade && reboot
+```
 
 Now we are ready to configure puppet.
 
@@ -37,19 +37,19 @@ Now we are ready to configure puppet.
 
 You have several options for installing puppetmaster. You can use the package available in Ubuntu's repository or you can use Puppet Lab's apt repository. For this example, I will use the version from Puppet Lab's repository:
 
-    
-    wget http://apt.puppetlabs.com/puppetlabs-release-precise.deb
-    dpkg -i puppetlabs-release-precise.deb
-    apt-get -y install puppetmaster
-    service puppetmaster stop
-
+```bash
+wget http://apt.puppetlabs.com/puppetlabs-release-precise.deb
+dpkg -i puppetlabs-release-precise.deb
+apt-get -y install puppetmaster
+service puppetmaster stop
+```
 
 At this point, we need to configure the puppetmaster for use with our environment. One way to do this is by editing /etc/hosts, but that is tedious and goes against what we want to accomplish with configuration management. I will use a configuration option called [dns_alt_names](http://docs.puppetlabs.com/references/latest/configuration.html#dnsaltnames) to use my own domain.
 
-    
-    rm -rf /var/lib/puppet/ssl
-    vim /etc/puppet/puppet.conf
-
+```bash
+rm -rf /var/lib/puppet/ssl
+vim /etc/puppet/puppet.conf
+```
 
 Under the "[master]" header, add the following and restart the service:
 
@@ -65,12 +65,12 @@ Make sure you set your puppetmaster DNS record to the server's [ServiceNet](http
 
 SSH to the puppet client server and install the Puppet Labs repository and puppet:
 
-    
-    wget http://apt.puppetlabs.com/puppetlabs-release-precise.deb
-    dpkg -i puppetlabs-release-precise.deb
-    apt-get -y install puppet
-    service puppet stop
-
+```bash
+wget http://apt.puppetlabs.com/puppetlabs-release-precise.deb
+dpkg -i puppetlabs-release-precise.deb
+apt-get -y install puppet
+service puppet stop
+```
 
 Once puppet is installed, we need to configure the client to know how to connect to the puppetmaster. We do this by editing the /etc/puppet/puppet.conf file. Under the "[agent]" header add the following:
 
@@ -110,11 +110,11 @@ On the puppetmaster, you now should see your client server connections. We have 
 
 Now that our puppetmaster is talking to our client, we need to tell the client to do things. While Chef does this with recipes, Puppet does this with manifests. A group of manifests is called a module. There are modules to configure packages like Apache, Nginx, and MySQL. You can also use manifests and modules to alter file permissions, users and groups, and more. Just to make sure this is configured properly we're going to use a module to install MySQL on our client. Perform these steps on your puppetmaster:
 
-    
-    apt-get -y install git
-    git clone https://github.com/puppetlabs/puppetlabs-mysql mysql
-    vim /etc/puppet/manifests/site.pp
-
+```bash
+apt-get -y install git
+git clone https://github.com/puppetlabs/puppetlabs-mysql mysql
+vim /etc/puppet/manifests/site.pp
+```
 
 site.pp:
 
