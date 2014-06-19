@@ -6,9 +6,11 @@
 //= require lib/jquery/jquery.cookie-1.4.1
 //= require lib/bootstrap/collapse
 //= require lib/bootstrap/dropdown
+//= require core.js
+//= require pages/sponsorship.js
 
 (function (window, document, $) {
-  var app = window.devsite || {},
+  var app = window.devsite,
     cookieName = 'devsite-language';
 
   $.extend(app, {
@@ -74,6 +76,16 @@
 
     $('.lang-btn').on('click', function() {
       app.showLanguage($(this).data('query'));
+    });
+
+    app.routes = {
+      '/community/': app.pages.sponsorship
+    };
+
+    Object.keys(app.routes).forEach(function(route) {
+      if (window.location.pathname === route) {
+        app.routes[route]();
+      }
     });
   });
 
