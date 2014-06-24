@@ -8,10 +8,10 @@
 //= require lib/bootstrap/dropdown
 //= require core.js
 //= require pages/sponsorship.js
+//= require pages/docs.js
 
 (function (window, document, $) {
-  var app = window.devsite,
-    cookieName = 'devsite-language';
+  var app = window.devsite;
 
   $.extend(app, {
     // TODO move to some kind of utils object or something
@@ -36,54 +36,17 @@
         cache[query] = values;
         return cache[query][name];
       };
-    }()),
-
-    showLanguage: function(language, ignoreSave) {
-      this.hideAll();
-
-      var $btn = $('.lang-btn[data-query="' + language + '"]');
-
-      $btn.toggleClass('active');
-
-      $('.' + $btn.data('class')).show();
-
-      if (!ignoreSave) {
-        $.cookie(cookieName, language, { path: '/' });
-      }
-    },
-
-    hideAll: function() {
-      // hide all of the code blocks
-      $($(".lang-btn").map(function () {
-        return '.' + $(this).data('class')
-      }).toArray().join(',')).hide();
-
-      // hide the selected btn
-      $('.lang-btn').removeClass('active');
-    }
+    }())
   });
 
   $(document).on('ready', function() {
-    if (app.getParameter('lang')) {
-      app.showLanguage(app.getParameter('lang'));
-    }
-    else if ($.cookie(cookieName)) {
-      app.showLanguage($.cookie(cookieName));
-    }
-    else {
-      app.showLanguage('shell', true);
-    }
-
-    $('.lang-btn').on('click', function() {
-      app.showLanguage($(this).data('query'));
-    });
-
-    app.routes = {
-      '/community/': app.pages.sponsorship
+   app.routes = {
+      '/community/': app.pages.sponsorship,
+      '/docs/': app.pages.docs
     };
 
     Object.keys(app.routes).forEach(function(route) {
-      if (window.location.pathname === route) {
+      if (window.location.pathname.indexOf(route) === 0) {
         app.routes[route]();
       }
     });
