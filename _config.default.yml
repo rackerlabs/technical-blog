@@ -1,3 +1,7 @@
+
+#DERP PREVENTION NOTE: THIS FILE IS PROVIDED FOR CONVENIENCE. HOWEVER, CHANGES TO THIS FILE
+#WILL NOT MODIFY THE CONTENTS OF THE ACTUAL CONFIG FILE. IF YOU WANT TO MODIFY THAT _config.yml
+#IT CAN BE FOUND AT deploy/roles/dev/files/_config.yml
 name: Rackspace Developer Portal
 url: http://developer.rackspace.com
 markdown: redcarpet
