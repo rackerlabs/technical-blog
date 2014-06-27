@@ -9,11 +9,11 @@ categories:
 - jclouds
 - documentation
 ---
+{% img right /images/2014-06-11-walk-n-doc/pedestrian-sign.jpg %} 
+ 
+A common complaint about many open source projects is documentation. Insufficient, incorrect, non-existent, hard to find, and difficult to update are things we typically all hear. There are a lot of different ways to tackle these problems. There's no silver bullet but one of my favourite tactics is lowering the barriers for absolutely anyone to walk up and contribute documentation.
 
- {% img right /images/2014-06-11-walk-n-doc/pedestrian-sign.jpg 125 125 %}A common complaint about many open source projects is documentation. Insufficient, incorrect, non-existent, hard to find, and difficult to update are things we typically all hear. There are a lot of different ways to tackle these problems. There's no silver bullet but one of my favourite tactics is lowering the barriers for absolutely anyone to walk up and contribute documentation.
-
-
-<!--more-->
+<!-- more -->
 
 ## Lowering the Barriers
 
