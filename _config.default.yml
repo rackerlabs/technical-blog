@@ -20,6 +20,5 @@ excerpt_separator: "<!-- more -->"
 
 # jekyll-assets plugin configuration.
 assets:
-  js_compressor: ~
-  css_compressor: ~
-  cache: true
+  js_compressor: uglifier
+  css_compressor: yui
