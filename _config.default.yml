@@ -1,67 +1,24 @@
+# THIS FILE IS NOT USED BY VAGRANT. It's used by Jenkins to build the production and
+# staging sites.
+#
+# If you want to modify the Jekyll configuration used by everyone's Vagrant machine, edit:
+#   deploy/roles/dev/files/_config.yml
+# To make those changes permanent, copy them here.
 name: Rackspace Developer Portal
 url: http://developer.rackspace.com
-markdown: redcarpet
+
+markdown: kramdown
+kramdown:
+ input: GFM
 highlighter: pygments
-
-paginate: 10          # Posts per page on the blog index
+paginate: 10
 relative_permalinks: true
-permalink: /blog/:title
+permalink: posts/:title
 paginate_path: /blog/page:num
-recent_posts: 5       # Posts in the sidebar Recent Posts section
-excerpt_link: "Read on &rarr;"  # "Continue reading" link text at the bottom of excerpted articles
-
-root: /
-category_dir: blog/categories
-monthly_dir: blog/monthly
-
-# Gravatar Emails
-gravatar_emails:
-  - wayne.walls@rackspace.com
-  - hart.hoover@rackspace.com
-  - alan.quillin@rackspace.com
-  - alex@alexscammon.com
-  - amesserl@rackspace.com
-  - ben.arent@RACKSPACE.COM
-  - bret.mcgowen@RACKSPACE.COM
-  - brad@bradmontgomery.net
-  - chad.lung@gmail.com
-  - dave.king@mailtrust.com
-  - Duan.vanderWesthuizen@rackspace.com
-  - eadame@rackspace.com
-  - egle.sigler@rackspace.com
-  - erik.redding@RACKSPACE.COM
-  - everett.toews@RACKSPACE.COM
-  - felix.sargent@RACKSPACE.COM
-  - garry.prior@rackspace.co.uk
-  - gary.dusbabek@RACKSPACE.COM
-  - ian.good@rackspace.com
-  - jason.gignac@RACKSPACE.COM
-  - jason.smith@rackspace.com
-  - jay.baird@RACKSPACE.COM
-  - jeffrey.ness@rackspace.com
-  - jesse.keating@RACKSPACE.COM
-  - jesse.noller@rackspace.com
-  - john.davidson@RACKSPACE.COM
-  - jordan.evans@RACKSPACE.COM
-  - justin.gallardo@rackspace.com
-  - justin.phelps@RACKSPACE.COM
-  - ken.perkins@rackspace.com
-  - kevin.bittner@rackspace.com
-  - major.hayden@rackspace.com
-  - mike.sisk@RACKSPACE.COM
-  - mitch.robins@RACKSPACE.COM
-  - nicholas.mistry@RACKSPACE.COM
-  - oz.akan@RACKSPACE.COM
-  - paul.querna@rackspace.com
-  - phil.jirsa@RACKSPACE.COM
-  - ryan.richard@rackspace.com
-  - steve.katen@rackspace.com
-  - sudarshan.acharya@rackspace.com
-  - tokunbo.george@RACKSPACE.COM
-  - john.yi@RACKSPACE.COM
+recent_posts: 5
+excerpt_separator: "<!-- more -->"
 
 # jekyll-assets plugin configuration.
 assets:
   js_compressor: uglifier
   css_compressor: yui
-  cache: true
