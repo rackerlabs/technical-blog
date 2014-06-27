@@ -11,8 +11,7 @@
     '/docs/auto-scale': [ 'java', '.net', 'php','python','ruby','shell' ],
     '/docs/cloud-images': [ 'java', '.net', 'php','python','ruby','shell' ],
     '/docs/cloud-queues': [ 'java', '.net', 'php','python','ruby','shell' ],
-    '/docs/cloud-monitoring': [ 'java', '.net', 'php','python','ruby','shell' ],
-    '/docs': [ 'java', '.net', 'node.js', 'php','python','ruby','shell' ]
+    '/docs/cloud-monitoring': [ 'java', '.net', 'php','python','ruby','shell' ]
   };
 
   var cookieName = 'devsite-language';
@@ -55,6 +54,10 @@
         });
       }
     });
+
+    if (match) {
+      $('.language-list').show();
+    }
 
     if (app.getParameter('lang') && docsDict[currentPage].indexOf(app.getParameter('lang')) >= 0) {
       showLanguage(app.getParameter('lang'));
