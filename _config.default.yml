@@ -8,6 +8,8 @@ name: Rackspace Developer Portal
 url: http://developer.rackspace.com
 
 markdown: redcarpet
+redcarpet:
+  extensions: [ "tables" ]
 highlighter: pygments
 paginate: 10
 relative_permalinks: true
