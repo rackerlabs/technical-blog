@@ -17,9 +17,19 @@ title: Ruby SDK
     <li><a href="/docs/cloud-queues/getting-started/?lang=ruby">Cloud Queues</a></li>
   </ul>
   <p>Support for additional services is on-going.</p>
+
+  <hr />
+  <h2>Requirements</h2>
+  <p>Before you get started, you'll need to install Ruby by following <a href="https://www.ruby-lang.org/en/installation/">the installation instructions for your operating system</a>.</p>
+  <p>On most environments, installing Ruby will automatically install RubyGems as well. The exception to this is if you're using system packages from <code>yum</code> on <b>CentOS</b> or <b>RedHat</b>. If you're a CentOS user, you'll need to install RubyGems separately:</p>
+
+  {% highlight sh %}
+$ sudo yum install rubygems
+  {% endhighlight %}
+
   <hr />
   <h2>Installation</h2>
-  <p><strong>fog</strong> can be installed directly through Rubygems:</p>
+  <p><strong>fog</strong> can be installed directly through Rubygems. If you chose to use a <em>system installation</em> of Ruby, via <code>apt</code> or <code>yum</code> for example, you'll need to prefix this command with <code>sudo</code>. If you're using a Ruby version manager like <code>rbenv</code> or <code>rvm</code>, you should <b>not</b> include <code>sudo</code>.</p>
   {% highlight sh %}
 $ gem install fog
   {% endhighlight %}
@@ -45,8 +55,8 @@ require 'fog'
   :rackspace_region => '{region}'
 )
 
-# List all containers in the requested region with the "directories" 
-# collection. (For consistency across providers, fog calls Rackspace 
+# List all containers in the requested region with the "directories"
+# collection. (For consistency across providers, fog calls Rackspace
 # containers "directories.")
 @storage.directories.all
 
