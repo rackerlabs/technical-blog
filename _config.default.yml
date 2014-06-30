@@ -13,7 +13,7 @@ redcarpet:
 highlighter: pygments
 paginate: 10
 relative_permalinks: true
-permalink: posts/:title
+permalink: /blog/:title
 paginate_path: /blog/page:num
 recent_posts: 5
 excerpt_separator: "<!-- more -->"
