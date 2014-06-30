@@ -5,7 +5,7 @@
     // Repopulate form from query string
     if (app.getParameter('error')) {
       var fields = ['event_name', 'num_attendees', 'start_date', 'end_date', 'location', 'venue',
-        'event_url', 'code_of_conduct_url', 'event_twitter_handle', 'contact_name', 'contact_email'];
+        'event_url', 'event_twitter_handle', 'contact_name', 'contact_email'];
 
       // First do all of the text fields
       fields.forEach(function(field) {
