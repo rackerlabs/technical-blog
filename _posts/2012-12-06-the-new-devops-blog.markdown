@@ -28,7 +28,7 @@ WordPress is open source, but it isn't easy for Rackers around the company to co
 2. They email one of us the story. The other person might not know about it.
 3. We read it, and email it back to them for revisions.
 4. They rework it, send it to us again... by email.
-5. We email the finished article to our editor, [Andrew Hickey](ww.linkedin.com/in/andrewrhickey).
+5. We email the finished article to our editor, [Andrew Hickey](https://www.linkedin.com/in/andrewrhickey).
 6. Andrew emails us a different copy with his edits.
 7. We cut/paste the article into WordPress and post it.
 

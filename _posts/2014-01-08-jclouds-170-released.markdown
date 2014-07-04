@@ -38,6 +38,6 @@ Rackspace uses jclouds as our Java SDK for OpenStack and the Rackspace cloud. Go
 
 ## Conclusion
 
-Let us know what you think! Feel free to reach out to me, Everett Toews, on Twitter [@everett_toews](twitter.com/everett_toews) or email the Rackspace developer support team at [sdk-support@rackspace.com](mailto:sdk-support@rackspace.com).
+Let us know what you think! Feel free to reach out to me, Everett Toews, on Twitter [@everett_toews](https://twitter.com/everett_toews) or email the Rackspace developer support team at [sdk-support@rackspace.com](mailto:sdk-support@rackspace.com).
 
 I'd also like to invite you to connect with the [jclouds community](http://jclouds.apache.org/documentation/community/). From there you can join our mailing lists or drop by on IRC to say hi. If you're looking to add new features to jclouds, you might be interested in [How to Contribute](https://wiki.apache.org/jclouds/How%20to%20Contribute).

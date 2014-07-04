@@ -115,6 +115,6 @@ I'm not claiming to be an expert on Redis performance, but it's obvious that
 in the non-pipelined case, and 16-31% in the pipelined case. Not bad
 considering we made the pricing even more competitive.
 
-If you haven't already signed up for our [Developer Trial](developer.rackspace.com/devtrial)
+If you haven't already signed up for our [Developer Trial](https://developer.rackspace.com/devtrial)
 you should to give the new servers a spin, hopefully these numbers will help entice you!
 

@@ -84,7 +84,7 @@ $client = $this->getServiceLocator()->get('OpenCloud');
 
 This will return an instance of [`OpenCloud\Rackspace`](https://github.com/rackspace/php-opencloud/blob/master/lib/OpenCloud/Rackspace.php) and will allow you to access all the functionality of the SDK base class. For more context, see how the [`ServersController`](https://github.com/jamiehannaford/zf2-opencloud-skeleton-app/blob/master/module/Application/src/Application/Controller/ServersController.php) instantiates it in the skeleton app.
 
-Using the skeleton app codebase above, I booted up a test VM for you to check out: [click here to view the test control panel](23.253.63.225). One thing you will notice is that certain pages are quite slow - only because they're having to make an API call on each request. Obviously you would use a database or caching solution for your production website, but this is enough to illustrate the point for testing.
+Using the skeleton app codebase above, I booted up a test VM for you to check out: [click here to view the test control panel](http://23.253.63.225). One thing you will notice is that certain pages are quite slow - only because they're having to make an API call on each request. Obviously you would use a database or caching solution for your production website, but this is enough to illustrate the point for testing.
 
 The module offers great flexibility, as well as the full power of the underlying SDK. The [`CloudFilesController`](https://github.com/jamiehannaford/zf2-opencloud-skeleton-app/blob/master/module/Application/src/Application/Controller/CloudFilesController.php), for example, is able to:
 

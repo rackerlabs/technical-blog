@@ -39,5 +39,5 @@ Finally was the bar track! Many of the miniconf attendees, myself included, reti
 [2]: https://github.com/tripleo/incubator
 [3]: http://www.rackspace.com/blog/how-rackspace-re-wrote-the-cloud-with-openstack-continuous-delivery/
 [4]: https://pypi.python.org/pypi/testtools
-[5]: devstack.org
+[5]: http://devstack.org
 [6]: http://www.wrestpoint.com.au/
