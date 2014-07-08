@@ -49,3 +49,21 @@ h4 {
   font-weight: 700;
 }
 
+.redribbon {
+  background: url(/img/ribbon.png) no-repeat center left;
+  position: fixed;
+  bottom: 35px;
+  right: 0;
+  padding: 0 20px;
+  height: 60px;
+  line-height: 60px;
+  font-weight: bold;
+
+  @media (max-width: @screen-sm-max) {
+    display: none;
+  }
+
+  a {
+    color: white;
+  }
+}
