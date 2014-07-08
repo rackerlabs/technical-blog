@@ -60,9 +60,6 @@
       s.parentNode.insertBefore(ga, s);
     })();
 
-    window.cmSetClientID('90378974', false, 'dc.rackspace.com', 'rackspace.com');
-    window.cmCreatePageviewTag('Rackspace Developer Center: {{ page.title }}');
-
     app.routes = {
       '/community/': app.pages.sponsorship,
       '/docs/': app.pages.docs,
