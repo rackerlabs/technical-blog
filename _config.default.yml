@@ -26,3 +26,4 @@ assets:
     - _assets/css
   js_compressor: uglifier
   css_compressor: yui
+  gzip: false
