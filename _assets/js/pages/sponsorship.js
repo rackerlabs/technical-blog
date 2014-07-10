@@ -29,6 +29,11 @@
         $('input[name=' + 'speaking_opportunity' + ']').prop('checked', true);
       }
 
+      // Checkboxes
+      if (app.getParameter('charitable_event')) {
+        $('input[name=' + 'charitable_event' + ']').prop('checked', true);
+      }
+
       // Show a friendly error message
       $('.sponsorship-result')
         .removeClass('hidden')
