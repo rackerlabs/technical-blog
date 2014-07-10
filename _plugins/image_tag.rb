@@ -38,13 +38,8 @@ module Jekyll
     end
 
     def render(context)
-      asset_base = context.registers[:site].config['assets']['base_url'] || ''
-
-      unless asset_base.empty? or @img['src'] =~ /^https?:/
-        asset_base.gsub!(/\/$/, '')
-        @img['src'].gsub!(/^\//, '')
-
-        @img['src'] = "#{asset_base}/#{@img['src']}"
+      unless @img['src'] =~ /^https?:/
+        @img['src'] = AssetsPlugin::Renderer.new(context, @img['src']).render_asset_path
       end
 
       if @img
