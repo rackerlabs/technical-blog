@@ -41,6 +41,8 @@ module Jekyll
       if @img
         unless @img['src'] =~ /^https?:/
           begin
+            @img['src'].gsub!(/^\//, '')
+
             @img['src'] = AssetsPlugin::Renderer.new(context, @img['src']).render_asset_path
           rescue Jekyll::AssetsPlugin::Environment::AssetNotFound
             $stderr.puts "Missing img asset in #{context.environments.first['page']['path']}: <#{@img['src']}>"

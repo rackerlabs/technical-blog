@@ -43,7 +43,7 @@ simplest availability metrics and miss out on cost-savings,
 bottleneck-eliminations, and other optimizations. This results in missed
 warnings and things catching on fire!
 
-{% img center fire.gif Things catching on fire! %}
+{% img center /fire.gif Things catching on fire! %}
 
 I joined the new Rackspace Cloud Intelligence team four months ago to help
 analyze this abundance of monitoring data. I loved studying machine learning
@@ -78,7 +78,7 @@ metrics that you have configured in the cloud. An anomaly means more than
 just going above or below a threshold—we capture abnormal occurrences by
 understanding what is “normal” for your system.
 
-{% img center anomalies.png Anomalies in metrics %}
+{% img center /anomalies.png Anomalies in metrics %}
 
 We started with a variation on [Bollinger Bands][7] because they’re simple
 and provide relative definitions of high and low values per time series.
@@ -106,7 +106,7 @@ by mapping to a set of discrete states via [first order differencing][8].
 This way we get the movements between the points in the time series, which
 captures change in the metrics regardless of raw magnitude.
 
-{% img center pattern.png 400 800 A pattern between two metrics %}
+{% img center /pattern.png 400 800 A pattern between two metrics %}
 
 We determine a causal model for the observations made of your server over
 time using a [belief network][9] that maps the observations to finite state
@@ -119,7 +119,7 @@ can define what the similarity actually means by changing our similarity
 function. You can define a distance function F with input vectors x and y,
 and it might look something like:
 
-{% img center cosine.png cosine similarity %}
+{% img center /cosine.png cosine similarity %}
 
 This is a pretty common implementation of a similarity function that computes
 the cosine between two vectors. You can think of this as the angle between
