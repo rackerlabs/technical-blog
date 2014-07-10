@@ -6,7 +6,7 @@
 # Syntax {% img [class name(s)] [http[s]:/]/path/to/image [width [height]] [title text | "title text" ["alt text"]] %}
 #
 # Examples:
-# {% img /images/ninja.png Ninja Attack! %}
+# {% img ninja.png Ninja Attack! %}
 # {% img left half http://site.com/images/ninja.png Ninja Attack! %}
 # {% img left half http://site.com/images/ninja.png 150 150 "Ninja Attack!" "Ninja in attack posture" %}
 #

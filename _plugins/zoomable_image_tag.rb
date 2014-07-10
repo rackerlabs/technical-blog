@@ -5,7 +5,7 @@
 # Syntax {% zoomable_img [class name(s)] [http[s]:/]/path/to/image [width [height]] [title text | "title text" ["alt text"]] %}
 #
 # Examples:
-# {% zoomable_img /images/ninja.png Ninja Attack! %}
+# {% zoomable_img ninja.png Ninja Attack! %}
 # {% zoomable_img left half http://site.com/images/ninja.png Ninja Attack! %}
 # {% zoomable_img left half http://site.com/images/ninja.png 150 150 "Ninja Attack!" "Ninja in attack posture" %}
 #

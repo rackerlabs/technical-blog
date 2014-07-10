@@ -78,20 +78,20 @@ For example, if you had a counter called `"test"`, you could add this to your
 
 Now we can configure our Jenkins "Build" action with the following script:
 
-{% img /images/2013-05-06-enforcing-performance-with-flood/flood-configure.png %}
+{% img 2013-05-06-enforcing-performance-with-flood/flood-configure.png %}
 
 And we'd love to see plots with a data point for each build, so we can pinpoint
 when performance started to improve or degrade. This is easy with the Jenkins
 [Plot Plugin][5]:
 
-{% img /images/2013-05-06-enforcing-performance-with-flood/flood-plot-settings.png %}
+{% img 2013-05-06-enforcing-performance-with-flood/flood-plot-settings.png %}
 
 Remember, as with all performance testing, data is only useful when you can
 compare it to something! Keeping your performance testing environment on
 consistent hardware (or VMs) and using Chef (or similar) to make sure your app
 stays up-to-date are crucial to producing useful output.
 
-{% img /images/2013-05-06-enforcing-performance-with-flood/flood-plot-output.png %}
+{% img 2013-05-06-enforcing-performance-with-flood/flood-plot-output.png %}
 
 [1]: http://www.rackspace.com/email-hosting/
 [2]: https://github.com/

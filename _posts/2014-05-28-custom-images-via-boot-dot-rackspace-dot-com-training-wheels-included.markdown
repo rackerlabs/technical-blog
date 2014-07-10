@@ -56,19 +56,19 @@ __2. Connect to the boot.rackspace.com VM via the Console__
 * Once the VM is 'Active,' click on the 'Actions' available in the Server
   Details, and select 'Connect Via Console'
 
-{% img /images/custom-images-via-boot-dot-rackspace-dot-com-training-wheels-included/connect_via_console.png %}
+{% img custom-images-via-boot-dot-rackspace-dot-com-training-wheels-included/connect_via_console.png %}
 
 __2. Select Linux Operating Systems from the Boot Menu__
-{% img /images/custom-images-via-boot-dot-rackspace-dot-com-training-wheels-included/menu.png %}
+{% img custom-images-via-boot-dot-rackspace-dot-com-training-wheels-included/menu.png %}
 
 __3. Select Ubuntu from the list of Distros__
-{% img /images/custom-images-via-boot-dot-rackspace-dot-com-training-wheels-included/distro.png %}
+{% img custom-images-via-boot-dot-rackspace-dot-com-training-wheels-included/distro.png %}
 
 __4. Select 12.04 from the list of Versions__
-{% img /images/custom-images-via-boot-dot-rackspace-dot-com-training-wheels-included/version.png %}
+{% img custom-images-via-boot-dot-rackspace-dot-com-training-wheels-included/version.png %}
 
 __5. Select ubuntu install from the the Boot Paramaters__
-{% img /images/custom-images-via-boot-dot-rackspace-dot-com-training-wheels-included/params.png %}
+{% img custom-images-via-boot-dot-rackspace-dot-com-training-wheels-included/params.png %}
 
 __6. Proceed through the install & setup accordingly__
 
@@ -79,7 +79,7 @@ __6. Proceed through the install & setup accordingly__
     * Select OpenSSH server during the software install process
     * Install the GRUB boot loader to the master boot record
 
-{% img /images/custom-images-via-boot-dot-rackspace-dot-com-training-wheels-included/install.png %}
+{% img custom-images-via-boot-dot-rackspace-dot-com-training-wheels-included/install.png %}
 
 __7. Reboot from local hdd__
 
@@ -88,7 +88,7 @@ disconnect. Reconnect to the console, but this time, select to boot
 from the Local HDD as we've already installed the OS and because iPXE by
 default does a netboot.
 
-{% img /images/custom-images-via-boot-dot-rackspace-dot-com-training-wheels-included/localboot.png %}
+{% img custom-images-via-boot-dot-rackspace-dot-com-training-wheels-included/localboot.png %}
 
 __8. Instance configuration required by Rackspace__
 
@@ -96,7 +96,7 @@ To configure the instance, you must first get to the prompt. You can do
 this via the console from the browser, or by SSH'ing into the VM (SSH may be easier to work
 with)
 
-{% img /images/custom-images-via-boot-dot-rackspace-dot-com-training-wheels-included/os_console.png %}
+{% img custom-images-via-boot-dot-rackspace-dot-com-training-wheels-included/os_console.png %}
 
 Install curl
 
@@ -155,7 +155,7 @@ __11. After modifications and cleanup is done, snapshot your image__
 In the Server Details, select 'Create Image' to snapshot the image as-is and
 give it a name, i.e. 'my_ubuntu_1204'
 
-{% img /images/custom-images-via-boot-dot-rackspace-dot-com-training-wheels-included/create_image.png %}
+{% img custom-images-via-boot-dot-rackspace-dot-com-training-wheels-included/create_image.png %}
 
 __12. Set metadata for the image__
 
