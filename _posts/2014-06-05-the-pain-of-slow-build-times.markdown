@@ -24,7 +24,7 @@ Everything was working great, but my build times were exceedingly
 slow due to the compile of Ruby and Node.js. It was taking me on
 average around 15 minutes to bootstrap a node.
 
-![Build Time Before](/images/2014-06-05-mattjbarlow/images/ruby_before_500.png)
+![Build Time Before]({% asset_path 2014-06-05-mattjbarlow/images/ruby_before_500.png %})
 
 This made my testing process painful. Also, if I ever hoped to use this
 cookbook in a scaling group, there was no way that I could wait 15
@@ -236,7 +236,7 @@ downloaded to verify the authenticity of your repo.
 Where it says YOUR PUBKEY, you guessed it, insert the keyid of your
 PUBKEY which looks like this:
 
-![Pubkey](/images/2014-06-05-mattjbarlow/images/pubkey_500.png)
+![Pubkey]({% asset_path 2014-06-05-mattjbarlow/images/pubkey_500.png %})
 
 ## Sync Your Repo with Cloud Files
 

@@ -37,15 +37,15 @@ There are 3 actors in this process:
 
 This is the process they go through:
 
-1. The contributor, wanting to make an improvement, clicks on the Fix This Page link at the bottom of any page on the jclouds [website](http://jclouds.apache.org/) ([screenshot](/images/2014-06-11-walk-n-doc/walk-n-doc-01.png)).
-1. The contributor edits the page while GitHub automatically forks the [jclouds-site repo](https://github.com/jclouds/jclouds-site/) in the background, if necessary ([screenshot](/images/2014-06-11-walk-n-doc/walk-n-doc-02.png)). Note that the contributor needs a GitHub account and will need to be logged in.
-1. The contributor proposes the edits while GitHub automatically create a branch for the commit ([screenshot](/images/2014-06-11-walk-n-doc/walk-n-doc-03.png)).
-1. The contributor creates a pull request ([screenshot](/images/2014-06-11-walk-n-doc/walk-n-doc-04.png)).
-1. The doc system automatically builds the entire jclouds website with the contributor's edits included and comments on the pull request when done ([screenshot](/images/2014-06-11-walk-n-doc/walk-n-doc-05.png)).
-1. The doc system automatically uploads the staging jclouds website to [Rackspace Cloud Files](http://jclouds.apache.org/guides/rackspace/#files) and comments on the pull request with a link to the staging website when done ([screenshot](/images/2014-06-11-walk-n-doc/walk-n-doc-06.png)).
-1. The contributor and the reviewer both click on the link to the staging website so they can both review the exact same rendered changes ([screenshot](/images/2014-06-11-walk-n-doc/walk-n-doc-07.png)).
-1. If the reviewer requests changes, the contributor edits the file(s) within the pull request and proposes those edits in an additional commit. The process goes back to #5 ([screenshot](/images/2014-06-11-walk-n-doc/walk-n-doc-08.png)).
-1. The reviewer rejoices when the changes look good and merges the pull request ([screenshot](/images/2014-06-11-walk-n-doc/walk-n-doc-09.png)).
+1. The contributor, wanting to make an improvement, clicks on the Fix This Page link at the bottom of any page on the jclouds [website](http://jclouds.apache.org/) ([screenshot]({% asset_path 2014-06-11-walk-n-doc/walk-n-doc-01.png%} )).
+1. The contributor edits the page while GitHub automatically forks the [jclouds-site repo](https://github.com/jclouds/jclouds-site/) in the background, if necessary ([screenshot]({% asset_path 2014-06-11-walk-n-doc/walk-n-doc-02.png %})). Note that the contributor needs a GitHub account and will need to be logged in.
+1. The contributor proposes the edits while GitHub automatically create a branch for the commit ([screenshot]({% asset_path 2014-06-11-walk-n-doc/walk-n-doc-03.png %})).
+1. The contributor creates a pull request ([screenshot]({% asset_path 2014-06-11-walk-n-doc/walk-n-doc-04.png %})).
+1. The doc system automatically builds the entire jclouds website with the contributor's edits included and comments on the pull request when done ([screenshot]({% asset_path 2014-06-11-walk-n-doc/walk-n-doc-05.png %})).
+1. The doc system automatically uploads the staging jclouds website to [Rackspace Cloud Files](http://jclouds.apache.org/guides/rackspace/#files) and comments on the pull request with a link to the staging website when done ([screenshot]({% asset_path 2014-06-11-walk-n-doc/walk-n-doc-06.png %})).
+1. The contributor and the reviewer both click on the link to the staging website so they can both review the exact same rendered changes ([screenshot]({% asset_path 2014-06-11-walk-n-doc/walk-n-doc-07.png %})).
+1. If the reviewer requests changes, the contributor edits the file(s) within the pull request and proposes those edits in an additional commit. The process goes back to #5 ([screenshot]({% asset_path 2014-06-11-walk-n-doc/walk-n-doc-08.png %})).
+1. The reviewer rejoices when the changes look good and merges the pull request ([screenshot]({% asset_path 2014-06-11-walk-n-doc/walk-n-doc-09.png %})).
 
 While this might seem like a long process, it can actually be very quick. The process could happen in less than 5 minutes, if a simple edit required no additional changes and the reviewer signed off right away. It's important to note that there is no incidental complexity here. The process is as efficient as it could possibly be with respect to GitHub's workflow.
 

@@ -34,11 +34,11 @@ In order to use Libcloud, you'll need appropriate credentials for the provider y
 
 For Rackspace, the user name you need is the same one you use to login to [your control panel](https://mycloud.rackspace.com). Once you're logged in, you'll find your API key inside of the Account Settings page. Click on your user name in the top right access it.
 
-![Menu](/images/2014-02-03-libcloud-0-dot-14-released/menu.png)
+![Menu]({% asset_path 2014-02-03-libcloud-0-dot-14-released/menu.png %})
 
 From the Account Settings page, your API key will be obscured, so click *Show* to expose it. You'll want to be careful when using your user name and API key. For one, don't enter them directly into code you're checking into source control, especially if that repository is public.
 
-![Settings](/images/2014-02-03-libcloud-0-dot-14-released/settings.png)
+![Settings]({$ asset_path 2014-02-03-libcloud-0-dot-14-released/settings.png %})
 
 # Installing Libcloud
 

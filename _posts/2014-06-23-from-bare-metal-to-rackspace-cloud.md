@@ -40,7 +40,7 @@ At the very minimum, you will need the following gear:
 Server and Network Diagram
 --------------------------
 
-![rpc-poc-diagram](/images/2014-06-23-from-bare-metal/rpc-poc-diagram.png)
+![rpc-poc-diagram]({% asset_path 2014-06-23-from-bare-metal/rpc-poc-diagram.png %})
 
 Configure VLANs
 ---------------

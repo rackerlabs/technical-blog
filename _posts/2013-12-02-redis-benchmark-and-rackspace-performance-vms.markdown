@@ -44,11 +44,11 @@ version `2.6.7` and I ran the test 5 times on each machine.
 
 ### Redis-Benchmark w/o Pipelining
 
-<img src="/images/2013-12-02-redis-benchmark-rackspace-performance-vm/redis-benchmark-no-pipelining.png">
+<img src="{% asset_path 2013-12-02-redis-benchmark-rackspace-performance-vm/redis-benchmark-no-pipelining.png %}">
 
 ### Redis-Benchmark with pipelining enabled (16 commands):
 
-<img src="/images/2013-12-02-redis-benchmark-rackspace-performance-vm/redis-benchmark-with-pipelining.png">
+<img src="{% asset_path 2013-12-02-redis-benchmark-rackspace-performance-vm/redis-benchmark-with-pipelining.png %}">
 
 #### The Raw Data
 
