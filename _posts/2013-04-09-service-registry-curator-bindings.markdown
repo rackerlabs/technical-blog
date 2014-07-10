@@ -17,7 +17,7 @@ library is not very good, or the examples are out of date, or... the list goes o
 Well, you are not alone. I feel that way all the time.  Good APIs don’t just do their jobs well--they are 
 also easy to consume.  
 
-{% img center /images/2013-04-09-service-registry-curator-bindings/feetshures.png %}
+{% img center 2013-04-09-service-registry-curator-bindings/feetshures.png %}
 
 ##We Are Here to Help
 One of the overarching goals of the [Rackspace Service Registry](https://dfw.registry.api.rackspacecloud.com/)

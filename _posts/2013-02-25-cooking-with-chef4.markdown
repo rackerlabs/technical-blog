@@ -9,7 +9,7 @@ categories:
 - Chef
 - Private Cloud
 ---
-{% img right /images/2013-01-09-cooking-with-chef/chef_logo.png "Chef Logo" %}
+{% img right 2013-01-09-cooking-with-chef/chef_logo.png "Chef Logo" %}
 
 _This is a guest post from Ryan Richard. Ryan is an OpenStack Engineer for [Rackspace Private Cloud](http://www.rackspace.com/cloud/private/) and is a Red Hat Certified Architect. He has been at Rackspace for almost 6 years and has been working on OpenStack for one year. His current role involves in designing, deploying and supporting OpenStack based private clouds inside and outside of Rackspace data centers. You can follow him on twitter: [@rackninja](http://twitter.com/rackninja)._
 

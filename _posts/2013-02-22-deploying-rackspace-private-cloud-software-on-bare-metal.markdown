@@ -19,7 +19,7 @@ To solve this issue, the Rackspace Private Cloud Certification team sought out a
 
 Eventually, we picked a deployment model consisting of a combination of tools that would provide the right balance of features and flexibility. We chose the Razor provisioning engine, combined with the OpsCode Chef configuration management tool. After submitting a few patches, we now have a flexible and automated way to deploy and manage the physical layer of our private clouds.
 
-{% img center /images/2013-02-14-deploying-rackspace-private-cloud-software-on-bare-metal/razor.png "Razor Process" %}
+{% img center 2013-02-14-deploying-rackspace-private-cloud-software-on-bare-metal/razor.png "Razor Process" %}
 
 What makes this deployment model great is that one tool is not trying to solve all the issues. In our case, a simple workflow would include Razor discovering hardware, installing an operating system and handing the environment off to Chef. The Chef broker simply installs the Chef client and executes the initial list of server roles, such as "web server" or "database server." With Razor tracking all your physical assets, it is easy to then repurpose that infrastructure to another role using the same workflow. An added benefit of this model is that due to the loosely coupled design of the deployment system, it is very easy to change any of components. For example, it is trivial to substitute Chef with Puppet. 
 

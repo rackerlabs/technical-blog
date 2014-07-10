@@ -13,7 +13,7 @@ Comprehensive manual testing has given way to automated testing, and practices s
 
 Airbrake is an application that collects, de-dupes and notifies developers of errors in an application. The Airbrake system captures every unique error and all of its occurrences based on detailed parameters, backtrace and environment.<!--More-->  
 
-{% img center /images/2013-03-28-using-airbrake/airbrake1.png %}
+{% img center 2013-03-28-using-airbrake/airbrake1.png %}
 
 One of the best things about Airbrake is its ecosystem of “reporters” -  a range of open source notifiers that receive comprehensive crash reports on an application. There are notifier solutions for mainstream languages like [Ruby](https://github.com/airbrake/airbrake), [Java](https://github.com/airbrake/airbrake-java), [Php](https://github.com/airbrake/airbrake-php),[Node](https://github.com/felixge/node-airbrake) and [Javascript](https://github.com/airbrake/airbrake-js), and Airbrake is increasingly useful when trying to debug less common languages like [Erlang](https://github.com/kenpratt/erlbrake), [Scala](https://github.com/stackmob/stackmob-airbrake) or even [iOS](https://github.
 com/airbrake/airbrake-ios) and [Android](https://github.com/airbrake/airbrake-android) mobile apps.
@@ -99,5 +99,5 @@ Getting to Airbrake Zero (or having all errors cleared) may be impossible for a 
 
 Sign up for Airbrake at [http://airbrake.io](http://airbrake.io)!
 
-{% img center /images/2013-03-28-using-airbrake/airbrake2.png %}
+{% img center 2013-03-28-using-airbrake/airbrake2.png %}
 

@@ -71,7 +71,7 @@ There are a few different ways to create this instance. We can use novaclient, p
 
 On the control panel, I create a 2GB instance in DFW region. I choose Ubuntu. Obviously, Salt master works well on other distributions as well.
 
-{% img center /images/2013-06-14-marconi-and-salt/image01.png %}
+{% img center 2013-06-14-marconi-and-salt/image01.png %}
 
 ###Configure The Instance
 

@@ -17,7 +17,7 @@ and a huge red balloon to ["Introduce a Girl to Engineering Day,"](https://www.e
 presented by the UT Women in Engineering Program (WEP). We inflated the balloon to
 about five feet in diameter, attached a digital camera, and launched our mapping rig 100 feet in air above campus.
 
-{% img center /images/camerarig.jpg %}
+{% img center camerarig.jpg %}
 
 <!--more-->
 
@@ -28,7 +28,7 @@ collect environmental data or other data in their communities. How about
 counting the number of healthy trees on a neighborhood block? Could you put the tree data on top of an existing street map? Would you need to collect more information
 about the health of the trees? Is that data? Yes. Could you use the data you collect to make a new map? Yes.
 
-{% img center /images/balloonfly.jpg %}
+{% img center balloonfly.jpg %}
 
 The balloon mapping techniques were developed by an DIY science community called the [Public Lab](http://publiclab.org/). You can read more about open source tools and techniques for data collection and mapping on the Public Lab website. (You can even purchase your own [balloon and kite mapping kits](http://store.publiclab.org/collections/mapping).)
 
@@ -58,7 +58,7 @@ Relations Group wants to find the hackers who are going to change the
 world. Many of those developers are already investing their time and
 energy in the open source world and building amazing things. Some of them are young and ready to fly.
 
-{% img center /images/kitejoy.jpg %}
+{% img center kitejoy.jpg %}
 
 We want to support that. We want to see more of that. We want Rackspace
 to be the platform that people choose when they build the software that

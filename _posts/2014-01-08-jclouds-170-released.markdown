@@ -12,7 +12,7 @@ categories:
 - developer
 - openstack
 ---
-{% img right /images/2013-11-07-jclouds-is-an-apache-tlp/jclouds.jpg 200 %}
+{% img right 2013-11-07-jclouds-is-an-apache-tlp/jclouds.jpg 200 %}
 
 Apache jclouds version 1.7.0 has been released into the wild. This is jclouds' first minor point version release as an Apache top level project. Community development on the project is continuing to accelerate and there are some major additions I'd like to highlight. 
 

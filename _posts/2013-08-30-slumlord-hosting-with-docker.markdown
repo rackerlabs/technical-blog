@@ -8,7 +8,7 @@ published: true
 categories: 
 - Docker
 ---
-{% img right /images/2013-08-19-slumlord-hosting/slumlord.jpg 200 %}
+{% img right 2013-08-19-slumlord-hosting/slumlord.jpg 200 %}
 Since becoming a Racker back in 2007, one of my all time favorite websites has been [slumlordhosting.com][1]. Slumlord Hosting is a parody of really bad shared hosting environments, advertising some amazing features:
 
 * Dedicated space on a "High Density Floppy Storage Area Network Device"
@@ -142,7 +142,7 @@ rails server
 
 You can set this application up to run with Unicorn/Passenger/Thin/whatever app server if you like but that setup is outside the scope of this post. Navigate to the IP address of your server on port 3000 and marvel at Slumlord WordPress.
 
-{% img center /images/2013-08-19-slumlord-hosting/slumlord_frontend.png %}
+{% img center 2013-08-19-slumlord-hosting/slumlord_frontend.png %}
 
 When a user clicks the "Sign Up Now" button and creates an account, a docker container with Apache, PHP, MySQL and WordPress is created from the template container we made earlier.
 

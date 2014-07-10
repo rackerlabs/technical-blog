@@ -8,7 +8,7 @@ categories:
 - Five Pillars
 - Agile
 ---
-{% img right /images/pillars/pillar.png 160 160 %}
+{% img right pillars/pillar.png 160 160 %}
 Being able to roll with the punches in a cloud environment is extremely important. The cloud can be used for a steady state environment, but really shines when coupled with monitoring and the API. Every application in the cloud should fit in one of these four buckets:
 
 * On and Off
@@ -20,7 +20,7 @@ Each workload makes you work a little differently, but using a traditional hosti
 
 Let's look at these cloud workloads:
 
-{% img center /images/2013-03-19-agility/workloads.png %}
+{% img center 2013-03-19-agility/workloads.png %}
 <p style="text-align: center; font-size: 85%">The red line represents resource usage. The dashed line represents infrastructure capacity.</p>
 
 If you are successful and get more traffic than expected, your application performance suffers because there aren't enough resources to go around. You hope the application remains available but eventually your application may just get knocked down if you don't react quickly to meet demand.

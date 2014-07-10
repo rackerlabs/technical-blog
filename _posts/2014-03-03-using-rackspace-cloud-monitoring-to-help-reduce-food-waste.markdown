@@ -72,7 +72,7 @@ get a monitoring alert sent to my email notifying me of the event.
 
 Here's a photo of what it looks like.
 
-{% img center /images/2014-03-03-using-rackspace-cloud-monitoring-to-help-reduce-food-waste/raspi.png %}
+{% img center 2014-03-03-using-rackspace-cloud-monitoring-to-help-reduce-food-waste/raspi.png %}
 
 Next steps: I am debating as to whether or not I want to go wireless. I fear
 it will create false alarms that could be avoided. Another added feature would

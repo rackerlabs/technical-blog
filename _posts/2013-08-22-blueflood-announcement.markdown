@@ -41,7 +41,7 @@ We ended up choosing Cassandra as the database backend as it is a natural fit fo
 
 We built Blueflood to run at massive scale, and hundreds of millions of data points per day is nowhere close to max capacity. We use a 36 node multi-datacenter cluster to run Blueflood in production. Of those, 4 nodes perform ingestion and querying, while the remaining 32 perform rollup calculations and querying. Internally, we use a Thrift-based interface for querying and ingestion that contains a lot of code specific to our internal systems. We wrote reference HTTP-based ingestion and query layers for the opensource release. The ingestion nodes are colocated with the Scribe feeds they read off of, and the rollup nodes are colocated with Cassandra.
 
-{% img center /images/2013-08-22-blueflood-announcement/rollups_per_minute.png %}
+{% img center 2013-08-22-blueflood-announcement/rollups_per_minute.png %}
 
 ### The Future:
 We've got plenty of ideas for how to improve Blueflood, and there's a long road ahead of us. Some of the things we're planning to implement:

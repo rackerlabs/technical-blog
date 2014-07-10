@@ -13,7 +13,7 @@ _This story is contributed by [Chad Lung](http://www.linkedin.com/in/chadlung), 
 What if you had a tremendous mountain of data, broken up and stored across thousands of servers, and your client wanted some specific portion of that data? You could assemble the whole mountain and send the whole thing to your client, leaving the client to pick out what's needed. But there are reasons you split it up in the first place: it’s too big to store in one place or to transfer without interruption. Additionally there are reasons you manage the data, including security and privacy, so this mountain moving might not be a good idea.
 <!-- more -->
 
-{% img center /images/2012-09-12-rackspace-open-sources-atom-nuke-the-fast-atom-framework/atom-nuke-inmany-outmany.png %}
+{% img center 2012-09-12-rackspace-open-sources-atom-nuke-the-fast-atom-framework/atom-nuke-inmany-outmany.png %}
 
 _What if you could create something as complex as this, with data in multiple formats from multiple origins stored across multiple servers but aggregated for multiple consumers, who could then repackage it for consumers of their own?_
 
@@ -21,7 +21,7 @@ If you couldn't give your client a copy of all your data, you could ask the clie
 
 What you need is to easily create a bridge, integrating any number of data origins with any number of data consumers. Enter in Atom Nuke.
 
-{% img center /images/2012-09-12-rackspace-open-sources-atom-nuke-the-fast-atom-framework/atom-nuke-inall-outall.png %}
+{% img center 2012-09-12-rackspace-open-sources-atom-nuke-the-fast-atom-framework/atom-nuke-inall-outall.png %}
 
 _With [Atom Nuke](http://atomnuke.org/), no matter where your data originates and who consumes the data, it could be this simple to think about._
 
@@ -33,7 +33,7 @@ We created [Atom Nuke](http://atomnuke.org/) to give ourselves two kinds of powe
 * _fusion_, making it easy to combine data in new ways
 
 
-{% img center /images/2012-09-12-rackspace-open-sources-atom-nuke-the-fast-atom-framework/atom-nuke-hardway-nonuke.png %}
+{% img center 2012-09-12-rackspace-open-sources-atom-nuke-the-fast-atom-framework/atom-nuke-hardway-nonuke.png %}
 
 _A six-way integration requires eighteen paths, connecting three data origins with three data consumers so each has direct and equal access. Adding one new origin or consumer requires adding many new paths._
 
@@ -42,7 +42,7 @@ Atom Nuke is an open-source collection of utilities built on a simple, fast Atom
 * [SAX](http://www.saxproject.org/) (Simple API for XML) makes it simple to read existing data
 * [StAX](http://stax.codehaus.org/) (Streaming API for XML) makes it simple to stream data to and from applications
 
-{% img center /images/2012-09-12-rackspace-open-sources-atom-nuke-the-fast-atom-framework/atom-nuke-easyway-nuke.png %}
+{% img center 2012-09-12-rackspace-open-sources-atom-nuke-the-fast-atom-framework/atom-nuke-easyway-nuke.png %}
 
 _With Atom Nuke providing a bridge, a six-way integration requires six paths, one from each of the three origins and three clients, with each path terminating at Atom Nuke. Adding one new origin or consumer requires._
 

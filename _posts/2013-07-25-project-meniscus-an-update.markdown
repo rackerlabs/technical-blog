@@ -21,7 +21,7 @@ It’s been a while since my [last post](http://developer.rackspace.com/blog/int
 
 * We have changed our original architecture. Instead of using a pipeline pattern with workers that act as HTTP and TCP heads, correlators, normalizers, storage, and so on, we have combined those into one multi-worker. This change enables easier deployment and more immediate project delivery, and provides a less challenging way to incorporate failover, such as what to do when the network between the workers and the storage goes down.
 
-{% img center /images/2013-07-25-project-mensicus-logging-as-a-service-update/updated-arch.png %}
+{% img center 2013-07-25-project-mensicus-logging-as-a-service-update/updated-arch.png %}
 
 * We've introduced some additional technologies like [Celery](http://www.celeryproject.org/) to handle the distribution of incoming messages and processing.
 

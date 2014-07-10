@@ -19,13 +19,13 @@ Deploying your application to the cloud requires expertise in both system admini
 
 Our Rackers are experts in [hybrid cloud][1] hosting, so we drew on this knowledge to create hosting architecture blueprints. The expertise was captured in one place with simple options that you could select to create your hosting environment. From the blueprints, a configuration will be automatically built on those best practices that can be immediately used.
 
-{% img center /images/2013-08-27-automated-deployments/blueprints.png %}
+{% img center 2013-08-27-automated-deployments/blueprints.png %}
 
 ##Like Chef Or Puppet For The Cloud
 
 While [Chef][2] and [Puppet][3] are awesome tools to configure host machines or VMs, they do fall a little short in deploying full environments: you can’t run Chef on a Cloud Load Balancer or Cloud Database. This is where the Rackspace Deployments Service comes in. This system looks at the entire topology and configures your environment (servers, load balancers and databases) in a holistic way, based on best practices, for you to run your application.
 
-{% img center /images/2013-08-27-automated-deployments/configure.png %}
+{% img center 2013-08-27-automated-deployments/configure.png %}
 
 
 When it is time to configure the application on a host machine, the Rackspace Deployments Service will use Chef or Puppet. Ultimately, our deployment offering is the orchestrator above everything; it ensures that your environment is setup to run the application along with verifying the app is configured correctly.
@@ -34,7 +34,7 @@ When it is time to configure the application on a host machine, the Rackspace De
 
 Our [Managed Cloud][4] team has been using the Rackspace Deployment Service to build and scale out customer configurations. This means that you are getting a battle-tested solution that has been working in the real world that is ready for prime time. The Rackspace Deployment Service is actively used by the experts who know how these applications should run and by Rackers who know how to support them if something goes awry.
 
-{% img center /images/2013-08-27-automated-deployments/build.png %}
+{% img center 2013-08-27-automated-deployments/build.png %}
 
 We are excited to roll out the Rackspace Deployments Service and to get it in the hands of our customers. To get started, [click this link][5] or simply log into the [Rackspace Control Panel][6], click the drop down arrow on the Create Server menu and select Create Deployment.
 

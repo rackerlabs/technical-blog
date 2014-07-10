@@ -8,7 +8,7 @@ categories:
 - Security
 - Authentication
 ---
-{% img right /images/2013-03-01-crank-up-app-security/lockkey.png %}
+{% img right 2013-03-01-crank-up-app-security/lockkey.png %}
 
 _Major Hayden is the Chief Security Architect and a Linux engineer who has experience working on large-scale OpenStack deployments and automation in Rackspace Cloud. He enjoys writing posts about Linux system administration and security on the Rackspace blog as well as his [personal blog](http://rackerhacker.com/). Follow him on Twitter [@rackerhacker](http://twitter.com/rackerhacker)_
 

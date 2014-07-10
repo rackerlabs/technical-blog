@@ -10,7 +10,7 @@ categories:
 - Cloud Tools
 - Message Queues
 ---
-{% img right /images/2013-07-23-using-ironmq/ironmq.png 200 %}
+{% img right 2013-07-23-using-ironmq/ironmq.png 200 %}
 It’s an [established pattern](http://highscalability.com/blog/2012/12/17/11-uses-for-the-humble-presents-queue-er-message-queue.html) to use message queues when building scalable, extensible, and resilient systems, but a lot of developers are still unsure how to go about actually *implementing* message queues in their architectures. Worse, the number of queuing solutions makes it hard for developers to get a grasp on exactly what a queue is, what it does, and what each solution brings to the table.
 
 At [Iron.io](http://iron.io), we’re building [IronMQ](http://iron.io/mq), a queuing solution we’ve developed specifically to meet the specific needs of today’s cloud architectures. In this post, we wanted to detail how to use queues in your applications and highlight a couple of unique capabilities that IronMQ provides (and which are not found in RabbitMQ and other non-native cloud queues).
@@ -29,7 +29,7 @@ Our application is going to have a very simple architecture that affords us a lo
 * A **message queue** is going to receive information from the web server and store it as a message in the queue. This data will then be available for a separate, asynchronous process to consume and act on.
 * A **worker server** is going to be retrieving messages off the queue and storing some analytics on the requests we’re receiving.
 
-{% img center /images/2013-07-23-using-ironmq/architecture-1.png %}
+{% img center 2013-07-23-using-ironmq/architecture-1.png %}
 
 It’s important to point out that your analytics processing is happening *outside* of the request loop; this means you can do whatever expensive processing you want (including hitting other APIs) and you’re not adding to the time it takes to get a response to the user.
 
@@ -162,7 +162,7 @@ Our architecture doesn’t need to change much to fulfill our extra requirements
 * Our **message queue** is going to be turned into a *push queue* and we’re going to set up some new pull queues that our workers will consume. The push queue is going to automatically duplicate our message to each of our pull queues&mdash;again, outside of our request loop&mdash;so our workers will *each* get a copy of every request for them to process for their specific criterion.
 * Our **worker** is going to be joined by another worker, processing the requests in a second way. These workers will run on the same server in our example, but they are completely independent&mdash;they can be run on the same machine or multiple machines.
 
-{% img center /images/2013-07-23-using-ironmq/architecture-2.png %}
+{% img center 2013-07-23-using-ironmq/architecture-2.png %}
 
 It’s important to understand that the worker processes are totally independent. Multiple copies of each can be run, and each request will only be processed once. If one crashes, the other won’t be impacted. If we want to add a third, we just need to add a new pull queue to our push queue’s subscriber and add the worker. This kind of modularity is extremely powerful and resilient in cloud applications.
 

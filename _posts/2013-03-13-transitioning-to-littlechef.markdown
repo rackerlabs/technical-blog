@@ -50,11 +50,11 @@ The main distinction that I see in between these two technologies is how in Chef
 
 In Chef Server, you maintain a long-running trust relationship between client and server, and this trust relationship is a special protocol specific to `chef-client`.  The client maintains its own private key as well as a decryption key required to understand secret data that's stored on the Chef Server.
 
-{% img center /images/2013-03-13-transitioning-to-littlechef/2013-03-03-chef-server-trust-model.png %}
+{% img center 2013-03-13-transitioning-to-littlechef/2013-03-03-chef-server-trust-model.png %}
 
 Using a push model such as LittleChef, you replace this trust relationship with the trust relationship required for `ssh` access: users that have `sudo` access now can deploy.  Data (cookbooks, node information, and data) is stored in a source control repository, possibly hosted on some external SaaS site such as Github or Bitbucket).  Secrets such as the private key required for connection and the decryption key required for the secret data live on the deployment machine or machines.
 
-{% img center /images/2013-03-13-transitioning-to-littlechef/2013-03-03-littlechef-trust-model.png %}
+{% img center 2013-03-13-transitioning-to-littlechef/2013-03-03-littlechef-trust-model.png %}
 
 While the deployment node *might* be your developer machine, I wouldn't recommend this as your only solution as your team grows.  LittleChef enables a better workflow for testing recipes on remote nodes; push then commit rather than a upload possibly bad configuration to the server.  Production deploys should happen from a controlled box with an automated process, using automation tools such as [Jenkins](http://jenkins-ci.org/), [Deployinator](https://github.com/etsy/deployinator), or [Dreadnot](https://github.com/racker/dreadnot) (what my team uses).
 

@@ -6,7 +6,7 @@ comments: true
 author: "Hart Hoover"
 categories: [Service Registry]
 ---
-{% img featured /images/rsr_logo.png Rackspace Service Registry %}
+{% img featured rsr_logo.png Rackspace Service Registry %}
 
 Rackspace recently [announced the Rackspace Service Registry](http://www.rackspace.com/blog/keep-track-of-your-services-and-applications-with-the-new-rackspace-service-registry/), a platform that allows developers to build highly available and responsive applications using a simple but powerful REST API. Currently it provides three main functions:
 

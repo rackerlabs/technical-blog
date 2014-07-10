@@ -10,7 +10,7 @@ categories:
 - SDKs
 - Developers
 ---
-{% img right /images/2013-08-12-gophercloud/gophercloud.png 200 %}
+{% img right 2013-08-12-gophercloud/gophercloud.png 200 %}
 
 [Go][1]. It’s more than the opposite of stop and unless you’ve been living under a rock you’ve probably heard about this exciting modern language created out of Google by Rob Pike and Ken Thompson, both important names in the Unix community.
 

@@ -9,7 +9,7 @@ categories:
 - Chef
 - Automation
 ---
-{% img right /images/2013-01-09-cooking-with-chef/chef_logo.png %}
+{% img right 2013-01-09-cooking-with-chef/chef_logo.png %}
 Hello from Sunny San Francisco! Today is day 1 of ChefConf, a Devops focused convention. Developers and Engineers come to ChefConf to learn about Opscode's latest features and learn from their peers. Below I'll talk about a few of the sessions I attended today. 
 <!--More-->
 

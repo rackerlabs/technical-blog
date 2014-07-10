@@ -26,7 +26,7 @@ Each service object in the service registry has a metadata field that can store 
 * JMX port for Java services
 * Stats port (if service is exposing metrics through fb303 or a similar interface)
 
-{% img center /images/2013-02-21-service-registry-use-cases-storing-service-metadata-in-the-registry/service-registry-image.png %}
+{% img center 2013-02-21-service-registry-use-cases-storing-service-metadata-in-the-registry/service-registry-image.png %}
 
 You can then use this information for different purposes:
 

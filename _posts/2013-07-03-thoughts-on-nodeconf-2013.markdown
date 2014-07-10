@@ -13,7 +13,7 @@ In a way, the bus ride 90 minutes north of San Francisco set the table for what 
 
 [NodeConf][1] was a markedly different Conference. For the first time in 2013, NodeConf Summer Camp and NodeConf proper were merged into a single event at the fantastic [Walker Creek Ranch][2] north of San Francisco in Marin County.<!--More-->
 
-{% img center /images/2013-07-04-thoughts-on-nodeconf/summer_camp.jpg %}
+{% img center 2013-07-04-thoughts-on-nodeconf/summer_camp.jpg %}
 
 Instead of traditional presentations, the sessions were classroom focused with core contributors and community members running them. [Everyone had an unique schedule][3] to maximize meeting new people, and getting exposure to a number of different topics.
 

@@ -15,7 +15,7 @@ categories:
 - new products
 ---
 
-{% img right /images/2013-11-04-welcome-to-performance-cloud-servers/brace-yourselves.png 200 %}
+{% img right 2013-11-04-welcome-to-performance-cloud-servers/brace-yourselves.png 200 %}
 
 Today, all of us at Rackspace are proud to roll out our new Performance Cloud Server offering. These are new flavors of Cloud Servers available to all customers as of today, providing higher performance from RAM to Disk I/O, and more. We've also rolled out a significant update to our [cloud control panel](http://mycloud.rackspace.com) to greatly improve the user experience of selecting flavors, operating systems and more.
 
@@ -97,7 +97,7 @@ I’m a developer, and pretty much any time a vendor - even a well meaning one -
 
 #### Wait, what?
 
-{% img right /images/2013-11-04-welcome-to-performance-cloud-servers/dog-dude-wait-what.jpg 300 %}
+{% img right 2013-11-04-welcome-to-performance-cloud-servers/dog-dude-wait-what.jpg 300 %}
 
 Yeah, you're probably wondering what the **PV** and **PV-HVM** markers in that list are. As you probably know, Rackspace runs [OpenStack](http://www.openstack.org), and the key virtual machine component, Nova offers you a choice of [hypervisors](http://en.wikipedia.org/wiki/Hypervisor) to work with. Internally, our clusters use [Xen](http://www.xenproject.org/), an open source, scalable and powerful hypervisor. Hypervisors though are funny little animals - they actually operate within a [spectrum](http://wiki.xen.org/wiki/Virtualization_Spectrum), meaning you can virtualize some of the resources for guests, all, or some interesting mixture for your specific needs.
 
@@ -215,7 +215,7 @@ We of course see an increase of ~20-42% here from baseline - better processors (
 
 Ok, so you won't see any 1GB flavor results here - [PyPy](http://pypy.org/) needs oodles of RAM to generate it's rpython system, translations - make a just in time compiler, etc. You're going to need several GB of ram to build it from scratch. I did exactly this - I even skipped the part about using a pre-built rpython binary to do the translation and used the good old CPython 2.7.4 to make it even more pokey. But hey, it takes hours and draws fractals on your screen and like the kernel and other benchmarks, running it in parallel across 9+ servers makes ops people make this face:
 
-{% img center /images/2013-11-04-welcome-to-performance-cloud-servers/sadface.gif 400 %}
+{% img center 2013-11-04-welcome-to-performance-cloud-servers/sadface.gif 400 %}
 
 So, the graph ([click here for full size](http://7c5dfdbb739dc73f99cb-b85bd20d3e627e59093de9f95b53ad56.r58.cf5.rackcdn.com/kernel30gb.png)):
 
@@ -253,7 +253,7 @@ I'm really looking forward to seeing what these new Performance Cloud Servers, a
 
 Remember - want to test drive? Go ahead and use the [developer discount](http://developer.rackspace.com/devtrial/) - we're here to build amazing things, on open technology and with an open community for you. I couldn't be more proud!
 
-{% img center /images/2013-11-04-welcome-to-performance-cloud-servers/simba.gif 400 %}
+{% img center 2013-11-04-welcome-to-performance-cloud-servers/simba.gif 400 %}
 
 [1]: http://jessenoller.com/
 [2]: https://twitter.com/jessenoller

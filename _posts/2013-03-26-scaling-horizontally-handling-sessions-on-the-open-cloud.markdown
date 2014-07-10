@@ -10,7 +10,7 @@ categories:
 - Cloud Servers
 - REST
 ---
-{% img right /images/pillars/pillar.png 160 160 %}
+{% img right pillars/pillar.png 160 160 %}
 Wayne Walls wrote a great article on the Rackspace Blog around [horizontal scaling](http://www.rackspace.com/blog/pillars-of-cloudiness-no-3-scaling-horizontally/), a pillar of cloud application design. When designing applications in the cloud, typically you need more than one server performing specific tasks.
 
 {% tweet https://twitter.com/DEVOPS_BORAT/status/274366602252804096 align='center' %}
@@ -19,7 +19,7 @@ These groups of servers or roles or tiers are sometimes load balanced or exist a
 
 ##Traditional Session Handling
 
-{% img center /images/2013-03-28-scaling-horizontal/arch1.png %}
+{% img center 2013-03-28-scaling-horizontal/arch1.png %}
 
 In traditional application design shown in the example above, you would need to do something to manage sessions across these three servers. The most popular ways are typically:
 

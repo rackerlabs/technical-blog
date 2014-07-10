@@ -18,7 +18,7 @@ And the best thing? With a bit of SSH magic, logging into these hosts is complet
 
 ##Security Architecture
 
-{% img center /images/2012-12-06-protect-your-infrastructure/arch.png %}
+{% img center 2012-12-06-protect-your-infrastructure/arch.png %}
 
 [Bastion hosts](https://en.wikipedia.org/wiki/Bastion_host) are simply a choke point that provides access to the hosts behind it only to authorized users. A bastion host serves the same purpose as a bouncer at a bar: like the bouncer the bastion host checks everyone’s ID before they are allowed inside.
 

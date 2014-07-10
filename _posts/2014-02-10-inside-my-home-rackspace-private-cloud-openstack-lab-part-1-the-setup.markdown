@@ -86,7 +86,7 @@ Essentially, I have two parts to my network –separated by two floors of a hous
 
 Overall, it looks like this:
 
-{% img center /images/2014-02-10-inside-my-home-rackspace-private-cloud-openstack-lab-part-1-the-setup/homelabsetup.png %}
+{% img center 2014-02-10-inside-my-home-rackspace-private-cloud-openstack-lab-part-1-the-setup/homelabsetup.png %}
 
 Hopefully, having this detailed background info will aid you in setting up your own OpenStack environment big or small.
 

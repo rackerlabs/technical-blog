@@ -31,7 +31,7 @@ work. The following diagram is an example of a high level overview. Be
 sure to check out the latest documentation in the
 [wiki](https://github.com/ProjectMeniscus/meniscus/wiki)!
 
-{% img center /images/2013-03-15-introducing-project-meniscus-the-python-event-cloud-logging-service/proj-meniscus-arch.png %}
+{% img center 2013-03-15-introducing-project-meniscus-the-python-event-cloud-logging-service/proj-meniscus-arch.png %}
 <p style="text-align: center">High Level Project Meniscus Architectural Overview</p>
 
 Meniscus takes log data from servers, normalizes it, and saves it into a

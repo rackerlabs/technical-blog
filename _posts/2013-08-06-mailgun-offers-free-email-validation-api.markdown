@@ -10,7 +10,7 @@ categories:
 ---
 As many of you know, Rackspace acquired the transactional email provider Mailgun almost a year ago.  Mailgun has a super easy-to-use API for sending, receiving and tracking on your application emails (they also support SMTP is that's your thing).  We've blogged about Mailgun a bunch this year, and recently Mailgun was integrated into the Rackspace cloud control panel  making it that much easier to integrate Mailgun into your app (and get 50,000 free emails per month in the process).  The Mailgunners just released a new feature that we are really excited about: email validation for web forms. So today, we're reblogging their post announcing the new feature which is completely free for Rackspace and Mailgun customers.  Read on, and remember that you can enable your Mailgun account directly through the Cloud Control Panel!<!--More-->
 
-{% img center /images/2013-08-06-mailgun/cp.png %}
+{% img center 2013-08-06-mailgun/cp.png %}
 
 Email validation is a hard problem that every single developer, building anything on the web, has to deal with.  We actually have been working on email validation ourselves for years (more on that below). We looked at the validation services available and weren’t satisfied with any of them, either for performance, accuracy or completeness reasons.  So today, we’re releasing a project we affectionately called Guardpost, as our newest API, and are also pulling back the curtain to show exactly how we built it.
 
@@ -128,7 +128,7 @@ Being liberal in what you accept is just one part of the robustness principle, t
 
 Email addresses are frequently mistyped. Instead of @yahoo.com, you might type @yaho.com, that’s why, as part of our validation service, if we detect a misspelled word, we offer suggestions so you don’t miss mail due to a typo.  Here’s what that looks like in the [jquery demo app][2] [[source][8]] we mentioned above.
 
-{% img center /images/2013-08-06-mailgun/email-validator.png %}
+{% img center 2013-08-06-mailgun/email-validator.png %}
 
 ##What we don’t provide.
 

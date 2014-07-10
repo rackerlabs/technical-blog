@@ -11,7 +11,7 @@ categories:
 - sdk
 - developer
 ---
-{% img right /images/2013-11-07-jclouds-is-an-apache-tlp/jclouds.jpg 200 %}
+{% img right 2013-11-07-jclouds-is-an-apache-tlp/jclouds.jpg 200 %}
 
 The lower case j's have been dotted and the t's have been crossed. jclouds is an Apache Software Foundation (ASF) Top Level Project (TLP)! With the closing of [this issue](https://issues.apache.org/jira/browse/INFRA-6912) and the resolution being set to "Fixed", it's officially and infrastructurally done. We've even dropped the "incubator" prefix/suffix from our DNS entries and various source code artifacts. You can now find us at our permanent home [jclouds.apache.org](http://jclouds.apache.org/). Huzzah!
 

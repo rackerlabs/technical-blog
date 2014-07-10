@@ -14,7 +14,7 @@ Agile. Scrum. Extreme programming. RAD. Lean. These terms all represent a depart
 
 When every minute of downtime represents significant lost revenue and increased support costs, it stands to reason that application support should be just as agile as application development. Among other things, this means tearing down long-standing walls between teams, and getting all business units working together toward common goals.<!--More-->
 
-{% img center /images/2013-07-11-agile-application/reagan.png %}
+{% img center 2013-07-11-agile-application/reagan.png %}
 <p style="font-size: 70%; text-align: center">Image courtesy of the Reagan Library and Michael Evans</p>
 
 With agile development, those walls were primarily between the developers and the business group or end customer. Feedback was rarely solicited, and documentation was valued far more than collaboration.
@@ -44,7 +44,7 @@ DCR Systems tore the collision repair model apart and rebuilt it from scratch to
 
 This should be common sense. If you fail to plan, you plan to fail. DCR built brand-new facilities specifically designed for efficient, lean workflows. They created a blueprint for success before ever breaking ground.
 
-{% img center /images/2013-07-11-agile-application/process.png %}
+{% img center 2013-07-11-agile-application/process.png %}
 
 Do your developers follow consistent coding standards? Consistent standards for logging errors and exceptions? Do they name variables, functions and classes uniformly? Are they commenting and documenting their code? Remind your team throughout the development process that each of them will be involved in the support process. Not just supporting their own code, but the code written by their peers.
 
@@ -64,7 +64,7 @@ DCR took this one very literally. They found that one major bottleneck was const
 
 Their solution was revolutionary: cars were put on tracks that could be pushed through the shop with minimal effort, without having to start the car. Walls between bays (even the paint booth!) were easily raised and lowered, allowing the car to move through the process as if on an assembly line.
 
-{% img center /images/2013-07-11-agile-application/car.png %}
+{% img center 2013-07-11-agile-application/car.png %}
 
 Your walls may be between your dev team and your ops team. Maybe your developers don’t have access to the production environment to monitor application health. Maybe your sysadmins have never been involved in the development process. Maybe the business unit, dev team, and ops all operate largely in a vacuum, each regarding the other two with suspicion and thinly-veiled animosity. Every departmental wall in your organization destroys unity and engenders a “not our problem” mentality.
 
@@ -72,7 +72,7 @@ Your walls may be between your dev team and your ops team. Maybe your developers
 
 This goes a little deeper than ensuring that your caffeinated beverage of choice is placed for optimal efficiency. For DCR, this meant clearly defining the purpose for each repair bay, and then placing the right parts and tools (and ONLY the necessary tools) within optimal reach.
 
-{% img center /images/2013-07-11-agile-application/tools.png %}
+{% img center 2013-07-11-agile-application/tools.png %}
 
 What does this mean for your company? First, take a look at your physical environment. Is there evidence of silos between divisions, based purely on office locations? Could you improve efficiency and collaboration simply by putting dev and ops teams closer together?
 
@@ -82,7 +82,7 @@ What about your tools? Do your developers have access to everything they need to
 
 What’s the best way to improve performance? Display current performance very publicly, color-coded to show the good, the bad, and the ugly. If your key performance indicators (KPIs) are visible throughout the office, it creates a new degree of urgency:
 
-{% img center /images/2013-07-11-agile-application/metrics.png %}
+{% img center 2013-07-11-agile-application/metrics.png %}
 
 Just as importantly, a status board that shows all green creates a sense of pride. Your application is running at an all-time high load and all systems are performing perfectly? Awesome! Your team just reduced the average ticket time by 15%? Time to celebrate. Which brings me to...
 Incentivize process improvement

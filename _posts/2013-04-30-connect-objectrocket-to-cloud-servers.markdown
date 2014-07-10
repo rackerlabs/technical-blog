@@ -28,7 +28,7 @@ Yes we need to get that out of the way before an instance can be created, the ac
 
 Next you need to create your instance. First, go to the [instances page](https://app.objectrocket.com/instances) and select “add instance.” The add instance dialog will pop up. Add a name for the instance - any alphanumerical string is fine, no spaces. Also choose a plan and instance size in the plan selector box. Click submit. You have just provisioned a fully redundant, highly performant, sharded instance.
 
-{% img center /images/2013-04-30-connect-objectrocket/cp.png 400 400 %}
+{% img center 2013-04-30-connect-objectrocket/cp.png 400 400 %}
 
 ###Adding a Database
 

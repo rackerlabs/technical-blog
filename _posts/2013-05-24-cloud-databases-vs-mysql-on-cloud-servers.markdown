@@ -13,17 +13,17 @@ If you need to run MySQL on the Rackspace Cloud, you have two fundamental choice
 
 Let’s begin with performance. The graph below compares the various Cloud Database instance sizes, from 512 MB to 16 GB. Results shown are the average of five test iterations:
 
-{% img center /images/2013-05-24-cloud-servers-vs-cloud-databases/cloudsrv.jpg "MySQL Performance - Cloud Servers" %}
+{% img center 2013-05-24-cloud-servers-vs-cloud-databases/cloudsrv.jpg "MySQL Performance - Cloud Servers" %}
  
 *Performance was measured using sysbench, table size 2 million rows, run from a 4 GB Cloud Server client with 200Mbps of network throughput.*
 
 Now let’s compare the performance of Cloud Databases with Cloud Servers, again with the same testing criteria in place:
 
-{% img center /images/2013-05-24-cloud-servers-vs-cloud-databases/compare.jpg "MySQL Performance - Cloud Servers vs. Cloud Databases" %}
+{% img center 2013-05-24-cloud-servers-vs-cloud-databases/compare.jpg "MySQL Performance - Cloud Servers vs. Cloud Databases" %}
  
 The results indicate that Cloud Databases generally perform better than their Cloud Server counterparts, especially when under load. When we factor price into the equation, the right choice becomes a bit more dependent on application load and requirements. The cost of a Cloud Database varies depending on how much storage you need; if I assume 10 GB of storage for the sake of discussion, the number of transactions you get per dollar works out as follows:
  
-{% img center /images/2013-05-24-cloud-servers-vs-cloud-databases/value.jpg "Transactions per Dollar - Cloud Servers vs. Cloud Databases" %}
+{% img center 2013-05-24-cloud-servers-vs-cloud-databases/value.jpg "Transactions per Dollar - Cloud Servers vs. Cloud Databases" %}
 
 The harder the server works, the greater the performance margin is for Cloud Databases. As this margin increases, it exceeds the price difference between Cloud Databases and Cloud Servers, making Cloud Databases a better value.
 

@@ -13,7 +13,7 @@ categories:
 - jclouds
 - php-opencloud
 ---
-{% img right /images/2013-06-17-rackspace-sdk-update/gear.png 200 %}
+{% img right 2013-06-17-rackspace-sdk-update/gear.png 200 %}
 
 We have some updates to share in regards to the [Rackspace SDKs][1]! Our SDKs are either maintained by contributing to existing projects (as in the case of jclouds or fog) or creating our own that we hope to extend to all OpenStack-based clouds. 
 
@@ -56,7 +56,7 @@ Zack Shoylev, [Everett Toews][17], [Jeremy Daggett][18], and others have been ha
 
 Zack is currently working on adding support for [Cloud Databases][21], Jeremy is working on Swift/Cloud Files, and Everett has been [advocating jclouds externally][22]:
 
-{% img center /images/2013-06-17-rackspace-sdk-update/everett.png 400 %}
+{% img center 2013-06-17-rackspace-sdk-update/everett.png 400 %}
 <p style="text-align: center; font-size: 80%">Everett Toews at Cloud Expo</p>
 
 ###php-opencloud (PHP)

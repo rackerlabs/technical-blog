@@ -49,7 +49,7 @@ love with it. I managed to create our very first Chef-powered virtual machine
 in less than a day. Keep in mind that at that time Cloudkick was a Puppet shop
 and I had zero experience with Chef when starting to work on our Vagrant setup.
 
-{% img center /images/2013-03-14-vagrant/logo_widecab47086.png "Vagrant project logo" %}
+{% img center 2013-03-14-vagrant/logo_widecab47086.png "Vagrant project logo" %}
 
 Our initial setup had many flaws and was far from perfect, but it still cut
 down time from up to three days to a maximum of couple of hours. This was a
@@ -113,7 +113,7 @@ Cloud you can create a virtual server with up to 30 GB of ram and up to 8
 virtual cores. For example my relatively small and portable maxed out
 Thinkpad X220 tops out at 16 GB of memory.
 
-{% img center /images/2013-03-14-vagrant/tomaz_x220.png %}
+{% img center 2013-03-14-vagrant/tomaz_x220.png %}
 <p style="text-align: center">Even with all those stickers on it there is a limit of how much memory I can
 put in my X220. This limit is much higher in the Cloud.</p>
 
@@ -123,7 +123,7 @@ In the past while using Vagrant developers had quite a lot of problems related
 to the VirtualBox hypervisor. Most of those problems were caused by bad kernel
 modules and other bugs inside VirtualBox.
 
-{% img center /images/2013-03-14-vagrant/openstacklogo512.png %}
+{% img center 2013-03-14-vagrant/openstacklogo512.png %}
 <p style="text-align: center">Linux Rackspace Cloud Servers are powered by OpenStack and use battle tested XenServer hypervisor.</p>
 
 When you run your Vagrant virtual machine on Rackspace Cloud you avoid this
