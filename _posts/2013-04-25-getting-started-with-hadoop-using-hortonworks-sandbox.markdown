@@ -9,7 +9,7 @@ categories:
 - Big Data
 - Hadoop
 ---
-{% img right /images/2013-04-25-getting-started-with-hadoop/hortonworks.jpg 200 200 %}
+{% img right 2013-04-25-getting-started-with-hadoop/hortonworks.jpg 200 200 %}
 Getting started with a distributed system like Hadoop can be a daunting task for developers.From installing and configuring Hadoop to learning the basics of MapReduce and other add-on tools, the learning curve is pretty high.
 <!--More-->
 Hortonworks recently released the Hortonworks Sandbox for anyone interested in learning and evaluating enterprise Hadoop.

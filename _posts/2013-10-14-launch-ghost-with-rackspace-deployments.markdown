@@ -21,23 +21,23 @@ We thought so too, and with the help of John O'Nolan and Hannah Wolfe over at Gh
 
 Sign In to https://mycloud.rackspace.com and click the "Deployments" tab:
 
-{% img /images/2013-10-14-launch-ghost-with-rackspace-deployments/deploymentstab.png 'Deployments Tab' 'Deployments Tab' %}
+{% img 2013-10-14-launch-ghost-with-rackspace-deployments/deploymentstab.png 'Deployments Tab' 'Deployments Tab' %}
 
 Click "Create Deployment":
 
-{% img /images/2013-10-14-launch-ghost-with-rackspace-deployments/createdeployment.png 'Create Deployment' 'Create Deployment' %}
+{% img 2013-10-14-launch-ghost-with-rackspace-deployments/createdeployment.png 'Create Deployment' 'Create Deployment' %}
 
 Choose a Deployment name and region at the top and Select "Ghost" from the list:
 
-{% img /images/2013-10-14-launch-ghost-with-rackspace-deployments/deploymentlist.png 'Select Ghost' 'Select Ghost' %}
+{% img 2013-10-14-launch-ghost-with-rackspace-deployments/deploymentlist.png 'Select Ghost' 'Select Ghost' %}
 
 Under "Ghost Options", enter your blog's domain name and choose if you want HTTP or HTTPS:
 
-{% img /images/2013-10-14-launch-ghost-with-rackspace-deployments/ghostoptions.png 'Ghost Options' 'Ghost Options' %}
+{% img 2013-10-14-launch-ghost-with-rackspace-deployments/ghostoptions.png 'Ghost Options' 'Ghost Options' %}
 
 Click "Next Step" and choose the server size you would like:
 
-{% img /images/2013-10-14-launch-ghost-with-rackspace-deployments/serveroptions.png 'Server Options' 'Server Options' %}
+{% img 2013-10-14-launch-ghost-with-rackspace-deployments/serveroptions.png 'Server Options' 'Server Options' %}
 
 Click "Create Deployment" and you are done! Just sit back and wait for everything to build.
 
@@ -45,13 +45,13 @@ Once your deployment is finished, you can add a DNS record for your domain to po
 
 When you browse to your Ghost deployment, you should be greeted with a simple page with a sample post:
 
-{% img /images/2013-10-14-launch-ghost-with-rackspace-deployments/ghostwelcome.png 'Ghost Welcome' 'Ghost Welcome' %}
+{% img 2013-10-14-launch-ghost-with-rackspace-deployments/ghostwelcome.png 'Ghost Welcome' 'Ghost Welcome' %}
 
 Before we can do anything though, we need to add a user. Navigate to ```/ghost/signup``` and you will be prompted for some info in order to create the Admin user. Ghost currently only supports one user at this time. After filling out this info, you will be redirected to the admin panel where you can start customizing your blog and adding new posts.
 
 To start, let's add a new test post. Click on "New Post" at the top left, this will take you to the post editor, and the beauty of Ghost. Add a post title and start typing out your post in Markdown - notice that the right side of the screen shows a live preview as you type! Also, notice the drag-and-drop image box in the preview pane as well:
 
-{% img /images/2013-10-14-launch-ghost-with-rackspace-deployments/ghosteditor.png 'Ghost Editor' 'Ghost Editor' %}
+{% img 2013-10-14-launch-ghost-with-rackspace-deployments/ghosteditor.png 'Ghost Editor' 'Ghost Editor' %}
 
 Once you are finished, click the arrow next to "Save Draft" in the bottom right and select "Publish Now". That's it! You now have a new blog post!
 

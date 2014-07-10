@@ -20,7 +20,7 @@ In my last post, I described the [principles of continuous integration and how t
 
 Now that Jenkins is up and running, it's time to secure it. Click "Manage Jenkins" -> "Configure System." Make sure your options match the options below:
 
-{% img center /images/2012-09-24-continuous-integration-part-2/jenkins_security.jpg %}
+{% img center 2012-09-24-continuous-integration-part-2/jenkins_security.jpg %}
 
 Don't forget to add a user with full permissions here. We are going to create the user in a moment. Go ahead and click "Save". You will be kicked out and have the ability to create your user. Once you log back in, uncheck "Allow users to sign up" - you will only log in with your user from now on.
 
@@ -60,11 +60,11 @@ Jenkins is set up to access your Github account. Now it's time to create your fi
 
 To create a project, log back into Jenkins and click "New Job", then give your project a name and select "Build a free-style software project." Click through to the next screen where the real fun happens. Type up a quick description of what your project is doing, then scroll down to the "Source Code Management" section. You want to add your git repository here (in this example I'm using [django](https://www.djangoproject.com/)):
 
-{% img center /images/2012-09-24-continuous-integration-part-2/git-jenkins.jpg %}
+{% img center 2012-09-24-continuous-integration-part-2/git-jenkins.jpg %}
 
 Next, scroll down to the "Build Triggers" section. You can use [crontab](http://www.thegeekstuff.com/2009/06/15-practical-crontab-examples/)-like scheduling to poll your repository for changes, but since you're using Github I recommend you select "Build when a change is pushed to GitHub":
 
-{% img center /images/2012-09-24-continuous-integration-part-2/jenkins-build.jpg %}
+{% img center 2012-09-24-continuous-integration-part-2/jenkins-build.jpg %}
 
 The next section is called "Build." Click the "Add build step" button and then click "Execute shell." These are the commands that you want to use to test and deploy your project.
 

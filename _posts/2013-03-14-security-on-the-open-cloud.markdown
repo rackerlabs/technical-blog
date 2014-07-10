@@ -8,7 +8,7 @@ categories:
 - Security
 - Five Pillars
 ---
-{% img right /images/pillars/pillar.png 160 160 %}
+{% img right pillars/pillar.png 160 160 %}
 Security is a major concern for all hosting platforms, but in the cloud security has traditionally been a detractor to cloud adoption. Security concerns include:
 
 * Identity and Access Management

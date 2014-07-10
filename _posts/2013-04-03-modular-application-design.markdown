@@ -10,17 +10,17 @@ categories:
 - Five Pillars
 - Cloud Tools
 ---
-{% img right /images/pillars/pillar.png 160 160 %}
+{% img right pillars/pillar.png 160 160 %}
 
 Wayne Walls posted a [great article](http://www.rackspace.com/blog/pillars-of-cloudiness-no-2-modular-design/) on the Rackspace Blog regarding the importance of modularity in cloud application design. Traditionally, when technical people talked about modular design they meant something like this:
 
-{% img center /images/2013-04-04-modular/modular1.png 350 %}
+{% img center 2013-04-04-modular/modular1.png 350 %}
 
 As you can see, we have a typical web application that is indeed very modular. It has a few Varnish caching servers, a few web servers, a few application servers and a few database servers. Basically, we've taken what was once a monolithic application and split it into atomic components that are scalable and replaceable.
 
 In the cloud though, we don't have to stop there. The above is a "bare metal servers on a cloud" mentality. What you should strive for is a true modular application that not only is broken up into smaller pieces, but also consumes services.<!--More-->
 
-{% img center /images/2013-04-04-modular/modular2.png 350 %}
+{% img center 2013-04-04-modular/modular2.png 350 %}
 
 This demonstrates a departure from only consuming an infrastructure service to consuming a mixture of IaaS and platform services. Why maintain your own storage platform when you can consume [Cloud Files via an API](http://docs.rackspace.com/files/api/v1/cf-devguide/content/Overview-d1e70.html)? Why run your own email server when you can consume [Mailgun via an API](http://documentation.mailgun.net/)? Compute is expensive: you should only use it for tasks that actually require compute power!
 

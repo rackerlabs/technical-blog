@@ -13,7 +13,7 @@ categories:
 - sdk
 - developer
 ---
-{% img right /images/2014-01-28-the-dual-advantage-of-multi-cloud-toolkits/multi-cloud.png 200 %}
+{% img right 2014-01-28-the-dual-advantage-of-multi-cloud-toolkits/multi-cloud.png 200 %}
 
 The goal of using a multi-cloud toolkit is avoiding cloud vendor lock-in. I examined why avoiding vendor lock-in is important in [Keep the Cloud Honest](http://blog.phymata.com/2013/07/31/keep-the-cloud-honest/). Toolkits such as Apache jclouds (Java), Apache libcloud (Python), Fog (Ruby), and pkgcloud (node.js) enable this by allowing you to write code that will work the same across multiple clouds such as Amazon Web Services (AWS), DigitalOcean, Google Compute Engine, and Rackspace.
 

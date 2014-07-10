@@ -10,7 +10,7 @@ categories:
 ---
 As [discussed previously](http://devops.rackspace.com/the-new-devops-blog.html), this blog is hosted entirely in [Cloud Files](http://www.rackspace.com/cloud/files/). It is powered by [Octopress](http://octopress.org), which means it is static - perfect for hosting in an object store. Our "architecture" looks like this:
 
-{% img center /images/2013-05-06-using-a-build/workflow.png 500 500 %}
+{% img center 2013-05-06-using-a-build/workflow.png 500 500 %}
 
 Previously, deploying the blog was a one-and-done job. A single Jenkins job that upon a push to GitHub, would install our Ruby gems, install the theme, generate the site, and push the site to Cloud Files. This worked well, for a while. Then Murphy got involved.<!--More-->
 
@@ -29,6 +29,6 @@ Yes. It was horribly irresponsible... to leave it that way. Recently I have impl
 
 Using these two together allows me to split each task into its own job. Now our build pipeline looks like this:
 
-{% img center /images/2013-05-06-using-a-build/devops_blog_buildpipe.png 700 700 %}
+{% img center 2013-05-06-using-a-build/devops_blog_buildpipe.png 700 700 %}
 
 As you can see, some jobs are successful, some jobs fail, but NOTHING gets pushed to Cloud Files without passing through each gate successfully. This also allows me to run reporting at each step in parallel to the build task. Check out the above plugins for your Jenkins jobs and **get more modular**.

@@ -9,7 +9,7 @@ categories:
 - GCE
 - General
 ---
-{% img right /images/2013-05-16-cloud-betamax/betamax.gif 200 %}
+{% img right 2013-05-16-cloud-betamax/betamax.gif 200 %}
 As part of the [Google I/O keynote yesterday](http://thenextweb.com/insider/2013/05/15/everything-announced-at-the-google-io-2013-keynote-in-one-handy-list/?), several new features for Google Compute Engine were announced. First, GCE is now available to everyone in a preview and available for signups. They also announced Cloud Datastore, a NoSQL database solution and several other features.
 
 Google Compute Engine looks great, but it's the same old thing from a cloud standpoint. AWS and GCE are both single-vendor, lock-in prone providers. You can't run GCE in your own datacenter. You can't customize and install GCE on both a $200 [One-laptop-per-child](http://laptop.org) notebook and a $4,000 MacBook Pro. These platforms are not open.

@@ -9,7 +9,7 @@ categories:
 - Chef
 - Configuration Management
 ---
-{% img right /images/2013-01-09-cooking-with-chef/chef_logo.png "Chef Logo" %}
+{% img right 2013-01-09-cooking-with-chef/chef_logo.png "Chef Logo" %}
 
 Continuing the series on Chef that I started in [part one](http://devops.rackspace.com/cooking-with-chef.html), you should now have an account with Opscode and a working knife install. In this post, I will explain how cookbooks and roles work and we will deploy our first application with Chef.
 <!--More-->

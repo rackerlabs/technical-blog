@@ -9,7 +9,7 @@ categories:
 - Chef
 - Configuration Management
 ---
-{% img right /images/2013-01-09-cooking-with-chef/chef_logo.png "Chef Logo" %}
+{% img right 2013-01-09-cooking-with-chef/chef_logo.png "Chef Logo" %}
 
 This is the third post in a series on Chef:
 

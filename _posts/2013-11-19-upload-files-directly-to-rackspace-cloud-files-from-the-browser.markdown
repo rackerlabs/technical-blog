@@ -45,7 +45,7 @@ Now upload a file. Hopefully, you'll watch a pretty blue scrollbar track
 the upload's progress, and when it's done, you see something like what's
 in this screenshot:
 
-{% img /images/2013-11-19-upload-files-directly-to-rackspace-cloud-files-from-the-browser/after-upload.png %}
+{% img 2013-11-19-upload-files-directly-to-rackspace-cloud-files-from-the-browser/after-upload.png %}
 
 Click the DOWNLOAD button. You will get the file you uploaded, but named
 with a different name.

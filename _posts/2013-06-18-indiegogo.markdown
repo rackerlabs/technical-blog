@@ -9,7 +9,7 @@ categories:
 - Chef
 - Cloud Servers
 ---
-{% img right /images/2013-01-09-cooking-with-chef/chef_logo.png "Chef Logo" %}
+{% img right 2013-01-09-cooking-with-chef/chef_logo.png "Chef Logo" %}
 
 Recently, Opscode released a case study on Rackspace customer [Indiegogo][1] and their use of [Chef][2] to power their fundraising efforts. Last year, MTV came to Indiegogo and asked them to power their telethon fundraiser for Hurricane Sandy. Oh, and it had to be ready in FOUR DAYS. Indiegogo used the Opscode Hosted Chef platform and more than 500 [Rackspace Cloud Servers][3] to have 100% uptime throughout the entire event.<!--More-->
 

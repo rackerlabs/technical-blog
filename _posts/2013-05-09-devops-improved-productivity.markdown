@@ -8,7 +8,7 @@ published: true
 categories: 
 - Puppet
 ---
-{% img right /images/2013-05-10-devopsreport/devopsreport.png 200 %}
+{% img right 2013-05-10-devopsreport/devopsreport.png 200 %}
 Those of us who have been aligned with DevOps for some time already know that the greater agility and closer collaboration it enables deliver real business value for our organizations.
 
 But until recently, our knowledge was based largely on our personal experience, and that of our friends and colleagues. So [Puppet Labs](http://puppetlabs.com/) and [IT Revolution Press](http://itrevolution.com/) partnered late last year to survey sysadmins, developers and other technology professionals in search of hard data that would tell us whether DevOps really does deliver solid results.<!--More-->

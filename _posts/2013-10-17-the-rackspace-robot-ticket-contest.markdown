@@ -11,7 +11,7 @@ categories:
     contests
 ---
 
-{% img /images/2013-10-17-the-rackspace-robot-ticket-contest/robotsconflogo.png 'RobotsConf' 'RobotsConf' %}
+{% img 2013-10-17-the-rackspace-robot-ticket-contest/robotsconflogo.png 'RobotsConf' 'RobotsConf' %}
 
 We at Rackspace are proud to support innovative uses of open source and cloud
 technologies  and one of the most exciting and interesting uses these days

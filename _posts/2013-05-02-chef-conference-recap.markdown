@@ -9,7 +9,7 @@ categories:
 - Chef
 - Automation
 ---
-{% img right /images/2013-05-02-chef-conference-recap/opscode_wings.png 250 200  %}
+{% img right 2013-05-02-chef-conference-recap/opscode_wings.png 250 200  %}
 DevOps and automation are all the rage now a days and [Chef](http://opscode.com/chef) is at the forefront. I spent Thursday and Friday of last week at [ChefConf](http://chefconf.com) in San Francisco and heard some amazing presentations. The presentations were all recorded and are available on [YouTube](http://www.youtube.com/user/Opscode).
 
 

@@ -49,7 +49,7 @@ Today, Rackspace's [Cloud Block Storage](http://www.rackspace.com/cloud/public/b
 ### Architecture
 
 
-{% img center /images/2012-10-23-cbs-api/CBS_arch.jpg %}
+{% img center 2012-10-23-cbs-api/CBS_arch.jpg %}
 
 
 ### API example

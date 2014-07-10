@@ -57,7 +57,7 @@ Let's compare performance of running the [chef-client](https://github.com/opscod
 18 instances total during "all tests" runs (9 Ubuntu 12.04, 9 CentOS 6.4)
 512MB RAM, 1 cpu core per instance
 
-{% img center /images/2013-08-20-using-openstack/test-kitchen-performance.png %}
+{% img center 2013-08-20-using-openstack/test-kitchen-performance.png %}
 
 In general, the private cloud is slightly faster but notice the considerable improvement using the parallel flag. I am lucky to have a beefy laptop (8 cores, 16GB RAM, SSD) so I would expect the vagrant times to increase if local hardware is not as performant. Newer versions of test-kitchen appear to run even faster.
 

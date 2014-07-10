@@ -13,7 +13,7 @@ categories:
 - perfomance
 - developer
 ---
-{% img center /images/2013-11-21-whistle-while-you-hacktx/hacktx.jpg 645 292 %} 
+{% img center 2013-11-21-whistle-while-you-hacktx/hacktx.jpg 645 292 %} 
 
 [HackTX](http://hacktx.com/) is the biggest hackathon in Texas. It's a 24 hour annual hackathon hosted by the Hacker Lounge and Technology Entrepreneurship Society student organizations at The University of Texas at Austin. It's made up of 500 hackers with $10,000 in prizes. By far, it's the biggest hackathon that I've personally attended and I was pretty damn excited to represent Rackspace as a sponsor.
 
@@ -33,7 +33,7 @@ The Developer Discount, Performance Servers, and Rackspace SDKs are a killer com
 
 It was great to be surrounded by so many developers (mostly students) all geared up and ready to go.
 
-{% img center /images/2013-11-21-whistle-while-you-hacktx/hacktx-hackers.jpg 645 484 %}
+{% img center 2013-11-21-whistle-while-you-hacktx/hacktx-hackers.jpg 645 484 %}
 
 There was no shortage of passion for coding and getting something cool built. When it came time to go heads down and really start hacking away, I happened to be sitting by a group that was constantly whistling. Sitting there in front of their laptops, coding away, and whistling at their screens. I didn't think too much of it at the time except for occasionally cringing at an off key whistle.
 

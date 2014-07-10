@@ -9,7 +9,7 @@ categories:
 - Chef
 - Configuration Management
 ---
-{% img right /images/2013-01-09-cooking-with-chef/chef_logo.png "Chef Logo" %}
+{% img right 2013-01-09-cooking-with-chef/chef_logo.png "Chef Logo" %}
 
 As I said in a [prior post](http://devops.rackspace.com/using-puppet-with-cloud-servers.html) on Puppet, many of our customers use configuration management packages to manage their cloud infrastructure. These packages include Opscode’s [Chef](http://www.opscode.com/chef/), [CFEngine](http://cfengine.com/), Red Hat’s [Spacewalk](http://spacewalk.redhat.com/), and Puppet Labs’ [Puppet](http://puppetlabs.com/puppet/what-is-puppet/). Here, I’ll dive into Chef to show you how easy it is to manage Cloud Servers using a configuration management solution. In this series I'll walk you through setting up Hosted Chef using Opscode's platform, deploying your first application to Rackspace with Chef, and more.
 <!--More-->

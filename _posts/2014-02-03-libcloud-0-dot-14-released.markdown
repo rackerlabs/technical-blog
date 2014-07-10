@@ -16,7 +16,7 @@ On 22 January, [Apache Libcloud](https://libcloud.apache.org/index.html) project
 
 <!--more-->
 
-{% img /images/2014-02-03-libcloud-0-dot-14-released/libcloud.png 225 %}
+{% img 2014-02-03-libcloud-0-dot-14-released/libcloud.png 225 %}
 
 # History
 

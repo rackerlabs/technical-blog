@@ -34,20 +34,20 @@ simple network with a VM connected to a DHCP server. The server gets its IP
 from the DHCP server and we can contact the VM from within the network:
 
 
-{% img center /images/2014-01-21-software-defined-networks-in-the-havana-release-of-openstack/tenant2.png 433 218 %}
+{% img center 2014-01-21-software-defined-networks-in-the-havana-release-of-openstack/tenant2.png 433 218 %}
 
 A second network exists for another tenant consisting of 2 VMs, a DHCP
 server, a router/gateway to the external world and public (floating) IP
 assigned to one of the VMs. This network is shown below:
 
-{% img center /images/2014-01-21-software-defined-networks-in-the-havana-release-of-openstack/tenant1.png 431 130 %}
+{% img center 2014-01-21-software-defined-networks-in-the-havana-release-of-openstack/tenant1.png 431 130 %}
 
 These virtual networks are created on physical hardware that has no
 resemblance to the virtual networks. For this discussion a very simple
 OpenStack environment has been created consisting of one controller node,
 one network node and one compute node as shown below:
 
-{% img center /images/2014-01-21-software-defined-networks-in-the-havana-release-of-openstack/openstacknetwork2tent.png 662 456 %}
+{% img center 2014-01-21-software-defined-networks-in-the-havana-release-of-openstack/openstacknetwork2tent.png 662 456 %}
 
 Creation of the networks for the each of tenants named test and test1,
 occur within the compute and network nodes. More specifically this series

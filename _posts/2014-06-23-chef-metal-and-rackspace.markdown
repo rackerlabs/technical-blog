@@ -5,10 +5,10 @@ date: 2014-06-26 08:00
 comments: true
 author: Hart Hoover
 published: true
-categories: 
+categories:
 - Chef
 ---
-{% img right /images/2014-06-23-chef-metal/chef-logo.png 160 160 %}
+{% img right 2014-06-23-chef-metal/chef-logo.png 160 160 %}
 
 Chef recently launched [Chef Metal][1], a way to define clusters of machines with
 Chef recipes. With Chef Metal's `machine` resource, you can keep your entire

@@ -14,19 +14,19 @@ One of the questions I was often asked as a Sales Engineer was how much disk per
 
 To start, I measured buffered disk reads on two different 1 GB Cloud Servers using hdparm. The average result of three tests on each was 180 MB/s – not bad for one of our smallest servers. Performing this same test on two different 15 GB Cloud Servers resulted in 250 MB/s – even better, but certainly comparable. Next, I measured I/O latency using a command called ioping. I committed a 1 MB write to disk every second for 24 hours, sorted the latency measurements from low to high and then removed the highest 5 percent.  Here are the results of tests on a 1 GB, 4 GB and 15 GB Cloud Server:
 
-{% img center /images/2013-03-17-iops/1gb.jpg %}
+{% img center 2013-03-17-iops/1gb.jpg %}
 
-{% img center /images/2013-03-17-iops/4gb.jpg %}
+{% img center 2013-03-17-iops/4gb.jpg %}
 
-{% img center /images/2013-03-17-iops/15gb.jpg %}
+{% img center 2013-03-17-iops/15gb.jpg %}
 
 This is not a scientific experiment; I would have had to repeat this test on dozens of Cloud Servers to make any specific performance claims, but what I can say is that sequential read / write performance will be similar across all Cloud Server sizes. Larger Cloud Servers tend to deliver more consistent I/O latency due to there being fewer ”noisy neighbors.”
 
 Now, what about Cloud Block Storage? Cloud Block Storage is offered in two performance options, SATA and SSD. Both are connected to the server via gigabit Ethernet and sequential performance is limited to around 100 MB/s.  Performing the same latency test delivers the following results:
 
-{% img center /images/2013-03-17-iops/sata.jpg %}
+{% img center 2013-03-17-iops/sata.jpg %}
 
-{% img center /images/2013-03-17-iops/ssd.jpg %}
+{% img center 2013-03-17-iops/ssd.jpg %}
 
 Not surprisingly, _SSD Cloud Block Storage performs better than any other option tested_.
 

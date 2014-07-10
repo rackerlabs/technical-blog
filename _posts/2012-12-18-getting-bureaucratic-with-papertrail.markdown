@@ -60,7 +60,7 @@ You should see the configuration on your nodes, and you should also see them sho
 ##I'm logging to Papertrail. Now what?
 Time to put those logs to work. Log into your Papertrail dashboard and search for something important to you. As an example, I've sent all my logs to Papertrail and I want to set up an alert for login failures:
 
-{% img center /images/2012-12-18-getting-bureaucratic-with-papertrail/ssh-login.png %}
+{% img center 2012-12-18-getting-bureaucratic-with-papertrail/ssh-login.png %}
 
 Save the search and create an alert. Papertrail will ask you where the alert should be sent. You can pick from the following services:
 

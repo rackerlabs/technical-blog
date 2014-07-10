@@ -41,7 +41,7 @@ Rackspace has worked closely with Quantum since its inception, and has built bui
 ### Architecture Example
 
 
-{% img center /images/2012-10-30-cn-api/cloud_networks_example.png %}
+{% img center 2012-10-30-cn-api/cloud_networks_example.png %}
 
 In this reference architecture example, we have a simple load balanced configuration with an isolated application server with sensitive data. You can use Cloud Networks to isolate servers from each other and eventually extend an existing network into our cloud.
 

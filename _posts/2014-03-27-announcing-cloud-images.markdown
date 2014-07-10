@@ -18,7 +18,7 @@ Well, this product creates several opportunities for developers.
 
 <!--more-->
 
-{% img /images/2014-03-27-announcing-cloud-images/Rackspace_Cloud_Images_vert_clr.png %}
+{% img 2014-03-27-announcing-cloud-images/Rackspace_Cloud_Images_vert_clr.png %}
 
 ## API only
 

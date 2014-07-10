@@ -11,7 +11,7 @@ categories:
 - DevOps
 - Open Source
 ---
-{% img right /images/2013-07-21-rackspace-at-oscon/oscon2013.png 250 %}
+{% img right 2013-07-21-rackspace-at-oscon/oscon2013.png 250 %}
 
 Portland is known for quite a few things, great food, street artists, and of course plenty of breweries. This week Portland will be home to [OSCON](http://oscon.com), a gathering of all things open source. Come to OSCON to learn about the latest open source technologies and how best to utilize them.
 

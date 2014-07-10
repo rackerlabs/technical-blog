@@ -11,7 +11,7 @@ categories:
 - DevOps
 - CloudExpo
 ---
-{% img right /images/2013-06-08-unlocked-intro/UnlockedHybridCloudLogo.jpg 250 %}
+{% img right 2013-06-08-unlocked-intro/UnlockedHybridCloudLogo.jpg 250 %}
 
 This week, Rackspace embarks on a global journey across the globe called [Unlocked: The Hybrid Cloud](http://unlocked.io).  Unlocked is a free one-day cloud workshop sponsored and hosted by Rackspace that we’ll hold in several major cities across the globe to help you determine which cloud environment – public, private or hybrid cloud – is the best fit for your application.
 

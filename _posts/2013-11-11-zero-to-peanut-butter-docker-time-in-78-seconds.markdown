@@ -12,7 +12,7 @@ categories:
 - containers
 ---
 
-{% img right /images/2013-11-11-peanut-butter-docker-time/Peanut-Butter-and-Jelly-Time-Family-Guy.gif 300 %}
+{% img right 2013-11-11-peanut-butter-docker-time/Peanut-Butter-and-Jelly-Time-Family-Guy.gif 300 %}
 
 With the launch of our new [Performance Cloud Servers][1] - we've got speed. Lots of speed. Oodles of speed. I've got more benchmarks and data to post, but one of the things I've been meaning to do prior to this launch is to show how quickly you can get up and running with something else that's rocking the tech world: [Docker][2].
 
@@ -22,7 +22,7 @@ Two cool things - [Performance Cloud Servers][1] and [Docker][2] - what I want t
 
 #### First, what is Docker
 
-{% img center /images/2013-11-11-peanut-butter-docker-time/docker-transparent.png 400 %}
+{% img center 2013-11-11-peanut-butter-docker-time/docker-transparent.png 400 %}
 
 From their lovely page:
 
@@ -36,7 +36,7 @@ Ok, so containers are cool. They are a light weight system to create isolated in
 
 This is all pretty amazing - and not to mention the latest Nova release in [OpenStack Havana][7] actually supports Docker as an option for the underlying hypervisor (ala Xen) which means:
 
-{% img center /images/2013-11-11-peanut-butter-docker-time/yodawg.jpg 500 %}
+{% img center 2013-11-11-peanut-butter-docker-time/yodawg.jpg 500 %}
 
 #### Let's do this.
 
@@ -94,7 +94,7 @@ And there you have it; 36 seconds to apt-get update, and install Docker and then
 
 If I'm doing my math right - which is always questionable - that's 42 seconds to boot the image, and 36 seconds to install and run Docker. **78 seconds ~ a minute and a half**.
 
-{% img center /images/2013-11-11-peanut-butter-docker-time/mind_blown.gif %}
+{% img center 2013-11-11-peanut-butter-docker-time/mind_blown.gif %}
 
 #### Doing something neat-o
 
@@ -109,7 +109,7 @@ And now we use the **docker port** command with the image ID to find the public 
     root@docker1gb:~/django-docker# docker port f14248d20f70 8000
     0.0.0.0:49154
 
-{% img center /images/2013-11-11-peanut-butter-docker-time/finished.png 900 %}
+{% img center 2013-11-11-peanut-butter-docker-time/finished.png 900 %}
 
 You now have the perfect Django Polls application running in docker, in OpenStack, on [crazy fast][1] machines. All in minutes - not hours.
 

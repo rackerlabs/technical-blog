@@ -8,7 +8,7 @@ published: true
 categories:
 - SaltStack
 ---
-{% img right /images/2013-07-12-join-the-great-salt-sprint/saltstack_logo.jpg 200 %}
+{% img right 2013-07-12-join-the-great-salt-sprint/saltstack_logo.jpg 200 %}
 
 I am part of a team (along with Bruce Stringer and Jason Swindle) working on an internal application called Graffiti, which provides an easy way for front-line Rackers to record interactions with customers and provide valuable data with each interaction. It also creates a much simpler way for leads to be passed from the front line to the IB sales team here in SMB cloud.
 
