@@ -38,13 +38,20 @@ module Jekyll
     end
 
     def render(context)
-      unless @img['src'] =~ /^https?:/
-        @img['src'] = AssetsPlugin::Renderer.new(context, @img['src']).render_asset_path
-      end
-
       if @img
+        unless @img['src'] =~ /^https?:/
+          begin
+            @img['src'] = AssetsPlugin::Renderer.new(context, @img['src']).render_asset_path
+          rescue Jekyll::AssetsPlugin::Environment::AssetNotFound
+            $stderr.puts "Missing img asset in #{context.environments.first['page']['path']}: <#{@img['src']}>"
+            return "Error processing input, missing asset: #{@img['src']}"
+          end
+        end
+
         "<img #{@img.collect {|k,v| "#{k}=\"#{v}\"" if v}.join(" ")}>"
       else
+        $stderr.puts "Bad img syntax in #{context.environments.first['page']['path']}: <#{@markup}>"
+
         "Error processing input, expected syntax: {% img [class name(s)] [http[s]:/]/path/to/image [width [height]] [title text | \"title text\" [\"alt text\"]] %}"
       end
     end
