@@ -16,31 +16,31 @@ There are all sorts of tools available to setup virtual OpenStack environments o
 In Rackspace Private Cloud's case, the following three options are available:
 
 * [The Official Rackspace Private Cloud Sandbox](http://www.rackspace.com/knowledge_center/article/rackspace-private-cloud-sandbox)
-* [All-in-one Vagrantfiles](http://thornelabs.net/2013/12/17/deploy-rackspace-private-cloud-entirely-within-a-vagrantfile-on-virtualbox-or-vmware-fusion.html)
+* [Multi-node Vagrantfiles](http://thornelabs.net/2013/12/17/deploy-rackspace-private-cloud-entirely-within-a-vagrantfile-on-virtualbox-or-vmware-fusion.html)
 * [All-in-one shell script](https://github.com/cloudnull/rcbops_allinone_inone)
 
 These tools are great to give you a very quick and easy way to setup a demo Rackspace Private Cloud environment to begin learning how the services, APIs, CLI tools, and Horizon Dashboard work. However, these demo environments do not give you a realistic expectation of what you can expect Rackspace Private Cloud to do for you on bare metal servers or how to actually set it all up.
 
 <!-- more -->
 
-In the following post, the first of many in the [RPC Insights series](http://www.rackspace.com/blog/welcome-to-rpc-insights/), I am going to detail how to deploy a proof of concept Rackspace Private Cloud environment powered by OpenStack Havana on top of Ubuntu Server 12.04.4 LTS on bare metal servers.
-
+In the following post, the first of several in the [RPC Insights series](http://www.rackspace.com/blog/welcome-to-rpc-insights/), I am going to detail how to deploy a proof of concept Rackspace Private Cloud environment powered by OpenStack Havana on top of Ubuntu Server 12.04.4 LTS on bare metal servers.
 
 The Necessary Gear
 ------------------
 
 At the very minimum, you will need the following gear:
 
-1. One network switch capable of creating VLANs
-2. One physical or virtual server to act as the Chef Server
-3. One physical server to act as the OpenStack Controller node
-4. Two physical servers to act as the OpenStack Compute nodes
-5. One physical server to act as the OpenStack Cinder node
+1. One Layer 3 network device (such as a firewall) capable of creating VLANs
+2. One network switch capable of configuring access and trunk ports
+3. One physical or virtual server to act as the Chef Server
+4. One physical server to act as the OpenStack Controller node
+5. Two physical servers to act as the OpenStack Compute nodes
+6. One physical server to act as the OpenStack Cinder node
 
 Server and Network Diagram
 --------------------------
 
-![rpc-poc-diagram]({% asset_path 2014-06-23-from-bare-metal/rpc-poc-diagram.png %})
+![rpc-poc-diagram](/images/2014-06-23-from-bare-metal/rpc-poc-diagram.png)
 
 Configure VLANs
 ---------------
@@ -396,7 +396,7 @@ Add the __single-compute__ role to __compute1__ and __compute2__:
 Add the __cinder-volume__ role to __cinder1__:
 
     knife node run_list add cinder1 'role[cinder-volume]'
-    
+
 Configuration of the __Chef Server__ is now complete and all of the OpenStack nodes have been bootstrapped to the Chef Server. 
 
 Setup controller1
@@ -422,7 +422,7 @@ Open __/etc/network/interfaces__ with your favorite command line text editor and
     iface eth3 inet manual
         up ip link set eth3 up
         down ip link set eth3 down
-         
+
     iface br-eth3 inet manual
 
 __br-eth3__ is an Open vSwitch Bridge created during the `chef-client` run.
@@ -438,7 +438,7 @@ Up __eth3__ and __br-eth3__:
     ip link set br-eth3 up
 
 Add __eth3__ to the __br-eth3__ Open vSwitch Bridge:
-     
+
     ovs-vsctl add-port br-eth3 eth3
 
 Configuration of __controller1__ is now complete.
@@ -466,7 +466,7 @@ Open __/etc/network/interfaces__ with your favorite command line text editor and
     iface eth3 inet manual
         up ip link set eth3 up
         down ip link set eth3 down
-         
+
     iface br-eth3 inet manual
 
 __br-eth3__ is an Open vSwitch Bridge created during the `chef-client` run.
@@ -482,7 +482,7 @@ Up __eth3__ and __br-eth3__:
     ip link set br-eth3 up
 
 Add __eth3__ to the __br-eth3__ Open vSwitch Bridge:
-     
+
     ovs-vsctl add-port br-eth3 eth3
 
 Configuration of __compute1__ is now complete.
@@ -504,13 +504,13 @@ Setup cinder1
 Log in via SSH as the root user to __cinder1__:
 
     ssh root@10.0.50.30
-    
+
 Currently, __cinder1__ has a root partition of roughly 50 GB. Some of that space will be used for swap. The remaining space on the server has been set aside for Cinder storage. The remaining space should be on partition __/dev/sda3__. This partition needs to be configured for LVM.
-    
+
 Create the LVM Physical Volume:
 
     pvcreate /dev/sda3
-    
+
 Create the LVM Volume Group on top of the LVM Physical Volume:
 
     vgcreate cinder-volumes /dev/sda3
@@ -529,7 +529,7 @@ Before you can begin creating OpenStack Instances, at the very minimum you need 
 Log in via SSH as the root user to __controller1__:
 
     ssh root@10.0.50.10
-    
+
 Source in the OpenStack credentials so you can use the OpenStack command line tools:
 
     source /root/openrc
@@ -549,7 +549,7 @@ Upload the __ubuntu-server-12.04__ cloud image:
 Upload the __centos-6.5__ cloud image:
 
     glance image-create --name centos-6.5-x86_64 --is-public true --container-format bare --disk-format qcow2 --copy-from http://repos.fedorapeople.org/repos/openstack/guest-images/centos-6.5-20140117.0.x86_64.qcow2
-    
+
 ### Create Two Neutron Provider Networks
 
 The steps in this post have setup two VLANs to use as Neutron Provider Networks. They can be setup with the following commands.
@@ -565,10 +565,12 @@ Create Neutron Provider Network __provider-network-201__:
     neutron net-create provider-network-210 --provider:physical_network=ph-eth3 --provider:network_type=vlan --provider:segmentation_id=210 --router:external=True --shared
 
     neutron subnet-create provider-network-210 10.0.210.0/24 --name provider-subnet-210 --no-gateway --host-route destination=0.0.0.0/0,nexthop=10.0.210.1 --allocation-pool start=10.0.210.100,end=10.0.210.254 --dns-nameservers list=true 8.8.8.8 8.8.4.4
-    
+
 What's Next
 -----------
 
 At this point, Rackspace Private Cloud powered by OpenStack Havana should be running on your bare metal servers. You have uploaded several Glance images and created two Neutron Provider Networks to attach OpenStack Instances to.
 
-This concludes the first of many posts in the RPC Insights series. Join us on June 24 for a webinar on [Spinning Up Your First Instance on RPC](https://cc.readytalk.com/cc/s/registrations/new?cid=ebv9dzujw4cg).
+This concludes the first of several posts in the [RPC Insights series](http://www.rackspace.com/blog/welcome-to-rpc-insights/).
+
+Join us on June 24, 2014 at 10:00 AM CDT for a live webinar on [Spinning Up Your First Instance on RPC](https://cc.readytalk.com/cc/s/registrations/new?cid=ebv9dzujw4cg).

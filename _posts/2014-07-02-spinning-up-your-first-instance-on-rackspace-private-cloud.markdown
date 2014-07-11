@@ -15,7 +15,7 @@ In the following post, the second of several in the [RPC Insights series](http:/
 
 <!-- more -->
 
-In the webinar, I was working from a virtual Rackspace Private Cloud environment running on my workstation. That environment was created using [these all-in-one Vagrantfiles](http://thornelabs.net/2013/12/17/deploy-rackspace-private-cloud-entirely-within-a-vagrantfile-on-virtualbox-or-vmware-fusion.html). The entirely of this post will assume you are using those all-in-one Vagrantfiles as well. It is worth mentioning that most of the commands below will work just as well on other OpenStack environments. The main difference between other evironments will be the networking layout and configuration.
+In the webinar, I was working from a virtual Rackspace Private Cloud environment running on my workstation. That environment was created using these [multi-node Vagrantfiles](http://thornelabs.net/2013/12/17/deploy-rackspace-private-cloud-entirely-within-a-vagrantfile-on-virtualbox-or-vmware-fusion.html). The entirely of this post will assume you are using those multi-node Vagrantfiles as well. It is worth mentioning that most of the commands below will work just as well on other OpenStack environments. The main difference between other evironments will be the networking layout and configuration.
 
 Log into the OpenStack Controller Node
 --------------------------------------
@@ -26,7 +26,7 @@ Start by logging into your OpenStack controller node:
 ```sh
 vagrant ssh controller1
 ```
-Login as the root user and stay logged in as root throughout this post (the root password is __vagrant__):
+Log in as the root user and stay logged in as root throughout this post (the root password is __vagrant__):
 ```sh
 su -
 ```
@@ -48,7 +48,7 @@ Upload the CirrOS OpenStack cloud image by running the following command:
     glance image-create --name cirros-0.3.2-x86_64 --is-public true --container-format bare --disk-format qcow2 --copy-from http://download.cirros-cloud.net/0.3.2/cirros-0.3.2-x86_64-disk.img
 ```
 
-Monitor the progress of the upload by running `glance image-list`.
+You can monitor the upload progress by running `glance image-list`.
 
 Add Rules to the default Neutron Security Group
 -----------------------------------------------
@@ -73,13 +73,13 @@ Every OpenStack Instance you create will be assigned a flavor. A flavor designat
 Create a new flavor called __m1.supertiny__ with an ID of __auto__, __256 MB__ of RAM, __1 GB__ of root disk space, and __1__ vCPU by running the following command:
 
 ```sh
-nova flavor-create m1.custom auto 256 1 1
+nova flavor-create m1.supertiny auto 256 1 1
 ```
 
 Create Your SSH Keypair
 -----------------------
 
-Most OpenStack cloud images have password-based login turned off. This is partly a security measure so there are not OpenStack cloud images created and left running with default passwords. So, to login to an OpenStack Instance you will need to create an SSH keypair.
+Most OpenStack cloud images have password-based log in turned off. This is partly a security measure so there are not OpenStack cloud images created and left running with default passwords. So, to log in to an OpenStack Instance you will need to create an SSH keypair.
 
 _If you already have an SSH keypair created, you can skip this paragraph._ On your workstation, open your terminal application and run `ssh-keygen`. You can accept all of the default settings. I would recommend setting a password on your SSH private key, but for now create it without a password.
 
@@ -92,7 +92,7 @@ Then, from the OpenStack controller node, upload the SSH public key to the nova 
 ```sh
 nova keypair-add --pub_key workstation.pub workstation
 ```
-With this SSH public key in the nova keypair database, you can assign it to OpenStack Instances upon creation so you can login via SSH.
+With this SSH public key in the nova keypair database, you can assign it to OpenStack Instances upon creation so you can log in via SSH.
 
 Create Neutron Networks
 -----------------------
@@ -127,7 +127,11 @@ neutron subnet-create provider-network-1 192.168.244.0/24 --name provider-subnet
 Create a Neutron Router and Attach the Neutron Provider and Tenant Networks
 ---------------------------------------------------------------------------
 
-OpenStack Instances connected to a Neutron Tenant Network are only accessible within the Neutron Tenant Network's respective Network Namespace on the OpenStack network nodes (in this case the network nodes _are_ the controller nodes). One way to provide external connectivity to those OpenStack Instances is to attach the Neutron Tenant Network to a Neutron Router which is also connected to a Neutron Provider Network (this gives the Neutron Router external connectivity). Once all of this is connected, and assuming the Neutron Provider Network connected to the Neutron Router has access to the internet, your OpenStack Instances will have access to the internet. In addition, if you setup Neutron Floating IP addresses (which you will in the next section), you can access your OpenStack Instances externally.
+OpenStack Instances connected to a Neutron Tenant Network are only accessible within the Neutron Tenant Network's respective Network Namespace on the OpenStack network nodes (in this case the network nodes _are_ the controller nodes).
+
+One way to provide external connectivity to those OpenStack Instances is to attach the Neutron Tenant Network to a Neutron Router which is also connected to a Neutron Provider Network (this gives the Neutron Router external connectivity). Once all of this is connected, and assuming the Neutron Provider Network connected to the Neutron Router has access to the internet, your OpenStack Instances will have access to the internet.
+
+In addition, if you setup Neutron Floating IP addresses (which you will in the next section), you can access your OpenStack Instances externally.
 
 To create a Neutron Router, run the following command:
 
@@ -149,7 +153,9 @@ neutron router-gateway-set router1 provider-network-1
 Create Neutron Floating IP Addresses
 ------------------------------------
 
-The OpenStack Instances you spin up will be assigned IP address in the 10.240.0.0/24 network which is a Neutron Tenant Network isolated to your OpenStack environment; you cannot communicate with this network from your workstation and you will only be able to communicate with this network from within the Network Namespace on your OpenStack controller nodes. However, you can communicate with the 192.168.244.0/24 network from your workstation. So, since you have already created a flat Neutron Provider Network and a Neutron Router (which has a default gateway on the 192.168.244.0/24 network), you can create floating IP addresses within the 192.168.244.0/24 network, assign them to your OpenStack Instances, and begin communicating with your OpenStack Instances from your workstation.
+The OpenStack Instances you spin up will be assigned IP address in the 10.240.0.0/24 network which is a Neutron Tenant Network isolated to your OpenStack environment; you cannot communicate with this network from your workstation and you will only be able to communicate with this network from within the Network Namespace on your OpenStack controller nodes.
+
+However, you can communicate with the 192.168.244.0/24 network from your workstation. So, since you have already created a flat Neutron Provider Network and a Neutron Router (which has a default gateway on the 192.168.244.0/24 network), you can create floating IP addresses within the 192.168.244.0/24 network, assign them to your OpenStack Instances, and begin communicating with your OpenStack Instances from your workstation.
 
 To create floating IP addresses from the __provider-network-1__ Neutron Provider Network, run the following command:
 
@@ -198,7 +204,7 @@ With your OpenStack Instance booted and a floating IP address assigned to it, yo
 
 You should now be able to open the terminal application on your workstation and ping or SSH into your OpenStack Instance using the floating IP address you just assigned to it.
 
-Login via SSH as user __cirros__ with password __cubswin:)__.
+Log in via SSH as user __cirros__ with password __cubswin:)__.
 
 ### Communicate through its Network Namespace
 
@@ -222,7 +228,7 @@ If you run `route -n` from your OpenStack controller node, the output would look
 
 To ping the OpenStack Instance you created above, run `nova list` to obtain the IP address assigned to your OpenStack Instance (I'm going to use __10.240.0.100__ as an example), then run `ip netns exec qdhcp-24cc7957-ee4b-4395-bb5b-c6d509b9db77 ping 10.240.0.100`. Because you added a rule to the __default__ Neutron Security Group to allow ICMP, you should have a successful ping. 
 
-To SSH into your OpenStack Instance run `ip netns exec qdhcp-24cc7957-ee4b-4395-bb5b-c6d509b9db77 ssh ubuntu@10.240.0.100`. Because you added a rule to the __default__ Neutron Security Group to allow SSH, you should be able to login to the OpenStack Instance (for this to work you will need to put the SSH private key on your workstation into __/root/.ssh/id_rsa__ on the controller1 node and also run `chmod 600 /root/.ssh/id_rsa` on the controller1 node).
+To SSH into your OpenStack Instance run `ip netns exec qdhcp-24cc7957-ee4b-4395-bb5b-c6d509b9db77 ssh ubuntu@10.240.0.100`. Because you added a rule to the __default__ Neutron Security Group to allow SSH, you should be able to log in to the OpenStack Instance (for this to work you will need to put the SSH private key on your workstation into __/root/.ssh/id_rsa__ on the controller1 node and also run `chmod 600 /root/.ssh/id_rsa` on the controller1 node).
 
 What's Next
 -----------
@@ -233,4 +239,4 @@ Being able to do all of these things using the Horizon Dashboard or the OpenStac
 
 This concludes the second of several posts in the [RPC Insights series](http://www.rackspace.com/blog/welcome-to-rpc-insights/).
 
-Join us on July 16, 2014 at 10:00 AM CST for a live webinar on Using Rackspace Private Cloud to Host Your Web Tier Applications (link to register for the webinar is forthcoming).
+Join us on July 16, 2014 at 10:00 AM CDT for a live webinar on [Using Rackspace Private Cloud to Host Your Web Tier Applications](http://go.rackspace.com/rpc-to-host-your-web-tier-applications.html).
