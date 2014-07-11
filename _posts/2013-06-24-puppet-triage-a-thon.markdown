@@ -11,6 +11,8 @@ categories:
 {% img right 2013-06-24-puppet-triage/puppet_logo.png %}
 If you are interested in contributing to [Puppet][1], the upcoming "Triage-a-Thon" will be a great chance! Puppet Labs is throwing a bug squashing party on July 13th at their headquarters in Portland. Goals for the event:
 
+<!-- more -->
+
 * Review all open tickets in the Puppet and Module projects
 * Update and confirm that issues are still relevant
 * Ensure tickets are in the right status and all the right information is present to fix the problem

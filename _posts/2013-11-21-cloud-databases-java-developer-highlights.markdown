@@ -17,6 +17,8 @@ more. Sounds great - in a nutshell, that is what you get with Cloud Databases.
 While you can access Cloud Databases using a bunch of different languages,
 here I will do it by using Java with [jclouds](http://jclouds.apache.org/documentation/gettingstarted/what-is-jclouds/]).
 
+<!-- more -->
+
 Start by including Cloud Databases in your existing (or make a new) Java
 project. If you are using Maven, you can do so by adding the following dependency:
 

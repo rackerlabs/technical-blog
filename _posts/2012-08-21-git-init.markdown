@@ -11,6 +11,8 @@ categories:
 
 Our cloud is [open](http://www.rackspace.com/cloud/openstack/). We believe our company should be too. One of our [Core Values](http://rackertalent.com/people/core-values/) at Rackspace is full disclosure and transparency, and we want to build a community for our developers that is open, transparent and helps them build amazing applications on the open cloud.
 
+<!-- more -->
+
 Today, we have [The Official Rackspace Blog](http://www.rackspace.com/blog/), which covers Cloud Industry Insights, Product & Development and Partner & Customer Updates. For the latest information on all of the things that fall into these buckets, the Rackspace Blog is the go-to place. We also have [Racker Talent](http://rackertalent.com), the one-stop shop for insight into Rackspace’s unique culture and career opportunities.
 
 Today, we add a third, and incredibly important pillar to the Rackspace blogosphere: devops.rackspace.com, a blog that aims to deliver meaty technical content. It will be all tech, all the time: code snippets, sample code, best practices, infrastructure automation, software development kits (SDKs) and technical guidance from industry experts.

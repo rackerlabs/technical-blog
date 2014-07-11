@@ -13,6 +13,8 @@ At Rackspace, our goal is to support our customers in any way we can. To move to
 
 The [first tutorial](https://github.com/rackerlabs/rax_rails_tutorial) deals with using the Rackspace Cloud API (via the fog gem) to recreate a very basic server control panel with Ruby on Rails. We'll explore some intermediate concepts like databaseless models, and introduce you to the basics of interacting with Rackspace with fog. At the end, you'll have the beginnings of a custom control panel. You should have a grasp of some of the gotchas, tradeoffs, and techniques that can be used to help you refine your cloud infrastructure management workflow.
 
+<!-- more -->
+
 The [second tutorial](https://github.com/rackerlabs/rax_rails_tutorial/blob/master/server_tutorial.md) will show you how to set a Rackspace Cloud Server up for a Ruby on Rails production deployment. We'll walk you step by step through basic security setup, installation of the web stack (Ruby, Rails, MySQL, Passenger/Nginx, etc), and deployment of an app with Capistrano. There are a lot of moving parts, but once you see how they all fit together, you'll find that administering your own servers isn't that bad, and the knowledge will help you become a better developer even if you leave it to someone else.
 
 Enjoy!
