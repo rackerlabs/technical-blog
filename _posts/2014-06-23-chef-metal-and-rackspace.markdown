@@ -14,7 +14,9 @@ Chef recently launched [Chef Metal][1], a way to define clusters of machines wit
 Chef recipes. With Chef Metal's `machine` resource, you can keep your entire
 server environment under the same version control that holds your configuration
 management recipes.
+
 <!-- more -->
+
 Chef Metal works by using a provisioning node to control your infrastructure. The
 provisioning node keeps track of the machines you've defined and will create a
 new one if needed.
