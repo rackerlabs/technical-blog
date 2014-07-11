@@ -16,7 +16,7 @@ improvements. It describes some of the new features we have added and things
 we have changed, improved and removed to make the whole API faster, better,
 more reliable and user-friendly.
 
-<!--More-->
+<!-- more -->
 
 ## Performance and Reliability Improvements
 

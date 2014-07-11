@@ -30,7 +30,7 @@ you don't have one already. It's a free, open-source service. You can even spin
 up your own private instances, although their documentation for doing that
 isn't the best :)
 
-<!--More-->
+<!-- more -->
 
 ## Setting Up Your Project
 

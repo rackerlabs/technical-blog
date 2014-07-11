@@ -20,6 +20,8 @@ what advice she has. In her own words:
 
 {% img left http://justwriteclick.com/blog/wp-content/uploads/2013/11/glass-205x300.jpg %}
 
+<!-- more -->
+
 I have lived in Austin since January 2013. Previously I was attending the
 University of the Incarnate Word in San Antonio, and was doing an internship
 at the Castle. Before college I took a year off after high school and worked

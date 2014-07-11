@@ -24,7 +24,7 @@ typical use-case is sending requests to an HTTP endpoint. When the results come
 back, Jenkins can decide whether to fail the build, produce graphs, or whatever
 your desired behavior may be.
 
-<!--More-->
+<!-- more -->
 
 ## Behind The Scenes
 

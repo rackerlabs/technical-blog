@@ -17,6 +17,8 @@ categories:
 
 GiveCamp is a weekend-long event where technology professionals from designers, developers and database administrators to marketers and web strategists donate their time to provide solutions for non-profit organizations. This was the third year, and it was held at [Cowork Memphis](http://coworkmemphis.com/). **Rackspace** was a major sponsor of the event: we provided some funding, as well as donating free hosting for any of the charities that participated. They were also nice enough to send me to Memphis for the weekend in order to help out any way I could.
 
+<!-- more -->
+
 The event began Friday evening at 6pm. Representatives from the various charities kicked off the evening by giving a brief introduction to the charitable work that they do, and the technical assistance they need. There were a wide range of organizations:
 
    * [**Mid-South Spay & Neuter Services**](http://www.spaymemphis.org): A veterinary clinic offering free/low-cost spay/neutering services to help reduce the stray population

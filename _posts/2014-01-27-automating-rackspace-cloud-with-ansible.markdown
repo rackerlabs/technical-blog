@@ -31,6 +31,8 @@ A while back I wrote about
 as a way to simply automate IT infrastructure, and showed how to achieve
 some interesting zero-downtime rolling update capabilities.
 
+<!-- more -->
+
 In conjunction with several folks at Rackspace, we now have a lot of quality
 modules (and more pull requests underwway) for adding in additional
 functionality -- both cloud provisioning, managing Rackspace Cloud load

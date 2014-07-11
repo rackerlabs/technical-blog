@@ -13,7 +13,7 @@ categories:
 
 Recently a fellow Racker wrote a great post about [zero downtime deployments][0]. I strongly believe in the principals he described. In his example, he used Node.js to build a deployment script to accomplish the goal, and I want to explore how this could be done with [Ansible][1] and the Rackspace Cloud.
 
-<!--more-->
+<!-- more -->
 
 #### Theory Review
 Lets review the theory. Assume you have 4 app servers behind a cloud load balancer. A zero downtime rolling deploy would mean taking half of the app servers out of the load balancer rotation, updating app code on them, validating app code on them, and re-inserting them back into the load balancer before moving on to repeat the steps with the second half of the app servers.

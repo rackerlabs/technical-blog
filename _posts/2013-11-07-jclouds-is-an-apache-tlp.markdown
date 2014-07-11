@@ -15,6 +15,8 @@ categories:
 
 The lower case j's have been dotted and the t's have been crossed. jclouds is an Apache Software Foundation (ASF) Top Level Project (TLP)! With the closing of [this issue](https://issues.apache.org/jira/browse/INFRA-6912) and the resolution being set to "Fixed", it's officially and infrastructurally done. We've even dropped the "incubator" prefix/suffix from our DNS entries and various source code artifacts. You can now find us at our permanent home [jclouds.apache.org](http://jclouds.apache.org/). Huzzah!
 
+<!-- more -->
+
 It's been a relatively short ride through the ASF incubation process, just over 6 months. Adrian Cole founded jclouds over 4 years ago and had already built a thriving community before proposing the move to an open source foundation. That community, on the strength of its diversity, had already met many of the requirements to become a TLP. We had some excellent mentors but it was David Nalley that really helped guide our fledging project through the incubation process.
 
 On the technical side, it was mainly a matter of moving all of the jclouds source code into the ASF canonical repos, updating many a license header, and getting some releases as an incubating project under our belt. The work was completed by many in the community but we leaned heavily on our trifecta of Andrews for the releases. To that end, Andrew Bayer will represent jclouds as our vice president in the ASF. I'm proud to be one of the project management committee (PMC) members and a committer.

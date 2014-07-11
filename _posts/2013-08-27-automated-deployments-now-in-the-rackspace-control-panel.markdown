@@ -10,7 +10,7 @@ categories:
 ---
 The hardest part about using new technology is knowing where to begin. Spending hours sifting through blog posts and documentation to set up a server environment is often enough to extinguish the excitement about a new framework or application. By the same token, it is frustrating to deploy hosting architecture when you are excited to see how your latest code will perform. And no one likes having to do the same things over and over to create consistent testing, staging and production environments.
 
-Deploying your application to the cloud requires expertise in both system administration and development; often, people have expertise in some areas while having gaps in others. The Rackspace Deployments Service was created so we could collect this information and expertise in machine and human readable format and use it to automatically and consistently deploy hosting configurations, frameworks and applications and alleviate some of this stress. <!--More-->
+Deploying your application to the cloud requires expertise in both system administration and development; often, people have expertise in some areas while having gaps in others. The Rackspace Deployments Service was created so we could collect this information and expertise in machine and human readable format and use it to automatically and consistently deploy hosting configurations, frameworks and applications and alleviate some of this stress. <!-- more -->
 <p><a name="video"></a></p>
 {% youtube z3o4iFe8Ucs %}
 <p><a name="video"></a></p>

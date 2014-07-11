@@ -16,7 +16,7 @@ and focusing, and very much so, on Big Data for developers. We had twenty
 Rackers attending, one of us was presenting, and yes, Rackspace sponsored
 the conference this year.
 
-<!--more-->
+<!-- more -->
 
 While I am sure everybody's takeaway from ddtx14 was different, I was most impressed by two technologies that seem to be gaining steam: Summingbird and Mesos. If you work on big data architecture, you might find them useful.
 

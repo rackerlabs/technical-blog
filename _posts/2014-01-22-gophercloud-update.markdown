@@ -13,7 +13,7 @@ I'm happy to report that Gophercloud has received some contributor interest
 recently. I wanted to drop a quick update to keep everyone up to date about
 the continued growth and changes to [Gophercloud](http://gophercloud.io/).
 
-<!--more-->
+<!-- more -->
 
 In particular, Gophercloud now supports Rackspace API Keys for authentication.
 The publicly-visible interface for using API keys follows the conventions set

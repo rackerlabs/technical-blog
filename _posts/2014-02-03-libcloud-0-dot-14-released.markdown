@@ -14,7 +14,7 @@ categories:
 
 On 22 January, [Apache Libcloud](https://libcloud.apache.org/index.html) project chair Tomaz Muraus announced the release of Libcloud 0.14, a Python package which abstracts away the many differences among cloud provider APIs, allowing developers to target one interface regardless of the vendor.
 
-<!--more-->
+<!-- more -->
 
 {% img 2014-02-03-libcloud-0-dot-14-released/libcloud.png 225 %}
 

@@ -27,7 +27,7 @@ minute and more checks are enabled every day. There's a lot of data here—an
 automated layer of intelligence over our cloud environments could really
 [help][3].
 
-<!--more-->
+<!-- more -->
 
 Capturing meaningful insights, metrics, or measurements from real-world
 systems is hard. Configuring those monitoring alerts to get the right

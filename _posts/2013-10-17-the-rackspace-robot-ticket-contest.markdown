@@ -21,6 +21,8 @@ in Amelia Island, FL) is an incredibly focused event on this specific use and we
 are happy to be supporting it. Luckily we have an extra ticket and we want one
 of you to attend the event to help build the next generation of robots!
 
+<!-- more -->
+
 We are holding a contest between now and October 31<sup>st</sup> at 11:59 PM
 Pacific Standard Time. In a tweet with the hashtag #rackerbot, describe the
 robot or robotic system you want to build. If your idea exceeds the available

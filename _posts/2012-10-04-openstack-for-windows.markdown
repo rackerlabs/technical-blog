@@ -10,6 +10,8 @@ categories:
 
 _This is a guest post by Duan van der Westhuizen. Duan works at Rackspace in Enterprise Product Development and has been a Racker for almost 6 years. Duan started in our EMEA office where he also had roles in Business Intelligence and Customer Support. He has over 15 years of technology experience across various fields from technology strategy, engineering, development and database design. Duan is a tech at heart who is passionate about leading edge technologies and finding ways to solve market problems through new and innovative solutions._
 
+<!-- more -->
+
 First, a confession: I am a Microsoft guy, and have been for about 15 years now.
 
 I started working on an old monochrome ICL computer back in the days of MS-DOS 6. My first exposure to coding was when I learned how to write batch files that would create RAM drives into which I could load my games like Kings Quest, Double Dragon, etc. (from floppy disks) so they could load faster when I played them.

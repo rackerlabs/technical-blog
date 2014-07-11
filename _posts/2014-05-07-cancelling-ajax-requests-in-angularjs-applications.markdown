@@ -15,7 +15,7 @@ categories:
 
 We, at Rackspace are working on a data visualization dashboard which uses [AngularJS](http://angularjs.org/) framework and we needed to abort requests. Fortunately, AngularJS has amazing built in services of which [$http](http://docs.angularjs.org/api/ng/service/$http) and [$resource](http://docs.angularjs.org/api/ngResource/service/$resource) help us make these XHR(Ajax) requests much simpler. There are many resources to figure out which might be better for your use case. I’m going to describe how I implemented aborts in $resource and $http in an unified way which increased the performance and show correct data.
 
-<!--more-->
+<!-- more -->
 
 Large web applications require lots of information to operate. Whether that’s
 navigating between menus and tabs or just clicking around, the application has

@@ -11,8 +11,6 @@ categories:
  - Configuration
  - Linux
 ---
-
-
 It goes without saying that booting and configuring a server manually
 every time you need one gets old fast. Thankfully there are a number of tools to help
 with orchestration and automation available to you. 
@@ -22,6 +20,8 @@ To list a few you can:
 -   create a 'golden image' of a server's desired state.
 -   learn and setup Chef/Puppet/Salt Stack to manage your infrastructure.
 -   use Rackspace's Cloud Deployments to spin up an environment.
+
+<!-- more -->
 
 All of these are great tools, but as with anything they have their pros
 and cons. Chef or Salt Stack gives you a good deal of customization but

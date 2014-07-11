@@ -21,7 +21,7 @@ categories:
 This past Fall, four members of our Cloud DNS Team got the chance to help a San-Antonio non-profit (the [Food Policy Council of SA](http://foodpolicysa.org/)) while participating in the annual OpenAIR hackathon using some of our Rackspace volunteer hours. 
 
 
-<!--more-->
+<!-- more -->
 
 Our team came in 4th place out of 15 teams. The first three places advanced to the finals. The advancing teams had about three weeks to improve on their websites for the final round of judging. The grand prize was given at SXSW in March 2014 and the winning team received passes to SXSW 2015.
 

@@ -18,7 +18,7 @@ existing one. While this is a pretty big feature, it would have been easy to
 miss, as its simply the addition of a source_volid parameter to the existing
 create volume call.
 
-<!--more-->
+<!-- more -->
 
 Here’s what that looks like in the API:
 

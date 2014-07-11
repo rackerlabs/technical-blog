@@ -13,7 +13,7 @@ categories:
 
 Having spent my last 7 years concentrating mainly on Linux and related technologies, I spent 3 days with PowerShell and here are the some observations and anecdotes.  Why PowerShell?  Curiosity for one and I wanted to learn it from a perspective of how to use it in configuration management tools like Chef. As an disclaimer, I'm not an expert in PowerShell and spending 3 days is just scraping the surface but I did learn quite a bit in that time. Also my prediction is that PowerShell will be real force (if not already) in Windows environments. It is a mindset change for several Windows administrators who have grown up on GUIs but that is about to change in the coming years. And if you are Linux administrator, you are likely to feel more comfortable interacting the PowerShell way. I definitely did.
 
-<!--more-->
+<!-- more -->
 
 ## Observations
 

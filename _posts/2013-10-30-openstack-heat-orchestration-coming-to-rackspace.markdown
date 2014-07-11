@@ -25,7 +25,7 @@ In April, we joined forces with the OpenStack [Heat](https://wiki.openstack.org/
 community to help round out the capabilities of the Heat project with the
 intent to extend the benefits of Heat Orchestration to Rackspace customers.
 
-<!--more-->
+<!-- more -->
 
 Now, we are pleased to say that our efforts are nearing a point where users
 can use [Heat](https://wiki.openstack.org/wiki/Heat) Orchestration to:

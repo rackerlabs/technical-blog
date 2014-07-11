@@ -14,6 +14,8 @@ categories:
 
 Friday was the pre-conference day, with two miniconfs: one for Django, and the other for OpenStack. While I'd love to spend some time digging deeper into Django, I figured that given my background as an OpenStack developer, the **OpenStack miniconf** was for me.
 
+<!-- more -->
+
 There were probably 40 people or so in attendance, and it was a good mix of those who were completely new to OpenStack, those who have looked into it a bit and wanted to learn more, and those who either were core developers or (in my case) a former core dev. **Tim Serong** from **OpenSUSE** opened up the day with the talk "**WTF is OpenStack?**", which was an excellent introduction for those who had heard a lot about this "cloud" stuff. The presentation included the classic spoof by The Onion about "[that Cloud thing][1]" (with apologies to **Robert Collins** of **HP**, who really - does - totally know what that is). He covered all the projects within OpenStack, and how they work together.
 
 Robert Collins then followed with a talk on "**Deploying OpenStack using OpenStack**", which tackled the issue that although OpenStack allows you to automate the provisioning of cloud resources, installing OpenStack itself is a terribly manual process. His solution is "[TripleO][2]", which stands for "Openstack On Openstack". It sounds similar to the [iNova][3] project from Rackspace, but with several differences. From the ReadMe:

@@ -17,7 +17,7 @@ provides network resources to the OpenStack environment and can be
 difficult to get started with. To help get the gears turning, I will 
 be discussing some of the functionality Neutron Networking is capable of.
 
-<!--more-->
+<!-- more -->
 
 I would wager that most of us are familiar with virtualized networking through
 experience running VMware vSphere. Each node in the VMware vSphere Cluster

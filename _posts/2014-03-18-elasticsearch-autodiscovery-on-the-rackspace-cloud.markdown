@@ -17,7 +17,7 @@ categories:
 
 Unfortunately, multicast is often blocked by cloud vendors due to security concerns of a mutli-tenancy network (imagine exposing your software to the rest of the cloud via multicast). This is where [Rackspace Cloud Networks](http://www.rackspace.com/knowledge_center/article/getting-started-with-cloud-networks) can help out. One of the primary goals of Cloud Networks is to allow"personal" L2 networks in a mutli-tenancy environment. This means we get multicast!
 
-<!--more-->
+<!-- more -->
 
 ### Set up
 

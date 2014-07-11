@@ -18,7 +18,7 @@ Apache jclouds version 1.7.0 has been released into the wild. This is jclouds' f
 
 <br/>
 
-<!--more-->
+<!-- more -->
 
 ## OpenStack
 

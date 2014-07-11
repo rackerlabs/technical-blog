@@ -21,6 +21,8 @@ to work to build amazing things.
 *Today we're pleased to offer a new **$300 over six months** Developer
 Discount program in the US and UK.*
 
+<!-- more -->
+
 Sign up for a **new** Rackspace Cloud account in the US or UK at
 [developer.rackspace.com/devtrial][8], and your account is automatically
 credited $50 (£30 UK) for 6 months. You're responsible for anything above
