@@ -24,7 +24,7 @@ Everything was working great, but my build times were exceedingly
 slow due to the compile of Ruby and Node.js. It was taking me on
 average around 15 minutes to bootstrap a node.
 
-![Build Time Before]({% asset_path 2014-06-05-mattjbarlow/images/ruby_before_500.png %})
+{% img 2014-06-05-mattjbarlow/images/ruby_before_500.png Build Time Before %}
 
 This made my testing process painful. Also, if I ever hoped to use this
 cookbook in a scaling group, there was no way that I could wait 15
@@ -38,7 +38,7 @@ package management -- to package up a pre-compiled Ruby and
 NodeJS. The result cut my build times in half, which is
 great for a first pass.
 
-![Build Time After](/images/2014-06-05-mattjbarlow/images/ruby_after_500.png)
+{% img 2014-06-05-mattjbarlow/images/ruby_after_500.png Build Time After %}
 
 ## Overview of the Steps Required
 
@@ -208,7 +208,7 @@ Add the following to /opt/instance_data/debian/conf/distributions
 Where it says YOUR SUBKEY insert the keyid for your SUBKEY which
 looks like this:
 
-![Subkey](/images/2014-06-05-mattjbarlow/images/subkey_500.png)
+{% img 2014-06-05-mattjbarlow/images/subkey_500.png Subkey %}
 
 Then add the following to /opt/instance_data/debian/conf/options
 
@@ -236,7 +236,7 @@ downloaded to verify the authenticity of your repo.
 Where it says YOUR PUBKEY, you guessed it, insert the keyid of your
 PUBKEY which looks like this:
 
-![Pubkey]({% asset_path 2014-06-05-mattjbarlow/images/pubkey_500.png %})
+{% img 2014-06-05-mattjbarlow/images/pubkey_500.png Pubkey %}
 
 ## Sync Your Repo with Cloud Files
 
@@ -254,12 +254,12 @@ control panel. You can find this by logging into mycloud.rackspace.com
 and clicking Account Settings in the drop down menu next to your
 account number.
 
-![API Key](/images/2014-06-05-mattjbarlow/images/account_500.png)
+{% img 2014-06-05-mattjbarlow/images/account_500.png API Key %}
 
 Now that your repo is uploaded, you will need to log into
 mycloud.rackspace.com and enable CDN on the container.
 
-![CDN Enable](/images/2014-06-05-mattjbarlow/images/cdn_enable_500.png)
+{% img 2014-06-05-mattjbarlow/images/account_500.cdn_enable_500 CDN Enable %}
 
 ## Testing your Repo
 
