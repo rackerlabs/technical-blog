@@ -3,7 +3,7 @@ layout: post
 title: "Provisioning a Microsoft Private Cloud with PDT"
 date: 2014-07-09 10:55
 comments: true
-author: Andre Stephens
+author: Andre Stephens and Todd Klindt
 published: true
 categories:
  - PDT
