@@ -103,5 +103,5 @@ Step 7) After the VMCreator is complete, the `Installer.ps1` file is automatical
 
 For a high level explanation of this new product offering, check [this entry]( http://www.rackspace.com/blog/rackspace-now-supports-microsoft-private-cloud/) of Rackspace's blog.
 
-If you want to talk to our engineers about Microsoft Private Cloud, our exports will next week at [Microsoft Worldwide Partner Conference 2014](http://www.digitalwpc.com/Pages/Home.aspx#fbid=QIlCr1SbBhg) in Washington, DC in booth No. 1801. And if you’d like to receive more information about Microsoft Private Cloud, please signup [here](http://go.rackspace.com/MPC.html).
+If you want to talk to our engineers about Microsoft Private Cloud, our experts will be available next week at [Microsoft Worldwide Partner Conference 2014](http://www.digitalwpc.com/Pages/Home.aspx#fbid=QIlCr1SbBhg) in Washington, DC in booth No. 1801. And if you’d like to receive more information about Microsoft Private Cloud, please signup [here](http://go.rackspace.com/MPC.html).
 
