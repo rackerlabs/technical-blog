@@ -10,6 +10,7 @@
 //= require pages/sponsorship.js
 //= require pages/docs.js
 //= require pages/devtrial.js
+//= require pages/home.js
 
 (function (window, document, $) {
   var app = window.devsite;
@@ -63,7 +64,8 @@
     app.routes = {
       '/community/': app.pages.sponsorship,
       '/docs/': app.pages.docs,
-      '/devtrial/': app.pages.devtrial
+      '/devtrial/': app.pages.devtrial,
+      '/': app.pages.home
     };
 
     Object.keys(app.routes).forEach(function(route) {
