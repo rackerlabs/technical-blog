@@ -26,7 +26,7 @@ username/password/tenant.
 * Creating users for a tenant and adding roles to them
 * Testing authentication using curl
 
-<!--more-->
+<!-- more -->
 
 # Environment Variables
 

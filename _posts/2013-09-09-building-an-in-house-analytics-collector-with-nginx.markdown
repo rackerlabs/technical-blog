@@ -19,7 +19,7 @@ We needed something very...
  * powerful because the load is not constant as it ranges from 60 to over 800 requests / second and we're constantly beating our records;
  * reliable because our billing system is based on it and any information loss would mean more disappointed clients (and less money for us).
 
-Nginx to the rescue!<!--More-->
+Nginx to the rescue!<!-- more -->
 ======================
 
 Collector setup

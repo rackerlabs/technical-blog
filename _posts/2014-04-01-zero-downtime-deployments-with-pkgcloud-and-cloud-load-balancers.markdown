@@ -13,7 +13,7 @@ categories:
 
 I've been spending a lot of time working on more practical examples with [pkgcloud][0], and one of the ones that I think will appeal broadly is the ability to deploy your code as part of a zero-downtime deployment strategy.
 
-<!--more-->
+<!-- more -->
 
 ### What are Zero-Downtime deployments?
 

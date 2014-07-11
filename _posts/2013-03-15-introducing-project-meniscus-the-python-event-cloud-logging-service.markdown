@@ -24,7 +24,7 @@ by many companies. These projects continue to move forward and benefit
 from their initial startup as open- source projects; they also have been
 proven to scale to the demands of the Cloud.
 
-<!--More-->
+<!-- more -->
 
 We are busy laying out the underlying architecture of how Meniscus will
 work. The following diagram is an example of a high level overview. Be

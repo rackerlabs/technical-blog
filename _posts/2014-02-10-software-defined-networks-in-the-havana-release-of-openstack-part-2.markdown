@@ -17,7 +17,7 @@ In the [first article](http://developer.rackspace.com/blog/software-defined-netw
 
 Discussion will then continue with the first half of the iptables chains that are interjected between the VM and the Open vSwitch process (OVS) on the compute node. In order to keep these articles in bite sized chunks we will end this section after looking at the first two iptables chains, those starting with neutron – which manage the security group rules, the next article will continue through the iptables chains looking at those starting with nova and will conclude by reviewing how two different types of packets will progress through these chains.
 
-<!--more-->
+<!-- more -->
 
 In order to apply the Neutron security group rules that are be created for each VM, iptables are used on the compute node to filter traffic going to and from the VMs. This changed from the Grizzly release where security group rules were managed by the Neutron network processes rather than that of the Nova processes. This change implemented improved security filtering, providing both ingress and egress filters on each VM.  In order to allow iptables to filter traffic to and from the VMs, the network path out of the VMs has changed. Using Neutron security groups causes the nova-compute service to build the path from the VM to the OVS process as shown in the following diagram:
 

@@ -30,7 +30,7 @@ Not only that, but Kyle has been making these contributions as well:
 * Kyle [wrote a gist][5] on how to use cURL with the Rackspace Cloud
 * Kyle also created a repository for [Ruby SDK training][6]
 
-<!--More-->
+<!-- more -->
 
 ###pkgcloud (node.js)
 

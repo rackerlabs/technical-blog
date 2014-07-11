@@ -25,7 +25,7 @@ server resizing and more.
 For a full list of improvements and other changes in Vagrant 1.1, please see the
 [official announcement](http://www.hashicorp.com/blog/vagrant-1-1-and-vmware.html).
 
-<!--More-->
+<!-- more -->
 
 ## Vagrant and Rackspace
 

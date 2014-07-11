@@ -19,7 +19,7 @@ about five feet in diameter, attached a digital camera, and launched our mapping
 
 {% img center /camerarig.jpg %}
 
-<!--more-->
+<!-- more -->
 
 
 We tackled the data and maps question by explaining that we were

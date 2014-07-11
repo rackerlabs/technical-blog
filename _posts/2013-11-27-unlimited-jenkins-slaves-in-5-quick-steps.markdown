@@ -15,7 +15,7 @@ Have you ever noticed long build queuing times in Jenkins?  If you have long bui
 
 Fortunately Rackspace makes it easy to quickly get more resources when you need them, and decommission them when you don't.  This guide will show you how to quickly setup a new Jenkins instance and configure it to quickly provision unlimited slaves with the [Jenkins jclouds plugin](https://wiki.jenkins-ci.org/display/JENKINS/JClouds+Plugin).
 
-<!--more-->
+<!-- more -->
 
 ## Step 1 - Create a Jenkins Deployment
 

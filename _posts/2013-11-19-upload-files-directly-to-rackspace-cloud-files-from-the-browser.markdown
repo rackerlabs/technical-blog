@@ -20,7 +20,7 @@ We don't want the upload traffic anywhere near our servers.
 This is available on github:
 [https://github.com/216software/ajax-put-rackspace][1]
 
-<!--more-->
+<!-- more -->
 
 Run the example
 ---------------

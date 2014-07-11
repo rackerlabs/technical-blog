@@ -30,7 +30,7 @@ plugin and then spinning up, bootstrapping and installing IIS on a Windows
 Server 2012 Rackspace Cloud Server without logging on to it once.
 Read on, if you dare...
 
-<!--More-->
+<!-- more -->
 
 ##Acknowledgements
 

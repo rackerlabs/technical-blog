@@ -14,7 +14,7 @@ We've moved! The Rackspace DevOps Blog is now hosted on Rackspace [Cloud Files](
 * Cloud Databases
 
 Wayne and I loved this setup and were pleased with performance and security. WordPress on this infrastructure was secure for our purposes (it's a simple blog, not hosting medical data or taking credit cards) so we were happy. So why move?
-<!--more-->
+<!-- more -->
 
 ##We wanted something more scalable.
 *Huh, what? Those products all scale!* Well, yes. The issue was WordPress scalability. If you want to scale WordPress you need to think about things like file synchronization across servers for uploads (or NFS or clustering) and MySQL replication. Sure we were doing some things right - we had [Varnish](https://www.varnish-cache.org/), we had [Memcached](http://memcached.org/), we were using [lsyncd and rsync](http://code.google.com/p/lsyncd/). But again, this is a simple blog - why is this so complicated?

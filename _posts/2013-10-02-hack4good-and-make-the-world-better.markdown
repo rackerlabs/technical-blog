@@ -10,7 +10,7 @@ categories:
 ---
 Our love for developers knows no limits – we host and support hackathons, offer [free cloud services][1] and [offer them the support they need to build awesome things][2].
 
-This weekend, we’re at it again. Rackspace is a gold sponsor of [#Hack4Good][4], a global hackathon hosted by [Geeklist][4] that focuses solely on bringing together the best engineers, designers, project builders and entrepreneurs in the world to build projects that help humanity. The goal is simple: #Hack4Good wants to make the world a better place.<!--More-->
+This weekend, we’re at it again. Rackspace is a gold sponsor of [#Hack4Good][4], a global hackathon hosted by [Geeklist][4] that focuses solely on bringing together the best engineers, designers, project builders and entrepreneurs in the world to build projects that help humanity. The goal is simple: #Hack4Good wants to make the world a better place.<!-- more -->
 
 Previous #Hack4Good projects include solving some of society’s most serious problems and challenges like disaster communication, autism learning, hunger, earthquake emergency solutions and more. The grand prize winner of the June’s first #Hack4Good hackathon was Good Neighbor, a service that allows communities in small neighborhoods to post requests for needs, services, giveaways and notifications to raise community awareness and encourage neighbors to help each other. 
 

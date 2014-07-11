@@ -15,7 +15,7 @@ DevOps and automation are all the rage now a days and [Chef](http://opscode.com/
 
 I wrote last week about a couple of keynotes that I attended, which you can find [here](http://devops.rackspace.com/thoughts-from-chefconf-day-1.html).  This post will share some more of the presentations I was able to attend, but also talk about the overall key points that all the speakers referenced.
 
-<!--More-->
+<!-- more -->
 
 One of the overall themes at ChefConf this year was how far Chef has come from just 4 years ago and how many customer's are using Chef for their orchestration needs. A few of the the statistics they shared with us are:
 

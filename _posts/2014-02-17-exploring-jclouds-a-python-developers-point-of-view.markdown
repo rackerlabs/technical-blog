@@ -27,7 +27,7 @@ In the Java world there are a number of options to do this. This post explores
 some of those; and how to leverage groovy and jclouds to achieve the same speed
 of development.
 
-<!--more-->
+<!-- more -->
 
 Java developers rely on their Integrated Development Environments (IDEs) to
 provide features like object introspection, code completion, on the fly code

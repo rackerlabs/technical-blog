@@ -19,7 +19,9 @@ various shapes & sizes and are by no means made equal.
 In the [Rackspace Public Cloud](http://rackspace.com/cloud/servers), we utilize Citrix XenServer as our
 hypervisor, which requires that our disk images be in the
 [VHD](http://en.wikipedia.org/wiki/VHD_\(file_format\)) format.
+
 <!-- more -->
+
 However, it is very common for folks who utilize the popular
 [KVM](http://en.wikipedia.org/wiki/Kernel-based_Virtual_Machine) hypervisor to
 want to leverage an existing, custom [QCOW](http://en.wikipedia.org/wiki/Qcow)

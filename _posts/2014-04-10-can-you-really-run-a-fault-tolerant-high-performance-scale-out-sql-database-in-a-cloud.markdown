@@ -26,7 +26,7 @@ on which to deliver this level of enterprise value at the SLAs our customers
 had come to expect from us. And we were actively seeking a cloud with such
 capabilities.
 
-<!--more-->
+<!-- more -->
 
 ### Where Did ClustrixDB Grow Up?
 Prior to our OCT ’13 GA release of ClustrixDB Software Version, we had only

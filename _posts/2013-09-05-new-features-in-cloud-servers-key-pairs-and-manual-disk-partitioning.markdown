@@ -13,7 +13,7 @@ if your day to day involves any type of server administration. Saving
 yourself time on a repetitive task is almost always a good thing. To
 that end we would like to save you some time with a couple of new features
 available for building Cloud Servers, Server Key Pairs and the Disk
-Partition option. <!--More-->
+Partition option. <!-- more -->
 
 ##Server Key Pairs
 

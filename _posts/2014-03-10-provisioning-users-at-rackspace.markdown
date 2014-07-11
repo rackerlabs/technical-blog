@@ -23,7 +23,7 @@ go with that. Let’s make the assumption that each of the users that I want to
 give access to this machine have public/private key pairs already setup.
 [Here][setup_keys] are some basic notes for that procedure to get you started.
 
-<!--more-->
+<!-- more -->
 
 Create and log in to the new server
 ----

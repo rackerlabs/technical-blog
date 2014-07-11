@@ -26,7 +26,7 @@ friends. Also, there is no option to generate an index file within Cloud Files,
 so the only option left to me was to send everyone the 55 video URLs
 separately. Clearly, a different solution was needed. And so I built one myself.
 
-<!--more-->
+<!-- more -->
 
 The script below will retrieve a list of files within a container, convert that list into an HTML filelist and then upload that HTML-file into your Cloud Files container. You just have to make sure that you enable the `Static Website` option in the container settings in Cloud Files and you're set.
 

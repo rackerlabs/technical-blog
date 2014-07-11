@@ -15,7 +15,7 @@ Over the past year I’ve been using a home lab for quick, hands-on testing of [
 
 This first post is about the tech involved and how it is set up. In subsequent posts I’ll go into further detail and then detail the installation of Rackspace Private Cloud.
 
-<!--more-->
+<!-- more -->
 
 ### The Servers
 

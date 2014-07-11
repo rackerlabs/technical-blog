@@ -25,7 +25,7 @@ We've announced some [new features for Cloud Files][1] on the [Rackspace Blog][2
 * Multiple File Upload
 * Editing Headers
 
-Features in the control panel are great, but I'd rather get my hands dirty with the API. Let's take a look at the new API features one by one. <!--More-->
+Features in the control panel are great, but I'd rather get my hands dirty with the API. Let's take a look at the new API features one by one. <!-- more -->
 
 ##Container Quotas
 

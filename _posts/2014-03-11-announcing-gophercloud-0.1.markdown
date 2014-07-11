@@ -21,6 +21,8 @@ Gophercloud 0.1 is an incremental and bug-fix release that also adds support for
 * Security Groups
 * Security Group Default Rules
 
+<!-- more -->
+
 In addition, 0.1 supports OpenStack deployments that do not expose `Public` and `Private` IP pools.  Now, pools may possess any name configured by the OpenStack administrator.
 
 As an added bonus to software developers, Gophercloud's `osutil` sub-package provides a more convenient method of building an `AuthOptions` structure from a standard set of environment variables.  That's less code you have to write for every application.

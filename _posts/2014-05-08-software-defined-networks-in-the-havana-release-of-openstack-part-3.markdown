@@ -12,7 +12,7 @@ categories:
 
 In [part 1](http://developer.rackspace.com/blog/software-defined-networks-in-the-havana-release-of-openstack.html) of this series we looked at creation of software defined networks (SDN) in OpenStack and started considering at how OpenStack accomplishes this function. Continuing on to [part 2](http://developer.rackspace.com/blog/software-defined-networks-in-the-havana-release-of-openstack-part-2.html), we started looking at the network path of VM1 for the tenant test and how it filters traffic to secure traffic flow into and out of the virtual machine (VM). In this section we will continue examining the filtering process by looking at sample packets as they proceed through these filters and may then either enter the Open vSwitch (OVS) process or proceed on to the VM depending on the packet flow direction.
 
-<!--more-->
+<!-- more -->
 
 Since the last article was written the OpenStack Icehouse release is out. With this release there are changes in the iptables rules used to implement the security group rules. Most notably is the elimination of all chains that used the word nova in them. These rules were still around from the old nova security groups and are no longer needed when using the more powerful neutron security groups.
 
