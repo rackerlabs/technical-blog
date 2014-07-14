@@ -259,7 +259,7 @@ account number.
 Now that your repo is uploaded, you will need to log into
 mycloud.rackspace.com and enable CDN on the container.
 
-{% img 2014-06-05-mattjbarlow/images/account_500.cdn_enable_500 CDN Enable %}
+{% img 2014-06-05-mattjbarlow/images/cdn_enable_500.png CDN Enable %}
 
 ## Testing your Repo
 
