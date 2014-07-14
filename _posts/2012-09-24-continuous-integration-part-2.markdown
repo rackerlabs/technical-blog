@@ -13,6 +13,7 @@ categories:
 _This is part 2 of a series of using continuous integration with the Rackspace Cloud, specifically with Git and Jenkins. This is not the way Rackspace does continuous integration, but you can use this to get started. Stay tuned for future posts on using Jenkins for continuous integration._
 
 In my last post, I described the [principles of continuous integration and how to install Jenkins on a Rackspace Cloud Server](http://devops.rackspace.com/continuous-integration-part-1.html). In this post, we will walk through securing your Jenkins installation as well as setting up a git repository with Jenkins.
+
 <!-- more -->
 
 ### Securing Jenkins

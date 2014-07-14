@@ -12,7 +12,9 @@ categories:
 _Chad Lung is a software engineer on the Rackspace Cloud Integration team and is the maintainer of Atom Hopper. Be sure to check out his personal blog at [http://www.giantflyingsaucer.com/blog/](http://www.giantflyingsaucer.com/blog/) and follow [@chadlung](https://twitter.com/chadlung) on Twitter._
 
 I recently wrote an article introducing [Repose](http://www.rackspace.com/blog/introducing-repose-the-restful-proxy-service-engine/) which is a sponsored open-source project that is built to scale for the cloud. [Repose](http://openrepose.org) is used within Rackspace as a a key element of our internal [OpenStack](http://openstack.org).
+
 <!-- more -->
+
 Repose has many features such as **rate limiting**, **client authentication**, **translation,** **API validation**, **versioning**, **logging, **with [more on the way](http://wiki.openrepose.org/display/REPOSE/_The+REstful+PrOxy+Service+Engine%3A+Introduction). Today I want to show you how you can use Repose for your own projects and in particular I'm going to focus on [Rate Limiting](http://wiki.openrepose.org/display/REPOSE/Rate+Limiting+Filter). Since Repose doesn't care what programming language my particular web service is written in, I'm going to write a very simple [Node.js](http://nodejs.org) API server and then use Repose to enforce rate limiting on it. At the same time I will also be using Repose's [HTTP Logging](http://wiki.openrepose.org/display/REPOSE/HTTP+Logging+Filter) and [IP Identity](http://wiki.openrepose.org/display/REPOSE/IP+Identity) filters.
 
 **Note:** I will be assuming from here that you are working in a Linux or OS X environment.

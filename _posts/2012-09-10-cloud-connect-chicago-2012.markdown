@@ -9,6 +9,7 @@ categories:
 ---
 
 Rackspace will be present at [Cloud Connect](http://www.cloudconnectevent.com/chicago/) in Chicago this week! If you're a Rackspace customer we would love for you to stop by our booth and talk to us about how your company uses the [Open Cloud](http://rackspace.com/cloud). We also have several Rackers speaking during the conference:
+
 <!-- more -->
 
 ##### Tuesday September 11th

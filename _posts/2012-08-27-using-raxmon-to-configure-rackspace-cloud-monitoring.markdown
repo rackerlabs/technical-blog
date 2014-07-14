@@ -10,7 +10,9 @@ categories:
 ---
 
 With the [launch](http://www.rackspace.com/blog/monitor-any-cloud-or-web-infrastructure-with-new-rackspace-cloud-monitoring-now-in-unlimited-availability/) of Rackspace Cloud Monitoring (RCM) earlier this week, Rackspace has added an additional tool to your belt that shows you how your servers and applications are behaving. Cloud Monitoring makes it easy to configure monitors and alerts from the Control Panel, but today I want to focus on raxmon, one of the most flexible CLI tools available today for RCM.
+
 <!-- more -->
+
 Raxmon is a CLI tool written in python and uses the libcloud library to interface with the RCM API. We will use the [rackspace-monitoring-cli](http://pypi.python.org/pypi/rackspace-monitoring-cli/0.4.5) package which gives us the raxmon binary. The source code is currently hosted on [github](https://github.com/racker/rackspace-monitoring-cli), so if you find the tool valuable you can start contributing today!
 
 Here, I will walk you through the installation and setup of raxmon and the five simple steps to follow to create and deploy a monitor:

@@ -13,7 +13,9 @@ categories:
 ---
 
 My love for the Ruby community goes back 2006 when it saved me from my Java and government contracting induced burnout, making programming fun again. As Matz (Yukihiro Matsumoto) so often says, he wrote Ruby to make programmers happy.
+
 <!-- more -->
+
 Because Ruby has done so much for me, I try to find ways to give back. RailsConf 2014 provided another avenue by introducing the “Opportunity Scholar” program.  Over one hundred individuals applied but only twenty were accepted.  All of the selected scholars were relatively new to programing and especially new to the Ruby community.  For each accepted scholar, the program provided free attendance and one or two Guides to facilitate their RailsConf experience.
 
 My scholar, [Deana Del Vecchio](http://twitter.com/Deana444), and I first met at a conf-hosted Scholar-Guide mixer the evening before the conference.  To digress slightly, I was one of two Guides assigned to Deana.  My counterpart, [Amber Houle](http://twitter.com/amber_ht), was an inspired choice: Amber was an Opportunity Scholar herself at RubyConf 2013, putting her in a unique position to relate to Deana.

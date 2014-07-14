@@ -11,6 +11,7 @@ categories:
 _This story is contributed by [Chad Lung](http://www.linkedin.com/in/chadlung), a software engineer on the Rackspace Cloud Integration team. Chad is the lead maintainer of Atom Hopper project. Be sure to check out his personal blog at [http://www.giantflyingsaucer.com/blog/](http://www.giantflyingsaucer.com/blog/) and follow [@chadlung](https://twitter.com/chadlung) on Twitter._
 
 What if you had a tremendous mountain of data, broken up and stored across thousands of servers, and your client wanted some specific portion of that data? You could assemble the whole mountain and send the whole thing to your client, leaving the client to pick out what's needed. But there are reasons you split it up in the first place: it’s too big to store in one place or to transfer without interruption. Additionally there are reasons you manage the data, including security and privacy, so this mountain moving might not be a good idea.
+
 <!-- more -->
 
 {% img center 2012-09-12-rackspace-open-sources-atom-nuke-the-fast-atom-framework/atom-nuke-inmany-outmany.png %}

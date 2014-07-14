@@ -12,6 +12,7 @@ categories:
 In case you didn't hear, Rackspace recently [acquired Mailgun](http://techcrunch.com/2012/08/28/rackspace-acquires-y-combinator-startup-mailgun-an-api-that-abstracts-creating-email-inboxes-for-apps-and-web-sites/), a YCombinator startup that makes it really easy to integrate email into your application.  Mailgun does the simple things like sending password confirmations and shipping notifications, but it also makes it A LOT easier to build some really good stuff.
 
 Figuring out how to make email work with the cloud is one of the biggest questions that we get at Rackspace, so we're publishing some code samples that show you how to build some really cool things with Mailgun. Mailgun has a [free plan](http://mailgun.com/pricing) that will let you try all these things and send up to 200 emails per day for free. Then they've got plans starting at only $20 a month.  So, onto the cool stuff!
+
 <!-- more -->
 
 ### Parsing and posting email messages to your app using Mailgun Routes

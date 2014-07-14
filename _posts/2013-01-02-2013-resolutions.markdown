@@ -11,7 +11,11 @@ It's a new year, and that means that many people are making resolutions to bette
 
 {% tweet https://twitter.com/missmayn/status/285929750436933634 align='center' %}
 
-One resolution I have seen a lot is people wanting to learn to write code in 2013, which is great. The world is getting more and more technical and the ability to write code is a skill that is highly sought after. (Did I mention [we're hiring](http://rackertalent.com)?)<!-- more --> Speaking about the future of the job market, Marc Andreessen, the co-author of the Netscape browser and founder of VC firm Andreessen Horowitz, [recently said](http://usatoday30.usatoday.com/money/business/story/2012/09/13/jobs-fight-haves-vs-the-have-nots/57778406/1) "The spread of computers and the Internet will put jobs in two categories: people who tell computers what to do, and people who are told by computers what to do."
+One resolution I have seen a lot is people wanting to learn to write code in 2013, which is great. The world is getting more and more technical and the ability to write code is a skill that is highly sought after. (Did I mention [we're hiring](http://rackertalent.com)?)
+
+<!-- more -->
+
+Speaking about the future of the job market, Marc Andreessen, the co-author of the Netscape browser and founder of VC firm Andreessen Horowitz, [recently said](http://usatoday30.usatoday.com/money/business/story/2012/09/13/jobs-fight-haves-vs-the-have-nots/57778406/1) "The spread of computers and the Internet will put jobs in two categories: people who tell computers what to do, and people who are told by computers what to do."
 
 I believe that quote applies to the cloud as well. To paraphrase:
 

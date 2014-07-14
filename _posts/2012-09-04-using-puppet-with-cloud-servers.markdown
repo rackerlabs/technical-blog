@@ -11,6 +11,7 @@ categories:
 ---
 
 Many of our customers use configuration management packages to manage their cloud infrastructure. These packages include Opscode's [Chef](http://www.opscode.com/chef/), [CFEngine](http://cfengine.com/), Red Hat's [Spacewalk](http://spacewalk.redhat.com/), and Puppet Labs' [Puppet](http://puppetlabs.com/puppet/what-is-puppet/). Here, I'll dive into Puppet to show you how easy it is to manage Cloud Servers using a configuration management solution. We're going to create two servers: a puppetmaster and a client server running puppet.
+
 <!-- more -->
 
 #### Create a puppetmaster and client

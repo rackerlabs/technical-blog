@@ -8,7 +8,11 @@ categories:
 - OpenStack
 ---
 
-[Bitergia](http://bitergia.com) has an excellent [post](http://bitergia.wordpress.com/2012/09/22/preview-of-the-analysis-of-the-upcoming-openstack-release/) on statistics for Folsom, the upcoming release for OpenStack. <!-- more -->The OpenStack [Summit](http://www.openstack.org/summit/san-diego-2012/) is only a few weeks away, and development has been accelerating toward release. Here is a comparison of a graph for Folsom from Bitergia to an Essex graph from [ReadWriteWeb](http://www.readwriteweb.com/cloud/2012/04/who-wrote-openstack-essex-a-de.php):
+[Bitergia](http://bitergia.com) has an excellent [post](http://bitergia.wordpress.com/2012/09/22/preview-of-the-analysis-of-the-upcoming-openstack-release/) on statistics for Folsom, the upcoming release for OpenStack.
+
+<!-- more -->
+
+The OpenStack [Summit](http://www.openstack.org/summit/san-diego-2012/) is only a few weeks away, and development has been accelerating toward release. Here is a comparison of a graph for Folsom from Bitergia to an Essex graph from [ReadWriteWeb](http://www.readwriteweb.com/cloud/2012/04/who-wrote-openstack-essex-a-de.php):
 
 {% img center 2012-09-26-openstack-folsom-looking-at-the-numbers/essex.png %}
 {% img center 2012-09-26-openstack-folsom-looking-at-the-numbers/stat1.png %}
