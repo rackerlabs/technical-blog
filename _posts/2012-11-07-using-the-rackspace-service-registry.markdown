@@ -13,7 +13,9 @@ Rackspace recently [announced the Rackspace Service Registry](http://www.rackspa
 * Service discovery -  Find which services are currently online/active and find services based on different criteria. You can organize your services however best fits your application deployment.
 * A platform for automation – Service Registry exposes an events feed, which includes all of the events that have happened during the lifecycle of your account (e.g. a service comes online, a configuration value gets updated, etc.)
 * Configuration storage – This allows users to store arbitrary configuration values in our system and get notified via the events feed when a value gets updated or deleted.
+
 <!-- more -->
+
 More information on the product is available from the [API Guide](http://docs.rackspace.com/rsr/api/v1.0/sr-devguide/content/overview.html), [Integration Guide](http://docs.rackspace.com/rsr/api/v1.0/sr-devguide/content/integration-instructions.html), [Client libraries and tools](http://docs.rackspace.com/rsr/api/v1.0/sr-devguide/content/client-libraries-and-tools.html) and [Release Notes](http://docs.rackspace.com/rsr/api/v1.0/sr-devguide/content/release-notes.html). Here, I’d like to highlight the Node.js integration.
 
 ###Integrating the Rackspace Service Registry into your Node.js Application

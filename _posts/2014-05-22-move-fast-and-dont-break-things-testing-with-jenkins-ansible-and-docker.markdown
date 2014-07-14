@@ -12,6 +12,7 @@ categories:
   - Testing
 ---
 One of our highest priorities at [Mist.io](https://mist.io) is to never break production. Our users depend on it to manage and monitor their servers and we depend on them. At the same time, we need to move fast with development and deliver updates as soon as possible. We want to be able to easily deploy several times per day.
+
 <!-- more -->
 
 A big part of Mist.io is the web interface so we use tools like [Selenium](http://docs.seleniumhq.org/), [Splinter](http://splinter.cobrateam.info/)and [Behave](https://pypi.python.org/pypi/behave) for headless web interface testing. However testing the UI is time-consuming. Having to wait 40 minutes to get a green light before merging each pull request is not very agile.

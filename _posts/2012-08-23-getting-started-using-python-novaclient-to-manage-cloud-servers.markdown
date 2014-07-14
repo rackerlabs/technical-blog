@@ -10,6 +10,7 @@ categories:
 ---
 
 Using the [Rackspace Cloud Control Panel](http://www.rackspace.com/knowledge_center/article/introducing-the-next-generation-cloud-control-panel) to manage your servers is awesome, but sometimes you just need to get a simple thing done quickly via the command line. Enter the OpenStack [rackspace-novaclient](http://pypi.python.org/pypi/rackspace-novaclient/1.0), a CLI tool to manage your Cloud Servers.
+
 <!-- more -->
 
 #### Installing rackspace-novaclient

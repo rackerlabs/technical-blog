@@ -11,7 +11,9 @@ categories:
 _This is a guest post by Mike Sisk, a Racker working on DevOps for Rackspace's new cloud products. You can read his blog at [http://mikesisk.com](http://mikesisk.com) or follow _[@msisk](http://twitter.com/msisk)_ on Twitter._
 
 I'm going to show you how to setup a PTR record in Rackspace Cloud DNS for a Cloud Load Balancer using the command-line utility cURL.
+
 <!-- more -->
+
 I'm using a Rackspace Cloud production account below; when you try it with your account change the account number and authentication token to yours.
 
 A few notes about cURL: this is a command line utility found on Mac and most Linux machines. You can also use other tools called "REST Clients". One popular one is an extension for Firefox and Chrome located [here](http://restclient.net).
