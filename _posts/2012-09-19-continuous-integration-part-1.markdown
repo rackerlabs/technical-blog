@@ -13,7 +13,9 @@ _This is part 1 of a series of using continuous integration with the Rackspace C
 _
 
 Continuous integration when used in software development is the practice of frequently integrating one's new or changed code with the existing code repository. Historically, developers would check out a code base and make changes. When submitting those changes back to the repository, the developer would have to integrate their work with code other developers had already changed. The longer the developer's personal repository had been checked out, the more difficult the integration process became. With the fast pace of web development, developers need to be able to commit and integrate changes quickly and automatically. Continuous integration helps with that.
+
 <!-- more -->
+
 A major proponent of continuous integration is [Martin Fowler](http://en.wikipedia.org/wiki/Martin_Fowler), who came up with 10 key principles:
 
 	

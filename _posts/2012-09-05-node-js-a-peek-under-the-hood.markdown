@@ -10,7 +10,9 @@ categories:
 ---
 
 Greetings, friends! Today I want to touch on a "fairly" new programming language, Node.js. In this case, "fairly new" means it was created in 2009. [Ryan Dahl](https://twitter.com/ryah) created Node.js because he desired the ability to make web sites with push capabilities like those seen in popular web applications like Gmail. So what is Node.js, exactly? Node.js is a framework for building networked applications in JavaScript outside of the browser. It leverages [V8](http://code.google.com/p/v8/), the super fast JavaScript engine by Google. JavaScript is a great fit for writing servers due to its event-driven nature. You not only benefit from the speed of V8, but most of the time, the Node.js/JavaScript paradigms make you write code that is fast by design.
+
 <!-- more -->
+
 As with any programming language there are pros and cons, so node.js is not going to solve all of your problems in one deployment. However, used appropriately and in the right situations, it can be a very powerful tool that will help you dominate. Developers choose Node.js today because:
 
 

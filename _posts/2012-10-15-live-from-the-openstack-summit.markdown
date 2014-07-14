@@ -9,7 +9,9 @@ categories:
 ---
 
 We are live from the Fall 2012 [OpenStack Summit](http://www.openstack.org/summit/). Follow along as we liveblog the opening keynote!
+
 <!-- more -->
+
 Hart: Opening session is over. There are so many people here! Everyone is scurrying to the first sessions. Check back tomorrow for more coverage!
 
 

@@ -7,7 +7,9 @@ categories: General
 author: "Hart Hoover"
 ---
 Rackspace will be present at [Cloud Expo](http://cloudexpo2012west.sys-con.com/) in Santa Clara this week! If you’re a Rackspace customer we would love for you to stop by our booth and talk to us about how your company uses the [Open Cloud](http://rackspace.com/cloud). We also have several Rackers speaking during the conference:
+
 <!-- more -->
+
 **Cloud Application Black Magic – Wayne Walls**
 
 Traditional methods of writing applications do not completely change when you adopt cloud, but are you using cloud to its fullest potential? What are some best practices and tools that can help your move to the cloud as painless as possible? Are you maximizing the products you’re using to get the most out of every server to realize cost savings that cloud can bring? Join Rackspace Hosting Developer Advocate Wayne Walls to explore these questions and get practical answers that you can use today.

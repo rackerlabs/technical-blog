@@ -12,7 +12,9 @@ categories:
 ---
 
 In the knowledge center article titled "KNOWLEDGE CENTER ARTICLE: INSTALLING AND TESTING CINDER IN YOUR RACKSPACE PRIVATE CLOUD LAB ENVIRONMENT" I walk through the entire process of installing, configuring and testing the OpenStack Cinder service in your RPC lab environment.
+
 <!-- more -->
+
 This post only covers the testing of the cinder service as well as a few more informal tips and recommendations outside of just the procedural steps.
 
 This is specifically for sandbox and testing / development environments – configurations described here, such as: compute and cinder running on the controller, using a loopback device for cinder-volumes and so on are not supported and should not be used in production.
