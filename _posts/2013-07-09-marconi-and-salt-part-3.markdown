@@ -370,7 +370,7 @@ Let's dive into `replica.sls`
 root@salt01:/srv/salt/marconi/base/mongodb_server# emacs replica.sls
 {% endhighlight %}
 
-{% highlight text %}
+{% highlight php %}
 {% raw %}
   {% if 'mongodb_role' in grains and grains['mongodb_role'] == 'primary' %}
   {%   if 'mongodb_replica_set_configured' not in grains or grains['mongodb_replica_set_configured'] != true %}
