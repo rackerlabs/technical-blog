@@ -286,13 +286,15 @@ The `10gen.repo` file has the repository information.
 
 `MongoDB.conf` the has MongoDB configuration.
 
-    root@salt01:/srv/salt/marconi/base/mongodb/files# cat mongod.conf
-    logpath=/var/log/mongo/mongod.log
-    logappend=true
-    fork = true
-    dbpath=/var/lib/mongo
-    pidfilepath = /var/run/mongodb/mongod.pid
-    replSet = {{ grains['mongodb_replica_set'] }}
+{% highlight php %}
+root@salt01:/srv/salt/marconi/base/mongodb/files# cat mongod.conf
+logpath=/var/log/mongo/mongod.log
+logappend=true
+fork = true
+dbpath=/var/lib/mongo
+pidfilepath = /var/run/mongodb/mongod.pid
+replSet = {{ grains['mongodb_replica_set'] }}
+{% endhighlight %}
 
 ### Run MongoDB Formulas
 
@@ -435,7 +437,8 @@ Second, the problem with `replica.sls` is that Salt isn't guaranteed to run thos
 
 Below is a better version of `replica.sls`.
 
-\\\\\\\\{% raw %}
+{% highlight php %}
+{% raw %}
   {% if 'mongodb_role' in grains and grains['mongodb_role'] == 'primary' %}
   {%   if 'mongodb_replica_set_configured' not in grains or grains['mongodb_replica_set_configured'] != true %}
 
@@ -465,6 +468,7 @@ Below is a better version of `replica.sls`.
   {%   endif %}
   {% endif %}
 {% endraw %}
+{% endhighlight %}
 
 This is still not perfect as it takes a while for MongoDB to initiate the primary, so we will have to wait until primary is initiated before adding secondaries.
 
@@ -508,6 +512,7 @@ The above script connects to the local MongoDB instance, loops 30 times, checks 
 
 Finally `replica.sls` will look like this:
 
+{% highlight php %}
 {% raw %}
   {% if 'mongodb_role' in grains and grains['mongodb_role'] == 'primary' %}
   {%   if 'mongodb_replica_set_configured' not in grains or grains['mongodb_replica_set_configured'] != true %}
@@ -562,7 +567,7 @@ Finally `replica.sls` will look like this:
   {%   endif %}
   {% endif%}
 {% endraw %}
-
+{% endhighlight %}
 
 At this point we can create a MongoDB replica set in three steps.
 
