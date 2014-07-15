@@ -1,7 +1,7 @@
 .dev-signup-page {
 
   .callout {
-    background: @hugegreen;
+    background: @hugeblue;
     color: white;
     padding: 10px 40px 30px;
   }
@@ -16,4 +16,33 @@
     .headline {
         padding: 80px 70px 80px;
     }
+}
+
+
+.signupbutton {
+    background:  @hugegreen;
+    padding: 15px 20px;
+    display: inline-block;
+    color: white;
+    margin-top: 20px;
+    margin-right: 20px;
+
+    &:hover {
+        background: @hugegreen-dark;
+        text-decoration: none;
+        color: white;
+    }
+
+    .firstline {
+        font-size: 2em;
+        display: block;
+        font-weight: 100;
+        letter-spacing: -1px;
+    }
+
+    .secondline {
+        font-style: italic;
+        display: block;
+    }
+
 }
