@@ -19,7 +19,8 @@ module Jekyll
 
   class ZoomableImageTag < Jekyll::ImageTag
     def render(context)
-      "<a href=\"#{@img['src']}\">#{super}</a>"
+      inner = super
+      "<a href=\"#{@img['src']}\">#{inner}</a>"
     end
   end
 end

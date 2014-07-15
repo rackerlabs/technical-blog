@@ -286,13 +286,15 @@ The `10gen.repo` file has the repository information.
 
 `MongoDB.conf` the has MongoDB configuration.
 
-    root@salt01:/srv/salt/marconi/base/mongodb/files# cat mongod.conf
-    logpath=/var/log/mongo/mongod.log
-    logappend=true
-    fork = true
-    dbpath=/var/lib/mongo
-    pidfilepath = /var/run/mongodb/mongod.pid
-    replSet = {{ grains['mongodb_replica_set'] }}
+{% highlight php %}
+root@salt01:/srv/salt/marconi/base/mongodb/files# cat mongod.conf
+logpath=/var/log/mongo/mongod.log
+logappend=true
+fork = true
+dbpath=/var/lib/mongo
+pidfilepath = /var/run/mongodb/mongod.pid
+replSet = {{ grains['mongodb_replica_set'] }}
+{% endhighlight %}
 
 ### Run MongoDB Formulas
 
@@ -366,9 +368,12 @@ In the include statement we provided `mongodb` so `mongodb_server` SLS will just
 
 Let's dive into `replica.sls`
 
-    root@salt01:/srv/salt/marconi/base/mongodb_server# emacs replica.sls
+{% highlight text %}
+root@salt01:/srv/salt/marconi/base/mongodb_server# emacs replica.sls
+{% endhighlight %}
 
-\\\\\\\\{% raw %}
+{% highlight php %}
+{% raw %}
   {% if 'mongodb_role' in grains and grains['mongodb_role'] == 'primary' %}
   {%   if 'mongodb_replica_set_configured' not in grains or grains['mongodb_replica_set_configured'] != true %}
 
@@ -376,8 +381,8 @@ Let's dive into `replica.sls`
     cmd:
       - run
 
-  \\\\\\\\{% set my_replica_set = grains['mongodb_replica_set'] %}
-  \\\\\\\\{% set my_id = grains['id'] %}
+  {% set my_replica_set = grains['mongodb_replica_set'] %}
+  {% set my_id = grains['id'] %}
   {% for host, value in salt['mine.get']('environment_id:' + grains['environment_id'], 'grains.items', expr_form='grain').items() %}
   {%     if value.id != my_id and 'mongodb_server' in value.roles and my_replica_set == value.mongodb_replica_set %}
 
@@ -396,6 +401,7 @@ Let's dive into `replica.sls`
   {%   endif %}
   {% endif %}
 {% endraw %}
+{% endhighlight %}
 
 We want to run an SLS formula that will configure a replica set only on one (the primary) MongoDB instance. So we start with two "if" statements (it could be just one "if" statement) to ensure this is a MongoDB server with a primary role and it is the first time we are trying to configure replica set.
 
@@ -431,7 +437,8 @@ Second, the problem with `replica.sls` is that Salt isn't guaranteed to run thos
 
 Below is a better version of `replica.sls`.
 
-\\\\\\\\{% raw %}
+{% highlight php %}
+{% raw %}
   {% if 'mongodb_role' in grains and grains['mongodb_role'] == 'primary' %}
   {%   if 'mongodb_replica_set_configured' not in grains or grains['mongodb_replica_set_configured'] != true %}
 
@@ -461,6 +468,7 @@ Below is a better version of `replica.sls`.
   {%   endif %}
   {% endif %}
 {% endraw %}
+{% endhighlight %}
 
 This is still not perfect as it takes a while for MongoDB to initiate the primary, so we will have to wait until primary is initiated before adding secondaries.
 
@@ -504,6 +512,7 @@ The above script connects to the local MongoDB instance, loops 30 times, checks 
 
 Finally `replica.sls` will look like this:
 
+{% highlight php %}
 {% raw %}
   {% if 'mongodb_role' in grains and grains['mongodb_role'] == 'primary' %}
   {%   if 'mongodb_replica_set_configured' not in grains or grains['mongodb_replica_set_configured'] != true %}
@@ -558,7 +567,7 @@ Finally `replica.sls` will look like this:
   {%   endif %}
   {% endif%}
 {% endraw %}
-
+{% endhighlight %}
 
 At this point we can create a MongoDB replica set in three steps.
 
