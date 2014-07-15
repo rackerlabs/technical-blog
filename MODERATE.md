@@ -20,4 +20,7 @@ Moderating the DevBlog
 
 ###DevBlog Categories
 
-While up to this point categories have been all over the place in terms of consistency, we can change that going forward. 
+While up to this point categories have been all over the place in terms of consistency, we can change that going forward. So, to this end we're enforcing the following guidelines:
+
+1. If it's a proper noun or trademark make lower case i.e. OpenStack -> openstack
+2. If it contains more than one word, make it slug-lower-case i.e. Cloud Files -> cloud-files
