@@ -38,7 +38,7 @@ For Rackspace, the user name you need is the same one you use to login to [your 
 
 From the Account Settings page, your API key will be obscured, so click *Show* to expose it. You'll want to be careful when using your user name and API key. For one, don't enter them directly into code you're checking into source control, especially if that repository is public.
 
-![Settings]({$ asset_path 2014-02-03-libcloud-0-dot-14-released/settings.png %})
+![Settings]({% asset_path 2014-02-03-libcloud-0-dot-14-released/settings.png %})
 
 # Installing Libcloud
 
