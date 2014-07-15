@@ -366,9 +366,12 @@ In the include statement we provided `mongodb` so `mongodb_server` SLS will just
 
 Let's dive into `replica.sls`
 
-    root@salt01:/srv/salt/marconi/base/mongodb_server# emacs replica.sls
+{% highlight text %}
+root@salt01:/srv/salt/marconi/base/mongodb_server# emacs replica.sls
+{% endhighlight %}
 
-\\\\\\\\{% raw %}
+{% highlight text %}
+{% raw %}
   {% if 'mongodb_role' in grains and grains['mongodb_role'] == 'primary' %}
   {%   if 'mongodb_replica_set_configured' not in grains or grains['mongodb_replica_set_configured'] != true %}
 
@@ -376,8 +379,8 @@ Let's dive into `replica.sls`
     cmd:
       - run
 
-  \\\\\\\\{% set my_replica_set = grains['mongodb_replica_set'] %}
-  \\\\\\\\{% set my_id = grains['id'] %}
+  {% set my_replica_set = grains['mongodb_replica_set'] %}
+  {% set my_id = grains['id'] %}
   {% for host, value in salt['mine.get']('environment_id:' + grains['environment_id'], 'grains.items', expr_form='grain').items() %}
   {%     if value.id != my_id and 'mongodb_server' in value.roles and my_replica_set == value.mongodb_replica_set %}
 
@@ -396,6 +399,7 @@ Let's dive into `replica.sls`
   {%   endif %}
   {% endif %}
 {% endraw %}
+{% endhighlight %}
 
 We want to run an SLS formula that will configure a replica set only on one (the primary) MongoDB instance. So we start with two "if" statements (it could be just one "if" statement) to ensure this is a MongoDB server with a primary role and it is the first time we are trying to configure replica set.
 
