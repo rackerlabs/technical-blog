@@ -1,4 +1,4 @@
-Contributing to our DevBlog
+Contributing to our Blog
 =============================
 
 First, thanks for your interest in contributing and helping us craft quality content for our official Developer Blog. Second, in order to make contributing a pleasant experience while maintaining a visual and content standards there are a few steps you need to take before writing and submitting a blog entry for publishing.
