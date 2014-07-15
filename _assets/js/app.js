@@ -43,11 +43,6 @@
 
   $(document).on('ready', function() {
 
-    // Core page functionality - do not remove
-
-    window.hljs.initHighlightingOnLoad();
-    
-
     app.routes = {
       '/community/': app.pages.sponsorship,
       '/docs/': app.pages.docs,
