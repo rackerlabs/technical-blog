@@ -7,7 +7,7 @@
     $btn.on('click', function() {
       $btn.addClass('disabled');
       $.post('/api/developer-plus/coming-soon', {
-        email: $('input[name="email"]').val().trim()
+        email: $('input[name="email"]').val()
       }, function(data, status, xhr) {
         $btn.addClass('btn-success')
           .removeClass('btn-primary')
