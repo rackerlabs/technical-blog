@@ -10,6 +10,7 @@
 //= require pages/sponsorship.js
 //= require pages/docs.js
 //= require pages/devtrial.js
+//= require pages/signup.js
 //= require pages/home.js
 
 (function (window, document, $) {
@@ -47,6 +48,7 @@
       '/community/': app.pages.sponsorship,
       '/docs/': app.pages.docs,
       '/devtrial/': app.pages.devtrial,
+      '/signup/': app.pages.signup,
       '/': app.pages.home
     };
 
