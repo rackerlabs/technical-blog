@@ -48,7 +48,7 @@ $client = new Rackspace(Rackspace::US_IDENTITY_ENDPOINT, array(
     <p>After this initial setup, you can then interact with an API service. In this example, we'll create a new Cloud Files container and upload some files:</p>
 
 {% highlight php startinline %}
-$cloudFilesService = $client->objectStoreService(null, '{region}');
+$objectStoreService = $client->objectStoreService(null, '{region}');
 
 $container = $objectStoreService->createContainer('logos');
 
