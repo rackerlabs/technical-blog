@@ -30,7 +30,7 @@ please make sure the dates of the file name and front matter match.
 
 4) The blog entry must be in formatted using [markdown](http://daringfireball.net/projects/markdown/basics). If you are not confortable writing you blog entry in markdown, please send a message to @rdodev for other options.
   
-#### Submitting your DevBlog entries
+#### Submitting your Blog entries
 
 Once ready to submit your entry to be published, proceed as follows:
 
