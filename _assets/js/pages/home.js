@@ -19,7 +19,7 @@
         case '#python':
           window.location = '/sdks/python';
           break;
-        case '#nodejs':
+        case '#ruby':
           window.location = '/sdks/ruby';
           break;
       }
