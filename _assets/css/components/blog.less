@@ -49,6 +49,25 @@
     width: auto;
     display: block;
   }
+
+  .embed-video-container {
+    iframe {
+      border: none;
+      width: 100%;
+
+      @media (max-width: @screen-md-max) {
+        height: 389px;
+      }
+
+      @media (max-width: @screen-sm-max) {
+        height: 197px;
+      }
+
+      @media (min-width: @screen-md-max) {
+        height: 474px;
+      }
+    }
+  }
 }
 
 .blog-tease {
