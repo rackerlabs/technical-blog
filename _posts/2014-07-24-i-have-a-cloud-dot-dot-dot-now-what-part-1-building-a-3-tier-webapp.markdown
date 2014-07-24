@@ -4,12 +4,12 @@ title: "I Have A Cloud...Now What? - Part 1: Building a 3-tier Webapp"
 date: 2014-07-24 12:26
 comments: true
 author: Mike Metral
-published: false
+published: true
 categories:
-- Public Cloud
-- Cloud Servers
+- public-cloud
+- cloud-servers
 - OpenStack
-- Architecture
+- architechture
 ---
 
 When we meet with customers, a constant set of questions we get asked goes something
@@ -21,6 +21,7 @@ All of these questions are great and merit a worthy answer. However, the truth
 is that talking about it can only get you so far - insert [Project Touchstone](https://github.com/metral/touchstone):
 a collection of mini projects meant to extensively showcase how one should architect,
 consume, organize and orchestrate real-world web stacks on the infrastructures provided by the Rackspace Public & Private cloud.
+
 <!-- more -->
 
 ## Architecture
