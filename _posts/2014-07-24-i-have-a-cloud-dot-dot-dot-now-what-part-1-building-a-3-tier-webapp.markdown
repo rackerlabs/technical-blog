@@ -164,3 +164,9 @@ you would carry out a similar stack. Therefore, when you deploy the Encoder
 project you'll be presented with an app that functions as such:
 
 {% img i-have-a-cloud-dot-dot-dot-now-what-part-1-building-a-3-tier-webapp/encoder.gif%}
+
+## About the Author
+Mike Metral is a Solution Architect at Rackspace in the Private Cloud R&D
+organization. Mike joined Rackspace in 2012 to help establish OpenStack become the open standard for cloud management.
+You can follow Mike on Twitter [@mikemetral](http://twitter.com/mikemetral) and Github as
+[metral](http://github.com/metral)
