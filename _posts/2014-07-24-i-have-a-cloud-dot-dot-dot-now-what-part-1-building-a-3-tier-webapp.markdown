@@ -166,14 +166,7 @@ project you'll be presented with an app that functions as such:
 {% img i-have-a-cloud-dot-dot-dot-now-what-part-1-building-a-3-tier-webapp/encoder.gif%}
 
 ## About the Author
-Mike Metral is a Solution Architect at Rackspace in the Private Cloud Product
-organization. Mike joined Rackspace in 2012 with the intent of helping
-OpenStack become the open standard for cloud management. At Rackspace, Mike has
-led the integration effort with strategic partner RightScale; aided in the
-assessment, development, and evolution of Rackspace Private Cloud; as well as
-served as the Chief Architect of the Service Provider Program. Prior to joining
-Rackspace, Mike held senior technical roles at Sandia National Laboratories
-performing research and development in Cyber Security with regards to
-distributed systems, cloud and mobile computing. You can follow Mike on Twitter
-[@mikemetral](http://twitter.com/mikemetral) and Github as
+Mike Metral is a Solution Architect at Rackspace in the Private Cloud R&D
+organization. Mike joined Rackspace in 2012 to help establish OpenStack become the open standard for cloud management.
+You can follow Mike on Twitter [@mikemetral](http://twitter.com/mikemetral) and Github as
 [metral](http://github.com/metral)
