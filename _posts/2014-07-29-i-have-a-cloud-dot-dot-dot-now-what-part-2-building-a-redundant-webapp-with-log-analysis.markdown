@@ -4,10 +4,10 @@ title: "I Have A Cloud...Now What? - Part 2: Building a Redundant Webapp with Lo
 date: 2014-07-29 11:40
 comments: true
 author: Mike Metral
-published: false
+published: true
 categories:
-- Public Cloud
-- Cloud Servers
+- public-cloud
+- cloud-servers
 - OpenStack
 - architecture
 ---
