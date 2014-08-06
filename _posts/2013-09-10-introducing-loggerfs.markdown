@@ -10,7 +10,11 @@ categories:
 - Ops
 - Logging
 ---
-Applications generate logs for the purposes of debugging, maintenance, analytics and sometimes legal compliance. Logs are important but are too often overlooked until they cause problems (e.g. filling hard disks and crashing production systems). Veteran devops engineers are more proactive about logging and use systems such as [Logstash](http://logstash.net/), [Loggly](http://loggly.com/) or [Splunk](http://www.splunk.com/) to move logs away from application servers and provide analytics and indexed search. While the merits of various log management tools can be debated, the simple fact is you should be using something (and not grepping through 100mb+ files).<!-- more -->
+> WARNING: LoggerFS PROJECT HAS BEEN ABANDONED BY ITS MAINTAINER. SOURCE CODE CAN STILL BE FOUND [HERE](http://sourceforge.net/projects/loggerfs/).
+
+Applications generate logs for the purposes of debugging, maintenance, analytics and sometimes legal compliance. Logs are important but are too often overlooked until they cause problems (e.g. filling hard disks and crashing production systems). Veteran devops engineers are more proactive about logging and use systems such as [Logstash](http://logstash.net/), [Loggly](http://loggly.com/) or [Splunk](http://www.splunk.com/) to move logs away from application servers and provide analytics and indexed search. While the merits of various log management tools can be debated, the simple fact is you should be using something (and not grepping through 100mb+ files).
+
+<!-- more -->
 
 Typically log management systems consist of two components: shippers and aggregators. Shippers (AKA tailers, readers, or [beavers](http://josegonzalez.github.io/beaver/)) run on application servers to collect and transmit logs. Aggregators run on a central server, cluster of servers, or in a remote cloud for long-term storage and indexing. While aggregators handle most of the heavy-lifting for log management systems, shippers must support logging from arbitrary services, survive network failures, and live within a small footprint that doesn't take system resources away from applications.
 
