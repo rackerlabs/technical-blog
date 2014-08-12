@@ -4,6 +4,18 @@ layout: blog-page
 
 <h1 class="title">{{ page.title }}</h1>
 <div class="byline">By {{ page.author }} - Posted on {{ page.date | date: "%b %-d %Y" }}</div>
+
+<div class="socialthings">
+  <span class="title">Share this on:</span>
+  <div class="icons">
+    <span class='st_facebook_large' displayText='Facebook'></span>
+    <span class='st_twitter_large' displayText='Tweet' st_via='rackspace' st_username='rackspace'></span>
+    <span class='st_linkedin_large' displayText='LinkedIn'></span>
+    <span class='st_googleplus_large' displayText='Google +'></span>
+    <span class='st_email_large' displayText='Email'></span>
+  </div>
+</div>
+
 <p>{{ content }}</p>
   <section>
     <h1>Comments</h1>
