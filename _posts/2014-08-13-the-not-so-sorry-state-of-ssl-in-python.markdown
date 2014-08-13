@@ -1,12 +1,16 @@
 ---
 layout: post
 title: The not-so-sorry state of SSL in Python
-date: ...
+date: 2014-08-13
 comments: true
 author: Alex Gaynor and David Reid
-published: false
+published: true
+categories:
+ - ssl-tls
+ - python
+ - security
 ---
-
+### Introduction
 TLS and SSL are two critical technologies which underly much of the secure
 communications that occur on the internet. Over the past few years, spurred by
 increasingly effective attacks and a desire for new functionality, SSL and TLS
@@ -25,6 +29,7 @@ workaround. To get a sense of how bad this situation is, you can watch [Hynek
 Schlawack's talk on "The Sorry State of SSL" from
 PyCon](https://hynek.me/talks/tls/).
 
+### Current State and Requirements
 This situation is unacceptable, given that Python 2 is going to continue to see
 production usage for many years to come. As a result, we advocated strongly for
 [PEP 466](http://legacy.python.org/dev/peps/pep-0466/), which provides
@@ -64,6 +69,7 @@ A few of the important features missing from Python 2 are:
    the [CRIME](https://en.wikipedia.org/wiki/CRIME)) attack, or configure which
    versions of the SSL/TLS protocol should be used.
 
+### Work, Solutions and Issues
 To address this, we backported each of these features from the Python 3 branch
 to the Python 2 branch. This was a large task, because it is a huge amount of
 code (the resulting diff is over 12,000 lines), written for two different
@@ -93,6 +99,7 @@ A few of the issues we ran across were:
    while all of the Python-code differences were easy to work around, the C API
    differences required considerably more work.
 
+### Rackspace
 This work is important to Rackspace for several reasons:
 
 1. Rackspace uses a lot of Python. Between OpenStack, other open source Python
@@ -105,6 +112,7 @@ This work is important to Rackspace for several reasons:
    adoption of these technologies in Python, whether for use with Rackspace or
    not, is critical.
 
+### Closing Thoughts
 The patch with our work is currently in code review, and we're hoping it will
 be merged soon, for release in Python 2.7.9. One of our goals in working on
 this patch was to reduce the maintenance burden going forward, by minimizing
