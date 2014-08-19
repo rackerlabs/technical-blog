@@ -3,7 +3,7 @@ layout: blog-page
 ---
 
 <h1 class="title">{{ page.title }}</h1>
-<div class="byline">By {{ page.author }} - Posted on {{ page.date | date: "%b %-d %Y" }}</div> 
+<div class="byline">By {{ page.author }} - Posted on {{ page.date | date: "%b %-d %Y" }}</div>
 
 {% capture category %}{% if post %}{{ post.categories | category_links | size }}{% else %}{{ page.categories | category_links | size }}{% endif %}{% endcapture %}
 {% unless category == '0' %}
@@ -15,14 +15,6 @@ layout: blog-page
   {% endif %}
 </div>
 {% endunless %}
-
-<div class="socialthings">
-  <span class="title">Share this on:</span>
-  <div class="icons">
-    <span class='st_twitter_large' displayText='Tweet' st_via='rackspace' st_username='rackspace'></span>
-    <span class='st_googleplus_large' displayText='Google +'></span>
-  </div>
-</div>
 
 <p>{{ content }}</p>
   <section>
@@ -54,4 +46,3 @@ layout: blog-page
   <script type="text/javascript" src="//ws.sharethis.com/button/buttons.js"></script>
   <script type="text/javascript">stLight.options({publisher: "0658f4d1-56ad-45bf-b326-ab993c9b9fc4", shorten: false, doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
 {% endif %}
-
