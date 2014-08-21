@@ -6,10 +6,11 @@ comments: true
 author: Anne Gentle
 published: true
 categories:
-    - public-cloud
+    - women-in-tech
+    - austin-ladies
     - mobile
-    - application
     - developer
+    - hackathon
 ---
 
 Austin Ladies Hackathon
