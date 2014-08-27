@@ -9,6 +9,8 @@ categories:
     - jclouds
     - development
     - sdk
+bio: |
+ Zack Shoylev is a committer on the Apache jclouds project and a Software Developer for Rackspace. He is currently working on   open source cloud SDK development. Zack’s technical interests focus on open source development, cloud computing, and big data  processing with Java. Zack's twitter handle: @zackshoylev and Freenode nick: zacksh
 ---
 # Better Builders with jclouds
 
