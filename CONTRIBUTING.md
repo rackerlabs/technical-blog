@@ -34,7 +34,7 @@ please make sure the dates of the file name and front matter match.
 
 Once ready to submit your entry to be published, proceed as follows:
 
-1) Submit a PR (pull request) against `devblog` branch.
+1) Submit a PR (pull request) against `master` branch.
 
 2) Your PR message **must** include (even if you've submitted blog entries before):
     
