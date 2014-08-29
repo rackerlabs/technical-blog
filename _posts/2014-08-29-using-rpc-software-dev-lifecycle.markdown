@@ -4,11 +4,13 @@ title: "Using Rackspace Private Cloud to Support Your Software Development Lifec
 date: 2014-08-29 16:00
 comments: true
 author: James Thorne
-published: false
+published: true
 categories:
     - RPC
     - openstack
     - private-cloud
+bio: |
+ James Thorne is a Sales Engineer at Rackspace focused on working with OpenStack. He is a Texas State University alumnus and former Platform Consultant at Red Hat. James has been working with Linux professionally for the past four years and in his free time even longer. James blogs at thornelabs.net and can be followed on Twitter @jameswthorne.
 ---
 
 Last week, I presented a live webinar on [using Rackspace Private Cloud to support your software development lifecycle](http://youtu.be/s9GNgYUpXyU).
