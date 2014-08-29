@@ -17,6 +17,20 @@ layout: blog-page
 {% endunless %}
 
 <p>{{ content }}</p>
+
+<!-- Authors bio -->
+{% if page.bio %}
+<section>
+<div class="panel panel-default">
+  <div class="panel-heading">About the author(s)</div>
+  <div class="panel-body">
+    {{ page.bio }}
+  </div>
+</div>
+</section>
+{% endif %}
+
+<!-- disqus comments -->  
   <section>
     <h1>Comments</h1>
     <div id="disqus_thread" aria-live="polite">{% include disqus.html %}</div>

@@ -10,6 +10,11 @@ categories:
 - cloud-servers
 - OpenStack
 - architecture
+bio: |
+  Mike Metral is a Solution Architect at Rackspace in the Private Cloud R&D
+  organization. Mike joined Rackspace in 2012 to help establish OpenStack as
+  the open standard for cloud management.
+  You can follow Mike on Twitter @mikemetral and Github as metral
 ---
 
 [Project Touchstone](https://github.com/metral/touchstone) is intended to serve as a reference of actual usecases & examples for cloud applications in the Rackspace ecosystem.
@@ -197,10 +202,3 @@ gunicorn-access, gunicorn-errors and nginx logs:
 Hopefully this post has given you the ability to gain insight into how easy it is to scale your
 application out as well as enable redundancy. All while simultaneously processing
 all of your important data in an easy, custom & comprehensible manner.
-
-## About the Author
-Mike Metral is a Solution Architect at Rackspace in the Private Cloud R&D
-organization. Mike joined Rackspace in 2012 to help establish OpenStack as
-the open standard for cloud management.
-You can follow Mike on Twitter [@mikemetral](http://twitter.com/mikemetral)
-and Github as [metral](http://github.com/metral)
