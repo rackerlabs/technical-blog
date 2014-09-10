@@ -13,6 +13,8 @@ categories:
 - Docker
 - containers
 - CoreOS
+bio:
+ Mike is a Solution Architect in the Private Cloud R&D Engineering at Rackspace. You can find in in Twitter as @mikemetral
 ---
 
 Docker, CoreOS and Kuberentes are new, emerging technologies that are
