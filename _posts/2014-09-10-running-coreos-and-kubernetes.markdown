@@ -14,8 +14,9 @@ categories:
 - containers
 - CoreOS
 bio:
- Mike is a Solution Architect in the Private Cloud R&D Engineering at Rackspace. You can find in in Twitter as @mikemetral
----
+ Mike Metral is a Solution Architect at Rackspace in the Private Cloud R&D
+ organization. Mike joined Rackspace in 2012 to help establish OpenStack become the open standard for cloud management.
+ You can follow Mike on Twitter @mikemetral and Github as metral.
 
 Docker, CoreOS and Kuberentes are new, emerging technologies that are
 shifting the way cloud infrastructure & applications are designed,
@@ -315,8 +316,3 @@ A great first set of steps is to:
 * For the commands listed, instead of using `$ cluster/kubecfg.sh`, use `$ /opt/bin/kubecfg`
 * After you complete the deployment of the guestbook, it could take a couple of minutes before the frontend nodes are accessible, so be patient.
 
-## About the Author
-Mike Metral is a Solution Architect at Rackspace in the Private Cloud R&D
-organization. Mike joined Rackspace in 2012 to help establish OpenStack become the open standard for cloud management.
-You can follow Mike on Twitter [@mikemetral](http://twitter.com/mikemetral) and Github as
-[metral](http://github.com/metral)
