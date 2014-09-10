@@ -52,8 +52,6 @@ thankful for contributions from the likes of Matt Martz (who wrote a large
 part of the above guide), Paul Durivage, Jesse Keating (responsible for a
 lot of tuning and testing help!), Christopher Laco, and others.
 
-Ansible is also part of Rackspace's [DevOps Automation Service](http://www.rackspace.com/devops/).
-
 If you are using Rackspace Cloud -- Ansible may be a very very good fit for
 you.  Because SSH is cloud native, all you need to do to manage a guest is to
 inject an SSH key, which the Ansible modules can help with, and you can begin
