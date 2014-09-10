@@ -29,7 +29,7 @@ $ npm install pkgcloud{% endhighlight %}
   {% highlight javascript %}
 var pkgcloud = require('pkgcloud');
 
-var client = pkgcloud.providers.rackspace.createClient({
+var client = pkgcloud.providers.rackspace.compute.createClient({
   username: 'my-username',
   apiKey: 'my-api-key',
   service: 'compute',
