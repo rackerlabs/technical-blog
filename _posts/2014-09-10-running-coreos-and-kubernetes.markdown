@@ -44,6 +44,11 @@ lay down the infrastructure, but provision it accordingly.
 ## TL;DR
 
 #### Corekube Deployment
+
+Pull down the source: [Corekube Source](https://github.com/metral/corekube)
+
+Create the stack via Heat:
+
 ```
 heat stack-create corekube --template-file corekube-heat.yaml -P key-name=<RAX_SSH_KEYNAME>
 ```
