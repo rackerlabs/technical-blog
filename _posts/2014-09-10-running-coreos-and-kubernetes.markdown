@@ -19,7 +19,7 @@ bio:
  You can follow Mike on Twitter @mikemetral and Github as metral.
 ---
 
-Docker, CoreOS and Kuberentes are new, emerging technologies that are
+Docker, CoreOS and Kubernetes are new, emerging technologies that are
 shifting the way cloud infrastructure & applications are designed,
 consumed and managed. Their influence in the community is
 equatable to the movement started by virtual machines & management
@@ -91,7 +91,7 @@ In addendum to the [self-updating nature](https://coreos.com/using-coreos/update
         * Think of it as an extension of systemd that operates at the cluster level instead of the machine level
             * i.e. its orchestration for systemd units across your cluster
 
-**Kuberentes**
+**Kubernetes**
 
 <p align="center">{% img running-coreos-and-kubernetes/kubernetes.png %}</p>
 
@@ -177,7 +177,7 @@ Therefore, by the cluster nodes directly connecting to the discovery node, they 
 
 **Networking**
 
-Once each machine has booted & connected their etcd service to the private discovery node (and fleet/fleetctl is ready to make use of this connection), a network architecture must be established to allow the containers that the Kuberentes nodes operate to communicate with one-another on their own subnet.
+Once each machine has booted & connected their etcd service to the private discovery node (and fleet/fleetctl is ready to make use of this connection), a network architecture must be established to allow the containers that the Kubernetes nodes operate to communicate with one-another on their own subnet.
 
 In order to understand the proposed networking architecture described below, we must first understand at a high-level how networking works with regards to Docker:
 
