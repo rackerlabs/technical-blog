@@ -8,7 +8,9 @@ published: true
 categories:
     - Pentago
     - HPC
-    - Node.js
+    - nodejs
+bio:
+    Geoffrey Irving is a founder at the new interactive programming startup Eddy Systems (http://eddy.systems). Previously, he worked at Pixar, D. E. Shaw Research, Weta Digital, and Otherlab doing high performance computing, computational physics, and computer graphics. He has degrees in mathematics and computer science from Caltech and Stanford, and received film credits on Ratatouille, Wall-E, Up, and Tintin.
 ---
 
 [Pentago](https://en.wikipedia.org/wiki/Pentago) is a board game designed by
@@ -17,6 +19,8 @@ Like chess and go, pentago is a two player game with no hidden cards or chance.
 Unlike chess and go, pentago is small enough for a computer to play perfectly:
 with symmetries removed, there are a mere 3,009,081,623,421,558 (3e15) possible
 positions.
+
+<!-- more -->
 
 Iterating over all these positions took a bit of work, and hundreds of thousands
 of processor-hours on a Cray at [NERSC](http://nersc.gov).
@@ -35,9 +39,7 @@ hosting program.  Since the pentago project is all [open source](https://github.
 and [open data](https://github.com/girving/pentago#data), Rackspace donated enough free hosting
 to cover both storage and server costs.  Finding a home for both data and visualization was essential
 to the goals of the project: open data is meaningless without easy access.  The result can be
-explored at
-
-* http://perfect-pentago.net
+explored at [http://perfect-pentago.net](http://perfect-pentago.net)
 
 The rest of this post describes my experience building this website, using [Node.js](http://nodejs.org),
 [Rackspace Cloud Files](http://www.rackspace.com/cloud/files), and
