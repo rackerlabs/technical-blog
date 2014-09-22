@@ -13,7 +13,7 @@ bio: |
  James Thorne is a Sales Engineer at Rackspace focused on working with OpenStack. He is a Texas State University alumnus and former Platform Consultant at Red Hat. James has been working with Linux professionally for the past four years and in his free time even longer. James blogs at thornelabs.net and can be followed on Twitter @jameswthorne.
 ---
 
-Two weeks ago, I presented a live webinar on a big data solution running on top of Rackspace Private Cloud (a link to the recorded webinar is forthcoming).
+Two weeks ago, I presented a live webinar on [a big data solution running on top of Rackspace Private Cloud](http://youtu.be/V55gzeBxmwE).
 
 The following post, the fifth and last in the [RPC Insights series](http://www.rackspace.com/blog/welcome-to-rpc-insights/), will be a summary of that live webinar. I will be discussing what big data is, why Rackspace Private Cloud is a good fit for running big data solutions, some tools associated with big data, and briefly showing you how to run your first Hadoop job.
 
