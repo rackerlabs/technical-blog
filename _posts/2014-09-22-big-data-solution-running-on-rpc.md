@@ -4,7 +4,7 @@ title: "A Big Data Solution Running On Top of Rackspace Private Cloud"
 date: 2014-09-22 11:00
 comments: true
 author: James Thorne
-published: false
+published: true
 categories:
     - RPC
     - openstack
