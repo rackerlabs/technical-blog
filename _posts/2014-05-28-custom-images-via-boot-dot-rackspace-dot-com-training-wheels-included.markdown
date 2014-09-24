@@ -169,12 +169,12 @@ __12. Set metadata for the image__
     best experience.
 
 * If using Nova Agent:
-    * Set xenapi_use_agent=true
+    * Set `xenapi_use_agent=true`
 
 * If using Cloud-Init exclusively, the Agent isn't needed, so make sure to
 disable it so that the build isn't actively polling for responses from the Nova
 Agent:
-    * set xenapi_use_agent=false
+    * set `xenapi_use_agent=false`
 
 ```
 nova image-meta my_ubuntu_1204 set vm_mode=xen
