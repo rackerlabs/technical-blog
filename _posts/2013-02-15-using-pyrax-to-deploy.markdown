@@ -40,4 +40,4 @@ rake generate
 cf_sync
 ```
 
-The `cf_sync` command is a script I wrote that uses the `pyrax` library. It was originally written to handle [my personal blog](http://www.onitato.com), but also works for the DevOps Blog, or any directory you need to sync with a container. You can download the script for container sync [here](https://github.com/Linuturk/www.onitato.com/blob/master/cf_pyrax.py).
+The `cf_sync` command is a script I wrote that uses the `pyrax` library. It was originally written to handle [my personal blog](http://www.onitato.com), but also works for the DevOps Blog, or any directory you need to sync with a container. You can download the script for container sync [here](https://github.com/Linuturk/www.onitato.com/blob/5dd41e1003a43db4ec6c0d6b651c55e227c58f4e/cf_pyrax.py).
