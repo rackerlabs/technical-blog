@@ -8,7 +8,7 @@ categories:
 - Mailgun
 - Python
 ---
-*The team over at Mailgun just posted a Python tutorial written by Mailgun customer [Paul Finn](http://twitter.com/@paul_finn_) about how to use Python and the Mailgun API to upload large images to Cloud Files.  The use case for the post is uploading photos from your phone, but the same process could be used anytime to want to parse an email attachment and store it in the cloud.  You can check out the [full Mailgun and python tutorial](http://blog.mailgun.net/post/40019942057/python-tutorial-how-imgpage-lets-you-upload-25-mb) at the Mailgun blog, but we have the highlights here. --Hart*
+*The team over at Mailgun just posted a Python tutorial written by Mailgun customer [Paul Finn](http://twitter.com/@paul_finn_) about how to use Python and the Mailgun API to upload large images to Cloud Files.  The use case for the post is uploading photos from your phone, but the same process could be used anytime to want to parse an email attachment and store it in the cloud.  You can check out the [full Mailgun and python tutorial](http://blog.mailgun.com/python-tutorial-how-imgpage-lets-you-upload-25-mb/) at the Mailgun blog, but we have the highlights here. --Hart*
 <!-- more -->
 ##Parsing incoming emails using the Mailgun Routes API
 

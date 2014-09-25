@@ -16,7 +16,7 @@ Applications generate logs for the purposes of debugging, maintenance, analytics
 
 <!-- more -->
 
-Typically log management systems consist of two components: shippers and aggregators. Shippers (AKA tailers, readers, or [beavers](http://josegonzalez.github.io/beaver/)) run on application servers to collect and transmit logs. Aggregators run on a central server, cluster of servers, or in a remote cloud for long-term storage and indexing. While aggregators handle most of the heavy-lifting for log management systems, shippers must support logging from arbitrary services, survive network failures, and live within a small footprint that doesn't take system resources away from applications.
+Typically log management systems consist of two components: shippers and aggregators. Shippers (AKA tailers, readers, or [beavers](http://beaver.readthedocs.org/) run on application servers to collect and transmit logs. Aggregators run on a central server, cluster of servers, or in a remote cloud for long-term storage and indexing. While aggregators handle most of the heavy-lifting for log management systems, shippers must support logging from arbitrary services, survive network failures, and live within a small footprint that doesn't take system resources away from applications.
 
 #### Problems with Log Shippers
 * **Polling** -  Some shippers periodically check files for changes, unnecessarily burning CPU cycles

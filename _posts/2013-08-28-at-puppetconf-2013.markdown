@@ -36,7 +36,7 @@ The videos should also be posted soon. There are a few more memorable quotes fro
 In case you missed us in San Francisco last week, be sure to join us for another round of PuppetConf next year. The dates for the 2014 conference are already set for September 23-24, and a Dev Day is scheduled for September 22, 2014.
 
 [1]: http://www.slideshare.net/PuppetLabs/whats-new-awesome
-[2]: http://www.slideshare.net/PuppetLabs:intro-to-systems-orchestration-with-mcollective
+[2]: http://www.slideshare.net/PuppetLabs/intro-to-systems-orchestration-with-mcollective
 [3]: http://www.slideshare.net/PuppetLabs/building-datadriven-infrastructure-with-puppet
 [4]: http://www.slideshare.net/PuppetLabs/forging-great-modules-standards-tools-and-patterns-puppetconf-2013
 [5]: http://www.slideshare.net/PuppetLabs/alessandro-franceschi-new
@@ -52,5 +52,5 @@ In case you missed us in San Francisco last week, be sure to join us for another
 [15]: http://www.slideshare.net/PuppetLabs/stophiringstartgrowing-130823160712phpapp01
 [16]: http://www.slideshare.net/PuppetLabs/tag/puppetconf
 [17]: http://www.slideshare.net/PuppetLabs/moses-andhaustalk-a-bout-stuff
-[18]: http://www.slideshare.net/PuppetLabs/thur-945-gordonrowell12slides-255%20%3E382%20%3E41
-[19]: http://www.slideshare.net/PuppetLabs/building-datadriven-infrastructure
+[18]: http://www.slideshare.net/PuppetLabs/thur-945-gordonrowell12slides-25538241
+[19]: http://www.slideshare.net/PuppetLabs/building-datadriven-infrastructure-with-puppet

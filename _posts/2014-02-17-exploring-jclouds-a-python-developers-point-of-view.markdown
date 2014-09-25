@@ -126,7 +126,7 @@ It helps to be looking
 at the source here so point your browser to [CreateVolumeAndAttach.java](https://github.com/jclouds/jclouds-examples/blob/master/rackspace/src/main/java/org/jclouds/examples/rackspace/cloudblockstorage/CreateVolumeAndAttach.java)
 
 Also, you'll need to grab your username and api_key. Instructions on how to do that are here:
-[http://jclouds.apache.org/documentation/quickstart/rackspace/](http://jclouds.apache.org/documentation/quickstart/rackspace/)
+[http://jclouds.apache.org/guides/rackspace/](http://jclouds.apache.org/guides/rackspace/)
 
 ```
 cvs = new CreateVolumeAndAttach("groovy","beaf5678fffeeedddccc")

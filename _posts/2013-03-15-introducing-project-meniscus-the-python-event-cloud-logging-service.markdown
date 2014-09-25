@@ -12,7 +12,7 @@ categories:
 **Dream big:** that is our vision on the Rackspace [Project Meniscus](http://projectmeniscus.org) team. In one of our dreams, we
 provide a top-tier Logging-as-a-Service (LAAS) solution for the cloud.
 In another, we are accepted as an incubator project within
-[OpenStack](http://opnstack.org). These are lofty dreams, but we are a
+[OpenStack](http://openstack.org). These are lofty dreams, but we are a
 focus-driven team, and our dreams are our goals.
 
 Project Meniscus is a better focusing lens for system and application

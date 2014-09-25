@@ -8,7 +8,7 @@ categories:
 - Mailgun
 ---
 
-The guys over at Mailgun just posted an overview of how to use Mailgun to power email notifications from your Capistrano recipes. We've got a lot of customers using Capistrano to automate their big web deployments, so we thought we'd share a summary. You can read the full post on the [Mailgun blog](http://blog.mailgun.net/post/34575771416/using-mailgun-with-capistrano-recipes).
+The guys over at Mailgun just posted an overview of how to use Mailgun to power email notifications from your Capistrano recipes. We've got a lot of customers using Capistrano to automate their big web deployments, so we thought we'd share a summary. You can read the full post on the [Mailgun blog](http://blog.mailgun.com/using-mailgun-with-capistrano-recipes/).
 
 <!-- more -->
 

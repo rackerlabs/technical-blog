@@ -25,7 +25,7 @@ PAAS is good step in that direction. Unfortunately, running a PAAS has been as h
 than running the underlying IAAS infrastructure itself. This is slowly changing as the innovators
 in the field are starting to push the complexity further away from the user by using smart tooling.
 
-One such innovator, [DEIS](http://deis.io), combines Docker and [CoreOS](http://coreos.io), along with
+One such innovator, [DEIS](http://deis.io), combines Docker and [CoreOS](https://coreos.com/), along with
 associated systems, to simplify the process and reduce the operations overhead incurred by running it. DEIS is currently 
 pre 1.0 and still needs some work before anybody but the truly bleeding-edge users would be comfortable
 running production workloads on it; however it's perfect for building out development environments,
@@ -155,7 +155,7 @@ You can see quite a number of services running spread across the three servers. 
 
 #### Installing secondary Load Balancer
 
-We could not use Heat to create a second Load Balancer, which shares the VIP of the first load balancer, for `SSH` access (this is coming soon to Heat). Instead, you can do this via the [Rackspace MyCloud Portal](https://mycloud.rackspace.com/cloud/) . Go to the Load Balancer and click Create and use following settings as a guide:
+We could not use Heat to create a second Load Balancer, which shares the VIP of the first load balancer, for `SSH` access (this is coming soon to Heat). Instead, you can do this via the [Rackspace MyCloud Portal](https://mycloud.rackspace.com) . Go to the Load Balancer and click Create and use following settings as a guide:
 
 ```
  DEIS-SSH

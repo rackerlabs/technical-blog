@@ -34,10 +34,10 @@ We also added support for the new Rackspace cloud in Hong Kong! You can utilize 
 
 ## Get Started
 
-Rackspace uses jclouds as our Java SDK for OpenStack and the Rackspace cloud. Go to the [Java section](http://developer.rackspace.com/#java) of developer.rackspace.com where you will find links for everything you need to get started with jclouds. Be sure to check out the [Getting Started Guide](http://jclouds.apache.org/documentation/quickstart/rackspace/) and the [Examples](https://github.com/jclouds/jclouds-examples/tree/master/rackspace). If you don't have access to an OpenStack cloud handy, I invite you to kick the tires on jclouds by using the [Rackspace Developer Trial](http://developer.rackspace.com/devtrial/).
+Rackspace uses jclouds as our Java SDK for OpenStack and the Rackspace cloud. Go to the [Java section](http://developer.rackspace.com/#java) of developer.rackspace.com where you will find links for everything you need to get started with jclouds. Be sure to check out the [Getting Started Guide](http://jclouds.apache.org/guides/rackspace/) and the [Examples](https://github.com/jclouds/jclouds-examples/tree/master/rackspace). If you don't have access to an OpenStack cloud handy, I invite you to kick the tires on jclouds by using the [Rackspace Developer Trial](http://developer.rackspace.com/devtrial/).
 
 ## Conclusion
 
 Let us know what you think! Feel free to reach out to me, Everett Toews, on Twitter [@everett_toews](https://twitter.com/everett_toews) or email the Rackspace developer support team at [sdk-support@rackspace.com](mailto:sdk-support@rackspace.com).
 
-I'd also like to invite you to connect with the [jclouds community](http://jclouds.apache.org/documentation/community/). From there you can join our mailing lists or drop by on IRC to say hi. If you're looking to add new features to jclouds, you might be interested in [How to Contribute](https://wiki.apache.org/jclouds/How%20to%20Contribute).
+I'd also like to invite you to connect with the [jclouds community](http://jclouds.apache.org/community/). From there you can join our mailing lists or drop by on IRC to say hi. If you're looking to add new features to jclouds, you might be interested in [How to Contribute](https://wiki.apache.org/jclouds/How%20to%20Contribute).

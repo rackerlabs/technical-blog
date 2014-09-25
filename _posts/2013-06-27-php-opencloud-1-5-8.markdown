@@ -85,5 +85,5 @@ More information on php-opencloud is available at <http://php-opencloud.com>
 [1]: http://php-opencloud.com/
 [2]: https://wiki.openstack.org/wiki/Heat
 [3]: http://www.rackspace.com/cloud/monitoring/
-[4]: https://github.com/rackspace/php-opencloud/blob/master/RELEASENOTES.md
+[4]: https://github.com/rackspace/php-opencloud/releases
 [5]: https://github.com/rackspace/php-opencloud/tree/master/docs/userguide/Cloud%20Monitoring
