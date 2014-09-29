@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Adding devices into an existing Swift cluster""
+title: "Adding devices into an existing Swift cluster"
 date: 2014-09-29 13:46
 comments: true
 author: Angela Streeter
