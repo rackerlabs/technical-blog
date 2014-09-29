@@ -111,3 +111,6 @@ Devices:    id  region  zone      ip address  port  replication ip  replication 
 <h4>Other resources</h4>
 
 <p><a href="https://swiftstack.com/blog/2012/04/09/swift-capacity-management/">SwiftStack Blog on how to add capacity gradually</a></p>
+
+<h4>Rackspace Training Team</h4>
+<p><a href="https://training.rackspace.com">For the schedule of available public classes, or to inquire about private training for your organization contact the Rackspace Training Team.</a></p>
