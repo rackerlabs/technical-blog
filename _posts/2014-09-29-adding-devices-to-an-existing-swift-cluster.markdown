@@ -6,9 +6,12 @@ comments: true
 author: Angela Streeter
 published: true
 categories:
-    - Swift
+    - swift
+ bio: |
+Angela Streeter is a cloud technology instructor at Rackspace, where she teaches OpenStack in public and private training sessions. Angela and her team spend their time evangelizing OpenStack through training, blogs and contributions. Angela graduated from Texas State University with a BS in computer science and a minor in mathematics. She has worked as a software developer and prior to the training team was a linux systems administrator at Rackspace for the customer support teams. Angela's twitter handle and freenode nick is angelastreeter. Angela blogs at http:streetstack.net.
 ---
-<p>If you already have an existing Swift cluster and you would like to add additional storage. You can use the swift-ring-builder command on the ring builder files from any server that you have the utility installed on. Once you update the files, you will need to push them out to all the nodes in your cluster.</p>
+
+If you already have an existing Swift cluster and you would like to add additional storage. You can use the swift-ring-builder command on the ring builder files from any server that you have the utility installed on. Once you update the files, you will need to push them out to all the nodes in your cluster.
 
 <h4>My existing demo cluster with four zones.</h4>
 
@@ -50,7 +53,7 @@ Devices:    id  region  zone      ip address  port  replication ip  replication 
              3       1     4   192.168.56.56  6002   192.168.56.56              6002     loop5 1000.00        384    0.00</pre>
 
 </code></pre>
-<p>1. Use the <strong>swift-ring-builder</strong> command to add in the additional storage. I show an example for adding in two devices to the <strong>account.builder</strong> file. You will need to do the same for the object and container builder files as well. In this demo cluster all the rings will utilize the same storage devices. In a real production cluster you may do this differently and designate storage for the account, object and container rings separately. It is not necessarily recommended to do that because Swift will take care of distributing and replicating the data across all of the devices.</p>
+1. Use the <strong>swift-ring-builder</strong> command to add in the additional storage. I show an example for adding in two devices to the <strong>account.builder</strong> file. You will need to do the same for the object and container builder files as well. In this demo cluster all the rings will utilize the same storage devices. In a real production cluster you may do this differently and designate storage for the account, object and container rings separately. It is not necessarily recommended to do that because Swift will take care of distributing and replicating the data across all of the devices.
 
 <p><strong>Note: You will need to determine what weight to use. In a production cluster, most likely, you will want to slowly add in new storage devices by using a lower weight (or percentage). When I originally built the rings in this cluster I used a 100% weight of 1000. I am using the same 1000 to add in these devices. If I only wanted to add in 20% of the storage I would use the weight 200.</strong></p>
 
@@ -74,7 +77,7 @@ Devices:    id  region  zone      ip address  port  replication ip  replication 
              5       1     6   192.168.56.56  6002   192.168.56.56              6002     loop7 1000.00          0 -100.00 </pre>
 
 </code></pre>
-<p>2. Use the rebalance option along with the <strong>seed</strong> value you used to build your rings. In my case we used the <strong>seed</strong> value 1337.</p>
+2. Use the rebalance option along with the <strong>seed</strong> value you used to build your rings. In my case we used the <strong>seed</strong> value 1337.
 
 <code>swift-ring-builder account.builder rebalance 1337</code><br>
 <code>swift-ring-builder container.builder rebalance 1337</code><br>
@@ -94,7 +97,7 @@ Devices:    id  region  zone      ip address  port  replication ip  replication 
              5       1     6   192.168.56.56  6002   192.168.56.56              6002     loop7 1000.00        255   -0.39 </pre>
 
 </code></pre> <br />
-<p>3. Ensure the newly updated <strong>ring</strong> files are owned by the correct user and push them out to all nodes in the cluster.</p>
+3. Ensure the newly updated <strong>ring</strong> files are owned by the correct user and push them out to all nodes in the cluster.
 
 <code>/etc/swift/account.ring.gz</code><br>
 <code>/etc/swift/container.ring.gz</code><br>
