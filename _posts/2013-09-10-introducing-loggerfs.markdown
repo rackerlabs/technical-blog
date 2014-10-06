@@ -10,7 +10,7 @@ categories:
 - Ops
 - Logging
 ---
-> WARNING: LoggerFS PROJECT HAS BEEN ABANDONED BY ITS MAINTAINER. SOURCE CODE CAN STILL BE FOUND [HERE](http://sourceforge.net/projects/loggerfs/).
+> WARNING: LoggerFS PROJECT HAS BEEN ABANDONED BY ITS MAINTAINER.
 
 Applications generate logs for the purposes of debugging, maintenance, analytics and sometimes legal compliance. Logs are important but are too often overlooked until they cause problems (e.g. filling hard disks and crashing production systems). Veteran devops engineers are more proactive about logging and use systems such as [Logstash](http://logstash.net/), [Loggly](http://loggly.com/) or [Splunk](http://www.splunk.com/) to move logs away from application servers and provide analytics and indexed search. While the merits of various log management tools can be debated, the simple fact is you should be using something (and not grepping through 100mb+ files).
 
