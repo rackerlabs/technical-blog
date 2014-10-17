@@ -9,6 +9,8 @@ categories:
   - Ruby
   - Open source
   - Conference
+bio:
+  Don Schenck is a Rackspace OpenStack .NET SDK Developer Advocate. Prior to Rackspace, Don worked across a broad range of industries, from helping pharmaceutical companies track and improve quality to building software to control machines that cut and bend reinforcing steel. Most recently, Don was involved in mobile and kiosk application development. Find him on twitter @DonSchenck
 ---
 
 From October 9-12, 2014, I attended the seventh annual Ruby DCamp at Prince William Forest Park at Triangle, Virginia. Rackspace was a Platinum sponsor of the "non conference", which is a collision between Ruby developers and communal living. Without a doubt, a unique combination.
