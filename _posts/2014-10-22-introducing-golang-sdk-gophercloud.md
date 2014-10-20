@@ -1,6 +1,6 @@
 ---
 layout: post  
-title: "Introducing gophercloud: a golang OpenStack SDK"  
+title: "Introducing Gophercloud: an OpenStack SDK for Go"  
 date: 2014-10-22 11:45  
 comments: true  
 author: Developer Experience Team  
