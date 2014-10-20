@@ -25,7 +25,7 @@ Initially gophercloud supports the following services:
 
 and more [on the way](https://github.com/rackspace/gophercloud/pulls). 
 
-Installing gophercloud is fairly straight forward. First, setup your `$GOPATH` environment variable to where you want to install gopher cloud:
+To install gophercloud, first set the $GOPATH environment variable to the root of your Go workspace:
 
 ```
  mkdir $HOME/go
