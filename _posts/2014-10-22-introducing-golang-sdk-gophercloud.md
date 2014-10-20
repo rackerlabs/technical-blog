@@ -11,11 +11,11 @@ categories:
   - gophercloud
 ---
 
-In our constant strive to serve developers, we are proud to announce the initial public release of [gophercloud](https://github.com/rackspace/gophercloud/). gophercloud is a [Go](http://golang.org) OpenStack&trade;-first SDK with Rackspace specific support. What that means to you as a user is that you'll be able to use it with the Rackspace cloud out of the box; and as developer, it means that's readily extensible for other OpenStack cloud providers.
+In our constant strive to serve developers, we are proud to announce the initial public release of [Gophercloud](https://github.com/rackspace/gophercloud/). gophercloud is a [Go](http://golang.org) OpenStack&trade;-first SDK with Rackspace specific support. What that means to you as a user is that you'll be able to use it with the Rackspace cloud out of the box; and as developer, it means that's readily extensible for other OpenStack cloud providers.
 
 <!-- more -->
 
-Initially gophercloud supports the following services:
+Initially Gophercloud supports the following services:
 
  - Compute
  - Object Storage
@@ -25,7 +25,7 @@ Initially gophercloud supports the following services:
 
 and more [on the way](https://github.com/rackspace/gophercloud/pulls). 
 
-To install gophercloud, first set the $GOPATH environment variable to the root of your Go workspace:
+To install Gophercloud, first set the $GOPATH environment variable to the root of your Go workspace:
 
 ```
  mkdir $HOME/go
