@@ -11,7 +11,7 @@ categories:
   - gophercloud
 ---
 
-In our constant strive to serve developers, we are proud to announce the initial public release of [Gophercloud](https://github.com/rackspace/gophercloud/). gophercloud is a [Go](http://golang.org) OpenStack&trade;-first SDK with Rackspace specific support. What that means to you as a user is that you'll be able to use it with the Rackspace cloud out of the box; and as developer, it means that's readily extensible for other OpenStack cloud providers.
+In our constant strive to serve developers, we are proud to announce the initial public release of [Gophercloud](https://github.com/rackspace/gophercloud/). Gophercloud is a [Go](http://golang.org) OpenStack&trade;-first SDK with Rackspace support. What that means is Rackspace and OpenStack&trade; users can seamlessly integrate it into their existing applications, and users of other Openstack-based clouds can extend it to work with theirs.
 
 <!-- more -->
 
@@ -23,7 +23,7 @@ Initially Gophercloud supports the following services:
  - Block Storage
  - Identity
 
-and more [on the way](https://github.com/rackspace/gophercloud/pulls). 
+And more [on the way](https://github.com/rackspace/gophercloud/pulls). 
 
 To install Gophercloud, first set the $GOPATH environment variable to the root of your Go workspace:
 
@@ -31,12 +31,12 @@ To install Gophercloud, first set the $GOPATH environment variable to the root o
  mkdir $HOME/go
  export GOPATH=$HOME/go
 ```
-after that, you can install it with the following command:
+After that, you can install it with the following command:
 
 ```
  go get github.com/rackspace/gophercloud
 ```
 
-from there on, you can follow the [getting started guides](https://gophercloud.io/docs/) to help you get up and running.
+From there on, you can follow the [getting started guides](https://gophercloud.io/docs/) to help you get up and running.
 
-As with any of our other SDK's you can always email us, should you encounter any issues, have questions or suggestions at sdk-support@rackspace.com or at #rackspace channel on Freenode IRC.
+As with any of our other SDKs, you can always reach us via email (sdk-support@rackspace.com) or chat (#rackspace channel on Freenode IRC) if you have any issues, questions or suggestions.
