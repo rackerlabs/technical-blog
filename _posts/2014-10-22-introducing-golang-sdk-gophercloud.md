@@ -11,7 +11,7 @@ categories:
   - gophercloud
 ---
 
-In our constant strive to serve developers, we are proud to announce the initial public release of [Gophercloud](https://github.com/rackspace/gophercloud/). Gophercloud is a [Go](http://golang.org) OpenStack&trade;-first SDK with Rackspace support. What that means is Rackspace and OpenStack&trade; users can seamlessly integrate it into their existing applications, and users of other Openstack-based clouds can extend it to work with theirs.
+As part of our ongoing mission to serve developers, we are proud to announce the initial public release of [Gophercloud](https://github.com/rackspace/gophercloud/). Gophercloud is a [Go](http://golang.org) OpenStack&trade;-first SDK with Rackspace support. What that means is Rackspace and OpenStack&trade; users can seamlessly integrate it into their existing applications, and users of other Openstack-based clouds can extend it to work with theirs.
 
 <!-- more -->
 
