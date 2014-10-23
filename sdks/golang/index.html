@@ -4,7 +4,7 @@ title: Go SDK
 ---
 <div>
   <h1>Getting Started with the Go SDK</h1>
-  <p>Rackspace's official OpenStack SDK for Go is <a href="http://gophercloud.io">Gophercloud</a>, an Apache-licensed open-source community project for using multiple cloud providers from a standardized API.</p>
+  <p>Rackspace's official SDK for Go is <a href="http://gophercloud.io">Gophercloud</a>, an Apache-licensed open-source community project for using multiple cloud providers from a standardized API.</p>
   <p>Currently, Gophercloud has support for multiple Rackspace services:</p>
    <ul>
     <li><a href="/docs/cloud-block-storage/getting-started/?lang=golang">Cloud Block Storage</a></li>
@@ -22,7 +22,7 @@ title: Go SDK
 
   <h2>Installation</h2>
   <p><strong>Gophercloud</strong> is installed by executing the following command (after you have installed Go):
-  {% highlight go %}
+  {% highlight bash %}
   go get github.com/rackspace/gophercloud
   {% endhighlight %}
   <h2>Using Gophercloud</h2>
@@ -31,15 +31,15 @@ title: Go SDK
 
   {% highlight go %}
 
-ao := gophercloud.AuthOptions{
-  Username: "{username}",
-  APIKey: "{apiKey}",
-}
-provider, err := rackspace.AuthenticatedClient(ao)
+import (
+		"github.com/rackspace/gophercloud"
+		"github.com/rackspace/gophercloud/rackspace"
+)
 
-client, err := rackspace.NewComputeV2(provider, gophercloud.EndpointOpts{
-  Region: "{region}",
-})
+provider, err := rackspace.AuthenticatedClient{gophercloud.AuthOptions{
+		Username: "{username}",
+		APIKey:   "{apiKey}",
+}}
 
 {% endhighlight %}
 
