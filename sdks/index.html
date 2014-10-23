@@ -21,7 +21,7 @@ title: SDKs &amp; Tools
 
         <h3>Installing Gophercloud</h3>
 
-        <p>Run the following command:
+        <p>Run the following command (after installing Go):
         {% highlight bash %}
         go get github.com/rackspace/gophercloud
         {% endhighlight %}
@@ -29,14 +29,9 @@ title: SDKs &amp; Tools
 
         {% highlight go %}
 import (
-	"github.com/rackspace/gophercloud"
-	"github.com/rackspace/gophercloud/rackspace"
+  "github.com/rackspace/gophercloud"
+  "github.com/rackspace/gophercloud/rackspace"
 )
-
-provider, err := rackspace.AuthenticatedClient{gophercloud.AuthOptions{
-  Username: "{username}",
-  APIKey:   "{apiKey}",
-}}
 {% endhighlight %}
 
         <h4>Requirements</h4>
