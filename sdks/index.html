@@ -29,13 +29,13 @@ title: SDKs &amp; Tools
 
         {% highlight go %}
 import (
-    "github.com/rackspace/gophercloud"
-    "github.com/rackspace/gophercloud/rackspace"
+	"github.com/rackspace/gophercloud"
+	"github.com/rackspace/gophercloud/rackspace"
 )
 
 provider, err := rackspace.AuthenticatedClient{gophercloud.AuthOptions{
-    Username: "{username}",
-    APIKey:   "{apiKey}",
+  Username: "{username}",
+  APIKey:   "{apiKey}",
 }}
 {% endhighlight %}
 
