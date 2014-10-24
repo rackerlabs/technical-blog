@@ -17,13 +17,13 @@ bio: |
  Shaunak on Twitter @shaunak and Github as ycombinator.
 ---
 
-Today we are proud to announce the v1.11.0 release of php-opencloud. In the four months since our last minor release, we have added support for the [OpenStack Orchestration service](https://wiki.openstack.org/wiki/Heat), support for [booting a server from a volume](http://docs.openstack.org/user-guide/content/boot_from_volume.html), and several other improvements and bug fixes. Many of these improvements and bug fixes have come from community contributors, which makes us puff out our chests just that much more.
+Today we are proud to announce the v1.11.0 release of php-opencloud. In the four months since our last minor release, we have added support for the [OpenStack Orchestration service](https://wiki.openstack.org/wiki/Heat), support for [booting a server from a volume](http://docs.openstack.org/user-guide/content/boot_from_volume.html), and several other improvements and bug fixes. Many of these improvements and bug fixes have come from community contributors, which makes this release just that much more special.
 
 <!-- more -->
 
 ## Orchestration
 
-The major addition this release is support for the OpenStack Orchestration service (OpenStack project alias: Heat). OpenStack Orchestration is a service that will let you launch multiple composite cloud applications based on templates in the form of JSON or YAML files. At Rackspace, our implementation of it is known as [Cloud Orchestration](http://www.rackspace.com/cloud/orchestration/).
+This release adds support for the OpenStack Orchestration service (OpenStack project alias: Heat). OpenStack Orchestration is a service that will let you launch multiple composite cloud applications based on templates in the form of JSON or YAML files. At Rackspace, our implementation of it is known as [Cloud Orchestration](http://www.rackspace.com/cloud/orchestration/).
 
 ## Boot From Volume
 
