@@ -17,7 +17,7 @@ bio: |
  Shaunak on Twitter @shaunak and Github as ycombinator.
 ---
 
-Today we are proud to announce the v1.11.0 release of php-opencloud. In the four months since our last minor release, we have added support for the [OpenStack Orchestration service](https://wiki.openstack.org/wiki/Heat), support for [booting a server from a volume](http://docs.openstack.org/user-guide/content/boot_from_volume.html), and several other improvements and bug fixes. Many of these improvements and bug fixes have come from community contributors, which makes this release just that much more special.
+Today we are proud to announce the [v1.11.0 release](https://github.com/rackspace/php-opencloud/releases/tag/v1.11.0) of php-opencloud. In the four months since our last minor release, we have added support for the [OpenStack Orchestration service](https://wiki.openstack.org/wiki/Heat), support for [booting a server from a volume](http://docs.openstack.org/user-guide/content/boot_from_volume.html), and several other improvements and bug fixes. Many of these improvements and bug fixes have come from community contributors, which makes this release just that much more special.
 
 <!-- more -->
 
