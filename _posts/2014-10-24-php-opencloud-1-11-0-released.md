@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "php-opencloud 1.11.0 Release With Support for OpenStack Orchestration, Boot From Volume, Other Impovements, and Bug Fixes"
+title: "php-opencloud 1.11.0 Released"
 date: 2014-10-24 08:00
 comments: true
 author: Shaunak Kashyap
