@@ -1,0 +1,96 @@
+@navbar-min-height-flighted: 70px;
+@grid-gutter-width-flighted: 40px;
+
+// New colors for Oct 2014 redesign
+@rackspace-gray: #77818b;
+@rackspace-light-blue: #0dafcc;
+@rackspace-blue: #2288dd;
+@rackspace-orange: #ff8800;
+@rackspace-black: #000000;
+@rackspace-dark-gray: #333333;
+@rackspace-light-gray: #cccccc;
+@rackspace-off-white: #eeeeee;
+@rackspace-white: #ffffff;
+
+#flighted-navbar {
+  font-family: 'Open Sans'; // remove this if not flighted
+  font-size: 12px;
+
+  margin-bottom: 0;
+  min-height: @navbar-min-height-flighted;
+  border: none;
+  border-bottom: 2px solid @rackspace-white;
+
+  .navbar-header .navbar-brand.flighted-navbar-brand {
+    text-transform: uppercase;
+    color: white;
+    line-height: @grid-gutter-width-flighted / 2;
+    font-size: 0.9em;
+    font-weight: 600;
+    width: 243px;
+    height: 30px;
+    padding: 0;
+    margin-top: 15px;
+  }
+
+  .navbar-header {
+    @media (max-width: @grid-float-breakpoint) {
+      margin-left: 0;
+    }
+  }
+
+  &.navbar-inverse {
+    background-color: @rackspace-gray;
+
+    .navbar-nav > li > a {
+      color: @rackspace-white;
+      font-size: 12px;
+      line-height: 30px;
+      font-weight: 600;
+    }
+  }
+
+  ul > li > a#btn-get-started {
+    border-radius: 0px;
+    font-weight: 600;
+    font-size: 12px;
+    color: @rackspace-light-blue;
+    margin: (@grid-gutter-width-flighted / 2) 0;
+
+    .fa-arrow-right {
+      margin-left: 2px;
+    }
+
+    &:hover {
+      background-color: darken(@rackspace-white, 5%);
+    }
+  }
+
+  .navbar-nav > li > a:hover,
+  .navbar-nav > li > a:focus,
+  .navbar-nav > .open > a,
+  .navbar-nav > .open > a:hover,
+  .navbar-nav > .open > a:focus {
+    background-color: @rackspace-dark-gray;
+  }
+
+  .navbar-nav {
+    > li > .dropdown-menu {
+      margin-top: -1 * (@grid-gutter-width-flighted / 2);
+    }
+    // Uncollapse the nav
+    @media (min-width: @grid-float-breakpoint) {
+      > li {
+        > a {
+          padding-top: 0;
+          padding-bottom: 0;
+          margin-top: @grid-gutter-width-flighted / 2;
+          margin-bottom: @grid-gutter-width-flighted / 2;
+        }
+      }
+    }
+  }
+}
+
+
+
