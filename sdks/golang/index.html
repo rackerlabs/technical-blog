@@ -26,20 +26,31 @@ title: Go SDK
   go get github.com/rackspace/gophercloud
   {% endhighlight %}
   <h2>Using Gophercloud</h2>
-  <p>Once an Identity has been created, you specify the region when creating the Service provider. If no region is specified, any method call will fail.</p>
-  <p>In this example, we create an Identity provider that can be used to create any Service provider:</p>
+  <p>To interact with Rackspace using Gophercloud, you'll first need to create an authenticated 
+  Rackspace session, represented by a <em>provider</em> client. Then, you can use the provider client to 
+  obtain a <em>service</em> client to interact with a specific cloud service in a given region. The service 
+  client can be given to the request functions within that service's resource packages to interact 
+  with the service.</p>
+  <p>In this example, we'll interact with the object storage service:</p>
 
   {% highlight go %}
-
+  
 import (
   "github.com/rackspace/gophercloud"
   "github.com/rackspace/gophercloud/rackspace"
+  "github.com/rackspace/gophercloud/rackspace/objectstorage/v1/accounts"
 )
 
 provider, err := rackspace.AuthenticatedClient{gophercloud.AuthOptions{
   Username: "{username}",
   APIKey:   "{apiKey}",
 }}
+
+service, err := rackspace.NewObjectStorageV1(provider, gophercloud.EndpointOpts{
+  Region: "{region}",
+})
+
+metadata, err := accounts.Get(service).ExtractMetadata()
 
 {% endhighlight %}
 
