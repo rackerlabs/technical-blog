@@ -6,6 +6,7 @@
 //= require lib/jquery/jquery.cookie-1.4.1
 //= require lib/bootstrap/collapse
 //= require lib/bootstrap/dropdown
+//= require lib/bootstrap/tooltip
 //= require core.js
 //= require pages/sponsorship.js
 //= require pages/docs.js

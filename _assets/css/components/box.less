@@ -56,6 +56,11 @@
       text-transform: uppercase;
       font-weight: 600;
     }
+
+    small {
+      font-size: 16px;
+      font-weight: 300;
+    }
   }
 
   blockquote {
@@ -77,15 +82,30 @@
     width: 196px;
   }
 
+  .tooltip-inner {
+    max-width: 600px;
+  }
+
+  .cart-uk {
+    i {
+      margin-left: 5px;
+    }
+  }
+
   &.title {
     background: @rackspace-blue;
     color: @rackspace-white;
+
+    .cart-uk {
+      color: @rackspace-white;
+    }
 
     .btn {
       width: 200px;
       color: @rackspace-light-blue;
       margin: @grid-gutter-width-flighted 0 0 0;
     }
+
   }
 
   &.docs-apis {
@@ -147,10 +167,26 @@
     }
   }
 
-  &.quote {
+  &.cloud {
+    .new-landing-sprite {
+      margin: 0 auto (@grid-gutter-width-flighted / 2) auto;
+    }
+
+    .row {
+      margin: 40px auto;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+
+  &.quote, &.cloud {
     background-color: @rackspace-off-white;
     color: @rackspace-dark-gray;
+  }
 
+  &.quote {
     .container {
       text-align: left;
     }
@@ -169,6 +205,23 @@
       font-size: 16px;
       font-weight: 400;
       margin-bottom: @grid-gutter-width-flighted;
+    }
+  }
+
+  &.what-you-get {
+    .new-landing-sprite {
+      margin: 0 auto (@grid-gutter-width-flighted / 2) auto;
+    }
+
+    .row {
+      margin-top: 40px;
+    }
+
+    p {
+      margin-top: 10px;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 24px;
     }
   }
 
