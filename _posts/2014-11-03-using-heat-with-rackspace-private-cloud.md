@@ -60,7 +60,7 @@ Heat has six main sub-functions used to create, test, run, update and remove sta
     POST  /v1/{tenant_id}/stacks - Create stack
     DELETE  /v1/{tenant_id}/stacks/{stack_name}/{stack_id} - Delete stack
     GET  /v1/{tenant_id}/stacks- List stack data
-    POST    /v1/{tenant_id}/stacks/preview - Preview stack
+    POST /v1/{tenant_id}/stacks/preview - Preview stack
     GET  /v1/{tenant_id}/stacks/{stack_name}/{stack_id} - Show stack details
     PUT  /v1/{tenant_id}/stacks/{stack_name}/{stack_id} - Update stack
 
@@ -69,14 +69,12 @@ Using Heat, you can quickly bridge the gap around automating many Infrastructure
 Thus far, working with Heat has been a very positive experience. Dependable, Heat even has an added quality assurance feature: it qualifies the template before officially executing it. I look forward to seeing what additional functionality will be built into Heat and any other new OpenStack projects. Personally, I have my eye on Ceilometer, knowing the power it can create when paired with Heat *(orchestration + resource consumption metrics = autoscale)*.
 
 Also, please make sure to watch my Webinar on Heat to see three short demos of how you can use Heat running on Rackspace Private Cloud:
-https://www.brighttalk.com/webcast/11427/129795 
+[https://www.brighttalk.com/webcast/11427/129795](https://www.brighttalk.com/webcast/11427/129795) 
 
 **More information about the Heat CLI and API can be found below:**
 
-http://docs.openstack.org/cli-reference/content/heatclient_commands.html
-http://developer.openstack.org/api-ref-orchestration-v1.html
-
-**Link to Webinar on Heat:**
+[Heat client documentation](http://docs.openstack.org/cli-reference/content/heatclient_commands.html)
+[API reference](http://developer.openstack.org/api-ref-orchestration-v1.html)
 
 **Example Heat templates can be found on my GitHub repository:**
-https://github.com/wbentley15/openstack-heat-templates.git
+[https://github.com/wbentley15/openstack-heat-templates.git](https://github.com/wbentley15/openstack-heat-templates.git)
