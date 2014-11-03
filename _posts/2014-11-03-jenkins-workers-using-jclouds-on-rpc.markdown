@@ -15,7 +15,7 @@ bio: |
  Follow me on Twitter [@everett_toews](https://twitter.com/everett_toews).
 ---
 
-This blog post will show you how to dynamically create Jenkins workers on-demand using jclouds on Rackspace Private Cloud. You can use those workers to run your build jobs and increase the capacity of you continuous integration pipeline by parallelizing builds. All powered by OpenStack.
+This blog post will show you how to dynamically create Jenkins workers on demand using jclouds on Rackspace Private Cloud. You can use those workers to run your build jobs and increase the capacity of your continuous integration pipeline by parallelizing builds. All powered by OpenStack.
 
 <!-- more -->
 
