@@ -121,7 +121,7 @@ If everything works, delete the instance you manually provisioned.
 
 ## Configure Dynamic Instance Creation
 
-To dynamically create an instance on-demand to run a build job you need to change the job configuration.
+To dynamically create an instance on demand to run a build job you need to change the job configuration.
 
 1. In the __Build Environment__ section, check __jclouds Instance Creation__
 1. Choose __Select Template from List__
