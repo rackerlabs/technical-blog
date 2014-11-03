@@ -11,8 +11,8 @@ categories:
     - private-cloud
     - jclouds
 bio: |
- I'm a Developer Advocate at Rackspace making OpenStack and the Rackspace Cloud easy to use for developers and operators. Sometimes developer, sometimes advocate, and sometimes operator. I'm a committer and PMC on Apache jclouds, and co-author of the OpenStack Operations Guide from O'Reilly. I love spending time with my family. If it's calm outside, we launch rockets. If it's windy, we fly kites.
- Follow me on Twitter [@everett_toews](https://twitter.com/everett_toews).
+ Everett is a Developer Advocate at Rackspace making OpenStack and the Rackspace Cloud easy to use for developers and operators. Sometimes developer, sometimes advocate, and sometimes operator. He's a committer and PMC on Apache jclouds, and co-author of the OpenStack Operations Guide from O'Reilly. He loves spending time with his family. If it's calm outside, they launch rockets. If it's windy, they fly kites.
+ Follow him on Twitter @everett_toews.
 ---
 
 This blog post will show you how to dynamically create Jenkins workers on demand using jclouds on Rackspace Private Cloud. You can use those workers to run your build jobs and increase the capacity of your continuous integration pipeline by parallelizing builds. All powered by OpenStack.
