@@ -6,9 +6,11 @@ comments: true
 author: Walter Bentley
 published: true
 categories:
-    - Rackspace Private Cloud
-    - Heat
-    - OpenStack 
+ - rackspace-private-cloud
+ - Heat
+ - OpenStack
+bio:
+ Walter Bentley is a Rackspace Private Cloud Solutions Architect with a background in Production Systems Administration and Solutions Architecture. In the past, always being the requester, consumer and advisor to companies to use technologies such as OpenStack, now promoter of OpenStack technology and Cloud educator. Twitter @djstayflypro
 ---
 
 One of the **HOT**est new projects released within the previous release of OpenStack is the Heat project.  Described as a main line project part of the OpenStack Orchestration program because Heat alone is not the complete orchestration capability being developed by the community, my gut tells me we have more projects based on orchestration coming soon.  Setting some base ground work on what Heat provides capability wise is important.  This is covered in two quick topics, what is orchestration and what is a stack?
