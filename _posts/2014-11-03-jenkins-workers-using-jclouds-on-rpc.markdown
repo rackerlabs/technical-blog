@@ -63,7 +63,7 @@ The End Point URL is the URL to the Identity (Keystone) server in your Rackspace
 
 The Identity is your tenant name followed by a ':' followed by your user name.
 
-If you don't have a Private/Public Key handy, you can create one with the command `ssh-keygen -t rsa -N '' -f .ssh/id_rsa`. Copy the contents of .ssh/id_rsa into RSA Private Key and the contents of .ssh/id_rsa.pub into Public Key.
+If you don't have a Private/Public Key handy, you can create one with the command `ssh-keygen -t rsa -N '' -f .ssh/id_rsa`. Copy the contents of `.ssh/id_rsa` into RSA Private Key and the contents of `.ssh/id_rsa.pub` into Public Key.
 
 ## Add a Cloud Instance Template
 
