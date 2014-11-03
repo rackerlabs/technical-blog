@@ -67,7 +67,7 @@ If you don't have a Private/Public Key handy, you can create one with the comman
 
 ## Add a Cloud Instance Template
 
-Now you'll need at least one template to create instances of your workers. You can create templates focued on running a specific job or more generalized templates that could build many kinds of jobs.
+Now you'll need at least one template to create instances of your workers. You can create templates focused on running a specific job or more generalized templates that could build many kinds of jobs.
 
 1. In the __Cloud Instance Templates__ section, click __Add__
 1. Fill in the following properties:
