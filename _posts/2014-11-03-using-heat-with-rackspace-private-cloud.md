@@ -15,6 +15,8 @@ bio:
 
 One of the **HOT**est new projects released within the previous release of OpenStack is the Heat project.  Described as a main line project part of the OpenStack Orchestration program because Heat alone is not the complete orchestration capability being developed by the community, my gut tells me we have more projects based on orchestration coming soon.  Setting some base ground work on what Heat provides capability wise is important.  This is covered in two quick topics, what is orchestration and what is a stack?
 
+<!-- more -->
+
 ####What is Orchestration?
 See orchestration as a way to automate the manual steps that you take to install a supporting application software or to provision infrastructure resources to support your applications. Imagine your business team asking IT to stand up servers, where each server needs to run a separate support software (Apache, JBoss and MySQL). Of course, the next request from the business team is that they need this task done for every new code release in multiple test environments. This one simple task just turned into an Infrastructure support engineer's nightmare. As we all know, especially me, personally, after 15 years of Production support, most engineers do not have the time to reproduce this task and would much rather give the business team the ability to do it themselves *(with IT oversight, of course…LOL)*. The ultimate solution? Create scripts/templates in order to automate the business request and develop it to be consumed in a self-service model. This, in essence, is the definition of Orchestration.
 
