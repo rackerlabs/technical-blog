@@ -248,7 +248,7 @@ Content of the file
       tenant: <tenant id>
       apikey: <API key>
     
-    provider: openstack
+      provider: openstack
 
 (The information required above can be found at the Rackspace Cloud Control Panel when you click the username at the very right top of the screen and click API Keys.)
 
