@@ -21,23 +21,25 @@ title: SDKs &amp; Tools
 
         <h3>Installing Gophercloud</h3>
 
-        <p>Run the following command (after installing Go):
+        <p>Run the following command (after installing Go):</p>
+
         {% highlight bash %}
         go get github.com/rackspace/gophercloud
         {% endhighlight %}
-        </p>
+
+        <p>Then use it in your code by importing it:</p>
 
         {% highlight go %}
-import (
-  "github.com/rackspace/gophercloud"
-  "github.com/rackspace/gophercloud/rackspace"
-)
-{% endhighlight %}
+        import (
+          "github.com/rackspace/gophercloud"
+          "github.com/rackspace/gophercloud/rackspace"
+        )
+        {% endhighlight %}
 
         <h4>Requirements</h4>
 
         <ol>
-          <li><a href="">Go</a></li>
+          <li><a href="http://golang.org/doc/install">Go</a></li>
           <li><a href="http://www.git-scm.com">Git</a></li>
         </ol>
       </div>
