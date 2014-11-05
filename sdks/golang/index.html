@@ -21,20 +21,20 @@ title: Go SDK
   </ol>
 
   <h2>Installation</h2>
-  <p><strong>Gophercloud</strong> is installed by executing the following command (after you have installed Go):
+  <p>Install <strong>Gophercloud</strong> by executing the following command (after you have installed Go):
   {% highlight bash %}
   go get github.com/rackspace/gophercloud
   {% endhighlight %}
   <h2>Using Gophercloud</h2>
-  <p>To interact with Rackspace using Gophercloud, you'll first need to create an authenticated 
-  Rackspace session, represented by a <em>provider</em> client. Then, you can use the provider client to 
-  obtain a <em>service</em> client to interact with a specific cloud service in a given region. The service 
-  client can be given to the request functions within that service's resource packages to interact 
+  <p>To interact with Rackspace using Gophercloud, you'll first need to create an authenticated
+  Rackspace session, represented by a <em>provider</em> client. Then, you can use the provider client to
+  obtain a <em>service</em> client to interact with a specific cloud service in a given region. The service
+  client can be given to the request functions within that service's resource packages to interact
   with the service.</p>
   <p>In this example, we'll interact with the object storage service:</p>
 
   {% highlight go %}
-  
+
 import (
   "github.com/rackspace/gophercloud"
   "github.com/rackspace/gophercloud/rackspace"
@@ -61,13 +61,3 @@ metadata, err := accounts.Get(service).ExtractMetadata()
     <li>IRC: #rackspace-dev on Freenode</li>
   </ul>
 </div>
-
-
-
-
-
-
-
-
-
-
