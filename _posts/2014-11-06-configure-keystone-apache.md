@@ -140,3 +140,5 @@ Enable Keystone site
 Reload Apache
 
     sudo service apache2 reload
+
+For schedules and more information, check out our [OpenStack Training Academy](http://training.rackspace.com/)
