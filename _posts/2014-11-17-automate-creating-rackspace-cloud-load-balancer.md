@@ -12,9 +12,9 @@ categories:
 
 Recently I embarked on a customer project where they wanted to dynamically create (automate) a complete application stack, starting from the base server provisioning all the way up to the application deployment.  One piece of the puzzle that was normally seen as something done manually…is now being considered as part of the stack.  This would be the load balancers and any configurations related to it.  
 
+<!-- more -->
 **In this exercise we will step thru automating:**
-
-
+<!-- more -->
    * Creation of Cloud Load Balancer
    * Create DNS subdomain associated with the load balancer
    * Enable SSL Termination and add an SSL certificate
