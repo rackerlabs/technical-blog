@@ -6,7 +6,7 @@ comments: true
 author: Walter Bentley
 published: true
 categories:
-    - Rackspace Public Cloud
+    - rackspace-public-cloud
     - Ansible 
 ---
 
