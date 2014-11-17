@@ -6,14 +6,18 @@ comments: true
 author: Walter Bentley
 published: true
 categories:
-    - Rackspace Private Cloud
+    - rackspace-private-cloud
     - v9.0
     - Ansible
     - OpenStack
-    - Icehouse 
+    - Icehouse
+bio:
+  Walter Bentley – Rackspace Private Cloud Solutions Architect – Walter is a new Racker with a diverse background in Production Systems Administration and Solutions Architecture. He brings over 15 years of experience across numerous industries such as Online Marketing, Financial, Insurance, Aviation, Food Industry and Education. In the past, always being the requestor, consumer and advisor to companies to use technologies such as OpenStack, now promoter of OpenStack technology and Cloud educator. You can find him on Twitter as @djstayflypro
 ---
 
 In the newest release of the Rackspace Private Cloud (RPC v9.0), we made changes to the reference architecture for improved stability. These changes included a different approach for deploying the cloud internally, which may also interest anyone looking into running the Rackspace private cloud.  The decision to use Ansible going forward was based on two major thoughts: ease of deployment and flexible configuration.  Ansible made it very easy for Rackspace to simplify the overall deployment and give users the ability to reconfigure the deployment as needed to fit their environments.  Are you familiar with Ansible?  If yes…skip the next paragraph and if not, please read on.
+
+<!-- more -->
 
 ####What is Ansible?
 **Ansible** is an IT automation tool that can be used to configure, deploy and orchestrate many different Infrastructure based tasks.  For example, use Ansible for: system configuration, software deployment, application or infrastructure orchestration, and yes, to eventually replace most infrastructure folks…*just kidding…maybe*?  With my many years of supporting Production based applications, with tools like Ansible on the rise, the writing would have certainly been on the wall.  <u>Major word of advice for Infrastructure engineers…LEARN one of the many orchestration tools and begin to love the term DevOps.</u>  
