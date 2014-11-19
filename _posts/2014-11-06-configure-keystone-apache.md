@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Configure Keystone to Utilize Apache 2"
+title: "Configure Keystone to Utilize Apache"
 date: 2014-11-06 17:20
 comments: true
 author: Matt Dorn
@@ -14,7 +14,14 @@ bio:
  Matt Dorn is a Cloud Technology Instructor with Rackspace focused on helping IT teams around the world build private clouds with OpenStack. You can find his blog at http://www.madorn.com/
 ---
 
-Keystone has the ability to leverage Apache as its front end.  This configuration is becoming more popular with OpenStack deployments lately.  Here is a straight forward guide on how to setup Keystone to utilize Apache in your existing OpenStack deployment.
+Keystone and many current OpenStack API components run in an [Eventlet](http://eventlet.net/) based http server.  Eventlet is designed to perform well in networked environments and handles everything in a single thread.
+
+The developers responsible for the Keystone project have recently recommended using Apache (with the mod_wsgi module) as a front-end rather than the traditional “Keystone” Eventlet-based process.
+
+By using Apache as the front-end for Keystone, one gains better performance due to Apache’s ability to do multithreading.  One can also take advantage of the variety of http server modules currently available for Apache.  One popular module, [Shibboleth](http://shibboleth.net), provides the ability to use one set of credentials to authenticate against multiple OpenStack clouds (more info [here](http://docs.openstack.org/developer/keystone/configure_federation.html)).
+
+Here is a straight forward guide on how to setup Keystone to utilize Apache in your existing OpenStack deployment.
+
 
 <!-- more -->
 
