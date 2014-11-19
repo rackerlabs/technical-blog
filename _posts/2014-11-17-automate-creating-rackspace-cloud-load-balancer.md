@@ -12,6 +12,8 @@ categories:
 
 Recently I embarked on a customer project where they wanted to dynamically create (automate) a complete application stack, starting from the base server provisioning all the way up to the application deployment.  One piece of the puzzle, previously seen as something to be done manually but now considered as part of the stack, is load balancers and any configurations related to load balancing.  
 
+There was an earlier blog post from Jesse Keating on [Rolling Deployments with Ansible and Cloud Load Balancers](https://developer.rackspace.com/blog/rolling-deployments-with-ansible-and-cloud-load-balancers/), which also covered automating creating load balancers with Ansible.  The major difference with this post is adding in the additional capability to not only create the load balancer but, also a DNS record to associate with it, enable SSL termination and adding an SSL certificate to that load balancer.
+
 <!-- more -->
 **In this exercise, we step through the automation process:**
    * Create a Cloud Load Balancer
