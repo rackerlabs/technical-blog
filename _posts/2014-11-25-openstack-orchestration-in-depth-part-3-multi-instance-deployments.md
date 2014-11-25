@@ -100,7 +100,7 @@ You may be surprised, but these templates have absolutely no magic in them. They
 
 The MySQL template defines four outputs, which a master template may need. They are the instance name, IP address, network port and the database password for the database that was created. The Wordpress template takes as input the database credentials, and exports just three outputs for the name, IP address and network port of the server.
 
-If you want to see these templates, please go ahead and take a look at them in my GitHub repository. Here are [heat_3_mysql.yaml](https://raw.githubusercontent.com/miguelgrinberg/heat-tutorial/master/heat_2_mysql.yaml) and [heat_3_wordpress.yaml](https://raw.githubusercontent.com/miguelgrinberg/heat-tutorial/master/heat_3_wordpress.yaml).
+If you want to see these templates, please go ahead and take a look at them in my GitHub repository. Here are [lib/mysql.yaml](https://raw.githubusercontent.com/miguelgrinberg/heat-tutorial/master/lib/mysql.yaml) and [lib/wordpress.yaml](https://raw.githubusercontent.com/miguelgrinberg/heat-tutorial/master/lib/wordpress.yaml).
 
 ## Launching Nested-Template Stacks
 
@@ -112,18 +112,7 @@ You can launch the entire collection of templates with the `heat` command line c
 
 So as you see, there's nothing new here. You just launch the master template, and the nested templates make it into Heat automatically. And as always, if you need to customize any of the parameters in the master template such as the name of the private network, then you can use the `-P` option, as I demonstrated in previous examples.
 
-Unfortunately, a collection of templates sitting in your local disk cannot be launched as easily from Horizon, since the web-based interface to Heat does not currently support uploading more than one template at a time. If you need to use Horizon, then you have to replace the local file references in the master template with URLs, and then Heat will download the sub-templates on its own:
-
-    resources:
-      mysql:
-        type: https://raw.githubusercontent.com/miguelgrinberg/heat-tutorial/master/heat_3a_mysql.yaml
-        # ...
-
-      wordpress:
-        type: https://raw.githubusercontent.com/miguelgrinberg/heat-tutorial/master/heat_3a_wordpress.yaml
-        # ...
-
-If you launch this set of templates, you will end up with two new instances, both on the private network provided as an input (or the default network `private` if you did not provide a value for this parameter). You can now manually add a floating IP address to the Wordpress instance and connect to it from your web browser, which will bring you to the Wordpress setup page.
+Unfortunately, a collection of templates sitting in your local disk cannot be launched as easily from Horizon, since the web-based interface to Heat does not currently support uploading more than one template at a time.
 
 ## Adding a Dedicated Private Network
 
@@ -275,7 +264,7 @@ After you launch this template, you can just let it run for a couple of minutes,
 
 ## Using Heat Environments
 
-The heat command line client is pretty smart, it finds all the nested template references in the master template and then uploads all the needed files to Heat as a package. Unfortunately Horizon does not have the ability to do that at this time, so the templates I showed you above, or actually any templates that reference other templates, cannot be launched from the web dashboard.
+The heat command line client is pretty smart, it finds all the nested template references in the master template and then uploads all the needed files to Heat as a package. But as I mentioned above, Horizon does not have the ability to do that at this time, so the templates I showed you above, or actually any templates that reference other templates, cannot be launched from the web dashboard.
 
 Heat provides an alternative way to nest templates called *environments*, which Horizon supports. An environment file is a YAML file that has global definitions that are imported before a template is parsed. What's interesting is that an environment file can be used to assign custom resource types to nested templates. Consider the following environment file:
 
