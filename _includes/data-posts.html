@@ -3,54 +3,59 @@
 <div class="container">
 
     <div class="row">
-        <h1>Relevent Blog Posts</h1>
+        <h1>Database Blog Posts</h1><br>
     </div>
 
     <div class="row">
-        <p>Check out blog entries from experts on various data technologies, case studies, benchmarks, and how-to's.</p>
-        <p>
 
-            {% for category in site.categories %}
-            <ul>
+        <div class="col-md-9">
 
-                {% assign item = category | first %}
+        {% for post in site.posts %}
 
-                {% if data_categories contains item %}
-                <li>
-                    <a href="/blog/categories/{{ category | first | replace: ' ', '-' | slugize }}/">
-                    {{ category | first }} ( {{ category | last | size }} )
-                    </a>
-                </li>
+            {% assign show_post = false %}
+
+            {% for category in data_categories %}
+                {% if post.categories contains category %}
+                    {% assign show_post = true %}
                 {% endif %}
-
-            </ul>
             {% endfor %}
 
-        </p>
-    </div>
-
-    {% for post in site.posts %}
-
-        {% assign show_post = false %}
-
-        {% for category in data_categories %}
-            {% if post.categories contains category %}
-                {% assign show_post = true %}
+            {% if show_post %}
+            <div class="blog-tease">
+              <h2 class="blog-tease-title"><a href="{{ BASE_PATH }}{{ post.url }}">
+                {{ post.title }}</a></h4>
+              <div class="byline">By {{ post.author }} - Posted on {{ post.date | date: "%b %-d %Y" }} {% for item in post.categories %} {{item}} {% endfor %}
+              </div>
+              <p>{{post.excerpt}}</p>
+              <a href="{{ BASE_PATH }}{{ post.url }}" class="btn btn-primary">Read More</a>
+              <hr />
+            </div>
             {% endif %}
+
         {% endfor %}
 
-        {% if show_post %}
-        <div class="blog-tease">
-          <h2 class="blog-tease-title"><a href="{{ BASE_PATH }}{{ post.url }}">
-            {{ post.title }}</a></h4>
-          <div class="byline">By {{ post.author }} - Posted on {{ post.date | date: "%b %-d %Y" }} {% for item in post.categories %} {{item}} {% endfor %}
-          </div>
-          <p>{{post.excerpt}}</p>
-          <a href="{{ BASE_PATH }}{{ post.url }}" class="btn btn-primary">Read More</a>
-          <hr />
         </div>
-        {% endif %}
+        <div class="col-md-3 well">
+            <strong>Categories</strong>
+            <p>
 
-    {% endfor %}
+                {% for category in site.categories %}
+                <ul>
 
+                    {% assign item = category | first %}
+
+                    {% if data_categories contains item %}
+                    <li>
+                        <a href="/blog/categories/{{ category | first | replace: ' ', '-' | slugize }}/">
+                        {{ category | first }} ( {{ category | last | size }} )
+                        </a>
+                    </li>
+                    {% endif %}
+
+                </ul>
+                {% endfor %}
+
+            </p>
+        </div>
+    </div>
 </div>
