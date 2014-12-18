@@ -1,0 +1,120 @@
+<div class="container">
+    <div class="row">
+        <h1>Product Landscape</h1>
+        <p>There are a mix of suitable product offerings for data projects at Rackspace. We have encapsulated the options here to make finding a suitable place to host your data easier.</p>
+    </div>
+
+    <div class="col-md-5 databases-products-left">
+        <div id="button_elasticsearch" class="databases-products-bin-selected"><a href="#">ElasticSearch</a></div>
+        <div id="button_mysql" class="databases-products-bin"><a href="#">MySQL</a></div>
+        <div id="button_oracle" class="databases-products-bin"><a href="#">Oracle&reg;</a></div>
+        <div id="button_mongodb" class="databases-products-bin"><a href="#">MongoDB</a></div>
+        <div id="button_cassandra" class="databases-products-bin"><a href="#">Cassandra</a></div>
+        <div id="button_postgresql" class="databases-products-bin"><a href="#">PostgreSQL</a></div>
+        <div id="button_sqlserver" class="databases-products-bin"><a href="#">SQL Server&reg;</a></div>
+        <div id="button_other" class="databases-products-bin"><a href="#">Other</a></div>
+    </div>
+
+    <div class="col-md-5 databases-products-bin-right">
+
+        <div id="service_managed" class="databases-product-well">
+            <h3><a href="http://www.objectrocket.com">ObjectRocket by Rackspace</a></h3>
+            <h4>ObjectRocket is a fully managed, all-in-one offering.</h4>
+        </div>
+        <div id="service_private" class="databases-product-well">
+            <h3><a href="http://www.rackspace.com/cloud/private">Private Cloud</a></h3>
+            <h4>Fully customizable, dedicated, on or off premise options.</h4>
+        </div>
+        <div id="service_public" class="databases-product-well">
+            <h3><a href="http://www.rackspace.com/cloud">Managed Cloud</a></h3>
+            <h4>Cloud performance servers, raw infrastructure for DIY.</h4>
+        </div>
+        <div id="service_dba" class="databases-product-well">
+            <h3><a href="http://www.rackspace.com/dba-services">DBA Services</a></h3>
+            <h4>DBA managed infrastructure, typically on Private Cloud.</h4>
+        </div>
+
+    </div>
+</div>
+
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+
+    $( document ).ready(function() {
+
+        function show_all(){
+            $("#service_managed").show(10);
+            $("#service_private").show(10);
+            $("#service_public").show(10);
+            $("#service_dba").show(10);
+        }
+
+        function unset_all_selections(){
+            $("#button_elasticsearch").removeClass("databases-products-bin-selected").addClass("databases-products-bin");
+            $("#button_mysql").removeClass("databases-products-bin-selected").addClass("databases-products-bin");
+            $("#button_oracle").removeClass("databases-products-bin-selected").addClass("databases-products-bin");
+            $("#button_mongodb").removeClass("databases-products-bin-selected").addClass("databases-products-bin");
+            $("#button_redis").removeClass("databases-products-bin-selected").addClass("databases-products-bin");
+            $("#button_postgresql").removeClass("databases-products-bin-selected").addClass("databases-products-bin");
+            $("#button_cassandra").removeClass("databases-products-bin-selected").addClass("databases-products-bin");
+            $("#button_sqlserver").removeClass("databases-products-bin-selected").addClass("databases-products-bin");
+        }
+
+        function set_selection(class_name){
+            $(class_name).removeClass("databases-products-bin").addClass("databases-products-bin-selected");
+        }
+
+        $("#button_oracle").click(function(){
+            show_all();
+            unset_all_selections();
+            set_selection("#button_oracle");
+            $("#service_managed").hide(1000);
+        });
+
+        $("#button_sqlserver").click(function(){
+            show_all();
+            unset_all_selections();
+            set_selection("#button_sqlserver");
+            $("#service_managed").hide(1000);
+        });
+
+        $("#button_mongodb").click(function(){
+            show_all();
+            unset_all_selections();
+            set_selection("#button_mongodb");
+            $("#service_dba").hide(1000);
+        });
+
+        $("#button_cassandra").click(function(){
+            show_all();
+            unset_all_selections();
+            set_selection("#button_cassandra");
+            $("#service_dba").hide(1000);
+            $("#service_managed").hide(1000);
+        });
+
+        $("#button_mysql").click(function(){
+            unset_all_selections();
+            set_selection("#button_mysql");
+            show_all();
+        });
+
+        $("#button_postgresql").click(function(){
+            show_all();
+            unset_all_selections();
+            set_selection("#button_postgresql");
+            $("#service_dba").hide(1000);
+            $("#service_managed").hide(1000);
+        });
+
+        $("#button_elasticsearch").click(function(){
+            show_all();
+            unset_all_selections();
+            set_selection("#button_elasticsearch");
+            $("#service_dba").hide(1000);
+        });
+
+        console.log("loaded and ready 39..");
+    });
+
+</script>
