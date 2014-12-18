@@ -5,8 +5,8 @@
     </div>
 
     <div class="col-md-5 databases-products-left">
-        <div id="button_elasticsearch" class="databases-products-bin-selected"><a href="#">ElasticSearch</a></div>
-        <div id="button_mysql" class="databases-products-bin"><a href="#">MySQL</a></div>
+        <div id="button_elasticsearch" class="databases-products-bin"><a href="#">ElasticSearch</a></div>
+        <div id="button_mysql" class="databases-products-bin-selected"><a href="#">MySQL</a></div>
         <div id="button_oracle" class="databases-products-bin"><a href="#">Oracle&reg;</a></div>
         <div id="button_mongodb" class="databases-products-bin"><a href="#">MongoDB</a></div>
         <div id="button_cassandra" class="databases-products-bin"><a href="#">Cassandra</a></div>
@@ -19,19 +19,19 @@
 
         <div id="service_managed" class="databases-product-well">
             <h3><a href="http://www.objectrocket.com">ObjectRocket by Rackspace</a></h3>
-            <h4>ObjectRocket is a fully managed, all-in-one offering.</h4>
+            <p>ObjectRocket is a fully managed, all-in-one offering.</p>
         </div>
         <div id="service_private" class="databases-product-well">
             <h3><a href="http://www.rackspace.com/cloud/private">Private Cloud</a></h3>
-            <h4>Fully customizable, dedicated, on or off premise options.</h4>
+            <p>Fully customizable, dedicated, on or off premise options.</p>
         </div>
         <div id="service_public" class="databases-product-well">
             <h3><a href="http://www.rackspace.com/cloud">Managed Cloud</a></h3>
-            <h4>Cloud performance servers, raw infrastructure for DIY.</h4>
+            <p>Cloud performance servers, raw infrastructure for DIY.</p>
         </div>
         <div id="service_dba" class="databases-product-well">
             <h3><a href="http://www.rackspace.com/dba-services">DBA Services</a></h3>
-            <h4>DBA managed infrastructure, typically on Private Cloud.</h4>
+            <p>DBA managed infrastructure, typically on Private Cloud.</p>
         </div>
 
     </div>
@@ -58,6 +58,7 @@
             $("#button_postgresql").removeClass("databases-products-bin-selected").addClass("databases-products-bin");
             $("#button_cassandra").removeClass("databases-products-bin-selected").addClass("databases-products-bin");
             $("#button_sqlserver").removeClass("databases-products-bin-selected").addClass("databases-products-bin");
+            $("#button_other").removeClass("databases-products-bin-selected").addClass("databases-products-bin");
         }
 
         function set_selection(class_name){
@@ -114,7 +115,14 @@
             $("#service_dba").hide(1000);
         });
 
-        console.log("loaded and ready 39..");
+        $("#button_other").click(function(){
+            show_all();
+            unset_all_selections();
+            set_selection("#button_other");
+            $("#service_dba").hide(1000);
+            $("#service_managed").hide(1000);
+        });
+
     });
 
 </script>
