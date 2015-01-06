@@ -1,39 +1,84 @@
 <div class="container">
     <div class="row">
-        <h1>Product Landscape</h1>
-        <p>There are a mix of suitable product offerings for data projects at Rackspace. We have encapsulated the options here to make finding a suitable place to host your data easier.</p>
+        <h1>Database Technologies at Rackspace</h1>
+        <p>Select a database technology on the left to see basic info, links and related Rackspace product offerings for that particular technology.</p>
     </div>
 
-    <div class="col-md-5 databases-products-left">
-        <div id="button_elasticsearch" class="databases-products-bin"><a href="#">ElasticSearch</a></div>
-        <div id="button_mysql" class="databases-products-bin-selected"><a href="#">MySQL</a></div>
-        <div id="button_oracle" class="databases-products-bin"><a href="#">Oracle&reg;</a></div>
-        <div id="button_mongodb" class="databases-products-bin"><a href="#">MongoDB</a></div>
-        <div id="button_cassandra" class="databases-products-bin"><a href="#">Cassandra</a></div>
-        <div id="button_postgresql" class="databases-products-bin"><a href="#">PostgreSQL</a></div>
-        <div id="button_sqlserver" class="databases-products-bin"><a href="#">SQL Server&reg;</a></div>
+    <div class="col-md-2 databases-products-left">
+        <div id="button_mysql" class="databases-products-bin-selected"><a href="#"><img height=20 src="{% asset_path my-sql-logo.png %}" alt="MySQL"></a></div>
+        <div id="button_mongodb" class="databases-products-bin"><a href="#"><img height=20 src="{% asset_path mongo-db-logo.png %}" alt="MongoDB"></a></div>
+        <div id="button_cassandra" class="databases-products-bin"><a href="#"><img height=20 src="{% asset_path apache-cassandra-logo.png %}" alt="Cassandra"></a></div>
+        <div id="button_postgresql" class="databases-products-bin"><a href="#"><img height=20 src="{% asset_path postgre-sql-logo.png %}" alt="PostgreSQL"></a></div>
+        <div id="button_oracle" class="databases-products-bin"><a href="#"><img height=20 src="{% asset_path oracle-logo.png %}" alt="Oracle&reg;"></a></div>
+        <div id="button_sqlserver" class="databases-products-bin"><a href="#"><img height=20 src="{% asset_path ms-sql-logo.png %}" alt="SQL Server&reg;"></a></div>
+        <div id="button_redis" class="databases-products-bin"><a href="#"><img height=20 src="{% asset_path redis-logo.png %}" alt="Redis"></a></div>
+        <div id="button_elasticsearch" class="databases-products-bin"><a href="#"><img height=20 src="{% asset_path elastic-search-logo.png %}" alt="ElasticSearch"></a></div>
+        <div id="button_spark" class="databases-products-bin"><a href="#"><img height=20 src="{% asset_path spark-logo.png %}" alt="Spark"></a></div>
         <div id="button_other" class="databases-products-bin"><a href="#">Other</a></div>
     </div>
 
-    <div class="col-md-5 databases-products-bin-right">
+    <div class="col-md-9 databases-products-bin-right">
+        <div class="databases-product-well databases-product-desc">
+            <h1>MongoDB</h1>
+            <div>
+                <ul class="piped-list">
+                    <li><a href="blog/categories/mongodb/">Blog Posts</a></li>
+                    <li><a href="#">Getting Started</a></li>
+                    <li><a href="#">API Reference</a></li>
+                    <li><a href="#">Developer Guide</a></li>
+                </ul>
+            </div>
+            <p>
+                MongoDB is a document database. It's native data format is BSON (similar to JSON). MongoDB is schema-less, includes constructs for high availability and has built in horizontal scaling.
+                It has a deep community and rich driver ecosystem to work with just about any popular language.
+            </p>
+            <h3>Use cases</h3>
+            <p>
+                MongoDB is a great for projects that natively use JSON data structures, have dynamic schemas, and where ease and speed of development is paramount. It's very fast and easily scalable for a wide
+                variety of use cases.
+            </p>
+            <h3>Products and Services</h3>
 
-        <div id="service_managed" class="databases-product-well">
-            <h3><a href="http://www.objectrocket.com">ObjectRocket by Rackspace</a></h3>
-            <p>ObjectRocket is a fully managed, all-in-one offering.</p>
-        </div>
-        <div id="service_private" class="databases-product-well">
-            <h3><a href="http://www.rackspace.com/cloud/private">Private Cloud</a></h3>
-            <p>Fully customizable, dedicated, on or off premise options.</p>
-        </div>
-        <div id="service_public" class="databases-product-well">
-            <h3><a href="http://www.rackspace.com/cloud">Managed Cloud</a></h3>
-            <p>Cloud performance servers, raw infrastructure for DIY.</p>
-        </div>
-        <div id="service_dba" class="databases-product-well">
-            <h3><a href="http://www.rackspace.com/dba-services">DBA Services</a></h3>
-            <p>DBA managed infrastructure, typically on Private Cloud.</p>
-        </div>
+            <div id="service_public" class="databases-product-well">
+                <h4><img class="product-image" src="{% asset_path cloud-servers-icon.png %}" class="databases-product-image" alt="">Managed Cloud</h4>
+                <ul class="piped-list ">
+                    <li><a href="#">Getting Started</a></li>
+                    <li><a href="#">Code, scripts, tools</a></li>
+                </ul>
+                <p class="databases-product-desc">Cloud performance servers, raw infrastructure for doing it yourself. This is generally the lowest price point with the most simple
+                feature set. Large capacity and SSD options allow for tailoring to specific requirements.</p>
+            </div>
 
+            <div id="service_private" class="databases-product-well">
+                <h4><img class="product-image" src="{% asset_path cloud-databases-icon.png %}" class="databases-product-image" alt="">Private Cloud</h4>
+                <ul class="piped-list">
+                    <li><a href="#">Services and contact info</a></li>
+                </ul>
+                <p class="databases-product-desc">Fully customizable, dedicated, on or off premise options. Typically bare metal systems that can be configured as needed.
+                 Best for existing datacenter deployments, fully custom configurations, or meeting regulatory requirements.</p>
+            </div>
+
+            <div id="service_managed" class="databases-product-well">
+                <h4><img class="product-image" src="{% asset_path or-logo.png %}" class="databases-product-image"  alt="">Fully Managed, as a Service</h4>
+                <ul class="piped-list">
+                    <li><a href="#">Getting Started</a></li>
+                    <li><a href="#">API Reference</a></li>
+                    <li><a href="#">Blog Posts</a></li>
+                </ul>
+                <p class="databases-product-desc">ObjectRocket is a fully managed, high-performance, end-to-end solution. Great for high performance, large, tricky, or busy datasets.
+                A higher price point and 100% managed.</p>
+            </div>
+
+            <div id="service_dba" class="databases-product-well">
+                <h4><img class="product-image" src="{% asset_path dba-services-icon.png %}" class="databases-product-image" alt="">DBA Services</h4>
+                <ul class="piped-list">
+                    <li><a href="#">Services and contact info</a></li>
+                </ul>
+                <p class="databases-product-desc">DBA managed infrastructure, typically on Private Cloud. DBA's with expertise in a wide variety of technologies,
+                practices, and architectures. A good choice when new to a technology or need to augment your existing team.</p>
+            </div>
+
+        </div>
     </div>
 </div>
 
@@ -58,6 +103,8 @@
             $("#button_postgresql").removeClass("databases-products-bin-selected").addClass("databases-products-bin");
             $("#button_cassandra").removeClass("databases-products-bin-selected").addClass("databases-products-bin");
             $("#button_sqlserver").removeClass("databases-products-bin-selected").addClass("databases-products-bin");
+            $("#button_redis").removeClass("databases-products-bin-selected").addClass("databases-products-bin");
+            $("#button_spark").removeClass("databases-products-bin-selected").addClass("databases-products-bin");
             $("#button_other").removeClass("databases-products-bin-selected").addClass("databases-products-bin");
         }
 
@@ -112,6 +159,20 @@
             show_all();
             unset_all_selections();
             set_selection("#button_elasticsearch");
+            $("#service_dba").hide(1000);
+        });
+
+        $("#button_redis").click(function(){
+            show_all();
+            unset_all_selections();
+            set_selection("#button_redis");
+            $("#service_dba").hide(1000);
+        });
+
+        $("#button_spark").click(function(){
+            show_all();
+            unset_all_selections();
+            set_selection("#button_spark");
             $("#service_dba").hide(1000);
         });
 
