@@ -1,26 +1,24 @@
-<!-- temp -->
 <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
-
 <div class="container database-products">
 
+    <div class="col-md-1"></div>
+
     <div role="tabpanel">
-        <ul class="col-md-2 databases-products-left" role="tablist">
-            <li role="presentation" class="databases-products-bin-selected"><a href="#mysql" aria-controls="mysql" role="tab" data-toggle="tab">MySQL</a></li>
-            <li role="presentation" class="databases-products-bin"><a href="#postgresql" aria-controls="postgresql" role="tab" data-toggle="tab">PostgreSQL</a></li>
-            <li role="presentation" class="databases-products-bin"><a href="#mongo" aria-controls="mongo" role="tab" data-toggle="tab">MongoDB</a></li>
-            <li role="presentation" class="databases-products-bin"><a href="#cassandra" aria-controls="cassandra" role="tab" data-toggle="tab">Cassandra</a></li>
-            <li role="presentation" class="databases-products-bin"><a href="#redis" aria-controls="redis" role="tab" data-toggle="tab">Redis</a></li>
-            <li role="presentation" class="databases-products-bin"><a href="#hadoop" aria-controls="hadoop" role="tab" data-toggle="tab">Hadoop</a></li>
-            <li role="presentation" class="databases-products-bin"><a href="#spark" aria-controls="spark" role="tab" data-toggle="tab">Spark</a></li>
-            <li role="presentation" class="databases-products-bin"><a href="#oracle" aria-controls="oracle" role="tab" data-toggle="tab">Oracle&reg;</a></li>
-            <li role="presentation" class="databases-products-bin"><a href="#sqlserver" aria-controls="sqlserver" role="tab" data-toggle="tab">SQL Server&reg;</a></li>
-            <li role="presentation" class="databases-products-bin"><a href="#elasticsearch" aria-controls="elasticsearch" role="tab" data-toggle="tab">Elastic Search</a></li>
+        <ul class="col-md-3 databases-products-left" role="tablist" id="tabs" data-tabs="tabs">
+            <li role="presentation" id="button_mysql" class="databases-products-bin-selected"><a href="#mysql" aria-controls="mysql" role="tab" data-toggle="tab">MySQL</a></li>
+            <li role="presentation" id="button_postgresql" class="databases-products-bin"><a href="#postgresql" aria-controls="postgresql" role="tab" data-toggle="tab">PostgreSQL</a></li>
+            <li role="presentation" id="button_mongodb" class="databases-products-bin"><a href="#mongo" aria-controls="mongo" role="tab" data-toggle="tab">MongoDB</a></li>
+            <li role="presentation" id="button_redis" class="databases-products-bin"><a href="#redis" aria-controls="redis" role="tab" data-toggle="tab">Redis</a></li>
+            <li role="presentation" id="button_hadoop" class="databases-products-bin"><a href="#hadoop" aria-controls="hadoop" role="tab" data-toggle="tab">Hadoop</a></li>
+            <li role="presentation" id="button_oracle" class="databases-products-bin"><a href="#oracle" aria-controls="oracle" role="tab" data-toggle="tab">Oracle&reg;</a></li>
+            <li role="presentation" id="button_sqlserver" class="databases-products-bin"><a href="#sqlserver" aria-controls="sqlserver" role="tab" data-toggle="tab">SQL Server&reg;</a></li>
+            <li role="presentation" id="button_elasticsearch" class="databases-products-bin"><a href="#elasticsearch" aria-controls="elasticsearch" role="tab" data-toggle="tab">Elastic Search</a></li>
         </ul>
     </div>
 
-    <div class="col-md-10 tab-content databases-products-bin-right">
+    <div class="col-md-7 tab-content databases-products-bin-right">
 
         <!-- mysql -->
         <div role="tabpanel" class="tab-pane active" id="mysql">
@@ -34,16 +32,17 @@
                 </p>
 
                 <ul class="piped-list">
-                    <li><a href="blog/categories/mongodb/">Blog Posts</a></li>
-                    <li><a href="#">Getting Started</a></li>
-                    <li><a href="#">API Reference</a></li>
-                    <li><a href="#">Developer Guide</a></li>
+                    <li><a href="/blog/categories/mysql/">Blog Posts</a></li>
+                    <li><a href="http://dev.mysql.com/usingmysql/get_started.html">Getting Started</a></li>
+                    <li><a href="http://dev.mysql.com/doc/">MySQL Docs</a></li>
+                    <li><a href="https://github.com/rackspace-orchestration-templates/mysql-multi">Templates</a></li>
                 </ul>
 
                 <p class="databases-product-heading">Key Attributes</p>
                 <ul>
-                    <li>Relational Database (RDBMS)</li>
-                    <li>Transactions</li>
+                    <li>Relational database (RDBMS)</li>
+                    <li>GPL License (Community Edition)</li>
+                    <li>Runs on linux</li>
                     <li>Broad packaged application backend compatibility</li>
                     <li>Pluggable engine architecture</li>
                 </ul>
@@ -71,17 +70,19 @@
                 </p>
 
                 <ul class="piped-list">
-                    <li><a href="blog/categories/mongodb/">Blog Posts</a></li>
-                    <li><a href="#">Getting Started</a></li>
-                    <li><a href="#">API Reference</a></li>
-                    <li><a href="#">Developer Guide</a></li>
+                    <li><a href="/blog/categories/postgresql/">Blog Posts</a></li>
+                    <li><a href="http://www.postgresql.org/docs/9.4/interactive/index.html">PostgreSQL Docs</a></li>
+                    <li><a href="http://www.postgresql.org/download/">Download</a></li>
+                    <li><a href="https://wiki.postgresql.org/wiki/Simple_Configuration_Recommendation">Best Practices</a></li>
+                    <li><a href="http://www.postgresql.org/list/">Mailing Lists</a></li>
                 </ul>
 
                 <p class="databases-product-heading">Key Attributes</p>
                 <ul>
-                    <li>Relational Database (RDBMS)</li>
-                    <li>Transactions</li>
-                    <li></li>
+                    <li>Relational database (RDBMS)</li>
+                    <li>Free software license</li>
+                    <li>Runs on linux, FreeBSD, Solaris, Mac OS X</li>
+                    <li>SQL:2011, ACID compliant, MVCC</li>
                 </ul>
 
                 <p class="databases-product-heading">Products and Services</p>
@@ -104,17 +105,20 @@
                 </p>
 
                 <ul class="piped-list">
-                    <li><a href="blog/categories/mongodb/">Blog Posts</a></li>
-                    <li><a href="#">Getting Started</a></li>
-                    <li><a href="#">API Reference</a></li>
-                    <li><a href="#">Developer Guide</a></li>
+                    <li><a href="/blog/categories/mongodb/">Blog Posts</a></li>
+                    <li><a href="http://docs.mongodb.org/manual/tutorial/getting-started/">Getting Started</a></li>
+                    <li><a href="http://docs.mongodb.org/manual/">MongoDB Docs</a></li>
+                    <li><a href="https://github.com/rackspace-orchestration-templates/mongodb-replset">Templates</a></li>
+                    <li><a href="http://www.mongodb.org/about/community/">Community</a></li>
                 </ul>
 
                 <p class="databases-product-heading">Key Attributes</p>
                 <ul>
-                    <li>Projects built using JSON structures</li>
-                    <li>Dynamic schema's</li>
-                    <li>Mobile, Gaming, and Content Management</li>
+                    <li>Document database (JSON/BSON)</li>
+                    <li>Apache license</li>
+                    <li>Runs on linux, Mac OS X</li>
+                    <li>Atomic operations, pluggable engine architecture (2.6+), and aggregation framework</li>
+                    <li>Mobile, gaming, and content management</li>
                 </ul>
 
                 <p class="databases-product-heading">Products and Services</p>
@@ -122,39 +126,6 @@
                     <li>{% include databases-product-public.html %}</li>
                     <li>{% include databases-product-private.html %}</li>
                     <li>{% include databases-product-managed.html %}</li>
-                </ul>
-
-            </div>
-        </div>
-
-        <!-- cassandra -->
-        <div role="tabpanel" class="tab-pane" id="cassandra">
-            <div class="databases-product-well">
-                <img class="databases-product-image" src="{% asset_path apache-cassandra-logo.png %}" alt="Cassandra">
-
-                <p class="databases-well-text">
-                Apache Cassandra is an open source distributed database management system designed to handle large amounts of data across
-                many commodity servers, providing high availability with no single point of failure.
-                </p>
-
-                <ul class="piped-list">
-                    <li><a href="blog/categories/mongodb/">Blog Posts</a></li>
-                    <li><a href="#">Getting Started</a></li>
-                    <li><a href="#">API Reference</a></li>
-                    <li><a href="#">Developer Guide</a></li>
-                </ul>
-
-                <p class="databases-product-heading">Key Attributes</p>
-                <ul>
-                    <li>Projects requiring extremely availability for writes</li>
-                    <li>Near linear scalability</li>
-                    <li>Time series, general key/value workloads</li>
-                </ul>
-
-                <p class="databases-product-heading">Products and Services</p>
-                <ul>
-                    <li>{% include databases-product-public.html %}</li>
-                    <li>{% include databases-product-private.html %}</li>
                 </ul>
 
             </div>
@@ -171,11 +142,10 @@
                 </p>
 
                 <ul class="piped-list">
-                    <li><a href="blog/categories/mongodb/">Blog Posts</a></li>
-                    <li><a href="#">Getting Started</a></li>
-                    <li><a href="#">API Reference</a></li>
-                    <li><a href="#">Developer Guide</a></li>
-                    <li><a href="#">Downloads</a></li>
+                    <li><a href="/blog/categories/redis/">Blog Posts</a></li>
+                    <li><a href="http://redis.io/documentation">Redis Docs</a></li>
+                    <li><a href="http://www.rackspace.com/knowledge_center/article/redis-faq-0">FAQ</a></li>
+                    <li><a href="http://redis.io/download">Downloads</a></li>
 
                 </ul>
 
@@ -207,11 +177,10 @@
                 </p>
 
                 <ul class="piped-list">
-                    <li><a href="blog/categories/mongodb/">Blog Posts</a></li>
-                    <li><a href="#">Getting Started</a></li>
-                    <li><a href="#">API Reference</a></li>
-                    <li><a href="#">Developer Guide</a></li>
-                    <li><a href="#">Downloads</a></li>
+                    <li><a href="/blog/categories/hadoop/">Blog Posts</a></li>
+                    <li><a href="http://docs.rackspace.com/cbd/api/v1.0/cbd-getting-started/content/DB_Doc_Change_History.html">Getting Started</a></li>
+                    <li><a href="http://docs.rackspace.com/cbd/api/v1.0/cbd-devguide/content/overview.html">API Developer Guide</a></li>
+                    <li><a href="http://hadoop.apache.org/#Download+Hadoop">Downloads</a></li>
 
                 </ul>
 
@@ -219,43 +188,6 @@
                 <ul>
                     <li>Data Science/Analytics</li>
                     <li>Extreme data set sizes, parallel processing workloads.</li>
-                </ul>
-
-                <p class="databases-product-heading">Products and Services</p>
-                <ul>
-                    <li>{% include databases-product-public.html %}</li>
-                    <li>{% include databases-product-private.html %}</li>
-                    <li>{% include databases-product-managed.html %}</li>
-                </ul>
-
-            </div>
-        </div>
-
-        <!-- spark -->
-        <div role="tabpanel" class="tab-pane" id="spark">
-            <div class="databases-product-well">
-                <img class="databases-product-image" src="{% asset_path spark-logo.png %}" alt="Spark">
-
-                <p class="databases-well-text">
-                Apache Spark is an open-source cluster computing framework originally developed in the AMPLab at UC Berkeley.
-                Spark's uses in-memory primitives vs map reduce as it's core architecture.
-                </p>
-
-                <ul class="piped-list">
-                    <li><a href="blog/categories/mongodb/">Blog Posts</a></li>
-                    <li><a href="#">Getting Started</a></li>
-                    <li><a href="#">API Reference</a></li>
-                    <li><a href="#">Developer Guide</a></li>
-                    <li><a href="#">Downloads</a></li>
-
-                </ul>
-
-                <p class="databases-product-heading">Key Attributes</p>
-                <ul>
-                    <li>Data Science/Analytics</li>
-                    <li>Extreme data set sizes, parallel processing workloads</li>
-                    <li>In Memory processing architecture</li>
-                    <li>Extensions for SQL type queries, loading, and processing</li>
                 </ul>
 
                 <p class="databases-product-heading">Products and Services</p>
@@ -278,11 +210,10 @@
                 </p>
 
                 <ul class="piped-list">
-                    <li><a href="blog/categories/mongodb/">Blog Posts</a></li>
-                    <li><a href="#">Getting Started</a></li>
-                    <li><a href="#">API Reference</a></li>
-                    <li><a href="#">Developer Guide</a></li>
-                    <li><a href="#">Downloads</a></li>
+                    <li><a href="http://docs.oracle.com/database/121/index.htm">Getting Started</a></li>
+                    <li><a href="http://docs.oracle.com/en/database/database.html">Oracle Docs</a></li>
+                    <li><a href="http://docs.oracle.com/database/121/nav/portal_5.htm">Developer Guide</a></li>
+                    <li><a href="http://www.oracle.com/technetwork/database/enterprise-edition/downloads/index-092322.html">Downloads</a></li>
 
                 </ul>
 
@@ -292,6 +223,7 @@
                     <li>Large installed base, generally larger companies</li>
                     <li>Rich ecosystem, community and history</li>
                     <li>Deep partner and packaged application adoption</li>
+                    <li>Runs on Linux,Solaris,Windows,AIX,HP/UX, and more</li>
                     <li>PL/SQL data processing language extensions to SQL</li>
                 </ul>
 
@@ -315,11 +247,9 @@
                 </p>
 
                 <ul class="piped-list">
-                    <li><a href="blog/categories/mongodb/">Blog Posts</a></li>
-                    <li><a href="#">Getting Started</a></li>
-                    <li><a href="#">API Reference</a></li>
-                    <li><a href="#">Developer Guide</a></li>
-                    <li><a href="#">Downloads</a></li>
+                    <li><a href="http://msdn.microsoft.com/en-us/library/bb545450.aspx">Getting Started</a></li>
+                    <li><a href="http://social.technet.microsoft.com/wiki/contents/articles/984.sql-server-developer-resources.aspx">Developer Resources</a></li>
+                    <li><a href="http://technet.microsoft.com/en-us/sqlserver/default">Information and Downloads</a></li>
 
                 </ul>
 
@@ -354,10 +284,11 @@
                 </p>
 
                 <ul class="piped-list">
-                    <li><a href="blog/categories/mongodb/">Blog Posts</a></li>
-                    <li><a href="#">Getting Started</a></li>
-                    <li><a href="#">API Reference</a></li>
-                    <li><a href="#">Developer Guide</a></li>
+                    <li><a href="/blog/categories/elasticsearch/">Blog Posts</a></li>
+                    <li><a href="http://www.elasticsearch.org/guide/en/elasticsearch/guide/current/getting-started.html">Getting Started</a></li>
+                    <li><a href="http://www.elasticsearch.org/guide/">ElasticSearch Docs</a></li>
+                    <li><a href="http://www.elasticsearch.org/overview/elkdownloads/">Downloads</a></li>
+                    <li><a href="https://groups.google.com/forum/?fromgroups#!forum/elasticsearch">Mailing List</a></li>
                 </ul>
 
                 <p class="databases-product-heading">Key Attributes</p>
@@ -375,5 +306,67 @@
             </div>
         </div>
 
-
     </div>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+
+        function unset_all_selections(){
+
+            $("#button_mysql").removeClass("databases-products-bin-selected").addClass("databases-products-bin");
+            $("#button_postgresql").removeClass("databases-products-bin-selected").addClass("databases-products-bin");
+            $("#button_mongodb").removeClass("databases-products-bin-selected").addClass("databases-products-bin");
+            $("#button_redis").removeClass("databases-products-bin-selected").addClass("databases-products-bin");
+            $("#button_hadoop").removeClass("databases-products-bin-selected").addClass("databases-products-bin");
+            $("#button_oracle").removeClass("databases-products-bin-selected").addClass("databases-products-bin");
+            $("#button_sqlserver").removeClass("databases-products-bin-selected").addClass("databases-products-bin");
+            $("#button_elasticsearch").removeClass("databases-products-bin-selected").addClass("databases-products-bin");
+        }
+
+        function set_selection(class_name){
+            $(class_name).removeClass("databases-products-bin").addClass("databases-products-bin-selected");
+        }
+
+        $('#button_mysql').click(function(){
+            unset_all_selections();
+            set_selection('#button_mysql');
+        });
+
+        $('#button_postgresql').click(function(){
+            unset_all_selections();
+            set_selection('#button_postgresql');
+        });
+
+        $('#button_mongodb').click(function(){
+            unset_all_selections();
+            set_selection('#button_mongodb');
+        });
+
+        $('#button_redis').click(function(){
+            unset_all_selections();
+            set_selection('#button_redis');
+        });
+
+        $('#button_hadoop').click(function(){
+            unset_all_selections();
+            set_selection('#button_hadoop');
+        });
+
+        $('#button_oracle').click(function(){
+            unset_all_selections();
+            set_selection('#button_oracle');
+        });
+
+        $('#button_sqlserver').click(function(){
+            unset_all_selections();
+            set_selection('#button_sqlserver');
+        });
+
+        $('#button_elasticsearch').click(function(){
+            unset_all_selections();
+            set_selection('#button_elasticsearch');
+        });
+
+    });
+
+</script>
