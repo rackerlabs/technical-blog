@@ -1,129 +1,106 @@
 <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
+{% assign data_categories = "MySQL|PostgreSQL|MongoDB|Redis|Hadoop|Oracle|SQLServer|ElasticSearch" | split: "|" %}
+
 <div class="container database-products">
 
     <div class="col-md-1"></div>
 
     <div role="tabpanel">
         <ul class="col-md-3 databases-products-left" role="tablist" id="tabs" data-tabs="tabs">
-            <li role="presentation" id="button_mysql" class="databases-products-bin-selected"><a href="#mysql" aria-controls="mysql" role="tab" data-toggle="tab">MySQL</a></li>
-            <li role="presentation" id="button_postgresql" class="databases-products-bin"><a href="#postgresql" aria-controls="postgresql" role="tab" data-toggle="tab">PostgreSQL</a></li>
-            <li role="presentation" id="button_mongodb" class="databases-products-bin"><a href="#mongo" aria-controls="mongo" role="tab" data-toggle="tab">MongoDB</a></li>
-            <li role="presentation" id="button_redis" class="databases-products-bin"><a href="#redis" aria-controls="redis" role="tab" data-toggle="tab">Redis</a></li>
-            <li role="presentation" id="button_hadoop" class="databases-products-bin"><a href="#hadoop" aria-controls="hadoop" role="tab" data-toggle="tab">Hadoop</a></li>
-            <li role="presentation" id="button_oracle" class="databases-products-bin"><a href="#oracle" aria-controls="oracle" role="tab" data-toggle="tab">Oracle&reg;</a></li>
-            <li role="presentation" id="button_sqlserver" class="databases-products-bin"><a href="#sqlserver" aria-controls="sqlserver" role="tab" data-toggle="tab">SQL Server&reg;</a></li>
-            <li role="presentation" id="button_elasticsearch" class="databases-products-bin"><a href="#elasticsearch" aria-controls="elasticsearch" role="tab" data-toggle="tab">Elastic Search</a></li>
+
+            {% for category in data_categories %}
+
+                {% if category contains "MySQL" %}
+                    {% assign class="databases-products-bin-selected" %}
+                {% else %}
+                    {% assign class="databases-products-bin" %}
+                {% endif %}
+
+                <li role="presentation" id="button_{{category}}" class="{{class}}">
+                    <a href="#{{category}}" aria-controls="{{category}}" role="tab" data-toggle="tab">{{category}}</a>
+                </li>
+
+            {% endfor %}
+
         </ul>
     </div>
 
     <div class="col-md-7 tab-content databases-products-bin-right">
 
         <!-- mysql -->
-        <div role="tabpanel" class="tab-pane active" id="mysql">
+        <div role="tabpanel" class="tab-pane active" id="MySQL">
             {% include databases-mysql.html %}
         </div>
 
         <!-- postgresql -->
-        <div role="tabpanel" class="tab-pane" id="postgresql">
+        <div role="tabpanel" class="tab-pane" id="PostgreSQL">
             {% include databases-postgresql.html %}
         </div>
 
         <!-- mongodb -->
-        <div role="tabpanel" class="tab-pane" id="mongo">
+        <div role="tabpanel" class="tab-pane" id="MongoDB">
             {% include databases-mongodb.html %}
 
         </div>
 
         <!-- redis -->
-        <div role="tabpanel" class="tab-pane" id="redis">
+        <div role="tabpanel" class="tab-pane" id="Redis">
             {% include databases-redis.html %}
         </div>
 
         <!-- hadoop -->
-        <div role="tabpanel" class="tab-pane" id="hadoop">
+        <div role="tabpanel" class="tab-pane" id="Hadoop">
             {% include databases-hadoop.html %}
 
         </div>
 
         <!-- Oracle -->
-        <div role="tabpanel" class="tab-pane" id="oracle">
+        <div role="tabpanel" class="tab-pane" id="Oracle">
             {% include databases-oracle.html %}
 
         </div>
 
         <!-- SQLServer -->
-        <div role="tabpanel" class="tab-pane" id="sqlserver">
+        <div role="tabpanel" class="tab-pane" id="SQLServer">
             {% include databases-sqlserver.html %}
 
         </div>
 
         <!-- elasticsearch -->
-        <div role="tabpanel" class="tab-pane" id="elasticsearch">
+        <div role="tabpanel" class="tab-pane" id="ElasticSearch">
             {% include databases-elasticsearch.html %}
         </div>
 
     </div>
+
+</div>
+
 
 <script type="text/javascript">
     $(document).ready(function(){
 
         function unset_all_selections(){
 
-            $("#button_mysql").removeClass("databases-products-bin-selected").addClass("databases-products-bin");
-            $("#button_postgresql").removeClass("databases-products-bin-selected").addClass("databases-products-bin");
-            $("#button_mongodb").removeClass("databases-products-bin-selected").addClass("databases-products-bin");
-            $("#button_redis").removeClass("databases-products-bin-selected").addClass("databases-products-bin");
-            $("#button_hadoop").removeClass("databases-products-bin-selected").addClass("databases-products-bin");
-            $("#button_oracle").removeClass("databases-products-bin-selected").addClass("databases-products-bin");
-            $("#button_sqlserver").removeClass("databases-products-bin-selected").addClass("databases-products-bin");
-            $("#button_elasticsearch").removeClass("databases-products-bin-selected").addClass("databases-products-bin");
+            {% for category in data_categories %}
+                $("#button_{{category}}").removeClass("databases-products-bin-selected").addClass("databases-products-bin");
+            {% endfor %}
+
         }
 
         function set_selection(class_name){
             $(class_name).removeClass("databases-products-bin").addClass("databases-products-bin-selected");
         }
 
-        $('#button_mysql').click(function(){
-            unset_all_selections();
-            set_selection('#button_mysql');
-        });
+        {% for category in data_categories %}
 
-        $('#button_postgresql').click(function(){
-            unset_all_selections();
-            set_selection('#button_postgresql');
-        });
+            $('#button_{{category}} a').click(function(){
+                unset_all_selections();
+                set_selection('#button_{{category}}');
+            });
 
-        $('#button_mongodb').click(function(){
-            unset_all_selections();
-            set_selection('#button_mongodb');
-        });
-
-        $('#button_redis').click(function(){
-            unset_all_selections();
-            set_selection('#button_redis');
-        });
-
-        $('#button_hadoop').click(function(){
-            unset_all_selections();
-            set_selection('#button_hadoop');
-        });
-
-        $('#button_oracle').click(function(){
-            unset_all_selections();
-            set_selection('#button_oracle');
-        });
-
-        $('#button_sqlserver').click(function(){
-            unset_all_selections();
-            set_selection('#button_sqlserver');
-        });
-
-        $('#button_elasticsearch').click(function(){
-            unset_all_selections();
-            set_selection('#button_elasticsearch');
-        });
+        {% endfor %}
 
     });
 
