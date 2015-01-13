@@ -22,288 +22,46 @@
 
         <!-- mysql -->
         <div role="tabpanel" class="tab-pane active" id="mysql">
-            <div class="databases-product-well">
-                <img class="databases-product-image" src="{% asset_path my-sql-logo.png %}" alt="MongoDB">
-
-                <p class="databases-well-text">
-                MySQL is an open source relational database management system. It has a massive ecosystem of compatible
-                drivers, services, plugins and add-ons. MySQL has a pluggable engine architecture, and requires very little
-                management.
-                </p>
-
-                <ul class="piped-list">
-                    <li><a href="/blog/categories/mysql/">Blog Posts</a></li>
-                    <li><a href="http://dev.mysql.com/usingmysql/get_started.html">Getting Started</a></li>
-                    <li><a href="http://dev.mysql.com/doc/">MySQL Docs</a></li>
-                    <li><a href="https://github.com/rackspace-orchestration-templates/mysql-multi">Templates</a></li>
-                </ul>
-
-                <p class="databases-product-heading">Key Attributes</p>
-                <ul>
-                    <li>Relational database (RDBMS)</li>
-                    <li>GPL License (Community Edition)</li>
-                    <li>Runs on linux</li>
-                    <li>Broad packaged application backend compatibility</li>
-                    <li>Pluggable engine architecture</li>
-                </ul>
-
-                <p class="databases-product-heading">Products and Services</p>
-                <ul>
-                    <li>{% include databases-product-public.html %}</li>
-                    <li>{% include databases-product-private.html %}</li>
-                    <li>{% include databases-product-managed.html %}</li>
-                    <li>{% include databases-product-dbaservices.html %}</li>
-                </ul>
-
-            </div>
+            {% include databases-mysql.html %}
         </div>
 
         <!-- postgresql -->
         <div role="tabpanel" class="tab-pane" id="postgresql">
-            <div class="databases-product-well">
-                <img class="databases-product-image" src="{% asset_path postgre-sql-logo.png %}" alt="PostreSQL">
-
-                <p class="databases-well-text">
-                PostgreSQL is an open source relational database management system ( DBMS ) developed
-                by a worldwide team of volunteers. PostgreSQL is not controlled by any corporation or other private entity and the source code
-                is available free of charge.
-                </p>
-
-                <ul class="piped-list">
-                    <li><a href="/blog/categories/postgresql/">Blog Posts</a></li>
-                    <li><a href="http://www.postgresql.org/docs/9.4/interactive/index.html">PostgreSQL Docs</a></li>
-                    <li><a href="http://www.postgresql.org/download/">Download</a></li>
-                    <li><a href="https://wiki.postgresql.org/wiki/Simple_Configuration_Recommendation">Best Practices</a></li>
-                    <li><a href="http://www.postgresql.org/list/">Mailing Lists</a></li>
-                </ul>
-
-                <p class="databases-product-heading">Key Attributes</p>
-                <ul>
-                    <li>Relational database (RDBMS)</li>
-                    <li>Free software license</li>
-                    <li>Runs on linux, FreeBSD, Solaris, Mac OS X</li>
-                    <li>SQL:2011, ACID compliant, MVCC</li>
-                </ul>
-
-                <p class="databases-product-heading">Products and Services</p>
-                <ul>
-                    <li>{% include databases-product-public.html %}</li>
-                    <li>{% include databases-product-private.html %}</li>
-                </ul>
-
-            </div>
+            {% include databases-postgresql.html %}
         </div>
 
         <!-- mongodb -->
         <div role="tabpanel" class="tab-pane" id="mongo">
-            <div class="databases-product-well">
-                <img class="databases-product-image" src="{% asset_path mongo-db-logo.png %}" alt="MongoDB">
+            {% include databases-mongodb.html %}
 
-                <p class="databases-well-text">
-                MongoDB is a document database. It's schema-less, includes constructs for high availability and has built in horizontal scaling.
-                It has a deep community and rich driver ecosystem to work with just about any popular language.
-                </p>
-
-                <ul class="piped-list">
-                    <li><a href="/blog/categories/mongodb/">Blog Posts</a></li>
-                    <li><a href="http://docs.mongodb.org/manual/tutorial/getting-started/">Getting Started</a></li>
-                    <li><a href="http://docs.mongodb.org/manual/">MongoDB Docs</a></li>
-                    <li><a href="https://github.com/rackspace-orchestration-templates/mongodb-replset">Templates</a></li>
-                    <li><a href="http://www.mongodb.org/about/community/">Community</a></li>
-                </ul>
-
-                <p class="databases-product-heading">Key Attributes</p>
-                <ul>
-                    <li>Document database (JSON/BSON)</li>
-                    <li>Apache license</li>
-                    <li>Runs on linux, Mac OS X</li>
-                    <li>Atomic operations, pluggable engine architecture (2.6+), and aggregation framework</li>
-                    <li>Mobile, gaming, and content management</li>
-                </ul>
-
-                <p class="databases-product-heading">Products and Services</p>
-                <ul>
-                    <li>{% include databases-product-public.html %}</li>
-                    <li>{% include databases-product-private.html %}</li>
-                    <li>{% include databases-product-managed.html %}</li>
-                </ul>
-
-            </div>
         </div>
 
         <!-- redis -->
         <div role="tabpanel" class="tab-pane" id="redis">
-            <div class="databases-product-well">
-                <img class="databases-product-image" src="{% asset_path redis-logo.png %}" alt="Redis">
-
-                <p class="databases-well-text">
-                Redis is a data structure server. It is open-source, networked, in-memory, and stores keys with optional durability.
-                The development of Redis has been sponsored by Pivotal Software since May 2013; before that, it was sponsored by VMware.
-                </p>
-
-                <ul class="piped-list">
-                    <li><a href="/blog/categories/redis/">Blog Posts</a></li>
-                    <li><a href="http://redis.io/documentation">Redis Docs</a></li>
-                    <li><a href="http://www.rackspace.com/knowledge_center/article/redis-faq-0">FAQ</a></li>
-                    <li><a href="http://redis.io/download">Downloads</a></li>
-
-                </ul>
-
-                <p class="databases-product-heading">Key Attributes</p>
-                <ul>
-                    <li>Key/Value data structures</li>
-                    <li>Projects requiring extreme performance</li>
-                    <li>Queueing workloads</li>
-                </ul>
-
-                <p class="databases-product-heading">Products and Services</p>
-                <ul>
-                    <li>{% include databases-product-public.html %}</li>
-                    <li>{% include databases-product-private.html %}</li>
-                    <li>{% include databases-product-managed.html %}</li>
-                </ul>
-
-            </div>
+            {% include databases-redis.html %}
         </div>
 
         <!-- hadoop -->
         <div role="tabpanel" class="tab-pane" id="hadoop">
-            <div class="databases-product-well">
-                <img class="databases-product-image" src="{% asset_path apache-hadoop-logo.png %}" alt="Hadoop">
+            {% include databases-hadoop.html %}
 
-                <p class="databases-well-text">
-                Hadoop is a free, Java-based programming framework that supports the processing of large data sets in a distributed computing environment.
-                It is part of the Apache project sponsored by the Apache Software Foundation.
-                </p>
-
-                <ul class="piped-list">
-                    <li><a href="/blog/categories/hadoop/">Blog Posts</a></li>
-                    <li><a href="http://docs.rackspace.com/cbd/api/v1.0/cbd-getting-started/content/DB_Doc_Change_History.html">Getting Started</a></li>
-                    <li><a href="http://docs.rackspace.com/cbd/api/v1.0/cbd-devguide/content/overview.html">API Developer Guide</a></li>
-                    <li><a href="http://hadoop.apache.org/#Download+Hadoop">Downloads</a></li>
-
-                </ul>
-
-                <p class="databases-product-heading">Key Attributes</p>
-                <ul>
-                    <li>Data Science/Analytics</li>
-                    <li>Extreme data set sizes, parallel processing workloads.</li>
-                </ul>
-
-                <p class="databases-product-heading">Products and Services</p>
-                <ul>
-                    <li>{% include databases-product-public.html %}</li>
-                    <li>{% include databases-product-private.html %}</li>
-                    <li>{% include databases-product-managed.html %}</li>
-                </ul>
-
-            </div>
         </div>
 
         <!-- Oracle -->
         <div role="tabpanel" class="tab-pane" id="oracle">
-            <div class="databases-product-well">
-                <img class="databases-product-image" src="{% asset_path oracle-logo.png %}" alt="Oracle">
+            {% include databases-oracle.html %}
 
-                <p class="databases-well-text">
-                The Oracle Database is an object-relational database management system produced and marketed by Oracle Corporation.
-                </p>
-
-                <ul class="piped-list">
-                    <li><a href="http://docs.oracle.com/database/121/index.htm">Getting Started</a></li>
-                    <li><a href="http://docs.oracle.com/en/database/database.html">Oracle Docs</a></li>
-                    <li><a href="http://docs.oracle.com/database/121/nav/portal_5.htm">Developer Guide</a></li>
-                    <li><a href="http://www.oracle.com/technetwork/database/enterprise-edition/downloads/index-092322.html">Downloads</a></li>
-
-                </ul>
-
-                <p class="databases-product-heading">Key Attributes</p>
-                <ul>
-                    <li>Relational database management system</li>
-                    <li>Large installed base, generally larger companies</li>
-                    <li>Rich ecosystem, community and history</li>
-                    <li>Deep partner and packaged application adoption</li>
-                    <li>Runs on Linux,Solaris,Windows,AIX,HP/UX, and more</li>
-                    <li>PL/SQL data processing language extensions to SQL</li>
-                </ul>
-
-                <p class="databases-product-heading">Products and Services</p>
-                <ul>
-                    <li>{% include databases-product-public.html %}</li>
-                    <li>{% include databases-product-private.html %}</li>
-                    <li>{% include databases-product-dbaservices.html %}</li>
-                </ul>
-
-            </div>
         </div>
 
         <!-- SQLServer -->
         <div role="tabpanel" class="tab-pane" id="sqlserver">
-            <div class="databases-product-well">
-                <img class="databases-product-image" src="{% asset_path ms-sql-logo.png %}" alt="SQLServer">
+            {% include databases-sqlserver.html %}
 
-                <p class="databases-well-text">
-                Microsoft SQL Server is a relational database management system developed by Microsoft Corporation.
-                </p>
-
-                <ul class="piped-list">
-                    <li><a href="http://msdn.microsoft.com/en-us/library/bb545450.aspx">Getting Started</a></li>
-                    <li><a href="http://social.technet.microsoft.com/wiki/contents/articles/984.sql-server-developer-resources.aspx">Developer Resources</a></li>
-                    <li><a href="http://technet.microsoft.com/en-us/sqlserver/default">Information and Downloads</a></li>
-
-                </ul>
-
-                <p class="databases-product-heading">Key Attributes</p>
-                <ul>
-                    <li>Relational database management system</li>
-                    <li>Large installed base, generally larger companies</li>
-                    <li>Runs on Windows exclusively</li>
-                    <li>Deep partner and packaged application adoption</li>
-                    <li>T-SQL data processing language extensions to SQL</li>
-                </ul>
-
-                <p class="databases-product-heading">Products and Services</p>
-                <ul>
-                    <li>{% include databases-product-public.html %}</li>
-                    <li>{% include databases-product-private.html %}</li>
-                    <li>{% include databases-product-dbaservices.html %}</li>
-                </ul>
-
-            </div>
         </div>
 
         <!-- elasticsearch -->
         <div role="tabpanel" class="tab-pane" id="elasticsearch">
-            <div class="databases-product-well">
-                <img class="databases-product-image" src="{% asset_path elastic-search-logo.png %}" alt="ElasticSearch">
-
-                <p class="databases-well-text">
-                Elasticsearch is a search server based on Lucene. It provides a distributed, multitenant-capable full-text search engine
-                with a RESTful web interface and schema-free JSON documents. Elasticsearch is developed in Java and is released as open
-                source under the terms of the Apache License.
-                </p>
-
-                <ul class="piped-list">
-                    <li><a href="/blog/categories/elasticsearch/">Blog Posts</a></li>
-                    <li><a href="http://www.elasticsearch.org/guide/en/elasticsearch/guide/current/getting-started.html">Getting Started</a></li>
-                    <li><a href="http://www.elasticsearch.org/guide/">ElasticSearch Docs</a></li>
-                    <li><a href="http://www.elasticsearch.org/overview/elkdownloads/">Downloads</a></li>
-                    <li><a href="https://groups.google.com/forum/?fromgroups#!forum/elasticsearch">Mailing List</a></li>
-                </ul>
-
-                <p class="databases-product-heading">Key Attributes</p>
-                <ul>
-                    <li>Full text search indexing engine</li>
-                    <li>Simple JSON based query language</li>
-                </ul>
-
-                <p class="databases-product-heading">Products and Services</p>
-                <ul>
-                    <li>{% include databases-product-public.html %}</li>
-                    <li>{% include databases-product-private.html %}</li>
-                </ul>
-
-            </div>
+            {% include databases-elasticsearch.html %}
         </div>
 
     </div>
