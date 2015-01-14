@@ -3,24 +3,19 @@
 <div class="container">
 
     <div class="row">
-        <h1>Blog posts for data related categories</h1>
+        <h1>Blog posts tagged {{ selected_tab }}</h1>
     </div>
 
     <div class="row">
 
         <div class="col-md-9">
 
-            {{ selected_category }}
-
         {% for post in site.posts %}
 
             {% assign show_post = false %}
-
-            {% for category in data_categories %}
-                {% if post.categories contains category %}
-                    {% assign show_post = true %}
-                {% endif %}
-            {% endfor %}
+            {% if post.categories contains {{ selected_tab }} %}
+                {% assign show_post = true %}
+            {% endif %}
 
             {% if show_post %}
             <div class="blog-tease">
@@ -38,7 +33,7 @@
 
         </div>
         <div class="col-md-3 well">
-            <p class="databases-categories-title">Categories</p>
+            <p class="databases-categories-title">Similar Categories</p>
             <p>
 
                 {% for category in site.categories %}

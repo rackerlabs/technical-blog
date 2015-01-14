@@ -4,103 +4,114 @@
 
 <div class="container database-products">
 
-    <div class="col-md-1"></div>
-
     <div role="tabpanel">
-        <ul class="col-md-3 databases-products-left" role="tablist" id="tabs" data-tabs="tabs">
 
-            {% for category in data_categories %}
+        <div>
+            <ul class="col-md-3 databases-products-left" role="tablist">
+                {% for category in data_categories %}
 
-                {% if category contains "MySQL" %}
-                    {% assign class="databases-products-bin-selected" %}
-                {% else %}
-                    {% assign class="databases-products-bin" %}
-                {% endif %}
+                    {% if category contains selected_tab %}
+                        {% assign class="databases-products-bin-selected" %}
+                    {% else %}
+                        {% assign class="databases-products-bin" %}
+                    {% endif %}
 
-                <li role="presentation" id="button_{{category}}" class="{{class}}">
-                    <a href="#{{category}}" aria-controls="{{category}}" role="tab" data-toggle="tab">{{category}}</a>
-                </li>
+                    <li role="presentation" id="button_{{category}}" class="{{class}}">
+                        <a href="#{{category}}" aria-controls="{{category}}" role="tab" data-toggle="tab">{{category}}</a>
+                    </li>
 
-            {% endfor %}
-
-        </ul>
-    </div>
-
-    <div class="col-md-7 tab-content databases-products-bin-right">
-
-        <!-- mysql -->
-        <div role="tabpanel" class="tab-pane active" id="MySQL">
-            {% include databases-mysql.html %}
+                {% endfor %}
+            </ul>
         </div>
 
-        <!-- postgresql -->
-        <div role="tabpanel" class="tab-pane" id="PostgreSQL">
-            {% include databases-postgresql.html %}
-        </div>
+        <div>
 
-        <!-- mongodb -->
-        <div role="tabpanel" class="tab-pane" id="MongoDB">
-            {% include databases-mongodb.html %}
+            <div class="col-md-9 tab-content databases-products-bin-right">
 
-        </div>
+                <!-- mysql -->
+                {% if selected_tab contains "MySQL" %}{% assign class="tab-pane active" %}{% else %}{% assign class="tab-pane" %}{% endif %}
+                <div role="tabpanel" class="{{class}}" id="MySQL">
+                    {% include databases-mysql.html %}
+                </div>
 
-        <!-- redis -->
-        <div role="tabpanel" class="tab-pane" id="Redis">
-            {% include databases-redis.html %}
-        </div>
+                <!-- postgresql -->
+                {% if selected_tab contains "PostgreSQL" %}{% assign class="tab-pane active" %}{% else %}{% assign class="tab-pane" %}{% endif %}
+                <div role="tabpanel" class="{{class}}" id="PostgreSQL">
+                    {% include databases-postgresql.html %}
+                </div>
 
-        <!-- hadoop -->
-        <div role="tabpanel" class="tab-pane" id="Hadoop">
-            {% include databases-hadoop.html %}
+                <!-- mongodb -->
+                {% if selected_tab contains "MongoDB" %}{% assign class="tab-pane active" %}{% else %}{% assign class="tab-pane" %}{% endif %}
+                <div role="tabpanel" class="{{class}}" id="MongoDB">
+                    {% include databases-mongodb.html %}
 
-        </div>
+                </div>
 
-        <!-- Oracle -->
-        <div role="tabpanel" class="tab-pane" id="Oracle">
-            {% include databases-oracle.html %}
+                <!-- redis -->
+                {% if selected_tab contains "Redis" %}{% assign class="tab-pane active" %}{% else %}{% assign class="tab-pane" %}{% endif %}
+                <div role="tabpanel" class="{{class}}" id="Redis">
+                    {% include databases-redis.html %}
+                </div>
 
-        </div>
+                <!-- hadoop -->
+                {% if selected_tab contains "Hadoop" %}{% assign class="tab-pane active" %}{% else %}{% assign class="tab-pane" %}{% endif %}
+                <div role="tabpanel" class="{{class}}" id="Hadoop">
+                    {% include databases-hadoop.html %}
 
-        <!-- SQLServer -->
-        <div role="tabpanel" class="tab-pane" id="SQLServer">
-            {% include databases-sqlserver.html %}
+                </div>
 
-        </div>
+                <!-- Oracle -->
+                {% if selected_tab contains "Oracle" %}{% assign class="tab-pane active" %}{% else %}{% assign class="tab-pane" %}{% endif %}
+                <div role="tabpanel" class="{{class}}" id="Oracle">
+                    {% include databases-oracle.html %}
 
-        <!-- elasticsearch -->
-        <div role="tabpanel" class="tab-pane" id="ElasticSearch">
-            {% include databases-elasticsearch.html %}
+                </div>
+
+                <!-- SQLServer -->
+                {% if selected_tab contains "SQLServer" %}{% assign class="tab-pane active" %}{% else %}{% assign class="tab-pane" %}{% endif %}
+                <div role="tabpanel" class="{{class}}" id="SQLServer">
+                    {% include databases-sqlserver.html %}
+
+                </div>
+
+                <!-- elasticsearch -->
+                {% if selected_tab contains "ElasticSearch" %}{% assign class="tab-pane active" %}{% else %}{% assign class="tab-pane" %}{% endif %}
+                <div role="tabpanel" class="{{class}}" id="ElasticSearch">
+                    {% include databases-elasticsearch.html %}
+                </div>
+
+            </div>
+
         </div>
 
     </div>
 
 </div>
 
-
 <script type="text/javascript">
-    $(document).ready(function(){
+$(document).ready(function(){
 
-        function unset_all_selections(){
-
-            {% for category in data_categories %}
-                $("#button_{{category}}").removeClass("databases-products-bin-selected").addClass("databases-products-bin");
-            {% endfor %}
-
-        }
-
-        function set_selection(class_name){
-            $(class_name).removeClass("databases-products-bin").addClass("databases-products-bin-selected");
-        }
+    function unset_all_selections(){
 
         {% for category in data_categories %}
-
-            $('#button_{{category}} a').click(function(){
-                unset_all_selections();
-                set_selection('#button_{{category}}');
-            });
-
+            $("#button_{{category}}").removeClass("databases-products-bin-selected").addClass("databases-products-bin");
         {% endfor %}
 
-    });
+    }
+
+    function set_selection(class_name){
+        $(class_name).removeClass("databases-products-bin").addClass("databases-products-bin-selected");
+    }
+
+    {% for category in data_categories %}
+
+        $('#button_{{category}} a').click(function(){
+            unset_all_selections();
+            set_selection('#button_{{category}}');
+        });
+
+    {% endfor %}
+
+});
 
 </script>
