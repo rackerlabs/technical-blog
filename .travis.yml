@@ -7,6 +7,7 @@ install:
 - git clone https://github.com/deconst/preparer-jekyll.git /tmp/preparer-jekyll
 - cd /tmp/preparer-jekyll
 - bundle install
+- pwd
 - bundle exec rake install
 - cd ${TRAVIS_BUILD_DIR}
 script:
