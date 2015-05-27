@@ -3,6 +3,7 @@ language: ruby
 ruby:
 - "2.2.0"
 install:
+- gem install bundler
 - git clone https://github.com/deconst/preparer-jekyll.git /tmp/preparer-jekyll
 - cd /tmp/preparer-jekyll
 - bundle install
