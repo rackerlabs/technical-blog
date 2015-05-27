@@ -5,9 +5,6 @@ ruby:
 install:
 - gem install bundler
 - git clone https://github.com/deconst/preparer-jekyll.git /tmp/preparer-jekyll
-- pushd /tmp/preparer-jekyll
-- bundle install
-- bundle exec rake install
-- popd
+- pushd /tmp/preparer-jekyll && bundle install && bundle exec rake install && popd
 script:
 - deconst-preparer-jekyll
