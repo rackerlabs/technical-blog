@@ -7,14 +7,14 @@ First, thanks for your interest in contributing and helping us craft quality con
 1. Fork this repo, then clone your fork.
 2. Before you start working, make sure your content is up-to-date and merged with the right branch:
   ```bash
-  git remote add upstream git@github.com:rackerlabs/developer.rackspace.com.git
+  git remote add upstream git@github.com:rackerlabs/docs-developer-blog.git
   git checkout master
   git fetch upstream
-  git checkout -b name-of-you-branch
+  git checkout -b name-of-your-branch
   git merge upstream/master
   ```
 
-3. Create a file inside `src/site_source/_posts/` with the following naming convention `YYYY-MM-DD-title-of-your-post.md` where `YYYY-MM-DD` is the date you want you entry to be published.
+3. Create a file inside `_posts/` with the following naming convention `YYYY-MM-DD-title-of-your-post.md` where `YYYY-MM-DD` is the date you want you entry to be published.
 
 4. Add Jekyll front matter (i.e. metadata) to the top of the file you created in the previous step, for example:
 
