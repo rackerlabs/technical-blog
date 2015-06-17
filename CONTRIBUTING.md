@@ -71,7 +71,7 @@ From the directory that you cloned the blog to, run:
 ```bash
 bundle install
 
-bundle exec jekyll serve -w
+bundle exec jekyll serve --watch
 ```
 
 Once you see the message "Server running....", visit [http://127.0.0.1:4000/](http://127.0.0.1:4000/) to see the rendered blog.
