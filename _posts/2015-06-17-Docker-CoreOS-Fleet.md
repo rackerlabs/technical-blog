@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Playing with CoreOS, Fleet and Docker"
-date: 2015-06-14 23:59
+date: 2015-06-17 13:00
 comments: true
 author: Sri Rajan
 published: true
@@ -12,9 +12,9 @@ categories:
 
 In this post, we will look at Docker, CoreOS & Fleet and demonstrate how one could use all of them in an application scenario.
 
- 
+
  * Before you start, you will need the following. A Rackspace cloud account. Get a free tier [Rackspace developer account](https://developer.rackspace.com/signup/)
- 
+
  * If you don't have an account, you can still follow this and do it on your own servers, but the process will need some customizations.
 
  * If using Rackspace Cloud, ensure that you have novaclient installed. Refer to [Installing Nova](http://www.rackspace.com/knowledge_center/article/installing-python-novaclient-on-linux-and-mac-os) for more details.
@@ -170,7 +170,7 @@ In this post, we will look at Docker, CoreOS & Fleet and demonstrate how one cou
  * Now, let's move on the web containers. Start the one container from the web service. In systemd, a service with @ is generic service, and you can append values to start as many of them as you want. The first container will take a little bit of time, as it is downloading the image, but subsequent ones are quick.
 
   ```
-  fleetctl start web@01.service 
+  fleetctl start web@01.service
 
   fleetctl list-units
   ```
@@ -185,10 +185,10 @@ In this post, we will look at Docker, CoreOS & Fleet and demonstrate how one cou
   web@01.service    6847f4f7.../10.208.201.226  active   running
   ```
 
- * Start 9 more web containers. Fleet will disribute them across the different hosts. 
+ * Start 9 more web containers. Fleet will disribute them across the different hosts.
 
   ```
-  fleetctl start web@{02..10}.service 
+  fleetctl start web@{02..10}.service
 
   fleetctl list-units
   ```
@@ -205,16 +205,16 @@ In this post, we will look at Docker, CoreOS & Fleet and demonstrate how one cou
   web@03.service    6847f4f7.../10.208.201.226  active  running
   ...so on
   ```
- 
+
  * Start the monweb services. These are similar to the mondb.service and update etcd with different values from the running containers.
 
   ```
-  fleetctl start monweb@{01..10}.service 
+  fleetctl start monweb@{01..10}.service
 
   fleetctl list-units
   ```
 
- * Wait for the services to start and then query etcd for values. This will return the IP addresses and ports of the web containers 
+ * Wait for the services to start and then query etcd for values. This will return the IP addresses and ports of the web containers
 
   ```
   for i in {01..10}; do  \
