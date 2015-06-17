@@ -56,7 +56,7 @@ The marker comment must be on its own line, at column 1, and separated from cont
 **To include images in your post**, place them in a subdirectory of `_assets/img/` within a subdirectory that has the same name as the file containing your post. Within your post, use the following markup:
 
 ```markdown
-![Alt text here]({{ asset_path YYYY-MM-DD-title-of-your-post/filename.png }})
+![Alt text here]({% asset_path YYYY-MM-DD-title-of-your-post/filename.png %})
 ```
 
 #### Previewing your Post
