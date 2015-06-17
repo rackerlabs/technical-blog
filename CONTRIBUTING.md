@@ -5,7 +5,9 @@ First, thanks for your interest in contributing and helping us craft quality con
 #### Writing your blog entry
 
 1. Fork this repo, then clone your fork.
+
 2. Before you start working, make sure your content is up-to-date and merged with the right branch:
+
   ```bash
   git remote add upstream git@github.com:rackerlabs/docs-developer-blog.git
   git checkout master
@@ -36,6 +38,43 @@ First, thanks for your interest in contributing and helping us craft quality con
   Make sure that the dates in the file name and front matter match.
 
 5. Format your blog entry using [markdown](http://daringfireball.net/projects/markdown/basics). If you are not comfortable authoring in markdown, send a message to @rgbkrk for other options.
+
+#### Writing your Post
+
+**Please include an excerpt marker** after your first paragraph or so to separate the preview text that appears on the blog index page from the full article. To do so, use the following HTML comment:
+
+```html
+The excerpt.
+
+<!-- more -->
+
+The rest of your article.
+```
+
+The marker comment must be on its own line, at column 1, and separated from content on either side by a single blank line.
+
+**To include images in your post**, place them in a subdirectory of `_assets/img/` within a subdirectory that has the same name as the file containing your post. Within your post, use the following markup:
+
+```markdown
+![Alt text here]({{ asset_path YYYY-MM-DD-title-of-your-post/filename.png }})
+```
+
+#### Previewing your Post
+
+To view your post locally and make sure that it's rendering correctly, you will need:
+
+ * [Ruby](https://www.ruby-lang.org/en/downloads/), preferably version 2.2.2
+ * [bundler](http://bundler.io/), version 1.9.4
+
+From the directory that you cloned the blog to, run:
+
+```bash
+bundle install
+
+bundle exec jekyll serve -w
+```
+
+Once you see the message "Server running....", visit [http://127.0.0.1:4000/](http://127.0.0.1:4000/) to see the rendered blog.
 
 #### Submitting your Blog entries
 
