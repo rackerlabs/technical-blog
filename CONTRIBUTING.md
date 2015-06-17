@@ -74,7 +74,7 @@ bundle install
 bundle exec jekyll serve --watch
 ```
 
-Once you see the message "Server running....", visit [http://127.0.0.1:4000/](http://127.0.0.1:4000/) to see the rendered blog.
+Once you see the message "Server running....", visit [http://127.0.0.1:4000/blog/](http://127.0.0.1:4000/blog/) to see the rendered blog.
 
 #### Submitting your Blog entries
 
