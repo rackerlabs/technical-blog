@@ -13,7 +13,7 @@ categories:
     - Ansible
 ---
 
-Infrastructure and application monitoring thru the course of technology maturity has changed positions.  Not so long ago, monitoring was an afterthought when rolling out your new application or standing up your new rack of servers.  More recently, I have observed monitoring to be one of the first considerations, to the point where it is actually in the initial project plan.
+Through the course of technology, infrastructure and application monitoring have changed positions.  Not so long ago, monitoring was an afterthought when rolling out your new application or standing up your new rack of servers.  More recently, I have observed monitoring to be one of the first considerations, to the point where it is actually in the initial project plan.
 
 This evolution, while late in my mind, is the right direction…not just for the System Admin who gets the 2AM email alert or the application owner who on a monthly basis sadly report to his leadership 97% SLA on his app.  Truly knowing how your application is affecting your infrastructure is one of the keys to a successful cloud.
 
@@ -25,9 +25,9 @@ With monitoring now being in an elevated position, that then leaves you to think
 
 To keep it simple, you can't do better than by going with [Nagios](http://www.nagios.com/products) Core.  Yes, while it may not be the flashiest dashboard visually, it is one of the most powerful and lightweight monitoring applications I have used.  With Nagios, you have ultimate control on many aspects of your monitoring ecosystem, ranging from being able to create custom plugins, all the way to explicitly defining execution windows for that host.  Administration can be handled directly from the flat files, or you can use many of the third party tools, such as [NConf](http://exchange.nagios.org/directory/Addons/Configuration/NConf/details).  With the launch of the new versions, XI, more and more of the features only found in the third party tools are built right in.  Some of the new features that stand out would be the advanced graphs, integration into Incident management tools, and cleaner SLA reports.
 
-Of course, with great capability sometimes comes great overhead.  Typically, I have found that keeping your monitoring close to your infrastructure avoids limiting what you are monitoring due to firewall restrictions and so on.  I strongly recommend using SNMP (UDP port 161), rather than the NRPE agent.  No agent install needed.  Also, I normally stick with Perl written plugins to ease troubleshooting.  Creating ‘good’ monitors is essential to minimize false alerts, that in time turn to ignored alerts.  If you find a service check continuously sending off false alerts, FIX IT!  Do not let it linger for days.
+Of course, with great capability comes great overhead, sometimes.  Typically, I have found that keeping your monitoring close to your infrastructure avoids limiting what you are monitoring due to firewall restrictions and so on.  I strongly recommend using SNMP (UDP port 161), rather than the NRPE agent.  No agent install needed.  Also, I normally stick with Perl written plugins to ease troubleshooting.  Creating ‘good’ monitors is essential to minimize false alerts, that in time turn to ignored alerts.  If you find a service check continuously sending off false alerts, FIX IT!  Do not let it linger for days.
 
-Because of the power behind OpenStack exposing all functionality thru API’s, monitoring is made easy.  Custom plugin scripts can be created to monitor the whole OpenStack stack and to cross reference any bottlenecks to physical infrastructure problems.  This type of proactive monitoring can lead to preventing down time, which lead to outages.
+Because of the power behind OpenStack exposing all functionality thru APIs, monitoring is made easy.  Custom plugin scripts can be created to monitor the whole OpenStack stack and to cross reference any bottlenecks to physical infrastructure problems.  This type of proactive monitoring can lead to preventing down time, which lead to outages.
 
 OpenStack monitoring consists of:
 
@@ -124,7 +124,7 @@ My attempt to automate this part was not successful, so you have to finish the N
 
 #####Step 7: Execute the following playbook to configure the OSAD nodes to allow for monitoring via SSH:
 
-In order to monitor the OpenStack processes and API's running on the local containers, you must run the service checks remotely over SSH.  Good news is the Nagios plugin to do this already exists (check_by_ssh).
+In order to monitor the OpenStack processes and APIs running on the local containers, you must run the service checks remotely over SSH.  Good news is the Nagios plugin to do this already exists (check_by_ssh).
 
     $ cd ..
     $ ansible-playbook -i inventory/dynamic_inventory.py playbooks/base-infra.yml
