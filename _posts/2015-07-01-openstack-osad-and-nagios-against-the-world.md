@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "OpenStack OSAD and Nagios, against the world"
-date: 2015-07-01 23:59
+date: 2015-07-02 13:00
 comments: true
 author: Walter Bentley
 published: true
