@@ -17,7 +17,11 @@ Through the course of technology, infrastructure and application monitoring have
 
 This evolution, while late in my mind, is the right direction…not just for the System Admin who gets the 2AM email alert or the application owner who on a monthly basis sadly report to his leadership 97% SLA on his app.  Truly knowing how your application is affecting your infrastructure is one of the keys to a successful cloud.
 
-With monitoring now being in an elevated position, that then leaves you to think: what should I use for monitoring?  While there are plenty of software solutions in the market, many of which solve for different problems.  Your choice should be made around the following thoughts:
+With monitoring now being in an elevated position, that then leaves you to think: what should I use for monitoring?  While there are plenty of software solutions in the market, many of which solve for different problems.  
+
+<!-- more -->
+
+Your choice should be made around the following thoughts:
 
    * Keep it simple
    * Keep your monitoring close to your infrastructure
@@ -37,8 +41,6 @@ OpenStack monitoring consists of:
    * Monitoring your Compute nodes via your Infrastructure nodes
 
 Since I have such a deep-seated love for OSAD (OpenStack Ansible Deployment) used and created by Rackspace, it seemed only fitting to put together a series of Ansible playbooks to handle most of the Nagios and NConf process.  Also, because I love to pay it forward, I included are OSAD-focused Nagios configs (checkcommands, services and a bunch of global Nagios configs), which can be used to monitor your OpenStack OSAD cloud within minutes.
-
-<!-- more -->
 
 Base prerequisites are:
 
