@@ -9,10 +9,32 @@ categories:
 - Cloud Servers
 - Windows
 ---
+##Update (July 10, 2015)
+
+On July 20, 2015, Rackspace (in following with OpenStack developments) will
+disable XML support within the Cloud Servers API. At the moment, I do not
+have the time required to update this client to completely use JSON for
+all of its requests/responses. I am asking for help with this effort
+from the community at large, if any of you can spare the time.  Please
+make pull requests to the code repository hosted at:
+
+<https://github.com/drmmarsunited/rackspacecloud_powershell/wiki>
+
+In the meantime, there is another PowerShell client called "PoshStack"
+that can be downloaded from here:
+
+<https://github.com/DonSchenck/PoshStack>
+
+Further information on PoshStack can be found elsewhere on this blog:
+
+<https://developer.rackspace.com/blog/Introducing-PoshStack-the-PowerShell-client-for-OpenStack/>
+
+<!-- more -->
+
 {% img right 2013-05-02-powershell/powershell.png 200 200 %}
 ##Who am I and why should you use this client?
 
-My name is Mitch Robins and I am currently a sales engineer in the SMB segement for Rackspace. Having 15+ years in the IT trenches with Windows (from desktop support to solutions architecture), this was the perfect opportunity to be able to contribute to the Windows community to help with cloud management and adoption. The idea for this client was born out of just that notion. There was a need for a Windows native API client, and we were in a good position to create something to enable the community at large could use. Over the last few months, we've spent quite a bit of personal and Rackspace sponsored time in getting this tool developed to specifically fill this gap and make life easier for Windows users.<!-- more -->
+My name is Mitch Robins and I am currently a sales engineer in the SMB segement for Rackspace. Having 15+ years in the IT trenches with Windows (from desktop support to solutions architecture), this was the perfect opportunity to be able to contribute to the Windows community to help with cloud management and adoption. The idea for this client was born out of just that notion. There was a need for a Windows native API client, and we were in a good position to create something to enable the community at large could use. Over the last few months, we've spent quite a bit of personal and Rackspace sponsored time in getting this tool developed to specifically fill this gap and make life easier for Windows users.
 
 ##What is PowerClient?
 
