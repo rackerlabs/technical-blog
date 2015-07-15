@@ -19,7 +19,7 @@ categories:
 
 [Rackspace CDN](http://www.rackspace.com/cloud/cdn-content-delivery-network/features) allows you to add a CDN service to your existing website with a single API call. The service pulls content from your website and caches it on Akamai's global network. From there you can control caching rules, restrict access, and purge cached content.
 
-The following small example helps you to get started. The [QuickStart for Rackspace CDN](https://developer.rackspace.com/docs/cdn/getting-started/?lang=dot-net) has a complete walk-through, and you can download the example project from the [OpenStack.NET Demo repository](https://github.com/openstacknetsdk/Demos/tree/master/RackspaceQuickstart).
+The following small example helps you to get started. The [QuickStart for Rackspace CDN](https://developer.rackspace.com/docs/cdn/getting-started/?lang=.net) has a complete walk-through, and you can download the example project from the [OpenStack.NET Demo repository](https://github.com/openstacknetsdk/Demos/tree/master/RackspaceQuickstart).
 
 ```csharp
 var cdnService = new ContentDeliveryNetworkService(authProvider, region);
