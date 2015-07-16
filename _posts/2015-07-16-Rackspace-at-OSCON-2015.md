@@ -11,11 +11,9 @@ categories:
 
 ---
 
-Rackspace heads to OSCON next week for five days of talks, tutorials, and conversations, all about open source. Check out our speaking sessions and stop by our booth from July 20-24 in Portland, Oregon!
+Next week kicks off the 16th [OSCON](http://www.oscon.com/open-source-2015), an annual conference bringing together the free and open source software world, and Rackspace is a proud Silver Sponsor. Starting July 20 and running through July 24, technologists from around the globe descend on Portland, Oregon for a week of tutorials, talks, keynotes, an expo hall, and more, with Rackers taking part in all of it.
 
 <!-- more -->
-
-Next week kicks off the 16th [OSCON](http://www.oscon.com/open-source-2015), an annual conference bringing together the free and open source software world, and Rackspace is a proud Silver Sponsor. Starting July 20 and running through July 24, technologists from around the globe descend on Portland, Oregon for a week of tutorials, talks, keynotes, an expo hall, and more, with Rackers taking part in all of it.
 
 **Jarret Raim** and **Andrew Hartnett** pair up Tuesday from 9:00 to 12:30 to deliver their ["Stop building insecure systems: Cryptography 101"](http://www.oscon.com/open-source-2015/public/schedule/detail/41322) tutorial, getting developers started toward safe and smart use of cryptography. They'll be covering principals and practices of authentication, encryption, and more knowledge gained while focusing on security for Rackspace.
 
