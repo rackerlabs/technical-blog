@@ -13,25 +13,25 @@ categories:
 Install OpenStack from source
 =============================
 
-Installing OpenStack has always been challenging and for those who need a small but realistic setup, a manual installation using the desired distribution's packages has been the typical solution. Distribution packages simply the process, however they come with compromises. 
+Installing OpenStack has always been challenging, especially for those who need a small but realistic setup, a manual installation using the desired distribution's packages has been the typical solution. Distribution packages simply the process, however they come with compromises. 
 
 <!-- more -->
 
-First, packages are only updated monthly so the wait for patches is slow. Additionally so far the QA process for the various distributions is a little spotty, so the if a package is broken when the update occurs is may be a month until the problem is fixed.  Secondly applying a much needed patch from source may break a package installation or have the patch overwritten when a package update occurs.
+First, packages are only updated monthly, so the wait for patches is slow. Additionally so far the QA process for the various distributions is a little spotty, so the if a package is broken when the update occurs is may be a month until the problem is fixed.  Secondly applying a much needed patch from source may break a package installation or have the patch overwritten when a package update occurs.
 
-For those testing or developing OpenStack using a package based install would be impossible since the packagers place files in difference locations and make it impossible to push source files to the OpenStack github based repos.  For this most developer use devstack as their install vehicle. Devstack is a great tool to get a simple OpenStack environment running but It can be cranky and difficult to get multi-machine OpenStack environments running.
+For those testing or developing OpenStack, using a package based install would be impossible, since the packagers place files in difference locations and make it impossible to push source files to the OpenStack github based repos.  For this most developer use devstack as their install vehicle. Devstack is a great tool to get a simple OpenStack environment running but It can be cranky and difficult to get multi-machine OpenStack environments running.
 
-The choice is to install OpenStack from source. For most folks source installs are undesirable and messy, but since OpenStack is completely written in python, source installs eliminate the temperamental and slow compilation step. Additionally since each service also has its own python requirements file, the python installer will use pip to install any python dependencies. This greatly simplifies the installation process and will result in an install that can be used for either development or production. It is worth noting that some newer OpenStack installer projects such as stackforge's os-ansible-deployment have moved to source installs. Currently it is located at:  https://github.com/stackforge/os-ansible-deployment. The ansible installer is now part of the OpenStack big tent efforts and shortly will be located at: https://github.com/openstack/openstack-ansible
+The choice is to install OpenStack from source. For most folks, source installs are undesirable and messy, but since OpenStack is completely written in python, source installs eliminate the temperamental and slow compilation step. Additionally since each service also has its own python requirements file, the python installer will use pip to install any python dependencies. This greatly simplifies the installation process and will result in an install that can be used for either development or production. It is worth noting that some newer OpenStack installer projects such as stackforge's os-ansible-deployment have moved to source installs. Currently it is located at:  https://github.com/stackforge/os-ansible-deployment. The ansible installer is now part of the OpenStack big tent efforts and shortly will be located at: https://github.com/openstack/openstack-ansible
 
-This discussion will demonstrate how to install OpenStack from source onto three machines using Ubuntu 14.04 LTS as the base OS. The three nodes will consist of compute, network and controller nodes using separate control and data planes, an access/API network and one external network connection. Each node will need at least 3 NIC cards (the network node will need 4). Users will be able to create simple legacy routers and an external provider router. The following diagram gives a physical representation of the final OpenStack system.
+This discussion will demonstrate how to install OpenStack from source onto three machines using Ubuntu 14.04 LTS as the base OS. The three nodes will consist of compute, network and controller nodes, using separate control and data planes, an access/API network and one external network connection. Each node will need at least 3 NIC cards (the network node will need 4). Users will be able to create simple legacy routers and an external provider router. The following diagram gives a physical representation of the final OpenStack system.
 
 ![OpenStack Diagram]({% asset_path 2015-07-29-install-openstack-from-source/openstack.png %})
 
-This install will use KVM, running through libvirt, for virtualization but it can be easily modified to use QEMU for those who have hardware that doesn't fully support virtualization. The compute nodes will need to be tested to verify that the CPU(s) can support KVM by running:
+This install will use KVM, running through libvirt, for virtualization, but it can be easily modified to use QEMU for those who have hardware that doesn't fully support virtualization. The compute nodes will need to be tested to verify that the CPU(s) can support KVM by running:
 
     egrep -c '(vmx|svm)' /proc/cpuinfo
 
-The output should be 1 or higher to be able to use KVM for virtualization, 0 means  you will have to use QEMU for virtualization.
+The output should be 1 or higher to be able to use KVM for virtualization. An output of 0 means  you will have to use QEMU for virtualization.
 
 The basic source install process for each node is straightforward and similar for each service that runs on a node. To install an OpenStack service we need to complete the following for each: 
 
@@ -137,7 +137,7 @@ Clone the keystone github repo move into the newly created keystone directory an
     EOF
 
 Copy the sample keystone conf file provided by the keystone project and set the database and token info within the file: 
-Note: For a production system set a more complex token than what is used in this example.
+Note: For a production system, set a more complex token than what is used in this example.
 
     mv  /etc/keystone/keystone.conf.sample /etc/keystone/keystone.conf
     sed -i "s|database]|database]\nconnection = mysql://keystone:keystone@$MY_IP/keystone|g" /etc/keystone/keystone.conf
@@ -183,7 +183,7 @@ Verify that keystone started:
 
     ps aux|grep keystone
 
-If for some reason keystone doesn't start the following can be used to try to start keystone for troubleshooting: (only run this if the previous step doesn't show a keystone process running)
+If for some reason keystone doesn't start, the following can be used to try to start keystone for troubleshooting: (only run this if the previous step doesn't show a keystone process running)
 
     sudo -u keystone /usr/local/bin/keystone-all --config-file=/etc/keystone/keystone.conf  --log-file=/var/log/keystone/keystone.log
 
