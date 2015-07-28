@@ -36,7 +36,7 @@ You can also attempt to know your audience at the outset and during the workshop
 
 Put everyone on the same page by starting out with some slides on the basics of your pre-requisites. At the very least it will set a common terminology for the rest of the workshop. Do "hands up" surveys of the audience by asking them what they know about the technologies already and adjust emphasis accordingly.
 
-One of the best ways to know your audience as the workshop progresses is the sticky technique. TEASER SENTENCES Dana Bauer goes into more detail about it in LINK.
+One of the best ways to know your audience as the workshop progresses is the Sticky Notes technique. It's a great way for you to see how your audience is doing visually and for them to provide feedback. You can read more about it from Software Carpentry's ["What Are the Sticky Notes For?"](http://software-carpentry.org/workshops/operations.html#sign-in).
 
 ## <a name="share-your-content-first"></a>Share Your Content First
 
@@ -98,7 +98,7 @@ If your audience can't read/see your presentation, it's very frustrating. Make y
 
 <img class="blog-post right" src="{% asset_path 2015-07-28-principles-for-a-successful-developer-workshop/qcon2.jpg %}"/>It's dangerous to go alone! Get help if at all possible. You can't possibly be at the front teaching and be giving hands on help in the audience at the same time. And people will need hands on help.
 
-Have colleagues act as teaching assistants. If your colleagues can't make it to the conference, seriously consider reaching out to others you know (or may not know so well) who are attending the conference. Those Developer Advocate/Evangelist/Relations types tend to be a helpful bunch. :) Also, you can always encourage attendees to help each other.
+Have colleagues act as teaching assistants. Depending on the audience, you may want to make an effort to have at least one teaching assistant familiar with Windows. If your colleagues can't make it to the conference, seriously consider reaching out to others you know (or may not know so well) who are attending the conference. Those Developer Advocate/Evangelist/Relations types tend to be a helpful bunch. :) Also, you can always encourage attendees to help each other.
 
 ## <a name="get-feedback"></a>Get Feedback
 
@@ -121,5 +121,3 @@ If there's more material you want people to get into, give them a "What's Next" 
 It all boils down to empathy. Can you understand and feel what your audience is going through as they take your workshop? Can you feel their frustration when they don't understand something that has been poorly presented? Can you share their aha moment when the material finally clicks?
 
 Put yourself in your audience's shoes. Literally envision yourself taking your own workshop. You already know the material so well that it's particularly hard to do this, which is why it is all the more necessary. Ask yourself if you really understand what these people are going through.
-
-If you're looking for more tips on running a successful developer workshop, check out the post LINK
