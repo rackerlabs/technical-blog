@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Install OpenStack from source"
-date: 2015-07-08 23:59
+date: 2015-07-28 10:26
 comments: true
 author: Phil Hopkins
 published: true
@@ -13,7 +13,7 @@ categories:
 Install OpenStack from source
 =============================
 
-Installing OpenStack has always been challenging. Due to the complexity and varity of design choices involved in setting up OpenStack, automated installers are rare. For those who need a small but realistic setup, to be used either for development or learning, a manual installation using the desired distribution's packages has been the typical solution. Distribution packages simplify the process, however they come with compromises. 
+Installing OpenStack has always been challenging. Due to the complexity and varity of design choices involved in setting up OpenStack, automated installers are rare. For those who need a small but realistic setup, to be used either for development or learning, a manual installation using the desired distribution's packages has been the typical solution. Distribution packages simplify the process, however they come with compromises.
 
 <!-- more -->
 
@@ -33,11 +33,11 @@ This install uses KVM, running through libvirt, for virtualization, but it can b
 
 The output should be 1 or higher to be able to use KVM for virtualization. An output of 0 means you have to use QEMU for virtualization.
 
-The basic source install process for each node is straightforward and similar for each service that runs on a node. To install an OpenStack service we need to complete the following for each: 
+The basic source install process for each node is straightforward and similar for each service that runs on a node. To install an OpenStack service we need to complete the following for each:
 
-1. For proper security each service will run as a separate non-root user 
+1. For proper security each service will run as a separate non-root user
   1. create users for each service
-  2. create home directories for the service and other needed directories, i.e. log, lib, and etc. 
+  2. create home directories for the service and other needed directories, i.e. log, lib, and etc.
   3. set proper ownership of the directories and files
 
 2. Clone the OpenStack service's repository
@@ -45,7 +45,7 @@ The basic source install process for each node is straightforward and similar fo
   2. edit the configuration files setting any needed parameters
   3. install the service using the provided python install script
 3. Configure the service and create upstart scripts to start/stop the service
-4. Lastly start the service. 
+4. Lastly start the service.
 
 Let's get started installing keystone on the controller node.
 
@@ -60,14 +60,14 @@ Set some initial shell variables which are used in the installation to simplify 
     MY_PRIVATE_IP=10.0.1.4
     MY_PUBLIC_IP=10.0.0.4
     EOF
-    
+
     source .bashrc
 
 Install RabbitMQ and set rabbit to only listen on the control plane interface:
 
-    apt-get install -y rabbitmq-server 
+    apt-get install -y rabbitmq-server
 
-    cat >> /etc/rabbitmq/rabbitmq-env.conf <<EOF 
+    cat >> /etc/rabbitmq/rabbitmq-env.conf <<EOF
     RABBITMQ_NODE_IP_ADDRESS=$MY_PRIVATE_IP
     EOF
     chmod 644 /etc/rabbitmq/rabbitmq-env.conf
@@ -136,19 +136,19 @@ Clone the keystone github repo move into the newly created keystone directory an
     python setup.py install
     EOF
 
-Copy the sample keystone conf file provided by the keystone project and set the database and token info within the file: 
+Copy the sample keystone conf file provided by the keystone project and set the database and token info within the file:
 Note: For a production system, set a more complex token than what is used in this example.
 
     mv  /etc/keystone/keystone.conf.sample /etc/keystone/keystone.conf
     sed -i "s|database]|database]\nconnection = mysql://keystone:keystone@$MY_IP/keystone|g" /etc/keystone/keystone.conf
-    sed -i 's/#admin_token = ADMIN/admin_token = SuperSecreteKeystoneToken/g' /etc/keystone/keystone.conf 
+    sed -i 's/#admin_token = ADMIN/admin_token = SuperSecreteKeystoneToken/g' /etc/keystone/keystone.conf
     cd ~
 
 Use the keystone tools to create the tables within the keystone database:
 
     keystone-manage db_sync
 
-Set keystone for proper log rotation: 
+Set keystone for proper log rotation:
 
     cat >> /etc/logrotate.d/keystone << EOF
     /var/log/keystone/*.log {
@@ -168,12 +168,12 @@ Keystone Upstart script
     cat > /etc/init/keystone.conf << EOF
     description "Keystone API server"
     author "Soren Hansen <soren@linux2go.dk>"
-    
+
     start on runlevel [2345]
     stop on runlevel [!2345]
 
     respawn
-    
+
     exec start-stop-daemon --start --chuid keystone --chdir /var/lib/keystone --name keystone --exec /usr/local/bin/keystone-all -- --config-file=/etc/keystone/keystone.conf  --log-file=/var/log/keystone/keystone.log
     EOF
 
@@ -219,7 +219,7 @@ Initialize some shell variables used by the sample_data script that populates ke
 
 Use the supplied sample data script to populate keystone with initial service information and endpoints:
 
-    ./keystone/tools/sample_data.sh 
+    ./keystone/tools/sample_data.sh
 
 Verify that there is valid data in keystone:
 
@@ -229,4 +229,3 @@ Verify that there is valid data in keystone:
     keystone endpoint-list
 
 Congratulations, keystone should now be installed and running. In the next article of this series, we will install glance and neutron on the controller node.
-
