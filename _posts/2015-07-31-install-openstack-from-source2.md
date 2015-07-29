@@ -31,7 +31,7 @@ Next, download (clone the repo) and install glance:
 
     git clone https://github.com/openstack/glance.git -b stable/kilo
 
-Note: Remember that we can change and install from trunk by eliminating the -b stable/kilo from the above command.
+Note: Remember that we can change to install from trunk by eliminating the -b stable/kilo from the above command.
 
     cp -R glance/etc/* /etc/glance/
     cd glance
