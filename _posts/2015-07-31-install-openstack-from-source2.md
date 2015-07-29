@@ -13,15 +13,15 @@ categories:
 Install OpenStack from source Part 2
 ====================================
 
-In the [first article of this series](https://developer.rackspace.com/blog/install-openstack-from-source/) we started installing OpenStack from source. We installed keystone and populated it with some basic information including a Services project and an admin user for our new OpenStack install. Additionally in an initial script we setup users and directories for the upcoming installs of the glance, neutron, nova and cinder processes. Now, lets continue and install and start the glance process on the controller node.
+In the [first article of this series](https://developer.rackspace.com/blog/install-openstack-from-source/) we started installing OpenStack from source. We installed keystone and populated it with some basic information including a Services project and an admin user for our new OpenStack install. Additionally in an initial script we setup users and directories for the upcoming installs of the Image service (glance), Networking service (neutron), Compute service (nova) and Volume service (cinder). Now, let's continue and install and start the glance process on the controller node.
 
 <!-- more -->
 
-In the first article, we added some information into our bashrc file to set a couple of shell variables that we will be using in the remaining sets. Verify that at least one of these variables are set:
+In the first article, we added some information into our bashrc file to set a couple of shell variables to use in the remaining sets.. Verify that at least one of these variables are set:
 
     echo $MY_IP
 
-To start installing glance, we need to make a few additional glance sub-directories and ensure that they have the proper permissions (the basic glance directories were created by a script in the previous article):
+To start installing the Image service (glance),, we need to make a few additional glance sub-directories and ensure that they have the proper permissions (the basic glance directories were created by a script in the previous article):
 
     mkdir -p /var/lib/glance/images
     mkdir -p /var/lib/glance/scrubber
@@ -98,7 +98,7 @@ We must remember to rotate the glance log files:
     }
     EOF
 
-Get the keystone signing certs for glance. Not doing this will cause all of the glance API requests to fail.
+If you do not get the Identity service signing certificates for the Image service, the Image API requests fail. Prevent this by getting the keystone signing certs for glance:
 
     cp /etc/keystone/ssl/certs/ca.pem /var/lib/glance/cacert.pem
     cp /etc/keystone/ssl/certs/signing_cert.pem /var/lib/glance/
@@ -161,9 +161,9 @@ Next, install an image into glance for use once we have OpenStack fully installe
                         --container-format=bare \
                         --is-public=true < cirros-0.3.3-x86_64-disk.img
 
-Our second process is now running and we can now turn our attention to installing Neutron. This is the first of three neutron installs that we will have to do, the neutron server on the controller node and the neutron agents on the network and compute nodes.
+Our second process is now running and we can now turn our attention to installing the Networking service (neutron). This is the first of three neutron installs that we will have to do, the neutron server on the controller node and the neutron agents on the network and compute nodes.
 
-Since the nova, neutron and glance processes will need root or sudo privileges to accomplish various tasks we need to create special sudo permissions for these process users. OpenStack also limits the extent of these privileges through use of a rootwrap configuration. Run the following script to set up the sudo permissions: 
+Since the nova, neutron and glance processes need root or sudo privileges to accomplish various tasks we need to create special sudo permissions for these process users. OpenStack also limits the extent of these privileges through use of a rootwrap configuration. Run the following script to set up the sudo permissions: 
 
     for SERVICE in neutron nova cinder
     do
@@ -333,8 +333,8 @@ Start neutron server running and verify that it stays running. The second line w
     start neutron
     ps aux|grep neutron
 
-If neutron will not start use the following line to manually start neutron. if the neutron process has errors in starting it will give you output to aid in debugging the problem.
+If neutron will not start use the following line to manually start neutron. If the neutron process has errors in starting it will give you output to aid in debugging the problem.
 
     sudo -u neutron neutron-server --config-file=/etc/neutron/neutron.conf --config-file=/etc/neutron/plugins/ml2/ml2_conf.ini --log-file /var/log/neutron/server.log
     
-In the next article of this series we will install several nova processes onto the controller node.
+In the next article of this series we install several nova processes onto the controller node.
