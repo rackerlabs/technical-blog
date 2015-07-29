@@ -21,7 +21,7 @@ In the first article, we added some information into our bashrc file to set a co
 
     echo $MY_IP
 
-To start installing the Image service (glance),, we need to make a few additional glance sub-directories and ensure that they have the proper permissions (the basic glance directories were created by a script in the previous article):
+To start installing the Image service (glance), we need to make a few additional glance sub-directories and ensure that they have the proper permissions (the basic glance directories were created by a script in the previous article):
 
     mkdir -p /var/lib/glance/images
     mkdir -p /var/lib/glance/scrubber
