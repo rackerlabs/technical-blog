@@ -270,7 +270,7 @@ Finally we must configure neutron. If the basic configuration file is supplied i
     rabbit_host = $MY_PRIVATE_IP
     EOF
 
-Configure the neutron ML2 plugin agent. Although this agent doesn't run on the controller node, the neutron server needs to know about the plugin:
+Neutron supports multiple networking layer 2 technologies through the ML2 plugin. Configure the neutron ML2 plugin agent to use GRE tunnels for project network isolation. Although this agent doesn't run on the controller node, the neutron server needs to know about the plugin:
 
     rm /etc/neutron/plugins/ml2/ml2_conf.ini
     cat > /etc/neutron/plugins/ml2/ml2_conf.ini  << EOF
@@ -279,9 +279,6 @@ Configure the neutron ML2 plugin agent. Although this agent doesn't run on the c
     type_drivers = gre
     tenant_network_types = gre
     mechanism_drivers = openvswitch
-
-    [ml2_type_vlan]
-    network_vlan_ranges = vlan:1:1000
 
     [ml2_type_gre]
     tunnel_id_ranges = 1:1000
