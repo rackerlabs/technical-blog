@@ -270,6 +270,19 @@ Finally we must configure neutron. If the basic configuration file is supplied i
     rabbit_host = $MY_PRIVATE_IP
     EOF
 
+Rotate the neutron log files:
+
+    cat >> /etc/logrotate.d/neutron << EOF
+    /var/log/neutron/*.log {
+            daily
+            missingok
+            rotate 7
+            compress
+            notifempty
+            nocreate
+    }
+    EOF
+
 Neutron supports multiple networking layer 2 technologies through the ML2 plugin. Configure the neutron ML2 plugin agent to use GRE tunnels for project network isolation. Although this agent doesn't run on the controller node, the neutron server needs to know about the plugin:
 
     rm /etc/neutron/plugins/ml2/ml2_conf.ini
