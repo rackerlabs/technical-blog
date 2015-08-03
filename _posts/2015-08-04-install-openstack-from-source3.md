@@ -1,6 +1,5 @@
 ---
 layout: post
-title: "Install OpenStack from source Part 3"
 date: 2015-08-04 23:59
 comments: true
 author: Phil Hopkins
@@ -27,6 +26,7 @@ With that completed now let's clone the nova repo:
     git clone https://github.com/openstack/nova.git -b stable/kilo
 
 Next copy the config files to their proper location and install nova:
+
     cd nova
     cp -r etc/nova/* /etc/nova/
     python setup.py install
@@ -38,7 +38,7 @@ We have done before, create the MySQL nova database and set the permissions so t
     mysql -u root -pmysql -e "GRANT ALL PRIVILEGES ON nova.* TO 'nova'@'localhost' IDENTIFIED BY 'nova';"
     mysql -u root -pmysql -e "GRANT ALL PRIVILEGES ON nova.* TO 'nova'@'%' IDENTIFIED BY 'nova';"
 
-The Python module tox can be used to build a full nova.conf file but in reality it is way too big and complex for what we need. The folllowing creates a usable nova.conf file for our needs. I recommend that you read it carefully and familiarize yourself with the parameters that are being set.
+The Python module tox can be used to build a full nova.conf file, but in reality it is way too big and complex for what we need. The folllowing creates a usable nova.conf file for our needs. I recommend that you read it carefully and familiarize yourself with the parameters that are being set.
 
     cat > /etc/nova/nova.conf << EOF
     [DEFAULT]
@@ -101,7 +101,20 @@ The Python module tox can be used to build a full nova.conf file but in reality 
     rabbit_host = 10.0.1.4
     
     EOF
-    
+
+Rotate the nova log files:
+
+    cat >> /etc/logrotate.d/nova << EOF
+    /var/log/neutron/*.log {
+            daily
+            missingok
+            rotate 7
+            compress
+            notifempty
+            nocreate
+    }
+    EOF
+
 Set the permissions on the proper nova files so that the nova user can read them:
 
     chown nova:nova /etc/nova/*.{conf,json,ini}
@@ -110,11 +123,12 @@ And let nova populate the database with the needed tables:
 
     nova-manage db sync
 
-We are almost ready to start nova but we must first create the several needed nova upstart scripts. We need to start the nova api, cert, consoleauth, conductor and scheduler processes:
+We are almost ready to start nova, but we must first create the several needed nova upstart scripts. We need to start the nova api, cert, consoleauth, conductor and scheduler processes:
 
 Note: These scripts are just copied from the scripts that the Ubuntu packaged version of nova installs.
 
 Nova api:
+
     cat > /etc/init/nova-api.conf << EOF
     
     start on runlevel [2345]
@@ -203,7 +217,7 @@ Check to see if the nova processes are running:
 
 There should be at least one line of output for each nova process. Rerun this after 30 seconds or so, to verify that the processes stay running and that there are not problems.
 
-If nova services does not start or stay running use the appropriate following command to test and get output that can be used to debug problems with the service that is not starting.
+If one or more of the nova services does not start or stay running use the appropriate command below to test and get output that can be used to debug problems with the service that is not starting.
 
     sudo -u nova nova-api --config-file=/etc/nova/nova.conf
     sudo -u nova nova-cert --config-file=/etc/nova/nova.conf
