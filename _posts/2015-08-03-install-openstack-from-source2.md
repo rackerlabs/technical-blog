@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Install OpenStack from source Part 2"
-date: 2015-07-31 23:59
+date: 2015-08-03 23:59
 comments: true
 author: Phil Hopkins
 published: true
@@ -103,7 +103,7 @@ If you do not get the Identity service signing certificates for the Image servic
     cp /etc/keystone/ssl/certs/ca.pem /var/lib/glance/cacert.pem
     cp /etc/keystone/ssl/certs/signing_cert.pem /var/lib/glance/
     chown glance:glance /var/lib/glance/*
-    chmod 600 /var/lib/glance/cacert.pem 
+    chmod 600 /var/lib/glance/cacert.pem
     chmod 600 /var/lib/glance/signing_cert.pem
 
 We are almost ready to start glance but we must first create the glance upstart scripts:
@@ -149,7 +149,7 @@ If glance started we should see a line from the last command showing information
     sudo -u glance glance-api --config-file=/etc/glance/glance-api.conf --config-file=/etc/glance/glance-api-paste.ini > /dev/null 2>&1 &
 
     sudo -u glance glance-registry --config-file=/etc/glance/glance-registry.conf --config-file=/etc/glance/glance-registry-paste.ini > /dev/null 2>&1 &
-    
+
 Note: Setting the value `debug = True` in the file `/etc/glance/glance.conf` will increade the logging output, for help in debugging failures.
 
 Next, install an image into glance for use once we have OpenStack fully installed as a basis for VMs. There is a small cloud image based on Ubuntu that is available, named cirros. With glance running download the cirros image and load it into glance:
@@ -163,7 +163,7 @@ Next, install an image into glance for use once we have OpenStack fully installe
 
 Our second process is now running and we can now turn our attention to installing the Networking service (neutron). This is the first of three neutron installs that we will have to do, the neutron server on the controller node and the neutron agents on the network and compute nodes.
 
-Since the nova, neutron and glance processes need root or sudo privileges to accomplish various tasks we need to create special sudo permissions for these process users. OpenStack also limits the extent of these privileges through use of a rootwrap configuration. Run the following script to set up the sudo permissions: 
+Since the nova, neutron and glance processes need root or sudo privileges to accomplish various tasks we need to create special sudo permissions for these process users. OpenStack also limits the extent of these privileges through use of a rootwrap configuration. Run the following script to set up the sudo permissions:
 
     for SERVICE in neutron nova cinder
     do
@@ -185,7 +185,7 @@ Some of the pip prerequisites have a couple of the package prerequisites, that a
 Clone the neutron repon:
 
     git clone https://github.com/openstack/neutron.git -b stable/kilo
-    
+
 Copy the provided configuration files:
 
     cp neutron/etc/* /etc/neutron/
@@ -194,7 +194,7 @@ Copy some needed configuration subdirectories:
 
     cp -R neutron/etc/neutron/plugins/ml2/* /etc/neutron/plugins/ml2
     cp -R neutron/etc/neutron/rootwrap.d/* /etc/neutron/rootwrap.d
-    
+
 Now install neutron:
 
     cd neutron
@@ -233,7 +233,7 @@ Place the neutron endpoint information into the keystone service catalog:
 Finally we must configure neutron. If the basic configuration file is supplied in the package close process,  remove it, since it is very long and difficult to edit. Next, the following sequence will replace it with a simpler one (the original is still in the cloned neutron directory if we ever need to look at it in the future):
 
     rm /etc/neutron/neutron.conf
-    
+
     cat > /etc/neutron/neutron.conf << EOF
     [DEFAULT]
     verbose = True
@@ -346,5 +346,5 @@ Start neutron server running and verify that it stays running. The second line w
 If neutron will not start use the following line to manually start neutron. If the neutron process has errors in starting it will give you output to aid in debugging the problem.
 
     sudo -u neutron neutron-server --config-file=/etc/neutron/neutron.conf --config-file=/etc/neutron/plugins/ml2/ml2_conf.ini --log-file /var/log/neutron/server.log
-    
+
 In the next article of this series we install several nova processes onto the controller node.
