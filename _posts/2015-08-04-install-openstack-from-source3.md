@@ -12,33 +12,33 @@ categories:
 Install OpenStack from source Part 3
 ====================================
 
-In  [article one of this series](https://developer.rackspace.com/blog/install-openstack-from-source/) we started installing OpenStack from source and in [article two of this series](https://developer.rackspace.com/blog/install-openstack-from-source2/), we continued the process by installing glance and neutron onto the controller node.
+In  [article one of this series](https://developer.rackspace.com/blog/install-openstack-from-source/) we started installing OpenStack from source, and, in [article two of this series](https://developer.rackspace.com/blog/install-openstack-from-source2/), we continued the process by installing glance and neutron onto the controller node.
 
 <!-- more -->
 
-Let's get started installing nova. First, we need to install a few more package dependencies so that the pip requirements can be installed successfully:
+Now, let's get started installing nova. First, we need to install a few more package dependencies so that the pip requirements can be installed successfully:
 
     apt-get install -y libpq-dev python-libvirt libxml2-dev libxslt1-dev
     pip install mydb
 
-With that completed now let's clone the nova repo:
+With that completed, now let's clone the nova repo:
 
     git clone https://github.com/openstack/nova.git -b stable/kilo
 
-Next copy the config files to their proper location and install nova:
+Next, copy the config files to their proper location and install nova:
 
     cd nova
     cp -r etc/nova/* /etc/nova/
     python setup.py install
     cd ~
 
-We have done before, create the MySQL nova database and set the permissions so the nova user can access it:
+As we have done before, create the MySQL nova database and set the permissions so the nova user can access it:
 
     mysql -u root -pmysql -e 'CREATE DATABASE nova;'
     mysql -u root -pmysql -e "GRANT ALL PRIVILEGES ON nova.* TO 'nova'@'localhost' IDENTIFIED BY 'nova';"
     mysql -u root -pmysql -e "GRANT ALL PRIVILEGES ON nova.* TO 'nova'@'%' IDENTIFIED BY 'nova';"
 
-The Python module tox can be used to build a full nova.conf file, but in reality it is way too big and complex for what we need. The folllowing creates a usable nova.conf file for our needs. I recommend that you read it carefully and familiarize yourself with the parameters that are being set.
+The Python module tox can be used to build a full nova.conf file, but, in reality it is way too big and complex for what we need. The folllowing creates a usable nova.conf file for our needs. I recommend that you read it carefully and familiarize yourself with the parameters that are being set.
 
     cat > /etc/nova/nova.conf << EOF
     [DEFAULT]
@@ -203,7 +203,7 @@ Nova scheduler:
     exec start-stop-daemon --start --chuid nova --exec /usr/local/bin/nova-scheduler -- --config-file=/etc/nova/nova.conf
     EOF
 
-Now lets start the nova services and verify that everything is running:
+Now, lets start the nova services and verify that everything is running:
 
     start nova-api
     start nova-cert
@@ -215,9 +215,9 @@ Check to see if the nova processes are running:
 
     ps aux|grep nova
 
-There should be at least one line of output for each nova process. Rerun this after 30 seconds or so, to verify that the processes stay running and that there are not problems.
+There should be at least one line of output for each nova process. Rerun this, after 30 seconds or so, to verify that the processes stay running and that there are not problems.
 
-If one or more of the nova services does not start or stay running use the appropriate command below to test and get output that can be used to debug problems with the service that is not starting.
+If one or more of the nova services does not start (or stay) running use the appropriate command below to test and get output that can be used to debug problems with the service that is not starting.
 
     sudo -u nova nova-api --config-file=/etc/nova/nova.conf
     sudo -u nova nova-cert --config-file=/etc/nova/nova.conf
