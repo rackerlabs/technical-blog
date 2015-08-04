@@ -225,5 +225,5 @@ If one or more of the nova services does not start or stay running use the appro
     sudo -u nova nova-conductor --config-file=/etc/nova/nova.conf
     sudo -u nova nova-scheduler --config-file=/etc/nova/nova.conf
     
-We now have the major OpenStack processes running on the controller node, in the next article our focus moves to the network node, to install various neutron pieces that need to be running there, from there to the compute node and finally back to the controller node to install the Volume service (cinder) and the dashboard (horizon).
+We now have the major OpenStack processes running on the controller node, and in the next article, our focus moves to the network node. We will install various neutron pieces that need to be running there, then move to the compute node and finally back to the controller node to install the Volume service (cinder) and the dashboard (horizon).
 
