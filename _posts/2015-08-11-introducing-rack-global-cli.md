@@ -17,11 +17,11 @@ It's not every day that we get to release a new tool! Awesome Rackers across the
 
 <!-- more -->
 
-`rack`, a single binary download, requires no installation. We've made `rack` in Go, and we have binaries available for [OSX](https://ec4a542dbf90c03b9f75-b342aba65414ad802720b41e8159cf45.ssl.cf5.rackcdn.com/1.0.0-beta.1/Darwin/amd64/rack), [Linux](https://ec4a542dbf90c03b9f75-b342aba65414ad802720b41e8159cf45.ssl.cf5.rackcdn.com/1.0.0-beta.1/Linux/amd64/rack), and [Windows](https://ec4a542dbf90c03b9f75-b342aba65414ad802720b41e8159cf45.ssl.cf5.rackcdn.com/1.0.0-beta.1/Windows/amd64/rack.exe). In addition, we've standardized the command interface across services, so there should never be any suprises.
+`rack`, a single binary download, requires _almost_ no installation. We've made `rack` in Go, and we have binaries available for [OSX](https://ec4a542dbf90c03b9f75-b342aba65414ad802720b41e8159cf45.ssl.cf5.rackcdn.com/1.0.0-beta.1/Darwin/amd64/rack), [Linux](https://ec4a542dbf90c03b9f75-b342aba65414ad802720b41e8159cf45.ssl.cf5.rackcdn.com/1.0.0-beta.1/Linux/amd64/rack), and [Windows](https://ec4a542dbf90c03b9f75-b342aba65414ad802720b41e8159cf45.ssl.cf5.rackcdn.com/1.0.0-beta.1/Windows/amd64/rack.exe). In addition, we've standardized the command interface across services, so there should never be any suprises.
 
 `rack` has built-in support for profiles, so that you can have multiple sets of credentials and manage using different sets easily. Command auto-completion makes learning new commands truly effortless.
 
-Once you've [downloaded `rack`](https://developer.rackspace.com/docs/rack-cli) and made it executable, create a profile.
+Once you [download `rack`](https://developer.rackspace.com/docs/rack-cli) and make it executable, create a profile.
 
 ```
 rack configure
@@ -42,7 +42,7 @@ The initial release of `rack`, version `1.0.0-beta.1` supports four core Rackspa
 - Cloud Networks
 - Cloud Block Storage
 
-In the coming releases, we'll add support for additional services, and respond to feedback we get from you. We can't make this tool be awesome without your input; we're using GitHub for [issue tracking](https://github.com/rackspace/rack/issues) and [planning purposes](https://github.com/rackspace/rack/milestones). We truly appreciate all contributions! Great software is the result of impassioned people working together.
+In the coming releases, we'll add support for additional services, and respond to feedback we get from you. We can't make this tool be awesome without your input; we're using GitHub for [issue tracking](https://github.com/rackspace/rack/issues) and [planning purposes](https://github.com/rackspace/rack/milestones). We truly appreciate all contributions, especially feature requests! Great software is the result of impassioned people working together.
 
 We hope you love what we're building with `rack`, and we can't wait to add more capabilities.
 
