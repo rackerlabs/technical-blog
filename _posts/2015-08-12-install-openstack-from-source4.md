@@ -20,6 +20,10 @@ We installed the Identity service (keystone), Image service (glance), Networking
 
 <!-- more -->
 
+Although these network functions could run on the controller node, in this example, for ease of understanding the various pieces of OpenStack, the network functions that are separate from those that must run on a compute node are placed on a separate machine. This architecture also makes it simpler to examine tenant network traffic for those trying to understand how neutron functions.
+
+Neutron supports two layer 2 technologies, Open vSwitch and Linux bridge. You want to review the OpenStack Networking guide for more information about each of these two technologies. For this installation, I have selected Open vSwitch, but Linux bridge would be an equally functional choice.
+
 On this new machine, let's start by making sure this system is updated and ready for the neutron installation:
 
     apt-get update; apt-get dist-upgrade -y;reboot
@@ -41,8 +45,9 @@ Run the following to set the variables in the current shell session:
 
 Some of the pip prerequisites have a couple package prerequisites that aren't automatically installed. Also the compute and network nodes need a few additional packages. Install these packages now:
 
-    apt-get install -y git ipset keepalived conntrack conntrackd arping openvswitch-switch dnsmasq-utils dnsmasq python-dev libffi-dev libssl-dev
+    apt-get install -y git ipset keepalived conntrack conntrackd arping openvswitch-switch dnsmasq-utils dnsmasq python-dev libffi-dev libssl-dev libmysqlclient-dev
     pip install pbr
+    pip install mysql-python
 
 Add a neutron user so that the neuron service can run under the neutron user's permissions:
 
@@ -145,7 +150,7 @@ Again neutron supports multiple networking layer 2 technologies through the ML2 
     tunnel_types = gre
     EOF
 
-Now the `dhcp.conf` files. The neutron dhcp agent provides IPs to our VMs, network namespaces are enabled, as well as the information supporting the metadata agent:
+Now configure the `dhcp.conf` files. The neutron dhcp agent provides IPs to our VMs, network namespaces are enabled, as well as the information supporting the metadata agent:
 
     sed -i 's/# interface_driver = neutron.agent.linux.interface.OVSInterfaceDriver/interface_driver = neutron.agent.linux.interface.OVSInterfaceDriver/g' /etc/neutron/dhcp_agent.ini
     sed -i 's/# dhcp_driver = neutron.agent.linux.dhcp.Dnsmasq/dhcp_driver = neutron.agent.linux.dhcp.Dnsmasq/g' /etc/neutron/dhcp_agent.ini
@@ -173,7 +178,7 @@ Set permissions on the configuration files so that the neutron agents can read t
     chown neutron:neutron /etc/neutron/*.{conf,json,ini}
     chown -R neutron:neutron /etc/neutron/plugins
 
-Give the neutron user sudo access, limited by rootwrap, to the commands that neutron needs root privileges to execute:
+Many of the OpenStack services need root access to run certain commands. For security reasons, we don't want to give them full root access to a system, so OpenSack has created a wrapper used in conjuction with sudo to limit each service to only the commands that they need, using a tool called rootwrap. Give the neutron user sudo access, limited by rootwrap, to the commands that neutron needs root privileges to execute:
 
     cat > /etc/sudoers.d/neutron_sudoers << EOF
     Defaults:neutron !requiretty
@@ -249,14 +254,23 @@ Wait 20 to 30 seconds and verify that everything started:
 
     ps aux|grep neutron
 
-There should be a line of output for each agent showing the agent's process information. If by chance one or more of the agents don't start or stay running, use the following to test and get log output to debug the reason for the failure:
+There should be a line of output for each agent showing the agent's process information. such as:
+
+    root@network:~# ps aux|grep neutron
+    neutron   1305  0.0  2.5 110556 39336 ?        Ss   May04  24:25 /usr/bin/python /usr/local/bin/neutron-dhcp-agent --config-file=/etc/neutron/neutron.conf --config-file=/etc/neutron/dhcp_agent.ini --log-file=/var/log/neutron/dhcp-agent.log
+    neutron   1311  0.0  2.7 113336 42376 ?        Ss   May04  23:34 /usr/bin/python /usr/local/bin/neutron-l3-agent --config-file=/etc/neutron/neutron.conf --config-file=/etc/neutron/l3_agent.ini --log-file=/var/log/neutron/l3-agent.log
+    neutron   1597  0.3  2.2 105764 34552 ?        Ss   May04 432:22 /usr/bin/python /usr/local/bin/neutron-openvswitch-agent --config-file=/etc/neutron/neutron.conf --config-file=/etc/neutron/plugins/ml2/ml2_conf.ini --log-file=/var/log/neutron/openvswitch-agent.log
+    neutron  20243 19.3  2.5 199676 39876 ?        Ss   14:00   0:00 /usr/bin/python /usr/local/bin/neutron-metadata-agent --config-file=/etc/neutron/neutron.conf --config-file=/etc/neutron/metadata_agent.ini --log-file=/var/log/neutron/metadata-agent.log
+
+If by chance one or more of the agents don't start or stay running, use the following to test and get log output to debug the reason for the failure:
 
     sudo -u neutron neutron-openvswitch-agent --config-file=/etc/neutron/neutron.conf --config-file=/etc/neutron/plugins/ml2/ml2_conf.ini --log-file=/var/log/neutron/openvswitch-agent.log
     sudo -u neutron neutron-metadata-agent --config-file=/etc/neutron/neutron.conf --config-file=/etc/neutron/metadata_agent.ini --log-file=/var/log/neutron/metadata-agent.log
     sudo -u neutron neutron-dhcp-agent --config-file=/etc/neutron/neutron.conf --config-file=/etc/neutron/dhcp_agent.ini --log-file=/var/log/neutron/dhcp-agent.log
     sudo -u neutron neutron-l3-agent --config-file=/etc/neutron/neutron.conf --config-file=/etc/neutron/l3_agent.ini --config-file=/etc/neutron/fwaas_driver.ini --log-file=/var/log/neutron/l3-agent.log
+    
 
-To verify that the agents communicated with the controller processes, log in on the controller node as root and run the following, which shoud show that the controller received messages from the agents running on the network node:
+To verify that the agents communicated with the controller processes, log in on the controller node as root and run the following, which should show that the controller received messages from the agents running on the network node:
 
     source adminrc
     neutron agent-list
@@ -275,4 +289,4 @@ You should see output similar to:
 
 There should be a line for each of the four agents running on the network node and they should all have a "smiley face" in the alive column.
     
-Now that the network node is up and running, in the next article of this series, we start configuring the compute node and start the nova-compute agent and neutron openvswitch agents there. 
+Now that the network node is up and running, in the next article of this series, we start configuring the compute node and start the nova-compute agent and neutron `openvswitch` agents there. 
