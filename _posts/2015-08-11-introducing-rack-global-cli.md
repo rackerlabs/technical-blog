@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2015-08-11 15:00
+date: 2015-08-11 23:59
 title: "Introducing rack - Rackspace Global Command-Line Interface"
 comments: true
 author: Ken Perkins
