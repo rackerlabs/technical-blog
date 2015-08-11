@@ -27,7 +27,7 @@ Once you've [downloaded `rack`](https://developer.rackspace.com/docs/rack-cli) a
 rack configure
 ```
 
-This will guide you through creating a profile that can be used in successive calls. If you choose to create a default profile, you won't even have to specify the profile when invoking `rack`. For example, to view all of your servers (based on the default profile you created):
+This configuration wizard will guide you through creating a profile that can be used in successive calls. If you choose to create a default profile, you won't even have to specify the profile when invoking `rack`. For example, to view all of your servers (based on the default profile you created):
 
 ```
 rack servers instance list
