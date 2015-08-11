@@ -11,15 +11,15 @@ categories:
     - command-line
 ---
 
-It's not every day that we get to release a new tool! Awesome Rackers across the company produce tools all the time, but we think today's news stands alone. We're thrilled to announce the first beta release of `rack`, a new [global command-line interface purpose-built for interacting with the Rackspace cloud](https://developer.rackspace.com/docs/rack-cli).
+It's not every day that we get to release a new tool! Awesome Rackers across the company produce tools all the time, but we think today's news stands alone. We're thrilled to announce the first beta release of `rack`, a new [global command-line interface](https://developer.rackspace.com/docs/rack-cli) purpose-built for interacting with the Rackspace cloud.
 
 <img class="blog-post" src="{% asset_path 2015-08-11-introducing-rack-global-cli/rack.gif %}"/>
 
 <!-- more -->
 
-The `rack` tool, a single binary download, requires no installation. We've made `rack` in Go, and we have binaries available for [OSX](https://ec4a542dbf90c03b9f75-b342aba65414ad802720b41e8159cf45.ssl.cf5.rackcdn.com/1.0.0-beta.1/Darwin/amd64/rack), [Linux](https://ec4a542dbf90c03b9f75-b342aba65414ad802720b41e8159cf45.ssl.cf5.rackcdn.com/1.0.0-beta.1/Linux/amd64/rack), and [Windows](https://ec4a542dbf90c03b9f75-b342aba65414ad802720b41e8159cf45.ssl.cf5.rackcdn.com/1.0.0-beta.1/Windows/amd64/rack.exe). In addition, we've standardized the command interface across services, so there should never be any suprises.
+`rack`, a single binary download, requires no installation. We've made `rack` in Go, and we have binaries available for [OSX](https://ec4a542dbf90c03b9f75-b342aba65414ad802720b41e8159cf45.ssl.cf5.rackcdn.com/1.0.0-beta.1/Darwin/amd64/rack), [Linux](https://ec4a542dbf90c03b9f75-b342aba65414ad802720b41e8159cf45.ssl.cf5.rackcdn.com/1.0.0-beta.1/Linux/amd64/rack), and [Windows](https://ec4a542dbf90c03b9f75-b342aba65414ad802720b41e8159cf45.ssl.cf5.rackcdn.com/1.0.0-beta.1/Windows/amd64/rack.exe). In addition, we've standardized the command interface across services, so there should never be any suprises.
 
-With `rack` there are built-in support for profiles, so that you can have multiple sets of credentials and manage using different sets easily. Command auto-completion makes learning new commands truly effortless.
+`rack` has built-in support for profiles, so that you can have multiple sets of credentials and manage using different sets easily. Command auto-completion makes learning new commands truly effortless.
 
 Once you've [downloaded `rack`](https://developer.rackspace.com/docs/rack-cli) and made it executable, create a profile.
 
