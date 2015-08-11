@@ -33,7 +33,7 @@ This configuration wizard will guide you through creating a profile that can be 
 rack servers instance list
 ```
 
-The preceding example is representative of all of the commands in `rack`, which take the form of `rack <service> <sub-service> <action> [flags]`. We hope that this model makes it easy to interact with `rack` and to dive into services that our users haven't had much opportunity to interact with before.
+The preceding example is representative of all of the commands in `rack`, which take the form of `rack <service> <sub-service> <action> [flags]`. We hope that this model makes it easy to interact with `rack` and you dive in to explore services you haven't had much opportunity to interact with before.
 
 The initial release of `rack`, version `1.0.0-beta.1` supports four core Rackspace services:
 
