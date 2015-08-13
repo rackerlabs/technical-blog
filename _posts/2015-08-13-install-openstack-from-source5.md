@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Install OpenStack from source Part 5"
-date: 2015-08-11 06:59
+date: 2015-08-13 06:59
 comments: true
 author: Phil Hopkins
 published: true
@@ -10,7 +10,7 @@ categories:
     - OSAD
 ---
 
-This is the fifth installment in a series of installing OpenStack from source. The three previous articles:
+This is the fifth installment in a series of installing OpenStack from source. The four previous articles can be found here:
 * [Install Keystone,](https://developer.rackspace.com/blog/install-openstack-from-source/)
 * [Install Glance and Neutron](https://developer.rackspace.com/blog/install-openstack-from-source2/)
 * [Install Nova](https://developer.rackspace.com/blog/install-openstack-from-source3/) 
@@ -20,9 +20,9 @@ We installed the Identity service (keystone), Image service (glance), Networking
 
 <!-- more -->
 
-We are close to finishing our install of OpenStack - this section will finish the basic OpenStack install. We will be able to create networks and start VMs with this artice, leaving only cinder and horizon for the last artice.
+We are close to finishing our install of OpenStack - this section finishs the basic OpenStack install. We will be able to create networks and start VMs with this article, leaving only cinder and horizon for the last artice.
 
-Install the following packages, which are prerequisites for some of the pip packages that will be installed.
+Install the following packages, which are prerequisites for some of the pip packages installed next.
 
     apt-get install -y git ipset keepalived conntrack conntrackd arping openvswitch-switch dnsmasq-utils dnsmasq libxml2-dev libxslt1-dev libmysqlclient-dev libffi-dev libssl-dev
     apt-get install -y libvirt-bin qemu-kvm libpq-dev python-libvirt genisoimage kpartx parted vlan multipath-tools sg3-utils libguestfs0 python-guestfs python-dev sysfsutils pkg-config
@@ -37,13 +37,13 @@ Set some shell variables that we use:
     LOCAL_DATA_IP=10.0.2.6
     EOF
     
-Note: the IPs used above may have to be adjusted, if your environment is different from this one. The variables `MY_PRIVATE_IP` and `MY_PUBLIC_IP` refer to the interface with the API access on the controller node. The variable `MY_IP`is the interface on the compute node that is connected to the API interface on the controller node. The variable `LOCAL_DATA_IP` is the IP of the interface on the compute node over which tenant network traffic travels and is connected to the corresponding interface on the network node. Refer to the graphic in the first article in the series.
+Note: if your networking environment is different from this one, the IPs used above may have to be adjusted. The variables `MY_PRIVATE_IP` and `MY_PUBLIC_IP` refer to the interface with the API access on the controller node. The variable `MY_IP`is the interface on the compute node that is connected to the API interface on the controller node. The variable `LOCAL_DATA_IP` is the IP of the interface on the compute node over which tenant network traffic travels and is connected to the corresponding interface on the network node. Refer to the graphic in the first article in the series.
 
 Run the following command to set the variables in the current shell session:
     
     source .bashrc
 
-Like we have done on the controller and network nodes, we need to create users under which the associated services will run. The following script creates tohse services, along with the directories that they will need and provides the configuration file to rotate the log files.
+Like we have done on the controller and network nodes, we need to create users under which the associated services run. The following script creates these services, along with the directories that they need and provides the configuration file to rotate the log files.
 
     for SERVICE in neutron nova
     do
@@ -123,7 +123,7 @@ Give the neutron sudo access, limited by rootwrap, to the commands for which neu
     EOF
     chmod 440 /etc/sudoers.d/neutron_sudoers
 
-Now to build the `neutron.conf` file. Like we did on the controller and network nodes, we are not going to use the `neutron.conf` file that came when we cloned the neutron repo. Instead, it is built from scratch (this one is much shorter that the ones on the controller and network nodes):
+Now build the `neutron.conf` file. Like we did on the controller and network nodes, we are not going to use the `neutron.conf` file that came when we cloned the neutron repo. Instead, it is built from scratch (this one is much shorter that the ones on the controller and network nodes):
 
     rm /etc/neutron/neutron.conf
     cat > /etc/neutron/neutron.conf << EOF
@@ -198,7 +198,7 @@ If you don't see a line of output for the `neutron-openvswitch-agent` process, u
 
     sudo -u neutron neutron-openvswitch-agent --config-file=/etc/neutron/neutron.conf --config-file=/etc/neutron/plugins/ml2/ml2_conf.ini --log-file=/var/log/neutron/openvswitch-agent.log
 
-Next we turn our attention to installing nova on the compute node. We have already created to nova user and the major required directories. So clone the nova repo:
+Next we turn our attention to installing nova on the compute node. We have already created the nova user and the major required directories. So clone the nova repo:
 
     git clone https://github.com/openstack/nova.git -b stable/kilo
     
@@ -207,7 +207,7 @@ Copy the downloaded (cloned) configuration files to their proper location in the
     cd nova
     cp -r etc/nova/* /etc/nova/
     
-And install the nova python scripts:
+And install the nova Python scripts:
     
     python setup.py install
     cd ~
@@ -222,7 +222,7 @@ Give the nova sudo access, limited by rootwrap, to the commands for which nova n
     
     chmod 440 /etc/sudoers.d/nova_sudoers
 
-Now create the `nova.conf` file. Use the OpenStack Config Reference Guide to familarize yourself with each of the parameters being set:
+Now create the `nova.conf` file. Use the [OpenStack Config Reference Guide](http://docs.openstack.org/kilo/config-reference/content/) to familarize yourself with each of the parameters being set:
     
     cat > /etc/nova/nova.conf << EOF
     [DEFAULT]
@@ -284,7 +284,7 @@ Now create the `nova.conf` file. Use the OpenStack Config Reference Guide to fam
 
     EOF
 
-Since this is the compute nod,e we need to configure the `nova-compute.conf` file and to set the proper privileges for the file:
+Since this is the compute node, we need to configure the `nova-compute.conf` file and to set the proper privileges for the file:
 
     cat > /etc/nova/nova-compute.conf << EOF
     [DEFAULT]
@@ -295,12 +295,12 @@ Since this is the compute nod,e we need to configure the `nova-compute.conf` fil
 
     chown nova:nova /etc/nova/*.{conf,json,ini}
 
-On compute nodes load the nbd module. The start script will do this also, but we do this here to ensure that there are no problems with loading the module:
+On compute nodes load the nbd module. The start script does this also, but we do this here to ensure that there are no problems with loading the module:
 
     modprobe nbd
     depmod
 
-And lastly, create the needed nova Upstart script:
+And lastly, create the needed nova upstart script:
 
     cat > /etc/init/nova-compute.conf << EOF
     description "Nova compute worker"
@@ -434,7 +434,7 @@ Finally, use the nova list command to verify that the image booted. You may have
     | 48c0066a-f16e-414d-89ed-4b93496d0d8f | MyFirstInstance | ACTIVE | -          | Running     | private=10.1.0.2 |
     +--------------------------------------+-----------------+--------+------------+-------------+------------------+
 
-Congradulations, you have successfully gotten OpenStack running from a source install. Want to update a service with the latest patches? It's simple! In the following section, we will update nova on the controller node.
+Congratulations, you have successfully gotten OpenStack running from a source install. Want to update a service with the latest patches? It's simple! In the following section, we update nova on the controller node.
 
     cd nova
     git pull
@@ -451,7 +451,7 @@ And lastly, restart the associated services:
     restart nova-conductor
     restart nova-scheduler
     
-That was easy. In the next and concluding artice of this series, we will go to the controller node and install the Vloume service (cinder) and the web based dashboard (horizon). 
+That was easy. In the next and concluding article of this series, we go to the controller node and install the Volume service (cinder) and the web based dashboard (horizon). 
 
 
 
