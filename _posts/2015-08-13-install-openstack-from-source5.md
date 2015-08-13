@@ -108,7 +108,7 @@ Copy the downloaded configuration files from the cloned repo:
     cp -R neutron/etc/neutron/plugins/ml2/* /etc/neutron/plugins/ml2
     cp -R neutron/etc/neutron/rootwrap.d/* /etc/neutron/rootwrap.d
     
-Install the neutron python scripts:
+Install the neutron Python scripts:
     
     cd neutron
     python setup.py install
@@ -439,7 +439,7 @@ Congratulations, you have successfully gotten OpenStack running from a source in
     cd nova
     git pull
     
-Now update the installed python scripts:
+Now update the installed Python scripts:
 
     python setup.py install
     
