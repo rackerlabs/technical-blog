@@ -16,12 +16,13 @@ This is the fifth installment in a series of installing OpenStack from source. T
 * [Install Nova](https://developer.rackspace.com/blog/install-openstack-from-source3/) 
 * [Install Neutron on the Network node](https://developer.rackspace.com/blog/install-openstack-from-source4/) 
 
-We installed the Identity service (keystone), Image service (glance), Networking service (neutron) and the Compute service (nova) onto the controller node, then we turned our attention to the network node to install the neutron agents to support the network layers two and three. Now, we turn our attention to the compute node to install both neutron and nova.
+We installed the Identity service (keystone), Image service (glance), Networking service (neutron) and the Compute service (nova) onto the controller node, and then we turned our attention to the network node to install the neutron agents to support the network layers two and three. Now, we turn our attention to the compute node to install both neutron and nova.
+
 <!-- more -->
 
-We are close to finishing our install of OpenStack, this section will finish the basic OpenStack install. We will be able to create networks and start VMs with this artice, leaving only cinder and horizon for the last artice.
+We are close to finishing our install of OpenStack - this section will finish the basic OpenStack install. We will be able to create networks and start VMs with this artice, leaving only cinder and horizon for the last artice.
 
-Install the following packages which are prerequisites for some of the pip packages that will be installed..
+Install the following packages, which are prerequisites for some of the pip packages that will be installed.
 
     apt-get install -y git ipset keepalived conntrack conntrackd arping openvswitch-switch dnsmasq-utils dnsmasq libxml2-dev libxslt1-dev libmysqlclient-dev libffi-dev libssl-dev
     apt-get install -y libvirt-bin qemu-kvm libpq-dev python-libvirt genisoimage kpartx parted vlan multipath-tools sg3-utils libguestfs0 python-guestfs python-dev sysfsutils pkg-config
@@ -36,13 +37,13 @@ Set some shell variables that we use:
     LOCAL_DATA_IP=10.0.2.6
     EOF
     
-Note: the IPs used above may have to be adjusted to your environment, if different from this one. The Variables, `MY_PRIVATE_IP` and `MY_PUBLIC_IP`, refer to the interface with the API access on the controller node. The variable, `MY_IP`, the interface on the compute node that is connected to the API interface on the controller node. The variable, `LOCAL_DATA_IP`, is the IP of the interface on the compute node over which tenant network traffic travels and is connected to the corresponding interface on the network node. Refer to the graphic in the first article in the series.
+Note: the IPs used above may have to be adjusted, if your environment is different from this one. The variables `MY_PRIVATE_IP` and `MY_PUBLIC_IP` refer to the interface with the API access on the controller node. The variable `MY_IP`is the interface on the compute node that is connected to the API interface on the controller node. The variable `LOCAL_DATA_IP` is the IP of the interface on the compute node over which tenant network traffic travels and is connected to the corresponding interface on the network node. Refer to the graphic in the first article in the series.
 
-Run the following to set the variables in the current shell session:
+Run the following command to set the variables in the current shell session:
     
     source .bashrc
 
-Like we have done on the controller and network nodes, we need to create users under which the associated services will run. The following script will create them along with the directories that these services will need and finally the information to cause the log files to be rotated:
+Like we have done on the controller and network nodes, we need to create users under which the associated services will run. The following script creates tohse services, along with the directories that they will need and provides the configuration file to rotate the log files.
 
     for SERVICE in neutron nova
     do
@@ -113,7 +114,7 @@ Install the neutron python scripts:
     python setup.py install
     cd ~
 
-Give the neutron sudo access, limited by rootwrap, to the commands that neutron needs root privileges to execute:
+Give the neutron sudo access, limited by rootwrap, to the commands for which neutron needs root privileges to execute:
     
     cat > /etc/sudoers.d/neutron_sudoers << EOF
     Defaults:neutron !requiretty
@@ -193,7 +194,7 @@ Wait 20 to 30 seconds and verify that everything started:
     
     ps aux|grep neutron
 
-You should see a line of output for the `neutron-openvswitch-agent` process, if not use the following to start the process and the output provides information why the `neutron-openvswitch-agent` is not running.
+If you don't see a line of output for the `neutron-openvswitch-agent` process, use the following command to start the process. The output provides information why the `neutron-openvswitch-agent` is not running.
 
     sudo -u neutron neutron-openvswitch-agent --config-file=/etc/neutron/neutron.conf --config-file=/etc/neutron/plugins/ml2/ml2_conf.ini --log-file=/var/log/neutron/openvswitch-agent.log
 
@@ -211,7 +212,7 @@ And install the nova python scripts:
     python setup.py install
     cd ~
 
-Give the nova sudo access, limited by rootwrap, to the commands that nova needs root privileges to execute:
+Give the nova sudo access, limited by rootwrap, to the commands for which nova needs root privileges to execute:
 
     cat > /etc/sudoers.d/nova_sudoers << EOF
     Defaults:nova !requiretty
@@ -283,7 +284,7 @@ Now create the `nova.conf` file. Use the OpenStack Config Reference Guide to fam
 
     EOF
 
-Since this is the compute node we need to configure the `nova-compute.conf` file and set the proper privileges for the file:
+Since this is the compute nod,e we need to configure the `nova-compute.conf` file and to set the proper privileges for the file:
 
     cat > /etc/nova/nova-compute.conf << EOF
     [DEFAULT]
@@ -294,7 +295,7 @@ Since this is the compute node we need to configure the `nova-compute.conf` file
 
     chown nova:nova /etc/nova/*.{conf,json,ini}
 
-On compute nodes load the nbd module, the start script will do this also, but we do this here to ensure there are no problems with loading the module:
+On compute nodes load the nbd module. The start script will do this also, but we do this here to ensure that there are no problems with loading the module:
 
     modprobe nbd
     depmod
@@ -332,12 +333,12 @@ Wait 20 to 30 seconds and verify that everything started:
     
     ps aux|grep nova
     
-And you should see something like:
+And you should see something like this:
 
     root@compute:~# ps aux|grep nova
     nova      2026  0.3 38.1 2830936 1546308 ?     Ssl  May04 525:17 /usr/bin/python /usr/local/bin/nova-compute --config-file=/etc/nova/nova.conf --config-file=/etc/nova/nova-compute.conf
 
-If by chance the nova-compute service didn't start or stay running, use the following to test and get log output to debug the reason for the failure:
+If by chance the nova-compute service didn't start or stay running, use the following command to test and get log output to debug the reason for the failure:
 
     sudo -u nova nova-compute --config-file=/etc/nova/nova.conf --config-file=/etc/nova/nova-compute.conf
 
@@ -365,7 +366,7 @@ Create a network named private:
     | tenant_id                 | 9d314f96330a4e459420623a922e2c09     |
     +---------------------------+--------------------------------------+
     
-On the network named private attach a subnet named private-subnet with a CIDR 10.1.0.0/28:
+On the network named private, attach a subnet named private-subnet with a CIDR 10.1.0.0/28:
     
     root@controller:~#     neutron subnet-create --name private-subnet private 10.1.0.0/28
     Created a new subnet:
@@ -387,7 +388,7 @@ On the network named private attach a subnet named private-subnet with a CIDR 10
     | tenant_id         | 9d314f96330a4e459420623a922e2c09          |
     +-------------------+-------------------------------------------+
     
-And boot an instance named MyFirstInstance using the previously loaded image named cirros-qcow2 using a flavor with id 1: 
+And boot an instance named MyFirstInstance, using the previously loaded image named cirros-qcow2, using a flavor with id 1: 
     
     root@controller:~# nova boot --image cirros-qcow2 --flavor 1 MyFirstInstance
     +--------------------------------------+-----------------------------------------------------+
@@ -424,7 +425,7 @@ And boot an instance named MyFirstInstance using the previously loaded image nam
     | user_id                              | 2f9cf7c3b3674c0e9cff5143ea633a59                    |
     +--------------------------------------+-----------------------------------------------------+
     
-Finally use the nova list command to verify that the image booted. You may have to run this several times or wait a few seconds to give your newly created OpenStack system time to boot its first VM.
+Finally, use the nova list command to verify that the image booted. You may have to run this several times, or wait a few seconds, to give your newly created OpenStack system time to boot its first VM.
     
     root@controller:~# nova list
     +--------------------------------------+-----------------+--------+------------+-------------+------------------+
@@ -433,7 +434,7 @@ Finally use the nova list command to verify that the image booted. You may have 
     | 48c0066a-f16e-414d-89ed-4b93496d0d8f | MyFirstInstance | ACTIVE | -          | Running     | private=10.1.0.2 |
     +--------------------------------------+-----------------+--------+------------+-------------+------------------+
 
-Congradulations, you have successfully gottne OpenStack running from a source install. Want to update a service with the latest patches? It's simple, in the following we will update nova on the controller node.
+Congradulations, you have successfully gotten OpenStack running from a source install. Want to update a service with the latest patches? It's simple! In the following section, we will update nova on the controller node.
 
     cd nova
     git pull
