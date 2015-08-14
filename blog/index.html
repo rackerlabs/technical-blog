@@ -1,17 +1,33 @@
 ---
 layout: blog-index
-title: Rackspace Developer Center
+title: Developer Blog - Rackspace Developer Center
+description: Cloud Tips and insights blog from Rackspace developers and partners
 ---
 
 {% for post in paginator.posts %}
-<div class="blog-tease">
-  <h4 class="blog-tease-title"><a href="{{ BASE_PATH }}{{ post.url }}">
-    {{ post.title }}</a></h4>
-  <div class="byline">By {{ post.author }} - Posted on {{ post.date | date: "%b %-d %Y" }}</div>
-  <p>{{post.excerpt}}</p>
-  <a href="{{ BASE_PATH }}{{ post.url }}" class="btn btn-primary">Read More</a>
-  <hr />
-</div>
+<section class="blog-post preview">
+    <h3 class="post-title"><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h3>
+    <div class="post-info">
+        <div class="post-avatar{% if post.authorIsRacker %} racker{% endif %}">
+            {% if post.authorAvatar %}
+                <img src="{{ post.authorAvatar }}" alt="{{ post.author }}">
+            {% else %}
+                <img src="https://randomuser.me/api/portraits/lego/1.jpg" alt="Placeholder Avatar">
+            {% endif %}
+
+        </div>
+        <div class="post-byline"><a href="" class="post-author">{{ post.author }}</a> | <time datetime="{{ post.date | date: "%F" }}">{{ post.date | date: "%B %-d, %Y" }}</time></div>
+        <ul class="post-categories">
+            <li><a href="">Openstack</a></li>
+            <li><a href="">Community</a></li>
+            <li><a href="">DevOps</a></li>
+        </ul>
+    </div>
+    <div class="post-preview">
+        <p>{{post.excerpt}}</p>
+    </div>
+    <a href="{{ BASE_PATH }}{{ post.url }}" class="post-read-more">Read More</a>
+</section>
 {% endfor %}
 
 <ul class="pagination">

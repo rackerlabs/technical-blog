@@ -1,50 +1,40 @@
 ---
 layout: default
 title: Rackspace Developer Center
+bodyClass: home
+headline: Developers, explore our cloud
+tagline: >
+    Get $600 in <strong>free credit</strong>. <br>
+    No minimums, rate limits, support fees, or contracts. <br>
+    <a href="" class="get-started">Get started now</a>
 ---
 
 
-<div class="box title">
-    <div class="container">
-        <h1>Developers, explore our cloud</h1>
-
-        <p>Get $600 in <span class="emphasis">free credit</span>.</p>
-
-        <p>No minimums, rate limits, support fees, or contracts.</p>
-        <a href="/signup/" class="btn btn-default">Get started now <i class="fa fa-arrow-right"></i></a>
-    </div>
-</div>
-
 <div class="box docs-apis">
     <div class="container">
-        <h2>Everything you need to build powerful, scalable apps.</h2>
-
-        <div class="row">
-            <div class="col-md-6">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="new-landing-sprite sdk-graphic" alt="SDKs &amp; tools"></div>
-                    </div>
-                    <div class="col-md-8">
-                        <h3>SDKs &amp; tools</h3>
-
-                        <p>We build our SDKs on open-source platforms, supporting Java, .NET,
-                            Node.js, PHP, Python, and Ruby.</p>
-                        <a href="/sdks">Build with our SDKs <i class="fa fa-arrow-right"></i></a>
+        <h1>Everything you need to build powerful, scalable apps.</h1>
+        <div class="tools-promos">
+            <div class="promo sdks">
+                <div class="card blue">
+                    <div class="card-content">
+                        <h3 class="card-title">SDKs &amp; tools</h3>
+                        <div class="card-body">
+                            <p>We build our SDKs on open-source platforms, supporting Java, .NET,
+                                Node.js, PHP, Python, and Ruby.</p>
+                            <a href="/sdks">Build with our SDKs <span class="fa fa-arrow-right"></span></a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="right-promo col-md-6">
-                <div class="row">
-                    <div class="col-md-8">
-                        <h3>APIs</h3>
-
-                        <p>Learn the capabilities of our APIs with Getting Started, Reference, and
-                            Developer guides.</p>
-                        <a href="/docs">Explore our API docs <i class="fa fa-arrow-right"></i></a>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="new-landing-sprite api-graphic" alt="API Documentation"></div>
+            <div class="promo apis">
+                <div class="card green">
+                    <div class="card-content">
+                        <h3 class="card-title">APIs</h3>
+                        <div class="card-body">
+                            <p>Learn the capabilities of our APIs with Getting Started, Reference, and
+                                Developer guides.</p>
+                            <a href="/docs">Explore our API docs <span class="fa fa-arrow-right"></span></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -52,35 +42,29 @@ title: Rackspace Developer Center
     </div>
 </div>
 
-<div class="box dark">
+<div class="box dev-support">
     <div class="container">
-        <h3>Developer-to-developer support</h3>
-
+        <h2>Developer-to-developer support</h2>
         <p>Complex technical questions? Talk directly to the developers who build our SDKs and APIs.</p>
-
-        <div class="row">
-            <div class="col-md-3">
-                <div class="new-landing-sprite tweet-white" alt="Twitter"></div>
+        <div class="comm-platforms">
+            <div class="platform">
+                <span class="icon fa fa-twitter"></span>
                 <h5><strong>Tweet</strong></h5>
-
                 <p class="item"><a href="https://twitter.com/rackspace">@rackspace</a></p>
             </div>
-            <div class="col-md-3">
-                <div class="new-landing-sprite irc-white" alt="IRC"></div>
+            <div class="platform">
+                <span class="icon fa fa-comments-o"></span>
                 <h5><strong>IRC</strong> on freenode</h5>
-
-                <p class="item">#rackspace</p>
+                <p class="item"><a href="https://webchat.freenode.net/?channels=rackspace">#rackspace</a></p>
             </div>
-            <div class="col-md-3">
-                <div class="new-landing-sprite email-white" alt="Email"></div>
+            <div class="platform">
+                <span class="icon fa fa-envelope-o"></span>
                 <h5><strong>Email</strong></h5>
-
-                <p class="item"><a href="mailto:sdk-support@rackspace.com">sdk-support@rackspace.com</a></p>
+                <p class="item"><a href="mailto:sdk-support@rackspace.com">Rackspace SDK Support</a></p>
             </div>
-            <div class="col-md-3">
-                <div class="new-landing-sprite post-white" alt="Developer Forum"></div>
+            <div class="platform">
+                <span class="icon fa fa-pencil"></span>
                 <h5><strong>Post</strong> in our</h5>
-
                 <p class="item"><a href="https://community.rackspace.com/developers/f/7">Developer Forum</a></p>
             </div>
         </div>
@@ -103,25 +87,25 @@ title: Rackspace Developer Center
     </div>
 </div>
 
-<div class="box">
+<div class="box sign-up">
     <div class="container">
-        <a class="btn btn-primary btn-sign-up" href="/signup/">Sign up for free <i class="fa fa-arrow-right"></i></a>
+        <a class="sign-up" href="/signup/">Sign up for free <i class="fa fa-arrow-right"></i></a>
     </div>
 </div>
 
-<div class="box blog-box">
+<div class="box blog">
     <div class="container">
-        <div class="row">
-            <div class="col-md-6">
+        <div class="link-lists">
+            <div class="link-list">
                 <h4>Developer Blog</h4>
                 <ul>
-                  {% for post in site.posts limit: 3 %}
-                    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-                  {% endfor %}
+                    <li><a href="">Principles for a Successful Developer Workshop</a></li>
+                    <li><a href="">Principles for a Successful Developer Workshop</a></li>
+                    <li><a href="">Principles for a Successful Developer Workshop</a></li>
                 </ul>
                 <p><a href="/blog/">Visit the Developer Blog <i class="fa fa-arrow-right"></i></a></p>
             </div>
-            <div class="right-promo col-md-6">
+            <div class="link-list">
                 <h4>Product News</h4>
                 <ul>
                     <li><a href="#">Cloud Databases Introduces Enhanced Support, More Database Types, Larger...</a></li>
