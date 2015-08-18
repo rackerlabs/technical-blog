@@ -192,11 +192,13 @@ Lastly, for the network node we create the neutron upstart script files, first f
     cat > /etc/init/neutron-openvswitch.conf << EOF
     # vim:set ft=upstart ts=2 et:
 
-    start on runlevel [2345]
-    stop on runlevel [!2345]
+    #start on runlevel [2345]
+    #stop on runlevel [!2345]
 
     script
-      exec start-stop-daemon --start --chuid neutron --exec /usr/local/bin/neutron-openvswitch-agent -- --config-file=/etc/neutron/neutron.conf --config-file=/etc/neutron/l3_agent.ini --log-file=/var/log/neutron/l3-agent.log 
+      [ -r /etc/default/neutron-server ] && . /etc/default/neutron-server
+      [ -r "\$NEUTRON_PLUGIN_CONFIG" ] && CONF_ARG="--config-file \$NEUTRON_PLUGIN_CONFIG"
+    exec start-stop-daemon --start --chuid neutron --exec /usr/local/bin/neutron-openvswitch-agent -- --config-file=/etc/neutron/neutron.conf --config-file=/etc/neutron/plugins/ml2/ml2_conf.ini --log-file=/var/log/neutron/openvswitch-agent.log \$CONF_ARG
     end script
     EOF
 
