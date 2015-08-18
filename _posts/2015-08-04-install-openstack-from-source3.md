@@ -45,7 +45,7 @@ The Python module tox can be used to build a full nova.conf file, but, in realit
     #verbose = True
     dhcpbridge_flagfile = /etc/nova/nova.conf
     dhcpbridge = /usr/local/bin/nova-dhcpbridge
-    logdir = /var/log/nova
+    log_dir = /var/log/nova
     state_path = /var/lib/nova
     force_dhcp_release = True
     iscsi_helper = tgtadm
