@@ -6,21 +6,28 @@ comments: true
 author: Priti Changlani
 published: true
 categories:
-  - jenkins
+    - jenkins
+    - plugin
+    - api
+    - coverage
 ---
 
-<img class="blog-post right" src="{% asset_path 2015-07-28-principles-for-a-successful-developer-workshop/qcon1.jpg %}"/>Running a successful developer workshop (aka tutorial) is really difficult. I've attended enough workshops that have gone poorly to know that for a fact. Participating in such a workshop can be very frustrating and a huge turn off for whatever technology is being presented. That translates directly into losing developer mindshare. I think we, as an industry, can do a better job of running developer workshops.
+If you have landed on this blog post then I am sure you are pretty frustrated
+with the small amount of documentation available for developing a Jenkins
+plugin. I went through the same when I first decided to create one. With this
+post, I aim
+to provide a consolidated and clean explanation for developing a post-build
+plugin which hopefully would serve as an asset for all you future plugin
+developers.
 
 <!-- more -->
 
-I've run workshops at Gluecon, QCon, SXSW, the OpenStack Summits, and internally at Rackspace. They've gone well enough that I've come up with a set of principles I follow in an attempt to give developers a better experience. I'll layout the general principles and the tools/techniques I typically use to implement them.
-
 ## Principles for a Successful Developer Workshop
 
-1. [Know Your Audience](#know-your-audience)
-1. [Share Your Content First](#share-your-content-first)
-1. [Start From A Clean Environment](#start-from-a-clean-environment)
-1. [Walk-Through Sign Ups](#walk-through-sign-ups)
+1. [Setting Up](#setting-up)
+1. [Creating the Plugin](#creating-the-plugin)
+1. [Understanding the Project Structure](#understanding-the-project-structure)
+1. [Debugging the plugin](#debugging)
 1. [Be Explicit](#be-explicit)
 1. [Make It Accessible](#make-it-accessible)
 1. [Get Help](#get-help)
@@ -28,41 +35,150 @@ I've run workshops at Gluecon, QCon, SXSW, the OpenStack Summits, and internally
 1. [Do Less](#do-less)
 1. [Empathy](#conclusion)
 
-## <a name="know-your-audience"></a>Know Your Audience
+## <a name="setting-up"></a>Setting Up
 
-This is the most important and likely the most difficult one. At many conferences it's impossible to know exactly who is going to show up to your workshop, much less what their skill set is. Ask the conference organizers for the demographics and try to understand who might show up and what they might want to get out of your workshop.
+Jenkins plugins are basically [Maven](https://maven.apache.org/) projects
+with Java modules and therefore the first and foremost requirement is to
+have compatible JDK and Maven versions.
 
-You can also attempt to know your audience at the outset and during the workshop. As people walk in, introduce yourself and ask them what they hope to get out of your workshop and why they chose it. Don't assume any knowledge whatsoever beyond the pre-requisites laid out in your abstract. They may not even have a solid foundation in those pre-requisites.
+For the plugin here:
 
-Put everyone on the same page by starting out with some slides on the basics of your pre-requisites. At the very least it will set a common terminology for the rest of the workshop. Do "hands up" surveys of the audience by asking them what they know about the technologies already and adjust emphasis accordingly.
+JDK: [jdk1.7.0_79.jdk](http://www.oracle.com/technetwork/java/javase/downloads/jre7-downloads-1880261.html)
 
-One of the best ways to know your audience as the workshop progresses is the Sticky Notes technique. It's a great way for you to see how your audience is doing visually and for them to provide feedback. You can read more about it from Software Carpentry's ["What Are the Sticky Notes For?"](http://software-carpentry.org/workshops/operations.html#sign-in).
+Maven: [apache-maven-3.3.3](https://maven.apache.org/download.cgi)
 
-## <a name="share-your-content-first"></a>Share Your Content First
+Jenkins: [Installation](https://wiki.jenkins-ci.org/display/JENKINS/Installing+Jenkins)
 
-Given that your audience will have a wide variety of skill levels, provide the materials beforehand. This is crucial because those that are a bit slower picking up the material can follow along at their own pace and catch up during the breaks. Those that are a bit quicker can leap ahead and won't get bored (one caveat on this below).
+IDE: [IntelliJ IDEA 14.1.4](https://www.jetbrains.com/idea/download/)
 
-My preferred method for sharing code and the presentation is to put everything in a single GitHub repository. It's important to keep everything in a single repo because the content of the presentation often depends heavily on the code. For the slides I use [reveal.js](https://github.com/hakimel/reveal.js/) and then use [GitHub Pages](https://pages.github.com/) to publish them. A couple of examples are:
+The next thing would be to configure maven for the user. Navigate to your
+`${user.home}/.m2/settings.xml` and add the following <localRepository> tag to
+ the `<settings>` block
 
-* [app-on-openstack](https://github.com/everett-toews/app-on-openstack) ([presentation](http://everett-toews.github.io/app-on-openstack/presentation/))
-* [a-restful-adventure](https://github.com/everett-toews/a-restful-adventure) ([presentation](http://everett-toews.github.io/a-restful-adventure/presentation/))
+    <localRepository>/path/to/local/repo/</localRepository>
 
-Provide a shortened URL to the presentation at the start of the workshop and also write it down on a whiteboard or somewhere for latecomers. _Bonus points_: Since it's a GitHub repo, encourage people to file issues during the workshop as another channel for feedback.
+ This path is the directory where all the maven dependencies would be
+ downloaded and a good practice is to have the default value `${user.home}/.m2/repository/`
 
-_Caveat_: When you need the quicker people to definitely stop and wait for everyone else to catch up, make it explicit [like this](http://everett-toews.github.io/app-on-openstack/presentation/#/stop) and explain it.
+For developing a Jenkins plugin, users need to have a `<pluginGroup>` and a
+jenkins `<profile>` in the `${user.home}/.m2/settings.xml`. Post these
+additions, the `settings.xml` should look like:
 
-## <a name="start-from-a-clean-environment"></a>Start From A Clean Environment
+    <settings>
+      <localRepository>/path/to/local/repo/</localRepository>
+      <pluginGroups>
+        <pluginGroup>org.jenkins-ci.tools</pluginGroup>
+      </pluginGroups>
 
-Teaching developers a new technology often involves installing some software. Typically teachers want to install this software on the attendees laptops. This is a big mistake for a number of reasons:
+      <profiles>
+        <!-- Give access to Jenkins plugins -->
+        <profile>
+          <id>jenkins</id>
+          <activation>
+            <activeByDefault>true</activeByDefault> <!-- change this to false, if you don't like to have it on per default -->
+          </activation>
+          <repositories>
+            <repository>
+              <id>repo.jenkins-ci.org</id>
+              <url>http://repo.jenkins-ci.org/public/</url>
+            </repository>
+          </repositories>
+          <pluginRepositories>
+            <pluginRepository>
+              <id>repo.jenkins-ci.org</id>
+              <url>http://repo.jenkins-ci.org/public/</url>
+            </pluginRepository>
+          </pluginRepositories>
+        </profile>
+      </profiles>
+    </settings>
 
-1. You don't know what they already have or don't have on their laptop. It's so much more difficult to give clear and concise instructions when you don't know the starting point. _Hint_: Even if you told people to install some software in your pre-requisites, 90% will have not done that.
-1. You're probably assuming they're using a particular operating system. They could be using a Mac, Linux, or (gasp) Windows.
-1. You're polluting their laptop. Dependencies/Settings in your software may conflict with dependencies/settings on their laptop. It's a problem for them during and after the workshop.
-1. If your software involves a big download, the conference Wi-Fi won't be able to handle it, especially when an entire room of people are trying to do the same download at the same time. And creating and handing out USB sticks is painful for everyone involved.
 
-Instead start from a clean environment. We live in the age of cloud. Use it to your advantage. Have VMs in the cloud all ready to go for your attendees. You can have those VMs configured exactly how you need them to be and everyone is on the same page right from the start. Then they just ssh or do a Remote Desktop Connection to the VM and away you go.
+## <a name="creating-the-plugin"></a>Creating the Plugin
 
-Naturally my preferred cloud is [Rackspace](http://www.rackspace.com/cloud). :) I can start [Cloud Servers](http://www.rackspace.com/cloud/servers) for everyone, create [sub-users with role based access control](http://www.rackspace.com/knowledge_center/article/overview-role-based-access-control-rbac) that they can use to create their own VMs, or encourage people to sign up for our [developer+ program](https://developer.rackspace.com/signup/).
+To start with the plugin source code creation, in the terminal type
+
+    mvn hpi:create -Pjenkins
+
+You would be prompted to enter a groupId, we would select the default:
+
+    Enter the groupId of your plugin [org.jenkins-ci.plugins]: org.jenkinsci.plugins
+
+You then need to provide an artifactId for the plugin. This id becomes the
+package name for the project and it is a good practice to keep the package
+name same as the plugin name (that the end users would see). The suffix
+'-plugin' is unnecessary since it is implied that this is a Jenkins plugin.
+For the example here we would name the plugin 'testExample'
+
+    Enter the artifactId of your plugin (normally without '-plugin' suffix): testExample
+
+You should now have a directory 'testExample' at the path the above command
+was executed.
+
+## <a name="understanding-the-project-structure"></a>Understanding the Project Structure
+
+<img class="blog-post right" src="{% asset_path 2015-08-18-jenkins-post-build-plugin/project_structure.png %}"/>Opening the project in IntelliJ IDEA should display the project structure:
+
+Notice how the `groupId` is appended with the `artifactId` and forms a directory under the
+`java` directory. This is the location where the java code resides. Creating a project,
+ by default, generates a `HelloWorldBuilder.java` file. The resources for this class
+ should be included under the same directory structure under `resources` folder, that
+ is, `resources/<groupId>/<artifactId>/<class name>`.
+
+ In the pom.xml, we will change the following two tag values from 'TODO Plugin' to our
+ plugin name and
+ description
+
+    <name>Test Example</name>
+    <description>testExample</description>
+
+Tip: Go through the files under `org/jenkinsci/plugins/testExample/HelloWorldBuilder`
+to see which part of the UI they render.
+`resources/index.jelly` renders the view on the 'Installed Plugins' page under 'Manage
+Plugins'.
+
+## <a name="debugging"></a>Debugging the Plugin
+
+In IntelliJ IDEA, navigate to Run>Edit Configurations>Remote and set the Port to 8000,
+which is the default mvnDebug port. Hit 'Apply'
+![Debugger Configuration]({% asset_path 2015-08-18-jenkins-post-build-plugin/debug_config.png %})
+
+In the terminal, type the following command:
+
+    user@localhost:~/testExample$ mvnDebug hpi:run
+    Preparing to Execute Maven in Debug Mode
+    Listening for transport dt_socket at address: 8000
+
+This starts the listener on port 8000.
+
+The next step is to install the plugin, enter the following command in a different
+terminal window:
+
+    user@localhost:~/testExample$ mvn install
+    .
+    . <wait for the processing>
+    .
+    [INFO] ------------------------------------------------------------------------
+    [INFO] BUILD SUCCESS
+    [INFO] ------------------------------------------------------------------------
+
+The install command installs all the maven dependencies (if not installed already)
+specified in the `pom.xml` and generated the `target` and the `work` directories. It also
+generates the `target/testExample.hpi` file which is a complete package for the plugin
+code.
+
+After successful installation, we are now ready to run the plugin on our local Jenkins
+instance. Use the following command to run the plugin:
+
+    user@localhost:~/testExample$ mvn hpi:run
+    .
+    .<wait for the processing>
+    .
+    INFO: Jenkins is fully up and running
+
+When you see the info message type
+http://localhost:8080/jenkins/pluginManager/installed in your browser and notice that
+the plugin is now present in the installed plugin list.
 
 ## <a name="walk-through-sign-ups"></a>Walk-Through Sign Ups
 
