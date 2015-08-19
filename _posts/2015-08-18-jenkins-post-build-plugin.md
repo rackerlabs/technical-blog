@@ -127,7 +127,8 @@ Notice how the `groupId` is appended with the `artifactId` and forms a directory
     <name>Test Example</name>
     <description>testExample</description>
 
-Tip: Go through the files under `org/jenkinsci/plugins/testExample/HelloWorldBuilder`
+Tip: Go through the files under
+`resources/org/jenkinsci/plugins/testExample/HelloWorldBuilder`
 to see which part of the UI they render.
 `resources/index.jelly` renders the view on the 'Installed Plugins' page under 'Manage
 Plugins'.
@@ -178,8 +179,9 @@ the plugin is now present in the installed plugin list.
 
 ## <a name="intro-to-part-2"></a>Introduction to Part 2
 
-The auto-generated testExample project is an example of a build plugin and you may see
-that the class `HelloWorldBuilder` extends the class `hudson.tasks.Builder`, however,
+The auto-generated testExample project is an example of a Jenkins build plugin and you may
+ see
+that the class `HelloWorldBuilder.java` extends the class `hudson.tasks.Builder`, however,
 in the upcoming part 2 of this tutorial, we will create a post-build plugin and therefore
 extend the class `hudson.tasks.Recorder` and make the `Extension` class
 `DescriptorImpl` extend the class `BuildStepDescriptor<Publisher>` instead of
