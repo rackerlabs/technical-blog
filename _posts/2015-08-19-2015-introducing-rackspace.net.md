@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Introducing Rackspace.NET"
-date: 2015-08-18
+date: 2015-08-19
 comments: true
 author: Carolyn Van Slyck
 published: true
@@ -12,8 +12,8 @@ categories:
 ---
 
 The Rackspace .NET SDK beta is now available! This is the first step towards improving the .NET
-experience for both OpenStack and Rackspace developers. Rackspace.NET enables you to work both
-with Rackspace services which are based on OpenStack and unique Rackspace offerings, such as hybrid cloud.
+experience for OpenStack and Rackspace developers. Rackspace.NET enables you to work with both
+ Rackspace services, which are based on OpenStack, and unique Rackspace offerings, such as hybrid cloud.
 This is in the same spirit as the new [Rack CLI](rack-cli) which was announced last week.
 
 OpenStack users will have a clean SDK dedicated to their needs
@@ -26,12 +26,12 @@ For more details on how this will improve OpenStack.NET, checkout
 <!-- more -->
 
 ## Roadmap ##
-Rackspace.NET is built on top of [OpenStack.NET](http://openstacknetsdk.org), as many of
+Rackspace.NET is built on top of [OpenStack.NET](http://openstacknetsdk.org), because many of
 Rackspace's solutions use OpenStack. We are in the process of moving Rackspace specific
 solutions out of OpenStack.NET. When this migration is completed, OpenStack.NET
 v2.0 will be pure OpenStack and Rackspace.NET v1.0 pure Rackspace.
 
-The full roadmap is outlined in the project's [beta milestones][rackspacenet-milestones].
+The project's [beta milestones][rackspacenet-milestones] outline the full roadmap.
 Here's a peek at the first few releases:
 
 * [v0.1][rackspacenet-0.1] - Cloud Networks. This coincides with the release of [OpenStack.NET v1.5.0][openstacknet-1.5] with support for OpenStack Networking v2.
