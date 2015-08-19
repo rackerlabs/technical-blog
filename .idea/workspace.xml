@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce49c4b8-c820-4266-88d1-3da6acf0cf10" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_assets/img/2015-08-18-jenkins-post-build-plugin/project_structure.png" afterPath="$PROJECT_DIR$/_assets/img/2015-08-18-jenkins-post-build-plugin/project_structure.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2015-08-18-jenkins-post-build-plugin.md" afterPath="$PROJECT_DIR$/_posts/2015-08-18-jenkins-post-build-plugin.md" />
     </list>
     <ignored path="docs-developer-blog.iws" />
@@ -32,8 +33,8 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="4.413183">
-              <caret line="183" column="38" selection-start-line="183" selection-start-column="38" selection-end-line="183" selection-end-column="38" />
+            <state vertical-scroll-proportion="0.36173633">
+              <caret line="120" column="9" selection-start-line="120" selection-start-column="9" selection-end-line="120" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -531,7 +532,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="797" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="797" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -807,8 +808,8 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.413183">
-          <caret line="183" column="38" selection-start-line="183" selection-start-column="38" selection-end-line="183" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.36173633">
+          <caret line="120" column="9" selection-start-line="120" selection-start-column="9" selection-end-line="120" selection-end-column="9" />
           <folding />
         </state>
       </provider>
