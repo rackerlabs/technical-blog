@@ -18,7 +18,7 @@ This is the sixth and final installment in a series demonstrating how to install
 * [Install Neutron on the Network node](https://developer.rackspace.com/blog/install-openstack-from-source4/)
 * [Install the Compute node](https://developer.rackspace.com/blog/install-openstack-from-source5/)
 
-Previously we installed the Identity service (keystone), Image service (glance), Networking service (neutron) and the Compute service (nova) onto the controller node as well as neutron onto the network node and nova and neutron onto the compute node.. In this section we turn our attention to finishing up by installing the Volume service (cinder) and dashboard (horizon) onto the controller node.
+Previously we installed the Identity service (keystone), Image service (glance), Networking service (neutron) and the Compute service (nova) onto the controller node as well as neutron onto the network node and nova and neutron onto the compute node. In this section we turn our attention to finishing up by installing the Volume service (cinder) and dashboard (horizon) onto the controller node.
 <!-- more -->
 
 As we finish up our OpenStack intallation, we turn our attention to both cinder and horizon. First we start with cinder and like we have done before we create the cinder user and the directories that the cinder user needs:
@@ -195,7 +195,7 @@ And lastly for the cinder volume service:
     exec start-stop-daemon --start --chuid cinder --exec /usr/local/bin/cinder-volume -- --config-file=/etc/cinder/cinder.conf --log-file=/var/log/cinder/volume.log
     EOF
     
-At this point we can start all of the cinder services:
+At this point we can start all the cinder services:
     
     start cinder-api
     start cinder-volume
@@ -395,7 +395,7 @@ Verify that the nova-novncproxy service is running:
     
     ps aux|grep nova-novncproxy
     
-You show see output similar to:
+You should see output similar to:
 
     root@controller:~# ps aux|grep nova-novncproxy
     nova      2764  0.0  1.8 144432 37288 ?        Ss   Aug17   0:35 /usr/bin/python /usr/local/bin/nova-novncproxy --config-file=/etc/nova/nova.conf --log-file=/var/log/nova/nova-novnc.log
