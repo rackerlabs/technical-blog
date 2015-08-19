@@ -17,8 +17,8 @@ integration tool and with the small amount of (scattered!) information present
  out there, it is really hard for a beginner to dive in this amazing area of extending
  it - Plugins!
 
-
 <!-- more -->
+
 This part of the tutorial talks about Jenkins plugins as a whole - what projects are
 they, how they are created, what do they depend on, how do you run them, et al. So
 let's get started!
