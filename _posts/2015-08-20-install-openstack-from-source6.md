@@ -12,16 +12,17 @@ categories:
 
 This is the sixth and final installment in a series demonstrating how to install OpenStack from source. The five previous articles:
 
-* [Install Keystone,](https://developer.rackspace.com/blog/install-openstack-from-source/)
+* [Install Keystone](https://developer.rackspace.com/blog/install-openstack-from-source/)
 * [Install Glance and Neutron](https://developer.rackspace.com/blog/install-openstack-from-source2/)
 * [Install Nova](https://developer.rackspace.com/blog/install-openstack-from-source3/)
 * [Install Neutron on the Network node](https://developer.rackspace.com/blog/install-openstack-from-source4/)
 * [Install the Compute node](https://developer.rackspace.com/blog/install-openstack-from-source5/)
 
-Previously we installed the Identity service (keystone), Image service (glance), Networking service (neutron) and the Compute service (nova) onto the controller node as well as neutron onto the network node and nova and neutron onto the compute node. In this section we turn our attention to finishing up by installing the Volume service (cinder) and dashboard (horizon) onto the controller node.
+Previously we installed the Identity service (keystone), Image service (glance), Networking service (neutron), and the Compute service (nova) onto the controller node. We also installed neutron onto the network node and nova and neutron onto the compute node. In this section, we turn our attention to finishing up by installing the Volume service (cinder) and dashboard (horizon) onto the controller node.
+
 <!-- more -->
 
-As we finish up our OpenStack intallation, we turn our attention to both cinder and horizon. First we start with cinder and like we have done before we create the cinder user and the directories that the cinder user needs:
+As we finish up our OpenStack intallation, we turn our attention to both cinder and horizon. First, we start with cinder, and, like we have done before, we create the cinder user and the directories that the cinder user needs:
 
     mkdir /var/cache/cinder
     chown cinder:cinder /var/cache/cinder/
@@ -98,7 +99,7 @@ Grant the 'admin' role to the cinder service user:
 
     keystone user-role-add --user cinder --tenant service --role admin
     
-Add a cinder v2 service and endpoint in horizon:
+Add a cinder service and a v2 endpoint in keystone:
 
     openstack service create --type volumev2 \
       --description "OpenStack Block Storage" cinderv2
@@ -110,7 +111,7 @@ Add a cinder v2 service and endpoint in horizon:
       --region RegionOne \
       volumev2
     
-iSCSI is used as the back end store for cinder. This installation assumes that the iSCSI has a volume group named cinder-volumes created on the controller node to use as actual store for cinder. Cinder then creates logical volumes for the various cinder volumes that are created. Install the open-iscsi and tgt packages:
+The back-end store for cinder, that we use in this example, is iSCSI. This installation assumes that the iSCSI has a volume group named cinder-volumes created on the controller node to use as actual store for cinder. Cinder then creates logical volumes for the various cinder volumes that are created. Install the open-iscsi and tgt packages:
 
     
     apt-get install -y open-iscsi tgt
@@ -126,7 +127,7 @@ Restart the open-iscsi and tgt service so that they see the configuration file c
     service tgt restart
     service open-iscsi restart
     
-Create the cinder Upstart scripts. First for the API service:
+Create the cinder upstart scripts. First for the API service:
 
     cat > /etc/init/cinder-api.conf << EOF
     description "Cinder API"
@@ -195,7 +196,7 @@ And lastly for the cinder volume service:
     exec start-stop-daemon --start --chuid cinder --exec /usr/local/bin/cinder-volume -- --config-file=/etc/cinder/cinder.conf --log-file=/var/log/cinder/volume.log
     EOF
     
-At this point we can start all the cinder services:
+At this point, we can start all the cinder services:
     
     start cinder-api
     start cinder-volume
@@ -208,25 +209,25 @@ Wait 20 to 30 seconds and verify that everything started:
 You should see something like:
 
     root@controller:~# ps aux|grep cinder
-    cinder   14633  0.5  2.6 243092 55244 ?        Ss   May05 823:42 /usr/bin/python /usr/local/bin/cinder-api --config-file=/etc/cinder/cinder.conf --log-file=/var/log/cinder/api.log
-    cinder   14652  0.0  3.3 256064 69176 ?        S    May05   0:10 /usr/bin/python /usr/local/bin/cinder-api --config-file=/etc/cinder/cinder.conf --log-file=/var/log/cinder/api.log
-    cinder   14664  0.5  2.4 216680 49456 ?        Ss   May05 835:51 /usr/bin/python /usr/local/bin/cinder-volume --config-file=/etc/cinder/cinder.conf --log-file=/var/log/cinder/volume.log
-    cinder   14671  0.1  2.5 219392 52968 ?        S    May05 165:47 /usr/bin/python /usr/local/bin/cinder-volume --config-file=/etc/cinder/cinder.conf --log-file=/var/log/cinder/volume.log
-    cinder   14684  0.1  2.7 225120 56544 ?        Ss   May05 151:50 /usr/bin/python /usr/local/bin/cinder-scheduler --config-file=/etc/cinder/cinder.conf --log-file=/var/log/cinder/scheduler.log
+    cinder   14633  0.5  2.6 243092 55244 ?        Ss   Aug17 823:42 /usr/bin/python /usr/local/bin/cinder-api --config-file=/etc/cinder/cinder.conf --log-file=/var/log/cinder/api.log
+    cinder   14652  0.0  3.3 256064 69176 ?        S    Aug17   0:10 /usr/bin/python /usr/local/bin/cinder-api --config-file=/etc/cinder/cinder.conf --log-file=/var/log/cinder/api.log
+    cinder   14664  0.5  2.4 216680 49456 ?        Ss   Aug17 835:51 /usr/bin/python /usr/local/bin/cinder-volume --config-file=/etc/cinder/cinder.conf --log-file=/var/log/cinder/volume.log
+    cinder   14671  0.1  2.5 219392 52968 ?        S    Aug17 165:47 /usr/bin/python /usr/local/bin/cinder-volume --config-file=/etc/cinder/cinder.conf --log-file=/var/log/cinder/volume.log
+    cinder   14684  0.1  2.7 225120 56544 ?        Ss   Aug17 151:50 /usr/bin/python /usr/local/bin/cinder-scheduler --config-file=/etc/cinder/cinder.conf --log-file=/var/log/cinder/scheduler.log
     
-If not and one or more of the cinder services didn't start, use the following to test why those that didn't start.
+If you don't see all the services started, use the following commands to determine why it didn't start.
     
     sudo -u cinder cinder-api --config-file=/etc/cinder/cinder.conf --log-file=/var/log/cinder/cinder-api.log
     sudo -u cinder cinder-scheduler --config-file=/etc/cinder/cinder.conf --log-file=/var/log/cinder/cinder-scheduler.log
     sudo -u cinder cinder-volume --config-file=/etc/cinder/cinder.conf --log-file=/var/log/cinder/cinder-volume.log
 
-Even though cinder is running you won't be able to create cinder volumes without a volume group named cinder-volumes. If you want to use cinder you need to manually create that volume group on the controller node.
+Even though cinder is running you won't be able to create cinder volumes without a volume group named cinder-volumes. If you want to use cinder you need to manually create that volume group on the controller node. If you don't have an existing volume group with free space, you need to add a new disk partition to the controller node. Use the `pvcreate` and `vgcreate` commands to create a volume group with the correct name.
 
 Start the horizon install by installing the package prerequisites for horizon: 
     
     apt-get install -y apache2 libapache2-mod-wsgi memcached python-memcache gettext
 
-Add a horizon user to use for the apache server:
+Add a horizon user to use for the Apache server:
     
     useradd --home-dir "/usr/local/lib/python2.7/dist-packages/openstack_dashboard" \
             --create-home \
@@ -243,7 +244,7 @@ Now, use the python installer to install horizon:
 
     python setup.py install
     
-Create a directory so horizon can store its secrets and secrets lock files:
+Create a directory where horizon can store lock files:
     
     mkdir /var/lib/openstack-dashboard
     chown horizon:horizon /var/lib/openstack-dashboard/
@@ -254,18 +255,18 @@ Make the openstack_dashboard configuration directory and copy the configuration 
     cp ~/horizon/openstack_dashboard/local/local_settings.py.example /etc/openstack_dashboard/local_settings.py
     chown -R horizon:horizon /etc/openstack_dashboard/local_settings.py
     
-Remove the openstack dashboard python files that were installed earlier (they will be copied back in the next step):
+Remove the Openstack dashboard Python files that were installed earlier (they will be copied back in the next step):
     
     rm -rf /usr/local/lib/python2.7/dist-packages/openstack_dashboard/*
     
-Due to the way the django wsgi file is written, create a openstack_daskboard subdirectory and copy the dashboard files there:
+Due to the way the Django WSGI file is written, create a openstack_dashboard subdirectory and copy the dashboard files there:
     
     cp -r openstack_dashboard/ /usr/local/lib/python2.7/dist-packages/openstack_dashboard/
     chown -R horizon:horizon /usr/local/lib/python2.7/dist-packages/openstack_dashboard/openstack_dashboard/static
     ln -s /usr/local/lib/python2.7/dist-packages/openstack_dashboard/openstack_dashboard/static /usr/local/lib/python2.7/dist-packages/openstack_dashboard/static
     ln -s /etc/openstack_dashboard/local_settings.py /usr/local/lib/python2.7/dist-packages/openstack_dashboard/openstack_dashboard/local/local_settings.py
     
-Create the apache configuration files for horizon:
+Create the Apache configuration files for horizon:
     
     cat >> /etc/apache2/sites-available/openstack.conf << EOF
     <VirtualHost *:80>
@@ -306,12 +307,12 @@ Create the apache configuration files for horizon:
     WSGISocketPrefix /var/run/apache2
     EOF
     
-Enable the newly created openstack horizon web virtual server and disable the default apache server:
+Enable the newly created Openstack horizon web virtual server and disable the default Apache server:
     
     a2ensite openstack
     a2dissite 00-default
     
-Set apache to run as the newly created horizon user:
+Set Apache to run as the newly created horizon user:
     
     sed -i 's/export APACHE_RUN_USER=www-data/export APACHE_RUN_USER=horizon/g' /etc/apache2/envvars
     sed -i 's/export APACHE_RUN_GROUP=www-data/export APACHE_RUN_GROUP=horizon/g' /etc/apache2/envvars
@@ -345,7 +346,7 @@ Change the CACHES section to:
     #    }
     #}
     
-Default Ubuntu apache configuration uses /horizon as the application root, we will be using `/`
+The default Ubuntu Apache configuration uses /horizon as the application root, but we will use `/`
 Configure auth redirects:
 
     sed -i "s|# LOGIN_URL = WEBROOT + 'auth/login/'|LOGIN_URL='/auth/login/|g" /etc/openstack_dashboard/local_settings.py
@@ -365,7 +366,7 @@ Install novnc prerequisites:
     
     apt-get install libjs-jquery libjs-sphinxdoc libjs-swfobject libjs-underscore
     
-Generate the Nova novnc proxy Upstart script:
+Generate the nova novnc proxy upstart script:
     
     cat >> /etc/init/nova-novncproxy.conf << EOF
     description "Nova novnc proxy worker"
@@ -386,7 +387,7 @@ Generate the Nova novnc proxy Upstart script:
     end script
     EOF
     
-Start the nova-novncproxy service and restart apache to read the configuration changes:
+Start the nova-novncproxy service and restart Apache to read the configuration changes:
     
     start nova-novncproxy
     service apache2 restart
@@ -401,10 +402,10 @@ You should see output similar to:
     nova      2764  0.0  1.8 144432 37288 ?        Ss   Aug17   0:35 /usr/bin/python /usr/local/bin/nova-novncproxy --config-file=/etc/nova/nova.conf --log-file=/var/log/nova/nova-novnc.log
 
     
-If not use the following command to test novncproxy and get log output if it didn't start:
+If the service didn't start, use the following command to test nova-novncproxy and get log output:
 
     sudo -u nova nova-novncproxy --config-file=/etc/nova/nova.conf
 
-That finishes up the OpenStack install. You can point your browser to the outside interface on the controller node and access the OpenStack dashboard. The login credentials are in the openrc file on the controller node. Good luck with your newly created OpenStack setup. 
+That finishes up the OpenStack install. You can point your browser to the outside interface on the controller node and access the OpenStack dashboard. The login credentials are in the openrc file in the `/root` directory on the controller node. Good luck with your newly created OpenStack setup. 
 
 
