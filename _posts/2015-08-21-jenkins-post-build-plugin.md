@@ -17,7 +17,8 @@ integration tool and with the small amount of (scattered!) information present
 
 <!-- more -->
 
-I am [Priti Changlani](https://www.linkedin.com/in/pritichanglani), a summer intern at Rackspace US, Inc. and a graduate student at
+I am [Priti Changlani](https://www.linkedin.com/in/pritichanglani), a summer intern at
+Rackspace US, Inc. and a Computer Science graduate student at
 University of Florida. At Rackspace, I have worked as a Quality Engineer in teams like
 [Solum](https://github.com/stackforge/solum), [Repose](https://github.com/rackerlabs/repose)
 and [Containers](https://wiki.openstack.org/wiki/ContainersTeam). A part of my job was to enhance the process of quality engineering
