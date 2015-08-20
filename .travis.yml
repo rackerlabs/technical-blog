@@ -13,6 +13,9 @@ install:
 - cd ${TRAVIS_BUILD_DIR}
 script:
 - 'echo "Submitting content: ${DESC:-nowhere}"'
+- echo ${PATH}
+- echo ${GEM_HOME}
+- gem env
 - deconst-preparer-jekyll
 notifications:
   slack:
