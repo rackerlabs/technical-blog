@@ -11,6 +11,7 @@ categories:
 ---
 
 This is the fifth installment in a series of installing OpenStack from source. The four previous articles can be found here:
+
 * [Install Keystone,](https://developer.rackspace.com/blog/install-openstack-from-source/)
 * [Install Glance and Neutron](https://developer.rackspace.com/blog/install-openstack-from-source2/)
 * [Install Nova](https://developer.rackspace.com/blog/install-openstack-from-source3/) 
