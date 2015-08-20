@@ -4,8 +4,8 @@ title: .NET SDK
 ---
 <div>
   <h1>Getting Started with .NET SDK</h1>
-  <p>Rackspace's official OpenStack SDK for Microsoft .NET, <a href="http://openstacknetsdk.org">OpenStack.NET</a>, an MIT licensed open-source community project for using multiple cloud providers from a standardized API.</p>
-  <p>Currently, OpenStack.NET has support for multiple Rackspace services:</p>
+  <p>Rackspace's official SDK for Microsoft .NET is <a href="http://rackspace.github.io/rackspace-net-sdk">Rackspace.NET</a>, an Apache licensed SDK.</p>
+  <p>Currently, Rackspace.NET has support for multiple services:</p>
    <ul>
     <li><a href="/docs/auto-scale/getting-started/?lang=.net">Auto Scale</a></li>
     <li><a href="/docs/cdn/getting-started/?lang=.net">CDN</a></li>
@@ -15,6 +15,7 @@ title: .NET SDK
     <li><a href="/docs/cloud-files/getting-started/?lang=.net">Cloud Files</a></li>
     <li><a href="/docs/cloud-load-balancers/getting-started/?lang=.net">Cloud Load Balancers</a></li>
     <li><a href="/docs/cloud-monitoring/getting-started/?lang=.net">Cloud Monitoring</a></li>
+    <li><a href="/docs/cloud-networks/getting-started/?lang=.net">Cloud Networks</a></li>
     <li><a href="/docs/cloud-queues/getting-started/?lang=.net">Cloud Queues</a></li>
     <li><a href="/docs/cloud-servers/getting-started/?lang=.net">Cloud Servers</a></li>
    </ul>
@@ -28,10 +29,11 @@ title: .NET SDK
   </ol>
 
   <h2>Installation</h2>
-  <p><strong>OpenStack.NET</strong> (and all of the necessary dependencies) are installed into your project using the NuGet Package Manager Console, using the following command:</p>
+  <p><strong>Rackspace.NET</strong> (and all of the necessary dependencies such as OpenStack.NET)
+    are installed into your project using the NuGet Package Manager Console, using the following command:</p>
   {% highlight sh %}
-Install-Package openstack.net{% endhighlight %}
-  <h2>Using OpenStack.NET</h2>
+Install-Package Rackspace{% endhighlight %}
+  <h2>Using Rackspace.NET</h2>
   <p>Once an Identity has been created, you can specify the region for any method in the .NET SDK. If no region is specified in a method call, the default region will be used.</p>
   <p>In this example, we create a single Identity and then output a list of server Id's in the <em>IAD</em> region to the console:</p>
 
@@ -55,9 +57,8 @@ foreach (Server server in servers)
 
   <h2>Links</h2>
   <ul>
-    <li><a href="https://github.com/openstacknetsdk/openstack.net">Source Code</a></li>
-    <li><a href="https://github.com/openstacknetsdk/openstack.net/releases">Release Notes</a>&nbsp;<a href="https://github.com/openstacknetsdk/openstack.net/releases.atom"><img src="{% asset_path rss.png %}" width="10" height="10" alt="Feed"/></li>
-    <li><a href="https://github.com/openstacknetsdk/openstack.net/issues">Issue Tracker</a></li>
-    <li>IRC: #rackspace-dev on Freenode</li>
+    <li><a href="https://github.com/rackspace/rackspace-net-sdk">Source Code</a></li>
+    <li><a href="https://github.com/rackspace/rackspace-net-sdk/releases">Release Notes</a>&nbsp;<a href="https://github.com/rackspace/rackspace-net-sdk/releases.atom"><img src="{% asset_path rss.png %}" width="10" height="10" alt="Feed"/></li>
+    <li><a href="https://github.com/rackspace/rackspace-net-sdk/issues">Issue Tracker</a></li>
   </ul>
 </div>
