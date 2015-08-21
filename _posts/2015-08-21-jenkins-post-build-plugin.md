@@ -75,7 +75,7 @@ Next, we configure Maven for the user. Navigate to your
  downloaded. As a good practice, set the default path `${user.home}/.m2/repository/`.
 
 For developing a Jenkins plugin, developers need to have a `<pluginGroup>` and a
-jenkins `<profile>` in the `${user.home}/.m2/settings.xml`. Post these
+jenkins `<profile>` in the `${user.home}/.m2/settings.xml`. After these
 additions, the `settings.xml` should look like:
 
     <settings>
