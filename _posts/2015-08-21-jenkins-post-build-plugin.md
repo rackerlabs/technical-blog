@@ -9,9 +9,9 @@ categories:
     - jenkins
     - plugin
 ---
-This is the first part of a two part tutorial series to develop and Jenkins plugin
+This is the first part of a two-part tutorial series to develop and Jenkins plugin
 (specifically, Jenkins post-build plugin). Jenkins is a very popular continuous
-integration tool and with the small amount of (scattered!) information present
+integration tool and with the small amount of (scattered) information present
  out there, it is really hard for a beginner to dive in this amazing area of extending
  it - Plugins!
 
@@ -23,22 +23,25 @@ University of Florida. At Rackspace, I have worked as a Quality Engineer in team
 [Solum](https://github.com/stackforge/solum), [Repose](https://github.com/rackerlabs/repose)
 and [Containers](https://wiki.openstack.org/wiki/ContainersTeam). A part of my job was to enhance the process of quality engineering
 as a
- whole and to that effect, I developed a Jenkins plugin - [API Coverage](https://github.com/rackerlabs/api-coverage) for QEs to
+ whole and to that effect, I developed a Jenkins plugin - [API Coverage]
+ (https://github.com/rackerlabs/api-coverage) for QEs to
  measure the
  ability of their
- test-suites to cover the entire API contract. In the process, I found many resources were
+ test-suites to cover the entire API contract. In the process, I found
+ many resources were
  hard to follow and some were quite out of date. I
  realized the need for
  an updated, easy and dedicated tutorial on this topic and therefore decided to write one
- myself!
+ myself.
 
 This part of the
 tutorial talks about Jenkins plugins as a
 whole - what projects are
-they, how they are created, what do they depend on, how do you run them, et al. We will
+they, how they are created, what do they depend on, how do you run them and so on. We will
  concentrate more on the technical aspects of the plugins so that next time you have an
-  extension idea, you don't wait on Jenkins and write a plugin yourself! So
-let's get started!
+  extension idea, you don't wait on Jenkins and write a plugin yourself.
+
+Let's get started...
 
 1. [Setting Up](#setting-up)
 1. [Creating the Plugin](#creating-the-plugin)
@@ -53,7 +56,7 @@ Jenkins plugins are basically [Maven](https://maven.apache.org/) projects
 with Java modules and therefore the first and foremost requirement is to
 have compatible JDK and Maven versions.
 
-For this tutorial, we are going to need the following installations:
+For this tutorial, we need the following installations:
 
 JDK: [jdk1.7.0_79.jdk](http://www.oracle.com/technetwork/java/javase/downloads/jre7-downloads-1880261.html)
 
@@ -63,14 +66,14 @@ Jenkins: [Installation](https://wiki.jenkins-ci.org/display/JENKINS/Installing+J
 
 IDE: [IntelliJ IDEA 14.1.4](https://www.jetbrains.com/idea/download/)
 
-The next thing would be to configure maven for the user. Navigate to your
+The next thing would be to configure Maven for the user. Navigate to your
 `${user.home}/.m2/settings.xml` and add the following <localRepository> tag to
- the `<settings>` block
+ the `<settings>` block.
 
     <localRepository>/path/to/local/repo/</localRepository>
 
- This path is the directory where all the maven dependencies would be
- downloaded and a good practice is to have the default value `${user.home}/.m2/repository/`
+ This path is the directory where all the Maven dependencies would be
+ downloaded and a good practice is to have the default value `${user.home}/.m2/repository/`.
 
 For developing a Jenkins plugin, developers need to have a `<pluginGroup>` and a
 jenkins `<profile>` in the `${user.home}/.m2/settings.xml`. Post these
@@ -105,19 +108,17 @@ additions, the `settings.xml` should look like:
       </profiles>
     </settings>
 
-
-## <a name="creating-the-plugin"></a>Creating the Plugin
-
-To start with the plugin source code creation, in the terminal type
-
-    mvn hpi:create -Pjenkins
-
-The changes in the `settings.xml` enable us to use this short command instead of the
-below actual command
+The changes in the `settings.xml` also enable us to use a shorter command for creating the plugin in lieu of the longer version:
 
     mvn org.jenkins-ci.tools:maven-hpi-plugin:<plugin-version>:create
 
-You would be prompted to enter a groupId. We would select the default
+## <a name="creating-the-plugin"></a>Creating the Plugin
+
+To start with the plugin source code creation, in the terminal type:
+
+    mvn hpi:create
+
+You would be prompted to enter a groupId. We would select the default structure - `org.jenkinsci.plugins`
 
     Enter the groupId of your plugin [org.jenkins-ci.plugins]: org.jenkinsci.plugins
 
@@ -139,14 +140,14 @@ Opening the project in IntelliJ IDEA should display the project structure in the
 pane.
 
 Notice how the `groupId` is appended with the `artifactId` and forms a directory under the
-`java` directory. This is the location where the java code resides. Creating a project,
+`java` directory. This is the location where the Java code resides. Creating a project,
  by default, generates a `HelloWorldBuilder.java` file. The resources for this class,
  if any, should be included under the same directory structure under `resources`
  folder, that
  is, `resources/<groupId>/<artifactId>/<class name>`. This would hold true for all the
  future classes you may write for the plugin.
 
- In the pom.xml, we will change the following two tag values from 'TODO Plugin' to our
+ In `pom.xml`, we will change the following two tag values from 'TODO Plugin' to our
  plugin name and
  description.
 
@@ -159,13 +160,14 @@ Go through the
 files under
 `resources/org/jenkinsci/plugins/testExample/HelloWorldBuilder`
 to see which part of the UI they render.
-`resources/index.jelly` renders the view on the 'Installed Plugins' page under 'Manage
+The file `resources/index.jelly` renders the view on the 'Installed Plugins' page under
+'Manage
 Plugins'.
 
 ## <a name="debugging"></a>Debugging the Plugin
 
 In IntelliJ IDEA, navigate to Run>Edit Configurations>Remote and set the Port to 8000,
-which is the default mvnDebug port. Hit 'Apply'
+which is the default mvnDebug port. Click 'Apply'.
 ![Debugger Configuration]({% asset_path 2015-08-21-jenkins-post-build-plugin/debug_config.png %})
 
 In the terminal, type the following command:
@@ -174,10 +176,10 @@ In the terminal, type the following command:
     Preparing to Execute Maven in Debug Mode
     Listening for transport dt_socket at address: 8000
 
-This starts the listener on port 8000. As the message states, maven is ready in
+This starts the listener on port 8000. As the message states, Maven is ready in
 Debug mode. This makes debugging pretty easy. How? We'll see this when we run the plugin.
 
-The next step is to install the plugin, enter the following command in a different
+The next step is to install the plugin. Enter the following command in a different
 terminal window, in the project directory:
 
     user@localhost:~/testExample$ mvn install
@@ -188,10 +190,10 @@ terminal window, in the project directory:
     [INFO] BUILD SUCCESS
     [INFO] ------------------------------------------------------------------------
 
-The install command installs all the maven dependencies (if not installed already)
-specified in the `pom.xml` and generated the `target` and the `work` directories. It also
+The install command installs all the Maven dependencies (if not installed already)
+specified in `pom.xml` and generates the `target` and the `work` directories. It also
 generates the `target/testExample.hpi` file which is a complete package for the plugin
-code. To debug, you can just import this file in Jenkins (Manage Jenkins>Manage
+code. To debug, one can just import this file in Jenkins (Manage Jenkins>Manage
 Plugins>Advanced), however there is a much simpler way shown below to do this without the
 import.
 
@@ -217,13 +219,13 @@ performed its magic!
 
 A developer can do much more with Maven and doesn't have to remember all the commands.
 Clicking on 'Maven Projects' on the right side panel expands all the available options
-for the developer. Double clicking on any executes the command.
+for the developer. Double-clicking on any of these options executes the command.
 
-While a lifecycle state can be executed with the command
+While a lifecycle state can be executed with the command:
 
     mvn <state>
 
-a maven plugin can be used as
+a Maven plugin can be used as:
 
     mvn <plugin>:<action>
 
@@ -237,5 +239,5 @@ that the class `HelloWorldBuilder.java` extends the class `hudson.tasks.Builder`
 in the upcoming part 2 of this tutorial, we will create a post-build plugin and therefore
 extend the class `hudson.tasks.Recorder` and make the `Extension` class
 `DescriptorImpl` extend the class `BuildStepDescriptor<Publisher>` instead of
-`BuildStepDescriptor<Builder>`
+`BuildStepDescriptor<Builder>`.
 
