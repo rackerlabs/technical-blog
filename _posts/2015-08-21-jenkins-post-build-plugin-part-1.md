@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Jenkins Post-build Plugin"
+title: "Jenkins Post-build Plugin Part 1"
 date: 2015-08-21 14:00
 comments: true
 author: Priti Changlani
@@ -134,7 +134,7 @@ was executed.
 
 ## <a name="understanding-the-project-structure"></a>Understanding the Project Structure
 
-<img class="blog-post right" src="{% asset_path 2015-08-21-jenkins-post-build-plugin/project_structure.png %}"/>
+<img class="blog-post right" src="{% asset_path 2015-08-21-jenkins-post-build-plugin-part-1/project_structure.png %}"/>
 Opening the project in IntelliJ IDEA should display the project structure in the left
 pane.
 
@@ -153,7 +153,7 @@ Notice how the `groupId` is appended with the `artifactId` and forms a directory
     <name>Test Example</name>
     <description>testExample</description>
 
-<img class="blog-post" src="{% asset_path 2015-08-21-jenkins-post-build-plugin/info.png%}"/>
+<img class="blog-post" src="{% asset_path 2015-08-21-jenkins-post-build-plugin-part-1/info.png%}"/>
 **Tip:**
 Go through the
 files under
@@ -167,7 +167,7 @@ Plugins'.
 
 In IntelliJ IDEA, navigate to Run>Edit Configurations>Remote and set the Port to 8000,
 which is the default mvnDebug port. Click 'Apply'.
-![Debugger Configuration]({% asset_path 2015-08-21-jenkins-post-build-plugin/debug_config.png %})
+![Debugger Configuration]({% asset_path 2015-08-21-jenkins-post-build-plugin-part-1/debug_config.png %})
 
 In the terminal, type the following command:
 
@@ -210,9 +210,9 @@ the plugin is now present in the installed plugin list. This is where the debugg
 running in the background,
 performed its magic!
 
-<img class="blog-post center" src="{% asset_path 2015-08-21-jenkins-post-build-plugin/plugin_installed.png %}"/>
+<img class="blog-post center" src="{% asset_path 2015-08-21-jenkins-post-build-plugin-part-1/plugin_installed.png %}"/>
 
-<img class="blog-post right" src="{% asset_path 2015-08-21-jenkins-post-build-plugin/maven-projects.png %}"/>
+<img class="blog-post right" src="{% asset_path 2015-08-21-jenkins-post-build-plugin-part-1/maven-projects.png %}"/>
 
 ## <a name="more-with-maven"></a>More with Maven
 
