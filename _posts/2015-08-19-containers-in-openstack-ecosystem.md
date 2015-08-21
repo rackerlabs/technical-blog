@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Containers in the OpenStack Ecosystem"
-date: 2015-09-18 12:26
+date: 2015-08-19 12:26
 comments: true
 author: Mike Metral
 published: true
