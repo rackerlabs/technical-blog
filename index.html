@@ -99,9 +99,9 @@ tagline: >
             <div class="link-list">
                 <h4>Developer Blog</h4>
                 <ul>
-                    <li><a href="">Principles for a Successful Developer Workshop</a></li>
-                    <li><a href="">Principles for a Successful Developer Workshop</a></li>
-                    <li><a href="">Principles for a Successful Developer Workshop</a></li>
+                    {% for post in site.posts limit: 3 %}
+                        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                    {% endfor %}
                 </ul>
                 <p><a href="/blog/">Visit the Developer Blog <i class="fa fa-arrow-right"></i></a></p>
             </div>
