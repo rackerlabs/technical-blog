@@ -12,7 +12,7 @@ description: Cloud Tips and insights blog from Rackspace developers and partners
             {% if post.authorAvatar %}
                 <img src="{{ post.authorAvatar }}" alt="{{ post.author }}">
             {% else %}
-                <img src="https://randomuser.me/api/portraits/lego/1.jpg" alt="Placeholder Avatar">
+                <img src="{% asset_path avatar-default.svg %}" alt="Placeholder Avatar">
             {% endif %}
 
         </div>
