@@ -16,11 +16,11 @@ description: Cloud Tips and insights blog from Rackspace developers and partners
             {% endif %}
 
         </div>
-        <div class="post-byline"><a href="" class="post-author">{{ post.author }}</a> | <time datetime="{{ post.date | date: "%F" }}">{{ post.date | date: "%B %-d, %Y" }}</time></div>
+        <div class="post-byline"><span class="post-author">{{ post.author }}</span> | <time datetime="{{ post.date | date: "%F" }}">{{ post.date | date: "%B %-d, %Y" }}</time></div>
         <ul class="post-categories">
-            <li><a href="">Openstack</a></li>
-            <li><a href="">Community</a></li>
-            <li><a href="">DevOps</a></li>
+            {% for category in post.categories %}
+                <li><a href="/blog/categories/{{ category }}">{{ category }}</a></li>
+            {% endfor %}
         </ul>
     </div>
     <div class="post-preview">
@@ -30,20 +30,15 @@ description: Cloud Tips and insights blog from Rackspace developers and partners
 </section>
 {% endfor %}
 
-<ul class="pagination">
-  <li class="page"><a href="/blog">&laquo; First</a></li>
-  {% for page in (1..paginator.total_pages) %}
-  {% if page == paginator.page %}
-  {% assign page_style = 'current' %}
-  {% else %}
-  {% assign page_style = '' %}
-  {% endif %}
-
-  {% if page == 1 %}
-  <li class="page {{ page_style }}"><a href="/blog">{{ page }}</a></li>
-  {% else %}
-  <li class="page {{ page_style }}"><a href="/blog/page{{ page }}">{{ page }}</a></li>
-  {% endif %}
-
-  {% endfor %}
-  <li class="page"><a href="/blog/page{{ paginator.total_pages }}">Last &raquo;</a></li>
+<div class="pagination">
+    <div class="previous">
+        {% if paginator.previous_page %}
+        <a href="/blog/page{{ paginator.previous_page }}">&larr; Newer Posts</a>
+        {% endif %}
+    </div>
+    <div class="next">
+        {% if paginator.next_page %}
+        <a href="/blog/page{{ paginator.next_page }}">Older Posts &rarr;</a>
+        {% endif %}
+    </div>
+</div>
