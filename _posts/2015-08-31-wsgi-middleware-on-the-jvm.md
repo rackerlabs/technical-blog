@@ -122,6 +122,9 @@ Jython's dynamic language properties and how those properties interplay with
 Java's JIT compilation. I suspect that, in the future, we'll see convergence in
 performance between these three languages.
 
+To learn more about Jython in its current and future state, check out [this
+terrific talk by Jim Baker at PyCon](https://youtu.be/hLm3garVQFo).
+
 # Bridging the Gap between WSGI and Servlet Specifications
 This is where things get interesting. The Servlet spec and WSGI spec were born
 from two very different environments, and as a result, expect very different
