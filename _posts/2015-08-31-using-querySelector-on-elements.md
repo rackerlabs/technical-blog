@@ -63,11 +63,11 @@ document.querySelectorAll("#my-id div div");
 document.querySelector("#my-id").querySelectorAll("div div");
 ```
 
-You might reasonably expect them to be equivalent. After all, one asks
-`div` elements inside `div` elements inside `#my-id`, and the other
-asks for `div` elements inside `div` elements that are *descendants*
-of `#my-id`. However, when you look at [this JSbin][jsbin] you'll see
-that they produce very different results:
+You might reasonably expect them to be equivalent. After all, one asks for
+`div` elements inside `div` elements inside `#my-id`, and the other asks for
+`div` elements inside `div` elements that are *descendants* of
+`#my-id`. However, when you look at [this JSbin][jsbin] you'll see that they
+produce very different results:
 
 ```javascript
 document.querySelectorAll("#my-id div div").length === 1;
