@@ -9,14 +9,14 @@ categories:
     - jenkins
     - plugin
 ---
-Welcome to part 2 of Jenkins Post-build Plugin development tutorial. This post will talk in detail about the plugin 
+Welcome to part 2 of Jenkins Post-build Plugin development tutorial. This post talks in detail about the plugin 
 project entities and their interactions with each other. To brush up on the previous post, please visit [Jenkins 
 Post-build Plugin Part 1](https://developer.rackspace.com/blog/jenkins-post-build-plugin-part-1/).
 
 <!-- more -->
 
 In part 1 of the tutorial, we created a plugin project which generates an example `HelloWorld` builder plugin. We 
-will continue working on the same project and turn it into a post-build plugin. The main difference between the two 
+now continue working on the same project and turn it into a post-build plugin. The main difference between the two 
 is best shown as:
 
                             	| Build Plugin                       	| Post-build Plugin              	
@@ -27,7 +27,7 @@ is best shown as:
 
  
 <img class="blog-post" src="{% asset_path 2015-08-28-jenkins-post-build-plugin-part-2/info.png%}"/>
-**Tip:** I would highly recommend going through the comments in `HelloWorldBuilder.java` before delving further for 
+**Tip:** I would highly recommend going through the comments in `HelloWorldBuilder.java` before delving further because 
 those comments are extremely detailed and give the reader a good insight into working of Jenkins core.
 
 Before we start, let's rename the `HelloWorldBuilder` class, its references and its `resources` to 
@@ -59,15 +59,15 @@ plugin, this option is shown when the 'Add post-build action' drop-down is click
 The naming convention of this class can be confusing for beginners so the image on the right shows where this is 
 displayed.
 
-This class is also the place for any global configurations to reside. Global configurations are the ones configured 
-at the plugin level rather than each job/build/project level. You can have parameters of this class to act as 
+This class is also the place where any global configurations reside. Global configurations are the ones configured 
+at the plugin level rather than each job/build/project level. Parameters of this class can act as 
 globally configurable fields, e.g. checkboxes, text-fields, radio-buttons, etc.
  
 <img class="blog-post right" src="{% asset_path 2015-08-28-jenkins-post-build-plugin-part-2/useFrenchCheckBox.png%}"/>
  
 Look at the boolean `useFrench` class parameter. The method `public boolean configure(...)` in the `Descriptor` class 
 is overridden to set this field to `true` if the user checks in the checkbox on the Manage Jenkins>Configure System 
-page.  The resources to render any such global configurations should be placed in `global.jelly`.
+page.  Place the resources to render any such global configurations in `global.jelly`.
 
 The configurations local to each job/build/project are specified as class parameters in the outer plugin class. Look 
 at the field `name` in `TestExamplePublisher`. This field is set with any value that the user fills in the text-field 
@@ -81,7 +81,7 @@ corresponding fields in the class.
 
 ## <a name="publisher-class"></a>Know thy Publisher class
 
-The `TestExamplePublisher` class is where the essence of the plugin lies. The parameters of this class are set by 
+The essence of the plugin lies in the `TestExamplePublisher` class. The parameters of this class are set by 
 the `config.jelly` file. When the user saves any value for these fields on the job's UI (text-fields, checkboxes 
 radio-boxes, etc.), the value is assigned to the corresponding parameters via the `DataBoundConstructor`. It is, 
 therefore, necessary to have the same names for the parameters in the `config.jelly` file as in the 
@@ -94,22 +94,22 @@ project page.
 
 ## <a name="build-action"></a>Build Action Class
 
-To make a new page entry in Jenkins side-panel, all one has to do is create a class that implements 
+To make a new page entry in Jenkins side-panel, you just need to create a class that implements 
 `hudson.model.Action` interface. Let's create a new `TestExampleBuildAction` class that implements this. To 
-create a new page, one has to provide three entities to Jenkins through this interface. These are a [URL name]
+create a new page, provide three entities to Jenkins through this interface. These are a [URL name]
 (http://javadoc.jenkins-ci.org/hudson/model/Action.html#getUrlName()) to access this page, a [display name]
 (http://javadoc.jenkins-ci.org/hudson/model/Action.html#getDisplayName()) and an [icon]
 (http://javadoc.jenkins-ci.org/hudson/model/Action.html#getIconFileName()) for the side-panel entry. Let's have the 
-page located at 'testExampleBuild' (url name), with the display name 'Test Example Build Page' and provide an icon 
+page located at 'testExampleBuild' (url name), with the display name 'Test Example Build Page', and provide an icon 
 file located at the `src/main/webapp/img/<iconFileName>.png`. There are two ways to return the `getIconFileName()` 
 string:
     
 1. Having your own icon file: This file needs to be present at `src/main/webapp/img/` and the return string can 
     be a relative path: `"/plugin/testExample/img/<iconFileName>.png"`
 1. Using an existing icon from the target/work/webapp/images/24x24 : For this, just return the string 
-    `"<iconFileName>.png"` and it will automatically be fetched from this location
-    
-We will pass the "Hello \<name\>"/"Bonjour \<name\>" string from the publisher to the build-action and therefore need a 
+    `"<iconFileName>.png"`, and it will automatically be fetched from this location
+
+Because we pass the "Hello \<name\>"/"Bonjour \<name\>" string from the publisher to the build-action, we need a 
 string parameter to store this in the latter. We also need to pass the `AbstractBuild build` to the 
 `TestExampleBuildAction` class to let Jenkins know that everything implemented in `TestExampleBuildAction` is build 
 related. The best way to do this is through the build-action class constructor. Notice how an object of this class is 
@@ -130,16 +130,14 @@ The [resources]
 
 ## <a name="conclusion"></a>Conclusion
 
-With the implementation of these two classes , we have finished coding the plugin. When installed and run, below is how 
-the build's page looks:
+With the implementation of these two classes , we have finished coding the plugin. The following illustration shows 
+how the build page should look after you install and run the plugin:
  
 <img class="blog-post right" src="{% asset_path 2015-08-28-jenkins-post-build-plugin-part-2/buildView.png %}"/>
  
- and this is how the project's page looks:
+ and this is how the project page should look:
  
 <img class="blog-post right" src="{% asset_path 2015-08-28-jenkins-post-build-plugin-part-2/projectView.png %}"/>
-
-
 
 The source code for this plugin has been made available on [GitHub](https://github.com/pritic/testExample). I hope 
 this tutorial has been a fun project and a good starting point for beginners in Jenkins plugin development.
