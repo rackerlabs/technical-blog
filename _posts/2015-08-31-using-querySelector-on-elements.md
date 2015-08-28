@@ -108,11 +108,11 @@ document.querySelector("#my-id").querySelector("div div div")
 </html>
 ```
 
-I think this API is surprising, and the front-end engineers I've asked
-seem to agree with me. This is, however, not a bug; it's definitely
-how the spec claims it should work, and how it works in Firefox,
-Chrome and Safari. [John Resig commented][jresig] how he and others
-felt this behavior was quite confusing back when the spec came out.
+I think this API is surprising, and the front-end engineers I've asked seem to
+agree with me. However, this is not a bug. It's definitely how the spec claims
+it should work, and how it works in Firefox, Chrome and
+Safari. [John Resig commented][jresig] how he and others felt this behavior
+was quite confusing back when the spec came out.
 
 If you can't easily rewrite the selector to be absolute like we did above,
 there are two alternatives: the `:scope` CSS pseudo-selector, and
