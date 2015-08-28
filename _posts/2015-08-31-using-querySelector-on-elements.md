@@ -18,6 +18,8 @@ familiarity with CSS selectors: how you select elements, classes and ids. If
 you haven't used them, the Mozilla Developer Network has an excellent
 [introduction][csssel].
 
+<!-- more -->
+
 Imagine the following HTML page:
 
 ```html
