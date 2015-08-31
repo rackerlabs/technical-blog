@@ -1,33 +1,44 @@
 ---
 layout: blog-index
-title: Rackspace Developer Center
+title: Developer Blog - Rackspace Developer Center
+description: Cloud Tips and insights blog from Rackspace developers and partners
 ---
 
 {% for post in paginator.posts %}
-<div class="blog-tease">
-  <h4 class="blog-tease-title"><a href="{{ BASE_PATH }}{{ post.url }}">
-    {{ post.title }}</a></h4>
-  <div class="byline">By {{ post.author }} - Posted on {{ post.date | date: "%b %-d %Y" }}</div>
-  <p>{{post.excerpt}}</p>
-  <a href="{{ BASE_PATH }}{{ post.url }}" class="btn btn-primary">Read More</a>
-  <hr />
-</div>
+<section class="blog-post preview">
+    <h3 class="post-title"><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h3>
+    <div class="post-info">
+        <div class="post-avatar{% if post.authorIsRacker %} racker{% endif %}">
+            {% if post.authorAvatar %}
+                <img src="{{ post.authorAvatar }}" alt="{{ post.author }}">
+            {% else %}
+                <img src="{% asset_path avatar-default.svg %}" alt="Placeholder Avatar">
+            {% endif %}
+
+        </div>
+        <div class="post-byline"><span class="post-author">{{ post.author }}</span> | <time datetime="{{ post.date | date: "%F" }}">{{ post.date | date: "%B %-d, %Y" }}</time></div>
+        <ul class="post-categories">
+            {% for category in post.categories %}
+                <li><a href="/blog/categories/{{ category }}">{{ category }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="post-preview">
+        {{ post.excerpt }}
+    </div>
+    <a href="{{ BASE_PATH }}{{ post.url }}" class="post-read-more">Read More</a>
+</section>
 {% endfor %}
 
-<ul class="pagination">
-  <li class="page"><a href="/blog">&laquo; First</a></li>
-  {% for page in (1..paginator.total_pages) %}
-  {% if page == paginator.page %}
-  {% assign page_style = 'current' %}
-  {% else %}
-  {% assign page_style = '' %}
-  {% endif %}
-
-  {% if page == 1 %}
-  <li class="page {{ page_style }}"><a href="/blog">{{ page }}</a></li>
-  {% else %}
-  <li class="page {{ page_style }}"><a href="/blog/page{{ page }}">{{ page }}</a></li>
-  {% endif %}
-
-  {% endfor %}
-  <li class="page"><a href="/blog/page{{ paginator.total_pages }}">Last &raquo;</a></li>
+<div class="pagination">
+    <div class="previous">
+        {% if paginator.previous_page %}
+        <a href="/blog/page{{ paginator.previous_page }}">&larr; Newer Posts</a>
+        {% endif %}
+    </div>
+    <div class="next">
+        {% if paginator.next_page %}
+        <a href="/blog/page{{ paginator.next_page }}">Older Posts &rarr;</a>
+        {% endif %}
+    </div>
+</div>

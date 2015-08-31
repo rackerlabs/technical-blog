@@ -1,29 +1,43 @@
 ---
-layout: default
+layout: blog-index
+description: Cloud Tips and insights blog from Rackspace developers and partners
 ---
+<h2>Showing posts categorized “{{ page.category }}”</h2>
+{% for post in site.categories[page.category] %}
+<section class="blog-post preview">
+    <h3 class="post-title"><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h3>
+    <div class="post-info">
+        <div class="post-avatar{% if post.authorIsRacker %} racker{% endif %}">
+            {% if post.authorAvatar %}
+                <img src="{{ post.authorAvatar }}" alt="{{ post.author }}">
+            {% else %}
+                <img src="{% asset_path avatar-default.svg %}" alt="Placeholder Avatar">
+            {% endif %}
 
-<div class="title-header">
-  <div class="inner">
-    <span class="headline">Developer Blog</span>
-  </div>
-</div>
-<div class="container body-container">
-  <div class="row">
-    <div class="col-md-9 col-md-push-3 blog-post bodycontent">
-      <ul class="blog-entries">
-        {% for post in site.categories[page.category] %}
-        <li class="entry">
-          <span class="byline"> {{ post.date | date_to_html_string }}</span>
-          <h2 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-          <div class="categories">Filed under {{ post.categories | category_links }}</div>
-        </li>
-        {% endfor %}
-      </ul>
+        </div>
+        <div class="post-byline"><span class="post-author">{{ post.author }}</span> | <time datetime="{{ post.date | date: "%F" }}">{{ post.date | date: "%B %-d, %Y" }}</time></div>
+        <ul class="post-categories">
+            {% for category in post.categories %}
+                <li><a href="/blog/categories/{{ category }}">{{ category }}</a></li>
+            {% endfor %}
+        </ul>
     </div>
-    <div class="col-md-3 col-md-pull-9 sidebar">
-      {% include blog-sidebar.html %}
+    <div class="post-preview">
+        {{ post.excerpt }}
+    </div>
+    <a href="{{ BASE_PATH }}{{ post.url }}" class="post-read-more">Read More</a>
+</section>
+{% endfor %}
 
-      {% include sidebar-footer.html %}
+<div class="pagination">
+    <div class="previous">
+        {% if paginator.previous_page %}
+        <a href="/blog/page{{ paginator.previous_page }}">&larr; Newer Posts</a>
+        {% endif %}
     </div>
-  </div>
+    <div class="next">
+        {% if paginator.next_page %}
+        <a href="/blog/page{{ paginator.next_page }}">Older Posts &rarr;</a>
+        {% endif %}
+    </div>
 </div>

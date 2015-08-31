@@ -1,58 +1,26 @@
----
-layout: blog-page
----
-
-<h1 class="title">{{ page.title }}</h1>
-<div class="byline">By {{ page.author }} - Posted on {{ page.date | date: "%b %-d %Y" }}</div>
-
-{% capture category %}{% if post %}{{ post.categories | category_links | size }}{% else %}{{ page.categories | category_links | size }}{% endif %}{% endcapture %}
-{% unless category == '0' %}
-<div class="categories">
-  {% if post %}
-    {{ post.categories | category_links }}
-  {% else %}
-    {{ page.categories | category_links }}
-  {% endif %}
-</div>
-{% endunless %}
-
-<p>{{ content }}</p>
-
-<!-- Authors bio -->
-{% if page.bio %}
-<section>
-<div class="panel panel-default">
-  <div class="panel-heading">About the author(s)</div>
-  <div class="panel-body">
-    {{ page.bio }}
-  </div>
-</div>
+<section class="blog-post single">
+    <div>
+        <h1 class="post-title">{{ post.title }}</h1>
+        <div class="post-info">
+            <div class="post-avatar racker">
+                <img src="https://s3.amazonaws.com/uifaces/faces/twitter/gerrenlamson/73.jpg" alt="FPO Image">
+            </div>
+            <div class="post-byline"><span class="post-author">{{ post.author }}</span> | <time datetime="2015-07-20">July 20, 2015</time></div>
+            <ul class="post-categories">
+                <li><a href="">Openstack</a></li>
+                <li><a href="">Community</a></li>
+                <li><a href="">DevOps</a></li>
+            </ul>
+        </div>
+        {{ content }}
+        <div class="author-bio">
+            <div class="avatar racker">
+                <img src="https://s3.amazonaws.com/uifaces/faces/twitter/gerrenlamson/128.jpg" alt="FPO Image">
+            </div>
+            <div class="author-info">
+                <span class="name">Everett Toews</span>
+                <div class="bio">Everett is a Rackspace Developer Advocate, he's from Canada (I think) and he's a super-nice guy. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed qui iste non quos, consequuntur nulla est eaque animi adipisci consectetur ipsam perspiciatis harum vitae voluptatibus assumenda eveniet. Unde, dolor, ex.</div>
+            </div>
+        </div>
+    </div>
 </section>
-{% endif %}
-
-<!-- disqus comments -->  
-  <section>
-    <h1>Comments</h1>
-    <div id="disqus_thread" aria-live="polite">{% include disqus.html %}</div>
-  </section>
-{% if page.previous || page.next %}
-<div class="row">
-  <div class="col-md-12">
-    <hr />
-  </div>
-</div>
-<div class="row">
-{% if page.previous %}
-  <div class="col-md-6">
-    <div class="related-pretitle">Previous Article</div>
-    <span class="related-title"><a href="{{ page.previous.url }}">{{ page.previous.title }}</a></span>
-  </div>
-  {% endif %}
-  {% if page.next %}
-  <div class="col-md-6">
-    <div class="related-pretitle">Next Article</div>
-    <span class="related-title"><a href="{{ page.next.url }}">{{ page.next.title }}</a></span>
-  </div>
-  {% endif %}
-</div>
-{% endif %}

@@ -4,6 +4,8 @@ date: 2015-08-11 23:59
 title: "Introducing rack &ndash; A Rackspace Global Command-Line Interface"
 comments: true
 author: Ken Perkins
+authorIsRacker: true
+authorAvatar: https://pbs.twimg.com/profile_images/421780751701401600/0YpuLSd3_400x400.jpeg
 published: true
 categories:
     - Rackspace
