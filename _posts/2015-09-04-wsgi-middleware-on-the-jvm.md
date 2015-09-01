@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Repose Ninja - WSGI Middleware On The JVM"
-date: 2015-08-31 00:00
+date: 2015-09-04 00:00
 comments: true
 author: Damien Johnson
 bio: Damien is a software developer at Rackspace that is currently working on
