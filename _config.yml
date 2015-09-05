@@ -30,3 +30,4 @@ assets:
 
 # Blog categories
 category_dir: blog/categories
+author_dir: blog/authors

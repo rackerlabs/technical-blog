@@ -1,10 +1,9 @@
 ---
 layout: blog-index
-title: Developer Blog - Rackspace Developer Center
 description: Cloud Tips and insights blog from Rackspace developers and partners
 ---
-
-{% for post in paginator.posts %}
+<h2 class="author-heading">Posts written by {{ page.author }}</h2>
+{% for post in site.posts %}{% if post.author == page.author %}
 <section class="blog-post preview">
     <h3 class="post-title"><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h3>
     <div class="post-info">
@@ -16,29 +15,16 @@ description: Cloud Tips and insights blog from Rackspace developers and partners
             {% endif %}
 
         </div>
-        <div class="post-byline"><a class="post-author" href="/blog/authors/{{ post.author | downcase | replace: ' ', '-' }}">{{ post.author }}</a> | <time datetime="{{ post.date | date: "%F" }}">{{ post.date | date: "%B %-d, %Y" }}</time></div>
+        <div class="post-byline"><span class="post-author">{{ post.author }}</span> | <time datetime="{{ post.date | date: "%F" }}">{{ post.date | date: "%B %-d, %Y" }}</time></div>
         <ul class="post-categories">
             {% for category in post.categories %}
-                <li><a href="/blog/categories/{{ category | replace: ' ', '-' }}">{{ category }}</a></li>
+                <li><a href="/blog/categories/{{ category }}">{{ category }}</a></li>
             {% endfor %}
         </ul>
     </div>
     <div class="post-preview">
-        {{ post.excerpt }}
+        {{ post.excerpt|markdownify }}
     </div>
     <a href="{{ BASE_PATH }}{{ post.url }}" class="post-read-more">Read More</a>
 </section>
-{% endfor %}
-
-<div class="pagination">
-    <div class="previous">
-        {% if paginator.previous_page %}
-        <a href="/blog/page{{ paginator.previous_page }}">&larr; Newer Posts</a>
-        {% endif %}
-    </div>
-    <div class="next">
-        {% if paginator.next_page %}
-        <a href="/blog/page{{ paginator.next_page }}">Older Posts &rarr;</a>
-        {% endif %}
-    </div>
-</div>
+{% endif %}{% endfor %}
