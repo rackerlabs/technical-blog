@@ -13,19 +13,19 @@ categories:
 Engineering Managed Cassandra with Rackspace/DSE
 ================================================
 
-    Managing infrastructure and database technology has grown at Rackspace and our list of supported technologies in the data umbrella has grown tremendously.
+Managing infrastructure and database technology has grown at Rackspace and our list of supported technologies in the data umbrella has grown tremendously.
 
-    My name is David Grier and I am a product engineer at Rackspace. I concentrate most of my time on Cassandra, Hadoop and related components in the Big Data ecosystem.
+My name is David Grier and I am a product engineer at Rackspace. I concentrate most of my time on Cassandra, Hadoop and related components in the Big Data ecosystem.
 
-    We are proud to announce our partnership with Datastax, with whom we are providing a managed DataStax Enterprise (DSE) solution. This article is a high level view of that managed solution and how we are providing it to our customers.
+We are proud to announce our partnership with Datastax, with whom we are providing a managed DataStax Enterprise (DSE) solution. This article is a high level view of that managed solution and how we are providing it to our customers.
 
-    The DSE solution we created is based on best practices from our partner Datastax, the Cassandra community, and our growing expertise–including OS tuning and SSD’s 10G private network and hardware specifics. Deployments of our managed DSE solution can live in any Rackspace Datacenter (DC) and are sized to each customer’s use case and needs.
+The DSE solution we created is based on best practices from our partner Datastax, the Cassandra community, and our growing expertise–including OS tuning and SSD’s 10G private network and hardware specifics. Deployments of our managed DSE solution can live in any Rackspace Datacenter (DC) and are sized to each customer’s use case and needs.
 
-    Correct fits start in the 8 core 64G range for lighter workloads and dialing memory up to 256G if search is required.
+Correct fits start in the 8 core 64G range for lighter workloads and dialing memory up to 256G if search is required.
 
-    We created a Reference Architecture to explain at a high level some common infrastructure layouts for your DSE deployment at Rackspace.
+We created a Reference Architecture to explain at a high level some common infrastructure layouts for your DSE deployment at Rackspace.
 
-    We have templated some layouts (shown below) which are horizontally scalable to accommodate ongoing growth. These layouts come with standard hardware configurations designed to fit a wide range of use cases. Here are a couple examples:
+We have templated some layouts (shown below) which are horizontally scalable to accommodate ongoing growth. These layouts come with standard hardware configurations designed to fit a wide range of use cases. Here are a couple examples:
 
 
 
