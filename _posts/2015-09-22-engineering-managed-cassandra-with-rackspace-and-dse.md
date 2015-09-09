@@ -10,14 +10,13 @@ categories:
     - Other Category
 ---
 
-Engineering Managed Cassandra with Rackspace/DSE
-================================================
-
 Managing infrastructure and database technology has grown at Rackspace and our list of supported technologies in the data umbrella has grown tremendously.
 
 My name is David Grier and I am a product engineer at Rackspace. I concentrate most of my time on Cassandra, Hadoop and related components in the Big Data ecosystem.
 
 We are proud to announce our partnership with Datastax, with whom we are providing a managed DataStax Enterprise (DSE) solution. This article is a high level view of that managed solution and how we are providing it to our customers.
+
+<!-- more -->
 
 The DSE solution we created is based on best practices from our partner Datastax, the Cassandra community, and our growing expertise–including OS tuning and SSD’s 10G private network and hardware specifics. Deployments of our managed DSE solution can live in any Rackspace Datacenter (DC) and are sized to each customer’s use case and needs.
 
