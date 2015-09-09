@@ -6,7 +6,6 @@ comments: true
 author: David Grier
 published: true
 categories:
-    - 
     - That Category
     - Other Category
 ---
@@ -24,7 +23,7 @@ Engineering Managed Cassandra with Rackspace/DSE
 
     Correct fits start in the 8 core 64G range for lighter workloads and dialing memory up to 256G if search is required.
 
-    We created a [Reference Architecture](http://127.0.0.1:4000/blog/engineering-managed-cassandra-with-rackspace-and-dse/assets/ReferenceArchitectureCassandrav1.docx.pdf) "Reference Architecture") to explain at a high level some common infrastructure layouts for your DSE deployment at Rackspace.
+    We created a Reference Architecture to explain at a high level some common infrastructure layouts for your DSE deployment at Rackspace.
 
     We have templated some layouts (shown below) which are horizontally scalable to accommodate ongoing growth. These layouts come with standard hardware configurations designed to fit a wide range of use cases. Here are a couple examples:
 
@@ -55,4 +54,4 @@ The main choke point in these builds is the firewall where it is potentially nec
 
     We are happy to talk with you about managing your data in Cassandra or any of our other supported datastores. Please feel free to reach out to our data services sales [team](http://www.rackspace.com/data) to start a conversation about how Rackspace can best meet your managed data storage needs.
 
-
+[Reference Architecture]({% asset_path 2015-09-22-engineering-managed-cassandra-with-rackspace-and-dse/ReferenceArchitectureCassandrav1.docx.pdf %})
