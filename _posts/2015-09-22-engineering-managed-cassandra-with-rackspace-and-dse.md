@@ -1,13 +1,15 @@
 ---
 layout: post
 title: "Engineering Managed Cassandra with Rackspace/DSE"
-date: 2015-09-22 15:00
+date: 2015-09-22 08:00
 comments: true
 author: David Grier
 published: true
 categories:
-    - That Category
-    - Other Category
+    - Cassandra
+    - Big Data
+    - Datastores
+    - Datastax
 ---
 
 Managing infrastructure and database technology has grown at Rackspace and our list of supported technologies in the data umbrella has grown tremendously.
@@ -47,10 +49,10 @@ The main choke point in these builds is the firewall where it is potentially nec
 
 For more in depth information on these please refer to the reference architecture.
 
-Rackspace uses Ansible internally for deployments and for maintaining infrastructure. Deploying dedicated DSE at Rackspace is fully automated via Ansible [here](http://github.com/rackerlabs/ansible-dse):, though some special tuning may be required after the cluster is up and operational. You can view Rackspace’s Ansible Playbook for DSE, as well as other useful tools, at the [Rackerlabs GitHub organization](https://github.com/rackerlabs).
+Rackspace uses Ansible internally for deployments and for maintaining infrastructure. Deploying dedicated DSE at Rackspace is [fully automated via Ansible](http://github.com/rackerlabs/ansible-dse), though some special tuning may be required after the cluster is up and operational. You can view Rackspace’s Ansible Playbook for DSE, as well as other useful tools, at the [Rackerlabs GitHub organization](https://github.com/rackerlabs).
 
 The Rackerlabs GitHub organization holds many useful tools including our base provisioning software which we use for Cassandra deployments.
 
-We are happy to talk with you about managing your data in Cassandra or any of our other supported datastores. Please feel free to reach out to our data services sales [team](http://www.rackspace.com/data) to start a conversation about how Rackspace can best meet your managed data storage needs.
+We are happy to talk with you about managing your data in Cassandra or any of our other supported datastores. Please feel free to reach out to our [data services sales team](http://www.rackspace.com/data) to start a conversation about how Rackspace can best meet your managed data storage needs.
 
 [Reference Architecture]({% asset_path 2015-09-22-engineering-managed-cassandra-with-rackspace-and-dse/ReferenceArchitectureCassandrav1.docx.pdf %})
