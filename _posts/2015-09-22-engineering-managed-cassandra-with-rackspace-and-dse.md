@@ -55,4 +55,4 @@ The Rackerlabs GitHub organization holds many useful tools including our base pr
 
 We are happy to talk with you about managing your data in Cassandra or any of our other supported datastores. Please feel free to reach out to our [data services sales team](http://www.rackspace.com/data) to start a conversation about how Rackspace can best meet your managed data storage needs.
 
-[Reference Architecture]({% asset_path 2015-09-22-engineering-managed-cassandra-with-rackspace-and-dse/ReferenceArchitectureCassandrav1.docx.pdf %})
+[Reference Architecture]({% asset_path 2015-09-22-engineering-managed-cassandra-with-rackspace-and-dse/ReferenceArchitectureCassandra.docx.pdf %})
