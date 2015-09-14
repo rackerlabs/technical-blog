@@ -37,7 +37,7 @@ The application we're going to deploy is a simple guestbook. It's enough to demo
 We'll be working out of a repo on GitHub so let's start by cloning that repo.
 
 ```bash
-git clone https://github.com/everett-toews/guestbook.git -b dmc guestbook
+git clone https://github.com/rackerlabs/guestbook.git -b dmc guestbook
 cd guestbook
 ```
 
@@ -68,7 +68,7 @@ eval "$(docker-machine env guestbook-dev)"
 docker-compose up
 ```
 
-While that's running, read through [docker-compose.yml](https://github.com/everett-toews/guestbook/blob/dmc/docker-compose.yml) to get a feel for what it's doing for us. It's well commented so it should be self-explanatory. Note how it extends [docker-compose-common.yml](https://github.com/everett-toews/guestbook/blob/dmc/docker-compose-common.yml) as its basis for the common components. You can find the full description of the Docker Compose file format in the [docker-compose.yml reference](https://docs.docker.com/compose/yml/).
+While that's running, read through [docker-compose.yml](https://github.com/rackerlabs/guestbook/blob/dmc/docker-compose.yml) to get a feel for what it's doing for us. It's well commented so it should be self-explanatory. Note how it extends [docker-compose-common.yml](https://github.com/rackerlabs/guestbook/blob/dmc/docker-compose-common.yml) as its basis for the common components. You can find the full description of the Docker Compose file format in the [docker-compose.yml reference](https://docs.docker.com/compose/yml/).
 
 Once everything has downloaded and is running, we need to initialize the database. We'll use a one-off container run of our app to run a python command that creates the table in our database.
 
@@ -85,7 +85,7 @@ Now open your browser and go to the Guestbook Dev IP Address you noted above. Si
 
 ### Make a Change
 
-Let's make sure we can continue to develop our application code rapidly. There are a couple of key config options in [docker-compose.yml](https://github.com/everett-toews/guestbook/blob/dmc/docker-compose.yml) that allow us to do so. Re-read the comments for volumes and command in the app service.
+Let's make sure we can continue to develop our application code rapidly. There are a couple of key config options in [docker-compose.yml](https://github.com/rackerlabs/guestbook/blob/dmc/docker-compose.yml) that allow us to do so. Re-read the comments for volumes and command in the app service.
 
 Open app/templates/index.html in your favourite text editor. Make a change and save it. Go back to your browser and reload. Voila!
 
@@ -146,7 +146,7 @@ docker-compose --file docker-compose-prod.yml build
 docker-compose --file docker-compose-prod.yml up -d
 ```
 
-While that's running, read through [docker-compose-prod.yml](https://github.com/everett-toews/guestbook/blob/dmc/docker-compose-prod.yml) to get a feel for what it's doing for us. Note how it's given the default docker-compose.yml file name so we don't have to include the file name in the docker-compose commands. It's well commented so it should be self-explanatory. It too extends [docker-compose-common.yml](https://github.com/everett-toews/guestbook/blob/dmc/docker-compose-common.yml) as its basis for the common components.
+While that's running, read through [docker-compose-prod.yml](https://github.com/rackerlabs/guestbook/blob/dmc/docker-compose-prod.yml) to get a feel for what it's doing for us. Note how it's given the default docker-compose.yml file name so we don't have to include the file name in the docker-compose commands. It's well commented so it should be self-explanatory. It too extends [docker-compose-common.yml](https://github.com/rackerlabs/guestbook/blob/dmc/docker-compose-common.yml) as its basis for the common components.
 
 Once everything is built and running, we need to initialize the database. We'll use a one-off container run of our app to run a python command that creates the table in our database.
 
