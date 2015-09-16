@@ -243,7 +243,7 @@ The IdP configuration is shown below:
 
     keystone_idp:
       service_providers:
-        - id: "{{ keystone_sp_id }}""
+        - id: "{{ keystone_sp_id }}"
           auth_url: http://{{ keystone_sp_host }}:5000/v3/OS-FEDERATION/identity_providers/{{ keystone_idp_id }}/protocols/saml2/auth
           sp_url: http://{{ keystone_sp_host }}:5000/Shibboleth.sso/SAML2/ECP
       idp_entity_id: "{{ keystone_service_publicurl_v3 }}/OS-FEDERATION/saml2/idp"
@@ -251,7 +251,7 @@ The IdP configuration is shown below:
       idp_metadata_path: /etc/keystone/saml2_idp_metadata.xml
       certfile: "/etc/keystone/ssl/idp_signing_cert.pem"
       keyfile: "/etc/keystone/ssl/idp_signing_key.pem"
-      self_signed_cert_subject: "/C=US/ST=Texas/L=San Antonio/O=IT/CN={{ external_lb_vip_address }}
+      self_signed_cert_subject: "/C=US/ST=Texas/L=San Antonio/O=IT/CN={{ external_lb_vip_address }}"
       regen_cert: false
       {% endraw %}
 
@@ -313,7 +313,7 @@ the identity provider. Below you can see the SP configuration block:
     keystone_sp:
       cert_duration_years: 5
       trusted_idp_list:
-        - name: "{{ keystone_idp_id }}
+        - name: "{{ keystone_idp_id }}"
           entity_ids:
              - 'http://{{ keystone_idp_host }}:5000/v3/OS-FEDERATION/saml2/idp'
           metadata_uri: 'http://{{ keystone_idp_host }}:5000/v3/OS-FEDERATION/saml2/metadata'
