@@ -12,8 +12,6 @@ categories:
     - federation
 ---
 
-# Keystone-to-Keystone Federation with the openstack-ansible Project
-
 Federation support in OpenStack has been greatly improved in the Kilo release,
 and, while there are still some rough edges, the feature is now usable, if you
 don't mind adding a little elbow grease. This article focuses on one specific
@@ -110,8 +108,8 @@ With it, you have to clone the kilo branch of the openstack-ansible repository:
 
 Luckily, the project includes scripts that simplify single-node deployments,
 which we use for development work and gate checks. These scripts take care of
-all the configuration and setup appropriate for an all-in-one, so all that is
-left to do is to run the script:
+all the configuration and setup appropriate for an all-in-one, so all that you
+need to do is run the following scripts:
 
     # cd /opt/openstack-ansible
     # scripts/bootstrap-aio.sh
@@ -238,13 +236,14 @@ can also write it in a brand new file, as long as it matches the pattern.
 
 The IdP configuration is shown below:
 
+    {% raw %}
     keystone_idp_id: my_idp
     keystone_sp_id: my_sp
     keystone_sp_host: aa.bb.cc.dd
 
     keystone_idp:
       service_providers:
-        - id: "{{ keystone_sp_id }}"
+        - id: "{{ keystone_sp_id }}""
           auth_url: http://{{ keystone_sp_host }}:5000/v3/OS-FEDERATION/identity_providers/{{ keystone_idp_id }}/protocols/saml2/auth
           sp_url: http://{{ keystone_sp_host }}:5000/Shibboleth.sso/SAML2/ECP
       idp_entity_id: "{{ keystone_service_publicurl_v3 }}/OS-FEDERATION/saml2/idp"
@@ -252,15 +251,16 @@ The IdP configuration is shown below:
       idp_metadata_path: /etc/keystone/saml2_idp_metadata.xml
       certfile: "/etc/keystone/ssl/idp_signing_cert.pem"
       keyfile: "/etc/keystone/ssl/idp_signing_key.pem"
-      self_signed_cert_subject: "/C=US/ST=Texas/L=San Antonio/O=IT/CN={{ external_lb_vip_address }}"
+      self_signed_cert_subject: "/C=US/ST=Texas/L=San Antonio/O=IT/CN={{ external_lb_vip_address }}
       regen_cert: false
+      {% endraw %}
 
 You can see at the top of the above snippet that I have defined three top-level
 variables. The first two hold user-defined unique identifiers for the IdP and
 SP clouds. The third variable defines the public IP address or hostname of the
 SP cloud. These are custom variables that I intend to use later. Since this is
 an Ansible configuration file, these variables can be referenced in other
-variables with the `{{ variable_name }}` syntax.
+variables with the {% raw %}`{{ variable_name }}`{% endraw %} syntax.
 
 The block of variables that configure the cloud as an IdP is defined inside the
 `keystone_idp` root element. The most important setting in this block is the
@@ -305,6 +305,7 @@ first cloud will be configured as an identity provider. Pretty simple, right?
 The configuration of the service provider cloud is done similarly to that of
 the identity provider. Below you can see the SP configuration block:
 
+    {% raw %}
     keystone_idp_id: my_idp
     keystone_sp_id: my_sp
     keystone_idp_host: ee.ff.gg.hh
@@ -312,7 +313,7 @@ the identity provider. Below you can see the SP configuration block:
     keystone_sp:
       cert_duration_years: 5
       trusted_idp_list:
-        - name: "{{ keystone_idp_id }}"
+        - name: "{{ keystone_idp_id }}
           entity_ids:
              - 'http://{{ keystone_idp_host }}:5000/v3/OS-FEDERATION/saml2/idp'
           metadata_uri: 'http://{{ keystone_idp_host }}:5000/v3/OS-FEDERATION/saml2/metadata'
@@ -348,6 +349,7 @@ the identity provider. Below you can see the SP configuration block:
                             name: Default
                         user:
                           name: federated_user
+    {% endraw %}
 
 Here the `cert_duration_years` configures the duration of a self-signed SSL
 certificate that will protect the endpoints used by the SAML2 protocol. The
@@ -450,17 +452,17 @@ the IdP host, this is what you need to do:
     - Full catalog available in file catalog.json
     #----------------------------------------
     # Available endpoints:
-    OBJECT_STORE_URL=http://23.253.97.205:8080/v1/AUTH_cb60fc9c11df47f9b57b7dda4a34acd2
-    METERING_URL=http://23.253.97.205:8777
-    IMAGE_URL=http://23.253.97.205:9292
-    VOLUME_URL=http://23.253.97.205:8776/v1/cb60fc9c11df47f9b57b7dda4a34acd2
-    IDENTITY_URL=http://23.253.97.205:5000/v2.0
-    NETWORK_URL=http://23.253.97.205:9696
-    CLOUDFORMATION_URL=http://23.253.97.205:8000/v1
-    ORCHESTRATION_URL=http://23.253.97.205:8004/v1/cb60fc9c11df47f9b57b7dda4a34acd2
-    COMPUTEV21_URL=http://23.253.97.205:8774/v2.1
-    COMPUTE_URL=http://23.253.97.205:8774/v2/cb60fc9c11df47f9b57b7dda4a34acd2
-    VOLUMEV2_URL=http://23.253.97.205:8776/v2/cb60fc9c11df47f9b57b7dda4a34acd2
+    OBJECT_STORE_URL=http://23.253.97.96:8080/v1/AUTH_cb60fc9c11df47f9b57b7dda4a34acd2
+    METERING_URL=http://23.253.97.96:8777
+    IMAGE_URL=http://23.253.97.96:9292
+    VOLUME_URL=http://23.253.97.96:8776/v1/cb60fc9c11df47f9b57b7dda4a34acd2
+    IDENTITY_URL=http://23.253.97.96:5000/v2.0
+    NETWORK_URL=http://23.253.97.96:9696
+    CLOUDFORMATION_URL=http://23.253.97.96:8000/v1
+    ORCHESTRATION_URL=http://23.253.97.96:8004/v1/cb60fc9c11df47f9b57b7dda4a34acd2
+    COMPUTEV21_URL=http://23.253.97.96:8774/v2.1
+    COMPUTE_URL=http://23.253.97.96:8774/v2/cb60fc9c11df47f9b57b7dda4a34acd2
+    VOLUMEV2_URL=http://23.253.97.96:8776/v2/cb60fc9c11df47f9b57b7dda4a34acd2
     #----------------------------------------
     # OpenStack client setup:
     export OS_TOKEN=1f6606af8cda4b27b787819f2eb3f2d4
@@ -484,7 +486,7 @@ to you in the SP cloud, you would use the image service endpoint as follows:
 
 To get a list of instances, the compute endpoint is used in a similar way:
 
-    # openstack --os-endpoint=http://23.253.97.96:8774/v2/bf7e5af2a9a24309bf3b10edad12ee71 server list
+    # openstack --os-endpoint=http://23.253.97.96:8774/v2/cb60fc9c11df47f9b57b7dda4a34acd2 server list
 
 You are probably thinking that it is inconvenient to have to provide the
 service endpoint for each command, given that when accessing the local cloud
@@ -532,16 +534,15 @@ automated endpoint lookup. We'll see if this becomes a reality.
 
 ### Fernet Tokens and Federation
 
-As you learned above, while working on the federation support for
-openstack-ansible, we noticed that there were problems with federated tokens
-when the Keystone service in the SP cloud is configured to use Fernet tokens.
-There is a fix made towards the Liberty release, but that fix has not been
-backported to Kilo yet. Hopefully by the time you read this, the fix will be
-publicly available. But if you see that the `federated-login.sh` wrapper script
-fails to obtain a token, you may want to consider switching the Keystone
-service in both clouds to UUID tokens, which you can do by running the Keystone
-playbook one more time, after adding this variable to your `user_variables.yml`
-file:
+While working on the federation support for openstack-ansible, we noticed that
+there were problems with federated tokens when the Keystone service in the SP
+cloud is configured to use Fernet tokens. There is a fix made towards the
+Liberty release, but that fix has not been backported to Kilo yet. Hopefully by
+the time you read this, the fix will be publicly available. But if you see that
+the `federated-login.sh` wrapper script fails to obtain a token, you may want
+to consider switching the Keystone service in both clouds to UUID tokens, which
+you can do by running the Keystone playbook one more time, after adding this
+variable to your `user_variables.yml` file:
 
     keystone_token_provider: "keystone.token.providers.uuid.Provider"
     keystone_token_driver: "keystone.token.persistence.backends.sql.Token"
