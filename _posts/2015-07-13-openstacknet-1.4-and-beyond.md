@@ -4,6 +4,8 @@ title: "OpenStack.NET 1.4 and Beyond"
 date: 2015-07-13 23:59
 comments: true
 author: Carolyn Van Slyck
+authorIsRacker: true
+authorAvatar: https://secure.gravatar.com/avatar/8b96f8872eb3f398809daf017ee3a8ab
 published: true
 categories:
     - OpenStack
