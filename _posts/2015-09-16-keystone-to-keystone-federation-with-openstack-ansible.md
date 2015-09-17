@@ -236,31 +236,32 @@ can also write it in a brand new file, as long as it matches the pattern.
 
 The IdP configuration is shown below:
 
-    {% raw %}
     keystone_idp_id: my_idp
     keystone_sp_id: my_sp
     keystone_sp_host: aa.bb.cc.dd
 
     keystone_idp:
       service_providers:
-        - id: "{{ keystone_sp_id }}"
-          auth_url: http://{{ keystone_sp_host }}:5000/v3/OS-FEDERATION/identity_providers/{{ keystone_idp_id }}/protocols/saml2/auth
-          sp_url: http://{{ keystone_sp_host }}:5000/Shibboleth.sso/SAML2/ECP
-      idp_entity_id: "{{ keystone_service_publicurl_v3 }}/OS-FEDERATION/saml2/idp"
-      idp_sso_endpoint: "{{ keystone_service_publicurl_v3 }}/OS-FEDERATION/saml2/sso"
+        - id: "{{ "{{ " }}keystone_sp_id{{ " }}" }}"
+          auth_url: http://{{ "{{ " }}keystone_sp_host{{ " }}" }}:5000/v3/OS-FEDERATION/identity_providers/{{ "{{ " }}keystone_idp_id{{ " }}" }}/protocols/saml2/auth
+          sp_url: http://{{ "{{ " }}keystone_sp_host{{ " }}" }}:5000/Shibboleth.sso/SAML2/ECP
+      idp_entity_id: "{{ "{{ " }}keystone_service_publicurl_v3{{ " }}" }}/OS-FEDERATION/saml2/idp"
+      idp_sso_endpoint: "{{ "{{ " }}keystone_service_publicurl_v3{{ " }}" }}/OS-FEDERATION/saml2/sso"
       idp_metadata_path: /etc/keystone/saml2_idp_metadata.xml
       certfile: "/etc/keystone/ssl/idp_signing_cert.pem"
       keyfile: "/etc/keystone/ssl/idp_signing_key.pem"
-      self_signed_cert_subject: "/C=US/ST=Texas/L=San Antonio/O=IT/CN={{ external_lb_vip_address }}"
+      self_signed_cert_subject: "/C=US/ST=Texas/L=San Antonio/O=IT/CN={{ "{{ " }}external_lb_vip_address{{ " }}" }}"
       regen_cert: false
-      {% endraw %}
+
+    keystone_token_provider: "keystone.token.providers.uuid.Provider"
+    keystone_token_driver: "keystone.token.persistence.backends.sql.Token"
 
 You can see at the top of the above snippet that I have defined three top-level
 variables. The first two hold user-defined unique identifiers for the IdP and
 SP clouds. The third variable defines the public IP address or hostname of the
 SP cloud. These are custom variables that I intend to use later. Since this is
 an Ansible configuration file, these variables can be referenced in other
-variables with the {% raw %}`{{ variable_name }}`{% endraw %} syntax.
+variables with the `{{ "{{ " }}variable_name{{ " }}" }}` syntax.
 
 The block of variables that configure the cloud as an IdP is defined inside the
 `keystone_idp` root element. The most important setting in this block is the
@@ -278,7 +279,7 @@ means that you can attach more than one service provider cloud. When using
 multiple SPs, it is required that each SP cloud is configured with a unique
 identifier.
 
-The remaining variables can normally be set identically in all installs. Among
+The remaining variables under `keystone_idp` can normally be set identically in all installs. Among
 these settings there are a few that configure the SSL certificate that is used
 by the SAML2 protocol, which is automatically generated as part of the install.
 Out of all these variables, the `regen_cert` variable deserves a mention. This
@@ -286,6 +287,12 @@ variable can be used to force Ansible to replace an existing certificate with
 a new one, simply by setting the variable to `true`. If this variable is set
 to `false`, then repeated runs of the playbook will leave the same certificate
 installed.
+
+The last two variables configure Keystone to use UUID tokens. At this time,
+this is required in the Kilo branch. The openstack-ansible project configures
+Keystone to use Fernet tokens by default, but there are currently issues with
+this token provider and federation. Once the Fernet token fixes are backported
+these two lines can be omitted.
 
 Are you ready to convert one of your two test clouds to an identity provider?
 Just add the above snippet to `/etc/openstack_deploy/user_variables.yml`, and
@@ -305,7 +312,6 @@ first cloud will be configured as an identity provider. Pretty simple, right?
 The configuration of the service provider cloud is done similarly to that of
 the identity provider. Below you can see the SP configuration block:
 
-    {% raw %}
     keystone_idp_id: my_idp
     keystone_sp_id: my_sp
     keystone_idp_host: ee.ff.gg.hh
@@ -313,11 +319,11 @@ the identity provider. Below you can see the SP configuration block:
     keystone_sp:
       cert_duration_years: 5
       trusted_idp_list:
-        - name: "{{ keystone_idp_id }}"
+        - name: "{{ "{{ " }}keystone_idp_id{{ " }}" }}"
           entity_ids:
-             - 'http://{{ keystone_idp_host }}:5000/v3/OS-FEDERATION/saml2/idp'
-          metadata_uri: 'http://{{ keystone_idp_host }}:5000/v3/OS-FEDERATION/saml2/metadata'
-          metadata_file: 'metadata-keystone-{{ keystone_idp_id }}.xml'
+             - 'http://{{ "{{ " }}keystone_idp_host{{ " }}" }}:5000/v3/OS-FEDERATION/saml2/idp'
+          metadata_uri: 'http://{{ "{{ " }}keystone_idp_host{{ " }}" }}:5000/v3/OS-FEDERATION/saml2/metadata'
+          metadata_file: 'metadata-keystone-{{ "{{ " }}keystone_idp_id{{ " }}" }}.xml'
           metadata_reload: 1800
           federated_identities:
             - domain: Default
@@ -338,7 +344,7 @@ the identity provider. Below you can see the SP configuration block:
                 - name: openstack_project_domain
                   id: openstack_project_domain
               mapping:
-                name: "{{ keystone_idp_id }}-mapping"
+                name: "{{ "{{ " }}keystone_idp_id{{ " }}" }}-mapping"
                 rules:
                   - remote:
                       - type: openstack_user
@@ -349,7 +355,9 @@ the identity provider. Below you can see the SP configuration block:
                             name: Default
                         user:
                           name: federated_user
-    {% endraw %}
+
+    keystone_token_provider: "keystone.token.providers.uuid.Provider"
+    keystone_token_driver: "keystone.token.persistence.backends.sql.Token"
 
 Here the `cert_duration_years` configures the duration of a self-signed SSL
 certificate that will protect the endpoints used by the SAML2 protocol. The
@@ -404,6 +412,9 @@ run the Keystone playbook:
 
     # cd /opt/openstack-ansible/playbooks
     # openstack-ansible os-keystone-install.yml
+
+Finally, the SP configuration also needs UUID tokens to avoid issues with the
+default Fernet tokens.
 
 At this point, the K2K federation between your two clouds should be fully
 configured and functional.
@@ -539,10 +550,9 @@ there were problems with federated tokens when the Keystone service in the SP
 cloud is configured to use Fernet tokens. There is a fix made towards the
 Liberty release, but that fix has not been backported to Kilo yet. Hopefully by
 the time you read this, the fix will be publicly available. But if you see that
-the `federated-login.sh` wrapper script fails to obtain a token, you may want
-to consider switching the Keystone service in both clouds to UUID tokens, which
-you can do by running the Keystone playbook one more time, after adding this
-variable to your `user_variables.yml` file:
+the `federated-login.sh` wrapper script fails to obtain a token, you have
+to switch the Keystone service in both clouds to UUID tokens, which as you saw
+above, you can do by adding these variables to your `user_variables.yml` file:
 
     keystone_token_provider: "keystone.token.providers.uuid.Provider"
     keystone_token_driver: "keystone.token.persistence.backends.sql.Token"
