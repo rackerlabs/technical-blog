@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Install OpenStack from source"
-date: 2015-07-08 23:59
+title: "Run keystone/horizon under nginx"
+date: 2015-10-01 23:59
 comments: true
 author: Phil Hopkins
 published: true
