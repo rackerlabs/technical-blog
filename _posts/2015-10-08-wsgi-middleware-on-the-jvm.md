@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Repose Ninja - WSGI Middleware On The JVM"
-date: 2015-09-04 00:00
+date: 2015-10-08 00:00
 comments: true
 author: Damien Johnson
 bio: Damien is a software developer at Rackspace that is currently working on
@@ -27,16 +27,16 @@ the [Fireside][fireside] project, Jython core contributor, and integral braniac
 in the effort to support the WSGI specification through Servlet technologies.
 
 If you have ever had the pleasure of evaluating [Repose][repose], you may have
-noticed that while it provides an incredibly powerful foundation, it is
+noticed that, while it provides an incredibly powerful foundation, it is
 missing that one all-important feature that you need. While the [Repose][repose]
 team does its best to handle all common and reasonable use-cases, there are an
-infinite number of problems for which [Repose][repose] is a solution, therefore
+infinite number of problems for which [Repose][repose] is a solution. Therefore,
 it is impossible to predict and develop features to solve every problem.
 Luckily, [Repose][repose] is built on a pluggable architecture that any
 developer can leverage to solve the problem of the day.
 
 In this post, I will expand upon the previous post in this series by diving
-deeper into the [Repose][repose] extensibility model, and explaining how
+deeper into the [Repose][repose] extensibility model and explaining how
 [Repose][repose] plans to make that model more developer friendly in the future.
 
 <!-- more -->
@@ -127,12 +127,12 @@ terrific talk by Jim Baker at PyCon](https://youtu.be/hLm3garVQFo).
 
 # Bridging the Gap between WSGI and Servlet Specifications
 This is where things get interesting. The Servlet spec and WSGI spec were born
-from two very different environments, and as a result, expect very different
+from two very different environments and, as a result, expect very different
 interactions. While I won't go into the history for each, I will give brief
 descriptions.
 
 Let's start with the Servlet spec. The Servlet spec defines a Java component
-which dynamically processes web requests. A Servlet, and any associated Filters,
+that dynamically processes web requests. A Servlet, and any associated Filters,
 are run in a Servlet container (e.g., Jetty) which handles much of what is
 defined in the spec. The container will wrap incoming requests in Java objects
 representing the Servlet spec abstractions. These objects are then passed on
@@ -169,7 +169,7 @@ To start, since Repose will be passing Servlet objects, we'll have to convert
 those into the format a WSGI app expects. The naive solution would be to copy
 all of the data out of the Servlet objects into a dict which gets passed to a
 WSGI app. Of course, that can get expensive, and there really isn't a need.
-Instead, we can build a lazy, caching map adapter which will take WSGI CGI-like
+Instead, we can build a lazy, caching map adapter, which will take WSGI CGI-like
 keys and return the corresponding value from a Servlet request or response. To
 get into the weeds, check out the [RequestBridge class](https://github.com/jythontools/fireside/blob/refactor/jext/src/main/java/org/python/tools/fireside/RequestBridge.java) in [Fireside][fireside].
 
@@ -183,9 +183,9 @@ the flow in a WSGI app is a series of composed functions. In Servlet spec
 land, however, we must mutate the response object. We're given some structure
 in the form of the FilterChain doFilter method and the Servlet service method,
 but really, these methods only exist to define an interface. To reconcile these
-two approaches, we must write a bridge which understands both specifications,
+two approaches, we must write a bridge which understands both specifications
 and can translate between the two. The approach that was taken in Fireside
-wraps a WSGI app with a Servlet Filter which will provide a callback to the
+wraps a WSGI app with a Servlet Filter, which will provide a callback to the
 WSGI app, mutate the Servlet objects depending on the result, and then return
 control to the caller of the Filter. To get a more complete picture, and to do
 so more concisely than I could here, take a look at [servlet.py](https://github.com/jythontools/fireside/blob/refactor/fireside/servlet.py)
