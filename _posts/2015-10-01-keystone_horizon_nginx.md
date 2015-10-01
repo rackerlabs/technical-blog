@@ -9,6 +9,7 @@ categories:
     - OpenStack
     - OSAD
     - NGINX
+authorIsRacker: true
 ---
 
 In my previous series of articles about installing [OpenStack from source](https://developer.rackspace.com/blog/install-openstack-from-source/), we installed keystone as a standalone application. This technique has been deprecated in the Kilo release in favor of running the keystone server, as a web server gateway interface (wsgi) service behind the Apache server. This allows for each Apache thread to start its own separate keystone thread. Example configuration files are available in the httpd directory in the cloned keystone repo. This article is a how to setup both keystone and the horizon dashboard to run under Nginx.
