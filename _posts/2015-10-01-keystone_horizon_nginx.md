@@ -14,11 +14,11 @@ categories:
 Run OpenStack Keystone and Horizon using Nginx
 ==============================================
 
-In my previous series of articles about installing [OpenStack from source](https://developer.rackspace.com/blog/install-openstack-from-source/), we installed keystone as a standalone application. This technique has been deprecated in the Kilo release in favor of running the keystone server, as a wsgi service behind the Apache server. This allows for each Apache thread to start its own separate keystone thread. Example configuration files are available in the httpd directory in the cloned keystone repo. This article is a how to setup both keystone and the horizon dashboard to run under Nginx.
+In my previous series of articles about installing [OpenStack from source](https://developer.rackspace.com/blog/install-openstack-from-source/), we installed keystone as a standalone application. This technique has been deprecated in the Kilo release in favor of running the keystone server, as a web server gateway interface (wsgi) service behind the Apache server. This allows for each Apache thread to start its own separate keystone thread. Example configuration files are available in the httpd directory in the cloned keystone repo. This article is a how to setup both keystone and the horizon dashboard to run under Nginx.
 <!-- more -->
 
 
-All work be performed on the controller node that was built in the previous article. This procedure can be easily adapted to almost any other Linux environment running keystone and horizon. 
+All work is to be performed on the controller node that was built in the previous article. This procedure can be easily adapted to almost any other Linux environment running keystone and horizon. 
  
 
 First, stop the running keystone and apache services:
@@ -43,11 +43,11 @@ Since keystone and horizon run behind the uwsgi service, delete the upstart scri
     rm /etc/init/horizon.conf
     rm /etc/init/keystone.conf
     
-We are not running a simple web server so disable the default site that comes with the nginx install:
+We are not running a simple web server, so disable the default site that comes with the nginx install:
     
     rm /etc/nginx/sites-enabled/default
     
-Make a log directory for keystone under nginx and set the proper permissions:
+Make a log directory for keystone under nginx, and set the proper permissions:
     
     mkdir /var/log/nginx/keystone
     chown www-data:www-data /var/log/nginx/keystone/
@@ -56,7 +56,7 @@ and a base directory for the keystone wsgi python script:
 
     mkdir /var/www/keystone
     
-Keystone comes with a python script for interfacing to servers running a wsgi interface. Keystone listens on two tcp ports, one for processing admin level requests and one for requests that don't need admin level permissions. Copy it over into the appropriate directory. One copy is used to handle requests that need the keystone admin role and the other is for non-admin requests.
+Keystone comes with a python script for interfacing to servers running a wsgi interface. Keystone listens on two tcp ports, one for processing admin level requests and one for requests that don't need admin level permissions. Copy it over into the web directory for nginx. One copy is used to handle requests that need the keystone admin role and the other is for non-admin requests.
 
     cp keystone/httpd/keystone.py /var/www/keystone/admin
     cp keystone/httpd/keystone.py /var/www/keystone/main
@@ -65,11 +65,11 @@ Keystone comes with a python script for interfacing to servers running a wsgi in
 
     mkdir /etc/uwsgi
 
-Ubuntu runs the Nginx server in the www-data group. The following will add the keystone users as an additional member of this group. By doing this we allow for proper resource access between the web server and keystone.
+Ubuntu runs the Nginx server in the www-data group. The following command adds the keystone users as an additional member of this group. By doing this, we allow for proper resource access between the web server and keystone.
 
     usermod -G www-data keystone
     
-uwsgi has a broad set of configuration parameters. We are only going to set a minimum number of values to get this configuration running. You need to read the uwsgi documentation to ensure proper security is set up and the best performance values are selected for your environment. We will set uwsgi up to run 10 processes with 2 threads per process. The keystone process will run as the keystone user and the www-data group.  will create the needed uwsgi configuration file for running keystone admin requests:
+uwsgi has a broad set of configuration parameters. We are only going to set a minimum number of values to get this configuration running. You need to read the uwsgi documentation to ensure proper security is set up and the best performance values are selected for your environment. We set uwsgi to run 10 processes with 2 threads per process. The keystone process runs as the keystone user and the www-data group. The following creates the needed uwsgi configuration file for running keystone admin requests:
 
     cat >> /etc/uwsgi/keystone-admin.ini << EOF
     [uwsgi]
@@ -91,7 +91,7 @@ uwsgi has a broad set of configuration parameters. We are only going to set a mi
     
     EOF
     
-The following will create the needed uwsgi configuration file for running keystone non-admin requests:
+Next create the needed uwsgi configuration file for running keystone non-admin requests:
     
     cat >> /etc/uwsgi/keystone-main.ini << EOF
     [uwsgi]
