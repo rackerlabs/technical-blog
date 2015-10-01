@@ -135,7 +135,7 @@ Create the needed uwsgi configuration file for running horizon:
     module = django.core.handlers.wsgi:WSGIHandler() 
     EOF
 
-Create an upstart script to start the uwsgi service, since we have multiple applications running we will use uwsgi's emperor mode:
+Create an upstart script to start the uwsgi service. Since we have multiple applications running we are using uwsgi's emperor mode:
 
     cat >> /etc/init/uwsgi.conf << EOF
     description "uwsgi for nginx keystone admin"
@@ -244,5 +244,5 @@ Let's verify that keystone properly responds to requests:
     | 6  | nova-consoleauth | controller | internal | enabled | up    | 2015-09-30T18:03:52.000000 | -               |
     +----+------------------+------------+----------+---------+-------+----------------------------+-----------------+
 
-If you don't get valid responses from either keystone or the other client agents look at both the nginx log files and the log files for keystone or the failing api service for the appropriate agent. Lastly, verify that horizon responds properly. Open http://<server public IP> in your browser and log in. If the login is successful everything is working.
+If you don't get valid responses from either keystone or the other client agents, look at both the nginx log files and the log files for keystone, or the failing api service for the appropriate agent. Lastly, verify that horizon responds properly. Open http://<server public IP> in your browser and log in. If the login is successful everything is working.
 
