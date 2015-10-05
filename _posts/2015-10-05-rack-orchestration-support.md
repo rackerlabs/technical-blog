@@ -65,10 +65,53 @@ ID					Name								Status	MinDisk	MinRAM
 ...
 
 ```
-(for convenience, we have only shown RHEL images). Similarly, we can use `rack` to get the different flavors and even networks to use.
+(for convenience, we have only shown RHEL images). We see that there are 4 supported RHEL images. If we want to use RHEL 6, we would change the template to:
 
-To get a list of all deployed stacks:
 ```
+heat_template_version: 2014-10-16
+resources:
+  test_server:
+    type: "OS::Nova::Server"
+    properties:
+      name: test-server
+      flavor: 2 GB General Purpose v1
+      image: Red Hat Enterprise Linux 6 (PVHVM)
+      networks:
+      - {uuid: 11111111-1111-1111-1111-111111111111}
+
+```
+
+Similarly, we can use `rack` to get the different flavors:
+
+```
+$ rack servers flavor list
+ID			Name			RAM	Disk	Swap	VCPUs	RxTxFactor
+performance1-1		1 GB Performance	1024	20	0	1	200
+performance1-2		2 GB Performance	2048	40	0	2	400
+performance1-4		4 GB Performance	4096	40	0	4	800
+performance1-8		8 GB Performance	8192	40	0	8	1600
+performance2-120	120 GB Performance	122880	40	0	32	10000
+performance2-15		15 GB Performance	15360	40	0	4	1250
+performance2-30		30 GB Performance	30720	40	0	8	2500
+performance2-60		60 GB Performance	61440	40	0	16	5000
+performance2-90		90 GB Performance	92160	40	0	24	7500
+...
+```
+
+and even networks:
+
+```
+$ rack networks network list
+ID					Name		Up	Status	Shared	TenantID
+2a2dfe95-9ce6-4b53-b065-b4c5658275b6	network2	true	ACTIVE	false	897686
+51dff3d7-7717-452f-ae2a-7f7411480ce8	kitchen_sink	true	ACTIVE	false	897686
+a46af7f0-43cd-4f5e-87df-871978218029	network1	true	ACTIVE	false	897686
+```
+
+Now, to get a list of all deployed stacks:
+
+```
+$ rack orchestration stack list
 ID					Name							Status		CreationTime
 f385a0f3-0458-4f63-b2b9-0983b36051f4	RackTest						CREATE_COMPLETE	2015-10-04 01:45:50 +0000 UTC
 ```
@@ -113,7 +156,39 @@ Name		PhysicalID				Type			Status		UpdatedTime
 test_server	e4ff779c-076a-4ab3-b1b5-d8c3fba133e9	OS::Nova::Server	CREATE_COMPLETE	2015-10-04 01:45:50 +0000 UTC
 ```
 
-In the above command, we used the `resource` sub-service. Once our stack is no longer required, it can be deleted:
+In the above command, we used the `resource` sub-service. If we forgot what template we used, we can use:
+
+```
+$ rack orchestration template get --stack-name RackTest
+{
+  "heat_template_version": "2014-10-16",
+  "parameters": {
+    "flavor": {
+      "default": 4353,
+      "description": "Flavor for the server to be created",
+      "hidden": true,
+      "type": "string"
+    }
+  },
+  "resources": {
+    "test_server": {
+      "properties": {
+        "flavor": "2 GB General Purpose v1",
+        "image": "Debian 7 (Wheezy) (PVHVM)",
+        "name": "test-server",
+        "networks": [
+          {
+            "uuid": "11111111-1111-1111-1111-111111111111"
+          }
+        ]
+      },
+      "type": "OS::Nova::Server"
+    }
+  }
+}
+```
+
+The output is the template used by the stack in JSON format. Once our stack is no longer required, it can be deleted:
 
 ```
 $ rack orchestration stack delete --name RackTest
