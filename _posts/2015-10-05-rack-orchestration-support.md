@@ -20,9 +20,9 @@ We're excited to announce that Cloud Orchestration is now accessible via [`rack`
 
 <!-- more -->
 
-Earlier this quarter, we had [announced](https://developer.rackspace.com/blog/introducing-rack-global-cli/) `rack`, a new global command-line interface purpose-built for interacting with the Rackspace cloud. We're pleased to announce that you can now access our [Cloud Orchestration](http://www.rackspace.com/en-us/cloud/orchestration) service via `rack`!
+Earlier this quarter we [announced](https://developer.rackspace.com/blog/introducing-rack-global-cli/) `rack`, a new, global, command-line interface purpose-built for interacting with the Rackspace cloud. We're pleased to announce that you can now access our [Cloud Orchestration](http://www.rackspace.com/en-us/cloud/orchestration) service via `rack`!
 
-[Rackspace Cloud Orchestration]((http://docs.rackspace.com/orchestration/api/v1/orchestration-templates-devguide/content/overview.html)) is a RESTful API Service that can be used to create and manage cloud resources (for example: servers + software installation, databases, load balancers, and so forth) by declaring what you want deployed using a simple template language. Therefore, a template is used to describe resources, which, when deployed, are collectively termed a _stack_. e.g. a template can be used to deploy a [LAMP](https://github.com/rackspace-orchestration-templates/lamp/blob/master/lamp.yaml) stack, whose resources include a linux server with Apache, PHP and MySQL database.
+[Rackspace Cloud Orchestration]((http://docs.rackspace.com/orchestration/api/v1/orchestration-templates-devguide/content/overview.html)) is a RESTful API Service that can be used to create and manage cloud resources (for example: servers + software installation, databases, load balancers, and so forth) by declaring what you want deployed using a simple template language. Therefore, a template is used to describe resources, which, when deployed, are collectively termed a _stack_. For example, a template can be used to deploy a [LAMP](https://github.com/rackspace-orchestration-templates/lamp/blob/master/lamp.yaml) stack, whose resources include a Linux server with Apache, PHP and a MySQL database.
 
 Once we have the latest version of `rack` set up, creating a stack is as easy as:
 
@@ -50,22 +50,19 @@ resources:
       networks:
       - {uuid: 11111111-1111-1111-1111-111111111111}
 ```
-As we can see, the template has 2 sections: the template version and resources. We see that the type of the resource is a cloud server named `test-server` using the `2 GB General Purpose v1` flavor, `Debian 7 (Wheezy) (PVHVM)` image and attached to a network with uuid `11111111-1111-1111-1111-111111111111`. The output of the command shows details about the created stack: its `id` and a url to access the stack.
+As we can see, the template has 2 sections: the template version and resources. We see that the type of the resource is a cloud server named `test-server` using the `2 GB General Purpose v1` flavor, `Debian 7 (Wheezy) (PVHVM)` image and attached to a network with UUID `11111111-1111-1111-1111-111111111111` (which is the [Rackspace ServiceNet network](http://www.rackspace.com/knowledge_center/frequently-asked-question/what-is-servicenet)). The output of the command shows details about the created stack: its `id` and a URL to access the stack.
 
-The cool thing about using `rack` with cloud orchestration is that we can easily access details of all the options that we may want to use in your template. e.g. we might be more interested in deploying a server using RHEL; to get a list of available images we can use `rack`:
+The cool thing about using `rack` with cloud orchestration is that we can easily access details of all the options that we may want to use in your template. For example, we might be more interested in deploying a server using RHEL; to get a list of available images, we can use `rack`:
 
 ```
-$ rack servers image list
-
-ID					Name								Status	MinDisk	MinRAM
+$ rack servers image list | grep "Red Hat"
 5176fde9-e9d6-4611-9069-1eecd55df440	Red Hat Enterprise Linux 6 (PVHVM)				ACTIVE	20	512
 92f8a8b8-6019-4c27-949b-cf9910b84ffb	Red Hat Enterprise Linux 7 (PVHVM)				ACTIVE	20	512
 783f71f4-d2d8-4d38-b2e1-8c916de79a38	Red Hat Enterprise Linux 6 (PV)					ACTIVE	20	512
 05dd965d-84ce-451b-9ca1-83a134e523c3	Red Hat Enterprise Linux 5 (PV)					ACTIVE	20	512
-...
-
 ```
-(for convenience, we have only shown RHEL images). We see that there are 4 supported RHEL images. If we want to use RHEL 6, we would change the template to:
+
+We see that there are 4 supported RHEL images. If we want to use RHEL 6, we would change the template to:
 
 ```
 heat_template_version: 2014-10-16
@@ -147,7 +144,7 @@ Tags			[]
 UpdatedTime		None
 ```
 
-If we're curios about the details of the resources deployed, we can use `resource list`:
+If we're curious about the details of the resources deployed, we can use `resource list`:
 
 ```
 $ rack orchestration resource list --stack-name RackTest
