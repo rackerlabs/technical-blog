@@ -31,7 +31,7 @@ $ rack orchestration stack create --name RackTest --template-file my_nova.yaml
 
 ID	f385a0f3-0458-4f63-b2b9-0983b36051f4
 Links	[{
-	  "Href": "https://iad.orchestration.api.rackspacecloud.com/v1/897686/stacks/RackTest/f385a0f3-0458-4f63-b2b9-0983b36051f4",
+	  "Href": "https://iad.orchestration.api.rackspacecloud.com/v1/TENANT_ID/stacks/RackTest/f385a0f3-0458-4f63-b2b9-0983b36051f4",
 	  "Rel": "self"
 	}]
 ```
@@ -100,9 +100,9 @@ and even networks:
 ```
 $ rack networks network list
 ID					Name		Up	Status	Shared	TenantID
-2a2dfe95-9ce6-4b53-b065-b4c5658275b6	network2	true	ACTIVE	false	897686
-51dff3d7-7717-452f-ae2a-7f7411480ce8	kitchen_sink	true	ACTIVE	false	897686
-a46af7f0-43cd-4f5e-87df-871978218029	network1	true	ACTIVE	false	897686
+2a2dfe95-9ce6-4b53-b065-b4c5658275b6	network2	true	ACTIVE	false	TENANT_ID
+51dff3d7-7717-452f-ae2a-7f7411480ce8	kitchen_sink	true	ACTIVE	false	TENANT_ID
+a46af7f0-43cd-4f5e-87df-871978218029	network1	true	ACTIVE	false	TENANT_ID
 ```
 
 Now, to get a list of all deployed stacks:
@@ -124,13 +124,13 @@ Description		No description
 DisableRollback		true
 ID			f385a0f3-0458-4f63-b2b9-0983b36051f4
 Links			[{
-			  "Href": "https://iad.orchestration.api.rackspacecloud.com/v1/897686/stacks/RackTest/f385a0f3-0458-4f63-b2b9-0983b36051f4",
+			  "Href": "https://iad.orchestration.api.rackspacecloud.com/v1/TENANT_ID/stacks/RackTest/f385a0f3-0458-4f63-b2b9-0983b36051f4",
 			  "Rel": "self"
 			}]
 NotificiationTopics	<nil>
 Outputs			[]
 Parameters		{
-			  "OS::project_id": "897686",
+			  "OS::project_id": "TENANT_ID",
 			  "OS::stack_id": "f385a0f3-0458-4f63-b2b9-0983b36051f4",
 			  "OS::stack_name": "RackTest",
 			  "flavor": "******"
