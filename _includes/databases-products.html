@@ -25,6 +25,12 @@
       {% include databases-redis.html %}
   </section>
 
+  <!-- Cassandra -->
+  {% if selected_tab contains "Cassandra" %}{% assign class="database-product active" %}{% else %}{% assign class="database-product" %}{% endif %}
+  <section role="tabpanel" class="{{class}}" id="Cassandra">
+      {% include databases-cassandra.html %}
+  </section>
+
   <!-- hadoop -->
   {% if selected_tab contains "Hadoop" %}{% assign class="database-product active" %}{% else %}{% assign class="database-product" %}{% endif %}
   <section role="tabpanel" class="{{class}}" id="Hadoop">
