@@ -29,11 +29,9 @@ Once we have the latest version of `rack` set up, creating a stack is as easy as
 ```
 $ rack orchestration stack create --name RackTest --template-file my_nova.yaml
 
-ID	f385a0f3-0458-4f63-b2b9-0983b36051f4
-Links	[{
-	  "Href": "https://iad.orchestration.api.rackspacecloud.com/v1/TENANT_ID/stacks/RackTest/f385a0f3-0458-4f63-b2b9-0983b36051f4",
-	  "Rel": "self"
-	}]
+ID		deb6e034-2808-4db6-9807-fa00e9709925
+Links0:Href	https://iad.orchestration.api.rackspacecloud.com/v1/TENANT_ID/stacks/RackTest/deb6e034-2808-4db6-9807-fa00e9709925
+Links0:Rel	self
 ```
 
 Here, we are instructing the cloud orchestration service to create a stack with name `RackTest` using the template file `my_nova.yaml`. The contents of `my_nova.yaml` look like:
@@ -118,30 +116,23 @@ Notice that the stack creation process is finished. To get more information on t
 ```
 $ rack orchestration stack get --name RackTest
 
-Capabilities		[]
-CreationTime		2015-10-04 01:45:50 +0000 UTC
-Description		No description
-DisableRollback		true
-ID			f385a0f3-0458-4f63-b2b9-0983b36051f4
-Links			[{
-			  "Href": "https://iad.orchestration.api.rackspacecloud.com/v1/TENANT_ID/stacks/RackTest/f385a0f3-0458-4f63-b2b9-0983b36051f4",
-			  "Rel": "self"
-			}]
-NotificiationTopics	<nil>
-Outputs			[]
-Parameters		{
-			  "OS::project_id": "TENANT_ID",
-			  "OS::stack_id": "f385a0f3-0458-4f63-b2b9-0983b36051f4",
-			  "OS::stack_name": "RackTest",
-			  "flavor": "******"
-			}
-Name			RackTest
-Status			CREATE_COMPLETE
-StatusReason		Stack CREATE completed successfully
-TemplateDescription	No description
-Timeout			None
-Tags			[]
-UpdatedTime		None
+CreationTime			2015-10-16 17:33:58 +0000 UTC
+Description			No description
+DisableRollback			true
+ID				541cfd64-5272-4da6-afc0-df915e81efc1
+Name				RackTest
+Status				CREATE_IN_PROGRESS
+StatusReason			Stack CREATE started
+Tags				[]
+TemplateDescription		No description
+Timeout				0
+UpdatedTime
+Parameters:OS::project_id	TENANT_ID
+Parameters:flavor		******
+Parameters:OS::stack_id		541cfd64-5272-4da6-afc0-df915e81efc1
+Parameters:OS::stack_name	RackTest
+Links0:Href			https://iad.orchestration.api.rackspacecloud.com/v1/TENANT_ID/stacks/RackTest/541cfd64-5272-4da6-afc0-df915e81efc1
+Links0:Rel			self
 ```
 
 If we're curious about the details of the resources deployed, we can use `resource list`:
