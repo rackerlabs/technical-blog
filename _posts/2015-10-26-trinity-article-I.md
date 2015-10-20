@@ -36,7 +36,7 @@ In this first article, we will tackle some fundamental building blocks that will
 
 ---
 
-## I - Design Principles
+## II - Design Principles
 
 The following fundamental design principles will be followed during the course of this adventure:
 
