@@ -16,7 +16,7 @@ authorIsRacker: true
 
 ## I - Introduction
 
-This is the first of a multi-part series that demonstrates one solution by which a developer can make the transition of code from laptop to production as pain-free as possible. The fictional deployment scenario depicted in this post is one method that can significantly reduce operational overhead on the developer. This series will make use of technologies such as Git, Docker, Elastic Beanstalk, and other standard tools. 
+This is the first of a multi-part series that demonstrates a pain-free solution a developer could use to transition code from laptop to production. The fictional deployment scenario depicted in this post is one method that can significantly reduce operational overhead on the developer. This series will make use of technologies such as Git, Docker, Elastic Beanstalk, and other standard tools. 
 
 <!-- more -->
 
@@ -28,9 +28,9 @@ In this first article, we will tackle some fundamental building blocks that will
 4. Deploying a feature release to local container
 5. Transitioning feature release to test Elastic Beanstalk environments
 
-**Caveat**: The current version of this project imposes a deliberately simplified dummy application, release workflow (i.e. no automated tests) and environment layout (just local dev and test) in order to illustrate the key concepts behind running Git, Docker, and Elastic Beanstalk as an integrated unit. Later articles in this series will tackle a more realistic use-case comprising of an application with multiple components & incorporation into a CICD workflow.
+**Caveat**: The current version of this project imposes a deliberately simplified dummy application, release workflow (i.e. no automated tests) and environment layout (just local dev and test) in order to illustrate the key concepts behind running Git, Docker, and Elastic Beanstalk as an integrated unit. Later articles in this series will tackle a realistic use-case that contains an application with multiple components and incorporation into a CICD workflow.
 
-**Disclaimer**: The demonstration code in the corresponding [repository] (https://github.com/djrut/trinity) is for illustrative purposes only, and may not be sufficiently robust for production use. Users should carefully inspect sample code before running in a production environment. Use at your own risk.
+**Disclaimer**: The demonstration code in the corresponding [repository] (https://github.com/djrut/trinity) is for illustrative purposes only and may not be sufficiently robust for production use. Users should carefully inspect sample code before running in a production environment. Use at your own risk.
 
 **Disclosure**: The idea of a Makefile mechanism to automate container preparation, build, push etc. was inspired by [this](http://victorlin.me/posts/2014/11/26/running-docker-with-aws-elastic-beanstalk) excellent article by Victor Lin.
 
@@ -41,15 +41,15 @@ In this first article, we will tackle some fundamental building blocks that will
 The following fundamental design principles will be followed during the course of this adventure:
 
 1. **Simplicity** - adhere to the principles of [KISS] (https://en.wikipedia.org/wiki/KISS_principle) and [Occam's Razor] (https://en.wikipedia.org/wiki/Occam's_razor)
-2. **Agility** - switching between environments and deploying application releases should at most a single _simple_ shell command
-3. **Immutability** -  application container images will be considered as immutable. This will eliminate runtime dependency issues when deploying applications across environments. The local development runtime environment should thus be very close to production. 
-4. **Automation** - Nirvana will be fully automated deployment of application releases triggered by Git workflow events
+2. **Agility** - switching between environments and deploying application releases should use only a single _simple_ shell command
+3. **Immutability** -  consider container images as immutable. This eliminates dependency issues when deploying applications across environments. The local development runtime environment should thus be very close to production. 
+4. **Automation** - Nirvana is a fully automated deployment of application releases triggered by Git workflow events
 
-**NOTE:** Strictly speaking the kernel and container supporting services _could_ differ between hosts however the impact on most applications would be minimal given that most dependencies exist within the runtime environment.
+**NOTE:** Strictly speaking the kernel and container supporting services _could_ differ between hosts; however, the impact on most applications would be minimal given that most dependencies exist within the runtime environment.
 
 ## III Prerequisites
 
-This series of articles and corresponding demonstration code has some dependencies on local environment and accounts with Docker, Github and AWS. You will need the following:
+This series of articles, and the corresponding demonstration code, has some dependencies on local environment and accounts with Docker, Github and AWS. You will need the following:
 
 1. Ruby and Python interpreters
 2. Unix "Make" utility
@@ -63,7 +63,7 @@ This series of articles and corresponding demonstration code has some dependenci
 
 ## IV - Demonstration
 
-Rather than launch right into the details of how to set this up in your own environment, I decided to move that stuff to Appendices that follow and dive straight into the demonstration. In order to replicate the demonstration, the reader will need to have successfully installed & configured the dependencies as per Appendix A, and setup a local environment as per Appendix B.
+Rather than launch right into the details of how to set this up in your own environment, I decided to move that stuff to the Appendices at the end of this article and to dive straight into the demonstration. In order to replicate the demonstration, you need to first successfully install & configure the dependencies as described in Appendix A, and setup a local environment as per Appendix B.
 
 ### Setting the scene
 
@@ -98,7 +98,7 @@ You decide to take a look in your browser, using the "eb open" command:
 ### New "feature" request
 ---
 
-It seems that some extra-terrestrial users (close acquaintances of HAL, I am led to believe) took offense at the rather limited scope of the greeting and made complaints to customer service team. An issue was raised to this effect and you were assigned.
+It seems that some extra-terrestrial users (close acquaintances of HAL, I am led to believe) took offense at the rather limited scope of the greeting and made complaints to the customer service team. An issue was raised to this effect and assigned to you.
 
 ### Start work in feature branch
 ---
@@ -121,7 +121,7 @@ You make the necessary changes to app.rb and commit:
 ### Create new application container
 ---
 
-Since this is a Dockerized application, you can create a new container image and test this image locally before pushing to remote staging environment. A simple "make" is all that is required to build the container and push to Docker hub:
+Since this is a Dockerized application, you can create a new container image and test this image locally before pushing to remote staging environment. You just need a simple "make" command to build the container and push to Docker hub:
 
 ~~~bash
 ~/trinity/issue-001> make
@@ -158,7 +158,7 @@ Step 5 : RUN bundle install --deployment
 ### Test new application container locally
 ---
 
-Now that we have a new Docker image containing the recent commit, let's first perform a quick test on our local Docker host using the eb-cli tool "eb local run" command to spin-up the new container:
+Now that you have a new Docker image containing the recent commit, you decide to first perform a quick test on your local Docker host using the eb-cli tool "eb local run" command to spin-up the new container:
 
 ~~~bash
 ~/trinity/issue-001> eb local run
@@ -211,13 +211,13 @@ This time the "eb open" command can be run to fire up a browser window pointing 
  
 ## V - Conclusion
 
-During this demonstration, we examined a simplified use-case that enabled a simple and agile deployment mechanism with immutable application containers. The developer was able to use three simple shell commands "git commit", "make" and "eb deploy" to build a new immutable container & push to the appropriate environment. This approach dramatically reduced the likelihood of broken dependencies as application releases are progressed from developer laptop onto to staging and production.
+During this demonstration, we examined a simplified use-case that enabled an easy-to-use and agile deployment mechanism with immutable application containers. The developer used three simple shell commands ("git commit", "make", and "eb deploy") to build a new immutable container and to push to the appropriate environment. This approach dramatically reduced the likelihood of broken dependencies as application releases are progressed from developer laptop onto to staging and production.
 
-In **Part II** of this series we will take a peek under the covers to examine how we integrated Docker, Elastic Beanstalk and Git to enable the simple example above.
+In **Part II** of this series this series, we take a peek under the covers to examine how we integrated Docker, Elastic Beanstalk and Git to enable the simple example above.
 
-In **Part III**, we will make this look closer to a real production scenario by adding some additional components (and external dependencies) to the application and introduce unit tests.
+In **Part III**, we bring this closer to a real production scenario by adding some additional components (and external dependencies) to the application and introduce unit tests.
 
-In **Part IV**, we will show how this application can integrate into a fully automated CI/CD workflow.
+In **Part IV**, we show how this application can integrate into a fully automated CI/CD workflow.
 
 Thank-you for your time and attention!
 
@@ -247,11 +247,11 @@ NOTE: _I had issues with connectivity to the host starting after initial install
 
 ### Setup Git
 
-Most modern Unix variants will have the git package already installed. Follow the instructions [here] (https://help.github.com/articles/set-up-git/) to setup Git. There are some useful instructions [here] (https://help.github.com/articles/caching-your-github-password-in-git/) to setup credential caching to avoid having to frequently re-type your credentials. 
+Most modern Unix variants have the Git package already installed. Follow the instructions [here] (https://help.github.com/articles/set-up-git/) to setup Git. There are some useful instructions [here] (https://help.github.com/articles/caching-your-github-password-in-git/) to setup credential caching to avoid having to frequently re-type your credentials. 
 
 ### Configure AWS credentials
 
-My preferred approach is to populate the .aws/credentials file as follows:
+I prefer to populate the .aws/credentials file as follows:
 
 ~~~bash
 [default]
@@ -259,7 +259,7 @@ aws_access_key_id = [ACCESS KEY]
 aws_secret_access_key =  [SECRET]
 ~~~
 
-You will need an IAM role assigned to this user or containing group that has adequate permissions to IAM, EB, EC2, S3 etc... Since this is my playground account I used a wide open admin policy:
+You need either an IAM role assigned to this user or a containing group that assigned to this user or containing group that has adequate permissions to IAM, EB, EC2, S3 etc... Since this is my playground account, I used a wide open admin policy:
 
 ~~~
 {
@@ -278,10 +278,10 @@ Caveat: This IAM policy is **not** recommended for production use, which should 
 
 ## Appendix B - Environment Setup
 
-There are number steps involved here to get the environment setup, but remember that these are _one time_ actions that you will not need to repeat again unless you need to recreate the environment again from scratch.
+There are number steps involved here to get the environment setup, but remember that these are _one time_ actions that you will not need to repeat again unless you need to recreate the environment from scratch.
  
 ### Step 1 - Choose a name for your application
-It will be necessary to create a unique name for your forked version of the trinity application. This is required since Elastic Beanstalk DNS CNAME records must be globally unique. We shall refer to this name as *APP_NAME* henceforth. 
+You need to create a unique name for your forked version of the trinity application, because Elastic Beanstalk DNS CNAME records must be globally unique. We shall refer to this name as *APP_NAME* henceforth. 
 
 ### Step 2 - Fork & clone Git repository
 The first step is to fork and clone the demo Git repository. Full details on how do to this can be found [here](https://help.github.com/articles/fork-a-repo/) however the basic steps are:
@@ -314,7 +314,7 @@ docker login
 
 ### Step 3 - Initialize Elastic Beanstalk environments 
 
-NOTE: This step requires that you either have a default VPC configured with public/private NAT configuration _or_ you explicitly specify the VPC and subnet IDs during Elastic Beanstalk environment configuration step. I will be using the latter mechanism to supply a previously saved configuration to the "eb create" command.
+NOTE: This step requires either that you have a default VPC configured with public/private NAT configuration _or_ that you explicitly specify the VPC and subnet IDs during Elastic Beanstalk environment configuration step. I use the latter mechanism to supply a previously saved configuration to the "eb create" command.
 
 #### a) Initialize the Elastic Beanstalk Application
 
@@ -322,7 +322,7 @@ NOTE: This step requires that you either have a default VPC configured with publ
 eb init [APP_NAME] --region us-west-2 --platform "Docker 1.7.1"
 ~~~
 
-Upon success you should a message like "Application [APP_NAME] has been created."
+If this succeeds, you should see a message like "Application [APP_NAME] has been created."
 
 #### b) Create "production" Elastic Beanstalk environment
 
@@ -335,7 +335,7 @@ Your branch is up-to-date with 'origin/master'.
 nothing to commit, working directory clean 
 ~~~
 
-Run the "eb create" substituting *APP_NAME* for your application name:
+Run the "eb create", substituting *APP_NAME* for your application name:
 
 ~~~bash
 eb create [APP_NAME]-prod --branch_default
@@ -368,7 +368,7 @@ INFO: Added instance [i-7b176ca0] to your environment.
 INFO: Waiting for EC2 instances to launch. This may take a few minutes.
 ~~~
 
-At this stage you can safely CTRL-C and wait a few minutes for the environment to be spun up. This takes longer for the first deployment since the full Docker image needs to be downloaded. Subsequent deployments of newer versions of the application will be faster since only the modified layers of the image need to be downloaded.
+At this stage, you can safely CTRL-C and wait a few minutes for the environment to be spun up. This takes longer for the first deployment, since the full Docker image needs to be downloaded. Subsequent deployments of newer versions of the application be faster, since only the modified layers of the image need to be downloaded.
 
 You can check periodically with "eb status" and wait for "Health: Green" to indicate that all is well:
 
@@ -387,7 +387,7 @@ Environment details for: trinity-prod
   Health: Green
 ~~~ 
 
-Finally, there is a handy command "eb open" that will open the current environment in your browser for a quick eye test:
+Finally, there is a handy command "eb open" that opens the current environment in your browser for a quick eye test:
 
 ~~~bash
 eb open
