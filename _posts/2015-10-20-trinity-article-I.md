@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Docker, Elastic Beanstalk and Git: a useful trinity for agile development?"
-date: 2015-10-26 05:00
+date: 2015-10-20 05:00
 comments: true
 author: Duncan Rutland
 bio: Duncan Rutland is a Sr. Solution Architect at Rackspace within the Fanatical Support for AWS team.
@@ -16,7 +16,7 @@ authorIsRacker: true
 
 ## I - Introduction
 
-This is the first of a multi-part series that demonstrates a pain-free solution a developer could use to transition code from laptop to production. The fictional deployment scenario depicted in this post is one method that can significantly reduce operational overhead on the developer. This series will make use of technologies such as Git, Docker, Elastic Beanstalk, and other standard tools. 
+This is the first of a multi-part series that demonstrates a pain-free solution a developer could use to transition code from laptop to production. The fictional deployment scenario depicted in this post is one method that can significantly reduce operational overhead on the developer. This series will make use of technologies such as Git, Docker, Elastic Beanstalk, and other standard tools.
 
 <!-- more -->
 
@@ -42,7 +42,7 @@ The following fundamental design principles will be followed during the course o
 
 1. **Simplicity** - adhere to the principles of [KISS] (https://en.wikipedia.org/wiki/KISS_principle) and [Occam's Razor] (https://en.wikipedia.org/wiki/Occam's_razor)
 2. **Agility** - switching between environments and deploying application releases should use only a single _simple_ shell command
-3. **Immutability** -  consider container images as immutable. This eliminates dependency issues when deploying applications across environments. The local development runtime environment should thus be very close to production. 
+3. **Immutability** -  consider container images as immutable. This eliminates dependency issues when deploying applications across environments. The local development runtime environment should thus be very close to production.
 4. **Automation** - Nirvana is a fully automated deployment of application releases triggered by Git workflow events
 
 **NOTE:** Strictly speaking the kernel and container supporting services _could_ differ between hosts; however, the impact on most applications would be minimal given that most dependencies exist within the runtime environment.
@@ -83,9 +83,9 @@ Environment details for: trinity-prod
   Updated: 2015-09-28 01:14:36.798000+00:00
   Status: Ready
   Health: Green
-  
+
 ~/trinity/master>
-~~~  
+~~~
 
 You decide to take a look in your browser, using the "eb open" command:
 
@@ -108,7 +108,7 @@ Eager to put this issue to bed, you create a feature branch and start work immed
 ~~~bash
 ~/trinity/master> git checkout -b issue-001 master
 Switched to a new branch 'issue-001'
-~~~ 
+~~~
 
 You make the necessary changes to app.rb and commit:
 
@@ -147,10 +147,10 @@ Step 4 : ADD trinity.tar /usr/src/app
  ---> 00915d05d730
 Removing intermediate container f6f88d91ee75
 Step 5 : RUN bundle install --deployment
- ---> Running in 5faed9595c09 
+ ---> Running in 5faed9595c09
 [...SNIP...]
 
-~/trinity/issue-001> 
+~/trinity/issue-001>
 ~~~
 
 
@@ -207,8 +207,8 @@ This time the "eb open" command can be run to fire up a browser window pointing 
 
 ![Test](https://s3-us-west-2.amazonaws.com/dirigible-images/trinity-test.png)
 
-**NOTE:** For longer running branches (such as those that wrap entire versions/milestones), this staging environment is persistent and only requires an "eb deploy" to push newer versions, after committing changes and running "make". 
- 
+**NOTE:** For longer running branches (such as those that wrap entire versions/milestones), this staging environment is persistent and only requires an "eb deploy" to push newer versions, after committing changes and running "make".
+
 ## V - Conclusion
 
 During this demonstration, we examined a simplified use-case that enabled an easy-to-use and agile deployment mechanism with immutable application containers. The developer used three simple shell commands ("git commit", "make", and "eb deploy") to build a new immutable container and to push to the appropriate environment. This approach dramatically reduced the likelihood of broken dependencies as application releases are progressed from developer laptop onto to staging and production.
@@ -222,11 +222,11 @@ In **Part IV**, we show how this application can integrate into a fully automate
 Thank-you for your time and attention!
 
 ---
- 
+
 ## Appendix A - Dependencies
 
 The following section outlines the steps needed to setup a local environment on Max OS X.
- 
+
 ### Install Homebrew
 ~~~bash
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -247,7 +247,7 @@ NOTE: _I had issues with connectivity to the host starting after initial install
 
 ### Setup Git
 
-Most modern Unix variants have the Git package already installed. Follow the instructions [here] (https://help.github.com/articles/set-up-git/) to setup Git. There are some useful instructions [here] (https://help.github.com/articles/caching-your-github-password-in-git/) to setup credential caching to avoid having to frequently re-type your credentials. 
+Most modern Unix variants have the Git package already installed. Follow the instructions [here] (https://help.github.com/articles/set-up-git/) to setup Git. There are some useful instructions [here] (https://help.github.com/articles/caching-your-github-password-in-git/) to setup credential caching to avoid having to frequently re-type your credentials.
 
 ### Configure AWS credentials
 
@@ -279,14 +279,14 @@ Caveat: This IAM policy is **not** recommended for production use, which should 
 ## Appendix B - Environment Setup
 
 There are number steps involved here to get the environment setup, but remember that these are _one time_ actions that you will not need to repeat again unless you need to recreate the environment from scratch.
- 
+
 ### Step 1 - Choose a name for your application
-You need to create a unique name for your forked version of the trinity application, because Elastic Beanstalk DNS CNAME records must be globally unique. We shall refer to this name as *APP_NAME* henceforth. 
+You need to create a unique name for your forked version of the trinity application, because Elastic Beanstalk DNS CNAME records must be globally unique. We shall refer to this name as *APP_NAME* henceforth.
 
 ### Step 2 - Fork & clone Git repository
 The first step is to fork and clone the demo Git repository. Full details on how do to this can be found [here](https://help.github.com/articles/fork-a-repo/) however the basic steps are:
 
-1. On GitHub, navigate to the [djrut/trinity](https://github.com/djrut/trinity) repository 
+1. On GitHub, navigate to the [djrut/trinity](https://github.com/djrut/trinity) repository
 2. In the top-right corner of the page, click **Fork**. You now have a fork of the demo repository in your Github account.
 3. Create local clone, substituting your Github USERNAME
 
@@ -294,12 +294,12 @@ The first step is to fork and clone the demo Git repository. Full details on how
 git clone https://github.com/[USER_NAME]/trinity.git
 ~~~
  4. Create upstream repository to allow sync with original project
- 
+
 ~~~bash
 git remote add upstream https://github.com/djrut/trinity.git
 ~~~
 
-### Step 2 - Docker Hub setup 
+### Step 2 - Docker Hub setup
 
 
 1. Create a Docker Hub account and create a repository for *APP_NAME*
@@ -312,7 +312,7 @@ git remote add upstream https://github.com/djrut/trinity.git
 docker login
 ~~~
 
-### Step 3 - Initialize Elastic Beanstalk environments 
+### Step 3 - Initialize Elastic Beanstalk environments
 
 NOTE: This step requires either that you have a default VPC configured with public/private NAT configuration _or_ that you explicitly specify the VPC and subnet IDs during Elastic Beanstalk environment configuration step. I use the latter mechanism to supply a previously saved configuration to the "eb create" command.
 
@@ -332,7 +332,7 @@ Ensure that you are currently in the up-to-date "master" branch of the applicati
 prompt> git status
 On branch master
 Your branch is up-to-date with 'origin/master'.
-nothing to commit, working directory clean 
+nothing to commit, working directory clean
 ~~~
 
 Run the "eb create", substituting *APP_NAME* for your application name:
@@ -385,7 +385,7 @@ Environment details for: trinity-prod
   Updated: 2015-09-27 19:32:43.591000+00:00
   Status: Ready
   Health: Green
-~~~ 
+~~~
 
 Finally, there is a handy command "eb open" that opens the current environment in your browser for a quick eye test:
 
