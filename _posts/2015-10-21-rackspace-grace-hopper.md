@@ -25,7 +25,7 @@ For me, a highlight from the conference was the addition of the open source trac
 
 Speaking of open source, Egle Sigler and Dana Bauer led a workshop on Open Source Day teaching us how to use OpenStack resources to launch an entire application. The [materials are all available on GitHub](https://github.com/danabauer/app-on-openstack) and Egle said it was the highlight of the conference for her.
 
-I asked Rackers for their favorite memory of the conference. I personally love this [photo in the car of a Racker Tools team driving from San Antonio to Houston](https://twitter.com/sarasomewhere/status/653984386128330752).
+I asked more Rackers for their favorite memory of the conference. I personally love this [photo in the car of a Racker Tools team driving from San Antonio to Houston](https://twitter.com/sarasomewhere/status/653984386128330752).
 
 ![Racker Road Trip to Grace Hopper]({% asset_path 2015-10-21-rackspace-grace-hopper/ghc2015roadtrip.jpg %})
 
