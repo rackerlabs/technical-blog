@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Rackspace Moments from Grace Hopper 2015"
-date: 2015-10-21 14:00
+date: 2015-10-22 00:00
 comments: true
 author: Anne Gentle
 bio: Anne Gentle is a Principal Engineer at Rackspace where she serves on the OpenStack Technical Committee and advocates for cloud users.
@@ -23,7 +23,7 @@ I’ve been to the Grace Hopper conference three times now. In Minnesota, there 
 
 For me, a highlight from the conference was the addition of the open source track. I had one happy afternoon where I sat in the same room and listened to all the open source talks I could. I also gave my talk: [Collaborating on GitHub for Open Source Documentation](http://www.slideshare.net/annegentle/git-and-github-for-open-source-documentation). First I listened intently to Elizabeth Joseph’s [talk about the system admin work she does for the OpenStack Infrastructure project](https://www.dropbox.com/sh/1bzkn5apo2uife1/AACjMUNfo_gYi7qVGWKZPY8ia/Elizabeth%20K.%20Joseph/Thursday/R1430_sess256_Elizabeth_Joseph.pdf?dl=0). Here we are, ready to talk:
 
-![Docs and Infra, so happy together({% asset_path 2015-10-21-rackspace-grace-hopper/ghc-openstackers.jpg %})
+![Docs and Infra, so happy together]({% asset_path 2015-10-21-rackspace-grace-hopper/ghc-openstackers.jpg %})
 
 Afterwards, I had the sweetest experience, meeting Marina Zhurakhinskaya, the coordinator for the Outreach program for Women. She has done more for women in open source than anyone I know, tackling the issue she saw of fewer women applying for open source internships than men. I gave her a huge hug! She recently received an [O’Reilly Open Source Award](http://opensource.com/life/15/8/interview-marina-zhurakhinskaya-outreachy). She makes me smile so, so much. She’s busy right now, as the next round of internship applicants are busy completing their small patch, finding mentors, and identifying projects they can work on for three months in open source. The deadline is November 2nd, and you can read more about how to apply for [OpenStack’s Outreachy internships](https://wiki.openstack.org/wiki/Outreachy).
 
