@@ -16,7 +16,7 @@ First, thanks for your interest in contributing and helping us craft quality con
   git merge upstream/master
   ```
 
-1. Create a file inside `_posts/` with the following naming convention `YYYY-MM-DD-title-of-your-post.md` where `YYYY-MM-DD` is the date you want you entry to be published.
+1. Create a file inside `_posts/` with the following naming convention `YYYY-MM-DD-title-of-your-post.md` where `YYYY-MM-DD` is the date you want you entry to be published. The published URL for your post becomes `https://developer.rackspace.com/blog/title-of-your-post/` when published, whereas the file itself is named `YYYY-MM-DD-title-of-your-post.md`.
 
 1. Add Jekyll front matter (i.e. metadata) to the top of the file you created in the previous step, for example:
 
