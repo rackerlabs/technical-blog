@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Docker, Elastic Beanstalk and Git: a useful trinity for agile development? Part II"
-date: 2015-10-26 05:00
+date: 2015-11-03 00:00
 comments: true
 author: Duncan Rutland
 bio: Duncan Rutland is a Sr. Solution Architect at Rackspace within the Fanatical Support for AWS team.
@@ -23,7 +23,7 @@ By Duncan Rutland, Sr. Solution Architect, Rackspace 2015
 ## I - Introduction
 
 In [Part I](https://developer.rackspace.com/blog/trinity-article-I/) of this series, we depicted a fictional scenario for agile development using a simple "Hello World" application composed of just a single UI layer. During this fanciful (albeit contrived) exposition, we glossed over many of the underlying details for the sake of brevity. In this article, we will take a little peek under the covers and explain in more depth how we achieved rapid, automated deployments of immutable application containers to remote test environments.
- 
+
 <!-- more -->
 
 **Disclaimer**: The demonstration code in the corresponding [repository] (https://github.com/djrut/trinity) is for illustrative purposes only and may not be sufficiently robust for production use. Users should carefully inspect sample code before running in a production environment. Use at your own risk.
@@ -49,9 +49,9 @@ We will begin by outlining the workflow when working with Docker, EB, and Git in
 	- Push to remote repository
 5. Deploy to test EB Environment
 
-Let us now delve deeper into the inner-workings within each of these steps. 
+Let us now delve deeper into the inner-workings within each of these steps.
 
-## IV - Initial Git steps 
+## IV - Initial Git steps
 
 The first two steps involve pulling (or cloning if a fresh start is required) the repository and creating a feature/bug-fix branch. Pretty straightforward stuff, there are no surprises here so no need to expand further, _although_ I would like to take this opportunity to describe some of the Git-specific configuration required.
 
@@ -75,19 +75,19 @@ The pertinent line here is `Docker/*.tar` which instructs Git to ignore any tar 
 
 ### Git Configuration: .gitattributes
 
-Some special merge behavior is required for a single file in the project: `Dockerrun.aws.json`. This file contains the configuration that Elastic Beanstalk uses to deploy containers and branch-specific state (namely a pointer to specific Docker image for each environment). 
+Some special merge behavior is required for a single file in the project: `Dockerrun.aws.json`. This file contains the configuration that Elastic Beanstalk uses to deploy containers and branch-specific state (namely a pointer to specific Docker image for each environment).
 
 ~~~
 Dockerrun.aws.json merge=ours
 ~~~
 
-The raison d'etre of this little morsel of configuration is to prevent merge conflicts when we, for example, perform a `git merge master` inside our feature/big branch, which (as good CI citizens) we should be doing frequently to remain in sync with the mainline/trunk. Since each branch will have it's own version of `Dockerrun.aws.json`, we want any merge of master to retain the local branch version. 
+The raison d'etre of this little morsel of configuration is to prevent merge conflicts when we, for example, perform a `git merge master` inside our feature/big branch, which (as good CI citizens) we should be doing frequently to remain in sync with the mainline/trunk. Since each branch will have it's own version of `Dockerrun.aws.json`, we want any merge of master to retain the local branch version.
 
 **NOTE:** This configuration needs to be inserted into the project's `.git/config` file using the following command:
 
 ~~~bash
 git config merge.ours.driver true
-~~~ 
+~~~
 
 ## Create Elastic Beanstalk Environment
 
@@ -124,7 +124,7 @@ Environment details for: trinity-bug-002
   Updated: 2015-10-15 01:34:05.054000+00:00
   Status: Ready
   Health: Green
-~~~ 
+~~~
 
 Green is good! Note that this configuration is persisted in the `branch-defaults:` section of the `.elasticbeanstalk/config.yml` located in the project root. Here is an example:
 
@@ -143,12 +143,12 @@ global:
   default_region: us-west-2
   profile: eb-cli
   sc: git
-~~~ 
-## 
+~~~
+##
 
 ## Feature/Bugfix Development
 
-We will not go into much detail here. Suffice to say that development of _some_ feature of bug fix takes places. The important thing to note is that a commit of the changes **MUST** take place before proceeding to create the new Docker image, since, as we shall see, the make process uses `git archive` to roll-up the application for inclusion in the image. 
+We will not go into much detail here. Suffice to say that development of _some_ feature of bug fix takes places. The important thing to note is that a commit of the changes **MUST** take place before proceeding to create the new Docker image, since, as we shall see, the make process uses `git archive` to roll-up the application for inclusion in the image.
 
 ## Docker container build
 
@@ -156,7 +156,7 @@ Now we get to the meat of the process. In [Part I](https://developer.rackspace.c
 
 Those that are familiar with C/C++ development in Unix/Linux will be familiar with the [make](https://www.gnu.org/software/make/) utility. As originally conceived in the 1970s, `make` was intended to standardize and simplify the process of compiling and linking large C projects with lots of interdependencies. Due to it's venerable status and tenure, the make utility is present by default in most Unix/Linux distributions.
 
-HOWEVER: for our purposes, it can also be used to provide a simple way to group shell commands and enforce a (very basic) workflow. This turns out to very handy when working with container builds a things can (and do) fail from time-to-time. 
+HOWEVER: for our purposes, it can also be used to provide a simple way to group shell commands and enforce a (very basic) workflow. This turns out to very handy when working with container builds a things can (and do) fail from time-to-time.
 
 Most of the magic happens in the [Makefile](https://www.gnu.org/software/make/manual/html_node/Makefiles.html), a simple text configuration file that resides in the project root. Here is the `Makefile` we used in this scenario:
 
@@ -207,14 +207,14 @@ VERSION     := $(shell git describe --tags)
 IMAGE       := $(USER)/$(REPO):$(VERSION)
 ~~~
 
-We set variables for use throughout the `Makefile` in the first block. This is familiar syntax, but one thing to note is the `:=` operator, which implies "[simple](https://www.gnu.org/software/make/manual/html_node/Setting.html#Setting)" variable expansion. In this case, the left-hand operand (e.g. VERSION) is immediately set to the expanded result of the right-hand operand. This is in contrast with the recursive expansion `=` operator, where the value of the left-hand operand is not set until the time of reference.  
+We set variables for use throughout the `Makefile` in the first block. This is familiar syntax, but one thing to note is the `:=` operator, which implies "[simple](https://www.gnu.org/software/make/manual/html_node/Setting.html#Setting)" variable expansion. In this case, the left-hand operand (e.g. VERSION) is immediately set to the expanded result of the right-hand operand. This is in contrast with the recursive expansion `=` operator, where the value of the left-hand operand is not set until the time of reference.
 
 - **USER:** This is the name of Git/DockerHub username, which in our case are identical
 - **REPO:** The name of the Git and Dockerhub repository, again these are identical
 - **BUILDDIR:** This identifies the directory path under project root that will contain the Dockerfile used to build the image and also where the Git archive is dumped.
 	- **NOTE:** For this scenario, it is necessary for a Dockerfile **not** to reside in project root otherwise EB create/deploy will build a fresh image each time using _that_ `Dockerfile` instead of simply referencing an existing image defined in the `Dockerrun.aws.json` configuration file (see below).
 - **VERSION:** This variable contains the version tag to apply to the Docker image. In this case, we use the builtin `shell` command to run `git describe --tags`. This ensures that we have a consistent mapping between a version of the application in Git, Docker, and ElasticBeanstalk. NOTE: Alternative naming strategies are possible also, including using the branch name.
-- **IMAGE:** This is a simple concatenation of USER, REPO and VERSION. 
+- **IMAGE:** This is a simple concatenation of USER, REPO and VERSION.
 
 Now, let's dig into the individual targets within the `Makefile`.
 
@@ -282,7 +282,7 @@ In this example `all` is the default "target" that is built when the `make` util
 prep:
     @echo "+\n++\n+++ Building Git archive..."
     @git archive -o $(BUILDDIR)/$(REPO).tar HEAD
-~~~   
+~~~
 
 The first step of the workflow is to create a consistent snapshot of the application artifacts for inclusion in the Docker image. Git provides a nice way of doing this using the [git archive](https://git-scm.com/docs/git-archive) command. Here we tell Git to dump the archive in our `Docker/` directory using `-o` option, and we tell Git to use the snapshot that `HEAD` currently points to (e.g. the last commit of our current working branch). This mechanism, as opposed to the ordinary `tar` command, ensures that we do unintentionally corrupt the build with contents from a dirty working directory.
 
@@ -315,7 +315,7 @@ Assuming the build was successful, we now push the newly created image to Docker
 ### Makefile Target: commit
 
 ~~~
-commit:	
+commit:
 	@echo "+\n++\n+++ Committing updated Dockerrun.aws.json..."
 	@Docker/build_dockerrun.sh > Dockerrun.aws.json
 	@git add Dockerrun.aws.json
@@ -325,7 +325,7 @@ commit:
 After a successful push, we can safely update the Docker configuration file that ElasticBeanstalk uses. In the single-container example for this article, this file is called [Dockerrun.aws.json](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_docker_image.html). Here is what ours looks like:
 
 ~~~
-{  
+{
   "AWSEBDockerrunVersion": "1",
   "Image": {
     "Name": "djrut/trinity:v1.1-20-g6b54b6e",
@@ -344,18 +344,18 @@ The AWS docs [here](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create
 
 - `"AWSEBDockerrunVersion": "1"` -> Version for single container deployments. Multi-container deployments will use a different format in Version 2.
 - `"Name": "djrut/trinity:v1.1-20-g6b54b6e"` -> This is our container name!
-- `"ContainerPort": "80"` -> Which port to EXPOSE from the container, for use by the EB reverse proxy service running on the container host. 
+- `"ContainerPort": "80"` -> Which port to EXPOSE from the container, for use by the EB reverse proxy service running on the container host.
 
 So... how did our container name get inserted into `Dockerrun.aws.json`? A quick'n'dirty shell script named `build_dockerrun.sh`. Here is the relevant target from the `Makefile` again:
 
 ~~~
-commit:	
+commit:
 	@echo "+\n++\n+++ Committing updated Dockerrun.aws.json..."
 	@Docker/build_dockerrun.sh > Dockerrun.aws.json
 	...
-~~~	
+~~~
 
-The script `Docker/build_dockerrun.sh` is run, and the output is redirected to the `Dockerrun.aws.json` file. 
+The script `Docker/build_dockerrun.sh` is run, and the output is redirected to the `Dockerrun.aws.json` file.
 
 The script itself is nothing special:
 
@@ -391,9 +391,9 @@ The following two lines in the `commit` target actually execute the commit:
 	@git commit --amend --no-edit
 ~~~
 
-We stage only the `Dockerrun.aws.json` file, since there may be other changes in the working directory that we do not want to stage. 
+We stage only the `Dockerrun.aws.json` file, since there may be other changes in the working directory that we do not want to stage.
 
-**NOTE:** The `--amend` and `--no-edit` options allow the previous (probably more meaningful) commit message to be retained *and* result in the minor version number of the tag also being retained, instead of being incremented as with a normal commit. This behavior is desirable, since we want strict correlation between git branch tag, docker image tag, and the Elastic Beanstalk application version. 
+**NOTE:** The `--amend` and `--no-edit` options allow the previous (probably more meaningful) commit message to be retained *and* result in the minor version number of the tag also being retained, instead of being incremented as with a normal commit. This behavior is desirable, since we want strict correlation between git branch tag, docker image tag, and the Elastic Beanstalk application version.
 
 ### Makefile Target: clean
 
@@ -421,12 +421,12 @@ INFO: Environment update is starting.
 
 This command pushes the new `Dockerrun.aws.json` out to our Elastic Beanstalk environment and signals the host manager on each EC2 instance to perform an update of the running container. A quick check of `eb status` or `eb health` will show that the new deploy was successful and took around 20 seconds.
 
-**NOTE:** In practice, this step could also be automated for feature/bug branches within the Makefile using a `deploy` step that follows a successful `push`. We could even take this a step further and implement a Git commit hook to trigger the make automatically, resulting in a fresh container build and updated remote test environment with nothing more than a `git commit`!   
- 
+**NOTE:** In practice, this step could also be automated for feature/bug branches within the Makefile using a `deploy` step that follows a successful `push`. We could even take this a step further and implement a Git commit hook to trigger the make automatically, resulting in a fresh container build and updated remote test environment with nothing more than a `git commit`!
+
 ## VII - Conclusion
 
-In this article, we probed a little deeper into the internals of the simple scenario outlined in [Part I](https://developer.rackspace.com/blog/trinity-article-I/). This was hopefully a useful demonstration of _one possible scenario_ depicting how EB, Docker, and Git can drastically simplify the development process. However, to enlightened readers this scenario is glaringly unrealistic: real-world applications, which are far more complex, have many dependencies to shepherd, and are likely contributed to by more than one developer, and will usually follow some kind of centralized integration, build, test, and deployment pipeline. 
+In this article, we probed a little deeper into the internals of the simple scenario outlined in [Part I](https://developer.rackspace.com/blog/trinity-article-I/). This was hopefully a useful demonstration of _one possible scenario_ depicting how EB, Docker, and Git can drastically simplify the development process. However, to enlightened readers this scenario is glaringly unrealistic: real-world applications, which are far more complex, have many dependencies to shepherd, and are likely contributed to by more than one developer, and will usually follow some kind of centralized integration, build, test, and deployment pipeline.
 
-In **Part III**, we make this scenario more realistic by adding some additional components to the application, and we will demonstrate how Elastic Beanstalk can help orchestrate these dependencies across environments. 
+In **Part III**, we make this scenario more realistic by adding some additional components to the application, and we will demonstrate how Elastic Beanstalk can help orchestrate these dependencies across environments.
 
 In **Part IV**, we show one possible scenario for how this application could integrate into a centralized integration, test, and deployment workflow.
