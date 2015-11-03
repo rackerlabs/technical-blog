@@ -57,7 +57,7 @@ The first two steps involve pulling (or cloning if a fresh start is required) th
 
 ### Git Configuration: .gitignore
 
-~~~bash .gitignore
+~~~bash
 *.swp
 .bundle
 Docker/*.tar
