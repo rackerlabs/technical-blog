@@ -89,3 +89,4 @@ Follow these steps to submit your entry for publication.
  - author(s) social media contact info
  - accept or decline to allow redaction, editing or structure changes by technical writer staff
  - desired date of publishing
+ - whether or not you're willing to answer comments about your post (see step #5 above)
