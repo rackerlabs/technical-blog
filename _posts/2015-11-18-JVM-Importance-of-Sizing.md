@@ -4,7 +4,7 @@ title: "Your JVM – The Importance of Sizing"
 date: 2015-11-18 10:00
 comments: true
 author: Jonathan Hurley
-published: false
+published: true
 categories:
     - Ecommerce
 --- 
