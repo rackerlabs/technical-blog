@@ -4,7 +4,7 @@ title: "Load Balancing for E-Commerce (pt 1)"
 date: 2015-11-16 10:00
 comments: true
 author: Jonathan Hurley
-published: false
+published: true
 categories:
     - ecommerce
 --- 
