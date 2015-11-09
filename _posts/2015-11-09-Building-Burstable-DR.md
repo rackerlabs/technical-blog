@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "Building A Burstable DR"
-date: 2015-11-06 00:00
+date: 2015-11-09 00:00
 comments: true
 author: Jonathan Hurley
-published: false
+published: true
 categories:
     - Ecommerce
 ---
