@@ -4,7 +4,7 @@ title: "Achieving Success by Successfully Delivering Success Notification"
 date: 2015-11-11 10:00
 comments: true
 author: Jonathan Hurley
-published: false
+published: true
 categories:
     - ecommerce
 --- 
