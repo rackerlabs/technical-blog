@@ -147,7 +147,7 @@ test_server	e4ff779c-076a-4ab3-b1b5-d8c3fba133e9	OS::Nova::Server	CREATE_COMPLET
 In the above command, we used the `resource` sub-service. If we forgot what template we used, we can use:
 
 ```
-$ rack orchestration template get --stack-name RackTest
+$ rack orchestration stack get-template --name RackTest
 {
   "heat_template_version": "2014-10-16",
   "parameters": {
