@@ -9,7 +9,6 @@ categories:
     - Ecommerce
 ---
 
- 
 When it comes to the battle cry of E-Commerce, "we're losing $1m per minute" is the clear
 winner, but a strong second is certainly "we want a disaster recovery solution". There are
 numerous benefits to disaster recovery and business continuity planning, especially
