@@ -24,7 +24,7 @@ In [Part I](https://developer.rackspace.com/blog/trinity-article-I/) of this ser
 
 **Disclosure**: The idea of a Makefile mechanism to automate container preparation, build, push etc. was inspired by [this](http://victorlin.me/posts/2014/11/26/running-docker-with-aws-elastic-beanstalk) excellent article by Victor Lin.
 
-### III - Workflow
+### II - Workflow
 
 We will begin by outlining the workflow when working with Docker, EB, and Git in this scenario. The high-level steps are as follows:
 
@@ -45,7 +45,7 @@ We will begin by outlining the workflow when working with Docker, EB, and Git in
 
 Let us now delve deeper into the inner-workings within each of these steps.
 
-### IV - Initial Git steps
+### III - Initial Git steps
 
 The first two steps involve pulling (or cloning if a fresh start is required) the repository and creating a feature/bug-fix branch. Pretty straightforward stuff, there are no surprises here so no need to expand further, _although_ I would like to take this opportunity to describe some of the Git-specific configuration required.
 
@@ -83,7 +83,7 @@ The raison d'etre of this little morsel of configuration is to prevent merge con
 git config merge.ours.driver true
 ~~~
 
-### Create Elastic Beanstalk Environment
+### IV - Create Elastic Beanstalk Environment
 
 If this is a newly created branch, we will need to instruct Elastic Beanstalk to build a new environment and bind it to the branch.
 
@@ -139,11 +139,11 @@ global:
   sc: git
 ~~~
 
-### Feature/Bugfix Development
+### V - Feature/Bugfix Development
 
 We will not go into much detail here. Suffice to say that development of _some_ feature of bug fix takes places. The important thing to note is that a commit of the changes **MUST** take place before proceeding to create the new Docker image, since, as we shall see, the make process uses `git archive` to roll-up the application for inclusion in the image.
 
-### Docker container build
+### VI - Docker container build
 
 Now we get to the meat of the process. In [Part I](https://developer.rackspace.com/blog/trinity-article-I/) of this series, we showed how two simple commands `make` and `eb deploy` were all that was required to create a brand new immutable Docker image and deploy to an external Elastic Beanstalk Environment. Let's now delve into the `make` component.
 
@@ -400,7 +400,7 @@ Finally, we do some housekeeping and remove the Git archive tar file created dur
 
 This step concludes the tasks performed by the make workflow, and we should now have a freshly built immutable Docker image that encapsulates the latest feature/bug-fix committed in the local branch available remotely for use by Elastic Beanstalk (or any other system).
 
-### Deploy to test EB environment
+### VII - Deploy to test EB environment
 
 The final step in this example is to deploy the new application version to a test environment. This turns out to be very simple (and fast) with the help of the Elastic Beanstalk `eb deploy` command.
 
@@ -414,9 +414,9 @@ INFO: Environment update is starting.
 
 This command pushes the new `Dockerrun.aws.json` out to our Elastic Beanstalk environment and signals the host manager on each EC2 instance to perform an update of the running container. A quick check of `eb status` or `eb health` will show that the new deploy was successful and took around 20 seconds.
 
-**NOTE:** In practice, this step could also be automated for feature/bug branches within the Makefile using a `deploy` step that follows a successful `push`. We could even take this a step further and implement a Git commit hook to trigger the make automatically, resulting in a fresh container build and updated remote test environment with nothing more than a `git commit`!
+**NOTE:** In practice, this step could also be automated for feature/bug branches within the Makefile using a `deploy` step that follows a successful `push`. We could even take this a step further and implement a Git commit hook to trigger the make automatically, resulting in a fresh container build and updated remote test environment with nothing more than a `git commit`.
 
-### VII - Conclusion
+### VIII - Conclusion
 
 In this article, we probed a little deeper into the internals of the simple scenario outlined in [Part I](https://developer.rackspace.com/blog/trinity-article-I/). This was hopefully a useful demonstration of _one possible scenario_ depicting how EB, Docker, and Git can drastically simplify the development process. However, to enlightened readers this scenario is glaringly unrealistic: real-world applications, which are far more complex, have many dependencies to shepherd, and are likely contributed to by more than one developer, and will usually follow some kind of centralized integration, build, test, and deployment pipeline.
 
