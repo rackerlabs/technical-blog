@@ -14,13 +14,7 @@ categories:
 authorIsRacker: true
 ---
 
-# Docker, Elastic Beanstalk and Git: a useful trinity for agile development? Part II
-
-By Duncan Rutland, Sr. Solution Architect, Rackspace 2015
-
----
-
-## I - Introduction
+### I - Introduction
 
 In [Part I](https://developer.rackspace.com/blog/trinity-article-I/) of this series, we depicted a fictional scenario for agile development using a simple "Hello World" application composed of just a single UI layer. During this fanciful (albeit contrived) exposition, we glossed over many of the underlying details for the sake of brevity. In this article, we will take a little peek under the covers and explain in more depth how we achieved rapid, automated deployments of immutable application containers to remote test environments.
 
@@ -30,7 +24,7 @@ In [Part I](https://developer.rackspace.com/blog/trinity-article-I/) of this ser
 
 **Disclosure**: The idea of a Makefile mechanism to automate container preparation, build, push etc. was inspired by [this](http://victorlin.me/posts/2014/11/26/running-docker-with-aws-elastic-beanstalk) excellent article by Victor Lin.
 
-## III - Workflow
+### III - Workflow
 
 We will begin by outlining the workflow when working with Docker, EB, and Git in this scenario. The high-level steps are as follows:
 
@@ -51,11 +45,11 @@ We will begin by outlining the workflow when working with Docker, EB, and Git in
 
 Let us now delve deeper into the inner-workings within each of these steps.
 
-## IV - Initial Git steps
+### IV - Initial Git steps
 
 The first two steps involve pulling (or cloning if a fresh start is required) the repository and creating a feature/bug-fix branch. Pretty straightforward stuff, there are no surprises here so no need to expand further, _although_ I would like to take this opportunity to describe some of the Git-specific configuration required.
 
-### Git Configuration: .gitignore
+#### Git Configuration: .gitignore
 
 ~~~bash
 *.swp
@@ -73,7 +67,7 @@ The pertinent line here is `Docker/*.tar` which instructs Git to ignore any tar 
 
 **NOTE:** Additional configuration state contained in `.ebextensions/` directory will *not* be ignored since it resides at root of project.
 
-### Git Configuration: .gitattributes
+#### Git Configuration: .gitattributes
 
 Some special merge behavior is required for a single file in the project: `Dockerrun.aws.json`. This file contains the configuration that Elastic Beanstalk uses to deploy containers and branch-specific state (namely a pointer to specific Docker image for each environment).
 
@@ -89,7 +83,7 @@ The raison d'etre of this little morsel of configuration is to prevent merge con
 git config merge.ours.driver true
 ~~~
 
-## Create Elastic Beanstalk Environment
+### Create Elastic Beanstalk Environment
 
 If this is a newly created branch, we will need to instruct Elastic Beanstalk to build a new environment and bind it to the branch.
 
@@ -144,13 +138,12 @@ global:
   profile: eb-cli
   sc: git
 ~~~
-##
 
-## Feature/Bugfix Development
+### Feature/Bugfix Development
 
 We will not go into much detail here. Suffice to say that development of _some_ feature of bug fix takes places. The important thing to note is that a commit of the changes **MUST** take place before proceeding to create the new Docker image, since, as we shall see, the make process uses `git archive` to roll-up the application for inclusion in the image.
 
-## Docker container build
+### Docker container build
 
 Now we get to the meat of the process. In [Part I](https://developer.rackspace.com/blog/trinity-article-I/) of this series, we showed how two simple commands `make` and `eb deploy` were all that was required to create a brand new immutable Docker image and deploy to an external Elastic Beanstalk Environment. Let's now delve into the `make` component.
 
@@ -197,7 +190,7 @@ clean:
 
 Let's break this down section by section. First up: Variable definitions.
 
-### Makefile Variable Definitions
+#### Makefile Variable Definitions
 
 ~~~
 USER        := "djrut"
@@ -218,7 +211,7 @@ We set variables for use throughout the `Makefile` in the first block. This is f
 
 Now, let's dig into the individual targets within the `Makefile`.
 
-### Makefile Rule Syntax
+#### Makefile Rule Syntax
 
 Makefiles are composed of one or more "rules", which follow this basic syntax:
 
@@ -260,7 +253,7 @@ This Makefile depicts a C project "edit", which is composed of a number of modul
 
 As you can see, our use of make deviates from this original purpose but takes advantage of the tool to enforce a simple workflow of shell commands.
 
-### Makefile Target: .PHONY
+#### Makefile Target: .PHONY
 
 ~~~
 .PHONY: all prep build push commit clean
@@ -268,7 +261,7 @@ As you can see, our use of make deviates from this original purpose but takes ad
 
 This first curious target is a built-in make convention that is used to define targets that do not _actually_ represent files. Since we are using targets to represent **labels in a workflow**, and they do not get compiled, we should define all of the targets in the `Makefile` as "[.PHONY](https://www.gnu.org/software/make/manual/html_node/Phony-Targets.html)". This prevents problems in the (remote, but not impossible) event that a file with the same name as one of the targets is created. If this were to occur, make would never run that recipe, thinking that the target had already been built.
 
-### Makefile Target: all
+#### Makefile Target: all
 
 ~~~
 all:	prep dry-run build push commit clean
@@ -276,7 +269,7 @@ all:	prep dry-run build push commit clean
 
 In this example `all` is the default "target" that is built when the `make` utility is invoked without any arguments. This results in the recipes for each of the prerequisites being invoked from left to right (so `prep` runs first, followed by `dry-run` and so on). This allows us to create a simple workflow that follows a chain of dependent actions and halts upon error.
 
-### Makefile Target: prep
+#### Makefile Target: prep
 
 ~~~
 prep:
@@ -288,7 +281,7 @@ The first step of the workflow is to create a consistent snapshot of the applica
 
 **NOTE:** The `@` sign is another make convention that prevents the command itself being echoed to STDOUT. I elected to do this to reduce visual clutter.
 
-### Makefile Target: build
+#### Makefile Target: build
 
 ~~~
 build:
@@ -298,7 +291,7 @@ build:
 
 As the name suggests, this is where we invoke the docker build command. Nothing outside of the ordinary here: we pass `-t` to specify a repository/name:tag for the image and always remove intermediate containers (`--force-rm`) after a build, whether it is successful or not. Note that this option does not affect the layer cache used for image build.
 
-### Makefile Target: push
+#### Makefile Target: push
 
 ~~~
 push:
@@ -312,7 +305,7 @@ Assuming the build was successful, we now push the newly created image to Docker
 
 **NOTE:** Coming later this year, the AWS EC2 Container Registry (ECR) will enable developers to store container images within a scalable, secure and performant registry, which is hosted on AWS and integrates with IAM, ECS and other AWS services.
 
-### Makefile Target: commit
+#### Makefile Target: commit
 
 ~~~
 commit:
@@ -395,7 +388,7 @@ We stage only the `Dockerrun.aws.json` file, since there may be other changes in
 
 **NOTE:** The `--amend` and `--no-edit` options allow the previous (probably more meaningful) commit message to be retained *and* result in the minor version number of the tag also being retained, instead of being incremented as with a normal commit. This behavior is desirable, since we want strict correlation between git branch tag, docker image tag, and the Elastic Beanstalk application version.
 
-### Makefile Target: clean
+#### Makefile Target: clean
 
 ~~~
 clean:
@@ -407,7 +400,7 @@ Finally, we do some housekeeping and remove the Git archive tar file created dur
 
 This step concludes the tasks performed by the make workflow, and we should now have a freshly built immutable Docker image that encapsulates the latest feature/bug-fix committed in the local branch available remotely for use by Elastic Beanstalk (or any other system).
 
-## Deploy to test EB environment
+### Deploy to test EB environment
 
 The final step in this example is to deploy the new application version to a test environment. This turns out to be very simple (and fast) with the help of the Elastic Beanstalk `eb deploy` command.
 
@@ -423,7 +416,7 @@ This command pushes the new `Dockerrun.aws.json` out to our Elastic Beanstalk en
 
 **NOTE:** In practice, this step could also be automated for feature/bug branches within the Makefile using a `deploy` step that follows a successful `push`. We could even take this a step further and implement a Git commit hook to trigger the make automatically, resulting in a fresh container build and updated remote test environment with nothing more than a `git commit`!
 
-## VII - Conclusion
+### VII - Conclusion
 
 In this article, we probed a little deeper into the internals of the simple scenario outlined in [Part I](https://developer.rackspace.com/blog/trinity-article-I/). This was hopefully a useful demonstration of _one possible scenario_ depicting how EB, Docker, and Git can drastically simplify the development process. However, to enlightened readers this scenario is glaringly unrealistic: real-world applications, which are far more complex, have many dependencies to shepherd, and are likely contributed to by more than one developer, and will usually follow some kind of centralized integration, build, test, and deployment pipeline.
 
