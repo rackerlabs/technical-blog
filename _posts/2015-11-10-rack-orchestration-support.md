@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2015-10-05
+date: 2015-11-10
 title: "Cloud Orchestration now available in rack"
 comments: true
 author: Pratik Mallya
