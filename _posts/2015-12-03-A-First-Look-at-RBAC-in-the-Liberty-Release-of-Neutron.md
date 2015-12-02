@@ -197,7 +197,7 @@ At this time, the only type of policy that can be created is a network policy, a
 In this example, the following command creates an RBAC policy that extends the network `MySemiSharedNetwork` to TenantA:
 
 ```
-neutron rbac-create --type network --target-tenant fccad6ad6d0343f7ba7c5a84c01304a4 \
+racker@controller01:~$ neutron rbac-create --type network --target-tenant fccad6ad6d0343f7ba7c5a84c01304a4 \
 --action access_as_shared c4471d6a-ab58-4ea3-971d-39104a5ad509 
 
 Created a new rbac_policy:
@@ -247,7 +247,7 @@ racker@controller01:~$ neutron --os-project-name TenantC --os-username UserC --o
 Now, let's create an additional policy that extends the network `MySemiSharedNetwork` to TenantB:
 
 ```
-neutron rbac-create --type network --target-tenant 861a353bcb1f419e93dc1506e92859d2 \
+racker@controller01:~$ neutron rbac-create --type network --target-tenant 861a353bcb1f419e93dc1506e92859d2 \
 --action access_as_shared c4471d6a-ab58-4ea3-971d-39104a5ad509 
 
 Created a new rbac_policy:
