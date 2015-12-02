@@ -319,6 +319,6 @@ ERROR (BadRequest): Network c4471d6a-ab58-4ea3-971d-39104a5ad509 could not be fo
 
 Neutron's RBAC functionality is undergoing active development, and you're likely to see ~~regressions~~ improvements already in the `MASTER` branch and upcoming Mitaka release. What I've demonstrated here is functionality that a lot of enterprises are asking for, and hopefully just a glimpse of what should be possible once the feature matures. 
 
-If you'd like to learn more about Neutron's RBAC functionality, take a look at the specs and blueprints found on [specs.openstack.org](https://specs.openstack.org/openstack/neutron-specs/specs/liberty/rbac-networks.html). 
+If you'd like to learn more about Neutron's RBAC functionality, take a look at the specs and blueprints found on [specs.openstack.org](https://specs.openstack.org/openstack/neutron-specs/specs/liberty/rbac-networks.html). As always, feel free to reach out to me on Twitter @jimmdenton with any questions!
 
 
