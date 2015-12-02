@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "A First Look at RBAC in the Liberty Release of Neutron"
-date: 2015-12-03 08:00:00
-comments: true
+date: 2015-12-02 00:00:00
+comments: false
 author: James Denton
 published: true
 categories:
@@ -11,7 +11,7 @@ categories:
     - openstack
 ---
 
-Over the last couple of years, we've seen OpenStack deployments shift from a public cloud model, where no one is trusted, to a private cloud model, where collaboration and shared resources between projects is required. As enterprises adopt OpenStack and integrate it into their infrastructure, new use cases continue to multiply, and existing limitations in APIs and data models have been brought to the forefront. One of the more exciting features to come out of Neutron development in the Liberty cycle that addresses a shortcoming is a framework for Role Based Access Control (RBAC). 
+Over the last couple of years, we've seen OpenStack deployments shift from a public cloud model, where no one is trusted, to a private cloud model, where collaboration and shared resources between projects is required. As enterprises adopt OpenStack and integrate it into their infrastructure, new use cases continue to multiply, and existing limitations in APIs and data models have been brought to the forefront. One of the more exciting features to come out of Neutron development in the Liberty cycle that addresses a shortcoming is a framework for Role Based Access Control (RBAC).
 
 <!-- more -->
 
@@ -20,7 +20,7 @@ RBAC aims to solve the inability to share certain Neutron resources with a subse
 # Introducing the commands
 
 Within the Neutron client, there are some new commands for managing RBAC policies:
- 
+
 ```
 rbac-create
 rbac-delete
@@ -29,7 +29,7 @@ rbac-show
 rbac-update
 ```
 
-The workflow for managing RBAC policies follows the standard CRUD (Create, Read, Update, Delete) model that we're all used to with other Neutron resources. As it stands right now, users are limited to creating policies that allow for networks to be shared amongst a subset of tenants rather than the all-or-none approach taken in previous releases. Don't worry though, the Neutron team has developed the API and data model so that access control can be extended to other resources relatively easily in the future.  
+The workflow for managing RBAC policies follows the standard CRUD (Create, Read, Update, Delete) model that we're all used to with other Neutron resources. As it stands right now, users are limited to creating policies that allow for networks to be shared amongst a subset of tenants rather than the all-or-none approach taken in previous releases. Don't worry though, the Neutron team has developed the API and data model so that access control can be extended to other resources relatively easily in the future.
 
 # Satisfying some prerequisites
 
@@ -171,7 +171,7 @@ Notice that the `shared` attribute is set to `false`. In this state, the network
 
 # Creating a policy
 
-Now that we have the hard stuff out of the way, let's get down to business. 
+Now that we have the hard stuff out of the way, let's get down to business.
 
 Creating an RBAC policy requires four pieces of information:
 
@@ -198,7 +198,7 @@ In this example, the following command creates an RBAC policy that extends the n
 
 ```
 racker@controller01:~$ neutron rbac-create --type network --target-tenant fccad6ad6d0343f7ba7c5a84c01304a4 \
---action access_as_shared c4471d6a-ab58-4ea3-971d-39104a5ad509 
+--action access_as_shared c4471d6a-ab58-4ea3-971d-39104a5ad509
 
 Created a new rbac_policy:
 +---------------+--------------------------------------+
@@ -248,7 +248,7 @@ Now, let's create an additional policy that extends the network `MySemiSharedNet
 
 ```
 racker@controller01:~$ neutron rbac-create --type network --target-tenant 861a353bcb1f419e93dc1506e92859d2 \
---action access_as_shared c4471d6a-ab58-4ea3-971d-39104a5ad509 
+--action access_as_shared c4471d6a-ab58-4ea3-971d-39104a5ad509
 
 Created a new rbac_policy:
 +---------------+--------------------------------------+
@@ -317,8 +317,6 @@ ERROR (BadRequest): Network c4471d6a-ab58-4ea3-971d-39104a5ad509 could not be fo
 
 # Caveats, warranties, etc.
 
-Neutron's RBAC functionality is undergoing active development, and you're likely to see ~~regressions~~ improvements already in the `MASTER` branch and upcoming Mitaka release. What I've demonstrated here is functionality that a lot of enterprises are asking for, and hopefully just a glimpse of what should be possible once the feature matures. 
+Neutron's RBAC functionality is undergoing active development, and you're likely to see ~~regressions~~ improvements already in the `MASTER` branch and upcoming Mitaka release. What I've demonstrated here is functionality that a lot of enterprises are asking for, and hopefully just a glimpse of what should be possible once the feature matures.
 
 If you'd like to learn more about Neutron's RBAC functionality, take a look at the specs and blueprints found on [specs.openstack.org](https://specs.openstack.org/openstack/neutron-specs/specs/liberty/rbac-networks.html). As always, feel free to reach out to me on Twitter @jimmdenton with any questions!
-
-
