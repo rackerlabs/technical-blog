@@ -86,6 +86,6 @@ You can verify if a scaleup or scaledown operation happened by looking at your a
 I hope this gives you a good intro to virtual machine scale sets. My next post will be deploying Sitecore content delivery nodes using VMSS. If you have any questions, feel free to reach out to me at jimmy.rudley at rackspace.com
 
    [set]:<https://msdn.microsoft.com/en-us/library/azure/dn931944.aspx#bk_metric>
-   [visual studio project]: <https://github.com/joemccann/dillinger>
+   [visual studio project]: <https://github.com/jrudley/vmssLBNatIIS>
    [Azure Resource Explorer]: <https://resources.azure.com>
 
