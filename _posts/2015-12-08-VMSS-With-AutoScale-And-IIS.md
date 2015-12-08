@@ -83,7 +83,7 @@ If you browse to your public ip provisioned, you will have a simple ASP.NET webp
 
 You can verify if a scaleup or scaledown operation happened by looking at either your audit logs for the scaleset in the Azure portal or the capacity count in the portal.
 
-I hope this gives you a good intro to virtual machine scale sets. My next post will be cover deploying Sitecore content delivery nodes using VMSS. If you have any questions, feel free to reach out to me at jimmy.rudley at rackspace.com
+I hope this gives you a good intro to virtual machine scale sets. My next post will cover deploying Sitecore content delivery nodes using VMSS. If you have any questions, feel free to reach out to me at jimmy.rudley at rackspace.com
 
    [set]:<https://msdn.microsoft.com/en-us/library/azure/dn931944.aspx#bk_metric>
    [visual studio project]: <https://github.com/jrudley/vmssLBNatIIS>
