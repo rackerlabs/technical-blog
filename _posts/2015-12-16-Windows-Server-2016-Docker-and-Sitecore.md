@@ -11,9 +11,14 @@ categories:
     - Sitecore
 ---
 
-At SUGCON 2015, Rackspace and Hedgehog presented about using Docker will shape how we work with Sitecore in the near future. With the release of Windows Server 2016 Technical Preview 4, it is becoming a reality.
+At SUGCON 2015, Rackspace and Hedgehog presented about how using Docker will shape the way we work with Sitecore, an ASP.Net web content management system. With the release of Windows Server 2016 Technical Preview 4, we are now able to run Sitecore in a Docker container. 
 
 <!-- more -->
+Why run Sitecore in a Docker container? Here are a few challenges that are now solved:
+  - Consistent enviornments for production, staging, dev, qa
+  - Portability of Docker images
+  - Can add additional containers in seconds to scale out
+  - Can roll back to older images in seconds if code does not work as expected
 
 To start running Docker containers, we will need a Docker host. Microsoft wrote a PowerShell script that can configure the VM host for you if you are running Windows 10 or Windows Server 2016 TP2+. You can grab the detailed instructions here
 
@@ -108,7 +113,7 @@ docker run --rm -it -p 80:80 sitecore cmd
 Browse to your docker host IP and the default sitecore page shows up.
 
 
-I hope this gives you a good intro to Docker on Windows Server 2016 with Sitecore. Windows Server 2016 is still in technical preview and there still are a lot of limitations and bugs, but seeing sitecore run out of a container is a good step in the right direction. I did run into issues of mvc not being able to load in the container. This will break content editing, among other things, but as Microsoft matures the container offering, we will be ready to use Docker with Sitecore. In my next post, I will show us how to install a fresh sitecore instance using a dockerfile.
+I hope this gives you a good intro to Docker on Windows Server 2016 with Sitecore. Windows Server 2016 is still in technical preview and there still are a lot of limitations and bugs, but seeing Sitecore run out of a container is a good step in the right direction. I did run into issues of MVC not being able to load in the container. This will break content editing, among other things, but as Microsoft matures the container offering, we will be ready to use Docker with Sitecore. In my next post, I will show us how to install a fresh sitecore instance using a dockerfile.
 
 
    [here]:<https://msdn.microsoft.com/virtualization/windowscontainers/quick_start/container_setup>
