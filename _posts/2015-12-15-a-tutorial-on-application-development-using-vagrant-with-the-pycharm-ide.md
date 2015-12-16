@@ -146,17 +146,29 @@ Vagrant allows you to map directories on your host OS to directories on your VM.
 ## Configuring PyCharm
 
 I now need to open my project in PyCharm.  Since I'm running my app in a VM, I need to tell PyCharm to use a remote Python interpreter.  This can be accomplished by following these steps:
+
 1. Open the project settings dialog box in PyCharm. (*cmd+comma* shortcut if you are using OS X).
-![Project Settings]({% asset_path 2015-12-15-a-tutorial-on-application-development-using-vagrant-with-the-pycharm-ide/1.png %})
+
+    ![Project Settings]({% asset_path 2015-12-15-a-tutorial-on-application-development-using-vagrant-with-the-pycharm-ide/1.png %})
+
 2. Expand *Project: juno* on the left side.
-![Project Settings]({% asset_path 2015-12-15-a-tutorial-on-application-development-using-vagrant-with-the-pycharm-ide/2.png %})
+
+    ![Project Settings]({% asset_path 2015-12-15-a-tutorial-on-application-development-using-vagrant-with-the-pycharm-ide/2.png %})
+
 3. Click on *Project Interpreter*.
+
 4. Click on the cog icon on the upper right side of the window and select *Add Remote*.
-![Interpreter Settings]({% asset_path 2015-12-15-a-tutorial-on-application-development-using-vagrant-with-the-pycharm-ide/3.png %})
+
+    ![Interpreter Settings]({% asset_path 2015-12-15-a-tutorial-on-application-development-using-vagrant-with-the-pycharm-ide/3.png %})
+
 5. Click on the *Vagrant* radio button.
+
 6. In the *Vagrant Instance Folder* box, select the directory you ran `vagrant up` in earlier.
+
 7. In the *Vagrant Host URL* box, make sure `ssh://vagrant@127.0.0.1:2222` is specified.
-![Interpreter Configuration]({% asset_path 2015-12-15-a-tutorial-on-application-development-using-vagrant-with-the-pycharm-ide/4.png %})
+
+    ![Interpreter Configuration]({% asset_path 2015-12-15-a-tutorial-on-application-development-using-vagrant-with-the-pycharm-ide/4.png %})
+
 8. Click OK.
 
 You should now be able to edit your project files on your host OS using PyCharm while running your project in a Linux VM.  If you edit one of the files in PyCharm, you will see the changes immediately in your VM.  I can now deploy my Python app in my VM and since I’ve configured port mapping in my Vagrantfile, I can use applications running on my host OS to interact with the deployed app in my VM such as a browser, database client, and REST client.
