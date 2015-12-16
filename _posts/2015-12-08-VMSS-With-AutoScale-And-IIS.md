@@ -24,13 +24,13 @@ The idea is that you set your instance count to how many machines you want, and 
 I wanted to test out a simple scenerio: provision 1 web server vm, then scale based on CPU load. I have published a [Visual Studio project] to my github repo that has an ARM JSON template already configured for VMSS along with a simple ASP.NET webpage that will let you simulate cpu load over a period of time. Let's go over some key points and gotchas
     
   - You are still bound to the processor count in your subscription.
-  - This is still in preview. I have seem some funkyness during initial provisioning.
+  - This is still in preview. I have seen some funkyness during initial provisioning.
   - Make use of the [Azure Resource Explorer] to discover properties you dont know exist.
   - Microsoft.Compute/virtualMachineScaleSets capacity is how many virtual machines should be initialized in the scale set
   - Microsoft.Compute/virtualMachineScaleSets upgradePolicy has 2 options. Manual: Only new VMs are affected when a template is redeployed. Automatic: Specifies that all machines in the scale set are updated and restarted.
   - Preview is limited to 100 VMs.
 
-I do my ARM development in Visual Studio, so I am using that for my deployment. If you are using Azure Powershell 1.0, I have already updated the Deploy-AzureResourceGroup.ps1 in the project. If you are using an older version of Azure Powershell, I left the original version Deploy-AzureResourceGroupOld.ps1 in the project for you to rename and use, ifyou like. The other option is to deploy with the Azure CLI or Azure Powershell cmdlet's.
+I do my ARM development in Visual Studio, so I am using that for my deployment. If you are using Azure Powershell 1.0, I have already updated the Deploy-AzureResourceGroup.ps1 in the project. If you are using an older version of Azure Powershell, I left the original version Deploy-AzureResourceGroupOld.ps1 in the project for you to rename and use, if you like. The other option is to deploy with the Azure CLI or Azure Powershell cmdlet's.
 
 Once deployed, you will have a single A1 VM behind a load balancer, with 2 load balancer rules and a dynamic nat pool. The load balancer has 2 rules, port 80 and port 443. I am not making use of port 443, but wanted to leave it in as a reference sample on how to add multiple rules. You will have nat rules created automatically for each vm. Please start at port 50000 when rdp'ing in and increment for each vm.
 
