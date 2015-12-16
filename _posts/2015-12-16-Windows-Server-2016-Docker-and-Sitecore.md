@@ -22,7 +22,7 @@ Why run Sitecore in a Docker container? Here are a few challenges that are now s
 
 To start running Docker containers, we will need a Docker host. Microsoft wrote a PowerShell script that can configure the VM host for you if you are running Windows 10 or Windows Server 2016 TP2+. You can grab the detailed instructions here
 
-My main objective is to take an existing sitecore 8.0 installation on my laptop and move it into a container image. I used the sitecore web application installer to do a quick local installation. I am using SQL Azure for my sql server, but as long as you can hit your sql server from your container, however you choose to host the DB's will work just fine.
+My main objective is to take an existing Sitecore 8.0 installation on my laptop and move it into a container image. I used the Sitecore web application installer to do a quick local installation. I am using SQL Azure for my sql server, but as long as you can hit your sql server from your container, however you choose to host the databases will work just fine.
 
 Once you setup your Docker host, using the Microsoft PowerShell script, you need to create an IIS image. we need to create our IIS image. Use the following command to see a list of available images on your Docker host:
 ```sh
@@ -62,7 +62,7 @@ microsoft/sqlite     SQLite installed in a Windows Server Core ...   1          
 
 There is a good spread of images from Ruby, Redis, ASP.N 5, IIS, etc. We could build our own image by launching a new container and installing IIS and ASP.Net, but let's pull an existing image instead.
 
-On your docker host, create a new directory called **c:\iisdemo**. We will use this directory to hold our dockerfile we will create. A dockerfile is just a set of instructions to build a docker image. 
+On your Docker host, create a new directory called **c:\iisdemo**. We will use this directory to hold our dockerfile we will create. A dockerfile is just a set of instructions to build a Docker image. 
 
 To create a dockerfile, launch **notepad.exe** and type in the following instructions:
 ```sh
@@ -72,7 +72,7 @@ FROM microsoft/iis
 RUN dism /online /enable-feature /all /featurename:IIS-ASPNET45 /NoRestart
 #The RUN keyword will execute any commands in a new layer on top of the current image and commit the results. I am telling it to run dism to install the asp.net 4.5 features for IIS
 ```
-Alternatively, we could use powershell to install asp.net 4.5. That dockerfile would look like
+Alternatively, we could use PowerShell to install asp.net 4.5. That dockerfile would look like
 ```sh
 FROM microsoft/iis
 RUN powershell -executionpolicy bypass -command "add-windowsfeature Web-Asp-Net45"
@@ -113,7 +113,7 @@ Copyright (C) 2015 Microsoft Corporation. All rights reserved.
 
 PS C:\> New-NetFirewallRule -Name "TCP80" -DisplayName "HTTP on TCP/80" -Protocol tcp -LocalPort 80 -Action Allow -Enabled True
 ```
-Exit out of your powershell prompt. Now you can build the iisdemo container by running
+Exit out of your PowerShell prompt. Now you can build the iisdemo container by running
 ```sh
 docker run --rm -it -p 80:80 iisdemo cmd
 ```
@@ -135,7 +135,7 @@ ADD raxcont.zip /sitecoreDocker/raxcont.zip
 RUN powershell -executionpolicy bypass -Command "expand-archive -Path 'c:\sitecoreDocker\raxcont.zip' -DestinationPath 'c:\inetpub\wwwroot\'"
 RUN /windows/system32/inetsrv/appcmd.exe set vdir "Default Web Site/" -physicalPath:"c:\inetpub\wwwroot\raxcont\website"
 ```
-When we build from this dockerfile, it will use our iisdemo image, make a directory called c:\sitecoreDocker, add the file raxcont.zip to c:\sitecoreDocker\, unzip the file to c:\inetpub\wwwroot and finally set the default web site physical path to our unzipped location.
+When we build from this dockerfile, it will use our iisdemo image, make a directory called c:\sitecoreDocker, add the file **raxcont.zip** to c:\sitecoreDocker\, unzip the file to c:\inetpub\wwwroot and finally set the default web site physical path to our unzipped location.
 
 Let's build our image by typing
 ```sh
