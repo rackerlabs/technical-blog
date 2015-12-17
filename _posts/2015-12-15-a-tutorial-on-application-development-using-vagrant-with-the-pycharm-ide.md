@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A Tutorial on Application Development Using Vagrant with the PyCharm IDE
+title: "A Tutorial on Application Development Using Vagrant with the PyCharm IDE"
 date: 2015-12-15 23:59
 comments: false
 author: Brandon Griffin
