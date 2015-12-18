@@ -26,9 +26,9 @@ My main objective is to take an existing Sitecore 8.0 installation on my laptop 
 
 Once you setup your Docker host, using the Microsoft PowerShell script, you need to create an IIS image. we need to create our IIS image. Use the following command to see a list of available images on your Docker host:
 
-`
+```sh
 docker images
-`
+```
 
 You will see a list of available images on your Docker host.
 
@@ -40,9 +40,9 @@ windowsservercore   latest              6801d964fda5        6 weeks ago         
 
 To search the Microsoft repo for what images are available, use the following command:
 
-`
+```sh
 docker search microsoft
-`
+```
 
 You will see a list of images available to pull down.
 
@@ -91,9 +91,9 @@ Please save your dockerfile to c:\iisdemo and call it "dockerfile".
 
 Let's build the image, you'll need to execute the dockerfile by running
 
-`
+```sh
 docker build -t iisdemo c:\iisdemo\
-`
+```
 
 The ` -t ` flag tags the new image as iisdemo and ` c:\iisdemo\ ` tells Docker where to look for the dockerfile. Following is an excerpt of the build process:
 
@@ -113,9 +113,9 @@ Step 2 : RUN dism /online /enable-feature /all /featurename:IIS-ASPNET45 /NoRest
 
 If you now type
 
-`
+```sh
 docker images
-`
+```
 
 You will see your new image in our local repo called iisdemo.
 Let's start our IIS web server container up and test to make sure we can connect. Before you start the container, you'll need the IP address of the container host, and you need to allow port 80 through the firewall.
@@ -132,9 +132,9 @@ PS C:\> New-NetFirewallRule -Name "TCP80" -DisplayName "HTTP on TCP/80" -Protoco
 
 Exit out of your PowerShell prompt. Now you can build the iisdemo container by running
 
-`
+```
 docker run --rm -it -p 80:80 iisdemo cmd
-`
+```
 
 This will launch a container, listening on port 80, with an interactive cmd prompt and remove the container once we exit out of it. 
 If I now browse from my laptop to the Docker VM host ip address, I am presented with the IIS10 splash page. Success! Now, let's create another dockerfile to deploy Sitecore.
@@ -162,15 +162,15 @@ When we build from this dockerfile, it will use our iisdemo image, make a direct
 
 Let's build our image by typing
 
-`
+```sh
 docker build -t sc c:\sitecore
-`
+```
 
 We can now launch a container with our Sitecore deployment.
 
-`
+```sh
 docker run --rm -it -p 80:80 sitecore cmd
-`
+```
 
 Browse to your docker host IP and the default sitecore page shows up.
 
