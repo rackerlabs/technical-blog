@@ -24,7 +24,7 @@ To start running Docker containers, we will need a Docker host. Microsoft wrote 
 
 My main objective is to take an existing Sitecore 8.0 installation on my laptop and move it into a container image. I used the Sitecore web application installer to do a quick local installation. I am using SQL Azure for my sql server, but as long as you can hit your sql server from your container, however you choose to host the databases will work just fine.
 
-Once you setup your Docker host, using the Microsoft PowerShell script, you need to create an IIS image. we need to create our IIS image. Use the following command to see a list of available images on your Docker host:
+Once you setup your Docker host, using the Microsoft PowerShell script, you need to create an IIS image. Use the following command to see a list of available images on your Docker host:
 
 ```sh
 docker images
@@ -66,7 +66,7 @@ microsoft/ruby       Ruby installed in a Windows Server Core ba...   1          
 microsoft/sqlite     SQLite installed in a Windows Server Core ...   1                    [OK]
 ```
 
-There is a good spread of images from Ruby, Redis, ASP.N 5, IIS, etc. We could build our own image by launching a new container and installing IIS and ASP.Net, but let's pull an existing image instead.
+There is a good spread of images from Ruby, Redis, ASP.Net 5, IIS, etc. We could build our own image by launching a new container and installing IIS and ASP.Net, but let's pull an existing image instead.
 
 On your Docker host, create a new directory called **c:\iisdemo**. We will use this directory to hold our dockerfile we will create. A dockerfile is just a set of instructions to build a Docker image. 
 
