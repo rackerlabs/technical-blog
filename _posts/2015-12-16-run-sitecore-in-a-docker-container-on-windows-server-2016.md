@@ -169,7 +169,7 @@ docker build -t sc c:\sitecore
 We can now launch a container with our Sitecore deployment.
 
 ```sh
-docker run --rm -it -p 80:80 sitecore cmd
+docker run --rm -it -p 80:80 sc cmd
 ```
 
 Browse to your docker host IP and the default sitecore page shows up.
