@@ -7,7 +7,7 @@ author: Everett Toews
 bio: >
     Everett is a Rackspace Developer Advocate, he's from Canada (I think) and he's a super-nice guy. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed qui iste non quos, consequuntur nulla est eaque animi adipisci consectetur ipsam perspiciatis harum vitae voluptatibus assumenda eveniet. Unde, dolor, ex.
 authorIsRacker: true
-authorAvatar: https://pbs.twimg.com/profile_images/3756796588/5fa4fdf087b04379b16e2d181c6ff8c7_400x400.png
+authorAvatar: https://www.gravatar.com/avatar/c1a75adb52f40016a480cee292527895
 published: true
 categories:
   - workshop
