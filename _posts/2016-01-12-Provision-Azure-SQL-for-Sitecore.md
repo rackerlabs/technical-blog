@@ -4,6 +4,7 @@ title: "Provision an Azure SQL server for Sitecore with PowerShell"
 date: 2016-01-12 10:45
 comments: false
 author: Jimmy Rudley
+authorIsRacker: true
 published: true
 categories:
     - devops
