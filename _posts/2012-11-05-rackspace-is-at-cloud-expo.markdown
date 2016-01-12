@@ -3,7 +3,8 @@ layout: post
 title: "Rackspace is at Cloud Expo!"
 date: 2012-11-05 17:05
 comments: true
-categories: General 
+categories:
+  - General 
 author: "Hart Hoover"
 ---
 Rackspace will be present at [Cloud Expo](http://cloudexpo2012west.sys-con.com/) in Santa Clara this week! If you’re a Rackspace customer we would love for you to stop by our booth and talk to us about how your company uses the [Open Cloud](http://rackspace.com/cloud). We also have several Rackers speaking during the conference:

@@ -4,9 +4,9 @@ title: "Security on the Open Cloud"
 date: 2013-03-14 08:00
 comments: true
 author: Hart Hoover
-categories: 
-- Security
-- Five Pillars
+categories:
+  - Security
+  - Five Pillars
 ---
 {% img right pillars/pillar.png 160 160 %}
 Security is a major concern for all hosting platforms, but in the cloud security has traditionally been a detractor to cloud adoption. Security concerns include:

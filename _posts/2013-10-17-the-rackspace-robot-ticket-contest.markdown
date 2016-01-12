@@ -6,9 +6,9 @@ comments: true
 author: Jesse Noller
 published: true
 categories:
-    robots
-    developers
-    contests
+  - robots
+  - developers
+  - contests
 ---
 
 {% img 2013-10-17-the-rackspace-robot-ticket-contest/robotsconflogo.png 'RobotsConf' 'RobotsConf' %}

@@ -6,9 +6,9 @@ comments: true
 author: Glen Campbell
 published: true
 categories:
-    code for america
-    developers
-    outreach
+  - code for america
+  - developers
+  - outreach
 ---
 
 
