@@ -7,7 +7,6 @@ author: Matthew Thode
 published: true
 categories:
  - DevOps
- - Cloud Images
  - Configuration Management
 ---
 

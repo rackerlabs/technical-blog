@@ -7,7 +7,6 @@ author: Matt Dorn
 published: true
 categories:
  - OpenStack
- - openstack-keystone
  - apache
  - python
 bio:

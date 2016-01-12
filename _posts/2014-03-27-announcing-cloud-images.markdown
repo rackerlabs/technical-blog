@@ -7,7 +7,6 @@ author: Brian Rosmaita
 published: true
 categories:
 - Cloud Servers
-- Cloud Images
 - Images
 - OpenStack
 ---

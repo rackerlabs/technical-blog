@@ -9,7 +9,7 @@ categories:
 - jclouds
 - java
 - sdk
-- developer
+- developers
 ---
 {% img right 2013-11-07-jclouds-is-an-apache-tlp/jclouds.jpg 200 %}
 

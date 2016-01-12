@@ -8,7 +8,6 @@ published: true
 categories:
   - rackspace-private-cloud
   - Orchestration
-  - openstack-heat
 bio:
   Miguel Grinberg is a software engineer with a background in web technologies and REST APIs.
   He is the author of the book "Flask Web Development" from O'Reilly Media, and has a blog at

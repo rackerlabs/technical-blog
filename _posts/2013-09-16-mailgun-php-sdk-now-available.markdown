@@ -5,10 +5,10 @@ date: 2013-09-16 13:33
 comments: true
 author: Michael Ferranti
 published: true
-categories: 
+categories:
 - PHP
 - Mailgun
-- SDKs
+- SDK
 ---
 At Rackspace we've been putting a lot of work into SDKs lately. Recently the team at Mailgun joined the SDK club and released an officially supported SDK for PHP.  They are also working on SDKs for additional languages like C#, Ruby and Python which will be coming soon.
 
@@ -24,7 +24,7 @@ The typical flow for using this Opt-in handler class would be as follows:
 
 **Recipient Clicks Opt In Link** -> [Validate Opt In Link] -> [Subscribe User] -> [Send final confirmation]
 
-It is best to use this class for your website subscription forms, so youâ€™ll need a web server accessible to the internet to handle the validation link click. 
+It is best to use this class for your website subscription forms, so youâ€™ll need a web server accessible to the internet to handle the validation link click.
 
 For more details check out the the full blog on [Mailgun.com][3].  And if you didn't already know, remember that Rackspace customers can use Mailgun for free, up to 50,000 emails per month.  Just click on the "More" link in the Rackspace Cloud control panel, then select Mailgun.
 

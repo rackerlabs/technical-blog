@@ -11,7 +11,7 @@ categories:
 - pkgcloud
 - libcloud
 - sdk
-- developer
+- developers
 ---
 {% img right 2014-01-28-the-dual-advantage-of-multi-cloud-toolkits/multi-cloud.png 200 %}
 

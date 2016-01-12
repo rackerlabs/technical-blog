@@ -6,7 +6,6 @@ comments: true
 author: Jerry Schwartz
 published: true
 categories:
-- cloud
 - Cloud Block Storage
 - cbs
 - storage
@@ -87,4 +86,3 @@ We have learned a lot from our customers this past year and will be making a
 number of exciting announcements over the next several months. We’re thrilled
 about our Cloud Block Storage offering and how it is benefiting our customers,
 and we look forward to celebrating many more birthdays in the future.
-

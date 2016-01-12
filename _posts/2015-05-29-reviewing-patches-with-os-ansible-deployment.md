@@ -9,7 +9,6 @@ categories:
   - ansible
   - openstack
   - rackspace-private-cloud
-  - openstack-glance
 ---
 
 As someone who works daily on libraries that power OpenStack, OpenStack

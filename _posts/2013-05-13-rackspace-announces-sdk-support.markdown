@@ -5,10 +5,9 @@ date: 2013-05-13 10:20
 comments: true
 author: Hart Hoover
 published: true
-categories: 
+categories:
 - pyrax
 - fog
-- openstack.net
 - jclouds
 - pkgcloud
 - php-opencloud

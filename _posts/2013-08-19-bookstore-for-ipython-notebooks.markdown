@@ -8,8 +8,7 @@ published: true
 categories:
 - Cloud Files
 - OpenStack
-- IPython
-- OpenStack Swift
+- Python
 ---
 
 {% img 2013-08-19-bookstore-for-ipython-notebooks/IPy_header.png 'IPython logo' 'IPython logo' %}
@@ -155,5 +154,3 @@ Happy Computing!
 # About the Author
 
 Kyle Kelley is a Developer Support Engineer at Rackspace. You can follow him on twitter [@rgbkrk](http://twitter.com/rgbkrk).
-
-

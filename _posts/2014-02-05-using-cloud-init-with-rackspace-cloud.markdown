@@ -7,8 +7,7 @@ author: Trey Hoehne
 published: true
 categories:
  - Cloud-init
- - Cloud
- - Configuration
+ - Configuration Management
  - Linux
 ---
 It goes without saying that booting and configuring a server manually

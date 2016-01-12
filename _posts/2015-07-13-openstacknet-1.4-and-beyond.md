@@ -8,9 +8,8 @@ authorIsRacker: true
 authorAvatar: https://secure.gravatar.com/avatar/8b96f8872eb3f398809daf017ee3a8ab
 published: true
 categories:
-    - OpenStack
-    - OpenStack.NET
-    - CDN
+  - OpenStack
+  - CDN
 ---
 
 [OpenStack.NET 1.4.0](https://github.com/openstacknetsdk/openstack.net/releases/v1.4.0.0) has just been pushed out the door! This release has two things going for it: the release provides support for Content Delivery Networks (CDN), and it heralds some big changes for the future of OpenStack.NET.

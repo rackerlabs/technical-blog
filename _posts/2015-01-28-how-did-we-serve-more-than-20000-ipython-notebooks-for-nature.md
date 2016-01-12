@@ -6,7 +6,7 @@ comments: true
 author: Kyle Kelley
 published: true
 categories:
-    - IPython
+    - Python
     - Science
     - Data Science
     - Docker
@@ -59,6 +59,6 @@ This bit us in a couple ways. In order to scale across hosts we'd need to put th
 
 ## Closing up
 
-In the end we ended up serving more than 20,000 notebook servers and counting. 
+In the end we ended up serving more than 20,000 notebook servers and counting.
 
 We love IPython notebooks, the overall architecture that has been built out here, and hope to keep supporting Open Source projects do interesting things on the internet in a way that benefits community, technology, and the whole ecosystem.

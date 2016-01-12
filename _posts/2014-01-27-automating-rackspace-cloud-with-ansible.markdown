@@ -12,11 +12,9 @@ categories:
  - devops
  - configuration management
  - deployment
- - developer
  - developers
  - opensource
  - python
- - cloud
  - orchestration
 ---
 

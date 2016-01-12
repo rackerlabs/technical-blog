@@ -7,7 +7,6 @@ author: Ed Leafe
 published: true
 categories:
   - Charity
-  - Cloud
   - Community
   - Developers
   - Events
@@ -38,7 +37,7 @@ I chose to work with the Memphis Area Coalition on Hunger along with several oth
 
 Every 4-6 hours we would have a standup to discuss where each group was, what was blocking their progress, and where we expected to be by the next standup. If a group had an issue that was blocking them, I would float over to their team for a bit to help them out. As a result I got to meet a lot more of the developers, and learn about such fun things like Google OAuth2 integration.
 
-The space at Cowork Memphis was available around the clock, and many developers chose to work through the night. That’s a younger man’s game, however, so I headed back to the hotel for some sleep around midnight. 
+The space at Cowork Memphis was available around the clock, and many developers chose to work through the night. That’s a younger man’s game, however, so I headed back to the hotel for some sleep around midnight.
 
 Saturday was pretty much non-stop development, as we worked to get something working by the end of GiveCamp. Again, I contributed little coding, but instead led many of the design discussions, and helped to keep the project moving. The design was settled, and since I'm not that great at tweaking web front ends, I worked on defining the data backend. The challenge that we had was to enter information about all of the various locations that provided food for the hungry, such as location, days/hours of operation, and whether they were child-friendly. That last data item was one of the things I learned from the organizers of the charity: since most of the hungry are poor families with small children, many services are geared toward making their service safe for small children. Many others took in anyone off the street, including people with severe mental illnesses, and you wouldn't want to send a family with small children there. Once the data was entered, people could go to the web, enter their location, and find all the services that were nearby.
 

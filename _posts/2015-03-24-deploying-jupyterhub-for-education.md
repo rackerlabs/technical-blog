@@ -8,7 +8,6 @@ published: true
 categories:
     - python
     - docker
-    - ipython
     - jupyter
     - education
 ---

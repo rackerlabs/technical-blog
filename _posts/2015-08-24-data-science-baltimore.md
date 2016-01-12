@@ -7,7 +7,6 @@ author: Kenny Gorman
 published: true
 categories:
     - data science
-    - ipython
     - Pandas
     - python
 ---

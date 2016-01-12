@@ -6,7 +6,6 @@ comments: true
 author: Mike Metral
 published: true
 categories:
-- Cloud Images
 - Custom Images
 - Public Cloud
 - QCOW

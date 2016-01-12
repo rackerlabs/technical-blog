@@ -6,9 +6,8 @@ comments: true
 author: Walter Bentley
 published: true
 categories:
-    - rackspace-public-cloud
     - rackspace-cloud-files
-    - Ansible 
+    - Ansible
 ---
 
 While this blog post may seem trivial on the surface, it does pack some very interesting information on how very flexible the Rackspace Cloud Files product can be.  While executing another customer project, the age old question of: “Where are we going to put the database backups?” was raised.  Back in the day this question only really had one solution.  In the current age of the cloud, you have a few options.  Since I like to live life on the edge…I raised my hand and said Cloud Files.
@@ -31,12 +30,12 @@ Let’s get started!
 Clone the repo below to pull down the roles you will need.  Consider this a working example that you can later alter for your specific needs.
 
 	$ git clone --recursive https://github.com/wbentley15/rax-ansible-cf.git
-	
+
 #####Step #2: Examine roles and populate variables
 
 Take a look at the roles and familiarize yourself with the steps. Find below all the variables for which you will need to supply values. The variables are located in the group_vars directory within the localhost file:
 
-	dbuser: database user with admin privileges 
+	dbuser: database user with admin privileges
 	dbpass: database user password
 	raxcontainer:  Rackspace Cloud Files container name
 	raxkey:  Rackspace API key

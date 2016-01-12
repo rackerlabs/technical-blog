@@ -9,12 +9,12 @@ categories:
 - jclouds
 - java
 - sdk
-- developer
+- developers
 - openstack
 ---
 {% img right 2013-11-07-jclouds-is-an-apache-tlp/jclouds.jpg 200 %}
 
-Apache jclouds version 1.7.0 has been released into the wild. This is jclouds' first minor point version release as an Apache top level project. Community development on the project is continuing to accelerate and there are some major additions I'd like to highlight. 
+Apache jclouds version 1.7.0 has been released into the wild. This is jclouds' first minor point version release as an Apache top level project. Community development on the project is continuing to accelerate and there are some major additions I'd like to highlight.
 
 <br/>
 
@@ -24,7 +24,7 @@ Apache jclouds version 1.7.0 has been released into the wild. This is jclouds' f
 
 I added support for Queuing (project alias: Marconi). OpenStack Queuing is a robust, web-scale message queuing service to support the distributed nature of large web applications. At Rackspace, our implementation of it is known as [Cloud Queues](http://www.rackspace.com/cloud/queues/).
 
-Kris Sterckx from Alcatel-Lucent added support for Networking (project alias: Neutron). [OpenStack Networking](http://www.openstack.org/software/openstack-networking/) is a pluggable and scalable system for managing network resources, such as networks, subnets, and virtual network interfaces. 
+Kris Sterckx from Alcatel-Lucent added support for Networking (project alias: Neutron). [OpenStack Networking](http://www.openstack.org/software/openstack-networking/) is a pluggable and scalable system for managing network resources, such as networks, subnets, and virtual network interfaces.
 
 ## Rackspace
 

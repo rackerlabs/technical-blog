@@ -9,7 +9,7 @@ categories:
 - php-opencloud
 - php
 - sdk
-- developer
+- developers
 - openstack
 bio: |
  Shaunak Kashyap is a Developer Advocate on the Rackspace Developer Experience

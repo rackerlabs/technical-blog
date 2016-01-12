@@ -9,7 +9,7 @@ categories:
 - phpopencloud
 - php
 - sdk
-- developer
+- developers
 ---
 
 We've just let PHP OpenCloud v1.7.0 into the wild, so it would be great to give some details of the SDK's new abilities. I've written a [changelog](https://github.com/rackspace/php-opencloud/blob/master/docs/changelog/1.7.0.md) of features, plus an [upgrade guide](https://github.com/rackspace/php-opencloud/blob/master/docs/changelog/Upgrading%20to%201.7.0.md) for any folks who are daunted with the prospect of updating their codebase.

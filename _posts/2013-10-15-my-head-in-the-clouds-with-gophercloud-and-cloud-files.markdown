@@ -8,7 +8,6 @@ published: true
 categories:
 - OpenStack
 - Gophercloud
-- Cloud
 - Files
 ---
 
@@ -66,4 +65,3 @@ Besides, having existing infrastructure for more platforms might provide the way
 especially for non-OpenStack platforms, come.
 Taken at face value, "Build it and they will come," may not always hold true.
 Sometimes, I think, folks just want a paved road to the construction site.
-

@@ -5,9 +5,9 @@ date: 2013-08-13 08:00
 comments: true
 author: Samuel A. Falvo II
 published: true
-categories: 
+categories:
 - go
-- SDKs
+- SDK
 - Developers
 ---
 {% img right 2013-08-12-gophercloud/gophercloud.png 200 %}
@@ -31,7 +31,7 @@ called [Gophercloud][7] (Mascot: gopher, check! Cloud? Check!)!
 
 Rackspace firmly believes in a tool and API ecosystem where developers in any language aren’t locked-in on the API, or code level. This is why we actively contribute to packages such as [Fog][10] (Ruby), [jclouds][11] (Java), [pkgcloud][12] (node.js) and [libcloud][13] adding OpenStack support first, and then layering on Rackspace Cloud specific extensions.
 
-[OpenStack][8] is the open source, community driven “cloud infrastructure” project that Rackspace helped found, and many other companies and individuals contribute to on a daily basis. Our investment in it is a firm belief that lock-in to proprietary systems and APIs on any level is bad for developers and actively harmful. However, we realize that it is not the only “cloud” out there – so when we look at tooling such as [Gophercloud][7], and other SDKs, devops tools, etc – we take a “what is good for the community” first approach. 
+[OpenStack][8] is the open source, community driven “cloud infrastructure” project that Rackspace helped found, and many other companies and individuals contribute to on a daily basis. Our investment in it is a firm belief that lock-in to proprietary systems and APIs on any level is bad for developers and actively harmful. However, we realize that it is not the only “cloud” out there – so when we look at tooling such as [Gophercloud][7], and other SDKs, devops tools, etc – we take a “what is good for the community” first approach.
 
 This means that supporting and making tools and SDKs – such as [Gophercloud][7] – that are designed to support many cloud hosts and help you, as an application developer not get locked into specific APIs on a code level is paramount to our ideals and goals.
 

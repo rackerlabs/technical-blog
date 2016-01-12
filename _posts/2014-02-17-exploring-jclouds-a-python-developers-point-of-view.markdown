@@ -8,7 +8,7 @@ published: true
 categories:
 - jclouds
 - sdk
-- developer
+- developers
 - groovy
 - java
 - python
@@ -265,4 +265,3 @@ So there you go. Again the purpose of using Groovy here is to learn jclouds
 in a Java context. You can of course explore jclouds with Jython and JRuby but
 hopefully this will give the Python/Ruby developer yet another option when
 exploring and hacking!
-
