@@ -1,14 +1,13 @@
 ---
 layout: post
-title: "Mailgun PHP SDK Now Available"
-date: 2013-09-16 13:33
+title: Mailgun PHP SDK Now Available
+date: '2013-09-16 13:33'
 comments: true
 author: Michael Ferranti
 published: true
 categories:
-- PHP
-- Mailgun
-- SDK
+  - Mailgun
+  - SDK
 ---
 At Rackspace we've been putting a lot of work into SDKs lately. Recently the team at Mailgun joined the SDK club and released an officially supported SDK for PHP.  They are also working on SDKs for additional languages like C#, Ruby and Python which will be coming soon.
 

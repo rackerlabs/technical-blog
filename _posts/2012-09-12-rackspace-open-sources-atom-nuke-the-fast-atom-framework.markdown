@@ -1,12 +1,11 @@
 ---
 comments: true
-date: 2012-09-12 13:13:50
+date: 2012-09-12T13:13:50.000Z
 layout: post
 author: Chad Lung
-title: "Rackspace Open Sources Atom Nuke, The Fast Atom Framework"
+title: 'Rackspace Open Sources Atom Nuke, The Fast Atom Framework'
 categories:
-- Big Data
-- Cloud Servers
+  - Cloud Servers
 ---
 _This story is contributed by [Chad Lung](http://www.linkedin.com/in/chadlung), a software engineer on the Rackspace Cloud Integration team. Chad is the lead maintainer of Atom Hopper project. Be sure to check out his personal blog at [http://www.giantflyingsaucer.com/blog/](http://www.giantflyingsaucer.com/blog/) and follow [@chadlung](https://twitter.com/chadlung) on Twitter._
 

@@ -1,17 +1,13 @@
 ---
 layout: post
-title: "Introducing boot.rackspace.com"
-date: 2014-01-23 16:00
+title: Introducing boot.rackspace.com
+date: '2014-01-23 16:00'
 comments: true
 author: Antony Messerli
 published: true
-categories: 
-- Cloud Servers
-- Cloud Tools
-- Images
-- iPXE
-- OpenStack
-- Performance
+categories:
+  - Cloud Servers
+  - OpenStack
 ---
 
 We have had a number of customers request the need to be able to create their own Cloud Servers images rather than taking snapshots from our base installs.  To fulfill this need, we are announcing a new tool as a preview today called [boot.rackspace.com](http://boot.rackspace.com).  The tool enables you to utilize the various Linux distributions installers to install directly to the disk of your Cloud Server. <!-- more -->

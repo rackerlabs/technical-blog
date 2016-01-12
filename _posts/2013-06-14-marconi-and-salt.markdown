@@ -1,14 +1,12 @@
 ---
 layout: post
-title: "Marconi and Salt, part 1"
-date: 2013-06-14 07:45
+title: 'Marconi and Salt, part 1'
+date: '2013-06-14 07:45'
 comments: true
 author: Oz Akan
 published: true
-categories: 
-- SaltStack
-- Marconi
-- OpenStack
+categories:
+  - OpenStack
 ---
 When Henry Ford invented the assembly line at his automobile company he changed the world as we know it. It wasn’t the automobile itself that sparked that dramatic change; it was the mass production of the automobile that enabled people to go wherever they wanted whenever they wanted that created a world of possibilities. The automobile was not the final product; it was the great tool to build new products on top of it. And the ability to create a million copies of that great tool gave birth to the industrial age.
 Our story starts with cloud computing era when IT finally gets rid of the boundaries of physical environments but still finds itself incapable of delivering the "great tool" quickly enough to the people who are building new products on top of it. The great tools in this story are computers or better put, servers configured for specific purposes.

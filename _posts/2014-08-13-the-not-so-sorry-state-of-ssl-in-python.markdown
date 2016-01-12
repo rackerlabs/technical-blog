@@ -1,14 +1,13 @@
 ---
 layout: post
 title: The not-so-sorry state of SSL in Python
-date: 2014-08-13
+date: 2014-08-13T00:00:00.000Z
 comments: true
 author: Alex Gaynor and David Reid
 published: true
 categories:
- - ssl-tls
- - python
- - security
+  - python
+  - security
 ---
 ### Introduction
 TLS and SSL are two critical technologies which underly much of the secure

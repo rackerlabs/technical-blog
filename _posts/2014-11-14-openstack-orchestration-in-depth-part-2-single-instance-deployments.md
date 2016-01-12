@@ -1,20 +1,14 @@
 ---
 layout: post
-title: "OpenStack Orchestration In Depth, Part II: Single Instance Deployments"
-date: 2014-11-14 07:15
+title: 'OpenStack Orchestration In Depth, Part II: Single Instance Deployments'
+date: '2014-11-14 07:15'
 comments: true
 author: Miguel Grinberg
 published: true
 categories:
   - rackspace-private-cloud
   - Orchestration
-bio:
-  Miguel Grinberg is a software engineer with a background in web technologies and REST APIs.
-  He is the author of the book "Flask Web Development" from O'Reilly Media, and has a blog at
-  http://blog.miguelgrinberg.com, where he writes about a variety of topics including web
-  development, robotics, photography and the occasional movie review. Miguel works as a
-  Software Developer with the Rackspace Private Cloud team. He lives in Portland,
-  Oregon with his wife, four kids, two dogs and a cat. Follow @miguelgrinberg on Twitter.
+bio: "Miguel Grinberg is a software engineer with a background in web technologies and REST APIs. He is the author of the book \"Flask Web Development\" from O'Reilly Media, and has a blog at http://blog.miguelgrinberg.com, where he writes about a variety of topics including web development, robotics, photography and the occasional movie review. Miguel works as a Software Developer with the Rackspace Private Cloud team. He lives in Portland, Oregon with his wife, four kids, two dogs and a cat. Follow @miguelgrinberg on Twitter."
 ---
 
 Welcome to the second part of my series on OpenStack orchestration with Heat. In the [previous article](/blog/openstack-orchestration-in-depth-part-1-introduction-to-heat) I gave you an introduction to Heat orchestration. All the examples I showed you were simple and not terribly useful, as they were only intended to introduce the structure of the HOT (Heat Orchestration Template) syntax.

@@ -1,12 +1,11 @@
 ---
 layout: post
-title: "Managing the Open Cloud with Windows 8"
-date: 2012-11-16 07:00
+title: Managing the Open Cloud with Windows 8
+date: '2012-11-16 07:00'
 comments: true
 author: Phil Jirsa
-categories: 
-- Cloud Servers
-- Microsoft
+categories:
+  - Cloud Servers
 ---
 *Guest post contributed by [Phil Jirsa](http://www.linkedin.com/pub/phil-jirsa/6/746/182), Sharepoint Developer on the Rackspace Sharepoint Services team.  You can follow [Phil on Twitter](https://twitter.com/pjirsa) for more information and Sharepoint goodness.*
 

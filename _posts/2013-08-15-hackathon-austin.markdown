@@ -1,13 +1,12 @@
 ---
 layout: post
-title: "Hackathon Austin: Ideas, Creations, Demos... And Lots Of Coffee"
-date: 2013-08-15 08:00
+title: 'Hackathon Austin: Ideas, Creations, Demos... And Lots Of Coffee'
+date: '2013-08-15 08:00'
 comments: true
 author: Lillie Hejl
 published: true
-categories: 
-- Hackathon
-- Developers
+categories:
+  - Developers
 ---
 {% img right 2013-08-15-hackathon-austin/ATX01.jpg 300 %}
 At the crack of 9 a.m., the breakfast tacos are here, but coffee is yet to arrive. A quiet group of Rackers have already shuffled in slowly. Out of the 12 or so makeshift tables, there isn’t one that’s empty.

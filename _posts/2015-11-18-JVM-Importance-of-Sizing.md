@@ -1,12 +1,11 @@
 ---
 layout: post
-title: "Your JVM – The Importance of Sizing"
-date: 2015-11-18 10:00
+title: Your JVM – The Importance of Sizing
+date: '2015-11-18 10:00'
 comments: true
 author: Jonathan Hurley
 published: true
-categories:
-    - Ecommerce
+categories: []
 ---
 
 In the good old days the measure of a programmer was efficiency - how much functionality

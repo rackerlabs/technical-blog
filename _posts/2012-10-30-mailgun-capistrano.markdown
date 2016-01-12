@@ -1,11 +1,11 @@
 ---
 comments: true
-date: 2012-10-30 14:07:50
+date: 2012-10-30T14:07:50.000Z
 layout: post
 title: Send emails using Mailgun from your Capistrano recipes
 author: Hart Hoover
 categories:
-- Mailgun
+  - Mailgun
 ---
 
 The guys over at Mailgun just posted an overview of how to use Mailgun to power email notifications from your Capistrano recipes. We've got a lot of customers using Capistrano to automate their big web deployments, so we thought we'd share a summary. You can read the full post on the [Mailgun blog](http://blog.mailgun.com/using-mailgun-with-capistrano-recipes/).

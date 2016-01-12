@@ -1,16 +1,20 @@
 ---
 layout: post
-title: "Better Builders with jclouds"
-date: 2014-08-05 23:59
+title: Better Builders with jclouds
+date: '2014-08-05 23:59'
 comments: true
 author: Zack Shoylev
 published: true
 categories:
-    - jclouds
-    - developers
-    - sdk
-bio: |
- Zack Shoylev is a committer on the Apache jclouds project and a Software Developer for Rackspace. He is currently working on   open source cloud SDK development. Zack’s technical interests focus on open source development, cloud computing, and big data  processing with Java. Zack's twitter handle: @zackshoylev and Freenode nick: zacksh
+  - jclouds
+  - developers
+  - sdk
+bio: >
+  Zack Shoylev is a committer on the Apache jclouds project and a Software
+  Developer for Rackspace. He is currently working on   open source cloud SDK
+  development. Zack’s technical interests focus on open source development, cloud
+  computing, and big data  processing with Java. Zack's twitter handle:
+  @zackshoylev and Freenode nick: zacksh
 ---
 # Better Builders with jclouds
 

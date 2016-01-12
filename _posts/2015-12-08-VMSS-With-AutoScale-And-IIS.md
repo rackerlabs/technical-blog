@@ -1,14 +1,11 @@
 ---
 layout: post
-title: "VMSS With AutoScale And IIS"
-date: 2015-12-04 10:45
+title: VMSS With AutoScale And IIS
+date: '2015-12-04 10:45'
 comments: false
 author: Jimmy Rudley
 published: true
-categories:
-    - Azure
-    - VMSS
-    - Autoscale
+categories: []
 ---
 
 Virtual Machine Scale Sets, which was recently released in preview from Microsoft, lets you manage a set of virtual machines as one. 

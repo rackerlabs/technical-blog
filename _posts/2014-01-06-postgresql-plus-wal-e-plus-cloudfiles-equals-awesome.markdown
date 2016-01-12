@@ -1,13 +1,11 @@
 ---
 layout: post
-title: "PostgreSQL + WAL-E + Cloudfiles = Awesome"
-date: 2014-01-6 12:00
+title: PostgreSQL + WAL-E + Cloudfiles = Awesome
+date: '2014-01-6 12:00'
 comments: true
 author: Alex Gaynor
 published: true
-categories:
- - performance cloud servers
- - postgresql
+categories: []
 ---
 
 If you're a big PostgreSQL fan like I am, you may have heard of a tool called

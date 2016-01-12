@@ -1,19 +1,15 @@
 ---
 layout: post
-date: 2015-11-10
-title: "Cloud Orchestration now available in rack"
+date: 2015-11-10T00:00:00.000Z
+title: Cloud Orchestration now available in rack
 comments: true
 author: Pratik Mallya
 authorIsRacker: true
-authorAvatar: https://avatars2.githubusercontent.com/u/904679?v=3&s=460
+authorAvatar: 'https://avatars2.githubusercontent.com/u/904679?v=3&s=460'
 published: true
 categories:
-    - Rackspace
-    - tools
-    - command-line
-    - Orchestration
-bio:
-  Pratik Mallya is a Software Developer at Rackspace. He works within the Cloud Orchestration team. He holds an MS from UIUC and BS from BITS Pilani, India.
+  - Orchestration
+bio: 'Pratik Mallya is a Software Developer at Rackspace. He works within the Cloud Orchestration team. He holds an MS from UIUC and BS from BITS Pilani, India.'
 ---
 
 We're excited to announce that Cloud Orchestration is now accessible via [`rack`](https://developer.rackspace.com/docs/rack-cli)!

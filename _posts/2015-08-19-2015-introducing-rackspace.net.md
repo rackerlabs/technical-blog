@@ -1,15 +1,14 @@
 ---
 layout: post
-title: "Introducing Rackspace.NET"
-date: 2015-08-19
+title: Introducing Rackspace.NET
+date: 2015-08-19T00:00:00.000Z
 comments: true
 author: Carolyn Van Slyck
 authorIsRacker: true
-authorAvatar: https://secure.gravatar.com/avatar/8b96f8872eb3f398809daf017ee3a8ab
+authorAvatar: 'https://secure.gravatar.com/avatar/8b96f8872eb3f398809daf017ee3a8ab'
 published: true
 categories:
   - OpenStack
-  - Rackspace.NET
 ---
 
 The Rackspace .NET SDK beta is now available! This is the first step towards improving the .NET

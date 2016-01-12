@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Transitioning to LittleChef"
-date: 2013-03-13
+title: Transitioning to LittleChef
+date: 2013-03-13T00:00:00.000Z
 comments: true
 author: Dave King
 categories:
-- Chef
-- Ruby
-- Configuration Management
+  - Chef
+  - Ruby
+  - Configuration Management
 ---
 I was once debugging a deployment issue where one server wouldn't send outgoing email, even though it was running the same version of our application software as other machines that were functioning just fine.  After a while I traced it down to the fact that four years ago a developer had stuck an extra mail JAR file into the Tomcat `lib/` directory.  This incident showed me that every server performing a function should be _exactly the same_ as every other server performing that function.<!-- more -->
 

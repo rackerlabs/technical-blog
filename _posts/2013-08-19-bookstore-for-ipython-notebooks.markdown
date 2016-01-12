@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "Bookstore for IPython Notebooks"
-date: 2013-08-19 08:08
+title: Bookstore for IPython Notebooks
+date: '2013-08-19 08:08'
 comments: true
 author: Kyle Kelley
 published: true
 categories:
-- Cloud Files
-- OpenStack
-- Python
+  - Cloud Files
+  - OpenStack
+  - Python
 ---
 
 {% img 2013-08-19-bookstore-for-ipython-notebooks/IPy_header.png 'IPython logo' 'IPython logo' %}

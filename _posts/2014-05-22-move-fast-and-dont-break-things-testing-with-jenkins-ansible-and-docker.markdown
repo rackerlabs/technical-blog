@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Move fast and don’t break things! Testing with Jenkins, Ansible and Docker"
-date: 2014-05-22 09:20
+title: 'Move fast and don’t break things! Testing with Jenkins, Ansible and Docker'
+date: '2014-05-22 09:20'
 comments: true
 author: Mike Muzurakis
 published: true
@@ -9,7 +9,6 @@ categories:
   - Docker
   - Ansible
   - Jenkins
-  - Testing
 ---
 One of our highest priorities at [Mist.io](https://mist.io) is to never break production. Our users depend on it to manage and monitor their servers and we depend on them. At the same time, we need to move fast with development and deliver updates as soon as possible. We want to be able to easily deploy several times per day.
 

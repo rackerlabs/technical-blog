@@ -1,12 +1,12 @@
 ---
 comments: true
-date: 2012-09-21 10:20:53
+date: 2012-09-21T10:20:53.000Z
 layout: post
 title: 'Supernova:  Managing OpenStack Environments Made Easy'
 author: Wayne Walls
 categories:
-- Cloud Servers
-- OpenStack
+  - Cloud Servers
+  - OpenStack
 ---
 
 _[Major Hayden](http://www.linkedin.com/in/majorhayden) first wrote about Supernova in June on his personal [blog](http://rackerhacker.com/?s=supernova). This follow-up post addresses the changes since then, including secondary service provider coverage, new pypi packages and few more usage examples. You can find Major on [Twitter](https://twitter.com/rackerhacker) or hanging out in the #openstack IRC channel on Freenode._

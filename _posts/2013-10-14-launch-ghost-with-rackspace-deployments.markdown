@@ -1,12 +1,11 @@
 ---
 layout: post
-title: "Launch Ghost with Rackspace Deployments"
-date: 2013-10-14 00:22
+title: Launch Ghost with Rackspace Deployments
+date: '2013-10-14 00:22'
 comments: true
 author: Ryan Walker
 published: true
-categories:
-- Deployments
+categories: []
 ---
 
 After a successful [Kickstarter](http://www.kickstarter.com/projects/johnonolan/ghost-just-a-blogging-platform) campaign with over 5,000 backers raising over $300,000, the team over at [Ghost](http://ghost.org) announced today the public availability of their much anticipated new blogging platform.

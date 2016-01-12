@@ -1,20 +1,18 @@
 ---
 layout: post
-title: "php-opencloud 1.11.0 Released"
-date: 2014-10-24 08:00
+title: php-opencloud 1.11.0 Released
+date: '2014-10-24 08:00'
 comments: true
 author: Shaunak Kashyap
 published: true
 categories:
-- php-opencloud
-- php
-- sdk
-- developers
-- openstack
+  - sdk
+  - developers
+  - openstack
 bio: |
- Shaunak Kashyap is a Developer Advocate on the Rackspace Developer Experience
- team. He works primarily on the open-source php-opencloud SDK. You can find
- Shaunak on Twitter @shaunak and Github as ycombinator.
+  Shaunak Kashyap is a Developer Advocate on the Rackspace Developer Experience
+  team. He works primarily on the open-source php-opencloud SDK. You can find
+  Shaunak on Twitter @shaunak and Github as ycombinator.
 ---
 
 Today we are proud to announce the [v1.11.0 release](https://github.com/rackspace/php-opencloud/releases/tag/v1.11.0) of php-opencloud. In the four months since our last minor release, we have added support for the [OpenStack Orchestration service](https://wiki.openstack.org/wiki/Heat), support for [booting a server from a volume](http://docs.openstack.org/user-guide/content/boot_from_volume.html), and several other improvements and bug fixes. Many of these improvements and bug fixes have come from community contributors, which makes this release just that much more special.

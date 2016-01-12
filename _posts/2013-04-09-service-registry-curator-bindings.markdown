@@ -1,12 +1,11 @@
 ---
 layout: post
-title: "Service Registry Bindings for Netflix Curator"
-date: 2013-04-10 08:00
+title: Service Registry Bindings for Netflix Curator
+date: '2013-04-10 08:00'
 comments: true
 author: Gary Dusbabek
 published: true
-categories: 
-- Service Registry
+categories: []
 ---
 ##The Problem
 Have you ever set out to do something new, only to find yourself encumbered by a list of prerequisites that 

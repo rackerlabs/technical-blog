@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Using the Rackspace Service Registry"
-date: 2012-11-07 22:33
+title: Using the Rackspace Service Registry
+date: '2012-11-07 22:33'
 comments: true
-author: "Hart Hoover"
-categories: [Service Registry]
+author: Hart Hoover
+categories: []
 ---
 {% img featured /rsr_logo.png Rackspace Service Registry %}
 

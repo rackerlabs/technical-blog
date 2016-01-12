@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "This Week in Information Security (Week of July 13th)"
-date: 2015-07-13 23:59
+title: This Week in Information Security (Week of July 13th)
+date: '2015-07-13 23:59'
 comments: true
 author: Charles Neill
 published: true
 categories:
-    - Security
+  - Security
 ---
 
 After 2 weeks off, we're back with another week in information security! We'll dive into several high-profile breaches at the Office of Personnel Management (again) and Hacking Team, a malware creator that counts several governments and law enforcement agencies as customers. The Hacking Team breach uncovered a nasty Adobe Flash 0day that they had discovered and not previously reported, which has been seen in live attacks both before and after public disclosure. On a lighter note, we also have some great guides and tools for you this week.

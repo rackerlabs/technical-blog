@@ -1,18 +1,16 @@
 ---
 layout: post
-title: "Exploring Apache jclouds with Groovy: A Python Developers point of view"
-date: 2014-03-05 11:00
+title: 'Exploring Apache jclouds with Groovy: A Python Developers point of view'
+date: '2014-03-05 11:00'
 comments: true
 author: John Yi
 published: true
 categories:
-- jclouds
-- sdk
-- developers
-- groovy
-- java
-- python
-
+  - jclouds
+  - sdk
+  - developers
+  - java
+  - python
 ---
 
 One of the most powerful features of Python is the REPL (Run, Evaluate, Print,

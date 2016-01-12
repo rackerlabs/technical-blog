@@ -1,13 +1,11 @@
 ---
 layout: post
-title: "Displaying prepared code with syntax highlighting on Android"
-date: 2013-04-23 8:00
+title: Displaying prepared code with syntax highlighting on Android
+date: '2013-04-23 8:00'
 comments: true
 author: John Davidson
 published: true
-categories: 
-- Mobile
-- Android
+categories: []
 ---
 {% img right 2013-04-23-displaying-prepared/android_logo.jpg 150 150 %}
 

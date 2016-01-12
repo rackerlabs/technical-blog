@@ -1,16 +1,13 @@
 ---
 layout: post
-title: "GiveCamp Memphis 2014"
-date: 2014-02-18 13:40
+title: GiveCamp Memphis 2014
+date: '2014-02-18 13:40'
 comments: true
 author: Ed Leafe
 published: true
 categories:
-  - Charity
-  - Community
   - Developers
   - Events
-  - Hackathon
 ---
 
 

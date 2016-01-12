@@ -1,13 +1,13 @@
 ---
 comments: true
-date: 2012-10-15 14:18:51
+date: 2012-10-15T14:18:51.000Z
 layout: post
 title: Rackspace announces Open Cloud SDKs
 author: Wayne Walls
 categories:
-- Cloud Files
-- Cloud Servers
-- OpenStack
+  - Cloud Files
+  - Cloud Servers
+  - OpenStack
 ---
 
 Since Rackspace's cloud is based, in large part, on the [OpenStack](http://openstack.org) suite of open-source cloud services, each service provides an [application programming interface](http://en.wikipedia.org/wiki/Application_programming_interface) (API) so that these services can be controlled programmatically. To assist developers, Rackspace is providing a set of [software development kits](http://en.wikipedia.org/wiki/Software_development_kit) (SDKs) for working with these APIs in specific programming languages. These SDKs each provide a set of API bindings so that programmers do not have to use the REST API directly. In addition, the SDK's behavior is familiar to the users of that language. Each SDK also provides documentation to help users get started with it, along with tested, working sample code that developers can use for their applications today!

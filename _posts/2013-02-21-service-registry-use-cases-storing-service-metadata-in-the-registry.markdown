@@ -1,11 +1,10 @@
 ---
 layout: post
-title: "Service Registry Use Cases: Storing Service Metadata In The Registry"
-date: 2013-02-21 08:04
+title: 'Service Registry Use Cases: Storing Service Metadata In The Registry'
+date: '2013-02-21 08:04'
 comments: true
 author: Tomaz Muraus
-categories: 
-- Service Registry
+categories: []
 ---
 _This is a guest post from Tomaz Muraus. Tomaz is a Racker and a project lead for the Rackspace Service Registry product. He is also a project chair of [Apache Libcloud](http://libcloud.apache.org/), an open-source project which deals with cloud interoperability. Before working on Service Registry he worked on the [Cloud Monitoring](http://www.rackspace.com/cloud/monitoring/) product and before joining Rackspace, he worked at [Cloudkick](https://www.cloudkick.com/) helping customers manage and monitor their infrastructure. In his free time, he loves writting code, contributing to open-source projects, advocating for software freedom, going to the gym and cycling. Be sure to check out his GitHub [page](https://github.com/Kami)._
 

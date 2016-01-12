@@ -1,12 +1,11 @@
 ---
 layout: post
-title: "Automated Deployments Now in the Rackspace Control Panel"
-date: 2013-08-27 13:40
+title: Automated Deployments Now in the Rackspace Control Panel
+date: '2013-08-27 13:40'
 comments: true
 author: Ziad Sawlha
 published: true
-categories:
-- Deployments
+categories: []
 ---
 The hardest part about using new technology is knowing where to begin. Spending hours sifting through blog posts and documentation to set up a server environment is often enough to extinguish the excitement about a new framework or application. By the same token, it is frustrating to deploy hosting architecture when you are excited to see how your latest code will perform. And no one likes having to do the same things over and over to create consistent testing, staging and production environments.
 

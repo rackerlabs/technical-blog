@@ -1,13 +1,12 @@
 ---
 layout: post
-title: "MySQL backup to Rackspace Cloud Files"
-date: 2015-02-17 23:59
+title: MySQL backup to Rackspace Cloud Files
+date: '2015-02-17 23:59'
 comments: true
 author: Walter Bentley
 published: true
 categories:
-    - rackspace-cloud-files
-    - Ansible
+  - Ansible
 ---
 
 While this blog post may seem trivial on the surface, it does pack some very interesting information on how very flexible the Rackspace Cloud Files product can be.  While executing another customer project, the age old question of: “Where are we going to put the database backups?” was raised.  Back in the day this question only really had one solution.  In the current age of the cloud, you have a few options.  Since I like to live life on the edge…I raised my hand and said Cloud Files.

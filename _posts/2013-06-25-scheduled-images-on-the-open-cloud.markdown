@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Scheduled Images On The Open Cloud"
-date: 2013-07-02 08:00
+title: Scheduled Images On The Open Cloud
+date: '2013-07-02 08:00'
 comments: true
 author: Brian Rosmaita
 published: true

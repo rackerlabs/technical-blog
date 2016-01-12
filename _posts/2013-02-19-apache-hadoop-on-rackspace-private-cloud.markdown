@@ -1,14 +1,12 @@
 ---
 layout: post
-title: "Apache Hadoop on Rackspace Private Cloud"
-date: 2013-02-19 08:00
+title: Apache Hadoop on Rackspace Private Cloud
+date: '2013-02-19 08:00'
 comments: true
 author: Sudarshan Acharya
 categories:
-- Private Cloud
-- OpenStack
-- Big Data
-- hadoop
+  - Private Cloud
+  - OpenStack
 ---
 I truly believe that in the next five years, cloud will be the default way that IT resources like compute and storage will be consumed. As a provider of [public](http://www.rackspace.com/cloud/) and [private](http://www.rackspace.com/cloud/private/) clouds powered by OpenStack, we at Rackspace are committed to making OpenStack the preferred infrastructure layer for a lot of platforms and applications.
 <!-- more -->

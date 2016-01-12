@@ -1,15 +1,14 @@
 ---
 layout: post
-title: "Neutron Networking: VLAN Provider Networks"
-date: 2013-11-25 10:00
+title: 'Neutron Networking: VLAN Provider Networks'
+date: '2013-11-25 10:00'
 comments: true
 author: James Denton
 published: true
 categories:
-- OpenStack
-- Networking
-- Neutron
-- Cloud Networks
+  - OpenStack
+  - Neutron
+  - Cloud Networks
 ---
 
 In this multi-part blog series I intend to dive into the various components of the OpenStack Neutron project, and to also provide working examples of networking configurations for clouds built with [Rackspace Private Cloud](http://www.rackspace.com/cloud/private/) powered by [OpenStack](http://www.openstack.org) on Ubuntu 12.04 LTS.

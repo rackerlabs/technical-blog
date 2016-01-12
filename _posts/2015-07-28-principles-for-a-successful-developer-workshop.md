@@ -1,16 +1,19 @@
 ---
 layout: post
-title: "Principles for a Successful Developer Workshop"
-date: 2015-07-28 14:00
+title: Principles for a Successful Developer Workshop
+date: '2015-07-28 14:00'
 comments: true
 author: Everett Toews
 bio: >
-    Everett is a Rackspace Developer Advocate, he's from Canada (I think) and he's a super-nice guy. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed qui iste non quos, consequuntur nulla est eaque animi adipisci consectetur ipsam perspiciatis harum vitae voluptatibus assumenda eveniet. Unde, dolor, ex.
+  Everett is a Rackspace Developer Advocate, he's from Canada (I think) and he's
+  a super-nice guy. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
+  qui iste non quos, consequuntur nulla est eaque animi adipisci consectetur
+  ipsam perspiciatis harum vitae voluptatibus assumenda eveniet. Unde, dolor,
+  ex.
 authorIsRacker: true
-authorAvatar: https://www.gravatar.com/avatar/c1a75adb52f40016a480cee292527895
+authorAvatar: 'https://www.gravatar.com/avatar/c1a75adb52f40016a480cee292527895'
 published: true
-categories:
-  - workshop
+categories: []
 ---
 
 <img class="blog-post right" src="{% asset_path 2015-07-28-principles-for-a-successful-developer-workshop/qcon1.jpg %}"/>Running a successful developer workshop (aka tutorial) is really difficult. I've attended enough workshops that have gone poorly to know that for a fact. Participating in such a workshop can be very frustrating and a huge turn off for whatever technology is being presented. That translates directly into losing developer mindshare. I think we, as an industry, can do a better job of running developer workshops.

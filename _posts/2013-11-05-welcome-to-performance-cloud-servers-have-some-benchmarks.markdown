@@ -1,18 +1,12 @@
 ---
 layout: post
-title: "Welcome to Performance Cloud Servers; have some benchmarks!"
-date: 2013-11-05 06:00
+title: 'Welcome to Performance Cloud Servers; have some benchmarks!'
+date: '2013-11-05 06:00'
 comments: true
 author: Jesse Noller
 published: true
 categories:
-- performance
-- cloud servers
-- SSD
-- speed
-- benchmarks
-- announcements
-- new products
+  - cloud servers
 ---
 
 {% img right 2013-11-04-welcome-to-performance-cloud-servers/brace-yourselves.png 200 %}

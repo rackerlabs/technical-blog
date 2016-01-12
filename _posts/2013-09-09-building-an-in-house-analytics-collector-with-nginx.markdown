@@ -1,15 +1,11 @@
 ---
 layout: post
-title: "Building an in-house analytics collector with nginx"
-date: 2013-09-09 09:09
+title: Building an in-house analytics collector with nginx
+date: '2013-09-09 09:09'
 comments: true
 author: Gabriel Preda
 published: true
-categories: 
-- nginx
-- Ops
-- logrotate
-- HAProxy
+categories: []
 ---
 There is a bigger need of web analytics out there than any single provider can offer (pun intended). Our in-house analytics system was tightly coupled into our web application because it grew along with it. It was about time we decoupled the analytics system.
 

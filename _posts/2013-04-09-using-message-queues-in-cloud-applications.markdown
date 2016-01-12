@@ -1,13 +1,11 @@
 ---
 layout: post
-title: "Using Message Queues in Cloud Applications"
-date: 2013-04-11 08:00
+title: Using Message Queues in Cloud Applications
+date: '2013-04-11 08:00'
 comments: true
 author: Hart Hoover
 published: true
-categories: 
-- Five Pillars
-- Cloud Tools
+categories: []
 ---
 {% img right pillars/pillar.png 160 160 %}
 In Wayne Walls' [recent post on parallel computing](http://www.rackspace.com/blog/pillars-of-cloudiness-no-1-parallel-computing/), message queues are mentioned as a way to achieve parallel computing in an application. In this post, we will dive into the different message queues out there and how to implement a message queue in an application.<!-- more -->

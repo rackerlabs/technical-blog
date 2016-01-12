@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Weekly Security Link Dump (Week of May 18th)"
-date: 2015-05-19 23:59
+title: Weekly Security Link Dump (Week of May 18th)
+date: '2015-05-19 23:59'
 comments: true
 author: Charles Neill
 published: true
 categories:
-    - Security
+  - Security
 ---
 
 Welcome to the Weekly Security Link Dump for the week of May 18th! This week, we'll take a look at some new tech, some broken crypto, and a few guides to help you improve the security of your workstation and your product.

@@ -1,15 +1,13 @@
 ---
 layout: post
-title: "PHP OpenCloud 1.7.0 is now out"
-date: 2013-11-04 10:00
+title: PHP OpenCloud 1.7.0 is now out
+date: '2013-11-04 10:00'
 comments: true
 author: Jamie Hannaford
 published: true
 categories:
-- phpopencloud
-- php
-- sdk
-- developers
+  - sdk
+  - developers
 ---
 
 We've just let PHP OpenCloud v1.7.0 into the wild, so it would be great to give some details of the SDK's new abilities. I've written a [changelog](https://github.com/rackspace/php-opencloud/blob/master/docs/changelog/1.7.0.md) of features, plus an [upgrade guide](https://github.com/rackspace/php-opencloud/blob/master/docs/changelog/Upgrading%20to%201.7.0.md) for any folks who are daunted with the prospect of updating their codebase.

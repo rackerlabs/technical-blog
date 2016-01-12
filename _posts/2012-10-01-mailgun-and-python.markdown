@@ -1,12 +1,12 @@
 ---
 comments: true
-date: 2012-10-01 16:44:06
+date: 2012-10-01T16:44:06.000Z
 layout: post
 title: Using Mailgun and Python to parse email for your applications
 author: Hart Hoover
 categories:
-- Cloud Servers
-- Mailgun
+  - Cloud Servers
+  - Mailgun
 ---
 
 In case you didn't hear, Rackspace recently [acquired Mailgun](http://techcrunch.com/2012/08/28/rackspace-acquires-y-combinator-startup-mailgun-an-api-that-abstracts-creating-email-inboxes-for-apps-and-web-sites/), a YCombinator startup that makes it really easy to integrate email into your application.  Mailgun does the simple things like sending password confirmations and shipping notifications, but it also makes it A LOT easier to build some really good stuff.

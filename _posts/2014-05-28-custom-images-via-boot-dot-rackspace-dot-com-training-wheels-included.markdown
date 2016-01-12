@@ -1,15 +1,14 @@
 ---
 layout: post
-title: "Custom Images via boot.rackspace.com - Training Wheels Included"
-date: 2014-05-28 12:42
+title: Custom Images via boot.rackspace.com - Training Wheels Included
+date: '2014-05-28 12:42'
 comments: true
 author: Mike Metral
 published: true
 categories:
-- Custom Images
-- Public Cloud
-- Cloud Servers
-- OpenStack
+  - Public Cloud
+  - Cloud Servers
+  - OpenStack
 ---
 
 With the recent announcement of

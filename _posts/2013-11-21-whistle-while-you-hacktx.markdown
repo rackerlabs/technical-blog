@@ -1,17 +1,15 @@
 ---
 layout: post
-title: "Whistle While You HackTX"
-date: 2013-11-22 13:15
+title: Whistle While You HackTX
+date: '2013-11-22 13:15'
 comments: true
 author: Everett Toews
 published: true
 categories:
-- jclouds
-- java
-- sdk
-- discount
-- perfomance
-- developers
+  - jclouds
+  - java
+  - sdk
+  - developers
 ---
 {% img center 2013-11-21-whistle-while-you-hacktx/hacktx.jpg 645 292 %}
 

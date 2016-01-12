@@ -1,13 +1,12 @@
 ---
 layout: post
-title: "PowerClient: Rackspace Cloud API Powershell Client"
-date: 2013-05-02 07:39
+title: 'PowerClient: Rackspace Cloud API Powershell Client'
+date: '2013-05-02 07:39'
 comments: true
 author: Mitch Robins
 published: true
-categories: 
-- Cloud Servers
-- Windows
+categories:
+  - Cloud Servers
 ---
 ##Update (July 16, 2015)
 

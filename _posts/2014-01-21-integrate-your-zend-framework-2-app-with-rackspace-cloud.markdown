@@ -1,15 +1,11 @@
 ---
 layout: post
-title: "Integrate your Zend Framework 2 app with Rackspace Cloud"
-date: 2014-01-29 10:30
+title: Integrate your Zend Framework 2 app with Rackspace Cloud
+date: '2014-01-29 10:30'
 comments: true
 author: Jamie Hannaford
 published: true
-categories:
- - php-sdk
- - php-opencloud
- - zf2
- - zend framework 2
+categories: []
 ---
 [Zend Framework 2](http://zendframework.com/) is an incredibly popular PHP framework that allows you to create web applications in an efficient, quick and robust manner. I could have chosen other web frameworks like [Symfony](http://symfony.com/), [Laravel](http://laravel.com/), [Yii](http://www.yiiframework.com/) or [CodeIgniter](http://ellislab.com/codeigniter); or even frameworks in different languages like Django or Rails, but I'll stick to personal preference for this blog post.
 

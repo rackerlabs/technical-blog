@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Weekly Security Link Dump (Week of May 11th)"
-date: 2015-05-12 23:59
+title: Weekly Security Link Dump (Week of May 11th)
+date: '2015-05-12 23:59'
 comments: true
 author: Charles Neill
 published: true
 categories:
-    - Security
+  - Security
 ---
 
 Hello! This is the first post in a series that will bring you new and interesting links every week from the perspective of a Rackspace Security Engineer. I try to include links that are useful/interesting to a general audience, so you don't have to be an "uber 1337 h4x0r" to enjoy them. If you have any comments, or if you want to submit a link, feel free to leave a comment or catch me on [Twitter][twitter].

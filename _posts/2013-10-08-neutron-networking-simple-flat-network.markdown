@@ -1,15 +1,14 @@
 ---
 layout: post
-title: "Neutron Networking: Simple Flat Network"
-date: 2013-10-08 17:00
+title: 'Neutron Networking: Simple Flat Network'
+date: '2013-10-08 17:00'
 comments: true
 author: James Denton
 published: true
 categories:
-- OpenStack
-- Networking
-- Neutron
-- Cloud Networks
+  - OpenStack
+  - Neutron
+  - Cloud Networks
 ---
 
 In this multi-part walkthrough series, I intend to dive into the various components of the OpenStack Neutron project, and to also provide working examples of multiple networking configurations for clouds built with Rackspace Private Cloud powered by OpenStack on Ubuntu 12.04 LTS. When possible, I’ll provide configuration file examples for those following along on an install from source.

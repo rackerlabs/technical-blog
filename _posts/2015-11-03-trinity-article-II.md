@@ -1,16 +1,13 @@
 ---
 layout: post
-title: "Docker, Elastic Beanstalk and Git: a useful trinity for agile development? Part II"
-date: 2015-11-03 00:00
+title: 'Docker, Elastic Beanstalk and Git: a useful trinity for agile development? Part II'
+date: '2015-11-03 00:00'
 comments: true
 author: Duncan Rutland
 bio: Duncan Rutland is a Sr. Solution Architect at Rackspace within the Fanatical Support for AWS team.
 published: true
 categories:
-- AWS
-- Docker
-- Git
-- Elastic Beanstalk
+  - Docker
 authorIsRacker: true
 ---
 

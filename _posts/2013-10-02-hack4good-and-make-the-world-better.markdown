@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Hack4Good And Make The World Better"
-date: 2013-10-02 08:38
+title: Hack4Good And Make The World Better
+date: '2013-10-02 08:38'
 comments: true
 author: Vyjayanthi Vadrevu
 published: true
 categories:
-- Events
+  - Events
 ---
 Our love for developers knows no limits – we host and support hackathons, offer [free cloud services][1] and [offer them the support they need to build awesome things][2].
 

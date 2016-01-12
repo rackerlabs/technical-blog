@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "This Week in Information Security (Week of June 22nd)"
-date: 2015-06-23 23:59
+title: This Week in Information Security (Week of June 22nd)
+date: '2015-06-23 23:59'
 comments: true
 author: Charles Neill
 published: true
 categories:
-    - Security
+  - Security
 ---
 
 Welcome to another installment of This Week in Information Security! This week we have news of a critical vulnerability in millions of Samsung phones, a high-profile compromise of the password management tool LastPass, and a new method for stealing encryption keys via radios, without physically touching the machine in question. We also have tutorials about the basics of cryptography and using the Linux command line, and more!

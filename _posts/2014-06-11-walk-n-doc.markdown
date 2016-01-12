@@ -1,13 +1,12 @@
 ---
 layout: post
-title: "Walk & Doc"
-date: 2014-06-11 14:00:00+00:00
+title: 'Walk & Doc'
+date: 2014-06-11T14:00:00.000Z
 comments: true
 author: Everett Toews
 published: true
 categories:
-- jclouds
-- documentation
+  - jclouds
 ---
 {% img right 2014-06-11-walk-n-doc/pedestrian-sign.jpg %} 
  

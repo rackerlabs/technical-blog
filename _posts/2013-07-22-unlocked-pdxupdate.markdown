@@ -1,14 +1,13 @@
 ---
 layout: post
-title: "London Calling:  An Unlocked Update"
-date: 2013-07-22 10:24
+title: 'London Calling:  An Unlocked Update'
+date: '2013-07-22 10:24'
 comments: true
 author: Wayne Walls
 published: true
 categories:
-- DevOps
-- unlocked
-- Developers
+  - DevOps
+  - Developers
 ---
 
 ### London Unlocked Update

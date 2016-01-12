@@ -1,15 +1,12 @@
 ---
 layout: post
-title: "Developer love: Welcome to the Rackspace Cloud Developer Discount"
-date: 2013-09-03 06:25
+title: 'Developer love: Welcome to the Rackspace Cloud Developer Discount'
+date: '2013-09-03 06:25'
 comments: true
 author: Jesse Noller
 published: true
 categories:
-- developers
-- trial
-- discount
-- opensource
+  - developers
 ---
 
 It's time to go make something awesome, on us.

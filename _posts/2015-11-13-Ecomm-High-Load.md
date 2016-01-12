@@ -1,12 +1,11 @@
 ---
 layout: post
-title: "High Load in E-Commerce (pt 1)"
-date: 2015-11-13 10:00
+title: High Load in E-Commerce (pt 1)
+date: '2015-11-13 10:00'
 comments: true
 author: Jonathan Hurley
 published: true
-categories:
-    - ecommerce
+categories: []
 ---
 
 ### The Illusion

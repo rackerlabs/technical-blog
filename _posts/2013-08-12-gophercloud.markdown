@@ -1,14 +1,13 @@
 ---
 layout: post
-title: "Gophercloud: A multi-cloud software development kit for Go"
-date: 2013-08-13 08:00
+title: 'Gophercloud: A multi-cloud software development kit for Go'
+date: '2013-08-13 08:00'
 comments: true
 author: Samuel A. Falvo II
 published: true
 categories:
-- go
-- SDK
-- Developers
+  - SDK
+  - Developers
 ---
 {% img right 2013-08-12-gophercloud/gophercloud.png 200 %}
 

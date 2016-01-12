@@ -1,15 +1,13 @@
 ---
 layout: post
-title: "Gophercloud Update"
-date: 2015-04-08 10:00
+title: Gophercloud Update
+date: '2015-04-08 10:00'
 comments: true
 author: Jon Perritt
 published: true
 categories:
-- golang
-- gophercloud
-- openstack
-- sdk
+  - openstack
+  - sdk
 ---
 
 ## New Services Supported

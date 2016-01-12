@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "DevOps Automation Series: Images vs. Config Management"
-date: 2014-03-04 15:00
+title: 'DevOps Automation Series: Images vs. Config Management'
+date: '2014-03-04 15:00'
 comments: true
 author: Matthew Thode
 published: true
 categories:
- - DevOps
- - Configuration Management
+  - DevOps
+  - Configuration Management
 ---
 
 

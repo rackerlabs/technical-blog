@@ -1,13 +1,12 @@
 ---
 layout: post
-title: "Cloud Files Update: New Features"
-date: 2013-05-21 8:00
+title: 'Cloud Files Update: New Features'
+date: '2013-05-21 8:00'
 comments: true
 author: Hart Hoover
 published: true
-categories: 
-- Cloud Files
-- API
+categories:
+  - Cloud Files
 ---
 {% img right 2013-05-21-cloud-files/cloud_files_logo.png 250 %}
 

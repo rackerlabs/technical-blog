@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Using stackforge/os-ansible-deployment to review OpenStack Patches"
-date: 2015-05-29 23:59
+title: Using stackforge/os-ansible-deployment to review OpenStack Patches
+date: '2015-05-29 23:59'
 comments: true
 author: Ian Cordasco
 published: true

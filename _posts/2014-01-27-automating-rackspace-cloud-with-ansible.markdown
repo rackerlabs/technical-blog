@@ -1,21 +1,18 @@
 ---
 layout: post
-title: "Automating Rackspace Cloud with Ansible"
-date: 2014-01-27 13:00
+title: Automating Rackspace Cloud with Ansible
+date: '2014-01-27 13:00'
 comments: true
 author: Michael DeHaan
 published: true
 categories:
- - Ansible
- - automation
- - application deployment
- - devops
- - configuration management
- - deployment
- - developers
- - opensource
- - python
- - orchestration
+  - Ansible
+  - automation
+  - devops
+  - configuration management
+  - developers
+  - python
+  - orchestration
 ---
 
 

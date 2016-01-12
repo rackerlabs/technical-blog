@@ -1,16 +1,12 @@
 ---
 layout: post
-title: "Austin Ladies Hackathon"
-date: 2014-08-21 23:59
+title: Austin Ladies Hackathon
+date: '2014-08-21 23:59'
 comments: true
 author: Anne Gentle
 published: true
 categories:
-    - women-in-tech
-    - austin-ladies
-    - mobile
-    - developers
-    - hackathon
+  - developers
 ---
 
 Austin Ladies Hackathon

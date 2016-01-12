@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Python magic and remote APIs"
-date: 2013-02-18 08:00
+title: Python magic and remote APIs
+date: '2013-02-18 08:00'
 comments: true
 author: Jesse Keating
 categories:
-- Python
-- Developers
+  - Python
+  - Developers
 ---
 _This is a guest post by Jesse Keating, a Racker working on DevOps for Rackspace's Cloud Server products. You can read his blog at [http://raxcloud.blogspot.com/](http://raxcloud.blogspot.com) or follow _[@iamjkeating](http://twitter.com/iamjkeating)_ on Twitter._
 

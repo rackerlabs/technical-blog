@@ -1,11 +1,10 @@
 ---
 layout: post
-title: "Rackspace at PyCon 2015"
-date: 2015-04-07 10:00
+title: Rackspace at PyCon 2015
+date: '2015-04-07 10:00'
 comments: false
 author: Brian Curtin
-categories:
-    - PyCon
+categories: []
 ---
 
 [PyCon 2015](https://us.pycon.org/2015/), the annual Python conference,

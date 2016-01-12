@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Using a custom kernel with the Ubuntu Installer"
-date: 2013-03-20 8:00
+title: Using a custom kernel with the Ubuntu Installer
+date: '2013-03-20 8:00'
 comments: true
-author: Jordan Evans 
-categories: 
-- Cloud Servers
+author: Jordan Evans
+categories:
+  - Cloud Servers
 ---
 EDIT: This blog post has been edited! As it turns out, the preseed was stored in a location that didn't always work. Instead, we now decompress the initrd.gz, and add a preseed there. This is a better location, because the Ubuntu installer always looks for it there, even if not told to. We also moved installing the new kernel to the end of the preseed, to be sure it runs all the postinstall scripts. We changed how we remove the 2.6 kernel to specifically catch the version before removing it.
 

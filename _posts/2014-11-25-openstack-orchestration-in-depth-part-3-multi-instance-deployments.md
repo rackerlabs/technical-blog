@@ -1,20 +1,14 @@
 ---
 layout: post
-title: "OpenStack Orchestration In Depth, Part III: Multi-Instance Deployments"
-date: 2014-11-21 07:15
+title: 'OpenStack Orchestration In Depth, Part III: Multi-Instance Deployments'
+date: '2014-11-21 07:15'
 comments: true
 author: Miguel Grinberg
 published: true
 categories:
   - rackspace-private-cloud
   - Orchestration
-bio:
-  Miguel Grinberg is a software engineer with a background in web technologies and REST APIs.
-  He is the author of the book "Flask Web Development" from O'Reilly Media, and has a blog at
-  http://blog.miguelgrinberg.com, where he writes about a variety of topics including web
-  development, robotics, photography and the occasional movie review. Miguel works as a
-  Software Developer with the Rackspace Private Cloud team. He lives in Portland,
-  Oregon with his wife, four kids, two dogs and a cat. Follow @miguelgrinberg on Twitter.
+bio: "Miguel Grinberg is a software engineer with a background in web technologies and REST APIs. He is the author of the book \"Flask Web Development\" from O'Reilly Media, and has a blog at http://blog.miguelgrinberg.com, where he writes about a variety of topics including web development, robotics, photography and the occasional movie review. Miguel works as a Software Developer with the Rackspace Private Cloud team. He lives in Portland, Oregon with his wife, four kids, two dogs and a cat. Follow @miguelgrinberg on Twitter."
 ---
 
 This is the third article in my series on OpenStack orchestration with Heat. In [Part 1](/blog/openstack-orchestration-in-depth-part-1-introduction-to-heat), I introduced the HOT template syntax, and then in [Part 2](/blog/openstack-orchestration-in-depth-part-2-single-instance-deployments/), I showed you some of the techniques Heat offers to orchestrate the deployment of applications that run entirely within a single compute instance.

@@ -1,15 +1,11 @@
 ---
 layout: post
-title: "Happy Birthday Cloud Block Storage!"
-date: 2013-10-31 10:27
+title: 'Happy Birthday Cloud Block Storage!'
+date: '2013-10-31 10:27'
 comments: true
 author: Jerry Schwartz
 published: true
-categories:
-- Cloud Block Storage
-- cbs
-- storage
-- pricing
+categories: []
 ---
 
 We launched [Cloud Block Storage](http://www.rackspace.com/cloud/block-storage/)

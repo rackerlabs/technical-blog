@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "jclouds 1.7.0 Released With Support for OpenStack Queuing, Networks, and Rackspace Auto Scale"
-date: 2014-01-08 10:00
+title: 'jclouds 1.7.0 Released With Support for OpenStack Queuing, Networks, and Rackspace Auto Scale'
+date: '2014-01-08 10:00'
 comments: true
 author: Everett Toews
 published: true
 categories:
-- jclouds
-- java
-- sdk
-- developers
-- openstack
+  - jclouds
+  - java
+  - sdk
+  - developers
+  - openstack
 ---
 {% img right 2013-11-07-jclouds-is-an-apache-tlp/jclouds.jpg 200 %}
 

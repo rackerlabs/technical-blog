@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "This Week in Information Security (Week of July 20th)"
-date: 2015-07-24 23:59
+title: This Week in Information Security (Week of July 20th)
+date: '2015-07-24 23:59'
 comments: true
 author: Charles Neill
 published: true
 categories:
-    - Security
+  - Security
 ---
 
 Hey, folks! Lots of scary vulnerabilities today affecting Windows, Internet Explorer, OS X, OpenSSH, and WordPress core. Unfortunately, several of them are still unpatched at the time of writing this. We also have some research into remotely hacking cars to do an attacker's bidding over their cellular network, comparisons between security experts and non-experts in security habits and, finally, some research looking at the huge amount of data exposed to the public Internet by outdated MongoDB nodes that don't use authentication. 

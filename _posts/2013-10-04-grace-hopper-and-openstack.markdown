@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Grace Hopper and OpenStack"
-date: 2013-10-04 08:56
+title: Grace Hopper and OpenStack
+date: '2013-10-04 08:56'
 comments: true
 author: Anne Gentle
 published: true
-categories: 
-- OpenStack
-- Events
+categories:
+  - OpenStack
+  - Events
 ---
 
 This is my first time going to the Grace Hopper Celebration of Women in Computing. I've never been to a conference where they take over men's bathrooms to give women fewer lines! There are over 4500 people registered for the conference in Minneapolis. I'm so proud that Rackspace is a sponsor this year as it shows real dedication to adding more women at all levels of our organization. Niki Acosta has a great <a href="http://www.rackspace.com/blog/think-big-drive-forward-inspiration-from-the-grace-hopper-celebration-for-women-in-computing/">post on the Rackspace Blog</a> talking about how great it is to be here. I know this past year has been a great one for me personally as a woman at Rackspace. Adding Diane Fleming as an API writer on OpenStack followed by Dana Bauer as a development community manager makes our team plain fun. And our fellow teammates like to remind others, "we're not just gents you know."<!-- more -->

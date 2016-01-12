@@ -1,16 +1,14 @@
 ---
 layout: post
-title: "Configure Keystone to Utilize Apache"
-date: 2014-11-06 17:20
+title: Configure Keystone to Utilize Apache
+date: '2014-11-06 17:20'
 comments: true
 author: Matt Dorn
 published: true
 categories:
- - OpenStack
- - apache
- - python
-bio:
- Matt Dorn is a Cloud Technology Instructor with Rackspace focused on helping IT teams around the world build private clouds with OpenStack. You can find his blog at http://www.madorn.com/
+  - OpenStack
+  - python
+bio: 'Matt Dorn is a Cloud Technology Instructor with Rackspace focused on helping IT teams around the world build private clouds with OpenStack. You can find his blog at http://www.madorn.com/'
 ---
 
 Keystone and many current OpenStack API components run in an [Eventlet](http://eventlet.net/) based http server.  Eventlet is designed to perform well in networked environments and handles everything in a single thread.

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Chef Metal and Rackspace"
-date: 2014-06-26 08:00
+title: Chef Metal and Rackspace
+date: '2014-06-26 08:00'
 comments: true
 author: Hart Hoover
 published: true
 categories:
-- Chef
+  - Chef
 ---
 {% img right 2014-06-23-chef-metal/chef-logo.png 160 160 %}
 
