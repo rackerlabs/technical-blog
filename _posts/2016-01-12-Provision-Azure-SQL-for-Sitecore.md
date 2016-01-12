@@ -26,16 +26,16 @@ $bacpacLocation = 'C:\Users\jrudley\Downloads\sitecore8.1bacpacs\'
 
 #Resource group to create. Must be unique
 $Location = 'East US'
-$resourceGroupName = 'raxsitecore9' 
+$resourceGroupName = 'raxsitecore11' 
 
 #storage account information
-$storageAccountName = 'sitecoredockerfiles9' #Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only
+$storageAccountName = 'sitecoredockerfiles11' #Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only
 $Type = 'Standard_LRS' #-- Standard_LRS (locally-redundant storage),Standard_ZRS (zone-redundant storage),Standard_GRS (geo-redundant storage),Standard_RAGRS (read access geo-redundant storage),Premium_LRS (normally used for high I/O vm's)
-$containerName = 'sitecoreblobcontainer9'
+$containerName = 'sitecoreblobcontainer11'
 
 #azure sql server information
 $credential = Get-Credential
-$sqlServerName = 'raxcontsqlsvr9' #It can only be made up of lowercase letters 'a'-'z', the numbers 0-9 and the hyphen. The hyphen may not lead or trail in the name.
+$sqlServerName = 'raxcontsqlsvr11' #It can only be made up of lowercase letters 'a'-'z', the numbers 0-9 and the hyphen. The hyphen may not lead or trail in the name.
 ```
 
 The **$bacpacLocation** variable is the location of your exported Sitecore databases with the .bacpac extension. Microsoft has provided instructions how to do a bacpac export [here](https://azure.microsoft.com/en-us/documentation/articles/sql-database-cloud-migrate-compatible-export-bacpac-ssms/)
