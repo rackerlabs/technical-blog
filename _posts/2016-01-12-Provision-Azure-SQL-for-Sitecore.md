@@ -30,7 +30,7 @@ $resourceGroupName = 'raxsitecore9'
 
 #storage account information
 $storageAccountName = 'sitecoredockerfiles9' #Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only
-$Type = 'Standard_GRS'
+$Type = 'Standard_LRS' #-- Standard_LRS (locally-redundant storage),Standard_ZRS (zone-redundant storage),Standard_GRS (geo-redundant storage),Standard_RAGRS (read access geo-redundant storage),Premium_LRS (normally used for high I/O vm's)
 $containerName = 'sitecoreblobcontainer9'
 
 #azure sql server information
@@ -104,4 +104,61 @@ EndIpAddress      : 0.0.0.0
 FirewallRuleName  : AllowAllAzureIPs
 ```
 
-You can see we added my public ip (removed the real ip for privacy) to connect in remotely via management studio and allowed Azure instances to talk to my Azure SQL Server. With those rules in place, we can now tell Azure to read from my Azure storage container and restore the bacpac files. Before Azure can start the import, we need to create an Azure sql database server context.
+You can see we added my public ip (removed the real ip for privacy) to connect in remotely via management studio and allowed Azure instances to talk to my Azure SQL Server. With those rules in place, we can now tell Azure to read from my Azure storage container and restore the bacpac files. Before Azure can start the import, we need to create an Azure sql database server context and grab our storage container we created above.
+
+```sh
+PS C:\Users\jrudley> $ServerNameFQDN = $sqlServerName + '.database.windows.net' 
+$sqlContext =  New-AzureSqlDatabaseServerContext -FullyQualifiedServerName $serverNameFQDN -Credential $credential
+$Container = Get-AzureStorageContainer -Name $containerName -Context $myStoreContext 
+```
+
+We can run a foreach loop that reads our variable **$files** which we pass the variables we built above into the **Start-AzureSqlDatabaseImport** cmdlet. I also created a variable called $Targets to hold the request id's from my import. Since this is an asynchornous import, we can pass these request id's into another cmdlet and check the status.
+
+```sh
+$Targets = @()
+foreach ($file in $files)
+{
+
+$importRequest = Start-AzureSqlDatabaseImport -SqlConnectionContext $sqlContext -StorageContainer $Container -DatabaseName $file.ToString().Substring(0,$file.ToString().IndexOf('.')) -BlobName $file -Edition Standard 
+
+$file
+$importRequest.RequestGuid
+$Targets += $importRequest
+
+#sleep for X seconds as sometimes the sql server reports back that an operation is in progress
+Start-Sleep -s 5
+
+}
+```
+
+The cmdlet **Get-AzureSqlDatabaseImportExportStatus** expects a string and not a credential object, I found a [snippet of code](http://stackoverflow.com/questions/21741803/powershell-securestring-encrypt-decrypt-to-plain-text-not-working) that will convert the object back to a string. This will loop and check every 30 seconds until all the database imports are finished.
+
+```sh
+#Get-AzureSqlDatabaseImportExportStatus expects a string for password.
+write-host "Waiting for Database import to finish" -ForegroundColor Yellow
+$sw = [Diagnostics.Stopwatch]::StartNew()
+do
+{
+   $allOK = $true
+   foreach ($item in $Targets)
+   {
+   
+   $dbstatus = Get-AzureSqlDatabaseImportExportStatus -RequestId $item.Requestguid -ServerName $sqlServerName -Username $credential.UserName -Password ((New-Object System.Management.Automation.PSCredential 'N/A', $credential.Password).GetNetworkCredential().Password)
+   write-host $dbstatus.databasename $dbstatus.status -ForegroundColor Yellow
+       if ($dbstatus.status -ne 'Completed')
+       {
+       write-host "DB import still going..." -ForegroundColor Yellow
+          $allOK = $false 
+       }
+    }
+    write-host "We finished importing?  $allOK" -ForegroundColor DarkYellow
+    if ($allOK -eq $false)
+    {
+    start-sleep -s 30
+    }
+}
+until ($allOK -eq $true)
+$sw.Stop()
+write-host $sw.Elapsed
+write-host "All sitecore db's imported!" -ForegroundColor Green
+```
