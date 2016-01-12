@@ -1,14 +1,13 @@
 ---
 layout: post
-title: "Unlimited Jenkins Slaves in 5 Quick Steps"
-date: 2014-01-17 11:20
+title: Unlimited Jenkins Slaves in 5 Quick Steps
+date: '2014-01-17 11:20'
 comments: true
 author: Max Lincoln
 published: true
 categories:
-- Jenkins
-- jclouds
-- Deployments
+  - Jenkins
+  - jclouds
 ---
 
 Have you ever noticed long build queuing times in Jenkins?  If you have long builds and few executors, you can spend more time waiting for resources than actually testing.  If you have an existing Jenkins setup, take a look at the [ClusterStats Plugin](https://wiki.jenkins-ci.org/display/JENKINS/ClusterStats+Plugin) to keep an eye on this problem.

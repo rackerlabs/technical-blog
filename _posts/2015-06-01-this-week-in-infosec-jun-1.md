@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "This Week in Information Security (Week of June 1st)"
-date: 2015-06-02 23:59
+title: This Week in Information Security (Week of June 1st)
+date: '2015-06-02 23:59'
 comments: true
 author: Charles Neill
 published: true
 categories:
-    - Security
+  - Security
 ---
 
 This week we have some interesting research on the security of many Docker containers in the official Docker Hub repository, showing that a large number of images are vulnerable to severe exploits like ShellShock and Heartbleed. We also look at some research introducing a new attack vector utilizing novel [steganography][stego] to deliver exploits to the browser using nothing but HTML5 and images. In other news, the NSA's phone metadata snooping program has folded (at least temporarily) following a failure of the Senate to extend the relevant provisions of the USA PATRIOT act that authorized the program.

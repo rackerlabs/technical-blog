@@ -1,13 +1,11 @@
 ---
 layout: post
-title: "iOS Security Key Signing"
-date: 2013-05-28 08:35
+title: iOS Security Key Signing
+date: '2013-05-28 08:35'
 comments: true
 author: Tokunbo George
 published: true
-categories: 
-- Mobile
-- iOS
+categories: []
 ---
 {% img right 2013-05-28-ios-security-key-signing/xcode_icon.png 200 %}
 At Rackspace, we're working very hard to support the ever-growing platform of mobile. We're working hard to design a cloud-based mobile platform for developers and on the next generation of our mobile applications. Over the years we have developed a number mobile applications to interact with our services, but we recently made a conscious decision to improve them to more "fanatical" standards.

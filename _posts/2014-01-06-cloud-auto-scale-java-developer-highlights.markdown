@@ -1,13 +1,12 @@
 ---
 layout: post
-title: "Cloud Auto Scale - Java Developer Highlights"
-date: 2014-01-15 10:30
+title: Cloud Auto Scale - Java Developer Highlights
+date: '2014-01-15 10:30'
 comments: true
 author: Zack Shoylev
 published: true
 categories:
- - jclouds
- - autoscale
+  - jclouds
 ---
 
 One of the big benefits of using the cloud to drive your applications is the

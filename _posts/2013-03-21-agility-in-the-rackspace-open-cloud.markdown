@@ -1,12 +1,10 @@
 ---
 layout: post
-title: "Agility in the Rackspace Open Cloud"
-date: 2013-03-21 8:00
+title: Agility in the Rackspace Open Cloud
+date: '2013-03-21 8:00'
 comments: true
 author: Hart Hoover
-categories: 
-- Five Pillars
-- Agile
+categories: []
 ---
 {% img right pillars/pillar.png 160 160 %}
 Being able to roll with the punches in a cloud environment is extremely important. The cloud can be used for a steady state environment, but really shines when coupled with monitoring and the API. Every application in the cloud should fit in one of these four buckets:

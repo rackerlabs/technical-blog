@@ -1,17 +1,13 @@
 ---
 layout: post
-title: "Bootstrap your QCOW Images for the Rackspace Public Cloud"
-date: 2014-05-23 10:30
+title: Bootstrap your QCOW Images for the Rackspace Public Cloud
+date: '2014-05-23 10:30'
 comments: true
 author: Mike Metral
 published: true
 categories:
-- Cloud Images
-- Custom Images
-- Public Cloud
-- QCOW
-- VHD
-- OpenStack
+  - Public Cloud
+  - OpenStack
 ---
 
 In the world of Cloud Computing, hypervisors and disk image formats come in

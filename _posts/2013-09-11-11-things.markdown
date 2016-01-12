@@ -1,12 +1,11 @@
 ---
 layout: post
-title: "11 Things To Remember When Writing A User Guide"
-date: 2013-09-11 13:00
+title: 11 Things To Remember When Writing A User Guide
+date: '2013-09-11 13:00'
 comments: true
 author: Don Schenck
 published: true
-categories:
-- Documentation
+categories: []
 ---
 One of the more pressing needs in the world of open source software is the need for decent documentation. That covers a lot of territory; from well-commented code (yeah… right) to API guides to the rare – some say mythical – user guide.
 

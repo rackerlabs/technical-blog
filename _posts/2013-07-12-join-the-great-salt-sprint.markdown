@@ -1,13 +1,12 @@
 ---
 layout: post
-title: "Join the Great Salt Sprint"
-date: 2013-07-12 10:24
+title: Join the Great Salt Sprint
+date: '2013-07-12 10:24'
 comments: true
 author: Hart Hoover
 published: true
-categories: 
-- SaltStack
-- OpenStack
+categories:
+  - OpenStack
 ---
 {% img right 2013-07-12-join-the-great-salt-sprint/saltstack_logo.jpg 250 %}
 

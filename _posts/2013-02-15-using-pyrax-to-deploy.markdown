@@ -1,13 +1,12 @@
 ---
 layout: post
-title: "Using pyrax to deploy the DevOps Blog"
-date: 2013-02-15 13:17
+title: Using pyrax to deploy the DevOps Blog
+date: '2013-02-15 13:17'
 comments: true
 author: Justin Phelps
-categories: 
-- Cloud Files
-- Python
-- pyrax
+categories:
+  - Cloud Files
+  - Python
 ---
 _This is a guest post written by Justin Phelps, a Rackspace Cloud support Racker. You can follow him on [LinkedIn](http://www.linkedin.com/in/linuturk), [@Linuturk](http://twitter.com/linuturk) on twitter, or find him on [Google+](https://plus.google.com/112828903529889228389/posts)_
 

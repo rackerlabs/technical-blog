@@ -1,14 +1,11 @@
 ---
 layout: post
-title: "On being a RailsConf Opportunity Scholar Guide"
-date: 2014-05-19 15:05
+title: On being a RailsConf Opportunity Scholar Guide
+date: '2014-05-19 15:05'
 comments: true
 author: Evan Light
 published: true
 categories:
-  - RailsConf
-  - Community
-  - Outreach
   - Ruby
 ---
 

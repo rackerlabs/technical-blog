@@ -1,12 +1,11 @@
 ---
 layout: post
-title: "Why I Use SaltStack"
-date: 2013-08-16 08:00
+title: Why I Use SaltStack
+date: '2013-08-16 08:00'
 comments: true
 author: Allen Oster
 published: true
-categories:
-- SaltStack
+categories: []
 ---
 {% img right 2013-07-12-join-the-great-salt-sprint/saltstack_logo.jpg 200 %}
 

@@ -1,15 +1,13 @@
 ---
 layout: post
-title: "Software Defined Networks in the Havana release of Openstack – Part 2"
-date: 2014-02-24 09:30
+title: Software Defined Networks in the Havana release of Openstack – Part 2
+date: '2014-02-24 09:30'
 comments: true
 author: Phil Hopkins
 published: true
 categories:
- - OpenStack
- - Havana
- - SDN
- - Neutron
+  - OpenStack
+  - Neutron
 ---
 Software Defined Networks in the Havana release of Openstack – Part 2
 

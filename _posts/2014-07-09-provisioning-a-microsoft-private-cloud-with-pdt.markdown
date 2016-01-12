@@ -1,14 +1,12 @@
 ---
 layout: post
-title: "Provisioning a Microsoft Private Cloud with PDT"
-date: 2014-07-09 10:55
+title: Provisioning a Microsoft Private Cloud with PDT
+date: '2014-07-09 10:55'
 comments: true
 author: Andre Stephens and Todd Klindt
 published: true
 categories:
- - PDT
- - Microsoft
- - Private Cloud 
+  - Private Cloud
 ---
 Working at Rackspace, clouds are something that I think about a lot. Over the last year I've been working with the Microsoft Private Cloud. When I first went through the process of deploying an environment, it took about a week and a copious amount of swearing for the installation and integration of the System Center 2012 R2 components. To do a multitude of these deployments by hand would take a ridiculous amount of time and even more swearing. Luckily, Rob Willis, from Microsoft, wrote a powerful workflow called PowerShell Deployment Toolkit (PDT). PDT is a collection of PowerShell workflows and scripts bound together to achieve a single, glorious purpose, the deployment of System Center 2012 R2. At the time of this writing, the current version is 2.64.2611 and can be found [here](http://gallery.technet.microsoft.com/PowerShell-Deployment-f20bb605).
 

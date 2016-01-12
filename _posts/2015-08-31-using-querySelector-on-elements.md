@@ -1,15 +1,11 @@
 ---
 layout: post
-title: "Using querySelector and querySelectorAll on Elements"
-date: 2015-08-31 23:59
+title: Using querySelector and querySelectorAll on Elements
+date: '2015-08-31 23:59'
 comments: true
 author: lvh
 published: true
-categories:
-    - Web Development
-    - HTML
-    - JavaScript
-
+categories: []
 ---
 
 Modern browsers have APIs called `querySelector` and `querySelectorAll`. They

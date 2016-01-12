@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "From Bare Metal to Rackspace Private Cloud POC"
-date: 2014-06-23 12:00
+title: From Bare Metal to Rackspace Private Cloud POC
+date: '2014-06-23 12:00'
 comments: true
 author: James Thorne
 published: true
 categories:
-    - RPC
-    - openstack
-    - Private Cloud
+  - RPC
+  - openstack
+  - Private Cloud
 ---
 
 There are all sorts of tools available to setup virtual OpenStack environments on your workstation. 

@@ -1,11 +1,11 @@
 ---
 comments: true
-date: 2012-09-26 08:00:43
+date: 2012-09-26T08:00:43.000Z
 layout: post
 title: 'OpenStack Folsom: Looking at the numbers'
 author: Hart Hoover
 categories:
-- OpenStack
+  - OpenStack
 ---
 
 [Bitergia](http://bitergia.com) has an excellent [post](http://bitergia.wordpress.com/2012/09/22/preview-of-the-analysis-of-the-upcoming-openstack-release/) on statistics for Folsom, the upcoming release for OpenStack.

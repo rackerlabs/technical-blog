@@ -1,13 +1,11 @@
 ---
 layout: post
-title: "cs-reboot-info: A tool to assist with upcoming maintenance"
-date: 2015-02-28 13:00
+title: 'cs-reboot-info: A tool to assist with upcoming maintenance'
+date: '2015-02-28 13:00'
 comments: true
 author: Developer Experience Team
 published: true
-categories:
-    - devex
-    - utils
+categories: []
 ---
 **Important Update: Oct 17, 2015**
 

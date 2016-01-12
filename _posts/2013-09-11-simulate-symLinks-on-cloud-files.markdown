@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Simulate SymLinks on Rackspace Cloud Files"
-date: 2013-09-11 08:00
+title: Simulate SymLinks on Rackspace Cloud Files
+date: '2013-09-11 08:00'
 comments: true
 author: Sri Rajan
 published: true
-categories: 
-- Cloud Files
+categories:
+  - Cloud Files
 ---
 {% img right 2013-05-21-cloud-files/cloud_files_logo.png 250 %}
 

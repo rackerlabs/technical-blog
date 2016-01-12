@@ -1,12 +1,11 @@
 ---
 layout: post
-title: "Installing Cinder in Your Rackspace Private Cloud Lab Environment"
-date: 2014-05-12 10:21
+title: Installing Cinder in Your Rackspace Private Cloud Lab Environment
+date: '2014-05-12 10:21'
 comments: true
 author: Jason Grimm
 published: true
 categories:
-  - Cinder
   - OpenStack
   - Private Cloud
 ---

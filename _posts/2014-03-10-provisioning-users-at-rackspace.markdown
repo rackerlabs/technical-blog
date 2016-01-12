@@ -1,14 +1,12 @@
 ---
 layout: post
-title: "Provisioning Users at Rackspace"
-date: 2014-03-10 10:30
+title: Provisioning Users at Rackspace
+date: '2014-03-10 10:30'
 comments: true
 author: Topher Marie
 published: true
 categories:
- - Devops
- - User management
- - Cloud Tools
+  - Devops
 ---
 
 **This is a guest post from Topher Marie, VP of Engineering at

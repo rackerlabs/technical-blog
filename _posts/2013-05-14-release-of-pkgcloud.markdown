@@ -1,14 +1,13 @@
 ---
 layout: post
-title: "Plans for the (v0.8?) release of pkgcloud"
-date: 2013-05-14 08:57
+title: Plans for the (v0.8?) release of pkgcloud
+date: '2013-05-14 08:57'
 comments: true
 author: Ken Perkins
 published: true
-categories: 
-- SDK
-- pkgcloud
-- node.js
+categories:
+  - SDK
+  - node.js
 ---
 It’s been a few crazy weeks since I started at Rackspace, and while I’ve already been to San Antonio multiple times, as well as attending my first OpenStack Summit and meeting all of the awesome folks at the SF Rackspace office, I’ve spent the majority of my time getting up to speed on [pkgcloud](http://github.com/nodejitsu/pkgcloud).
 

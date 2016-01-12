@@ -1,16 +1,12 @@
 ---
 layout: post
-title: "Redis Benchmark &amp; Rackspace Performance VMs"
-date: 2013-12-09 12:30
+title: 'Redis Benchmark &amp; Rackspace Performance VMs'
+date: '2013-12-09 12:30'
 comments: true
 author: Ken Perkins
 published: true
 categories:
- - performance cloud servers
- - redis
- - benchmarks
- - node.js
-
+  - node.js
 ---
 While I was visiting the [Concurix team](http://www.concurix.com) getting a demo of
 some of the awesomeness they have for node.js profiling,

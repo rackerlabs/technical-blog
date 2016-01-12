@@ -1,14 +1,13 @@
 ---
 layout: post
-title: "Enforcing Performance With Flood"
-date: 2013-05-20 08:00
+title: Enforcing Performance With Flood
+date: '2013-05-20 08:00'
 comments: true
 author: Ian Good
 published: true
-categories: 
-- node.js
-- Performance
-- Jenkins
+categories:
+  - node.js
+  - Jenkins
 ---
 
 As we describe our release frequencies with "times per day" instead of "times

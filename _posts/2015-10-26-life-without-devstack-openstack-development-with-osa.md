@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "Life Without DevStack: OpenStack Development With OSA"
-date: 2015-10-26 10:00
+title: 'Life Without DevStack: OpenStack Development With OSA'
+date: '2015-10-26 10:00'
 comments: true
 author: Miguel Grinberg
 published: true
 categories:
-    - openstack
-    - osad
-    - ansible
+  - openstack
+  - osad
+  - ansible
 ---
 
 If you are an OpenStack contributor, you likely rely on DevStack for most of

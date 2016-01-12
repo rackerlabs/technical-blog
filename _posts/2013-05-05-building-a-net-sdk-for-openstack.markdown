@@ -1,13 +1,12 @@
 ---
 layout: post
-title: "Building A .NET SDK For OpenStack"
-date: 2013-05-06 08:00
+title: Building A .NET SDK For OpenStack
+date: '2013-05-06 08:00'
 comments: true
 author: Alan Quillin
 published: true
-categories: 
-- OpenStack
-- .NET
+categories:
+  - OpenStack
 ---
 As developers on the [RackConnect](http://www.rackspace.com/cloud/hybrid/dedicated_cloud/rackconnect/) product, my team has a strong need for RackConnect to interact with OpenStack when we launched the next generation public cloud. RackConnect is written in .NET, and we began baking pieces of a rudimentary .NET software development kit (SDK) functionality into our software to help use the OpenStack services. 
 

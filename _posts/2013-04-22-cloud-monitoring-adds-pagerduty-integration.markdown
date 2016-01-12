@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Cloud Monitoring Adds PagerDuty Integration"
-date: 2013-04-23 12:00
+title: Cloud Monitoring Adds PagerDuty Integration
+date: '2013-04-23 12:00'
 comments: true
 author: Justin Gallardo
 published: true
-categories: 
-- Cloud Monitoring
+categories:
+  - Cloud Monitoring
 ---
 
 {% img right 2013-04-22-cloud-monitoring-pagerduty/cloud_monitoring_pagerduty.png 160 160 %}[Cloud Monitoring](http://www.rackspace.com/cloud/monitoring/)

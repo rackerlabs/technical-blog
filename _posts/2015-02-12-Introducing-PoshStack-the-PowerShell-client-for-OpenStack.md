@@ -1,19 +1,15 @@
 ---
 layout: post
-title: "Introducing PoshStack, the PowerShell client for OpenStack"
-date: 2015-02-12 12:15
+title: 'Introducing PoshStack, the PowerShell client for OpenStack'
+date: '2015-02-12 12:15'
 comments: true
 author: Don Schenck
 published: true
 categories:
   - OpenStack
-  - Windows
-  - PowerShell
   - DevOps
   - Automation
-  - Scripting
-bio:
-  Don Schenck is a Developer Advocate with the Developer Experience team at Rackspace, with a main focus on .NET technologies. Follow @DonSchenck on Twitter.
+bio: 'Don Schenck is a Developer Advocate with the Developer Experience team at Rackspace, with a main focus on .NET technologies. Follow @DonSchenck on Twitter.'
 ---
 
 ##Here's PoshStack

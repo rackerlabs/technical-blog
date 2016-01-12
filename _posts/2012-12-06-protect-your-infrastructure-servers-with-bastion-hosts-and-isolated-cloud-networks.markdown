@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Protect your Infrastructure Servers with Bastion Hosts and Isolated Cloud Networks"
-date: 2012-11-27 09:13
+title: Protect your Infrastructure Servers with Bastion Hosts and Isolated Cloud Networks
+date: '2012-11-27 09:13'
 comments: true
 author: Brandon Philips
 categories:
-- Cloud Networks
+  - Cloud Networks
 ---
 *This guest post was contributed by [Mr. Brandon Philips](http://www.linkedin.com/in/brandonphilips). Brandon is part of a small team of Rackers getting the Rackspace Cloud Monitoring Agent ready for launch. The Agent will help customers monitor the internals of their servers and application. You can check out his site at <http://ifup.org>, find him at local San Francisco meetups and check out his code on [Github](https://github.com/philips).*
 

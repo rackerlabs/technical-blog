@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "Understanding the Chef Environment File in Rackspace Private Cloud"
-date: 2013-12-10 11:01
+title: Understanding the Chef Environment File in Rackspace Private Cloud
+date: '2013-12-10 11:01'
 comments: true
 author: James Thorne
 published: true
 categories:
- - chef
- - devops
- - private cloud
- - OpenStack
+  - chef
+  - devops
+  - private cloud
+  - OpenStack
 ---
 
 Rackspace Private Cloud uses Chef to deploy an OpenStack environment. Chef

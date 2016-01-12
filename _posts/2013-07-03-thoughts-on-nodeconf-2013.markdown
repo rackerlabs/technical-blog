@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Thoughts on NodeConf 2013, 4-Square, and The Auld Triangle"
-date: 2013-07-04 08:00
+title: 'Thoughts on NodeConf 2013, 4-Square, and The Auld Triangle'
+date: '2013-07-04 08:00'
 comments: true
 author: Ken Perkins
 published: true
 categories:
-- node.js
-- Events
+  - node.js
+  - Events
 ---
 In a way, the bus ride 90 minutes north of San Francisco set the table for what the attendees had in store for the 4 days we’d spend in the hills of Marin County. There were introductions, stories swapped, jokes made, and sights to be seen. But the most significant part of the bus ride  was that most of the attendees were all experiencing it together.
 

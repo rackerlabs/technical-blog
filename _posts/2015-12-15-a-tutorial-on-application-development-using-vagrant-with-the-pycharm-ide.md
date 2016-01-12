@@ -1,14 +1,13 @@
 ---
 layout: post
-title: "A Tutorial on Application Development Using Vagrant with the PyCharm IDE"
-date: 2015-12-15 23:59
+title: A Tutorial on Application Development Using Vagrant with the PyCharm IDE
+date: '2015-12-15 23:59'
 comments: false
 author: Brandon Griffin
 authorIsRacker: true
 published: true
 categories:
-- Vagrant
-- Python
+  - Python
 ---
 I have spent the majority of my career as a Java developer.  As a result, I learned to be more productive using an IDE instead of an editor like Vi.  Even though Vi is still my editor of choice when I’m in a Linux shell, I don’t believe it’s practical when managing large Java projects. 
 

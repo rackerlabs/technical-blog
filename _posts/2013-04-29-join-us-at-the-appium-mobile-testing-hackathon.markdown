@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Join Us At The Appium Mobile Testing Hackathon"
-date: 2013-04-29 14:44
+title: Join Us At The Appium Mobile Testing Hackathon
+date: '2013-04-29 14:44'
 comments: true
 author: Alexander Scammon
 published: true
-categories: 
-- Events
+categories:
+  - Events
 ---
 Here at Rackspace we are deeply committed to furthering the software development community. We love things like well-tested applications and vibrant open source projects.
 

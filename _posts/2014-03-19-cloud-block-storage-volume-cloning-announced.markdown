@@ -1,13 +1,11 @@
 ---
 layout: post
-title: "Cloud Block Storage Volume Cloning Announced!"
-date: 2014-03-19 10:01
+title: 'Cloud Block Storage Volume Cloning Announced!'
+date: '2014-03-19 10:01'
 comments: true
 author: Jose Malacara
 published: true
-categories:
- - Cloud Block Storage
- - Cloning
+categories: []
 ---
 
 Today our Control Panel team announced support for Cloud Block Storage Volume

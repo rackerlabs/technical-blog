@@ -1,12 +1,11 @@
 ---
 layout: post
-title: "Rackspace Deployment Services: Blueprints To Easily Launch Your Apps"
-date: 2013-06-25 13:00
+title: 'Rackspace Deployment Services: Blueprints To Easily Launch Your Apps'
+date: '2013-06-25 13:00'
 comments: true
 author: Ziad Sawalha
 published: true
-categories: 
-- Rackspace Deployment Services
+categories: []
 ---
 Early last year, a project code-named Checkmate was created by Rackers to make it easy for them to deploy complex cloud configurations, such as scalable WordPress with Cloud Servers, Cloud Databases and a Cloud Load Balancer, with one-click for our customers. The goal of the project was to provide a way for Rackers to share and collaborate on these best practices using common collaboration tools like GitHub. 
 

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Automate Application Updates with Ansible"
-date: 2013-07-24 12:00
+title: Automate Application Updates with Ansible
+date: '2013-07-24 12:00'
 comments: true
 author: Michael DeHaan
 published: true
-categories: 
-- Ansible
+categories:
+  - Ansible
 ---
 This is a guest post written by Michael DeHaan, CTO at [AnsibleWorks][1], a Rackspace Cloud Tools partner. AnsibleWorks provides IT orchestration solutions that simplify the way IT manages systems, applications, and infrastructure.
 

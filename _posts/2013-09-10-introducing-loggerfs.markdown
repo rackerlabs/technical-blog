@@ -1,14 +1,11 @@
 ---
 layout: post
-title: "Introducing LoggerFS"
-date: 2013-09-10 09:15
+title: Introducing LoggerFS
+date: '2013-09-10 09:15'
 comments: true
 author: Eric Cheek
 published: true
-categories: 
-- Go
-- Ops
-- Logging
+categories: []
 ---
 > WARNING: LoggerFS PROJECT HAS BEEN ABANDONED BY ITS MAINTAINER.
 

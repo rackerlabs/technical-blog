@@ -1,15 +1,11 @@
 ---
 layout: post
-title: "The Odd Couple: MongoDB and MySQL"
-date: 2014-03-03 14:10
+title: 'The Odd Couple: MongoDB and MySQL'
+date: '2014-03-03 14:10'
 comments: true
 author: Alex Brandt
 published: true
-categories:
- - MongoDB
- - MySQL
- - Guest Posts
-
+categories: []
 ---
 
 The choices and combinations we have available during datastore selection

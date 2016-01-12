@@ -1,15 +1,14 @@
 ---
 layout: post
-title: "I Have A Cloud...Now What? - Part 1: Building a 3-tier Webapp"
-date: 2014-07-24 12:26
+title: 'I Have A Cloud...Now What? - Part 1: Building a 3-tier Webapp'
+date: '2014-07-24 12:26'
 comments: true
 author: Mike Metral
 published: true
 categories:
-- public-cloud
-- cloud-servers
-- OpenStack
-- architechture
+  - public-cloud
+  - cloud-servers
+  - OpenStack
 ---
 
 When we meet with customers, a constant set of questions we get asked goes something

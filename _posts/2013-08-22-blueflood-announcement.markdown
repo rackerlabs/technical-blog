@@ -1,14 +1,12 @@
 ---
 layout: post
-title: "Blueflood: A new Open Source Tool for Time Series Data at Scale"
-date: 2013-08-22 08:00:00
+title: 'Blueflood: A new Open Source Tool for Time Series Data at Scale'
+date: 2013-08-22T08:00:00.000Z
 comments: true
 author: James Burkhart
 published: true
 categories:
-- Blueflood
-- Cloud Monitoring
-- cassandra
+  - Cloud Monitoring
 ---
 Time series data can yield some of the most interesting and relevant information for developers, operators and businesses. But ever larger datasets coming from multiple sources are making it difficult for people to pull real, actionable intelligence from these time series streams.
 

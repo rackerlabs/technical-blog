@@ -1,13 +1,12 @@
 ---
 layout: post
-title: "Breaking Down the Resistance to OpenStack: Laying the Cloud Foundation"
-date: 2015-05-11 23:59
+title: 'Breaking Down the Resistance to OpenStack: Laying the Cloud Foundation'
+date: '2015-05-11 23:59'
 comments: true
 author: Walter Bentley
 published: true
 categories:
-    - openstack
-    - openstack-for-enterprises 
+  - openstack
 ---
 
 As the look and feel of the cloud evolves, matures, and hedges toward main stream adoption, the Solution Architects, Developers, and Infrastructure engineers of Enterprises face the challenge to determine what technologies to consume.  Should I go with something that requires vendor licensing? Or should I look to Open Source technologies, such as OpenStack?  Then if you do decide that OpenStack solves for your technology needs, how best could someone layout its pros and cons to their senior leadership.  

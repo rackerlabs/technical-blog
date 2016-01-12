@@ -1,14 +1,12 @@
 ---
 layout: post
-title: "Run Sitecore in a Docker container on Windows Server 2016"
-date: 2015-12-16 10:45
+title: Run Sitecore in a Docker container on Windows Server 2016
+date: '2015-12-16 10:45'
 comments: false
 author: Jimmy Rudley
 published: true
 categories:
-    - Windows Server 2016 Technical Preview 4
-    - Docker
-    - Sitecore
+  - Docker
 ---
 
 At SUGCON 2015, Rackspace and Hedgehog presented about how using Docker will shape the way we work with Sitecore, an ASP.Net web content management system. With the release of Windows Server 2016 Technical Preview 4, we are now able to run Sitecore in a Docker container. 

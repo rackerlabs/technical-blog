@@ -1,18 +1,14 @@
 ---
 layout: post
-title: "OpenStack Heat Orchestration coming to Rackspace"
-date: 2013-10-30 11:11
+title: OpenStack Heat Orchestration coming to Rackspace
+date: '2013-10-30 11:11'
 comments: true
 author: Chris Spencer
 published: true
 categories:
-- Apps
-- Automation
-- Deployment
-- Orchestration
-- Heat
-- OpenStack
-- Template
+  - Automation
+  - Orchestration
+  - OpenStack
 ---
 
 In the spirit of both furthering our position within the [OpenStack](http://www.openstack.org) cloud arena

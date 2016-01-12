@@ -1,15 +1,12 @@
 ---
 layout: post
-title: "Getting Started with OpenStack and Designate"
-date: 2013-09-20 09:18
+title: Getting Started with OpenStack and Designate
+date: '2013-09-20 09:18'
 comments: true
 author: Tim Simmons
 published: true
-categories: 
-- OpenStack
-- Designate
-- DNS
-
+categories:
+  - OpenStack
 ---
 
 **Note**: This guide has been merged into the official Designate documentation. You can see that document here:

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "From Local Development to Remote Deployment with Docker Machine and Compose"
-date: 2015-07-02 14:00
+title: From Local Development to Remote Deployment with Docker Machine and Compose
+date: '2015-07-02 14:00'
 comments: true
 author: Everett Toews
 published: true

@@ -1,15 +1,12 @@
 ---
 layout: post
-title: "Using configuration management to manage Vhosts"
-date: 2013-09-18 09:00
+title: Using configuration management to manage Vhosts
+date: '2013-09-18 09:00'
 comments: true
 author: Welby McRoberts
 published: true
-categories: 
-- SatlStack
-- Linux
-- IIS
-- Automation
+categories:
+  - Automation
 ---
 
 One of the challenges that someone maintaining a group of webservers is faced with is keeping the vhost configuration in sync accross all machines. Much like maitaining [hosts files](http://developer.rackspace.com/blog/chef-creating-dynamic-host-files.html) this can be solved with configuration management. There are ofcourse the usual caveats, changes made outwith of the configruation management will either be overwritern, or not syncronised between hosts, so it's imperative that those "quick changes" are actually done via the configuration management system!

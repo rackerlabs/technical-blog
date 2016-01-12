@@ -1,14 +1,12 @@
 ---
 layout: post
-title: "Code for America Update"
-date: 2013-10-16 12:54
+title: Code for America Update
+date: '2013-10-16 12:54'
 comments: true
 author: Glen Campbell
 published: true
 categories:
-    code for america
-    developers
-    outreach
+  - developers
 ---
 
 

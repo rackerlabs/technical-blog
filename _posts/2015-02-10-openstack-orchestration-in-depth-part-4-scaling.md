@@ -1,21 +1,14 @@
 ---
 layout: post
-title: "OpenStack Orchestration In Depth, Part IV: Scaling"
-date: 2015-02-10 07:15
+title: 'OpenStack Orchestration In Depth, Part IV: Scaling'
+date: '2015-02-10 07:15'
 comments: true
 author: Miguel Grinberg
 published: true
 categories:
   - rackspace-private-cloud
   - Orchestration
-  - openstack-heat
-bio:
-  Miguel Grinberg is a software engineer with a background in web technologies and REST APIs.
-  He is the author of the book "Flask Web Development" from O'Reilly Media, and has a blog at
-  http://blog.miguelgrinberg.com, where he writes about a variety of topics including web
-  development, robotics, photography and the occasional movie review. Miguel works as a
-  Software Developer with the Rackspace Private Cloud team. He lives in Portland,
-  Oregon with his wife, four kids, two dogs and a cat. Follow @miguelgrinberg on Twitter.
+bio: "Miguel Grinberg is a software engineer with a background in web technologies and REST APIs. He is the author of the book \"Flask Web Development\" from O'Reilly Media, and has a blog at http://blog.miguelgrinberg.com, where he writes about a variety of topics including web development, robotics, photography and the occasional movie review. Miguel works as a Software Developer with the Rackspace Private Cloud team. He lives in Portland, Oregon with his wife, four kids, two dogs and a cat. Follow @miguelgrinberg on Twitter."
 ---
 
 This is the fourth and last article in my series on OpenStack orchestration with Heat. In the previous articles, I gave you a gentle [introduction to Heat](/blog/openstack-orchestration-in-depth-part-1-introduction-to-heat), and then I showed you some techniques to orchestrate the deployment of [single](/blog/openstack-orchestration-in-depth-part-2-single-instance-deployments/) and [multiple](/blog/openstack-orchestration-in-depth-part-3-multi-instance-deployments/) instance applications on the cloud, all done with generic and reusable components.

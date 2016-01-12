@@ -1,14 +1,12 @@
 ---
 layout: post
-title: "Scaling Horizontally: Handling Sessions on the Open Cloud"
-date: 2013-03-28 12:00
+title: 'Scaling Horizontally: Handling Sessions on the Open Cloud'
+date: '2013-03-28 12:00'
 comments: true
 published: true
 author: Hart Hoover
 categories:
-- Five Pillars
-- Cloud Servers
-- REST
+  - Cloud Servers
 ---
 {% img right pillars/pillar.png 160 160 %}
 Wayne Walls wrote a great article on the Rackspace Blog around [horizontal scaling](http://www.rackspace.com/blog/pillars-of-cloudiness-no-3-scaling-horizontally/), a pillar of cloud application design. When designing applications in the cloud, typically you need more than one server performing specific tasks.

@@ -1,14 +1,12 @@
 ---
-layout: post  
-title: "Docker host management, Kubernetes Rackspace binary install, and Gophercloud 1.0"  
-date: 2014-10-31 10:45  
-comments: true  
-author: Developer Experience Team  
-published: true  
+layout: post
+title: 'Docker host management, Kubernetes Rackspace binary install, and Gophercloud 1.0'
+date: '2014-10-31 10:45'
+comments: true
+author: Developer Experience Team
+published: true
 categories:
   - docker
-  - gophercloud
-  - rackspace
 ---
 ### Docker Host Management
 

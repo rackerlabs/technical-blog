@@ -1,15 +1,13 @@
 ---
 layout: post
-title: "Are you unknowingly replicating your failure as a DBA?"
-date: 2013-04-09 08:00
+title: Are you unknowingly replicating your failure as a DBA?
+date: '2013-04-09 08:00'
 comments: true
 author: Steve Katen
 published: true
 categories:
-- Cloud Servers
-- Cloud Monitoring
-- Managed Cloud
-- mysql
+  - Cloud Servers
+  - Cloud Monitoring
 ---
 MySQL replication offers an opportunity to distribute your database to multiple nodes for additional performance or to off-load specific functionality from your production stack. When uptime is a requirement, table-locking can create unavailability and a long-running nightly backup can cause an unexpected outage. One benefit of replication is that it allows the backup to happen on the slave without interrupting your production environment. So what happens  when you rely on this configuration to safeguard your data without constantly ensuring that the replication process is working? I'll tell you what happens – you're the guy without a recent backup.<!-- more -->  
 

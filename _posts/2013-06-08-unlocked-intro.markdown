@@ -1,15 +1,13 @@
 ---
 layout: post
-title: "Learn How To Cloud At Unlocked: The Hybrid Cloud"
-date: 2013-06-10 08:00
+title: 'Learn How To Cloud At Unlocked: The Hybrid Cloud'
+date: '2013-06-10 08:00'
 comments: true
 author: Wayne Walls
 published: true
-categories: 
-- unlocked
-- Developers
-- DevOps
-- CloudExpo
+categories:
+  - Developers
+  - DevOps
 ---
 {% img right 2013-06-08-unlocked-intro/UnlockedHybridCloudLogo.jpg 250 %}
 

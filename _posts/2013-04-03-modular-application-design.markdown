@@ -1,14 +1,12 @@
 ---
 layout: post
-title: "Modular Application Design with Services"
-date: 2013-04-04 08:00
+title: Modular Application Design with Services
+date: '2013-04-04 08:00'
 comments: true
 author: Hart Hoover
 published: true
-categories: 
-- Cloud Servers
-- Five Pillars
-- Cloud Tools
+categories:
+  - Cloud Servers
 ---
 {% img right pillars/pillar.png 160 160 %}
 

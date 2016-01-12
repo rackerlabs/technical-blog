@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "How the Cloud Monitoring team implemented Mailgun to automate monitoring alerts"
-date: 2012-12-11 11:52
+title: How the Cloud Monitoring team implemented Mailgun to automate monitoring alerts
+date: '2012-12-11 11:52'
 comments: true
 author: Wayne A. Walls
-categories: 
-- Mailgun
-- Cloud Monitoring
+categories:
+  - Mailgun
+  - Cloud Monitoring
 ---
 The team over at Mailgun just posted a [case study](http://blog.mailgun.com/how-node-js-app-cloud-monitoring-uses-the-mailgun-api/) about how the Rackspace Cloud Monitoring team successfully migrated their email alerts to the [Mailgun email automation platform](http://www.mailgun.com/). It's a really interesting read that is as much about how to plan for and deploy 3rd party tools in a production application as it is about using Mailgun to automate and monitor email alerts.
 <!-- more -->

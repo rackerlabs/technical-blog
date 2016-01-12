@@ -1,12 +1,12 @@
 ---
 comments: true
-date: 2012-10-16 13:00:14
+date: 2012-10-16T13:00:14.000Z
 layout: post
-title: Rate Limiting with Repose, the Restful Proxy Service Engine
+title: 'Rate Limiting with Repose, the Restful Proxy Service Engine'
 author: Chad Lung
 categories:
-- General
-- OpenStack
+  - General
+  - OpenStack
 ---
 
 _Chad Lung is a software engineer on the Rackspace Cloud Integration team and is the maintainer of Atom Hopper. Be sure to check out his personal blog at [http://www.giantflyingsaucer.com/blog/](http://www.giantflyingsaucer.com/blog/) and follow [@chadlung](https://twitter.com/chadlung) on Twitter._

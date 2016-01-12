@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Deploying Rackspace Private Cloud Software On Bare Metal"
-date: 2013-02-22 08:00
+title: Deploying Rackspace Private Cloud Software On Bare Metal
+date: '2013-02-22 08:00'
 comments: true
 author: Egle Sigler
-categories: 
-- Private Cloud
-- OpenStack
-- Chef
+categories:
+  - Private Cloud
+  - OpenStack
+  - Chef
 ---
 _Egle Sigler is a Private Cloud Architect, who started working at Rackspace in 2008. She was one of the first to receive Rackspace OpenStack certification. Before working with OpenStack, Egle worked on MyRackspace customer control panel, software architecture and enterprise tools. In her spare time, Egle enjoys traveling, hiking, snorkeling and nature photography._
 

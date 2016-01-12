@@ -1,13 +1,11 @@
 ---
 layout: post
-title: "Getting started with Hadoop using Hortonworks Sandbox"
-date: 2013-04-25 8:00
+title: Getting started with Hadoop using Hortonworks Sandbox
+date: '2013-04-25 8:00'
 comments: true
 author: Sudarshan Acharya
 published: true
-categories:
-- Big Data
-- Hadoop
+categories: []
 ---
 {% img right 2013-04-25-getting-started-with-hadoop/hortonworks.jpg 200 200 %}
 

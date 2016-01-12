@@ -1,16 +1,15 @@
 ---
 layout: post
-title: "OpenStack OSAD and Nagios, against the world"
-date: 2015-07-02 13:00
+title: 'OpenStack OSAD and Nagios, against the world'
+date: '2015-07-02 13:00'
 comments: true
 author: Walter Bentley
 published: true
 categories:
-    - rackspace-private-cloud
-    - OSAD
-    - OpenStack
-    - Nagios
-    - Ansible
+  - rackspace-private-cloud
+  - OSAD
+  - OpenStack
+  - Ansible
 ---
 
 Through the course of technology, infrastructure and application monitoring have changed positions.  Not so long ago, monitoring was an afterthought when rolling out your new application or standing up your new rack of servers.  More recently, I have observed monitoring to be one of the first considerations, to the point where it is actually in the initial project plan.

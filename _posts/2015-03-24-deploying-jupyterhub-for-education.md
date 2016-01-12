@@ -1,16 +1,13 @@
 ---
 layout: post
-title: "Deploying JupyterHub for Education"
-date: 2015-03-24 23:59
+title: Deploying JupyterHub for Education
+date: '2015-03-24 23:59'
 comments: true
 author: Jessica Hamrick
 published: true
 categories:
-    - python
-    - docker
-    - ipython
-    - jupyter
-    - education
+  - python
+  - docker
 ---
 
 As a PhD student at UC Berkeley, my duties involve some amount of teaching; so, this semester (Spring 2015), as well as last spring, I have been a teaching assistant for a class taught by my advisor, [Tom Griffiths](http://cocosci.berkeley.edu/tom/). The class, called Computational Models of Cognition (COGSCI 131), aims to introduce students to computational models of human behavior. The problem sets are a mixture of simple programming assignments—usually requiring students to implement pieces of different models—and written answers, in which students report and interpret the results of their code.

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Rackspace presents at DevopsDays Austin 2013"
-date: 2013-05-06 15:00
+title: Rackspace presents at DevopsDays Austin 2013
+date: '2013-05-06 15:00'
 comments: true
 author: Nicholas Mistry
 published: true
-categories: 
-- Events
+categories:
+  - Events
 ---
 Last week, Austin hosted [DevOpsDays](http://devopsdays.org/), an DevOps-focused event featuring innovative talks and great networking, with some great music and food thrown in the mix. The two-day event focused on sharing ideas to strengthen the DevOps movement by building a culture around highly agile and productive teams with integrated development and operations.<!-- more -->
 

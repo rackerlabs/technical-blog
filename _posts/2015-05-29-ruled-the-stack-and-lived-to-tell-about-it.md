@@ -1,14 +1,12 @@
 ---
 layout: post
-title: "Ruled the Stack and Lived to Tell About It"
-date: 2015-05-29 23:59
+title: Ruled the Stack and Lived to Tell About It
+date: '2015-05-29 23:59'
 comments: true
 author: Walter Bentley
 published: true
 categories:
-    - openstack
-    - openstack-summit-vancouver
-    - rule the stack
+  - openstack
 ---
 
 Last week I had the privilege to attend the OpenStack Super Bowl, aka the OpenStack Summit, in Vancouver.  It was incredible just to be around so many other folks who also believe strongly in OpenStack.

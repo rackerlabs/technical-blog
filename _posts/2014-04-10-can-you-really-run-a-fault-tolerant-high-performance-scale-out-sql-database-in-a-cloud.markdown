@@ -1,14 +1,11 @@
 ---
 layout: post
-title: "Can you really run a fault-tolerant, high-performance, scale-out SQL database in a cloud?"
-date: 2014-04-10 13:00
+title: 'Can you really run a fault-tolerant, high-performance, scale-out SQL database in a cloud?'
+date: '2014-04-10 13:00'
 comments: true
-author: Roland Schmidt, Sr. Director of Business Development, Clustrix, Inc.
+author: 'Roland Schmidt, Sr. Director of Business Development, Clustrix, Inc.'
 published: true
-categories:
-  - database
-  - partner
-  - clusterix
+categories: []
 ---
 
 
