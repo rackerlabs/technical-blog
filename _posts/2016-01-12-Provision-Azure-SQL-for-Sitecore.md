@@ -112,7 +112,7 @@ $sqlContext =  New-AzureSqlDatabaseServerContext -FullyQualifiedServerName $serv
 $Container = Get-AzureStorageContainer -Name $containerName -Context $myStoreContext 
 ```
 
-We can run a foreach loop that reads our variable **$files** which we pass the variables we built above into the **Start-AzureSqlDatabaseImport** cmdlet. I also created a variable called $Targets to hold the request id's from my import. Since this is an asynchornous import, we can pass these request id's into another cmdlet and check the status.
+We can run a foreach loop that reads our variable **$files** which we pass the variables we built above into the **Start-AzureSqlDatabaseImport** cmdlet. I also created a variable called **$Targets** to hold the request id's from my import. Since this is an asynchornous import, we can pass these request id's into another cmdlet and check the status.
 
 ```sh
 $Targets = @()
@@ -131,7 +131,7 @@ Start-Sleep -s 5
 }
 ```
 
-The cmdlet **Get-AzureSqlDatabaseImportExportStatus** expects a string and not a credential object, I found a [snippet of code](http://stackoverflow.com/questions/21741803/powershell-securestring-encrypt-decrypt-to-plain-text-not-working) that will convert the object back to a string. This will loop and check every 30 seconds until all the database imports are finished.
+The cmdlet **Get-AzureSqlDatabaseImportExportStatus** will let us check our import status. It expects a string and not a credential object. I found a [snippet of code](http://stackoverflow.com/questions/21741803/powershell-securestring-encrypt-decrypt-to-plain-text-not-working) that will convert the object back to a string. This will loop and check every 30 seconds until all the database imports are finished.
 
 ```sh
 #Get-AzureSqlDatabaseImportExportStatus expects a string for password.
