@@ -6,9 +6,7 @@ comments: false
 author: Jimmy Rudley
 published: true
 categories:
-    - Azure
-    - Sitecore
-    - PowerShell
+    - devops
 ---
 
 
