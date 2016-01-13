@@ -17,7 +17,7 @@ In my previous blog post on running Sitecore in a Docker container, I used Azure
 
 Investigating the Azure PowerShell cmdlets, Microsoft is in a state of removing Switch-AzureMode cmdlet. Reading the [Azure github wiki](https://github.com/Azure/azure-powershell/wiki/Deprecation-of-Switch-AzureMode-in-Azure-PowerShell), Microsoft announced they are renaming cmdlet's from verb-Azure[noun] to verb-AzureRM[noun]. This seems to be an ongoing effort, so you will see a mix of cmdlet's in my script. 
 
-You can download my PowerShell script from my repo located [here](https://github.com/jrudley/azureSitecoreBlobSqlUploader). Open the PowerShell script and you need to edit the following variables:
+You can download my [PowerShell script](https://github.com/jrudley/azureSitecoreBlobSqlUploader), and edit the following variables:
 
 
 ```sh
@@ -37,11 +37,11 @@ $credential = Get-Credential
 $sqlServerName = 'raxcontsqlsvr11' #It can only be made up of lowercase letters 'a'-'z', the numbers 0-9 and the hyphen. The hyphen may not lead or trail in the name.
 ```
 
-The **$bacpacLocation** variable is the location of your exported Sitecore databases with the .bacpac extension. Microsoft has provided instructions how to do a bacpac export [here](https://azure.microsoft.com/en-us/documentation/articles/sql-database-cloud-migrate-compatible-export-bacpac-ssms/)
+The **$bacpacLocation** variable is the location of your exported Sitecore databases with the .bacpac extension. Microsoft has provided instructions for how to do a bacpac export [here](https://azure.microsoft.com/en-us/documentation/articles/sql-database-cloud-migrate-compatible-export-bacpac-ssms/)
 
 The **$Location** and **$resourceGroupName** variables specify where we will create and name our resource group to contain and manage the lifecycle of all our Azure resources.
 
-The **$storageAccountName**, **$Type** and **$containerName** variables specify the Azure blob storage account name, the type of redundancy and the container name to create inside the storage account.
+The **$storageAccountName**, **$Type** and **$containerName** variables specify the Azure blob storage account name, the type of redundancy, and the container name to create inside the storage account.
 
 The **$credential** and **$sqlServeName** variables specify the username and password to use for the Azure SQL Server and the name for the Azure SQL Server to provision.
 
@@ -59,7 +59,7 @@ Name                    PublicAccess LastModified
 sitecoreblobcontainer11 Container    1/12/2016 6:36:43 PM +00:00
 ```
 
-We have our storage provisioned inside our resource group, now we can upload our Sitecore bacpac files. The first variable we set was the folder location of our bacpac files. I pass in all the child items of our **$bacpacLocation** and store the results in **$files**. We can run a simple foreach loop that runs the **Set-AzureStorageBlobContent** cmdlet to upload the files to our Azure storage container.
+We have our storage provisioned inside our resource group, so now we can upload our Sitecore bacpac files. The first variable we set was the folder location of our bacpac files. I pass in all the child items of our **$bacpacLocation** and store the results in **$files**. We can run a simple foreach loop that runs the **Set-AzureStorageBlobContent** cmdlet to upload the files to our Azure storage container.
 
 Now that we have our Sitecore bacpac files in our Azure storage container, we need to provision an Azure SQL Server. Running the following will provision our Azure SQL Server with the SQL server name and credentials we specified at the beginning of our script.
 
@@ -75,7 +75,7 @@ ServerVersion            : 2.0
 Tags                     : 
 ```
 
-By default, our Azure SQL server has a firewall enabled and we need to allow our public ip and allow all Azure ip's to talk to our SQL server. I can create a new .net.webclient object and return my public ip by running the following PowerShell code
+By default, our Azure SQL server has a firewall enabled, and we need to allow our public IP, and all Azure IPs, to talk to our SQL server. I can create a new .net.webclient object and return my public ip by running the following PowerShell code
 
 ```sh
 $wc=New-Object net.webclient
@@ -103,7 +103,7 @@ EndIpAddress      : 0.0.0.0
 FirewallRuleName  : AllowAllAzureIPs
 ```
 
-You can see we added my public ip (removed the real ip for privacy) to connect in remotely via management studio and allowed Azure instances to talk to my Azure SQL Server. With those rules in place, we can now tell Azure to read from my Azure storage container and restore the bacpac files. Before Azure can start the import, we need to create an Azure sql database server context and grab our storage container we created above.
+You can see we added my public ip (removed the real ip for privacy) to connect in remotely via management studio and allowed Azure instances to talk to my Azure SQL Server. With those rules in place, we can now tell Azure to read from my Azure storage container and to restore the bacpac files. Before Azure can start the import, we need to create an Azure sql database server context and to grab our storage container we created above.
 
 ```sh
 PS C:\Users\jrudley> $ServerNameFQDN = $sqlServerName + '.database.windows.net' 
@@ -111,7 +111,7 @@ $sqlContext =  New-AzureSqlDatabaseServerContext -FullyQualifiedServerName $serv
 $Container = Get-AzureStorageContainer -Name $containerName -Context $myStoreContext 
 ```
 
-We can run a foreach loop that reads our variable **$files** which we pass the variables we built above into the **Start-AzureSqlDatabaseImport** cmdlet. I also created a variable called **$Targets** to hold the request id's from my import. Since this is an asynchornous import, we can pass these request id's into another cmdlet and check the status.
+We can run a foreach loop that reads our variable **$files**, which we pass the variables we built above into the **Start-AzureSqlDatabaseImport** cmdlet. I also created a variable called **$Targets** to hold the request id's from my import. Since this is an asynchornous import, we can pass these request id's into another cmdlet and check the status.
 
 ```sh
 $Targets = @()
@@ -130,7 +130,7 @@ Start-Sleep -s 5
 }
 ```
 
-The cmdlet **Get-AzureSqlDatabaseImportExportStatus** will let us check our import status. It expects a string and not a credential object. I found a [snippet of code](http://stackoverflow.com/questions/21741803/powershell-securestring-encrypt-decrypt-to-plain-text-not-working) that will convert the object back to a string. This will loop and check every 30 seconds until all the database imports are finished.
+The cmdlet **Get-AzureSqlDatabaseImportExportStatus** lets us check our import status. It expects a string and not a credential object. I found a [snippet of code](http://stackoverflow.com/questions/21741803/powershell-securestring-encrypt-decrypt-to-plain-text-not-working) that will convert the object back to a string. This will loop and check every 30 seconds until all the database imports are finished.
 
 ```sh
 #Get-AzureSqlDatabaseImportExportStatus expects a string for password.
