@@ -25,3 +25,9 @@ else
 fi
 
 deconst-preparer-jekyll
+
+# Show all the categories to help authors know which categories are available
+jekyll-audit categories list --posts-dir ${TRAVIS_BUILD_DIR}/_posts
+
+# Will fail if any underused categories have been created
+jekyll-audit categories list-underused --posts-dir ${TRAVIS_BUILD_DIR}/_posts
