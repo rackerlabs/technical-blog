@@ -116,3 +116,5 @@ We will close out this update with two pretty pictures.  Rather confident that y
 
 ![Rackspace OSIC Cloud Region 1]()
 ![Rackspace OSIC Cloud Region 2]()
+
+Check out the last 8 minutes of the recorded OSIC session from the Tokyo OpenStack summit back in October 2015 to see the video of the OSIC launch at Castle: [https://www.openstack.org/summit/tokyo-2015/videos/presentation/intel-cloud-for-all-openstack-innovation-center](https://www.openstack.org/summit/tokyo-2015/videos/presentation/intel-cloud-for-all-openstack-innovation-center).
