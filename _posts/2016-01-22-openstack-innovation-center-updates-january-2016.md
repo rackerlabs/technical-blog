@@ -52,6 +52,7 @@ Keep in mind the following details encompass only the first 1000-node cluster th
 
 The hardware is broken out into two cloud regions and the details follow:
 
+--------
 ****Cloud Region 1****
 
 Nodes running RPC-O version 11.0:
@@ -79,6 +80,7 @@ Unused nodes:
 * 1x Util node
 * 1x Jump node
 
+--------
 ****Cloud Region 2****
 
 Nodes running RPC-O version 11.0:
@@ -106,7 +108,7 @@ Unused nodes:
 * 1x Util node
 * 1x Jump node
 
-
+--------
 **Who’s using the Developer Cloud?**
 
 Currently the Intel Bare Metal CI Team and Mirantis are the only OSIC customers using the cluster as of today.  Both of those teams use the bare metal server option as mentioned above.  The next consumers slated to come on board is the OpenStack Foundation Infrastructure team.  We're also moving the OSIC sign-up form from this [link](http://go.rackspace.com/developercloud) to http://www.osic.org, which will sit on the Developer cloud.
