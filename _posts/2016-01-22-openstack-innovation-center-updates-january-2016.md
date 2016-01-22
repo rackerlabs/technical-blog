@@ -35,7 +35,7 @@ Yes, you can actually see, touch and sit in it now.  The Innovation Center locat
 
 As of October 2015 Intel has placed ~12 developers into the Innovation Center to take part in the detailed training program created in order to on-board OpenStack focused developers.  From that point forward roughly 10-15 additional developers will be brought in to work in the Innovation Center on a monthly basis.  The details around the OSIC engineering road map can be found in the below slide from the Tokyo OpenStack Summit:
 
-![OSIC Roadmap]()
+![OSIC Roadmap](http://www.hitchnyc.com/content/images/2016/01/osic-roadmap-n.png)
 
 **Developer Cloud**
 
@@ -114,7 +114,7 @@ Currently the Intel Bare Metal CI Team and Mirantis are the only OSIC customers 
 
 We will close out this update with two pretty pictures.  Rather confident that you like myself wishes that this was a screenshot of Horizon from their home labs.  We can all dream right?  Please stay tuned for more updates to come and keep Stacking!
 
-![Rackspace OSIC Cloud Region 1]()
-![Rackspace OSIC Cloud Region 2]()
+{<2>}![Rackspace OSIC Cloud Region 1](http://www.hitchnyc.com/content/images/2016/01/osic-cloud1-n.png)
+{<3>}![Rackspace OSIC Cloud Region 2](http://www.hitchnyc.com/content/images/2016/01/osic-cloud2-n.png)
 
 Check out the last 8 minutes of the recorded OSIC session from the Tokyo OpenStack summit back in October 2015 to see the video of the OSIC launch at Castle: [https://www.openstack.org/summit/tokyo-2015/videos/presentation/intel-cloud-for-all-openstack-innovation-center](https://www.openstack.org/summit/tokyo-2015/videos/presentation/intel-cloud-for-all-openstack-innovation-center).
