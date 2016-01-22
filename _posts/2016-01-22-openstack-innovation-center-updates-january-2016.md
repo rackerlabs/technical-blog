@@ -7,6 +7,7 @@ author: Walter Bentley
 published: true
 categories:
     - OSIC
+    - Rackspace
     - Intel
     - rackspace-private-cloud
     - OpenStack
