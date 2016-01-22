@@ -6,12 +6,10 @@ comments: true
 author: Walter Bentley
 published: true
 categories:
-    - osic
-    - openstack-innovation-center
-    - rackspace
-    - intel
+    - OSIC
+    - Intel
     - rackspace-private-cloud
-    - openstack
+    - OpenStack
 ---
 
 Since the initial launch of the OpenStack Innovation Center back in July of 2015 much work has been done.  Wanted to take a moment to share the current status and some details about its next phases.  If you are unfamiliar with OSIC let me start off with some very quick background information.
