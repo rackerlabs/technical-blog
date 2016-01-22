@@ -6,7 +6,6 @@ comments: true
 author: Walter Bentley
 published: true
 categories:
-    - OSIC
     - Rackspace
     - Intel
     - rackspace-private-cloud
@@ -41,7 +40,7 @@ As of October 2015, Intel has placed ~12 developers into the Innovation Center t
 
 Come on...you know you only read this far to get the scope in this section.  Being honest, you're thinking the the Developer Cloud is pretty darned cool, and I can not blame you.  Just saying “two 1000-node OpenStack clusters” out loud sounds impressive.  As an architect, my first thought was “show me the details!”.  Well, you will be the first to get a look at the details that make up the first of the 1000-node cluster that is hosted at the Rackspace Dallas Fort Worth datacenter.  Could not think of a better combination of being funded by Intel and supported by Rackspace.
  
-Keep in mind the following details encompass only the first 1000-node cluster that is ready for use and hosted at Rackspace.  Unfortunately, I was not able to get any exciting details on the second cluster located at Intel in Oakland, California yet.  Keep posted for more updates to come at a later date.  Before we jump in, I want to thank my fellow Racker, ***James Thorne ([@jameswthorne](https://twitter.com/jameswthorne))***, for providing the cloud details.  He is our resident keeper and protector of the Rackspace hosted OpenStack Developer cloud.
+Keep in mind the following details encompass only the first 1000-node cluster that is ready for use and hosted at Rackspace.  Unfortunately, I was not able to get any exciting details on the second cluster located at Intel in Oakland, California yet.  Keep posted for more updates to come at a later date.
 
 ***OSIC Cluster @ Rackspace***
 
@@ -55,57 +54,57 @@ The hardware is broken out into two cloud regions and the details follow:
 
 ****Cloud Region 1****
 
-	Nodes running RPC-O version 11.0:
-	17 Server cabinets
-	
-	1x Deployment node
-	3x Controller nodes
-	7x Logging nodes
-    132x Compute nodes with spindle drives
-    44x Compute nodes with Intel SSD S3500
-    66x Compute nodes with Intel SSD S3700
-    44x Cinder nodes
-    4x Swift Proxy nodes
-    40x Swift Object Storage nodes
+Nodes running RPC-O version 11.0:
 
-	Bare metal nodes (not running RPC-O):
+* 17 Server cabinets
+* 1x Deployment node
+* 3x Controller nodes
+* 7x Logging nodes
+* 132x Compute nodes with spindle drives
+* 44x Compute nodes with Intel SSD S3500
+* 66x Compute nodes with Intel SSD S3700
+* 44x Cinder nodes
+* 4x Swift Proxy nodes
+* 40x Swift Object Storage nodes
 
-    10x Compute nodes with spindle drives (In-use by Intel Bare Metal CI Team)
+Bare metal nodes:
 
-	Unused nodes:
+* 10x Compute nodes with spindle drives
 
-    12x Compute nodes with spindle drives
-    4x Controller nodes
-    5x Network nodes (Will probably used to put Neutron agents on)
-    1x Util node (Running HAProxy right now)
-    1x Jump node
+Unused nodes:
+
+* 12x Compute nodes with spindle drives
+* 4x Controller nodes
+* 5x Network nodes
+* 1x Util node
+* 1x Jump node
 
 ****Cloud Region 2****
 
-	Nodes running RPC-O version 11.0:
-	29 Server cabinets
+Nodes running RPC-O version 11.0:
 
-    1x Deployment node
-    3x Controller nodes
-    7x Logging nodes
-    154x Compute nodes with spindle drives
-    44x Compute nodes with Intel SSD S3500
-    66x Compute nodes with Intel SSD S3700
-    44x Cinder nodes
-    4x Swift Proxy nodes
-    40x Swift Object Storage nodes
+* 29 Server cabinets
+* 1x Deployment node
+* 3x Controller nodes
+* 7x Logging nodes
+* 154x Compute nodes with spindle drives
+* 44x Compute nodes with Intel SSD S3500
+* 66x Compute nodes with Intel SSD S3700
+* 44x Cinder nodes
+* 4x Swift Proxy nodes
+* 40x Swift Object Storage nodes
 
-	Bare metal nodes (not running RPC-O):
+Bare metal nodes:
 
-    242x Compute nodes with spindle drives (In-use by Mirantis)
+* 242x Compute nodes with spindle drives
 
-	Unused nodes:
+Unused nodes:
 
-    22x Compute nodes with spindle drives
-    4x Controller nodes
-    5x Network nodes
-    1x Util node (Running HAProxy right now)
-    1x Jump node
+* 22x Compute nodes with spindle drives
+* 4x Controller nodes
+* 5x Network nodes
+* 1x Util node
+* 1x Jump node
 
 
 **Who’s using the Developer Cloud?**
