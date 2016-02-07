@@ -6,8 +6,6 @@ comments: true
 author: Walter Bentley
 published: true
 categories:
-    - Rackspace
-    - Intel
     - rackspace-private-cloud
     - OpenStack
 ---
