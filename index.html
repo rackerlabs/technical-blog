@@ -2,36 +2,48 @@
 layout: default
 title: Rackspace Developer Center
 bodyClass: home
-headline: Developers, explore our cloud
+headline: |
+  Spin Up <span id="headline-typer"><span class="word">OnMetal Servers</span></span> Easier with Rackspace
 tagline: >
-    Get up to $600 in <strong>free credit</strong>. <br>
-    No rate limits, support fees, or long-term contracts. <br>
-    <a href="https://cart.rackspace.com/cloud/developer-plus" class="get-started">Sign up for $50/month credit</a>
+    From innovative products like <a href="https://getcarina.com/">Carina</a> to a full suite of reliable cloud products, Rackspace has the right infrastructure to finish your next project. <br>
+    <a href="https://cart.rackspace.com/cloud" class="get-started">Sign up</a>
 ---
 <div class="box docs-apis">
     <div class="container">
-        <h1>Everything you need to build powerful, scalable apps.</h1>
+        <h1>Developer Documentation</h1>
+        <p>Whether you’re just getting started with the Rackspace Cloud or looking for reference on a product you’ve been using for a while, we’ve got the right documentation to get you on your way.</p>
         <div class="tools-promos">
             <div class="promo sdks">
-                <div class="card blue">
+                <div class="card yellow">
                     <div class="card-content">
-                        <h3 class="card-title">SDKs &amp; tools</h3>
+                        <div class="card-image">
+                          {% include svgs/hexagon-rocket.svg %}
+                        </div>
+                        <h3 class="card-title">SDKs &amp; Tools</h3>
+                        <div class="card-subtitle">
+                          <span>SDKs</span>
+                        </div>
                         <div class="card-body">
-                            <p>We build our SDKs on open-source platforms, supporting Java, .NET,
-                                Node.js, PHP, Python, and Ruby.</p>
-                            <a href="/docs/#sdks">Build with our SDKs <span class="fa fa-arrow-right"></span></a>
+                            <p>We maintain SDKs for most major dev platforms, including Java, .NET, Node.js, PHP, Python, and Ruby.</p>
+                            <a href="/docs/#sdks" class="card-action">Explore tools</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="promo apis">
-                <div class="card green">
+                <div class="card red">
                     <div class="card-content">
-                        <h3 class="card-title">APIs</h3>
+                        <div class="card-image">
+                          {% include svgs/hexagon-terminal.svg %}
+                        </div>
+                        <h3 class="card-title">Product Guides</h3>
+                        <div class="card-subtitle">
+                          <span>APIs</span>
+                        </div>
                         <div class="card-body">
                             <p>Learn the capabilities of our APIs with Getting Started, Reference, and
                                 Developer guides.</p>
-                            <a href="/docs">Explore our API docs <span class="fa fa-arrow-right"></span></a>
+                            <a href="/docs" class="card-action">Read product guides</a>
                         </div>
                     </div>
                 </div>
@@ -41,34 +53,52 @@ tagline: >
 </div>
 <div class="box dev-support">
     <div class="container">
-        <h2>Developer-to-developer support</h2>
+        <h2>Rackspace Developer Community Support</h2>
         <p>Complex technical questions? Talk directly to the developers who build our SDKs and APIs.</p>
         <div class="comm-platforms">
             <div class="platform">
-                <span class="icon fa fa-comments-o"></span>
-                <h5><strong>IRC</strong> on freenode</h5>
-                <p class="item"><a href="https://webchat.freenode.net/?channels=rackspace">#rackspace</a></p>
-            </div>
-            <div class="platform">
-                <span class="icon fa fa-envelope-o"></span>
-                <h5><strong>Email</strong></h5>
-                <p class="item"><a href="mailto:sdk-support@rackspace.com">Rackspace SDK Support</a></p>
+                <span class="icon fa fa-github"></span>
+                <h5><strong>Developer-made tools</strong></h5>
+                <p class="item">Get help and contribute to our tools on <a href="https://github.com/rackspace">GitHub</a></p>
             </div>
             <div class="platform">
                 <span class="icon fa fa-pencil"></span>
-                <h5><strong>Post</strong> in our</h5>
-                <p class="item"><a href="https://community.rackspace.com/developers/f/7">Developer Forum</a></p>
+                <h5>Community</h5>
+                <p class="item">Post in our <a href="https://community.rackspace.com/developers/f/7">developer forum</a></p>
+            </div>
+            <div class="platform">
+                <span class="icon fa fa-comments-o"></span>
+                <h5>Join us on IRC</h5>
+                <p class="item">We’re on IRC on Freenode: <a href="https://webchat.freenode.net/?channels=rackspace">#rackspace</a></p>
+            </div>
+            <div class="platform">
+                <span class="icon fa fa-envelope-o"></span>
+                <h5>SDK Support</h5>
+                <p class="item"><a href="mailto:sdk-support@rackspace.com">Email us</a> for assistance</p>
             </div>
         </div>
     </div>
 </div>
-
-<div class="box carina-quote">
-    <div class="container">
-      <h2>Introducing Carina<sup>&trade;</sup> by Rackspace</h2>
-      <p>A “zero infrastructure” hosted container environment for instantly running your Docker containers. <br> Free to use while in beta.</p>
-      <p><a href="https://getcarina.com/">Learn More about Carina <i class="fa fa-arrow-right"></i></a></p>
+<div class="box rack-cli">
+  <div class="container">
+    <div class="cli-grid">
+      <div class="cli-image">
+        <img src="{% asset_path rack-cli-static.png %}" alt="Rack CLI">
+      </div>
+      <div class="cli-text">
+        <h2>Rack CLI</h2>
+        <p>“Rack”, the Rackspace command-line tool, makes it easy to explore and interact with the public cloud</p>
+        <ul>
+          <li>Integrates with Bash for advanced scripting interactions</li>
+          <li>Quick and easy way to explore our APIs without writing an entire program</li>
+        </ul>
+        <div class="action">
+          <a href="/docs/rack-cli/configuration/#installation-and-configuration" class="download-button">Download</a>
+          <a href="/docs/rack-cli/" class="info-button">Learn more</a>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
 <div class="box blog">
     <div class="container">
