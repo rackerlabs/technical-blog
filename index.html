@@ -113,14 +113,32 @@ tagline: >
                 <p><a href="/blog/">Visit the Developer Blog <i class="fa fa-arrow-right"></i></a></p>
             </div>
             <div class="link-list">
-                <h4>Product News</h4>
+                <h4>Events</h4>
                 <ul>
-                    <li><a href="http://www.rackspace.com/blog/microsoft-azure-now-with-pet-insurance-from-rackspace/">Microsoft Azure: Now with Pet Insurance from Rackspace</a></li>
-                    <li><a href="http://www.rackspace.com/blog/rackspace-intelligence-new-features/">Rackspace Intelligence: New Features, Now Available to All Cloud Customers</a></li>
-                    <li><a href="http://www.rackspace.com/blog/performance-tips-using-rackspace-cdn/">Performance Tips: Using Rackspace CDN</a></li>
+                  {% for event in site.events limit: 2 %}
+                  <li>
+                    <h5><a href="{{ event.url }}">{{ event.name }}</a></h5>
+                    <div class="event-info">
+                      <div class="date">{{ event.date }}</div>
+                      <div class="location">{{ event.location.name }}</div>
+                    </div>
+                    <p>
+                      {{ event.description }}
+                    </p>
+                    <div class="attendees">
+                      <div class="title">Attending</div>
+                      <ul>
+                        {% for attendee in event.attendees %}
+                        <li>
+                          <img src="{{ site.data.authors[attendee].email | gravatar }}" alt="{{ site.data.authors[attendee].name }}">
+                          {{ site.data.authors[attendee].name }}
+                        </li>
+                        {% endfor %}
+                      </ul>
+                    </div>
+                  </li>
+                  {% endfor %}
                 </ul>
-                <p><a href="http://www.rackspace.com/blog/channels/product-and-development/">Visit the Product Blog <i class="fa fa-arrow-right"></i></a>
-                </p>
             </div>
         </div>
     </div>
