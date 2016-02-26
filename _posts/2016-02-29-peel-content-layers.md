@@ -15,11 +15,13 @@ authorIsRacker: true
 
 At our annual rax.io internal technical conference in San Antonio this week, I had a blast hacking on a reporting tool for our new content engine behind developer.rackspace.com and support.rackspace.com.
 
+<!-- more -->
+
 ## Presentation layer: the web pages
 
 To take a look at each layer, start with the obvious one: the one you read! For each documentation page found on developer.rackspace.com/docs and support.rackspace.com/how-to, there's lovely documentation. 
 
-<img class="blog-post right" src="{% asset_path 2016-02-25-peel-content-layers/devrspage.png %} alt="developer.rackspace.com site"/>
+{% img right 2016-02-25-peel-content-layers/devrspage.png developer.rackspace.com site %}
 
 Looking at each page, there's a particular layout for each that makes the page useful. For example, [work with server image restoration with the dashboard](
 https://support.rackspace.com/how-to/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image/)
@@ -32,7 +34,7 @@ There's the "View Source" layer that is the HTML, CSS, and JavaScript that creat
 
 Peeling off that presentation layer, and looking at the source files, these are [RST](https://raw.githubusercontent.com/rackerlabs/docs-cloud-servers/master/api-docs/api-operations/methods/post-create-image-of-specified-server-servers-server-id-actions.rst) and [Markdown](https://raw.githubusercontent.com/rackerlabs/rackspace-how-to/master/content/cloud-servers/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image.md) files, stored and edited in GitHub. We can edit with authors around the world on GitHub and it's truly amazing.
 
-<img class="blog-post left" src="{% asset_path 2016-02-25-peel-content-layers/rstsource.png %} alt="developer.rackspace.com source"/>
+{% img left 2016-02-25-peel-content-layers/rstsource.png developer.rackspace.com source %}
 
 ## Delicious layer: the content API
 
@@ -71,4 +73,6 @@ I can also search through our existing content using the `/search?q=:term` opera
 
 The endpoint for our content API is open for read actions, so if you're interested you can take a look at the work so far at https://github.com/deconst/cli-deconst/ and join in. The [content API is documented in the content-service repo](https://github.com/deconst/content-service#api). Next we'll wrap it up in a CLI for easier reporting. Feel free to join in the delicious content API layer fun.
 
-<a href="https://commons.wikimedia.org/w/index.php?curid=37028602"><img class="blog-post left" src="{% asset_path 2016-02-25-peel-content-layers/layercake.jpg %} alt="Fancy layer cake by Jacklee, CC By-SA 4.0"/></a>
+<a href="https://commons.wikimedia.org/w/index.php?curid=37028602">
+{% img center 2016-02-25-peel-content-layers/layercake.jpg Fancy layer cake by Jacklee, CC By-SA 4.0 %}
+</a>
