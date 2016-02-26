@@ -8,7 +8,7 @@ authorAvatar: 'https://en.gravatar.com/userimage/1298029/6adf532b0824e2fe4cd8fea
 bio: Anne Gentle is a Principal Engineer at Rackspace where she serves on the OpenStack Technical Committee and advocates for cloud users.
 published: true
 categories:
-  - documentation
+  - Developers
   - Python
 authorIsRacker: true
 ---
