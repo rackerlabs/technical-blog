@@ -70,3 +70,5 @@ I can also search through our existing content using the `/search?q=:term` opera
 ## What's next?
 
 The endpoint for our content API is open for read actions, so if you're interested you can take a look at the work so far at https://github.com/deconst/cli-deconst/ and join in. The [content API is documented in the content-service repo](https://github.com/deconst/content-service#api). Next we'll wrap it up in a CLI for easier reporting. Feel free to join in the delicious content API layer fun.
+
+<a href="https://commons.wikimedia.org/w/index.php?curid=37028602"><img class="blog-post left" src="{% asset_path 2016-02-25-peel-content-layers/layercake.jpg %} alt="Fancy layer cake by Jacklee, CC By-SA 4.0"/></a>
