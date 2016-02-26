@@ -28,21 +28,21 @@ https://support.rackspace.com/how-to/create-an-image-of-a-server-and-restore-a-s
 and [create an image of a server with the API](
 https://developer.rackspace.com/docs/cloud-servers/v2/developer-guide/#create-image-of-specified-server).
 
-There's the "View Source" layer that is the HTML, CSS, and JavaScript that creates the beautiful documentation displayed in the browser. That source is made by our [Deconst](https://github.com/deconst/) tooling through mapping from a control layer, in our case, called [nexus-control](https://github.com/rackerlabs/nexus-control).
+There's the "View Source" layer, which is the HTML, CSS, and JavaScript that collectively create the beautiful documentation displayed in the browser. That source is made by our [Deconst](https://github.com/deconst/) tooling to form a control layer, in our case, called [nexus-control](https://github.com/rackerlabs/nexus-control).
 
 ## Authoring layer: the source files
 
-Peeling off that presentation layer, and looking at the source files, these are [RST](https://raw.githubusercontent.com/rackerlabs/docs-cloud-servers/master/api-docs/api-operations/methods/post-create-image-of-specified-server-servers-server-id-actions.rst) and [Markdown](https://raw.githubusercontent.com/rackerlabs/rackspace-how-to/master/content/cloud-servers/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image.md) files, stored and edited in GitHub. We can edit with authors around the world on GitHub and it's truly amazing.
+Peeling off that presentation layer and looking at the source files, you find [RST](https://raw.githubusercontent.com/rackerlabs/docs-cloud-servers/master/api-docs/api-operations/methods/post-create-image-of-specified-server-servers-server-id-actions.rst) and [Markdown](https://raw.githubusercontent.com/rackerlabs/rackspace-how-to/master/content/cloud-servers/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image.md) files, which are stored and edited in GitHub. We can edit with authors around the world on GitHub, and it's truly amazing.
 
 {% img left 2016-02-29-peel-content-layers/rstsource.png developer.rackspace.com source %}
 
 ## Delicious layer: the content API
 
-The next layer is the one I wanted to hack on this week, because the content service enables a [content API](https://github.com/deconst/content-service#api). Typically we use the API to [post the content for display in the upper layers](https://deconst.horse/developing/architecture/#lifecycle-of-an-http-request). Now that we have migrated to this new system, we have a way to report on the content for quality and completeness. I start with some use cases, wrote them down in the [README](https://github.com/deconst/cli-deconst/blob/master/README.md), and started.
+The next layer is the one I wanted to hack on this week, because the content service enables a [content API](https://github.com/deconst/content-service#api). Typically, we use the API to [post the content for display in the upper layers](https://deconst.horse/developing/architecture/#lifecycle-of-an-http-request). Now that we have migrated to this new system, we have a way to report on the content for quality and completeness. I started with some use cases, wrote them down in the [README](https://github.com/deconst/cli-deconst/blob/master/README.md), and got going.
 
 One of the best parts of this learning curve was realizing how helpful [iPython](http://ipython.org/install.html) is for this type of development -- type in a few ideas, import `pythonfilename`, edit some more, reload the `.py` file with `reload(pythonfilename)`, call the function directly in iPython with tab completion, and keep going.
 
-I focused squarely on my Python knowledge and set to making some API calls with the [requests](http://docs.python-requests.org/) library. The first order of business is to get a list of content IDs. My first thought was to use the GitHub API and search for repos with "docs-" in the name. Then I looked for a Python library to do that and to scope it only to the rackerlabs organization. Two of my teammates helped me find suitable Python libraries, and I went with one only to find I couldn't figure out authentication in time to demo in the afternoon. So, we created a list by hand, and then the code iterates through that list to create URL-encoded content IDs that the content API can understand. 
+I focused squarely on my Python knowledge and set to making some API calls with the [requests](http://docs.python-requests.org/) library. The first order of business was to get a list of content IDs. My first thought was to use the GitHub API and search for repos with "docs-" in the name. Then I looked for a Python library to do that and to scope it only to the rackerlabs organization. Two of my teammates helped me find suitable Python libraries, and I went with one but discovered that I couldn't figure out authentication in time to demo in the afternoon. So, we created a list by hand, and the code iterated through that list to create URL-encoded content IDs that the content API can understand. 
 
 Here's a Github repo URL:
 `https://github.com/rackerlabs/docs-cloud-servers`
@@ -51,9 +51,9 @@ Here's a content ID:
 
 Thanks, Python requests.utils.quote!
 
-Now to take that list of content IDs and look at loads of metadata. I feed the content IDs into another function, this one uses Python requests to get the JSON from the content service and then only look at the titles.
+Now to take that list of content IDs and look at loads of metadata. I fed the content IDs into another function, this one uses Python requests to get the JSON from the content service and then only look at the titles.
 
-With a list of content IDs, I can get a list of titles. Or a list of authors, or a list of even more metadata. Exciting!
+With a list of content IDs, I could get a list of titles. Or a list of authors, or a list of even more metadata. Exciting!
 
 ```
 ...
