@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Peeling back layers of content
-date: '2016-02-25 00:00'
+date: '2016-02-29 00:00'
 comments: true
 author: Anne Gentle
 authorAvatar: 'https://en.gravatar.com/userimage/1298029/6adf532b0824e2fe4cd8feab84f6b98e.jpg'
@@ -15,6 +15,8 @@ authorIsRacker: true
 
 At our annual rax.io internal technical conference in San Antonio this week, I had a blast hacking on a reporting tool for our new content engine behind developer.rackspace.com and support.rackspace.com.
 
+## Presentation layer: the web pages
+
 To take a look at each layer, start with the obvious one: the one you read! For each documentation page found on developer.rackspace.com/docs and support.rackspace.com/how-to, there's lovely documentation. 
 
 <img class="blog-post right" src="{% asset_path 2016-02-25-peel-content-layers/devrspage.png %} alt="developer.rackspace.com site"/>
@@ -26,15 +28,19 @@ https://developer.rackspace.com/docs/cloud-servers/v2/developer-guide/#create-im
 
 There's the "View Source" layer that is the HTML, CSS, and JavaScript that creates the beautiful documentation displayed in the browser. That source is made by our [Deconst](https://github.com/deconst/) tooling through mapping from a control layer, in our case, called [nexus-control](https://github.com/rackerlabs/nexus-control).
 
+## Authoring layer: the source files
+
 Peeling off that presentation layer, and looking at the source files, these are [RST](https://raw.githubusercontent.com/rackerlabs/docs-cloud-servers/master/api-docs/api-operations/methods/post-create-image-of-specified-server-servers-server-id-actions.rst) and [Markdown](https://raw.githubusercontent.com/rackerlabs/rackspace-how-to/master/content/cloud-servers/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image.md) files, stored and edited in GitHub. We can edit with authors around the world on GitHub and it's truly amazing.
 
 <img class="blog-post left" src="{% asset_path 2016-02-25-peel-content-layers/rstsource.png %} alt="developer.rackspace.com source"/>
 
+## Delicious layer: the content API
+
 The next layer is the one I wanted to hack on this week, because the content service enables a [content API](https://github.com/deconst/content-service#api). Typically we use the API to [post the content for display in the upper layers](https://deconst.horse/developing/architecture/#lifecycle-of-an-http-request). Now that we have migrated to this new system, we have a way to report on the content for quality and completeness. I start with some use cases, wrote them down in the [README](https://github.com/deconst/cli-deconst/blob/master/README.md), and started.
 
-One of the best parts of this learning curve was realizing how helpful [iPython](http://ipython.org/install.html) is for this type of development -- type in a few ideas, reload the .py file in iPython, call the function directly in iPython, keep going.
+One of the best parts of this learning curve was realizing how helpful [iPython](http://ipython.org/install.html) is for this type of development -- type in a few ideas, import `pythonfilename`, edit some more, reload the `.py` file with `reload(pythonfilename)`, call the function directly in iPython with tab completion, and keep going.
 
-I focused squarely on my Python knowledge and set to making some API calls with the requests library. The first order of business is to get a list of content IDs. My first thought was to use the GitHub API and search for repos with "docs-" in the name. Then I looked for a Python library to do that and to scope it only to the rackerlabs organization. Two of my teammates helped me find suitable Python libraries, and I went with one only to find I couldn't figure out authentication in time to demo in the afternoon. So, we created a list by hand, and then the code iterates through that list to create URL-encoded content IDs that the content API can understand. 
+I focused squarely on my Python knowledge and set to making some API calls with the [requests](http://docs.python-requests.org/) library. The first order of business is to get a list of content IDs. My first thought was to use the GitHub API and search for repos with "docs-" in the name. Then I looked for a Python library to do that and to scope it only to the rackerlabs organization. Two of my teammates helped me find suitable Python libraries, and I went with one only to find I couldn't figure out authentication in time to demo in the afternoon. So, we created a list by hand, and then the code iterates through that list to create URL-encoded content IDs that the content API can understand. 
 
 Here's a Github repo URL:
 `https://github.com/rackerlabs/docs-cloud-servers`
@@ -48,41 +54,19 @@ Now to take that list of content IDs and look at loads of metadata. I feed the c
 With a list of content IDs, I can get a list of titles. Or a list of authors, or a list of even more metadata. Exciting!
 
 ```
-Rackspace Cloud Guide to Core Infrastructure Services
-Rackspace Cloud Orchestration Templates User Guide
-Rackspace Command Line Interface
-Rackspace Cloud Images API 2.0
-Rackspace Cloud Load Balancers API 1.0
-Rackspace Cloud Load Balancers API 2.0 (Early Access)
-Rackspace Cloud Block Storage API 1.0
-Rackspace Cloud DNS API 1.0
-Rackspace Managed DNS API 2.0 (Early Access)
-Rackspace CDN API 1.0
-Rackspace Cloud Databases 1.0
-Rackspace Cloud Backup API 1.0
-Rackspace Cloud Backup API 2.0 (Early Access)
-Rackspace Cloud Orchestration API 1.0
-Rackspace Cloud Orchestration Resource Reference
+...
 RackConnect API 3.0
-Rackspace Cloud Queues API 1.0
-Cloud Networks - Neutron API 2.0
-Cloud Big Data API, v2.0
-Rackspace Autoscale 1.0
-Rackspace Cloud Servers API 2.0
-Rackspace Cloud Files API 1.0
-Rackspace Metrics API 2.0
-Rackspace Cloud Identity API 2.0
-Rackspace Monitoring 1.0
-Rackspace Cloud Keep API Developer Guide &nbsp;-&nbsp;API v1.0
-Dedicated Load Balancer API 2.0
-Rackspace Glossary
-Rackspace Private Cloud Powered By OpenStack v11
-Rackspace Private Cloud Powered By OpenStack v10
-Rackspace Dedicated vCenter/vCloud
+...
 Rackspace Private Cloud Powered By Red Hat
+...
 None
 Rackspace How-To Articles
 ```
 
-And look, I already found a content ID with no title. Already paying off.
+And look at the next to last line, the script already found a content ID with no title. Already paying off from a content audit perspective.
 
+I can also search through our existing content using the `/search?q=:term` operation. 
+
+## What's next?
+
+The endpoint for our content API is open for read actions, so if you're interested you can take a look at the work so far at https://github.com/deconst/cli-deconst/ and join in. The [content API is documented in the content-service repo](https://github.com/deconst/content-service#api). Next we'll wrap it up in a CLI for easier reporting. Feel free to join in the delicious content API layer fun.
