@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Sitecore Enterprise Architecture for Global Publishing"
-date: 2016-02-23 10:00
+date: 2016-02-29 00:00
 comments: false
 author: Grant Killian
 authorIsRacker: true
@@ -16,7 +16,7 @@ Sitecore implementations with Content Delivery nodes in multiple locations must 
 
 ### Lessons Learned Through Experience
 
-After numerous global Sitecore deployments, the [Rackspace enterprise Sitecore team](https://www.rackspace.com/en-us/web-content-management/sitecore) has gravitated to a configuration pattern built on top of SQL Server Replication for Sitecore to dramatically improve content publishing performance.  We've observed Sitecore content publishing operations to take a long time, sometimes *hours*, and while there are common sense measures to improve the speed of Sitecore publishes, network latency can always be a big factor.  
+After numerous global Sitecore deployments, the [Rackspace enterprise Sitecore team](https://www.rackspace.com/en-us/web-content-management/sitecore) has gravitated to a configuration pattern built on top of SQL Server Replication for Sitecore to dramatically improve content publishing performance.  We've observed Sitecore content publishing operations to take a long time, sometimes *hours*, and while there are common sense measures to improve the speed of Sitecore publishes, network latency can always be a big factor.
 
 If one has a Content Management server in London, for example, and publishes to Content Delivery servers in Hong Kong and Dallas . . . that's a long distance for the data to move and the standard Sitecore publish is very "chatty" and inefficient in moving large quantities of items through the Sitecore API.
 
@@ -28,11 +28,11 @@ This is one of those cases where a picture is worth a thousand words.  The diagr
 
 ### Replication Explorations
 
-We're using SQL Server Merge replication, the only type of replication officially supported by Sitecore, but we have initial investigations into whether running [Transactional Replication](https://technet.microsoft.com/en-us/library/ms151254%28v=sql.105%29.aspx) for Sitecore would be a more performant alternative.  Merge Replication is typically used when data flows in high volumes in both directions and conflicts may need to be resolved; Transactional Replication is typically used for one-way flows of data.  
+We're using SQL Server Merge replication, the only type of replication officially supported by Sitecore, but we have initial investigations into whether running [Transactional Replication](https://technet.microsoft.com/en-us/library/ms151254%28v=sql.105%29.aspx) for Sitecore would be a more performant alternative.  Merge Replication is typically used when data flows in high volumes in both directions and conflicts may need to be resolved; Transactional Replication is typically used for one-way flows of data.
 
 In the case of Sitecore publishing, Transactional Replication feels like an intiutive choice, but the current Sitecore database schema isn't a fit for Transactional Replication in a couple of ways:
 
-*   not all database tables have primary keys; Transaction Replication requires replicated tables to have primary keys defined
-*   the timestamp data type isn't valid for Transactional Replication; for example, the EventQueue.Stamp column would need to be moved from a *timestamp* to *binary(8)* data type
+* not all database tables have primary keys; Transaction Replication requires replicated tables to have primary keys defined
+* the timestamp data type isn't valid for Transactional Replication; for example, the EventQueue.Stamp column would need to be moved from a *timestamp* to *binary(8)* data type
 
 These hurdles are fairly easy to overcome, but the *wisdom* of doing so without full support from Sitecore leaves Transactional Replication as an experimental approach.  At Rackspace, we only use Merge Replication for live environments, but we continue to explore other options in our various Sitecore labs.
