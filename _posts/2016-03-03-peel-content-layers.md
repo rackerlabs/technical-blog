@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Peeling back layers of content
-date: '2016-02-29 00:00'
+date: '2016-03-03 00:00'
 comments: true
 author: Anne Gentle
 authorAvatar: 'https://en.gravatar.com/userimage/1298029/6adf532b0824e2fe4cd8feab84f6b98e.jpg'
@@ -44,16 +44,24 @@ One of the best parts of this learning curve was realizing how helpful [iPython]
 
 I focused squarely on my Python knowledge and set to making some API calls with the [requests](http://docs.python-requests.org/) library. The first order of business was to get a list of content IDs. My first thought was to use the GitHub API and search for repos with "docs-" in the name. Then I looked for a Python library to do that and to scope it only to the rackerlabs organization. Two of my teammates helped me find suitable Python libraries, and I went with one but discovered that I couldn't figure out authentication in time to demo in the afternoon. So, we created a list by hand, and the code iterated through that list to create URL-encoded content IDs that the content API can understand. 
 
+{% img left 2016-02-29-peel-content-layers/ipython.png iPython in action %}
+
 Here's a Github repo URL:
 `https://github.com/rackerlabs/docs-cloud-servers`
-Here's a content ID:
+Here's a URL-encoded content ID:
 `https%3A%2F%2Fgithub.com%2Frackerlabs%2Fdocs-cloud-servers`
 
 Thanks, Python requests.utils.quote!
 
 Now to take that list of content IDs and look at loads of metadata. I fed the content IDs into another function, this one uses Python requests to get the JSON from the content service and then only look at the titles.
 
-With a list of content IDs, I could get a list of titles. Or a list of authors, or a list of even more metadata. Exciting!
+As an example, look at what you get back when you do a GET for a content ID by clicking or pasting this URL in your browser:
+
+```https://developer.rackspace.com:9000/content/https%3A%2F%2Fgithub.com%2Frackerlabs%2Fdocs-cloud-big-data```
+
+{% img left 2016-02-29-peel-content-layers/contentid.png meta in envelope JSON %}
+
+Lots of JSON! I can get some meta data, the title, and with a list of content IDs, I could get a list of titles. Or a list of authors, or a list of even more metadata. Exciting!
 
 ```
 ...
@@ -65,9 +73,9 @@ None
 Rackspace How-To Articles
 ```
 
-And look at the next to last line, the script already found a content ID with no title. Already paying off from a content audit perspective.
+And look at the next to last line, the script already found a content ID with no title, though in this case it all checks out fine.
 
-I can also search through our existing content using the `/search?q=:term` operation. 
+I can also search through our existing content using the `/search?q=:term` operation. After the hackathon I added the ability to 
 
 ## What's next?
 
