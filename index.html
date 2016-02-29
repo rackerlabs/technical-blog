@@ -102,44 +102,69 @@ tagline: >
 </div>
 <div class="box blog">
     <div class="container">
-        <div class="link-lists">
-            <div class="link-list">
-                <h4>Developer Blog</h4>
-                <ul>
-                    {% for post in site.posts limit: 3 %}
-                        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-                    {% endfor %}
-                </ul>
-                <p><a href="/blog/">Visit the Developer Blog <i class="fa fa-arrow-right"></i></a></p>
-            </div>
-            <div class="link-list">
-                <h4>Events</h4>
-                <ul>
-                  {% for event in site.events limit: 2 %}
-                  <li>
-                    <h5><a href="{{ event.url }}">{{ event.name }}</a></h5>
-                    <div class="event-info">
-                      <div class="date">{{ event.date }}</div>
-                      <div class="location">{{ event.location.name }}</div>
-                    </div>
-                    <p>
-                      {{ event.description }}
-                    </p>
-                    <div class="attendees">
-                      <div class="title">Attending</div>
-                      <ul>
-                        {% for attendee in event.attendees %}
-                        <li>
-                          <img src="{{ site.data.authors[attendee].email | gravatar }}" alt="{{ site.data.authors[attendee].name }}">
-                          {{ site.data.authors[attendee].name }}
-                        </li>
-                        {% endfor %}
-                      </ul>
-                    </div>
-                  </li>
+        <div class="headline">
+          <h2>News &amp; Events</h2>
+        </div>
+        <div data-tab-set>
+          <div class="tab-buttons">
+            <ul>
+              <li>
+                <a href="#" data-tab-link="blog">Blog</a>
+              </li>
+              <li>
+                <a href="#" data-tab-link="events">Events</a>
+              </li>
+              <li>
+                <a href="#" data-tab-link="news">News</a>
+              </li>
+            </ul>
+          </div>
+          <div class="tabs">
+            <div data-tab="blog">
+              <ul>
+                  {% for post in site.posts limit: 3 %}
+                      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
                   {% endfor %}
-                </ul>
+              </ul>
+              <p class="big-button"><a href="/blog/">Visit the Developer Blog</a></p>
             </div>
+            <div data-tab="events">
+              <ul>
+                {% for event in site.events limit: 2 %}
+                <li>
+                  <h5><a href="{{ event.url }}">{{ event.name }}</a></h5>
+                  <div class="event-info">
+                    <div class="date">{{ event.date }}</div>
+                    <div class="location">{{ event.location.name }}</div>
+                  </div>
+                  <p>
+                    {{ event.description }}
+                  </p>
+                  <div class="attendees">
+                    <div class="title">Attending</div>
+                    <ul>
+                      {% for attendee in event.attendees %}
+                      <li>
+                        <img src="{{ site.data.authors[attendee].email | gravatar }}" alt="{{ site.data.authors[attendee].name }}">
+                        {{ site.data.authors[attendee].name }}
+                      </li>
+                      {% endfor %}
+                    </ul>
+                  </div>
+                </li>
+                {% endfor %}
+              </ul>
+            </div>
+            <div data-tab="news">
+              <ul>
+                <li>News 1</li>
+                <li>News 2</li>
+              </ul>
+              <p class="big-button">
+                <a href="/blog/">Read All News</a>
+              </p>
+            </div>
+          </div>
         </div>
     </div>
 </div>
