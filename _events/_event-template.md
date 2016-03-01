@@ -7,7 +7,7 @@ location:
   name: Austin, TX
   lat: 30.270414
   lon: -97.734196
-website: http://austin2015.apistrat.com/
+url: http://austin2015.apistrat.com/
 attendees:
   - everett
 talks:
@@ -22,4 +22,3 @@ talks:
       - |
         <iframe width="640" height="360" src="https://www.youtube.com/embed/iBFKMyzEAXM?start=1380&rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 ---
-hello?

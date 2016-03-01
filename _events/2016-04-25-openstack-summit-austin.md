@@ -7,7 +7,7 @@ location:
   name: Austin, TX
   lat: 30.270414
   lon: -97.734196
-url: https://www.openstack.org/summit/austin-2016/
+website: https://www.openstack.org/summit/austin-2016/
 attendees:
   - everett
   - thomasem

@@ -120,36 +120,6 @@ tagline: >
             </ul>
           </div>
           <div class="tabs">
-            <div data-tab="events" data-ng-controller="UpcomingEventsCtrl as events">
-              {% raw %}
-              <ul>
-
-                <li data-ng-repeat="event in events.events | limitTo : 2">
-                  <h5><a href="{{ event.url }}">{{ event.name }}</a></h5>
-                  <div class="event-info">
-                    <div class="date">{{ event.date }}</div>
-                    <div class="location">{{ event.location.name }}</div>
-                  </div>
-                  <p>
-
-                  </p>
-                  <div class="attendees">
-                    <div class="title">Attending</div>
-                    <ul>
-
-                      <li>
-                        <img src="" alt="">
-
-                      </li>
-
-                    </ul>
-                  </div>
-                </li>
-
-              </ul>
-              {% endraw %}
-            </div>
-
             <div data-tab="blog">
               <ul class="blog-posts">
                   {% for post in site.posts limit: 4 %}
@@ -179,6 +149,22 @@ tagline: >
                   {% endfor %}
               </ul>
               <p class="big-button"><a href="/blog/">View All Blog Posts</a></p>
+            </div>
+
+            <div data-tab="events" data-ng-controller="UpcomingEventsCtrl as events">
+              {% raw %}
+              <ul>
+
+                <li data-ng-repeat="event in events.events | limitTo: 2">
+                  <h5><a data-ng-href="{{ event.website }}" data-ng-bind="event.name"></a></h5>
+                  <div class="event-info">
+                    <div class="date" data-ng-bind="event.date | date : 'MMMM d, yyyy'"></div>
+                    <div class="location" data-ng-bind="event.location.name"></div>
+                    <div class="description" data-ng-bind="event.description"></div>
+                  </div>
+                </li>
+              </ul>
+              {% endraw %}
             </div>
 
             <div data-tab="news" data-ng-controller="ProductNewsCtrl as news">
