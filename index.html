@@ -111,15 +111,45 @@ tagline: >
               <li>
                 <a href="#" data-tab-link="blog">Blog</a>
               </li>
-              <!-- <li>
+              <li>
                 <a href="#" data-tab-link="events">Events</a>
-              </li> -->
+              </li>
               <li>
                 <a href="#" data-tab-link="news">Product News</a>
               </li>
             </ul>
           </div>
           <div class="tabs">
+            <div data-tab="events" data-ng-controller="UpcomingEventsCtrl as events">
+              {% raw %}
+              <ul>
+
+                <li data-ng-repeat="event in events.events | limitTo : 2">
+                  <h5><a href="{{ event.url }}">{{ event.name }}</a></h5>
+                  <div class="event-info">
+                    <div class="date">{{ event.date }}</div>
+                    <div class="location">{{ event.location.name }}</div>
+                  </div>
+                  <p>
+
+                  </p>
+                  <div class="attendees">
+                    <div class="title">Attending</div>
+                    <ul>
+
+                      <li>
+                        <img src="" alt="">
+
+                      </li>
+
+                    </ul>
+                  </div>
+                </li>
+
+              </ul>
+              {% endraw %}
+            </div>
+
             <div data-tab="blog">
               <ul class="blog-posts">
                   {% for post in site.posts limit: 4 %}
@@ -150,33 +180,7 @@ tagline: >
               </ul>
               <p class="big-button"><a href="/blog/">View All Blog Posts</a></p>
             </div>
-            <div data-tab="events">
-              <ul>
-                {% for event in site.events limit: 2 %}
-                <li>
-                  <h5><a href="{{ event.url }}">{{ event.name }}</a></h5>
-                  <div class="event-info">
-                    <div class="date">{{ event.date }}</div>
-                    <div class="location">{{ event.location.name }}</div>
-                  </div>
-                  <p>
-                    {{ event.description }}
-                  </p>
-                  <div class="attendees">
-                    <div class="title">Attending</div>
-                    <ul>
-                      {% for attendee in event.attendees %}
-                      <li>
-                        <img src="{{ site.data.authors[attendee].email | gravatar }}" alt="{{ site.data.authors[attendee].name }}">
-                        {{ site.data.authors[attendee].name }}
-                      </li>
-                      {% endfor %}
-                    </ul>
-                  </div>
-                </li>
-                {% endfor %}
-              </ul>
-            </div>
+
             <div data-tab="news" data-ng-controller="ProductNewsCtrl as news">
               {% raw %}
               <ul class="blog-posts">
