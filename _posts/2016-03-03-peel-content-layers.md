@@ -55,9 +55,7 @@ Thanks, Python requests.utils.quote!
 
 Now to take that list of content IDs and look at loads of metadata. I fed the content IDs into another function, this one uses Python requests to get the JSON from the content service and then only look at the titles.
 
-As an example, look at what you get back when you do a GET for a content ID by clicking or pasting this URL in your browser:
-
-`https://developer.rackspace.com:9000/content/https%3A%2F%2Fgithub.com%2Frackerlabs%2Fdocs-cloud-big-data`
+As an example, look at what you get back when you do a GET for a content ID by clicking [this URL](https://developer.rackspace.com:9000/content/https%3A%2F%2Fgithub.com%2Frackerlabs%2Fdocs-cloud-big-data).
 
 {% img left 2016-03-03-peel-content-layers/contentid.png meta in envelope JSON %}
 
