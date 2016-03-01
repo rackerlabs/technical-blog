@@ -111,22 +111,44 @@ tagline: >
               <li>
                 <a href="#" data-tab-link="blog">Blog</a>
               </li>
-              <li>
+              <!-- <li>
                 <a href="#" data-tab-link="events">Events</a>
-              </li>
+              </li> -->
               <li>
-                <a href="#" data-tab-link="news">News</a>
+                <a href="#" data-tab-link="news">Product News</a>
               </li>
             </ul>
           </div>
           <div class="tabs">
             <div data-tab="blog">
-              <ul>
-                  {% for post in site.posts limit: 3 %}
-                      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+              <ul class="blog-posts">
+                  {% for post in site.posts limit: 4 %}
+                      <li class="blog-post">
+                        <div class="post-avatar{% if post.authorIsRacker %} racker{% endif %}">
+                            {% if post.authorAvatar %}
+                                <img src="{{ post.authorAvatar }}" alt="{{ post.author }}">
+                            {% else %}
+                                <img src="{% asset_path avatar-default.svg %}" alt="Placeholder Avatar">
+                            {% endif %}
+
+                        </div>
+                        <h4 class="post-title"><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h4>
+                        <div class="post-info">
+                            <div class="post-byline"><a class="post-author" href="/blog/authors/{{ post.author | downcase | replace: ' ', '-' }}">{{ post.author }}</a> | <time datetime="{{ post.date | date: "%F" }}">{{ post.date | date: "%B %-d, %Y" }}</time></div>
+                            {% assign categoryCount = post.categories | size %}
+                            {% if categoryCount > 0 %}
+                            Posted in:
+                            <ul class="post-categories">
+                                {% for category in post.categories %}
+                                    <li><a href="/blog/categories/{{ category | replace: ' ', '-' }}">{{ category }}</a></li>
+                                {% endfor %}
+                            </ul>
+                            {% endif %}
+                        </div>
+                      </li>
                   {% endfor %}
               </ul>
-              <p class="big-button"><a href="/blog/">Visit the Developer Blog</a></p>
+              <p class="big-button"><a href="/blog/">View All Blog Posts</a></p>
             </div>
             <div data-tab="events">
               <ul>
@@ -155,14 +177,20 @@ tagline: >
                 {% endfor %}
               </ul>
             </div>
-            <div data-tab="news">
-              <ul>
-                <li>News 1</li>
-                <li>News 2</li>
+            <div data-tab="news" data-ng-controller="ProductNewsCtrl as news">
+              {% raw %}
+              <ul class="blog-posts">
+                <li class="blog-post" data-ng-repeat="article in news.articles | limitTo : 4">
+                  <h4 class="post-title"><a data-ng-href="{{ article.link }}">{{ article.title }}</a></h4>
+                  <div class="post-info">
+                      <div class="post-byline"><time datetime="">{{ article.date | date : 'MMMM d, yyyy' }}</time></div>
+                  </div>
+                </li>
               </ul>
               <p class="big-button">
-                <a href="/blog/">Read All News</a>
+                <a href="https://blog.rackspace.com/channels/product-and-development/">Read All News</a>
               </p>
+              {% endraw %}
             </div>
           </div>
         </div>
