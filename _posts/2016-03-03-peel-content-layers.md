@@ -21,7 +21,7 @@ At our annual rax.io internal technical conference in San Antonio this week, I h
 
 To take a look at each layer, start with the obvious one: the one you read! For each documentation page found on developer.rackspace.com/docs and support.rackspace.com/how-to, there's lovely documentation. 
 
-{% img right 2016-02-29-peel-content-layers/devrspage.png developer.rackspace.com site %}
+{% img right 2016-03-03-peel-content-layers/devrspage.png developer.rackspace.com site %}
 
 Looking at each page, there's a particular layout for each that makes the page useful. For example, [work with server image restoration with the dashboard](
 https://support.rackspace.com/how-to/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image/)
@@ -34,7 +34,7 @@ There's the "View Source" layer, which is the HTML, CSS, and JavaScript that col
 
 Peeling off that presentation layer and looking at the source files, you find [RST](https://raw.githubusercontent.com/rackerlabs/docs-cloud-servers/master/api-docs/api-operations/methods/post-create-image-of-specified-server-servers-server-id-actions.rst) and [Markdown](https://raw.githubusercontent.com/rackerlabs/rackspace-how-to/master/content/cloud-servers/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image.md) files, which are stored and edited in GitHub. We can edit with authors around the world on GitHub, and it's truly amazing.
 
-{% img left 2016-02-29-peel-content-layers/rstsource.png developer.rackspace.com source %}
+{% img left 2016-03-03-peel-content-layers/rstsource.png developer.rackspace.com source %}
 
 ## Delicious layer: the content API
 
@@ -44,7 +44,7 @@ One of the best parts of this learning curve was realizing how helpful [iPython]
 
 I focused squarely on my Python knowledge and set to making some API calls with the [requests](http://docs.python-requests.org/) library. The first order of business was to get a list of content IDs. My first thought was to use the GitHub API and search for repos with "docs-" in the name. Then I looked for a Python library to do that and to scope it only to the rackerlabs organization. Two of my teammates helped me find suitable Python libraries, and I went with one but discovered that I couldn't figure out authentication in time to demo in the afternoon. So, we created a list by hand, and the code iterated through that list to create URL-encoded content IDs that the content API can understand. 
 
-{% img left 2016-02-29-peel-content-layers/ipython.png iPython in action %}
+{% img left 2016-03-03-peel-content-layers/ipython.png iPython in action %}
 
 Here's a Github repo URL:
 `https://github.com/rackerlabs/docs-cloud-servers`
@@ -59,7 +59,7 @@ As an example, look at what you get back when you do a GET for a content ID by c
 
 ```https://developer.rackspace.com:9000/content/https%3A%2F%2Fgithub.com%2Frackerlabs%2Fdocs-cloud-big-data```
 
-{% img left 2016-02-29-peel-content-layers/contentid.png meta in envelope JSON %}
+{% img left 2016-03-03-peel-content-layers/contentid.png meta in envelope JSON %}
 
 Lots of JSON! I can get some meta data, the title, and with a list of content IDs, I could get a list of titles. Or a list of authors, or a list of even more metadata. Exciting!
 
@@ -75,12 +75,12 @@ Rackspace How-To Articles
 
 And look at the next to last line, the script already found a content ID with no title, though in this case it all checks out fine.
 
-I can also search through our existing content using the `/search?q=:term` operation. After the hackathon I added the ability to 
+I can also search through our existing content using the `/search?q=:term` operation. After the hackathon I added the ability to do a search query based on a term. How about searching for [RackConnect](https://developer.rackspace.com:9000/search?q=rackconnect) using the content API and getting back some JSON as well as a count of 210 results.
 
 ## What's next?
 
 The endpoint for our content API is open for read actions, so if you're interested you can take a look at the work so far at https://github.com/deconst/cli-deconst/ and join in. The [content API is documented in the content-service repo](https://github.com/deconst/content-service#api). Next we'll wrap it up in a CLI for easier reporting. Feel free to join in the delicious content API layer fun.
 
 <a href="https://commons.wikimedia.org/w/index.php?curid=37028602">
-{% img center 2016-02-29-peel-content-layers/layercake.jpg Fancy layer cake by Jacklee, CC By-SA 4.0 %}
+{% img center 2016-03-03-peel-content-layers/layercake.jpg Fancy layer cake by Jacklee, CC By-SA 4.0 %}
 </a>
