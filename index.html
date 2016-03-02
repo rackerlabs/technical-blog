@@ -3,7 +3,7 @@ layout: default
 title: Rackspace Developer Center
 bodyClass: home
 headline: |
-  Spin Up <span data-headline-typer="['OnMetal Servers', 'Containers', 'MongoDB', 'ElasticSearch']"><span class="word">OnMetal Servers</span></span> Easier with Rackspace
+  Spin Up <span data-headline-typer="['OnMetal Servers', 'Containers', 'MongoDB', 'ElasticSearch']"><span class="word">OnMetal Servers</span></span> Easier with&nbsp;Rackspace
 tagline: >
     From innovative products like <a href="https://getcarina.com/">Carina</a> to a full suite of reliable cloud products, Rackspace has the right infrastructure to finish your next project. <br>
     <a href="https://cart.rackspace.com/cloud" class="get-started">Sign up</a>
@@ -83,7 +83,9 @@ tagline: >
   <div class="container">
     <div class="cli-grid">
       <div class="cli-image">
-        <img src="{% asset_path rack-cli-static.png %}" alt="Rack CLI">
+        <div data-rack-cli-graphic>
+          <img src="{% asset_path rack-cli-static.png %}" alt="Rack CLI">
+        </div>
       </div>
       <div class="cli-text">
         <h2>Rack CLI</h2>
@@ -115,7 +117,7 @@ tagline: >
                 <a href="#" data-tab-link="events">Events</a>
               </li>
               <li>
-                <a href="#" data-tab-link="news">Product News</a>
+                <a href="#" data-tab-link="news"><span class="wordy">Product </span>News</a>
               </li>
             </ul>
           </div>
