@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to fix docker pulls on Azure provisioned Windows Docker Hosts"
+title: "How to fix docker pulls on Azure provisioned Windows Server 2016 TP4 VMs"
 date: 2016-03-03 10:00
 comments: false
 author: Jimmy Rudley
