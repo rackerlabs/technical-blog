@@ -28,4 +28,6 @@ wget -Uri https://raw.githubusercontent.com/Microsoft/Virtualization-Documentati
 
 If you check your Docker version now, it will display Nov 23rd. **Docker Pull** commands will successfully work now.
 
+I have created an Azure ARM template that uses the custom script extension. This will let you provision a Docker host without having to run the command as it is done during provisioning. I have the Visual Studio solution which includes the ARM template and PowerShell script [here](https://github.com/jrudley/AzureDockerFix)
+
 I would imagine that the next release of Windows Server 2016 will have this patched, but until then, please run the following command above.
