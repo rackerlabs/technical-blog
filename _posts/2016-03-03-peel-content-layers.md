@@ -19,7 +19,7 @@ At our annual rax.io internal technical conference in San Antonio this week, I h
 
 ## Presentation layer: the web pages
 
-To take a look at each layer, start with the obvious one: the one you read! For each documentation page found on developer.rackspace.com/docs and support.rackspace.com/how-to, there's lovely documentation. 
+To take a look at each layer, start with the obvious one: the one you read! For each documentation page found on developer.rackspace.com/docs and support.rackspace.com/how-to, there's lovely documentation.
 
 {% img right 2016-03-03-peel-content-layers/devrspage.png developer.rackspace.com site %}
 
@@ -42,24 +42,26 @@ The next layer is the one I wanted to hack on this week, because the content ser
 
 One of the best parts of this learning curve was realizing how helpful [iPython](http://ipython.org/install.html) is for this type of development -- type in a few ideas, import `pythonfilename`, edit some more, reload the `.py` file with `reload(pythonfilename)`, call the function directly in iPython with tab completion, and keep going.
 
-I focused squarely on my Python knowledge and set to making some API calls with the [requests](http://docs.python-requests.org/) library. The first order of business was to get a list of content IDs. My first thought was to use the GitHub API and search for repos with "docs-" in the name. Then I looked for a Python library to do that and to scope it only to the rackerlabs organization. Two of my teammates helped me find suitable Python libraries, and I went with one but discovered that I couldn't figure out authentication in time to demo in the afternoon. So, we created a list by hand, and the code iterated through that list to create URL-encoded content IDs that the content API can understand. 
-
-{% img left 2016-03-03-peel-content-layers/ipython.png iPython in action %}
+I focused squarely on my Python knowledge and set to making some API calls with the [requests](http://docs.python-requests.org/) library. The first order of business was to get a list of content IDs. My first thought was to use the GitHub API and search for repos with "docs-" in the name. Then I looked for a Python library to do that and to scope it only to the rackerlabs organization. Two of my teammates helped me find suitable Python libraries, and I went with one but discovered that I couldn't figure out authentication in time to demo in the afternoon. So, we created a list by hand, and the code iterated through that list to create URL-encoded content IDs that the content API can understand.
 
 Here's a Github repo URL:
 `https://github.com/rackerlabs/docs-cloud-servers`
 Here's a URL-encoded content ID:
 `https%3A%2F%2Fgithub.com%2Frackerlabs%2Fdocs-cloud-servers`
 
+{% img 2016-03-03-peel-content-layers/ipython.png iPython in action %}
+
 Thanks, Python requests.utils.quote!
 
 Now to take that list of content IDs and look at loads of metadata. I fed the content IDs into another function, this one uses Python requests to get the JSON from the content service and then only look at the titles.
 
-As an example, look at what you get back when you do a GET for a content ID by clicking [this URL](https://developer.rackspace.com:9000/content/https%3A%2F%2Fgithub.com%2Frackerlabs%2Fdocs-cloud-big-data).
-
 {% img left 2016-03-03-peel-content-layers/contentid.png meta in envelope JSON %}
 
+As an example, look at what you get back when you do a GET for a content ID by clicking [this URL](https://developer.rackspace.com:9000/content/https%3A%2F%2Fgithub.com%2Frackerlabs%2Fdocs-cloud-big-data).
+
 Lots of JSON! I can get some meta data, the title, and with a list of content IDs, I could get a list of titles. Or a list of authors, or a list of even more metadata. Exciting!
+
+<div class="clearfix"></div>
 
 ```
 ...
