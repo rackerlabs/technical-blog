@@ -109,7 +109,7 @@ Unused nodes:
 --------
 **Who’s using the Developer Cloud?**
 
-Currently the Intel Bare Metal CI Team and Mirantis are the only OSIC customers using the cluster as of today.  Both of those teams use the bare metal server option as mentioned above.  The next consumers slated to come on board is the OpenStack Foundation Infrastructure team.  We're also moving the OSIC sign-up form from this [link](http://go.rackspace.com/developercloud) to http://www.osic.org, which will sit on the Developer cloud.
+Currently the Intel Bare Metal CI Team and Mirantis are the only OSIC customers using the cluster as of today.  Both of those teams use the bare metal server option as mentioned above.  The next consumers slated to come on board is the OpenStack Infrastructure team.  We're also moving the OSIC sign-up form from this [link](http://go.rackspace.com/developercloud) to http://www.osic.org, which will sit on the Developer cloud.
 
 We close out this update with two pretty pictures.  I'm rather confident that you wish that this was a screenshot of Horizon from your home labs, just like I do.  We can all dream right?  Please stay tuned for more updates to come and keep Stacking!
 
