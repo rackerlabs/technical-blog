@@ -9,7 +9,6 @@ authorIsRacker: true
 authorAvatar: 'http://www.gravatar.com/avatar/791617263c70278859e1b26c15d13eab'
 categories:
     - DevOps
-    - Tools
 ---
 
 [AppDynamics](https://www.appdynamics.com/) is a powerful Application Performance Management tool that, properly configured, can provide tremendous insight in to application and infrastructure performance bottlenecks and enable operations and development teams to rapidly identify and resolve issues.  Though AppDynamics will begin working to collect and measure application performance data out of the box, some configuration and customization is necessary in order to reach its full capabilities.  This guide will explain and clarify best practices around how to identify your application's critical Business Transactions in order to get the most out of AppDynamics and ultimately, the most out of your application and infrastructure.
