@@ -10,7 +10,6 @@ categories:
     - automation
     - powershell
 ---
-#Managing Windows Servers Remotely with PowerShell
 
 Automation in Windows has historically been a challenge due to lack of built in tools for remote management.  In the past few years, the enhancements to PowerShell and WinRM (Windows Remote Management) have forged a path that is now more on par with other operating systems in regards to remote access.
 
