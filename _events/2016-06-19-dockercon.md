@@ -1,7 +1,7 @@
 ---
 name: DockerCon 2016
 description: |
-  DockerCon is the community and industry event for makers and operators of next generation distributed apps built with containers.
+  DockerCon is the community and industry event for makers and operators of next generation distributed apps built with containers.
 
   The two-and-a-half-day conference provides talks by practitioners, hands-on labs, an expo of Docker ecosystem innovators and great opportunities to share experiences with your peers.
 date: 2016-05-25
