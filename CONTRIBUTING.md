@@ -37,10 +37,6 @@ First, thanks for your interest in contributing and helping us craft quality con
 
   Make sure that the dates in the file name and front matter match.
 
-1. If you're willing to answer comments about your post, set `comments: true`. Be sure to subscribe to your post comments by clicking on the **Subscribe** link at the very bottom of the post once it's published.
-
-1. Format your blog entry using [markdown](http://daringfireball.net/projects/markdown/basics). If you are not comfortable authoring in markdown, send a message to @rgbkrk for other options.
-
 #### Writing your Post
 
 **Please include an excerpt marker** after your first paragraph or so to separate the preview text that appears on the blog index page from the full article. To do so, use the following HTML comment:
@@ -83,10 +79,4 @@ Once you see the message "Server running....", visit [http://127.0.0.1:4000/blog
 Follow these steps to submit your entry for publication.
 
 1. Submit a PR (pull request) against `master` branch.
-2. Include this information in your PR message, even if you've submitted blog entries previously:
-
- - author(s) mini bio, soft capped to 75 words
- - author(s) social media contact info
- - accept or decline to allow redaction, editing or structure changes by technical writer staff
- - desired date of publishing
- - whether or not you're willing to answer comments about your post (see step #5 above)
+1. Do everything in the PR template checklist.
