@@ -134,4 +134,4 @@ $fileCheck = $website.physicalPath + "\bin\sitecore.kernel.dll"
 
 ```
 
-I hope this starts to help generate new ideas on how we could utilize Azure file storage. 
+We can easily add this powershell script to a task scheduler job to archive our logs. I hope this starts to help generate new ideas on how we could utilize Azure file storage, especially with Sitecore.
