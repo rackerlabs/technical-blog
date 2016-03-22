@@ -10,13 +10,13 @@ categories:
 - Devops
 ---
 
-Azure file storage is a great SMB storage offering that I often see go unused for a simple centralized file storage share. A great feature is mounting the share as a mapped network drive on your local machine.
+Azure file storage is a great SMB storage offering for a simple centralized file storage share that I often see go unused. A super feature isthe ability to mount the share as a mapped network drive on your local machine.
 
 <!-- more -->
 
-When issues happen in Sitecore, if it be a crash dump, logs need archived, you want to do a deployment, or you just need to share something with a developer, using an Azure file storage share is a great option. I will show you how to easily setup an Azure file share and archive the Sitecore log files automatically. 
+When issues happen in Sitecore, where there's been a crash dump, logs need archived, you want to do a deployment, or you just need to share something with a developer, using an Azure file storage share is a great option. Let me show you how to easily setup an Azure file share and archive the Sitecore log files automatically. 
 
-Let's create the Azure resources required to set up a file share. I will use Azure PowerShell to provision my Azure resources.
+Let's create the Azure resources required to set up a file share, using Azure PowerShell to provision the Azure resources.
 
 ```sh
 $resourceGroupName = 'raxsitecorerg' #resource group name
@@ -134,4 +134,4 @@ $fileCheck = $website.physicalPath + "\bin\sitecore.kernel.dll"
 
 ```
 
-We can easily add this powershell script to a task scheduler job to archive our logs. I hope this starts to help generate new ideas on how we could utilize Azure file storage, especially with Sitecore.
+We can easily add this powershell script to a task scheduler job to archive our logs. I hope this helps generate new ideas on how to use Azure file storage.
