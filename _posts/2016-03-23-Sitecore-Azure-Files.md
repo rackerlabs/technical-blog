@@ -16,7 +16,7 @@ Azure file storage is a great SMB storage offering that I often see go unused fo
 
 When issues happen in Sitecore, if it be a crash dump, logs need archived, you want to do a deployment, or you just need to share something with a developer, using an Azure file storage share is a great option. I will show you how to easily setup an Azure file share and archive the Sitecore log files automatically. 
 
-Let's create the Azure resources required to set up a file share. I use Azure PowerShell to provision my Azure resources.
+Let's create the Azure resources required to set up a file share. I will use Azure PowerShell to provision my Azure resources.
 
 ```sh
 $resourceGroupName = 'raxsitecorerg' #resource group name
@@ -78,7 +78,6 @@ $daysToGoBack = -30 #Archive anything older than X days from today
 #check if file is locked
 function get-FileLock($file)
 {
-
     try 
     { 
         [IO.File]::OpenWrite($file).close()
