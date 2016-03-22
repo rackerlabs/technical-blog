@@ -10,11 +10,13 @@ categories:
 - Devops
 ---
 
-Azure file storage is a great smb storage offering that I often see go unused for a simple centralized file share. A great feature is mounting the share as a mapped network drive on your local machine.
+Azure file storage is a great SMB storage offering that I often see go unused for a simple centralized file storage share. A great feature is mounting the share as a mapped network drive on your local machine.
 
 <!-- more -->
 
-When issues happen in Sitecore, if it be a crash dump, logs need archived or you want to do a deployment, using an Azure file share is a great option. I will show you how to easily setup an Azure file share and archive the sitecore log files automatically. While writing this, I came up with a great idea on using DSC for package deployments, but that will be another article. 
+When issues happen in Sitecore, if it be a crash dump, logs need archived, you want to do a deployment, or you just need to share something with a developer. Using an Azure file storage share is a great option for all the scenarios. I will show you how to easily setup an Azure file share and archive the Sitecore log files automatically. 
+
+Let's create the Azure resources required to set up a file share. I use Azure PowerShell to provision my resources.
 
 ```sh
 docker version
