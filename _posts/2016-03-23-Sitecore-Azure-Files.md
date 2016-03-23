@@ -10,7 +10,7 @@ categories:
 - Devops
 ---
 
-Azure file storage is a great SMB storage offering for a simple centralized file storage share that I often see go unused. A super feature isthe ability to mount the share as a mapped network drive on your local machine.
+Azure file storage is a great storage offering for a simple centralized file storage share that I often see go unused. A super feature is the ability to mount the share as a mapped network drive on your local machine.
 
 <!-- more -->
 
