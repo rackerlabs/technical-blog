@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to use Azure Files with Sitecore logging"
-date: 2016-03-23 10:00
+date: 2016-03-24 00:00
 comments: false
 author: Jimmy Rudley
 authorIsRacker: true
@@ -14,7 +14,7 @@ Azure file storage is a great storage offering for a simple centralized file sto
 
 <!-- more -->
 
-When issues happen in Sitecore, where there's been a crash dump, logs need archived, you want to do a deployment, or you just need to share something with a developer, using an Azure file storage share is a great option. Let me show you how to easily setup an Azure file share and archive the Sitecore log files automatically. 
+When issues happen in Sitecore, where there's been a crash dump, logs need archived, you want to do a deployment, or you just need to share something with a developer, using an Azure file storage share is a great option. Let me show you how to easily setup an Azure file share and archive the Sitecore log files automatically.
 
 Let's create the Azure resources required to set up a file share, using Azure PowerShell to provision the Azure resources.
 
@@ -30,20 +30,20 @@ ipconfig /flushdns
 try
 {
 	$AzureRMContext = Get-AzureRMContext
-} 
-catch 
+}
+catch
 {
 	Login-AzureRMAccount
 }
 
 #Create a new resource group
-$rg = New-AzureRmResourceGroup -Name $resourceGroupName -Location $location 
+$rg = New-AzureRmResourceGroup -Name $resourceGroupName -Location $location
 
 #Create a new storage account in our resource group
 $st = New-AzureRmStorageAccount -ResourceGroupName $rg.ResourceGroupName -Name $storageAccountName -Type Standard_LRS -Location $location
 
 #grab the storage key
-$key = Get-AzureRmStorageAccountKey -ResourceGroupName $rg.ResourceGroupName -Name $storageAccountName 
+$key = Get-AzureRmStorageAccountKey -ResourceGroupName $rg.ResourceGroupName -Name $storageAccountName
 
 #setup a storage context
 $ctx=New-AzureStorageContext -StorageAccountName $storageAccountName $key.Key1
@@ -53,10 +53,10 @@ New-AzureStorageShare -name $shareName -Context $ctx
 
 #Create the commands to run on vm/host to map the network drive
 #persist credentials for reboot's, etc
-write-host "cmdkey /add:$($ctx.StorageAccount.FileEndpoint.DnsSafeHost) /user:$($ctx.StorageAccountName) /pass:$($key.Key1)" 
+write-host "cmdkey /add:$($ctx.StorageAccount.FileEndpoint.DnsSafeHost) /user:$($ctx.StorageAccountName) /pass:$($key.Key1)"
 
 #map the drive
-write-host "net use z: \\$($ctx.StorageAccount.FileEndpoint.DnsSafeHost)\$shareName /u:$storageAccountName $($key.key1)" 
+write-host "net use z: \\$($ctx.StorageAccount.FileEndpoint.DnsSafeHost)\$shareName /u:$storageAccountName $($key.key1)"
 
 ```
 
@@ -78,12 +78,12 @@ $daysToGoBack = -30 #Archive anything older than X days from today
 #check if file is locked
 function get-FileLock($file)
 {
-    try 
-    { 
+    try
+    {
         [IO.File]::OpenWrite($file).close()
         return $false
     }
-    catch 
+    catch
     {
         #file locked
         return $true
@@ -95,7 +95,7 @@ function new-Zip($dirToZip, $zipName)
 {
    Add-Type -Assembly System.IO.Compression.FileSystem
    [System.IO.Compression.ZipFile]::CreateFromDirectory($dirToZip,$zipName)
-} 
+}
 
 #Look for Sitecore websites and archive the logs
 foreach ($website in Get-Website)
@@ -118,16 +118,16 @@ $fileCheck = $website.physicalPath + "\bin\sitecore.kernel.dll"
      foreach ($item in $logFilesToMove)
      {
          if(!(get-FileLock($Logpath+'\'+$item.Name)))
-         {   
-            Move-Item -Path ($Logpath+'\'+$item.Name) -Destination "$sitecoreDataPath\logs\$tempFolderPath\" 
-         }  
+         {
+            Move-Item -Path ($Logpath+'\'+$item.Name) -Destination "$sitecoreDataPath\logs\$tempFolderPath\"
+         }
      }
-      
+
      new-Zip  "$sitecoreDataPath\logs\$tempFolderPath\" "$($mappedDrive.DeviceID)\$tempFolderPath.zip"
 
      if (Test-Path "$($mappedDrive.DeviceID)\$tempFolderPath.zip")
      {
-        Remove-Item -Path "$sitecoreDataPath\logs\$tempFolderPath\" -Recurse 
+        Remove-Item -Path "$sitecoreDataPath\logs\$tempFolderPath\" -Recurse
      }
     }
 }
