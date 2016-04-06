@@ -28,5 +28,5 @@ Launch Visual Studio and create a new Azure Resource Manager template. Select Wi
   
 ```
 
-The variable wadlogs is where we can configure the diagnostic extension to monitor specific folders to copy files over to a blob container. I ended up looking at the [configuration schema](https://msdn.microsoft.com/en-us/library/azure/mt634522.aspx)
+The variable wadlogs is where we can configure the diagnostic extension to monitor specific folders to copy files over to a blob container. I ended up looking at the [configuration schema](https://msdn.microsoft.com/en-us/library/azure/mt634522.aspx) which explains all the possible elements we can use. The 3 elements we need to focus on are Directories, DataSources, and DirectoryConfiguration. These 3 will let us enable custom directory monitoring and configure which folder to monitor. These elements also let us monitor IIS and Failed Request Tracing log folders. Below is a snippet 
 
