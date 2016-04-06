@@ -14,9 +14,9 @@ Using the Azure diagnostic extension lets you capture a good set of metrics to h
 
 <!-- more -->
 
-Utilitizing the custom logging feature is a great way to let you archive files from your virtual machine and place them in a custom blob container. Lets examine how to use an ARM template and configure it to watch a specific directory to copy files from.
+Use the custom logging feature to archive files from your virtual machine and place them in a custom blob container. Let's examine how to configure an ARM template to watch a specific directory from which you want to copy files.
 
-Launch Visual Studio and create a new Azure Resource Manager template. Select Windows Virtual Machine and select OK. This will create a template with a virtual machine, but it also adds the diagnostic extension to that virtual machine. If you view your variables section of the template, you will see a few variables created that handles which metrics and data we collect using the Azure diagnostic extension.
+Launch Visual Studio, and create a new Azure Resource Manager template. Select Windows Virtual Machine, and select OK. This creates a template with a virtual machine, but it also adds the diagnostic extension to that virtual machine. When you view your variables section of the template, you can see a few variables have been created. These new variables handle which metrics and data we collect using the Azure diagnostic extension.
 
 ```sh
     "wadlogs": "<WadCfg> <DiagnosticMonitorConfiguration overallQuotaInMB=\"4096\" xmlns=\"http://schemas.microsoft.com/ServiceHosting/2010/10/DiagnosticsConfiguration\"> <DiagnosticInfrastructureLogs scheduledTransferLogLevelFilter=\"Error\"/> <WindowsEventLog scheduledTransferPeriod=\"PT1M\" > <DataSource name=\"Application!*[System[(Level = 1 or Level = 2)]]\" /> <DataSource name=\"Security!*[System[(Level = 1 or Level = 2)]]\" /> <DataSource name=\"System!*[System[(Level = 1 or Level = 2)]]\" /></WindowsEventLog>",
@@ -28,7 +28,7 @@ Launch Visual Studio and create a new Azure Resource Manager template. Select Wi
   
 ```
 
-The variable **wadlogs** is where we can configure the diagnostic extension to monitor specific folders to copy files over to a blob container. I ended up looking at the [configuration schema](https://msdn.microsoft.com/en-us/library/azure/mt634522.aspx) which explains all the possible elements we can use. The 3 elements we need to focus on are Directories, DataSources, and DirectoryConfiguration. These 3 will let us enable custom directory monitoring and configure which folder to monitor. These elements also let us monitor IIS and Failed Request Tracing log folders. Below is a snippet that enables us to monitor IIS, Failed Request Tracing and a custom log folder located at c:\sitecore.
+Use the variable **wadlogs** to configure the diagnostic extension to monitor specific folders to copy files over to a blob container. I ended up looking at the [configuration schema](https://msdn.microsoft.com/en-us/library/azure/mt634522.aspx), which explains all the possible elements we can use. The three elements we need to focus on are Directories, DataSources, and DirectoryConfiguration. These three let us enable custom directory monitoring and configure which folder to monitor. These elements also let us monitor IIS and Failed Request Tracing log folders. The following snippet lets us monitor IIS, Failed Request Tracing and a custom log folder located at c:\sitecore.
 
 ```sh
 
@@ -36,6 +36,6 @@ The variable **wadlogs** is where we can configure the diagnostic extension to m
 
 ```
 
-When testing this out, I noticed that if you do not have IIS installed, it throws an exception in the diagnostic extension log file, which makes sense, but it does not automatically create the container sitecore. When I provisioned a new VM, I deployed 2 extensions that runs a powershell script to install a web server then the Azure diagnostic extension has a dependency set to run once my powershell script finishes. In this order, it will create the Sitecore container. How did I figure this out? There is a child element called **DiagnosticInfrastructureLogs** which lets you troubleshoot the diagnostic extension by creating a blob table, which will write entries based on your log level set.  There were errors being thrown that it failed to upload to the container. Well, the container was not being created, so there must be some internal dependency on how it creates containers. A bug? I am not sure, but watch out for it.
+When testing this out, I noticed that if you do not have IIS installed, it throws an exception in the diagnostic extension log file, which makes sense, but it does not automatically create the container sitecore. When I provisioned a new VM, I deployed two extensions that run a powershell script to install a web server. Then the Azure diagnostic extension has a dependency set to run once my powershell script finishes. In this order, it creates the Sitecore container. How did I figure this out? There is a child element called **DiagnosticInfrastructureLogs**, which lets you troubleshoot the diagnostic extension by creating a blob table, which, in turn, write entries based on your log level set.  There were errors being thrown that it failed to upload to the container. Well, the container was not being created, so there must be some internal dependency on how it creates containers. A bug? I am not sure, but watch out for it.
 
 For the ARM template with sample code, please visit [here](https://github.com/jrudley/customLoggingAzureDiag)
