@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to do custom logging with Azure Diagnostics Extension"
-date: 2016-04-07 00:00
+date: 2016-04-08 00:00
 comments: false
 author: Jimmy Rudley
 authorIsRacker: true
