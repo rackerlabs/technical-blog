@@ -56,7 +56,7 @@ New-AzureStorageShare -name $shareName -Context $ctx
 write-host "cmdkey /add:$($ctx.StorageAccount.FileEndpoint.DnsSafeHost) /user:$($ctx.StorageAccountName) /pass:$($key.Key1)"
 
 #map the drive
-write-host "net use z: \\$($ctx.StorageAccount.FileEndpoint.DnsSafeHost)\$shareName /u:$storageAccountName $($key.key1)"
+write-host "net use z: \\$($ctx.StorageAccount.FileEndpoint.DnsSafeHost)\$shareName /persistent:yes"
 
 ```
 
@@ -64,7 +64,7 @@ With our Azure file share provisioned, run the following commands that were gene
 
 ```sh
 cmdkey /add:raxsitecorest.file.core.windows.net /user:raxsitecorest /pass:Oq5SiWsdsddsdsddsdsR6eujbspbQ2j4T7ODopoZr0vrK4MQe1QHAqgffgffgfgzT+ydzoA9nxV9S/YVQ==
-net use z: \\raxsitecorest.file.core.windows.net\logs /u:raxsitecorest Oq5sdsddssdsd75xYcVQQYGR6eujbspbQ2j4T7ODopoZr0vrK4MQe1QHAqyJhgffgfgfgydzoA9nxV9S/YVQ==
+net use z: \\raxsitecorest.file.core.windows.net\logs /persistent:yes
 ```
 
 With our unc path now mapped to a drive letter, we have a lot of possibilities of what we can do. I wrote a PowerShell script to show how to zip up and move Sitecore 8.1 logs to our mapped drive letter
