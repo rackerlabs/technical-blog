@@ -1,26 +1,37 @@
-Moderating the Blog
-========================
+# Moderating the Blog
 
-"Moderating" might be too strong a word to describe this task. Basically, this task encompasses the review and merging of user-submitted content to the `devblog` branch. Before we merge any submission to the `devblog` branch, we should follow these steps:
+"Moderating" might be too strong a word to describe this task. Basically, this task encompasses the review and merging of user-submitted content to the `master` branch. Before merging any submission to the `master` branch, follow these steps:
 
-###Blog workflow for reviewers:
- 
-- pull PR and check rendering locally
-   - check/fix markdown as needed
-   - unless the author **expressly** consented for content to be edited (see Blog contribution guidelines), *DO NOT* change or edit the content in any way -- period. If you see issues with phrasing, grammar or structure, please suggest changes/communicate them to author via their PR.
- - Make sure required data is included in the PR (Name, Bio, Social Media Contact, etc.)
- - Make sure date on file name matches the date in the front matter
- - Make sure data in the front matter matches data provided in the PR
- - Check categories in the front matter match our guidelines (see below)
- - merge PR to `devblog` branch (please note that `devblog` branch is for blog content *only*, all non-content PRs for the blog should go against `dev`)
-- create a branch merge PR against `master` and ping blog admin(s)
-- If you're bouncing back a blog entry PR, please be kind and respectful, we want to encourage authors to submit content and make it a pleasant experience.
+### Blog workflow for reviewers:
 
-######Blog admins: @rdodev if unavalable @ycombinator if unavailable @kenperkins
+When the pull request is first submitted:
 
-###Blog Categories
+* Follow the @rackerlabs preview link to ensure that the post renders correctly. Unless the author **expressly** consented for content to be edited (see Blog contribution guidelines), *DO NOT* change or edit the content in any way -- period. If you see issues with phrasing, grammar or structure, please suggest changes and communicate them to the author via comments on their PR.
+* Make sure that required data is included in the pull request: Name, Bio, Social Media Contact, etc.
 
-While up to this point categories have been all over the place in terms of consistency, we can change that going forward. So, to this end we're enforcing the following guidelines:
+Before publishing:
 
-1. If it's a proper noun or trademark make lower case i.e. OpenStack -> openstack
-2. If it contains more than one word, make it slug-lower-case i.e. Cloud Files -> cloud-files
+* Make sure that the date in a blog post's filename matches the date in its frontmatter and today's date.
+* Make sure that the data in the front matter matches the data provided in the frontmatter.
+* Verify that the categories in the frontmatter satisfy [our category guidelines](#blog-categories).
+* Verify that the `<!-- more -->` comment is present and correctly formatting. It needs to have a single blank line immediately before and after it to work correctly.
+
+To publish:
+
+* Merge the pull request to `master` branch by the merge button or on the command line.
+* If you're bouncing back a blog entry pull request, please be kind and respectful. We want to encourage authors to submit content and make it a pleasant experience.
+
+### Blog admins
+
+* @smashwilson
+* @ktbartholomew
+* @catlook
+* if unavailable: @kenperkins
+
+### Blog Categories
+
+We enforce the following guidelines:
+
+1. If it's a proper noun or trademark, make it lower case. Example: OpenStack -> openstack
+2. If it contains more than one word, make it slug-lower-case. Example: Cloud Files -> cloud-files
+3. To create a new category, at least N blog posts must already exist that belong to it. If a category contains fewer than N posts, the "build" will fail and the pull request will be marked with a red X.
