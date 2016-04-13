@@ -34,4 +34,4 @@ We enforce the following guidelines:
 
 1. If it's a proper noun or trademark, make it lower case. Example: OpenStack -> openstack
 2. If it contains more than one word, make it slug-lower-case. Example: Cloud Files -> cloud-files
-3. To create a new category, at least N blog posts must already exist that belong to it. If a category contains fewer than N posts, the "build" will fail and the pull request will be marked with a red X.
+3. To create a new category, at least 2% of existing blog posts must belong to it. If a category contains fewer than 2% of current total number of posts, the "build" will fail and the pull request will be marked with a red X.
