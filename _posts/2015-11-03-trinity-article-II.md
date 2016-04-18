@@ -418,8 +418,4 @@ This command pushes the new `Dockerrun.aws.json` out to our Elastic Beanstalk en
 
 ### VII - Conclusion
 
-In this article, we probed a little deeper into the internals of the simple scenario outlined in [Part I](https://developer.rackspace.com/blog/trinity-article-I/). This was hopefully a useful demonstration of _one possible scenario_ depicting how EB, Docker, and Git can drastically simplify the development process. However, to enlightened readers this scenario is glaringly unrealistic: real-world applications, which are far more complex, have many dependencies to shepherd, and are likely contributed to by more than one developer, and will usually follow some kind of centralized integration, build, test, and deployment pipeline.
-
-In **Part III**, we make this scenario more realistic by adding some additional components to the application, and we will demonstrate how Elastic Beanstalk can help orchestrate these dependencies across environments.
-
-In **Part IV**, we show one possible scenario for how this application could integrate into a centralized integration, test, and deployment workflow.
+In this article, we probed a little deeper into the internals of the simple scenario outlined in [Part I](https://developer.rackspace.com/blog/trinity-article-I/). This was hopefully a useful demonstration of _one possible scenario_ depicting how using EB, Docker, and Git together can drastically simplify the development process and reduce the risk of broken dependencies between environments.
