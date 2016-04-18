@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "This Week in Information Security (Week of May 25th)"
-date: 2015-05-28 23:59
+title: This Week in Information Security (Week of May 25th)
+date: '2015-05-28 23:59'
 comments: true
 author: Charles Neill
 published: true
 categories:
-    - Security
+  - Security
 ---
 
 This week we have information about the much-talked-about LogJam vulnerability in SSL/TLS, and several other issues that received less attention, but are scarier in my opinion (e.g. the buffer overflow in NetUSB and the DoS vulnerability in IPsec). We take a brief look at some recent vulnerabilities involving race conditions, affecting companies like Facebook, Dropbox, and Starbucks. We also look at some new research from Google about the effectiveness (or lack thereof) in using "security questions" like "what was your first pet's name?" or "what's your favorite kind of food?" (Spoiler: they're terrible in practice). Finally, for our random link of the week we have an opinion piece calling for the death of the PowerPoint, which sounds great, right?!

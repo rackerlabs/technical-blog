@@ -1,14 +1,13 @@
 ---
 layout: post
-title: "Inside My Home Rackspace Private Cloud, OpenStack Lab, Part 1: The Setup"
-date: 2014-02-10 18:00
+title: 'Inside My Home Rackspace Private Cloud, OpenStack Lab, Part 1: The Setup'
+date: '2014-02-10 18:00'
 comments: true
 author: Kevin Jackson
 published: true
 categories:
- - OpenStack
- - Hardware
- - Private Cloud
+  - OpenStack
+  - Private Cloud
 ---
 
 Over the past year I’ve been using a home lab for quick, hands-on testing of [OpenStack](http://openstack.org) and [Rackspace Private Cloud](http://www.rackspace.com/cloud/private/), and a number of people have requested information on the setup. Throughout the next few blog posts I will explain what I’ve got. This serves two purposes: 1) documentation of my own setup as well as 2) hopefully providing information that other people find useful – and not everything is about OpenStack.

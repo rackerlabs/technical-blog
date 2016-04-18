@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "The New DevOps Blog"
-date: 2012-12-06 12:07
+title: The New DevOps Blog
+date: '2012-12-06 12:07'
 comments: true
 author: Hart Hoover
 categories:
-- General
+  - General
 ---
 We've moved! The Rackspace DevOps Blog is now hosted on Rackspace [Cloud Files](http://www.rackspace.com/cloud/public/files/) (powered by [OpenStack Swift](http://www.openstack.org/software/openstack-storage/)) using [Octopress](http://octopress.org/). This blog was hosted on [WordPress](http://www.wordpress.org), using a mix of various Rackspace Open Cloud products:
 

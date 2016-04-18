@@ -1,17 +1,12 @@
 ---
 layout: post
 title: Using Heat to install a DEIS PAAS on Rackspace Cloud.
-date: 2014-08-16
+date: 2014-08-16T00:00:00.000Z
 comments: true
 author: Paul Czarkowski
 published: true
-categories:
- - heat
- - paas
- - coreos
-bio: |
- Paul Czarkowski is a Systems Engineer working at Rackspace 
- on the Solum Project.
+categories: []
+bio: "Paul Czarkowski is a Systems Engineer working at Rackspace \non the Solum Project.\n"
 ---
 ### Introduction
 Platform As A Service (PAAS) is an important topic right now. [Docker](http://docker.io)

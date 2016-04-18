@@ -1,13 +1,11 @@
 ---
 layout: post
-title: "A Case for MongoDB with AEM"
-date: 2015-11-09 10:00
+title: A Case for MongoDB with AEM
+date: '2015-11-09 10:00'
 comments: true
 author: Jonathan Hurley
 published: true
-categories:
-    - MongoDB
-    - AEM
+categories: []
 ---
 
 #### What is MongoDB?

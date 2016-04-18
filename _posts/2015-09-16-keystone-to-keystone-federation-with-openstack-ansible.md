@@ -1,15 +1,13 @@
 ---
 layout: post
-title: "Keystone-to-Keystone Federation with the openstack-ansible Project"
-date: 2015-09-16 23:59
+title: Keystone-to-Keystone Federation with the openstack-ansible Project
+date: '2015-09-16 23:59'
 comments: true
 author: Miguel Grinberg
 published: true
 categories:
-    - openstack
-    - keystone
-    - osad
-    - federation
+  - openstack
+  - osad
 ---
 
 Federation support in OpenStack has been greatly improved in the Kilo release,

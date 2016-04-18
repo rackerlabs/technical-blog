@@ -1,14 +1,13 @@
 ---
 layout: post
-title: "Rackspace Autoscale Is Now Open Source"
-date: 2013-06-12 12:39
+title: Rackspace Autoscale Is Now Open Source
+date: '2013-06-12 12:39'
 comments: true
 author: Felix Sargent
 published: true
 categories:
-- Autoscale
-- Cloud Servers
-- Cloud Monitoring
+  - Cloud Servers
+  - Cloud Monitoring
 ---
 Our Autoscale project -- codenamed "otter" -- is now open source.
 

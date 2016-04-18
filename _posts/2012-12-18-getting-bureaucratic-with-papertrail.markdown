@@ -1,12 +1,11 @@
 ---
 layout: post
-title: "Getting Bureaucratic with Papertrail"
-date: 2012-12-21 09:05
+title: Getting Bureaucratic with Papertrail
+date: '2012-12-21 09:05'
 comments: true
 author: Hart Hoover
-categories: 
-- Cloud Servers
-- Cloud Tools
+categories:
+  - Cloud Servers
 ---
 Imagine the situation: you're a Racker, and a customer calls. Their servers are up, but their application or site is offline. Time to shine! Unfortunately, they don't have any idea what is going on and they are frantic. The account has 20 servers listed and they are named after the characters in [The Hobbit](http://en.wikipedia.org/wiki/Characters_in_The_Hobbit).
 

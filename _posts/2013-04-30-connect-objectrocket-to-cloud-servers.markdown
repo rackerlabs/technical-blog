@@ -1,14 +1,12 @@
 ---
 layout: post
-title: "Connect ObjectRocket to Cloud Servers"
-date: 2013-04-30 07:51
+title: Connect ObjectRocket to Cloud Servers
+date: '2013-04-30 07:51'
 comments: true
 author: Hart Hoover
 published: true
-categories: 
-- Cloud Servers
-- ObjectRocket
-- MongoDB
+categories:
+  - Cloud Servers
 ---
 ObjectRocket, the industrial strength MongoDB database-as-a-service company that Rackspace acquired in February, is now available in our Chicago data center. This means that you can now use ObjectRocket as part of your Rackspace deployments. You can read about the new data center here and a recent performance benchmark study that we did [here](http://devops.rackspace.com/benchmarking-hosted-mongodb-services.html).
 

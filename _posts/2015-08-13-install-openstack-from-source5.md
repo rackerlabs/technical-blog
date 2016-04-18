@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Install OpenStack from source Part 5"
-date: 2015-08-13 06:59
+title: Install OpenStack from source Part 5
+date: '2015-08-13 06:59'
 comments: true
 author: Phil Hopkins
 published: true
 categories:
-    - OpenStack
-    - OSAD
+  - OpenStack
+  - OSAD
 ---
 
 This is the fifth installment in a series of installing OpenStack from source. The four previous articles can be found here:

@@ -1,13 +1,12 @@
 ---
 layout: post
-title: "A Look Back at PyCon Australia 2013"
-date: 2013-07-22 17:00
+title: A Look Back at PyCon Australia 2013
+date: '2013-07-22 17:00'
 comments: true
 author: Ed Leafe
 published: true
-categories: 
-- Python
-- PyCon
+categories:
+  - Python
 ---
 In an earlier [post][1] I reviewed the OpenStack miniconf that preceded the main PyCon, which was held in Hobart, Tasmania on July 6–7. I had meant to write this shortly after PyCon ended, but the whirlwind of travel back to the US and getting back into the daily grind pushed it off my plate.
 

@@ -1,14 +1,21 @@
 ---
 layout: post
 title: Learning to Code at ClojureBridge
-date: 2015-03-19 14:00:00+00:00
+date: 2015-03-19T14:00:00.000Z
 comments: true
 author: Everett Toews
 slug: clojurebridge
 published: true
-bio: |
- Everett is a Developer Advocate at Rackspace making OpenStack and the Rackspace Cloud easy to use for developers and operators. Sometimes developer, sometimes advocate, and sometimes operator. He's a committer and PMC on Apache jclouds, and co-author of the OpenStack Operations Guide from O'Reilly. He loves spending time with his family. If it's calm outside, they launch rockets. If it's windy, they fly kites.
- Follow him on Twitter @everett_toews.
+categories: []
+bio: >
+  Everett is a Developer Advocate at Rackspace making OpenStack and the Rackspace
+  Cloud easy to use for developers and operators. Sometimes developer, sometimes
+  advocate, and sometimes operator. He's a committer and PMC on Apache jclouds,
+  and co-author of the OpenStack Operations Guide from O'Reilly. He loves
+  spending time with his family. If it's calm outside, they launch rockets. If
+  it's windy, they fly kites.
+
+  Follow him on Twitter @everett_toews.
 ---
 
 {% img right 2015-03-19-clojure-bridge/clojurebridge.png "ClojureBridge" %}[ClojureBridge](http://www.clojurebridge.org/) aims to increase diversity within the Clojure community by offering free, beginner-friendly Clojure programming workshops for women. On March 13-14, 2015 we held a ClojureBridge event at the Rackspace office in Austin, TX. It was put on by an amazing group of organizers to foster the adoption of Clojure by women in technology.

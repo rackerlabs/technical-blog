@@ -1,13 +1,11 @@
 ---
 layout: post
-title: "Using New Relic with Rackspace Cloud Load Balancers"
-date: 2013-06-19 16:16
+title: Using New Relic with Rackspace Cloud Load Balancers
+date: '2013-06-19 16:16'
 comments: true
 author: Jim Battenberg
 published: true
-categories: 
-- New Relic
-- Cloud Load Balancers
+categories: []
 ---
 {% img right 2013-06-20-new-relic-clb/logo-new_relic.gif 200 %}
 New Relic just released its “[New Relic Platform][1]” product consisting of more than 50 plugins from various ISVs and cloud companies.  The first Rackspace plugin to be released is for our Cloud Load Balancer product, which allows you to see HTTP vs. HTTPS traffic, easily set alerts to your predefined thresholds, and periodically check the health of the nodes associated with your load balancer to ensure they are responding correctly.

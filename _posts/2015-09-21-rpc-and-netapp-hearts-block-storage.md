@@ -1,15 +1,12 @@
 ---
 layout: post
-title: "RPC and NetApp Hearts Block Storage"
-date: 2015-09-21 13:00
+title: RPC and NetApp Hearts Block Storage
+date: '2015-09-21 13:00'
 comments: true
 author: Walter Bentley
 published: true
 categories:
-    - rackspace-private-cloud
-    - NetApp
-    - Cinder
-    - Block Storage
+  - rackspace-private-cloud
 ---
 
 Rackspace Private Cloud (RPC) powered by OpenStack has done a great job incorporating and enabling many of the great capabilities natively found within Cinder.  With RPC, you gain the ability to leverage either Cinder nodes (commodity hardware using ephemeral storage exposing that storage as Block storage to your cloud) or to connect your OpenStack cloud directly to a shared storage solution via Cinder integration drivers.  This is where our friends at NetApp come into play.  Rackspace and NetApp have formed a unique relationship to improve the Cinder shared storage capability within OpenStack.  These two teams worked together to create a repeatable, approved, and tested process to integrate NetApp storage solutions into Rackspace Private Cloud footprints within a Rackspace datacenter or at the customer's datacenter.

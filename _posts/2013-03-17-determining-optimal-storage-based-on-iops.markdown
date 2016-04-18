@@ -1,12 +1,11 @@
 ---
 layout: post
-title: "Determining Optimal Storage based on IOPS"
-date: 2013-03-18 8:00
+title: Determining Optimal Storage based on IOPS
+date: '2013-03-18 8:00'
 comments: true
 author: Edward Adame
-categories: 
-- Cloud Servers
-- Cloud Block Storage
+categories:
+  - Cloud Servers
 ---
 Rackspace Cloud Servers come in various sizes, and larger Cloud Servers are allocated a greater portion of available hypervisor resources. As of today, our largest Cloud Server (30 GB RAM / 1.2 TB disk space) consumes the entire physical hypervisor. A 15 GB Cloud Server consumes half of the hypervisor’s resources, an 8 GB server consumes a quarter, and so on until you get to the smallest allocation we provide (512 MB / 20 GB disk space).
 

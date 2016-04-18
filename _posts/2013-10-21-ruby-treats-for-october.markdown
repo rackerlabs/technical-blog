@@ -1,16 +1,13 @@
 ---
 layout: post
-title: "Ruby Treats For October"
-date: 2013-10-23 09:00
+title: Ruby Treats For October
+date: '2013-10-23 09:00'
 comments: true
 author: Kyle Rames
 published: true
 categories:
-- fog
-- vagrant-rackspace
-- rumm
-- ruby
-- devops
+  - ruby
+  - devops
 ---
 
 Here are the latest Ruby treats from the Developer Relations Group.

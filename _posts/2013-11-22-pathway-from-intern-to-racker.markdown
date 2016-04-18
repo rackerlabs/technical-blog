@@ -1,15 +1,11 @@
 ---
 layout: post
-title: "Pathway from intern to Racker"
-date: 2013-11-22 09:00
+title: Pathway from intern to Racker
+date: '2013-11-22 09:00'
 comments: true
 author: Anne Gentle
 published: true
-categories:
-- culture
-- rackspace
-- internship
-- stem
+categories: []
 ---
 
 **Maryam Nazari** is a software developer working on data center automation

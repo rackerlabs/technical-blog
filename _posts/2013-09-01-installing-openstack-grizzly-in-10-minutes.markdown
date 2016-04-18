@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Installing OpenStack Grizzly in 10 Minutes"
-date: 2013-09-01 08:00
+title: Installing OpenStack Grizzly in 10 Minutes
+date: '2013-09-01 08:00'
 comments: true
 author: Kord Campbell
 published: true
-categories: 
-- OpenStack 
+categories:
+  - OpenStack
 ---
 
 The [OpenStack](http://www.openstack.org/software/) provides a way to turn bare metal servers into a private cloud. It's been over a year since I published the first [Install OpenStack in 10 Minutes](http://www.stackgeek.com/guides/gettingstarted.html) guide and now, nearly 10K installs later, I'm pleased to announce the quickest and easiest way yet to get an OpenStack cluster running.

@@ -1,19 +1,17 @@
 ---
 layout: post
-title: "Whistle While You HackTX"
-date: 2013-11-22 13:15
+title: Whistle While You HackTX
+date: '2013-11-22 13:15'
 comments: true
 author: Everett Toews
 published: true
 categories:
-- jclouds
-- java
-- sdk
-- discount
-- perfomance
-- developer
+  - jclouds
+  - java
+  - sdk
+  - developers
 ---
-{% img center 2013-11-21-whistle-while-you-hacktx/hacktx.jpg 645 292 %} 
+{% img center 2013-11-21-whistle-while-you-hacktx/hacktx.jpg 645 292 %}
 
 [HackTX](http://hacktx.com/) is the biggest hackathon in Texas. It's a 24 hour annual hackathon hosted by the Hacker Lounge and Technology Entrepreneurship Society student organizations at The University of Texas at Austin. It's made up of 500 hackers with $10,000 in prizes. By far, it's the biggest hackathon that I've personally attended and I was pretty damn excited to represent Rackspace as a sponsor.
 

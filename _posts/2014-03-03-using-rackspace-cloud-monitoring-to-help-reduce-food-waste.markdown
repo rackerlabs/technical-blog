@@ -1,14 +1,12 @@
 ---
 layout: post
-title: "Using Rackspace Cloud Monitoring to help reduce food waste."
-date: 2014-03-03 12:00
+title: Using Rackspace Cloud Monitoring to help reduce food waste.
+date: '2014-03-03 12:00'
 comments: true
 author: Bill Hertzing
 published: true
 categories:
- - Cloud Monitoring
- - Hardware
- - RaspberryPi
+  - Cloud Monitoring
 ---
 
 Losing a large amount of food in a freezer can be a costly and grueling task

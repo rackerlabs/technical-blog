@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Spinning Up Your First Instance on Rackspace Private Cloud"
-date: 2014-07-02 14:09
+title: Spinning Up Your First Instance on Rackspace Private Cloud
+date: '2014-07-02 14:09'
 comments: true
 author: James Thorne
 published: true
 categories:
- - OpenStack
- - Private Cloud 
+  - OpenStack
+  - Private Cloud
 ---
 Last week, I presented a live webinar on how to use the OpenStack Horizon Dashboard to [spin up your first instance on Rackspace Private Cloud](http://youtu.be/YZModLNABhU). The Horizon Dashboard is a simple and intuitive way to begin consuming your OpenStack environment. But, what if you want to administer and use your OpenStack environment using the OpenStack Python command line tools?
 

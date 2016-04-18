@@ -1,21 +1,13 @@
 ---
 layout: post
-title: "Monitoring Hadoop with Rackspace Cloud services — managing partial failure"
-date: 2015-02-16 10:00
+title: Monitoring Hadoop with Rackspace Cloud services — managing partial failure
+date: '2015-02-16 10:00'
 comments: true
 author: Dave Beckett
 published: true
-categories:
-  - rackspace-cloud-monitoring
+categories: []
 bio:
-  - Dave Beckett is a software engineer with a background in multiple
-    data and web metadata systems (from RDF to CSV) working in
-    the Rackspace Data Platform group.  He spends most of his
-    time tending the Hadoop cluster and writing Python to automate
-    that.  Dave lives in San Francisco with his wife and in his spare
-    time codes on his free software projects such as
-    Redland RDF http://librdf.org/
-    More details at http://www.dajobe.org/ and https://github.com/dajobe/
+  - 'Dave Beckett is a software engineer with a background in multiple data and web metadata systems (from RDF to CSV) working in the Rackspace Data Platform group.  He spends most of his time tending the Hadoop cluster and writing Python to automate that.  Dave lives in San Francisco with his wife and in his spare time codes on his free software projects such as Redland RDF http://librdf.org/ More details at http://www.dajobe.org/ and https://github.com/dajobe/'
 ---
 
 Hadoop is constructed from a large set of servers (or nodes) so to

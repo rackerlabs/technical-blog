@@ -1,15 +1,12 @@
 ---
 layout: post
-title: "Rackspace Cloud Intelligence: Insights in Monitoring"
-date: 2013-11-20 15:55
+title: 'Rackspace Cloud Intelligence: Insights in Monitoring'
+date: '2013-11-20 15:55'
 comments: true
 author: Mary Stufflebeam
-published: True
+published: true
 categories:
-- data mining
-- cloud monitoring
-- anomaly detection
-- pattern recognition
+  - cloud monitoring
 ---
 
 Drowning in data? You probably just started monitoring your application.

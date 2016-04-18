@@ -1,3 +1,4 @@
 {
-  "contentIDBase": "https://github.com/rackerlabs/docs-developer-blog"
+  "contentIDBase": "https://github.com/rackerlabs/docs-developer-blog",
+  "preparer": "quay.io/smashwilson/preparer-devblog"
 }

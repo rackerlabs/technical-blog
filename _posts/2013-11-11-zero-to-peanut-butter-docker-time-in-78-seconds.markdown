@@ -1,15 +1,12 @@
 ---
 layout: post
-title: "Zero to Peanut Butter Docker Time in 78 seconds"
-date: 2013-11-11 12:00
+title: Zero to Peanut Butter Docker Time in 78 seconds
+date: '2013-11-11 12:00'
 comments: true
 author: Jesse Noller
 published: true
 categories:
-- docker
-- performance cloud servers
-- speed
-- containers
+  - docker
 ---
 
 {% img right 2013-11-11-peanut-butter-docker-time/Peanut-Butter-and-Jelly-Time-Family-Guy.gif 300 %}

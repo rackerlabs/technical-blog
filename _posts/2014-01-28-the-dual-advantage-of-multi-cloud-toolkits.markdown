@@ -1,17 +1,14 @@
 ---
 layout: post
-title: "The Dual Advantage of Multi-Cloud Toolkits"
-date: 2014-01-30 9:30
+title: The Dual Advantage of Multi-Cloud Toolkits
+date: '2014-01-30 9:30'
 comments: true
 author: Everett Toews
 published: true
 categories:
-- jclouds
-- fog
-- pkgcloud
-- libcloud
-- sdk
-- developer
+  - jclouds
+  - sdk
+  - developers
 ---
 {% img right 2014-01-28-the-dual-advantage-of-multi-cloud-toolkits/multi-cloud.png 200 %}
 

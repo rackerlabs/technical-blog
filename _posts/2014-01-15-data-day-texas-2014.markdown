@@ -1,13 +1,11 @@
 ---
 layout: post
-title: "Data Day Texas 2014"
-date: 2014-01-24 9:00
+title: Data Day Texas 2014
+date: '2014-01-24 9:00'
 comments: true
 author: Zack Shoylev
 published: true
-categories:
- - conferences
- - ddtx14
+categories: []
 ---
 
 On Saturday (01/11) I attended Data Day Texas (#ddtx14). As per the

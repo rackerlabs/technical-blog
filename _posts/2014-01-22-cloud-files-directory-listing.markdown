@@ -1,17 +1,12 @@
 ---
 layout: post
-title: "Cloud Files directory listing"
-date: 2014-01-22 14:21
+title: Cloud Files directory listing
+date: '2014-01-22 14:21'
 comments: true
 author: Louwrens Boonstra
 published: true
 categories:
- - API
- - Cloud Files
- - Bash
- - httpie
- - jq
-
+  - Cloud Files
 ---
 
 My last holiday took me to Morocco, where me and a couple of friends used

@@ -1,14 +1,13 @@
 ---
 layout: post
-title: "pkgcloud update"
-date: 2013-05-17 09:23
+title: pkgcloud update
+date: '2013-05-17 09:23'
 comments: true
 author: Ken Perkins
 published: true
-categories: 
-- pkgcloud
-- SDK
-- node.js
+categories:
+  - SDK
+  - node.js
 ---
 As we hinted at in our [post earlier this week](http://devops.rackspace.com/release-of-pkgcloud.html), Rackspace is working towards an official release of node.js SDK bindings for the Rackspace Cloud. I thought it was important to provide more clarity on exactly what we're doing and why. 
 

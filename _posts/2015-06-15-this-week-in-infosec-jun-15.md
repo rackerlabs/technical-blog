@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "This Week in Information Security (Week of June 15th)"
-date: 2015-06-15 23:59
+title: This Week in Information Security (Week of June 15th)
+date: '2015-06-15 23:59'
 comments: true
 author: Charles Neill
 published: true
 categories:
-    - Security
+  - Security
 ---
 
 Welcome back to This Week in Information Security! Sorry if you missed us last week, but posts should follow the schedule you're used to going forward. This week, we have news of two high-profile compromises, a few hair-raising hardware/firmware vulnerabilities, tools from DARPA for searching the "deep" and "dark" web, an opinion piece about vulnerability embargoes in open source software, and more. Finally, we wrap up the week with a fun, interactive article from Bloomberg about the meaning of code and the people and culture that produce it.

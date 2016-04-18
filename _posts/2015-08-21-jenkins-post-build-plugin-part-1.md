@@ -1,13 +1,12 @@
 ---
 layout: post
-title: "Jenkins Post-build Plugin Part 1"
-date: 2015-08-21 14:00
+title: Jenkins Post-build Plugin Part 1
+date: '2015-08-21 14:00'
 comments: true
 author: Priti Changlani
 published: true
 categories:
-    - jenkins
-    - plugin
+  - jenkins
 ---
 This is the first part of a two-part tutorial series to develop a Jenkins plugin
 (specifically, Jenkins post-build plugin). Jenkins is a very popular continuous-integration tool and with the small amount of (scattered) information present

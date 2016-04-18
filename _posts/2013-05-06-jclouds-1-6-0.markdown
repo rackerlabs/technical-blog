@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "jclouds 1.6.0"
-date: 2013-05-06 12:00
+title: jclouds 1.6.0
+date: '2013-05-06 12:00'
 comments: true
 author: Everett Toews
 published: true
-categories: 
-- Java
-- SDK
-- jclouds
+categories:
+  - Java
+  - SDK
+  - jclouds
 ---
 jclouds 1.6.0 has been released! Since 1.5.0 I'm both proud and (antonymically) humbled to have become a committer. We've done a lot of work since then, including adding new features and an extensive refactoring aimed at simplifying the code base and removing cruft. I'm pleased to announce that full support for Rackspace Cloud Load Balancers and Cloud DNS has been added. That brings the list of supported APIs to:
 

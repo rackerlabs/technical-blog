@@ -1,15 +1,13 @@
 ---
 layout: post
-title: "OpenStack Miniconf at Pycon AU 2013"
-date: 2013-07-19 10:15
+title: OpenStack Miniconf at Pycon AU 2013
+date: '2013-07-19 10:15'
 comments: true
 author: Ed Leafe
 published: true
 categories:
-- Python
-- Conferences
-- OpenStack
-- PyCon
+  - Python
+  - OpenStack
 ---
 
 Friday was the pre-conference day, with two miniconfs: one for Django, and the other for OpenStack. While I'd love to spend some time digging deeper into Django, I figured that given my background as an OpenStack developer, the **OpenStack miniconf** was for me.

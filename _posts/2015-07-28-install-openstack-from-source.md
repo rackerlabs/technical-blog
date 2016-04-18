@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Install OpenStack from source"
-date: 2015-07-28 10:26
+title: Install OpenStack from source
+date: '2015-07-28 10:26'
 comments: true
 author: Phil Hopkins
 published: true
 categories:
-    - OpenStack
-    - OSAD
+  - OpenStack
+  - OSAD
 ---
 
 Installing OpenStack has always been challenging. Due to the complexity and varity of design choices involved in setting up OpenStack, automated installers are rare. For those who need a small but realistic setup, to be used either for development or learning, a manual installation using the desired distribution's packages has been the typical solution. Distribution packages simplify the process, however they come with compromises.

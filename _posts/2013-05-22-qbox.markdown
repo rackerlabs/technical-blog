@@ -1,14 +1,11 @@
 ---
 layout: post
-title: "Unleash the Power of Auto-Complete"
-date: 2013-05-22 15:30
+title: Unleash the Power of Auto-Complete
+date: '2013-05-22 15:30'
 comments: true
 author: Hart Hoover
 published: true
-categories: 
-- ElasticSearch
-- Qbox
-- Startups
+categories: []
 ---
 It’s no secret that Rackspace has taken an interest in innovative startups that can get their arms around emerging Big Data technologies, package them in a hosted environment and sell them as a service. The trend is good for customers who won’t have to build and scale out infrastructure. It’s good for stimulating open technologies. It’s good for our partners in the [Rackspace Startup Program][1]. And it’s good for Rackspace.
 

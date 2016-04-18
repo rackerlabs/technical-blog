@@ -1,23 +1,18 @@
 ---
 layout: post
-title: "Repose Ninja - WSGI Middleware On The JVM"
-date: 2015-10-01 00:01
+title: Repose Ninja - WSGI Middleware On The JVM
+date: '2015-10-01 00:01'
 comments: true
 author: Damien Johnson
 bio: >
-  Damien is a software developer at Rackspace that is currently working on
-  the open source Repose project. He graduated from the University of Texas at
-  Austin in December of 2013, and has been delivering fanatical results at
-  Rackspace ever since!
+  Damien is a software developer at Rackspace that is currently working on the
+  open source Repose project. He graduated from the University of Texas at Austin
+  in December of 2013, and has been delivering fanatical results at Rackspace
+  ever since!
 published: true
 categories:
-- Repose
-- API Management
-- WSGI
-- Java
-- Python
-- Jython
-- JVM
+  - Java
+  - Python
 authorIsRacker: true
 ---
 

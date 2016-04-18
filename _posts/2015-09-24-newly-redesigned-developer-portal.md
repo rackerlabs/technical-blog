@@ -1,13 +1,11 @@
 ---
 layout: post
-title: "The Newly Redesigned Developer Portal"
-date: 2015-09-24
+title: The Newly Redesigned Developer Portal
+date: 2015-09-24T00:00:00.000Z
 comments: true
 author: Trent Gillaspie
 published: true
-categories:
-    - rackspace
-    - announcements
+categories: []
 ---
 
 You may have noticed our Developer Portal looks different. This portal provides you with everything you need to build powerful, scalable apps using our Software Developer Kits (SDKs), which are built on open-source platforms and take advantage of our extensive APIs. We have redesigned Developer.Rackspace.com.

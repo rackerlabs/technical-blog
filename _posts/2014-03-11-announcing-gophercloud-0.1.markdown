@@ -1,16 +1,13 @@
 ---
 layout: post
-title: "Announcing Gophercloud 0.1"
-date: 2014-03-11 12:00
+title: Announcing Gophercloud 0.1
+date: '2014-03-11 12:00'
 comments: true
 author: Samuel A. Falvo II
 published: true
 categories:
- - Gophercloud
- - Go
- - SDK
- - OpenStack
- - Version
+  - SDK
+  - OpenStack
 ---
 
 I'm pleased to announce that the final PR for Gophercloud 0.1 has successfully merged to master!  Gophercloud 0.1 is out!

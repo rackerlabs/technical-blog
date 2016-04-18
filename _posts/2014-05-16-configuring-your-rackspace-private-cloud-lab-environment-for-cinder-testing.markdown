@@ -1,12 +1,11 @@
 ---
 layout: post
-title: "Configuring Your Rackspace Private Cloud Lab Environment for Cinder testing"
-date: 2014-05-16 15:13
+title: Configuring Your Rackspace Private Cloud Lab Environment for Cinder testing
+date: '2014-05-16 15:13'
 comments: true
 author: Jason Grimm
 published: true
 categories:
-  - Cinder
   - OpenStack
 ---
 In the knowledge center article titled "KNOWLEDGE CENTER ARTICLE: INSTALLING AND TESTING CINDER IN YOUR RACKSPACE PRIVATE CLOUD LAB ENVIRONMENT" I walk through the entire process of installing, configuring and testing the OpenStack Cinder service in your RPC lab environment.

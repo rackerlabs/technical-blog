@@ -1,13 +1,11 @@
 ---
 layout: post
-title: "Balloon Mapping and Outreach"
-date: 2014-03-17 9:30
+title: Balloon Mapping and Outreach
+date: '2014-03-17 9:30'
 comments: true
-author: Anne Gentle, Dana Bauer
+author: 'Anne Gentle, Dana Bauer'
 published: true
-categories:
-- Community
-- outreach
+categories: []
 ---
 
 "What's the difference between data and a map?" This question came from

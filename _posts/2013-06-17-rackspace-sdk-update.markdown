@@ -1,17 +1,13 @@
 ---
 layout: post
-title: "Rackspace SDK Update"
-date: 2013-06-18 09:21
+title: Rackspace SDK Update
+date: '2013-06-18 09:21'
 comments: true
 author: Jesse Noller
 published: true
-categories: 
-- SDK
-- Fog
-- pyrax
-- pkgcloud
-- jclouds
-- php-opencloud
+categories:
+  - SDK
+  - jclouds
 ---
 {% img right 2013-06-17-rackspace-sdk-update/gear.png 200 %}
 

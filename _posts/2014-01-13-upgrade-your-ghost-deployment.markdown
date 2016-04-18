@@ -1,12 +1,11 @@
 ---
 layout: post
-title: "Upgrade Your Ghost Deployment"
-date: 2014-01-13 16:00
+title: Upgrade Your Ghost Deployment
+date: '2014-01-13 16:00'
 comments: true
 author: Ryan Walker
 published: true
-categories:
-- Deployments
+categories: []
 ---
 
 Back in October of 2013 I wrote about how to [launch Ghost with Rackspace Deployment](http://developer.rackspace.com/blog/launch-ghost-with-rackspace-deployments.html). Today, Ghost [announced](http://blog.ghost.org/ghost-0-4/) the release of thier latest version - 0.4.0. Now that Ghost has gone through a few updates, it is a good time to go over the process of updating your Ghost deployment. <!-- more -->

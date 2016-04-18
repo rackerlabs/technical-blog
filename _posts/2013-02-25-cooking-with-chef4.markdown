@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "How Rackspace uses Chef to deploy OpenStack in the Private Cloud"
-date: 2013-02-25 08:00
+title: How Rackspace uses Chef to deploy OpenStack in the Private Cloud
+date: '2013-02-25 08:00'
 comments: true
 author: Ryan Richard
-categories: 
-- OpenStack
-- Chef
-- Private Cloud
+categories:
+  - OpenStack
+  - Chef
+  - Private Cloud
 ---
 {% img right 2013-01-09-cooking-with-chef/chef_logo.png "Chef Logo" %}
 

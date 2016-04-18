@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Cooking with Chef, part 3"
-date: 2013-02-15 08:00
+title: 'Cooking with Chef, part 3'
+date: '2013-02-15 08:00'
 comments: true
 author: Hart Hoover
-categories: 
-- Cloud Servers
-- Chef
-- Configuration Management
+categories:
+  - Cloud Servers
+  - Chef
+  - Configuration Management
 ---
 {% img right 2013-01-09-cooking-with-chef/chef_logo.png "Chef Logo" %}
 

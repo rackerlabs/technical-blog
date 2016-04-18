@@ -1,14 +1,12 @@
 ---
 layout: post
-title: "Protecting Sensitive Information From Appearing in Public Repos"
-date: 2014-04-15 10:30
+title: Protecting Sensitive Information From Appearing in Public Repos
+date: '2014-04-15 10:30'
 comments: true
 author: Sri Rajan
 published: true
 categories:
- - git
- - Security
- - Programming
+  - Security
 ---
 
 

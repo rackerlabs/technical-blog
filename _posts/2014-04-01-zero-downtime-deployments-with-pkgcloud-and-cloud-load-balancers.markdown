@@ -1,14 +1,12 @@
 ---
 layout: post
-title: "Zero downtime deployments with pkgcloud and Cloud Load Balancers"
-date: 2014-04-10 12:00
+title: Zero downtime deployments with pkgcloud and Cloud Load Balancers
+date: '2014-04-10 12:00'
 comments: true
 author: Ken Perkins
 published: true
 categories:
- - cloud load balancers
- - pkgcloud
- - node.js
+  - node.js
 ---
 
 I've been spending a lot of time working on more practical examples with [pkgcloud][0], and one of the ones that I think will appeal broadly is the ability to deploy your code as part of a zero-downtime deployment strategy.

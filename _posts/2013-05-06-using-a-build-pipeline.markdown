@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Using A Build Pipeline"
-date: 2013-05-07 08:00
+title: Using A Build Pipeline
+date: '2013-05-07 08:00'
 comments: true
 author: Hart Hoover
 published: true
 categories:
-- Jenkins
+  - Jenkins
 ---
 As [discussed previously](http://devops.rackspace.com/the-new-devops-blog.html), this blog is hosted entirely in [Cloud Files](http://www.rackspace.com/cloud/files/). It is powered by [Octopress](http://octopress.org), which means it is static - perfect for hosting in an object store. Our "architecture" looks like this:
 

@@ -1,13 +1,12 @@
 ---
 layout: post
-title: "OpenStack Marconi API"
-date: 2013-07-29 12:10
+title: OpenStack Marconi API
+date: '2013-07-29 12:10'
 comments: true
 author: Oz Akan
 published: true
 categories:
-- Marconi
-- OpenStack
+  - OpenStack
 ---
 ## What is Marconi?
 

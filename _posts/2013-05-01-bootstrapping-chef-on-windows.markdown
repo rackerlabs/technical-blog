@@ -1,13 +1,12 @@
 ---
 layout: post
-title: "Bootstrapping Chef on Windows"
-date: 2013-05-01 09:25
+title: Bootstrapping Chef on Windows
+date: '2013-05-01 09:25'
 comments: true
 author: Edward Adame
 published: true
-categories: 
-- Chef
-- Windows
+categories:
+  - Chef
 ---
 {% img right 2013-01-09-cooking-with-chef/chef_logo.png "Chef Logo" %}
 Windows presents some challenges when it comes to using deployment automation tools.  If you’ve used 'knife-rackspace' to create Linux servers on our cloud, you know that the bootstrap process happens automatically.  The server is created, a connection is made via SSH, the Chef client is installed, and the server role is assigned… all with a single command.  If you spin up a Windows server, knife-rackspace still attempts to bootstrap the server via SSH… and this will obviously fail.  So what next?  What are your options, and which approach will produce the best results?<!-- more -->

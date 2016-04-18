@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Speeding up SSH Session Creation"
-date: 2013-04-03 08:00
+title: Speeding up SSH Session Creation
+date: '2013-04-03 08:00'
 comments: true
 author: Greg Brockman
 published: true
-categories: 
-- Cloud Servers
+categories:
+  - Cloud Servers
 ---
 Establishing a new SSH connection usually takes only a few seconds, but if you're connecting to a server multiple times in succession the overhead starts to add up. If you do a lot of Git pushing and pulling or frequently need to SSH to a dev server, you've probably felt the pain of waiting for SSH to connect so you can get back to doing work.
 

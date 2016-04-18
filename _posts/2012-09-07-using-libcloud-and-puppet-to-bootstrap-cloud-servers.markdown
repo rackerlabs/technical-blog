@@ -1,14 +1,14 @@
 ---
 comments: true
 sharing: true
-date: 2012-09-07 08:00:27
+date: 2012-09-07T08:00:27.000Z
 layout: post
 title: Using libcloud and Puppet to bootstrap Cloud Servers
 author: Hart Hoover
 categories:
-- Cloud Servers
-- Puppet
-- Python
+  - Cloud Servers
+  - Puppet
+  - Python
 ---
 
 In my [last post](http://devops.rackspace.com/using-puppet-with-cloud-servers.html), I discussed a manual install of Puppet between a puppetmaster and client. Here, I will take that a step further and use Apache [libcloud](http://libcloud.apache.org/) to bootstap a Puppet client node.

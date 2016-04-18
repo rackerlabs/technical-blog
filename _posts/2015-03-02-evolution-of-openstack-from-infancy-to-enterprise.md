@@ -1,13 +1,12 @@
 ---
 layout: post
-title: "Evolution of OpenStack - From Infancy to Enterprise"
-date: 2015-03-02 23:59
+title: Evolution of OpenStack - From Infancy to Enterprise
+date: '2015-03-02 23:59'
 comments: true
 author: Walter Bentley
 published: true
 categories:
-    - openstack
-    - openstack-for-enterprises 
+  - openstack
 ---
 
 Recently I had the pleasure of hosting a webinar covering the Evolution of OpenStack.  No matter how many times I review the history of OpenStack, I manage to learn something new.  Just the idea that multiple companies, with distinct unique ideas can come together to make what I consider to be a super platform is amazing.  Whether you think OpenStack is ready for prime time or not, it is hard to deny the power and disruptive nature it has in the current cloud market.  

@@ -1,12 +1,11 @@
 ---
 layout: post
-title: "Fanatical Support from the Rackspace Community"
-date: 2013-09-06 08:20
+title: Fanatical Support from the Rackspace Community
+date: '2013-09-06 08:20'
 comments: true
 author: Evan Ochs
 published: true
-categories: 
-- Community
+categories: []
 ---
 Earlier this year Rackspace announced [Rackspace Developer Support](http://www.rackspace.com/blog/rackspace-developer-support-fanatical-support-for-your-code/), an exciting new service to provide "Fanatical Support For Your Code".  
 

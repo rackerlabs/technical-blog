@@ -1,14 +1,11 @@
 ---
 layout: post
-title: "Using IronMQ for Delayed Processing and Increasing Scale"
-date: 2013-07-23 08:00
+title: Using IronMQ for Delayed Processing and Increasing Scale
+date: '2013-07-23 08:00'
 comments: true
 author: Paddy Foran
 published: true
-categories: 
-- IronMQ
-- Cloud Tools
-- Message Queues
+categories: []
 ---
 {% img right 2013-07-23-using-ironmq/ironmq.png 200 %}
 It’s an [established pattern](http://highscalability.com/blog/2012/12/17/11-uses-for-the-humble-presents-queue-er-message-queue.html) to use message queues when building scalable, extensible, and resilient systems, but a lot of developers are still unsure how to go about actually *implementing* message queues in their architectures. Worse, the number of queuing solutions makes it hard for developers to get a grasp on exactly what a queue is, what it does, and what each solution brings to the table.

@@ -1,15 +1,12 @@
 ---
 layout: post
-title: "I Loved PyTennessee 2015"
-date: 2015-02-14
+title: I Loved PyTennessee 2015
+date: 2015-02-14T00:00:00.000Z
 comments: true
 author: Kyle Kelley
 published: true
 categories:
-    - Python
-    - Tennessee
-    - PyTennessee
-    - Conferences
+  - Python
 ---
 
 [Python Tennessee](https://www.pytennessee.org/) was a wonderfully put together conference with a great variety of speakers.

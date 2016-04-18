@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Customer Story: How I use Cloud Files"
-date: 2013-06-05 09:23
+title: 'Customer Story: How I use Cloud Files'
+date: '2013-06-05 09:23'
 author: Brad Montgomery
 comments: true
 published: true
-categories: 
-- Cloud Files
+categories:
+  - Cloud Files
 ---
 {% img right 2013-05-21-cloud-files/cloud_files_logo.png 250 %}
 I've been using Cloud Files for about two years, and I thought I'd share some

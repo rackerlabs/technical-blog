@@ -1,14 +1,18 @@
 ---
 layout: post
-title: "Playing with CoreOS, Fleet and Docker"
-date: 2015-06-17 13:00
+title: 'Playing with CoreOS, Fleet and Docker'
+date: '2015-06-17 13:00'
 comments: true
 author: Sri Rajan
-bio: |
-  Sriram (Sri) Rajan is an Principal Engineer at Rackspace and has more than a decade of professional experience working with computer systems, networks, programming and security. Prior to joining Rackspace, Sri worked as a systems programmer at Texas State University, from where he also earned his masters degree in computer science. He studied and lived in the United States for a total of nine years before relocating to the UK for work in 2010.
+bio: >
+  Sriram (Sri) Rajan is an Principal Engineer at Rackspace and has more than
+  a decade of professional experience working with computer systems, networks,
+  programming and security. Prior to joining Rackspace, Sri worked as a systems
+  programmer at Texas State University, from where he also earned his masters
+  degree in computer science. He studied and lived in the United States for
+  a total of nine years before relocating to the UK for work in 2010.
 published: true
 categories:
-  - coreos
   - docker
 ---
 

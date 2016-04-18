@@ -1,14 +1,13 @@
 ---
 layout: post
-title: "Beginning to Understand Neutron Provider and Tenant Networks in OpenStack"
-date: 2014-02-03 09:23
+title: Beginning to Understand Neutron Provider and Tenant Networks in OpenStack
+date: '2014-02-03 09:23'
 comments: true
 author: James Thorne
 published: true
 categories:
- - OpenStack
- - Neutron
- - Networking
+  - OpenStack
+  - Neutron
 ---
 
 OpenStack is composed of many different projects. The core projects 

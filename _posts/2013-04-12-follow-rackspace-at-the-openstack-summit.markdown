@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Follow Rackspace at the OpenStack Summit"
-date: 2013-04-12 09:21
+title: Follow Rackspace at the OpenStack Summit
+date: '2013-04-12 09:21'
 comments: true
 author: Hart Hoover
 published: true
-categories: 
-- OpenStack
+categories:
+  - OpenStack
 ---
 Rackspace will be all over the [OpenStack Summit](https://www.openstack.org/summit/portland-2013/) in Portland next week. We're so excited about so many things during the Summit! First of all, if you’ve contributed code to the OpenStack project, we want to offer you **free hosting**. Go over to [iopenedthecloud.com](http://iopenedthecloud.com) during the Summit, or stop by the Rackspace booth (booth A5) for more info. You made the code free; we’ll make your cloud free – **up to $500 per month for two years**. You can verify contributions at [http://www.ohloh.net/](http://www.ohloh.net/). I'll be at the booth and I'd love to give some free hosting away. <!-- more -->
 

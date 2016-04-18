@@ -1,11 +1,11 @@
 ---
 comments: true
-date: 2012-09-10 08:00:36
+date: 2012-09-10T08:00:36.000Z
 layout: post
 title: 'Cloud Connect 2012: Chicago'
 author: Hart Hoover
 categories:
-- General
+  - General
 ---
 
 Rackspace will be present at [Cloud Connect](http://www.cloudconnectevent.com/chicago/) in Chicago this week! If you're a Rackspace customer we would love for you to stop by our booth and talk to us about how your company uses the [Open Cloud](http://rackspace.com/cloud). We also have several Rackers speaking during the conference:

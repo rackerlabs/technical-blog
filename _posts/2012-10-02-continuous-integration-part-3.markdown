@@ -1,11 +1,11 @@
 ---
 comments: true
-date: 2012-10-02 08:00:41
+date: 2012-10-02T08:00:41.000Z
 layout: post
-title: Continuous Integration and Rackspace, part 3
+title: 'Continuous Integration and Rackspace, part 3'
 author: Jeff Ness
 categories:
-- Cloud Servers
+  - Cloud Servers
 ---
 
 _This is part 3 of a series of using continuous integration with Rackspace. This is a guest post by Jeff Ness, a developer for the Rackspace RPM Development team.

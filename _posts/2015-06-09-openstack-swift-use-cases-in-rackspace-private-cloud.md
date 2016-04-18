@@ -1,14 +1,13 @@
 ---
 layout: post
-title: "OpenStack Swift Use Cases in Rackspace Private Cloud"
-date: 2015-06-09 14:19
+title: OpenStack Swift Use Cases in Rackspace Private Cloud
+date: '2015-06-09 14:19'
 comments: true
 author: James Thorne
 published: true
 categories:
-    - openstack
-    - swift
-    - rpc
+  - openstack
+  - rpc
 ---
 
 OpenStack Swift is the object storage project within OpenStack. From the [OpenStack Swift documentation](http://docs.openstack.org/developer/swift/), "Swift is a highly available, distributed, eventually consistent object/blob store. Organizations can use Swift to store lots of data efficiently, safely, and cheaply."

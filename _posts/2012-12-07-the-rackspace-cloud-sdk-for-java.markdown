@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "The Rackspace Cloud SDK for Java"
-date: 2012-12-10 08:00
+title: The Rackspace Cloud SDK for Java
+date: '2012-12-10 08:00'
 comments: true
 author: Everett Toews
 published: true
-categories: 
-- SDK
-- Java
+categories:
+  - SDK
+  - Java
 ---
 At the OpenStack Grizzly Summit in October 2012, Rackspace announced our Java Software Development Kit (SDK) for the open cloud. The Java SDK is powered by jclouds, an open source library that helps you get started in the cloud and employ your Java development skills. The jclouds Application Programming Interface (API) gives you the freedom to write portable code that works with many cloud providers or write code that utilizes cloud specific features. It also works with both public and private clouds, enabling hybrid cloud workloads.
 <!-- more -->

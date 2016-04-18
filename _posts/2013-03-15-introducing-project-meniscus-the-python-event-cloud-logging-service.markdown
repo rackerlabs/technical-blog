@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Introducing Project Meniscus: The Python Event Cloud Logging Service"
-date: 2013-03-26 08:00
+title: 'Introducing Project Meniscus: The Python Event Cloud Logging Service'
+date: '2013-03-26 08:00'
 comments: true
 author: Chad Lung
 categories:
-- OpenStack
-- Python
+  - OpenStack
+  - Python
 ---
 
 **Dream big:** that is our vision on the Rackspace [Project Meniscus](http://projectmeniscus.org) team. In one of our dreams, we

@@ -1,15 +1,12 @@
 ---
 layout: post
-title: "Using Cloud-init with Rackspace cloud"
-date: 2014-02-11 10:30
+title: Using Cloud-init with Rackspace cloud
+date: '2014-02-11 10:30'
 comments: true
 author: Trey Hoehne
 published: true
 categories:
- - Cloud-init
- - Cloud
- - Configuration
- - Linux
+  - Configuration Management
 ---
 It goes without saying that booting and configuring a server manually
 every time you need one gets old fast. Thankfully there are a number of tools to help

@@ -1,19 +1,11 @@
 ---
 layout: post
-title: "Supporting Non-profits While Hacking: Our Gig at the Knowbility OpenAIR Hackathon"
-date: 2014-03-20 10:00
+title: 'Supporting Non-profits While Hacking: Our Gig at the Knowbility OpenAIR Hackathon'
+date: '2014-03-20 10:00'
 comments: true
 author: Emmanuel Ankutse
 published: true
-categories:
- - Volunteer
- - Accessibilty
- - Assistive Technologies
- - Hackathon
- - OpenAIR
- - Knowbility
- - Food Policy Council
- - Support Non-profit
+categories: []
 ---
 
 

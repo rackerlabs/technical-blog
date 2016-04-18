@@ -1,12 +1,12 @@
 ---
 comments: true
 sharing: true
-date: 2012-08-27 15:02:25
+date: 2012-08-27T15:02:25.000Z
 layout: post
 author: Wayne Walls
 title: Using raxmon to configure Rackspace Cloud Monitoring
 categories:
-- Cloud Monitoring
+  - Cloud Monitoring
 ---
 
 With the [launch](http://www.rackspace.com/blog/monitor-any-cloud-or-web-infrastructure-with-new-rackspace-cloud-monitoring-now-in-unlimited-availability/) of Rackspace Cloud Monitoring (RCM) earlier this week, Rackspace has added an additional tool to your belt that shows you how your servers and applications are behaving. Cloud Monitoring makes it easy to configure monitors and alerts from the Control Panel, but today I want to focus on raxmon, one of the most flexible CLI tools available today for RCM.

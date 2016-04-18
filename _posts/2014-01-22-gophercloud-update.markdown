@@ -1,12 +1,11 @@
 ---
 layout: post
-title: "Gophercloud Update"
-date: 2014-01-27 12:00
+title: Gophercloud Update
+date: '2014-01-27 12:00'
 comments: true
 author: Samuel A. Falvo II
 published: true
-categories:
- - gophercloud
+categories: []
 ---
 
 I'm happy to report that Gophercloud has received some contributor interest

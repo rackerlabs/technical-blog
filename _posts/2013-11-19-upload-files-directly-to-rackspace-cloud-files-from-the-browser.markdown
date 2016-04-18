@@ -1,14 +1,12 @@
 ---
 layout: post
-title: "Upload files directly to Rackspace Cloud Files from the browser"
-date: 2013-11-19 10:42
+title: Upload files directly to Rackspace Cloud Files from the browser
+date: '2013-11-19 10:42'
 comments: true
 author: W. Matthew Wilson
 published: true
 categories:
-- cloud files
-- javascript
-- ajax
+  - cloud files
 ---
 
 We needed to let users take files (possibly really big files) from their

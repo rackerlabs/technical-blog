@@ -1,16 +1,15 @@
 ---
 layout: post
-title: "Introducing rumm: a Command Line Tool for the Rackspace Cloud"
-date: 2013-07-23 16:00
+title: 'Introducing rumm: a Command Line Tool for the Rackspace Cloud'
+date: '2013-07-23 16:00'
 comments: true
 author: Damon Cali
 published: true
-categories: 
-- Ruby
-- DevOps
-- OpenStack
-- Cloud Servers
-- Fog
+categories:
+  - Ruby
+  - DevOps
+  - OpenStack
+  - Cloud Servers
 ---
 
 When building a non-trivial application, you will need to manage assets in the cloud. Servers, files, containers, load balancers, databases - setting these up and maintaining them is a part of your day-to-day work. You can use the Rackspace control panel to spin up a server. Or you can use the Rackspace API, and write a quick script to do what you need. Each of these tools has its ups and its downs, depending on your point of view and how you like to work.

@@ -1,15 +1,12 @@
 ---
 layout: post
-title: "My Head In the Clouds with Gophercloud and Cloud Files"
-date: 2013-10-15 12:00
+title: My Head In the Clouds with Gophercloud and Cloud Files
+date: '2013-10-15 12:00'
 comments: true
 author: Samuel A. Falvo II
 published: true
 categories:
-- OpenStack
-- Gophercloud
-- Cloud
-- Files
+  - OpenStack
 ---
 
 What ever happened to Gophercloud's Cloud Files support?
@@ -66,4 +63,3 @@ Besides, having existing infrastructure for more platforms might provide the way
 especially for non-OpenStack platforms, come.
 Taken at face value, "Build it and they will come," may not always hold true.
 Sometimes, I think, folks just want a paved road to the construction site.
-

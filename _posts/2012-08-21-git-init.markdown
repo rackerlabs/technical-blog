@@ -1,12 +1,12 @@
 ---
 comments: true
 sharing: true
-date: 2012-08-21 15:23:48
+date: 2012-08-21T15:23:48.000Z
 layout: post
-title: "git init"
+title: git init
 author: Wayne Walls
 categories:
-- General
+  - General
 ---
 
 Our cloud is [open](http://www.rackspace.com/cloud/openstack/). We believe our company should be too. One of our [Core Values](http://rackertalent.com/people/core-values/) at Rackspace is full disclosure and transparency, and we want to build a community for our developers that is open, transparent and helps them build amazing applications on the open cloud.

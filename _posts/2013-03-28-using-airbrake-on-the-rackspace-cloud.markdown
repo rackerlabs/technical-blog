@@ -1,11 +1,10 @@
 ---
 layout: post
-title: "Using Airbrake on the Rackspace Cloud"
-date: 2013-03-28 08:15
+title: Using Airbrake on the Rackspace Cloud
+date: '2013-03-28 08:15'
 comments: true
 author: Ben Arent
-categories: 
-- Airbrake
+categories: []
 ---
 For a developer, the DevOps journey can be full of surprises. For example, server automation for setup lets developers have full control to fine tune and tweak applications for maximum performance; but once the server and app are up, the quest for a high quality application continues. 
 
