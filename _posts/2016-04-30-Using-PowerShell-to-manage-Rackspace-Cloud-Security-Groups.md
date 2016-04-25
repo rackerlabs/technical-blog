@@ -9,28 +9,30 @@ authorIsRacker: true
 authorAvatar: 'http://www.gravatar.com/avatar/e447889c7bb6912e05aa82248c9cf964'
 bio: Jose is a long time Racker who enjoys new technology and helping others adopt it since he moves on to the next shiny thing quickly. His day to day is spent with customers designing against flaws and then fixing all the problems that arise from that.
 categories:
-    - Security Groups
-    - DevOps
-    - PowerShell
+   - Security Groups
+   - DevOps
+   - PowerShell
 ---
 
-One day I was testing this neat new API feature and was really struggling with those curl examples. 
+One day I was testing this neat new API feature and was really struggling with those `curl` examples. 
 
 "I'm not a browser!" I thought. "Can I have this in a proper scripting or dev language?"
 
 Since I couldn't find it anywhere, I decided to write this tutorial myself.
 
-Everybody talks about Security, and, in the Cloud, sometimes the tools and options available seem confusing or inefficient because they require a lot of repetitive actions. Most companies just need a simple means to filter traffic to their Cloud Servers, and Rackspace has launched, around 2015, in limited availability, our own implementation of a very useful feature called 'Security Groups'.
+Everybody talks about Security, and, in the Cloud, sometimes the tools and options available seem confusing or inefficient because they require a lot of repetitive actions. Plus, it's all using Linux tools. And I want to use PowerShell.
+
+Most companies just need a simple means to filter traffic to their Cloud Servers, and so Rackspace has launched, around 2015 and in limited availability, our own implementation of a very useful feature called 'Security Groups'.
 
 <!-- more -->
 
-This is the Rackspace equivalent to features like AWS Security Groups and Azure Network Security Group and, using PowerShell scripting, you can achieve automation of these repetitive tasks, as well as your daily Cloud Server builds.
+This is the Rackspace equivalent to features like AWS Security Groups and Azure Network Security Groups; and, using scripting, you can achieve automation of those repetitive tasks, as well as your daily Cloud Server builds.
 
-At the moment, Rackspace Cloud Security Groups are still in Limited Availability in all regions, and it's not yet very well known by customers, but it is a very powerful tool to secure your servers and manage the access filters with some consistency and ease.
+At the moment, Rackspace Cloud Security Groups is still in Limited Availability in all regions, and it's not yet very well known by most customers, but it is a very powerful tool to secure Cloud Servers and manage access filters with some consistency and ease.
 
-So customers need to filter traffic on hundreds of Cloud Servers, but they don't really want to do it one at a time. Ideally, a deployment cycle is all automated (or near as), but if you cringe each time a new network requirement calls for rules change then your process is still manual.
+So, customers need to filter traffic on hundreds of Cloud Servers, but they don't really want to do it one at a time, right?  Ideally, a deployment cycle is all automated (or near as), but if you cringe each time a new network requirement calls for rules change, then your process is still manual.
 
-No more! We're going to explain in this post what you can do and help you automate using a simple tool like PowerShell. The concepts and basics should be simple enough for you to tweak at will but, if you need help, reach out with questions via Rackspace support channels or post a comment here. 
+No more! In this post we're going to review what you can do and help you automate this feature using PowerShell. The concepts and basics should be simple enough for you to tweak at will but, if you need help, reach out with questions via Rackspace support channels or post a comment here. 
 
 
 ### What are Rackspace Cloud Security Groups?
@@ -41,9 +43,9 @@ _"Security groups are named collections of network access rules that enable Rack
 
 [https://community.rackspace.com/products/f/25/t/6733](https://community.rackspace.com/products/f/25/t/6733)
 
-Servers can be secured with Rules that work similar to Access Control Lists that filter traffic based on TCP/IP ports, on TCP, UDP or ICMP protocols, for both IPv4 and IPv6 traffic. Optionally, you can filter by source IP address or range.
+Servers can be secured with Rules that work similarly to Access Control Lists which filter traffic based on TCP/IP ports, on TCP, UDP or ICMP protocols, for both IPv4 and IPv6 traffic. Optionally, you can filter by source IP address or range.
 
-Currently, only inbound rules are supported, but Outbound rules are expected to be available with unlimited availability launch, this year.
+Currently, only Inbound rules are supported, but Outbound rules are expected to be available with unlimited availability launch, this year.
 
 It's also important to reiterate the distinction that Security Groups are applied to a network, like PublicNet and ServiceNet, not directly to an instance. 
 
@@ -51,15 +53,15 @@ Remember:
 
 **A Security Group is a container for Security Group Rules and can only be applied to resources in the region where it was created.**
 
-Now with the caveats and explanations out of the way, you want to start using this right away.
+Now with the caveats and explanations out of the way, you may want to start using this right away.
 
-First, since it's not general availability yet, please contact our Support or Service Delivery team to request being added to the beta testing group of customers. It will be provisioned in your service catalogue, to use via the API or portal.
+First, since it's not in general availability yet, please contact our Support or Service Delivery team to request being added to the beta testing group of customers. It will be provisioned in your service catalogue, to use via the API or portal.
 
-An User Guide can be found here:
+A User Guide can be found here:
 
 [https://developer.rackspace.com/docs/user-guides/infrastructure/cloud-config/network/cloud-networks-product-concepts/security-groups/](https://developer.rackspace.com/docs/user-guides/infrastructure/cloud-config/network/cloud-networks-product-concepts/security-groups/)
 
-However, the purpose of my blogpost is to simplify ease and automate using PowerShell. 
+So the purpose of this blogpost is to simplify and automate using PowerShell. 
 
 Also, I'm not a browser!
 
@@ -85,7 +87,7 @@ Since the API used is an HTTP endpoint, we will be using `Invoke-RestMethod`. Th
 
  * Let's start with some assumptions that are resolved with your preference of SDK.
 
-    Since we don't want to tattoo the code (hardcoding is bad) with API keys and sensitive information, I'm assuming you have configured user variables in your environment that include:
+   Since we don't want to tattoo the code (hardcoding is bad) with API keys and sensitive information, I'm assuming you have configured user variables in your environment that include:
 
 ```sh
 $apiuser = [Environment]::GetEnvironmentVariable("apiuser","User") 
@@ -103,7 +105,7 @@ Since Security Groups are bound to the region where they were created, we're als
 $region = [Environment]::GetEnvironmentVariable("region","User") 
 ```
 
-Remember, if needed, you can create and save these environment variables using PowerShell too. For example:
+Remember: if needed, you can also create and save these environment variables using PowerShell. For example:
 
 ```sh
 [Environment]::SetEnvironmentVariable("region","LON","User") 
@@ -147,12 +149,12 @@ catch
 
 }
 ```
-    
-So, if you got an error, it was most likely `401 Unauthorized`, which means go above and fix your user or apikey.
+
+If you got an error, it was most likely `(401) Unauthorized`, which means go above and fix your apiuser or apikey environment variables.
 
  * Tokens and tidbits
 
-    Otherwise your request has a wealth of information including your important authentication token to continue with the rest of these operations:
+    Otherwise your request resulted in a wealth of information, including your required authentication token to continue with the rest of these operations:
 
 ```sh
 # token handling 
@@ -182,9 +184,9 @@ foreach ($catalog in $fullcatalog) {
 }
 ```
     
-Here we get also the tenantID and URI for CloudNetwork operations so we don't need to hardcode it!
+Here we also get the tenantID and URI for Cloud Networks operations so we don't need to hardcode it!
 
-Hardcoding is bad, have I said that ?
+Hardcoding is bad, have I said that?
 
 ```sh
 # useful details here
@@ -194,9 +196,9 @@ $CloudNetworkURI = $catalogNetwork.endpoints.publicURL
 
  * List Security Groups
 
-    You can finally list existing Security Groups (if any were created via the GUI/portal). If you're just following this demo, then go ahead and create something on the portal just to confirm that the below works. 
+   You can finally list existing Security Groups (if any were created via the GUI/portal). If you're just following this demo, then go ahead and create something on the portal just to confirm that the below works. 
 
-    Go on, I'll wait...
+   Go on, I'll wait...
 
 ```sh
 # List current Security Groups and its Rules
@@ -206,7 +208,7 @@ $lstSecGroups = Invoke-RestMethod -Uri "$CloudNetworkURI/security-groups" -Metho
 $lstSecGroups.security_groups | ConvertTo-Json -Depth 6 
 ```
 
-But now comes now the fun part!
+But now comes the fun part!
  
 Let's create one new:
 
@@ -229,7 +231,7 @@ try{
     $bJSON = $rbody | ConvertTo-Json
 
     # call API
-    $ newsgrequest = Invoke-RestMethod  -Uri $URLsc  -Method Post -Headers $authToken -Body $bJSON -ContentType "application/json"
+    $newsgrequest = Invoke-RestMethod  -Uri $URLsc  -Method Post -Headers $authToken -Body $bJSON -ContentType "application/json"
 
     # view results
     $newsgrequest | ConvertTo-Json -Depth 6 
@@ -246,15 +248,16 @@ catch
 }
 ```
 
-Since Security Group identifier is a Group ID, and not the name, you could create multiple Security Groups with the same name, but let's NOT do that, ok! 
+Since the Security Group identifier is a Group ID, and not the name, you could create multiple Security Groups with the same name, but let's NOT do that, ok? 
+
 Could be confusing...
 
 If you get error `(409) Conflict`, then you've reached the current limit of 10 Security Groups.
 
  * Show Security Group per Group ID
 
-    If you ever need to show details on a specific Security Group, you will need its ID.
-    So store it or parse it based on your application requirements.
+   If you ever need to show details on a specific Security Group, you will need its ID.
+   So store it or parse it based on your application requirements.
 
 ```sh
 # if you want to show a specific security group
@@ -269,8 +272,8 @@ Neat!
 
  * Delete your Security Group per Group ID
 
-    So I hear you now want to delete it? Make sure nobody is using it...
-    However, it's easy. Just change method to DELETE, and point to the previous URLscId
+   So I hear you now want to delete it? Make sure nobody is using it...
+   Just change method to DELETE, and point to the previous $URLscId
 
 ```sh
 # Delete your Security Group per Group ID
@@ -287,12 +290,15 @@ catch
 } 
 ```
 
-   If there's errors, it's likely already deleted! Oops, no undelete available...
+   If there are any errors, it's likely been already deleted! Oops, no undelete available...
 
  * Create Security Group Rules 
 
-    Let's look at the Security Group Rules, because you can't do much with those groups you've created thus far. Each Security Group Rule is associated with a specific Security Group ID, but you have this code so you can easily deploy the same to any other Security Groups you have.
-    Since we deleted the last group created and can't use it but if you're following the demo, I'll just select a random Security Group ID that exists in the account (assuming you have at least one, otherwise please create one). You know what they say about assumptions, right ?
+   Let's look at the Security Group Rules, because you can't do much with those groups you've created thus far. Each Security Group Rule is associated with a specific Security Group ID, but you have this code so you can easily deploy the same to any other Security Groups you have.
+   Since we deleted the last group created, we can't use it.
+   But if you're following the demo, I'll just select a random Security Group ID that exists in the account (assuming you have at least one, otherwise please create one). 
+   
+   You know what they say about assumptions, right?
 
 ```sh
 # Security Group lottery draw
@@ -339,9 +345,9 @@ catch
 ```
 
    If you got errors, it's likely an invalid Security Group ID.
-   Feel free to run the above code multiple times, because it will randomly create rules in any existing Security Groups you have.  Yes, they will be the same because rules are unique based on the IDs.
-   Let's see the mess you've created...
-    
+   Feel free to run the above code multiple times, because it will randomly create rules in any existing Security Groups you have.  Yes, they will be the same, because rules are unique based on the IDs.
+   Let's see the mess we've created...
+
  * List Security Group Rules 
 
 ```sh
@@ -349,12 +355,12 @@ catch
 $lstSecGroupRules = Invoke-RestMethod -Uri $URLscRl -Method GET -Headers $authToken  -ContentType application/json
 $lstSecGroupRules.security_group_rules | ConvertTo-Json -Depth 6
 ```
-    
+
    A bit untidy, so you probably just want to see 
 
  * Show Security Group Rules 
 
-    A specific Security Group Rule ID
+   A specific Security Group Rule ID
 
 ```sh
 # show security-group-rules per Security Group Rule Id
@@ -396,9 +402,9 @@ catch
 
    If there are errors, it's likely because it's already been deleted.
    
-   Here's a final exercise: if you want to remove all the Security Group Rules in a specific Security Group without deleting the group itself.
+   Here's a final exercise: You want to remove all the Security Group Rules in a specific Security Group without deleting the group itself.
    
-   And sure you can, but remember to not do this in Production (!!!) since your Cloud Servers would lose all the protection you've spent so many hours (minutes/ seconds) creating:
+   And sure you can, but remember to not do this in Production (!!!) since your Cloud Servers would lose all the protection you've spent so many hours (minutes/seconds) creating:
 
 ```sh
 # Delete all rules within a specific Security Group
@@ -434,9 +440,9 @@ foreach ($groupID in $lstSecGroups.security_groups){
 ![Output]({% asset_path 2016-04-30-Using-PowerShell-to-manage-Rackspace-Cloud-Security-Groups/nosecgrps.png %})
 
 
-You should now be equipped to script and to develop your own version of the above functionality using the Rackspace Cloud Security Groups feature. This will make your Cloud Servers much more secure while making you feel good about your scripting skills. 
+You should now be equipped to script and develop your own version of the above functionality using the Rackspace Cloud Security Groups feature. This will make your Cloud Servers much more secure while making you feel good about your scripting skills. 
 
-No more curl for you! 
+No more `curl` for you! 
 
 After all, you're not a browser, right?
 
