@@ -93,17 +93,17 @@ $apiuser = [Environment]::GetEnvironmentVariable("apiuser","User")
 $apikey = [Environment]::GetEnvironmentVariable("apikey","User")
 ```
 
-    Your control panel will show this information, but a guide is here too:
+Your control panel will show this information, but a guide is here too:
 
-    [https://developer.rackspace.com/docs/cloud-networks/v2/developer-guide/#getting-started](https://developer.rackspace.com/docs/cloud-networks/v2/developer-guide/#getting-started)
+[https://developer.rackspace.com/docs/cloud-networks/v2/developer-guide/#getting-started](https://developer.rackspace.com/docs/cloud-networks/v2/developer-guide/#getting-started)
 
-    Since Security Groups are bound to the region where they were created, we're also configuring:
+Since Security Groups are bound to the region where they were created, we're also configuring:
 
 ```sh
 $region = [Environment]::GetEnvironmentVariable("region","User") 
 ```
 
-    Remember, if needed, you can create and save these environment variables using PowerShell too. For example:
+Remember, if needed, you can create and save these environment variables using PowerShell too. For example:
 
 ```sh
 [Environment]::SetEnvironmentVariable("region","LON","User") 
@@ -148,7 +148,7 @@ catch
 }
 ```
     
-    So, if you got an error, it was most likely `401 Unauthorized`, which means go above and fix your user or apikey.
+So, if you got an error, it was most likely `401 Unauthorized`, which means go above and fix your user or apikey.
 
  * Tokens and tidbits
 
@@ -160,15 +160,16 @@ $token = $request.access.token.id
 $authToken = @{"X-Auth-Token" = $token} 
 ```
 
-    We also get the service catalogue, which has the full range of available products available to use.
+We also get the service catalogue, which has the full range of available products available to use.
 
 ```sh
 # service catalog here - range of available products to use and associated IDs
 $fullcatalog = $request.access.serviceCatalog 
-``` 
+```
 
-    And therefore, let's browse the catalog in a lazy (non elegant way).
-    I'm sure you're already thinking on how to improve the following! Good on you!
+And therefore, let's browse the catalog in a lazy (non elegant way).
+
+I'm sure you're already thinking on how to improve the following! Good on you!
 
 ```sh
 # browing the catalog
@@ -181,8 +182,9 @@ foreach ($catalog in $fullcatalog) {
 }
 ```
     
-    Here we get also the tenantID and URI for CloudNetwork operations so we don't need to hardcode it!
-    Hardcoding is bad, have I said that ?
+Here we get also the tenantID and URI for CloudNetwork operations so we don't need to hardcode it!
+
+Hardcoding is bad, have I said that ?
 
 ```sh
 # useful details here
@@ -202,13 +204,13 @@ $lstSecGroups = Invoke-RestMethod -Uri "$CloudNetworkURI/security-groups" -Metho
 
 # View them in a pretty way
 $lstSecGroups.security_groups | ConvertTo-Json -Depth 6 
-``` 
+```
 
-    But now comes now the fun part!
+But now comes now the fun part!
  
-    Let's create one new:
+Let's create one new:
 
-    First, define it, then POST it!
+First, define it, then POST it!
 
 ```sh
 # we're ready to create a NEW Security Group
@@ -244,9 +246,10 @@ catch
 }
 ```
 
-    Since Security Group identifier is a Group ID, and not the name, you could create multiple Security Groups with the same name, but let's NOT do that, ok! 
-    Could be confusing...
-    If you get error `(409) Conflict`, then you've reached the current limit of 10 Security Groups.
+Since Security Group identifier is a Group ID, and not the name, you could create multiple Security Groups with the same name, but let's NOT do that, ok! 
+Could be confusing...
+
+If you get error `(409) Conflict`, then you've reached the current limit of 10 Security Groups.
 
  * Show Security Group per Group ID
 
@@ -262,9 +265,9 @@ $showSecGroupId = Invoke-RestMethod -Uri $URLscId -Method GET -Headers $authToke
 $showSecGroupId | ConvertTo-Json -Depth 6 
 ```
 
-    Neat!
+Neat!
 
-    * Delete your Security Group per Group ID
+ * Delete your Security Group per Group ID
 
     So I hear you now want to delete it? Make sure nobody is using it...
     However, it's easy. Just change method to DELETE, and point to the previous URLscId
@@ -284,7 +287,7 @@ catch
 } 
 ```
 
-    If there's errors, it's likely already deleted! Oops, no undelete available...
+   If there's errors, it's likely already deleted! Oops, no undelete available...
 
  * Create Security Group Rules 
 
@@ -335,9 +338,9 @@ catch
 } 
 ```
 
-    If you got errors, it's likely an invalid Security Group ID.
-    Feel free to run the above code multiple times, because it will randomly create rules in any existing Security Groups you have.  Yes, they will be the same because rules are unique based on the IDs.
-    Let's see the mess you've created...
+   If you got errors, it's likely an invalid Security Group ID.
+   Feel free to run the above code multiple times, because it will randomly create rules in any existing Security Groups you have.  Yes, they will be the same because rules are unique based on the IDs.
+   Let's see the mess you've created...
     
  * List Security Group Rules 
 
@@ -347,9 +350,9 @@ $lstSecGroupRules = Invoke-RestMethod -Uri $URLscRl -Method GET -Headers $authTo
 $lstSecGroupRules.security_group_rules | ConvertTo-Json -Depth 6
 ```
     
-    A bit untidy, so you probably just want to see 
+   A bit untidy, so you probably just want to see 
 
-    * Show Security Group Rules 
+ * Show Security Group Rules 
 
     A specific Security Group Rule ID
 
@@ -360,7 +363,7 @@ $showSecGroupRuleId = Invoke-RestMethod -Uri $URLscRlId -Method GET -Headers $au
 $showSecGroupRuleId | ConvertTo-Json -Depth 6 
 ```
 
-    Or all the Security Group Rules on a specific Security Group ID
+   Or all the Security Group Rules on a specific Security Group ID
 
 ```sh
 # use random again to make sure it exists
@@ -370,11 +373,11 @@ $showSecGroupIdRules = Invoke-RestMethod -Uri $URLscIdrnd -Method GET -Headers $
 $showSecGroupIdRules.security_group | ConvertTo-Json -Depth 6 
 ```
 
-    Now, we're getting to the stage of deleting rules.
+   Now, we're getting to the stage of deleting rules.
 
  * Delete Security Group Rules 
 
-    You can't change existing rules, so you might as well delete and recreate, if needed.
+   You can't change existing rules, so you might as well delete and recreate, if needed.
 
 ```sh
 #	Delete your Security Group Rule per Rule ID
@@ -391,9 +394,11 @@ catch
 } 
 ```
 
-    If there are errors, it's likely because it's already been deleted.
-    Here's a final exercise: if you want to remove all the Security Group Rules in a specific Security Group without deleting the group itself.
-    And sure you can, but remember to not do this in Production (!!!) since your Cloud Servers would lose all the protection you've spent so many hours (minutes/ seconds) creating:
+   If there are errors, it's likely because it's already been deleted.
+   
+   Here's a final exercise: if you want to remove all the Security Group Rules in a specific Security Group without deleting the group itself.
+   
+   And sure you can, but remember to not do this in Production (!!!) since your Cloud Servers would lose all the protection you've spent so many hours (minutes/ seconds) creating:
 
 ```sh
 # Delete all rules within a specific Security Group
@@ -410,6 +415,7 @@ write-host "Deleted $noRules rules"
 ```
 
 And now, farewell. (Already?)
+
 Thank you for reading and demoing this feature with me.
 
 For clean-up, run:
@@ -429,7 +435,10 @@ foreach ($groupID in $lstSecGroups.security_groups){
 
 
 You should now be equipped to script and to develop your own version of the above functionality using the Rackspace Cloud Security Groups feature. This will make your Cloud Servers much more secure while making you feel good about your scripting skills. 
-No more curl for you! After all, you're not a browser, right?
+
+No more curl for you! 
+
+After all, you're not a browser, right?
 
 Eager to try more?
 Think you can code better? Hope so! 
