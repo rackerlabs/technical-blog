@@ -1,13 +1,12 @@
 ---
 comments: true
-date: 2012-09-24 09:47:33
+date: 2012-09-24T09:47:33.000Z
 layout: post
-title: Continuous Integration and Rackspace, part 2
+title: 'Continuous Integration and Rackspace, part 2'
 author: Hart Hoover
 categories:
-- Cloud Servers
-- Jenkins
-- Git
+  - Cloud Servers
+  - Jenkins
 ---
 
 _This is part 2 of a series of using continuous integration with the Rackspace Cloud, specifically with Git and Jenkins. This is not the way Rackspace does continuous integration, but you can use this to get started. Stay tuned for future posts on using Jenkins for continuous integration._

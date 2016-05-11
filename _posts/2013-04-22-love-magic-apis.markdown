@@ -1,12 +1,11 @@
 ---
 layout: post
-title: "Love, Magic, & APIs"
-date: 2013-04-22 8:00
+title: 'Love, Magic, & APIs'
+date: '2013-04-22 8:00'
 comments: true
 author: Jason Gignac
 published: true
-categories: 
-- API
+categories: []
 ---
 I will confess, I am old enough to remember my GeoCities page. Don't hate. It was amazing, it was... this transformative moment in which I took real, actual information, and transformed it into something visible and memorable. I once heard someone say the GeoCities was nothing but the interior locker door of the early Internet. I agree, if you remove the words “nothing but” and pronounce the sentence with a nostalgic sense of awe. That was, and still is, the heart of the web - the convenient, interactive display of data to the multitudes. I respect (even worship) the idea of the Internet as a sort of Universal Library. On that note, if you haven't donated to Wikipedia yet, go do it.  
  

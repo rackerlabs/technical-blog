@@ -1,15 +1,13 @@
 ---
 layout: post
-title: "Cloud Databases - Java Developer Highlights"
-date: 2013-11-21 14:10
+title: Cloud Databases - Java Developer Highlights
+date: '2013-11-21 14:10'
 comments: true
 author: Zack Shoylev
 published: true
 categories:
-- java
-- cloud databases
-- jclouds
-- mysql
+  - java
+  - jclouds
 ---
 
 Imagine a MySQL database you need not install, configure, optimize, or update.

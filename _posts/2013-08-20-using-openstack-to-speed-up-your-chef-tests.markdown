@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Using OpenStack to Speed up your Chef Tests"
-date: 2013-08-21 08:00
+title: Using OpenStack to Speed up your Chef Tests
+date: '2013-08-21 08:00'
 comments: true
 author: Ryan Richard
 published: true
-categories: 
-- OpenStack
-- Chef
+categories:
+  - OpenStack
+  - Chef
 ---
 In today's Configuration Management landscape the general motto is "infrastructure as code" and as good [devopsians](http://www.youtube.com/watch?v=Md1MDHroXGU) we should be testing our code. This blog post takes a look at test-kitchen + OpenStack to make your life of testing chef cookbooks easier, faster and fun.<!-- more -->
 

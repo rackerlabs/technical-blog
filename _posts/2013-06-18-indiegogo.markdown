@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Indiegogo uses Rackspace and Chef to handle massive traffic"
-date: 2013-06-19 08:00
+title: Indiegogo uses Rackspace and Chef to handle massive traffic
+date: '2013-06-19 08:00'
 comments: true
 author: Hart Hoover
 published: true
-categories: 
-- Chef
-- Cloud Servers
+categories:
+  - Chef
+  - Cloud Servers
 ---
 {% img right 2013-01-09-cooking-with-chef/chef_logo.png "Chef Logo" %}
 

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Slumlord Hosting with Docker"
-date: 2013-08-30 08:00
+title: Slumlord Hosting with Docker
+date: '2013-08-30 08:00'
 comments: true
 author: Hart Hoover
 published: true
-categories: 
-- Docker
+categories:
+  - Docker
 ---
 {% img right 2013-08-19-slumlord-hosting/slumlord.jpg 200 %}
 Since becoming a Racker back in 2007, one of my all time favorite websites has been [slumlordhosting.com][1]. Slumlord Hosting is a parody of really bad shared hosting environments, advertising some amazing features:

@@ -1,15 +1,13 @@
 ---
 layout: post
-title: "Libcloud 0.14 Released"
-date: 2014-02-03 14:51
+title: Libcloud 0.14 Released
+date: '2014-02-03 14:51'
 comments: true
 author: Brian Curtin
 published: true
 categories:
-- python
-- libcloud
-- openstack
-- apis
+  - python
+  - openstack
 ---
 
 On 22 January, [Apache Libcloud](https://libcloud.apache.org/index.html) project chair Tomaz Muraus announced the release of Libcloud 0.14, a Python package which abstracts away the many differences among cloud provider APIs, allowing developers to target one interface regardless of the vendor.

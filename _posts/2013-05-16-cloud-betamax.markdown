@@ -1,13 +1,12 @@
 ---
 layout: post
-title: "Cloud Betamax"
-date: 2013-05-16 09:08
+title: Cloud Betamax
+date: '2013-05-16 09:08'
 comments: true
 author: Hart Hoover
 published: true
-categories: 
-- GCE
-- General
+categories:
+  - General
 ---
 {% img right 2013-05-16-cloud-betamax/betamax.gif 200 %}
 As part of the [Google I/O keynote yesterday](http://thenextweb.com/insider/2013/05/15/everything-announced-at-the-google-io-2013-keynote-in-one-handy-list/?), several new features for Google Compute Engine were announced. First, GCE is now available to everyone in a preview and available for signups. They also announced Cloud Datastore, a NoSQL database solution and several other features.

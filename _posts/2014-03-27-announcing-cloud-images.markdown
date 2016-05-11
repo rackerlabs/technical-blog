@@ -1,15 +1,13 @@
 ---
 layout: post
-title: "Developing with Cloud Images for Fun and Profit"
-date: 2014-04-01 11:00
+title: Developing with Cloud Images for Fun and Profit
+date: '2014-04-01 11:00'
 comments: true
 author: Brian Rosmaita
 published: true
 categories:
-- Cloud Servers
-- Cloud Images
-- Images
-- OpenStack
+  - Cloud Servers
+  - OpenStack
 ---
 
 Rackspace has just launched Cloud Images, a public OpenStack Images

@@ -1,13 +1,12 @@
 ---
 layout: post
-title: "Continuous Integration Success Depends on Automation"
-date: 2013-08-09 08:00
+title: Continuous Integration Success Depends on Automation
+date: '2013-08-09 08:00'
 comments: true
 author: Aliza Earnshaw
 published: true
-categories: 
-- Puppet
-- Continuous Integration
+categories:
+  - Puppet
 ---
 Continuous delivery — the ability to ship new and awesome features, updates and patches to your customers more frequently — is key to getting ahead of the competition, and staying there.
 

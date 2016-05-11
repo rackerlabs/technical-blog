@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Rackspace Private Cloud - Digging Deeper into OpenCenter, High Availability"
-date: 2013-03-06 07:00
+title: 'Rackspace Private Cloud - Digging Deeper into OpenCenter, High Availability'
+date: '2013-03-06 07:00'
 comments: true
 author: Kevin Jackson
-categories: 
-- Private Cloud
-- OpenStack
+categories:
+  - Private Cloud
+  - OpenStack
 ---
 Today we unveiled some key updates to [Rackspace Private Cloud](https://www.rackspace.com/cloud/private/), which improve the platform's capabilities. Here, we'll drill into some of the architecture and technology behind this latest update and focus on two key features: High Availability of OpenStack components including MySQL and RabbitMQ; and OpenCenter, the open source Rackspace Private Cloud management API and graphical user interface that includes a powerful command line to allow administrators to harness even more control over their environments.<!-- more -->
 

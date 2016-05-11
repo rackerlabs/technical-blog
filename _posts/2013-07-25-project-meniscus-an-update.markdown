@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Project Meniscus - Logging as a Service (Update)"
-date: 2013-07-25 08:00
+title: Project Meniscus - Logging as a Service (Update)
+date: '2013-07-25 08:00'
 comments: true
 author: Chad Lung
 published: true
 categories:
-- OpenStack
-- Python
+  - OpenStack
+  - Python
 ---
 
 It’s been a while since my [last post](http://developer.rackspace.com/blog/introducing-project-meniscus-the-python-event-cloud-logging-service.html) on [Project Meniscus](http://projectmeniscus.org), which is an open-source, [Apache 2 Licensed](http://www.apache.org/licenses/LICENSE-2.0.html), cloud-scale logging service that collects logging data from cloud servers and services, makes the data easily searchable through [ElasticSearch](http://www.elasticsearch.org/), and dispatches it into numerous other data stores, including [MongoDB](http://www.mongodb.org/) and [Hadoop](http://hadoop.apache.org/). Today I want to update everyone about the current status of the project and our future plans.

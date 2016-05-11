@@ -1,14 +1,12 @@
 ---
 layout: post
-title: "Cloud Databases vs. MySQL on Cloud Servers"
-date: 2013-05-24 12:00
+title: Cloud Databases vs. MySQL on Cloud Servers
+date: '2013-05-24 12:00'
 comments: true
 author: Edward Adame
 published: true
 categories:
-- Cloud Servers
-- Cloud Databases
-- mysql
+  - Cloud Servers
 ---
 If you need to run MySQL on the Rackspace Cloud, you have two fundamental choices: run MySQL on a Cloud Server, or run MySQL as a Cloud Database instance. This naturally raises a few questions: What are the features and benefits of each? Which performs better? Which will be more cost effective? As with every application, the answer is ”it depends;” however, the information below should help you make the right choice based on your needs.<!-- more -->
 

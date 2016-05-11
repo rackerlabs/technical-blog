@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "Using Rackspace Private Cloud to Host Your Web Tier Applications"
-date: 2014-08-11 14:00
+title: Using Rackspace Private Cloud to Host Your Web Tier Applications
+date: '2014-08-11 14:00'
 comments: true
 author: James Thorne
 published: true
 categories:
-    - RPC
-    - openstack
-    - private-cloud
+  - RPC
+  - openstack
+  - private-cloud
 ---
 
 Last week, I presented a live webinar on [why web tier applications are a good fit for Rackspace Private Cloud](http://youtu.be/mknyC4tccBQ).

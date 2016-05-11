@@ -1,19 +1,20 @@
 ---
 layout: post
-title: "A Big Data Solution Running On Top of Rackspace Private Cloud"
-date: 2014-09-22 11:00
+title: A Big Data Solution Running On Top of Rackspace Private Cloud
+date: '2014-09-22 11:00'
 comments: true
 author: James Thorne
 published: true
 categories:
-    - RPC
-    - openstack
-    - private-cloud
-    - mongodb
-    - cassandra
-    - hadoop
-bio: |
- James Thorne is a Sales Engineer at Rackspace focused on working with OpenStack. He is a Texas State University alumnus and former Platform Consultant at Red Hat. James has been working with Linux professionally for the past four years and in his free time even longer. James blogs at thornelabs.net and can be followed on Twitter @jameswthorne.
+  - RPC
+  - openstack
+  - private-cloud
+bio: >
+  James Thorne is a Sales Engineer at Rackspace focused on working with
+  OpenStack. He is a Texas State University alumnus and former Platform
+  Consultant at Red Hat. James has been working with Linux professionally for the
+  past four years and in his free time even longer. James blogs at thornelabs.net
+  and can be followed on Twitter @jameswthorne.
 ---
 
 Two weeks ago, I presented a live webinar on [a big data solution running on top of Rackspace Private Cloud](http://youtu.be/V55gzeBxmwE).

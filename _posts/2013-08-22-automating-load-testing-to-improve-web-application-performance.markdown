@@ -1,13 +1,11 @@
 ---
 layout: post
-title: "Automating Load Testing To Improve Web Application Performance"
-date: 2013-08-22 14:00
+title: Automating Load Testing To Improve Web Application Performance
+date: '2013-08-22 14:00'
 comments: true
 author: Erik Torsner
 published: true
-categories: 
-- Ops
-- Load Testing
+categories: []
 ---
 Web application performance is a moving target. During design and implementation, a lot of big and small decisions are made that affect application performance - for good and bad. You've heard it before. But since performance can be ruined many times throughout a project, good application performance simply can not be added as an extra feature at the end of a project.
 

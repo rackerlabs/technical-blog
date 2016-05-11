@@ -1,13 +1,12 @@
 ---
 layout: post
-title: "Chef server backups"
-date: 2013-12-11 10:00
+title: Chef server backups
+date: '2013-12-11 10:00'
 comments: true
 author: Sriram Rajan
 published: true
 categories:
- - Chef
- - knife-backup
+  - Chef
 ---
 
 There are few ways to backup a Chef server. Opscode has some documenation on

@@ -1,11 +1,11 @@
 ---
 comments: true
-date: 2012-09-12 14:00:00
+date: 2012-09-12T14:00:00.000Z
 layout: post
 title: Using your iPhone to bootstrap Cloud Servers
 author: Hart Hoover
 categories:
-- Cloud Servers
+  - Cloud Servers
 ---
 
 With the announcement of the latest [iPhone](http://www.apple.com/iphone/), the tech world is in a frenzy once again. In previous posts, I discussed configuring [Puppet on Cloud Servers](http://devops.rackspace.com/using-puppet-with-cloud-servers.html) and bootstrapping new servers with [libcloud](http://libcloud.apache.org/) and [Puppet](http://puppetlabs.com/puppet/what-is-puppet/). Here, I will go through the process of creating a new server with the Rackspace Cloud iPhone app that automatically bootstraps with Opscode's [Chef](http://opscode.com) or Puppet. With Chef you have the option to use either your own Chef server or Opscode's Hosted Chef platform.

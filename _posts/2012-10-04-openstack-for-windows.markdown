@@ -1,11 +1,11 @@
 ---
 comments: true
-date: 2012-10-04 09:00:17
+date: 2012-10-04T09:00:17.000Z
 layout: post
 title: 'OpenStack for Windows Users: So it begins…'
 author: Duan van der Westhuizen
 categories:
-- OpenStack
+  - OpenStack
 ---
 
 _This is a guest post by Duan van der Westhuizen. Duan works at Rackspace in Enterprise Product Development and has been a Racker for almost 6 years. Duan started in our EMEA office where he also had roles in Business Intelligence and Customer Support. He has over 15 years of technology experience across various fields from technology strategy, engineering, development and database design. Duan is a tech at heart who is passionate about leading edge technologies and finding ways to solve market problems through new and innovative solutions._

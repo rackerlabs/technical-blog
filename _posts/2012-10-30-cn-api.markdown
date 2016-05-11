@@ -1,11 +1,11 @@
 ---
 comments: true
-date: 2012-10-30 15:24:25
+date: 2012-10-30T15:24:25.000Z
 layout: post
 title: 'Cloud Networks: Example Architecture and API'
 author: Hart Hoover
 categories:
-- Cloud Networks
+  - Cloud Networks
 ---
 
 Today’s [launch of Rackspace Cloud Networks](http://www.rackspace.com/blog/cloud-networks-the-next-chapter-in-the-open-cloud/), marks the fourth product release by Rackspace that is powered by an [OpenStack](http://openstack.org) project. When Rackspace founded OpenStack with NASA two years ago the vision was for a community of extremely talented engineers, architects, developers and industry professionals all coming together to build amazing technology. This year alone, Rackspace has launched the following products all powered by OpenStack:

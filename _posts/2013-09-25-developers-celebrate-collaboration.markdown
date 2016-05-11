@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Developers: Celebrate Collaboration, Innovation At Yahoo! Hack USA"
-date: 2013-09-25 13:58
+title: 'Developers: Celebrate Collaboration, Innovation At Yahoo! Hack USA'
+date: '2013-09-25 13:58'
 comments: true
 author: Troy Toman
 published: true
-categories: 
-- Events
+categories:
+  - Events
 ---
 Developers and hackers are driving innovation and building great things. As Stephen O’Grady writes in his book, developers are the “[New Kingmakers][1]” and are heralding a new era in the technology world.
 

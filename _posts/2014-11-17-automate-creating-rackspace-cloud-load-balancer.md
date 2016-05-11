@@ -1,13 +1,12 @@
 ---
 layout: post
-title: "Automate creating Rackspace Cloud Load Balancer"
-date: 2014-11-17 23:59
+title: Automate creating Rackspace Cloud Load Balancer
+date: '2014-11-17 23:59'
 comments: true
 author: Walter Bentley
 published: true
 categories:
-    - rackspace-public-cloud
-    - Ansible 
+  - Ansible
 ---
 
 Recently I embarked on a customer project where they wanted to dynamically create (automate) a complete application stack, starting from the base server provisioning all the way up to the application deployment.  One piece of the puzzle, previously seen as something to be done manually but now considered as part of the stack, is load balancers and any configurations related to load balancing.  
@@ -19,7 +18,7 @@ There was an earlier blog post from Jesse Keating on [Rolling Deployments with A
    * Create a Cloud Load Balancer
    * Create a DNS subdomain associated with the load balancer
    * Enable SSL Termination and add an SSL certificate
-   
+
 
 Currently, my favorite automation tool is Ansible, so the following discussion uses Ansible and Rackspace Cloud-specific modules to demonstrate using Load Balancers.
 

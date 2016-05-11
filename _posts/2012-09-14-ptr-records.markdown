@@ -1,11 +1,10 @@
 ---
 comments: true
-date: 2012-09-14 07:00:36
+date: 2012-09-14T07:00:36.000Z
 layout: post
 author: Mike Sisk
 title: Configuring PTR records using the Rackspace Cloud DNS API
-categories:
-- Cloud DNS
+categories: []
 ---
 
 _This is a guest post by Mike Sisk, a Racker working on DevOps for Rackspace's new cloud products. You can read his blog at [http://mikesisk.com](http://mikesisk.com) or follow _[@msisk](http://twitter.com/msisk)_ on Twitter._

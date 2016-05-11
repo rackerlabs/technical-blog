@@ -1,14 +1,13 @@
 ---
 layout: post
-title: "Creating dynamic host files with Chef"
-date: 2013-09-04 08:00
+title: Creating dynamic host files with Chef
+date: '2013-09-04 08:00'
 comments: true
 author: Sri Rajan
 published: true
-categories: 
-- Chef
-- Linux
-- Automation
+categories:
+  - Chef
+  - Automation
 ---
 
 Maintaining hosts files on standard *nix system has been traditionally done by hand. This becomes a challenge as the number of systems grow and this is more true in the Cloud model where you might add/delete servers at a higher rate.   One solution would be to use DNS and use a local zone to store your host name to IP mapping.  If you are in the automation using Chef world, here is another example on how to automatically generate the host file entries.<!-- more -->

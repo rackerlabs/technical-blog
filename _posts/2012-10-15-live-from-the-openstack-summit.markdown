@@ -1,11 +1,11 @@
 ---
 comments: true
-date: 2012-10-15 11:12:37
+date: 2012-10-15T11:12:37.000Z
 layout: post
 title: Live from the OpenStack Summit
 author: Hart Hoover
 categories:
-- OpenStack
+  - OpenStack
 ---
 
 We are live from the Fall 2012 [OpenStack Summit](http://www.openstack.org/summit/). Follow along as we liveblog the opening keynote!

@@ -1,14 +1,12 @@
 ---
 layout: post
-title: "Using Openstack DNS for Domain Name Resolution"
-date: 2013-09-26 08:00
+title: Using Openstack DNS for Domain Name Resolution
+date: '2013-09-26 08:00'
 comments: true
 author: Tim Simmons
 published: true
-categories: 
-- OpenStack
-- DNS
-- Designate
+categories:
+  - OpenStack
 ---
 *Last week, you saw a guide on [Getting Started with OpenStack and Designate][11] that covered the basic setup for getting a Domain Name Server up and running using Openstack DNS's solution, Designate. Today we'll dive into actually using Designate to resolve your domain names.*
  

@@ -1,15 +1,12 @@
 ---
 layout: post
-title: "Data science with Pandas; Baltimore City salary analysis"
-date: 2015-08-26 23:59
+title: Data science with Pandas; Baltimore City salary analysis
+date: '2015-08-26 23:59'
 comments: true
 author: Kenny Gorman
 published: true
 categories:
-    - data science
-    - ipython
-    - Pandas
-    - python
+  - python
 ---
 
 Wes McKinney started working on Pandas in 2008. Since then, Pandas has become one of the most popular and useful software components for the data scientist. For good reason; using Python, Pandas and iPython/Jupyter notebooks makes it simple and quick to perform analysis on various datasets.

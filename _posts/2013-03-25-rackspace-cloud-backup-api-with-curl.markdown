@@ -1,11 +1,10 @@
 ---
 layout: post
-title: "Rackspace Cloud Backup API with cURL"
-date: 2013-04-01 08:00
+title: Rackspace Cloud Backup API with cURL
+date: '2013-04-01 08:00'
 comments: true
 author: Oz Akan
-categories: 
-- Cloud Backup
+categories: []
 ---
 
 > **WARNING:** this blog post contains information that is not up to date. Consult [this](http://docs.rackspace.com/rcbu/api/v1.0/rcbu-getting-started/content/createWorkWithBackups-d1e01.html) guide for authoritative and up to date information.

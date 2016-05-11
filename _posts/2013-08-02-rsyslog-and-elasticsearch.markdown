@@ -1,12 +1,11 @@
 ---
 layout: post
-title: "rsyslog &amp; ElasticSearch"
-date: 2013-08-02 08:00
+title: 'rsyslog &amp; ElasticSearch'
+date: '2013-08-02 08:00'
 comments: true
 author: Micah Yoder
 published: true
-categories: 
-- ElasticSearch
+categories: []
 ---
 There is a clear benefit to being able to aggregate logs from various servers and services into one place and be able to search them for any sort of arbitrary event.  Traditional syslog can aggregate logs, but aggregating events from them sometimes involves grep and convoluted regular expressions.  Logging structured data to a database makes a lot of sense.  rsyslog and ElasticSearch can do that, but figuring out how to get it to work from the rsyslog documentation can be difficult.  Let's start from the beginning.<!-- more -->
 

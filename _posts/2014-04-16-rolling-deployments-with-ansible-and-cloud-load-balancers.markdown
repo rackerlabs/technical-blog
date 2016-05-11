@@ -1,14 +1,12 @@
 ---
 layout: post
-title: "Rolling Deployments with Ansible and Cloud Load Balancers"
-date: 2014-04-22 10:00
+title: Rolling Deployments with Ansible and Cloud Load Balancers
+date: '2014-04-22 10:00'
 comments: true
 author: Jesse Keating
 published: true
 categories:
- - cloud load balancers
- - ansible
- - pyrax
+  - ansible
 ---
 
 Recently a fellow Racker wrote a great post about [zero downtime deployments][0]. I strongly believe in the principals he described. In his example, he used Node.js to build a deployment script to accomplish the goal, and I want to explore how this could be done with [Ansible][1] and the Rackspace Cloud.

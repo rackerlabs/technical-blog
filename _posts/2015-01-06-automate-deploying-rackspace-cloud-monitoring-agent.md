@@ -1,13 +1,12 @@
 ---
 layout: post
-title: "Automate deploying Rackspace Cloud Monitoring agent"
-date: 2015-01-06 23:59
+title: Automate deploying Rackspace Cloud Monitoring agent
+date: '2015-01-06 23:59'
 comments: true
 author: Walter Bentley
 published: true
 categories:
-    - rackspace-cloud-monitoring
-    - Ansible
+  - Ansible
 ---
 
 So after being asked to do what I considered to be a easy thing, I soon realized that it was not :(. Rather it was easy to do, just not easy to automate doing it. Figured others could benefit from my discoveries. Before getting started, please note these instructions are for RHEL, Fedora and CentOS. Some minor modifications would be needed to accommodate Ubuntu, but the same concepts apply.

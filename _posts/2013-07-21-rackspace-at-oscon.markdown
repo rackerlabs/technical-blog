@@ -1,15 +1,13 @@
 ---
 layout: post
-title: "Rackspace at OSCON"
-date: 2013-07-21 08:00
+title: Rackspace at OSCON
+date: '2013-07-21 08:00'
 comments: true
 author: Jason Smith
 published: true
 categories:
-- FOSS
-- Developers
-- DevOps
-- Open Source
+  - Developers
+  - DevOps
 ---
 {% img right 2013-07-21-rackspace-at-oscon/oscon2013.png 250 %}
 

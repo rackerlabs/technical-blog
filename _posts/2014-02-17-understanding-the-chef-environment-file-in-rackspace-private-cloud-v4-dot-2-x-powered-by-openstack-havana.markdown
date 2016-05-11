@@ -1,16 +1,15 @@
 ---
 layout: post
-title: "Understanding the Chef Environment File in Rackspace Private Cloud v4.2.x powered by OpenStack Havana"
-date: 2014-02-17 09:43
+title: Understanding the Chef Environment File in Rackspace Private Cloud v4.2.x powered by OpenStack Havana
+date: '2014-02-17 09:43'
 comments: true
 author: James Thorne
 published: true
 categories:
- - OpenStack
- - Private Cloud
- - Chef
- - DevOps
- - Havana
+  - OpenStack
+  - Private Cloud
+  - Chef
+  - DevOps
 ---
 
 In a [previous post](http://developer.rackspace.com/blog/understanding-the-chef-environment-file-in-rackspace-private-cloud.html)

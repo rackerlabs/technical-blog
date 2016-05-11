@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Ruby on Rails Tutorial for the Rackspace Cloud"
-date: 2013-07-16 10:18
+title: Ruby on Rails Tutorial for the Rackspace Cloud
+date: '2013-07-16 10:18'
 comments: true
 author: Damon Cali
 published: true
 categories:
-- Ruby
+  - Ruby
 ---
 
 At Rackspace, our goal is to support our customers in any way we can. To move towards that goal, we decided to create a couple of tutorials aimed at beginning to intermediate Ruby on Rails developers. We hope that in sharing some knowledge, we will be able to help you better achieve your own goals.

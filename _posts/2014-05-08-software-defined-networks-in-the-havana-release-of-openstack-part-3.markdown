@@ -1,13 +1,12 @@
 ---
 layout: post
-title: "Software Defined Networks in the Havana release of Openstack – Part 3"
-date: 2014-05-08 09:30
+title: Software Defined Networks in the Havana release of Openstack – Part 3
+date: '2014-05-08 09:30'
 comments: true
 author: Phil Hopkins
 published: true
 categories:
   - openstack
-  - networks
 ---
 
 In [part 1](http://developer.rackspace.com/blog/software-defined-networks-in-the-havana-release-of-openstack.html) of this series we looked at creation of software defined networks (SDN) in OpenStack and started considering at how OpenStack accomplishes this function. Continuing on to [part 2](http://developer.rackspace.com/blog/software-defined-networks-in-the-havana-release-of-openstack-part-2.html), we started looking at the network path of VM1 for the tenant test and how it filters traffic to secure traffic flow into and out of the virtual machine (VM). In this section we will continue examining the filtering process by looking at sample packets as they proceed through these filters and may then either enter the Open vSwitch (OVS) process or proceed on to the VM depending on the packet flow direction.

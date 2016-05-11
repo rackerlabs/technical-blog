@@ -1,11 +1,10 @@
 ---
 comments: true
-date: 2012-10-23 11:05:11
+date: 2012-10-23T11:05:11.000Z
 layout: post
 title: 'Cloud Block Storage: Architecture and API'
 author: Hart Hoover
-categories:
-- Cloud Block Storage
+categories: []
 ---
 
 Today Rackspace [announces the general availability of Cloud Block Storage](http://www.rackspace.com/blog/cloud-block-storage/) which allows you to mount additional storage volumes to your Cloud Servers. In this post we will go through the technical meat of the product including the history of block storage in OpenStack, Cloud Block Storage architecture and API examples.

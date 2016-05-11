@@ -1,13 +1,12 @@
 ---
 layout: post
-title: "Python Continuous Documentation"
-date: 2013-05-30 08:00
+title: Python Continuous Documentation
+date: '2013-05-30 08:00'
 comments: true
 author: Ian Good
 published: true
-categories: 
-- Python
-- Documentation
+categories:
+  - Python
 ---
 
 A well-documented Python library is something to be proud of. Reading through

@@ -1,16 +1,13 @@
 ---
 layout: post
-title: "Serving Pentago: Exploring HPC data using Node.js on Rackspace"
-date: 2014-09-23 00:01
+title: 'Serving Pentago: Exploring HPC data using Node.js on Rackspace'
+date: '2014-09-23 00:01'
 comments: true
 author: Geoffrey Irving
 published: true
 categories:
-    - Pentago
-    - HPC
-    - nodejs
-bio:
-    Geoffrey Irving is a founder at the new interactive programming startup Eddy Systems (http://eddy.systems). Previously, he worked at Pixar, D. E. Shaw Research, Weta Digital, and Otherlab doing high performance computing, computational physics, and computer graphics. He has degrees in mathematics and computer science from Caltech and Stanford, and received film credits on Ratatouille, Wall-E, Up, and Tintin.
+  - nodejs
+bio: 'Geoffrey Irving is a founder at the new interactive programming startup Eddy Systems (http://eddy.systems). Previously, he worked at Pixar, D. E. Shaw Research, Weta Digital, and Otherlab doing high performance computing, computational physics, and computer graphics. He has degrees in mathematics and computer science from Caltech and Stanford, and received film credits on Ratatouille, Wall-E, Up, and Tintin.'
 ---
 
 [Pentago](https://en.wikipedia.org/wiki/Pentago) is a board game designed by

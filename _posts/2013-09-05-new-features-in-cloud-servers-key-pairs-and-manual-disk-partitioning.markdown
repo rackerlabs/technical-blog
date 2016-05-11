@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "New Features in Cloud Servers: Key Pairs and Manual Disk Partitioning"
-date: 2013-09-05 08:00
+title: 'New Features in Cloud Servers: Key Pairs and Manual Disk Partitioning'
+date: '2013-09-05 08:00'
 comments: true
 author: Trey Hoehne
 published: true
 categories:
-- Cloud Servers
+  - Cloud Servers
 ---
 Most people would agree that more automation is a good thing, especially
 if your day to day involves any type of server administration. Saving

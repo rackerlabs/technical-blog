@@ -1,18 +1,13 @@
 ---
 layout: post
-title: "Rackspace Announces SDK Support"
-date: 2013-05-13 10:20
+title: Rackspace Announces SDK Support
+date: '2013-05-13 10:20'
 comments: true
 author: Hart Hoover
 published: true
-categories: 
-- pyrax
-- fog
-- openstack.net
-- jclouds
-- pkgcloud
-- php-opencloud
-- SDK
+categories:
+  - jclouds
+  - SDK
 ---
 Over on the [Rackspace Blog](http://www.rackspace.com/blog) we've announced that we are now offering support to developers writing applications on our cloud infrastructure:
 

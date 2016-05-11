@@ -1,42 +1,89 @@
-# include the MD5 gem, this should be part of a standard ruby install
+# This is the Jekyll Gravatar Filter
+#
+# Place this file in your plugins directory
+#
+# Usage:
+#     {{ email@domain.com | gravatar }}
+#
+#   You may want to set up those settings in _config.yml:
+#
+#     gravatar:
+#       default_image: mm
+#       size: 20
+#       rating: g
+#       secure: true
+#       force: y
+#
+#   Look at https://en.gravatar.com/site/implement/images/ to get know what values you can use
+#
+#   If you are in a need of having different settings for different contexts
+#   like pages or posts then you can add context:
+#     gravatar:
+#       some_context:
+#         size: 20
+#         force: y
+#       some_other_context:
+#         size: 80
+#       size: 40
+#       default_image: mm
+#   And use it like that:
+#     {{ email | gravatar:'some_context' }}
+#
+#   Any argument missing in context are taken from default settings or,
+#   if none provided, are set to nil
+#
+#
+# Michał Ostrowski, <ostrowski.michal@gmail.com>
+# repo@github: https://github.com/espresse/jekyll_gravatar_filter
+#
+# blog: http://espresse.net
+#
 require 'digest/md5'
 
 module Jekyll
-
-    class Gravatar < Liquid::Tag
-
-        def initialize(tag_name, size, token)
-            super
-            @size = size.strip
-        end
-
-        def gravatar_url(email_address)
-            # change the email address to all lowercase
-            email_address = email_address.downcase
-
-            # create an md5 hash from the email address
-            gravatar_hash = Digest::MD5.hexdigest(email_address)
-
-            # compile the full Gravatar URL
-            "http://www.gravatar.com/avatar/#{gravatar_hash}" + (@size.empty? ? "" : "?s=#{@size}")
-        end
-
-        def render(context)
-            # get the site config variables
-            site_config = context.registers[:site].config
-
-            # get the email address from the site config
-            email_addresses = site_config['gravatar_emails']
-            email_images_tags = email_addresses.collect { |a| "   <img src='#{gravatar_url(a)}'/>" }
-
-            <<-HTML
-            <div class='row-contributor-grid'>
-            #{email_images_tags.join("\n")}
-            </div>
-            HTML
-        end
+  module GravatarFilter
+    def gravatar(email_address, gravatar_mode=nil)
+      @gravatar_mode = gravatar_mode
+      email_address ||= ""
+      gravatar_url(email_address)
     end
-end
 
-# register the "gravatar_images" tag
-Liquid::Template.register_tag('gravatar_images', Jekyll::Gravatar)
+    private
+
+    def gravatar_url(email_address)
+      url = "#{gravatar_protocol}://www.gravatar.com/avatar/#{gravatar_hash(email_address)}"
+      url += "?" + gravatar_options.join('&') unless gravatar_options.empty?
+      url
+    end
+
+    def gravatar_protocol
+      protocol = gravatar_config["secure"] ? "https" : "http"
+    end
+
+    def gravatar_hash(email_address)
+      hash = Digest::MD5.hexdigest(email_address.downcase.gsub(/\s+/, ""))
+    end
+
+    def gravatar_config
+      return @gravatar_config if @gravatar_config
+
+      @gravatar_config = Jekyll.configuration({})['gravatar'] || {}
+
+      unless @gravatar_config.empty?
+        mode_config = (@gravatar_mode and @gravatar_config[@gravatar_mode]) ? @gravatar_config[@gravatar_mode] : @gravatar_config
+        @gravatar_config = @gravatar_config.merge mode_config
+      end
+      @gravatar_config
+    end
+
+    def gravatar_options
+      opts = []
+      opts.push "s=#{gravatar_config['size']}" if gravatar_config["size"]
+      opts.push "r=#{gravatar_config['rating']}" if gravatar_config["rating"]
+      opts.push "d=#{gravatar_config['default_image']}" if gravatar_config["default_image"]
+      opts.push "f=#{gravatar_config['force']}" if gravatar_config['force']
+      opts
+    end
+  end
+end
+Liquid::Template.register_filter(Jekyll::GravatarFilter)

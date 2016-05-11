@@ -1,12 +1,11 @@
 ---
 layout: post
-title: "Crank Up App Security With Multi-Factor Authentication"
-date: 2013-03-01 06:59
+title: Crank Up App Security With Multi-Factor Authentication
+date: '2013-03-01 06:59'
 comments: true
 author: Major Hayden
-categories: 
-- Security
-- Authentication
+categories:
+  - Security
 ---
 {% img right 2013-03-01-crank-up-app-security/lockkey.png %}
 

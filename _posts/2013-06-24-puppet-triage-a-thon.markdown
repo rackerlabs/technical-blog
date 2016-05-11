@@ -1,12 +1,12 @@
 ---
 layout: post
 title: "Squash Bugs at Puppet's Triage-a-Thon 2013"
-date: 2013-06-24 09:33
+date: '2013-06-24 09:33'
 comments: true
 author: Hart Hoover
 published: true
-categories: 
-- Puppet
+categories:
+  - Puppet
 ---
 {% img right 2013-06-24-puppet-triage/puppet_logo.png %}
 If you are interested in contributing to [Puppet][1], the upcoming "Triage-a-Thon" will be a great chance! Puppet Labs is throwing a bug squashing party on July 13th at their headquarters in Portland. Goals for the event:

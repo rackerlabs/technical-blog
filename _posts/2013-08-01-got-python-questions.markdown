@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Got Python Questions? Ask Our Experts In The Rackspace Community"
-date: 2013-08-01 08:00
+title: Got Python Questions? Ask Our Experts In The Rackspace Community
+date: '2013-08-01 08:00'
 comments: true
 author: Pat Reynolds
 published: true
-categories: 
-- Python
+categories:
+  - Python
 ---
 EDITOR’S NOTE: Update: We got some great feedback about the first AMA with Jesse, so we’re moving the discussion space for Alex’s AMA from the Community to <http://reddit.com/r/rackspace> – that way it will be easier to follow the conversation and replies. In addition, we’re tightening up the timeframe – the AMA will happen on Tuesday ONLY, and not Tuesday through Thursday as originally planned. Finally, some of the other devs who work with Alex will be lending a helping hand, so there will be plenty of developer experience on tap for everyone! Hope to see you all there next Tuesday!
 

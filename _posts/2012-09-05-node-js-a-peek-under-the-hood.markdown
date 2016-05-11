@@ -1,12 +1,12 @@
 ---
 comments: true
 sharing: true
-date: 2012-09-05 08:00:22
+date: 2012-09-05T08:00:22.000Z
 layout: post
 title: node.js - a peek under the hood
 author: Wayne Walls
 categories:
-- Cloud Servers
+  - Cloud Servers
 ---
 
 Greetings, friends! Today I want to touch on a "fairly" new programming language, Node.js. In this case, "fairly new" means it was created in 2009. [Ryan Dahl](https://twitter.com/ryah) created Node.js because he desired the ability to make web sites with push capabilities like those seen in popular web applications like Gmail. So what is Node.js, exactly? Node.js is a framework for building networked applications in JavaScript outside of the browser. It leverages [V8](http://code.google.com/p/v8/), the super fast JavaScript engine by Google. JavaScript is a great fit for writing servers due to its event-driven nature. You not only benefit from the speed of V8, but most of the time, the Node.js/JavaScript paradigms make you write code that is fast by design.

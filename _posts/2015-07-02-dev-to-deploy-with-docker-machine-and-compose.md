@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "From Local Development to Remote Deployment with Docker Machine and Compose"
-date: 2015-07-02 14:00
+title: From Local Development to Remote Deployment with Docker Machine and Compose
+date: '2015-07-02 14:00'
 comments: true
 author: Everett Toews
 published: true
@@ -126,7 +126,7 @@ docker-machine ssh guestbook "ufw --force enable"
 
 ### Continue to Initialize the Environment
 
-Before we have Docker Compose build out our remote deployment, we need to set some environment variables for our database. We do this to prevent ourselves from committing sensitive data to GitHub.
+Before we have Docker Compose build out our remote deployment, we need to set some environment variables for our database. These environment variables are used by the docker-compose-prod.yml file. We do this to prevent ourselves from committing sensitive data to GitHub.
 
 ```bash
 export MYSQL_USER=guestbook-admin

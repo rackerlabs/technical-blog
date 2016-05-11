@@ -1,21 +1,14 @@
 ---
 layout: post
-title: "OpenStack Orchestration In Depth, Part I: Introduction to Heat"
-date: 2014-11-07 07:15
+title: 'OpenStack Orchestration In Depth, Part I: Introduction to Heat'
+date: '2014-11-07 07:15'
 comments: true
 author: Miguel Grinberg
 published: true
 categories:
   - rackspace-private-cloud
   - Orchestration
-  - openstack-heat
-bio:
-  Miguel Grinberg is a software engineer with a background in web technologies and REST APIs.
-  He is the author of the book "Flask Web Development" from O'Reilly Media, and has a blog at
-  http://blog.miguelgrinberg.com, where he writes about a variety of topics including web
-  development, robotics, photography and the occasional movie review. Miguel works as a
-  Software Developer with the Rackspace Private Cloud team. He lives in Portland,
-  Oregon with his wife, four kids, two dogs and a cat. Follow @miguelgrinberg on Twitter.
+bio: "Miguel Grinberg is a software engineer with a background in web technologies and REST APIs. He is the author of the book \"Flask Web Development\" from O'Reilly Media, and has a blog at http://blog.miguelgrinberg.com, where he writes about a variety of topics including web development, robotics, photography and the occasional movie review. Miguel works as a Software Developer with the Rackspace Private Cloud team. He lives in Portland, Oregon with his wife, four kids, two dogs and a cat. Follow @miguelgrinberg on Twitter."
 ---
 
 With this article I begin a series of hands-on developer oriented blog posts that

@@ -1,15 +1,13 @@
 ---
 layout: post
-title: "Elasticsearch Autodiscovery on the Rackspace Cloud"
-date: 2014-03-18 13:30
+title: Elasticsearch Autodiscovery on the Rackspace Cloud
+date: '2014-03-18 13:30'
 comments: true
 author: Ryan Richard
 published: true
 categories:
- - Elasticsearch
- - Chef
- - Autodiscovery
- - DevOps
+  - Chef
+  - DevOps
 ---
 
 

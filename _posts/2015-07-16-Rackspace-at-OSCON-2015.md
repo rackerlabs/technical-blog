@@ -1,14 +1,11 @@
 ---
 layout: post
-title: "Rackspace at OSCON 2015"
-date: 2015-07-16 13:00
+title: Rackspace at OSCON 2015
+date: '2015-07-16 13:00'
 comments: true
 author: Brian Curtin
 published: true
-categories:
-    - conferences
-    - OSCON
-
+categories: []
 ---
 
 Next week kicks off the 16th [OSCON](http://www.oscon.com/open-source-2015), an annual conference bringing together the free and open source software world, and Rackspace is a proud Silver Sponsor. Starting July 20 and running through July 24, technologists from around the globe descend on Portland, Oregon for a week of tutorials, talks, keynotes, an expo hall, and more, with Rackers taking part in all of it.

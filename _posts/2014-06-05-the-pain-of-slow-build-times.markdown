@@ -1,14 +1,12 @@
 ---
 layout: post
-title: "The Pain of Slow Build Times"
-date: 2014-06-05 11:54
+title: The Pain of Slow Build Times
+date: '2014-06-05 11:54'
 comments: true
 author: Matt Barlow
 published: true
 categories:
- - Rails
- - NodeJS
- - Build Times
+  - NodeJS
 ---
 
 The other day I was working on a Ruby on Rails cookbook. I used the

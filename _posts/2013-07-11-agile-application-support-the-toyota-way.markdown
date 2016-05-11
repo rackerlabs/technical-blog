@@ -1,14 +1,11 @@
 ---
 layout: post
-title: "Agile Application Support - The Toyota Way"
-date: 2013-07-11 11:14
+title: Agile Application Support - The Toyota Way
+date: '2013-07-11 11:14'
 comments: true
 author: Kyle Claypool
 published: true
-categories:
-- Agile
-- Scrum
-- Lean
+categories: []
 ---
 Agile. Scrum. Extreme programming. RAD. Lean. These terms all represent a departure from the traditional Waterfall development process in favor of a more rapid, iterative approach to application development. For companies with large-scale web applications, there are significant benefits to the agile methodology, but it also presents significant challenges. 
 

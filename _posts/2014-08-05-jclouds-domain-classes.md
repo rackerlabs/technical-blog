@@ -1,16 +1,20 @@
 ---
 layout: post
-title: "Better Builders with jclouds"
-date: 2014-08-05 23:59
+title: Better Builders with jclouds
+date: '2014-08-05 23:59'
 comments: true
 author: Zack Shoylev
 published: true
 categories:
-    - jclouds
-    - development
-    - sdk
-bio: |
- Zack Shoylev is a committer on the Apache jclouds project and a Software Developer for Rackspace. He is currently working on   open source cloud SDK development. Zack’s technical interests focus on open source development, cloud computing, and big data  processing with Java. Zack's twitter handle: @zackshoylev and Freenode nick: zacksh
+  - jclouds
+  - developers
+  - sdk
+bio: >
+  Zack Shoylev is a committer on the Apache jclouds project and a Software
+  Developer for Rackspace. He is currently working on   open source cloud SDK
+  development. Zack’s technical interests focus on open source development, cloud
+  computing, and big data  processing with Java. Zack's twitter handle:
+  @zackshoylev and Freenode nick: zacksh
 ---
 # Better Builders with jclouds
 
@@ -24,26 +28,26 @@ For example, when listing database users in openstack-trove (the OpenStack datab
     "users": [
         {
             "databases": [],
-            "host": "%", 
+            "host": "%",
             "name": "dbuser1"
-        }, 
+        },
         {
             "databases": [
                 {
                     "name": "databaseB"
-                }, 
+                },
                 {
                     "name": "databaseC"
                 }
             ],
             "host": "%",
             "name": "dbuser2"
-        }, 
+        },
         {
-            "databases": [], 
+            "databases": [],
             "name": "dbuser3",
             "host": "%"
-        }, 
+        },
         {
             "databases": [
                 {
@@ -57,7 +61,7 @@ For example, when listing database users in openstack-trove (the OpenStack datab
 }
 {% endhighlight %}
 
-To parse the response, jclouds uses [domain classes](https://github.com/jclouds/jclouds/blob/master/apis/openstack-trove/src/main/java/org/jclouds/openstack/trove/v1/domain/User.java) to represent the JSON data returned by the service. The array of "users" is unwrapped into individual User domain objects. Conversely, when creating users, domain objects are transformed into a JSON request body. 
+To parse the response, jclouds uses [domain classes](https://github.com/jclouds/jclouds/blob/master/apis/openstack-trove/src/main/java/org/jclouds/openstack/trove/v1/domain/User.java) to represent the JSON data returned by the service. The array of "users" is unwrapped into individual User domain objects. Conversely, when creating users, domain objects are transformed into a JSON request body.
 
 Because of the relative simplicity of user creation in trove, jclouds developers can use a create method in the features package without having to build an instance of the User class. For example, the developer might use a method such as
 
@@ -92,7 +96,7 @@ Many of the JSON attributes in Neutron are optional. GSON's jclouds configuratio
 
 To ensure immutability, users have no access to a constructor or setters, and instead they must instantiate domain objects by using a slightly modified Builder pattern. The builder pattern also provides proper validation and user-friendliness.
 
-Some [simpler classes](https://github.com/jclouds/jclouds-labs-openstack/blob/master/openstack-neutron/src/main/java/org/jclouds/openstack/neutron/v2/domain/AddressPair.java) implement the regular fluent builder pattern. 
+Some [simpler classes](https://github.com/jclouds/jclouds-labs-openstack/blob/master/openstack-neutron/src/main/java/org/jclouds/openstack/neutron/v2/domain/AddressPair.java) implement the regular fluent builder pattern.
 
 In [other cases](https://github.com/jclouds/jclouds-labs-openstack/blob/master/openstack-neutron/src/main/java/org/jclouds/openstack/neutron/v2/features/NetworkApi.java), the same domain class has several different purposes, such as making sure users have different Network-subtype object instances for updating, creating, and listing networks:
 

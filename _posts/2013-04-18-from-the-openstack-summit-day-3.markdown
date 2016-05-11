@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "From the OpenStack Summit: Day 3"
-date: 2013-04-18 10:52
+title: 'From the OpenStack Summit: Day 3'
+date: '2013-04-18 10:52'
 comments: true
 author: Hart Hoover
 published: true
 categories:
-- OpenStack
+  - OpenStack
 ---
 Day three was great, just like day one and day two before! I'd like to continue this series of posts by highlighting two sessions from the OpenStack Summit in Portland:
 

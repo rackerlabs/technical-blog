@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Python magic and remote APIs"
-date: 2013-02-18 08:00
+title: Python magic and remote APIs
+date: '2013-02-18 08:00'
 comments: true
 author: Jesse Keating
-categories: 
-- Python
-- Developer
+categories:
+  - Python
+  - Developers
 ---
 _This is a guest post by Jesse Keating, a Racker working on DevOps for Rackspace's Cloud Server products. You can read his blog at [http://raxcloud.blogspot.com/](http://raxcloud.blogspot.com) or follow _[@iamjkeating](http://twitter.com/iamjkeating)_ on Twitter._
 
@@ -69,7 +69,7 @@ then be used in later functions, like a login or query function.
             self.SessURL = self.API + 'session/'
             self.QAPI = self.API + 'query/'
             self._session = None
-        
+
         def _login(self):
             username = myuser
             password = mypass
@@ -77,7 +77,7 @@ then be used in later functions, like a login or query function.
             data = {'password': password}
             r = requests.get('%sauth/%s' % (self.API, username), params=data)
             return r.json()
-            
+
         @property
         def session(self):
             if not self._session:
@@ -124,7 +124,7 @@ With this structure we can do things like:
 ```python
     cserv = CServ()
     cserv.query('Computer.Computer', 432807, attributes=['name'])
-      [{u'count': 1, u'load_arg': 432807, u'limit': 1, u'result': 
+      [{u'count': 1, u'load_arg': 432807, u'limit': 1, u'result':
 
       [{u'name': u'silly.hostname.here.com'}], u'offset': 0,
 
@@ -213,7 +213,7 @@ now in the base class, lets create a Computer class.
             self.number = number
             self._qval = self.number
 
-            super(Computer, self).__init__() 
+            super(Computer, self).__init__()
 ```
 
 That's all there is to it.  `_qclass` is defined as a class attribute, it

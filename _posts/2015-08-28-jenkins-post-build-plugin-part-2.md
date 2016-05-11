@@ -1,13 +1,12 @@
 ---
 layout: post
-title: "Jenkins Post-build Plugin Part 2"
-date: 2015-08-28 14:00
+title: Jenkins Post-build Plugin Part 2
+date: '2015-08-28 14:00'
 comments: true
 author: Priti Changlani
 published: true
 categories:
-    - jenkins
-    - plugin
+  - jenkins
 ---
 Welcome to part 2 of Jenkins Post-build Plugin development tutorial. This post talks in detail about the plugin 
 project entities and their interactions with each other. To brush up on the previous post, please visit [Jenkins 

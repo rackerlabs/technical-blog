@@ -1,12 +1,12 @@
 ---
 comments: true
 sharing: true
-date: 2012-08-28 08:52:28
+date: 2012-08-28T08:52:28.000Z
 layout: post
 author: Hart Hoover
-title: Welcome, Mailgun!
+title: 'Welcome, Mailgun!'
 categories:
-- Mailgun
+  - Mailgun
 ---
 
 

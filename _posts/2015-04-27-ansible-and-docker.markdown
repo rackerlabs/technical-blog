@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Ansible and Docker
-date: 2015-04-27 10:00
+date: '2015-04-27 10:00'
 comments: true
 author: Ash Wilson
 published: true
 categories:
-- ansible
-- docker
+  - ansible
+  - docker
 ---
 
 At first glance, [Ansible](http://www.ansible.com/) and [Docker](https://www.docker.com/) seem to be redundant. Both offer solutions to the configuration management problem through very different means, enabling you to reliably and repeatably manage complicated software deployments. While you certainly can use either on its own with great success, using both together can result in a fast, clean deployment process.

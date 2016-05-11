@@ -1,14 +1,12 @@
 ---
 layout: post
-title: "The Rackspace Robot Ticket Contest"
-date: 2013-10-17 10:23
+title: The Rackspace Robot Ticket Contest
+date: '2013-10-17 10:23'
 comments: true
 author: Jesse Noller
 published: true
 categories:
-    robots
-    developers
-    contests
+  - developers
 ---
 
 {% img 2013-10-17-the-rackspace-robot-ticket-contest/robotsconflogo.png 'RobotsConf' 'RobotsConf' %}

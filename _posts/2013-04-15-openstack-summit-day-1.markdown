@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "From the OpenStack Summit: Day 1"
-date: 2013-04-15 18:57
+title: 'From the OpenStack Summit: Day 1'
+date: '2013-04-15 18:57'
 comments: true
 author: Hart Hoover
 published: true
-categories: 
-- OpenStack
+categories:
+  - OpenStack
 ---
 Greetings from the OpenStack Summit! A lot happened in the world of OpenStack today. For a recap of all of the news, check out [Niki Acosta](https://twitter.com/nikiacosta)'s [blog post](http://www.rackspace.com/blog/openstack-summit-portland-day-1-recap/) on the Rackspace Blog. Read on for a recap of some sessions I attended today! <!-- more -->
 

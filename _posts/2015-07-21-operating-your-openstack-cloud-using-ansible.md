@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "Operating Your OpenStack Cloud using Ansible"
-date: 2015-07-21 09:00
+title: Operating Your OpenStack Cloud using Ansible
+date: '2015-07-21 09:00'
 comments: true
 author: Walter Bentley
 published: true
 categories:
-    - rackspace-private-cloud
-    - OSAD
-    - OpenStack
-    - Ansible
+  - rackspace-private-cloud
+  - OSAD
+  - OpenStack
+  - Ansible
 ---
 
 So you have spent months convincing your leadership to go with OpenStack.  Finally the keys of the cloud are turned over to you as the Cloud Operator, and you then look over at your co-workers and say “now what”.  The next set of phrases normally are something like: Now how do we best administer this cloud?  Cloud is suppose to be easier, right?

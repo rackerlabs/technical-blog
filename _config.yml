@@ -28,6 +28,11 @@ assets:
   css_compressor: ~
   gzip: false
 
+collections:
+  events:
+    output: true
+    permalink: /events/:title/
+
 # Blog categories
 category_dir: blog/categories
 author_dir: blog/authors
