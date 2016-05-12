@@ -24,7 +24,7 @@ First, stop the running keystone and apache services:
 
     service apache2 stop
     service keystone stop
-    systenctl disable apache2.service
+    systemctl disable apache2.service
 
 Apache uses wsgi, however NGINX has no direct wsgi support. Instead there are several projects that bring wsgi functionality to NGINX. We will use the uwsgi packages provided by Ubuntu. Install the NGINX server and other required packages:
 
