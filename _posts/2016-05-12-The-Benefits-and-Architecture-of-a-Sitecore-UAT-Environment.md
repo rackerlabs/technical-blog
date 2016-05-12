@@ -2,7 +2,7 @@
 layout: post
 title: "The Benefits and Architecture of a Sitecore UAT Environment"
 date: 2016-05-12 00:00
-comments: false
+comments: true
 author: Kelly Rusk
 authorIsRacker: true
 published: true
