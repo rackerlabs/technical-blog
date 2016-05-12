@@ -14,7 +14,7 @@ Where do you conduct your User Acceptance Testing (UAT) activities? It's a loade
 
 <!-- more -->
 
-# What is/What isn't User Acceptance Testing
+## What is/What isn't User Acceptance Testing
 
 User Acceptance Testing is intended to be conducted on a production deployable Sitecore site to ensure it meets business requirements. It should not be aimed at defect/bug identification and remediation, but rather validation that the solution built meets the established requirements. To be clear on this point, any bug found during UAT indicates a failure in Unit, Integration, and System testing. Rather than push through "UAT" by patching defects/bugs, UAT should be stopped once the defects/bugs are collected and pushed back to development for resolution and review through the Unit, Integration, and System testing stages prior to re-conducting UAT. While this may seem extreme, failed code will continue to stack and turn UAT into a nightmare for testers, prolonging what should be a solution check into day or even week long session bug hunting instead of reviewing functionality to ensure it meets the usability goals of the system.
 
@@ -38,7 +38,7 @@ Where UAT occurs is just as critical as how it is conducted. Across the spectrum
 
 Per managing the actual UAT environment, it should be cared for with the same level of focus as Production. This may include leveraging consolidated monitoring so UAT can be carefully analyzed, benchmarked, and compared the same way one might monitor a Production site as this will quickly uncover development issues.
 
-# Common Challenges
+## Common Challenges
 
 Obtaining and maintaining a strong UAT environment is not without its challenges. Fortunately, most of these come down to "simple blocking and tackling" to ensure a "One to One" of UAT and Production. Others are more complex, such as stakeholder buy-in to construct the UAT environment. Common challenges include and are not limited to:
 
@@ -72,7 +72,7 @@ Successful UAT is part infrastructure, part governance. Creating a repeatable an
 
 9. Sign off on the UAT and deploy to Production
 
-# Example UAT Environment and Refresh Process
+## Example UAT Environment and Refresh Process
 
 The following offers a sample UAT environment that highlights the data connections and flows across a multi-region Sitecore Farm that mirrors a Production environment in its architecture. Of note is that content is refreshed via the Production Master database over the UAT Master database (we will explore options to perform this momentarily), it assumes connections to external APIs that are dedicated to UAT, and that it is using Sitecore xDB functionality with [ObjectRocket](http://objectrocket.com/) as the MongoDB backend.
 
@@ -95,7 +95,7 @@ Cost effective tool to compare and merge Sitecore databases, inclusive of schedu
 
 4. Verify that any external connections, such as the .config files tied to APIs and ObjectRocket are targeted to UAT. In normal practice, your UAT build would have the connections targeted for UAT, while the Production build has connections targeted to Production
 
-# It's Never Too Late to Establish a UAT Environment
+## It's Never Too Late to Establish a UAT Environment
 
 So when is the right time to establish a fortified and governed UAT environment? The answer is now, not later, and you are not too late! Start by creating a roadmap that clearly details the business benefits, architecture, and proposed plan for managing UAT Testing in your dedicated UAT environment. In the very least you will have a strong business case to take to your stakeholders with the aim of moving your organization further down the DevOps path towards Continuous Deployment.
 
