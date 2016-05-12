@@ -215,7 +215,7 @@ curves in different forms. For example, for a curve in short Weierstrass form
 j(E) = (1728 * 4a^3)/(4a^3 + 27b^2)
 ```
 
-The j-invariant has a few cool properties: for example, while this is the
+The j-invariant has a few cool properties. For example, while this is the
 formula for the short Weierstrass form, the value of j doesn't change if you
 put the same curve in a different form. Also, all curves with the same
 j-invariant are isomorphic. However, for SIDH you don't really care about
