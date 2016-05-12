@@ -61,8 +61,8 @@ In this table, n refers to the modulus size for RSA, and the field size for
 ECC. Look at the rightmost column, which represents time taken by the
 classical algorithm, and compare it to the "time" columns, which represent how
 much a quantum computer would take. As *n* increases, the amount of time the
-quantum computer would take stays in the same ballpark, whereas for a
-classical computer it increases (almost) exponentially. Therefore, increasing
+quantum computer would take stays in the same ballpark, whereas, for a
+classical computer, it increases (almost) exponentially. Therefore, increasing
 n is an effective strategy for keeping up with ever-faster classical
 computers, but it is ineffective at increasing the run time for a quantum
 computer.
