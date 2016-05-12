@@ -14,7 +14,7 @@ Craig Costello, Patrick Longa and Michael Naehrig, three cryptographers at
 Microsoft Research, recently published a [paper][costello] on supersingular
 isogeny Diffie-Hellman. This paper garnered a lot of interest in the security
 community and even made it to the front page of Hacker News. Most of the
-discussion around it seemed to be how no-one understands isogenies, even
+discussion around it seemed to be how no one understands isogenies, even
 within cryptography-literate communities. This article aims to give you a
 high-level understanding of what this cryptosystem is and why it works.
 
