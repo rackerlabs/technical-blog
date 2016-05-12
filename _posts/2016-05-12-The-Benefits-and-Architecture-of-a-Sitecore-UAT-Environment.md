@@ -1,6 +1,18 @@
-# The Benefits and Architecture of a Sitecore UAT Environment
+---
+layout: post
+title: "The Benefits and Architecture of a Sitecore UAT Environment"
+date: 2016-05-12 00:00
+comments: false
+author: Kelly Rusk
+authorIsRacker: true
+published: true
+categories:
+    - Devops
+---
 
 Where do you conduct your User Acceptance Testing (UAT) activities? It's a loaded question that many organizations have challenges addressing as they first need to obtain a clear definition of what UAT is and what it isn't before they even consider where UAT activities should occur. The benefits of a properly instituted UAT environment far outweigh the challenges, and danger of not having one, but success requires a thoughtful and purposeful approach.
+
+<!-- more -->
 
 # What is/What isn't User Acceptance Testing
 
