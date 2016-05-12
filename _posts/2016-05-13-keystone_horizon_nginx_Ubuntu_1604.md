@@ -13,7 +13,7 @@ categories:
 Run OpenStack Keystone and Horizon using NGINX on Ubuntu 16.04
 ==============================================================
 
-I have previously wrote an article showing how to [convert OpenStack from using an Apache server for both Keystone and the Horizon interface](https://developer.rackspace.com/blog/keystone_horizon_nginx/). Since that article was written, OpenStack has moved to the Mitaka release, and Unbuntu has moved to a new long term release "Ubuntu 16.04 - xenial". These two releases bring a number of changes to the configuration. In this article, I show you how to make the transition to ngix running these newer releases.
+I previously wrote an article showing how to [convert OpenStack from using an Apache server for both Keystone and the Horizon interface](https://developer.rackspace.com/blog/keystone_horizon_nginx/). Since that article was written, OpenStack has moved to the Mitaka release, and Unbuntu has moved to a new long term release "Ubuntu 16.04 - xenial". These two releases bring a number of changes to the configuration. In this article, I show you how to make the transition to ngix running these newer releases.
 <!-- more -->
 
 
