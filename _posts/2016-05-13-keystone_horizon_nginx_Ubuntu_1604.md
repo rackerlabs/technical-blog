@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Run keystone/horizon under nginx on Ubuntu 16.04"
+title: "Run keystone/horizon under NGINX on Ubuntu 16.04"
 date: 2016-05-13 07:00
 comments: true
 author: Phil Hopkins
@@ -11,7 +11,7 @@ categories:
     - NGINX
 ---
 
-Run OpenStack Keystone and Horizon using Nginx on Ubuntu 16.04
+Run OpenStack Keystone and Horizon using NGINX on Ubuntu 16.04
 ==============================================================
 
 I have previously wrote an article showing how to [convert OpenStack from using an Apache server for both Keystone and the Horizon interface](https://developer.rackspace.com/blog/keystone_horizon_nginx/). Since that article was written, OpenStack has moved to the Mitaka release, and Unbuntu has moved to a new long term release "Ubuntu 16.04 - xenial". These two releases bring a number of changes to the configuration. In this article, I show you how to make the transition to ngix running these newer releases.
@@ -27,7 +27,7 @@ First, stop the running keystone and apache services:
     service keystone stop
     systenctl disable apache2.service
 
-Apache uses wsgi, however nginx has no direct wsgi support. Instead there are several projects that bring wsgi functionality to nginx. We will use the uwsgi packages provided by Ubuntu. Install the nginx server and other required packages:
+Apache uses wsgi, however NGINX has no direct wsgi support. Instead there are several projects that bring wsgi functionality to NGINX. We will use the uwsgi packages provided by Ubuntu. Install the NGINX server and other required packages:
 
     apt-get install -y nginx libgd-tools nginx-doc python-django-uwsgi uwsgi uwsgi-core uwsgi-emperor uwsgi-plugin-python
     
@@ -40,11 +40,11 @@ Since keystone and horizon run behind the uwsgi service, disable these services 
     systemctl disable keystone
     systemctl disable horizon
     
-We are not running a simple web server, so disable the default site that comes with the nginx install:
+We are not running a simple web server, so disable the default site that comes with the NGINX install:
     
     rm /etc/nginx/sites-enabled/default
     
-Make a log directory for keystone and horizon under nginx, and set the proper permissions:
+Make a log directory for keystone and horizon under NGINX, and set the proper permissions:
 (in this configuration, nginx will run as the www-data user, the uwsgi keystone process runs as the keystone user and the horizon (django) uwsgi runs process as the horizon user) 
     
     mkdir /var/log/nginx/keystone
