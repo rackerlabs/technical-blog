@@ -185,7 +185,7 @@ another that preserves base points. That means it takes points on one curve
 and returns points on the other curve. Every point on the input curve will map
 to a point on the output curve; but multiple points may map to the same
 point. Formally speaking, the isogeny is surjective. An isogeny is also a
-homomorphism, that is, it preserves the structure of the curve. For any two
+homomorphism. That is, it preserves the structure of the curve. For any two
 points P and Q, `phi(P + Q) = phi(P) + phi(Q)`.
 
 We have a bunch of formulas for generating isogenies from a curve and a
