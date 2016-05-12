@@ -112,10 +112,11 @@ start using it right now?**
 
 SIDH is a young cryptosystem in a young field, and hasn't had the same level
 of scrutiny as some of the other post-quantum cryptosystems, let alone the
-"regular" cryptosystems we use daily. Attacks only get better, they never get
-worse. It's possible that SIDH is insecure and we just don't know how to break
-it yet. It does have a good argument for why quantum algorithms wouldn't be
-able to crack it (more on that later), but that's a hypothesis, not a proof.
+"regular" cryptosystems we use daily. Attacks only get better — they never
+get worse. It's possible that SIDH is insecure, and we just don't know how to
+break it yet. It does have a good argument for why quantum algorithms wouldn't
+be able to crack it (more on that later), but that's a hypothesis, not a
+proof.
 
 The new performance figures from this paper are impressive, but this system is
 still much slower than the ones we use today. Key generation and key exchange
