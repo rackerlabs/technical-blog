@@ -14,11 +14,11 @@ categories:
 Run OpenStack Keystone and Horizon using Nginx on Ubuntu 16.04
 ==============================================================
 
-I have previously written an article showing how to [convert OpenStack from using an Apache server for both Keystone and the Horizon interface](https://developer.rackspace.com/blog/keystone_horizon_nginx/). Since that article was written OpenStack has moved to the Mitaka release and Unbuntu has moved to a new long term release "Ubuntu 16.04 - xenial" These two releases bring a number of changes to the configuration. This article shows you how to make the transition to ngix running these newer releases.
+I have previously wrote an article showing how to [convert OpenStack from using an Apache server for both Keystone and the Horizon interface](https://developer.rackspace.com/blog/keystone_horizon_nginx/). Since that article was written, OpenStack has moved to the Mitaka release, and Unbuntu has moved to a new long term release "Ubuntu 16.04 - xenial". These two releases bring a number of changes to the configuration. In this article, I show you how to make the transition to ngix running these newer releases.
 <!-- more -->
 
 
-The article assumes you have a working OpenStack environment running the Mitaka release on Ubuntu 16.04. All work will be performed on the controller node for those using a multi-node OpenStack cluster.
+The article assumes you have a working OpenStack cluster, running the Mitaka release on Ubuntu 16.04. All work will be performed on the controller node for those developers using a multi-node OpenStack cluster.
  
 
 First, stop the running keystone and apache services:
@@ -27,7 +27,7 @@ First, stop the running keystone and apache services:
     service keystone stop
     systenctl disable apache2.service
 
-Apache uses wsgi, however nginx has no direct wsgi support, instead there are several projects that bring wsgi functionality to nginx. We will use the uwsgi packages provided by Ubuntu. Install the nginx server and other required packages:
+Apache uses wsgi, however nginx has no direct wsgi support. Instead there are several projects that bring wsgi functionality to nginx. We will use the uwsgi packages provided by Ubuntu. Install the nginx server and other required packages:
 
     apt-get install -y nginx libgd-tools nginx-doc python-django-uwsgi uwsgi uwsgi-core uwsgi-emperor uwsgi-plugin-python
     
@@ -35,7 +35,7 @@ Since Ubuntu usually starts services when the package is installed, stop the ngi
 
     service nginx stop
 
-Since keystone and horizon run behind the uwsgi service, disable these services so the don't start as systemd services:
+Since keystone and horizon run behind the uwsgi service, disable these services so they don't start as systemd services:
 
     systemctl disable keystone
     systemctl disable horizon
@@ -45,7 +45,7 @@ We are not running a simple web server, so disable the default site that comes w
     rm /etc/nginx/sites-enabled/default
     
 Make a log directory for keystone and horizon under nginx, and set the proper permissions:
-(in this configuration nginx will run as the www-data user, the uwsgi keystone process as the keystone user and the horizon (django) uwsgi process as the horizon user) 
+(in this configuration, nginx will run as the www-data user, the uwsgi keystone process runs as the keystone user and the horizon (django) uwsgi runs process as the horizon user) 
     
     mkdir /var/log/nginx/keystone
     mkdir /var/log/nginx/horizon
@@ -64,7 +64,7 @@ and a base directory for the keystone wsgi python script:
 
     mkdir /var/www/keystone
     
-Keystone comes with a python script for interfacing to servers running a wsgi interface. Keystone listens on two tcp ports, one for processing admin level requests and one for requests that don't need admin level permissions. If you installed keystone from the Ubuntu package tree this file was not included the the keystone packages. You will need to download it, otherwise if you did a source install you can copy it over into the web directory for nginx. One copy is used to handle requests that need the keystone admin role and the other is for non-admin requests.
+Keystone comes with a python script for interfacing to servers running a wsgi interface. Keystone listens on two tcp ports, one for processing admin level requests and one for requests that don't need admin level permissions. If you installed keystone from the Ubuntu package tree, this file was not included the the keystone packages. You will need to download it. For those having installed OpenStack from source, you will need to just copy the file as shown below. One copy will be used to handle requests that need the keystone admin role and the other copy is for non-admin requests.
 
 To download it use:
 
@@ -107,7 +107,7 @@ uwsgi has a broad set of configuration parameters. We are only going to set a mi
     EOF
 
     
-Next create the needed uwsgi configuration file for running keystone non-admin requests:
+Next, create the needed uwsgi configuration file for running keystone non-admin requests:
     
     cat >> /etc/uwsgi-emperor/vassals/keystone-main.ini << EOF
     [uwsgi]
@@ -131,7 +131,7 @@ Next create the needed uwsgi configuration file for running keystone non-admin r
     wsgi-file = /var/www/keystone/main
     EOF
 
-Lastly to finish the uwsgi configuration create the needed uwsgi configuration file for running horizon:
+Lastly, to finish the uwsgi configuration create the needed uwsgi configuration file for running horizon:
     
     cat >> /etc/uwsgi-emperor/vassals/horizon.ini << EOF
     [uwsgi]
@@ -156,19 +156,19 @@ Lastly to finish the uwsgi configuration create the needed uwsgi configuration f
     wsgi-file = /var/www/wsgi/horizon.wsgi
     EOF
 
-The nginx and uwsgi processes need to talk to each other, we will be using Unix sockets, as they don't require the overhead of TCP sockets and are faster. Create the directories for the sockets and set the permissions for the directories:
+The nginx and uwsgi processes need to talk to each other. Therefore we will use Unix sockets, becasue they don't require the overhead of TCP sockets and are faster. Create the directories for the sockets, and set the permissions for the directories:
 
     mkdir /run/uwsgi
     mkdir /run/uwsgi-horizon
     chown keystone:www-data /run/uwsgi
     chown horizon:www-data /run/uwsgi-horizon
 
-Lastly we want to set the user and group for the various uwsgi processes within the individual, so we need to remove this from the emperor configuration file:
+Lastly, we want to set the user and group for the various uwsgi processes within the individual, so we need to remove this from the emperor configuration file:
 
     sed -i 's/uid = www-data/#uid = www-data/g' /etc/uwsgi-emperor/emperor.ini
     sed -i 's/gid = www-data/#gid = www-data/g' /etc/uwsgi-emperor/emperor.ini
 
-Create the nginx configuration file for keystone, remember that keystone listens on ports 5000 for normal requests and 35357 for admin requests, so we will need server entries for each port in nginx:
+Create the nginx configuration file for keystone. Remember that keystone listens on ports 5000 for normal requests and 35357 for admin requests, so we will need server entries for each port in nginx:
     
     cat >> /etc/nginx/sites-available/keystone.conf << EOF
     server {
