@@ -8,7 +8,6 @@ published: true
 categories:
     - OpenStack
     - OSAD
-    - NGINX
 ---
 
 Run OpenStack Keystone and Horizon using NGINX on Ubuntu 16.04
