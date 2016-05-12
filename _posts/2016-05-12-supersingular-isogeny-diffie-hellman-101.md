@@ -7,7 +7,6 @@ author: lvh
 published: true
 categories:
     - security
-    - cryptography
 ---
 
 Craig Costello, Patrick Longa and Michael Naehrig, three cryptographers at
@@ -238,7 +237,7 @@ R_A = n_A * P_A + m_A * Q_A
 That random point defines Alice's secret isogeny through the isogeny formulas
 I talked about above. The codomain of that isogeny forms Alice's public
 curve. Alice transforms points P_B and Q_B with the isogeny. She sends Bob her
-public curve, and the two transformed points.
+public curve and the two transformed points.
 
 Bob does the same thing, except with A and B swapped.
 
