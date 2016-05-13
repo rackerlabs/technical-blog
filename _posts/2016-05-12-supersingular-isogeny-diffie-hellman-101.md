@@ -57,8 +57,7 @@ factoring large numbers (like RSA), taking discrete logs over the integers
 *mod p* (like regular DH), or taking discrete logs over elliptic curves (like
 ECDH and ECDSA). To quantify that, consider the following table:
 
-![quantum computer attack cost versus classical][qcost]
-[qcost]: /img/post-quantum/quantum-computer-relative-cost.png
+![quantum computer attack cost versus classical]({% asset_path 2016-05-12-supersingular-isogeny-diffie-hellman-101/quantum-computer-relative-cost.png %})
 
 In this table, n refers to the modulus size for RSA, and the field size for
 ECC. Look at the rightmost column, which represents time taken by the
