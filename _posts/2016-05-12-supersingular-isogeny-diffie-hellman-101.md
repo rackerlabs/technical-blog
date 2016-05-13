@@ -5,6 +5,7 @@ date: 2016-05-12 12:15
 comments: false
 author: lvh
 published: true
+authorIsRacker: true
 categories:
     - security
 ---
@@ -16,6 +17,8 @@ community and even made it to the front page of Hacker News. Most of the
 discussion around it seemed to be how no one understands isogenies, even
 within cryptography-literate communities. This article aims to give you a
 high-level understanding of what this cryptosystem is and why it works.
+
+<!-- more -->
 
 This post assumes that you already know how Diffie-Hellman works in the
 abstract, and that you know elliptic curves are a mathematical construct that
