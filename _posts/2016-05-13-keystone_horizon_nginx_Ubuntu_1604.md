@@ -14,11 +14,12 @@ Run OpenStack Keystone and Horizon using NGINX on Ubuntu 16.04
 ==============================================================
 
 I previously wrote an article showing how to [convert OpenStack from using an Apache server for both Keystone and the Horizon interface](https://developer.rackspace.com/blog/keystone_horizon_nginx/). Since that article was written, OpenStack has moved to the Mitaka release, and Unbuntu has moved to a new long term release "Ubuntu 16.04 - xenial". These two releases bring a number of changes to the configuration. In this article, I show you how to make the transition to ngix running these newer releases.
+
 <!-- more -->
 
 
 The article assumes you have a working OpenStack cluster, running the Mitaka release on Ubuntu 16.04. All work will be performed on the controller node for those developers using a multi-node OpenStack cluster.
- 
+
 
 First, stop the running keystone and apache services:
 
@@ -29,7 +30,7 @@ First, stop the running keystone and apache services:
 Apache uses wsgi, however NGINX has no direct wsgi support. Instead there are several projects that bring wsgi functionality to NGINX. We will use the uwsgi packages provided by Ubuntu. Install the NGINX server and other required packages:
 
     apt-get install -y nginx libgd-tools nginx-doc python-django-uwsgi uwsgi uwsgi-core uwsgi-emperor uwsgi-plugin-python
-    
+
 Since Ubuntu usually starts services when the package is installed, stop the nginx service until we get it configured:
 
     service nginx stop
@@ -38,14 +39,14 @@ Since keystone and horizon run behind the uwsgi service, disable these services 
 
     systemctl disable keystone
     systemctl disable horizon
-    
+
 We are not running a simple web server, so disable the default site that comes with the NGINX install:
-    
+
     rm /etc/nginx/sites-enabled/default
-    
+
 Make a log directory for keystone and horizon under NGINX, and set the proper permissions:
-(in this configuration, nginx will run as the www-data user, the uwsgi keystone process runs as the keystone user and the horizon (django) uwsgi runs process as the horizon user) 
-    
+(in this configuration, nginx will run as the www-data user, the uwsgi keystone process runs as the keystone user and the horizon (django) uwsgi runs process as the horizon user)
+
     mkdir /var/log/nginx/keystone
     mkdir /var/log/nginx/horizon
     chown www-data:adm /var/log/nginx/keystone/
@@ -62,7 +63,7 @@ Setup log directories for the uwsgi processes:
 and a base directory for the keystone wsgi python script:
 
     mkdir /var/www/keystone
-    
+
 Keystone comes with a python script for interfacing to servers running a wsgi interface. Keystone listens on two tcp ports, one for processing admin level requests and one for requests that don't need admin level permissions. If you installed keystone from the Ubuntu package tree, this file was not included the the keystone packages. You will need to download it. For those having installed OpenStack from source, you will need to just copy the file as shown below. One copy will be used to handle requests that need the keystone admin role and the other copy is for non-admin requests.
 
 To download it use:
@@ -90,24 +91,24 @@ uwsgi has a broad set of configuration parameters. We are only going to set a mi
     no-orphans = true
     plugin = python
     chmod-socket = 660
-    
+
     socket = /run/uwsgi/keystone-admin.sock
     pidfile = /run/uwsgi/keystone-admin.pid
-    
+
     logto = /var/log/uwsgi/app/keystone-admin.log
-    
+
     name = keystone
     uid = keystone
     gid = www-data
-    
-    chdir = /var/www/keystone/  
+
+    chdir = /var/www/keystone/
     wsgi-file = /var/www/keystone/admin
-    
+
     EOF
 
-    
+
 Next, create the needed uwsgi configuration file for running keystone non-admin requests:
-    
+
     cat >> /etc/uwsgi-emperor/vassals/keystone-main.ini << EOF
     [uwsgi]
     master = true
@@ -116,22 +117,22 @@ Next, create the needed uwsgi configuration file for running keystone non-admin 
     no-orphans = true
     plugin = python
     chmod-socket = 660
-        
+
     socket = /run/uwsgi/keystone-main.sock
     pidfile = /run/uwsgi/keystone-main.pid
-    
+
     name = keystone
     uid = keystone
     gid = www-data
-    
+
     logto = /var/log/uwsgi/app/keystone-main.log
-    
-    chdir = /var/www/keystone/  
+
+    chdir = /var/www/keystone/
     wsgi-file = /var/www/keystone/main
     EOF
 
 Lastly, to finish the uwsgi configuration create the needed uwsgi configuration file for running horizon:
-    
+
     cat >> /etc/uwsgi-emperor/vassals/horizon.ini << EOF
     [uwsgi]
     master = true
@@ -144,11 +145,11 @@ Lastly, to finish the uwsgi configuration create the needed uwsgi configuration 
     socket = /run/uwsgi-horizon/horizon.sock
     pidfile = /run/uwsgi-horizon/horizon.pid
     logto = /var/log/uwsgi/app/horizon.log
-    
+
     name = horizon
     uid = horizon
     gid = www-data
-    
+
     chdir = /etc/openstack_dashboard/
     env = DJANGO_SETTINGS_MODULE=openstack_dashboard.settings
     module = django.core.wsgi:get_wsgi_application()
@@ -168,13 +169,13 @@ Lastly, we want to set the user and group for the various uwsgi processes within
     sed -i 's/gid = www-data/#gid = www-data/g' /etc/uwsgi-emperor/emperor.ini
 
 Create the nginx configuration file for keystone. Remember that keystone listens on ports 5000 for normal requests and 35357 for admin requests, so we will need server entries for each port in nginx:
-    
+
     cat >> /etc/nginx/sites-available/keystone.conf << EOF
     server {
             listen          5000;
             access_log /var/log/nginx/keystone/access.log;
             error_log /var/log/nginx/keystone/error.log;
-    
+
             location / {
                 uwsgi_pass      unix:///run/uwsgi/keystone-main.socket;
                 include         uwsgi_params;
@@ -185,25 +186,25 @@ Create the nginx configuration file for keystone. Remember that keystone listens
             listen          35357;
             access_log /var/log/nginx/keystone/access.log;
             error_log /var/log/nginx/keystone/error.log;
-    
+
             location / {
                 uwsgi_pass      unix:///run/uwsgi/keystone-admin.socket;
                 include         uwsgi_params;
                 uwsgi_param      SCRIPT_NAME   '';
-    
+
            }
     }
     EOF
- 
+
 Create the configuration file for nginx and horizon:
-    
+
     cat >> /etc/nginx/sites-available/horizon.conf << EOF
         server {
         listen 80;
         server_name openstack.foo.com;
             access_log /var/log/nginx/horizon/access.log;
             error_log /var/log/nginx/horizon/error.log;
-    
+
         location / { try_files  \$uri @horizon; }
         location @horizon {
             uwsgi_pass unix:///run/uwsgi-horizon/horizon.sock;
@@ -215,22 +216,22 @@ Create the configuration file for nginx and horizon:
         }
     }
     EOF
-    
-   
+
+
 Enable both the keystone and horizon functions (sites) in nginx:
-    
+
     ln -s /etc/nginx/sites-available/keystone.conf /etc/nginx/sites-enabled/keystone.conf
     ln -s /etc/nginx/sites-available/horizon.conf /etc/nginx/sites-enabled/horizon.conf
-    
+
 Start both the uwsgi service and nginx:
-    
+
     service uwsgi-emperor start
     service nginx start
-    
+
 Let's verify that keystone properly responds to requests:
 
     root@controller:~# source openrc
-    
+
     root@controller:~# keystone tenant-list
     +----------------------------------+---------+---------+
     |                id                |   name  | enabled |
@@ -238,7 +239,7 @@ Let's verify that keystone properly responds to requests:
     | 9d314f96330a4e459420623a922e2c09 |   demo  |   True  |
     | 4382d14df2004903a16edf17e3c58652 | service |   True  |
     +----------------------------------+---------+---------+
-    
+
     root@controller:~# nova service-list
     +----+------------------+------------+----------+---------+-------+----------------------------+-----------------+
     | Id | Binary           | Host       | Zone     | Status  | State | Updated_at                 | Disabled Reason |
