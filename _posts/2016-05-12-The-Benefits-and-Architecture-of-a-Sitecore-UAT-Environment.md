@@ -84,11 +84,11 @@ The process for refreshing the UAT environment is as follows:
 
 2. Refresh the content in the UAT Master database with the content in the Production Master database. The goal of this refresh is to ensure that you have the content necessary to test functionality. It does not need to remain in constant sync with Production but should be kept reasonably up to date, possibly on a nightly schedule. A few methods to achieve a content refresh are as follows:
 
- * **[RAZL (Recommended)] (http://www.razl.net):** Cost effective tool to compare and merge Sitecore databases, inclusive of scheduling
+   * **[RAZL (Recommended)] (http://www.razl.net):** Cost effective tool to compare and merge Sitecore databases, inclusive of scheduling
 
- * **[SQL Backup and Restore](https://msdn.microsoft.com/en-us/library/ms190436.aspx):** A full backup and restore will overwrite the user accounts and permissions in UAT with Production, so you need to change the UAT Master database to the correct users and permissions settings post restore
+   * **[SQL Backup and Restore](https://msdn.microsoft.com/en-us/library/ms190436.aspx):** A full backup and restore will overwrite the user accounts and permissions in UAT with Production, so you need to change the UAT Master database to the correct users and permissions settings post restore
 
- * **Custom SQL Script or Data Copy (Not Recommended)**
+   * **Custom SQL Script or Data Copy (Not Recommended)**
 
 3. Once the content in the UAT Master database is refreshed, perform a full publish to update the remainder of the UAT environment.
 
