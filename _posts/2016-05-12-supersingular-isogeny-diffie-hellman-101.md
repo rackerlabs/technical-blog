@@ -5,6 +5,7 @@ date: 2016-05-12 12:15
 comments: false
 author: lvh
 published: true
+authorIsRacker: true
 categories:
     - security
 ---
@@ -16,6 +17,8 @@ community and even made it to the front page of Hacker News. Most of the
 discussion around it seemed to be how no one understands isogenies, even
 within cryptography-literate communities. This article aims to give you a
 high-level understanding of what this cryptosystem is and why it works.
+
+<!-- more -->
 
 This post assumes that you already know how Diffie-Hellman works in the
 abstract, and that you know elliptic curves are a mathematical construct that
@@ -54,8 +57,7 @@ factoring large numbers (like RSA), taking discrete logs over the integers
 *mod p* (like regular DH), or taking discrete logs over elliptic curves (like
 ECDH and ECDSA). To quantify that, consider the following table:
 
-![quantum computer attack cost versus classical][qcost]
-[qcost]: /img/post-quantum/quantum-computer-relative-cost.png
+![quantum computer attack cost versus classical]({% asset_path 2016-05-12-supersingular-isogeny-diffie-hellman-101/quantum-computer-relative-cost.png %})
 
 In this table, n refers to the modulus size for RSA, and the field size for
 ECC. Look at the rightmost column, which represents time taken by the
