@@ -5,11 +5,7 @@ date: '2015-07-28 14:00'
 comments: true
 author: Everett Toews
 bio: >
-  Everett is a Rackspace Developer Advocate, he's from Canada (I think) and he's
-  a super-nice guy. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
-  qui iste non quos, consequuntur nulla est eaque animi adipisci consectetur
-  ipsam perspiciatis harum vitae voluptatibus assumenda eveniet. Unde, dolor,
-  ex.
+  Everett Toews a Developer Advocate at Rackspace making the cloud easy to use for developers and operators. Sometimes dev, sometimes ops, and sometimes advocate. He's interested in composing systems using APIs, SDKs, CLIs, and Docker. He likes to teach what he learns along the way.
 authorIsRacker: true
 authorAvatar: 'https://www.gravatar.com/avatar/c1a75adb52f40016a480cee292527895'
 published: true
