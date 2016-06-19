@@ -49,11 +49,12 @@ An underlying cryptographic library might expose an unfortunate API. It might
 be unwieldy because of historical reasons, backwards compatibility, language
 limitations, or even simple oversight. Regardless of why the API is the way it
 is, even minute changes to it—a nicer type, an implied parameter—might have
-subtle but catastrophic consequences for the security of the final product. Is
-an arbitrary-length integer in your programming language interchangeable with
-the implementation in your crypto library? How about just a `char *`? Are you
-sure? Is that true for every platform your users will run your software on? Is
-that true in perpetuity?
+subtle but catastrophic consequences for the security of the final
+product. Figuring out if an arbitrary-length integer in your programming
+language is interchangeable with other representations, like the
+implementation in your crypto library or a `char *`, has many complex
+facets. It doesn't just have to be true under some conditions; ideally it's
+true for every platform your users will run your software on, in perpetuity.
 
 There might be an easy workaround to an annoying API. C APIs often take a
 `char *` together with a length parameter, because C doesn't have a standard
