@@ -1,13 +1,13 @@
- ---
- layout: post
- title: "Tradeoffs in cryptographic API design"
- date: 2016-06-21 23:59
- comments: false
- author: lvh
- published: true
- categories:
-   - security
- ---
+---
+layout: post
+title: "Tradeoffs in cryptographic API design"
+date: 2016-06-21 23:59
+comments: false
+author: lvh
+published: true
+categories:
+    - security
+---
 
 Producing cryptographic software is a difficult and specialized endeavor. One
 of the pitfalls is that getting it wrong looks exactly like getting it
