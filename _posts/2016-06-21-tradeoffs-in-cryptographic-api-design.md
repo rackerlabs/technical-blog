@@ -87,7 +87,7 @@ When designing cryptographic software, these simplified models we normally
 program in don't generally work.  A cryptographic engineer often needs to
 worry about concerns all the way up and down the stack simultaneously: from
 application layer concerns, to runtime semantics like the
-[Java Language Specification][jls], to FFI sementics and the C ABI on all
+[Java Language Specification][jls], to FFI semantics and the C ABI on all
 relevant platforms, to the underlying CPU, to the mathematical underpinnings
 themselves. The engineer has to manage all of those, often while being
 hamstrung by flawed designs like TLS' MAC-then-pad-then-encrypt mess.
