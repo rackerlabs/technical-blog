@@ -65,12 +65,13 @@ single parameter on the high-level side; that's just the moral equivalent of
 building a small C struct that holds both. (Whether or not you can trust C
 compilers to get anything right at all is a point of contention.)
 
-These problems compound when you are binding libraries in languages with
-wildly different semantics. One example is relocating garbage collectors;
-pointers stay put in C, but objects move around all the time in environments
-like the JVM (HotSpot) or PyPy. That implies copying to or from a buffer
-whenever you call C code, unless the underlying virtual machine supports
-"memory pinning": forcing the object to stay put for the duration of the call.
+These problems compound when you are binding libraries in languages and
+environments with wildly different semantics. For example, your runtime might
+have a relocating garbage collector.  Pointers in C and objects in CPython
+stay put, but objects move around all the time in environments like the JVM
+(HotSpot) or PyPy. That implies copying to or from a buffer whenever you call
+C code, unless the underlying virtual machine supports "memory pinning":
+forcing the object to stay put for the duration of the call.
 
 Programmers normally operate in a drastically simplified model of the
 world. We praise programming designs for their ability to separate concerns,
