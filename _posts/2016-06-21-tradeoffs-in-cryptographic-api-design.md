@@ -39,10 +39,10 @@ API. An explicit-nonce encryption scheme is great for a record layer protocol
 between two peers like TLS, but it's awful for someone trying to encrypt a
 session cookie. We can't keep complaining about people getting it wrong when
 we keep giving them no chances at getting it right. This is why I'm building
-educational material like [Crypto 101][crypto101] and care about cryptography
-like [nonce-misuse resistance][nmr] that's easier to use correctly.  (The blog
-post on my new nonce-misuse resistant schemes for libsodium is coming soon, I
-promise!)
+educational material like [Crypto 101][crypto101] and why I care about
+cryptography like [nonce-misuse resistance][nmr] that's easier to use
+correctly.  (The blog post on my new nonce-misuse resistant schemes for
+libsodium is coming soon, I promise!)
 
 Before you can make your API easy to use, first you have to worry about
 getting it to work at all.
