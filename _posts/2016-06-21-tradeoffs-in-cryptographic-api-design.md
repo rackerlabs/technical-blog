@@ -86,8 +86,8 @@ worry about concerns all the way up and down the stack simultaneously: from
 application layer concerns, to runtime semantics like the
 [Java Language Specification][jls], to FFI sementics and the C ABI on all
 relevant platforms, to the underlying CPU, to the mathematical underpinnings
-themselves. All of which often while being hamstrung by flawed designs like
-TLS' MAC-then-pad-then-encrypt mess.
+themselves. The engineer has to manage all of those, often while being
+hamstrung by flawed designs like TLS' MAC-then-pad-then-encrypt mess.
 
 In future blog posts, I'll go into more detail about particular cryptographic
 API design concerns, starting with JVM byte types. If you're interested, you
