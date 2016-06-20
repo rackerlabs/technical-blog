@@ -93,11 +93,11 @@ In future blog posts, I'll go into more detail about particular cryptographic
 API design concerns, starting with JVM byte types. If you're interested, you
 should [follow me on Twitter][twitter].
 
-*Footnote:*
-I'm happy to note that [cffi][cffi-pinning] now also has support for memory
-pinning since PyPy will support it in the upcoming 5.2 release, although that
-means I'll no longer be able to make [Paul of PyCA fame][paul] jealous with
-the pinning support in [caesium][caesium].
+*Footnote:* I'm happy to note that [cffi][cffi-pinning] now also has support
+for memory pinning since PyPy will support it in the upcoming 5.2 release,
+although that means I'll no longer be able to make
+[Paul Kehrer of PyCA fame][paul] jealous with the pinning support in
+[caesium][caesium].
 
 [nmr]: /posts/nonce-misuse-resistance-101.html
 [crypto101]: https://www.crypto101.io/
