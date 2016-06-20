@@ -62,9 +62,9 @@ There might be an easy workaround to an annoying API. C APIs often take a
 `char *` together with a length parameter, because C doesn't have a standard
 way of passing a byte sequence together with its length. Most higher level
 languages, including Java and Python, have byte sequence types that know their
-own length, so you can specify the `char *` and its associated length in a
-single parameter on the high-level side; that's just the moral equivalent of
-building a small C struct that holds both. (Whether or not you can trust C
+own length. Therefore, you can specify the `char *` and its associated length
+in a single parameter on the high-level side. That's just the moral equivalent
+of building a small C struct that holds both. (Whether or not you can trust C
 compilers to get anything right at all is a point of contention.)
 
 These problems compound when you are binding libraries in languages and
