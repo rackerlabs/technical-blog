@@ -4,6 +4,8 @@ title: "Supersingular isogeny Diffie-Hellman 101"
 date: 2016-05-12 12:15
 comments: false
 author: lvh
+authorIsRacker: true
+authorAvatar: https://s.gravatar.com/avatar/1846c8040fcf70e9b55bb7bfcdb78bc4
 published: true
 authorIsRacker: true
 categories:
