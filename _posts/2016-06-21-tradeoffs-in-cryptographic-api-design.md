@@ -95,7 +95,7 @@ should [follow me on Twitter][twitter].
 
 *Footnote:*
 I'm happy to note that [cffi][cffi-pinning] now also has support for memory
-pinning since PyPy will support it in the upcoming 5.2 release; although that
+pinning since PyPy will support it in the upcoming 5.2 release, although that
 means I'll no longer be able to make [Paul of PyCA fame][paul] jealous with
 the pinning support in [caesium][caesium].
 
