@@ -5,7 +5,7 @@ date: '2015-08-31 23:59'
 comments: true
 author: lvh
 authorIsRacker: true
-authorAvatar: https://s.gravatar.com/avatar/1846c8040fcf70e9b55bb7bfcdb78bc4
+authorAvatar: "https://s.gravatar.com/avatar/1846c8040fcf70e9b55bb7bfcdb78bc4"
 published: true
 categories: []
 ---
