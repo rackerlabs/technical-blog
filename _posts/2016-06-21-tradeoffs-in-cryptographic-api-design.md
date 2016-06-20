@@ -55,7 +55,7 @@ subtle but catastrophic consequences for the security of the final
 product. Figuring out if an arbitrary-length integer in your programming
 language is interchangeable with other representations, like the
 implementation in your crypto library or a `char *`, has many complex
-facets. It doesn't just have to be true under some conditions; ideally it's
+facets. It doesn't just have to be true under some conditions; ideally, it's
 true for every platform your users will run your software on, in perpetuity.
 
 There might be an easy workaround to an annoying API. C APIs often take a
