@@ -5,7 +5,7 @@ date: 2016-06-21 23:59
 comments: false
 author: lvh
 authorIsRacker: true
-authorAvatar: https://s.gravatar.com/avatar/1846c8040fcf70e9b55bb7bfcdb78bc4
+authorAvatar: "https://s.gravatar.com/avatar/1846c8040fcf70e9b55bb7bfcdb78bc4"
 published: true
 categories:
     - security
