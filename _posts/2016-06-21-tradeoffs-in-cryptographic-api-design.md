@@ -32,7 +32,7 @@ nonces, salts and tweaks. Even if someone ended up with CTR or CBC, these APIs
 are still precarious; they'll still be vulnerable to issues like nonce
 reuse, fixed IV, key-as-IV, unauthenticated encryption...
 
-User experience design always means deep consideration for who your users
+User experience design always means deep consideration of who your users
 are. A particular API might be necessary for a cryptographic engineer to build
 new protocols, but that API is probably not a reasonable default encryption
 API. An explicit-nonce encryption scheme is great for a record layer protocol
