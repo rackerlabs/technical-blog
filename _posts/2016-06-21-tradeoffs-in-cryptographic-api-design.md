@@ -81,7 +81,7 @@ so that programmers can deal with one problem at a time. The modern CPU your
 code runs on is always an intricate beast, but you don't worry about cache
 lines when you're writing a Python program. Only a fraction of programmers
 ever has to worry about them at all. Those that do typically only do so after
-the program already works, so they can still focus on one part of the problem.
+the program already works so they can still focus on one part of the problem.
 
 When designing cryptographic software, these simplified models we normally
 program in don't generally work.  A cryptographic engineer often needs to
