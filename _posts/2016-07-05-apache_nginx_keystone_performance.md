@@ -114,11 +114,11 @@ in /etc/security/limits.conf
 
 After tuning, the 10 to 100 connections chart is virtually identical (Illustration 3) to the stock chart (Illustration 1).
 
-![Illustration 3 Tuned Apache vs Nginx 10 to 100 Concurrent Connections]({% asset_path 2016-07-05-apache-nginx-keystone-perf-comparison/apache-nginx-tunes10.png %} "Illustration 3 Tuned Apache vs Nginx 10 to 100 Concurrent Connections" )
+![Illustration 3 Tuned Apache vs Nginx 10 to 100 Concurrent Connections]({% asset_path 2016-07-05-apache-nginx-keystone-perf-comparison/apache-nginx-tuned10.png %} "Illustration 3 Tuned Apache vs Nginx 10 to 100 Concurrent Connections" )
 
 However the 100 to 1000 connects chart shows a different picture. NGINX was able to handle up to 1000 concurrent connections without a problem, but Apache started having failed transactions above 700 concurrent connections. At this point, siege starts reporting failed transactions (503 errors) along with the longest transaction time for Apache growing to over 80 seconds..
 
-![Illustration 4 Tuned Apache vs Nginx 100 to 1000 Concurrent Connections]({% asset_path 2016-07-05-apache-nginx-keystone-perf-comparison/apache-nginx-tunes100.png %} "Illustration 4 Tuned Apache vs Nginx 100 to 1000 Concurrent Connections" )
+![Illustration 4 Tuned Apache vs Nginx 100 to 1000 Concurrent Connections]({% asset_path 2016-07-05-apache-nginx-keystone-perf-comparison/apache-nginx-tuned100.png %} "Illustration 4 Tuned Apache vs Nginx 100 to 1000 Concurrent Connections" )
 
 Since NGINX uses uwsgi, the uwsgi  listen parameter sets the socket listen queue size. This provides some buffering between NGINX and the uwsi processes, which seems to prevent NGINX from overrunning uwsgi for the loads tested. Apache does not have any such buffer when running wsgi. Perhaps changing Apache to use uwsgi would be helpful in heavily loaded situations.
 
