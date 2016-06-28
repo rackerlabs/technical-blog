@@ -8,7 +8,6 @@ published: true
 categories:
     - OpenStack
     - OSAD
-    - NGINX
 ---
 A Performance comparison: Apache vs NGINX and OpenStack Keystone
 ================================================================
