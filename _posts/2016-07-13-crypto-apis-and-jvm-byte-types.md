@@ -16,6 +16,8 @@ post, I'll go into a specific API design case in [`caesium`][caesium], my
 cryptographic library for Clojure, a language that runs on the Java Virtual
 Machine.
 
+<!-- more -->
+
 ## JVM byte types
 
 The JVM has several standard byte types. For one-shot cryptographic APIs, the
