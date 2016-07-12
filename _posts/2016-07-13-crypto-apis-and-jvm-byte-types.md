@@ -176,11 +176,11 @@ generated but just into a pre-existing buffer.
 The easiest way for this to work by default is reflection. That mostly works,
 until it doesn't. Firstly, reflecting can be brittle. For example, if all of
 your byte sequence types are known but a buffer length isn't, Clojure's
-reflection will fail to find the appropriate method even if it is
+reflection will fail to find the appropriate method, even if it is
 unambiguous. Secondly, unannotated Clojure fns always take boxed objects, not
 primitives, which is what we want for calling into C. Annotating is imperfect,
 too, because it moves the onus of producing a primitive to the caller. These
-aren't really criticisms of Clojure; at this point we're well into weird edge
+aren't really criticisms of Clojure. At this point we're well into weird edge
 case territory which this system wasn't designed for.
 
 We can't do static dispatch for the public API, because we've established that
