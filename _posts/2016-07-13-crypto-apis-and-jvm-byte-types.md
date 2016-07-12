@@ -43,11 +43,11 @@ requires a (trivial) amount of math by calling `remaining`. This is because
 the `ByteBuffer` is a view, and it can be looking at a different part of the
 underlying memory at different times. For a byte array, this is all fixed: a
 byte array's starting and stopping points remain constant. Computing the
-remaining length of a `ByteBuffer` may not always be constant time, although
-it probably is. Even if it isn't, it's probably not in a way that is relevant
-to the security of the scheme (in `caesium`, only cryptographic hashes,
-detached signatures and detached MACs don't publicly specify the message
-length).
+remaining length of a `ByteBuffer` may not always be constant time (although
+it probably is). Even if that computation isn't constant time, that probably
+does not have significant security consequences: in `caesium`, only
+cryptographic hashes, detached signatures and detached MACs don't publicly
+specify the message length.
 
 `ByteBuffer` has a public API for allocating *direct* buffers. This means they
 are not managed by the JVM. Therefore they won't be copied around by the
