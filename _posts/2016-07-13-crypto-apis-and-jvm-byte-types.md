@@ -25,13 +25,13 @@ two most relevant ones are byte arrays (also known as `byte[]`) and
 `java.nio.ByteBuffer`.  Unfortunately, they have different pros and cons, so
 there is no unambiguously superior choice.
 
-`ByteBuffer` can produce slices of byte arrays and other byte buffers with
-zero-copy semantics. This makes it the API you want to use if you want to
-place an encrypted message in a pre-allocated binary format. One example of
-this is my [experimental nonce-misuse resistant suite][magicnonce]. Another
-use case is generating more than one key out of a single call to a key
-derivation function. The call produces one (long) output, and `ByteBuffer`
-lets you slice it into different keys.
+`ByteBuffer` can produce slices of byte arrays and other byte buffers
+with zero-copy semantics. This makes a useful tool when want to place
+an encrypted message in a pre-allocated binary format. One example of
+this is my [experimental NMR suite][magicnonce]. Another use case is
+generating more than one key out of a single call to a key derivation
+function. The call produces one (long) output, and `ByteBuffer` lets
+you slice it into different keys.
 
 Byte arrays are easily serializable, but `ByteBuffer` is not. Even if you
 teach your serialization library about `ByteBuffer`, this usually results in
@@ -50,29 +50,29 @@ detached signatures and detached MACs don't publicly specify the message
 length).
 
 `ByteBuffer` has a public API for allocating *direct* buffers. This means they
-are not managed by the JVM, meaning they won't be copied around by the garbage
-collector and memory pinning is free. "Memory pinning" means that you notify
-the JVM that some external C code is using this object, and so it should not
-be moved around or garbage collected until that code is done using that
-buffer. You can't pass "regular" (non-direct) buffers to C code; when you do
+are not managed by the JVM. Therefore they won't be copied around by the
+garbage collector, and memory pinning is free. "Memory pinning" means that you
+notify the JVM that some external C code is using this object, so it should
+not be moved around or garbage collected until that code is done using that
+buffer. You can't pass "regular" (non-direct) buffers to C code. When you do
 that, the buffer is first copied under the hood. Directly allocated buffers
-let you securely manage the entire lifecycle of the buffer, for example, they
+let you securely manage the entire lifecycle of the buffer. For example, they
 can be securely zeroed out after use. Directly allocated `ByteBuffer`
 instances might have underlying arrays; this is explicitly unspecified.
 Therefore, going back to an array _might_ be zero-copy. In my experiments,
 these byte buffers never have underlying arrays, so copying is always
-required. I have not yet done further research if this generally the case. In
-addition to `ByteBuffer`, the`sun.misc.Unsafe` class does have options for
-allocating memory directly; but it's pretty clear that use of that class is
-strongly discouraged. Outside of the JDK, the `Pointer` API in `jnr-ffi` works
-identically to `ByteBuffer`.
+required. I have not yet done further research to determine if this generally
+the case. In addition to `ByteBuffer`, the`sun.misc.Unsafe` class does have
+options for allocating memory directly, but it's pretty clear that use of that
+class is strongly discouraged. Outside of the JDK, the `Pointer` API in
+`jnr-ffi` works identically to `ByteBuffer`.
 
 ## Design decisions
 
 As a brief recap from my previous post, it's important that we design an API
 that makes common things easy and hard things possible while remaining secure
 and performant. For the cryptographic APIs in `caesium`, there are a number of
-variables to fix:
+variables to consider:
 
  * Are the return types and arguments `ByteBuffer` instances, byte arrays
    (`[B`), `Pointer` instances, or something else?
@@ -97,7 +97,7 @@ function manage the output buffer for you is the most convenient option, but
 it also precludes using direct byte buffers effectively. Type conversion is
 most convenient, but type dispatch is faster, and statically resolvable
 dispatching to the right implementation is faster still. The correct return
-value depends on context; trying to divine what the user really wanted is
+value depends on context. Trying to divine what the user really wanted is
 tricky, and, as we discussed before, the differences between those types are
 significant.
 
@@ -116,10 +116,10 @@ involve annoying code generation in a regular Java/jnr-ffi project, but
 caesium is written in Clojure. The information on how to bind libsodium is a
 Clojure data structure that gets compiled into an interface, which is what
 jnr-ffi consumes. This makes it easy to expose every permutation, since it's
-just some code that takes and returns a value. You can see this at work in the
+just some code that operates on a value. You can see this at work in the
 [`caesium.binding` namespace][binding]. As a consequence, an expert
-implementer that knows exactly which underlying function they want to call
-with no "smart" APIs or performance overhead, can always just drop down to the
+implementer (who knows exactly which underlying function they want to call
+with no "smart" APIs or performance overhead) can always just drop down to the
 binding layer.
 
 Another easy call is that all APIs should raise exceptions, instead of
@@ -129,7 +129,7 @@ decryption should definitely just raise exceptions.
 
 It gets tricky when we compare APIs that take an output buffer versus APIs
 that build the output buffer for you. The latter are clearly the easiest to
-use, but the former is necessary for explicit buffer life cycle
+use, but the former are necessary for explicit buffer life cycle
 management. You can also easily build the managed version from the unmanaged
 version, but you can't do the converse. As a consequence, we should expose
 both.
@@ -146,24 +146,24 @@ might have a byte buffer:
 In the former case, the byte buffers primarily act as inputs. In the latter,
 they exclusively act as outputs. Because both byte buffers and byte arrays can
 act as inputs, any API should be flexible in what it accepts. However, this
-asymmetry in how the types are used and how they can be converted has
+asymmetry in how the types are used, and how they can be converted, has
 consequences for APIs where the caller manages the output buffer versus APIs
 that manage it for you.
 
 When the API that manages the output buffer for you, the most reasonable
 return type is a byte array. There is no difference between byte arrays
-created by the API and created by the caller, and there's no reasonable way to
-reuse them. If you do really need a byte buffer for some reason, wrapping that
-output array is simple and cheap. Conversely, APIs where the caller manages
-the output buffer should use output byte buffers. Callers who are managing
-their own byte buffer need to call an API that supports that, and there's
-nothing to be gained from managing your own byte arrays (only direct byte
-buffers). This is fine for internal use within `caesium`: the byte array
+created by the API and those created by the caller, and there's no reasonable
+way to reuse them. If you do really need a byte buffer for some reason,
+wrapping that output array is simple and cheap. Conversely, APIs where the
+caller manages the output buffer should use output byte buffers. Callers who
+are managing their own byte buffer need to call an API that supports that, and
+there's nothing to be gained from managing your own byte arrays (only direct
+byte buffers). This is fine for internal use within `caesium` — the byte array
 producing API can just wrap it in a byte buffer view.
 
 This means we've reduced the surface significantly: APIs with caller-managed
-buffers output to `ByteBuffer`, APIs that manage it themselves return byte
-arrays. This takes care of the output types, but not input types.
+buffers output to `ByteBuffer`, and APIs that manage it themselves return byte
+arrays. This takes care of the output types, but not the input types.
 
 Keys, salts, nonces, messages et cetera will usually be byte arrays, since
 they're typically just read directly from a file or made on the spot. However
