@@ -78,8 +78,8 @@ variables to consider:
    (`[B`), `Pointer` instances, or something else?
  * Is the return type fixed per exposed function, or is the return
    type based on the input types, like Clojure's [`empty`][clj-empty]?
- * Are the APIs "C style" where the output buffer is passed in as an
-   argument, or "functional style" that allocates the output buffer for you?
+ * Are the APIs "C style" (which passes the output buffer as an argument) or
+   "functional style" (which allocates the output buffer for you)?
  * Does the implementation convert to the appropriate type (which might
    involve copying), does it use reflection to find the appropriate type, does
    it explicitly dispatch on argument types, or does it assume you give
