@@ -69,7 +69,7 @@ Recommendation Number 2. [Disable client RSS feeds](https://doc.sitecore.net/sit
     $webConfigXML.Save($webConfigPath)
 
 
-Recommendation Number 3. [Secure the file upload functionality](https://doc.sitecore.net/sitecore_experience_platform/setting_up__maintaining/security_hardening/configuring/secure_the_file_upload_functionalit)
+Recommendation Number 3. [Secure the file upload functionality](https://doc.sitecore.net/sitecore_experience_platform/setting_up__maintaining/security_hardening/configuring/secure_the_file_upload_functionality)
 
 > Sitecore documentation walks through the multi-step process.  While we make extensive use of PowerShell, again, we also store a copy of the UploadFilter.config and UploadFilter.dll in our Rackspace CDN for purposes of consistency and convenience.  Here's the full PowerShell for how we handle the measures outlined in Sitecore's documentation:
 
