@@ -32,7 +32,7 @@ END
 
 The T-SQL will execute the stored procedure to re-initialize the table and index structure. Then check if the database user **cdsAccount** does not exist. If the user does not exist, it will create the user and assign the data reader and data writer role to the account. 
 
-We have the code, but how do we apply it when the service restarts? We can create a SQL Agent Job that we specify to run when the SQL Server Agent starts up. You can change the schedule type in the job, but this will handle the regular patching cycle from reboots. I have included the complete .sql script which creates the sql job for you. The readme file in the repository includes which lines to change for the database user you want to create and check for
+We have the code, but how do we apply it when the service restarts? We can create a SQL Agent Job that we specify to run when the SQL Server Agent starts up. I have included the complete .sql script which creates the sql job for you. The readme file in the repository includes which lines to change for the database user you want to create and check for
 
 
 [T-SQL Script with SQL Agent Job](https://github.com/jrudley/Sitecore-Sql-Perf-Addon)
