@@ -34,8 +34,10 @@ The T-SQL will execute the stored procedure to re-initialize the table and index
 
 We have the code, but how do we apply it when the service restarts? We can create a SQL Agent Job that we specify to run when the SQL Server Agent starts up. You can change the schedule type in the job, but this will handle the regular patching cycle from reboots. I have included the complete .sql script which creates the sql job for you. The readme file in the repository includes which lines to change for the database user you want to create and check for
 
-```sh
-https://github.com/jrudley/Sitecore-Sql-Perf-Addon
-```
+
+[T-SQL Script with SQL Agent Job](https://github.com/jrudley/Sitecore-Sql-Perf-Addon)
+
+[Sitecore documentation snippet to optimize SQL Server performance](https://doc.sitecore.net/sitecore_experience_platform/setting_up__maintaining/xdb/session_state/walkthrough_configure_a_shared_session_state_database_using_the_sql_server_provider)
+
 
 
