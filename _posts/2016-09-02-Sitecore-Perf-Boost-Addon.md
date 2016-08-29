@@ -1,0 +1,40 @@
+---
+layout: post
+title: "Sitecore Performance Boost Addon"
+date: 2016-09-02 00:00
+comments: false
+author: Jimmy Rudley
+authorIsRacker: true
+published: true
+categories:
+- Devops
+---
+
+Sitecore has the option of making use of TempDB in Sql Server to speed up your session state operations. What catches people off guard is the fact that tempdb is recreated at service restart of SQL Server. This becomes a problem when you have to recreate the table structure and user permissions inside tempdb. 
+
+<!-- more -->
+
+The script that creates the table structure and stored procedures to make use of TempDB is located in the folder path "Sitecore 8.1 rev. xxxxxx\Databases\Scripts\. The file is called "Sessions db performance boost.sql" This post will not go over what this file does, but I will point out that it creates a stored procedure in the Master db that creates the table and index structure in the TempDB, but not the permissions to actually access it. What we can do is create some T-SQL that will reinitialize the table and index structure and re-create the user and permissions.
+
+```sh
+exec [master].[dbo].[Sitecore_InitializeSessionState]
+
+USE [tempdb]
+IF NOT EXISTS(select name from sys.database_principals where name = 'cdsAccount')
+BEGIN
+CREATE USER [cdsAccount] FOR LOGIN [sql1\cdsaccount]
+ALTER ROLE [db_datareader] ADD MEMBER [cdsAccount]
+ALTER ROLE [db_datawriter] ADD MEMBER [cdsAccount]
+END
+
+```
+
+The T-SQL will execute the stored procedure to re-initialize the table and index structure. Then check if the database user 'cdsAccount' does not exist. If the user does not exist, it will create the user and assign the data reader and data writer role to the account. 
+
+We have the code, but how do we apply it when the service restarts? We can create a SQL Agent Job that we specify to run when the SQL Server Agent starts up. You can change the schedule type in the job, but this will handle the regular patching cycle from reboots. I have included the complete .sql script which creates the sql job for you. The readme file includes which lines to change for the database user you want to create and check for
+
+```sh
+https://github.com/jrudley/Sitecore-Sql-Perf-Addon
+```
+
+
