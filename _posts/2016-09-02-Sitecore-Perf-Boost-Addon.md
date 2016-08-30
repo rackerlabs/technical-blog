@@ -14,7 +14,7 @@ Sitecore has the option of making use of TempDB in Sql Server to speed up your s
 
 <!-- more -->
 
-The script that creates the table structure and stored procedures to make use of TempDB is located in the extracted Sitecore zip file path **Sitecore 8.1 rev. xxxxxx\Databases\Scripts\**  The file is called **Sessions db performance boost.sql** This post will not go over what this file does, but I will point out that it creates a stored procedure in the Master db that creates the table and index structure in the TempDB, but not the permissions to actually access it. What we can do is create a script using T-SQL that will reinitialize the table and index structure and re-create the user with correct permissions. This assumes that you ran **Sessions db performance boost.sql** already.
+The script that creates the table structure and stored procedures to make use of TempDB is located in the extracted Sitecore zip file path **Sitecore 8.1 rev. xxxxxx\Databases\Scripts\**  The file **Sessions db performance boost.sql** This post will not go over what this file does. However, let me point out that it creates a stored procedure in the Master db that creates the table and index structure in the TempDB, but it does not set the permissions to actually access it. We can create a script using T-SQL that will reinitialize the table and index structure and re-create the user with correct permissions. This assumes that you ran **Sessions db performance boost.sql** already.
 
 ```sh
 
@@ -30,9 +30,9 @@ END
 
 ```
 
-The T-SQL will execute the stored procedure to re-initialize the table and index structure. Then check if the database user **cdsAccount** does not exist. If the user does not exist, it will create the user and assign the data reader and data writer role to the account. 
+The T-SQL executes the stored procedure to re-initialize the table and index structure. Then it checks to see if the database user **cdsAccount** exists. If the user does not exist, it creates the user and assigns the data reader and data writer role to the account. 
 
-We have the code, but how do we apply it when the service restarts? We can create a SQL Agent Job that we specify to run when the SQL Server Agent starts up. I have included the complete .sql script which creates the sql job for you. The readme file in the repository includes which lines to change for the database user you want to create and check for
+We have the code, but how do we apply it when the service restarts? We can create a SQL Agent Job that we specify to run when the SQL Server Agent starts up. I have included the complete .sql script which creates the sql job for you. The readme file in the repository includes the lines you need to change for the database user that you want to create and check for.
 
 
 [T-SQL Script with SQL Agent Job](https://github.com/jrudley/Sitecore-Sql-Perf-Addon)
