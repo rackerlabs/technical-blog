@@ -11,13 +11,13 @@ categories:
 ---
 
 
-One of the great mysteries in life is predicting the future needs of your collection database as it stores interactions over the entire life of your application. It’s a tricky thing to predict accurately because user behavior and site content change over time but we can make some estimations to provide some guidance on our database requirements.
+One of the great mysteries in life is predicting the future needs of your collection database as it stores interactions over the entire life of your application. It’s a tricky thing to predict accurately, because user behavior and site content change over time. However, we can make some estimations to provide some guidance on our database requirements.
 
 <!-- more -->
 
-The collection database stores two types of data, contacts and interactions. There are some community references to an estimate of 5/kb per interaction and 2.5/kb per contact attributed to Sitecore but several members of our team performed testing and found that estimate to be a bit high. We’ve seen between 3kb and 4kb per interaction and .2 kb per contact. Additionally we observe nearly a 1:1 relationship between the number of contacts and interactions stored. These figures are only estimates and will vary quite a bit and these two metrics do not reflect all of the data collected either, just the majority of it.
+The collection database stores two types of data, contacts and interactions. There are some community references to an estimate of 5/kb per interaction and 2.5/kb per contact attributed to Sitecore, but several members of our team performed testing and found that estimate to be a bit high. We’ve seen between 3kb and 4kb per interaction and .2 kb per contact. Additionally, we observe nearly a 1:1 relationship between the number of contacts and interactions stored. These figures are only estimates and will vary quite a bit, and these two metrics do not reflect all of the data collected either, just the majority of it.
 
-Armed with these estimates we can use any traffic data we have access to for some predictive planning. 
+Armed with these estimates, we can use any traffic data we have access to for some predictive planning. 
 Interactions = total page views, Contacts = total page views (new contacts will be 1:1 ratio)
 (Interactions * 4kb) + (contacts * .2kb) = Total Database growth 
 
@@ -27,4 +27,4 @@ Interactions = total page views, Contacts = total page views (new contacts will 
 500,000 page views per month = (500000 * 4kb + 500000 * .2kb = 2,100,000kb or 2.1 GB per month
 1,000,000 page views per month = 4,200,000kb or 4.2 GB per month
 
-As I’ve stated the actual database growth will vary based on user habits and any data capture customizations but with this estimation you can provision enough storage to accommodate initial growth while measuring more accurate site traffic and database growth for future estimation. 
+I’ve stated, the actual database growth varies based on user habits and any data capture customizations, but, with this estimation, you can provision enough storage to accommodate initial growth, while measuring more accurate site traffic and database growth for future estimation. 
