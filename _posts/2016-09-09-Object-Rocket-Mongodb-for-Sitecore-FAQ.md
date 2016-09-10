@@ -20,7 +20,7 @@ No. If the collection database (MongoDB) is not available, or the licenses for S
 
 How big should my Mongo instance/plan be to start?
 The ‘5Gb Medium’ plan is large enough to start with, but if you anticipate significant data growth, you can use the ‘20Gb Medium’ plan to take advantage of using Wired Tiger as the storage engine. Wired Tiger provides some added efficiency via compression as the database grows, and yes the database grows. 
-[How to calculate the growth of Sitecore’s Collection Database]() 
+[How to calculate the growth of Sitecore’s Collection Database](https://developer.rackspace.com/blog/Calculating-the-growth-of-Sitecores-collection-database) 
 
 Do I need to use the SSL connection strings? 
 Yes. If the Object Rocket server is in the same secured network (like using Rackspace Service-Net), risk can be reduced so you could use non-SSL communication. However, risk of data exposure still exists, so you do not want to use such a configuration in Production. 
