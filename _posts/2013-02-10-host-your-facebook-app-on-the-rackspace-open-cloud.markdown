@@ -26,7 +26,7 @@ The above diagram comprises the following components:
 
 2. [Cloud Servers](http://www.rackspace.com/cloud/servers/): Facebook apps can often have a short shelf-life. You don't want to invest a fortune in infrastructure to support them, but you must still be prepared for your app to go viral and achieve huge demand. By running your application on Rackspace Cloud Servers you can easily scale up or down as required in a matter of minutes - you'll always provide a great service to your customers, but only pay for the infrastructure when you need it. Using our powerful APIs you could even automate this scaling.
 
-3. [Memcached](http://memcached.org/): You need to look at all options to speed up delivery of content to your end customers. Memcached is an open-source (and free) third-party application that alleviates database load and improves Facebook application performance by serving as an in-memory key/value store.   
+3. [Memcached](http://memcached.org/): You need to look at all options to speed up delivery of content to your end customers. Memcached is an open-source (and free) third-party application that alleviates database load and improves Facebook application performance by serving as an in-memory key/value store.
 
 4. [Cloud Databases](http://www.rackspace.com/cloud/databases/): Setting up and running your own database can be a hassle. Maybe you don't have the expertise in-house. Even if you do, you probably want it working on activities that will actually drive your business forward and not be tied up with the day-to-day administration that databases require. Cloud Databases can free up your IT resources by providing a highly available MySQL database purpose-built and optimized for high performance and scalability. It reduces your operational costs by automating tasks related to deployment, configuration and patching.
 
@@ -39,14 +39,6 @@ The above diagram comprises the following components:
 We also offer our users our trademark [Fanatical Support](http://www.rackspace.com/whyrackspace/support/) when they host their Facebook app on the Rackspace open cloud. Our Managed Cloud offering makes sure support techs are available to help you 24x7x365 via phone, chat or ticket. They also provide support for your operating system and many applications, so you can focus on running your business, not your IT. To learn more about this please see our Managed Service spheres of support. (Please note that Memcached is currently outside our sphere of support - we can help install it, but can't offer full support on an ongoing basis).
 
 Don't need our Managed Cloud? No problem. All Rackspace cloud customers automatically receive Fanatical Support. Our techs are here for you 24x7x365 via phone, chat and ticket. They'll provide OS-level support, but won't be able to login to your server to perform advanced trouble shooting, or provide application-level support.
-Cloud Tools
-
-Rackspace has partnered with a number of leading cloud application providers to bring you apps, software and functionality to complement your cloud infrastructure. All these partners have been tested and verified on the Rackspace Cloud, and many of them offer discounts just for Rackspace customers. These Rackspace Cloud Tools partners can help you host your Facebook application on the Rackspace open cloud:
-
-   -   Track and manage your spend with [Cloudability](https://cloudtools.rackspace.com/apps/445?1949925503) 
-   -   Enhanced application and performance monitoring with [New Relic](https://cloudtools.rackspace.com/apps/347?1032638605)
-   -   Performance and load testing of your application up to web-scale level with [SOASTA](https://cloudtools.rackspace.com/apps/381?1205138001) 
-   -   Easy browser-based management of your Cloud Files storage with [Cyberduck](https://cloudtools.rackspace.com/apps/255?1251932145)
 
 That should get you started in hosting your Facebook app on the Rackspace open cloud!
 

@@ -35,15 +35,15 @@ Next, run a few commands from within this director to get the gem set up:
 	bundle install –binstubs
 	./bin/newrelic_rs --sample-config
 
-Modify the `config/newrelic_plugin.yml` with your New Relic key, Rackspace username and API key, and the region in which your load balancer sits. [Here][5] is a good site for YAML parsing help. 
+Modify the `config/newrelic_plugin.yml` with your New Relic key, Rackspace username and API key, and the region in which your load balancer sits. [Here][5] is a good site for YAML parsing help.
 
 **NOTE**: It is crucial to use lowercase for the region – it will not work otherwise. If you have load balancers in multiple regions, you will need to configure a separate plugin per region.
 
-Start the agent: `./bin/newrelic_rs`. The correct output here should say “gathering xx statistics” 
+Start the agent: `./bin/newrelic_rs`. The correct output here should say “gathering xx statistics”
 
 Now you can log in to your New Relic account and you’ll see the Rackspace Cloud Load Balancer icon in the left navigation pane. Once there you will see your load balancer(s) and you can view traffic, configure alerts, and you are good to go!
 
-Click [here][2] to start using the plugin today and keep an eye out for more Rackspace plugins that are currently under development. If you don’t already have a New Relic account, all Rackspace customers get a free Standard account for life through our Cloud Tools Marketplace. 
+Click [here][2] to start using the plugin today and keep an eye out for more Rackspace plugins that are currently under development.
 
 I’ll post again once the next plugin is available so feel free to follow me on [twitter][3] or [LinkedIn][4].
 

@@ -24,7 +24,7 @@ This demonstrates a departure from only consuming an infrastructure service to c
 
 Imagine scaling a payment system. You have to check for compliance. You have to check that proper firewall rules are in place. You likely have to scale a database. Let's take a look at a way to integrate a payment partner service into your application. Using a third-party payment gateway gives you the dual benefit of being more modular while also taking management of payment services off of your teams, allowing them to focus on making better products.
 
-Since [Stripe](https://cloudtools.rackspace.com/apps/757?1615490338) just joined the [Cloud Tools Marketplace](https://cloudtools.rackspace.com/home) as a partner, I want to walk through how to set up Stripe to start charging customers for your products. I am going to use Python here, but Stripe has more documentation for other languages on its [website](https://stripe.com/docs).
+I want to walk through how to set up Stripe to start charging customers for your products. I am going to use Python here, but Stripe has more documentation for other languages on its [website](https://stripe.com/docs).
 
 ##Install the client library
 

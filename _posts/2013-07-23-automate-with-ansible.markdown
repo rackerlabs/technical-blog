@@ -8,7 +8,7 @@ published: true
 categories:
   - Ansible
 ---
-This is a guest post written by Michael DeHaan, CTO at [AnsibleWorks][1], a Rackspace Cloud Tools partner. AnsibleWorks provides IT orchestration solutions that simplify the way IT manages systems, applications, and infrastructure.
+This is a guest post written by Michael DeHaan, CTO at [AnsibleWorks][1]. AnsibleWorks provides IT orchestration solutions that simplify the way IT manages systems, applications, and infrastructure.
 
 ----
 
@@ -28,7 +28,7 @@ As shown in our [ansible-examples][2] repository, here’s an example of what th
 - hosts: webservers
   user: root
   serial: 1
- 
+
   # These are the tasks to run before applying updates:
   pre_tasks:
     - name: disable nagios alerts for this host webserver service

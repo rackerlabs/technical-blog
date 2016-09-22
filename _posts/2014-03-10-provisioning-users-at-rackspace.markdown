@@ -9,8 +9,7 @@ categories:
   - Devops
 ---
 
-**This is a guest post from Topher Marie, VP of Engineering at
-[JumpCloud][jumpcloud], a Rackspace Cloud Tools Marketplace partner.**
+**This is a guest post from Topher Marie, VP of Engineering at JumpCloud.**
 
 I’ve got a new Unix server up at RackSpace and I need to get my users some
 accounts on it. How do I go about doing that? I could copy and paste each of
