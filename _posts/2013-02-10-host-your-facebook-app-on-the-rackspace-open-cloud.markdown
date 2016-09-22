@@ -40,6 +40,17 @@ We also offer our users our trademark [Fanatical Support](http://www.rackspace.c
 
 Don't need our Managed Cloud? No problem. All Rackspace cloud customers automatically receive Fanatical Support. Our techs are here for you 24x7x365 via phone, chat and ticket. They'll provide OS-level support, but won't be able to login to your server to perform advanced trouble shooting, or provide application-level support.
 
+Other Tools
+
+A number of leading cloud application providers bring you apps, software and functionality to complement your cloud infrastructure, including the following:
+
+   -   Track and manage your spend with [Cloudability](https://www.cloudability.com)
+   -   Enhanced application and performance monitoring with [New Relic](https://newrelic.com)
+   -   Performance and load testing of your application up to web-scale level with [SOASTA](https://www.soasta.com)
+   -   Easy browser-based management of your Cloud Files storage with [Cyberduck](https://cyberduck.io)
+
+That should get you started in hosting your Facebook app on
+
 That should get you started in hosting your Facebook app on the Rackspace open cloud!
 
 _This post was authored by Garry Prior who joined Rackspace in April 2012 as a Senior Product Manager in the UK, and played a key role in launching the open cloud product set in our International business.  Prior to joining Rackspace Garry held various product management/development roles during eight years at UK mobile operator O2.  Outside of Rackspace, Garry also founded and runs a mobile-web based business called Taxi for two.  He is married with two young kids and lives just outside of London, UK._

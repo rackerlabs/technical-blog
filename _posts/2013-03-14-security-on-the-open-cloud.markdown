@@ -76,10 +76,12 @@ Rackspace also manages network security for our customers' environments with a p
 
 Any public website is scanned by bots that are attempting to get access. Brute force attacks are commonplace.
 
+Any public website is scanned by bots that are attempting to get access. Brute force attacks are commonplace. With [Cenzic or Trustwave](https://www.trustwave.com/Company/Cenzic-is-now-Trustwave) you can protect your web application against malicious attacks. You can also offload some of your traffic to a CDN service like [CloudFlare](https://www.cloudflare.com) that has built in security features.
+
 ##Data Protection
 
 Did you know you can [encrypt data at rest](https://community.rackspace.com/products/f/5/t/66.aspx) with [Cloud Block Storage](http://www.rackspace.com/knowledge_center/article/cloud-block-storage-overview)? It's also important to use SSL when transmitting across the network. Again, you can also use an isolated network with Cloud Networks to further protect your sensitive data. You can even [link Cloud Networks and RackConnect togather](http://www.rackspace.com/knowledge_center/article/rackconnect-with-cloud-networks-faq) to take advantage of bare metal servers for certain applications.
 
 ##In Conclusion
 
-Security is a huge issue on any platform.
+Security is a huge issue on any platform. Combining Rackspace products with third-party cloud management products gives you the peace of mind when architecting an application on the cloud.
