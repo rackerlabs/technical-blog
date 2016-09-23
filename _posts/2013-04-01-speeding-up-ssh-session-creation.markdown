@@ -53,4 +53,4 @@ In contrast, with `ControlPersist` set, the master connection will remain open f
 
 If you're interested in more details, you can view the full documentation on configuring the SSH client by running `man ssh_config` or view the [web-based man page](http://linux.die.net/man/5/ssh_config).
 
-_This is a guest post written by Greg Brockman, an engineer at [Stripe](https://stripe.com/), a [Rackspace Cloud Tools](https://cloudtools.rackspace.com/home) partner. Stripe makes it easy to start accepting credit cards on the web today._
+_This is a guest post written by Greg Brockman, an engineer at [Stripe](https://stripe.com/). Stripe makes it easy to start accepting credit cards on the web today._

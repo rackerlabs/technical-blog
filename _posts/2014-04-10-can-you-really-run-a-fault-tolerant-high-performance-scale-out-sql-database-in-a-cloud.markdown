@@ -14,7 +14,7 @@ the industry’s first scale-out SQL database engineered for the cloud.
 ClustrixDB is uniquely and ideally suited to handle massive volumes of
 ACID-compliant transactional workloads while concurrently running real-time
 analytics on the same operational data. (See:
-[https://cloudtools.rackspace.com/apps/835#!overview](https://cloudtools.rackspace.com/apps/835#!overview) ).
+[http://www.clustrix.com](http://www.clustrix.com)).
 
 Delivering a database like ClustrixDB with linearly-scaling performance,
 automated fault-tolerance and self-healing in a cloud would be a significant
@@ -145,7 +145,7 @@ Performance 2   Perf 2 Improvement > Standard Instance
 
 
 **OLTP Results - Sysbench Write-Intensive Workload of 100% Write Queries**
- 
+
 
 
 ![enter image description here][5]
@@ -169,7 +169,7 @@ Performance 2   Perf 2 Improvement > Standard Instance
 **OLTP Results - Sysbench Read-Intensive Workload of 100% Read Queries**
 
 
- 
+
 
 The OLAP Analytics Query workload was created using a mix of long-running analytics queries including large multi-table joins and distributed aggregates across the cluster. This test is intended to get the cluster into a fairly compute-bound state with minimal intra-cluster traffic occurring as a percentage of query execution time. This characterization along with the dataset fitting well within the 30GB of RAM on each cluster node will do a pretty good job of isolating CPU and Memory differences.  This test clearly will not be able to expose the superior I/O performance of the Perf2 cluster nodes.  However it does show the percentage of gain of the Perf2 VMs maintained across the three cluster sizes.
 
@@ -189,7 +189,7 @@ Performance 2   Perf 2 Improvement > Standard Instance
 
 **OLAP Results – Analytics Query Workload**
 
- 
+
 Summary and Conclusions (sign me up and spin ‘em up!)
 Rackspace’s new Performance2 flavor class servers are definitely up to the task of providing a solid new delivery vehicle for production deployment of ClustrixDB in a cloud. They significantly close the gaps in functionality and performance between cloud-based clusters and dedicated, purpose-built Appliance clusters. Scalability is good and performance is predictable and close to that of our Appliance hardware.
 

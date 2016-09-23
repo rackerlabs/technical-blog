@@ -143,7 +143,7 @@ puts search.results.map(&:title)
 
 With a bit of JavaScript knowledge and a library like [Twitter Typeahead][11], you’re only a few minutes away from a sexy auto-complete feature!
 
-Qbox has a free developer tier with one shard per index, and should be available soon on the [Rackspace Cloud Tools Marketplace][12]. It can be launched from the Marketplace, or directly from the qbox.io website. Finally, for readers of the DevOps blog, [StackSearch CEO Mark Brandon][13] has given us a promo code for some free 90-day trials on any of the plan tiers, including the Enterprise plan that comes with four shards per index and three replicas - just use the [promo code "RAX"][14] when checking out. 
+Qbox has a free developer tier with one shard per index. It can be launched directly from the qbox.io website. Finally, for readers of the DevOps blog, [StackSearch CEO Mark Brandon][12] has given us a promo code for some free 90-day trials on any of the plan tiers, including the Enterprise plan that comes with four shards per index and three replicas - just use the [promo code "RAX"][13] when checking out.
 
 [1]: http://www.rackspacestartups.com/
 [2]: http://qbox.io
@@ -156,6 +156,5 @@ Qbox has a free developer tier with one shard per index, and should be available
 [9]: http://about.me/benhundley
 [10]: https://github.com/karmi/tire
 [11]: https://github.com/twitter/typeahead.js/
-[12]: https://cloudtools.rackspace.com/home
-[13]: http://about.me/markebrandon
-[14]: https://qbox.io/signup?promotion_code=RAX
+[12]: http://about.me/markebrandon
+[13]: https://qbox.io/signup?promotion_code=RAX

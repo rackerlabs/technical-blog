@@ -17,7 +17,7 @@ categories:
 
 
 This is a guest post written by Michael DeHaan, CTO at
-[AnsibleWorks](http://ansible.com), a Rackspace Cloud Tools partner.
+[AnsibleWorks](http://ansible.com).
 AnsibleWorks provides IT orchestration solutions that simplify the way
 IT manages systems, applications, and infrastructure.
 

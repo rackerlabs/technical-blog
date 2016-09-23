@@ -14,7 +14,7 @@ It's an emergency situation, and you are wandering into a dark room with a light
 Hopefully the customer has good monitoring in place so you can pinpoint the failure to a single server or a group of servers. With [Papertrail](http://papertrailapp.com), it becomes easier to find issues present in your application, and more importantly, _take action_ on the issue in an automated way. Papertrail helps detect, resolve, and avoid infrastructure problems using log messages. You can aggregate and manage log messages from Cloud Servers, Managed Hosting, Hybrid Hosting, and other servers — both flat files and rsyslog.
 <!-- more -->
 ##Setting up Papertrail Manually
-Once you [sign up](https://cloudtools.rackspace.com/apps/315?90095866) for an account, Papertrail has pretty quick setup instructions:
+Once you [sign up](https://papertrailapp.com/) for an account, Papertrail has pretty quick setup instructions:
 
 * Find out what logger you're running:
 `ls -d /etc/*syslog*`
@@ -44,10 +44,10 @@ git clone git://github.com/Benjamin-Ds/puppet-module-papertrail.git /etc/puppet/
 
 ```ruby
 node nodename {
-    class { 
-        'papertrail': 
+    class {
+        'papertrail':
         port => 12345,
-        optional_files => ['/var/log/something.log'] 
+        optional_files => ['/var/log/something.log']
     }
 }
 ```
@@ -74,6 +74,6 @@ Save the search and create an alert. Papertrail will ask you where the alert sho
 You can also send the alert to a [webhook](http://help.papertrailapp.com/kb/how-it-works/web-hooks) for custom alert handling.
 
 ##For more information
-If you're interested in adding Papertrail to your solution, there is a seven day free trial you can take advantage of to test it out. More details are available from our [Cloud Tools Marketplace](https://cloudtools.rackspace.com/apps/315?2019858592) or from Papertrail's [website](https://papertrailapp.com).
+If you're interested in adding Papertrail to your solution, there is a seven day free trial you can take advantage of to test it out. More details are available from Papertrail's [website](https://papertrailapp.com).
 
 **UPDATE**: I need to clarify the free trial: Papertrail has a free tier of service that never expires, and provides a bonus of extra storage for the first month. You can select any plan with a risk free trial of seven days.

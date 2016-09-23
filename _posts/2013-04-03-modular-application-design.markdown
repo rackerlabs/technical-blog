@@ -20,11 +20,11 @@ In the cloud though, we don't have to stop there. The above is a "bare metal ser
 
 {% img center 2013-04-04-modular/modular2.png 350 %}
 
-This demonstrates a departure from only consuming an infrastructure service to consuming a mixture of IaaS and platform services. Why maintain your own storage platform when you can consume [Cloud Files via an API](http://docs.rackspace.com/files/api/v1/cf-devguide/content/Overview-d1e70.html)? Why run your own email server when you can consume [Mailgun via an API](http://documentation.mailgun.net/)? Compute is expensive: you should only use it for tasks that actually require compute power!
+This demonstrates a departure from only consuming an infrastructure service to consuming a mixture of IaaS and platform services. Why maintain your own storage platform when you can consume [Cloud Files via an API](https://developer.rackspace.com/docs/cloud-files/v1/getting-started/)? Why run your own email server when you can consume [Mailgun via an API](http://documentation.mailgun.net/)? Compute is expensive: you should only use it for tasks that actually require compute power!
 
 Imagine scaling a payment system. You have to check for compliance. You have to check that proper firewall rules are in place. You likely have to scale a database. Let's take a look at a way to integrate a payment partner service into your application. Using a third-party payment gateway gives you the dual benefit of being more modular while also taking management of payment services off of your teams, allowing them to focus on making better products.
 
-Since [Stripe](https://cloudtools.rackspace.com/apps/757?1615490338) just joined the [Cloud Tools Marketplace](https://cloudtools.rackspace.com/home) as a partner, I want to walk through how to set up Stripe to start charging customers for your products. I am going to use Python here, but Stripe has more documentation for other languages on its [website](https://stripe.com/docs).
+I want to walk through how to set up [Stripe](https://stripe.com) to start charging customers for your products. I am going to use Python here, but Stripe has more documentation for other languages on its [website](https://stripe.com/docs).
 
 ##Install the client library
 

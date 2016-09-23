@@ -10,7 +10,7 @@ categories: []
 {% img right 2013-07-23-using-ironmq/ironmq.png 200 %}
 It’s an [established pattern](http://highscalability.com/blog/2012/12/17/11-uses-for-the-humble-presents-queue-er-message-queue.html) to use message queues when building scalable, extensible, and resilient systems, but a lot of developers are still unsure how to go about actually *implementing* message queues in their architectures. Worse, the number of queuing solutions makes it hard for developers to get a grasp on exactly what a queue is, what it does, and what each solution brings to the table.
 
-At [Iron.io](http://iron.io), we’re building [IronMQ](http://iron.io/mq), a queuing solution we’ve developed specifically to meet the specific needs of today’s cloud architectures. In this post, we wanted to detail how to use queues in your applications and highlight a couple of unique capabilities that IronMQ provides (and which are not found in RabbitMQ and other non-native cloud queues).
+At [Iron.io](http://iron.io), we’re building [IronMQ](http://iron.io/platform/mq), a queuing solution we’ve developed specifically to meet the specific needs of today’s cloud architectures. In this post, we wanted to detail how to use queues in your applications and highlight a couple of unique capabilities that IronMQ provides (and which are not found in RabbitMQ and other non-native cloud queues).
 
 One of the things that queuing does really, really well is *getting work out of the way*. Queues are built to be fast ways to make data available for other processes. That means that you can do more with your data, without making your customer wait. When it comes to response times every second matters, so only critical processing should take place within the immediate response loop. Queues let you do processing on data and perform non-immediate tasks without adding to your response time.<!-- more -->
 
@@ -41,15 +41,15 @@ Here’s the middleware we’re using:
 	    import json
 	except:
 	    import simplejson as json
-	
+
 	class QueueRequestMiddleware:
 	    queue = None
-	
+
 	    def __init__(self):
 	        # instantiate our IronMQ client once
 	        mq = IronMQ(host="mq-rackspace-ord.iron.io")
 	        self.queue = mq.queue("requests") # set our queue
-	
+
 	    def process_request(self, request):
 	        # push our request headers as a message to our queue
 	        data = {}
@@ -74,11 +74,11 @@ In our worker, we just want to store some basic information based on the request
 	from iron_mq import IronMQ
 	import redis
 	import time
-	
+
 	mq = IronMQ(host="mq-rackspace-ord.iron.io")
 	q = mq.queue("requests")
 	r = redis.StrictRedis()
-	
+
 	while True: # poll indefinitely
 	    msg = q.get() # ask the queue for messages
 	    if len(msg["messages"]) < 1: # if there are no messages
@@ -101,7 +101,7 @@ To test our application, we’re going to disable the middleware (commenting out
 This assumes your app is running on localhost:8000. The URL we’re serving is just a static page that does nothing but spit out text using Django. We’re testing for the base Django functionality, so we want as little variation as possible, which means limiting interaction with our database. Our output is as follows:
 
 	Lifting the server siege...      done.
-	
+
 	Transactions:		        3329 hits
 	Availability:		       99.25 %
 	Elapsed time:		        9.16 secs
@@ -124,7 +124,7 @@ The important parts are the Response time, the Transaction rate, and the Longest
 Now that we have base values, let’s uncomment the `QueueRequestMiddleware` in `MIDDLEWARE_CLASSES` and run siege again. Here’s the new output:
 
 	Lifting the server siege...      done.
-	
+
 	Transactions:		        1222 hits
 	Availability:		       98.71 %
 	Elapsed time:		        9.90 secs
@@ -137,7 +137,7 @@ Now that we have base values, let’s uncomment the `QueueRequestMiddleware` in 
 	Failed transactions:	          16
 	Longest transaction:	        3.50
 	Shortest transaction:	        0.06
-	
+
 As you can see, we increased our response time by .08 seconds on average, and at most 3.3 seconds, which means we can serve ~240 less requests in a second. While this may seem like a lot, keep in mind that our base is just a static page; adding a database behind the page will have similar effects. The good news is that, because your message processing is done outside the request loop, this performance hit is O(1): no matter how many different ways you want to analyze your requests, this cost will remain constant. There are a lot of different things you can do in the background, so this constant cost is a huge benefit. It enables you to do all of the following outside the request loop:
 
 * Image processing
@@ -190,11 +190,11 @@ We’re also going to want a worker to consume the `ua_requests` queue and store
 	from iron_mq import IronMQ
 	import redis
 	import time
-	
+
 	mq = IronMQ(host="mq-rackspace-ord.iron.io")
 	q = mq.queue("ua_requests")
 	r = redis.StrictRedis()
-	
+
 	while True: # poll indefinitely
 	    msg = q.get() # ask the queue for messages
 	    if len(msg["messages"]) < 1: # if there are no messages

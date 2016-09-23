@@ -16,7 +16,7 @@ Security is a major concern for all hosting platforms, but in the cloud security
 * Vulnerability and Asset Management
 * Data Protection
 
-I'll go through each one of these, including how to mitigate these risks on the Rackspace Open Cloud. We may highlight services and products you didn't know we had, as well as some of our partner companies from the [Cloud Tools Marketplace](https://cloudtools.rackspace.com/home).<!-- more -->
+I'll go through each one of these, including how to mitigate these risks on the Rackspace Open Cloud. We may highlight services and products you didn't know we had.<!-- more -->
 
 ##Identity and Access Management
 
@@ -34,7 +34,7 @@ With your token, you can then create a user:
 	-d '{"user": {"username": "$USERNAME", "email":"email@domain.com", "enabled": true, "OS-KSADM:password":"$PASSWORD"}}' \
 	-H "Content-type: application/json" -H "X-Auth-Token: $TOKEN”
 
-More information on the Identity API is available in the [documentation](http://docs.rackspace.com/auth/api/v2.0/auth-client-devguide/content/Overview-d1e65.html). We also partner with companies that provide application account services like [Stormpath](http://www.stormpath.com/).
+More information on the Identity API is available in the [documentation](http://docs.rackspace.com/auth/api/v2.0/auth-client-devguide/content/Overview-d1e65.html).
 
 ##Configuration and Patch Management
 
@@ -74,7 +74,9 @@ Rackspace also manages network security for our customers' environments with a p
 
 ##Vulnerability and Asset Management
 
-Any public website is scanned by bots that are attempting to get access. Brute force attacks are commonplace. With Rackspace Partners [Cenzic](https://cloudtools.rackspace.com/apps/305?1309562559) or [XyberShield](https://cloudtools.rackspace.com/apps/233?608833109) you can protect your web application against malicious attacks. You can also offload some of your traffic to a CDN service like [CloudFlare](https://cloudtools.rackspace.com/apps/291?788742213) that has built in security features.
+Any public website is scanned by bots that are attempting to get access. Brute force attacks are commonplace.
+
+Any public website is scanned by bots that are attempting to get access. Brute force attacks are commonplace. With [Cenzic or Trustwave](https://www.trustwave.com/Company/Cenzic-is-now-Trustwave) you can protect your web application against malicious attacks. You can also offload some of your traffic to a CDN service like [CloudFlare](https://www.cloudflare.com) that has built in security features.
 
 ##Data Protection
 
@@ -82,4 +84,4 @@ Did you know you can [encrypt data at rest](https://community.rackspace.com/prod
 
 ##In Conclusion
 
-Security is a huge issue on any platform. Combining Rackspace products with Partners from our Cloud Tools Marketplace gives you the peace of mind when architecting an application on the cloud.
+Security is a huge issue on any platform. Combining Rackspace products with third-party cloud management products gives you the peace of mind when architecting an application on the cloud.
