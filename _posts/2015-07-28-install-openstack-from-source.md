@@ -95,7 +95,7 @@ Install additional needed apt dependencies and needed pip packages:
     pip install python-glanceclient python-keystoneclient python-openstackclient
     pip install repoze.lru pbr mysql-python
 
-Create the various users and directories needed for the OpenStack services. The following script creates these for each of the services on the controller node: (a similar script is available for the network and compute nodes with fewer services)
+Create the various users and directories needed for the OpenStack services. The following script creates these for each of the services on the controller node and should be run using bash (not sh): (a similar script is available for the network and compute nodes with fewer services)
 
     for SERVICE in keystone glance neutron nova cinder
     do
@@ -124,6 +124,7 @@ Create the various users and directories needed for the OpenStack services. The 
         mkdir -p /etc/neutron/rootwrap.d
         chown -R neutron:neutron /etc/neutron/plugins
     fi
+    done
 
 Clone the keystone github repo move into the newly created keystone directory and use the python install process to install keystone: ( this can be changed to point to any release by changing the `kilo` in the next line, or to install from trunk by removing the `-b stable/kilo`)
 
