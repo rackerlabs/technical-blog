@@ -13,11 +13,11 @@ authorIsRacker: true
 
 ### I - Introduction
 
-This is the first of a multi-part series that demonstrates a pain-free solution a developer could use to transition code from laptop to production. The fictional deployment scenario depicted in this post is one method that can significantly reduce operational overhead on the developer. This series will make use of technologies such as Git, Docker, Elastic Beanstalk, and other standard tools.
+This is the first of a two-part series that demonstrates a pain-free solution a developer could use to transition code from laptop to production. The fictional deployment scenario depicted in this post is one method that can significantly reduce operational overhead on the developer. This series will make use of technologies such as Git, Docker, Elastic Beanstalk, and other standard tools.
 
 <!-- more -->
 
-In this first article, we will tackle some fundamental building blocks that will underpin a more realistic use-case in subsequent articles:
+In this first article, we will walk through a high-level demonstration of the following workflow:
 
 1. Environment setup
 2. Elastic Beanstalk configuration
@@ -25,7 +25,7 @@ In this first article, we will tackle some fundamental building blocks that will
 4. Deploying a feature release to local container
 5. Transitioning feature release to test Elastic Beanstalk environments
 
-**Caveat**: The current version of this project imposes a deliberately simplified dummy application, release workflow (i.e. no automated tests) and environment layout (just local dev and test) in order to illustrate the key concepts behind running Git, Docker, and Elastic Beanstalk as an integrated unit. Later articles in this series will tackle a realistic use-case that contains an application with multiple components and incorporation into a CICD workflow.
+**Caveat**: This project imposes a deliberately simplified dummy application, release workflow (i.e. no automated tests) and environment layout (just local dev and test) in order to illustrate the key concepts behind running Git, Docker, and Elastic Beanstalk as an integrated unit.
 
 **Disclaimer**: The demonstration code in the corresponding [repository] (https://github.com/djrut/trinity) is for illustrative purposes only and may not be sufficiently robust for production use. Users should carefully inspect sample code before running in a production environment. Use at your own risk.
 
@@ -44,7 +44,7 @@ The following fundamental design principles will be followed during the course o
 
 ### III Prerequisites
 
-This series of articles, and the corresponding demonstration code, has some dependencies on local environment and accounts with Docker, Github and AWS. You will need the following:
+This article, and the corresponding demonstration code, has some dependencies on local environment and accounts with Docker, Github and AWS. You will need the following:
 
 1. Ruby and Python interpreters
 2. Unix "Make" utility
@@ -204,11 +204,7 @@ This time the "eb open" command can be run to fire up a browser window pointing 
 
 During this demonstration, we examined a simplified use-case that enabled an easy-to-use and agile deployment mechanism with immutable application containers. The developer used three simple shell commands ("git commit", "make", and "eb deploy") to build a new immutable container and to push to the appropriate environment. This approach dramatically reduced the likelihood of broken dependencies as application releases are progressed from developer laptop onto to staging and production.
 
-In **Part II** of this series this series, we take a peek under the covers to examine how we integrated Docker, Elastic Beanstalk and Git to enable the simple example above.
-
-In **Part III**, we bring this closer to a real production scenario by adding some additional components (and external dependencies) to the application and introduce unit tests.
-
-In **Part IV**, we show how this application can integrate into a fully automated CI/CD workflow.
+In **Part II**, we will take a deep peek under the covers to examine exactly _how_ we integrated Docker, Elastic Beanstalk and Git to enable the simple example above.
 
 Thank-you for your time and attention!
 
