@@ -17,7 +17,7 @@ is the name you use in Azure storage.
 
 <!-- more -->
 
-A whitepaper back released in 2011 describes the
+A whitepaper released in 2011 describes the
 internals of how Azure Storage works under the hood. It describes how the
 partitioning layer uses a range based partitioning scheme to scale and load
 balance the storage system. Using the range based makes sense in a multi-tenant
