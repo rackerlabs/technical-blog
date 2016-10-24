@@ -98,8 +98,7 @@ succeeded
 
  
 
-I encourage you to read the whitepaper and understand how
-the Azure storage system works. http://sigops.org/sosp/sosp11/current/2011-Cascais/printable/11-calder.pdf
+I encourage you to read [the whitepaper](http://sigops.org/sosp/sosp11/current/2011-Cascais/printable/11-calder.pdf) and understand how the Azure storage system works. 
 
  
 
