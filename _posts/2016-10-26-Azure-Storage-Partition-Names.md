@@ -59,14 +59,14 @@ Standard_LRS storage account type.
 "name":
 "[concat(substring(uniqueString(subscription().id, resourceGroup().id,
 'cd', string(copyindex())) ,0,10), 'cd', copyIndex())]",
-   
+ ```
+ ```
 "name":
 "[concat(substring(uniqueString(subscription().id, resourceGroup().id,
 deployment().name, string(copyIndex())) ,0,10), 'cd',
 copyIndex(),'ssd')]",
 ```
  
-
 The first storage account, I am generating a hash based on
 the subscription id, resourcegroup id, a string called 'cd' and the current
 integer of my index loop. I then concatenate the hash, 'cd' and the current
