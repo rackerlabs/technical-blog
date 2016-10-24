@@ -45,12 +45,7 @@ partition servers, we can scale our performance linearly with load.
 How can we generate unique names that are not following some
 kind of prefix pattern? This is a good question. Researching what ARM template
 functions exist, I was surprised there was nothing on generating a random name.
-There was a [feedback post](
-
-https://feedback.azure.com/forums/281804-azure-resource-manager/suggestions/8499160-provide-a-template-function-to-generate-a-name
-
-
-, but Microsoft declined the request.
+There was a [feedback post](https://feedback.azure.com/forums/281804-azure-resource-manager/suggestions/8499160-provide-a-template-function-to-generate-a-name), but Microsoft declined the request.
 
 
 Talking with a peer, Alex Campos from our Rackspace Azure
@@ -60,17 +55,16 @@ which will generate a hash based on the objects passed in. In my ARM template,
 I am creating 2 storage accounts for each VM in my copy loop. A Premium_LRS and
 Standard_LRS storage account type. 
 
-     
+ ```    
 "name":
 "[concat(substring(uniqueString(subscription().id, resourceGroup().id,
 'cd', string(copyindex())) ,0,10), 'cd', copyIndex())]",
-
-     
+   
 "name":
 "[concat(substring(uniqueString(subscription().id, resourceGroup().id,
 deployment().name, string(copyIndex())) ,0,10), 'cd',
 copyIndex(),'ssd')]",
-
+```
  
 
 The first storage account, I am generating a hash based on
