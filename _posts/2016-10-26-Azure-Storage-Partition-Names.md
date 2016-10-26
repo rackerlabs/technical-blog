@@ -31,21 +31,19 @@ Resource Manager template, you will normally see some kind of storage account
 prefix parameter that is consumed during the storage account creation process.
 An example of the output of this would look something like ``` "name":
 "[concat(parameters('storageAccount'), copyindex())]" ``` which would
-output myStorage0, myStorage1, myStorage2. Another example is straight from the
-Azure github repo which has ``` "storageAccountName":
+output myStorage0, myStorage1, myStorage2, etc. Another example that shows hashing the resource group name using the function **uniqueString** ``` "storageAccountName":
 "[concat(uniquestring(resourceGroup().id), 'standardsa')]". ``` This
 would generate a hash based on the resourceGroup id and concat standardsa to
 it, but it would be the same prefix hash, not randomly generate names in that
 loop. This would cause it to potentially be put on the same partition server.
-The performance hit happens when the storage location service decides to
+The examples shown could potentially have a performance hit happen when the storage location service decides to
 rebalance the partition ranges. This rebalancing operation causes latency of
 storage calls. If we were to create a way to distribute writes across multiple
 partition servers, we can scale our performance linearly with load. 
 
 How can we generate unique names that are not following some
 kind of prefix pattern? This is a good question. Researching what ARM template
-functions exist, I was surprised there was nothing on generating a random name.
-There was a [feedback post](https://feedback.azure.com/forums/281804-azure-resource-manager/suggestions/8499160-provide-a-template-function-to-generate-a-name), but Microsoft declined the request.
+functions exist, I was surprised there was nothing on generating a random name. There have been requests to Microsoft for providing this functionality, but these suggestions were [turned down](https://feedback.azure.com/forums/281804-azure-resource-manager/suggestions/8499160-provide-a-template-function-to-generate-a-name).
 
 
 Talking with a peer, Alex Campos from our Rackspace Azure
