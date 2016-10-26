@@ -9,11 +9,7 @@ categories:
     - DevOps
 ---
 
-Microsoft has built a load balanced, geo replicated and
-durable storage system that powers a lot of the Azure infrastructure as we know
-of today. If you have a heavy write workload, there is one thing you can do to
-improve performance that the majority of people are not doing. That one thing
-is the name you use in Azure storage.
+If you are using Azure Blob Storage and have a heavy write workload, there is one thing you can do to improve performance that the majority of people are not doing. That one thing is the name you use for an Azure storage account.
 
 <!-- more -->
 
@@ -33,21 +29,18 @@ An example of the output of this would look something like ``` "name":
 "[concat(parameters('storageAccount'), copyindex())]" ``` which would
 output myStorage0, myStorage1, myStorage2, etc. Another example that shows hashing the resource group name using the function **uniqueString** ``` "storageAccountName":
 "[concat(uniquestring(resourceGroup().id), 'standardsa')]". ``` This
-would generate a hash based on the resourceGroup id and concat standardsa to
-it, but it would be the same prefix hash, not randomly generate names in that
-loop. This would cause it to potentially be put on the same partition server.
-The examples shown could potentially have a performance hit happen when the storage location service decides to
-rebalance the partition ranges. This rebalancing operation causes latency of
+would generate a hash based on the resourceGroup id and concatenate standardsa to
+it, but it would be the same prefix hash, not randomly generate names. The prefixes generated could potentially put the partitions on the same partition server due to the sequential naming.
+This potentially could have a performance impact when the storage location service decides to
+rebalance the partition ranges to different partition servers. This rebalancing operation causes latency of
 storage calls. If we were to create a way to distribute writes across multiple
-partition servers, we can scale our performance linearly with load. 
+partition servers using a non sequential naming pattern, we can scale our performance linearly with load. 
 
-How can we generate unique names that are not following some
-kind of prefix pattern? This is a good question. Researching what ARM template
+How can we generate unique names that are not following a prefix pattern? This is a good question. Researching what ARM template
 functions exist, I was surprised there was nothing on generating a random name. There have been requests to Microsoft for providing this functionality, but these suggestions were [turned down](https://feedback.azure.com/forums/281804-azure-resource-manager/suggestions/8499160-provide-a-template-function-to-generate-a-name).
 
-
-Talking with a peer, Alex Campos from our Rackspace Azure
-team wrote a generic storage template that solves on how to generate a unique
+Talking with a peer, Alex Campos, from our Rackspace Azure
+team, wrote a generic storage template that solves on how to generate a unique
 name. There is a function available in an ARM template called uniqueString
 which will generate a hash based on the objects passed in. In my ARM template,
 I am creating 2 storage accounts for each VM in my copy loop. A Premium_LRS and
@@ -94,9 +87,9 @@ succeeded
 Microsoft.Storage/storageAccounts 'a725b73hpkcd1ssd' provisioning status is
 succeeded
 
- 
+Using our examples above, our partition map which tracks the index range partitions, intially may have had mystorage0, mystorage1, mystorage2 on partition server 1. With our modified code to generate a unique prefix hash, our partitions now should be spread out on multiple partition servers since we are not following a sequential naming pattern.
 
-I encourage you to read [the whitepaper](http://sigops.org/sosp/sosp11/current/2011-Cascais/printable/11-calder.pdf) and understand how the Azure storage system works. 
+I encourage you to read [the whitepaper](http://sigops.org/sosp/sosp11/current/2011-Cascais/printable/11-calder.pdf) for more insight into the Azure Storage system.
 
  
 
