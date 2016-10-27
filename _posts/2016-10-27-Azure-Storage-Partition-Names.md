@@ -9,7 +9,7 @@ categories:
     - DevOps
 ---
 
-If you are using Azure Blob Storage and have a heavy workload, you can do to improve performance that the majority of people are not doing - pay attention to the name you use for an Azure storage account.
+If you are using Azure Blob Storage and have a heavy workload, here's something you can do to improve performance that the majority of people are not doing - pay attention to the name you use for an Azure storage account.
 
 <!-- more -->
 
