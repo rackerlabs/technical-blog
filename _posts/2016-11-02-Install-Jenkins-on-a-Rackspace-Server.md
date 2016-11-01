@@ -31,5 +31,7 @@ The following steps show how to update the number of worker nodes after server c
 
 1. Install 'python-openstackclient' or 'python-heatclient', as well as any dependencies.
 2. Set the appropriate environment variables. For more information, see [Using the heat client](https://developer.rackspace.com/docs/cloud-orchestration/v1/getting-started/send-request-ovw/#using-the-heat-client.
-3. Run the following command, substituting your Stack Name for 'Jenkins-Stack' and the number of workers you want in the server\\_count parameter: `openstack stack update --existing --parameter server_count=3 Jenkins-Stack`
+3. Run the following command, substituting your Stack Name for 'Jenkins-Stack' and the number of workers you want in the server_count parameter:
+
+`openstack stack update --existing --parameter server_count=3 Jenkins-Stack`
 4. Wait for the stack to finish updating. You can view the status of the stack by using the MyCloud Control Panel and listing your servers or by running the command: `openstack stack list`.
