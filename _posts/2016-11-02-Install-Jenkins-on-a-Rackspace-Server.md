@@ -35,4 +35,4 @@ The following steps show how to update the number of worker nodes after server c
 
 `openstack stack update --existing --parameter server_count=3 Jenkins-Stack`
 
-4. Wait for the stack to finish updating. You can view the status of the stack by using the MyCloud Control Panel and listing your servers or by running the command: `openstack stack list`.
+Wait for the stack to finish updating. You can view the status of the stack by using the MyCloud Control Panel and listing your servers or by running the command: `openstack stack list`.
