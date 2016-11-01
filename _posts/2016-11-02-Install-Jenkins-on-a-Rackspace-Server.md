@@ -30,7 +30,7 @@ The following steps show you how to choose the correct Orchestration template to
 The following steps show how to update the number of workers after server creation.
 
 # Install 'python-openstackclient' or 'python-heatclient', as well as any dependencies.
-# Set the appropriate environment variables (for more information, see https://developer.rackspace.com/docs/cloud-orchestration/v1/getting-started/send-request-ovw/#using-the-heat-client)
+# Set the appropriate environment variables (for more information, see [Using the heat client](https://developer.rackspace.com/docs/cloud-orchestration/v1/getting-started/send-request-ovw/#using-the-heat-client).
 # Run the following command, substituting your Stack Name for 'Jenkins-Stack' and the number of workers you want in the server_count parameter:
 ```
 openstack stack update --existing --parameter server_count=3 Jenkins-Stack
