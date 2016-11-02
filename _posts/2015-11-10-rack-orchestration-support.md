@@ -18,7 +18,7 @@ We're excited to announce that Cloud Orchestration is now accessible via [`rack`
 
 Earlier this quarter, we [announced](https://developer.rackspace.com/blog/introducing-rack-global-cli/) `rack`, a new global command-line interface purpose-built for interacting with the Rackspace cloud. We're pleased to announce that you can now access our [Cloud Orchestration](http://www.rackspace.com/en-us/cloud/orchestration) service via `rack`.
 
-[Rackspace Cloud Orchestration]((http://docs.rackspace.com/orchestration/api/v1/orchestration-templates-devguide/content/overview.html)) is a RESTful API Service that can be used to create and manage cloud resources (for example: servers + software installation, databases, load balancers, and so forth) by declaring what you want deployed using a simple template language. Therefore, a template is used to describe resources, which, when deployed, are collectively termed a _stack_. For example, a template can be used to deploy a [LAMP](https://github.com/rackspace-orchestration-templates/lamp/blob/master/lamp.yaml) stack, whose resources include a Linux server with Apache, PHP and a MySQL database.
+[Rackspace Cloud Orchestration]((https://developer.rackspace.com/docs/cloud-orchestration/v1/)) is a RESTful API Service that can be used to create and manage cloud resources (for example: servers + software installation, databases, load balancers, and so forth) by declaring what you want deployed using a simple template language. Therefore, a template is used to describe resources, which, when deployed, are collectively termed a _stack_. For example, a template can be used to deploy a [LAMP](https://github.com/rackspace-orchestration-templates/lamp/blob/master/lamp.yaml) stack, whose resources include a Linux server with Apache, PHP and a MySQL database.
 
 Once we have the latest version of `rack` set up, creating a stack is as easy as:
 
@@ -44,7 +44,7 @@ resources:
       networks:
       - {uuid: 11111111-1111-1111-1111-111111111111}
 ```
-As we can see, the template has 2 sections: the template version and resources. We see that the type of the resource is a cloud server named `test-server` using the `2 GB General Purpose v1` flavor, `Debian 7 (Wheezy) (PVHVM)` image and attached to a network with UUID `11111111-1111-1111-1111-111111111111` (which is the [Rackspace ServiceNet network](http://www.rackspace.com/knowledge_center/frequently-asked-question/what-is-servicenet)). The output of the command shows details about the created stack such as its `id` and a URL to access the stack.
+As we can see, the template has 2 sections: the template version and resources. We see that the type of the resource is a cloud server named `test-server` using the `2 GB General Purpose v1` flavor, `Debian 7 (Wheezy) (PVHVM)` image and attached to a network with UUID `11111111-1111-1111-1111-111111111111` (which is the Rackspace ServiceNet network). The output of the command shows details about the created stack such as its `id` and a URL to access the stack.
 
 The cool thing about using `rack` with cloud orchestration is that we can easily access details of all the options that we may want to use in the template. For example, we might be more interested in deploying a server using RHEL; to get a list of available images, we can use `rack`:
 

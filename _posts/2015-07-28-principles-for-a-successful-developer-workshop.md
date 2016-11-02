@@ -65,7 +65,7 @@ Teaching developers a new technology often involves installing some software. Ty
 
 Instead start from a clean environment. We live in the age of cloud. Use it to your advantage. Have VMs in the cloud all ready to go for your attendees. You can have those VMs configured exactly how you need them to be and everyone is on the same page right from the start. Then they just ssh or do a Remote Desktop Connection to the VM and away you go.
 
-Naturally my preferred cloud is [Rackspace](http://www.rackspace.com/cloud). :) I can start [Cloud Servers](http://www.rackspace.com/cloud/servers) for everyone, create [sub-users with role based access control](http://www.rackspace.com/knowledge_center/article/overview-role-based-access-control-rbac) that they can use to create their own VMs, or encourage people to sign up for our [developer+ program](https://developer.rackspace.com/signup/).
+Naturally my preferred cloud is [Rackspace](http://www.rackspace.com/cloud). :) I can start [Cloud Servers](http://www.rackspace.com/cloud/servers) for everyone, create [sub-users with role based access control](https://support.rackspace.com/how-to/overview-role-based-access-control-rbac/) that they can use to create their own VMs, or encourage people to sign up for our [developer+ program](https://developer.rackspace.com/signup/).
 
 ### <a name="walk-through-sign-ups"></a>Walk-Through Sign Ups
 

@@ -24,7 +24,7 @@ In this post, we will look at Docker, CoreOS & Fleet and demonstrate how one cou
 
  * If you don't have an account, you can still follow this and do it on your own servers, but the process will need some customizations.
 
- * If using Rackspace Cloud, ensure that you have novaclient installed. Refer to [Installing Nova](http://www.rackspace.com/knowledge_center/article/installing-python-novaclient-on-linux-and-mac-os) for more details.
+ * If using Rackspace Cloud, ensure that you have novaclient installed. Refer to [Installing Nova](https://support.rackspace.com/how-to/installing-python-novaclient-on-linux-and-mac-os/) for more details.
 
  * Next, clone this repo which is needed for the examples below.
 

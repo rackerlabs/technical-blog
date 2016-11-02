@@ -24,7 +24,7 @@ Docker Machine has not yet been released, which means you have to download the `
 
 ### Credentials
 
-Unsurprisingly, you'll also need your API-key and Rackspace username. If you're unsure about how or where to get those, please follow [these instructions](http://www.rackspace.com/knowledge_center/article/view-and-reset-your-api-key).
+Unsurprisingly, you'll also need your API-key and Rackspace username. If you're unsure about how or where to get those, please follow [these instructions](https://support.rackspace.com/how-to/view-and-reset-your-api-key/).
 
 
 ### Create your first Docker Host

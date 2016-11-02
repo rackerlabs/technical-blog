@@ -91,7 +91,7 @@ Open app/templates/index.html in your favourite text editor. Make a change and s
 
 ## Remote Deployment
 
-This part is trickier because we have to setup credentials and worry about security. If you don't have a Rackspace account, you can get free credit by [signing up for developer+](https://developer.rackspace.com/signup/). Once your account is ready, you need to [find your API key](http://www.rackspace.com/knowledge_center/article/view-and-reset-your-api-key). Set the following environment variables in your terminal.
+This part is trickier because we have to setup credentials and worry about security. If you don't have a Rackspace account, you can get free credit by [signing up for developer+](https://developer.rackspace.com/signup/). Once your account is ready, you need to [find your API key](https://support.rackspace.com/how-to/view-and-reset-your-api-key/). Set the following environment variables in your terminal.
 
 ```bash
 export OS_USERNAME=your-rackspace-username

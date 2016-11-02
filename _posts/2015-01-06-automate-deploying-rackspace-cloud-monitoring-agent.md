@@ -13,7 +13,7 @@ So after being asked to do what I considered to be a easy thing, I soon realized
 
 <!-- more -->
 
-Let’s get into some of the prep work that is required.  To install the agent, you need the following: signing key, distro based package, your cloud API key, and your cloud user name.  The signing key and distribution package lists can be found at: http://www.rackspace.com/knowledge_center/article/install-the-cloud-monitoring-agent.  
+Let’s get into some of the prep work that is required.  To install the agent, you need the following: signing key, distro based package, your cloud API key, and your cloud user name.  The signing key and distribution package lists can be found at: https://support.rackspace.com/how-to/install-and-configure-the-rackspace-monitoring-agent/.
 
 For testing purposes, I created an Ansible role, for which I had already pulled down the required components for RHEL versions 6/7 and CentOS version 6. If you needed a different Linux version, you need to pull down the key and package for your OS and version. Store the key and package file in the ‘files' directory of the Ansible role.
 
