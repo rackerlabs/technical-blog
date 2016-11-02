@@ -141,12 +141,12 @@ working on real-time and analytical needs.
 ## Monitoring Hadoop infrastructure — Cloud Monitoring standard checks ##
 
 The
-[standard Cloud Monitoring checks](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-monitoring-checks-and-alarms)
+[standard Cloud Monitoring checks](https://support.rackspace.com/how-to/rackspace-monitoring-checks-and-alarms/)
 make monitoring infrastructure very easy as they include all the most
 useful checks.
 
 We used the following
-[check types](http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/appendix-check-types.html)
+[check types](https://developer.rackspace.com/docs/rackspace-monitoring/v1/api-reference/check-type-operations/)
 for monitoring infrastructure:
 
 * *CPU Load*: check type `agent.cpu` check with metric `usage_average`
