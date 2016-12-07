@@ -5,6 +5,7 @@ date: 2016-12-08 10:22
 comments: false
 author: Jimmy Rudley
 published: true
+authorIsRacker: true
 categories:
     - DevOps
 ---
