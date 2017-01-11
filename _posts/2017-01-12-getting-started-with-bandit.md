@@ -112,7 +112,7 @@ Following that we're told
 
 1. How severe the issue is - Medium in this case
 2. How confident Bandit is that there's a problem - High
-3. Where the issue - in `blog_ex.py` on line number 8
+3. Where the issue is - in `blog_ex.py` on line number 8
 
 And then it shows us the code in question, complete with line numbers.
 
