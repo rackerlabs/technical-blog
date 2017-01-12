@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Bandit
-date: 2017-01-12 10:00
+date: 2017-01-16 10:00
 comments: false
 author: Ian Cordasco
 published: true
@@ -53,7 +53,7 @@ yaml_str = to_yaml({
     # Yes, this is some metadata about this blog ;)
     'layout': 'post',
     'title': 'Getting Started with Bandit',
-    'date': '2017-01-12 10:00',
+    'date': '2017-01-16 10:00',
     'author': 'Ian Cordasco',
 })
 parsed_yaml = from_yaml(yaml_str)
