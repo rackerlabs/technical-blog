@@ -11,30 +11,30 @@ categories:
     - OpenStack
 ---
 
-Working in Python provides a number of benefits - rapid prototyping, a fast
-interpreter, optimized implementations - but it also has a lesser known
-benefit of being able to analyze itself. Tools written in Python can use its
-built-in `ast` module to parse and analyze other Python code into an
-"_A_bstract _S_yntax _T_ree". Perhaps you've heard of Flake8, PyFlakes,
-PyLint, Radon, or another tool that provides style checking, lint discovery,
-or complexity computation? They all use the AST to provide that functionality.
-There's also a tool called [Bandit][] that uses the AST to provide static
-security analysis of Python programs.
+One of the many benefits of using and working with Python is its ability to
+introspect itself. This empowers us to write and use tools to analyze the
+projects we use and write. Tools written in Python can use the built-in `ast`
+module to parse and analyze other Python code into an "_A_bstract _S_yntax
+_T_ree". Perhaps you've heard of Flake8, PyFlakes, PyLint, Radon, or another
+tool that provides style checking, lint discovery, or complexity computation?
+They all use the AST to provide that functionality. There's also a tool called
+[Bandit][] that uses the AST to provide static security analysis of Python
+programs.
 
 <!-- more -->
 
-Starting out with Bandit is as easy as
+Starting out with Bandit is simple
 
 ```
 $ pip install bandit
 $ bandit path/to/code/to/check/*.py
 ```
 
-Bandit will scan our files for any known vulnerabilities and then provide us
+Bandit scans our files for any known vulnerabilities and then provides us
 with explicit feedback about what it found, the severity of the problem, and how
-confident it is in the discovery. Let's take a look at an example. Bandit
-knows about PyYAML and some of it's past security vulnerabilities, so let's
-have it example some code we've written that looks like this:
+confident it is in its discovery. Let's take a look at an example. Bandit
+knows about PyYAML and some of its past security vulnerabilities, so let's
+give it example some code that I wrote:
 
 ```python
 # blog_ex.py
@@ -99,7 +99,7 @@ Run metrics:
 Files skipped (0):
 ```
 
-Let's look specifically at the "Test results" section. We see here that
+Let's look specifically at the `Test results` section. We see here that
 there's an issue labeled `B506` and named `yaml_load`. The message then tells
 us what the specific issue is and a potential way to fix it:
 
@@ -108,16 +108,15 @@ Use of unsafe yaml load. Allows instantiation of arbitrary objects. Consider
 yaml.safe_load().
 ```
 
-Following that we're told
+After that message, we are given information about:
 
 1. How severe the issue is - Medium in this case
 2. How confident Bandit is that there's a problem - High
 3. Where the issue is - in `blog_ex.py` on line number 8
+4. And the code in question, complete with line numbers.
 
-And then it shows us the code in question, complete with line numbers.
-
-If we were certain ywe wanted to disable this check, we could then "skip" it
-by it's ID (`B506`) explicitly:
+If we were certain we wanted to disable this check, we could then "skip" it
+by its ID (`B506`) explicitly:
 
 ```
 ~/o/bandit ❯❯❯ bandit -s B506 blog_ex.py
