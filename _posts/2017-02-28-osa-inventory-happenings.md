@@ -5,6 +5,7 @@ date: 2017-02-28 23:59
 comments: false
 author: Nolan Brubaker
 published: true
+authorIsRacker: true
 categories:
     - OpenStack
     - Ansible
@@ -21,11 +22,12 @@ release. Learn what's happened since and what's in store for the future.
 
 # Background
 
-The OpenStaack-Ansible project was first introduced with the Icehouse
-release of Openstack. It included an Ansible dynamic inventory script,
-``playbooks/inventory/dynamic_inventory.py``. This script takes
-information from the OSA configuration files and produces host information
-for generating LXC containers, which in turn host the OpenStack services.
+The OpenStack-Ansible project (also known as OSA) was first introduced with
+the Icehouse release of OpenStack. It included an Ansible dynamic
+inventory script, ``playbooks/inventory/dynamic_inventory.py``. This
+script takes information from the OSA configuration files and produces host
+information for generating LXC containers, which in turn host the
+OpenStack services.
 
 We also included some scripts to manage the generated inventory file, so
 that maintenance tasks like removing a host could be done more easily.
