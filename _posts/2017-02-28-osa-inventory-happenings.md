@@ -6,7 +6,6 @@ comments: false
 author: Nolan Brubaker
 published: true
 categories:
-    - OpenStack-Ansible
     - OpenStack
     - Ansible
 ---
@@ -43,18 +42,16 @@ a few key changes have happened over the life of the OSA project:
  - With Newton, new logical groupings were generated to assist with
  targetting more specific hosts for work.
  - Beginning in Newton and continued in Ocata, the code has been
- refactored to be easier to follow, as well as reorganized.
+ refactored to be easier to understand.
 
 # Future plans
 
 In Pike, we hope to make the biggest change to the inventory system yet:
 providing a plugin system for reading and writing to different backends.
 
-This feature will help deployers re-use existing systems for providing
+This feature will help deployers use their existing systems for providing
 configuration information, as well as a more robust method of storing
-generated information. By using these external systems, deployers should
-be able to take advantage of things like role-based access control, change
-history and high availability that isn't currently possible today.
+generated information.
 
 To facilitate this change, we'll also be making the OSA inventory code
 installable via pip, should others wish to take advantage of it.
