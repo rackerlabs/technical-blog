@@ -31,7 +31,8 @@ Assuming you have Azure PowerShell installed, you can pass in some parameters to
 * Azure Storage Container. Optionally, you can use the switch statusBar to give the progress of the export.
 ![Azure Storage Account Container]({% asset_path 2017-03-06-Export-Azure-SQL-DB/selectstoragecontainer.png %})
 
-The script will export out the BACPAC uri which you can download the BACPAC file..
+The script will export out the BACPAC uri which you can download the BACPAC file
+![Azure BACPAC URI]({% asset_path 2017-03-06-Export-Azure-SQL-DB/uri.png %})
 
 
 
