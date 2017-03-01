@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How to 
-date: 2016-12-08 10:22
+title: Exporting an Azure SQL DB via PowerShell  
+date: 2017-03-06 10:22
 comments: false
 author: Jimmy Rudley
 published: true
@@ -10,24 +10,15 @@ categories:
     - DevOps
 ---
 
-With Azure App Service, backing up your web app is available depending which App Service plan is choosen. With the introduction of larger applications moving to the cloud, certain files or folders do not need backed up. This is not something an end user can do in the Azure portal, so let's investigate how we can accomplish filtering of files or folders during the backup process.
+Azure SQL is Microsoft's answer to Platform as a Service for SQL Server. It extracts a lot of the day to day administrative tasks of managing an installation. Let’s take a look how a consumer of Azure SQL can export data out to restore to a local on premise installation.
 
 <!-- more -->
 
-In the Azure portal, select your web app and in the blade under settings, there will be a backup option. 
+Most SQL Server users are familiar with the concept of doing a backup using SQL Server Management Studio resulting in a backup (.bak) file. With Azure SQL, backup files are not supported, but instead BACPAC files are generated. A BACPAC file contains the database schema and data. If a user wants to generate a bacpac file, they can use the Azure portal, but that becomes tedious when you are doing a lot of exports each day on random databases. After doing a few exports using the portal, I decided to write up a PowerShell script with prompts to choose a DB and export to a storage container.
 
 ![backup blade]({% asset_path 2016-12-08-Filtering-backups-in-Azure-App-Service/blade.png %})
 
-From here, select configure to choose your storage settings.  This will be a storage account and a container to dump the backup files to. Optionally, you can then select schedule settings and set a reoccuring backup. If you are doing an on-demand backup, please note that doing more than 1 backup will overwrite your existing on demand backup. It does not append any timestamp or naming suffix to make the backup unique. If doing a scheduled backup, Azure will append the timestamp onto the file name. 
-![files]({% asset_path 2016-12-08-Filtering-backups-in-Azure-App-Service/files.png %})
+Assuming you have Azure PowerShell installed, run .\Export-AzureSqlDB.ps1. It will prompt to select an Azure subscription, resource group the Azure SQL Server is in, the Azure SQL Server, the DB to export, the Azure Sql Admin password, storage account and container. Optionally, you can use the switch statusBar to give the progress of the export.
 
-For example, I am using a Sitecore PaaS deployment, focusing on the content delivery node. I want to make sure I filter out the Sitecore and temp folders in my backup. For this, let's create a new file and call it ```_backup.filter``` In this file, specify the full path of the file and folders to exclude.
-```
-/site/wwwroot/sitecore
-/site/wwwroot/temp
-```
-Upload this file to your webroot directory.
-```
-/site/wwwroot
-```
-When starting an on-demand or scheduled backup, those folders are excluded to reduce the size of your zip. Because the storage account is  billed based on the amount of space, we exclude files we need so that we can save space and reduce costs.
+Feel free to fork the repo and modify as you wish. 
+
