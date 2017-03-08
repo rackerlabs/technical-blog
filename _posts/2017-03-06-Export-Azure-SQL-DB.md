@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Exporting an Azure SQL DB via PowerShell  
-date: 2017-03-06 10:22
+date: 2017-03-08 10:22
 comments: false
 author: Jimmy Rudley
 published: true
