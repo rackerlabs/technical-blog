@@ -6,7 +6,6 @@ comments: true
 author: Damon Cali
 published: true
 categories:
-  - Ruby
   - DevOps
   - OpenStack
   - Cloud Servers

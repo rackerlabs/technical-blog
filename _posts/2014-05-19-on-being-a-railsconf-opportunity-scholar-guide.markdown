@@ -5,8 +5,7 @@ date: '2014-05-19 15:05'
 comments: true
 author: Evan Light
 published: true
-categories:
-  - Ruby
+categories: []
 ---
 
 My love for the Ruby community goes back 2006 when it saved me from my Java and government contracting induced burnout, making programming fun again. As Matz (Yukihiro Matsumoto) so often says, he wrote Ruby to make programmers happy.

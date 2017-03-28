@@ -6,9 +6,8 @@ comments: true
 author: Derek Lane
 published: true
 categories:
-    - devops
-    - automation
-    - powershell
+  - devops
+  - automation
 ---
 
 Automation in Windows has historically been a challenge due to lack of built in tools for remote management.  In the past few years, the enhancements to PowerShell and WinRM (Windows Remote Management) have forged a path that is now more on par with other operating systems in regards to remote access.
@@ -23,21 +22,21 @@ One of the primary benefits of using PowerShell is that there is no need to inst
 Built on OpenStack .NET SDK , we can leverage these functions in PowerShell for many other management tasks as well.
 
 ** Example listing servers by name match **
-	
+
 	Get-OpenStackComputeServer -Account ORD | Where-Object {$_.name -like 'ServerName*'}
 
 ###Challenges in Authentication
 Microsoft usually assumes you are in an Active Directory Domain utilizing credentials that can access all servers in your environment.  This may be true in certain cases however, when utilizing the cloud, it is not a certainty. In this example, I use a set of credentials that works across all of my devices to keep the scope of this article simple.
-	
-	
+
+
 	$UserCred = Get-Credential -Credential AdminAccount
-	
-	
-	
+
+
+
 ### Putting it all together to connect
 
 	$Servers = Get-OpenStackComputeServer -Account ORD | Where-Object {$_.name -like 'ServerName*'}
- 
+
     foreach ($Server in $Servers)
 	{
 	   $so = New-PSSessionOption -SkipCNCheck -SkipCACheck -ProxyAccessType IEConfig
@@ -47,7 +46,7 @@ Microsoft usually assumes you are in an Active Directory Domain utilizing creden
 **This will gather all the connected sessions**
 
     $ConnectedServers = Get-PSSession
- 
+
 **Executing a command to all the servers at once**
 
 	Invoke-Command -Session $ConnectedServers -ScriptBlock {Get-Service RackspaceCloudServersAgent}
@@ -58,7 +57,7 @@ This is just a quick primer on how to use PowerShell and remote sessions. WinRM 
  Look for future articles describing how to leverage these concepts further using DSC
 
 ![Example]({% asset_path 2016-03-10-Managing-Windows-Servers-Remotely-with-PowerShell/PoshCode.png %})
- 
+
 ###Further reading
 
 [PoshStack](https://github.com/rackerlabs/PoshStack)

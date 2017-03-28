@@ -6,11 +6,13 @@ comments: true
 author: Mike Metral
 published: true
 categories:
-  - public-cloud
   - cloud-servers
   - OpenStack
   - Docker
-bio: 'Mike Metral is a Product Architect at Rackspace in the Private Cloud R&D organization currently operating as a subject-matter expert in the field of containers. You can follow Mike on Twitter @mikemetral and Github as metral.'
+bio: >-
+  Mike Metral is a Product Architect at Rackspace in the Private Cloud R&D
+  organization currently operating as a subject-matter expert in the field of
+  containers. You can follow Mike on Twitter @mikemetral and Github as metral.
 ---
 
 Container technology is evolving at a very rapid pace. The purpose of the

@@ -1,12 +1,13 @@
 ---
 layout: post
-title: 'At PuppetConf 2013, IT Automation Solutions and DevOps Culture Take The Spotlight'
+title: >-
+  At PuppetConf 2013, IT Automation Solutions and DevOps Culture Take The
+  Spotlight
 date: '2013-08-28 09:01'
 comments: true
 author: Greg Swift
 published: true
 categories:
-  - Puppet
   - Events
 ---
 Keep Calm and Automate All The Things. If you caught up with Rackspace in San Francisco last week at PuppetConf 2013, then you saw our t-shirt swag emblazoned with this “Keep Calm” slogan. But it’s not just any old meme; it’s also the catchphrase that perfectly describes the overarching theme of the conference.

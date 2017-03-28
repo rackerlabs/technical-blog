@@ -1,12 +1,13 @@
 ---
 layout: post
-title: 'I Have A Cloud...Now What? - Part 2: Building a Redundant Webapp with Log Analysis'
+title: >-
+  I Have A Cloud...Now What? - Part 2: Building a Redundant Webapp with Log
+  Analysis
 date: '2014-07-29 11:40'
 comments: true
 author: Mike Metral
 published: true
 categories:
-  - public-cloud
   - cloud-servers
   - OpenStack
 bio: |

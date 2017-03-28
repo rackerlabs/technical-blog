@@ -6,7 +6,6 @@ comments: true
 author: Mike Metral
 published: true
 categories:
-  - public-cloud
   - cloud-servers
   - OpenStack
 ---

@@ -6,7 +6,6 @@ comments: true
 author: Kyle Rames
 published: true
 categories:
-  - ruby
   - devops
 ---
 

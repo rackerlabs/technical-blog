@@ -7,7 +7,6 @@ author: James Denton
 published: true
 categories:
   - neutron
-  - rpc
   - openstack
 ---
 
