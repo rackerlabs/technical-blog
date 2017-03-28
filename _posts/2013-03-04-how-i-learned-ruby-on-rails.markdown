@@ -5,7 +5,6 @@ date: '2013-03-04 07:45'
 comments: true
 author: Bret McGowen
 categories:
-  - Ruby
   - SDK
 ---
 _Bret McGowen is a software developer at Rackspace, designing and building [RackConnect](http://www.rackspace.com/cloud/hybrid/dedicated_cloud/rackconnect/), which lets customers have the best of both traditional and cloud hosting._

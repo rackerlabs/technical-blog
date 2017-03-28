@@ -1,13 +1,12 @@
 ---
 layout: post
-title: "Information Design and Development Presents RPCO v13.1"
-date: 2016-11-08 10:22
+title: Information Design and Development Presents RPCO v13.1
+date: '2016-11-08 10:22'
 comments: false
 author: Alex Sayers
 published: true
 categories:
-    - DevOps
-    - RPC
+  - DevOps
 ---
 
 Information Design and Documentation Presents RPCO v13.1!

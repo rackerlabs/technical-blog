@@ -5,8 +5,7 @@ date: '2013-08-09 08:00'
 comments: true
 author: Aliza Earnshaw
 published: true
-categories:
-  - Puppet
+categories: []
 ---
 Continuous delivery — the ability to ship new and awesome features, updates and patches to your customers more frequently — is key to getting ahead of the competition, and staying there.
 

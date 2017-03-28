@@ -7,7 +7,6 @@ title: Using libcloud and Puppet to bootstrap Cloud Servers
 author: Hart Hoover
 categories:
   - Cloud Servers
-  - Puppet
   - Python
 ---
 

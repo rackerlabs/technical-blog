@@ -5,8 +5,7 @@ date: '2013-05-10 08:00'
 comments: true
 author: James Turnbull
 published: true
-categories:
-  - Puppet
+categories: []
 ---
 {% img right 2013-05-10-devopsreport/devopsreport.png 200 %}
 Those of us who have been aligned with DevOps for some time already know that the greater agility and closer collaboration it enables deliver real business value for our organizations.

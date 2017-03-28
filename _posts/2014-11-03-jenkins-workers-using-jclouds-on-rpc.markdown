@@ -6,17 +6,16 @@ comments: true
 author: Everett Toews
 published: true
 categories:
-  - RPC
   - openstack
   - private-cloud
   - jclouds
 bio: >
-  Everett is a Developer Advocate at Rackspace making OpenStack and the Rackspace
-  Cloud easy to use for developers and operators. Sometimes developer, sometimes
-  advocate, and sometimes operator. He's a committer and PMC on Apache jclouds,
-  and co-author of the OpenStack Operations Guide from O'Reilly. He loves
-  spending time with his family. If it's calm outside, they launch rockets. If
-  it's windy, they fly kites.
+  Everett is a Developer Advocate at Rackspace making OpenStack and the
+  Rackspace Cloud easy to use for developers and operators. Sometimes developer,
+  sometimes advocate, and sometimes operator. He's a committer and PMC on Apache
+  jclouds, and co-author of the OpenStack Operations Guide from O'Reilly. He
+  loves spending time with his family. If it's calm outside, they launch
+  rockets. If it's windy, they fly kites.
 
   Follow him on Twitter @everett_toews.
 ---

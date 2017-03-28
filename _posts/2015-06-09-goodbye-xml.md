@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Goodbye XML!'
+title: Goodbye XML!
 date: '2015-06-09 23:59'
 comments: true
 author: Brian Rosmaita
@@ -8,8 +8,12 @@ published: true
 categories:
   - OpenStack
   - Cloud Servers
-  - Public Cloud
-bio: "Brian Rosmaita is a software developer on the Rackspace team that works on Cloud Servers and Cloud Images (that's Nova and Glance in OpenStack language).  Upstream at OpenStack, he's a driver for the Glance and Searchlight teams.  You can find him on Freenode as rosmaita.  Use @br14nr if you want to tweet at him."
+bio: >-
+  Brian Rosmaita is a software developer on the Rackspace team that works on
+  Cloud Servers and Cloud Images (that's Nova and Glance in OpenStack
+  language).  Upstream at OpenStack, he's a driver for the Glance and
+  Searchlight teams.  You can find him on Freenode as rosmaita.  Use @br14nr if
+  you want to tweet at him.
 ---
 As a developer working in the cloud, you're probably aware that OpenStack
 (and the cloud industry in general) have moved away from supporting XML APIs.

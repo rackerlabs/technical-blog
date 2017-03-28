@@ -6,7 +6,6 @@ comments: true
 author: James Thorne
 published: true
 categories:
-  - RPC
   - openstack
   - private-cloud
 ---
