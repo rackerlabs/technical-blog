@@ -42,4 +42,4 @@ If _you_ would like to become a contributor as well, just read our [contribution
 
 ## Conclusion
 
-Let us know what you think! Feel free to reach out to me, Shaunak Kashyap, on Twitter [@shaunak](https://twitter.com/shaunak) or email the Rackspace Developer Experience team at [sdk-support@rackspace.com](mailto:sdk-support@rackspace.com). And, as always, if you find a bug or see something we could improve in php-opencloud, please file an issue [here](https://github.com/rackspace/php-opencloud/issues).
+Let us know what you think! Feel free to reach out to me, Shaunak Kashyap, on Twitter [@shaunak](https://twitter.com/shaunak). And, as always, if you find a bug or see something we could improve in php-opencloud, please file an issue [here](https://github.com/rackspace/php-opencloud/issues).

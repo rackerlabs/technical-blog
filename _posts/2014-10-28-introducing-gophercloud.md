@@ -23,7 +23,7 @@ Initially Gophercloud supports the following services:
  - Block Storage
  - Identity
 
-And more [on the way](https://github.com/rackspace/gophercloud/pulls). 
+And more [on the way](https://github.com/rackspace/gophercloud/pulls).
 
 To install Gophercloud, first set the $GOPATH environment variable to the root of your Go workspace:
 
@@ -41,8 +41,8 @@ From there on, you can follow the [getting started guides](https://gophercloud.i
 
 If you'd like to use the previous version of Gophercloud, you can find it [here](https://github.com/rackspace/gophercloud/tree/release/v0.1.1). After following the steps above, move into the gophercloud directory and run
 ```
-git checkout release/v0.1.1 
+git checkout release/v0.1.1
 ```
 Now you will be using the Gophercloud v0.1.1 release and can store this state with a client-side package manager.
 
-As with any of our other SDKs, you can always reach us via email (sdk-support@rackspace.com) or chat (#rackspace channel on Freenode IRC) if you have any issues, questions or suggestions.
+As with any of our other SDKs, you can always reach us via chat (#rackspace channel on Freenode IRC) if you have any issues, questions or suggestions.
