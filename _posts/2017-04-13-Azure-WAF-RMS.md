@@ -18,4 +18,6 @@ The Azure Application Gateway is a layer 7 load balancer with two SKUs to distin
 
 The minimum requirement to deploy a WAF into Azure is to select the WAF tier and either medium or large for the instance size. For production workloads, it is strongly recommended to have 2 instances selected to be covered by the SLA.
 
+![Azure WAF options]({% asset_path 2017-04-13-Azure-WAF-RMS/wafSku.png %})
+
 
