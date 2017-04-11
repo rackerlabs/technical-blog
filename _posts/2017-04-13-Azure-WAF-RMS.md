@@ -50,7 +50,7 @@ To see the WAF in action, browse to your web application using the public ip add
     "line": "793"
   }
   ```
-My WAF was set to Detection mode and the action above is **Detected**. If I set the WAF to Preventive, it would say **Blocked**
+My WAF was set to Detection mode and the action above is **Detected**. If I set the WAF to Prevention, it would say **Blocked**
 
 ```
 			 "operationName": "ApplicationGatewayFirewall",
