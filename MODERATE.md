@@ -23,7 +23,6 @@ To publish:
 
 ### Blog admins
 
-* @smashwilson
 * @ktbartholomew
 * @catlook
 * if unavailable: @kenperkins
