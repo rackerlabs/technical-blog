@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Oracle 11g I/O callibration overview"
+title: "Oracle 11g I/O calibration overview"
 date: 2018-05-29 00:00
 comments: true
 author: Mukesh Kumar
