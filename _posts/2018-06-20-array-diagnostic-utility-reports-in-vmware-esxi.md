@@ -31,7 +31,6 @@ HP-provided ESXi image, the HP drivers and other management utilities are
 already available. If you didn’t use the HP-provided ESXi image, download
 and install the HP ESXi Utilities offline bundle for ESXi version 5.x or 6.x.
 
-
 ### Determine whether hpacucli is installed
 
 The following steps help you to determine whether ``hpacucli`` is installed on your
