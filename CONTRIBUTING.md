@@ -87,8 +87,8 @@ Available categories include the following:
 - SDK
 - Security
 
-If you'd like to use a category that is not in the list, please ask about it in
-the #docs Slack channel. To avoid being flooded with categories, which might apply
+If you'd like to use a category that is not in the list, please send an email 
+to infodev@rackspace.com. To avoid being flooded with categories, which might apply
 to only one or two blogs, we have automated throttling. However, notify us so
 that we can discuss your ideas for a new category.
 
