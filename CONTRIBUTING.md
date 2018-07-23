@@ -56,40 +56,40 @@ Make sure that the dates in the file name and front-matter match.
 
 Available categories include the following:
 
-Ansible
-Automation
-Azure
-Chef
-Cloud Files
-Cloud Monitoring
-Cloud Networks
-Cloud Servers
-Configuration Management
-Developers
-DevOps
-Docker
-Events
-General
-java
-jclouds
-Jenkins
-Mailgun
-mysql-server
-Neutron
-NodeJS
-OpenStack
-Oracle
-Orchestration
-OSAD
-php5
-Private Cloud
-Python
-SDK
-Security
+- Ansible
+- Automation
+- Azure
+- Chef
+- Cloud Files
+- Cloud Monitoring
+- Cloud Networks
+- Cloud Servers
+- Configuration Management
+- Developers
+- DevOps
+- Docker
+- Events
+- General
+- java
+- jclouds
+- Jenkins
+- Mailgun
+- mysql-server
+- Neutron
+- NodeJS
+- OpenStack
+- Oracle
+- Orchestration
+- OSAD
+- php5
+- Private Cloud
+- Python
+- SDK
+- Security
 
 If you'd like to use a category that is not in the list, please ask about it in
-the #docs Slack channel.  To avoid be flooded with categories, which might apply
-to only one or two blogs, we have automated throttling.  However, notify us so
+the #docs Slack channel. To avoid being flooded with categories, which might apply
+to only one or two blogs, we have automated throttling. However, notify us so
 that we can discuss your ideas for a new category.
 
 ##### Excerpt
