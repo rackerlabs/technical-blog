@@ -24,7 +24,7 @@ tagline: >
                           <span>SDKs</span>
                         </div>
                         <div class="card-body">
-                            <p>We maintain SDKs for most major dev platforms, including Java, .NET, Node.js, PHP, Python, and Ruby.</p>
+                            <p>We have SDKs for most major dev platforms, including Java, .NET, Node.js, PHP, Python, and Ruby.</p>
                             <a href="/docs/#sdks" class="card-action">Explore tools</a>
                         </div>
                     </div>
@@ -47,34 +47,6 @@ tagline: >
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="box dev-support">
-    <div class="container">
-        <h2>Rackspace Developer Community Support</h2>
-        <p>Complex technical questions? Talk directly to the developers who build our SDKs and APIs.</p>
-        <div class="comm-platforms">
-            <div class="platform">
-                <span class="icon fa fa-github"></span>
-                <h5><strong>Developer-made tools</strong></h5>
-                <p class="item">Get help and contribute to our tools on <a href="https://github.com/rackspace">GitHub</a></p>
-            </div>
-            <div class="platform">
-                <span class="icon fa fa-pencil"></span>
-                <h5>Community</h5>
-                <p class="item">Post in our <a href="https://community.rackspace.com/developers/f/7">developer forum</a></p>
-            </div>
-            <div class="platform">
-                <span class="icon fa fa-comments-o"></span>
-                <h5>Join us on IRC</h5>
-                <p class="item">We’re on IRC on Freenode: <a href="https://webchat.freenode.net/?channels=rackspace">#rackspace</a></p>
-            </div>
-            <div class="platform">
-                <span class="icon fa fa-envelope-o"></span>
-                <h5>SDK Support</h5>
-                <p class="item"><a href="mailto:sdk-support@rackspace.com">Email us</a> for assistance</p>
             </div>
         </div>
     </div>
@@ -105,16 +77,13 @@ tagline: >
 <div class="box blog">
     <div class="container">
         <div class="headline">
-          <h2>News &amp; Events</h2>
+          <h2>News</h2>
         </div>
         <div data-tab-set>
           <div class="tab-buttons">
             <ul>
               <li>
                 <a href="#" data-tab-link="blog">Blog</a>
-              </li>
-              <li>
-                <a href="#" data-tab-link="events">Events</a>
               </li>
               <li>
                 <a href="#" data-tab-link="news"><span class="wordy">Product </span>News</a>
@@ -155,17 +124,6 @@ tagline: >
 
             <div data-tab="events" data-ng-controller="UpcomingEventsCtrl as events">
               {% raw %}
-              <ul>
-
-                <li data-ng-repeat="event in events.events | limitTo: 2">
-                  <h5><a data-ng-href="{{ event.website }}" data-ng-bind="event.name"></a></h5>
-                  <div class="event-info">
-                    <div class="date" data-ng-bind="event.date | date : 'MMMM d, yyyy'"></div>
-                    <div class="location" data-ng-bind="event.location.name"></div>
-                    <div class="description" data-ng-bind="event.description"></div>
-                  </div>
-                </li>
-              </ul>
               {% endraw %}
             </div>
 
