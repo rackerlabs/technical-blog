@@ -90,7 +90,7 @@ following steps to set the number of parameters:
    **SM19** on the **Kernel Parameters** tab), set the kernel parameters in
    the following table:
 
-    | **Kernel parameter**&nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;                     | **Profile parameter** |
+    | **Kernel parameter** &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;                     | **Profile parameter** |
     |---------------------------------     |-----------------------------|
     | Security Audit Active | rsau/enable |
     | Generic User Selection | rsau/user_selection |
@@ -99,7 +99,7 @@ following steps to set the number of parameters:
     | Maximum Size of Audit File | rsau/max_diskspace/local |
     | Multiple Audit Files per Day | NONE |
     | Maximum Size of an Audit File | rsau/max_diskspace/per_file |
-    | Maximum Size of All Audit Files | rsau/max_diskspace/per_day |
+    | Maximum Size of All Audit Files &nbsp; &nbsp;  &nbsp; | rsau/max_diskspace/per_day |
 
     <br />
 
