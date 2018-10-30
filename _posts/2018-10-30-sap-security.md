@@ -16,8 +16,8 @@ master records or unsuccessful logon attempts. This log is designed for
 auditors who need to detailed information about what occurs in an SAP system.
 By activating the audit log, you keep a record of all of the activities that
 you consider relevant for an audit. You can then access this information in
-the form of an audit analysis report. This blog post helps you activate your
-SAP Security Audit Log.
+the form of an audit analysis report. This blog post helps you
+activate your SAP Security Audit Log.
 
 <!-- more -->
 
