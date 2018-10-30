@@ -55,8 +55,8 @@ You specify the information that you want to audit in filters that you create.
 The filters are permanently saved in the AS ABAP database in static profiles.
 
 All of the nodes in a cluster use identical filters to determine which events
-to record in the audit log. However, you want to create profiles for different
-auditing scenarios.
+to record in the audit log. However, you want to create profiles for
+different auditing scenarios.
 
 Once activated the AS ABAP loads the profile when the AS ABAP starts. The AS
 ABAP uses the filters that you define in the profiles to write events to the
