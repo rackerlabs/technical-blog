@@ -82,10 +82,10 @@ following steps to set the number of parameters:
    Audit Log. Use Maintain Profile Parameter (transaction RZ11) and the
    following parameters:
 
-   * **DIR\_AUDIT**: The directory where you want to save the security audit
-     files.
+       * **DIR\_AUDIT**: The directory where you want to save the security
+       audit files.
 
-   * **FN\_AUDIT**: The name of the security audit file.
+       * **FN\_AUDIT**: The name of the security audit file.
 
 3. On the Security Audit Log: Display Kernel Parameters screen (transaction
    **SM19** on the **Kernel Parameters** tab), set the kernel parameters in
