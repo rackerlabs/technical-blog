@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Activating SAP Security Audit Logs"
+title: "Activating the SAP Security Audit Log Feature"
 date: 2018-10-30 23:59
 comments: false
 author: Nithin Katpalli
@@ -16,8 +16,8 @@ master records or unsuccessful logon attempts. This log is designed for
 auditors who need to detailed information about what occurs in an SAP system.
 By activating the audit log, you keep a record of all of the activities that
 you consider relevant for an audit. You can then access this information in
-the form of an audit analysis report. This blog post helps you
-activate your SAP Security Audit Log.
+the form of an audit analysis report. This blog helps you activate your SAP
+Security Audit Log.
 
 <!-- more -->
 
@@ -28,7 +28,7 @@ explicitly delete them.
 
 While you currently can't automatically archive the log files, you can
 manually archive them at any time. The tables that are accessed for the audit
-information as per user are from the cluster tables and cannot be viewed by
+information are from the cluster tables and cannot be viewed by
 the SE16 or SE16N transaction code. They must be accessed through these
 transaction codes or the ST03N transaction code.
 
@@ -52,15 +52,16 @@ Log](https://help.sap.com/saphelp_nwmobile711/helpdata/en/4d/41bf80aa601c86e1000
 ### Filters and profiles
 
 You specify the information that you want to audit in filters that you create.
-The filters are permanently saved in the AS ABAP database in static profiles.
+The filters are permanently saved in the SAP NetWeaver Application Server (AS)
+Advanced Business Application Programming (ABAP®) database in static profiles.
 
 All of the nodes in a cluster use identical filters to determine which events
 to record in the audit log. However, you want to create profiles for
 different auditing scenarios.
 
-Once activated the AS ABAP loads the profile when the AS ABAP starts. The AS
+Once activated, the AS ABAP loads the profile when the AS ABAP starts. The AS
 ABAP uses the filters that you define in the profiles to write events to the
-security audit log. Change dynamically on one or more application servers.
+Security Audit Log.
 
 You can change the filter settings that are currently in use without having to
 restart the AS ABAP. The system distributes these changes to all active
@@ -68,8 +69,7 @@ application servers.
 
 ### Prerequisites for activating the Security Audit Log
 
-This procedure requires you to restart SAP NetWeaver&reg; Application Server
-(AS) Advanced Business Application Programming (ABAP&reg;). Plan for the
+This procedure requires you to restart the AS ABAP. Plan for the
 required downtime while the AS ABAP restarts.
 
 Before you can configure the Security Audit Log, you also have to use the
@@ -79,7 +79,7 @@ following steps to set the number of parameters:
    filter and specify the information that you want to audit.
 
 2. Configure the directory and file name that you want to use for the Security
-   Audit Log. Use Maintain Profile Parameter (transaction RZ11) and the
+   Audit Log. Use the maintain profile parameter (transaction RZ11) and the
    following parameters:
 
     **DIR\_AUDIT**: The directory where you want to save the security
@@ -87,7 +87,7 @@ following steps to set the number of parameters:
 
     **FN\_AUDIT**: The name of the security audit file.
 
-3. On the Security Audit Log: Display Kernel Parameters screen (transaction
+3. On the **Security Audit Log: Display Kernel Parameters** screen (transaction
    **SM19** on the **Kernel Parameters** tab), set the kernel parameters
    that appear in the following table:
 
@@ -105,7 +105,7 @@ following steps to set the number of parameters:
 
     **Note**: You can set these parameters as profile parameters in the
     application server's instance profile. However, we recommend that you set
-    the parameters dynamically as kernel parameters in the security audit log
+    the parameters dynamically as kernel parameters in the Security Audit Log
     configuration (transaction **SM19** in the **Kernel Parameters** tab).
     After the kernel parameters are set, the system ignores the profile
     parameters in the profile of the application server, with the exception of
