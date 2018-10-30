@@ -88,8 +88,8 @@ following steps to set the number of parameters:
     **FN\_AUDIT**: The name of the security audit file.
 
 3. On the Security Audit Log: Display Kernel Parameters screen (transaction
-   **SM19** on the **Kernel Parameters** tab), set the kernel parameters in
-   the following table:
+   **SM19** on the **Kernel Parameters** tab), set the kernel parameters
+   that appear in the following table:
 
     | **Kernel parameter** &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;                     | **Profile parameter** |
     |---------------------------------     |-----------------------------|
