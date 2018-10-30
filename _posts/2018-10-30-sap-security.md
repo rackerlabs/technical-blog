@@ -82,16 +82,16 @@ following steps to set the number of parameters:
    Audit Log. Use Maintain Profile Parameter (transaction RZ11) and the
    following parameters:
 
-     | Parameter       | Description                                                    |
-     |-----------------|----------------------------------------------------------------|
-     | DIR_AUDIT       | The directory where you want to save the security audit files. |
-     | FN_AUDIT        | The name of the security audit file.                           |
+   | **Parameter**       | **Description**                                                    |
+   |-----------------|----------------------------------------------------------------|
+   | DIR_AUDIT       | The directory where you want to save the security audit files. |
+   | FN_AUDIT        | The name of the security audit file.                           |
 
 3. On the Security Audit Log: Display Kernel Parameters screen (transaction
    **SM19** on the **Kernel Parameters** tab), set the kernel parameters in
    the following table:
 
-    | Kernel parameter                     | Profile parameter |
+    | **Kernel parameter**&nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;                     | **Profile parameter** |
     |---------------------------------     |-----------------------------|
     | Security Audit Active | rsau/enable |
     | Generic User Selection | rsau/user_selection |
@@ -101,6 +101,8 @@ following steps to set the number of parameters:
     | Multiple Audit Files per Day | NONE |
     | Maximum Size of an Audit File | rsau/max_diskspace/per_file |
     | Maximum Size of All Audit Files | rsau/max_diskspace/per_day |
+
+    <br />
 
     **Note**: You can set these parameters as profile parameters in the
     application server's instance profile. However, we recommend that you set
