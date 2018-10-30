@@ -82,9 +82,9 @@ following steps to set the number of parameters:
    Audit Log. Use Maintain Profile Parameter (transaction RZ11) and the
    following parameters:
 
-    - **DIR\_AUDIT**: The directory where you want to save the security audit
+   - **DIR\_AUDIT**: The directory where you want to save the security audit
       files.
-    - **FN\_AUDIT**: The name of the security audit file.
+   - **FN\_AUDIT**: The name of the security audit file.
 
 3. On the Security Audit Log: Display Kernel Parameters screen (transaction
    **SM19** on the **Kernel Parameters** tab), set the kernel parameters in
@@ -93,13 +93,13 @@ following steps to set the number of parameters:
     | **Kernel parameter** &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;                     | **Profile parameter** |
     |---------------------------------     |-----------------------------|
     | Security Audit Active | rsau/enable |
-    | Generic User Selection | rsau/user_selection |
-    | Number of Selection Filters | rsau/selection_slots |
+    | Generic User Selection | rsau/user\_selection |
+    | Number of Selection Filters | rsau/selection\_slots |
     | One Audit File per Day | NONE |
-    | Maximum Size of Audit File | rsau/max_diskspace/local |
+    | Maximum Size of Audit File | rsau/max\_diskspace/local |
     | Multiple Audit Files per Day | NONE |
-    | Maximum Size of an Audit File | rsau/max_diskspace/per_file |
-    | Maximum Size of All Audit Files &nbsp; &nbsp;  &nbsp; | rsau/max_diskspace/per_day |
+    | Maximum Size of an Audit File | rsau/max\_diskspace/per\_file |
+    | Maximum Size of All Audit Files &nbsp; &nbsp;  &nbsp; | rsau/max\_diskspace/per\_day |
 
     <br />
 
