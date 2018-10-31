@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Activating the SAP Security Audit Log Feature"
-date: 2018-10-30 23:59
+date: 2018-10-31 23:59
 comments: false
 author: Nithin Katpalli
 authorAvatar: <img src="{% asset_path authors/nithin/katpalli.png %}">
