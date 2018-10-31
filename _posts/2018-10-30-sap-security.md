@@ -13,7 +13,7 @@ categories:
 Beginning with SAP&reg; version 4.0, you can use the Security Audit Log
 feature to record security-related system information, such as changes to user
 master records or unsuccessful logon attempts. This log is designed for
-auditors who need to detailed information about what occurs in an SAP system.
+auditors who need detailed information about what occurs in an SAP system.
 By activating the audit log, you keep a record of all of the activities that
 you consider relevant for an audit. You can then access this information in
 the form of an audit analysis report. This blog helps you activate your SAP
@@ -150,17 +150,5 @@ professionals review what occurs in an SAP system. The audit files are stored
 on an application server that needs enough space to run on daily basis. You
 can access the log information in the form of an audit analysis report.
 
-To learn more about Rackspace SAP ERP services, see [Managed Services for SAP ERP
-Applications](https://www.rackspace.com/sap/erp).
-
-### References
-
-- [Analysis and Recommended Settings of the Security Audit Log (SM19 / SM20 /
-  RSAU_CONFIG /
-  RSAU_READ_LOG)](https://blogs.sap.com/2014/12/11/analysis-and-recommended-settings-of-the-security-audit-log-sm19-sm20/)
-
-- [SAP documentation, The Security Audit
-  Log](https://help.sap.com/saphelp_nw70/helpdata/en/c7/69bcb7f36611d3a6510000e835363f/frameset.htm)
-
-- [SAP Help Portal - SAP NetWeaver 7.4: The Security Audit
-  Log](https://help.sap.com/viewer/56bf1265a92e4b4d9a72448c579887af/7.4.19/en-US/c769bcb7f36611d3a6510000e835363f.html)
+To learn more about Rackspace SAP ERP services, see [Managed Services for SAP
+ERP Applications](https://www.rackspace.com/sap/erp).
