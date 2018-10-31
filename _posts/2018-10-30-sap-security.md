@@ -4,7 +4,6 @@ title: "Activating the SAP Security Audit Log Feature"
 date: 2018-10-31 23:59
 comments: false
 author: Nithin Katpalli
-authorAvatar: <img src="{% asset_path authors/nithin_katpalli.png %}">
 authorIsRacker: true
 published: true
 categories:
@@ -153,6 +152,11 @@ can access the log information in the form of an audit analysis report.
 
 To learn more about Rackspace SAP ERP services, see [Managed Services for SAP
 ERP Applications](https://www.rackspace.com/sap/erp).
+
+### References
+
+- [SAP Documentation: The Security Audit
+  Log](https://help.sap.com/saphelp_nw70/helpdata/en/c7/69bcb7f36611d3a6510000e835363f/frameset.htm)
 
 <table>
   <tr>If you liked this blog, share it by using the following icons:</tr>
