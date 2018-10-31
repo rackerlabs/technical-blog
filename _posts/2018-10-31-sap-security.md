@@ -4,7 +4,6 @@ title: "Activating the SAP Security Audit Log Feature"
 date: 2018-10-31 23:59
 comments: false
 author: Nithin Katpalli
-authorAvatar: https://github.com/rackerlabs/docs-developer-blog/blob/master/_assets/img/2018-10-30-sap-security/nithin_katpalli.png
 authorIsRacker: true
 published: true
 categories:
