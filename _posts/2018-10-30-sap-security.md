@@ -4,6 +4,7 @@ title: "Activating the SAP Security Audit Log Feature"
 date: 2018-10-30 23:59
 comments: false
 author: Nithin Katpalli
+authorAvatar: <img src="{% asset_path authors/nithin/katpalli.png %}">
 authorIsRacker: true
 published: true
 categories:
@@ -152,3 +153,36 @@ can access the log information in the form of an audit analysis report.
 
 To learn more about Rackspace SAP ERP services, see [Managed Services for SAP
 ERP Applications](https://www.rackspace.com/sap/erp).
+
+<table>
+  <tr>If you liked this blog, share it by using the following icons:</tr>
+  <tr>
+   <td>
+       <img src="{% asset_path line-tile.png %}" width=50 >
+    </td>
+    <td>
+      <a href="https://twitter.com/home?status=https%3A//developer.rackspace.com/blog/applications-monitoring-creating-a-smoother-financial-close/">
+        <img src="{% asset_path shareT.png %}">
+      </a>
+    </td>
+    <td>
+       <img src="{% asset_path line-tile.png %}" width=50 >
+    </td>
+    <td>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//developer.rackspace.com/blog/applications-monitoring-creating-a-smoother-financial-close/">
+        <img src="{% asset_path shareFB.png %}">
+      </a>
+    </td>
+    <td>
+       <img src="{% asset_path line-tile.png %}" width=50 >
+    </td>
+    <td>
+      <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//developer.rackspace.com/blog/applications-monitoring-creating-a-smoother-financial-close&summary=&source=">
+        <img src="{% asset_path shareL.png %}">
+      </a>
+    </td>
+  </tr>
+</table>
+
+
+</br>
