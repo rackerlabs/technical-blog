@@ -32,7 +32,7 @@ This walkthrough assumes we'll be authenticating against our company's Microsoft
   * An application hosted at `https://app.example.com/` and sitting behind an existing Application Load Balancer (ALB).
   * A subdomain we can use for authentication, e.g. `auth.app.example.com`.
   * An [AWS Certificate Manager](https://aws.amazon.com/certificate-manager/) issued certificate for `app.example.com` and `auth.app.example.com`.
-  * The metadata document endpoint URL for our SAML IdP, e.g. `https://example.com/FederationMetadata/2007-06/FederationMetadata.xml`
+  * The metadata document endpoint URL for our SAML IdP, e.g. `https://example.com/FederationMetadata/2007-06/FederationMetadata.xml`.
 
 Of course, throughout this walkthrough, you should replace instances of `app.example.com` with your application's _actual_ domain name.
 
@@ -40,25 +40,25 @@ Of course, throughout this walkthrough, you should replace instances of `app.exa
 
 ## Creating the Cognito user pool
 
-[Amazon Cognito](https://aws.amazon.com/cognito/) will let us avoid having to implement the necessary logic to negotiate the user authentication flow, manage state, and capture available user information. Let's begin by [creating a new user pool](https://console.aws.amazon.com/cognito/users/?region=us-east-1#/pool/new/create):
+[Amazon Cognito](https://aws.amazon.com/cognito/) lets us avoid having to implement the necessary logic to negotiate the user authentication flow, manage state, and capture available user information. Let's begin by [creating a new user pool](https://console.aws.amazon.com/cognito/users/?region=us-east-1#/pool/new/create):
 
 ![Create Cognito user pool]({% asset_path 2018-12-31-aws-application-load-balancer-authentication-with-saml-idp/create-cognito-user-pool.png %})
 
-For the **Pool name**, choose something descriptive. Since this user pool is for https://app.example.com/, we'll name it "Example".
+For the **Pool name**, choose something descriptive. Because this user pool is for https://app.example.com/, we'll name it "Example".
 
-Next, click **Step through settings**. We will be leaving most of the settings at their default values; however, it's good to look them over if you're not already familiar with Cognito in order to get a sense of what is possible.
+Next, click **Step through settings**. We will be leaving most of the settings at their default values. However, it's good to look them over if you're not already familiar with Cognito in order to get a sense of what is possible.
 
-The first section, **How do you want your end users to sign in?**, can be left alone since users will be signing in via ADFS. The next section, **Which standard attributes do you want to require?**, needs careful consideration. Pay close attention to the highlighted text in the screenshot below:
+The first section, **How do you want your end users to sign in?**, can be left alone because users will be signing in via ADFS. The next section, **Which standard attributes do you want to require?**, needs careful consideration. Pay close attention to the highlighted text in the screenshot below:
 
 ![Standard attribute requirements cannot be changed after creation]({% asset_path 2018-12-31-aws-application-load-balancer-authentication-with-saml-idp/user-pool-required-attributes.png %})
 
-There are a number of "standard" attributes like `email` and `name` that ADFS can expose in the authentication response in the form of **claims**. These checkboxes do not specify which claims will or will not be exposed, nor do they control how those claims map to these standard attributes; the checkboxes simply indicate whether or not any of these standard attributes are required in order for a user to sign up. Unfortunately, we must make these decisions at the time the user pool is created! We cannot make additional attributes required, nor can we change our minds about a required attribute suddenly becoming optional. Doing so requires the user pool to be recreated, which will also require configuration changes in ADFS for the new user pool identifier.
+There are a number of standard attributes like `email` and `name` that ADFS can expose in the authentication response in the form of **claims**. These checkboxes do not specify which claims will or will not be exposed, nor do they control how those claims map to these standard attributes; the checkboxes simply indicate whether or not any of these standard attributes are required in order for a user to sign up. Unfortunately, we must make these decisions at the time the user pool is created! We cannot make additional attributes required, nor can we change our minds about a required attribute suddenly becoming optional. Doing so requires the user pool to be recreated, which will also require configuration changes in ADFS for the new user pool identifier.
 
 Until such time that Cognito allows these settings to be modified after the user pool is created, I recommend not setting any attributes to be required at this point. If we _do_ end up needing certain attributes to be required, we can enforce this either within the application or within Cognito using [Lambda triggers](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools-working-with-aws-lambda-triggers.html). For this post's example, we'll leave all fields unchecked.
 
 We can also choose to create optional, custom attributes under **Do you want to add custom attributes?** Custom attributes, while optional, cannot be removed from the user pool after creation. For this example, we won't create any.
 
-Since we'll be using ADFS exclusively for authentication and implicit sign-up, we can leave the default options on the next several screens by clicking **Next step**. We _will_ be creating an app client as part of this process, but there are several configuration values that need to be set that the AWS console will not let us fill in until the user pool is actually created. So, when we reach **Which app clients will have access to this user pool?**, we'll click **Next step** again to get past that as well. Other than setting any standard attributes as _required_, we can make any changes we need after the user pool is created.
+Because we'll be using ADFS exclusively for authentication and implicit sign-up, we can leave the default options on the next several screens by clicking **Next step**. We _will_ be creating an app client as part of this process, but there are several configuration values that need to be set that the AWS console will not let us fill in until the user pool is actually created. So, when we reach **Which app clients will have access to this user pool?**, we'll click **Next step** again to get past that as well. Other than setting any standard attributes as _required_, we can make any changes we need after the user pool is created.
 
 Finally, we **Create pool**, and make note of the **Pool Id**, which we'll will need later.
 
@@ -68,7 +68,7 @@ Before we move on to creating the app client, we'll need to create an **Identity
 
 ## Setting up the SAML identity provider
 
-Start by clicking **Identity providers** on the left menu under the **Federation** and selecting **SAML**. Then, supply either the metadata document URL (e.g. `https://example.com/FederationMetadata/2007-06/FederationMetadata.xml`), or upload the metadata document if your SAML IdP does not publish it anywhere publicly accessible. Consult your IdP's documentation, or, if you're using your own company's ADFS like I did for this example, check with one of your system administrators.
+Start by clicking **Identity providers** on the left menu under the **Federation** and selecting **SAML**. Then, supply either the metadata document URL (e.g. `https://example.com/FederationMetadata/2007-06/FederationMetadata.xml`) or upload the metadata document if your SAML IdP does not publish it anywhere publicly accessible. Consult your IdP's documentation, or if you're using your own company's ADFS like I did for this example, check with one of your system administrators.
 
 After inputting the metadata document, enter a name for the provider. If your IdP supports sign out flow and you wish to enable it, you can do here. You can also add any [IdP identifiers](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-managing-saml-idp-naming.html), if needed. When finished, click **Create provider**.
 
@@ -80,7 +80,7 @@ You should now see the provider listed under **Active SAML Providers**.
 
 Next, we can set up **Attribute mapping** between the claims exposed via ADFS responses I mentioned earlier and attributes within the user pool. To do so, click **Attribute mapping** under **Federation** in the left menu. 
 
-Here, we can add several SAML attributes that we want Cognito to capture from the ADFS claims and store permanently. In the screenshot below, I'm capturing the **name** and **emailaddress** claims and mapping them to the standard **Name** and **Email** attributes. If you created any custom attributes earlier, they would appear in the **User pool attribute** dropdown with the prefix `custom:`.
+Here, we can add several SAML attributes that we want Cognito to capture from the ADFS claims and store permanently. In the screenshot below, I'm capturing the **name** and **emailaddress** claims and mapping them to the standard **Name** and **Email** attributes. If you created any custom attributes earlier, they would appear in the **User pool attribute** dropdown with the `custom:` prefix.
 
 ![Attribute mapping]({% asset_path 2018-12-31-aws-application-load-balancer-authentication-with-saml-idp/attribute-mapping.png %})
 
@@ -106,7 +106,7 @@ We'll need an app client to represent our application within. Click **App client
 
 ![Creating the app client]({% asset_path 2018-12-31-aws-application-load-balancer-authentication-with-saml-idp/create-app-client.png %})
 
-Once the app client has been created, click **App client settings** under **App integration** in the left menu to configure it. We'll need to make sure that our **Example** identity provider is enabled, the **Callback URL** is entered correctly, and that **Authorization code grant** and **openid** are checked under the **OAuth 2.0** settings. For ALB authentication against an ADFS SAML IdP, the **Callback URL** must be in the form `https://<application domain>/oauth2/idpresponse`. The `<application domain>` corresponds to the domain where your application is accessed. In this case, we're using `app.example.com`.
+After the app client has been created, click **App client settings** under **App integration** in the left menu to configure it. We'll need to make sure that our **Example** identity provider is enabled, the **Callback URL** is entered correctly, and that **Authorization code grant** and **openid** are checked under the **OAuth 2.0** settings. For ALB authentication against an ADFS SAML IdP, the **Callback URL** must be in the form `https://<application domain>/oauth2/idpresponse`. The `<application domain>` corresponds to the domain where your application is accessed. In this case, we're using `app.example.com`.
 
 ![App client settings]({% asset_path 2018-12-31-aws-application-load-balancer-authentication-with-saml-idp/app-client-settings.png %})
 
@@ -128,7 +128,7 @@ To use a custom domain, we'll skip past the **Amazon Cognito domain** section, a
 
 ![Custom domain not valid]({% asset_path 2018-12-31-aws-application-load-balancer-authentication-with-saml-idp/custom-domain-not-valid.png %})
 
- If you're working on setting up authentication prior to beginning work on the application itself, you can work around this limitation by creating an **A** record in your DNS configuration for the parent domain name that points to a valid IP address that won't actually lead anywhere (e.g. `0.0.0.0`).
+ If you're working on setting up authentication prior to beginning work on the application itself, you can work around this limitation by creating an **A** record in your DNS configuration for the parent domain name that points to a valid IP address that won't actually lead anywhere (such as `0.0.0.0`).
 
  Otherwise, you can expect to see the following when you click **Save changes**:
 
@@ -140,7 +140,7 @@ Make note of the **Alias target** and add an **A** record for `auth.app.example.
 
 ## Configuring ADFS
 
-This post assumes you're merely a consumer of the SAML IdP and not the administrator. Before proceeding, you should contact your ADFS administrator and ask them to add the new ADFS configuration for your application. They will need the following to do so:
+This post assumes you're merely a consumer of the SAML IdP and not the administrator. Before proceeding, you should contact your ADFS administrator and ask them to add the new ADFS configuration for your application. They will need the following information to do so:
 
   * **Audience URN:** `urn:amazon:cognito:sp:us-east-1_XXXXXXXXX`
   * **Post binding:** `https://auth.app.example.com/saml2/idpresponse`
@@ -168,7 +168,7 @@ The end result will be something like this:
 
 ![ALB rules]({% asset_path 2018-12-31-aws-application-load-balancer-authentication-with-saml-idp/alb-rule-summary.png %})
 
-This setup assumes that _all_ endpoints under your application require authentication. If that isn't the case, you can opt to either (a) add additional path-based routing rules to bypass authentication for certain pages (e.g. landing pages, documentation, etc.), or (b) move all secure endpoints under a specific path (e.g. `/authenticated` or `/secure`) and make all other destinations not require authentication. I strongly recommend option (a), as doing so ensures that you'd need to _explicitly_ configure a page to not require authentication.
+This setup assumes that _all_ endpoints under your application require authentication. If that isn't the case, you can opt to either (a) add additional path-based routing rules to bypass authentication for certain pages (such as landing pages, documentation, and so on), or (b) move all secure endpoints under a specific path (`/authenticated` or `/secure`, for example) and make all other destinations not require authentication. I strongly recommend option (a), as doing so ensures that you'd need to _explicitly_ configure a page to not require authentication.
 
 **NOTE:** Since ALB authentication only works on secure listeners, you should also consider adding a listener on port 80 that will all HTTP requests to HTTPS. This isn't _strictly_ necessary, but doing so will ensure that your users will always get to your application even if they accidentally try to access it insecurely. The port 80 listener requires just one rule:
 
@@ -176,7 +176,7 @@ This setup assumes that _all_ endpoints under your application require authentic
 
 ## Testing it out
 
-Once the Cognito user pool is created, the ALB listeners are configured, and the ADFS administrator confirms that the configuration for the application has been added, it's time for a test drive. Head over to any `https://app.example.com/` page that requires authentication, and you will be redirected to the SAML IdP's login screen. For example:
+After the Cognito user pool is created, the ALB listeners are configured, and the ADFS administrator confirms that the configuration for the application has been added, it's time for a test drive. Head over to any `https://app.example.com/` page that requires authentication, and you will be redirected to the SAML IdP's login screen. For example:
 
 ![Example login screen]({% asset_path 2018-12-31-aws-application-load-balancer-authentication-with-saml-idp/login-example.png %})
 
