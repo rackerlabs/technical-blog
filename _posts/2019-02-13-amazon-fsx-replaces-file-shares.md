@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "TESTAmazon's new FSx is a strong replacement for self-managed Windows File Server"
+title: "Amazon's new FSx is a strong replacement for self-managed Windows File Server"
 ogTitle: "Amazon's new FSx is a strong replacement for self-managed Windows File Server"
 metaDescription: After decades of use Windows File Server are still around and being leveraged daily by corporate networks for sharing files. Now Amazon offers a managed serverless solution to reduce TCO for customers.
 ogDescription: After decades of use Windows File Server are still around and being leveraged daily by corporate networks for sharing files. Now Amazon offers a managed serverless solution to reduce TCO for customers.
@@ -14,7 +14,6 @@ authorAvatar: https://s.gravatar.com/avatar/17fefeb3c1832175bf6fbe9841368292?s=1
 bio: "As a Senior Software Engineer at Rackspace, Matthew draws upon his 15 years of web application development experience to help architect highly-available, fault-tolerant, scalable, and secure AWS environments composed of a wide range of services in the AWS portfolio, including Compute, Storage, Database, Networking, Developer Tools, and more. He is an AWS certified Solutions Architect. His hobbies include hiking the foothills of Colorado and walks with his wife and dogs."
 categories:
   - aws
-  - Developers
 ---
 
 Windows File Server have been one of the longest running methods for sharing files in corporate america for decades. Amazon brings its expertise in serverless to provide a solution for the problem of the large Total Cost of Ownership that on-premise options have had in the past.
@@ -52,7 +51,7 @@ Technologies that are built well tend to last. File Share did exactly what we ne
 While there are some key features lacking here in the beginning, Amazon FSx for Windows File Server is going to be a strong offering once we're past some of these initial growing pains. Yet, this does work well for a lot of legacy software running in EC2 instances that have been using file shares for deployment artifacts, shared content files, and many other use cases. Adoption in this space is available now and yields a high return on value. 
 
 ```
-arnold: I'm old, not obsolete.
+I'm old, not obsolete.
 - Terminator, Terminator Genisys
 ```
 
