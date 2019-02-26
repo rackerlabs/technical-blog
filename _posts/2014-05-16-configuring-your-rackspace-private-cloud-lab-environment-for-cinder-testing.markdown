@@ -410,8 +410,6 @@ Assuming all of this looks good we can move on to testing cinder.
 
 In this article we covered the basics of the pre-configuration tasks required to test cinder in your environment.
 
-Please refer back to the full instructions in the knowledge center article – "KNOWLEDGE CENTER ARTICLE: INSTALLING AND TESTING CINDER IN YOUR RACKSPACE PRIVATE CLOUD LAB ENVIRONMENT" or at my other cinder related posts for additional help.
-
 Look for future cinder related posts with more advanced topics such as using NetApp, EMC or SolidFire cinder drivers, providing Cinder HA to your instances and using multiple cinder devices to provide workload separation and performance tiering for your instances.
 
 ### Reference material
