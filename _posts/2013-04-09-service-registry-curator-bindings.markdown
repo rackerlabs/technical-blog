@@ -48,7 +48,7 @@ is a good place to implement application-specific coordination.  In this case we
 programmers to use RSR.  We decided to create
 [Curator bindings](https://github.com/racker/java-service-registry-client/pull/20) so that the Netflix API could be
 used to register services with RSR.  The nice thing about the RSR
-is that all calls are HTTP using a publicly specified API.  And of course you also benefit from our fanatical support.
+is that all calls are HTTP using a publicly specified API.  And of course you also benefit from Rackpace support.
 
 Those bindings have been pushed and you are welcome to try them out now.
 
@@ -93,4 +93,3 @@ use the RSR, fill out [this survey](https://surveys.rackspace.com/Survey.aspx?s=
 and we’ll get it enabled for your Rackspace Cloud account.  Also, we are keen to hear your feedback.  If you need help
 with anything mentioned in this blog post, or are stuck in any way using the RSR, help is only an email
 away: [sr@rackspace.com](mailto://sr@rackspace.com).
-
