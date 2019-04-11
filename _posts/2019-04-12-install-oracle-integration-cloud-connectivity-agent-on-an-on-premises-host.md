@@ -277,7 +277,6 @@ variable of OICS agent, by using the following commands:
     cd /u02/app/OICS/Agent
     nohup ./startAgent.sh -u=CloudUserName -p=CloudPassword &
 
-
 ### Conclusion
 
 The Oracle on-premises integration agent is a key component to integrate any
