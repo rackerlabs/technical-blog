@@ -3,7 +3,7 @@ layout: post
 title: "Install Oracle Integration Cloud connectivity agent on an on-premises host"
 date: 2019-04-11 00:01
 comments: true
-author: Ash Hornbeck
+author: Sunil Sharma
 published: true
 authorIsRacker: true
 categories:
@@ -20,9 +20,6 @@ database or Oracle&reg; E-business Suite (EBS) database from the Oracle
 Integration Cloud, you need to install the Oracle Integration Cloud connectivity
 agent on your on-premises host. The Oracle Integration Cloud agent installs a
 WebLogic server with only the *AdminServer* component.
-
-
-![]({% asset_path 2019-04-12-install-oracle-integration-cloud-connectivity-agent-on-an-on-premises-host/Picture1.png %})
 
 <!-- more -->
 
@@ -64,12 +61,16 @@ Oracle Integration Cloud:
 
 ![]({% asset_path 2019-04-12-install-oracle-integration-cloud-connectivity-agent-on-an-on-premises-host/Picture1.png %})
 
-4. Click **Download** and then click **Connectivity Agent**.
+<ol start=4>
+    <li>Click <b>Download</b> and then click <b>Connectivity Agent</b>.</li>
+</ol>
 
 ![]({% asset_path 2019-04-12-install-oracle-integration-cloud-connectivity-agent-on-an-on-premises-host/Picture2.png %})
 
-5. The software size should be around 2GB. Move downloaded installation software
-   to your on-premises host server.
+<ol start=5>
+    <li>The software size should be around 2GB. Move downloaded installation software
+   to your on-premises host server</li>
+</ol>
 
 #### Create an agent group in the Oracle Integration Cloud
 
@@ -82,16 +83,20 @@ by using the following steps:
 
 ![]({% asset_path 2019-04-12-install-oracle-integration-cloud-connectivity-agent-on-an-on-premises-host/Picture3.png %})
 
-2. Click **Create Agent Group** provide the following inputs:
-
-   a.	Agent group name: This is used when you install the Connectivity Agent on
-   the on-premises host.
-   b.	Identifier: You can use the same name as the Agent group name or give any
-   name to identify this group.
-   c.	Agent type: Not changeable.
-   d.	Description: Give a description of the Agent.
+<ol start=2>
+    <li>Click <b>Create Agent Group<b> provide inputs as shown in the following image:</li>
+</ol>
 
 ![]({% asset_path 2019-04-12-install-oracle-integration-cloud-connectivity-agent-on-an-on-premises-host/Picture4.png %})
+
+The inputs are as follows:
+
+- **Agent group name**: This is used when you install the Connectivity Agent on
+  the on-premises host.
+- **Identifier**: You can use the same name as the Agent group name or give any
+  name to identify this group.
+- **Agent type**: Not changeable.
+- **Description**: Give a description of the Agent.
 
 #### Download the Oracle Java JDK 1.7 or 1.8
 
@@ -233,22 +238,23 @@ to the Agent KSS store.
     [cert]$
 
 
-4. Import the entire certificate chain from Oracle Integration Cloud Service as follows:
+<ol start=4>
+    <li>Import the entire certificate chain from Oracle Integration Cloud Service as follows:</li>
+</ol>
 
-        [cert]$ keytool -import -trustcacerts -keystore /u02/app/OICS/Agent/agenthome/cert/keystore.jks -file oraclecloudcom.crt -alias ICS.us2.oraclecloud.com
-        Enter keystore password: *******
+    [cert]$ keytool -import -trustcacerts -keystore /u02/app/OICS/Agent/agenthome/cert/keystore.jks -file oraclecloudcom.crt -alias ICS.us2.oraclecloud.com
+    Enter keystore password: *******
 
-        [cert]$ keytool -import -trustcacerts -keystore /u02/app/OICS/Agent/agenthome/cert/keystore.jks -file RootCA.crt -alias ICS.us2.oraclecloud.com
-        Enter keystore password:  *******
-        Certificate already exists in system-wide CA keystore under alias <rootca [jdk]>
-        Do you still want to add it to your own keystore? [no]:  yes
-        Certificate was added to keystore
+    [cert]$ keytool -import -trustcacerts -keystore /u02/app/OICS/Agent/agenthome/cert/keystore.jks -file RootCA.crt -alias ICS.us2.oraclecloud.com
+    Enter keystore password:  *******
+    Certificate already exists in system-wide CA keystore under alias <rootca [jdk]>
+    Do you still want to add it to your own keystore? [no]:  yes
+    Certificate was added to keystore
 
-        [cert]$ keytool -import -trustcacerts -keystore /u02/app/OICS/Agent/agenthome/cert/keystore.jks -file CA_intermediate.crt -alias intermediate_ICS.us2.oraclecloud.com
+    [cert]$ keytool -import -trustcacerts -keystore /u02/app/OICS/Agent/agenthome/cert/keystore.jks -file CA_intermediate.crt -alias intermediate_ICS.us2.oraclecloud.com
 
 
 #### 5. Bounce the Agent Services
-
 
 To stop the connectivity agent on the on-premises host, set the environments
 variable of OICS agent, by using the following commands:
