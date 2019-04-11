@@ -92,7 +92,7 @@ Service by using the following steps:
 ![]({% asset_path 2019-04-12-install-oracle-integration-cloud-connectivity-agent-on-an-on-premises-host/Picture3.png %})
 
 <ol start=2>
-    <li>Click <b>Create Agent Group<b> and provide inputs as shown in the following image:</li>
+    <li>Click <b>Create Agent Group</b> and provide inputs as shown in the following image:</li>
 </ol>
 
 ![]({% asset_path 2019-04-12-install-oracle-integration-cloud-connectivity-agent-on-an-on-premises-host/Picture4.png %})
@@ -124,7 +124,7 @@ moved to your on-premises host server.
 Use the following steps to install the connectivity agent in **/u01/app/OICS**
 in the on-premises Linux host.
 
-#### 1. Set JDK 1.7 or 1.8 to PATH
+#### Set JDK 1.7 or 1.8 to PATH
 
 Extract the latest JDK version at **/u01/app/OICS** as shown in the following
 example:
@@ -160,7 +160,7 @@ following example:
     Java HotSpot(TM) 64-Bit Server VM (build 25.181-b13, mixed mode)
     [OICS]$
 
-#### 2. Check the connectivity between the on-premises server and the Oracle Integration Cloud Service
+#### Check the connectivity between the on-premises server and the Oracle Integration Cloud Service
 
 Before installing the agent, verify that the Oracle Integrated Cloud Service URL can be
 accessed from the on-premises server. If it is inaccessible, the connectivity
@@ -179,7 +179,7 @@ succeeds, the URL is accessible.
     Downloaded: 1 file, 8.1K in 0.003s (2.69 MB/s)
     [OICS]$
 
-#### 3. Install the on-premises connectivity agent
+#### Install the on-premises connectivity agent
 
 To install the on-premises connectivity agent, extract the
 connectivity agent software. Copy **cloud-connectivity-agent-installer.bsx**
@@ -218,7 +218,7 @@ the installation in the `-ap` parameter.
 
 The WebLogic console should show **AdminServer** in **RUNNING** status.
 
-#### 4. Import the Oracle Integration Cloud Service certificate
+#### Import the Oracle Integration Cloud Service certificate
 
 Use the following steps to import the Oracle Integration Cloud Service certificate
 into the agent Keystore Service (KSS) key store.
@@ -266,7 +266,7 @@ into the agent Keystore Service (KSS) key store.
     [cert]$ keytool -import -trustcacerts -keystore /u02/app/OICS/Agent/agenthome/cert/keystore.jks -file CA_intermediate.crt -alias intermediate_ICS.us2.oraclecloud.com
 
 
-#### 5. Bounce the agent services
+#### Bounce the agent services
 
 To stop the connectivity agent on the on-premises host, set the environments
 variable of the Oracle Integration Cloud Service agent by using the following commands:
