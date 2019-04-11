@@ -28,30 +28,29 @@ agent installs a WebLogic server with only the AdminServer component.
 Before you install the connectivity agent on an on-premises database, make sure
 that you have considered the following prerequisites:
 
-1. Operating system (OS) prerequisites include the following items:
+*  Operating system (OS) prerequisites include the following items:
 
-   a.	Oracle Enterprise Linux&reg; (OEL) version 6 or 7.
+   -  Oracle Enterprise Linux&reg; (OEL) version 6 or 7.
    
-   b.	8 GB of free memory on the host with a 4 GB Java heap size. If the heap
-        size increases, you need more memory.
+   -  8 GB of free memory on the host with a 4 GB Java heap size. If the heap
+      size increases, you need more memory.
       
-   c.	A fully-qualified domain name entry in **/etc/hosts**.
+   -  A fully-qualified domain name entry in **/etc/hosts**.
    
-   d.	A mount point with 20 GB of free space.
+   -  A mount point with 20 GB of free space.
    
-   e.	A user name with the database administrator (DBA) group.
-   
+   -  A user name with the database administrator (DBA) group.  
 
-2.	Java version prerequisites include the following items:
+*  Java version prerequisites include the following items:
 
-    a.	You must install Oracle JDK version 1.7 or 1.8 to install and use the
-        connectivity agent.
+   -  You must install Oracle JDK version 1.7 or 1.8 to install and use the
+      connectivity agent.
    
-    b.	Other JDKs are not supported.
+   -  Other JDKs are not supported.
 
-3.	Open port 443 on the on-premises host to enable connectivity between the
-    on-premises host (where agent will be installed) and the Oracle Integration
-    Cloud Service.
+*  Open port 443 on the on-premises host to enable connectivity between the
+   on-premises host (where agent will be installed) and the Oracle Integration
+   Cloud Service.
 
 ### Required software downloads and configuration steps
 
@@ -62,10 +61,10 @@ Use the following steps to download the required software components.
 Use the following steps to download the connectivity agent software from the
 Oracle Integration Cloud Service:
 
-1.	Enter [https://cloud.oracle.com/OIC](https://cloud.oracle.com/OIC) in your browser.
-2.	Click **Sign In** and following the prompts to sign in with your cloud user
-   name and password.
-3.	Click **Agent**.
+1.  Enter [https://cloud.oracle.com/OIC](https://cloud.oracle.com/OIC) in your browser.
+2.  Click **Sign In** and following the prompts to sign in with your cloud user
+    name and password.
+3.  Click **Agent**.
 
 ![]({% asset_path 2019-04-12-install-oracle-integration-cloud-connectivity-agent-on-an-on-premises-host/Picture1.png %})
 
@@ -126,8 +125,8 @@ in the on-premises Linux host.
 
 #### Set JDK 1.7 or 1.8 to PATH
 
-Extract the latest JDK version at **/u01/app/OICS** as shown in the following
-example:
+1.  Extract the latest JDK version at **/u01/app/OICS** as shown in the following
+    example:
 
     [Softwares]$ pwd
     /u02/app/OICS/Softwares
@@ -139,16 +138,16 @@ example:
     drwxr-xr-x 7 orati2 dba       4096 Jul  7 04:09 jdk1.8.0_181
     [Softwares]$
 
-Copy all the files from **jdk1.8.0_181** to your **JAVA_HOME** directory as
-shown in the following example:
+2.  Copy all the files from **jdk1.8.0_181** to your **JAVA_HOME** directory as
+    shown in the following example:
 
     [Softwares]$ pwd
     /u02/app/OICS/Softwares
     [Softwares]$ cd jdk1.8.0_181
     [jdk1.8.0_181]$ cp -pr *.* ../../jdk/
 
-Export JAVA_HOME, add it to your PATH, and check the Java version as shown in the
-following example:
+3.  Export JAVA_HOME, add it to your PATH, and check the Java version as shown in the
+    following example:
 
     [OICS]$ export JAVA_HOME=/u02/app/OICS/jdk
     [OICS]$ export PATH=$JAVA_HOME/bin:$PATH
@@ -223,20 +222,21 @@ The WebLogic console should show **AdminServer** in **RUNNING** status.
 Use the following steps to import the Oracle Integration Cloud Service certificate
 into the agent Keystore Service (KSS) key store.
 
-1.	In the **startAgent.sh** file, check line 63 for the key store path, for
-   example, **Agent_Home/cert/keystore.jks**. In this case, **Agent_Home** is
-   **/u02/app/OICS/Agent/cert/keystore.jks**.
+1.  In the **startAgent.sh** file, check line 63 for the key store path, for
+    example, **Agent_Home/cert/keystore.jks**. In this case, **Agent_Home** is
+    **/u02/app/OICS/Agent/cert/keystore.jks**.
 2.	Back up the key store.
-3.	Download the Oracle Integration Cloud Service certificates to the host where
-   the agent is running.
+3.  Download the Oracle Integration Cloud Service certificates to the host where
+    the agent is running.
    
-   a.	Log in to the Oracle Integration Cloud Service.
+    a.  Log in to the Oracle Integration Cloud Service.
    
-   b.	In a browser, click the secure link to the left of the HTTPS URL.
+    b.  In a browser, click the secure link to the left of the HTTPS URL.
    
-   c.	Click **Secure Connection > More Information > Security > View Certificate > Details**.
+    c.  Click **Secure Connection > More Information > Security > View Certificate > Details**.
    
-   d.	Click **Export** and save the file with a **.crt** extension and as a **type X.509 Certificate with chain (PEM) (\*.crt,\*.pem)**.
+    d.  Click **Export** and save the file with a **.crt** extension and as a
+        **type X.509 Certificate with chain (PEM) (\*.crt,\*.pem)**.
 
    Download all three certificates (Root, Intermediate, and User Level, and move
    the downloaded certificates to **/u02/app/OICS/Agent/agenthome/cert**.
