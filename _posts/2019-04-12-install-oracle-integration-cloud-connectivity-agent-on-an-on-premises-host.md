@@ -228,18 +228,13 @@ into the agent Keystore Service (KSS) key store.
 2.	Back up the key store.
 3.  Download the Oracle Integration Cloud Service certificates to the host where
     the agent is running.
-   
-    a.  Log in to the Oracle Integration Cloud Service.
-   
-    b.  In a browser, click the secure link to the left of the HTTPS URL.
-   
-    c.  Click **Secure Connection > More Information > Security > View Certificate > Details**.
-   
-    d.  Click **Export** and save the file with a **.crt** extension and as a
-        **type X.509 Certificate with chain (PEM) (\*.crt,\*.pem)**.
-
-   Download all three certificates (Root, Intermediate, and User Level, and move
-   the downloaded certificates to **/u02/app/OICS/Agent/agenthome/cert**.
+4.  Log in to the Oracle Integration Cloud Service.
+5.  In a browser, click the secure link to the left of the HTTPS URL.
+6.  Click **Secure Connection > More Information > Security > View Certificate > Details**.
+7.  Click **Export** and save the file with a **.crt** extension and as a
+    **type X.509 Certificate with chain (PEM) (\*.crt,\*.pem)**.
+8.  Download all three certificates (Root, Intermediate, and User Level, and move
+    the downloaded certificates to **/u02/app/OICS/Agent/agenthome/cert**.
 
     [cert]$ pwd
     /u02/app/OICS/Agent/agenthome/cert
@@ -250,20 +245,20 @@ into the agent Keystore Service (KSS) key store.
     [cert]$
 
 
-<ol start=4>
+<ol start=9>
     <li>Import the entire certificate chain from Oracle Integration Cloud Service as follows:</li>
 </ol>
 
-    [cert]$ keytool -import -trustcacerts -keystore /u02/app/OICS/Agent/agenthome/cert/keystore.jks -file oraclecloudcom.crt -alias ICS.us2.oraclecloud.com
+    [cert]$ keytool -import -trustcacerts -keystore /u02/app/OICS/Agent/agenthome/cert/keystore.jks -file oraclecloudcom.crt -     alias ICS.us2.oraclecloud.com
     Enter keystore password: *******
 
-    [cert]$ keytool -import -trustcacerts -keystore /u02/app/OICS/Agent/agenthome/cert/keystore.jks -file RootCA.crt -alias ICS.us2.oraclecloud.com
+    [cert]$ keytool -import -trustcacerts -keystore /u02/app/OICS/Agent/agenthome/cert/keystore.jks -file RootCA.crt -alias       ICS.us2.oraclecloud.com
     Enter keystore password:  *******
     Certificate already exists in system-wide CA keystore under alias <rootca [jdk]>
     Do you still want to add it to your own keystore? [no]:  yes
     Certificate was added to keystore
 
-    [cert]$ keytool -import -trustcacerts -keystore /u02/app/OICS/Agent/agenthome/cert/keystore.jks -file CA_intermediate.crt -alias intermediate_ICS.us2.oraclecloud.com
+    [cert]$ keytool -import -trustcacerts -keystore /u02/app/OICS/Agent/agenthome/cert/keystore.jks -file CA_intermediate.crt     -alias intermediate_ICS.us2.oraclecloud.com
 
 
 #### Bounce the agent services
