@@ -62,7 +62,7 @@ Use the following steps to download the connectivity agent software from the
 Oracle Integration Cloud Service:
 
 1.  Enter [https://cloud.oracle.com/OIC](https://cloud.oracle.com/OIC) in your browser.
-2.  Click **Sign In** and following the prompts to sign in with your cloud user
+2.  Click **Sign In** and follow the prompts to sign in with your cloud user
     name and password.
 3.  Click **Agent**.
 
@@ -88,7 +88,7 @@ Service by using the following steps:
    your cloud administrator login ID and password, and create an agent group by
    clicking the **Agent Icon**.
 
-![]({% asset_path 2019-04-12-install-oracle-integration-cloud-connectivity-agent-on-an-on-premises-host/Picture3.png %})
+![]({% asset_path 2019-04-12-install-oracle-integration-cloud-connectivity-agent-on-an-on-premises-host/Picture1.png %})
 
 <ol start=2>
     <li>Click <b>Create Agent Group</b> and provide inputs as shown in the following image:</li>
