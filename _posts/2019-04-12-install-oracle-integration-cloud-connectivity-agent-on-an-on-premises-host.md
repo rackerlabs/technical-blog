@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Install Oracle Integration Cloud Service connectivity agent on an on-premises host"
+title: "Install the Oracle Integration Cloud Service connectivity agent on an on-premises host"
 date: 2019-04-11 00:01
 comments: true
 author: Sunil Sharma
@@ -9,9 +9,9 @@ authorIsRacker: true
 categories:
     - Oracle
     - Database
-metaTitle: "Install Oracle Integration Cloud Service connectivity agent on an on-premises host"
+metaTitle: "Install the Oracle Integration Cloud Service connectivity agent on an on-premises host"
 metaDescription: "To gain access to an on-premises database from the Oracle Integration Cloud Service, you need to install the Oracle Integration Cloud Service connectivity agent on an on-premises host."
-ogTitle: "Install Oracle Integration Cloud Service connectivity agent on an on-premises host"
+ogTitle: "Install the Oracle Integration Cloud Service connectivity agent on an on-premises host"
 ogDescription: "To gain access to an on-premises database from the Oracle Integration Cloud Service, you need to install the Oracle Integration Cloud Service connectivity agent on an on-premises host."
 ---
 
