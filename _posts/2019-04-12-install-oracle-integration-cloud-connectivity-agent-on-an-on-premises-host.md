@@ -291,7 +291,6 @@ on-premises database to the Oracle Cloud. The latest version of Oracle connectiv
 agent is available and enables the agent to run in a high availability
 configuration.
 
-
 <table>
   <tr>If you liked this blog, share it by using the following icons:</tr>
   <tr>
