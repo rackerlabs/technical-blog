@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Parse XML in PL/SQL"
-date: 2019-04-11 00:01
+date: 2019-04-18 00:01
 comments: true
-author: Sunil Sharma
+author: Amit Garg
 published: true
 authorIsRacker: true
 categories:
