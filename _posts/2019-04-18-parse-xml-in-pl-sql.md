@@ -176,7 +176,6 @@ By choosing the second approach, you can directly parse the data. However, with
 this option, the original XML file data can’t be accessed in the future because this
 option never stores the content of XML file in Oracle.
 
-
 <table>
   <tr>If you liked this blog, share it by using the following icons:</tr>
   <tr>
