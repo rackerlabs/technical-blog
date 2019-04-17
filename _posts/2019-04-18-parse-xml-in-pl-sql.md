@@ -72,7 +72,7 @@ directory. You can use your own directory of choice instead.
         </FINotification>
     </UANotification>
 
-### First approach:  Load the XML file into an XML table and then parse it.
+### First approach:  Load the XML file into an XML table and then parse it
 
 First, create a table in Oracle that includes a column with data type **XMLTYPE**.
 
