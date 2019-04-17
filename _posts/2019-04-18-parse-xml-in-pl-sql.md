@@ -157,9 +157,9 @@ Both of the methods to parse XML data described in this post give you the same f
 output. The first approach is a three-step process, which requires the following
 pieces of code:
 
-1)	Create the Oracle table.
-2)	Insert the data of the XML file into the table created in step 1.
-3)	Write a SELECT statement to extract values from the table.
+1.  Create the Oracle table.
+2.  Insert the data of the XML file into the created table.
+3.  Write a SELECT statement to extract values from the table.
 
 The second option is a single-step process where you write a SELECT statement
 and get the desired result.
