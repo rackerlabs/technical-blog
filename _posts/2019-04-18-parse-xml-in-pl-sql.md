@@ -10,35 +10,27 @@ categories:
     - Oracle
     - Database
 metaTitle: "Parse XML in PL/SQL"
-metaDescription: "This blog explores a few choices for handling XML data in Oracle&reg; PL/SQL."
+metaDescription: "This blog explores a few methods for handling XML data in Oracle&reg; PL/SQL."
 ogTitle: "Parse XML in PL/SQL"
-ogDescription: "This blog explores a few choices for handling XML data in Oracle&reg; PL/SQL."
+ogDescription: "This blog explores a few methods for handling XML data in Oracle&reg; PL/SQL."
 ---
 
-This blog explores a few choices for handling XML data in Oracle&reg; PL/SQL.
-If you are looking to convert XML data into rows and columns by using PL/SQL,
-then you have various options such as the following choices:
+This blog explores a few methods for handling XML data in Oracle&reg; PL/SQL.
 
-- You can load an XML file into an XML table and then extract each tag
-  into individual columns and rows.
-- You can directly extract tags from an XML file without loading it into an
-  Oracle table. To load the XML data into an Oracle table you can use
-  options such as `SQLLOADER`, `utl_file`, or `XML CLOB`.
+If you want to convert XML data from an XML file into Oracle PL/SQL rows and columns,
+the following options are available:
 
-<!-- more -->
-
-After you load the data into a table, you need to extract value from each XML
+-	Load the XML file into an XML table and then parse it.
+-	Directly parse the XML file without loading into an XML table. To load the XML
+    data into an Oracle table, you then use options such as `SQLLOADER`,
+    `utl_file`, or `XML CLOB`.
+    
+After you load the data into a table, you need to extract values from each XML
 tag. To extract the XML data, you can use few built-in functions provided by
-Oracle such as `XMLELEMENT`, `XMLAGG`, `XMLTABLE`, `XMLSEQUENCE` and
-`EXTRACTVALUE` .
+Oracle, such as `XMLELEMENT`, `XMLAGG`, `XMLTABLE`, `XMLSEQUENCE`, and
+`EXTRACTVALUE`.   
 
-This post covers in detail the following two methods to convert data from XML
-file into Oracle PL/SQL rows and columns:
-
--	Load XML file into XML table and then parse it.
--	Directly parse XML file without loading into an XML table.
-
-The main built-in function used is EXTRACT, which is shown in the following image.
+The main built-in function used is EXTRACT, which is shown in the following image:
 
 ![]({% asset_path 2019-04-18-parse-xml-in-pl-sql/Picture1.png %})
 
@@ -46,8 +38,8 @@ The main built-in function used is EXTRACT, which is shown in the following imag
 
 ### Example file
 
-To explore the preceding options in detail, the example in this post use the
-file, **Test.xml**. To access the file in database, use the **DBA** directory,
+To explore these options in detail, the example in this post uses the
+file, **Test.xml**. To access the file in the database, use the **DBA** directory,
 which is defined in Oracle. The examples use **XX\_UTL\_DIR** as the reference
 directory. You can use your own directory of choice instead.
 
@@ -80,7 +72,7 @@ directory. You can use your own directory of choice instead.
         </FINotification>
     </UANotification>
 
-### First Approach:  Load XML file into XML table and then parse it.
+### First approach:  Load the XML file into an XML table and then parse it.
 
 First, create a table in Oracle that includes a column with data type **XMLTYPE**.
 
@@ -91,7 +83,7 @@ For example, use the following code to create the table:
       xml_data  XMLTYPE
     );
 
-After that insert data from **Test.xml** into **xml.tab** by using the following
+Next, insert data from **Test.xml** into **xml.tab** by using the following
 command:.
 
     INSERT INTO xml_tab
@@ -100,12 +92,12 @@ command:.
     NLS_CHARSET_ID ('AL32UTF8')
     ));
 
-The preceding insert statement inserts the data of file **Test.xml**
-into field `xml_data` of table **xml\_tab**. After the insert completes, the XML
-data is available in table **xml\_tab**. To read the data in a select query, use
-the following select statements:
+The preceding INSERT statement inserts the data of file **Test.xml**
+into the field `xml_data` of the table **xml\_tab**. After the INSERT completes, the XML
+data is available in table **xml\_tab**. To read the data in a SELECT query, use
+the SELECT statements described next.
 
-To read the text of the tag `Message` that is available under parent tag
+To read the text of the tag `Message` that is available under the parent tag
 `DataError`, use the following SQL command:
 
     SELECT EXTRACT (VALUE (a1),
@@ -140,7 +132,7 @@ To read `property name` and its value, use the following SQL command:
                 'xmlns="http://www.test.com/UANotification" xmlns:ns2="http://www.test.com/fileIntegration"'))) a1
      WHERE file_name = 'Test.xml';
 
-### Second Approach: Directly parse XML file without loading into XML table
+### Second approach: Directly parse the XML file without loading it into an XML table
 
 If you want to directly parse **Test.xml** without loading it into the Oracle
 table, then you might use the following SELECT statement:
@@ -161,25 +153,25 @@ table, then you might use the following SELECT statement:
 
 ### Wrap up
 
-Both methods to parse XML data described in this post give you the same final
+Both of the methods to parse XML data described in this post give you the same final
 output. The first approach is a three-step process, which requires the following
 pieces of code:
 
 1)	Create the Oracle table.
-2)	Insert data of XML file into table created in step one.
-3)	Write select statement to extract values from the Oracle table.
+2)	Insert the data of the XML file into the table created in step 1.
+3)	Write a SELECT statement to extract values from the table.
 
 The second option is a single-step process where you write a SELECT statement
 and get the desired result.
 
 ### Conclusion
 
-Either parsing option works, but, if you need to store the XML file in Oracle for
-future reference, then you should use first approach because the data persists
+Either option works, but if you need to store the XML file in Oracle for
+future reference, then you should use the first approach because the data persists
 in the table for future reference and you can access it any time.
 
-By choosing the second approach, you can directly parse the data, however, with
-this option original XML file data can’t be accessed in future because this
+By choosing the second approach, you can directly parse the data. However, with
+this option, the original XML file data can’t be accessed in the future because this
 option never stores the content of XML file in Oracle.
 
 
