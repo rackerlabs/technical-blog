@@ -23,16 +23,15 @@ If you want to convert XML data from an XML file into Oracle PL/SQL rows and col
 the following options are available:
 
 -	Load the XML file into an XML table and then parse it.
--	Directly parse the XML file without loading into an XML table. To load the XML
-    data into an Oracle table, you then use options such as `SQLLOADER`,
-    `utl_file`, or `XML CLOB`.
+-	Directly parse the XML file without loading into an XML table.
 
-After you load the data into a table, you need to extract values from each XML
-tag. To extract the XML data, you can use few built-in functions provided by
-Oracle, such as `XMLELEMENT`, `XMLAGG`, `XMLTABLE`, `XMLSEQUENCE`, and
-`EXTRACTVALUE`.
+To load the XML data into an Oracle table, use options such as `SQLLOADER`,
+`utl_file`, or `XML CLOB`. After you load the data into a table, you need to
+extract values from each XML tag. To extract the XML data, use the built-in
+functions provided by Oracle, such as `XMLELEMENT`, `XMLAGG`, `XMLTABLE`,
+`XMLSEQUENCE`, and `EXTRACTVALUE`.
 
-The main built-in function used is EXTRACT, which is shown in the following image:
+The main built-in function used is `EXTRACT`, which is shown in the following image:
 
 ![]({% asset_path 2019-04-18-parse-xml-in-pl-sql/Picture1.png %})
 
