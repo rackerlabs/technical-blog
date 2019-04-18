@@ -208,7 +208,26 @@ option never stores the content of XML file in Oracle.
 
 </br>
 
-Learn more about our [database services](https://www.rackspace.com/dba-services)
-and [Rackspace Application services](https://www.rackspace.com/application-management/managed-services).
+Learn more about our [database services](https://www.rackspace.com/dba-services).
 
-If you have any questions on the topic, comment in the field below.
+About [Rackspace Application services](https://www.rackspace.com/application-management/managed-services)
+(RAS): Rackspace's team of application experts provide professional managed
+services across a broad portfolio of applications including eCommerce and
+Digital Experience platforms, Enterprise Resource Planning (ERP), Business
+Intelligence, Salesforce Customer Relationship Management (CRM), Databases, and
+Email Hosting and Productivity.
+
+We deliver:
+
+- **Unbiased expertise**: We simplify and guide your modernization journey,
+focusing on the capabilities that deliver immediate value.
+- **Fanatical experience**: We combine a *process first, technology second*
+approach with dedicated technical support to provide comprehensive solutions.
+- **Unrivaled portfolio**: We apply extensive cloud experience to help you
+choose and deploy the right technology on the right cloud.
+- **Agile delivery**: We meet you where you are in your journey and align
+our success with yours.
+
+[Chat Now](https://www.rackspace.com/#chat) to get started.
+
+If you have any questions on this post, comment in the field below.
