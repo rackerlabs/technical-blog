@@ -209,7 +209,7 @@ option never stores the content of XML file in Oracle.
 
 Learn more about our [database services](https://www.rackspace.com/dba-services).
 
-**About [Rackspace Application services]**(https://www.rackspace.com/application-management/managed-services)
+**About [Rackspace Application services](https://www.rackspace.com/application-management/managed-services)**
 (RAS): Rackspace's team of application experts provide 
 [professional](https://www.rackspace.com/application-management/professional-services) and 
 [managed services](https://www.rackspace.com/application-management/managed-services) across 
