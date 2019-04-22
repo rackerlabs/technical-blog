@@ -15,7 +15,7 @@ ogTitle: "Parse XML in PL/SQL"
 ogDescription: "This blog explores a few methods for handling XML data in Oracle&reg; PL/SQL."
 ---
 
-This blog explores a few methods for handling XML data in Oracle&reg; PL/SQL.
+This blog explores a few methods for handling XML data in Oracle&reg; PL/SQL. Learn more about our [database services](https://www.rackspace.com/dba-services).
 
 <!-- more -->
 
@@ -207,19 +207,17 @@ option never stores the content of XML file in Oracle.
 
 </br>
 
-Learn more about our [database services](https://www.rackspace.com/dba-services).
-
 **About [Rackspace Application services](https://www.rackspace.com/application-management/managed-services)
-(RAS)**: Rackspace's team of application experts provide 
-[professional](https://www.rackspace.com/application-management/professional-services) and 
+(RAS)**: Rackspace's team of application experts provide the following [professional](https://www.rackspace.com/application-management/professional-services) and 
 [managed services](https://www.rackspace.com/application-management/managed-services) across 
-a broad portfolio of applications including 
-[eCommerce and Digital Experience platforms](https://www.rackspace.com/ecommerce-digital-experience), 
-[Enterprise Resource Planning (ERP)](https://www.rackspace.com/erp), 
-[Business Intelligence](https://www.rackspace.com/business-intelligence), 
-[Salesforce Customer Relationship Management (CRM)](https://www.rackspace.com/salesforce-managed-services), 
-[Databases](https://www.rackspace.com/dba-services), and
-[Email Hosting and Productivity](https://www.rackspace.com/email-hosting).
+a broad portfolio of applications:
+
+- [eCommerce and Digital Experience platforms](https://www.rackspace.com/ecommerce-digital-experience), 
+- [Enterprise Resource Planning (ERP)](https://www.rackspace.com/erp), 
+- [Business Intelligence](https://www.rackspace.com/business-intelligence), 
+- [Salesforce Customer Relationship Management (CRM)](https://www.rackspace.com/salesforce-managed-services), 
+- [Databases](https://www.rackspace.com/dba-services), and
+- [Email Hosting and Productivity](https://www.rackspace.com/email-hosting).
 
 We deliver:
 
