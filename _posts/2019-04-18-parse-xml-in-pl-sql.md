@@ -207,8 +207,8 @@ option never stores the content of XML file in Oracle.
 
 </br>
 
-**About [Rackspace Application services](https://www.rackspace.com/application-management/managed-services)
-(RAS)**: Rackspace's team of application experts provide the following [professional](https://www.rackspace.com/application-management/professional-services) and 
+[Rackspace's Application services](https://www.rackspace.com/application-management/managed-services)
+**(RAS)** experts provide the following [professional](https://www.rackspace.com/application-management/professional-services) and 
 [managed services](https://www.rackspace.com/application-management/managed-services) across 
 a broad portfolio of applications:
 
