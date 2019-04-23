@@ -208,16 +208,16 @@ option never stores the content of XML file in Oracle.
 </br>
 
 [Rackspace's Application services](https://www.rackspace.com/application-management/managed-services)
-**(RAS)** experts provide the following [professional](https://www.rackspace.com/application-management/professional-services) and 
+**(RAS)** experts provide the following [professional](https://www.rackspace.com/application-management/professional-services) 
 [managed services](https://www.rackspace.com/application-management/managed-services) across 
 a broad portfolio of applications:
 
-- [eCommerce and Digital Experience platforms](https://www.rackspace.com/ecommerce-digital-experience), 
-- [Enterprise Resource Planning (ERP)](https://www.rackspace.com/erp), 
-- [Business Intelligence](https://www.rackspace.com/business-intelligence), 
-- [Salesforce Customer Relationship Management (CRM)](https://www.rackspace.com/salesforce-managed-services), 
-- [Databases](https://www.rackspace.com/dba-services), and
-- [Email Hosting and Productivity](https://www.rackspace.com/email-hosting).
+- [eCommerce and Digital Experience platforms](https://www.rackspace.com/ecommerce-digital-experience) 
+- [Enterprise Resource Planning (ERP)](https://www.rackspace.com/erp)
+- [Business Intelligence](https://www.rackspace.com/business-intelligence)
+- [Salesforce Customer Relationship Management (CRM)](https://www.rackspace.com/salesforce-managed-services) 
+- [Databases](https://www.rackspace.com/dba-services)
+- [Email Hosting and Productivity](https://www.rackspace.com/email-hosting)
 
 We deliver:
 
