@@ -228,4 +228,3 @@ our success with yours.
 [Chat now](https://www.rackspace.com/#chat) to get started.
 
 If you have any questions on this post, comment in the field below.
-
