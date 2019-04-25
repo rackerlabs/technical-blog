@@ -47,7 +47,7 @@ standby database’s current SCN, which you can then use to roll forward the sta
 
 ### Steps to roll forward a physical standby database
 
-Use the following steps to roll forward an physical standby database.
+Use the following steps to roll forward a physical standby database.
 
 #### Find the SCN gap
 
