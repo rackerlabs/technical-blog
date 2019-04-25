@@ -224,7 +224,7 @@ We deliver:
 
 - **Unbiased expertise**: We simplify and guide your modernization journey,
 focusing on the capabilities that deliver immediate value.
-- **Fanatical experience**: We combine a *process first, technology second*
+- **Fanatical experience&trade;**: We combine a *process first, technology second*
 approach with dedicated technical support to provide comprehensive solutions.
 - **Unrivaled portfolio**: We apply extensive cloud experience to help you
 choose and deploy the right technology on the right cloud.
