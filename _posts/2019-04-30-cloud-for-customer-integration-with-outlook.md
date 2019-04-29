@@ -77,7 +77,7 @@ Perform the following steps to enable the Outlook integration features:
 
 <ol start=6>
     <li>To activate the business object synchronization functionality, select
-    <b>View\>SAP Hybris Cloud for Customer</b> as shown in the following image:</li>
+    <b>View>SAP Hybris Cloud for Customer</b> as shown in the following image:</li>
 </ol>
 
 ![]({% asset_path 2019-04-30-cloud-for-customer-integration-with-outlook/Picture6.png %})
@@ -95,7 +95,7 @@ Perform the following steps to enable the Outlook integration features:
 </ol>
 
 <ol start=9>
-    <li> Select <b>Advanced Settings\>Activity</b> to synchronize activities, leads, and
+    <li> Select <b>Advanced Settings>Activity</b> to synchronize activities, leads, and
    opportunities.</li>
 </ol>    
 
