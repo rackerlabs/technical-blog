@@ -39,7 +39,7 @@ Before we enable the Outlook integration, we need to fine-tune the business
 configuration by executing the following steps:
 
 1. Go to **Business Configuration>Implementation Projects>Open Activity List**.
-2. Select the **Fine-Tue** tab.
+2. Select the **Fine-Tune** tab.
 3. Add **Activities** to the solution as shown in the following image:
 
 ![]({% asset_path 2019-04-30-cloud-for-customer-integration-with-outlook/Picture1.png %})
@@ -97,7 +97,7 @@ Perform the following steps to enable the Outlook integration features:
 <ol start=9>
     <li> Select <b>Advanced Settings>Activity</b> to synchronize activities, leads, and
    opportunities.</li>
-</ol>    
+</ol>
 
 ### The C4C Outlook add-in synchronization functionality
 
