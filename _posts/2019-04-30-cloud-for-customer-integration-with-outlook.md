@@ -32,7 +32,6 @@ download link of the C4C application.
 **Note:** This add-in is available for the Outlook client only. Default add-ins
 are available in C4C, based on the client's requirements.
 
-
 ### Prerequisite: Fine-tune configuration
 
 Before we enable the Outlook integration, we need to fine-tune the business
