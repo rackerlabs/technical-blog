@@ -18,7 +18,7 @@ Because an ASE is provisioned into a subnet, we can create another subnet in the
 
 ![UploadCert]({% asset_path 2019-05-10-self-sign-certificates-ase/uploadPublicCer.png %})
 
-In the web app **App Settings**, add a new setting called **WEBSITE_LOAD_ROOT_CERTIFICATES** and add the thumbprint of the certificate you uploaded. Restart the web app to load it into the trusted root store.
+In the web app **App Settings**, add a new setting called **WEBSITE\_LOAD\_ROOT\_CERTIFICATES** and add the thumbprint of the certificate you uploaded. Restart the web app to load it into the trusted root store.
 
 ![appSetting]({% asset_path 2019-05-10-self-sign-certificates-ase/appsettingsLoadRoot.png %})
 
