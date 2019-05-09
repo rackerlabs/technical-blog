@@ -29,13 +29,13 @@ production data are saved.
 ### Introduction
 
 In a traditional DR solution, one DR center is deployed for each production
-data center. The DR center does not provide service access unless the production
-data center encounters a disaster that leads to a service breakdown, which can't
-be repaired in a short span of time. Therefore, DR systems face the following
+data center (DC). The DR center does not provide service access unless the production
+DC encounters a disaster that leads to a service breakdown, which can't
+be repaired in a short span of time. Therefore, DR centers face the following
 challenges:
 
 - When the production center encounters power supply failures, fires, floods, or
-earthquakes, manual operation is required to switch services to the DR system.
+earthquakes, manual operation is required to switch services to the DR center.
 Professional recovery measures and debugging are also required. These disasters
 might cause long-term service interruption and service discontinuity.
 
@@ -43,7 +43,7 @@ might cause long-term service interruption and service discontinuity.
 which lowers resource usage.
 
 To meet customer requirements on efficient resource usage, load balancing, and
-automatic switchover between two data centers (DCs), Oracle launched the
+automatic switchover between two DCs, Oracle&reg; launched the
 end-to-end Active-Active DC Solution. This solution enables both DCs to run
 concurrently and share service loads to improve the overall service capability
 and resource usage. The solution also ensures automatic failover with zero
@@ -61,32 +61,32 @@ There are two availability modes in the current storage industry:
 The database (DB) should be set up in active-standby mode with a zero data loss
 option. The following items are critical components:
 
--	Oracle&reg; Data Guard (DG) Broker: Automates and centralizes the DG
+-	Oracle Data Guard Broker: Automates and centralizes the Data Guard
 configuration and helps invoke switchover, or failover, with a single
 command for complex role changes.
 -	Flashback Database: Provides rewind, or revert, for a DB, and stores flashback
 log information in the flash recovery area.
--	Fast Start failover (FSFO): Enables failover with zero data loss. FSFO does
+-	Fast-Start Failover (FSFO): Enables failover with zero data loss. FSFO does
 not trigger unless the standby DB is in sync with primary DB.
--	Observer: Provides a separate process incorporated into the DG command-line
+-	Observer: Provides a separate process incorporated into the Data Guard command-line
 interface, `dgmgrl`, which monitors the state of primary and standby DBs for
 possible failure conditions.
 
-### DG Broker configuration
+### Data Guard configuration
 
-The following image shows the DG Broker configuration:
+The following image shows the Data Guard configuration:
 
 ![]({% asset_path 2019-05-10-metro-virtual-data-centers/Picture1.png %})
 
 *Image source:* [http://neeraj-dba.blogspot.com/2011/10/dataguard-broker-and-its-benefits_05.html](http://neeraj-dba.blogspot.com/2011/10/dataguard-broker-and-its-benefits_05.html)
 
-On the primary DB, the Log Writer process (LGWR) submits the redo data to one
+On the primary DB, the Log Writer (LGWR) process submits the redo data to one
 or more Log Network Server (LNSn) processes, which then initiates the network
 I/O to multiple remote destinations in parallel. Transactions are not committed
 on the primary database until the redo data is necessary to recover the
 transaction received by all LGWR SYNC destinations.
 
-On the standby DB, the remote file server (RFS) receives redo data over the
+On the standby DB, the Remote File Server (RFS) receives redo data over the
 network from the LGWR process and writes the redo data to the standby redo log
 files.
 
@@ -98,28 +98,28 @@ downtime.
 
 Unplanned downtime includes unexpected interruptions to the following items:
 
--	Server availability: You need to ensure uninterrupted access to database
+-	Server availability: You need to ensure uninterrupted access to DB
 services despite the unexpected failure of one or more machines hosting the
-database server, which could happen due to hardware or software fault. Oracle
-Real Application Clusters (RAC) provide the most effective protections against
+DB server, which could happen due to hardware or software fault. Oracle
+Real Application Clusters (RAC) provide the most effective protection against
 such failures.
 
 -	Data availability: To mitigate data failures, such as loss, damage or
 corruption of business-critical data, your plan needs to make sure that you
 always have access to your data.
 
-Planned Downtime includes scheduled interruptions to access including the
+Planned downtime includes scheduled interruptions to access including the
 following items:
 
--	System Changes
--	Data Changes
--	App Changes
+-	System changes
+-	Data changes
+-	App changes
 
 ### Switchover testing scenarios for a MVDC
 
 A switchover is a controlled, planned role reversal operation where the primary
-and standby DBs in the DG configuration switch their roles. After a switchover,
-each database continues to participate in the DG configuration in its new role.
+and standby DBs in the Data Guard configuration switch their roles. After a switchover,
+each database continues to participate in the Data Guard configuration in its new role.
 
 #### Switchover process
 
@@ -128,24 +128,24 @@ A switchover takes place in the following sequence:
 1.	The original primary DB switches role to standby.
 2.	The original standby DB transitions to the primary role.
 
-The DG Broker takes care of the following activities automatically when you
+The Data Guard Broker takes care of the following activities automatically when you
 perform a switchover:
 
 - Verifies that the primary and the target standby DBs are online and that
-there are no errors
-- Shuts down all but one instances in the RAC configuration for both primary
+there are no errors.
+- Shuts down all but one instance in the RAC configuration for both primary
 and standby DBs.
-- Switches the roles of the primary and standby DBs. The DG Broker first
+- Switches the roles of the primary and standby DBs. The Data Guard Broker first
 converts the original primary DB to run in the standby role. Then, the broker
 transitions the target standby DB to the primary role. It also updates the
 broker configuration file to record the changes in roles to ensure that each
 DB runs in the correct role after a restart.
 - Restarts the new standby (former primary) DB and starts the Redo Apply process,
 applying redo data from the new primary DB. If this is a RAC DB, the broker
-restarts the instances that it shut down prior to the switchover.
+restarts the instances that it shut down before the switchover.
 - Restarts the new primary DB, opens and starts redo transport services,
 transmitting redo data to the standby DB. If this is a RAC DB, the broker
-restarts the instances that it shut down prior to the switchover.
+restarts the instances that it shut down before the switchover.
 
 Before switchover:
 
@@ -163,18 +163,18 @@ After switchover:
 
 To perform a switchover, execute the following steps:
 
-1.	Ensure the application is completely shut down and no user is connected to
+1.	Ensure the application is completely shut down, and no user is connected to
 the database.
 
-2. Disable the archive UTL scripts that are running in both DCs at least about
+2. Disable the archive UTL scripts that are running in both DCs at least
 30 minutes before the switchover starts. After the testing is complete and the
-DB is running in the preferred location, uncomment the archived UTL scripts.
+DB is running in the preferred location, uncomment the archived utility scripts.
 
 3.	Run the following SQL queries in the current primary DB:
 
         SELECT * FROM DBA_JOBS_RUNNING; (There should not be any sys owned jobs running)
         SELECT OWNER, JOB_NAME, START_DATE, END_DATE, ENABLED FROM DBA_SCHEDULER_JOBS WHERE ENABLED='TRUE' AND OWNER <> 'SYS';
-            (DG Broker does not kill the jobs owned by sys)
+            (Data Guard Broker does not kill the jobs owned by sys.)
 
 4. Set `job_queue_processes` and `aq_tm_processes` to 0. Make note of the
 original value because you need to reset to the original value after the
@@ -186,10 +186,10 @@ switchover testing completes.
 
         SELECT sid, username, status, program, inst_id FROM gv$session
         WHERE username is not null and status='ACTIVE' order by inst_id;
-            (Validate and check the number of connections are active, a large number
+            (Validate and check the number of connections is active; a large number
             of active connections can lead to the switchover taking more time.)
 
-7. Log out of all sqlplus sessions where you are connected as `sys`.
+7. Log out of all `sqlplus` sessions where you are connected as `sys`.
 
 8. Run the following SQL queries in the current primary DB:
 
@@ -197,13 +197,13 @@ switchover testing completes.
         col value format a35
         SELECT inst_id,name,value from gv$parameter
         WHERE name in ('job_queue_processes','aq_tm_processes');
-            (Check and validate the value of job_queue_processes and aq_tm_processes should be zero)
+            (Check and validate the value of job_queue_processes and aq_tm_processes should be zero.)
 
-9.	Run the following command to validate the DG Broker configuration:
+9.	Run the following command to validate the Data Guard configuration:
 
         DGMGRL> show configuration verbose
 
-        ** STATUS Should show success, do not proceed if status is not "success".
+        ** STATUS Should show success, do not proceed if the status is not "success".
 
 10. Check the Cluster Ready Services (CRS) status to ensure that all the resources
 are registered online because the broker gives the handover to CRS to mount and
@@ -218,7 +218,7 @@ standby and then converts the old standby to primary:
 
         DGMGRL> switchover to ‘DDMPROD_STANDBY’;
 
-13. After the switchover is complete, ensure the Log Transport and Apply services
+13. After the switchover is complete, ensure the log transport and log apply services
 are up and functioning properly.
 
 ### Failover testing scenarios for a MVDC
@@ -235,18 +235,18 @@ state.
 
 #### Failover scenarios
 
-The following database conditions trigger a fast-start failover:
+The following DB conditions trigger a fast-start failover:
 
 -	Primary site failure
 -	Primary DB conditions, including the following:
    - Instance failure
    - Last surviving instance, if RAC
    - Shutdown abort of the last available instance
--	Datafiles taken offline due to I/O errors (threshold ignored when performing
-   a failover due to offline datafiles)
+-	Data files taken offline due to I/O errors (threshold ignored when performing
+   a failover due to offline data files)
 
 Network-related conditions might cause a failover only if links between the
-primary and observer as well as the primary and target standby DBs are down.
+primary and observer, as well as the primary and target standby DBs, are down.
 A connection between Observer and standby is required to enable the observer to
 confirm that the configuration is in a synchronized state.
 
@@ -257,11 +257,11 @@ confirm that the configuration is in a synchronized state.
 
 ### Conclusion
 
-A MVDC helps in efficient resource usage, load balancing, high availability, and
+An MVDC helps efficient resource usage, load balancing, high availability, and
 automatic switchover between two DCs. Both DCs run concurrently (active-active)
-to share service loads and improve the overall service capability. It reduces
+to share service loads and improve the overall service capability. An MVDC reduces
 the human intervention required to switch between databases for disaster recovery
-failovers, or an upgrade/maintenance switchovers.
+failovers or an upgrade/maintenance switchovers.
 
 <table>
   <tr>If you liked this blog, share it by using the following icons:</tr>
