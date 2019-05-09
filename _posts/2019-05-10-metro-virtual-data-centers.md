@@ -321,7 +321,6 @@ choose and deploy the right technology on the right cloud.
 - **Agile delivery**: We meet you where you are in your journey and align
 our success with yours.
 
-
 [Chat now](https://www.rackspace.com/#chat) to get started.
 
 If you have any questions on this post, comment in the field below.
