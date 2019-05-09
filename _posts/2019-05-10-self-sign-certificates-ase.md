@@ -30,4 +30,4 @@ Repeat the above steps on all the required web apps that need to access Solr Clo
 
 ![Schema]({% asset_path 2019-05-10-self-sign-certificates-ase/solrPopulate.png %})
 
-We are mow successfully using a self signed certificate to make https connectivity into solr cloud from an Azure Web App.
+We are now successfully using a self signed certificate to make https connectivity into solr cloud from an Azure Web App.
