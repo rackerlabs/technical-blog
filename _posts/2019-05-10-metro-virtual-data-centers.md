@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Metro virtual data centers"
-date: 2019-04-11 00:01
+date: 2019-05-10 00:01
 comments: true
-author: Sunil Sharma
+author: Sangeetha Pabba
 published: true
 authorIsRacker: true
 categories:
