@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Self Sign Certificates In Azure App Service Environments"
+title: "Self-sign certificates in Azure App Service environments"
 date: 2019-05-10 00:00
 comments: true
 author: Jimmy Rudley
