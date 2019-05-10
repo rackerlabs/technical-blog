@@ -15,7 +15,7 @@ ogTitle: "Self-sign certificates in Azure App Service environments"
 ogDescription: "When deploying Sitecore in to an Azure App Service, you have two options for setting up your search method."
 ---
 
-When deploying Sitecore in to an Azure App Service, you have two options for setting up your search method. The first is method is to use the Azure search, which is integrated into the PaaS Deploy. The other method, and my personal favorite, is to deploy opensol Solr Cloud. 
+When deploying Sitecore in to an Azure App Service, you have two options for setting up your search method. The first is method is to use the Azure search, which is integrated into the PaaS Deploy. The other method, and my personal favorite, is to deploy Apache&reg; Solr Cloud. 
 
 <!-- more -->
 
