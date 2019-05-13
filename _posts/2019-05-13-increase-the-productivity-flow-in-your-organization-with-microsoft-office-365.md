@@ -127,3 +127,4 @@ Rackspace has a team of Microsoft-certified members dedicated to Office
 If you are interested in finding out more about how Rackspace can help your
 business can improve productivity with Microsoft Office 365, visit our
 [information page](https://www.rackspace.com/en-gb/microsoft/office-365).
+
