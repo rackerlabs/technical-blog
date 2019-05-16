@@ -320,42 +320,8 @@ to provide a secure way for the internet-based communication to happen between
 the server and client. This ensures that no one tampers with or hacks the data
 during communications.
 
-
-<table>
-  <tr>If you liked this blog, share it by using the following icons:</tr>
-  <tr>
-   <td>
-       <img src="{% asset_path line-tile.png %}" width=50 >
-    </td>
-    <td>
-      <a href="https://twitter.com/home?status=https%3A//developer.rackspace.com/blog/introduction-to-transport-layer-security/">
-        <img src="{% asset_path shareT.png %}">
-      </a>
-    </td>
-    <td>
-       <img src="{% asset_path line-tile.png %}" width=50 >
-    </td>
-    <td>
-      <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//developer.rackspace.com/blog/introduction-to-transport-layer-security/">
-        <img src="{% asset_path shareFB.png %}">
-      </a>
-    </td>
-    <td>
-       <img src="{% asset_path line-tile.png %}" width=50 >
-    </td>
-    <td>
-      <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//developer.rackspace.com/blog/introduction-to-transport-layer-security&summary=&source=">
-        <img src="{% asset_path shareL.png %}">
-      </a>
-    </td>
-  </tr>
-</table>
-
-</br>
+Use the Feedback tab to make any comments or ask questions.
 
 Learn more about our [database services](https://www.rackspace.com/dba-services).
 
 We are the experts on Oracle products, so let Rackspace help you maximize your [Oracle investment](https://www.rackspace.com/oracle).
-
-If you have any questions on the topic, comment in the field below.
-

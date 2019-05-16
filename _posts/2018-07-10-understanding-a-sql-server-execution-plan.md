@@ -182,14 +182,20 @@ be the ideal choice.
 Your first target for optimizing a query should be to reduce overall reads and
 writes (that is, I/O on disk). Don’t forget logical reads for reads and writes
 in memory. Reducing the I/O solves most of the problem and queries run much
-faster. Next, look at other operations that are expensive due to activity on
+faster.
+
+Next, look at other operations that are expensive due to activity on
 tempdb. Remember, tempdb is used for many operations and is always expensive.
 Look for rewinds - the number of executions of any operation, spools, sorting,
-and loops. These are expensive when used with tempdb. Don’t forget to review
+and loops.
+
+These are expensive when used with tempdb. Don’t forget to review
 warnings on each operator because those provide good clues. Even though this
 post doesn't discuss the missing index operator, that doesn’t mean you can
-ignore it. Review it, but don’t create the index blindly. Check the other indexes
+ignore it.
+
+Review it, but don’t create the index blindly. Check the other indexes
 available on the same columns, and consider the impact on queries running in your
 database.
 
-If you have any questions on this topic, comment in the field below.
+Use the Feedback tab to make any comments or ask questions.

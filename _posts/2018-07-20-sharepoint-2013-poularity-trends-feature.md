@@ -98,5 +98,5 @@ monitoring real-time usage and by enabling sorting and data drill-down
 functionality based on different parameters. In the future, we expect enhanced
 versions to include services like these.
 
-If you have any questions on this topic, comment in the field below.
+Use the Feedback tab to make any comments or ask questions.
 

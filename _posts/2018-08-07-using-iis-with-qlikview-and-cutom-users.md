@@ -141,6 +141,6 @@ depends on the architecture where the solution is going to be applied. With the
 processes in this post, you can overcome the limitation of extending access to
 QlikView dashboards and reports for your external users.
 
-If you have any questions on the topic, comment in the field below.
+Use the Feedback tab to make any comments or ask questions.
 
 

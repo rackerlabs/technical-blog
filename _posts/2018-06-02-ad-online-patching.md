@@ -298,14 +298,4 @@ changes. You canmake configuration changes to either the run file system or the
 patch file system, and automatic synchronization subsequently takes place in
 both cases.
 
-
-
-
-
-
-
-
-
-
-
-
+Use the Feedback tab to make any comments or ask questions.

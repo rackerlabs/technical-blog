@@ -350,38 +350,6 @@ recommends that all customers make the transition as soon as possible to the
 successor tool, `AFPASSWD`, for which no passwords are entered on the command
 line.
 
-<table>
-  <tr>If you liked this blog, share it by using the following icons:</tr>
-  <tr>
-   <td>
-       <img src="{% asset_path line-tile.png %}" width=50 >
-    </td>
-    <td>
-      <a href="https://twitter.com/home?status=https%3A//developer.rackspace.com/blog/change-the-oracle-apps-and-weblogic-password/">
-        <img src="{% asset_path shareT.png %}">
-      </a>
-    </td>
-    <td>
-       <img src="{% asset_path line-tile.png %}" width=50 >
-    </td>
-    <td>
-      <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//developer.rackspace.com/blog/change-the-oracle-apps-and-weblogic-password/">
-        <img src="{% asset_path shareFB.png %}">
-      </a>
-    </td>
-    <td>
-       <img src="{% asset_path line-tile.png %}" width=50 >
-    </td>
-    <td>
-      <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//developer.rackspace.com/blog/change-the-oracle-apps-and-weblogic-password&summary=&source=">
-        <img src="{% asset_path shareL.png %}">
-      </a>
-    </td>
-  </tr>
-</table>
-
-</br>
+Use the Feedback tab to make any comments or ask questions.
 
 Learn more about our [database services](https://www.rackspace.com/dba-services).
-
-If you have any questions on the topic, comment in the field below.

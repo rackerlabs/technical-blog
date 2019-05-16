@@ -7,7 +7,9 @@ author: Dan Kolb
 published: true
 authorIsRacker: true
 authorAvatar: https://gravatar.com/avatar/fbdcdc8fcc8d2ae995d763dc6ed144d4
-bio: "Dan Kolb is a Software Developer in Test in the Rackspace Private Cloud Powered by VMware. Dan spends his time improving products and services through his passion and evangelization of automation and open source software."
+bio: "Dan Kolb is a Software Developer in Test in the Rackspace Private Cloud
+Powered by VMware. Dan spends his time improving products and services through
+his passion and evangelization of automation and open source software."
 categories:
     - Automation
     - DevOps
@@ -15,13 +17,23 @@ categories:
     - Orchestration
 ---
 
-Ansible development is fast, and anyone using Ansible extensively has most likely come across an instance where a playbook that used to work does not work on a later Ansible version. Or, a system that wasn't supported initially is now added and an existing role requires modification to make it work on the new system. See [Molecule for Ansible role creation](https://developer.rackspace.com/blog/molecule-for-ansible-role-creation/) for more details on using and debugging Molecule. Creating a Molecule scenario to test an existing role allows for easy testing and modification of that role with all the benefits that Molecule provides.
+Ansible development is fast, and anyone using Ansible extensively has most likely
+come across an instance where a playbook that used to work does not work on a
+later Ansible version. Or, a system that wasn't supported initially is now added
+and an existing role requires modification to make it work on the new system.
+See [Molecule for Ansible role creation](https://developer.rackspace.com/blog/molecule-for-ansible-role-creation/)
+for more details on using and debugging Molecule. Creating a Molecule scenario
+to test an existing role allows for easy testing and modification of that role
+with all the benefits that Molecule provides.
 
 <!-- more -->
 
 ## Existing role
 
-For an easy example, we use a simple role that installs and starts a webserver. To prevent a complete copy and paste from the previous example, the webserver this time is Apache rather than Nginx. The existing role in its current state is as follows.
+For an easy example, we use a simple role that installs and starts a webserver.
+To prevent a complete copy and paste from the previous example, the webserver
+this time is Apache rather than Nginx. The existing role in its current state
+is shown in the following example:
 
 ```
 ~/Projects/example_playbooks/roles/apache_install$ tree
@@ -30,9 +42,9 @@ For an easy example, we use a simple role that installs and starts a webserver. 
     └── main.yml
 
 1 directory, 1 file
-~/Projects/example_playbooks/roles/apache_install$ cat tasks/main.yml 
+~/Projects/example_playbooks/roles/apache_install$ cat tasks/main.yml
 ---
-# install and start apache    
+# install and start apache
 - name: install apache
   yum:
     name: httpd
@@ -47,7 +59,9 @@ For an easy example, we use a simple role that installs and starts a webserver. 
   become: "yes"
 ```
 
-Because Ansible and Molecule development is very fast these instructions might not work exactly as demonstrated if the software version varies significantly from the following output.
+Because Ansible and Molecule development is very fast these instructions might
+not work exactly as demonstrated if the software version varies significantly
+from the following output.
 
 ```
 ~/Projects/example_playbooks/roles/apache_install$ ansible --version && molecule --version
@@ -62,7 +76,12 @@ molecule, version 2.17.0
 
 ## Init scenario
 
-Because the role already exists, only a scenario needs to be created. A Molecule scenario is the same in this context as it is when using Molecule to create the role, but it results in Molecule not creating the directory structure and template files. The parameters to `init scenario` are almost exactly the same as `init role` and result in the same Molecule directory structure as if we created the role with Molecule.
+Because the role already exists, only a scenario needs to be created. A Molecule
+scenario is the same in this context as it is when using Molecule to create the
+role, but it results in Molecule not creating the directory structure and
+template files. The parameters to `init scenario` are almost exactly the same
+as `init role` and result in the same Molecule directory structure as if we
+created the role with Molecule.
 
 Molecule `init scenario` usage information:
 
@@ -86,7 +105,10 @@ Options:
   --help                          Show this message and exit.
 ```
 
-We create the scenario by using the existing role name and specifying using Vagrant as the driver. The Molecule directory structure is initialized the same as if we created the role with Molecule but without any role specific directories being created (such as `handlers`, `meta`, etc).
+We create the scenario by using the existing role name and specifying using
+Vagrant as the driver. The Molecule directory structure is initialized the same
+as if we created the role with Molecule but without any role specific directories
+being created (such as `handlers`, `meta`, etc).
 
 ```
 ~/Projects/example_playbooks/roles/apache_install$ molecule init scenario --role-name apache_install --driver-name vagrant
@@ -110,12 +132,18 @@ Initialized scenario in /home/dan/Projects/example_playbooks/roles/apache_instal
 
 ## Configuration
 
-The Molecule configuration is initialized as the default provided by molecule. I edited this to use CentOS 7 rather than the default Ubuntu 16.04. Also, I recommend updating the name of the virtual machine to something different to distinguish that virtual machine in case we need to troubleshoot at some point.
+The Molecule configuration is initialized as the default provided by molecule.
+I edited this to use CentOS 7 rather than the default Ubuntu 16.04. Also, I
+recommend updating the name of the virtual machine to something different to
+distinguish that virtual machine in case we need to troubleshoot at some point.
 
-In this example, our tests are very similar to my previous [Ansible role creation with Molecule](https://developer.rackspace.com/blog/molecule-for-ansible-role-creation/) post. The primary (and possibly only) differences in our tests from the previous example is that we're testing for the `httpd` service rather than `nginx`.
+In this example, our tests are very similar to my previous
+[Ansible role creation with Molecule](https://developer.rackspace.com/blog/molecule-for-ansible-role-creation/)
+post. The primary (and possibly only) differences in our tests from the previous
+example is that we're testing for the `httpd` service rather than `nginx`.
 
 ```
-~/Projects/example_playbooks/roles/apache_install$ cat molecule/default/molecule.yml 
+~/Projects/example_playbooks/roles/apache_install$ cat molecule/default/molecule.yml
 ---
 dependency:
   name: galaxy
@@ -138,7 +166,7 @@ verifier:
   name: testinfra
   lint:
     name: flake8
-    
+
 ~/Projects/example_playbooks/roles/apache_install$ cat molecule/default/tests/test_default.py
 import os
 
@@ -166,14 +194,17 @@ def test_apache_running_and_enabled(host):
 
 ## Molecule test
 
-Now that we've updated our Molecule configuration to use the Vagrant box we want and updated our tests to ensure that our role is doing what we want, we run any of the Molecule commands (`test`, `create`, `converge`, etc) just as if we created the role using Molecule.
+Now that we've updated our Molecule configuration to use the Vagrant box we want
+and updated our tests to ensure that our role is doing what we want, we run any
+of the Molecule commands (`test`, `create`, `converge`, etc) just as if we
+created the role using Molecule.
 
 ```
 ~/Projects/example_playbooks/roles/apache_install$ molecule test
 --> Validating schema /home/dan/Projects/example_playbooks/roles/apache_install/molecule/default/molecule.yml.
 Validation completed successfully.
 --> Test matrix
-    
+
 └── default
     ├── lint
     ├── destroy
@@ -186,7 +217,7 @@ Validation completed successfully.
     ├── side_effect
     ├── verify
     └── destroy
-    
+
 --> Scenario: 'default'
 --> Action: 'lint'
 --> Executing Yamllint on files found in /home/dan/Projects/example_playbooks/roles/apache_install/...
@@ -197,84 +228,84 @@ Lint completed successfully.
 Lint completed successfully.
 --> Scenario: 'default'
 --> Action: 'destroy'
-    
+
     PLAY [Destroy] *****************************************************************
-    
+
     TASK [Destroy molecule instance(s)] ********************************************
     changed: [localhost] => (item=None)
     changed: [localhost]
-    
+
     TASK [Populate instance config] ************************************************
     ok: [localhost]
-    
+
     TASK [Dump instance config] ****************************************************
     changed: [localhost]
-    
+
     PLAY RECAP *********************************************************************
     localhost                  : ok=3    changed=2    unreachable=0    failed=0
-    
-    
+
+
 --> Scenario: 'default'
 --> Action: 'dependency'
 Skipping, missing the requirements file.
 --> Scenario: 'default'
 --> Action: 'syntax'
-    
+
     playbook: /home/dan/Projects/example_playbooks/roles/apache_install/molecule/default/playbook.yml
-    
+
 --> Scenario: 'default'
 --> Action: 'create'
-    
+
     PLAY [Create] ******************************************************************
-    
+
     TASK [Create molecule instance(s)] *********************************************
     changed: [localhost] => (item=None)
     changed: [localhost]
-    
+
     TASK [Populate instance config dict] *******************************************
     ok: [localhost] => (item=None)
     ok: [localhost]
-    
+
     TASK [Convert instance config dict to a list] **********************************
     ok: [localhost]
-    
+
     TASK [Dump instance config] ****************************************************
     changed: [localhost]
-    
+
     PLAY RECAP *********************************************************************
     localhost                  : ok=4    changed=2    unreachable=0    failed=0
-    
-    
+
+
 --> Scenario: 'default'
 --> Action: 'prepare'
-    
+
     PLAY [Prepare] *****************************************************************
-    
+
     TASK [Install python for Ansible] **********************************************
     ok: [apache]
-    
+
     PLAY RECAP *********************************************************************
     apache                     : ok=1    changed=0    unreachable=0    failed=0
-    
-    
+
+
 --> Scenario: 'default'
 --> Action: 'converge'
-    
+
     PLAY [Converge] ****************************************************************
-    
+
     TASK [Gathering Facts] *********************************************************
     ok: [apache]
-    
+
     TASK [apache_install : install apache] *****************************************
     changed: [apache]
-    
+
     TASK [apache_install : ensure apache running and enabled] **********************
     changed: [apache]
-    
+
     PLAY RECAP *********************************************************************
     apache                     : ok=3    changed=2    unreachable=0    failed=0
-    
-    
+
+
 --> Scenario: 'default'
 --> Action: 'idempotence'
 Idempotence completed successfully.
@@ -288,31 +319,38 @@ Skipping, side effect playbook not configured.
     platform linux2 -- Python 2.7.12, pytest-3.3.1, py-1.5.2, pluggy-0.6.0
     rootdir: /home/dan/Projects/example_playbooks/roles/apache_install/molecule/default, inifile:
     plugins: testinfra-1.14.1
-collected 3 items                                                              
-    
+collected 3 items
+
     tests/test_default.py ...                                                [100%]
-    
+
     =========================== 3 passed in 5.62 seconds ===========================
 Verifier completed successfully.
 --> Scenario: 'default'
 --> Action: 'destroy'
-    
+
     PLAY [Destroy] *****************************************************************
-    
+
     TASK [Destroy molecule instance(s)] ********************************************
     changed: [localhost] => (item=None)
     changed: [localhost]
-    
+
     TASK [Populate instance config] ************************************************
     ok: [localhost]
-    
+
     TASK [Dump instance config] ****************************************************
     changed: [localhost]
-    
+
     PLAY RECAP *********************************************************************
     localhost                  : ok=3    changed=2    unreachable=0    failed=0
 ```
 
 ## Conclusion
 
-Molecule not only provides great defaults and a consistent directory structure when creating a new role, but it also makes it easy and efficient to add a Molecule workflow for testing existing roles. Adding Molecule scenarios to existing roles is a great way for testing existing roles across Operating Systems and Ansible versions to improve their reliability.
+Molecule not only provides great defaults and a consistent directory structure
+when creating a new role, but it also makes it easy and efficient to add a
+Molecule workflow for testing existing roles. Adding Molecule scenarios to existing
+roles is a great way for testing existing roles across Operating Systems and
+Ansible versions to improve their reliability.
+
+Use the Feedback tab to make any comments or ask questions.
+

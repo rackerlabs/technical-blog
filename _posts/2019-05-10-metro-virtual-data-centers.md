@@ -263,37 +263,7 @@ to share service loads and improve the overall service capability. An MVDC reduc
 the human intervention required to switch between databases for disaster recovery
 failovers or an upgrade/maintenance switchovers.
 
-<table>
-  <tr>If you liked this blog, share it by using the following icons:</tr>
-  <tr>
-   <td>
-       <img src="{% asset_path line-tile.png %}" width=50 >
-    </td>
-    <td>
-      <a href="https://twitter.com/home?status=https%3A//developer.rackspace.com/blog/metro-virtual-data-centers/">
-        <img src="{% asset_path shareT.png %}">
-      </a>
-    </td>
-    <td>
-       <img src="{% asset_path line-tile.png %}" width=50 >
-    </td>
-    <td>
-      <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//developer.rackspace.com/blog/metro-virtual-data-centers/">
-        <img src="{% asset_path shareFB.png %}">
-      </a>
-    </td>
-    <td>
-       <img src="{% asset_path line-tile.png %}" width=50 >
-    </td>
-    <td>
-      <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//developer.rackspace.com/blog/metro-virtual-data-centers&summary=&source=">
-        <img src="{% asset_path shareL.png %}">
-      </a>
-    </td>
-  </tr>
-</table>
-
-</br>
+Use the Feedback tab to make any comments or ask questions.
 
 ### Optimize your environment with expert administration, management, and configuration
 
@@ -322,5 +292,3 @@ choose and deploy the right technology on the right cloud.
 our success with yours.
 
 [Chat now](https://www.rackspace.com/#chat) to get started.
-
-If you have any questions on this post, comment in the field below.

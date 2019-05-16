@@ -238,4 +238,4 @@ libraries, or Pig for batch processing data.
 In [Part 2](https://developer.rackspace.com/blog/hadoop-eco2/) of this
 series, we'll cover more components of the Hadoop ecosystem.
 
-Have a question? Post it in a comment below!
+Use the Feedback tab to make any comments or ask questions.

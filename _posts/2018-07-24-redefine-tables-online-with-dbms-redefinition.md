@@ -413,7 +413,8 @@ users, use ``DBMS_REFDEFINITION``.
 
 This feature helps reorganize the data without any downtime, thus avoiding
 challenges caused by downtime for customers in an online transaction processing
-(OLTP) environment. For any questions or feedback on the topic, feel free to
-add a comment in the field below.
+(OLTP) environment.
+
+Use the Feedback tab to make any comments or ask questions.
 
 

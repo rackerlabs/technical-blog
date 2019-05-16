@@ -161,4 +161,4 @@ requirements of the big data system, Apache Cassandra provides linear scalable
 performance and key-enterprise class features that set it apart from other
 databases available.
 
-If you have any questions on this topic, comment in the field below.
+Use the Feedback tab to make any comments or ask questions.

@@ -163,37 +163,4 @@ Hyperion. You can also easily make changes to connections when there are any
 upgrades to Smart View or Hyperion. You can use the preceding information to
 create connections to all of the Hyperion components.
 
-
-<table>
-  <tr>If you liked this blog, share it by using the following icons:</tr>
-  <tr>
-   <td>
-       <img src="{% asset_path line-tile.png %}" width=50 >
-    </td>
-    <td>
-      <a href="https://twitter.com/home?status=https%3A//developer.rackspace.com/blog/hyperion-smart-view-connections/">
-        <img src="{% asset_path shareT.png %}">
-      </a>
-    </td>
-    <td>
-       <img src="{% asset_path line-tile.png %}" width=50 >
-    </td>
-    <td>
-      <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//developer.rackspace.com/blog/hyperion-smart-view-connections/">
-        <img src="{% asset_path shareFB.png %}">
-      </a>
-    </td>
-    <td>
-       <img src="{% asset_path line-tile.png %}" width=50 >
-    </td>
-    <td>
-      <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//developer.rackspace.com/blog/hyperion-smart-view-connections&summary=&source=">
-        <img src="{% asset_path shareL.png %}">
-      </a>
-    </td>
-  </tr>
-</table>
-
-If you have any questions on the topic, comment in the field below.
-
-</br>
+Use the Feedback tab to make any comments or ask questions.

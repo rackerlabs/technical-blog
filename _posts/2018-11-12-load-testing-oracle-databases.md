@@ -236,36 +236,4 @@ decision made under false or misleading information.
 A successful and well-conducted load test exercise increases confidence and
 reduces the risk of a system upgrade.
 
-<table>
-  <tr>If you liked this blog, share it by using the following icons:</tr>
-  <tr>
-   <td>
-       <img src="{% asset_path line-tile.png %}" width=50 >
-    </td>
-    <td>
-      <a href="https://twitter.com/home?status=https%3A//developer.rackspace.com/blog/load-testing-oracle-databases/">
-        <img src="{% asset_path shareT.png %}">
-      </a>
-    </td>
-    <td>
-       <img src="{% asset_path line-tile.png %}" width=50 >
-    </td>
-    <td>
-      <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//developer.rackspace.com/bblog/load-testing-oracle-databases/">
-        <img src="{% asset_path shareFB.png %}">
-      </a>
-    </td>
-    <td>
-       <img src="{% asset_path line-tile.png %}" width=50 >
-    </td>
-    <td>
-      <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//developer.rackspace.com/blog/load-testing-oracle-databases/&summary=&source=">
-        <img src="{% asset_path shareL.png %}">
-      </a>
-    </td>
-  </tr>
-</table>
-
-</br>
-
-If you have any questions on the topic, comment in the field below.
+Use the Feedback tab to make any comments or ask questions.

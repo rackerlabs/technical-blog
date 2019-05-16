@@ -219,5 +219,5 @@ This blog described how and why to use GoldenGate and discussed its architecture
 and components.  It also detailed the capture modes and Replicat modes
 incorporated in the tool.
 
-If you have any questions on the topic, comment in the field below.
+Use the Feedback tab to make any comments or ask questions.
 

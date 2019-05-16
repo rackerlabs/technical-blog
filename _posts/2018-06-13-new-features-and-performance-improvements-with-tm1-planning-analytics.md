@@ -105,5 +105,5 @@ random access memory (RAM) consumption because of changes to feeders behavior.
 Planning Analytics also has an improved interface including an interactive
 dashboard with visualizations from different sources.
 
-If you have any questions on this topic, comment in the field below.
+Use the Feedback tab to make any comments or ask questions.
 

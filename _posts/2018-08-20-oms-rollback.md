@@ -37,7 +37,7 @@ decided to roll back completely to the 12cR5 environment.
 
 You might be having a similar experience with OEM 13c. If you are, know that
 while rolling back can be painful in the short-term, it will yield positive
-results in the long run.  
+results in the long run.
 
 ![A visualization of the OMS rollback from 13c
 to 12c]({% asset_path 2018-08-20-oms-rollback/picture1.png %})
@@ -97,13 +97,13 @@ Use the following steps to configure the repository:
 2. Because you're reverting the OMS, choose ``Installed Software Only``.
 
 3. After the binary installation is complete, run the `orainstRoot.sh` script
-   to complete the installation.  
+   to complete the installation.
 
 4. Enter the following command to copy the OMS configuration backup file to
    this server:
 
        ```
-       [oracle@oem251 ~]$ cp /ora_global_nfs/BACKUP/REPDB_BACKUP/opf_ADMIN_20160303_105032.bka /backup/opf_ADMIN_20160303_105032.bka  
+       [oracle@oem251 ~]$ cp /ora_global_nfs/BACKUP/REPDB_BACKUP/opf_ADMIN_20160303_105032.bka /backup/opf_ADMIN_20160303_105032.bka
        ```
 
 **Recreate the OMS with OMSCA**
@@ -113,7 +113,7 @@ Use the following steps to recreate the OMS:
 1. Shut down everything on your old 13c server.
 
 2. Use the backup configuration and the following OMSCA command to
-   recreate the OMS:  
+   recreate the OMS:
 
        ```
        oms:/u02/app/oracle/Middleware/oms:N
@@ -127,7 +127,7 @@ Use the following steps to recreate the OMS:
 Use the following steps to configure the central agent on the new host:
 
 1. Enter the following command to set up the central agent on the new
-   host:  
+   host:
 
        ```
        [oracle@oem251 agent_inst]$ /u02/app/oracle/Agent12c/core/12.1.0.5.0/sysman/install/agentDeploy.sh
@@ -176,16 +176,18 @@ console.
 Also verify that the administration group has been migrated from the old OMS
 to the new OMS.
 
-### Conclusion  
+### Conclusion
 
 Oracle Enterprise Manager 12c provides the most comprehensive management
 solution for Oracle environments, including both traditional and cloud
 computing architectures. It also offers monitoring and administration
-capabilities.  
+capabilities.
 
 While a rollback can be daunting, careful planning will make things go more
 smoothly. Using the methods described in this blog post will help you revert
-changes with minimal impact. 
+changes with minimal impact.
 
 If you run into problems during your rollback, contact [Oracle
 Support](https://support.oracle.com/) and submit a service request.
+
+Use the Feedback tab to make any comments or ask questions.

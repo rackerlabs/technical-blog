@@ -102,5 +102,5 @@ of SQL Server, but Microsoft has not scheduled when the removals will happen.
 Test old applications before migrating to a new version of SQL Server, and
 do not use deprecated features in any new development work.
 
-If you have any questions on this topic, comment in the field below.
+Use the Feedback tab to make any comments or ask questions.
 

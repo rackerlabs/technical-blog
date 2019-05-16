@@ -146,7 +146,7 @@ blocks to complete the task, which in turns degrades the database performance.
 By removing row chaining, we can reduce the number of blocks that the Oracle
 processes need to traverse.
 
-If you have any questions on the topic, comment in the field below.
+Use the Feedback tab to make any comments or ask questions.
 
 Reference:
 [The Secrets of Oracle Row Chaining and Migration](https://www.akadia.com/services/ora_chained_rows.html)

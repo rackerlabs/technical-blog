@@ -10,7 +10,6 @@ categories:
     - General
 ---
 
-
 Are you considering an upgrade to a more modern version of SQL Server? Are you
 choosing between SQL Server 2016 or SQL Server 2017? If so, then my advice is
 to upgrade to SQL Server 2017 as I explain in this post.
@@ -318,5 +317,5 @@ continues to add extra functionality to the product in SQL Server 2017 cumulativ
 updates, and SQL Server 2017 will be fully supported by Microsoft for longer than
 SQL Server 2016.
 
-If you have any questions on the topic, comment in the field below.
+Use the Feedback tab to make any comments or ask questions.
 

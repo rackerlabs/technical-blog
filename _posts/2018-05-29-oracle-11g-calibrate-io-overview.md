@@ -164,6 +164,5 @@ NUM\_PHYSICAL\_DISKS &nbsp;   | 1
 The I/O Resource Management (IORM) and Calibrate I/O features are valuable
 for understanding limitations of your current I/O architecture. After the
 calibration is completed, the information can be used to perform appropriate I/O
-design and sizing. If you have any questions on the topic, comment in the field
-below.
+design and sizing. Use the Feedback tab to make any comments or ask questions.
 

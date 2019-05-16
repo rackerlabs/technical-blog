@@ -136,5 +136,7 @@ agents using the Agent Upgrade Console, apply patches with patch plans, or
 manage plug-ins with the plug-in life cycle application, saving you time and
 money.
 
+Use the Feedback tab to make any comments or ask questions.
+
 Reference:
 [Managing the Lifecycle of Agent Gold Images](https://docs.oracle.com/cd/E63000_01/EMADV/agent_gold_image.htm)

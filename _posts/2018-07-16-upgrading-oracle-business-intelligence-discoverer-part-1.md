@@ -250,4 +250,4 @@ information on how to configure the Discoverer instance for Oracle R12 instances
 
 See [Part 2](https://developer.rackspace.com/blog/upgrading-oracle-business-intelligence-discoverer-part-2/) for the rest of this series.
 
-If you have any questions on this topic, comment in the field below.
+Use the Feedback tab to make any comments or ask questions.

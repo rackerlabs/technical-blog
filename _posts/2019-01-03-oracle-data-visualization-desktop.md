@@ -223,40 +223,7 @@ on a desktop, DVD enables you to analyze data by connecting with various data
 sources. It’s a user-friendly tool and can be used by anyone with minimal
 knowledge of analysis.
 
-
-<table>
-  <tr>If you liked this blog, share it by using the following icons:</tr>
-  <tr>
-   <td>
-       <img src="{% asset_path line-tile.png %}" width=50 >
-    </td>
-    <td>
-      <a href="https://twitter.com/home?status=https%3A//developer.rackspace.com/blog/oracle-data-visualization-desktop/">
-        <img src="{% asset_path shareT.png %}">
-      </a>
-    </td>
-    <td>
-       <img src="{% asset_path line-tile.png %}" width=50 >
-    </td>
-    <td>
-      <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//developer.rackspace.com/blog/oracle-data-visualization-desktop/">
-        <img src="{% asset_path shareFB.png %}">
-      </a>
-    </td>
-    <td>
-       <img src="{% asset_path line-tile.png %}" width=50 >
-    </td>
-    <td>
-      <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//developer.rackspace.com/blog/oracle-data-visualization-desktop&summary=&source=">
-        <img src="{% asset_path shareL.png %}">
-      </a>
-    </td>
-  </tr>
-</table>
-
-</br>
+Use the Feedback tab to make any comments or ask questions.
 
 Learn more about Rackspace's [Business Intelligence solutions](https://www.rackspace.com/business-intelligence)
 and our [database services](https://www.rackspace.com/dba-services).
-
-If you have any questions on the topic, comment in the field below.

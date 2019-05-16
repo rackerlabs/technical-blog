@@ -158,7 +158,6 @@ If any patches aborted or any maintenance or Release Update Pack (RUP)
 patches are applied, `fs_clone` must be run at the end to recreate the patch
 file system as an exact copy of the run file system.
 
-
 ### Conclusion
 
 Whenever any changes are done to Weblogic Server or Fusion Middleware components
@@ -166,39 +165,6 @@ of E-Business Suite Release 12.2, it is imperative that database administrators
 run `fs_clone` to ensure that the patch file system is updated with all the
 latest changes that were performed to WLS or FMW of the run file system.
 
-
-<table>
-  <tr>If you liked this blog, share it by using the following icons:</tr>
-  <tr>
-   <td>
-       <img src="{% asset_path line-tile.png %}" width=50 >
-    </td>
-    <td>
-      <a href="https://twitter.com/home?status=https%3A//developer.rackspace.com/blog/reminders-for-applying-oracle-cpu-patches/">
-        <img src="{% asset_path shareT.png %}">
-      </a>
-    </td>
-    <td>
-       <img src="{% asset_path line-tile.png %}" width=50 >
-    </td>
-    <td>
-      <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//developer.rackspace.com/blog/reminders-for-applying-oracle-cpu-patches/">
-        <img src="{% asset_path shareFB.png %}">
-      </a>
-    </td>
-    <td>
-       <img src="{% asset_path line-tile.png %}" width=50 >
-    </td>
-    <td>
-      <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//developer.rackspace.com/blog/reminders-for-applying-oracle-cpu-patches&summary=&source=">
-        <img src="{% asset_path shareL.png %}">
-      </a>
-    </td>
-  </tr>
-</table>
-
-</br>
+Use the Feedback tab to make any comments or ask questions.
 
 Learn more about our [database services](https://www.rackspace.com/dba-services).
-
-If you have any questions on the topic, comment in the field below.

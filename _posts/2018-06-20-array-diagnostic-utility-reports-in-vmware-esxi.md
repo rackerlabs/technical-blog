@@ -100,4 +100,4 @@ To generate and save an ADU report, use the following steps:
 This blog provides useful information about the ADU utility and how to use it to
 generate reports for ESXi.
 
-If you have any questions on this topic, comment in the field below.
+Use the Feedback tab to make any comments or ask questions.

@@ -187,38 +187,6 @@ The following benefits result from integrating of these products:
 -	Take advantage of a demand-driven organization with higher service levels and
    sales, more satisfied customers, and lower inventory and distribution costs.
 
-<table>
-  <tr>If you liked this blog, share it by using the following icons:</tr>
-  <tr>
-   <td>
-       <img src="{% asset_path line-tile.png %}" width=50 >
-    </td>
-    <td>
-      <a href="https://twitter.com/home?status=https%3A//developer.rackspace.com/blog/understand-and-install-oracle-demantra-and-spwa/">
-        <img src="{% asset_path shareT.png %}">
-      </a>
-    </td>
-    <td>
-       <img src="{% asset_path line-tile.png %}" width=50 >
-    </td>
-    <td>
-      <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//developer.rackspace.com/blog/understand-and-install-oracle-demantra-and-spwa/">
-        <img src="{% asset_path shareFB.png %}">
-      </a>
-    </td>
-    <td>
-       <img src="{% asset_path line-tile.png %}" width=50 >
-    </td>
-    <td>
-      <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//developer.rackspace.com/blog/understand-and-install-oracle-demantra-and-spwa&summary=&source=">
-        <img src="{% asset_path shareL.png %}">
-      </a>
-    </td>
-  </tr>
-</table>
-
-</br>
-
-If you have any questions on the topic, comment in the field below.
+Use the Feedback tab to make any comments or ask questions.
 
 Learn more about [Rackspace application services](https://www.rackspace.com/application-management).
