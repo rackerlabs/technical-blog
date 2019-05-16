@@ -493,5 +493,5 @@ table, TEST.TABLEA_PAR:
 The preceding steps used the interim table, TEST.TABLEA_PAR, to partition the
 table, TEST.TABLEA, into a range interval table without any application downtime.
 
-If you have any questions on this topic, comment in the field below.
+Use the Feedback tab to make any comments or ask questions.
 

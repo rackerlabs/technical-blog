@@ -157,4 +157,4 @@ transactions process quickly. LPNs simplify management for organizations
 with large warehouses.
 
 Have you used LPNs in Oracle Warehouse management through a mobile
-interface? Join the conversation by leaving a comment below.
+interface? Use the Feedback tab to make any comments or ask questions.

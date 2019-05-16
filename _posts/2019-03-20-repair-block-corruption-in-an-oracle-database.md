@@ -276,40 +276,7 @@ These high availability solutions are integrated with Oracle Database and
 take advantage of the underlying data structures. Thus, the tools offer a new
 class of intelligent data protection and disaster recovery.
 
-
-<table>
-  <tr>If you liked this blog, share it by using the following icons:</tr>
-  <tr>
-   <td>
-       <img src="{% asset_path line-tile.png %}" width=50 >
-    </td>
-    <td>
-      <a href="https://twitter.com/home?status=https%3A//developer.rackspace.com/blog/repair-block-corruption-in-an-oracle-database/">
-        <img src="{% asset_path shareT.png %}">
-      </a>
-    </td>
-    <td>
-       <img src="{% asset_path line-tile.png %}" width=50 >
-    </td>
-    <td>
-      <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//developer.rackspace.com/blog/repair-block-corruption-in-an-oracle-database/">
-        <img src="{% asset_path shareFB.png %}">
-      </a>
-    </td>
-    <td>
-       <img src="{% asset_path line-tile.png %}" width=50 >
-    </td>
-    <td>
-      <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//developer.rackspace.com/blog/repair-block-corruption-in-an-oracle-database&summary=&source=">
-        <img src="{% asset_path shareL.png %}">
-      </a>
-    </td>
-  </tr>
-</table>
-
-</br>
+Use the Feedback tab to make any comments or ask questions.
 
 Learn more about our [database services](https://www.rackspace.com/dba-services)
 and [Rackspace Application services](https://www.rackspace.com/application-management/managed-services).
-
-If you have any questions on the topic, comment in the field below.

@@ -11,26 +11,38 @@ categories:
   - Cloud Servers
 ---
 
-I decided to run an ssh honeypot in my Cloud Server on the Internet.  While this has been done many times by others, I wanted to see what would happen and share my results.
+I decided to run an ssh honeypot in my Cloud Server on the Internet.  While this
+has been done many times by others, I wanted to see what would happen and share
+my results.
 
 <!-- more -->
 
 ## What is a honeypot?
 
-In computer security, the term honeypot is used to refer to an environment setup that is used to capture malicious activity in a safe manner.  You place an attractive target on a network (internal or the Internet) and wait for attacks to come in.  Your honeypot then captures data about the attacker and can alert you if someone has been caught in it.
+In computer security, the term honeypot is used to refer to an environment setup
+that is used to capture malicious activity in a safe manner.  You place an
+attractive target on a network (internal or the Internet) and wait for attacks
+to come in.  Your honeypot then captures data about the attacker and can alert
+you if someone has been caught in it.
 
-One visual is that of a jar of sticky honey.  If someone reaches into the jar, you will notice the contents being disturbed as well as the person having sticky honey on his or her hands.
+One visual is that of a jar of sticky honey.  If someone reaches into the jar,
+you will notice the contents being disturbed as well as the person having sticky
+honey on his or her hands.
 
-A security honeypot may have an easy to guess login password or a fake document made to look like real confidential business data.
+A security honeypot may have an easy to guess login password or a fake document
+made to look like real confidential business data.
 
-The honeypot aids a security researcher in understanding what actions an attacker takes so they can develop a behavior profile for detecting attacks against real systems.
+The honeypot aids a security researcher in understanding what actions an attacker
+takes so they can develop a behavior profile for detecting attacks against real
+systems.
 
 
 ## SSH Honeypot
 
 I used a Linux cloud server with this modified [SSH server software](https://github.com/droberson/ssh-honeypot.git).
 
-I placed the server on the Internet and turned off the firewall.  The results of attacks were recorded on disk in a log file.
+I placed the server on the Internet and turned off the firewall.  The results
+of attacks were recorded on disk in a log file.
 
 
 ## Timeline
@@ -100,6 +112,11 @@ Duration:  7 days, 22 hours, 51 minutes and 50 seconds
 
 ## Summary
 
-This was an interesting experiment and shows that putting a server on the Internet results in millions of attacks against it in a very short time.
+This was an interesting experiment and shows that putting a server on the
+Internet results in millions of attacks against it in a very short time.
 
-It behooves us, therefore, to ensure that a server has protections on it from the moment that we connect it to the network.
+It behooves us, therefore, to ensure that a server has protections on it from
+the moment that we connect it to the network.
+
+Use the Feedback tab to make any comments or ask questions.
+

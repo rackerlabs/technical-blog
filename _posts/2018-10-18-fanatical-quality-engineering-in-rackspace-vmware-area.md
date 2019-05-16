@@ -7,7 +7,11 @@ author: Michael Xin
 published: true
 authorIsRacker: true
 authorAvatar: https://s.gravatar.com/avatar/5c2bae8f6f4c9669249888f5b8e1f5b0
-bio: "Michael Xin is a senior QE/Security manager in Rackspace. He is leading VMware QE team and QE Security team. Michael is passionate about quality and security for Rackspace products. Michael has years of experience in application security, security SDLC, test automation, cloud computing, agile development and CI/CD."
+bio: "Michael Xin is a senior QE/Security manager in Rackspace. He is leading
+VMware QE team and QE Security team. Michael is passionate about quality and
+security for Rackspace products. Michael has years of experience in application
+security, security SDLC, test automation, cloud computing, agile development and
+CI/CD."
 categories:
     - Automation
     - Security
@@ -15,14 +19,22 @@ categories:
     - Orchestration
 ---
 
-In Rackspace's VMware Practice Area, we value the quality of our products very much, and we believe that quality is a team effort. The Quality Engineering (QE) team works with the Development team, Project Management team, Product Engineering team and DevOps team to improve the quality of developed products. Our quality standard has three key pillars: functionality, performance, and security. Our goal is to identify and fix defects as early as possible so that we can deliver secure functional products that perform well for our customers. 
+In Rackspace's VMware Practice Area, we value the quality of our products very
+much, and we believe that quality is a team effort. The Quality Engineering (QE)
+team works with the Development team, Project Management team, Product
+Engineering team and DevOps team to improve the quality of developed products.
+Our quality standard has three key pillars: functionality, performance, and
+security. Our goal is to identify and fix defects as early as possible so that
+we can deliver secure functional products that perform well for our customers.
 
 <!-- more -->
 
 
-### Test strategy and process 
+### Test strategy and process
 
-For every new product, the Quality Engineering team collaborates with all teams to create a product test strategy and review the strategy with all the teams together. The test strategy covers the following testing aspects: 
+For every new product, the Quality Engineering team collaborates with all teams
+to create a product test strategy and review the strategy with all the teams
+together. The test strategy covers the following testing aspects:
 
 * Overview
 * Architecture diagram
@@ -39,11 +51,27 @@ For every new product, the Quality Engineering team collaborates with all teams 
 * Exit criteria
 * Risks and mitigations
 
-The product test strategy is a living document. We keep updating the document based on changes in the product design, coding, and testing, and we use the agile development process in VMware Practice Area. For each sprint, the Development team, QE team, and scrum master create Jira stories and pick stories together. The Development team focuses on product coding and unit tests. The QE team focuses on functional testing, end-to-end testing, performance testing, and security testing. Any identified defects are entered into the Jira system so that the development team can verify and fix them as soon as possible. We have automated all our tests so that they can be incorporated into the continuous integration process of our products. 
+The product test strategy is a living document. We keep updating the document
+based on changes in the product design, coding, and testing, and we use the
+agile development process in VMware Practice Area. For each sprint, the
+Development team, QE team, and scrum master create Jira stories and pick stories
+together. The Development team focuses on product coding and unit tests. The QE
+team focuses on functional testing, end-to-end testing, performance testing, and
+security testing. Any identified defects are entered into the Jira system so that
+the development team can verify and fix them as soon as possible. We have
+automated all our tests so that they can be incorporated into the continuous
+integration process of our products.
 
-### Unit testing 
+### Unit testing
 
-The Development team is responsible for unit tests to ensure that all small pieces of the code have been tested thoroughly.  The team is using the [Spock testing framework](http://spockframework.org/) to create unit test cases. Spock is a testing and specification framework for Java and Groovy applications and is a more powerful alternative to the traditional JUnit stack, because it leverages Groovy features. Since our products normally interact with many internal systems, we also mock those dependent systems. For example, here is a unit test case for one of our products: 
+The Development team is responsible for unit tests to ensure that all small
+pieces of the code have been tested thoroughly.  The team is using the
+[Spock testing framework](http://spockframework.org/) to create unit test cases.
+Spock is a testing and specification framework for Java and Groovy applications
+and is a more powerful alternative to the traditional JUnit stack, because it
+leverages Groovy features. Since our products normally interact with many internal
+systems, we also mock those dependent systems. For example, here is a unit test
+case for one of our products:
 
 
 ```
@@ -59,7 +87,7 @@ import spock.lang.Unroll
  */
 class AccountShowConsumerSpec extends VmvpConsumerExtensionsBaseSpec {
 
-  
+
     AccountShowConsumer consumer
 
     @Shared
@@ -107,7 +135,19 @@ class AccountShowConsumerSpec extends VmvpConsumerExtensionsBaseSpec {
 
 ### Functional testing
 
-Functional testing refers to activities that verify a specific action or function of the code. These are usually found in the code requirements documentation, although some development methodologies work from use cases or user stories. Functional tests tend to answer the question such as "can the user do this" or "does this particular feature work." Functional test cases have positive test cases and negative cases. We are using [WireMock]( http://wiremock.org/) to mock all the external systems with which our products interact. WireMock is a flexible API mocking tool for fast, robust, and comprehensive testing. We are developing a collection of mock web services, which enables the independent control of the state of dependencies. This allows us to test specific functionality quickly, run tests locally and on development environments, and perform more specialized testing.  For example, here is a  functional test case for one of our products:
+Functional testing refers to activities that verify a specific action or
+function of the code. These are usually found in the code requirements
+documentation, although some development methodologies work from use cases or
+user stories. Functional tests tend to answer the question such as "can the
+user do this" or "does this particular feature work." Functional test cases have
+positive test cases and negative cases. We are using [WireMock](http://wiremock.org/)
+to mock all the external systems with which our products interact. WireMock is
+a flexible API mocking tool for fast, robust, and comprehensive testing. We are
+developing a collection of mock web services, which enables the independent
+control of the state of dependencies. This allows us to test specific
+functionality quickly, run tests locally and on development environments, and
+perform more specialized testing.  For example, here is a  functional test case
+for one of our products:
 
 ```
 import unittest
@@ -160,8 +200,16 @@ class vMvpAccountsTest(unittest.TestCase):
 
 ### End-to-end testing
 
-End-to-end testing tests the functionality of an application under production-like circumstances and data to make sure that it meets the requirement specifications. Once an application is deployed into a functional staging environment, the QE team starts working on the end-to-end testing. First, we create various test scenarios based on conversations with all teams and document them in our test strategy. Secondly,  we use the [pytest framework]( 
-https://pytest.org) to automate the test scenarios to make sure that we have enough coverage for our applications. We also make our end-to-end test suite available so that the development team can run them if necessary. For example, here is one test case of our end-to-end testing: 
+End-to-end testing tests the functionality of an application under production-like
+circumstances and data to make sure that it meets the requirement specifications.
+Once an application is deployed into a functional staging environment, the QE
+team starts working on the end-to-end testing. First, we create various test
+scenarios based on conversations with all teams and document them in our test
+strategy. Secondly,  we use the [pytest framework](https://pytest.org) to
+automate the test scenarios to make sure that we have enough coverage for our
+applications. We also make our end-to-end test suite available so that the
+development team can run them if necessary. For example, here is one test case
+of our end-to-end testing:
 
 ```
 @pytest.mark.categories('VMVP Accounts')
@@ -216,13 +264,30 @@ class TestVmvpAccounts:
 
 ### Performance testing
 
-Performance testing is generally executed to determine how a system or sub-system performs in terms of responsiveness and stability under a particular workload. It can also serve to investigate, measure, validate, or verify other quality attributes of the system, such as scalability, reliability, and resource usage.
+Performance testing is generally executed to determine how a system or sub-system
+performs in terms of responsiveness and stability under a particular workload.
+It can also serve to investigate, measure, validate, or verify other quality
+attributes of the system, such as scalability, reliability, and resource usage.
 
 
-We chose [Gatling](https://gatling.io/) as our perfromance testing framework. Gatling is an open-source load and performance testing framework based on Scala, Akka, and Netty. Gatling is written in Scala, which allows you to run it on any system. Gatling enables us to create to create performance tests as code, and it creates detailed metrics dashboard in html format, out of the box, following the test execution. Gatling can simulate multiple virtual users with a single thread based on the actor mode and is easily integrated with continuous integration pipelines by using the Jenkins Gatling plugin. 
+We chose [Gatling](https://gatling.io/) as our perfromance testing framework.
+Gatling is an open-source load and performance testing framework based on Scala,
+Akka, and Netty. Gatling is written in Scala, which allows you to run it on any
+system. Gatling enables us to create to create performance tests as code, and
+it creates detailed metrics dashboard in html format, out of the box, following
+the test execution. Gatling can simulate multiple virtual users with a single
+thread based on the actor mode and is easily integrated with continuous
+integration pipelines by using the Jenkins Gatling plugin.
 
 
-We create performance test cases for all Application Programmer Interface (API) calls. We measure the response time of all API calls by simulating a large number of customers calling various APIs at the same time. The tests are run in both staging and production environments. When the test results are ready, we analyze the metrics results to make sure that the performance met our expectations. If there are any performance issues, the teams collabrate on fixing the issue. The goal is to provide a product that performs well even with unexpectedly large number of customers and requests. 
+We create performance test cases for all Application Programmer Interface (API)
+calls. We measure the response time of all API calls by simulating a large
+number of customers calling various APIs at the same time. The tests are run in
+both staging and production environments. When the test results are ready, we
+analyze the metrics results to make sure that the performance met our expectations.
+If there are any performance issues, the teams collabrate on fixing the issue.
+The goal is to provide a product that performs well even with unexpectedly large
+number of customers and requests.
 
 For example, here is a test case from our performance test suite:
 
@@ -238,7 +303,7 @@ class ListHypervisors extends Simulation {
   val concurrentUsers = conf.getInt("simulations.concurrentUsers")
   val numSamples = conf.getInt("simulations.numberSamples")
   val uri1 = "https://vrax.rackspace.com/managed-virt/{accountID}/hypervisors"
-  
+
   val scn = scenario("ListHypervisors")
     .feed(csv("token.csv").random)
     .repeat(numSamples) {
@@ -261,11 +326,27 @@ class ListHypervisors extends Simulation {
 
 ### Security testing
 
-In the Rackspace VMware Practice Area, security is our top priority. The QE Security team works with the Development team and the QE team to integrate security checks into the System Development Life Cycle (SDLC) process. 
+In the Rackspace VMware Practice Area, security is our top priority. The QE
+Security team works with the Development team and the QE team to integrate
+security checks into the System Development Life Cycle (SDLC) process.
 
-During the design stage, we conduct threat modeling for the application.  Threat modeling is a white board session to break down the application from a security and risk perspective. The session focuses on sensitive data and data flows across various components.  We learn about the application with respect to the trust boundary, attack surface, potential risks, and security controls. Threat modeling helps us identify potential security defects in the design stage so that we can address them early. 
+During the design stage, we conduct threat modeling for the application.  Threat
+modeling is a white board session to break down the application from a security
+and risk perspective. The session focuses on sensitive data and data flows
+across various components.  We learn about the application with respect to the
+trust boundary, attack surface, potential risks, and security controls. Threat
+modeling helps us identify potential security defects in the design stage so
+that we can address them early.
 
-Once the Development team starts coding, the QE Security team conducts a security code review of the source code. We use a commercial solution with an automatic security code-scanning tool that can scan thousands of lines of code in a short time. However, the findings generated by the tool might contain false positives. The QE Security team works with the Development team to verify each finding to filter out false positives. The QE Security team also conducts a manual security code review of key components of the source code. During the security code review, we focus on identifying the following common security defects as defined in the [OWASP Top 10 website]( https://www.owasp.org/index.php/Category:OWASP_Top_Ten_2017_Project): 
+Once the Development team starts coding, the QE Security team conducts a security
+code review of the source code. We use a commercial solution with an automatic
+security code-scanning tool that can scan thousands of lines of code in a short
+time. However, the findings generated by the tool might contain false positives.
+The QE Security team works with the Development team to verify each finding to
+filter out false positives. The QE Security team also conducts a manual security
+code review of key components of the source code. During the security code
+review, we focus on identifying the following common security defects as defined
+in the [OWASP Top 10 website](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_2017_Project):
 
 * A1:2017-Injection
 * A2:2017-Broken Authentication
@@ -278,25 +359,53 @@ Once the Development team starts coding, the QE Security team conducts a securit
 * A9:2017-Using Components with Known Vulnerabilities
 * A10:2017-Insufficient Logging&Monitoring
 
-After we deploy the application into the staging environment, the QE team starts their end-to-end testing to make sure that the application is working. At the same time,  the QE Security team also conducts web application and API security testing in the staging environment. We used security testing tools such as Burp, Syntribos, and Zap to test the application for the listed security defects. 
+After we deploy the application into the staging environment, the QE team starts
+their end-to-end testing to make sure that the application is working. At the
+same time,  the QE Security team also conducts web application and API security
+testing in the staging environment. We used security testing tools such as Burp,
+Syntribos, and Zap to test the application for the listed security defects.
 
-We prioritize identified defects based on their severity and impact. The QE Security team works with the Development team and QE team to make sure that any critical or high security defects are addressed before the application is released into the production environment. 
+We prioritize identified defects based on their severity and impact. The QE
+Security team works with the Development team and QE team to make sure that any
+critical or high security defects are addressed before the application is
+released into the production environment.
 
 
 ### Testing environment
 
-We have collaborated with DevOps to improve our testing environment. DevOps added our physical servers as a tenant to a vRealize Automation instance. This approach gives us dedicated resources for creating and destroying VMWare servers dynamically. We do not need to manage our servers and can concentrate on automating test cases. 
- 
-To use our new dynamic environment with more jobs and more automation, we made a significant amount of changes to our existing workflow components, deployment playbooks, test jobs in Jenkins, etc.  Our new testing environment is ready with the following new features: 
+We have collaborated with DevOps to improve our testing environment. DevOps
+added our physical servers as a tenant to a vRealize Automation instance. This
+approach gives us dedicated resources for creating and destroying VMWare servers
+dynamically. We do not need to manage our servers and can concentrate on
+automating test cases.
 
-* VMWare-QE went from being limited to running up to two tests at a time on long-lived static build nodes, and it's now able to run 22 tests simultaneously with the ability to easily increase this further if needed.
-* Our functional tests now dynamically create a server, build the testing application(s) on that server, run tests on that server, collect results and artifacts, and destroy the dynamic server.
+To use our new dynamic environment with more jobs and more automation, we made
+a significant amount of changes to our existing workflow components, deployment
+playbooks, test jobs in Jenkins, etc.  Our new testing environment is ready
+with the following new features:
+
+* VMWare-QE went from being limited to running up to two tests at a time on
+long-lived static build nodes, and it's now able to run 22 tests simultaneously
+with the ability to easily increase this further if needed.
+* Our functional tests now dynamically create a server, build the testing
+application(s) on that server, run tests on that server, collect results and
+artifacts, and destroy the dynamic server.
 * Application logs are forwarded to Splunk to allow search and review.
-* This increased capacity, as well as our test jobs and deployment updates,  allow for Developers to self-serve our tests with a variety of parameters.
-* This sets the ground work for further automation and integration into the development pipeline that can be added iteratively.
+* This increased capacity, as well as our test jobs and deployment updates,
+allow for Developers to self-serve our tests with a variety of parameters.
+* This sets the ground work for further automation and integration into the
+development pipeline that can be added iteratively.
 
 
 
 ### Fanatical quality
 
-In the Rackspace VMware Practice Area, quality is everyone's responsibility. The Quality Engineering team, Development team, Devops team, Security team, and Project Management team work together to make sure that we deliver products with great quality to our customers. The teams concentrate on improving the SDLC process using automation and new technology. Together, we provide fanatical experience to our customers. 
+In the Rackspace VMware Practice Area, quality is everyone's responsibility.
+The Quality Engineering team, Development team, Devops team, Security team, and
+Project Management team work together to make sure that we deliver products with
+great quality to our customers. The teams concentrate on improving the SDLC
+process using automation and new technology. Together, we provide fanatical
+experience to our customers.
+
+Use the Feedback tab to make any comments or ask questions.
+

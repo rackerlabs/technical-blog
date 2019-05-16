@@ -198,3 +198,5 @@ following command:
 
 This collection of known issues and solutions for the adop utility can help
 database administrators when they have these or similar issues.
+
+Use the Feedback tab to make any comments or ask questions.

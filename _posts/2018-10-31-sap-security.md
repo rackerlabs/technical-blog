@@ -150,6 +150,8 @@ professionals review what occurs in an SAP system. The audit files are stored
 on an application server that needs enough space to run on daily basis. You
 can access the log information in the form of an audit analysis report.
 
+Use the Feedback tab to make any comments or ask questions.
+
 To learn more about Rackspace SAP ERP services, see [Managed Services for SAP
 ERP Applications](https://www.rackspace.com/sap/erp).
 
@@ -157,36 +159,3 @@ ERP Applications](https://www.rackspace.com/sap/erp).
 
 - [SAP Documentation: The Security Audit
   Log](https://help.sap.com/saphelp_nw70/helpdata/en/c7/69bcb7f36611d3a6510000e835363f/frameset.htm)
-
-<table>
-  <tr>If you liked this blog, share it by using the following icons:</tr>
-  <tr>
-   <td>
-       <img src="{% asset_path line-tile.png %}" width=50 >
-    </td>
-    <td>
-      <a href="https://twitter.com/home?status=https%3A//developer.rackspace.com/blog/applications-monitoring-creating-a-smoother-financial-close/">
-        <img src="{% asset_path shareT.png %}">
-      </a>
-    </td>
-    <td>
-       <img src="{% asset_path line-tile.png %}" width=50 >
-    </td>
-    <td>
-      <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//developer.rackspace.com/blog/applications-monitoring-creating-a-smoother-financial-close/">
-        <img src="{% asset_path shareFB.png %}">
-      </a>
-    </td>
-    <td>
-       <img src="{% asset_path line-tile.png %}" width=50 >
-    </td>
-    <td>
-      <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//developer.rackspace.com/blog/applications-monitoring-creating-a-smoother-financial-close&summary=&source=">
-        <img src="{% asset_path shareL.png %}">
-      </a>
-    </td>
-  </tr>
-</table>
-
-
-</br>

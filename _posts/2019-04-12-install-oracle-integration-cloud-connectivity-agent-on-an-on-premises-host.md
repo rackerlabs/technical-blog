@@ -31,21 +31,21 @@ that you have considered the following prerequisites:
 *  Operating system (OS) prerequisites include the following items:
 
    -  Oracle Enterprise Linux&reg; (OEL) version 6 or 7.
-   
+
    -  8 GB of free memory on the host with a 4 GB Java heap size. If the heap
       size increases, you need more memory.
-      
+
    -  A fully-qualified domain name entry in **/etc/hosts**.
-   
+
    -  A mount point with 20 GB of free space.
-   
-   -  A user name with the database administrator (DBA) group.  
+
+   -  A user name with the database administrator (DBA) group.
 
 *  Java version prerequisites include the following items:
 
    -  You must install Oracle JDK version 1.7 or 1.8 to install and use the
       connectivity agent.
-   
+
    -  Other JDKs are not supported.
 
 *  Open port 443 on the on-premises host to enable connectivity between the
@@ -291,39 +291,7 @@ on-premises database to the Oracle Cloud. The latest version of Oracle connectiv
 agent is available and enables the agent to run in a high availability
 configuration.
 
-<table>
-  <tr>If you liked this blog, share it by using the following icons:</tr>
-  <tr>
-   <td>
-       <img src="{% asset_path line-tile.png %}" width=50 >
-    </td>
-    <td>
-      <a href="https://twitter.com/home?status=https%3A//developer.rackspace.com/blog/install-oracle-integration-cloud-connectivity-agent-on-an-on-premises-host/">
-        <img src="{% asset_path shareT.png %}">
-      </a>
-    </td>
-    <td>
-       <img src="{% asset_path line-tile.png %}" width=50 >
-    </td>
-    <td>
-      <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//developer.rackspace.com/blog/install-oracle-integration-cloud-connectivity-agent-on-an-on-premises-host/">
-        <img src="{% asset_path shareFB.png %}">
-      </a>
-    </td>
-    <td>
-       <img src="{% asset_path line-tile.png %}" width=50 >
-    </td>
-    <td>
-      <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//developer.rackspace.com/blog/install-oracle-integration-cloud-connectivity-agent-on-an-on-premises-host&summary=&source=">
-        <img src="{% asset_path shareL.png %}">
-      </a>
-    </td>
-  </tr>
-</table>
-
-</br>
+Use the Feedback tab to make any comments or ask questions.
 
 Learn more about our [database services](https://www.rackspace.com/dba-services)
 and [Rackspace Application services](https://www.rackspace.com/application-management/managed-services).
-
-If you have any questions on the topic, comment in the field below.

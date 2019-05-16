@@ -273,4 +273,4 @@ OATM provides additional benefits when implementing Real Application Clusters (R
 For more information about OATM migration utility, see
 [Note 248857.1 - OATM Release 11i - Tablespace Migration Utility](https://docs.oracle.com/cd/E18727_01/doc.121/e12893/T174296T432724.htm).
 
-If you have any questions on this topic, comment in the field below.
+Use the Feedback tab to make any comments or ask questions.

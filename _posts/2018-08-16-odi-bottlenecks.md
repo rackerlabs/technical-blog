@@ -15,7 +15,7 @@ Originally published by TriCore: April 4, 2017
 This blog post aims to help Oracle&reg; Data Integrator (ODI) designers,
 administrators, and system teams address performance bottlenecks
 in ODI execution plans. Following the steps outlined here will result in a
-speedier experience for your end users.  
+speedier experience for your end users.
 
 <!-- more -->
 
@@ -49,9 +49,9 @@ The following parameters help tune this data flow:
 ### Temporary memory allocation
 
 Temporary spaces are used during aggregation of data, during lookup queries,
-or during sessions that are running in parallel.  
+or during sessions that are running in parallel.
 
-For optimal performance, the temporary space should equal the table space.  
+For optimal performance, the temporary space should equal the table space.
 
 ### Application memory allocation
 
@@ -60,7 +60,7 @@ needs to have data flowing through it, it should not be installed on a machine
 that doesn't have spare resources. In ODI 11g, you can adjust the
 `ODI_INIT_HEAP` and `ODI_MAX_HEAP` parameters in the `odiparams` configuration
 file to define the agent's Java&reg; virtual machine (JVM) initial and maximum
-heap size.  
+heap size.
 
 ![The `ODI_INIT_HEAP` and `ODI_MAX_HEAP` parameters highlighted in the
 odiparams configuration file]({% asset_path 2018-08-16-odi-bottlenecks/picture1.png %})
@@ -99,7 +99,7 @@ parallel steps.
 ODI has two options for connecting to the source database for source-dependent
 extract (SDE) loads: Java Database Connectivity (JDBC) connections and DB
 Links. DB Links provide better performance optimization, according to a study
-of SDE load execution times for these two options.  
+of SDE load execution times for these two options.
 
 ### Optimal usage of indexes
 
@@ -111,7 +111,7 @@ following steps to optimize source indexes:
 3. Look for the optimization scope (for example, creation and modification of
    indexes).
 
-### Reduce data movement  
+### Reduce data movement
 
 If you're aggregating a large amount of source data to generate a small data
 flow to a remote target, then you should consider locating the staging area on
@@ -120,7 +120,7 @@ the source side.
 ![An architectural model of the source, staging area, and
 target]({% asset_path 2018-08-16-odi-bottlenecks/picture2.png %})
 
-### Execution location of transformations  
+### Execution location of transformations
 
 When you're filtering source data, execute the filters on the source servers
 to reduce the data flow from the source to the staging area.
@@ -132,7 +132,7 @@ When you're joining source tables, complete the following steps:
 
 2. If the expected source set after the join is larger than the sum of the two
    sources, perform the join on the staging area. One example of this result
-   would be when there is a cross-join.  
+   would be when there is a cross-join.
 
 ### Other performance tuning tips
 
@@ -148,8 +148,8 @@ scenarios.
 ### Conclusion
 
 We hope that you find these techniques helpful for eliminating ODI performance
-bottlenecks. We'd love to hear your own ideas and suggestions. You can share
-them with the Rackspace developer community by posting a comment below.  
+bottlenecks. We'd love to hear your own ideas and suggestions. Use the Feedback
+tab to make any comments or ask questions.
 
 ### References
 

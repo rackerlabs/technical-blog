@@ -215,37 +215,7 @@ to set up `rsync` processes between the PROD and DR sites and apply DB and AD
 Online Patching (ADOP) patches to the DR site at the same time that you apply
 them to the PROD site.
 
-<table>
-  <tr>If you liked this blog, share it by using the following icons:</tr>
-  <tr>
-   <td>
-       <img src="{% asset_path line-tile.png %}" width=50 >
-    </td>
-    <td>
-      <a href="https://twitter.com/home?status=https%3A//developer.rackspace.com/blog/Oracle-EBS-applications-disaster-recovery/">
-        <img src="{% asset_path shareT.png %}">
-      </a>
-    </td>
-    <td>
-       <img src="{% asset_path line-tile.png %}" width=50 >
-    </td>
-    <td>
-      <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//developer.rackspace.com/blog/Oracle-EBS-applications-disaster-recovery/">
-        <img src="{% asset_path shareFB.png %}">
-      </a>
-    </td>
-    <td>
-       <img src="{% asset_path line-tile.png %}" width=50 >
-    </td>
-    <td>
-      <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//developer.rackspace.com/blog/Oracle-EBS-applications-disaster-recovery&summary=&source=">
-        <img src="{% asset_path shareL.png %}">
-      </a>
-    </td>
-  </tr>
-</table>
-
-</br>
+Use the Feedback tab to make any comments or ask questions.
 
 Learn more about our [database services](https://www.rackspace.com/dba-services).
 
@@ -255,5 +225,4 @@ If you want more information on Rackspace disaster recovery solutions, download
 this [white paper](https://www.rackspace.com/sites/default/files/white-papers/Rackspace%20Disaster%20Recovery.pdf).
 
 
-If you have any questions on the topic, comment in the field below.
 

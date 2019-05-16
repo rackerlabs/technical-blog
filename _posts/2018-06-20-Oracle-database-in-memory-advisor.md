@@ -129,5 +129,5 @@ involvement. From a business point of view, businesses can benefit from better
 decisions made in real time, improved productivity, increased competitiveness,
 and lowered costs.
 
-If you have any questions on this topic, comment in the field below.
+Use the Feedback tab to make any comments or ask questions.
 

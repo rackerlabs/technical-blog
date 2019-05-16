@@ -217,3 +217,5 @@ LPNs offer a simple way to accurately perform inventory transactions in WMS.
 They're also very user-friendly and save you time. In the second part of
 this series we’ll cover how to generate LPNs using a mobile interface and the
 different types of transactions you can perform with LPNs.
+
+Use the Feedback tab to make any comments or ask questions.

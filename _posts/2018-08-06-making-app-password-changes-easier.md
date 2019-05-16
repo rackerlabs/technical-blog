@@ -11,7 +11,11 @@ categories:
   - Automation
 ---
 
- A common technical challenge for developers, operations, and IT security is the management of service account credentials used by applications.  Service accounts are needed to authorize different components for communication and sharing data.  This is true whether the application runs in the cloud or on-premise.  The problem is that these credentials have the following issues:
+ A common technical challenge for developers, operations, and IT security is
+ the management of service account credentials used by applications.  Service
+ accounts are needed to authorize different components for communication and
+ sharing data.  This is true whether the application runs in the cloud or
+ on-premise.  The problem is that these credentials have the following issues:
 
 * They are setup one time.
 * They never expire.
@@ -23,9 +27,12 @@ I want to share some design thoughts on how to make changing credentials easier.
 
 ### Current common scenario
 
-Let's say we have a web application called **AcmeWebApp**.  It doesn't matter where we are running the app.  Jus know that we have deployed it onto a server on which we manage the files.
+Let's say we have a web application called **AcmeWebApp**.  It doesn't matter
+where we are running the app.  Jus know that we have deployed it onto a server
+on which we manage the files.
 
-**AcmeWebApp** has a configuration file called **awa.conf** that contains things like:
+**AcmeWebApp** has a configuration file called **awa.conf** that contains things
+like:
 
 ```
 [remotewidget]
@@ -44,9 +51,13 @@ localadmin_password=defaultWeForgotToChange
 
 ### Credential usage
 
-A good practice is to have a file, **ACL**, that protects **awa.conf** from everyone.  This configuration file has the required credentials to connect to two other services and contains the initial login password to be used.
+A good practice is to have a file, **ACL**, that protects **awa.conf** from
+everyone.  This configuration file has the required credentials to connect to
+two other services and contains the initial login password to be used.
 
-The challenge with the preceding practice is this: When we need to change the password (due to a hacker compromise, former employee departure, policy directs yearly change, and so on), the following actions are required:
+The challenge with the preceding practice is this: When we need to change the
+password (due to a hacker compromise, former employee departure, policy directs
+yearly change, and so on), the following actions are required:
 
 1. Shutdown all running instances (entire cluster).
 1. Change password on remote service.
@@ -54,7 +65,10 @@ The challenge with the preceding practice is this: When we need to change the pa
 1. Restart the application.
 1. Manually repeat the preceding steps every time password changes are needed.
 
-This procedure mandates scheduling application downtime for a password rotation.  This can be difficult to prioritize until an urgent event (system compromise, audit deadline) occurs, which makes the work more difficult and prone to human error.
+This procedure mandates scheduling application downtime for a password rotation.
+This can be difficult to prioritize until an urgent event (system compromise,
+audit deadline) occurs, which makes the work more difficult and prone to human
+error.
 
 ### Ideal scenario
 
@@ -65,24 +79,36 @@ In a perfect world, the following statememts are true:
 
 But how do we get there?
 
-There are commercial solutions (which can be expensive) that help with password credential management (such as vaults or storage) and rotation.  You, as a software developer, can even use libraries provided by these vendors to have your own code call their solutions to retrieve credentials.  One downside, however, is that your application becomes locked into that vendor's product.
+There are commercial solutions (which can be expensive) that help with password
+credential management (such as vaults or storage) and rotation.  You, as a
+software developer, can even use libraries provided by these vendors to have
+your own code call their solutions to retrieve credentials.  One downside,
+however, is that your application becomes locked into that vendor's product.
 
 ### What can a software developer do?
 
-I want to outline some technical designs, tricks, or methods that software developers can use that would make it easier for your operations or IT security personnel to change the credentials on which your application is dependent without incurring downtime.
+I want to outline some technical designs, tricks, or methods that software
+developers can use that would make it easier for your operations or IT security
+personnel to change the credentials on which your application is dependent
+without incurring downtime.
 
 #### 1. Separate out each credential from your configuration file
 
-In the preceding **awa.conf** example, we had all credentials in the same **awa.conf** file.  So your code has to read in only the one file to have all the credentials it needs in one variable.
+In the preceding **awa.conf** example, we had all credentials in the same
+**awa.conf** file.  So your code has to read in only the one file to have all
+the credentials it needs in one variable.
 
-While handy for you from an operations or IT security tool standpoint, this is cumbersome.  If I (as security operations) want an automated script to change the passwords, the script must be able to do the following tasks:
+While handy for you from an operations or IT security tool standpoint, this is
+cumbersome.  If I (as security operations) want an automated script to change
+the passwords, the script must be able to do the following tasks:
 
 1. Parse your configuration file (not too difficult).
 1. Rewrite the entire configuration file atomically with the following requirements:
   * Change only one credential at a time.
   * Avoid writing an old credential when rewriting the configuration file to disk.
 
-If the script can't handle the preceding requirements, situations like the following one could happen:
+If the script can't handle the preceding requirements, situations like the
+following one could happen:
 
   1. **awa.conf** has its DS_PASSWORD updated to a new password by **scriptRunA**.
   1. At the same time, a different script or tool, **scriptrunZ**, also changes the API_PASSWORD.
@@ -90,7 +116,8 @@ If the script can't handle the preceding requirements, situations like the follo
 
 ##### Solution
 
-Place each credential in a secure dedicated file (for example, file **ACL**), as shown in the following example:
+Place each credential in a secure dedicated file (for example, file **ACL**),
+as shown in the following example:
 
 ```
 ls /etc/awa/conf.d/
@@ -99,25 +126,38 @@ awa-datastore.cred
 awa-remotewidget.cred
 ```
 
-Example of awa-datastore.cred:
+Example of **awa-datastore.cred**:
+
 ```
 admin
 AnotherPassword@2
 ```
 
-Notice that there are no SOME_NAME= portions of code.  This simplifies parsing by tools that are external to the application.
+Notice that there are no SOME_NAME= portions of code.  This simplifies parsing
+by tools that are external to the application.
 
-Doing this enables operations tools to work with each credential individually and without having to do special logic handling on automatic modification of a single **awa.conf** file.
+Doing this enables operations tools to work with each credential individually
+and without having to do special logic handling on automatic modification of a
+single **awa.conf** file.
 
-Your development code does have to contain logic to know how to find these files of course, but implementing this layout is is good step towards allowing changes to the application without downtime or restarts.
+Your development code does have to contain logic to know how to find these
+files of course, but implementing this layout is is good step towards allowing
+changes to the application without downtime or restarts.
 
 #### 2. Always reread the credentials from your configuration
 
-Another common development habit is to only read the application configuration once upon startup.  If a configuration setting needs to be changed, it typically requires an application restart.
+Another common development habit is to only read the application configuration
+once upon startup.  If a configuration setting needs to be changed, it typically
+requires an application restart.
 
-For credentials, you can avoid the restart (and thus the downtime) by simply re-reading the credentials anytime they are needed.  Write your code so that it doesn't use an in-memory configuration hash but instead goes back to the file on the disk.
+For credentials, you can avoid the restart (and thus the downtime) by simply
+re-reading the credentials anytime they are needed.  Write your code so that it
+doesn't use an in-memory configuration hash but instead goes back to the file
+on the disk.
 
-You may also find it useful to catch any service connection errors and perform a retry after re-reading the credentials on the disk.  The following example may help:
+You may also find it useful to catch any service connection errors and perform
+a retry after re-reading the credentials on the disk.  The following example
+might help:
 
 1. **AcmeWebApp** is already running and servicing users.
 1. An operations member changes the datastore password on the remote datastore service for the service account user ``admin``.
@@ -127,8 +167,10 @@ You may also find it useful to catch any service connection errors and perform a
 1. **AcmeWebApp** reads the **/etc/awa/conf.d/awa-datastore.cred** from the disk for the latest credentials.
 1. **AcmeWebApp** uses the new credentials to connect and serve users, all without a restart.
 
-**warning**:
-  But wait!  What if between the time the datastore password was changed and before **awa-datastore.cred** was updated **AcmeWebApp** tries to connect!  Won't that result in the old invalid credentials being used and a failure?
+**Warning**:
+  But wait!  What if between the time the datastore password was changed and
+  before **awa-datastore.cred** was updated **AcmeWebApp** tries to connect!
+  Won't that result in the old invalid credentials being used and a failure?
 
 
 Yes, it can.  You could do this in your code:
@@ -147,17 +189,23 @@ I propose a better way in the next section.
 
 #### 3. Support rotating set of credentials (Fernet)
 
-The OpenStack project has a neat concept known as [fernet tokens](https://docs.openstack.org/keystone/pike/admin/identity-fernet-token-faq.html).
+The OpenStack project has a neat concept known as
+[fernet tokens](https://docs.openstack.org/keystone/pike/admin/identity-fernet-token-faq.html).
 
-Instead of only one valid credential to a service, you have multiple that you rotate through.
+Instead of only one valid credential to a service, you have multiple that you
+rotate through.
 
-Adapting this for our purpose, we would have multiple credentials for the remote service.  Take the **AcmeWebApp** software as an example:
+Adapting this for our purpose, we would have multiple credentials for the remote
+service.  Take the **AcmeWebApp** software as an example:
 
-We have a remote REST service that our application makes calls for with the ``API_ENDPOINT=https://198.51.100.4/api/3/rest.cgi``.
+We have a remote REST service that our application makes calls for with the
+``API_ENDPOINT=https://198.51.100.4/api/3/rest.cgi``.
 
-We originally asked the owner of that service to give us a service account, such as ``awa_rest_api``.
+We originally asked the owner of that service to give us a service account,
+such as ``awa_rest_api``.
 
-In order to support our fernet credential rotation, we ask for a second account that has access to the same data or permissions, such as ``awa_rest_api_2``.
+In order to support our fernet credential rotation, we ask for a second account
+that has access to the same data or permissions, such as ``awa_rest_api_2``.
 
 We now add another credential configuration file for our application:
 
@@ -180,44 +228,57 @@ _The usernames could be anything really._
 
 In your application, you now want some psuedocode like this:
 
-```
-try {
-  cred = getWidgetCredential(1)  // reads from disk everytime
 
-  restRequest = call_api(config['remotewidget']['API_ENDPOINT'], cred)
-} catch InvalidUserAuthError {
-  // retry with other cred in rotation
-  cred = getWidgetCredential(2)  // reads from disk everytime
+    try {
+      cred = getWidgetCredential(1)  // reads from disk everytime
 
-  try {
-     restRequest = call_api(config['remotewidget']['API_ENDPOINT'], cred)
-  } catch InvalidUserAuthError {
-     // Second credential failed too
-     log.error("Tried all known credentials for service")
-     return nil
-   }
-} catch NotAuthError {
-    // Add your own retry logic for unknown problems (blame it on the network)
-}
+      restRequest = call_api(config['remotewidget']['API_ENDPOINT'], cred)
+    } catch InvalidUserAuthError {
+    // retry with other cred in rotation
+    cred = getWidgetCredential(2)  // reads from disk everytime
 
-// You might also implement the above as a for loop over an array of credentials instead of nested try catch.
-// Just remember to re-read the credentials from their disk configuration files each time
-```
+    try {
+      restRequest = call_api(config['remotewidget']['API_ENDPOINT'], cred)
+    } catch InvalidUserAuthError {
+        // Second credential failed too
+        log.error("Tried all known credentials for service")
+        return nil
+      }
+    } catch NotAuthError {
+      // Add your own retry logic for unknown problems (blame it on the network)
+    }
 
-The idea is that if the first credential is invalid (was changed recently), the second credential (brand new) is used instead.  This allows operations to change or deactivate a compromised account quickly and then update the application configurations shortly thereafter.  All without incurring downtime.
+    // You might also implement the above as a for loop over an array of credentials instead of nested try catch.
+    // Just remember to re-read the credentials from their disk configuration files each time
 
-In a normal operation state, both credential files have valid logins.  At the time, when it becomes necessary to change one of them (or both), operations doesn't need to shutdown the application.  They just change the credentials on the remote service.
+The idea is that if the first credential is invalid (was changed recently), the
+second credential (brand new) is used instead.  This allows operations to change
+or deactivate a compromised account quickly and then update the application
+configurations shortly thereafter.  All without incurring downtime.
 
-The application automatically detects a failed login attempt and simply moves on to the next credential, which is still valid.
+In a normal operation state, both credential files have valid logins.  At the
+time, when it becomes necessary to change one of them (or both), operations
+doesn't need to shutdown the application.  They just change the credentials on
+the remote service.
 
-Operations can repeat the same process after all the application instances have moved to the new credential and the first credential has been updated on disk.
+The application automatically detects a failed login attempt and simply moves
+on to the next credential, which is still valid.
+
+Operations can repeat the same process after all the application instances have
+moved to the new credential and the first credential has been updated on disk.
 
 ### Summary
 
-We've discussed the following three things that can help you simplify credential changes in your application code:
+We've discussed the following three things that can help you simplify credential
+changes in your application code:
 
 1. Separate out each credential from your configuration file.
 1. Always reread the credentials from your configuration.
 1. Support rotating set of credentials (Fernet).
 
-Software development and security operations do have many ways of helping each other be successful.  Automation of processes and robust software development are making technology better and hopefully these design ideas help you solve your secure code challenges too.
+Software development and security operations do have many ways of helping each
+other be successful.  Automation of processes and robust software development
+are making technology better and hopefully these design ideas help you solve
+your secure code challenges too.
+
+Use the Feedback tab to make any comments or ask questions.

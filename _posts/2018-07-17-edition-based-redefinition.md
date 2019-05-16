@@ -134,3 +134,5 @@ The following views have a column which shows information about editions for tho
 ### Conclusion
 
 Using EBR can greatly reduce application downtime if implemented properly. Oracle E-Business Suite 12.2 is a good example of an application that uses EBR to reduce patching and upgrade downtime. EBR is not limited to Oracle Standard products and can be implemented on custom or legacy applications with proper planning.
+
+Use the Feedback tab to make any comments or ask questions.

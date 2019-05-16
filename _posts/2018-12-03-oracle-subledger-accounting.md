@@ -32,8 +32,8 @@ depending on business requirements.
 
 Because SLA provides the power to modify accounting as needed, after the seeded
 rules are modified and validated, you won't need to repeatedly revise data in
-the tables. When `Create Accounting` runs from the Subledger, it produces the 
-desired accounting results. In addition, you can define different rules for all 
+the tables. When `Create Accounting` runs from the Subledger, it produces the
+desired accounting results. In addition, you can define different rules for all
 the Subledgers.
 
 ### Differences between Subledger versions
@@ -88,39 +88,8 @@ SLA eliminates the burden of repetitive manual accounting intervention. SLA
 provides a mechanism to produce the desired accounting results with minimal
 setup.
 
-<table>
-  <tr>If you liked this blog, share it by using the following icons:</tr>
-  <tr>
-   <td>
-       <img src="{% asset_path line-tile.png %}" width=50 >
-    </td>
-    <td>
-      <a href="https://twitter.com/home?status=https%3A//developer.rackspace.com/blog/oracle-subledger-accounting/">
-        <img src="{% asset_path shareT.png %}">
-      </a>
-    </td>
-    <td>
-       <img src="{% asset_path line-tile.png %}" width=50 >
-    </td>
-    <td>
-      <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//developer.rackspace.com/blog/oracle-subledger-accounting/">
-        <img src="{% asset_path shareFB.png %}">
-      </a>
-    </td>
-    <td>
-       <img src="{% asset_path line-tile.png %}" width=50 >
-    </td>
-    <td>
-      <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//developer.rackspace.com/blog/oracle-subledger-accounting&summary=&source=">
-        <img src="{% asset_path shareL.png %}">
-      </a>
-    </td>
-  </tr>
-</table>
-
-</br>
+Use the Feedback tab to make any comments or ask questions.
 
 Learn more about our [database services](https://www.rackspace.com/dba-services).
 
-If you have any questions on the topic, comment in the field below.
 

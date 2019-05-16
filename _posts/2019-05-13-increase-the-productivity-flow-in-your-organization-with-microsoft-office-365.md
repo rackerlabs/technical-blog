@@ -8,7 +8,14 @@ published: true
 authorIsRacker: true
 categories:
     - General
-bio: "Hiten Mistry is a Portfolio Solution Architect covering the multiple managed services offered by Rackspace. He has over 18 years of experience in the managed hosting industry with expertise in designing cloud environments covering AWS, Azure, GCP, Alibaba and private cloud. Hiten came to Rackspace from Datapipe where his interactions with global organisations built up experience in designing solutions for a wide variety of market segments and global regions. Hiten has a keen interest in the developments within public and private cloud platforms to help organisations solve complex IT challenges within their business."
+bio: "Hiten Mistry is a Portfolio Solution Architect covering the multiple managed
+services offered by Rackspace. He has over 18 years of experience in the managed
+hosting industry with expertise in designing cloud environments covering AWS,
+Azure, GCP, Alibaba and private cloud. Hiten came to Rackspace from Datapipe
+where his interactions with global organisations built up experience in designing
+solutions for a wide variety of market segments and global regions. Hiten has a
+keen interest in the developments within public and private cloud platforms to
+help organisations solve complex IT challenges within their business."
 metaTitle: "Increase the productivity flow in your organization with Microsoft Office 365"
 metaDescription: "Business productivity software is continuously evolving and collaboration tools such as Microsoft Office 365 and Flow are becoming more common."
 ogTitle: "Increase the productivity flow in your organization with Microsoft Office 365"
@@ -129,3 +136,4 @@ If you are interested in finding out more about how Rackspace can help your
 business can improve productivity with Microsoft Office 365, visit our
 [information page](https://www.rackspace.com/en-gb/microsoft/office-365).
 
+Use the Feedback tab to make any comments or ask questions.

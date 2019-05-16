@@ -175,50 +175,20 @@ By choosing the second approach, you can directly parse the data. However, with
 this option, the original XML file data can’t be accessed in the future because this
 option never stores the content of XML file in Oracle.
 
-<table>
-  <tr>If you liked this blog, share it by using the following icons:</tr>
-  <tr>
-   <td>
-       <img src="{% asset_path line-tile.png %}" width=50 >
-    </td>
-    <td>
-      <a href="https://twitter.com/home?status=https%3A//developer.rackspace.com/blog/parse-xml-in-pl-sql/">
-        <img src="{% asset_path shareT.png %}">
-      </a>
-    </td>
-    <td>
-       <img src="{% asset_path line-tile.png %}" width=50 >
-    </td>
-    <td>
-      <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//developer.rackspace.com/blog/parse-xml-in-pl-sql/">
-        <img src="{% asset_path shareFB.png %}">
-      </a>
-    </td>
-    <td>
-       <img src="{% asset_path line-tile.png %}" width=50 >
-    </td>
-    <td>
-      <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//developer.rackspace.com/blog/parse-xml-in-pl-sql&summary=&source=">
-        <img src="{% asset_path shareL.png %}">
-      </a>
-    </td>
-  </tr>
-</table>
-
-</br>
+Use the Feedback tab to make any comments or ask questions.
 
 ### Optimize your environment with expert administration, management, and configuration
 
 [Rackspace's Application services](https://www.rackspace.com/application-management/managed-services)
 **(RAS)** experts provide the following [professional](https://www.rackspace.com/application-management/professional-services)
 and
-[managed services](https://www.rackspace.com/application-management/managed-services) across 
+[managed services](https://www.rackspace.com/application-management/managed-services) across
 a broad portfolio of applications:
 
-- [eCommerce and Digital Experience platforms](https://www.rackspace.com/ecommerce-digital-experience) 
+- [eCommerce and Digital Experience platforms](https://www.rackspace.com/ecommerce-digital-experience)
 - [Enterprise Resource Planning (ERP)](https://www.rackspace.com/erp)
 - [Business Intelligence](https://www.rackspace.com/business-intelligence)
-- [Salesforce Customer Relationship Management (CRM)](https://www.rackspace.com/salesforce-managed-services) 
+- [Salesforce Customer Relationship Management (CRM)](https://www.rackspace.com/salesforce-managed-services)
 - [Databases](https://www.rackspace.com/dba-services)
 - [Email Hosting and Productivity](https://www.rackspace.com/email-hosting)
 
@@ -234,6 +204,4 @@ choose and deploy the right technology on the right cloud.
 our success with yours.
 
 [Chat now](https://www.rackspace.com/#chat) to get started.
-
-If you have any questions on this post, comment in the field below.
 

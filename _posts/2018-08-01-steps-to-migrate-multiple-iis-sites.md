@@ -156,6 +156,4 @@ environments with no need to worry about code. Web deploy not only automates
 most of the migration, it also eliminates the possibility of human error and
 saves time.
 
-If you have any questions on the topic, comment in the field below.
-
-
+Use the Feedback tab to make any comments or ask questions.

@@ -106,23 +106,23 @@ Before you install One Node, ensure that you perform the following tasks:
 
         oracleasm-support-2.1.8-1.el6.x86_64.rpm
         oracleasmlib-2.0.4-1.el6.x86_64.rpm
-        
+
 - Download the Grid and RDBMS installation software from the
   [Oracle Downloads website](https://www.oracle.com/technetwork/database/enterprise-edition/downloads/index.html).
   Choose the download binary depending on the platform on which you plan to install the software.
 
 - Create a directory for the Oracle Grid CRS Home on both nodes.  By default, Grid is installed in `/u02/app`.
 
-         [grid@BOSODBD01 grid]$ cd /u02/app  
+         [grid@BOSODBD01 grid]$ cd /u02/app
          [grid@BOSODBD01 app]$ ls -lrt
-      
+
          total 12
          drwxr-xr-x. 3 root oinstall 4096 Sep 28 00:31 grid
          drwxrwxr-x. 9 grid oinstall 4096 Sep 30 22:48 oracle
          drwxrwx---. 6 grid oinstall 4096 Oct  7 21:11 oraInventory
-       
+
          [grid@BOSODBD01 grid]$ ls -lrt
-      
+
          total 4
          drwxr-xr-x. 68 root oinstall 4096 Sep 28 00:36 11.2.0.4
 
@@ -295,38 +295,6 @@ normal day-to-day operations), and ease database management. Oracle RAC One Node
 is a best-in-class solution for the databases and deployments, including those
 in the cloud.
 
-<table>
-  <tr>If you liked this blog, share it by using the following icons:</tr>
-  <tr>
-   <td>
-       <img src="{% asset_path line-tile.png %}" width=50 >
-    </td>
-    <td>
-      <a href="https://twitter.com/home?status=https%3A//developer.rackspace.com/blog/real-application-clusters-one-node-architecture/">
-        <img src="{% asset_path shareT.png %}">
-      </a>
-    </td>
-    <td>
-       <img src="{% asset_path line-tile.png %}" width=50 >
-    </td>
-    <td>
-      <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//developer.rackspace.com/blog/real-application-clusters-one-node-architecture/">
-        <img src="{% asset_path shareFB.png %}">
-      </a>
-    </td>
-    <td>
-       <img src="{% asset_path line-tile.png %}" width=50 >
-    </td>
-    <td>
-      <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//developer.rackspace.com/blog/real-application-clusters-one-node-architecture&summary=&source=">
-        <img src="{% asset_path shareL.png %}">
-      </a>
-    </td>
-  </tr>
-</table>
-
-</br>
+Use the Feedback tab to make any comments or ask questions.
 
 Learn more about our [database services](https://www.rackspace.com/dba-services).
-
-If you have any questions on the topic, comment in the field below.
