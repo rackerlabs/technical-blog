@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "An overview of the Oracle Property Manager"
-date: 2019-04-26 00:01
+date: 2019-05-22 00:01
 comments: true
-author: Sravan Gangupanthula
+author: Sharad Kukreja
 published: true
 authorIsRacker: true
 categories:
