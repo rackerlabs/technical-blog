@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "An overview of the Oracle Property Manager module"
+title: "An overview of the Oracle Property Manager"
 date: 2019-04-26 00:01
 comments: true
 author: Sravan Gangupanthula
@@ -9,58 +9,57 @@ authorIsRacker: true
 categories:
     - Oracle
     - Database
-metaTitle: "An overview of Oracle Property Manager"
-metaDescription: "This blog highlights the Property Manager module’s various features and functions."
+metaTitle: "An overview of the Oracle Property Manager"
+metaDescription: "This blog highlights the Oracle Property Manager’s various features and functions."
 ogTitle: "An overview of Oracle Property Manager"
-ogDescription: "This blog highlights the Property Manager module’s various features and functions."
+ogDescription: "This blog highlights the Oracle Property Manager’s various features and functions."
 ---
 
-The Property Manager module is part of the Oracle&reg; Real Estate Management
-solution and is a specifically designed database for companies  and corporate
-giants that have large property portfolios. This blog highlights the Property
+The Oracle&reg; Property Manager is part of the Oracle Real Estate Management
+solution and is a database that is specifically designed for companies and corporate
+giants that have large property portfolios. This blog highlights the Oracle Property
 Manager’s various features and functions.
 
 <!-- more -->
 
 ### Introduction
 
-Property Manger not only automates and organizes a company’s property
+Oracle Property Manger not only automates and organizes a company’s property
 portfolio, but it also enables users to make intelligent decisions to
-maximize profits. Property Manager integrates with the modules that capitalize
-on database efficiency for both employee’s and customers, as shown in the
+maximize profits. Oracle Property Manager integrates with the modules that capitalize
+on database efficiency for both employees and customers, as shown in the
 following image:
 
 
 ![]({% asset_path 2019-05-22-an-overview-of-oracle-property-manager/Picture1.png %})
 
-*Image source*: <<need source if you didn't create this>>
 
-### Key features of Property Manager
+### Key features of the Oracle Property Manager
 
-By using Property Manager module, you can perform the following tasks:
+By using the Oracle Property Manager, you can perform the following tasks:
 
 -	Property administration: Classify the type of property, geographical location,
-   condition, and tenure.
+    condition, and tenure.
 
--	Space Allocation: Assign the space to an employee or customer.
+-	Space allocation: Assign the space to an employee or customer.
 
--	Lease Management: Perform the following activities:
+-	Lease management: Perform the following activities:
    -	Abstract, modify, and amend lease information.
    -	Calculate rent and common area maintenance expenses.
 
 -	Accept and make payments: Create invoices for Oracle Accounts Payable (AP) or
-   Accounts Receivables (AR).
+    Accounts Receivables (AR).
 
 -	Run and view reports: Perform the following activities:
    -	Create over 30 standard reports that provide all the required information
-      for the property.
+        for the property.
    -	Use other reporting tools for customized reports.
    -	Integrate with computer-aided design (CAD) programs to import and export data.
 
 ### Property administration
 
 By using standard forms, you can define a property as a combination of land
-details and building details. The database provides an built-in hierarchy that
+details and building details. The database provides a built-in hierarchy that
 starts at the top by grouping properties within office parks and regions, as
 shown in the following image:
 
@@ -71,29 +70,29 @@ status. Additionally, you can enter other important information like area
 details, occupancy area, features, and contacts.
 
 You can also subdivide a building into floors and offices, and you can enter the
-previous records for each individual sub-classification. The following image
+previous records for each individual subclassification. The following image
 shows a building details form:
 
 ![Figure 2 - Building details]({% asset_path 2019-05-22-an-overview-of-oracle-property-manager/Picture3.png %})
 
 Finally, you can subdivide land into various parcels, withholding information
-like Land area, conditions, and the features for each classified parcel. You
-can record the asset numbers, titles, details, and do on by using Flexfields.
+like land area, conditions, and the features for each classified parcel. You
+can record the asset numbers, titles, and details, and do so by using flexfields.
 
 ### Space assignments
 
 After you define the property, assign it to either an employee or a customer at
 any of the previously described levels. Facilitate the assignment by using the
-cost center or General Ledger (GL) codes for revenue or costing purposes. Space
+cost center or General Ledger (GL) codes for revenue or cost purposes. Space
 assignment forms display the entered data of the assignment logically and
-include the total occupancy at various levels such as building, office, floor,
+include the total occupancy at various levels, such as building, office, floor,
 and so on. You can also record information related to any project, organization,
 or task at this level.
 
-### Lease Management
+### Lease management
 
-By using Property Manager, you can oversee and control a variety of lease
-management tasks such as the following:
+By using the Oracle Property Manager, you can oversee and control a variety of lease
+management tasks, such as the following tasks:
 
 - Calculate lease amounts.
 - Modify or amend a lease.
@@ -102,12 +101,12 @@ management tasks such as the following:
 - Collect rent based on variable factors.
 
 There are specifically-designed forms to capture the necessary information about
-the property to be leased such as details, contacts, locations, insurance, and
+the property to be leased, such as details, contacts, locations, insurance, and
 so on. The following image shows a lease details form:
 
 ![Figure 3 - Lease details]({% asset_path 2019-05-22-an-overview-of-oracle-property-manager/Picture3.png %})
 
-Property Manager enables you to create the lease according to your business
+The Oracle Property Manager enables you to create the lease according to your business
 requirements. You can create a lease for the whole property, for a single floor,
 or for a single building. You can use the information that you enter to
 calculate the rent and share that information with other modules like Oracle
@@ -116,22 +115,22 @@ AP or AR to facilitate billing.
 ### Property agents and reports
 
 The system enables you to record information about customers, suppliers, and
-employees that are assigned to or associated with a particular property. This
-is done by integrating with other Oracle modules.
+employees that are assigned to or associated with a particular property,
+by integrating with other Oracle modules.
 
-There are more than thirty standard reports divided into space, rent, employee,
+There are more than 30 standard reports divided into space, rent, employee,
 lease, and other areas, which help you to keep track of the activities performed
-in Property Manager.
+in the Oracle Property Manager.
 
 ### Conclusion
 
-You can think of Property Manager as a property register, which records various
+You can think of the Oracle Property Manager as a property register that records various
 information about the property at different levels, making property easier to
-manage. The Property Manager module enables you to track what has, or has not,
-been billed and, when used in combination with the AR module,
-what has, or has not, been paid. You can easily interface Property Manager with
+manage. The Oracle Property Manager module enables you to track what has, or has not,
+been billed, and when used in combination with the AR module,
+what has, or has not, been paid. You can easily interface the Oracle Property Manager with
 Oracle AP, AR, and Fixed Assets to carryout various activities such as billing,
-receiving the rent, invoicing, and so on.
+receiving rent, invoicing, and so on.
 
 Use the Feedback tab to make any comments or ask questions.
 
