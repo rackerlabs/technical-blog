@@ -44,17 +44,17 @@ By using the Oracle Property Manager, you can perform the following tasks:
 -	Space allocation: Assign the space to an employee or customer.
 
 -	Lease management: Perform the following activities:
-   -	Abstract, modify, and amend lease information.
-   -	Calculate rent and common area maintenance expenses.
+    -  Abstract, modify, and amend lease information.
+    -  Calculate rent and common area maintenance expenses.
 
 -	Accept and make payments: Create invoices for Oracle Accounts Payable (AP) or
     Accounts Receivables (AR).
 
 -	Run and view reports: Perform the following activities:
-   -	Create over 30 standard reports that provide all the required information
-        for the property.
-   -	Use other reporting tools for customized reports.
-   -	Integrate with computer-aided design (CAD) programs to import and export data.
+    -  Create over 30 standard reports that provide all the required information
+       for the property.
+    -  Use other reporting tools for customized reports.
+    -  Integrate with computer-aided design (CAD) programs to import and export data.
 
 ### Property administration
 
