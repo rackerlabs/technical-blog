@@ -9,18 +9,18 @@ authorIsRacker: false
 categories:
     - AWS
 metaTitle: "Migrate AWS DNS records by using cli35"
-metaDescription: "This blog explains how to simplify the process of migrating all Route53 DNS records from source to target."
+metaDescription: "This blog explains how to simplify the process of migrating all Route 53 DNS records from source to target."
 ogTitle: "Migrate AWS DNS records by using cli35"
-ogDescription: "This blog explains how to simplify the process of migrating all Route53 DNS records from source to target."
+ogDescription: "This blog explains how to simplify the process of migrating all Route 53 DNS records from source to target."
 ---
 
-When you migrate resources from one Amazon&reg; Web Services (AWS) account to another,
-you might be asked to migrate the AWS Route53 Domain Name Service (DNS) records
-as well. To do this, use the AWS cli (cli53) to migrate Route53 DNS records from
+When you migrate resources from one Amazon Web Services&reg; (AWS) account to another,
+you might be asked to migrate the Amazon Route 53&trade; Domain Name Service (DNS) records
+as well. To do this, use cli53, a command line tool for Amazon Route 53, to migrate Route 53 DNS records from
 the source to the target. cli53 exports all the DNS records into a JSON file.
-After the records are moved, you need to make some complex changes to the file
+After cli53 moves the records, you need to make some complex changes to the file
 before finally importing it to the target. This blog explains how to simplify
-the process of migrating all Route53 DNS records from the source to the target.
+the process of migrating all Route 53 DNS records from the source to the target.
 
 <!-- more -->
 
@@ -31,40 +31,40 @@ This post explains the following steps to migrate DNS records by using cli53:
 1. Download and install cli53 from GitHub.
 2. Create an identity and access management (IAM) user in both the AWS source and
    target accounts.
-3. Export the Route53 DNS records from the source AWS account.
-4. Import the Route53 DNS records to the target AWS account.
+3. Export the Route 53 DNS records from the source AWS account.
+4. Import the Route 53 DNS records to the target AWS account.
 
 #### Download and install cli53
 
 Download the cli53 utility from
-[https://github.com/barnybug/cli53/releases/tag/0.8.12](https://github.com/barnybug/cli53/releases/tag/0.8.12).
+[GitHub](https://github.com/barnybug/cli53/releases/tag/0.8.12).
 
 To install cli53, select from the following installation instructions based on
-your operating system:
+your operating system.
 
-##### Linux&reg;
+##### Linux
 
-To install cli53 on Linux, run the following commands:
+To install cli53 on Linux&reg;, run the following commands:
 
     $ sudo mv cli53-my-platform /usr/local/bin/cli53
     $ sudo chmod +x /usr/local/bin/cli53
 
-##### Apple&reg; Mac
+##### Apple Mac
 
-To install cli53 on a Mac, run the following command:
+To install cli53 on an Apple&reg; Mac, run the following command:
 
     $ brew install cli53
 
-##### Microsoft&reg; Windows&reg;
+##### Microsoft Windows
 
-You can run the cli53 executable (extension `.exe`) on Windows without
+You can run the cli53 executable (extension `.exe`) on Microsoft&reg; Windows&reg; without
 installing it.
 
 To verify cli53 on Windows, perform the following tasks:
 
 1. Open a command prompt.
 2. Change directory to the location where you downloaded the cli53 executable.
-3. Run the cli35 list command as shown in the following image:
+3. Run the cli35 list command, as shown in the following image:
 
 ![]({% asset_path 2019-05-29-Migrate-AWS-DNS-records-by-using-cli53/Picture1.png %})
 
@@ -111,11 +111,11 @@ Use the following instructions to create an IAM user:
   <li>Repeat the preceding steps for the target AWS account.</li>
 </ol>
 
-#### Export Route53 DNS records from the source account
+#### Export Route 53 DNS records from the source account
 
-The cli53 utility exports all Route53 DNS records to a plain text file. This
-file will has all the records. You can easily edit all the DNS records and their
-parameters. Use the following instructions to export Route53 DNS records:
+The cli53 utility exports all Route 53 DNS records to a plain text file. This
+file has all the records. You can easily edit all the DNS records and their
+parameters. Use the following instructions to export Route 53 DNS records:
 
 1. Go to your **.aws** home directory and find the **credentials** file as
 shown in the following image:
@@ -140,8 +140,8 @@ shown in the following image:
 
 
 <ol start=4>
-  <li>Run the following command to export the Route53 hosted zones into file
-  from source AWS account to create a plain text file with all the Route53 DNS
+  <li>Run the following command to export the Route 53 hosted zones into the file
+  from the source AWS account to create a plain text file with all the Route 53 DNS
   records.</li>
 </ol>
 
@@ -149,18 +149,18 @@ shown in the following image:
 
 ![]({% asset_path 2019-05-29-Migrate-AWS-DNS-records-by-using-cli53/Picture9.png %})
 
-#### Import Route53 records to the target account
+#### Import Route 53 records to the target account
 
 To import the DNS records to the target AWS account, you need to create hosted
 zones before importing the DNS records. Delete the **NS** and **SOA** DNS
 records from the plain text export file because these records are available in
 the target hosted zone. You should also update the credentials file with the
-target AWS account, IAM, user **Access key ID** and **Secret access key**.
+target AWS account, IAM user **Access key ID**, and **Secret access key**.
 
 Use the following steps to import the DNS records to the target AWS account:
 
 1. Delete the **NS** and **SOA** records from the export file.  Also, if there
-is a different domain name on the target AWS account, then update the domain
+is a different domain name on the target AWS account, update the domain
 name under $ORIGIN in the plain text file and save the file.
 
 The following image shows the DNS file before the record deletion:
@@ -199,7 +199,7 @@ The following image shows the DNS file after the record deletion:
 
 <ol start=5>
   <li>Import the DNS records to the hosted zone on the target AWS account. Copy
-  the Hosted zone Id and run the following command:</li>
+  the hosted zone ID and run the following command:</li>
 </ol>
 
     C:\> cli53-windows-386.exe import --file </path/to/file> <hosted-zone-name>
@@ -208,7 +208,7 @@ The following image shows the DNS file after the record deletion:
 
 <ol start=6>
   <li>Verify all of the DNS records on the target AWS account under the
-  Route53 management console and check that all the records are in place as
+  Route 53 management console and check that all the records are in place as
   shown in the following images:</li>
 </ol>
 
@@ -219,9 +219,9 @@ The following image shows the DNS file after the record deletion:
 ### Conclusion
 
 Migrating DNS is a crucial activity in every migration. Manual changes in DNS
-record sets are error prone and can lead to unavoidable outages. The AWS cli53
+record sets are error-prone and can lead to unavoidable outages. The AWS cli53
 utility makes it easy to migrate all DNS records to the target AWS environment
-by creating a plain text file which is both easy to understand and update.
+by creating a plain text file that is both easy to understand and update.
 
 Use the Feedback tab to make any comments or ask questions.
 
