@@ -51,7 +51,7 @@ To install cli53 on Linux&reg;, run the following commands:
 
 ##### Apple Mac
 
-To install cli53 on an Apple&reg; Mac, run the following command:
+To install cli53 on an Apple&reg; Mac&reg;, run the following command:
 
     $ brew install cli53
 
@@ -219,7 +219,7 @@ The following image shows the DNS file after the record deletion:
 ### Conclusion
 
 Migrating DNS is a crucial activity in every migration. Manual changes in DNS
-record sets are error-prone and can lead to unavoidable outages. The AWS cli53
+record sets are error-prone and can lead to unavoidable outages. The cli53
 utility makes it easy to migrate all DNS records to the target AWS environment
 by creating a plain text file that is both easy to understand and update.
 
