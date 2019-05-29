@@ -22,7 +22,7 @@ As a Microsoft&reg; Azure&reg; Expert Managed Service Provider, Rackspace is
 focused on delivering high-value services for customers who are actively running
 cloud-native applications and for customers who are interested in modernizing
 existing applications to take advantage of the performance, availability, and
-cost savings that can be realized by leveraging a container-based microservices
+cost savings that they can realize by leveraging a container-based microservices
 architecture.
 
 <!-- more -->
@@ -48,8 +48,8 @@ many customers prefer not to develop on their own.
 
 Our customers not only need assistance in setting up their AKS environment with
 the right performance, availability, and cost designs in mind, but they also
-need assistance to meet their specific security requirements. Our Fanatical
-Support for Azure offering helps our customers simplify the process to set
+need assistance to meet their specific security requirements. Our **Fanatical
+Support for Azure** offering helps our customers simplify the process to set
 network policies and provide Azure role-based access and security management
 capabilities that are needed to securely reach the compliance and regulatory
 controls within their AKS environments.
@@ -57,57 +57,57 @@ controls within their AKS environments.
 Rackspace’s deep partnership with Microsoft enables us to consider the features
 and capabilities customers are looking for as they adopt containers within
 Rackspace managed environments and start moving more production workloads to
-Azure. Rackspace consistently delivers new sets of capabilities and provide
+Azure. Rackspace consistently delivers new sets of capabilities and provides
 customers with the management services for the solutions that they require.
 
-### Rackspace's AKS offerings
+### Rackspace's AKS offering
 
-Some highlights of the Rackspace AKS solution capabilities include the
+Some highlights of the Rackspace AKS offering capabilities include the
 following services and solutions:
 
--	Architectural design and infrastructure deployment of Azure and AKS services
+-	Architectural design and infrastructure deployment of Azure and AKS services.
    -	Design solutions to meet your developer and application requirements with
    a team of dedicated Azure and Kubernetes experts to ensure optimal workload
    productivity, placement, size for nodes and node pools, network
    infrastructure, and security to Azure and the AKS resources.
--	High availability and auto-repair recovery solutions
+-	High availability and auto-repair recovery solutions.
    -	Maximize uptime and availability for your workloads, including use of
    region pairs, multiple clusters with Azure Traffic Manager, and
    geo-replication of container images.
    -	Proactively support self-healing clusters and the auto-repair of nodes
    and node pools as part of the recovery solution.
--	Multi-cluster management
+-	Multi-cluster management.
    -	Include multi-tenancy core components and physical and logical isolation
    with namespaces for development workloads and production workloads, as well
    as a multi-team approach to microservices architecture.
--	Monitoring, Alerting and Operations Management
+-	Monitoring, Alerting and Operations Management.
    -	Design solutions to monitor the performance of container workloads
    deployed to AKS, providing performance visibility by collecting memory and
    processor metrics from controllers, nodes, and containers.
    - Understand the behavior of the cluster under average and heaviest loads.
    - Provide knowledge to identify capacity needs and determine the maximum
    load that the cluster can sustain.
--	Zero downtime cluster upgrades
-   -	Include orchestration for both the Kubernetes master and agent components
+-	Zero downtime cluster upgrades.
+    - Include orchestration for both the Kubernetes master and agent components
    to safely cordon and drain each AKS node and perform the upgrade without
    interruption to existing services.
--	Role-based access control and single sign-on support with Azure Active Directory (AD)
+-	Role-based access control and single sign-on support with Azure Active Directory (AD).
    -	Include integration with AD by using role-based access controls (RBAC) and
    pod identities.
--	Application Modernization for containers
+-	Application Modernization for containers.
    -	Offer professional services capabilities to help transform your legacy
    application into a microservices architecture to take full advantages of the
    AKS platform.
--	Application Lifecycle Management
+-	Application Lifecycle Management.
    -	Provide professional service capabilities to help manage the applications
-   lifecycle of 3rd-party applications, such as Grafana, Prometheus, Istio, and
+   lifecycle of third-party applications, such as Grafana&reg;, Prometheus&reg;, Istio&reg;, and
    so on.
-•	Comprehensive security solutions for container images and infrastructure
+-	Comprehensive security solutions for container images and infrastructure.
    -	Secure the image and runtimes by using trusted registries and automated
    builds on base image updates.
    - Secure access to resources, limiting credential exposure and using pod
    identities and digital key vaults.
--	Rackspace Fanatical Experience with 24x7x365 support services to always be
+-	Rackspace Fanatical Experience&trade; with 24x7x365 support services to always be
    there when you need us.
 
 Use the Feedback tab to make any comments or ask questions.
