@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Migrate AWS DNS records by using cli35"
-date: 2019-05-22 00:01
+date: 2019-05-29 00:01
 comments: true
 author: Naveen Gupta
 published: true
