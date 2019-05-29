@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Migrate AWS DNS records by using cli35"
-date: 2019-05-22 00:01
+date: 2019-05-29 00:01
 comments: true
 author: Naveen Gupta
 published: true
@@ -26,7 +26,7 @@ the process of migrating all Route 53 DNS records from the source to the target.
 
 ### Overview
 
-This post explains the following steps to migrate DNS records by using cli53:
+Use the following steps to migrate DNS records by using cli53:
 
 1. Download and install cli53 from GitHub.
 2. Create an identity and access management (IAM) user in both the AWS source and
