@@ -115,9 +115,9 @@ The snapshot from midnight shows good performance, and the one from 7:32 AM show
 poor performance. Note the following indications of poor performance in the
 second snapshot:
 
-- Several disks are 100% busy, as seen in the **%util** column.
-- The **r/s** column shows a very high number of reads per second.
-- The **avg-cpu %idle** statistic shows the system is 0% idle versus 92% idle
+- Several disks are 100% busy, as seen in the `%util` column.
+- The `r/s` column shows a very high number of reads per second.
+- The `avg-cpu %idle` statistic shows the system is 0% idle versus 92% idle
   in the earlier snapshot.
 
 ### Read the mpstat log output
@@ -135,9 +135,9 @@ The `mpstat` log file includes the following data:
 - `%user`: The percent of the CPUs used by USER programs
 - `%sys`: The percent of the CPUs used by system programs
 - `%iowait`: The percent of the CPUs consumed by IO waits
-- `*%idle`: The percent of idle system resources
+- `%idle`: The percent of idle system resources
 
-Following are two examples of **mpstat** logs taken one hour apart:
+Following are two examples of `mpstat` logs taken one hour apart:
 
 At a slow time:
 
@@ -191,7 +191,7 @@ The snapshot from 06:13 shows good performance, and the one from 7:32 AM shows
 poor performance. Note the following indications of poor performance in the
 second snapshot:
 
-- The `*%sys` column shows peak utilization of 97.17.
+- The `%sys` column shows peak utilization of 97.17.
 - The `%iowait` column shows a peak utilization of 78.20.
 
 ### Read top output
