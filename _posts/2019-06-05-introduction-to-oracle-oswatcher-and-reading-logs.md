@@ -10,22 +10,22 @@ categories:
     - Oracle
     - Database
 metaTitle: "Introduction to Oracle OSWatcher and reading logs"
-metaDescription: "Oracle&reg; OSWatcher is a utility that automatically looks for OS issues and helps to determine the root cause of the issues."
+metaDescription: "Oracle&reg; OSWatcher is a utility that automatically looks for operating system issues and helps to determine their root causes."
 ogTitle: "Introduction to Oracle OSWatcher and reading logs"
-ogDescription: "Oracle&reg; OSWatcher is a utility that automatically looks for OS issues and helps to determine the root cause of the issues."
+ogDescription: "Oracle&reg; OSWatcher is a utility that automatically looks for operating system issues and helps to determine their root causes."
 ---
 
-Oracle&reg; OSWatcher, a utility that collects data from commands such as
-`vmstat`, `iostat`, `top`, `ps`, `netstat`, HP-UX&Reg `sar`, and Linux&reg;
-`meminfo`, archives the data files, automatically looks for issues, and helps
+Oracle&reg; OSWatcher is a utility that collects data from commands such as
+`vmstat`, `iostat`, `top`, `ps`, `netstat`, HP-UX&reg; `sar`, and Linux&reg;
+`meminfo`. OSWatcher archives the data files, automatically looks for issues, and helps
 to determine the root cause of the issues, if possible.
 
 <!-- more -->
 
 ### Introduction
 
-OSWatcher collects operating system (OS) statistics in the background, on an
-hourly basis, by using the following OS commands:
+On an hourly basis, OSWatcher collects operating system (OS) statistics in the background
+by using the following OS commands:
 
 - CPU
 - Memory
@@ -33,8 +33,8 @@ hourly basis, by using the following OS commands:
 
 OSWatcher writes the files to **$TFA_HOME/repository/suptools/walhall/oswbb/oracle/archive/**.
 
-Because there is no automatic housekeeping, you should create a cronjob to
-automatically delete older than some number of days to clean up the OS
+Because no automatic housekeeping exists, you should create a cron job to
+automatically delete files older than some number of days to clean up the OS
 statistics. For example, your cleanup cron job might run the following command
 to remove files older than 10 days:
 
@@ -46,26 +46,26 @@ If `iostat` is installed and the OSWatcher user has privileges to run the utilit
 the OSWatcher logs collect and archive output on an hourly basis, by default,
 from the `iostat` command.
 
-`iostat`, used for monitoring system input and output device load, collects the
+`iostat`, which is used for monitoring system input and output device load, collects the
 following information:
 
--	The time.
--	The physical disks and their average data transfer rate.
+-	The time
+-	The physical disks and their average data transfer rate
 
 #### Output examples
 
-The **oswiostat** log file includes the following data:
+The `oswiostat` log file includes the following data:
 
-**device:** Device name.
-**r/s:** Reads per second.
-**w/s:** Writes per second.
-**rsec/s:** Kilobytes read per second.
-**wsec/s:** Kilobytes written per second.
-**avgrq-sz:** Average number of transactions waiting for service.
-**avgqu-sz:** Average number of transactions actively being serviced.
-**%util:** Percent of time that the disk is busy.
+`device`: Device name
+`r/s`: Reads per second
+`w/s`: Writes per second
+`rsec/s`: Kilobytes read per second
+`wsec/s`: Kilobytes written per second
+`avgrq-sz`: Average number of transactions waiting for service
+`avgqu-sz`: Average number of transactions actively being serviced
+`%util`: Percent of time that the disk is busy
 
-Following are two examples of **oswiostat** logs taken seven hours apart:
+Following are two examples of `oswiostat` logs, which were taken seven hours apart:
 
 At a slow time:
 
@@ -111,11 +111,11 @@ At a busy time:
 
 *Images Source*: [http://www.dbas-oracle.com/2013/05/How-to-Analyze-or-Read-OS-Watcher-Output-in-three-easy-steps-With-Example.html](http://www.dbas-oracle.com/2013/05/How-to-Analyze-or-Read-OS-Watcher-Output-in-three-easy-steps-With-Example.html)
 
-The snapshot from midnight shows good performance and the one from 7:32 AM shows
+The snapshot from midnight shows good performance, and the one from 7:32 AM shows
 poor performance. Note the following indications of poor performance in the
 second snapshot:
 
-- Several disks  are 100% busy, as seen in the **%util** column.
+- Several disks are 100% busy, as seen in the **%util** column.
 - The **r/s** column shows a very high number of reads per second.
 - The **avg-cpu %idle** statistic shows the system is 0% idle versus 92% idle
   in the earlier snapshot.
@@ -124,18 +124,18 @@ second snapshot:
 
 If `mpstat` is installed and the OSWatcher user has privileges to run the utility,
 the OSWatcher logs collect and archive output on an hourly basis, by default,
-from the `mpstat` command. This command is used by database administrators to
-monitor the cpu utilization.
+from the `mpstat` command. Database administrators use this command to
+monitor the central processing unit (CPU) utilization.
 
 #### Output examples
 
-The **mpstat** log file includes the following data:
+The `mpstat` log file includes the following data:
 
-**CPU:**  Which CPUs. "all" includes stats from all available CPUs in the system.
-**%user:** The percent of the CPUs used by USER programs.
-**%sys:**   The percent of the CPUs used by system programs.
-**%iowait:** The percent of the CPUs consumed by IO waits.
-**%idle:**   The percent of system resources that are idle.
+`CPU`: Which CPUs. `all` includes stats from all available CPUs in the system.
+`%user`: The percent of the CPUs used by USER programs
+`%sys`: The percent of the CPUs used by system programs
+`%iowait`: The percent of the CPUs consumed by IO waits
+`*%idle`: The percent of idle system resources
 
 Following are two examples of **mpstat** logs taken one hour apart:
 
@@ -187,16 +187,16 @@ At a busy time:
     07:25:50     all    9.71    0.00   23.99   66.24    0.00    0.05    0.00    0.00  33617.64
     07:25:56     all    7.80    0.00   85.97    6.13    0.00    0.10    0.00    0.00  41234.83
 
-The snapshot from 06:13 shows good performance and the one from 7:32 AM shows
+The snapshot from 06:13 shows good performance, and the one from 7:32 AM shows
 poor performance. Note the following indications of poor performance in the
 second snapshot:
 
-- The **%sys** column shows peak utilization of 97.17.
-- The **%iowait** column shows a peak utilization of 78.20.
+- The `*%sys` column shows peak utilization of 97.17.
+- The `%iowait` column shows a peak utilization of 78.20.
 
 ### Read top output
 
-The `top` command provides an hourly an hourly snapshot of processor activity.
+The `top` command provides an hourly snapshot of processor activity.
 The log shows processes listed in the descending order of CPU utilization so
 that the process using the most CPU is listed first.
 
@@ -268,11 +268,10 @@ might indicate a problem. For example, the preceding log indicates a busy time
 compared to a log from seven minutes later, based on the load average numbers:
 `top - 04:20:53 up 22 days, 21:19, 10 users,  load average: 2.93, 43.22, 75.56`
 
-Line `Tasks: 2297 total,   4 running, 2229 sleeping,   0 stopped,  64 zombie`
-
+Line `Tasks: 2297 total,   4 running, 2229 sleeping,   0 stopped,  64 zombie`:
 At the time of this snapshot, there were 2297 processes, 2229 were sleeping,
-that is blocked by I/O or a system call, and four of which were
-running, or assigned to a CPU.  The number of running processes can never exceed
+that is blocked by I/O or a system call, and 4 were
+running or assigned to a CPU.  The number of running processes can never exceed
 the number of CPUs. An additional 64 processes are zombies, that is they are dead,
 but the system hasn't completely cleaned them up. The number of processes varies,
 but if the number suddenly increases or decreases, that might indicate a problem.
@@ -281,11 +280,10 @@ Line `Mem:  99060540k total, 91969324k used,  7091216k free,    84044k buffers`
 shows how much random access memory (RAM) in kilobytes is in use and is free.
 Pay attention to how this changes over time so you can identify problems.
 
-Line `Swap: 25165816k total, 17797404k used,  7368412k free,   609612k cached`
-
+Line `Swap: 25165816k total, 17797404k used,  7368412k free,   609612k cached`:
 If RAM is exhausted, the system switches to swap memory. When swap memory use is
-consistently more than about 40 % of RAM, you should consider increasing RAM.
-High swap usage negatively affects performance. If it reaches 100%, the sytem
+consistently more than about 40% of RAM, you should consider increasing RAM.
+High swap usage negatively affects performance. If it reaches 100%, the system
 might reboot.
 
 The following CPU lines show the number and utilization of the 12 CPUs in this
@@ -311,29 +309,29 @@ the snapshot:
 
 The processes section contains the following information:
 
-**PID:** The OS process ID of the process.
-**USER:** The owner of the process.
-**%CPU:** What percent of the CPU is used by the process.
-**%MEM:** The percentage of memory consumption.
-**COMMAND:** The executing command..
+`PID`: The OS process ID of the process
+`USER`: The owner of the process
+`%CPU`: What percent of the CPU is used by the process
+`%MEM`: The percentage of memory consumption
+`COMMAND`: The executing command
 
 ### Conclusion
 
 By using OSWatcher, you can keep an eye on system performance and identify
-possible problems.  For example, check to see if a process is heavily using a
+possible problems. For example, check to see if a process is heavily using a
 CPU for a consistent amount of time. If an SQL command has a high load, then
-this could be a candidate for tuning. If a process is using a lot of memory,
+this might be a candidate for tuning. If a process is using a lot of memory,
 then you might investigate whether this is normal.
 
-There are other stats available in OS Watcher to consider, after looking at CPU,
-memory and disk I/O) such as system load. If you identify a load increase on the
+There are other stats available in OSWatcher to consider, after looking at CPU,
+memory, and disk I/O (such as system load). If you identify a load increase on the
 system by using OSWatcher analysis, half the battle is won.
 
 Use the Feedback tab to make any comments or ask questions.
 
 ### Reference source:
 
-[http://www.dbas-oracle.com/2013/05/How-to-Analyze-or-Read-OS-Watcher-Output-in-three-easy-steps-With-Example.html](http://www.dbas-oracle.com/2013/05/How-to-Analyze-or-Read-OS-Watcher-Output-in-three-easy-steps-With-Example.html)
+[How to Analyze or Read OSWatcher Output in Three Easy Steps with Example](http://www.dbas-oracle.com/2013/05/How-to-Analyze-or-Read-OS-Watcher-Output-in-three-easy-steps-With-Example.html)
 
 ### Optimize your environment with expert administration, management, and configuration
 
