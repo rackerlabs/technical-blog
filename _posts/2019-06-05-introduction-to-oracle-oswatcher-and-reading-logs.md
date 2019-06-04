@@ -56,14 +56,14 @@ following information:
 
 The `oswiostat` log file includes the following data:
 
-`device`: Device name
-`r/s`: Reads per second
-`w/s`: Writes per second
-`rsec/s`: Kilobytes read per second
-`wsec/s`: Kilobytes written per second
-`avgrq-sz`: Average number of transactions waiting for service
-`avgqu-sz`: Average number of transactions actively being serviced
-`%util`: Percent of time that the disk is busy
+- `device`: Device name
+- `r/s`: Reads per second
+- `w/s`: Writes per second
+- `rsec/s`: Kilobytes read per second
+- `wsec/s`: Kilobytes written per second
+- `avgrq-sz`: Average number of transactions waiting for service
+- `avgqu-sz`: Average number of transactions actively being serviced
+- `%util`: Percent of time that the disk is busy
 
 Following are two examples of `oswiostat` logs, which were taken seven hours apart:
 
@@ -131,11 +131,11 @@ monitor the central processing unit (CPU) utilization.
 
 The `mpstat` log file includes the following data:
 
-`CPU`: Which CPUs. `all` includes stats from all available CPUs in the system.
-`%user`: The percent of the CPUs used by USER programs
-`%sys`: The percent of the CPUs used by system programs
-`%iowait`: The percent of the CPUs consumed by IO waits
-`*%idle`: The percent of idle system resources
+- `CPU`: Which CPUs. `all` includes stats from all available CPUs in the system.
+- `%user`: The percent of the CPUs used by USER programs
+- `%sys`: The percent of the CPUs used by system programs
+- `%iowait`: The percent of the CPUs consumed by IO waits
+- `*%idle`: The percent of idle system resources
 
 Following are two examples of **mpstat** logs taken one hour apart:
 
@@ -309,11 +309,11 @@ the snapshot:
 
 The processes section contains the following information:
 
-`PID`: The OS process ID of the process
-`USER`: The owner of the process
-`%CPU`: What percent of the CPU is used by the process
-`%MEM`: The percentage of memory consumption
-`COMMAND`: The executing command
+- `PID`: The OS process ID of the process
+- `USER`: The owner of the process
+- `%CPU`: What percent of the CPU is used by the process
+- `%MEM`: The percentage of memory consumption
+- `COMMAND`: The executing command
 
 ### Conclusion
 
