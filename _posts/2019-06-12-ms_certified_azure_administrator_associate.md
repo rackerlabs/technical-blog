@@ -16,6 +16,11 @@ ogTitle: "Microsoft Certified Azure Administrator Associate"
 ogDescription: "Brief overview of the AZ-102 exam"
 ogImage: "https://657cea1304d5d92ee105-33ee89321dddef28209b83f19f06774f.ssl.cf1.rackcdn.com/ms_party.gif-a52063dfec8f18b14d61f577c46e62ff35da3317f5264eaba5621880d28ad519.gif"
 ---
+
+My thoughts on the AZ-102 exam!
+
+<!-- more -->
+
 Some time ago I passed the AZ-102 exam and became a certified Azure Administrator Associate(and well I guess that makes me MC Triple A). 
 
 This new certification more or less supersedes the earlier MCSA Cloud Platform certification. It also shows that Microsoft is transitioning to a certification structure similar to that of AWS, GCP and Alibaba, based on an associate and professional certification level. 
@@ -57,3 +62,28 @@ One important aspect to consider if you are relatively new to Azure but have exp
 And of course my thanks go out to my employer Rackspace for enabling and encouraging my colleagues and myself to get certified. And write about it. 
 
 This post was previously published at my private [blog](https://blog.thirdpartytools.net).
+
+<table>
+  <tr>If you liked this blog, share it by using the following icons:</tr>
+  <tr>
+   <td>
+       <img src="{% asset_path line-tile.png %}" width=50 >
+    </td>
+    <td>
+      <a href="https://twitter.com/home?status=https%3A//developer.rackspace.com/blog/applications-monitoring-creating-a-smoother-financial-close/">
+        <img src="{% asset_path shareT.png %}">
+      </a>
+    </td>
+    <td>
+       <img src="{% asset_path line-tile.png %}" width=50 >
+    </td>
+    <td>
+       <img src="{% asset_path line-tile.png %}" width=50 >
+    </td>
+    <td>
+      <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//developer.rackspace.com/blog/applications-monitoring-creating-a-smoother-financial-close&summary=&source=">
+        <img src="{% asset_path shareL.png %}">
+      </a>
+    </td>
+  </tr>
+</table>
