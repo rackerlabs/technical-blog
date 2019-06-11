@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Row-level security in SQL Server 2016"
+title: "Row-Level Security in SQL Server 2016"
 date: 2019-06-05 00:01
 comments: true
 author: Vishal Srivastava
