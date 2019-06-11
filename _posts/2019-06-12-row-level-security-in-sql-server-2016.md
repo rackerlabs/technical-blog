@@ -15,11 +15,11 @@ ogTitle: "Row-level security in SQL Server 2016"
 ogDescription: "."
 ---
 
-Microsoft&reg; has focused on security in SQL Server, and almost all releases
+Microsoft&reg; has focused on security in SQL Server&reg;, and almost all releases
 either have an enhancement to existing features or have introduced new security
 features. In SQL Server 2016, Microsoft introduced many new security features
-that help users protect their data including *Row Level Security*, *Always
-Encrypted*, and *Dynamic Data Masking*.
+that help users protect their data, including Row-Level Security, Always
+Encrypted, and Dynamic Data Masking.
 
 <!-- more -->
 
@@ -27,7 +27,7 @@ Encrypted*, and *Dynamic Data Masking*.
 
 In my previous blog, I wrote about
 [Dynamic data masking in SQL Server 2016](https://developer.rackspace.com/blog/dynamic-data-masking-in-sql-server-2016/).
-In this blog, I introduce the row-level security (RLS) feature, which enables
+In this blog, I introduce the Row-Level Security (RLS) feature, which enables
 you to control which users have access to rows in a table. RLS enables you to
 implement restrictions on the data based on the characteristics of the user who
 is executing a query. RLS helps you to control access to data easily with
@@ -37,8 +37,8 @@ complete transparency for different users.
 
 There are times when we need to return only selective data to selective users.
 In the past, we did that by creating views and granting user select permission
-on those views. However, that approach became unmanageable with number of views
-required to accomodate the growing volume of data and number of users. So
+on those views. However, that approach became unmanageable with the number of views
+required to accommodate the growing volume of data and number of users. So
 Microsoft introduced RLS to meet the security requirement in the new circumstances.
 
 RLS enables fine-grained control over access to rows in a table, enabling you
@@ -68,16 +68,16 @@ RLS has the following properties:
 
 To implement the RLS, you need to consider the following elements:
 
-1.	Predicate Function
-2.	Security Predicates
-3.	Security Policy
+-  Predicate function
+-  Security predicates
+-  Security policy
 
-These items are described in the following sections.
+The following sections describe these items.
 
 #### Predicate function
 
 A predicate function is an in-line table value function that checks whether a
-user executing a query has the access to data based on logic defined on it. This
+user executing a query has access to data based on logic defined on it. This
 function returns `1` for each row that a user is permitted to access.
 
 #### Security predicates
@@ -102,7 +102,7 @@ the following operations on data that violates the predicate function logic:
 
 #### Security policy
 
-A security policy object gets created for RLDS grouping all the security
+A security policy object gets created for RLS grouping all the security
 predicates that referenced the predicate function.
 
 ### Use cases
@@ -122,7 +122,7 @@ Here are some design examples of how RLS can be used:
 
 Following is an example of how to implement RLS:
 
-Step 1: Run the following code to create a database “RowFilter” and two users
+Step 1: Run the following code to create a database `RowFilter` and two users
 to test with:
 
     CREATE DATABASE RowFilter;
@@ -134,7 +134,7 @@ to test with:
     GO
 
 Step 2: Run the following code to create a table with examples and grant the
-select privilege to the new users:
+SELECT privilege to the new users:
 
     CREATE TABLE dbo.SalesFigures (
     [userCode] NVARCHAR(10),
@@ -166,15 +166,15 @@ Step 4: Run the following code to add a filter predicate to the table
     WITH (STATE = ON);
     GO
 
-Step 5: Run the following code to test the results with the users previously
-added:
+Step 5: Run the following code to test the results with a user that was added
+in Step 2:
 
     EXECUTE AS USER = 'userBrian';
     SELECT * FROM dbo.SalesFigures;
     REVERT;
     GO
 
-This returns two rows as shown below:
+This code returns two rows, as shown below:
 
 ![]({% asset_path 2019-06-12-row-level-security-in-sql-server-2016/Picture2.png %})
 
@@ -183,7 +183,7 @@ This returns two rows as shown below:
     REVERT;
     GO
 
-This returns one row as shown below:
+This code returns one row, as shown below:
 
 ![]({% asset_path 2019-06-12-row-level-security-in-sql-server-2016/Picture3.png %})
 
@@ -195,17 +195,17 @@ SECURITY POLICY** permission.
 Creating or dropping a security policy requires the **ALTER** permission on the
 schema.
 
-Additionally, the following permissions are required for each predicate that is
+Additionally, each predicate requires the following permissions, which are
 added:
 
--	The **SELECT** and **REFERENCES** permissions on the function being used as
+-	The **SELECT** and **REFERENCES** permissions on the function that is used as
    a predicate.
--	The **REFERENCES** permission on the target table being bound to the policy.
+-	The **REFERENCES** permission on the target table that is bound to the policy.
 -	The **REFERENCES** permission on every column from the target table used as
 arguments.
 
 Security policies apply to all users, including database owner (DBO) users in
-the database. DBO users can alter or drop security policies, however their
+the database. DBO users can alter or drop security policies. However, their
 changes to security policies can be audited. In the case of high-privileged
 users such as `sysadmin` or `db_owner`, you need to see all rows to troubleshoot
 or validate data, so you must write the security policy to allow that.
@@ -221,7 +221,7 @@ target table.
 
 Perform the following action to disable SQL Server RLS for a policy:
 
--	Alter security policy **UseFilter** with `State = off`'
+-	Alter security policy **UseFilter** with `State = off`.
 
 Perform the following actions to drop the filter and security policy:
 
@@ -239,7 +239,7 @@ users (such as a security policy manager). The security policy manager does not
 require **SELECT** permission on the tables they protect.
 -	Avoid type conversions in predicate functions to avoid potential runtime errors.
 -	Avoid recursion in predicate functions wherever possible to avoid performance
-degradation. The query optimizer tries to detect direct recursions, however, is
+degradation. The query optimizer tries to detect direct recursions. However, it is
 not guaranteed to find indirect recursions (such as when a second function calls
 the predicate function).
 -	Avoid using excessive table joins in predicate functions to maximize performance.
@@ -248,9 +248,9 @@ the predicate function).
 
 Following are a few limitations that apply to RLS:
 
--	The predicate function must be created with with `SCHEMABINDING`. If a
-function is created without `SCHEMABINDING` and you try to bind it to a security
-policy, it will throw an error.
+-	The predicate function must be created with `SCHEMABINDING`. If a
+function is created without `SCHEMABINDING`, and you try to bind it to a security
+policy, it throws an error.
 -	Indexed views cannot be created on a table on which RLS is implemented.
 -	In-memory tables are not supported for RLS.
 -	Full-text indexes are not supported.
@@ -260,7 +260,7 @@ policy, it will throw an error.
 With the RLS feature in SQL Server 2016, you can provide security for records
 at the database level without making changes at the application level. You can
 implement RLS by using a predicate function and the new security policy feature
-alongside your existing code, without needing to change the various Data
+alongside your existing code, without needing to change the Data
 Manipulation Language (DML) code in your database.
 
 
