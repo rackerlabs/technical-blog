@@ -10,12 +10,12 @@ categories:
     - Oracle
     - Database
 metaTitle: "MySQL database compatibility levels"
-metaDescription: "Database compatibility level, one of the Database level settings, impacts how a database functions."
+metaDescription: "Database compatibility level, one of the database level settings, impacts how a database functions."
 ogTitle: "MySQL database compatibility levels"
-ogDescription: "Database compatibility level, one of the Database level settings, impacts how a database functions."
+ogDescription: "Database compatibility level, one of the database level settings, impacts how a database functions."
 ---
 
-Database compatibility level, one of the Database level settings, impacts how a
+Database compatibility level, one of the database level settings, impacts how a
 database functions. Each new version of Microsoft&reg; SQL Server&reg; introduces
 many new features, most of which require new keywords and change certain
 behaviors that existed in earlier versions. To provide maximum backward
@@ -34,33 +34,33 @@ level of a SQL Server 2012 database defaults to 110 unless you change it.
 
 When you restore a database backup taken on an older version of SQL, the
 database compatibility level remains the same as it was on the instance from
-which you took the back up, unless the source compatibility level is lower than
-the minimum supported level. In that case, the database compatibility level is
-changed to the lowest supported version. For example, if we restore a SQL Server
-2005 database backup to SQL Server 2017 then compatibility level of the restored
-database would be set to 100 because that is what minimum SQL 2017 level
+which you took the backup, unless the source compatibility level is lower than
+the minimum supported level. In that case, the database compatibility level
+changes to the lowest supported version. For example, if we restore a SQL Server
+2005 database backup to SQL Server 2017, then the compatibility level of the restored
+database would be set to 100 because that is the minimum SQL 2017 level
 supported.
 
 ### Compatibility levels after an upgrade
 
 The compatibility levels of the tempdb, model, msdb, and resource databases are
 set to the current compatibility level after an upgrade. The master system
-database retains the compatibility level it had before upgrade.
+database retains the compatibility level it had before the upgrade.
 
 ### Determine the compatibility level
 
 To determine the current compatibility level, query the **compatibility_level**
 column of **sys.databases**.
 
-To change to a different compatibility level, use the ALTER DATABASE command as
+To change to a different compatibility level, use the `ALTER DATABASE` command as
 shown in the following example:
 
     Use Master
     Go
     ALTER DATABASE <database name>SET COMPATIBILITY_LEVEL = <compatibility-level>;
 
-If you prefer, you can use the wizard to change the compatibility level, however,
-if the database is online accessed by users, you should change the database to
+If you prefer, you can use the wizard to change the compatibility level. However,
+if the database is accessed online by users, you should change the database to
 single-user mode first.  Then, after you use the wizard to change the level, you
 should put the database in multi-user mode.
 
@@ -72,7 +72,7 @@ To change compatibility level with the wizard, right-click **database –> prope
 ### Default and supported compatibility levels
 
 The following table shows SQL Server versions with their default compatibility
-and a list of supported compatibility levels.
+and a list of supported compatibility levels:
 
 ![]({% asset_path 2019-06-19-Microsoft-SQL-Server-database-compatibility-levels/Picture2.png %})
 
@@ -89,7 +89,7 @@ features were disabled. It was also used to control backward compatibility.
 Now, when you migrate from one version to another, you should do a full
 regression test to understand the change in performance. Sometimes, a query
 performs better with the old compatibility level even after migration. However,
-in other cases it could be the opposite, so make sure to do a full regression
+in other cases, it could be the opposite, so make sure to do a full regression
 testing.
 
 Since SQL Server 2014, any database running at compatibility level 120 or above
@@ -109,21 +109,21 @@ I plan to discuss more about cardinality estimation in my next blog post.
 
 Changing the compatibility level tells the database to change its feature set.
 That is, some features are added, and at the same time, some old features are
-removed. For example, the FOR BROWSE clause is not allowed in INSERT and SELECT
-INTO statements at compatibility level 100, and it is allowed but ignored at
+removed. For example, the `FOR BROWSE` clause is not allowed in `INSERT` and `SELECT
+INTO` statements at compatibility level 100, and it is allowed but ignored at
 compatibility level 90. If your application uses this feature, this change might
 introduce unexpected results.
 
 When you move a database from a lower to a higher compatibility level, you might
 expect that you are not able to use the new feature if compatibility is not
-changed, however, that is not fully correct. This is only true for database
-level feature. Instance level features can be used even if you don’t change the
+changed. However, that is not entirely correct. This is only true for the database
+level feature. You can use instance level features even if you don’t change the
 compatibility level.
 
 ### Conclusion
 
 Database compatibility level defines how SQL Server uses certain features.
-Specifically, it causes them to act like a given version of SQL Server. This is
+Specifically, it causes them to act like a given version of SQL Server, which is
 typically done to provide some level of backward compatibility. Because this is
 a database property, the compatibility affects only database level features for
 that specific database.
