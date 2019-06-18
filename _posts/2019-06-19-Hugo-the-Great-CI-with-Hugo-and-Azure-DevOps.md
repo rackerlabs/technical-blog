@@ -130,3 +130,5 @@ And so after making sure an artifact was created and stored at every committed c
 There are still many areas for improvement - version tagging, automated spell check/mark down check, pure yaml pipelines and even extending my **CI** environment to cover my hosting infrastructure and checking in my pipelines into source control. But though any other production workload will most likely require more tasks and more extended deployment strategies for me this illustrates how easy it is to automate a publishing workflow and set up your own **CI** - especially when using **Azure DevOps** in combination with **Azure** infrastructure resources. 
 
 For those interested - a larger version of my [diagram]({% asset_path 2019-06-19-Hugo-the-Great-CI-with-Hugo-and-Azure-DevOps/ci_diagram.png %}).
+
+This post was previously published at my private [blog](https://blog.thirdpartytools.net).
