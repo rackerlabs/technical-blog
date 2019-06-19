@@ -1,6 +1,6 @@
 ---
 layout: post
-title = "Microsoft Certified Azure Administrator Associate"
+title: "Microsoft Certified Azure Administrator Associate"
 date: 2019-06-12 00:01
 comments: true
 author: Michiel Brinkman
