@@ -9,9 +9,9 @@ authorIsRacker: true
 categories:
     - Oracle
     - Database
-metaTitle: "MySQL database compatibility levels"
+metaTitle: "Microsoft SQL Server database compatibility levels"
 metaDescription: "Database compatibility level, one of the database level settings, impacts how a database functions."
-ogTitle: "MySQL database compatibility levels"
+ogTitle: "Microsoft SQL Server database compatibility levels"
 ogDescription: "Database compatibility level, one of the database level settings, impacts how a database functions."
 ---
 
@@ -30,7 +30,7 @@ By default, every database inherits the compatibility level of the model
 database version from which it was created. For example, the compatibility
 level of a SQL Server 2012 database defaults to 110 unless you change it.
 
-### Explicitly change the compatibility level of the model database
+### Compatibility levels after a restore
 
 When you restore a database backup taken on an older version of SQL, the
 database compatibility level remains the same as it was on the instance from
