@@ -7,7 +7,6 @@ author: Prabhat Kumar Bharti
 published: true
 authorIsRacker: true
 categories:
-    - Oracle
     - Database
 metaTitle: "Microsoft SQL Server database compatibility levels"
 metaDescription: "Database compatibility level, one of the database level settings, impacts how a database functions."
