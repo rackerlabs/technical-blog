@@ -9,9 +9,9 @@ authorIsRacker: true
 categories:
     - Oracle
     - Database
-metaTitle: "MySQL database compatibility levels"
+metaTitle: "Microsoft SQL Server database compatibility levels"
 metaDescription: "Database compatibility level, one of the database level settings, impacts how a database functions."
-ogTitle: "MySQL database compatibility levels"
+ogTitle: "Microsoft SQL Server database compatibility levels"
 ogDescription: "Database compatibility level, one of the database level settings, impacts how a database functions."
 ---
 
