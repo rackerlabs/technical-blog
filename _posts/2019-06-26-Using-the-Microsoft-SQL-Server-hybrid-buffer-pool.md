@@ -10,9 +10,9 @@ categories:
     - Oracle
     - Database
 metaTitle: "Using the Microsoft SQL Server hybrid buffer pool"
-metaDescription: "Microsoft&reg; introduced a new feature called a hybrid buffer pool in SQL Server 2019 (Preview) CTP 2.1."
+metaDescription: "Microsoft&reg; introduced a new feature called a hybrid buffer pool in SQL Server&reg; 2019 (Preview) CTP 2.1."
 ogTitle: "Using the Microsoft SQL Server hybrid buffer pool"
-ogDescription: "Microsoft&reg; introduced a new feature called a hybrid buffer pool in SQL Server 2019 (Preview) CTP 2.1."
+ogDescription: "Microsoft&reg; introduced a new feature called a hybrid buffer pool in SQL Server&reg; 2019 (Preview) CTP 2.1."
 ---
 
 Microsoft&reg; introduced a new feature called hybrid buffer pool in SQL
@@ -33,17 +33,17 @@ The main benefits of PMEM include:
 -	It increases throughput more than flash storage.
 -	It is cheaper than Dynamic Random Access Memory (DRAM).
 -	It is cacheable. This is a huge advantage over Peripheral Component
-   Interconnect (PCIe), which cannot be cached in the central processing unit (CPU).
+   Interconnect (PCIe), which is not cacheable in the central processing unit (CPU).
 -	It retains data in memory after a power interruption or shut down.
 
 You can use PMEM in a variety of ways to lower latency for applications where
-you need faster data access with enormous amount of data such as Internet of
+you need faster data access with an enormous amount of data such as the Internet of
 Things (IoT) applications, cyber threat analysis, and financial trading among
 others.
 
 ### Concepts
 
-The following terms are applicable for the buffer pool extension feature.
+The following terms are applicable to the buffer pool extension feature:
 
 - **Solid-state drive (SSD)**: Stores data in memory (RAM) in a persistent manner.
 
@@ -80,16 +80,16 @@ The following image illustrates DAX:
 
 *Source*: [https://docs.microsoft.com/en-us/windows-server/storage/storage-spaces/deploy-pmem](https://docs.microsoft.com/en-us/windows-server/storage/storage-spaces/deploy-pmem)
 
-### What is hybrid buffer pool?
+### What is a hybrid buffer pool?
 
-In a traditional system, SQL Server caches data pages in the DRAM based buffer
+In a traditional system, SQL Server caches data pages in the DRAM-based buffer
 pool. With the hybrid buffer pool, SQL Server skips copying the page into the
-DRAM-based portion of the buffer pool, and instead references the page directly
+DRAM-based portion of the buffer pool and instead references the page directly
 on the database file that lives on a PMEM device. The system accesses data files
-in PMEM for hybrid buffer pool by using memory mapped I/O, which is also known
+in PMEM for a hybrid buffer pool by using memory mapped I/O, which is also known
 as the enlightenment of data files within SQL Server.
 
-This brings performance benefits by avoiding a copy of the page to DRAM and
+This process brings performance benefits by avoiding a copy of the page to DRAM and
 eliminating the need for the I/O stack of the operating system to access the
 page on persistent storage.
 
@@ -98,13 +98,13 @@ becomes dirty, the system copies it to the DRAM-based buffer pool and then
 writes it back to the PMEM device. This process happens during regular
 checkpoint operations.
 
-The hybrid buffer pool feature is available for both Windows and Linux. The
-PMEM device must be formatted with a filesystem that supports DAX.
+The hybrid buffer pool feature is available for both Windows&reg; and Linux&reg;. The
+PMEM device must be formatted with a filesystem that supports DirectAccess(DAX).
 DAX supports the following file systems:
 
-- XFS
+- Extended File System (XFS)
 - EXT4
-- NTFS
+- New Technology File System (NTFS)
 
 SQL Server automatically detects whether data files reside on an appropriately
 formatted PMEM device and performs memory mapping in user space. This mapping
@@ -113,43 +113,43 @@ when the hybrid buffer pool feature is enabled for a database.
 
 ### Enable hybrid buffer pool
 
-SQL Server 2019 introduces dynamic data language (DDL) to control hybrid buffer
-pool. The following example enables hybrid buffer pool for an instance of SQL
+SQL Server 2019 introduces dynamic data language (DDL) to control the hybrid buffer
+pool. The following example enables the hybrid buffer pool for an instance of SQL
 Server:
 
     ALTER SERVER CONFIGURATION SET MEMORY_OPTIMIZED HYBRID_BUFFER_POOL = ON;
 
-By default, hybrid buffer pool is set to disable at the instance scope.
+By default, the hybrid buffer pool is set to disable at the instance scope.
 
 **Note**: For the setting change to take effect, you must restart the SQL Server
 instance. The restart facilitates the allocation of enough hash pages to account
 for total PMEM capacity on the server.
 
-The following example enables hybrid buffer pool for a specific database.
+The following example enables the hybrid buffer pool for a specific database:
 
     ALTER DATABASE <databaseName> SET MEMORY_OPTIMIZED = ON;
 
-By default, hybrid buffer pool is set to enable at the database scope.
+By default, the hybrid buffer pool is set to enable at the database scope.
 
-### Disable hybrid buffer pool
+### Disable the hybrid buffer pool
 
-The following example disables hybrid buffer pool for an instance of SQL Server:
+The following example disables the hybrid buffer pool for an instance of SQL Server:
 
     ALTER SERVER CONFIGURATION SET MEMORY_OPTIMIZED HYBRID_BUFFER_POOL = OFF;
 
-By default, hybrid buffer pool is set to disable at the instance scope.
+By default, the hybrid buffer pool is set to disable at the instance scope.
 
 **Note**: For the setting changes to take effect, you must restart the SQL Server
-instance. The restart prevents the over allocation of hash pages because PMEM
+instance. The restart prevents the over-allocation of hash pages because PMEM
 capacity on the server does not need to be accounted for.
 
-The following example disables hybrid buffer pool for a specific database.
+The following example disables the hybrid buffer pool for a specific database:
 
     ALTER DATABASE <databaseName> SET MEMORY_OPTIMIZED = OFF;
 
-By default, hybrid buffer pool is set to enable at the database scope.
+By default, the hybrid buffer pool is set to enable at the database scope.
 
-### View hybrid buffer pool configuration
+### View the hybrid buffer pool configuration
 
 The following example returns the current status of the hybrid buffer pool
 system configuration for an instance of SQL Server:
@@ -162,26 +162,26 @@ The following example returns two tables:
 
     SELECT name, is_memory_optimized_enabled FROM sys.databases;
 
--	The first table shows the current status of hybrid buffer pool system
+-	The first table shows the current status of the hybrid buffer pool system
    configuration for an instance of SQL Server.
--	The second tables lists the databases and the database level setting for
-   hybrid buffer pool.
+-	The second table lists the databases and the database level setting for
+   the hybrid buffer pool.
 
-### Best practices for hybrid buffer pool
+### Best practices for the hybrid buffer pool
 
-We recommend that you don not enable hybrid buffer pool on instances with less
-than 16-GB of RAM.
+We recommend that you don not enable the hybrid buffer pool on instances with less
+than 16 GB of RAM.
 
 When formatting your PMEM device on Windows, use the largest allocation unit
-size available for NTFS (2 MB in Windows Server 2019) and ensure the device has
-been formatted for DAX (Direct Access). Files sizes should be a multiple of 2 MB
+size available for NTFS (2 MB in Windows Server&reg; 2019) and ensure the device has
+been formatted for DAX. Files sizes should be a multiple of 2 MB
 (modulo 2 MB should be equal to zero).
 
-If the server-scoped setting for hybrid buffer pool is set to disabled, hybrid
+If the server-scoped setting for the hybrid buffer pool is set to disabled, the hybrid
 buffer pool will not be used by any user database.
 
-If the server-scoped setting for hybrid buffer pool is enabled, you can disable
-hybrid buffer pool usage for individual user databases by disabling hybrid buffer
+If the server-scoped setting for the hybrid buffer pool is enabled, you can disable
+the hybrid buffer pool usage for individual user databases by disabling the hybrid buffer
 pool at the database-scoped level for those user databases.
 
 ### Conclusion
