@@ -193,7 +193,6 @@ need to access the page on persistent storage.
 
 Refer to the following documents for more information:
 
-[Understand and deploy persistent memory](https://docs.microsoft.com/en-us/windows-server/storage/storage-spaces/deploy-pmem)
 [Microsoft Describes Latest SQL Server 2019 Preview and Azure SQL Improvements](https://redmondmag.com/articles/2018/11/07/microsoft-describes-sql-improvements.aspx)
 [Hybrid Buffer Pool](https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/hybrid-buffer-pool?view=sql-server-2017&viewFallbackFrom=sql-server-2019)
 
