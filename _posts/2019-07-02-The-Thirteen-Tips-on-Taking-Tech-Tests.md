@@ -160,47 +160,47 @@ You can roughly divide the different training materials into the following categ
 
 Now not every category requires the same amount of time or cover the breadth or depths needed to pass exams. You also need to make an important distinction between the categories that further your knowledge of a product and those that just help you to pass the exam.  Following is a summary of each of the categories with my evaluations: 
 
-#### Category: Exam outlines
+##### Category: Exam outlines
       
-**Time**: Negligible.
-**What I think**: I check them before even booking an exam or test. And when exams are changing or are being redeveloped, I also try to find to blogs or sites that detail the exact differences.
-**Makes you smarter**: Not really. Well, if you don't understand most of the outline, you are probably not ready to sit the exam.
-**Makes you pass the exam**: Yes.
+- **Time**: Negligible.
+- **What I think**: I check them before even booking an exam or test. And when exams are changing or are being redeveloped, I also try to find to blogs or sites that detail the exact differences.
+- **Makes you smarter**: Not really. Well, if you don't understand most of the outline, you are probably not ready to sit the exam.
+- **Makes you pass the exam**: Yes.
 
-#### Category: Video courses
+##### Category: Video courses
 
-**Time**: A lot.
-**What I think**: I generally don't have the patience to sit through hours and hours of someone very slowly telling what I can also find out through other means. But some places, like Linux academy, combine their videos with labs and practice exams, which makes it a much better experience.
-**Makes you smarter**: Yeah. But very passively, and because a lot of courses are geared towards passing the exam, the applicability of the knowledge gained can be questioned.
-**Makes you pass the exam**: Yes.
+- **Time**: A lot.
+- **What I think**: I generally don't have the patience to sit through hours and hours of someone very slowly telling what I can also find out through other means. But some places, like Linux academy, combine their videos with labs and practice exams, which makes it a much better experience.
+- **Makes you smarter**: Yeah. But very passively, and because a lot of courses are geared towards passing the exam, the applicability of the knowledge gained can be questioned.
+- **Makes you pass the exam**: Yes.
 
-#### Category: Documentation
+##### Category: Documentation
 
-**Time**: Considerable.
-**What I think**: Might be boring or tedious, but, in my book, this is the best resource to use, especially combined with the exam and test outlines. I passed one or two Microsoft exams just by reading Technet.
-**Makes you smarter**: Most definitely.
-**Makes you pass the exam**: Yes, but it can be hard to focus on the right subject, and you run the risk of going down rabbit hole after rabbit hole of really interesting stuff.
+- **Time**: Considerable.
+- **What I think**: Might be boring or tedious, but, in my book, this is the best resource to use, especially combined with the exam and test outlines. I passed one or two Microsoft exams just by reading Technet.
+- **Makes you smarter**: Most definitely.
+- **Makes you pass the exam**: Yes, but it can be hard to focus on the right subject, and you run the risk of going down rabbit hole after rabbit hole of really interesting stuff.
 
-#### Category: Books
+##### Category: Books
 
-**Time**: A lot.
-**What I think**: There are books and there are books. As with the video courses, you have quite a few books which are like expanded exam outlines that take you through exactly what you need to know to pass the exam. But I try to stay away from those and get books to go a little deeper and talk about ideas and concepts first before proceeding to the implementation of those ideas into solutions within a specific technology.
-**Makes you smarter**: Most definitely.
-**Makes you pass the exam**: Yes, though at cost - time.
+- **Time**: A lot.
+- **What I think**: There are books and there are books. As with the video courses, you have quite a few books which are like expanded exam outlines that take you through exactly what you need to know to pass the exam. But I try to stay away from those and get books to go a little deeper and talk about ideas and concepts first before proceeding to the implementation of those ideas into solutions within a specific technology.
+- **Makes you smarter**: Most definitely.
+- **Makes you pass the exam**: Yes, though at cost - time.
 
-#### Category: Labs
+##### Category: Labs
 
-**Time**: Considerable.
-**What I think**: Though I've focused on question-based tests, we do see some occasional hand-on lab task as a part of tests as well. **AZ-302** was 40% lab-task based. I don't know if this is a trend, but if you do not have any hands-on experience (yes that sounds crazy - but many of us solution architects do not have that), it would really pay off to do some labs. Or do I what I do - build something with the new technoolgy that you've built before by using other tools - adapt your terraform plans or scripts to make them work on another cloud or even deploy some sort of quickstart application (wordpress, static html site anyone?). Even a "hello world" function would do. If you like gamification, check out things like **Qwiklabs** - they even do events where you can find Starbucks vouchers.
-**Makes you smarter**: Yes!
-**Makes you pass the exam**: Possibly. Depends on the exam and the labs. IaC stuff might not always be worth your time because they don't test on that too often (though getting your **JSON** on is always a good idea).
+- **Time**: Considerable.
+- **What I think**: Though I've focused on question-based tests, we do see some occasional hand-on lab task as a part of tests as well. **AZ-302** was 40% lab-task based. I don't know if this is a trend, but if you do not have any hands-on experience (yes that sounds crazy - but many of us solution architects do not have that), it would really pay off to do some labs. Or do I what I do - build something with the new technoolgy that you've built before by using other tools - adapt your terraform plans or scripts to make them work on another cloud or even deploy some sort of quickstart application (wordpress, static html site anyone?). Even a "hello world" function would do. If you like gamification, check out things like **Qwiklabs** - they even do events where you can find Starbucks vouchers.
+- **Makes you smarter**: Yes!
+- **Makes you pass the exam**: Possibly. Depends on the exam and the labs. IaC stuff might not always be worth your time because they don't test on that too often (though getting your **JSON** on is always a good idea).
 
-#### Category: Practise Exams
+##### Category: Practise Exams
 
-**Time**: A lot.
-**What I think**: **AWS** offers some great practice exams, and if you pass one real exam, you get a free voucher for a practice exam. They are really representative and sometimes even harder then actual tests. The Linux academy practice tests are also pretty decent, and I like that you can take them more then once.
-**Makes you smarter**: It makes you more aware of the possible choices and arguments in favour or against a solution in a very practical way.
-**Makes you pass the exam**: Yes, because it trains your multiple-choice skills and gives you some insights with regards possible exam questions.
+- **Time**: A lot.
+- **What I think**: **AWS** offers some great practice exams, and if you pass one real exam, you get a free voucher for a practice exam. They are really representative and sometimes even harder then actual tests. The Linux academy practice tests are also pretty decent, and I like that you can take them more then once.
+- **Makes you smarter**: It makes you more aware of the possible choices and arguments in favour or against a solution in a very practical way.
+- **Makes you pass the exam**: Yes, because it trains your multiple-choice skills and gives you some insights with regards possible exam questions.
 
 ### The other option
 
