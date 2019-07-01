@@ -160,14 +160,57 @@ You can roughly divide the different training materials into the following categ
 
 Now not every category requires the same amount of time or cover the breadth or depths needed to pass exams. You also need to make an important distinction between the categories that further your knowledge of a product and those that just help you to pass the exam: 
 
-| **Category** | **Time** | **What I think** | **Makes you smarter** | **Makes you pass the exam** |
-| -------------| -------- | ---------------- | --------------------- | --------------------------- |
-| *Exam outlines*  | Negible | I check them before even booking an exam or test. And when exam are changing or are being redeveloped, I also try to find to blogs or sites that detail the exact differences | Not really. Well, if you don't understand most of the outline, you are probably not ready to sit the exam. | Yes  |
-| *Video courses*  | A lot | I generally don't have the patience to sit through hours and hours of someone very slowly telling what I can also find out through other means. But some places, like Linux academy, combine their videos with labs and practice exams, which make it a much better experience. | Yeah. But very passively, and because a lot of courses are geared towards passing the exam, the applicability of the knowledge gained can be questioned. | Yes |
-| *Documentation*   | Considerable | Might be boring or tedious, but, in my book, this is the best resource to use, especially combined with the exam and test outlines. I passed one or two Microsoft exams just by reading Technet. | Most definitely. | Yes but it can be hard to focus on the right subject, and you run the risk of going down rabbit hole after rabbit hole of really interesting stuff.|
-| *Books* | A lot | There are books and there are books. As with the video courses, you have quite a few books which are like expanded exam outlines that take you through exactly what you need to know to pass the exam. But I try to stay away from those and get books to go a little deeper and talk about ideas and concepts first before proceeding to the implementation of those ideas into solutions within a specific technology. | Most definitely. | Yes, though at cost - time. |
-| *Labs* | Considerable | Though I've focused on question-based tests, we do see some occasional hand-on lab task as a part of tests as well. **AZ-302** was 40% lab-task based. I don't know if this is a trend, but if you do not have any hands-on experience (yes that sounds crazy - but many of us solution architects do not have that), it would really pay off to do some labs. Or do I what I do - build something with the new technoolgy that you've built before by using other tools - adapt your terraform plans or scripts to make them work on another cloud or even deploy some sort of quickstart application (wordpress, static html site anyone?). Even a "hello world" function would do. If you like gamification, check out things like **Qwiklabs** - they even do events where you can find Starbucks vouchers. | Yes! | Possibly. Will depend on the exam and the labs. IaC stuff might not always be worth your time because they don't test on that too often (though getting your **JSON** on is always a good idea). |
-| *Practice Exams* | A lot | **AWS** offers some great practice exams, and if you pass one real exam, you get a free voucher for a practice exam. They are really representative and sometimes even harder then actual tests. The Linux academy practice tests are also pretty decent, and I like that you can take them more then once. | It makes you more aware of the possible choices and arguments in favour or against a solution in a very practical way. | Yes, because it trains your multiple-choice skills and gives you some insights with regards possible exam questions. |
+<table class="tg">
+  <tr>
+    <th>Category</th>
+    <th>Time</th>
+    <th>What I think</th>
+    <th>Makes you smarter</th>
+    <th>Makes you pass the exam</th>
+  </tr>
+  <tr>
+      <td><b>Exam outlines</b></td>
+    <td>Negligible</td>
+    <td>I check them before even booking an exam or test. And when exams are changing or are being redeveloped, I also try to find to blogs or sites that detail the exact differences.</td>
+    <td>Not really. Well, if you don't understand most of the outline, you are probably not ready to sit the exam.</td>
+    <td>Yes</td>
+  </tr>
+  <tr>
+    <td><b>Video courses</b></td>
+    <td>A lot</td>
+    <td>I generally don't have the patience to sit through hours and hours of someone very slowly telling what I can also find out through other means. But some places, like Linux academy, combine their videos with labs and practice exams, which makes it a much better experience.</td>
+    <td>Yeah. But very passively, and because a lot of courses are geared towards passing the exam, the applicability of the knowledge gained can be questioned.</td>
+    <td>Yes</td>
+  </tr>
+  <tr>
+    <td><b>Documentation</b></td>
+    <td>Considerable</td>
+    <td>Might be boring or tedious, but, in my book, this is the best resource to use, especially combined with the exam and test outlines. I passed one or two Microsoft exams just by reading Technet.</td>
+    <td>Most definitely.</td>
+    <td>Yes, but it can be hard to focus on the right subject, and you run the risk of going down rabbit hole after rabbit hole of really interesting stuff.</td>
+  </tr>
+  <tr>
+    <td><b>Books</b></td>
+    <td>A lot</td>
+    <td>There are books and there are books. As with the video courses, you have quite a few books which are like expanded exam outlines that take you through exactly what you need to know to pass the exam. But I try to stay away from those and get books to go a little deeper and talk about ideas and concepts first before proceeding to the implementation of those ideas into solutions within a specific technology.</td>
+    <td>Most definitely.</td>
+    <td>Yes, though at cost - time.</td>
+  </tr>
+  <tr>
+    <td><b>Labs</b></td>
+    <td>Considerable</td>
+    <td>Though I've focused on question-based tests, we do see some occasional hand-on lab task as a part of tests as well. **AZ-302** was 40% lab-task based. I don't know if this is a trend, but if you do not have any hands-on experience (yes that sounds crazy - but many of us solution architects do not have that), it would really pay off to do some labs. Or do I what I do - build something with the new technoolgy that you've built before by using other tools - adapt your terraform plans or scripts to make them work on another cloud or even deploy some sort of quickstart application (wordpress, static html site anyone?). Even a "hello world" function would do. If you like gamification, check out things like **Qwiklabs** - they even do events where you can find Starbucks vouchers.</td>
+    <td>Yes!</td>
+    <td>Possibly. Depends on the exam and the labs. IaC stuff might not always be worth your time because they don't test on that too often (though getting your **JSON** on is always a good idea).</td>
+  </tr>
+  <tr>
+    <td><b>Practise Exams</b></td>
+    <td>A lot</td>
+    <td>**AWS** offers some great practice exams, and if you pass one real exam, you get a free voucher for a practice exam. They are really representative and sometimes even harder then actual tests. The Linux academy practice tests are also pretty decent, and I like that you can take them more then once.</td>
+    <td>It makes you more aware of the possible choices and arguments in favour or against a solution in a very practical way. </td>
+    <td>Yes, because it trains your multiple-choice skills and gives you some insights with regards possible exam questions.</td>
+  </tr>
+</table>
 
 And now for the elephant in the room - braindumps\testkings\pass4sure's or whatever you like to call them. I've used them. Would I use them for every test or would I use only them? **No**. Do I care whether they are accurate or updated? **Not really**. I mainly find them useful to practice taking tests in a particular context. If I have the time, I do them over and over until I'm at a proper pace (often doing a couple of different ones once will do the trick). If I pick up some questions that are on the actual test, well, that's a bonus. But, to be frank, most companies now finally do some proper rotation and renewal of the questions, so its not really possible to get a copy of the current questions. Its also a matter of risk - do you really want to fill your head with questions and answers that might not be current or right (many times I've seen a lot of wrong answers in these braindumps) leaving no room for actual factual knowledge? 
 
