@@ -15,7 +15,7 @@ ogTitle: "Using the Microsoft SQL Server hybrid buffer pool"
 ogDescription: "Microsoft&reg; introduced a new feature called a hybrid buffer pool in SQL Server&reg; 2019 (Preview) CTP 2.1."
 ---
 
-Microsoft&reg; introduced a new feature called hybrid buffer pool in SQL
+Microsoft&reg; introduced a new feature called a hybrid buffer pool in SQL
 Server&reg; 2019 (Preview) CTP 2.1. This feature enables you to directly access
 data pages in database files stored in persistent memory (PMEM) devices.
 
