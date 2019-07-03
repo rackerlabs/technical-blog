@@ -164,7 +164,7 @@ deployments. This post introduced you to the OGG MA and its components, which
 is expected to change the way you replicate data on-premise, in the cloud and
 in hybrid environments.
 
-Use the Feedback tab to make any comments or ask questions.
+Use the Feedback tab to make any comments or to ask questions.
 
 ### Optimize your environment with expert administration, management, and configuration
 
