@@ -159,7 +159,7 @@ local **OGG\_VAR\_HOME** can share the same read-only **OGG_HOME**.
 ### Conclusion
 
 Microservices architecture is a new service-based architecture that simplifies
-the configuration, administration, and monitoring of large-scale and cloud
+the configuration, administration, and monitoring of large-scale, cloud
 deployments. This post introduced you to the OGG MA and its components, which
 is expected to change the way you replicate data on-premise, in the cloud and
 in hybrid environments.
