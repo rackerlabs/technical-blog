@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Oracle Exadata and the storage index feature"
-date: 2019-07-03 00:00
+date: 2019-07-09 00:00
 comments: true
 author: Ravi Sharma
 published: true
@@ -17,10 +17,10 @@ ogDescription: "The Oracle&reg; Exadata&reg; system introduces storage indexes, 
 
 The Oracle&reg; Exadata&reg; system introduces storage indexes, which improve database
 performance. A storage index is a structure store in memory that contains key
-statistics. This storage index enables Exadata to speed up disk I/O operations 
+statistics. This storage index enables Exadata to speed up disk I/O operations
 and queries by checking the index first to find relevant data rather than by
 reading every row.
- 
+
 <!-- more -->
 
 One important consideration with storage indexes is that, for Exadata to produce
