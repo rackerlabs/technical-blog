@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Oracle Exadata and the storage index feature"
-date: 2019-07-09 00:00
+date: 2019-07-10 00:00
 comments: true
 author: Jay Pathak
 published: true
