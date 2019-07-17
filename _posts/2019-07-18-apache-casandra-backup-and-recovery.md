@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Apache Cassandra backup and recovery"
-date: 2019-17-10 00:00
+date: 2019-07-17 00:00
 comments: true
 author: Amit Bhatnagar
 published: true
