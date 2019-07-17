@@ -9,16 +9,16 @@ authorIsRacker: true
 categories:
   - database
 metaTitle: "Apache Cassandra backup and recovery"
-metaDescription: "This blog shows you how to backup Apached Cassandra databases and restore them after a failure."
+metaDescription: "This blog shows you how to backup Apache Cassandra databases and restore them after a failure."
 ogTitle: "Apache Cassandra backup and recovery"
-ogDescription: "This blog shows you how to backup Cassandra databases and restore them after a failure."
+ogDescription: "This blog shows you how to backup Apache Cassandra databases and restore them after a failure."
 ---
 
 Database backup and recovery is one of the crucial day-to-day activity that a
 database administrator (DBA) performs. A database backup is the copy of your
 data that can be used to recover the data in the event of data loss.
 
-This blog shows you how to backup Apached&reg; Cassandra&reg; databases and
+This blog shows you how to backup Apache&reg; Cassandra&reg; databases and
 restore them after a failure.
 
 <!-- more -->
@@ -39,13 +39,6 @@ successfully manage the large volume of business data, more popularly
 known as Big Data. Cassandra, widely used by many major organizations,
 ensures scalability, fault-tolerance, and consistency to support Big Data.
 
-The following image illustrates moving from a cloud cluster to a Cassandra
-cluster by using `sstableloader`:
-
-![]({% asset_path 2019-07-18-apache-casandra-backup-and-recovery/Picture1.png %})
-
-**Image source**: [https://dzone.com/articles/using-casandras-sstable-bulk](https://dzone.com/articles/using-casandras-sstable-bulk)
-
 ### Cassandra database backup and restore
 
 You can use the following utilities to take a snapshot of a Cassandra database
@@ -53,6 +46,13 @@ and restore it when required:
 
 - `nodetool` (To take the snapshot)
 - `sstableloader` (To restore the snapshot backup)
+
+The following image illustrates moving from a cloud cluster to a Cassandra
+cluster by using `sstableloader`:
+
+![]({% asset_path 2019-07-18-apache-casandra-backup-and-recovery/Picture1.png %})
+
+**Image source**: [https://dzone.com/articles/using-casandras-sstable-bulk](https://dzone.com/articles/using-casandras-sstable-bulk)
 
 #### Backup
 
@@ -161,9 +161,9 @@ table.
 #### Restore
 
 To restore the **employee** table from the **keyspace (users)** snapshot backup,
-you must use the `sstableloader` utility. The `sstableloader` utility not only 
-copies the set of sstables to each node but also transfers the appropriate 
-part of the data to every node based on the replication strategy defined for 
+you must use the `sstableloader` utility. The `sstableloader` utility not only
+copies the set of sstables to each node but also transfers the appropriate
+part of the data to every node based on the replication strategy defined for
 a cluster. Note that it is not necessary to have an empty table to restore the
 data.
 
@@ -298,10 +298,10 @@ database. However, if you need to restore a full keyspace/database, use the
 preceding steps without the table restore part. You must recreate the
 **keyspace** and load data by using `sstableloader`.
 
-The number of nodes in the source and target databases cluster doesn’t matter with
-`sstableloader`. This is because it reads each **sstables** from the backup. Then,
-it streams the data into the cluster while placing the data according to the defined
-replication strategy in the cluster.
+The number of nodes in the source and target databases cluster doesn’t matter
+with `sstableloader`. This is because it reads each **sstables** from the backup.
+Then, it streams the data into the cluster while placing the data according to
+the defined replication strategy in the cluster.
 
 Use the Feedback tab to make any comments or to ask questions.
 
