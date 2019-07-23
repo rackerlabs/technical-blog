@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Microsoft SQL Server advanced corruption and recovery"
-date: 2019-06-26 00:01
+date: 2019-07-24 00:01
 comments: true
 author: Yelavarthi Premchand
 published: true
