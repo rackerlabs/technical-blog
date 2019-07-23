@@ -24,18 +24,18 @@ using advanced restore and repair techniques.
 
 Currently, SQL Server is one of the most popular and widely used relational
 database management systems because of its advanced internal structure and great
-reliability. Many organizations have opted for SQL Server databases in order to
+reliability. Many organizations have opted for SQL Server databases to
 maintain and save critical business data.
 
-Companies expect database administrators (DBAs) to continuously improve database
-performance, maintenance and security. When a database is corrupted and data is
+Companies expect database administrators (DBAs) to improve database
+performance, maintenance, and security continuously. When a database is corrupted and data is
 inaccessible, you might suspect a variety of causes such as hardware corruption,
 disk issues, a virus attack, or operating system (OS) failures. Repairing
 corrupted databases is not an easy task until you know the best technique.
 
 This post discusses some causes of database corruption, helps you to identify
 page corruption, explores the Database Consistency Checker (DBCC) CHECKDB
-command, and demonstrates advance restore and repair techniques.
+command, and demonstrates advanced restore and repair techniques.
 
 ### Database corruption
 
@@ -51,7 +51,7 @@ as shown in the following image:
 
 Database corruption types include the following items:
 
--	I/O Subsystem (This is one of the most common reason for database corruption.)
+-	I/O Subsystem (This is one of the most common reasons for database corruption.)
 -	Windows operating system
 -	File system drivers such as encryption or antivirus
 -	SAN or RAID controllers
@@ -65,16 +65,16 @@ Database corruption types include the following items:
 
 When you access a corrupted database, you might see the following error messages:
 
--	**Msg 823 in SQL Server**
+-  **Msg 823 in SQL Server**
 -  **Msg 824 in SQL Server**
 -  **Msg 825 (read retry) in SQL Server**
--	**Error 9004 SQL Server**
--	**Metadata Corruption Error**
--	**Page Level Corruption Error**
+-  **Error 9004 SQL Server**
+-  **Metadata Corruption Error**
+-  **Page Level Corruption Error**
 
 ### Tracing page corruption
 
-SQL Server has an built-in mechanism to automatically identify and alert you
+SQL Server has a built-in mechanism to automatically identify and alert you
 when there is a corruption during I/0 operations such as reading and writing
 pages to the disk.
 
@@ -86,22 +86,22 @@ SQL Server and help protect the pages on the disk:
 
 When *TORN\_PAGE\_DETECTION* is specified, a bit is flipped for the 16 x 512-byte
 disk sector for an 8 KB data file page whenever the page is written to disk.
-After the page is subsequently read into memory, these values are compared, and
-if the bits are found in the wrong state, the page likely was written incorrectly.
+After the page is subsequently read into memory, these values are compared.
+If the bits are found in the wrong state, the page likely was written incorrectly.
 In this case, the system generates an error message 824 (indicating a torn-page
 error).
 
 When *Checksum* is specified, the system calculates the checksum value over the
-contents of page and stores that value in the page header when writing the page
+contents of the page and stores that value in the page header when writing the page
 to the disk. After the page is loaded from disk later on, the checksum is
-recomputed and compared with value stored at page header. If value does not
+recomputed and compared with the value stored at page header. If the value does not
 match, the system generates an error message 824 (indicating a checksum failure).
 
-Both errors, **823 hard I/O** and **824 soft I/O** are severity 24 errors and
+Both errors, **823 hard I/O** and **824 soft I/O**, are severity 24 errors and
 are logged in the **msdb.dbo.** suspect_pagestable.
 
 Table **msdb.dbo. suspect_pagestable** is used for a single page restore
-operation and can be logged to SQL Server error log and windows event log.
+operation and can be logged to the SQL Server error log and the Windows&reg; event log.
 
 ### DBCC CHECKDB
 
@@ -120,12 +120,12 @@ stored in **MDF** files.
 The primitive checks are shown in the following list:
 
 -	**DBCC CHECKALLOC**: Checks the allocation structure consistency in a
-   database. It checks that the allocation structure is valid and no single data
+   database. It checks that the allocation structure is valid and that no single data
    file pages are allocated to two tables.
 
 -	**DBCC CHECKTABLE**: Checks the consistency of tables and indexes. It
    validates the structure of the table and its related indexes. It determines
-   whether the index data has matching rows in table and examines the index
+   whether the index data has matching rows in the table and examines the index
    order keys. If there is any FILESTREAM used in the table, it validates the
    link’s existence.
 
@@ -160,7 +160,7 @@ Using an internal database snapshot with CHECKDB to perform the checks and
 maintain transactional consistency prevents blocking and concurrency problems.
 If you cannot create a database snapshot, make sure you have an exclusive lock
 for the database and shares table locks because this is required to perform the
-table level checks. CHECKDB fails on master if no snapshot is created.
+table level checks. CHECKDB fails on the master if no snapshot is created.
 
 The following list contains the internal checks performed by DBCC CHECKDB:
 
@@ -193,9 +193,9 @@ issues, the following advanced restore techniques are available:
 
 ####	Page restore
 
-You can restore one or more pages with this technique. Page level restore is an
+You can restore one or more pages with this technique. Page-level restore is an
 online operation for the database enterprise edition, and you can use the offline
-operation for other editions, which implies the the database can be offline
+operation for other editions, which implies that the database can be offline
 during the restore process.
 
 ##### T-SQL script
@@ -206,11 +206,11 @@ during the restore process.
     WITH NORECOVERY
 
 To obtain the Page Id’s, use different sources available like Error log,
-Eventtraces, DBCC,and  **msdb..suspectpages** table records that list corrupt
+Eventtraces, DBCC, and  **msdb..suspectpages** table records that list corrupt
 pages and their IDs.
 
-**Note:** Boot pages, Fileheader pages, some pages in critical system tables,
-and allocation bitmaps cannot be restored as a page restore.
+**Note:** You cannot restore boot pages, file header pages, some pages in critical system tables,
+and allocation bitmaps as a page restore.
 
 ####	Piecemeal and partial restores
 
@@ -219,8 +219,8 @@ for enterprise edition and offline for other editions that contain multiple
 files or filegroups.
 
 Every piecemeal restore starts with a partial restore sequence `RESTORE DATABASE`
-statement that restores a full backup with a `PARTIAL` option. When it is
-completed, the database should be online partially, which implies that remaining
+statement that restores a full backup with a `PARTIAL` option. When this restore
+completes, the database should be online partially, which implies that remaining
 files are in recovery pending mode because the recovery has been postponed.
 
 The piecemeal restore depends on the recovery model of the database and its
@@ -247,34 +247,34 @@ Now, all filegroups are online.
 
 ### Other advanced repair techniques
 
-Does repair always give a guarantee of data recovery?  The answer is “NO”.
+Does repair always give a guarantee of data recovery?  The answer is “NO.”
 
 There could be a number of possible combinations that can corrupt the data, and
 it's impossible to test all combinations. For instance, a system table
-is corrupted and repairs won’t work on pages like **Boot** and **PFS**.
+is corrupted, and repairs won’t work on pages like **Boot** and **PFS**.
 
 Following are some repair options:
 
 #### REPAIR_REBUILD
 
-This performs a repair, but it might cause data loss when rebuilding damaged NC
+This option performs a repair, but it might cause data loss when rebuilding damaged NC
 indexes.
 
 #### REPAIR_ALLOW_DATA_LOSS
 
-This performs the repair, but it might cause data loss.
+This option performs the repair, but it might cause data loss.
 
 #### System table index rebuild
 
 You cannot repair clustered system table indexes, but you can repair
 non-clustered indexes in some situations by checking the DBCC CHECKTABLE option.
 
-**Note:** Always perform any sort of advanced repair techniques on copy of the
+**Note:** Always perform any sort of advanced repair techniques on a copy of the
 database and not on the original database to avoid dire situations.
 
 ####	Rebuild date from a non-clustered index:
 
-If a clustered index or heap is damaged,repair is the only option for
+If a clustered index or heap is damaged, repair is the only option for
 recovering data from a non-clustered (NC) index. However, in some cases, repair won’t
 work if the metadata is corrupted.
 
