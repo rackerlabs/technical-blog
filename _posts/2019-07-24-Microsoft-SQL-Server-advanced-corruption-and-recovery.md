@@ -109,7 +109,7 @@ DBCC CHECKDB checks the physical and logical integrity of all objects in a
 database.
 
 It is a resource-intensive operation and uses parallel processing, but you can
-run it in single a thread by tracing flag 2528.
+run it in a single thread by tracing flag 2528.
 
 #### Primitive critical system table checks
 
