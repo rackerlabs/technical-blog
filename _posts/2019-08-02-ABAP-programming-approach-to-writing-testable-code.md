@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "ABAP Programming–Approach to writing testable code"
+title: "ABAP Programming approach to writing testable code"
 date: 2019-08-02 00:01
 comments: true
 author: Akash Jain
@@ -8,21 +8,21 @@ published: true
 authorIsRacker: true
 categories:
     - General
-metaTitle: "ABAP Programming–Approach to writing testable code"
+metaTitle: "ABAP Programming approach to writing testable code"
 metaDescription: "If we cannot test code properly, it is a tedious task to modify or enhance it. Read on to learn more"
-ogTitle: "ABAP Programming–Approach to writing testable code"
+ogTitle: "ABAP Programming approach to writing testable code"
 ogDescription: "If we cannot test code properly, it is a tedious task to modify or enhance it. Read on to learn more."
 ---
 
 No matter how good our code is, if we cannot test it properly, it is a tedious
-task to modify or enhance it. This results in problems for both users and
+task to modify or enhance it. This situation results in problems for both users and
 developers.
 
 <!-- more -->
 
 ### Introduction
 
-Because requirements change frequently during the development process, you
+Because requirements frequently change during the development process, you
 constantly need to modify the code. Sometimes the requirement changes might
 involve a complete change in the process.
 
@@ -34,11 +34,11 @@ You may face the following situations:
 
 -	You are asked to change your own code. You might like this idea, but you
 don't remember the details of the code that you originally wrote.
--	You have to change someone else’s code. This is not ideal, but it
+-	You have to change someone else’s code. This situation is not ideal, but it
 is common.
 
 How can you be sure that you won’t break anything after implementing changes
-if the code cannot be tested? The traditional approaches that we’ve seen over
+if you cannot test the code? The traditional approaches that we’ve seen over
 the years include the following:
 
 -	Write some tests in the development environment, and check that there are no
@@ -48,9 +48,9 @@ dumps.
 -	Release to the user for User Acceptance Testing (UAT).
 
 When someone encounters an issue with the code, we're likely to blame a
-difference in test data. And even if it’s true, the real issue is that the
-software is poorly written and not robust enough. It can’t be tested without
-real data. In other words, the program has dependencies and you can't test it.
+difference in test data. Even if it’s true, the real issue is that the
+software is poorly written and not robust enough. You cannot test it without
+real data. In other words, the program has dependencies, and you can't test it.
 
 ### Test-driven development and ABAP
 
@@ -58,8 +58,8 @@ Test-driven development (TDD) solves these issues by enabling you to deliver
 high-quality software and products.
 
 TDD is a software development process that relies on the repetition of a very
-short development cycle: requirements are turned into very specific test cases,
-then the software is improved to pass the new tests, only. (Wikipedia)
+short development cycle: requirements turn into very specific test cases,
+then the software is improved to pass only the new tests. (Wikipedia)
 
 ![]({% asset_path 2019-08-02-ABAP-programming-approach-to-writing-testable-code/Picture1.png %})
 
@@ -68,32 +68,32 @@ more than a specific piece of code. Testing ABAP units is not necessarily a
 purely technical process performed by the developers. Because you don't need a
 developer key to run unit tests for an ABAP program, anyone with the proper
 authorization to display programs or classes should be able to run the tests.
-As a best practise, involve our business experts and functional consultants in
+As a best practice, involve our business experts and functional consultants in
 testing whenever you can.
 
 ### Behavior-driven development
 
-Behaviour-driven development (BDD) is a software development process that
+Behavior-driven development (BDD) is a software development process that
 emerged from TDD. BDD combines the general techniques and principles of TDD
 with ideas from domain-driven design and object-oriented analysis and design to
 provide software development and management teams with shared tools and a
 shared process to collaborate on software development. (Wikipedia)
 
-BDD simplifies testing methods, so the methods labelled for testing in an ABAP
+BDD simplifies testing methods, so the methods labeled for testing in an ABAP
 unit should have descriptions that make sense to a developer, business analyst,
-and users. You can achieve this by setting each test method so that fulfill
+and users. You can achieve this by setting each test method so that it fulfills
 the phrase `IT SHOULD`.
 
 Then inside of this method, you create three helper methods by using the
 following pattern:
 
-- `GIVEN`: Include inputs or initial conditions that program receives.
-- `WHEN`: Describe the activities that are going to be tested.
+- `GIVEN`: Include inputs or initial conditions that the program receives.
+- `WHEN`: Describe the activities that you are going to test.
 - `THEN`: Specify the success and failure outcomes.
 
 ### Sample refactored test class
 
-The following codes samples, which use dummy code to define the process, are a
+The following code sample, which uses dummy code to define the process, is a
 sample refactored test class for the **zcl_instruments** class.
 
 ```
@@ -219,8 +219,8 @@ to test the method.
   endmethod.
 ```
 
-Finally, you can check that the object instruments has a guitar by using the
-following method. This represents helper method for `Then` part of BDD.
+Finally, you can check that the object instruments have a guitar by using the
+following method. This check represents the helper method for the `Then` part of BDD.
 
 ```
 method then_instruments_has_guitar.
@@ -235,13 +235,13 @@ method then_instruments_has_guitar.
 
 ### Conclusion
 
-This blog highlights the importance of writing a testable code and show how do
+This blog highlights the importance of writing testable code and shows how to do
 that. By focusing on test-driven development, you can adapt your programming
 style to include testable code. As a result, you end up with clean, easy to
-maintain, and reusable code. This helps you to become a better developer.
+maintain, and reusable code. Writing testable code helps you to become a better developer.
 Sometimes, when you have tighter delivery deadlines, it is easy to ignore the
 testability aspects of the code, and by doing so, you might save time. However,
-in the long run, you will end up spending more time and resources fixing bugs.
+in the long run, you end up spending more time and resources fixing bugs.
 Therefore, by adopting the test-driven development concepts described here, you
 not only make your own life easier, but you also help the next developer who
 works on your code.
