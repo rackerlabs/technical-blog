@@ -164,13 +164,54 @@ a degraded or a critical state:
 
     # dcli -g cell_group -l root cellcli -e list griddisk attributes asmdeactivationoutcome, asmmodestatus
 
-To enable write-back flash cache, run the following command:
+To enable list the cells, run the following command:
 
     # dcli -g cell_group -l root cellcli -e list flashcache detail
 
     exadata01cell01: WriteThrough
     exadata01cell02: WriteThrough
     exadata01cell03: WriteThrough
+    
+To enable write-back flash cache, run the following commands for each cell:
+
+    -> Drop cache
+    
+    CellCLI> drop flashcache;
+    
+    Flash cache exadata01cell01 successfully dropped.
+ 
+    -> Shut down Cell service
+ 
+    CellCLI> alter cell shutdown services cellsrv;
+    
+    Stopping CELLSRV services... The SHUTDOWN of CELLSRV services was successful.
+ 
+    -> Change Cell Flash Cache mode to Write Back
+ 
+    CellCLI> alter cell flashCacheMode=writeback;
+
+    Cell cel04 successfully altered 
+ 
+    -> Restart the Cell Service
+ 
+    CellCLI> alter cell startup services cellsrv;
+
+    Starting CELLSRV services...
+    The STARTUP of CELLSRV services was successful.
+ 
+    -> Recreate the Flash Cache
+ 
+    CellCLI> create flashcache all;
+
+    Flash cache cel04_FLASHCACHE successfully created
+ 
+    -> Check the State on all Cell Server 
+    
+    # dcli -g cell_group -l root "cellcli -e list cell attributes flashcachemode"
+    
+    exadata01cell01: WriteBack
+    exadata01cell02: WriteBack
+    exadata01cell03: WriteBack
 
 ### Conclusion
 
