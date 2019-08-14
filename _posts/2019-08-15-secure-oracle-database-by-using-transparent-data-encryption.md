@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Secure an Oracle database by using Transparent Data Encryption"
-date: 2019-07-10 00:00
+date: 2019-08-15 00:00
 comments: true
 author: Hemant Sharma
 published: true
@@ -35,7 +35,7 @@ database.
 
 ### Why use TDE?
 
-If thieves steal backup tapes of the database, and restores it on their own
+If thieves steal backup tapes of the database, and restore it on their own
 server, they have access to the company's most sensitive data. This is an
 unacceptable risk. Most company regulations and guidelines consider protecting
 database data a compliance requirement. How can you protect your database from
@@ -70,10 +70,10 @@ into a column this is defined as encrypted, Oracle performs the following tasks:
 
 TDE encrypts the data in the following database files:
 
--	In the datafile
--	In the redo log and archive log files
--	In memory
--	In the file backup
+-	The datafile
+-	The redo log and archive log files
+-	Memory
+-	The file backup
 
 ### Managing Oracle Wallet
 
@@ -111,7 +111,7 @@ Next, run the following command to create the wallet:
 #### Open and close the wallet
 
 After you create the wallet and set the password, you need to open the wallet
-explicitly, by using `SYS`, `SYSTEM`, or `SYSDBA` accounts every time you start
+explicitly by using `SYS`, `SYSTEM`, or `SYSDBA` accounts every time you start
 the database.
 
 For example, run the following command:
@@ -120,7 +120,7 @@ For example, run the following command:
 
 **Important:** To perform any action on database, you must open the wallet.
 
-The following example demonstrates a database operation where  the database is
+The following example demonstrates a database operation where the database is
 up but the wallet is closed:
 
     alter system set encryption wallet close;
@@ -139,7 +139,7 @@ using the following command:
 
 ![]({% asset_path 2019-08-15-secure-oracle-database-by-using-transparent-data-encryption/Picture6.png %})
 
-Now you can retrieve data from the encrypted columns because wallet is open.
+Now you can retrieve data from the encrypted columns because the wallet is open.
 
 ### Create tables with an encrypted column
 
@@ -167,7 +167,7 @@ option such as the following example:
 Here, the **S\_S\_NUM** column is encrypted with the NO SALT option and the
 **PH_NO** column is created with a default SALT option.
 
-THe following example shows that you can't create an index on the **PH_NO**
+The following example shows that you can't create an index on the **PH_NO**
 column because you created it with the SALT option by default.
 
 ![]({% asset_path 2019-08-15-secure-oracle-database-by-using-transparent-data-encryption/Picture9.png %})
