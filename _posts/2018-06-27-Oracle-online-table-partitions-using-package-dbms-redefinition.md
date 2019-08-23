@@ -193,6 +193,9 @@ and save them to a spool file.
 
 ### Step 10: Check redefinition feasibility
 
+**Note**: The source table (non-partitioned) does not need a primary key before you 
+use the redefinition package.
+
 Run the following commands to see if redefinition is possible, and save the
 results to a spool file:
 
