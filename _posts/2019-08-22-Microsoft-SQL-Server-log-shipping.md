@@ -78,7 +78,7 @@ In this example, we have already setup AlwasyOn between the primary replica
 server, called PRIMEHEAD, and your secondary replica, called HEAD2, as shown
 in the following image:
 
-![]({% asset_path 2019-08-09-Microsoft-SQL-Server-query-store/Picture1.png %})
+![]({% asset_path 2019-08-22-Microsoft-SQL-Server-log-shipping/Picture1.png %})
 
 This section provides a step-by-step solution to configure log shipping on a
 database that is already a part of an AlwaysOn AG.
@@ -100,14 +100,14 @@ Right-click on the database, select **Properties**, and click on the
 on the highlighted **Enable this as a primary database in a log shipping configuration**
 checkbox as shown in the following image:
 
-![]({% asset_path 2019-08-09-Microsoft-SQL-Server-query-store/Picture2.png %})
+![]({% asset_path 2019-08-22-Microsoft-SQL-Server-log-shipping/Picture2.png %})
 
 #### Step 3
 
 Click **Backup Setting** to configure the **LS Backup** option. Select the
 network-shared path for LS Backup, as shown in the following image:
 
-![]({% asset_path 2019-08-09-Microsoft-SQL-Server-query-store/Picture3.png %})
+![]({% asset_path 2019-08-22-Microsoft-SQL-Server-log-shipping/Picture3.png %})
 
 #### Step 4
 
@@ -118,14 +118,14 @@ However, in this scenario, use the default settings.
 
 To add a DR server, click **Add** as shown in the following image:
 
-![]({% asset_path 2019-08-09-Microsoft-SQL-Server-query-store/Picture4.png %})
+![]({% asset_path 2019-08-22-Microsoft-SQL-Server-log-shipping/Picture4.png %})
 
 #### Step 6
 
 Click **Connect** to connect to HEAD3, the DR server, as shown in the
 following image:
 
-![]({% asset_path 2019-08-09-Microsoft-SQL-Server-query-store/Picture5.png %})
+![]({% asset_path 2019-08-22-Microsoft-SQL-Server-log-shipping/Picture5.png %})
 
 #### Step 7
 
@@ -138,7 +138,7 @@ Click the **Copy Files** tab. In the **Destination folder for copied files**
 box, type the path where transaction log backups are copied. For this scenario,
 use **C:\LSCopyAlwaysOn** for the path, as shown in the following image:
 
-![]({% asset_path 2019-08-09-Microsoft-SQL-Server-query-store/Picture6.png %})
+![]({% asset_path 2019-08-22-Microsoft-SQL-Server-log-shipping/Picture6.png %})
 
 #### Step 9
 
@@ -150,15 +150,17 @@ In this example, we selected **No recovery mode**, which implies that the DR
 database is not accessible. If you select **Standby Mode**, the DR database is
 available to the end user in read-only mode.
 
-![]({% asset_path 2019-08-09-Microsoft-SQL-Server-query-store/Picture7.png %})
+![]({% asset_path 2019-08-22-Microsoft-SQL-Server-log-shipping/Picture7.png %})
 
 #### Step 10
 
 Click **OK** to start the log shipping.
 
+![]({% asset_path 2019-08-22-Microsoft-SQL-Server-log-shipping/Picture8.png %})
+
 The following screen displays:
 
-![]({% asset_path 2019-08-09-Microsoft-SQL-Server-query-store/Picture9.png %})
+![]({% asset_path 2019-08-22-Microsoft-SQL-Server-log-shipping/Picture9.png %})
 
 #### Step 11
 
@@ -166,7 +168,7 @@ To check the log shipping status, right-click on the DR server, HEAD3, instances
 and select **Reports->Standard reports—>Transactional Log Shipping Status**. If
 the following screen appears, log shipping is healthy and working as expected.
 
-![]({% asset_path 2019-08-09-Microsoft-SQL-Server-query-store/Picture10.png %})
+![]({% asset_path 2019-08-22-Microsoft-SQL-Server-log-shipping/Picture10.png %})
 
 If an AG fail over between PRIMEHEAD and HEAD2 occurs, log shipping is interrupted
 until you configure it considering AG specifications.
@@ -186,7 +188,7 @@ fail over, complete the following steps:
 To do this, right-click on the AG and select the fail over option as shown in the
 following image:
 
-![]({% asset_path 2019-08-09-Microsoft-SQL-Server-query-store/Picture11.png %})
+![]({% asset_path 2019-08-22-Microsoft-SQL-Server-log-shipping/Picture11.png %})
 
 You can also accomplish this by using the following T-SQL commands to manually
 trigger an AG fail over:
@@ -199,7 +201,7 @@ trigger an AG fail over:
 
 After the fail over completes, the following window displays:
 
-![]({% asset_path 2019-08-09-Microsoft-SQL-Server-query-store/Picture12.png %})
+![]({% asset_path 2019-08-22-Microsoft-SQL-Server-log-shipping/Picture12.png %})
 
 #### Step 12
 
@@ -246,7 +248,7 @@ To do this, add the following code to the job step 1:
 
 The following image illustrates this:
 
-![]({% asset_path 2019-08-09-Microsoft-SQL-Server-query-store/Picture13.png %})
+![]({% asset_path 2019-08-22-Microsoft-SQL-Server-log-shipping/Picture13.png %})
 
 After making the preceding changes, notice that the LS backup job starts failing
 on secondary server but runs fine on the primary.
@@ -260,7 +262,7 @@ HEAD3 and disable the other set of jobs.
 
 The following image shows more details:
 
-![]({% asset_path 2019-08-09-Microsoft-SQL-Server-query-store/Picture14.png %})
+![]({% asset_path 2019-08-22-Microsoft-SQL-Server-log-shipping/Picture14.png %})
 
 Now, you have successfully configured log shipping on a database that is an
 existing part of an AlwaysOn AG. No matter which server is working as a primary
