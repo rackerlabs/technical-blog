@@ -55,7 +55,7 @@ Oracle provides the following types of storage:
 
 The following chart shows the service equivalence:
 
-![]({% asset_path 2019-08-26-intro-to-AWS_and-oracle-cloud-services/Picture2.png %})
+![]({% asset_path 2019-08-26-intro-to-AWS_and-oracle-cloud-services/Picture2.png %} =400x)
 
 ### Accessing storage on the cloud
 
