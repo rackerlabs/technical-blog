@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Migrate an SQL Server database to an AWS RDS instance"
+title: "Migrate a SQL Server database to an AWS RDS instance"
 date: 2019-09-13 00:01
 comments: true
 author: Ramkumar Singh
@@ -8,16 +8,16 @@ published: true
 authorIsRacker: true
 categories:
     - Database
-metaTitle: "Migrate an SQL Server database to an AWS RDS instance"
+metaTitle: "Migrate a SQL Server database to an AWS RDS instance"
 metaDescription: "This blog explains how to move a Microsoft&reg; SQL Server&reg; database to Amazon Relational Database Service (RDS)."
-ogTitle: "Migrate an SQL Server database to an AWS RDS instance"
+ogTitle: "Migrate a SQL Server database to an AWS RDS instance"
 ogDescription: "This blog explains how to move a Microsoft&reg; SQL Server database to Amazon Relational Database Service (RDS)."
 ---
 
 This blog explains how to move a Microsoft&reg; SQL Server&reg; database hosted
 on-premises (or on Amazon&reg; EC2 or Azure&reg;) to Amazon Relational Database
-Service (RDS). This move requires backing up your SQL database to an AWS S3 bucket and
-restoring the database on your AWS RDS instance from that S3 bucket.
+Service (RDS). This move requires backing up your SQL database to an AWS S3
+bucket and restoring the database on your AWS RDS instance from that S3 bucket.
 
 <!-- more -->
 
@@ -118,7 +118,7 @@ file as the **MigrationTestDB** database:
        @restore_db_name = 'MigrationTestDB',
        @S3_arn_to_restore_from = 'arn:aws:s3:::ramkrdsrestore/MigrationTestDB2019-08-15 181640.bak'
 
-![]({% asset_path 2019-08-22-Microsoft-SQL-Server-log-shipping/Picture1.png %})
+![]({% asset_path 2019-09-13-migrate-an-sql-server-database-to-an-aws-rds-instance/Picture1.png %})
 
 Note the parameters supplied to the stored procedure. You need to specify the
 following parameters:
@@ -134,7 +134,7 @@ track the status of the task with the following command:
 
 You can use the **TaskID** to track progress instead of **@db_name**.
 
-![]({% asset_path 2019-08-22-Microsoft-SQL-Server-log-shipping/Picture2.png %})
+![]({% asset_path 2019-09-13-migrate-an-sql-server-database-to-an-aws-rds-instance/Picture2.png %})
 
 Be aware of the following concerns:
 
@@ -142,8 +142,8 @@ Be aware of the following concerns:
    procedure.
 -	The IAM role used in the option group has access to the S3 bucket.
 -	The S3 bucket policy is not restrictive to exclude the IAM role.
--	The RDS SQL instance uses the correct option group where you added the backup/restore
-   option. This setting is critical. Without it, restore does not
+-	The RDS SQL instance uses the correct option group where you added the
+   backup/restore option. This setting is critical. Without it, restore does not
    begin.
 
 ### Limitations of SQL Server native backup and restore in Amazon RDS
@@ -160,8 +160,8 @@ RDS:
 -	You cannot restore a database in the same RDS instance.
 -  You cannot restore backups of Tabular Data Encryption (TDE) enabled databases.
 -	Target RDS instances require access to the S3 bucket.
--	The user account that is running RDS SQL Server native backup and restore commands
-   needs to have appropriate permissions.
+-	The user account that is running RDS SQL Server native backup and restore
+   commands needs to have appropriate permissions.
 
 ### Conclusion
 
