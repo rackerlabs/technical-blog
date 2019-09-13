@@ -167,14 +167,14 @@ RDS:
 
 This blog showed you how to back up a database on a cloud destination and to
 restore it on an AWS RDS instance. The RDS instance does not provide access to
-the drives or server, so the key is to transfer a backup file to the AWS S3
+the drives or server. The key is to transfer a backup file to the AWS S3
 bucket and then restore it from there.
 
 One more use case for this article is to store your SQL backups directly on AWS
 S3, which provides data availability, security, and performance enhancements.
 Amazon S3 is designed for 99.999999999% (eleven 9s) durability. This approach
-is even more cost effective when it comes to storing database backups by saving
-a lot of hard storage.
+is cost effective when it comes to storing database backups by saving a lot of
+hard storage.
 
 Use the Feedback tab to make any comments or ask questions.
 
