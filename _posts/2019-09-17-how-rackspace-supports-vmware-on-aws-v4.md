@@ -9,9 +9,9 @@ authorIsRacker: false
 categories:
     - AWS
 metaTitle: "How Rackspace supports VMware on AWS v4"
-metaDescription: "The Rackspace/AWS/VMware partnership provides you with a powerful combination of technologies for your cloud journey."
+metaDescription: "The Rackspace/AWS/VMware&reg; partnership provides you with a powerful combination of technologies for your cloud journey."
 ogTitle: "How Rackspace supports VMware on AWS v4"
-ogDescription: "The Rackspace/AWS/VMware partnership provides you with a powerful combination of technologies for your cloud journey."
+ogDescription: "The Rackspace/AWS/VMware&reg; partnership provides you with a powerful combination of technologies for your cloud journey."
 ---
 
 
@@ -28,49 +28,50 @@ The following image illustrates these layers:
 
 ![]({% asset_path 2019-09-17-how-rackspace-supports-vmware-on-aws-v4/Picture1.png %})
 
-However, we can only run one operating system on a computer at a time. Right?
+However, we can only run one OS on a computer at a time. Right?
 
 ### Virtualization
 
-Virtualization changed the way we use computers by enabling us install and run
-more than one operating system at the same time and to maximize all of the
+Virtualization changed the way we use computers by enabling us to install and
+run more than one OS at the same time and to maximize all of the
 hardware power available in a given chassis, as shown in the following image:
 
 ![]({% asset_path 2019-09-17-how-rackspace-supports-vmware-on-aws-v4/Picture2.png %})
 
-Virtualization software exists between the hardware layer and the operating
-system. It acts like the hardware layer and *fools* any operating system
+Virtualization software exists between the hardware layer and the OS.
+It acts like the hardware layer and *fools* any OS
 installed on the server, enabling the user to maximize the hardware potential
 and squeeze every ounce of capacity out of the physical CPU, memory, and
 storage available on a server. Instead of having to purchase multiple physical
 servers to run various applications, you can now create multiple *virtual*
-servers running on a single physical server. How many of these virtual servers
+servers running on a single physical server. The number of virtual servers
 you can have depends on the number of cores and amount of memory on the chassis.
 
 ### Virtualization with AWS and VMware
 
 So, what do servers and virtualization have to do with the Amazon Web Services&reg;
-(AWS) public cloud services? Many people don’t know this, but AWS — the world’s
-largest cloud infrastructure provider — also sells single-tenant dedicated
+(AWS) public cloud services? Many people don’t know this, but AWS—the world’s
+largest cloud infrastructure provider—also sells single-tenant dedicated
 physical servers hosted in their data centers. You can buy them alongside all
 of their other services, like EC2 instances, S3 storage, and the thousands of
 other features AWS offers.
 
 This AWS hardware offering gives customers flexibility by letting them deploy
-operating systems of their own choosing. This includes the ability to install
-ESX, the VMware&reg; operating system used to deploy virtual servers. Given that
+the OSs of their choosing. This flexibility includes the ability to install
+ESX, the VMware&reg; OS used to deploy virtual servers. Given that
 VMware controls approximately 75% of the server virtualization market, the
-AWS/VMware partnership gives customers a very powerful, feature rich, and
+AWS/VMware partnership gives customers a very powerful, feature-rich, and
 flexible compute platform, as shown in the following image:
 
 ![]({% asset_path 2019-09-17-how-rackspace-supports-vmware-on-aws-v4/Picture3.png %})
 
 VMworld&reg; announced the initial availability of VMware Cloud on AWS to
-create a *seamlessly integrated hybrid cloud* in 2017. This followed the
-strategic alliance that the two companies announced in October 2016.
+create a *seamlessly integrated hybrid cloud* in 2017. This announcement followed
+the strategic alliance that the two companies announced in October 2016.
 
 VMware Cloud on AWS includes the VMware Cloud Foundation technologies of
-vSphere, vSAN, NSX, and vCenter Server. The service enables you to automatically
+vSphere&reg;, vSAN&trade;, NSX&reg;, and vCenter Server&reg;. The service
+enables you to automatically
 provision your infrastructure with full virtual machine (VM) compatibility and
 workload portability between wherever your VMware environments are and the AWS
 Cloud.
@@ -97,16 +98,16 @@ benefits, including the following:
    associated with expanding on your own.
 
 -	**Improved time to market:** How long would it take you to order, receive,
-   and install a three-node ESX cluster in your own data center or with a
+   and install a three-node ESX cluster in your data center or with a
    third-party provider? Remove the approval, shipping, and installation times
    from that scenario because you acquire VMware on AWS just like other AWS
    services: through the portal on your own or through your service provider.
-   Usually you get your infrastructure in hours, not weeks.
+   Usually, you get your infrastructure in hours, not weeks.
 
 -	**Increased innovation:** By having VMs deployed onto the AWS platform you
    now have native, high-speed access to the entire AWS portfolio: databases,
-   storage, API endpoints for services like Lambda, SQS and S3, along with
-   data and analytics services like Amazon RDS, DynamoDB, Kinesis and Redshift.
+   storage, API endpoints for services like Lambda, SQS, and S3, along with
+   data and analytics services like Amazon RDS, DynamoDB, Kinesis, and Redshift.
    AWS also offers the ability to convert VMware instances into native EC2
    instances.
 
@@ -121,11 +122,11 @@ Given all of these benefits, what are some actual use cases?
 
 ### How Rackspace enhances the experience
 
-Now if all of this isn’t cool enough, Rackspace&reg; adds even more value to the
+Now if all of this isn’t cool enough, Rackspace adds even more value to the
 equation. Customers can continue to manage their own VMware infrastructure and
 connect it with AWS, but you can also work with Rackspace, enabling our
 industry-leading cloud infrastructure experts to extend your IT team. This
-includes our world-class operations and account management and our Service
+service includes our world-class operations and account management and our Service
 Delivery Management teams, which provide personal contact for business and
 technical issues while serving as your single point of contact across VMware
 and AWS including escalation management. The Rackspace SLA provides 24x7x365
@@ -136,7 +137,7 @@ Furthermore, Rackspace can help accelerate your path to public and hybrid cloud
 solutions, thanks to the Rackspace Center of Excellence for VMC on AWS, our
 strong partnership with both companies, and professional services that can help
 you easily migrate VMware workloads to VMC on AWS and progressively transform
-applications to cloud native AWS services.
+applications to cloud-native AWS services.
 
 ### Conclusion
 
