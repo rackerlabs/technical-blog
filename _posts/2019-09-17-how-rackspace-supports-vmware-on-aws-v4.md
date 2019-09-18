@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "How Rackspace supports VMware on AWS v4"
-date: 2019-08-26 00:01
+date: 2019-09-18 00:01
 comments: true
-author: Lakshmana Majji
+author: Paul Croteau
 published: true
 authorIsRacker: false
 categories:
