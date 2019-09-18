@@ -14,6 +14,7 @@ ogTitle: "How Rackspace supports VMware on AWS v4"
 ogDescription: "The Rackspace/AWS/VMware&reg; partnership provides you with a powerful combination of technologies for your cloud journey."
 ---
 
+Rackspace helps maximize virtualization advantages!
 
 <!-- more -->
 
