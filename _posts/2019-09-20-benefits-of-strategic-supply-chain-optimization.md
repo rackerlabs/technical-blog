@@ -5,7 +5,7 @@ date: 2019-09-20 00:01
 comments: true
 author: Manoj Mishra
 published: true
-authorIsRacker: false
+authorIsRacker: true
 categories:
     - AWS
 metaTitle: "Benefits of strategic supply chain optimization"

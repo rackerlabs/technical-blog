@@ -5,7 +5,7 @@ date: 2019-09-06 00:01
 comments: true
 author: Gautam raghavan M
 published: true
-authorIsRacker: false
+authorIsRacker: true
 categories:
     - AWS
 metaTitle: "Exploring Flex ASM and other Oracle features"

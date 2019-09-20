@@ -5,7 +5,7 @@ date: 2019-08-26 00:01
 comments: true
 author: Lakshmana Majji
 published: true
-authorIsRacker: false
+authorIsRacker: true
 categories:
     - AWS
 metaTitle: "Introduction to AWS and Oracle Cloud Services"
