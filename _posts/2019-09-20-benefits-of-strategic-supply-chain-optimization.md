@@ -7,7 +7,7 @@ author: Manoj Mishra
 published: true
 authorIsRacker: true
 categories:
-    - AWS
+    - general
 metaTitle: "Benefits of strategic supply chain optimization"
 metaDescription: "This blog describes some of the benefits of strategic supply chain optimization."
 ogTitle: "Benefits of strategic supply chain optimization"

@@ -9,7 +9,7 @@ categories:
   - General
 ---
 
-{% img right 2013-07-12-join-the-great-salt-sprint/saltstack_logo.jpg 200 %}
+{% img right 2013-08-16-join-the-great-salt-sprint/saltstack_logo.jpg 200 %}
 
 I am part of a team (along with Bruce Stringer and Jason Swindle) working on an
 internal application called Graffiti, which provides an easy way for front-line
