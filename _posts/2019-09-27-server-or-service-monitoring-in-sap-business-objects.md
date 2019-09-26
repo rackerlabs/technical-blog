@@ -15,24 +15,24 @@ ogDescription: "The new monitoring feature of the Central Management Console (CM
 ---
 
 The new monitoring feature of the Central Management Console (CMC) allows
-administrators to monitor the usage and health of the SAP BusinessObjects (BO)
+administrators to monitor the usage and health of the SAP&reg; BusinessObjects (BO)
 system.
 
 <!-- more -->
 
 The monitoring feature, introduced in SAP BO 4, has watches, probes,
-metrics and alerts as part of the monitoring process. There are some default
-monitoring features that allow an administrator, without any prior expertise or
+metrics, and alerts as part of the monitoring process. Some default
+monitoring features allow an administrator, without any prior expertise or
 knowledge on the topic, to obtain useful information about the status of the
 system. Before using this feature, you need to know which actions to perform and
 understand the existing limitations.
 
-You must ensure that you store the information for monitoring in the Monitoring
+You must ensure that you store the information for monitoring in the monitoring
 database. Because it is a CMS database, it works independently from the other
-two databases in SAP BO. To activate the Monitoring database, use the following
+two databases in SAP BO. To activate the monitoring database, use the following
 steps:
 
-1. Log into the CMC.
+1. Log in to the CMC.
 
 2. Select applications.
 
@@ -65,7 +65,7 @@ The default tab is divided into the following parts:
 
 -	**Overall Health**: The icon shows whether BO is working correctly or not.
 
--	**Recent aAerts**: Here you can see the alerts that were triggered by the
+-	**Recent Aerts**: Here you can see the alerts that were triggered by the
    system in the last 24 hours.
 
 -	**Graphical view of BI Landscape**: This panel includes a graphical or
@@ -89,7 +89,7 @@ image:
 Metrics are used to measure the health of a component. The metrics you define
 depend on the components that you are monitoring and your requirements. Examples
 of metrics include user login time, query execution time, CPU usage percentage,
-availability status for a system service, and others. You can use them in watches
+availability status for system service, and others. You can use them in watches
 and alerts, setting thresholds for *Warning and Danger* alerts. There are around
 250 predefined metrics. Furthermore, you can create your own metrics. The default
 metrics enable you to check the status of almost everything in the system.
@@ -99,7 +99,7 @@ You can see the historical and current status of any metric that you select.
 #### Watchlists
 
 This tab helps monitor the watches created. The watches are thresholds for
-metrics that show you if the metric is in a healthy, warning, or danger status
+metrics that show you if the metric is in a healthy, warning, or danger status,
 as shown in the following image:
 
 ![]({% asset_path 2019-09-27-server-or-service-monitoring-in-sap-business-objects/Picture3.png %})
@@ -119,40 +119,40 @@ that run through software development kit-based scripts.
 
 ![]({% asset_path 2019-09-27-server-or-service-monitoring-in-sap-business-objects/Picture4.png %})
 
-The most interesting part of the CMC monitoring, probes are the most difficult
-part as well. You create probes using a SDK.
+The most interesting part of the CMC monitoring, probes are the most challenging
+part as well. You create probes by using a software development kit (SDK).
 
 You can choose among the following system-generated default probes:
 
--	**CMS Logon Logoff**: Monitors that a users logging on to the BO system and
+-	**CMS Logon Logoff**: Monitors a user logging on to the BO system and
    how long it takes.
 
 -	**Crystal Reports service through Page and Cache Server**:  Monitors the
    availability and performance of the Crystal Reports service (through the page
    and the cache servers).
 
--	**Crystal Reports service through report application server**: Monitors the
+-	**Crystal Reports service through Report Application Server**: Monitors the
    availability and performance of the Crystal Reports service (through Report
    Application Server).
 
 -	**Infoview**: Monitors the availability and performance of logon and logoff
    of the InfoView web application.
 
--	**Web Intelligence Service Monitoring**: Tests the availability and
+-	**Web Intelligence Service monitoring**: Tests the availability and
    performance of the Web Intelligence Service through the report servers.
 
--	**CMS Ping**: Tests the core functionality of the CMS.
+-	**CMS ping**: Tests the core functionality of the CMS.
 
--	**CMS Cache**: Tests the availability of the CMS cache.
+-	**CMS cache**: Tests the availability of the CMS cache.
 
--	**CMS Database Connection**: Tests the connection to the CMS repository.
+-	**CMS database connection**: Tests the connection to the CMS repository.
 
--	**Start and Stop Servers**: Tests the start and stop functions of the
+-	**Start and stop servers**: Tests the start and stop functions of the
    different servers in the system.
 
 #### Alerts
 
-This option lists the alerts that have been set up in the Watchlist.
+This option lists the alerts that have been set up in the watchlist.
 
 ![]({% asset_path 2019-09-27-server-or-service-monitoring-in-sap-business-objects/Picture5.png %})
 
@@ -165,16 +165,16 @@ The preceding information provides an overview of the different tabs of the
 monitoring application and how to use them.
 
 To fully take advantage of monitoring, you need to make use of all the options.
-One nice example could be monitoring the response time to open a report in the
+One example could be monitoring the response time to open a report in the
 system. For this, use the probe `Web Intelligence Service Monitoring` option
 that logs in, opens, and refreshes a report in Web Intelligence. After this,
-check the metric of the time that takes to the system to execute the probe and
-the metric that shows if the probe was successful or not. Also, create a
-watchlist with this metric, and if the probes takes more than five seconds, you
+check the metric of the time that it takes for the system to execute the probe,
+and the metric that shows if the probe was successful or not. Also, create a
+watchlist with this metric, and if the probe takes more than five seconds, you
 get an email advising the administrator that the system is working a bit slowly.
 If the probe fails or takes more than 15 seconds, the system sends another email
 advising you that the system is not working properly. You can schedule this
-probe to be executed daily.
+probe to execute daily.
 
 With this simple scenario, you can detect any problems in the system automatically,
 before any user reports it. Moreover, the Alert tab can be used to show if there
