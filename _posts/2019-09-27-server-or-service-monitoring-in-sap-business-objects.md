@@ -65,7 +65,7 @@ The default tab is divided into the following parts:
 
 -	**Overall Health**: The icon shows whether BO is working correctly or not.
 
--	**Recent Aerts**: Here you can see the alerts that were triggered by the
+-	**Recent Alerts**: Here you can see the alerts that were triggered by the
    system in the last 24 hours.
 
 -	**Graphical view of BI Landscape**: This panel includes a graphical or
@@ -168,9 +168,9 @@ To fully take advantage of monitoring, you need to make use of all the options.
 One example could be monitoring the response time to open a report in the
 system. For this, use the probe `Web Intelligence Service Monitoring` option
 that logs in, opens, and refreshes a report in Web Intelligence. After this,
-check the metric of the time that it takes for the system to execute the probe,
-and the metric that shows if the probe was successful or not. Also, create a
-watchlist with this metric, and if the probe takes more than five seconds, you
+check both the metric of the time that it takes for the system to execute the
+probe and the metric that shows if the probe was successful or not. Also, create
+a watchlist with this metric, and if the probe takes more than five seconds, you
 get an email advising the administrator that the system is working a bit slowly.
 If the probe fails or takes more than 15 seconds, the system sends another email
 advising you that the system is not working properly. You can schedule this
