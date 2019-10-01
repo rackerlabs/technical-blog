@@ -48,7 +48,7 @@ The following image illustrates Web Dispatcher architecture:
 
 Following are some of Web Dispatcher's important functions:
 
-- Web Dispatcher lies between the Internet and the SAP system and serves as the entry point for HTTP and HTTPS requests into the SAP system, which consists of one or more SAP NetWeaver&tm; application servers.
+- Web Dispatcher lies between the Internet and the SAP system and serves as the entry point for HTTP and HTTPS requests into the SAP system, which consists of one or more SAP NetWeaver&trade; application servers.
 
 - As a *software web switch* that switches between network connections within the same domain, Web Dispatcher rejects or accepts connections. After accepting a connection, it balances the load to ensure an even distribution of web requests across the servers.
 
