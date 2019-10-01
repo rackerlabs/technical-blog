@@ -18,7 +18,7 @@ landscape of the incoming web requests, minimal configuration, and granular cont
 functions such as security or load balancing."
 ---
 
-This blog explains SAR&reg; Web Dispatcher, its features, and how to use it.
+This blog explains SAP&reg; Web Dispatcher, its features, and how to use it.
 
 <!-- more -->
 
