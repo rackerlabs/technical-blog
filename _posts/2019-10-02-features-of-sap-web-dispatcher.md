@@ -18,13 +18,13 @@ landscape of the incoming web requests, minimal configuration, and granular cont
 functions such as security or load balancing."
 ---
 
-This blog explains SAR&reg; Web dispatcher, its features, and how to use it.
+This blog explains SAR&reg; Web Dispatcher, its features, and how to use it.
 
 <!-- more -->
 
 ### Introduction
 
-Because the SAP landscape cannot be directly connected or exposed to the Internet, SAP Web Dispatcher provides the external connection, serving as an entry point for the connections or requests for the SAP Environment. Features of Web Dispatcher include load distribution across the landscape of incoming web requests, minimal configuration, and granular control of functions such as security or load balancing. Because Web Dispatcher does not contain a Common Gateway Interface (CGI) or start any executables with environment variables that depend on request inputs, it is not vulnerable to the shellshock class of attacks.
+Because the SAP landscape cannot be directly connected or exposed to the Internet, SAP Web Dispatcher provides the external connection, serving as an entry point for the connections or requests for the SAP environment. Features of Web Dispatcher include load distribution across the landscape of incoming web requests, minimal configuration, and granular control of functions such as security or load balancing. Because Web Dispatcher does not contain a Common Gateway Interface (CGI) or start any executables with environment variables that depend on request inputs, it is not vulnerable to the shellshock class of attacks.
 
 ### Web Dispatcher architecture
 
@@ -32,7 +32,7 @@ Web Dispatcher architecture has the following characteristics:
 
 - Configured correctly, Web Dispatcher is a single point of entry for IP addresses, ports, and URLs.
 
-- It forwards the incoming HTTP and HTTPS requests to the application server (AS) of the SAP system.
+- It forwards the incoming HTTP and HTTPS requests to the application server of the SAP system.
 
 - The architecture is the same as the architecture of the Internet Communication Manager (ICM).
 
@@ -48,27 +48,27 @@ The following image illustrates Web Dispatcher architecture:
 
 Following are some of Web Dispatcher's important functions:
 
-- Web Dispatcher lies between the Internet and the SAP system and serves as the entry point for HTTP and HTTPS requests into the SAP system, which consists of one or more SAP NetWeaver application servers.
+- Web Dispatcher lies between the Internet and the SAP system and serves as the entry point for HTTP and HTTPS requests into the SAP system, which consists of one or more SAP NetWeaver&tm; application servers.
 
-- As a *software web switch* that switches between network connections within the same Domain, Web dispatcher rejects or accepts connections. After accepting a connection, it balances the load to ensure an even distribution of web requests across the servers.
+- As a *software web switch* that switches between network connections within the same domain, Web Dispatcher rejects or accepts connections. After accepting a connection, it balances the load to ensure an even distribution of web requests across the servers.
 
 - Web Dispatcher contributes to security and balances the load in your SAP system.
 
-- You can use Web dispatcher in pure Advanced Business Application Programming (ABAP) systems, in combined ABAP/Java systems (*dual-stack* systems), and in pure Java systems.
+- You can use Web Dispatcher in pure Advanced Business Application Programming (ABAP) systems, in combined ABAP/Java systems (*dual-stack* systems), and in pure Java systems.
 
-### SAP Recommendations:
+### SAP recommendations:
 
-You can use Web Dispatcher if you want to cover only one aspect such as security functions or load balancing. For example, SAP recommends using Web Dispatcher if you do not need security functions, such as entry point in the DMZ, SSL, or URL filtering, but do need to balance the load between SAP NetWeaver application server instances.
+You can use Web Dispatcher if you want to cover only one aspect, such as security functions or load balancing. For example, SAP recommends using Web Dispatcher if you do not need security functions, such as entry point in the DMZ, SSL, or URL filtering, but do need to balance the load between SAP NetWeaver application server instances.
 
-Use Web Dispatcher for a SAP system with mulitple application server instances for Web applications.
+Use Web Dispatcher for an SAP system with multiple application server instances for Web applications.
 
 You can run Web Dispatcher on a server that connects directly to the Internet. It requires the following minimal configuration in the profile file (`<xx>` refers to the instance number):
 
-- The Port which recieves the HTTP or HTTPS requests (parameter `icm/server_port_ <xx>`)
+- The port that receives the HTTP or HTTPS requests (parameter `icm/server_port_ <xx>`)
 
 - The computer and HTTP port of SAP message servers (parameter `rdisp/mshost` and parameter `ms/http_port or wdisp/system_ <xx>`)
 
-Although Web Dispatcher is downward-compatible to older releases of SAP systems, some restrictions on release combinations of Web Dispatcher and SAP systemssupported by SAP might apply.
+Although Web Dispatcher is downward-compatible to older releases of SAP systems, some restrictions on release combinations of Web Dispatcher and SAP systems supported by SAP might apply.
 
 At the latest, SAP releases its Web Dispatcher for older versions of SAP systems when the kernel release of the Web Dispatcher on which it is based is released. It is used as the downward-compatible kernel for the SAP system.
 
@@ -78,19 +78,19 @@ Features of Web Dispatcher include:
 
 - **Application server selection**: When you chose the load balancing process for the destination server, Web Dispatcher forwards the content to the ICM of the destination application server.
 
-- **Multiple system conguration**: Place Web Dispatcher in front of multiple SAP systems and configure which requests should go to which system or perform load balancing across system boundaries.
+- **Multiple system configuration**: Place Web Dispatcher in front of multiple SAP systems and configure which requests should go to which system or perform load balancing across system boundaries.
 
 - **URL filtering**: Restrict access to your system by defining the URLs that you want to reject.
 
 - **Web caching**: Use Web Dispatcher as a web cache to improve the response times and to conserve the application server cache.
 
-In a classic SAP system web environment, Web dispatcher uses the message server to balance load. It forwards incoming HTTP and HTTPS requests to the application servers and returns the responses from the backend to the client.
+In a classic SAP system web environment, Web Dispatcher uses the message server to balance load. It forwards incoming HTTP and HTTPS requests to the application servers and returns the responses from the backend to the client.
 
-Outgoing requests, such as requests to another SAP NetWeaver Application Server, are not sent using Web Dispatcher. Instead, the appropriate intranet proxy server ends outgoing requests.
+Outgoing requests, such as requests to another SAP NetWeaver application server, are not sent using Web Dispatcher. Instead, the appropriate intranet proxy server ends outgoing requests.
 
 ### Conclusion
 
-Implementing SAP Web Dispatcher is not difficult, but you need a basic understanding of  how the Internet works. After the reading this blog, I am sure you understand the importance of the SAP Web Dispatcher and its features. Including it in your SAP landscape with minimal configuration makes a great difference for system security and load balancing without the need for extra resources.
+Implementing SAP Web Dispatcher is not difficult, but you need a basic understanding of  how the Internet works. After reading this blog, I am sure you understand the importance of the SAP Web Dispatcher and its features. Including it in your SAP landscape with minimal configuration makes a significant difference for system security and load balancing without the need for extra resources.
 
 Use the Feedback tab to make any comments or ask questions.
 
