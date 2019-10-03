@@ -70,6 +70,14 @@ image:
 
 ![]({% asset_path 2018-10-04-backup-oracle-with-amazon-simple-storage-service/Picture3.png %})
 
+To find your access key ID and secret access key:
+ 
+1. Log in to your AWS Management Console.
+2. Click on your user name at the top right of the page.
+3. Click **Security Credentials** in the drop-down menu.
+4. Your keys are listed in the  **Access keys** section.
+5. If you do not have a key, click **Create access key**.
+
 #### Register for an account
 
 Register for an Oracle.com or Oracle Technology Network (OTN) account. You must
