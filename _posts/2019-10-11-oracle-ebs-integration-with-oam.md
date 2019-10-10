@@ -10,15 +10,15 @@ categories:
     - Oracle
     - database
 metaTitle: "Integrate Oracle EBS with OAM"
-metaDescription: "To integrate multiple E-Business Suites (EBS) with OAM for single sign on, you need to perform integration steps on each of Oracle E-Business Suite instance."
+metaDescription: "To integrate multiple E-Business Suites (EBS) with OAM for single sign-on, you need to perform integration steps on each Oracle E-Business Suite instance."
 ogTitle: "Integrate Oracle EBS with OAM"
-ogDescription: "To integrate multiple E-Business Suites (EBS) with OAM for single sign on, you need to perform integration steps on each of Oracle E-Business Suite instance."
+ogDescription: "To integrate multiple E-Business Suites (EBS) with OAM for single sign-on, you need to perform integration steps on each Oracle E-Business Suite instance."
 ---
 
 Oracle&reg; Access Manager (OAM) version 12.2.1.3 provides identity management and an
 access control system that enables users to access all supported applications. To
-integrate multiple Oracle E-Business Suites (EBS) version R12.2 with OAM for single sign
-on (SSO), you need to perform integration steps on each EBS instance.
+integrate multiple Oracle E-Business Suites (EBS) version R12.2 with OAM for single
+sign-on (SSO), you need to perform integration steps on each EBS instance.
 
 <!-- more -->
 
@@ -34,14 +34,14 @@ management (authentication and authorization) to resources (web pages and applic
 
 ### Integration prerequisites
 
-Before you begin integration, complete the following steps
+Before you begin integration, complete the following steps:
 
-1. Apply the latest Active Directory (AD) and technology stack (TXK) Delta update packs.
+1. Apply the latest Active Directory&reg; (AD) and EBS Technology Stack (TXK) Delta update packs.
 
-2. Update the EBS application-tier Java Development Kit (JDK) to a JDK 7 update 13
+2. Update the EBS application-tier Java&reg; Development Kit (JDK) to a JDK 7 update 13
 (January 2017 CPU) or later.
 
-3. Install and configure OAM 12c Release 2 Patchset 3 (12.2.1.3.0).
+3. Install and configure OAM 12c Release 2 patch set 3 (12.2.1.3.0).
 
 ### Steps to integrate EBS with OAM
 
@@ -67,19 +67,19 @@ The preceding script performs the following tasks:
 
 1) Creates a managed server `oaea_server<n>` if it does not already exist.
 2) Creates a data source `OAEADatasource` if it does not already exist.
-3) Deploys the EBS AccessGate application named `accessgate`.
+3) Deploys the EBS AccessGate application (`accessgate`).
 
-The script has optional parameter, **managedsrvname**, which defaults to `oaea_server1`,
-and parameter, **managedsrvport**, which defaults to `6801 + port pool`. If you want to
+The script has an optional parameter, **managedsrvname**, which defaults to `oaea_server1`,
+and a parameter, **managedsrvport**, which defaults to `6801 + port pool`. If you want to
 deploy AccessGate to a non-default managed server, you can specify these parameters.
 
 #### 2. Register EBS with OAM
 
-Source the EBS Environment on the **RUN (R)** file system. If you run `echo $FILE_EDITION`
-and it returns **run**, you are on the correct files system. Ensure there is no active
+Source the EBS environment on the **RUN (R)** file system. If you run `echo $FILE_EDITION`
+and it returns **run**, you are on the correct file system. Ensure there is no active
 online patching cycle.
 
-If you have integrated EBS with Oracle Internet Directory, execute the following script:
+If you have integrated EBS with Oracle Internet Directory (OID), execute the following script:
 
     $ txkrun.pl -script=SetOAMReg -registeroam=yes \
     -oamHost=<OAM_URL>:<OAM_PORT> \
@@ -94,22 +94,22 @@ If you have integrated EBS with Oracle Internet Directory, execute the following
 
 Log in to EBS at `http://<ebshost>.<domain>:<port>/OA_HTML/AppsLogin`.
 
-When this redirects you to the OAM SSO page, log in by using valid Oracle Internet
-Directory (OID) user credentials. After successful authentication, the system redirects you to your EBS home page.
+When this redirects you to the OAM SSO page, log in by using valid OID user credentials.
+After successful authentication, the system redirects you to your EBS home page.
 
 #### 4. Perform the online patching cycle
 
-Execute `fs_clone` to synchronize the changes to your run/patch filesystem before starting
+Execute `fs_clone` to synchronize the changes to your run/patch file system before starting
 a new online patching cycle.
 
 ### OAM integration architecture differences
 
-Two siginificant differences exsist between OAM R12.1 and R12.2 architectures.
+Two significant differences exist between OAM R12.1 and R12.2 architectures.
 
 #### R12.1 and 11i EBS integration with OAM and OID
 
-To integrate EBS R12.1 with OAM, you need to install and deploy all the services including
-Oracle HTTP Server (OHS) and Weblogic as shown in the following image. In R12.1, you need
+To integrate EBS R12.1 with OAM, you need to install and deploy all the services, including
+Oracle HTTP Server (OHS) and Weblogic&reg;, as shown in the following image. In R12.1, you need
 to manage more services, and it takes more resource hours to implement them in comparison to R12.2.
 
 ![]({% asset_path 2019-10-11-integrate-oracle-ebs-with-oam/Picture1.png %})
@@ -119,7 +119,7 @@ to manage more services, and it takes more resource hours to implement them in c
 #### R12.2 Integration with OAM and OID
 
 The integration of OAM has changed in EBS R12.2. Version R12.2, built on OHS, has Weblogic
-built-in, which significantly changes how you integrate EBS with other Fusion products
+built-in, which significantly changes how you integrate EBS with other Oracle Fusion products,
 such as OAM. You need to configure and deploy Webgate and Accessgate. Deploy Webgate on
 top of R12.2 OHS 11g home, and deploy Accessgate as a separate managed server on top of
 R12.2 WebLogic, as shown in the following image:
@@ -133,7 +133,7 @@ R12.2 WebLogic, as shown in the following image:
 This blog describes how to integrate OAM with EBS 12.2 applications to maintain a single
 registration for an EBS instance. You can apply this integration on the run/patch file
 system in EBS 12.2 applications. Because OAM provides centralized, policy-based
-authentication and SSO for web-based applications and Cloud services, this technology is
+authentication and SSO for web-based applications and cloud services, this technology is
 necessary for organizations that use Oracle applications.
 
 Use the Feedback tab to make any comments or ask questions.
