@@ -96,7 +96,7 @@ Perform the following steps after Step 3 completes to shut down the non-CDB file
 
 - Run the following code at the SQL prompt:
 
-        shudown immediate
+        shutdown immediate
 
 #### Step 5: Start the CDB
 
