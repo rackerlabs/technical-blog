@@ -14,8 +14,8 @@ ogTitle: "Apache Cassandra backup and recovery"
 ogDescription: "This blog shows you how to backup Apache Cassandra databases and restore them after a failure."
 ---
 
-Database backup and recovery is one of the crucial day-to-day activity that a
-database administrator (DBA) performs. A database backup is the copy of your
+Database backup and recovery is one of the crucial day-to-day activities that a
+database administrator (DBA) performs. A database backup is a copy of your
 data that can be used to recover the data in the event of data loss.
 
 This blog shows you how to backup Apache&reg; Cassandra&reg; databases and
@@ -136,6 +136,11 @@ file to the **/bitnami/Cassandra/data/data/backup** directory.
 After copying the backup tar file to a non-default location, drop the **employee**
 table.
 
+**NOTE**: Cassandra distributes data based on the defined partition keys and
+replication factors across the cluster, so you must run this backup command
+from all your nodes. This example uses the Linux&reg; shell script in crontab,
+which backs up all nodes at once. 
+
     $ cqlsh -u cassandra -p *******
 
     Connected to Test_Cassandra at 127.0.0.1:9042.
@@ -250,6 +255,7 @@ Use the following command to restore the data:
        Average transfer rate   : 0.073KiB/s
        Peak transfer rate      : 0.074KiB/s
 
+Repeat these steps for every node to retrieve the data from their sstables.
 
 Repair the data by using `nodetool repair`, which compares all replicas of the
 data stored on the node on which the command runs and updates each replica to
@@ -299,7 +305,7 @@ preceding steps without the table restore part. You must recreate the
 **keyspace** and load data by using `sstableloader`.
 
 The number of nodes in the source and target databases cluster doesn’t matter
-with `sstableloader`. This is because it reads each **sstables** from the backup.
+with `sstableloader` because it reads each **sstables** from the backup.
 Then, it streams the data into the cluster while placing the data according to
 the defined replication strategy in the cluster.
 
