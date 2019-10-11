@@ -136,6 +136,8 @@ file to the **/bitnami/Cassandra/data/data/backup** directory.
 After copying the backup tar file to a non-default location, drop the **employee**
 table.
 
+**NOTE**: Cassandra distributes data based on defined partition keys and replication factors across the cluster, so you must run this backup command from all your nodes (this example uses linux shell script in crontab which backups all nodes at once). 
+
     $ cqlsh -u cassandra -p *******
 
     Connected to Test_Cassandra at 127.0.0.1:9042.
@@ -250,6 +252,7 @@ Use the following command to restore the data:
        Average transfer rate   : 0.073KiB/s
        Peak transfer rate      : 0.074KiB/s
 
+Repeat these steps for every node to retrieve the data from their sstables.
 
 Repair the data by using `nodetool repair`, which compares all replicas of the
 data stored on the node on which the command runs and updates each replica to
