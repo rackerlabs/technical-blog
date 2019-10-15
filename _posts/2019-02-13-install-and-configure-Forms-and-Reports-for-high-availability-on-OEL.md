@@ -469,7 +469,7 @@ Perform the following configuration steps to configure reports on node2:
 
 3. Run the following command to create the reports server instance:
 
-        wls:/forms_domain/serverConfig/> createReportsToolsInstance(instanceName='reptools1',machine='<NODE1 Hostname>')
+        wls:/forms_domain/serverConfig/> createReportsToolsInstance(instanceName='reptools2',machine='<NODE2 Hostname>')
 
 4. Run the following command to edit **rwservlet.prpoerties**  to enable Reports
    Webaccess:
