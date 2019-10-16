@@ -14,7 +14,7 @@ ogDescription: "This blog discusses three ways that SalesForce Health Cloud can 
 ---
 
 Salesforce&reg; Health Cloud is a top-ranked healthcare customer relationship management (CRM) system. 
-The software aims to put patients at the heart of every decision&mdash; 
+The software aims to put patients at the heart of every decision&mdash;
 strengthening relationships and improving outcomes.
 
 This blog discusses three ways that SalesForce Health Cloud can help 
@@ -51,7 +51,7 @@ guy&mdash;at least, not while I was awake.
 Hence, the genesis of this post. I’ve read plenty of blog posts about the patient experience, and 
 I don’t expect to fix all of our healthcare problems with this article, but this is a call to action. 
 Technology isn’t a panacea for all that ails our healthcare delivery system, and neither is “better data” 
-or “better processes” if they aren’t focuased on the outcome. We must tie all three together&mdash;technology, data, 
+or “better processes” if they aren’t focused on the outcome. We must tie all three together&mdash;technology, data, 
 and process&mdash;to focus on the patient experience, measure it, and improve it.
 
 ### Why you need to prioritize patient experience
@@ -79,7 +79,7 @@ It’s something I’ve personally spent a lot of time talking through with our 
 
 #### Improve the patient experience with Salesforce Health Cloud
 
-We have the technological maturity in our critical systems&mdash;eletronic health record(EHR), CRM,
+We have the technological maturity in our critical systems&mdash;electronic health record(EHR), CRM,
 WCM, MarTech, Social, Middleware/Enterprise Service Bus (ESB), cloud storage and computing,
 data warehousing, and artificial intelligence and machine learning (AI/ML) tools. We have the data. We 
 have the processes. Let’s put it all together.
