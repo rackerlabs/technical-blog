@@ -66,12 +66,7 @@ Data Redaction has the following characteristics:
 
 Following are some examples of the different types of redaction:
 
-| Type of redaction  | Database data                   | Displayed redacted values          |
-|--------------------|---------------------------------|------------------------------------|
-| Full               | 13-DEC-25,/ Vijay Garg / 859.70 | 01-JAN-01 / xxxxxxxxxxxxxxx / 0.00 |
-| Partial            | 3682-4864-2863-9831 / 13-DEC-25 | 0000-0000-0000-9831 / 01-DEC-25    |
-| Regular Expression | Saurabh.garg@rackspace.com      | xxxxxx@gmail.com                   |
-| Random             | 3682-4864-2863-9831 / 13-DEC-25 | 3268-2356-1234-9123 / 11-MAR-12    |
+![]({% asset_path 2019-10-17-secure-sensitive-data-in-oracle/Table1.png %})
 
 ### Exceptions for redaction
 
