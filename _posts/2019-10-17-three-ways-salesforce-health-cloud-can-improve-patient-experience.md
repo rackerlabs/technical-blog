@@ -14,8 +14,8 @@ ogDescription: "This blog discusses three ways that SalesForce Health Cloud can 
 ---
 
 Salesforce&reg; Health Cloud is a top-ranked healthcare customer relationship management (CRM) system. 
-The software aims to put patients at the heart of every decision&mdash;
-strengthening relationships and improving outcomes.
+The software aims to put patients at the heart of every decision&mdash;strengthening
+relationships and improving outcomes.
 
 This blog discusses three ways that SalesForce Health Cloud can help 
 improve patient experience within the health care industry.
@@ -139,7 +139,7 @@ As a medical professional, you gather EHR data from 15 minutes a patient spends 
 
 [One breast cancer study](https://www.salesforce.com/customer-success-stories/uc-health/) used the Salesforce platform to manage the electronic records of 100,000 women and analyze these records to inform their treatment. As the doctor in charge of that study put it, “a study of such magnitude would not have been possible without automation.” Health Cloud allowed the team to record voluminous amounts of patient history and medical profiles and keep track of personalized insights, as well as follow these patients over time. Imagine the physician’s interaction with the woman who slipped through the cracks of the traditional system. Can you see the gratitude on her face, knowing that her life was saved by innovation and by pushing against the status quo?
 
-As your healthcare staff builds EHR databases, continually adding to patient data, the Health Cloud system can use complex data ETL processes to collect, analyze, identify patient risk factors and initiate an action, send a text message or email with targeted content for patient education, available appointments, etc. — all without any human intervention. Of course, you’ll need human interaction eventually, but why not spend human resources on the things that matter!
+As your healthcare staff builds EHR databases, continually adding to patient data, the Health Cloud system can use complex data ETL processes to collect, analyze, identify patient risk factors and initiate an action, send a text message or email with targeted content for patient education, available appointments&mdash;all without any human intervention. Of course, you’ll need human interaction eventually, but why not spend human resources on the things that matter!
 
 ### Elevate your patient experience to elevate Your business
 
