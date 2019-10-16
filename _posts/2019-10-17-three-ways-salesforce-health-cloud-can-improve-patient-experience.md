@@ -79,7 +79,7 @@ It’s something I’ve personally spent a lot of time talking through with our 
 
 #### Improve the patient experience with Salesforce Health Cloud
 
-We have the technological maturity in our critical systems&mdash;electronic health record(EHR), CRM,
+We have the technological maturity in our critical systems&mdash;electronic health record (EHR), CRM,
 WCM, MarTech, Social, Middleware/Enterprise Service Bus (ESB), cloud storage and computing,
 data warehousing, and artificial intelligence and machine learning (AI/ML) tools. We have the data. We 
 have the processes. Let’s put it all together.
@@ -106,8 +106,8 @@ erode patient confidence in a healthcare provider. Your patients may wonder: Did
 information? Why isn’t my healthcare team communicating with each other? Are they truly capable of treating me?
 
 Salesforce Health Cloud aims to eliminate data silos, ensuring every member of a patient’s care team has access 
-to the same electronic health records (EHR). Doing so not only betters the patient experience but also saves healthcare
-providers precious time. Providing the healthcare team with [comprehensive patient data](https://relationedge.com/6-best-practices-for-managing-and-cleaning-your-salesforce-data/), including health conditions and medications, appointment history, and caregiver information, can make patient consultations much more efficient and eliminate much of the risk of human error. 
+to the same EHRs. Doing so not only betters the patient experience but also saves healthcare
+providers precious time. Providing the healthcare team with [comprehensive patient data](https://relationedge.com/6-best-practices-for-managing-and-cleaning-your-salesforce-data/), including health conditions and medications, appointment history, and caregiver information, can make patient consultations much more efficient, and eliminate much of the risk of human error. 
 
 Health Cloud is designed to do all of this while also meeting HIPAA/HITRUST and other [certification and regulatory standards](https://compliance.salesforce.com/en/services/health-cloud). This cloud software provides a complete view of the patient and can even integrate data from medical devices to provide a 360-degree, coordinated view of your patients and their health.
 
@@ -135,17 +135,17 @@ home have seen patient satisfaction go up and readmission rates go down.
 
 What percentage of your digital footprint&mdash;who you are, what you like, your diet, hobbies&mdash;culminates from the 15 minutes you spend in an appointment that your doctor was 20 minutes late for? I bet it’s next to zero. 
 
-As a medical professional, you gather EHR data from 15 minutes a patient spends in your office, but most of it is a cut and paste from previous visits or the intake form they filled out for the fifth time. Then there is everything else that happens outside the four walls of the hospital. Health Cloud helps you pull all of your patient data together to gain actionable insights.
+As a medical professional, you gather EHR data from the 15 minutes a patient spends in your office, but most of it is a cut and paste from previous visits or the intake form they filled out for the fifth time. Then, there is everything else that happens outside the four walls of the hospital. Health Cloud helps you pull all of your patient data together to gain actionable insights.
 
 [One breast cancer study](https://www.salesforce.com/customer-success-stories/uc-health/) used the Salesforce platform to manage the electronic records of 100,000 women and analyze these records to inform their treatment. As the doctor in charge of that study put it, “a study of such magnitude would not have been possible without automation.” Health Cloud allowed the team to record voluminous amounts of patient history and medical profiles and keep track of personalized insights, as well as follow these patients over time. Imagine the physician’s interaction with the woman who slipped through the cracks of the traditional system. Can you see the gratitude on her face, knowing that her life was saved by innovation and by pushing against the status quo?
 
-As your healthcare staff builds EHR databases, continually adding to patient data, the Health Cloud system can use complex data ETL processes to collect, analyze, identify patient risk factors and initiate an action, send a text message or email with targeted content for patient education, available appointments&mdash;all without any human intervention. Of course, you’ll need human interaction eventually, but why not spend human resources on the things that matter!
+As your healthcare staff builds EHR databases, continually adding to patient data, the Health Cloud system can use complex-data ETL processes to collect, analyze, identify patient risk factors and initiate an action, send a text message or email with targeted content for patient education, and check available appointments&mdash;all without any human intervention. Of course, you’ll need human interaction eventually, but why not spend human resources on the things that matter!
 
-### Elevate your patient experience to elevate Your business
+### Elevate your patient experience to elevate your business
 
 These are just three examples that scratch the surface of what’s possible when you tie together technology, data, and process. Salesforce isn’t a fit for every challenge in our healthcare delivery system, but you owe it to your patients to explore what this platform can do. Remove the barriers, free your data, innovate, and focus on outcomes!
 
-I know this post is a little tongue in cheek, and I hope you can appreciate the humor in my observations. Unfortunately, I can’t choose a surgeon based upon his use of CRM (yet) but I have chosen doctors based upon the use of an EHR versus paper charts. Perhaps someday, CRM will be as ubiquitous and contributive to measuring patient experience and satisfaction score as EHR is to documenting my blood pressure.
+I know this post is a little tongue in cheek, and I hope you can appreciate the humor in my observations. Unfortunately, I can’t choose a surgeon based on his use of CRM (yet), but I have chosen doctors based on the use of an EHR versus paper charts. Perhaps someday, CRM will be as ubiquitous and contributive to measuring patient experience and satisfaction score as EHR is to documenting my blood pressure.
 
 A final note. As I edit this, preparing to post, I received a call from the billing company. The charges are being written off. A small victory for me, but let’s commit to fixing this together to do it right the first time. The doctor should have been paid for his time, and the billing company should have been paid for theirs. Until then, I have the remaining 25% of the feeling in my finger to look forward to&mdash;someday.
 
