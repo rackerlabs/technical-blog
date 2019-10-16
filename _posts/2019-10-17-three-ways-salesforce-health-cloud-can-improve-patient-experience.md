@@ -15,7 +15,7 @@ ogDescription: "This blog discusses three ways that SalesForce Health Cloud can 
 
 Salesforce Health Cloud is a top-ranked healthcare CRM. 
 The software aims to put patients at the heart of every decision, 
-strengthening relationships and improving outcomes.
+strengthening relationships, and improving outcomes.
 
 This blog discusses three ways that SalesForce Health Cloud can help 
 improve patient experience within the health care industry.
