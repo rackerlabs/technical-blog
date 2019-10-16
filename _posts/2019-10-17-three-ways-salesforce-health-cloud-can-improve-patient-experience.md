@@ -21,12 +21,7 @@ This blog discusses three ways that SalesForce Health Cloud can help
 improve patient experience within the health care industry.
 
 <!-- more -->
-2019-10-17-three-ways-salesforce-health-cloud-can-improve-patient-experience
 ![]({% asset_path 2019-10-17-three-ways-salesforce-health-cloud-can-improve-patient-experience/Picture1.png %})
-
-**Image source**: [https://dzone.com/articles/using-casandras-sstable-bulk](https://dzone.com/articles/using-casandras-sstable-bulk)
-
-### Three Ways Salesforce Health Cloud Can Improve Patient Experience
 
 I’m sitting here, on my couch in San Diego, in disbelief. I’m looking at a medical bill that 
 I just received — 18 months after my spinal procedure — from a Surgical Center that I’ve never been to. 
@@ -58,19 +53,19 @@ Technology isn’t a panacea for all that ails our healthcare delivery system, a
 or “better processes” if they aren’t outcome focused. We must tie all three together — technology, data, 
 and process — to focus on the patient experience, measure it and improve it.
 
-### Why You Need to Prioritize Patient Experience
+### Why you need to prioritize patient experience
 
 Your competitive edge and the viability of your business depend on your ability to stitch together 
 technology, data and processes to be fanatically focused on the experiences of your customers! 
 
 These digital and analog experiences can be as meaningful as you design and build them to be. 
-And I’d do it fast — your competitors are! Patient satisfaction is tied more and more to your 
+And I’d do it fast — your competitors are! [Patient satisfaction](https://www.accessefm.com/blog/how-does-patient-satisfaction-impact-reimbursement) is tied more and more to your 
 reimbursements. You have to earn their business. Over and over again. 
 
 Patients expect more. They are not satisfied with fragmented, siloed, or slow-moving health 
 services. They know technology can transform their experience, and they want to see it used. 
 We’re not just talking about young people (or overly optimistic spry 40-something’s like me) — 
-a DuetHealth survey found 89% of patients aged 55 and older said they want to manage their own 
+a [DuetHealth survey](https://www.duethealth.com/patient-engagement-stats-that-keep-hospital-ceos-up-at-night/) found 89% of patients aged 55 and older said they want to manage their own 
 healthcare and will need technology access to do so. Additionally, 35% of those senior patients 
 felt their health plans don’t adequately leverage health technology.
 
@@ -81,13 +76,13 @@ But, I’m not going to complain without proposing a solution. So let me share s
 about, that I’ve seen work, that could have prevented my situation with an unexpected medical bill. 
 And it’s something I’ve personally spent a lot of time talking through with our customers.
 
-#### Improving the Patient Experience with Salesforce Health Cloud
+#### Improving the patient experience with Salesforce Health Cloud
 
 We have the technological maturity in our critical systems — EHR, CRM, WCM, MarTech, Social, 
 Middleware/ESB, Cloud storage/computing, Data warehousing, AI/ML tools. We have the data. We 
 have the processes. Let’s put it all together!
 
-Salesforce Health Cloud has been top-ranked as a healthcare CRM. The software aims to put 
+[Salesforce Health Cloud](https://www.salesforce.com/solutions/industries/healthcare/health-cloud/) has been top-ranked as a healthcare CRM. The software aims to put 
 patients at the heart of every decision, strengthening relationships and improving outcomes. 
 I’ve helped businesses like yours implement and use Health Cloud to enable their staff with tools 
 to deliver a better patient experience. You can use this software to weave together all of your 
@@ -96,7 +91,7 @@ to improve your quality of care.
 
 Here are a few ways Salesforce Health Cloud can positively impact your patient experience: 
 
-##### Improve the Continuity of Care
+##### Improve the continuity of care
 
 Now, I admit that I’m lucky. I am reasonably healthy with no chronic conditions. After my injury, 
 I was in and out of the hospital fairly quickly (my left forefinger is still 25% numb, but hey, 
@@ -111,16 +106,16 @@ information? Why isn’t my healthcare team communicating with each other? Are t
 
 Salesforce Health Cloud aims to eliminate data silos, ensuring every member of a patient’s care team has access 
 to the same electronic health records (EHR). This not only betters the patient experience, but also saves healthcare
-providers precious time. Providing the healthcare team with comprehensive patient data — including health conditions and medications, appointment history, and caregiver information — can make patient consultations much more efficient and eliminate much of the risk of human error. 
+providers precious time. Providing the healthcare team with [comprehensive patient data](https://relationedge.com/6-best-practices-for-managing-and-cleaning-your-salesforce-data/) — including health conditions and medications, appointment history, and caregiver information — can make patient consultations much more efficient and eliminate much of the risk of human error. 
 
-Health Cloud is designed to do all of this while also meeting HIPAA/HITRUST and other certification and regulatory standards. This cloud software provides a complete view of the patient and can even integrate data from medical devices to provide a 360-degree, coordinated view of your patients and their health.
+Health Cloud is designed to do all of this while also meeting HIPAA/HITRUST and other [certification and regulatory standards](https://compliance.salesforce.com/en/services/health-cloud). This cloud software provides a complete view of the patient and can even integrate data from medical devices to provide a 360-degree, coordinated view of your patients and their health.
 
-#### Offer Coordinated Home Care and Telehealth Services
+#### Offer coordinated home care and telehealth services
 
 I haven’t been back for my follow-up. Maybe that makes me a bad patient, but I didn’t see the value. 
 Do I need an X-ray, MRI, or perhaps a CT? Honestly, I don’t know — no one told me what to do next. But 
 someone did hand me an appointment card, which I promptly threw away on the principle that “If they want 
-my business, they’ll call me.” (They didn’t.)
+my business, they’ll call me.” (They didn’t).
 
 Trips to the doctor’s office often feel like a hassle. If my doctor does need to follow up on my recovery, 
 I’d be happier to simply update him over the phone. Home care and telehealth services save time, money, and 
@@ -132,20 +127,20 @@ a patient’s treatment. For patients with mobility issues, video conferencing a
 accessible way for doctors to follow up. The Health Cloud platform enables you to leverage services that 
 patients can access from the comfort of their homes.
 
-Healthcare providers that have started employing technology to offer these types of health services at 
+[Healthcare providers that have started employing technology](https://www.salesforce.com/form/industries/age-of-the-patient-ebook/) to offer these types of health services at 
 home have seen patient satisfaction go up — and readmission rates go down.
 
-#### Analyze Larger Patient Data Sets
+#### Analyze larger patient data sets
 
 What percentage of your digital footprint — of who you are, what you like, your diet, hobbies — culminates from the 15 minutes you spend in an appointment that your doctor was 20 minutes late for? I bet it’s next to zero. 
 
 As a medical professional, you gather EHR data from 15 minutes a patient spends in your office; but most of it is a cut and paste from previous visits or the intake form they filled out for the fifth time. Then, there is everything else that happens outside the four walls of the hospital. Health Cloud helps you pull all of your patient data together to gain actionable insights.
 
-One breast cancer study used the Salesforce platform to manage the electronic records of 100,000 women and analyze these records in order to inform their treatment. As the doctor in charge of that study put it, “a study of such magnitude would not have been possible without automation.” Health Cloud allowed the team to record voluminous amounts of patient history and medical profiles and keep track of personalized insights, as well as follow these patients over time. Imagine the physician’s interaction with the woman who slipped through the cracks of the traditional system. Can you see the gratitude on her face, knowing that her life was saved by innovation and by pushing against the status quo?
+[One breast cancer study](https://www.salesforce.com/customer-success-stories/uc-health/) used the Salesforce platform to manage the electronic records of 100,000 women and analyze these records in order to inform their treatment. As the doctor in charge of that study put it, “a study of such magnitude would not have been possible without automation.” Health Cloud allowed the team to record voluminous amounts of patient history and medical profiles and keep track of personalized insights, as well as follow these patients over time. Imagine the physician’s interaction with the woman who slipped through the cracks of the traditional system. Can you see the gratitude on her face, knowing that her life was saved by innovation and by pushing against the status quo?
 
 As your healthcare staff builds EHR databases, continually adding to patient data, the Health Cloud system can use complex data ETL processes to collect, analyze, identify patient risk factors and initiate an action, send a text message or email with targeted content for patient education, available appointments, etc. — all without any human intervention. Of course, you’ll need human interaction eventually, but why not spend human resources on the things that matter!
 
-#### Elevate Your Patient Experience to Elevate Your Business
+### Elevate your patient experience to elevate Your business
 
 These are just three examples that scratch the surface of what’s possible when you tie together technology, data and process. Salesforce isn’t a fit for every challenge in our healthcare delivery system, but you owe it to your patients to explore what this platform can do. Remove the barriers, free your data, innovate and focus on outcomes!
 
