@@ -101,7 +101,7 @@ that’s way better than before surgery when it was 75% numb).
 What about those who aren’t as lucky? What about the aging population and those dealing with chronic diseases?   
 
 Being sick is tiring and stressful, and when your patients are already feeling low, nothing is worse than having 
-to provide the same information repeatedly during their hospital stay. Doing this not only exhausting, but can also 
+to provide the same information repeatedly during their hospital stay. Doing this is not only exhausting, but can also 
 erode patient confidence in a healthcare provider. Your patients may wonder: Didn’t I already tell someone this 
 information? Why isn’t my healthcare team communicating with each other? Are they truly capable of treating me?
 
