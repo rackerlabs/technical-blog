@@ -76,7 +76,7 @@ But, I’m not going to complain without proposing a solution. So let me share s
 about, that I’ve seen work, that could have prevented my situation with an unexpected medical bill. 
 And it’s something I’ve personally spent a lot of time talking through with our customers.
 
-#### Improving the patient experience with Salesforce Health Cloud
+#### Improve the patient experience with Salesforce Health Cloud
 
 We have the technological maturity in our critical systems — EHR, CRM, WCM, MarTech, Social, 
 Middleware/ESB, Cloud storage/computing, Data warehousing, AI/ML tools. We have the data. We 
@@ -89,7 +89,7 @@ to deliver a better patient experience. You can use this software to weave toget
 technology tools, removing data silos, enabling home services, and leveraging data from multiple sources 
 to improve your quality of care.
 
-Here are a few ways Salesforce Health Cloud can positively impact your patient experience: 
+Salesforce Health Cloud can positively impact your patient experience in several ways. 
 
 ##### Improve the continuity of care
 
