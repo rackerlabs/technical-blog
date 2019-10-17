@@ -3,7 +3,7 @@ layout: post
 title: "Three ways Salesforce Health Cloud can improve patient experience"
 date: 2019-10-17 00:00
 comments: true
-author: Bob Rogers
+author: Rob Rogers
 published: true
 authorIsRacker: true
 categories:
