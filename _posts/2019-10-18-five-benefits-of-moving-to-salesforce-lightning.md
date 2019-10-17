@@ -14,43 +14,40 @@ ogDescription: "This blog outlines five benefits of transitioning from Salesforc
 ---
 
 As a Salesforce&reg; administrator, you probably know that it is in your organization’s 
-best interest to make the leap from Salesforce Classic to Lightning. The challenge is &mdash; 
-how can you sell this critical step to your superiors and your team? 
+best interest to make the leap from Salesforce Classic to Lightning. Change can be
+daunting, even when you know you are moving toward a better solution. The challenge
+is&mdash;how can you sell this critical step to your superiors and your team? 
 
 This blog outlines five benefits of transitioning from Salesforce Classic to Salesforce Lightning.
 
 <!-- more -->
 ![]({% asset_path 2019-10-18-five-benefits-of-moving-to-salesforce-lightning/Picture1.png %})
 
-Change can be daunting, even when you know you are moving toward a better solution. 
-As a Salesforce administrator, you probably know that it is in your organization’s 
-best interest to make the leap from Salesforce Classic to Salesforce Lightning. The challenge is &mdash; how can you sell this critical step to your superiors and your team? 
-
-Here are the top five reasons for transitioning from Salesforce Classic to Salesforce Lightning.
+The following sections describe the five benefits you receive by transitioning from Classic to Lightning.
 
 #### Greater productivity
 
-In mid-2018, Salesforce released a [Forrester Consulting study](https://www.prnewswire.com/news-releases/total-economic-impact-study-on-salesforce-lightning-shows-341-percent-return-on-investment-over-three-years-300661371.html) that identified increased productivity as one of the greatest benefits of moving to the Lightning experience. The study found that the combination of a newer interface and forward-thinking tools like Salesforce Einstein, made it easier for users to accelerate existing processes. 
+In mid-2018, Salesforce released a [Forrester Consulting study](https://www.prnewswire.com/news-releases/total-economic-impact-study-on-salesforce-lightning-shows-341-percent-return-on-investment-over-three-years-300661371.html) that identified increased productivity as one of the greatest benefits of moving to the Lightning experience. The study found that the combination of a newer interface and forward-thinking tools like Salesforce Einstein made it easier for users to accelerate existing processes. 
 
 In fact, [the study revealed](https://www.prnewswire.com/news-releases/total-economic-impact-study-on-salesforce-lightning-shows-341-percent-return-on-investment-over-three-years-300661371.html) IT departments that transitioned to Lightning increased measurable productivity “by up to 25 percent and [has cut] time-to-market for applications nearly in half.”
 
 #### Saved time and dollars
 
-The Forrester study also showcased Salesforce Lightning’s ability to trim costs and save valuable working hours. The 3-year economic impact study showed Salesforce Lightning can save “end users in sales organizations more than an hour a week in productivity.” Moreover, because there is significantly less turnover in developer roles, some organizations saved more than $165,000 in hiring costs alone.
+The Forrester study also showcased Salesforce Lightning’s ability to trim costs and save valuable working hours. The 3-year economic impact study showed that Salesforce Lightning could save “end users in sales organizations more than an hour a week in productivity.” Moreover, because there is significantly less turnover in developer roles, some organizations saved more than $165,000 in hiring costs alone.
 
-#### Third party integrations and customizations
+#### Third-party integrations and customizations
 
-The Salesforce Lightning framework makes it easier than ever for developers to create modern Salesforce apps. As a result, integration with various third party apps becomes much more accessible for administrators and developers.
+The Salesforce Lightning framework makes it easier than ever for developers to create modern Salesforce apps. As a result, integration with various third-party apps becomes much more accessible for administrators and developers.
 
 Lightning also makes it possible to add custom components to the interface. These customization options offer better opportunities for personalization than Salesforce Classic.
 
 #### Modernized user interface
 
-The updated look and feel of Salesforce Lightning makes it a user favorite. New UI features were designed with key business teams in mind, as Salesforce created an [intuitive and smart-thinking platform](https://releasenotes.docs.salesforce.com/en-us/spring16/release-notes/rn_lex.htm) that “helps sales reps work more naturally and close more deals faster.” 
+The updated look and feel of Salesforce Lightning make it a user favorite. New UI features were designed with key business teams in mind, as Salesforce created an [intuitive and smart-thinking platform](https://releasenotes.docs.salesforce.com/en-us/spring16/release-notes/rn_lex.htm) that “helps sales reps work more naturally and close more deals faster.” 
 
-What’s so special about the interface changes? At first glance, you’ll notice things like easier-to-read text, icons, and graphics that provide a better overall business snapshot. Updated dashboards give you improved visibility into the metrics that matter most to your role, so you can grasp the big picture for your teams and customers. 
+What’s so special about the interface changes? At first glance, you’ll notice things like easier-to-read text, icons, and graphics that provide a better overall business snapshot. Updated dashboards give you improved visibility into the metrics that matter most to your role so that you can grasp the big picture for your teams and customers. 
 
-Ultimately, the convenience and ease of a streamlined interface makes it easier to foster user adoption of your platform.
+Ultimately, the convenience and ease of a streamlined interface make it easier to foster user adoption of your platform.
 
 #### Certainty for the future
 
@@ -58,13 +55,13 @@ Simply put, Salesforce Lightning is the way of the future. There is a great deal
 
 ### Your Lightning transition toolkit
 
-We know it is a significant change to move your organization from Salesforce Classic to Lightning. We are committed to helping you make the transition as smooth as possible. The team at RelationEdge has created an e-book that includes everything you need to know about moving from Salesforce Classic to Lightning. This e-book will teach you how to identify when your organization is ready to make the move, how to prepare for this transition, and how to craft a successful roll-out plan. Even better, you don’t need to have the internal resources to do this all on your own. 
+We know it is a significant change to move your organization from Salesforce Classic to Lightning. We are committed to helping you make the transition as smooth as possible. The team at RelationEdge has created an e-book that includes everything you need to know about moving from Salesforce Classic to Lightning. This e-book teaches you how to identify when your organization is ready to make the move, how to prepare for this transition, and how to craft a successful roll-out plan. Even better, you don’t need to have the internal resources to do this all on your own. 
 
 RelationEdge has partnered with numerous clients to guide their transitions from Classic to Lightning. As a Salesforce Platinum Consulting Partner, we focus on your business process, your users’ needs, and a strong communication framework to ensure a successful technology implementation that works for your teams and drives your business forward.
 
 ### Ready for the future?
 
-When you’re ready to make the move from Salesforce Classic to Lightning, RelationEdge is here to help. Our business process consultants and Salesforce engineers will take you step by step through designing the best configurations and workflows for your individual business needs. Get in touch with our team for a consultation today.
+When you’re ready to make the move from Salesforce Classic to Lightning, RelationEdge is here to help. Our business process consultants and Salesforce engineers take you step-by-step through designing the best configurations and workflows for your individual business needs. Get in touch with our team for a consultation today.
 
 
 ### Optimize your environment with expert administration, management, and configuration
