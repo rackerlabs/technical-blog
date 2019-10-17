@@ -92,7 +92,7 @@ and leveraging data from multiple sources to improve your quality of care.
 
 Salesforce Health Cloud can positively impact your patient experience in several ways. 
 
-##### Improve the continuity of care
+#### Improve the continuity of care
 
 Now, I admit that I’m lucky. I am reasonably healthy with no chronic conditions. After my injury, 
 I was in and out of the hospital fairly quickly (my left forefinger is still 25% numb, but hey, 
