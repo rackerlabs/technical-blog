@@ -9,32 +9,30 @@ authorIsRacker: true
 categories:
   - General
 metaTitle: "Five benefits of moving to Salesforce Lightning"
-metaDescription: "This blog outlines five benefits of transitioning to Salesforce Lightning."
-ogDescription: "This blog outlines five benefits of transitioning to Salesforce Lightning."
+metaDescription: "This blog outlines five benefits of transitioning from Salesforce Classic to Salesforce Lightning."
+ogDescription: "This blog outlines five benefits of transitioning from Salesforce Classic to Salesforce Lightning."
 ---
 
-Salesforce&reg; Health Cloud is a top-ranked healthcare customer relationship management (CRM) system. 
-The software aims to put patients at the heart of every decision&mdash;strengthening
-relationships and improving outcomes.
+As a Salesforce&reg; administrator, you probably know that it is in your organization’s 
+best interest to make the leap from Salesforce Classic to Lightning. The challenge is &mdash; 
+how can you sell this critical step to your superiors and your team? 
 
-This blog discusses three ways that SalesForce Health Cloud can help 
-improve patient experience within the health care industry.
+This blog outlines five benefits of transitioning from Salesforce Classic to Salesforce Lightning.
 
 <!-- more -->
 ![]({% asset_path 2019-10-18-five-benefits-of-moving-to-salesforce-lightning/Picture1.png %})
 
-Change can be daunting, even when you know you’re moving toward a better solution. 
-As a Salesforce administrator, you probably know that it’s in your organization’s 
-best interest to make the leap from Salesforce Classic to Lightning. The challenge is &mdash; how can you sell this critical step to your superiors and your team? 
+Change can be daunting, even when you know you are moving toward a better solution. 
+As a Salesforce administrator, you probably know that it is in your organization’s 
+best interest to make the leap from Salesforce Classic to Salesforce Lightning. The challenge is &mdash; how can you sell this critical step to your superiors and your team? 
 
-Here are the top five reasons for transitioning to Salesforce Lightning.
-
+Here are the top five reasons for transitioning from Salesforce Classic to Salesforce Lightning.
 
 #### Greater productivity
 
 In mid-2018, Salesforce released a [Forrester Consulting study](https://www.prnewswire.com/news-releases/total-economic-impact-study-on-salesforce-lightning-shows-341-percent-return-on-investment-over-three-years-300661371.html) that identified increased productivity as one of the greatest benefits of moving to the Lightning experience. The study found that the combination of a newer interface and forward-thinking tools like Salesforce Einstein, made it easier for users to accelerate existing processes. 
 
-In fact, [the study revealed](https://www.prnewswire.com/news-releases/total-economic-impact-study-on-salesforce-lightning-shows-341-percent-return-on-investment-over-three-years-300661371.html) that IT departments that transitioned to Lightning increased measurable productivity “by up to 25 percent and [has cut] time-to-market for applications nearly in half.”
+In fact, [the study revealed](https://www.prnewswire.com/news-releases/total-economic-impact-study-on-salesforce-lightning-shows-341-percent-return-on-investment-over-three-years-300661371.html) IT departments that transitioned to Lightning increased measurable productivity “by up to 25 percent and [has cut] time-to-market for applications nearly in half.”
 
 #### Saved time and dollars
 
@@ -60,13 +58,13 @@ Simply put, Salesforce Lightning is the way of the future. There is a great deal
 
 ### Your Lightning transition toolkit
 
-We know it’s a significant change for your organization to move from Classic to Lightning. We are committed to helping you make the transistion as smooth as possible. The team at RelationEdge has created a handy e-book with everything you need to know about transitioning from Salesforce Classic to Lightning. This e-book will teach you how to identify when your organization is ready to make the move, how to prepare before transitioning, and how to craft a successful roll-out plan. Even better, you don’t need to have the internal resources to do this all on your own. 
+We know it is a significant change to move your organization from Salesforce Classic to Lightning. We are committed to helping you make the transition as smooth as possible. The team at RelationEdge has created an e-book that includes everything you need to know about moving from Salesforce Classic to Lightning. This e-book will teach you how to identify when your organization is ready to make the move, how to prepare for this transition, and how to craft a successful roll-out plan. Even better, you don’t need to have the internal resources to do this all on your own. 
 
 RelationEdge has partnered with numerous clients to guide their transitions from Classic to Lightning. As a Salesforce Platinum Consulting Partner, we focus on your business process, your users’ needs, and a strong communication framework to ensure a successful technology implementation that works for your teams and drives your business forward.
 
 ### Ready for the future?
 
-When you’re ready to make the valuable move from Salesforce Classic to Lightning, RelationEdge is here to help. Our business process consultants and Salesforce engineers will take you step by step through designing the best configurations and workflows for your individual business needs. Get in touch with our team for a consultation today!
+When you’re ready to make the move from Salesforce Classic to Lightning, RelationEdge is here to help. Our business process consultants and Salesforce engineers will take you step by step through designing the best configurations and workflows for your individual business needs. Get in touch with our team for a consultation today.
 
 
 ### Optimize your environment with expert administration, management, and configuration
