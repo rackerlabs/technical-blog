@@ -44,23 +44,23 @@ The Forrester study also showcased Salesforce Lightning’s ability to trim cost
 
 The Salesforce Lightning framework makes it easier than ever for developers to create modern Salesforce apps. As a result, integration with various third party apps becomes much more accessible for administrators and developers.
 
-Lightning also makes it possible to add custom components to the interface. These customization options create an improved opportunity for personalization that didn’t previously exist in Salesforce Classic.
+Lightning also makes it possible to add custom components to the interface. These customization options offer better opportunities for personalization than Salesforce Classic.
 
 #### Modernized user interface
 
 The updated look and feel of Salesforce Lightning makes it a user favorite. New UI features were designed with key business teams in mind, as Salesforce created an [intuitive and smart-thinking platform](https://releasenotes.docs.salesforce.com/en-us/spring16/release-notes/rn_lex.htm) that “helps sales reps work more naturally and close more deals faster.” 
 
-What’s so special about the interface changes? Even at a first glance, you’ll notice things like easier-to-read text, icons, and graphics that provide a better and clearer overall business snapshot. Updated dashboards give you improved visibility into the metrics that matter most to your role, so you can grasp the big picture for your teams and customers. 
+What’s so special about the interface changes? At first glance, you’ll notice things like easier-to-read text, icons, and graphics that provide a better overall business snapshot. Updated dashboards give you improved visibility into the metrics that matter most to your role, so you can grasp the big picture for your teams and customers. 
 
 Ultimately, the convenience and ease of a streamlined interface makes it easier to foster user adoption of your platform.
 
 #### Certainty for the future
 
-Simply put, Salesforce Lightning is the way of the future. There’s a great deal of uncertainty about how long [interface support for Salesforce Classic](https://tech.co/crm-software/salesforce-lightning-vs-classic-compared) will be available to users. In order to avoid the risk of having your organization be automatically rolled over to Lightning at an unexpected time, be proactive now and make a planned switch to Lightning to avoid future hurdles.
+Simply put, Salesforce Lightning is the way of the future. There is a great deal of uncertainty about how long [interface support for Salesforce Classic](https://tech.co/crm-software/salesforce-lightning-vs-classic-compared) will be available. To avoid the risk of your organization being automatically rolled over to Lightning at an unexpected time, be proactive and make a planned switch.
 
-### Your lightning transition toolkit
+### Your Lightning transition toolkit
 
-We know it’s a significant change for your organization to move from Classic to Lightning, and we are committed to helping you make the process smooth and steady. The team at RelationEdge has created a handy e-book with everything you need to know about Transitioning from Salesforce Classic to Lightning. This e-book will teach you how to identify when your organization is ready to make the move, how to prepare before transitioning, and how to craft a successful roll-out plan. Even better, you don’t need to have the internal resources to do this all on your own. 
+We know it’s a significant change for your organization to move from Classic to Lightning. We are committed to helping you make the transistion as smooth as possible. The team at RelationEdge has created a handy e-book with everything you need to know about transitioning from Salesforce Classic to Lightning. This e-book will teach you how to identify when your organization is ready to make the move, how to prepare before transitioning, and how to craft a successful roll-out plan. Even better, you don’t need to have the internal resources to do this all on your own. 
 
 RelationEdge has partnered with numerous clients to guide their transitions from Classic to Lightning. As a Salesforce Platinum Consulting Partner, we focus on your business process, your users’ needs, and a strong communication framework to ensure a successful technology implementation that works for your teams and drives your business forward.
 
