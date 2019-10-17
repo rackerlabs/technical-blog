@@ -9,6 +9,7 @@ authorIsRacker: true
 categories:
     - Oracle
     - database
+    - Security
 metaTitle: "Secure sensitive data in Oracle"
 metaDescription: "Organizations face a major challenge securing sensitive data like social
 security numbers, bank account and routing numbers, and so on."
