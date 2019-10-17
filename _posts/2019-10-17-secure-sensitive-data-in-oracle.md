@@ -12,20 +12,20 @@ categories:
 metaTitle: "Secure sensitive data in Oracle"
 metaDescription: "Organizations face a major challenge securing sensitive data like social
 security numbers, bank account and routing numbers, and so on."
-ogTitle: "Integrate Oracle EBS with OAM"
+ogTitle: "Secure sensitive data in Oracle"
 ogDescription: "Organizations face a major challenge securing sensitive data like social
 security numbers, bank account and routing numbers, and so on."
 ---
 
 Organizations face a major challenge securing sensitive data like social
-security numbers, bank account and routing numbers, and so on.
+security numbers, bank account and routing numbers, and other similar data.
 
 <!-- more -->
 
 ### Introduction
 
 Regulations and laws require organizations to protect their own data and
-customer information from falling into wrong hands. *Data redaction*, or
+customer information from falling into the wrong hands. *Data redaction*, or
 *dynamic data masking (DDM)*, is the process of obfuscating or hiding sensitive
 data elements.
 
@@ -43,8 +43,8 @@ DDM is the process of replacing sensitive information copied from production
 databases to test non-production databases with realistic, but scrubbed, data
 based on masking rules.
 
-Oracle 12c (now available in 11.2.0.8 also) introduced a built in DDM capability
-called Data redaction.
+Oracle 12c (now available in 11.2.0.8 also) introduced a built-in DDM capability
+called Data Redaction.
 
 ### Data Redaction
 
@@ -53,13 +53,13 @@ Data Redaction has the following characteristics:
 - Part of Oracle Advanced Security, which is a separately licensed Enterprise
   Edition option.
 
-- Protects sensitive data that is displayed in database applications.
+- Protects sensitive data displayed in database applications.
 
-- Transparent to application users because it preserves the original data type
+- Transparent to application users because it preserves the original data type,
   and optionally, the formatting.
 
 - Highly transparent to the database because the data remains the same in
-  buffers, caches, and storage—only environments until it changes just before
+  buffers, caches, and storage-only environments until it changes just before
   returning the SQL query results to the caller.
 
 ### Types of redaction
@@ -73,17 +73,17 @@ Following are some examples of the different types of redaction:
 If you have the `EXEMPT REDACTION POLICY` system privilege, data is never
 redacted. Redaction is also never used in the following situations:
 
--	connections as `SYS`
--	database replication
--	backup and restore
--	export and import
+-	Connections as `SYS`
+-	Database replication
+-	Backup and restore
+-	Export and import
 
 ### Setup
 
 To define a policy, you need to have execute privileges on the `DBMS_REDACT`
-package, which is used for adding, altering or dropping the policies.
+package, which is used for adding, altering, or dropping the policies.
 
-For testing, I’ve created a table, and inserted some data as shown in the
+For testing, I’ve created a table and inserted some data as shown in the
 following example:
 
     CREATE TABLE CUSTOMERS
@@ -124,7 +124,7 @@ types.
 
 #### No redaction
 
-This is how you display the data if no redaction is used:
+If no redaction is used, you display the data with the following statements:
 
     ALTER SESSION SET NLS_DATE_FORMAT='DD-MON-YYYY';
     COLUMN credit_card format 0000000000000000
@@ -133,11 +133,11 @@ This is how you display the data if no redaction is used:
 
 ![]({% asset_path 2019-10-17-secure-sensitive-data-in-oracle/Picture0.png %})
 
-### Full redaction
+#### Full redaction
 
 A user with execute privileges on the `DBMS_REDACT` package defines the policy.
 
-In this example, the credit card data is always redacted, because the expression
+In this example, the credit card data is always redacted because the expression
 `1=1` is always true.
 
 **Policy:**
@@ -159,7 +159,7 @@ In this example, the credit card data is always redacted, because the expression
 
 #### Partial redaction
 
-Here, you can mask positions 1 to 12 of the credit card number with a zero:
+By using the following example, you can mask positions 1 to 12 of the credit card number with a zero:
 
     BEGIN
      DBMS_REDACT.ADD_POLICY (
@@ -184,7 +184,8 @@ You can also do partial redaction on other columns, if needed.
 
 #### Random redaction
 
-With random redaction, the information is replaced with other random data:
+With random redaction, the information is replaced with other random data
+as shown in the following example:
 
     BEGIN
      DBMS_REDACT.ADD_POLICY (
@@ -227,7 +228,7 @@ addresses. The following example hides the beginning of the email address:
 
 The parameter value for expression is always ‘1=1’, so the data is always redacted.
 
-### For a specific user
+#### For a specific user
 
 To redact data for specific user, you can add the following expression to the
 profile:
