@@ -9,8 +9,8 @@ authorIsRacker: true
 categories:
   - General
 metaTitle: "Five benefits of moving to Salesforce Lightning"
-metaDescription: "This blog discusses three ways that SalesForce Health Cloud can help improve patient experience within the health care industry."
-ogDescription: "This blog discusses three ways that SalesForce Health Cloud can help improve patient experience within the health care industry."
+metaDescription: "This blog outlines five benefits of transitioning to Salesforce Lightning."
+ogDescription: "This blog outlines five benefits of transitioning to Salesforce Lightning."
 ---
 
 Salesforce&reg; Health Cloud is a top-ranked healthcare customer relationship management (CRM) system. 
@@ -25,26 +25,26 @@ improve patient experience within the health care industry.
 
 Change can be daunting, even when you know you’re moving toward a better solution. 
 As a Salesforce administrator, you probably know that it’s in your organization’s 
-best interest to make the leap from Salesforce Classic to Lightning. The challenge is &mdash; how can you sell this critical step to your superiors and to your team at large? 
+best interest to make the leap from Salesforce Classic to Lightning. The challenge is &mdash; how can you sell this critical step to your superiors and your team? 
 
-As you work on developing the perfect pitch, incorporate these top five reasons for transitioning to Salesforce Lightning.
+Here are the top five reasons for transitioning to Salesforce Lightning.
 
 
 #### Greater productivity
 
-In mid-2018, Salesforce released a [Forrester Consulting study](https://www.prnewswire.com/news-releases/total-economic-impact-study-on-salesforce-lightning-shows-341-percent-return-on-investment-over-three-years-300661371.html) that showcased one of the greatest benefits of moving to the Lightning experience: enhanced productivity. The study found that the combination of a newer interface and forward-thinking tools, such as Salesforce Einstein, make it easier for users to accelerate existing processes. 
+In mid-2018, Salesforce released a [Forrester Consulting study](https://www.prnewswire.com/news-releases/total-economic-impact-study-on-salesforce-lightning-shows-341-percent-return-on-investment-over-three-years-300661371.html) that identified increased productivity as one of the greatest benefits of moving to the Lightning experience. The study found that the combination of a newer interface and forward-thinking tools like Salesforce Einstein, made it easier for users to accelerate existing processes. 
 
-In fact, [the study revealed](https://www.prnewswire.com/news-releases/total-economic-impact-study-on-salesforce-lightning-shows-341-percent-return-on-investment-over-three-years-300661371.html) that in IT departments that have transitioned to Lightning, measurable productivity has increased “by up to 25 percent and [has cut] time-to-market for applications nearly in half.”
+In fact, [the study revealed](https://www.prnewswire.com/news-releases/total-economic-impact-study-on-salesforce-lightning-shows-341-percent-return-on-investment-over-three-years-300661371.html) that IT departments that transitioned to Lightning increased measurable productivity “by up to 25 percent and [has cut] time-to-market for applications nearly in half.”
 
 #### Saved time and dollars
 
-Along with significant jumps in work productivity, the Forrester study also showcased Lightning’s ability to trim costs and save valuable working hours. Over the course of the 3-year economic impact study, it was shown that Salesforce Lightning can save “end users in sales organizations more than an hour a week in productivity.” Moreover, because there is significantly less turnover in developer roles, some organizations saved more than $165,000 in hiring costs alone.
+The Forrester study also showcased Salesforce Lightning’s ability to trim costs and save valuable working hours. The 3-year economic impact study showed Salesforce Lightning can save “end users in sales organizations more than an hour a week in productivity.” Moreover, because there is significantly less turnover in developer roles, some organizations saved more than $165,000 in hiring costs alone.
 
 #### Third party integrations and customizations
 
-The Salesforce Lightning framework makes it easier than ever for developers to create modern Salesforce apps. As a result of this advancement, integration to various third party apps becomes much more accessible for administrators and developers alike.
+The Salesforce Lightning framework makes it easier than ever for developers to create modern Salesforce apps. As a result, integration with various third party apps becomes much more accessible for administrators and developers.
 
-With Lightning, it’s also possible to add custom components to the interface. These customization options create an improved opportunity for personalization that didn’t previously exist in Salesforce Classic.
+Lightning also makes it possible to add custom components to the interface. These customization options create an improved opportunity for personalization that didn’t previously exist in Salesforce Classic.
 
 #### Modernized user interface
 
