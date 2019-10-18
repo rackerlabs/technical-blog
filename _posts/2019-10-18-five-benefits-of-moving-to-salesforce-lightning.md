@@ -55,7 +55,7 @@ Simply put, Salesforce Lightning is the way of the future. There is a great deal
 
 ### Your Lightning transition toolkit
 
-We know it is a significant change to move your organization from Salesforce Classic to Lightning. We are committed to helping you make the transition as smooth as possible. The team at Rackspace has created an e-book that includes everything you need to know about moving from Salesforce Classic to Lightning. This e-book teaches you how to identify when your organization is ready to make the move, how to prepare for this transition, and how to craft a successful roll-out plan. Even better, you don’t need to have the internal resources to do this all on your own. 
+We know it is a significant change to move your organization from Salesforce Classic to Lightning. The team at Rackspace has developed an [assesment that helps make this change as smooth as possible](https://www.rackspace.com/resources/salesforce-lightning-conversion-assessment).
 
 Rackspace has partnered with numerous clients to guide their transitions from Classic to Lightning. As a Salesforce Platinum Consulting Partner, we focus on your business process, your users’ needs, and a strong communication framework to ensure a successful technology implementation that works for your teams and drives your business forward.
 
