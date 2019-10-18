@@ -55,13 +55,13 @@ Simply put, Salesforce Lightning is the way of the future. There is a great deal
 
 ### Your Lightning transition toolkit
 
-We know it is a significant change to move your organization from Salesforce Classic to Lightning. We are committed to helping you make the transition as smooth as possible. The team at RelationEdge has created an e-book that includes everything you need to know about moving from Salesforce Classic to Lightning. This e-book teaches you how to identify when your organization is ready to make the move, how to prepare for this transition, and how to craft a successful roll-out plan. Even better, you don’t need to have the internal resources to do this all on your own. 
+We know it is a significant change to move your organization from Salesforce Classic to Lightning. We are committed to helping you make the transition as smooth as possible. The team at Rackspace has created an e-book that includes everything you need to know about moving from Salesforce Classic to Lightning. This e-book teaches you how to identify when your organization is ready to make the move, how to prepare for this transition, and how to craft a successful roll-out plan. Even better, you don’t need to have the internal resources to do this all on your own. 
 
-RelationEdge has partnered with numerous clients to guide their transitions from Classic to Lightning. As a Salesforce Platinum Consulting Partner, we focus on your business process, your users’ needs, and a strong communication framework to ensure a successful technology implementation that works for your teams and drives your business forward.
+Rackspace has partnered with numerous clients to guide their transitions from Classic to Lightning. As a Salesforce Platinum Consulting Partner, we focus on your business process, your users’ needs, and a strong communication framework to ensure a successful technology implementation that works for your teams and drives your business forward.
 
 ### Ready for the future?
 
-When you’re ready to make the move from Salesforce Classic to Lightning, RelationEdge is here to help. Our business process consultants and Salesforce engineers take you step-by-step through designing the best configurations and workflows for your individual business needs. Get in touch with our team for a consultation today.
+When you’re ready to make the move from Salesforce Classic to Lightning, Rackspace is here to help. Our business process consultants and Salesforce engineers take you step-by-step through designing the best configurations and workflows for your individual business needs. Get in touch with our team for a consultation today.
 
 
 ### Optimize your environment with expert administration, management, and configuration
