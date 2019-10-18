@@ -92,7 +92,7 @@ resources:
                         "%rsyslog_server_ip%": { get_attr: [rsyslog_server, privateIPv4] }
 ```
 
-As you can note, we are defining [Rackspace resource types](http://docs.rackspace.com/orchestration/api/v1/orchestration-devguide/content/GET_resource_type_list_v1__tenant_id__resource_types_Stack_Resources.html#GET_resource_type_list_v1__tenant_id__resource_types_Stack_Resources-Response)
+As you can note, we are defining [Rackspace resource types](https://docs.rackspace.com/orchestration/api/v1/orchestration-devguide/content/GET_resource_type_list_v1__tenant_id__resource_types_Stack_Resources.html#GET_resource_type_list_v1__tenant_id__resource_types_Stack_Resources-Response)
 for the rsyslog\_server and load\_balancer made available via Orchestration.
 
 A new set of resource types are being introduced in this stack: Rackspace::Cloud::LoadBalancer & OS::Heat::ResourceGroup.
@@ -125,7 +125,7 @@ visulization of the logs.
 
 ## Test Drive
 If you'd like to instantiate the Logging job right now, you can do this from
-the [heat client](http://docs.rackspace.com/orchestration/api/v1/orchestration-getting-started/content/Install_Heat_Client.html) by issuing the following to run on the Rackspace Public Cloud or see the Demo section below to see how its intended to function:
+the [heat client](https://docs.rackspace.com/orchestration/api/v1/orchestration-getting-started/content/Install_Heat_Client.html) by issuing the following to run on the Rackspace Public Cloud or see the Demo section below to see how its intended to function:
 
 ```
 heat stack-create logging \

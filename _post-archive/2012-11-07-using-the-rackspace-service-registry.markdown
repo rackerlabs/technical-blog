@@ -28,10 +28,10 @@ updated or deleted.
 <!-- more -->
 
 More information on the product is available from the
-[API Guide](http://docs.rackspace.com/rsr/api/v1.0/sr-devguide/content/overview.html),
-[Integration Guide](http://docs.rackspace.com/rsr/api/v1.0/sr-devguide/content/integration-instructions.html),
-[Client libraries and tools](http://docs.rackspace.com/rsr/api/v1.0/sr-devguide/content/client-libraries-and-tools.html),
-and [Release Notes](http://docs.rackspace.com/rsr/api/v1.0/sr-devguide/content/release-notes.html).
+[API Guide](https://docs.rackspace.com/rsr/api/v1.0/sr-devguide/content/overview.html),
+[Integration Guide](https://docs.rackspace.com/rsr/api/v1.0/sr-devguide/content/integration-instructions.html),
+[Client libraries and tools](https://docs.rackspace.com/rsr/api/v1.0/sr-devguide/content/client-libraries-and-tools.html),
+and [Release Notes](https://docs.rackspace.com/rsr/api/v1.0/sr-devguide/content/release-notes.html).
 
 Here, I’d like to highlight the Node.js integration.
 

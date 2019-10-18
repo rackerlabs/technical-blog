@@ -23,7 +23,7 @@ Alarms are responsible for determining a state (```OK```, ```WARNING``` or
 ```CRITICAL```) based on the result of a check, and executing a notification plan
 whenever that state changes. You create alerting rules by using the alarm DSL.
 For information about using the alarm language, refer to the
-[reference documentation](http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/alerts-language.html).
+[reference documentation](https://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/alerts-language.html).
 
 #### Setup
 

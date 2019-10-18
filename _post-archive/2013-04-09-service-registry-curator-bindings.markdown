@@ -33,7 +33,7 @@ One of the overarching goals of the [Rackspace Service registry](https://dfw.reg
    [node.js](https://github.com/racker/node-service-registry-client),
    [python](https://github.com/racker/python-service-registry-client),
    [twisted-python](https://github.com/racker/python-twisted-service-registry-client)).
-2. We published an [integration guide](http://docs.rackspace.com/rsr/api/v1.0/sr-devguide/content/integration-instructions.html).
+2. We published an [integration guide](https://docs.rackspace.com/rsr/api/v1.0/sr-devguide/content/integration-instructions.html).
 3. Based on feedback, we removed features that were not useful.
 
 We can do better though.  We want it to be super easy to integrate the RSR into your software.

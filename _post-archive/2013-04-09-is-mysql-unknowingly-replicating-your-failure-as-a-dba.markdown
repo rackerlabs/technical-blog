@@ -46,6 +46,6 @@ if (metric['SLAVE_STATUS'] == 'ONLINE' && metric['SECONDS_BEHIND_MASTER'] >= 300
 
 The above criteria will change the AlarmStatus if replication is offline or if the slave lags too far behind the master. If something goes wrong, you can expect a friendly email from our Cloud Monitoring product. Hopefully, you can avoid that awkward moment where you explain to your boss that your backup is six months old because you didn't bother to check your slave status.  
 
-For additional information about Rackspace Cloud Monitoring check out the [API Developer Guide](http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/overview.html).
+For additional information about Rackspace Cloud Monitoring check out the [API Developer Guide](https://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/overview.html).
 
 The above plugin, along with additional contributed plugins, can be found on [GitHub](https://github.com/racker/rackspace-monitoring-agent-plugins-contrib).

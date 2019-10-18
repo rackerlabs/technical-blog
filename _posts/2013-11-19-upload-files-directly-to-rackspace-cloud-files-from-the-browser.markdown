@@ -138,7 +138,7 @@ upload something other than a PDF and try to download it with this
 extension, your operating system might get confused.
 
 The relevant rackspace documentation is
-here [http://docs.rackspace.com/files/api/v1/cf-devguide/content/TempURL_File_Name_Overrides-d1e213.html][4]
+here [https://docs.rackspace.com/files/api/v1/cf-devguide/content/TempURL_File_Name_Overrides-d1e213.html][4]
 
 The javascript part
 -------------------
@@ -314,4 +314,4 @@ If you have awesome things you've done with Rackspace, and want to contribute - 
 [1]: https://github.com/216software/ajax-put-rackspace
 [2]: http://www.rackspace.com/cloud/files/
 [3]: https://github.com/rackspace/pyrax
-[4]: http://docs.rackspace.com/files/api/v1/cf-devguide/content/TempURL_File_Name_Overrides-d1e213.html
+[4]: https://docs.rackspace.com/files/api/v1/cf-devguide/content/TempURL_File_Name_Overrides-d1e213.html

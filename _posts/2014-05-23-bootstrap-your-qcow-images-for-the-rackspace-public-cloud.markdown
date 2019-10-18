@@ -147,5 +147,5 @@ distributed systems, cloud and mobile computing. You can follow Mike on Twitter
 
 ## Reference Material
 * [Convert a raw image to XenServer – VHD](http://blogs.citrix.com/2012/10/04/convert-a-raw-image-to-xenserver-vhd/)
-* [Cloud Images API Developer Guide](http://docs.rackspace.com/images/api/v2/ci-devguide/content/ch_image_preface.html)
+* [Cloud Images API Developer Guide](https://docs.rackspace.com/images/api/v2/ci-devguide/content/ch_image_preface.html)
 * [Pyrax Images Doc](https://github.com/rackspace/pyrax/blob/master/docs/images.md)

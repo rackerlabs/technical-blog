@@ -29,7 +29,7 @@ Until now you could use php-opencloud to boot up OpenStack compute servers by sp
 
 ## Datastores and Configurations
 
-Now you can use php-opencloud to retrieve information about the various [datastores](http://docs.rackspace.com/cdb/api/v1.0/cdb-devguide/content/datastore_types_and_versions.html) supported by your OpenStack or Rackspace cloud. You can also create and manage [custom configurations](http://docs.rackspace.com/cdb/api/v1.0/cdb-devguide/content/configurations.html) for these datastores.
+Now you can use php-opencloud to retrieve information about the various [datastores](https://docs.rackspace.com/cdb/api/v1.0/cdb-devguide/content/datastore_types_and_versions.html) supported by your OpenStack or Rackspace cloud. You can also create and manage [custom configurations](https://docs.rackspace.com/cdb/api/v1.0/cdb-devguide/content/configurations.html) for these datastores.
 
 ## Other Improvements and Bug Fixes
 

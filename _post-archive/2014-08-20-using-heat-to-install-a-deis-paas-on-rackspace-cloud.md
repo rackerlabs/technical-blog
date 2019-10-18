@@ -44,7 +44,7 @@ relatively new Orchestration system, which is based on Openstack Heat. I quickly
 templating language used for quickly describing and building infrastructure. After a few hours of prototyping, I found myself 
 with a reliable way to create and destroy DEIS environments with a single command.
 
-Instructions for installing the Heat client, including setting up authentication credentials, can be found in [The Rackspace Orchestration documentation](http://docs.rackspace.com/orchestration/api/v1/orchestration-getting-started/content/Install_Heat_Client.html). 
+Instructions for installing the Heat client, including setting up authentication credentials, can be found in [The Rackspace Orchestration documentation](https://docs.rackspace.com/orchestration/api/v1/orchestration-getting-started/content/Install_Heat_Client.html). 
 
 The heat template that I came up with can be found [here](https://gist.github.com/paulczar/6f773bc1c98395f0a2d4).
 It takes several inputs, such as the etcd discovery url (unique for each install), the number of servers, the flavor of servers, and the version of Deis, to perform the installation ( master by default ). 

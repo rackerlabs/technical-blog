@@ -129,4 +129,4 @@ It is highly recommended that you keep the Service Network available as it
 enables your servers to talk to each other and other cloud products. More
 information on Cloud Networks can be found in our
 [How-to](https://support.rackspace.com/how-to/cloud-networks/)
-or in the [API documentation](http://docs.rackspace.com/servers/api/v2/cn-devguide/content/api_operations.html).
+or in the [API documentation](https://docs.rackspace.com/servers/api/v2/cn-devguide/content/api_operations.html).

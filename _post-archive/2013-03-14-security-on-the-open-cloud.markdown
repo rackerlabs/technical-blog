@@ -34,7 +34,7 @@ With your token, you can then create a user:
 	-d '{"user": {"username": "$USERNAME", "email":"email@domain.com", "enabled": true, "OS-KSADM:password":"$PASSWORD"}}' \
 	-H "Content-type: application/json" -H "X-Auth-Token: $TOKEN”
 
-More information on the Identity API is available in the [documentation](http://docs.rackspace.com/auth/api/v2.0/auth-client-devguide/content/Overview-d1e65.html).
+More information on the Identity API is available in the [documentation](https://docs.rackspace.com/auth/api/v2.0/auth-client-devguide/content/Overview-d1e65.html).
 
 ##Configuration and Patch Management
 
