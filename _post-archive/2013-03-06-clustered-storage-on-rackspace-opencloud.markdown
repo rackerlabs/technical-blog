@@ -20,7 +20,7 @@ If you are unfamiliar with Cloud Servers, Cloud Block Storage, or Cloud Networks
   - [Cloud Block Storage(CBS)](http://www.rackspace.com/cloud/block-storage/)
   - [Cloud Networks](https://support.rackspace.com/how-to/cloud-networks/)
 
-If you aren't familiar with the API or `python-novaclient`, see [Getting started on NextGen Cloud Servers](http://docs.rackspace.com/servers/api/v2/cs-gettingstarted/content/ch_gs_getting_started_with_nova.html). You can also do this tutorial from the web interface, but it will likely take three times as long.
+If you aren't familiar with the API or `python-novaclient`, see [Getting started on NextGen Cloud Servers](https://docs.rackspace.com/servers/api/v2/cs-gettingstarted/content/ch_gs_getting_started_with_nova.html). You can also do this tutorial from the web interface, but it will likely take three times as long.
 
 In this tutorial, we're going to start off by building two servers with an interface on each of them being connected to a "Cloud Network". This network is essentially a layer 2 domain created by using a protocol called Stateles Transport Tunneling [(STT)](http://tools.ietf.org/html/draft-davie-stt-01) between hypervisors. If you have ever heard of "software defined networking", this is it as real at it gets. As a customer, you get an interface on your instance that, for all you know, is connected to its own switch fabric with your own private VLAN.
 

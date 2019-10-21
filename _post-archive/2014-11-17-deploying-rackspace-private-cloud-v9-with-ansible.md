@@ -50,7 +50,7 @@ Since all the OpenStack deployment and environment configuration playbooks are a
 
 Personally, I have found a few creative ways of doing this locally on my workstation.  For this article, we use the 100% Open Source approach by using **VirtualBox**, **Vagrant** and of course **Ansible**.
 
-Follow the steps below to install Rackspace Private Cloud v9.0.  Keep in mind the full installation guide can be found at: http://docs.rackspace.com/rpc/api/v9/bk-rpc-installation/content/rpc-common-front.html
+Follow the steps below to install Rackspace Private Cloud v9.0.  Keep in mind the full installation guide can be found at: https://docs.rackspace.com/rpc/api/v9/bk-rpc-installation/content/rpc-common-front.html
 
 </br>
 ####Step 0: Prerequisites

@@ -293,4 +293,4 @@ Looks good -- that's what we expect to see. To compare, let's see what it looks 
     217.119.166.108.in-addr.arpa domain name pointer 108-166-119-217.static.cloud-ips.com.
 
 
-For more information on the Rackspace Cloud DNS API, refer to our [API documentation](http://docs.rackspace.com/cdns/api/v1.0/cdns-devguide/content/index.html).
+For more information on the Rackspace Cloud DNS API, refer to our [API documentation](https://docs.rackspace.com/cdns/api/v1.0/cdns-devguide/content/index.html).

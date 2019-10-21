@@ -83,4 +83,4 @@ Assuming you already have Ansible install, you can execute the playbook:
 
 Once completed, you should find the newly created load balancer, the SSL certificate added to the load balancer, the SSL redirect enabled, and a corresponding DNS record within the Cloud Control Panel.
 
-You can find detailed reference material on the Rackspace Cloud Load Balancer and Cloud DNS under the Network Services heading here:  http://docs.rackspace.com/
+You can find detailed reference material on the Rackspace Cloud Load Balancer and Cloud DNS under the Network Services heading here:  https://docs.rackspace.com/

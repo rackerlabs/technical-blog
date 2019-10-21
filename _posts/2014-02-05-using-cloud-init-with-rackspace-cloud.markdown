@@ -108,7 +108,7 @@ line. This is where cloud-init will pull down Wordpress and setup MySQL for the
 Before we can use our configuration file we'll need to actually get it
 into the server, and we'll accomplish that by using a feature called
 config-drive. Additional information about config-drive can be read
-about in the [API docs](http://docs.rackspace.com/servers/api/v2/cs-devguide/content/config_drive_ext.html), but just know for the purpose
+about in the [API docs](https://docs.rackspace.com/servers/api/v2/cs-devguide/content/config_drive_ext.html), but just know for the purpose
 of this blog that it's a read only drive that is attached to your server
 on build and used by cloud-init as a data source for user supplied files.
 

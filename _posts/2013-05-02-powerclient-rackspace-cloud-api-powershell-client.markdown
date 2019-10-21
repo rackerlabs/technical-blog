@@ -115,7 +115,7 @@ c195ef3b-9195-4474-b6f7-16e5bd86acd0 CentOS 6.3                                 
 ...
 
 .LINK
-http://docs.rackspace.com/servers/api/v2/cs-devguide/content/Images-d1e4427.html
+https://docs.rackspace.com/servers/api/v2/cs-devguide/content/Images-d1e4427.html
 #>
 }
 ```

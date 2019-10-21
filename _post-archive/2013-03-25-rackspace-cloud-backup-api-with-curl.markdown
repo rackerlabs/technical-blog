@@ -7,7 +7,7 @@ author: Oz Akan
 categories: []
 ---
 
-> **WARNING:** this blog post contains information that is not up to date. Consult [this](http://docs.rackspace.com/rcbu/api/v1.0/rcbu-getting-started/content/createWorkWithBackups-d1e01.html) guide for authoritative and up to date information.
+> **WARNING:** this blog post contains information that is not up to date. Consult [this](https://docs.rackspace.com/rcbu/api/v1.0/rcbu-getting-started/content/createWorkWithBackups-d1e01.html) guide for authoritative and up to date information.
 
 Insurance can help to manage risks of relatively rare but expensive events that you will be responsible for covering. Still, insurance doesn't eliminate the risks of unlikely events from happening; instead it provides a mechanism to get out of that event with minimal loss.
  
@@ -440,4 +440,4 @@ Using the Cloud Backup RESTful API, it is now easy to automate backup jobs while
  
 _If you have questions you can find me at [Twitter](https://twitter.com/ozgurakan) or at [Google Plus](https://plus.google.com/110684487860941982359/posts)_
  
-For more information on the Rackspace Cloud Backup API, refer to our [API documentation](http://docs.rackspace.com/rcbu/api/v1.0/rcbu-devguide/content/index.html).
+For more information on the Rackspace Cloud Backup API, refer to our [API documentation](https://docs.rackspace.com/rcbu/api/v1.0/rcbu-devguide/content/index.html).

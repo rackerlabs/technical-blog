@@ -49,7 +49,7 @@ Step one was to move 3.7 TB of data from NERSC to Rackspace.  This was slightly 
 naively expected at first: the data consisted of a few dozen flat files, the largest of which was
 1.8 TB in size.  Rackspace's Cloud Files requires files larger than 5 GB to be chunked, divided into
 smaller pieces and them assembled into a unified whole via a
-[manifest](http://docs.rackspace.com/files/api/v1/cf-devguide/content/Static_Large_Object-d1e2226.html).
+[manifest](https://docs.rackspace.com/files/api/v1/cf-devguide/content/Static_Large_Object-d1e2226.html).
 Although Rackspace's [pyrax](https://github.com/rackspace/pyrax) python library can do this chunking
 automatically, at the time I used it pyrax had no features for restarting a partially completed upload
 or creating a manifest from a list of files.

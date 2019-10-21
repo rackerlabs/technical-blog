@@ -68,7 +68,7 @@ blog post.
 
 ### Configuration namespaces
 
-The [configuration storage](http://docs.rackspace.com/rsr/api/v1.0/sr-devguide/content/overview.html#what-is-rackspace-service-registry-configuration-storage)
+The [configuration storage](https://docs.rackspace.com/rsr/api/v1.0/sr-devguide/content/overview.html#what-is-rackspace-service-registry-configuration-storage)
 feature allows users to store arbitrary key/value pairs in our system and get
 notified when a value is updated or removed. This allows you to build more
 robust and responsive services which react to configuration changes faster.
@@ -163,7 +163,7 @@ updated all of our official client libraries so if you use one of those make
 sure to upgrade to the latest version (0.2.x for Node.js and Python client
 libraries and 2.0.x for Java client library).
 
-For more information, please see the [release notes page](http://docs.rackspace.com/rsr/api/v1.0/sr-devguide/content/release-notes.html#release-notes-v20-march-2013).
+For more information, please see the [release notes page](https://docs.rackspace.com/rsr/api/v1.0/sr-devguide/content/release-notes.html#release-notes-v20-march-2013).
 
 ### External bindings and API integration
 

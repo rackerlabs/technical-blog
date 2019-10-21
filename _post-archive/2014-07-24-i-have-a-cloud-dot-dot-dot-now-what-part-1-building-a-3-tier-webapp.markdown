@@ -83,7 +83,7 @@ resources:
             "%branch%": { get_param: branch }
 ```
 
-As you can note, we are defining [Rackspace resource types](http://docs.rackspace.com/orchestration/api/v1/orchestration-devguide/content/GET_resource_type_list_v1__tenant_id__resource_types_Stack_Resources.html#GET_resource_type_list_v1__tenant_id__resource_types_Stack_Resources-Response)
+As you can note, we are defining [Rackspace resource types](https://docs.rackspace.com/orchestration/api/v1/orchestration-devguide/content/GET_resource_type_list_v1__tenant_id__resource_types_Stack_Resources.html#GET_resource_type_list_v1__tenant_id__resource_types_Stack_Resources-Response)
 for the frontend and webserver nodes made available via Orchestration.
 
 In addition to resource types, we can define properties such as the flavor
@@ -125,7 +125,7 @@ Given that our architecture, environment and tools are established, lets move on
 
 ## Test Drive
 If you'd like to instantiate the Encoder job right now, you can do this from
-the [heat client](http://docs.rackspace.com/orchestration/api/v1/orchestration-getting-started/content/Install_Heat_Client.html) by issuing the following to run on the Rackspace Public Cloud or see the Demo section below to see how its intended to function:
+the [heat client](https://docs.rackspace.com/orchestration/api/v1/orchestration-getting-started/content/Install_Heat_Client.html) by issuing the following to run on the Rackspace Public Cloud or see the Demo section below to see how its intended to function:
 
 ```
 BRANCH=master ; EMAIL='<your-user>@<your-email-provider.com>' ; USE_SNET=true; \

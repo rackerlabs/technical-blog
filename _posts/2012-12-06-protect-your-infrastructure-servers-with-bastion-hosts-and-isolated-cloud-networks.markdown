@@ -35,7 +35,7 @@ point that provides access to the hosts behind it only to authorized users. A
 bastion host serves the same purpose as a bouncer at a bar: like the bouncer the
 bastion host checks everyone’s ID before they are allowed inside.
 
-Using [Cloud Networks](http://docs.rackspace.com/servers/api/v2/cn-gettingstarted/content/ch_overview.html),
+Using [Cloud Networks](https://docs.rackspace.com/servers/api/v2/cn-gettingstarted/content/ch_overview.html),
 you can create Rackspace Cloud Servers that do not have a public IP and attach
 to only an isolated Class A, B or C network that only your Cloud Servers can
 talk to.
@@ -48,7 +48,7 @@ host connects to the infrastructure network exclusively. Because I don’t need 
 huge network space, I will create a small class C network in the 192.168.3.0 subnet.
 
 Throughout this guide I will use the supernova command line client. See
-[this article](http://docs.rackspace.com/servers/api/v2/cn-gettingstarted/content/section_gs_install_nova.html)
+[this article](https://docs.rackspace.com/servers/api/v2/cn-gettingstarted/content/section_gs_install_nova.html)
 on configuration of supernova. You can also create this configuration using the
 [Cloud Control Panel](https://mycloud.rackspace.com/).
 
