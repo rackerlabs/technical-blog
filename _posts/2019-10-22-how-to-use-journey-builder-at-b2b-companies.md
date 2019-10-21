@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to Use Journey Builder at B2B Companies"
+title: "How to use Journey Builder at B2B companies"
 date: 2019-10-22 00:00
 comments: true
 author: Emily Belke
@@ -8,24 +8,24 @@ published: true
 authorIsRacker: true
 categories:
   - General
-metaTitle: "How to Use Journey Builder at B2B Companies"
-metaDescription: "This blog explains how Journey Builder works, and how you can use it to streamline customer experience and internal processes at your B2B company."
-ogDescription: "This blog explains how Journey Builder works, and how you can use it to streamline customer experience and internal processes at your B2B company."
+metaTitle: "How to use Journey Builder at B2B companies"
+metaDescription: "This blog explains how you can use Journey Builder to streamline customer experience and internal processes at your B2B company."
+ogDescription: "This blog explains how you can use Journey Builder to streamline customer experience and internal processes at your B2B company."
 ---
-Many B2B companies know they need marketing automation to stay relevant and reduce the workload for their teams. What they don’t always know is which tools they need and how to use them to drive transformative business value.
+Many B2B companies know they need marketing automation to stay relevant and reduce workload. However, they do not always know which tools they need or how to use these tools to drive transformative business value.
 
-Salesforce&reg; Journey Builder is a Marketing Cloud feature that integrates with your Sales Cloud and Service Cloud to provide a seamless experience.  
+Salesforce&reg; Journey Builder is a Marketing Cloud feature that integrates with your Sales Cloud and Service Cloud. Although Journey Builder is often associated with strategies for abandoned carts and B2C companies, over the past six years of using this tool, I have seen how powerful it can be for B2B companies.
 
-This blog explains how Journey Builder works, and how you can use it to streamline customer experience and internal processes at your B2B company.
+This blog explains how you can use Journey Builder to streamline customer experience and internal processes at your B2B company.
 
 <!-- more -->
-![]({% asset_path 2019-10-18-five-benefits-of-moving-to-salesforce-lightning/Picture1.png %})
+![]({% asset_path 2019-10-22-how-to-use-journey-builder-at-b2b-companies/Picture1.png %})
 
-### What is Journey Builder and How Does It Work?
+### What is Journey Builder and how does it work?
 
-Journey Builder is a feature of Salesforce’s Marketing Cloud that helps companies engage with their customers at every step along the path from lead to loyalty. While B2B companies often choose Pardot for their needs, I’ve seen how effective Journey Builder — and Marketing Cloud as a whole — can be for B2B companies.
+Journey Builder is a feature of Salesforce’s Marketing Cloud. It helps companies engage with their customers at every step along the path from lead to loyalty. While B2B companies often choose Pardot for their needs, I have seen how effective Journey Builder &mdash;and Marketing Cloud as a whole&mdash; can be for B2B companies.
 
-Journey Builder tracks each lead’s behavior and includes your marketing, accounting, sales, and customer service teams in the lead monitoring experience. Nearly anything a lead does, from downloading a whitepaper to logging a service request, can update the lead’s data and [trigger the next appropriate touchpoint](https://searchcustomerexperience.techtarget.com/definition/Salesforce-Journey-Builder) for that individual. This gives your company greater visibility into customer activity and allows you to make key decisions with real-time information. As a result, your teams are better able to sell to leads and your customers enjoy a better experience, no matter where they are on the buyer’s journey. 
+Journey Builder tracks the behavior of each lead and includes your marketing, accounting, sales, and customer service teams in lead monitoring. Nearly anything a lead does, from downloading a whitepaper to logging a service request, can update the lead’s data and [trigger the next appropriate touchpoint](https://searchcustomerexperience.techtarget.com/definition/Salesforce-Journey-Builder). This gives your company greater visibility into customer activity and helps you make decisions with real-time information. As a result, your teams are better able to sell to leads and your customers enjoy a better experience, no matter where they are on the buyer’s journey. 
 
 Because Journey Builder is part of the Salesforce suite, it is integrated with other Salesforce products, such as Sales Cloud and Service Cloud. This ensures all your data is stored in one centralized location, providing a seamless experience for your employees and customers alike. It also boosts internal productivity, as your teams can complete work in other Salesforce products through the Journey Builder tool.
 
