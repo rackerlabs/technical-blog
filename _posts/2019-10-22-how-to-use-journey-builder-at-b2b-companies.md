@@ -12,9 +12,9 @@ metaTitle: "How to use Journey Builder at B2B companies"
 metaDescription: "This blog explains how you can use Journey Builder to streamline customer experience and internal processes at your B2B company."
 ogDescription: "This blog explains how you can use Journey Builder to streamline customer experience and internal processes at your B2B company."
 ---
-Many B2B companies know they need marketing automation to stay relevant and reduce workload. However, they do not always know which tools they need or how to use these tools to drive transformative business value.
+Many Business to business (B2B) companies know they need marketing automation to stay relevant and reduce workload. However, they do not always know which tools they need or how to use these tools to drive transformative business value.
 
-Salesforce&reg; Journey Builder is a Marketing Cloud feature that integrates with your Sales Cloud and Service Cloud. Although Journey Builder is often associated with strategies for abandoned carts and B2C companies, over the past six years of using this tool, I have seen how powerful it can be for B2B companies.
+Salesforce&reg; Journey Builder is a Marketing Cloud feature that integrates with your Sales Cloud and Service Cloud. Although Journey Builder is often associated with strategies for abandoned carts and Business to customer (B2C) companies, having used this tool for the past six years, I have seen how powerful it can be for B2B companies.
 
 This blog explains how you can use Journey Builder to streamline customer experience and internal processes at your B2B company.
 
@@ -23,7 +23,7 @@ This blog explains how you can use Journey Builder to streamline customer experi
 
 ### What is Journey Builder and how does it work?
 
-Journey Builder is a feature of Salesforce’s Marketing Cloud. It helps companies engage with their customers at every step along the path from lead to loyalty. While B2B companies often choose Pardot for their needs, I have seen how effective Journey Builder &mdash;and Marketing Cloud&mdash; can be for B2B companies.
+Journey Builder is a feature of Salesforce’s Marketing Cloud. It helps companies engage with their customers at every step along the path from lead to loyalty. While B2B companies often choose Pardot for their needs, I have seen how effective Journey Builder &mdash;and Marketing Cloud as a whole&mdash; can be for B2B companies.
 
 Journey Builder tracks the behavior of each lead and includes your marketing, accounting, sales, and customer service teams in lead monitoring. Nearly anything a lead does, from downloading a whitepaper to logging a service request, can update the lead’s data and [trigger the next appropriate touchpoint](https://searchcustomerexperience.techtarget.com/definition/Salesforce-Journey-Builder). This gives your company greater visibility into customer activity and helps you make decisions with real-time information. As a result, your teams are better able to sell to leads and your customers enjoy a better experience, wherever they are on the buyer’s journey. 
 
@@ -35,7 +35,7 @@ These are a few of the many ways B2B companies in a wide range of industries can
 
 #### Optimize Leads and Opportunities
 
-Journey Builder helps your company make the most of leads and opportunities without requiring more time from your sales team. For example, if a lead hasn’t changed status after 30 days, Journey Builder can automatically add them to a nurture campaign and send the lead personalized content based on their behavior. You can also use the tool to update lead status. For instance, you may decide that any lead who engages with a specific link in one of your nurture emails will be converted to a contact with an opportunity in Sales Cloud. 
+Journey Builder helps your company make the most of leads and opportunities without requiring more time from your sales team. For example, if a lead hasn’t changed status after 30 days, Journey Builder can automatically add them to a nurture campaign and send them personalized content based on their behavior. You can also use the tool to update lead status. For instance, you may decide that any lead who engages with a specific link in one of your nurture emails will be converted to a contact with an opportunity in Sales Cloud. 
 
 Automating these actions with Journey Builder saves your sales team effort and ensures they can spend their time on the leads most likely to convert.
 
@@ -45,9 +45,9 @@ Journey Builder can use data from any standard or custom object that has a looku
 
 This means you can use Journey Builder to: 
 
-- replace sales calls with automated surveys from lost opportunities
-- send upcoming renewal reminders for customer subscriptions
-- notify customers to upgrade to your latest product and more
+- replace sales calls with automated surveys from lost opportunities.
+- send upcoming renewal reminders for customer subscriptions.
+- notify customers to upgrade to your latest product and more.
 
 Leveraging Journey Builder for these tasks ensures that your consumers get timely notifications and updates, while allowing your sales and service employees to focus on more intensive tasks.
 
@@ -58,11 +58,11 @@ Journey Builder can help with onboarding partners and wholesalers. You can set u
 
 ##### Create drip campaigns
 
-Use Journey Builder to create a drip campaign and strategically piece out your new product announcement over one to two weeks instead of sending one manual email. This strategy will likely drive more interest among your customers and also lets you see who’s engaging with your emails. Journey Builder provides statistics and updates at every step, so you can easily conduct reporting and continually use this data to inform your marketing strategy.
+Use Journey Builder to create a drip campaign and strategically extend your new product announcement over one to two weeks instead of sending a single manual email. This strategy will likely drive more interest among your customers as well as provide information about engagement with your emails. Journey Builder provides statistics and updates at every step, so you can easily conduct reporting and continually use this data to inform your marketing strategy.
 
 ##### Improve internal processes
 
-Journey Builder does not only help boost your customer experience &mdash;it can also streamline workflows for your internal teams. 
+Journey Builder not only helps boost your customer experience &mdash;it can also streamline workflows for your internal teams. 
 
 - **Reduce workloads**. Replace the repetitive tasks performed by your sales and marketing teams, like manually sending emails with automated processes. 
 - **Update leads**. Ensure better data hygiene and more accurate customer information. 
