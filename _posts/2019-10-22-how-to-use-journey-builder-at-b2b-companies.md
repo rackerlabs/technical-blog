@@ -27,7 +27,7 @@ Journey Builder is a feature of the Salesforce Marketing Cloud. It helps compani
 
 Journey Builder tracks the behavior of each lead and includes your marketing, accounting, sales, and customer service teams in lead monitoring. Nearly anything a lead does, from downloading a whitepaper to logging a service request, can update the lead’s data and [trigger the next appropriate touchpoint](https://searchcustomerexperience.techtarget.com/definition/Salesforce-Journey-Builder). Tracking this information gives your company greater visibility into customer activity and helps you make decisions with real-time information. As a result, your teams are better able to sell to leads, and your customers enjoy a better experience, wherever they are on the buyer’s journey. 
 
-Journey Builder is part of the Salesforce suite and integrates with other Salesforce products, like Sales Cloud and Service Cloud. So all your data is stored in one centralized location, providing a seamless experience for your employees and customers. It also boosts internal productivity, since your teams can work in other Salesforce products using the Journey Builder tool.
+Journey Builder is part of the Salesforce suite and integrates with other Salesforce products, like Sales Cloud and Service Cloud. So all your data is stored in one centralized location, providing a seamless experience for your employees and customers. It also boosts internal productivity, because your teams can work in other Salesforce products using the Journey Builder tool.
 
 ### How can your B2B company use Journey Builder?
 
@@ -35,13 +35,13 @@ These are a few of the many ways B2B companies in a wide range of industries can
 
 #### Optimize Leads and Opportunities
 
-Journey Builder helps your company make the most of the leads and opportunities without requiring more time from your sales team. For example, if a lead hasn’t changed status after 30 days, Journey Builder can automatically add them to a nurture campaign and send them personalized content based on their behavior. You can also use the tool to update lead status. For instance, you may decide that any lead who engages with a specific link in one of your nurture emails converts to a contact with an opportunity in Sales Cloud. 
+Journey Builder helps your company make the most of the leads and opportunities without requiring more time from your sales team. For example, if a lead hasn’t changed status after 30 days, Journey Builder can automatically add them to a nurture campaign and send them personalized content based on their behavior. You can also use the tool to update lead status. For instance, you might decide that any lead who engages with a specific link in one of your nurture emails converts to a contact with an opportunity in Sales Cloud. 
 
 Automating these actions with Journey Builder saves your sales team effort and ensures they can spend their time on the leads most likely to convert.
 
 ##### Automate simple communications
 
-Journey Builder can use data from any standard or custom object that has a lookup relationship to your Leads and Contacts. 
+Journey Builder can use data from any standard or custom object that has a lookup relationship to your leads and contacts. 
 
 So you can use Journey Builder to: 
 
