@@ -10,12 +10,12 @@ categories:
   - AWS
   - Security
 metaTitle: "Deploy the Palo Alto firewall on Amazon Web Services"
-metaDescription: "This article provides initial steps of deploying Palo Alto Firewall in AWS, and the configuration of advanced features in AWS is beyond the scope of this article."
+metaDescription: "This article provides the initial steps for deploying Palo Alto Firewall on AWS, but the configuration of advanced features in AWS is beyond the scope of this article."
 ogTitle: "Deploy the Palo Alto firewall on Amazon Web Services"
-ogDescription: "This article provides initial steps of deploying Palo Alto Firewall in AWS, and the configuration of advanced features in AWS is beyond the scope of this article."
+ogDescription: "This article provides the initial steps for deploying Palo Alto Firewall on AWS, but the configuration of advanced features in AWS is beyond the scope of this article."
 ---
 
-This article provides initial steps of deploying Palo Alto Firewall in AWS, and
+This article provides initial steps for deploying Palo Alto Firewall on AWS, but
 the configuration of advanced features in AWS is beyond the scope of this
 article.
 
@@ -29,20 +29,20 @@ firewall with the newly announced Amazon Web Services (AWS) virtual private
 connection (VPC) traffic-mirroring capability gives organizations the following
 choices:
 
-- To deploy the firewall out-of-band for application visibility
-- To deploy advanced threat detection in AWS cloud and extend of your corporate
+- To deploy the firewall out-of-band for application visibility.
+- To deploy advanced threat detection in AWS cloud and extend your corporate
   network.
 
 You can move corporate applications to the cloud, launch additional web servers,
 or add more compute capacity to your network by connecting your VPC to your
-corporate network. Because your VPC can be hosted behind your corporate firewall,
-you can seamlessly move your IT resources into the Cloud without changing how
+corporate network. Because you can host your VPC behind your corporate firewall,
+you can seamlessly move your IT resources into the cloud without changing how
 your users access these applications.
 
 ### Overview:
 
 The following detailed steps show you how to create and save key pairs,
-prepare your VPC for different subnets, and creating an AWS instance with a
+prepare your VPC for different subnets, and create an AWS instance with a
 Palo Alto image.
 
 #### Step 1: Create the key pairs
@@ -52,29 +52,29 @@ Palo Alto image.
 3. Create a key pair by giving it a name and saving the key pair. In the
    PuTTY&reg; Key Generator, choose type `RSA`.
 4. Choose the PEM file you created.
-5. Choose `Save private key`, but do not put the password.
+5. Choose **Save private key**, but do not put in the password.
 6. Save the file with a **.ppk** extension.
-7.	Go to PuTTY. On the left pane, choose **SSH** and select **Auth**.
-8.	Click browse and point PuTTY to the **.ppk** file created that you just created.
-9.	Save the session by clicking on the session on the left-hand side of PuTTY
+7. Go to PuTTY. On the left pane, choose **SSH** and select **Auth**.
+8. Click **Browse** and point PuTTY to the **.ppk** file created that you just created.
+9. Save the session by clicking on the session on the left-hand side of PuTTY
    and select **Save**.
 
 #### Step 2: Prepare the VPC
 
 1. In AWS, choose **Services -> VPC** and delete the default subnets.
-2.	Create four new subnets: Management, Inside, Outside, and DMZ.  You can
+2. Create four new subnets: Management, Inside, Outside, and DMZ. You can
    choose the IP addresses, but they should be in the VPC address range.
 
-#### Step 3: Select Palo Alto image
+#### Step 3: Select the Palo Alto image
 
 1. Log in to your AWS account, go to **AWS Services -> Under Services -> EC2**,
    and create an instance.
-2. Choose **Amazon Market Place**, search for **Palo Alto**.
+2. Choose **Amazon Market Place**, and search for **Palo Alto**.
 3. Select **VM-Series Next Generation Firewall Bundle 2**.
 
 ![]({% asset_path 2019-10-22-deploy-the-palo-alto-firewall-on-amazon-web-services/Picture1.png %})
 
-#### Step 4: Create instance
+#### Step 4: Create an instance
 
 1. Launch a new EC2 instance by clicking the **Launch Instance** radio button
    as shown in the following image:
@@ -107,7 +107,7 @@ Palo Alto image.
 ![]({% asset_path 2019-10-22-deploy-the-palo-alto-firewall-on-amazon-web-services/Picture6.png %})
 
 <ol start=7>
-    <li>Select <b>General Purpose SSD (Solid State Drive) (GP2) Volume type<\b>,
+    <li>Select <b>General Purpose SSD (Solid State Drive) (GP2) Volume type<\b>
     and click <b>Next: Add Tags</b>.</li>
 </ol>
 
@@ -115,7 +115,7 @@ Palo Alto image.
 
 <ol start=8>
     <li>Keep the default settings for <b>Add Tags</b> and click
-    <b>Next: Configure Security Group</b>, use the <b>Unrestricted Security Group</b>
+    <b>Next: Configure Security Group</b>, use the <b>Unrestricted Security Group</b>,
     and click <b>Review and Launch</b>.</li>
 </ol>
 
@@ -130,7 +130,7 @@ Palo Alto image.
 ![]({% asset_path 2019-10-22-deploy-the-palo-alto-firewall-on-amazon-web-services/Picture10.png %})
 
 <ol start=10>
-    <li>Select the key pair that you created previously, and click <b>Launch Instances</b>.</li>
+    <li>Select the key pair that you created previously and click <b>Launch Instances</b>.</li>
 </ol>
 
 ![]({% asset_path 2019-10-22-deploy-the-palo-alto-firewall-on-amazon-web-services/Picture11.png %})
@@ -168,7 +168,7 @@ Palo Alto image.
 
 <ol start=3>
     <li>Click <b>Action -> Associate Address -> Assign the running instance</b>.</li>
-    <li>Select an IP address from the drop down to assign it.</li>
+    <li>Select an IP address from the drop-down menu to assign it.</li>
     <li>Click <b>Associate</b>.</li>
 </ol>
 
@@ -180,8 +180,8 @@ Palo Alto image.
 
 Because the management interface is associated with the outside Public IP, you
 should be able to connect to the management interface with the AWS Public IP
-address outside interface of the EC2 Instance by using a PuTTY Session a web
-browser (for example: https://<public_IP>).
+address outside interface of the EC2 instance by using a PuTTY session a web
+browser (for example, https://<public_IP>).
 
 The following images provide some examples of this test:
 
@@ -196,17 +196,17 @@ The following images provide some examples of this test:
 1. Go to [support.paloaltonetworks.com](support.paloaltonetworks.com) and
    create an account.
 2. Log in to your Palo Alto support account.
-3. Click the **Assets** tab,
+3. Click the **Assets** tab.
 4. Click **Register new device**.
 5. Choose **Software Updates** to verify that you have access to the software.
 
 ### Conclusion
 
 By using the steps in this post, you can deploy and provision a Palo Alto firewall
-in AWS. Be aware that AWS is not free for Palo Alto, and you get charged per
+in AWS. Be aware that AWS is not free for Palo Alto, and you are charged per
 hour when the instance is running. The charges are for EC2 and a software license
 for Palo Alto, which runs around $1.50 an hour. There is also a monthly cost
-associated for the storage. Make sure you have the budget before you opt for
+associated with the storage. Make sure you have the budget before you opt for
 using Palo Alto.
 
 After you have finished working on the instance, ensure that you stop it so that
