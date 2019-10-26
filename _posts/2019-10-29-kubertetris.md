@@ -16,7 +16,7 @@ metaTitle: "Kubertetris"
 metaDescription: "Rackspace sponsored the 2019 GCP Summits in Stockholm and Amsterdam and challenged the attendees to a game of Kubertetris!"
 ogTitle: "Kubertetris"
 ogDescription: "Rackspace sponsored the 2019 GCP Summits in Stockholm and Amsterdam and challenged the attendees to a game of Kubertetris!"
-ogImage: "https://657cea1304d5d92ee105-33ee89321dddef28209b83f19f06774f.ssl.cf1.rackcdn.com/kubertetris.png-238d55c85d0b4c6d5060c42556dc378da26e317afd13b7eb50c9f29c65027f39.jpg"
+ogImage: "https://657cea1304d5d92ee105-33ee89321dddef28209b83f19f06774f.ssl.cf1.rackcdn.com/kubertetris-238d55c85d0b4c6d5060c42556dc378da26e317afd13b7eb50c9f29c65027f39.png"
 ---
 
 Rackspace sponsored the 2019 GCP Summits in Stockholm and Amsterdam and challenged the attendees to a game of Kubertetris
@@ -29,11 +29,11 @@ On the 28th of May **1987**, during the **Cold War**, a German teenager named **
 
 However, as an example of the [Butterfly Effect](https://en.wikipedia.org/wiki/Butterfly_effect) the Soviet military's failure allowed [Michael Gorbachov](https://en.wikipedia.org/wiki/Mikhail_Gorbachev) to remove many of the strongest opponents to his reforms which eventually led to the dismantlement of the **Soviet Union** and the end of the **Cold War**. 
 
-![MS-DOs welcome screen ]({% asset_path 2019-10-29-Kubertetris/welcome_screen.jpg %})
+![MS-DOs welcome screen ]({% asset_path 2019-10-29-kubertetris/welcome_screen.jpg %})
 
 **Rust** and his tiny plane were immortalized in what could be called a "meme avant la lettre" in the **1987** IBM-PC release of **Tetris** by [Spectrum Holobyte](https://en.wikipedia.org/wiki/Spectrum_HoloByte) which featured **the Kremlin** and **Rust's** plane in the game's welcome screen. 
 
-![Tetris]({% asset_path 2019-10-29-Kubertetris/tetris.jpg %})
+![Tetris]({% asset_path 2019-10-29-kubertetris/tetris.jpg %})
 
 **Tetris** itself, created in **1984** - yes **1984**..- by [Alexey Pajitnov](https://en.wikipedia.org/wiki/Alexey_Pajitnov), which has a whole movie plot worthy history of its own, managed to permeate the **Iron Curtain** not long after **Rust** did to become the most popular computer game of all time by being - to quote Computing Gaming World (in 1987) - "deceptively simple and insidiously addictive". 
 
@@ -51,7 +51,7 @@ Our local marketing team and myself quickly decided that to really tell people h
 
 ### Blocks => Tetris + Kubernetes == KuberTetris
 
-When we launched our managed services for what we call "Third Party Cloud" (AWS/Azure/GCP) we only had two service offerings:
+When we launched our managed services for what we call **"Third Party Cloud"** (AWS/Azure/GCP) we only had two service offerings:
 
 - **Navigator** - where we would tell you where to go but you had to find how to get there by yourself
 - **Aviator** - where we would commandeer the steering wheel and take you wherever we thought you wanted to go
@@ -60,26 +60,34 @@ In time this proved to be a less than ideal - some customers needed some more he
 
 So we introduced the concept of **Service Blocks** - specific blocks of services that our customers can use to compose their own service offering that is a it for them and fit for purpose. 
 
-But don't worry this is not some stale sales pitch - however, the concept of blocks (and quite possibly the difficulty that some of us had when transitioning to the new model) was what inspired me to pick Tetris as our promotional vehicle. And since a lot of the work we do on **GCP** is around **Kubernetes** and since - let's be honest here - **Kubernetes** is pretty difficult to navigate as well - the *portmanteau* **KuberTetris** was born. 
-
-![KuberTetris]({% asset_path 2019-10-29-Kubertetris/kubertetris.jpg %})
+But don't worry this is not some stale sales pitch - however, the concept of blocks (and quite possibly the difficulty that some of us had when transitioning to the new model) was what inspired me to pick Tetris as our promotional vehicle. And since a lot of the work we do on **GCP** is around **Kubernetes** and since - let's be honest here - **Kubernetes** is pretty difficult to navigate as well - the *portmanteau* **KuberTetris** was born.
 
 ### The Tech behind the Talk
 
-Personally, I hardly qualify as a proper developer. Let alone a game-developer. But I knew I wanted to build something that could be run just about anywhere on non-specific hardware and that would be easy to maintain and support - which lead me to exploring the possibility of creating Tetris based on **HTML5** and client-side only code. 
+![KuberTetris]({% asset_path 2019-10-29-kubertetris/kubertetris.jpg %})
 
-Luckily some kind souls already did all the hard work and developed an open source Tetris HTML5 clone with theme support. I can not praise them enough - and I've tried to reach out to see if we can somehow compensate them for their hard work - kudos to the people at **Aerolab** and their project [Blockrain.js](http://aerolab.github.io/blockrain.js/) ! 
+Personally, I hardly qualify as a proper developer. Let alone a game-developer. But I knew I wanted to build something that could be run just about anywhere on non-specific hardware and that would be easy to maintain and support - which lead me to exploring the possibility of creating **Tetris** based on **HTML5** and client-side only code. 
 
-I created a custom there around **GCP** and **Kubernetes** and later also included our **Service Blocks**, adjusted some of the game files for additional customization and hosted the game on blob storage the result of which can be found [here](https://public.thirdpartytools.net/kubertetris/index.html). 
+Luckily some kind souls already did all the hard work and developed an open source **Tetris HTML5** clone with theme support. I can not praise them enough - and I've tried to reach out to see if we can somehow compensate them for their hard work - kudos to the people at **Aerolab** and their project [Blockrain.js](http://aerolab.github.io/blockrain.js/) ! 
 
-Pictures of Winners 
+I created a custom theme around **GCP** and **Kubernetes** and later also included our **Service Blocks**, adjusted some of the game files for additional customization and hosted the game on blob storage the result of which can be found [here](https://public.thirdpartytools.net/kubertetris/index.html). **NB - Works Best In Chrome and not on mobile!**
 
-Future development
+Don't tell **Google** its on **Azure Blob Storage** for now ;-) The epileptic background animations are standard **CSS** and it features the original **Gameboy** soundtrack by [Chip Tanaka](https://en.wikipedia.org/wiki/Hirokazu_Tanaka). 
 
-- HLP, DD 
-- CI/CD 
+![Winners Stockholm]({% asset_path 2019-10-29-kubertetris/booth.jpg %})
 
+Add a simple whiteboard to record the scores, some awesome prizes (**Airblock** - A modular programmable drone/Hovercraft, a **Raspberry PI 3** with **MINECRAFT: PI edition** and a **BBC Micro-bit**) and some enthusiastic contestants/winners and you have the recipe for a very enjoyable day at the conference booth! 
 
-### Meet us at the 2019 InfoSecurity Expo in Utrecht!
+![Winners Stockholm]({% asset_path 2019-10-29-kubertetris/stockholm.jpg %})
 
-Link to the game, invite 
+![Winners Amsterdam]({% asset_path 2019-10-29-kubertetris/amsterdam.jpg %})
+
+### Back to the Future
+
+Because of the success of the first version one of my colleagues came up with the idea to use game as an example workload to truly exhibit our services. So as we speak we adding features such as a **CI/CD** pipeline to deploy straight into object storage (by **Google** this time), an on-screen high score (rather daunting considering my JS skills) and a proper block preview function while at the same time some of my colleagues are creating a **High Level Proposal**, a **Detailed Design Document** and fully branded graphics and images. 
+
+Our aim is to present the game and these artifacts at [Google Next '19 in London](https://cloud.withgoogle.com/next/uk) and to slowly add more functionality and services such as some analytics on in-game data and events. 
+
+And of course, I will will blog about it. 
+
+For those in the Netherlands - a 1.1 version of our game can be played at the [Infosecurity](https://www.infosecurity.nl/) event in Utrecht on the 30th and 31st of October.
