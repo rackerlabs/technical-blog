@@ -64,7 +64,7 @@ But don't worry, this is not some stale sales pitch. The concept of blocks (and 
 
 ### The Tech behind the Talk
 
-![KuberTetris]({% asset_path 2019-10-29-kubertetris/kubertetris.jpg %})
+![KuberTetris]({% asset_path 2019-10-29-kubertetris/kubertetris.PNG %})
 
 Personally, I hardly qualify as a proper developer, let alone a game developer. But I knew I wanted to build something that could be run just about anywhere on non-specific hardware, and that would be easy to maintain and support, which lead me to explore the possibility of creating **Tetris** based on **HTML5** and client-side only code. 
 
