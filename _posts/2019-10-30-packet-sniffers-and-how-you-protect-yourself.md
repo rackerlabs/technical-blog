@@ -145,10 +145,10 @@ You can use filters to analyze captured data.
 Sometimes, you can observe and record traffic traveling on a network, which
 might contain valuable information such as the following:
 
-–	Usernames and passwords
+–	 Usernames and passwords
    -	Encrypted
    -	Unencrypted
-–	Email, web requests (and replies), data files, and so on.
+–	 Email, web requests (and replies), data files, and so on.
 
 ### Wireshark
 
@@ -193,8 +193,8 @@ The man-in-the-middle is a common attack tactic.
 
 In a switched environment, a host receives only the following:
 
-–	Traffic destined for itself
-–	Broadcast traffic
+-  Traffic destined for itself
+-  Broadcast traffic
 
 The host cannot see traffic between other hosts. The man-in-the-middle attack
 enables you to insert yourself as an (undetected) intermediary between
@@ -211,10 +211,10 @@ modify, or block communications to the legitimate MAC address.
 
 Attackers look for the following opportunities to use ARP poisoning:
 
-–	Sensitive, unencrypted communications
-   -	Web requests or replies, email, FTP, or HTTP
-–	Weakly-encrypted communications
-   -	Old versions of SSH or RDC
+–  Sensitive, unencrypted communications
+   -  Web requests or replies, email, FTP, or HTTP
+–	 Weakly-encrypted communications
+   -  Old versions of SSH or RDC
 
 #### ARP poisoning  countermeasures
 
