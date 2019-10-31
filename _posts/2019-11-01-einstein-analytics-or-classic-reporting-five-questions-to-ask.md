@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Einstein Analytics or classic reporting&mdash;five questions to ask yourself"
+title: "Einstein Analytics or Classic Reports&mdash;five questions to ask yourself"
 date: 2019-11-01 00:00
 comments: true
 author: Mitchell McLaughlin
@@ -8,9 +8,9 @@ published: true
 authorIsRacker: true
 categories:
   - General
-metaTitle: "Einstein Analytics or classic reporting&mdash;five questions to ask yourself"
+metaTitle: "Einstein Analytics or Classic Reports&mdash;five questions to ask yourself"
 metaDescription: "Do you need Einstein Analytics instead of classic reporting? Five questions to ask yourself."
-ogTitle: "Einstein Analytics or classic reporting&mdash;five questions to ask yourself"
+ogTitle: "Einstein Analytics or Classic Reports&mdash;five questions to ask yourself"
 ogDescription: "Do you need Einstein Analytics instead of classic reporting? Five questions to ask yourself."
 ---
 
