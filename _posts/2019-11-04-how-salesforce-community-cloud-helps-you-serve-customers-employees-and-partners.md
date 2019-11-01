@@ -14,107 +14,69 @@ ogTitle: "How Salesforce Community Cloud helps you serve customers, employees, a
 ogDescription: "Do you need Einstein Analytics instead of classic reporting? Five questions to ask yourself."
 ---
 
-Do you ever feel that the analytics you get from Salesforce&reg; Classic Reports
-and Dashboards isn’t providing enough insight for your organization’s goals?
-
-If you feel like you’re not leveraging your data as effectively as you could,
-you have likely matured past what Classic Reports can do. The solution
-is to turn to Salesforce’s stronger reporting platform, Einstein Analytics.
+Salesforce&reg;Community Cloud offers your business a centralized platform where each of these groups can flourish. As an application that lives within your Salesforce org, Community Cloud allows your organization to create online forums (communities)where members can communicate with each other and with your organization. 
 
 <!-- more -->
 
 ![]({% asset_path 2019-11-01-einstein-analytics-or-classic-reporting-five-questions-to-ask/einstein-analytics.png %})
 
-While both Sales Cloud and Service Cloud have basic reporting tools built in,
-the main purpose of these platforms isn’t reporting. Einstein Analytics, by
-contrast, is a true reporting platform designed to integrate with your CRM. The
-two are fundamentally different in purpose and nature and act as complementary
-technologies to propel your business.
+Successful businesses thrive on three key elements: loyal customers, happy employees, and engaged partners. Loyal customers result in increased sales, satisfied employees ensure the business runs well, and interactive partners — like distributors and sister companies — solidify a healthy professional network. 
 
-Does your company need the stronger capabilities of Einstein Analytics? Ask the
-following questions to find out.
+We asked our Community-Certified Project Manager Megan Truett (who was into Community Cloud “before it was cool”) how businesses can use the platform for these three different types of communities.
 
-### 1. Do you lack a 360-degree perspective?
+“While they are all very similar, each of the three versions Salesforce offers in its ecosystem does very different things,” Megan says. “Salesforce Community Cloud is excellent in comparison to other platforms with its ability to customize information sent out to various audiences. It does a really awesome job of tailoring the message and the information [companies] want to siphon out to their groups; whether that’s employees, customers or partners.” 
 
-Classic reporting allows users to retrieve data across three object levels&mdash;
-a fairly limited number. This gives you a rather shallow view of performance,
-and while it might be enough when your organization is small, as you grow and your
-goals expand, you need reporting that provides a more complete view of your data.
+With more than 12 years of experience in online community building, client engagement and social strategy, Megan knows just how beneficial Community Cloud can be. From an expert perspective, here’s why Community Cloud is a must have for today’s modern business. 
 
-Einstein Analytics doesn’t limit how many cross objects a report can include,
-which offers a holistic view of performance. Users have access to all the data they
-need in one location. Plus, thanks to easy customization options, your
-personalized dashboard reflects your own projects and priorities.
+### It Excels at Providing Personalized Customer Care
 
-### 2. Do you need to report on external data?
+According to Salesforce’s “State of the Connected Customer” report, 80% of customers say that the experience a company provides is as important as its products and services. This is not a new development; a 2006 study by McKinsey Global Institute reported that after a negative experience with a brand, more than 70% of customers reduced their commitment to that brand (in many cases decreasing the amount spent with the brand, or switching brands entirely). The customer journey is directed by how the customer feels they are being treated.
 
-External data is excluded from your reports if you’re using Classic Reports.
-The reports only include Salesforce data, and therefore, can only show you part of
-the story.
+Customer communities can make your consumers feel connected, heard and appreciated. “Community Cloud does a really great job of connecting people, in ways that are not necessarily tangible, and manages to keep customers engaged by helping them to find information they need, letting them ask questions and discuss things that are important to them,” Megan emphasizes. Businesses with this kind of personalized customer engagement are positioned to thrive.
 
-Einstein Analytics enables you to create data sets from external sources with a
-user-friendly point-and-click model. By combining data from Salesforce with that
-from other sources, your data-driven insights become broader and deeper.
+For example, Farmers Insurance leverages Community Cloud for their online Customer Self-Service (CSS) community. Through this online portal, policyholders can sign on and easily find information and connect directly with an agent to get assistance. This makes it easier for agents to serve customers, and provides customers with a more personalized and smooth experience.
 
-### 3. Is the mobile experience underwhelming?
+“The number one question companies need to ask themselves,” Megan explains “is what are my customers going to get out of this community that they’re not going to get anywhere else? They need to feel like they can participate in it, that they belong in it and that it’s their own.” 
 
-Reporting is all about making data accessible and actionable. If your reports
-aren’t optimized for mobile, it means that data is not easy for employees to
-access from various locations. This access is imperative if you have multiple
-office locations, remote employees, or team members who regularly travel for
-work. While users can access Classic Reports via mobile, the reports aren’t
-mobile-optimized, which limits functionality.
+Today’s customers expect more. They don’t want to sit on long-winded phone calls listening to an automated recording. They want to be involved. They want to express concerns, talk about their likes and dislikes and make suggestions to the places and organizations where they spend their money. A customer community makes this possible in a digital space that promotes authentic feedback. That’s how relationships are built between the organization and the consumer — and that’s how consumers become loyal to a brand. 
 
-Einstein Analytics solves this issue by optimizing reporting for mobile devices.
-This means any team members working from home or in the field have easy access
-to in-depth data and expansive reporting tools.
+### It Encourages Brand Loyalty in an Oversaturated Market
 
-### 4. Do your reports feel inaccessible?
+On top of stellar customer care, successful businesses have found a way to maintain their customers’ loyalty. In a world where 63% of shoppers do not feel like retailers know them, Community Cloud has the ability to help organizations increase brand loyalty.  This occurs by allowing the company to get to know its consumers intimately so they can better personalize the customer experience. 
 
-If users perceive a reporting system as slow, confusing, or difficult to
-navigate, they are more likely to avoid consulting the available data. As your
-organization’s reporting needs progress, you might find it frustrating that
-Classic Reports cannot be easily embedded into other Salesforce workflows or
-that you cannot execute Salesforce actions directly from the reports. The
-inconveniences of Classic Reports might discourage your team members from
-fully utilizing the data and insights available.
+“A customer community is great for knowing who your customer is and being able to see trends about them ” Megan divulges. “This is where customers go to and become brand loyal to you and your products and services because they can connect with other people who also enjoy the product. So it’s this really wonderful circular connection.” This circular connection works in the same way word of mouth does. As one satisfied customer interacts with other customers, the better the brand’s reputation becomes which in turn, results in loyal customers. These brand enthusiasts Megan says, are crucial to both community and a company’s success. 
 
-Einstein Analytics removes these obstacles by allowing users to embed Salesforce
-triggers into reports and embed reports into everyday workflows. This makes it
-easier for users to incorporate intelligent reporting and analytics into their
-decisions and actions at work.
+“People who are not your company employee and don’t have a monetary reason to be there [in your community] but are there, are key people to success. They keep people excited about your product and service which gives you insider information. They’re your enthusiasts.” 
 
-### 5. Are your reports inflexible?
+### It Fosters Connection in a Work-From-Home Culture
 
-There is no such thing as a one-size-fits-all report. The best reports are
-customized for the user, the moment, and the question at hand. On-demand
-reporting is possible in Classic Reports, but it’s time and labor-intensive,
-which deters teams from using it.
+Apart from your business’ relationship with its customers, Community Cloud can also enhance the relationship with your employees,by setting up an employee community. “Being able to help people connect, especially for companies that are remote [or have remote employees] is one of the greatest features of an employee community,” Megan says. With more companies embracing a work-from-home culture, nurturing virtual connections in the workplace is more important than ever. 
 
-Einstein Analytics offers a true self-service experience, empowering users
-without extensive technical training to instantly create reports on the fly.
-With a convenient way to create custom reports, your questions can be instantly
-connected with answers, and decisions can be backed up by data.
+Setting clear expectations and having a communication playbook are essential for ensuring the success of remote companies and their employees. Implementing an employee community through Community Cloud solves both of those concerns. “You’ll be amazed at how you ever ran your business without, it” Megan conveys, explaining how well Community Cloud’s customizable platform works for both small and large organizations.
 
-### Ready to implement Einstein Analytics?
+“An employee community isn’t a place to waste time. Although it’s social, it’s not social media. It’s much more powerful and business-driven than that. It’s a premier way to get business information to people in a timely fashion and efficient manner,” which is what every successful business aims to do — especially as the work-from-home culture continues to grow. 
 
-If you are ready for the deeper reporting capabilities that Einstein Analytics
-offers, your organization can consider the following license options: Sales
-Analytics, Service Analytics, or the Einstein Analytics Platform (which includes
-both Sales and Service).
+### It Grows With Your Company
 
-No matter which option you choose, creating a thoughtful plan for implementation
-is key. Taking the time to clean and organize your data and architect your
-system correctly spares you many hassles down the road. As a Salesforce
-Platinum Consulting Partner, we have years of experience with organizing data,
-architecting systems, and implementing technology for specific business
-requirements.
+Salesforce Community Cloud has the capacity to evolve as your company evolves. “The community itself is always growing, it’s always evolving, it’s living. It’s never like you put it up once and you’re done. You’re always improving it, responding to it and allowing it to evolve with and for the organization.” 
 
-Rackspace partners with you to customize your Einstein Analytics platform
-for your business needs, create a plan for implementation and fostering user
-adoption, and gain the expertise to make the most out of the analytics at your
-fingertips. Contact our team of business process and technology experts today
-for a consultation.
+Too many times companies find themselves stuck with software products that are no longer useful because they’ve outgrown them or developed beyond the technology’s capacity. Salesforce Community Cloud, on the other hand, scales as your company does. Because of its customizable nature, the platform can not only grow with your company, but its data can change with your company too. They key is to think strategically. “Community Cloud has the capacity to follow the strategic vision of your company if you allow it to,” Megan says. “Let the platform respond appropriately to your company’s growth and development.”
+
+### It Enhances Your Professional Network 
+
+A partner community is an external forum where you can share and insider information to relevant stakeholders. Think of this like a hybrid between an employee and a customer community, with a focus on keeping your business partners engaged to nurture your organization’s professional network.
+
+For a partner community to be successful, make sure you keep your partners interests and needs at the forefront when planning what to offer in this virtual community. “Whether it’s an employee, customer or partner community, definitely work with people to find out what they can get in your community that they can’t get anywhere else.” 
+
+For instance, you may use your partner community to share detailed and accessible reports, with the information and insights business partners want. Because Community Cloud lives within your Salesforce org, you have the power of Salesforce at your fingertips for creating accurate, detailed and easy to access reports. “For as long as I’ve been working in the community world, I haven’t seen any reports on the other platforms I’ve used come close to Salesforce’s reporting. The Salesforce platform takes data and turns it into great dashboards.” These dashboards have the kind of information business partners hold dear. 
+
+Effective business partnerships require detailed agreements, clear expectations and have mutual benefits. Not only is a partner community a wonderful place to discuss agreements and expectations, but the reporting capabilities Megan describes give you an easy way to reiterate the benefits for all partners involved. Providing your partners with relevant information via dashboards and reports help to maintain a healthy level of communication, so they feel only engaged but fully informed, as well.
+
+### RelationEdge Partners With You to Boost Your Communities
+
+As business process consultants and Salesforce implementation experts, it is our job and our greatest desire to help your organization operate as smoothly as possible. While we recognize that every business will  have unique processes, we know that all modern companies need three things to survive: loyal, consistent customers; passionate, connected employees; and satisfied, engaged partners. 
+
+Salesforce Community Cloud is a platform that can aid in stimulating and promoting all three types of relationships. We’re here to partner with you to implement Community Cloud and set up the appropriate communities for your business needs. Reach out to our expert team today. Megan and the rest our Salesforce certified experts are ready to ensure your business thrives.
 
 
 ### Optimize your environment with expert administration, management, and configuration
