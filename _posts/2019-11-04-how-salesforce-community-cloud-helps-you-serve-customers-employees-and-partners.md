@@ -20,27 +20,27 @@ Salesforce&reg;Community Cloud offers a centralized platform where loyal custome
 
 ![]({% asset_path 2019-11-01-einstein-analytics-or-classic-reporting-five-questions-to-ask/einstein-analytics.png %})
 
-Successful businesses rely on loyal customers, happy employees, and engaged partners. Loyal customers increase sales, satisfied employees ensure the business runs well, and interactive partners — like distributors and sister companies — solidify a healthy professional network. 
+Successful businesses rely on loyal customers, happy employees, and engaged partners. Loyal customers increase sales, satisfied employees ensure the business runs well, and interactive partners &mdash; like distributors and sister companies, solidify a healthy professional network. 
 
-We asked Megan Truett, our Community-Certified Project Manager with a lot of Community Cloud experience, to explain how businesses can use this platform for these three different communities.
+We asked Megan Truett, our Community-Certified Project Manager, who is also very experienced with Community Cloud, to explain how businesses can use this platform to cater to these three different communities.
 
-Megan says, “While they are all very similar, each of the three versions Salesforce offers in its ecosystem does very different things. Salesforce Community Cloud is excellent in comparison to other platforms with its ability to customize information sent out to various audiences. It does a really awesome job of tailoring the message and the information, that companies want to siphon out to their groups; whether that’s employees, customers or partners.” 
+Megan says, “While they are all very similar, each of the three versions Salesforce offers in its ecosystem does very different things. Salesforce Community Cloud is excellent in comparison to other platforms with its ability to customize information sent out to various audiences. It does a really awesome job of tailoring the message and the information that companies want to siphon out to their groups; whether that’s employees, customers, or partners.” 
 
-With more than 12 years of experience in online community building, client engagement, and social strategy, Megan knows just how beneficial Community Cloud can be. Here are 5 reasons why Community Cloud is a must-have for today’s modern business. 
+Megan has more than 12 years of experience in online community building, client engagement, and social strategy. She knows just how beneficial Community Cloud can be. Here are 5 reasons why Community Cloud is a must-have for today’s modern business. 
 
 ### It excels at providing personalized customer care
 
 According to Salesforce’s “State of the Connected Customer” report, 80% of customers say that the experience a company provides is as important as its products and services. This is not a new development; a 2006 study by McKinsey Global Institute reported that after a negative experience with a brand, more than 70% of customers reduced their commitment to that brand (in many cases decreasing the amount spent with the brand, or switching brands entirely). The customer journey is directed by how the customer feels they are being treated.
 
-Customer communities can make your consumers feel connected, heard, and appreciated. Megan emphasizes that “Community Cloud does a really great job of connecting people, in ways that are not necessarily tangible, and manages to keep customers engaged by helping them to find information they need, letting them ask questions, and discuss things that are important to them." Businesses with this kind of personalized customer engagement are positioned to thrive.
+Customer communities can make your consumers feel connected, heard, and appreciated. Megan emphasizes that “Community Cloud does a really great job of connecting people, in ways that are not necessarily tangible, and manages to keep customers engaged by helping them to find information they need &mdash; letting them ask questions, and discuss things that are important to them." Businesses with this kind of personalized customer engagement are positioned to thrive.
 
-For example, Farmers Insurance leverages Community Cloud for their online Customer Self-Service (CSS) community. Through this online portal, policyholders can sign on and easily find information and connect directly with an agent to get assistance. This makes it easier for agents to serve customers, and provides customers with a more personalized and smooth experience.
+For example, Farmers Insurance leverages Community Cloud for their online Customer Self-Service (CSS) community. Policyholders can sign-in to this online portal, easily find information, and connect directly with an agent to get assistance. This provides customers with a more personalized experience and makes it easier for agents to assist them.
 
-“The number one question companies need to ask themselves,” Megan explains “is what are my customers going to get out of this community that they’re not going to get anywhere else? They need to feel like they can participate in it, that they belong in it and that it’s their own.” 
+Megan explains that "the number one question companies need to ask themselves is what are my customers going to get out of this community that they’re not going to get anywhere else? They need to feel like they can participate in it, that they belong in it and that it’s their own.” 
 
-Today’s customers expect more. They don’t want to sit on long-winded phone calls listening to an automated recording. They want to be involved. They want to express concerns, talk about their likes and dislikes and make suggestions to the places and organizations where they spend their money. A customer community makes this possible in a digital space that promotes authentic feedback. That’s how relationships are built between the organization and the consumer — and that’s how consumers become loyal to a brand. 
+Today’s customers expect more than long-winded phone calls and automated recordings. They want to express concerns, talk about their likes and dislikes, and make suggestions to the organizations with which they spend their money. A customer community makes this possible by providing a digital space that promotes authentic feedback. That is how relationships are built between the organization and the consumer &mdash; and that is how consumers become loyal to a brand. 
 
-### It Encourages Brand Loyalty in an Oversaturated Market
+### It encourages brand Loyalty in an oversaturated market
 
 On top of stellar customer care, successful businesses have found a way to maintain their customers’ loyalty. In a world where 63% of shoppers do not feel like retailers know them, Community Cloud has the ability to help organizations increase brand loyalty.  This occurs by allowing the company to get to know its consumers intimately so they can better personalize the customer experience. 
 
