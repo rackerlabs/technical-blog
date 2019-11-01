@@ -40,31 +40,31 @@ Megan explains that "the number one question companies need to ask themselves is
 
 Today’s customers expect more than long-winded phone calls and automated recordings. They want to express concerns, talk about their likes and dislikes, and make suggestions to the organizations with which they spend their money. A customer community makes this possible by providing a digital space that promotes authentic feedback. That is how relationships are built between the organization and the consumer &mdash; and that is how consumers become loyal to a brand. 
 
-### It encourages brand Loyalty in an oversaturated market
+### It encourages brand loyalty in an oversaturated market
 
-On top of stellar customer care, successful businesses have found a way to maintain their customers’ loyalty. In a world where 63% of shoppers do not feel like retailers know them, Community Cloud has the ability to help organizations increase brand loyalty.  This occurs by allowing the company to get to know its consumers intimately so they can better personalize the customer experience. 
+In addition to stellar customer care, successful businesses have found another way to maintain their customers’ loyalty. In a world where 63% of shoppers do not feel like retailers know them, Community Cloud has the ability to help organizations increase brand loyalty. By allowing the company to get to know its consumers intimately, Community Cloud helps to better personalize the customer experience. 
 
-“A customer community is great for knowing who your customer is and being able to see trends about them ” Megan divulges. “This is where customers go to and become brand loyal to you and your products and services because they can connect with other people who also enjoy the product. So it’s this really wonderful circular connection.” This circular connection works in the same way word of mouth does. As one satisfied customer interacts with other customers, the better the brand’s reputation becomes which in turn, results in loyal customers. These brand enthusiasts Megan says, are crucial to both community and a company’s success. 
+“A customer community is great for knowing who your customer is and being able to see trends about them ” Megan divulges. “This is where customers go to, and become brand loyal to you and your products and services because they can connect with other people who also enjoy the product. So it’s this really wonderful circular connection.” This circular connection works the same as word-of-mouth. One satisfied customer interacts with another, which improves the brand’s reputation and increases customer loyalty. Megan says, "These brand enthusiasts are crucial to both community and a company’s success." 
 
-“People who are not your company employee and don’t have a monetary reason to be there [in your community] but are there, are key people to success. They keep people excited about your product and service which gives you insider information. They’re your enthusiasts.” 
+“People who are not your company employees and don’t have a monetary reason to be there [in your community],but are there, are key people to success. They keep people excited about your product and service which gives you insider information. They’re your enthusiasts.” 
 
-### It Fosters Connection in a Work-From-Home Culture
+### It fosters connection in a work-from-home culture
 
-Apart from your business’ relationship with its customers, Community Cloud can also enhance the relationship with your employees,by setting up an employee community. “Being able to help people connect, especially for companies that are remote [or have remote employees] is one of the greatest features of an employee community,” Megan says. With more companies embracing a work-from-home culture, nurturing virtual connections in the workplace is more important than ever. 
+Community Cloud can also enhance the relationship between your business and your employees,by setting up an employee community. “Being able to help people connect, especially for companies that are remote [or have remote employees] is one of the greatest features of an employee community,” Megan says. With more companies embracing a work-from-home culture, nurturing virtual connections in the workplace is more important than ever. 
 
-Setting clear expectations and having a communication playbook are essential for ensuring the success of remote companies and their employees. Implementing an employee community through Community Cloud solves both of those concerns. “You’ll be amazed at how you ever ran your business without, it” Megan conveys, explaining how well Community Cloud’s customizable platform works for both small and large organizations.
+Setting clear expectations and having a communication playbook are essential to the success of remote companies and their employees. Implementing an employee community through Community Cloud solves both of these concerns. Megan explains how well Community Cloud’s customizable platform works for both small and large organizations, “You’ll be amazed at how you ever ran your business without it.” 
 
-“An employee community isn’t a place to waste time. Although it’s social, it’s not social media. It’s much more powerful and business-driven than that. It’s a premier way to get business information to people in a timely fashion and efficient manner,” which is what every successful business aims to do — especially as the work-from-home culture continues to grow. 
+“An employee community isn’t a place to waste time. Although it’s social, it’s not social media. It’s much more powerful and business-driven than that. It’s a premier way to get business information to people in a timely fashion and efficient manner,” which is the goal of every successful business — especially as the work-from-home culture continues to grow. 
 
-### It Grows With Your Company
+### It grows with your company
 
-Salesforce Community Cloud has the capacity to evolve as your company evolves. “The community itself is always growing, it’s always evolving, it’s living. It’s never like you put it up once and you’re done. You’re always improving it, responding to it and allowing it to evolve with and for the organization.” 
+Salesforce Community Cloud has the capacity to evolve with your company. “The community itself is always growing, it’s always evolving, it’s living. It’s never like you put it up once and you’re done. You’re always improving it, responding to it and allowing it to evolve with and for the organization.” 
 
-Too many times companies find themselves stuck with software products that are no longer useful because they’ve outgrown them or developed beyond the technology’s capacity. Salesforce Community Cloud, on the other hand, scales as your company does. Because of its customizable nature, the platform can not only grow with your company, but its data can change with your company too. They key is to think strategically. “Community Cloud has the capacity to follow the strategic vision of your company if you allow it to,” Megan says. “Let the platform respond appropriately to your company’s growth and development.”
+Companies find themselves stuck with software products that are no longer useful because they’ve outgrown them or developed beyond the technology’s capacity. Salesforce Community Cloud with your company. Because of its customizable nature, the platform can not only grow with your company, but its data can change with your company too. They key is to think strategically. “Community Cloud has the capacity to follow the strategic vision of your company if you allow it to,” Megan says, “Let the platform respond appropriately to your company’s growth and development.”
 
-### It Enhances Your Professional Network 
+### It enhances Your professional network 
 
-A partner community is an external forum where you can share and insider information to relevant stakeholders. Think of this like a hybrid between an employee and a customer community, with a focus on keeping your business partners engaged to nurture your organization’s professional network.
+A partner community is an external forum where you can share insider information with relevant stakeholders. It is a hybrid between an employee and a customer community. This community focuses on keeping your business partners engaged in order to nurture your organization’s professional network.
 
 For a partner community to be successful, make sure you keep your partners interests and needs at the forefront when planning what to offer in this virtual community. “Whether it’s an employee, customer or partner community, definitely work with people to find out what they can get in your community that they can’t get anywhere else.” 
 
