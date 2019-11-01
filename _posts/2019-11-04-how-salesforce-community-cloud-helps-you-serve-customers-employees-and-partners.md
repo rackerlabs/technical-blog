@@ -64,19 +64,19 @@ Companies find themselves stuck with software products that are no longer useful
 
 ### It enhances Your professional network 
 
-A partner community is an external forum where you can share insider information with relevant stakeholders. It is a hybrid between an employee and a customer community. This community focuses on keeping your business partners engaged in order to nurture your organization’s professional network.
+A partner community is an external forum where you can share insider information with relevant stakeholders. It is a hybrid between an employee and a customer community focused on keeping your business partners engaged in order to nurture your organization’s professional network.
 
-For a partner community to be successful, make sure you keep your partners interests and needs at the forefront when planning what to offer in this virtual community. “Whether it’s an employee, customer or partner community, definitely work with people to find out what they can get in your community that they can’t get anywhere else.” 
+Consider your partners' interests and needs when planning a sucessful partner community. Megan advises, “Whether it’s an employee, customer or partner community, definitely work with people to find out what they can get in your community that they can’t get anywhere else.” 
 
-For instance, you may use your partner community to share detailed and accessible reports, with the information and insights business partners want. Because Community Cloud lives within your Salesforce org, you have the power of Salesforce at your fingertips for creating accurate, detailed and easy to access reports. “For as long as I’ve been working in the community world, I haven’t seen any reports on the other platforms I’ve used come close to Salesforce’s reporting. The Salesforce platform takes data and turns it into great dashboards.” These dashboards have the kind of information business partners hold dear. 
+For instance, you may use your partner community to share detailed and accessible reports, providing the information and insights business partners want. Community Cloud lives within your Salesforce organization which allows you to use Salesforce to create accurate, detailed, and easy-to-access reports. “For as long as I’ve been working in the community world, I haven’t seen any reports on the other platforms I’ve used come close to Salesforce’s reporting. The Salesforce platform takes data and turns it into great dashboards.” 
 
-Effective business partnerships require detailed agreements, clear expectations and have mutual benefits. Not only is a partner community a wonderful place to discuss agreements and expectations, but the reporting capabilities Megan describes give you an easy way to reiterate the benefits for all partners involved. Providing your partners with relevant information via dashboards and reports help to maintain a healthy level of communication, so they feel only engaged but fully informed, as well.
+Effective business partnerships require detailed agreements, clear expectations, and provide mutual benefits. Not only is a partner community a wonderful place to discuss agreements and expectations, but the reporting capabilities Megan describes give you an easy way to reiterate the benefits for all partners involved. Providing your partners with relevant information via dashboards and reports help to maintain a healthy level of communication, so they feel engaged as well as informed.
 
-### RelationEdge Partners With You to Boost Your Communities
+### Rackspace partners with you to boost your communities
 
 As business process consultants and Salesforce implementation experts, it is our job and our greatest desire to help your organization operate as smoothly as possible. While we recognize that every business will  have unique processes, we know that all modern companies need three things to survive: loyal, consistent customers; passionate, connected employees; and satisfied, engaged partners. 
 
-Salesforce Community Cloud is a platform that can aid in stimulating and promoting all three types of relationships. We’re here to partner with you to implement Community Cloud and set up the appropriate communities for your business needs. Reach out to our expert team today. Megan and the rest our Salesforce certified experts are ready to ensure your business thrives.
+Salesforce Community Cloud is a platform that can aid in stimulating and promoting all three types of relationships. We’re here to partner with you to implement Community Cloud and set up the necessary communities. Reach out to our expert team today. Megan and the rest our Salesforce certified experts are ready to help your business thrive.
 
 
 ### Optimize your environment with expert administration, management, and configuration
