@@ -18,7 +18,7 @@ Salesforce&reg;Community Cloud offers a centralized platform for loyal customers
 
 <!-- more -->
 
-![]({% asset_path 2019-11-01-einstein-analytics-or-classic-reporting-five-questions-to-ask/einstein-analytics.png %})
+![]({% asset_path 2019-11-4-how-salesforce-community-cloud-helps-you-serve-customers-employees-and-partners/picture1.png %})
 
 Successful businesses rely on loyal customers, happy employees, and engaged partners. Loyal customers increase sales, satisfied employees ensure the business runs well, and interactive partners &mdash; like distributors and sister companies, solidify a healthy professional network. 
 
@@ -38,7 +38,7 @@ For example, [Farmers Insurance](https://www.salesforce.com/customer-success-sto
 
 Megan explains that "the number one question companies need to ask themselves is what are my customers going to get out of this community that they’re not going to get anywhere else? They need to feel like they can participate in it, that they belong in it and that it’s their own.” 
 
-Today’s customers expect more than long-winded phone calls and automated recordings. [They want to be able to express concerns](https://www.adweek.com/brand-marketing/why-brands-must-quickly-shift-from-communication-with-consumers-to-conversation/), talk about their likes and dislikes, and make suggestions to the organizations. A customer community makes this possible by providing a digital space that promotes authentic feedback. That is how relationships are built between the organization and the consumer &mdash; and that is how consumers become loyal to a brand. 
+Today’s customers expect more than long-winded phone calls and automated recordings. [They want to be able to express concerns](https://www.adweek.com/brand-marketing/why-brands-must-quickly-shift-from-communication-with-consumers-to-conversation/), talk about their likes and dislikes, and make suggestions to the organization. A customer community makes this possible by providing a digital space that promotes authentic feedback. That is how relationships are built between the organization and the consumer &mdash; and that is how consumers become loyal to a brand. 
 
 ### It encourages brand loyalty in an oversaturated market
 
@@ -52,7 +52,7 @@ Megan says, "These brand enthusiasts are crucial to both community and a company
 
 Community Cloud can also set up an employee community which enhances the relationship between your business and your employees. “Being able to help people connect, especially for companies that are remote [or have remote employees] is one of the greatest features of an employee community,” Megan explains. With more companies embracing a work-from-home culture, nurturing virtual connections in the workplace is more important than ever. 
 
-Setting clear expectations and having a communication playbook are [essential to the success](https://www.inc.com/amanda-pressner-kreuser/the-most-successful-remote-teams-do-these-5-things.html) of remote companies and their employees. Implementing an employee community through Community Cloud solves both of these concerns. Megan explains how well Community Cloud’s customizable platform works for both small and large organizations, “You’ll be amazed at how you ever ran your business without it.” 
+Setting clear expectations and having a communication playbook are [essential to the success](https://www.inc.com/amanda-pressner-kreuser/the-most-successful-remote-teams-do-these-5-things.html) of remote companies and their employees. Implementing an employee community through Community Cloud addresses both of these concerns. Megan explains how well Community Cloud’s customizable platform works for both small and large organizations, “You’ll be amazed at how you ever ran your business without it.” 
 
 “An employee community isn’t a place to waste time. Although it’s social, it’s not social media. It’s much more powerful and business-driven than that. It’s a premier way to get business information to people in a timely fashion and efficient manner,” which is the goal of every successful business — especially as the work-from-home culture continues to grow. 
 
