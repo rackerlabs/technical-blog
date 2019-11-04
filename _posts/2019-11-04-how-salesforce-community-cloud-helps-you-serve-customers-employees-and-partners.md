@@ -18,7 +18,7 @@ Salesforce&reg;Community Cloud offers a centralized platform for loyal customers
 
 <!-- more -->
 
-![]({% asset_path 2019-11-4-how-salesforce-community-cloud-helps-you-serve-customers-employees-and-partners/picture1.png %})
+![]({% asset_path 2019-11-4-how-salesforce-community-cloud-helps-you-serve-customers-employees-and-partners/Picture1.png %})
 
 Successful businesses rely on loyal customers, happy employees, and engaged partners. Loyal customers increase sales, satisfied employees ensure the business runs well, and interactive partners&mdash;like distributors and sister companies, solidify a healthy professional network. 
 
