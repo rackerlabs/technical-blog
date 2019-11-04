@@ -42,7 +42,7 @@ Today’s customers expect more than long-winded phone calls and automated recor
 
 ### It encourages brand loyalty in an oversaturated market
 
-In addition to stellar customer care, successful businesses have found another way to maintain their customers’ loyalty. In a world where [63% of shoppers do not feel like retailers know them](https://www.salesforce.com/blog/2017/05/14-retail-customer-experience-stats.html) , Community Cloud can help organizations increase brand loyalty. By allowing the company to know its consumers intimately, Community Cloud helps to better personalize the customer experience. 
+In addition to stellar customer care, successful businesses have found another way to maintain their customers’ loyalty. In a world where [63% of shoppers do not feel like retailers know them](https://www.salesforce.com/blog/2017/05/14-retail-customer-experience-stats.html), Community Cloud can help organizations increase brand loyalty. By allowing the company to know its consumers intimately, Community Cloud helps to better personalize the customer experience. 
 
 “A customer community is great for knowing who your customer is and being able to see trends about them,” Megan divulges. “This is where customers go to and become brand loyal to you and your products and services because they can connect with other people who also enjoy the product. So it’s this wonderful circular connection.” This circular connection works the same as word-of-mouth. One satisfied customer interacts with another, which improves the brand’s reputation and increases customer loyalty. 
 
