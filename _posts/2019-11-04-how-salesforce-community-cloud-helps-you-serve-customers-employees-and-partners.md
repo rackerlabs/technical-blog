@@ -26,7 +26,7 @@ We asked Megan Truett, our Community-Certified Project Manager, who is also very
 
 Megan says, “While they are all very similar, each of the three versions Salesforce offers in its ecosystem does very different things. Salesforce Community Cloud is excellent in comparison to other platforms with its ability to customize the information sent out to various audiences. It does an awesome job of tailoring the message and the information that companies want to siphon out to their groups, whether that’s employees, customers, or partners.” 
 
-Megan has more than 12 years of experience in online community building, client engagement, and social strategy. She knows just how beneficial Community Cloud can be. Here are 5 reasons why Community Cloud is a must-have for today’s modern business. 
+Megan has more than 12 years of experience in online community building, client engagement, and social strategy. She knows just how beneficial Community Cloud can be. Here are five reasons why Community Cloud is a must-have for today’s modern business. 
 
 ### It excels at providing personalized customer care
 
@@ -42,15 +42,15 @@ Today’s customers expect more than long-winded phone calls and automated recor
 
 ### It encourages brand loyalty in an oversaturated market
 
-In addition to stellar customer care, successful businesses have found another way to maintain their customers’ loyalty. In a world where [63% of shoppers do not feel like retailers know them](https://www.salesforce.com/blog/2017/05/14-retail-customer-experience-stats.html) , Community Cloud can help organizations increase brand loyalty. By allowing the company to know its consumers intimately, Community Cloud helps to better [personalize the customer experience](https://relationedge.com/personalizing-the-retail-experience-with-salesforce/). 
+In addition to stellar customer care, successful businesses have found another way to maintain their customers’ loyalty. In a world where [63% of shoppers do not feel like retailers know them](https://www.salesforce.com/blog/2017/05/14-retail-customer-experience-stats.html) , Community Cloud can help organizations increase brand loyalty. By allowing the company to know its consumers intimately, Community Cloud helps to better personalize the customer experience. 
 
 “A customer community is great for knowing who your customer is and being able to see trends about them,” Megan divulges. “This is where customers go to and become brand loyal to you and your products and services because they can connect with other people who also enjoy the product. So it’s this wonderful circular connection.” This circular connection works the same as word-of-mouth. One satisfied customer interacts with another, which improves the brand’s reputation and increases customer loyalty. 
 
-Megan says, "These brand enthusiasts are crucial to both community and a company’s success... People who are not your company employees and don’t have a monetary reason to be there [in your community], but are there, are key people to success. They keep people excited about your product and service, which gives you insider information. They’re your enthusiasts.” 
+Megan says, "These brand enthusiasts are crucial to both community and a company’s success ... People who are not your company employees and don’t have a monetary reason to be there in your community (but are there) are key people to success. They keep people excited about your product and service, which gives you insider information. They’re your enthusiasts.” 
 
 ### It fosters connection in a work-from-home culture
 
-Community Cloud can also set up an employee community, which enhances the relationship between your business and your employees. “Being able to help people connect, especially for companies that are remote [or have remote employees] is one of the greatest features of an employee community,” Megan explains. With more companies embracing a work-from-home culture, nurturing virtual connections in the workplace is more important than ever. 
+Community Cloud can also set up an employee community, which enhances the relationship between your business and your employees. “Being able to help people connect, especially for companies that are remote or have remote employees, is one of the greatest features of an employee community,” Megan explains. With more companies embracing a work-from-home culture, nurturing virtual connections in the workplace is more important than ever. 
 
 Setting clear expectations and having a communication playbook are [essential to the success](https://www.inc.com/amanda-pressner-kreuser/the-most-successful-remote-teams-do-these-5-things.html) of remote companies and their employees. Implementing an employee community through Community Cloud addresses both of these concerns. Megan explains how well Community Cloud’s customizable platform works for both small and large organizations, “You’ll be amazed at how you ever ran your business without it.” 
 
@@ -74,7 +74,7 @@ For instance, you may use your partner community to share detailed and accessibl
 
 ### Rackspace partners with you to boost your communities
 
-As business process consultants and Salesforce implementation experts, it is our job to help your organization operate as smoothly as possible. While we recognize that every business has unique processes, we know that all modern companies need three things to survive: loyal, consistent customers; passionate, connected employees; and satisfied, engaged partners. 
+As business process consultants and Salesforce implementation experts, it is our job to help your organization operate as smoothly as possible. While we recognize that every business has unique processes, we know that all modern companies need three things to survive: loyal and consistent customers, passionate and connected employees, and satisfied and engaged partners. 
 
 Salesforce Community Cloud is a platform that can aid in stimulating and promoting all three types of relationships. We are here to partner with you to implement Community Cloud and set up your communities. Reach out to our expert team today. Megan and the rest of our Salesforce certified experts are ready to help your business thrive.
 
