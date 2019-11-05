@@ -42,7 +42,7 @@ By leveraging this data, you can provide a faster and more effective customer se
 
 Interaction Studio allows you to display customized content on your website to suit the needs and interests of each customer.
 
-For example, a customer visits your telecom website and views your selection of iPhones. The next day, when that customer returns to your site, Interaction Studio can ensure the content they see specific to iPhones, rather than other types of mobile devices.
+For example, a customer visits your telecom website and views your selection of iPhones. The next day, when that customer returns to your site, Interaction Studio can ensure the content they see is specific to iPhones, rather than other types of mobile devices.
 
 Interaction Studio also allows you to provide consistent messaging to a consumer across multiple channels. If your customer is looking at iPhones online, you can email them a related discount. You can also re-engage customers you’ve lost along the buyer’s journey by creating an audience segment that only receives a certain kind of messaging.
 
