@@ -11,20 +11,20 @@ categories:
 metaTitle: "What is Interaction Studio and how does in drive transformative business value?"
 metaDescription: "What is Interaction Studio and how does in drive transformative business value?"
 ogTitle: "What is Interaction Studio and how does in drive transformative business value?"
-ogDescription: "Launched in 2018 as an innovative Marketing Cloud feature, Interaction Studio allows your company to engage with customers at every stage along the path from lead to loyalty."
+ogDescription: "Interaction Studio was launched in 2018 as an innovative Marketing Cloud feature that allows your company to engage with customers at every stage along the path from lead to loyalty."
 ---
 
-Launched in 2018 as an innovative Marketing Cloud feature, Interaction Studio allows your company to engage with customers at every stage along the path from lead to loyalty. Interaction Studio tracks customer data through cookies and matches that data with information that customers have provided, such as their email addresses and phone numbers.  
+Interaction Studio was launched in 2018 as an innovative Marketing Cloud feature that allows your company to engage with customers at every stage along the path from lead to loyalty. Interaction Studio uses cookies to track customer data and then matches that data with customer provided information, like email addresses and phone numbers.  
 
 <!-- more -->
 
 ![]({% asset_path 11-6-19-what-is-interaction-studio-and-how-does-it-drive-transformative-business-value/Interaction-studio.png %})
 
-How many more sales would your company close if you could meet your customers right where they are on the buyer’s journey and guide them toward your product or service?
+How many more sales would your company close if you could meet your customers where they are on the buyer’s journey and guide them toward your product or service?
 
-With a solid awareness of consumer interactions, you can deliver a more personalized and streamlined customer experience. The ability to track customer behavior isn’t new; what is new is the ability to do it in real time — which is where Interaction Studio comes in. As long as you comply with local data privacy laws and GDPR, this can be a powerful way to improve your relationships with your customers.
+With a solid awareness of consumer interactions, you can deliver a more personalized and streamlined customer experience. The ability to track customer behavior isn’t new; what is new, is Interaction Studio's capacity to allow you to do it in real time. As long as you comply with local data privacy laws and GDPR, this can be a powerful way to improve your relationships with your customers.
 
-Read on to learn more about this tool and how your company can use it to improve customer service and drive transformative business value.
+Read on to learn how your company can use Interaction Studio to improve customer service and drive transformative business value.
 
 ### Solving customer pain points with Interaction Studio
 
