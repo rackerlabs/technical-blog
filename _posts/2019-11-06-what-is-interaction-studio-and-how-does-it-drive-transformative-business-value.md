@@ -22,15 +22,15 @@ Interaction Studio was launched in 2018 as an innovative Marketing Cloud feature
 
 How many more sales would your company close if you could meet your customers where they are on the buyer’s journey and guide them toward your product or service?
 
-With a solid awareness of consumer interactions, you can deliver a more personalized and streamlined customer experience. The ability to track customer behavior isn’t new; what is new, is Interaction Studio's capacity to allow you to do it in real time. As long as you comply with local data privacy laws and GDPR, this can be a powerful way to improve your relationships with your customers.
+With a solid awareness of consumer interactions, you can deliver a more personalized and streamlined customer experience. The ability to track customer behavior isn’t new but Interaction Studio's capacity to allow you to do it in real time is. This can be a powerful way to improve your customer relationships, as long as you comply with local data privacy laws and GDPR.
 
 Read on to learn how your company can use Interaction Studio to improve customer service and drive transformative business value.
 
 ### Solving customer pain points with Interaction Studio
 
-With Interaction Studio, you no longer have to rely on batch data when you interact with customers — you have all the data you need at the click of a button. Your brand can customize interactions to an individual customer’s behavior and guide them along the most appropriate path to your product or service, eliminating many common customer pain points. Here are just a few examples.
+Interaction Studio removes your reliance on batch data during your customer interactions &mdash; providing you all the data you need at the click of a button. Your brand can customize interactions to an individual customer’s behavior and guide them along the most appropriate path to your product or service, eliminating many common customer pain points. Here are just a few examples.
 
-### Scrap customer service scripts
+#### Scrap customer service scripts
 
 Today’s consumer wants to do their own research on your brand, product, or service before contacting support. When it’s time to speak with customer service, almost 70% of consumers want their experience to be managed so they don’t need to keep explaining their needs on different support channels.
 
@@ -40,7 +40,7 @@ The tool shows you exactly what someone was looking at on your website the momen
 
 By leveraging this data, your customers don’t have to explain their needs repeatedly and you can provide a faster and more effective customer service experience. 
 
-### Customize on-site content
+#### Customize on-site content
 
 Interaction Studio allows you to display different content on your website to suit the needs and interests of each individual.
 
@@ -50,7 +50,7 @@ Interaction Studio allows you to provide consistent messaging to a consumer, eve
 
 No matter who your customers are and where they’re at in their buyer journey, you can present them with the messaging they need through the channels they prefer, for unique and effective customer service.
 
-### Record in-store activity
+#### Record in-store activity
 
 When digital activity combines with traditional brick-and-mortar experiences, it can be tricky to join the dots and get the full picture of the buyer’s journey. This not only reduces your visibility into customer behavior, but also creates a disjointed and incomplete experience for the customer.
 
@@ -58,7 +58,7 @@ By connecting online touchpoints to offline touchpoints — such as call centers
 
 Over 80% of consumers want brands to really understand them, and you can’t fully understand your consumer if you are missing either the digital or brick-and-mortar part of their journey. Interaction Studio enables you to fill in the missing puzzle piece so you can see the full picture.
 
-### Creating a strategy for success
+#### Creating a strategy for success
 
 It can be tempting to track everything with Interaction Studio, but smart marketers know it’s better to be discerning with what you track. Instead of looking at every piece of data from every customer, create a strategy to focus on the most important data for your business objectives so you can drive the most value.
 
@@ -68,7 +68,7 @@ For example, your customers may generally prefer to receive emails, but may not 
 
 Similarly, if your customers tend to make online purchases and you want to make online shopping with your company as easy as possible, create a strategy to reduce the number of abandoned carts. You might use Interaction Studio to see where most customers abandon their online shopping carts, and work to simplify the process or offer additional customer support at that step.
 
-### Need help navigating Marketing Cloud Tools Like Interaction Studio?
+#### Need help navigating Marketing Cloud Tools Like Interaction Studio?
 
 This is just the tip of the iceberg when it comes to using Interaction Studio. As a trusted Salesforce Platinum Consulting Partner, RelationEdge can help you implement Marketing Cloud and get the most from your customer data with this powerful tool. Our team of business consultants, technology experts, and marketing strategists collaborate with you to find the right solution for your organization and support ongoing success. Contact us today to start driving transformative business value with Interaction Studio and the wealth of other tools Marketing Cloud offers.
 
