@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "What is Interaction Studio and how does in drive transformative business value?"
+title: "What is Interaction Studio and how does it drive transformative business value?"
 date: 2019-11-06 00:00
 comments: true
 author: Karisa Booth
@@ -8,9 +8,9 @@ published: true
 authorIsRacker: true
 categories:
   - General
-metaTitle: "What is Interaction Studio and how does in drive transformative business value?"
-metaDescription: "What is Interaction Studio and how does in drive transformative business value?"
-ogTitle: "What is Interaction Studio and how does in drive transformative business value?"
+metaTitle: "What is Interaction Studio and how does it drive transformative business value?"
+metaDescription: "What is Interaction Studio and how does it drive transformative business value?"
+ogTitle: "What is Interaction Studio and how does it drive transformative business value?"
 ogDescription: "Interaction Studio was launched in 2018 as an innovative Marketing Cloud feature that allows your company to engage with customers at every stage along the path from lead to loyalty."
 ---
 
@@ -22,19 +22,17 @@ ogDescription: "Interaction Studio was launched in 2018 as an innovative Marketi
 
 How much could you increase sales at your company, if you could meet your customers where they are on the buyer’s journey and guide them toward your product or service?
 
-With a solid awareness of consumer interactions, you can deliver a more personalized and streamlined customer experience. The ability to track customer behavior is not new but Interaction Studio's capability to allow you to do it in real time is. As long as you comply with [GDPR and local data privacy laws](https://help.salesforce.com/articleView?id=consent_management_marketing.htm&type=5), it can be a powerful way to improve your customer relationships.
-
-Read on to learn how your company can use Interaction Studio to improve customer service and drive transformative business value.
+With a solid awareness of consumer interactions, you can deliver a more personalized and streamlined customer experience. The ability to track customer behavior is not new but Interaction Studio's capability to allow you to do it in real time is especially innovative. As long as you comply with [GDPR and local data privacy laws](https://help.salesforce.com/articleView?id=consent_management_marketing.htm&type=5), it can be a powerful way to improve your customer relationships.
 
 ### Solving customer pain points with Interaction Studio
 
 Interaction Studio removes your reliance on batch data during customer interactions &mdash; providing you with all the data you need at the click of a button. It lets your brand [customize interactions](https://martechtoday.com/salesforce-adds-interaction-studio-integration-with-google-analytics-360-217079) to an individual customer’s behavior and guide them to the most appropriate product or service, eliminating many common customer pain points. 
 
-Here are 4 ways that Interaction Studio can help your business.
+Here are 4 ways that your company can use Interaction Studio to improve customer service and drive transformative business value.
 
 #### Scrap customer service scripts
 
-Today’s consumer often want to research your brand, product, or service [before contacting support](https://martechseries.com/sales-marketing/customer-experience-management/digital-achievement-gap-companies-struggle-meet-customer-expectations/). Almost 70% of consumers want their customer service experience to be managed so they don’t need to repeat themselves when using different support channels.
+Today’s consumer often wants to research your brand, product, or service [before contacting support](https://martechseries.com/sales-marketing/customer-experience-management/digital-achievement-gap-companies-struggle-meet-customer-expectations/). Almost 70% of consumers want their customer service experience to be managed so they don’t need to repeat themselves when using different support channels.
 
 Interaction Studio helps your brand deliver a relevant and personalized customer support experience. It shows you exactly what someone was looking at on your website the moments before they contacted customer service. For example, if someone visits the mortgage page on your banking company’s website &mdash; when they contact support, instead of generically asking, “Hi, how can I help you today?” your customer service agent can ask, “Hi, I see you’re interested in mortgage products. Can I answer any specific questions?”
 
@@ -46,7 +44,7 @@ Interaction Studio allows you to display customize content on your website to su
 
 For example, a customer visits your telecom website and views your selection of iPhones. The next day, when that customer returns to your site, Interaction Studio can ensure they are shown content specific to iPhones, rather than other types of mobile devices.
 
-Interaction Studio also allows you to provide consistent messaging to a consumer across multiple channels. If your customer is looking at iPhones online, you can send them email them with a discount for those very products. You can also re-engage customers you’ve lost along the buyer’s journey by creating an audience segment that only receives a certain kind of messaging.
+Interaction Studio also allows you to provide consistent messaging to a consumer across multiple channels. If your customer is looking at iPhones online, you can email them a related discount. You can also re-engage customers you’ve lost along the buyer’s journey by creating an audience segment that only receives a certain kind of messaging.
 
 No matter who your customers are or where they are in their buyer journey, you can present them with the messaging they need, through the channels they prefer, for unique and effective customer service.
 
@@ -70,7 +68,7 @@ Similarly, if your customers tend to make online purchases, you could make shopp
 
 #### Need help navigating Marketing Cloud tools like Interaction Studio?
 
-This is just the tip of the iceberg for what Interaction Studio can offer. As a trusted Salesforce Platinum Consulting Partner, Rackspace can help you implement Marketing Cloud and use this tool to get the most from your customer data. Our team of business consultants, technology experts, and marketing strategists collaborate with you to find the right solution for your organization and support ongoing success. Contact us today to start driving transformative business value with Interaction Studio and the wealth of other Marketing Cloud tools.
+This is just the tip of the iceberg for what Interaction Studio can offer. As a trusted Salesforce Platinum Consulting Partner, Rackspace can help you implement Marketing Cloud and use this tool to get the most from your customer data. Our team of business consultants, technology experts, and marketing strategists collaborate with you to find the right solution for your organization and support ongoing success. Contact us today to start driving transformative business value with Interaction Studio as well as the wealth of other Marketing Cloud tools.
 
 
 ### Optimize your environment with expert administration, management, and configuration
