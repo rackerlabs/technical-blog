@@ -16,7 +16,7 @@ ogDescription: "With so many incredible features and powerful tools, it can be h
 
 It is one thing to have access to Salesforce&reg; within your organization; it is another be confident that you are using the platform to its full capacity.
 
-What happens if you discover that your organization’s Salesforce usage is below the curve? Don’t lose hope. It may take time to fully capitalize on the many ways that Salesforce can empower your team. Here are four strategies to help you develop a workable plan of action.
+What happens if you discover that your organization’s Salesforce usage is below the curve? Don’t lose hope. It might take time to fully capitalize on the many ways that Salesforce can empower your team. Here are four strategies to help you develop a workable plan of action.
 <!-- more -->
 
 ![]({% asset_path 11-7-19-how-can-your-organization-use-salesforce-to-its-full-capacity/picture1.png %})
@@ -31,17 +31,17 @@ If you have not done so yet, here are some benchmarks to begin with.
 
 The first metric to evaluate is the daily [login activity of your Salesforce users](https://www.salesforce.org/measuring-adoption-is-your-crm-solution-healthy-and-growing/). How often are people logging in? Are users regularly and reliably updating contacts and records? Is the activity consistent with an individual’s role or responsibilities? If login rates and engagement are low, you quickly identify the root of the problem: your employees are not regularly using Salesforce.
 
-[Salesforce Adoption Dashboards](https://appexchange.salesforce.com/appxListingDetail?listingId=a0N30000004gHhLEAU) provide a one-stop-shop for monitoring usage. Included in the app are 42 powerful reports for monitoring team member logins, key feature usage, as well as how they update accounts and opportunities. Adoption Dashboards allow you to take proactive steps to ensure organizational success.
+[Salesforce Adoption Dashboards](https://appexchange.salesforce.com/appxListingDetail?listingId=a0N30000004gHhLEAU) provide a one-stop-shop for monitoring usage. Included in the app are 42 powerful reports for monitoring team member logins, key feature usage, as well as how they update accounts and opportunities. Adoption Dashboards enable you to take proactive steps to ensure organizational success.
 
 #### Quality of data
 
 Data quality is another important metric. Are team members accurately and thoroughly completing critical fields? Can you trust others in your organization to enter data responsibly according to Salesforce best practices? If your team is off track, focus on the type and quality of data in your existing records.
 
-The Field Trip app is a quick way to pull reports on Salesforce fields. Field Trip analyzes fields in any object with optional filters for better reporting. This app allows you to easily view the percentage of populated records and gauge your organizational effectiveness. 
+The Field Trip app is a quick way to pull reports on Salesforce fields. Field Trip analyzes fields in any object with optional filters for better reporting. This app enables you to easily view the percentage of populated records and gauge your organizational effectiveness. 
 
 #### Team productivity
 
-It is nice to have a Salesforce guru on your team who understands the processes and procedures and can execute them skillfully&mdash;but it takes more than one Salesforce user to create profitability for the organization. Can all users move beyond the basic data entry steps and contribute to the goals of the entire team? Monitoring your team’s productivity levels may help identify pain points in user adoption.
+It is nice to have a Salesforce guru on your team who understands the processes and procedures and can execute them skillfully&mdash;but it takes more than one Salesforce user to create profitability for the organization. Can all users move beyond the basic data entry steps and contribute to the goals of the entire team? Monitoring your team’s productivity levels might help identify pain points in user adoption.
 
 [Spinify: Lively Leaderboards](https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3A00000DqDQnUAN) is one tool that can help track your team's productivity. The purpose of Spinify&mdash;which has an impressive 5-star rating on the AppExchange&mdash;is to develop team culture through engagement, motivation, and coaching. With Spinify, you can identify high-performing team members without combing through analytics. It also uses interactive features to inspire teams through positive motivation.
 
@@ -57,7 +57,7 @@ After you develop a set of adoption benchmarks, the next step is to watch for sy
 
 - **Users entering data in multiple ways.** This might signal that there is a gap in your business process, or that users are struggling to understand the full capabilities of the platform.
 
-- **A lack of engagement from company leadership.** While Salesforce offers plenty of analytical tools, they are not effective if management is not actively monitoring them. Pay special attention to how many members of your leadership team are using Salesforce regularly&mdash;they set the tone for user adoption throughout the rest of the company.
+- **A lack of engagement from company leadership.** While Salesforce offers plenty of analytical tools, they are not effective if management fails to actively monitor them. Pay special attention to how many members of your leadership team are using Salesforce regularly&mdash;they set the tone for user adoption throughout the rest of the company.
 
 - **Leads and opportunities that do not change.** If team members are not updating leads and opportunities with new data, this suggests that your team might lack the motivation to incorporate the technology into their daily processes.
 
@@ -65,7 +65,7 @@ After you develop a set of adoption benchmarks, the next step is to watch for sy
 
 ### See the signs of positive usage
 
-Pinpointing symptoms of poor Salesforce adoption is essential to instigating a plan for change. It is also equally important to identify what is working well. Positive signs that your team is adequately using the platform’s functionality may include:
+Pinpointing symptoms of poor Salesforce adoption is essential to instigating a plan for change. It is also equally important to identify what is working well. Positive signs that your team is adequately using the platform’s functionality might include:
 
 - **A defined roadmap for Salesforce usage.** Confusion often stems from users who are unsure of the overall strategy. Teams thrive when management provides concrete goals and connects the capabilities of the technology to those goals.
 
@@ -79,11 +79,13 @@ Now that you have identified key metrics and symptoms to assess your current Sal
 
 - **Involve your team as early as possible.** If your organization is new to Salesforce, the switch from a previous system may not be quick. Get your team involved at the inception of the Salesforce project, provide them channels to give feedback, and listen to their concerns.
 
-- **Provide ample training.** Successful adoption comes when users are well-equipped to use the software. Provide adequate training and set expectations from the start. Utilize refresher courses as needed to ensure your employees have the necessary support in learning to master the technology.
+- **Provide ample training.** Successful adoption comes when users are well-equipped to use the software. Provide adequate training and set expectations from the start. Use refresher courses as needed to ensure your employees have the necessary support in learning to master the technology.
 
 - **Clean and categorize data.** One of the motivations for implementing a customer success platform is to have accurate data available in real time. It is important to monitor the quality of data in Salesforce regularly&mdash;otherwise, it becomes a chore for your team to sift through disorganized and inaccurate data to leverage the information they need. As a result, they are more likely not to seek the data at all.
 
 - **Create an engaging rewards system.** Along with monitoring for any issues, take time to recognize when team members go the extra mile to adopt features of the new platform. Use positive motivation to align all team members.
+
+### Conclusion
 
 When you set appropriate benchmarks, monitor signs of both struggle and success, and integrate best practices for user adoption, you can get your teams using Salesforce to its full capacity. You are then set to reap the rewards of using this powerful solution to manage your data and strengthen your customer relationships.
 
