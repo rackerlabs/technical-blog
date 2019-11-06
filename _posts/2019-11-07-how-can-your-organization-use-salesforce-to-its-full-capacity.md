@@ -14,56 +14,56 @@ ogTitle: "How can your organization use Salesforce to its full capacity?"
 ogDescription: "With so many incredible features and powerful tools, it can be hard to unlock the full potential of a customer success platform like Salesforce."
 ---
 
-It’s one thing to have access to Salesforce&reg; within your organization; it’s another thing to have confidence that you are using the platform to its full capacity.
+It is one thing to have access to Salesforce&reg; within your organization; it is another be confident that you are using the platform to its full capacity.
 
 What happens if you discover that your organization’s Salesforce usage is below the curve? Don’t lose hope. It may take time to fully capitalize on the many ways that Salesforce can empower your team. Here are four strategies to help you develop a workable plan of action.
 <!-- more -->
 
-![]({% asset_path 2019-11-4-how-salesforce-community-cloud-helps-you-serve-customers-employees-and-partners/Picture1.png %})
+![]({% asset_path 11-7-19-how-can-your-organization-use-salesforce-to-its-full-capacity/picture1.png %})
 
-### Identify Adoption Benchmarks
+### Identify adoption benchmarks
 
 To gauge the effectiveness of a tool or system, start by measuring user adoption. How many employees actually use your Salesforce platform? How often? And how fully? It is important to pick the appropriate benchmarks so you can define both success and under-utilization. If you already devote time to selecting the right metrics for measuring user adoption of your Salesforce platform, you are off to a great start.
 
 If you have not done so yet, here are some benchmarks to begin with.
 
-#### User Activity
+#### User activity
 
-The first metric to evaluate is the daily login activity of your Salesforce users. How often are people logging in? Are users regularly and reliably updating contacts and records? Is the activity consistent with an individual’s role or responsibilities? If login rates and engagement are low, you will quickly identify the root of the problem: your employees are not regularly using Salesforce.
+The first metric to evaluate is the daily [login activity of your Salesforce users](https://www.salesforce.org/measuring-adoption-is-your-crm-solution-healthy-and-growing/). How often are people logging in? Are users regularly and reliably updating contacts and records? Is the activity consistent with an individual’s role or responsibilities? If login rates and engagement are low, you will quickly identify the root of the problem: your employees are not regularly using Salesforce.
 
-Salesforce Adoption Dashboards provide a one-stop-shop for monitoring usage. Included in the app are 42 powerful reports for monitoring team members log in, key feature usage, as well as how they update accounts and opportunities. Adoption Dashboards allow you to take proactive steps to ensure organizational success.
+[Salesforce Adoption Dashboards](https://appexchange.salesforce.com/appxListingDetail?listingId=a0N30000004gHhLEAU) provide a one-stop-shop for monitoring usage. Included in the app are 42 powerful reports for monitoring team members login, key feature usage, as well as how they update accounts and opportunities. Adoption Dashboards allow you to take proactive steps to ensure organizational success.
 
-#### Quality of Data
+#### Quality of data
 
-Data quality is another important metric. Are team members accurately and thoroughly completing critical fields? Can you trust others in your organization to enter data responsibly according to Salesforce best practices? If your team is off track, hone in on the type and quality of data in your existing records.
+Data quality is another important metric. Are team members accurately and thoroughly completing critical fields? Can you trust others in your organization to enter data responsibly according to Salesforce best practices? If your team is off track, focus on the type and quality of data in your existing records.
 
 The Field Trip app is a quick way to pull reports on Salesforce fields. Field Trip analyzes fields in any object with optional filters for better reporting. This allows you to easily view the percentage of populated records and gauge your organizational effectiveness. 
 
-#### Team Productivity
+#### Team productivity
 
-It is nice to have a Salesforce guru on your team who understands the processes and procedures and is able to execute them skillfully&mdash;but it takes more than one Salesforce user to create profitability for the organization. Can users move beyond the basic data entry steps and contribute to the goals of your entire team? Keeping tabs on your team’s productivity levels may help identify pain points in user adoption.
+It is nice to have a Salesforce guru on your team who understands the processes and procedures and is able to execute them skillfully&mdash;but it takes more than one Salesforce user to create profitability for the organization. Can all users move beyond the basic data entry steps and contribute to the goals of the entire team? Monitoring your team’s productivity levels may help identify pain points in user adoption.
 
-Spinifiy: Lively Leaderboards is one tool that can help you track your team's productivity. The purpose of Spinify &mdash;which has an impressive 5-star rating on the AppExchange&mdash; is to develop team culture through engagement, motivation, and coaching. With Spinify, you can identify high-performing team members without combing through analytics. It also uses interactive features to inspire teams through positive motivation.
+[Spinifiy: Lively Leaderboards](https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3A00000DqDQnUAN) is one tool that can help track your team's productivity. The purpose of Spinify &mdash;which has an impressive 5-star rating on the AppExchange&mdash; is to develop team culture through engagement, motivation, and coaching. With Spinify, you can identify high-performing team members without combing through analytics. It also uses interactive features to inspire teams through positive motivation.
 
-#### Department-Specific Metrics
+#### Department-specific metrics
 
-There are several more granular metrics you can use to measure Salesforce adoption. These include numbers specific to sales, marketing, and service teams, which can be designed around the operations and needs of your organization.
+There are several more granular metrics you can use to measure Salesforce adoption. These include numbers specific to [sales, marketing, and service teams](https://www.mycustomer.com/selling/crm/crm-metrics-what-should-you-monitor-and-measure), which can be designed around the operations and needs of your organization.
 
 Sales benchmarks include the number of new and retained customers, the amount of revenue generated, and the sales cycle duration. For marketing, examine revenue generated by each campaign, time spent per website visit, and online user goal completion. Service benchmarks include the number of cases handled or closed each day, and complaint time to resolution.
 
-### Recognize Symptoms of Under-Utilization
+### Recognize symptoms of under-utilization
 
-After you develop a set of adoption benchmarks, the next step is to carefully watch for symptoms of under-utilization. Some symptoms will correlate directly to the metrics you’ve already defined. If the adoption of your Salesforce platform is low, stagnant, or in need of a revamp, you might notice:
+After you develop a set of adoption benchmarks, the next step is to carefully watch for symptoms of under-utilization. Some symptoms will correlate directly to the metrics you have already defined. If the adoption of your Salesforce platform is low, stagnant, or in need of a revamp, you might notice:
 
 - **Users entering data in multiple ways.** This often signals that there is a gap in your business process, or that users are struggling to understand the full capabilities of the platform.
 
-- **A lack of engagement from company leadership.** While Salesforce offers plenty of analytical tools, they will not be effective if management is not actively monitoring them. Pay special attention to how many members of your leadership team are using Salesforce regularly — they will set the tone for user adoption throughout the rest of the company.
+- **A lack of engagement from company leadership.** While Salesforce offers plenty of analytical tools, they will not be effective if management is not actively monitoring them. Pay special attention to how many members of your leadership team are using Salesforce regularly&mdash;they will set the tone for user adoption throughout the rest of the company.
 
-- **Leads and opportunities that don’t change.** If team members are not updating leads and opportunities with new data, it is a sign your team might lack motivation to incorporate the technology into their daily processes.
+- **Leads and opportunities that do not change.** If team members are not updating leads and opportunities with new data, this suggests that your team might lack motivation to incorporate the technology into their daily processes.
 
 - **Low participation in Chatter.** If your organization has set a standard for activity in Chatter, take some time to evaluate whether users are actively contributing.
 
-### See the Signs of Positive Usage
+### See the signs of positive usage
 
 Pinpointing symptoms of poor Salesforce adoption is essential to instigating a plan for change. It is also equally important to identify what is working well. Positive signs that your team is adequately using the platform’s functionality may include:
 
@@ -71,21 +71,21 @@ Pinpointing symptoms of poor Salesforce adoption is essential to instigating a p
 
 - **Growing sales and closed deals.** When cases are moving forward, it usually signifies that your team members have a good grasp on how to use Salesforce data effectively.
 
-- **Increased customer satisfaction.** While low levels of satisfaction can point to a disorganized system, high levels generally point to an organization that uses their customer success platform to improve customer engagement.
+- **Increased customer satisfaction.** While low levels of satisfaction can point to a disorganized system, high satisfaction levels generally indicate that an organization is using its customer success platform to improve customer engagement.
 
-### Tips for Increasing Salesforce Adoption
+### Tips for increasing Salesforce adoption
 
-Now that you’ve identified key metrics and symptoms to assess your current Salesforce usage, you can craft a plan to encourage greater Salesforce adoption. The following suggestions are especially useful for leaders to help their teams acquire advanced Salesforce knowledge and skill.
+Now that you have identified key metrics and symptoms to assess your current Salesforce usage, you can craft a plan to encourage greater Salesforce adoption. The following suggestions are especially useful for leaders to help their teams acquire advanced Salesforce knowledge and skill.
 
 - **Involve your team as early as possible.** If your organization is new to Salesforce, the switch from a previous system may not be quick. Get your team involved at the inception of the Salesforce project, provide them channels to give feedback, and listen to their concerns.
 
-- **Provide ample training.** Successful adoption comes when users are well-equipped to use the software. Provide adequate training and expectations from the start, and utilize refresher courses as needed to ensure your employees have the support they need in learning to master the technology.
+- **Provide ample training.** Successful adoption comes when users are well-equipped to use the software. Provide adequate training and set expectations from the start. Utilize refresher courses as needed to ensure your employees have the necessary support in learning to master the technology.
 
-- **Clean and categorize data.** One of the motivations for implementing a customer success platform is to have accurate data available in real time. It’s important to regularly monitor the quality of data in Salesforce — otherwise, it becomes a chore for your team to sift through disorganized and inaccurate data to leverage the information they need. As a result, they’re more likely to not seek the data at all.
+- **Clean and categorize data.** One of the motivations for implementing a customer success platform is to have accurate data available in real time. It is important to regularly monitor the quality of data in Salesforce&mdash;otherwise, it becomes a chore for your team to sift through disorganized and inaccurate data in order to leverage the information they need. As a result, they are more likely to not seek the data at all.
 
-- **Create an engaging rewards system.** Along with monitoring for any blips, take time to recognize when team members go the extra mile to adopt features of the new platform. Use positive motivation to get all team members moving in the same direction.
+- **Create an engaging rewards system.** Along with monitoring for any issues, take time to recognize when team members go the extra mile to adopt features of the new platform. Use positive motivation to align all team members.
 
-When you set appropriate benchmarks, monitor signs of both struggle and success, and integrate best practices for user adoption, you can get your teams using Salesforce to its full capacity. Then you’ll be set to reap the rewards of using this powerful solution to manage your data and strengthen your customer relationships.
+When you set appropriate benchmarks, monitor signs of both struggle and success, and integrate best practices for user adoption, you can get your teams using Salesforce to its full capacity. You will then be set to reap the rewards of using this powerful solution to manage your data and strengthen your customer relationships.
 
 ### Optimize your environment with expert administration, management, and configuration
 
