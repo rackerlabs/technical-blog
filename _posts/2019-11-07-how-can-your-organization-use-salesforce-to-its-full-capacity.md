@@ -17,6 +17,7 @@ ogDescription: "With so many incredible features and powerful tools, it can be h
 It is one thing to have access to Salesforce&reg; within your organization; it is another be confident that you are using the platform to its full capacity.
 
 What happens if you discover that your organization’s Salesforce usage is below the curve? Don’t lose hope. It might take time to fully capitalize on the many ways that Salesforce can empower your team. Here are four strategies to help you develop a workable plan of action.
+
 <!-- more -->
 
 ![]({% asset_path 11-7-19-how-can-your-organization-use-salesforce-to-its-full-capacity/picture1.png %})
