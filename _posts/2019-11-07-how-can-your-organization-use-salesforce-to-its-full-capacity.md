@@ -9,29 +9,29 @@ authorIsRacker: true
 categories:
   - General
 metaTitle: "How can your organization use Salesforce to its full capacity?"
-metaDescription: "With so many incredible features and powerful tools, it can be hard to break the surface and unlock the full potential of a customer success platform like Salesforce."
+metaDescription: "With so many incredible features and powerful tools, it can be hard to unlock the full potential of a customer success platform like Salesforce."
 ogTitle: "How can your organization use Salesforce to its full capacity?"
-ogDescription: "With so many incredible features and powerful tools, it can be hard to break the surface and unlock the full potential of a customer success platform like Salesforce."
+ogDescription: "With so many incredible features and powerful tools, it can be hard to unlock the full potential of a customer success platform like Salesforce."
 ---
 
-It’s one thing to have access to Salesforce&reg; within your organization; it’s another thing to have confidence that you’re using the platform to its full capacity.
+It’s one thing to have access to Salesforce&reg; within your organization; it’s another thing to have confidence that you are using the platform to its full capacity.
 
-What happens if you discover that your organization’s Salesforce usage is below the curve? Don’t lose hope. It may take some time to fully capitalize on the many ways that Salesforce can empower your team. Here are strategies to help you develop a workable plan of action to get there.
+What happens if you discover that your organization’s Salesforce usage is below the curve? Don’t lose hope. It may take time to fully capitalize on the many ways that Salesforce can empower your team. Here are four strategies to help you develop a workable plan of action.
 <!-- more -->
 
 ![]({% asset_path 2019-11-4-how-salesforce-community-cloud-helps-you-serve-customers-employees-and-partners/Picture1.png %})
 
 ### Identify Adoption Benchmarks
 
-When you want to measure the effectiveness of a tool or system, start by measuring user adoption. How many employees actually use your Salesforce platform? How often? And how fully? It’s important to pick the appropriate benchmarks so you can define both success and under-utilization. If you already devote time to selecting the right metrics for measuring user adoption of your Salesforce platform, you’re off to a great start.
+To gauge the effectiveness of a tool or system, start by measuring user adoption. How many employees actually use your Salesforce platform? How often? And how fully? It is important to pick the appropriate benchmarks so you can define both success and under-utilization. If you already devote time to selecting the right metrics for measuring user adoption of your Salesforce platform, you are off to a great start.
 
-If you haven’t done so yet, here are some benchmarks you can start using.
+If you have not done so yet, here are some benchmarks to begin with.
 
 #### User Activity
 
-The first metric you should evaluate is the login activity of your Salesforce users on a daily basis. How often are people logging in? Are users updating contacts and records regularly and reliably? Is the activity consistent with an individual’s role or responsibilities? If login rates and engagement are low, you’ll quickly identify the root of the problem: your employees aren’t using Salesforce very often.
+The first metric to evaluate is the daily login activity of your Salesforce users. How often are people logging in? Are users regularly and reliably updating contacts and records? Is the activity consistent with an individual’s role or responsibilities? If login rates and engagement are low, you will quickly identify the root of the problem: your employees are not regularly using Salesforce.
 
-Salesforce Adoption Dashboards provide a one-stop-shop for monitoring usage. Included in the app are 42 powerful reports for monitoring whether team members log in, what key features they use, and how they update accounts and opportunities. With Adoption Dashboards, you can take proactive steps to ensure organizational success.
+Salesforce Adoption Dashboards provide a one-stop-shop for monitoring usage. Included in the app are 42 powerful reports for monitoring team members log in, key feature usage, as well as how they update accounts and opportunities. Adoption Dashboards allow you to take proactive steps to ensure organizational success.
 
 #### Quality of Data
 
