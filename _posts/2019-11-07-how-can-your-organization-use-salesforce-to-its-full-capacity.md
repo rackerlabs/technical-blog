@@ -65,9 +65,9 @@ After you develop a set of adoption benchmarks, the next step is to carefully wa
 
 ### See the Signs of Positive Usage
 
-Pinpointing symptoms of poor Salesforce adoption is essential to instigating a plan for change. Equally important is the ability to identify what’s working well. Positive signs that your team is adequately using the platform’s functionality may include:
+Pinpointing symptoms of poor Salesforce adoption is essential to instigating a plan for change. It is also equally important to identify what is working well. Positive signs that your team is adequately using the platform’s functionality may include:
 
-- **A defined roadmap for Salesforce usage.** Confusion often stems from users who are unsure of the overall strategy. When management provides solid goals and connects the capabilities of the technology to those goals, teams can thrive.
+- **A defined roadmap for Salesforce usage.** Confusion often stems from users who are unsure of the overall strategy. Teams thrive when management provides concrete goals and connects the capabilities of the technology to those goals.
 
 - **Growing sales and closed deals.** When cases are moving forward, it usually signifies that your team members have a good grasp on how to use Salesforce data effectively.
 
@@ -75,11 +75,11 @@ Pinpointing symptoms of poor Salesforce adoption is essential to instigating a p
 
 ### Tips for Increasing Salesforce Adoption
 
-Now that you’ve identified key metrics and symptoms to assess your current Salesforce usage, you can craft a plan to encourage greater Salesforce adoption. If you’re in leadership, the following suggestions are especially useful for moving your team from a basic understanding to a place of advanced knowledge and skill.
+Now that you’ve identified key metrics and symptoms to assess your current Salesforce usage, you can craft a plan to encourage greater Salesforce adoption. The following suggestions are especially useful for leaders to help their teams acquire advanced Salesforce knowledge and skill.
 
-- **Involve your team as early as possible.** If your organization is new to Salesforce, the switch from a previous system may not be quick. Get your team involved from the inception of the Salesforce project, give them channels to provide feedback, and listen to their concerns.
+- **Involve your team as early as possible.** If your organization is new to Salesforce, the switch from a previous system may not be quick. Get your team involved at the inception of the Salesforce project, provide them channels to give feedback, and listen to their concerns.
 
-- **Provide ample training.** Successful user adoption comes when users are well-equipped to perform tasks within the software. Provide adequate training and expectations from the start, and utilize refresher courses as needed to ensure your employees have the support they need in learning to master the technology.
+- **Provide ample training.** Successful adoption comes when users are well-equipped to use the software. Provide adequate training and expectations from the start, and utilize refresher courses as needed to ensure your employees have the support they need in learning to master the technology.
 
 - **Clean and categorize data.** One of the motivations for implementing a customer success platform is to have accurate data available in real time. It’s important to regularly monitor the quality of data in Salesforce — otherwise, it becomes a chore for your team to sift through disorganized and inaccurate data to leverage the information they need. As a result, they’re more likely to not seek the data at all.
 
