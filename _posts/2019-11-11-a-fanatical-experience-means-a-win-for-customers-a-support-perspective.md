@@ -1,4 +1,3 @@
-2019-11-11-a-fanatical-experience-means-a-win-for-customers-a-support-perspective.md
 ---
 layout: post
 title: “A Fanatical Experience Means a Win for Customers - A Support Perspective”
