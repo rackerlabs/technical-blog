@@ -7,6 +7,10 @@ author: Shaun Crumpler
 published: true
 authorisRacker: true
 catagories: General
+metaTitle: "A Fanatical Experience Means a Win for Customers - A Support Perspective"
+metaDescription: "This post explores how the Rackspace Core Values affect the Support team."
+ogTitle: "A Fanatical Experience Means a Win for Customers - A Support Perspective"
+ogDescription: "This post explores how the Rackspace Core Values affect the Support team."
 ---
 
 Working in technical support comes with its own unique set of challenges and opportunities, but it also means that we get the satisfaction of remaining at the forefront of technical change as things move so rapidly and new hosting services and products change seemingly quicker than a new iPhone can be released.
