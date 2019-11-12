@@ -15,6 +15,7 @@ metaDescription: "My customers often ask “How can I get the most out of my Off
 ogTitle: "Modernize the way your business communicates and collaborates with Microsoft Teams"
 ogDescription: "My customers often ask “How can I get the most out of my Office 365 subscription?”, and I always reply “Start using Microsoft Teams!"
 ---
+
 One of the questions I get asked a lot by my customers is “How can I get the most out of my Office 365 subscription?” My answer is always “Start using Microsoft&reg; Teams!”
 
 <!-- more -->
