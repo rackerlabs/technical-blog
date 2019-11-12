@@ -6,6 +6,7 @@ comments: true
 author: Shaun Crumpler
 published: true
 authorisRacker: true
+authorAvatar: 'https://secure.gravatar.com/avatar/c26423ec960c158dbdbcbee1f61ea7b5'
 catagories: General
 metaTitle: "A Fanatical Experience Means a Win for Customers - A Support Perspective"
 metaDescription: "This post explores how the Rackspace Core Values affect the Support team."
