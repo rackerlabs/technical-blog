@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How does the SAP HANA Mandate affect your business?" 
-date: 2019-11-13 00:00
+date: 2019-11-15 00:00
 comments: true
 author: Paul Croteau 
 published: true
@@ -20,9 +20,9 @@ Systems, Applications and Products (SAP) products help companies manage their fi
 
 ### Introducing S/4HANA
 
-SAP Business Suite 4 SAP High Speed Analytical Appliance (S/4HANA) is a suite of next generation Enterprise Resource Planning (ERP) software that was launched in 2015. It is built on the High Speed Analytical Appliance (HANA) database. S/4HANA can be hosted on SAP's cloud product, by any of the major cloud providers, or on datacenter/on-premise hardware. It is intended to replace SAP ECC/ERP.
+SAP Business Suite 4 SAP High Speed Analytical Appliance (S/4HANA) is a suite of next generation Enterprise Resource Planning (ERP) software that was launched in 2015. It is built on the High Speed Analytical Appliance (HANA) database. S/4HANA can be hosted on SAP's cloud product by any of the major cloud providers, or on datacenter/on-premise hardware. It is intended to replace SAP ECC/ERP.
 
-The SAP HANA database is very different from a traditional relational database. It is an in-memory computing platform. It stores most of its data in columns instead of rows, which allows for faster near real-time analytic and computing capabilities. 
+The SAP HANA database is very different from a traditional relational database. It is an in-memory computing platform. It stores most of its data in columns instead of rows, which allows for faster, near real-time analytic and computing capabilities. 
 
 ### The SAP Business Suite
 
@@ -33,14 +33,13 @@ The S/4HANA is not the next version of previous SAP products, it is a new produc
 
 ### The SAP S/4 Mandate
 
-In 2025, SAP will end mainstream maintenance and support for all ERP product installations that originated before SAP S4/HANA. SAP has supported several different products and product iterations for years, many of which depend on outdated technology. SAP has decided to modernize its client base in order to improve its customer experiences as well as its own operations and processes. 
-following Salesforce services:
+In 2025, SAP will end mainstream maintenance and support for all ERP product installations that originated before SAP S4/HANA. SAP has supported several different products and product iterations for years, many of which depend on outdated technology. SAP has decided to modernize its client base in order to improve customer experience as well as its operations and processes. 
 
 ### Customer impact
 
-SAP customers will have to decide if they want to take complete ownership of supporting SAP legacy platforms and their necessary databases like Oracle, IBM DB2, or Microsoft SQL Server. Or they can choose to migrate to new SAP products and convert existing databases to SAP HANA. 
+SAP customers will have to decide if they want to take complete ownership of supporting SAP legacy platforms and their necessary databases like Oracle, IBM DB2, and Microsoft SQL Server. Or they can choose to migrate to new SAP products and convert existing databases to SAP HANA. 
 
-If customers refuse to migrate and instead continue with legacy technology, they are creating future support and security issues. We have all seen it before: companies or industries depending on outdated technology, unwilling to make changes because they are unsure if their production systems will survive the modernization effort. The government, education, manufacturing and healthcare sectors all deal with this technological struggle.
+If customers refuse to migrate and continue with legacy technology, they are creating future support and security issues. We have all seen it before: companies or industries depending on outdated technology, unwilling to make changes because they are unsure if their production systems will survive the modernization effort. The government, education, manufacturing and healthcare sectors all struggle with this issue.
 
 ### Preparing your business 
 Applications drive infrastructure need, and SAP is one of the most popular and impactful applications in the world. Hundreds of thousands of businesses of all sizes depend on this technology. Given this landscape, businesses should ask themselves the following questions:
@@ -51,7 +50,7 @@ Applications drive infrastructure need, and SAP is one of the most popular and i
 - Are you migrating to SAP HANA on your own or have you selected a partner to help with this very complex move?
 
 ### Rackspace can help with your migration 
-The Rackspace Application Services team has SAP and database expertise that can help your business with this migration. Rackspace provides consultations to asses and design the future state of your business. We can then deploy that solution in a variety of ways that provides you with a future-proofed design. All you have to do is ask, “does your business depend on SAP in any way?”
+The Rackspace Application Services team has SAP and database expertise that can help your business with this migration. Rackspace provides consultations to asses and design the future state of your business. We can then deploy that solution in a variety of ways that provides you with a future-proofed design. All you have to do is ask, “does your business depend on SAP in any way?” Contact the Rackspace Application services team today to begin your SAP migration. 
 
 ### Optimize your environment with expert administration, management, and configuration
 
