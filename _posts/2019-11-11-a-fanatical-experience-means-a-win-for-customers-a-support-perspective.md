@@ -8,7 +8,8 @@ published: true
 authorisRacker: true
 authorAvatar: 'https://secure.gravatar.com/avatar/c26423ec960c158dbdbcbee1f61ea7b5'
 bio: "Shaun Crumpler is a 7 year Racker, who focuses on applying his MBA to the technical space to evolve and transform processes, promoting change and agility.  His technical expertise spans Linux operating systems, the Rackspace Public Cloud infrastructure, and the AWS infrastructure.  He was awarded the Fanatical Jacket, Rackspace’s highest honor, because of the focus that he places on fanatically supporting not only external customers, but internal customers as well."
-catagories: 
+catagories:
+categories:
     - General
 metaTitle: "A Fanatical Experience Means a Win for Customers - A Support Perspective"
 metaDescription: "This post explores how the Rackspace Core Values affect the Support team."
@@ -24,6 +25,8 @@ Because of this, Rackspace’s refreshed Core Values are a breath of fresh air a
 
 ### Excellence
 
+![]({% asset_path 2019-11-11-a-fanatical-experience-means-a-win-for-customers-a-support-perspective/CV-Excellence.png %})
+
 *We’re an accountable, disciplined, high-performing company with proven results.*
 
 Obviously, in support especially, if a company is not able to provide a level of excellence in its products and services, it becomes an uphill battle to differentiate itself from other businesses. That's why Rackspace holds strong to its original promise of not only providing the experience and quality outputs that customers hold Rackers accountable for, but also expects Rackers to continuously push each other to be great. We are there to help each other, lift each other up, and to assure that the support we are providing is second to none.
@@ -32,11 +35,15 @@ In a day where customers have unprecedented access to forums, rating sites, and 
 
 ### Customer-driven
 
+![]({% asset_path 2019-11-11-a-fanatical-experience-means-a-win-for-customers-a-support-perspective/CV-CustomerDriven.png %})
+
 *We’re proactive, collaborative, and committed to success for our customers.*
 
 In Support, we often work with other teams in a collaborative effort to assure that a customer has the best experience possible. Sales might speak with support, who speaks to the account team, who then speaks to billing, in a harmonious dance behind the scenes.  We consider it not only important to solve issues as they pop up but to keep headaches from ever happening in the first place, providing little or no impact on customers. By being as proactive as possible, we are driven to support the success of our customers, sometimes without them even knowing it.
 
 ### Expertise
+
+![]({% asset_path 2019-11-11-a-fanatical-experience-means-a-win-for-customers-a-support-perspective/CV-Expertise.png %})
 
 *We’re passionate learners, rooted in our customer’s business to provide unbiased solutions.*
 
@@ -46,6 +53,8 @@ Because we love learning, we are always open to other Racker ideas, incorporatin
 
 ### Agility
 
+![]({% asset_path 2019-11-11-a-fanatical-experience-means-a-win-for-customers-a-support-perspective/CV-Agility.png %})
+
 *We’re adopting new technologies and evolving services to meet customers where they are in their journey.*
 
 Coupled with our drive to learn, agility is paramount in the technology space. In fact, I have often taken a few days vacation only to come back to multiple process changes and application updates.  We are driven to learn new technologies to not fall behind in providing quality support to customers.
@@ -53,6 +62,8 @@ Coupled with our drive to learn, agility is paramount in the technology space. I
 If Rackers can't remain agile, then their ability to provide excellent customer service is compromised, which is not an option on the support floor. That being said, Rackers help each other to be great because we don't have a dog-eat-dog mentality here at the Rack. We very much understand that no one person knows it all, and that the only way to win is by banding together to help each other succeed.
 
 ### Compassion
+
+![]({% asset_path 2019-11-11-a-fanatical-experience-means-a-win-for-customers-a-support-perspective/CV-Compassion.png %})
 
 *We’re one team doing the right thing for our customers, communities, and each other.*
 
