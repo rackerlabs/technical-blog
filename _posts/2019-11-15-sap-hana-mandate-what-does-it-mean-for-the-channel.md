@@ -20,7 +20,7 @@ Systems, Applications and Products (SAP) products help companies manage their fi
 
 ### Introducing S/4HANA
 
-SAP Business Suite 4 SAP High Speed Analytical Appliance (S/4HANA) is a suite of next generation Enterprise Resource Planning (ERP) software that was launched in 2015. It is built on the High Speed Analytical Appliance (HANA) database. S/4HANA can be hosted on SAP's cloud product by any of the major cloud providers, or on datacenter/on-premise hardware. It is intended to replace SAP ECC/ERP.
+SAP Business Suite 4 SAP High Speed Analytical Appliance (S/4HANA) is a suite of next generation Enterprise Resource Planning (ERP) software that was launched in 2015. It is built on the High Speed Analytical Appliance (HANA) database. S/4HANA can be hosted on SAP's cloud product by any of the major cloud providers, or on datacenter or on-premise hardware. It is intended to replace SAP ECC/ERP.
 
 The SAP HANA database is very different from a traditional relational database. It is an in-memory computing platform. It stores most of its data in columns instead of rows, which allows for faster, near real-time analytic and computing capabilities. 
 
@@ -39,9 +39,10 @@ In 2025, SAP will end mainstream maintenance and support for all ERP product ins
 
 SAP customers will have to decide if they want to take complete ownership of supporting SAP legacy platforms and their necessary databases like Oracle, IBM DB2, and Microsoft SQL Server. Or they can choose to migrate to new SAP products and convert existing databases to SAP HANA. 
 
-If customers refuse to migrate and continue with legacy technology, they are creating future support and security issues. We have all seen it before: companies or industries depending on outdated technology, unwilling to make changes because they are unsure if their production systems will survive the modernization effort. The government, education, manufacturing and healthcare sectors all struggle with this issue.
+If customers refuse to migrate and continue with legacy technology, they are creating future support and security issues. We have all seen it before: companies or industries depending on outdated technology, unwilling to make changes because they are unsure if their production systems will survive the modernization effort. The government, education, manufacturing, and healthcare sectors all struggle with this issue.
 
 ### Preparing your business 
+
 Applications drive infrastructure need, and SAP is one of the most popular and impactful applications in the world. Hundreds of thousands of businesses of all sizes depend on this technology. Given this landscape, businesses should ask themselves the following questions:
 
 - Do you depend on SAP in any way? 
@@ -50,7 +51,8 @@ Applications drive infrastructure need, and SAP is one of the most popular and i
 - Are you migrating to SAP HANA on your own or have you selected a partner to help with this very complex move?
 
 ### Rackspace can help with your migration 
-The Rackspace Application Services team has SAP and database expertise that can help your business with this migration. Rackspace provides consultations to asses and design the future state of your business. We can then deploy that solution in a variety of ways that provides you with a future-proofed design. All you have to do is ask, “does your business depend on SAP in any way?” Contact the Rackspace Application services team today to begin your SAP migration. 
+
+The Rackspace Application Services team has SAP and database expertise that can help your business with this migration. Rackspace provides consultations to assess and design the future state of your business. We can then deploy that solution in a variety of ways that provides you with a future-proofed design. All you have to do is ask, “does your business depend on SAP in any way?” Contact the Rackspace Application services team today to begin your SAP migration. 
 
 ### Optimize your environment with expert administration, management, and configuration
 
