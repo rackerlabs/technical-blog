@@ -10,9 +10,9 @@ categories:
     - Oracle
     - database
 metaTitle: "Oracle Database v18c automatic in-memory"
-metaDescription: "This blog discusses how to configure Oracle&reg; Automatic In-Memory (AIM) to manage objects in In-Memory (IM) Column Store."
+metaDescription: "This blog discusses how to configure Oracle Automatic In-Memory (AIM) to manage objects in In-Memory (IM) Column Store."
 ogTitle: "Oracle Database v18c automatic in-memory"
-ogDescription: "This blog discusses how to configure Oracle&reg; Automatic In-Memory (AIM) to manage objects in In-Memory (IM) Column Store."
+ogDescription: "This blog discusses how to configure Oracle Automatic In-Memory (AIM) to manage objects in In-Memory (IM) Column Store."
 ---
 
 This blog discusses how to configure Oracle&reg; Automatic In-Memory (AIM) to
