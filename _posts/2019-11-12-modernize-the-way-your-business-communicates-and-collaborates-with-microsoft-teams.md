@@ -5,15 +5,15 @@ date: 2019-11-12 00:00
 comments: true
 author: Walter Stubbs
 published: true
-authorIsRacker: true
+authorisRacker: true
 authorAvatar: 'https://en.gravatar.com/walterstubbs'
 bio: "Walter Stubbs is a Microsoft Certified Solutions Associate, and one of the Lead Email Technicians in Cloud Office. Walter joined Rackspace in 2018 and has been supporting the Office 365 environment from day one. His passion for helping others combined with his knowledge of Office 365 helps him provide a Fanatical Experience for Rackspace customers everyday."
 categories:
   - General
 metaTitle: "Modernize the way your business communicates and collaborates with Microsoft Teams"
-metaDescription: "My customers often ask “How can I get the most out of my Office 365 subscription?”, and I always reply “Start using Microsoft Teams!”
+metaDescription: "My customers often ask how they can get the most out of their Office 365 subscription, and I always reply that they should start using Microsoft Teams!"
 ogTitle: "Modernize the way your business communicates and collaborates with Microsoft Teams"
-ogDescription: "My customers often ask “How can I get the most out of my Office 365 subscription?”, and I always reply “Start using Microsoft Teams!"
+ogDescription: "My customers often ask how they can get the most out of their Office 365 subscription, and I always reply that they should start using Microsoft Teams!"
 ---
 
 One of the questions I get asked a lot by my customers is “How can I get the most out of my Office 365 subscription?” My answer is always “Start using Microsoft&reg; Teams!”
