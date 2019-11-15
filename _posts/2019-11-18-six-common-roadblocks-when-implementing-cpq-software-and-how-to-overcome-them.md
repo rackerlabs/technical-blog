@@ -14,11 +14,11 @@ ogTitle: "Six common roadblocks when implementing cpq software and how to overco
 ogDescription: ""
 ---
 
-One of the questions I get asked a lot by my customers is “How can I get the most out of my Office 365 subscription?” My answer is always “Start using Microsoft&reg; Teams!”
-
+Your company’s sales team is growing and your books are in the black. Good news all around, right? Yet with significant growth comes increased complexity — and if your Configure, Price, Quote (CPQ) process isn’t growing with you, the pain points will become evident sooner rather than later. 
 <!-- more -->
 
-Your company’s sales team is growing and your books are in the black. Good news all around, right? Yet with significant growth comes increased complexity — and if your Configure, Price, Quote (CPQ) process isn’t growing with you, the pain points will become evident sooner rather than later. 
+![]({% asset_path 2019-11-18-six-common-roadblocks-when-implementing-cpq-software-and-how-overcome-them/Implementing-CPQ-Software.png %})
+
 
 Manually configuring a quote for each individual client will leave your sales team burnt out and at a disadvantage. It can be difficult (or downright impossible) to scale your quoting process without the help of automated software. 
 
@@ -26,7 +26,7 @@ Thankfully, there are CPQ solutions like Salesforce CPQ & Billing that are desig
 
 Salesforce CPQ streamlines your processes and expedites your quote-to-cash cycle — the time between the moment a customer requests a quote from your company and the moment the customer pays you. CPQ software allows you to integrate with other internal systems so the customer always receives the most comprehensive, accurate quote possible. 
 
-While this software can make your salespeoples’ jobs much easier, implementing a new technology solution can be intimidating if not approached with a plan. As a Salesforce Platinum Consulting Partner, we’ve worked with numerous businesses to help implement CPQ software. We know firsthand the roadblocks that frequently arise and how to tackle them. 
+While this software can make your salespeoples’ jobs much easier, implementing a new technology solution can be intimidating if not approached cwith a plan. As a Salesforce Platinum Consulting Partner, we’ve worked with numerous businesses to help implement CPQ software. We know firsthand the roadblocks that frequently arise and how to tackle them. 
 
 Here are our tips for overcoming some of the most common CPQ implementation challenges:
 
