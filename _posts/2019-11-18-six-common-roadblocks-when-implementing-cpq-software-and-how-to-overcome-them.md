@@ -54,17 +54,17 @@ Choose a CPQ solution that offers either custom or out-of-the box integration. I
 
 ### Not Fully Taking Advantage of Your Software’s Benefits
 
-**The Problem:** If your CPQ system makes it challenging to customize a quote with an additional service or product, or it’s not easy for your team to remember to check current promotions and new product lines, you may be hindering your team and leaving revenue on the table. Some businesses fail to take advantage of their CPQ solution’s full benefits — including the ability for the software to remind your team about new products or promotions. 
+**The Problem:** You may be hindering your team and leaving revenue on the table if: your CPQ system makes it challenging to customize a quote with an additional service or product, or does not provide reminders about current promotions and new product lines. Some businesses fail to take advantage of the benefits of their CPQ solution&mdash;including reminders to your team about new products or promotions. 
 
-Without reminders, you may have to go back in the system later and adjust pricing because your sales team forgot to include, say, a necessary add-on. This can frustrate your customer — or worse, cause them to walk away.
+Without reminders, you may have to adjust pricing later-on because your sales team forgot to include an applicable promotion. This can frustrate your customer&mdash;or worse, drive them away.
 
-The Fix:  A good automated CPQ system can remind users of all available, relevant add-ons every time they use it. This mitigates the risk that customers aren’t being offered potentially useful products and services and provides a more consistent customer experience. 
+**The Fix:**  A good automated CPQ system can remind users of all available, relevant add-ons every time they use it. This helps ensure that customers are being offered useful products and services and provides a more consistent customer experience. 
 
 ### Not Expecting and Preparing for Human Error
 
-The Problem: A myriad of human errors can be introduced into the standard CPQ process. A salesperson could forget to include necessary shipping or delivery costs, or they may omit a product that the installation team will need. Expecting that your sales team will never make a mistake is just not realistic.
+**The Problem:** A myriad of human errors can be introduced into the standard CPQ process. A salesperson could forget to include necessary shipping or delivery costs, or they may omit a product that the installation team will need. Expecting that your sales team will never make a mistake is just not realistic.
 
-The Fix: Mitigating errors is everyone’s job. First, your entire team must be trained on a rolling basis and your sales team should understand how your products relate to one another. Next, set up your CPQ solution so that users are alerted when they omit critical information. Finally, institute a review process for necessary situations and identify the chain of command to be alerted when a mistake is made. Note that manual or complex review processes can slow down your quoting process, so keep the number of reviewers to a minimum.
+**The Fix:** Mitigating errors is everyone’s job. First, your entire team must be trained on a rolling basis and your sales team should understand how your products relate to one another. Next, set up your CPQ solution so that users are alerted when they omit critical information. Finally, institute a review process for necessary situations and identify the chain of command to be alerted when a mistake is made. Note that manual or complex review processes can slow down your quoting process, so keep the number of reviewers to a minimum.
 
 ### Losing the Human Element of Communicatio
 
