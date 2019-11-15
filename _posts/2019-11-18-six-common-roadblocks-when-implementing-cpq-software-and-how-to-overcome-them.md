@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Six common roadblocks when implementing cpq software and how to overcome them"
+title: "Six common roadblocks when implementing CPQ software and how to overcome them"
 date: 2019-11-18 00:00
 comments: true
 author: Rob Hawthorn
@@ -8,31 +8,31 @@ published: true
 authorisRacker: true
 categories:
   - General
-metaTitle: "Six common roadblocks when implementing cpq software and how to overcome them""
+metaTitle: "Six common roadblocks when implementing CPQ software and how to overcome them""
 metaDescription: ""
-ogTitle: "Six common roadblocks when implementing cpq software and how to overcome them""
+ogTitle: "Six common roadblocks when implementing CPQ software and how to overcome them""
 ogDescription: ""
 ---
 
-Your company’s sales team is growing and your books are in the black. Good news all around, right? Yet with significant growth comes increased complexity — and if your Configure, Price, Quote (CPQ) process isn’t growing with you, the pain points will become evident sooner rather than later. 
+Your company’s sales team is growing and your books are in the black. While this is good news, with significant growth also comes increased complexity&mdash;if your Configure, Price, Quote (CPQ) process isn’t growing with you, your pain points will soon become evident. 
 <!-- more -->
 
 ![]({% asset_path 2019-11-18-six-common-roadblocks-when-implementing-cpq-software-and-how-overcome-them/Implementing-CPQ-Software.png %})
 
 
-Manually configuring a quote for each individual client will leave your sales team burnt out and at a disadvantage. It can be difficult (or downright impossible) to scale your quoting process without the help of automated software. 
+Manually configuring quotes for individual clients will leave your sales team at a disadvantage and cause burn out. It can be difficult or even impossible, to scale your process for quotes without the help of automated software. 
 
-Thankfully, there are CPQ solutions like Salesforce CPQ & Billing that are designed specifically for this purpose.
+Thankfully, CPQ solutions like Salesforce CPQ & Billing are designed specifically for this purpose.
 
-Salesforce CPQ streamlines your processes and expedites your quote-to-cash cycle — the time between the moment a customer requests a quote from your company and the moment the customer pays you. CPQ software allows you to integrate with other internal systems so the customer always receives the most comprehensive, accurate quote possible. 
+Salesforce CPQ streamlines your processes and expedites your quote-to-cash cycle&mdash;which is the time between when a customer requests a quote from your company and when they make a payment. CPQ software allows you to integrate with other internal systems so the customer always receives the most comprehensive, accurate quote. 
 
-While this software can make your salespeoples’ jobs much easier, implementing a new technology solution can be intimidating if not approached cwith a plan. As a Salesforce Platinum Consulting Partner, we’ve worked with numerous businesses to help implement CPQ software. We know firsthand the roadblocks that frequently arise and how to tackle them. 
+While this software can make your salespeoples’ jobs much easier, implementing a new technology solution can be intimidating if you do not have a plan. As a Salesforce Platinum Consulting Partner, we have helped implement the use of CPQ software at many businesses; we are familiar with the common roadblocks and how to tackle them. 
 
-Here are our tips for overcoming some of the most common CPQ implementation challenges:
+Here are 6 tips for overcoming some of the most common CPQ implementation challenges:
 
 ### Using Bad Data
 
-The Problem: The data within your CPQ system must be current, accurate, and verifiable. If it’s not, the proposals you hand to customers could include inflated prices or inaccurate delivery times. This is true whether you create manual proposals or automate your CPQ process.
+**The Problem:** The data in your CPQ system must be current, accurate, and verifiable. Otherwise, the proposals you provide to customers could include inflated prices or inaccurate delivery times. This is true whether you create manual proposals or automate your CPQ process.
 
 Imagine you’re running an end-of-the-year promotion on a product. Without updating your CPQ solution to consider the new prices, your sales team may inadvertently deliver proposals to customers that don’t include the savings you’ve been promising. Talk about disappointing your customer!
 
