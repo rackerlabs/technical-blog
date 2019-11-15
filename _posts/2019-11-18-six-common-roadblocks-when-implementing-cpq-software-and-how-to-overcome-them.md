@@ -28,33 +28,33 @@ Salesforce CPQ streamlines your processes and expedites your quote-to-cash cycle
 
 While this software can make your salespeoples’ jobs much easier, implementing a new technology solution can be intimidating if you do not have a plan. As a Salesforce Platinum Consulting Partner, we have helped implement the use of CPQ software at many businesses; we are familiar with the common roadblocks and how to tackle them. 
 
-Here are 6 tips for overcoming some of the most common CPQ implementation challenges:
+Here are six tips for overcoming some of the most common CPQ implementation challenges.
 
 ### Using Bad Data
 
-**The Problem:** The data in your CPQ system must be current, accurate, and verifiable. Otherwise, the proposals you provide to customers could include inflated prices or inaccurate delivery times. This is true whether you create manual proposals or automate your CPQ process.
+**The Problem:** The data in your CPQ system must be current, accurate, and verifiable. Otherwise, the proposals you provide to customers could include inflated prices or inaccurate delivery times. This is true for manual proposals as well automated CPQ processes.
 
-Imagine you’re running an end-of-the-year promotion on a product. Without updating your CPQ solution to consider the new prices, your sales team may inadvertently deliver proposals to customers that don’t include the savings you’ve been promising. Talk about disappointing your customer!
+Imagine that you are running an end-of-the-year product promotion. Without updating your CPQ solution to consider the new prices, your sales team may inadvertently deliver proposals to customers that do not include the promised savings. 
 
-The Fix: When implementing your CPQ software, put a clear process in place for maintaining accurate data, and hold data owners responsible for keeping their information up to date. For instance, you may decide product managers are the ones who will update the product details each time a new generation is released; and the marketing or sales team may be responsible for keeping the system updated with promotional pricing. 
+**The Fix:** When setting up your CPQ software, establish a clear process for maintaining accurate data, and hold data owners responsible for keeping their information updated. You may decide product managers should update product details each time a new generation is released and that the marketing or sales team will be responsible for updating promotional pricing. 
 
 ###  Integration Woes
 
-The Problem: If you don’t integrate your CPQ solution with other essential software, you run the risk of incomplete or non-current data being used in different systems. This can create all sorts of problems, from customers receiving misleading contracts to inaccurate customer data being communicated to stakeholders.
+**The Problem:** If you fail to integrate your CPQ solution with other essential software, you risk using incomplete or non-current data in these different systems. This can create many problems, including customers receiving misleading contracts or inaccurate customer data being communicated to stakeholders.
 
-The Fix: When you choose to implement CPQ software, consider how your data systems will talk to each other. To start, your CPQ system needs to integrate with your Customer Relationship Management (CRM) system. It may also need to communicate with your product data management software, contract management, or other important systems. 
+**The Fix:** When implementing your CPQ software, consider how your different data systems will communicate with each other. Your CPQ system needs to integrate with your Customer Relationship Management (CRM) system. It may also need to communicate with your product data management, contract management, or other important systems. 
 
-Choose a CPQ solution that offers custom integration or out of the box integration. If you are working with an implementation partner, outline all important platforms that you’ll need your CPQ system to communicate with at the start of your project. It can be expensive and time consuming to try to fix a data integration problem after the fact – set yourself up for success from the start. 
+Choose a CPQ solution that offers either custom or out-of-the box integration. If you are working with an implementation partner, at the start of your project, outline all the important platforms that your CPQ system should communicate with. It can be expensive and time consuming to try to fix a data integration problem&mdash;set yourself up for success at the start. 
 
 ### Taking On Too Much At Once
 
-The Problem: Large changes to your CPQ process can be overwhelming for your team. Going from working within a spreadsheet system or manually filling in templates to relying on integrated CPQ software will change their day-to-day workflow. Users may have a hard time transitioning, resulting in user mistakes or overall resistance to using the software. Taking your process to scale in one fell swoop might end up being a costly mistake that affects long-term adoption of the product. 
+**The Problem:** Big changes to your CPQ process can overwhelm your team. Moving from spreadsheets or manual templates to integrated CPQ software will change the day-to-day workflow. Users may trouble transitioning, resulting in user mistakes or overall resistance to the software. Moving too quickly may end up being a costly mistake that affects long-term adoption of the product. 
 
-The Fix: Consider using the Crawl-Walk-Run approach to roll out your new CPQ practices across multiple releases. Much like a business may change its website functionality over the course of several months, you can roll out the functionality of your new CPQ software in pieces. Start with the tools that are easy to use and will benefit the most employees; introducing these first will help spread positive feedback among your team and encourage other members of the team about the upcoming changes.
+**The Fix:** Consider using the Crawl-Walk-Run approach to roll out your new CPQ practices across multiple releases. Much like a business may change its website functionality over the course of several months, you can roll out the functionality of your new CPQ software in sections. Start with the tools that are easy to use and will benefit the most employees; introducing these tools first will help spread positive feedback among your team and encourage optimism about the upcoming changes.
 
 ### Not Fully Taking Advantage of Your Software’s Benefits
 
-The Problem: If your CPQ system makes it challenging to customize a quote with an additional service or product, or it’s not easy for your team to remember to check current promotions and new product lines, you may be hindering your team and leaving revenue on the table. Some businesses fail to take advantage of their CPQ solution’s full benefits — including the ability for the software to remind your team about new products or promotions. 
+**The Problem:** If your CPQ system makes it challenging to customize a quote with an additional service or product, or it’s not easy for your team to remember to check current promotions and new product lines, you may be hindering your team and leaving revenue on the table. Some businesses fail to take advantage of their CPQ solution’s full benefits — including the ability for the software to remind your team about new products or promotions. 
 
 Without reminders, you may have to go back in the system later and adjust pricing because your sales team forgot to include, say, a necessary add-on. This can frustrate your customer — or worse, cause them to walk away.
 
