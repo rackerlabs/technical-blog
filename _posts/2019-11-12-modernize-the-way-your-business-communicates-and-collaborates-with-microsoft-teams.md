@@ -36,7 +36,7 @@ Each Team has its own dedicated chat channel, which acts as the workplace hub fo
 
 ### Get started with Microsoft Teams
 
-Most Office 365 subscriptions include Microsoft Teams, and you access it through your web browser, the desktop application, or even by using the mobile application. To get started with your first Team, select the **Teams**, click **Join or create a team**, and then choose **Build a team from scratch**.
+Most Office 365 subscriptions include Microsoft Teams, and you access it through your web browser, the desktop application, or even by using the mobile application. To get started with your first Team, select the **Teams** tab, click **Join or create a team**, and then choose **Build a team from scratch**.
 
 As you follow the Team creation wizard, keep in mind your compliance and privacy needs. After you create your Team, add members in your organization to your team to start collaborating.
 
