@@ -20,7 +20,7 @@ Your company’s sales team is growing, and your books are in the black. While t
 ![]({% asset_path 2019-11-18-six-common-roadblocks-when-implementing-cpq-software-and-how-overcome-them/Implementing-CPQ-Software.png %})
 
 
-Manually configuring quotes for individual clients leaves your sales team at a disadvantage and cause burn out. It can be difficult, or even impossible, to scale your process for quotes without the help of automated software. 
+Manually configuring quotes for individual clients leaves your sales team at a disadvantage and causes burn out. It can be difficult, or even impossible, to scale your process for quotes without the help of automated software. 
 
 Thankfully, CPQ solutions like Salesforce CPQ & Billing are designed specifically for this purpose.
 
@@ -72,7 +72,7 @@ Without reminders, you might have to adjust pricing later on because your sales 
 
 Similarly, discussions between departments while developing a quote might decrease after implementing a CPQ solution. Without conscious effort, this scenario might cause teams [to become siloed](https://martechseries.com/mts-insights/guest-authors/dont-let-data-silos-downfall/) and ultimately cut off communication and data sharing.
 
-**The fix:** Encourage your sales team to follow up with customers after the delivery of each proposal. The goal is for your customers to maintain the ability to access their sales representative as needed and still experience the human side of your business. Every proposal should include ways to contact your brand. To foster internal communication, implement strategies and feedback loops for different teams to check in regularly with each other about new accounts, promotional campaigns, and more.
+**The fix:** Encourage your sales team to follow up with customers after the delivery of each proposal. The goal is for your customers to always be able to access their sales representative as needed and still experience the human side of your business. Every proposal should include ways to contact your brand. To foster internal communication, implement strategies and feedback loops for different teams to check in regularly with each other about new accounts, promotional campaigns, and more.
 
 ### Work with a CPQ partner for a seamless implementation
 
