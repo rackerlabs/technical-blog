@@ -9,28 +9,30 @@ authorisRacker: true
 categories:
   - General
 metaTitle: "Geofencing in FSL: why you should partner with an expert before starting"
-metaDescription: ""
+metaDescription: "This article reviews geofencing or geolocation&mdash;a capability within FSL. We will cover what geofencing is, as well as how and when you should expect to phase it into your FSL implementation."
 ogTitle: "Geofencing in FSL: why you should partner with an expert before starting"
-ogDescription: ""
+ogDescription: "This article reviews geofencing or geolocation&mdash;a capability within FSL. We will cover what geofencing is, as well as how and when you should expect to phase it into your FSL implementation."
 ---
 
 One of the questions I get asked a lot by my customers is “How can I get the most out of my Office 365 subscription?” My answer is always “Start using Microsoft&reg; Teams!”
 
 <!-- more -->
 
-If your company relies on a mobilized workforce to fulfill customer needs and you’ve decided to go with Salesforce Field Service Lightning (FSL), congrats on a great decision! FSL is a wonderful platform to optimize the productivity of all of your staff and make sure your customers receive a level of service that exceeds their expectations.
+![]({% asset_path 2019-11-19-geofencing-in-fsl-why-you-should-partner-with-an-expert-before-starting/Geofencing-in-FSL.png %})
 
-Today we’ll be talking about geofencing, or geolocation, which is a capability within FSL. Specifically, we’ll cover what geofencing is, and how—and when—you should expect to phase it in to your FSL implementation.
+Salesforce Field Service Lightning (FSL) is an excellent choice if your company relies on a mobilized workforce to fulfill customer needs. FSL is a platform that helps to optimize your staff productivity and make sure your customers receive a level of service that exceeds their expectations.
+
+This article reviews geofencing or geolocation&mdash;a capability within FSL. We will cover what geofencing is, as well as how and when you should expect to phase it into your FSL implementation.
 
 ### What is Geofencing?
 
-Geofencing allows you to set up virtual perimeters around pre-defined areas and then create rules around these “fenced” locations. Geofencing uses a blend of GPS, cellular data, and Wi-Fi signals to work. 
+Geofencing allows you to set up virtual perimeters around pre-defined areas and then create rules for these “fenced” locations. Geofencing uses a blend of GPS, cellular data, and Wi-Fi signals. 
 
-There are many ways in which geofencing can add value to your business. For example, geofencing allows your customers to see how far away technicians are; it can also automatically let customers know that there will be a time delay. You can leverage geofencing to automate processes, like assigning work to certain techs based on where they are located. Geofencing can also trigger operational activities, like a stock center getting parts ready for a tech once they’re within a certain distance; as well as post-event actions, like closing tickets once a tech leaves the location.
+Geofencing can add value to your business in many ways. Geofencing allows your customers to see how far away technicians are from their location; it can also automatically let customers know if there will be a time delay. You can leverage geofencing to automate processes like assigning work to certain techs based on their locations. Geofencing can also trigger operational activities, like a stock center getting parts ready for a tech when they are within a certain distance; it can also trigger post-event actions, such as closing tickets once a tech leaves the location.
 
-Geofencing is a great enhancement, but what it’s not is a catch-all panacea. Some factors need to be considered before you move ahead with geofencing in order for it to work correctly.
+While Geofencing is a great enhancement, it is not is a catch-all panacea. You shoudl consider several factors before implementing Geofencing. 
 
-### Geofencing Requires Planning Before Implementation
+### Geofencing requires planning before implementation
 
 It’s easy to think that as soon as you get FSL, you’d start using geofencing. After all, why wouldn’t you? 
 
