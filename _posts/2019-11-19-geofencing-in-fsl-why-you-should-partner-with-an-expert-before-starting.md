@@ -14,13 +14,11 @@ ogTitle: "Geofencing in FSL: why you should partner with an expert before starti
 ogDescription: "This article reviews geofencing or geolocation&mdash;a capability within FSL. We will cover what geofencing is, as well as how and when you should expect to phase it into your FSL implementation."
 ---
 
-One of the questions I get asked a lot by my customers is “How can I get the most out of my Office 365 subscription?” My answer is always “Start using Microsoft&reg; Teams!”
+Salesforce Field Service Lightning (FSL) is an excellent choice if your company relies on a mobilized workforce to fulfill customer needs. FSL is a platform that helps to optimize your staff productivity and make sure your customers receive a level of service that exceeds their expectations.
 
 <!-- more -->
 
 ![]({% asset_path 2019-11-19-geofencing-in-fsl-why-you-should-partner-with-an-expert-before-starting/Geofencing-in-FSL.png %})
-
-Salesforce Field Service Lightning (FSL) is an excellent choice if your company relies on a mobilized workforce to fulfill customer needs. FSL is a platform that helps to optimize your staff productivity and make sure your customers receive a level of service that exceeds their expectations.
 
 This article reviews geofencing or geolocation&mdash;a capability within FSL. We will cover what geofencing is, as well as how and when you should expect to phase it into your FSL implementation.
 
@@ -28,23 +26,21 @@ This article reviews geofencing or geolocation&mdash;a capability within FSL. We
 
 Geofencing allows you to set up virtual perimeters around pre-defined areas and then create rules for these “fenced” locations. Geofencing uses a blend of GPS, cellular data, and Wi-Fi signals. 
 
-Geofencing can add value to your business in many ways. Geofencing allows your customers to see how far away technicians are from their location; it can also automatically let customers know if there will be a time delay. You can leverage geofencing to automate processes like assigning work to certain techs based on their locations. Geofencing can also trigger operational activities, like a stock center getting parts ready for a tech when they are within a certain distance; it can also trigger post-event actions, such as closing tickets once a tech leaves the location.
+Geofencing can add value to your business in many ways. It allows your customers to see how far technicians are from their location; it can also automatically let customers know if there will be a delay. You can use geofencing to automate processes like assigning work to certain technicians based on their location. Geofencing can also trigger operational activities, like a stock center getting parts when a technician is within a certain distance; it can also trigger post-event actions, such as closing tickets once a tech leaves the location.
 
-While Geofencing is a great enhancement, it is not is a catch-all panacea. You shoudl consider several factors before implementing Geofencing. 
+While Geofencing is a great enhancement, it is not is a catch-all panacea. You should consider several factors before implementing Geofencing. 
 
 ### Geofencing requires planning before implementation
 
-It’s easy to think that as soon as you get FSL, you’d start using geofencing. After all, why wouldn’t you? 
+While using geofencing at the beginning of your FSL project is certainly an option, it may not be the best idea. In order to get the most out of geofencing, you should first consider all factors. Far too often, companies skip the planning step entirely and encounter problems along the way.
 
-Well, the truth is, while using geofencing from the beginning of your FSL project is certainly an option, it may not be a great idea. In order to get the most out of geofencing, you’ll want to do some planning first to consider all of the factors. Far too often, companies skip the planning step entirely and end up with some problems along the way.
+### Things to consider before you start geofencing 
 
-### Things to Consider Before You Start Geofencing 
+We advise our clients to consider a few things before implementing geofencing. First of all, geolocation is not as accurate as most people think. The accuracy of the pinpointed location is usually within 10 meters; this is why sometimes when you use a ride-sharing app to call for a car, your driver may think you are at location A when you are actually standing one block away at location B. This adds a layer of complexity when using geolocation to connect your field workers with your customers.
 
-There are a few major points we advise our clients to consider as it relates to geofencing. First of all, geolocation is not as accurate as most people think. The accuracy of the pinpointed location usually falls within 10 meters; this is why sometimes when you call for a car on a ride-sharing app, your Lyft driver may think you’re at location A when you are actually standing one block away at location B. This adds a layer of complexity when using geolocation to connect your field workers with your customers.
+For example, your technician has an appointment at House A and another appointment at House B, 10 meters away. When they pull into the driveway, it is difficult for geolocation technology to determine exactly which appointment is about to begin. One solution to this problem may be to set up time dependencies in your system, creating limitations based on appointment start and end times. This is helpful in theory, but introduces another layer of complexity if your technician finishes their appointment early. Now, they can move on to the next job at House C, ahead of schedule for the day&mdash;in this case, you will need a solution that allows technicians to manually update appointment times, and ensure customers are notified of any changes to their scheduled appointment time. 
 
-For example, say your technician has an appointment at House A and his next appointment is at House B, but the houses are within 10 meters of each other. When he pulls into the driveway, it’s difficult for geolocation technology to determine exactly which appointment he’s arriving for. One solution to this may be to set up time dependencies within your system, setting limitations based on appointment start and end times. This is helpful in theory, but introduces another layer of complexity if your technician finishes his appointment at House B early. Now, he can move on to his next job at House C, ahead of schedule for the day — in this case, you will need a solution that allows technicians to manually update appointment times, and ensure customers are notified if their appointment will be beginning earlier or later than scheduled. 
-
-Additionally, what about offline technicians? Geofencing allows you to send automatic notifications to your customer when their technician is within 5 meters of their house. For companies whose technicians frequently work outside of a service network, or are otherwise offline, this particular feature may not add much value. FSL mobile gives you the capability to update work orders while offline; and will sync all of the work completed when the worker gets back online. However, while a technician is offline, location information isn’t being updated in real-time so your customers will miss any notifications that rely on geolocation. Depending on how often your technicians have online access, this may or may not be a worthwhile use of geofencing for your business.
+What about offline technicians? Geofencing allows you to send automatic notifications to your customer when their technician is within 5 meters of their house. For companies whose technicians frequently work outside of a service network, or are otherwise offline, this particular feature may not add much value. FSL mobile gives you the capability to update work orders while offline; and will sync completed work when the worker is back online. However, while a technician is offline, location information isn’t being updated in real-time so your customers will miss any notifications that rely on geolocation. Depending on how often your technicians have online access, this may or may not be a worthwhile use of geofencing for your business.
 
 These are just a few of the things you’ll need to take into account when starting out with geofencing. In order to cover all of your bases and make sure you correctly set up geofencing capabilities, we recommend partnering with an experienced implementation partner.
 
