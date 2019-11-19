@@ -10,35 +10,35 @@ categories:
     - Oracle
     - database
 metaTitle: "Relinking Oracle v18c grid infrastructure for cluster and database binaries"
-metaDescription: "This blog provides insight on what relinking is, why it is required, and how you relink Oracle object files."
+metaDescription: "This blog provides insight about what relinking is, why it is required, and how you relink Oracle object files."
 ogTitle: "Relinking Oracle v18c grid infrastructure for cluster and database binaries"
-ogDescription: "This blog provides insight on what relinking is, why it is required, and how you relink Oracle object files."
+ogDescription: "This blog provides insight about what relinking is, why it is required, and how you relink Oracle object files."
 ---
 
-This blog provides insight on what relinking is, why it is required, and how you
+This blog provides insight about what relinking is, why it is required, and how you
 relink Oracle&reg; object files.
 
 <!-- more -->
 
 ### Introduction
 
-You need the  predefined functions for any language, which are defined inside
-the library files for that language, are required to compile the code to create
-a binary format file (object file). The object files are then linked together
-with OS libraries to create a single executable file. To link the files, the
-process needs to find all the function definitions before it can generate an
-executable from the components.
+For any language, you need the predefined functions, which are defined inside
+the library files for that language and are required to compile the code to
+create a binary format file (object file). The object files are then linked
+together with operating system (OS) libraries to create a single executable
+file. For linking the files, the process needs to find all the function definitions
+before it can generate an executable from the components.
 
 ### What does it mean to relink Oracle Home binaries?
 
 Oracle software is shipped in the form of object and archive files and then
 grouped in a compressed Java&reg; Archive (jar) format. The object files are
-then relinked at the operating system (OS)level during installation to create
+then relinked at the operating system (OS) level during installation to create
 usable executables. This relinking guarantees reliable integration with the
 functions provided by the OS system libraries. During relinking, the current
 executables are renamed and saved, while the new executables are generated.
 After the new executables are in place and you verify that the new executables
-work, you can delete the old executables in the directory ORACLE_HOME/bin. Each
+work, you can delete the old executables in the directory **ORACLE_HOME/bin**. Each
 old executable has an 'O' appended to its file name. For example, **exp.exe** is
 renamed to **expO.exe**.
 
@@ -52,7 +52,7 @@ files:
 -	**$ORACLE_HOME/\<product\>/lib**
 
 The **sysliblist** file, found in **$ORACLE_HOME/rdbms/lib** or **$ORACLE_HOME/lib**,
-contains a list of other libraries, which you need to included.
+contains a list of other libraries, which you need to include.
 
 ### Why is Oracle Home relinking required?
 
@@ -73,20 +73,20 @@ You need to perform manual relinking in the following circumstances:
 
 -	After an OS upgrade or downgrade.
 -	After an OS patch.
--	If there are missing lib files in RDBMS home.
+-	If there are missing library files in RDBMS home.
 -	If you need to reset the Oracle Home binaries permission.
 
 ### Steps to manually relink Oracle object files
 
 Before starting the relink operation, you need to stop all the services that
-run from the ORACLE HOME directory. That is, shutdown all the databases,
+run from the **$ORACLE_HOME** directory. Shut down all the databases,
 listeners, Oracle Automatic Storage (ASM) instances, and cluster services.
 
 ![]({% asset_path 2019-11-20-relinking-oracle-v18c-grid-infrastructure-for-a-cluster-and-database-binaries/Picture1.png %})
 
 #### Root access required
 
-Use root access to run the following command to unlock GRID HOME:
+Use root access to run the following command to unlock **GRID_HOME**:
 
     # cd GRID_HOME/crs/install
     # rootcrs.sh -unlock
@@ -95,10 +95,10 @@ Use root access to run the following command to unlock GRID HOME:
 
 #### Oracle Grid Infrastructure cluster owner access required
 
-Use Oracle Grid Infrastructure cluster owner access to perform the
+Use the Oracle Grid Infrastructure cluster owner access to perform the
 following steps:
 
-Verify Environment variables $ORACLE_HOME and $PATH are set properly.
+Verify that the environment variables **$ORACLE_HOME** and **$PATH** are set properly.
 
 ![]({% asset_path 2019-11-20-relinking-oracle-v18c-grid-infrastructure-for-a-cluster-and-database-binaries/Picture3.png %})
 
@@ -107,7 +107,7 @@ relink command.
 
 ![]({% asset_path 2019-11-20-relinking-oracle-v18c-grid-infrastructure-for-a-cluster-and-database-binaries/Picture4.png %})
 
-Execute the following commands to relink GRID HOME.
+Execute the following commands to relink **GRID_HOME**:
 
     $ export ORACLE_HOME=Grid_home
     $ Grid_home/bin/relink all
@@ -118,7 +118,7 @@ Review the relink log file for any errors.
 
 #### Root access required
 
-Use root access to run the following commands to lock the GRID HOME binaries:
+Use root access to run the following commands to lock the **GRID-HOME** binaries:
 
     # cd Grid_home/rdbms/install/
     # ./rootadd_rdbms.sh
@@ -129,7 +129,7 @@ Use root access to run the following commands to lock the GRID HOME binaries:
 
 ### Relink Oracle database binaries
 
-Make sure Environment variables $ORACLE_HOME and $PATH are set properly.
+Make sure the environment variables **$ORACLE_HOME** and **$PATH** are set properly.
 
 ![]({% asset_path 2019-11-20-relinking-oracle-v18c-grid-infrastructure-for-a-cluster-and-database-binaries/Picture7.png %})
 
@@ -137,7 +137,7 @@ Before proceeding with relink command, set **umask** to `022`.
 
 ![]({% asset_path 2019-11-20-relinking-oracle-v18c-grid-infrastructure-for-a-cluster-and-database-binaries/Picture8.png %})
 
-Review relink log for any errors.
+Review the relink log file for any errors.
 
 The `relink all` command resets the permissions of **extjob**, **jssu**,
 **oradism**, and **externaljob.ora**.
@@ -166,8 +166,8 @@ properly.
 ### Conclusion
 
 The relink process uses the combined expertise of the database administrator,
-sysadmin, operating system programmer, and software programmer, and it ensures
-that the Oracle software works properly after major changes are done to the
+system administrator, operating system programmer, and software programmer, and it ensures
+that the Oracle software works properly after you've done major changes to the
 servers at OS level.
 
 Use the Feedback tab to make any comments or ask questions.
