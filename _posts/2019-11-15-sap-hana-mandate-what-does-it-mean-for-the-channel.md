@@ -6,6 +6,8 @@ comments: true
 author: Paul Croteau 
 published: true
 authorIsRacker: true
+authorAvatar: 'https://en.gravatar.com/userimage/1316548/544d0908ada5d93056e89afc7d240c23.png?size=200'
+bio: "Paul Croteau is the Channel CTO at Rackspace, where he works with partners to enable their understanding of technology, the Rackspace portfolio, and the state of the industry. With more than 25 years of information technology experience including roles in engineering, sales, account management, and technical training, Paul’s experience helps him relate with partners and customers at all levels within an organization. His energy and passion for technology have been helpful in creating successful sales engagements and exceptional customer experiences with partners of all sizes. Paul originally joined Rackspace in 2005. Previous employers include AT&T, HP, and Accenture. Paul is based in San Antonio, Texas. Outside of work, Paul is a professional musician and composer and is married with two teenagers and a house full of pets."
 categories:
   - General
 metaTitle: "How does the SAP HANA Mandate affect your business?"
