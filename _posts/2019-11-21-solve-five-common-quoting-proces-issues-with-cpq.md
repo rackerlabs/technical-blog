@@ -25,18 +25,18 @@ customer requesting a quote from your company and receiving it.
 
 ### Introduction
 
-Issues in your quoting process&mdash;from pricing errors to lengthy approvals&mdash;
-can prevent your team from meeting customer expectations, and contribute to a
+Issues in your quoting process&mdash;from pricing errors to lengthy approvals&mdash;can
+prevent your team from meeting customer expectations, and contribute to a
 lack of morale among your staff.
 
 In our experience helping businesses improve their quote-to-cash system, we’ve
-seen these roadblocks countless times. In our well-established CPQ Practice at
-Rackspace, we’ve been able to help guide businesses in implementing the right
-tools and processes to tackle these common pain points and prevent them from
-reappearing down the line.
+seen these roadblocks countless times. In our well-established Configure, Price,
+Quote (CPQ) practice at Rackspace, we’ve been able to help guide businesses in
+implementing the right tools and processes to tackle these common pain points
+and prevent them from reappearing down the line.
 
 One of the best tools you can invest in to alleviate this is the Salesforce&reg;
-Configure, Price, Quote (CPQ) application. Salesforce CPQ acts as a guardrail
+CPQ application. Salesforce CPQ acts as a guardrail
 for your sales process, helping your team quickly provide accurate pricing
 across a range of scenarios. It facilitates your quoting process from the first
 interaction with a client right up to the final calculations&mdash;and it doesn’t
@@ -52,14 +52,14 @@ if you’re in the midst of restructuring or
 (have many systems to keep track of)[https://martechseries.com/mts-insights/guest-authors/dont-let-data-silos-downfall/]
 across the company.
 
-If you’re using spreadsheets and docs to manage your terms and conditions, price
-lists, and other important information, there’s a high chance that older versions
+If you’re using spreadsheets and documents to manage your terms and conditions, price
+lists, and other important information, the chances are high that older versions
 of these documents are being circulated and used by both team members and clients.
 
 Salesforce and linked cloud-based applications such as CPQ can help centralize
 and maintain data. CPQ also acts as your company’s universal access point for
-that data. This ensures that every team member has access to the most current
-documents and information.
+that data. This centralization ensures that every team member has access to the
+most current documents and information.
 
 ### 2. Pricing (and other) errors
 
@@ -68,8 +68,8 @@ systems is errors such as price discrepancies, data entry mistakes, and other
 blunders that make your quoting process feel more like a hurdle and less like a
 bridge to bringing on new customers.
 
-Common issues may be caused by human errors such as forgetting to update an
-information field (like the company’s new name), causing confusion for the
+Common issues might be caused by human errors, such as forgetting to update an
+information field (like the company’s new name) that causes confusion for the
 customer, or miscalculations, such as not realizing a customer is eligible for
 free shipping on a particular order.
 
@@ -79,7 +79,7 @@ quoting errors cause your team and company to appear disjointed or, worse,
 unprofessional.
 
 While it might not be possible to eliminate errors completely, you can take
-steps to make these mistakes less likely, which goes a long way towards helping
+steps to make these mistakes less likely. Doing so goes a long way towards helping
 you to reach your targets and keep your customers happy.
 
 ### 3. Lengthy review process
@@ -91,14 +91,14 @@ companies that still rely on email for communications, this is especially true.
 
 Salesforce CPQ enables you to generate documents, track changes, and integrate
 revisions into the quote system so that the final review process is more
-efficient and easier to follow up on. This empowers your team and the customer
+efficient and easier to follow up on. This process empowers your team and the customer
 to obtain the information and changes they need in a timely manner.
 
 ### 4. Missed upsells
 
-While your sales reps are busy following up on approvals or correcting errors
+While your sales representatives are busy following up on approvals or correcting errors
 in a miscalculated quote, they are losing time they could have spent maximizing
-the impact of their sales. When sales reps are spread too thin or required to
+the impact of their sales. When sales representatives are spread too thin or required to
 spend too much time on manual tasks, they miss out on opportunities to upsell
 your current customer base.
 
@@ -111,15 +111,15 @@ compatibilities and upsell opportunities along the path to generating a quote.
 ### 5. Excessive discounting
 
 Discounts can be an effective way to motivate and reward customers that use and
-bundle your products. However, when too many customers are given overly generous
+bundle your products. However, when you give too many customers overly generous
 markdowns or inaccurate discounts, your profits take a hit.
 
 Excessive discounting is common when a sales team doesn’t have an automated
 system to perform calculations based on the customer’s profile, or when they
 don’t have clearly enforced rules in place to cap discounts.
 
-Using CPQ to set limits on your discount policy and to require different degrees
-of approval for discounts helps ensure that your customers get a fair price
+By using CPQ to set limits on your discount policy and to require different degrees
+of approval for discounts, you help ensure that your customers get a fair price
 while your company continues to make money.
 
 ### Let’s remodel your quoting process
@@ -127,11 +127,11 @@ while your company continues to make money.
 Ready to smooth out your quoting process with CPQ? As certified CPQ specialists,
 the team at Rackspace is uniquely equipped to help you navigate common quoting
 process issues and get the most out of your Salesforce platform. Partnering with
-an implementation expert like Rackspace ensures that your journey is smooth and
+an implementation expert like Rackspace ensures that your journey is smooth, and
 adoption across your company is high.
 
 We’ve worked with a wide range of clients with diverse configurations and needs.
-This means we’ve got a library of solutions to apply to just about any quoting
+So we’ve got a library of solutions to apply to just about any quoting
 process issues you encounter.
 
 ### Optimize your environment with expert administration, management, and configuration
