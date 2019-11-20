@@ -74,7 +74,7 @@ With smart scheduling, you can assign jobs based on time, skills, location, and 
 
 The right optimization scheduling software can change the way you do business. If you are struggling to find ways to keep customers happy without overwhelming your field technicians and reps, FSL may be just the solution you need. 
 
-Investing in FSL can streamline your scheduling, inventory, communication, and more. To learn more about FSL, reach out to our expert implementation and consulting team at Rackspace. We are certified Field Service Lightning specialists who have been involved with FSL since the product first launched, and continue to serve on the FSL Advisory Board. Learn more about how we can help you implement FSL to streamline your service business.
+Investing in FSL can streamline your scheduling, inventory, communication, and more. To learn more about FSL, reach out to our expert implementation and consulting team at Rackspace. We are certified Field Service Lightning specialists who have been involved with FSL since the product first launched, and continue to serve on the FSL Advisory Board. Contact us today to learn more about how we can help you implement FSL to streamline your service business.
 
 
 ### Optimize your environment with expert administration, management, and configuration
