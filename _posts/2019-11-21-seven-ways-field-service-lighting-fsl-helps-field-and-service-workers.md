@@ -24,17 +24,17 @@ Here are seven ways that FSL can help your service team.
 
 ### 1. Map view makes time management easier
 
-Having a single view of their work day will help your field workers plan their tasks more efficiently. Within FSL, your field technicians can get a simplified look at all of their appointments for the day in a map view. This makes it easier for workers to calculate the distance between each job and estimate traffic when necessary. Workers can also quickly access directions to their next appointment in the mobile app.
+Having a single view of their work day will help your field workers plan their tasks more efficiently. Within FSL, your field technicians can view a simplfied map that displays all of their appointments for the day. This makes it easier to calculate the distance between each job and estimate traffic when necessary. Workers can also use the mobile app to quickly access directions to their next appointment.
 
-### 2. Mobile Updates Offer Immediate Transparency
+### 2. Mobile updates offer immediate transparency
 
-Sometimes things change in the field. A simple job can suddenly become more complicated. A customer may report something different on arrival than what was discussed over the phone. A first-time evaluation might require additional time to diagnose. How prepared is your field worker to report these changes back to the office?
+Sometimes things change in the field. A simple job can suddenly become complicated. A customer may report something different on arrival than what was discussed over the phone. A first-time evaluation might require additional time to diagnose. How prepared is your field worker to report these changes to the office?
 
-FSL gives field workers the power to give real-time job status updates or to change the job description altogether. Your office staff won’t be confused about what’s going on because the updates are reported back immediately. If the technician will be at their current job longer than expected, the manager or dispatcher can make scheduling adjustments as necessary. 
+FSL lets field workers give real-time job status updates or change job descriptions. Your office staff will be aware of what is happening, because the updates occur immediately. If the technician will be at their current job longer than expected, the manager or dispatcher can make scheduling adjustments as necessary. 
 
-For instance, imagine a field rep gets delayed during an appointment with a customer, and realizes they won’t make their next appointment on time. The field rep can communicate this to dispatch while in the field; and dispatch can identify and send out a different technician who is already in the area and has some available time.
+For instance, imagine a field rep gets delayed during an appointment with a customer, and realizes they won’t make their next appointment on time. The field rep can communicate this to dispatch while in the field; and dispatch can identify and send out a different available technician who is in the area.
 
-### 3. Einstein Vision Erases Confusion
+### 3. Einstein Vision erases confusion
 
 Imagine a plumber in the field evaluating the needs for a dishwasher repair. With so many similar-looking small parts (and hard-to-read serial numbers), it’s easy for a well-meaning technician to make a mistake. With Einstein Vision for FSL, your field workers can wave goodbye to uncertainty. 
 
