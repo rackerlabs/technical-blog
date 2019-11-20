@@ -1,0 +1,106 @@
+---
+layout: post
+title: "Seven ways Field Service Lighting (fsl) helps field and service workers"
+date: 2019-11-21 00:01
+comments: true
+author: Kortney Cervantes
+published: true
+authorIsRacker: true
+categories:
+    - general
+metaTitle: "Seven ways Field Service Lighting (fsl) helps field and service workers"
+metaDescription: ""
+ogTitle: "Seven ways Field Service Lighting (fsl) helps field and service workers"
+ogDescription: ""
+---
+
+The risk of your customers falling through the cracks is much greater if you do not have a centralized workforce. A dispatcher might be unable to reach a technician on the road, or a service van may lack the proper parts to complete a task. A technician may even get lost searching for a wrong address. All of these situations can leave your customers unhappy and your workers frustrated&mdash;nobody wins. 
+
+If these scenarios sound familiar, it is time to increase your company’s efficiency. This is where Salesforce Field Service Lightning (FSL) comes in. This revolutionary service management software helps make work easier for people in the field. It provides incredible transparency into the schedules and status of field workers’ tasks; the mobile nature of the platform also makes it a perfect fit for employees who spend their days in the field. The features of FSL work both online and offline, so your workers in the field can still take advantage of their visual itinerary even if they’re in a remote area or lose cellular service. 
+
+Here are seven ways that FSL can help your service team. 
+
+<!-- more -->
+
+### 1. Map view makes time management easier
+
+Having a single view of their work day will help your field workers plan their tasks more efficiently. Within FSL, your field technicians can get a simplified look at all of their appointments for the day in a map view. This makes it easier for workers to calculate the distance between each job and estimate traffic when necessary. Workers can also quickly access directions to their next appointment in the mobile app.
+
+### 2. Mobile Updates Offer Immediate Transparency
+
+Sometimes things change in the field. A simple job can suddenly become more complicated. A customer may report something different on arrival than what was discussed over the phone. A first-time evaluation might require additional time to diagnose. How prepared is your field worker to report these changes back to the office?
+
+FSL gives field workers the power to give real-time job status updates or to change the job description altogether. Your office staff won’t be confused about what’s going on because the updates are reported back immediately. If the technician will be at their current job longer than expected, the manager or dispatcher can make scheduling adjustments as necessary. 
+
+For instance, imagine a field rep gets delayed during an appointment with a customer, and realizes they won’t make their next appointment on time. The field rep can communicate this to dispatch while in the field; and dispatch can identify and send out a different technician who is already in the area and has some available time.
+
+### 3. Einstein Vision Erases Confusion
+
+Imagine a plumber in the field evaluating the needs for a dishwasher repair. With so many similar-looking small parts (and hard-to-read serial numbers), it’s easy for a well-meaning technician to make a mistake. With Einstein Vision for FSL, your field workers can wave goodbye to uncertainty. 
+
+This incredible technology lets your workers simply scan a photo of a part into the app to identify it, and provide any and all relevant information to the field rep. Using Einstein Vision will help ensure that the correct part will be used for the job, and also help eliminate delays caused by common ordering mistakes.
+
+### 4. Knowledge Articles Reduce Delays?
+
+Experienced field and service workers still require help from time to time. Imagine being in the field faced with a complex repair, and not having anyone else nearby to ask for help. Delays resulting from complicated or unexpected issues can cost the company money and can leave customers unsatisfied. 
+
+Salesforce FSL has an extensive library of articles in the “Knowledge” section that are accessible both online and offline, ready to lend quality information for your task. Your workers can make smarter and faster decisions when they have access to your entire organization’s knowledge base in their pocket. 
+
+### 5. Chatter Makes Communication Simpler
+
+When a knowledge base doesn’t cut it, the chatter feature in FSL provides a quick and easy way to get in touch with company experts and fellow workers. Perhaps your field worker is on a job site that a previous technician has visited. Instead of trying to track down old paperwork for a work order history, he may be able to get in touch with the previous technician directly using the mobile app’s chatter feature.
+
+@suzy “Did you also hear a weird sound when disconnecting the unit from the water?” 
+
+@mike “Yes, that’s likely because the icemaker is turned on. The sound should go away if you turn off the icemaker before disconnecting from the water.”
+
+@suzy “Okay that worked. Thanks”
+
+Some questions require collaboration between two field workers, or between a field worker and an in-house resource. Making it easier to stay in touch means your field technician’s job becomes less isolated and stressful, and gives them the support they need to best serve your customers.
+
+#### 6. Interactive Maps Cover Your Bases
+
+Dispatchers responsible for sending sales personnel or other agents out into the field have a lot of power. But with great power can come great confusion, unless you have access to a modern map. 
+
+FSL has a feature called Polygon Mapping. With it, the dispatcher can draw shapes on a map and assign each portion to a rep or technician. Color-coded assignments tell field reps where to focus their efforts. This can eliminate the chance of two field reps overlapping in the same neighborhood, or help prevent a potentially lucrative area from being totally neglected. Use it to give your field reps clear parameters for where they should operate so everyone is on the same page!
+
+#### 7. Modern Scheduling Helps Everyone
+
+Putting a field agent on the wrong job is annoying at best, and could lead to lost productivity and business at worst. If a field worker shows up to a job he’s not qualified for, you’ve just made his day harder. 
+
+With smart scheduling, you can assign jobs based on time, skills, location, and other business rules that have been designed to increase employee productivity. This type of scheduling makes life easier on managers and dispatchers, and it gives field workers more confidence when they show up to a job. You can also use FSL to schedule crews together. When the right technicians and resources are scheduled properly, jobs run more smoothly. 
+
+### Ready to Take Your Field Service to the Next Level?
+
+The right optimization scheduling software can change the way you do business. If you’re struggling to figure out ways to keep customers happy without overwhelming your field technicians and reps, FSL may be just the solution you need. 
+
+Investing in FSL can streamline your scheduling, inventory, communication, and more. To learn more about FSL, reach out to our expert implementation and consulting team at RelationEdge. We are certified Field Service Lightning specialists who have been involved with FSL since the product first launched, and continue to serve on the FSL Advisory Board. Learn more about how we can help you implement FSL to streamline your service business.
+
+
+### Optimize your environment with expert administration, management, and configuration
+
+[Rackspace's Application services](https://www.rackspace.com/application-management/managed-services)
+**(RAS)** experts provide the following [professional](https://www.rackspace.com/application-management/professional-services)
+and
+[managed services](https://www.rackspace.com/application-management/managed-services) across
+a broad portfolio of applications:
+
+- [eCommerce and Digital Experience platforms](https://www.rackspace.com/ecommerce-digital-experience)
+- [Enterprise Resource Planning (ERP)](https://www.rackspace.com/erp)
+- [Business Intelligence](https://www.rackspace.com/business-intelligence)
+- [Salesforce Customer Relationship Management (CRM)](https://www.rackspace.com/salesforce-managed-services)
+- [Databases](https://www.rackspace.com/dba-services)
+- [Email Hosting and Productivity](https://www.rackspace.com/email-hosting)
+
+We deliver:
+
+- **Unbiased expertise**: We simplify and guide your modernization journey,
+focusing on the capabilities that deliver immediate value.
+- **Fanatical Experience**&trade;: We combine a *process first, technology second*
+approach with dedicated technical support to provide comprehensive solutions.
+- **Unrivaled portfolio**: We apply extensive cloud experience to help you
+choose and deploy the right technology on the right cloud.
+- **Agile delivery**: We meet you where you are in your journey and align
+our success with yours.
+
+[Chat now](https://www.rackspace.com/#chat) to get started.
