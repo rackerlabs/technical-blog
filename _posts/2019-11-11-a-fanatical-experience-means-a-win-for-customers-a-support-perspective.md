@@ -5,10 +5,9 @@ date: 2019-11-12 00:00
 comments: true
 author: Shaun Crumpler
 published: true
-authorisRacker: true
+authorIsRacker: true
 authorAvatar: 'https://secure.gravatar.com/avatar/c26423ec960c158dbdbcbee1f61ea7b5'
 bio: "Shaun Crumpler is a 7 year Racker, who focuses on applying his MBA to the technical space to evolve and transform processes, promoting change and agility.  His technical expertise spans Linux operating systems, the Rackspace Public Cloud infrastructure, and the AWS infrastructure.  He was awarded the Fanatical Jacket, Rackspace’s highest honor, because of the focus that he places on fanatically supporting not only external customers, but internal customers as well."
-catagories:
 categories:
     - General
 metaTitle: "A Fanatical Experience Means a Win for Customers - A Support Perspective"
