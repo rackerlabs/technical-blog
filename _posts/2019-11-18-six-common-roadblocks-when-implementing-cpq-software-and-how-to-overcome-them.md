@@ -1,17 +1,17 @@
 ---
 layout: post
 title: "Six common roadblocks when implementing CPQ software and how to overcome them"
-date: 2019-11-18 00:00
+date: 2019-11-18 00:01
 comments: true
 author: Rob Hawthorn
 published: true
 authorIsRacker: true
 categories:
-  - Salesforce
+    - Salesforce
 metaTitle: "Six common roadblocks when implementing CPQ software and how to overcome them"
-metaDescription: "Significant growth also comes with increased complexity&mdash;if your Configure, Price, Quote (CPQ) process isn’t growing with you, your pain points soon become evident."
-ogTitle: "Six common roadblocks when implementing CPQ software and how to overcome them""
-ogDescription: "Significant growth also comes with increased complexity&mdash;if your Configure, Price, Quote (CPQ) process isn’t growing with you, your pain points soon become evident."
+metaDescription: "Significant growth also comes with increased complexity--if your Configure, Price, Quote (CPQ) process isn’t growing with you, your pain points soon become evident."
+ogTitle: "Six common roadblocks when implementing CPQ software and how to overcome them"
+ogDescription: "Significant growth also comes with increased complexity--if your Configure, Price, Quote (CPQ) process isn’t growing with you, your pain points soon become evident."
 ---
 
 Your company’s sales team is growing, and your books are in the black. While this is good news, with significant growth also comes increased complexity&mdash;if your Configure, Price, Quote (CPQ) process isn’t growing with you, your pain points soon become evident. 
