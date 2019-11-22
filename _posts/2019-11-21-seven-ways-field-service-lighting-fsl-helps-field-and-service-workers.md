@@ -7,7 +7,7 @@ author: Kortney Cervantes
 published: true
 authorIsRacker: true
 categories:
-    - general
+    - Salesforce
 metaTitle: "Seven ways Field Service Lightning helps field and service workers"
 metaDescription: "Salesforce Field Service Lightning helps make work easier for people in the field. It provides incredible transparency into the schedules and status of field workers’ tasks"
 ogTitle: "Seven ways Field Service Lightning helps field and service workers"
