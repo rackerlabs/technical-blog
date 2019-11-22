@@ -70,7 +70,7 @@ Personally, I hardly qualify as a proper developer, let alone a game developer. 
 
 Luckily, some kind souls already did all the hard work and developed an open-source **Tetris HTML5** clone with theme support. I cannot praise them enough, and I've tried to reach out to see if we can somehow compensate them for their hard work. Kudos to the people at **Aerolab** and their project [Blockrain.js](http://aerolab.github.io/blockrain.js/)! 
 
-I created a custom theme around GCP and Kubernetes, included our **Service Blocks**, adjusted some of the game files for additional customization, and hosted the game on blob storage, the result of which can be found [here](https://public.thirdpartytools.net/kubertetris/index.html). **NB - Works best in Chrome and not on mobile!**
+I created a custom theme around GCP and Rackspace, included our **Service Blocks**, adjusted some of the game files for additional customization, and hosted the game on blob storage, the result of which can be found [here](https://kubertetris.thirdpartytools.net/index.html). **NB - Works best in Chrome and not on mobile!**
 
 Don't tell Google that it's on **Azure Blob Storage** for now ;-). The epileptic background animations are standard CSS, and it features the original **Gameboy** soundtrack by [Chip Tanaka](https://en.wikipedia.org/wiki/Hirokazu_Tanaka). 
 
@@ -85,6 +85,8 @@ Add a simple whiteboard to record the scores, some awesome prizes (**Airblock** 
 ### Back to the future
 
 Because of the success of the first version, one of my colleagues came up with the idea to use the game as an example workload to truly exhibit our services. So, as we speak, we are adding features, such as a CI/CD pipeline, to deploy straight into object storage (on Google, this time), an on-screen high score (rather daunting considering my JS skills), and a proper block preview function. At the same time, some of my colleagues are creating a high-level proposal, a detailed design document, and fully branded graphics and images. 
+
+The next version is now available [here](https://kubertetris.thirdpartytools.net/index.html) !! **NB - Works best in Chrome and not on mobile!**
 
 Our aim is to present the game and these artifacts at [Google Next '19 in London](https://cloud.withgoogle.com/next/uk) and to slowly add more functionality and services, such as some analytics on in-game data and events. 
 
