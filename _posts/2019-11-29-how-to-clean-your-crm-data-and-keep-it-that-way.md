@@ -34,9 +34,9 @@ If you have thousands of records, the idea of manually identifying and removing 
 
 Here are some tactics to help with this process:
 
-**Use a duplicate-check application.** Some programs, including [Salesforce&reg;](https://www.salesforce.com/blog/2015/02/clean-up-your-data-expert-way-data-management-apps-apps-admins.html), have free applications that check for duplicates. 
-**Use a case merge application like [Case Merge Premium](https://appexchange.salesforce.com/listingDetail?listingId=a0N30000003IAR3EAO).** This program not only looks for duplicates but also automatically merges all of them at once. 
-**Block duplicates at the point of entry.** Once you have cleaned up existing duplicates, find out if your CRM has a native feature to block duplicate cases at the point of entry. If so, you can stop future duplicates immediately by alerting users when they attempt to create one. 
+- **Use a duplicate-check application.** Some programs, including [Salesforce&reg;](https://www.salesforce.com/blog/2015/02/clean-up-your-data-expert-way-data-management-apps-apps-admins.html), have free applications that check for duplicates. 
+- **Use a case merge application like [Case Merge Premium](https://appexchange.salesforce.com/listingDetail?listingId=a0N30000003IAR3EAO).** This program not only looks for duplicates but also automatically merges all of them at once. 
+- **Block duplicates at the point of entry.** Once you have cleaned up existing duplicates, find out if your CRM has a native feature to block duplicate cases at the point of entry. If so, you can stop future duplicates immediately by alerting users when they attempt to create one. 
 
 ### Limit the number of administrative users
 
