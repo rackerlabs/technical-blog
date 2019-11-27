@@ -62,13 +62,13 @@ After you define your rules and standard practices, document your guidelines and
 
 After addressing duplicates, carefully selecting admins, and putting an entry protocol in place, you are now in good shape. But as with most things, CRM clean-up is not a one-time job. 
 
-Regular maintenance should be performed which includes everything from a monthly review of flagged duplicates to quarterly checks for available CRM software updates. Set up a regular schedule for cleaning up bad records or checking for missing data. Consider setting up automated reminders or task assignments to make sure nothing falls through the cracks. 
+You should perform regular maintenance which includes: a monthly review of flagged duplicates and quarterly checks for available CRM software updates. Set-up a regular schedule for handling bad records or checking for missing data. Consider creating automated reminders or task assignments to prevent anything from falling through the cracks. 
 
-You should also set up a process to inventory old, aging, and unengaged records in your CRM system. Use the CRM reporting functionality to view a report of your oldest records and consider displaying this information on responsible team members’ dashboards or home screens, so that they remember to manage those records according to your company policy.
+You should also implement a process for inventorying old, aging, and unengaged records in your CRM system. Use the CRM reporting functionality to view a report of your oldest records. Consider displaying this report on responsible team members’ dashboards or home screens, so that they remember to manage those records according to your company policy.
 
 Keeping CRM data clean is everyone’s responsibility. The benefits of maintaining solid CRM data include gaining a better understanding of your customers and the ability to effectively communicate with them. 
 
-If you need help getting started with a CRM data maintenance strategy, Rackspace is a full-service Salesforce Platinum Consulting Partner with extensive experience helping businesses like yours succeed with technology solutions. We can help you clean up your data and create a process to keep it that way going forward. Contact us today to learn more. 
+If you need help creating a CRM data maintenance strategy, Rackspace is a full-service Salesforce Platinum Consulting Partner with extensive experience helping businesses like yours succeed with technology solutions. We can help you organize your data and create a process to maintain it. Contact us today to learn more.
 
 
 ### Optimize your environment with expert administration, management, and configuration
