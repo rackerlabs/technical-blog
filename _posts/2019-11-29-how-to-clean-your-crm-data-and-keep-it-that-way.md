@@ -34,13 +34,13 @@ If you have thousands of records, the idea of manually identifying and removing 
 
 Here are some tactics to help with this process:
 
-    **Use a duplicate-check application.** Some programs, including Salesforce&reg;, have free applications that check for duplicates. 
-    **Use a case merge application like Case Merge Premium.** This program not only looks for duplicates but also automatically merges all of them at once. 
+    **Use a duplicate-check application.** Some programs, including [Salesforce&reg;](https://www.salesforce.com/blog/2015/02/clean-up-your-data-expert-way-data-management-apps-apps-admins.html), have free applications that check for duplicates. 
+    **Use a case merge application like [Case Merge Premium](https://appexchange.salesforce.com/listingDetail?listingId=a0N30000003IAR3EAO).** This program not only looks for duplicates but also automatically merges all of them at once. 
     **Block duplicates at the point of entry.** Once you have cleaned up existing duplicates, find out if your CRM has a native feature to block duplicate cases at the point of entry. If so, you can stop future duplicates immediately by alerting users when they attempt to create one. 
 
 ### Limit the number of administrative users
 
-To reduce and prevent duplicate records, consider limiting the number of team members who have full administrative privileges within the system. CIO recommends limiting the number of administrators with full system access to six&mdash;of course, this is a guideline and the right number for you may depend on the size of your company and nature of your business.
+To reduce and prevent duplicate records, consider limiting the number of team members who have full administrative privileges within the system. [CIO recommends](https://www.cio.com/article/3156518/13-tips-for-managing-the-data-in-salesforce-com.html) limiting the number of administrators with full system access to six&mdash;of course, this is a guideline and the right number for you may depend on the size of your company and nature of your business.
 
 Limiting the number of administrators help you to maintain your processes and could prevent an inexperienced team member from accidentally deactivating an important duplicate checker. 
 
@@ -62,7 +62,7 @@ After you define your rules and standard practices, document your guidelines and
 
 After addressing duplicates, carefully selecting admins, and putting an entry protocol in place, you are now in good shape. But as with most things, CRM clean-up is not a one-time job. 
 
-You should perform regular maintenance, which includes a monthly review of flagged duplicates and quarterly checks for available CRM software updates. Set-up a regular schedule for handling bad records or checking for missing data. Consider creating automated reminders or task assignments to prevent anything from falling through the cracks. 
+You should perform regular [maintenance, which includes](https://www.cio.com/article/3156518/13-tips-for-managing-the-data-in-salesforce-com.html) a monthly review of flagged duplicates and quarterly checks for available CRM software updates. Set-up a regular schedule for handling bad records or checking for missing data. Consider creating automated reminders or task assignments to prevent anything from falling through the cracks. 
 
 You should also implement a process for inventorying old, aging, and unengaged records in your CRM system. Use the CRM reporting functionality to view a report of your oldest records. Consider displaying this report on responsible team members’ dashboards or home screens, so that they remember to manage those records according to your company policy.
 
