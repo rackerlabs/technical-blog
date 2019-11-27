@@ -14,19 +14,13 @@ ogTitle: "How to clean your crm data&mdash;and keep it that day"
 ogDescription: ""
 ---
 
-Beyond wasting time and causing frustration to both your staff and customers,
-issues in your company’s quoting process can do real damage to your bottom line.
-In an ideal world, there would be a smooth and seamless turnaround between a
-customer requesting a quote from your company and receiving it.
+Many people think a customer relationship management (CRM) platform is only for the Sales team, but your CRM actually contains information about the entire customer lifecycle that is useful to all departments. Integrating your CRM with other platforms like your marketing automation software, can create valuable ways to use this data across multiple teams.
 
 <!-- more -->
 
-![]({% asset_path 2019-11-21-solve-five-common-quoting-proces-issues-with-cpq/Picture1.png %})
+![]({% asset_path 2019-11-29-how-to-clean-your-crm-data-and-keep-it-that-way/picture1.png %})
 
-
-Many people think a customer relationship management (CRM) platform is just for the sales team, but your CRM actually contains information about the entire customer lifecycle that is useful to all departments. And when your CRM is integrated with other platforms like your marketing automation software, that creates even more valuable ways to use data across teams.
-
-When the data stored in your CRM is disorganized, contains duplicates, or is incomplete, everyone loses. The teams trying to use this data — such as sales, marketing, or customer service — will be frustrated and may lose opportunities to close deals, retain customers, and deliver excellent service. Ultimately, your bottom line may suffer from a disorganized CRM in the form of missed customer conversions, company reputation, and opportunities for revenue.
+Everyone loses when the data stored in your CRM is disorganized, contains duplicates, or is incomplete. The teams trying to use this data&mdash;such as sales, marketing, or customer service&mdash;will be frustrated and could lose opportunities to close deals, retain customers, and deliver excellent service. A disorganized CRM can result in missed customer conversions, a negative company reputation, and lost opportunities for revenue.
 
 So, how do you keep your CRM data clean as a whistle? Start by undertaking a few practices to get your CRM organized and pristine — and once your data is clean, implement processes for keeping it that way. As a Platinum Salesforce consulting partner, RelationEdge has helped thousands of businesses implement, use, and maintain their CRM systems, and we’re experts in CRM data management. Read on for some of our best strategies when it comes to cleaning and maintaining your CRM data for the long haul.
 
