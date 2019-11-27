@@ -10,14 +10,14 @@ categories:
     - Oracle
     - database
 metaTitle: "Recover the Oracle voting disk when its backup is missing"
-metaDescription: "The blog explores a scenario where you've lost an Oracle Cluster Registry (OCR) and voting disk, and the voting disk has no backup."
+metaDescription: "This blog explores a scenario where you've lost an Oracle Cluster Registry (OCR) and voting disk, and the voting disk has no backup."
 ogTitle: "Recover the Oracle voting disk when its backup is missing"
-ogDescription: "The blog explores a scenario where you've lost an Oracle Cluster Registry (OCR) and voting disk, and the voting disk has no backup."
+ogDescription: "This blog explores a scenario where you've lost an Oracle Cluster Registry (OCR) and voting disk, and the voting disk has no backup."
 ---
 
-The blog explores a scenario where you've lost an Oracle&reg; Cluster Registry
+This blog explores a scenario where you've lost an Oracle&reg; Cluster Registry
 (OCR) and voting disk, and the voting disk has no backup. Though a tricky
-situation, you can restore it from the last auto backup of the OCR backup.
+situation, you can restore it from the last automatic backup of the OCR.
 
 <!-- more -->
 
@@ -31,10 +31,10 @@ creates the voting disk and the OCR on a shared storage volume.
 A cluster node member should always access half of the voting disk to avoid node
 eviction from the cluster group. The voting disk plays a key role by ensuring
 that all nodes mark their availability. The Cluster Synchronization Services
-Daemon (CSSD) performs all the operations for the voting disk in Clusterware.
+daemon (CSSd) performs all the operations for the voting disk in Clusterware.
 
-The OCR serves as the central repository for Cluster Ready services (CRS),
-storing the metadata, configuration and state information for all cluster
+The OCR serves as the central repository for Cluster Ready Services (CRS)&mdash;storing
+the metadata, configuration, and state information for all cluster
 resources defined in Clusterware. The OCR always retains the latest three backup
 copies of the OCR, which are four hours old, one day old, and one week old.
 
@@ -43,16 +43,16 @@ copies of the OCR, which are four hours old, one day old, and one week old.
 -	Node membership information, including which nodes are part of the cluster
 -	Software current active version
 -	Location of the voting disk
--	Serverpools
+-	Server pools
 -	Status of the cluster resources such as RAC databases, listeners, instances,
-   and other Oracle component services.
+   and other Oracle component services
 
-### What is stored in a voting disk?
+### What is stored in the voting disk?
 
-Voting disk contains both static and dynamic data.
+The voting disk contains both static and dynamic data.
 
 -	Static data: Keeps the information about all the nodes in a cluster.
--	Dynamic data: Keeps the information of the Disk heartbeat mechanism.
+-	Dynamic data: Keeps the information about the disk heartbeat mechanism.
 
 The voting disk also maintains the details about the cluster nodes membership,
 such as which node is currently the part of the cluster, or which node is
@@ -68,11 +68,11 @@ cluster file system.
 
 ### Environment details
 
-The following environment is used in the sample scenario for this blog.
+The sample scenario for this blog uses the following environment:
 
-**Oracle Version**: Release 11.2.0.4.0
-**OS**: Sun OS 5.11 11.2
-**Cluster**: RAC (2 nodes)
+-  **Oracle Version**: Release 11.2.0.4.0
+-  **OS**: Sun OS 5.11 11.2
+-  **Cluster**: RAC (2 nodes)
 
 ### The error
 
@@ -86,7 +86,7 @@ Let's fix the following error:
     retrying discovery in 15 seconds; Details at (:CSSNM00070:)
     in /oracle/11.2.0/grid/log/testdb01/cssd/ocssd.log
 
-We need to access the OCR and voting disk to bring up the cluster, but because
+We need to access the OCR and voting disk to bring up the cluster. But because
 these resources are not accessible, the cluster remains down.
 
 ### Restore the voting disk
@@ -108,7 +108,7 @@ Run the following command to restart the node:
 #### Step 3: Verify that the CSR service did not start
 
 After reboot, the CSR service should not be running because you disabled it in
-Step 2. Run the following commmand to check if the CRS service started:
+Step 2. Run the following command to check if the CRS service started:
 
     root@testdb01:/oracle/11.2.0/grid/bin# ./crsct check crs
 
@@ -127,9 +127,9 @@ Run the following command to start the cluster in exclusive mode:
 
     root@testdb01:/oracle/11.2.0/grid/bin# ./crsctl start crs -excl
 
-#### Step 6: Start the ASM with a pfile
+#### Step 6: Start the ASM with a PFILE
 
-Run the following command to start the ASM with a pfile:
+Run the following command to start the ASM with a PFILE:
 
     root@testdb01:/oracle/11.2.0/grid/bin# su - grid
     -bash-4.1$sqlplus / as sysasm
@@ -144,19 +144,19 @@ Run the following command to start the ASM with a pfile:
     ORA-15063: ASM discovered an insufficient number of disks for diskgroup
     "OCRDATA"
 
-#### Step 7: Create a diskgroup
+#### Step 7: Create a disk group
 
-Run the following command to create a diskgroup:
+Run the following command to create a disk group:
 
     SQL> create diskgroup OCRDATA external redundancy disk
     '/dev/rdsk/c0t60002AC0000000000000001900008265d0s0' attribute 'COMPATIBLE.ASM'='11.2';
     Diskgroup created
 
 
-#### Step 8: Create a Spfile and restart the ASM
+#### Step 8: Create a SPFILE and restart the ASM
 
-Run the following commands to create a Spfile from the Pfile of ASM and to
-restart the ASM to read the spfile from the voting disk:
+Run the following commands to create a SPFILE from the PFILE of ASM and to
+restart the ASM to read the SPFILE from the voting disk:
 
     SQL> create spfile='+OCRDATA' from pfile='/home/grid/initASM1.ora';
     File created.
@@ -204,9 +204,9 @@ verify that all the cluster services are online:
     root@testdb01:/oracle/11.2.0/grid/bin# ./crsctl stop crs -f
     root@testdb01:/oracle/11.2.0/grid/bin# ./crsctl start crs
 
-#### Step 12: Crosscheck the OCR disk status
+#### Step 12: Cross-check the OCR disk status
 
-Run the following command to crosscheck the OCR disk status:
+Run the following command to cross-check the OCR disk status:
 
     root@testdb01:/oracle/11.2.0/grid/bin# ./ocrcheck
     Status of Oracle Cluster Registry is as follows :
@@ -293,8 +293,8 @@ environment. By using these steps, you can overcome the voting disk missing
 backup issue by recovering a backup from the OCR. If the disk recovery succeeds,
 you can reuse it.
 
-Remember that OCR auto backup must be enabled for this solution to work. The OCR
-backup is always stored at the default location or the location you specified.
+Remember that you must enable OCR automatic backup for this solution to work. OCR
+always stores the backup at the default location or the location you specified.
 
 Use the Feedback tab to make any comments or ask questions.
 
