@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Recover the Oracle voting disk when its backup is missing"
-date: 2019-11-20 00:01
+date: 2019-11-27 00:01
 comments: true
-author: Mayank Kumar
+author: Ravi Kant Sharma
 published: true
 authorIsRacker: true
 categories:
@@ -33,10 +33,10 @@ eviction from the cluster group. The voting disk plays a key role by ensuring
 that all nodes mark their availability. The Cluster Synchronization Services
 daemon (CSSd) performs all the operations for the voting disk in Clusterware.
 
-The OCR serves as the central repository for Cluster Ready Services (CRS)&mdash;storing
-the metadata, configuration, and state information for all cluster
-resources defined in Clusterware. The OCR always retains the latest three backup
-copies of the OCR, which are four hours old, one day old, and one week old.
+The OCR serves as the central repository for Cluster Ready Services
+(CRS)&mdash;storing the metadata, configuration, and state information for all
+cluster resources defined in Clusterware. The OCR always retains the latest three
+backup copies of the OCR, which are four hours old, one day old, and one week old.
 
 ### What is stored in OCR?
 
@@ -86,8 +86,8 @@ Let's fix the following error:
     retrying discovery in 15 seconds; Details at (:CSSNM00070:)
     in /oracle/11.2.0/grid/log/testdb01/cssd/ocssd.log
 
-We need to access the OCR and voting disk to bring up the cluster. But because
-these resources are not accessible, the cluster remains down.
+We need to access the OCR and voting disk to bring up the cluster. However,
+because these resources are not accessible, the cluster remains down.
 
 ### Restore the voting disk
 
