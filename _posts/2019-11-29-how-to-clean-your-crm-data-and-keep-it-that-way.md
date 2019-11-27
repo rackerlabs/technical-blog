@@ -23,116 +23,57 @@ customer requesting a quote from your company and receiving it.
 
 ![]({% asset_path 2019-11-21-solve-five-common-quoting-proces-issues-with-cpq/Picture1.png %})
 
-### Introduction
 
-Issues in your quoting process&mdash;from pricing errors to lengthy approvals&mdash;can
-prevent your team from meeting customer expectations, and contribute to a
-lack of morale among your staff.
+Many people think a customer relationship management (CRM) platform is just for the sales team, but your CRM actually contains information about the entire customer lifecycle that is useful to all departments. And when your CRM is integrated with other platforms like your marketing automation software, that creates even more valuable ways to use data across teams.
 
-In our experience helping businesses improve their quote-to-cash system, we’ve
-seen these roadblocks countless times. In our well-established Configure, Price,
-Quote (CPQ) practice at Rackspace, we’ve been able to help guide businesses in
-implementing the right tools and processes to tackle these common pain points
-and prevent them from reappearing down the line.
+When the data stored in your CRM is disorganized, contains duplicates, or is incomplete, everyone loses. The teams trying to use this data — such as sales, marketing, or customer service — will be frustrated and may lose opportunities to close deals, retain customers, and deliver excellent service. Ultimately, your bottom line may suffer from a disorganized CRM in the form of missed customer conversions, company reputation, and opportunities for revenue.
 
-One of the best tools you can invest in to alleviate this is the Salesforce&reg;
-CPQ application. Salesforce CPQ acts as a guardrail
-for your sales process, helping your team quickly provide accurate pricing
-across a range of scenarios. It facilitates your quoting process from the first
-interaction with a client right up to the final calculations&mdash;and it doesn’t
-end there, thanks to streamlined review and follow-up capabilities.
+So, how do you keep your CRM data clean as a whistle? Start by undertaking a few practices to get your CRM organized and pristine — and once your data is clean, implement processes for keeping it that way. As a Platinum Salesforce consulting partner, RelationEdge has helped thousands of businesses implement, use, and maintain their CRM systems, and we’re experts in CRM data management. Read on for some of our best strategies when it comes to cleaning and maintaining your CRM data for the long haul.
 
-This post covers five of the most rampant quoting process issues we’ve seen,
-some solutions, and a look at how CPQ can help mitigate these problems.
+### Delete or merge duplicate records
 
-### 1. Outdated information
+The first step to cleaning up your CRM database is deleting duplicates. Records get duplicated for many reasons: multiple team members enter the same data on different dates, a data import doesn’t account for existing records, or a customer submits data more than once. However they arrive in the system, duplicates should be removed or merged with their existing counterparts.
 
-Keeping your organization’s information up-to-date can be difficult, especially
-if you’re in the midst of restructuring or
-(have many systems to keep track of)[https://martechseries.com/mts-insights/guest-authors/dont-let-data-silos-downfall/]
-across the company.
+If you have thousands of records, the idea of manually identifying and removing duplicates is daunting and unrealistic. 
 
-If you’re using spreadsheets and documents to manage your terms and conditions, price
-lists, and other important information, the chances are high that older versions
-of these documents are being circulated and used by both team members and clients.
+Here are some tactics to consider:
 
-Salesforce and linked cloud-based applications such as CPQ can help centralize
-and maintain data. CPQ also acts as your company’s universal access point for
-that data. This centralization ensures that every team member has access to the
-most current documents and information.
+    **Run a duplicate check app.**  Some programs, including Salesforce, have free apps that check for duplicates. 
+    **Use a case merge app like Case Merge Premium**, which is a program that goes one step further by not just looking for duplicates but automatically merging them en masse. 
+    **Going forward, block duplicates from the start.** Once you’ve cleaned up existing duplicates, find out if your CRM has a native feature to block duplicate cases at the point of entry. If so, you can stop future duplicates immediately by alerting users when they attempt to enter one. 
 
-### 2. Pricing (and other) errors
+### Limit the number of administrative users
 
-One of the major side effects of having decentralized data across multiple
-systems is errors such as price discrepancies, data entry mistakes, and other
-blunders that make your quoting process feel more like a hurdle and less like a
-bridge to bringing on new customers.
+As part of your effort to reduce and prevent duplicate records, consider limiting the number of team members who have full administrative privileges within the system. CIO recommends keeping the number of administrators with full system access to six — of course, this is a guideline and the right number for you may depend on the size of your company and nature of your business.
 
-Common issues might be caused by human errors, such as forgetting to update an
-information field (like the company’s new name) that causes confusion for the
-customer, or miscalculations, such as not realizing a customer is eligible for
-free shipping on a particular order.
+Keeping the number of admins under control helps you maintain your processes and could keep an inexperienced team member from accidentally deactivating an important duplicate checker. 
 
-These errors can result in over or under-charging your customers, filing
-inaccurate information, or extra time spent redoing a large quote. Ultimately,
-quoting errors cause your team and company to appear disjointed or, worse,
-unprofessional.
+### Create standard practices around data entry
 
-While it might not be possible to eliminate errors completely, you can take
-steps to make these mistakes less likely. Doing so goes a long way towards helping
-you to reach your targets and keep your customers happy.
+Another way data becomes problematic is when vital information is missing or inconsistently recorded. By creating standard processes for CRM record entry, you can keep your software a lot more streamlined moving forward. And the more detailed the records, the quicker your duplicate checker will detect a case of duplication. 
 
-### 3. Lengthy review process
+Analyze your data. Are there clear, consistent rules and practices around entering the following information points?
 
-Tired of endless emails and long games of phone tag to get your quote approved?
-You are not alone&mdash;going through the necessary reviews and approvals is
-one of the most frequently identified pain points of the quoting process. For
-companies that still rely on email for communications, this is especially true.
+    - **Name:** Do you include only formal names, or are nicknames acceptable? Are names capitalized?
+    - **Address:** How are physical addresses abbreviated? If a user gets a new address, do you delete the old one or keep it in a secondary field?
+    - **Households:** Should users link entries for people who live at the same address?
+    - **Job titles:** Are titles written out or abbreviated? A simple difference between “Doctor” and “Dr.” could create an undetected duplicate record.
+    - **Notes:** How should users work with the notes field? For example, if your company will only use this field for certain information that doesn’t fit into any other field, like a customer’s preferred name, make sure everyone on the team knows that.
 
-Salesforce CPQ enables you to generate documents, track changes, and integrate
-revisions into the quote system so that the final review process is more
-efficient and easier to follow up on. This process empowers your team and the customer
-to obtain the information and changes they need in a timely manner.
+Once you’ve defined what your rules and standard practices will be, be sure to document your guidelines and share that information with all users who will have access to the CRM system.
 
-### 4. Missed upsells
+### Set up a maintenance schedule
 
-While your sales representatives are busy following up on approvals or correcting errors
-in a miscalculated quote, they are losing time they could have spent maximizing
-the impact of their sales. When sales representatives are spread too thin or required to
-spend too much time on manual tasks, they miss out on opportunities to upsell
-your current customer base.
+With duplicates addressed, admins carefully selected, and an entry protocol in place, you’re now in good shape. But as with most things, CRM clean-up is not a “set it and forget it” job. 
 
-Salesforce CPQ helps manage repetitive tasks and removes some of the manual
-processes, freeing up time for salespeople to focus on searching for ideal
-opportunities to upsell and cross-sell existing customers. CPQ also manages your
-quotes and contracts in one centralized system, helping to further highlight
-compatibilities and upsell opportunities along the path to generating a quote.
+Maintenance includes everything from a monthly review of flagged duplicates to quarterly checks for available CRM software updates. Set up a regular schedule for cleaning up bad records or checking for missing data, and consider setting up automated reminders or task assignments so that nothing falls through the cracks. 
 
-### 5. Excessive discounting
+It’s also worth mentioning that you should set up a process to inventory old, aging, and unengaged records in your CRM system. Use CRM reporting functionality to pull a report of your oldest records and consider displaying that on responsible team members’ dashboards or home screens, so that they remember to manage those records according to your company policy.
 
-Discounts can be an effective way to motivate and reward customers that use and
-bundle your products. However, when you give too many customers overly generous
-markdowns or inaccurate discounts, your profits take a hit.
+Keeping CRM data clean is everyone’s responsibility, and the benefits of maintaining solid CRM data include a better understanding of your customers and an ability to effectively communicate with them. 
 
-Excessive discounting is common when a sales team doesn’t have an automated
-system to perform calculations based on the customer’s profile, or when they
-don’t have clearly enforced rules in place to cap discounts.
+If you need help getting started with a CRM data maintenance strategy, RelationEdge is a full-service Salesforce Platinum Consulting Partner with extensive experience helping businesses like yours succeed with technology solutions. We can help you clean up your data and create a process to keep it that way going forward. Contact us today to learn more. 
 
-By using CPQ to set limits on your discount policy and to require different degrees
-of approval for discounts, you help ensure that your customers get a fair price
-while your company continues to make money.
-
-### Let’s remodel your quoting process
-
-Ready to smooth out your quoting process with CPQ? As certified CPQ specialists,
-the team at Rackspace is uniquely equipped to help you navigate common quoting
-process issues and get the most out of your Salesforce platform. Partnering with
-an implementation expert like Rackspace ensures that your journey is smooth, and
-adoption across your company is high.
-
-We’ve worked with a wide range of clients with diverse configurations and needs.
-So we’ve got a library of solutions to apply to just about any quoting
-process issues you encounter.
 
 ### Optimize your environment with expert administration, management, and configuration
 
