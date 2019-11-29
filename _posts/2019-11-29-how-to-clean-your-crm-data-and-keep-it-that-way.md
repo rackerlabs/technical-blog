@@ -34,9 +34,9 @@ If you have thousands of records, the idea of manually identifying and removing 
 
 Here are some tactics to help with this process:
 
-    **Use a duplicate-check application.** Some programs, including [Salesforce](https://www.salesforce.com/blog/2015/02/clean-up-your-data-expert-way-data-management-apps-apps-admins.html), have free applications that check for duplicates. 
-    **Use a case merge application like [Case Merge Premium](https://appexchange.salesforce.com/listingDetail?listingId=a0N30000003IAR3EAO).** This program not only looks for duplicates but also automatically merges all of them at once. 
-    **Block duplicates at the point of entry.** After you clean up existing duplicates, find out if your CRM has a native feature to block duplicate cases at the point of entry. If so, you can stop future duplicates immediately by alerting users when they attempt to create one. 
+  - **Use a duplicate-check application.** Some programs, including [Salesforce](https://www.salesforce.com/blog/2015/02/clean-up-your-data-expert-way-data-management-apps-apps-admins.html), have free applications that check for duplicates. 
+  - **Use a case merge application like [Case Merge Premium](https://appexchange.salesforce.com/listingDetail?listingId=a0N30000003IAR3EAO).** This program not only looks for duplicates but also automatically merges all of them at once. 
+  - **Block duplicates at the point of entry.** After you clean up existing duplicates, find out if your CRM has a native feature to block duplicate cases at the point of entry. If so, you can stop future duplicates immediately by alerting users when they attempt to create one. 
 
 ### Limit the number of administrative users
 
@@ -50,11 +50,11 @@ Data can also become problematic when vital information is missing or inconsiste
 
 Analyze your data. Are there clear, consistent rules and practices around entering the following information points?
 
-    - **Name:** Do you include only formal names or are nicknames acceptable? Are names capitalized?
-    - **Address:** How are physical addresses abbreviated? If a user gets a new address, do you delete the old one or keep it in a secondary field?
-    - **Households:** Should users link entries for people who live at the same address?
-    - **Job titles:** Are titles written out or abbreviated? A simple difference between “Doctor” and “Dr.” can create an undetected duplicate record.
-    - **Notes:** How should users work with the notes field? For example, if your company only uses this field for information that does not fit anywhere else&mdash;like a customer’s preferred name&mdash;make sure everyone on the team is aware.
+  - **Name:** Do you include only formal names or are nicknames acceptable? Are names capitalized?
+  - **Address:** How are physical addresses abbreviated? If a user gets a new address, do you delete the old one or keep it in a secondary field?
+  - **Households:** Should users link entries for people who live at the same address?
+  - **Job titles:** Are titles written out or abbreviated? A simple difference between “Doctor” and “Dr.” can create an undetected duplicate record.
+  - **Notes:** How should users work with the notes field? For example, if your company only uses this field for information that does not fit anywhere else&mdash;like a customer’s preferred name&mdash;make sure everyone on the team is aware.
 
 After you define your rules and standard practices, document your guidelines, and share that information with all users who have access to the CRM system.
 
