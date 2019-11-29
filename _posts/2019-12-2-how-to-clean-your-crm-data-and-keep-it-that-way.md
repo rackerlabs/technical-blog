@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to clean your CRM data and keep it that way"
-date: 2019-11-29 00:00
+date: 2019-12-2 00:00
 comments: true
 author: Jordan Friedman
 published: true
