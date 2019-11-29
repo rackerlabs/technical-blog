@@ -20,7 +20,7 @@ We know that change is never easy&mdash;and if your company has been using Sales
 
 ![]({% asset_path 2019-12-2-nervous-about-converting-from-classic-to-lightning-learn-from-this-companys-success/picture1.png %})
 
-At Rackspace, we specialize in helping our clients succeed with the right technology solutions, and we have helped many businesses make the change from Classic to Lightning. We understand your trepidation, and it is true that this process will take planning and conscious effort to be successful&mdash;but that is exactly what we are here to help you with. 
+At Rackspace, we specialize in helping our clients succeed with the right technology solutions; we have helped many businesses make the change from Classic to Lightning. We understand your trepidation, and it is true that this process will take planning and conscious effort to be successful&mdash;but that is exactly what we are here to help you with. 
 
 We recently worked with [The Stow Company](http://www.thestowcompany.com), to help them fully prepare for their Lightning conversion and avoid any interruptions to the level of service they were able to provide to their customers. The Stow Company was extremely satisfied with their experience working with Rackspace both during and after their Lightning implementation. 
 
@@ -40,15 +40,15 @@ The company’s first order of business was running the Lightning Readiness Repo
 
 ### Preparing for the change with end-user training
 
-The Stow Company began to train their end-users to prepare for the upcoming change. Mike initially introduced Lightning to his teams through instructor-led sessions several months in advance of the switch, to give users a preview of what was coming. Later, Rackspace engineers were able to completely take over the training and workflow walkthroughs to prepare users for Lightning. 
+The Stow Company began training their end-users to prepare for the upcoming change. Mike initially introduced Lightning to his teams through instructor-led sessions several months in advance of the switch, to give users a preview of what was coming. Later, Rackspace engineers were able to completely take over the training and workflow walkthroughs to prepare users for Lightning. 
 
 The Stow Company also identified a test group of internal users who could not only walk through the transition process with their teammates but would advocate within the company to encourage user adoption. 
 
-Mike feels strongly that the most important element of a technology conversion is ensuring your users are equipped with what they need to be effective when the system goes live. The Stow Company’s biggest concern was that users’ workflows would not be interrupted when Lightning went live and that customers would still receive the same responsive service they were used to. While this took some extra time and preparation on the front-end, the team knew it was worth it to answer everyone’s questions and make sure all users were on the same page before launch.
+Mike feels strongly that the most important element of a technology conversion is ensuring your users are equipped with what they need to be effective when the system goes live. The Stow Company’s biggest concern was that users’ workflows would not be interrupted when Lightning went live and that customers would still receive the same responsive service to which they were accustomed. While this took some extra time and preparation on the front-end, the team knew it was worth it to answer everyone’s questions and make sure all users were on the same page before launch.
 
 ### Life after Lightning
 
-All of the time spent preparing and in training sessions ultimately paid off; The Stow Company was able to successfully transition to Lightning with no interruption to customer service or normal business operations, and they are very happy with the results. There were minor speedbumps related to third-party integrations that needed to be adjusted, but they were handled smoothly and efficiently. Overall, the project went as expected. 
+All of the time spent preparing and in training sessions ultimately paid off; The Stow Company was able to successfully transition to Lightning with no interruption to customer service or normal business operations, and they are very happy with the results. There were minor speedbumps related to third-party integrations that needed to be adjusted, but these were handled smoothly and efficiently. Overall, the project went as expected. 
 
 Today, end-users at The Stow Company enjoy a cleaner UI, as well as increased functionality with reporting and opportunity features that were not available in Classic. Switching to Lightning has established a foundation on which the company can build and explore the new, rich features within their Salesforce platform. 
 
