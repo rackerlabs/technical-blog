@@ -14,13 +14,13 @@ ogTitle: "Nervous about converting from Classic to Lightning? Learn From this co
 ogDescription: "We recently worked with the Stow Company, to ensure they were fully prepared for their Lightning conversion and that there were no interruptions to the level of customer service they were able to provide. "
 ---
 
-We know that change is never easy&mdash;and if your company has been using Salesforce&reg; Classic for some time, you may be nervous about switching to the new-and-improved Lightning. Even if you have heard about all [the benefits of converting](https://developer.rackspace.com/blog/five-benefits-of-moving-to-salesforce-lightning/) (access to new functionality, increased productivity, and much more) you might still be on the fence. 
+We know that change is never easy&mdash;and if your company has been using Salesforce&reg; Classic for some time, you might be nervous about switching to the new-and-improved Lightning. Even if you have heard about all [the benefits of converting](https://developer.rackspace.com/blog/five-benefits-of-moving-to-salesforce-lightning/) (access to new functionality, increased productivity, and much more) you might still be on the fence. 
 
 <!-- more -->
 
 ![]({% asset_path 2019-12-2-nervous-about-converting-from-classic-to-lightning-learn-from-this-companys-success/picture1.png %})
 
-At Rackspace, we specialize in helping our clients succeed with the right technology solutions; we have helped many businesses make the change from Classic to Lightning. We understand your trepidation, and it is true that this process will take planning and conscious effort to be successful&mdash;but that is exactly what we are here to help you with. 
+At Rackspace, we specialize in helping our clients succeed with the right technology solutions; we have helped many businesses make the change from Classic to Lightning. We understand your trepidation, and it is true that this process will take planning and conscious effort to be successful&mdash;but that is what we are here to help you with. 
 
 We recently worked with [The Stow Company](http://www.thestowcompany.com), to help them fully prepare for their Lightning conversion and avoid any interruptions to the level of service they were able to provide to their customers. The Stow Company was extremely satisfied with their experience working with Rackspace both during and after their Lightning implementation. 
 
@@ -28,11 +28,11 @@ Now that they have fully transitioned to the platform, we asked The Stow Company
 
 ### Why Lightning, why now?
 
-**Note:** You should be prepared to activate Lightning for your organization within 3 days of January 7, 2020.
+**Note:** You should prepare to activate Lightning for your organization within 3 days of January 7, 2020.
 
 The Stow Company knew the clock was ticking for their Classic to Lightning conversion. They first learned about Lightning from their Salesforce reps and then again at Dreamforce in 2018. When the team attended Connections 2019 in Chicago, they could not help but notice the number of sessions that discussed transitioning from Classic to Lightning.
 
-After Connections, the team decided that it was best to be proactive and get ahead of the deadline. “We wanted to execute well, without our hands being held to the fire,” explains Mike Wolf, Director of Marketing at The Stow Company. 
+After Connections, the team decided to be proactive and get ahead of the deadline. “We wanted to execute well, without our hands being held to the fire,” explains Mike Wolf, Director of Marketing at The Stow Company. 
 
 The company’s first order of business was running the Lightning Readiness Report in Salesforce. Mike admits that reviewing the results was a pivotal moment for the team&mdash;they had no idea how to interpret what they were seeing and quickly realized they needed help from someone who could read this new language. They also acknowledged they did not have the internal bandwidth to handle the transition project by themselves.
 
