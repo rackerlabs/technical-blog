@@ -9,19 +9,20 @@ authorIsRacker: true
 categories:
     - Salesforce
 metaTitle: "Everything you need to know about Salesforce Audience formerly Salesforce DMP"
-metaDescription: ""
+metaDescription: "DMPs like Salesforce&reg; Audience Studio (formerly Salesforce DMP) are the backbone of data-driven marketing efforts."
 ogTitle: "Everything you need to know about Salesforce Audience formerly Salesforce DMP"
-ogDescription: ""
+ogDescription: "DMPs like Salesforce&reg; Audience Studio (formerly Salesforce DMP) are the backbone of data-driven marketing efforts."
 ---
 
 Digital advertising is officially bigger than traditional advertising, which means if it has not already started consuming a larger share of your ad spend, it soon will. This also means having technology that effectively pulls in and analyzes your customer data from digital platforms is essential to your advertising success. 
 
 Enter: Data management platforms (DMPs). 
 
+![]({% asset_path 2019-11-21-solve-five-common-quoting-proces-issues-with-cpq/Picture1.png %})
+
 DMPs like Salesforce&reg; Audience Studio (formerly Salesforce DMP) are the backbone of data-driven marketing efforts. A DMP collects, organizes, and activates first, second, and third-party audience data from any source&mdash;online, offline, mobile, and beyond. These platforms allow your company to gain unique insights into your customers, as well as effectively segment and reach your audience. 
 
 As a Solution Architect at Rackspace, I help clients install and learn to use tools like Audience Studio every day. This blog introduces Audience Studio and explains how you can use it to maximize your digital advertising efforts.
-
 <!-- more -->
 
 ### How does Salesforce Audience Studio work?
