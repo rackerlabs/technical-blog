@@ -62,7 +62,7 @@ After you define your rules and standard practices, document your guidelines, an
 
 After addressing duplicates, carefully selecting administators, and putting an entry protocol in place, you are now in good shape. But as with most things, CRM clean-up is not a one-time job. 
 
-You should perform regular [maintenance, which includes](https://www.cio.com/article/3156518/13-tips-for-managing-the-data-in-salesforce-com.html) a monthly review of flagged duplicates and quarterly checks for available CRM software updates. Set up a regular schedule for handling bad records or checking for missing data. Consider creating automated reminders or task assignments to prevent anything from falling through the cracks. 
+You should perform [regular maintenance, which includes](https://www.cio.com/article/3156518/13-tips-for-managing-the-data-in-salesforce-com.html) a monthly review of flagged duplicates and quarterly checks for available CRM software updates. Set up a regular schedule for handling bad records or checking for missing data. Consider creating automated reminders or task assignments to prevent anything from falling through the cracks. 
 
 You should also implement a process for inventorying old, aging, and unengaged records in your CRM system. Use the CRM reporting functionality to view a report of your oldest records. Consider displaying this report on responsible team members’ dashboards or home screens, so that they remember to manage those records according to your company policy.
 
