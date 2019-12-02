@@ -23,21 +23,21 @@ Real Application Clusters (RAC) database?
 ### Introduction
 
 You can use `rconfig`, a non-interactive command-line utility, to convert a
-single-instance database to a Real Application Clusters (RAC) database. The
+single-instance database to a RAC database. The
 utility reads the values provided under the **ConvertToRAC.xml** file.
 
 The **$ORACLE_HOME/assistants/rconfig/sampleXMLs** directory has two templates,
 **ConvertToRAC\_AdminManaged.xml** and **ConvertToRAC\_PolicyManaged.xml**,
 which you can use to convert a single-instance database to RAC admin or
-policy-managed database respectively. This blog explores the  admin-managed RAC
-conversion, although the same approach is applicable to a policy-managed
+policy-managed database, respectively. This blog explores the  admin-managed RAC
+conversion, although the same approach applies to a policy-managed
 database.
 
 The following image shows a sample **ConvertToRAC_AdminManaged.xml** file:
 
 ![]({% asset_path 2019-12-03-convert-a-standalone-database-to-oracle-rac-by-using-rconfig/Picture1.png %})
 
-### Prerequisites of using rconfig:
+### Prerequisites for using rconfig
 
 Before you use `rconfig`, consider the following prerequisites:
 
@@ -47,10 +47,10 @@ Before you use `rconfig`, consider the following prerequisites:
 -	Make sure that shared storage, either Oracle Cluster File System or Automatic
    Storage Management (ASM), is available and accessible from all the nodes.
 -	Verify that the standalone database and RAC are the same database version.
--	You need active ASM instance across the nodes and the database running on
+-	You need an active ASM instance across the nodes and the database running on
    one of the local nodes.
 
-### Steps for conversion to RAC:
+### Steps for conversion to RAC
 
 Use the following steps to convert your standalone database to RAC.
 
@@ -64,12 +64,12 @@ The `convert verify` option in **ConvertToRAC.xml** has three options:
 
 -	**Convert verify="YES"**: `rconfig` performs prerequisite checks followed by
    RAC conversion.
--	**Convert verify="NO"**: `rconfig` performs RAC conversion without
+-	**Convert verify="NO"**: `rconfig` performs RAC conversion without the
    prerequisite checks.
--	**Convert verify="ONLY"**: `rconfig` performs only prerequisite checks and
+-	**Convert verify="ONLY"**: `rconfig` performs only the prerequisite checks and
    takes no other action.
 
-#### Step 2: Perform prerequisite checks
+#### Step 2: Perform the prerequisite checks
 
 Run the following command to run the `convert_verify="ONLY”` option to fix any
 errors:
@@ -96,7 +96,7 @@ Example:
       </ConvertToRAC>
     </RConfig>
 
-#### Step 3: Execute rconfig for RAC conversion.
+#### Step 3: Execute rconfig for RAC conversion
 
 When you run the following commands to execute `rconfig` to convert the
 database, make sure you update the parameter to `convert_verify="YES"`.
@@ -159,7 +159,7 @@ Example:
 Run the following commands to verify the log, check the RAC database status,
 and check the datafile status.
 
-**Note:** If standalone database was non-ASM, it is now ASM.
+**Note:** If the standalone database was non-ASM, it is now ASM.
 
     $ srvctl status database -d racdb
     Check by login to sqlplus
@@ -168,7 +168,7 @@ and check the datafile status.
 
 #### Step 5: Modify tnsentry
 
-Modify `tnsentry` on the local node with scan-name and copy it to all other
+Modify `tnsentry` on the local node with `scan-name` and copy it to all other
 nodes.
 
 ### Conclusion
@@ -176,7 +176,7 @@ nodes.
 `rconfig` performs automated RAC conversions and saves the time and effort of
 the multiple manual configuration steps. It also takes an `RMAN` backup in case
 a non-ASM to ASM conversion is required, which might increase the downtime for
-large databases. You can tune this by allocating multiple I/O channels for
+large databases. You can tune this by allocating multiple I/O channels for the
 backup. If the standalone and target RAC database are on ASM, you can use
 `rconfig` as a quick solution for the RAC conversion.
 
