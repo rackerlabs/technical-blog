@@ -6,6 +6,7 @@ comments: true
 author: Karisa Booth
 published: true
 authorIsRacker: true
+authorAvatar: 'https://en.gravatar.com/karisaboothgmailcom'
 bio: "Karisa is an experienced Cloud Architect with a demonstrated history of working in the information technology and services industry. She is skilled in working with a variety of verticals including Nonprofit Organizations, Higher Education, Retail, and HLS; providing Technical Evaluations, Program Execution, Customer Relationship Management (CRM), Event Management, and Marketing/Tech. Karisa is passionate about cloud technology and marketing, and combining these to create unique solutions for clients."
 categories:
     - Salesforce
