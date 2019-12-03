@@ -6,6 +6,7 @@ comments: true
 author: Nikki Carter
 published: true
 authorIsRacker: true
+authorAvator: "http:\/\/1.gravatar.com\/avatar\/3177b82ffcbe59f1f3e6e155d3c94e7a"
 categories:
   - Salesforce
 metaTitle: "Nervous about converting from Classic to Lightning? Learn from this company’s success"
@@ -63,7 +64,7 @@ Ready to learn more about what it takes to convert from Classic to Lightning? Ch
 
 ### Optimize your environment with expert administration, management, and configuration
 
-[Rackspace's Application services](https://www.rackspace.com/application-management/managed-services)
+[Rackspace's Application services](https://www.rackspace.com/application-services/professional-services)
 **(RAS)** experts provide the following [professional](https://www.rackspace.com/application-management/professional-services)
 and
 [managed services](https://www.rackspace.com/application-management/managed-services) across
@@ -80,7 +81,7 @@ We deliver:
 
 - **Unbiased expertise**: We simplify and guide your modernization journey,
 focusing on the capabilities that deliver immediate value.
-- **Fanatical Experience**&trade;: We combine a *process first, technology second*
+- **Fanatical Experience**&trade;: We combine a Process first. Technology Second.&reg;
 approach with dedicated technical support to provide comprehensive solutions.
 - **Unrivaled portfolio**: We apply extensive cloud experience to help you
 choose and deploy the right technology on the right cloud.
