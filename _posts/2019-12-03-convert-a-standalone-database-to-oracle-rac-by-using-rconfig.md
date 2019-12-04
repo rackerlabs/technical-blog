@@ -6,6 +6,7 @@ comments: true
 author: Vikrant Anand
 published: true
 authorIsRacker: true
+authorAvatar: 'https://s.gravatar.com/avatar/98991c72835ea03135094fb2a1b6e3c0?s=80'
 categories:
     - Oracle
     - database
