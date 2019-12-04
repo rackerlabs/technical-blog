@@ -1,0 +1,62 @@
+Adam Plummer
+https://en.gravatar.com/aplummerre
+authorAvatar: https://s.gravatar.com/avatar/c2945c57e1812f8b455101e1a2e49cac?s=80
+bio: n/a
+
+Celia Heywood
+https://en.gravatar.com/cheywoodre
+authorAvatar: http://0.gravatar.com/avatar/76b6d0b3a7daec2a8e3e25f17ff7ead7
+Bio: n/a
+
+Emily Belke
+https://en.gravatar.com/ebelkere
+
+
+Emilie Hersh
+https://en.gravatar.com/ehershre
+
+
+Chris Whitehead
+https://en.gravatar.com/cwhiteheadre
+
+Denise Carbone
+https://en.gravatar.com/dcarbonere
+
+
+Janice Krpan
+https://en.gravatar.com/JKrpanre
+
+
+Jason Gates
+https://en.gravatar.com/jgatesre
+
+
+Jeff Wilensky
+https://en.gravatar.com/jwilenskyre
+
+Jordan Friedman
+https://en.gravatar.com/JFriedmanRE
+
+Karisa Booth
+https://en.gravatar.com/kboothre
+authorAvatar: 'http://0.gravatar.com/avatar/c5a8a633797f4b8c85b5b5bad605cd18'
+bio: "Karisa is an experienced Cloud Architect with a demonstrated history of working in the information technology and services industry. She is skilled in working with a variety of verticals including Nonprofit Organizations, Higher Education, Retail, and HLS; providing Technical Evaluations, Program Execution, Customer Relationship Management (CRM), Event Management, and Marketing/Tech. Karisa is passionate about cloud technology and marketing, and combining these to create unique solutions for clients."
+
+Lauren Piva
+https://en.gravatar.com/lpivare
+
+Matt Stoyka
+https://en.gravatar.com/mstoykare
+
+Nikki Carter
+https://en.gravatar.com/ncarterre
+authorAvator: 'https://1.gravatar.com/avatar/3177b82ffcbe59f1f3e6e155d3c94e7a'
+bio: 'Nikki Carter is a Content Strategist on the Digital Marketing Services Team at RelationEdge. She has extensive experience creating and editing content and marketing assets for a variety of verticals, including healthcare, technology, and wellness. Nikki is passionate about freedom, telling the truth, and supporting other women/non-binary folks of color.'
+
+
+Rob Hawthorne 
+https://en.gravatar.com/rhawthornre
+
+
+Sarah Olivier
+https://en.gravatar.com/solivierre
