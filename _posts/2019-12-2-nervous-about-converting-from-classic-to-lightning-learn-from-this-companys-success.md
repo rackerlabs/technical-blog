@@ -6,7 +6,7 @@ comments: true
 author: Nikki Carter
 published: true
 authorIsRacker: true
-authorAvator: "http://1.gravatar.com/avatar/3177b82ffcbe59f1f3e6e155d3c94e7a" 
+authorAvator: "https://s.gravatar.com/avatar/fbd0d57fb4252fceaf4bb640bca4b0a4?s=80" 
 categories:
   - Salesforce
 metaTitle: "Nervous about converting from Classic to Lightning? Learn from this company’s success"
