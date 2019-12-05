@@ -65,7 +65,7 @@ nova boot --image=7c526505-bc72-4e3c-8d9a-e700c0acf299 --flavor=performance1-2 m
 
 #### 4. Select Ubuntu from the list of Distros
 
-{% img custom-images-via-boot-dot-rackspace-dot-com-training-wheels-included/distro.png %}
+{% img 2014-05-28-custom-images-via-boot-dot-rackspace-dot-com-training-wheels-included/distro.png %}
 
 #### 5. Select 12.04 from the list of Versions
 
