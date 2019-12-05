@@ -39,7 +39,7 @@ from the VMs, the network path out of the VMs has changed. Using Neutron securit
 groups causes the nova-compute service to build the path from the VM to the OVS
 process as shown in the following diagram:
 
-{% img center software-defined-networks-in-the-havana-release-of-openstack-part-2/computenode1.png 744 504 %}
+{% img center 2014-02-10-software-defined-networks-in-the-havana-release-of-openstack-part-2/computenode1.png 744 504 %}
 
 Looking at VM1, when it is created the VM's eth0 interface is connected to a
 Linux tap device tapxxx which is plugged into a newly created Linux bridge,
