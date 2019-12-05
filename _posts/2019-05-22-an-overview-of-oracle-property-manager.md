@@ -104,7 +104,7 @@ There are specifically-designed forms to capture the necessary information about
 the property to be leased, such as details, contacts, locations, insurance, and
 so on. The following image shows a lease details form:
 
-![Figure 3 - Lease details]({% asset_path 2019-05-22-an-overview-of-oracle-property-manager/Picture3.png %})
+![Figure 3 - Lease details]({% asset_path 2019-05-22-an-overview-of-oracle-property-manager/Picture4.png %})
 
 The Oracle Property Manager enables you to create the lease according to your business
 requirements. You can create a lease for the whole property, for a single floor,

@@ -40,7 +40,7 @@ Therefore, I recommend that you too use Ubuntu 12.04.
 
 ### How-to steps
 
-__1. Boot the boot.rackspace.com ISO__
+#### 1. Boot the boot.rackspace.com ISO
 
 This command boots a Cloud Server with a small 1 MB iPXE based ISO. In turn, it
 sets up the server’s assigned networking within the virtual BIOS and
@@ -51,53 +51,58 @@ boot.rackspace.com. (Note: Example image ID updated on 9/14/2018.)
 nova boot --image=7c526505-bc72-4e3c-8d9a-e700c0acf299 --flavor=performance1-2 my_ubuntu_1204
 ```
 
-__2. Connect to the boot.rackspace.com VM via the Console__
+#### 2. Connect to the boot.rackspace.com VM via the Console
 
 * Log into [mycloud.rackspace.com](http://mycloud.rackspace.com)
 * Once the VM is **Active**, click on the **Actions** available in the **Server
   Details**, and select **Connect Via Console**.
 
-{% img custom-images-via-boot-dot-rackspace-dot-com-training-wheels-included/connect_via_console.png %}
+{% img 2014-05-28-custom-images-via-boot-dot-rackspace-dot-com-training-wheels-included/connect_via_console.png %}
 
-__2. Select Linux Operating Systems from the Boot Menu__
-{% img custom-images-via-boot-dot-rackspace-dot-com-training-wheels-included/menu.png %}
+#### 3. Select Linux Operating Systems from the Boot Menu
 
-__3. Select Ubuntu from the list of Distros__
+{% img 2014-05-28-custom-images-via-boot-dot-rackspace-dot-com-training-wheels-included/menu.png %}
+
+#### 4. Select Ubuntu from the list of Distros
+
 {% img custom-images-via-boot-dot-rackspace-dot-com-training-wheels-included/distro.png %}
 
-__4. Select 12.04 from the list of Versions__
-{% img custom-images-via-boot-dot-rackspace-dot-com-training-wheels-included/version.png %}
+#### 5. Select 12.04 from the list of Versions
 
-__5. Select ubuntu install from the the Boot Paramaters__
-{% img custom-images-via-boot-dot-rackspace-dot-com-training-wheels-included/params.png %}
+{% img 2014-05-28-custom-images-via-boot-dot-rackspace-dot-com-training-wheels-included/version.png %}
 
-__6. Proceed through the install & setup accordingly__
+#### 6. Select ubuntu install from the the Boot Paramaters
 
-* In addendum to custom modifications, make sure to do the following:
-    * During partioning:
-        * Select **Guided - use entire disk**.
-        * Use the **Virtual disk 1 (xvda) - 42.9 GB** choice.
-    * Select OpenSSH server during the software install process.
-    * Install the GRUB boot loader to the master boot record.
+{% img 2014-05-28-custom-images-via-boot-dot-rackspace-dot-com-training-wheels-included/params.png %}
 
-{% img custom-images-via-boot-dot-rackspace-dot-com-training-wheels-included/install.png %}
+#### 7. Proceed through the install & setup accordingly
 
-__7. Reboot from local hdd__
+In addition to custom modifications, make sure to do the following:
+
+* During partioning:
+  * Select **Guided - use entire disk**.
+  * Use the **Virtual disk 1 (xvda) - 42.9 GB** choice.
+* Select OpenSSH server during the software install process.
+* Install the GRUB boot loader to the master boot record.
+
+{% img 2014-05-28-custom-images-via-boot-dot-rackspace-dot-com-training-wheels-included/install.png %}
+
+#### 8. Reboot from local hdd
 
 Once the installation is complete, the VM reboots and the console
 disconnects. Reconnect to the console, but this time, select to boot
 from the Local HDD because we've already installed the OS and because iPXE by
 default does a netboot.
 
-{% img custom-images-via-boot-dot-rackspace-dot-com-training-wheels-included/localboot.png %}
+{% img 2014-05-28-custom-images-via-boot-dot-rackspace-dot-com-training-wheels-included/localboot.png %}
 
-__8. Instance configuration required by Rackspace__
+#### 9. Instance configuration required by Rackspace
 
 To configure the instance, you must first get to the prompt. You can do
 this via the console from the browser or by SSH'ing into the VM (SSH may be easier to work
 with).
 
-{% img custom-images-via-boot-dot-rackspace-dot-com-training-wheels-included/os_console.png %}
+{% img 2014-05-28-custom-images-via-boot-dot-rackspace-dot-com-training-wheels-included/os_console.png %}
 
 Run the following command to install curl:
 
@@ -135,65 +140,69 @@ iface lo inet loopback
 EOF
 ```
 
-__9. Make custom OS modifications__
+#### 10. Make custom OS modifications
 
 This is the opportunity to install, configure, and set up any custom system level
 modifications that you want to persist for future instances of the image.
 
-__10. Once modifications are complete, cleanup your image__
+#### 11. After you complete the modifications, cleanup your image
 
-* Typically, you'll want to remove the following before taking the snapshot
+Typically, you should remove the following before taking the snapshot
 to have a clean, pristine image:
-    * local files in root & other user home directories
-    * log files
-    * history
-    * ssh_host keys
-    * unnecessary files
-    * etc.
 
-__11. After modifications and cleanup is done, snapshot your image__
+* local files in root & other user home directories
+* log files
+* history
+* ssh_host keys
+* unnecessary files
+* and so on
+
+#### 12. After modifications and cleanup is done, snapshot your image
 
 In the **Server Details**, select **Create Image** to snapshot the image as-is and
 give it a name, such as `my_ubuntu_1204`.
 
-{% img custom-images-via-boot-dot-rackspace-dot-com-training-wheels-included/create_image.png %}
+{% img 2014-05-28-custom-images-via-boot-dot-rackspace-dot-com-training-wheels-included/create_image.png %}
 
-__12. Set metadata for the image__
+#### 13. Set metadata for the image
 
-* Set vm_mode to:
-    * `xen` for a Paravirtualized (PV) Instance. For most Linux VMs, PV is typically
+Set vm_mode to:
+
+* `xen` for a Paravirtualized (PV) Instance. For most Linux VMs, PV is typically
     the best option.
-    * `hvm` for HVM Mode, typically used for FreeBSD, Linux PVHVM and Windows. When
+* `hvm` for HVM Mode, typically used for FreeBSD, Linux PVHVM and Windows. When
     using with Linux, make sure you're using one of the newer 3.x kernels for the
     best experience.
 
-* If using Nova Agent:
-    * Set `xenapi_use_agent=true`.
+If using Nova Agent:
 
-* If using Cloud-Init exclusively, the Agent isn't needed, so make sure to
+* Set `xenapi_use_agent=true`.
+
+If using Cloud-Init exclusively, the Agent isn't needed, so make sure to
 disable it so that the build isn't actively polling for responses from the Nova
 Agent:
-    * set `xenapi_use_agent=false`
+
+* set `xenapi_use_agent=false`
 
 ```
 nova image-meta my_ubuntu_1204 set vm_mode=xen
 nova image-meta my_ubuntu_1204 set xenapi_use_agent=true
 ```
 
-__13. After snapshotting, its time to boot your custom image__
+#### 14. After snapshotting, its time to boot your custom image
 
 ```
 nova boot --image="my_ubuntu_1204" --flavor=performance1-2 my_ubuntu_1204_test
 ```
 
-__14. Log in to the VM via console and/or SSH & enjoy your new custom image \:)__
+#### 15. Log in to the VM by using the console or SSH and enjoy your new custom image \:)
 
 ### Notes
 
-* Once you save/snapshot your custom image, you __must__ use a Performance Flavor
-  to boot the VM.
-* After snapshotting & testing the boot of the custom image, it is safe to
-  delete the initial boot.rackspace.com ISO VM.
+* After you save or snapshot your custom image, you __must__ use a Performance
+  Flavor to boot the VM.
+* After snapshotting and testing the boot of the custom image, you can safely
+  delete the initial **boot.rackspace.com** ISO VM.
 
 ### About the author
 
