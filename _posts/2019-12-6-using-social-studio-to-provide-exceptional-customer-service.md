@@ -16,13 +16,13 @@ ogDescription: "Your customers are probably using social media,which means they 
 
 Your customers are probably using social media, which means they are talking about your company and your products or services&mdash;whether you are listening or not.
 
-If you are not listening to your customers, you are missing out on potential conversations, brand mentions, and relationship-building opportunities. What’s more, if your company is not using social media, you might actually be disappointing your customers. According to one study, 60% of people believe social media is the best place for companies to provide customer service.
+If you are not listening to your customers, you are missing out on potential conversations, brand mentions, and relationship-building opportunities. What’s more, if your company is not using social media, you might actually be disappointing your customers. [According to one study](https://www.adweek.com/digital/trust-in-social-media-platforms-is-eroding-and-brands-have-a-lot-to-lose/), 60% of people believe social media is the best place for companies to provide customer service.
 
 ![]({% asset_path 2019-12-6-using-social-studio-to-provide-exceptional-customer-service/Picture1.png %})
 
 <!-- more -->
 
-Salesforce’s Social Studio allows you to join your customers in conversation. Rackspace has helped companies use Social Studio to manage customer service across social media channels. This robust tool helps you to delight customers at every step on the path from lead to loyalty, while also gathering valuable social data.
+Salesforce’s [Social Studio](https://www.salesforce.com/products/service-cloud/features/social-customer-service/) allows you to join your customers in conversation. Rackspace has helped companies use Social Studio to manage customer service across social media channels. This robust tool helps you to delight customers at every step on the path from lead to loyalty, while also gathering valuable social data.
 
 The key to succeeding with Social Studio is to establish a process, understand the capabilities of the tool, and respect your customers’ data.
 
@@ -38,7 +38,7 @@ This process can involve multiple teams at your company&mdash;marketing, custome
 
 If multiple departments are using Social Studio, we recommend placing a centralized team in charge of overseeing the strategy and establishing how your company will use social media. Within Social Studio, you can set up multiple social media workspaces that are specific to the needs of each team. This allows different teams to tweet, post, or snap without tripping over each other. 
 
-While Social Studio can and should be used across different teams to benefit the entire company, the benefits of this solution may be most apparent in your customer service department. Salesforce’s State of the Connected Customer report revealed that 71% of customers use social media to communicate with companies, and 34% rated social media as a preferred channel for communication. If you are not serving your customers across the right social media channels, you are likely to be left in the dust.
+While Social Studio can and should be used across different teams to benefit the entire company, the benefits of this solution may be most apparent in your customer service department. Salesforce’s [State of the Connected Customer report](https://www.salesforce.com/form/conf/state-of-the-connected-customer-2nd-edition/) revealed that 71% of customers use social media to communicate with companies, and 34% rated social media as a preferred channel for communication. If you are not serving your customers across the right social media channels, you are likely to be left in the dust.
 
 ![]({% asset_path 2019-12-6-using-social-studio-to-provide-exceptional-customer-service/Picture3.png %})
 
@@ -53,28 +53,26 @@ Social Studio also allows you to set topic profiles. You can categorize conversa
 
 ![]({% asset_path 2019-12-6-using-social-studio-to-provide-exceptional-customer-service/Picture4.png %})
 
-Not sure what you should be listening for on social media? Read our blog post on what you should be monitoring.
-
 ### Common mistakes to avoid
 
 Companies sometimes get excited about using social media and then make simple mistakes that could be easily avoided with a little forethought. Be aware of the following common mistakes as you use Social Studio to interact with your consumers on social media.
 
 #### Making it a one-sided conversation
 
-Often, companies will use social media to highlight their products and services without listening to anyone else. Would you hang out with a person who never stops talking and does not listen to you? Neither will your customers. Think two-way communication.
+Often, companies will use social media to [highlight their products and services](https://www.huffpost.com/entry/4-ways-you-are-sabotaging-your-business-on-social-media_b_596550e0e4b0911162fc2fa9) without listening to anyone else. Would you hang out with a person who never stops talking and does not listen to you? Neither will your customers. Think two-way communication.
 
 #### Neglecting privacy
 
-Do not ask for an email address or other personal information publicly. Take conversations to direct messages or other, more private forms of communication. This respects your customers’ privacy while also making it easier for you to track the conversation.
+Do not ask for an email address or [other personal information publicly](https://www.theverge.com/2018/7/19/17591732/british-airways-gdpr-compliance-twitter-personal-data-security). Take conversations to direct messages or other, more private forms of communication. This respects your customers’ privacy while also making it easier for you to track the conversation.
 
-Failing to handle your customers’ cases in a respectful, honest, and secure way can seriously damage your relationship with them. One recent study found that the two most common reasons customers call out brands on social media are dishonesty (60%) and bad customer service (59%).
+Failing to handle your customers’ cases in a respectful, honest, and secure way can seriously damage your relationship with them. [One recent study](https://www.fastcompany.com/40456895/hey-brands-heres-why-people-call-you-out-on-social-media) found that the two most common reasons customers call out brands on social media are dishonesty (60%) and bad customer service (59%).
 
 Protecting the privacy of your customers’ information goes beyond respect and reputation&mdash;it is also the law, and you can face hefty fines if you do not handle customer data carefully. I will speak more about this in the following section on data privacy.
 
 
 #### Forgetting to set expectations
 
-Tell your customers when you will be monitoring social media accounts. If you will not be monitoring all the time, give consumers an alternative path to open a customer service ticket, like a phone number or a link to your website. Salesforce suggests that 42% of customers expect a response on social media within one hour. If you can not meet this response rate, set clear expectations with your audience to avoid frustration.
+Tell your customers when you will be monitoring social media accounts. If you will not be monitoring all the time, give consumers an alternative path to open a customer service ticket, like a phone number or a link to your website. Salesforce suggests that [42% of customers](https://www.salesforce.com/blog/2017/03/respond-social-media-complaints.html) expect a response on social media within one hour. If you can not meet this response rate, set clear expectations with your audience to avoid frustration.
 
 #### Failing to define a process for social customer service
 
@@ -84,7 +82,7 @@ These are just a few of the situations you should address with a clearly documen
 
 #### General Data Protection Regulation (GDPR) and data privacy
 
-Providing exceptional customer service means respecting your customers’ data. Has anyone who lives in Europe or is a citizen of the European Union (EU) interacted with your company online? Then the General Data Protection Regulation (GDPR) applies to you.
+Providing exceptional customer service means respecting your customers’ data. Has anyone who lives in Europe or is a citizen of the European Union (EU) interacted with your company online? Then the [General Data Protection Regulation (GDPR) applies to you](https://fortune.com/2018/05/24/the-gdpr-is-in-effect-should-u-s-companies-be-afraid/).
 
 GDPR is a law that regulates data privacy for everyone within the European Union and the European Economic Area. It also addresses the export of personal data outside the EU and EEA. This means if you communicate with consumers who are citizens of the EU, you must comply with GDPR&mdash;no matter where your company is located.
 
