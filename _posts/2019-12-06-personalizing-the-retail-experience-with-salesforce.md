@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Personalizing the retail experience with Salesforce"
+title: "Personalizing the retail experience with Salesforce&reg;"
 date: 2019-12-06 00:01
 comments: true
 author: Sara Olivier
@@ -9,54 +9,52 @@ authorIsRacker: true
 authorAvatar: 'https://en.gravatar.com/solivierre'
 categories:
     - Salesforce
-metaTitle: "Personalizing the retail experience with Salesforce"
-metaDescription: ""
-ogTitle: "Personalizing the retail experience with Salesforce"
-ogDescription: ""
+metaTitle: "Personalizing the retail experience with Salesforce&reg;"
+metaDescription: "In this blog, we will look at the importance of creating a personalized customer experience in retail, how it can affect brick-and-mortar and e-commerce retailers, and how Salesforce&reg; can help"
+ogTitle: "Personalizing the retail experience with Salesforce&reg;"
+ogDescription: "In this blog, we will look at the importance of creating a personalized customer experience in retail, how it can affect brick-and-mortar and e-commerce retailers, and how Salesforce&reg; can help"
 ---
 
 <!-- more -->
+Customer experience is critical in retail for building engagement and generating revenue. Offering personalized interactions can provide transformative business value, particularly during the biggest shopping season of the year&mdash;from advising customers based on their preferences, to following up with them after they have made their purchases.
 
 ![]({% asset_path 2019-12-6-personalizing-the-retail-experience-with-salesforce/picture1.png %})
 
-Customer experience is critical in retail for building customer engagement and generating revenue. From advising customers based on their preferences, to following up with them after they make their purchases, offering personalized interactions can provide transformative business value — particularly during the biggest shopping season of the year.
+56% of marketers cited retail personalization as the year's most exciting trend. That means your marketing team is probably also considering how to use personalization within your business strategy.
 
-The topic of retail personalization has generated plenty of chatter, with 56% of marketers citing it as the most exciting trend of the year. That means your marketing team is probably also considering how to use personalization within your business strategy.
+In this blog, we will look at the importance of creating a personalized customer experience in retail, how it can affect brick-and-mortar and e-commerce retailers, and how Salesforce&reg; can help.
 
-Let’s take a look at the importance of creating a personalized customer experience in retail, how it can affect brick-and-mortar and e-commerce retailers, and how Salesforce can help.
+### Why is a personalized experience important?
 
-### Why is a Personalized Experience Important?
+Recent surveys show that customers crave retail personalization when they need new ideas, are in the mindset to shop or want to receive rewards from brand loyalty programs. Millennials in particular are more receptive to features like robot-guided shopping experiences and artificial intelligence generated recommendations.
 
-Recent surveys show that customers crave retail personalization when they need new ideas, are in the mindset to shop or want to receive rewards from brand loyalty programs. Millennials in particular are more receptive to features like robot-guided shopping experiences and recommendations generated from artificial intelligence.
-
-While personalization can provide huge benefits, there are best practices to follow so that your consumers see the value without feeling watched. Customers who have a negative interaction with your company can quickly spread the word about their frustrations, costing you valuable business over the holiday season. For this reason, it’s vital to understand how personalization factors into the retail experience in both brick-and-mortar stores and online.
+While personalization can provide huge benefits, following best practices can help your consumers see the value without feeling watched. Customers who have a negative interaction with your company can quickly spread the word about their frustrations, costing you valuable business over the holiday season. For this reason, it is vital to understand how personalization factors into the retail experience for both brick-and-mortar and online stores.
 
 ### Personalization in E-Commerce
 
-In-person shopping offers the benefit of face-to-face interaction combined with the gratification from an immediate purchase. Customers can get one-on-one support from an actual person should they need advice on what to purchase, have a problem or want to complete a return.
+In-person shopping offers the benefit of face-to-face interaction combined with the gratification from an immediate purchase. Customers can get one-on-one support from an actual person if they need advice, have a problem or want to complete a return.
 
-While personalization can be easier to implement at brick-and-mortar retailers, consumers can find greater convenience from shopping online, around the clock, and from the comfort of their own home. These are just some of the reasons why 51% of people now prefer to shop online.
+Although personalization can be easier to implement at brick-and-mortar stores, 51% of consumers now prefer to shop online. Online shopping is convenient because it can be done around the clock, and from the comfort of home.
 
-By 2019, e-commerce sales are forecasted to account for 12.8% of the retail market, illustrating a pattern of steady growth. Despite the convenience factor of shopping online, customers still want the in-store experience when it comes to exploring products and getting the exact help they need before making a purchase.
+By 2019, e-commerce sales are forecasted to account for 12.8% of the retail market, illustrating a pattern of steady growth. Despite the convenience of shopping online, customers still want the in-store experience of exploring products and getting the help they need before making a purchase.
 
-By personalizing the retail experience for your ecommerce consumers, you provide the best of both worlds: an interaction that’s specifically targeted to them, no matter where they are and when they want it. But how do you ensure that you engage with consumers at the right time and in the right way — especially during the busy holiday season? That’s where a robust CRM like Salesforce comes in to play.
+By personalizing the retail experience for your ecommerce consumers, you provide the best of both worlds: an interaction that is specifically targeted to them. But how do you ensure that you engage with consumers at the right time and in the right way&mdash;especially during the busy holiday season? That’s where a robust CRM like Salesforce can help.
 
-### How Can Salesforce Help?
+### How can Salesforce help?
 
-Salesforce Retail connects every part of your retail business so you can ensure a seamless, real-time personalization experience for your customers. In-store kiosks allow your customers to find detailed product information, compare pricing, and check online reviews, while you benefit from the ability to track purchase history. You can also expand your selection outside of products that are in stock at your individual brick-and-mortar stores.
+Salesforce Retail connects every part of your retail business so you can ensure a seamless, real-time personalization experience for your customers. In-store kiosks let your customers find detailed product information, compare pricing, and check online reviews&mdash;while you benefit from being able to track purchase history. You can also expand your offerings to products that are not in stock at your individual brick-and-mortar stores.
 
-With the Personalize Shopper Marketing solution, you can promote your brand advocates and dive deep into individual shopping interactions to fine-tune the offers you give to your customers. This can help give your retail business a competitive edge during the busy holiday season.
+With the Personalize Shopper Marketing solution, you can promote your brand advocates and deep-dive into individual shopping interactions to fine-tune your customer offers. This can help give your retail business a competitive edge during the busy holiday season.
 
-Salesforce Marketing Cloud makes up a significant part of Salesforce Retail. The full Marketing Cloud platform allows you to provide the same exceptional personalization experience across email, mobile, web, and social channels. This Journey Mapping capability doesn’t only help you observe the customer journey from start to finish — it also allows you to engage with your customers at every step along the path from lead to loyalty.
+Salesforce Marketing Cloud makes up a significant part of Salesforce Retail. The full Marketing Cloud platform allows you to provide the same exceptional personalization experience across email, mobile, web, and social channels. This Journey Mapping capability doesn’t only help you observe the customer journey from start to finish&mdash;it also allows you to engage with your customers at every step along the path from lead to loyalty.
 
-Einstein Engagement Scoring is another valuable feature of Salesforce Marketing Cloud. This allows you to leverage AI to gather key demographic, behavioral, and contextual data on your customers. You can find new customers and continually deliver experiences that are unique to the journey of every shopper. It also means you can develop both e-commerce and in-store purchasing options to suit customer needs, inform your approach, and boost your revenue.  
+Einstein Engagement Scoring is another valuable feature of Salesforce Marketing Cloud. It allows you to leverage AI to gather key demographic, behavioral, and contextual customer data. You can find new customers and continually deliver experiences that are unique to every shopper's journey. It also means you can develop both e-commerce and in-store purchasing options to suit customer needs and boost your revenue.  
 
-### Upgrade Your Customer Experience With a Consulting Partner
+### Upgrade your customer experience with a consulting partner
 
-Don’t let your business fall behind when it comes to offering personalized shopping experiences over the holidays — find an experienced consulting partner instead.
+Do not let your business fall behind when it comes to offering personalized shopping experiences over the holidays&mdash;find an experienced consulting partner instead.
 
-RelationEdge is a Salesforce Platinum Consulting Partner and a full-service digital agency. Our technology experts can ensure you have the powerful CRM you need to stay up to date with your customers, while our marketing specialists will help you effectively engage with every one of them, in the manner they prefer. Contact us today to learn how you can increase your revenue during the busy holiday season in retail.
-
+Rackspace is a Salesforce Platinum Consulting Partner and a full-service digital agency. Our technology experts can ensure you have the powerful CRM you need to stay up to date with your customers. Our marketing specialists will help you effectively engage with every customer. Contact us today to learn how you can increase your revenue during the busy holiday season.
 
 ### Optimize your environment with expert administration, management, and configuration
 
