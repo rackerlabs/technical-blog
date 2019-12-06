@@ -9,40 +9,34 @@ authorIsRacker: true
 categories:
     - Salesforce
 metaTitle: "Using Social Studio to provide exceptional customer service"
-metaDescription: ""
+metaDescription: "Your customers are probably using social media,which means they are talking about your company and your products or services&mdash;whether you are listening or not."
 ogTitle: "Using Social Studio to provide exceptional customer service"
-ogDescription: ""
+ogDescription: "Your customers are probably using social media,which means they are talking about your company and your products or services&mdash;whether you are listening or not."
 ---
 
-Your customers are probably on social media, which means they’re talking about your company and products or services — whether you’re listening or not.
+Your customers are probably using social media, which means they are talking about your company and your products or services&mdash;whether you are listening or not.
 
-If you’re not listening, you’re missing out on potential conversations, brand mentions, and relationship-building opportunities with your customers. What’s more, if your company isn’t using social media, you might actually be disappointing your customers. According to one study, 60% of people believe social media is the best place for companies to provide customer service.
+If you are not listening to your customers, you are missing out on potential conversations, brand mentions, and relationship-building opportunities. What’s more, if your company is not using social media, you might actually be disappointing your customers. According to one study, 60% of people believe social media is the best place for companies to provide customer service.
 
 ![]({% asset_path 2019-12-6-using-social-studio-to-provide-exceptional-customer-service/Picture1.png %})
 
 <!-- more -->
 
-Salesforce’s Social Studio allows you to join in the conversation with your customers. As Vice President of Solutions, Digital Marketing at RelationEdge, I’ve helped companies use Social Studio to manage customer service across social media channels. With this robust tool, you can delight customers at every step on the path from lead to loyalty, while also gathering valuable social data.
+Salesforce’s Social Studio allows you to join your customers in conversation. Rackspace has helped companies use Social Studio to manage customer service across social media channels. This robust tool helps you to delight customers at every step on the path from lead to loyalty, while also gathering valuable social data.
 
 The key to succeeding with Social Studio is to establish a process, understand the capabilities of the tool, and respect your customers’ data.
 
-Here are some of our best practices — and mistakes to avoid — when using Social Studio to improve your customer service:
+This blog discusses some best practices&mdash;and some mistakes to avoid&mdash;when using Social Studio to improve your customer service.
 
 ![]({% asset_path 2019-12-6-using-social-studio-to-provide-exceptional-customer-service/Picture2.png %})
 
-Salesforce’s Social Studio allows you to join in the conversation with your customers. As Vice President of Solutions, Digital Marketing at RelationEdge, I’ve helped companies use Social Studio to manage customer service across social media channels. With this robust tool, you can delight customers at every step on the path from lead to loyalty, while also gathering valuable social data.
+### Which teams Can use Social Studio?
 
-The key to succeeding with Social Studio is to establish a process, understand the capabilities of the tool, and respect your customers’ data.
+Social Studio is a leading social listening tool that monitors customer posts on channels like Twitter, Facebook, Instagram, and more. It makes it easy to create and manage support cases. 
 
-Here are some of our best practices — and mistakes to avoid — when using Social Studio to improve your customer service.
+This process can involve multiple teams at your company&mdash;marketing, customer service, and even IT, may all have a part to play. For instance, you may use Social Studio to filter messages and inquiries based on topic, then prioritize and assign them to different teams bases on who is best suited to respond. Social Studio can also help you identify potential new leads from incoming requests or questions, allowing you to bring sales or marketing team members into the conversation earlier.
 
-### Which Teams Can Use Social Studio?
-
-Social Studio is a leading social listening tool that makes it easy to create and manage support cases by monitoring customer posts on channels like Twitter, Facebook, Instagram, and more.
-
-This can involve numerous teams at your company — marketing, customer service, and even IT may all have a part to play. For instance, you may use Social Studio to filter messages and inquiries based on topic, then prioritize and assign them to marketing, sales, or service team members depending on who is best suited to respond. Social Studio can also help you identify potential new leads from incoming requests or questions, allowing you to bring sales or marketing team members into the conversation early.
-
-If more than one department will be using Social Studio, we recommend having one centralized team oversee the strategy and provide the vision for how your company will use social media. Within Social Studio, you can set up multiple social media workspaces so each team has a workspace that’s specific to their needs. This way, different teams can work within the tool without tripping over each other as they tweet, post, or snap.
+If multiple departments are using Social Studio, we recommend placing a centralized team in charge of overseeing the strategy and establishing how your company will use social media. Within Social Studio, you can set up multiple social media workspaces that are specific to the needs of each team. This allows different teams to tweet, post, or snap without without tripping over each other. 
 
 While Social Studio can and should be used across different teams to benefit your entire company, the benefits of this powerful solution may be most seen in your customer service department. Salesforce’s State of the Connected Customer report revealed that 71% of customers use social media to communicate with companies, and 34% rated social media as a preferred channel for communication. If you’re not serving your customers across the right social media channels, you’re likely to be left in the dust.
 
@@ -129,7 +123,7 @@ We deliver:
 
 - **Unbiased expertise**: We simplify and guide your modernization journey,
 focusing on the capabilities that deliver immediate value.
-- **Fanatical Experience**&trade;: We combine a Process first. Technology second.&reg;
+- **Fanatical Experience**&trade;: We combine a *Process first. Technology second*.&reg;
 approach with dedicated technical support to provide comprehensive solutions.
 - **Unrivaled portfolio**: We apply extensive cloud experience to help you
 choose and deploy the right technology on the right cloud.
