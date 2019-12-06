@@ -6,7 +6,7 @@ comments: true
 author: Sara Olivier
 published: true
 authorIsRacker: true
-authorAvatar: 'https://en.gravatar.com/solivierre'
+authorAvatar: 'https://0.gravatar.com/avatar/17c40729ddeea22c93734e4d0870fb85'
 categories:
     - Salesforce
 metaTitle: "Personalizing the retail experience with Salesforce"
