@@ -6,36 +6,47 @@ bio: n/a
 Celia Heywood
 https://en.gravatar.com/cheywoodre
 authorAvatar: http://0.gravatar.com/avatar/76b6d0b3a7daec2a8e3e25f17ff7ead7
-Bio: n/a
+bio: n/a
 
 Emily Belke
 https://en.gravatar.com/ebelkere
-
+authorAvatar: https://s.gravatar.com/avatar/4a7de5d7772b14826cca8496c410ba88?s=80
+bio: n/a
 
 Emilie Hersh
 https://en.gravatar.com/ehershre
-
+authorAvatar:  https://s.gravatar.com/avatar/9503bfb5fa8e3de9f007e5c12591d6d8
+bio: n/a
 
 Chris Whitehead
 https://en.gravatar.com/cwhiteheadre
+authorAvatar:  https://s.gravatar.com/avatar/286b19b54ad30b4f0d25a4ac679744a8
+bio: n/a
 
 Denise Carbone
 https://en.gravatar.com/dcarbonere
-
+authorAvatar:  https://s.gravatar.com/avatar/621ec460934803c15e9b2c4ff6cbf75f
+bio: n/a
 
 Janice Krpan
 https://en.gravatar.com/JKrpanre
-
+authorAvatar:  https://s.gravatar.com/avatar/7662b14a4b4ce42f1a0775b2a93634c4
+bio: n/a
 
 Jason Gates
 https://en.gravatar.com/jgatesre
-
+authorAvatar:  https://s.gravatar.com/avatar/ff2ec8ee582b2e949109b7fd353734f2
+bio: n/a
 
 Jeff Wilensky
 https://en.gravatar.com/jwilenskyre
+authorAvatar:  https://s.gravatar.com/avatar/017eaa68c10c8d1b95aacf7d34557a28
+bio: n/a
 
 Jordan Friedman
 https://en.gravatar.com/JFriedmanRE
+authorAvatar:  https://s.gravatar.com/avatar/f2f71a634ccd1e79ea3b3b317f8b4161
+bio: n/a
 
 Karisa Booth
 https://en.gravatar.com/kboothre
@@ -44,18 +55,25 @@ bio: "Karisa is an experienced Cloud Architect with a demonstrated history of wo
 
 Lauren Piva
 https://en.gravatar.com/lpivare
+authorAvatar:  https://s.gravatar.com/avatar/bbd32264e5b49be8f1515f6a64b1f1e2
+bio: n/a
 
 Matt Stoyka
 https://en.gravatar.com/mstoykare
+authorAvatar:  https://s.gravatar.com/avatar/d08dd094c720fa0e4689178952959231
+bio: n/a
 
 Nikki Carter
 https://en.gravatar.com/ncarterre
 authorAvator: 'https://1.gravatar.com/avatar/3177b82ffcbe59f1f3e6e155d3c94e7a'
 bio: 'Nikki Carter is a Content Strategist on the Digital Marketing Services Team at RelationEdge. She has extensive experience creating and editing content and marketing assets for a variety of verticals, including healthcare, technology, and wellness. Nikki is passionate about freedom, telling the truth, and supporting other women/non-binary folks of color.'
 
-
 Rob Hawthorne 
 https://en.gravatar.com/rhawthornre
+authorAvatar:  https://s.gravatar.com/avatar/c44cfe09d207a9f1529d2280dec8583a
+bio: n/a
 
 Sarah Olivier
 https://en.gravatar.com/solivierre
+authorAvatar:  https://s.gravatar.com/avatar/17c40729ddeea22c93734e4d0870fb85
+bio: n/a
