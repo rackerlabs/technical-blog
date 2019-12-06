@@ -15,10 +15,10 @@ ogTitle: "Personalizing the retail experience with Salesforce"
 ogDescription: "In this blog, we will look at the importance of creating a personalized customer experience in retail, how it can affect brick-and-mortar and e-commerce retailers, and how Salesforce can help"
 ---
 
-<!-- more -->
 Customer experience is critical in retail for building engagement and generating revenue. Offering personalized interactions&mdash;from advising customers based on their preferences, to following up with them after they have made their purchases&mdash;can provide transformative business value, particularly during the biggest shopping season of the year.
 
 ![]({% asset_path 2019-12-6-personalizing-the-retail-experience-with-salesforce/picture1.png %})
+<!-- more -->
 
 [56% of marketers](https://www.marketingcharts.com/brand-related-82815) cited retail personalization as the most exciting trend of the year. That means your marketing team is probably also considering how to integrate personalization into your business strategy.
 
@@ -48,7 +48,7 @@ With the [Personalize Shopper Marketing](https://www.salesforce.com/solutions/in
 
 [Salesforce Marketing Cloud](https://www.salesforce.com/products/marketing-cloud/overview/) makes up a significant part of Salesforce Retail. The full Marketing Cloud platform allows you to provide the same exceptional personalization experience across email, mobile, web, and social channels. This Journey Mapping capability not only only helps you observe the customer journey from start to finish&mdash;it also allows you to engage with your customers at every step along the path from lead to loyalty.
 
-Einstein Engagement Scoring is another valuable feature of Salesforce Marketing Cloud. It allows you to leverage AI to gather key demographic, behavioral, and contextual customer data. You can find new customers and continually deliver experiences that are unique to every shopper's journey. Einstein Engagment Scoring also helps you develop both e-commerce and in-store purchasing options to suit customer needs and boost your revenue.  
+Einstein Engagement Scoring is another valuable feature of Salesforce Marketing Cloud. It allows you to leverage AI to gather key demographic, behavioral, and contextual customer data. You can find new customers and continually deliver experiences that are unique to every shopper's journey. Einstein Engagement Scoring also helps you develop both e-commerce and in-store purchasing options to suit customer needs and boost your revenue.  
 
 ### Upgrade your customer experience with a consulting partner
 
