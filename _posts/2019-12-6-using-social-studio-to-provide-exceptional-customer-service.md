@@ -22,7 +22,7 @@ If you are not listening to your customers, you are missing out on potential con
 
 <!-- more -->
 
-Salesforce’s [Social Studio](https://www.salesforce.com/products/service-cloud/features/social-customer-service/) allows you to join your customers in conversation. Rackspace has helped companies use Social Studio to manage customer service across social media channels. This robust tool helps you to delight customers at every step on the path from lead to loyalty, while also gathering valuable social data.
+Salesforce’s [Social Studio](https://www.salesforce.com/products/service-cloud/features/social-customer-service/) lets you to join your customers in conversation. Rackspace has helped companies use Social Studio to manage customer service across social media channels. This robust tool helps you to delight customers at every step on the path from lead to loyalty, while also gathering valuable social data.
 
 The key to succeeding with Social Studio is to establish a process, understand the capabilities of the tool, and respect your customers’ data.
 
@@ -30,7 +30,7 @@ This blog discusses some best practices&mdash;and some mistakes to avoid&mdash;w
 
 ![]({% asset_path 2019-12-6-using-social-studio-to-provide-exceptional-customer-service/Picture2.png %})
 
-### Which teams Can use Social Studio?
+### Which teams can use Social Studio?
 
 Social Studio is a leading social listening tool that monitors customer posts on channels like Twitter, Facebook, Instagram, and more. It makes it easy to create and manage support cases. 
 
@@ -45,7 +45,7 @@ While Social Studio can and should be used across different teams to benefit the
 
 ### Using Social Studio to improve your customer service
 
-Social Studio makes it easy for your customer service team to stay on top of social listening. You can set up keywords and classifiers that help you flag your customer service team when an issue needs to be resolved. Keywords are used to frame the conversation you want to follow; they are used to establish context and need to be refreshed over time as the relevancy evolves. You can organize keywords into groups, which can be used to direct posts to different teams to spread the load and quickly get your customers the information they need. For example, questions about a sale can be routed to your sales team, while your customer service team can be flagged when customers are having a problem with a product.
+Social Studio makes it easy for your customer service team to stay on top of social listening. You can set up keywords and classifiers that help you flag your customer service team when an issue needs to be resolved. Keywords are used to frame the conversation you want to follow; they are used to establish context and need to be refreshed over time as their relevancy evolves. You can organize keywords into groups, which can be used to direct posts to different teams and quickly get your customers the information they need. For example, questions about a sale can be routed to your sales team, while your customer service team can be flagged when customers are having a problem with a product.
 
 Selecting the right keywords for effective complaint monitoring takes a lot of trial and error&mdash;it is not a set-it-and-forget-it feature. Try testing keyword groups and combinations. It is important to regularly monitor your social media accounts and adjust your keywords as needed. This will help your customer service team monitor complaints more effectively and deliver exceptional service on social media.
 
@@ -67,12 +67,12 @@ Do not ask for an email address or [other personal information publicly](https:/
 
 Failing to handle your customers’ cases in a respectful, honest, and secure way can seriously damage your relationship with them. [One recent study](https://www.fastcompany.com/40456895/hey-brands-heres-why-people-call-you-out-on-social-media) found that the two most common reasons customers call out brands on social media are dishonesty (60%) and bad customer service (59%).
 
-Protecting the privacy of your customers’ information goes beyond respect and reputation&mdash;it is also the law, and you can face hefty fines if you do not handle customer data carefully. I will speak more about this in the following section on data privacy.
+Protecting the privacy of your customers’ information goes beyond respect and reputation&mdash;it is also the law; you can face hefty fines if you do not handle customer data carefully.
 
 
 #### Forgetting to set expectations
 
-Tell your customers when you will be monitoring social media accounts. If you will not be monitoring all the time, give consumers an alternative path to open a customer service ticket, like a phone number or a link to your website. Salesforce suggests that [42% of customers](https://www.salesforce.com/blog/2017/03/respond-social-media-complaints.html) expect a response on social media within one hour. If you can not meet this response rate, set clear expectations with your audience to avoid frustration.
+Tell your customers when you will be monitoring your social media accounts. If you will not be monitoring all the time, give consumers an alternative path to open a customer service ticket, like a phone number or a link to your website. Salesforce states that [42% of customers](https://www.salesforce.com/blog/2017/03/respond-social-media-complaints.html) expect a response on social media within one hour. If you can not meet this response rate, set clear expectations with your audience to avoid frustration.
 
 #### Failing to define a process for social customer service
 
@@ -91,7 +91,7 @@ Local data privacy laws will also apply to your company. To make sure you comply
 - Explain to your customers what data you are asking for and why.
 - Require double opt-in for your email subscribers.
 - Create and maintain an up-to-date privacy policy, and make it accessible to your consumers.
-- Stay on top of applicable laws as you collect and manage customer data&mdash;speak to the legal team at your company if you are ever in doubt about customer data laws
+- Stay on top of applicable laws as you collect and manage customer data&mdash;speak to the legal team at your company if you are ever in doubt about customer data laws.
 
 Setting up a process as you start using Social Studio can ensure you comply with data privacy laws, while also offering high-quality social customer service that will satisfy your customers.
 
