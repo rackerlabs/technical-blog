@@ -6,6 +6,7 @@ comments: true
 author: Chris Zullo
 published: true
 authorIsRacker: true
+authorAvatar: 'https://s.gravatar.com/avatar/475ef03557ebebc76180795000996012'
 categories:
     - Salesforce
 metaTitle: "Using Social Studio to provide exceptional customer service"

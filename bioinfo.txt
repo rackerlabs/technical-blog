@@ -8,6 +8,9 @@ https://en.gravatar.com/cheywoodre
 authorAvatar: 'http://0.gravatar.com/avatar/76b6d0b3a7daec2a8e3e25f17ff7ead7'
 bio: n/a
 
+Chris Zullo
+https://s.gravatar.com/avatar/475ef03557ebebc76180795000996012
+
 Emily Belke
 https://en.gravatar.com/ebelkere
 authorAvatar: 'https://s.gravatar.com/avatar/4a7de5d7772b14826cca8496c410ba88?s=80'
