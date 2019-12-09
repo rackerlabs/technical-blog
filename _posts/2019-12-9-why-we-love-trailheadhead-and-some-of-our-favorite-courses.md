@@ -123,8 +123,6 @@ Chris Zullo, Solutions Sales Leader Marketing Cloud, has a different take.
 kidding, his top pick is still the
 [Marketing Cloud Trailmix](https://trailhead.salesforce.com/en/users/chriszullo/trailmixes/marketing-cloud).
 
-What are your favorite Trailhead courses? Let us know on Twitter: @RelationEdge. Use the hashtag #RETrails to add to the conversation!
-
 ### Optimize your environment with expert administration, management, and configuration
 
 [Rackspace's Application services](https://www.rackspace.com/application-services/professional-services)
