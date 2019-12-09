@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Using Social Studio to provide exceptional customer service"
-date: 2019-12-03 00:01
+date: 2019-12-06 00:01
 comments: true
 author: Chris Zullo
 published: true
@@ -22,7 +22,7 @@ If you are not listening to your customers, you are missing out on potential con
 
 <!-- more -->
 
-Salesforce’s [Social Studio](https://www.salesforce.com/products/service-cloud/features/social-customer-service/) lets you  join your customers in conversation. Rackspace has helped companies use Social Studio to manage customer service across social media channels. This robust tool helps you to delight customers at every step on the path from lead to loyalty, while also gathering valuable social data.
+Salesforce’s [Social Studio](https://www.salesforce.com/products/service-cloud/features/social-customer-service/) lets you join your customers in conversation. Rackspace has helped companies use Social Studio to manage customer service across social media channels. This robust tool helps you to delight customers at every step on the path from lead to loyalty, while also gathering valuable social data.
 
 The key to succeeding with Social Studio is to establish a process, understand the capabilities of the tool, and respect your customers’ data.
 
@@ -69,10 +69,9 @@ Failing to handle your customers’ cases in a respectful, honest, and secure wa
 
 Protecting the privacy of your customers’ information goes beyond respect and reputation&mdash;it is also the law. You can face hefty fines if you do not handle customer data carefully.
 
-
 #### Forgetting to set expectations
 
-Tell your customers when you will be monitoring your social media accounts. If you will not be monitoring all the time, give your customers an alternative path to open a customer service ticket, like a phone number or a link to your website. Salesforce states that [42% of customers](https://www.salesforce.com/blog/2017/03/respond-social-media-complaints.html) expect a response on social media within one hour. If you cannot meet this response rate, set clear expectations with your customers to avoid frustration.
+Tell your customers when you are monitoring your social media accounts. If you don't monitor all the time, give your customers an alternative path to open a customer service ticket, like a phone number or a link to your website. Salesforce states that [42% of customers](https://www.salesforce.com/blog/2017/03/respond-social-media-complaints.html) expect a response on social media within one hour. If you cannot meet this response rate, set clear expectations with your customers to avoid frustration.
 
 #### Failing to define a process for social customer service
 
