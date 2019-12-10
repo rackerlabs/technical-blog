@@ -29,7 +29,7 @@ The key to succeeding with Social Studio is to establish a process, understand t
 
 This blog discusses some best practices&mdash;and some mistakes to avoid&mdash;when using Social Studio to improve your customer service.
 
-![]({% asset_path 2019-12-6-using-social-studio-to-provide-exceptional-customer-service/Picture2.png %})
+![]({% asset_path 2019-12-10-using-social-studio-to-provide-exceptional-customer-service/Picture2.png %})
 
 ### Which teams can use Social Studio?
 
