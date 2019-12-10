@@ -19,7 +19,7 @@ Your customers are probably using social media, which means they are talking abo
 
 If you are not listening to your customers, you are missing out on potential conversations, brand mentions, and relationship-building opportunities. What’s more, if your company is not using social media, you might actually be disappointing your customers. [According to one study](https://www.adweek.com/digital/trust-in-social-media-platforms-is-eroding-and-brands-have-a-lot-to-lose/), 60% of people believe social media is the best place for companies to provide customer service.
 
-![]({% asset_path 2019-12-10-personalizing-the-retail-experience-with-salesforce/Picture1.png %})
+![]({% asset_path 2019-12-10-using-social-studio-to-provide-exceptional-customer-service/Picture1.png %})
 
 <!-- more -->
 
