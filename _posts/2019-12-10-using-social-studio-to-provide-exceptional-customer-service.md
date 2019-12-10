@@ -19,7 +19,7 @@ Your customers are probably using social media, which means they are talking abo
 
 If you are not listening to your customers, you are missing out on potential conversations, brand mentions, and relationship-building opportunities. What’s more, if your company is not using social media, you might actually be disappointing your customers. [According to one study](https://www.adweek.com/digital/trust-in-social-media-platforms-is-eroding-and-brands-have-a-lot-to-lose/), 60% of people believe social media is the best place for companies to provide customer service.
 
-![]({% asset_path 2019-12-6-using-social-studio-to-provide-exceptional-customer-service/Picture1.png %})
+![]({% asset_path 2019-12-10-using-social-studio-to-provide-exceptional-customer-service/Picture1.png %})
 
 <!-- more -->
 
@@ -41,7 +41,7 @@ If multiple departments are using Social Studio, we recommend placing a centrali
 
 While you can and should use Social Studio across different teams to benefit the entire company, the benefits of this solution might be most apparent in your customer service department. Salesforce’s [State of the Connected Customer report](https://www.salesforce.com/form/conf/state-of-the-connected-customer-2nd-edition/) revealed that 71% of customers use social media to communicate with companies, and 34% rated social media as a preferred channel for communication. If you are not serving your customers across the right social media channels, you are likely to be left in the dust.
 
-![]({% asset_path 2019-12-6-using-social-studio-to-provide-exceptional-customer-service/Picture3.png %})
+![]({% asset_path 2019-12-10-using-social-studio-to-provide-exceptional-customer-service/Picture3.png %})
 
 
 ### Use Social Studio to improve your customer service
@@ -52,7 +52,7 @@ Selecting the right keywords for effective complaint monitoring takes a lot of t
 
 Social Studio also enables you to set topic profiles. You can categorize conversations by brand, competitor, and industry to provide more specific data on your customers’ needs. It is even sophisticated enough to apply context to the conversations, so your customer service team is not notified every time a company or product with a similar name is mentioned.
 
-![]({% asset_path 2019-12-6-using-social-studio-to-provide-exceptional-customer-service/Picture4.png %})
+![]({% asset_path 2019-12-10-using-social-studio-to-provide-exceptional-customer-service/Picture4.png %})
 
 ### Common mistakes to avoid
 
@@ -105,7 +105,7 @@ By using our *Process First. Technology Second.*&reg; approach, we ensure that y
 
 ### Optimize your environment with expert administration, management, and configuration
 
-[Rackspace's Application services](https://www.rackspace.com/application-management/managed-services)
+[Rackspace's Application services](https://www.rackspace.com/application-services)
 **(RAS)** experts provide the following [professional](https://www.rackspace.com/application-management/professional-services)
 and
 [managed services](https://www.rackspace.com/application-management/managed-services) across
@@ -129,4 +129,4 @@ choose and deploy the right technology on the right cloud.
 - **Agile delivery**: We meet you where you are in your journey and align
 our success with yours.
 
-[Chat now](https://www.rackspace.com/#chat) to get started.
+Visit [www.rackspace.com](https://www.rackspace.com) and click **Sales Chat** to get started.
