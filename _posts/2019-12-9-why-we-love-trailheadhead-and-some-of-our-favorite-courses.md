@@ -22,7 +22,7 @@ learn how to use Salesforce within Trailhead’s first year of existence.
 
 <!-- more -->
 
-![]({% asset_path 2019-12-9-why-we-love-trailheadhead-and-some-of-our-favorite-courses/Picture1.png %})
+![]({% asset_path 2019-12-10-why-we-love-trailheadhead-and-some-of-our-favorite-courses/Picture1.png %})
 
 At Rackspace, we use Trailhead to sharpen our Salesforce skills and ensure that
 our technology implementations always deliver transformative business value. But
