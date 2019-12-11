@@ -22,7 +22,7 @@ Oracle E-Business Suite (EBS) by using the WebGate agent.
 
 If you are upgrading from Oracle Single Sign-On Server version 10gR3, you can
 integrate OAM with EBS by using the `mod_osso` agent, but we don't cover that
-here.
+in this blog.
 
 ### Overview of authentication with WebGate
 
@@ -39,12 +39,12 @@ The following image shows the integration of WebGate and EBS AccessGate:
 *Image source:* [https://docs.oracle.com/cd/E26401_01/doc.122/e22952/T156458T580814.htm](https://docs.oracle.com/cd/E26401_01/doc.122/e22952/T156458T580814.htm)
 
 When an unauthenticated user attempts to access a protected EBS resource, the
-user is directed to the EBS AccessGate application, which is a Java EE
-application responsible for mapping a single sign-on (SSO) user to an EBS user
-and creating the EBS session for that user. AccessGate is deployed to a WebLogic
-Server instance and is separate from EBS.
+user is directed to the EBS AccessGate application, which is a Java Enterprise
+Edition (EE) application responsible for mapping a single sign-on (SSO) user to an
+EBS user and creating the EBS session for that user. AccessGate is deployed to a
+WebLogic Server instance and is separate from EBS.
 
-EBS AccessGate is protected by the OAM server, and the system reroutes the
+EBS AccessGate is protected by the OAM server and the system reroutes the
 authentication request to a separate HTTP Server with WebGate installed.
 
 After a user is initially authenticated by OAM, EBS AccessGate picks up the
@@ -101,7 +101,7 @@ Enter APPS password:
 
 #### 1.4	Delete Managed Server
 
-Login to the Weblogic console. Check the following managed servers to see if
+Log in to the Weblogic console. Check the following managed servers to see if
 they are configured:
 
 - oaea\_server1
@@ -141,7 +141,7 @@ Step 1.4 removed the AccessGate deployments. If any remain, remove them manually
 
 #### 1.6	Sync up the context file and update the configuration on all nodes
 
-Log in to each node, source the run file system, and execute the following command:
+Log in to each node, source the run file system, and then execute the following command:
 
     perl $AD_TOP/bin/adSyncContext.pl contextfile=$CONTEXT_FILE
 
@@ -352,7 +352,7 @@ Source the RUN ENV and execute the following command:
     SQL>execute fnd_oid_plug.setPlugin(p_default_user_repository =>'cn=Users,dc=XXXX,dc=com');
     SQL>commit;
 
-Startup the application node 1 and set the following profile options that are
+Start up the application node 1 and set the following profile options that are
 used in EBS to update behavior of the environment:
 
     APPS_AUTH_AGENT		: /accessgate
@@ -362,7 +362,7 @@ used in EBS to update behavior of the environment:
     APPS_SSO_LINK_SAME_NAMES	: Y
     APPS_SSO_LOCAL_LOGIN		: BOTH
 
-Shutdown application node 1 and execute `autoconfig` on the primary node.
+Shut down application node 1 and execute `autoconfig` on the primary node.
 
 #### 2.7	Validate SSO with EBS
 
