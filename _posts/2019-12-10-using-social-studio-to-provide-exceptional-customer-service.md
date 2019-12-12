@@ -19,9 +19,9 @@ Your customers are probably using social media, which means they are talking abo
 
 If you are not listening to your customers, you are missing out on potential conversations, brand mentions, and relationship-building opportunities. What’s more, if your company is not using social media, you might actually be disappointing your customers. [According to one study](https://www.adweek.com/digital/trust-in-social-media-platforms-is-eroding-and-brands-have-a-lot-to-lose/), 60% of people believe social media is the best place for companies to provide customer service.
 
-![]({% asset_path 2019-12-10-using-social-studio-to-provide-exceptional-customer-service/Picture1.png %})
-
 <!-- more -->
+
+![]({% asset_path 2019-12-10-using-social-studio-to-provide-exceptional-customer-service/Picture1.png %})
 
 Salesforce’s [Social Studio](https://www.salesforce.com/products/service-cloud/features/social-customer-service/) lets you join your customers in conversation. Rackspace has helped companies use Social Studio to manage customer service across social media channels. This robust tool helps you to delight customers at every step on the path from lead to loyalty, while also gathering valuable social data.
 
