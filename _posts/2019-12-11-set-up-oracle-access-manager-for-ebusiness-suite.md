@@ -44,8 +44,8 @@ Edition (EE) application responsible for mapping a single sign-on (SSO) user to 
 EBS user and creating the EBS session for that user. AccessGate is deployed to a
 WebLogic Server instance and is separate from EBS.
 
-EBS AccessGate is protected by the OAM server and the system reroutes the
-authentication request to a separate HTTP Server with WebGate installed.
+The OAM server protects EBS AccessGate and reroutes the authentication request
+to a separate HTTP Server with WebGate installed.
 
 After a user is initially authenticated by OAM, EBS AccessGate picks up the
 request for a resource and the credentials returned by the OAM server.
