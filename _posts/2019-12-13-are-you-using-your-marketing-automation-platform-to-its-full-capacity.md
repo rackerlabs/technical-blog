@@ -10,12 +10,12 @@ authorAvatar: 'http://0.gravatar.com/avatar/c5a8a633797f4b8c85b5b5bad605cd18'
 categories:
     - Salesforce
 metaTitle: "Are you using your marketing automation platform to its full capacity?"
-metaDescription: "If you’re only using marketing automation to send out an email newsletter now and then, you’re missing out on powerful opportunities to engage your customers at every step along the path from lead to loyalty."
+metaDescription: "If you’re using marketing automation only to send out an email newsletter now and then, you’re missing out on powerful opportunities to engage your customers at every step along the path from lead to loyalty."
 ogTitle: "Are you using your marketing automation platform to its full capacity?"
-ogDescription: "If you’re only using marketing automation to send out an email newsletter now and then, you’re missing out on powerful opportunities to engage your customers at every step along the path from lead to loyalty."
+ogDescription: "If you’re using marketing automation only to send out an email newsletter now and then, you’re missing out on powerful opportunities to engage your customers at every step along the path from lead to loyalty."
 ---
 
-If you’re only using marketing automation to send out an email newsletter now
+If you’re using marketing automation only to send out an email newsletter now
 and then, you’re missing out on powerful opportunities to engage your customers
 at every step along the path from lead to loyalty.
 
