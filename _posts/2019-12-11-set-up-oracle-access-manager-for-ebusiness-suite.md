@@ -257,17 +257,7 @@ On application EBS nodes 3 and 4 – run (External node):
     -configoption=removeMS  -accessgate=<ebs_node1.com>:6888
 
 Copy the run file system **$INST\_TOP/appl/admin/oaea\_wls.properties** to the
-Patch file system in respective node patch file system.
-
-On application EBS node 1:
-
-    $ .. EBSapps.env run
-    $ cp “$INST_TOP/appl/admin/oaea_wls.properties to Patch top (INST_TOP/appl/admin)
-
-On application EBS External node 1:
-
-    $ .. EBSapps.env run
-    $ cp “$INST_TOP/appl/admin/oaea_wls.properties to Patch top (INST_TOP/appl/admin)
+patch file system on application EBS node 1 and application EBS external node 1.
 
 #### 2.3	Register EBS in OAM
 
