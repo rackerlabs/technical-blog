@@ -6,6 +6,7 @@ comments: true
 author: Sunil Rathod
 published: true
 authorIsRacker: true
+authorAvatar: 'https://s.gravatar.com/avatar/c3a915969820000d5dc4fc4f04ad8276'
 categories:
     - Oracle
     - database
