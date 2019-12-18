@@ -24,16 +24,16 @@ Often, reports contain data in a tabular format, but charts offer a graphical re
 
 For example, graphs could enhance the following reports:
 
-- A customer’s sales history based on OM data
+- A customer’s sales history based on organizational management (OM) data
 - The number of instances of failed, completed, or completed-with-warning requests on a daily basis
 
 ### Types of charts
 
 You can use the following types of charts:
 
-- **Bar Chart (Horizontal or Vertical)**: Used to show data in form of bars with an X and Y axis.
-- **Line Chart**: Mainly used for chronological data.
-- **Pie Chart**: Represents data in the form of a circular graph and used for proportional data.
+- **Bar chart (horizontal or vertical)**: Used to show data in the form of bars with an X-axis and Y-axis.
+- **Line chart**: Mainly used for chronological data.
+- **Pie chart**: Represents data in the form of a circular graph and used for proportional data.
 
 ### Create bar charts
 
@@ -89,15 +89,15 @@ Click the **Advanced** tab and paste the following text:
 
 ![]({% asset_path 2019-12-19-use-xml-publisher-to-show-charts/Picture2.png %})
 
-This creates a dummy chart image on the template. Use this image to size the chart as you need an output.
+This creates a dummy chart image on the template. Use this image to size the chart as you need it in the output.
 
 #### Explanation of bar chart XML
 
-A line-by-line explantion of the code follows:
+A line-by-line explanation of the code follows:
 
     <Graph graphType = "BAR_VERT_CLUST">
 
-This section indicates the graph type category as **BAR_VERT_CLUST**, which is a bar chart with vertical
+This section indicates the graph type category as **BAR_VERT_CLUST**, which is a bar chart with a vertical
 cluster format.
 
     <Title text="Concurrent Request Status 5-DEC-2019" visible="true" horizontalAlignment="CENTER"/>
@@ -123,7 +123,7 @@ this chart has three columns.
        <Label>Request Count</Label>
     </RowLabels>
 
-This section defines the row labels, static or dynamic. We used **Request Count**.
+This section defines the row labels as static or dynamic. We used **Request Count**.
 
     <ColLabels>
        <xsl:for-each select="//DATA_RECORD">
@@ -133,7 +133,7 @@ This section defines the row labels, static or dynamic. We used **Request Count*
        </xsl:for-each>
     </ColLabels>
 
-This section hdefines the column labels. You can use dynamic column labels based on the value of `STATUS`
+This section defines the column labels. You can use dynamic column labels based on the value of `STATUS`
 tag in the XML data file.
 
     <DataValues>
@@ -146,8 +146,8 @@ tag in the XML data file.
        </RowData>
     </DataValues>
 
-This section refers to the data value of the chart. The created bars should have a size proportional to the
-value of `REQ_COUNT` tag in the XML data file.
+This section refers to the data values in the chart. The created bars should have a size proportional to the
+value of the `REQ_COUNT` tag in the XML data file.
 
 ![Output]({% asset_path 2019-12-19-use-xml-publisher-to-show-charts/Picture3.png %})
 
@@ -174,7 +174,7 @@ Example XML data file:
 
 ![]({% asset_path 2019-12-19-use-xml-publisher-to-show-charts/Picture1.png %})
 
-In the `rtf` template insert an object of chart type from Publisher Add-In.
+In the `rtf` template, insert an object of chart type from Publisher Add-In.
 
 ![]({% asset_path 2019-12-19-use-xml-publisher-to-show-charts/Picture5.png %})
 
@@ -207,11 +207,11 @@ Click the **Advanced** tab and paste the following text:
 
 #### Explanation of pie chart XML
 
-A line-by-line explantion of the code follows:
+A line-by-line explanation of the code follows:
 
     <Graph graphType="PIE">
 
-This section identifies the graph type and category is as the `PIE` chart format.
+This section identifies the graph type and category as the `PIE` chart format.
 
     <LocalGridData rowCount="{count(//DATA_RECORD)}" colCount="1">
 
@@ -229,7 +229,7 @@ this chart has three sections in the circle.
     </RowLabels>
 
 This section defines the row labels, which are static or dynamic. You can use row labels based on the value
-of `STATUS` tag in the XML data file.
+of the `STATUS` tag in the XML data file.
 
     <DataValues>
        <RowData>
@@ -241,8 +241,8 @@ of `STATUS` tag in the XML data file.
        </RowData>
     </DataValues>
 
-This section refers to the data value of the chart, creating a pie of fractional size that is proportional
-to value of the `REQ_COUNT` tag. The values represent fractions of the total count.
+This section refers to the data value of the chart, creating a pie of a fractional size that is proportional
+to the value of the `REQ_COUNT` tag. The values represent fractions of the total count.
 
 ![Output]({% asset_path 2019-12-19-use-xml-publisher-to-show-charts/Picture7.png %})
 
@@ -250,7 +250,7 @@ to value of the `REQ_COUNT` tag. The values represent fractions of the total cou
 
 ### Create line charts
 
-Generally, use this chart type when data is timeline based.
+Generally, use this chart type when data is timeline-based.
 
 Example XML data file:
 
@@ -314,23 +314,23 @@ Click the **Advanced** tab and paste the following text:
 
 ![]({% asset_path 2019-12-19-use-xml-publisher-to-show-charts/Picture9.png %})
 
-This creates a dummy chart image on the template. Use this image to size the chart as you need an output.
+This creates a dummy chart image on the template. Use this image to size the chart as you need it in the output.
 
 #### Explanation of line chart XML
 
-A line-by-line explantion of the code follows:
+A line-by-line explanation of the code follows:
 
     <Graph graphType="LINE_VERT_ABS">
 
-This section tindicates the graph type and category as `LINE_VERT_ABS`, which is a line chart.
+This section indicates the graph type and category as `LINE_VERT_ABS`, which is a line chart.
 
-The rest of the tags are the same as of BAR type chart.
+The rest of the tags are the same as for a BAR type chart.
 
 ![Output]({% asset_path 2019-12-19-use-xml-publisher-to-show-charts/Picture10.png %})
 
 ![Output Mapping with Definition]({% asset_path 2019-12-19-use-xml-publisher-to-show-charts/Picture11.png %})
 
-### Oracle E-Business Suite uses
+### Chart uses
 
 In Oracle, charts are useful for analytics-related reports. Any XML publisher report can take
 advantage of this functionality.
