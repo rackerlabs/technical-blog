@@ -3,9 +3,10 @@ layout: post
 title: "Solve five common quoting process issues with CPQ"
 date: 2019-11-21 00:00
 comments: true
-author: Rob Hawthorne
+author: Rob Hawthorn
 published: true
 authorIsRacker: true
+authorAvatar: 'https://s.gravatar.com/avatar/c44cfe09d207a9f1529d2280dec8583a'
 categories:
   - Salesforce
 metaTitle: "Solve five common quoting process issues with CPQ"
