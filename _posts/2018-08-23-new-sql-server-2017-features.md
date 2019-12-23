@@ -34,7 +34,7 @@ a big leap forward. However, if SQL Server 2016 was a big leap, then SQL Server
 levels. Database performance has reached a new peak with adaptive query
 processing, new flexibility with cross-platform capabilities, new integrations
 for statistical and data science analysis, and SQL Server versions on Linux&reg;,
-Ubuntu&reg;, or Docker&reg;. The new version adds solid technology with cost
+Ubuntu&reg; operating systems, or Docker&reg;. The new version adds solid technology with cost
 savings.
 
 The changes introduced in SQL Server 2017 discussed here include the following
@@ -62,7 +62,7 @@ features:
 SQL Server is no longer just a windows-based relational database management
 system (RDBMS). You can run it on different flavors of the Linux operating
 systems.  You can also develop applications with SQL Server on Linux, Windows,
-Ubuntu, or Docker and deploy them on these platforms.
+Ubuntu operating systems, or Docker and deploy them on these platforms.
 
 ### <a name="resumable-online-index-rebuild">Resumable online index rebuild</a>
 
@@ -318,4 +318,3 @@ updates, and SQL Server 2017 will be fully supported by Microsoft for longer tha
 SQL Server 2016.
 
 Use the Feedback tab to make any comments or ask questions.
-

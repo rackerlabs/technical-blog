@@ -31,7 +31,7 @@ So how do you invoke a sub-template in Heat? Simply create a resource that has i
       image:
         type: string
         label: Image name or ID
-        description: Image to be used for server. Please use an Ubuntu based image.
+        description: Image to be used for server. Please use an Ubuntu operating system based image.
         default: trusty-server-cloudimg-amd64
       flavor:
         type: string

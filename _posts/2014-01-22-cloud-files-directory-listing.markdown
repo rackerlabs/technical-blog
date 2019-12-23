@@ -25,7 +25,7 @@ separately. Clearly, a different solution was needed. And so I built one myself.
 
 The script below will retrieve a list of files within a container, convert that list into an HTML filelist and then upload that HTML-file into your Cloud Files container. You just have to make sure that you enable the `Static Website` option in the container settings in Cloud Files and you're set.
 
-The script is written in Bash and depends on httpie and jq, both which are available as packages on Ubuntu.
+The script is written in Bash and depends on httpie and jq, both which are available as packages on the Ubuntu operating system.
 
 To install httpie and jq, please type the following:
 

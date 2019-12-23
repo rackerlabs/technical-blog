@@ -15,7 +15,7 @@ A Performance comparison: Apache vs NGINX and OpenStack Keystone
 In a previous [article](https://developer.rackspace.com/blog/keystone_horizon_nginx_Ubuntu_1604),  I showed how to configure keystone to run behind NGINX instead of current recommended configuration using Apache. Since its inception, NGINX has enjoyed significant growth in the web server space. Netcraft monthly data web server market share for NGINX has grown significantly since its introduction. Data for May 2016 can be found at: http://news.netcraft.com/archives/2016/05/26/may-2016-web-server-survey.html
 <!-- more -->
 
-From that data, it is clear that in the OpenStack, Linux based world there are two web server leaders and potential choices to run as an interface for Keystone. In making this choice, there are a number of factors to consider, including ease of set up, security, and server performance. 
+From that data, it is clear that in the OpenStack, Linux based world there are two web server leaders and potential choices to run as an interface for Keystone. In making this choice, there are a number of factors to consider, including ease of set up, security, and server performance.
 
 NGINX is viewed as being easier to configure, however there is a learning curve for those not familiar with it. I wanted to see if there were any significant differences in terms of performance between NGINX and Apache as the interface for Keystone. For those running OpenStack at scale, this could be a significant factor in deciding which server to use.
 
@@ -27,7 +27,7 @@ I tested on virtual machines created under OpenStack, Apache and Keystone execut
 
 Seige (https://www.joedog.org/siege-home/) was used to load test keystone.
 
-The Siege query repeatedly queryed Keystone for a list of projects using an http request including the token as a header in the request. Since only two projects had been created, the complete response fit within a single TCP packet. The test software (Siege) only needed to check the packet size and that there was a 200 response code in the packet. The token was obtained using curl and stored as a shell variable for reuse in each query. The command to obtain a token was: 
+The Siege query repeatedly queryed Keystone for a list of projects using an http request including the token as a header in the request. Since only two projects had been created, the complete response fit within a single TCP packet. The test software (Siege) only needed to check the packet size and that there was a 200 response code in the packet. The token was obtained using curl and stored as a shell variable for reuse in each query. The command to obtain a token was:
 
     export OS_TOKEN=`curl -i -H "Content-Type: application/json" -d '{ "auth": { "identity": { "methods": ["password"], "password": { "user": { "name": "'"$OS_USERNAME"'", "domain": { "id": "default" }, "password": "'"$OS_PASSWORD"'" } } }, "scope": { "project": { "name": "'"$OS_TENANT_NAME"'", "domain": { "id": "default" } } } } }' http://10.0.1.3:5000/v3/auth/tokens|grep "X-Subject"|cut -d' ' -f2`
 
@@ -35,7 +35,7 @@ I have found that a recently started Apache server takes a while to get all of i
 
 The warmup run was:
 
-    siege -c 200 -t60s -H "X-Auth-Token: $OS_TOKEN"  http://10.0.1.3:5000/v3/projects 
+    siege -c 200 -t60s -H "X-Auth-Token: $OS_TOKEN"  http://10.0.1.3:5000/v3/projects
 
 This gets the Apache server loaded before doing the performance testing runs. As a side note, NGINX did not seem to need this preloading, but I did it on NGINX for consistency
 
@@ -55,11 +55,11 @@ Illustration 1 shows the results from 10 to 100 concurrent connections for both 
 
 ![Illustration 2 Apache vs Nginx 100 to 1000 Concurrent Connections]({% asset_path 2016-07-05-apache-nginx-keystone-perf-comparison/apache-nginx-keystone100.png %} "Illustration 2 Apache vs Nginx 100 to 1000 Concurrent Connections" )
 
-At the higher numbers of concurrent connections, the log files of both servers show 503 errors, happening when the server tried to connect to the wsgi or uwsgi processes running Keystone. The errors occured due to a lack of available connections. 
+At the higher numbers of concurrent connections, the log files of both servers show 503 errors, happening when the server tried to connect to the wsgi or uwsgi processes running Keystone. The errors occured due to a lack of available connections.
 
 Tuning for both environments:
 
-Increase the number of MySQL connections from 100 (default) to 200. 
+Increase the number of MySQL connections from 100 (default) to 200.
 
 Apache tuning:
 
@@ -124,6 +124,6 @@ Since NGINX uses uwsgi, the uwsgi  listen parameter sets the socket listen queue
 
 Looking at the results and watching the server while the performance test while running, it seems clear that the keystone python code is the performance limiting factor rather than Apache or NGINX. Tweaking the number of threads or processes within either Apache or NGINX will deliver very modest gains at best. The fact that NGINX is using uwsgi (and that uwsgi has several tunables) gives it an advantage in heavy load conditions. These tunables allow NGINX to handle a much higher number of concurrent connections than Apache.
 
-I did try running Apache using mod_uwsgi to see what effect that might have. The recommended solution is mod_proxy_uwsgi, but a bug in the current Ubuntu package prevents it working with Unix sockets. Siege had a bug which limited me to a maximum of 1000 concurrent connections. I used Apache Bench to test both Apache and NGINX using uwsgi, and both servers were able to handle up to 2000 concurrent connections with no errors.
+I did try running Apache using mod_uwsgi to see what effect that might have. The recommended solution is mod_proxy_uwsgi, but a bug in the current Ubuntu operating system package prevents it working with Unix sockets. Siege had a bug which limited me to a maximum of 1000 concurrent connections. I used Apache Bench to test both Apache and NGINX using uwsgi, and both servers were able to handle up to 2000 concurrent connections with no errors.
 
 Bottom line, the performance of Keystone using either Apache or NGINX was very similar, however uswgi out performed mod_wsgi on Apache under very heavy loads. The web server to use is a matter of preference, but consider using uswgi as opposed to mod_wsgi on Apache.

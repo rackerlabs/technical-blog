@@ -69,7 +69,7 @@ Similar to what we did on the controller node, we need to make several directori
     chown -R neutron:neutron /var/lib/neutron
     chown -R neutron:neutron /etc/neutron
 
-Set Ubuntu defaults to use a config option when using the upstart scripts, to start the neutron processes:
+Set Ubuntu operating system defaults to use a config option when using the upstart scripts, to start the neutron processes:
 
     cat >> /etc/default/neutron << EOF
     --config-file=/etc/neutron/plugins/ml2/ml2_conf.ini

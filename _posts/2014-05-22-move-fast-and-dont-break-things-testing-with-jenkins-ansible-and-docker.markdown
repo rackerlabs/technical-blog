@@ -44,11 +44,11 @@ For example we could do this:
 
 `docker pull ubuntu`
 
-And we will end up with an ubuntu image/application. We can then run the docker container by typing:
+And we will end up with an Ubuntu operating system image/application. We can then run the docker container by typing:
 
 `docker run -i -t ubuntu /bin/bash`
 
-And we will be in a fresh, newly created ubuntu environment.
+And we will be in a fresh, newly created Ubuntu operating system environment.
 
 But we don't want to manually run docker commands after every pull request. What we need, are Dockerfiles. Dockerfiles are sets of steps that describe an image/container. We'll use them to build our custom docker images.
 
@@ -106,7 +106,7 @@ ADD ./init.sh /
 ENTRYPOINT ./init.sh
 ```
 
-**FROM** Chooses the base image (ubuntu/latest)
+**FROM** Chooses the base image (Ubuntu operating system/latest)
 
 **RUN** Runs the following commands. First, we update the system ant then we install Xvfb, the latest firefox etc in order to run headless browser steps. Finally, we build the Mist.io app
 

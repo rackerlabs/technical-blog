@@ -24,9 +24,9 @@ container.builder, build version 10
 512 partitions, 3.000000 replicas, 1 regions, 4 zones, 4 devices, 0.00 balance
 The minimum number of hours before a partition can be reassigned is 1
 Devices:    id  region  zone      ip address  port  replication ip  replication port      name weight partitions balance meta
-             0       1     1   192.168.56.56  6001   192.168.56.56              6001     loop2 1000.00        384    0.00 
-             1       1     2   192.168.56.56  6001   192.168.56.56              6001     loop3 1000.00        384    0.00 
-             2       1     3   192.168.56.56  6001   192.168.56.56              6001     loop4 1000.00        384    0.00 
+             0       1     1   192.168.56.56  6001   192.168.56.56              6001     loop2 1000.00        384    0.00
+             1       1     2   192.168.56.56  6001   192.168.56.56              6001     loop3 1000.00        384    0.00
+             2       1     3   192.168.56.56  6001   192.168.56.56              6001     loop4 1000.00        384    0.00
              3       1     4   192.168.56.56  6001   192.168.56.56              6001     loop5 1000.00        384    0.00
 ```
 
@@ -37,9 +37,9 @@ object.builder, build version 10
 512 partitions, 3.000000 replicas, 1 regions, 4 zones, 4 devices, 0.00 balance
 The minimum number of hours before a partition can be reassigned is 1
 Devices:    id  region  zone      ip address  port  replication ip  replication port      name weight partitions balance meta
-             0       1     1   192.168.56.56  6000   192.168.56.56              6000     loop2 1000.00        384    0.00 
-             1       1     2   192.168.56.56  6000   192.168.56.56              6000     loop3 1000.00        384    0.00 
-             2       1     3   192.168.56.56  6000   192.168.56.56              6000     loop4 1000.00        384    0.00 
+             0       1     1   192.168.56.56  6000   192.168.56.56              6000     loop2 1000.00        384    0.00
+             1       1     2   192.168.56.56  6000   192.168.56.56              6000     loop3 1000.00        384    0.00
+             2       1     3   192.168.56.56  6000   192.168.56.56              6000     loop4 1000.00        384    0.00
              3       1     4   192.168.56.56  6000   192.168.56.56              6000     loop5 1000.00        384    0.00
 ```
 
@@ -50,9 +50,9 @@ account.builder, build version 10
 512 partitions, 3.000000 replicas, 1 regions, 4 zones, 4 devices, 0.00 balance
 The minimum number of hours before a partition can be reassigned is 1
 Devices:    id  region  zone      ip address  port  replication ip  replication port      name weight partitions balance meta
-             0       1     1   192.168.56.56  6002   192.168.56.56              6002     loop2 1000.00        384    0.00 
-             1       1     2   192.168.56.56  6002   192.168.56.56              6002     loop3 1000.00        384    0.00 
-             2       1     3   192.168.56.56  6002   192.168.56.56              6002     loop4 1000.00        384    0.00 
+             0       1     1   192.168.56.56  6002   192.168.56.56              6002     loop2 1000.00        384    0.00
+             1       1     2   192.168.56.56  6002   192.168.56.56              6002     loop3 1000.00        384    0.00
+             2       1     3   192.168.56.56  6002   192.168.56.56              6002     loop4 1000.00        384    0.00
              3       1     4   192.168.56.56  6002   192.168.56.56              6002     loop5 1000.00        384    0.00
 ```
 
@@ -76,11 +76,11 @@ Devices:    id  region  zone      ip address  port  replication ip  replication 
     512 partitions, 3.000000 replicas, 1 regions, 6 zones, 6 devices, 100.00 balance
     The minimum number of hours before a partition can be reassigned is 1
     Devices:    id  region  zone      ip address  port  replication ip  replication port      name weight partitions balance meta
-                 0       1     1   192.168.56.56  6002   192.168.56.56              6002     loop2 1000.00        384   50.00 
-                 1       1     2   192.168.56.56  6002   192.168.56.56              6002     loop3 1000.00        384   50.00 
-                 2       1     3   192.168.56.56  6002   192.168.56.56              6002     loop4 1000.00        384   50.00 
-                 3       1     4   192.168.56.56  6002   192.168.56.56              6002     loop5 1000.00        384   50.00 
-                 4       1     5   192.168.56.56  6002   192.168.56.56              6002     loop6 1000.00          0 -100.00 
+                 0       1     1   192.168.56.56  6002   192.168.56.56              6002     loop2 1000.00        384   50.00
+                 1       1     2   192.168.56.56  6002   192.168.56.56              6002     loop3 1000.00        384   50.00
+                 2       1     3   192.168.56.56  6002   192.168.56.56              6002     loop4 1000.00        384   50.00
+                 3       1     4   192.168.56.56  6002   192.168.56.56              6002     loop5 1000.00        384   50.00
+                 4       1     5   192.168.56.56  6002   192.168.56.56              6002     loop6 1000.00          0 -100.00
                  5       1     6   192.168.56.56  6002   192.168.56.56              6002     loop7 1000.00          0 -100.00
     ```
 
@@ -99,11 +99,11 @@ Devices:    id  region  zone      ip address  port  replication ip  replication 
     512 partitions, 3.000000 replicas, 1 regions, 6 zones, 6 devices, 1.17 balance
     The minimum number of hours before a partition can be reassigned is 1
     Devices:    id  region  zone      ip address  port  replication ip  replication port      name weight partitions balance meta
-                 0       1     1   192.168.56.56  6002   192.168.56.56              6002     loop2 1000.00        259    1.17 
-                 1       1     2   192.168.56.56  6002   192.168.56.56              6002     loop3 1000.00        256    0.00 
-                 2       1     3   192.168.56.56  6002   192.168.56.56              6002     loop4 1000.00        256    0.00 
-                 3       1     4   192.168.56.56  6002   192.168.56.56              6002     loop5 1000.00        256    0.00 
-                 4       1     5   192.168.56.56  6002   192.168.56.56              6002     loop6 1000.00        254   -0.78 
+                 0       1     1   192.168.56.56  6002   192.168.56.56              6002     loop2 1000.00        259    1.17
+                 1       1     2   192.168.56.56  6002   192.168.56.56              6002     loop3 1000.00        256    0.00
+                 2       1     3   192.168.56.56  6002   192.168.56.56              6002     loop4 1000.00        256    0.00
+                 3       1     4   192.168.56.56  6002   192.168.56.56              6002     loop5 1000.00        256    0.00
+                 4       1     5   192.168.56.56  6002   192.168.56.56              6002     loop6 1000.00        254   -0.78
                  5       1     6   192.168.56.56  6002   192.168.56.56              6002     loop7 1000.00        255   -0.39
     ```
 
@@ -116,7 +116,7 @@ Devices:    id  region  zone      ip address  port  replication ip  replication 
     ```
 
 #### Manual pages
-[Ubuntu swift-ring-builder manual page](http://manpages.ubuntu.com/manpages/precise/man8/swift-ring-builder.8.html)
+[Ubuntu operating system swift-ring-builder manual page](http://manpages.ubuntu.com/manpages/precise/man8/swift-ring-builder.8.html)
 
 [Linux swift-ring-builder manual page](http://linux.die.net/man/1/swift-ring-builder)
 

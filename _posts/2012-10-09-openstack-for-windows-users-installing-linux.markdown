@@ -27,13 +27,13 @@ I downloaded and installed [VirtualBox](https://www.virtualbox.org/) to host my 
 
 I decided to install OpenStack from scratch, not using the [Rackspace Private Cloud Software](http://www.rackspace.com/cloud/private/) deployment tools that automate the installation of the Server, Hypervisor and OpenStack. I wanted to really understand the inner workings myself.
 
-After asking some of our Rackspace technical talent I decided to go with a Linux distribution called Ubuntu 12.04 LTS (Precise Pangolin). Ubuntu also documents the [Ubuntu Cloud Infrastructure](https://help.ubuntu.com/community/UbuntuCloudInfrastructure) built on OpenStack on its wiki.  Some other distributions you could use include Suse, Debian and Fedora.
+After asking some of our Rackspace technical talent I decided to go with a Linux distribution called Ubuntu 12.04 LTS (Precise Pangolin). The [Ubuntu Cloud Infrastructure](https://help.ubuntu.com/community/UbuntuCloudInfrastructure) built on OpenStack is documented on the Ubuntu operating system wiki.  Some other distributions you could use include Suse, Debian and Fedora.
 
-I downloaded Ubuntu Server from [here](http://www.ubuntu.com/download/server), and picked the 64-Bit version. I now had the ISO image for my VM downloaded locally to my laptop.
+I downloaded the Ubuntu operating system from [here](http://www.ubuntu.com/download/server), and picked the 64-Bit version. I now had the ISO image for my VM downloaded locally to my laptop.
 
 I created a VM in VirtualBox and assigned the VM 4 GB of RAM and gave it 8 GB of Disk space. After powering on the VM in VirtualBox for the first time it asked me for the media to install the server from. I just pointed it to the ISO image I downloaded and continued the installation.
 
-There are various steps you have to go through when installing Ubuntu. The screenshot below shows these steps:
+There are various steps you have to go through when installing the Ubuntu operating system. The screenshot below shows these steps:
 
 
 {% img center 2012-10-09-openstack-for-windows-users-installing-linux/ubuntu_installer.jpg %}
@@ -104,7 +104,7 @@ ext2 and ext4 are file systems, similar to the native Windows FAT and NTFS file 
 #### Installing Additional Software Collections
 
 
-Up to this point I only installed the core Ubuntu server. The following screen allowed me to select additional packages to install. I selected OpenSSH, Lamp Server and Virtual Machine Host.
+Up to this point I only installed the core Ubuntu operating system. The following screen allowed me to select additional packages to install. I selected OpenSSH, Lamp Server and Virtual Machine Host.
 
 {% img center 2012-10-09-openstack-for-windows-users-installing-linux/software_selection.jpg %}
 
@@ -126,7 +126,7 @@ The GRUB boot loader reminds me of the BOOT.INI file in Windows. Within this fil
 ## Step 3 – Connect to my server
 
 
-This was a trickier than expected. There’s no Windows GUI anymore, so I couldn’t just fire up Remote Desktop to connect to my server. I decided to just use the actual terminal on the Ubuntu server running on the VM in VirtualBox. This is basically the same as using Command Prompt on your Windows server. If you needed to connect to the server remotely instead you could use free applications like Putty that allow you to connect to your Linux server through SSH.
+This was a trickier than expected. There’s no Windows GUI anymore, so I couldn’t just fire up Remote Desktop to connect to my server. I decided to just use the actual terminal on the Ubuntu operating system running on the VM in VirtualBox. This is basically the same as using Command Prompt on your Windows server. If you needed to connect to the server remotely instead you could use free applications like Putty that allow you to connect to your Linux server through SSH.
 
 I now had this screen in front of me:
 

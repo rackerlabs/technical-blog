@@ -22,7 +22,7 @@ We invite you to visit us at Apps World at booth #107 to learn more on how we ar
 
 **11:00-11:30	Intro to OpenStack - Niki Acosta, Cloud Evangelista**
 
-OpenStack, the open source cloud operating system, is changing the way that companies and providers are deploying and consuming cloud technologies. Founded by Rackspace and NASA, and backed by leading technology companies like Ubuntu, HP, IBM, Red Hat, and others, it is being called the "Linux of Cloud." In this session, Rackspace Cloud Evangelista Niki Acosta will provide an overview of the technology and explain why it's taking the IT industry by storm.
+OpenStack, the open source cloud operating system, is changing the way that companies and providers are deploying and consuming cloud technologies. Founded by Rackspace and NASA, and backed by leading technology companies like HP, IBM, Red Hat, and others, it is being called the "Linux of Cloud." In this session, Rackspace Cloud Evangelista Niki Acosta will provide an overview of the technology and explain why it's taking the IT industry by storm.
 
 **12:30-1:00 Rightscale: Managing the Dynamic World of Cloud - Paul Mourani, Rightscale**
 
@@ -46,7 +46,7 @@ An overview of techniques that have been proven to help websites survive high-tr
 
 **12:30-1:00 Intro to OpenStack - Niki Acosta, Cloud Evangelista**
 
-OpenStack, the open source cloud operating system, is changing the way that companies and providers are deploying and consuming cloud technologies. Founded by Rackspace and NASA, and backed by leading technology companies like Ubuntu, HP, IBM, Red Hat, and others, it is being called the "Linux of Cloud." In this session, Rackspace Cloud Evangelista Niki Acosta will provide an overview of the technology and explain why it's taking the IT industry by storm.
+OpenStack, the open source cloud operating system, is changing the way that companies and providers are deploying and consuming cloud technologies. Founded by Rackspace and NASA, and backed by leading technology companies like HP, IBM, Red Hat, and others, it is being called the "Linux of Cloud." In this session, Rackspace Cloud Evangelista Niki Acosta will provide an overview of the technology and explain why it's taking the IT industry by storm.
 
 **1:00-1:30 Rightscale: Managing the Dynamic World of Cloud - Paul Mourani, Rightscale**
 

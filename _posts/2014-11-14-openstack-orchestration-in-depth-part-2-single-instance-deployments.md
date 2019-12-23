@@ -41,7 +41,7 @@ of OpenStack, but I expect they will also work on the Icehouse release.
 
 The [cloud-init](http://cloudinit.readthedocs.org/) package is the defacto
 standard for initialization of cloud instances. It comes pre-installed on most
-official cloud images, including Ubuntu and Fedora, and it is even available on
+official cloud images, including the Ubuntu operating system and Fedora, and it is even available on
 the Cirros images used for testing. Cloud-init runs during the initial boot of
 an instance, and it contacts the Nova metadata service API to see if there are
 any actions that need to be carried out.
@@ -370,7 +370,7 @@ resource, which you can see defined above the server resource. This is a resourc
 of type `OS::Heat::RandomString`, and, as its name implies, generates random
 strings that can be used as passwords or keys.
 
-This script, written in bash, assumes the instance runs an Ubuntu based image.
+This script, written in bash, assumes the instance runs an Ubuntu operating system based image.
 The `-ex` option is given to bash so that all commands are logged to the console
 log, and, if any command returns an error, the script aborts immediately. This
 is very useful for debugging failures, so I always have it in my deployment

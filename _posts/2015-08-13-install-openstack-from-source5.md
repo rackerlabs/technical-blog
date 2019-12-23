@@ -86,7 +86,7 @@ Like we have done on the controller and network nodes, we need to create users u
 
     done
 
-Set Ubuntu defaults to use a config option, when using the upstart scripts, to start the neutron processes:
+Set Ubuntu operating system defaults to use a config option, when using the upstart scripts, to start the neutron processes:
 
     cat > /etc/default/neutron << EOF
     --config-file=/etc/neutron/plugins/ml2/ml2_conf.ini
@@ -453,6 +453,3 @@ And lastly, restart the associated services:
     restart nova-scheduler
 
 That was easy. In the next and concluding article of this series, we go to the controller node and install the Volume service (cinder) and the web based dashboard (horizon).
-
-
-
