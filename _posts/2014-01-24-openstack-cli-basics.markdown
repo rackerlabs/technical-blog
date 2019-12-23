@@ -113,7 +113,7 @@ Let's take a look and see what instances are currently running:
 
     nova list
 
-Let's boot an ubuntu image using the admin keypair:
+Let's boot an Ubuntu operating system image using the admin keypair:
 
     nova boot ubuntutest --flavor 2 --image cirros --key-name adminKey
 

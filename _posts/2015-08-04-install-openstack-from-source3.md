@@ -123,7 +123,7 @@ And let nova populate the database with the needed tables:
 
 We are almost ready to start nova, but we must first create the several needed nova upstart scripts. We need to start the nova api, cert, consoleauth, conductor and scheduler processes:
 
-Note: These scripts are just copied from the scripts that the Ubuntu packaged version of nova installs.
+Note: These scripts are just copied from the scripts that the Ubuntu operating system packaged version of nova installs.
 
 Nova api:
 
@@ -224,4 +224,3 @@ If one or more of the nova services does not start (or stay) running, use the ap
     sudo -u nova nova-scheduler --config-file=/etc/nova/nova.conf
 
 We now have the major OpenStack processes running on the controller node, and in the next article, our focus moves to the network node. We will install various neutron pieces that need to be running there, then move to the compute node and finally back to the controller node to install the Volume service (cinder) and the dashboard (horizon).
-

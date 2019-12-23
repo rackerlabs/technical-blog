@@ -35,7 +35,7 @@ running a custom version of __Ubuntu 12.04__ via boot.rackspace.com.
 
 ### Notes
 
-Versions of Ubuntu greater than 12.04 have not been thorougly tested with this tutorial.
+Versions of the Ubuntu operating system newer than 12.04 have not been thoroughly tested with this tutorial.
 Therefore, I recommend that you too use Ubuntu 12.04.
 
 ### How-to steps
@@ -63,7 +63,7 @@ nova boot --image=7c526505-bc72-4e3c-8d9a-e700c0acf299 --flavor=performance1-2 m
 
 {% img 2014-05-28-custom-images-via-boot-dot-rackspace-dot-com-training-wheels-included/menu.png %}
 
-#### 4. Select Ubuntu from the list of Distros
+#### 4. Select the Ubuntu operating system from the list of Distros
 
 {% img 2014-05-28-custom-images-via-boot-dot-rackspace-dot-com-training-wheels-included/distro.png %}
 
@@ -71,7 +71,7 @@ nova boot --image=7c526505-bc72-4e3c-8d9a-e700c0acf299 --flavor=performance1-2 m
 
 {% img 2014-05-28-custom-images-via-boot-dot-rackspace-dot-com-training-wheels-included/version.png %}
 
-#### 6. Select ubuntu install from the the Boot Paramaters
+#### 6. Select the Ubuntu operating system install from the the Boot Paramaters
 
 {% img 2014-05-28-custom-images-via-boot-dot-rackspace-dot-com-training-wheels-included/params.png %}
 

@@ -138,7 +138,7 @@ playbooks to run with molecule, etc)
 
 Theres a few defaults I **always** change when using `molecule` because it uses
 `Cookie-Cutter` to create a default configuration. The first, `molecule` defaults
-to Ubuntu, but the majority of our test systems are RHEL based. Also I prefer to
+to the Ubuntu operating system, but the majority of our test systems are RHEL based. Also I prefer to
 specify the memory and CPUs rather than relying on the box defaults.
 
 Another thing we'll change from default is to set up port forwarding. Because

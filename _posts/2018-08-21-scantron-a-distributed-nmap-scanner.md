@@ -86,7 +86,7 @@ tasks and provide scan status updates.
 
 Scantron is coded for Python3 exclusively and leverages Django for the web
 front-end, Django REST Framework as the API endpoint, and PostgreSQL as the
-database.  It comes complete with Ubuntu-focused Ansible playbooks for smooth
+database.  It comes complete with Ubuntu operating system-focused Ansible playbooks for smooth
 deployments.  Scantron has only been tested on Ubuntu 16.04.3 and 18.04.1, but
 it might be compatible with other operating systems with some slight modifications.
 

@@ -7,7 +7,7 @@ author: Jordan Evans
 categories:
   - Cloud Servers
 ---
-EDIT: This blog post has been edited! As it turns out, the preseed was stored in a location that didn't always work. Instead, we now decompress the initrd.gz, and add a preseed there. This is a better location, because the Ubuntu installer always looks for it there, even if not told to. We also moved installing the new kernel to the end of the preseed, to be sure it runs all the postinstall scripts. We changed how we remove the 2.6 kernel to specifically catch the version before removing it.
+EDIT: This blog post has been edited! As it turns out, the preseed was stored in a location that didn't always work. Instead, we now decompress the initrd.gz, and add a preseed there. This is a better location, because the Ubuntu operating system installer always looks for it there, even if not told to. We also moved installing the new kernel to the end of the preseed, to be sure it runs all the postinstall scripts. We changed how we remove the 2.6 kernel to specifically catch the version before removing it.
 
 Here at Rackspace on the Cloud Monitoring team, we use Ubuntu 10.04 LTS. We recently purchased some new Dell Poweredge R720 (our older standard hardware wasn't offered anymore) and we found out the new hardware is not supported by the 10.04 default kernel!
 
@@ -16,7 +16,7 @@ Our original workaround was to build the new drivers against the 10.04 2.6 kerne
 Therefore we set out to build an Ubuntu 10.04 installer that runs on, and installs, a more recent kernel.<!-- more -->
 
 We chose to use the linux-image-server-lts-backport-oneiric image, which currently installs the linux-image-3.0.0-30-server package (and sets up the grub config, etc).
- 
+
 ## Prerequisites
 
 This needs to be done on Ubuntu 10.04, so spin up a vm or Cloud Server, and do the following.
@@ -25,7 +25,7 @@ Lets start by installing some required packages
 
 ```bash
 $ sudo apt-get install build-essential pbuilder bc debiandoc-sgml libbogl-dev glibc-pic libslang2-pic libnewt-pic genext2fs mklibs genisoimage dosfstools syslinux tofrodos mtools po4a bf-utf-source fakeroot crash kexec-tools makedumpfile kernel-wedge
-``` 
+```
 
 We will also need to add the following lines to `/etc/apt/sources.list`
 
@@ -114,7 +114,7 @@ d-i debian-installer/splash boolean false
 d-i oem-config-udeb/frontend string debconf
 # Add the network and tasks oem-config steps by default.
 oem-config oem-config/steps multiselect language, timezone, keyboard, user, network, tasks
-# Remove 2.6 kernel 
+# Remove 2.6 kernel
 d-i preseed/late_command string \
 in-target apt-get install -y linux-image-server-lts-backport-oneiric && in-target apt-get remove -y $(echo `expr match "$(in-target dpkg --get-selections | grep linux-image-2.6)" '\(linux-image-2\.6\...-..-server\)'`)
 ```
@@ -129,7 +129,7 @@ $ mkdir new_iso
 $ cp -r iso/ new_iso/
 $ cp initrd.gz  new_iso/
 $ mkisofs -o dest/netboot/10.04_custom_kernel.iso -r -J -no-emul-boot -boot-load-size 4 -boot-info-table -b isolinux.bin -c isolinux.cat tmp/new_iso/
-``` 
+```
 
 And we're done! `dest/netboot/10.04_custom_kernel.iso` contains your new iso that runs off, and installs, a 3.0 kernel.
 
@@ -144,7 +144,7 @@ Building our own installer provides several advantages over the old method of do
 
 You can find an iso built with the exact steps above [here](https://86fbf08e343b5d5dc177-be6096dd7b17231f28632d8c229287b5.ssl.cf2.rackcdn.com/rax_mini_10.04.iso).
 
-The instructions were based on [Debian documentation](http://wiki.debian.org/DebianInstaller/Modify/CustomKernel), modified slightly for use on Ubuntu. If you need to run on your own custom kernel image (we used kernel images in the Ubuntu repo) then those instructions are likely to be more helpful.
+The instructions were based on [Debian documentation](http://wiki.debian.org/DebianInstaller/Modify/CustomKernel), modified slightly for use on the Ubuntu operating system. If you need to run on your own custom kernel image then those instructions are likely to be more helpful.
 
 ## Notes on choice of netboot image
 

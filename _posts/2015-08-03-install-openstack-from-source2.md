@@ -106,7 +106,7 @@ If you do not get the Identity service signing certificates for the Image servic
 
 We are almost ready to start glance, but we must first create the glance upstart scripts:
 
-Note: These scripts are just copied from the scripts that the Ubuntu packaged version of glance installs.
+Note: These scripts are just copied from the scripts that the Ubuntu operating system packaged version of glance installs.
 
     cat >> /etc/init/glance-api.conf << EOF
     description "Glance API server"
@@ -150,7 +150,7 @@ If glance started, we should see a line from the last command showing informatio
 
 **Note:** Setting the value `debug = True` in the file `/etc/glance/glance.conf` will increade the logging output, for help in debugging failures.
 
-Next, install an image into glance for use once we have OpenStack fully installed as a basis for VMs. There is a small cloud image based on Ubuntu that is available, named cirros. With glance running download the cirros image and load it into glance:
+Next, install an image into glance for use once we have OpenStack fully installed as a basis for VMs. There is a small cloud image based on the Ubuntu operating system that is available, named cirros. With glance running download the cirros image and load it into glance:
 
     wget http://cdn.download.cirros-cloud.net/0.3.3/cirros-0.3.3-x86_64-disk.img
 

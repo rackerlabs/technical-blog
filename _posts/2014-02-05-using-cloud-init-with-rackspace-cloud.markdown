@@ -30,7 +30,7 @@ any changes you make. 
 
 What if you want something simple that's easy to use but is powerful enough to compliment your existing configuration management?
 
-Enter cloud-init, a project by Canonical that is designed to work
+Enter cloud-init, a project that is designed to work
 across cloud providers and public/private clouds. It's easy to
 use, and can be a great alternative or complement to your
 existing configuration management. 
@@ -166,9 +166,9 @@ to format and mount them; many customers want to automate this at boot
 time so lets make cloud-init do that for us.
 
 For this example I'm going to take some examples from the Rackspace
-Knowledge Center on [formatting](http://www.rackspace.com/knowledge_center/article/preparing-data-disks-on-linux-performance-cloud-servers) your extra data disks, and the cloud-init
+Knowledge Center on [formatting](https://support.rackspace.com/how-to/preparing-data-disks-on-linux-cloud-servers/) your extra data disks, and the cloud-init
 documentation for the [‘fs_setup’](http://bazaar.launchpad.net//~cloud-init-dev/cloud-init/trunk/view/891/doc/examples/cloud-config-disk-setup.txt) and [‘mounts’](http://bazaar.launchpad.net//~cloud-init-dev/cloud-init/trunk/view/891/doc/examples/cloud-config-mount-points.txt) modules. This Performance2-120GB flavor has 4x300GB disks ; if using a
-different flavor, refer this [article](http://www.rackspace.com/knowledge_center/article/what-is-new-with-performance-cloud-servers) to learn more about how many disks are
+different flavor, refer this [article](https://support.rackspace.com/how-to/rackspace-cloud-essentials-choosing-the-right-size-cloud-server/) to learn more about how many disks are
 assigned to each flavor in the Performance class.
 
 
@@ -234,7 +234,7 @@ After we've setup the file system that we want it's time to mount it.
 This follows the same pattern of one section per
 device, which follows the mount options and syntax that
 you'd find in 'etc/fstab'. The `mount_default_fields` lets us
-specify default values for each device. In this example we specifiy
+specify default values for each device. In this example we specify
 additional entries for the first device 'xvde1'. Rather than add the
 specification for each device, this information can be set in the
 `mount_defaults` section to save time and space. Feel free to read the `fs_setup` and `mounts`

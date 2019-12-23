@@ -346,7 +346,7 @@ Change the CACHES section to:
     #    }
     #}
 
-The default Ubuntu Apache configuration uses /horizon as the application root, but we will use `/`
+The default Ubuntu operating system Apache configuration uses /horizon as the application root, but we will use `/`
 Configure auth redirects:
 
     sed -i "s|# LOGIN_URL = WEBROOT + 'auth/login/'|LOGIN_URL='/auth/login/|g" /etc/openstack_dashboard/local_settings.py
@@ -407,5 +407,3 @@ If the service didn't start, use the following command to test nova-novncproxy a
     sudo -u nova nova-novncproxy --config-file=/etc/nova/nova.conf
 
 That finishes up the OpenStack install. You can point your browser to the outside interface on the controller node and access the OpenStack dashboard. The login credentials are in the openrc file in the `/root` directory on the controller node. Good luck with your newly created OpenStack setup.
-
-

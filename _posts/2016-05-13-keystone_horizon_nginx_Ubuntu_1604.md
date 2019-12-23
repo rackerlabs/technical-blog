@@ -27,11 +27,11 @@ First, stop the running keystone and apache services:
     service keystone stop
     systemctl disable apache2.service
 
-Apache uses wsgi, however NGINX has no direct wsgi support. Instead there are several projects that bring wsgi functionality to NGINX. We will use the uwsgi packages provided by Ubuntu. Install the NGINX server and other required packages:
+Apache uses wsgi, however NGINX has no direct wsgi support. Instead there are several projects that bring wsgi functionality to NGINX. We will use the uwsgi packages provided by the Ubuntu operating system. Install the NGINX server and other required packages:
 
     apt-get install -y nginx libgd-tools nginx-doc python-django-uwsgi uwsgi uwsgi-core uwsgi-emperor uwsgi-plugin-python
 
-Since Ubuntu usually starts services when the package is installed, stop the nginx service until we get it configured:
+Since the Ubuntu operating system usually starts services when the package is installed, stop the nginx service until we get it configured:
 
     service nginx stop
 
@@ -64,7 +64,7 @@ and a base directory for the keystone wsgi python script:
 
     mkdir /var/www/keystone
 
-Keystone comes with a python script for interfacing to servers running a wsgi interface. Keystone listens on two tcp ports, one for processing admin level requests and one for requests that don't need admin level permissions. If you installed keystone from the Ubuntu package tree, this file was not included the the keystone packages. You will need to download it. For those having installed OpenStack from source, you will need to just copy the file as shown below. One copy will be used to handle requests that need the keystone admin role and the other copy is for non-admin requests.
+Keystone comes with a python script for interfacing to servers running a wsgi interface. Keystone listens on two tcp ports, one for processing admin level requests and one for requests that don't need admin level permissions. If you installed keystone from the Ubuntu operating system package tree, this file was not included the the keystone packages. You will need to download it. For those having installed OpenStack from source, you will need to just copy the file as shown below. One copy will be used to handle requests that need the keystone admin role and the other copy is for non-admin requests.
 
 To download it use:
 

@@ -164,7 +164,7 @@ Set keystone for proper log rotation:
     }
     EOF
 
-OpenStack does not provide any start up scripts for the services. The script needed depends on the distribution and whether an upstart or a systemd script is needed. For Ubuntu 14.04, an upstart script is needed.  The following is an upstart script that starts the keystone service (this is a slightly modified version from the Ubuntu package install):
+OpenStack does not provide any start up scripts for the services. The script needed depends on the distribution and whether an upstart or a systemd script is needed. For Ubuntu 14.04, an upstart script is needed.  The following is an upstart script that starts the keystone service (this is a slightly modified version from the Ubuntu operating system package install):
 
 Keystone Upstart script
 

@@ -104,7 +104,7 @@ You can also read more about the [PV-HVM Linux drivers](http://wiki.xen.org/wiki
 
 So, terminology aside, today, when you boot any Linux image on Rackspace Cloud, that image uses standard paravirtualization (PV), for Windows and FreeBSD we use HVM. In the case of the new Performance Cloud Servers, we still default to PV images, and are currently testing PV on HVM images. PV-HVM images can be great for CPU-intensive workloads (as you'll see).
 
-For these benchmarks - I tested all three styles - our current (well, as of yesterday) Next Gen Cloud Server (PV), Performance PV and Performance PV-HVM. We should be rolling out the PV-HVM images to customers as soon as our quality engineers are happy with their stability and functionality. As it is you **could** use them today (for Fedora 19 and Ubuntu) 13.04 using the **nova** client to pick one of the test images:
+For these benchmarks - I tested all three styles - our current (well, as of yesterday) Next Gen Cloud Server (PV), Performance PV and Performance PV-HVM. We should be rolling out the PV-HVM images to customers as soon as our quality engineers are happy with their stability and functionality. As it is you **could** use them today (for Fedora 19 and Ubuntu 13.04) using the **nova** client to pick one of the test images:
 
 * Fedora 19 image ID: a12bf25c-e098-45bd-8a7b-b2ed89db250f
 * Ubuntu 13.04 image ID: 62df001e-87ee-407c-b042-6f4e13f5d7e1
@@ -149,7 +149,7 @@ And now the 30GB, 8 CPU Performance Cloud server, multiple process edition ([cli
 * **30GB Performance PV 6 run average unixbench System Score**: 1974.24 (~29% higher than baseline)
 * **30GB Performance PV-HVM 6 run average unixbench System Score**: 4876 (~260% higher than baseline)
 
-They're pretty fast, I'd say - but you can look at the raw data and draw your own conclusions. Using the PV-HVM enabled Ubuntu image sees massive increases in the overall performance on both the 1GB and the 30GB Performance flavors.
+They're pretty fast, I'd say - but you can look at the raw data and draw your own conclusions. Using the PV-HVM enabled Ubuntu operating system image sees massive increases in the overall performance on both the 1GB and the 30GB Performance flavors.
 
 #### Second up; fio
 
