@@ -129,7 +129,7 @@ authorAvatar: 'https://s.gravatar.com/avatar/62a512ada4789514ddecc061e501be64'
 bio: n/a
 
 Sharma, Ravi kant 
-authorAvatar: 'https://s.gravatar.com/avatar/c7776b42759c729500163fc6588221ac’
+authorAvatar: 'http://0.gravatar.com/avatar/c7776b42759c729500163fc6588221ac'
 bio: n/a
 
 Srivastava, Deepanker 
