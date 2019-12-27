@@ -6,6 +6,7 @@ comments: true
 author: Amit Bhatnagar
 published: true
 authorIsRacker: true
+authorAvatar: 'https://s.gravatar.com/avatar/ea77be7be4ebf7aed353087f677104be'
 categories:
   - database
 metaTitle: "Apache Cassandra backup and recovery"

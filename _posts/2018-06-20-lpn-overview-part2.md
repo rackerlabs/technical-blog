@@ -6,8 +6,10 @@ comments: true
 author: Sharad Kukreja
 published: true
 authorIsRacker: true
+authorAvatar: 'https://s.gravatar.com/avatar/3533f66c2c0826e45a3cf9b8c64ef617'
 categories:
     - Oracle
+    - Database
 ---
 
 Originally published by Tricore: March 15, 2017
@@ -132,7 +134,7 @@ When using PuTTy on your mobile device, you can save time with the following
 shortcuts:
 
 | **Action**&nbsp; &nbsp; &nbsp; &nbsp; | **Shortcut** |
-|-------------------------------------- |------------- |
+| ------------------------------------- | ------------ |
 | Help                                  | F1           |
 | Return to menu                        | F2           |
 | Back                                  | F3           |

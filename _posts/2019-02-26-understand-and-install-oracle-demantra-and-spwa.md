@@ -6,6 +6,7 @@ comments: true
 author: Narendra Dixit
 published: true
 authorIsRacker: true
+authorAvatar: 'https://s.gravatar.com/avatar/2ea19c113ac5dd7ab4879607f1468950'
 categories:
   - Oracle
   - Database

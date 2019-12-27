@@ -6,8 +6,10 @@ comments: true
 author: Sharad Kukreja
 published: true
 authorIsRacker: true
+authorAvatar: 'https://s.gravatar.com/avatar/3533f66c2c0826e45a3cf9b8c64ef617'
 categories:
     - Oracle
+    - Database
 ---
 
 Originally published by Tricore: March 14, 2017

@@ -38,6 +38,10 @@ Crumpler, Shaun
 authorAvatar: 'https://secure.gravatar.com/avatar/c26423ec960c158dbdbcbee1f61ea7b5'
 bio: "Shaun Crumpler is a 7 year Racker, who focuses on applying his MBA to the technical space to evolve and transform processes, promoting change and agility.  His technical expertise spans Linux operating systems, the Rackspace Public Cloud infrastructure, and the AWS infrastructure.  He was awarded the Fanatical Jacket, Rackspace’s highest honor, because of the focus that he places on fanatically supporting not only external customers, but internal customers as well."
 
+Dixit, Narendra
+authorAvatar: 'https://s.gravatar.com/avatar/2ea19c113ac5dd7ab4879607f1468950'
+bio: n/a
+
 Friedman, Jordan 
 authorAvatar: 'https://s.gravatar.com/avatar/f2f71a634ccd1e79ea3b3b317f8b4161'
 bio: n/a
@@ -80,6 +84,10 @@ Krpan, Janice
 authorAvatar: 'https://s.gravatar.com/avatar/7662b14a4b4ce42f1a0775b2a93634c4'
 bio: n/a
 
+Kukreja, Sharad
+authorAvatar: 'https://s.gravatar.com/avatar/3533f66c2c0826e45a3cf9b8c64ef617'
+bio: n/a
+
 Mattson, Josh 
 authorAvatar: 'http://www.gravatar.com/avatar/791617263c70278859e1b26c15d13eab'
 bio: n/a
@@ -94,6 +102,10 @@ bio: "As a Senior Product Architect at Rackspace, Michael draws upon his 20 year
 
 Olivier, Sarah 
 authorAvatar: 'https://s.gravatar.com/avatar/17c40729ddeea22c93734e4d0870fb85'
+bio: n/a
+
+Pandey, Amit kumar  
+authorAvatar: 'https://s.gravatar.com/avatar/c6bddf3d409b0e1975d01962a7317e2b'
 bio: n/a
 
 Piva, Lauren 
@@ -117,7 +129,7 @@ authorAvatar: 'https://s.gravatar.com/avatar/62a512ada4789514ddecc061e501be64'
 bio: n/a
 
 Sharma, Ravi kant 
-authorAvatar: 'https://s.gravatar.com/avatar/c7776b42759c729500163fc6588221ac’
+authorAvatar: 'http://0.gravatar.com/avatar/c7776b42759c729500163fc6588221ac'
 bio: n/a
 
 Srivastava, Deepanker 
