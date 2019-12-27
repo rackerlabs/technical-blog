@@ -6,6 +6,7 @@ comments: true
 author: Amit Kumar Pandey
 published: true
 authorIsRacker: true
+authorAvatar: 'https://s.gravatar.com/avatar/c6bddf3d409b0e1975d01962a7317e2b'
 categories:
     - Database
 metaTitle: "Microsoft SQL Server log shipping on existing AlwaysOn databases"
