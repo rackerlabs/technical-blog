@@ -6,6 +6,8 @@ comments: true
 author: Ravi Kant Sharma
 published: true
 authorIsRacker: true
+authorIsRacker: true
+authorAvatar: 'http://0.gravatar.com/avatar/c5a8a633797f4b8c85b5b5bad605cd18'
 categories:
     - Oracle
     - Database
