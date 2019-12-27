@@ -9,7 +9,7 @@ authorIsRacker: true
 authorAvatar: 'https://s.gravatar.com/avatar/c7776b42759c729500163fc6588221ac’
 categories:
     - Oracle
-    - database
+    - Database
 metaTitle: "Recover the Oracle voting disk when its backup is missing"
 metaDescription: "This blog explores a scenario where you've lost an Oracle Cluster Registry (OCR) and voting disk, and the voting disk has no backup."
 ogTitle: "Recover the Oracle voting disk when its backup is missing"
