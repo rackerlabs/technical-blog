@@ -56,7 +56,7 @@ specified session. Following are some variations:
 
         ALTER SYSTEM CANCEL SQL '723, 45325, 84djy3b3xgvq';
 
--- Specified SQL in session on instance with **INST\_ID** = 1.
+- Specified SQL in session on instance with **INST\_ID** = 1.
 
         ALTER SYSTEM CANCEL SQL '723, 45325, @1, 84djy3b3xgvq';
 
