@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "New features in Oracle version 18C"
+title: "New features in Oracle Database 18c"
 date: 2020-1-2 00:01
 comments: true
 author: Puneet Vohra
@@ -9,18 +9,18 @@ authorIsRacker: true
 categories:
     - Oracle
     - database
-metaTitle: "New features in Oracle version 18C"
-metaDescription: "This blog discusses the new interesting features introduced in Oracle Database version 18c which have made the life of DBA a little easier."
+metaTitle: "New features in Oracle 18c"
+metaDescription: "This blog discusses the new interesting features introduced in Oracle Database 18c that make the life of DBA a little easier."
 ogTitle: "New features in Oracle version 18C"
-ogDescription: "This blog discusses the new interesting features introduced in Oracle Database version 18c which have made the life of DBA a little easier."
+ogDescription: "This blog discusses the new interesting features introduced in Oracle Database 18c that make the life of DBA a little easier."
 ---
 
-This blog discusses the new interesting features introduced in Oracle Database
-version 18c which have made the life of DBA a little easier.
+This blog discusses the new interesting features introduced in Oracle Database 18c that make the
+life of DBA a little easier.
 
 <!-- more -->
 
-Oracle v18C introduces the following new features:
+Oracle Database 18c introduces the following new features:
 
 - SQL cancelling
 - Password file location
@@ -29,12 +29,12 @@ Oracle v18C introduces the following new features:
 
 ### SQL cancelling
 
-Oracle v18C introduces a new command that database administrators (DBAs) can use
+Oracle Database 18c introduces a new command that database administrators (DBAs) can use
 to cancel blocking, or overly expensive, statements without needing to kill the
-original session. In earlier releases, DBAs use the `alter session kill` command
+original session. In earlier releases, DBAs used the `alter session kill` command
 to terminate the session. The new `alter system cancel` SQL command cancels an
 SQL statement in a session, providing an alternative to killing a rogue session
-in the Oracle Database v18c.
+in the Oracle Database 18c.
 
 Use the following syntax for the `alter system cancel` SQL statement:
 
@@ -62,9 +62,9 @@ specified session. Following are some variations:
 
 ### Password file location
 
-The default location for the Oracle v18c Database password file is now
-**ORACLE\_BASE** instead of **ORACLE\_HOME/dbs**. This enables you to use Oracle
-home as a static repository for database files.
+The default location for the Oracle Database 18c password file is now
+**ORACLE\_BASE** instead of **ORACLE\_HOME/dbs**. This change enables you to use
+Oracle Home as a static repository for database files.
 
 The new location simplifies database migrations because **ORACLE\_BASE** is
 common to every installation's **ORACLE\_HOME**. Migrating a database from one
@@ -76,11 +76,11 @@ common to every installation's **ORACLE\_HOME**. Migrating a database from one
 
 ### Read-only Oracle Home
 
-The new password file location feature allows you to mount one shared read-only
+The new password file location enables you to mount one shared read-only
 Oracle Home on different systems, making deployment for complex architectures
 more reliable and simpler. In other words, a read-only Oracle Home separates the
 software from the database configuration information and log files, which enables
-you to easily share the software across different deployments. A read-only Oracle
+you to share the software across different deployments easily. A read-only Oracle
 Home also simplifies version control and standardization.
 
 Use the following steps to enable the read-only
@@ -96,12 +96,12 @@ Oracle Home:
 
 ### Private temporary tables
 
-Oracle v18c introduces the concept of a private temporary table&mdash;a
+Oracle Database 18c introduces the concept of a private temporary table&mdash;a
 memory-based temporary table that is dropped at the end of the session or
 transaction depending on the setup. In the previous releases, you can create a
 Global Temporary Table (GTT), which is a permanent metadata object that holds
-rows in temporary segments on a transaction-specfic or session-specific basis.
-Normaly, you don't create and drop GTTs on the fly. With the introduction of
+rows in temporary segments on a transaction-specific or session-specific basis.
+Normally, you don't create and drop GTTs on the fly. With the introduction of
 private temporary tables, Oracle has a similar option available in other engines,
 where the table object itself is temporary, not just the data.
 
@@ -125,9 +125,9 @@ Use the following syntax to create a private temporary table:
 
 We recommend that you take advantage of these new features, such as using SQL
 cancelling to clear any identified sessions from the database. The read-only
-**ORACLE\_HOME** feature enables you to easily share the software across
-different deployments. With the introduction of private temporary tables, you
-can quickly create a temporary table without having to keep a track of it,
+**ORACLE\_HOME** feature enables you to share the software across
+different deployments easily. With the introduction of private temporary tables, you
+can quickly create a temporary table without having to keep track of it,
 because Oracle automatically drops it at the end of the transaction. Depending
 on what situation that you need to handle, you can use any of these features
 to save time.
