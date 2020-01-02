@@ -6,6 +6,7 @@ comments: true
 author: Puneet Vohra
 published: true
 authorIsRacker: true
+authorAvatar: 'https://s.gravatar.com/avatar/3466113cd78ff94ad572b18f2cd5d599'
 categories:
     - Oracle
     - database
