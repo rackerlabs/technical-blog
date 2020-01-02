@@ -19,9 +19,9 @@ You should consider four questions to decide if Salesforce is the right solution
 
 <!-- more -->
 
-Regardless of your company’s industry or size, customer relationships are critical to your success. That’s why customer relationship management (CRM) systems like Salesforce are indispensable to businesses. A CRM helps you manage everything from lead generation and prospect nurturing to interactions with your current customers, all in one centralized system.
+Regardless of your company’s industry or size, customer relationships are critical to your success. That’s why customer relationship management (CRM) systems like Salesforce are indispensable to businesses. A CRM helps you manage everything from lead generation and prospect nurturing to interactions with your current customers&mdash;all in one centralized system.
 
-Whether it’s a small art gallery, a large e-commerce business or a technology start-up, our diverse clients benefit from Salesforce&mdash;and we understand firsthand that this transition can feel like a big step. So, how do you know if investing in Salesforce is the right move for your company?
+Whether it’s a small art gallery, a large e-commerce business, or a technology start-up, our diverse clients benefit from Salesforce&mdash;and we understand firsthand that this transition can feel like a big step. So, how do you know if investing in Salesforce is the right move for your company?
 
 If you’re considering implementing Salesforce at your company, these four questions help to identify whether this powerful CRM is a good fit for your business needs:
 
