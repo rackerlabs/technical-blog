@@ -1,12 +1,12 @@
-Anand, Vikrant 
+Anand, Vikrant
 authorAvatar: 'https://s.gravatar.com/avatar/98991c72835ea03135094fb2a1b6e3c0’
 bio: n/a
 
-Bhatnagar, Amit Kumar 
-authorAvatar: 'https://s.gravatar.com/avatar/ea77be7be4ebf7aed353087f677104be'
+Bhatnagar, Amit Kumar
+authorAvatar: 'https://s.gravatar.com/avatar/c9c74dd30299675961e5160a4fbb05fe'
 bio: n/a
 
-Belke, Emily 
+Belke, Emily
 authorAvatar: 'https://s.gravatar.com/avatar/4a7de5d7772b14826cca8496c410ba88'
 bio: n/a
 
@@ -14,27 +14,27 @@ Bonig, Matthew
 authorAvatar: 'https://s.gravatar.com/avatar/17fefeb3c1832175bf6fbe9841368292'
 bio: "As a Senior Software Engineer at Rackspace, Matthew draws upon his 15 years of web application development experience to help architect highly-available, fault-tolerant, scalable, and secure AWS environments composed of a wide range of services in the AWS portfolio, including Compute, Storage, Database, Networking, Developer Tools, and more. He is an AWS certified Solutions Architect. His hobbies include hiking the foothills of Colorado and walks with his wife and dogs."
 
-Booth, Karisa 
+Booth, Karisa
 authorAvatar: 'http://0.gravatar.com/avatar/c5a8a633797f4b8c85b5b5bad605cd18'
 bio: "Karisa is an experienced Cloud Architect with a demonstrated history of working in the information technology and services industry. She is skilled in working with a variety of verticals including Nonprofit Organizations, Higher Education, Retail, and HLS; providing Technical Evaluations, Program Execution, Customer Relationship Management (CRM), Event Management, and Marketing/Tech. Karisa is passionate about cloud technology and marketing, and combining these to create unique solutions for clients."
 
-Brinkman, Michiel 
+Brinkman, Michiel
 authorAvatar: 'https://gravatar.com/avatar/e360e0501d74b0de5be9250474951354'
 bio: "Michiel Brinkman is a Solutions Architect working for Rackspace from Amsterdam, The Netherlands. Multi-cloud certified with a strong engineering background."
 
-Carbone, Denise 
+Carbone, Denise
 authorAvatar: 'https://s.gravatar.com/avatar/621ec460934803c15e9b2c4ff6cbf75f'
 bio: n/a
 
-Carter, Nikki 
+Carter, Nikki
 authorAvator: 'https://1.gravatar.com/avatar/3177b82ffcbe59f1f3e6e155d3c94e7a'
 bio: "Nikki Carter is a Content Strategist on the Digital Marketing Services Team at RelationEdge. She has extensive experience creating and editing content and marketing assets for a variety of verticals, including healthcare, technology, and wellness. Nikki is passionate about freedom, telling the truth, and supporting other women/non-binary folks of color."
 
-Croteau, Paul 
+Croteau, Paul
 authorAvatar: 'https://en.gravatar.com/userimage/1316548/544d0908ada5d93056e89afc7d240c23.png?size=200'
 bio: "Paul Croteau is the Channel CTO at Rackspace, where he works with partners to enable their understanding of technology, the Rackspace portfolio, and the state of the industry. With more than 25 years of information technology experience including roles in engineering, sales, account management, and technical training, Paul’s experience helps him relate with partners and customers at all levels within an organization. His energy and passion for technology have been helpful in creating successful sales engagements and exceptional customer experiences with partners of all sizes. Paul originally joined Rackspace in 2005. Previous employers include AT&T, HP, and Accenture. Paul is based in San Antonio, Texas. Outside of work, Paul is a professional musician and composer and is married with two teenagers and a house full of pets."
 
-Crumpler, Shaun 
+Crumpler, Shaun
 authorAvatar: 'https://secure.gravatar.com/avatar/c26423ec960c158dbdbcbee1f61ea7b5'
 bio: "Shaun Crumpler is a 7 year Racker, who focuses on applying his MBA to the technical space to evolve and transform processes, promoting change and agility.  His technical expertise spans Linux operating systems, the Rackspace Public Cloud infrastructure, and the AWS infrastructure.  He was awarded the Fanatical Jacket, Rackspace’s highest honor, because of the focus that he places on fanatically supporting not only external customers, but internal customers as well."
 
@@ -42,19 +42,19 @@ Dixit, Narendra
 authorAvatar: 'https://s.gravatar.com/avatar/2ea19c113ac5dd7ab4879607f1468950'
 bio: n/a
 
-Friedman, Jordan 
+Friedman, Jordan
 authorAvatar: 'https://s.gravatar.com/avatar/f2f71a634ccd1e79ea3b3b317f8b4161'
 bio: n/a
 
-Garratt, Nick 
+Garratt, Nick
 authorAvatar: 'https://s.gravatar.com/avatar/749cf70eafe03795015019c1047be85f'
 bio: "Nick Garratt is a Principal Architect in the Rackspace Managed Public Clouds Product Architecture Team."
 
-Gates, Jason 
+Gates, Jason
 authorAvatar: 'https://s.gravatar.com/avatar/ff2ec8ee582b2e949109b7fd353734f2'
 bio: n/a
 
-Hawthorn, Rob 
+Hawthorn, Rob
 authorAvatar: 'https://s.gravatar.com/avatar/c44cfe09d207a9f1529d2280dec8583a'
 bio: n/a
 
@@ -62,7 +62,7 @@ Hersh, Emilie
 authorAvatar: 'https://s.gravatar.com/avatar/9503bfb5fa8e3de9f007e5c12591d6d8'
 bio: n/a
 
-Heywood, Celia 
+Heywood, Celia
 authorAvatar: 'http://0.gravatar.com/avatar/76b6d0b3a7daec2a8e3e25f17ff7ead7'
 bio: n/a
 
@@ -70,17 +70,17 @@ Hornbeck, Ash
 authorAvatar: https://www.gravatar.com/avatar/f96915d3f29e5623f9a9ff8c7cb3148f
 bio: "Ash Hornbeck is a Sr. Product Architect on the Rackspace Managed Public Clouds Product Architecture Team."
 
-Kaminski, Brooks 
+Kaminski, Brooks
 authorAvatar: 'https://gravatar.com/avatar/e7780474c27597a4395ac5eab894ab36'
 bio: n/a
 
-Kolb, Dan 
+Kolb, Dan
 authorAvatar: 'https://gravatar.com/avatar/fbdcdc8fcc8d2ae995d763dc6ed144d4'
 bio: "Dan Kolb is a Software Developer in Test in the Rackspace Private Cloud
 Powered by VMware. Dan spends his time improving products and services through
 his passion and evangelization of automation and open source software."
 
-Krpan, Janice 
+Krpan, Janice
 authorAvatar: 'https://s.gravatar.com/avatar/7662b14a4b4ce42f1a0775b2a93634c4'
 bio: n/a
 
@@ -88,11 +88,11 @@ Kukreja, Sharad
 authorAvatar: 'https://s.gravatar.com/avatar/3533f66c2c0826e45a3cf9b8c64ef617'
 bio: n/a
 
-Mattson, Josh 
+Mattson, Josh
 authorAvatar: 'http://www.gravatar.com/avatar/791617263c70278859e1b26c15d13eab'
 bio: n/a
 
-Mishra, Manoj 
+Mishra, Manoj
 authorAvatar: 'https://s.gravatar.com/avatar/9498305cda9dc4fe9d8f5873b09ff1e2’
 bio: n/a
 
@@ -100,27 +100,27 @@ Moussa, Michael
 authorAvatar: 'https://s.gravatar.com/avatar/81ae346c8dd994251b697bea342c8fd7'
 bio: "As a Senior Product Architect at Rackspace, Michael draws upon his 20 years of web application development experience to help architect highly-available, fault-tolerant, scalable, and secure AWS environments composed of a wide range of services in the AWS portfolio, including Compute, Storage, Database, Networking, Developer Tools, and more. He is an AWS APN Ambassador and holds several AWS certifications. In his spare time, he enjoys homebrewing his award-winning beer, cycling, and trying to find less expensive hobbies."
 
-Olivier, Sarah 
+Olivier, Sarah
 authorAvatar: 'https://s.gravatar.com/avatar/17c40729ddeea22c93734e4d0870fb85'
 bio: n/a
 
-Pandey, Amit kumar  
+Pandey, Amit kumar
 authorAvatar: 'https://s.gravatar.com/avatar/c6bddf3d409b0e1975d01962a7317e2b'
 bio: n/a
 
-Piva, Lauren 
+Piva, Lauren
 authorAvatar: 'https://s.gravatar.com/avatar/bbd32264e5b49be8f1515f6a64b1f1e2'
 bio: n/a
 
-Plummer, Adam 
+Plummer, Adam
 authorAvatar: 'https://s.gravatar.com/avatar/c2945c57e1812f8b455101e1a2e49cac'
 bio: n/a
 
-Rathod, Sunil 
+Rathod, Sunil
 authorAvatar: 'https://s.gravatar.com/avatar/c3a915969820000d5dc4fc4f04ad8276’
 bio: n/a
 
-Rudley, Jimmy 
+Rudley, Jimmy
 authorAvatar: 'https://en.gravatar.com/userimage/151177997/5bed7e07ee47533cbd34b951d463bcb7.jpg'
 bio: “Jimmy Rudley is an Azure Architect at Rackspace and an active member of the Azure community. He focuses on solving large and complex architecture and automation problems within Azure."
 
@@ -128,35 +128,35 @@ Sharma, Hemant
 authorAvatar: 'https://s.gravatar.com/avatar/62a512ada4789514ddecc061e501be64'
 bio: n/a
 
-Sharma, Ravi kant 
+Sharma, Ravi kant
 authorAvatar: 'http://0.gravatar.com/avatar/c7776b42759c729500163fc6588221ac'
 bio: n/a
 
-Srivastava, Deepanker 
+Srivastava, Deepanker
 authorAvatar: 'https://s.gravatar.com/avatar/305aead3fa98ed419b5b47b2f6c9b780'
 bio: n/a
 
-Stoyka, Matt 
+Stoyka, Matt
 authorAvatar: 'https://s.gravatar.com/avatar/d08dd094c720fa0e4689178952959231'
 bio: n/a
 
-Stubbs, Walter 
+Stubbs, Walter
 authorAvatar: 'https://0.gravatar.com/avatar/82a7a0dd2ccc5b707da699191be87ecf'
 bio: "Walter Stubbs is a Microsoft Certified Solutions Associate, and one of the Lead Email Technicians in Cloud Office. Walter joined Rackspace in 2018 and has been supporting the Office 365 environment from day one. His passion for helping others combined with his knowledge of Office 365 helps him provide a Fanatical Experience for Rackspace customers everyday."
 
-Toews, Everett 
+Toews, Everett
 authorAvatar: 'https://www.gravatar.com/avatar/c1a75adb52f40016a480cee292527895'
 bio: “Everett Toews a Developer Advocate at Rackspace making the cloud easy to use for developers and operators. Sometimes dev, sometimes ops, and sometimes advocate. He's interested in composing systems using APIs, SDKs, CLIs, and Docker. He likes to teach what he learns along the way.”
 
-Verma, Vivek 
+Verma, Vivek
 authorAvatar: 'https://s.gravatar.com/avatar/c9c74dd30299675961e5160a4fbb05fe'
 bio: n/a
 
-Whitehead, Chris 
+Whitehead, Chris
 authorAvatar: 'https://s.gravatar.com/avatar/286b19b54ad30b4f0d25a4ac679744a8'
 bio: n/a
 
-Wilensky, Jeff 
+Wilensky, Jeff
 authorAvatar: 'https://s.gravatar.com/avatar/017eaa68c10c8d1b95aacf7d34557a28'
 bio: n/a
 
@@ -166,6 +166,6 @@ bio: "Michael Xin is a senior QE/Security manager in Rackspace. He is leading
 VMware QE team and QE Security team. Michael is passionate about quality and
 security for Rackspace products. Michael has years of experience in application security, security SDLC, test automation, cloud computing, agile development and CI/CD."
 
-Zullo, Chris 
+Zullo, Chris
 authorAvatar: 'https://s.gravatar.com/avatar/475ef03557ebebc76180795000996012'
 bio: n/a

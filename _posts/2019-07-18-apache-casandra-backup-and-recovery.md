@@ -6,7 +6,7 @@ comments: true
 author: Amit Bhatnagar
 published: true
 authorIsRacker: true
-authorAvatar: 'https://s.gravatar.com/avatar/ea77be7be4ebf7aed353087f677104be'
+authorAvatar: 'https://s.gravatar.com/avatar/c9c74dd30299675961e5160a4fbb05fe'
 categories:
   - database
 metaTitle: "Apache Cassandra backup and recovery"
@@ -140,7 +140,7 @@ table.
 **NOTE**: Cassandra distributes data based on the defined partition keys and
 replication factors across the cluster, so you must run this backup command
 from all your nodes. This example uses the Linux&reg; shell script in crontab,
-which backs up all nodes at once. 
+which backs up all nodes at once.
 
     $ cqlsh -u cassandra -p *******
 
