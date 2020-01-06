@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Salesforce certfications inforaphic"
-date: 2019-12-13 00:01
+date: 2020-01-07 00:01
 comments: true
 author: Christa Parrish
 published: true
