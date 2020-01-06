@@ -3,19 +3,18 @@ layout: post
 title: "Salesforce certfications inforaphic"
 date: 2019-12-13 00:01
 comments: true
-author: Karissa Booth
+author: Christa Parrish
 published: true
 authorIsRacker: true
-authorAvatar: 'http://0.gravatar.com/avatar/c5a8a633797f4b8c85b5b5bad605cd18'
 categories:
     - Salesforce
 metaTitle: "Salesforce certfications inforaphic"
-metaDescription: "In the age of customer experience, businesses now rely on their CRM systems more than ever and certifications are crucial."
+metaDescription: "In the age of customer experience, businesses now rely on their customer relationship management (CRM) systems more than ever and certifications are crucial."
 ogTitle: "Salesforce certfications inforaphic"
-ogDescription: "In the age of customer experience, businesses now rely on their CRM systems more than ever and certifications are crucial."
+ogDescription: "In the age of customer experience, businesses now rely on their customer relationship management (CRM) systems more than ever and certifications are crucial."
 ---
 
-In the age of customer experience, businesses now rely on their CRM systems more than ever and certifications are crucial.
+In the age of customer experience, businesses now rely on their customer relationship management (CRM) systems more than ever and certifications are crucial.
 
 <!-- more -->
 
