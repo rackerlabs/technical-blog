@@ -14,23 +14,23 @@ metaTitle: "Orchestrate a GCP Cloud SQL instance"
 metaDescription:
 ogTitle: "Orchestrate a GCP Cloud SQL instance"
 ogDescription: "This blog discusses how you can automate the creatation of a
-Google Cloud Platform (GCP) Cloud SQL instance by using Ansible and Jenkins and
+Google Cloud Platform (GCP) Cloud SQL instance by using Ansible and Jenkins, and
 includes an example of spinning up a MySQL Cloud SQL instance, version 5.7,
 with an Ansible playbook."
 ---
 
-This blog discusses how you can automate the creatation of a Google Cloud
-Platform (GCP) Cloud SQL instance by using Ansible and Jenkins and includes an
-example of spinning up a MySQL Cloud SQL instance, version 5.7, with an Ansible
-playbook.
+This blog discusses how you can automate the creation of a Google&reg; Cloud
+Platform (GCP) Cloud SQL instance by using Ansible&reg; and Jenkins&reg;. The blog also
+includes an example of spinning up a MySQL&reg; Cloud SQL instance, version 5.7,
+with an Ansible playbook.
 
 <!-- more -->
 
 Using Ansible and Jenkins lets you spin up the Cloud SQL quickly by accessing
-GCP’s Cloud SQL with a project specific GCP account. This option ensures more
-security by providing access to the GCP console to only users with GCP admin
-access. You can write playbooks for different GCP services and rollout Jenkins
-jobs to users to spin up GCP infrastructure as needed.
+the GCP Cloud SQL with a project-specific GCP account. This option ensures
+additional security by providing access to the GCP console only to users with
+GCP admin access. You can write playbooks for different GCP services and rollout
+Jenkins jobs to users to spin up GCP infrastructure as needed.
 
 ### Necessary tools
 
@@ -41,16 +41,17 @@ in DevOps. Ansible has a wide variety of prebuilt modules written in Python for
 different products in the market that you can customize by using Python.
 
 **Jenkins**: You can use Jenkins as a continuous integration server or as an
-automation server. Based on Java, Jenkins has wide range of plugins for
-different products in the market. You can customize the plugins by using Java
+automation server. Based on Java&reg;, Jenkins has a wide range of plug-ins for
+different products in the market. You can customize the plug-ins by using Java
 or Apache&reg; Groovy.
 
 ### Prerequisites
 
-In this task, Ansible acts an orchestration tool, and Jenkins acts as an
-automation server. Prerequisites for doing this task include the following:
+In this task, Ansible acts as an orchestration tool, and Jenkins acts as an
+automation server. Prerequisites for doing this task include the following
+items:
 
-1. Installed Jenkins and Ansible, accessible over the internet, on the server.
+1. Install Jenkins and Ansible, accessible over the Internet, on the server.
 
 2. Create a service account, assign a Cloud SQL Admin role to the service
    account, and download the key of the service account.
@@ -61,7 +62,7 @@ automation server. Prerequisites for doing this task include the following:
 
         https://console.developers.google.com/apis/api/sqladmin.googleapis.com/overview?project= "Project ID"
 
-4. Use the following comands, as the `root` user, to install the required
+4. Use the following commands, as the `root` user, to install the required
    packages on the Ansible Server:
 
         yum install python-pip
@@ -73,9 +74,9 @@ automation server. Prerequisites for doing this task include the following:
 After completing the prerequisites, you need to move the Ansible playbook and
 service account key file to the Jenkins server.
 
-#### The Ansible Playbook
+#### Ansible playbook
 
-An Ansible Playbook contains a set of instructions written in YAML. This example
+An Ansible playbook contains a set of instructions written in YAML. This example
 uses a gcp\_sql\_instance module to spin up the Cloud SQL instance. The
 following playbook creates a GCP Cloud SQL instance of MySQL database version 5.7:
 
@@ -108,34 +109,35 @@ stores them in **vars.yml**:
 -  gcp\_region: us-central1
 -  instance\_tier: db-n1-standard-1
 
-#### The Jenkins server
+#### Jenkins server
 
 Jenkins is an automation server, and the job is a basic component in Jenkins
 that you use to define the task that you want to automate.
 
 ![]({% asset_path 2020-1-8-orchestrate-a-gcp-cloud-sql-instance/Picture1.png %})
 
-This job defines `CloudSQL` as the job name.
+The job defines `CloudSQL` as the job name.
 
 ![]({% asset_path 2020-1-8-orchestrate-a-gcp-cloud-sql-instance/Picture2.png %})
 
-#### The Ansible plugin in Jenkins
+#### Ansible plug-in in Jenkins
 
-To run the playbook in a Jenkins job, you must install the Ansible plugin in
-Jenkins and use that plugin in the **Build** step of the Jenkins job to specify
-the playbook as shown in the preceeding screenshot.
+To run the playbook in a Jenkins job, you must install the Ansible plug-in in
+Jenkins. Then use that plug-in in the **Build** step of the Jenkins job to specify
+the playbook as shown in the preceding screenshot.
 
 ![]({% asset_path 2020-1-8-orchestrate-a-gcp-cloud-sql-instance/Picture3.png %})
 
-After the CloudSQL job runs, you should see output similar to the following:
+After the CloudSQL job runs, you should see output similar to the following
+output:
 
 ![]({% asset_path 2020-1-8-orchestrate-a-gcp-cloud-sql-instance/Picture4.png %})
 
-#### The Jenkins user interface
+#### Jenkins user interface
 
 The following screenshot shows the user interface (UI) in Jenkins that you use
-to run or make changes to the job, and it shows the MySQL Cloud SQL instance
-created in GCP after Jenkins job completes:
+to run or make changes to the job. The screenshot shows the MySQL Cloud SQL
+instance created in GCP after Jenkins job completes:
 
 ![]({% asset_path 2020-1-8-orchestrate-a-gcp-cloud-sql-instance/Picture5.png %})
 
@@ -143,7 +145,7 @@ created in GCP after Jenkins job completes:
 
 Use Jenkins and Ansible to implement Infrastructure as a Code (IaaC), which
 helps to avoid human errors during infrastructure spin up and restricts access
-to the GCP console to limited set of users. Automating this task by using
+to the GCP console to a limited set of users. Automating this task by using
 Ansible and Jenkins provides a GUI for authorized Jenkins users who don't know
 GCP or how to spin a Cloud SQL instance.
 
