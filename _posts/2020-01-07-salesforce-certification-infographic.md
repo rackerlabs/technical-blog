@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Salesforce certfications infographic"
+title: "Salesforce certifications infographic"
 date: 2020-01-07 00:01
 comments: true
 author: Christa Parrish
