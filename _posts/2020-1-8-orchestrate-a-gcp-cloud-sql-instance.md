@@ -26,8 +26,8 @@ with an Ansible playbook.
 
 <!-- more -->
 
-Using Ansible and Jenkins lets you spin up the Cloud SQL quickly by accessing
-the GCP Cloud SQL with a project-specific GCP account. This option ensures
+Using Ansible and Jenkins lets you spin up  a GCP Cloud SQL instance quickly by
+accessing Cloud SQL with a project-specific GCP account. This option ensures
 additional security by providing access to the GCP console only to users with
 GCP admin access. You can write playbooks for different GCP services and rollout
 Jenkins jobs to users to spin up GCP infrastructure as needed.
