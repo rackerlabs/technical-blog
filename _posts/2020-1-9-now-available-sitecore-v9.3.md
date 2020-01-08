@@ -39,17 +39,17 @@ The following products and services are available as add-ons:
 
 The enhancements in Sitecore v9.3 include the following items:
 
-- Improved performance of the reference data service.
-- Updatesd forms functionality.
-- Improved performance of the session state providers​ by optimizing the amount of data
-  that is saved to the session state.
+- Improved performance of the reference data service
+- Updatesd forms functionality
+- Improved performance of the session state providers by optimizing the amount of data
+  that is saved to the session state
 - Improved performance of the web tracker by saving expired sessions to xConnect in 
-  batches.
+  batches
 - Implemented some GDPR improvements to support the *right to be forgotten*.
-- Added **Expand** options for devices.
-- Updated the **Collection** database schema to store a shard key value.
-​- Refreshed the HTML templates and improved the template manager experience.
-- Fixed various bugs.
+- Added **Expand** options for devices
+- Updated the **Collection** database schema to store a shard key value
+- Refreshed the HTML templates and improved the template manager experience
+- Fixed various bugs
 
 We hope you take advantage of the new and improved Sitcore Managed Cloud Premium offering.
 
