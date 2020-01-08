@@ -7,6 +7,7 @@ author: Dinesh Miriam
 published: true
 authorIsRacker: true
 authorAvatar: 'https://www.gravatar.com/avatar/e1ae1c5c065d9f67ac50936847f2b83d'
+published: true
 bio: "I am a Senior Database administrator with experience on SQL and NoSQL databases."
 categories:
     - Jenkins
@@ -93,14 +94,14 @@ following playbook creates a GCP Cloud SQL instance of MySQL database version 5.
     tasks:
         - name: Launch Cloud SQL instance
     gcp_sql_instance:
-        name: "\{\{ instance_name \}\}"
-        project: "\{\{ project_id \}\}"
-        region: "\{\{ gcp_region \}\}"
-        service_account_file: "\{\{ credentials_file \}\}"
-        auth_kind: "\{\{ authentification_type \}\}"
-        database_version: "\{\{ db_version \}\}"
+        name: "\{{ instance_name }}"
+        project: "\{{ project_id }}"
+        region: "\{{ gcp_region }}"
+        service_account_file: "{{ credentials_file }}"
+        auth_kind: "\{{ authentification_type }}"
+        database_version: "\{{ db_version }}"
         settings:
-           tier: "\{\{ instance_tier \}\}"
+           tier: "\{{ instance_tier }}"
         state: present
 
 The playbook in this example uses the following playbook variables files and
