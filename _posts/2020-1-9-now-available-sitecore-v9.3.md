@@ -11,9 +11,9 @@ categories:
     - General
     - Azure
 metaTitle: "Now available: Sitecore v9.3"
-metaDescription:
+metaDescription:"Rackspace nows offers Sitecore&reg; version 9.3, which includes several enhancements."
 ogTitle: "Now available: Sitecore v9.3"
-ogDescription: ""
+ogDescription: "Rackspace nows offers Sitecore&reg; version 9.3, which includes several enhancements."
 ---
 
 <img class="blog-post right" src="{% asset_path 2020-1-9-now-available-sitecore-v9.3/sitecore_logo.png %}"/> Rackspace nows offers Sitecore&reg; version 9.3, which includes several enhancements.
@@ -23,7 +23,7 @@ ogDescription: ""
 Our Sitecore Managed Cloud Premium complete solution offering includes the
 following default elements:
 
-- Azure infrastructure
+- Azure&reg; infrastructure
 - Fanatical Azure Support
 - Rackspace's Application services (RAS) Digital Experience Application Operations
   for Sitecore
