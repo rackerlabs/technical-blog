@@ -7,6 +7,7 @@ author: Matt Shover
 published: true
 authorIsRacker: true
 authorAvatar: 'https://www.gravatar.com/avatar/02bf6e4f6c3f2e8502a2b57a0fe57db8'
+bio: "Matt Shover is a Principal Product Manager who helps customers save money in the cloud.  Formerly a system administrator in the United States Air Force, he holds an MBA in finance from California State University, Hayward and has been a Racker for 13 years."
 categories:
     - General
     - AWS
@@ -39,7 +40,7 @@ report of trending costs and an actionable view of underutilized resources.
 (including chargeback or showback), and exercising governance (that is, no tag, no play).  
 
 – Savings: Most organizations significantly overspend in the public cloud, with few exceptions. Shining the
-light on, and introducing, accountability for spend is a significant first step. CloudHealh also shows you
+light on, and introducing, accountability for spend is a significant first step. CloudHealth also shows you
 how to take advantage of discounts like Reserved Instances and Savings Plans and identifies unneeded resources.  
 
 We believe that CloudHealth enables Rackspace, working with our customers, to solve for these three outcomes
