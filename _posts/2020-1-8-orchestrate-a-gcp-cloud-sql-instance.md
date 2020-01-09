@@ -1,12 +1,13 @@
 ---
 layout: post
 title: "Orchestrate a GCP Cloud SQL instance"
-date: 2020-1-8 00:01
+date: 2020-01-08 00:01
 comments: true
 author: Dinesh Miriam
 published: true
 authorIsRacker: true
 authorAvatar: 'https://www.gravatar.com/avatar/e1ae1c5c065d9f67ac50936847f2b83d'
+bio: "I am a Senior Database administrator with experience on SQL and NoSQL databases."
 published: true
 categories:
     - Jenkins
