@@ -46,6 +46,8 @@ comments: true
 author: Author(s) name(s)
 published: true
 authorIsRacker: true
+authorAvatar: 'https://www.gravatar.com/avatar/<insert hash for your headshot>'
+bio: "<insert a sentence or two about yourself in first or third person>"
 categories:
     - This Category
     - That Category
