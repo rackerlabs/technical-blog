@@ -86,23 +86,7 @@ An Ansible playbook contains a set of instructions written in YAML. This example
 uses a gcp\_sql\_instance module to spin up the Cloud SQL instance. The
 following playbook creates a GCP Cloud SQL instance of MySQL database version 5.7:
 
-    name: Create Cloud SQL instance
-    hosts: localhost
-
-    vars_files:
-        - vars.yml
-    tasks:
-        - name: Launch Cloud SQL instance
-    gcp_sql_instance:
-        name: "\{{ instance_name }}"
-        project: "\{{ project_id }}"
-        region: "\{{ gcp_region }}"
-        service_account_file: "{{ credentials_file }}"
-        auth_kind: "\{{ authentification_type }}"
-        database_version: "\{{ db_version }}"
-        settings:
-           tier: "\{{ instance_tier }}"
-        state: present
+![]({% asset_path 2020-1-8-orchestrate-a-gcp-cloud-sql-instance/Picture6.png %})
 
 The playbook in this example uses the following playbook variables files and
 stores them in **vars.yml**:
