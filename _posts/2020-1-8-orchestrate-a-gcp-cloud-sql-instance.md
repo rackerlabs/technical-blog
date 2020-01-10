@@ -1,10 +1,9 @@
 ---
 layout: post
 title: "Orchestrate a GCP Cloud SQL instance"
-date: 2020-1-8 00:01
+date: 2020-01-08 00:01
 comments: true
 author: Dinesh Miriam
-published: true
 authorIsRacker: true
 authorAvatar: 'https://www.gravatar.com/avatar/e1ae1c5c065d9f67ac50936847f2b83d'
 published: true
@@ -14,15 +13,11 @@ categories:
     - Orchestration
     - Ansible
 metaTitle: "Orchestrate a GCP Cloud SQL instance"
-metaDescription:"This blog discusses how you can automate the creatation of a
-Google Cloud Platform (GCP) Cloud SQL instance by using Ansible and Jenkins, and
-includes an example of spinning up a MySQL Cloud SQL instance, version 5.7,
-with an Ansible playbook."
+metaDescription: "This blog discusses how you can automate the creatation of a
+Google Cloud Platform (GCP) Cloud SQL instance by using Ansible and Jenkins."
 ogTitle: "Orchestrate a GCP Cloud SQL instance"
 ogDescription: "This blog discusses how you can automate the creatation of a
-Google Cloud Platform (GCP) Cloud SQL instance by using Ansible and Jenkins, and
-includes an example of spinning up a MySQL Cloud SQL instance, version 5.7,
-with an Ansible playbook."
+Google Cloud Platform (GCP) Cloud SQL instance by using Ansible and Jenkins."
 ---
 
 This blog discusses how you can automate the creation of a Google&reg; Cloud
@@ -86,7 +81,7 @@ An Ansible playbook contains a set of instructions written in YAML. This example
 uses a gcp\_sql\_instance module to spin up the Cloud SQL instance. The
 following playbook creates a GCP Cloud SQL instance of MySQL database version 5.7:
 
-<insert Picture 6>
+![]({% asset_path 2020-1-8-orchestrate-a-gcp-cloud-sql-instance/Picture6.png %})
 
 The playbook in this example uses the following playbook variables files and
 stores them in **vars.yml**:
