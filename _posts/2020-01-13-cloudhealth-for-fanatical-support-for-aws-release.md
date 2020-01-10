@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "CloudHealth for Fanatical Support for AWS realease"
-date: 2020-1-9 00:01
+date: 2020-01-13 00:01
 comments: true
 author: Matt Shover
 published: true
@@ -17,7 +17,7 @@ ogTitle: "CloudHealth for Fanatical Support for AWS realease"
 ogDescription: "In mid-December 2019, Rackspace released CloudHealth for all Fanatical Support&reg; for Amazon Web Services&reg; (AWS) customers."
 ---
 
-<img class="blog-post right" src="{% asset_path 2020-1-9-cloudhealth-for-fanatical-support-for-aws-release/CloudHealth-logo.png %}"/> In mid-December 2019, Rackspace released CloudHealth for all Fanatical Support&reg; for Amazon
+<img class="blog-post right" src="{% asset_path 2020-01-13-cloudhealth-for-fanatical-support-for-aws-release/CloudHealth-logo.png %}"/> In mid-December 2019, Rackspace released CloudHealth for all Fanatical Support&reg; for Amazon
 Web Services&reg; (AWS) customers.
 
 <!-- more -->
@@ -28,7 +28,7 @@ to integrating and setting up CloudHealth.
 ### Why CloudHealth?
 
 Controlling cloud costs is the most cited pain point for public cloud consumers. CloudHealth empowers
-Rackspace work to effectively govern your cloud spend in the following three areas:
+Rackspace to effectively govern your cloud spend in the following three areas:
 
 – Visibility: Before you can control cloud costs, you have to identify and understand them&mdash;a tall
 order for AWS and other cloud providers with notoriously complex billing. Users across an organization
