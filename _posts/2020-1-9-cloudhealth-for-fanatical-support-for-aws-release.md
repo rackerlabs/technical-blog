@@ -22,26 +22,26 @@ Web Services&reg; (AWS) customers.
 
 <!-- more -->
 
-This blog explores why Rackspace chose CloudHealth and how we’ve taken a customer-focused approach
+This post explores why Rackspace chose CloudHealth and how we’ve taken a customer-focused approach
 to integrating and setting up CloudHealth.
 
 ### Why CloudHealth?
 
-Controlling cloud costs is a common pain point for public cloud consumers. CloudHealth helps Rackspace
-work with our customers to control costs effectively in the following three areas:
+Controlling cloud costs is the most cited pain point for public cloud consumers. CloudHealth empowers
+Rackspace work to effectively govern your cloud spend in the following three areas:
 
-– Visibility: Before you can control costs, you have to identify and understand them&mdash;a tall order for
-AWS and other cloud providers who have notoriously complex billing. Users across an organization also need
-different information. For example, the person in Finance who is choosing between Savings Plans or Reserved
-Instances needs different information than the budget owner in Engineering who wants to see an e-mailed
-report of trending costs and an actionable view of underutilized resources.  
+– Visibility: Before you can control cloud costs, you have to identify and understand them&mdash;a tall
+order for AWS and other cloud providers with notoriously complex billing. Users across an organization
+also need different information. For example, the person in Finance who is choosing among Savings Plans
+or Reserved Instances needs different information than the budget owner in Engineering who wants to see
+an e-mailed report of trending costs and an actionable view of underutilized resources.  
 
-– Control: Organizations control costs by creating appropriate budgets, having departmental accountability
-(including chargeback or showback), and exercising governance (that is, no tag, no play).  
+– Control: Common ways that organizations control costs include creating budgets, establishing departmental
+accountability (including chargeback or showback), and exercising governance methods such as *no tag, no play*.  
 
-– Savings: Most organizations significantly overspend in the public cloud, with few exceptions. Shining the
-light on, and introducing, accountability for spend is a significant first step. CloudHealth also shows you
-how to take advantage of discounts like Reserved Instances and Savings Plans and identifies unneeded resources.  
+– Savings: With few exceptions, most organizations significantly overspend in the public cloud. In addition
+to helping with visibility and control, CloudHealth clearly shows how to take advantage of discounts like
+Reserved Instances and Savings Plans, identifies unneeded and unused resources, and more.  
 
 We believe that CloudHealth enables Rackspace, working with our customers, to solve for these three outcomes
 better than any other platform. As a bonus, it works across AWS, Azure&reg;, and the Google Compute Platform&reg;.  
@@ -49,14 +49,15 @@ better than any other platform. As a bonus, it works across AWS, Azure&reg;, and
 ### Our Integration and Approach
 
 Rackspace is the first CloudHealth partner to fully integrate with their platform to include everything from
-account setup to user management. For example, billing customers can use single sign-on from the Rackspace portal
+account setup to user management. For example, customers can use single sign-on from the Rackspace portal
 into CloudHealth. Users have full access to CloudHealth with near real-time cost data, savings opportunities,
 inventory, and much more.  
 
 We also recognize that access to powerful tools is a necessary first step to achieving your goals, but it's not
 enough on its own. Rackspace adds expertise on top of CloudHealth to help you to set up reporting for
-different users. We can configure CloudHealth *Perspectives*, which meaningfully segment spend and other data,
-and review costs and savings opportunities with you.  
+different users. Examples include configuring CloudHealth *Perspectives*, which meaningfully segment spend and
+other data, reviewing cost trending and actionable savings opportunities with you, and setting up governance
+policies.
 
 ### Summary
 
