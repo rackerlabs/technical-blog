@@ -1,26 +1,26 @@
 ---
 layout: post
 title: "Now available: Sitecore v9.3"
-date: 2020-1-9 00:01
+date: 2020-01-09 00:01
 comments: true
 author: Charlotte Colbert
-published: true
 authorIsRacker: true
+published: true
 bio: "I am a 13+year Racker and am currently a Product Manager V for the RAS Digital experience portfolio."
 categories:
-    - General
     - Azure
 metaTitle: "Now available: Sitecore v9.3"
-metaDescription:"Rackspace nows offers Sitecore&reg; version 9.3, which includes several enhancements."
+metaDescription: "Rackspace now offers Sitecore&reg; version 9.3, which includes several enhancements."
 ogTitle: "Now available: Sitecore v9.3"
-ogDescription: "Rackspace nows offers Sitecore&reg; version 9.3, which includes several enhancements."
+ogDescription: "Rackspace now offers Sitecore&reg; version 9.3, which includes several enhancements."
 ---
 
-<img class="blog-post right" src="{% asset_path 2020-1-9-now-available-sitecore-v9.3/sitecore_logo.png %}"/> Rackspace nows offers Sitecore&reg; version 9.3, which includes several enhancements.
+Rackspace now offers Sitecore&reg; version 9.3, which includes several enhancements.
 
 <!-- more -->
 
-Our Sitecore Managed Cloud Premium complete solution offering includes the
+<img class="blog-post right" src="{% asset_path 2020-1-9-now-available-sitecore-v9.3/sitecore_logo.png %}"/> Our
+Sitecore Managed Cloud Premium complete solution offering includes the
 following default elements:
 
 - Azure&reg; infrastructure
