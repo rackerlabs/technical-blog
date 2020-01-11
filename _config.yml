@@ -36,3 +36,8 @@ collections:
 # Blog categories
 category_dir: blog/categories
 author_dir: blog/authors
+
+# https://github.com/jekyll/jekyll/issues/5267
+exclude: 
+  - rubygems
+  - submodules

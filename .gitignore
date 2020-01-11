@@ -4,3 +4,21 @@ _site/
 .idea/*
 .DS_Store
 _posts/.DS_Store
+
+# Virtualenv
+.venv/
+ENV/
+
+# Editors
+*~
+.*.swp
+.bak
+/.project
+.python-version
+
+# Ruby
+# Jekyll
+rubygems/
+.asset-cache
+.jekyll-cache
+.bundle/
