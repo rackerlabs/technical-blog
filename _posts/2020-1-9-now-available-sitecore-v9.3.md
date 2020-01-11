@@ -4,14 +4,14 @@ title: "Now available: Sitecore v9.3"
 date: 2020-01-09 00:01
 comments: true
 author: Charlotte Colbert
-published: true
 authorIsRacker: true
+authorAvatar: 'https://www.gravatar.com/avatar/e1ae1c5c065d9f67ac50936847f2b83d'
+published: true
 bio: "I am a 13+year Racker and am currently a Product Manager V for the RAS Digital experience portfolio."
 categories:
-    - General
     - Azure
 metaTitle: "Now available: Sitecore v9.3"
-metaDescription:"Rackspace now offers Sitecore&reg; version 9.3, which includes several enhancements."
+metaDescription: "Rackspace now offers Sitecore&reg; version 9.3, which includes several enhancements."
 ogTitle: "Now available: Sitecore v9.3"
 ogDescription: "Rackspace now offers Sitecore&reg; version 9.3, which includes several enhancements."
 ---
