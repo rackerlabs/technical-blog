@@ -32,6 +32,7 @@ Without going into details of setting up vnet integration v1, the basic requirem
 Back at the KUDU console, TCPPing should now work when pointing it to an IP address of a hub virtual machine. Trying to ping a virtual machine in the spoke vnet did not work. Within the App Service Plan where the Sync network operation is, scroll to the bottom and there is a table labeled IP ADDRESSES ROUTED TO VNet. I saw all 3 private RFC 1918 address ranges listed and was confused why the routing was not working. I tried explicitly adding the address range for the spoke Virtual Network and tried TCPPing again, which it now succeeds.
 
 ![addRoute]({% asset_path 2020-01-15-Azure-PaaS-Vnet-Integration-Routes/addRoute.png %})
+![tcppingworking]({% asset_path 2020-01-15-Azure-PaaS-Vnet-Integration-Routes/addRouteToASPRouteTable.png %})
 
 I exited out of the networking blade and went back in to see my address range gone! Even though it was gone, my TCPPing requests were still working. To verify what routes are in the app service plan, I browsed to https://resources.azure.com/ then drilled down to the app service plan then into the virtualNetworkConnections. As the picture shows, my route type of static is still there. This must be a bug with the UI if I had to guess.
 
