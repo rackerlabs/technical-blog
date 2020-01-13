@@ -33,7 +33,7 @@ basic requirements:
 
 After you set up the VNet configuration within the Azure web app, it says **connected**.
 At this point, you'd expect that you are done, but nothing is ever that easy. After
-initially setting up the VNet integration, I access the KUDU console and use **TCPPING**
+initially setting up the VNet integration, I accessed the KUDU console and use **TCPPING**
 to verify connectivity to the resource within the VNet that I need to reach. TCPPING failed, and
 the network did not sync correctly. To manually sync the network to let initial connectivity happen, I used
 the following steps:
