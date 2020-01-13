@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Azure PaaS VNet integration With a hub-and-spoke topology"
+title: "Azure PaaS VNet integration with a hub-and-spoke topology"
 date: 2020-01-15 00:00
 comments: true
 author: Jimmy Rudley
@@ -20,44 +20,50 @@ A colleague of mine sent me a message asking if I ever had an issue deploying an
 that routed through a hub-and-spoke topology. Trying to think back through the hundreds of deploys
 I have done, nothing came to me regarding any difficulties. Digging more into the problem with him,
 he explained that the web app could hit any virtual machine in the hub, but nothing in the spokes.
-This symptom sounded like a routing issue and with some oddities sprinkled on top.
+This symptom sounded like a routing issue, with some oddities sprinkled on top.
 
 <!-- more -->
 
-Without going into details of setting up virtual network (VNet) integration v1, the basic requirements
-are to have a standard app service plan and a VPN gateway provisioned with point-to-site configured with
-an address range to hand out to the web apps. After you set up the VNet configuration within the Azure
-web app, it says **connected**. At this point, you'd expect to be done, but nothing is ever
-that easy. After initially setting up the VNet integration, I access the KUDU console and use **TCPPING**
-to verify connectivity to the resource within the virtual network that I need to reach. TCPPING failed, and
+Without going into details of setting up virtual network (VNet) integration v1, here are the
+basic requirements:
+
+-  Have a standard **App Service Plan**.
+-  Have a VPN gateway provisioned with point-to-site configured with an address range
+   to hand out to the web apps. 
+
+After you set up the VNet configuration within the Azure web app, it says **connected**.
+At this point, you'd expect that you are done, but nothing is ever that easy. After
+initially setting up the VNet integration, I access the KUDU console and use **TCPPING**
+to verify connectivity to the resource within the VNet that I need to reach. TCPPING failed, and
 the network did not sync correctly. To manually sync the network to let initial connectivity happen, I used
 the following steps:
 
 1) Click on the **App Service Plan** of the web app where you configured VNet integration and select
    **Networking** from the blade. Select **Click here** to manage under **VNet Integration**.
    ![navigation]({% asset_path 2020-01-15-Azure-PaaS-Vnet-Integration-Routes/navigation.png %})
-2) Click on the VNet that is acting as the hub virtual network.
+2) Click on the VNet that is acting as the hub VNet.
    ![hubvnet]({% asset_path 2020-01-15-Azure-PaaS-Vnet-Integration-Routes/drillDown.png %})
 3) Click on **Sync Network**.
    ![sync]({% asset_path 2020-01-15-Azure-PaaS-Vnet-Integration-Routes/syncNetwork.png %})
 
-Back at the KUDU console, TCPPing should have worked when pointing it to an IP address of a hub virtual machine.
+Back at the KUDU console, TCPPING should work when it is pointed to an IP address of a hub virtual machine.
 However, trying to ping a virtual machine in the spoke VNet did not work. Within the **App Service Plan** where 
-the Sync network operation is, I scrolled to the bottom, and there was a table labeled 
-**IP ADDRESSES ROUTED TO VNet**. I saw all three private RFC 1918 address ranges listed and was confused why 
-the routing was not working. I tried explicitly adding the address range for the spoke Virtual Network 
-and tried TCPPing again, which now succeeded.
+the sync network operation is, I scrolled to the bottom, and there was a table labeled 
+**IP ADDRESSES ROUTED TO VNet**. I saw all three private RFC 1918 address ranges listed and was confused about why 
+the routing was not working. I tried explicitly adding the address range for the spoke VNet 
+and tried TCPPING again, which now succeeded.
 
 ![addRoute]({% asset_path 2020-01-15-Azure-PaaS-Vnet-Integration-Routes/addRoute.png %})
 
 ![tcppingworking]({% asset_path 2020-01-15-Azure-PaaS-Vnet-Integration-Routes/addRouteToASPRouteTable.png %})
 
-I exited out of the networking blade and went back in to see my address range gone! Even though it was gone, 
-my TCPPing requests still worked. To verify what routes are in the app service plan, I browsed to [https://resources.azure.com]. Then, I drilled down to the app service plan and into the 
-**virtualNetworkConnections**. As the following image shows, my route type of static was still there. 
-If I had to guess, I'd say this must be a bug with the UI.
+I exited out of the networking blade and went back in to see that my address range was gone!
+Even though it was gone, my TCPPING requests still worked. To verify what routes are in the app
+service plan, I browsed to [https://resources.azure.com]. Then, I drilled down to the app service
+plan and into the **virtualNetworkConnections**. As the following image shows, my route type of
+static was still there. If I had to guess, I'd say this must be a bug with the user interface.
 
 ![resources]({% asset_path 2020-01-15-Azure-PaaS-Vnet-Integration-Routes/resources.azure.com.png %})
 
-If you find yourself stuck figuring out why routing doesn't work, and you have verified that the virtual 
+If you find yourself stuck figuring out why the routing doesn't work, and you have verified that the virtual 
 network peering settings are correct, try adding a route for the spoke VNet in the **App Service Plan**.
