@@ -1,9 +1,9 @@
 Anand, Vikrant
-authorAvatar: 'https://s.gravatar.com/avatar/98991c72835ea03135094fb2a1b6e3c0’
+authorAvatar: 'https://s.gravatar.com/avatar/98991c72835ea03135094fb2a1b6e3c0'
 bio: n/a
 
 Batham, Bhupendra
-authorAvatar: 'https://s.gravatar.com/avatar/e64fc7787bc24eac1a8c969c4eceda44’
+authorAvatar: 'https://s.gravatar.com/avatar/e64fc7787bc24eac1a8c969c4eceda44'
 bio: "Bhupendra Batham has more than 12 of experience with Oracle technology and currently works at Rackspace. He is enthusiastic, a quick learner, and always learns new technologies. His strengths include analytical thinking, problem solving, learning from mistakes, and working well under pressure."
 
 Bhatnagar, Amit Kumar
@@ -71,7 +71,7 @@ authorAvatar: 'http://0.gravatar.com/avatar/76b6d0b3a7daec2a8e3e25f17ff7ead7'
 bio: n/a
 
 Hornbeck, Ash
-authorAvatar: https://www.gravatar.com/avatar/f96915d3f29e5623f9a9ff8c7cb3148f
+authorAvatar: https://www.gravatar.com/avatar/f96915d3f29e5623f9a9ff8c7cb3148f'
 bio: "Ash Hornbeck is a Sr. Product Architect on the Rackspace Managed Public Clouds Product Architecture Team."
 
 Kaminski, Brooks
@@ -97,7 +97,7 @@ authorAvatar: 'http://www.gravatar.com/avatar/791617263c70278859e1b26c15d13eab'
 bio: n/a
 
 Mishra, Manoj
-authorAvatar: 'https://s.gravatar.com/avatar/9498305cda9dc4fe9d8f5873b09ff1e2’
+authorAvatar: 'https://s.gravatar.com/avatar/9498305cda9dc4fe9d8f5873b09ff1e2'
 bio: n/a
 
 Moussa, Michael
@@ -121,7 +121,7 @@ authorAvatar: 'https://s.gravatar.com/avatar/c2945c57e1812f8b455101e1a2e49cac'
 bio: n/a
 
 Rathod, Sunil
-authorAvatar: 'https://s.gravatar.com/avatar/c3a915969820000d5dc4fc4f04ad8276’
+authorAvatar: 'https://s.gravatar.com/avatar/c3a915969820000d5dc4fc4f04ad8276'
 bio: n/a
 
 Rudley, Jimmy

@@ -5,7 +5,7 @@ date: 2020-01-15 00:01
 comments: true
 author: Bhupendra Batham
 authorIsRacker: true
-authorAvatar: 'https://s.gravatar.com/avatar/e64fc7787bc24eac1a8c969c4eceda44’
+authorAvatar: 'https://www.gravatar.com/avatar/e64fc7787bc24eac1a8c969c4eceda44'
 bio: "Bhupendra Batham has more than 12 of experience with Oracle technology and currently works at Rackspace. He is enthusiastic, a quick learner, and always learns new technologies. His strengths include analytical thinking, problem solving, learning from mistakes, and working well under pressure."
 published: true
 categories:
@@ -24,7 +24,7 @@ providing a convenient overview.
 
 ### Introduction
 
-(*Source*: [https://www.paramountassure.com/solutions/cloud-application-security](https://www.paramountassure.com/solutions/cloud-application-security)
+(*Source*: [https://www.paramountassure.com/solutions/cloud-application-security](https://www.paramountassure.com/solutions/cloud-application-security))
 
 Cloud computing security is a fast-growing service that provides many of the
 same functionalities as traditional IT security. This includes protecting
@@ -37,7 +37,7 @@ concern. Cloud security does not change the approach on how to manage security
 from preventing to detective and corrective actions. However, it gives you the
 ability to perform these activities in a more agile manner.
 
-(*Source*: [Handbook of Industry 4.0and SMART systems by Diego Galar Pascual, Pascuale Daponte, and Uday Kumar](https://books.google.com/books?id=7YavDwAAQBAJ&pg=PT323&lpg=PT323&dq=choosing+a+provider+that+has+multiple+data+centers+across+the+world+can+help+to+achieve+this&source=bl&ots=ct0JBJW8gP&sig=ACfU3U0cj2aelvfyqxPds2Tv5kEuKbGPNg&hl=en&sa=X&ved=2ahUKEwiFuZ-3uoPnAhXNbc0KHSVcAHwQ6AEwAHoECAwQAQ#v=onepage&q=choosing%20a%20provider%20that%20has%20multiple%20data%20centers%20across%20the%20world%20can%20help%20to%20achieve%20this&f=false)
+(*Source*: [Handbook of Industry 4.0and SMART systems by Diego Galar Pascual, Pascuale Daponte, and Uday Kumar](https://books.google.com/books?id=7YavDwAAQBAJ&pg=PT323&lpg=PT323&dq=choosing+a+provider+that+has+multiple+data+centers+across+the+world+can+help+to+achieve+this&source=bl&ots=ct0JBJW8gP&sig=ACfU3U0cj2aelvfyqxPds2Tv5kEuKbGPNg&hl=en&sa=X&ved=2ahUKEwiFuZ-3uoPnAhXNbc0KHSVcAHwQ6AEwAHoECAwQAQ#v=onepage&q=choosing%20a%20provider%20that%20has%20multiple%20data%20centers%20across%20the%20world%20can%20help%20to%20achieve%20this&f=false))
 
 Your data is secured within data centers and where some countries require data
 to be stored in their country. Choosing a provider that has multiple data
@@ -292,7 +292,7 @@ protect your sensitive critical content.
 
 (*Source*: [https://aws.amazon.com/macie/](https://aws.amazon.com/macie/))
 
-Macie is a security service that uses machine learning to automatically
+Amazon Macie is a security service that uses machine learning to automatically
 discover, classify, and protect sensitive data in AWS. Macie recognizes
 sensitive data such as personally identifiable information (PII) or intellectual
 property. Macie provides you with dashboards and alerts that give visibility into
