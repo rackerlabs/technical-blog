@@ -2,6 +2,10 @@ Anand, Vikrant
 authorAvatar: 'https://s.gravatar.com/avatar/98991c72835ea03135094fb2a1b6e3c0’
 bio: n/a
 
+Batham, Bhupendra
+authorAvatar: 'https://s.gravatar.com/avatar/e64fc7787bc24eac1a8c969c4eceda44’
+bio: "Bhupendra Batham has more than 12 of experience with Oracle technology and currently works at Rackspace. He is enthusiastic, a quick learner, and always learns new technologies. His strengths include analytical thinking, problem solving, learning from mistakes, and working well under pressure."
+
 Bhatnagar, Amit Kumar
 authorAvatar: 'https://s.gravatar.com/avatar/c9c74dd30299675961e5160a4fbb05fe'
 bio: n/a
