@@ -40,13 +40,13 @@ ability to perform these activities in a more agile manner.
 (*Source*: [Handbook of Industry 4.0and SMART systems by Diego Galar Pascual, Pascuale Daponte, and Uday Kumar](https://books.google.com/books?id=7YavDwAAQBAJ&pg=PT323&lpg=PT323&dq=choosing+a+provider+that+has+multiple+data+centers+across+the+world+can+help+to+achieve+this&source=bl&ots=ct0JBJW8gP&sig=ACfU3U0cj2aelvfyqxPds2Tv5kEuKbGPNg&hl=en&sa=X&ved=2ahUKEwiFuZ-3uoPnAhXNbc0KHSVcAHwQ6AEwAHoECAwQAQ#v=onepage&q=choosing%20a%20provider%20that%20has%20multiple%20data%20centers%20across%20the%20world%20can%20help%20to%20achieve%20this&f=false)
 
 Your data is secured within data centers and where some countries require data
-to be stored in their country, choosing a provider that has multiple data
+to be stored in their country. Choosing a provider that has multiple data
 centers across the world can help to achieve this.
 
-Data storage often includes certain compliance requirements especially when
+Data storage often includes certain compliance requirements, especially when
 storing credit card numbers or health information. Many cloud providers offer
 independent third-party audit reports to attest that their internal process
-exist and are effective in managing the security within their facilities where
+exist, and that they are effective in managing the security within their facilities where
 you store your data.
 
 The following image shows the three main cloud infrastructure principles:
@@ -87,12 +87,12 @@ AWS Identity Access Management allows you to do the following functions:
 
 (*Source*: [https://docs.aws.amazon.com/IAM/latest/UserGuide/iam-ug.pdf](https://docs.aws.amazon.com/IAM/latest/UserGuide/iam-ug.pdf))
 
-A principal is a person or application that makes a request for an action or
+A principal is a person or application that requests an action or
 operation on an AWS resource. When a principal tries to use the AWS Management
 Console, the AWS Application Program Interface (API), or the AWS Command Line
 Interface (CLI), that principal sends a request to AWS.
 
-A principal must be authenticated (signed into AWS) using their credentials to
+A principal must be authenticated (signed into AWS) by using their credentials to
 send a request to AWS. AWS uses values from the request context to check for
 policies that apply to the request. It then uses the policies to determine
 whether to allow or deny the request. After AWS approves the operations in your
@@ -115,12 +115,12 @@ automatically assesses applications for exposure, vulnerabilities, and deviation
 from best practices. After performing an assessment, Amazon Inspector produces
 a detailed list of security findings prioritized by level of severity. These
 findings can be reviewed directly or as part of detailed assessment reports,
-which are available via the Amazon Inspector console or API.
+which are available through the Amazon Inspector console or API.
 
 **Benefits:**
 
 -	Integrates automated security checks into your regular deployment and
-   production processes.
+    production processes.
 -	Finds application security issues.
 -	Helps you gain a deeper understanding of your AWS resources.
 
@@ -219,13 +219,13 @@ logs of all key usage to help meet your regulatory and compliance needs.
 
 **Benefits**:
 
-- Is fully managed
+- Is fully managed.
 
-- Has centralized key management
+- Has centralized key management.
 
-- Manages encryption for AWS services
+- Manages encryption for AWS services.
 
-- Encrypts data in your applications
+- Encrypts data in your applications.
 
 
 ![]({% asset_path 2020-01-15-aws-security/Picture7.png %})
@@ -234,15 +234,15 @@ logs of all key usage to help meet your regulatory and compliance needs.
 
 #### Organizations
 
-You can create groups of AWS accounts using Organizations to manage
+You can create groups of AWS accounts by using Organizations to manage
 security and automation settings.
 
 (*Source*: [https://aws.amazon.com/organizations/](https://aws.amazon.com/organizations/))
 
 AWS Organizations helps you centrally govern your environment as you
 grow and scale your workloads on AWS. Whether you are a growing startup or a
-large enterprise, Organizations helps you to centrally manage billing; control
-access, compliance, and security; and share resources across your AWS accounts.
+large enterprise, Organizations helps you to centrally manage billing, to control
+access, compliance, and security, as well as to share resources across your AWS accounts.
 
 **Benefits**:
 
@@ -268,18 +268,18 @@ access, compliance, and security; and share resources across your AWS accounts.
 AWS Shield is a managed Distributed Denial of Service (DDoS) protection service that
 safeguards applications running on AWS. Shield provides always-on detection and
 automatic inline mitigations that minimize application downtime and latency,
-as such there is no need to engage AWS Support to benefit from DDoS protection.
+so there is no need to engage AWS Support to benefit from DDoS protection.
 There are two tiers of AWS Shield&mdash;Standard and Advanced.
 
 **Benefits**:
 
-- Seamless integration and deployment
+- Seamless integration and deployment.
 
-- Customizable protection
+- Customizable protection.
 
-- Managed protection and attack visibility
+- Managed protection and attack visibility.
 
-- Cost efficiency
+- Cost efficiency.
 
 ![]({% asset_path 2020-01-15-aws-security/Picture9.png %})
 
@@ -292,23 +292,23 @@ protect your sensitive critical content.
 
 (*Source*: [https://aws.amazon.com/macie/](https://aws.amazon.com/macie/))
 
-Amazon Macie is a security service that uses machine learning to automatically
+Macie is a security service that uses machine learning to automatically
 discover, classify, and protect sensitive data in AWS. Macie recognizes
 sensitive data such as personally identifiable information (PII) or intellectual
-property and provides you with dashboards and alerts that give visibility into
+property. Macie provides you with dashboards and alerts that give visibility into
 how this data is being accessed or moved. The fully managed service continuously
 monitors data access activity for anomalies and generates detailed alerts when
-it detects risk of unauthorized access or inadvertent data leaks.
+it detects the risk of unauthorized access or inadvertent data leaks.
 
 **Benefits**:
 
-- Offers superior visibility of your data
+- Offers superior visibility of your data.
 
-- Is simple to set up, easy to manage
+- Is simple to set up, easy to manage.
 
-- Provides data security automation through machine learning
+- Provides data security automation through machine learning.
 
-- Has custom alert monitoring with CloudWatch
+- Has custom alert monitoring with CloudWatch.
 
 ![]({% asset_path 2020-01-15-aws-security/Picture10.png %})
 
@@ -321,7 +321,7 @@ it detects risk of unauthorized access or inadvertent data leaks.
 Amazon GuardDuty is a threat detection service that continuously monitors for
 malicious activity and unauthorized behavior to protect your AWS accounts and
 workloads. With the cloud, the collection and aggregation of account and network
-activities is simplified, but it can be time consuming for security teams to
+activities is simplified, but it can be time-consuming for security teams to
 continuously analyze event log data for potential threats. With GuardDuty, you
 now have an intelligent and cost-effective option for continuous threat
 detection in the AWS Cloud. The service uses machine learning, anomaly detection,
@@ -329,11 +329,11 @@ and integrated threat intelligence to identify and prioritize potential threats.
 
 **Benefits**:
 
-- Comprehensive threat identification
+- Comprehensive threat identification.
 
-- Strengthened security through automation
+- Strengthened security through automation.
 
-- Enterprise scale and central management
+- Enterprise scale and central management.
 
 ![]({% asset_path 2020-01-15-aws-security/Picture11.png %})
 
@@ -346,7 +346,7 @@ and integrated threat intelligence to identify and prioritize potential threats.
 For businesses making the transition to the cloud, robust cloud security is
 imperative. Security threats are constantly evolving and becoming more
 sophisticated, and cloud computing is no less at risk than an on-premise
-environment. For this reason, it is essential to work with a cloud provider
+environment. For this reason, it is essential that you work with a cloud provider
 that offers best-in-class security that has been customized for your
 infrastructure.
 
