@@ -6,7 +6,7 @@ comments: true
 author: Amit Kumar Bhatnagar
 published: true
 authorIsRacker: true
-authorAvatar: 'https://s.gravatar.com/avatar/ea77be7be4ebf7aed353087f677104be'
+authorAvatar: 'https://s.gravatar.com/avatar/c9c74dd30299675961e5160a4fbb05fe'
 categories:
   - database
   - architecture
