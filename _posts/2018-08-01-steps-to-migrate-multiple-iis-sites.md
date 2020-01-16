@@ -140,6 +140,19 @@ shown in the following screenshot:
     <li>Click <b>Finish</b> in the <b>Export Progress and Summary</b> screen.</li>
 </ol>
 
+#### Resolve import failure
+
+If the package import fails with the following error, use these steps to
+correct the issue:
+
+    Child object 'customFields' cannot be added to object 'logFile'.
+    The 'logFile' provider may not support this deployment."
+
+1. Open the zip file, which was exported using `msdeploy`.
+2. From the zip file **archive.xml** in a text editor.
+3. Remove the lines with customFields.
+4. Save the xml file.
+5. Import the zip again.
 
 ### Backup and restore a MySQL database
 
