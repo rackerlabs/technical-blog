@@ -260,15 +260,15 @@ To deploy the Planning UI application, use the following steps:
 
 1.  Run the following command to copy and extract the ZIP files.
 
-    mkdir /u01/app/oracle/product/fmw_oam2/user_projects/domains/ascp_domain/applications
-    cp $MSC_TOP/patch/115/ear/PlanningUIEar.zip /u01/app/oracle/product/fmw_oam2/user_projects/domains/ascp_domain/applications/.
+        mkdir /u01/app/oracle/product/fmw_oam2/user_projects/domains/ascp_domain/applications
+        cp $MSC_TOP/patch/115/ear/PlanningUIEar.zip /u01/app/oracle/product/fmw_oam2/user_projects/domains/ascp_domain/applications/.
 
 2.  Run the following commands to deploy the Planning application.
 
-    cd /u01/app/oracle/product/fmw_oam2/user_projects/domains/ascp_domain/applications/
-    unzip PlanningUIEar.zip
-    mkdir /u01/app/oracle/product/fmw_oam2/user_projects/domains/ascp_domain/servers/ASCPManagedServer/stage/PlanningUI
-    cp applications/PlanningUI.ear /u01/app/oracle/product/fmw_oam2/user_projects/domains/ascp_domain/servers/ASCPManagedServer/stage/PlanningUI/.
+        cd /u01/app/oracle/product/fmw_oam2/user_projects/domains/ascp_domain/applications/
+        unzip PlanningUIEar.zip
+        mkdir /u01/app/oracle/product/fmw_oam2/user_projects/domains/ascp_domain/servers/ASCPManagedServer/stage/PlanningUI
+        cp applications/PlanningUI.ear /u01/app/oracle/product/fmw_oam2/user_projects/domains/ascp_domain/servers/ASCPManagedServer/stage/PlanningUI/.
 
 3.  Open the WebLogic UI for the ASCP domain according to the procedure in step 7.
 
