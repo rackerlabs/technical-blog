@@ -1,13 +1,12 @@
 ---
 layout: post
 title: "Integrate Oracle ADF with E-Business  Suite"
-date: 2019-11-27 00:01
+date: 2020-01-23 00:01
 comments: true
-author: Ravi Kant Sharma
+author: Balaganesh Gembali
 published: true
 authorIsRacker: true
 authorIsRacker: true
-authorAvatar: 'http://0.gravatar.com/avatar/c7776b42759c729500163fc6588221ac'
 categories:
     - Oracle
     - Database
