@@ -31,7 +31,7 @@ application framework that builds on Java EE standards and open-source
 technologies to simplify and accelerate implementing enterprise applications.
 Oracle ADF is suitable for enterprise developers who want to create applications
 that search, display, create, modify, and validate data using web, mobile, and
-desktop interfaces.”
+desktop interfaces.
 
 “You can use the whole Oracle ADF framework to create an application, or you
 can use parts of the framework in combination with the other technologies.
@@ -46,16 +46,16 @@ layers are referred to as Fusion web applications.”
 Oracle describes SPWA in [FAQ For 12.2.5 - SPWA - Supply Planning Work Area](https://support.oracle.com/knowledge/More%20Applications%20and%20Technologies/2049195_1.html) in the following way:
 
 “The Supply Planning Work Area (SPWA) is a component of the Oracle Advanced
-Supply Chain Planning (ASCP).”
+Supply Chain Planning (ASCP).
 
 “12.2.5 VCP introduces a new form for users that is an alternative to the
 planner workbench. The standard Planner Workbench is still available and will
-not be removed from the applications.”
+not be removed from the applications.
 
 “This form uses the same ADF (Application Development Framework) tech stack that
 powers Rapid Planning and Fusion applications&mdash;part of the Fusion Middle Ware
 (FMW) tech stac. This does not use standard Oracle Forms tech stack that
-has been the standard for the last 15+ years.”
+has been the standard for the last 15+ years.
 
 “It depends on your WebLogic tech stack and ADF rendering of the forms.”
 
