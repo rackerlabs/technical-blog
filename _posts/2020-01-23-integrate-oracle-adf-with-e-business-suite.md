@@ -153,7 +153,7 @@ complete the installation:
 -	Select the first option to generate an automatically configured domain and
     select both the Oracle Enterprise Manager (OEM) and Java Required Files (JRF).
 -	Enter the **Domain Name**, ``ascp_domain``.
--	Provide a WebLogic password.
+-	Provide your WebLogic password.
 -	Select **Configure Server Start Mode** in the **Production** mode.
 -	Select **Administration Server** on the **Optional Configuration** screen.
 -	Change the listener port to the other port if you installed the WLS in the same
