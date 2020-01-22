@@ -31,7 +31,7 @@ application framework that builds on Java EE standards and open-source
 technologies to simplify and accelerate implementing enterprise applications.
 Oracle ADF is suitable for enterprise developers who want to create applications
 that search, display, create, modify, and validate data using web, mobile, and
-desktop interfaces.
+desktop interfaces.”
 
 “You can use the whole Oracle ADF framework to create an application, or you
 can use parts of the framework in combination with the other technologies.
