@@ -7,6 +7,7 @@ author: Balaganesh Gembali
 published: true
 authorIsRacker: true
 authorIsRacker: true
+authorAvatar: 'https://secure.gravatar.com/avatar/ce5ceb1aa8757ef235ddaa21265863eb'
 categories:
     - Oracle
     - Database
