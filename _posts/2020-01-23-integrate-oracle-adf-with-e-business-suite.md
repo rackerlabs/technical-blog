@@ -8,6 +8,7 @@ published: true
 authorIsRacker: true
 authorIsRacker: true
 authorAvatar: 'https://secure.gravatar.com/avatar/ce5ceb1aa8757ef235ddaa21265863eb'
+bio: "I am a Software Techie by profession. I've been an Oracle Database Administrator since I began my career and worked for top IT companies. I have 14 years of IT experience and currently work for Rackspace as a Senior Oracle Apps DBA. I am passionate about electronic gadgets, travelling, exploring, and tasting delicious food."
 categories:
     - Oracle
     - Database
