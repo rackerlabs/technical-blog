@@ -46,3 +46,5 @@ One of the great features of using the SQL Server resource provider is that the 
 
 -- Select the disk size from the dropdown for how much to expend the current drive. Select **Apply** 
 ![resources]({% asset_path 2020-01-29-Azure-SQL-VM-Resource-Provider/3.png %})
+
+I hope this quick glimpse into using the SQL Server resource provider showed how easy configuring SQL Server can be. The example ARM template that I used for this article can be located [here](https://github.com/jrudley/azureSqlResourceProvider)
