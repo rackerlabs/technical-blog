@@ -10,13 +10,13 @@ authorAvatar: 'https://s.gravatar.com/avatar/c44cfe09d207a9f1529d2280dec8583a'
 categories:
     - Salesforce
 metaTitle: "Install guardrails on your sales process with Salesforce CPQ"
-metaDescription: "With features that act as guardrails on your sales process, Salesforce&reg; CPQ could be just the tool you need to stay on track."
+metaDescription: "With features that act as guardrails on your sales process, Salesforce&reg; CPQ is just the tool you need to stay on track."
 ogTitle: "Install guardrails on your sales process with Salesforce CPQ"
-ogDescription: "With features that act as guardrails on your sales process, Salesforce&reg; CPQ could be just the tool you need to stay on track."
+ogDescription: "With features that act as guardrails on your sales process, Salesforce&reg; CPQ is just the tool you need to stay on track."
 ---
 
 As your company grows, your sales process becomes more complicated. You might
-notice that your sales team has slowed down as your salespeople struggle to
+notice that your sales team slows down as your salespeople struggle to
 generate proposals and close sales in the same timely manner. What can you do
 to streamline your sales process and enable your sales team as your company
 continues to expand?
@@ -27,27 +27,26 @@ continues to expand?
 
 With features that act as guardrails on your sales process,
 [Salesforce&reg; CPQ](https://www.salesforce.com/products/cpq/overview/)
-could be just the tool you need to stay on track. But while CPQ is incredibly
+is just the tool you need to stay on track. But while CPQ is incredibly
 powerful, its power can make it confusing to implement and use. At Rackspace,
 we have engineers who focus solely on CPQ implementation and how to customize
-it for businesses, which means we’ve gained expert knowledge on how to implement
-CPQ for many different businesses.
+it, which means we’ve gained expert knowledge on how to implement CPQ for many
+different businesses.
 
-This post explains more about Salesforce CPQ and its potential benefits for your
-company, as well as how to implement these guardrails on your sales process for
-the best results.
+This post explains more about Salesforce CPQ and its potential benefits, and how
+to implement these guardrails on your sales process for the best results.
 
 ### Why use Salesforce CPQ?
 
 Using a predetermined set of rules, Salesforce CPQ quickly generates quotes and
-automates pricing for complex sales procedures or a wide range of products. This
-significantly reduces the amount of time it takes to generate and approve quotes,
-reduces average sales time, and increases the average size of your deals. If
-you find that your sales process is slow and overburdened, consider implementing
-CPQ.
+automates pricing for complex sales procedures for a wide range of products. This
+information significantly reduces the amount of time it takes to generate and
+approve quotes, reduces average sales time, and increases the average size of
+your deals. If you find that your sales process is slow and overburdened, consider
+implementing CPQ.
 
 CPQ also provides your sales process with guardrails that ensure the ideal level
-of autonomy for your sales team&mdash;it allows them to sell while still
+of autonomy for your sales team&mdash;it enables them to sell while still
 keeping quality in place. While automatically generating proposals and quotes,
 it combines and prices products and services according to rules and limitations.
 This process eliminates errors and saves time, which makes life easier for your
@@ -69,7 +68,7 @@ For example, enterprise resource planning (ERP) systems have been slow to adapt
 to this type of product offering because they’re not used to recurring revenue
 or subscription changes, which can make billing complicated.
 
-### Best Practices in Implementing CPQ
+### Best practices in implementing CPQ
 
 After you complete your research and decide that you want to use CPQ at your
 company, there are a few things you should do.
@@ -108,7 +107,7 @@ questions, such as the following ones:
 - What process do you currently have?
 - What process do you want to have?
 - Are you happy with the length of your sales process?
-- Is your sales team applying the right sized discounts?
+- Is your sales team applying the right discounts?
 - What do you consider success?
 
 We then combine your answers about your goals and pain points with our experience
