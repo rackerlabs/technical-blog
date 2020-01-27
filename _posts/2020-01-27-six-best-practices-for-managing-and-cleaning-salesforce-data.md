@@ -24,13 +24,13 @@ and which should you scrub? How can your company decide?
 ![]({% asset_path 2020-01-27-six-best-practices-for-managing-and-cleaning-salesforce-data/Picture1.png %})
 
 Rackspace has helped many clients implement and customize Salesforce, giving us
-a unique view on best practices, and common mistakes,
+a unique view on best practices and common mistakes,
 when migrating, cleaning, and maintaining your business data.
 
 Mismanagement of data can slow down your team, confuse your clients, and could
 ultimately get you in a lot of trouble&mdash;especially with new emerging
-legislation like GDPR. Read on to learn how to manage your data better and reap
-the rewards of effective data organization.
+legislation like General Data Protection Regulation (GDPR). Read on to learn how
+to manage your data better and reap the rewards of effective data organization.
 
 ### When moving houses or migrating data, take only what you need
 
@@ -56,7 +56,7 @@ can retire. Over time, we’ve made the following observations:
   Having accurate data about companies and people is critical. Ancillary data
   that gives a 360-degree view of a customer is also extremely valuable.
 
-- **Notes on customers should only be retained if relevant and useful**. Some
+- **Retain notes on customers only if they relevant and useful**. Some
   clients might decide not to migrate note data, or to limit it to a specific
   date range. However, certain industries, such as financial services, might
   find that note data is relevant despite its age, or they might need to retain
@@ -73,14 +73,14 @@ can retire. Over time, we’ve made the following observations:
 
 As we’ve helped clients manage and clean their data, we see the same mistakes
 recur. Whether your company is working with a consultant to support your data
-management practices, or to directly manage data migration, be sure to avoid
+management practices, or to manage data migration directly, be sure to avoid
 these common mistakes:
 
 - **Skipping data migration altogether**. Every so often, we see clients who
 decide they want to start with a clean slate and avoid moving any data records.
 This choice impairs your company’s understanding of its relationship with your
 customers. Implement Customer Relationship Management (CRM) systems to guide
-relations with your customers, based on customer data, trends, and insights.
+relations with your customers based on customer data, trends, and insights.
 Casting aside all existing customer data can be counterproductive to this goal.
 
 - **Missing hierarchical relationships**. Hierarchical relationships enable
