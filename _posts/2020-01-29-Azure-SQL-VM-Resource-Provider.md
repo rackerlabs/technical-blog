@@ -35,7 +35,7 @@ the following benefits:
 -  Configurable data, log, and temp file paths
 -  User-defined storage workload types
 
-The biggest issue about figuring out which method to configure is determining
+The biggest issue about figuring out which method to use for configuration is determining
 how flexible you want to be for configuration options. With Azure PowerShell,
 there are not many meaningful settings exposed for post configuration except
 for setting the SQL management type. You can find more information about the
