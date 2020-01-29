@@ -16,8 +16,8 @@ ogTitle: "New features in Oracle version 18C"
 ogDescription: "This blog discusses the new interesting features introduced in Oracle Database 18c that make the life of DBA a little easier."
 ---
 
-This blog discusses the new interesting features introduced in Oracle Database 18c that make the
-life of DBA a little easier.
+This blog post discusses the new interesting features introduced in Oracle
+Database 18c that make the life of DBA a little easier.
 
 <!-- more -->
 
@@ -73,7 +73,7 @@ common to every installation's **ORACLE\_HOME**. Migrating a database from one
 
     orapwd file=’$ORACLE_BASE/orapwtest18c’ password=oracle force=y format=12
 
-![]({% asset_path 2020-1-2-new-features-in-oracle-version-18c/Picture1.png %})
+![]({% asset_path 2020-01-02-new-features-in-oracle-version-18c/Picture1.png %})
 
 ### Read-only Oracle Home
 

@@ -19,7 +19,8 @@ Rackspace now offers Sitecore&reg; version 9.3, which includes several enhanceme
 
 <!-- more -->
 
-<img class="blog-post right" src="{% asset_path 2020-1-9-now-available-sitecore-v9.3/sitecore_logo.png %}"/> Our
+<img class="blog-post right" src="{% asset_path 2020-01-09-now-available-sitecore-v9.3/sitecore_logo.png %}"/> Our
+
 Sitecore Managed Cloud Premium complete solution offering includes the
 following default elements:
 
@@ -34,7 +35,7 @@ The following products and services are available as add-ons:
 - RMS PDR
 - ProServices
 - and others
-  
+
 ### Enhancements in Sitecore v9.3
 
 The enhancements in Sitecore v9.3 include the following items:
@@ -43,7 +44,7 @@ The enhancements in Sitecore v9.3 include the following items:
 - Updated forms functionality.
 - Improved performance of the session state providers​ by optimizing the amount of data
   saved to the session state.
-- Improved performance of the web tracker by saving expired sessions to xConnect in 
+- Improved performance of the web tracker by saving expired sessions to xConnect in
   batches.
 - Implemented some GDPR improvements to support the *right to be forgotten*.
 - Added **Expand** options for devices.
