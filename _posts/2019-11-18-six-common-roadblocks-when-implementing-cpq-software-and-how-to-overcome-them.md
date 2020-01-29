@@ -4,6 +4,7 @@ title: "Six common roadblocks when implementing CPQ software and how to overcome
 date: 2019-11-18 00:01
 comments: true
 author: Rob Hawthorn
+authorAvatar: 'https://s.gravatar.com/avatar/c44cfe09d207a9f1529d2280dec8583a'
 published: true
 authorIsRacker: true
 categories:
