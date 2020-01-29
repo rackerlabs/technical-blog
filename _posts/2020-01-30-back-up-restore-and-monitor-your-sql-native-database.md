@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Back up, restore, and monitor your native SQL database"
+title: "Back up, restore, and monitor your SQL native database"
 date: 2020-01-30 00:01
 comments: true
 author: Anil Kumar
@@ -11,9 +11,9 @@ authorAvatar: 'https://s.gravatar.com/avatar/3533f66c2c0826e45a3cf9b8c64ef617'
 categories:
     - AWS
     - Database
-metaTitle: "Back up, restore, and monitor your native SQL database"
+metaTitle: "Back up, restore, and monitor your SQL native database"
 metaDescription: "This blog post discusses backing up, restoring, and monitoring SQL native databases in Amazon&reg; Web Services (AWS) Relational Database Service(RDS)."
-ogTitle: "Back up, restore, and monitor your native SQL database"
+ogTitle: "Back up, restore, and monitor your SQL native database"
 ogDescription: "This blog post discusses backing up, restoring, and monitoring SQL native databases in Amazon&reg; Web Services (AWS) Relational Database Service(RDS)."
 ---
 
