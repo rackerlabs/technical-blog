@@ -46,7 +46,7 @@ Let's take the example of creating a new SQL Server VM running SQL Server 2019 o
 Windows&reg; 2019. Our example project has the following requirements:
 
 - Use mixed-mode authentication 
-- Data and Log files on separate drives 
+- Store data and log files on separate drives 
 
 Previously, you needed to use a post-configuration method, such as a Desired State
 Configuration (DSC) or custom script extension, to format the drives and configure
