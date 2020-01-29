@@ -25,9 +25,7 @@ basic SQL Server settings without the need for any post-configuration scripts.
 <!-- more -->
 
 When you use the Azure portal, a SQL Server VM comes already registered
-with the SQL Server resource provider. However, Azure PowerShell&reg; and the
-Azure command line interface (CLI) require additional work when you use an
-Azure Resource Manager (ARM) template. Using the resource provider includes
+with the SQL Server resource provider. Using the resource provider includes
 the following benefits:
 
 -  Automated patching and backups
@@ -36,12 +34,12 @@ the following benefits:
 -  User-defined storage workload types
 
 The biggest issue about figuring out which method to use for configuration is determining
-how flexible you want to be for configuration options. With Azure PowerShell,
+how flexible you want to be for configuration options. With Azure PowerShell&reg;,
 there are not many meaningful settings exposed for post configuration except
 for setting the SQL management type. You can find more information about the
 management mode [here](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-register-with-resource-provider?tabs=azure-cli%2Cbash#management-modes) [Azure PowerShell](https://docs.microsoft.com/en-us/powershell/module/az.sqlvirtualmachine/new-azsqlvm?view=azps-3.3.0). Next
-in line is the Azure CLI. This CLI enables you to set backups, SQL authentication
-types, and patching schedules as described [here](https://docs.microsoft.com/en-us/cli/azure/sql/vm?view=azure-cli-latest). The most powerful option is configuring within an ARM template. The ARM template
+in line is the Azure Command Line Interface (CLI). This CLI enables you to set backups, SQL authentication
+types, and patching schedules as described [here](https://docs.microsoft.com/en-us/cli/azure/sql/vm?view=azure-cli-latest). The most powerful option is configuring within an Azure Resource Manager (ARM) template. The ARM template
 includes all the settings from the CLI as well as configuring SQL storage settings as shown in [Template JSON](https://docs.microsoft.com/en-us/azure/templates/microsoft.sqlvirtualmachine/2017-03-01-preview/sqlvirtualmachines#).
 
 Let's take the example of creating a new SQL Server VM running SQL Server 2019 on
