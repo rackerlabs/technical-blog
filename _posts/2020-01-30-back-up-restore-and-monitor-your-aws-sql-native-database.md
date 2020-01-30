@@ -1,19 +1,19 @@
 ---
 layout: post
-title: "Back up, restore, and monitor your SQL native database"
+title: "Back up, restore, and monitor your AWS SQL native database"
 date: 2020-01-30 00:01
 comments: true
 author: Anil Kumar
 published: true
 authorIsRacker: true
 authorIsRacker: true
-authorAvatar: 'https://s.gravatar.com/avatar/3533f66c2c0826e45a3cf9b8c64ef617'
+authorAvatar: 'https://s.gravatar.com/avatar/3f1352f21438061d35ff20470433f3da'
 categories:
     - AWS
     - Database
-metaTitle: "Back up, restore, and monitor your SQL native database"
+metaTitle: "Back up, restore, and monitor your AWS SQL native database"
 metaDescription: "This blog post discusses backing up, restoring, and monitoring SQL native databases in Amazon&reg; Web Services (AWS) Relational Database Service(RDS)."
-ogTitle: "Back up, restore, and monitor your SQL native database"
+ogTitle: "Back up, restore, and monitor your AWS SQL native database"
 ogDescription: "This blog post discusses backing up, restoring, and monitoring SQL native databases in Amazon&reg; Web Services (AWS) Relational Database Service(RDS)."
 ---
 
@@ -44,7 +44,7 @@ following example:
     @s3_arn_to_backup_to='arn:aws:s3:::bucket_name/file_name_and_extension', @kms_master_key_arn='arn:aws:kms:region:account-id:key/key-id',
     @overwrite_S3_backup_file=1;
 
-![]({% asset_path 2020-01-30-back-up-restore-and-monitor-your-sql-native-database/picture1.png %})
+![]({% asset_path 2020-01-30-back-up-restore-and-monitor-your-aws-sql-native-database/picture1.png %})
 
 *Image source*: [http://niftit.com/backup-with-aws-rds/](http://niftit.com/backup-with-aws-rds/)
 
@@ -73,7 +73,7 @@ from an S3 bucket on your AWS RDS instance, as shown in the following example:
         @s3_arn_to_restore_from='arn:aws:s3::: bucket_name/file_name_and_extension',
         @kms_master_key_arn='arn:aws:kms:region:account-id:key/key-id';
 
-![]({% asset_path 2020-01-30-back-up-restore-and-monitor-your-sql-native-database/picture2.png %})
+![]({% asset_path 2020-01-30-back-up-restore-and-monitor-your-aws-sql-native-database/picture2.png %})
 
 *Image Source*: [http://www.awslab.io/sqlserver/lab2/](http://www.awslab.io/sqlserver/lab2/)
 
@@ -148,7 +148,7 @@ tasks, as shown in the following example:
 
     exec msdb.dbo.rds_task_status @db_name='database_name'
 
-![]({% asset_path 2020-01-30-back-up-restore-and-monitor-your-sql-native-database/picture3.png %})
+![]({% asset_path 2020-01-30-back-up-restore-and-monitor-your-aws-sql-native-database/picture3.png %})
 
 *Image Source*: [http://www.awslab.io/sqlserver/lab2/](http://www.awslab.io/sqlserver/lab2/)
 

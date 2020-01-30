@@ -97,7 +97,7 @@ authorAvatar: 'https://s.gravatar.com/avatar/3533f66c2c0826e45a3cf9b8c64ef617'
 bio: n/a
 
 Kumar, Anil
-authorAvatar: 'https://s.gravatar.com/avatar/3533f66c2c0826e45a3cf9b8c64ef617'
+authorAvatar: 'https://s.gravatar.com/avatar/3f1352f21438061d35ff20470433f3da'
 bio: n/a
 
 Mattson, Josh
