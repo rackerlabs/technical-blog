@@ -13,6 +13,7 @@ metaTitle: "Three ways Salesforce can streamline your financial services company
 metaDescription: "In this post, I dive into three points that show how Salesforce can help take your financial services company to the next level."
 ogTitle: "Three ways Salesforce can streamline your financial services company"
 ogDescription: "In this post, I dive into three points that show how Salesforce can help take your financial services company to the next level."
+canonical: https://blog.rackspace.com/3-ways-salesforce-can-streamline-your-financial-services-company/
 ---
 
 In the financial services sector, Salesforce&reg; stands head and shoulders

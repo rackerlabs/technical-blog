@@ -13,6 +13,7 @@ metaTitle: "Is Salesforce the right solution for your company?"
 metaDescription: "You should consider four questions to decide if Salesforce is the right solution for your company."
 ogTitle: "Is Salesforce the right solution for your company?"
 ogDescription: "You should consider four questions to decide if Salesforce is the right solution for your company."
+canonical: https://blog.rackspace.com/is-salesforce-the-right-solution-for-your-company-answer-these-4-questions/
 ---
 
 You should consider four questions to decide if Salesforce is the right solution for your company.

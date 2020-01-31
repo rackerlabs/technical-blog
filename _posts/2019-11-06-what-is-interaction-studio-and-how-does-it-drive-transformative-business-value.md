@@ -14,13 +14,14 @@ metaTitle: "What is Interaction Studio, and how does it drive transformative bus
 metaDescription: "Interaction Studio launched in 2018 as an innovative Marketing Cloud feature that allows your company to engage with customers at every stage along the path from lead to loyalty."
 ogTitle: "What is Interaction Studio, and how does it drive transformative business value?"
 ogDescription: "Interaction Studio launched in 2018 as an innovative Marketing Cloud feature that allows your company to engage with customers at every stage along the path from lead to loyalty."
+canonical: https://blog.rackspace.com/what-is-interaction-studio-and-how-does-it-drive-transformative-business-value/
 ---
 
-[Interaction Studio](https://www.salesforce.com/products/marketing-cloud/customer-interaction/) launched in 2018 as an innovative Marketing Cloud feature that enables your company to engage with customers at every stage along the path from lead to loyalty. Interaction Studio uses cookies to track customer data and then matches that data with customer-provided information&mdash;like email addresses and phone numbers.  
+[Interaction Studio](https://www.salesforce.com/products/marketing-cloud/customer-interaction/) launched in 2018 as an innovative Marketing Cloud feature that enables your company to engage with customers at every stage along the path from lead to loyalty. Interaction Studio uses cookies to track customer data and then matches that data with customer-provided information&mdash;like email addresses and phone numbers.
 
 <!-- more -->
 
-![]({% asset_path 11-6-19-what-is-interaction-studio-and-how-does-it-drive-transformative-business-value/Interaction-studio.png %})
+![]({% asset_path 2019-11-06-what-is-interaction-studio-and-how-does-it-drive-transformative-business-value/Interaction-studio.png %})
 
 How much could you increase sales at your company, if you could meet your customers where they are on the buyer’s journey and guide them toward your product or service?
 
@@ -28,7 +29,7 @@ With a solid awareness of consumer interactions, you can deliver a more personal
 
 ### Solving customer pain points with Interaction Studio
 
-Interaction Studio removes your reliance on batch data during customer interactions&mdash;providing you with all the data you need at the click of a button. It lets your brand [customize interactions](https://martechtoday.com/salesforce-adds-interaction-studio-integration-with-google-analytics-360-217079) with an individual customer’s behavior and guide them to the most appropriate product or service, eliminating many common customer pain points. 
+Interaction Studio removes your reliance on batch data during customer interactions&mdash;providing you with all the data you need at the click of a button. It lets your brand [customize interactions](https://martechtoday.com/salesforce-adds-interaction-studio-integration-with-google-analytics-360-217079) with an individual customer’s behavior and guide them to the most appropriate product or service, eliminating many common customer pain points.
 
 Here are four ways that your company can use Interaction Studio to improve customer service and drive transformative business value.
 
@@ -38,7 +39,7 @@ Today’s consumer often wants to research your brand, product, or service [befo
 
 Interaction Studio helps your brand deliver a relevant and personalized customer support experience. It shows you exactly what someone was looking at on your website the moments before they contacted customer service. For example, if someone visits the mortgage page on your banking company’s website&mdash;when they contact support, instead of generically asking, “Hi, how can I help you today?” your customer service agent can ask, “Hi, I see you’re interested in mortgage products. Can I answer any specific questions?”
 
-By leveraging this data, you can provide a faster and more effective customer service experience. 
+By leveraging this data, you can provide a faster and more effective customer service experience.
 
 #### Customize on-site content
 
