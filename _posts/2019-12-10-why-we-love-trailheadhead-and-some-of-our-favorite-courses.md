@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Trailhead: Why we love it and some of our favorite courses"
-date: 2019-12-9 00:00
+date: 2019-12-10 00:00
 comments: true
 author: Chris Whitehead
 published: true
@@ -13,6 +13,7 @@ metaTitle: "Trailhead: Why we love it and some of our favorite courses"
 metaDescription: "Use Trailhead courses to learn Saleforce in a fun and engaging way&mdash;there's something for everyone!"
 ogTitle: "Trailhead: Why we love it and some of our favorite courses"
 ogDescription: "Use Trailhead courses to learn Saleforce in a fun and engaging way&mdash;there's something for everyone!"
+canonical: https://blog.rackspace.com/trailhead-why-do-we-love-it-and-which-are-our-favorite-courses/
 ---
 
 The Trailhead&reg; training platform offers courses for everyone, from IT

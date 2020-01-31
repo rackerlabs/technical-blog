@@ -12,6 +12,7 @@ metaTitle: "How can your organization use Salesforce to its full capacity?"
 metaDescription: "With so many incredible features and powerful tools, it can be hard to unlock the full potential of a customer success platform like Salesforce."
 ogTitle: "How can your organization use Salesforce to its full capacity?"
 ogDescription: "With so many incredible features and powerful tools, it can be hard to unlock the full potential of a customer success platform like Salesforce."
+canonical: https://blog.rackspace.com/how-can-your-organization-use-salesforce-to-its-full-capacity/
 ---
 
 It is one thing to have access to Salesforce&reg; within your organization; it is another be confident that you are using the platform to its full capacity.
@@ -20,7 +21,7 @@ What happens if you discover that your organization’s Salesforce usage is belo
 
 <!-- more -->
 
-![]({% asset_path 11-7-19-how-can-your-organization-use-salesforce-to-its-full-capacity/picture1.png %})
+![]({% asset_path 2019-11-07-how-can-your-organization-use-salesforce-to-its-full-capacity/picture1.png %})
 
 ### Identify adoption benchmarks
 
@@ -38,7 +39,7 @@ The first metric to evaluate is the daily [login activity of your Salesforce use
 
 Data quality is another important metric. Are team members accurately and thoroughly completing critical fields? Can you trust others in your organization to enter data responsibly according to Salesforce best practices? If your team is off track, focus on the type and quality of data in your existing records.
 
-The Field Trip app is a quick way to pull reports on Salesforce fields. Field Trip analyzes fields in any object with optional filters for better reporting. This app enables you to easily view the percentage of populated records and gauge your organizational effectiveness. 
+The Field Trip app is a quick way to pull reports on Salesforce fields. Field Trip analyzes fields in any object with optional filters for better reporting. This app enables you to easily view the percentage of populated records and gauge your organizational effectiveness.
 
 #### Team productivity
 
