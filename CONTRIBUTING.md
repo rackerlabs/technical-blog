@@ -52,6 +52,7 @@ categories:
     - This Category
     - That Category
     - Other Category
+canonical: https://original-url.link.com/post-name/
 #
 # The following properties are OPTIONAL and affect the text and image that
 # appear by default in link previews when sharing blog posts. To customize
@@ -68,6 +69,11 @@ categories:
 # twitterTitle:
 ---
 ```
+
+The *authorAvatar* and *bio* entires are optional, but include them if you can!
+
+You should use the *canonical* entry if you are republishing a blog that was
+previously published elsewhere.  Link to the original.
 
 **NOTE:** The "ogImage" _must_ be a fully-qualified URL. If you'd like to use an
 image asset that is being uploaded as part of your blog post, the pattern for the
@@ -86,7 +92,10 @@ Example:
 
   * `https://657cea1304d5d92ee105-33ee89321dddef28209b83f19f06774f.ssl.cf1.rackcdn.com/default-og-image-46fb3587dedfdf950188fabbddd596d67e6b699374a7f4e36b43046d7a24fd09.jpg`
 
-If you'd like to use an image asset from your post that _shouldn't_ appear in the post itself, you can include `style="display: none"` on the `<img />` tag to hide it within the post while triggering the necessary plugin code to ensure it is made available on the CDN based on the above naming convention.
+If you'd like to use an image asset from your post that _shouldn't_ appear in
+the post itself, you can include `style="display: none"` on the `<img />` tag
+to hide it within the post while triggering the necessary plugin code to ensure
+it is made available on the CDN based on the above naming convention.
 
 Make sure that the dates in the file name and front-matter match.
 
@@ -129,6 +138,8 @@ Available categories include the following:
 - SDK
 - Security
 
+If no category fits, use *General*.
+
 If you'd like to use a category that is not in the list, please send an email
 to infodev@rackspace.com. To avoid being flooded with categories, which might apply
 to only one or two blogs, we have automated throttling. However, notify us so
@@ -165,47 +176,6 @@ containing your post. Within your post, use the following markup:
 
 ```
 <img class="blog-post right" src="{% asset_path 2015-06-17-built-an-app-on-openstack-at-qcon-ny-2015/qcon.png %}"/>Last week I went to QCon NY 2015 to be both a student and a teacher in their tutorial track. They follow the standard pattern of having 2 days of tutorials prior to the conference proper. To understand QCon a bit better, here's their mission statement.
-```
-
-#### Adding social media share icons
-
-To add social media share icons at the end of your blog, include the following code:
-
-Be sure to update the links with your blog name!  If your blog file is *2018-09-01-late-breaking-news.md*, you'd replace *applications-monitoring-creating-a-smoother-financial-close* with *late-breaking-news* in all three URLs.
-
-```
-<table>
-  <tr>If you liked this blog, share it by using the following icons:</tr>
-  <tr>
-   <td>
-       <img src="{% asset_path line-tile.png %}" width=50 >
-    </td>
-    <td>
-      <a href="https://twitter.com/home?status=https%3A//developer.rackspace.com/blog/applications-monitoring-creating-a-smoother-financial-close/">
-        <img src="{% asset_path shareT.png %}">
-      </a>
-    </td>
-    <td>
-       <img src="{% asset_path line-tile.png %}" width=50 >
-    </td>
-    <td>
-      <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//developer.rackspace.com/blog/applications-monitoring-creating-a-smoother-financial-close/">
-        <img src="{% asset_path shareFB.png %}">
-      </a>
-    </td>
-    <td>
-       <img src="{% asset_path line-tile.png %}" width=50 >
-    </td>
-    <td>
-      <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//developer.rackspace.com/blog/applications-monitoring-creating-a-smoother-financial-close&summary=&source=">
-        <img src="{% asset_path shareL.png %}">
-      </a>
-    </td>
-  </tr>
-</table>
-
-
-</br>
 ```
 
 #### Writing your post
