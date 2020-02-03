@@ -100,7 +100,7 @@ databases:
 - You can backup the database in the same region as the RDS instance to which
   it belongs. When a user who has access to the S3 bucket in region A, where
   the RDS instance resides, tries to back up the database to the S3 bucket in
-  region B the following error occurs:
+  region B, the following error occurs:
 
         Aborted the task because of a task failure or an overlap with your
         preferred backup window for RDS automated backup.
