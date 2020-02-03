@@ -7,7 +7,7 @@ author: Roman Lara
 published: true
 authorIsRacker: true
 authorAvatar: 'https://s.gravatar.com/avatar/e9ef88c66315a7f955c4352a7ad2182a'
-bio: "Roman Lara is a Senior Engineer on the Rackspace specialized DDoS Response Team and has been a Racker in various roles since 2009. He is responsible for driving the design, build, and maintenance of Rackspace DDoS Mitigation infrastructure and services. Roman is a high-energy, hands-on leader whose knowledge and experience of threat trends helps develop and create powerful mitigation strategies through Fanatical Support."
+bio: "Roman Lara is a Senior Engineer on the Rackspace specialized DDoS Response Team and has been a Racker in various roles since 2009. He is responsible for driving the design, build, and maintenance of Rackspace DDoS Mitigation infrastructure and services. Roman is a high-energy, hands-on leader whose knowledge and experience of threat trends helps develop and create powerful mitigation strategies through Fanatical Support&reg;."
 categories:
     - Security
 metaTitle: "To protect or not to protect"
@@ -22,8 +22,8 @@ The best-defended environment is useless if your customers cannot get to your si
 
 This situation is the reality in the world of hosting and distributed
 denial-of-service (DDoS) attacks.  Recently, I heard that hosting without
-security compared to buying a car without seatbelts. Let me take the analogy of
-the car further and say hosting without DDoS mitigation protection is like
+security compared to buying a car without seat belts. Let me take the analogy
+of the car further and say hosting without DDoS mitigation protection is like
 driving your new car off the dealership lot without insurance.
 
 ### What is DDoS?
@@ -36,8 +36,9 @@ known in marketing terms as a "Doorbusters" event.
 
 These attacks create conditions in which the system denies legitimate users
 access to resources, both yours and your customers'. The bad actors are not
-trying to break into a protected environment to steal or destroy your data. They
-just want to disrupt services and cause as much chaos for the legitimate uses of
+trying to break into a protected environment to steal or destroy your data.
+They want to disrupt services and cause as much chaos for the legitimate uses
+of
 the resources as possible by generating a massive number of phony requests from
 a large number of computers worldwide that flood a target server. As a result,
 the target server spends all its resources serving requests and becomes virtually
@@ -50,14 +51,14 @@ Prevention System (IPS) could help stop a DDoS attack by themselves are long gon
 
 Stateful devices, such as firewalls and an IPS, track all inbound connections
 for inspection and store them in a connection table. These devices match every
-data packet against the connection table to verify that the packet was
+data packet against the connection table to verify that the packet
 transmitted over an established legitimate connection. The connection table on
 stateful devices can handle tens of thousands of active connections, which is
 more than enough under a regular, day-to-day activity load.
 
 Under the stress of a DDoS attack that can generate millions of packets per
 second, these stateful security devices, usually at the customer's network edge,
-must still try and keep track of all the malicious incoming connections. The
+must try to keep track of all the malicious incoming connections. The
 number of connections quickly exhausts the maximum limits of the device's
 connection table, preventing new connections from opening and blocking legitimate
 users from establishing connections.
@@ -67,7 +68,7 @@ users from establishing connections.
 Other attacks, such as amplification attacks, can significantly increase the
 volume of traffic by exploiting protocols with very high amplification factors.
 The amplification factor is the ratio between the size of the request and the
-response generated. For example, attackers can use an open Memcached service to
+response generated. For example, attackers can use an open memcached service to
 flood a victim by an amplification factor of up to 51,000 times the request size,
 as shown in the following table:
 
