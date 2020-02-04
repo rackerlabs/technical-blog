@@ -18,8 +18,8 @@ ogDescription: "You can backup Oracle&reg; databases in Amazon&reg; Web Services
 ---
 
 You can backup Oracle&reg; databases in Amazon&reg; Web Services (AWS) starting
-with Oracle Database 9i Release 2 or later by using the Oracle Secure Backup (OSB)
-cloud module, but remember that OSB does not back up operating system files.
+with Oracle Database 9i Release 2 or later. You use the Oracle Secure Backup (OSB)
+cloud module to do the backup, but remember that OSB does not back up operating system files.
 
 <!-- more -->
 
@@ -30,7 +30,7 @@ Manager (RMAN) backup by using OSB on Amazon S3. However, you cannot take
 the backup of the operating system (OS) files by using this module. The Amazon
 S3 storage is disk-based; it is inherently more reliable than tape media.
 Internet storage service providers keep multiple, redundant copies of your data
-for availability and scalability purposes, so your organization benefits from this
+for availability and scalability purposes. Your organization benefits from this
 practice by having more reliable data.
 
 ![]({% asset_path 2020-02-05-introduction-to-oracle-secure-backup-in-aws/Picture1.png %})
@@ -39,14 +39,14 @@ practice by having more reliable data.
 
 ### Requirements
 
-To follow along with this post, make sure you consider the following requirements:
+To follow along with this post, make sure you consider the following requirements.
 
-#### Access keys and the secret access key, or IAM role, to access S3
+#### Access keys and the secret access key, or IAM role, to log in to S3
 
 You need an AWS account and an Identity and Access Management (IAM) user with
 full access to AWS S3.
 
-The set-up process uses the IAM role, or access keys, and the secret access key
+The setup process uses the IAM role, or access keys, and the secret access key
 of the IAM user.
 
 #### OSB module for AWS
@@ -60,7 +60,7 @@ During installation, you need to provide an OTN username and a password.
 
 #### Java 1.7 or higher
 
-You must install Java 1.7 or later on your server before you can proceed.
+You must install Java&reg; 1.7 or later on your server before you can proceed.
 
 Run the following command to check the Java version:
 
@@ -70,19 +70,19 @@ Run the following command to check the Java version:
 
 Supported platforms include the following:
 
-- Linux x86-64
-- Microsoft Windows (64-bit)
+- Linux&reg; x86-64
+- Microsoft&reg; Windows&reg; (64-bit)
 - Oracle Solaris on SPARC (64–bit)
 - Oracle Solaris X64
 - ZLinux-64
 - AIX (PPC64)
-- HP-UX IA64
+- HP-UX&reg; IA64
 
 **Note**: OBS does not support HP-UX PA-RISC 64–bit.
 
-### Install Oracle12cR2
+### Install Oracle 12cR2
 
-Use the following steps to install Oracle12cR2:
+Use the following steps to install Oracle 12cR2:
 
 1) Create the **wallet** directory to store the AWS access keys and secret
    access key or IAM role.
@@ -94,12 +94,12 @@ Use the following steps to install Oracle12cR2:
    by running the following commands, substituting the appropriate details for
    your environment:
 
-For Microsoft&reg; Windows&reg;:
+For Microsoft Windows:
 
      set ORACLE_HOME=C:\oracle\product\12.2.0\Oracle12cR2
      set ORACLE_SID=TEST
 
-For Linux&reg;:
+For Linux:
 
     export ORACLE_HOME=C:\oracle\product\12.2.0\Oracle12cR2
     export ORACLE_SID=TEST
@@ -116,7 +116,7 @@ or
 ### Install OSB by using RMAN
 
 The installation process creates a file in **$ORACLE_HOME/dbs**, often named
-**osb<SID>.ora**, for allocating the channel command in RMAN. When referencing
+**osb\<SID>.ora**, for allocating the channel command in RMAN. When referencing
 this file, you should use the full path.
 
 The examples in this post use a sample SID.
@@ -200,9 +200,9 @@ allocating the channel for `SBT_TAPE`:
     Finished Control File and SPFILE Autobackup on 17-DEC-19
     released channel: c1
 
-### List of backup sets
+### List of the backup sets
 
-Run the following commands to get a list of backup sets for the **controlfile**
+Run the following commands to get a list of the backup sets for the **controlfile**
 and **datafile 1**:
 
     RMAN> list backup of controlfile;
@@ -222,7 +222,7 @@ and **datafile 1**:
        BP Key: 112  Status: AVAILABLE Compressed: NO Tag:    TAG20191217T144625
        Handle: 3kujlia1_1_1  Media: s3.amazonaws.com/sdms-ec2-backups
 
-List of Datafiles in backup set 112:
+List of datafiles in backup set 112:
 
      File LV Type Ckp SCN   Ckp Time Abs Fuz SCN Sparse Name
      ---- -- ---- ---------- --------- ----------- ------ ----
