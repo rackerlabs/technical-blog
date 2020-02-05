@@ -270,4 +270,4 @@ ship or load tapes before you perform a restore operation.
 Use the Feedback tab to make any comments or ask questions. You can also
 [chat now](https://www.rackspace.com/#chat) to start the conversation.
 
-<a class="cta purple" href="https://www.rackspace.com/dba-services">Learn more about our Database services</a>
+<a class="cta purple" id="cta" href="https://www.rackspace.com/dba-services">Learn more about our Database services</a>
