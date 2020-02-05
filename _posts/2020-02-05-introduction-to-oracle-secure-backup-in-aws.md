@@ -7,6 +7,8 @@ author: Mithun Mahajan
 published: true
 authorIsRacker: true
 authorIsRacker: true
+authorAvatar: 'https://s.gravatar.com/avatar/c109845839f4934583f4a5438b463064'
+bio: "Hi There ! I’m Mithun, a passionate Oracle Database Administrator working with Rackspace. I get excited to get into database-related challenges and work on then till they're resolved. When I'm free, I like watching movies, gardening, and playing video games. Join me as I learn, as I connect, and as I find DBA solutions."
 categories:
     - Oracle
     - Database
