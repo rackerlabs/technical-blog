@@ -27,12 +27,12 @@ Database.
 ### Introduction
 
 As a database administrator (DBA), you probably often find that gathering fresh
-statistics leads to the optimizer executing sub-optimal execution plans. In those
+statistics leads to the optimizer executing suboptimal execution plans. In those
 cases, you might want to restore the statistics from a time when the performance
 was better.
 
-However, different versions of Oracle&reg; Database have minor changes in
-handling statistics:
+However, different versions of Oracle Database have minor changes in the way
+they handle statistics:
 
 - Oracle 10g began automatically preserving the statistics for easy restoration.
 - In 11.1 and later, Oracle introduced a better way, allowing you to defer
@@ -130,16 +130,17 @@ all the entities for which you can restore previous statistics:
 
 ### Export statistics that you want to save
 
-You can also export statistics from a good time or export current statistics
-before you make changes by performing the following steps:
+You can also export statistics that you want to save or export
+current statistics before you make changes by performing the following
+steps:
 
 1) Create the statistics table by running a command similar to the following example:
 
 	 Exec dbms_stats.create_stat_table(ownname => 'MYSELF', stattab => 'MYSELF_STATS_<DATE>',tblspace => '<Tablespace Name>');
 
 	**ownname:** owner name
-	**stattab:** tablename under user MYSELF should be created
-	**tablspace:** tablespace under which this table should be created.
+	**stattab:** tablename under user MYSELF to create
+	**tblspace:** tablespace under which to create this table
 
 2) Export the statistics in the preceding table by running a command similar to
    the following example:
