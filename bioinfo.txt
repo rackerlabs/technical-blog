@@ -1,14 +1,25 @@
 Anand, Vikrant
 authorAvatar: 'https://s.gravatar.com/avatar/98991c72835ea03135094fb2a1b6e3c0'
-bio: n/a
+bio: "Vikrant is a database consultant with extensive work in database technical
+support, production database administration, database migration, design and
+architecture for several business areas. He has vast experience interacting with
+national and international clients from various business areas and a good
+understanding of requirement analysis and database technology implementation."
 
 Batham, Bhupendra
 authorAvatar: 'https://s.gravatar.com/avatar/e64fc7787bc24eac1a8c969c4eceda44'
-bio: "Bhupendra Batham has more than 12 of experience with Oracle technology and currently works at Rackspace. He is enthusiastic, a quick learner, and always learns new technologies. His strengths include analytical thinking, problem solving, learning from mistakes, and working well under pressure."
+bio: "Bhupendra Batham has more than 12 of experience with Oracle technology
+and currently works at Rackspace. He is enthusiastic, a quick learner, and
+always learns new technologies. His strengths include analytical thinking,
+problem solving, learning from mistakes, and working well under pressure."
 
 Bhatnagar, Amit Kumar
 authorAvatar: 'https://s.gravatar.com/avatar/c9c74dd30299675961e5160a4fbb05fe'
-bio: n/a
+bio: "Amit is a DBA with 14+ years of excellent professional exposure and
+experience in Oracle/Mysql/Vertica/Postgres/NoSQL(Cassandra)/MongoDB database
+servers, with extensive knowledge of the functional areas of business
+administration and the application of information technology for efficient
+management of business processes."
 
 Belke, Emily
 authorAvatar: 'https://s.gravatar.com/avatar/4a7de5d7772b14826cca8496c410ba88'
@@ -16,15 +27,29 @@ bio: n/a
 
 Bonig, Matthew
 authorAvatar: 'https://s.gravatar.com/avatar/17fefeb3c1832175bf6fbe9841368292'
-bio: "As a Senior Software Engineer at Rackspace, Matthew draws upon his 15 years of web application development experience to help architect highly-available, fault-tolerant, scalable, and secure AWS environments composed of a wide range of services in the AWS portfolio, including Compute, Storage, Database, Networking, Developer Tools, and more. He is an AWS certified Solutions Architect. His hobbies include hiking the foothills of Colorado and walks with his wife and dogs."
+bio: "As a Senior Software Engineer at Rackspace, Matthew draws upon his 15
+years of web application development experience to help architect highly-available,
+fault-tolerant, scalable, and secure AWS environments composed of a wide range
+of services in the AWS portfolio, including Compute, Storage, Database,
+Networking, Developer Tools, and more. He is an AWS certified Solutions Architect.
+His hobbies include hiking the foothills of Colorado and walks with his wife
+and dogs."
 
 Booth, Karisa
 authorAvatar: 'http://0.gravatar.com/avatar/c5a8a633797f4b8c85b5b5bad605cd18'
-bio: "Karisa is an experienced Cloud Architect with a demonstrated history of working in the information technology and services industry. She is skilled in working with a variety of verticals including Nonprofit Organizations, Higher Education, Retail, and HLS; providing Technical Evaluations, Program Execution, Customer Relationship Management (CRM), Event Management, and Marketing/Tech. Karisa is passionate about cloud technology and marketing, and combining these to create unique solutions for clients."
+bio: "Karisa is an experienced Cloud Architect with a demonstrated history of
+working in the information technology and services industry. She is skilled in
+working with a variety of verticals including non-profit organizations, higher
+education, retail, and HLS; providing technical evaluations, program execution,
+Customer Relationship Management (CRM), event management, and marketing/tech.
+Karisa is passionate about cloud technology and marketing, and combining these
+to create unique solutions for clients."
 
 Brinkman, Michiel
 authorAvatar: 'https://gravatar.com/avatar/e360e0501d74b0de5be9250474951354'
-bio: "Michiel Brinkman is a Solutions Architect working for Rackspace from Amsterdam, The Netherlands. Multi-cloud certified with a strong engineering background."
+bio: "Michiel Brinkman is a Solutions Architect working for Rackspace from
+Amsterdam, The Netherlands. Multi-cloud certified with a strong engineering
+background."
 
 Carbone, Denise
 authorAvatar: 'https://s.gravatar.com/avatar/621ec460934803c15e9b2c4ff6cbf75f'
@@ -32,19 +57,48 @@ bio: n/a
 
 Carter, Nikki
 authorAvator: 'https://1.gravatar.com/avatar/3177b82ffcbe59f1f3e6e155d3c94e7a'
-bio: "Nikki Carter is a Content Strategist on the Digital Marketing Services Team at RelationEdge. She has extensive experience creating and editing content and marketing assets for a variety of verticals, including healthcare, technology, and wellness. Nikki is passionate about freedom, telling the truth, and supporting other women/non-binary folks of color."
+bio: "Nikki Carter is a Content Strategist on the Digital Marketing Services
+Team at RelationEdge. She has extensive experience creating and editing content
+and marketing assets for a variety of verticals, including healthcare, technology,
+and wellness. Nikki is passionate about freedom, telling the truth, and supporting
+other women/non-binary folks of color."
 
 Croteau, Paul
 authorAvatar: 'https://en.gravatar.com/userimage/1316548/544d0908ada5d93056e89afc7d240c23.png?size=200'
-bio: "Paul Croteau is the Channel CTO at Rackspace, where he works with partners to enable their understanding of technology, the Rackspace portfolio, and the state of the industry. With more than 25 years of information technology experience including roles in engineering, sales, account management, and technical training, Paul’s experience helps him relate with partners and customers at all levels within an organization. His energy and passion for technology have been helpful in creating successful sales engagements and exceptional customer experiences with partners of all sizes. Paul originally joined Rackspace in 2005. Previous employers include AT&T, HP, and Accenture. Paul is based in San Antonio, Texas. Outside of work, Paul is a professional musician and composer and is married with two teenagers and a house full of pets."
+bio: "Paul Croteau is the Channel CTO at Rackspace, where he works with partners
+to enable their understanding of technology, the Rackspace portfolio, and the
+state of the industry. With more than 25 years of information technology
+experience including roles in engineering, sales, account management, and
+technical training, Paul’s experience helps him relate with partners and
+customers at all levels within an organization. His energy and passion for
+technology have been helpful in creating successful sales engagements and
+exceptional customer experiences with partners of all sizes. Paul originally
+joined Rackspace in 2005. Previous employers include AT&T, HP, and Accenture.
+Paul is based in San Antonio, Texas. Outside of work, Paul is a professional
+musician and composer and is married with two teenagers and a house full of pets."
 
 Crumpler, Shaun
 authorAvatar: 'https://secure.gravatar.com/avatar/c26423ec960c158dbdbcbee1f61ea7b5'
-bio: "Shaun Crumpler is a 7 year Racker, who focuses on applying his MBA to the technical space to evolve and transform processes, promoting change and agility.  His technical expertise spans Linux operating systems, the Rackspace Public Cloud infrastructure, and the AWS infrastructure.  He was awarded the Fanatical Jacket, Rackspace’s highest honor, because of the focus that he places on fanatically supporting not only external customers, but internal customers as well."
+bio: "Shaun Crumpler is a 7 year Racker, who focuses on applying his MBA to the
+technical space to evolve and transform processes, promoting change and agility.
+His technical expertise spans Linux operating systems, the Rackspace Public
+Cloud infrastructure, and the AWS infrastructure.  He was awarded the Fanatical
+Jacket, Rackspace’s highest honor, because of the focus that he places on
+fanatically supporting not only external customers, but internal customers as well."
+
+Dihingra, Sundeep
+authorAvatar: 'https://s.gravatar.com/avatar/48fed1de86eefae0457dffea1b4bcf64'
+bio: "Working as a Senior DBA for the last 15 years, Sundeep has solid expertise
+in almost all Oracle-related products, services, and issues."
 
 Dixit, Narendra
 authorAvatar: 'https://s.gravatar.com/avatar/2ea19c113ac5dd7ab4879607f1468950'
-bio: n/a
+bio: "Narendra is a passionate Oracle-technologies explorer with rich technical
+experience covering fourteen years in Oracle Technologies. These include Oracle
+Applications, Oracle E-Business Suite, Oracle Database administration, Oracle
+Fusion Middleware, Oracle SOA Suite administration and integration with Oracle
+Applications, Oracle Demantra administration and integration with Oracle ASCP,
+Oracle Cloud Infrastructure, and Oracle DBaaS administration."
 
 Friedman, Jordan
 authorAvatar: 'https://s.gravatar.com/avatar/f2f71a634ccd1e79ea3b3b317f8b4161'
@@ -52,7 +106,8 @@ bio: n/a
 
 Garratt, Nick
 authorAvatar: 'https://s.gravatar.com/avatar/749cf70eafe03795015019c1047be85f'
-bio: "Nick Garratt is a Principal Architect in the Rackspace Managed Public Clouds Product Architecture Team."
+bio: "Nick Garratt is a Principal Architect in the Rackspace Managed Public
+Clouds Product Architecture Team."
 
 Gates, Jason
 authorAvatar: 'https://s.gravatar.com/avatar/ff2ec8ee582b2e949109b7fd353734f2'
@@ -60,7 +115,11 @@ bio: n/a
 
 Gembali, Balaganesh
 authorAvatar: 'https://secure.gravatar.com/avatar/ce5ceb1aa8757ef235ddaa21265863eb'
-bio: "I am a Software Techie by profession. I've been an Oracle Database Administrator since I began my career and worked for top IT companies. I have 14 years of IT experience and currently work for Rackspace as a Senior Oracle Apps DBA. I am passionate about electronic gadgets, travelling, exploring, and tasting delicious food."
+bio: "I am a Software Techie by profession. I've been an Oracle Database
+Administrator since I began my career and worked for top IT companies. I have
+14 years of IT experience and currently work for Rackspace as a Senior Oracle
+Apps DBA. I am passionate about electronic gadgets, travelling, exploring, and
+tasting delicious food."
 
 Hawthorn, Rob
 authorAvatar: 'https://s.gravatar.com/avatar/c44cfe09d207a9f1529d2280dec8583a'
@@ -76,7 +135,8 @@ bio: n/a
 
 Hornbeck, Ash
 authorAvatar: https://www.gravatar.com/avatar/f96915d3f29e5623f9a9ff8c7cb3148f'
-bio: "Ash Hornbeck is a Sr. Product Architect on the Rackspace Managed Public Clouds Product Architecture Team."
+bio: "Ash Hornbeck is a Sr. Product Architect on the Rackspace Managed Public
+Clouds Product Architecture Team."
 
 Kaminski, Brooks
 authorAvatar: 'https://gravatar.com/avatar/e7780474c27597a4395ac5eab894ab36'
@@ -102,11 +162,20 @@ bio: n/a
 
 Lara, Roman
 authorAvatar: 'https://s.gravatar.com/avatar/e9ef88c66315a7f955c4352a7ad2182a'
-bio: "Roman Lara is a Senior Engineer on the Rackspace specialized DDoS Response Team and has been a Racker in various roles since 2009. He is responsible for driving the design, build, and maintenance of Rackspace DDoS Mitigation infrastructure and services. Roman is a high-energy, hands-on leader whose knowledge and experience of threat trends helps develop and create powerful mitigation strategies through Fanatical Support."
+bio: "Roman Lara is a Senior Engineer on the Rackspace specialized DDoS Response
+Team and has been a Racker in various roles since 2009. He is responsible for
+driving the design, build, and maintenance of Rackspace DDoS Mitigation
+infrastructure and services. Roman is a high-energy, hands-on leader whose
+knowledge and experience of threat trends helps develop and create powerful
+mitigation strategies through Fanatical Support."
 
 Mahajan, Mithun
 authorAvatar: 'https://s.gravatar.com/avatar/c109845839f4934583f4a5438b463064'
-bio: "Hi There ! I’m Mithun, a passionate Oracle Database Administrator working with Rackspace. I get excited to get into database-related challenges and work on then till they're resolved. When I'm free, I like watching movies, gardening, and playing video games. Join me as I learn, as I connect, and as I find DBA solutions."
+bio: "Hi There ! I’m Mithun, a passionate Oracle Database Administrator working
+with Rackspace. I get excited to get into database-related challenges and work
+on then till they're resolved. When I'm free, I like watching movies, gardening,
+and playing video games. Join me as I learn, as I connect, and as I find DBA
+solutions."
 
 Mattson, Josh
 authorAvatar: 'http://www.gravatar.com/avatar/791617263c70278859e1b26c15d13eab'
@@ -118,7 +187,13 @@ bio: n/a
 
 Moussa, Michael
 authorAvatar: 'https://s.gravatar.com/avatar/81ae346c8dd994251b697bea342c8fd7'
-bio: "As a Senior Product Architect at Rackspace, Michael draws upon his 20 years of web application development experience to help architect highly-available, fault-tolerant, scalable, and secure AWS environments composed of a wide range of services in the AWS portfolio, including Compute, Storage, Database, Networking, Developer Tools, and more. He is an AWS APN Ambassador and holds several AWS certifications. In his spare time, he enjoys homebrewing his award-winning beer, cycling, and trying to find less expensive hobbies."
+bio: "As a Senior Product Architect at Rackspace, Michael draws upon his 20
+years of web application development experience to help architect highly-available,
+fault-tolerant, scalable, and secure AWS environments composed of a wide range
+of services in the AWS portfolio, including Compute, Storage, Database,
+Networking, Developer Tools, and more. He is an AWS APN Ambassador and holds
+several AWS certifications. In his spare time, he enjoys homebrewing his
+award-winning beer, cycling, and trying to find less expensive hobbies."
 
 Olivier, Sarah
 authorAvatar: 'https://s.gravatar.com/avatar/17c40729ddeea22c93734e4d0870fb85'
@@ -134,23 +209,34 @@ bio: n/a
 
 Plummer, Adam
 authorAvatar: 'https://s.gravatar.com/avatar/c2945c57e1812f8b455101e1a2e49cac'
-bio: n/a
+bio: "I am continually energized by the increasing importance and relevance of
+technology's place in solving business challenges. My mission is to uncover
+opportunities to help companies realize true business transformation, with
+technology as a key catalyst."
 
 Rathod, Sunil
 authorAvatar: 'https://s.gravatar.com/avatar/c3a915969820000d5dc4fc4f04ad8276'
-bio: n/a
+bio: "I enjoy working as Oracle Apps DBA with more than 12 years of experience
+in various Oracle technologies."
 
 Rudley, Jimmy
 authorAvatar: 'https://en.gravatar.com/userimage/151177997/5bed7e07ee47533cbd34b951d463bcb7.jpg'
-bio: “Jimmy Rudley is an Azure Architect at Rackspace and an active member of the Azure community. He focuses on solving large and complex architecture and automation problems within Azure."
+bio: “Jimmy Rudley is an Azure Architect at Rackspace and an active member of
+the Azure community. He focuses on solving large and complex architecture and
+automation problems within Azure."
 
 Sharma, Hemant
 authorAvatar: 'https://s.gravatar.com/avatar/62a512ada4789514ddecc061e501be64'
-bio: n/a
+bio: "I am a Sr. Database Administrator with many years of experience as DBA in
+the IT industry. I share my knowledge about latest database technologies via my
+blog in a simple and effective way."
 
 Sharma, Ravi kant
 authorAvatar: 'http://0.gravatar.com/avatar/c7776b42759c729500163fc6588221ac'
-bio: n/a
+bio: "I am ambitious and driven. I thrive on challenge and constantly set goals
+for myself, so I have something to strive toward. I’m not comfortable with
+settling, and I’m always looking for an opportunity to do better and achieve
+greatness."
 
 Srivastava, Deepanker
 authorAvatar: 'https://s.gravatar.com/avatar/305aead3fa98ed419b5b47b2f6c9b780'
@@ -162,15 +248,24 @@ bio: n/a
 
 Stubbs, Walter
 authorAvatar: 'https://0.gravatar.com/avatar/82a7a0dd2ccc5b707da699191be87ecf'
-bio: "Walter Stubbs is a Microsoft Certified Solutions Associate, and one of the Lead Email Technicians in Cloud Office. Walter joined Rackspace in 2018 and has been supporting the Office 365 environment from day one. His passion for helping others combined with his knowledge of Office 365 helps him provide a Fanatical Experience for Rackspace customers everyday."
+bio: "Walter Stubbs is a Microsoft Certified Solutions Associate, and one of
+the Lead Email Technicians in Cloud Office. Walter joined Rackspace in 2018 and
+has been supporting the Office 365 environment from day one. His passion for
+helping others combined with his knowledge of Office 365 helps him provide a
+Fanatical Experience for Rackspace customers everyday."
 
 Toews, Everett
 authorAvatar: 'https://www.gravatar.com/avatar/c1a75adb52f40016a480cee292527895'
-bio: “Everett Toews a Developer Advocate at Rackspace making the cloud easy to use for developers and operators. Sometimes dev, sometimes ops, and sometimes advocate. He's interested in composing systems using APIs, SDKs, CLIs, and Docker. He likes to teach what he learns along the way.”
+bio: “Everett Toews a Developer Advocate at Rackspace making the cloud easy to
+use for developers and operators. Sometimes dev, sometimes ops, and sometimes
+advocate. He's interested in composing systems using APIs, SDKs, CLIs, and
+Docker. He likes to teach what he learns along the way.”
 
 Verma, Vivek
-authorAvatar: 'https://s.gravatar.com/avatar/c9c74dd30299675961e5160a4fbb05fe'
-bio: n/a
+authorAvatar: 'https://s.gravatar.com/avatar/ea77be7be4ebf7aed353087f677104be'
+bio: "I'm a consultant working on Oracle E-Business Suite and related products.
+As an Amazon Cloud Solutions Architect Associate, I am passionate about the
+Cloud Platform. Python and Chef are works in progress."
 
 Whitehead, Chris
 authorAvatar: 'https://s.gravatar.com/avatar/286b19b54ad30b4f0d25a4ac679744a8'
@@ -184,8 +279,13 @@ Xin, Michael
 authorAvatar: 'https://s.gravatar.com/avatar/5c2bae8f6f4c9669249888f5b8e1f5b0'
 bio: "Michael Xin is a senior QE/Security manager in Rackspace. He is leading
 VMware QE team and QE Security team. Michael is passionate about quality and
-security for Rackspace products. Michael has years of experience in application security, security SDLC, test automation, cloud computing, agile development and CI/CD."
+security for Rackspace products. Michael has years of experience in application
+security, security SDLC, test automation, cloud computing, agile development
+and CI/CD."
 
 Zullo, Chris
 authorAvatar: 'https://s.gravatar.com/avatar/475ef03557ebebc76180795000996012'
-bio: n/a
+bio: "Boston born and bred sports geek with a twist. Unabashed sports nut and
+technology enthusiast. Living in the cloud literally and figuratively as a
+SaaS (Software as a Service) advocate who wants to see as much of the world in
+person as manageable."

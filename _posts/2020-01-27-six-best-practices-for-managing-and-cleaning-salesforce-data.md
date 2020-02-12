@@ -7,6 +7,10 @@ author: Adam Plummer
 published: true
 authorIsRacker: true
 authorAvatar: 'https://s.gravatar.com/avatar/c2945c57e1812f8b455101e1a2e49cac'
+bio: "I am continually energized by the increasing importance and relevance of
+technology's place in solving business challenges. My mission is to uncover
+opportunities to help companies realize true business transformation, with
+technology as a key catalyst."
 categories:
     - Salesforce
 metaTitle: "Six best practices for managing and cleaning Salesforce data"
@@ -96,7 +100,7 @@ front end, cleaning their data and designing an effective system to manage
 it&mdash;and then they completely neglect its maintenance. Back to our house
 analogy, it’s like buying a new house, and never changing the filters or
 organizing everyday items efficiently. Set up data validation rules so that
-you are encouraged to maintain data integrity standards. Run monthly reports to
+you continue to maintain data integrity standards. Run monthly reports to
 identify possible incorrect data. Maintaining the quality of data over the long
 term pays dividends with the insight it provides.
 

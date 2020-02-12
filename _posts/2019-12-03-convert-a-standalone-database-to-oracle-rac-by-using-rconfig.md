@@ -7,6 +7,11 @@ author: Vikrant Anand
 published: true
 authorIsRacker: true
 authorAvatar: 'https://s.gravatar.com/avatar/98991c72835ea03135094fb2a1b6e3c0?s=80'
+bio: "Vikrant is a database consultant with extensive work in database technical
+support, production database administration, database migration, design and
+architecture for several business areas. He has vast experience interacting with
+national and international clients from various business areas and a good
+understanding of requirement analysis and database technology implementation."
 categories:
     - Oracle
     - database

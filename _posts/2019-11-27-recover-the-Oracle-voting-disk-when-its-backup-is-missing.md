@@ -8,6 +8,10 @@ published: true
 authorIsRacker: true
 authorIsRacker: true
 authorAvatar: 'http://0.gravatar.com/avatar/c7776b42759c729500163fc6588221ac'
+bio: "I am ambitious and driven. I thrive on challenge and constantly set goals
+for myself, so I have something to strive toward. I’m not comfortable with
+settling, and I’m always looking for an opportunity to do better and achieve
+greatness."
 categories:
     - Oracle
     - Database
