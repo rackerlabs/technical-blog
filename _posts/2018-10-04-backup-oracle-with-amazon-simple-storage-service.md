@@ -6,7 +6,10 @@ comments: true
 author: Vivek Verma
 published: true
 authorIsRacker: true
-authorAvatar: 'https://s.gravatar.com/avatar/c9c74dd30299675961e5160a4fbb05fe'
+authorAvatar: 'https://s.gravatar.com/avatar/ea77be7be4ebf7aed353087f677104be'
+bio: "I'm a consultant working on Oracle E-Business Suite and related products.
+As an Amazon Cloud Solutions Architect Associate, I am passionate about the
+Cloud Platform. Python and Chef are works in progress."
 categories:
   - Oracle
   - database

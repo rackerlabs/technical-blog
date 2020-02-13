@@ -7,6 +7,9 @@ author: Hemant Sharma
 published: true
 authorIsRacker: true
 authorAvatar: 'https://s.gravatar.com/avatar/62a512ada4789514ddecc061e501be64'
+bio: "I am a Sr. Database Administrator with many years of experience as DBA in
+the IT industry. I share my knowledge about latest database technologies via my
+blog in a simple and effective way."
 categories:
   - Oracle
   - database

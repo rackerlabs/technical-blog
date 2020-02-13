@@ -7,6 +7,8 @@ author: Sunil Rathod
 published: true
 authorIsRacker: true
 authorAvatar: 'https://s.gravatar.com/avatar/c3a915969820000d5dc4fc4f04ad8276'
+bio: "I enjoy working as Oracle Apps DBA with more than 12 years of experience
+in various Oracle technologies."
 categories:
     - Oracle
     - database
@@ -28,8 +30,8 @@ in this blog.
 ### Overview of authentication with WebGate
 
 WebGate is a component of OAM that intercepts HTTP requests and redirects them
-to the OAM server to determine how the resources may be accessed and
-authenticates the current user if authentication is required. If OAM is already
+to the OAM server to determine how to access the resources and
+authenticates the current user when required. If OAM is already
 deployed in the environment, you can configure an existing WebGate for this
 purpose.
 

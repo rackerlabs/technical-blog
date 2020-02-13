@@ -7,6 +7,11 @@ author: Amit Bhatnagar
 published: true
 authorIsRacker: true
 authorAvatar: 'https://s.gravatar.com/avatar/c9c74dd30299675961e5160a4fbb05fe'
+bio: "Amit is a DBA with 14+ years of excellent professional exposure and
+experience in Oracle/Mysql/Vertica/Postgres/NoSQL(Cassandra)/MongoDB database
+servers, with extensive knowledge of the functional areas of business
+administration and the application of information technology for efficient
+management of business processes."
 categories:
   - database
 metaTitle: "Apache Cassandra backup and recovery"

@@ -7,6 +7,12 @@ author: Narendra Dixit
 published: true
 authorIsRacker: true
 authorAvatar: 'https://s.gravatar.com/avatar/2ea19c113ac5dd7ab4879607f1468950'
+bio: "Narendra is a passionate Oracle-technologies explorer with rich technical
+experience covering fourteen years in Oracle Technologies. These include Oracle
+Applications, Oracle E-Business Suite, Oracle Database administration, Oracle
+Fusion Middleware, Oracle SOA Suite administration and integration with Oracle
+Applications, Oracle Demantra administration and integration with Oracle ASCP,
+Oracle Cloud Infrastructure, and Oracle DBaaS administration."
 categories:
   - Oracle
   - Database
@@ -18,7 +24,7 @@ ogDescription: "This blog covers Oracle Demantra and Oracle Advance SPWA configu
 
 Demantra&reg; and advanced Supply Planning Work Area (SPWA) are demand management
 and supply chain management tools provided by Oracle&reg;. These products
-are integrated with the Oracle E-Business Suite (EBS) and Oracle Advanced Planning
+integrate with the Oracle E-Business Suite (EBS) and Oracle Advanced Planning
 Suite (APS) (which are part of the Oracle Advanced Supply Chain Planning (ASCP))
 to best leverage Demantra demand management and supply chain management
 functionalities.
@@ -33,8 +39,8 @@ installation steps for Demantra and advanced SPWA.
 ### Introduction
 
 ASCP is a comprehensive, internet-based planning solution that decides when and
-where supplies (for example, inventory, purchase orders, and work orders) should
-be deployed within an extended supply chain.
+where you should deploy supplies (for example, inventory, purchase orders, and
+work orders) within an extended supply chain.
 
 Demantra is a best-in-class provider of demand management, sales, and operations
 planning, as well as trade promotions management solutions.
@@ -51,7 +57,7 @@ loads, but this post focuses on using Demantra with Oracle APS and ASCP.
 
 ### Demantra, advanced SPWA, EBS, and APS integration architecture
 
-Demantra must be installed in the same database as APS and ASCP. The EBS source
+You must install Demantra in the same database as APS and ASCP. The EBS source
 instance can be in a separate database, but, for the integration of ASCP and
 Demantra to work, ASCP and Demantra must be in the same database. Oracle
 supports the following configurations:
@@ -85,9 +91,8 @@ The following image shows the separate instances architecture:
 The installation of the Demantra application is a multistep process.
 
 **Note:** You need to install Demantra on a Microsoft&reg; Windows&reg; server
-because the Demantra Installer and Demantra administrative utilities (Business
-Modeler, and Demand Management Tools, and so on) are supported only on Windows
-platforms.
+because only Windows platforms support the Demantra Installer and Demantra
+administrative utilities (BusinessModeler, and Demand Management Tools, and so on).
 
 The Demantra Installer on Windows servers creates the database schema (in an APS
 database), and you need to use the administrator tools to configure the application.
