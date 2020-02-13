@@ -137,38 +137,48 @@ following steps to import your four segments into Journey Builder:
 
    ![]({% asset_path 2020-02-14-get-the-most-out-of-einstein-engagement-scoring/Picture4.png %})
 
-2. Define the Entry Source or who will get these emails.
+<ol start=2>
+    <li>Define the Entry Source or who will get these emails.</li>
+</ol>
 
    ![]({% asset_path 2020-02-14-get-the-most-out-of-einstein-engagement-scoring/Picture5.png %})
 
    ![]({% asset_path 2020-02-14-get-the-most-out-of-einstein-engagement-scoring/Picture6.png %})
 
-3. In the left-hand column of options, choose **Einstein Split.**
+<ol start=3>
+    <li>In the left-hand column of options, choose <b>Einstein Split.</b>/li>
+</ol>
 
    ![]({% asset_path 2020-02-14-get-the-most-out-of-einstein-engagement-scoring/Picture7.png %})
 
-4. Choose **Persona Split** as the type of split.
+<ol start=4>
+    <li>Choose <b>Persona Split</b> as the type of split.</li>
+</ol>
 
    ![]({% asset_path 2020-02-14-get-the-most-out-of-einstein-engagement-scoring/Picture8.png %})
 
-5. After you select **Persona Split**, Journey Builder automatically splits your
+<ol start=5>
+    <li>After you select **Persona Split**, Journey Builder automatically splits your
    email campaign into five paths: one for each engagement category and a fifth
    path called **Remainder**. The Remainder path contains subscribers that
    Journey Path could not categorize because of insufficient data.  Likely, they
    are recent subscribers. You can leave Remainder as a standalone path, or use
    the **Join** option to merge the Remainder category into one of the other
    paths, because those subscribers can benefit from the same strategy you use
-   for another group.
+   for another group.</li>
+</ol>
 
    ![]({% asset_path 2020-02-14-get-the-most-out-of-einstein-engagement-scoring/Picture9.png %})
 
-6. Now, you can craft a personalized journey in Journey Builder for each segment.
+<ol start=6>
+    <li>Now, you can craft a personalized journey in Journey Builder for each segment.
    You can tailor the number and frequency of emails, subject lines and body
    content, targeted ads, and more to resonate best with each group. Journey
    Builder even allows you to pull Salesforce actions into the journey. For
    instance, if a subscriber downloads two pieces of content in a row, you can
    automatically increase their lead score or trigger a Salesforce action that
-   tasks a salesperson to call the subscriber.
+   tasks a salesperson to call the subscriber.</li>
+</ol>
 
    ![]({% asset_path 2020-02-14-get-the-most-out-of-einstein-engagement-scoring/Picture10.png %})
 
