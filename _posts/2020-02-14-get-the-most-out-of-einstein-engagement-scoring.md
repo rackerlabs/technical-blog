@@ -146,7 +146,7 @@ following steps to import your four segments into Journey Builder:
    ![]({% asset_path 2020-02-14-get-the-most-out-of-einstein-engagement-scoring/Picture6.png %})
 
 <ol start=3>
-    <li>In the left-hand column of options, choose <b>Einstein Split.</b>/li>
+    <li>In the left-hand column of options, choose <b>Einstein Split.</b></li>
 </ol>
 
    ![]({% asset_path 2020-02-14-get-the-most-out-of-einstein-engagement-scoring/Picture7.png %})
@@ -158,12 +158,12 @@ following steps to import your four segments into Journey Builder:
    ![]({% asset_path 2020-02-14-get-the-most-out-of-einstein-engagement-scoring/Picture8.png %})
 
 <ol start=5>
-    <li>After you select **Persona Split**, Journey Builder automatically splits your
+    <li>After you select <b>Persona Split<\b>, Journey Builder automatically splits your
    email campaign into five paths: one for each engagement category and a fifth
-   path called **Remainder**. The Remainder path contains subscribers that
+   path called <b>Remainder<\b>. The Remainder path contains subscribers that
    Journey Path could not categorize because of insufficient data.  Likely, they
    are recent subscribers. You can leave Remainder as a standalone path, or use
-   the **Join** option to merge the Remainder category into one of the other
+   the <b>Join<\b> option to merge the Remainder category into one of the other
    paths, because those subscribers can benefit from the same strategy you use
    for another group.</li>
 </ol>
