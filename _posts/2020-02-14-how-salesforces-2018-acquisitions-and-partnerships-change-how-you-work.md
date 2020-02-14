@@ -233,7 +233,7 @@ in Google Analytics 360. The partnership also applies to the Google G Suite,
 which Salesforce customers can leverage alongside
 [Lightning and Quip](https://www.salesforce.com/blog/2017/11/salesforce-google-form-strategic-partnership.html).
 
-### The benefits
+#### The benefits
 
 The partnership between these tech giants brings benefits for loyal fans of both
 brands, which audiences saw firsthand this year at Google's annual developer
