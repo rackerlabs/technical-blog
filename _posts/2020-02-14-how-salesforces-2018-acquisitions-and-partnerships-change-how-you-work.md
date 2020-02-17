@@ -28,30 +28,30 @@ It can be tough to stay on top of significant changes and how they might affect
 your organization. At Rackspace, we keep close tabs on everything Salesforce,
 so we're recapping some of the Salesforce acquisitions and updates from 2018.
 Read on to learn how the Salesforce landscape changed and discover what each
-development could mean for your company.
+development might mean for your company.
 
 ### Salesforce and Apple partnership
 
 Salesforce has earned a reputation as a pioneer in the tech industry. In September
 of 2018, [the company announced](https://www.salesforce.com/company/news-press/press-releases/2018/09/180924-g/?d=cta-header-1)
-that it joined forces with another innovator: Apple&reg;. The partnership
-brought together the most popular CRM in the world and the most advanced mobile
-operating system available on the market. Together, the two businesses create a
-robust mobile experience for their users.
+that it joined forces with another innovator&mdash;Apple&reg;. The partnership
+brought together the most popular Customer Relationship Management (CRM) technology
+in the world and the most advanced mobile operating system available on the market.
+Together, the two businesses create a robust mobile experience for their users.
 
 #### The benefits
 
-Salesforce redesigned its app to support the latest features of iOS, as well as
+Salesforce redesigned its app to support the latest features of iOS&reg;, as well as
 unlocking new resources for developers that want to create iOS solutions.
 Benefits of the [new partnership](https://www.apple.com/business/partners/)
 include:
 
 - Native Salesforce apps on iOS
-- Redesign of Salesforce's mobile app to offer Siri shortcuts, Business chat,
-  Face ID, and more
+- Redesign of the Salesforce mobile app to offer Siri&reg; shortcuts, Business Chat&reg;,
+  Face ID&reg;, and more
 - The promise of an upcoming Trailhead iOS app
-- Developer access to a mobile SDK through Salesforce, optimized for Apple's
-  programming language, *Swift*, to make deploying apps for iOS on the Lightning
+- Developer access to a mobile software development kit (SDK) through Salesforce, optimized for the Apple
+  programming language, Swift&trade;, to make deploying apps for iOS on the Lightning&reg;
   platform simple
 
 ### Salesforce Customer 360
@@ -61,8 +61,8 @@ At Dreamforce 2018, Salesforce announced its new solution,
 service that allows companies to deliver unified cross-channel experiences for
 their customers. This
 [unique platform of powerful tools](https://www.salesforce.com/blog/2018/09/what-is-salesforce-customer-360.html)
-provides companies with a 360-degree view of each customer's journey, giving
-them everything they need to place the customer at the heart of their business
+provides companies with a 360-degree view of each customer's journey. The platform
+gives them everything they need to place the customer at the heart of their business
 strategy.
 
 #### The benefits
@@ -76,7 +76,7 @@ staff. Other benefits include:
 - A streamlined and straightforward user interface for advanced data management
 - The opportunity to create connections between Salesforce applications and
   build your own comprehensive customer data model
-- A reconciled profile and ID throughout all applications, to provide customers
+- A reconciled profile and ID throughout all applications to provide customers
   with a single profile so that agents can recognize the client on any channel
 - Pre-built solution packages for Commerce, Marketing, and Service Clouds
 
@@ -95,7 +95,7 @@ Quip Slides gives businesses an intelligent way to enhance workforce
 productivity and empower their teams. Benefits include:
 
 - Engagement insights about how people are using presentation tools, which
-  slides have the highest level of engagement, and more
+  slides have the highest level of engagement and more
 - Built-in commenting, co-editing, and chat features so team members can work
   together on presentations
 - Ability to embed slides with comment prompts, polls, and questions to gather
@@ -127,7 +127,7 @@ to create the apps they need for next-level productivity. Benefits include:
 - Lightning Flow Actions: Through the AppExchange, Lightning Flow Actions connects
   business workflows with the most innovative enterprise cloud ecosystem in the
   world, allowing for enhanced and automated business processes.
-- Smarter Recommendations: A personalized and updated AppExchange helps companies
+- Smarter recommendations: A personalized and updated AppExchange helps companies
   buy or build the solutions they need for real digital transformation.
 
 ### Einstein Voice
@@ -142,14 +142,14 @@ voice-enabled applications in the consumer and business landscape.
 #### The benefits
 
 Einstein Voice automatically transforms unstructured voice data into updates in
-Salesforce records, which means you can speak directly to your Salesforce instance
+Salesforce records. With Einstein Voice, you can speak directly to your Salesforce instance
 to make notes, request information, and update records. Other benefits include:
 
 - Add updates and implement changes by talking to Salesforce through Einstein
-  Voice Assistant
+  Voice Assistant.
 - Start your day with a personalized presentation of the most recent Salesforce
-  priorities and metrics delivered by your voice assistant
-- Access  information in Salesforce Dashboard via voice commands
+  priorities and metrics delivered by your voice assistant.
+- Access  information in Salesforce Dashboard via voice commands.
 
 ### MuleSoft Enterprise
 
@@ -161,7 +161,7 @@ well-established acquisition for the CRM powerhouse. According to an
 from Salesforce, MuleSoft is the "provider of one of the world's leading
 platforms for building application networks." The MuleSoft platform enables
 Salesforce to further connect with companies that have far-reaching enterprise
-systems, offering the ability to connect applications, data, and devices across
+systems. It offers the ability to connect applications, data, and devices across
 any cloud infrastructure.
 
 #### The benefits
@@ -173,7 +173,7 @@ expanded options for Salesforce clients. Benefits include:
   including industry giants like Coca-Cola&reg;, Unilever&reg;, Barclays&reg;,
   and Mount Sinai&reg;
 - Integrate an enterprise's relevant data from their back-office systems with
-  their Salesforce solution, and
+  their Salesforce solution and
   [access that data from anywhere](https://cm-inc.com/what-salesforce-acquisition-of-mulesoft-means-for-your-enterprise/)
 - Opportunities to expand strategic initiatives like artificial intelligence and
   machine learning
@@ -220,8 +220,8 @@ better marketing and branding opportunities. Benefits of the merger include:
 
 - An upgraded
   [Salesforce Marketing Cloud](https://www.salesforce.com/company/news-press/stories/2018/July/071618/),
-  enhanced with expanded data integration and intelligence.
-- Smarter marketing decisions based on expanded data and insight capabilities.
+  enhanced with expanded data integration and intelligence
+- Smarter marketing decisions based on expanded data and insight capabilities
 
 ### Salesforce and Google partnership
 
@@ -236,8 +236,7 @@ which Salesforce customers can leverage alongside
 #### The benefits
 
 The partnership between these tech giants brings benefits for loyal fans of both
-brands, which audiences saw firsthand this year at Google's annual developer
-conference,
+brands. Audiences saw it firsthand at Google's annual developer conference,
 [Next '18](https://www.salesforce.com/blog/2018/07/google-cloud-next-18-salesforce-partnership.html?d=70130000000tP4G),
 where Salesforce had a significant presence and facilitated innovative activities.
 Other benefits include:
