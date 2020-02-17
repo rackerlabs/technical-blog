@@ -9,9 +9,9 @@ authorIsRacker: true
 categories:
     - Salesforce
 metaTitle: "What you should listen for with Social Studio"
-metaDescription: "You can't respond to people if you haven't listened to what they have to say first. Enter, Social Studio."
+metaDescription: "You can't respond to people if you haven't listened to what they have to say first. Enter Social Studio."
 ogTitle: "What you should listen for with Social Studio"
-ogDescription: "You can't respond to people if you haven't listened to what they have to say first. Enter, Social Studio."
+ogDescription: "You can't respond to people if you haven't listened to what they have to say first. Enter Social Studio."
 ---
 
 With all the digital channels of communication out there, you probably have
@@ -53,9 +53,9 @@ feedback.
 ### How much your customers don't know
 
 In addition to finding out what your customers do think, Social Studio lets you
-take a look at what your target market doesn't know. Why does this help? When
-you get a handle on the types of questions people are asking about your brand or
-industry, you are better prepared to join the conversation. Use commonly asked
+take a look at what your target market doesn't know. Why does this help? Getting
+a handle on the types of questions people are asking about your brand or
+industry better prepares you to join the conversation. Use commonly asked
 questions as content inspiration for your social marketing campaigns.
 
 When they detect a spike in questions about Cancun, your travel company responds
@@ -81,7 +81,7 @@ to bring on eager customers who are dissatisfied with their current service.
 
 ### The influential accounts that you need to know
 
-Social media influencers start a lot of the dialogue in your industry. Let
+Social media influencers start a lot of the dialog in your industry. Let
 Social Studio identify accounts with a large number of followers who frequently
 mention your brand or the industry topics that you care about. An influencer
 who recommends you highly can become a
