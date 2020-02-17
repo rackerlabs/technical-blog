@@ -236,8 +236,7 @@ which Salesforce customers can leverage alongside
 #### The benefits
 
 The partnership between these tech giants brings benefits for loyal fans of both
-brands. Audiences saw it firsthand this year at Google's annual developer
-conference,
+brands. Audiences saw it firsthand at Google's annual developer conference,
 [Next '18](https://www.salesforce.com/blog/2018/07/google-cloud-next-18-salesforce-partnership.html?d=70130000000tP4G),
 where Salesforce had a significant presence and facilitated innovative activities.
 Other benefits include:
