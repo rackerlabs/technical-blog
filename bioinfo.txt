@@ -203,6 +203,10 @@ Pandey, Amit kumar
 authorAvatar: 'https://s.gravatar.com/avatar/c6bddf3d409b0e1975d01962a7317e2b'
 bio: n/a
 
+Peterson, Taylor
+authorAvatar: ''
+bio: n/a
+
 Piva, Lauren
 authorAvatar: 'https://s.gravatar.com/avatar/bbd32264e5b49be8f1515f6a64b1f1e2'
 bio: n/a
