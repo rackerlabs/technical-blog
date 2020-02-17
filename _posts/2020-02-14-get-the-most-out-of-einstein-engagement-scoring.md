@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Get the most out of Einstein Engagement scoring"
+title: "Get the most out of Einstein Engagement Scoring"
 date: 2020-02-14 00:01
 comments: true
 author: Karissa Booth
@@ -12,13 +12,13 @@ working in the information technology and services industry. She is skilled in
 working with a variety of verticals including non-profit organizations, higher
 education, retail, and HLS; providing technical evaluations, program execution,
 Customer Relationship Management (CRM), event management, and marketing/tech.
-Karisa is passionate about cloud technology and marketing, and combining these
+Karisa is passionate about cloud technology and marketing and combining these
 to create unique solutions for clients."
 categories:
     - Salesforce
-metaTitle: "Get the most out of Einstein engagement scoring"
+metaTitle: "Get the most out of Einstein Engagement Scoring"
 metaDescription: "If your business has a corporate or enterprise license for Salesforce@reg; Marketing Cloud, and you aren’t using Einstein Engagement Scoring, you are missing a big opportunity to boost your email marketing and improve the return on investment (ROI) of your Marketing Cloud instance."
-ogTitle: "Get the most out of Einstein engagement scoring"
+ogTitle: "Get the most out of Einstein Engagement Scoring"
 ogDescription: "If your business has a corporate or enterprise license for Salesforce@reg; Marketing Cloud, and you aren’t using Einstein Engagement Scoring, you are missing a big opportunity to boost your email marketing and improve the return on investment (ROI) of your Marketing Cloud instance."
 ---
 
@@ -41,7 +41,7 @@ advanced segmentation that other email tools don’t offer. Less than an estimat
 5% of all email marketers use Engagement Scoring, so using this tool gives you
  a significant edge over the competition.
 
-This posts shows you how to get the most out of Engagement Scoring to save time,
+This post shows you how to get the most out of Einstein Engagement Scoring to save time,
 improve the ROI of your marketing automation, and elevate your email marketing
 efforts.
 
@@ -49,8 +49,8 @@ efforts.
 
 Einstein Engagement Scoring draws on the data from all of your past email
 campaigns to segment your subscribers based on how they engage with your emails.
-This enables you to send targeted email messages to different subscribers, to
-maximize engagement and conversions. Engagement Scoring assigns scores for each
+This data enables you to send targeted email messages to different subscribers to
+maximize engagement and conversions. Einstein Engagement Scoring assigns scores for each
 subscriber’s likelihood to stay subscribed, open an email, or click links within
 your email.
 
@@ -59,13 +59,13 @@ your email.
 Based on the historical behavior of your subscribers, Einstein Engagement
 Scoring segments your subscriber list into the following categories:
 
--	**Loyalists**: subscribers who are most likely to open your emails and click
+-	**Loyalists**: Subscribers who are most likely to open your emails and click
    on the links within them
--  **Window Shoppers**: subscribers who are likely to open your emails but are
+-  **Window shoppers**: Subscribers who are likely to open your emails but are
    unlikely to click on the links within
--  **Selective Shoppers**: subscribers who are unlikely to open your emails but
+-  **Selective shoppers**: Subscribers who are unlikely to open your emails but
    when they do open, are very likely to click on the links within
--  **Win-back/Dormant**: subscribers who are unlikely to open or click on your
+-  **Win-back or Dormant**: Subscribers who are unlikely to open or click on your
    emails and do not engage with your emails
 
 ![]({% asset_path 2020-02-14-get-the-most-out-of-einstein-engagement-scoring/Picture3.png %})
@@ -73,30 +73,30 @@ Scoring segments your subscriber list into the following categories:
 Because the scores are dependent on actions your subscribers have taken, the
 AI can't score your subscribers to whom you have sent no emails. To get the most
 out of Einstein Engagement Scoring, begin to use it after four to six months of
-sending email campaigns within Marketing Cloud. This gives the tool enough data
+sending email campaigns within Marketing Cloud. This time gives the tool enough data
 to provide you with robust and accurate segments.
 
 ### What can you do with this information?
 
 When you have identified the four types of subscribers, you can customize email
 marketing for each group. Start by setting individual goals for each segment and
-tailor the messaging they receive based on what will resonate most with that
+tailor the messaging they receive based on what resonates most with that
 group. You can even develop different drip nurture campaigns for each segment to
-guide subscribers toward actions you want them to take&mdash;such as opening
+guide subscribers toward actions you want them to take. These actions include opening
 more emails, visiting your website, or downloading specific pieces of content.
 
-This helps you make the most of your marketing spend and your time. One group
+These campaigns help you make the most of your marketing spend and your time. One group
 might get emails from your company every week, while another group gets an email
-once a month. You could put budget towards targeted ads or SMS pushes for the
-group where they are likely to have the most impact; while skipping these tactics
+once a month. You can put budget towards targeted ads or SMS pushes for the
+group where they are likely to have the most impact. Skip these tactics
 for those less likely to engage with them.
 
-Engagement Scoring is expected to become even smarter. While attending the
-*Connections 2018* conference, we heard about plans for Einstein Scoring to help
-you predict when to send emails to each segment based on previous open and click
-times of those subscribers.
+We expect Einstein Engagement Scoring to become even smarter. While attending the
+*Connections 2018* conference, we heard about plans for Einstein Engagement Scoring
+to help you predict when to send emails to each segment based on previous open and
+click times of those subscribers.
 
-Customizing your email campaigns for each segment greatly increases the ROI of
+Customizing your email campaigns for each segment can greatly increase the ROI of
 your email marketing efforts. For example,
 [one e-commerce company](https://www.salesforce.com/blog/2016/09/intelligent-marketing-and-analytics-salesforce-einstein.html)
 that reoriented their email marketing around engagement scores saw a 23% increase
@@ -105,28 +105,28 @@ in email clicks and a 30% increase in their open rate.
 Following are some best practices for setting goals and personalizing messaging
 for each segment:
 
--  **Loyalists: amp up the call-to-action (CTA)**. These subscribers are already
+-  **Loyalists: Amp up the call to action (CTA)**. These subscribers are already
    clicking on the emails you send, so make sure what they click leads them to
    a compelling CTA. Whether it’s a landing page, a contact form, or a piece of
    insightful content, offer value and a strong CTA that encourages them to
    convert on your desired goal.
--  **Window Shoppers: increase the click rate**. These subscribers open your
+-  **Window shoppers: Increase the click rate**. These subscribers open your
    emails, but rarely find the content interesting or compelling enough to click
    through. Experiment with techniques to encourage them to click more often.
    Test out different messaging, shorter or longer email copy, a different CTA,
    or changing the look of your button.
--  **Selective Shoppers: increase the open rate**. If you can catch this group’s
+-  **Selective shoppers: Increase the open rate**. If you can catch this group’s
    attention enough to compel them to open your email, they’re likely to engage
    with the content within. For these subscribers, focus on subject lines. Test
    different lengths, voices, and tones for your subject lines. Look at past
    emails that received high open rates&mdash;what was compelling about the
    subject line?
--  **Dormant: re-engage**. You need to nurture these subscribers into engaging
+-  **Dormant: Re-engage**. You need to nurture these subscribers into engaging
    with your emails by showing the value you offer. A re-engagement campaign
    requires unique messaging. Write intriguing your subject lines to prompt
    subscribers to open the emails, but don't make the content a hard sell.
 
-### How to use your Engagement data in Journey Builder
+### How to use your engagement data in Journey Builder
 
 Einstein Engagement Scoring makes it easy to not only segment your subscribers
 but also to build customized email strategies for each segment. Use the
@@ -138,7 +138,7 @@ following steps to import your four segments into Journey Builder:
    ![]({% asset_path 2020-02-14-get-the-most-out-of-einstein-engagement-scoring/Picture4.png %})
 
 <ol start=2>
-    <li>Define the Entry Source or who will get these emails.</li>
+    <li>Define the <b>Entry Source</b> or who gets these emails.</li>
 </ol>
 
    ![]({% asset_path 2020-02-14-get-the-most-out-of-einstein-engagement-scoring/Picture5.png %})
@@ -159,12 +159,12 @@ following steps to import your four segments into Journey Builder:
 
 <ol start=5>
     <li>After you select <b>Persona Split</b>, Journey Builder automatically splits your
-   email campaign into five paths: one for each engagement category and a fifth
+   email campaign into five paths&mdash;one for each engagement category and a fifth
    path called <b>Remainder</b>. The Remainder path contains subscribers that
    Journey Path could not categorize because of insufficient data.  Likely, they
    are recent subscribers. You can leave Remainder as a standalone path, or use
    the <b>Join</b> option to merge the Remainder category into one of the other
-   paths, because those subscribers can benefit from the same strategy you use
+   paths because those subscribers can benefit from the same strategy you use
    for another group.</li>
 </ol>
 
@@ -176,8 +176,8 @@ following steps to import your four segments into Journey Builder:
    content, targeted ads, and more to resonate best with each group. Journey
    Builder even allows you to pull Salesforce actions into the journey. For
    instance, if a subscriber downloads two pieces of content in a row, you can
-   automatically increase their lead score or trigger a Salesforce action that
-   tasks a salesperson to call the subscriber.</li>
+   automatically increase their lead score or trigger a Salesforce action for
+   a salesperson to call the subscriber.</li>
 </ol>
 
    ![]({% asset_path 2020-02-14-get-the-most-out-of-einstein-engagement-scoring/Picture10.png %})
@@ -201,7 +201,7 @@ Marketing Cloud instance already includes it. All it takes is the click of a
 button to turn on this powerful AI tool and take your email marketing to the
 next level.
 
-Not sure if you have Engagement Scoring already? Want more direction on how to
+Not sure if you have Einstein Engagement Scoring already? Want more direction on how to
 use it or what types of email messaging to send to your segmented subscribers?
 Reach out to Rackspace, your full-service partner for marketing automation and
 strategy. Our team of marketing automation experts can help you set up and
