@@ -212,6 +212,9 @@ monitor the results of your campaigns. Thanks to AI tools like Engagement Scorin
 you can personalize the consumer journey and watch your open rates&mdash;and
 your ROI&mdash;soar.
 
-<a class="cta blue" id="cta" href="https://www.rackspace.com/salesforce-managed-services">Learn more about Salesforce Customer Relationship Management (CRM)</a>
+<a class="cta blue" id="cta" href="https://www.rackspace.com/salesforce">Learn more about Salesforce Customer Relationship Management (CRM)</a>
 
-Visit [www.rackspace.com](https://www.rackspace.com) and click **Sales Chat** to get started.
+Visit [www.rackspace.com](https://www.rackspace.com) and click **Sales Chat**
+to get started.
+
+Use the Feedback tab to make any comments or ask questions.
