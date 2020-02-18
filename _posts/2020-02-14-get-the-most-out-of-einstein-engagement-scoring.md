@@ -22,7 +22,7 @@ ogTitle: "Get the most out of Einstein Engagement Scoring"
 ogDescription: "If your business has a corporate or enterprise license for Salesforce@reg; Marketing Cloud, and you aren’t using Einstein Engagement Scoring, you are missing a big opportunity to boost your email marketing and improve the return on investment (ROI) of your Marketing Cloud instance."
 ---
 
-If your business has a corporate or enterprise license for Salesforce@reg;
+If your business has a corporate or enterprise license for Salesforce&reg;
 Marketing Cloud, and you aren’t using Einstein Engagement Scoring, you are
 missing a big opportunity to boost your email marketing and improve the return
 on investment (ROI) of your Marketing Cloud instance.
@@ -212,6 +212,6 @@ monitor the results of your campaigns. Thanks to AI tools like Engagement Scorin
 you can personalize the consumer journey and watch your open rates&mdash;and
 your ROI&mdash;soar.
 
-<a class="cta blue" id="cta" href="https://www.rackspace.com/salesforce-managed-services">Learn more about Salesforce Customer Relationship Management (CRM)</a>
+<a class="cta blue" id="cta" href="https://www.rackspace.com/salesforce">Learn more about Salesforce Customer Relationship Management (CRM)</a>
 
 Visit [www.rackspace.com](https://www.rackspace.com) and click **Sales Chat** to get started.
