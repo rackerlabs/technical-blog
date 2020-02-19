@@ -117,31 +117,9 @@ adoption, and gain the expertise to make the most out of the analytics at your
 fingertips. Contact our team of business process and technology experts today
 for a consultation.
 
+<a class="cta teal" id="cta" href="https://www.rackspace.com/salesforce">Learn more about Salesforce Customer Relationship Management (CRM)</a>
 
-### Optimize your environment with expert administration, management, and configuration
+Visit [www.rackspace.com](https://www.rackspace.com) and click **Sales Chat**
+to get started.
 
-[Rackspace's Application services](https://www.rackspace.com/application-management/managed-services)
-**(RAS)** experts provide the following [professional](https://www.rackspace.com/application-management/professional-services)
-and
-[managed services](https://www.rackspace.com/application-management/managed-services) across
-a broad portfolio of applications:
-
-- [eCommerce and Digital Experience platforms](https://www.rackspace.com/ecommerce-digital-experience)
-- [Enterprise Resource Planning (ERP)](https://www.rackspace.com/erp)
-- [Business Intelligence](https://www.rackspace.com/business-intelligence)
-- [Salesforce Customer Relationship Management (CRM)](https://www.rackspace.com/salesforce-managed-services)
-- [Databases](https://www.rackspace.com/dba-services)
-- [Email Hosting and Productivity](https://www.rackspace.com/email-hosting)
-
-We deliver:
-
-- **Unbiased expertise**: We simplify and guide your modernization journey,
-focusing on the capabilities that deliver immediate value.
-- **Fanatical Experience**&trade;: We combine a Process first. Technology second.&reg;
-approach with dedicated technical support to provide comprehensive solutions.
-- **Unrivaled portfolio**: We apply extensive cloud experience to help you
-choose and deploy the right technology on the right cloud.
-- **Agile delivery**: We meet you where you are in your journey and align
-our success with yours.
-
-[Chat now](https://www.rackspace.com/#chat) to get started.
+Use the Feedback tab to make any comments or ask questions.

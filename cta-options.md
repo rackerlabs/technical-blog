@@ -51,13 +51,13 @@ display.
 
 ### Salesforce Customer Relationship Management (CRM)
 
-    <a class="cta red" id="cta" href="https://www.rackspace.com/salesforce-managed-services">Learn more about Salesforce Customer Relationship Management (CRM)</a>
+    <a class="cta red" id="cta" href="https://www.rackspace.com/salesforce">Learn more about Salesforce Customer Relationship Management (CRM)</a>
 
-    <a class="cta purple" id="cta" href="https://www.rackspace.com/salesforce-managed-services">Learn more about Salesforce Customer Relationship Management (CRM)</a>
+    <a class="cta purple" id="cta" href="https://www.rackspace.com/salesforce">Learn more about Salesforce Customer Relationship Management (CRM)</a>
 
-    <a class="cta blue" id="cta" href="https://www.rackspace.com/salesforce-managed-services">Learn more about Salesforce Customer Relationship Management (CRM)</a>
+    <a class="cta blue" id="cta" href="https://www.rackspace.com/salesforce">Learn more about Salesforce Customer Relationship Management (CRM)</a>
 
-    <a class="cta teal" id="cta" href="https://www.rackspace.com/salesforce-managed-services">Learn more about Salesforce Customer Relationship Management (CRM)</a>
+    <a class="cta teal" id="cta" href="https://www.rackspace.com/salesforce">Learn more about Salesforce Customer Relationship Management (CRM)</a>
 
 
 ### Databases
