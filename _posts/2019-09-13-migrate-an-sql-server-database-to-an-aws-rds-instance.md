@@ -8,6 +8,7 @@ published: true
 authorIsRacker: true
 categories:
     - Database
+    - SQL Server
 metaTitle: "Migrate a SQL Server database to an AWS RDS instance"
 metaDescription: "This blog explains how to move a Microsoft&reg; SQL Server&reg; database to Amazon Relational Database Service (RDS)."
 ogTitle: "Migrate a SQL Server database to an AWS RDS instance"

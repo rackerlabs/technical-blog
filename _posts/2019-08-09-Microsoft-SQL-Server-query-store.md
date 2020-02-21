@@ -8,6 +8,7 @@ published: true
 authorIsRacker: true
 categories:
     - Database
+    - SQL Server
 metaTitle: "Microsoft SQL Server Query Store"
 metaDescription: "Understand, detect, and repair SQL Server database corruption."
 ogTitle: "Microsoft SQL Server Query Store"

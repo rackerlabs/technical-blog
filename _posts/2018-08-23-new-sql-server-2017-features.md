@@ -8,6 +8,7 @@ published: true
 authorIsRacker: true
 categories:
     - Database
+    - SQL Server
 ---
 
 Are you considering an upgrade to a more modern version of SQL Server? Are you

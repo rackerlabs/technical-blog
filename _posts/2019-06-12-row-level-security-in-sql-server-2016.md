@@ -7,7 +7,7 @@ author: Vishal Srivastava
 published: true
 authorIsRacker: true
 categories:
-    - Oracle
+    - SQL Server
     - Database
 metaTitle: "Row-level security in SQL Server 2016"
 metaDescription: "."

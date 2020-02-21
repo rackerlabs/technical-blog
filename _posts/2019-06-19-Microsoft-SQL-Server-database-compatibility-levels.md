@@ -8,6 +8,7 @@ published: true
 authorIsRacker: true
 categories:
     - Database
+    - SQL Server
 metaTitle: "Microsoft SQL Server database compatibility levels"
 metaDescription: "Database compatibility level, one of the database level settings, impacts how a database functions."
 ogTitle: "Microsoft SQL Server database compatibility levels"
