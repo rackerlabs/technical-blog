@@ -7,7 +7,7 @@ author: Steve Croce
 published: true
 authorIsRacker: true
 categories:
-    - Salesforce
+    - Databases
 metaTitle: "Manage PostgreSQL extensions on the ObjectRocket service"
 metaDescription: "The PostgreSQL (Postgres) extensions ecosystem is extremely robust and provides a wide array of additional capabilities to Postgres."
 ogTitle: "Manage PostgreSQL extensions on the ObjectRocket service"
@@ -36,10 +36,10 @@ most common and requested plug-ins available. To see the list of our supported
 plug-ins, connect to an instance running on our service and use the following
 queries:
 
-- ``SELECT * FROM pg_available_extensions;`` shows a super list of all of the
+- ``SELECT * FROM pg_available_extensions;``: Shows a super list of all of the
   extensions in the **postgres** extensions directory.
 
-- ```SHOW extwlist.extensions;`` shows the allowed extensions on our service.
+- ``SHOW extwlist.extensions;``: Shows the allowed extensions on our service.
 
 Because Postgres packages include some extensions by default to which we
 provide no user access, the two lists will differ slightly. If you need an
@@ -57,7 +57,7 @@ extensions on the ObjectRocket service:
 ### Loading extensions
 
 Loading extensions on the service works the same it usually does in Postgres.
-You issue the **CREATE EXTENSION* command in the database to which you want to
+You issue the ``CREATE EXTENSION`` command in the database to which you want to
 add the functionality.
 
 Here's a straightforward example. The
