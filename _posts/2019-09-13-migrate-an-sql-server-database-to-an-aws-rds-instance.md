@@ -205,5 +205,10 @@ choose and deploy the right technology on the right cloud.
 - **Agile delivery**: We meet you where you are in your journey and align
 our success with yours.
 
-[Chat now](https://www.rackspace.com/#chat) to get started.
+<a class="cta teal" id="cta" href="https://www.rackspace.com/dba-services">Learn more about Databases</a>
+
+Visit [www.rackspace.com](https://www.rackspace.com) and click **Sales Chat**
+to get started.
+
+Use the Feedback tab to make any comments or ask questions.
 
