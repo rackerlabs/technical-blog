@@ -9,6 +9,7 @@ published: true
 categories:
     - Devops
     - architecture
+    - SQL Server
 ---
 
 Sitecore implementations with Content Delivery nodes in multiple locations must keep their databases and content in sync.  The [Sitecore Scaling Guide](https://sdn.sitecore.net/upload/sitecore7/70/scaling_guide_sc70_usletter.pdf) summarizes areas of concern, such as isolating CM and CD servers, enabling the Sitecore scalability settings, maintaining search indexes, etc.  Sitecore runs on top of SQL Server, and one topic touched on in the Scaling Guide is SQL Server replication, and conveniently there is a Sitecore [guide just for that specific subject](https://sdn.sitecore.net/upload/sitecore6/63/sql_server_replication_guide_sc63-64-usletter.pdf).  This guide explains how, with SQL Server Merge Replication, one can coordinate the content of Sitecore databases that are not in the same location.  This is the starting point for what we at Rackspace have found to be a global publishing architecture that meets the needs of enterprise Sitecore customers.
@@ -29,7 +30,8 @@ This is one of those cases where a picture is worth a thousand words.  The diagr
 
 ### Replication Explorations
 
-We're using SQL Server Merge replication, the only type of replication officially supported by Sitecore, but we have initial investigations into whether running [Transactional Replication](https://technet.microsoft.com/en-us/library/ms151254%28v=sql.105%29.aspx) for Sitecore would be a more performant alternative.  Merge Replication is typically used when data flows in high volumes in both directions and conflicts may need to be resolved; Transactional Replication is typically used for one-way flows of data.
+We're using SQL Server Merge replication, the only type of replication officially supported by Sitecore, but we have initial investigations into whether running [Transactional Replication](https://technet.microsoft.com/en-us/library/ms151254%28v=sql.105%29.aspx) for Sitecore would be a more performant alternative.  Merge Replication is typically used when data flows in high volumes in both directions and you might need to
+resolve conflicts; Transactional Replication is typically used for one-way flows of data.
 
 In the case of Sitecore publishing, Transactional Replication feels like an intiutive choice, but the current Sitecore database schema isn't a fit for Transactional Replication in a couple of ways:
 
@@ -37,3 +39,10 @@ In the case of Sitecore publishing, Transactional Replication feels like an inti
 * the timestamp data type isn't valid for Transactional Replication; for example, the EventQueue.Stamp column would need to be moved from a *timestamp* to *binary(8)* data type
 
 These hurdles are fairly easy to overcome, but the *wisdom* of doing so without full support from Sitecore leaves Transactional Replication as an experimental approach.  At Rackspace, we only use Merge Replication for live environments, but we continue to explore other options in our various Sitecore labs.
+
+<a class="cta teal" id="cta" href="https://www.rackspace.com/dba-services">Learn more about Databases</a>
+
+Visit [www.rackspace.com](https://www.rackspace.com) and click **Sales Chat**
+to get started.
+
+Use the Feedback tab to make any comments or ask questions.

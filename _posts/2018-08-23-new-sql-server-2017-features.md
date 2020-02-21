@@ -7,7 +7,7 @@ author: Rohit Kumar
 published: true
 authorIsRacker: true
 categories:
-    - General
+    - Database
 ---
 
 Are you considering an upgrade to a more modern version of SQL Server? Are you
@@ -316,5 +316,10 @@ improvements in the core database engine that benefit all platforms. Microsoft
 continues to add extra functionality to the product in SQL Server 2017 cumulative
 updates, and SQL Server 2017 will be fully supported by Microsoft for longer than
 SQL Server 2016.
+
+<a class="cta blue" id="cta" href="https://www.rackspace.com/dba-services">Learn more about Databases</a>
+
+Visit [www.rackspace.com](https://www.rackspace.com) and click **Sales Chat**
+to get started.
 
 Use the Feedback tab to make any comments or ask questions.

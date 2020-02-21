@@ -6,6 +6,7 @@ title: 'OpenStack for Windows Users: Installing Linux'
 author: Duan van der Westhuizen
 categories:
   - OpenStack
+  - SQL Server
 ---
 
 _This is a guest post by Duan van der Westhuizen. Duan works at Rackspace in Enterprise Product Development and has been a Racker for almost 6 years. Duan started in our EMEA office where he also had roles in Business Intelligence and Customer Support. He has over 15 years of technology experience across various fields from technology strategy, engineering, development and database design. Duan is a tech at heart who is passionate about leading edge technologies and finding ways to solve market problems through new and innovative solutions._
@@ -133,3 +134,10 @@ I now had this screen in front of me:
 {% img center 2012-10-09-openstack-for-windows-users-installing-linux/login.jpg %}
 
 Next steps: figure out how to login, and then download and install OpenStack. No doubt there will be many more lessons to learn as I continue this project. Thanks for reading!
+
+<a class="cta blue" id="cta" href="https://www.rackspace.com/dba-services">Learn more about Databases</a>
+
+Visit [www.rackspace.com](https://www.rackspace.com) and click **Sales Chat**
+to get started.
+
+Use the Feedback tab to make any comments or ask questions.

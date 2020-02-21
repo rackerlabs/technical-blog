@@ -8,6 +8,7 @@ published: true
 authorIsRacker: true
 categories:
   - database
+  - SQL Server
 ---
 
 Originally published by Tricore: June 14, 2017
@@ -102,5 +103,9 @@ of SQL Server, but Microsoft has not scheduled when the removals will happen.
 Test old applications before migrating to a new version of SQL Server, and
 do not use deprecated features in any new development work.
 
-Use the Feedback tab to make any comments or ask questions.
+<a class="cta purple" id="cta" href="https://www.rackspace.com/dba-services">Learn more about Databases</a>
 
+Visit [www.rackspace.com](https://www.rackspace.com) and click **Sales Chat**
+to get started.
+
+Use the Feedback tab to make any comments or ask questions.

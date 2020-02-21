@@ -9,7 +9,8 @@ published: true
 authorAvatar: 'https://en.gravatar.com/userimage/151177997/5bed7e07ee47533cbd34b951d463bcb7.jpg'
 bio: “Jimmy Rudley is an Azure Architect at Rackspace and an active member of the Azure community. He focuses on solving large and complex architecture and automation problems within Azure."
 categories:
-- Devops
+  - Devops
+  - SQL Server
 ---
 
 I previously made a [blog post](https://developer.rackspace.com/blog/run-sitecore-in-a-docker-container-on-windows-server-2016/) on how to manually setup Sitecore running in a Docker container. I would like to take it one more step and build a Docker image using an automated install of Sitecore during the build process. We can then build Sitecore development enviornments on demand using our Docker Sitecore image.
@@ -154,3 +155,10 @@ docker run --rm -it -p 80:80 sitecoredev "powershell ./detach"
 ```
 
 I am running my Docker host virtual machine on a SSD and see disk I/O issues during the application pool initialization. Hopefully, the next technical preview from Microsoft will address this performance issue. I hope this gives a better understanding how Docker can quickly let us launch new instances of Sitecore. In my next post, I will show how to build Docker images, based on Sitecore roles, to have a multiple content delivery node enviornment that literally takes seconds to start the Docker container.
+
+<a class="cta purple" id="cta" href="https://www.rackspace.com/dba-services">Learn more about Databases</a>
+
+Visit [www.rackspace.com](https://www.rackspace.com) and click **Sales Chat**
+to get started.
+
+Use the Feedback tab to make any comments or ask questions.

@@ -285,3 +285,10 @@ If you are using the command line client, then an environment file can be given 
 ## Conclusion
 
 I hope you are starting to realize the amazing power Heat templates give you over the regular OpenStack APIs. To prove this point today, I have shared with you a few reusable templates, and it goes without saying that you are more than welcome to take them, use them, adapt them or do whatever you want with them. If you make something cool with them, be sure to let me know!
+
+<a class="cta red" id="cta" href="https://www.rackspace.com/dba-services">Learn more about Databases</a>
+
+Visit [www.rackspace.com](https://www.rackspace.com) and click **Sales Chat**
+to get started.
+
+Use the Feedback tab to make any comments or ask questions.

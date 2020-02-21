@@ -7,7 +7,6 @@ author: Ashish Chauhan
 published: true
 authorIsRacker: true
 categories:
-    - general
     - security
 ---
 
@@ -173,6 +172,9 @@ Without keys, no one can decrypt the file and access the data. If you need to
 transfer sensitive information, use file encryption functionality. The examples
 in this blog were tested on Oracle Release 12.1.3.
 
-Learn more about [Rackspace Application Professional Services](www.rackspace.com/application-management/professional-services).
+<a class="cta purple" id="cta" href="https://www.rackspace.com/security">Learn more about Security services</a>
+
+Visit [www.rackspace.com](https://www.rackspace.com) and click **Sales Chat**
+to get started.
 
 Use the Feedback tab to make any comments or ask questions.

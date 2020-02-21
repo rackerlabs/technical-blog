@@ -224,3 +224,10 @@ If one or more of the nova services does not start (or stay) running, use the ap
     sudo -u nova nova-scheduler --config-file=/etc/nova/nova.conf
 
 We now have the major OpenStack processes running on the controller node, and in the next article, our focus moves to the network node. We will install various neutron pieces that need to be running there, then move to the compute node and finally back to the controller node to install the Volume service (cinder) and the dashboard (horizon).
+
+<a class="cta red" id="cta" href="https://www.rackspace.com/solutions/it-transformation">Learn more about IT Transformation</a>
+
+Visit [www.rackspace.com](https://www.rackspace.com) and click **Sales Chat**
+to get started.
+
+Use the Feedback tab to make any comments or ask questions.
