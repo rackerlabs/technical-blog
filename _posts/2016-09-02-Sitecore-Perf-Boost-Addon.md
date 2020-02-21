@@ -11,6 +11,7 @@ bio: “Jimmy Rudley is an Azure Architect at Rackspace and an active member of 
 categories:
   - Devops
   - database
+  - SQL Server
 ---
 
 Sitecore has the option of making use of TempDB in Sql Server to speed up your session state operations. What catches people off guard is the fact that tempdb is recreated at service restart of SQL Server. This becomes a problem when you have to recreate the table structure and user permissions inside tempdb.
@@ -37,10 +38,13 @@ The T-SQL executes the stored procedure to re-initialize the table and index str
 
 We have the code, but how do we apply it when the service restarts? We can create a SQL Agent Job that we specify to run when the SQL Server Agent starts up. I have included the complete .sql script which creates the sql job for you. The readme file in the repository includes the lines you need to change for the database user that you want to create and check for.
 
-
 [T-SQL Script with SQL Agent Job](https://github.com/jrudley/Sitecore-Sql-Perf-Addon)
 
 [Sitecore documentation snippet to optimize SQL Server performance](https://doc.sitecore.net/sitecore_experience_platform/setting_up__maintaining/xdb/session_state/walkthrough_configure_a_shared_session_state_database_using_the_sql_server_provider)
 
+<a class="cta blue" id="cta" href="https://www.rackspace.com/dba-services">Learn more about Databases</a>
 
+Visit [www.rackspace.com](https://www.rackspace.com) and click **Sales Chat**
+to get started.
 
+Use the Feedback tab to make any comments or ask questions.

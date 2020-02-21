@@ -1,13 +1,14 @@
 ---
 layout: post
 title: "Understanding a SQL Server execution plan"
-date: 2018-07-11 00:00
+date: 2018-07-10 00:00
 comments: true
 author: Shashi Choubey
 published: true
 authorIsRacker: true
 categories:
   - database
+  - SQL Server
 ---
 
 How do you read execution plans? From right to left, left to right, or by
@@ -197,5 +198,10 @@ ignore it.
 Review it, but don’t create the index blindly. Check the other indexes
 available on the same columns, and consider the impact on queries running in your
 database.
+
+<a class="cta purple" id="cta" href="https://www.rackspace.com/dba-services">Learn more about Databases</a>
+
+Visit [www.rackspace.com](https://www.rackspace.com) and click **Sales Chat**
+to get started.
 
 Use the Feedback tab to make any comments or ask questions.

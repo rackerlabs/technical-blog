@@ -7,7 +7,8 @@ author: Amarbir Singh
 published: true
 authorIsRacker: true
 categories:
-    - General
+    - Database
+    - Cloud Servers
 ---
 
 You may be asked to migrate multiple Internet Information Server (IIS) sites
@@ -168,5 +169,10 @@ to migrate thousands of sites and their configuration seamlessly to target
 environments with no need to worry about code. Web deploy not only automates
 most of the migration, it also eliminates the possibility of human error and
 saves time.
+
+<a class="cta red" id="cta" href="https://www.rackspace.com/dba-services">Learn more about Databases</a>
+
+Visit [www.rackspace.com](https://www.rackspace.com) and click **Sales Chat**
+to get started.
 
 Use the Feedback tab to make any comments or ask questions.

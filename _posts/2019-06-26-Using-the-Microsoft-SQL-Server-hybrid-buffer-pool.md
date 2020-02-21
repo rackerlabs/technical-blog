@@ -7,7 +7,7 @@ author: Manish Shukhla
 published: true
 authorIsRacker: true
 categories:
-    - Oracle
+    - SQL Server
     - Database
 metaTitle: "Using the Microsoft SQL Server hybrid buffer pool"
 metaDescription: "Microsoft&reg; introduced a new feature called a hybrid buffer pool in SQL Server&reg; 2019 (Preview) CTP 2.1."

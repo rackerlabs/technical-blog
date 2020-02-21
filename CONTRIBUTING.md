@@ -137,6 +137,7 @@ Available categories include the following:
 - Salesforce
 - SDK
 - Security
+- SQL Server
 
 If no category fits, use *General*.
 

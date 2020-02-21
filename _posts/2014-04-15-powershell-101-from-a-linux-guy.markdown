@@ -1,12 +1,14 @@
 ---
 layout: post
 title: PowerShell 101 from a Linux guy
-date: '2014-04-23 10:00'
+date: '2014-04-15 10:00'
 comments: true
 author: Sriram(Sri) Rajan
 published: true
 categories:
   - automation
+  - DevOps
+  - General
 ---
 
 Having spent my last 7 years concentrating mainly on Linux&reg; and related
@@ -160,8 +162,6 @@ TotalMilliseconds : 141.2392
 TotalMilliseconds : 27.3214
 {% endcodeblock %}
 
-
-
 ### Variables and loops
 
  * Variables - You can do simple assignments, arrays, hash tables or the output of another command.
@@ -188,7 +188,7 @@ Get-Process | foreach -Begin { Get-Date ; "Time to loop"}  -Process { $PSITem.Na
 {% endcodeblock %}
 
 
-## Other points
+### Other points
 
 This is random collection of stuff, I gathered and found useful.
 
@@ -244,9 +244,7 @@ cd HKLM:
 ls .\SOFTWARE\Microsoft\Windows\CurrentVersion
 {% endcodeblock %}
 
-
-
-## Quick reference
+### Quick reference
 
 Bash/Linux | PowerShell
 --- | ---
@@ -270,7 +268,7 @@ if [condition] then something fi | if (condition) { something }
 -e file | Test-Path file
 for ((i=0; i < 10; i++)) ;  do  echo $i ; done | for ($i=0;$i -lt 10; $i++) { echo $i }
 
-## References and Further reading
+### References and further reading
 
  * [A Task-Based Guide to Windows PowerShell Cmdlets](http://technet.microsoft.com/en-us/scriptcenter/dd772285.aspx)
 
@@ -281,3 +279,10 @@ for ((i=0; i < 10; i++)) ;  do  echo $i ; done | for ($i=0;$i -lt 10; $i++) { ec
  * [Desired state configuration](http://blogs.technet.com/b/privatecloud/archive/2013/08/30/introducing-powershell-desired-state-configuration-dsc.aspx)
 
  * [PoshNova- Microsoft PowerShell module for Rackspace Cloud](https://github.com/rackerlabs/PoshNova)
+
+<a class="cta red" id="cta" href="https://www.rackspace.com/solutions/it-transformation">Learn more about IT Transformation</a>
+
+Visit [www.rackspace.com](https://www.rackspace.com) and click **Sales Chat**
+to get started.
+
+Use the Feedback tab to make any comments or ask questions.

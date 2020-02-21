@@ -9,6 +9,7 @@ authorIsRacker: true
 authorAvatar: 'https://s.gravatar.com/avatar/c6bddf3d409b0e1975d01962a7317e2b'
 categories:
     - Database
+    - SQL Server
 metaTitle: "Microsoft SQL Server log shipping on existing AlwaysOn databases"
 metaDescription: "This post discusses how to set up log shipping, which is a disaster recovery (DR) solution, with existing Microsoft&reg; SQL Server&reg; AlwaysOn-configured databases."
 ogTitle: "Microsoft SQL Server log shipping on existing AlwaysOn databases"

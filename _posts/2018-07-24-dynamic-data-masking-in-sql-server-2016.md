@@ -8,6 +8,7 @@ published: true
 authorIsRacker: true
 categories:
     - General
+    - SQL Server
 ---
 
 Originally published by Tricore: April 20, 2017
@@ -213,3 +214,10 @@ Use the Feedback tab to make any comments or ask questions.
 
 - https://msdn.microsoft.com/en-in/library/mt130841.aspx
 - https://www.codeproject.com/Articles/1084808/Dynamic-Data-Masking-in-SQL-Server
+
+<a class="cta teal" id="cta" href="https://www.rackspace.com/dba-services">Learn more about Databases</a>
+
+Visit [www.rackspace.com](https://www.rackspace.com) and click **Sales Chat**
+to get started.
+
+Use the Feedback tab to make any comments or ask questions.

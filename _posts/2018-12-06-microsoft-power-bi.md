@@ -8,6 +8,7 @@ published: true
 authorIsRacker: false
 categories:
     - General
+    - SQL Server
 ---
 
 Originally published by TriCore: November 7, 2017
@@ -199,6 +200,9 @@ of your most important metrics in a central place. These metrics are available
 on all of your devices and updated in real time. With a single click, you can
 explore your dashboard data to make timely and important business decisions.
 
-Use the Feedback tab to make any comments or ask questions.
+<a class="cta purple" id="cta" href="https://www.rackspace.com/application-management/professional-services">Learn more about Rackspace Application Services</a>
 
-Learn more about [Rackspace application services](https://www.rackspace.com/application-management).
+Visit [www.rackspace.com](https://www.rackspace.com) and click **Sales Chat**
+to get started.
+
+Use the Feedback tab to make any comments or ask questions.

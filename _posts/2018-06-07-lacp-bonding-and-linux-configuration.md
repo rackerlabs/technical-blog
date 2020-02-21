@@ -7,7 +7,8 @@ author: Narender Kumar
 published: true
 authorIsRacker: true
 categories:
-    - Oracle
+    - Cloud-networks
+    - Cloud Servers
 ---
 
 This blog introduces Link Aggregation Control Protocol (LACP) bonding and
@@ -351,5 +352,9 @@ bonding is very useful. Using IEEE 802.3ad link aggregation in this situation
 provides increased port density and bandwidth. For more options, refer to the
 [nmcli documentation](https://developer.gnome.org/NetworkManager/stable/nmcli.html).
 
-Use the Feedback tab to make any comments or ask questions.
+<a class="cta teal" id="cta" href="https://www.rackspace.com/application-management/professional-services">Learn more about Rackspace Application Services</a>
 
+Visit [www.rackspace.com](https://www.rackspace.com) and click **Sales Chat**
+to get started.
+
+Use the Feedback tab to make any comments or ask questions.

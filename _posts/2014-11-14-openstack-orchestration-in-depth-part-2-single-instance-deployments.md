@@ -680,4 +680,12 @@ of what you learned today can also be applied to larger deployments involving
 multiple instances. But I'm getting ahead of myself now, as multi-instance
 deployments is the topic of my next article.
 
-I hope you'll join me again for the next part of this tutorial!
+I hope you'll join me again for the next part of
+[this tutorial](https://developer.rackspace.com/blog/install-openstack-from-source2/)!
+
+<a class="cta purple" id="cta" href="https://www.rackspace.com/solutions/it-transformation">Learn more about IT Transformation</a>
+
+Visit [www.rackspace.com](https://www.rackspace.com) and click **Sales Chat**
+to get started.
+
+Use the Feedback tab to make any comments or ask questions.

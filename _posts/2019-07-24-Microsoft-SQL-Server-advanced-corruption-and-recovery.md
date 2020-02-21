@@ -8,6 +8,7 @@ published: true
 authorIsRacker: true
 categories:
     - Database
+    - SQL Server
 metaTitle: "Microsoft SQL Server advanced corruption and recovery"
 metaDescription: "Understand, detect, and repair SQL Server database corruption."
 ogTitle: "Microsoft SQL Server advanced corruption and recovery"

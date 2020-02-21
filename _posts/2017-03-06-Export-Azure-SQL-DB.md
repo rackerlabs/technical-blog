@@ -11,6 +11,7 @@ bio: “Jimmy Rudley is an Azure Architect at Rackspace and an active member of 
 categories:
     - DevOps
     - Azure
+    - SQL Server
 ---
 
 Azure SQL is Microsoft's answer to Platform as a Service for SQL Server. It extracts a lot of the day to day administrative tasks of managing an installation. Let’s take a look how a consumer of Azure SQL can export data to restore to a local on-premise installation.
@@ -39,5 +40,9 @@ Clone or download my repo [Here](https://github.com/jrudley/export-AzureSqlDb) t
 The script will export out the BACPAC uri which you can download the BACPAC file
 ![Azure BACPAC URI]({% asset_path 2017-03-06-Export-Azure-SQL-DB/uri.png %})
 
+<a class="cta red" id="cta" href="https://www.rackspace.com/dba-services">Learn more about Databases</a>
 
+Visit [www.rackspace.com](https://www.rackspace.com) and click **Sales Chat**
+to get started.
 
+Use the Feedback tab to make any comments or ask questions.
