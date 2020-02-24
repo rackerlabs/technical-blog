@@ -85,7 +85,7 @@ database to include that extension. By default, all new databases are a copy
 Enjoy the new extensions, and let us know if you'd like us to add specific
 functionality.
 
-<a class="cta purple" id="cta" href="https://www.rackspace.com/application-management/professional-services">Learn more about Rackspace Application Services</a>
+<a class="cta purple" id="cta" href="https://www.rackspace.com/professional-services/data">Learn more about Rackspace Data Services</a>
 
 Visit [www.rackspace.com](https://www.rackspace.com) and click **Sales Chat**
 to get started.
