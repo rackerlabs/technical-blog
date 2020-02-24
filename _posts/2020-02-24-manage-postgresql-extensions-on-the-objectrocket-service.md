@@ -15,9 +15,9 @@ ogDescription: "The PostgreSQL (Postgres) extensions ecosystem is extremely robu
 canonical: https://www.objectrocket.com/blog/postgresql/managing-postgresql-extensions-on-the-objectrocket-service/
 ---
 
-*Originally published 2020/02/13 on ObjectRocket.com/blog.*
+*Originally published 2020/02/13 at ObjectRocket.com/blog.*
 
-The PostgreSQL (Postgres) extensions ecosystem is extremely robust and provides
+The PostgreSQL&reg; (Postgres&reg;) extensions ecosystem is extremely robust and provides
 a wide array of additional capabilities to Postgres.
 
 <!-- more -->
@@ -42,12 +42,12 @@ queries:
 - ``SHOW extwlist.extensions;``: Shows the allowed extensions on our service.
 
 Because Postgres packages include some extensions by default to which we
-provide no user access, the two lists will differ slightly. If you need an
+provide no user access, the two lists differ slightly. If you need an
 extension that’s not in the whitelist or not available at all, you can work
-with our support team to get it added to our platform.
+with our Support team to get it added to our platform.
 
-Because we regularly add extensions, running the query always provide the most
-up-to-date list. Following is the current list of both available and allowed
+Because we regularly add extensions, running the query always provides the most
+up-to-date list. Following is the current list of both the available and allowed
 extensions on the ObjectRocket service:
 
 ![]({% asset_path 2020-02-24-manage-postgresql-extensions-on-the-objectrocket-service/Picture2.png %})
@@ -67,11 +67,11 @@ shows an attempt to use the ``uuid_generate_v1()`` function:
 
 <a href="https://gyazo.com/19fc91c4582462e9296ada60b4a546fb"><img src="https://i.gyazo.com/19fc91c4582462e9296ada60b4a546fb.gif" alt="Image from Gyazo" width="908" /></a>
 
-As you can see, the function fails initially, because we had not yet loaded
+As you can see, the function fails initially because we had not yet loaded
 the extension. However, after loading the **uuid-ossp** extension and retrying
 the same function, we see that it now returns a UUID for us.
 
-Once again, this is a very simple example. Extensions can do much much more,
+Again, this is a very simple example. Extensions can do much more,
 but you can see the basic mechanics.
 
 Be aware that extensions are only active or usable in the databases into which
