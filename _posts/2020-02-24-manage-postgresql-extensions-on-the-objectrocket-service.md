@@ -6,6 +6,14 @@ comments: true
 author: Steve Croce
 published: true
 authorIsRacker: true
+bio: "As Senior Product Manager for the Rackspace Database-as-a-Service offering
+and Head of User Experience for the ObjectRocket platform, Steve oversees the
+day-to-day planning, development, and optimization of the ObjectRocket supported
+database technologies, clouds, and features. A product manager by day, he still
+likes to embrace his engineer roots by night and develop with Elasticsearch,
+SQL, Kubernetes, and web application stacks. He's spoken at
+KubeCon + CloudNativeCon, OpenStack summit, Percona Live, and various Rackspace
+events."
 categories:
     - Databases
 metaTitle: "Manage PostgreSQL extensions on the ObjectRocket service"
@@ -85,7 +93,7 @@ database to include that extension. By default, all new databases are a copy
 Enjoy the new extensions, and let us know if you'd like us to add specific
 functionality.
 
-<a class="cta purple" id="cta" href="https://www.rackspace.com/professional-services/data">Learn more about Rackspace Data Services</a>
+<a class="cta purple" id="cta" href="https://www.rackspace.com/data/dba-services">Learn more about Rackspace DBA Services</a>
 
 Visit [www.rackspace.com](https://www.rackspace.com) and click **Sales Chat**
 to get started.

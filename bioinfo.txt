@@ -65,14 +65,14 @@ other women/non-binary folks of color."
 
 Croce, Steve
 authorAvator:
-bio: "Steve Croce is currently Product Manager V for ObjectRocket at Rackspace.
-Today, Steve leads the UX/UI team through
-rebuilding out the platform’s user interface, scopes the company’s product and
-feature roadmap, and oversees the day to day development for ObjectRocket's
-Elasticsearch and PostgreSQL offerings. A product manager by day, he still likes
-to embrace his engineer roots by night and develop with Elasticsearch, SQL,
-Kubernetes, and web application stacks. He's spoken at KubeCon + CloudNativeCon,
-OpenStack summit, Percona Live, and various ObjectRocket events."
+bio: "As Senior Product Manager for the Rackspace Database-as-a-Service offering
+and Head of User Experience for the ObjectRocket platform, Steve oversees the
+day-to-day planning, development, and optimization of the ObjectRocket supported
+database technologies, clouds, and features. A product manager by day, he still
+likes to embrace his engineer roots by night and develop with Elasticsearch,
+SQL, Kubernetes, and web application stacks. He's spoken at
+KubeCon + CloudNativeCon, OpenStack summit, Percona Live, and various Rackspace
+events."
 
 Croteau, Paul
 authorAvatar: 'https://en.gravatar.com/userimage/1316548/544d0908ada5d93056e89afc7d240c23.png?size=200'
