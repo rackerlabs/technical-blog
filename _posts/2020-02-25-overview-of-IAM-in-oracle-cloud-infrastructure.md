@@ -112,8 +112,8 @@ Compute instances in the availability domain.
 To view the tenancy's limits and usage by region, perform the following steps:
 
 1. Open the Console.
-2. Open the User menu ( ) and click on Tenancy.
-3. Click on Service Limits.
+2. Open the **User** menu and click **Tenancy**.
+3. Click **Service Limits**.
 
 When an instance reaches the service limit for a specific resource, you can
 submit a request to increase the service limit and create new resources as
@@ -124,17 +124,16 @@ To request a service limit increase, perform the following steps:
 1. Open the **Help** menu, go to **Support**, and click
    **Request service limit increase**.
 
-2. Enter the following details:
-
-   - Primary contact details
-
-   - Service category
-
-   - Resource
-
-   - Reason for the request
-
-3. Click **Submit Request**.
+<ol start=3>
+    <li>Enter the following details:
+        <ul padding-bottom: 0;">
+           <li style="margin-left:2em">Primary contact details</li>
+           <li style="margin-left:2em">Service category</li>
+           <li style="margin-left:2em">Resource</li>
+           <li style="margin-left:2em; padding-bottom: 0;>Reason for the request</li>
+    </li>
+    <li>Click <b>Submit Request</b>.</li>
+</ol>
 
 ### Federate with Identity Providers
 
@@ -152,9 +151,11 @@ OCI supports federation for the following components and Identity Providers:
 
 In the examples in this blog post, I use IDCS as the Identity Provider.
 
-Perform the following steps to federate with IDCS:
+#### Perform the following steps to federate with IDCS:
 
-#### Step 1: Get the required information from IDCS
+##### Step 1: Get the required information from IDCS
+
+</br>
 
 1. Log in to the OCI IDCS console with admin privileges.
 
@@ -166,11 +167,13 @@ Perform the following steps to federate with IDCS:
 
 5. Expand **General Information** to display the Client ID.
 
-6. To see the Client Secret, click **Show Secret**.
+6. Click **Show Secret** to see the Client Secret.
 
 7. Save the Client ID and the Client Secret.
 
-#### Step 2: Add the identity provider in OCI
+##### Step 2: Add the identity provider in OCI
+
+</br>
 
 1. Sign in to the console with your OCI login credentials.
 
@@ -179,42 +182,48 @@ Perform the following steps to federate with IDCS:
 
 3. Click **Add identity provider**.
 
-4. Enter the following details:
-
-   a. **Name**:  The name must be unique across all identity providers. Oracle
-   adds the name to the tenancy, and you cannot modify it.
-
-   b. Description: A clear description.
-
-   c. IDCS Base URL: The resource URL.
-
-   d. Client ID: The client identifier that you previously collected.
-
-   e. Client secret: The client secret that you previously collected.
-
-5. Click **Show Advanced Options** and enter the following details:
-
-   a. **Encrypt Assertion**: Select the checkbox to enable encryption from the
-   IDP. If you do not select this checkbox, you must set up encryption of the
-   assertion in IDCS.
-
-   b. **Tags**: You can also apply tags if you have permission to create a
-   resource. To apply a defined tag, you must have permission to use the tag
-   namespace.
-
-6. Click **Continue**.
-
-7. Define the mappings between IDCS groups and IAM groups in OCI. You can map
-   IDCS groups to zero, one, or multiple IAM groups, and vice versa.
+<ol start=4>
+    <li>Enter the following details:
+        <ol style="list-style-type: lower-alpha; padding-bottom: 0;">
+           <li style="margin-left:2em"><b>Name</b>: The name must be unique
+             across all identity providers. Oracle adds the name to the tenancy,
+             and you cannot modify it.</li>
+           <li style="margin-left:2em"><b>Description</b>: A clear description.</li>
+           <li style="margin-left:2em"><b>IDCS Base URL</b>: The resource URL.</li>
+           <li style="margin-left:2em"><b>Client ID</b>: The client identifier
+             that you collected previously.</li>
+           <li style="margin-left:2em; padding-bottom: 0;"><b>Client secret:
+             The client secret that you previously collected.</li>
+        </ol>
+    </li>
+    <li>Click <b>Show Advanced Options</b> and enter the following details:
+        <ol style="list-style-type: lower-alpha; padding-bottom: 0;">
+           <li style="margin-left:2em"><b>Encrypt Assertion</b>: Select the
+             checkbox to enable encryption from the IDP. If you do not select
+             this checkbox, you must set up encryption of the assertion in IDCS.</li>
+           <li style="margin-left:2em; padding-bottom: 0;"><b>Tags</b>: You can
+             also apply tags if you have permission to create a resource. To
+             apply a defined tag, you must have permission to use the tag
+             namespace.</li>
+        </ol>
+    </li>
+    <li>Click <b>Continue</b>.
+    <li>Define the mappings between IDCS groups and IAM groups in OCI. You can
+        map IDCS groups to zero, one, or multiple IAM groups, and vice versa.</li>
+</ol>
 
 The Federation page now shows the identity provider in the tenancy list. Oracle
 assigns the OCID to each group mapping.
 
-#### Step 3: Set up the IAM policies for the groups
+##### Step 3: Set up the IAM policies for the groups
+
+</br>
 
 Follow your standard procedure to set up the IAM policies for the groups.
 
-#### Step 4: Give the federated users the tenant and URL
+##### Step 4: Give the federated users the tenant and URL
+
+</br>
 
 Provide the federated users with the name of the tenant and the sign-in URL.
 The URL should be similar to the following example:
@@ -223,29 +232,41 @@ The URL should be similar to the following example:
 
 ### Manage Identity Providers in the console
 
+This section provides the steps to delete an Identify provider and to add,
+update, or delete group mappings for IDCS.
+
+#### Delete an Identity Provider
+
 To delete an Identity Provider, perform the following steps:
 
-1. Delete the Identity Provider from the tenancy.
+<ol>
+    <li>Delete the Identity Provider from the tenancy.
+        <ol style="list-style-type: lower-alpha; padding-bottom: 0;">
+           <li style="margin-left:2em">Open the <b>Governance and Administration</b>
+             navigation menu and click <b>Identity -> Federation</b> to see the
+             list of Identity Providers in the tenancy.</li>
+           <li style="margin-left:2em">Click on the Identity Provider that you
+             want to delete to view its details.</li>
+           <li style="margin-left:2em; padding-bottom: 0;">Click <b>Delete</b>
+             and confirm.</li>
+        </ol>
+    </li>
+    <li>Delete the tenancy from the IDCS account.
+        <ol style="list-style-type: lower-alpha; padding-bottom: 0;">
+           <li style="margin-left:2em">Open the IDCS console and sign in to the
+             federated account.</li>
+           <li style="margin-left:2em">Click <b>Applications</b> to display the
+             list of applications.</li>
+           <li style="margin-left:2em">Find the tenancy and click on its name
+             to view the details page.</li>
+           <li style="margin-left:2em">Click <b>Deactivate</b> and confirm.</li>
+           <li style="margin-left:2em; padding-bottom: 0;">Click **Remove** and
+             confirm.</li>
+        </ol>
+     </li>
+</ol>
 
-   a. Open the **Governance and Administration** navigation menu and click
-   **Identity -> Federation** to see the list of Identity Providers in the
-   tenancy.
-
-   b. Click on the Identity Provider that you want to delete to view its details.
-
-   c. Click **Delete** and confirm.
-
-2. Delete the tenancy from the IDCS account.
-
-   a. Open the IDCS console and sign in to the federated account.
-
-   b.  Click **Applications** to display the list of applications.
-
-   c. Find the tenancy and click on its name to view the details page.
-
-   d. Click **Deactivate** and confirm.
-
-   e. Click **Remove** and confirm.
+#### Add group mappings for IDCS
 
 To add group mappings for IDCS, perform the following steps:
 
@@ -256,19 +277,24 @@ To add group mappings for IDCS, perform the following steps:
 
 3. Click **Edit Provider Details**.
 
-4. Add at least one mapping.
+<ol start=4>
+    <li>Add at least one mapping.
+        <ol style="list-style-type: lower-alpha; padding-bottom: 0;">
+           <li style="margin-left:2em">Click <b>+ Add Mapping</b>.</li>
+           <li style="margin-left:2em">Select an IDCS group from the
+             <b>Identity Provider Group</b> list.</li>
+           <li style="margin-left:2em">Select the <b>IAM group</b> to get the
+             list of OCI Groups.</li>
+           <li style="margin-left:2em; padding-bottom: 0;">Select <b>New OCI Group</b>
+             to create a new OCI group in IAM, rather than a new IAM group, and
+             map the new OCI group to the IDP group.</li>
+        </ol>
+    </li>
+    <li>Repeat Step 4 for each mapping and click <b>Submit</b> after you have
+      added all the mappings.</li>
+</ol>
 
-   a. Click on **+ Add Mapping**.
-
-   b. Select an IDCS group from the **Identity Provider Group** list.
-
-   c. Select the **IAM group** to get the list of OCI Groups.
-
-   d. Select **New OCI Group** to create a new OCI group in IAM, rather than a
-   new IAM group, and map the new OCI group to the IDP group.
-
-5. Repeat Step 4 for each mapping and click **Submit** after you have added all
-   the mappings.
+#### Update or delete a group mapping
 
 To update or delete a group mapping, perform the following steps:
 
@@ -287,7 +313,7 @@ To update or delete a group mapping, perform the following steps:
 ### Conclusion
 
 This blog post describes how different IAM components work together and how you
-can federate multiple IDCS accounts with OCI.
+can federate multiple IDCS accounts in OCI.
 
 Use the Feedback tab to make any comments or ask questions. You can also
 [chat now](https://www.rackspace.com/#chat) to start the conversation.
