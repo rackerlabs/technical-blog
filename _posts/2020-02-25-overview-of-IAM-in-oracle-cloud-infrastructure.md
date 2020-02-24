@@ -21,7 +21,7 @@ manage Oracle cloud resources.
 
 <!-- more -->
 
-It identifies the types of access for specific resources that you can assign to
+The post identifies the types of access for specific resources that you can assign to
 a group of users and how you can federate OCI with Oracle Identity Cloud Service
 (IDCS).
 
@@ -32,14 +32,14 @@ IAM includes the following components:
 - **Resource**: A resource is an object created in OCI, such as Compute
   instances, blocks, virtual cloud networks (VCNs), and subnets.
 
-- **User**: Assign users to a group that provides limited privileges and access
+- **User**: A user is assigned to a group that provides limited privileges and access
   to OCI resources according to the tenancy and compartment policies for the
   group.
 
 - **Group**: A group is a collection of users that have access to the same OCI
   resources. A user can be a member of one or more groups.
 
-- **Dynamic group**: Dynamic groups provide security and enable you to manage
+- **Dynamic group**: A dynamic group provides security and enables you to manage
   keys on the client-side rather than the server-side.  A dynamic group can link
   specific instances in the compartment. You can assign a policy to a dynamic
   group to provide access to a specific instance to access through an application
@@ -56,7 +56,7 @@ IAM includes the following components:
   compartments, users, and groups.  The administrators can then assign policies
   that allow groups to use resources within a compartment.
 
-- **Policy**:  Policies define who can access resources at group and compartment
+- **Policy**:  A policy defines who can access resources at group and compartment
   levels with the following access levels:
 
     - Inspect
@@ -72,7 +72,7 @@ IAM includes the following components:
   regions. Oracle propagates changes made in the home region to all the regions.
 
 - **Federation**: Federation is a mechanism between two or more parties acting
-  as an Identity Provider and Service Provider. It manages users and groups in
+  as an identity provider and service provider. It manages users and groups in
   the identity provider. IDCS provides federation for OCI by default.
 
 ### IAM resources
@@ -91,7 +91,7 @@ An OCI resource uses a unique name (OCID) with the following syntax:
 
     ocid1.<resource-type>.<realm>.[region][.future-use].<unique-ID>
 
-The placeholders of the OCID include the following elements:
+The OCID placeholders include the following elements:
 
 - **ocid1**: OCID version.
 
@@ -135,21 +135,21 @@ To request a service limit increase, perform the following steps:
     <li>Click <b>Submit Request</b>.</li>
 </ol>
 
-### Federate with Identity Providers
+### Federate with identity providers
 
-OCI supports federation for the following components and Identity Providers:
+OCI supports federation for the following components and identity providers:
 
 -  IDCS
 
--  Microsoft Active Directory
+-  Microsoft&reg; Active Directory&reg;
 
--  Microsoft Azure Active Directory
+-  Microsoft Azure&reg; Active Directory
 
--  Okta
+-  Okta&reg;
 
--  Identity Providers that support Security Assertion Markup Language (SAML) 2.0 protocol
+-  Identity providers that support Security Assertion Markup Language (SAML) 2.0 protocol
 
-In the examples in this blog post, I use IDCS as the Identity Provider.
+In the examples in this blog post, I use IDCS as the identity provider.
 
 #### Steps to federate with IDCS
 
@@ -214,7 +214,7 @@ Perform the following steps to federate with IDCS:
         map IDCS groups to zero, one, or multiple IAM groups, and vice versa.</li>
 </ol>
 
-The Federation page now shows the identity provider in the tenancy list. Oracle
+The **Federation** page now shows the identity provider in the tenancy list. Oracle
 assigns the OCID to each group mapping.
 
 ##### Step 3: Set up the IAM policies for the groups
@@ -230,14 +230,14 @@ The URL should be similar to the following example:
 
     https://console.us-cshburn-1.oraclecloud.com
 
-### Manage Identity Providers in the console
+### Manage identity providers in the console
 
-This section provides the steps to delete an Identify provider and to add,
+This section provides the steps to delete an identify provider and to add,
 update, or delete group mappings for IDCS.
 
-#### Delete an Identity Provider
+#### Delete an identity provider
 
-To delete an Identity Provider, perform the following steps:
+To delete an identity provider, perform the following steps:
 
 <ol>
     <li>Delete the Identity Provider from the tenancy.
@@ -290,7 +290,7 @@ To add group mappings for IDCS, perform the following steps:
              map the new OCI group to the IDP group.</li>
         </ol>
     </li>
-    <li>Repeat Step 4 for each mapping and click <b>Submit</b> after you have
+    <li>Repeat step 4 for each mapping and click <b>Submit</b> after you have
       added all the mappings.</li>
 </ol>
 
