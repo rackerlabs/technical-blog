@@ -124,13 +124,13 @@ To request a service limit increase, perform the following steps:
 1. Open the **Help** menu, go to **Support**, and click
    **Request service limit increase**.
 
-<ol start=3>
+<ol start=2>
     <li>Enter the following details:
         <ul padding-bottom: 0;">
            <li style="margin-left:2em">Primary contact details</li>
            <li style="margin-left:2em">Service category</li>
            <li style="margin-left:2em">Resource</li>
-           <li style="margin-left:2em; padding-bottom: 0;>Reason for the request</li>
+           <li style="margin-left:2em; padding-bottom: 0;">Reason for the request</li>
     </li>
     <li>Click <b>Submit Request</b>.</li>
 </ol>
