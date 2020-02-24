@@ -29,34 +29,34 @@ a group of users and how you can federate OCI with Oracle Identity Cloud Service
 
 IAM includes the following components:
 
-- **RESOURCE**: A resource is an object created in OCI, such as Compute
+- **Resource**: A resource is an object created in OCI, such as Compute
   instances, blocks, virtual cloud networks (VCNs), and subnets.
 
-- **USER**: Assign users to a group that provides limited privileges and access
+- **User**: Assign users to a group that provides limited privileges and access
   to OCI resources according to the tenancy and compartment policies for the
   group.
 
-- **GROUP**: A group is a collection of users that have access to the same OCI
+- **Group**: A group is a collection of users that have access to the same OCI
   resources. A user can be a member of one or more groups.
 
-- **DYNAMIC GROUP**: Dynamic groups provide security and enable you to manage
+- **Dynamic group**: Dynamic groups provide security and enable you to manage
   keys on the client-side rather than the server-side.  A dynamic group can link
   specific instances in the compartment. You can assign a policy to a dynamic
   group to provide access to a specific instance to access through an application
   programmer interface (API).
 
-- **COMPARTMENT**: A compartment is a global logical container where you can
+- **Compartment**: A compartment is a global logical container where you can
   enforce the policies and provide control access to Compute, Storage, Network,
   Load Balancer, and other resources. For example, you can use a policy to
   restrict users, other than administrators, from using the resources created
   in that compartment.
 
-- **TENANCY**: A tenancy is the default root compartment and contains all OCI
+- **Tenancy**: A tenancy is the default root compartment and contains all OCI
   resources. Within the tenancy, administrators can create one or more
   compartments, users, and groups.  The administrators can then assign policies
   that allow groups to use resources within a compartment.
 
-- **POLICY**:  Policies define who can access resources at group and compartment
+- **Policy**:  Policies define who can access resources at group and compartment
   levels with the following access levels:
 
     - Inspect
@@ -67,11 +67,11 @@ IAM includes the following components:
 
     - Manage
 
-- **REGION**: A region is a geographical location in which IAM resources reside.
+- **Region**: A region is a geographical location in which IAM resources reside.
   IAM service resources are global and can have a single tenancy across multiple
   regions. Oracle propagates changes made in the home region to all the regions.
 
-- **FEDERATION**: Federation is a mechanism between two or more parties acting
+- **Federation**: Federation is a mechanism between two or more parties acting
   as an Identity Provider and Service Provider. It manages users and groups in
   the identity provider. IDCS provides federation for OCI by default.
 
@@ -89,13 +89,13 @@ regions and availability domain components.
 
 An OCI resource uses a unique name (OCID) with the following syntax:
 
-    ocid1.<RESOURCE TYPE>.<REALM>.[REGION][.FUTURE USE].<UNIQUE ID>
+    ocid1.<resource-type>.<realm>.[region][.future-use].<unique-ID>
 
 The placeholders of the OCID include the following elements:
 
 - **ocid1**: OCID version.
 
-- **Resource type**: The type of resources, such as instance, volume, VCN, subnet, user, or group.
+- **resource-type**: The type of resources, such as instance, volume, VCN, subnet, user, or group.
 
 - **realm**: The realm contains a set of regions and shares entities with
   availability domains. A realm can have the following values:
@@ -106,12 +106,12 @@ The placeholders of the OCID include the following elements:
 
 #### Resource limits
 
-An IAM limit is the quota on IAM resources that controls the maximum number of
+An IAM limit is the IAM resources quota that controls the maximum number of
 Compute instances in the availability domain.
 
 To view the tenancy's limits and usage by region, perform the following steps:
 
-1. Open the Console.
+1. Open the IAM console.
 2. Open the **User** menu and click **Tenancy**.
 3. Click **Service Limits**.
 
@@ -151,11 +151,14 @@ OCI supports federation for the following components and Identity Providers:
 
 In the examples in this blog post, I use IDCS as the Identity Provider.
 
-#### Perform the following steps to federate with IDCS:
+#### Steps to federate with IDCS
+
+</br>
+
+Perform the following steps to federate with IDCS:
 
 ##### Step 1: Get the required information from IDCS
 
-</br>
 
 1. Log in to the OCI IDCS console with admin privileges.
 
@@ -173,7 +176,6 @@ In the examples in this blog post, I use IDCS as the Identity Provider.
 
 ##### Step 2: Add the identity provider in OCI
 
-</br>
 
 1. Sign in to the console with your OCI login credentials.
 
@@ -192,7 +194,7 @@ In the examples in this blog post, I use IDCS as the Identity Provider.
            <li style="margin-left:2em"><b>IDCS Base URL</b>: The resource URL.</li>
            <li style="margin-left:2em"><b>Client ID</b>: The client identifier
              that you collected previously.</li>
-           <li style="margin-left:2em; padding-bottom: 0;"><b>Client secret:
+           <li style="margin-left:2em; padding-bottom: 0;"><b>Client secret</b>:
              The client secret that you previously collected.</li>
         </ol>
     </li>
@@ -217,13 +219,11 @@ assigns the OCID to each group mapping.
 
 ##### Step 3: Set up the IAM policies for the groups
 
-</br>
 
 Follow your standard procedure to set up the IAM policies for the groups.
 
 ##### Step 4: Give the federated users the tenant and URL
 
-</br>
 
 Provide the federated users with the name of the tenant and the sign-in URL.
 The URL should be similar to the following example:
@@ -260,8 +260,8 @@ To delete an Identity Provider, perform the following steps:
            <li style="margin-left:2em">Find the tenancy and click on its name
              to view the details page.</li>
            <li style="margin-left:2em">Click <b>Deactivate</b> and confirm.</li>
-           <li style="margin-left:2em; padding-bottom: 0;">Click **Remove** and
-             confirm.</li>
+           <li style="margin-left:2em; padding-bottom: 0;">Click <b>Remove</b>
+             and confirm.</li>
         </ol>
      </li>
 </ol>
