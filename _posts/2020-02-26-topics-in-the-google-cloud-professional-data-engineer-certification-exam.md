@@ -6,46 +6,46 @@ comments: true
 author: Sabeehah Ahmed
 published: true
 authorIsRacker: true
-bio: "Sabeehah Ahmed is a Solutions Architect specialising in Google Cloud. She
-creates detailed design solutions to meet customers requirements. Sabeehah
-studied Biomedical Engineering at university where she learned about medical
-devices. And she loves desserts especially anything with chocolate."
+bio: "Sabeehah Ahmed is a Solutions Architect specializing in Google Cloud. She
+creates detailed design solutions to meet customer requirements. Sabeehah
+studied Biomedical Engineering at university, where she learned about medical
+devices. And she loves desserts, especially anything with chocolate."
 categories:
     - Oracle
     - Database
 metaTitle: "Topics in the Google Cloud Professional Data Engineer certification exam"
-metaDescription: "In this post, I'm sharing all the main resources that I used to study for this exam and topics covered in the exam."
+metaDescription: "In this post, I'm sharing all the primary resources that I used to study for this exam and topics covered in the exam."
 ogTitle: "Topics in the Google Cloud Professional Data Engineer certification exam"
-ogDescription: "In this post, I'm sharing all the main resources that I used to study for this exam and topics covered in the exam."
+ogDescription: "In this post, I'm sharing all the primary resources that I used to study for this exam and topics covered in the exam."
 ---
 
 For a few years now, I've had an interest in the concepts of *machine learning (ML)*
 and wanted to know more. When I came across the Google&reg; Cloud Professional
-Data Engineer certification exam, I was so intrigued about how these ML concepts
+Data Engineer certification exam, I was intrigued about how ML concepts
 intertwine with cloud concepts, especially in the Google Cloud Platform (GCP).
 
 <!-- more -->
 
 As a Biomedical Engineering student at university, I know that the concepts of
-ML strongly relate to how the human brain works, so it's interesting to see how
-neural connections of the brain can be used in computing. With no background in
-cloud other than a year of experience in the cloud-computing field, I achieved
+ML strongly relate to how the human brain works. It's interesting to see how
+computing can use the neural connections of the brain. With no background in
+cloud other than a year of experience in the cloud computing field, I achieved
 three Google Cloud certifications&mdash;an accomplishment that makes me really
 proud.
 
-In this post, I'm sharing the main resources that I used to study for this
+In this post, I'm sharing the primary resources that I used to study for this
 exam and topics covered in the exam.
 
 ### Study sources
 
 Here are the places I went to prepare for taking the exam.
 
-#### Data Engineering on GCP Course at Fast Lane
+#### Data Engineering on GCP course at Fast Lane
 
 While studying for this certification, I first attended a four-day Google course,
-which I highly recommend if are interested in Big Data and ML within Google.
+which I highly recommend if you are interested in Big Data and ML within Google.
 In this course, I learned about the tools that GCP provides when ingesting,
-preparing, and analysing Big Data. Some of the key topics were:
+preparing, and analyzing Big Data. Some of the key topics were:
 
 - Challenges faced with Data Engineering
 - Deep dive into:
@@ -54,37 +54,37 @@ preparing, and analysing Big Data. Some of the key topics were:
     -	Dataflow
     -	Dataproc
     -	ML services including Kubeflow
-- Demos/labs of using each service
+- Demos and labs of using each service
 
 Although this course does not relate directly to the Professional Data Engineer
 certification exam, I found it quite beneficial and learned quite a lot. You can
 find the course at
 [Fast Lane Data Engineering on Google Cloud Platform](https://www.fastlaneus.com/course/google-degcp).
-If you are interested, there are also other courses outside of the data
+There are also other courses outside of the data
 engineering track at
 [Fast Lane Google Cloud Training](https://www.fastlaneus.com/google-cloud-training).
 
 #### Linux Academy
 
-I used the Linux Academy as my main source of study material. I went through the
+I used the Linux Academy as my primary source of study material. I went through the
 whole data engineering course and found it very useful. They updated their
-course quite recently, so it was very precise and provided many helpful tips
-and content that came up in the exam. Because the practice tests were similar
+course quite recently, so it is very precise and provides many helpful tips
+and content that comes up in the exam. Because the practice tests are similar
 to the certification exam, they prepared me well. As someone with little
-experience in the data world, I feel that this course was perfect in terms of
+experience in the data world, I feel that this course is perfect in terms of
 content and explanation.
 
 I took the
 [Google Cloud Certified Professional Data Engineer](https://linuxacademy.com/course/google-cloud-data-engineer/)
 course.
 
-#### Coursera/Qwiklabs
+#### Coursera and Qwiklabs
 
-Another useful course, slightly longer than Linux Academy, Coursera had more
-example scenarios to help me consider which tools are best for specific customer
-issues. Also, most sections had Qwiklabs that were quite useful. They let me use
-the GCP console to put theory into hands-on practice, which improved my
-understanding.
+Coursera has another useful course, which is slightly longer than Linux Academy
+course. The Coursera course has example scenarios that helped me consider which
+tools are best for specific customer issues. Also, most sections have Qwiklabs
+that are quite useful. They let me use the GCP console to put theory into hands-on
+practice, which improved my understanding.
 
 I focused on the following courses:
 
@@ -102,7 +102,7 @@ sub-topics, and occasionally my thoughts about the material.
    (IAM) roles
 -	Basic understanding of AWS Key Management Sevice (KMS) and keys (google-managed,
    customer-supplied, and customer-managed)
--	Partitioned tables, specifically as used in in SQL commands
+-	Partitioned tables, specifically as used in SQL commands
 -	Wildcards
 -	Federated tables
 -	Integration with Google Cloud Storage (GCS)
@@ -117,7 +117,7 @@ sub-topics, and occasionally my thoughts about the material.
 
 - Integration with IAM roles, especially the developer role
 - Differences between global, fixed, session, and sliding windows and when to
-  use each type.
+  use each type
 - Best practices on handling pipeline errors, especially, try-catch-block errors
 - Different types of transform methods, for example, Apache Beam ParDo
 - Watermarks
@@ -125,8 +125,8 @@ sub-topics, and occasionally my thoughts about the material.
 
 **BigTable**
 
-- Schema design, such as when use tall and narrow tables or short and wide ones
-- Things cause slow performance and how to optimise performance
+- Schema design, such as when to use tall and narrow tables or short and wide ones
+- Things cause slow performance and how to optimize performance
 - When to use hard disk drive (HDD)
 - How to switch between HDD and solid-state drive (SSD)
 
@@ -147,7 +147,7 @@ sub-topics, and occasionally my thoughts about the material.
 
 - Good understanding of the Apache Hadoop ecosystem
 - IAM integration
-- Benefits of pre-emptible nodes
+- Benefits of preemptible nodes
 - Best practices for migrating Hadoop clusters to Dataproc, such as always
   separating data from storage by using GCS
 - Best practices for optimizing performance
@@ -160,46 +160,46 @@ sub-topics, and occasionally my thoughts about the material.
 
 **Machine Learning**
 
-- Differences between training and test data
-- Overfitting and underfitting, such as why they can happen, how to prevent them
+- Differences between training and test data.
+- Overfitting and underfitting, such as why they can happen, how to prevent them.
 - Good understanding of ML types, including supervised learning, unsupervised
   learning, reinforcement learning, although I saw no questions on reinforcement.
-- Not much on Tensorflow, but you should know the basic concepts
+- Not much on Tensorflow, but you should know the basic concepts.
 - Good understanding of how neural networks (NN) work. There were questions on
   wide NN, deep NN, and both wide and deep NN.
-- Regularization paramaters, such as L1 and L2, including a couple of
+- Regularization parameters, such as L1 and L2, including a couple of
   scenario-based questions of when to use each type.
 
-**GCP ML Services**
+**GCP ML services**
 
 - Good understanding of each service, especially Natural Language API, such as
   sentiment and entity analysis
-- A couple of questions on when it would be beneficial for a customer to use
+- A couple of questions on when it is beneficial for a customer to use
   ML services
 - AI platform, including how it works and online versus batch predictions
 
 **Datalab**
 
 - Basic concepts
-- A question came up on how you can share notebooks
+- A question came up about how you can share notebooks
 
 **DataStudio**
 
 - Basic concepts
 - Caching with BQ, including query cache and prefetch cache
-- A question came up on metrics and dimensions, so you should know the difference
+- A question came up about metrics and dimensions, so you should know the difference
 
 **Cloud Composer**
 
 - You should know directed acyclic graph (DAG) files in detail, including the
-  components
+  components.
 
-**Extra Notes**
+**Extra notes**
 
-- Exam had no case studies.
-- Exam didn't have much on Cloud SQL.
-- You should know data pipelines very well.
-- You should know key differences between the data services in GCP.
+- The exam had no case studies.
+- The exam didn't have much on Cloud SQL.
+- You should know the data pipelines very well.
+- You should know the key differences between the data services in GCP.
 - The [Google practice exam](https://cloud.google.com/certification/practice-exam/data-engineer)
   is also quite useful, so consider taking it.
 
