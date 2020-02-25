@@ -6,6 +6,9 @@ comments: true
 author: Dushyant Chauhan
 published: true
 authorIsRacker: true
+authorAvatar: 'https://s.gravatar.com/avatar/1817fa128828e2dbdd87e8e713a0cac0'
+bio: "As a Racker, I am having a good experience as Oracle APPS DBA and exploring
+new technology."
 categories:
     - Oracle
     - Database
