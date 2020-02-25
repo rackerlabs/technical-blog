@@ -56,12 +56,28 @@ authorAvatar: 'https://s.gravatar.com/avatar/621ec460934803c15e9b2c4ff6cbf75f'
 bio: n/a
 
 Carter, Nikki
-authorAvator: 'https://1.gravatar.com/avatar/3177b82ffcbe59f1f3e6e155d3c94e7a'
+authorAvatar: 'https://gravatar.com/avatar/3177b82ffcbe59f1f3e6e155d3c94e7a'
 bio: "Nikki Carter is a Content Strategist on the Digital Marketing Services
 Team at RelationEdge. She has extensive experience creating and editing content
 and marketing assets for a variety of verticals, including healthcare, technology,
 and wellness. Nikki is passionate about freedom, telling the truth, and supporting
 other women/non-binary folks of color."
+
+Chauhan, Dushyant
+authorAvatar: 'https://gravatar.com/avatar/1817fa128828e2dbdd87e8e713a0cac0'
+bio: "As a Racker, I am having a good experience as Oracle APPS DBA and
+exploring new technology."
+
+Croce, Steve
+authorAvatar: 'https://gravatar.com/avatar/56d03e2d0f853cff39c129cab3761d49'
+bio: "As Senior Product Manager for the Rackspace Database-as-a-Service offering
+and Head of User Experience for the ObjectRocket platform, Steve oversees the
+day-to-day planning, development, and optimization of the ObjectRocket supported
+database technologies, clouds, and features. A product manager by day, he still
+likes to embrace his engineer roots by night and develop with Elasticsearch,
+SQL, Kubernetes, and web application stacks. He's spoken at
+KubeCon + CloudNativeCon, OpenStack summit, Percona Live, and various Rackspace
+events."
 
 Croteau, Paul
 authorAvatar: 'https://en.gravatar.com/userimage/1316548/544d0908ada5d93056e89afc7d240c23.png?size=200'
