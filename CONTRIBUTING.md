@@ -1,9 +1,15 @@
 # Contributing to our Blog
 
+Authors who are informed and passionate about technology and IT write technical
+blogs that range from high-level, conceptual overviews to deep dives with
+code snippets. They all offer insight into solving problems and getting the most
+out of applications and platforms. Many also add a personal perspective to the
+conversation. These authors share their journeys, trials, and triumphs.
+
 First, thanks for your interest in contributing and helping us craft quality
-content for our official Developer Blog. Second, in order to make contributing
-a pleasant experience while maintaining a visual and content standard, complete
-these steps before writing and submitting a blog entry for publishing.
+content for our official Technical Blog. Second, in order to make contributing
+a pleasant experience while maintaining a visual and consistent content standard,
+complete these steps before writing and submitting a blog entry for publishing.
 
 #### Preparing for your blog entry
 
@@ -46,34 +52,35 @@ comments: true
 author: Author(s) name(s)
 published: true
 authorIsRacker: true
+#
+# The *authorAvatar* and *bio* entires are optional, but include them if you can!
+# The avatar must be a hosted image, such as a gravatar.
+#
 authorAvatar: 'https://www.gravatar.com/avatar/<insert hash for your headshot>'
 bio: "<insert a sentence or two about yourself in first or third person>"
 categories:
     - This Category
     - That Category
     - Other Category
+#
+# Use canonical entry if you are republishing a blog from another site, such as
+# your personal blog.  Do  NOT republish without the autor's explicit permission.
+#
 canonical: https://original-url.link.com/post-name/
+metaTitle:
+metaDescription:
+ogTitle:
+ogDescription:
 #
 # The following properties are OPTIONAL and affect the text and image that
-# appear by default in link previews when sharing blog posts. To customize
-# any of the items, remove the `" #"` at the start of the line and fill in
-# the desired value.
+# appear by default in link previews when sharing blog posts.
 #
-# metaTitle:
-# metaDescription:
-# ogTitle:
-# ogDescription:
-# ogImage:
-# twitterCreator: "@your_twitter_handle" # NOTE: The quotes are required!
-# twitterDescription:
-# twitterTitle:
+ogImage:
+twitterCreator: "@your_twitter_handle" # NOTE: The quotes are required!
+twitterDescription:
+twitterTitle:
 ---
 ```
-
-The *authorAvatar* and *bio* entires are optional, but include them if you can!
-
-You should use the *canonical* entry if you are republishing a blog that was
-previously published elsewhere.  Link to the original.
 
 **NOTE:** The "ogImage" _must_ be a fully-qualified URL. If you'd like to use an
 image asset that is being uploaded as part of your blog post, the pattern for the
@@ -95,13 +102,9 @@ Example:
 If you'd like to use an image asset from your post that _shouldn't_ appear in
 the post itself, you can include `style="display: none"` on the `<img />` tag
 to hide it within the post while triggering the necessary plugin code to ensure
-it is made available on the CDN based on the above naming convention.
+it is made available on the CDN based on the preceding naming convention.
 
 Make sure that the dates in the file name and front-matter match.
-
-You can optionally add a picture from gravatar using the following metadata line:
-
-```authorAvatar: 'https://gravatar.com/avatar/Whatever-the-Image-ID-is'```
 
 Available categories include the following:
 
