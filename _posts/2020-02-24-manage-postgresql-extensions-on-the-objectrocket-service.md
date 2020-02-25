@@ -6,6 +6,7 @@ comments: true
 author: Steve Croce
 published: true
 authorIsRacker: true
+authorAvatar: 'https://gravatar.com/avatar/56d03e2d0f853cff39c129cab3761d49'
 bio: "As Senior Product Manager for the Rackspace Database-as-a-Service offering
 and Head of User Experience for the ObjectRocket platform, Steve oversees the
 day-to-day planning, development, and optimization of the ObjectRocket supported
