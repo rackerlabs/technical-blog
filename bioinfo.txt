@@ -1,8 +1,8 @@
 Ahmed, Sabeehah
 authorAvatar: ''
-bio: "Sabeehah Ahmed is a Solutions Architect specialising in Google Cloud. She
+bio: "Sabeehah Ahmed is a Solutions Architect specializing in Google Cloud. She
 creates detailed design solutions to meet customer requirements. Sabeehah
-studied Biomedical Engineering at university where she learned about medical
+studied Biomedical Engineering at university, where she learned about medical
 devices. And she loves desserts, especially anything with chocolate."
 
 Anand, Vikrant
