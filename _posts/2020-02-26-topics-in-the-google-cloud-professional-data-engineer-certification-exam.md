@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Topics in the Google Cloud Professional Data Engineer certification exam"
-date: 2020-02-25 00:01
+date: 2020-02-26 00:01
 comments: true
 author: Sabeehah Ahmed
 published: true
@@ -11,8 +11,8 @@ creates detailed design solutions to meet customer requirements. Sabeehah
 studied Biomedical Engineering at university, where she learned about medical
 devices. And she loves desserts, especially anything with chocolate."
 categories:
-    - Oracle
-    - Database
+    - General
+    - Developers
 metaTitle: "Topics in the Google Cloud Professional Data Engineer certification exam"
 metaDescription: "In this post, I'm sharing all the primary resources that I used to study for this exam and topics covered in the exam."
 ogTitle: "Topics in the Google Cloud Professional Data Engineer certification exam"
