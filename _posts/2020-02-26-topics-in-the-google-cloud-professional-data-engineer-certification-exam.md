@@ -66,7 +66,7 @@ There are also other courses outside of the data engineering track at
 
 #### Linux Academy
 
-I used the Linux Academy as my primary source of study material. I went through the
+I used Linux Academy as my primary source of study material. I went through the
 whole data engineering course and found it very useful. They updated their
 course quite recently, so it is very precise and provides many helpful tips
 and content that comes up in the exam. Because the practice tests are similar
@@ -80,7 +80,7 @@ course.
 
 #### Coursera and Qwiklabs
 
-Coursera has another useful course, which is slightly longer than Linux Academy
+Coursera has another useful course, which is slightly longer than the Linux Academy
 course. The Coursera course has example scenarios that helped me consider which
 tools are best for specific customer issues. Also, most sections have Qwiklabs
 that are quite useful. They let me use the GCP console to put theory into hands-on
@@ -98,9 +98,8 @@ sub-topics, and occasionally my thoughts about the material.
 
 **BigQuery (A major focus in the exam)**
 
--	Integration with Amazon&reg; Web Services (AWS) Identity and Access Management
-   (IAM) roles
--	Basic understanding of AWS Key Management Sevice (KMS) and keys (google-managed,
+-	Integration with Google Identity and Access Management (IAM) roles
+-	Basic understanding of the GCP Key Management Sevice (KMS) and keys (google-managed,
    customer-supplied, and customer-managed)
 -	Partitioned tables, specifically as used in SQL commands
 -	Wildcards
@@ -126,7 +125,7 @@ sub-topics, and occasionally my thoughts about the material.
 **BigTable**
 
 - Schema design, such as when to use tall and narrow tables or short and wide ones
-- Things cause slow performance and how to optimize performance
+- Schema that might cause slow performance and how to optimize performance
 - When to use hard disk drive (HDD)
 - How to switch between HDD and solid-state drive (SSD)
 
