@@ -6,6 +6,7 @@ comments: true
 author: Sabeehah Ahmed
 published: true
 authorIsRacker: true
+authorAvatar: 'https://s.gravatar.com/avatar/e0a659be1385d03db4ca9eed09b1826d'
 bio: "Sabeehah Ahmed is a Solutions Architect specializing in Google Cloud. She
 creates detailed design solutions to meet customer requirements. Sabeehah
 studied Biomedical Engineering at university, where she learned about medical
