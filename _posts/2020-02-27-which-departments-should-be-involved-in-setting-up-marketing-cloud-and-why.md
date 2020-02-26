@@ -28,21 +28,21 @@ in your Marketing Cloud implementation to be successful."
 
 
 <!--more-->
-It's easy to get wrapped up in the details and forget about the bigger picture when you’re implementing a new technology.
+It's easy to get wrapped up in the details and overlook the bigger picture when you’re implementing a new technology.
 Especially when you're implementing a wide-reaching marketing automation platform like Salesforce
 Marketing Cloud.
 
 When you’re ready to implement Marketing Cloud, you need to identify which departments to involve in the
 transition. You should also ensure that you have well-developed processes in place to get the most of
 your new marketing automation platform. This blog explains which departments you should involve
-in your Marketing Cloud implementation to be successful.
+to make your Marketing Cloud implementation successful.
 
 ### Marketing and sales
 
 While your sales and marketing departments might operate independently and seem like two disparate operations,
-they work towards a shared goal. Their processes have similarities that make marketing automation technology
+they work towards a shared goal. They have similar processes that make marketing automation technology
 useful to both teams. Involving these departments in the implementation process makes sense
-because the platform impacts both teams.
+because the platform directly affects them.
 
 There is growing evidence that automation is effective at generating and nurturing leads for both marketing and
 sales departments. Automation increases the conversion rate of marketing response to qualified
