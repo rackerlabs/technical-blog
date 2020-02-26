@@ -60,8 +60,7 @@ Although this course does not relate directly to the Professional Data Engineer
 certification exam, I found it quite beneficial and learned quite a lot. You can
 find the course at
 [Fast Lane Data Engineering on Google Cloud Platform](https://www.fastlaneus.com/course/google-degcp).
-There are also other courses outside of the data
-engineering track at
+There are also other courses outside of the data engineering track at
 [Fast Lane Google Cloud Training](https://www.fastlaneus.com/google-cloud-training).
 
 #### Linux Academy
@@ -109,7 +108,7 @@ sub-topics, and occasionally my thoughts about the material.
 -	BigQuery (BQ) data transfer service and connectors
 -	When to use normalized and denormalized data
 -	Loading different data formats into BQ, including a good understanding
-   of the Apache Avro&trade;, CSV, Apache Parquet, and JSON formats.
+   of the Apache Avro&trade;, CSV, Apache Parquet, and JSON formats
 -	Pricing with slots
 -	Cached queries
 
