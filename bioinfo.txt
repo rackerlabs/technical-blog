@@ -1,3 +1,10 @@
+Ahmed, Sabeehah
+authorAvatar: 'https://s.gravatar.com/avatar/e0a659be1385d03db4ca9eed09b1826d'
+bio: "Sabeehah Ahmed is a Solutions Architect specializing in Google Cloud. She
+creates detailed design solutions to meet customer requirements. Sabeehah
+studied Biomedical Engineering at university, where she learned about medical
+devices. And she loves desserts, especially anything with chocolate."
+
 Anand, Vikrant
 authorAvatar: 'https://s.gravatar.com/avatar/98991c72835ea03135094fb2a1b6e3c0'
 bio: "Vikrant is a database consultant with extensive work in database technical
