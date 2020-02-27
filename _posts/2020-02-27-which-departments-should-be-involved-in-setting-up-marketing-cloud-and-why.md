@@ -24,12 +24,13 @@ ogDescription: "This blog explains which departments you should involve
 in your Marketing Cloud implementation to be successful."
 ---
 
-![]({% asset_path 2020-02-27-which-departments-should-be-involved-in-setting-up-marketing-cloud-and-why/picture1.png %})
-
-<!--more-->
 It's easy to get wrapped up in the details and overlook the bigger picture when you’re implementing a new technology.
 Especially when you're implementing a wide-reaching marketing automation platform like Salesforce
 Marketing Cloud.
+
+<!-- more -->
+
+![]({% asset_path 2020-02-27-which-departments-should-be-involved-in-setting-up-marketing-cloud-and-why/picture1.png %})
 
 When you’re ready to implement Marketing Cloud, you need to identify which departments to involve in the
 transition. You should also ensure that you have [well-developed processes in place](https://blog.rackspace.com/4-key-processes-need-capitalize-marketing-automation)
