@@ -35,7 +35,7 @@ application management and transformation initiatives. We designed Service Block
 to give you the flexibility to engage with the necessary service and expertise,
 without forcing commitments to more than you need. This new model of delivering
 services is exceptionally compatible with our platform, so we’re proud to launch
-ObjectRocket® Database-as-a-Service Service Block. Whatever data journey your
+the ObjectRocket® Database-as-a-Service Service Block. Whatever data journey your
 company is on, Service Blocks provide both the foundational services that we
 recommend to build and maintain a robust data environment and the services to
 then transform and modernize your data.
@@ -50,10 +50,10 @@ capabilities and growing your business.
 
 Rackspace provides fully managed, automated, and highly available products and
 services, including MongoDB®, Elasticsearch®, PostgreSQL, Redis®, and CockroachDB,
-which our expert DBAs and customer data engineers support. The ObjectRocket
-platform provides instant access to production-ready instances with the latest
-database technologies, elastic resources to shrink and grow capacity, and
-performance based on your application’s needs&mdash;all on a secure platform
+which our expert DBAs and customer data engineers support. ObjectRocket provides
+instant access to production-ready instances with the latest database
+technologies, elastic resources to shrink and grow capacity, and performance
+based on your application’s needs&mdash;all on a secure platform that is
 monitored and maintained by a team of database experts.
 
 With this service, Rackspace ensures that the database is reliable, scalable,
@@ -119,7 +119,7 @@ customers can focus on driving innovation with the following critical features:
 
 ### ObjectRocket DBaaS Service Block benefits
 
-As a key benefit, the ObjectRocket BaaS Service Block gives your team their time
+As a key benefit, the ObjectRocket DBaaS Service Block gives your team their time
 back by removing the burden of planning, provisioning, administering, and
 supporting databases. However, DBaaS provides so many more benefits, including:
 
@@ -136,10 +136,10 @@ supporting databases. However, DBaaS provides so many more benefits, including:
   available whenever you (or your database) need them. Your team can focus
   exclusively on the business, while Rackspace helps ensure that your data is
   always available.
-- **Lower TCO and increased business agility**: Gain economies of scale that
-  yield operational savings compared to DIY. The portfolio of datastores,
-  combined with a depth of expertise at Rackspace, enables you to consume the
-  best-fit technology without massive investment.
+- **Lower total cost of ownership (TCO) and increased business agility**: Gain
+  economies of scale that yield operational savings compared to DIY. The
+  portfolio of datastores, combined with a depth of expertise at Rackspace,
+  enables you to consume the best-fit technology without massive investment.
 
 ### Get started in minutes
 
@@ -160,7 +160,7 @@ To get started, sign up at app.objectrocket.cloud, where you can find pricing in
 the platform as you configure your instance. To learn more about the ObjectRocket
 platform and our management and support services, visit [www.objectrocket.com](www.objectrocket.com).
 
-<a class="cta teal" id="cta" href="https://www.rackspace.com/data/dba-services">Learn more about Rackspace DBA Services</a>
+<a class="cta blue" id="cta" href="https://www.rackspace.com/data/dba-services">Learn more about Rackspace DBA Services</a>
 
 Visit [www.rackspace.com](https://www.rackspace.com) and click **Sales Chat**
 to get started.
