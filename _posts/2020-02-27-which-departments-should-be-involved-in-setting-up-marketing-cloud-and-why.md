@@ -24,8 +24,7 @@ ogDescription: "This blog explains which departments you should involve
 in your Marketing Cloud implementation to be successful."
 ---
 
-
-
+![]({% asset_path 2020-02-27-which-departments-should-be-involved-in-setting-up-marketing-cloud-and-why/picture1.png %})
 
 <!--more-->
 It's easy to get wrapped up in the details and overlook the bigger picture when you’re implementing a new technology.
@@ -33,19 +32,19 @@ Especially when you're implementing a wide-reaching marketing automation platfor
 Marketing Cloud.
 
 When you’re ready to implement Marketing Cloud, you need to identify which departments to involve in the
-transition. You should also ensure that you have well-developed processes in place to get the most of
-your new marketing automation platform. This blog explains which departments you should involve
-to make your Marketing Cloud implementation successful.
+transition. You should also ensure that you have [well-developed processes in place](https://blog.rackspace.com/4-key-processes-need-capitalize-marketing-automation)
+to get the most of your new marketing automation platform. This blog explains which departments you should involve
+for a successful Marketing Cloud implementation.
 
 ### Marketing and sales
 
 While your sales and marketing departments might operate independently and seem like two disparate operations,
-they work towards a shared goal. They have similar processes that make marketing automation technology
+they work towards a shared goal. They have [similar processes](https://blog.rackspace.com/marketing-automation-bridge-marketing-sales) that make marketing automation technology
 useful to both teams. Involving these departments in the implementation process makes sense
 because the platform directly affects them.
 
-There is growing evidence that automation is effective at generating and nurturing leads for both marketing and
-sales departments. Automation increases the conversion rate of marketing response to qualified
+There is growing [evidence that automation is effective](https://www.salesforce.com/blog/2013/08/marketing-automation-sales-or-marketing-tool.html)
+at generating and nurturing leads for both marketing and sales departments. Automation increases the conversion rate of marketing response to qualified
 marketing lead by 53%, and leads to a 9.3 percent higher sales quota achievement rate.
 Marketing Cloud can also help each department with their daily workflows&mdash;from managing daily tasks and networking,
 to creating and maintaining clear and effective reports. Involving both departments in setting up Marketing Cloud lets them
@@ -64,14 +63,15 @@ after buying your product or service. By working together during implementation,
 you can use automation to preemptively email clients with answers to those questions.
 
 Your service team can also give you client feedback about the emails they’re receiving from your company. You can then use Marketing Cloud to
-adjust your email strategy. This kind of information is valuable for implementing this technology exactly as your
+adjust your email strategy. This kind of information is valuable for implementing this technology to fit the way
 company intends to use it.
 
-The service team is also a great asset for testing the capabilities of your Marketing Cloud solution from a client's perspective. Set up a
-process for regularly checking in with these team members as you move through the implementation phase. Ask them to review and test aspects
-of your Marketing Cloud and you plan to use it.
+The service team is also a great asset for testing the [capabilities of your Marketing Cloud](https://blog.rackspace.com/similarities-differences-salesforce-marketing-cloud-pardot)
+solution from a client's perspective. Set up a process for regularly checking in with these team members as you move through the implementation phase. Request that they review and test aspects
+of your Marketing Cloud setup.
 
-## Information Technology
+### Information Technology
+
 Depending on the amount of data you want to bring into Marketing Cloud, the Information Technology department (IT) is often involved in implementation.
 The IT department helps ensure:
 
@@ -79,10 +79,11 @@ The IT department helps ensure:
 - password policies are consistent with your company’s policy.
 - your internal IP is whitelisted (preventing the continuous need for verification codes).
 
-A strong partnership with your IT organization helps ensure you have the right data to leverage for triggered sends, personalization, and segmentation.
+A strong partnership with your IT organization helps ensure you can leverage data for triggered sends, personalization, and segmentation.
 It's important to not overlook how access to the right data can help you send hyper-personalized emails and work towards your goals.
 
 ### Leadership
+
 Your leadership team plays a critical role in setting up any new technology like Marketing Cloud.
 Gaps in leadership support impacts effective communication and limits the success of your implementation.
 
@@ -90,16 +91,18 @@ Start by identifying one or two leaders within the company who can spearhead the
 communicating the implementation plan to all employees, providing updates throughout the setup process, and ensuring that everyone understands
 the benefits of Marketing Cloud.
 
-Engaging leadership during set-up keeps your company on track with its mandate and branding. Your leadership team can
+Engaging leadership during set-up keeps your company aligned with its mandate and branding. Your leadership team can
 see the bigger picture and help the different departments work together to successfully implement Marketing Cloud in way that can
 drive transformative value for your business. Input from your leadership team helps to cement the efforts of your sales, marketing, and service teams.
 
 ### Using the right partner
-Rackspace knows that implementing a new technology like Marketing Cloud can be a big change for your business. We help you to
-include the right departments in your implementation process, and set realistic goals and timelines. Combining a tailored communication framework with our PACED
-methodology has allowed us to implement over 2,000 technology projects with exceptional results.
+
+Rackspace knows that implementing a new technology like Marketing Cloud can be a big change for your business. Rackspace helps you to
+include the right departments in your implementation process, and set realistic goals and timelines. Combining a tailored communication framework with Rackspace's PACED
+methodology has allowed the implementation over 2,000 technology projects with exceptional results.
 
 Marketing Cloud has the capabilities to boost your lead-to-loyalty cycle. By focusing on your business processes first and then leveraging the right technology,
-Rackspace ensures that you maximize your return on investment. Visit the Rackspace services page to see how we can drive transformative value for your business.
+Rackspace ensures that you maximize your return on investment. [Visit the Rackspace services page](https://www.rackspace.com/salesforce)
+to see how we can drive transformative value for your business.
 
 
