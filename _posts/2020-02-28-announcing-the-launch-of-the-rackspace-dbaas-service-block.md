@@ -19,13 +19,13 @@ categories:
     - General
     - Developers
 metaTitle: "Announcing the launch of the ObjectRocket DBaaS Service Block"
-metaDescription: "Rackspace is launching production-tested datastores in a simple-to-use and dependable cloud Database-as-a-Service (DBaaS) platform."
+metaDescription: "Rackspace is launching production-tested datastores in ObjectRocket, a simple-to-use and dependable cloud Database-as-a-Service (DBaaS) platform."
 ogTitle: "Announcing the launch of the ObjectRocket DBaaS Service Block"
-ogDescription: "Rackspace is launching production-tested datastores in a simple-to-use and dependable cloud Database-as-a-Service (DBaaS) platform."
+ogDescription: "Rackspace is launching production-tested datastores in ObjectRocket, a simple-to-use and dependable cloud Database-as-a-Service (DBaaS) platform."
 ---
 
-Rackspace is launching production-tested datastores in a simple-to-use and
-dependable cloud Database-as-a-Service (DBaaS) platform.
+Rackspace is launching production-tested datastores in ObjectRocket, a
+simple-to-use and dependable cloud Database-as-a-Service (DBaaS) platform.
 
 <!-- more -->
 
@@ -48,17 +48,17 @@ Instead of spending time monitoring database performance, scaling resources, and
 troubleshooting issues, you can turn your team’s attention toward building new
 capabilities and growing your business.
 
-Rackspace provides fully managed, automated, and highly available products and
+ObjectRocket provides fully managed, automated, and highly available products and
 services, including MongoDB®, Elasticsearch®, PostgreSQL, Redis®, and CockroachDB,
-which our expert DBAs and customer data engineers support. ObjectRocket provides
+which our expert DBAs and customer data engineers support. Customers get
 instant access to production-ready instances with the latest database
 technologies, elastic resources to shrink and grow capacity, and performance
 based on your application’s needs&mdash;all on a secure platform that is
 monitored and maintained by a team of database experts.
 
-With this service, Rackspace ensures that the database is reliable, scalable,
+With this service, ObjectRocket ensures that the database is reliable, scalable,
 and fast by helping customers with the entire project&mdash;from critical early
-decisions like data replication and modeling to security assessments and
+decisions such as data replication and modeling to security assessments and
 architecture guidance to round-the-clock monitoring and support.
 
 ### Focused on solutions
@@ -66,19 +66,19 @@ architecture guidance to round-the-clock monitoring and support.
 The ObjectRocket DBaaS Service Block solves the following significant challenges
 faced by enterprise companies today:
 
-- **Planning**: Rackspace continually analyzes the market to select the best
-  database technologies for each use case, taking the guesswork out of picking
-  a new database technology. Rackspace experts guide you to the right technology
-  for your needs.
-- **Provisioning and configuration**: Rackspace bases the database configurations
-  on industry best practices to keep your data secure and address your performance,
+- **Planning**: We continually analyze the market to select the best database
+  technologies for each use case, taking the guesswork out of picking a new
+  database technology. Our experts guide you to the right technology for your
+  needs.
+- **Provisioning and configuration**: We base the database configurations on
+  industry best practices to keep your data secure and address your performance,
   availability, scalability, and financial requirements.
-- **Monitoring and maintenance**: Rackspace handles all database monitoring and
-  maintenance so that you can focus on your business. This service includes
+- **Monitoring and maintenance**: Our experts handles all database monitoring
+  and maintenance so that you can focus on your business. This service includes
   24x7x365 monitoring, upgrades, migrations, and planning for special events.
-- **Future-proofing and migration**: Rackspace tells you about new and upcoming
+- **Future-proofing and migration**: Our team informs you about new and upcoming
   technologies. When the time comes to add a new feature or technology to your
-  data stack, Rackspace helps you to plan and migrate to that new technology.
+  data stack, our experts help you to plan and migrate to that new technology.
 
 ### Key features and benefits
 
@@ -91,27 +91,26 @@ source technologies in public clouds to protect customers from vendor lock-in.
 
 ### ObjectRocket DBaaS Service Block features
 
-Rackspace removes the administrative complexity of database management so that
+ObjectRocket removes the administrative complexity of database management so that
 customers can focus on driving innovation with the following critical features:
 
-- **Industry-leading data technologies**: Rackspace experts regularly analyze
-  the data industry to identify the most popular data stores by use case
-  including structured, distributed, document store, search and logging, value
-  type and caching, and time series.
-- **Available at scale**: ObjectRocket designed its platform, a key component
-  of the DBaaS service, to elastically scale up and down based on your needs,
-  offers built-in failover, and backs it with an industry-leading 99.95%
-  platform-uptime guarantee.
+- **Industry-leading data technologies**: Our experts regularly research the
+  data industry to identify the most popular data stores by use case including
+  structured, distributed, document store, search and logging, value type and
+  caching, and time series.
+- **Available at scale**: We designed ObjectRocket to elastically scale up and
+  down based on your needs, offer built-in failover, and back the service with
+  an industry-leading 99.95% platform-uptime guarantee.
 - **Fully managed backups**: All instances on ObjectRocket come with managed
   daily backups and two-week retention to help ensure that you never lose data.
-- **Lightning fast, highly performant**: Rackspace optimizes infrastructure for
-  database environments with high performance, low-latency networking, and SSD
-  storage.
+- **Lightning fast, highly performant**: ObjectRocket optimizes infrastructure
+  for database environments with high performance, low-latency networking, and
+  SSD storage.
 - **Security best practices**: All products on ObjectRocket follow security best
   practices and include SSL/TLS, IP address whitelisting user authentication,
   and at-rest encryption. The ObjectRocket management interface supports
   role-based access control and multi-factor authentication.
-- **Always-on support**: Rackspace monitors databases around the clock to help
+- **Always-on support**: Our experts monitor databases around the clock to help
   ensure that the database is active and performing correctly. Our database
   engineers take action whenever possible to avoid potential issues, quickly
   react when problems do arise, and provide regular feedback when changes are
@@ -126,19 +125,19 @@ supporting databases. However, DBaaS provides so many more benefits, including:
 - **Production-ready databases in minutes**: Go from signup to a fully functional
   database in minutes. An intuitive interface and efficient API make it easy to
   deploy production-ready database stacks quickly.
-- **Smart scalability**: Scale smoothly, rapidly, and safely as the Rackspace
-  team of database engineers and administrators applies deep database
-  understanding to anticipate your future data needs.
+- **Smart scalability**: Scale smoothly, rapidly, and safely as the our team of
+  database engineers and administrators applies deep database understanding to
+  anticipate your future data needs.
 - **Performant platform with global reach**: Experience lightning-fast speed
   with a widely distributed architecture, cloud options, and global data center
   connectivity that gets your data as close to the application as possible.
 - **Reliability and expertise**: Take advantage of database experts who are
   available whenever you (or your database) need them. Your team can focus
-  exclusively on the business, while Rackspace helps ensure that your data is
+  exclusively on the business, while ObjectRocket ensures that your data is
   always available.
 - **Lower total cost of ownership (TCO) and increased business agility**: Gain
   economies of scale that yield operational savings compared to DIY. The
-  portfolio of datastores, combined with a depth of expertise at Rackspace,
+  portfolio of datastores, combined with depth of expertise at Rackspace,
   enables you to consume the best-fit technology without massive investment.
 
 ### Get started in minutes
