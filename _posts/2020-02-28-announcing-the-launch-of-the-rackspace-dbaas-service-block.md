@@ -137,8 +137,8 @@ supporting databases. However, DBaaS provides so many more benefits, including:
   always available.
 - **Lower total cost of ownership (TCO) and increased business agility**: Gain
   economies of scale that yield operational savings compared to DIY. The
-  portfolio of datastores, combined with depth of expertise at Rackspace,
-  enables you to consume the best-fit technology without massive investment.
+  portfolio of datastores, combined with our depth of expertise, enables you to
+  consume the best-fit technology without massive investment.
 
 ### Get started in minutes
 
