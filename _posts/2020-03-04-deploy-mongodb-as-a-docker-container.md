@@ -6,6 +6,10 @@ comments: true
 author: Binit Kumar
 published: true
 authorIsRacker: true
+authorAvatar: 'https://s.gravatar.com/avatar/fa095e4b2e5de083e30a714448e71451'
+bio: "Accomplished Database Consultant with years of in-depth knowledge and
+experience in building and administering business solutions based on Oracle and
+NoSQL (MongoDB, Couchbase and Cassandra) database engines and technologies."
 categories:
     - Oracle
     - Database
