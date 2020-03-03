@@ -24,7 +24,7 @@ container and use the shell client to interact with that container.
 ### Introduction
 
 After you install Docker on your computer or server, perform the following steps
-to deploy MongoDB as a Docker Container:
+to deploy MongoDB as a Docker container:
 
 1.	Download the latest or a specific MongoDB Docker image.
 2.	Deploy an instance of MongoDB as a container.
@@ -69,12 +69,12 @@ container's ID. The docker `ps` command shows a list of running containers.
 
 ### Interact with the MongoDB Docker container with the shell
 
-To take advantage of a functional MongoDB deployment, you can to interact with
+To take advantage of a functional MongoDB deployment, you can interact with
 the database by using the shell client.
 
 Because you are running the container in detached mode, you should connect by
 using the interactive terminal. Use the following command to connect to your
-deployment, named **MyMongo**, and start the bash shell:
+deployment, named **mymongo**, and start the bash shell:
 
     # docker exec -it mymongo bash
 
