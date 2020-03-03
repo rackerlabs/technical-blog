@@ -47,6 +47,11 @@ authorAvatar: 'http://0.gravatar.com/avatar/c5a8a633797f4b8c85b5b5bad605cd18'
 bio: "Karisa is an experienced Cloud Architect with a demonstrated history of
 working in the information technology and services industry. She is skilled in
 working with a variety of verticals including non-profit organizations, higher
+education, retail, and HLS as well as providing technical evaluations, program
+execution, Customer Relationship Management (CRM), event management, and
+marketing/technology. Karisa is passionate about cloud technology and marketing
+and about combining these to create unique solutions for clients."
+
 education, retail, and HLS; providing technical evaluations, program execution,
 Customer Relationship Management (CRM), event management, and marketing/tech.
 Karisa is passionate about cloud technology and marketing and combining these
@@ -182,6 +187,12 @@ bio: n/a
 Kumar, Anil
 authorAvatar: 'https://s.gravatar.com/avatar/3f1352f21438061d35ff20470433f3da'
 bio: n/a
+
+Kumar, Binit
+authorAvatar: 'https://s.gravatar.com/avatar/fa095e4b2e5de083e30a714448e71451'
+bio: "Accomplished Database Consultant with years of in-depth knowledge and
+experience in building and administering business solutions based on Oracle and
+NoSQL (MongoDB, Couchbase and Cassandra) database engines and technologies."
 
 Lara, Roman
 authorAvatar: 'https://s.gravatar.com/avatar/e9ef88c66315a7f955c4352a7ad2182a'
