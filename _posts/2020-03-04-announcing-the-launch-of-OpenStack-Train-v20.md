@@ -29,10 +29,6 @@ overall trajectory and consistency of this open-source technology. Support for
 OpenStack Train v20 is an integral part of our effort to provide the most current
 platforms and technologies for our customers.
 
-This version, v20, is a “table stakes” release that enhances our managed Private
-Cloud offering. The Openstack Ansible community released Train v20, and Rackspace
-Engineering has validated this version.
-
 OpenStack Train v20 has provided enhanced capabilities for Core Services including
 enhanced security and data protection, new artificial intelligence (AI) and machine
 learning support, and improved resource management and tracking. These enhancements

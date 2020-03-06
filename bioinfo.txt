@@ -176,6 +176,10 @@ bio: "Dan Kolb is a Software Developer in Test in the Rackspace Private Cloud
 Powered by VMware. Dan spends his time improving products and services through
 his passion and evangelization of automation and open source software."
 
+Krawczynski, David
+authorAvatar: n/a
+bio: n/a
+
 Krpan, Janice
 authorAvatar: 'https://s.gravatar.com/avatar/7662b14a4b4ce42f1a0775b2a93634c4'
 bio: n/a
