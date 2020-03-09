@@ -30,13 +30,13 @@ other technical aspects of your environment, infrastructure, and systems.
 
 Armor Anywhere provides the following benefits:
 
-- Offers cost-effective security protection, purpose-built for the cloud.
+- Offers cost-effective security protection, purpose-built for the cloud
 - Provides agent-based deployment with no need for additional appliances,
-  including easy DevOps integration.
+  including easy DevOps integration
 - Analyzes and correlates millions of events and log data to detect threats in
-  your environment.
-- Offers continuous and audit-ready compliance.
-- Simplifies the collection of logs from multiple sources.
+  your environment
+- Offers continuous and audit-ready compliance
+- Simplifies the collection of logs from multiple sources
 
 The agent-based security capabilities include the following elements:
 
@@ -45,14 +45,14 @@ The agent-based security capabilities include the following elements:
 - File integrity monitoring (FIM)
 - Vulnerability scanning
 - Log management and retention (13 months)
-- Ability to monitor events from cloud native tools and other network and
+- Ability to monitor events from cloud-native tools and other network and
   security sources
 
 Armor Anywhere offers protection for a variety of infrastructure levels. Perhaps
 you have ten or fewer servers and want a comprehensive security solution. Maybe
 you have dozens or hundreds or servers and need a comprehensive security solution
-that can monitor security events from a variety of sources (including cloud
-native) while scaling without the need for additional purchases of networking
+that can monitor security events from a variety of sources (including cloud-native
+sources) while scaling without the need for additional purchases of networking
 appliances. Either way, Armor Anywhere meets your needs.
 
 With Armor Anywhere, you can do the following:
@@ -62,7 +62,7 @@ With Armor Anywhere, you can do the following:
   produce an increased security outcome with minimal overhead.
 - Have Rackspace manage events and alerts to drive better outcomes around
   business requirements.
-- Add or subtract tools based on your needs to take advantage of technical
+- Add or subtract tools based on your needs to take advantage of technological
   innovation and future mix-and-match capabilities.
 
 
