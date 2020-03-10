@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to restore Postgres backups on ObjectRocket"
+title: "How to restore Postgres backups in ObjectRocket"
 date: 2020-02-28 00:01
 comments: true
 author: Steve Croce
@@ -24,16 +24,16 @@ ogTitle: "How to restore Postgres backups on ObjectRocket"
 ogDescription: "This post walks you though Point-in-Time Recovery (PITR) of Postgres on the ObjectRocket service."
 ---
 
-*Originally published 2020/02/06 at ObjectRocket.com/blog.*
+*Originally published on February 6,2020 at ObjectRocket.com/blog.*
 
 Database administration duties include taking and restoring regular backups,
 which is a critical component. ObjectRocket includes daily backups with a two-week
 retention and enables those backups by default on all of our database products.
 
-The ObjectRocket PostgreSQL (Postgres) offering adds a bonus, Write Ahead Log
+The ObjectRocket PostgreSQL&reg; (Postgres) offering adds a bonus, Write Ahead Log
 (WAL) archiving and the ability to restore to any time within the retention window.
 
-This post walks you through Point-in-Time Recovery (PITR) of Postgres on the
+This post walks you through point-in-time recovery (PITR) with Postgres on the
 ObjectRocket service.
 
 <!-- more -->
@@ -59,15 +59,15 @@ options. You can restore from the following points:
 - a specific base backup
 - a specific point in time
 
-In all cases, the system restores your data to a new Postgres instance, and at
+In all cases, the system restores your data to a new Postgres instance. At
 this time, the instance storage must be greater than or equal to the storage on
 the original instance. In this process, sometimes called a database fork, you
-restore your data to a new and separate database instance, so both the old and
+restore your data to a new and separate database instance. So both the old and
 new instances stay active until you remove one.
 
 Restores are currently only exposed by our
 [API](https://docs.api.objectrocket.cloud/?__hstc=227540674.02efb364c84d59f26454a496608371d4.1580831896062.1582314791306.1583850805279.4&__hssc=227540674.1.1583850805279&__hsfp=197097889#restore-a-postgresql-instance-from-backup).
-Feel free to use this API. Otherwise, our support team would be happy to help
+Feel free to use this API. Otherwise, our Support team is happy to help
 you through the process. We plan on adding restores to the UI in the very near
 future.
 
@@ -86,7 +86,7 @@ source instance to a new instance create call, as shown in the following image:
 
 ![]({% asset_path 2020-03-11-how-to-restore-postgres-backups-on-objectrocket/Picture4.png %})
 
-After the instance restore completes, connect and check the last timestamp:
+After the instance restore completes, connect and check the last timestamp.
 
 ![]({% asset_path 2020-03-11-how-to-restore-postgres-backups-on-objectrocket/Picture5.png %})
 
@@ -106,7 +106,7 @@ it. In the following image, you can see that the system took the backup at
 
 ![]({% asset_path 2020-03-11-how-to-restore-postgres-backups-on-objectrocket/Picture6.png %})
 
-To restore to this exact backup, add the backup ID to the create call:
+To restore to this exact backup, add the backup ID to the create call.
 
 ![]({% asset_path 2020-03-11-how-to-restore-postgres-backups-on-objectrocket/Picture7.png %})
 
@@ -123,13 +123,13 @@ and the time to restore to, as shown in the following image:
 ![]({% asset_path 2020-03-11-how-to-restore-postgres-backups-on-objectrocket/Picture9.png %})
 
 In this case, I want to restore to 15:53:00. After the restore completes, you
-can see that the data only exists up to that time:
+can see that the data only exists up to that time.
 
 ![]({% asset_path 2020-03-11-how-to-restore-postgres-backups-on-objectrocket/Picture10.png %})
 
 If you look back at the preceding images, you might notice that we did have
-another timestamp at 15:53:00, which occurred at just over .8 seconds
-after 15:53:00, so it does not get included in this restore. You can get
+another timestamp at 15:53:00, which occurred at just over 0.8 seconds
+after 15:53:00. So it does not get included in this restore. You can get
 extremely granular with a PITR to target a time and state in the database.
 
 ### Conclusion
