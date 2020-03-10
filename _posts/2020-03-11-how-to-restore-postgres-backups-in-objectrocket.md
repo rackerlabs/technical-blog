@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to restore Postgres backups in ObjectRocket"
-date: 2020-03-11 00:01
+date: 2020-02-28 00:01
 comments: true
 author: Steve Croce
 published: true
@@ -24,7 +24,7 @@ ogTitle: "How to restore Postgres backups in ObjectRocket"
 ogDescription: "This post walks you though Point-in-Time Recovery (PITR) of Postgres on the ObjectRocket service."
 ---
 
-*Originally published on February 6,2020 at ObjectRocket.com/blog.*
+*Originally published on February 6, 2020 at ObjectRocket.com/blog.*
 
 Database administration duties include taking and restoring regular backups,
 which is a critical component. ObjectRocket includes daily backups with a two-week
