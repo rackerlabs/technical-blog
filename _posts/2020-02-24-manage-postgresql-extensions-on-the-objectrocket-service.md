@@ -16,15 +16,15 @@ SQL, Kubernetes, and web application stacks. He's spoken at
 KubeCon + CloudNativeCon, OpenStack summit, Percona Live, and various Rackspace
 events."
 categories:
-    - Databases
+    - Database
+canonical: https://www.objectrocket.com/blog/postgresql/managing-postgresql-extensions-on-the-objectrocket-service/
 metaTitle: "Manage PostgreSQL extensions on the ObjectRocket service"
 metaDescription: "The PostgreSQL (Postgres) extensions ecosystem is extremely robust and provides a wide array of additional capabilities to Postgres."
 ogTitle: "Manage PostgreSQL extensions on the ObjectRocket service"
 ogDescription: "The PostgreSQL (Postgres) extensions ecosystem is extremely robust and provides a wide array of additional capabilities to Postgres."
-canonical: https://www.objectrocket.com/blog/postgresql/managing-postgresql-extensions-on-the-objectrocket-service/
 ---
 
-*Originally published 2020/02/13 at ObjectRocket.com/blog.*
+*Originally published February 13, 2020 at ObjectRocket.com/blog.*
 
 The PostgreSQL&reg; (Postgres&reg;) extensions ecosystem is extremely robust and provides
 a wide array of additional capabilities to Postgres.

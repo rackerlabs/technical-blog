@@ -17,7 +17,7 @@ KubeCon + CloudNativeCon, OpenStack summit, Percona Live, and various Rackspace
 events."
 categories:
     - Database
-    - Developers
+canonical: https://www.objectrocket.com/blog/postgresql/postgres-backups-and-how-to-restore-them-on-objectrocket/
 metaTitle: "How to restore Postgres backups in ObjectRocket"
 metaDescription: "This post walks you though Point-in-Time Recovery (PITR) of Postgres on the ObjectRocket service."
 ogTitle: "How to restore Postgres backups in ObjectRocket"
