@@ -60,7 +60,7 @@ Use the following steps to download ORAchk:
 
    The following download option displays:
 
-   ![]({% asset_path 2020-03-12-get-started-with-ORAchk/Picture3.png %}
+   ![]({% asset_path 2020-03-12-get-started-with-ORAchk/Picture3.png %})
 
 3) Select a download version. We recommend that you download the Linux version,
    *TFA & ORAchk/EXAchk for Linux*.
