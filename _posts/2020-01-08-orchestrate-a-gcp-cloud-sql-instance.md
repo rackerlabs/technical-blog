@@ -136,7 +136,7 @@ GCP or how to spin a Cloud SQL instance.
 
 Use the Feedback tab to make any comments or ask questions.
 
-<a class=“cta purple” id=“cta” href=“https://www.rackspace.com/lp/enhancedarchitecturereview”>Get a free GCP architecture review</a>
+<a class="cta purple" id="cta" href="https://www.rackspace.com/lp/enhancedarchitecturereview">Get a free GCP architecture review</a>
 
 [Chat now](https://www.rackspace.com/#chat) to get started.
 

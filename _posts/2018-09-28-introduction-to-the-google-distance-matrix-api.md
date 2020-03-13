@@ -148,7 +148,7 @@ time in traffic. The API is intended for developers who wish to compute travel
 distance and time between different points within maps that are provided by one
 of the Google Maps APIs.
 
-<a class=“cta teal” id=“cta” href=“https://www.rackspace.com/lp/enhancedarchitecturereview”>Get a free GCP architecture review</a>
+    <a class="cta teal" id="cta" href="https://www.rackspace.com/lp/enhancedarchitecturereview">Get a free GCP architecture review</a>
 
 Use the Feedback tab to make any comments or ask questions.
 

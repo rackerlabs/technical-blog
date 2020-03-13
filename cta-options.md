@@ -63,7 +63,7 @@ display.
 
 ### GCP
 
-    <a class=“cta red” id=“cta” href=“https://www.rackspace.com/lp/enhancedarchitecturereview”>Get a free GCP architecture review</a>
-    <a class=“cta purple” id=“cta” href=“https://www.rackspace.com/lp/enhancedarchitecturereview”>Get a free GCP architecture review</a>
-    <a class=“cta blue” id=“cta” href=“https://www.rackspace.com/lp/enhancedarchitecturereview”>Get a free GCP architecture review</a>
-    <a class=“cta teal” id=“cta” href=“https://www.rackspace.com/lp/enhancedarchitecturereview”>Get a free GCP architecture review</a>
+    <a class="cta red" id="cta" href="https://www.rackspace.com/lp/enhancedarchitecturereview">Get a free GCP architecture review</a>
+    <a class="cta purple" id="cta" href="https://www.rackspace.com/lp/enhancedarchitecturereview">Get a free GCP architecture review</a>
+    <a class="cta blue" id="cta" href="https://www.rackspace.com/lp/enhancedarchitecturereview">Get a free GCP architecture review</a>
+    <a class="cta teal" id="cta" href="https://www.rackspace.com/lp/enhancedarchitecturereview">Get a free GCP architecture review</a>
