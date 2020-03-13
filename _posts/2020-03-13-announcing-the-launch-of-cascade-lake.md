@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Announcing the launch of Cascade Lake"
-date: 2020-03-06 00:01
+date: 2020-03-13 00:01
 comments: true
 author: Joe Wiese
 published: true
@@ -18,6 +18,7 @@ metaTitle: "Announcing the launch of Cascade Lake"
 metaDescription: "Rackspace has recently released the second generation of the Intel Xeon Scalable architecture processor family, codenamed Cascade Lake."
 ogTitle: "Announcing the launch of Cascade Lake"
 ogDescription: "Rackspace has recently released the second generation of the Intel Xeon Scalable architecture processor family, codenamed Cascade Lake."
+---
 
 Rackspace has recently released the second generation of the Intel Xeon Scalable
 architecture processor family, codenamed Cascade Lake.
