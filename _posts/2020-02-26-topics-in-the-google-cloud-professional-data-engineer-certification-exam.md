@@ -209,4 +209,4 @@ luck to all those who plan to take the exam!
 
 Use the Feedback tab to make any comments or ask questions.
 
-<a class="cta teal" id="cta" href="https://www.rackspace.com/managed-google-cloud">Learn more about the Rackspace Managed Google Cloud</a>
+<a class="cta blue" id="cta" href="https://www.rackspace.com/lp/enhancedarchitecturereview">Get a free GCP architecture review</a>
