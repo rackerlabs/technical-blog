@@ -136,31 +136,7 @@ GCP or how to spin a Cloud SQL instance.
 
 Use the Feedback tab to make any comments or ask questions.
 
-### Optimize your environment with expert administration, management, and configuration
-
-[Rackspace's Application services](https://www.rackspace.com/application-management/managed-services)
-**(RAS)** experts provide the following [professional](https://www.rackspace.com/application-management/professional-services)
-and
-[managed services](https://www.rackspace.com/application-management/managed-services) across
-a broad portfolio of applications:
-
-- [eCommerce and Digital Experience platforms](https://www.rackspace.com/ecommerce-digital-experience)
-- [Enterprise Resource Planning (ERP)](https://www.rackspace.com/erp)
-- [Business Intelligence](https://www.rackspace.com/business-intelligence)
-- [Salesforce Customer Relationship Management (CRM)](https://www.rackspace.com/salesforce-managed-services)
-- [Databases](https://www.rackspace.com/dba-services)
-- [Email Hosting and Productivity](https://www.rackspace.com/email-hosting)
-
-We deliver:
-
-- **Unbiased expertise**: We simplify and guide your modernization journey,
-focusing on the capabilities that deliver immediate value.
-- **Fanatical Experience**&trade;: We combine a *Process first. Technology second.&reg;*
-approach with dedicated technical support to provide comprehensive solutions.
-- **Unrivaled portfolio**: We apply extensive cloud experience to help you
-choose and deploy the right technology on the right cloud.
-- **Agile delivery**: We meet you where you are in your journey and align
-our success with yours.
+<a class=“cta purple” id=“cta” href=“https://www.rackspace.com/lp/enhancedarchitecturereview”>Get a free GCP architecture review</a>
 
 [Chat now](https://www.rackspace.com/#chat) to get started.
 
