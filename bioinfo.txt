@@ -313,6 +313,13 @@ Whitehead, Chris
 authorAvatar: 'https://s.gravatar.com/avatar/286b19b54ad30b4f0d25a4ac679744a8'
 bio: n/a
 
+Wiese, Joe
+authorAvatar: 'https://s.gravatar.com/avatar/0efd04b476144df76914f2eb1fbf86de'
+bio: "I have been developing server solutions for Rackspace and our customers
+since 2006. I began my time at Rackspace in our original data center in downtown
+San Antonio in 2004. I also spent six years in the US Navy, where i worked on
+the most advanced weapons system in the Navy at that time."
+
 Wilensky, Jeff
 authorAvatar: 'https://s.gravatar.com/avatar/017eaa68c10c8d1b95aacf7d34557a28'
 bio: n/a
