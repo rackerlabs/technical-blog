@@ -11,6 +11,8 @@ content for our official Technical Blog. Second, in order to make contributing
 a pleasant experience while maintaining a visual and consistent content standard,
 complete these steps before writing and submitting a blog entry for publishing.
 
+For ideas of topics to blog about, check out the end of this file!
+
 #### Preparing for your blog entry
 
 1. Fork this repo (https://github.com/rackerlabs/docs-developer-blog), then
@@ -182,11 +184,11 @@ containing your post. Within your post, use the following markup:
 <img class="blog-post right" src="{% asset_path 2015-06-17-built-an-app-on-openstack-at-qcon-ny-2015/qcon.png %}"/>Last week I went to QCon NY 2015 to be both a student and a teacher in their tutorial track. They follow the standard pattern of having 2 days of tutorials prior to the conference proper. To understand QCon a bit better, here's their mission statement.
 ```
 
-#### Writing your post
+##### Writing your post
 
 We recommend that you conform as much as possible to the [Style Guide](https://developer.rackspace.com/docs/style-guide/).
 
-#### Submitting your blog entries
+##### Submitting your blog entries
 
 Follow these steps to submit your entry for publication.
 
@@ -202,3 +204,41 @@ Follow these steps to submit your entry for publication.
    the date that you selected.
 
 Thanks again for your interest in contributing!
+
+##### Ideas to post about
+
+Updated from list of trending search terms in Rackspace sites on March 13, 2020:
+
+- actionable insights
+- apache kafka
+- binary tree
+- buffer
+- cloud gaming
+- cloud infrastructure
+- data structures
+- database performance
+- database security
+- dbase
+- design patterns
+- dgraph
+- elastic search
+- gig economy
+- google cloud next
+- image recognition
+- iterable
+- java ee
+- kibana
+- learn python
+- micron technology
+- mobile world congress
+- mongo db
+- mongodb management
+- multithreading
+- neo4j
+- numpy
+- postgres
+- redis
+- regular expressions
+- replica set
+- sharding
+- unstructured data
