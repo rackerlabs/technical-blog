@@ -317,7 +317,7 @@ Wiese, Joe
 authorAvatar: 'https://s.gravatar.com/avatar/0efd04b476144df76914f2eb1fbf86de'
 bio: "I have been developing server solutions for Rackspace and our customers
 since 2006. I began my time at Rackspace in our original data center in downtown
-San Antonio in 2004. I also spent six years in the US Navy, where i worked on
+San Antonio in 2004. I also spent six years in the US Navy, where I worked on
 the most advanced weapons system in the Navy at that time."
 
 Wilensky, Jeff
