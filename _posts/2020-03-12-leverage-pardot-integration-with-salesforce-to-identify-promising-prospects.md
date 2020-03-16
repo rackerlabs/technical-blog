@@ -26,7 +26,7 @@ customer’s level of engagement.
 
 ![]({% asset_path 2020-03-12-leverage-pardot-integration-with-salesforce-to-identify-promising-prospects/Picture1.png %})
 
-Pardot has a variety of automation tools, including drip campaigns where
+Pardot has a variety of automation tools, including drip campaigns, where
 marketing teams can send a programmed series of emails to prospects and leads.
 Tracking a prospect’s response to the drip campaign enables you to identify engagement
 and areas of interest. With Pardot, you can create a variety of message types,
@@ -54,7 +54,7 @@ based on their email and web activity, automation can trigger a workflow to noti
 salesperson. This powerful tool helps your sales team spend their time on the most
 qualified leads.
 
-<a class="cta blue" id="cta" href="https://www.rackspace.com/salesforce">Learn more about Salesforce Customer Relationship Management (CRM)</a>
+<a class="cta blue" id="cta" href="https://www.rackspace.com/salesforce">Learn more about Salesforce Customer Relationship Management (CRM).</a>
 
 Visit [www.rackspace.com](https://www.rackspace.com) and click **Sales Chat**
 to get started.
