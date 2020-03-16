@@ -9,7 +9,7 @@ authorIsRacker: true
 authorIsRacker: true
 authorAvatar: 'https://s.gravatar.com/avatar/7f73ff8ddbc33505beb7a14033611a06'
 bio: "I've been a Racker for three years and have 14+ years of Oracle DBA
-experience. Currently, I work on Oracle, MongoDB, and other NOSql databases."
+experience. Currently, I work on Oracle, MongoDB, and other NoSQL databases."
 categories:
     - Oracle
     - Database
@@ -26,7 +26,7 @@ install, and use this database audit tool.
 
 ### Introduction
 
-The Oracle&reg; Autonomous Health Framework, (AHF), includes ORAchk, which
+The Oracle&reg; Autonomous Health Framework (AHF) includes ORAchk, which
 enables you to audit and validate your Oracle Database Appliance (ODA)
 environment. You can use AHF without incurring extra fees.
 
@@ -41,7 +41,7 @@ areas that might have problems:
 The Oracle development and support team continuously improves ORAchk by adding
 checks for the latest issues reported by users, and ORAchk proactively scans
 your system for the problems.  These improvements offer you more significant
-insights into the health of your ODA system providing a better upgrade patch
+insights into the health of your ODA system, providing a better upgrade patch
 application experience.
 
 ### Download ORAchk
@@ -62,14 +62,14 @@ Use the following steps to download ORAchk:
 
    ![]({% asset_path 2020-03-12-get-started-with-ORAchk/Picture3.png %})
 
-3) Select a download version. We recommend that you download the Linux version,
+3) Select a download version. We recommend that you download the Linux&reg; version,
    *TFA & ORAchk/EXAchk for Linux*.
 
 ### Install ORAchk
 
 Use the following steps to install ORAchk:
 
-1. Download and unzip **TFA & ORAchk/EXAchk 19.3.x.zip** in to a temporary
+1. Download and unzip **TFA & ORAchk/EXAchk 19.3.x.zip** into a temporary
    location.
 
 2. Unzip the archive file and execute **ahf_setup** to install ORAchk on the
@@ -81,7 +81,7 @@ want to patch.
 ### Run ORAchk
 
 We recommend that you run ORAchk from the Linux command line as the **root**
-user, as shown in the following example:
+user as shown in the following example:
 
     [root@host1 orachk]# ./orachk
 
@@ -98,7 +98,7 @@ beginning and does not resume from the point of failure.
 
 ### Conclusion
 
-Because Oracle is continually updating ORAchk, you should always make sure to
+Because Oracle is continually updating ORAchk, you should always make sure you
 run the latest release of ORAchk before patching your system. By staying
 updated, you can be confident that you can successfully apply the patches and
 that you have addressed all known issues.
