@@ -8,6 +8,7 @@ published: true
 authorIsRacker: true
 categories:
     - General
+    - Azure
 metaTitle: "Announcing the launch of SAP on Azure"
 metaDescription: "Rackspace just released a minor enhancement to our SAP service to help our SAP on Microsoft&reg; Azure&reg; customers to migrate to S/4HANA."
 ogTitle: "Announcing the launch of SAP on Azure"
