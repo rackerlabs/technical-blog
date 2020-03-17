@@ -10,20 +10,20 @@ categories:
     - General
     - Azure
 metaTitle: "Announcing the launch of SAP on Azure"
-metaDescription: "Rackspace just released a minor enhancement to Rackspace Application Services for SAP to help our SAP on Microsoft&reg; Azure&reg; customers to migrate to S/4HANA."
+metaDescription: "Rackspace just released a minor enhancement to Rackspace Application Services for SAP to help our SAP on Microsoft&reg; Azure&reg; customers migrate to S/4HANA."
 ogTitle: "Announcing the launch of SAP on Azure"
-ogDescription: "Rackspace just released a minor enhancement to Rackspace Application Services for SAP to help ourSAP on Microsoft&reg; Azure&reg; customers to migrate to S/4HANA."
+ogDescription: "Rackspace just released a minor enhancement to Rackspace Application Services for SAP to help our SAP on Microsoft&reg; Azure&reg; customers migrate to S/4HANA."
 ---
 
 Rackspace just released a minor enhancement to Rackspace Application Services
-for SAP to help our SAP&reg; on Microsoft&reg; Azure&reg; customers to migrate
+for SAP to help our SAP&reg; on Microsoft&reg; Azure&reg; customers  migrate
 to SAP S/4HANA.
 
 <!-- more -->
 
-According to Microsoft, SAP is requiring that all customers migrate to SAP
-S/4HANA by 2025 or they’ll lose support. As a result, approximately 10,000
-customers will need to migrate by 2025.
+According to Microsoft, SAP requires that all customers migrate to SAP
+S/4HANA by 2025, or they lose support. As a result, approximately 10,000
+customers need to migrate by 2025.
 
 As customers modernize, an increasing number of SAP users plan to make the move
 to public cloud on Azure. Rackspace Application Services for SAP helps companies
@@ -33,21 +33,20 @@ proven expertise at scale in managing leading SAP applications on Microsoft Azur
 
 ### What is SAP S/4HANA?
 
-According to [SAP](https://www.sap.com/products/s4hana-erp.html),"SAP S/4HANA
+According to [SAP](https://www.sap.com/products/s4hana-erp.html), "SAP S/4HANA
 is an intelligent, integrated Enterprise Resource Planning (ERP) system that
 runs on our in-memory database, SAP HANA."
 
 SAP goes on to explain that the product provides intelligent automation,
-follows proven best-practise for professional services, enables you "to make
+follows proven best practice for professional services, enables you "to make
 better decisions faster with embedded analytics, a conversational interface,
-and digital assistants", and "enable new business models as your marketplace
+and digital assistants," and "enable new business models as your marketplace
 evolves."
 
 ### Why migrate to SAP S/4HANA?
 
-The International Data Corporation (IDC) conducted a [survey in April, 2019 of
-300 SAP customers](https://www.sap.com/documents/2019/06/ea998aa5-557d-0010-87a3-c30de2ffd8ff.html),
-which found that over half the respondents planned to migrate to SAP S/4HANA
+The International Data Corporation (IDC) [surveyed 300 SAP customers in April 2019](https://www.sap.com/documents/2019/06/ea998aa5-557d-0010-87a3-c30de2ffd8ff.html)
+and found that over half the respondents planned to migrate to SAP S/4HANA
 within three years.
 
 According to the report, when you migrate to SAP S/4HANA, you gain the following
@@ -73,7 +72,7 @@ the following areas of concern:
 Rackspace pledges to help you manage this migration smoothly, effectively, and
 efficiently!
 
-<a class="cta red" id="cta" href="https://www.rackspace.com/sap">Learn more about our SAP services</a>
+<a class="cta red" id="cta" href="https://www.rackspace.com/sap">Learn more about our SAP services.</a>
 
 Visit [www.rackspace.com](https://www.rackspace.com) and click **Sales Chat**
 to get started.
