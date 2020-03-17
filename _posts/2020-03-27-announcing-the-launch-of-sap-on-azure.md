@@ -10,9 +10,9 @@ categories:
     - General
     - Azure
 metaTitle: "Announcing the launch of SAP on Azure"
-metaDescription: "Rackspace just released a minor enhancement to Rackspace Application Services for SAP to help our SAP on Microsoft&reg; Azure&reg; customers migrate to S/4HANA."
+metaDescription: "Rackspace just released a minor enhancement to Rackspace Application Services for SAP to help our SAP on Microsoft&reg; Azure&reg; customers migrate to SAP S/4HANA."
 ogTitle: "Announcing the launch of SAP on Azure"
-ogDescription: "Rackspace just released a minor enhancement to Rackspace Application Services for SAP to help our SAP on Microsoft&reg; Azure&reg; customers migrate to S/4HANA."
+ogDescription: "Rackspace just released a minor enhancement to Rackspace Application Services for SAP to help our SAP on Microsoft&reg; Azure&reg; customers migrate to SAP S/4HANA."
 ---
 
 Rackspace just released a minor enhancement to Rackspace Application Services
@@ -45,7 +45,8 @@ evolves."
 
 ### Why migrate to SAP S/4HANA?
 
-The International Data Corporation (IDC) [surveyed 300 SAP customers in April 2019](https://www.sap.com/documents/2019/06/ea998aa5-557d-0010-87a3-c30de2ffd8ff.html)
+The International Data Corporation (IDC)
+[surveyed 300 SAP customers in April 2019](https://www.sap.com/documents/2019/06/ea998aa5-557d-0010-87a3-c30de2ffd8ff.html)
 and found that over half the respondents planned to migrate to SAP S/4HANA
 within three years.
 
