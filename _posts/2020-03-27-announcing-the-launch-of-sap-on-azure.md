@@ -21,8 +21,11 @@ to SAP S/4HANA.
 
 <!-- more -->
 
-According to Microsoft, SAP requires that all customers migrate to SAP
-S/4HANA by 2025, or they lose support. As a result, approximately 10,000
+According to Microsoft, SAP has announced that the deadline for all customers to
+migrate to SAP S/4HANA is delayed from 2025 to 2027. However, the mutual support
+contract with Oracle&reg;, IBM&reg;, and Microsoft will still be canceled in 2025.
+So, any SAP business solution running on Oracle, DB2&reg;, and MSSQL must migrate
+to SAP HANA by 2025, or they’ll lose support. As a result, approximately 10,000
 customers need to migrate by 2025.
 
 As customers modernize, an increasing number of SAP users plan to make the move
