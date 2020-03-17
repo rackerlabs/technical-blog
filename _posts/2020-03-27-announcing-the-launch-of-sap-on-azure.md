@@ -16,8 +16,8 @@ ogDescription: "Rackspace just released a minor enhancement to Rackspace Applica
 ---
 
 Rackspace just released a minor enhancement to Rackspace Application Services
-for SAP to help our SAP on Microsoft&reg; Azure&reg; customers to migrate to
-S/4HANA.
+for SAP to help our SAP&reg; on Microsoft&reg; Azure&reg; customers to migrate
+to SAP S/4HANA.
 
 <!-- more -->
 
