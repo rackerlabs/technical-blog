@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Announcing the launch of Cascade Lake"
-date: 2020-03-13 00:01
+title: "Rackspace offers Dynamics 365 licenses and Dynamics 365 Sales professional services"
+date: 2020-03-20 00:01
 comments: true
 author: Teresa Cortez
 published: true
