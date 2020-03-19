@@ -6,7 +6,7 @@ comments: true
 author: Derek Johnson
 published: true
 authorIsRacker: true
-authorAvatar: ''
+authorAvatar: 'https://s.gravatar.com/avatar/19e8fe9c0b86b792f8065cad11364cf7'
 bio: "An accomplished product development fanatic with an emphasis on execution, Derek has significant product management,
 product marketing, and program management experience across a broad range of industries with a track record for growing businesses
 and product lines from the ground up. Under Derek’s management, ObjectRocket’s MongoDB and Redis offering grew extensively. In 2019,
