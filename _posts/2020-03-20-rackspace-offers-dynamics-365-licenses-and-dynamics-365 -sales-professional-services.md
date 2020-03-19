@@ -6,15 +6,8 @@ comments: true
 author: Teresa Cortez
 published: true
 authorIsRacker: true
-bio: "Teresa Cortez is a Product Manager working with Microsoft’s Dynamics 365. Formerly she implemented Dynamics 365 Business Central as a Senior Consultant, and has been implementing Microsoft ERP solutions for the past 5 years. Her passion to continuously learn and to provide customers with enhanced business process solutions, which is what guided her to the technology services industry. Teresa holds a Business-Economics degree from the University of San Diego, and a Master of Business Administration degree from California State University, San Marcos. She also formerly served as the Vice President of Stella’s Kids Association, a non-profit organization. In her free time, Teresa enjoys camping (or better yet – glamping) at the beach or at the sand dunes with her family."
 categories:
     - General
-metaTitle: "Rackspace offers Dynamics 365 licenses and Dynamics 365 Sales professional services"
-metaDescription: "Rackspace is excited to announce the launch of professional services for
-Microsoft&reg; Dynamics 365 Sales online."
-ogTitle: "Rackspace offers Dynamics 365 licenses and Dynamics 365 Sales professional services"
-ogDescription: "Rackspace is excited to announce the launch of professional services for
-Microsoft&reg; Dynamics 365 Sales online."
 ---
 
 Rackspace is excited to announce the launch of professional services for
