@@ -35,8 +35,8 @@ One of these projects is the
 The project relies on donated CPU and GPU time to help to determine 3-dimensional
 shapes of proteins in research that may ultimately lead to finding cures for
 some major human diseases. By running the Rosetta program on your computer when
-you aren’t using it, you help them speed up and extend their research in ways
-they could not take advantage of without your help.
+you are not using your computer, you help them speed up and extend their
+research in ways they could not take advantage of without your help.
 
 ### Get started
 
@@ -59,17 +59,14 @@ Use the following steps to get started in headless mode:
 ### Start the Docker container
 
 We put together a BOINC Docker image based on Ubuntu 18.04, which is easy to
-load and run. Find the
-[source code for this Dockerfile](https://github.com/antonym/docker-boinc) in
-GitHub.
+load and run. The system uses GitHub actions to generate and push this
+[Docker image](https://github.com/antonym/docker-boinc) to Docker hub.
 
-Use GitHub actions to generate and push the Docker image to Docker hub.
-
-To load the image, run the following command. Replace *insert_insecure_key_here*
+To load the image, run the following command. Replace *insert\_insecure\_key\_here*
 with the account key that you saved previously:
 
-    docker run -ti -d --name boinc
-    -e "boincurl=http://boinc.bakerlab.org/rosetta"
+    docker run -ti -d --name boinc \
+    -e "boincurl=http://boinc.bakerlab.org/rosetta" \
     -e "boinckey=insert_insecure_key_here" antonym/boinc
 
 These commands start the BOINC client. The BOINC client links the system to your
@@ -77,7 +74,7 @@ account, retrieves chunks of work, processes them, and uploads the results to
 the project.
 
 **NOTE:** This is a CPU intensive process that spins up on all available CPUs.
-   You can watch the CPUs by using the htop tool. You probably won’t want to
+   You can watch the CPUs by using the htop tool. You probably should not
    run this on a production machine.
 
 ### Monitor BOINC processes
@@ -97,7 +94,7 @@ To restart the container and resume previous jobs:
 ### Join the Rackspace BOINC team
 
 Rackspace has also set up a
-[BOINC team,](https://boinc.bakerlab.org/rosetta/team_display.php?teamid=19101)
+[BOINC team](https://boinc.bakerlab.org/rosetta/team_display.php?teamid=19101),
 so feel free to join us so we can track our team’s efforts.
 
 ### Other distributed compute resources
@@ -113,3 +110,5 @@ We encourage you to check them all out, and if you have access to a lab or spare
 computing, help join the effort to fight disease!
 
 Use the Feedback tab to make any comments or ask questions.
+
+
