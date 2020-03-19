@@ -6,6 +6,8 @@ comments: true
 author: Praveen Gupta
 published: true
 authorIsRacker: true
+authorAvatar: 'https://secure.gravatar.com/avatar/9b15aeb3fffbd8eb9f6040435c24cc21'
+bio: "I've been a Racker for nine years and have 10+ years of Oracle DBA experience. Currently, I work on Oracle, MongoDB, and other NoSQL databases."
 categories:
     - DevOps
 metaTitle: "Introducing Chef v2"
