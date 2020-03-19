@@ -6,8 +6,11 @@ comments: true
 author: Antony Messerli
 published: true
 authorIsRacker: true
-authorAvatar: 'https://s.gravatar.com/avatar/aaed52e72599f965f7f67c462996723d'
-bio: "."
+authorAvatar: 'http://www.gravatar.com/avatar/53b5341ace963caa36117f64a3353185'
+bio: "Antony Messerli is a Principal Engineer at Rackspace who heads up the
+Global Infrastructure Engineering team responsible for hardware development and
+engineering.  He is a 17 year Racker with a background in hardware development,
+software engineering, and building large scale IaaS clouds."
 categories:
     - General
 metaTitle: "Join Rackspace in the fight against COVID-19 with BOINC"
