@@ -3,7 +3,7 @@ layout: post
 title: "Introducing Chef v2"
 date: 2020-03-20 00:01
 comments: true
-author: Manish Kumar
+author: Praveen Gupta
 published: true
 authorIsRacker: true
 categories:
