@@ -6,7 +6,7 @@ comments: true
 author: Antony Messerli
 published: true
 authorIsRacker: true
-authorAvatar: 'http://www.gravatar.com/avatar/53b5341ace963caa36117f64a3353185'
+authorAvatar: 'https://www.gravatar.com/avatar/53b5341ace963caa36117f64a3353185'
 bio: "Antony Messerli is a Principal Engineer at Rackspace who heads up the
 Global Infrastructure Engineering team responsible for hardware development and
 engineering.  He is a 17 year Racker with a background in hardware development,
