@@ -62,3 +62,23 @@ objectives. Proper configuration of business solutions can boost user adoption
 to help businesses make the most of their investment.
 
 <a class="cta red" id="cta" href="https://www.rackspace.com/microsoft/dynamics-365">Find out more about Rackspace's Dynamics 365 offering.</a>
+
+### Microsoft cloud solutions
+
+Microsoft has built a cloud platform that enables small to enterprise-sized
+companies to have business solutions on a secure platform. This platform is
+scalable, modern, and unified. Rackspace can help you understand the right
+combination of Microsoft's cloud solutions to help meet your business' present
+and foreseen future needs.  These solutions include the following options:
+
+- Dynamics 365
+- Microsoft 365
+- Azure
+- Power Platform
+
+<a class="cta blue" id="cta" href="https://www.rackspace.com/microsoft">Learn more about the right combination of Microsoft solutions that Rackspace offers.</a>
+
+Visit [www.rackspace.com](https://www.rackspace.com) and click **Sales Chat**
+to get started.
+
+Use the Feedback tab to make any comments or ask questions.
