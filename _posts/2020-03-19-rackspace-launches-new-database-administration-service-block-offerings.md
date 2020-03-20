@@ -22,25 +22,26 @@ ogDescription: "Rackspace has two DBA service blocks that offer access to world-
 ---
 
 Maintaining infrastructure, managing the back-end data environment, and tuning databases while keeping your data secure can be a major drain on IT resources.
-Luckily, recent additions to the Rackspace Service Block offerings can help. The all new database administration (DBA) service blocks remove the burden of
+Luckily, recent additions to the Rackspace Service Block offerings can help. The all-new database administration (DBA) service blocks remove the burden of
 day-to-day database management while ensuring your environment is healthy, available, secure, and optimized for performance.
 
-<!--more-->
+<!-- more -->
 
 Rackspace has two DBA service blocks that offer you and your database access to world-class DBAs and database engineers:
 
-- Proactive database management
-- Advanced database tuning
+- Proactive Database Management
+- Advanced Database Tuning
 
-With Proactive Database Management, customers can offload monitoring, support, security management, and other daily database management tasks.
+With Proactive Database Management, you can offload monitoring, support, security management, and other daily database management tasks.
 
 Advanced Database Tuning includes a team of experienced and certified DBAs. These DBAs provide an extra layer of support by focusing on
 continual performance optimization through regular health checks, advanced troubleshooting, long-term planning, and best practices consultation.
 
-Rackspace DBAs are highly experienced across the most popular Relational, NoSQL, and Cloud Native databases. This vendor agnostic offering
-gives you the freedom to run in or migrate to the cloud or data center that best fits your business and application needs.
+Rackspace DBAs are highly experienced across the most popular Relational, NoSQL, and cloud-native databases. This
+vendor-agnostic offering
+gives you the freedom to run in, or migrate to, the cloud or data center that best fits your business and application needs.
 
-## Proactive database management
+## Proactive Database Management
 
 Keep your database healthy, available, backed-up, and secure with a team of database engineers and administrators
 monitoring your workload round-the-clock. Rackspace experts offer fundamental support for running your database
@@ -51,7 +52,7 @@ and are the first line of defense in the event of a problem.
 - **Access to expertise:** Rackspace has a team of over 300 certified DBAs experienced with troubleshooting and maintenance execution on relevant database technologies.
 
 - **Availability monitoring:** Rackspace experts leverage monitoring tools that lets them track metrics and events on your database. These experts either fix
-an issue when it occurs or notifies you of any necessary next steps. 
+an issue when it occurs or notify you of any necessary next steps. 
 
 - **Backups, restoration, and recovery:** In partnership with the Rackspace Managed Backup Team, the database team ensures backups are properly executed and recovers
 data in the event of a crash or storage failure.
@@ -63,7 +64,7 @@ These experts react quickly to issues and give feedback on necessary changes f
 
 ### Benefits
 
-- **Low Total Cost of Ownership:** DBA resources are expensive and scarce. Rackspace provides you with cost-effective access to a deep pool of DBA expertise
+- **Low total cost of ownership:** DBA resources are expensive and scarce. Rackspace provides you with cost-effective access to a deep pool of DBA expertise
 to ensure your databases are healthy and available without hiring extra resources or assuming additional costs.
 
 - **Proven expertise at scale:** With 300+ certified DBAs managing over 30,000 databases across the globe, Rackspace manages some of the largest and
@@ -74,26 +75,26 @@ on best practices and sized correctly every time. You can also segregate duties 
 
 - **Reliability:** Rackspace works with expert storage and backup engineers to resolve issues and ensure that backups occur as expected. Rackspace also helps to restore from backup data as needed.
 
-## Advanced database tuning
+## Advanced Database Tuning
 
-Work together with Rackspace certified DBAs to optimize performance and speed up innovation. Your lead DBA conducts regular performance analysis and recommends database improvements. Your lead DBA also provides advanced troubleshooting, and best practice consultation on leveraging supported database technologies for long term database planning.
+Work together with Rackspace certified DBAs to optimize performance and speed up innovation. Your lead DBA conducts regular performance analysis and recommends database improvements. Your lead DBA also provides advanced troubleshooting and best practice consultation on leveraging supported database technologies for long term database planning.
 
 ### Features
 
-In addition to the Proactive database management features, you also receive:
+In addition to the Proactive Database Management features, you also receive:
 
-- **Lead Database Administrator:** Every customer is assigned a named DBA who serves as an expert on both the database platform and the supported application environment.
+- **Lead Database Administrator:** Rackspace assigns every customer a named DBA who serves as an expert on both the database platform and the supported application environment.
 The Lead DBA conducts regular customer health checks to identify any potential issues or areas of improvement.
 
-- **Performance analysis and optimization:** The more complex the database implementation and traffic volume, the more challenging to get databases performing
-optimally. This can range from queries that are running too slowly, to replication lag, and other issues. The Rackspace DBA team has the customized tooling
+- **Performance analysis and optimization:** More complex database implementation and traffic volume offer more challenges to get databases performing
+optimally. These challenges can range from queries that are running too slowly, to replication lag, and other issues. The Rackspace DBA team has the customized tooling
 and experience to get the most out of database technologies. Rackspace experts are available to assist with identifying performance issues and making suggestions
 on tuning database parameters to maximize performance and uptime.
 
 - **Advanced troubleshooting:** Sometimes a database performance or stability issue extends beyond the database itself. Rackspace experts can analyze
 database usage and work with you to identify how your applications are using the database to diagnose even the most complex issues.
 
-- **Best practices consultation:** Customers can often be unsure about how a database technology will respond to a change in the application layer or they might want to
+- **Best practices consultation:** Customers can often be unsure about how a database technology will respond to a change in the application layer, or they might want to
 take advantage of a new database technology feature. Rackspace has the expertise to answer some of the most complex questions and offer the correct guidance.
 
 - **Long-term database planning:** As workloads grow, database scaling needs and database feature requirements change. With in-depth knowledge of the different database
@@ -101,13 +102,13 @@ technologies and their best practices, Rackspace DBAs can help plan long-term ev
 
 ### Benefits
 
-In addition to the Proactive Database Management benefits, customers get:
+In addition to the Proactive Database Management benefits, you get the following benefits:
 
-- **Accelerated innovation:** Rackspace experts work to quickly get the customer’s databases up and running with optimal performance.
-With Rackspace managing their database, customers are free to focus on application innovation and providing value to their clients,
-speeding up time-to-market and improving their customer experience.
+- **Accelerated innovation:** Rackspace experts work quickly to get your databases up and running with optimal performance.
+With Rackspace managing your database, you are free to focus on application innovation and providing value to your clients,
+speeding up time-to-market and improving your customer experience.
 
-- **Increased value from data:** By reducing data management overhead and maximizing database performance, customers can focus on extracting the most value possible from their data.
+- **Increased value from data:** By reducing data management overhead and maximizing database performance, you can focus on extracting the most value possible from your data.
 
 ## Conclusion
 
@@ -116,7 +117,7 @@ the back-end data environment. Whether you’re looking to offload routine manag
 access to a team of DBAs to optimize your workload and plan for the future, Rackspace has a service block that fits.
 
 
-<a class="cta blue" id="cta" href="https://www.rackspace.com/data/dba-services">Learn more about Rackspace DBA Services</a>
+<a class="cta blue" id="cta" href="https://www.rackspace.com/data/dba-services">Learn more about Rackspace DBA Services.</a>
 
 Visit [www.rackspace.com](https://www.rackspace.com) and click **Sales Chat**
 to get started.
