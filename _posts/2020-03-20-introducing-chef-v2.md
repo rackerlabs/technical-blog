@@ -47,11 +47,11 @@ that you maintain and keep the hardware operating environment is up and running.
 
 Chef consists of the following main components:
 
-**Chef server**: As the center of operations, the Chef server stores, manages, and provides configuration data to all the other Chef components.
-**Workstations**: Workstations are personal computers or virtual servers where you create, test, and modify the configuration code. You can have as many workstations as you need.
-**Nodes**: Nodes are the servers that Chef manages. These machines take advantage of the benefits of automation. Chef manages nodes that are virtual servers, containers, network devices, and storage devices. Chef installs a client on every node that Chef manages.
+-  **Chef server**: As the center of operations, the Chef server stores, manages, and provides configuration data to all the other Chef components.
+-  **Workstations**: Workstations are personal computers or virtual servers where you create, test, and modify the configuration code. You can have as many workstations as you need.
+-  **Nodes**: Nodes are the servers that Chef manages. These machines take advantage of the benefits of automation. Chef manages nodes that are virtual servers, containers, network devices, and storage devices. Chef installs a client on every node that Chef manages.
 
-The following image shows a basic set up:
+The following image shows a basic setup:
 
 ![]({% asset_path 2020-03-20-introducing-chef-v2/Picture1.png %})
 
@@ -67,17 +67,17 @@ the workstations.
 
 Following are the components of a Chef server:
 
-**Recipe**: The code that consists of configurations written in Ruby.
-**Knife**: A command used for establishing communication between recipes and the
+-  **Recipe**: The code that consists of configurations written in Ruby.
+-  **Knife**: A command used for establishing communication between recipes and the
 server. Recipe is the instruction, and Knife is the tool that makes the
 instructions work and sets the appropriate state on the server environment.
-**Cookbook**:  A collection of all the Recipes.
+-  **Cookbook**:  A collection of all the Recipes.
 
 ### Conclusion
 
 Chef, a powerful configuration management tool, has useful features to administer
 your DevOps environment. Chef continually adds new and improved features to help
-you manage your systems better, and leading IT firms like Facebook&reg;,
+you manage your systems better. Leading IT firms like Facebook&reg;,
 Amazon&reg; Web Services (AWS), the HP&reg; Public Cloud, and others use this
 tool. You can probably find ways to use Chef, too.
 
