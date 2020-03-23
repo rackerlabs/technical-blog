@@ -21,20 +21,21 @@ business continuity and disaster recovery (BC/DR) purposes.
 <!-- more -->
 
 We provide the design patterns as a courtesy to our Sitecore&reg; Managed Cloud
-Premium customers who are using standard PaaS deployments for XP and XM. The
-patterns do not provide an end-to-end BC/DR solution, nor are they a Disaster
-Recovery as a Service option. However, we offer design patterns that have been
-tested and validated in association with the Rackspace Application Services (RAS)
-Sitecore Product team. For each design pattern, Rackspace provides detailed
-steps and determines which party is responsible for each step.
+Premium customers who use standard PaaS deployments for Sitecore Experience
+Platform (XP) and Sitecore Experience Manager (XM). The patterns do not provide
+an end-to-end BC/DR solution, nor are they a Disaster Recovery as a Service
+option. However, we offer design patterns that have been tested and validated
+in association with the Rackspace Application Services (RAS) Sitecore Product
+team. For each design pattern, Rackspace provides detailed steps and determines
+which party is responsible for each step.
 
 The detailed DR patterns enable both Azure&reg; Support and RAS Sitecore Support
 to assist Sitecore Managed Cloud Premium customers who use the standard PaaS
-deployments for Sitecore Experience Platform (XP) and Sitecore Experience Manager
-(XM) environments. If you use these environments, we can consult with you on DR
-preparation and creating a detailed DR plan. Because we have tested these
-patterns, we provide peace of mind that, in the event of a disaster, we can
-effectively and efficiently recover the customers’ production environment.
+deployments for XP and XM environments. If you use these environments, we can
+consult with you on DR preparation and creating a detailed DR plan. Because we
+have tested these patterns, we provide peace of mind that, in the event of a
+disaster, we can effectively and efficiently recover the customers’ production
+environment.
 
 Sitecore Managed Cloud Premium customers who are using the following production
 environments can opt into these DR design patterns and runbooks:
