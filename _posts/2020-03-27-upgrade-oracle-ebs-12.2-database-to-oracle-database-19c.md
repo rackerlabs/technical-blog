@@ -3,11 +3,13 @@ layout: post
 title: "Upgrade Oracle EBS 12.2 database to Oracle Database 19c"
 date: 2020-03-20 00:01
 comments: true
-author:
+author: Vivek Verma
 published: true
 authorIsRacker: true
-authorAvatar: 'https://secure.gravatar.com/avatar/'
-bio: ""
+authorAvatar: 'https://s.gravatar.com/avatar/ea77be7be4ebf7aed353087f677104be'
+bio: "I'm a consultant working on Oracle E-Business Suite and related products.
+As an Amazon Cloud Solutions Architect Associate, I am passionate about the
+Cloud Platform. Python and Chef are works in progress."
 categories:
     - DevOps
 metaTitle: "Upgrade Oracle EBS 12.2 with Oracle Database 19c"
