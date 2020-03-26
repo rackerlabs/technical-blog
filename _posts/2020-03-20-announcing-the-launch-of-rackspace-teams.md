@@ -56,8 +56,7 @@ Rackspace Teams addresses those challenges by doing the following:
   build, migrate to, optimize, or maintain live production environments.
 
 Rackspace provides the Teams service offering to customers who do not need
-onsite access and who can work with a remote Rackspace delivery team during the
-Rackspace business hours.
+onsite access.
 
 #### How it works
 
@@ -86,7 +85,7 @@ CiricleCI&reg; for source control and CI/CD, whereas Customer B might use
 bitbucket and Jenkins. Highly skilled Pod Rackers can help both customers by
 adopting the tooling in place in each customer's environment. After helping many
 customers in their journey to the cloud, we have developed expertise in various
-cloud technologies such as Terraform and AWS. We share that security with our
+cloud technologies such as Terraform and AWS. We share this expertise with our
 customers when needed.
 
 ### Conclusion
