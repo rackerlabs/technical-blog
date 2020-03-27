@@ -97,6 +97,8 @@ Rackspace has also set up a
 [BOINC team](https://boinc.bakerlab.org/rosetta/team_display.php?teamid=19101),
 so feel free to join us so we can track our team’s efforts.
 
+You can see how we're doing [here](https://stats.foldingathome.org/team/227455).
+
 ### Other distributed compute resources
 
 The following list shows other projects that either currently have COVID-19
