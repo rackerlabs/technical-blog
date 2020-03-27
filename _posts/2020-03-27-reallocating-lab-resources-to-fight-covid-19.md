@@ -6,7 +6,7 @@ comments: true
 author: Jason Mick
 published: true
 authorIsRacker: true
-bio: ""
+bio: "I have been with Rackspace Global Infrastructure Engineering for 9 years. During my tenure I have focused on the design and development of compute platforms that optimize scale and cost for Rackspace customers. Leveraging strong partner relationships, I also lead the majority of our future hardware technology investigations."
 categories:
     - General
 metaTitle: "Reallocating lab systems to fight COVID-19"
