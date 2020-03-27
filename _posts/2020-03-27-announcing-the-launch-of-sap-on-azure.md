@@ -3,7 +3,7 @@ layout: post
 title: "Announcing the launch of SAP on Azure"
 date: 2020-03-27 00:01
 comments: true
-author: Michael Missbach
+author: John Ross
 published: true
 authorIsRacker: true
 categories:
