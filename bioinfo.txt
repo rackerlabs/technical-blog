@@ -167,7 +167,26 @@ Administrator since I began my career and worked for top IT companies. I have
 Apps DBA. I am passionate about electronic gadgets, travelling, exploring, and
 tasting delicious food."
 
-Gu[ta, Praveen
+Gupta, Nihar
+authorAvatar: n/a
+bio: "Nihar Gupta, Director of Data Solutions. With over 10 years of experience
+working with high-growth SaaS/Tech companies, Nihar has helped companies achieve
+their growth objectives through product management, strategic partnerships,
+corporate development efforts, and executing cross-functional strategic initiatives.
+At Rackspace, Nihar played an integral role in crafting the company's database
+strategy following the ObjectRocket acquisition through a build/buy/partner
+framework for approaching new database markets.  Since then, he has been on the
+ObjectRocket leadership team focused on product management and executing critical
+partnerships that underpin 70%+ of ObjectRocket revenue and hasmost recently been
+focused on building out Rackspace's Artificial Intelligence and Machine Learning
+(AI/ML) solution. With a significant breadth of experience across strategy,
+finance, product, sales and marketing, Nihar currently serves as the executive
+leader for Rackspace Data Solutions.Prior to Rackspace, Nihar spent 4 years at
+Deloitte Consulting and led high performing teams as a Management Consulting
+Manager.  Nihar has an MBA of University of Texas-Austin and a bachelor’s degree
+from UC-Berkeley in Electrical Engineering and Computer Science."
+
+Gupta, Praveen
 authorAvatar: 'https://secure.gravatar.com/avatar/9b15aeb3fffbd8eb9f6040435c24cc21'
 bio: "I've been a Racker for nine years and have 10+ years of Oracle DBA experience.
 Currently, I work on Oracle, MongoDB, and other NoSQL databases."
