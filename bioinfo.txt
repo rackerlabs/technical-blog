@@ -1,3 +1,8 @@
+Abhinav, Kumar
+authorAvatar: n/a
+bio: n/a
+
+
 Ahmed, Sabeehah
 authorAvatar: 'https://s.gravatar.com/avatar/e0a659be1385d03db4ca9eed09b1826d'
 bio: "Sabeehah Ahmed is a Solutions Architect specializing in Google Cloud. She
@@ -80,6 +85,19 @@ authorAvatar: 'https://gravatar.com/avatar/1817fa128828e2dbdd87e8e713a0cac0'
 bio: "As a Racker, I am having a good experience as Oracle APPS DBA and
 exploring new technology."
 
+Cortez, Teresa
+authorAvatar: 'https://secure.gravatar.com/avatar/889f88c8dacf485d4c00f7c6fcfd51f8'
+bio: "Teresa Cortez is a Product Manager working with Dynamics 365 from Microsoft.
+Formerly she implemented Dynamics 365 Business Central as a Senior Consultant
+and has been implementing Microsoft ERP solutions for the past five years. Her
+passion to learn continuously and to provide customers with enhanced business
+process solutions, which is what guided her to the technology services industry.
+Teresa holds a Business-Economics degree from the University of San Diego, and
+a Master of Business Administration degree from California State University, San
+Marcos. She also formerly served as the Vice President of Stella’s Kids Association,
+a non-profit organization. In her free time, Teresa enjoys camping (or better yet,
+glamping) at the beach or the sand dunes with her family."
+
 Croce, Steve
 authorAvatar: 'https://gravatar.com/avatar/56d03e2d0f853cff39c129cab3761d49'
 bio: "As Senior Product Manager for the ObjectRocket Database-as-a-Service
@@ -149,6 +167,30 @@ Administrator since I began my career and worked for top IT companies. I have
 Apps DBA. I am passionate about electronic gadgets, travelling, exploring, and
 tasting delicious food."
 
+Gupta, Nihar
+authorAvatar: n/a
+bio: "Nihar Gupta, Director of Data Solutions. With over 10 years of experience
+working with high-growth SaaS/Tech companies, Nihar has helped companies achieve
+their growth objectives through product management, strategic partnerships,
+corporate development efforts, and executing cross-functional strategic initiatives.
+At Rackspace, Nihar played an integral role in crafting the company's database
+strategy following the ObjectRocket acquisition through a build/buy/partner
+framework for approaching new database markets.  Since then, he has been on the
+ObjectRocket leadership team focused on product management and executing critical
+partnerships that underpin 70%+ of ObjectRocket revenue and hasmost recently been
+focused on building out Rackspace's Artificial Intelligence and Machine Learning
+(AI/ML) solution. With a significant breadth of experience across strategy,
+finance, product, sales and marketing, Nihar currently serves as the executive
+leader for Rackspace Data Solutions.Prior to Rackspace, Nihar spent 4 years at
+Deloitte Consulting and led high performing teams as a Management Consulting
+Manager.  Nihar has an MBA of University of Texas-Austin and a bachelor’s degree
+from UC-Berkeley in Electrical Engineering and Computer Science."
+
+Gupta, Praveen
+authorAvatar: 'https://secure.gravatar.com/avatar/9b15aeb3fffbd8eb9f6040435c24cc21'
+bio: "I've been a Racker for nine years and have 10+ years of Oracle DBA experience.
+Currently, I work on Oracle, MongoDB, and other NoSQL databases."
+
 Hawthorn, Rob
 authorAvatar: 'https://s.gravatar.com/avatar/c44cfe09d207a9f1529d2280dec8583a'
 bio: n/a
@@ -165,6 +207,24 @@ Hornbeck, Ash
 authorAvatar: https://www.gravatar.com/avatar/f96915d3f29e5623f9a9ff8c7cb3148f'
 bio: "Ash Hornbeck is a Sr. Product Architect on the Rackspace Managed Public
 Clouds Product Architecture Team."
+
+Johnson, Derek
+authorAvatar: 'https://s.gravatar.com/avatar/19e8fe9c0b86b792f8065cad11364cf7'
+bio: "An accomplished product development fanatic with an emphasis on execution,
+Derek has significant product management, product marketing, and program management
+experience across a broad range of industries with a track record for growing
+businesses and product lines from the ground up. Under Derek’s management, the
+ObjectRocket MongoDB and Redis offering grew extensively. In 2019, Derek took
+over developing the Rackspace DBA Services offering to flesh out the capabilities
+while working side by side with sales stakeholders, solutions architects, customer
+success managers, and service delivery engineers."
+
+Kalkhundiya, Kailash
+authorAvatar: 'https://gravatar.com/avatar/36ea6795bf5e6bfc103f34a38a303060'
+bio: "I'm an Oracle DBA with experience on the different flavors of Oracle RDBMS.
+I'm also certified on the AWS cloud platform and PostgreSQL. I am passionate
+about learning new things in different RDBMS environments and about Python, as
+a programing language."
 
 Kaminski, Brooks
 authorAvatar: 'https://gravatar.com/avatar/e7780474c27597a4395ac5eab894ab36'
@@ -220,11 +280,19 @@ authorAvatar: 'http://www.gravatar.com/avatar/791617263c70278859e1b26c15d13eab'
 bio: n/a
 
 Messerli, Antony
-authorAvatar: 'http://www.gravatar.com/avatar/53b5341ace963caa36117f64a3353185'
+authorAvatar: 'https://www.gravatar.com/avatar/53b5341ace963caa36117f64a3353185'
 bio: "Antony Messerli is a Principal Engineer at Rackspace who heads up the
 Global Infrastructure Engineering team responsible for hardware development and
 engineering.  He is a 17 year Racker with a background in hardware development,
 software engineering, and building large scale IaaS clouds."
+
+Mick, Jason
+authorAvatar: n/a
+bio: "I have been with Rackspace Global Infrastructure Engineering for 9 years.
+During my tenure I have focused on the design and development of compute platforms
+that optimize scale and cost for Rackspace customers. Leveraging strong partner
+relationships, I also lead the majority of our future hardware technology
+investigations."
 
 Mishra, Manoj
 authorAvatar: 'https://s.gravatar.com/avatar/9498305cda9dc4fe9d8f5873b09ff1e2'
@@ -267,6 +335,15 @@ Rathod, Sunil
 authorAvatar: 'https://s.gravatar.com/avatar/c3a915969820000d5dc4fc4f04ad8276'
 bio: "I enjoy working as Oracle Apps DBA with more than 12 years of experience
 in various Oracle technologies."
+
+
+Ross, John
+authorAvatar: 'https://s.gravatar.com/avatar/1e38fb66f5cebe18724102a37f3e1caf'
+bio: "John Ross is a Senior Product Manager at Rackspace for SAP Solutions and
+Services. He has more than 20 years of experience in technology working with a
+wide variety of customers across multiple industries. John is based in Orlando,
+Florida. Follow him on Twitter at **@johnrossjr**."
+
 
 Rudley, Jimmy
 authorAvatar: 'https://en.gravatar.com/userimage/151177997/5bed7e07ee47533cbd34b951d463bcb7.jpg'
