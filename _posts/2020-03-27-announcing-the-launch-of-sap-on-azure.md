@@ -4,6 +4,8 @@ title: "Announcing the launch of SAP on Azure"
 date: 2020-03-27 00:01
 comments: true
 author: John Ross
+authorAvatar: 'https://s.gravatar.com/avatar/1e38fb66f5cebe18724102a37f3e1caf'
+bio: "John Ross is a Senior Product Manager at Rackspace for SAP Solutions and Services. He has more than 20 years of experience in technology working with a wide variety of customers across multiple industries. John is based in Orlando, Florida. Follow him on Twitter at **@johnrossjr**."
 published: true
 authorIsRacker: true
 categories:
