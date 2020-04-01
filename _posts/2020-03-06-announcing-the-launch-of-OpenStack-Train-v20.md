@@ -4,6 +4,8 @@ title: "Announcing the launch of OpenStack Train v20"
 date: 2020-03-06 00:01
 comments: true
 author: David Krawczynski
+authorAvatar: 'https://s.gravatar.com/avatar/99399c9f2a456f6f1be216d6ddde8b11'
+bio: "Finding a balance for family, old cars, and IT while living by my mantra that 'luck is equal parts strength and spirit'!"
 published: true
 authorIsRacker: true
 categories:
