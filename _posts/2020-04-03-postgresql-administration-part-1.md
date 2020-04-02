@@ -83,14 +83,14 @@ Create an empty folder for the database installation.
     [root@snwdbsolpeprod01 postt]# pwd
     /mnt/postt
 
-#### Download RPM
+#### Download the RPM
 
 Run the following command to download the Red Hat Package Manager (RPM) for your
 OS version to start the Postgres installation:
 
     [root@snwdbsolpeprod01 postt]# wget http://yum.postgresql.org/9.3/redhat/rhel-7-x86_64/pgdg-redhat93-9.3-2.noarch.rpm
 
-#### Install RPM
+#### Install the RPM
 
 Install the RPM package by using the following command:
 
@@ -139,7 +139,7 @@ or
     [root@snwdbsolpeprod01 data]# /usr/pgsql-9.3/bin/postgresql93-setup initdb
     Initializing database ... OK
 
-#### Auto start Postgres
+#### Set Postgres to start automatically
 
 If you want PostgreSQL to start automatically when the OS starts, use the
 following command:
@@ -148,13 +148,13 @@ following command:
 
 **Note**: Forwarding request to 'systemctl enable postgresql-9.3.service'.
 
-#### Start PostgreSQL service
+#### Start the PostgreSQL service
 
 To start the PostgreSQL service, run the following command:
 
     [root@snwdbsolpeprod01 data]# systemctl start postgresql-9.3.service
 
-#### Configure the database:
+#### Configure the database
 
 You can easily configure the database by updating postgresql.conf as shown in
 the following example:
@@ -277,7 +277,7 @@ To create a new database, run the following command:
 
 Some basic administration commands include the following ones:
 
-#### Stop and start the PostgreSQL
+#### Stop and start PostgreSQL
 
     /opt/PostgreSQL/9.3/bin/pg_ctl -D /mnt/postt/data stop
     /opt/PostgreSQL/9.3/bin/pg_ctl -D /mnt/postt/data start
@@ -289,7 +289,7 @@ Some basic administration commands include the following ones:
     /opt/PostgreSQL/9.3/bin/pg_ctl -D /mnt/postt/data –m fast restart
     /opt/PostgreSQL/9.3/bin/pg_ctl -D /mnt/postt/data –m immediate restart
 
-#### How to check the PostgreSQL version
+#### Check the PostgreSQL version
 
     postgres=# select version();
 
@@ -298,7 +298,7 @@ Some basic administration commands include the following ones:
 
     select pid,backend_xid,backend_xmin,query from pg_stat_activity ;
 
-#### Table analyze status
+#### Analyze table status
 
     select relname,last_autoanalyze,last_analyze,n_mod_since_analyze from pg_stat_all_tables;
 
@@ -313,7 +313,7 @@ Some basic administration commands include the following ones:
     [postgres@postgres221 data]$ ls -l /mnt/postt/data/base/13003/16399
     -rw------- 1 postgres postgres 256024576 Feb 21 06:36 /mnt/postt/data/base/13003/16399
 
-#### Get schema names inside any instance or cluster
+#### Get schema names inside an instance or cluster
 
     select schema_name from information_schema.schemata;
 
