@@ -54,7 +54,7 @@ as the popular PostGIS geospatial database extender.
 
 ![]({% asset_path 2020-04-03-postgresql-administration-part-1/Picture1.png %})
 
-*Image Source*: [https://images.app.goo.gl/vGWWcYgNuqJd3wxn9](https://images.app.goo.gl/vGWWcYgNuqJd3wxn9)
+*Image Source*: [http://postgresql-database.blogspot.com/2013/08/postgresql-architecture.html](http://postgresql-database.blogspot.com/2013/08/postgresql-architecture.html)
 
 ### Support
 
