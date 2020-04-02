@@ -6,6 +6,11 @@ comments: true
 author: Kailash Chandra Kalkhundiya
 published: true
 authorIsRacker: true
+authorAvatar: 'https://gravatar.com/avatar/36ea6795bf5e6bfc103f34a38a303060'
+bio: "I'm an Oracle DBA with experience on the different flavors of Oracle RDBMS.
+I'm also certified on the AWS cloud platform and PostgreSQL. I am passionate
+about learning new things in different RDBMS environments and about Python, as
+a programing language."
 categories:
   - database
   - Oracle
