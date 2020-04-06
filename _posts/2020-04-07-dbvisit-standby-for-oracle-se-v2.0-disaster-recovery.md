@@ -31,16 +31,17 @@ and redo mechanism and provides a tool for database DR.
 
 Dbvisit Standby has the following features:
 
-- manual or automatic failover
-- graceful switchover
-- support for Oracle RAC, ASM, and OMF
-- compression and encryption for archive log transportation to create and maintain
-  the DR database using the DBvisit tool.
+- Manual or automatic failover
+- Graceful switchover
+- Support for Oracle Real Application Clusters (RAC), Automatic Storage Management (ASM),
+  and Oracle Manageed Files (OMF)
+- Compression and encryption for archive log transportation to create and maintain
+  the DR database by using the DBvisit tool
 
 Dbvisit Standby picks up archived logs from the primary database, compresses
 them if necessary, and transfers them to a standby database server. If any
 network issues occur, Dbvisit accumulates archives on the primary database until
-the network is restored. Dbvisit Standby also offers automatic or manual failover
+the restoration of the network. Dbvisit Standby also offers automatic or manual failover
 of Oracle Standard Databases.
 
 ### Why Dbvisit?
@@ -51,16 +52,17 @@ databases with no scripting needed for the Oracle standby database.
 You can switch over easily. Dbvisit performs a Graceful Switchover (GS) in a
 controlled manner, so you lose no data during the role change over. The latest
 version of Dbvisit gives you the option of using a Dbvisit snapshot to create a
-replica of your production database at a moment in time by using your standby
+replica of your production database at a point in time by using your standby
 database. After you create the snapshot, you can use the database without
 impacting the primary database because you performed this action on the standby
 database. Use the Dbvisit Standby Snapshot Option for reporting environments,
 DR testing, development or test environments, and application testing.
 
-Dbvisit Standby Version 8 consists of four components:
 
-- **`dbvctl`**: Dbvisit Standby Command Line Interface (CLI)
-- **`dbvnet`**: Dbvisit Network Communications
+Dbvisit Standby Version 8 consists of the following components:
+
+- **`dbvctl`**: Dbvisit Standby command line interface (CLI)
+- **`dbvnet`**: Dbvisit network communications
 - **`dbvagent`**: Dbvisit Agent
 - **`dbvserver`**: Dbvisit Central Console, a web-based user interface
 
@@ -71,7 +73,7 @@ Dbvisit Standby Version 8 consists of four components:
 
 ### Supported platforms
 
-DBvisit supports small to medium business databases on the following different
+DBvisit supports small to medium business databases on the following
 database platforms:
 
 - Oracle Standard Edition
@@ -79,8 +81,8 @@ database platforms:
 - Oracle Cloud
 - DR in the Cloud
 - Oracle Solaris
-- AIX
-- Real Application Cluster
+- Advanced Interactive eXecutive (AIX)
+- RAC
 
 ### Pricing
 
@@ -92,7 +94,7 @@ on your requirements.
 ### Conclusion
 
 Of the available DR solutions in the market, DBvisit is a more cost-effective
-Oracle database replication solution that you can use to manage and create Oracle
+Oracle database replication solution. You can use it to manage and create Oracle
 SE and SE2 standby databases easily.
 
 Currently, Rackspace already has Datapipe customers using the Dbvisit tool to
@@ -101,4 +103,4 @@ manage standby databases on the Standard Edition.
 Use the Feedback tab to make any comments or ask questions. You can also
 [chat now](https://www.rackspace.com/#chat) to start the conversation.
 
-<a class="cta teal" id="cta" href="https://www.rackspace.com/dba-services">Learn more about our Database services</a>
+<a class="cta teal" id="cta" href="https://www.rackspace.com/dba-services">Learn more about our Database services.</a>
