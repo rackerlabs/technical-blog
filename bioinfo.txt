@@ -364,6 +364,10 @@ for myself, so I have something to strive toward. I’m not comfortable with
 settling, and I’m always looking for an opportunity to do better and achieve
 greatness."
 
+Singh, Kanwerjeet
+authorAvatar: 'https://s.gravatar.com/avatar/f73f72ee82679fc3d9e52f277a83e410'
+bio: "Hey, I’m Kanwer: Oracle DBA and always looking to explore new database technologies."
+
 Srivastava, Deepanker
 authorAvatar: 'https://s.gravatar.com/avatar/305aead3fa98ed419b5b47b2f6c9b780'
 bio: n/a
