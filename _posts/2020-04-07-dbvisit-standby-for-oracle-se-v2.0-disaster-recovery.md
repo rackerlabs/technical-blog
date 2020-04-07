@@ -6,6 +6,8 @@ comments: true
 author: Kanwerjeet Singh
 published: true
 authorIsRacker: true
+authorAvatar: 'https://s.gravatar.com/avatar/f73f72ee82679fc3d9e52f277a83e410'
+bio: "Hey, I’m Kanwer: Oracle DBA and always looking to explore new database technologies."
 categories:
   - database
   - Oracle
