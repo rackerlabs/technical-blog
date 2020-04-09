@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Data governance and Salesforce adoption success"
-date: 2020-04-10 00:01
+date: 2020-04-09 00:01
 comments: true
 author: Ilham Ahmed
 published: true
