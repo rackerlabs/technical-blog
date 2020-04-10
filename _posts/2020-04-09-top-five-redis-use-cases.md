@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Top five Redis use cases"
-date: 2020-02-24 00:01
+date: 2020-04-10 00:01
 comments: true
 author: Joe Engel
 published: true
