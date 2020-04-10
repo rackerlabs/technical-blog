@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Announcing the launch of Cost Optimizer in Platform Essentials on AWS"
-date: 2020-04-13 00:01
+date: 2020-04-10 00:01
 comments: true
 author: Kari Greguska
 published: true
