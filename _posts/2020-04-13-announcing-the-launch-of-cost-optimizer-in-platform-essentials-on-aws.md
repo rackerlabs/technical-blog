@@ -68,8 +68,6 @@ understand the service details of cost drivers. Our Fanatical Experience&trade;
 is available 24x7 to answer billing and cost-related questions as well as to
 give guidance support on the underlying infrastructure.
 
-### Benefits
-
 Customers in the Enterprise space receive elevated cost optimization benefits
 including the following:
 
@@ -83,10 +81,11 @@ including the following:
 
 ### Conclusion
 
-Cost optimization is a key priority for our customers. Existing customers in
-this service have saved an average of 37%. We are confident that Platform
-Essentials with Cost Optimizer gives you cost-focused benefits to help your
-organizations succeed.
+Cost optimization is a key priority for our customers, and Platform Essentials
+with Cost Optimizer delivers results. Existing customers in this service have
+saved an average of 37%. We look forward to expanding delivery of this service
+to EMEA in addition to North America, and in the future, we will expand to other
+regions and public clouds!
 
 Visit [www.rackspace.com](https://www.rackspace.com) and click **Sales Chat**
 to get started.
