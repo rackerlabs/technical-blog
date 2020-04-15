@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Upgrade Oracle EBS 12.2 database to Oracle Database 19c"
-date: 2020-03-27 00:01
+date: 2020-04-27 00:01
 comments: true
 author: Vivek Verma
 published: true
