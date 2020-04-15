@@ -11,7 +11,8 @@ bio: "I'm a consultant working on Oracle E-Business Suite and related products.
 As an Amazon Cloud Solutions Architect Associate, I am passionate about the
 Cloud Platform. Python and Chef are works in progress."
 categories:
-    - DevOps
+    - Oracle
+    - database
 metaTitle: "Upgrade Oracle EBS 12.2 with Oracle Database 19c"
 metaDescription: "This blog post explores the steps to upgrade Oracle&reg; E-Business Suite (EBS) 12.2 with Oracle Database 19c."
 ogTitle: "Upgrade Oracle EBS 12.2 with Oracle Database 19c"
