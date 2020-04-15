@@ -34,7 +34,15 @@ With a Sitecore environment provisioned, I want the CM webapp to be accessed onl
 3. Click the **Add** button in the header to add a Private Endpoint <insert pic 2.png>
 4. Give the endpoint a name, select the subscription, virtual network to provision into and the subnet for the endpoint to consume. Do note, VNET integration requires a subnet as well, so the private endpoint and integration subnet cannot overlap!
 
-After the endpoint is provisioned, the web app will lose all public connectivity as a private IP has been associated with the fqdn and kudu URL.
+After the endpoint is provisioned, the web app will lose all inbound public connectivity as a private IP has been associated with the FQDN and KUDU URL. <pic endpointIp.png>. Thinking about DNS, if you are using the azurewebsites.net domain, a DNS zone will need to be added to route to the private IP associated with the webapp. With Sitecore, this would effectively break the application since I only added one webapp with a private endpoint. Think about the CM login where it talks to the SI webapp for auth. If I had one zone for azurewebsites.net, I would also need to add private endpoints to all my webapps, then add A records into that zone for communication. Gets pricey making everything a PremiumV2 sku. It would also break any other webapp you wanted to browse on the azurewebsites.net domain. There are two ways to approach this. Use a custom domain name on the webapp that matches a zone in your DNS server or create a dns zone with the azurewebsites.net fqdn of the webapp. Since this is a test, I oppted to use the latter and just created an A record pointing to the private ip of the endpoint for that specific webapp. <insert dnsNew.png>
+    
+   
+Just like an internal App Service Env, you need to take into account the KUDU scm url. As the picture shows, I have 2 zones per webapp. Each with an A record pointing to the private IP of the endpoint. 
+
+
+Now that onpremise users can access the CM webapp for secure content authoring and can publish, 
+
+
 
 The biggest issue about figuring out which method to use for configuration is determining
 how flexible you want to be for configuration options. With Azure PowerShell&reg;,
