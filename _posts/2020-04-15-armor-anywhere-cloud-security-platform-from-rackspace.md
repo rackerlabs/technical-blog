@@ -6,6 +6,15 @@ comments: true
 author: Chris Evans
 published: true
 authorIsRacker: true
+bio: "Chris Evans is a Senior Cybersecurity Architect with a desire for
+securing environments. In his current role at Rackspace, he architects the
+managed security operations, ensuring Rackspace’s customers are secured now and
+prepared for the future. Chris has more than 13 years’ experience dealing with
+IT, network engineering, security operations, security architecture, and
+management of technical teams and capabilities. Chris spent 10 years in the
+military, defending networks from Advanced Persistent Threats, and has managed
+security operations teams across all levels. You can follow Chris on LinkedIn
+at linkedin.com/in/Christopher-a-evans."
 categories:
     - Security
 metaTitle: "Armor Anywhere cloud security platform from Rackspace"
