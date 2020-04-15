@@ -1,22 +1,23 @@
 ---
 layout: post
-title: "Announcing the launch of Armor Anywhere"
-date: 2020-03-10 00:01
+title: "Armor Anywhere cloud security platform from Rackspace"
+date: 2020-04-15 00:01
 comments: true
 author: Chris Evans
 published: true
 authorIsRacker: true
 categories:
     - Security
-metaTitle: "Announcing the launch of Armor Anywhere"
+metaTitle: "Armor Anywhere cloud security platform from Rackspace"
 metaDescription: "Last month, Rackspace launched Armor Anywhere&reg; for Amazon&reg; Web Services (AWS), Microsoft&reg; Azure, Google Cloud Platform (GCP), and private cloud platforms."
-ogTitle: "Announcing the launch of Armor Anywhere"
+ogTitle: "Armor Anywhere cloud security platform from Rackspace"
 ogDescription: "Last month, Rackspace launched Armor Anywhere&reg; for Amazon&reg; Web Services (AWS), Microsoft&reg; Azure, Google Cloud Platform (GCP), and private cloud platforms."
 ---
 
-Last month, Rackspace launched Armor Anywhere&reg; for Amazon&reg; Web Services
-(AWS), Microsoft&reg; Azure, Google Cloud Platform (GCP), and private cloud
-platforms.
+Rackspace offers the Armor Anywhere&reg; cloud security platform to help secure
+workloads across multiple environments including  Amazon&reg; Web Services
+(AWS), Microsoft&reg; Azure, Google Cloud Platform (GCP), and Rackspace
+environments.
 
 <!-- more -->
 
@@ -35,7 +36,7 @@ Armor Anywhere provides the following benefits:
   including easy DevOps integration
 - Analyzes and correlates millions of events and log data to detect threats in
   your environment
-- Offers continuous and audit-ready compliance
+- Offers visibility and reporting for audit-ready compliance
 - Simplifies the collection of logs from multiple sources
 
 The agent-based security capabilities include the following elements:
@@ -61,12 +62,12 @@ With Armor Anywhere, you can do the following:
 - Include and integrate telemetry from additional cloud-native sources to
   produce an increased security outcome with minimal overhead.
 - Have Rackspace manage events and alerts to drive better outcomes around
-  business requirements.
+  security and business requirements.
 - Add or subtract tools based on your needs to take advantage of technological
   innovation and future mix-and-match capabilities.
 
 
-<a class="cta teal" id="cta" href="https://www.rackspace.com/managed-security-services">Learn more about Rackspace Managed Security Services</a>
+<a class="cta teal" id="cta" href="https://www.rackspace.com/lp/armor-anywhere">Learn more about Armor Anywhere</a>
 
 Visit [www.rackspace.com](https://www.rackspace.com) and click **Sales Chat**
 to get started.
