@@ -67,7 +67,7 @@ evaluate what you can accomplish:
 One of the great features of using the SQL Server resource provider is that you can now
 extend, within the Azure portal, the drives that you configured during deployment&mdash;without
 deallocating the virtual machine. You can extend a disk easily in the Azure portal by doing the
-following tasks:
+following tasks: 
 
 -  In the resource group where you provisioned the SQL Server, select the SQL VM
    resource-type object. It should have the same name as the VM.
