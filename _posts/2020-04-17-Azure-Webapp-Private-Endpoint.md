@@ -16,22 +16,25 @@ ogTitle: "Utilizing Azure Private Endpoints with Web Apps"
 ogDescription: "Configure Azure&reg; Private Endpoings with Azure Web Apps."
 ---
 
-Most release pipelines have some automation to do after configuration to a
-virtual machine (VM) to prepare it for use. Looking at SQL Server&reg;, you
-can configure a lot of options to make it production-ready. What most people
-do not know is that a resource provider within Microsoft&reg; Azure&reg; configures
-basic SQL Server settings without the need for any post-configuration scripts.
+An Azure Private Endpoint provides a private IP into the virtual network, allowing access from onpremise from VPN or Express route. Implementing an endpoint effectively blocks the public inbound access. This technology is very similiar to an internal App Service Environment, but much cheaper! 
 
 <!-- more -->
 
-When you use the Azure portal, a SQL Server VM comes already registered
-with the SQL Server resource provider. Using the resource provider includes
-the following benefits:
+Azure Private Endpoint for Web Apps has a few things to be called out:
+- It is only available in preview in two regions: EastUS and WestUS2
+- The App Service Plan requires a PremiumV2 SKU
+- A DNS server is required. This can be an Azure DNS zone or an VM acting as a DNS server. 
 
--  Automated patching and backups
--  Configurable SQL authentication modes
--  Configurable data, log, and temp file paths
--  User-defined storage workload types
+For a real world test, I provisioned a Sitecore 9.3 XM scaled development environment within Azure PaaS. I deployed Solr Cloud into a virtual network with the correct subnets for regional vnet integration. Vnet integration allows App Service webapps to make outbound calls into a virtual network, but not inbound. While Azure has a neat Azure private dns offering, it does not work with VNET inetgration. A DNS Server is required for name resolution into the VNET. Not to jump ahead, but creating a private endpoint will give you the option to use an Azure Private DNS Zone, but I skipped it since I am already using a DNS server. Putting everything together, a private endpoint allows private inbound into the Web App and vnet integration allows private outbound to my virtual network. Sounds like a cheaper App Service Environment!
+
+With a Sitecore environment provisioned, I want the CM webapp to be accessed only by users within my onpremise corporate network. Out of the box, the CM webapp has a public endpoint which anyone can access. To meet this requirement, a private endpoint should be provisioned for the webapp. Follow these steps to create an endpoint:
+
+1. Make sure the App Service plan hosting the CM web app is using a PremiumV2 sku.
+2. Click on the CM Web App, select **Networking** from the blade, then select **Configure your private endpoint connections** <insert pic 1.png>
+3. Click the **Add** button in the header to add a Private Endpoint <insert pic 2.png>
+4. Give the endpoint a name, select the subscription, virtual network to provision into and the subnet for the endpoint to consume. Do note, VNET integration requires a subnet as well, so the private endpoint and integration subnet cannot overlap!
+
+After the endpoint is provisioned, the web app will lose all public connectivity as a private IP has been associated with the fqdn and kudu URL.
 
 The biggest issue about figuring out which method to use for configuration is determining
 how flexible you want to be for configuration options. With Azure PowerShell&reg;,
