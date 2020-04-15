@@ -235,6 +235,11 @@ Kaminski, Brooks
 authorAvatar: 'https://gravatar.com/avatar/e7780474c27597a4395ac5eab894ab36'
 bio: n/a
 
+King, Brian
+authorAvatar: 'https://gravatar.com/avatar/f1f1a0738d42c8fa0a92ccded0fe4c97'
+bio: "A Racker since 2011, Brian specializes in Openstack, virtualization, and
+IaaS. When not working, he enjoys electric guitars, pinball, and karaoke."
+
 Kolb, Dan
 authorAvatar: 'https://gravatar.com/avatar/fbdcdc8fcc8d2ae995d763dc6ed144d4'
 bio: "Dan Kolb is a Software Developer in Test in the Rackspace Private Cloud
