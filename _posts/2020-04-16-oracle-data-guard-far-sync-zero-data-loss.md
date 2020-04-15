@@ -27,8 +27,8 @@ between the primary and standby database, which are physically far apart. This
 technique in Oracle 12c ensures zero data loss and protection for primary
 databases located at any distance.
 
-The feature accepts redo from a primary database and ships the redo to the standby.
-Because Far Sync instance doesn’t contain datafiles, it cannot be opened as a
+The feature accepts a redo from a primary database and ships the redo to the standby.
+Because the Far Sync instance doesn’t contain datafiles, you cannot open it as a
 primary or a standby in the future.
 
 The Far Sync instance minimizes impact on commit response time, reducing that
@@ -44,9 +44,9 @@ The following image shows a sample of Far Sync architecture:
 
 ### Configuration
 
-To configure Far Sync, perform the following steps:
+To configure Far Sync, perform the following steps.
 
-#### 1. Create a Far sync control file from a primary and copy to the far sync server
+#### 1. Create a Far Sync control file from a primary and copy it to the Far Sync server
 
 Run the following code:
 
@@ -63,7 +63,7 @@ Select the Far Sync role by running the following code:
 
 #### 3. Set parameters for the primary database
 
-On the primary database, set the following parameters to the init file:
+On the primary database, add the following parameters to the init file:
 
     LOG_ARCHIVE_CONFIG='DG_CONFIG=(oraprimary,orafarsync,orastandby)' scope=both;
     LOG_ARCHIVE_DEST_2='SERVICE=farsync SYNC AFFIRM VALID_FOR=(ONLINE_LOGFILES,PRIMARY_ROLE) DB_UNIQUE_NAME=orafarsync'
@@ -87,7 +87,7 @@ On the standby database, add the following parameters to init file:
 
 ### Conclusion:
 
-The Far Sync feature helps to configure a zero data loss long distance standby
+The Far Sync feature helps to configure a zero-data-loss long-distance standby
 database for organizations. It also helps to overcome inhibitions and win the
 confidence of enterprises that think zero data loss can't be real and worry
 about database performance.
