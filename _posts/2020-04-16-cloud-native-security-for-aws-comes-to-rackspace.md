@@ -3,7 +3,7 @@ layout: post
 title: "Cloud Native Security for AWS comes to Rackspace"
 date: 2020-04-16 00:01
 comments: true
-author: Brian King
+author: Maxim Rozen
 published: true
 authorIsRacker: true
 categories:
