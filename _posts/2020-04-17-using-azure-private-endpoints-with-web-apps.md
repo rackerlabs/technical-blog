@@ -46,25 +46,19 @@ To meet this requirement, I needed to provision a private endpoint for the web a
 an endpoint:
 
 1. Make sure the App Service plan hosting the CM web app is using a PremiumV2 SKU.
-
 2. Click on the CM web app, select **Networking** from the blade, and select **Configure your private endpoint connections**.
-
-[resources]({% asset_path 2020-04-17-Azure-Webapp-Private-Endpoint/1.png %})
-
+![resources]({% asset_path 2020-04-17-Azure-Webapp-Private-Endpoint/1.png %})
 3. Click **Add** in the header to add a private endpoint.
-
-[resources]({% asset_path 2020-04-17-Azure-Webapp-Private-Endpoint/2.png %})
-
+![resources]({% asset_path 2020-04-17-Azure-Webapp-Private-Endpoint/2.png %})
 4. Give the endpoint a name, select the subscription, the VNet to provision into, and the subnet for the
 endpoint to consume. Note that VNet integration requires a subnet as well, so the private endpoint and integration
 subnet cannot overlap.
-
-[resources]({% asset_path 2020-04-17-Azure-Webapp-Private-Endpoint/3.png %})
+![resources]({% asset_path 2020-04-17-Azure-Webapp-Private-Endpoint/3.png %})
 
 After you provision the endpoint, the web app loses all inbound public connectivity because you associated a
 private IP address with the fully qualified domain name (FQDN) and Kudu URL. 
     
-[]({% asset_path 2020-04-17-Azure-Webapp-Private-Endpoint/endpointIp.png %})
+![]({% asset_path 2020-04-17-Azure-Webapp-Private-Endpoint/endpointIp.png %})
     
 If you are using the **azurewebsites.net** domain, you need to add a DNS zone to route traffic to the private
 IP address associated with the web app. With Sitecore, this would effectively break the application because I
@@ -94,21 +88,13 @@ access it. Previously, by using an Internal ASE, I could provision an applicatio
 VNET. I didn't see how this would be any different, so I approached it by using the following steps:
 
 1. Provisioned an application gateway.
-
 2. For the backend pool, targeted the FQDN of the CD-role web app.
-
 ![resources]({% asset_path 2020-04-17-Azure-Webapp-Private-Endpoint/backendpool.png %})
-
 3. Configured the health probe to use the FQDN of the CD-role web app.
-
 ![resources]({% asset_path 2020-04-17-Azure-Webapp-Private-Endpoint/appgwprobe.png %})
-
 4. Overrode the backend pool host name by picking the hostname from the backend target.
-
 ![resources]({% asset_path 2020-04-17-Azure-Webapp-Private-Endpoint/overrideBackendPool.png %})
-
 5. Configured my public DNS for my custom domain CNAME to the application gateway public FrontendIP.
-
 6. Finally, I configured Secure Sockets Layer (SSL) offloading for my custom domain.
 
 ### Conclusion
