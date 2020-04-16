@@ -37,12 +37,12 @@ but not inbound. While Azure has a neat Azure private Domain Name System (DNS) o
 with VNet integration. You need a DNS server for name resolution into the VNet. Not to jump ahead, but
 creating a private endpoint gives you the option to use an Azure Private DNS Zone. I skipped it because I am
 already using a DNS server. Putting everything together, a private endpoint allows private inbound into the
-web app, and VNet integration allows private outbound access to my virtual network. This sounds like a cheaper
+web app, and VNet integration allows private outbound to my virtual network. This sounds like a cheaper
 ASE.
 
 With my Sitecore environment provisioned, I wanted only users within my on-premise corporate network to access
 the Content Management (CM) web app. Out of the box, the CM web app has a public endpoint that anyone can access.
-To meet this requirement, I needed to provision a private endpoint for the web app. Follow these steps to create
+To meet my requirement, I needed to provision a private endpoint for the web app. Follow these steps to create
 an endpoint:
 
 1. Make sure the App Service plan hosting the CM web app is using a PremiumV2 SKU.
@@ -50,9 +50,9 @@ an endpoint:
 ![resources]({% asset_path 2020-04-17-Azure-Webapp-Private-Endpoint/1.png %})
 3. Click **Add** in the header to add a private endpoint.
 ![resources]({% asset_path 2020-04-17-Azure-Webapp-Private-Endpoint/2.png %})
-4. Give the endpoint a name, select the subscription, the VNet to provision into, and the subnet for the
-endpoint to consume. Note that VNet integration requires a subnet as well, so the private endpoint and integration
-subnet cannot overlap.
+4. Give the endpoint a name.Then, select the subscription, the VNet to provision into, and the subnet for the
+   endpoint to consume. Note that the VNet integration also requires a subnet, so the private endpoint and the
+   integration subnet cannot overlap.
 ![resources]({% asset_path 2020-04-17-Azure-Webapp-Private-Endpoint/3.png %})
 
 After you provision the endpoint, the web app loses all inbound public connectivity because you associated a
