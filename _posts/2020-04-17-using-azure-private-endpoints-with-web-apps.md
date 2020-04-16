@@ -22,7 +22,7 @@ This technology is very similar to an internal App Service Environment (ASE) but
 
 <!-- more -->
 
-YOu should know the folloing about Azure Private Endpoint:
+You should know the following details about Azure Private Endpoint:
 
 - It is only available in preview in two regions: EastUS and WestUS2.
 - The App Service Plan requires a PremiumV2 stock-keeping unit (SKU).
