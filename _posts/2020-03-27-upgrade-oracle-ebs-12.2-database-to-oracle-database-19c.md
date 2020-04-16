@@ -11,7 +11,8 @@ bio: "I'm a consultant working on Oracle E-Business Suite and related products.
 As an Amazon Cloud Solutions Architect Associate, I am passionate about the
 Cloud Platform. Python and Chef are works in progress."
 categories:
-    - DevOps
+    - Oracle
+    - database
 metaTitle: "Upgrade Oracle EBS 12.2 with Oracle Database 19c"
 metaDescription: "This blog post explores the steps to upgrade Oracle&reg; E-Business Suite (EBS) 12.2 with Oracle Database 19c."
 ogTitle: "Upgrade Oracle EBS 12.2 with Oracle Database 19c"
@@ -81,7 +82,7 @@ Refer to the following notes to upgrade an EBS database to 19c:
    and install the 19c database software. Choose the **Set Up Software Only**
    option.
 
-2. Apply additional 19c Relational Database Management System (RDBMS( patches to
+2. Apply additional 19c Relational Database Management System (RDBMS) patches to
    19c **Oracle Home**.
 
 3. Create a CDB using the Database Configuration Assistant (DBCA). Create an
@@ -126,8 +127,8 @@ initialization parameter settings to the new parameter.
 
 At this point, there are two databases associated with the 19c Oracle home:
 
-- the CDB database
-- the non-CDB database.
+- The CDB database
+- The non-CDB database
 
 The EBS database is the non-CDB database that the upgrade migrates to the PDB
 and plugs into the CDB.

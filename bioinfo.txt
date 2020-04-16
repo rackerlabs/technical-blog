@@ -132,6 +132,11 @@ Cloud infrastructure, and the AWS infrastructure.  He was awarded the Fanatical
 Jacket, Rackspace’s highest honor, because of the focus that he places on
 fanatically supporting not only external customers, but internal customers as well."
 
+Dhiman, Vivek
+authorAvatar: 'https://s.gravatar.com/avatar/d29da50d9ece9c12e208afaa0de68cd5'
+bio: "I've been a Racker for eight years and have 13+ years of Oracle DBA
+experience. Currently, I work on Oracle, MongoDB, and other NoSQL databases."
+
 Dihingra, Sundeep
 authorAvatar: 'https://s.gravatar.com/avatar/48fed1de86eefae0457dffea1b4bcf64'
 bio: "Working as a Senior DBA for the last 15 years, Sundeep has solid expertise
@@ -229,6 +234,11 @@ a programing language."
 Kaminski, Brooks
 authorAvatar: 'https://gravatar.com/avatar/e7780474c27597a4395ac5eab894ab36'
 bio: n/a
+
+King, Brian
+authorAvatar: 'https://gravatar.com/avatar/f1f1a0738d42c8fa0a92ccded0fe4c97'
+bio: "A Racker since 2011, Brian specializes in Openstack, virtualization, and
+IaaS. When not working, he enjoys electric guitars, pinball, and karaoke."
 
 Kolb, Dan
 authorAvatar: 'https://gravatar.com/avatar/fbdcdc8fcc8d2ae995d763dc6ed144d4'

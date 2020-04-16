@@ -6,6 +6,9 @@ comments: true
 author: Brian King
 published: true
 authorIsRacker: true
+authorAvatar: 'https://gravatar.com/avatar/f1f1a0738d42c8fa0a92ccded0fe4c97'
+bio: "A Racker since 2011, Brian specializes in Openstack, virtualization, and
+IaaS. When not working, he enjoys electric guitars, pinball, and karaoke."
 categories:
     - General
 metaTitle: "Introducing the FortiGate-VM for Rackspace OpenStack Public Cloud"
