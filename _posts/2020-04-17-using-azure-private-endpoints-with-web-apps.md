@@ -32,13 +32,13 @@ You should know the following details about Azure Private Endpoint:
 
 For a real-world test, I provisioned a Sitecore&reg; 9.3 XM scaled development environment within Azure
 PaaS. I deployed SolrCloud&reg; into a virtual network (VNet) with the correct subnets for regional VNet
-integration and a VPN gateway to my onpremise location. VNet integration allows App Service web apps to make outbound calls into a virtual network,
-but not inbound. While Azure has a neat Azure private Domain Name System (DNS) offering, it does not work
-with VNet integration. You need a DNS server for name resolution into the VNet. Not to jump ahead, but
-creating a private endpoint gives you the option to use an Azure Private DNS Zone. I skipped it because I am
-already using a DNS server. Putting everything together, a private endpoint allows private inbound into the
-web app, and VNet integration allows private outbound to my virtual network. This sounds like a cheaper
-ASE.
+integration and a VPN gateway to my on-premise location. VNet integration allows App Service web apps to
+make outbound calls into a virtual network, but not inbound. While Azure has a neat Azure private Domain
+Name System (DNS) offering, it does not work with VNet integration. You need a DNS server for name
+resolution into the VNet. Not to jump ahead, but creating a private endpoint gives you the option to use
+an Azure Private DNS Zone. I skipped it because I am already using a DNS server. Putting everything together,
+a private endpoint allows private inbound into the web app, and VNet integration allows private outbound to
+my virtual network. This sounds like a cheaper ASE.
 
 With my Sitecore environment provisioned, I wanted only users within my on-premise corporate network to access
 the Content Management (CM) web app. Out of the box, the CM web app has a public endpoint that anyone can access.
