@@ -16,7 +16,7 @@ ogTitle: "Using Azure private endpoints with web apps"
 ogDescription: "Configure Azure&reg; private endpoints with Azure web apps."
 ---
 
-Azure&reg; Private Endpoints provides private IP address access into a virtual network, allowing access
+Azure&reg; Private Endpoints provides private IP address access using a nic attached into a virtual network subnet for an Azure web app, allowing access
 from an on-premise VPN or ExpressRoute. Implementing an endpoint effectively blocks the public inbound access.
 This technology is very similar to an internal App Service Environment (ASE) but much cheaper!
 
