@@ -16,21 +16,19 @@ ogTitle: "Get ready to Conga: 3 new solutions that build on the Salesforce platf
 ogDescription: ""
 ---
 
-Many companies are turning to cloud based applications to increase the return on their Salesforce CRM investment. Last month RelationEdge went onsite with Conga to get a more intimate understanding of their new offerings. We received training on how to quickly navigate Conga’s applications and more efficiently handle customer and prospect requests. Conga’s solutions can help streamline processes and align our clients’ sales, marketing, and customer service strategies.
-
-
+Many companies are turning to cloud based applications to increase the return on their Salesforce&reg; Customer Relationship Management (CRM) investment. Rackspace recently went onsite with Conga to get a more intimate understanding of their new offerings. Conga provided training on how to navigate their applications and more efficiently handle customer and prospect requests. Conga’s solutions can help streamline processes and align clients’ sales, marketing, and customer service strategies.
 
 <!-- more -->
 
-Conga is best known for their document generation solution. With Conga, a click of a button can generate documents as complicated as a contract with the right clauses for that particular deal, an excel file 100% formatted per management’s expectations, or a simple quote using your Salesforce data. However, they’ve continued to evolve their product suite with the addition of three new solutions: Contracts, Sign, and ActionGrid. All three are strong additions to the Conga suite, and all are aimed to more efficiently organize, simplify and automate data document generation.
+Conga is best known for their document generation solution. With Conga, you can generate complicated documents like contracts, well-formatted excel files 100%, or simple quotes from your Salesforce data. However, they’ve continued to evolve their product suite with the addition of three new solutions:Contracts, Sign, and ActionGrid. All three are strong additions to the Conga suite, and all aim to more efficiently organize, simplify, and automate data document generation.
 
-### Conga Contracts: Speed Up the Contract Negotiation Process
+### Conga contracts:speed up the contract negotiation process
 
-This may sound familiar: You know that Salesforce helps to streamline daily activities and can increase your sales, but everything is getting bogged down in the contract management lifecycle. Your sales reps have to reach out to legal to make amendments or get approval, a process which can be tedious and time consuming, especially when you are almost at the finish line. Conga Contracts can come to the rescue.
+This might sound familiar&mdash;You know that Salesforce helps to streamline daily activities and can increase your sales, but everything is getting bogged down in the contract management lifecycle. Your sales reps reach out to legal to make amendments or get approval but this process can be tedious and time consuming, especially when you are almost done. Conga Contracts can help.
 
-Conga Contracts gives customers the ability to send a contract for negotiation, redline, and compare changes all within Salesforce. Solutions like Conga can help equip your team and speed up the contract negotiation process —  resulting in more closed deals!
+Conga Contracts gives customers the ability to send a contract for negotiation, redline, and compare changes all within Salesforce. Solutions like Conga can help equip your team and speed up the contract negotiation process&mdash;resulting in more closed deals.
 
-### ActionGrid: Actionable Views Into Salesforce Data
+### ActionGrid: actionable views into Salesforce data
 
 Sales reviews their forecasts at the end of each week to make sure management is addressing every deal correctly. Sales operations is charged with creating a very specific output at the end of each call, typically taking them hours or even the entire weekend to make sure the output is correct and formulated correctly.
 
