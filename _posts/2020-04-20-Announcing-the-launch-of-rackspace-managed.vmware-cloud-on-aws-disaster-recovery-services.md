@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Announcing the launch of Rackspace Managed VMWare Cloud on AWS Disaster Recovery Services"
+title: "Announcing the launch of Rackspace Managed VMware Cloud on AWS Disaster Recovery Services"
 date: 2020-04-15 00:01
 comments: true
 author: Andy Smith
@@ -41,29 +41,30 @@ The following factors can affect how you stand up a DR solution:
 - Do you have the budget to maintain a DR site? And the related question, what
   is your cost of being down in the event of a major outage?
 
-### Our Solution
+### Our solution
 
 Rackspace Managed VMware Cloud on AWS Disaster Recovery Services provide a
 solution that can help you quickly, easily, and cost-effectively get a DR site
 up and running to protect your VMware applications and data. With Rackspace,
-VMC on AWS, and VMware Site Recovery, you get:
+VMC on AWS and VMware Site Recovery, you get:
 
 - A dedicated, single-tenant VMware Software-Defined Data Center (SDDC) using
   VMC on AWS as a target site
 - Support for customer-managed and Rackspace-managed source VMware environments
-- Replication and failover orchestration using VMware Site Recovery service,
+- Replication and failover orchestration using VMware Site Recovery,
   consisting of familiar and proven VMware vSphere Replication and Site Recovery
   Manager
-- A choice of 16 AWS Regional data centers around the globe for your DR target
+- A choice of 16 AWS regional data centers around the globe for your DR target
   location
 - A choice of the following Rackspace service levels:
-  - Essential: You know what you're doing with vSphere Replication and SRM. You
-    want Rackspace to set it up, and you'll take it from there.
+  - Essential: You know what you're doing with vSphere Replication and Storage
+    Resource Management (SRM). You want Rackspace to set it up, and you'll take
+    it from there.
   - Managed: You'd rather Rackspace manage it for you.
 - A choice of standard or pilot-light configuration by using Rackspace Managed
-  NetApp Cloud Volumes external storage
+  NetApp&reg; Cloud Volumes external storage
 
-Wait, what is that last bullet about? One of the challenges with using VMC on
+Wait, what is that last bullet about? One of the challenges of using VMC on
 AWS as a DR target site is the storage configuration. As you may know, with
 hyper-converged infrastructure, the only way to add more storage in a VMC on AWS
 SDDC is to add more hosts. For DR configurations, especially, this can mean
@@ -71,7 +72,7 @@ paying for more hosts than you need, which sit idle most of the time. Don't
 worry, Rackspace has you covered.
 
 [Rackspace is one of a very exclusive set of VMware Cloud on AWS Managed Service
-Providers that can connect external NFS storage as a datastore](https://www.rackspace.com/blog/reduce-costs-of-vmware-cloud-on-aws-for-storage-heavy-workloads),
+Providers that can connect external Network File System (NFS) storage as a datastore](https://www.rackspace.com/blog/reduce-costs-of-vmware-cloud-on-aws-for-storage-heavy-workloads)
 and the only provider that can do so globally. We've partnered with NetApp and
 their Cloud Volumes Service for AWS to deliver the best performing external
 storage solution available for VMC on AWS. It's not in every region
@@ -89,14 +90,15 @@ for full DR site capacity when you genuinely need it. Of course, there are pros
 and cons with every approach, so the Rackspace team can discuss your requirements
 and tradeoffs to decide what solution is best for you.
 
-### Need a Plan?
+### Need a plan?
 
 Sounds great, right? Perhaps this sounds like something you need, but you don't
 have a service continuity plan today, and you're not sure where to start.
 Rackspace has you covered there, too. Rackspace Professional Services can work
 with you to assess your situation and requirements and develop a plan. Rackspace
 experts use 20+ years of managed cloud experience, deep relationships with cloud
-providers, and ITIL expertise to establish an end-to-end a service-continuity
+providers, and Information Technology Infrastructure Library (ITIL) expertise to
+establish an end-to-end service-continuity
 framework and governance policies. These tools build organizational resilience
 and help safeguard your organization's assets, brand, and productivity.
 
