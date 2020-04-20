@@ -46,7 +46,7 @@ Amazon introduced AWS VPC peering, which made this much easier. However, it did
 come with its limitations. One of the main ones being connectivity is not
 transitive between VPCs.
 
-![]({% asset_path 2020-04-16-oracle-data-guard-far-sync-zero-data-loss/Picture1.png %})
+![]({% asset_path 2020-04-21-aws-transit-gateway-made-easier-with-inter-region-peering/Picture1.png %})
 
 For example, in the preceding diagram, VPC A can talk to both B and C, but B
 and C cannot talk to each other. If B and C need to communicate to each other,
@@ -57,7 +57,7 @@ Eventually, you need to manage the connectivity between each VPC without having
 a central mechanism to route between VPCs. You could easily end up with a web
 similar to the one shown in the following image:
 
-![]({% asset_path 2020-04-16-oracle-data-guard-far-sync-zero-data-loss/Picture2.png %})
+![]({% asset_path 2020-04-21-aws-transit-gateway-made-easier-with-inter-region-peering/Picture2.png %})
 
 ### Solution
 
@@ -68,7 +68,7 @@ Enter AWS Transit Gateway (TGW). TGW lets you do the following:
 - Manage VPCs that are in a different account to yours.
 - Create a hub and spoke network, as shown in the following diagram:
 
-![]({% asset_path 2020-04-16-oracle-data-guard-far-sync-zero-data-loss/Picture3.png %})
+![]({% asset_path 2020-04-21-aws-transit-gateway-made-easier-with-inter-region-peering/Picture3.png %})
 
 Initially, TGW didn't support inter-region peering, which was a major concern,
 but Amazon has resolved this problem and added it to the feature list. Now, you
@@ -85,7 +85,7 @@ The goal: you should be able to ping the instances from:
 •	VPC A --> VPC B
 •	VPC C --> VPC D
 
-![]({% asset_path 2020-04-16-oracle-data-guard-far-sync-zero-data-loss/Picture4.png %})
+![]({% asset_path 2020-04-21-aws-transit-gateway-made-easier-with-inter-region-peering/Picture4.png %})
 
 ### Deployment
 
@@ -97,18 +97,18 @@ Use the following steps to deploy TGW:
 
 Sign in to your AWS account, go to the VPC console, and select **Transit Gateway**:
 
-![]({% asset_path 2020-04-16-oracle-data-guard-far-sync-zero-data-loss/Picture5.png %})
+![]({% asset_path 2020-04-21-aws-transit-gateway-made-easier-with-inter-region-peering/Picture5.png %})
 
 #### 2. Create the TGW
 
 Select **Create Transit Gateway**. Enter a name for the TGW. For this test,
 leave the rest as it is, and click **Create Transit Gateway**:
 
-![]({% asset_path 2020-04-16-oracle-data-guard-far-sync-zero-data-loss/Picture6.png %})
+![]({% asset_path 2020-04-21-aws-transit-gateway-made-easier-with-inter-region-peering/Picture6.png %})
 
 It will take a few minutes for the TGW to become available.
 
-![]({% asset_path 2020-04-16-oracle-data-guard-far-sync-zero-data-loss/Picture7.png %})
+![]({% asset_path 2020-04-21-aws-transit-gateway-made-easier-with-inter-region-peering/Picture7.png %})
 
 
 #### 3. Configure VPC A
@@ -127,14 +127,14 @@ d.	Select all the subnets to which you want TGW to route traffic.
 
 You must select at least one subnet and can select only one subnet per Availability Zone.
 
-![]({% asset_path 2020-04-16-oracle-data-guard-far-sync-zero-data-loss/Picture8.png %})
+![]({% asset_path 2020-04-21-aws-transit-gateway-made-easier-with-inter-region-peering/Picture8.png %})
 
 #### 4. Configure VPC B
 
 Create a second attachment for VPC B following the preceding VPC A steps for VPC
 B. You now have two TGW attachments.
 
-![]({% asset_path 2020-04-16-oracle-data-guard-far-sync-zero-data-loss/Picture9.png %})
+![]({% asset_path 2020-04-21-aws-transit-gateway-made-easier-with-inter-region-peering/Picture9.png %})
 
 #### 5. Configure route tables
 
@@ -142,7 +142,7 @@ Go to **Transit Gateway Route Tables** from the left-hand side to see the defaul
 route table. Notice two routes in the **Propagation** tab. Propagation occurred
 automatically based on the TGW we created in the first step.
 
-![]({% asset_path 2020-04-16-oracle-data-guard-far-sync-zero-data-loss/Picture10.png %})
+![]({% asset_path 2020-04-21-aws-transit-gateway-made-easier-with-inter-region-peering/Picture10.png %})
 
 Let's try and ping the instance in VPC B from VPC A. What happens?
 
@@ -155,13 +155,13 @@ you need to set the returning destination route back to VPC A.
 
 The target is the TGW ID.
 
-![]({% asset_path 2020-04-16-oracle-data-guard-far-sync-zero-data-loss/Picture11.png %})
+![]({% asset_path 2020-04-21-aws-transit-gateway-made-easier-with-inter-region-peering/Picture11.png %})
 
 Now, run the ping test again, and you should get a response. Well done!
 
 This completes the connection highlighted in green in the following diagram:
 
-![]({% asset_path 2020-04-16-oracle-data-guard-far-sync-zero-data-loss/Picture12.png %})
+![]({% asset_path 2020-04-21-aws-transit-gateway-made-easier-with-inter-region-peering/Picture12.png %})
 
 #### 6. Configure inter-region TGW
 
@@ -170,12 +170,12 @@ to use the **Peering Connection** type to create a new TGW attachment to the TGW
 based in the second region, North Virginia. The following diagram shows the
 **TGW ID** for the outside North Virginia region in this demo:
 
-![]({% asset_path 2020-04-16-oracle-data-guard-far-sync-zero-data-loss/Picture13.png %})
+![]({% asset_path 2020-04-21-aws-transit-gateway-made-easier-with-inter-region-peering/Picture13.png %})
 
 Go to the **n.virginia** TGW attachment console and notice a peering request in
 a pending state. Go ahead and accept the request:
 
-![]({% asset_path 2020-04-16-oracle-data-guard-far-sync-zero-data-loss/Picture14.png %})
+![]({% asset_path 2020-04-21-aws-transit-gateway-made-easier-with-inter-region-peering/Picture14.png %})
 
 #### 7. Configure VPC C and D attachments
 
@@ -184,9 +184,9 @@ regions with the attachment type: **VPC**.
 
 The following diagrams shows the VPC C and D details:
 
-![]({% asset_path 2020-04-16-oracle-data-guard-far-sync-zero-data-loss/Picture15.png %})
+![]({% asset_path 2020-04-21-aws-transit-gateway-made-easier-with-inter-region-peering/Picture15.png %})
 
-![]({% asset_path 2020-04-16-oracle-data-guard-far-sync-zero-data-loss/Picture16.png %})
+![]({% asset_path 2020-04-21-aws-transit-gateway-made-easier-with-inter-region-peering/Picture16.png %})
 
 Use the following steps to configure the attachments:
 
@@ -196,11 +196,11 @@ inter-domain routing (CIDR) range of VPC D in **n.virginia** region.
 NOTE: Make sure to select the correct attachment that references the *peering*
 and not the *VPC attachment* type:
 
-![]({% asset_path 2020-04-16-oracle-data-guard-far-sync-zero-data-loss/Picture17.png %})
+![]({% asset_path 2020-04-21-aws-transit-gateway-made-easier-with-inter-region-peering/Picture17.png %})
 
 b. Do the same action in the **n.virginia** region to route traffic to VPC C:
 
-![]({% asset_path 2020-04-16-oracle-data-guard-far-sync-zero-data-loss/Picture18.png %})
+![]({% asset_path 2020-04-21-aws-transit-gateway-made-easier-with-inter-region-peering/Picture18.png %})
 
 #### 8. Configure the route table
 
