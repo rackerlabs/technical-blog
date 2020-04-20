@@ -7,18 +7,19 @@ author: Tatiana Cooke
 published: true
 authorIsRacker: true
 authorAvatar: ''
-bio: ""
 categories:
     - Salesforce
 metaTitle: "Get ready to Conga: three new solutions that build on the Salesforce platform"
-metaDescription: ""
+metaDescription: "With Conga, you can create complicated documents like contracts, well-formatted excel files, or simple quotes from your Salesforce data. "
 ogTitle: "Get ready to Conga: three new solutions that build on the Salesforce platform"
-ogDescription: ""
+ogDescription: "With Conga, you can create complicated documents like contracts, well-formatted excel files, or simple quotes from your Salesforce data. "
 ---
 
 Many companies are turning to cloud-based applications to increase the return on their Salesforce&reg; Customer Relationship Management (CRM) investment. Rackspace recently went onsite with [Conga] (https://conga.com) to get a more intimate understanding of their new offerings. Conga provided training on how to navigate their applications and more efficiently handle customer and prospect requests. Conga’s solutions can help streamline processes and align clients’ sales, marketing, and customer service strategies.
 
 <!-- more -->
+
+![]({% asset_path 2020-04-20-get-ready-to-conga-three-new-solutions-that-build-on-the-salesforce-platform/photo-1.png %})
 
 Conga is best known for their document generation solution. With Conga, you can create complicated documents like contracts, well-formatted excel files, or simple quotes from your Salesforce data. However, they’ve continued to evolve their product suite with the addition of three new solutions:Contracts, Sign, and ActionGrid. All three are strong additions to the Conga suite, and all aim to more efficiently organize, simplify, and automate data document generation.
 
