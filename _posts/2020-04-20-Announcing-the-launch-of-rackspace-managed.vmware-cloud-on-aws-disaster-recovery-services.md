@@ -6,9 +6,14 @@ comments: true
 author: Andy Smith
 published: true
 authorIsRacker: true
+bio: "Andy Smith has been with Rackspace since 2018 and is currently the Senior
+Product Manager for Rackspace’s Managed VMware Cloud on AWS solutions. Andy
+brings more than 20 years’ experience working in IT and for IT solutions
+companies, and has spent the last decade helping customers deploy and get the
+most out of private and hybrid cloud solutions. When not working, Andy enjoys
+hiking, skiing, and playing and watching hockey."
 categories:
     - general
-    - AWS
 metaTitle: "Announcing the launch of Rackspace Managed VMWare Cloud on AWS Disaster Recovery Services"
 metaDescription: "Rackspace announces the general availability of Rackspace Managed VMware Cloud&trade; on Amazon&reg; Web Services (AWS) Disaster Recovery Services powered by VMware Site Recovery."
 ogTitle: "Announcing the launch of Rackspace Managed VMWare Cloud on AWS Disaster Recovery Services"
@@ -108,7 +113,9 @@ If you've been thinking about a service continuity strategy or implementing a
 disaster recovery solution for your VMware environment, Rackspace has the solutions
 and expertise to get you there quickly and cost-effectively.
 
-Visit [www.rackspace.com](https://www.rackspace.com) and click **Sales Chat**
-to get started.
+<a class="cta teal" id="cta" href="https://www.rackspace.com/vmware/vmc-on-aws">Learn more about Managed VMware Cloud on AWS.</a>
 
 Use the Feedback tab to make any comments or ask questions.
+
+Visit [www.rackspace.com](https://www.rackspace.com) and click **Sales Chat**
+to get started.
