@@ -101,4 +101,4 @@ have access to Einstein&mdash;all you need to do is enable this integration for 
 partner, Rackspace can help you do this by weaving Einstein into your existing business process to help get the most out of
 your AI technology at every stage of your lead-to-loyalty cycle.
 
-Contact the Rackspace team today to learn more about how your company can work more efficiently with artificial intelligence.
+Visit [www.rackspace.com](https://www.rackspace.com) and select **Sales Chat** learn more about how your company can work more efficiently with artificial intelligence.
