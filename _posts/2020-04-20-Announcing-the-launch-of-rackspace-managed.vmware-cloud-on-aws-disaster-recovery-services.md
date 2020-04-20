@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Announcing the launch of Rackspace Managed VMware Cloud on AWS Disaster Recovery Services"
-date: 2020-04-15 00:01
+date: 2020-04-20 00:01
 comments: true
 author: Andy Smith
 published: true
