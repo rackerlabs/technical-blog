@@ -11,23 +11,23 @@ categories:
 metaTitle: "AWS Transit Gateway made easier with inter-region peering"
 metaDescription: "One of the fundamentals when setting up your AWS environment
 is the Virtual Private Cloud (VPC), which is essential to create boundaries
-between the public and private internet. Transit Gateway makes managing this easy."
+between the public and private Internet. Transit Gateway makes managing this easy."
 ogTitle: "AWS Transit Gateway made easier with inter-region peering"
 ogDescription: "One of the fundamentals when setting up your AWS environment is
 the Virtual Private Cloud (VPC), which is essential to create boundaries between
-the public and private internet. Transit Gateway makes managing this easy."
+the public and private Internet. Transit Gateway makes managing this easy."
 ---
 
-With Amazon&reg; Web Services (AWS), we have many paths to success and an
-abundance of tools at our disposal for meeting our individual goals based on our
+With Amazon&reg; Web Services (AWS), you have many paths to success and an
+abundance of tools at your disposal for meeting your individual goals based on your
 circumstances. Furthermore, AWS consistently adds new features and services to
 make our lives that little bit easier.
 
 <!-- more -->
 
 One of the fundamentals when setting up your AWS environment is the Virtual
-Private Cloud (VPC), which is essential to create boundaries between the public
-and private internet. Features core to the VPC setup include Network Access
+Private Cloud (VPC), which is essential to create boundaries between the private
+and public Internet. Features core to the VPC setup include Network Access
 Control Lists (NACLs), subnets, and security groups.
 
 ### Problem
@@ -38,12 +38,12 @@ development, test, and production or to meet geographical challenges&mdash;
 managing multiple VPCs has opened up discussions around using the appropriate
 toolsets.
 
-You could create site-to-site virtual private networks (VPNs) between VPCs.
+You can create site-to-site virtual private networks (VPNs) between VPCs.
 However, this increases management overhead, not to mention the costs involved
 when you consider the high availability of the VPN appliances.
 
-Amazon introduced AWS VPC peering, which made this much easier. However, it did
-come with its limitations. One of the main ones being connectivity is not
+Amazon introduced AWS VPC peering, which makes this much easier. However, it did
+come with its limitations. One of the main ones is that connectivity is not
 transitive between VPCs.
 
 ![]({% asset_path 2020-04-21-aws-transit-gateway-made-easier-with-inter-region-peering/Picture1.png %})
@@ -54,7 +54,7 @@ you need to set up a peering between B and C. What is more, for each peering,
 you also need to configure the routing tables.
 
 Eventually, you need to manage the connectivity between each VPC without having
-a central mechanism to route between VPCs. You could easily end up with a web
+a central mechanism to route between VPCs. You can easily end up with a web
 similar to the one shown in the following image:
 
 ![]({% asset_path 2020-04-21-aws-transit-gateway-made-easier-with-inter-region-peering/Picture2.png %})
@@ -64,23 +64,23 @@ similar to the one shown in the following image:
 Enter AWS Transit Gateway (TGW). TGW lets you do the following:
 
 - Solve the management overhead costs that you incur with VPC peering.
-- Have a central location to manage your connection between VPCs
-- Manage VPCs that are in a different account to yours.
+- Have a central location to manage your connection between VPCs.
+- Manage VPCs that are in a different account than yours.
 - Create a hub and spoke network, as shown in the following diagram:
 
 ![]({% asset_path 2020-04-21-aws-transit-gateway-made-easier-with-inter-region-peering/Picture3.png %})
 
 Initially, TGW didn't support inter-region peering, which was a major concern,
-but Amazon has resolved this problem and added it to the feature list. Now, you
+but Amazon resolved this problem and added it to the feature list. Now, you
 can easily configure connectivity between regions.
 
-### Deployment Plan
+### Deployment plan
 
-As part of the prerequisites, you should set up a VPC in each of your regions
+As part of the prerequisites, you set up a VPC in each of your regions
 with an EC2 instance. Ensure that you enable Internet Control Message Protocol
-(ICMP) is enabled in each security group.
+(ICMP) in each security group.
 
-The goal: you should be able to ping the instances from:
+The goal is that you should be able to ping the instances from:
 
 •	VPC A --> VPC B
 •	VPC C --> VPC D
@@ -89,24 +89,24 @@ The goal: you should be able to ping the instances from:
 
 ### Deployment
 
-For this setup, we use a single AWS account, but you can create TGW between different AWS accounts. You can deploy TGW by using the AWS console, CLI, API, or Cloudformation. For this demo, we will be using the console.
+For this setup, use a single AWS account, but you can create TGW between different AWS accounts. You can deploy TGW by using the AWS console, CLI, API, or Cloudformation. For this demo, use the console.
 
-Use the following steps to deploy TGW:
+Use the following steps to deploy TGW.
 
 #### 1. Sign in
 
-Sign in to your AWS account, go to the VPC console, and select **Transit Gateway**:
+Sign in to your AWS account, go to the VPC console, and select **Transit Gateway**.
 
 ![]({% asset_path 2020-04-21-aws-transit-gateway-made-easier-with-inter-region-peering/Picture5.png %})
 
 #### 2. Create the TGW
 
 Select **Create Transit Gateway**. Enter a name for the TGW. For this test,
-leave the rest as it is, and click **Create Transit Gateway**:
+leave the rest as it is, and click **Create Transit Gateway**.
 
 ![]({% asset_path 2020-04-21-aws-transit-gateway-made-easier-with-inter-region-peering/Picture6.png %})
 
-It will take a few minutes for the TGW to become available.
+It takes a few minutes for the TGW to become available.
 
 ![]({% asset_path 2020-04-21-aws-transit-gateway-made-easier-with-inter-region-peering/Picture7.png %})
 
@@ -140,16 +140,16 @@ B. You now have two TGW attachments.
 
 Go to **Transit Gateway Route Tables** from the left-hand side to see the default
 route table. Notice two routes in the **Propagation** tab. Propagation occurred
-automatically based on the TGW we created in the first step.
+automatically based on the TGW you created in the first step.
 
 ![]({% asset_path 2020-04-21-aws-transit-gateway-made-easier-with-inter-region-peering/Picture10.png %})
 
 Let's try and ping the instance in VPC B from VPC A. What happens?
 
-Nothing happens because we still need to tell the traffic where to go after it
+Nothing happens because you still need to tell the traffic where to go after it
 enters the VPC.
 
-For this, we need to add a route in the route table associated with the subnet
+For this, you need to add a route in the route table associated with the subnet
 where the EC2 instance is located. If you also want to ping from VPC B --> VPC A,
 you need to set the returning destination route back to VPC A.
 
@@ -165,7 +165,7 @@ This completes the connection highlighted in green in the following diagram:
 
 #### 6. Configure inter-region TGW
 
-Recently, AWS also introduced inter-region peering with TGW. To do this, we need
+Recently, AWS introduced inter-region peering with TGW. To do this, you need
 to use the **Peering Connection** type to create a new TGW attachment to the TGW
 based in the second region, North Virginia. The following diagram shows the
 **TGW ID** for the outside North Virginia region in this demo:
@@ -173,13 +173,13 @@ based in the second region, North Virginia. The following diagram shows the
 ![]({% asset_path 2020-04-21-aws-transit-gateway-made-easier-with-inter-region-peering/Picture13.png %})
 
 Go to the **n.virginia** TGW attachment console and notice a peering request in
-a pending state. Go ahead and accept the request:
+a pending state. Go ahead and accept the request.
 
 ![]({% asset_path 2020-04-21-aws-transit-gateway-made-easier-with-inter-region-peering/Picture14.png %})
 
 #### 7. Configure VPC C and D attachments
 
-We need to create a new TGW attachment for VPC C and VPC D in their respective
+You need to create a new TGW attachment for VPC C and VPC D in their respective
 regions with the attachment type: **VPC**.
 
 The following diagrams shows the VPC C and D details:
@@ -194,11 +194,11 @@ a.	Create an entry in the Sydney TGW route table to route traffic to the classle
 inter-domain routing (CIDR) range of VPC D in **n.virginia** region.
 
 NOTE: Make sure to select the correct attachment that references the *peering*
-and not the *VPC attachment* type:
+and not the *VPC attachment* type.
 
 ![]({% asset_path 2020-04-21-aws-transit-gateway-made-easier-with-inter-region-peering/Picture17.png %})
 
-b. Do the same action in the **n.virginia** region to route traffic to VPC C:
+b. Do the same action in the **n.virginia** region to route traffic to VPC C.
 
 ![]({% asset_path 2020-04-21-aws-transit-gateway-made-easier-with-inter-region-peering/Picture18.png %})
 
