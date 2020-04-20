@@ -217,7 +217,7 @@ configured them correctly.
 ### Summary
 
 TGW supports attachments for your direct-connect and site-to-site VPN. You can
-now create transitive networks, where previously you needed third party appliances
+now create transitive networks, where previously you needed third-party appliances
 to manage all this.
 
 TGW is a welcome solution to the AWS networking feature list. Furthermore, the
