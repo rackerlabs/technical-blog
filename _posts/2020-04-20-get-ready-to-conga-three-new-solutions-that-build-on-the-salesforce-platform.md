@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Get ready to Conga: 3 new solutions that build on the Salesforce platform"
+title: "Get ready to Conga: three new solutions that build on the Salesforce platform"
 date: 2020-04-20 00:00
 comments: true
 author: Tatiana Cooke
@@ -10,9 +10,9 @@ authorAvatar: ''
 bio: ""
 categories:
     - Salesforce
-metaTitle: "Get ready to Conga: 3 new solutions that build on the Salesforce platform"
+metaTitle: "Get ready to Conga: three new solutions that build on the Salesforce platform"
 metaDescription: ""
-ogTitle: "Get ready to Conga: 3 new solutions that build on the Salesforce platform"
+ogTitle: "Get ready to Conga: three new solutions that build on the Salesforce platform"
 ogDescription: ""
 ---
 
@@ -32,11 +32,11 @@ Conga Contracts gives customers the ability to send a contract for negotiation, 
 
 The Sales team reviews their forecasts at the end of each week to ensure that management is addressing every deal correctly. Sales operations must create a specific output at the end of each call, typically taking hours or even the entire weekend to verify the output is correct and formulated correctly.
 
-With ActionGrid, sales operations can quickly change the data in their reports, including mass updates, multi filter, formulas, batch actions, and conditional formatting, even while on a call. Once the data is updated and paired with the power of Conga Composer, sales reps can export each report with thegit click of a button.
+With ActionGrid, sales operations can quickly change the data in their reports, including mass updates, multi-filter, formulas, batch actions, and conditional formatting, even while on a call. Once the data is updated and paired with the power of Conga Composer, sales reps can export each report with the click of a button.
 
 ### Consider Conga
 
-Conga now offers various [certification programs](https://support.conga.com) to help recognize leaders in the industry. In a competitive market, there is no better way to add value to clients than by keeping up to date with new tools and technology. Maintaining certifications ensures that Rackspace know how to leverage Salesforce strategically to improve client processes, and focus on the Process First. Technology Second.® methodology. [Rackspace values certifications](https://www.relationedge.com/compliance), and now has many consultants across all regions with Conga Composer, Conga ActionGrid, and Conga Contract certifications. Everyone knows time is money and with the help of products like Conga’s, Rackspace can save your users’ time, streamline the process and remove inconsistencies with your deliverables.
+Conga now offers various [certification programs](https://support.conga.com) to help recognize leaders in the industry. In a competitive market, there is no better way to add value to clients than by keeping up to date with new tools and technology. Maintaining certifications ensures that Rackspace knows how to leverage Salesforce strategically to improve client processes, and focus on the Process First. Technology Second.® methodology. [Rackspace values certifications](https://www.relationedge.com/compliance), and now has many consultants across all regions with Conga Composer, Conga ActionGrid, and Conga Contract certifications. Everyone knows time is money and with the help of products like Conga’s, Rackspace can save your users’ time, streamline the process and remove inconsistencies within your deliverables.
 
 Are you interested in learning more about how Rackspace consultants can help you and your business? Reach out today for a free business process review and estimate.
 
