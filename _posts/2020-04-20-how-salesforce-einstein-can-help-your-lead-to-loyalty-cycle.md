@@ -17,11 +17,14 @@ ogDescription: ""
 ---
 
 Salesforce&reg; has long been a leader when it comes to industry developments. One of the latest, most promising
-innovations is the use of artificial intelligence (AI) to oversee business interactions. By 2020, 85% of
-people are expected to use AI to oversee business interactions. Salesforce released Einstein,
+innovations is the use of artificial intelligence (AI) to oversee business interactions. [By 2020, 85% of people](https://hbr.org/2016/06/why-salespeople-need-to-develop-machine-intelligence)
+are expected to use AI to oversee business interactions. Salesforce [released Einstein](https://www.salesforce.com/blog/2016/09/introducing-salesforce-einstein.html),
 its AI platform, in 2016&mdash;the tool has been becoming more robust ever since.
 
 <!-- more -->
+
+![]({% asset_path 2020-04-20-how-salesforce-einstein-can-help-your-lead-to-loyalty-cycle/photo1.png %})
+
 
 The Einstein AI technology goes beyond helping just a single
 company department&mdash;it adds value across an entire business and its lead-to-loyalty cycle.
@@ -32,11 +35,13 @@ Here’s a look at how Salesforce Einstein can help at each stage along the way.
 
 Marketing is about personalization, and Einstein quickly learns which product bundles and item
 recommendations are most likely to change your lead from a casual window-shopper to a customer. Large companies
-like Netflix and Amazon already use AI to offer customers recommendations and suggested product systems.
+[like Netflix](https://www.wired.co.uk/article/how-do-netflixs-algorithms-work-machine-learning-helps-to-predict-what-viewers-will-like)
+and Amazon already use AI to offer customers recommendations and suggested product systems.
 
-AI-driven personalization has worked for Salesforce customer Icebreaker, a New Zealand-based company that crafts
-clothing from merino wool. Icebreaker used Einstein product recommendations and created personalized search category pages.
-Icebreaker learned that customers clicked these recommendations 40% more often, leading to an 11% overall increase in average order value.
+AI-driven personalization has worked for [Salesforce customer Icebreaker](https://www.salesforce.com/customer-success-stories/icebreaker/),
+a New Zealand-based company that crafts clothing from merino wool. Icebreaker used Einstein product recommendations and
+created personalized search category pages. Icebreaker learned that customers clicked these recommendations 40% more often,
+leading to an 11% overall increase in average order value.
 
 ### Sales: Gauge prospect sentiment and score leads
 
@@ -48,8 +53,9 @@ Einstein Sentiment analyzes a short snippet of text&mdash;like an email reply or
 positive, negative, or neutral. It then prioritizes sales messages in a faster and more knowledgeable way. The software continues
 learning as it analyzes more text samples, consistently becoming better at classifying the sentiment of a given text snippet.
 
-Einstein also uses predictive lead scoring to rank whether leads are likely to convert. It looks at factors like past deals
-and your historical sales data&mdash;so your sales team knows where to best direct their efforts. Einstein continuously
+Einstein also uses [predictive lead scoring](https://www.salesforce.com/content/dam/web/en_us/www/documents/datasheets/sales-cloud-einstein-leadscoring.pdf)
+to rank whether leads are likely to convert. It looks at factors like past deals and your historical sales data&mdash;so
+your sales team knows where to best direct their efforts. Einstein continuously
 improves its predictions, finding new insights in your latest sales data and showing you how it calculates those insights. This
 gives your sales team an easy way to sift through mountains of data and prioritize the leads that are most likely to close.
 
@@ -64,7 +70,8 @@ flag data points that are trending the wrong way for the Sales and Customer serv
 issues before they escalate.
 
 Einstein can even assist with supply management. Einstein Vision lets companies streamline
-inventory management. For example, Coca-Cola uses Einstein by uploading a photograph of a display cabinet, and training the software
+inventory management. For example, [Coca-Cola uses Einstein](https://diginomica.com/salesforce-captures-the-limits-of-ai-in-a-coca-cola-cooler)
+by uploading a photograph of a display cabinet, and training the software
 to recognize when the stock of a certain soda was running low. The software places orders to restock supply based on images,
 as opposed to having an employee look at the stock, count it, and manually enter the order into a system.
 
@@ -83,8 +90,9 @@ without manually reviewing every single document.
 ### Finance: Protect against fraud
 
 Einstein can even help in the finance department as an advanced tool for fraud detection. Today, many leading companies and banks are turning to
-more robust AI tools that use machine-learning to constantly adapt and protect a company’s system from increasingly complex online
-fraud. Einstein gives small businesses equal access to the fraud protection measures that larger companies pay millions to obtain.
+[more robust AI tools](https://www.cnbc.com/2016/10/11/lloyds-uses-google-backed-ai-to-detect-phone-fraudsters.html) that use machine-learning
+to constantly adapt and protect a company’s system from increasingly complex online
+fraud. Einstein gives [small businesses equal access](https://www.salesforce.com/products/einstein/overview/) to the fraud protection measures that larger companies pay millions to obtain.
 
 ### If you have Salesforce, you’re ready to use Einstein
 
