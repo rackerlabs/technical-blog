@@ -24,9 +24,9 @@ its AI platform, in 2016&mdash;the tool has been becoming more robust ever since
 <!-- more -->
 
 The Einstein AI technology goes beyond helping just a single
-company department&mdash;the tool adds value across an entire business and its lead-to-loyalty cycle.
+company department&mdash;it adds value across an entire business and its lead-to-loyalty cycle.
 
-Here’s a look at how it can help at each stage along the way.
+Here’s a look at how Salesforce Einstein can help at each stage along the way.
 
 ### Marketing: Personalize messaging and targeting
 
@@ -40,11 +40,11 @@ Icebreaker learned that customers clicked these recommendations 40% more often, 
 
 ### Sales: Gauge prospect sentiment and score leads
 
-Gauging the sentiment of customers and prospects is one of the essential tasks of a sales team member. When talking with dozens
+Gauging the sentiment of customers and prospects is an essential tasks for a sales team member. When talking with dozens
 of prospective customers, prioritizing positive leads and sales questions can be a challenge. Companies are mired with incredible amounts of
 data, but often lacking true information&mdash;with Einstein, the important insights rise to the top.
 
-Einstein Sentiment analyzes a short snippet of text&mdash;for example, an email reply or sales inquiry and classifies the exchange as
+Einstein Sentiment analyzes a short snippet of text&mdash;like an email reply or sales inquiry and classifies the exchange as
 positive, negative, or neutral. It then prioritizes sales messages in a faster and more knowledgeable way. The software continues
 learning as it analyzes more text samples, consistently becoming better at classifying the sentiment of a given text snippet.
 
@@ -60,7 +60,7 @@ consumers after winning the deal. Once a lead becomes a customer, your fulfillme
 delivering on your company’s promise. Whether your offering includes a product, service, or both, your fulfillment team’s challenges
 revolve around filtering and organizing a massive amount of customer information and managing supply. Einstein analyzes the status
 information of a customer from an order and supply chain perspective. It can then filter those pieces of data appropriately, and
-flag data points that are trending the wrong way to sales and customer service. This lets your team prioritize and address fulfillment
+flag data points that are trending the wrong way for the Sales and Customer service departments. This lets your team prioritize and address fulfillment
 issues before they escalate.
 
 Einstein can even assist with supply management. Einstein Vision lets companies streamline
