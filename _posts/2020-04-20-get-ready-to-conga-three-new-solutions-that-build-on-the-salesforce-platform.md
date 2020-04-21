@@ -21,7 +21,7 @@ Many companies are turning to cloud-based applications to increase the return on
 
 ![]({% asset_path 2020-04-20-get-ready-to-conga-three-new-solutions-that-build-on-the-salesforce-platform/photo-1.png %})
 
-Conga is best known for its document generation solution. With Conga, you can create complicated documents like contracts, well-formatted Excel files&reg;, or simple quotes from your Salesforce&reg; data. However, Conga continues to evolve its product suite with the addition of three new solutions: Contracts, Sign, and ActionGrid. All three are strong additions to the Conga suite, and all aim to more efficiently organize, simplify, and automate data document generation.
+Conga is best known for its document generation solution. With Conga, you can create complicated documents like contracts, well-formatted Excel&reg; files, or simple quotes from your Salesforce&reg; data. However, Conga continues to evolve its product suite with the addition of three new solutions: Contracts, Sign, and ActionGrid. All three are strong additions to the Conga suite, and all aim to more efficiently organize, simplify, and automate data document generation.
 
 ### Conga Contracts: Speed up the contract negotiation process
 
@@ -41,7 +41,10 @@ With Conga ActionGrid, sales operations can quickly change the data in their rep
 
 ### Consider Conga
 
-Conga now offers various [certification programs](https://support.conga.com) to help recognize leaders in the industry. In a competitive market, there is no better way to add value to clients than by keeping up to date with new tools and technology. Maintaining certifications ensures that Rackspace knows how to leverage Salesforce strategically to improve client processes, and focus on the Process First. Technology Second.® methodology. [Rackspace values certifications](https://www.relationedge.com/compliance), and now has many consultants across all regions with Conga Composer, Conga ActionGrid, and Conga Contract certifications. Everyone knows time is money, and with the help of products like those from Conga, Rackspace can save your users’ time, streamline the process, and remove inconsistencies within your deliverables.
+Conga now offers various [certification programs](https://support.conga.com) to help recognize leaders in the industry. In a competitive market, there is no better way to add value to clients than by keeping up to date with new tools and technology. Maintaining certifications ensures that Rackspace knows how to leverage Salesforce strategically to improve client processes, and focus on the Process First. Technology Second.® methodology. Rackspace values certifications, and now has many consultants across all regions with Conga Composer, Conga ActionGrid, and Conga Contract certifications. Everyone knows time is money, and with the help of products like those from Conga, Rackspace can save your users’ time, streamline the process, and remove inconsistencies within your deliverables.
 
 Are you interested in learning more about how Rackspace consultants can help you and your business? Reach out today for a free business process review and estimate.
+
+<a class="cta purple" id="cta" href="https://www.rackspace.com/salesforce">Learn more about Salesforce Customer Relationship Management (CRM)</a>
+
 
