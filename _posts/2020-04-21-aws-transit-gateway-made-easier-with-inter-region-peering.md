@@ -168,7 +168,7 @@ This completes the connection highlighted in green in the following diagram:
 Recently, AWS introduced inter-region peering with TGW. To do this, you need
 to use the **Peering Connection** type to create a new TGW attachment to the TGW
 based in the second region, North Virginia. The following diagram shows the
-**TGW ID** for the outside North Virginia region in this demo:
+**TGW ID** I created for the outside North Virginia region in this demo:
 
 ![]({% asset_path 2020-04-21-aws-transit-gateway-made-easier-with-inter-region-peering/Picture13.png %})
 
