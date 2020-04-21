@@ -6,14 +6,12 @@ comments: true
 author: Ilham Ahmed
 published: true
 authorIsRacker: true
-authorAvatar: ''
-bio: ""
 categories:
     - Salesforce
 metaTitle: "How Salesforce Einstein can help your lead-to-loyalty cycle"
-metaDescription: ""
+metaDescription: "Salesforce&reg; has long been a leader when it comes to industry developments. One of the latest, most promising innovations is the use of artificial intelligence (AI) to oversee business interactions."
 ogTitle: "How Salesforce Einstein can help your lead-to-loyalty cycle"
-ogDescription: ""
+ogDescription: "Salesforce&reg; has long been a leader when it comes to industry developments. One of the latest, most promising innovations is the use of artificial intelligence (AI) to oversee business interactions."
 ---
 
 Salesforce&reg; has long been a leader when it comes to industry developments. One of the latest, most promising
@@ -102,3 +100,6 @@ partner, Rackspace can help you do this by weaving Einstein into your existing b
 your AI technology at every stage of your lead-to-loyalty cycle.
 
 Visit [www.rackspace.com](https://www.rackspace.com) and select **Sales Chat** to learn more about how your company can work more efficiently with artificial intelligence.
+
+<a class="cta teal" id="cta" href="https://www.rackspace.com/salesforce">Learn more about Salesforce Customer Relationship Management (CRM)</a>
+
