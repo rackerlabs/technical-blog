@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Announcing the launch of Rackspace Government Cloud on AWS"
-date: 2020-03-31 00:01
+date: 2020-04-21 00:01
 comments: true
 author: Lorenzo Winfrey
 published: true
