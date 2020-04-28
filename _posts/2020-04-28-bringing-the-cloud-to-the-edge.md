@@ -44,12 +44,10 @@ sent to the cloud for processing and analysis. There is a huge value in having
 access to real-time information and analytics from device-generated data, which
 helps businesses to make critical split-second decisions.
 
-We call the act of bringing computing resources and application services closer
-to the edge *edge computing*.
+*Edge computing* refers to the act of bringing computing resources and
+application services closer to the edge.
 
 ### What is edge computing?
-
-What is edge computing?
 
 Edge computing (or fog computing) combines hardware and software at or near the
 physical location of either the user or the source of the data. Edge computing
