@@ -26,23 +26,23 @@ version 9i that includes the `AUDIT_SYS_OPERATIONS` parameter.
 
 ### Introduction
 
-When you set this parameter to true, the process generates files in the directory
+When you set this parameter to `true`, the process generates files in the directory
 determined by the `AUDIT_FILE_DEST` parameter. These files contain a protocol of
 all the actions of the `sys` user. By default, the files contain the connections
-by `sys` but does not include the actions that occur after the connection.
+by `sys` but do not include the actions that occur after the connection.
 
 If you set `AUDIT_SYS_OPERATIONS=true`, the audit file containing all the actions
 of `sys` belongs to the operating system user that installed the
 database&mdash;usually, the Oracle user. A user with privileges to connect as
 `sys` probably also has the privilege to connect as `Oracle` on the operating
 system (OS) level. This access makes using `AUDIT_SYS_OPERATIONS` somewhat
-useless from a security viewpoint. So, Oracle permits the audit file to be owned
-by `root`, which should make it harder for the database administrator to
-manipulate or delete the file.
+useless from a security standpoint. So, Oracle permits `root` to own the audit file,
+which should make it harder for the database administrator to manipulate or delete
+the file.
 
 ### Configure the audit file at the OS level
 
-Use the following steps to configure the audit file at the OS level in a
+Use the following steps to configure the audit file at the OS level in an
 Oracle Real Application Clusters (RAC) environment:
 
 #### Step 1: Set the database parameters
@@ -82,7 +82,7 @@ Run the following commands to restart the `syslog` logger process:
 
 #### Step 4: Restart the RAC database
 
-Use the following steps to restart the RAC database on RAC1/RAC2 in a rolling fashion:
+Use the following steps to restart the RAC database on RAC1 and RAC2 in a rolling fashion:
 
 a) Run the following commands on RAC2:
 
@@ -100,8 +100,8 @@ c) Run the following commands on RAC1:
 
 #### Step 5: Set up the logrotate file
 
-To set up the logrotate file on RAC1/RAC2, edit **/etc/logrotate.d/oracle_audit**
-as root to include the following lines:
+To set up the **logrotate** file on RAC1 and RAC2, edit **/etc/logrotate.d/oracle_audit**,
+as `root`, to include the following lines:
 
     /var/log/oracle/db_name_audit.log
     {
@@ -118,33 +118,33 @@ as root to include the following lines:
 
 You can include the following options (collected from
 [Manage your logs using Logrotate](https://techandfi.com/manage-your-logs-using-logrotate/)
-and [man file](http://man7.org/linux/man-pages/man8/logrotate.8.html)) in the
+and the [man file](http://man7.org/linux/man-pages/man8/logrotate.8.html)) in the
 **logrotate** configuration file:
 
 
-**Rotate**: Keep the last N archives of the log. You can set this as high as you
+**Rotate**: Keep the last N archives of the log. You can set this high, as you
 long as the disk usage is reasonable. You can also set it to the last 10 days or
 2 weeks if the log gets bigger.
 
 **Compress**: The archived logs are compressed using gzip (recommended). This
-keeps the file size much lower than the raw logs.
+compression keeps the file size much lower than the raw logs.
 
 **Weekly**: The log files are rotated once every day, or if the date is advanced
 by at least 7 days, since the last rotation (while ignoring the exact time).
-The weekday interpretation is following:  0 means Sunday, 1 means Monday, 6 means
-Saturday; the special value 7 means each 7 days, irrespective of the weekday.
-Default is 0 if the weekday argument is omitted.
+The weekday interpretation is as follows:  0 means Sunday, 1 means Monday, 6 means
+Saturday. The special value 7 means each 7 days, irrespective of the weekday.
+The default is 0 if the weekday argument is omitted.
 
-**Yearly**: log files are rotated if the current year is not the same as the last
+**Yearly**: Log files are rotated if the current year is not the same as the last
 rotation.
 
-**dateext**: The archived log files will be appended with the date when it is
-processed. The default format is YYYYMMDD. This makes the search for the archived
-logs easier.
+**dateext**: The archived log files are appended with the date when it is
+processed. The default format is YYYYMMDD. This appendage makes the search
+for the archived logs easier.
 
 **notifempty**: If the log file is empty, do not archive it. This is important
-as you only keep a certain number of archives, and this makes sure that you don’t
-have archived empty files that will push out older archived entries.
+because you only keep a certain number of archives, and this makes sure that you don’t
+have archived empty files that push out older archived entries.
 
 **missingok**: If any log file cannot be found, just search for the next log file
 in the configuration. This ensures that the logrotate program does not exit
@@ -152,26 +152,26 @@ unexpectedly in case one log file is missing.
 
 **copytruncate**: When a log is archived, logrotate copies the contents of the
 log file into another file (with a timestamp). This option then tells logrotate
-to just remove/truncate the copied entries from the original log file. This
-option is needed when programs continuously write into the log file and this
+to remove or truncate the copied entries from the original log file. This
+option is needed when programs continuously write into the log file, and this
 option ensures that the same log file is being used by the program to prevent it
-from exiting unexpectedly (due to unable to access the log file).
+from exiting unexpectedly (due to it being unable to access the log file).
 
 
  ### Pros and cons
 
-The pros and cons of writing the audit records to a file on the operating system
-include the following considerations:
+The pros and cons of writing the audit records to a file on the OS include the
+following considerations:
 
 **Pros:**
 
-Logging the audit records to a root-owned filesystem restricts even the Oracle
+Logging the audit records to a `root`-owned filesystem restricts even the Oracle
 user who installed the database from reading the content and modifying it.
 
 **Cons:**
 
 Storing audit files on the OS consumes space and can cause performance issues.
-For example, `sys` could now perform large actions such as running `catalog.sql`
+For example, `sys` could now perform large actions, such as running `catalog.sql`
 or `catproc.sql` operations.
 
 ### Conclusion
