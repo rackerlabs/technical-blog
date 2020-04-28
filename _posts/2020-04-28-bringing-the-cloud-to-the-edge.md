@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Brining the Cloud to the edge"
+title: "Bringing the cloud to the edge"
 date: 2020-04-28 00:01
 comments: true
 author: Mustapha Benmbarek
@@ -11,11 +11,11 @@ bio: ""
 categories:
     - Cloud-networks
     - General
-metaTitle: "Brining the Cloud to the edge"
+metaTitle: "Bringing the cloud to the edge"
 metaDescription: "Edge computing provides you with the capability to move
 application workloads anywhere that you need computing outside of your public
 or private cloud environment."
-ogTitle: "Brining the Cloud to the edge"
+ogTitle: "Bringing the cloud to the edge"
 ogDescription: "Edge computing provides you with the capability to move
 application workloads anywhere that you need computing outside of your public
 or private cloud environment."
@@ -34,12 +34,12 @@ analysis, forecasting, and data analytics. The cloud is a resource somewhere
 else, and the problem with the cloud is simply distance.
 
 Cloud servers have the power to process and mine large data sets but are too far
-away to process data and respond in real-time. Because of the distance, the cloud
+away to process data and respond in real time. Because of the distance, the cloud
 model creates a challenge in environments where operations are mission-critical
 or internet connectivity isn’t so great.
 
 Optimally, we'd like to distribute the computing requirements and bring processing
-closer to the edge of the network, to reduce the amount of data that is being
+closer to the edge of the network, to reduce the amount of data that is
 sent to the cloud for processing and analysis. There is a huge value in having
 access to real-time information and analytics from device-generated data, which
 helps businesses to make critical split-second decisions.
@@ -71,7 +71,7 @@ proprietary applications, and so on.
 Other benefits include the following:
 
 **Speed**:  Most importantly, edge computing increases network performance by
-reducing the latency. Lowering latency increases available bandwidth and enables
+reducing latency. Lowering latency increases available bandwidth and enables
 faster application response times. The massive reduction of lag time has broad
 implications for mission-critical technologies and equally expansive benefits
 for business.
@@ -92,7 +92,7 @@ something causes the core site to stop functioning.
 Edge computing comes with the following risks and challenges:
 
 **Scalability**: Scaling out many distributed edge sites can be more complicated
-than adding the equivalent capacity to a single datacenter. The increased overhead
+than adding the equivalent capacity to a single data center. The increased overhead
 of physical locations can be difficult to manage for companies with limited
 resources.
 
@@ -118,8 +118,8 @@ applications, such as machine learning, gaming, and more.
 
 As a result, for a decade, we’ve increasingly been pushing computing power out
 to the cloud. At the same time,  we’re pushing in the opposite
-direction&mdashsending computing power to the local extremities of our networks
-... to the edge.
+direction&mdash;sending computing power to the local extremities of our
+networks&mdash;to the edge.
 
 Use the Feedback tab to make any comments or ask questions. You can also
 [chat now](https://www.rackspace.com/#chat) to start the conversation.
