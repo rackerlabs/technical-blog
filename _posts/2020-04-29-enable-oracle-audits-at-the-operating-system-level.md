@@ -114,7 +114,7 @@ as `root`, to include the following lines:
        copytruncate
     }
 
- ##### Logrotate parameters
+##### Logrotate parameters
 
 You can include the following options (collected from
 [Manage your logs using Logrotate](https://techandfi.com/manage-your-logs-using-logrotate/)
@@ -158,7 +158,7 @@ option ensures that the same log file is being used by the program to prevent it
 from exiting unexpectedly (due to it being unable to access the log file).
 
 
- ### Pros and cons
+### Pros and cons
 
 The pros and cons of writing the audit records to a file on the OS include the
 following considerations:
