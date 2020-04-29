@@ -6,8 +6,10 @@ comments: true
 author: Mustapha Benmbarek
 published: true
 authorIsRacker: true
-authorAvatar:
-bio: ""
+bio: "Mustapha works with startups and companies of any size to support their
+innovation. In his role as Solutions Architect at Rackspace, he leverages his
+experience to help people bring their ideas to life, providing guidance and
+technical assistance on cloud based and AWS architectures."
 categories:
     - Cloud-networks
     - General
