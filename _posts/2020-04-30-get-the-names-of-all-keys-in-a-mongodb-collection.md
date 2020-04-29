@@ -1,20 +1,11 @@
 ---
 layout: post
 title: "Get all the names in a MongoDB collection"
-date: 2020-03-11 00:01
+date: 2020-04-30 00:01
 comments: true
-author: Steve Croce
+author: TBD
 published: true
 authorIsRacker: true
-authorAvatar: 'https://gravatar.com/avatar/56d03e2d0f853cff39c129cab3761d49'
-bio: "As Senior Product Manager for the ObjectRocket Database-as-a-Service
-offering and Head of User Experience for ObjectRocket, Steve oversees the
-day-to-day planning, development, and optimization of ObjectRocket-supported
-database technologies, clouds, and features. A product manager by day, he still
-likes to embrace his engineer roots by night and develop with Elasticsearch,
-SQL, Kubernetes, and web application stacks. He's spoken at
-KubeCon + CloudNativeCon, OpenStack summit, Percona Live, and various Rackspace
-events."
 categories:
     - Database
 canonical: https://www.objectrocket.com/blog/how-to/get-keys-mongodb-collection/
