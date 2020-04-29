@@ -40,6 +40,13 @@ Belke, Emily
 authorAvatar: 'https://s.gravatar.com/avatar/4a7de5d7772b14826cca8496c410ba88'
 bio: n/a
 
+Benmbarek, Mustapha
+authorAvatar: n/a
+bio: Mustapha works with startups and companies of any size to support their
+innovation. In his role as Solutions Architect at Rackspace, he leverages his
+experience to help people bring their ideas to life, providing guidance and
+technical assistance on cloud-based and AWS architectures.
+
 Bonig, Matthew
 authorAvatar: 'https://s.gravatar.com/avatar/17fefeb3c1832175bf6fbe9841368292'
 bio: "As a Senior Software Engineer at Rackspace, Matthew draws upon his 15
@@ -396,6 +403,11 @@ authorAvatar: 'https://en.gravatar.com/userimage/151177997/5bed7e07ee47533cbd34b
 bio: “Jimmy Rudley is an Azure Architect at Rackspace and an active member of
 the Azure community. He focuses on solving large and complex architecture and
 automation problems within Azure."
+
+Sharma, Anubhav
+authorAvatar: 'https://s.gravatar.com/avatar/3ea62cab3c36ad848af5e53cf7610516'
+bio: "I’m Anubhav, an Oracle Database Administrator working with Rackspace.
+Currently, I work on Oracle, MongoDB, and other NoSQL database technologies."
 
 Sharma, Hemant
 authorAvatar: 'https://s.gravatar.com/avatar/62a512ada4789514ddecc061e501be64'
