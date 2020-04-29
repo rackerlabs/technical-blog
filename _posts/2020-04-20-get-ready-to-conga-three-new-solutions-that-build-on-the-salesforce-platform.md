@@ -6,7 +6,6 @@ comments: true
 author: Tatiana Cooke
 published: true
 authorIsRacker: true
-authorAvatar: ''
 categories:
     - Salesforce
 metaTitle: "Get ready to Conga: Three new solutions that build on the Salesforce platform"
