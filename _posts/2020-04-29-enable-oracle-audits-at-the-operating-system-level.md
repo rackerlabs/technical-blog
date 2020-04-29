@@ -90,7 +90,7 @@ a) Run the following commands on RAC2:
     srvctl start instance -d DB_NAME -i DB_SID2
     srvctl status database -d DB_NAME
 
-b) Wait ten minutes.
+b) Wait for ten minutes.
 
 c) Run the following commands on RAC1:
 
