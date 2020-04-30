@@ -3,7 +3,7 @@ layout: post
 title: "Get all the names in a MongoDB collection"
 date: 2020-04-30 00:01
 comments: true
-author: TBD
+author: The MongoDB Team
 published: true
 authorIsRacker: true
 categories:
