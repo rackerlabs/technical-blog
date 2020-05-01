@@ -7,21 +7,23 @@ author: Gourav Kumar
 published: true
 authorIsRacker: true
 authorAvatar: 'https://s.gravatar.com/avatar/ea51707a4a182959177d9b8244835571'
-bio: "An Azure professional, blog writer, and community contributor with a soft
-corner of PowerShell. I'm learning Terraform and travelling my road to be on top."
+bio: "An Azure professional, blog writer, and community contributor who is
+passionate about PowerShell. I'm learning Terraform and forging my path to
+be on top."
 canonical: https://blog.topqore.com/monitor-azure-backup-with-log-analytics/
 categories:
     - Azure
 metaTitle: "Configure VS Code for Azure and Terraform"
 metaDescription: "This post shows you how to easily configure and use Visual Studio Code&reg;
-(VS Code) for Azure&reg; DevOps, Terraform&reg;, and Git repositories. "
+(VS Code) for Azure&reg; DevOps, Hashicorp&reg; Terraform&reg;, and Git repositories. "
 ogTitle: "Configure VS Code for Azure and Terraform"
 ogDescription: "This post shows you how to easily configure and use Visual Studio Code&reg;
-(VS Code) for Azure&reg; DevOps, Terraform&reg;, and Git repositories. "
+(VS Code) for Azure&reg; DevOps, Hashicorp&reg; Terraform&reg;, and Git repositories. "
 ---
 
 This post shows you how to easily configure and use Visual Studio Code&reg;
-(VS Code) for Azure&reg; DevOps, Terraform&reg;, and Git repositories.
+(VS Code) for Azure&reg; DevOps, Hashicorp&reg; Terraform&reg;, and Git
+repositories.
 
 <!-- more -->
 
@@ -34,7 +36,7 @@ VS Code, an integrated development environment (IDE), requires limited resources
 - Storage =  2 – 5 GB
 - Support OS  = Windows&reg;, MacOS&reg;, and Linux&reg; (Debian and Red Hat&reg;).
 
-The post covers four topics:
+This post covers four topics:
 
 1. Install VS Code
 2. Setup and Configure VS Code
@@ -43,7 +45,7 @@ The post covers four topics:
 
 ### Installation
 
-This document explains how to configure VS Code for Windows 10, but similar
+The following steps show how to configure VS Code in Windows 10, but similar
 steps work for other operating systems (OS).
 
 1. Download the VS Code installer for Windows from
@@ -54,7 +56,7 @@ your OS.
 
 ![]({% asset_path 2020-05-02-configure-vs-code-for-azure-and-terraform/Picture1.png %})
 
-2.Run the installer (`VSCodeUserSetup-{version}.exe`).
+2. Run the installer (`VSCodeUserSetup-{version}.exe`).
 
 ![]({% asset_path 2020-05-02-configure-vs-code-for-azure-and-terraform/Picture2.png %})
 
@@ -71,19 +73,19 @@ shown in the following image:
 
 ![]({% asset_path 2020-05-02-configure-vs-code-for-azure-and-terraform/Picture3.png %})
 
-Click on the icon to launch the VS Code. This action opens an empty Hompage for
-VS Code with no configurations entered.
+Click on the icon to launch the VS Code. This action opens an empty VS Code
+home page for with the default configuration.
 
 ![]({% asset_path 2020-05-02-configure-vs-code-for-azure-and-terraform/Picture4.png %})
 
 #### 2. Install extensions
 
-To configure VSCode for Azure DevOps and Terraform, we need to install the
-following Azure and Terraform extensions.
+To configure VSCode for Azure DevOps and Terraform, install the following Azure
+and Terraform extensions.
 
 - **Azure Account**: The Azure Account extension provides a single Azure sign-in
   and subscription filtering experience for all other Azure extensions. It makes
-  Azure's Cloud Shell service available in VS Code's integrated terminal.
+  the Azure Cloud Shell service available in the VS Code integrated terminal.
 
 - **Azure Repos**: Use this extension to get support for
   [Team Foundation Version Control (TFVC)](https://github.com/Microsoft/azure-repos-vscode/blob/master/TFVC_README.md#quick-start),
@@ -104,8 +106,8 @@ following Azure and Terraform extensions.
 - **PowerShell**: This extension enables you to write and debug PowerShell
   scripts by using the VS Code's IDE-like interface.
 
-- **Terraform**: Syntax highlighting, linting, formatting, and validation for
-  Hashicorp's Terraform
+- **Terraform**: This extension provides syntax highlighting, linting,
+  formatting, and validation for Terraform.
 
 To install the extension in VS Code, hover over to the extension tab given in
 VS Code or press `CTRL+SHIFT+X.`
@@ -113,7 +115,7 @@ VS Code or press `CTRL+SHIFT+X.`
 ![]({% asset_path 2020-05-02-configure-vs-code-for-azure-and-terraform/Picture5.png %})
 
 In the **Search** tab, search for each of the preceding extensions and install
-them one at a time. When the installation completes, the extension tab should be
+them one at a time. When the installations complete, the extension tab should be
 similar to the following image:
 
 ![]({% asset_path 2020-05-02-configure-vs-code-for-azure-and-terraform/Picture6.png %})
@@ -141,11 +143,11 @@ image:
 On the very left side, you see all installed extensions. You can click them to
 explore them and see their features.
 
-- **Explorer icon**: This first tool opens the entire repo. You can the files
+- **Explorer icon**: This first icon opens the entire repo. You can the files
   or script blocks in VS Code.
-- **Lens icon**: Use this to search for a keyword and find the shortcut, such
+- **Lens icon**: Use this icon to search for a keyword and find the shortcut, such
   as `CTRL+F` or `CTRL+H`.
-- **Source control icon**: Use this to stage, un-stage, commit, or undo changes.
+- **Source control icon**: Use this icon to stage, un-stage, commit, or undo changes.
 
 The following image shows Highlighted icons that we can use in our daily tasks:
 
@@ -162,9 +164,9 @@ status bar, as shown in the following image:
 
 ![]({% asset_path 2020-05-02-configure-vs-code-for-azure-and-terraform/Picture10.png %})
 
-Notice that the project name is Test-Project and has no bugs at this time. I'm
+Notice that the project name is **Test-Project** and has no bugs at this time. I'm
 working in the **master** branch. Also, the files have no bugs, as indicated by
-the empty sync symbol.
+the empty synchronization symbol.
 
 You can run PowerShell&reg; with Git commands in the VS Code IDE terminal.
 
