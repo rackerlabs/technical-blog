@@ -7,7 +7,8 @@ author: Gourav Kumar
 published: true
 authorIsRacker: true
 authorAvatar: 'https://s.gravatar.com/avatar/ea51707a4a182959177d9b8244835571'
-bio: ""
+bio: "An Azure professional, blog writer, and community contributor with a soft
+corner of PowerShell. I'm learning Terraform and travelling my road to be on top."
 canonical: https://blog.topqore.com/monitor-azure-backup-with-log-analytics/
 categories:
     - Azure
@@ -30,23 +31,31 @@ those servers.
 
 ### Introduction
 
+Why should you set an alert for long-running server backups?
+
+DevOps and Azure admin engineers have many virtual machines to manage, routine
+tasks to perform, and troubleshooting efforts to undertake. You can't manually
+check every function on every VM, so you might miss unexpected behavior such as
+a long-running Azure backup, which can be serious. Automated alerts call
+problems to your attention.
+
 To make this topic easy to understand, I am dividing this into three parts.
 
 1.   Enable **Backup Report**.
 2.   Write a KQL query to check long-running server backups.
-3.   Configure an alert (or create a signal) for long-running server backups.
+3.   Configure an alert for long-running server backups.
 
 ### Enable Backup Report
 
-**Note**: This post assumes you already use Recovery Services vaults to back up
-your Azure infrastructure.
+**Note**: This post assumes you already use **Recovery Services** vaults to back
+up your Azure infrastructure.
 
 Use the following steps to enable an Azure Backup report:
 
 #### 1: Log into the portal
 
-Log into the Azure portal and click the **All services blade** to search
-for **Recovery Services vaults**.
+Log into the Azure portal, click the **All services blade**, and search for
+**Recovery Services vaults**.
 
 ![]({% asset_path 2020-05-01-create-alerts-for-long-running-backups-on-Azure/Picture1.png %})
 
@@ -57,13 +66,9 @@ and monitor backup duration.
 
 ![]({% asset_path 2020-05-01-create-alerts-for-long-running-backups-on-Azure/Picture2.png %})
 
-I selected the first vault in the preceding image.
-
 #### 3: Chose Backup Report
 
-The backup recovery vault has a blade, **Backup Reports**. Click
-**Backup Reports**,  and configure **Backup Report** by selecting
-[Diagnostics Settings](https://portal.azure.com/).
+Click the recovery vault blade, **Backup Reports** and click **Diagnostics Settings**.
 
 **Note**: The preview **Backup Reports** feature might not be available in
 some Regions.
@@ -75,6 +80,8 @@ some Regions.
 To configure **Backup Report**, click on **Add diagnostic setting**.
 
 ![]({% asset_path 2020-05-01-create-alerts-for-long-running-backups-on-Azure/Picture4.png %})
+
+#### 5: Enable log streaming
 
 You can stream backup logs to Azure Event Hub, a storage account, or
 **Log Analytics**. In this example, I chose **Log Analytics**.
@@ -126,15 +133,6 @@ number you consider to be too long.
 
 Glad you made it this far&mdash;read on for the best part!
 
-So, why should you set an alert for long-running server backups?
-
-“In general, we have multiple virtual machines (VMs) in Azure, and being
-DevOps and Azure admin engineers, we all have daily tasks and troubleshooting
-to do during business hours. Due to this, we can hardly open every tab of Azure
-every day; therefore, we miss unexpected behavior of Azure backup (such as one
-with a long run time, which can be serious). To make ourselves sync with the
-Azure portal is a smart move.”
-
 Use the following steps to set an alert for long-running backups:
 
 #### 1: Open Log Search
@@ -161,10 +159,11 @@ To set an alert for these servers, click **New Alert Rule**.
 
 #### 4: Configure the new alert
 
-Under **Condition*, enter the threshold value with the count. I chose `1`
+Under **Condition**, enter the threshold value with the count. I chose `1`
 because I want to create an alert on every server and result.
 
-**Note**: You could also change the period and frequency of the alert, as needed.
+**Note**: You can also change the **Period** and **Frequency** of the alert, as
+needed.
 
 ![]({% asset_path 2020-05-01-create-alerts-for-long-running-backups-on-Azure/Picture10.png %})
 
