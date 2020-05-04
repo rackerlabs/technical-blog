@@ -8,24 +8,25 @@ published: true
 authorIsRacker: true
 authorAvatar: 'https://s.gravatar.com/avatar/ea51707a4a182959177d9b8244835571'
 bio: "An Azure professional, blog writer, and community contributor who is
-passionate about PowerShell. I'm learning Terraform and forging my path to
+passionate about PowerShell, I'm also learning Terraform and forging my path to
 be on top."
 canonical: https://blog.topqore.com/monitor-azure-backup-with-log-analytics/
 categories:
     - Azure
 metaTitle: "Create alerts for long-running backups on Azure"
-metaDescription: "This post explores explore how to monitor Microsoft&reg; Azure&reg;
-backups and, if they run long, trigger an alert on them with the help of Log Analytics."
+metaDescription: "This post explores how to monitor Microsoft&reg; Azure&reg;
+backups and, if they run long, use Log Analytics to trigger an alert on the servers."
 ogTitle: "Create alerts for long-running backups on Azure"
-ogDescription: "This post explores explore how to monitor Microsoft&reg; Azure&reg;
-backups and, if they run long, trigger an alert on them with the help of Log Analytics."
+ogDescription: "This post explores how to monitor Microsoft&reg; Azure&reg;
+backups and, if they run long, use Log Analytics to trigger an alert on
+the servers."
 ---
 
-This post explores explore how to monitor Microsoft&reg; Azure&reg; server
+This post explores how to monitor Microsoft&reg; Azure&reg; server
 backups and, if the backups run long, use Log Analytics to trigger an alert on
-those servers.
+the servers.
 
-**Teaser**: The post unveils new features of Azure **Backup Report**, and Azure
+**Teaser**: The post unveils new features of Azure **Backup Report** and Azure
 **Monitor** and offers some fancy Kusto Query Language (KQL) operations.
 
 <!-- more -->
@@ -40,7 +41,8 @@ check every function on every VM, so you might miss unexpected behavior such as
 a long-running Azure backup, which can be serious. Automated alerts call
 problems to your attention.
 
-To make this topic easy to understand, I am dividing this into three parts.
+To make this topic easy to understand, I am dividing the process into the 
+following three parts:
 
 1.   Enable **Backup Report**.
 2.   Write a KQL query to check long-running server backups.
@@ -53,26 +55,26 @@ up your Azure infrastructure.
 
 Use the following steps to enable an Azure Backup report:
 
-#### 1: Log into the portal
+#### 1: Log in to the portal
 
-Log into the Azure portal, click the **All services blade**, and search for
+Log in to the Azure portal, click the **All services blade**, and search for
 **Recovery Services vaults**.
 
 ![]({% asset_path 2020-05-01-create-alerts-for-long-running-backups-on-Azure/Picture1.png %})
 
 #### 2: Select a vault
 
-Select one of the recovery service vaults on which to enable Backup Report
+Select one of the recovery service vaults on which to enable **Backup Report**
 and monitor backup duration.
 
 ![]({% asset_path 2020-05-01-create-alerts-for-long-running-backups-on-Azure/Picture2.png %})
 
-#### 3: Chose Backup Report
+#### 3: Choose Backup Report
 
-Click the recovery vault blade, **Backup Reports** and click **Diagnostics Settings**.
+Click the recovery vault blade, **Backup Reports**, and click **Diagnostics Settings**.
 
 **Note**: The preview **Backup Reports** feature might not be available in
-some Regions.
+some regions.
 
 ![]({% asset_path 2020-05-01-create-alerts-for-long-running-backups-on-Azure/Picture3.png %})
 
@@ -84,7 +86,7 @@ To configure **Backup Report**, click on **Add diagnostic setting**.
 
 #### 5: Enable log streaming
 
-You can stream backup logs to Azure Event Hub, a storage account, or
+You can stream backup logs to Azure Event Hubs, a storage account, or
 **Log Analytics**. In this example, I chose **Log Analytics**.
 
 To enable backup log streaming, fill in the name of the report, check
@@ -138,7 +140,7 @@ Use the following steps to set an alert for long-running backups:
 
 #### 1: Open Log Search
 
-Open the **Log search** section of the **Log analytics** workspace that you
+Open the **Log Search** section of the **Log Analytics** workspace that you
 selected during the report configuration.
 
 #### 2: Paste the KQL query
@@ -173,7 +175,7 @@ recipient), webhooks, and other conditions.
 
 ### Conclusion
 
-That’s all there is to it. This post showed you how to configure an alert on
+That’s all there is to it. This post shows you how to configure an alert on
 Azure VM backups that take longer than three hours. The alert sends a
 notification email with all the details. With that information, you can take the
 appropriate action.
