@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Enable Oracle audits at the operating system level"
+title: "Enable Oracle audits at the operating system level in RAC databases"
 date: 2020-04-29 00:01
 comments: true
 author: Anubhav Sharma
