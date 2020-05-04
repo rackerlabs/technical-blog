@@ -36,6 +36,8 @@ service quality for internal and external consumers alike. The major difference
 between the conductor and the IT executive is that the latter is in concert
 24/7/365.
 
+### Less than ideal
+
 The average enterprise currently uses at least
 [five different multi-cloud](https://hostingtribunal.com/blog/cloud-adoption-statistics/#gref)
 platforms. A typical mix includes on-premises private clouds, colocation, hosted
@@ -67,6 +69,8 @@ had to procure separate connections for each platform. Fortunately, new
 networking technology has paved the way for a significantly more cost-effective
 and dynamic alternative.
 
+### Solution
+
 Enterprises can now turn to software-defined networking (SDN) platforms.  These
 platforms have private physical links between the densest interconnectivity
 hotspots and popular cloud and data center service providers. After they connect
@@ -91,6 +95,8 @@ across each of the endpoints we've established, but we can also spin up virtual
 connections across Megaport and Equinix Cloud Exchange Fabric&mdash;all on the same
 physical connection.
 
+### More benefits
+
 Any customers who use at least one Rackspace service can harness the power of
 our ecosystem of ecosystems by leveraging RackConnect Global, our multi-cloud
 connectivity offering.  Customers can take advantage of this service, whether
@@ -113,14 +119,14 @@ in Silicon Valley. The data flowing between Chicago and the two third-party
 clouds rides the Rackspace backbone rather than the public Internet as does the
 data flowing between AWS on the east coast and Alibaba on the west coast.
 
+### Conclusion
+
 If you're struggling to conduct your enterprise IT orchestra in a world where
 your network perimeter is expanded in unforeseen ways with multiple clouds and a
 distributed workforce, you have an option. Consider RackConnect Global to rapidly
 optimize and secure the entirety of your network core in a fully-managed
 fashion&mdash;a far more cost-effective solution than hiring multiple MPLS lines
 from the telephone company.
-
-
 
 <a class="cta teal" id="cta" href="https://www.rackspace.com/cloud-connectivity/rackconnect/global">Learn more about RackConnect Global.</a>
 
