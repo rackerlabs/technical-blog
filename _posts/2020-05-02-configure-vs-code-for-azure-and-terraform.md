@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Configure VS Code for Azure and Terraform"
+title: "Configure Visual Studio Code for Azure and Terraform"
 date: 2020-05-01 00:01
 comments: true
 author: Gourav Kumar
@@ -8,33 +8,33 @@ published: true
 authorIsRacker: true
 authorAvatar: 'https://s.gravatar.com/avatar/ea51707a4a182959177d9b8244835571'
 bio: "An Azure professional, blog writer, and community contributor who is
-passionate about PowerShell. I'm learning Terraform and forging my path to
+passionate about PowerShell, I'm also learning Terraform and forging my path to
 be on top."
 canonical: https://blog.topqore.com/monitor-azure-backup-with-log-analytics/
 categories:
     - Azure
-metaTitle: "Configure VS Code for Azure and Terraform"
-metaDescription: "This post shows you how to easily configure and use Visual Studio Code&reg;
-(VS Code) for Azure&reg; DevOps, Hashicorp&reg; Terraform&reg;, and Git repositories. "
-ogTitle: "Configure VS Code for Azure and Terraform"
-ogDescription: "This post shows you how to easily configure and use Visual Studio Code&reg;
-(VS Code) for Azure&reg; DevOps, Hashicorp&reg; Terraform&reg;, and Git repositories. "
+metaTitle: "Configure Visual Studio Code for Azure and Terraform"
+metaDescription: "This post describes how to easily configure and use Visual Studio&reg; Code
+for Azure&reg; DevOps, Hashicorp&reg; Terraform&reg;, and Git repositories. "
+ogTitle: "Configure Visual Studio Code for Azure and Terraform"
+ogDescription: "This post describes how to easily configure and use Visual Studio&reg; Code
+for Azure&reg; DevOps, Hashicorp&reg; Terraform&reg;, and Git repositories. "
 ---
 
-This post shows you how to easily configure and use Visual Studio Code&reg;
-(VS Code) for Azure&reg; DevOps, Hashicorp&reg; Terraform&reg;, and Git
+This post describes how to easily configure and use Visual Studio&reg; Code (VS Code)
+for Azure&reg; DevOps, Hashicorp&reg; Terraform&reg;, and Git
 repositories.
 
 <!-- more -->
 
 ### Overview
 
-VS Code, an integrated development environment (IDE), requires limited resources:
+VS Code, an integrated development environment (IDE), requires the following limited resources:
 
-- CPU = 1.6 GHz or faster processor
-- RAM = 4 GB
-- Storage =  2 – 5 GB
-- Support OS  = Windows&reg;, MacOS&reg;, and Linux&reg; (Debian and Red Hat&reg;).
+- CPU:  1.6 GHz or faster processor
+- RAM:  4 GB
+- Storage:  2 – 5 GB
+- Support operating system (OS):  Windows&reg;, Mac OS&reg;, and Linux&reg; (Debian&reg; and Red Hat&reg;).
 
 This post covers four topics:
 
@@ -46,7 +46,7 @@ This post covers four topics:
 ### Installation
 
 The following steps show how to configure VS Code in Windows 10, but similar
-steps work for other operating systems (OS).
+steps work for other OSs.
 
 1. Download the VS Code installer for Windows from
 [https://code.visualstudio.com/download](https://code.visualstudio.com/download).
@@ -73,15 +73,15 @@ shown in the following image:
 
 ![]({% asset_path 2020-05-02-configure-vs-code-for-azure-and-terraform/Picture3.png %})
 
-Click on the icon to launch the VS Code. This action opens an empty VS Code
-home page for with the default configuration.
+Click on the icon to launch VS Code. This action opens an empty VS Code
+home page for the default configuration.
 
 ![]({% asset_path 2020-05-02-configure-vs-code-for-azure-and-terraform/Picture4.png %})
 
 #### 2. Install extensions
 
-To configure VSCode for Azure DevOps and Terraform, install the following Azure
-and Terraform extensions.
+To configure VS Code for Azure DevOps and Terraform, install the following Azure
+and Terraform extensions:
 
 - **Azure Account**: The Azure Account extension provides a single Azure sign-in
   and subscription filtering experience for all other Azure extensions. It makes
@@ -103,8 +103,8 @@ and Terraform extensions.
   extension provides Terraform command support, resource graph visualization,
   and CloudShell integration inside VSCode.
 
-- **PowerShell**: This extension enables you to write and debug PowerShell
-  scripts by using the VS Code's IDE-like interface.
+- **PowerShell**: This extension enables you to write and debug PowerShell&reg;
+  scripts by using the the VS Code IDE-like interface.
 
 - **Terraform**: This extension provides syntax highlighting, linting,
   formatting, and validation for Terraform.
@@ -124,7 +124,7 @@ Click on each extension to verify it is enabled.
 
 ### Create a test project
 
-Create a test-project in Azure DevOps and clone that project in VS Code.
+Create a test project in Azure DevOps and clone that project in VS Code.
 
 ![]({% asset_path 2020-05-02-configure-vs-code-for-azure-and-terraform/Picture7.png %})
 
@@ -140,16 +140,16 @@ image:
 
 ### Overview of the Vscode user interface.
 
-On the very left side, you see all installed extensions. You can click them to
+On the left side, you see all installed extensions. You can click them to
 explore them and see their features.
 
-- **Explorer icon**: This first icon opens the entire repo. You can the files
+- **Explorer icon**: This first icon opens the entire repo. You can view the files
   or script blocks in VS Code.
 - **Lens icon**: Use this icon to search for a keyword and find the shortcut, such
   as `CTRL+F` or `CTRL+H`.
-- **Source control icon**: Use this icon to stage, un-stage, commit, or undo changes.
+- **Source control icon**: Use this icon to stage, unstage, commit, or undo changes.
 
-The following image shows Highlighted icons that we can use in our daily tasks:
+The following image shows highlighted icons that you can use in your daily tasks:
 
 ![]({% asset_path 2020-05-02-configure-vs-code-for-azure-and-terraform/Picture9.png %})
 
@@ -168,7 +168,7 @@ Notice that the project name is **Test-Project** and has no bugs at this time. I
 working in the **master** branch. Also, the files have no bugs, as indicated by
 the empty synchronization symbol.
 
-You can run PowerShell&reg; with Git commands in the VS Code IDE terminal.
+You can run PowerShell with Git commands in the VS Code IDE terminal.
 
 ![]({% asset_path 2020-05-02-configure-vs-code-for-azure-and-terraform/Picture11.png %})
 
