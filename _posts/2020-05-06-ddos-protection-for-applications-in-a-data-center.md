@@ -1,24 +1,23 @@
 ---
 layout: post
-title: "DDoS protection for applications in a data center"
-date: 2020-05-06 00:01
+title: "Hack, secure, and optimize distributed IT environments and workplaces with the Rackspace network backbone"
+date: 2020-05-04 00:01
 comments: true
-author: Will Parsons
+author: Michael Levy
 published: true
 authorIsRacker: true
 categories:
-    - Security
-metaTitle: "DDoS protection for applications in a data center"
-metaDescription: "Rackspace partners with Akamai&reg;, Cloudflare&reg;, and Imperva&reg; to provide best-in-class edge
-functionality, typically including performance-boosting Content Delivery Network (CDN) and caching
-capability, a Web Application Firewall (WAF) for enhanced security, and protection from Distributed
-Denial of Service (DDoS) attacks."
-ogTitle: "DDoS protection for applications in a data center"
-ogDescription: "Rackspace partners with Akamai&reg;, Cloudflare&reg;, and Imperva&reg; to provide best-in-class edge
-functionality, typically including performance-boosting Content Delivery Network (CDN) and caching
-capability, a Web Application Firewall (WAF) for enhanced security, and protection from Distributed
-Denial of Service (DDoS) attacks."
+    - General
+metaTitle: "Link, secure, and optimize distributed IT environments and workplaces with the Rackspace network backbone"
+metaDescription: "Consider RackConnect Global to rapidly
+optimize and secure the entirety of your network core in a fully-managed
+fashion&mdash;a far more cost-effective solution than hiring multiple MPLS lines
+from the telephone company."
+ogTitle: "Link, secure, and optimize distributed IT environments and workplaces with the Rackspace network backbone"
+ogDescription: "Consider RackConnect Global to rapidly
+optimize and secure the entirety of your network core in a fully-managed
+fashion&mdash;a far more cost-effective solution than hiring multiple MPLS lines
+from the telephone company."
 ---
 
 Rackspace partners with folks.
-
