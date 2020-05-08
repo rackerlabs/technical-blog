@@ -3,11 +3,11 @@ layout: post
 title: "Rackspace now offers Data Modernization"
 date: 2020-05-08 00:01
 comments: true
-author:
+author: Nirmal Ranganathan
 published: true
 authorIsRacker: true
 authorAvatar: ''
-bio: ""
+bio: "Nirmal is a Principal Architect and Product Manager at Rackspace responsible for building Rackspace's Data Analytics and Artificial Intelligence/Machine Learning solutions as part of our Data Services portfolio. Nirmal works closely with our Alliances, Partners and Customers to create the most effective and efficient analytics and machine learning solutions to enable our customers to focus on driving a data driven culture within their organizations and become leaders in their respective segments. Prior to this, Nirmal was a consultant in our Professional Services organization and provided recommendations and solutions for a wide variety of industry verticals around large scale databases and data processing, data analytics, data warehousing in the cloud and machine learning/artificial intelligence. Nirmal has a strong background in cloud and distributed systems, having contributed to various open source projects from Cassandra to OpenStack."
 categories:
     -
 metaTitle: "Rackspace now offers Data Modernization"
@@ -32,9 +32,7 @@ to help you gain actionable intelligence from your data by providing the followi
 - Data transformation
 
 
-### The Rackspace Data Modernization journey
-
-#### Data analytics assessment and strategy
+### Data analytics assessment and strategy
 
 Rackspace helps you develop a practical solution that focuses on both technology and business transformation.
 
