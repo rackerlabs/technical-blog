@@ -6,7 +6,7 @@ comments: true
 author: Nirmal Ranganathan
 published: true
 authorIsRacker: true
-authorAvatar: 'https://en.gravatar.com/userimage/284884/e324be92452bc6fccb4ef6a72692fdca.jpeg'
+authorAvatar: 'https://s.gravatar.com/avatar/6284884/e324be92452bc6fccb4ef6a72692fdca'
 bio: "Nirmal is a Principal Architect and Product Manager at Rackspace responsible for building Rackspace's Data Analytics and Artificial Intelligence/Machine Learning solutions as part of our Data Services portfolio. Nirmal works closely with our Alliances, Partners and Customers to create the most effective and efficient analytics and machine learning solutions to enable our customers to focus on driving a data driven culture within their organizations and become leaders in their respective segments. Prior to this, Nirmal was a consultant in our Professional Services organization and provided recommendations and solutions for a wide variety of industry verticals around large scale databases and data processing, data analytics, data warehousing in the cloud and machine learning/artificial intelligence. Nirmal has a strong background in cloud and distributed systems, having contributed to various open source projects from Cassandra to OpenStack."
 categories:
     - Database
@@ -63,7 +63,7 @@ to leverage data analytics in practice. Or you may be ready for a full productio
 environment leveraging automation, ingestion best practices, data processing, storage patterns and cloud best practices.
 - **Data Integration:** Rackspace develops data pipelines to ingest, transform, and store data.
 - **Data Modeling:** Rackspace data engineers define data models and create schemas, data translations, and consumption pattern best practices.
-- **BI & Reporting:** Rackspace data engineers will build dashboards and real-time data refreshes as well as build and automate operational and business reporting, so you have complete and readily available insight into your data.
+- **BI & Reporting:** Rackspace data engineers build dashboards and real-time data refreshes as well as build and automate operational and business reporting, so you have complete and readily available insight into your data.
 
 
 ### Benefits
