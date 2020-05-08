@@ -6,7 +6,7 @@ comments: true
 author: Nirmal Ranganathan
 published: true
 authorIsRacker: true
-authorAvatar: 'https://en.gravatar.com/userimage/284884/e324be92452bc6fccb4ef6a72692fdca'
+authorAvatar: 'https://s.gravatar.com/avatar/152da1a0a80d81265a5cd1b40e16d465'
 bio: "Nirmal is a Principal Architect and Product Manager at Rackspace responsible for building Rackspace's Data Analytics and Artificial Intelligence/Machine Learning solutions as part of our Data Services portfolio. Nirmal works closely with our Alliances, Partners and Customers to create the most effective and efficient analytics and machine learning solutions to enable our customers to focus on driving a data driven culture within their organizations and become leaders in their respective segments. Prior to this, Nirmal was a consultant in our Professional Services organization and provided recommendations and solutions for a wide variety of industry verticals around large scale databases and data processing, data analytics, data warehousing in the cloud and machine learning/artificial intelligence. Nirmal has a strong background in cloud and distributed systems, having contributed to various open source projects from Cassandra to OpenStack."
 categories:
     - Database
