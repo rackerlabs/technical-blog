@@ -9,11 +9,15 @@ authorIsRacker: true
 authorAvatar: ''
 bio: "Nirmal is a Principal Architect and Product Manager at Rackspace responsible for building Rackspace's Data Analytics and Artificial Intelligence/Machine Learning solutions as part of our Data Services portfolio. Nirmal works closely with our Alliances, Partners and Customers to create the most effective and efficient analytics and machine learning solutions to enable our customers to focus on driving a data driven culture within their organizations and become leaders in their respective segments. Prior to this, Nirmal was a consultant in our Professional Services organization and provided recommendations and solutions for a wide variety of industry verticals around large scale databases and data processing, data analytics, data warehousing in the cloud and machine learning/artificial intelligence. Nirmal has a strong background in cloud and distributed systems, having contributed to various open source projects from Cassandra to OpenStack."
 categories:
-    -
+    - Database
 metaTitle: "Rackspace now offers Data Modernization"
-metaDescription: ""
+metaDescription: "Not all organizations have developed the
+required technical skills and business processes to implement modern data analytics solutions.
+This is where Rackspace can help."
 ogTitle: "Rackspace now offers Data Modernization"
-ogDescription: ""
+ogDescription: "Not all organizations have developed the
+required technical skills and business processes to implement modern data analytics solutions.
+This is where Rackspace can help."
 ---
 
 As data volume, variety, and sources quickly increase, businesses can struggle to manage
