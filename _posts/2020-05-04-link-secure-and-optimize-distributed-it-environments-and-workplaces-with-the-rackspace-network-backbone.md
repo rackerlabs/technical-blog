@@ -6,6 +6,8 @@ comments: true
 author: Michael Levy
 published: true
 authorIsRacker: true
+authorAvatar: 'https://s.gravatar.com/avatar/1f70cf15c8fb3ae717b55c61c5ad6eb5'
+bio: "Product Director for Rackspace colocation and connectivity practices. Was part of core team that spun Cyxtera out from CenturyLink. Started career as a market research analyst at 451 Research covering the data center services space. Lives in Manhattan with wife, daughter, and dog."
 categories:
     - General
 metaTitle: "Link, secure, and optimize distributed IT environments and workplaces with the Rackspace network backbone"
