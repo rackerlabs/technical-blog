@@ -22,34 +22,34 @@ original presentation at London’s Calling here.
 Which Salesforce marketing automation platform is right for your business:
 Pardot or Marketing Cloud? This is a great question, and the answer isn’t always immediately clear. Most of our clients already
 understand the importance of marketing automation as a way to connect their sales and marketing efforts. Depending on your
-marketing automation goals, both Pardot and Marketing Cloud can help.
+marketing automation goals, Pardot and Marketing Cloud can help.
 
 <!-- more -->
 
 ![]({% asset_path 2020-05-11-top-ten-redis-cli-commands/Picture1.png %})
 
-While both Pardot and Marketing Cloud are marketing automation solutions, Pardot can be seen as a tool, and Marketing Cloud as a toolkit.
+While both Pardot and Marketing Cloud are marketing automation solutions, Pardot is a tool, while Marketing Cloud is a toolkit.
 The latter offers clients more options when it comes to B2B and B2C marketing&mdash;however, this doesn’t necessarily make it your best choice.
-This depends on what you’re trying to achieve through your marketing efforts.
+This depends on what your marketing efforts are trying to achieve.
 
-To help you decide which is right for your company, the following is a breakdown of some common uses for marketing automation, and how your
-experience differ between Pardot and Marketing Cloud.
+To help you decide which is right for your company, the following is a breakdown of some common uses for marketing automation,
+and the differences between Pardot and Marketing Cloud.
 
 ### Creating email campaigns
 
 Email is not a new marketing innovation, but it remains the most valuable one. Email marketing has the highest ROI of any
-marketing channel, which is why it’s essential that Pardot and Marketing Cloud both enable you to create custom email campaigns.
+marketing channel and both Pardot and Marketing Cloud enable you to create custom email campaigns.
 
-If you’ve ever created an email campaign in an email service provider, you’re likely familiar with the use of drag-and-drop templates
+If you’ve ever created an email campaign using an email service provider, you’re likely familiar with drag-and-drop templates
 and WYSIWYG text editors. Pardot and Marketing Cloud work in a similar way, and simplify email creation. You don’t need to know HTML or another
-coding language for either tool, but as with any email editor, knowing some can be useful when making custom tweaks.
+coding language for either tool, but like with any email editor, knowing some can be useful when making custom tweaks.
 
 One major difference between Pardot and Marketing Cloud is when it comes time to preview your email campaign. Marketing Cloud allows users
 to toggle between a live desktop or mobile preview while designing their campaigns. Pardot, on the other hand, needs rendering time, and uses
-Litmus to let you preview how your email on Outlook, different mobile devices, and more. But again, this takes additional time.
+Litmus to let you preview your email on Outlook, different mobile devices, and more.
 
 When sending emails, Pardot and Marketing Cloud both let you customize options like sender’s name, and create subject lines
-based on dynamic content like the location of a lead. Marketing Cloud offers more flexibility, and you can use any content
+based on dynamic content such as the location of a lead. Marketing Cloud offers more flexibility, and you can use any content
 in Salesforce to customize and create targeted subject lines.
 
 ### Landing pages
@@ -75,15 +75,19 @@ Pardot can be used as a social media updater, while Marketing Cloud’s Social S
 
 Pardot and Marketing Cloud are most helpful when you stick with a few best practices.
 
-It's important to keep your database clean. This is especially true for Pardot,
+Keep your database clean. This is especially true for Pardot,
 which charges clients based on the number of prospects in the database&mdash;upgrades are made in batches of 10,000 prospects.
 
 Finally, remember that marketing automation tools are meant to help, not take over. Neither
 Pardot nor Marketing Cloud is a tool you can set and forget. Marketing automation can make your life easier,
-but that doesn't mean you should start duplicating email campaigns or use the same messaging across email, social,
+but that doesn't mean you should start duplicating email campaigns or using the same messaging across email, social,
 and mobile. Marketing best practices still apply, and tools like Pardot and Marketing Cloud are meant to complement your other marketing efforts&mdash;not replace them.
 
-There is no one-size-fits-all when it comes to marketing automation tools, and you should opt for the tool that let's you to achieve what you want.
+There is no one-size-fits-all when it comes to marketing automation tools, and you should choose the tool that let's you to achieve what you want.
 
-If you enjoyed this blog post, download our handy guide to email marketing below.
+Visit [www.rackspace.com](https://www.rackspace.com) and select **Sales Chat** to learn more about how Rackspace can help you with Salesforce.
+
+<a class="cta teal" id="cta" href="https://www.rackspace.com/salesforce">Learn more about Salesforce Customer Relationship Management (CRM)</a>
+
+
 
