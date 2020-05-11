@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Using Azure proximity placement groups"
-date: 2020-04-29 00:00
+title: "Using the Azure secrets store CSI driver in AKS"
+date: 2020-05-13 00:00
 comments: true
 author: Jimmy Rudley
 published: true
@@ -10,13 +10,13 @@ authorAvatar: 'https://www.gravatar.com/avatar/fb085c1ba865548f330e7d4995c0bf7e'
 bio: "Jimmy Rudley is an Azure&reg; Architect at Rackspace and an active member of the Azure community. He focuses on solving large and complex architecture and automation problems within Azure."
 categories:
     - Azure
-metaTitle: "Using Azure proximity placement groups"
-metaDescription: "Configure Azure&reg; proximity placement groups."
-ogTitle: "Using Azure proximity placement groups"
-ogDescription: "Configure Azure&reg; proximity placement groups."
+metaTitle: "Using the Azure secrets store CSI driver in AKS"
+metaDescription: "Using the Azure&reg secrets store CSI driver in AKS."
+ogTitle: "Using the Azure secrets store CSI driver in AKS"
+ogDescription: "Using the Azure&reg secrets store CSI driver in AKS."
 ---
 
-I hardly ever see the Azure&reg; proximity placement groups feature implemented for Infrastructure as a Service (IaaS) solutions. Do folks not know that this feature exists, or is it just one of the many components people forget when architecting? For those that do not know what a proximity placement group is, it is a logical grouping that tries to keep your virtual machines (VMs) physically close to each other to reduce network latency between those VMs.
+If you have been using Azure Key Vault Flex Volume for Azure Kubernetes Service, it is time to switch over to the new provider. The Flex Volume solution has now been deprecated in favor of the [Azure Key Vault Provider for Secret Store CSI Driver](https://github.com/Azure/secrets-store-csi-driver-provider-azure). The Azure provider for the [secrets store CSI driver](https://github.com/kubernetes-sigs/secrets-store-csi-driver) has a very simplistic configuration that makes deploying and governance around keys, secrets and certificates feel like any other Azure resources talking to keyvault. Let's take a look at a complete example from provisioning an AKS cluster to reading in a secret as an enviornmental variable.
 
 <!-- more -->
 
