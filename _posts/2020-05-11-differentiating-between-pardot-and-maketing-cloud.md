@@ -62,7 +62,7 @@ Cloud are mobile optimized, while in Pardot you have to build and maintain it wi
 
 The publishing process is also different. With Marketing Cloud, you can save and launch your landing page at a future date.
 This is perfect if you’re not ready to open registrations, publish your white paper, or capture other information. Pardot doesn’t
-offer this option — though you can hide your landing page from search engines until you’re ready to go public.
+offer this option&mdash;but it does let you hide your landing page from search engines until you’re ready to go public.
 
 ### Best practices
 
@@ -73,17 +73,17 @@ Pardot can be used as a social media updater, while Marketing Cloud’s Social S
 
 ### Execute the same command several times
 
-Pardot and Marketing Cloud help the most when you stick with a few best practices.
+Pardot and Marketing Cloud are most helpful when you stick with a few best practices.
 
-For one, it’s important to keep your database clean. This is especially true for Pardot,
-which charges clients based on the number of prospects in the database (upgrades are made in batches of 10,000 prospects).
+It's important to keep your database clean. This is especially true for Pardot,
+which charges clients based on the number of prospects in the database&mdash;upgrades are made in batches of 10,000 prospects.
 
-Finally, it’s important to remember that marketing automation tools are meant to help, not take over. Neither
-Pardot nor Marketing Cloud is a tool you can set and forget. While marketing automation can make your life easier,
-it doesn’t mean you can get lazy and start duplicating email campaigns or use the same messaging across email, social,
-and mobile. Marketing best practices still apply, and tools like Pardot and Marketing Cloud are meant to complement your other marketing efforts — not replace them.
+Finally, remember that marketing automation tools are meant to help, not take over. Neither
+Pardot nor Marketing Cloud is a tool you can set and forget. Marketing automation can make your life easier,
+but that doesn't mean you should start duplicating email campaigns or use the same messaging across email, social,
+and mobile. Marketing best practices still apply, and tools like Pardot and Marketing Cloud are meant to complement your other marketing efforts&mdash;not replace them.
 
-There is no one-size-fits-all when it comes to marketing automation tools, and you should opt for the tool that allows you to achieve what you want.
+There is no one-size-fits-all when it comes to marketing automation tools, and you should opt for the tool that let's you to achieve what you want.
 
 If you enjoyed this blog post, download our handy guide to email marketing below.
 
