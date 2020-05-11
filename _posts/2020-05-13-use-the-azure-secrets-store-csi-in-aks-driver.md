@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Use the Azure secrets store CSI driver in AKS"
+title: "Use the Azure Secret Store CSI driver in AKS"
 date: 2020-05-13 00:00
 comments: true
 author: Jimmy Rudley
@@ -10,15 +10,15 @@ authorAvatar: 'https://www.gravatar.com/avatar/fb085c1ba865548f330e7d4995c0bf7e'
 bio: "Jimmy Rudley is an Azure&reg; Architect at Rackspace and an active member of the Azure community. He focuses on solving large and complex architecture and automation problems within Azure."
 categories:
     - Azure
-metaTitle: "Use the Azure secrets store CSI driver in AKS"
-metaDescription: "Use the Azure&reg secrets store CSI driver in AKS."
-ogTitle: "Use the Azure secrets store CSI driver in AKS"
-ogDescription: "Use the Azure&reg secrets store CSI driver in AKS."
+metaTitle: "Use the Azure Secret Store CSI driver in AKS"
+metaDescription: "Use the Azure&reg Secret Store CSI driver in AKS."
+ogTitle: "Use the Azure Secret Store CSI driver in AKS"
+ogDescription: "Use the Azure&reg Secret Store CSI driver in AKS."
 ---
 
 If you have been using Azure&reg; Key Vault FlexVolume for Azure Kubernetes Service (AKS), it is
-time to switch over to the new provider. The FlexVolume solution has been deprecated in favor of
-the [Azure Key Vault Provider for Secret Store CSI Driver](https://github.com/Azure/secrets-store-csi-driver-provider-azure). The Azure provider for the [Secret Store CSI driver](https://github.com/kubernetes-sigs/secrets-store-csi-driver)
+time to switch over to the new provider. Azure deprecated the FlexVolume solution in favor of
+the [Azure Key Vault Provider for Secret Store CSI Driver](https://github.com/Azure/secrets-store-csi-driver-provider-azure). The Azure Key Vault provider for the [Secret Store CSI driver](https://github.com/kubernetes-sigs/secrets-store-csi-driver)
 has a simple configuration that makes deployment and governance around keys, secrets, and
 certificates feel like any other Azure resources talking to the key vault. Let's take a look
 at a complete example from provisioning an AKS cluster to reading in a secret as an environmental variable.
@@ -38,7 +38,7 @@ into the vault:
     az keyvault secret set --vault-name $kvName --name mssql-secret --value $pw
     az keyvault secret show --name mssql-secret --vault-name $kvName
 
-I recommend an AKS cluster with a Kubernetes version of 1.16.0 or greater. Configure the cluster with
+I recommend an AKS cluster with a Kubernetes&reg; version of 1.16.0 or greater. Configure the cluster with
 the following code:
 
     az group create --name $aksRg --location $location
@@ -54,7 +54,7 @@ the following code:
        --network-plugin azure `
        --enable-managed-identity 
 
-Because this process passes the **--enable-managed-identity*** switch, you need to pull out
+Because this process passes the **--enable-managed-identity** switch, you need to pull out
 the managed identity ID. Use this ID to assign the **Managed Identity Operator** and 
 **Virtual Machine Contributor** role to the `AKS MC_` resource group:
 
@@ -78,7 +78,7 @@ and certificates.
     # set policy to access certs in your Key Vault
     az keyvault set-policy -n $kvName --certificate-permissions get --spn $identity
 
-Use HELM to install the driver:
+Use HELM&reg; to install the driver:
 
     helm repo add csi-secrets-store-provider-azure https://raw.githubusercontent.com/Azure/secrets-store-csi-driver-provider-azure/master/charts
     helm install csi-secrets-store-provider-azure/csi-secrets-store-provider-azure --generate-name
@@ -100,10 +100,10 @@ in **secretObjects**, **objects** and **objectType** in the yml file:
 
 Because you provisioned the AKS cluster with the enabled managed identity, you need to set two parameters: **useVMManagedIdentity** and **userAssignedIdentityID**. 
 
-The $identity variable stores the **userAssignedIdentityID**. If you do not specify secretObjects, you
-can only mount a volume. The system uses **secretObjects** to sync and create a kubernetes secret. You can
+The $identity variable stores the **userAssignedIdentityID**. If you do not specify **secretObjects**, you
+can only mount a volume. The system uses **secretObjects** to sync and create a Kubernetes secret. You can
 use this to set environmental variables in your deployment yml file. The secretObject name matches what you
-specified in the keyvault. The deployment file uses the key to match and bring the secret in. Kubertnes creates,
+specified in the key vault. The deployment file uses the key to match and bring the secret in. Kubertnes creates,
 names, and uses this secret name.
 
 **kv-sqldemo.yml** code:
@@ -133,7 +133,7 @@ names, and uses this secret name.
 
 Run `kubectl apply -f .\kv-sqldemo.yml` to apply our configuration.
 
-Create a Microsoft&reg; SQL Server (MSSQL) instance that pulls the mssql-secret generated during
+Create a Microsoft&reg; SQL Server&reg; (MS SQL) instance that pulls the mssql-secret generated during
 the key vault deployment as the System Administrator (SA) password.
 
     ---
@@ -271,8 +271,11 @@ as shown here:
               mountPath: "/mnt/secrets-store"
               readOnly: true
 
-Finally, apply our mssql yml file by running this command : `k apply -f .\mssqlStateful.yml`. After the
-pod starts and the secret syncs, verify that the password was set as an environmental variable:
+Finally, apply our mssql yml file by running this command: 
+
+`k apply -f .\mssqlStateful.yml`
+
+After the pod starts and the secret syncs, verify that the password is set as an environmental variable:
 
     kubectl get pods
 
@@ -303,5 +306,5 @@ with the SA account by using the password set from Azure Key Vault:
 
 ![]({% asset_path 2020-05-13-using-the-azure-secrets-store-csi-in-aks-driver/ssms.png %})
 
-Using Azure Key Vault with AKS has never been easier. I hope this demo shows some possabilities of
+Using Azure Key Vault with AKS has never been easier. I hope this demo shows some possibilities of
 things that you can accomplish easily with the Azure Key Vault provider. 
