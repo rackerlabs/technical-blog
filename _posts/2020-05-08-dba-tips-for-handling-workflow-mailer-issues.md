@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "DBA tips for handling Workflow Mailer issues"
+title: "DBA tips for handling Workflow Notification Mailer issues"
 date: 2020-05-08 00:01
 comments: true
 author: Ravishekhar Yelemane
 published: true
 authorIsRacker: true
 authorAvatar: 'https://s.gravatar.com/avatar/1d5246c5ac05e979d88dc05ae240a30b'
-bio: "I’m an Oracle Apps DBA working with Rackspace. I work on a variety of Oracle Products, including databases, E-Business Suite, and Fusion Middleware applications, and I'm an OCI Architect Associate"
+bio: "I’m an Oracle Apps DBA working with Rackspace. I work on a variety of Oracle Products, including databases, E-Business Suite, and Fusion Middleware applications, and I'm an OCI Architect Associate."
 categories:
     - Oracle
     - database
@@ -25,13 +25,13 @@ This post discusses a few generic Oracle&reg; Workflow Notification Mailer issue
 ### Introduction
 
 When you manage issues, you deal with the process of recording, tracking, and resolving problems. Because
-Workflow Mailer has many components,  you might struggle to address issues related to Workflow Mailer. To
+Workflow Notification Mailer has many components, you might struggle to address issues related to it. To
 help you, I cover some issues and possible fixes. Don't miss out on the scripts that you need to manage
-Workflow Mailer activities easily.
+Workflow Notification Mailer activities easily.
 
-### Workflow Mailer generic issues and their fixes
+### Workflow Notification Mailer generic issues and their fixes
 
-The following sections explore some Workflow Mailer issues and solutions.
+The following sections explore some Workflow Notification Mailer issues and solutions.
 
 #### Issue: Users don't get notifications
 
@@ -48,36 +48,36 @@ The following settings are set to `DISABLED` instead of `MAILHTML`:
 
 1. Run the following commands to back up the tables:
 
-    SQL> create table fnd_user_preferences_bkp as select * from fnd_user_preferences;
+     ```SQL> create table fnd_user_preferences_bkp as select * from fnd_user_preferences;
 
-    Table created.
+     Table created.
 
-    SQL> create table wf_local_roles_bkp as select * from wf_local_roles;
+     SQL> create table wf_local_roles_bkp as select * from wf_local_roles;
 
-    Table created.
+     Table created.```
 
 2. Run the following commands to update the tables:
 
-    select user_name,preference_value from FND_USER_PREFERENCES where preference_value = 'DISABLED' and preference_name = 'MAILTYPE' and module_name = 'WF' and user_name like '%<USER_NAME>%'; 
+    ```select user_name,preference_value from FND_USER_PREFERENCES where preference_value = 'DISABLED' and preference_name = 'MAILTYPE' and module_name = 'WF' and user_name like '%<USER_NAME>%'; 
 
     update FND_USER_PREFERENCES set preference_value = 'MAILHTML' where preference_name = 'MAILTYPE' and preference_value = 'DISABLED' and module_name = 'WF' and user_name like '%<USERNAME>%'; 
 
     select * from wf_local_roles where notification_preference = 'DISABLED' and name like '%<NAME>'
 
-    update wf_local_roles set notification_preference = 'MAILHTML' where notification_preference = 'DISABLED' and name like '%<NAME>%'
+    update wf_local_roles set notification_preference = 'MAILHTML' where notification_preference = 'DISABLED' and name like '%<NAME>%'```
 
 3. Run the request **Resend Failed/Error Workflow Notifications** from the System Administrator
-   responsibility to resend failed notifications, . Set the date parameter, **Notifications sent on or after**,
+   responsibility to resend failed notifications. Set the date parameter, **Notifications sent on or after**,
    to the specific date.
 
-   **Note:**  Use the following format for the date: **DD-MMM-YYYY** (Ex: 01-JAN-2020)
+   **Note:**  Use the following format for the date: **DD-MMM-YYYY** (Example: 01-JAN-2020)
  
 #### Issue 2: Emails go to the wrong folder
 
-The system delivers Expense notification approval emails to the **DISCARD** folder instead of the
-**PROCESS* folder.
+The system delivers expense notification approval emails to the **DISCARD** folder instead of the
+**PROCESS** folder.
 
-The following example shows the standard approval email **Action** item generated when approver
+The following example shows the standard approval email **Action** item generated when the approver
 clicks on the **Approval** link:
 
     Action: 'Approve'
@@ -96,13 +96,13 @@ notifications from a mobile device.
 **Fix:**
 
 Whenever you approve an email notification by using email text mode or from a mobile device, you
-should sure that you do the following actions:
+should ensure that you do the following actions:
 
 - Put a space between each field.
 - Put the **NID** value in brackets.
 
 The message from the preceding example should have at least one space between the fields, and
-the **NID** value should include square brackets ([]), as shown in the following example:
+the **NID** value should include square brackets ([ ]), as shown in the following example:
 
     Action: 'Approve'
     Note: ''
@@ -114,32 +114,32 @@ Users don't receive emails on time, or they get old notifications that are alrea
 
 **Cause:**
 
-The issue occurs when the Notification Mailer queue is full of junk data.
+The issue occurs when the Workflow Notification Mailer queue is full of junk data.
 
 The `wf_notifications` parameter has **mail_status** set to `MAIL` for closed notifications or `SENT`
 for open notifications.
 
-In this scenario, the **wf_notification_out** queue has very old entries from the **wf_notifcations**
+In this scenario, the **wf\_notification\_out** queue has very old entries from the **wf_notifcations**
 table. This occurrence sends an anomaly notification when the Workflow Background Process request
 parameters are incorrect.
 
 **Fix:**
 
-Use the following high-level steps to rebuild  the Notification Mailer queue:
+Use the following high-level steps to rebuild the Workflow Notification Mailer queue:
 
-1. Check with the customer on how to purge the old notifications.
+1. Check with the customer about how to purge the old notifications.
 2. Keep the date for reference, such as the **begin_date**.
-3. Shut down Workflow Mailer.
+3. Shut down Workflow Notification Mailer.
 4. Close all the old **OPEN** notifications that are older than **begin_date**.
-5. Update the mail_status to **SENT** for any notifications that are older than **begin_date**.
-6. Rebuild the Mailer queue by using the following script as the **APPS** user:
+5. Update the **mail\_status** to **SENT** for any notifications that are older than **begin_date**.
+6. Rebuild the queue by using the following script as the **APPS** user:
 
      SQL> @$FND_TOP/patch/115/sql/wfntfqup.sql apps <APSS_PASSWD> APPLSYS
 
-### Maintenance scripts for Mailer
+### Maintenance scripts for the Workflow Notification Mailer
 
-The commands in this section help you to maintain Mailer. You can put the commands into scripts for
-your convenience.
+The commands in this section help you to maintain the Workflow Notification Mailer. You can put the
+commands into scripts for your convenience.
 
 #### Script 1
 
@@ -152,7 +152,8 @@ This script modifies the following settings:
 - `DEACTIVATED_SYSTEM`
 - `NOT_CONFIGURED`
 
-Use the following commands to update the component_status for Mailer and modify the settings:
+Use the following commands to update the component_status for the Workflow Notification Mailer
+and modify the settings:
 
     SQL> select component_status
     from fnd_svc_components
@@ -196,7 +197,7 @@ You can use the following commands to set the Mailer **STARTUP_MODE** to `MANUAL
 
 #### Script 3
 
-This script updates the Mailer password from the backend.
+This script updates the Workflow Notification Mailer password from the backend:
 
     SQL> @wfmlrpwupd_in.sql
     Enter value for password: *****
@@ -210,7 +211,7 @@ This script updates the Mailer password from the backend.
 
 #### Script 4
 
-Use the following single script to change the Mailer values from the backend:
+Use the following single script to change the Workflow Notification Mailer values from the backend:
 
     $FND_TOP/sql/afsvcpup.sql
 
@@ -220,11 +221,12 @@ Use the following single script to change the Mailer values from the backend:
 
 ### Conclusion
 
-Workflow Mailer has many components and some tricky issues. Make sure to back up the **wf_\*** tables
-before updating them.
+The Workflow Notification Mailer has many components and some tricky issues. Make sure to back up
+the **wf\_** tables before updating them.
 
 Refer to the relevant Oracle MetaLink note before running a script to apply the fixes. MetaLink has
-many other scripts besides the ones included in this post that can help you to resolve issues in Mailer.
+many other scripts besides the ones included in this post that can help you to resolve issues in
+the Workflow Notification Mailer.
 
 Use the Feedback tab to make any comments or ask questions. You can also
 [chat now](https://www.rackspace.com/#chat) to start the conversation.
