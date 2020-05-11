@@ -6,7 +6,7 @@ comments: true
 author: Will Parsons
 authorAvatar: 'https://gravatar.com/avatar/7e23218fb3986389a7eb5a7d488d6cc1'
 bio: "Will Parsons is a Solutions Architect who has worked in technical and customer-facing
-roles at Rackspace since 2008.  Will helps businesses of all sizes design both dedicated and
+roles at Rackspace since 2008. Will helps businesses of all sizes design both dedicated and
 cloud environments for websites and applications, with an emphasis on performance and security."
 published: true
 authorIsRacker: true
@@ -14,19 +14,19 @@ categories:
     - Security
 metaTitle: "DDoS protection for applications in a data center"
 metaDescription: "Rackspace partners with Akamai&reg;, Cloudflare&reg;, and Imperva&reg; to provide best-in-class edge
-functionality, typically including performance-boosting Content Delivery Network (CDN) and caching
-capability, a web application firewall (WAF) for enhanced security, and protection from Distributed
+functionality, typically including a performance-boosting Content Delivery Network (CDN) and caching
+capability, as well as a web application firewall (WAF) for enhanced security and protection from Distributed
 Denial of Service (DDoS) attacks."
 ogTitle: "DDoS protection for applications in a data center"
 ogDescription: "Rackspace partners with Akamai&reg;, Cloudflare&reg;, and Imperva&reg; to provide best-in-class edge
-functionality, typically including performance-boosting Content Delivery Network (CDN) and caching
-capability, a web application firewall (WAF) for enhanced security, and protection from Distributed
+functionality, typically including a performance-boosting Content Delivery Network (CDN) and caching
+capability, as well as a web application firewall (WAF) for enhanced security and protection from Distributed
 Denial of Service (DDoS) attacks."
 ---
  
 Rackspace partners with Akamai&reg;, Cloudflare&reg;, and Imperva&reg; to provide best-in-class edge
-functionality, typically including performance-boosting Content Delivery Network (CDN) and caching
-capability, a web application firewall (WAF) for enhanced security, and protection from Distributed
+functionality, typically including a performance-boosting Content Delivery Network (CDN) and caching
+capability, as well as a web application firewall (WAF) for enhanced security and protection from Distributed
 Denial of Service (DDoS) attacks.
 
 <!-- more -->
