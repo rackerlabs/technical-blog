@@ -48,23 +48,23 @@ The following settings are set to `DISABLED` instead of `MAILHTML`:
 
 1. Run the following commands to back up the tables:
 
-     ```SQL> create table fnd_user_preferences_bkp as select * from fnd_user_preferences;
+       SQL> create table fnd_user_preferences_bkp as select * from fnd_user_preferences;
 
-     Table created.
+       Table created.
 
-     SQL> create table wf_local_roles_bkp as select * from wf_local_roles;
+       SQL> create table wf_local_roles_bkp as select * from wf_local_roles;
 
-     Table created.```
+       Table created.
 
 2. Run the following commands to update the tables:
 
-    ```select user_name,preference_value from FND_USER_PREFERENCES where preference_value = 'DISABLED' and preference_name = 'MAILTYPE' and module_name = 'WF' and user_name like '%<USER_NAME>%'; 
+       select user_name,preference_value from FND_USER_PREFERENCES where preference_value = 'DISABLED' and preference_name = 'MAILTYPE' and module_name = 'WF' and user_name like '%<USER_NAME>%'; 
 
-    update FND_USER_PREFERENCES set preference_value = 'MAILHTML' where preference_name = 'MAILTYPE' and preference_value = 'DISABLED' and module_name = 'WF' and user_name like '%<USERNAME>%'; 
+       update FND_USER_PREFERENCES set preference_value = 'MAILHTML' where preference_name = 'MAILTYPE' and preference_value = 'DISABLED' and module_name = 'WF' and user_name like '%<USERNAME>%'; 
 
-    select * from wf_local_roles where notification_preference = 'DISABLED' and name like '%<NAME>'
+       select * from wf_local_roles where notification_preference = 'DISABLED' and name like '%<NAME>'
 
-    update wf_local_roles set notification_preference = 'MAILHTML' where notification_preference = 'DISABLED' and name like '%<NAME>%'```
+       update wf_local_roles set notification_preference = 'MAILHTML' where notification_preference = 'DISABLED' and name like '%<NAME>%'
 
 3. Run the request **Resend Failed/Error Workflow Notifications** from the System Administrator
    responsibility to resend failed notifications. Set the date parameter, **Notifications sent on or after**,
@@ -134,7 +134,7 @@ Use the following high-level steps to rebuild the Workflow Notification Mailer q
 5. Update the **mail\_status** to **SENT** for any notifications that are older than **begin_date**.
 6. Rebuild the queue by using the following script as the **APPS** user:
 
-     SQL> @$FND_TOP/patch/115/sql/wfntfqup.sql apps <APSS_PASSWD> APPLSYS
+       SQL> @$FND_TOP/patch/115/sql/wfntfqup.sql apps <APSS_PASSWD> APPLSYS
 
 ### Maintenance scripts for the Workflow Notification Mailer
 
@@ -222,7 +222,7 @@ Use the following single script to change the Workflow Notification Mailer value
 ### Conclusion
 
 The Workflow Notification Mailer has many components and some tricky issues. Make sure to back up
-the **wf\_** tables before updating them.
+the **wf\_\*** tables before updating them.
 
 Refer to the relevant Oracle MetaLink note before running a script to apply the fixes. MetaLink has
 many other scripts besides the ones included in this post that can help you to resolve issues in
