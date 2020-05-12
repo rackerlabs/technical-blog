@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Four ways Salesforce admins can advocate for Salesforce adoption"
-date: 2020-05-11 00:01
+date: 2020-05-12 00:01
 comments: true
 author: Winnie Vue
 published: true
@@ -20,7 +20,7 @@ Here are some ways you can improve Salesforce adoption in your company.
 
 <!-- more -->
 
-![]({% asset_path 2020-05-11-four-ways-salesforce-admins-can-advocate-for-salesforce-adoption/photo1.png %})
+![]({% asset_path 2020-05-12-four-ways-salesforce-admins-can-advocate-for-salesforce-adoption/photo1.png %})
 
 ### Figure out why people aren’t buying in
 
