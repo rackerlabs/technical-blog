@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Top ten Redis CLI commands"
-date: 2020-04-30 00:01
+date: 2020-05-11 00:01
 comments: true
 author: Conrad Weidenkeller
 published: true
