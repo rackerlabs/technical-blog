@@ -4,6 +4,10 @@ title: "DDoS protection for applications in a data center"
 date: 2020-05-06 00:01
 comments: true
 author: Will Parsons
+authorAvatar: 'https://gravatar.com/avatar/7e23218fb3986389a7eb5a7d488d6cc1'
+bio: "Will Parsons is a Solutions Architect who has worked in technical and customer-facing
+roles at Rackspace since 2008.  Will helps businesses of all sizes design both dedicated and
+cloud environments for websites and applications, with an emphasis on performance and security."
 published: true
 authorIsRacker: true
 categories:
