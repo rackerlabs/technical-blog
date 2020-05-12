@@ -100,10 +100,10 @@ in **secretObjects**, **objects** and **objectType** in the yml file:
 
 Because you provisioned the AKS cluster with the enabled managed identity, you need to set two parameters: **useVMManagedIdentity** and **userAssignedIdentityID**. 
 
-The $identity variable stores the **userAssignedIdentityID**. If you do not specify **secretObjects**, you
+The `$identity` variable stores the **userAssignedIdentityID**. If you do not specify **secretObjects**, you
 can only mount a volume. The system uses **secretObjects** to sync and create a Kubernetes secret. You can
 use this to set environmental variables in your deployment yml file. The secretObject name matches what you
-specified in the key vault. The deployment file uses the key to match and bring the secret in. Kubertnes creates,
+specified in the key vault. The deployment file uses the key to match and bring the secret in. Kubernetes creates,
 names, and uses this secret name.
 
 **kv-sqldemo.yml** code:
@@ -129,7 +129,7 @@ names, and uses this secret name.
              - |
               objectName: mssql-secret # key vault secret name
               objectType: secret       # object types: secret, key or cert
-        tenantId: "bfd38366-aeb3-42ed-8d7c-e23d8591c7bb" # the tenant ID of the KeyVault
+        tenantId: "<insert tenantId here>" # the tenant ID of the KeyVault
 
 Run `kubectl apply -f .\kv-sqldemo.yml` to apply our configuration.
 
