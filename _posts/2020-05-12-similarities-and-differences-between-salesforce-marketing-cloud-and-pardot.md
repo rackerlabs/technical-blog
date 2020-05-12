@@ -16,7 +16,7 @@ ogDescription: "Most of our clients already
 understand the importance of using marketing automation to connect their sales and marketing efforts. Salesforce Marketing Cloud and Pardot can both help, depending on your marketing automation goals."
 ---
 
-Editor’s Note&mdash;Chris Zullo recently presented at London’s Calling and Southeast Dreamin’ with fellow Salesforce&reg; MVP
+Editor’s Note&mdash;In 2018, Chris Zullo presented at *London’s Calling* and *Southeast Dreamin’* with fellow Salesforce&reg; MVP
 Stephanie Foerst on the differences between Salesforce Marketing Cloud and Pardot. We asked him to share his
 thoughts on these dueling marketing automation tools. You can watch a recording of their
 original presentation at London’s Calling [here](https://www.youtube.com/watch?v=OFAUujdORkU&feature=youtu.be).
@@ -30,7 +30,7 @@ can both help, depending on your marketing automation goals.
 
 ![]({% asset_path 2020-05-12-similarities-and-differences-between-salesforce-marketing-cloud-and-pardot/photo1.png %})
 
-While both Salesforce Marketing Cloud and Pardot are marketing automation solutions, Pardot is a tool, while Salesforce Marketing Cloud is a toolkit.
+While both Salesforce Marketing Cloud and Pardot are marketing automation solutions, Pardot is a tool, and Salesforce Marketing Cloud is a toolkit.
 The latter offers clients more options when it comes to business-to-business (B2B) and business-to-customer (B2C) marketing. However, this doesn’t necessarily make it your best choice.
 This choice depends on what you are trying to achieve with your marketing efforts.
 
@@ -44,7 +44,7 @@ of any marketing channel, and both Salesforce Marketing Cloud and Pardot enable 
 
 If you’ve ever created an email campaign by using an email service provider, you’re likely familiar with drag-and-drop templates
 and WYSIWYG text editors. Salesforce Marketing Cloud and Pardot work in a similar way and simplify email creation. You don’t need to know HTML or another
-coding language to use either tool, but like any email editor, knowing some can be useful when making custom tweaks.
+coding language to use either tool, but like any email editor, knowing something can be useful when making custom tweaks.
 
 Previewing your email campaign is one major difference between Salesforce Marketing Cloud and Pardot. Salesforce Marketing Cloud allows users
 to toggle between a live desktop or mobile preview while designing their campaigns. Pardot, on the other hand, needs rendering time, and uses
@@ -90,7 +90,7 @@ There is no one-size-fits-all when it comes to marketing automation tools, and y
 
 Visit [www.rackspace.com](https://www.rackspace.com) and select **Sales Chat** to learn more about how Rackspace can help you with Salesforce.
 
-<a class="cta teal" id="cta" href="https://www.rackspace.com/salesforce">Learn more about Salesforce Customer Relationship Management (CRM).</a>
+<a class="cta purple" id="cta" href="https://www.rackspace.com/salesforce">Learn more about Salesforce Customer Relationship Management (CRM).</a>
 
 
 
