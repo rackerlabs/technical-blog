@@ -29,13 +29,13 @@ Here are the top ten Redis commands:
 
 ### 1: Connect and authenticate in one step
 
-To start, we have a simple connection:
+To start, you have a simple connection:
 
     cweid@strange:~$ redis-cli -h 127.0.0.1 -p 6379 -a mysupersecretpassword
     127.0.0.1:6379> PING
     PONG
 
-Alright! We’ve connected to our very own Redis server and authenticated using our password.
+Alright! You connected to your very own Redis server and authenticated by using your password.
 
 ### 2: Connect and authenticate in two steps
 
@@ -49,9 +49,9 @@ Alternatively, you can omit the `-a` option and authenticate after you connect:
 
 ### 3: Connect and authenticate via a UNIX socket
 
-If your Redis server and client run on the same machine, you might choose to connect via a Unix socket.
+If your Redis server and client run on the same machine, you might choose to connect via a UNIX&reg; socket.
 
-**Note**: If you provide a hostname and port as well as a socket, `redis-cli` connects via the Unix socket.
+**Note**: If you provide a hostname and port as well as a socket, `redis-cli` connects via the UNIX socket.
 
     cweid@strange:~$ redis-cli -s /tmp/redis.sock
     127.0.0.1:6379> AUTH mysupersecretpassword
@@ -59,8 +59,8 @@ If your Redis server and client run on the same machine, you might choose to con
     127.0.0.1:6379> PING
     PONG
 
-Okay, now that you understand how to connect and authenticate to our Redis instance via the command line,
-let’s see some examples of useful things we can do with it.
+Okay, now that you understand how to connect and authenticate to your Redis instance via the command line,
+let’s see some examples of useful things you can do with it.
 
 ### 4: Run a command and send the output to standard out
 
@@ -71,7 +71,7 @@ Let’s say you want to execute a command via the command line and send only the
 
 ### 5: Execute the same command several times
 
-Or perhaps you’d like to execute the same command n number of times:
+Perhaps you’d like to execute the same command *n* number of times
 
     cweid@strange:~$ redis-cli -h 127.0.0.1 -p 6379 -a mysupersecretpassword -r 4 PING
     PONG
@@ -79,10 +79,11 @@ Or perhaps you’d like to execute the same command n number of times:
     PONG
     PONG
 
+Notice that you added a `-r` to your command to supply the *repeat* option.
+
 ### 6: Execute the same command several times with a one-second delay
 
-Notice that we added a `-r` to our command to supply the *repeat* option. Alternatively, we can add a delay
-using `-i` in conjunction with `-r`.
+Alternatively, you can add a delay by using `-i` in conjunction with `-r`.
 
     cweid@strange:~$ redis-cli -h 127.0.0.1 -p 6379 -a mysupersecretpassword -i 1 -r 4 PING
     PONG
@@ -94,7 +95,7 @@ This command adds a one-second sleep between each `PING` command.
 
 ### 7: Change the repeated execution delay to sub-second
 
-You can also supply sub-seconds to this option by using a float:
+You can also supply sub-seconds to the `-i` option by using a floating number:
 
     cweid@strange:~$ redis-cli -h 127.0.0.1 -p 6379 -a mysupersecretpassword -i 0.1 -r 4 PING
     PONG
@@ -120,11 +121,11 @@ To generate some simple diagnostic information about the Redis instance that you
 
 This command provides the following information:
 
-- The number of keys set on the server.
-- The server’s total memory usage.
-- The total number of clients connected or blocked.
-- The total number of requests the server has served.
-- The total current number of connections.
+- The number of keys set on the server
+- The server’s total memory usage
+- The total number of clients connected or blocked
+- The total number of requests the server has served
+- The total current number of connections
 
 Use this command to get an overview of the Redis server as a whole. Think of it as stating a file.
 
@@ -136,9 +137,9 @@ commands coming in. You can do this from the command line:
     cweid@strange:~$ redis-cli -h 127.0.0.1 -p 6379 -a mysupersecretpassword --latency
     min: 0, max: 1, avg: 0.13 (763 samples)
 
-Here we see the minimum, maximum, and average request time, as well as the number of samples taken.
+Here you see the minimum, maximum, and average request time, as well as the number of samples taken.
 
-**Note**: THe information displays in microseconds. For more info about Redis latency, take a look at the
+**Note**: The information displays in microseconds. For more info about Redis latency, take a look at the
           documentation for [latency monitoring](https://redis.io/topics/latency-monitor).
 
 ### 10: Analyze your keyspace
@@ -168,7 +169,7 @@ of key types.
     0 hashs with 0 fields (00.00% of keys, avg size 0.00)
     0 zsets with 0 members (00.00% of keys, avg size 0.00)
 
-This output gives us a lot of useful information back about different keys, including their types and sizes.
+This output gives you a lot of useful information back about different keys, including their types and sizes.
 
 ### Conclusion
 
