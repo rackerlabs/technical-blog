@@ -5,7 +5,12 @@ date: 2020-05-12 00:01
 comments: true
 author: Chris Zullo
 published: true
-authorIsRacker: false
+authorIsRacker: true
+authorAvatar: 'https://s.gravatar.com/avatar/475ef03557ebebc76180795000996012'
+bio: "Boston born and bred sports geek with a twist. Unabashed sports nut and
+technology enthusiast. Living in the cloud literally and figuratively as a
+SaaS (Software as a Service) advocate who wants to see as much of the world in
+person as manageable."
 categories:
     - Salesforce
 metaTitle: "Similarities and differences between Salesforce Marketing Cloud and Pardot"
