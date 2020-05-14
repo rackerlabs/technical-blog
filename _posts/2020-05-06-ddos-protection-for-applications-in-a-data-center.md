@@ -31,12 +31,12 @@ Denial of Service (DDoS) attacks.
 
 <!-- more -->
 
-### How attackers gain access
+### Attackers target the origin
 
 To protect the *origin* infrastructure, the edge provider handles Domain Name System (DNS) resolution,
 so that requests to your domains do not reveal the origin IP addresses. This process mitigates attacks
-against public-facing resources or websites and absorbs them on the edge. The process distributes the attacks
-among hundreds of locations around the world before they get anywhere near your servers.
+against public-facing resources or websites and absorbs them on the edge. Edge providers can distribute
+attacks among hundreds of locations around the world before getting anywhere near your servers.
 
 But what if an attacker does know your origin IP address or related blocks?  Can they attempt to launch
 a DDoS attack directly? In a word, yes.
@@ -82,7 +82,7 @@ Also, consider reducing the attack surface or eliminating it. Tools such as
 and [Cloudflare Argo Tunnel](https://www.cloudflare.com/en-gb/products/argo-tunnel/ ) work by deploying agents and
 connectors within your origin infrastructure that make secure *outgoing* connections to the CDN edge.  These tools then
 send legitimate or authenticated requests back through those connections, with no need to expose your website or
-application to the Internet. This process results in no incoming firewall filtering and no access control lists.
+application to the Internet. These techniques result in no incoming firewall filtering and no access control lists.
 This powerful solution works exceptionally well with containerized workloads, eliminating the need to manage ingress
 controllers.
 
