@@ -386,6 +386,22 @@ technology's place in solving business challenges. My mission is to uncover
 opportunities to help companies realize true business transformation, with
 technology as a key catalyst."
 
+Ranganathan, Nirmal
+authorAvatar: 'https://s.gravatar.com/avatar/152da1a0a80d81265a5cd1b40e16d465'
+bio: "Nirmal is a Principal Architect and Product Manager at Rackspace
+responsible for building Rackspace's Data Analytics and Artificial Intelligence
+and Machine Learning solutions as part of our Data Services portfolio. Nirmal
+works closely with our Alliances, Partners, and Customers to create the most
+effective and efficient analytics and machine learning solutions to enable our
+customers to focus on driving a data driven culture within their organizations
+and become leaders in their respective segments. Before this, Nirmal was a
+consultant in our Professional Services organization and provided recommendations
+and solutions for a wide variety of industry verticals around large scale databases
+and data processing, data analytics, and data warehousing in the cloud and machine
+learning/artificial intelligence. Nirmal has a strong background in cloud and
+distributed systems, having contributed to various open-source projects from
+Cassandra to OpenStack."
+
 Rathod, Sunil
 authorAvatar: 'https://s.gravatar.com/avatar/c3a915969820000d5dc4fc4f04ad8276'
 bio: "I enjoy working as Oracle Apps DBA with more than 12 years of experience
@@ -483,6 +499,12 @@ bio: “Everett Toews a Developer Advocate at Rackspace making the cloud easy to
 use for developers and operators. Sometimes dev, sometimes ops, and sometimes
 advocate. He's interested in composing systems using APIs, SDKs, CLIs, and
 Docker. He likes to teach what he learns along the way.”
+
+
+Vats, Nagendra
+authorAvatar: 'https://s.gravatar.com/avatar/2d0745dbb9f09137658e8c05b7fec824'
+bio: "I am an IT professional with keen interest in Data Science and reporting.
+Love to Drive, listen music and follow Cricket."
 
 Verma, Vivek
 authorAvatar: 'https://s.gravatar.com/avatar/ea77be7be4ebf7aed353087f677104be'
