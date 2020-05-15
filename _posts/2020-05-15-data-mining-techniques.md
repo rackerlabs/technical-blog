@@ -6,10 +6,9 @@ comments: true
 author: Nagendra Vats
 published: true
 authorIsRacker: true
-authorAvatar: 'https://s.gravatar.com/avatar/ea77be7be4ebf7aed353087f677104be'
-bio: "I'm a consultant working on Oracle E-Business Suite and related products.
-As an Amazon Cloud Solutions Architect Associate, I am passionate about the
-Cloud Platform. Python and Chef are works in progress."
+authorAvatar: 'https://s.gravatar.com/avatar/2d0745dbb9f09137658e8c05b7fec824'
+bio: "I am an IT professional with keen interest in Data Science and reporting.
+Love to Drive, listen music and follow Cricket."
 categories:
     - general
 metaTitle: "Data mining techniques"
