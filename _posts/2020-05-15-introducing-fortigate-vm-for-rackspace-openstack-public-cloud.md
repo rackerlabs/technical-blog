@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Introducing the FortiGate-VM for Rackspace OpenStack Public Cloud"
-date: 2020-04-13 00:01
+date: 2020-05-15 00:01
 comments: true
 author: Brian King
 published: true
@@ -57,7 +57,7 @@ Whether you are a user connecting to a VPN on your smart phone, a network
 administrator setting firewall policies, or a DevOps engineer planning to
 provision secure environments quickly, the FortiGate-VM has you covered.
 
-![]({% asset_path 2020-04-13-introducing-fortigate-vm-for-rackspace-openstack-public-cloud/Picture1.png %})
+![]({% asset_path 2020-05-15-introducing-fortigate-vm-for-rackspace-openstack-public-cloud/Picture1.png %})
 
 ### Not just a firewall: A true universal threat manager
 
