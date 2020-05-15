@@ -26,7 +26,7 @@ ogDescription: "At ObjectRocket, we've offered hosted Elasticsearch on our platf
 
 *Originally published on May 16, 2017, at ObjectRocket.com/blog.*
 
-Other than "you know, for searching," the uses of Elasticsearch continue to grow and
+Other than "you know, for searching," the uses of Elasticsearch&reg; continue to grow and
 change over time. At ObjectRocket, we've offered
 [hosted Elasticsearch](https://www.objectrocket.com/managed-elasticsearch/) on our platform
 for a while now. We see clear trends among our customers and how they're using the product.
