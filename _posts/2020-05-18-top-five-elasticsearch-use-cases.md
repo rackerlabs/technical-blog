@@ -43,10 +43,10 @@ For anyone familiar with Elasticsearch, this one should be no surprise. The ecos
 built up around Elasticsearch has made it one of the most straightforward tools to
 implement and scale logging solutions. Many users on our platform have taken advantage
 of this functionality to add logging to their primary use case. From 
-[Beats](https://www.elastic.co/beats/) to [Logstash](https://www.elastic.co/logstash)
+[Beats](https://www.elastic.co/beats/) to [Logstash&reg;](https://www.elastic.co/logstash)
 to [Ingest Nodes](https://www.elastic.co/guide/en/elasticsearch/reference/current/ingest.html),
 Elasticsearch gives you plenty of options for grabbing data wherever it
-lives and indexing it. From there, tools like [Kibana](https://www.elastic.co/kibana)
+lives and indexing it. From there, tools like [Kibana&reg;](https://www.elastic.co/kibana)
 give you the ability to create rich dashboards and analysis. Another tool,
 [Curator](https://www.elastic.co/guide/en/elasticsearch/client/curator/5.8/index.html),
 allows you to put the retention period on autopilot.
@@ -57,21 +57,22 @@ Like log data, the Elastic Stack has plenty of tools to grab and index remote da
 easily. Also, like most document stores, the lack of a strict schema gives Elasticsearch
 the flexibility to take in multiple different sources of data and still keep it all
 manageable and searchable. A cool example of this that you can check out is our 
-[Twitter connector](https://docs.objectrocket.com/twitter_to_elasticsearch.html?_ga=2.133731274.593289780.1589200458-1838016293.1580152479),
-which allows you to set up hashtags to watch on Twitter and then grab all
-tweets with those hashtags and analyze them in Kibana. We built that product on core
-Elastic Stack components and added some additional pieces to help it scale.
+[Twitter connector](https://docs.objectrocket.com/twitter_to_elasticsearch.html?_ga=2.133731274.593289780.1589200458-1838016293.1580152479).
+It allows you to set up hashtags to watch on Twitter and then grab all tweets with those
+hashtags and analyze them in Kibana. We built that product on core Elastic Stack components
+and added some additional pieces to help it scale.
 
 ### #3 – Full-text search
 
 It's also no surprise that full-text search, as the core capability of Elasticsearch, is
 high on this list. The surprising part is the applications of this among our customer set,
 which go well beyond traditional Enterprise search or E-commerce. From fraud detection and
-security to collaboration and beyond, our users find that Elasticsearch's search capabilities
+security to collaboration and beyond, our users find that the Elasticsearch search capabilities
 are powerful and flexible and include many tools to make searching easier. Elasticsearch has
-a query DSL and built-in capabilities for auto-complete, "Did you mean" responses, and more.
+a query Domain Specific Language (DSL) and built-in capabilities for auto-complete
+"Did you mean" responses, and more.
 
-### #4 – Event Data and Metrics
+### #4 – Event data and metrics
 
 Elasticsearch also operates really well on time-series data like metrics and application
 events. This feature is another area where the huge Beats ecosystem allows you to grab data
@@ -79,7 +80,7 @@ for common applications easily. Whatever technologies you use, there's a good ch
 Elasticsearch has the components to grab metrics and events out of the box&mdash;in the rare
 case that it can't, adding that capability is easy.
 
-### #5 – Visualizing Data
+### #5 – Visualizing data
 
 With tons of charting options, a tile service for geo-data, and TimeLion for time-series
 data, Kibana is an amazingly powerful and easy to use visualization tool. Kibana has a
