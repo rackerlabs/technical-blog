@@ -52,7 +52,7 @@ you to set up the following Amazon services:
 
 - Simple Storage Service (S3)
 - CodePipeline
-- AWS organization
+- AWS Organizations
 - Single sign-on
 - Service catalog
 - Identity and Access Management (IAM)
