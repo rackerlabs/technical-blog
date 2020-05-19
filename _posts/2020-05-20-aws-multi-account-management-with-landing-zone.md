@@ -87,7 +87,7 @@ reference source for CodePipeline.
 Because you have access to the source files, you can modify the code to fit your
 business needs. The following image shows the default Landing Zone deployment:
 
- ![]({% asset_path 22020-05-20-aws-multi-account-management-with-landing-zone/Picture1.png %})
+ ![]({% asset_path 2020-05-20-aws-multi-account-management-with-landing-zone/Picture1.png %})
 
 If you make any changes to the source, CodePipeline runs them in your infrastructure.
 Therefore, if you want to create a baseline Virtual Private Cloud (VPC) with
