@@ -8,7 +8,7 @@ published: true
 authorIsRacker: true
 authorAvatar: 'https://s.gravatar.com/avatar/2d0745dbb9f09137658e8c05b7fec824'
 bio: "I am an IT professional with keen interest in Data Science and reporting.
-Love to Drive, listen music and follow Cricket."
+Love to drive, listen music, and follow Cricket."
 categories:
     - general
 metaTitle: "Data mining techniques"
@@ -38,7 +38,7 @@ set of raw data.
 ![]({% asset_path 2020-05-15-data-mining-techniques/Picture1.png %})
 
 The data and databases come from various data sources, and you can store them
-in different data warehouses. You might assume that data *mining* refers to the
+in different data warehouses. You might assume that *data mining* refers to the
 extraction of raw data, but that's incorrect. Data mining involves sifting
 through your collected data to find meaningful patterns and trends. You can
 then use your analysis to detect fraud, market data or services, manage
@@ -51,14 +51,14 @@ Organizations widely practice the following data mining techniques (*Sources*:
 [The 7 Most Important Data Mining Techniques](https://www.datasciencecentral.com/profiles/blogs/the-7-most-important-data-mining-techniques)):
 
 - **Sequential patterns**: This technique identifies patterns in your data sets
-  that occur at regular intervals. For example,  the sale of specific products
+  that occur at regular intervals. For example, the sale of specific products
   might spike just before the holidays or more people visit your portal on the
   weekend.
 
 - **Classification**: You can use this technique to retrieve relevant information
   about data and metadata and categorize data in different classes. You can also
   draw further conclusions about classified data. For instance, if you're
-  evaluating data on individual customers' financial background and the purchase
+  evaluating data on individual customers' financial background and purchase
   history, you can determine their credit risk. Based on that information, you
   can learn even more about the behavior of these customers.
 
@@ -68,10 +68,10 @@ Organizations widely practice the following data mining techniques (*Sources*:
   enables you to discover a hidden pattern in the data set. For instance, you
   might notice that when your customer purchases a specific item, they also
   often buy a related product. This information helps to populate the
-  **people also bought** section of online stores.
+  **People Also Bought** section of online stores.
 
 - **Outlier detection**: Outer detection, also called outlier analysis or outlier
-  mining, involves observing data items in the dataset that do not match the
+  mining, involves observing data items in the data set that do not match the
   expected pattern or behavior. You can use this technique to identify intrusion
   and fraud. In banking systems, data outliers, such as a sudden spike in online
   spending, transactions from foreign locations, multiple transitions within
@@ -91,16 +91,16 @@ you to uncover the exact relationship between variables in each data set.
 
 - **Prediction**: You can use prediction, one of the most valuable data mining
 techniques, to project the types of data you'll see in the future. Prediction
-combines the other data mining techniques like trends, sequential patterns,
-clustering, classification, and so on. It analyzes past events or instances in
+combines data mining techniques like trends, sequential patterns,
+clustering, classification, and others. It analyzes past events or instances in
 sequence to predict a future event. For example, you might review consumers'
 previous purchases to predict the maximum amount they'll spend on a product. It
 can also help you to identify target customers for a new launch.
 
 ### Conclusion
 
-Data Mining helps organizations make precise and correct decisions. It helps you
-to run successful campaigns, make predictions, and analyze customer behavior.
+Data mining helps organizations make precise and correct decisions. It helps you
+run successful campaigns, make predictions, and analyze customer behavior.
 You can expect effective results by using any of the techniques described in
 this post.
 
