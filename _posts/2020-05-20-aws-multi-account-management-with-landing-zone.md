@@ -66,7 +66,7 @@ Landing Zone to simplify the deployment. AWS recommends that you connect with AW
 partners to help deploy Landing Zone. Partners take into account specific
 business requirements and deploy Landing Zone to best suit your business.
 
- ### What Landing Zone does
+### What Landing Zone does
 
 Landing Zone helps to perform the following tasks:
 
