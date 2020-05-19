@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AAWS multi-account management with Landing Zone"
+title: "AWS multi-account management with Landing Zone"
 date: 2020-05-20 00:01
 comments: true
 author: Nilojan Tharmarajah
@@ -9,10 +9,10 @@ authorIsRacker: true
 authorAvatar: 'https://s.gravatar.com/avatar/685794a71af4ba6a72bb679304669e9a'
 bio: "I am a Specialist Solutions Architect at Rackspace. In my younger days, I earned a degree in
 Information Systems from City University, London, United Kingdom. I have close to 15 years of technical
-IT experience in various industries from maintaining data centers for multiple companies to deploying
-cloud infrastructure for a global media company. With my experience, I now help companies from a variety
-of industries to solution their environment in the cloud and be a sounding board to advise customers on
-their technical challenges."
+IT experience in various industries, from maintaining data centers for multiple companies to deploying
+cloud infrastructure for a global media company. With my experience, I now help companies from various
+industries develop solutions for their environment in the cloud and act as a sounding board to advise
+customers on their technical challenges."
 categories:
     - AWS
 metaTitle: "AWS multi-account management with Landing Zone"
@@ -41,51 +41,51 @@ and services to meet their requirements.
 
 In 2018, AWS announced Landing Zone. Landing Zone provides a solution to automate
 the setup of a multi-account management solution while implementing best practice
-security baselines and creating core accounts, which include the following:
+security baselines and creating core accounts, including the following:
 
 - Security
-- Shared Services
-- Log Archive
+- Shared services
+- Log archive
 
-The initial deployment  of Landing Zone in a multi-account environment requires
-you to set up the following services:
+The initial deployment of Landing Zone in a multi-account environment requires
+you to set up the following Amazon services:
 
 - Simple Storage Service (S3)
 - CodePipeline
-- AWS Organization
-- Single Sign-On
+- AWS organization
+- Single sign-on
 - Service catalog
 - Identity and Access Management (IAM)
 - Cloudwatch
-- Guard Duty
+- GuardDuty
 - Simple Notification Service (SNS)
 
 Understandably, manually putting these services together is time-consuming, and
 you need a high level of expertise to complete the task. However, you can use
-Landing Zone to simplify the deployment. AWS recommends you connect with AWS
-partners to help deploy your Landing Zone. Partners take into account-specific
-business requirements and deploy the Landing Zone that best suits your business.
+Landing Zone to simplify the deployment. AWS recommends that you connect with AWS
+partners to help deploy Landing Zone. Partners take into account specific
+business requirements and deploy Landing Zone to best suit your business.
 
  ### What Landing Zone does
 
-Landing Zone helps to to perform the following tasks:
+Landing Zone helps to perform the following tasks:
 
-- Incorporate enterprise-level policies using Security Control Policies.
+- Incorporate enterprise-level policies by using security control policies.
 - Incorporate AWS best-practice security guard rails as a foundation on which you can build.
-- Codify account creation in the organization by using the AWS Account Vending Machine.
-- Configure SAML based Single-Sign-On to your identity provider (IdP).
+- Codify account creation in the organization by using the AWS Account Vending Machine (AVM).
+- Configure SAML-based single-sign-on to your identity provider (IdP).
 - Centralize logging and automate the setup of CloudTrail across all accounts.
 
 ### Deployment
 
-The deployment uses a configuration zip file which is maintained and versioned
+The deployment uses a configuration zip file that is maintained and versioned
 by AWS. Sign in to your AWS account to launch the Landing Zone stack, which
-creates an S3 bucket along with other related resources in your account. Amazon
+creates an S3 bucket and other related resources in your account. Amazon
 places the configuration zip file in the S3 bucket, which you can use as a
 reference source for CodePipeline.
 
 Because you have access to the source files, you can modify the code to fit your
-business needs. The following image shows the default Landing zone deployment:
+business needs. The following image shows the default Landing Zone deployment:
 
  ![]({% asset_path 22020-05-20-aws-multi-account-management-with-landing-zone/Picture1.png %})
 
@@ -94,19 +94,19 @@ Therefore, if you want to create a baseline Virtual Private Cloud (VPC) with
 specific network requirements for all new accounts, you can add this to the
 source S3 bucket for CodePipeline to deploy.
 
-### Security Baseline
+### Security baseline
 
 Each account that you deploy sets up the following services:
 
 - **AWS CloudTrail** for logging and audit purposes.
-- **AWS Config** enabled with configuration log files stored in the Log Archive
+- **AWS Config** enabled with configuration log files stored in the log archive
 account. This feature also enables some of the managed configuration rules for
 monitoring, such as Amazon S3 public read and write.
 - **IAM** strict password policy.
 - Cross-account access from the security account to the Landing Zone accounts.
 - Standardized VPC deployments, such as deleting default VPCs in all regions.
-- **CloudWatch** alarms,  such as when the root user accesses an account.
-- **AWS GuardDuty** for threat detection.
+- **CloudWatch** alarms, such as when the root user accesses an account.
+- **GuardDuty** for threat detection.
 
 ### Costs
 
