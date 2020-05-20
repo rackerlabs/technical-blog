@@ -7,12 +7,12 @@ author: Nilojan Tharmarajah
 published: true
 authorIsRacker: true
 authorAvatar: 'https://s.gravatar.com/avatar/685794a71af4ba6a72bb679304669e9a'
-bio: "I am a Specialist Solutions Architect at Rackspace.nIn my younger days, I achieved a degree in
+bio: "I am a Specialist Solutions Architect at Rackspace. In my younger days, I earned a degree in
 Information Systems from City University, London, United Kingdom. I have close to 15 years of technical
-IT experience in various industries from maintaining data centers for multiple companies to deploying
-cloud infrastructure for a global media company. With my experience, I now help companies from a variety
-of industries to solution their environment in the cloud and be a sounding board to advise customers on
-their technical challenges."
+IT experience in various industries, from maintaining data centers for multiple companies to deploying
+cloud infrastructure for a global media company. With my experience, I now help companies from various
+industries develop solutions for their environment in the cloud and act as a sounding board to advise
+customers on their technical challenges."
 categories:
     - AWS
 metaTitle: "AWS Transit Gateway made easier with inter-region peering"
