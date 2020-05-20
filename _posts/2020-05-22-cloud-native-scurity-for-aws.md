@@ -22,9 +22,9 @@ Rackspace offers cloud native security (CNS) for your Amazon&reg; Web Services
 <!-- more -->
 
 As attack vectors multiply year over year, security is more important than ever.
-And neglecting it can be a costly proposition. In 2019 alone, the average cost
+Neglecting it can be a costly proposition. In 2019 alone, the average cost
 of a security breach was nearly $3.9 million. It’s no longer “Can you afford to
-invest in security?,” it’s “Can you afford not to?”.
+invest in security?”&mdash;it’s “Can you afford not to?."
 
 At the same time, a proliferation of innovative new cloud technologies is
 expanding the perimeter that needs to be secured. While AWS provides a secure
@@ -47,14 +47,14 @@ protect these containers, meshes, microservices, and so on.
 
 ### Challenges
 
-Simply enabling a set of CNS tools, however, is inadequate.  You also need the
+Simply enabling a set of CNS tools is inadequate. You also need the
 expertise to deploy and use the tools and to interpret the results. Among the
-many challenges you might face in this quest are the following concerns:
+many challenges you might face are the following concerns:
 
-- Defining a security strategy that adheres to best practises.
+- Defining a security strategy that adheres to best practices.
 - Deploying and managing the right security products for your business.
 - Providing staff to monitor and respond to security alerts around the clock
-- Having security event and information management (SEIM), or a consolidated
+- Having security event and information management (SEIM) or a consolidated
   view into security data across multiple environments.
 - Having a security operations center (SOC) or certified AWS security experts
   in house.
@@ -62,14 +62,14 @@ many challenges you might face in this quest are the following concerns:
 ### Shared responsibility model
 
 With cloud architecture, security becomes much more difficult to manage. For
-example, your company might not own, or indeed manage, all the cloud resources
-it leverages. So now, it becomes a matter of security *of* the cloud, rather
-that security *in* the cloud, which introduces the shared responsibility model.
+example, your company might not own, or manage, all the cloud resources
+it leverages. So now, it becomes a matter of security *of the cloud*, rather
+than security *in the cloud*. This scenario introduces the shared responsibility model.
 
 In our case, AWS is responsible for the health and security of all of the
-infrastructure that underlie the services that they present to you to consume (*of*).
+infrastructure that underlies the services that they present to you to consume (*of the cloud*).
 However, any resource that you provision on top of that infrastructure is your
-responsibility (*in*);.
+responsibility (*in the cloud*).
 
 ### How Rackspace helps
 
@@ -84,9 +84,9 @@ As we announced in the blog,
     AWS partner solutions.
 
 This means that we can offer around-the-clock managed security services for AWS
-Security Hub, Amazon GuardDuty, and AWS’s newest security tool IAM Access Analyzer.
+Security Hub, Amazon GuardDuty, and the newest security tool from AWS, IAM Access Analyzer.
 We provide certified security experts in our fully-staffed global SOC. We pull
-the threat information directly from the AWS tools into or SEIM and analyze the
+the threat information directly from the AWS tools into our SEIM and analyze the
 data to stay a step ahead.
 
 Use the Feedback tab to make any comments or ask questions. You can also
