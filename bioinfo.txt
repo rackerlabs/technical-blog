@@ -414,10 +414,12 @@ Services. He has more than 20 years of experience in technology working with a
 wide variety of customers across multiple industries. John is based in Orlando,
 Florida. Follow him on Twitter at **@johnrossjr**."
 
-Rozen, Maxim
-Tharmarajah, Nilojan
+Rozin, Maxim
 authorAvatar: ''
-bio: n/a
+bio: "Maxim Rozin is a Principal Engineer and a Product Manager at Rackspace,
+where he has worked since 2009. He spent the last 18 years in IT and holds all
+five of the Associate and Professional-level AWS certifications. When he is not
+at work, Maxim is likely snowboarding or hiking in the Alps."
 
 Rudley, Jimmy
 authorAvatar: 'https://en.gravatar.com/userimage/151177997/5bed7e07ee47533cbd34b951d463bcb7.jpg'
