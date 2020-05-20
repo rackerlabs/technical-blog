@@ -1,11 +1,15 @@
 ---
 layout: post
 title: "Cloud native security for AWS"
-date: 2020-04-21 00:01
+date: 2020-05-20 00:01
 comments: true
-author: Maxim Rozen
+author: Maxim Rozin
 published: true
 authorIsRacker: true
+bio: "Maxim Rozin is a Principal Engineer and a Product Manager at Rackspace,
+where he has worked since 2009. He spent the last 18 years in IT and holds all
+five of the Associate and Professional-level AWS certifications. When he is not
+at work, Maxim is likely snowboarding or hiking in the Alps."
 categories:
     - AWS
 metaTitle: "Cloud native security for AWS"
@@ -33,17 +37,12 @@ it must be secure as well.
 
 ### What is CNS?
 
-Before defining CNS, you need to understand what *cloud native* means.  The
-[Cloud Native Computing Foundation](https://cncf.io) offers the following
-definition:
-
-    Cloud native technologies empower organizations to build and run scalable
-    applications in modern, dynamic environments such as public, private, and hybrid
-    clouds. Containers, service meshes, microservices, immutable infrastructure, and
-    declarative APIs exemplify this approach.
+Before defining CNS, you need to understand what *cloud native* means in this
+context&mdash;that is, "cloud vendor native" or "AWS native".
 
 Cloud native security, then, must offer the tools and processes to manage and
-protect these containers, meshes, microservices, and so on.
+protect your data containers, meshes, microservices, and so on regardless of
+your cloud vendor.
 
 ### Challenges
 
@@ -94,3 +93,11 @@ visit [www.rackspace.com](https://www.rackspace.com) and click **Sales Chat**
 to get started.
 
 <a class="cta blue" id="cta" href="https://www.rackspace.com/resources/rackspace-service-blocks-cloud-native-security-aws">Learn more about our CNS for AWS services.</a>
+
+### Helpful resources
+
+- Joint webinar with AWS: [Cloud Native Application Security: Have You Covered All Your Bases?](https://www.brighttalk.com/webcast/17680/387904?utm_source=Rackspace&utm_medium=brighttalk&utm_campaign=387904).
+
+- Ebook: [AWS Shared Responsibility Model](https://s3.amazonaws.com/files.newscred.com/88cab60542c8158bc82f733cce512786).
+
+- Rackspace Fanatical Support for AWS: [Cloud Native Security](https://developer.rackspace.com/docs/fanatical-support-aws/cloud-native-security/)

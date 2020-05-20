@@ -88,3 +88,5 @@ Rackspace has a cloud-agnostic team that can assess your current systems, identi
 objectives, and design your ideal future state reference data architecture. Rackspace uses its
 data analytics and tooling expertise to generate a roadmap that accounts for future data management,
 analytics, and artificial intelligence/machine learning workloads. Work with experts today to get the most out of your data.
+
+If you'd like to explore data modernization, contact us at: data-services-sales@rackspace.com.

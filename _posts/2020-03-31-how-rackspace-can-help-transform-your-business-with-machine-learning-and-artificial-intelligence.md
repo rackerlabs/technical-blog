@@ -85,18 +85,13 @@ The Rackspace AI/ML solutions provide the following benefits:
 **Improve customer experience:** Develop a holistic view of your customer’s activities across the entire journey and enable exceptional experiences, from personalization to sentiment analysis, and from customer acquisition to churn prevention.
 
 
-
 ## Conclusion
 
 The Rackspace AI/ML solutions can help you better manage your data and make data-driven decisions faster.
 You get access to experts who can help you make the most of your business data through ideation sessions,
 strategy and assessment workshops, and implementation engagement.
 
-
-<a class="cta blue" id="cta" href="https://www.rackspace.com/data/dba-services">Learn more about Rackspace DBA Services.</a>
-
-Visit [www.rackspace.com](https://www.rackspace.com) and click **Sales Chat**
-to get started.
+If you'd like to explore data modernization, contact us at: data-services-sales@rackspace.com.
 
 Use the Feedback tab to make any comments or ask questions.
 

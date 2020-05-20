@@ -3,9 +3,13 @@ layout: post
 title: "Cloud Native Security for AWS comes to Rackspace"
 date: 2020-04-16 00:01
 comments: true
-author: Maxim Rozen
+author: Maxim Rozin
 published: true
 authorIsRacker: true
+bio: "Maxim Rozin is a Principal Engineer and a Product Manager at Rackspace,
+where he has worked since 2009. He spent the last 18 years in IT and holds all
+five of the Associate and Professional-level AWS certifications. When he is not
+at work, Maxim is likely snowboarding or hiking in the Alps."
 categories:
     - General
 metaTitle: "Cloud Native Security for AWS comes to Rackspace "
