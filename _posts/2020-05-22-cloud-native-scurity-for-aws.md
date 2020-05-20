@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Cloud native security for AWS"
+title: "Cloud Native Security for AWS"
 date: 2020-05-20 00:01
 comments: true
 author: Maxim Rozin
@@ -12,15 +12,15 @@ five of the Associate and Professional-level AWS certifications. When he is not
 at work, Maxim is likely snowboarding or hiking in the Alps."
 categories:
     - AWS
-metaTitle: "Cloud native security for AWS"
-metaDescription: "Rackspace offers cloud native security (CNS) for your Amazon&reg; Web Services
+metaTitle: "Cloud Native Security for AWS"
+metaDescription: "Rackspace offers Cloud Native Security (CNS) for your Amazon&reg; Web Services
 (AWS) environments."
-ogTitle: "Cloud native security for AWS"
-ogDescription: "Rackspace offers cloud native security (CNS) for your Amazon&reg; Web Services
+ogTitle: "Cloud Native Security for AWS"
+ogDescription: "Rackspace offers Cloud Native Security (CNS) for your Amazon&reg; Web Services
 (AWS) environments."
 ---
 
-Rackspace offers cloud native security (CNS) for your Amazon&reg; Web Services
+Rackspace offers Cloud Native Security (CNS) for your Amazon&reg; Web Services
 (AWS) environments.
 
 <!-- more -->
@@ -40,9 +40,10 @@ it must be secure as well.
 Before defining CNS, you need to understand what *cloud native* means in this
 context&mdash;that is, "cloud vendor native" or "AWS native".
 
-Cloud native security, then, must offer the tools and processes to manage and
-protect your data containers, meshes, microservices, and so on regardless of
-your cloud vendor.
+Cloud Native Security, then, offers managed security services for AWS native
+security products. Currently this includes AWS Security Hub, Amazon GuardDuty,
+and IAM Access Analyzer. Rackspace will add other AWS security products in the
+coming months.
 
 ### Challenges
 
