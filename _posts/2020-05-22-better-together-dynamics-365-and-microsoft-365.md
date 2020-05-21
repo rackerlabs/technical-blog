@@ -97,7 +97,7 @@ can continue to offer services and support to enhance your offerings.
 
 ![Microsoft Dynamics 365 Business Central: Core capabilities]({% asset_path 2020-05-22-better-together-dynamics-365-and-microsoft-365/Picture1.png %})
 
-![Microsoft Dynamics 365 Sales, Services, and Marketing applications: Core Capabilities]({% asset_path 22020-05-22-better-together-dynamics-365-and-microsoft-365/Picture2.png %})
+![Microsoft Dynamics 365 Sales, Services, and Marketing applications: Core Capabilities]({% asset_path 2020-05-22-better-together-dynamics-365-and-microsoft-365/Picture2.png %})
 
 To learn more about the benefits of combining and integrating Microsoft 365 and
 Dynamics 365, see [Reinvent business productivity with Microsoft Dynamics 365 and Microsoft 365](https://www.rackspace.com/lp/microsoft-dynamics-365-and-office-365-ebook).
