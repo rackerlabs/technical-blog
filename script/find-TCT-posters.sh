@@ -29,7 +29,19 @@ echo "date range is between " $begdate " and " $enddate
 #set counter
 count=0
 
-# Go to content directory and loop through all 'md' filesi in sub dirs
+# Create array of TCT rackers
+
+counter=0
+
+while IFS= read -r line
+do 
+   TCTmembers+=("$line");
+   counter=$((counter+1));
+done < ../TCTmembers.txt
+
+looper=0
+
+# Go to _posts directory and loop through all md files
 cd ../_posts
 
 FILES=`find .  -type f -name '*md' -print`
@@ -37,19 +49,32 @@ FILES=`find .  -type f -name '*md' -print`
 for f in $FILES
 do
 
-# find publish date (date) in file meta data
-   pdate=`grep ^date: $f`
-   pauthor=`grep ^author: $f`
-# separate actual date from rest of the grepped line
-   apdate=`echo $pdate | awk  '{print $2}'`
-   aauthor=`echo $pauthor | awk '{print $2 " " $3}'`
+# find publish date (date) and author in file meta data
+   pdate=`grep ^date: $f`;
+   pauthor=`grep ^author: $f`;
+# separate actual date and author from rest of the grepped line
+   apdate=`echo $pdate | awk  '{print $2}'`;
+   aauthor=`echo $pauthor | awk '{print $2 " " $3 " " $4}'`;
+#trim whitespace
+   aauthor=`echo $aauthor | sed 's/ *$//g'`
 
 # if date is between the begin and end dates passed in - proceed
   if [[ "$apdate" > "$begdate" ]] && [[ "$apdate" < "$enddate" ]] ;
   then
-# print out all modifed files
-     echo "File published: " $apdate " author: " $aauthor " " $f;
+#     echo $aauthor ":" $apdate ":" $f;
+     looper=0
+     while [[ $looper -lt  $counter ]]
+     do 
+#      echo "aauthor " $aauthor " and membercompare " ${TCTmembers[$looper]}
+       if [[ "$aauthor" == "${TCTmembers[$looper]}" ]]
+       then
+          f=${f:2};
+          echo "TCT: " $aauthor ":" $apdate ":" $f;
+        fi
+       looper=$((looper+1));
+     done
      count=$((count+1));
   fi
 done
-echo $count " Files published between " $begdate " and " $enddate
+echo $count " files published between " $begdate " and " $enddate
+
