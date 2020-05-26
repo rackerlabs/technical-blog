@@ -6,6 +6,10 @@ comments: true
 author: Shyamal Shah
 published: true
 authorIsRacker: true
+bio: "Shyamal leads a team of Oracle experts that provides technical managed
+services for 100+ Oracle ERP customers across different industries and verticals.
+Shyamal is a Oracle thought leader and played an integral role in building our
+OCI practice within Rackspace."
 categories:
     - Oracle
     - database
