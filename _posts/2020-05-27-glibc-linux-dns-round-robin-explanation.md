@@ -64,26 +64,26 @@ network, the addresses are considered equal.
 
 ![]({% asset_path 2020-05-27-glibc-linux-dns-round-robin-explanation/Picture1.png %})
 
-To illustrate what this means with examples:
+The following samples illustrate what this means:
 
 - Given that the **hostname** has two addresses: **10.0.1.2** and **10.0.0.2**
 
-- Action: I add an IP address with: `sudo ip addr add 10.0.1.1/24 dev lo`
+- **Action**: I add an IP address with: `sudo ip addr add 10.0.1.1/24 dev lo`
 
-  Result: I only get the **10.0.1.2** address.
+  - **Result**: I only get the **10.0.1.2** address.
 
-- Action: I remove the preceding IP address and add another: `sudo ip addr add 10.0.0.1/24 dev lo`
+- **Action**: I remove the preceding IP address and add another: `sudo ip addr add 10.0.0.1/24 dev lo`
 
-  Result: I only get the **10.0.0.2** address.
+  - **Result**: I only get the **10.0.0.2** address.
 
-- Action: I add a different subnet that doesn't overlap: `sudo ip addr add 10.0.2.1/24 dev lo`
+- **Action**: I replace all the IPs with a different subnet that doesn't overlap: `sudo ip addr add 10.0.2.1/24 dev lo`
 
-  Result: I get both IP addresses.
+  - **Result**: I get both IP addresses.
 
-- Action: I add a subnet that doesn't overlap, but shares everything except the last
+- **Action**: I add a subnet that doesn't overlap, but shares everything except the last
   two bits: `sudo ip addr add 10.0.1.1/32 dev lo`
 
-  Result: I get both IP addresses.
+  - **Result**: I get both IP addresses.
 
 So, glibc prefers addresses on the same LAN for IPv4, but picks IP addresses at
 random otherwise.
