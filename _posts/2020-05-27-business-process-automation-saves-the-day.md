@@ -8,7 +8,8 @@ published: true
 authorIsRacker: true
 bio: "Tony Bryden is a nine-year Racker and currently leads the vision behind
 the Rackspace ServiceNow Platform and ITSM modernization. Formerly, he was the
-Automation Product Manager was vital in Rackspace's recent deployment of MoogSoft&trade;."
+Automation Product Manager and was also vital in the recent deployment by Rackspace
+of MoogSoft&trade;."
 categories:
     - general
 metaTitle: "Rackspace business automation offers the capabilities you don't see, which make
@@ -26,13 +27,13 @@ security and compliance.
 
 <!-- more -->
 
-Which of the following elements drive the Rackspace Fanatical Experience&reg;?
+Which of the following elements drive Rackspace Fanatical Experience&trade;?
 
 - Our offering bundle
 
 - Our professional services
 
-- The thousands of Rackers delivering the fanatical support and service delivery
+- The thousands of Rackers delivering **Fanatical Support**&reg; and service delivery
 
 The short answer is that all of these contribute to that experience and the
 Rackspace core values.
@@ -48,10 +49,10 @@ driven by world-class process engineering.
 
 ![]({% asset_path 2020-05-27-business-process-automation-saves-the-day/Picture1.png %})
 
-This diagram highlights the ecosystem that enables our automation team's Process
+This diagram highlights the ecosystem that enables our Automation team's Process
 Engineering Group (PEG) to execute world-class vulnerability management, device
-EOL automation, and in partnership with our Global Datacenter Infrastructure teams,
-world-class Physical Migration services.
+end-of-life (EOL) automation, and in partnership with our Global Data Center Infrastructure teams,
+world-class physical migration services.
 
 By the end of 2019, the PEG team automated 270,540 hours of previously manual
 work and provided other support capabilities that we couldn't hire enough people
@@ -62,53 +63,53 @@ to deliver.
 Rackspace's automation never sleeps. The following capabilities would otherwise
 require customer interaction and Racker intervention:
 
-#### Vulnerability and end-of-life (EOL) management
+#### Vulnerability and EOL management
 
-In 2019, automation protected customer devices at scale, saving 179k hrs without
-customer intervention:
+In 2019, automation protected customer devices at scale, saving 179,696 hours without
+customer intervention, including the following cases:
 
-- **Spectre meltdown remediation**: 12k hrs saved
+- **Spectre meltdown remediation**: 12,000 hours saved
 
-- **Cisco ASA Code Stage and Reboots**: 166k hrs saved from 2018 through 2019
+- **Cisco&reg; ASA code stage and reboots**: 166,000 hours saved from 2018 through 2019
 
-- **Customer FW and LB Reboots Alert Tickets**: 604 hrs saved 2018 through 2019
+- **Customer firewall and load balancer reboots alert tickets**: 604 hours saved 2018 through 2019
 
-- **DRAC Firmware Updates**: 1092 Hrs saved in 2019
+- **Dell&trade; Remote Access Controller (DRAC) firmware updates**: 1,092 hours saved in 2019
 
-#### Business process input templates (BPIT)
+#### Business process input templates 
 
-Our BPITs enabled managed hosted customer self-service saving 3,336 Racker
-hours through 2019:
+Our business process input templates (BPITs) enabled managed hosted customer self-service saving 3,336 Racker
+hours through 2019, including the following cases:
 
-- Manage OS users for Windows&reg; and Linux&reg;, such as disabling user accounts
+- Manage operating system (OS) users for Windows&reg; and Linux&reg;, such as disabling user accounts
   on Windows and Linux Servers
 
-- Consolidate VPN Actions for firewall templates
+- Consolidate VPN actions for firewall templates
 
-- Provide VPN automation and customer self-service to support NetSec operations&mdash;
-  You can remove, modify, and view VPN users from our customer portal.
+- Provide VPN automation and customer self-service to support NetSec operations&mdash;you
+  can remove, modify, and view VPN users from our customer portal.
 
-- Offer a significant ROI that represents 14,881 NetSec Tickets annually, which
+- Offer a significant ROI that represents 14,881 NetSec tickets annually, which
   provides a huge reduction in the annual cost-to-serve for Rackspace.
 
 #### Operational efficiencies
 
 Operation efficiencies enable Rackers to focus on business-critical issues faster:
 
-- 93% of monitoring tickets fully resolved through automation E2E from creation
+- 93% of monitoring tickets fully resolved through automation end-to-end, from creation
   to close without a human touch.
 
-- More than 230k Racker hours saved through auto-remediation.
+- More than 230,000 Racker hours saved through auto-remediation.
 
-- 168k Racker hours saved in 2019 via smart-ticket diagnostics
+- 168,000 Racker hours saved in 2019 via smart-ticket diagnostics.
 
-- Fleet management automation tooling offers troubleshooting, patching, and mean time to resolution (MTTR)
+- Fleet management automation tooling offers troubleshooting, patching, and mean time to resolution (MTTR).
 
-  - Windows: 28k hours saved
+  - Windows: 28,000 hours saved
 
-  - Linux: 31k hours saved
+  - Linux: 31,000 hours saved
 
-  - Maintenance: 12k hours saved
+  - Maintenance: 12,000 hours saved
 
 The preceding efficiencies are just the surface of the eight million events that
 Rackspace Business Automation processes every month. But that's not the end of
@@ -116,7 +117,7 @@ the story.
 
 ### The rest of the story
 
-Our data center automation team (DCX), which manages all of our dedicated OS, IP addresses, provisioning,
+Our Data Center Automation team (DCX), which manages all of our dedicated OS, IP addresses, provisioning,
 and more, works in conjunction with the Business Automation team so that PEG's
 lifecycle automation has full functionality.
 
@@ -125,13 +126,13 @@ To provide stellar automation capabilities, PEG does the following:
 - Use APIs that handle real network device interaction, which is critical for
   automating customer devices throughout the lifecycle.
 
-- Handle over 1 million calls daily
+- Handle over 1 million calls daily.
 
-- Manage device lifecycle needs
+- Manage device lifecycle needs.
 
-- Take advantage of the Rackspace switch infrastructure
+- Take advantage of the Rackspace switch infrastructure.
 
-- Guarantee configuration consistency with a high rate of success
+- Guarantee configuration consistency with a high rate of success.
 
 - Provide DCX Network services (DCX-NS), which is a central point of control for
   the massively distributed non-transactional data store that governs all
@@ -147,7 +148,7 @@ To deliver Fanatical Experience, PEG:
   and custom tailoring for sales and support.
 
 - Manages lifecycle needs, including assuring you that we remove you configurations
-  before you reuse a device
+  before you reuse a device.
 
 ### Conclusion
 
