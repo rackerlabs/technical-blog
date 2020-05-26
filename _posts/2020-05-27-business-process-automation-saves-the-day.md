@@ -6,6 +6,7 @@ comments: true
 author: Tony Bryden
 published: true
 authorIsRacker: true
+authorAvatar: 'https://gravatar.com/avatar/21c63797cd8d01de8db2bd0512f8e6d1'
 bio: "Tony Bryden is a nine-year Racker and currently leads the vision behind
 the Rackspace ServiceNow Platform and ITSM modernization. Formerly, he was the
 Automation Product Manager and was also vital in the recent deployment by Rackspace
@@ -76,7 +77,7 @@ customer intervention, including the following cases:
 
 - **Dell&trade; Remote Access Controller (DRAC) firmware updates**: 1,092 hours saved in 2019
 
-#### Business process input templates 
+#### Business process input templates
 
 Our business process input templates (BPITs) enabled managed hosted customer self-service saving 3,336 Racker
 hours through 2019, including the following cases:
