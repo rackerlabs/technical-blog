@@ -6,6 +6,7 @@ comments: true
 author: Shyamal Shah
 published: true
 authorIsRacker: true
+authorAvatar: 'https://s.gravatar.com/avatar/a2fa9027325fb8e285d4c677ecf715e9'
 bio: "Shyamal leads a team of Oracle&reg; experts that provide technical managed
 services for 100+ Oracle enterprise resource planning (ERP) customers across
 different industries and verticals. Shyamal is an Oracle thought leader and played
