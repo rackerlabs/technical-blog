@@ -78,6 +78,13 @@ bio: "Michiel Brinkman is a Solutions Architect working for Rackspace from
 Amsterdam, The Netherlands. Multi-cloud certified with a strong engineering
 background."
 
+Bryden, Tony
+authorAvatar: 'https://gravatar.com/avatar/21c63797cd8d01de8db2bd0512f8e6d1'
+bio: "Tony Bryden is a nine-year Racker and currently leads the vision behind
+the Rackspace ServiceNow Platform and ITSM modernization. Formerly, he was the
+Automation Product Manager and was also vital in the recent deployment by Rackspace
+of MoogSoft&trade;."
+
 Carbone, Denise
 authorAvatar: 'https://s.gravatar.com/avatar/621ec460934803c15e9b2c4ff6cbf75f'
 bio: n/a
@@ -164,6 +171,16 @@ Applications, Oracle E-Business Suite, Oracle Database administration, Oracle
 Fusion Middleware, Oracle SOA Suite administration and integration with Oracle
 Applications, Oracle Demantra administration and integration with Oracle ASCP,
 Oracle Cloud Infrastructure, and Oracle DBaaS administration."
+
+Drown, Daniel
+authorAvatar: 'https://s.gravatar.com/avatar/3995b2d776949a99f3fdae386eca40ce'
+bio: "Back in 2001, Dan joined Datapipe as employee number 23. Aware that technology
+can be confusing, Dan liked that Datapipe's mission was to make it easier for
+people to get their internet presence up and running. Our customers must have
+liked that too, as the company grew quickly. There have been many challenges
+along the way, and Dan has enjoyed learning new skills and technologies to adapt
+to the industry's changes. Now, nineteen years later Dan is proud to be a Racker,
+and is committed to Rackspace's vision of being the best service provider."
 
 Engle, Joe
 authorAvatar: ''

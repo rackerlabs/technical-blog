@@ -62,6 +62,34 @@ on this system, and this code checks that the hostname's destination addresses
 returned are on the same network as this system. If they are not on the same
 network, the addresses are considered equal.
 
+![]({% asset_path 2020-05-27-glibc-linux-dns-round-robin-explanation/Picture1.png %})
+
+To illustrate what this means with examples:
+
+- Given that the **hostname** has two addresses: **10.0.1.2** and **10.0.0.2**
+
+- Action: I add an IP address with: `sudo ip addr add 10.0.1.1/24 dev lo`
+
+  Result: I only get the **10.0.1.2** address.
+
+- Action: I remove the preceding IP address and add another: `sudo ip addr add 10.0.0.1/24 dev lo`
+
+  Result: I only get the **10.0.0.2** address.
+
+- Action: I add a different subnet that doesn't overlap: `sudo ip addr add 10.0.2.1/24 dev lo`
+
+  Result: I get both IP addresses.
+
+- Action: I add a subnet that doesn't overlap, but shares everything except the last
+  two bits: `sudo ip addr add 10.0.1.1/32 dev lo`
+
+  Result: I get both IP addresses.
+
+So, glibc prefers addresses on the same LAN for IPv4, but picks IP addresses at
+random otherwise.
+
+For more information, see this relevant [Debian bug report](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=438179).
+
 Use the Feedback tab to make any comments or ask questions. You can also
 [chat now](https://www.rackspace.com/#chat) to start the conversation.
 
