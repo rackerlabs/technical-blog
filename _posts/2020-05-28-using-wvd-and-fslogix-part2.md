@@ -30,9 +30,9 @@ considerations for deploying the new service.
 
 This series of WVD posts includes:
 
-- [Part one](https://developer.rackspace.com/blog/2020-05-28-using-wvd-and-fslogix-part1) to see what WVD is and what it solves for.
-- [Part two](https://developer.rackspace.com/blog/2020-05-28-using-wvd-and-fslogix-part2) for more of the story and how FSLogix makes WVD easier.
-- [Part three](https://developer.rackspace.com/blog/2020-05-28-using-wvd-and-fslogix-part3) for the gotchas and good to knows.
+- [Part one](https://developer.rackspace.com/blog/using-wvd-and-fslogix-part1/) to see what WVD is and what it solves for.
+- [Part two](https://developer.rackspace.com/blog/using-wvd-and-fslogix-part2/) for more of the story and how FSLogix makes WVD easier.
+- [Part three](https://developer.rackspace.com/blog/using-wvd-and-fslogix-part3/) for the gotchas and good to knows.
 
 ### Typical WVD architecture with FSLogix Profile Containers
 
@@ -161,7 +161,7 @@ useful feature provided by the tool. FSLogix solutions include:
   of Java&ref;, you can create rules to only provide the old version of Java to
   that application.
 
-See [Part three](https://developer.rackspace.com/blog/2020-05-28-using-wvd-and-fslogix-part3)
+See [Part three](https://developer.rackspace.com/blog/using-wvd-and-fslogix-part3/)
 for the gotchas and good to knows.
 
 Use the Feedback tab to make any comments or ask questions. You can also
