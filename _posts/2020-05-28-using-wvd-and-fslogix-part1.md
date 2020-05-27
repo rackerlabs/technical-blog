@@ -3,9 +3,15 @@ layout: post
 title: "Using Windows Virtual Desktop and FSLogix to accelerate working from home: Part 1"
 date: 2020-05-28 00:01
 comments: true
-author: Aaron Medrano, Derwin Findley, Katie Flynn, John Matlock, Allen Hayward, Casey Tomlinson
+author: RAX Productivity Team
 published: true
 authorIsRacker: true
+bio: "Rackspace's Microsoft® Productivity Solutions team provides best practice
+solutions and expertise for complex problems spanning the Microsoft Windows
+ecosystem to include Identity, Remote Work, Productivity and Collaboration. Our
+team of Microsoft®-certified experts with over 20+ years of experience helps
+customers choose, deploy and manage the best option to meet their unique business
+needs."
 categories:
     - General
 metaTitle: "Using Windows Virtual Desktop and FSLogix to accelerate working from home: Part 1"
@@ -121,15 +127,10 @@ WVD use cases.
 See the following links for more information on the VM types:
 
 - [General purpose](https://docs.microsoft.com/en-us/azure/virtual-machines/sizes-general)
-
 - [Compute optimized](https://docs.microsoft.com/en-us/azure/virtual-machines/sizes-compute)
-
 - [Memory optimized](https://docs.microsoft.com/en-us/azure/virtual-machines/sizes-memory)
-
 - [Storage optimized](https://docs.microsoft.com/en-us/azure/virtual-machines/sizes-storage)
-
 - [GPU](https://docs.microsoft.com/en-us/azure/virtual-machines/sizes-gpu)
-
 - [High performance compute](https://docs.microsoft.com/en-us/azure/virtual-machines/sizes-hpc)
 
 Personal desktop pools can change the story for WVD significantly. Instead of

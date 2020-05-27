@@ -3,9 +3,15 @@ layout: post
 title: "Using Windows Virtual Desktop and FSLogix to accelerate working from home: Part 2"
 date: 2020-05-28 00:01
 comments: true
-author: Aaron Medrano, Derwin Findley, Katie Flynn, John Matlock, Allen Hayward, Casey Tomlinson
+author: RAX Productivity Team
 published: true
 authorIsRacker: true
+bio: "Rackspace's Microsoft® Productivity Solutions team provides best practice
+solutions and expertise for complex problems spanning the Microsoft Windows
+ecosystem to include Identity, Remote Work, Productivity and Collaboration. Our
+team of Microsoft®-certified experts with over 20+ years of experience helps
+customers choose, deploy and manage the best option to meet their unique business
+needs."
 categories:
     - General
 metaTitle: "Using Windows Virtual Desktop and FSLogix to accelerate working from home: Part 2"
@@ -295,8 +301,7 @@ help you get your remote workforce up and running quickly. Certified Azure
 architects design, build, and deploy your Azure cloud infrastructure to meet
 your specific requirements for governance, operational processes, and security.
 Microsoft Certified engineers build and deploy the WVD solution and guide you
-through piloting and adopting these new technologies.  Interested in setting up
-your Work Anywhere Solution? Click on the link! Partner with Rackspace here
+through piloting and adopting these new technologies.
 
 Microsoft is continuously working to improve this product and Rackspace will
 continue sharing tips and tricks on how to effectively use Windows Virtual
