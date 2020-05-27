@@ -31,6 +31,12 @@ considerations for deploying the new service.
 
 <!-- more -->
 
+This series of WVD posts includes:
+
+- [Part one](https://developer.rackspace.com/blog/2020-05-28-using-wvd-and-fslogix-part1) to see what WVD is and what it solves for.
+- [Part two](https://developer.rackspace.com/blog/2020-05-28-using-wvd-and-fslogix-part2) for more of the story and how FSLogix makes WVD easier.
+- [Part three](https://developer.rackspace.com/blog/2020-05-28-using-wvd-and-fslogix-part3) for the gotchas and good to knows.
+
 ### Remote Desktop Services
 
 WVD is the only way to provide a "like-local" virtualized multi-session Windows
@@ -173,7 +179,8 @@ minimize the customizations required in the OS image, allowing you to manage use
 profiles and software deployment outside of imaging. Hopefully, Microsoft brings
 this feature to general availability soon.
 
-See [Part two](https://developer.rackspace.com/blog/2020-05-28-using-wvd-and-fslogix-part2) for more of the story.
+See [Part two](https://developer.rackspace.com/blog/2020-05-28-using-wvd-and-fslogix-part2)
+for more of the story and how FSLogix makes WVD easier.
 
 Use the Feedback tab to make any comments or ask questions. You can also
 [chat now](https://www.rackspace.com/#chat) to start the conversation.

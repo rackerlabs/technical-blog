@@ -26,10 +26,13 @@ This is part two of a two-part blog series on the ways Windows® Virtual Desktop
 (WVD)  solves for work anywhere scenarios and provides some important
 considerations for deploying the new service.
 
-See [Part one](https://developer.rackspace.com/blog/2020-05-28-using-wvd-and-fslogix-part2)
-to see how the story begins.
-
 <!-- more -->
+
+This series of WVD posts includes:
+
+- [Part one](https://developer.rackspace.com/blog/2020-05-28-using-wvd-and-fslogix-part1) to see what WVD is and what it solves for.
+- [Part two](https://developer.rackspace.com/blog/2020-05-28-using-wvd-and-fslogix-part2) for more of the story and how FSLogix makes WVD easier.
+- [Part three](https://developer.rackspace.com/blog/2020-05-28-using-wvd-and-fslogix-part3) for the gotchas and good to knows.
 
 ### Typical WVD architecture with FSLogix Profile Containers
 
@@ -158,7 +161,8 @@ useful feature provided by the tool. FSLogix solutions include:
   of Java&ref;, you can create rules to only provide the old version of Java to
   that application.
 
-See [Part three](https://developer.rackspace.com/blog/2020-05-28-using-wvd-and-fslogix-part3) for the rest of the story.
+See [Part three](https://developer.rackspace.com/blog/2020-05-28-using-wvd-and-fslogix-part3)
+for the gotchas and good to knows.
 
 Use the Feedback tab to make any comments or ask questions. You can also
 [chat now](https://www.rackspace.com/#chat) to start the conversation.
