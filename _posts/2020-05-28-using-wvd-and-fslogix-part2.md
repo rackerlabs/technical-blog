@@ -16,9 +16,9 @@ ogDescription: "The events unfolding in 2020 accelerated the adoption of remote 
 one could have predicted. Consider WVD."
 ---
 
-This is part two of a two-part blog series on the ways WVD solves for work
-anywhere scenarios and provides some important considerations for deploying the
-new service.
+This is part two of a two-part blog series on the ways Windows® Virtual Desktop
+(WVD)  solves for work anywhere scenarios and provides some important
+considerations for deploying the new service.
 
 See [Part one](https://developer.rackspace.com/blog/2020-05-28-using-wvd-and-fslogix-part2)
 to see how the story begins.
@@ -27,14 +27,14 @@ to see how the story begins.
 
 ### Typical WVD architecture with FSLogix Profile Containers
 
-Microsoft acquired FSLogix to provide, for any WVD-Licensed customer, the optimum
-Windows 10 multi-session experience. The following diagram and accompanying
-descriptions depict the flow of user logon in an environment by using FSLogix
-with the Profile Container feature, redirecting the profile to an Server Message
-Block (SMB) share on Azure NetApp&reg; files. By placing the contents of the
-user's profile in a remote VHD, user profiles can be mounted instantly regardless
-of their size, and the user doesn’t notice changes to their profile if they move
-between hosts when they log off and back on.
+Microsoft&reg; acquired FSLogix to provide, for any WVD-Licensed customer, the
+optimum Windows 10 multi-session experience. The following diagram and
+accompanying descriptions depict the flow of user logon in an environment by using
+FSLogix with the Profile Container feature, redirecting the profile to an Server
+Message Block (SMB) share on Azure&reg; NetApp&reg; files. By placing the contents
+of the user's profile in a remote virtual hard disk (VHD), user profiles can be
+mounted instantly regardless of their size, and the user doesn’t notice changes
+to their profile if they move between hosts when they log off and back on.
 
 ![]({% asset_path 2020-05-28-using-wvd-and-fslogix-part1-and-2/Picture4.png %})
 
@@ -42,9 +42,10 @@ between hosts when they log off and back on.
    at [https://rdweb.wvd.microsoft.com](https://rdweb.wvd.microsoft.com).
 
 2.	**WVD control plane**: The WVD control plane uses Microsoft Identity Provider
-   in AAD, allowing it to make use of advanced conditional access configurations.
-   The access token granted at this level only allows access through the WVD
-   gateway and does not yet authenticate to the local domain.
+   in Azure Active Directory (AAD), allowing it to make use of advanced
+   conditional access configurations. The access token granted at this level
+   allows access only through the WVD gateway and does not yet authenticate to
+   the local domain.
 
 3.	**WVD session host**: The WVD agents running on the session hosts maintain a
    reverse-connect connection to the control plane. Using reverse-connect means
@@ -62,12 +63,12 @@ between hosts when they log off and back on.
    profile to the VHD. FSLogix creates the VHD by using the user's local domain
    credentials, utilizing built-in NTFS permissions.
 
-6.	**Azure AD Connect**: The diagram shows Azure AD Connect as an Azure VM in
-   this diagram, but it can live anywhere that has network access to both AD
-   Domain Controllers and Azure cloud APIs. If you’re adding AD Connect for the
-   purposes of WVD, and you’re already using other Office 365 services, be aware
-   that this makes your hybrid cloud objects read-only for many management tasks.
-   More on that later.
+6.	**Azure AD Connect**: The diagram shows Azure AD Connect as an Azure virtual
+   machine (VM) in this diagram, but it can live anywhere that has network access
+   to both AD Domain Controllers and Azure cloud APIs. If you’re adding AD Connect
+   for the purposes of WVD, and you’re already using other Office 365 services,
+   be aware that this makes your hybrid cloud objects read-only for many
+   management tasks. More on that later.
 
 #### FSLogix Profile Containers
 
@@ -187,7 +188,7 @@ As mentioned in the Microsoft documentation, you can use the scaling tool to:
 
 - Scale in VMs during off-peak hours, leaving the minimum number of session host VMs running.
 
-The scaling tool uses a combination of Azure Automation PowerShell runbooks,
+The scaling tool uses a combination of Azure Automation PowerShell&reg; runbooks,
 webhooks, and Azure Logic Apps to function. When the tool runs, Azure Logic Apps
 calls a webhook to start the Azure Automation runbook. The runbook then creates
 a job. For more details, check out the
@@ -255,10 +256,53 @@ host to avoid this issue.
 
 ![]({% asset_path 2020-05-28-using-wvd-and-fslogix-part1-and-2/Picture5.png %})
 
+#### Exchange attribute synchronization considerations
+
+If you are looking to implement WVD but don't have an AD synchronized using
+ADConnect, you want to ensure you have an Exchange management server set up as
+well. ADConnect becomes the source of authority for managing your users. This
+includes the attributes associated with it after ADConnect is configured. An
+Exchange management server is needed to extend the schema and allow these Exchange
+attributes to be managed.
+
+### Azure Active Directory
+
+Currently WVD requires an on-premises AD installation with AAD Connect to manage
+your user’s identities. WVD session hosts must be joined a traditional AD domain
+in which the user objects exist.
+
+Microsoft has stated they plan to have an AAD (cloud only) option available. They
+hope to have it available by the end of 2020.
+
 ### Conclusion
 
+WVD, built on industry leading cloud technologies and powered by Azure
+infrastructure, provides rapid deployment, low upfront costs, and a scalable
+solution that can expand to meet sudden demand. WVD isn't just a one-size-fits-all
+solution and offers options, such as multi-session desktop, personal desktop,
+and app virtualization, to meet your user's needs. WVD provides secure
+authentications with AAD and can take advantage of a rich set of security
+features such as multi-factor authentication and conditional access policies.
+To get the best users experience, WVD utilizes FSLogix to provide customizable
+options for giving your users a secure and familiar Windows 10 desktop experience
+with "like-local" performance. This product is a game changer.
+
+Rackspace’s Professional Services team works with your organization to assess,
+design, transform, manage, and optimize, leveraging cloud architecture best
+practices, to help you get the most out of your Work Anywhere Solution. Rackspace
+identifies areas of opportunity and makes recommendations for the best path to
+help you get your remote workforce up and running quickly. Certified Azure
+architects design, build, and deploy your Azure cloud infrastructure to meet
+your specific requirements for governance, operational processes, and security.
+Microsoft Certified engineers build and deploy the WVD solution and guide you
+through piloting and adopting these new technologies.  Interested in setting up
+your Work Anywhere Solution? Click on the link! Partner with Rackspace here
+
+Microsoft is continuously working to improve this product and Rackspace will
+continue sharing tips and tricks on how to effectively use Windows Virtual
+Desktop in your organization.
 
 Use the Feedback tab to make any comments or ask questions. You can also
 [chat now](https://www.rackspace.com/#chat) to start the conversation.
 
-<a class="cta blue" id="cta" href="https://www.rackspace.com/lp/work-anywhere-solution-microsoft-offer">Learn more about the Microsoft Work Anywhere solution.</a>
+<a class="cta teal" id="cta" href="https://www.rackspace.com/lp/work-anywhere-solution-microsoft-offer">Learn more about the Microsoft Work Anywhere solution.</a>

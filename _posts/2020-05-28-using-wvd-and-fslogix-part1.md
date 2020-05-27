@@ -177,4 +177,5 @@ See [Part two](https://developer.rackspace.com/blog/2020-05-28-using-wvd-and-fsl
 Use the Feedback tab to make any comments or ask questions. You can also
 [chat now](https://www.rackspace.com/#chat) to start the conversation.
 
-<a class="cta blue" id="cta" href="https://www.rackspace.com/dba-services">Learn more about Databases.</a>
+<a class="cta purple" id="cta" href="https://www.rackspace.com/lp/work-anywhere-solution-microsoft-offer">Learn more about the Microsoft Work Anywhere solution.</a>
+
