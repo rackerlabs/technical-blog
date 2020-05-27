@@ -22,7 +22,7 @@ ogDescription: "The events unfolding in 2020 accelerated the adoption of remote 
 one could have predicted. Consider WVD."
 ---
 
-This is part two of a two-part blog series on the ways Windows® Virtual Desktop
+This is part two of a three-part blog series on the ways Windows® Virtual Desktop
 (WVD)  solves for work anywhere scenarios and provides some important
 considerations for deploying the new service.
 
