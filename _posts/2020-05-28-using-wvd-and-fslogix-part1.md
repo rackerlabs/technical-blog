@@ -24,8 +24,8 @@ one could have predicted. Consider WVD."
 
 The events unfolding in 2020 accelerated the adoption of remote work in ways no
 one could have predicted. Whether your organization plans to use Windows® Virtual
-Desktop (WVD) to fill this need rapidly or is on the hunt for a new Virtual
-desktop infrastructure (VDI) solution, this two-part blog series gives you an
+Desktop (WVD) to fill this need rapidly or is on the hunt for a new virtual
+desktop infrastructure (VDI) solution, this three-part blog series gives you an
 idea of the ways WVD solves for work anywhere scenarios and provides some important
 considerations for deploying the new service.
 
@@ -173,7 +173,7 @@ minimize the customizations required in the OS image, allowing you to manage use
 profiles and software deployment outside of imaging. Hopefully, Microsoft brings
 this feature to general availability soon.
 
-See [Part two](https://developer.rackspace.com/blog/2020-05-28-using-wvd-and-fslogix-part2) for the rest of the story.
+See [Part two](https://developer.rackspace.com/blog/2020-05-28-using-wvd-and-fslogix-part2) for more of the story.
 
 Use the Feedback tab to make any comments or ask questions. You can also
 [chat now](https://www.rackspace.com/#chat) to start the conversation.
