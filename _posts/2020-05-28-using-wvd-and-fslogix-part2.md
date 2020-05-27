@@ -144,7 +144,7 @@ useful feature provided by the tool. FSLogix solutions include:
   the user profile that contains Microsoft Office data. If you have a requirement
   to redirect Office file operations to a separate VHD, then this feature helps.
 
-- **ikuytApplication containers**: Redirect an application’s folder contents to
+- **Application containers**: Redirect an application’s folder contents to
   a remotely attached VHD. FSLogix dynamically attaches the VHD when the folder
   is accessed.
 
