@@ -7,42 +7,42 @@ author: Vikas Kumar
 published: true
 authorIsRacker: true
 authorAvatar: 'https://s.gravatar.com/avatar/02d1f0f4f3f24ee84e33211a51a0b237'
-bio: "I work as Oracle DBA with more than ten years of experience."
+bio: "I've been a Racker for two years and have more than ten years of Oracle&reg; DBA experience. Currently I work on Oracle, MongoDB&reg;, and other NoSQL databases."
 categories:
     - Oracle
     - database
 metaTitle: "Use Oracle external tables"
 metaDescription: "External tables receive data from the flat files stored outside
-of the database and allow Oracle&reg; to query the data in those flat files."
+of the database and allow Oracle&reg; to query the data in those files."
 ogTitle: "Use Oracle external tables"
 ogDescription: "External tables receive data from the flat files stored outside
-of the database and allow Oracle&reg; to query the data in those flat files."
+of the database and allow Oracle&reg; to query the data in those files."
 ---
 
 External tables receive data from the flat files stored outside of the database
-and allow Oracle&reg; to query the data in those flat files.
+and allow Oracle&reg; to query the data in those files.
 
 <!-- more -->
 
 ### Introduction
 
-Oracle can parse any file format supported by the SQL\*Loader. You can't use DML
-on external tables, but you can use DML for query, join, and sort operations.
-You can also create views and synonyms against the external tables.
+Oracle can parse any file format supported by the SQL\*Loader. You can't use data
+manipulation language (DML) on external tables, but you can use DML for query, join,
+and sort operations. You can also create views and synonyms against the external tables.
 
 To take advantage of the external table feature, you should use the ORACLE_LOADER
 access driver and make sure the data files are in the text format. You should
-also understand SQL so you can create an external table and perform queries
-against it.
+also understand Structured Query Language (SQL) so you can create an external table and
+perform queries against it.
 
 ### Make an external table in an Oracle database
 
-To create external tables using an Oracle loader, perform the following steps:
+To create external tables by using an Oracle loader, perform the following steps:
 
 #### Create a directory
 
 Use the following code to create a directory that points to the location of the
-**csv** or text files provided by a user.
+comma-separated value (CSV) or text files provided by a user.
 
     create directory vk_dir as '/opt/oracle/app/admin/je1prd/mods/151214_CHG0004529';
 
@@ -100,6 +100,8 @@ create a local table based on the external one:
 
 #### Copy data from the external to the local table
 
+Use the following code to copy data from the external to the local table:
+
     --insert
     Insert into kumarv5.VK_4529_int   select * from kumarv5.VK_4529_ext;
     commit;
@@ -127,8 +129,8 @@ regular table:
 ### Conclusion
 
 External tables enable you to access data in the external sources as if it were
-in a table in the database. If users provide data in a spreadsheet or **CSV**
-format and you need to update database tables based on the excel sheet, an
+in a table in the database. If users provide data in a spreadsheet or CSV
+format, and you need to update database tables based on the excel sheet, an
 external table comes in handy.
 
 
