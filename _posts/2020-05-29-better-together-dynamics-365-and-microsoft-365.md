@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Better together: Dynamics 365 and Microsoft 365"
-date: 2020-05-26 00:01
+date: 2020-05-29 00:01
 comments: true
 author: Teresa Cortez
 published: true
