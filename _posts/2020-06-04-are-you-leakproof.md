@@ -11,11 +11,11 @@ categories:
 metaTitle: "Are you leakproof?"
 metaDescription: "We live in world where data and digital information are more expensive than a
 Ferrari, and thieves can steal billions without even getting off the couch. They
-can get away with megabucks just by cracking a system. "
+can get away with megabucks just by cracking a system."
 ogTitle: "Are you leakproof?"
 ogDescription: "We live in world where data and digital information are more expensive than a
 Ferrari, and thieves can steal billions without even getting off the couch. They
-can get away with megabucks just by cracking a system. "
+can get away with megabucks just by cracking a system."
 ---
 
 We live in world where data and digital information are more expensive than a
