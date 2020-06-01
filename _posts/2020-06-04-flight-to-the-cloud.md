@@ -37,11 +37,11 @@ robotics are changing how we humans think of our intelligence, emotional
 attachments, and our relationship with machines. The growth of technological
 advancement seems unstoppable and unbreakable.
 
-The field of predictive analysis and data science is taking over the superstitions
+The field of predictive analysis and data science is taking over superstitions
 and predicting the future with surprising accuracy. Even our movies, web series,
 and TV sitcoms are commenting on these topics.
 
-You might say AI is the new electricity but consider the implications. As the
+You might say AI is the new electricity, but consider the implications. As the
 creation of electricity depended on coal and oil at the beginning of the 20th
 century, current AI and ML developments depend on data. The cloud plays a
 significant role in the future of AI and ML because so much data lives in the
@@ -51,7 +51,7 @@ cloud.
 
 It all started with the invention of the computer, and since then, the IT
 infrastructure has increased drastically. We've moved from big, room-sized
-computers to handy laptops and upgraded data storage from giant 45MB storage
+computers to handy laptops and upgraded data storage from giant 45 MB storage
 boxes to small flash drives. However, the amount of data and the computing
 resources required to process it has resulted in large data centers and IT
 infrastructure.
@@ -62,19 +62,19 @@ expands to the advantages of the cloud.
 #### The history of traditional storage
 
 Let's start with the traditional approach to handling and storing data. In the
-past, corporations spent millions on real estate assets and billions on IT
+past, corporations spent millions on real estate assets and billions on the IT
 infrastructure inside them. Traditional storage includes the following
 components:
 
 - **The Selectron tube**: Originally developed in 1946 with a capacity of 256
-  to 4096 bits (32 to 512 bytes). The 4096-bit Selectron was ten inches long and
+  to 4096 bits (32 to 512 bytes), the 4096-bit Selectron was ten inches long and
   three inches wide.
 
-- **Punch cards**:  Until the mid-1970s,  computers used punch cards. Fun fact:
+- **Punch cards**: Until the mid-1970s,  computers used punch cards. Fun fact:
   the use of punch cards predates computers. The textile industry used them to
   control mechanized textile looms as early as 1725.
 
-- **Magnetic drum memory**:  Invented in 1932 and popular in mid-20th century
+- **Magnetic drum memory**: Invented in 1932 and popular in mid-20th century
   computers, magnetic drum memory came with over 10 KB capacity.
 
 - **Floppy disks**: IBM introduced flexible disks in the late 20th century, and
@@ -83,16 +83,16 @@ components:
 - **Magnetic tape**:  Introduced in 1951, magnetic tapes were heavy, made of
   metal, and 1200 feet long.
 
-- **Hard Disk Drive (HHD)**:  The brownie points for the first hard disk drive
+- **Hard disk drive (HDD)**:  The brownie points for the first hard disk drive
   goes to IBM. In 1956, IBM launched the first supercomputer with a hard disk
-  drive. It was the size of a refrigerator and weighed about 1000KG's. Hard drives
-  have evolved, and we now have 6-8 TB HDDs with a compact design (3.5 inches
+  drive. It was the size of a refrigerator and weighed about 1000KGs. Hard drives
+  have evolved, and we now have 6 to 8 TB HDDs with a compact design (3.5 inches
   long and weighing 500 grams).
 
 - **Solid-state drives (SSD)**: These transistor-based memory devices are the
   storage devices of the 21st  century. They come with an average capacity of
-  eight to ten TB and have excellent read and write speeds. Companies like Hitachi,
-  Western Digital, and SanDisk are making dramatic improvements in flash drives.
+  8 to 10 TB and have excellent read and write speeds. Companies like Hitachi&reg;,
+  Western Digital&reg;, and SanDisk&reg; are making dramatic improvements in flash drives.
 
 ### What's next?
 
@@ -101,19 +101,19 @@ what's next?
 
 The cloud offers a whole new set of opportunities, a new platform for dreamers
 to dream big, a revolution, and an event that happens once in centuries. The
-idea of the cloud, introduced in 2003 and 2006, opened a billion paths to the
+idea of the cloud, introduced in 2003 and again in 2006, opened a billion paths in the
 world of modernization, digitalization, and globalization. Many of the smart
 devices we see around us aren't possible without the cloud, and AI is fuelling
-the growth. In 2006, Amazon&reg; launched the first cloud with two major services
+the growth. In 2006, Amazon launched the first cloud with two major services,
 S3 and EC2. The services, with a billion updates, are still part of the AWS and
-are the biggest revenue generators for AWS. Since then, multiple companies have
-invested in the cloud. Today, everyone wants to move to the cloud, from new
-startups to multi-billion dollar companies.
+are the biggest revenue generators for Amazon Web Services&reg; (AWS). Since then,
+multiple companies have invested in the cloud. Today, everyone wants to move to the
+cloud, from new startups to multibillion-dollar companies.
 
 The value of businesses thriving in the cloud is growing from $200 billion to a
-projected level of $1,250 billion by 2025.  Services, such as AWS Lambda and
+projected level of $1,250 billion by 2025. Services, such as AWS Lambda&reg; and
 Google&reg; Cloud Function, take care of the tedious jobs of provisioning,
-scaling, high availability, and disaster recovery. Customers just need to put
+scaling, high availability, and disaster recovery (DR). Customers just need to put
 innovation and creativity into the applications and services they host.
 
 ### Benefits
