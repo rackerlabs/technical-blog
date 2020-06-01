@@ -9,16 +9,16 @@ authorIsRacker: true
 categories:
     - Security
 metaTitle: "Are you leakproof?"
-metaDescription: "We live in world where data and digital information are more expensive than a
+metaDescription: "We live in a world where data and digital information are more expensive than a
 Ferrari, and thieves can steal billions without even getting off the couch. They
 can get away with megabucks just by cracking a system."
 ogTitle: "Are you leakproof?"
-ogDescription: "We live in world where data and digital information are more expensive than a
+ogDescription: "We live in a world where data and digital information are more expensive than a
 Ferrari, and thieves can steal billions without even getting off the couch. They
 can get away with megabucks just by cracking a system."
 ---
 
-We live in world where data and digital information are more expensive than a
+We live in a world where data and digital information are more expensive than a
 Ferrari, and thieves can steal billions without even getting off the couch. They
 can get away with megabucks just by cracking a system.
 
@@ -30,9 +30,9 @@ risk of getting wet when the hackers break through your roof?
 
 In the 21st century, when the world is moving fast towards artificial intelligence
 and machine learning, the cloud is an essential aspect of the information
-technology industry. Businesses are gradually moving from on-prem data centers
+technology industry. Businesses are gradually moving from on-premises data centers
 to the cloud because it provides highly scalable, flexible, and reliable resources
-to the dynamic needs of modern customers. Models like function-as-a-service and
+for the dynamic needs of modern customers. Models like function-as-a-service and
 per-second billing are changing the way we think about the infrastructure.
 
 Despite its many advantages, the cloud does have a few shortcomings, and
@@ -40,8 +40,8 @@ cybersecurity is one of them. You need very proficient and experienced network
 specialists to create a secure infrastructure on the cloud.
 
 At Rackspace, we help customers to have a tightly packed, secure cloud platform
-with the help of experienced and highly skilled engineers and fanatical support.
-We create the concrete, leak-proof infrastructure that our customers value.
+with the knowledge of experienced and highly skilled engineers and **Fanatical Support**&reg;.
+We create the concrete, leakproof infrastructure that our customers value.
 
 ### Worried about security risks?
 
@@ -49,7 +49,7 @@ You can perform the security checks in this section to ensure that your
 infrastructure is airtight and that you limit the significant security risks.
 
 All major cloud providers have tools and processes to address the concepts in
-following sections.
+the following sections.
 
 #### Subnets and routing
 
@@ -71,12 +71,12 @@ tables help you to organize and secure the infrastructure.
 #### Security groups
 
 Cloud engineers should standardize and segregate the security policies into
-security groups that serve as the last level of firewall on a resource. Ideally,
+security groups that serve as the last level of the firewall on a resource. Ideally,
 you should create individual security groups for each instance and a security
 group for every team.
 
-For example, suppose you have three instances (A1, A2, and A3) on a specific
-infrastructure, and three teams (B1, B2, and B3) need to access all those
+For example, suppose you have three instances, A1, A2, and A3, on a specific
+infrastructure. Three teams, B1, B2, and B3, need to access all those
 instances. In this case, create nine different policies, such as the following
 ones:
 
@@ -94,7 +94,7 @@ instance instead of all three instances.
 
 You should standardize and describe every security policy that is part of a
 security group and define an owner for security policies. The creation process
-should flow similar to the following example:
+flow should be similar to the following example:
 
 Segregate > Standardize > Ownership > Description
 
