@@ -44,7 +44,7 @@ that is secure, performant, and reliable.
 ### Security
 
 Rackspace has always been an expert at securing your website. And now, with
-Cloudflare, you can combat a massively DDoS attack with
+Cloudflare, you can combat a massively distributed denial of service attack with
 the power of a massively distributed network. DDoS attacks targeting your website
 first hit Cloudflare, which can absorb the attack by using multiple techniques
 to block attack traffic and allow legitimate traffic through.
