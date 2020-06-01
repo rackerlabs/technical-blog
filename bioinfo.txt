@@ -78,6 +78,12 @@ bio: "Michiel Brinkman is a Solutions Architect working for Rackspace from
 Amsterdam, The Netherlands. Multi-cloud certified with a strong engineering
 background."
 
+Bose, Bhaskar
+authorAvatar: 'https://s.gravatar.com/avatar/c2846c487f5d07873a3ba9977ddb5f5b'
+bio: "I'm passionate about the latest in tech and everything digital. I love
+music, reading, cooking, living in interesting times (aren't we all?), and
+learning new skills."
+
 Bryden, Tony
 authorAvatar: 'https://gravatar.com/avatar/21c63797cd8d01de8db2bd0512f8e6d1'
 bio: "Tony Bryden is a nine-year Racker and currently leads the vision behind
