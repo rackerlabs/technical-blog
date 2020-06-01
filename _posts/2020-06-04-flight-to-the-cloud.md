@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Flight to the cloud"
-date: 2020-06-04 00:01
+date: 2020-06-02 00:01
 comments: true
 author: Raj Arora
 published: true
