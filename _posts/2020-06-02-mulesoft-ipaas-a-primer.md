@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Mulesoft iPaas&mdash;a-primer"
+title: "Mulesoft iPaaS&mdash;a primer"
 date: 2020-06-03 00:01
 comments: true
 author: Bhaskar Bose
@@ -12,11 +12,11 @@ published: true
 authorIsRacker: true
 categories:
     - General
-metaTitle: "Mulesoft iPaas&mdash;a-primer"
+metaTitle: "Mulesoft iPaaS&mdash;a primer"
 metaDescription: "Application integration is usually a daunting task, largely
 due to the nature of different data structures, legacy applications, and a team's
 overall IT capabilities."
-ogTitle: "Mulesoft iPaas&mdash;a-primer"
+ogTitle: "Mulesoft iPaaS&mdash;a primer"
 ogDescription: "Application integration is usually a daunting task, largely due
 to the nature of different data structures, legacy applications, and a team's
 overall IT capabilities."
@@ -24,8 +24,8 @@ overall IT capabilities."
 
 Application integration is usually a daunting task, largely due to the nature
 of different data structures, legacy applications, and a team's overall IT
-capabilities. Mulesoft&reg;, a Gartner MQ leader in integration platform as a
-service (iPaaS), is the application of choice for systems integrators and
+capabilities. Mulesoft&reg;, a Gartner MQ leader in integration Platform as a
+Service (iPaaS), is the application of choice for systems integrators and
 application developers.
 
 <!-- more -->
@@ -47,19 +47,19 @@ the following architectures:
 - Microservices-based
 
 Microservices&mdash;solutions that are either business-process functionalities
-or data flow&mdash;include migration, broadcast, aggregation, bi-directional
+or data flow&mdash;include migration, broadcast, aggregation, bidirectional
 synchronization, and correlation.
 
-Mule applications include several components such as connectors,  which ensure
+Mule applications include several components such as connectors, which ensure
 that enterprises keep running fully-functional application networks without
 losing any data. To meet your business need to integrate applications in a hybrid
 environment, Mulesoft has many benefits for developers and system integrators.
 
 ### Mulesoft features
 
-In addition to conforming to OpenAPI Specifications&mdash;the universal standards
+In addition to conforming to OpenAPI Specifications (OAS)&mdash;the universal standards
 programming language interface for application programmer interfaces
-(API)&mdash;Mulesoft enables you to do the following:
+(APIs)&mdash;Mulesoft enables you to do the following tasks:
 
 - Create API fragments that developers can save to use in their applications.
 
@@ -80,9 +80,9 @@ Mulesoft includes the following components:
   API governance&mdash;a single platform with all these functions helps in
   user-access control and API policy implementation.
 
-- **Anypoint Connectors**: Make it easy to connect out-of-the-box tools and
-  assets. You can connect systems faster, and Connectors ensures that you don't
-  need to create the API from scratch.
+- **Anypoint Connectors**: Makes it easy to connect out-of-the-box tools and
+  assets. You can connect systems faster, and Anypoint Connectors ensures that
+  you don't need to create the API from scratch.
 
 - **Flow Designer**: Helps newbies in API development. It is a web-based,
   intuitive interface that acts like a wizard and provides guidance in Mulesoft
@@ -91,32 +91,32 @@ Mulesoft includes the following components:
   data.
 
 - **Anypoint Monitoring**: Provides performance monitoring of the platform in
-  real-time, across all integrations and APIs. This feature helps with issue
+  real-time, across all integrations and APIs. This component helps with issue
   identification, root cause analyses, dependency mapping, and provides access
   to log data.
 
 - **Anypoint Runtime Manager**: Serves as a useful integrated tool for the
   management and monitoring of a complex hybrid environment of systems, APIs,
-  data, and devices. Developers use the Runtime Manager to view performance
+  data, and devices. Developers use the Anypoint Runtime Manager to view performance
   across systems, connect third-party operating tools, and set performance
   trigger-based alerts.
 
 - **Anypoint Studio**: Offers a single desktop environment for building and
-testing all APIs and integrations, either in SaaS or on-premise systems. Use it
-before deploying them to the CloudHub, or any other cloud environment, to help
-developers perform virtually any function, including mapping, building, editing,
-and debugging their APIs.
+testing all APIs and integrations, either in Software as a Service (SaaS) or
+on-premises systems. Use it before deploying them to CloudHub, or any other
+cloud environment, to help developers perform virtually any function, including
+mapping, building, editing, and debugging their APIs.
 
 ### Rackspace as your integration partner
 
-Rackspace Integration and API Management Services, based on Mulesoft, offers
+Rackspace Integration and API Management Services, based on Mulesoft, offer
 you a route to easy and significant improvement in your enterprise application
 processes by using the adoption of APIs. We provide an established framework to
 manage APIs easily, speeding up workflows, and reducing human intervention and
 errors. The Rackspace team does this through a combination of expert professional
 services and our association with Mulesoft. Rackspace is a Mulesoft Select Partner.
 
-Our long history of hosting, integrating, and managing legacy Enterprise resource
+Our long history of hosting, integrating, and managing legacy enterprise resource
 planning (ERP) and customer relationship management (CRM) systems for thousands
 of customers worldwide makes us a leader in application integration. Our
 partnership with Mulesoft, the world's leading vendor of iPaaS and API management
