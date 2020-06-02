@@ -2,6 +2,15 @@ Abhinav, Kumar
 authorAvatar: n/a
 bio: n/a
 
+Adan, Edwin
+authorAvatar: n/a
+bio: "Edwin Adan is a Senior Network Security Engineer with over 10 years of
+experience helping businesses achieve resilient and secure IP communications
+between their systems, data, people, and customers. Certified across multiple
+vendor technologies and always one to take pride in his work, Edwin continues
+to upskill and contribute to the hybrid and multi-cloud journeys of today's
+thriving organizations."
+
 Ahmed, Ilham
 authorAvatar: ''
 bio: n/a
@@ -264,6 +273,19 @@ bio: n/a
 Heywood, Celia
 authorAvatar: 'http://0.gravatar.com/avatar/76b6d0b3a7daec2a8e3e25f17ff7ead7'
 bio: n/a
+
+Holloway, Keiran
+authorAvatar: n/a
+bio: "Keiran Holloway is a Senior Lead Infrastructure Engineer focusing on Amazon
+Web Services and has been with Rackspace for 6 years. His primary focus is
+ensuring that all AWS solutions are designed and implemented in a way which are
+both fit for purpose but also closely aligned with key business outcomes. Keiran
+is responsible for working with some of the largest enterprise clients within
+the EMEA region and brings almost 20 years of hosting and infrastructure experience.
+Throughout this extensive past, Keiran built out a strong understanding of
+best-of-breed cloud practices, thought leadership, and in-depth domain knowledge
+across various technology platforms. Find out more at LinkedIn:
+[https://www.linkedin.com/in/keiran-holloway](https://www.linkedin.com/in/keiran-holloway).
 
 Hornbeck, Ash
 authorAvatar: https://www.gravatar.com/avatar/f96915d3f29e5623f9a9ff8c7cb3148f'
