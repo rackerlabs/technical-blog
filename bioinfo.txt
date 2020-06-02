@@ -275,7 +275,7 @@ authorAvatar: 'http://0.gravatar.com/avatar/76b6d0b3a7daec2a8e3e25f17ff7ead7'
 bio: n/a
 
 Holloway, Keiran
-authorAvatar: n/a
+authorAvatar: 'https://s.gravatar.com/avatar/02d9e9c7b2e66ab7f451198e22374be1'
 bio: "Keiran Holloway is a Senior Lead Infrastructure Engineer focusing on Amazon
 Web Services and has been with Rackspace for 6 years. His primary focus is
 ensuring that all AWS solutions are designed and implemented in a way which are
