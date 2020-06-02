@@ -41,8 +41,8 @@ Now, we're enhancing the RAS Digital Experience portfolio to include a suite of
 offers for customers who want to use Oracle CX Commerce for their e-commerce
 application. This suite of offers consists of the following components:
 
-- RAS Digital Experience Implementation Services for Oracle CX Commerce
-- RAS Digital Experience Integration Services for Oracle CX Commerce&mdash;Professional Services (ProServ) offers
+- RAS Digital Experience Implementation Services for Oracle CX Commerce&mdash;Professional Services (ProServ) offer
+- RAS Digital Experience Integration Services for Oracle CX Commerce&mdash;ProServ offer
 - RAS Digital Experience Application Managed Services for Oracle CX Commerce&mdash;a monthly subscription offer
 
 The Rackspace Integration ProServ team, the RAS Digital Oracle team, or a trusted
