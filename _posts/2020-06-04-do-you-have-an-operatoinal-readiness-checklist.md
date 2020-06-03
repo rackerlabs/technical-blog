@@ -1,17 +1,17 @@
 ---
 layout: post
-title: "Do you have an operation readiness checklist?"
+title: "Do you have an operational readiness checklist?"
 date: 2020-06-04 00:01
 comments: true
 author: Keiran Holloway
 authorAvatar: 'https://s.gravatar.com/avatar/02d9e9c7b2e66ab7f451198e22374be1'
 bio: "Keiran Holloway is a Senior Lead Infrastructure Engineer focusing on Amazon
 Web Services and has been with Rackspace for 6 years. His primary focus is
-ensuring that all AWS solutions are designed and implemented in a way which are
-both fit for purpose but also closely aligned with key business outcomes. Keiran
+ensuring that all AWS solutions are designed and implemented in a way that is
+fit for purpose and also closely aligned with key business outcomes. Keiran
 is responsible for working with some of the largest enterprise clients within
 the EMEA region and brings almost 20 years of hosting and infrastructure experience.
-Throughout this extensive past, Keiran built out a strong understanding of
+Throughout this extensive past, Keiran built a strong understanding of
 best-of-breed cloud practices, thought leadership, and in-depth domain knowledge
 across various technology platforms. Find out more at LinkedIn:
 [https://www.linkedin.com/in/keiran-holloway](https://www.linkedin.com/in/keiran-holloway)."
@@ -19,20 +19,20 @@ published: true
 authorIsRacker: true
 categories:
     - DevOps
-metaTitle: "Do you have an operation readiness checklist?"
+metaTitle: "Do you have an operational readiness checklist?"
 metaDescription: "This post outlines the operational readiness checks for the
 go-live phase after you build the solution."
-ogTitle: "Do you have an operation readiness checklist?"
+ogTitle: "Do you have an operational readiness checklist?"
 ogDescription: "This post outlines the operational readiness checks for the
 go-live phase after you build the solution."
 ---
 
-As we mentioned in
+As mentioned in
 [a previous post](https://www.rackspace.com/blog/focusing-just-cost-optimization-youve-already-wasted-money),
 you should consider operational readiness when you prepare to move business-critical
 applications and production workloads to the public cloud. You should run
-operational readiness checks with your Operations Team in both the solution
-design phase and go-live phase.
+operational readiness checks with your Operations team in both the solution
+design phase and the go-live phase.
 
 <!-- more -->
 
@@ -43,12 +43,12 @@ production-level traffic.
 
 ### Operational readiness checklist: go-live phase
 
-Your operational readiness checklist consists of the following elements:
+Your operational readiness checklist consists of the following elements.
 
 #### Best practice reviews
 
 Various cloud providers have services that review cloud workloads and provide
-recommendations on best practices. Amazon&reg; Web Services (AWS) and Microsoft&reg;
+recommendations on best practices. Amazon Web Services&reg; (AWS) and Microsoft&reg;
 Azure&reg; both have a trusted advisor while Google&reg; has its security command
 center. We recommend that you review these recommendations in detail before you
 go live to ensure that you are following the cloud vendors' best practices.
@@ -56,7 +56,7 @@ go live to ensure that you are following the cloud vendors' best practices.
 While considering your environment, you can also review resources such as
 architecture frameworks and associated whitepapers to ensure that you follow
 deployment best-practices. There are also third-party cloud management platforms
-that can provide enhanced checks. For example, at Rackspace, we use CloudHealth
+that can provide enhanced checks. For example, at Rackspace, we use CloudHealth&reg;
 by VMware&reg;. Reviewing all the advice and selecting cloud management platforms
 is time-consuming but certainly worthwhile when looking at highly critical
 business systems.
@@ -64,7 +64,7 @@ business systems.
 #### Infrastructure deployment practices
 
 We recommend that you deploy all infrastructure by using Infrastructure as Code
-(IaC).  Ahead of going live, ensure that you synchronize the code-base for IaC
+(IaC). Ahead of going live, ensure that you synchronize the code base for IaC
 and the cloud environment.
 
 You should define and test your continuous integration and continuous deployment
@@ -75,13 +75,13 @@ which almost certainly introduces service impacting events.
 #### Create operational runbooks
 
 You should create an operational runbook and confirm that it's valid.  The
-runbook considers traditional IT Service Management factors such as:
+runbook considers traditional IT Service Management (ITSM) factors such as:
 
-- Event Management
-- Incident Management
-- Problem Management
-- Change Management
-- Configuration Management (and appropriate use of a CMDB)
+- Event management
+- Incident management
+- Problem management
+- Change management
+- Configuration management (and appropriate use of a CMDB)
 - Escalation procedures
 
 #### Resource tagging
@@ -103,12 +103,12 @@ Ensure that you identify and document all internal and external stakeholders'
 names for a workload with relevant contact details. Stakeholders might include
 the following individuals:
 
-- application owner
-- front-end web and backend developers
-- escalation contacts
-- operational teams
-- individuals responsible for architecture and infrastructure deployment within
-  the solution.
+- Application owner
+- Front-end web and back-end developers
+- Escalation contacts
+- Operational teams
+- Individuals responsible for architecture and infrastructure deployment within
+  the solution
 
 #### Service monitoring
 
@@ -120,7 +120,7 @@ to use the playbooks help to define them and understand them.
 
 You should back up or configure replication for all business-critical data. Make
 sure you test these processes and confirm that they are consistent with the
-solution RPO and RTO goals.
+solution recovery point objective (RPO) and recovery time objective (RTO) goals.
 
 #### Logging
 
@@ -138,8 +138,7 @@ infrastructure.
 #### Disaster recovery
 
 If you defined disaster recovery and business continuity plans during the solution
-design phase, test and validate them. Consider the recovery point and time
-objectives.
+design phase, test and validate them. Consider the RPO and RTO.
 
 #### Cost approval
 
@@ -149,14 +148,14 @@ remain commercially viable.
 
 ### Use the checklist
 
-Review this checklist with your Operations Team to ensure that everything that
+Review this checklist with your Operations team to ensure that everything that
 you decided during the earlier solution architecture phase was correct and that
 the cloud environment is production-ready. This review is primarily about reducing
-risk and making sure you cover the most common areas which need more consideration
+risk and making sure you cover the most common areas that need more consideration
 during the go-live phase.
 
 It's worth noting this is a non-exhaustive list, and additional considerations
-will depend on your organization. If you need any support with getting cloud-ready,
+depend on your organization. If you need any support with getting cloud-ready,
 Rackspace is here to help.
 
 Visit [www.rackspace.com](https://www.rackspace.com) and click **Sales Chat**
