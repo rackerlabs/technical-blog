@@ -1,148 +1,163 @@
 ---
 layout: post
-title: "Flight to the cloud"
-date: 2020-06-02 00:01
+title: "Do you have an operation readiness checklist?"
+date: 2020-06-04 00:01
 comments: true
-author: Raj Arora
+author: Keiran Holloway
+authorAvatar: 'https://s.gravatar.com/avatar/02d9e9c7b2e66ab7f451198e22374be1'
+bio: "Keiran Holloway is a Senior Lead Infrastructure Engineer focusing on Amazon
+Web Services and has been with Rackspace for 6 years. His primary focus is
+ensuring that all AWS solutions are designed and implemented in a way which are
+both fit for purpose but also closely aligned with key business outcomes. Keiran
+is responsible for working with some of the largest enterprise clients within
+the EMEA region and brings almost 20 years of hosting and infrastructure experience.
+Throughout this extensive past, Keiran built out a strong understanding of
+best-of-breed cloud practices, thought leadership, and in-depth domain knowledge
+across various technology platforms. Find out more at LinkedIn:
+[https://www.linkedin.com/in/keiran-holloway](https://www.linkedin.com/in/keiran-holloway)."
 published: true
 authorIsRacker: true
 categories:
-    - General
-metaTitle: "Flight to the cloud"
-metaDescription: "Today, with the help of digitalization and modern technologies,
-the world is going through a kind of transformation that humankind has never seen
-before. We are already talking about creating colonies on Mars and other parts
-of the solar system."
-ogTitle: "Flight to the cloud"
-ogDescription: "Today, with the help of digitalization and modern technologies,
-the world is going through a kind of transformation that humankind has never seen
-before. We are already talking about creating colonies on Mars and other parts
-of the solar system."
+    - DevOps
+metaTitle: "Do you have an operation readiness checklist?"
+metaDescription: "This post outlines the operational readiness checks for the
+go-live phase after you build the solution."
+ogTitle: "Do you have an operation readiness checklist?"
+ogDescription: "This post outlines the operational readiness checks for the
+go-live phase after you build the solution."
 ---
 
-Today, with the help of digitalization and modern technologies, the world is
-going through a kind of transformation that humankind has never seen before. We
-are already talking about creating colonies on Mars and other parts of the solar
-system.
+As we mentioned in
+[a previous post](https://www.rackspace.com/blog/focusing-just-cost-optimization-youve-already-wasted-money),
+you should consider operational readiness when you prepare to move business-critical
+applications and production workloads to the public cloud. You should run
+operational readiness checks with your Operations Team in both the solution
+design phase and go-live phase.
 
 <!-- more -->
 
-### AI and ML: The new electricity
+This post outlines the operational readiness checks for the go-live phase after
+you build the solution. These checks ensure that you manage all key risk areas
+and confirm the services are in the best possible state before it goes live with
+production-level traffic.
 
-Here on Earth, we're building a whole new form of life by using genetic
-engineering. Robots are getting smarter and smarter and holding press conferences.
-The field of artificial intelligence (AI) and neuroscience is exploding and
-introducing new wonders every day. Machine learning (ML), deep learning, and
-robotics are changing how we humans think of our intelligence, emotional
-attachments, and our relationship with machines. The growth of technological
-advancement seems unstoppable and unbreakable.
+### Operational readiness checklist: go-live phase
 
-The field of predictive analysis and data science is taking over superstitions
-and predicting the future with surprising accuracy. Even our movies, web series,
-and TV sitcoms are commenting on these topics.
+Your operational readiness checklist consists of the following elements:
 
-You might say AI is the new electricity, but consider the implications. As the
-creation of electricity depended on coal and oil at the beginning of the 20th
-century, current AI and ML developments depend on data. The cloud plays a
-significant role in the future of AI and ML because so much data lives in the
-cloud.
+#### Best practice reviews
 
-### The dawn of the computer age
+Various cloud providers have services that review cloud workloads and provide
+recommendations on best practices. Amazon&reg; Web Services (AWS) and Microsoft&reg;
+Azure&reg; both have a trusted advisor while Google&reg; has its security command
+center. We recommend that you review these recommendations in detail before you
+go live to ensure that you are following the cloud vendors' best practices.
 
-It all started with the invention of the computer, and since then, the IT
-infrastructure has increased drastically. We've moved from big, room-sized
-computers to handy laptops and upgraded data storage from giant 45 MB storage
-boxes to small flash drives. However, the amount of data and the computing
-resources required to process it has resulted in large data centers and IT
+While considering your environment, you can also review resources such as
+architecture frameworks and associated whitepapers to ensure that you follow
+deployment best-practices. There are also third-party cloud management platforms
+that can provide enhanced checks. For example, at Rackspace, we use CloudHealth
+by VMware&reg;. Reviewing all the advice and selecting cloud management platforms
+is time-consuming but certainly worthwhile when looking at highly critical
+business systems.
+
+#### Infrastructure deployment practices
+
+We recommend that you deploy all infrastructure by using Infrastructure as Code
+(IaC).  Ahead of going live, ensure that you synchronize the code-base for IaC
+and the cloud environment.
+
+You should define and test your continuous integration and continuous deployment
+(CI/CD) pipelines to make sure they work as designed. This step ensures that the
+environments remain in a consistent state because deviations can cause entropy,
+which almost certainly introduces service impacting events.
+
+#### Create operational runbooks
+
+You should create an operational runbook and confirm that it's valid.  The
+runbook considers traditional IT Service Management factors such as:
+
+- Event Management
+- Incident Management
+- Problem Management
+- Change Management
+- Configuration Management (and appropriate use of a CMDB)
+- Escalation procedures
+
+#### Resource tagging
+
+Ensure that all your resources meet your companies tagging strategy. This
+practice helps you to manage these environments in the future.
+
+#### Resource allocations and autoscaling policies
+
+ When you transition a service into production, ensure that all the resources
+ you allocated meet the demands of operating under a real-world traffic load.
+ This check includes sizing instances and allocating resources for Platform as
+ a Service (PaaS) technologies. Doing performance testing or stress testing buys
+ you even more confidence as your traffic ramps up.
+
+#### Define key stakeholders
+
+Ensure that you identify and document all internal and external stakeholders'
+names for a workload with relevant contact details. Stakeholders might include
+the following individuals:
+
+- application owner
+- front-end web and backend developers
+- escalation contacts
+- operational teams
+- individuals responsible for architecture and infrastructure deployment within
+  the solution.
+
+#### Service monitoring
+
+You should configure, enable, and test end-to-end service monitoring to ensure
+that monitoring notifications work as expected. Ensure that the teams who need
+to use the playbooks help to define them and understand them.
+
+#### Backups
+
+You should back up or configure replication for all business-critical data. Make
+sure you test these processes and confirm that they are consistent with the
+solution RPO and RTO goals.
+
+#### Logging
+
+Configure and enable an appropriate level of logging for all services. Validate
+that you enabled a suitable level of verbosity and that you capture adequate
+data. Also, consider the log retention periods.
+
+#### Patching
+
+Document your approach to all solutions so you can apply system updates per the
+organization's vulnerability assessment program. Don't forget to consider
+potential penetration testing or other security and vulnerability scans of the
 infrastructure.
 
-This post starts by describing the traditional data center components and then
-expands to the advantages of the cloud.
+#### Disaster recovery
 
-#### The history of traditional storage
+If you defined disaster recovery and business continuity plans during the solution
+design phase, test and validate them. Consider the recovery point and time
+objectives.
 
-Let's start with the traditional approach to handling and storing data. In the
-past, corporations spent millions on real estate assets and billions on the IT
-infrastructure inside them. Traditional storage includes the following
-components:
+#### Cost approval
 
-- **The Selectron tube**: Originally developed in 1946 with a capacity of 256
-  to 4096 bits (32 to 512 bytes), the 4096-bit Selectron was ten inches long and
-  three inches wide.
+Now that you have built the solution and it's ready to go live, validate that
+the costs are consistent with the forecasted costs to ensure that these services
+remain commercially viable.
 
-- **Punch cards**: Until the mid-1970s,  computers used punch cards. Fun fact:
-  the use of punch cards predates computers. The textile industry used them to
-  control mechanized textile looms as early as 1725.
+### Use the checklist
 
-- **Magnetic drum memory**: Invented in 1932 and popular in mid-20th century
-  computers, magnetic drum memory came with over 10 KB capacity.
+Review this checklist with your Operations Team to ensure that everything that
+you decided during the earlier solution architecture phase was correct and that
+the cloud environment is production-ready. This review is primarily about reducing
+risk and making sure you cover the most common areas which need more consideration
+during the go-live phase.
 
-- **Floppy disks**: IBM introduced flexible disks in the late 20th century, and
-  their capacity grew over the years from 80 KB to 2.5 MB.
-
-- **Magnetic tape**:  Introduced in 1951, magnetic tapes were heavy, made of
-  metal, and 1200 feet long.
-
-- **Hard disk drive (HDD)**:  The brownie points for the first hard disk drive
-  goes to IBM. In 1956, IBM launched the first supercomputer with a hard disk
-  drive. It was the size of a refrigerator and weighed about 1000KGs. Hard drives
-  have evolved, and we now have 6 to 8 TB HDDs with a compact design (3.5 inches
-  long and weighing 500 grams).
-
-- **Solid-state drives (SSD)**: These transistor-based memory devices are the
-  storage devices of the 21st  century. They come with an average capacity of
-  8 to 10 TB and have excellent read and write speeds. Companies like Hitachi&reg;,
-  Western Digital&reg;, and SanDisk&reg; are making dramatic improvements in flash drives.
-
-### What's next?
-
-We are moving forward with innovations in the field of storage every day, but
-what's next?
-
-The cloud offers a whole new set of opportunities, a new platform for dreamers
-to dream big, a revolution, and an event that happens once in centuries. The
-idea of the cloud, introduced in 2003 and again in 2006, opened a billion paths in the
-world of modernization, digitalization, and globalization. Many of the smart
-devices we see around us aren't possible without the cloud, and AI is fuelling
-the growth. In 2006, Amazon launched the first cloud with two major services,
-S3 and EC2. The services, with a billion updates, are still part of the AWS and
-are the biggest revenue generators for Amazon Web Services&reg; (AWS). Since then,
-multiple companies have invested in the cloud. Today, everyone wants to move to the
-cloud, from new startups to multibillion-dollar companies.
-
-The value of businesses thriving in the cloud is growing from $200 billion to a
-projected level of $1,250 billion by 2025. Services, such as AWS Lambda&reg; and
-Google&reg; Cloud Function, take care of the tedious jobs of provisioning,
-scaling, high availability, and disaster recovery (DR). Customers just need to put
-innovation and creativity into the applications and services they host.
-
-### Benefits
-
-The cloud has the following benefits:
-
--**Flexibility**: Undoubtedly, the cloud is flexible with options like on-demand
-and pay-as-you-go. For example, before the advent of the cloud, expansion to a
-different continent was a huge expense because of IT needs. Today, it is just a
-click away. We can change the region and start working in another region instantly.
-
--**Availability**:  Cloud providers are available in multiple locations worldwide,
-but some businesses don't have the budget for a cross-continent DR solution. With
-the help of the cloud, even a small-scale organization can plan for global DR
-solutions.
-
--**Consistency**:  The cloud consistently offers reliability and readily
-available data. Overall, the cloud is more consistent than traditional data
-centers.
-
-### Conclusion
-
-At the beginning of the 19th century, electricity came to the world and entirely
-changed how we think and operate. Today, electricity is everywhere and almost as
-necessary as water and air. AI and ML, the new electricity, are nearly as prevalent.
-You can hardly use AI to handle big data sets and process data to make quick
-decisions without the infrastructure provided by the cloud. The flight to the
-cloud is well underway.  Who knows where we'll end up? Next stop, the southern
-hemisphere of Mars cloud region.
+It's worth noting this is a non-exhaustive list, and additional considerations
+will depend on your organization. If you need any support with getting cloud-ready,
+Rackspace is here to help.
 
 Visit [www.rackspace.com](https://www.rackspace.com) and click **Sales Chat**
 to get started.
