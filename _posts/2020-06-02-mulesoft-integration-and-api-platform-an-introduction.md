@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "MuleSoft iPaaS&mdash;a primer"
+title: "MuleSoft integration and API platform&mdash;an introduction"
 date: 2020-06-03 00:01
 comments: true
 author: Bhaskar Bose
@@ -12,11 +12,11 @@ published: true
 authorIsRacker: true
 categories:
     - General
-metaTitle: "MuleSoft iPaaS&mdash;a primer"
+metaTitle: "MuleSoft integration and API platform&mdash;an introduction"
 metaDescription: "Application integration is usually a daunting task, largely
 due to the nature of different data structures, legacy applications, and a team's
 overall IT capabilities."
-ogTitle: "MuleSoft iPaaS&mdash;a primer"
+ogTitle: "MuleSoft integration and API platform&mdash;an introduction"
 ogDescription: "Application integration is usually a daunting task, largely due
 to the nature of different data structures, legacy applications, and a team's
 overall IT capabilities."
@@ -37,7 +37,7 @@ for application integrations by using an enterprise service bus (ESB) instead of
 usual point-to-point application integrations, where every application connects
 to each other. The following image illustrates the ESB:
 
-![]({% asset_path 2020-06-02-mulesoft-ipaas-a-primer/Picture1.png %})
+![]({% asset_path 2020-06-02-mulesoft-integration-and-api-platform-an-introduction/Picture1.png %})
 
 MuleSoft supports different architectures in its integration capabilities,
 including the following architectures:
