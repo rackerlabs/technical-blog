@@ -104,7 +104,8 @@ exploring new technology."
 
 Colbert, Charlotte
 authorAvatar: ''
-bio: n/a
+bio: "I am a 13+year Racker and am currently a Product Manager V for the RAS
+Digital experience portfolio."
 
 Cortez, Teresa
 authorAvatar: 'https://secure.gravatar.com/avatar/889f88c8dacf485d4c00f7c6fcfd51f8'
