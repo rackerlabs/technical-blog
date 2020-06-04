@@ -41,9 +41,13 @@ you build the solution. These checks ensure that you manage all key risk areas
 and confirm the services are in the best possible state before it goes live with
 production-level traffic.
 
-### Operational readiness checklist: go-live phase
+For your operational readiness checklists, consider the following categories:
 
-Your operational readiness checklist consists of the following elements.
+- IT service management
+- On-going account governance model
+- On-going operations
+
+### IT service management
 
 #### Best practice reviews
 
@@ -72,7 +76,7 @@ You should define and test your continuous integration and continuous deployment
 environments remain in a consistent state because deviations can cause entropy,
 which almost certainly introduces service impacting events.
 
-#### Create operational runbooks
+#### Operational runbooks
 
 You should create an operational runbook and confirm that it's valid.  The
 runbook considers traditional IT Service Management (ITSM) factors such as:
@@ -83,6 +87,8 @@ runbook considers traditional IT Service Management (ITSM) factors such as:
 - Change management
 - Configuration management (and appropriate use of a CMDB)
 - Escalation procedures
+
+### On-going account governance model
 
 #### Resource tagging
 
@@ -110,11 +116,13 @@ the following individuals:
 - Individuals responsible for architecture and infrastructure deployment within
   the solution
 
-#### Service monitoring
+#### Cost approval
 
-You should configure, enable, and test end-to-end service monitoring to ensure
-that monitoring notifications work as expected. Ensure that the teams who need
-to use the playbooks help to define them and understand them.
+Now that you have built the solution and it's ready to go live, validate that
+the costs are consistent with the forecasted costs to ensure that these services
+remain commercially viable.
+
+### On-going operations
 
 #### Backups
 
@@ -135,20 +143,20 @@ organization's vulnerability assessment program. Don't forget to consider
 potential penetration testing or other security and vulnerability scans of the
 infrastructure.
 
+#### Service monitoring
+
+You should configure, enable, and test end-to-end service monitoring to ensure
+that monitoring notifications work as expected. Ensure that the teams who need
+to use the playbooks help to define them and understand them.
+
 #### Disaster recovery
 
 If you defined disaster recovery and business continuity plans during the solution
 design phase, test and validate them. Consider the RPO and RTO.
 
-#### Cost approval
+### Use the checklists
 
-Now that you have built the solution and it's ready to go live, validate that
-the costs are consistent with the forecasted costs to ensure that these services
-remain commercially viable.
-
-### Use the checklist
-
-Review this checklist with your Operations team to ensure that everything that
+Review these checklists with your Operations team to ensure that everything that
 you decided during the earlier solution architecture phase was correct and that
 the cloud environment is production-ready. This review is primarily about reducing
 risk and making sure you cover the most common areas that need more consideration
