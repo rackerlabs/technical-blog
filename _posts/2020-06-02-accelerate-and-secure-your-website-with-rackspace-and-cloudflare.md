@@ -41,11 +41,11 @@ reach of your site, bringing it and your Internet properties closer to your site
 visitors and therefore making access faster.
 
 Because it processes over 10% of all Internet traffic, Cloudflare can build
-real-world intelligence based on the performance of Internet communications.
-Rackspace engineers are trained on the features and configuration of Cloudflare
-to manage its powerful capabilities alongside your Rackspace-hosted website.
-Our expertise makes it easy for customers to have an Internet presence that is
-secure, performant, and reliable.
+real-world intelligence  on the communications occurring over the Internet and
+how well they perform. Rackspace engineers are trained on the features and
+configuration of Cloudflare to manage its powerful capabilities alongside your
+Rackspace-hosted website. Our expertise makes it easy for customers to have an
+Internet presence that is secure, performant, and reliable.
 
 ### Security
 
@@ -78,7 +78,7 @@ Rackspace has expertise and certification in industry-leading load balancing
 technologies and can ensure configurations support highly reliable service
 from your site.
 
-<a class="cta purple" id="cta" href="https://www.rackspace.com/en-gb/security/tools/ddos-mitigation">Learn more about our DDoS detection and mitigation services.</a>
+<a class="cta purple" id="cta" href="https://www.rackspace.com/en-gb/security/tools">Learn more about our Managed Security tools.</a>
 
 Use the Feedback tab to make any comments or ask questions. You can also
 [chat now](https://www.rackspace.com/#chat) to start the conversation.
