@@ -73,12 +73,12 @@ values through Expertise and Agility to connect a myriad of independent events
 that result in a Fanatical Experience.
 
 Cisco support set devices **5505|5510|5520** as end-of-life. In late 2018, PEG
-worked with the Service Delivery teams to notify customers that they had a year
+worked with the Customer Success teams to notify customers that they had a year
 to complete the device migration. During this timeframe, PEG also began working
 with Network Security and many other teams to architect the migrations to a new
 supported device.
 
-We organized the complex independent work from Service Delivery teams, Finance,
+We organized the complex independent work from Customer Success teams, Finance,
 Billing, Network Security, Data Center Operations, and other units to complete
 standard maintenance tasks. We built this concise workflow of *ticket* and
 *device* lifecycle around our customers&mdash;you and the Rackers who support you.
@@ -140,7 +140,7 @@ Design, RBA and  PEG, worked toward delivering a world-class model for fleet
 management. Rackspace architected and implemented the solution.
 
 In May 2018, the Cisco ASA Web VPN vulnerability impacted over 15 thousand
-customers.  Rackspace responded rapidly. We sent out communications instructing
+devices. Rackspace responded rapidly. We sent out communications instructing
 customers on how to remediate the vulnerability at their convenience. The
 scheduling process staged the new code, preparing it for a refresh at the
 scheduled reboot time.
