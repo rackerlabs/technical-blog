@@ -6,6 +6,7 @@ comments: true
 author: Marcus Mora
 published: true
 authorIsRacker: true
+authorAvatar: 'https://s.gravatar.com/avatar/fda78cf603258190627b41b20b3f3d61'
 bio: "Marcus Mora is a seven-year Racker and original member of the Process
 Engineering Group (PEG). Marcus was hired as a Junior Process Engineer, rose to
 Senior Engineer, and now manages PEG at Rackspace. Marcus started in consultative
@@ -18,9 +19,15 @@ categories:
     - General
     - Automation
 metaTitle: "Crashing through silos with the Rackspace Process Engineering Group"
-metaDescription: "."
+metaDescription: "A grassroots foundation that needs to be agile,
+competitive, and innovative, might enter markets without fully integrating
+organizations into core Rackspace tooling. Enter the Process Engineering Group
+(PEG)."
 ogTitle: "Crashing through silos with the Rackspace Process Engineering Group"
-ogDescription: "."
+ogDescription: "A grassroots foundation that needs to be agile,
+competitive, and innovative, might enter markets without fully integrating
+organizations into core Rackspace tooling. Enter the Process Engineering Group
+(PEG)."
 ---
 
 <img class="blog-post right" src="{% asset_path 2020-06-05-crashing-through-silos-with-the-rackspace-process-engineering-group/Picture1.png %}"/>Let's face it;
