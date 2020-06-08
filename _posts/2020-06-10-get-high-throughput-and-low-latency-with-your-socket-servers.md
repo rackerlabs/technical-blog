@@ -10,29 +10,31 @@ categories:
     - DevOps
     - CloudServers
 metaTitle: "Get high throughput and low latency with your socket servers"
-metaDescription: "In this blog post, I explore the impact of NUMA controls in
-the Linux&reg; operating systems to determine the impact of latency and overall
-throughput."
+metaDescription: "In this blog post, I explore the impact of non-uniform memory
+access (NUMA) controls in Linux&reg; operating systems to determine the impact
+of latency and overall throughput."
 ogTitle: "Get high throughput and low latency with your socket servers"
-ogDescription: "In this blog post, I explore the impact of NUMA controls in the
-Linux&reg; operating systems to determine the impact of latency and overall
-throughput."
+ogDescription: "In this blog post, I explore the impact of non-uniform memory
+access (NUMA) controls in Linux&reg; operating systems to determine the impact
+of latency and overall throughput."
 ---
 
-The need for access to high-speed, low latency storage systems has become
+The need for access to high-speed, low-latency storage systems has become
 commonplace in today's server industry. Remember, only a few years ago, people
-considered SATA and SAS solid-state drives (SSDs) too expensive for everyday
-storage use.
+considered Serial Advanced Technology Attachment (SATA) and Serial Attached
+Small Computer System Interface (SAS) solid-state drives (SSDs) too expensive
+for everyday storage use.
 
 <!-- more -->
 
-Today, storage systems commonly consist of nothing but NAND-based products. I
+Today, storage systems commonly consist of nothing but NOT AND (NAND)-based products. I
 remember back in 2015 reading about multimillion-dollar storage systems that
 could provide a few million Input/Output Operations Per Second (IOPS). Here we
 are in 2020, and I can exceed those numbers with a single system and for a few
 thousand dollars. Simply amazing.
 
-PCI-based storage has had a mixed past with Fusion-IO, providing proprietary
+Peripheral Component Interconnect (PCI)-based storage has had a mixed past with
+Fusion-IO&reg;, providing proprietary
 systems and drivers for high-speed performance. Luckily our industry overcame
 those vendor-centric models and delivered on a standard interface for PCI storage.
 Non-Volatile Memory Express (NVMe) is the common name for providing NAND storage
@@ -44,27 +46,28 @@ half-height half-length (HHHL) card. This format made it difficult to scale
 systems to leverage a lot of NVMe storage.
 
 Realistically, it was not feasible to install more than two or three NVMe devices
-per CPU. Now that U.2 (2.5 inch 15mm) form factors are readily available,
-scaling NVMe devices is as easy as scaling SAS or SATA devices.
+per central processing unit (CPU). Now that U.2 (2.5 inch 15mm) form factors are
+readily available, scaling NVMe devices is as easy as scaling SAS or SATA devices.
 
-Because today you can easily scale your Rackspace server to allow up to 12 NVMe
+Because today you can easily scale your Rackspace&reg; server to allow up to 12 NVMe
 devices, you have a new set of problems to think about. First, although these
 devices are much less expensive than they used to be, they are still relatively
 costly. How do you ensure that you are getting the most out of your investment?
 Second, because these devices connect directly to the processor PCI bus, how do
 you ensure that performance and latency are predictable and consistent?
 
-In this blog post, We explore the impact of NUMA controls in the Linux&reg;
+In this blog post, we explore the impact of NUMA controls in Linux&reg;
 operating systems to determine the impact of latency and overall throughput.
 
 We ran two simple experiments, one with NUMA control and one without NUMA control.
-Then, I explore the comparative results for Latency, Bandwidth, IOPs, and deviation
+Then, we explore the comparative results for latency, bandwidth, IOPs, and deviation
 of results between runs.
 
 ### The experiment
 
-To better describe the experiment, let me provide you an example. With NVMe,
-storage attaches directly to a PCIe controller. That PCI controller actually
+To better describe the experiment, let me provide an example. With NVMe,
+storage attaches directly to a Peripheral Component Interconnect Express (PCIe)
+controller. That controller actually
 embeds into the CPU package. If your server has one CPU, then all PCIe access is
 local. This configuration means the process that accesses the storage runs on
 the CPU where the storage is located. If your server has more than one CPU, then
@@ -74,8 +77,8 @@ call this *non-local access*.
 
 For non-local access to function, the CPU running the process must reach across
 the QuickPath Interconnect (QPI) links to access the other processor's PCI
-controller. Every time this happens, this should create some measure latency.
-This experiment determines the impact of local and no-local access, as shown in
+controller. Every time this happens, this should create some measure of latency.
+This experiment determines the impact of local and non-local access, as shown in
 the following images:
 
 ![]({% asset_path 2020-06-10-get-high-throughput-and-low-latency-with-your-socket-servers/Picture1.png %})
@@ -92,7 +95,7 @@ both uncontrolled and controlled storage access.
 ### The setup
 
 We first ran an experiment to determine how many threads were required to push
-each SSD drive to its advertised performance limit.  In our testing, we found
+each SSD drive to its advertised performance limit. In our testing, we found
 that it took four threads of FIO with 64 outstanding operations to keep the
 drives completely busy and running at their advertised read limits. We then
 needed to understand the system's architecture. It is not always obvious what
@@ -120,7 +123,7 @@ Our experiment has the following two test scenarios:
 #### Scenario 1: No NUMA vontrol
 
 Run the following command ten times. It performs random read access on all
-drives at once and does not implement any NUMA control.  It reads for a total of
+drives at once and does not implement any NUMA control. It reads for a total of
 100 seconds and uses a 30 second ramp time.
 
     fio --direct=1 --ioengine=libaio --runtime=100 --group_reporting
@@ -164,12 +167,12 @@ like threads, outstanding I/O, and run/ramp time remain the same.
 
 ### The results
 
-Here are the results of our experiment:
+Here are the results of our experiment.
 
 #### Total IOPS
 
 Everyone uses the IOPS metric to determine total system throughput. Over the ten
-runs, we consistently saw more than 6.3 Million IOPs of 4000 random I/O operations
+runs, we consistently saw more than 6.3 million IOPs of 4000 random I/O operations
 with NUMA controls in place. With NUMA controls not leveraged, the system
 inconsistently ranged from a high of 6.2 million to a low of 6.071 million IOPS.
 Although a single system doing over six million IOPs is insanely fast, no one
@@ -183,7 +186,7 @@ Outside of just monitoring for total throughput, we also measured the average
 latency of I/O operations during the ten test runs.
 
 The NUMA controlled benchmark showed very flat, predictable latencies that were
-overall lower than the non-NUMA controlled benchmark.
+lower overall than the non-NUMA controlled benchmark.
 
 ![]({% asset_path 2020-06-10-get-high-throughput-and-low-latency-with-your-socket-servers/Picture5.png %})
 
