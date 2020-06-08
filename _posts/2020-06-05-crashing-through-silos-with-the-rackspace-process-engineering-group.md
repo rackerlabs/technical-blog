@@ -10,7 +10,7 @@ authorAvatar: 'https://s.gravatar.com/avatar/fda78cf603258190627b41b20b3f3d61'
 bio: "Marcus Mora is a seven-year Racker and original member of the Process
 Engineering Group (PEG). Marcus was hired as a Junior Process Engineer, rose to
 Senior Engineer, and now manages PEG at Rackspace. Marcus started in consultative
-sales, and he uses those skillsets in combination with his process engineering
+sales, and he uses those skill sets in combination with his process engineering
 experience to assist the team. Marcus's strengths include responsibility,
 achiever, and relator, which all contribute to his strong desire to grow the
 Rackspace family and strengthen its service and usefulness to internal and
@@ -20,18 +20,18 @@ categories:
     - Automation
 metaTitle: "Crashing through silos with the Rackspace Process Engineering Group"
 metaDescription: "A grassroots foundation that needs to be agile,
-competitive, and innovative, might enter markets without fully integrating
+competitive, and innovative might enter markets without fully integrating
 organizations into core Rackspace tooling. Enter the Process Engineering Group
 (PEG)."
 ogTitle: "Crashing through silos with the Rackspace Process Engineering Group"
 ogDescription: "A grassroots foundation that needs to be agile,
-competitive, and innovative, might enter markets without fully integrating
+competitive, and innovative might enter markets without fully integrating
 organizations into core Rackspace tooling. Enter the Process Engineering Group
 (PEG)."
 ---
 
-<img class="blog-post right" src="{% asset_path 2020-06-05-crashing-through-silos-with-the-rackspace-process-engineering-group/Picture1.png %}"/>Let's face it;
-every business unintentionally develops silos or divisions within business units,
+<img class="blog-post right" src="{% asset_path 2020-06-05-crashing-through-silos-with-the-rackspace-process-engineering-group/Picture1.png %}"/>Let's face it.
+Every business unintentionally develops silos or divisions within business units,
 and Rackspace is no different. A grassroots foundation that needs to be agile,
 competitive, and innovative, might enter markets without fully integrating
 organizations into core Rackspace tooling. Enter the Process Engineering Group
@@ -47,7 +47,7 @@ a proprietary and patented toolset called Rackspace Business Automation (RBA).
 This toolset allows for the orchestration of events through native integrations
 with our source-of-truth systems. RBA allows for application program interface
 (API) integration, so any system with APIs can access RBA with proper
-authentication and contracts.&mdash;crashing through silos!
+authentication and contracts&mdash;crashing through silos!
 
 ### The impact of PEG
 
@@ -63,30 +63,30 @@ PEG formed four strategic alliances with Rackspace to support our customers:
 Through these alliances, PEG remains agile, accounting for lifecycle events.
 
 What is a lifecycle event? Glad you asked.  Automation is only as good as its
-result, and if the result equals a Fanatical Experience&reg;, it's a lifecycle
+result, and if the result equals a Fanatical Experience&trade;, it's a lifecycle
 event.
 
-### Use Case
+### Use case
 
-The following current use case demonstrates how PEG encompasses Rackspace's CORE
-values through Expertise and Agility to connect a myriad of independent events
+The following current use case demonstrates how PEG encompasses the Rackspace core
+values through expertise and agility to connect a myriad of independent events
 that result in a Fanatical Experience.
 
 Cisco support set devices **5505|5510|5520** as end-of-life. In late 2018, PEG
 worked with the Customer Success teams to notify customers that they had a year
 to complete the device migration. During this timeframe, PEG also began working
-with Network Security and many other teams to architect the migrations to a new
+with the Network Security team and many other teams to architect the migrations to a new
 supported device.
 
-We organized the complex independent work from Customer Success teams, Finance,
-Billing, Network Security, Data Center Operations, and other units to complete
+We organized the complex independent work from Customer Success, Finance,
+Billing, Network Security, Data Center Operations, and other teams to complete
 standard maintenance tasks. We built this concise workflow of *ticket* and
 *device* lifecycle around our customers&mdash;you and the Rackers who support you.
 
 #### Ticket lifescycle
 
 Project leadership sent a call to action to PEG customers to give input, which
-helped to facilitate decision making and establish a schedule.  Through workflow,
+helped to facilitate decision making and establish a schedule.  Through the workflow,
 PEG provided specific information to empower its customers to make real-time
 decisions, agree to terms, and schedule the upgrades.
 
@@ -106,7 +106,7 @@ minimal downtime for our customers*.
 #### The intersection
 
 The intersection of these lifecycle events happened the morning of the scheduled
-maintenance and consisted of three people on a call&mdash;Network Security,
+maintenance and consisted of people from three teams on a call&mdash;Network Security,
 Data Center Operations, and PEG.
 
 The three stages of push-button automation:
@@ -116,15 +116,15 @@ The three stages of push-button automation:
 When we closed the maintenance window, the following results occurred:
 
 - The new firewall went live.
-- The legacy device got a clean slate and billing stopped
+- The legacy device got a clean slate and billing stopped.
 - The new device billing started.
 
-*A Fanatical Customer Experience for all.*
+*A fanatical customer experience for all.*
 
 ### Another scenario: Vulnerability
 
 Imagine a scenario where all your customers are vulnerable at the same
-time&mdash; mass vulnerability. How do you go through the painstaking effort
+time&mdash;mass vulnerability. How do you go through the painstaking effort
 of scheduling each customer for a maintenance window convenient for them to
 patch their devices with potential downtime? This effort requires all hands on
 deck.
@@ -136,7 +136,7 @@ customers.  Burn me once shame on you. Burn me twice ...
 Since 2017, Rackspace doubled down by adding efficiencies in fleet management,
 which included scoping solutions for vulnerabilities and patch management. Over
 the following years,  many teams, including Network Security, MyRack Portal
-Design, RBA and  PEG, worked toward delivering a world-class model for fleet
+Design, RBA, and  PEG worked toward delivering a world-class model for fleet
 management. Rackspace architected and implemented the solution.
 
 In May 2018, the Cisco ASA Web VPN vulnerability impacted over 15 thousand
