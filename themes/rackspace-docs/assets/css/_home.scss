@@ -1,0 +1,54 @@
+#hero {
+    background-image: url(/img/technical-blog-image.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 60px 60px 35px;
+    z-index: 1;
+    h1 {
+        background: 0 0;
+        padding: 0;
+        font-family: "titillium-light",arial,sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        background: rgba(255,255,255,.55);
+        display: inline-block;
+        font-size: 35px;
+        line-height: 1; 
+        text-transform: uppercase;
+        margin-bottom: 0;
+        padding: 40px .5em;
+        width: 100%;
+    }
+    .tagline {
+        display: block;
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+}
+
+#about {
+    .header-announcement{
+        background: #64005A;
+        .banner {
+            padding: 15px 0;
+            p {
+                font-family: "open-sans-regular",arial,sans-serif;
+                font-style: normal;
+                text-align: center;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 17px;
+                color: #FFF;
+                margin-bottom: 0;
+                strong {
+                    font-weight: 700;
+                }
+                a {
+                    color: #fff;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

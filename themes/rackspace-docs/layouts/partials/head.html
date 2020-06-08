@@ -1,0 +1,86 @@
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="canonical" href="{{ .Permalink }}">
+    <link rel="icon" type="image/png" href="{{ "img/favicon.ico" | relURL }}"/>
+    <title>
+        {{ block "title" . }}
+        {{ .Title}}{{ if ne .Title .Site.Title }} | {{ .Site.Title }}{{ end }}
+        {{ end }}
+    </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/fontawesome.min.css"
+    integrity="sha256-AaQqnjfGDRZd/lUp0Dvy7URGOyRsh8g9JdWUkyYxNfI=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/brands.min.css" 
+    integrity="sha256-u8123o+sLy8uk0Du9H0Ub+KinAoHanzGsBqDkWHY1f8=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/solid.min.css"
+    integrity="sha256-3FfMfpeajSEpxWZTFowWZPTv7k3GEu7w4rQv49EWsEY=" crossorigin="anonymous" />
+    <!-- Load stylesheet -->
+    <link href="{{ .Site.BaseURL }}css/fontawesome.min.css" rel="stylesheet">
+
+    {{ $style := resources.Get "css/main.scss" | toCSS | minify }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+
+    <!-- Only include the tracking when using `hugo` or adding `--environment production` -->
+    {{ if eq hugo.Environment "production" }}
+        {{ template "_internal/google_analytics_async.html" . }}
+    {{ end }}
+    <link rel="stylesheet" href="{{ "css/highlight.css" | relURL }}">
+    <script src="{{ "js/highlight.pack.js" | relURL }}" type="text/javascript"></script>
+    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+  
+    <!-- Magnific popup. To enlarge images -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+      integrity="sha256-PZLhE6wwMbg4AB3d35ZdBF9HD/dI/y4RazA3iRDurss=" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous" type="text/javascript"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"
+      integrity="sha256-P93G0oq6PBPWTP1IR8Mz/0jHHUpaWL0aBJTKauisG7Q=" crossorigin="anonymous" type="text/javascript"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+  
+        $('a.image-popup-fit-height').magnificPopup({	
+          type: 'image',	
+          closeOnContentClick: true,	
+          image: {	
+            verticalFit: true	
+          },	
+          zoom: {	
+            enabled: true,	
+            duration: 300,	
+            easing: 'ease-in-out',	
+          }	
+        });
+  
+        // Search input
+        const searchForm = $('body > header div.search-container form ');
+  
+        searchForm.children('.close-icon').click(function(event) {
+          event.preventDefault();
+          searchForm.trigger('reset');
+          searchForm.children('input').focus();
+        });
+      });
+    </script>
+  
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130444728-1" type="text/javascript"></script>
+    <script type="text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+  
+      gtag('config', 'UA-130444728-1');
+    </script>
+  
+    {{ block "head_extra" . }}
+    {{ end }}
+  
+    <!-- This script with a single space fixes a Chrome bug about transitions.
+      See https://stackoverflow.com/a/42969608 -->
+    <script type="text/javascript"> </script>
+
+</head>
+

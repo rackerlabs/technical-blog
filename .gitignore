@@ -22,3 +22,4 @@ rubygems/
 .asset-cache
 .jekyll-cache
 .bundle/
+node_modules

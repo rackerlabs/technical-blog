@@ -1,0 +1,21 @@
+---
+title: "Solve: Thought Leadership"
+date: 2020-02-10T11:20:21+02:00
+draft: false
+type: "documentation"
+weight: 7
+---
+
+:linkattrs:
+:sectlinks:
+
+= Extensions
+:sectnums:
+:toc: left
+toc::[]
+:toc-title: Solve: Thought Leadership
+:keywords: Solve: Thought Leadership
+:icons: font
+:imagesdir: /images/solve
+
+== Solve: Thought Leadership
