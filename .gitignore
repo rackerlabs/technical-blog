@@ -23,3 +23,7 @@ rubygems/
 .jekyll-cache
 .bundle/
 node_modules
+
+
+# resources
+resources/_gen

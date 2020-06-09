@@ -1,0 +1,17 @@
+{{ partial "head.html" . }}
+  <body>
+    <div id="blog">
+      {{ partial "masthead.html" . }}
+      {{ partial "posts/header-cover.html" . }}
+      <div id="main">
+        <section class="postShorten-group main-content-wrap">
+          {{/* Iterate only over pages of the same type as this section. */}}
+          {{ $paginator := .Paginate (where .Data.Pages "Type" .Type) }}
+          {{ range $paginator.Pages }}
+            {{ .Render "summary" }}
+          {{ end }}
+          {{ partial "pagination.html" . }}
+        </section>
+      </div>
+    </div>
+{{ partial "mastfoot.html" . }}

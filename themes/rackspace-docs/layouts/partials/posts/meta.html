@@ -1,0 +1,10 @@
+{{ if not (eq .Params.showMeta false) }}
+  <div class="postShorten-meta post-meta">
+    {{ if not (eq .Params.showDate false)  }}
+      <time itemprop="datePublished" datetime="{{ .Date.Format "January 2, 2006" }}">
+        {{ partial "internal/date.html" . }}
+      </time>
+    {{ end }}
+    {{ partial "posts/category.html" . }}
+  </div>
+{{ end }}
