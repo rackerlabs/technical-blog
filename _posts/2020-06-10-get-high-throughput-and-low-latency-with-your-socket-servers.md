@@ -3,7 +3,7 @@ layout: post
 title: "Get high throughput and low latency with your socket servers"
 date: 2020-06-10 00:01
 comments: true
-author: Tom Hallam
+author: Jason Mick
 published: true
 authorIsRacker: true
 categories:
