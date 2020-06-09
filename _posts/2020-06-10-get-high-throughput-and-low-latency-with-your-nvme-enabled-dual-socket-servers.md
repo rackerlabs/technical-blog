@@ -150,7 +150,7 @@ drives at once and does not implement any NUMA control. It reads for a total of
         --end_fsync=1 --rwmixread=100 --numjobs=4 --iodepth=64
         --filename=/dev/nvme11n1 >>fio_output.txt
 
-#### Scenario 2. Complete NUMA control.
+#### Scenario 2: Complete NUMA control.
 
 To make this work, we needed to inject the following additional commands options
 into the above script:
