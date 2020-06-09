@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Get high throughput and low latency with your socket servers"
+title: "Get high throughput and low latency with your NVMe-enabled dual socket servers"
 date: 2020-06-10 00:01
 comments: true
 author: Jason Mick
@@ -21,13 +21,11 @@ of latency and overall throughput."
 
 The need for access to high-speed, low-latency storage systems has become
 commonplace in today's server industry. Remember, only a few years ago, people
-considered Serial Advanced Technology Attachment (SATA) and Serial Attached
-Small Computer System Interface (SAS) solid-state drives (SSDs) too expensive
-for everyday storage use.
+considered SATA and SAS SSDs too expensive for everyday storage use.
 
 <!-- more -->
 
-Today, storage systems commonly consist of nothing but NOT AND (NAND)-based products. I
+Today, storage systems commonly consist of nothing but NAND-based products. I
 remember back in 2015 reading about multimillion-dollar storage systems that
 could provide a few million Input/Output Operations Per Second (IOPS). Here we
 are in 2020, and I can exceed those numbers with a single system and for a few
@@ -67,13 +65,12 @@ of results between runs.
 
 To better describe the experiment, let me provide an example. With NVMe,
 storage attaches directly to a Peripheral Component Interconnect Express (PCIe)
-controller. That controller actually
-embeds into the CPU package. If your server has one CPU, then all PCIe access is
-local. This configuration means the process that accesses the storage runs on
-the CPU where the storage is located. If your server has more than one CPU, then
-there is a possibility that the process accessing the storage is running on a
-CPU that does not have the PCI controller with your NVMe devices attached. Let's
-call this *non-local access*.
+controller. That PCIe controller is embedded into the CPU package. If your
+server has one CPU, then all PCIe access is local. This configuration means the
+process that accesses the storage runs on the CPU where the storage is located.
+If your server has more than one CPU, then there is a possibility that the process
+accessing the storage is running on a CPU that does not have the PCI controller
+with your NVMe devices attached. Let's call this *non-local access*.
 
 For non-local access to function, the CPU running the process must reach across
 the QuickPath Interconnect (QPI) links to access the other processor's PCI
@@ -171,12 +168,13 @@ Here are the results of our experiment.
 
 #### Total IOPS
 
-Everyone uses the IOPS metric to determine total system throughput. Over the ten
-runs, we consistently saw more than 6.3 million IOPs of 4000 random I/O operations
-with NUMA controls in place. With NUMA controls not leveraged, the system
-inconsistently ranged from a high of 6.2 million to a low of 6.071 million IOPS.
-Although a single system doing over six million IOPs is insanely fast, no one
-wants to leave performance on the table.
+As is typical in most storage performance benchmarking, this study uses IOPS as
+the metric to determine total storage throughput. Specifically, in our tests,
+we used an IOP size of 4 kilobytes. Over the ten runs, we consistently saw more
+than 6.3 million random 4k I/O operations with NUMA controls in place. With NUMA
+controls not leveraged, the system inconsistently ranged from a high of 6.2
+million to a low of 6.071 million IOPS. Although a single system doing over six
+million IOPs is insanely fast, no one wants to leave performance on the table.
 
 ![]({% asset_path 2020-06-10-get-high-throughput-and-low-latency-with-your-socket-servers/Picture4.png %})
 
