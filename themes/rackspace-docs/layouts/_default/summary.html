@@ -1,0 +1,34 @@
+<article class="postShorten">
+  <div class="postShorten-wrap">
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+        <a class="link-unstyled" href="{{ .Permalink }}">
+          {{ .Title }}
+        </a>
+      </h1>
+      {{ partial "posts/meta" . }}
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      {{ if .Params.Summary }}
+        {{ .Params.Summary | markdownify }}
+      {{ else }}
+        {{ .Summary }}
+      {{ end }}
+      <p>
+        <a href="{{ .Permalink }}" class="postShorten-excerpt_link link">{{ i18n "posts.read_more" }}</a>
+        {{ with .Params.readingtime }}
+          <span class="postShorten-readingtime">
+            {{ printf " - %s min read" . }}
+          </span>
+        {{ end }}
+      </p>
+    </div>
+  </div>
+  {{ if and (.Scratch.Get "thumbnailImage") (ne (.Scratch.Get "thumbnailImagePosition") "top")}}
+    <a href="{{ .Permalink }}">
+      <div class="postShorten-thumbnailimg">
+        <img alt="" itemprop="image" src="{{ .Scratch.Get "thumbnailImage" }}"/>
+      </div>
+    </a>
+  {{ end }}
+</article>

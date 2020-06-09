@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+    {{- partial "head.html" . -}}
+{{ block "body_tag" . }}
+<body>
+{{ end }}
+  {{- block "masthead" . }}
+    {{- partial "masthead.html" . }}
+  {{- end }}
+
+  {{ block "content" . }}
+  {{ end }}
+
+  {{ block "mastfoot" . }}
+    {{ partial "mastfoot.html" . }}
+  {{ end }}
+</body>
+</html>
