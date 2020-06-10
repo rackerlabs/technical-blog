@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Protecting sensitive information from appearing in public repos
-date: '2014-04-15 10:30'
+date: '2014-04-15'
 comments: true
 author: Sri Rajan
 published: true

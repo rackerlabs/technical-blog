@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'How we run Ironic, and you can too!'
-date: '2014-06-19 12:00'
+date: '2014-06-19'
 comments: true
 author: Jim Rollenhagen
 published: true

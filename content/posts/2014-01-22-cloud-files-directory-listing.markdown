@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cloud Files directory listing
-date: '2014-01-22 14:21'
+date: '2014-01-22'
 comments: true
 author: Louwrens Boonstra
 published: true

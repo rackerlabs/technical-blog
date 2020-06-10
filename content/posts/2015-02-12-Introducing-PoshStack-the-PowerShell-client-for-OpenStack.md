@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Introducing PoshStack, the PowerShell client for OpenStack'
-date: '2015-02-12 12:15'
+date: '2015-02-12'
 comments: true
 author: Don Schenck
 published: true

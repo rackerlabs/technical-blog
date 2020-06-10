@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'OpenStack Orchestration in depth, Part I: Introduction to Heat'
-date: '2014-11-07 07:15'
+date: '2014-11-07'
 comments: true
 author: Miguel Grinberg
 published: true

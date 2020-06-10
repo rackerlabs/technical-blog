@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Beginning to understand Neutron provider and tenant networks in OpenStack
-date: '2014-02-03 09:23'
+date: '2014-02-03'
 comments: true
 author: James Thorne
 published: true

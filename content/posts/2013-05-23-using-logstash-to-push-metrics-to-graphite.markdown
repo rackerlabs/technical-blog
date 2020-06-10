@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Using logstash to Push Metrics to Graphite
-date: '2013-05-23 8:00'
+date: '2013-05-23T08:00:06.000Z'
 comments: true
 author: Erik Redding
 published: true

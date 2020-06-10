@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Neutron Networking: Simple flat network'
-date: '2013-10-08 17:00'
+date: '2013-10-08T17:00:06.000Z'
 comments: true
 author: James Denton
 published: true

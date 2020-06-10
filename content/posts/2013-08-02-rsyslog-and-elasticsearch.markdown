@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'rsyslog &amp; ElasticSearch'
-date: '2013-08-02 08:00'
+date: '2013-08-02T08:00:06.000Z'
 comments: true
 author: Micah Yoder
 published: true

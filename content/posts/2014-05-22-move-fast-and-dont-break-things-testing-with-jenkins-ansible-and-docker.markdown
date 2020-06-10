@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Move fast and don’t break things! Testing with Jenkins, Ansible and Docker'
-date: '2014-05-22 09:20'
+date: '2014-05-22'
 comments: true
 author: Mike Muzurakis
 published: true

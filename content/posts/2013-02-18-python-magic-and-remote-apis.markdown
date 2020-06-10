@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Python magic and remote APIs
-date: '2013-02-18 08:00'
+date: '2013-02-18T13:00:14.000Z'
 comments: true
 author: Jesse Keating
 categories:

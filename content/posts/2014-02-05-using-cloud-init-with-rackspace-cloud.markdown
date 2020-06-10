@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Using Cloud-init with Rackspace cloud
-date: '2014-02-11 10:30'
+date: '2014-02-11'
 comments: true
 author: Trey Hoehne
 published: true

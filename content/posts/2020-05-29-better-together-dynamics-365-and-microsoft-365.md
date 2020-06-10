@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Better together: Dynamics 365 and Microsoft 365"
-date: 2020-05-29 00:01
+date: 2020-05-29
 comments: true
 author: Teresa Cortez
 published: true
@@ -95,14 +95,16 @@ environment to production.
 - **Optimize**: As you are operational with your Dynamics 365 application, we
 can continue to offer services and support to enhance your offerings.
 
-![Microsoft Dynamics 365 Business Central: Core capabilities]({% asset_path 2020-05-26-better-together-dynamics-365-and-microsoft-365/Picture1.png %})
+![Microsoft Dynamics 365 Business Central: Core capabilities](/img/2020-05-26-better-together-dynamics-365-and-microsoft-365/Picture1.png)
 
-![Microsoft Dynamics 365 Sales, Services, and Marketing applications: Core Capabilities]({% asset_path 2020-05-26-better-together-dynamics-365-and-microsoft-365/Picture2.png %})
+![Microsoft Dynamics 365 Sales, Services, and Marketing applications: Core Capabilities](/img/2020-05-26-better-together-dynamics-365-and-microsoft-365/Picture2.png)
 
 To learn more about the benefits of combining and integrating Microsoft 365 and
 Dynamics 365, see [Reinvent business productivity with Microsoft Dynamics 365 and Microsoft 365](https://www.rackspace.com/lp/microsoft-dynamics-365-and-office-365-ebook).
 
-<a class="cta blue" id="cta" href="https://www.rackspace.com/microsoft/dynamics-365?_ga=2.8614320.403771553.1589302934-2080275108.1581706274">Learn more about our Dynamics 365 offerings.</a>
+{{< rawhtml >}}
+  <a class="cta blue" id="cta" href="https://www.rackspace.com/microsoft/dynamics-365?_ga=2.8614320.403771553.1589302934-2080275108.1581706274">Learn more about our Dynamics 365 offerings.</a>
+{{< /rawhtml >}}
 
 Visit [www.rackspace.com](https://www.rackspace.com) and click **Sales Chat**
 to get started.

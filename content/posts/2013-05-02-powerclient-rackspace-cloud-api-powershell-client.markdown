@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'PowerClient: Rackspace Cloud API Powershell Client'
-date: '2013-05-02 07:39'
+date: '2013-05-02T08:00:06.000Z'
 comments: true
 author: Mitch Robins
 published: true

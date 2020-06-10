@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Mailgun offers free email validation API for web forms
-date: '2013-08-06 09:15'
+date: '2013-08-06T09:15:06.000Z'
 comments: true
 author: Hart Hoover
 published: true

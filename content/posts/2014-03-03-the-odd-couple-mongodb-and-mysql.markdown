@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'The odd couple: MongoDB and MySQL'
-date: '2014-03-03 14:10'
+date: '2014-03-03'
 comments: true
 author: Alex Brandt
 published: true

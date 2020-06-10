@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Neutron networking: Neutron routers and the L3 agent'
-date: '2014-01-07 15:20'
+date: '2014-01-07T15:20:06.000Z'
 comments: true
 author: James Denton
 published: true

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Why I use SaltStack
-date: '2013-08-16 08:00'
+date: '2013-08-16T08:00:06.000Z'
 comments: true
 author: Allen Oster
 published: true

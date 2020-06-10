@@ -1,7 +1,7 @@
 ---
 layout: post
 title: PowerShell 101 from a Linux guy
-date: '2014-04-15 10:00'
+date: '2014-04-15'
 comments: true
 author: Sriram(Sri) Rajan
 published: true

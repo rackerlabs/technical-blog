@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Upload files directly to Rackspace Cloud Files from the browser
-date: '2013-11-19 10:42'
+date: '2013-11-19T10:42:06.000Z'
 comments: true
 author: W. Matthew Wilson
 published: true

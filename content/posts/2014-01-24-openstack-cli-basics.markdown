@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Openstack CLI Basics
-date: '2014-01-24 12:00'
+date: '2014-01-24'
 comments: true
 author: Jonathan Kelly
 published: true

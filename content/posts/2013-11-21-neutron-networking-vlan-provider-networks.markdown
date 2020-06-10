@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Neutron networking: VLAN provider networks'
-date: '2013-11-25 10:00'
+date: '2013-11-25T10:00:06.000Z'
 comments: true
 author: James Denton
 published: true

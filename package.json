@@ -10,6 +10,7 @@
     "server": "hugo server"
   },
   "dependencies": {
+    "angular": "^1.8.0",
     "atomic-algolia": "^0.3.17",
     "autoprefixer": "^9.7.6",
     "netlify-lambda": "^1.6.3",
@@ -18,5 +19,11 @@
   "browserlists": [
     "ie >= 8",
     "last 3 versions"
-  ]
+  ],
+  "devDependencies": {
+    "angular-sanitize": "^1.8.0",
+    "commonjs": "^0.0.1",
+    "jquery": "^3.5.1",
+    "lodash": "^4.17.15"
+  }
 }

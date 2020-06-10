@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Using a custom kernel with the Ubuntu Installer
-date: '2013-03-20 8:00'
+date: '2013-03-20T08:00:06.000Z'
 comments: true
 author: Jordan Evans
 categories:

@@ -1,0 +1,105 @@
+.postShorten {
+    padding: 40px 0;
+
+    .postShorten-title {
+        font-size: 171.42857143%;
+        margin-bottom: 15px;
+    }
+
+    h1 {
+        font-family: "titillium-regular", arial, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    .post-avatar {
+        img {
+            display: block;
+            height: auto;
+            width: 80px;
+        }
+    }
+
+    .post-avatar.racker::after {
+        content: 'RACKER';
+        font-size: 10px;
+        width: 100%;
+        background: rgba(235, 0, 0, .8);
+        color: #fff;
+        line-height: 1.5;
+        position: absolute;
+        text-align: center;
+        bottom: 0;
+    }
+
+    .post-author-container,
+    .post-meta-container {
+        margin: 15px;
+    }
+
+    .postShorten-meta {
+        display: contents;
+    }
+
+    .postShorten-read-more {
+        font-family: "open-sans-bold", arial, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 80%;
+        text-transform: uppercase;
+        display: block;
+        padding-top: 15px;
+    }
+
+    .postShorten-excerpt::after,
+    .postShorten-excerpt::before {
+        content: " ";
+        display: table;
+    }
+
+    .postShorten-excerpt {
+        margin: 15px 0 0 0;
+
+        p {
+            margin-bottom: 1.5em;
+        }
+    }
+}
+
+.post-content.markdown {
+    .main-content-wrap {
+        border-top: solid 1px #e6e6e6;
+        margin-top: 20px;
+        padding-top: 20px;
+
+        p {
+            margin-bottom: 1.5em;
+        }
+
+        h3 {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 128.57142857%;
+            font-family: "titillium-bold", arial, sans-serif;
+        }
+
+        ul {
+            list-style-type: disc;
+        }
+    }
+}
+
+a.cta {
+    border-radius: 1px;
+    display: inline-block;
+    padding: 1em 3em;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    -webkit-transition: background .1s ease-in-out;
+    transition: background .1s ease-in-out;
+}
+
+a.cta.blue {
+    background: #005ac8;
+}

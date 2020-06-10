@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Rolling deployments with Ansible and Cloud Load Balancers
-date: '2014-04-22 10:00'
+date: '2014-04-22'
 comments: true
 author: Jesse Keating
 published: true

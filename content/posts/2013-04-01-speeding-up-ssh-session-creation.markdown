@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Speeding up SSH session creation
-date: '2013-04-03 08:00'
+date: '2013-04-03T08:00:06.000Z'
 comments: true
 author: Greg Brockman
 published: true

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Creating dynamic host files with Chef
-date: '2013-09-04 08:00'
+date: '2013-09-04T08:00:06.000Z'
 comments: true
 author: Sri Rajan
 published: true

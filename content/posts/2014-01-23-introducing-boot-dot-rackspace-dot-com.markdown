@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Introducing boot.rackspace.com
-date: '2014-01-23 16:00'
+date: '2014-01-23'
 comments: true
 author: Antony Messerli
 published: true

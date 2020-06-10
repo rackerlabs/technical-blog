@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Building an in-house analytics collector with nginx
-date: '2013-09-09 09:09'
+date: '2013-09-09T0:09:06.000Z'
 comments: true
 author: Gabriel Preda
 published: true

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Automated deployments now in the Rackspace Control Panel
-date: '2013-08-27 13:40'
+date: '2013-08-27T13:40:06.000Z'
 comments: true
 author: Ziad Sawlha
 published: true

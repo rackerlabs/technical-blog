@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cloud Databases vs. MySQL on Cloud Servers
-date: '2013-05-24 12:00'
+date: '2013-05-24T12:00:06.000Z'
 comments: true
 author: Edward Adame
 published: true

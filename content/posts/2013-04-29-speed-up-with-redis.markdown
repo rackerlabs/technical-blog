@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Improving your site speed with Redis
-date: '2013-04-29 8:00'
+date: '2013-04-29T08:00:06.000Z'
 comments: true
 author: Hart Hoover
 published: true
