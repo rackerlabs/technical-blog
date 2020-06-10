@@ -6,6 +6,12 @@ comments: true
 author: Ajay Bajpai
 published: true
 authorIsRacker: true
+authorAvatar: 'https://s.gravatar.com/avatar/d2fdad3daba2885b34efce74a90bb1b1'
+bio: "I am a finance professional&mdash;Chartered Accountant (Equivalent to CPA)
+with 19 years of work experience managing a diverse team to achieve finance
+business process service delivery and migration, ERP, financial system
+implementation, customer management, development and delivery of strategic
+finance and technology investment roadmaps."
 categories:
     - Database
     - Oracle
