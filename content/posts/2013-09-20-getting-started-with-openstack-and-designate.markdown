@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started with OpenStack and Designate
-date: '2013-09-20 09:18'
+date: '2013-09-20T09:18:06.000Z'
 comments: true
 author: Tim Simmons
 published: true

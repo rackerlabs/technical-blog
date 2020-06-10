@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Custom images via boot.rackspace.com:Training wheels included'
-date: '2014-05-28 12:42'
+date: '2014-05-28'
 comments: true
 author: Mike Metral
 published: true

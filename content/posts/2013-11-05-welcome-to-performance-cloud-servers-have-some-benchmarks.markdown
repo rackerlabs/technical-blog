@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Welcome to Performance Cloud Servers; have some benchmarks!'
-date: '2013-11-05 06:00'
+date: '2013-11-05T06:00:06.000Z'
 comments: true
 author: Jesse Noller
 published: true

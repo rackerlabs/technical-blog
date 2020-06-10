@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Using message queues in cloud applications
-date: '2013-04-09 08:00'
+date: '2013-04-09T08:00:06.000Z'
 comments: true
 author: Hart Hoover
 published: true

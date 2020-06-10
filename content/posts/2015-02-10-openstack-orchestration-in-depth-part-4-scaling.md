@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'OpenStack Orchestration In Depth, Part IV: Scaling'
-date: '2015-02-10 07:15'
+date: '2015-02-10'
 comments: true
 author: Miguel Grinberg
 published: true

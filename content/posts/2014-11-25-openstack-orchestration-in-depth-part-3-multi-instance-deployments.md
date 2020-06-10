@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'OpenStack Orchestration In Depth, Part III: Multi-Instance Deployments'
-date: '2014-11-21 07:15'
+date: '2014-11-21'
 comments: true
 author: Miguel Grinberg
 published: true

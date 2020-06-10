@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chef server backups
-date: '2013-12-11 10:00'
+date: '2013-12-11T10:00:06.000Z'
 comments: true
 author: Sriram Rajan
 published: true

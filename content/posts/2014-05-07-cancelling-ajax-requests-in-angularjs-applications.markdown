@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cancelling Ajax requests in AngularJS applications
-date: '2014-05-07 10:00'
+date: '2014-05-07'
 comments: true
 author: Satheesh Kumar
 published: true

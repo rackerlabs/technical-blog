@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Protect your infrastructure servers with bastion hosts and isolated Cloud Networks
-date: '2012-11-27 09:13'
+date: '2012-11-27T09:13:06.000Z'
 comments: true
 author: Brandon Philips
 categories:

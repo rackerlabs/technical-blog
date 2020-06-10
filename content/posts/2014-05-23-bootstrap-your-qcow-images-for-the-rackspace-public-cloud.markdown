@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bootstrap your QCOW Images for the Rackspace Public Cloud
-date: '2014-05-23 10:30'
+date: '2014-05-23'
 comments: true
 author: Mike Metral
 published: true

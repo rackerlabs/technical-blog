@@ -1,18 +1,24 @@
 baseURL = "/"
 
 languageCode = "en-us"
-DefaultContentLanguage = "en"
 title = "Technical Blog"
 theme = "rackspace-docs"
 pygmentsCodeFences = true
 pygmentsStyle = "monokailight"
 
-defaultContentLanguage = "en"
+defaultContentLanguage = "en-us"
 defaultContentLanguageInSubdir= false
 enableMissingTranslationPlaceholders = false
+disqusShortname = "rackspace-docs"
+paginate = 7
+canonifyurls = true
 
 # Enable Google Analytics by entering your tracking id
 googleAnalytics = ""
+
+[permalinks]
+  posts = "/:year/:month/:slug/"
+
 
 [params]
     ordersectionsby = "weight" # ordersectionsby = "title"
@@ -24,7 +30,11 @@ googleAnalytics = ""
       "https://use.fontawesome.com/releases/v5.3.1/css/all.css"
     ]
     maxBlogPosts   = 10
-
+    # dateFormat = "January 2, 2006"
+    hierarchicalCategories = true
+    syntaxHighlighter = "highlight.js"
+    clearReading = true
+    # swapPaginator = true
 [menu]
   [[menu.main]]
       identifier = "developer_home"

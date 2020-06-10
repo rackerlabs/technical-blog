@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Using Docker Machine to run your Docker Containers in Rackspace
-date: '2015-01-27 08:00'
+date: '2015-01-27'
 comments: true
 author: Simon J
 published: true

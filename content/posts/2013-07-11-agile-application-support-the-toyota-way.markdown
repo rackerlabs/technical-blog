@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Agile application support: The Toyota way'
-date: '2013-07-11 11:14'
+date: '2013-07-11T11:14:06.000Z'
 comments: true
 author: Kyle Claypool
 published: true

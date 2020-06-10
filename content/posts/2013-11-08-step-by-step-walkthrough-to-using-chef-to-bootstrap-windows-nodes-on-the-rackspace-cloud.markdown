@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Step-by-step walkthrough to using Chef to bootstrap Windows nodes on the Rackspace Cloud
-date: '2013-11-08 09:30'
+date: '2013-11-08T09:30:06.000Z'
 comments: true
 author: Nico Engelen
 published: true

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How I learned Ruby On Rails
-date: '2013-03-04 07:45'
+date: '2013-03-04T07:45:06.000Z'
 comments: true
 author: Bret McGowen
 categories:

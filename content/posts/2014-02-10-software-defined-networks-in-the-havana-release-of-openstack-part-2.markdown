@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Software-defined networks in the Havana release of Openstack – Part 2
-date: '2014-02-24 09:30'
+date: '2014-02-24'
 comments: true
 author: Phil Hopkins
 published: true

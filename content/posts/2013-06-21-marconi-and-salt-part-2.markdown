@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Marconi and Salt: Part 2'
-date: '2013-06-21 09:51'
+date: '2013-06-21T09:51:06.000Z'
 comments: true
 author: Oz Akan
 published: true

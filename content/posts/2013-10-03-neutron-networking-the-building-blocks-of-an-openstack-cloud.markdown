@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Neutron networking: The building blocks of an OpenStack Cloud'
-date: '2013-10-03 08:56'
+date: '2013-10-03T08:56:06.000Z'
 comments: true
 author: James Denton
 published: true

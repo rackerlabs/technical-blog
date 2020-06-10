@@ -1,7 +1,7 @@
 ---
 layout: post
 title: iOS Security Key Signing
-date: '2013-05-28 08:35'
+date: '2013-05-28T08:35:06.000Z'
 comments: true
 author: Tokunbo George
 published: true

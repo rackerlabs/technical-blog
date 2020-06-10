@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Configure Keystone to Utilize Apache
-date: '2014-11-06 17:20'
+date: '2014-11-06'
 comments: true
 author: Matt Dorn
 published: true

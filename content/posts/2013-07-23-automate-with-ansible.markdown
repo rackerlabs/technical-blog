@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Automate application updates with Ansible
-date: '2013-07-24 12:00'
+date: '2013-07-24T12:00:06.000Z'
 comments: true
 author: Michael DeHaan
 published: true

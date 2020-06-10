@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Displaying prepared code with syntax highlighting on Android
-date: '2013-04-23 8:00'
+date: '2013-04-23T08:00:06.000Z'
 comments: true
 author: John Davidson
 published: true
