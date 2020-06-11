@@ -2,28 +2,20 @@
 .tweet-cache/
 _site/
 .idea/*
-.DS_Store
-_posts/.DS_Store
 
 # Virtualenv
-.venv/
+.env
 ENV/
 
 # Editors
-*~
-.*.swp
-.bak
-/.project
-.python-version
+.vscode
 
-# Ruby
-# Jekyll
-rubygems/
-.asset-cache
-.jekyll-cache
-.bundle/
+#node_modules
 node_modules
 
 
 # resources
-resources/_gen
+resources
+
+#public
+public

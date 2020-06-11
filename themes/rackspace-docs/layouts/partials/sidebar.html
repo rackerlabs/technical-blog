@@ -1,16 +1,16 @@
 <div class="sidebar">
-    <div class="blog-sidebar ng-scope" data-ng-controller="BlogSideBarCtrl">
+    <div class="blog-sidebar">
         <section class="recent-posts">
             <h5>Popular Posts</h5>
             <div class="tab-links">
-                <a href="" data-ng-click="clickPostTab('month')"
-                    data-ng-class="{'active': isSectionActive('month')}">Last 30
+                <a href="" onClick="clickPostTab('month')"
+                    class="{isSectionActive ? 'active': 'inactive'}">Last 30
                     Days</a>
-                <a href="" data-ng-click="clickPostTab('forever')"
-                    data-ng-class="{'active': isSectionActive('forever')}">All
+                <a href="" onClick="clickPostTab('forever')"
+                    class="{isSectionActive ? 'active' : 'inactive'}">All
                     Time</a>
             </div>
-            <ol data-ng-show="isSectionActive('month')">
+            <ol class="{isSectionActive ? 'show' : 'hide'}">
                 <li><a href="/blog/understanding-a-sql-server-execution-plan/">Understanding a SQL Server execution
                         plan</a>
                 </li>
@@ -20,7 +20,7 @@
                 <li><a href="/blog/introduction-to-pgp-encryption-and-decryption/">Introduction to PGP encryption and
                         decryption</a></li>
             </ol>
-            <ol data-ng-show="isSectionActive('forever')">
+            <ol class="{isSectionActive ? 'show' : 'hide'}">
                 <li><a href="/blog/understanding-a-sql-server-execution-plan/">Understanding a SQL Server execution
                         plan</a>
                 </li>

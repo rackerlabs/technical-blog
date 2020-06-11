@@ -30,7 +30,7 @@ googleAnalytics = ""
       "https://use.fontawesome.com/releases/v5.3.1/css/all.css"
     ]
     maxBlogPosts   = 10
-    # dateFormat = "January 2, 2006"
+    # dateFormat = "2 January, 2006"
     hierarchicalCategories = true
     syntaxHighlighter = "highlight.js"
     clearReading = true
