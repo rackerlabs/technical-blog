@@ -30,6 +30,14 @@ architecture for several business areas. He has vast experience interacting with
 national and international clients from various business areas and a good
 understanding of requirement analysis and database technology implementation."
 
+Bajpai, Ajay
+authorAvatar: 'https://s.gravatar.com/avatar/d2fdad3daba2885b34efce74a90bb1b1'
+bio: "I am a finance professional&mdash;Chartered Accountant (Equivalent to CPA)
+with 19 years of work experience managing a diverse team to achieve finance
+business process service delivery and migration, ERP, financial system
+implementation, customer management, development and delivery of strategic
+finance and technology investment roadmaps."
+
 Batham, Bhupendra
 authorAvatar: 'https://s.gravatar.com/avatar/e64fc7787bc24eac1a8c969c4eceda44'
 bio: "Bhupendra Batham has more than 12 of experience with Oracle technology
