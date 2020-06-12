@@ -1,26 +1,13 @@
-  <header>
-    <div class="row">
-      <div class="logo-container col-sm-2">
-        <a href="/"><img src="/img/Rackspace_Logo_wt.svg" alt="Rackspace Logo" class="logo-img"></a>
-      </div>
-      <div class="col-sm-8">
-        <nav>
-          <!-- Checkbox is for sandwich menu in mobile screens
-            The empty on click is a fix for iOS.
-            See: https://css-tricks.com/responsive-menu-concepts/#article-header-id-10 -->
-          <input type="checkbox" id="main-nav-sandwich" />
-          <label class="main-nav-sandwich-icon" for="main-nav-sandwich" onclick></label>
-          {{ partial "masthead_nav.html" .Site.Menus.main }}
-        </nav>
-      </div>
-        <div class="search-container col-sm-2">
-            <form novalidate method="GET" action="https://cse.google.com/cse" autocomplete="on">
-                <input type="hidden" name="cx" value="015704640858869259522:6stg794nppg"/>
-                <input name="q" type="text" required title="Google this site..." placeholder="Search"/>
-                <i class="fas fa-search search-icon"></i>
-                <i class="fas fa-times-circle close-icon"></i>
-            </form>
-        </div>
-    </div>
-    <div id="masthead-shadow"></div>
-  </header>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a href="/" class="navbar-brand"><img src="/img/Rackspace_Logo_wt.svg" alt="Rackspace Logo" class="logo-img"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    {{ partial "masthead_nav.html" .Site.Menus.main }}
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    </form>
+  </nav>
+</header>

@@ -1,13 +1,18 @@
-<ul>
-  {{ range . }}
-  <li>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <ul class="navbar-nav mr-auto">
+    {{ range . }}
     {{ if .HasChildren }}
-      <a href="{{ .URL }}">{{ .Name }} <span class="fas fa-angle-down"></span></a>
-      {{ partial "masthead_nav.html" .Children }}
-    {{ else }}
-      <a href="{{ .URL }}">{{ .Name }}</a>
+    <li class="nav-item dropdown">
+      <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false" aria-label="Toggle navigation">{{ .Name }}</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          {{ partial "masthead_nav.html" .Children }}
+        </div>
+      {{ else }}
+    </li class="nav-item">
+    <a href="{{ .URL }}" class="nav-link">{{ .Name }}</a>
+    </li>
     {{ end }}
-  </li>
-  {{ end }}
-</ul>
-
+    {{ end }}
+  </ul>
+</div>

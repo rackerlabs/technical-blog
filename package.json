@@ -5,8 +5,7 @@
     "make-install": "pip3 install -r requirements.txt && make install",
     "start": "make serve",
     "serve": "make hugo-serve",
-    "build": "pip3 install -r requirements.txt && make install && hugo && npm run build:functions",
-    "build:functions": "netlify-lambda build assets/lambda",
+    "build": "pip3 install -r requirements.txt && make install && hugo --buildFuture",
     "server": "hugo server"
   },
   "dependencies": {

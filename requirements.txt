@@ -1,13 +1,7 @@
 appdirs==1.4.4
-closure-linter @ https://github.com/google/closure-linter/zipball/master
 distlib==0.3.0
-docutils==0.16
+docutils==0.16b0.dev0
 filelock==3.0.12
-Markdown==3.2.2
-pandoc==1.0.2
-ply==3.11
 Pygments==2.6.1
-pypandoc==1.5
-python-gflags==3.1.2
 six==1.14.0
 virtualenv==20.0.21

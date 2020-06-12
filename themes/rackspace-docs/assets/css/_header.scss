@@ -2,66 +2,46 @@
 
 header {
     background-color: $header-background;
-    .logo-container {
-      transition: background .1s ease-in-out;
-      a{
+    .navbar-brand {
+        transition: background .1s ease-in-out;
         background-color: $logo-background;
         display: inline-block;
         margin: $image-padding;
         padding: $image-padding;
-        margin-right: auto;
         .logo-img {
             display: inline-block;
             width: 140px;
           }
       }
-    }
     nav {
-        margin-left: auto;
         margin-right: $header-spacing;
         display: flex;
-        float: left;
-    }
-    ul {
-        padding: 0 35px;
-        margin-bottom: 0;
-        list-style: none;
-        position: relative;
-        display: flex;
-        padding: $header-spacing $header-sub-spacing;
-        li{
-            list-style-type: none;
-            position: relative;
-            padding: 0 $list-padding 0 $list-padding;
-            a{
-                text-transform: uppercase;
-                color: $header-text-color;
-                font-family: $developer-font;
-            }
-            ul {
-                display: block;
-                visibility: hidden;
-                position: absolute;
-                z-index: 100;
-                padding: 0;
-                margin-top: 1em;
+        .nav-link{
+            text-transform: uppercase;
+            color: $header-text-color;
+            font-family: $developer-font;
+        }
+        .nav-item.dropdown.show {
+            .dropdown-menu.show {
                 background-color: $header-background;
-                border: 1px solid $header-text-color;
-                opacity: 0;
-                transition: visibility 700ms, opacity 300ms linear 200ms;
+                color: $header-text-color;
+                .navbar-collapse{
+                    min-height: 200px;
+                    ul.navbar-nav {
+                        flex-direction: column;
+                        color: $header-text-color;
+                        a.nav-link {
+                            visibility: visible;
+                            color: $header-text-color;
+                        }
+                    }
+                }
             }
         }
-        li:hover > ul, li:focus-within > ul, li:focus > ul {
-                visibility: visible;
-                opacity: 1;
-        }
-    
     }
-    #main-nav-sandwich {
-        display: none;
-        clear: both;
-      }
-      .search-container {
-          margin-top: $list-padding;
-      }
+    @media (min-width: 992px) {
+        .navbar {
+            max-height: 70px;
+        }
+    }
   }

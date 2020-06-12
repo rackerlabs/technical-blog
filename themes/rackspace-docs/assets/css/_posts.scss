@@ -16,7 +16,8 @@
         img {
             display: block;
             height: auto;
-            width: 80px;
+            min-width: 75px;
+            width: 100%;
         }
     }
 
@@ -30,6 +31,7 @@
         position: absolute;
         text-align: center;
         bottom: 0;
+        max-width: 75px;
     }
 
     .post-author-container,
