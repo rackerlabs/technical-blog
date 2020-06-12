@@ -111,7 +111,7 @@ Data Center Operations, and PEG.
 
 The three stages of push-button automation:
 
-![](Picture3.png)
+![]("Picture3.png")
 
 When we closed the maintenance window, the following results occurred:
 
