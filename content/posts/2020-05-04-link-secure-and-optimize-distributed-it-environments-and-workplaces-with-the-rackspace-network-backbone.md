@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Link, secure, and optimize distributed IT environments and workplaces with the Rackspace network backbone"
-date: 2020-05-04 00:01
+date: 2020-05-04
 comments: true
 author: Michael Levy
 published: true
