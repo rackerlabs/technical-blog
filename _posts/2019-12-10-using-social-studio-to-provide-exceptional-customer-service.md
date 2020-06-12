@@ -19,6 +19,8 @@ ogTitle: "Using Social Studio to provide exceptional customer service"
 ogDescription: "Your customers are probably using social media, which means they are talking about your company and your products or services&mdash;whether you are listening or not."
 ---
 
+*This post was originally published on the RelationEdge blog.*
+
 Your customers are probably using social media, which means they are talking
 about your company and your products or services&mdash;whether you are listening
 or not.

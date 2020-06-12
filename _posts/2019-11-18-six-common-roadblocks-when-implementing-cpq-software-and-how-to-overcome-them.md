@@ -16,6 +16,8 @@ ogDescription: "Significant growth also comes with increased complexity--if your
 canonical: https://blog.rackspace.com/6-common-roadblocks-when-implementing-cpq-software-and-how-to-overcome-them/
 ---
 
+*This post was originally published on the RelationEdge blog.*
+
 Your company’s sales team is growing, and your books are in the black. While
 this is good news, with significant growth also comes increased
 complexity&mdash;if your Configure, Price, Quote (CPQ) process isn’t growing

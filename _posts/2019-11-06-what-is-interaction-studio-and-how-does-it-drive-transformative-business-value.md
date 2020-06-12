@@ -17,7 +17,13 @@ ogDescription: "Interaction Studio launched in 2018 as an innovative Marketing C
 canonical: https://blog.rackspace.com/what-is-interaction-studio-and-how-does-it-drive-transformative-business-value/
 ---
 
-[Interaction Studio](https://www.salesforce.com/products/marketing-cloud/customer-interaction/) launched in 2018 as an innovative Marketing Cloud feature that enables your company to engage with customers at every stage along the path from lead to loyalty. Interaction Studio uses cookies to track customer data and then matches that data with customer-provided information&mdash;like email addresses and phone numbers.
+*This post was originally published on the RelationEdge blog.*
+
+[Interaction Studio](https://www.salesforce.com/products/marketing-cloud/customer-interaction/)
+launched in 2018 as an innovative Marketing Cloud feature that enables your company
+to engage with customers at every stage along the path from lead to loyalty.
+Interaction Studio uses cookies to track customer data and then matches that
+data with customer-provided information&mdash;like email addresses and phone numbers.
 
 <!-- more -->
 

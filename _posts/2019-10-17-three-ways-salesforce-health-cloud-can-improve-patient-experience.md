@@ -14,6 +14,8 @@ ogDescription: "This blog discusses three ways that SalesForce Health Cloud can 
 canonical: https://blog.rackspace.com/3-ways-salesforce-health-cloud-can-improve-patient-experience/
 ---
 
+*This post was originally published on the RelationEdge blog.*
+
 Salesforce&reg; Health Cloud is a top-ranked healthcare customer relationship
 management (CRM) system. The software aims to put patients at the heart of
 every decision&mdash;strengthening relationships and improving outcomes.

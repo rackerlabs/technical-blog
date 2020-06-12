@@ -16,6 +16,8 @@ ogDescription: "In this post, I dive into three points that show how Salesforce 
 canonical: https://blog.rackspace.com/3-ways-salesforce-can-streamline-your-financial-services-company/
 ---
 
+*This post was originally published on the RelationEdge blog.*
+
 In the financial services sector, Salesforce&reg; stands head and shoulders
 above the other customer relationship management (CRM) and cloud computing
 platforms out there. That’s because Salesforce designed its

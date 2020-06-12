@@ -16,6 +16,8 @@ ogDescription: "With features that act as guardrails on your sales process, Sale
 canonical: https://blog.rackspace.com/installing-guardrails-on-your-sales-process-with-salesforce-cpq/
 ---
 
+*This post was originally published on the RelationEdge blog.*
+
 As your company grows, your sales process becomes more complicated. You might
 notice that your sales team slows down as your salespeople struggle to
 generate proposals and close sales in the same timely manner. What can you do

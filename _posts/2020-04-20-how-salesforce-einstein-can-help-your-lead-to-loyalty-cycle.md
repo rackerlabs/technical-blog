@@ -14,6 +14,8 @@ ogTitle: "How Salesforce Einstein can help your lead-to-loyalty cycle"
 ogDescription: "Salesforce&reg; has long been a leader when it comes to industry developments. One of the latest, most promising innovations is the use of artificial intelligence (AI) to oversee business interactions."
 ---
 
+*This post was originally published on the RelationEdge blog.*
+
 Salesforce&reg; has long been a leader when it comes to industry developments. One of the latest, most promising
 innovations is the use of artificial intelligence (AI) to oversee business interactions. [By 2020, 85% of people](https://hbr.org/2016/06/why-salespeople-need-to-develop-machine-intelligence)
 are expected to use AI to oversee business interactions. Salesforce [released Einstein](https://www.salesforce.com/blog/2016/09/introducing-salesforce-einstein.html),

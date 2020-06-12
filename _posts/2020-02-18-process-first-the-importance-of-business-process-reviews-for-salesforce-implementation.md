@@ -15,6 +15,8 @@ ogTitle: "Process first: The importance of business process reviews for Salesfor
 ogDescription: "The tremendous benefits of Salesforce don't come without vision and planning."
 ---
 
+*This post was originally published on the RelationEdge blog.*
+
 Tools like Salesforce&reg; can revolutionize how your business sells and
 communicates with your customers. Sophisticated analytics and reporting give
 you detailed data on your customers' behaviors. Capabilities for automation and
