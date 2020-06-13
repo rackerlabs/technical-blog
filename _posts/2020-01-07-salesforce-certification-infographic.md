@@ -15,6 +15,8 @@ ogDescription: "In the age of customer experience, businesses now rely on their 
 canonical: https://blog.rackspace.com/your-guide-to-salesforce-certifications-infographic/
 ---
 
+*This post was originally published on the RelationEdge blog.*
+
 In the age of customer experience, businesses now rely on their customer
 relationship management (CRM) systems more than ever, and certifications are
 crucial.

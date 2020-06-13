@@ -22,6 +22,8 @@ ogTitle: "Get the most out of Einstein Engagement Scoring"
 ogDescription: "If your business has a corporate or enterprise license for Salesforce@reg; Marketing Cloud, and you aren’t using Einstein Engagement Scoring, you are missing a big opportunity to boost your email marketing and improve the return on investment (ROI) of your Marketing Cloud instance."
 ---
 
+*This post was originally published on the RelationEdge blog.*
+
 If your business has a corporate or enterprise license for Salesforce&reg;
 Marketing Cloud, and you aren’t using Einstein Engagement Scoring, you are
 missing a big opportunity to boost your email marketing and improve the return

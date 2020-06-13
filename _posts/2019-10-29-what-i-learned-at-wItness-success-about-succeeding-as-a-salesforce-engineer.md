@@ -14,7 +14,10 @@ metaDescription: ""
 ogTitle: "What I learned at WITness Success about succeeding as a Salesforce engineer"
 ogDescription: ""
 ---
-This July, I attended and [spoke](http://witnesssuccess.com/2019-session-speakers/)
+
+*This post was originally published on the RelationEdge blog.*
+
+In July 2019, I attended and [spoke](http://witnesssuccess.com/2019-session-speakers/)
 at my first **WITness Success** event in Nashville, which was invigorating. I
 left motivated and re-energized in my Salesforce&reg; career.
 

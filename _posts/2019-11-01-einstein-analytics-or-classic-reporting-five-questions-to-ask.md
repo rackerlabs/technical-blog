@@ -15,6 +15,8 @@ ogDescription: "Do you need Einstein Analytics instead of classic reporting? Fiv
 canonical: https://blog.rackspace.com/do-i-need-einstein-analytics-instead-of-classic-reporting-5-questions-to-ask-yourself/
 ---
 
+*This post was originally published on the RelationEdge blog.*
+
 Do you ever feel that the analytics you get from Salesforce&reg; Classic Reports
 and Dashboards isn’t providing enough insight for your organization’s goals?
 

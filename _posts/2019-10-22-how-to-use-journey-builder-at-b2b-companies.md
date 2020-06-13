@@ -14,6 +14,9 @@ metaDescription: "This blog explains how you can use Journey Builder to streamli
 ogDescription: "This blog explains how you can use Journey Builder to streamline the customer experience and internal processes at your B2B company."
 canonical: https://blog.rackspace.com/how-to-use-journey-builder-at-b2b-companies/
 ---
+
+*This post was originally published on the RelationEdge blog.*
+
 Many business-to-business (B2B) companies know they need marketing automation
 to stay relevant and reduce workload. However, they do not always know which
 tools they need or how to use these tools to drive transformative business value.

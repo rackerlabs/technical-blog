@@ -16,6 +16,8 @@ ogDescription: "Integrating your CRM with other platforms, like marketing automa
 canonical: https://blog.rackspace.com/how-to-clean-your-crm-data-and-keep-it-that-way/
 ---
 
+*This post was originally published on the RelationEdge blog.*
+
 Many people think a customer relationship management (CRM) platform is only for
 the Sales team. But your CRM actually contains information about the entire
 customer lifecycle that is useful to all departments. Integrating your CRM with

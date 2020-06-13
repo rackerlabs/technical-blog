@@ -15,6 +15,8 @@ ogDescription: "Salesforce Field Service Lightning helps make work easier for pe
 canonical: https://blog.rackspace.com/7-ways-field-service-lighting-fsl-helps-field-and-service-workers/
 ---
 
+*This post was originally published on the RelationEdge blog.*
+
 The risk of your customers falling through the cracks is much higher if you do
 not have a centralized workforce. A dispatcher might be unable to reach a
 technician on the road, or a service van might lack the proper parts to complete

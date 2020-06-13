@@ -15,6 +15,8 @@ ogDescription: "With so many incredible features and powerful tools, it can be h
 canonical: https://blog.rackspace.com/how-can-your-organization-use-salesforce-to-its-full-capacity/
 ---
 
+*This post was originally published on the RelationEdge blog.*
+
 It is one thing to have access to Salesforce&reg; within your organization; it
 is another be confident that you are using the platform to its full capacity.
 

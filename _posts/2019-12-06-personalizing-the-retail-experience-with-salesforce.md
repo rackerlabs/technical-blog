@@ -15,6 +15,8 @@ ogTitle: "Personalizing the retail experience with Salesforce"
 ogDescription: "In this blog, we look at the importance of creating a personalized customer experience in retail, how it can affect brick-and-mortar and e-commerce retailers, and how Salesforce can help."
 ---
 
+*This post was originally published on the RelationEdge blog.*
+
 Customer experience is critical in retail for building engagement and generating
 revenue. Offering personalized interactions&mdash;from advising customers based
 on their preferences to following up with them after they have made their

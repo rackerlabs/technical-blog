@@ -17,6 +17,8 @@ ogDescription: "DMPs like Salesforce&reg; Audience Studio (formerly Salesforce D
 canonical: https://blog.rackspace.com/everything-you-need-to-know-about-salesforce-audience-studio-formerly-salesforce-dmp/
 ---
 
+*This post was originally published on the RelationEdge blog.*
+
 Digital advertising is officially bigger than
 [traditional advertising](https://www.vox.com/2019/2/20/18232433/digital-advertising-facebook-google-growth-tv-print-emarketer-2019).
 This fact means if digital advertising has not already started consuming a

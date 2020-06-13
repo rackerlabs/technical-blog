@@ -16,6 +16,8 @@ ogTitle: "Nervous about converting from Classic to Lightning? Learn From this co
 ogDescription: "We recently worked with the Stow Company to ensure they were fully prepared for their Lightning conversion and that there were no interruptions to the level of customer service they were able to provide. "
 ---
 
+*This post was originally published on the RelationEdge blog.*
+
 We know that change is never easy. If your company has been using
 Salesforce&reg; Classic for some time, you might be nervous about switching to
 the new-and-improved Lightning. Even if you have heard about all

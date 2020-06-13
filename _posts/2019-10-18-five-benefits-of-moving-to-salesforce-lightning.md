@@ -13,6 +13,8 @@ metaDescription: "This blog outlines five benefits of transitioning from Salesfo
 ogDescription: "This blog outlines five benefits of transitioning from Salesforce Classic to Salesforce Lightning."
 ---
 
+*This post was originally published on the RelationEdge blog.*
+
 As a Salesforce&reg; administrator, you probably know that it is in your organization’s
 best interest to make the leap from Salesforce Classic to Lightning. Change can be
 daunting, even when you know you are moving toward a better solution. The challenge

@@ -14,6 +14,8 @@ ogTitle: "How Salesforce Community Cloud helps you serve your customers, employe
 ogDescription: "Salesforce&reg; Community Cloud offers a centralized platform for loyal customers, happy employees, and engaged partners."
 ---
 
+*This post was originally published on the RelationEdge blog.*
+
 Salesforce&reg; Community Cloud offers a centralized platform for loyal customers,
 happy employees, and engaged partners. Community Cloud is a Salesforce
 application that allows your organization to create online forums (communities)

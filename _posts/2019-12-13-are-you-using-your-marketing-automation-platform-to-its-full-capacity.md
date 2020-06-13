@@ -16,6 +16,8 @@ ogDescription: "If you’re using marketing automation only to send out an email
 canonical: https://blog.rackspace.com/are-you-using-your-marketing-automation-platform-to-its-full-capacity/
 ---
 
+*This post was originally published on the RelationEdge blog.*
+
 If you’re using marketing automation only to send out an email newsletter now
 and then, you’re missing out on powerful opportunities to engage your customers
 at every step along the path from lead to loyalty.
