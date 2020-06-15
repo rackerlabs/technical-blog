@@ -23,9 +23,6 @@ Asciidoctor and Rst is also required. The `npm run make-install` command will in
 
 It is recommended to install and run at least **Hugo 0.48**
 
-=== Install and Run Hugo, AsciiDoctor and Rst via Docker
-
-If you do not want to install a local copy of Hugo, AsciiDoctor and Rst, you can run a Hugo+AsciiDoctor+Rst docker image instead. You need to first create the docker image via `make hugo-docker`. Once you have a docker image, you can run the Hugo server via `make hugo-serve`.
 
 == Installing
 
@@ -48,14 +45,6 @@ npm run start
 yarn start
 ----
 
-If you did not install Hugo, AsciiDoctor and Rst locally, but you instead want to run with the docker image, you can use the hugo-serve make target instead:
-
-[source,bash]
-----
-npm run serve
-----
-yarn serve
-----
 
 If everything is working as expected you should see something like the following being outputted:
 
@@ -72,14 +61,14 @@ If everything is working as expected you should see something like the following
   Cleaned          |   0
 
 Total in 4798 ms
-Watching for changes in /home/docs-developer-blog/{content,data,layouts,static,themes}
+Watching for changes in /home/technical-blog/hugo/{content,data,layouts,static,themes}
 Serving pages from memory
 Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
-Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Web Server is available at http://localhost:3000/ (bind address 127.0.0.1)
 Press Ctrl+C to stop
 ```
 
-You should now be able to access hugo running at link:http://localhost:1313/[http://localhost:1313]
+You should now be able to access hugo running at link:http://localhost:3000/[http://localhost:3000]
 
 This running instance should support live reload. Changes you make to files should be automatically updated in your running instance.
 
@@ -90,8 +79,8 @@ Some files may not be supported for live reload. If you are not automatically se
 ```
 ├── [archetypes]- Directory where you define the content, tags, categories, etc.
 ├── [content] - Directory that contains the content of the site.
-│   ├── [contribute]
-│   ├── [documentation]
+│   ├── [blogs]
+│   ├── [posts]
 ├── [data] - Directory that contains site data such as localization configuration.
 ├── [layouts] - Directory that contains Go HTML/template library used to template and format the site.
 ├── [public] - (Doesn't exist until generated) Directory that contains the generated content for the site.  Should be part of your git.ignore file.
