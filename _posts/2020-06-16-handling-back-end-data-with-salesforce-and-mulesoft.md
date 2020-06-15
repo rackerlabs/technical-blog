@@ -58,8 +58,8 @@ OData-compliant API layer on top of the back-end systems so that you can easily
 access data in Salesforce. For example, Salesforce Connect makes an API call to
 the OData endpoint built on MuleSoft. Then you configure MuleSoft to query the
 back-end systems and format the response to send back to Salesforce. MuleSoft
-has a variety of pre-built application and technology connectors for Oracle,
-SAP, Amazon S3, and databases using a Java Database Connectivity (JDBC)
+has a variety of pre-built application and technology connectors for Oracle&reg;,
+SAP&reg;, Amazon S3, and databases using a Java&reg; Database Connectivity (JDBC)
 connection, as shown in the following image:
 
 ![]({% asset_path 2020-06-16-handling-back-end-data-with-salesforce-and-mulesoft/Picture1.png %})
@@ -71,7 +71,7 @@ The solution, then, is to perform the following tasks:
 2. Use Salesforce Connect to connect to an OData-compliant API endpoint
    provided by MuleSoft.
 
-3. Configure MuleSoft to handle the integration with the backend systems and
+3. Configure MuleSoft to handle the integration with the back-end systems and
    return the data to the MuleSoft API. This step makes the data available to
    users in Salesforce.
 
