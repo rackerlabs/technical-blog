@@ -7,26 +7,26 @@ author: Lorenzo Winfrey
 published: true
 authorIsRacker: true
 authorAvatar: 'https://s.gravatar.com/avatar/4946b45863e87d1a876eeb2873af2593'
-bio: "As Product Manager for Rackspace’s Government Solutions (RGS), Lorenzo D.
-Winfrey is responsible for multiple areas including product vision and strategy,
+bio: "As Product Manager for the Rackspace Government Solutions (RGS), Lorenzo D.
+Winfrey is responsible for multiple areas, including product vision and strategy,
 roadmap development, and branding for the RGS portfolio. Lorenzo’s leadership
 objective is to ensure all our solutions have a customer focus and are built
-to the highest quality while aggressively pursuing integration of new value added
-technology. Prior to joining Rackspace in April 2019, Lorenzo was Chief of
-Architecture and Standards for the Defense Intelligence Agency (DIA) where he
+to the highest quality, while aggressively pursuing integration of new value added
+technology. Before joining Rackspace in April 2019, Lorenzo was Chief of
+Architecture and Standards for the Defense Intelligence Agency (DIA), where he
 managed a portfolio of over $50 million in annual operating budget. Lorenzo’s
 extensive career in information technology includes leading DIA’s AWS Cloud
-Broker Team, managing the operations of the Microsoft System Center Configuration
+Broker Team, managing the operations of the Microsoft&reg; System Center Configuration
 Manager enterprise solution, and pioneering the development and deployment of
-the agency’s first cloud native, web based application to track near real time
-cloud spend, utilization and schedule. While serving at DIA, Lorenzo was awarded
+the agency’s first cloud native, web-based application to track near real-time
+cloud spend, utilization, and schedule. While serving at DIA, Lorenzo was awarded
 the Award for Exceptional Civilian Service, the agency's highest civilian award,
-which recognizes excellence, initiative and outstanding contributions over a
+which recognizes excellence, initiative, and outstanding contributions over a
 period of several years. Lorenzo brings to Rackspace a compelling combination
 of technical expertise and strategic leadership experience. He firmly believes
 that leadership is a discipline that should be studied and practiced. Lorenzo
 has become known for sharing his reading lists with all who will listen. He
-enjoys creating content, reading and the occasional video game. Hailing from
+enjoys creating content, reading, and the occasional video game. Hailing from
 Augusta, Georgia, Lorenzo now lives in Waldorf, Maryland with his family. He
 holds a Bachelor’s of Science from Claflin University. Lorenzo is based in the
 company’s Reston, Virginia office."
@@ -38,8 +38,8 @@ ogTitle: "Announcing the VM Replication Enhanced Edition of Government Cloud, li
 ogDescription: "Rackspace Technology is proud to announce the limited availability of VM Replication Enhanced Edition for Government."
 ---
 
-Rackspace Technology is proud to announce the limited availability of the virtual
-machine (VM) Replication Enhanced Edition for Government.
+Rackspace Technology is proud to announce the limited availability of the Virtual
+Machine (VM) Replication Enhanced Edition for Government.
 
 <!-- more -->
 
@@ -52,7 +52,7 @@ backup and recovery to help you ensure operational continuity. This edition
 enables you to recover virtual environments, regardless of the threat, including
 ransomware, hardware failures, and natural disasters.
 
-The solution is available to Rackspace Government Cloud (RGC) on VMware customers
+The solution is available to Rackspace Government Cloud (RGC) on VMware&reg; customers
 in Rackspace Technology data centers.
 
 ### Key features
@@ -66,7 +66,7 @@ capabilities:
   combined into virtual protection groups.
 
 - Rewind and recover to the second with point-in-time recovery for seamless
-  roll-back to moments before ransomware with approximately five-second
+  rollback to moments before ransomware with approximately five-second
   increments. You can go back up to seven days.
 
 - Complete automation and orchestration of VM non-disruptive test failovers,
@@ -100,7 +100,7 @@ and solutions. Together, with our partner network, we create unstoppable solutio
 that advance innovation for the public sector. We put technology to work and
 deliver the future faster.
 
-<a class="cta teal" id="cta" href="https://www.rackspace.com/fedramp">Learn more about Rackspace FedRAMP Services</a>
+<a class="cta teal" id="cta" href="https://www.rackspace.com/fedramp">Learn more about Rackspace FedRAMP Services.</a>
 
 Visit [www.rackspace.com](https://www.rackspace.com) and click **Sales Chat**
 to get started.
