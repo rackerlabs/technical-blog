@@ -1,1 +1,0 @@
-# Rackspace Documentation hugo theme

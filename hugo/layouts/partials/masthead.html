@@ -1,0 +1,13 @@
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a href="/" class="navbar-brand"><img src="/img/Rackspace_Logo_wt.svg" alt="Rackspace Logo" class="logo-img"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    {{ partial "masthead_nav.html" .Site.Menus.main }}
+    <form class="form-inline my-2 my-lg-0">
+      <input type="search" name="search" placeholder="Search the {{ .Section }}..." class="search--input">
+    </form>
+  </nav>
+</header>

@@ -1,21 +1,18 @@
-.pygments-cache/
-.tweet-cache/
-_site/
-.idea/*
-
-# Virtualenv
+# Don't commit system files or dependencies
+*.DS_Store
+node_modules/
 .env
-ENV/
+yarn.lock
 
-# Editors
-.vscode
+# Don't add personal VS Code settings
+.vscode/
 
-#node_modules
-node_modules
+# Ensure Hugo builds aren't committed to Git
+public/
+hugo/public/
+dist/
+.tmp/
 
-
-# resources
-resources
-
-#public
-public
+# Don't add files that are created in the build process
+hugo/static/js
+hugo/static/css
