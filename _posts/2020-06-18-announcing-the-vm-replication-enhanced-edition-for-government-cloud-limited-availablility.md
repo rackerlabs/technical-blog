@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Announcing the VM Replication Enhanced Edition of Government Cloud, limited availability"
-date: 2020-06-17 00:01
+date: 2020-06-18 00:01
 comments: true
 author: Lorenzo Winfrey
 published: true
