@@ -24,11 +24,13 @@ baseName = "algolia"
 isPlainText = true
 mediaType = "application/json"
 notAlternative = true
+
 [outputFormats.OpenSearch]
 baseName = "opensearch"
 isPlainText = true
 mediaType = "application/xml"
 notAlternative = true
+
 [outputFormats.Redirects]
 baseName = "redirects"
 isPlainText = true
@@ -57,8 +59,8 @@ home = ["HTML", "RSS", "OpenSearch", "Algolia", "Redirects"]
     ghrepo_edit = "https://github.com/rackerlabs/technical-blog/edit/develop/hugo/content/"
     ghrepo_new = "https://github.com/rackerlabs/technical-blog/issues/new"
     [params.algolia]
-        params = ["tags", "categories", "authors"]
-        vars = ["date", "description", "dir", "path", "expirydate", "fuzzywordcount", "keywords", "kind", "lang", "lastmod", "permalink", "publishdate", "readingtime", "relpermalink", "summary", "title", "type", "url", "weight", "wordcount", "section"]
+        params = ["blogs", "posts", "authors"]
+        vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
 [menu]
   [[menu.main]]
       identifier = "developer_home"
