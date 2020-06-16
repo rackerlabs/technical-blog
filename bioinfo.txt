@@ -38,6 +38,13 @@ business process service delivery and migration, ERP, financial system
 implementation, customer management, development and delivery of strategic
 finance and technology investment roadmaps."
 
+Ballard, Charlie
+authorAvatar: 'https://s.gravatar.com/avatar/9ded7b3f5e28bcd3d61292b06475a631'
+bio: "Charlie is a *Certified Mulesoft Integration Architect* and an 18-times
+*Certified Salesforce Architect*. He has worked as a Salesforce and Mulesoft end
+user, administrator, developer, consultant, and architect since 2011 and has
+worked with organizations in a variety of industries across the globe."
+
 Batham, Bhupendra
 authorAvatar: 'https://s.gravatar.com/avatar/e64fc7787bc24eac1a8c969c4eceda44'
 bio: "Bhupendra Batham has more than 12 of experience with Oracle technology
@@ -585,26 +592,26 @@ bio: n/a
 
 Winfrey, Lorenzo
 authorAvatar: 'https://s.gravatar.com/avatar/4946b45863e87d1a876eeb2873af2593'
-bio: "As Product Manager for Rackspace’s Government Solutions (RGS), Lorenzo D.
-Winfrey is responsible for multiple areas including product vision and strategy,
+bio: "As Product Manager for the Rackspace Government Solutions (RGS), Lorenzo D.
+Winfrey is responsible for multiple areas, including product vision and strategy,
 roadmap development, and branding for the RGS portfolio. Lorenzo’s leadership
 objective is to ensure all our solutions have a customer focus and are built
-to the highest quality while aggressively pursuing integration of new value added
-technology. Prior to joining Rackspace in April 2019, Lorenzo was Chief of
-Architecture and Standards for the Defense Intelligence Agency (DIA) where he
+to the highest quality, while aggressively pursuing integration of new value added
+technology. Before joining Rackspace in April 2019, Lorenzo was Chief of
+Architecture and Standards for the Defense Intelligence Agency (DIA), where he
 managed a portfolio of over $50 million in annual operating budget. Lorenzo’s
 extensive career in information technology includes leading DIA’s AWS Cloud
-Broker Team, managing the operations of the Microsoft System Center Configuration
+Broker Team, managing the operations of the Microsoft&reg; System Center Configuration
 Manager enterprise solution, and pioneering the development and deployment of
-the agency’s first cloud native, web based application to track near real time
-cloud spend, utilization and schedule. While serving at DIA, Lorenzo was awarded
+the agency’s first cloud native, web-based application to track near real-time
+cloud spend, utilization, and schedule. While serving at DIA, Lorenzo was awarded
 the Award for Exceptional Civilian Service, the agency's highest civilian award,
-which recognizes excellence, initiative and outstanding contributions over a
+which recognizes excellence, initiative, and outstanding contributions over a
 period of several years. Lorenzo brings to Rackspace a compelling combination
 of technical expertise and strategic leadership experience. He firmly believes
 that leadership is a discipline that should be studied and practiced. Lorenzo
 has become known for sharing his reading lists with all who will listen. He
-enjoys creating content, reading and the occasional video game. Hailing from
+enjoys creating content, reading, and the occasional video game. Hailing from
 Augusta, Georgia, Lorenzo now lives in Waldorf, Maryland with his family. He
 holds a Bachelor’s of Science from Claflin University. Lorenzo is based in the
 company’s Reston, Virginia office."
