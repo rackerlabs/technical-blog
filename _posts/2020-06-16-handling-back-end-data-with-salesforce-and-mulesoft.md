@@ -6,6 +6,11 @@ comments: true
 author: Charlie Ballard
 published: true
 authorIsRacker: true
+authorAvatar: 'https://s.gravatar.com/avatar/9ded7b3f5e28bcd3d61292b06475a631'
+bio: "Charlie is a *Certified Mulesoft Integration Architect* and an 18-times
+*Certified Salesforce Architect*. He has worked as a Salesforce and Mulesoft end
+user, administrator, developer, consultant, and architect since 2011 and has
+worked with organizations in a variety of industries across the globe."
 categories:
     - Salesforce
 metaTitle: "Handling back-end data with Salesforce and MuleSoft"
