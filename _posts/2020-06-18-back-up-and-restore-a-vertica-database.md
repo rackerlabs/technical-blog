@@ -7,8 +7,8 @@ author: Hemant Sharma
 published: true
 authorIsRacker: true
 authorAvatar: 'https://s.gravatar.com/avatar/62a512ada4789514ddecc061e501be64'
-bio: "I am a Sr. Database Administrator with many years of experience as DBA in
-the IT industry. I share my knowledge about latest database technologies via my
+bio: "I am a Sr. Database Administrator with many years of experience as a DBA in
+the IT industry. I share my knowledge about the latest database technologies via my
 blog in a simple and effective way."
 categories:
     - Database
@@ -36,46 +36,42 @@ traditionally resource-intensive scenarios.
 
 Vertica offers the following advantages:
 
-- Improves query performance over traditional database relational database management systems
-- provides high-availability
-- provides petabyte scalability on commodity enterprise servers.
+- Improves query performance over traditional database relational database management systems.
+- Provides high availability.
+- Provides petabyte scalability on commodity enterprise servers.
 
 The database backup and recovery mechanism reduces the downtime during maintenance and disaster recovery.
 
 ### Back up and restore a database
 
 With Vertica, you can create hot backups, incremental copies with an indefinite
-number of restore points, and back up an entire database or a subset (schemas,
+number of restore points, and backups of an entire database or a subset (schemas,
 tables, and so on) of the database. The following backup levels are available:
 
--**Full level**:  This level ensures that you can back up and restore the full Vertica database.
--**Incremental level**: A subsequent backup that consists of only new or changed data.
--**Object-level**: The backup and restoration of an object.
+-  **Full level**: This level ensures that you can back up and restore the full Vertica database.
+-  **Incremental level**: This level is a subsequent backup that consists of only new or changed data.
+-  **Object-level**: This level is the backup of an object for restoration.
 
 Vertica offers the flexibility and levels of granularity to restore specific
-objects (such as schemas, tables) from a full backup.
+objects (such as schemas and tables) from a full backup.
 
 #### Snapshots
 
 Database snapshots capture a consistent image of all the objects and data in the
-database. You can select which subset of database objects to include in an
+database. You can select a subset of database objects to include in an
 object-level snapshot, which contains associated data in the database at the
 time of the snapshot and other objects in the dependency graph. You can name
-your snapshot as you like (example: snap, objectsnap1, fullsnap, and so on).
+your snapshot as you like (for example: snap, objectsnap1, fullsnap, and so on).
 
 #### Backup location
 
 The backup location is the directory on a backup host where you save snapshots
 and their associated archives. Because the snapshots are compatible, you can use
 any object snapshot from the same backup location after you restore a database
-from a full-database snapshot. All snapshots in the same backup location share
+from a full database snapshot. All snapshots in the same backup location share
 data files through hard links.
 
 #### Hard-link backups
-
-![]({% asset_path 2020-06-18-back-up-and-restore-a-vertica-database/Picture1.png %})
-
-*Image source*: https://www.vertica.com/wp-content/uploads/2016/04/sidestep1.png
 
 Vertica provides low cost and space-efficient copies (*hard-link local backups*)
 of the database backups in the local cluster infrastructure. You can retrieve
@@ -83,24 +79,29 @@ these backups faster because the system does not copy the user data to an extern
 backup environment. Vertica copies only the catalog data and initiates
 Linux&reg;-based hard links within the file system.
 
+![]({% asset_path 2020-06-18-back-up-and-restore-a-vertica-database/Picture1.png %})
+
+*Image source*: https://www.vertica.com/wp-content/uploads/2016/04/sidestep1.png
+
 These backups share the same set of storage blocks, and each backup tracks their
-point-in-time copy, so the system doesn't store the same content in multiple
+point-in-time copy. The system doesn't store the same content in multiple
 locations.
 
 ### Backup and restoration process flow
+
+The backup and restoration flow consists of the following steps:
+
+1. Select the snapshot type, such as full, incremental, or object-level backup.
+2. Create a configuration file by using the Vertica Backup and Recovery tool.
+3. Initialize a backup location to store the backup files.
+4. Take a backup by using the configuration file.
+5. Verify the backups in the backup location.
+6. Restore the full database or database objects on similar or different Vertica clusters.
 
 ![]({% asset_path 2020-06-18-back-up-and-restore-a-vertica-database/Picture2.png %})
 
 *Image source*: https://www.vertica.com/kb/Copy-and-Restore-Data-from-a-Vertica-Cluster-to-a-Backup/Content/BestPractices/Copy-and-Restore-Data-from-a-Vertica-Cluster-to-a-Backup.htm
 
-The backup and restoration flow consists of the following steps:
-
-1. Select the snapshot type, such as full, incremental, or object-level backup.
-2. Create a configuration file by using the Vertica Backup and Recovery tool (vbr).
-3. Initialize a backup location to store the backup files.
-4. Take a backup by using the configuration file.
-5. Verify the backups in the backup location.
-6. Restore the full database or database objects on similar or different Vertica clusters.
 
 #### Generate a configuration file
 
@@ -110,9 +111,9 @@ You cannot back up or restore databases or objects without a configuration file,
 and no default file exists.
 
 You can create as many backup configuration files as you need (such as full or
-incremental, object or schema specific, or location-specific file).
+incremental, object or schema-specific, or location-specific files).
 
-##### Full Backup config file
+##### Full backup configuration file
 
 The following steps help in creating a configuration file to take the full
 database backup.
@@ -137,13 +138,13 @@ database backup.
     Change advanced settings? (n) [y/n]: n
     Saved vbr configuration to /vert_backup/backup_conf/full_bkp_snap.ini.
 
-##### Object-specific backup config file
+##### Object-specific backup configuration file
 
 Perform the following steps to create an object-specific configuration file:
 
-1. List the objects in the database and choose which one to use. The following
-objects are present in our Vertica database:
-
+1. List the objects in the database and choose which ones to use. The following
+   objects are present in our Vertica database:
+ 
                  List of tables
          Schema | Name  | Kind  |  Owner  | Comment
         --------+-------+-------+---------+---------
@@ -257,7 +258,7 @@ Restore either the full or object-level backup.
 
 Use the following steps to perform a full-database restore:
 
-1. Drop all the objects in your database and restore them with the recently created backup.
+1. Drop all the objects in your database and restore them with the recently created backup:
 
         cluster=&gt; dt
                        List of tables
@@ -308,7 +309,7 @@ following code drops **tab1** in preparation for restoration:
     cluster=&gt; dt
              List of tables
     Schema | Name  | Kind  |  Owner  | Comment
-    --------+-------+-------+---------+---------
+    -------+-------+-------+---------+---------
     public | tab2  | table | dbadmin |
     public | tab3  | table | dbadmin |
     (2 rows)
@@ -331,7 +332,7 @@ Perform the following steps to restore an object from an object-level backup:
         restore done!
 
 2. Check whether the object restoration succeeded. The following example shows
-a successful restoration of **public.tab1** from the object-level backup:
+   a successful restoration of **public.tab1** from the object-level backup:
 
         $ vsql
         Password:xxxxxxx
@@ -349,7 +350,7 @@ a successful restoration of **public.tab1** from the object-level backup:
                                     List of Fields by Tables
          Schema | Table | Column |     Type     | Size | Default | Not Null | Primary Key | Foreign Key
         --------+-------+--------+--------------+------+---------+----------+-------------+-------------
-         public | tab1  | col1    | numeric(3,) |    8 |         | f        | f           |
+         public | tab1  | col1   | numeric(3,)  |    8 |         | f        | f           |
 
 ### Conclusion
 
