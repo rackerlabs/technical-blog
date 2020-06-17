@@ -1,0 +1,132 @@
+.hero {
+  align-items: center;
+  background: $color-white;
+  display: flex;
+  flex-direction: column;
+  min-height: 800px;
+  overflow: hidden;
+  padding-top: 5rem;
+  position: relative;
+  z-index: 1;
+
+  @media screen and (min-width: 48em) {
+    min-height: 100vh;
+  }
+
+  .hero--text-block {
+    padding: 9rem 0 0;
+    text-align: left;
+
+    @media screen and (min-width: 1200px) {
+      padding: 80px 0 100px;
+    }
+  }
+
+  .hero--title {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1;
+
+    @media screen and (min-width: 520px) {
+      font-size: 3rem;
+    }
+  }
+
+  .hero--sub {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 2rem;
+    max-width: 460px;
+    opacity: 0.8;
+  }
+
+  .hero-cta {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2.5rem;
+
+    @media screen and (min-width: 520px) {
+      margin-top: 3rem;
+    }
+
+    .button {
+      margin-right: 1rem;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
+}
+
+.hero--content {
+  margin-top: -5rem;
+  position: relative;
+  width: 100%;
+}
+
+.factory-video {
+  height: auto;
+  left: 50%;
+  max-width: none;
+  pointer-events: none;
+  position: absolute;
+  right: auto;
+  top: 90%;
+  transform: translate(-50%, 0);
+  width: 110%;
+  z-index: -10;
+
+  @media screen and (min-width: 600px) {
+    left: 50%;
+    top: 80%;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 820px) {
+    left: 50%;
+    top: 50%;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1000px) {
+    top: 45%;
+  }
+
+  @media screen and (min-width: 1100px) {
+    top: 40%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    left: auto;
+    right: 0;
+    top: 45%;
+    transform: translate(0, -45%);
+    width: 60%;
+  }
+
+  @media screen and (min-width: 1300px) {
+    width: 65%;
+  }
+
+  @media screen and (min-width: 1400px) {
+    width: 70%;
+  }
+}
+
+.factory-video.jekyll-hero-video {
+  top: 85%;
+
+  @media screen and (min-width: 600px) {
+    top: 70%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    top: 45%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    top: 45%;
+  }
+}

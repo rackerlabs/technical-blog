@@ -9,7 +9,8 @@ export default class NavBar {
     this.header = document.querySelector(".header")
     this.nav = document.querySelector(".nav")
     this.rightBlock = document.querySelector(".right-block")
-    this.mainSignUp = document.querySelector(".signup-button.main")
+    this.mainBuyNow = document.querySelector(".buynow-button.main")
+    this.mainLogin = document.querySelector(".login-button.main")
     this.toggle = document.querySelector(".mini-nav--toggle")
     this.html = document.querySelector("html")
     this.body = document.querySelector("body")
@@ -37,13 +38,22 @@ export default class NavBar {
         this.header.classList.remove("scrolled")
       }
 
-      if (!isUndefined(this.mainSignUp) && this.mainSignUp !== null) {
+      if (!isUndefined(this.mainBuyNow) && this.mainBuyNow !== null) {
         if (scroll >= 600) {
-          this.mainSignUp.classList.remove("secondary")
-          this.mainSignUp.classList.add("primary")
+          this.mainBuyNow.classList.remove("secondary")
+          this.mainBuyNow.classList.add("primary")
         } else if (scroll < 600) {
-          this.mainSignUp.classList.remove("primary")
-          this.mainSignUp.classList.add("secondary")
+          this.mainBuyNow.classList.remove("primary")
+          this.mainBuyNow.classList.add("secondary")
+        }
+      }
+      if (!isUndefined(this.mainLogin) && this.mainLogin !== null) {
+        if (scroll >= 600) {
+          this.mainLogin.classList.remove("secondary")
+          this.mainLogin.classList.add("primary")
+        } else if (scroll < 600) {
+          this.mainLogin.classList.remove("primary")
+          this.mainLogin.classList.add("secondary")
         }
       }
     })

@@ -24,13 +24,13 @@ export default class AjaxForm {
     this.form.dataset.error = ""
 
     // send submission to formspree
-    let formData = new FormData(this.form)
-    let formAction = this.form.action
+    const formData = new FormData(this.form)
+    const formAction = this.form.action
     axios({
       method: "post",
       url: formAction,
       data: formData,
-      dataType: "json"
+      dataType: "json",
     })
       .then((response) => {
         // show success state

@@ -1,0 +1,29 @@
+.lightbox {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+
+  /** Position and style */
+  display: flex;
+  flex-flow: row nowrap;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+
+  @media screen and (min-width: 1024px) {
+    padding: 2rem;
+  }
+}
+
+.lightbox img {
+  display: block;
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+}

@@ -1,0 +1,19 @@
+{{- if and .headline .textline -}}
+<section class="hero">
+  <div class="hero--content">
+
+    <div class="container">
+      <div class="hero--text-block">
+        <h1 class="hero--title">{{ markdownify .headline }}</h1>
+        <div class="hero--sub">{{ markdownify .textline }}</div>
+        <div class="hero-cta">
+       
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  
+</section>
+{{- end -}}

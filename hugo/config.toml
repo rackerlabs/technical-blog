@@ -1,36 +1,103 @@
-baseURL = "/"
-
-languageCode = "en-us"
-title = "Technical Blog"
-pygmentsCodeFences = true
-pygmentsStyle = "monokailight"
-
+baseurl = "/"
+copyright = ""
 defaultContentLanguage = "en-us"
-defaultContentLanguageInSubdir= false
-enableMissingTranslationPlaceholders = false
-disqusShortname = "rackspace-docs"
-paginate = 7
-canonifyurls = true
+destination = "../dist/"
+enableEmoji = true
+enableRobotsTXT = true
+languageCode = "en"
 metaDataFormat = "yaml"
+paginate = 10
+pluralizeListTitles = false
+relativeURLs = false
+title = "Technical Blog"
+[markup]
+defaultMarkdownHandler = "blackfriday"
+[markup.blackFriday]
+angledQuotes = false
+hrefTargetBlank = false
+latexDashes = true
+plainIDAnchors = true
+[markup.highlight]
+codeFences = true
+guessSyntax = true
+style = "monokailight"
+[markup.goldmark]
+[markup.goldmark.extensions]
+definitionList = true
+footnote = true
+linkify = true
+strikethrough = true
+table = true
+taskList = true
+typographer = true
+[markup.goldmark.parser]
+attribute = true
+autoHeadingID = true
+autoHeadingIDType = "github"
+[markup.goldmark.renderer]
+hardWraps = false
+unsafe = false
+xhtml = false
+[[menu.docs]]
+name = "Welcome"
+weight = 1
+[[menu.footer]]
+name = "Developer Center"
+parent = "Developer Network"
+url = "/"
+weight = 6
+[[menu.footer]]
+name = "Technical Blog"
+parent = "Blogs"
+url = "/"
+weight = 7
+[[menu.footer]]
+name = "Other Information"
+weight = 2
+[[menu.footer]]
+name = "Developer Network"
+weight = 1
 
-# Enable Google Analytics by entering your tracking id
-googleAnalytics = ""
-
-[permalinks]
-  posts = "/:year/:month/:slug/"
-
+[[menu.main]]
+identifier = "developer_home"
+name = "Developer Home"
+url = "/"
+weight = 1
+# [[menu.main]]
+# identifier = "developer_documentation"
+# name = "Developer Documentation"
+# url = "/docs"
+# weight = 2
+# [[menu.main]]
+# identifier = "blogs"
+# name = "Blogs"
+# url = "/blogs"
+# weight = 3
+[[menu.main]]
+identifier = "support_documentation"
+name = "Support Documentation"
+url = "/"
+weight = 4
+[[menu.main]]
+identifier = "buynow"
+name = "Buy Now"
+url = "/"
+weight = 5
+[[menu.main]]
+identifier = "login"
+name = "Login"
+url = "/"
+weight = 6
 [outputFormats.Algolia]
 baseName = "algolia"
 isPlainText = true
 mediaType = "application/json"
 notAlternative = true
-
 [outputFormats.OpenSearch]
 baseName = "opensearch"
 isPlainText = true
 mediaType = "application/xml"
 notAlternative = true
-
 [outputFormats.Redirects]
 baseName = "redirects"
 isPlainText = true
@@ -38,66 +105,37 @@ mediatype = "application/json"
 notAlternative = true
 [outputs]
 home = ["HTML", "RSS", "OpenSearch", "Algolia", "Redirects"]
-
 [params]
-    ordersectionsby = "weight" # ordersectionsby = "title"
-    disableSearch = false # default is false
-    disableReadmoreNav = false # set true to hide prev/next navigation, default is false
-    highlightClientSide = false # set true to use highlight.pack.js instead of the default hugo chroma highlighter
-    menushortcutsnewtab = true # set true to open shortcuts links to a new tab/window
-    custom_css = [
-      "https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-    ]
-    maxBlogPosts   = 10
-    hierarchicalCategories = true
-    syntaxHighlighter = "highlight.js"
-    clearReading = true
-    # swapPaginator = true
-    dateformat = "January 2, 2006"
-    description = "Content management system for sites built with static site generators. Get the speed, security, and reliability of static and the power of a Headless CMS."
-    ghrepo = "https://github.com/rackerlabs/technical-blog"
-    ghrepo_edit = "https://github.com/rackerlabs/technical-blog/edit/develop/hugo/content/"
-    ghrepo_new = "https://github.com/rackerlabs/technical-blog/issues/new"
-    [params.algolia]
-        params = ["blogs", "posts", "authors"]
-        vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
-[menu]
-  [[menu.main]]
-      identifier = "developer_home"
-      name = "Developer Home"
-      url = "https://developer.rackspace.com/"
-      weight = 1
-  [[menu.main]]
-      identifier = "developer_documentation"
-      name = "Developer Documentation"
-      url = "https://developer.rackspace.com/docs/"
-      weight = 2
-  [[menu.main]]
-      identifier = "blogs"
-      name = "Blogs"
-      url = "/#"
-      weight = 3
-      [[menu.main]]
-          identifier = "technical_blog"
-          name = "Technical Blog"
-          url = "/blog"
-          weight = 1
-          parent = "blogs"
-      [[menu.main]]
-          identifier = "rackspace_blog"
-          name = "Rackspace Blog"
-          url = "https://www.rackspace.com/blog"
-          weight = 2
-          parent = "blogs"
-      [[menu.main]]
-          identifier = "rackspace_solve"
-          name = "Solve: thought "
-          url = "https://www.rackspace.com/solve"
-          weight = 3
-          parent = "blogs"
-  [[menu.main]]
-      identifier = "support_documentation"
-      name = "Support Documentation"
-      url = "https://support.rackspace.com/"
-      weight = 4
-
+dateformat = "January 2, 2006"
+description = "Headless CMS and static site generator for Rackspace documentation"
+ghrepo = "https://github.com/rackerlabs/technical-blog"
+ghrepo_edit = "https://github.com/rackerlabs/technical-blog/edit/master/hugo/content/"
+ghrepo_new = "https://github.com/rackerlabs/technical-blog/issues/new"
+images = ["/img"]
+[params.algolia]
+params = ["tags", "categories", "authors"]
+vars = ["date", "description", "dir", "path", "expirydate", "keywords", "kind", "lang", "permalink", "publishdate", "readingtime", "relpermalink", "summary", "title", "type", "url", "weight", "wordcount", "section"]
+[related]
+includeNewer = true
+threshold = 10
+toLower = true
+[[related.indices]]
+name = "Section"
+weight = 200
+[[related.indices]]
+name = "keywords"
+weight = 150
+[[related.indices]]
+name = "categories"
+weight = 150
+[[related.indices]]
+name = "tags"
+weight = 100
+[[related.indices]]
+name = "date"
+pattern = "2006"
+weight = 10
+[taxonomies]
+author = "authors"
+category = "categories"
+tag = "tags"

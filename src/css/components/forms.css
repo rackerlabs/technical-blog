@@ -1,0 +1,85 @@
+.form--joined {
+  display: flex;
+  flex-wrap: nowrap;
+
+  * {
+    border-radius: 0;
+  }
+
+  *:first-child {
+    border-radius: 1.5rem 0 0 1.5rem;
+  }
+
+  *:last-child,
+  *:last-child {
+    border-radius: 0 1.5em 1.5em 0;
+  }
+}
+
+.form--stacked {
+  input,
+  button,
+  .button,
+  select,
+  textarea {
+    display: block;
+    margin-top: 1rem;
+    width: 100%;
+
+    @media screen and (min-width: 48em) {
+      width: 80%;
+    }
+  }
+}
+
+.form--large {
+  input,
+  select,
+  textarea {
+    font-size: 1rem;
+    padding: 1.25rem;
+  }
+}
+
+.form--center {
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.form--submitting {
+  opacity: 0.5;
+  position: relative;
+}
+
+.form--submitting::after {
+  animation: rotateCW 0.5s linear infinite;
+  border: 5px solid $color-brand;
+  border-radius: 50%;
+  border-right-color: transparent;
+  content: "";
+  display: block;
+  height: 30px;
+  left: calc(40% - 15px);
+  position: absolute;
+  top: calc(40% - 15px);
+  width: 30px;
+}
+
+.form--submit-fail::before {
+  color: $color-error;
+  content: attr(data-error);
+  display: block;
+  margin: 5px 0;
+}
+
+.form--submit-success * {
+  display: none !important;
+}
+
+.form--submit-success::before {
+  color: $color-brand;
+  content: attr(data-message);
+  display: block !important;
+  font-size: 1.4em;
+  margin: 10px 0;
+}

@@ -1,3 +1,5 @@
+/* eslint-disable no-console */
+/* eslint-disable no-unused-vars */
 import "./imports/sidebarActiveState"
 import contentLoaded from "content-loaded"
 import EQCSS from "eqcss"
@@ -9,6 +11,7 @@ import Search from "./imports/algoliaSearch/instantSearch"
 import SmoothScroll from "./imports/smoothScroll"
 import Shuffle from "shufflejs"
 import Sticky from "./imports/sticky"
+import AjaxForm from "./imports/ajaxForm"
 import {setCodeTabs, initCodeTabs} from "./imports/code-tabs"
 
 window.setCodeTabs = setCodeTabs
@@ -16,12 +19,7 @@ window.setCodeTabs = setCodeTabs
  * Don't fire application logic
  * until the DOM is ready
  */
-console.log("inside scripts")
 contentLoaded().then(() => {
-  console.log("inside content")
-  console.log(process.env.ALGOLIA_APP_ID)
-  console.log(process.env.ALGOLIA_SEARCH_KEY)
-  console.log(process.env.ALGOLIA_ADMIN_KEY)
   const isHome = document.body.classList.contains("home")
   const isDocs = document.body.classList.contains("section-docs")
   const isBlogs = document.body.classList.contains("section-blogs")
@@ -63,8 +61,8 @@ contentLoaded().then(() => {
    * Enable heading links
    */
   const headingLinks = new HeadingLinks([
-    ".technical-blog",
-    ".docs-content .container"
+    ".single-post",
+    ".docs-content .container",
   ])
 
   /**
@@ -77,6 +75,10 @@ contentLoaded().then(() => {
    * Enable position sticky for certain elements
    */
   const sticky = new Sticky([".blog-header--sticky", ".search-header--sticky"])
+
+  /**
+   * Hook up add-site-button generator behavior
+   */
 
   /**
    * Enable lightboxes for images

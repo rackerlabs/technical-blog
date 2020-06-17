@@ -1,0 +1,44 @@
+{{- $isHome := .IsHome -}}
+{{- $isDocs := (eq .Section "docs") -}}
+{{- $isBlogs := (eq .Section "blogs") -}}
+
+<header class="header container{{ if $isDocs }} docs{{ end }}">
+  <div class="left-block">
+    <a href="{{ .Site.BaseURL | relURL }}" title="Go to homepage" class="logo"></a>
+  </div>
+  <div class="right-block">
+    <nav class="nav">
+      <div class="nav-content">
+        <a href="{{ .Site.BaseURL | relURL }}" class="mini-nav--logo"></a>
+        <ul class="main-nav-items">
+          {{- range .Site.Menus.main -}}
+            {{- if eq .Identifier "buynow" -}}
+            <li data-signed-out="true">
+              <a class="buynow-button button small{{ if $isHome }} main secondary{{ else }} primary{{ end }}" href="{{ .URL | relURL }}">{{ .Pre }}{{ .Name }}{{ .Post }}</a>
+            </li>
+            {{- else if eq .Identifier "login" -}}
+              <li class="nav-item" data-signed-out="true">
+                <a class="-button button small{{ if $isHome }} main primary{{ else }} secondary{{ end }}" href="{{ .URL | relURL }}">{{ .Pre }}{{ .Name }}{{ .Post }}</a>
+              </li>
+            {{- else -}}
+            {{- $isMenuCurrent := $.IsMenuCurrent .Menu . -}}
+            {{- $hasMenuCurrent := $.IsMenuCurrent .Menu . -}}
+            <li{{ if eq .Identifier "useraccount" }} data-signed-in="false" data-user{{ end }}>
+              <a href="{{ .URL | relURL }}" class="nav-item{{ if or $isMenuCurrent $hasMenuCurrent }} active{{ end }}">{{ .Pre }}{{ .Name }}{{ .Post }}</a>
+            </li>
+            {{- end -}}
+          {{- end -}}
+        </ul>
+        <div class="search">
+          <input type="search" name="search" placeholder="Search this site" class="search--input">
+        </div>
+        {{- if $isDocs -}}
+          {{- partial "components/sidebar" . -}}
+        {{- end -}}
+      </div>
+    </nav>
+    <div class="mini-nav--toggle">
+     
+    </div>
+  </div>
+</header>

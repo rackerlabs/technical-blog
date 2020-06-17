@@ -1,0 +1,35 @@
+<footer class="footer">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        
+      </div>
+      {{- range .Site.Menus.footer -}}
+      <div class="column">
+        <span class="footer-title">{{ .Name }}</span>
+        {{- if .HasChildren -}}
+        <ul>
+          {{- range .Children -}}
+          <li><a href="{{ .URL }}">{{ .Pre }}{{ .Name }}{{ .Post }}</a></li>
+          {{- end -}}
+        </ul>
+        {{- end -}}
+      </div>
+      {{- end -}}
+  
+      <div class="column">
+        
+      </div>
+  
+    </div>
+  </div>
+  <div class="lower-footer">
+    <div class="container">
+      <div></div>
+      <div class="contact">
+        <ul>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
