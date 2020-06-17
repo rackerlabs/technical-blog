@@ -62,7 +62,7 @@ By default, Hybris provides the following cache regions:
 
 - An ehCacheEntityCacheRegion.
 
-- An unlimited cache for type system region to keep all type system objects in
+- An unlimited cache for the type system region to keep all type system objects in
   memory. This cache does not use an eviction policy.
 
 - A queryCacheRegion for search results.
@@ -70,8 +70,8 @@ By default, Hybris provides the following cache regions:
 #### Eviction policies
 
 An effective cache needs to remove or evict data elements that it no longer needs
-to make room for new ones.  These policies often depend on cache hits or misses
-to make decisions. The term *cache hit*  refers to the successful retrieval of
+to make room for new ones. Eviction policies often depend on cache hits or misses
+to make decisions. The term *cache hit* refers to the successful retrieval of
 data elements from a cache. A *cache miss* occurs when the requested element is
 not in the cache.
 
@@ -105,8 +105,8 @@ The following images show some configuration options:
 ### Tuning
 
 Call the Rackspace Digital team so we can do a deep dive into your caching
-system to ensure that it is performing and make recommendations for your
-application.
+system to ensure that it is performing well. We can make recommendations to improve
+your application.
 
 <a class="cta red" id="cta" href="https://www.rackspace.com/sap">Learn more about our SAP services.</a>
 
