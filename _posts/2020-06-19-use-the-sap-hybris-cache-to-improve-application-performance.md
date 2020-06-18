@@ -4,10 +4,10 @@ title: "Use the SAP Hybris cache to improve application performance"
 date: 2020-06-19 00:01
 comments: true
 author: Sanjiv Kumar
-bio: “Sanjiv is an Application Support Architect who is responsible for
-onboarding  clients with regard to implementation and operations of the eCommerce
-platform.”
 published: true
+bio: "Sanjiv is an Application Support Architect who is responsible for
+onboarding  clients with regard to implementation and operations of the eCommerce
+platform."
 authorIsRacker: true
 categories:
     - General
