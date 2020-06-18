@@ -21,7 +21,4 @@ cta:
   calls_to_action: []
 private: false
 aliases: []
-menu:
-  main:
-    weight: 4
 ---

@@ -10,7 +10,6 @@ fields:
   label: Blocks
   template_types:
   - call-to-action
-  - feature
   - hero
 - type: text
   name: layout

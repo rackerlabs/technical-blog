@@ -14,11 +14,11 @@
           {{- range .Site.Menus.main -}}
             {{- if eq .Identifier "buynow" -}}
             <li data-signed-out="true">
-              <a class="buynow-button button small{{ if $isHome }} main secondary{{ else }} primary{{ end }}" href="{{ .URL | relURL }}">{{ .Pre }}{{ .Name }}{{ .Post }}</a>
+              <a class="buynow-button button small{{ if $isHome }} main primary{{ else }} primary{{ end }}" href="{{ .URL | relURL }}">{{ .Pre }}{{ .Name }}{{ .Post }}</a>
             </li>
             {{- else if eq .Identifier "login" -}}
               <li class="nav-item" data-signed-out="true">
-                <a class="-button button small{{ if $isHome }} main primary{{ else }} secondary{{ end }}" href="{{ .URL | relURL }}">{{ .Pre }}{{ .Name }}{{ .Post }}</a>
+                <a class="-button button small{{ if $isHome }} main secondary{{ else }} secondary{{ end }}" href="{{ .URL | relURL }}">{{ .Pre }}{{ .Name }}{{ .Post }}</a>
               </li>
             {{- else -}}
             {{- $isMenuCurrent := $.IsMenuCurrent .Menu . -}}

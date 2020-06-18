@@ -41,38 +41,78 @@ xhtml = false
 [[menu.docs]]
 name = "Welcome"
 weight = 1
+
 [[menu.footer]]
 name = "Developer Center"
 parent = "Developer Network"
 url = "/"
-weight = 6
+weight = 1
+[[menu.footer]]
+name = "API Documentation and User Guides"
+parent = "Developer Network"
+url = "/"
+weight = 2
+[[menu.footer]]
+name = "SDKs"
+parent = "Developer Network"
+url = "/"
+weight = 3
+[[menu.footer]]
+name = "Rackspace How-To"
+parent = "Developer Network"
+url = "/"
+weight = 4
 [[menu.footer]]
 name = "Technical Blog"
 parent = "Blogs"
 url = "/"
+weight = 5
+[[menu.footer]]
+name = "Rackspace Blog"
+parent = "Blogs"
+url = "/"
+weight = 6
+[[menu.footer]]
+name = "Solve: Thought Leadership"
+parent = "Blogs"
+url = "/"
 weight = 7
 [[menu.footer]]
-name = "Other Information"
-weight = 2
+name = "Customer Stories"
+parent = "Other Information"
+weight = 8
 [[menu.footer]]
-name = "Developer Network"
-weight = 1
+name = "Events"
+parent = "Other Information"
+weight = 9
+[[menu.footer]]
+name = "Programs"
+parent = "Other Information"
+weight = 10
+[[menu.footer]]
+name = "Careers"
+parent = "Other Information"
+weight = 11
+[[menu.footer]]
+name = "Style Guide for Technical Content"
+parent = "Other Information"
+weight = 12
 
 [[menu.main]]
 identifier = "developer_home"
 name = "Developer Home"
 url = "/"
 weight = 1
-# [[menu.main]]
-# identifier = "developer_documentation"
-# name = "Developer Documentation"
-# url = "/docs"
-# weight = 2
-# [[menu.main]]
-# identifier = "blogs"
-# name = "Blogs"
-# url = "/blogs"
-# weight = 3
+[[menu.main]]
+identifier = "developer_documentation"
+name = "Developer Documentation"
+url = "/docs"
+weight = 2
+[[menu.main]]
+identifier = "blogs"
+name = "Blogs"
+url = "/blogs"
+weight = 3
 [[menu.main]]
 identifier = "support_documentation"
 name = "Support Documentation"
@@ -88,6 +128,7 @@ identifier = "login"
 name = "Login"
 url = "/"
 weight = 6
+
 [outputFormats.Algolia]
 baseName = "algolia"
 isPlainText = true

@@ -2,7 +2,6 @@
 title: Developer Documentation
 headline: Developer Documentation
 textline: Welcome to the Developer Documentation!
-weight: 4
 outputs:
 - HTML
 - RSS
@@ -21,7 +20,4 @@ cta:
   calls_to_action: []
 private: false
 aliases: []
-menu:
-  main:
-    weight: 4
 ---
