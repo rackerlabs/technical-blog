@@ -180,8 +180,3 @@ weight = 10
 author = "authors"
 category = "categories"
 tag = "tags"
-
-[[redirects]]
-  from = "/docs/"
-  to = "https://developer.rackspace.com/docs/"
-  status = 200
