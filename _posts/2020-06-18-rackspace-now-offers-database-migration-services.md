@@ -20,7 +20,7 @@ ogTitle: "Rackspace now offers database migration services"
 ogDescription: "Rackspace can help transform your business and migrate your database across technologies and platforms, minimizing risk, disruption, and downtime."
 ---
 
-Many organizations are interested in migrating their database services in order to create cost efficiencies and optimize performance.
+Many organizations are interested in migrating their database services to create cost efficiencies and optimize performance.
 However, companies often lack the necessary expertise and resources to properly perform a migration. Failed migrations can result in
 broken business applications and damaged reputations. Rackspace can help transform your business and migrate your database across
 technologies and platforms, minimizing risk, disruption, and downtime.
@@ -33,7 +33,7 @@ Rackspace database and cloud specialists can assess an organization’s database
 application is leveraging data, discuss your business goals, develop a migration strategy, prepare a detailed migration
 plan, manage the migration, and return each database to production.
 The Database Migration Solution consists of service blocks that give you flexibility to leverage the right level of
-expertise for your business.  You can customize your database migration solution by choosing from the following service blocks:
+expertise for your business. You can customize your database migration solution by choosing from the following service blocks:
 
 
 - Assessment and Strategy
@@ -47,29 +47,29 @@ expertise for your business.  You can customize your database migration solution
 
 **Assessment Workshop:** Rackspace consultants develop an understanding of your database landscape by leading workshops to discover
 overall business goals and targets. This assessment process includes a detailed discovery of the current and future state of your
-database environments as well as a deep dive into the database objects and application touch points.
+database environments and a deep dive into the database objects and application touch points.
 
 **Migration/Transformation Plan:** Rackspace uses database and cloud expertise along with the findings from the Assessment Workshop
 and the database migration tooling output to develop an overall migration or transformation plan.
 
 **Migration Execution:** After developing the migration plan, Rackspace leads the migration by leveraging a continuous process of making
-changes and validating the results to determine if more changes that are necessary.  Once a steady state is achieved, Rackspace specialists
+changes and validating the results to decide if more changes that are necessary. Once a steady state is achieved, Rackspace specialists
 perform full application and database testing and completes the switchover.
 
-**Manage and Optimize:** Rackspace offers multiple support level options for your database environment.  This includes both the management
-of the infrastructure and the database itself.  You can select the service blocks that best fit your technical needs and business goals.
+**Manage and Optimize:** Rackspace offers multiple support level options for your database environment. This includes both the management
+of the infrastructure and the database itself. You can select the service blocks that best fit your technical needs and business goals.
 
 ### Benefits
 
-Complexity and lack of expertise can often slow down or even delay migration and transformation projects.  Rackspace provides expertise
+Complexity and lack of expertise can often slow down or even delay migration and transformation projects. Rackspace provides expertise
 to reduce risk and increase your confidence in achieving your database migration and transformation goals.
 
-The Rackspace team of expert technical consultants, project and program managers provides hands-on management of your project. These
+The Rackspace team of expert technical consultants, project, and program managers provides hands-on management of your project. These
 teams have years of continuous migration experience. They understand the associated challenges and develop mitigation strategies to
 minimize or avoid downtime. 
 
 Rackspace specialists are able to migrate all kinds of customer databases, based on a deep understanding of their business needs.
-They also help customers build confidence and momentum using an agile migration factory approach, applying automation to achieve
+They also help customers build confidence and momentum by using an agile migration factory approach, applying automation to achieve
 sustainable, efficient delivery. This can help improve your time to market and more quickly realize your planned migration benefits.
 
 
