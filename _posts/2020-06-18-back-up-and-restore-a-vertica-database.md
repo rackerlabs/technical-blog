@@ -144,7 +144,7 @@ Perform the following steps to create an object-specific configuration file:
 
 1. List the objects in the database and choose which ones to use. The following
    objects are present in our Vertica database:
- 
+
                  List of tables
          Schema | Name  | Kind  |  Owner  | Comment
         --------+-------+-------+---------+---------
@@ -199,7 +199,7 @@ Take either a full database or an object-level backup.
 ##### Full database backup
 
 Take full database backup by using the previously created configuration file,
-**full_bkp_snap.ini**:
+**full\_bkp\_snap.ini**:
 
     $ vbr.py --task backup --config-file full_bkp_snap.ini
     Please input vertica password:
@@ -213,7 +213,7 @@ Take full database backup by using the previously created configuration file,
 
 ##### Single object backup
 
-Use the configuration file, **tab1_bkp_snap.ini**, to take an object-level backup:
+Use the configuration file, **tab1\_bkp\_snap.ini**, to take an object-level backup:
 
     $ vbr.py --task backup --config-file tab1_bkp_snap.ini
     Please input vertica password:
