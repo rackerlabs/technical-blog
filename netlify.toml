@@ -16,3 +16,5 @@
   from = "/docs"
   to = "https://developer.rackspace.com/docs/"
   status = 200
+  force = true
+  headers = {X-From = "Netlify"}
