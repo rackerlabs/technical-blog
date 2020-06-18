@@ -13,6 +13,6 @@
   package = "netlify-plugin-algolia-index"
 
 [[redirects]]
-  from = "/docs/"
+  from = "/docs"
   to = "https://developer.rackspace.com/docs/"
   status = 200
