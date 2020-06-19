@@ -2,43 +2,55 @@
 {{- $isDocs := (eq .Section "docs") -}}
 {{- $isBlogs := (eq .Section "blogs") -}}
 
-<header class="header container{{ if $isDocs }} docs{{ end }}">
+<header class="header buttons-header">
+  <div class="left-block"></div>
+  <div class="right-block">
+    <nav class="nav">
+      <ul class="buttons-nav-items">
+        {{- range .Site.Menus.buttons -}}
+        {{- if eq .Identifier "buynow" -}}
+        <li lass="nav-item" data-signed-out="true">
+          <a class="buynow-button button small primary"
+            href="{{ .URL | relURL }}">{{ .Pre }}{{ .Name }}{{ .Post }}</a>
+        </li>
+        {{- else if eq .Identifier "login" -}}
+        <li class="nav-item" data-signed-out="true">
+          <a class="login-button button small secondary"
+            href="{{ .URL | relURL }}">{{ .Pre }}{{ .Name }}{{ .Post }}</a>
+        </li>
+        {{- end -}}
+        {{- end -}}
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<header class="header {{ if $isDocs }} docs{{ end }}">
   <div class="left-block">
     <a href="{{ .Site.BaseURL | relURL }}" title="Go to homepage" class="logo"></a>
   </div>
   <div class="right-block">
     <nav class="nav">
-      <div class="nav-content">
-        <a href="{{ .Site.BaseURL | relURL }}" class="mini-nav--logo"></a>
-        <ul class="main-nav-items">
-          {{- range .Site.Menus.main -}}
-            {{- if eq .Identifier "buynow" -}}
-            <li data-signed-out="true">
-              <a class="buynow-button button small{{ if $isHome }} main primary{{ else }} primary{{ end }}" href="{{ .URL | relURL }}">{{ .Pre }}{{ .Name }}{{ .Post }}</a>
-            </li>
-            {{- else if eq .Identifier "login" -}}
-              <li class="nav-item" data-signed-out="true">
-                <a class="-button button small{{ if $isHome }} main secondary{{ else }} secondary{{ end }}" href="{{ .URL | relURL }}">{{ .Pre }}{{ .Name }}{{ .Post }}</a>
-              </li>
-            {{- else -}}
-            {{- $isMenuCurrent := $.IsMenuCurrent .Menu . -}}
-            {{- $hasMenuCurrent := $.IsMenuCurrent .Menu . -}}
-            <li{{ if eq .Identifier "useraccount" }} data-signed-in="false" data-user{{ end }}>
-              <a href="{{ .URL | relURL }}" class="nav-item{{ if or $isMenuCurrent $hasMenuCurrent }} active{{ end }}">{{ .Pre }}{{ .Name }}{{ .Post }}</a>
-            </li>
-            {{- end -}}
+      <a href="{{ .Site.BaseURL | relURL }}" class="mini-nav--logo"></a>
+      <ul class="main-nav-items">
+        {{- range .Site.Menus.main -}}
+        {{- $isMenuCurrent := $.IsMenuCurrent .Menu . -}}
+        {{- $hasMenuCurrent := $.IsMenuCurrent .Menu . -}}
+        <li>
+          <a href="{{ .URL | relURL }}"
+            class="nav-item{{ if or $isMenuCurrent $hasMenuCurrent }} active{{ end }}">{{ .Pre }}{{ .Name }}{{ .Post }}</a>
+          </li>
           {{- end -}}
-        </ul>
-        <div class="search">
-          <input type="search" name="search" placeholder="Search this site" class="search--input">
-        </div>
-        {{- if $isDocs -}}
-          {{- partial "components/sidebar" . -}}
-        {{- end -}}
+      </ul>
+      <div class="search">
+        <input type="search" name="search" placeholder="Search this site" class="search--input">
       </div>
+      {{- if $isDocs -}}
+      {{- partial "components/sidebar" . -}}
+      {{- end -}}
     </nav>
     <div class="mini-nav--toggle">
-     
+
     </div>
   </div>
 </header>

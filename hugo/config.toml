@@ -118,12 +118,12 @@ identifier = "support_documentation"
 name = "Support Documentation"
 url = "/"
 weight = 4
-[[menu.main]]
+[[menu.buttons]]
 identifier = "buynow"
 name = "Buy Now"
 url = "/"
 weight = 5
-[[menu.main]]
+[[menu.buttons]]
 identifier = "login"
 name = "Login"
 url = "/"
