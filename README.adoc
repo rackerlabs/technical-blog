@@ -3,7 +3,7 @@
 
 = Technical Blog
 
-Netlify Status link:https://api.netlify.com/api/v1/badges/a0eb2d60-7930-4060-b508-7a4c0abcbea6/deploy-status/[https://app.netlify.com/sites/dazzling-beaver-e1c3bb/deploys]
+link:https://api.netlify.com/api/v1/badges/a0eb2d60-7930-4060-b508-7a4c0abcbea6/deploy-status/[Netlify Status]link:https://app.netlify.com/sites/dazzling-beaver-e1c3bb/deploys/[Deploys]
 
 toc::[]
 
