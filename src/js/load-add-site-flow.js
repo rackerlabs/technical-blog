@@ -1,9 +1,11 @@
+/* eslint-disable no-console */
+/* eslint-disable compat/compat */
 console.log("Load add site flow")
 const addSiteHost = "/"
 fetch(addSiteHost + "asset-manifest.json", {
   headers: {
-    "Content-Type": "application/json"
-  }
+    "Content-Type": "application/json",
+  },
 })
   .then((response) => response.json())
   .then(addManifestFiles)

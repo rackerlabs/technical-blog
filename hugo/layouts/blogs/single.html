@@ -1,0 +1,80 @@
+{{- define "main" -}}
+  <div id="root"></div>
+  <div id="modal-root"></div>
+  <main id="post-container" class="single-post">
+    {{- with .Params.images -}}
+      {{- range first 1 . -}}
+        <div class="post--feature-image">
+            
+        </div>
+      {{- end -}}
+    {{- end -}}
+    <div class="container">
+      <h1 class="post--title">{{ .Params.headline | default .Title }}</h1>
+      <div class="post--meta">
+        {{- with .Params.authors -}}
+        <div class="author">
+          <span class="post--meta-label">Written by</span>
+          {{- range . -}}
+            {{- $authorName := . -}}
+            {{- range $.Site.Data.authors.authors -}}
+              {{- if eq (urlize .fullName) (urlize $authorName) -}}
+              <a href="{{ "/authors/" | relURL }}{{ .fullName | urlize }}/" class="author--wrapper">
+                <div class="author--avatar">
+                  <img src="{{ .avatar }}" alt="{{ .fullName | default .avatar }}">
+                </div>
+                <div class="author--info">
+                  <span class="author--name">{{ .fullName }}</span>
+                  <span class="author--title">{{ .title }}</span>
+                </div>
+              </a>
+              {{- end -}}
+            {{- end -}}
+          {{- end -}}
+        </div>
+        {{- end -}}
+        <div class="post--info">
+          <span class="post--meta-label">Posted on</span>
+          <span class="post--date">
+            {{- with .GitInfo -}}
+              <a href="{{$.Site.Params.ghrepo}}/commit/{{ .Hash }}" target="_blank">
+            {{- end -}}
+            {{ .Date.UTC.Format $.Site.Params.dateformat }}
+            {{- with .GitInfo -}}
+              </a>
+            {{- end -}}
+          </span>
+          {{- with .Params.categories -}}
+          {{- $len := len . -}}
+          <span>in {{ range $index, $value := . }}
+            <a href="{{ relURL "/categories/"}}{{ urlize $value }}" class="post--category" data-category="{{ $value | lower }}">
+              {{ $value | humanize }}
+            </a>{{ if not (eq $len ($index | add 1)) }}, {{- end -}}
+            {{- end -}}</span>
+          {{- end -}}
+        </div>
+      </div>
+
+ 
+
+      <hr />
+
+      {{- if not .Params.hideAbout -}}
+      <div class="post--about">
+        {{- range $.Site.Data.authors.authors -}}
+        <h2>About {{ .fullName }}</h2>
+        {{ markdownify .bio }}
+       {{- end -}}
+      </div>
+      {{- end -}}
+    
+    
+    </div>
+
+  </main>
+
+    {{- with .Params.cta -}}
+      {{- partial "components/cta/slide-in" . -}}
+    {{- end -}}
+  {{- partial "components/cta/basic" .Params.cta -}}
+{{- end -}}

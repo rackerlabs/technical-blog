@@ -3,4 +3,4 @@
  * and Google Tag Manager to decide if an adblocker
  * is running
  */
-window.canRunAds = false
+window.canRunAds = true

@@ -1,60 +1,25 @@
-{{ partial "head.html" . }}
+{{- define "main" -}}
+  <main class="single-post">
+    {{- with .Params.images -}}
+      {{- range first 1 . -}}
+        <div class="post--feature-image">
+            {{ partial "cloudinary/image" (dict "pg" $ "image" . "alt" ($.Params.headline | default $.Title) "width" "auto:100:760" "dpr" "auto" "quality" "70") }}
+        </div>
+      {{- end -}}
+    {{- end -}}
+    <div class="container">
+      <h1 class="post--title">{{ .Params.headline | default .Title }}</h1>
+      <div class="post--meta">
+        <div class="post--info">
+          <span class="post--meta-label">Last updated</span>
+          <span class="post--date">{{ .Lastmod.UTC.Format .Site.Params.dateFormat }}</span>
+        </div>
+      </div>
+      <div class="md-content">
+          {{ partial "cloudinary/content" (dict "pg" $  "preset" "content") }}
+      </div>
+    </div>
+  </main>
 
-<body>
-      {{ partial "masthead.html" . }}
-      {{ partial "posts/header-cover.html" . }}
-  <div class="row postShorten">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-6">
-      <article class="post" itemscope itemType="http://schema.org/BlogPosting">
-        {{ partial "posts/header.html" . }}
-        <div class="row">
-          <div class="col-sm-1 post-avatar racker">
-            <img src='/img/avatar-default.svg' />
-          </div>
-          <div class="col-sm-10 post-author-container">
-            <a class="post-author" href="/blog/authors/{{ .Params.Author}}">{{ .Params.Author }}</a>
-            |
-            {{ partial "posts/meta" . }}
-            <br />
-            {{ partial "posts/category.html" . }}
-          </div>
-        </div>
-        <div class="post-content markdown" itemprop="articleBody">
-          <div class="main-content-wrap">
-            {{ (replaceRE "<!--\\s*[t|T][o|O][c|C]\\s*-->" (printf "<h1 id=\"table-of-contents\">%s</h1>%s" (i18n "posts.toc") .TableOfContents) .Content) | safeHTML }}
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12">
-            {{ if .Params.Bio }}
-            <div class="author-bio">
-              <div class="avatar racker">
-                {{ if .Params.AuthorAvatar }}
-                <img src="{{ .Params.AuthorAvatar }}" alt="{{ .Params.Author }}">
-                {{ else }}
-                <img src="https://randomuser.me/api/portraits/lego/1.jpg" alt="Placeholder Avatar">
-                {{ end }}
-              </div>
-              <div class="author-info">
-                <span class="name">{{ .Params.Author }}</span>
-                <div class="bio">{{ .Params.Bio }}</div>
-              </div>
-            </div>
-            {{ end }}
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12">
-            {{ partial "posts/share-options.html" }}
-          </div>
-        </div>
-      </article>
-    </div>
-    <div class="col-sm-2"></div>
-    <div class="col-sm-2">
-      {{ partial "sidebar.html" }}
-    </div>
-  </div>
-  {{ partial "mastfoot.html" . }}
-</body>
+  {{- partial "components/cta/basic" .Params.cta -}}
+{{- end -}}

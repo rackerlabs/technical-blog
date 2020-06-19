@@ -4,7 +4,17 @@
 
 [build]
   command = "yarn build"
-  publish = "public"
+  publish = "dist"
 
 [context.deploy-preview]
   command = "yarn build:preview"
+
+[[plugins]]
+  package = "netlify-plugin-algolia-index"
+
+[[redirects]]
+  from = "/docs"
+  to = "https://developer.rackspace.com/docs/"
+  status = 200
+  force = true
+  headers = {X-From = "Netlify"}

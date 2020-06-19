@@ -23,7 +23,6 @@ import through from "through2"
 import webpack from "webpack-stream"
 import webpackConfig from "./.webpackrc.js"
 
-
 const browserSync = BrowserSync.create()
 const gulpConfig = GulpConfig()
 const generatorEnvVar = gulpConfig.generator.label.toUpperCase() + "_ENV"

@@ -3,7 +3,6 @@
 import dotenv from "dotenv"
 import fs from "fs"
 import webpack from "webpack"
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 /**
  * Load env vars from .env if available

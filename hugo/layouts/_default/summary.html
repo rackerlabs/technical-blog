@@ -1,35 +1,14 @@
-<article class="postShorten">
-  <div class="postShorten-wrap">
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-        <a class="link-unstyled" href="{{ .Permalink }}">
-          {{ .Title }}
-        </a>
-      </h1>
-      <div class="row">
-        <div class="col-sm-2 col-md-2 col-lg-1 post-avatar racker">
-          <img src='/img/avatar-default.svg' />
-        </div>
-        <div class="col-sm-9 post-author-container"> 
-          <a class="post-author" href="/blog/authors/{{ .Params.Author}}">{{ .Params.Author }}</a>
-          |
-          {{ partial "posts/meta" . }}
-          <br />
-          {{ partial "posts/category.html" . }}
-        </div>
-      </div>
-    </div>
-    <div class="postShorten-excerpt row" itemprop="articleBody">
-      <div class="cols-m-12">
-        <p>
-          {{ if .Params.MetaDescription }}
-          {{ .Params.MetaDescription | markdownify }}
-          {{ else }}
-          {{ .Summary }}
-          {{ end }}
-        </p>
-          <a href="{{ .Permalink }}" class="postShorten-read-more">{{ i18n "posts.read_more" }}</a>
-      </div>
-    </div>
+<article class="blog-post">
+  <div class="post-meta">
+    <span class="post-date">{{ .Date.UTC.Format .Site.Params.dateFormat }}</span>
+    <span class="post-category" data-category="{{ .Section }}">{{ .Section }}</span>
   </div>
+  <a href="{{ .RelPermalink | relURL }}"><h2 class="post-title">{{ .Params.headline | default .Title }}</h2></a>
+  <p class="post-excerpt">
+    {{- if .Summary -}}
+      {{ plainify (htmlUnescape (markdownify .Summary)) }}
+    {{ else  }}
+      {{ .Content | safeHTML | truncate 140 }}
+    {{- end -}}
+  </p>
 </article>

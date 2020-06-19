@@ -1,25 +1,14 @@
-{{ partial "head.html" . }}
-  <body>
-        {{ partial "masthead.html" . }}
-  
-    <div class="row" id="blog">
-      <div class="col-sm-2">
-
-      </div>
-      <div class="col-sm-6">
-          <section class="postShorten-group main-content-wrap">
-            {{ $paginator := .Paginate (where .Site.RegularPages "Type" "posts") }}
-            {{ range $paginator.Pages }}
-              {{ .Render "summary" }}
-            {{ end }}
-            {{ partial "pagination.html" . }}
-          </section>
-      </div>
-      <div class="col-sm-2">
-
-      </div>
-      <div class="col-sm-2">
-        {{ partial "sidebar.html" }}
-      </div>
-    </div>
-{{ partial "mastfoot.html" . }}
+{{- define "json-ld" -}}
+  {{- partial "seo/json-ld/organization" . -}}
+  {{- partial "seo/json-ld/search" . -}}
+  {{- partial "seo/json-ld/index" . -}}
+{{- end -}}
+{{- define "main" -}}
+<div id="root">
+  {{- partial "components/hero" .Params.hero }}
+  {{- partial "components/announcement" . -}}
+  {{- partial "components/docs" . -}}
+  {{- partial "components/rack-cli" . -}}
+</div>
+<div id="modal-root"></div>
+{{- end -}}
