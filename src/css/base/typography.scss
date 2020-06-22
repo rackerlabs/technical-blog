@@ -9,9 +9,6 @@ body {
   word-break: break-word;
 }
 
-a {
-  font-weight: 500;
-}
 
 p {
   color: $color-copy;
@@ -192,4 +189,10 @@ tr:nth-child(odd) td {
       margin-left: -20%;
     }
   }
+}
+
+a, a:visited {
+  color: #3498db;
+  cursor: pointer;
+  text-decoration: none;
 }

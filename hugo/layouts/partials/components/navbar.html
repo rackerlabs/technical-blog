@@ -2,8 +2,9 @@
 {{- $isDocs := (eq .Section "docs") -}}
 {{- $isBlogs := (eq .Section "blogs") -}}
 
+
 <header class="header buttons-header">
-  <div class="left-block"></div>
+  <div class="block"></div>
   <div class="right-block">
     <nav class="nav">
       <ul class="buttons-nav-items">
@@ -32,25 +33,14 @@
   <div class="right-block">
     <nav class="nav">
       <a href="{{ .Site.BaseURL | relURL }}" class="mini-nav--logo"></a>
-      <ul class="main-nav-items">
-        {{- range .Site.Menus.main -}}
-        {{- $isMenuCurrent := $.IsMenuCurrent .Menu . -}}
-        {{- $hasMenuCurrent := $.IsMenuCurrent .Menu . -}}
-        <li>
-          <a href="{{ .URL | relURL }}"
-            class="nav-item{{ if or $isMenuCurrent $hasMenuCurrent }} active{{ end }}">{{ .Pre }}{{ .Name }}{{ .Post }}</a>
-          </li>
-          {{- end -}}
-      </ul>
-      <div class="search">
-        <input type="search" name="search" placeholder="Search this site" class="search--input">
-      </div>
+      {{- partial "components/navbar_nav.html" .Site.Menus.main . -}}
       {{- if $isDocs -}}
       {{- partial "components/sidebar" . -}}
       {{- end -}}
     </nav>
-    <div class="mini-nav--toggle">
-
-    </div>
+    <div class="mini-nav--toggle"></div>
+  </div>
+  <div class="search">
+    <input type="search" name="search" placeholder="Search this site" class="search--input">
   </div>
 </header>

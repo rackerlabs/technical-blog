@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-top: 8rem;
+  padding-top: 4rem;
 
   @media screen and (min-width: 800px) {
     flex-direction: row;
@@ -55,8 +55,6 @@
 
   .post-title,
   .doc-title {
-    font-size: 2rem;
-    line-height: 1.25;
     margin-bottom: 0.5rem;
     margin-top: 0;
     color: #3498db;
@@ -92,5 +90,25 @@ img[src$="cloudformation-launch-stack.png"] {
   background-position: 50% 50%;
   background-size: cover;
   z-index: 1;
-  padding: 120px 60px 60px 35px;
+  padding: 90px 60px 90px 35px;
+  h1 {
+    font-family: "titillium-light",arial,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    background: rgba(255,255,255,.55);
+    display: inline-block;
+    font-size: 35px;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    padding: 40px .5em;
+    width: 100%;
+    background: 0 0;
+    padding: 0;
+  }
+  .tagline {
+    display: block;
+    font-size: 15px;
+    text-transform: uppercase;
+}
 }

@@ -39,95 +39,114 @@ hardWraps = false
 unsafe = false
 xhtml = false
 [[menu.docs]]
-name = "Welcome"
-weight = 1
+    name = "Welcome"
+    weight = 1
 
 [[menu.footer]]
-name = "Developer Center"
-parent = "Developer Network"
-url = "/"
-weight = 1
+    name = "Developer Center"
+    parent = "Developer Network"
+    url = "/"
+    weight = 1
 [[menu.footer]]
-name = "API Documentation and User Guides"
-parent = "Developer Network"
-url = "/"
-weight = 2
+    name = "API Documentation and User Guides"
+    parent = "Developer Network"
+    url = "/"
+    weight = 2
 [[menu.footer]]
-name = "SDKs"
-parent = "Developer Network"
-url = "/"
-weight = 3
+    name = "SDKs"
+    parent = "Developer Network"
+    url = "/"
+    weight = 3
 [[menu.footer]]
-name = "Rackspace How-To"
-parent = "Developer Network"
-url = "/"
-weight = 4
+    name = "Rackspace How-To"
+    parent = "Developer Network"
+    url = "/"
+    weight = 4
 [[menu.footer]]
-name = "Technical Blog"
-parent = "Blogs"
-url = "/"
-weight = 5
+    name = "Technical Blog"
+    parent = "Blogs"
+    url = "/"
+    weight = 5
 [[menu.footer]]
-name = "Rackspace Blog"
-parent = "Blogs"
-url = "/"
-weight = 6
+    name = "Rackspace Blog"
+    parent = "Blogs"
+    url = "/"
+    weight = 6
 [[menu.footer]]
-name = "Solve: Thought Leadership"
-parent = "Blogs"
-url = "/"
-weight = 7
+    name = "Solve: Thought Leadership"
+    parent = "Blogs"
+    url = "/"
+    weight = 7
 [[menu.footer]]
-name = "Customer Stories"
-parent = "Other Information"
-weight = 8
+    name = "Customer Stories"
+    parent = "Other Information"
+    weight = 8
 [[menu.footer]]
-name = "Events"
-parent = "Other Information"
-weight = 9
+    name = "Events"
+    parent = "Other Information"
+    weight = 9
 [[menu.footer]]
-name = "Programs"
-parent = "Other Information"
-weight = 10
+    name = "Programs"
+    parent = "Other Information"
+    weight = 10
 [[menu.footer]]
-name = "Careers"
-parent = "Other Information"
-weight = 11
+    name = "Careers"
+    parent = "Other Information"
+    weight = 11
 [[menu.footer]]
-name = "Style Guide for Technical Content"
-parent = "Other Information"
-weight = 12
+    name = "Style Guide for Technical Content"
+    parent = "Other Information"
+    weight = 12
 
 [[menu.main]]
-identifier = "developer_home"
-name = "Developer Home"
-url = "/"
-weight = 1
+    identifier = "developer_home"
+    name = "Developer Home"
+    url = "/"
+    weight = 1
 [[menu.main]]
-identifier = "developer_documentation"
-name = "Developer Documentation"
-url = "/docs"
-weight = 2
+    identifier = "developer_documentation"
+    name = "Developer Documentation"
+    url = "/docs"
+    weight = 2
 [[menu.main]]
-identifier = "blogs"
-name = "Blogs"
-url = "/blogs"
-weight = 3
+    identifier = "blogs"
+    name = "Blogs"
+    url = "#"
+    post = "&#9660;"
+    weight = 3
+    [[menu.main]]
+        identifier = "technical-blog"
+        name ="Technical Blog"
+        url ="/blogs"
+        weight = 1
+        parent = "blogs"
+    [[menu.main]]
+        identifier = "rackspace-blog"
+        name = "Rackspace Blog"
+        url = "/rackspace-blog"
+        weight = 2
+        parent = "blogs"
+    [[menu.main]]
+        identifier = "solve"
+        name = "Solve: Thought Leadership"
+        url = "/solve"
+        weight = 3
+        parent = "blogs"
 [[menu.main]]
-identifier = "support_documentation"
-name = "Support Documentation"
-url = "/"
-weight = 4
+    identifier = "support_documentation"
+    name = "Support Documentation"
+    url = "/"
+    weight = 4
 [[menu.buttons]]
-identifier = "buynow"
-name = "Buy Now"
-url = "/"
-weight = 5
+    identifier = "buynow"
+    name = "Buy Now"
+    url = "/"
+    weight = 5
 [[menu.buttons]]
-identifier = "login"
-name = "Login"
-url = "/"
-weight = 6
+    identifier = "login"
+    name = "Login"
+    url = "/"
+    weight = 6
 
 [outputFormats.Algolia]
 baseName = "algolia"
