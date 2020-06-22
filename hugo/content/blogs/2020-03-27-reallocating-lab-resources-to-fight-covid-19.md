@@ -66,7 +66,7 @@ BOINC script runner looks like this:
 
     #!/bin/bash
     sudo apt-get install -y docker.io
-    docker run -ti -d --name boinc -e “boincurl=http://boinc.bakerlab.org/rosetta” \
+    docker run -ti -d --name boinc -e “boincurl=https://boinc.bakerlab.org/rosetta” \
     -e “boinckey=<our_BOINC_key> antonym/boinc
 
 By using this capability, we easily reallocated the available portions of our

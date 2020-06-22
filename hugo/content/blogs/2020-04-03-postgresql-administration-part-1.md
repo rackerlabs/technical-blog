@@ -54,7 +54,7 @@ as the popular PostGIS geospatial database extender.
 
 ![]({% asset_path 2020-04-03-postgresql-administration-part-1/Picture1.png %})
 
-*Image Source*: [http://postgresql-database.blogspot.com/2013/08/postgresql-architecture.html](http://postgresql-database.blogspot.com/2013/08/postgresql-architecture.html)
+*Image Source*: [https://postgresql-database.blogspot.com/2013/08/postgresql-architecture.html](https://postgresql-database.blogspot.com/2013/08/postgresql-architecture.html)
 
 ### Support
 
@@ -63,7 +63,7 @@ Production support SLA's available from the following companies:
 - [https://www.enterprisedb.com](https://www.enterprisedb.com)
 - [https://www.2ndquadrant.com/](https://www.2ndquadrant.com/)
 - [https://www.revsys.com/](https://www.revsys.com/)
-- [http://imperoit.com/PostgreSQL_Support.htm](http://imperoit.com/PostgreSQL_Support.htm)
+- [https://imperoit.com/PostgreSQL_Support.htm](https://imperoit.com/PostgreSQL_Support.htm)
 
 Supported Versions: Current (12) / 11 / 10 / 9.6 / 9.5 / 9.4
 Development Versions: devel
@@ -93,7 +93,7 @@ Create an empty folder for the database installation.
 Run the following command to download the Red Hat Package Manager (RPM) for your
 OS version to start the Postgres installation:
 
-    [root@snwdbsolpeprod01 postt]# wget http://yum.postgresql.org/9.3/redhat/rhel-7-x86_64/pgdg-redhat93-9.3-2.noarch.rpm
+    [root@snwdbsolpeprod01 postt]# wget https://yum.postgresql.org/9.3/redhat/rhel-7-x86_64/pgdg-redhat93-9.3-2.noarch.rpm
 
 #### Install the RPM
 

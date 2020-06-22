@@ -68,7 +68,7 @@ But don't worry, this is not some stale sales pitch. The concept of blocks (and 
 
 Personally, I hardly qualify as a proper developer, let alone a game developer. But I knew I wanted to build something that could be run just about anywhere on non-specific hardware, and that would be easy to maintain and support, which lead me to explore the possibility of creating **Tetris** based on **HTML5** and client-side only code. 
 
-Luckily, some kind souls already did all the hard work and developed an open-source **Tetris HTML5** clone with theme support. I cannot praise them enough, and I've tried to reach out to see if we can somehow compensate them for their hard work. Kudos to the people at **Aerolab** and their project [Blockrain.js](http://aerolab.github.io/blockrain.js/)! 
+Luckily, some kind souls already did all the hard work and developed an open-source **Tetris HTML5** clone with theme support. I cannot praise them enough, and I've tried to reach out to see if we can somehow compensate them for their hard work. Kudos to the people at **Aerolab** and their project [Blockrain.js](https://aerolab.github.io/blockrain.js/)! 
 
 I created a custom theme around GCP and Rackspace, included our **Service Blocks**, adjusted some of the game files for additional customization, and hosted the game on blob storage, the result of which can be found [here](https://kubertetris.thirdpartytools.net/index.html). **NB - Works best in Chrome and not on mobile!**
 

@@ -6,7 +6,7 @@ comments: true
 author: Karissa Booth
 published: true
 authorIsRacker: true
-authorAvatar: 'http://0.gravatar.com/avatar/c5a8a633797f4b8c85b5b5bad605cd18'
+authorAvatar: 'https://0.gravatar.com/avatar/c5a8a633797f4b8c85b5b5bad605cd18'
 categories:
     - Salesforce
 metaTitle: "Are you using your marketing automation platform to its full capacity?"

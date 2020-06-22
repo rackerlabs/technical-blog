@@ -6,7 +6,7 @@ comments: true
 author: Karissa Booth
 published: true
 authorIsRacker: true
-authorAvatar: 'http://0.gravatar.com/avatar/c5a8a633797f4b8c85b5b5bad605cd18'
+authorAvatar: 'https://0.gravatar.com/avatar/c5a8a633797f4b8c85b5b5bad605cd18'
 bio: "Karisa is an experienced Cloud Architect with a demonstrated history of
 working in the information technology and services industry. She is skilled in
 working with a variety of verticals including non-profit organizations, higher

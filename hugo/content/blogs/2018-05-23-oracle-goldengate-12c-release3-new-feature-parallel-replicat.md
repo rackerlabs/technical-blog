@@ -6,7 +6,7 @@ comments: false
 author: Ravi Kant Sharma
 published: true
 authorIsRacker: true
-authorAvatar: 'http://0.gravatar.com/avatar/c7776b42759c729500163fc6588221ac'
+authorAvatar: 'https://0.gravatar.com/avatar/c7776b42759c729500163fc6588221ac'
 bio: "I am ambitious and driven. I thrive on challenge and constantly set goals
 for myself, so I have something to strive toward. I’m not comfortable with
 settling, and I’m always looking for an opportunity to do better and achieve
@@ -113,7 +113,7 @@ adminclient:
 
 2. Enter the following command to connect to the Service Manager deployment source:
 
-        adminclient> connect http://<host>:<port> deployment <deploment> as <security user> password <password>
+        adminclient> connect https://<host>:<port> deployment <deploment> as <security user> password <password>
 
 3. Enter the following command to create the Parallel Replicat process:
 

@@ -32,7 +32,7 @@ collection.
 Many MongoDB-as-a-Service companies, including [ObjectRocket](https://www.objectrocket.com/),
 offer an easy way to do this right in the user interface (UI). Seasoned MongoDB
 users typically start with an object-document mapper (ODM), such as
-[Mongoose](https://mongoosejs.com/) for JavaScript&reg; or [Mongoengine](http://mongoengine.org/)
+[Mongoose](https://mongoosejs.com/) for JavaScript&reg; or [Mongoengine](https://mongoengine.org/)
 for Python&reg;, so they can build a consistent schema for their application and
 reduce typos. ODMs also do type validation, so you don't accidentally put a
 string in a field that has integers and has math applied to it.

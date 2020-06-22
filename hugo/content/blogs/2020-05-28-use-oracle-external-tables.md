@@ -124,7 +124,7 @@ regular table:
 
 ![]({% asset_path 2020-05-28-use-oracle-external-tables/Picture1.png %})
 
-*Image Source*: [http://dba.fyicenter.com/faq/oracle/Load-Data-from-External-Tables.html](http://dba.fyicenter.com/faq/oracle/Load-Data-from-External-Tables.html)
+*Image Source*: [https://dba.fyicenter.com/faq/oracle/Load-Data-from-External-Tables.html](https://dba.fyicenter.com/faq/oracle/Load-Data-from-External-Tables.html)
 
 ### Conclusion
 
