@@ -35,10 +35,11 @@ plan, manage the migration, and return each database to production.
 The Database Migration Solution consists of service blocks that give you the flexibility to leverage the right level of
 expertise for your business. You can customize your database migration solution by choosing from the following service blocks:
 
-- Assessment and Strategy
+- Assessment & Strategy
 - Process Transformation
 - Migration Services
-- Essentials/Manage and Operate
+- Platform Essentials
+- Manage & Operate
 - DBA Services
 
 ### Available services
@@ -51,7 +52,7 @@ database environments and a deep dive into the database objects and application 
 and the database migration tooling output to develop an overall migration or transformation plan.
 
 **Migration execution:** After developing the migration plan, Rackspace leads the migration by leveraging a continuous process of making
-changes and validating the results to decide if more changes are necessary. After achivving a steady state, Rackspace specialists
+changes and validating the results to decide if more changes are necessary. After achieving a steady state, Rackspace specialists
 perform full application and database testing and complete the switchover.
 
 **Manage and optimize:** Rackspace offers multiple support level options for your database environment, which include the  management of both the infrastructure and the database. You can select the service blocks that best fit your technical needs and business goals.
@@ -71,7 +72,7 @@ They also help you build confidence and momentum by using an agile migration-f
 
 ### Conclusion
 
-Complex Database Migration Services minimize your business risk when transitioning key databases to a new platform or technology.
+Complex database migration services minimize your business risk when transitioning key databases to a new platform or technology.
 Rackspace has an experienced team of experts to help you through this process.
 
 <a class="cta blue" id="cta" href="https://www.rackspace.com/dba-services">Learn more about Databases.</a>
