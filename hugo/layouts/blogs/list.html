@@ -7,27 +7,8 @@
   </div>
   {{- partial "components/announcement" . -}}
   <div class="container">
-    <!-- <section class="blog-header">
-        <div class="blog-header--sticky">
-          <h1 class="blog-header--title">{{ .Params.headline | default .Title }}</h1>
-          <p class="blog-header--description">
-            {{- if .Summary -}}
-              {{ .Summary }}
-            {{- else -}}
-              {{ .Params.textline }}
-            {{- end -}}
-          </p>
-          
-        </div>
-      </section> -->
-    <section>
-      <div></div>
-    </section>
     <section class="section section-blogs-list">
-      {{- range where .Paginator.Pages "Params.featured" "eq" true -}}
-      {{ .Render "summary" }}
-      {{- end -}}
-      {{- range where .Paginator.Pages "Params.featured" "ne" true -}}
+      {{- range .Paginator.Pages -}}
       {{ .Render "summary" }}
       {{- end -}}
       {{- partial "components/pagination/paginator" . -}}

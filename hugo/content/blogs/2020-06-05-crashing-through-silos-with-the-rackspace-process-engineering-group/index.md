@@ -30,16 +30,16 @@ organizations into core Rackspace tooling. Enter the Process Engineering Group
 (PEG)."
 ---
 
-<img class="blog-post right" src="Picture1.png"/>Let's face it.
+<img class="blog-post-img" src="/img/Picture1.png"/>Let's face it.
 Every business unintentionally develops silos or divisions within business units,
 and Rackspace is no different. A grassroots foundation that needs to be agile,
 competitive, and innovative, might enter markets without fully integrating
 organizations into core Rackspace tooling. Enter the Process Engineering Group
 (PEG).
 
-<!-- more -->
+<!--more-->
 
-<img class="blog-post right" src="Picture2.png"/>PEG,
+<img class="blog-post-img" src="Picture2.png"/>PEG,
 established in April 2014, is eighteen strong and pioneered this needed
 innovation, all while powering what would take thousands to accomplish. PEG
 operates as an extension of all Rackspace teams. They provide automation using

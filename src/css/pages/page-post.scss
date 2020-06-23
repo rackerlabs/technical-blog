@@ -31,16 +31,16 @@
     }
   }
 
-  > .container:first-child .post--title {
+  >.container:first-child .post--title {
     margin-top: 3rem;
   }
 
-  .post--feature-image + .container > .post--title {
+  .post--feature-image+.container>.post--title {
     margin-top: 2rem;
   }
 
   @media screen and (min-width: 760px) {
-    > .post--feature-image:first-child {
+    >.post--feature-image:first-child {
       margin-top: 4rem;
     }
   }
@@ -216,14 +216,7 @@
       margin-top: 0;
     }
 
-
-    .post-date {
-      color: $color-medium-dark;
-      font-weight: 600;
-    }
-
     .post-category {
-      font-weight: 600;
       margin-left: 0.5rem;
     }
 
@@ -287,30 +280,69 @@
 .blog-post {
   margin-bottom: 2rem;
   max-width: 600px;
+  border-bottom: solid 1px #e6e6e6;
+
   .post-title {
     color: #3498db;
     line-height: 1.25;
     margin-bottom: 0.5rem;
     margin-top: 0;
-    font-family: 'titillium-regular',arial,sans-serif;
+    font-family: 'titillium-regular', arial, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 2rem;
   }
+
   .post-meta {
-    font-size: 0.8rem;
+    font: inherit;
     margin-bottom: 0.5rem;
-    text-transform: uppercase;
   }
-  .post-avatar{
+
+  .post-avatar {
     float: left;
     height: 64px;
     margin-right: 10px;
     width: 64px;
+    display: block;
+    position: relative;
+
     img {
       display: block;
       height: 64px;
       width: 64px;
     }
+  }
+
+  .post-avatar::after {
+    content: 'RACKER';
+    font-size: 10px;
+    width: 100%;
+    background: rgba(235, 0, 0, .8);
+    color: #fff;
+    left: 0;
+    line-height: 1.5;
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+  }
+
+  .post-read-more {
+    margin: 2rem 0 2rem 0;
+
+    .read-more {
+      font-family: "open-sans-bold", arial, sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 100%;
+      text-transform: uppercase;
+    }
+  }
+
+  .blog-post-img {
+    margin: 0 0 1em 1em;
+    float: right;
+    height: auto;
+    max-width: 50%;
+    display: block;
   }
 }
