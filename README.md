@@ -5,7 +5,7 @@ This site wraps [Hugo](gohugo.io) with [Gulp](https://gulpjs.com/) as your asset
 
 [PostCSS](http://postcss.org/) and [Webpack](https://webpack.js.org/) + [Babel](https://babeljs.io/) are used for CSS and JS compiling & transpiling.
 
-[ImageMin](https://github.com/imagemin/imagemin) is used to optimize and compress images, and [SVG Sprite](https://github.com/jkphl/svg-sprite) is used to generate a SVG Sprite.
+[ImageMin](https://github.com/imagemin/imagemin) is used to optimize and compress images
 
 [BrowserSync](https://www.browsersync.io/) is used for providing a modern local development experience, allowing you to preview your site on multiple devices in sync.
 
