@@ -16,7 +16,7 @@ Azure provided the functionality to host static websites from an Azure Storage A
 
 <!-- more -->
 
-Microsoft has not announced the public preview by this blog's publish date, but, please click this [link](http://aka.ms/staticwebsites) to enable static website support in the portal.
+Microsoft has not announced the public preview by this blog's publish date, but, please click this [link](https://aka.ms/staticwebsites) to enable static website support in the portal.
 
 Use the following steps to set up a static wesite:
 
@@ -31,7 +31,7 @@ I created the following sample index.html to generate the date:
 
 <!DOCTYPE html>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns="https://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
     <title>Default page test</title>
@@ -52,7 +52,7 @@ I then created the following sample 404.html page:
 
 <!DOCTYPE html>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns="https://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
     <title>uh oh! </title>

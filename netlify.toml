@@ -7,7 +7,7 @@
   publish = "dist"
 
 [context.deploy-preview]
-  command = "yarn build:preview"
+  publish = "dist"
 
 [[plugins]]
   package = "netlify-plugin-algolia-index"

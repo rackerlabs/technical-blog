@@ -217,7 +217,7 @@ On application EBS node 1 – run:
     $ perl $AD_TOP/patch/115/bin/adProvisionEBS.pl ebs-create-oaea_resources \
     -contextfile=$CONTEXT_FILE \
     -deployApps=accessgate \
-    -SSOServerURL=http://xxxxxxxxx.com:8131 \
+    -SSOServerURL=https://xxxxxxxxx.com:8131 \
     -OAMLogoutURL=https://xxxxxxxx.com/oam/server/logout?end_url=https://xxxxxx.com/oamwebsso/logout-success.jsp \
     -managedsrvname=oaea_server1 \
     -managedsrvport=6888 \
@@ -235,7 +235,7 @@ On application EBS node 2 – run (External Node):
     $ perl $AD_TOP/patch/115/bin/adProvisionEBS.pl ebs-create-oaea_resources \
     -contextfile=$CONTEXT_FILE \
     -deployApps=accessgate \
-    -SSOServerURL=http://xxxxxxxxx.com:8131 \
+    -SSOServerURL=https://xxxxxxxxx.com:8131 \
     - OAMLogoutURL=https://xxxxxxxx.com/oam/server/logout?end_url=https://xxxxxx.com/oamwebsso/logout-success.jsp \
     -managedsrvname=oaea_server2 \
     -managedsrvport=6888 \
@@ -268,7 +268,7 @@ On application EBS node 1:
 
     $ .. EBSapps.env run
     $ perl $FND_TOP/bin/txkrun.pl -script=SetOAMReg -registeroam=yes \
-    -oamHost=http://XXXX.com:8130 \
+    -oamHost=https://XXXX.com:8130 \
     -oamUserName=ebs_admin  \
     -ldapUrl=ldap://XXXXX.com:13060 \
     -oidUserName=cn=orcladmin \
@@ -285,7 +285,7 @@ On application EBS node 1 – External Node:
 
     $ . . EBSapps.env run
     $ perl $FND_TOP/bin/txkrun.pl -script=SetOAMReg -registeroam=yes \
-    -oamHost=http://XXXXX.com:8130 \
+    -oamHost=https://XXXXX.com:8130 \
     -oamUserName=ebs_admin  \
     -ldapUrl=ldap://XXXXX.com:13060 \
     -oidUserName=cn=orcladmin \
@@ -363,7 +363,7 @@ Shut down application node 1 and execute `autoconfig` on the primary node.
 
 Start all the services in the run file system only on the primary node.
 
-Access the login screen and check: Internal - http://XXXXXX.com/
+Access the login screen and check: Internal - https://XXXXXX.com/
 
 **Note:** The first time you access the SSO page, a home page error displays.
 
@@ -383,7 +383,7 @@ the instance. Also check the external URL, **https://XXXXXX.com**:
 
 Use the following URL to login as SYSADMIN:
 
-Backdoor URL - http://XXXXXX.com/OA_HTML/AppsLocalLogin.jsp
+Backdoor URL - https://XXXXXX.com/OA_HTML/AppsLocalLogin.jsp
 
 #### 2.8	Perform fs_clone
 

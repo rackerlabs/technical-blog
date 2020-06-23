@@ -118,7 +118,7 @@ as `root`, to include the following lines:
 
 You can include the following options (collected from
 [Manage your logs using Logrotate](https://techandfi.com/manage-your-logs-using-logrotate/)
-and the [man file](http://man7.org/linux/man-pages/man8/logrotate.8.html)) in the
+and the [man file](https://man7.org/linux/man-pages/man8/logrotate.8.html)) in the
 **logrotate** configuration file:
 
 

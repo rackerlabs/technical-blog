@@ -31,7 +31,7 @@ systems to enable researchers to continue in their efforts to understand the
 Coronavirus, as well as other diseases.
 
 One of these projects is the
-[Berkeley Open Infrastructure for Network Computing’s (BOINC) Rosetta@home project](http://boinc.bakerlab.org/rosetta/).
+[Berkeley Open Infrastructure for Network Computing’s (BOINC) Rosetta@home project](https://boinc.bakerlab.org/rosetta/).
 The project relies on donated CPU and GPU time to help to determine 3-dimensional
 shapes of proteins in research that may ultimately lead to finding cures for
 some major human diseases. By running the Rosetta program on your computer when
@@ -66,7 +66,7 @@ To load the image, run the following command. Replace *insert\_insecure\_key\_he
 with the account key that you saved previously:
 
     docker run -ti -d --name boinc \
-    -e "boincurl=http://boinc.bakerlab.org/rosetta" \
+    -e "boincurl=https://boinc.bakerlab.org/rosetta" \
     -e "boinckey=insert_insecure_key_here" antonym/boinc
 
 These commands start the BOINC client. The BOINC client links the system to your

@@ -34,7 +34,7 @@ process them as needed. The following image illustrates random record selection:
 
 ![]({% asset_path 2020-05-22-use-the-oracle-forms-app-multi-package/Picture1.png %})
 
-*Image Source*: [http://i36.me/images/oracle/ebs/ebs_frm_lnchse_with_app_multi_01.jpg](http://i36.me/images/oracle/ebs/ebs_frm_lnchse_with_app_multi_01.jpg)
+*Image Source*: [https://i36.me/images/oracle/ebs/ebs_frm_lnchse_with_app_multi_01.jpg](https://i36.me/images/oracle/ebs/ebs_frm_lnchse_with_app_multi_01.jpg)
 
 ### Functionality
 

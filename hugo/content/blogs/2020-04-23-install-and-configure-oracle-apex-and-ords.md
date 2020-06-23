@@ -165,7 +165,7 @@ Use the following steps to install and configure ORDS:
         ... Log file written to /home/oradi/ords_install_apex_2019-11-28_063823_00607.log
         Complete installation for Oracle REST Data Services version 19.2.0.r1991647. Elapsed time: 00:00:12.537.
 
-You should be able to access the URL for APEX, **http://localhost:8080/apex/apex_admin**,
+You should be able to access the URL for APEX, **https://localhost:8080/apex/apex_admin**,
 from your web browser.
 
 

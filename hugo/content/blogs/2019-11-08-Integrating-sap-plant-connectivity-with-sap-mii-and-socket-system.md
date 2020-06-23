@@ -291,7 +291,7 @@ description fields.
 
 Fill in the fields as follows:
 
-**PCo Mgmt Service URL**: http://IP address:Port/PcoManagement
+**PCo Mgmt Service URL**: https://IP address:Port/PcoManagement
 
 Fill in the administrator credentials of the PCo mchine that you used to create
 the PCo source.

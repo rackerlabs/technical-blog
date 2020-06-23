@@ -46,7 +46,7 @@ following example:
 
 ![]({% asset_path 2020-01-30-back-up-restore-and-monitor-your-aws-sql-native-database/picture1.png %})
 
-*Image source*: [http://niftit.com/backup-with-aws-rds/](http://niftit.com/backup-with-aws-rds/)
+*Image source*: [https://niftit.com/backup-with-aws-rds/](https://niftit.com/backup-with-aws-rds/)
 
 ### SQL Native Full Backup Restore in AWS RDS
 
@@ -75,7 +75,7 @@ from an S3 bucket on your AWS RDS instance, as shown in the following example:
 
 ![]({% asset_path 2020-01-30-back-up-restore-and-monitor-your-aws-sql-native-database/picture2.png %})
 
-*Image Source*: [http://www.awslab.io/sqlserver/lab2/](http://www.awslab.io/sqlserver/lab2/)
+*Image Source*: [https://www.awslab.io/sqlserver/lab2/](https://www.awslab.io/sqlserver/lab2/)
 
 ### AWS RDS back up and restore limitations and exclusions
 
@@ -150,7 +150,7 @@ tasks, as shown in the following example:
 
 ![]({% asset_path 2020-01-30-back-up-restore-and-monitor-your-aws-sql-native-database/picture3.png %})
 
-*Image Source*: [http://www.awslab.io/sqlserver/lab2/](http://www.awslab.io/sqlserver/lab2/)
+*Image Source*: [https://www.awslab.io/sqlserver/lab2/](https://www.awslab.io/sqlserver/lab2/)
 
 After you get the tracking id, you can monitor the backup or restore  process
 by using the following code:

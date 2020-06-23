@@ -33,7 +33,7 @@ to Lightning. We understand your trepidation, and this process indeed takes
 planning and conscious effort to be successful&mdash;but that is what we are
 here to help you with.
 
-We recently worked with [The Stow Company](http://www.thestowcompany.com) to help
+We recently worked with [The Stow Company](https://www.thestowcompany.com) to help
 them fully prepare for their Lightning conversion. We ensured that they avoided
 any interruptions to the level of service they provide to their customers. The
 Stow Company was extremely satisfied with their experience working with Rackspace,

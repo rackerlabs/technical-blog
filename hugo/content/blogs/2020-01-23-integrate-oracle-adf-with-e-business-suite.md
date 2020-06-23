@@ -168,7 +168,7 @@ To create a new managed server in WebLogic, run the following steps:
 
 1. To open the WebLogic Console with port ``7051``, which you used when you
    configured the admin server, browse to
-   [http://webtest.linux.local:7051/console](http://webtest.linux.local:7051/console).
+   [https://webtest.linux.local:7051/console](https://webtest.linux.local:7051/console).
 
 2. Log in with your WebLogic username and password.
 
@@ -179,7 +179,7 @@ To create a new managed server in WebLogic, run the following steps:
 
 5. To open the WebLogic EM Console with port ``7051`` , which you used when you
    configured the admin server, browse to
-   [http://webtest.linux.local:7051/em](http://webtest.linux.local:7051/em)
+   [https://webtest.linux.local:7051/em](https://webtest.linux.local:7051/em)
 
 6. Log in with your WebLogic username and password
 
@@ -196,7 +196,7 @@ To create a JDBC data source, use the following steps:
 
 1. To open the WebLogic Console with port ``7051``, which you used when you
    configured the admin server, browse to
-   [http://webtest.linux.local:7051/console](http://webtest.linux.local:7051/console).
+   [https://webtest.linux.local:7051/console](https://webtest.linux.local:7051/console).
 
 2. Log in with your Weblogic username and password.
 
@@ -221,7 +221,7 @@ following steps:
         mkdir mds
 
 2. To create a File Persistence Store, open WebLogic Console with port 7051 by
-   browsing to [http://webtest.linux.local:7051/console](http://webtest.linux.local:7051/console).
+   browsing to [https://webtest.linux.local:7051/console](https://webtest.linux.local:7051/console).
 
 3. Log in with your WebLogic username and password.
 
@@ -281,7 +281,7 @@ To deploy the Planning UI application, use the following steps:
    **Install Application** assistant.
 
 6. To open the Weblogic Console with port ``7051``, browse to
-   (http://webtest.linux.local:7051/console)[http://webtest.linux.local:7051/console]
+   (https://webtest.linux.local:7051/console)[https://webtest.linux.local:7051/console]
 
 7. Log in with your Weblogic username and password.
 
@@ -300,7 +300,7 @@ To deploy the Planning UI application, use the following steps:
 Set the MSC profile in EBS by using the following elements:
 
 - Profile Name: MSC: ASCP Planning URL
-- Value: http://webtest.linux.local:7151
+- Value: https://webtest.linux.local:7151
 
 ### Conclusion
 
