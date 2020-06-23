@@ -23,7 +23,7 @@ improves the refreshable clone feature from the 12c release 2 by adding a quick
 switchover or failover facility. You can also create a snapshot carousel to clone
 or replicate pluggable databases (PDBs) in a multitenant environment.
 
-<!-- more -->
+<!--more-->
 
 For production environments, use a snapshot carousel with the refreshable clone
 PDB feature to make database administration (DBA) activities easy, such as
@@ -99,9 +99,11 @@ main components and processes and illustrates the relationship between the
 production database and the refreshable clone database. In this diagram, we clone
 the pluggable database **PDB1** of container database **CDB1** to another
 container database **CDB2**. This action results in a hot-cloned version of
-**PDB1** named **PDB1_REF_CLONE**.
+**PDB1** named **PDB1\_REF\_CLONE**.
 
 ![Figure 1]({% asset_path 2020-06-24-introduction-to-the-oracle-refreshable-clone-feature/Picture1.png %})
+
+**Figure 1**
 
 ### Refresh mode options
 
@@ -141,7 +143,11 @@ You can simplify this switchover process, as shown in the following figures:
 
 ![Figure 2]({% asset_path 2020-06-24-introduction-to-the-oracle-refreshable-clone-feature/Picture2.png %})
 
+**Figure 2**
+
 ![Figure 3]({% asset_path 2020-06-24-introduction-to-the-oracle-refreshable-clone-feature/Picture3.png %})
+
+**Figure 3**
 
 This switchover capability is useful in the following situations:
 
@@ -149,7 +155,7 @@ This switchover capability is useful in the following situations:
 
 In Figure 3, **CDB1**, which hosts the source PDB, **PDB1**, might experience
 significantly more overhead than **CDB2**, which hosts the clone PDB,
-**PDB1_REF_CLONE**. To achieve better load balancing, you can reverse the roles
+**PDB1\_REF\_CLONE**. To achieve better load balancing, you can reverse the roles
 of PDBs by converting the clone to the new source PDB and the source PDB into
 the new clone.
 
@@ -158,7 +164,7 @@ primary database:
 
     ALTER PLUGGABLE DATABASE PDB1 REFRESH MODE EVERY 2 MINUTES FROM PDB1_REF_CLONE@DBLINK2CDB2 SWITCHOVER;
 
-After this command completes, **PDB PDB1_REF_CLONE** in **CDB2** assumes the
+After this command completes, **PDB1\_REF\_CLONE** in **CDB2** assumes the
 primary role. **CDB1** now maintains the replica. All connections to production
 connect to the new primary, which is now **CDB2**. You lose no more than two
 minutes of transactions, assuming that the refreshes kept up with the redo
