@@ -67,7 +67,7 @@ Data Redaction has the following characteristics:
 
 Following are some examples of the different types of redaction:
 
-![]({% asset_path 2019-10-17-secure-sensitive-data-in-oracle/Table1.png %})
+![](Table1.png)
 
 ### Exceptions for redaction
 
@@ -132,7 +132,7 @@ If no redaction is used, you display the data with the following statements:
     COLUMN EMAILADR    format a20
     SELECT * FROM CUSTOMERS
 
-![]({% asset_path 2019-10-17-secure-sensitive-data-in-oracle/Picture0.png %})
+![](Picture0.png)
 
 #### Full redaction
 
@@ -155,7 +155,7 @@ In this example, the credit card data is always redacted because the expression
     END;
     /
 
-![]({% asset_path 2019-10-17-secure-sensitive-data-in-oracle/Picture1.png %})
+![](Picture1.png)
 
 
 #### Partial redaction
@@ -179,7 +179,7 @@ To drop the previous policy, run the following command:
 
     execute DBMS_REDACT.drop_policy ('SAGARG','CUSTOMERS','REDACT_POLICY_CARD');
 
-![]({% asset_path 2019-10-17-secure-sensitive-data-in-oracle/Picture2.png %})
+![](Picture2.png)
 
 You can also do partial redaction on other columns, if needed.
 
@@ -201,7 +201,7 @@ as shown in the following example:
     /
 
 
-![]({% asset_path 2019-10-17-secure-sensitive-data-in-oracle/Picture3.png %})
+![](Picture3.png)
 
 #### Using regular expressions
 
@@ -225,7 +225,7 @@ addresses. The following example hides the beginning of the email address:
     END;
     /
 
-![]({% asset_path 2019-10-17-secure-sensitive-data-in-oracle/Picture4.png %})
+![](Picture4.png)
 
 The parameter value for expression is always ‘1=1’, so the data is always redacted.
 
@@ -249,7 +249,7 @@ For example:
     END;
     /
 
-![]({% asset_path 2019-10-17-secure-sensitive-data-in-oracle/Picture5.png %})
+![](Picture5.png)
 
 ### Conclusion
 

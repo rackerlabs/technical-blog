@@ -59,7 +59,7 @@ Several new API functions have been added in latest release of PAX.
 
 The following diagram shows a view of PAX:
 
-![]({% asset_path 2018-06-13-new-features-and-performance-improvements-with-tm1-planning-analytics/Pax2.png %})
+![](Pax2.png)
 
 ### TM1 Web
 

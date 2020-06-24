@@ -58,7 +58,7 @@ the following image:
 
 - **Windows Authentication** should be ``Disabled``.
 
-![]({% asset_path 2018-08-07-using-iis-with-qlikview-and-cutom-users/Picture1.png %})
+![](Picture1.png)
 
 #### Configure the AccessPointSettings file
 
@@ -70,7 +70,7 @@ statuses as shown in the following image:
 
 - **Windows Authentication** should be ``Enabled``.
 
-![]({% asset_path 2018-08-07-using-iis-with-qlikview-and-cutom-users/Picture2.png %})
+![](Picture2.png)
 
 #### Set up QlikView for custom users
 
@@ -78,7 +78,7 @@ To set up QlikView for custom users, change the **Authorization** on the
 **Security** tab of the QlikView server to ``DMS authorization`` as shown in
 the following image:
 
-![]({% asset_path 2018-08-07-using-iis-with-qlikview-and-cutom-users/Picture3.png %})
+![](Picture3.png)
 
 ### Set up the directory service and custom users
 
@@ -93,7 +93,7 @@ click **Edit**. This sets the default value to ``Custom``. Click **Apply** to
 save the setting and to open a new tab labeled **Users**, as shown in the
 following image:
 
-![]({% asset_path 2018-08-07-using-iis-with-qlikview-and-cutom-users/Picture4.png %})
+![](Picture4.png)
 
 #### Add custom users
 
@@ -101,7 +101,7 @@ To add custom users, fill in the requested information in the **Users** tab for 
 click **Add**.  Then select the user and click **Apply**, as shown in the
 following image:
 
-![]({% asset_path 2018-08-07-using-iis-with-qlikview-and-cutom-users/Picture5.png %})
+![](Picture5.png)
 
 #### Configure the Web Server to accept custom users
 
@@ -109,7 +109,7 @@ To configure the Web Server to accept custom users, change the **Type** to
 ``Custom User`` in the **Authentication** tab and set the **Login Address**
 to ``Alternate Login Page`` as shown in the following image:
 
-![]({% asset_path 2018-08-07-using-iis-with-qlikview-and-cutom-users/Picture6.png %})
+![](Picture6.png)
 
 #### Set up the documents for DMS authentication
 
@@ -118,7 +118,7 @@ To set up the documents for DMS authentication, select a document in the
 username as shown in the following image. This can be done while the Publisher
 is doing a reload and distribution.
 
-![]({% asset_path 2018-08-07-using-iis-with-qlikview-and-cutom-users/Picture7.png %})
+![](Picture7.png)
 
 ### Test the configuration
 
@@ -126,12 +126,12 @@ To test the configuration, insert your server name and in a web browser go to
 ``https://<servername>/qlikview``, as shown in the following
 image:
 
-![]({% asset_path 2018-08-07-using-iis-with-qlikview-and-cutom-users/Picture8.png %})
+![](Picture8.png)
 
 Enter your username and password and click **Login**. The following image shows
 the result of user ``CUSTOM\BB`` logging in:
 
-![]({% asset_path 2018-08-07-using-iis-with-qlikview-and-cutom-users/Picture9.png %})
+![](Picture9.png)
 
 ### Conclusion:
 

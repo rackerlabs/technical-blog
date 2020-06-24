@@ -25,12 +25,12 @@ After you've installed OBIEE, the default Oracle logo appears on the OBIEE
 Analytics page, as shown in the following image:
 
 ![Screenshot of the OBIEE Quickstart screen that shows the
-logo]({% asset_path 2018-08-30-obiee2/picture1.png %})
+logo](picture1.png)
 
 The Oracle logo also appears on the login page, as shown in the following
 image:
 
-![]({% asset_path 2018-08-30-obiee2/picture2.png %})
+![](picture2.png)
 
 However, you'll probably want to use your own custom logo.
 
@@ -58,10 +58,10 @@ After you've restarted OPMN services, you see your custom image on the login
 and home pages of OBIEE Analytics, as shown in the following images:
 
 ![The new logo on the login
-page]({% asset_path 2018-08-30-obiee2/picture3.png %})
+page](picture3.png)
 
 ![The new logo on the home
-page]({% asset_path 2018-08-30-obiee2/picture4.png %})
+page](picture4.png)
 
 ### Tip 2: Customize the banner text in OBIEE Analytics
 
@@ -69,10 +69,10 @@ Oracle's default banner text in OBIEE Analytics says "Business
 Intelligence," as shown in the following images:
 
 ![The default banner text on the login
-page]({% asset_path 2018-08-30-obiee2/picture5.png %})
+page](picture5.png)
 
 ![The default banner text on the home
-page]({% asset_path 2018-08-30-obiee2/picture6.png %})
+page](picture6.png)
 
 You can change the banner text in OBIEE Analytics by using the following steps:
 
@@ -94,10 +94,10 @@ You can change the banner text in OBIEE Analytics by using the following steps:
     Analytics, as shown in the following images:
 
     ![A screenshot of the new banner text on the login
-    page]({% asset_path 2018-08-30-obiee2/picture7.png %})
+    page](picture7.png)
 
     ![A screenshot of the new banner text on the home
-    page]({% asset_path 2018-08-30-obiee2/picture8.png %})
+    page](picture8.png)
 
 ### Conclusion
 

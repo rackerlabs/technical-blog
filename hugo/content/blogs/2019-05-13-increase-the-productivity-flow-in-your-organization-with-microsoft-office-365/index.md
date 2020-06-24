@@ -63,7 +63,7 @@ through your favorite web browser and select from lists and populate fields to
 create the workflows. The workflow to generate an approval for a newly created
 document in a SharePoint folder looks similar to the following illustration:
 
-![]({% asset_path 2019-05-13-increase-the-productivity-flow-in-your-organization-with-microsoft-office-365/Picture1.png %})
+![](Picture1.png)
 
 As mentioned previously, Flow enables interaction with other applications outside
 of the Office 365 suite. For example, Flow triggers exist for Salesforce record

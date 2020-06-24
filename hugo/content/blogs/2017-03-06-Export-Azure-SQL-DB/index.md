@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Exporting an Azure SQL DB via PowerShell
-date: 2017-03-08 10:22
+date: 2017-03-08
 comments: false
 author: Jimmy Rudley
 published: true
@@ -25,20 +25,20 @@ Clone or download my repo [Here](https://github.com/jrudley/export-AzureSqlDb) t
 * Azure subscription
 
 * resource group
-![Azure RG]({% asset_path 2017-03-06-Export-Azure-SQL-DB/selectrg.png %})
+![Azure RG](selectrg.png)
 * Azure SQL Server
-![Azure SQL Server]({% asset_path 2017-03-06-Export-Azure-SQL-DB/selectazuresqlserver.png %})
+![Azure SQL Server](selectazuresqlserver.png)
 * Azure SQL DB to export
-![Azure SQL Server DB]({% asset_path 2017-03-06-Export-Azure-SQL-DB/selectazuresqldb.png %})
+![Azure SQL Server DB](selectazuresqldb.png)
 * Azure Sql Server Admin Password
-![Azure SQL Server Admin Password]({% asset_path 2017-03-06-Export-Azure-SQL-DB/entersqladminpass.png %})
+![Azure SQL Server Admin Password](entersqladminpass.png)
 * Azure Storage Account
-![Azure Storage Account]({% asset_path 2017-03-06-Export-Azure-SQL-DB/selectstorageacct.png %})
+![Azure Storage Account](selectstorageacct.png)
 * Azure Storage Container. Optionally, you can use the switch statusBar to give the progress of the export.
-![Azure Storage Account Container]({% asset_path 2017-03-06-Export-Azure-SQL-DB/selectstoragecontainer.png %})
+![Azure Storage Account Container](selectstoragecontainer.png)
 
 The script will export out the BACPAC uri which you can download the BACPAC file
-![Azure BACPAC URI]({% asset_path 2017-03-06-Export-Azure-SQL-DB/uri.png %})
+![Azure BACPAC URI](uri.png)
 
 <a class="cta red" id="cta" href="https://www.rackspace.com/dba-services">Learn more about Databases</a>
 

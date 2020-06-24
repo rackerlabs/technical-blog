@@ -60,14 +60,14 @@ Use the following steps to enable an Azure Backup report:
 Log in to the Azure portal, click the **All services blade**, and search for
 **Recovery Services vaults**.
 
-![]({% asset_path 2020-05-01-create-alerts-for-long-running-backups-on-Azure/Picture1.png %})
+![](Picture1.png)
 
 #### 2: Select a vault
 
 Select one of the recovery service vaults on which to enable **Backup Report**
 and monitor backup duration.
 
-![]({% asset_path 2020-05-01-create-alerts-for-long-running-backups-on-Azure/Picture2.png %})
+![](Picture2.png)
 
 #### 3: Choose Backup Report
 
@@ -76,13 +76,13 @@ Click the recovery vault blade, **Backup Reports**, and click **Diagnostics Sett
 **Note**: The preview **Backup Reports** feature might not be available in
 some regions.
 
-![]({% asset_path 2020-05-01-create-alerts-for-long-running-backups-on-Azure/Picture3.png %})
+![](Picture3.png)
 
 #### 4: Configure Backup Report
 
 To configure **Backup Report**, click on **Add diagnostic setting**.
 
-![]({% asset_path 2020-05-01-create-alerts-for-long-running-backups-on-Azure/Picture4.png %})
+![](Picture4.png)
 
 #### 5: Enable log streaming
 
@@ -93,11 +93,11 @@ To enable backup log streaming, fill in the name of the report, check
 **Send to Log Analytics**, check **AzureBackupReport** in the **Log** section,
 and click **Save**.
 
-![]({% asset_path 2020-05-01-create-alerts-for-long-running-backups-on-Azure/Picture5.png %})
+![](Picture5.png)
 
 The portal displays your report, as shown in the following image:
 
-![]({% asset_path 2020-05-01-create-alerts-for-long-running-backups-on-Azure/Picture6.png %})
+![](Picture6.png)
 
 ### KQL query to monitor server backups
 
@@ -147,18 +147,18 @@ selected during the report configuration.
 
 Copy and paste the preceding KQL query in the **Query** tab and click **Run**.
 
-![]({% asset_path 2020-05-01-create-alerts-for-long-running-backups-on-Azure/Picture7.png %})
+![](Picture7.png)
 
 Servers that took longer than three hours to complete display, as shown in
 the following output:
 
-![]({% asset_path 2020-05-01-create-alerts-for-long-running-backups-on-Azure/Picture8.png %})
+![](Picture8.png)
 
 #### 3: Create a new alert
 
 To set an alert for these servers, click **New Alert Rule**.
 
-![]({% asset_path 2020-05-01-create-alerts-for-long-running-backups-on-Azure/Picture9.png %})
+![](Picture9.png)
 
 #### 4: Configure the new alert
 
@@ -168,7 +168,7 @@ because I want to create an alert on every server and result.
 **Note**: You can also change the **Period** and **Frequency** of the alert, as
 needed.
 
-![]({% asset_path 2020-05-01-create-alerts-for-long-running-backups-on-Azure/Picture10.png %})
+![](Picture10.png)
 
 Configure other alert requirements, such as alert name, action group (email
 recipient), webhooks, and other conditions.

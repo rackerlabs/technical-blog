@@ -41,7 +41,7 @@ database.
 
 The following image shows a sample **ConvertToRAC_AdminManaged.xml** file:
 
-![]({% asset_path 2019-12-03-convert-a-standalone-database-to-oracle-rac-by-using-rconfig/Picture1.png %})
+![](Picture1.png)
 
 ### Prerequisites for using rconfig
 
@@ -64,7 +64,7 @@ Use the following steps to convert your standalone database to RAC.
 
 You need to set the following parameters in **ConvertToRAC_AdminManaged.xml**:
 
-![]({% asset_path 2019-12-03-convert-a-standalone-database-to-oracle-rac-by-using-rconfig/Picture2.png %})
+![](Picture2.png)
 
 The `convert verify` option in **ConvertToRAC.xml** has three options:
 

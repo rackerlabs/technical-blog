@@ -61,7 +61,7 @@ TDD is a software development process that relies on the repetition of a very
 short development cycle: requirements turn into very specific test cases,
 then the software is improved to pass only the new tests. (Wikipedia)
 
-![]({% asset_path 2019-08-02-ABAP-programming-approach-to-writing-testable-code/Picture1.png %})
+![](Picture1.png)
 
 In ABAP, all of the code gets converted into an ABAP Unit, which is nothing
 more than a specific piece of code. Testing ABAP units is not necessarily a

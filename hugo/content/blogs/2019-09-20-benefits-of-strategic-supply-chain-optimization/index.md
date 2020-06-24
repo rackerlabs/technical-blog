@@ -71,7 +71,7 @@ A strategic supply chain optimization in the service industry does the following
 
 The following diagram illustrates strategic supply chain optimization:
 
-![]({% asset_path 2019-09-20-benefits-of-strategic-supply-chain-optimization/Picture1.png %})
+![](Picture1.png)
 
 ### Rackspace Offering
 

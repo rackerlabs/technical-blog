@@ -32,7 +32,7 @@ In this instance, the files were read-only. Deploying an NFS server was a
 possible solution but came with the downsides of additional cost and a single
 point of failure. Instead, I recommended the following solution to them:
 
-![Process Flow]({% asset_path 2019-04-01-using-s3-events-to-automate-business-processes/s3_events.png %})
+![Process Flow](s3_events.png)
 
 In the diagram above, files are uploaded to S3 through another business process.
 The S3 bucket is configured with bucket notifications which in turn, triggers a
@@ -139,7 +139,7 @@ ssm.sendCommand(params, function(err, data) {
 
 Scroll down to Execution role and click **View the role on the IAM console**
 
-![Lambda Execution Role]({% asset_path 2019-04-01-using-s3-events-to-automate-business-processes/lambda_execution_role.png %})
+![Lambda Execution Role](lambda_execution_role.png)
 
 Click **Attach policy** and look for the **AmazonSSMAutomationRole**.
 
@@ -231,7 +231,7 @@ events option and click on it.
 
 Click Add notification and name it _s3sync_.
 
-![S3 Events Configuration]({% asset_path 2019-04-01-using-s3-events-to-automate-business-processes/s3_events_config.png %})
+![S3 Events Configuration](s3_events_config.png)
 
 You will notice we have the ability to select a number of event types which is
 what gives this process a lot of flexibility when it comes to automating business

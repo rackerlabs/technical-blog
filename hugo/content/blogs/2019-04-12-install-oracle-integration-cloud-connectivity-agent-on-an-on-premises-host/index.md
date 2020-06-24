@@ -66,13 +66,13 @@ Oracle Integration Cloud Service:
     name and password.
 3.  Click **Agent**.
 
-![]({% asset_path 2019-04-12-install-oracle-integration-cloud-connectivity-agent-on-an-on-premises-host/Picture1.png %})
+![](Picture1.png)
 
 <ol start=4>
     <li>Click <b>Download</b> and then click <b>Connectivity Agent</b>.</li>
 </ol>
 
-![]({% asset_path 2019-04-12-install-oracle-integration-cloud-connectivity-agent-on-an-on-premises-host/Picture2.png %})
+![](Picture2.png)
 
 <ol start=5>
     <li>Move the downloaded installation software
@@ -88,13 +88,13 @@ Service by using the following steps:
    your cloud administrator login ID and password, and create an agent group by
    clicking the **Agent Icon**.
 
-![]({% asset_path 2019-04-12-install-oracle-integration-cloud-connectivity-agent-on-an-on-premises-host/Picture1.png %})
+![](Picture1.png)
 
 <ol start=2>
     <li>Click <b>Create Agent Group</b> and provide inputs as shown in the following image:</li>
 </ol>
 
-![]({% asset_path 2019-04-12-install-oracle-integration-cloud-connectivity-agent-on-an-on-premises-host/Picture4.png %})
+![](Picture4.png)
 
 The inputs include the following items:
 

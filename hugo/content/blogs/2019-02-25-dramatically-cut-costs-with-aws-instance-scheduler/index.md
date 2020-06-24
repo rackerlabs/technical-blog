@@ -104,14 +104,14 @@ Assume that instances need to run during office hours (Monday-Friday 9am-5pm ET)
 and also perform batch processing every night 2am-4am ET. To achieve this, we
 define 2 periods:
 
-![Periods]({% asset_path 2019-02-25-dramatically-cut-costs-with-aws-instance-scheduler/aws-instance-scheduler-periods.png %})
+![Periods](aws-instance-scheduler-periods.png)
 
 The Period “office-hours” covers our office hours requirement and is responsible
 for starting the instances at 9am and stopping them at 5pm Monday-Friday. The
 Period “batch” starts the instances at 2am and stops them at 4am every day of
 the week. Now let’s define our Schedule:
 
-![Periods]({% asset_path 2019-02-25-dramatically-cut-costs-with-aws-instance-scheduler/aws-instance-scheduler-schedule.png %})
+![Periods](aws-instance-scheduler-schedule.png)
 
 The Schedule “office-and-batch” contains the two running Periods we defined
 (“office-hours” and “batch”) and specifies the time zone. With the Schedule

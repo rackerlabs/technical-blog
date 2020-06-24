@@ -27,7 +27,7 @@ The choice is to install OpenStack from source. For most folks, source installs 
 
 This discussion demonstrates how to install OpenStack from source onto three machines using Ubuntu 14.04 LTS as the base OS. The three nodes consist of compute, network and controller nodes, using separate control and data planes, an access/API network and one external network connection. Each node needs at least 3 NIC cards (the network node needs 4). Users are able to create simple legacy routers and an external provider router. The following diagram gives a physical representation of the final OpenStack system.
 
-![OpenStack Diagram]({% asset_path 2015-07-29-install-openstack-from-source/openstack.png %})
+![OpenStack Diagram](openstack.png)
 
 This install uses KVM, running through libvirt, for virtualization, but it can be easily modified to use QEMU for those who have hardware that doesn't fully support virtualization. The compute nodes needs to be tested to verify that the CPU(s) can support KVM by running:
 

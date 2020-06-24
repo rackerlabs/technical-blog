@@ -29,7 +29,7 @@ on investment (ROI) of your Marketing Cloud instance.
 
 <!--more-->
 
-![]({% asset_path 2020-02-14-get-the-most-out-of-einstein-engagement-scoring/Picture1.png %})
+![](Picture1.png)
 
 The good news is that with a corporate or enterprise license, you automatically
 have access to Einstein Engagement Scoring. Even if your license isn’t corporate
@@ -54,7 +54,7 @@ maximize engagement and conversions. Einstein Engagement Scoring assigns scores 
 subscriber’s likelihood to stay subscribed, open an email, or click links within
 your email.
 
-![]({% asset_path 2020-02-14-get-the-most-out-of-einstein-engagement-scoring/Picture2.png %})
+![](Picture2.png)
 
 Based on the historical behavior of your subscribers, Einstein Engagement
 Scoring segments your subscriber list into the following categories:
@@ -68,7 +68,7 @@ Scoring segments your subscriber list into the following categories:
 -  **Win-back or Dormant**: Subscribers who are unlikely to open or click on your
    emails and do not engage with your emails
 
-![]({% asset_path 2020-02-14-get-the-most-out-of-einstein-engagement-scoring/Picture3.png %})
+![](Picture3.png)
 
 Because the scores are dependent on actions your subscribers have taken, the
 AI can't score your subscribers to whom you have sent no emails. To get the most
@@ -135,27 +135,27 @@ following steps to import your four segments into Journey Builder:
 
 1. Open your Journey Builder and create a new journey.
 
-   ![]({% asset_path 2020-02-14-get-the-most-out-of-einstein-engagement-scoring/Picture4.png %})
+   ![](Picture4.png)
 
 <ol start=2>
     <li>Define the <b>Entry Source</b> or who gets these emails.</li>
 </ol>
 
-   ![]({% asset_path 2020-02-14-get-the-most-out-of-einstein-engagement-scoring/Picture5.png %})
+   ![](Picture5.png)
 
-   ![]({% asset_path 2020-02-14-get-the-most-out-of-einstein-engagement-scoring/Picture6.png %})
+   ![](Picture6.png)
 
 <ol start=3>
     <li>In the left-hand column of options, choose <b>Einstein Split.</b></li>
 </ol>
 
-   ![]({% asset_path 2020-02-14-get-the-most-out-of-einstein-engagement-scoring/Picture7.png %})
+   ![](Picture7.png)
 
 <ol start=4>
     <li>Choose <b>Persona Split</b> as the type of split.</li>
 </ol>
 
-   ![]({% asset_path 2020-02-14-get-the-most-out-of-einstein-engagement-scoring/Picture8.png %})
+   ![](Picture8.png)
 
 <ol start=5>
     <li>After you select <b>Persona Split</b>, Journey Builder automatically splits your
@@ -168,7 +168,7 @@ following steps to import your four segments into Journey Builder:
    for another group.</li>
 </ol>
 
-   ![]({% asset_path 2020-02-14-get-the-most-out-of-einstein-engagement-scoring/Picture9.png %})
+   ![](Picture9.png)
 
 <ol start=6>
     <li>Now, you can craft a personalized journey in Journey Builder for each segment.
@@ -180,7 +180,7 @@ following steps to import your four segments into Journey Builder:
    a salesperson to call the subscriber.</li>
 </ol>
 
-   ![]({% asset_path 2020-02-14-get-the-most-out-of-einstein-engagement-scoring/Picture10.png %})
+   ![](Picture10.png)
 
 For the best results, always conduct A/B testing to see what works well for each
 segment. Within your marketing automation, you can A/B test nearly every aspect

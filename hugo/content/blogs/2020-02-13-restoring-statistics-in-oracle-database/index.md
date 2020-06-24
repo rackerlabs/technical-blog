@@ -54,7 +54,7 @@ that period.
 
 The following image shows the SQL command to show the current retention period:
 
-![]({% asset_path 2020-02-13-restoring-statistics-in-oracle-database/Picture1.png %})
+![](Picture1.png)
 
 To change the retention period, run the following command, where *xx* is the
 number of days that you want to use:
@@ -64,7 +64,7 @@ number of days that you want to use:
 The following query helps you to understand which historical data stats you can
 restore:
 
-![]({% asset_path 2020-02-13-restoring-statistics-in-oracle-database/Picture2.png %})
+![](Picture2.png)
 
 **Note:** This example shows the statistics from the previously mentioned date
 and later.

@@ -81,14 +81,14 @@ Use the following steps for the Oracle WebLogic Server 11gR1 (10.3.6) installati
 
 6. Select local JDK installed, as shown in the following image.
 
-   ![]({% asset_path 2018-07-16-upgrading-oracle-business-intelligence-discoverer-part-1/Picture1.png %})
+   ![](Picture1.png)
 
 <ol start=7>
     <li>Choose the product installation directories. Specify the WebLogic server
    location and the  Oracle Coherence location, as shown in the following image.</li>
 </ol>
 
-   ![]({% asset_path 2018-07-16-upgrading-oracle-business-intelligence-discoverer-part-1/Picture2.png %})
+   ![](Picture2.png)
 
 <ol start=8>
     <li>Review the installation summary and size.</li>
@@ -126,7 +126,7 @@ Use the following steps for the installation process:
    If the tablespaces are incorrect, modify them.  The following image shows
    this step:
 
-   ![]({% asset_path 2018-07-16-upgrading-oracle-business-intelligence-discoverer-part-1/Picture3.png %})
+   ![](Picture3.png)
 
 <ol start=7>
     <li>Review the summary and click <b>Create</b>.</li>
@@ -157,7 +157,7 @@ Use the following steps for the Discoverer installation:
 8. When installation is complete, review the details and click **Finish**, as
    shown in the following image:
 
-   ![]({% asset_path 2018-07-16-upgrading-oracle-business-intelligence-discoverer-part-1/Picture4.png %})
+   ![](Picture4.png)
 
 ####  Upgrade Discoverer 11.1.1.2 installation to 11.1.1.7
 
@@ -180,7 +180,7 @@ Use the following steps to upgrade Discoverer from version 11.1.1.2 to
 7. When installation is complete, review the details and click **Finish**, as
    shown in the following image:
 
-   ![]({% asset_path 2018-07-16-upgrading-oracle-business-intelligence-discoverer-part-1/Picture5.png %})
+   ![](Picture5.png)
 
 #### Configure the Discoverer instance
 
@@ -193,7 +193,7 @@ Use the following steps to configure the Discoverer instance:
 3. Choose **Create domain** and provide the username (``weblogic``), password, and
    domain name, as shown in the following image:
 
-   ![]({% asset_path 2018-07-16-upgrading-oracle-business-intelligence-discoverer-part-1/Picture6.png %})
+   ![](Picture6.png)
 
 <ol start=4>
     <li>Provide the Oracle support details in <b>Security Updates</b>.</li>
@@ -209,7 +209,7 @@ Use the following steps to configure the Discoverer instance:
    following image:</li>
 </ol>
 
-   ![]({% asset_path 2018-07-16-upgrading-oracle-business-intelligence-discoverer-part-1/Picture7.png %})
+   ![](Picture7.png)
 
 <ol start=7>
     <li>Select <b>Auto port config</b> to configure ports.</li>
@@ -240,7 +240,7 @@ Use the following steps to configure the Discoverer instance:
     following image:</li>
 </ol>
 
-    ![]({% asset_path 2018-07-16-upgrading-oracle-business-intelligence-discoverer-part-1/Picture8.png %})
+    ![](Picture8.png)
 
 ### Conclusion
 

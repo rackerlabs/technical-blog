@@ -23,7 +23,7 @@ customer requesting a quote from your company and receiving it.
 
 <!--more-->
 
-![]({% asset_path 2019-11-21-solve-five-common-quoting-proces-issues-with-cpq/Picture1.png %})
+![](Picture1.png)
 
 ### Introduction
 

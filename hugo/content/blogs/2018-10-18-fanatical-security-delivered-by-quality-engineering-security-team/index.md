@@ -131,7 +131,7 @@ interactions with external systems.
 
  The following example shows a data flow diagram for one of our products:
 
-![Sample Product DataFlow Diagram]({% asset_path 2018-10-18-fanatical-security-delivered-by-quality-engineering-security-team/dataflow_diagram.png %})
+![Sample Product DataFlow Diagram](dataflow_diagram.png)
 
 
  If, at a future date, the product is changed, a short threat model update

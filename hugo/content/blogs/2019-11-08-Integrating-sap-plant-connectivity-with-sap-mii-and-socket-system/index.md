@@ -84,7 +84,7 @@ connected SAP systems.
 
 The following diagram shows the SAP PCo architecture:
 
-![]({% asset_path 2019-11-08-Integrating-sap-plant-connectivity-with-sap-mii-and-socket-system/Picture1.png %})
+![](Picture1.png)
 
 *Image source:* [https://help.sap.com/doc/saphelp_pco15/15.0/en-US/46/a00344d44852b7e10000000a155369/frameset.htm](https://help.sap.com/doc/saphelp_pco15/15.0/en-US/46/a00344d44852b7e10000000a155369/frameset.htm)
 
@@ -137,14 +137,14 @@ The PCo Management Console, shown in the following image, is the WinForms
 application that provides the configuration and management of the PCo source
 and destination systems, agent instances, and notifications.
 
-![]({% asset_path 2019-11-08-Integrating-sap-plant-connectivity-with-sap-mii-and-socket-system/Picture2.png %})
+![](Picture2.png)
 
 *Image source:* [service.sap.com/instguides](service.sap.com/instguides) Go to
 **SAP Business Suite Applications -> SAP Manufacturing SAP Plant Connectivity -> SAP Plant Connectivity 15.1**.
 
 The following image shows the structure of the connection flow:
 
-![]({% asset_path 2019-11-08-Integrating-sap-plant-connectivity-with-sap-mii-and-socket-system/Picture3.png %})
+![](Picture3.png)
 
 *Image source:* [service.sap.com/instguides](service.sap.com/instguides) Go to
 **SAP Business Suite Applications -> SAP Manufacturing SAP Plant Connectivity -> SAP Plant Connectivity 15.1**.
@@ -165,7 +165,7 @@ Click **Source System**, provide the name, and select the source Agent type
 (`OPC DA`, `HAD`, `OLEDB`, `UA`, or `IP21`) as **Socket Agent** as shown in the
 following screenshot:
 
-![]({% asset_path 2019-11-08-Integrating-sap-plant-connectivity-with-sap-mii-and-socket-system/Picture4.png %})
+![](Picture4.png)
 
 ##### Set the socket type
 
@@ -181,12 +181,12 @@ following screenshot:
 Enter the terminator to identify the end of the message in the data stream and
 provide the length of the message in the data stream as shown in the following image:
 
-![]({% asset_path 2019-11-08-Integrating-sap-plant-connectivity-with-sap-mii-and-socket-system/Picture5.png %})
+![](Picture5.png)
 
 In the **Reliable Connection** tab, set the interval and number of retries if
 the connection fails, as shown in the following image:
 
-![]({% asset_path 2019-11-08-Integrating-sap-plant-connectivity-with-sap-mii-and-socket-system/Picture6.png %})
+![](Picture6.png)
 
 #### Create the destination system
 
@@ -197,14 +197,14 @@ Use the following steps to create the destination system:
 In the destination, choose the MII destination, enter a name, a description, and
 click **OK**.
 
-![]({% asset_path 2019-11-08-Integrating-sap-plant-connectivity-with-sap-mii-and-socket-system/Picture7.png %})
+![](Picture7.png)
 
 ##### Select server and MII version
 
 Select the server name, port number, version of MII software, and the user
 credentials that have the MII admin role access as shown in the following screenshot:
 
-![]({% asset_path 2019-11-08-Integrating-sap-plant-connectivity-with-sap-mii-and-socket-system/Picture8.png %})
+![](Picture8.png)
 
 ##### Test the connection
 
@@ -219,7 +219,7 @@ Use the following steps to create an agent:
 
 Choose the barcode source system as **source** and give the agent name and description.
 
-![]({% asset_path 2019-11-08-Integrating-sap-plant-connectivity-with-sap-mii-and-socket-system/Picture9.png %})
+![](Picture9.png)
 
 ##### Select the Bar
 
@@ -227,7 +227,7 @@ In the **Subscription Items** tab, select **Browse** at the bottom and select
 **Bar**. The **Bar Message** field is the input parameter name for **Bar**. The
 scanned barcode value is retrieved into this parameter.
 
-![]({% asset_path 2019-11-08-Integrating-sap-plant-connectivity-with-sap-mii-and-socket-system/Picture10.png %})
+![](Picture10.png)
 
 ##### Set the port and port notification
 
@@ -235,7 +235,7 @@ In **Query Ports**, select `SAP MII` and give a new port number. Do not use this
 port with any other agents. Check other agent instances before
 assigning it.
 
-![]({% asset_path 2019-11-08-Integrating-sap-plant-connectivity-with-sap-mii-and-socket-system/Picture11.png %})
+![](Picture11.png)
 
 Go to the **Query Port** tab, select the first two options, `MII` and
 `MII before 12.2`, and then verify that the port number is available. The
@@ -245,11 +245,11 @@ a notification for this port.
 In destination, click **Add Destination**, select the destination MII system,
 and browse to the target transaction.
 
-![]({% asset_path 2019-11-08-Integrating-sap-plant-connectivity-with-sap-mii-and-socket-system/Picture12.png %})
+![](Picture12.png)
 
 In **Transaction**, select the input parameter to receive this barcode message.
 
-![]({% asset_path 2019-11-08-Integrating-sap-plant-connectivity-with-sap-mii-and-socket-system/Picture13.png %})
+![](Picture13.png)
 
 Click **Save** and start the agent instance. After you scan a barcode, PCo gets
 it and sends it to the MII transaction. In the MII transaction, you can process
@@ -260,7 +260,7 @@ the input data.
 After you create the source and the destination systems, you need to configure
 the PCo settings for connecting the MII application menu data server.
 
-![]({% asset_path 2019-11-08-Integrating-sap-plant-connectivity-with-sap-mii-and-socket-system/Picture14.png %})
+![](Picture14.png)
 
 The settings in the preceding image describe the system details of the PCo
 installation. You can use the same information in the SAP MII data server
@@ -280,14 +280,14 @@ host name to the SAP MII server host file, **C:\WINDOWS\system32\drivers\etc\hos
 Go to **SAP MII Menu -> Data Services -> Create Data Server** as shown in the
 following screenshot:
 
-![]({% asset_path 2019-11-08-Integrating-sap-plant-connectivity-with-sap-mii-and-socket-system/Picture15.png %})
+![](Picture15.png)
 
 ##### Select the connector type
 
 Select **Connector Type** from the drop-down menu and enter the server name and
 description fields.
 
-![]({% asset_path 2019-11-08-Integrating-sap-plant-connectivity-with-sap-mii-and-socket-system/Picture16.png %})
+![](Picture16.png)
 
 Fill in the fields as follows:
 
@@ -300,31 +300,31 @@ the PCo source.
 
 **Password**: Use the same credentials that you used to create the PCo source.
 
-![]({% asset_path 2019-11-08-Integrating-sap-plant-connectivity-with-sap-mii-and-socket-system/Picture17.png %})
+![](Picture17.png)
 
 After you enter the URL path, click **Next**. A new window displays for
 credentials, which should be the PCo Server Windows credentials.
 
-![]({% asset_path 2019-11-08-Integrating-sap-plant-connectivity-with-sap-mii-and-socket-system/Picture18.png %})
+![](Picture18.png)
 
 Fetch the agents that you created in the PCo Management Console.
 
-![]({% asset_path 2019-11-08-Integrating-sap-plant-connectivity-with-sap-mii-and-socket-system/Picture19.png %})
+![](Picture19.png)
 
 Click **Finish** and then check the **Enabled** check box as shown in the
 following screenshot:
 
-![]({% asset_path 2019-11-08-Integrating-sap-plant-connectivity-with-sap-mii-and-socket-system/Picture20.png %})
+![](Picture20.png)
 
 After the connection is successful, fill out the fields, as shown in the following
 screenshot:
 
-![]({% asset_path 2019-11-08-Integrating-sap-plant-connectivity-with-sap-mii-and-socket-system/Picture21.png %})
+![](Picture21.png)
 
 In the **Status** tab, the **Status** parameter should have a green **Running**
 value.
 
-![]({% asset_path 2019-11-08-Integrating-sap-plant-connectivity-with-sap-mii-and-socket-system/Picture22.png %})
+![](Picture22.png)
 
 #### Create SAP PCo notifications
 
@@ -338,16 +338,16 @@ desirable events such as confirmations.
 After you create the agent, right-click the agent in the list and select
 **Add Notification**.
 
-![]({% asset_path 2019-11-08-Integrating-sap-plant-connectivity-with-sap-mii-and-socket-system/Picture23.png %})
+![](Picture23.png)
 
 Enter the name and description and click **OK**.
 
-![]({% asset_path 2019-11-08-Integrating-sap-plant-connectivity-with-sap-mii-and-socket-system/Picture24.png %})
+![](Picture24.png)
 
 Select the **Subscription Items** tab and create a notification based on the
 trigger condition.
 
-![]({% asset_path 2019-11-08-Integrating-sap-plant-connectivity-with-sap-mii-and-socket-system/Picture25.png %})
+![](Picture25.png)
 
 The notification is active as soon as you create it.
 

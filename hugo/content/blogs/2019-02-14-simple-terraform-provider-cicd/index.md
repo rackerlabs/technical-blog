@@ -116,11 +116,11 @@ Now just run your Terraform init/apply (don't forget to set a GITHUB_TOKEN first
 
 When you're done, you should now have a CodePipeline build going:
 
-![]({% asset_path 2019-02-14-simple-terraform-provider-cicd/code-pipeline.png %})
+![](code-pipeline.png)
 
 And when that's done, you'll have the binaries in S3:
 
-![]({% asset_path 2019-02-14-simple-terraform-provider-cicd/s3.png %})
+![](s3.png)
 
 Now just transfer the related binary to whatever environment you need it in!
 

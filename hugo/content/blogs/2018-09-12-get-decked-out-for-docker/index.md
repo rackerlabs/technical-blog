@@ -68,7 +68,7 @@ and volumes.
 The Docker client interacts with the server through the REST API or by using
 CLI commands, as shown in the following diagram:
 
-![]({% asset_path 2018-09-12-get-decked-out-for-docker/Picture1.png %})
+![](Picture1.png)
 
 **Image source**: https://docs.docker.com/engine/images/engine-components-flow.png
 

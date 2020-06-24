@@ -21,7 +21,7 @@ canonical: https://blog.rackspace.com/what-is-interaction-studio-and-how-does-it
 
 <!--more-->
 
-![]({% asset_path 2019-11-06-what-is-interaction-studio-and-how-does-it-drive-transformative-business-value/Interaction-studio.png %})
+![](Interaction-studio.png)
 
 How much could you increase sales at your company, if you could meet your
 customers where they are on the buyer’s journey and guide them toward your

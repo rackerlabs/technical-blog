@@ -34,7 +34,7 @@ port, then you should use a USB-to-serial adapter cable.
 Connect to the console by using a terminal emulator with the specifications shown
 in the following image:
 
-   ![]({% asset_path 2019-02-20-recover-passwords-for-network-devices/Picture3.png %})
+   ![](Picture3.png)
 
 Use the following steps to recover the Cisco ASA password:
 
@@ -46,7 +46,7 @@ Use the following steps to recover the Cisco ASA password:
    <b>Esc</b> keystroke properly.</li>
 </ol>
 
-   ![]({% asset_path 2019-02-20-recover-passwords-for-network-devices/Picture1.png %})
+   ![](Picture1.png)
 
 <ol start=2>
    <li> Execute the following command to verify the current configuration
@@ -82,7 +82,7 @@ Use the following steps to recover the Cisco ASA password:
        Ciscoasa> enable
        Password: [Blank]
 
-   ![]({% asset_path 2019-02-20-recover-passwords-for-network-devices/Picture2.png %})
+   ![](Picture2.png)
 
 <ol start=5>
    <li>Use the following command to load the <b>startup-config</b> file in to the
@@ -137,7 +137,7 @@ port, then you should use a USB-to-serial adapter cable.
 Connect to the console by using a terminal emulator with the specifications shown
 in the following image:
 
-   ![]({% asset_path 2019-02-20-recover-passwords-for-network-devices/Picture3.png %})
+   ![](Picture3.png)
 
 Use the following steps to recover the Cisco router password:
 
@@ -196,7 +196,7 @@ the firewall device by using the console port at the back of the unit.
 Connect to the console by using a terminal emulator with the specifications shown
 in the following image:
 
-   ![]({% asset_path 2019-02-20-recover-passwords-for-network-devices/Picture3.png %})
+   ![](Picture3.png)
 
 Use the following steps to recover the Fortigate super admin password:
 

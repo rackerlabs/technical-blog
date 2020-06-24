@@ -140,7 +140,7 @@ installation zip file, unzip the file, and run `./runInstaller`.
 Click **Skip software updates** on the first installation window, then click
 **Next**.  Select options as shown in the following image:
 
-![]({% asset_path 2018-12-10-real-application-clusters-one-node-architecture/Picture1.png %})
+![](Picture1.png)
 
 Then, click **Advanced Installation** in the next window.
 
@@ -149,9 +149,9 @@ Then, click **Advanced Installation** in the next window.
 Enter the cluster and SCAN name and ensure that they show the correct default
 nodes on the cluster node information screens as shown in the following images:
 
-![]({% asset_path 2018-12-10-real-application-clusters-one-node-architecture/Picture2.png %})
+![](Picture2.png)
 
-![]({% asset_path 2018-12-10-real-application-clusters-one-node-architecture/Picture3.png %})
+![](Picture3.png)
 
 #### Step 3: Configure and test SSH connectivity
 
@@ -159,27 +159,27 @@ Click **SSH Connectivity** to configure and test the password-less SSH
 connectivity by typing in the OS password for the user `grid` and select **Setup**
 as shown in the following images:
 
-![]({% asset_path 2018-12-10-real-application-clusters-one-node-architecture/Picture4.png %})
+![](Picture4.png)
 
-![]({% asset_path 2018-12-10-real-application-clusters-one-node-architecture/Picture5.png %})
+![](Picture5.png)
 
 #### Step 4: Select the network
 
 Choose the **Network Interface Name** and **Type** according to the subnet as
 shown in the following image. Associate one subnet with one interface only.
 
-![]({% asset_path 2018-12-10-real-application-clusters-one-node-architecture/Picture6.png %})
+![](Picture6.png)
 
 Select **Oracle ASM** as the storage option and specify directories for the data
 storage as shown in the following image:
 
-![]({% asset_path 2018-12-10-real-application-clusters-one-node-architecture/Picture7.png %})
+![](Picture7.png)
 
 #### Step 5: Select the group
 
 Be very careful while selecting the group, as shown in the following image:
 
-![]({% asset_path 2018-12-10-real-application-clusters-one-node-architecture/Picture8.png %})
+![](Picture8.png)
 
 #### Step 6: Specify Grid directories
 
@@ -187,23 +187,23 @@ Specify the Oracle Grid infrastructure for cluster home base,the software
 directory for its HOME directory, and an inventory directory as shown in the
 following images:
 
-![]({% asset_path 2018-12-10-real-application-clusters-one-node-architecture/Picture9.png %})
+![](Picture9.png)
 
-![]({% asset_path 2018-12-10-real-application-clusters-one-node-architecture/Picture10.png %})
+![](Picture10.png)
 
-![]({% asset_path 2018-12-10-real-application-clusters-one-node-architecture/Picture11.png %})
+![](Picture11.png)
 
 #### Step 7: Complete installation
 
 After the setup checks are finished, check **Ignore All** and click **Next** to
 run the installation as shown in the following image:
 
-![]({% asset_path 2018-12-10-real-application-clusters-one-node-architecture/Picture12.png %})
+![](Picture12.png)
 
 After the installation completes, do not forget to run the `root.sh` file as
 shown in the following image:
 
-![]({% asset_path 2018-12-10-real-application-clusters-one-node-architecture/Picture13.png %})
+![](Picture13.png)
 
 #### Step 8: Post-installation checks
 
@@ -244,7 +244,7 @@ the database.
 After following the  database installation steps, when prompted for Grid
 Installation Options, select them as shown in the following image:
 
-![]({% asset_path 2018-12-10-real-application-clusters-one-node-architecture/Picture14.png %})
+![](Picture14.png)
 
 #### Step 3: Choose database configuration options
 
@@ -252,22 +252,22 @@ When prompted for the type of database configuration options and details, select
 them as shown in the following images and ensure that you select **Oracle
 Automatic Storage Method**, when asked for database storage:
 
-![]({% asset_path 2018-12-10-real-application-clusters-one-node-architecture/Picture15.png %})
+![](Picture15.png)
 
-![]({% asset_path 2018-12-10-real-application-clusters-one-node-architecture/Picture16.png %})
+![](Picture16.png)
 
-![]({% asset_path 2018-12-10-real-application-clusters-one-node-architecture/Picture17.png %})
+![](Picture17.png)
 
 #### Step 4: Select Disk Group
 
 The Disk Group is created after the Grid installation. Select it as shown in the
 following image:
 
-![]({% asset_path 2018-12-10-real-application-clusters-one-node-architecture/Picture18.png %})
+![](Picture18.png)
 
 Ignore any errors by checking **Ignore All** as shown in the following image:
 
-![]({% asset_path 2018-12-10-real-application-clusters-one-node-architecture/Picture19.png %})
+![](Picture19.png)
 
 ### RAC One Node commands
 

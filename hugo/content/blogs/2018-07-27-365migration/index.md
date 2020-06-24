@@ -172,7 +172,7 @@ Office 365 and manages users on-premises. You can also synchronize passwords so
 that users have the same password on-premises and in the cloud. However, users
 need to sign in again to use Office 365.
 
-![Visualization of the directory synchronization process]({% asset_path 2018-07-27-365migration/picture1.png %})
+![Visualization of the directory synchronization process](picture1.png)
 
 Image source: [Office 365 integration with on-premises
 environments](https://support.office.com/en-us/article/Office-365-integration-with-on-premises-environments-263faf8d-aa21-428b-aed3-2021837a4b65?ui=en-US&rs=en-US&ad=US)
@@ -184,7 +184,7 @@ Office 365 and manages users on-premises. Users have the same password
 on-premises and in the cloud, and they do not have to sign in again to use
 Office 365. This model is often referred to as single sign-on.
 
-![Visualization of the Federated Identity model]({% asset_path 2018-07-27-365migration/picture2.png %})
+![Visualization of the Federated Identity model](picture2.png)
 
 Image source: [Office 365 integration with on-premises
 environments](https://support.office.com/en-us/article/Office-365-integration-with-on-premises-environments-263faf8d-aa21-428b-aed3-2021837a4b65?ui=en-US&rs=en-US&ad=US)

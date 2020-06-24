@@ -54,11 +54,11 @@ steps work for other OSs.
 Installation packages differ for each OS, so download the correct package for
 your OS.
 
-![]({% asset_path 2020-05-02-configure-vs-code-for-azure-and-terraform/Picture1.png %})
+![](Picture1.png)
 
 2. Run the installer (`VSCodeUserSetup-{version}.exe`).
 
-![]({% asset_path 2020-05-02-configure-vs-code-for-azure-and-terraform/Picture2.png %})
+![](Picture2.png)
 
 The system installs VS Code in **C:\users\{username}\AppData\Local\Programs\Microsoft VS Code**.
 
@@ -71,12 +71,12 @@ Use the following steps to configure VS Code:
 The VS Code installation process puts a shortcut icon for VS Code on desktop as
 shown in the following image:
 
-![]({% asset_path 2020-05-02-configure-vs-code-for-azure-and-terraform/Picture3.png %})
+![](Picture3.png)
 
 Click on the icon to launch VS Code. This action opens an empty VS Code
 home page for the default configuration.
 
-![]({% asset_path 2020-05-02-configure-vs-code-for-azure-and-terraform/Picture4.png %})
+![](Picture4.png)
 
 #### 2. Install extensions
 
@@ -112,13 +112,13 @@ and Terraform extensions:
 To install the extension in VS Code, hover over to the extension tab given in
 VS Code or press `CTRL+SHIFT+X.`
 
-![]({% asset_path 2020-05-02-configure-vs-code-for-azure-and-terraform/Picture5.png %})
+![](Picture5.png)
 
 In the **Search** tab, search for each of the preceding extensions and install
 them one at a time. When the installations complete, the extension tab should be
 similar to the following image:
 
-![]({% asset_path 2020-05-02-configure-vs-code-for-azure-and-terraform/Picture6.png %})
+![](Picture6.png)
 
 Click on each extension to verify it is enabled.
 
@@ -126,7 +126,7 @@ Click on each extension to verify it is enabled.
 
 Create a test project in Azure DevOps and clone that project in VS Code.
 
-![]({% asset_path 2020-05-02-configure-vs-code-for-azure-and-terraform/Picture7.png %})
+![](Picture7.png)
 
 To clone this open project, click on the three dots on the right-hand side. A
 prompt asks you to clone it the project in an IDE, defaulting to VS Code.
@@ -136,7 +136,7 @@ Click on the block and follow the pop-up instructions to clone the entire projec
 When the project displays in VS Code, it should appear similar to the following
 image:
 
-![]({% asset_path 2020-05-02-configure-vs-code-for-azure-and-terraform/Picture8.png %})
+![](Picture8.png)
 
 ### Overview of the Vscode user interface.
 
@@ -151,7 +151,7 @@ explore them and see their features.
 
 The following image shows highlighted icons that you can use in your daily tasks:
 
-![]({% asset_path 2020-05-02-configure-vs-code-for-azure-and-terraform/Picture9.png %})
+![](Picture9.png)
 
 - **Green**: Change the toggle view mode.
 - **Blue**: Commit changes.
@@ -162,7 +162,7 @@ The following image shows highlighted icons that you can use in your daily tasks
 You can check your project and repository synchronization status in the VS Code
 status bar, as shown in the following image:
 
-![]({% asset_path 2020-05-02-configure-vs-code-for-azure-and-terraform/Picture10.png %})
+![](Picture10.png)
 
 Notice that the project name is **Test-Project** and has no bugs at this time. I'm
 working in the **master** branch. Also, the files have no bugs, as indicated by
@@ -170,9 +170,9 @@ the empty synchronization symbol.
 
 You can run PowerShell with Git commands in the VS Code IDE terminal.
 
-![]({% asset_path 2020-05-02-configure-vs-code-for-azure-and-terraform/Picture11.png %})
+![](Picture11.png)
 
-![]({% asset_path 2020-05-02-configure-vs-code-for-azure-and-terraform/Picture12.png %})
+![](Picture12.png)
 
 If you do not want to use the graphical Git operations (shown in the highlighted
 squares in the preceding screenshot), you can install and run Git BASH to open

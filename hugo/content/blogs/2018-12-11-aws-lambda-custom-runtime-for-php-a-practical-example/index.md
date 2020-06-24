@@ -102,7 +102,7 @@ the time of this writing, we use PHP 7.3.0 for this example). Follow the
 instructions in the guide linked above up up to the **Setting up PHP on the instance**
 step, and then... read on!
 
-<img style="display: none" src="{% asset_path 2018-12-11-aws-lambda-custom-runtime-for-php-a-practical-example/og-image.png %}" />
+<img style="display: none" src="og-image.png" />
 
 ### Compiling PHP
 

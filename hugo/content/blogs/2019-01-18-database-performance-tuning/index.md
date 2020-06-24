@@ -51,7 +51,7 @@ After you have generated the AWR report, you can quickly see the **Top Timed
 Events** section in the AWR report, which identifies the problematic area, as
 shown in the following image:
 
-![]({% asset_path 2019-01-18-database-performance-tuning/Picture1.png %})
+![](Picture1.png)
 
 ### ADDM tuning Session
 
@@ -63,14 +63,14 @@ picture about database issues, Oracle has provided another tool for DBAs, ADDM.
 An ADDM tuning session follows a procedure similar to the manual tuning session.
 The following image shows a comparison:
 
-![]({% asset_path 2019-01-18-database-performance-tuning/Picture2.png %})
+![](Picture2.png)
 
 *Image source:  Oracle 11G Performance Tuning training manual*
 
 Retrieve ADDM reports by using SQL or through Oracle Enterprise Manager (OEM).
 The following image shows sample SQL:
 
-![]({% asset_path 2019-01-18-database-performance-tuning/Picture3.png %})
+![](Picture3.png)
 
 ### Bad SQL and execution plans
 
@@ -88,7 +88,7 @@ The following image shows sample output from the `EXPLAIN PLAN` command and
 identifies whether the query is using a full table scan or narrowing down the
 data by using some indexes:
 
-![]({% asset_path 2019-01-18-database-performance-tuning/Picture4.png %})
+![](Picture4.png)
 
 ADDM reports reflect whether you can achieve any performance benefit by creating
 some new indexes. You can also run the SQL Tuning Advisor from OEM to fine tune
@@ -108,13 +108,13 @@ solutions. SQL Tuning Advisor analyzes the following sources:
 
 The following screenshots show some examples:
 
-![]({% asset_path 2019-01-18-database-performance-tuning/Picture5.png %})
+![](Picture5.png)
 
-![]({% asset_path 2019-01-18-database-performance-tuning/Picture6.png %})
+![](Picture6.png)
 
-![]({% asset_path 2019-01-18-database-performance-tuning/Picture7.png %})
+![](Picture7.png)
 
-![]({% asset_path 2019-01-18-database-performance-tuning/Picture8.png %})
+![](Picture8.png)
 
 ### Long running requests
 
@@ -125,7 +125,7 @@ concurrent requests. The following image shows steps to collect this
 
 information:
 
-![]({% asset_path 2019-01-18-database-performance-tuning/Picture9.png %})
+![](Picture9.png)
 
 ### Oracle Database memory parameters
 
@@ -134,7 +134,7 @@ requires fine tuning because the cache hit ratio is lower for that cache than
 it is for other caches.  The following image shows a few of the top database
 parameters that you must consider for instance-wide memory tuning.
 
-![]({% asset_path 2019-01-18-database-performance-tuning/Picture10.png %})
+![](Picture10.png)
 
 *Image source:* [https://ora-performance-tuning.blogspot.com/2014/02/automatic-shared-memory-management.html](https://ora-performance-tuning.blogspot.com/2014/02/automatic-shared-memory-management.html)
 
@@ -142,7 +142,7 @@ parameters that you must consider for instance-wide memory tuning.
 
 The following table shows some common wait events and their possible causes:
 
-![]({% asset_path 2019-01-18-database-performance-tuning/Picture11.png %})
+![](Picture11.png)
 
 *Table source: Oracle Performance Tuning 11G OCP training manual,  chapter 20, page 24*
 

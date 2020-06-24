@@ -45,7 +45,7 @@ maintained as well.
 
 The following image illustrates the Parallel Replicat architecture:
 
-![List cell command results]({% asset_path 2018-05-23-oracle-goldengate-12c-release3-new-feature-parallel-replicat/Replicat1.png %})
+![List cell command results](Replicat1.png)
 Image source: [https://bit.ly/2wsPZVv](https://bit.ly/2wsPZVv)
 
 The architecture starts by reading a single trail file but provides a wider road

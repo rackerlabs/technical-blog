@@ -44,7 +44,7 @@ In this section, you learn how to unplug `PDB1` and `PDB2` from the source CDB
 Before making changes, the source PDBs are `MOUNTED` as shown in the following
 image:
 
-![]({% asset_path 2018-10-30-unplugging-and-plugging-multitenant-databases/Picture1.png %})
+![](Picture1.png)
 
 #### Validate PDB compatibility with the target CDB
 
@@ -151,7 +151,7 @@ commands:
 
 The result of these operations is shown in the following image:
 
-![]({% asset_path 2018-10-30-unplugging-and-plugging-multitenant-databases/Picture2.png %})
+![](Picture2.png)
 
 ##### Plug with the NOCOPY method
 
@@ -177,7 +177,7 @@ commands:
 
 The results of these operations are shown in the following image:
 
-![]({% asset_path 2018-10-30-unplugging-and-plugging-multitenant-databases/Picture3.png %})
+![](Picture3.png)
 
 List the data files of the plugged PDB by running the following commands:
 
@@ -207,7 +207,7 @@ An error message displays because the global unique identifier (GUID) is not
 unique. `PDB1` was already plugged using the COPY method, which caused this
 conflict with the GUID as shown in the following image:
 
-![]({% asset_path 2018-10-30-unplugging-and-plugging-multitenant-databases/Picture4.png %})
+![](Picture4.png)
 
 To address this, run the following code with the `AS CLONE` clause:
 
@@ -228,7 +228,7 @@ List the data files of the plugged PDB by running the following command:
 
 The results of these operations are shown in the following image:
 
-![]({% asset_path 2018-10-30-unplugging-and-plugging-multitenant-databases/Picture5.png %})
+![](Picture5.png)
 
 #### Open the plugged PDBs
 

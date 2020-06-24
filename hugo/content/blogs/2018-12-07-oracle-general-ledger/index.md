@@ -25,7 +25,7 @@ made in the `GL_INTERFACE` table.
 
 In this example, you'll complete the steps that appear in the following image:
 
-![]({% asset_path 2018-12-07-oracle-general-ledger/picture1.png %})
+![](picture1.png)
 
 **Image source**: Author.
 

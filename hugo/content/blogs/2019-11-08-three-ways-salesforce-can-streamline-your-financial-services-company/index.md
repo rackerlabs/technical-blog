@@ -25,7 +25,7 @@ more personally than ever before.
 
 <!--more-->
 
-![]({% asset_path 2019-11-08-three-ways-salesforce-can-streamline-your-financial-services-company/streamline-salesforce.png %})
+![](streamline-salesforce.png)
 
 As Strategic Alliance Executive at Rackspace, and formerly Regional Vice
 President at RelationEdge, I’ve worked with many financial services companies

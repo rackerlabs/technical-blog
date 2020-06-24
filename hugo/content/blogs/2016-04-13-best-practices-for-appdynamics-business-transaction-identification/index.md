@@ -39,7 +39,7 @@ With the above information in mind, we can now start to identify our critical _b
 
 Depending on the scope of the application, it may be necessary to involve other teams and stakeholders within your business to ensure that all critical paths through the application have a _business transaction_ defined within AppDynamics.
 
-![Sample business transactions in AppDynamics]({% asset_path 2016-03-08-best-practices-for-appdynamics-business-transaction-identification/appdynamics_business_transactions.png %})
+![Sample business transactions in AppDynamics](appdynamics_business_transactions.png)
 
 As you can see in the preceding image and examples, when naming _business transactions_ in AppDynamics, it's important to name them in a conversational way.  For example, we may be defining a _business transaction_ based on the servlet's entry URI (e.g. /store/browse/cat), but this would typically be a poor name for a transaction.  Instead, think if you noticed an issue in the application at 2:00 AM and needed to call a teammate to look in to the issue.  Would you say 'We're having an issue with category pages not serving properly' or would you say 'We're having an issue with _slash store slash browse slash cat_'?
 

@@ -106,7 +106,7 @@ Before trying to diagnose lag and potential bottlenecks in a GoldenGate
 environment, you should first understand the flow of data between the source and
 target databases, as shown in the following figure:
 
-![]({% asset_path 2018-11-14-troubleshoot-oracle-goldengate-lag/Picture1.png %})
+![](Picture1.png)
 
 Image source: [https://bit.ly/2OGREey](https://bit.ly/2OGREey)
 

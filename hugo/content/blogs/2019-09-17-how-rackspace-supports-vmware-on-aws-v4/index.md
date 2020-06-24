@@ -29,7 +29,7 @@ and network ports to connect to the world.
 
 The following image illustrates these layers:
 
-![]({% asset_path 2019-09-17-how-rackspace-supports-vmware-on-aws-v4/Picture1.png %})
+![](Picture1.png)
 
 However, we can only run one OS on a computer at a time. Right?
 
@@ -39,7 +39,7 @@ Virtualization changed the way we use computers by enabling us to install and
 run more than one OS at the same time and to maximize all of the
 hardware power available in a given chassis, as shown in the following image:
 
-![]({% asset_path 2019-09-17-how-rackspace-supports-vmware-on-aws-v4/Picture2.png %})
+![](Picture2.png)
 
 Virtualization software exists between the hardware layer and the OS.
 It acts like the hardware layer and *fools* any OS
@@ -66,7 +66,7 @@ VMware controls approximately 75% of the server virtualization market, the
 AWS/VMware partnership gives customers a very powerful, feature-rich, and
 flexible compute platform, as shown in the following image:
 
-![]({% asset_path 2019-09-17-how-rackspace-supports-vmware-on-aws-v4/Picture3.png %})
+![](Picture3.png)
 
 VMworld&reg; announced the initial availability of VMware Cloud on AWS to
 create a *seamlessly integrated hybrid cloud* in 2017. This announcement followed

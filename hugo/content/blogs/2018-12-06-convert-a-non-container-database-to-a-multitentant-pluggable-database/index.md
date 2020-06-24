@@ -36,7 +36,7 @@ have enough disk space to hold the converted CDB database.
 
 The following image shows the test scenario:
 
-![]({% asset_path 2018-12-06-convert-a-non-container-database-to-a-multitentant-pluggable-database/Picture1.png %})
+![](Picture1.png)
 
 ### Conversion tests
 

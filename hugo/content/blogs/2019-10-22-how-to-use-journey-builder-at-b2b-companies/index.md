@@ -28,7 +28,7 @@ This blog explains how you can use Journey Builder to streamline the customer
 experience and internal processes at your B2B company.
 
 <!--more-->
-![]({% asset_path 2019-10-22-how-to-use-journey-builder-at-b2b-companies/Picture1.png %})
+![](Picture1.png)
 
 ### What is Journey Builder and how does it work?
 

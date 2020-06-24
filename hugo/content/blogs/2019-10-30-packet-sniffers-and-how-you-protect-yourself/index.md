@@ -74,7 +74,7 @@ sniffing software analyzes the captured data packet and presents the results to
 the network administrators in a user-friendly format so that they can interpret
 the data.
 
-![]({% asset_path 2019-10-30-packet-sniffers-and-how-you-protect-yourself/Picture1.png %})
+![](Picture1.png)
 
 *Image source:* [https://www.eccouncil.org/](https://www.eccouncil.org/)
 
@@ -138,7 +138,7 @@ The following roles use network analyzers:
 
 You can use filters to analyze captured data.
 
-![]({% asset_path 2019-10-30-packet-sniffers-and-how-you-protect-yourself/Picture2.png %})
+![](Picture2.png)
 
 *Image source:* [https://www.wireshark.org](https://www.wireshark.org)
 
@@ -159,7 +159,7 @@ secure information.
 
 The following image shows a Wireshark screen:
 
-![]({% asset_path 2019-10-30-packet-sniffers-and-how-you-protect-yourself/Picture3.png %})
+![](Picture3.png)
 
 *Image source:* [https://www.wireshark.org](https://www.wireshark.org)
 

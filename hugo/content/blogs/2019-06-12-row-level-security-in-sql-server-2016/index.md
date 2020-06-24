@@ -51,7 +51,7 @@ determine which user can see which rows and restrict any rows (or data) by
 designing a flexible and robust security policy for a table, as shown in the
 following image:
 
-![]({% asset_path 2019-06-12-row-level-security-in-sql-server-2016/Picture1.png %})
+![](Picture1.png)
 
 *Image Source:* [https://sqlwithmanoj.com/2015/07/13/implementing-row-level-security-rls-with-sql-server-2016/](https://sqlwithmanoj.com/2015/07/13/implementing-row-level-security-rls-with-sql-server-2016/)
 
@@ -176,7 +176,7 @@ in Step 2:
 
 This code returns two rows, as shown below:
 
-![]({% asset_path 2019-06-12-row-level-security-in-sql-server-2016/Picture2.png %})
+![](Picture2.png)
 
     EXECUTE AS USER = 'userJames';
     SELECT * FROM dbo.SalesFigures;
@@ -185,7 +185,7 @@ This code returns two rows, as shown below:
 
 This code returns one row, as shown below:
 
-![]({% asset_path 2019-06-12-row-level-security-in-sql-server-2016/Picture3.png %})
+![](Picture3.png)
 
 ### Permissions
 

@@ -25,7 +25,7 @@ still be on the fence.
 
 <!--more-->
 
-![]({% asset_path 2019-12-02-nervous-about-converting-from-classic-to-lightning-learn-from-this-companys-success/picture1.png %})
+![](picture1.png)
 
 At Rackspace, we specialize in helping our clients succeed with the right
 technology solutions. We have helped many businesses make the change from Classic

@@ -13,7 +13,7 @@ categories:
   - architecture
 ---
 
-![scantron robot]({% asset_path 2018-08-21-scantron-a-distributed-nmap-scanner/scantron_300x300.jpg %})
+![scantron robot](scantron_300x300.jpg)
 
 ### Background
 
@@ -76,7 +76,7 @@ Scantron is a distributed nmap scanner comprised of two components:
 storing nmap scan targets and results
 * Agents that pull scan jobs from Master and conduct the actual nmap scanning
 
-![]({% asset_path 2018-08-21-scantron-a-distributed-nmap-scanner/scantron_architecture_overview.png %})
+![](scantron_architecture_overview.png)
 
 A majority of the application's logic is purposely placed on Master to make the
 agents as "dumb" as possible.  All nmap target files and nmap results reside on

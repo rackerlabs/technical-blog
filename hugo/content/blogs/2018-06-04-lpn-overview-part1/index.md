@@ -29,11 +29,11 @@ organization, and contents.
 
 The following image shows a visual representation of an LPN:
 
-![]({% asset_path 2018-06-04-lpn-overview-part1/picture1.png %})
+![](picture1.png)
 
 This image shows the typical structure of an LPN:
 
-![]({% asset_path 2018-06-04-lpn-overview-part1/picture2.png %})
+![](picture2.png)
 
 ### Advantages of LPNs
 
@@ -165,7 +165,7 @@ following steps:
    in the right panel. You can also expand an LPN in the left column to view
    its contents.
 
-   ![LPN items in Material Workbench]({% asset_path 2018-06-04-lpn-overview-part1/picture3.png %})
+   ![LPN items in Material Workbench](picture3.png)
 
 Note:
 

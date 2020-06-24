@@ -23,7 +23,7 @@ with you, your pain points soon become evident.
 
 <!--more-->
 
-![]({% asset_path 2019-11-18-six-common-roadblocks-when-implementing-cpq-software-and-how-overcome-them/Implementing-CPQ-Software.png %})
+![](Implementing-CPQ-Software.png)
 
 
 Manually configuring quotes for individual clients leaves your sales team at a

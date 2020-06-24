@@ -76,7 +76,7 @@ implement the necessary logic to negotiate the user authentication flow, manage
 state, and capture available user information. Let's begin by
 [creating a new user pool](https://console.aws.amazon.com/cognito/users/?region=us-east-1#/pool/new/create):
 
-![Create Cognito user pool]({% asset_path 2018-12-31-aws-application-load-balancer-authentication-with-saml-idp/create-cognito-user-pool.png %})
+![Create Cognito user pool](create-cognito-user-pool.png)
 
 For the **Pool name**, choose something descriptive. Because this user pool is
 for https://app.example.com/, we'll name it "Example".
@@ -90,7 +90,7 @@ alone because users will be signing in via ADFS. The next section, **Which
 standard attributes do you want to require?**, needs careful consideration. Pay
 close attention to the highlighted text in the screenshot below:
 
-![Standard attribute requirements cannot be changed after creation]({% asset_path 2018-12-31-aws-application-load-balancer-authentication-with-saml-idp/user-pool-required-attributes.png %})
+![Standard attribute requirements cannot be changed after creation](user-pool-required-attributes.png)
 
 There are a number of standard attributes like `email` and `name` that ADFS can
 expose in the authentication response in the form of **claims**. These checkboxes
@@ -127,7 +127,7 @@ is created.
 Finally, we **Create pool**, and make note of the **Pool Id**, which we'll need
 later.
 
-![User pool created]({% asset_path 2018-12-31-aws-application-load-balancer-authentication-with-saml-idp/user-pool-created.png %})
+![User pool created](user-pool-created.png)
 
 Before we move on to creating the app client, we'll need to create an
 **Identity provider** to associate to it when configuring the app client.
@@ -147,11 +147,11 @@ IdP supports sign out flow and you wish to enable it, you can do here. You can
 also add any [IdP identifiers](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-managing-saml-idp-naming.html),
 if needed. When finished, click **Create provider**.
 
-![Create SAML identity provider]({% asset_path 2018-12-31-aws-application-load-balancer-authentication-with-saml-idp/create-identity-provider.png %})
+![Create SAML identity provider](create-identity-provider.png)
 
 You should now see the provider listed under **Active SAML Providers**.
 
-![Active SAML providers]({% asset_path 2018-12-31-aws-application-load-balancer-authentication-with-saml-idp/active-providers.png %})
+![Active SAML providers](active-providers.png)
 
 Next, we can set up **Attribute mapping** between the claims exposed via ADFS
 responses I mentioned earlier and attributes within the user pool. To do so,
@@ -163,7 +163,7 @@ the **name** and **emailaddress** claims and mapping them to the standard **Name
 and **Email** attributes. If you created any custom attributes earlier, they
 would appear in the **User pool attribute** dropdown with the `custom:` prefix.
 
-![Attribute mapping]({% asset_path 2018-12-31-aws-application-load-balancer-authentication-with-saml-idp/attribute-mapping.png %})
+![Attribute mapping](attribute-mapping.png)
 
 To see which claims are available to you, have a look at your IdP's
 `FederationMetadata.xml` file and look for tags in this format:
@@ -190,7 +190,7 @@ on the left menu under **General settings**, then click **Add an app client**
 to begin creating one. For this example, we just need to enter a name. The rest
 of the settings can be left at their defaults.
 
-![Creating the app client]({% asset_path 2018-12-31-aws-application-load-balancer-authentication-with-saml-idp/create-app-client.png %})
+![Creating the app client](create-app-client.png)
 
 After the app client has been created, click **App client settings** under **App
 integration** in the left menu to configure it. We'll need to make sure that our
@@ -201,7 +201,7 @@ and that **Authorization code grant** and **openid** are checked under the
 The `<application domain>` corresponds to the domain where your application is
 accessed. In this case, we're using `app.example.com`.
 
-![App client settings]({% asset_path 2018-12-31-aws-application-load-balancer-authentication-with-saml-idp/app-client-settings.png %})
+![App client settings](app-client-settings.png)
 
 Pay special attention to the **Callback URL**. A small typo, or omission of the
 `/oauth2/idpresponse` path portion, easily result in a great deal of lost time
@@ -209,7 +209,7 @@ to troubleshooting. If at any point throughout or after this tutorial you
 encounter the cryptic error message shown below, there's a good chance an
 incorrect **Callback URL** is the cause!
 
-![Redirect mismatch error]({% asset_path 2018-12-31-aws-application-load-balancer-authentication-with-saml-idp/redirect_mismatch.png %})
+![Redirect mismatch error](redirect_mismatch.png)
 
 We're almost done with Cognito. The last item on our agenda is choosing a domain.
 
@@ -227,13 +227,13 @@ To use a custom domain, we'll skip past the **Amazon Cognito domain** section,
 and enter our custom authentication subdomain and select our previously created
 ACM certificate:
 
-![Your own domain]({% asset_path 2018-12-31-aws-application-load-balancer-authentication-with-saml-idp/your-own-domain.png %})
+![Your own domain](your-own-domain.png)
 
 **NOTE:** We _technically_ don't need to have a _real_ application yet in order
 to set up ALB authentication, but the custom domain step above will fail if the
 parent domain does not have an **A** record associated with it:
 
-![Custom domain not valid]({% asset_path 2018-12-31-aws-application-load-balancer-authentication-with-saml-idp/custom-domain-not-valid.png %})
+![Custom domain not valid](custom-domain-not-valid.png)
 
  If you're working on setting up authentication prior to beginning work on the
  application itself, you can work around this limitation by creating an **A**
@@ -242,13 +242,13 @@ parent domain does not have an **A** record associated with it:
 
  Otherwise, you can expect to see the following when you click **Save changes**:
 
-![Custom domain success]({% asset_path 2018-12-31-aws-application-load-balancer-authentication-with-saml-idp/custom-domain-success.png %})
+![Custom domain success](custom-domain-success.png)
 
 Make note of the **Alias target** and add an **A** record for `auth.app.example.com`
 with that as its target. Here's what the record set would look like if you're
 using Route 53 for DNS:
 
-![Auth A record Route 53]({% asset_path 2018-12-31-aws-application-load-balancer-authentication-with-saml-idp/auth-a-record.png %})
+![Auth A record Route 53](auth-a-record.png)
 
 ### Configuring ADFS
 
@@ -282,16 +282,16 @@ then (1) authenticate the user and (2) forward the request on to the application
 target group._" If all of the earlier steps were completed successfully up until
 now, insert a new default action in the first slot as shown below:
 
-![Authenticate action]({% asset_path 2018-12-31-aws-application-load-balancer-authentication-with-saml-idp/alb-default-action-1.png %})
+![Authenticate action](alb-default-action-1.png)
 
 Then, make sure you're still forwarding the request to the application target
 group afterwards:
 
-![Forward action]({% asset_path 2018-12-31-aws-application-load-balancer-authentication-with-saml-idp/alb-default-action-2.png %})
+![Forward action](alb-default-action-2.png)
 
 The end result will be something like this:
 
-![ALB rules]({% asset_path 2018-12-31-aws-application-load-balancer-authentication-with-saml-idp/alb-rule-summary.png %})
+![ALB rules](alb-rule-summary.png)
 
 This setup assumes that _all_ endpoints under your application require
 authentication. If that isn't the case, you can opt to either (a) add additional
@@ -308,7 +308,7 @@ This isn't _strictly_ necessary, but doing so ensures that your users always get
 to your application even if they accidentally try to access it insecurely. The
 `port 80` listener requires just one rule:
 
-![Port 80 redirect]({% asset_path 2018-12-31-aws-application-load-balancer-authentication-with-saml-idp/alb-port-80-redirect.png %})
+![Port 80 redirect](alb-port-80-redirect.png)
 
 ### Testing it out
 
@@ -318,7 +318,7 @@ been added, it's time for a test drive. Head over to any `https://app.example.co
 page that requires authentication, and you will be redirected to the SAML IdP's
 login screen. For example:
 
-![Example login screen]({% asset_path 2018-12-31-aws-application-load-balancer-authentication-with-saml-idp/login-example.png %})
+![Example login screen](login-example.png)
 
 After logging in successfully, you'll be redirected back to your application and
 able to access all of the secure pages!
@@ -327,12 +327,12 @@ Finally, if we return to our Cognito user pool and select **Users and groups**
 under **General settings**, we'll find that Cognito has created a group for our
 users...
 
-![Cognito group]({% asset_path 2018-12-31-aws-application-load-balancer-authentication-with-saml-idp/cognito-group.png %})
+![Cognito group](cognito-group.png)
 
 ... and that it automatically adds users who successfully authenticate to the
 group:
 
-![Cognito user]({% asset_path 2018-12-31-aws-application-load-balancer-authentication-with-saml-idp/cognito-user.png %})
+![Cognito user](cognito-user.png)
 
 ### Conclusion
 

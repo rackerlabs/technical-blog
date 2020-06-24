@@ -47,7 +47,7 @@ operations remain unaffected, and masked data has the same data type as
 the original data, so DDM can often be applied without making any changes
 to database procedures or application code.
 
-![Screenshot]({% asset_path 2018-08-27-dynamic-data-masking-in-sql-server-2016/ddm-overview.png %})
+![Screenshot](ddm-overview.png)
 
 [*Image source*](https://www.codeproject.com/Articles/1084808/Dynamic-Data-Masking-in-SQL-Server)
 

@@ -40,7 +40,7 @@ while rolling back can be painful in the short-term, it will yield positive
 results in the long run.
 
 ![A visualization of the OMS rollback from 13c
-to 12c]({% asset_path 2018-08-20-oms-rollback/picture1.png %})
+to 12c](picture1.png)
 
 ### Details on TriCore's rollback
 
@@ -165,7 +165,7 @@ OMS. Again, if you have a large environment, you can use a shell script to
 perform this task on all of your agents at the same time.
 
 ![A visualization of the three phases involved in the
-rollback ]({% asset_path 2018-08-20-oms-rollback/picture2.png %})
+rollback ](picture2.png)
 
 ### Verify that everything is working correctly
 

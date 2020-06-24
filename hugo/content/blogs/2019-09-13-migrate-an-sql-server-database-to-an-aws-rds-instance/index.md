@@ -119,7 +119,7 @@ file as the **MigrationTestDB** database:
        @restore_db_name = 'MigrationTestDB',
        @S3_arn_to_restore_from = 'arn:aws:s3:::ramkrdsrestore/MigrationTestDB2019-08-15 181640.bak'
 
-![]({% asset_path 2019-09-13-migrate-an-sql-server-database-to-an-aws-rds-instance/Picture1.png %})
+![](Picture1.png)
 
 Note the parameters supplied to the stored procedure. You need to specify the
 following parameters:
@@ -135,7 +135,7 @@ track the status of the task with the following command:
 
 You can use the **TaskID** to track progress instead of **@db_name**.
 
-![]({% asset_path 2019-09-13-migrate-an-sql-server-database-to-an-aws-rds-instance/Picture2.png %})
+![](Picture2.png)
 
 Be aware of the following concerns:
 

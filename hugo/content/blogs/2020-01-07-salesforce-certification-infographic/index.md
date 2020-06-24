@@ -42,7 +42,7 @@ our extensive Salesforce experience.
 Check out the following infographic for our guide to developing your knowledge
 and empowering your teams through the Salesforce resources:
 
-![]({% asset_path 2020-01-07-salesforce-certification-infographic/Picture1.png %})
+![](Picture1.png)
 
 <a class="cta blue" id="cta" href="https://www.rackspace.com/salesforce">Learn more about Salesforce Customer Relationship Management (CRM)</a>
 

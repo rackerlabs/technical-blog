@@ -22,7 +22,7 @@ at every step along the path from lead to loyalty.
 
 <!--more-->
 
-![]({% asset_path 2019-12-13-are-you-using-your-marketing-automation-platform-to-its-full-capacity/Picture1.png %})
+![](Picture1.png)
 
 You might feel overwhelmed by the number and variety of options your marketing
 automation platform offers. From qualifying and nurturing your leads to

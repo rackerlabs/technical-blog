@@ -26,7 +26,7 @@ and which should you scrub? How can your company decide?
 
 <!--more-->
 
-![]({% asset_path 2020-01-27-six-best-practices-for-managing-and-cleaning-salesforce-data/Picture1.png %})
+![](Picture1.png)
 
 Rackspace has helped many clients implement and customize Salesforce, giving us
 a unique view on best practices and common mistakes,

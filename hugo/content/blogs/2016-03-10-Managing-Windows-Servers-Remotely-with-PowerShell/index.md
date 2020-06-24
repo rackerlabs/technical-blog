@@ -71,7 +71,7 @@ or Ansible among others.
 
 Look for future articles describing how to leverage these concepts further using DSC.
 
-![Example]({% asset_path 2016-03-10-Managing-Windows-Servers-Remotely-with-PowerShell/PoshCode.png %})
+![Example](PoshCode.png)
 
 ### Further reading
 

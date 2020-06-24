@@ -190,7 +190,7 @@ aws securityhub create-insight --name "bitcoin miner"  --filter '{"ResourceType"
 go to the **AWS Console -> SecurityHub -> Settings -> Custom actions**. Click
 on **Create custom action**.
 
-![Custom Action]({% asset_path 2018-12-12-aws-security-hub-overview/custom_action.png %})
+![Custom Action](custom_action.png)
 
 * It's now time to create our **CloudWatch Events** rule:
 
@@ -229,21 +229,21 @@ aws sns get-subscription-attributes --subscription-arn "arn:aws:sns:eu-west-1:98
 * So far, so good! Time for action...In the **AWS Console -> Security Hub -> Insights**
 panel, we find the `insight` which we created earlier:
 
-![Insight]({% asset_path 2018-12-12-aws-security-hub-overview/insight.png %})
+![Insight](insight.png)
 
 * Clicking through on that `insight`, we see the `finding` we previously turned
 up in our seach. We highlight this and select the `action` we created earlier
 from the dropdown. We are notified in a green across the top of the panel that
 this operation has been successful.
 
-![Action]({% asset_path 2018-12-12-aws-security-hub-overview/action.png %})
+![Action](action.png)
 
 * While we wait for the email notification to arrive, we can validate that
 CloudWatch Events has seen and processed the event triggered by our `action`
 by visiting **AWS Console -> CloudWatch -> Events -> Rules** and click on our
 **SecHub** rule:
 
-![Action]({% asset_path 2018-12-12-aws-security-hub-overview/cw_events.png %})
+![Action](cw_events.png)
 
 If we view the metrics for this rule, we should should see `TriggeredRules`
 reporting a value of `1`. Before long, however, an email will appear in our

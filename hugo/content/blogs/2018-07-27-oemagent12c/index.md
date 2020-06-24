@@ -28,7 +28,7 @@ uploading all monitoring data. OEM then processes the data and generates a
 notification alert according to defined threshold values, as shown in the
 following figure:
 
-![Enterprise summary]({% asset_path 2018-08-03-oemagent12c/picture1.png %})
+![Enterprise summary](picture1.png)
 
 ### Common EM Agent issues
 
@@ -44,7 +44,7 @@ suddenly crashes and displays the following error message:
 
 The following image shows what the full error message looks like:
 
-![What the OutOfMemoryError looks like]({% asset_path 2018-08-03-oemagent12c/picture2.png %})
+![What the OutOfMemoryError looks like](picture2.png)
 
 Java heap space issues are sometimes accompanied by a ``TaskZombieException``.
 The following code block shows an example of this exception:

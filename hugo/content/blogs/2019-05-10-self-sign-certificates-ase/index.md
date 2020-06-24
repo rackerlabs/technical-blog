@@ -56,24 +56,24 @@ certificate for HTTPS, we need to extract the public key and upload it into each
 web app that makes Solr Cloud calls. Navigate to the **SSL Settings** of the web
 app, select the local machine, and upload a public certificate.
 
-![UploadCert]({% asset_path 2019-05-10-self-sign-certificates-ase/uploadPublicCer.png %})
+![UploadCert](uploadPublicCer.png)
 
 In the web app **App Settings**, add a new setting called
 **WEBSITE\_LOAD\_ROOT\_CERTIFICATES** and add the thumbprint of the certificate
 you uploaded. Restart the web app to load it into the trusted root store.
 
-![appSetting]({% asset_path 2019-05-10-self-sign-certificates-ase/appsettingsLoadRoot.png %})
+![appSetting](appsettingsLoadRoot.png)
 
 To verify that the certificate is loaded into the trusted root store, log in to
 KUDU using the publishing credentials of the Azure Web App. Start a powershell
 prompt within KUDU and type ``dir cert:\localmachine\root``.
 
-![KUDU]({% asset_path 2019-05-10-self-sign-certificates-ase/appServiceScmCert.png %})
+![KUDU](appServiceScmCert.png)
 
 Repeat the above steps on all the required web apps that need to access Solr
 Cloud. Log in to the Sitecore management portal and populate the index schema.
 
-![Schema]({% asset_path 2019-05-10-self-sign-certificates-ase/solrPopulate.png %})
+![Schema](solrPopulate.png)
 
 We are now successfully using a self-signed certificate to make an HTTPS
 connection to Solr Cloud from an Azure Web App.

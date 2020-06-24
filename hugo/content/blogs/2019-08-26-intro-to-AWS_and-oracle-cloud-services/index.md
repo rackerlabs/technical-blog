@@ -28,7 +28,7 @@ Both Amazon and Oracle Cloud have unique features. This post gives you a better 
 
 The following image shows Infrastructure-as-a-service (IaaS) services:
 
-![]({% asset_path 2019-08-26-intro-to-AWS_and-oracle-cloud-services/Picture1.png %})
+![](Picture1.png)
 
 *Image source*: [https://www.syntax.com/wp-content/uploads/2018/01/IaaS_graphic.png](https://www.syntax.com/wp-content/uploads/2018/01/IaaS_graphic.png)
 
@@ -55,7 +55,7 @@ Oracle provides the following types of storage:
 
 The following chart shows the service equivalence:
 
-![]({% asset_path 2019-08-26-intro-to-AWS_and-oracle-cloud-services/Picture2.png %})
+![](Picture2.png)
 
 ### Accessing storage on the cloud
 

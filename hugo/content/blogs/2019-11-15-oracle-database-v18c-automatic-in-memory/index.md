@@ -53,7 +53,7 @@ AIM and has the following values:
 The following image shows the **INMEMORY\_AUTOMATIC\_LEVEL** parameter and how
 to modify its value:
 
-![]({% asset_path 2019-11-15-oracle-database-v18c-automatic-in-memory/Picture1.png %})
+![](Picture1.png)
 
 ### Set the time interval for AIM
 
@@ -61,7 +61,7 @@ Use the **DBMS\_INMEMORY\_ADMIN** package to set the time interval for the usage
 statistics that AIM checks. The default value is 31 days. You can change this
 setting as shown in the following example:
 
-![]({% asset_path 2019-11-15-oracle-database-v18c-automatic-in-memory/Picture2.png %})
+![](Picture2.png)
 
 ### Understand how AIM works
 
@@ -71,13 +71,13 @@ the `INMEMORY ENABLED` status for a schema. In the following example, you can
 see segment **TAB1** already shows in the populated segments lists because its
 priority is set to `HIGH`.
 
-![]({% asset_path 2019-11-15-oracle-database-v18c-automatic-in-memory/Picture3.png %})
+![](Picture3.png)
 
 Now, you can populate other tables with `INMEMORY ENABLED`. Tables are populated
 in an IM column store after you access the tables, as shown in the following
 example:
 
-![]({% asset_path 2019-11-15-oracle-database-v18c-automatic-in-memory/Picture4.png %})
+![](Picture4.png)
 
 Next, you can try to populate one more table, **EXAMPLE3**, with `HIGH` priority
 to give it preference over segments with priority of `NONE`. Querying
@@ -89,7 +89,7 @@ That is why AIM evicted the other cold segments (or segments having priority of
 those objects in the IM column store run fine&mdash;they get the remaining data
 that they do not find in the IM column store from the database.
 
-![]({% asset_path 2019-11-15-oracle-database-v18c-automatic-in-memory/Picture5.png %})
+![](Picture5.png)
 
 You can query **DBA\_INMEMORY\_AIMTASKS** to see the status of all the tasks
 created by AIM. **DBA\_INMEMORY\_AIMTASKDETAILS** lists all the details of
@@ -98,7 +98,7 @@ following image, you can see that no action has been taken on **TAB1** because
 its priority is `HIGH` and as explained earlier while populating table **EXAMPLE3**,
 the IM column store was under memory pressure so AIM evicted the other segments.
 
-![]({% asset_path 2019-11-15-oracle-database-v18c-automatic-in-memory/Picture6.png %})
+![](Picture6.png)
 
 ### Conclusion
 

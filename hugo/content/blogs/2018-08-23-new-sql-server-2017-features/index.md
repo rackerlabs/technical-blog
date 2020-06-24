@@ -72,9 +72,9 @@ after events such as database failovers, running out of disk space, or pauses.
 
 The following images show an example of this operation:
 
-![]({% asset_path 2018-08-23-new-sql-server-2017-features/Picture1.png %})
+![](Picture1.png)
 
-![]({% asset_path 2018-08-23-new-sql-server-2017-features/Picture2.png %})
+![](Picture2.png)
 
 #### Guidelines for indexing
 
@@ -110,7 +110,7 @@ use to improve query performance in SQL Server and SQL Database.
 
 There are three new query improvements as shown in the following diagram:
 
-![]({% asset_path 2018-08-23-new-sql-server-2017-features/Picture3.png %})
+![](Picture3.png)
 
 -  **Batch mode memory grant feedback**: This feedback technique recalculates
 required memory for the execution plan and grants it from cache.
@@ -152,7 +152,7 @@ engine fix any problems related to the plan changes that are found.
 
 The automatic plan correction is shown in the following diagram:
 
-![]({% asset_path 2018-08-23-new-sql-server-2017-features/Picture4.png %})
+![](Picture4.png)
 
 The following automatic tuning features are available:
 
@@ -161,9 +161,9 @@ SQL Database): It identifies problematic query execution plans and fixes the
 SQL plan performance problems. Automatic tuning is enabled using the following
 command:
 
-![]({% asset_path 2018-08-23-new-sql-server-2017-features/Picture5.png %})
+![](Picture5.png)
 
-![]({% asset_path 2018-08-23-new-sql-server-2017-features/Picture6.png %})
+![](Picture6.png)
 
 -	**Automatic index management** (available only in Azure SQL Database): It
 identifies indexes that should be added in your database and indexes that should
@@ -251,7 +251,7 @@ monitor, alert, and avert potential transaction log issues.
 -	**sys.dm\_d\_stats\_histogram** is a new dynamic management view for examining
 statistics, as shown in the following image:
 
-![]({% asset_path 2018-08-23-new-sql-server-2017-features/Picture7.png %})
+![](Picture7.png)
 
 -	**sys.dm\_os\_host\_info** exposes things like platform, distribution,
 service pack level, and language.
@@ -298,7 +298,7 @@ statistics are collected and displayed:
 sessions to plans, as long as query profiling is enabled. The following image
 illustrates this:
 
-![]({% asset_path 2018-08-23-new-sql-server-2017-features/Picture8.png %})
+![](Picture8.png)
 
 -	Showplan XML now includes information about the statistics used for a plan
 and, for actual plans, runtime metrics and the top 10 wait statistics

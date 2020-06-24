@@ -54,12 +54,12 @@ nodes.
 The following image uses the `WGET` utility to download the required RPM Package
 Manager (RPM) file from the server.
 
-![]({% asset_path 2018-12-05-rolling-upgrade-of-couchbase-server-using-graceful-failover-option/Picture1-1.png %})
+![](Picture1-1.png)
 
 After the download, the current location contains the version 5.5 binary as shown
 in the following image:
 
-![]({% asset_path 2018-12-05-rolling-upgrade-of-couchbase-server-using-graceful-failover-option/Picture1-2.png %})
+![](Picture1-2.png)
 
 Repeat the download process for the other node of the cluster.
 
@@ -68,7 +68,7 @@ Repeat the download process for the other node of the cluster.
 Use the Couchbase Web Console to log in to cluster `node-1` by using the
 `Adminstrator` account, as shown in the following image:
 
-![]({% asset_path 2018-12-05-rolling-upgrade-of-couchbase-server-using-graceful-failover-option/Picture2-1.png %})
+![](Picture2-1.png)
 
 #### Step 3: List the servers
 
@@ -76,14 +76,14 @@ Click on the **Servers** tab to see the list of servers that are a part of the
 cluster. The following image shows that we have two server nodes that are part
 of this cluster:
 
-![]({% asset_path 2018-12-05-rolling-upgrade-of-couchbase-server-using-graceful-failover-option/Picture3-1.png %})
+![](Picture3-1.png)
 
 #### Step 4: Review the server details
 
 Click on each server to see its detailed information including the current
 version, as shown in the following image:
 
-![]({% asset_path 2018-12-05-rolling-upgrade-of-couchbase-server-using-graceful-failover-option/Picture4-1.png %})
+![](Picture4-1.png)
 
 Because you logged in from `node-1`, you need to upgrade the other node, `node-2`,
 first so that the Couchbase Web Console session remains intact even after the
@@ -94,12 +94,12 @@ Couchbase shutdown during the upgrade.
 Expand the `node-2` section and click **Failover**, as shown in the following
 image:
 
-![]({% asset_path 2018-12-05-rolling-upgrade-of-couchbase-server-using-graceful-failover-option/Picture5-1.png %})
+![](Picture5-1.png)
 
 Select **Graceful Failover** and click **Failover Server** as shown in the
 following image:
 
-![]({% asset_path 2018-12-05-rolling-upgrade-of-couchbase-server-using-graceful-failover-option/Picture5-2.png %})
+![](Picture5-2.png)
 
 The time it takes for the graceful failover is directly proportional to the
 number of *vBuckets* that are required to be activated or synced to the surviving
@@ -109,22 +109,22 @@ after the software upgrade.
 
 The following image shows the progress of the upgrade:
 
-![]({% asset_path 2018-12-05-rolling-upgrade-of-couchbase-server-using-graceful-failover-option/Picture5-3.png %})
+![](Picture5-3.png)
 
 The following image shows the Couchbase Web Console after the upgrade completes:
 
-![]({% asset_path 2018-12-05-rolling-upgrade-of-couchbase-server-using-graceful-failover-option/Picture5-4.png %})
+![](Picture5-4.png)
 
 #### Step 6: Shut down Couchbase on node-2
 
 Shut down Couchbase on `node-2` as shown in the following image:
 
-![]({% asset_path 2018-12-05-rolling-upgrade-of-couchbase-server-using-graceful-failover-option/Picture6-1.png %})
+![](Picture6-1.png)
 
 After the shutdown, the status of the node in the Couchbase Web Console changes
 to **Node unresponsive** as shown in the following image:
 
-![]({% asset_path 2018-12-05-rolling-upgrade-of-couchbase-server-using-graceful-failover-option/Picture6-2.png %})
+![](Picture6-2.png)
 
 #### Step 7: Perform the upgrade
 
@@ -135,18 +135,18 @@ wanted to uninstall version 5.1.0 and then install 5.5.0 (instead of using the
 `--upgrade` option), you would need to do to use **Full Recovery** instead of
 **Delta Recovery** after the software upgrade.
 
-![]({% asset_path 2018-12-05-rolling-upgrade-of-couchbase-server-using-graceful-failover-option/Picture7-1.png %})
+![](Picture7-1.png)
 
 The upgrade should take only a few minutes and, after the upgrade completes, the
 Couchbase Server process starts automatically as shown in the following image:
 
-![]({% asset_path 2018-12-05-rolling-upgrade-of-couchbase-server-using-graceful-failover-option/Picture7-2.png %})
+![](Picture7-2.png)
 
 The Couchbase Web Console output now shows the upgraded version as well as the
 option to add back using either **Full Recovery** or **Delta Recovery**, as
 shown in the following image:
 
-![]({% asset_path 2018-12-05-rolling-upgrade-of-couchbase-server-using-graceful-failover-option/Picture7-3.png %})
+![](Picture7-3.png)
 
 #### Step 8: Perform a Delta recovery
 
@@ -156,7 +156,7 @@ The status changes to **DELTA RECOVERY pending rebalance** as shown in the
 following image. In this step, you are just telling Couchbase which recovery
 mode to use, not actually kicking off the recovery.
 
-![]({% asset_path 2018-12-05-rolling-upgrade-of-couchbase-server-using-graceful-failover-option/Picture8-1.png %})
+![](Picture8-1.png)
 
 #### Step 9: Start the recovery
 
@@ -165,18 +165,18 @@ quickly because it's a delta recovery instead of a full recovery.
 
 The following image shows the progress of the recovery:
 
-![]({% asset_path 2018-12-05-rolling-upgrade-of-couchbase-server-using-graceful-failover-option/Picture9-1.png %})
+![](Picture9-1.png)
 
 After the rebalance completes, the node turns green in the Couchbase Web Console
 and is back in sync on the cluster. You can also see the version is upgraded to
 5.5 as shown in the following image:
 
-![]({% asset_path 2018-12-05-rolling-upgrade-of-couchbase-server-using-graceful-failover-option/Picture9-2.png %})
+![](Picture9-2.png)
 
 Notice in the following image that one node in the cluster is on version 5.1.0
 and the other is on version 5.5.0:
 
-![]({% asset_path 2018-12-05-rolling-upgrade-of-couchbase-server-using-graceful-failover-option/Picture9-3.png %})
+![](Picture9-3.png)
 
 #### Step 10: Upgrade node-1
 
@@ -187,7 +187,7 @@ log in to the `node-2` Couchbase Web Console as `Administrator` and repeat Steps
 The following image shows the Couchbase Web Console after the upgrade and
 recovery of `node-1` is complete:
 
-![]({% asset_path 2018-12-05-rolling-upgrade-of-couchbase-server-using-graceful-failover-option/Picture10-1.png %})
+![](Picture10-1.png)
 
 Note the following two new options on the left side menu, which are new in
 Version 5.5.0.

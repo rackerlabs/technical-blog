@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Azure storage partition names"
-date: 2016-10-27 10:22
+date: 2016-10-27
 comments: false
 author: Jimmy Rudley
 authorAvatar: 'https://en.gravatar.com/userimage/151177997/5bed7e07ee47533cbd34b951d463bcb7.jpg'

@@ -24,7 +24,7 @@ continues to expand?
 
 <!--more-->
 
-![]({% asset_path 2020-01-27-install-guardrails-on-your-sale-process-with-salesforce-CPQ/Picture1.png %})
+![](Picture1.png)
 
 With features that act as guardrails on your sales process,
 [Salesforce&reg; CPQ](https://www.salesforce.com/products/cpq/overview/)

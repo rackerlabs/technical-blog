@@ -22,7 +22,7 @@ This blog discusses three ways that SalesForce Health Cloud can help
 improve patient experience within the health care industry.
 
 <!--more-->
-![]({% asset_path 2019-10-17-three-ways-salesforce-health-cloud-can-improve-patient-experience/Picture1.png %})
+![](Picture1.png)
 
 I’m sitting on my couch in San Diego in disbelief. I’m looking at a medical bill
 that I just received 18 months after my spinal procedure. It's from a surgical

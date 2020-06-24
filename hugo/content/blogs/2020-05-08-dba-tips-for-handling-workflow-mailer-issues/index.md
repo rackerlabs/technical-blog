@@ -185,7 +185,7 @@ You can use the following commands to set the Mailer **STARTUP_MODE** to `MANUAL
     from APPS.FND_CONCURRENT_QUEUES_VL fcq, fnd_svc_components fsc where fsc.concurrent_queue_id = fcq.concurrent_queue_id(+)
     order by COMPONENT_STATUS , STARTUP_MODE , COMPONENT_NAME;
 
-![]({% asset_path 2020-05-08-dba-tips-for-handling-workflow-mailer-issues/Picture1.png %})
+![](Picture1.png)
 
     SQL> update fnd_svc_components fsc set fsc.STARTUP_MODE='MANUAL' where fsc.COMPONENT_NAME='Workflow Notification Mailer';
 
@@ -215,9 +215,9 @@ Use the following single script to change the Workflow Notification Mailer value
 
     $FND_TOP/sql/afsvcpup.sql
 
-![]({% asset_path 2020-05-08-dba-tips-for-handling-workflow-mailer-issues/Picture2.png %})
+![](Picture2.png)
 
-![]({% asset_path 2020-05-08-dba-tips-for-handling-workflow-mailer-issues/Picture3.png %})
+![](Picture3.png)
 
 ### Conclusion
 

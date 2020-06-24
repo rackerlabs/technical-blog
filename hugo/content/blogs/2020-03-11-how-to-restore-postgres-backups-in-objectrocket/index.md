@@ -38,7 +38,7 @@ ObjectRocket service.
 
 <!--more-->
 
-![]({% asset_path 2020-03-11-how-to-restore-postgres-backups-in-objectrocket/Picture1.png %})
+![](Picture1.png)
 
 ### No-fuss backups
 
@@ -48,7 +48,7 @@ worth of backups at all times. You can view your backup times and the status of
 previous in our dashboard or by using the user interface (UI), as shown in the
 following image:
 
-![]({% asset_path 2020-03-11-how-to-restore-postgres-backups-in-objectrocket/Picture2.png %})
+![](Picture2.png)
 
 ### Multiple restore options
 
@@ -79,16 +79,16 @@ minute so that we can see the point to which we restored.
 The following image shows the database, and you can see that the last timestamp
 was at 16:00:58 (UTC).
 
-![]({% asset_path 2020-03-11-how-to-restore-postgres-backups-in-objectrocket/Picture3.png %})
+![](Picture3.png)
 
 To restore to the latest data in this database, provide the instance ID of the
 source instance to a new instance create call, as shown in the following image:
 
-![]({% asset_path 2020-03-11-how-to-restore-postgres-backups-in-objectrocket/Picture4.png %})
+![](Picture4.png)
 
 After the instance restore completes, connect and check the last timestamp.
 
-![]({% asset_path 2020-03-11-how-to-restore-postgres-backups-in-objectrocket/Picture5.png %})
+![](Picture5.png)
 
 As you can see, all of the data is there, and the new Postgres instance is fully
 caught up to the source Postgres instance.
@@ -104,28 +104,28 @@ backups, notice that each backup has a unique ID that you can use to identify
 it. In the following image, you can see that the system took the backup at
 15:36:15 (UTC):
 
-![]({% asset_path 2020-03-11-how-to-restore-postgres-backups-in-objectrocket/Picture6.png %})
+![](Picture6.png)
 
 To restore to this exact backup, add the backup ID to the create call.
 
-![]({% asset_path 2020-03-11-how-to-restore-postgres-backups-in-objectrocket/Picture7.png %})
+![](Picture7.png)
 
 After the instance loads, notice that the backup has data and timestamps from
 before the backup time of 15:36:15.
 
-![]({% asset_path 2020-03-11-how-to-restore-postgres-backups-in-objectrocket/Picture8.png %})
+![](Picture8.png)
 
 #### Restore to a specific time
 
 To specify the time you’d like to restore from, provide the source instance ID
 and the time to restore to, as shown in the following image:
 
-![]({% asset_path 2020-03-11-how-to-restore-postgres-backups-in-objectrocket/Picture9.png %})
+![](Picture9.png)
 
 In this case, I want to restore to 15:53:00. After the restore completes, you
 can see that the data only exists up to that time.
 
-![]({% asset_path 2020-03-11-how-to-restore-postgres-backups-in-objectrocket/Picture10.png %})
+![](Picture10.png)
 
 If you look back at the preceding images, you might notice that we did have
 another timestamp at 15:53:00, which occurred at just over 0.8 seconds

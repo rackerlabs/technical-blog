@@ -76,7 +76,7 @@ possible failure conditions.
 
 The following image shows the Data Guard configuration:
 
-![]({% asset_path 2019-05-10-metro-virtual-data-centers/Picture1.png %})
+![](Picture1.png)
 
 *Image source:* [https://neeraj-dba.blogspot.com/2011/10/dataguard-broker-and-its-benefits_05.html](https://neeraj-dba.blogspot.com/2011/10/dataguard-broker-and-its-benefits_05.html)
 
@@ -149,13 +149,13 @@ restarts the instances that it shut down before the switchover.
 
 Before switchover:
 
-![]({% asset_path 2019-05-10-metro-virtual-data-centers/Picture2.png %})
+![](Picture2.png)
 
 *Image source:* [https://docs.oracle.com/cd/E11882_01/server.112/e41134/role_management.htm#SBYDB00615](https://docs.oracle.com/cd/E11882_01/server.112/e41134/role_management.htm#SBYDB00615)
 
 After switchover:
 
-![]({% asset_path 2019-05-10-metro-virtual-data-centers/Picture3.png %})
+![](Picture3.png)
 
 *Image source:* [https://docs.oracle.com/cd/E11882_01/server.112/e41134/role_management.htm#SBYDB00615](https://docs.oracle.com/cd/E11882_01/server.112/e41134/role_management.htm#SBYDB00615)
 
@@ -250,7 +250,7 @@ primary and observer, as well as the primary and target standby DBs, are down.
 A connection between Observer and standby is required to enable the observer to
 confirm that the configuration is in a synchronized state.
 
-![]({% asset_path 2019-05-10-metro-virtual-data-centers/Picture4.png %})
+![](Picture4.png)
 
 *Image source:* [https://docs.oracle.com/cd/E11882_01/server.112/e41134/role_management.htm#SBYDB00615](https://docs.oracle.com/cd/E11882_01/server.112/e41134/role_management.htm#SBYDB00615)
 

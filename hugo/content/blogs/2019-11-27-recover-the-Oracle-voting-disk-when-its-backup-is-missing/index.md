@@ -84,9 +84,9 @@ The sample scenario for this blog uses the following environment:
 
 Let's fix the following error:
 
-![]({% asset_path 2019-11-27-recover-the-Oracle-voting-disk-when-its-backup-is-missing/Picture1.png %})
+![](Picture1.png)
 
-![]({% asset_path 2019-11-27-recover-the-Oracle-voting-disk-when-its-backup-is-missing/Picture2.png %})
+![](Picture2.png)
 
     cssd(3980)]CRS-1714:Unable to discover any voting files,
     retrying discovery in 15 seconds; Details at (:CSSNM00070:)

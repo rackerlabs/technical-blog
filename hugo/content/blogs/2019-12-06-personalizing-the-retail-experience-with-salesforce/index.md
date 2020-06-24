@@ -23,7 +23,7 @@ the biggest shopping season of the year.
 
 <!--more-->
 
-![]({% asset_path 2019-12-06-personalizing-the-retail-experience-with-salesforce/picture1.png %})
+![](picture1.png)
 
 [Fifty-six percent of marketers](https://www.marketingcharts.com/brand-related-82815)
 cited retail personalization as the most exciting trend of the year. That means

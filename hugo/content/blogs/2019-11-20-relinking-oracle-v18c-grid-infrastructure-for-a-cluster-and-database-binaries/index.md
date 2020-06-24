@@ -82,7 +82,7 @@ Before starting the relink operation, you need to stop all the services that
 run from the **$ORACLE_HOME** directory. Shut down all the databases,
 listeners, Oracle Automatic Storage (ASM) instances, and cluster services.
 
-![]({% asset_path 2019-11-20-relinking-oracle-v18c-grid-infrastructure-for-a-cluster-and-database-binaries/Picture1.png %})
+![](Picture1.png)
 
 #### Root access required
 
@@ -91,7 +91,7 @@ Use root access to run the following command to unlock **GRID_HOME**:
     # cd GRID_HOME/crs/install
     # rootcrs.sh -unlock
 
-![]({% asset_path 2019-11-20-relinking-oracle-v18c-grid-infrastructure-for-a-cluster-and-database-binaries/Picture2.png %})
+![](Picture2.png)
 
 #### Oracle Grid Infrastructure cluster owner access required
 
@@ -100,19 +100,19 @@ following steps:
 
 Verify that the environment variables **$ORACLE_HOME** and **$PATH** are set properly.
 
-![]({% asset_path 2019-11-20-relinking-oracle-v18c-grid-infrastructure-for-a-cluster-and-database-binaries/Picture3.png %})
+![](Picture3.png)
 
 Take a backup of **$ORACLE_HOME/rdbms/lib/config.o** before executing the
 relink command.
 
-![]({% asset_path 2019-11-20-relinking-oracle-v18c-grid-infrastructure-for-a-cluster-and-database-binaries/Picture4.png %})
+![](Picture4.png)
 
 Execute the following commands to relink **GRID_HOME**:
 
     $ export ORACLE_HOME=Grid_home
     $ Grid_home/bin/relink all
 
-![]({% asset_path 2019-11-20-relinking-oracle-v18c-grid-infrastructure-for-a-cluster-and-database-binaries/Picture5.png %})
+![](Picture5.png)
 
 Review the relink log file for any errors.
 
@@ -125,17 +125,17 @@ Use root access to run the following commands to lock the **GRID-HOME** binaries
     # cd Grid_home/crs/install
     # rootcrs.sh -lock
 
-![]({% asset_path 2019-11-20-relinking-oracle-v18c-grid-infrastructure-for-a-cluster-and-database-binaries/Picture6.png %})
+![](Picture6.png)
 
 ### Relink Oracle database binaries
 
 Make sure the environment variables **$ORACLE_HOME** and **$PATH** are set properly.
 
-![]({% asset_path 2019-11-20-relinking-oracle-v18c-grid-infrastructure-for-a-cluster-and-database-binaries/Picture7.png %})
+![](Picture7.png)
 
 Before proceeding with relink command, set **umask** to `022`.
 
-![]({% asset_path 2019-11-20-relinking-oracle-v18c-grid-infrastructure-for-a-cluster-and-database-binaries/Picture8.png %})
+![](Picture8.png)
 
 Review the relink log file for any errors.
 

@@ -169,7 +169,7 @@ dimensions. You can also send the reports to other users who can view them
 offline.
 
 ![A flow chart of the logical dimensions to which ASH provides
-access]({% asset_path 2018-10-05-odb-tuning1/picture1.png %})
+access](picture1.png)
 
 **Image source**: [OCP 12C – Emergency Monitoring, Real-Time
 ADDM](https://www.dba-scripts.com/articles/ocp-flashcards/ocp-12c-emergency-monitoring-real-time-addm/)

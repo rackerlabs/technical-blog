@@ -74,7 +74,7 @@ for integration.
 
 The following image shows the single instance architecture:
 
-![]({% asset_path 2019-02-26-understand-and-install-oracle-demantra-and-spwa/Picture1.png %})
+![](Picture1.png)
 
 #### Separate destination and source instances
 
@@ -84,7 +84,7 @@ instance must be a Demantra-certified version of APS.
 
 The following image shows the separate instances architecture:
 
-![]({% asset_path 2019-02-26-understand-and-install-oracle-demantra-and-spwa/Picture2.png %})
+![](Picture2.png)
 
 ### High-level installation steps for Demantra
 

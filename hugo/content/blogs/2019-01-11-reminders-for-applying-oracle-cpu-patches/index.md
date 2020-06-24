@@ -27,7 +27,7 @@ and explains how to handle related issues easily.
 
 The following image shows the phases of the ADOP cycle:
 
-![]({% asset_path 2019-01-11-reminders-for-applying-oracle-cpu-patches/Picture1.png %})
+![](Picture1.png)
 
 Image Source: [https://docs.oracle.com/cd/E26401_01/doc.122/e22954/T202991T531065.htm](https://docs.oracle.com/cd/E26401_01/doc.122/e22954/T202991T531065.htm)
 

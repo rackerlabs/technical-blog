@@ -52,7 +52,7 @@ Hive offers the following capabilities:
 
 The following image visualizes the architecture of the Hadoop ecosystem:
 
-![Architecture of the Hadoop ecosystem]({% asset_path 2018-06-18-hadoop-eco-basics-2/picture1.png %})
+![Architecture of the Hadoop ecosystem](picture1.png)
 
 #### External integration
 

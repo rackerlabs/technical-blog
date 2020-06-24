@@ -50,7 +50,7 @@ Before using an image copy backup strategy, keep in mind the following considera
 
 The following image shows an incrementally updated backup:
 
-![]({% asset_path 2018-06-15-bullet-speed-recovery-using-incrementally-updated-images/Image1.png %})
+![](Image1.png)
 
 ### Sample code
 

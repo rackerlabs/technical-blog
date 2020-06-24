@@ -26,7 +26,7 @@ Yes I can speak Cloud...I learned it from a book.
 
 <!--more-->
 
-![The Light Brigade]({% asset_path 2019-07-02-The-Thirteen-Tips-on-Taking-Tech-Tests/light_brigade.jpg %})
+![The Light Brigade](light_brigade.jpg)
 
 *Half a league, half a league,*
 

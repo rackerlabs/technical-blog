@@ -27,7 +27,7 @@ to access this row, the system traverses more than one database block, which
 results in more input/output (I/O) operations, as shown in the following
 illustration:
 
-![]({% asset_path 2018-06-06-Avoid-row-chaining-in-a-database/Picture1.png %})
+![](Picture1.png)
 
 ### Basic assumption to test the scenario
 
@@ -67,7 +67,7 @@ created tablespace to gather the statistics.
 
         SELECT CHAIN_CNT FROM ALL_TABLES WHERE OWNER=’HR’ AND TBALE_NAME=’BIG_ROWS’;
 
-   ![]({% asset_path 2018-06-06-Avoid-row-chaining-in-a-database/screenshot.png %})
+   ![](screenshot.png)
 
 <ol start=5>
     <li> Create a tablespace with a different block size with the following command:</li>
@@ -99,7 +99,7 @@ created tablespace to gather the statistics.
 
        SELECT CHAIN\_CNT FROM ALL\_TABLES WHERE OWNER=’HR’ AND TABLE\_NAME=’BIG\_ROWS’;
 
-![]({% asset_path 2018-06-06-Avoid-row-chaining-in-a-database/screenshot2.png %})
+![](screenshot2.png)
 
 ### Index rebuild after moving a table
 

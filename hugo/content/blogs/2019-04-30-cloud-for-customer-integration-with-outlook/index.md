@@ -41,7 +41,7 @@ configuration by executing the following steps:
 2. Select the **Fine-Tune** tab.
 3. Add **Activities** to the solution as shown in the following image:
 
-![]({% asset_path 2019-04-30-cloud-for-customer-integration-with-outlook/Picture1.png %})
+![](Picture1.png)
 
 ### Install the C4C Outlook add-in
 
@@ -51,12 +51,12 @@ To integrate C4C with Outlook, perform the following steps:
 2.  Login into C4C and navigate to **Downloads**.
 3.	Click **Add-in for Microsoft Outlook** as shown in the following image:
 
-![]({% asset_path 2019-04-30-cloud-for-customer-integration-with-outlook/Picture2.png %})
+![](Picture2.png)
 
 After the successful installation of the Outlook add-in, the following tabs are
 available in the toolbars for each activity type:
 
-![]({% asset_path 2019-04-30-cloud-for-customer-integration-with-outlook/Picture3.png %})
+![](Picture3.png)
 
 Perform the following steps to enable the Outlook integration features:
 
@@ -65,28 +65,28 @@ Perform the following steps to enable the Outlook integration features:
 3. Select **Manage: Disabled Items** and click **Go**.
 4. Ensure that you enable any disabled items.
 
-![]({% asset_path 2019-04-30-cloud-for-customer-integration-with-outlook/Picture4.png %})
+![](Picture4.png)
 
 <ol start=5>
     <li>Log on to C4C to provide the URL and user credentials in the pop-up
     window as shown in the following image:</li>
 </ol>
 
-![]({% asset_path 2019-04-30-cloud-for-customer-integration-with-outlook/Picture5.png %})
+![](Picture5.png)
 
 <ol start=6>
     <li>To activate the business object synchronization functionality, select
     <b>View>SAP Hybris Cloud for Customer</b> as shown in the following image:</li>
 </ol>
 
-![]({% asset_path 2019-04-30-cloud-for-customer-integration-with-outlook/Picture6.png %})
+![](Picture6.png)
 
 <ol start=7>
     <li> Select <b>Settings</b> from the Outlook menu bar to select the
     data to synchronize with C4C. The settings are shown in the following image:</li>
 </ol>
 
-![]({% asset_path 2019-04-30-cloud-for-customer-integration-with-outlook/Picture7.png %})
+![](Picture7.png)
 
 <ol start=8>
     <li>Select <b>Download Contacts</b> to download and synchronize contacts between C4C
@@ -105,22 +105,22 @@ following image, so you can synchronize inbound emails to C4C. By using this
 function, you can track email as business activities, generate reports, and
 possibly identify new business opportunities.
 
-![]({% asset_path 2019-04-30-cloud-for-customer-integration-with-outlook/Picture8.png %})
+![](Picture8.png)
 
 Similarly, the add-in enables you to add appointments, tasks, and contacts as
 shown in the following images:
 
-![]({% asset_path 2019-04-30-cloud-for-customer-integration-with-outlook/Picture9.png %})
+![](Picture9.png)
 
-![]({% asset_path 2019-04-30-cloud-for-customer-integration-with-outlook/Picture10.png %})
+![](Picture10.png)
 
-![]({% asset_path 2019-04-30-cloud-for-customer-integration-with-outlook/Picture11.png %})
+![](Picture11.png)
 
 To download and activate automatic synchronization of contacts between Outlook
 and C4C, choose **Tools > SAP Cloud for Customer Add-In Settings** in Outlook
 and check the options as shown in the following image:
 
-![]({% asset_path 2019-04-30-cloud-for-customer-integration-with-outlook/Picture12.png %})
+![](Picture12.png)
 
 You can select the following business object types for automatic synchronization:
 

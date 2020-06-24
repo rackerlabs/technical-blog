@@ -22,7 +22,7 @@ receive a level of service that exceeds their expectations.
 
 <!--more-->
 
-![]({% asset_path 2019-11-19-geofencing-in-fsl-why-you-should-partner-with-an-expert-before-starting/Geofencing-in-FSL.png %})
+![](Geofencing-in-FSL.png)
 
 This article reviews geofencing or geolocation&mdash;a capability within FSL. We
 discuss the definition of geofencing, as well as how and when you should expect

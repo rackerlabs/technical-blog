@@ -44,7 +44,7 @@ You can record the following information in the Security Audit Log:
 The following image shows the architecture of the Security Audit Log:
 
 ![Security Audit Log
-architecture]({% asset_path 2018-10-31-sap-security/picture1.png %})
+architecture](picture1.png)
 
 **Image source**: SAP, [The Design of the Security Audit
 Log](https://help.sap.com/saphelp_nwmobile711/helpdata/en/4d/41bf80aa601c86e10000000a42189b/frameset.htm).
@@ -131,13 +131,13 @@ Use the following steps to activate the Security Audit Log:
    for, as shown in the following image:
 
     ![Activate the Security Audit
-    Logs]({% asset_path 2018-10-31-sap-security/picture2.png %})
+    Logs](picture2.png)
 
 3. On the **Dynamic Configuration** tab, activate the **Status**, as shown in
    the following image:
 
     ![Activate the Security Audit
-    Logs]({% asset_path 2018-10-31-sap-security/picture3.png %})
+    Logs](picture3.png)
 
 The **Status** should now be active.
 

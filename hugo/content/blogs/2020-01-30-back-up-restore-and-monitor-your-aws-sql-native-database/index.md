@@ -44,7 +44,7 @@ following example:
     @s3_arn_to_backup_to='arn:aws:s3:::bucket_name/file_name_and_extension', @kms_master_key_arn='arn:aws:kms:region:account-id:key/key-id',
     @overwrite_S3_backup_file=1;
 
-![]({% asset_path 2020-01-30-back-up-restore-and-monitor-your-aws-sql-native-database/picture1.png %})
+![](picture1.png)
 
 *Image source*: [https://niftit.com/backup-with-aws-rds/](https://niftit.com/backup-with-aws-rds/)
 
@@ -73,7 +73,7 @@ from an S3 bucket on your AWS RDS instance, as shown in the following example:
         @s3_arn_to_restore_from='arn:aws:s3::: bucket_name/file_name_and_extension',
         @kms_master_key_arn='arn:aws:kms:region:account-id:key/key-id';
 
-![]({% asset_path 2020-01-30-back-up-restore-and-monitor-your-aws-sql-native-database/picture2.png %})
+![](picture2.png)
 
 *Image Source*: [https://www.awslab.io/sqlserver/lab2/](https://www.awslab.io/sqlserver/lab2/)
 
@@ -148,7 +148,7 @@ tasks, as shown in the following example:
 
     exec msdb.dbo.rds_task_status @db_name='database_name'
 
-![]({% asset_path 2020-01-30-back-up-restore-and-monitor-your-aws-sql-native-database/picture3.png %})
+![](picture3.png)
 
 *Image Source*: [https://www.awslab.io/sqlserver/lab2/](https://www.awslab.io/sqlserver/lab2/)
 

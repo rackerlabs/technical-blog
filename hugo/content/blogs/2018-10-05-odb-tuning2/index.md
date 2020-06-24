@@ -72,7 +72,7 @@ Eliminating the unnecessary indexes improves the performance of DML statements
 because fewer indexes have to be updated.
 
 ![A diagram of In-Memory column store and
-RAC]({% asset_path 2018-10-05-odbtuning2/picture1.png %})
+RAC](picture1.png)
 
 **Image source**: [Oracle Learning Library YouTube videos: Oracle Database 12c
 demos: In-Memory Column Store Architecture
@@ -178,7 +178,7 @@ accessed, including NOCACHE LOBs and LOBs that use Oracle Database SecureFiles.
 
 ![A simple flow chart illustration that shows how FULL database caching and
 Force FULL database caching are
-used]({% asset_path 2018-10-05-odbtuning2/picture2.png %})
+used](picture2.png)
 
 **Image source**: [Full DB In-Memory
 Caching.](https://www.youtube.com/watch?v=jLtdDPmb1Ws)

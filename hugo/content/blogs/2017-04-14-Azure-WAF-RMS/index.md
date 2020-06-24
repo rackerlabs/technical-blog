@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Understanding the Azure application gateway with WAF
-date: 2017-04-14 10:22
+date: 2017-04-14
 comments: false
 author: Jimmy Rudley
 published: true
@@ -21,11 +21,11 @@ The Azure Application Gateway is a layer 7 load balancer with two SKUs to distin
 
 There are 2 options to select for the firewall mode: detection or prevention. Detection mode is normally used to see what kind of attacks or exploits are happening against your web application. Prevention mode will try to blocks malicious traffic that matches the OWASP rule set.
 
-![Azure WAF configuration]({% asset_path 2017-04-13-Azure-WAF-RMS/config.png %})
+![Azure WAF configuration](config.png)
 
 The minimum requirement to deploy a WAF into Azure is to select the WAF tier and choose either medium or large for the instance size. For production workloads, it is strongly recommended to have 2 instances selected to be covered by the SLA.
 
-![Azure WAF options]({% asset_path 2017-04-13-Azure-WAF-RMS/wafSku.png %})
+![Azure WAF options](wafSku.png)
 
 If you have diagnostics enabled, you can view your detection logs. Currently, you can archive the logs to a storage account, stream to an event hub, or send to log analytics. The 3 types of logs currently available are ApplicationGatewayAccessLog, ApplicationGatewayPerformanceLog, and ApplicationGatewayFirewallLog. The only metric available measures throughput of the application gateway in bytes per second.
 

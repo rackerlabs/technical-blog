@@ -53,7 +53,7 @@ exceeds 1 GB. You can increase the size of the CMC.
 To reach the monitoring section in the CMC, go to **Applications > Monitoring**
 as shown in the following monitoring default view:
 
-![]({% asset_path 2019-09-27-server-or-service-monitoring-in-sap-business-objects/Picture1.png %})
+![](Picture1.png)
 
 As you can see in the preceding image, there are five different tabs in this
 section: Dashboards, Metrics, Watchlists, Probes, and Alerts. The following
@@ -84,7 +84,7 @@ Metrics are individual pieces of information that help you to understand the
 overall health of different components of the system, as shown in the following
 image:
 
-![]({% asset_path 2019-09-27-server-or-service-monitoring-in-sap-business-objects/Picture2.png %})
+![](Picture2.png)
 
 Metrics are used to measure the health of a component. The metrics you define
 depend on the components that you are monitoring and your requirements. Examples
@@ -102,7 +102,7 @@ This tab helps monitor the watches created. The watches are thresholds for
 metrics that show you if the metric is in a healthy, warning, or danger status,
 as shown in the following image:
 
-![]({% asset_path 2019-09-27-server-or-service-monitoring-in-sap-business-objects/Picture3.png %})
+![](Picture3.png)
 
 The preceding image shows watches created by default. You can change these
 thresholds to adapt them to your system. Also, you can create notifications for
@@ -117,7 +117,7 @@ dashboard tab.
 Probes let you monitor the BO system by using simulated application workflows
 that run through software development kit-based scripts.
 
-![]({% asset_path 2019-09-27-server-or-service-monitoring-in-sap-business-objects/Picture4.png %})
+![](Picture4.png)
 
 The most interesting part of the CMC monitoring, probes are the most challenging
 part as well. You create probes by using a software development kit (SDK).
@@ -154,7 +154,7 @@ You can choose among the following system-generated default probes:
 
 This option lists the alerts that have been set up in the watchlist.
 
-![]({% asset_path 2019-09-27-server-or-service-monitoring-in-sap-business-objects/Picture5.png %})
+![](Picture5.png)
 
 You can see the different details of the alerts by clicking on each one. These
 alerts send emails and perform actions, depending on your watchlist configuration.

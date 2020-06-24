@@ -145,16 +145,16 @@ the options described in the following sections.
 To change the APPS pasword by using the WLS console, perform the following steps:
 
 1. Log in to the WLS Administration Console.
-   ![]({% asset_path 2018-11-20-change-the-oracle-apps-and-weblogic-password/Picture1.png %})
+   ![](Picture1.png)
 2. Click **Lock & Edit** in the Change Center.
-   ![]({% asset_path 2018-11-20-change-the-oracle-apps-and-weblogic-password/Picture2.png %})
+   ![](Picture2.png)
 3. In the Domain Structure tree, expand **Services**, and select **Data Sources**.
-   ![]({% asset_path 2018-11-20-change-the-oracle-apps-and-weblogic-password/Picture3.png %})
+   ![](Picture3.png)
 4. On the **Summary of JDBC Data Sources** page, select **EBSDataSource**.
-   ![]({% asset_path 2018-11-20-change-the-oracle-apps-and-weblogic-password/Picture4.png %})
+   ![](Picture4.png)
 5. On the **Settings for EBSDataSource** page, select the **Connection Pool** tab.
 6. Enter the new password in **Password**.
-   ![]({% asset_path 2018-11-20-change-the-oracle-apps-and-weblogic-password/Picture5.png %})
+   ![](Picture5.png)
 7. Enter the new password in **Confirm Password**.
 8. Click **Save**.
 9. Click **Activate Changes** in the Change Center.

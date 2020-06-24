@@ -22,7 +22,7 @@ already booming brand.
 
 <!--more-->
 
-![]({% asset_path 2020-02-14-how-salesforces-2018-acquisitions-and-partnerships-change-how-you-work/Picture1.png %})
+![](Picture1.png)
 
 It can be tough to stay on top of significant changes and how they might affect
 your organization. At Rackspace, we keep close tabs on everything Salesforce,

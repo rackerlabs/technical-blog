@@ -51,7 +51,7 @@ you store your data.
 
 The following image shows the three main cloud infrastructure principles:
 
-![]({% asset_path 2020-01-15-aws-security/Picture1.png %})
+![](Picture1.png)
 
 (*Source*: [https://aws.amazon.com/](https://aws.amazon.com/))
 
@@ -98,7 +98,7 @@ policies that apply to the request. It then uses the policies to determine
 whether to allow or deny the request. After AWS approves the operations in your
 request, you can perform them on the related resources within your account.
 
-![]({% asset_path 2020-01-15-aws-security/Picture2.png %})
+![](Picture2.png)
 
 (*Source*: [https://docs.aws.amazon.com/IAM/latest/UserGuide/iam-ug.pdf](https://docs.aws.amazon.com/IAM/latest/UserGuide/iam-ug.pdf))
 
@@ -124,7 +124,7 @@ which are available through the Amazon Inspector console or API.
 -	Finds application security issues.
 -	Helps you gain a deeper understanding of your AWS resources.
 
-![]({% asset_path 2020-01-15-aws-security/Picture3.png %})
+![](Picture3.png)
 
 (*Source*: [https://aws.amazon.com/](https://aws.amazon.com/))
 
@@ -140,7 +140,7 @@ establish the identity of websites over the Internet as well as resources on
 private networks. AWS Certificate Manager removes the time-consuming manual
 process of purchasing, uploading, and renewing SSL/TLS certificates.
 
-![]({% asset_path 2020-01-15-aws-security/Picture4.png %})
+![](Picture4.png)
 
 (*Source*: [https://aws.amazon.com/](https://aws.amazon.com/))
 
@@ -169,7 +169,7 @@ deployment, and maintenance of web security rules.
 
 -  Improves web traffic visibility.
 
-![]({% asset_path 2020-01-15-aws-security/Picture5.png %})
+![](Picture5.png)
 
 (*Source*: [https://aws.amazon.com/marketplace/solutions/infrastructure-software/web-application-firewall](https://aws.amazon.com/marketplace/solutions/infrastructure-software/web-application-firewall))
 
@@ -202,7 +202,7 @@ structure, location, and cost center.
 - Easily adapt to changing data requirements.
 
 
-![]({% asset_path 2020-01-15-aws-security/Picture6.png %})
+![](Picture6.png)
 
 (*Source*: [https://aws.amazon.com/](https://aws.amazon.com/))
 
@@ -228,7 +228,7 @@ logs of all key usage to help meet your regulatory and compliance needs.
 - Encrypts data in your applications.
 
 
-![]({% asset_path 2020-01-15-aws-security/Picture7.png %})
+![](Picture7.png)
 
 (*Source*: [https://aws.amazon.com/](https://aws.amazon.com/))
 
@@ -257,7 +257,7 @@ access, compliance, and security, as well as to share resources across your AWS 
 - Consolidate billing across multiple AWS accounts.
 
 
-![]({% asset_path 2020-01-15-aws-security/Picture8.png %})
+![](Picture8.png)
 
 (*Source*: [https://aws.amazon.com/](https://aws.amazon.com/))
 
@@ -281,7 +281,7 @@ There are two tiers of AWS Shield&mdash;Standard and Advanced.
 
 - Cost efficiency.
 
-![]({% asset_path 2020-01-15-aws-security/Picture9.png %})
+![](Picture9.png)
 
 (*Source*: [https://aws.amazon.com/](https://aws.amazon.com/))
 
@@ -310,7 +310,7 @@ it detects the risk of unauthorized access or inadvertent data leaks.
 
 - Has custom alert monitoring with CloudWatch.
 
-![]({% asset_path 2020-01-15-aws-security/Picture10.png %})
+![](Picture10.png)
 
 (*Source*: [https://aws.amazon.com/](https://aws.amazon.com/))
 
@@ -335,7 +335,7 @@ and integrated threat intelligence to identify and prioritize potential threats.
 
 - Enterprise scale and central management.
 
-![]({% asset_path 2020-01-15-aws-security/Picture11.png %})
+![](Picture11.png)
 
 (*Source*: [https://aws.amazon.com/guardduty/](https://aws.amazon.com/guardduty/))
 

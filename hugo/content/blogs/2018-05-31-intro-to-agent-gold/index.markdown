@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Introduction to Oracle Agent Gold Images"
-date: 2018-05-30 00:00
+date: 2018-05-30
 comments: true
 author: Kuasik Das
 published: true
@@ -44,7 +44,7 @@ software, plug-ins, and patches.
 The following screen capture illustrates the agent life cycle with Agent Gold
 Images:
 
-![The agent life cycle with Agent Gold Image]({% asset_path 2018-05-31-intro-to-agent-gold/picture1.png %})
+![The agent life cycle with Agent Gold Image](picture1.png)
 
 In the screen capture, the Source Agent version is 13.1. All software
 components, plug-ins, and the latest patches are already installed. Agent Gold
@@ -80,12 +80,12 @@ steps:
 2. Enter the image name, a description, and the platform name.
 3. Click **Submit**.
 
-![Creating an Agent Gold Image]({% asset_path 2018-05-31-intro-to-agent-gold/picture2.png %})
+![Creating an Agent Gold Image](picture2.png)
 
 The **Manage All Images** screen shows the Agent Gold Image that you just
 created.
 
-![The Manage All Images screen showing the Agent Gold Image]({% asset_path 2018-05-31-intro-to-agent-gold/picture3.png %})
+![The Manage All Images screen showing the Agent Gold Image](picture3.png)
 
 Next, create a version for the Agent Gold Image:
 
@@ -95,32 +95,32 @@ Next, create a version for the Agent Gold Image:
 The Agent Gold Image version is created as a draft, as shown in the following
 screen capture:
 
-![The Agent Gold Image draft]({% asset_path 2018-05-31-intro-to-agent-gold/picture4.png %})
+![The Agent Gold Image draft](picture4.png)
 
 Now we need to change the **Status** of the image from **Draft** to
 **Current** by clicking the **Set Current version** button:
 
-![Setting the Agent Gold Image to the current version]({% asset_path 2018-05-31-intro-to-agent-gold/set-current.png %})
+![Setting the Agent Gold Image to the current version](set-current.png)
 
 You can see an overview of your Agent Gold Images through the Agent Gold
 Dashboard:
 
-![The Agent Gold dashboard]({% asset_path 2018-05-31-intro-to-agent-gold/picture5.png %})
+![The Agent Gold dashboard](picture5.png)
 
 Next, install an agent by using the Agent Gold Image. On the **Agent
 Gold Image** screen, click the **Add Hosts** button:
 
-![The **Add Hosts** button]({% asset_path 2018-05-31-intro-to-agent-gold/picture6.png %})
+![The **Add Hosts** button](picture6.png)
 
 Enter the host name and platform name and select **With Gold Image**:
 
-![The parameters for installing the agent]({% asset_path 2018-05-31-intro-to-agent-gold/picture7.png %})
+![The parameters for installing the agent](picture7.png)
 
 After the installation finishes, the system displays information indicating
 that the new agent is correctly subscribed to the Agent Gold Image.
 
 ![The screen shows that the new agent is correctly subscribed to the Gold
-image]({% asset_path 2018-05-31-intro-to-agent-gold/picture8.png %})
+image](picture8.png)
 
 ### Conclusion
 

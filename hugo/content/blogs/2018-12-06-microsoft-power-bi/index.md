@@ -30,7 +30,7 @@ tools.
 
 The following image shows the Power BI workflow:
 
-![]({% asset_path 2018-12-06-microsoft-power-bi/picture1.png %})
+![](picture1.png)
 
 Source: [Microsoft Power BI
 Overview](https://www.slideshare.net/Netwoven/power-bi-overview-41399411).

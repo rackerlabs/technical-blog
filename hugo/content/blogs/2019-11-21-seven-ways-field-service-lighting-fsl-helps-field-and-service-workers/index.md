@@ -24,7 +24,7 @@ frustrated&mdash;nobody wins.
 
 <!--more-->
 
-![]({% asset_path 2019-11-21-seven-ways-field-service-lighting-fsl-helps-field-and-service-workers/Picture1.png %})
+![](Picture1.png)
 
 If these scenarios sound familiar, it is time to increase your company’s
 efficiency. This is where Salesforce&reg; Field Service Lightning (FSL) comes

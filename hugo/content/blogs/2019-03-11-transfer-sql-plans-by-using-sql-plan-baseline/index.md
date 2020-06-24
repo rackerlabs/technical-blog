@@ -300,7 +300,7 @@ the new baseline:
 
 The following image shows how a SQL plan is selected when a baseline plan exists:
 
-![]({% asset_path 2019-03-11-transfer-sql-plans-by-using-sql-plan-baseline/Picture1.png %})
+![](Picture1.png)
 
 *Image source*: Metalink Note Automatic SQL Plan Baselines (Doc ID 1930525.1)
 

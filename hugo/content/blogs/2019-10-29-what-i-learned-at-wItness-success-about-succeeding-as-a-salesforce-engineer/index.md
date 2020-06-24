@@ -20,7 +20,7 @@ left motivated and re-energized in my Salesforce&reg; career.
 
 <!--more-->
 
-![]({% asset_path 2019-10-29-what-i-learned-at-wItness-success-about-succeeding-as-a-salesforce-engineer/witness-success.png %})
+![](witness-success.png)
 
 WITness Success is a Women In Tech (WIT) event for everyone in the Salesforce
 ecosystem worldwide. This event brings together women of all backgrounds to

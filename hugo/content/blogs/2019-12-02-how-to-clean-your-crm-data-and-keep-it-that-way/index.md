@@ -24,7 +24,7 @@ to use data across multiple teams.
 
 <!--more-->
 
-![]({% asset_path 2019-12-02-how-to-clean-your-crm-data-and-keep-it-that-way/picture1.png %})
+![](picture1.png)
 
 Everyone loses when the data stored in your CRM is disorganized, incomplete, or
 contains duplicates. The teams trying to use this data&mdash;like sales,

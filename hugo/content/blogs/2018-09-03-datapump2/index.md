@@ -32,7 +32,7 @@ to the client. Therefore, it makes sense to take an export of the objects
 from a PDB.
 
 ![An architectural diagram of the Data Pump
-service]({% asset_path 2018-09-10-datapump2/picture1.png %})
+service](picture1.png)
 
 Image source: [Data Pump
 architecture](https://www.packtpub.com/mapt/book/big_data_and_business_intelligence/9781847196286/1/ch01lvl1sec02/data-pump-architecture)

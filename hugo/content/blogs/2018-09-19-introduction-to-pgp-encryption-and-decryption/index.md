@@ -33,9 +33,9 @@ decrypt the data and it is never shared with anyone.
 
 Now, the following diagrams show the encryption and decryption processes:
 
-![]({% asset_path 2018-09-19-introduction-to-pgp-encryption-and-decryption/Picture1.png %})
+![](Picture1.png)
 
-![]({% asset_path 2018-09-19-introduction-to-pgp-encryption-and-decryption/Picture2.png %})
+![](Picture2.png)
 
 ### Advantages of PGP encryption
 
@@ -71,12 +71,12 @@ To implement PGP by creating and installing keys, use the following steps:
 
    The following image shows these prompts and responses:
 
-   ![]({% asset_path 2018-09-19-introduction-to-pgp-encryption-and-decryption/Picture3.png %})
+   ![](Picture3.png)
 
    **Note:** You might be required to enter a passphrase to protect your secret key.
    If you are, enter it and click **ok** as shown in the following image:
 
-   ![]({% asset_path 2018-09-19-introduction-to-pgp-encryption-and-decryption/Picture4.png %})
+   ![](Picture4.png)
 
    It is not mandatory to have a passphrase, but having one is a good idea.
    The passphrase can be changed at any time using option `--edit-key`.

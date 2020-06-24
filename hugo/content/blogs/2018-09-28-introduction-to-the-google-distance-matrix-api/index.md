@@ -50,19 +50,19 @@ gmail ID:
 
 On the home page, click on **Select a project** as shown in the following image:
 
-![]({% asset_path 2018-09-28-introduction-to-the-google-distance-matrix-api/Picture1.png %})
+![](Picture1.png)
 
 To create a new project, enter the project name and click **Create** as shown
 in the following image.
 
-![]({% asset_path 2018-09-28-introduction-to-the-google-distance-matrix-api/Picture2.png %})
+![](Picture2.png)
 
 After the project is successfully completed, click **Select a project** again.
 
 To select the project that you just created, click on it in the list, as shown
 in the following image:
 
-![]({% asset_path 2018-09-28-introduction-to-the-google-distance-matrix-api/Picture3.png %})
+![](Picture3.png)
 
 #### Go to the API dashboard and enable the Distance Matrix
 
@@ -70,33 +70,33 @@ To go to the API dashboard, open the navigation menu by clicking on the
 hamburger menu in the upper-right corner (next to **Google Cloud Platform**).
 Then click **API & Services -> Dashboard**, as shown in the following image:
 
-![]({% asset_path 2018-09-28-introduction-to-the-google-distance-matrix-api/Picture4.png %})
+![](Picture4.png)
 
 To enable the Distance Matrix, click on **ENABLE APIS AND SERVICES**, as shown
 in the following image:
 
-![]({% asset_path 2018-09-28-introduction-to-the-google-distance-matrix-api/Picture5.png %})
+![](Picture5.png)
 
 Then, in the menu bar, search for "Distance Matrix API", as shown in the
 following image:
 
-![]({% asset_path 2018-09-28-introduction-to-the-google-distance-matrix-api/Picture6.png %})
+![](Picture6.png)
 
 Finally, click **Enable**.  The resulting screen is shown in the following image:
 
-![]({% asset_path 2018-09-28-introduction-to-the-google-distance-matrix-api/Picture7.png %})
+![](Picture7.png)
 
 #### Create an API key
 
 To create an API key, go to the **Credentials** tab, select **API key**, and
 click **Create credentials**, as shown in the following image:
 
-![]({% asset_path 2018-09-28-introduction-to-the-google-distance-matrix-api/Picture8.png %})
+![](Picture8.png)
 
 The API key (AIzaSyBEJa1xqGHtQkfhFlYUPG_HnDpsgTxStzM) was generated successfully,
 as shown in the following image:
 
-![]({% asset_path 2018-09-28-introduction-to-the-google-distance-matrix-api/Picture9.png %})
+![](Picture9.png)
 
 #### Get the distance between two locations
 
@@ -108,7 +108,7 @@ API Key.
 The URL fetches the distance in the form of an XML file (shown in the following
 image), which stores the distance between two places in the text tag.
 
-![]({% asset_path 2018-09-28-introduction-to-the-google-distance-matrix-api/Picture10.png %})
+![](Picture10.png)
 
 ### Use the API with Oracle EBS
 

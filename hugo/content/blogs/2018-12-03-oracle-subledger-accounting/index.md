@@ -41,7 +41,7 @@ the Subledgers.
 The following image highlights the differences between the Subledger
 architecture in versions 11i and R12:
 
-![]({% asset_path 2018-12-03-oracle-subledger-accounting/Picture1.png %})
+![](Picture1.png)
 
 Key features include the following items:
 

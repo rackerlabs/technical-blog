@@ -125,6 +125,6 @@ security risk to company data.  It creates more ownership (versus just an email
 note from security) by demonstrating real-world impact of what could happen
 from a malicious actor.
 
-![Ransomware Screen]({% asset_path 2018-08-21-unattended-unlocked-unprotected-terminals-user-security-training/ransomware.png %})
+![Ransomware Screen](ransomware.png)
 
 Use the Feedback tab to make any comments or ask questions.

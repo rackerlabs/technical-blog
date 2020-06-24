@@ -33,7 +33,7 @@ functions provided by Oracle, such as `XMLELEMENT`, `XMLAGG`, `XMLTABLE`,
 
 The main built-in function used is `EXTRACT`, which is shown in the following image:
 
-![]({% asset_path 2019-04-18-parse-xml-in-pl-sql/Picture1.png %})
+![](Picture1.png)
 
 *Image Source*: [https://docs.oracle.com/cd/B19306_01/server.102/b14200/img/extract_xml.gif](https://docs.oracle.com/cd/B19306_01/server.102/b14200/img/extract_xml.gif)
 

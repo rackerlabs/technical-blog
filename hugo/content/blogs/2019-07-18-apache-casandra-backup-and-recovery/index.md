@@ -56,7 +56,7 @@ and restore it when required:
 The following image illustrates moving from a cloud cluster to a Cassandra
 cluster by using `sstableloader`:
 
-![]({% asset_path 2019-07-18-apache-casandra-backup-and-recovery/Picture1.png %})
+![](Picture1.png)
 
 **Image source**: [https://dzone.com/articles/using-casandras-sstable-bulk](https://dzone.com/articles/using-casandras-sstable-bulk)
 

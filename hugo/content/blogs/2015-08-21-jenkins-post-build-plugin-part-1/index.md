@@ -127,7 +127,7 @@ was executed.
 
 ### <a name="understanding-the-project-structure"></a>Understanding the project structure
 
-<img class="blog-post right" src="{% asset_path 2015-08-21-jenkins-post-build-plugin-part-1/project_structure.png %}"/>
+<img class="blog-post right" src="project_structure.png"/>
 Opening the project in IntelliJ IDEA should display the project structure in the left
 pane.
 
@@ -145,7 +145,7 @@ plugin name and description.
     <name>Test Example</name>
     <description>testExample</description>
 
-<img class="blog-post" src="{% asset_path 2015-08-21-jenkins-post-build-plugin-part-1/info.png%}"/>
+<img class="blog-post" src="info.png"/>
 
 **Tip:**
 
@@ -158,7 +158,7 @@ renders the view on the **Installed Plugins** page under **Manage Plugins**.
 In IntelliJ IDEA, navigate to **Run>Edit Configurations>Remote** and set the
 port to 8000, which is the default mvnDebug port. Click **Apply**.
 
-![Debugger Configuration]({% asset_path 2015-08-21-jenkins-post-build-plugin-part-1/debug_config.png %})
+![Debugger Configuration](debug_config.png)
 
 In the terminal, type the following command:
 
@@ -200,9 +200,9 @@ When you see the preceding info message, type
 the plugin is now present in the installed plugin list. This is where the debugger,
 running in the background, performed its magic!
 
-<img class="blog-post center" src="{% asset_path 2015-08-21-jenkins-post-build-plugin-part-1/plugin_installed.png %}"/>
+<img class="blog-post center" src="plugin_installed.png"/>
 
-<img class="blog-post right" src="{% asset_path 2015-08-21-jenkins-post-build-plugin-part-1/maven-projects.png %}"/>
+<img class="blog-post right" src="maven-projects.png"/>
 
 ### <a name="more-with-maven"></a>More with Maven
 

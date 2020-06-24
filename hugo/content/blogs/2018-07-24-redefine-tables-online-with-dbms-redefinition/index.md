@@ -24,7 +24,7 @@ both the table and the data unavailable for a certain period, which is a less
 than favorable situation for businesses. This is when the ``DBMS_REDEFINITION``
 package saves the day, as shown in the following image:
 
-![]({% asset_path 2018-07-24-redefine-tables-online-with-dbms-redefinition/Picture1.png %})
+![](Picture1.png)
 
 ### Purpose
 

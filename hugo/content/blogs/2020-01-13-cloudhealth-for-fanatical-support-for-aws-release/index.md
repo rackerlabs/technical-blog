@@ -17,7 +17,7 @@ ogTitle: "CloudHealth for Fanatical Support for AWS realease"
 ogDescription: "In mid-December 2019, Rackspace released CloudHealth for all Fanatical Support&reg; for Amazon Web Services (AWS) customers."
 ---
 
-<img class="blog-post right" src="{% asset_path 2020-01-13-cloudhealth-for-fanatical-support-for-aws-release/CloudHealth-logo.png %}"/> In mid-December 2019, Rackspace released CloudHealth for all Fanatical Support&reg; for Amazon
+<img class="blog-post right" src="CloudHealth-logo.png"/> In mid-December 2019, Rackspace released CloudHealth for all Fanatical Support&reg; for Amazon
 Web Services (AWS) customers.
 
 <!--more-->

@@ -64,7 +64,7 @@ database. GridFS requires two queries: one to fetch a file’s metadata and one
 to fetch its contents. Therefore, if you use GridFS to store small files,
 you're doubling the number of queries that your application has to perform.
 
-![How GridFS works]({% asset_path 2018-07-23-mongodb1/picture1.png %})
+![How GridFS works](picture1.png)
 
 **Source: https://www.slideshare.net**
 
@@ -88,7 +88,7 @@ with MongoDB. On the other hand, they're often smaller and more expensive.
 
 The following image compares SSDs and HDDs.
 
-![SSDs vs. HDDs]({% asset_path 2018-07-23-mongodb1/picture2.png %})
+![SSDs vs. HDDs](picture2.png)
 
 **Source: https://www.serverintellect.com**
 

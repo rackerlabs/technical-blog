@@ -24,7 +24,7 @@ Because of this, Rackspace’s refreshed Core Values are a breath of fresh air a
 
 ### Excellence
 
-![]({% asset_path 2019-11-11-a-fanatical-experience-means-a-win-for-customers-a-support-perspective/CV-Excellence.png %})
+![](CV-Excellence.png)
 
 *We’re an accountable, disciplined, high-performing company with proven results.*
 
@@ -34,7 +34,7 @@ In a day where customers have unprecedented access to forums, rating sites, and 
 
 ### Customer-driven
 
-![]({% asset_path 2019-11-11-a-fanatical-experience-means-a-win-for-customers-a-support-perspective/CV-CustomerDriven.png %})
+![](CV-CustomerDriven.png)
 
 *We’re proactive, collaborative, and committed to success for our customers.*
 
@@ -42,7 +42,7 @@ In Support, we often work with other teams in a collaborative effort to assure t
 
 ### Expertise
 
-![]({% asset_path 2019-11-11-a-fanatical-experience-means-a-win-for-customers-a-support-perspective/CV-Expertise.png %})
+![](CV-Expertise.png)
 
 *We’re passionate learners, rooted in our customer’s business to provide unbiased solutions.*
 
@@ -52,7 +52,7 @@ Because we love learning, we are always open to other Racker ideas, incorporatin
 
 ### Agility
 
-![]({% asset_path 2019-11-11-a-fanatical-experience-means-a-win-for-customers-a-support-perspective/CV-Agility.png %})
+![](CV-Agility.png)
 
 *We’re adopting new technologies and evolving services to meet customers where they are in their journey.*
 
@@ -62,7 +62,7 @@ If Rackers can't remain agile, then their ability to provide excellent customer 
 
 ### Compassion
 
-![]({% asset_path 2019-11-11-a-fanatical-experience-means-a-win-for-customers-a-support-perspective/CV-Compassion.png %})
+![](CV-Compassion.png)
 
 *We’re one team doing the right thing for our customers, communities, and each other.*
 

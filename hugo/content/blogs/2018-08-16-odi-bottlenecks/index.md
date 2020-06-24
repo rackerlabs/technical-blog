@@ -63,7 +63,7 @@ file to define the agent's Java&reg; virtual machine (JVM) initial and maximum
 heap size.
 
 ![The `ODI_INIT_HEAP` and `ODI_MAX_HEAP` parameters highlighted in the
-odiparams configuration file]({% asset_path 2018-08-16-odi-bottlenecks/picture1.png %})
+odiparams configuration file](picture1.png)
 
 **Default values**:
 
@@ -118,7 +118,7 @@ flow to a remote target, then you should consider locating the staging area on
 the source side.
 
 ![An architectural model of the source, staging area, and
-target]({% asset_path 2018-08-16-odi-bottlenecks/picture2.png %})
+target](picture2.png)
 
 ### Execution location of transformations
 

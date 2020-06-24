@@ -40,7 +40,7 @@ Web Dispatcher architecture has the following characteristics:
 
 The following image illustrates Web Dispatcher architecture:
 
-![]({% asset_path 2019-10-02-features-of-sap-web-dispatcher/Picture1.png %})
+![](Picture1.png)
 
 *Source*: [https://help.sap.com](https://help.sap.com)
 

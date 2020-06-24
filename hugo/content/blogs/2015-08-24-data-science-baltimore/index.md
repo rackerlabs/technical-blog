@@ -89,7 +89,7 @@ output = aggregated.sort(['amax'],ascending=0)
 output.head(15)
 
 ```
-![01]({% asset_path 2015-08-24-data-science-baltimore/baltimore_salaries01.png %})
+![01](baltimore_salaries01.png)
 
 Ok, this is interesting. It shows that the State Attorney gets paid the most in the city, followed by executive roles, the Mayor, etc. I guess this isn't very surprising. But these are only individual jobs, not the entire spend by job role. After all, there is only 1 State Attorney. A better approach might be to group by JobTitle.
 
@@ -99,7 +99,7 @@ output = aggregated.sort(['sum','size'],ascending=[0,1])
 output.head(15)
 ```
 
-![02]({% asset_path 2015-08-24-data-science-baltimore/baltimore_salaries02.png %})
+![02](baltimore_salaries02.png)
 
 Hey now! Now we are getting somewhere. The salary for Police Officers looks pretty high compared to other roles. It also has 1866 employees fitting this role. Let's graph it. First, let's prepare the data as we want to see it in the graph. Specifically we want the sum of salary, sorted descending.
 
@@ -120,7 +120,7 @@ myplot.set_ylabel('$')
 myplot.yaxis.set_major_formatter(FormatStrFormatter('%d'))
 ```
 
-![graph]({% asset_path 2015-08-24-data-science-baltimore/baltimore_salaries_graph.png %})
+![graph](baltimore_salaries_graph.png)
 
 The graph makes the drastic jump in spending for just a couple JobTitle's very obvious. If I was the City Controller I might start to dig deeper into these roles to see why the spending is so high, and determine if we can afford to make some changes. Pandas to the rescue.
 

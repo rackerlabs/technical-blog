@@ -23,7 +23,7 @@ server to ensure high availability.
 
 The following diagram illustrates a high-availability model:
 
-![]({% asset_path 2019-02-13-install-and-configure-Forms-and-Reports-for-high-availability-on-OEL/Picture1.png %})
+![](Picture1.png)
 
 To use this high-availability model, you need to perform the following tasks,
 which this blog covers in detail:
@@ -216,7 +216,7 @@ To continue the installation on node1, perform the following steps as prompted:
 12. On the **Managed Servers** page, add the Forms and Report servers and the
     managed servers on both node1 and node2 as shown in the following table:
 
-    ![]({% asset_path 2019-02-13-install-and-configure-Forms-and-Reports-for-high-availability-on-OEL/Picture2.png %})
+    ![](Picture2.png)
 
 <ol start=13>
     <li>On <b>Clusters</b> page, keep the default values and click <b>Next</b>.</li>
@@ -226,14 +226,14 @@ To continue the installation on node1, perform the following steps as prompted:
     in the following table:</li>
 </ol>
 
-   ![]({% asset_path 2019-02-13-install-and-configure-Forms-and-Reports-for-high-availability-on-OEL/Picture3.png %})
+   ![](Picture3.png)
 
 <ol start=17>
     <li>In <b>Coherence clusters</b>, keep the defaults and click <b>Next</b>.</li>
     <li>On the <b>Machine</b> Page, change the settings as shown in the following table:</li>
 </ol>
 
-   ![]({% asset_path 2019-02-13-install-and-configure-Forms-and-Reports-for-high-availability-on-OEL/Picture4.png %})
+   ![](Picture4.png)
 
 <ol start=19>
     <li> On the <b>Assign Servers to Machine</b> page, add the <b>AdminServer</b>,
@@ -245,7 +245,7 @@ To continue the installation on node1, perform the following steps as prompted:
     entries, <b>forms2</b> and <b>ohs2</b>, as shown in the following table:</li>
 </ol>
 
-   ![]({% asset_path 2019-02-13-install-and-configure-Forms-and-Reports-for-high-availability-on-OEL/Picture5.png %})
+   ![](Picture5.png)
 
 <ol start=23>
     <li>On the <b>OHS Server</b> page, select <b>System Component</b> <b>ohs1</b> and provide

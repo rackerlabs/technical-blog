@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Security Hardening for Sitecore Environments"
-date: 2016-08-09 10:22
+date: 2016-08-09
 comments: false
 author: Bruce Lee, Grant Killian, Kelly Rusk, Jimmy Rudley
 published: true

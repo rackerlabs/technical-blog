@@ -41,7 +41,7 @@ Within the Azure portal, provision a new **Azure Front Door** resource. Then, se
 
 Add a back-end pool with a custom host name and back-end host header set to the URL of the static storage account website.
 
-![bePool]({% asset_path 2019-07-17-Azure-Front-Door-Storage-Static-Website/afdBePool.png %})
+![bePool](afdBePool.png)
 
 #### 3. Create a routing rule
 
@@ -55,12 +55,12 @@ Normally, Azure Front Door is used for customer-facing environments, which enabl
 4) Select `Yes` for the Alias record set and choose an Alias type of **Azure Resource**.
 5) Select the Azure Resource Name for Azure Front Door in the Azure resource dropdown.
 
-![DNSRecord]({% asset_path 2019-07-17-Azure-Front-Door-Storage-Static-Website/dns.png %})
+![DNSRecord](dns.png)
 
 #### 4. Add a new front-end host
 
 Back in the Azure Front Door designer, add a new front-end host for the custom apex domain. Select both the existing routing rule and the custom apex domain. Then, update the setting.
 
-![routingRule]({% asset_path 2019-07-17-Azure-Front-Door-Storage-Static-Website/routingRule.png %})
+![routingRule](routingRule.png)
 
 You have two options to enable an HTTPS protocol for a custom domain within Azure Front Door. Front Door generates a certificate and manages it, or you can use your own certificate. Because I have my own prefix for my domains, I chose the second option, which involves Azure Key Vault. For more information, see [Instructions for Azure Front Door HTTPS](https://docs.microsoft.com/en-us/azure/frontdoor/front-door-custom-domain-https#ssl-certificates) and follow the instructions to configure it.

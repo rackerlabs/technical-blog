@@ -25,7 +25,7 @@ develop a workable plan of action.
 
 <!--more-->
 
-![]({% asset_path 2019-11-07-how-can-your-organization-use-salesforce-to-its-full-capacity/picture1.png %})
+![](picture1.png)
 
 ### Identify adoption benchmarks
 

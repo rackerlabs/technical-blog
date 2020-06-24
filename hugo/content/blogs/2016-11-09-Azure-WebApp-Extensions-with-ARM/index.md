@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Azure Web App extensions With ARM templates
-date: 2016-11-09 10:22
+date: 2016-11-09
 comments: false
 author: Jimmy Rudley
 published: true

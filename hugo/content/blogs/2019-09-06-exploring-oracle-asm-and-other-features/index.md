@@ -40,72 +40,72 @@ by the cluster. The following images show the test cases performed for Flex ASM:
 
 Cluster ASM listener Node1:
 
-![]({% asset_path 2019-09-06-exploring-oracle-asm-and-other-features/Picture1.png %})
+![](Picture1.png)
 
 Cluster ASM listener Node2:
 
-![]({% asset_path 2019-09-06-exploring-oracle-asm-and-other-features/Picture2.png %})
+![](Picture2.png)
 
 ### Flex ASM test case
 
 Use the following code to check the ASM cluster mode and state:
 
-![]({% asset_path 2019-09-06-exploring-oracle-asm-and-other-features/Picture3.png %})
+![](Picture3.png)
 
 Use the following code to check ASM status:
 
-![]({% asset_path 2019-09-06-exploring-oracle-asm-and-other-features/Picture4.png %})
+![](Picture4.png)
 
 Use the following code to check ASM configuration:
 
-![]({% asset_path 2019-09-06-exploring-oracle-asm-and-other-features/Picture5.png %})
+![](Picture5.png)
 
 **NOTE**: You can reduce an ASM instance count to a minimum of two by using the
 following command, which shows instances running on Node1:
 
     srvctl modify asm -count 2
 
-![]({% asset_path 2019-09-06-exploring-oracle-asm-and-other-features/Picture6.png %})
+![](Picture6.png)
 
 Then run the following code:
 
     srvctl status asm -node ushodld0001ca
 
-![]({% asset_path 2019-09-06-exploring-oracle-asm-and-other-features/Picture7.png %})
+![](Picture7.png)
 
 Now, you need to stop the ASM instance on Node1 by running the following command:
 
     srvctl stop asm -node ushodld0001ca -stopoption abort –force
 
-![]({% asset_path 2019-09-06-exploring-oracle-asm-and-other-features/Picture8.png %})
+![](Picture8.png)
 
 Use the following code to check the status:
 
     srvctl status asm
 
-![]({% asset_path 2019-09-06-exploring-oracle-asm-and-other-features/Picture9.png %})
+![](Picture9.png)
 
 Use the following code to check the cluster:
 
     crsctl check cluster
 
-![]({% asset_path 2019-09-06-exploring-oracle-asm-and-other-features/Picture10.png %})
+![](Picture10.png)
 
 
 
 Use the following code to Verify that all the instances except ASM1 are running
 on Node1 because of Flex ASM:
 
-![]({% asset_path 2019-09-06-exploring-oracle-asm-and-other-features/Picture11.png %})
+![](Picture11.png)
 
 Use the following code to verify that instances are running fine on both the
 nodes even if ASM1 is down:
 
-![]({% asset_path 2019-09-06-exploring-oracle-asm-and-other-features/Picture12.png %})
+![](Picture12.png)
 
 Use the following code to check the ADVM proxy instance:
 
-![]({% asset_path 2019-09-06-exploring-oracle-asm-and-other-features/Picture13.png %})
+![](Picture13.png)
 
 ### Benefits of Flex ASM
 
@@ -137,17 +137,17 @@ master using the following command:
 
     oclumon manage -get MASTER
 
-![]({% asset_path 2019-09-06-exploring-oracle-asm-and-other-features/Picture14.png %})
+![](Picture14.png)
 
 This instance is managed by using the following SRVCTL commands:
 
     srvctl status mgmtdb
 
-![]({% asset_path 2019-09-06-exploring-oracle-asm-and-other-features/Picture15.png %})
+![](Picture15.png)
 
     srvctl config mgmtdb
 
-![]({% asset_path 2019-09-06-exploring-oracle-asm-and-other-features/Picture16.png %})
+![](Picture16.png)
 
 
 You can see the single listener associated with this database by running the
@@ -155,7 +155,7 @@ following command:
 
     ps -ef|grep MGMTLSNR.
 
-![]({% asset_path 2019-09-06-exploring-oracle-asm-and-other-features/Picture17.png %})
+![](Picture17.png)
 
 You can view information about MGMTDB from metalink doc - 1568402.1.
 

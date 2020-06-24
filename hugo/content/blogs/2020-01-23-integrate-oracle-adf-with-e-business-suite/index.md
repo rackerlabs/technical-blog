@@ -85,7 +85,7 @@ Download the software from the following URL:
 
 [https://www.oracle.com/middleware/technologies/weblogic-server-installers-downloads.html](https://www.oracle.com/middleware/technologies/weblogic-server-installers-downloads.html)
 
-![]({% asset_path 2020-01-23-integrate-oracle-adf-with-e-business-suite/Picture1.png %})
+![](Picture1.png)
 
 To install the WLS, use the following steps:
 
@@ -121,7 +121,7 @@ Download the software from the following URL:
 
 [https://www.oracle.com/tools/downloads/application-development-framework-downloads.html](https://www.oracle.com/tools/downloads/application-development-framework-downloads.html)
 
-![]({% asset_path 2020-01-23-integrate-oracle-adf-with-e-business-suite/Picture2.png %})
+![](Picture2.png)
 
 To install the ADF Runtime, use the following steps:
 
@@ -229,7 +229,7 @@ following steps:
    **ascp_domain->Services->Persistent Stores -> New -> CreateFileStore**.
    The following **Create a File Store screen** displays:
 
-![]({% asset_path 2020-01-23-integrate-oracle-adf-with-e-business-suite/Picture3.png %})
+![](Picture3.png)
 
 <ol start=5>
     <li>Enter mds-ascp-repos in the <b>Name</b> field.</li>

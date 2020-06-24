@@ -184,7 +184,7 @@ select **Quality Management->Database Replay**.
 
 A **Database Replay** page appears, similar to the following image:
 
-![]({% asset_path 2018-11-12-load-testing-oracle-databases/Picture1.png %})
+![](Picture1.png)
 
 Learn about the detailed procedures for [Capture from OEM](https://docs.oracle.com/database/121/RATUG/GUID-1679DB12-B633-4021-A3B9-9CC6216D6681.htm#RATUG117)
 and for [Replay from OEM](https://docs.oracle.com/database/121/RATUG/GUID-B97B7550-A947-45D0-A31B-636A6427DD86.htm#RATUG147).

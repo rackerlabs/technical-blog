@@ -85,7 +85,7 @@ processing is divided and also takes place on the storage tier.
 The following steps comprise traditional SQL processing, as shown in the
 following diagram:
 
-![]({% asset_path 2019-03-05-oracle-exadata-smart-scan-feature/Picture1.png %})
+![](Picture1.png)
 
 1. A client submits a query.
 2. This action triggers a full table scan.
@@ -110,7 +110,7 @@ it uses Exadata storage software, which has database logic built into it. The
 following steps comprise Exadata SQL processing, as shown in the following
 diagram:
 
-![]({% asset_path 2019-03-05-oracle-exadata-smart-scan-feature/Picture2.png %})
+![](Picture2.png)
 
 1. A client submits a query.
 2. The database server constructs an Intelligent Database (iDB) message, which

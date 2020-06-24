@@ -27,7 +27,7 @@ We started by executing multiple runs of the test against the environment with n
 
 Before we dive in to the results, it's important to note that the overhead of APM tools varies depending on the application and current usage patterns.  While our tests illustrate (and give us a general idea of) the performance overhead, these results may not match your particular environment.
 
-![APM Overhead Test Results]({% asset_path 2016-11-14-Evaluating-APM-Overhead/apm_overhead_results.png %})
+![APM Overhead Test Results](apm_overhead_results.png)
 
 Our control test case with no APM agents had a mean processing time of 262 seconds, and the tests using APM tools had a mean processing time of 270 seconds.  Overall, the increase is minimal, and it's on the lower end of New Relic's and AppDynamics' advertised performance overhead.
 

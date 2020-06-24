@@ -33,7 +33,7 @@ databases.
 
 The following image shows a possible block corruption:
 
-![]({% asset_path 2019-03-20-repair-block-corruption-in-an-oracle-database/Picture1.png %})
+![](Picture1.png)
 
 *Image source*: [https://blog.toadworld.com/2017/12/01/block-corruption-in-an-oracle-database](https://blog.toadworld.com/2017/12/01/block-corruption-in-an-oracle-database)
 

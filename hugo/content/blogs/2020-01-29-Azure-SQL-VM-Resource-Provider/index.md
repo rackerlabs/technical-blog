@@ -69,15 +69,15 @@ following tasks:
 
 -  In the resource group where you provisioned the SQL Server, select the SQL VM
    resource-type object. It should have the same name as the VM.
-![resources]({% asset_path 2020-01-29-Azure-SQL-VM-Resource-Provider/1.png %})
+![resources](1.png)
 
 -  Select **Configure** from the blade, scroll down on the right-hand side, and
    select the **Extend drive** button of the drive to extend.
-![resources]({% asset_path 2020-01-29-Azure-SQL-VM-Resource-Provider/2.png %})
+![resources](2.png)
 
 -  Select the disk size from the drop-down menu to determine by how much to extend
    the current drive. Select **Apply** 
-![resources]({% asset_path 2020-01-29-Azure-SQL-VM-Resource-Provider/3.png %})
+![resources](3.png)
 
 I hope this quick glimpse into using the SQL Server resource provider shows how
 easy configuring SQL Server is. You can find the example ARM template that I used

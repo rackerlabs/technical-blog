@@ -109,7 +109,7 @@ Query Store includes the following reports:
 -	**Tracked Queries**: Track the execution of the most important queries in real
    time.
 
-![]({% asset_path 2019-08-09-Microsoft-SQL-Server-query-store/Picture1.png %})
+![](Picture1.png)
 
 ### Forcing Plans with Query Store
 
@@ -130,33 +130,33 @@ execution plan only for the upcoming query executions.
 The **Query Store -> Open Top Resource Consuming Queries** report lists queries
 that are resource intensive. Let’s select a query for examination:
 
-![]({% asset_path 2019-08-09-Microsoft-SQL-Server-query-store/Picture2.png %})
+![](Picture2.png)
 
 Hover your mouse over **Plan** to see related statistics.
 
-![]({% asset_path 2019-08-09-Microsoft-SQL-Server-query-store/Picture3.png %})
+![](Picture3.png)
 
 Let's compare different plans.
 
 **Plan 216 details:**
 
-![]({% asset_path 2019-08-09-Microsoft-SQL-Server-query-store/Picture4.png %})
+![](Picture4.png)
 
 **Plan 195 details:**
 
-![]({% asset_path 2019-08-09-Microsoft-SQL-Server-query-store/Picture5.png %})
+![](Picture5.png)
 
 The average duration for Plan 216 is lower, so it can be used to force this plan
 in further executions. Click on **Force Plan** to see a confirmation screen
 with the message “Do you want to force plan 216 for query 42?”
 
-![]({% asset_path 2019-08-09-Microsoft-SQL-Server-query-store/Picture6.png %})
+![](Picture6.png)
 
 Click **Yes**.  After the plan is forced, it is highlighted with a checkmark as
 shown in the following screenshot. In the future, this plan will be used by
 query optimizer for execution.
 
-![]({% asset_path 2019-08-09-Microsoft-SQL-Server-query-store/Picture7.png %})
+![](Picture7.png)
 
 ### Best Practices with Query Store
 

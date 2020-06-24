@@ -85,7 +85,7 @@ Cassandra includes the following features:
 
 The following image shows Cassandra's architecture:
 
-![]({% asset_path 2018-06-18-introduction-to-apache-cassandra/Arch.png %})
+![](Arch.png)
 
 Image source: [Cassandra Community Webinar](https://www.slideshare.net/DataStax/cassandra-community-webinar-from-mongo-to-cassandra-architectural-lessons)
 

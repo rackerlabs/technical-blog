@@ -46,7 +46,7 @@ corruption of the entire database. The data file page is good when written out
 of SQL Server’s memory (that is, onto a disk) but bad when read back into memory,
 as shown in the following image:
 
-![]({% asset_path 2019-07-24-Microsoft-SQL-Server-advanced-corruption-and-recovery/Picture1.png %})
+![](Picture1.png)
 
 #### Causes of database corruption:
 
@@ -177,7 +177,7 @@ The following list contains the internal checks performed by DBCC CHECKDB:
 
 The following table shows some DBCC CHECKDB errors:
 
-![]({% asset_path 2019-07-24-Microsoft-SQL-Server-advanced-corruption-and-recovery/Picture2.png %})
+![](Picture2.png)
 
 #### Best practices
 

@@ -81,7 +81,7 @@ SQL query:
 
 The following image shows the query and results:
 
-![List cell command results]({% asset_path 2018-05-29-oracle-11g-calibrate-io-overview/QueryResponse.png %})
+![List cell command results](QueryResponse.png)
 
 **Note:** Only one calibration can be performed on a database instance at a time.
 
@@ -124,7 +124,7 @@ workload.
 The following image shows the output from a ``DBMS_RESOURCE_MANAGER.CALIBRATE_IO``
 procedure:
 
-![List cell command results]({% asset_path 2018-05-29-oracle-11g-calibrate-io-overview/CalibrationResponse.png %})
+![List cell command results](CalibrationResponse.png)
 
 ### Calibration considerations
 

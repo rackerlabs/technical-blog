@@ -67,14 +67,14 @@ should put the database in multi-user mode.
 To change compatibility level with the wizard, right-click **database –> property
 –> options –> Database compatibility level** as shown in the following image:
 
-![]({% asset_path 2019-06-19-Microsoft-SQL-Server-database-compatibility-levels/Picture1.png %})
+![](Picture1.png)
 
 ### Default and supported compatibility levels
 
 The following table shows SQL Server versions with their default compatibility
 and a list of supported compatibility levels:
 
-![]({% asset_path 2019-06-19-Microsoft-SQL-Server-database-compatibility-levels/Picture2.png %})
+![](Picture2.png)
 
 *Source*:[https://www.sqlskills.com/blogs/glenn/database-compatibility-level-in-sql-server/](https://www.sqlskills.com/blogs/glenn/database-compatibility-level-in-sql-server/)
 

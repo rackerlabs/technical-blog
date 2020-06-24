@@ -29,11 +29,11 @@ On the 28th of May 1987, during the **Cold War**, a German teenager named **Math
 
 However, as an example of the [Butterfly Effect](https://en.wikipedia.org/wiki/Butterfly_effect), the Soviet military's failure allowed [Michael Gorbachov](https://en.wikipedia.org/wiki/Mikhail_Gorbachev) to remove many of the strongest opponents to his reforms, which eventually led to the dismantlement of the **Soviet Union** and the end of the **Cold War**. 
 
-![MS-DOs welcome screen ]({% asset_path 2019-10-29-kubertetris/welcome_screen.jpg %})
+![MS-DOs welcome screen ](welcome_screen.jpg)
 
 Rust and his tiny plane were immortalized in what could be called a *meme avant la lettre* in the 1987 IBM-PC release of **Tetris** by [Spectrum Holobyte](https://en.wikipedia.org/wiki/Spectrum_HoloByte), which featured the Kremlin and Rust's plane in the game's welcome screen. 
 
-![Tetris]({% asset_path 2019-10-29-kubertetris/tetris.jpg %})
+![Tetris](tetris.jpg)
 
 Tetris, created in 1984&mdash;yes, **1984**&mdash;by [Alexey Pajitnov](https://en.wikipedia.org/wiki/Alexey_Pajitnov), which has a whole movie plot-worthy history of its own, managed to permeate the Iron Curtain not long after Rust did to become the most popular computer game of all time by being. To quote *Computing Gaming World* (in 1987): "deceptively simple and insidiously addictive." 
 
@@ -64,7 +64,7 @@ But don't worry, this is not some stale sales pitch. The concept of blocks (and 
 
 ### The Tech behind the Talk
 
-![KuberTetris]({% asset_path 2019-10-29-kubertetris/kubertetris.PNG %})
+![KuberTetris](kubertetris.PNG)
 
 Personally, I hardly qualify as a proper developer, let alone a game developer. But I knew I wanted to build something that could be run just about anywhere on non-specific hardware, and that would be easy to maintain and support, which lead me to explore the possibility of creating **Tetris** based on **HTML5** and client-side only code. 
 
@@ -74,13 +74,13 @@ I created a custom theme around GCP and Rackspace, included our **Service Blocks
 
 Don't tell Google that it's on **Azure Blob Storage** for now ;-). The epileptic background animations are standard CSS, and it features the original **Gameboy** soundtrack by [Chip Tanaka](https://en.wikipedia.org/wiki/Hirokazu_Tanaka). 
 
-![Winners Stockholm]({% asset_path 2019-10-29-kubertetris/booth.jpg %})
+![Winners Stockholm](booth.jpg)
 
 Add a simple whiteboard to record the scores, some awesome prizes (**Airblock** - A modular programmable drone/Hovercraft, a **Raspberry PI 3** with **MINECRAFT: PI edition**, and a **BBC Micro-bit**), and some enthusiastic contestants and winners, and you have the recipe for a very enjoyable day at the conference booth! 
 
-![Winners Stockholm]({% asset_path 2019-10-29-kubertetris/stockholm.jpg %})
+![Winners Stockholm](stockholm.jpg)
 
-![Winners Amsterdam]({% asset_path 2019-10-29-kubertetris/amsterdam.jpg %})
+![Winners Amsterdam](amsterdam.jpg)
 
 ### Back to the future
 

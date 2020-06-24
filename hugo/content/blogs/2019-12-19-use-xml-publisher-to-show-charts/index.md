@@ -54,7 +54,7 @@ Example XML data file:
        </DATA_RECORD>
     </main>
 
-![]({% asset_path 2019-12-19-use-xml-publisher-to-show-charts/Picture1.png %})
+![](Picture1.png)
 
 In an `rtf` template, insert an object of chart type from the XML Publisher add-in.
 
@@ -87,7 +87,7 @@ Click the **Advanced** tab and paste the following text:
       </LocalGridData>
     </Graph>
 
-![]({% asset_path 2019-12-19-use-xml-publisher-to-show-charts/Picture2.png %})
+![](Picture2.png)
 
 This creates a dummy chart image on the template. Use this image to size the chart as you need it in the output.
 
@@ -149,9 +149,9 @@ tag in the XML data file.
 This section refers to the data values in the chart. The created bars should have a size proportional to the
 value of the `REQ_COUNT` tag in the XML data file.
 
-![Output]({% asset_path 2019-12-19-use-xml-publisher-to-show-charts/Picture3.png %})
+![Output](Picture3.png)
 
-![Output Mapping with Definition]({% asset_path 2019-12-19-use-xml-publisher-to-show-charts/Picture4.png %})
+![Output Mapping with Definition](Picture4.png)
 
 ### Create pie charts
 
@@ -172,11 +172,11 @@ Example XML data file:
        </DATA_RECORD>
     </main>
 
-![]({% asset_path 2019-12-19-use-xml-publisher-to-show-charts/Picture1.png %})
+![](Picture1.png)
 
 In the `rtf` template, insert an object of chart type from Publisher Add-In.
 
-![]({% asset_path 2019-12-19-use-xml-publisher-to-show-charts/Picture5.png %})
+![](Picture5.png)
 
 Click the **Advanced** tab and paste the following text:
 
@@ -203,7 +203,7 @@ Click the **Advanced** tab and paste the following text:
        </LocalGridData>
     </Graph>
 
-![]({% asset_path 2019-12-19-use-xml-publisher-to-show-charts/Picture6.png %})
+![](Picture6.png)
 
 #### Explanation of pie chart XML
 
@@ -244,9 +244,9 @@ of the `STATUS` tag in the XML data file.
 This section refers to the data value of the chart, creating a pie of a fractional size that is proportional
 to the value of the `REQ_COUNT` tag. The values represent fractions of the total count.
 
-![Output]({% asset_path 2019-12-19-use-xml-publisher-to-show-charts/Picture7.png %})
+![Output](Picture7.png)
 
-![Output Mapping with Definition]({% asset_path 2019-12-19-use-xml-publisher-to-show-charts/Picture8.png %})
+![Output Mapping with Definition](Picture8.png)
 
 ### Create line charts
 
@@ -312,7 +312,7 @@ Click the **Advanced** tab and paste the following text:
        </LocalGridData>
     </Graph>
 
-![]({% asset_path 2019-12-19-use-xml-publisher-to-show-charts/Picture9.png %})
+![](Picture9.png)
 
 This creates a dummy chart image on the template. Use this image to size the chart as you need it in the output.
 
@@ -326,9 +326,9 @@ This section indicates the graph type and category as `LINE_VERT_ABS`, which is 
 
 The rest of the tags are the same as for a BAR type chart.
 
-![Output]({% asset_path 2019-12-19-use-xml-publisher-to-show-charts/Picture10.png %})
+![Output](Picture10.png)
 
-![Output Mapping with Definition]({% asset_path 2019-12-19-use-xml-publisher-to-show-charts/Picture11.png %})
+![Output Mapping with Definition](Picture11.png)
 
 ### Chart uses
 

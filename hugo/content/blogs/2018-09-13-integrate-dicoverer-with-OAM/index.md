@@ -28,7 +28,7 @@ Linux x86-64 RedHat&reg; Enterprise Linux 5 Update Level 5+.
 
 The following diagram shows the OAM operational flow:
 
-![]({% asset_path 2018-09-13-integrate-dicoverer-with-OAM/Picture1.png %})
+![](Picture1.png)
 
 
 ### Configure SSO for Discoverer
@@ -58,9 +58,9 @@ Use the following steps to register an OSSO agent (mod_sso):
 2. Under the **Agents** section, click the "+" with the dropdown symbol as
    shown in the following images:
 
-   ![]({% asset_path 2018-09-13-integrate-dicoverer-with-OAM/Picture2.png %})
+   ![](Picture2.png)
 
-   ![]({% asset_path 2018-09-13-integrate-dicoverer-with-OAM/Picture3.png %})
+   ![](Picture3.png)
 
 <ol start=3>
     <li>
@@ -68,7 +68,7 @@ Use the following steps to register an OSSO agent (mod_sso):
     </li>
 </ol>
 
-   ![]({% asset_path 2018-09-13-integrate-dicoverer-with-OAM/Picture4.png %})
+   ![](Picture4.png)
 
 <ol start=4>
     <li>
@@ -86,11 +86,11 @@ Use the following steps to register an OSSO agent (mod_sso):
     </li>
 </ol>
 
-   ![]({% asset_path 2018-09-13-integrate-dicoverer-with-OAM/Picture5.png %})
+   ![](Picture5.png)
 
-   ![]({% asset_path 2018-09-13-integrate-dicoverer-with-OAM/Picture6.png %})
+   ![](Picture6.png)
 
-   ![]({% asset_path 2018-09-13-integrate-dicoverer-with-OAM/Picture7.png %})
+   ![](Picture7.png)
 
 #### Update policies
 
@@ -101,9 +101,9 @@ Use the following steps to update authentication and authorization policies:
    Resource Policy** as shown in the
    following images:
 
-   ![]({% asset_path 2018-09-13-integrate-dicoverer-with-OAM/Picture8.png %})
+   ![](Picture8.png)
 
-   ![]({% asset_path 2018-09-13-integrate-dicoverer-with-OAM/Picture9.png %})
+   ![](Picture9.png)
 
 <ol start=2>
     <li>
@@ -112,14 +112,14 @@ Use the following steps to update authentication and authorization policies:
     </li>
 </ol>
 
-   ![]({% asset_path 2018-09-13-integrate-dicoverer-with-OAM/Picture10.png %})
+   ![](Picture10.png)
 
 #### Copy the osso.conf file
 
 When you register the OSSO agent, the system creates `osso.conf` in
 $DOMAIN_HOME/output/<Agent Name>, as shown in the following image:
 
-![]({% asset_path 2018-09-13-integrate-dicoverer-with-OAM/Picture11.png %})
+![](Picture11.png)
 
 Log in to your Discoverer server and check the file information as shown in the
 following example:
@@ -210,24 +210,24 @@ Validate the SSO configuration by accessing the following launchers:
 Browse to the URL, enter your SSO login, and click **Login** as shown in the
 following image:
 
-![]({% asset_path 2018-09-13-integrate-dicoverer-with-OAM/Picture12.png %})
+![](Picture12.png)
 
 Fill in the details as shown in the following image:
 
-![]({% asset_path 2018-09-13-integrate-dicoverer-with-OAM/Picture13.png %})
+![](Picture13.png)
 
 Click **Continue** and the system populates your user name automatically as
 shown in the following images:
 
-![]({% asset_path 2018-09-13-integrate-dicoverer-with-OAM/Picture14.png %})
+![](Picture14.png)
 
-![]({% asset_path 2018-09-13-integrate-dicoverer-with-OAM/Picture15.png %})
+![](Picture15.png)
 
-![]({% asset_path 2018-09-13-integrate-dicoverer-with-OAM/Picture16.png %})
+![](Picture16.png)
 
-![]({% asset_path 2018-09-13-integrate-dicoverer-with-OAM/Picture17.png %})
+![](Picture17.png)
 
-![]({% asset_path 2018-09-13-integrate-dicoverer-with-OAM/Picture18.png %})
+![](Picture18.png)
 
 ### Conclusion
 

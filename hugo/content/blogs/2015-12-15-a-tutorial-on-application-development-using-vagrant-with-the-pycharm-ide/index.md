@@ -149,17 +149,17 @@ I now need to open my project in PyCharm.  Since I'm running my app in a VM, I n
 
 1. Open the project settings dialog box in PyCharm. (*cmd+comma* shortcut if you are using OS X).
 
-    ![Project Settings]({% asset_path 2015-12-15-a-tutorial-on-application-development-using-vagrant-with-the-pycharm-ide/1.png %})
+    ![Project Settings](1.png)
 
 2. Expand *Project: juno* on the left side.
 
-    ![Project Settings]({% asset_path 2015-12-15-a-tutorial-on-application-development-using-vagrant-with-the-pycharm-ide/2.png %})
+    ![Project Settings](2.png)
 
 3. Click on *Project Interpreter*.
 
 4. Click on the cog icon on the upper right side of the window and select *Add Remote*.
 
-    ![Interpreter Settings]({% asset_path 2015-12-15-a-tutorial-on-application-development-using-vagrant-with-the-pycharm-ide/3.png %})
+    ![Interpreter Settings](3.png)
 
 5. Click on the *Vagrant* radio button.
 
@@ -167,7 +167,7 @@ I now need to open my project in PyCharm.  Since I'm running my app in a VM, I n
 
 7. In the *Vagrant Host URL* box, make sure `ssh://vagrant@127.0.0.1:2222` is specified.
 
-    ![Interpreter Configuration]({% asset_path 2015-12-15-a-tutorial-on-application-development-using-vagrant-with-the-pycharm-ide/4.png %})
+    ![Interpreter Configuration](4.png)
 
 8. Click OK.
 

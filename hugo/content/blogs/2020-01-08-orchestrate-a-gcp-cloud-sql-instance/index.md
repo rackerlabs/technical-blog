@@ -81,7 +81,7 @@ An Ansible playbook contains a set of instructions written in YAML. This example
 uses a gcp\_sql\_instance module to spin up the Cloud SQL instance. The
 following playbook creates a GCP Cloud SQL instance of MySQL database version 5.7:
 
-![]({% asset_path 2020-01-08-orchestrate-a-gcp-cloud-sql-instance/Picture6.png %})
+![](Picture6.png)
 
 The playbook in this example uses the following playbook variables files and
 stores them in **vars.yml**:
@@ -99,11 +99,11 @@ stores them in **vars.yml**:
 Jenkins is an automation server, and the job is a basic component in Jenkins
 that you use to define the task that you want to automate.
 
-![]({% asset_path 2020-01-08-orchestrate-a-gcp-cloud-sql-instance/Picture1.png %})
+![](Picture1.png)
 
 The job defines `CloudSQL` as the job name.
 
-![]({% asset_path 2020-01-08-orchestrate-a-gcp-cloud-sql-instance/Picture2.png %})
+![](Picture2.png)
 
 #### Ansible plug-in in Jenkins
 
@@ -111,12 +111,12 @@ To run the playbook in a Jenkins job, you must install the Ansible plug-in in
 Jenkins. Then use that plug-in in the **Build** step of the Jenkins job to specify
 the playbook as shown in the preceding screenshot.
 
-![]({% asset_path 2020-01-08-orchestrate-a-gcp-cloud-sql-instance/Picture3.png %})
+![](Picture3.png)
 
 After the CloudSQL job runs, you should see output similar to the following
 output:
 
-![]({% asset_path 2020-01-08-orchestrate-a-gcp-cloud-sql-instance/Picture4.png %})
+![](Picture4.png)
 
 #### Jenkins user interface
 
@@ -124,7 +124,7 @@ The following screenshot shows the user interface (UI) in Jenkins that you use
 to run or make changes to the job. The screenshot shows the MySQL Cloud SQL
 instance created in GCP after Jenkins job completes:
 
-![]({% asset_path 2020-01-08-orchestrate-a-gcp-cloud-sql-instance/Picture5.png %})
+![](Picture5.png)
 
 ### Conclusion
 

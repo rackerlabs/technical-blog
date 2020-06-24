@@ -16,7 +16,7 @@ The goal of this post is to develop an application in an environment that's as c
 
 ### Docker Docker Docker
 
-<img class="blog-post right" src="{% asset_path 2015-07-02-dev-to-deploy-with-docker-machine-and-compose/docker.png %}"/>First we need to install Docker. This post uses all of the latest and greatest Docker components at the time of writing.
+<img class="blog-post right" src="docker.png"/>First we need to install Docker. This post uses all of the latest and greatest Docker components at the time of writing.
 
 1. [Docker](https://docs.docker.com/installation/) 1.7.0
 1. [Docker Machine](https://docs.docker.com/machine/#installation) 0.3.0
@@ -52,7 +52,7 @@ Now you can just type `de` to see what Docker environment variables are set.
 
 Here's what the final result of moving our application from local development to remote deployment will look like.
 
-<img class="blog-post" src="{% asset_path 2015-07-02-dev-to-deploy-with-docker-machine-and-compose/dmc.png %}"/>
+<img class="blog-post" src="dmc.png"/>
 
 ### Local development
 

@@ -28,7 +28,7 @@ is essential to your advertising success.
 
 Enter [Data management platforms](https://www.salesforce.com/blog/2017/05/what-is-a-dmp.html) (DMPs).
 
-![]({% asset_path 2019-12-02-everything-you-need-to-know-about-salesforce-audience-studio-formerly-salesforce-dmp/picture1.png %})
+![](picture1.png)
 
 [DMPs like Salesforce&reg; Audience Studio (formerly Salesforce DMP)](https://salesforce.vidyard.com/watch/cwaPkdMeYSXEXP9oLF4X5r)
 are the backbone of data-driven marketing efforts. A DMP collects, organizes,
@@ -73,7 +73,7 @@ inventory and a demand-side platform (DSP) that helps marketers maximize the
 efficiency of their ads. The diagram below shows how the SSP and DSP come
 together to fuel the ad exchange process.
 
-![]({% asset_path 2019-12-02-everything-you-need-to-know-about-salesforce-audience-studio-formerly-salesforce-dmp/picture2.png %})
+![](picture2.png)
 
 
 Audience Studio can increase the effectiveness of your media spend by ensuring

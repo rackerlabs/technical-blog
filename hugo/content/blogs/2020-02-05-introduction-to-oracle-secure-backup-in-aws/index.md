@@ -35,7 +35,7 @@ Internet storage service providers keep multiple, redundant copies of your data
 for availability and scalability purposes. Your organization benefits from this
 practice by having more reliable data.
 
-![]({% asset_path 2020-02-05-introduction-to-oracle-secure-backup-in-aws/Picture1.png %})
+![](Picture1.png)
 
 *Image source*: [https://www.oracle.com/technetwork/database/features/availability/twp-oracledbcloudbackup-130129.pdf](https://www.oracle.com/technetwork/database/features/availability/twp-oracledbcloudbackup-130129.pdf)
 

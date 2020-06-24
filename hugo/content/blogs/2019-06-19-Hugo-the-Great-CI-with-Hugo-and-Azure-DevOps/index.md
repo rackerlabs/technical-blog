@@ -26,7 +26,7 @@ This post offers a small taste of Dutch history but, more importantly, an overvi
 
 ## Hugo the Great
 
-![Hugo de Groot]({% asset_path 2019-06-19-Hugo-the-Great-CI-with-Hugo-and-Azure-DevOps/hugo.jpg %})
+![Hugo de Groot](hugo.jpg)
 
 [Hugo de Groot](https://en.wikipedia.org/wiki/Hugo_Grotius) (Or **Grotius** because back then fancy people Latinized their surnames) was a Dutch jurist and writer living in the 17th Century, who is most well known for his work *De Jure Belli ac Pacis* (On The Law of War and Peace) on which most of our modern concepts relating to Internal Law are based. In those days, the Dutch Republic was not only a popular location for a stag or hen do but an almost "start-up" like country with all the growing pains that come with it. Without going into to much detail, **Grotius** found himself at the wrong end of a religious dispute and was imprisoned for life.
 
@@ -38,7 +38,7 @@ My personal blog is based on static HTML, generated with Hugo, and hosted on **A
 
 Semantics aside - I solved my issues by creating a pipeline (or workflow) that picks up my code from a source control repository after a successful merge\commit, builds an artifact, and deploys the artifacts to a system. The following schematic provides an overview of my blog writing process:
 
-![CI Diagram]({% asset_path 2019-06-19-Hugo-the-Great-CI-with-Hugo-and-Azure-DevOps/ci_diagram.png %})
+![CI Diagram](ci_diagram.png)
 
 
 What follows is a brief description of the steps I took to set it all up.
@@ -58,7 +58,7 @@ And finally - credit where credit is due - I used [this article](https://adwise.
 
 ### Local environment
 
-![Local environment]({% asset_path 2019-06-19-Hugo-the-Great-CI-with-Hugo-and-Azure-DevOps/local_env.png %})
+![Local environment](local_env.png)
 
 My local environment, aka my laptop, consists of **Typora** for writing and editing mark down, and **Visual Studio Code(VS Code)** for editing the *.toml* files and interacting with version control through git. I use the [Chocolatey](https://chocolatey.org/) package manager to install and update these applications and **Hugo** itself.
 
@@ -77,7 +77,7 @@ In **Azure DevOps**, formerly known as **VSTS**, I've created a public project f
 
 #### Azure repos and Git
 
-![Git repos]({% asset_path 2019-06-19-Hugo-the-Great-CI-with-Hugo-and-Azure-DevOps/git_repos.png %})
+![Git repos](git_repos.png)
 
 I've created a simple repository based on **Git** version control. I added **/public** to .gitignore to avoid uploading the generated html to my repo in case I forget to clean up after myself. You can use **Azure Repos** the same way as you would use **Bitbucket**, **Github** or **Gitlab** through a web GUI. This is also where you can create a pull request after committing and pushing your changes from your local repo. After you create the pull request, you can complete it to start the merge from the dev to the master branch. In this setup, I am the person requested and completing - typically these roles would be held by different people or groups of people.
 
@@ -85,7 +85,7 @@ BTW, when using Hugo, it makes sense to add the repo for the theme that you use 
 
 #### Azure pipelines - build
 
-![Azure pipelines build]({% asset_path 2019-06-19-Hugo-the-Great-CI-with-Hugo-and-Azure-DevOps/build_pipeline.png %})
+![Azure pipelines build](build_pipeline.png)
 
 Inside my project, under *Pipelines*, I've created a new "Build" type pipeline. I was not yet brave enough to switch entirely to YAML, so I chose the "Empty Pipeline" option. I used the master branch of the git repo I created previously. Note: **Azure Pipelines** also supports **GitHub**, **Github Enterprise Server**, **Bitbucket** and even **Subversion** as the source for a pipeline. I picked the default *Hosted VS2017* agent pool, which suffices for actions I want to perform. 
 
@@ -108,7 +108,7 @@ And that's it. Now, on every committed change, my pipeline spits out a fresh set
 
 #### Azure pipelines - release
 
-![Azure pipelines release]({% asset_path 2019-06-19-Hugo-the-Great-CI-with-Hugo-and-Azure-DevOps/release_pipeline.png %})
+![Azure pipelines release](release_pipeline.png)
 
 Because of how **Azure Pipelines** are set up, there is actually nothing keeping me from performing the following steps as part of the my build pipeline. However, I wanted to do this properly, so I created a separate release pipeline. I created it through *Pipelines\Release* and picked the "Empty Job" option. There are also various release templates available for the release to various platforms or even to release to a test environment in order to run automated test cases through **Azure Test Manager**.
 
@@ -129,6 +129,6 @@ So, after making sure an artifact was created and stored at every committed chan
 
 There are still many areas for improvement - version tagging, automated spell check and mark down check, pure yaml pipelines, and even extending my **CI** environment to cover my hosting infrastructure and checking my pipelines in to source control. But though any other production workload will most likely require more tasks and more extended deployment strategies, for me, this illustrates how easy it is to automate a publishing workflow and set up your own **CI** - especially when using **Azure DevOps** in combination with **Azure** infrastructure resources. 
 
-For those interested, here is a larger version of my [diagram]({% asset_path 2019-06-19-Hugo-the-Great-CI-with-Hugo-and-Azure-DevOps/ci_diagram.png %}).
+For those interested, here is a larger version of my [diagram](ci_diagram.png).
 
 This post was previously published at my private [blog](https://blog.thirdpartytools.net).

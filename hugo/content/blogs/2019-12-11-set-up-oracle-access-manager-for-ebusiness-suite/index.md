@@ -37,7 +37,7 @@ purpose.
 
 The following image shows the integration of WebGate and EBS AccessGate:
 
-![]({% asset_path 2019-12-11-set-up-oracle-access-manager-for-ebusiness-suite/Picture1.png %})
+![](Picture1.png)
 
 *Image source:* [https://docs.oracle.com/cd/E26401_01/doc.122/e22952/T156458T580814.htm](https://docs.oracle.com/cd/E26401_01/doc.122/e22952/T156458T580814.htm)
 
@@ -140,7 +140,7 @@ From the console, select **Lock & Edit** -> **Home** -> **Data Sources** ->
 
 Step 1.4 removed the AccessGate deployments. If any remain, remove them manually.
 
-![]({% asset_path 2019-12-11-set-up-oracle-access-manager-for-ebusiness-suite/Picture2.png %})
+![](Picture2.png)
 
 #### 1.6	Sync up the context file and update the configuration on all nodes
 

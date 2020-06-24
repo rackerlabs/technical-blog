@@ -27,7 +27,7 @@ is best shown as:
  Descriptor Class Extends   	| `BuildStepDescriptor<Builder>`    	| `BuildStepDescriptor<Publisher>`
 
 
-<img class="blog-post" src="{% asset_path 2015-08-28-jenkins-post-build-plugin-part-2/info.png%}"/>
+<img class="blog-post" src="info.png"/>
 **Tip:** I would highly recommend going through the comments in `HelloWorldBuilder.java` before delving further because
 those comments are extremely detailed and give the reader a good insight into working of Jenkins core.
 
@@ -50,7 +50,7 @@ The `DescriptorImpl` class acts as a configuration object for the outer plugin c
 
 ### <a name="descriptorimpl"></a>Understanding the descriptorImpl class
 
-<img class="blog-post right" src="{% asset_path 2015-08-28-jenkins-post-build-plugin-part-2/sayHello2.png%}"/>
+<img class="blog-post right" src="sayHello2.png"/>
 
 The `DescriptorImpl` class implements the abstract method `getDisplayName()` declared in the `Descriptor` class . This
 method returns an alias-string for the user to click on when he first decides to use this plugin
@@ -64,7 +64,7 @@ This class is also the place where any global configurations reside. Global conf
 at the plugin level rather than each job/build/project level. Parameters of this class can act as
 globally configurable fields, e.g. checkboxes, text-fields, radio-buttons, etc.
 
-<img class="blog-post right" src="{% asset_path 2015-08-28-jenkins-post-build-plugin-part-2/useFrenchCheckBox.png%}"/>
+<img class="blog-post right" src="useFrenchCheckBox.png"/>
 
 Look at the boolean `useFrench` class parameter. The method `public boolean configure(...)` in the `Descriptor` class
 is overridden to set this field to `true` if the user checks in the checkbox on the Manage Jenkins>Configure System
@@ -78,7 +78,7 @@ allow the user to set a value less than four characters but not without a warnin
 short?" In the exact same way, a developer can write any `doCheck<field-name>()` methods to add checks on the
 corresponding fields in the class.
 
-<img class="blog-post right" src="{% asset_path 2015-08-28-jenkins-post-build-plugin-part-2/warning.gif %}"/>
+<img class="blog-post right" src="warning.gifg"/>
 
 ### <a name="publisher-class"></a>Know thy publisher class
 
@@ -134,11 +134,11 @@ The [resources]
 With the implementation of these two classes , we have finished coding the plugin. The following illustration shows
 how the build page should look after you install and run the plugin:
 
-<img class="blog-post right" src="{% asset_path 2015-08-28-jenkins-post-build-plugin-part-2/buildView.png %}"/>
+<img class="blog-post right" src="buildView.pngg"/>
 
  and this is how the project page should look:
 
-<img class="blog-post right" src="{% asset_path 2015-08-28-jenkins-post-build-plugin-part-2/projectView.png %}"/>
+<img class="blog-post right" src="projectView.pngg"/>
 
 The source code for this plugin has been made available on [GitHub](https://github.com/pritic/testExample). I hope
 this tutorial has been a fun project and a good starting point for beginners in Jenkins plugin development.

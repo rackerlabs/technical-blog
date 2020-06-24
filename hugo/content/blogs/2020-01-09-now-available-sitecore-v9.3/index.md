@@ -19,7 +19,7 @@ Rackspace now offers Sitecore&reg; version 9.3, which includes several enhanceme
 
 <!--more-->
 
-<img class="blog-post right" src="{% asset_path 2020-01-09-now-available-sitecore-v9.3/sitecore_logo.png %}"/> Our
+<img class="blog-post right" src="sitecore_logo.png"/> Our
 
 Sitecore Managed Cloud Premium complete solution offering includes the
 following default elements:

@@ -32,7 +32,7 @@ on database efficiency for both employees and customers, as shown in the
 following image:
 
 
-![]({% asset_path 2019-05-22-an-overview-of-oracle-property-manager/Picture1.png %})
+![](Picture1.png)
 
 
 ### Key features of the Oracle Property Manager
@@ -64,7 +64,7 @@ details and building details. The database provides a built-in hierarchy that
 starts at the top by grouping properties within office parks and regions, as
 shown in the following image:
 
-![Figure 1 - Property definition]({% asset_path 2019-05-22-an-overview-of-oracle-property-manager/Picture2.png %})
+![Figure 1 - Property definition](Picture2.png)
 
 Building details can include location, tenure, address, user-defined class, and
 status. Additionally, you can enter other important information like area
@@ -74,7 +74,7 @@ You can also subdivide a building into floors and offices, and you can enter the
 previous records for each individual subclassification. The following image
 shows a building details form:
 
-![Figure 2 - Building details]({% asset_path 2019-05-22-an-overview-of-oracle-property-manager/Picture3.png %})
+![Figure 2 - Building details](Picture3.png)
 
 Finally, you can subdivide land into various parcels, withholding information
 like land area, conditions, and the features for each classified parcel. You
@@ -105,7 +105,7 @@ There are specifically-designed forms to capture the necessary information about
 the property to be leased, such as details, contacts, locations, insurance, and
 so on. The following image shows a lease details form:
 
-![Figure 3 - Lease details]({% asset_path 2019-05-22-an-overview-of-oracle-property-manager/Picture4.png %})
+![Figure 3 - Lease details](Picture4.png)
 
 The Oracle Property Manager enables you to create the lease according to your business
 requirements. You can create a lease for the whole property, for a single floor,

@@ -72,14 +72,14 @@ Palo Alto image.
 2. Choose **Amazon Market Place**, and search for **Palo Alto**.
 3. Select **VM-Series Next Generation Firewall Bundle 2**.
 
-![]({% asset_path 2019-10-22-deploy-the-palo-alto-firewall-on-amazon-web-services/Picture1.png %})
+![](Picture1.png)
 
 #### Step 4: Create an instance
 
 1. Launch a new EC2 instance by clicking the **Launch Instance** radio button
    as shown in the following image:
 
-![]({% asset_path 2019-10-22-deploy-the-palo-alto-firewall-on-amazon-web-services/Picture2.png %})
+![](Picture2.png)
 
 <ol start=2>
     <li>To choose an Amazon Machine Image (AMI), go to AWS Marketplace. On the
@@ -87,14 +87,14 @@ Palo Alto image.
     Firewall Bundle 2</b>.</li>
     <li>Click <b>Select</b>.</li>
 </ol>
-![]({% asset_path 2019-10-22-deploy-the-palo-alto-firewall-on-amazon-web-services/Picture3.png %})
+![](Picture3.png)
 
 <ol start=4>
     <li>Highlight the instance type <b>M3 Extra Large</b>.</li>
     <li>Click <b>Next: Configure Instance Details</b>.</li>
 </ol>
 
-![]({% asset_path 2019-10-22-deploy-the-palo-alto-firewall-on-amazon-web-services/Picture4.png %})
+![](Picture4.png)
 
 <ol start=6>
     <li>Configure the instance details. Select <b>Management</b> for the subnet,
@@ -102,16 +102,16 @@ Palo Alto image.
     the following images:</li>
 </ol>
 
-![]({% asset_path 2019-10-22-deploy-the-palo-alto-firewall-on-amazon-web-services/Picture5.png %})
+![](Picture5.png)
 
-![]({% asset_path 2019-10-22-deploy-the-palo-alto-firewall-on-amazon-web-services/Picture6.png %})
+![](Picture6.png)
 
 <ol start=7>
     <li>Select <b>General Purpose SSD (Solid State Drive) (GP2) Volume type<\b>
     and click <b>Next: Add Tags</b>.</li>
 </ol>
 
-![]({% asset_path 2019-10-22-deploy-the-palo-alto-firewall-on-amazon-web-services/Picture7.png %})
+![](Picture7.png)
 
 <ol start=8>
     <li>Keep the default settings for <b>Add Tags</b> and click
@@ -119,28 +119,28 @@ Palo Alto image.
     and click <b>Review and Launch</b>.</li>
 </ol>
 
-![]({% asset_path 2019-10-22-deploy-the-palo-alto-firewall-on-amazon-web-services/Picture8.png %})
+![](Picture8.png)
 
-![]({% asset_path 2019-10-22-deploy-the-palo-alto-firewall-on-amazon-web-services/Picture9.png %})
+![](Picture9.png)
 
 <ol start=9>
     <li>Review all the details of the instance and click <b>Launch</b>.</li>
 </ol>
 
-![]({% asset_path 2019-10-22-deploy-the-palo-alto-firewall-on-amazon-web-services/Picture10.png %})
+![](Picture10.png)
 
 <ol start=10>
     <li>Select the key pair that you created previously and click <b>Launch Instances</b>.</li>
 </ol>
 
-![]({% asset_path 2019-10-22-deploy-the-palo-alto-firewall-on-amazon-web-services/Picture11.png %})
+![](Picture11.png)
 
 <ol start=11>
     <li>Go to <b>Services -> EC2 -> Instances</b> and validate that the new
     instance is running as shown in the following image:</li>
 </ol>
 
-![]({% asset_path 2019-10-22-deploy-the-palo-alto-firewall-on-amazon-web-services/Picture12.png %})
+![](Picture12.png)
 
 #### Configure the VPC
 
@@ -150,11 +150,11 @@ Palo Alto image.
    it from the Internet. Verify that the new associated Route Entry is listed
    under **Route Table**.
 
-![]({% asset_path 2019-10-22-deploy-the-palo-alto-firewall-on-amazon-web-services/Picture13.png %})
+![](Picture13.png)
 
-![]({% asset_path 2019-10-22-deploy-the-palo-alto-firewall-on-amazon-web-services/Picture14.png %})
+![](Picture14.png)
 
-![]({% asset_path 2019-10-22-deploy-the-palo-alto-firewall-on-amazon-web-services/Picture15.png %})
+![](Picture15.png)
 
 #### Assign an IP address to the instance
 
@@ -162,9 +162,9 @@ Palo Alto image.
 2. Go to **Network & Security** on left hand side, choose **Elastic IPs**, and
    click **Allocate new address**.
 
-![]({% asset_path 2019-10-22-deploy-the-palo-alto-firewall-on-amazon-web-services/Picture16.png %})
+![](Picture16.png)
 
-![]({% asset_path 2019-10-22-deploy-the-palo-alto-firewall-on-amazon-web-services/Picture17.png %})
+![](Picture17.png)
 
 <ol start=3>
     <li>Click <b>Action -> Associate Address -> Assign the running instance</b>.</li>
@@ -172,9 +172,9 @@ Palo Alto image.
     <li>Click <b>Associate</b>.</li>
 </ol>
 
-![]({% asset_path 2019-10-22-deploy-the-palo-alto-firewall-on-amazon-web-services/Picture18.png %})
+![](Picture18.png)
 
-![]({% asset_path 2019-10-22-deploy-the-palo-alto-firewall-on-amazon-web-services/Picture19.png %})
+![](Picture19.png)
 
 #### Test the configuration
 
@@ -185,11 +185,11 @@ browser (for example, https://<public_IP>).
 
 The following images provide some examples of this test:
 
-![]({% asset_path 2019-10-22-deploy-the-palo-alto-firewall-on-amazon-web-services/Picture20.png %})
+![](Picture20.png)
 
-![]({% asset_path 2019-10-22-deploy-the-palo-alto-firewall-on-amazon-web-services/Picture21.png %})
+![](Picture21.png)
 
-![]({% asset_path 2019-10-22-deploy-the-palo-alto-firewall-on-amazon-web-services/Picture22.png %})
+![](Picture22.png)
 
 #### Create a Palo Alto support account
 

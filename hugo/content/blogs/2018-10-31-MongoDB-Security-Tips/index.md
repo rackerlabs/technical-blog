@@ -45,7 +45,7 @@ authentication in MongoDB:
 
 The following image illustrates DB-level security:
 
-![]({% asset_path 2018-10-31-MongoDB-Security-Tips/Picture1.png %})
+![](Picture1.png)
 
 Image source: [https://www.slideshare.net](https://www.slideshare.net)
 
@@ -94,7 +94,7 @@ Add the following lines to `mongod.conf` to enable the replication keyfile:
 
 The following image illustrates keyfile authentication:
 
-![]({% asset_path 2018-10-31-MongoDB-Security-Tips/Picture2.png %})
+![](Picture2.png)
 
 Image source: [https://www.slideshare.net](https://www.slideshare.net)
 

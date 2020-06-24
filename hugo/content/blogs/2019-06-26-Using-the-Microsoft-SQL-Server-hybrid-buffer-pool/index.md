@@ -76,7 +76,7 @@ option can be used with NTFS only.
 
 The following image illustrates DAX:
 
-![]({% asset_path 2019-06-26-Using-the-Microsoft-SQL-Server-hybrid-buffer-pool/Picture1.png %})
+![](Picture1.png)
 
 *Source*: [https://docs.microsoft.com/en-us/windows-server/storage/storage-spaces/deploy-pmem](https://docs.microsoft.com/en-us/windows-server/storage/storage-spaces/deploy-pmem)
 

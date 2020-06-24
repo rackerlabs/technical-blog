@@ -24,7 +24,7 @@ is to turn to Salesforce’s stronger reporting platform, Einstein Analytics.
 
 <!--more-->
 
-![]({% asset_path 2019-11-01-einstein-analytics-or-classic-reporting-five-questions-to-ask/einstein-analytics.png %})
+![](einstein-analytics.png)
 
 While both Sales Cloud and Service Cloud have basic reporting tools built in,
 the main purpose of these platforms isn’t reporting. Einstein Analytics, by

@@ -37,7 +37,7 @@ redo log apply.
 
 The following image shows the incremental backup process:
 
-![]({% asset_path 2019-04-26-roll-standby-database-forward-with-rman/Picture1.png %})
+![](Picture1.png)
 
 All the changes between the SCN of the original image copy and the SCN of the
 incremental backup are applied to the image.

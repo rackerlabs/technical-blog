@@ -34,7 +34,7 @@ worldwide.
 
 The following image illustrates the S3 concept:
 
-![]({% asset_path 2018-10-04-backup-oracle-with-amazon-simple-storage-service/Picture1.png %})
+![](Picture1.png)
 
 ### Oracle Secure Backup cloud module
 
@@ -64,13 +64,13 @@ The first step in getting started with the OSB cloud module is to sign up for
 Amazon S3. You can do this by visiting the [Amazon S3 website](https://aws.amazon.com/s3 ),
 as shown in the following image:
 
-![]({% asset_path 2018-10-04-backup-oracle-with-amazon-simple-storage-service/Picture2.png %})
+![](Picture2.png)
 
 After registration, users get a pair of access identifiers called
 the **Access key ID** and the **Secret Access key**, as shown in the following
 image:
 
-![]({% asset_path 2018-10-04-backup-oracle-with-amazon-simple-storage-service/Picture3.png %})
+![](Picture3.png)
 
 To find your access key ID and secret access key:
  
@@ -205,7 +205,7 @@ created within Amazon S3.
 You can also verify the results of the backup from the AWS console as shown in
 the following image:
 
-![]({% asset_path 2018-10-04-backup-oracle-with-amazon-simple-storage-service/Picture4.png %})
+![](Picture4.png)
 
 ### Conclusion
 
@@ -220,27 +220,27 @@ running within the compute cloud.
   <tr>If you liked this blog, share it by using the following icons:</tr>
   <tr>
    <td>
-       <img src="{% asset_path line-tile.png %}" width=50 >
+       <img src="line-tile.png" width=50 >
     </td>
     <td>
       <a href="https://twitter.com/home?status=https%3A//developer.rackspace.com/blog/backup-oracle-with-amazon-simple-storage-service/">
-        <img src="{% asset_path shareT.png %}">
+        <img src="shareT.png">
       </a>
     </td>
     <td>
-       <img src="{% asset_path line-tile.png %}" width=50 >
+       <img src="line-tile.png" width=50 >
     </td>
     <td>
       <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//developer.rackspace.com/blog/backup-oracle-with-amazon-simple-storage-service/">
-        <img src="{% asset_path shareFB.png %}">
+        <img src="shareFB.png">
       </a>
     </td>
     <td>
-       <img src="{% asset_path line-tile.png %}" width=50 >
+       <img src="line-tile.png" width=50 >
     </td>
     <td>
       <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//developer.rackspace.com/blog/backup-oracle-with-amazon-simple-storage-service&summary=&source=">
-        <img src="{% asset_path shareL.png %}">
+        <img src="shareL.png">
       </a>
     </td>
   </tr>

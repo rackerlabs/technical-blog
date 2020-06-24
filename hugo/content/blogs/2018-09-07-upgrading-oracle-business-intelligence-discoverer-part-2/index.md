@@ -154,7 +154,7 @@ Query the Discoverer profile options looking for the following items:
 
 The following image shows these settings:
 
-![]({% asset_path 2018-09-07-upgrading-oracle-business-intelligence-discoverer-part-2/Picture1.png %})
+![](Picture1.png)
 
 ### Run the "Generate Business Views by Application" concurrent program
 
