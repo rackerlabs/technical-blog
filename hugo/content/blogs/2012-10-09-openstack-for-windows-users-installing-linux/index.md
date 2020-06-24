@@ -13,7 +13,7 @@ _This is a guest post by Duan van der Westhuizen. Duan works at Rackspace in Ent
 
 In this second post of my blog series about learning to deploy my own OpenStack private cloud, I tackle the installation of the operating system I will use to run OpenStack. I had to do quite a bit of groundwork to understand the basic installation and configurations to ensure I ended up with a running system. Below I document my steps, as well as outline the similarities with Windows Server and other Microsoft technologies.
 
-<!-- more -->
+<!--more-->
 
 ## Step 1: Find a server
 

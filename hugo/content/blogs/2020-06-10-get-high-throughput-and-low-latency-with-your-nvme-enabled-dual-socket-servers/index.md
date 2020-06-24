@@ -23,7 +23,7 @@ The need for access to high-speed, low-latency storage systems has become
 commonplace in today's server industry. Remember, only a few years ago, people
 considered SATA and SAS SSDs too expensive for everyday storage use.
 
-<!-- more -->
+<!--more-->
 
 Today, storage systems commonly consist of nothing but NAND-based products. I
 remember back in 2015 reading about multimillion-dollar storage systems that

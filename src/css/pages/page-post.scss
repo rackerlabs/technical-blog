@@ -1,15 +1,8 @@
-.single-post {
+.blog-list-wrapper {
   background: $color-white;
   min-height: 100vh;
   padding-bottom: 4rem;
   padding-top: 5rem;
-
-  & .container,
-  .post--related .container {
-    margin: 0 auto;
-    max-width: 700px;
-    padding: 0 2rem;
-  }
 
   .post--feature-image {
     margin-top: 0;
@@ -31,25 +24,23 @@
     }
   }
 
-  > .container:first-child .post--title {
+  >.container:first-child .post--title {
     margin-top: 3rem;
   }
 
-  .post--feature-image + .container > .post--title {
+  .post--feature-image+.container>.post--title {
     margin-top: 2rem;
   }
 
   @media screen and (min-width: 760px) {
-    > .post--feature-image:first-child {
+    >.post--feature-image:first-child {
       margin-top: 4rem;
     }
   }
 
   .post--title {
-    line-height: 1.3;
-
     @media screen and (min-width: 60em) {
-      font-size: 3.5rem;
+      font-size: 2.5rem;
     }
   }
 
@@ -62,7 +53,6 @@
   }
 
   .post--meta-label {
-    color: $color-copy;
     display: block;
     font-size: 0.6rem;
     font-weight: 500;
@@ -90,26 +80,18 @@
     a {
       font-weight: 600;
     }
-
-    &[data-category="General"] {
-      color: $color-brand;
-    }
-
-    &[data-category="Dev Ops"] {
-      color: #ffcf55;
-    }
-
-    &[data-category="Cloud servers"] {
-      color: #54defd;
-    }
   }
 
   /* Content styling */
 
   h1 {
     font-size: 2rem;
+    font-family: "titillium-regular",arial,sans-serif;
   }
-
+  h1, h2, h3 {
+    font-weight: 400;
+    font-style: normal;
+  }
   h2 {
     font-size: 1.5rem;
     margin-top: 2rem;
@@ -125,119 +107,26 @@
   }
 
   p {
-    color: $color-copy-dark;
     margin-top: 1rem;
     padding-bottom: 1rem;
   }
 
   a {
-    color: $color-brand;
     cursor: pointer;
     font-weight: 600;
     text-decoration: none;
-  }
-
-  blockquote {
-    font-style: italic;
-    margin: 1rem 0;
-    padding-left: 1rem;
-    position: relative;
-  }
-
-  blockquote::before {
-    background: $color-brand;
-    content: "";
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 2px;
   }
 
   img {
     max-width: 100%;
   }
 
-  p.tip {
-    background: $color-grey;
-    padding: 1rem 1rem 1rem 2rem;
-    position: relative;
-
-    &::before {
-      /* Set the circle size here */
-      $circle-size: 1.5rem;
-
-      background: $color-brand;
-      border-radius: calc($circle-size / 2);
-      color: $color-white;
-      content: "!";
-      font-weight: 600;
-      height: $circle-size;
-      left: -calc($circle-size / 2);
-      line-height: $circle-size;
-      position: absolute;
-      text-align: center;
-      top: 1rem;
-      width: $circle-size;
-      z-index: 5;
-    }
-
-    &::after {
-      background: $color-brand;
-      content: "";
-      height: 100%;
-      left: -0.1rem;
-      position: absolute;
-      top: 0;
-      width: 0.2rem;
-      z-index: 0;
-    }
-  }
-
-  /* Related Posts */
-  .post--related {
-    background: $color-white;
-    border: 1px solid $color-light-grey;
-    border-left-width: 0;
-    border-right-width: 0;
-    margin-top: 4rem;
-
-    .container {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      padding: 4rem 2rem 1rem;
-    }
-
-    .post--related-title {
-      display: block;
-      flex: 0 0 100%;
-      margin-bottom: 2rem;
-      margin-top: 0;
-    }
-
-
-    .post-date {
-      color: $color-medium-dark;
-      font-weight: 600;
-    }
-
-    .post-category {
-      font-weight: 600;
-      margin-left: 0.5rem;
-    }
-
-    .column {
-      flex: 0 0 100%;
-      padding: 0 0 0 2vw;
-
-      &:nth-child(2n) {
-        padding: 0 2vw 0 0;
-      }
-
-      @media screen and (min-width: 500px) {
-        flex: 0 0 50%;
-      }
+  #single-post {
+    flex: 0 0 60%;
+    padding: 0;
+  
+    @media screen and (min-width: 800px) {
+      padding: 0 0 0 4rem;
     }
   }
 }
@@ -287,30 +176,69 @@
 .blog-post {
   margin-bottom: 2rem;
   max-width: 600px;
+  border-bottom: solid 1px #e6e6e6;
+
   .post-title {
     color: #3498db;
     line-height: 1.25;
     margin-bottom: 0.5rem;
     margin-top: 0;
-    font-family: 'titillium-regular',arial,sans-serif;
+    font-family: 'titillium-regular', arial, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 2rem;
   }
+
   .post-meta {
-    font-size: 0.8rem;
+    font: inherit;
     margin-bottom: 0.5rem;
-    text-transform: uppercase;
   }
-  .post-avatar{
+
+  .post-avatar {
     float: left;
     height: 64px;
     margin-right: 10px;
     width: 64px;
+    display: block;
+    position: relative;
+
     img {
       display: block;
       height: 64px;
       width: 64px;
     }
+  }
+
+  .post-avatar::after {
+    content: 'RACKER';
+    font-size: 10px;
+    width: 100%;
+    background: rgba(235, 0, 0, .8);
+    color: #fff;
+    left: 0;
+    line-height: 1.5;
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+  }
+
+  .post-read-more {
+    margin: 2rem 0 2rem 0;
+
+    .read-more {
+      font-family: "open-sans-bold", arial, sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 100%;
+      text-transform: uppercase;
+    }
+  }
+
+  .blog-post-img {
+    margin: 0 0 1em 1em;
+    float: right;
+    height: auto;
+    max-width: 50%;
+    display: block;
   }
 }
