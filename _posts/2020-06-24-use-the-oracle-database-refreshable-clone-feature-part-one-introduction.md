@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Introduction to the Oracle refreshable clone feature"
+title: "Use the Oracle Database refreshable clone feature: Part One&mdash;Introduction"
 date: 2020-06-24 00:01
 comments: true
 author: Tejaskumar Patel
@@ -9,11 +9,11 @@ authorIsRacker: true
 categories:
     - Oracle
     - database
-metaTitle: "Introduction to the Oracle refreshable clone feature"
-metaDescription: "This blog describes the practical use of refreshable clones
+metaTitle: "Use the Oracle Database refreshable clone feature: Part One&mdash;Introduction"
+metaDescription: "This post describes the practical use of refreshable clones
 with manual and automatic switchover cases."
-ogTitle: "Introduction to the Oracle refreshable clone feature"
-ogDescription: "This blog describes the practical use of refreshable clones with
+ogTitle: "Use the Oracle Database refreshable clone feature: Part One&mdash;Introduction"
+ogDescription: "This post describes the practical use of refreshable clones with
 manual and automatic switchover cases."
 ---
 
@@ -28,7 +28,7 @@ or replicate pluggable databases (PDBs) in a multitenant environment.
 For production environments, use a snapshot carousel with the refreshable clone
 PDB feature to make database administration (DBA) activities easy, such as
 safeguarding against an unforeseen outage or troubleshooting logical corruption
-issues. This blog describes the practical use of refreshable clones with manual
+issues. This post describes the practical use of refreshable clones with manual
 and automatic switchover cases. You can use it with the snapshot carousel feature
 to identify and handle the following database health problems:
 
@@ -41,7 +41,7 @@ to identify and handle the following database health problems:
 This post is part one of a two-part blog post series. Read on to learn about the
 refreshable clone PDB, how it works, and when to use it.
 
-The second part of the series offers describes how to create, configure, maintain,
+The second part of the series describes how to create, configure, maintain,
 and drop a refreshable clone PDB.
 
 ### Cloning and snapshot questions
@@ -101,7 +101,7 @@ the pluggable database **PDB1** of container database **CDB1** to another
 container database **CDB2**. This action results in a hot-cloned version of
 **PDB1** named **PDB1\_REF\_CLONE**.
 
-![Figure 1]({% asset_path 2020-06-24-introduction-to-the-oracle-refreshable-clone-feature/Picture1.png %})
+![Figure 1]({% asset_path 2020-06-24-use-the-oracle-database-refreshable-clone-feature-part-one-introduction/Picture1.png %})
 
 **Figure 1**
 
@@ -141,11 +141,11 @@ Use the following statement to reverse the roles for source and clone PDBs:
 
 You can simplify this switchover process, as shown in the following figures:
 
-![Figure 2]({% asset_path 2020-06-24-introduction-to-the-oracle-refreshable-clone-feature/Picture2.png %})
+![Figure 2]({% asset_path 2020-06-24-use-the-oracle-database-refreshable-clone-feature-part-one-introduction/Picture2.png %})
 
 **Figure 2**
 
-![Figure 3]({% asset_path 2020-06-24-introduction-to-the-oracle-refreshable-clone-feature/Picture3.png %})
+![Figure 3]({% asset_path 2020-06-24-use-the-oracle-database-refreshable-clone-feature-part-one-introduction/Picture3.png %})
 
 **Figure 3**
 
@@ -215,6 +215,8 @@ switchover is a planned or an unplanned event. Keep in mind, you should consider
 the switchovers from the point of view of Recovery Time Objectives (RTOs, time
 to resume operations) and Recovery Point Objectives (RPOs, such as achieving
 minimal data loss).
+
+Part Two of the series demonstrates the refreshable clone feature.
 
 Use the Feedback tab to make any comments or ask questions. You can also
 [chat now](https://www.rackspace.com/#chat) to start the conversation.
