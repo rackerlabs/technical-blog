@@ -13,6 +13,7 @@ import Shuffle from "shufflejs"
 import Sticky from "./imports/sticky"
 import AjaxForm from "./imports/ajaxForm"
 import {setCodeTabs, initCodeTabs} from "./imports/code-tabs"
+import app from "./app"
 
 window.setCodeTabs = setCodeTabs
 /**

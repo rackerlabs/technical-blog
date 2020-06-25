@@ -1,5 +1,5 @@
 /* Config */
-$sidebar-width: 320px;
+$sidebar-width: 500px;
 
 .docs-container {
   display: block;
@@ -19,20 +19,86 @@ $sidebar-width: 320px;
   transition: transform 0.15s linear;
   width: 0;
   will-change: scroll-position;
+  display: flex;
 
-  h3 .button,
-  li a + .button {
-    margin-left: 0.5rem;
+  .blog-sidebar {
+    padding: 0 2rem;
+    border-left: 1px solid #ebebeb;
+
+    .recent-posts {
+      padding: 2rem 0;
+
+      h5 {
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+        font-size: 1.25rem;
+        color: #636363;
+      }
+
+      .tab-links {
+        margin-bottom: 20px;
+        background-color: #d6d6db;
+        display: flex;
+        justify-content: space-between;
+
+        a.active {
+          border-bottom-color: #3498db;
+          text-decoration: none;
+        }
+
+        a {
+          box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          display: inline-block;
+          vertical-align: top;
+          border-bottom: solid 4px transparent;
+          color: #474747;
+          font-size: 12px;
+          line-height: 36px;
+          text-align: center;
+          display: flex;
+          padding: 0 2rem;
+          width: 100%;
+        }
+      }
+
+      ol {
+        list-style-type: decimal;
+        padding: 0 20px 0 40px;
+        font-size: 13px;
+        margin: 0;
+        li {
+          list-style: decimal;
+        }
+      }
+    }
+
+    .categories {
+      border-top: solid 1px #e0e0e0;
+
+      h5 {
+        font-size: 1.25rem;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        text-transform: uppercase;
+        color: #636363;
+      }
+
+      ul {
+        font-size: 13px;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        li{
+          margin-bottom: .5em;
+        }
+      }
+    }
   }
 
-  a {
-    font-weight: inherit;
-    text-decoration: none;
-    transition: opacity 0.15s ease;
-
-    &:hover {
-      opacity: 0.6;
-    }
+  h3 .button,
+  li a+.button {
+    margin-left: 0.5rem;
   }
 
   @media screen and (min-width: 860px) {
@@ -44,48 +110,6 @@ $sidebar-width: 320px;
   }
 }
 
-.sidebar-inner {
-  background: $color-white;
-  font-size: 0.86rem;
-  height: 100%;
-  left: 0;
-  overflow: auto;
-  padding: 2rem 2rem 2rem 4rem;
-  position: relative;
-  width: 100%;
-  z-index: 10;
-
-  h2 {
-    margin-bottom: 2rem;
-  }
-
-  h3 {
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
-  }
-
-  ul {
-    color: $color-copy-dark;
-    margin-bottom: 2rem;
-  }
-
-  li {
-    line-height: 1.4;
-    margin-bottom: 0.5rem;
-
-    a {
-      color: $color-copy-dark;
-      font-weight: 400;
-      text-decoration: none;
-    }
-
-    &.active a,
-    & a.active {
-      color: $color-brand;
-      font-weight: 600;
-    }
-  }
-}
 
 .docs-nav-items .table-of-contents {
   border-left: 2px solid $color-grey;
