@@ -28,6 +28,8 @@
   },
   "dependencies": {
     "algoliasearch": "^3.35.1",
+    "angular": "^1.8.0",
+    "angular-sanitize": "^1.8.0",
     "atomic-algolia": "^0.3.17",
     "autoprefixer": "^9.8.0",
     "axios": "^0.19.2",

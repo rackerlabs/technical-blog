@@ -131,7 +131,6 @@
 
   #single-post {
     flex: 0 0 60%;
-    padding: 0;
     h3 {
       font-style: normal;
       font-weight: 400;
@@ -147,7 +146,7 @@
     }
 
     @media screen and (min-width: 800px) {
-      padding: 0 0 0 4rem;
+      padding: 4rem 0 0 4rem;
     }
   }
 }
