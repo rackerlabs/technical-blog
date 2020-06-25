@@ -52,6 +52,10 @@
     margin-top: 1rem;
   }
 
+  .post-line {
+    border-bottom: solid 1px #e6e6e6;
+  }
+
   .post--meta-label {
     display: block;
     font-size: 0.6rem;
@@ -86,12 +90,16 @@
 
   h1 {
     font-size: 2rem;
-    font-family: "titillium-regular",arial,sans-serif;
+    font-family: "titillium-regular", arial, sans-serif;
   }
-  h1, h2, h3 {
+
+  h1,
+  h2,
+  h3 {
     font-weight: 400;
     font-style: normal;
   }
+
   h2 {
     font-size: 1.5rem;
     margin-top: 2rem;
@@ -113,7 +121,7 @@
 
   a {
     cursor: pointer;
-    font-weight: 600;
+    font-weight: 500;
     text-decoration: none;
   }
 
@@ -124,7 +132,20 @@
   #single-post {
     flex: 0 0 60%;
     padding: 0;
-  
+    h3 {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.5rem;
+      font-family: 'titillium-bold',arial,sans-serif;
+    }
+    h4 {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      font-family: 'titillium-bold',arial,sans-serif;
+    }
+
     @media screen and (min-width: 800px) {
       padding: 0 0 0 4rem;
     }
@@ -194,33 +215,6 @@
     margin-bottom: 0.5rem;
   }
 
-  .post-avatar {
-    float: left;
-    height: 64px;
-    margin-right: 10px;
-    width: 64px;
-    display: block;
-    position: relative;
-
-    img {
-      display: block;
-      height: 64px;
-      width: 64px;
-    }
-  }
-
-  .post-avatar::after {
-    content: 'RACKER';
-    font-size: 10px;
-    width: 100%;
-    background: rgba(235, 0, 0, .8);
-    color: #fff;
-    left: 0;
-    line-height: 1.5;
-    position: absolute;
-    text-align: center;
-    bottom: 0;
-  }
 
   .post-read-more {
     margin: 2rem 0 2rem 0;
@@ -240,5 +234,57 @@
     height: auto;
     max-width: 50%;
     display: block;
+  }
+}
+
+.post-avatar {
+  float: left;
+  height: 64px;
+  margin-right: 10px;
+  width: 64px;
+  display: block;
+  position: relative;
+
+  img {
+    display: block;
+    height: 64px;
+    width: 64px;
+  }
+}
+
+.post-avatar::after {
+  content: 'RACKER';
+  font-size: 10px;
+  width: 100%;
+  background: rgba(235, 0, 0, .8);
+  color: #fff;
+  left: 0;
+  line-height: 1.5;
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+}
+
+.highlight {
+  background: $color-black;
+  color: $color-light-grey;
+  padding: 1em;
+  margin-bottom: 3em;
+  line-height: 1.1em;
+  font-size: 1em;
+  border: none;
+  border-radius: 3px;
+  font-family: 'source-code-regular', 'Monaco', 'Courier New', monospace;
+  font-style: normal;
+  font-weight: 400;
+
+  pre {
+    background-color: inherit;
+    border: none;
+    color: inherit;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: .5em;
   }
 }

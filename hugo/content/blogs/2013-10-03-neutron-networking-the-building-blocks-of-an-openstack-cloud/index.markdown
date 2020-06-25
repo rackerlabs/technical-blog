@@ -57,7 +57,7 @@ Both network types can be used to provide connectivity to and from instances. Ho
 
 ***Tenant networks*** are networks created by users within tenants, or groups of users. By default, networks created with tenants are not shared among other tenants. Useful network types in this category are ***vlan*** (802.1q tagged) and ***gre*** (unique id). With the use of the L3 agent and Neutron routers, it is possible to route between GRE-based tenant networks. Without a Neutron router, these networks are effectively isolated from each other (and everything else, for that matter).
 
-![Sample Neutron Physical Network](http://i.imgur.com/JfIkzIS.png "Sample Neutron Physical Network")
+![Sample Neutron Physical Network](https://i.imgur.com/JfIkzIS.png "Sample Neutron Physical Network")
 
 _This diagram represents a simple Neutron networking configuration that uses a tagged provider network for connectivity to the Internet, as well as two isolated GRE-based tenant networks for private communication between instances._
 

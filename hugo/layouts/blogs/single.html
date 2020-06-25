@@ -25,20 +25,14 @@
               <a href="{{ relURL "/categories/"}}{{ urlize $value }}" class="post--category"
                 data-category="{{ $value | lower }}">
                 {{ $value | humanize }}
-              </a>{{ if not (eq $len ($index | add 1)) }}, {{- end -}}
+              </a>{{ if not (eq $len ($index | add 1)) }} / {{- end -}}
               {{- end -}}</span>
             {{- end -}}
           </div>
         </div>
-        <hr />
-        {{- if not .Params.hideAbout -}}
-        <div class="post--about">
-          {{- range $.Site.Data.authors.authors -}}
-          <h2>About {{ .fullName }}</h2>
-          {{ markdownify .bio }}
-         {{- end -}}
-        </div>
-        {{- end -}}
+        <hr class="post-line"/>
+          {{ .Content }}
+          {{- partial "components/share-bar" . -}}
         </section>
         <section>
           <div></div>

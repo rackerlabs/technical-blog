@@ -24,6 +24,7 @@
     transition: opacity 0.15s ease;
     vertical-align: top;
     will-change: opacity;
+    color: $color-white;
 
     &:hover {
       opacity: 0.6;

@@ -15,6 +15,12 @@ body {
   color: $color-dark;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  word-wrap: break-word;
+  word-break: break-word;
+  font-family: 'open-sans-regular' ,arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  font-style: normal;
 }
 
 html.docs,
