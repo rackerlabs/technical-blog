@@ -14,6 +14,8 @@ ogTitle: "How the Salesforces 2018 acquisitions and partnerships change how you 
 ogDescription: "Your team might rely on the Salesforce&reg; platform every day for enhanced workflow and productivity, but how knowledgeable are you when it comes to the news and updates about the company itself? In 2018, Salesforce set its sights on acquisitions and improvements to expand its platform and further grow an already booming brand."
 ---
 
+*This post was originally published on the RelationEdge blog.*
+
 Your team might rely on the Salesforce&reg; platform every day for enhanced
 workflow and productivity, but how knowledgeable are you when it comes to the
 news and updates about the company itself? In 2018, Salesforce set its sights

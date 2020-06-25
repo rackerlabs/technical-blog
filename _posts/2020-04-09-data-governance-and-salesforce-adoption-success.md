@@ -18,6 +18,8 @@ Salesforce&reg; implementation or is actively using Salesforce, you must have
 clean and accurate data."
 ---
 
+*This post was originally published on the RelationEdge blog.*
+
 Data is a business's intellectual property. Whether your company is pursuing
 Salesforce&reg; implementation or is actively using Salesforce, you must have
 clean and accurate data.
@@ -25,7 +27,6 @@ clean and accurate data.
 <!-- more -->
 
 ![]({% asset_path 2020-04-09-data-governance-and-salesforce-adoption-success/Picture1.png %})
-
 
 Having bad data can lead to failed implementations or costly resources to fix
 bad data. When you don't have the right information, you can end up with

@@ -2,6 +2,15 @@ Abhinav, Kumar
 authorAvatar: n/a
 bio: n/a
 
+Adan, Edwin
+authorAvatar: n/a
+bio: "Edwin Adan is a Senior Network Security Engineer with over 10 years of
+experience helping businesses achieve resilient and secure IP communications
+between their systems, data, people, and customers. Certified across multiple
+vendor technologies and always one to take pride in his work, Edwin continues
+to upskill and contribute to the hybrid and multi-cloud journeys of today's
+thriving organizations."
+
 Ahmed, Ilham
 authorAvatar: ''
 bio: n/a
@@ -20,6 +29,21 @@ support, production database administration, database migration, design and
 architecture for several business areas. He has vast experience interacting with
 national and international clients from various business areas and a good
 understanding of requirement analysis and database technology implementation."
+
+Bajpai, Ajay
+authorAvatar: 'https://s.gravatar.com/avatar/d2fdad3daba2885b34efce74a90bb1b1'
+bio: "I am a finance professional&mdash;Chartered Accountant (Equivalent to CPA)
+with 19 years of work experience managing a diverse team to achieve finance
+business process service delivery and migration, ERP, financial system
+implementation, customer management, development and delivery of strategic
+finance and technology investment roadmaps."
+
+Ballard, Charlie
+authorAvatar: 'https://s.gravatar.com/avatar/9ded7b3f5e28bcd3d61292b06475a631'
+bio: "Charlie is a *Certified Mulesoft Integration Architect* and an 18-times
+*Certified Salesforce Architect*. He has worked as a Salesforce and Mulesoft end
+user, administrator, developer, consultant, and architect since 2011 and has
+worked with organizations in a variety of industries across the globe."
 
 Batham, Bhupendra
 authorAvatar: 'https://s.gravatar.com/avatar/e64fc7787bc24eac1a8c969c4eceda44'
@@ -78,6 +102,12 @@ bio: "Michiel Brinkman is a Solutions Architect working for Rackspace from
 Amsterdam, The Netherlands. Multi-cloud certified with a strong engineering
 background."
 
+Bose, Bhaskar
+authorAvatar: 'https://s.gravatar.com/avatar/c2846c487f5d07873a3ba9977ddb5f5b'
+bio: "I'm passionate about the latest in tech and everything digital. I love
+music, reading, cooking, living in interesting times (aren't we all?), and
+learning new skills."
+
 Bryden, Tony
 authorAvatar: 'https://gravatar.com/avatar/21c63797cd8d01de8db2bd0512f8e6d1'
 bio: "Tony Bryden is a nine-year Racker and currently leads the vision behind
@@ -104,7 +134,8 @@ exploring new technology."
 
 Colbert, Charlotte
 authorAvatar: ''
-bio: n/a
+bio: "I am a 13+year Racker and am currently a Product Manager V for the RAS
+Digital experience portfolio."
 
 Cortez, Teresa
 authorAvatar: 'https://secure.gravatar.com/avatar/889f88c8dacf485d4c00f7c6fcfd51f8'
@@ -258,6 +289,19 @@ bio: n/a
 Heywood, Celia
 authorAvatar: 'http://0.gravatar.com/avatar/76b6d0b3a7daec2a8e3e25f17ff7ead7'
 bio: n/a
+
+Holloway, Keiran
+authorAvatar: 'https://s.gravatar.com/avatar/02d9e9c7b2e66ab7f451198e22374be1'
+bio: "Keiran Holloway is a Senior Lead Infrastructure Engineer focusing on Amazon
+Web Services and has been with Rackspace for 6 years. His primary focus is
+ensuring that all AWS solutions are designed and implemented in a way which are
+both fit for purpose but also closely aligned with key business outcomes. Keiran
+is responsible for working with some of the largest enterprise clients within
+the EMEA region and brings almost 20 years of hosting and infrastructure experience.
+Throughout this extensive past, Keiran built out a strong understanding of
+best-of-breed cloud practices, thought leadership, and in-depth domain knowledge
+across various technology platforms. Find out more at LinkedIn:
+[https://www.linkedin.com/in/keiran-holloway](https://www.linkedin.com/in/keiran-holloway).
 
 Hornbeck, Ash
 authorAvatar: https://www.gravatar.com/avatar/f96915d3f29e5623f9a9ff8c7cb3148f'
@@ -548,26 +592,26 @@ bio: n/a
 
 Winfrey, Lorenzo
 authorAvatar: 'https://s.gravatar.com/avatar/4946b45863e87d1a876eeb2873af2593'
-bio: "As Product Manager for Rackspace’s Government Solutions (RGS), Lorenzo D.
-Winfrey is responsible for multiple areas including product vision and strategy,
+bio: "As Product Manager for the Rackspace Government Solutions (RGS), Lorenzo D.
+Winfrey is responsible for multiple areas, including product vision and strategy,
 roadmap development, and branding for the RGS portfolio. Lorenzo’s leadership
 objective is to ensure all our solutions have a customer focus and are built
-to the highest quality while aggressively pursuing integration of new value added
-technology. Prior to joining Rackspace in April 2019, Lorenzo was Chief of
-Architecture and Standards for the Defense Intelligence Agency (DIA) where he
+to the highest quality, while aggressively pursuing integration of new value added
+technology. Before joining Rackspace in April 2019, Lorenzo was Chief of
+Architecture and Standards for the Defense Intelligence Agency (DIA), where he
 managed a portfolio of over $50 million in annual operating budget. Lorenzo’s
 extensive career in information technology includes leading DIA’s AWS Cloud
-Broker Team, managing the operations of the Microsoft System Center Configuration
+Broker Team, managing the operations of the Microsoft&reg; System Center Configuration
 Manager enterprise solution, and pioneering the development and deployment of
-the agency’s first cloud native, web based application to track near real time
-cloud spend, utilization and schedule. While serving at DIA, Lorenzo was awarded
+the agency’s first cloud native, web-based application to track near real-time
+cloud spend, utilization, and schedule. While serving at DIA, Lorenzo was awarded
 the Award for Exceptional Civilian Service, the agency's highest civilian award,
-which recognizes excellence, initiative and outstanding contributions over a
+which recognizes excellence, initiative, and outstanding contributions over a
 period of several years. Lorenzo brings to Rackspace a compelling combination
 of technical expertise and strategic leadership experience. He firmly believes
 that leadership is a discipline that should be studied and practiced. Lorenzo
 has become known for sharing his reading lists with all who will listen. He
-enjoys creating content, reading and the occasional video game. Hailing from
+enjoys creating content, reading, and the occasional video game. Hailing from
 Augusta, Georgia, Lorenzo now lives in Waldorf, Maryland with his family. He
 holds a Bachelor’s of Science from Claflin University. Lorenzo is based in the
 company’s Reston, Virginia office."

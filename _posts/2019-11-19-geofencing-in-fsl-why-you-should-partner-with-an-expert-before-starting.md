@@ -15,6 +15,8 @@ ogDescription: "This article reviews geofencing or geolocation&mdash;a capabilit
 canonical: https://blog.rackspace.com/geofencing-in-fsl-why-you-should-partner-with-an-expert-before-starting/
 ---
 
+*This post was originally published on the RelationEdge blog.*
+
 Salesforce&reg; Field Service Lightning (FSL) is an excellent choice if your
 company relies on a mobilized workforce to fulfill customer needs. FSL is a
 platform that helps to optimize your staff productivity and ensure your customers

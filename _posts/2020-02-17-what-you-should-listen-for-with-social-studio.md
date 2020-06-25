@@ -14,6 +14,8 @@ ogTitle: "What you should listen for with Social Studio"
 ogDescription: "You can't respond to people if you haven't listened to what they have to say first. Enter Social Studio."
 ---
 
+*This post was originally published on the RelationEdge blog.*
+
 With all the digital channels of communication out there, you probably have
 your work cut out, trying to connect with your entire target market online.
 It can be even more challenging to engage with your audience if you don't know

@@ -11,7 +11,7 @@ bio: "Karisa is an experienced Cloud Architect with a demonstrated history of
 working in the information technology and services industry. She is skilled in
 working with a variety of verticals including non-profit organizations, higher
 education, retail, and HLS as well as providing technical evaluations, program
-execution, Customer Relationship Management (CRM), event management, and 
+execution, Customer Relationship Management (CRM), event management, and
 marketing/technology.
 Karisa is passionate about cloud technology and marketing and about combining
 these to create unique solutions for clients."
@@ -24,6 +24,8 @@ ogTitle: "Which departments should be involved in setting up Marketing Cloud and
 ogDescription: "This blog explains which departments you should involve
 in your Marketing Cloud implementation to be successful."
 ---
+
+*This post was originally published on the RelationEdge blog.*
 
 It's easy to get wrapped up in the details and overlook the bigger picture when you’re implementing a new technology.
 Especially when you're implementing a wide-reaching marketing automation platform like Salesforce

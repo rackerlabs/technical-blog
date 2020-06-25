@@ -20,6 +20,8 @@ ogDescription: "."
 canonical: https://blog.rackspace.com/6-best-practices-for-managing-and-cleaning-your-salesforce-data/
 ---
 
+*This post was originally published on the RelationEdge blog.*
+
 It’s no small task setting up Salesforce&reg;, particularly when it comes to
 migrating, cleaning, and maintaining data. Which data do you need to migrate,
 and which should you scrub? How can your company decide?

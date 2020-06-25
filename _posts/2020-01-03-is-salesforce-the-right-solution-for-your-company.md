@@ -16,6 +16,8 @@ ogDescription: "You should consider four questions to decide if Salesforce is th
 canonical: https://blog.rackspace.com/salesforce-right-solution-for-your-company-answer-these-questions
 ---
 
+*This post was originally published on the RelationEdge blog.*
+
 You should consider four questions to decide if Salesforce is the right solution
 for your company.
 

@@ -16,6 +16,8 @@ ogDescription: "Use Trailhead courses to learn Saleforce in a fun and engaging w
 canonical: https://blog.rackspace.com/trailhead-why-do-we-love-it-and-which-are-our-favorite-courses/
 ---
 
+*This post was originally published on the RelationEdge blog.*
+
 The Trailhead&reg; training platform offers courses for everyone, from IT
 architects and engineers to marketers, to learn Salesforce&reg; in a fun and
 engaging way. In fact, it’s so engaging that about 200,000 people used it to

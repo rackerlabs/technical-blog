@@ -16,6 +16,8 @@ ogDescription: "This post covers five of the most rampant quoting process issues
 canonical: https://blog.rackspace.com/5-common-quoting-process-issues-and-how-to-solve-them-with-cpq/
 ---
 
+*This post was originally published on the RelationEdge blog.*
+
 Beyond wasting time and causing frustration to both your staff and customers,
 issues in your company’s quoting process can do real damage to your bottom line.
 In an ideal world, there would be a smooth and seamless turnaround between a

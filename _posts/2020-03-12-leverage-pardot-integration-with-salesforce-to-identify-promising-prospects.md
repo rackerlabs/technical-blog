@@ -16,6 +16,8 @@ ogDescription: "Marketing automation systems such as Pardot form an essential el
 productivity of marketing and sales teams."
 ---
 
+*This post was originally published on the RelationEdge blog.*
+
 Marketing automation systems such as Pardot form an essential element for the
 productivity of marketing and sales teams. Pardot is a business-to-business (B2B) marketing
 automation platform that Salesforce&reg; offers to help sales and marketing teams

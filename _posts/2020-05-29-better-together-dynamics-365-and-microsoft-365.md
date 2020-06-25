@@ -34,8 +34,9 @@ as well as professional services for the Dynamics 365 Sales application.
 
 <!-- more -->
 
-We are happy to announce we have expanded our services to include Dynamics 365
-Business Central, as well as the Dynamics 365 services and marketing applications.
+We are happy to announce we have expanded our services across the Dynamics 365
+customer relationship management applications and to include Dynamics 365 Business
+Central in the North America and the Europe, Middle East, and Africa (EMEA) regions.
 
 Why is this such an exciting announcement? Not only is it easier for our customers
 to have one partner they can work with across their Microsoft needs (Microsoft 365&reg;,
