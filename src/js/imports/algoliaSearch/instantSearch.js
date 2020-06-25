@@ -1,6 +1,7 @@
 import empty from "./templates/instantsearch/empty.html"
 import hit from "./templates/instantsearch/hit.html"
 import hitWrapper from "./templates/instantsearch/hitWrapper.html"
+// eslint-disable-next-line import/no-unresolved
 import instantsearch from "instantsearch.js"
 import loadMore from "./templates/instantsearch/loadMore.html"
 import Mustache from "mustache"
@@ -25,8 +26,8 @@ export default class InstantSearch {
       indexName: indexName,
       urlSync: true,
       searchParameters: {
-        hitsPerPage: 10
-      }
+        hitsPerPage: 10,
+      },
     }
 
     const customInfiniteHits = instantsearch.connectors.connectInfiniteHits(
@@ -38,7 +39,7 @@ export default class InstantSearch {
     this.defaultWidgets = {
       hits: customInfiniteHits({
         container: ".section-search-results",
-        escapeHits: true
+        escapeHits: true,
       }),
       sections: instantsearch.widgets.refinementList({
         container: ".search-results--filters",
@@ -46,8 +47,8 @@ export default class InstantSearch {
         operator: "or",
         limit: 10,
         templates: {
-          header: "Sections"
-        }
+          header: "Sections",
+        },
       }),
       stats: instantsearch.widgets.stats({
         container: "#stats",
@@ -57,9 +58,9 @@ export default class InstantSearch {
           return data
         },
         templates: {
-          body: stats
-        }
-      })
+          body: stats,
+        },
+      }),
     }
 
     if (hasSearch) {
@@ -68,7 +69,7 @@ export default class InstantSearch {
         wrapInput: false,
         magnifier: false,
         reset: false,
-        poweredBy: false
+        poweredBy: false,
       })
     }
 
@@ -107,9 +108,9 @@ export default class InstantSearch {
       if (options.hits.length < 1) return Mustache.render(empty, {query: query})
 
       const hits = options.hits.map((h) => {
-        h["FormatDate"] = function() {
-          return function(date, render) {
-            const calcTime = function(d, offset) {
+        h["FormatDate"] = function () {
+          return function (date, render) {
+            const calcTime = function (d, offset) {
               var utc = d.getTime() + d.getTimezoneOffset() * 60000
               return new Date(utc + 3600000 * offset)
             }
@@ -131,7 +132,7 @@ export default class InstantSearch {
               "September",
               "October",
               "November",
-              "December"
+              "December",
             ]
             const month = months[dt.getMonth()]
             return `${month} ${day}, ${year}`
