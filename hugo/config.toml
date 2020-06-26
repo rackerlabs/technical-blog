@@ -167,7 +167,7 @@ notAlternative = true
 home = ["HTML", "RSS", "OpenSearch", "Algolia", "Redirects"]
 [params]
 dateformat = "January 2, 2006"
-description = "Headless CMS and static site generator for Rackspace documentation"
+description = "Rackspace Developer documentation using static site generator and headless CMS"
 ghrepo = "https://github.com/rackerlabs/technical-blog"
 ghrepo_edit = "https://github.com/rackerlabs/technical-blog/edit/master/hugo/content/"
 ghrepo_new = "https://github.com/rackerlabs/technical-blog/issues/new"
