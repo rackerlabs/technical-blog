@@ -34,9 +34,10 @@
   }
 }
 
-.section-blogs-list {
+.section-blog-list {
   flex: 0 0 60%;
   padding: 0;
+  margin-top: 4rem;
 
   @media screen and (min-width: 800px) {
     padding: 0 0 0 4rem;
