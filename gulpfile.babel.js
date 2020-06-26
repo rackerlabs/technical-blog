@@ -1,4 +1,5 @@
-import algoliasearch from "algoliasearch"
+/* eslint-disable no-undef */
+/* eslint-disable no-console */
 import atomicalgolia from "atomic-algolia"
 import BrowserSync from "browser-sync"
 import browserSyncConfig from "./.browsersyncrc.js"
@@ -6,16 +7,14 @@ import chalk from "chalk"
 import debounce from "gulp-debounce"
 import del from "del"
 import dotenv from "dotenv"
-import fs from "fs"
 import gulp from "gulp"
 import GulpConfig from "./gulp.config.js"
 import imagemin from "gulp-imagemin"
 import named from "vinyl-named"
 import newer from "gulp-newer"
-import {basename, dirname, relative, resolve} from "path"
+import {basename, dirname} from "path"
 import postcss from "gulp-postcss"
 import rename from "gulp-rename"
-import runsequence from "run-sequence"
 import {spawn} from "child_process"
 import sprite from "gulp-svg-sprite"
 import sourcemaps from "gulp-sourcemaps"
@@ -48,7 +47,7 @@ gulp.task("generator", (cb) => build(cb))
  * Compiles the production-ready CSS to project folder
  * and streams it if its a production server environment
  */
-gulp.task("styles:production", (cb) => {
+gulp.task("styles:production", () => {
   const task = gulp
     .src(gulpConfig.styles.src)
     .pipe(debounce({wait: 1000}))
@@ -107,7 +106,7 @@ gulp.task("styles:development", (cb) => {
  * Compiles the production-ready JS to project folder
  * and streams it if its a production server environment
  */
-gulp.task("scripts:production", (cb) => {
+gulp.task("scripts:production", () => {
   const task = gulp
     .src(gulpConfig.scripts.src)
     .pipe(debounce({wait: 1000}))
@@ -243,7 +242,7 @@ function build(cb) {
     cb("Build failed")
   })
 
-  generator.on("close", (code) => {
+  generator.on("close", () => {
     browserSync.reload()
     cb()
   })

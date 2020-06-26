@@ -23,7 +23,7 @@ window.setCodeTabs = setCodeTabs
 contentLoaded().then(() => {
   const isHome = document.body.classList.contains("home")
   const isDocs = document.body.classList.contains("section-docs")
-  const isBlogs = document.body.classList.contains("section-blogs")
+  const isBlog = document.body.classList.contains("section-blog")
 
   /**
    * Enable navbar logic
@@ -46,12 +46,12 @@ contentLoaded().then(() => {
         process.env.ALGOLIA_SEARCH_KEY,
         "docs"
       )
-    } else if (isBlogs) {
-      console.log(isBlogs)
+    } else if (isBlog) {
+      console.log(isBlog)
       new Search(
         process.env.ALGOLIA_APP_ID,
         process.env.ALGOLIA_SEARCH_KEY,
-        "blogs"
+        "blog"
       )
     }
   } catch (err) {

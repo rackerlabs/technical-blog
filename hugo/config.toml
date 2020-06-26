@@ -65,7 +65,7 @@ xhtml = false
 [[menu.footer]]
     name = "Technical Blog"
     parent = "Blogs"
-    url = "/"
+    url = "/blog"
     weight = 5
 [[menu.footer]]
     name = "Rackspace Blog"
@@ -117,7 +117,7 @@ xhtml = false
     [[menu.main]]
         identifier = "technical-blog"
         name ="Technical Blog"
-        url ="/blogs"
+        url ="/blog"
         weight = 1
         parent = "blogs"
     [[menu.main]]
