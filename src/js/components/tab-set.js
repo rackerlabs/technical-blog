@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /* eslint-disable eqeqeq */
 var angular = require("angular")
 var $ = require("jquery")
@@ -70,6 +71,7 @@ angular.module(moduleName, []).directive("tabSet", [
 
           $element.on("click", "[data-tab-link]", function (e) {
             e.preventDefault()
+            console.log("click")
 
             $scope.$apply(
               function () {
