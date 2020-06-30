@@ -17,7 +17,7 @@
         .tools-promos {
             margin-top: 60px;
             display: block;
-            width: calc(100% + 20px);
+            width: 100%;
             margin-left: -20px;
             overflow: hidden;
 
@@ -28,7 +28,7 @@
                 margin-right: -.26rem;
                 margin-left: 20px;
                 vertical-align: top;
-                width: calc(33.33333333% - 20px);
+                width: 33%;
             }
         }
 
@@ -43,6 +43,9 @@
 
             .card-subtitle:before {
                 background: #efc75e;
+            }
+            .card-action {
+                color: #efc75e;
             }
         }
 

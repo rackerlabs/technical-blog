@@ -1,23 +1,12 @@
-{{- if and .headline .textline -}}
+
 <section class="hero">
   <div class="hero--content">
-
     <div class="container">
-      <!-- <div class="hero--text-block">
-        <h1 class="hero--title">{{ markdownify .headline }}</h1>
-        <div class="hero--sub">{{ markdownify .textline }}</div>
-        <div class="hero-cta">
-          {{- range .ctas -}}
-          <a href="{{ .permalink }}" class="button big {{ if .primary }}black{{ end }}"
-            data-proofer-ignore>{{ .textline }}</a>
-          {{- end -}}
-        </div>
-      </div> -->
       <div class="hero-header-headline">
         <div class="hero-header-headline-container">
           <h2>
-            Spin Up <span data-headline-typer="['OnMetal Servers', 'Containers', 'MongoDB', 'ElasticSearch']"
-              class="ng-isolate-scope"><span class="word">Containers</span></span> Easier with&nbsp;Rackspace
+            Spin Up <span class="txt-rotate" data-period="2000"
+            data-rotate='[ "OnMetal Servers", "Containers", "MongoDB", "ElasticSearch"]'></span> Easier with&nbsp;Rackspace
           </h2>
           <br>
           <p class="tagline">From innovative products to a full suite of reliable cloud products, Rackspace has the
@@ -29,6 +18,4 @@
       </div>
     </div>
   </div>
-
 </section>
-{{- end -}}

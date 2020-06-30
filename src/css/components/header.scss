@@ -2,7 +2,7 @@ $header-height: 5rem;
 
 .header {
   align-items: center;
-  background-color: #000000;
+  background-color: $color-black;
   border-bottom: 1px solid $color-grey;
   display: flex;
   font-size: 14px;
@@ -19,13 +19,13 @@ $header-height: 5rem;
     overflow: hidden;
     transition: all 0.15s linear;
     width: 140px;
-    background-color: #eb0000;
+    background-color: $color-red;
     margin: 1rem;
     padding: 0.25rem;
 
     .logo {
       backface-visibility: hidden;
-      background-image: url("/img/Rackspace_Logo_wt.svg");
+      background-image: url("/img/Rackspace_Technology_Logo_RGB_WHT.svg");
       background-position: left center;
       background-repeat: no-repeat;
       background-size: 100% 100%;
@@ -44,7 +44,7 @@ $header-height: 5rem;
       width: 1.5rem;
 
       .logo {
-        background-image: url("/img/Rackspace_Logo_wt.svg");
+        background-image: url("/img/Rackspace_Technology_Logo_RGB_WHT.svg");
       }
     }
   }
@@ -79,19 +79,19 @@ $header-height: 5rem;
 }
 
 .header.dark {
-  background-color: $color-dark;
+  background-color: $color-black;
   border-bottom: 1px solid $color-dark;
   color: $color-white;
 
   .logo {
-    background-image: url("/img/Rackspace_Logo_wt.svg");
+    background-image: url("/img/Rackspace_Technology_Logo_RGB_WHT.svg");
   }
 
   .nav {
     color: $color-white;
 
     &.expanded {
-      color: $color-dark;
+      color: $color-black;
     }
   }
 
@@ -101,7 +101,7 @@ $header-height: 5rem;
 
   @media screen and (max-width: 700px) {
     .logo {
-      background-image: url("/img/Rackspace_Logo_wt.svg");
+      background-image: url("/img/Rackspace_Technology_Logo_RGB_WHT.svg");
     }
   }
 }
@@ -176,6 +176,7 @@ $header-height: 5rem;
 
       .mini-nav--logo {
         display: block;
+        background-color: $color-red;
       }
     }
 
@@ -206,14 +207,13 @@ $header-height: 5rem;
 }
 
 .nav {
-  color: $color-dark;
   display: none;
   position: relative;
   transition: all 0.15s linear;
   white-space: nowrap;
 
   &.expanded {
-    background: $color-white;
+    background: $color-black;
     border-bottom: 1px solid $color-grey;
     display: flex;
     height: auto;
@@ -238,6 +238,7 @@ $header-height: 5rem;
 
     .mini-nav--logo {
       display: block;
+      background-color: $color-red;
     }
 
     @media screen and (min-width: 960px) {
@@ -262,22 +263,22 @@ $header-height: 5rem;
     }
 
     .nav-item {
-      color: #ffffff;
+      color: $color-white;
       font-weight: 500;
       text-decoration: none;
       transition: color 0.15s ease;
 
       &:hover {
-        color: #ffffff;
+        color: $color-white;
       }
 
       &.active {
-        color: #ffffff;
+        color: $color-white;
       }
     }
 
     a {
-      color: #fff;
+      color: $color-white;
       font-size: 14px;
       font-weight: 400;
       font-family: "open-sans-bold", Arial, sans-serif;
@@ -285,7 +286,7 @@ $header-height: 5rem;
 
       &:hover,
       &.active {
-        background-color: #474747;
+        background-color: $color-black;
       }
 
       &.active {
@@ -301,6 +302,7 @@ $header-height: 5rem;
   display: block;
   position: relative;
   z-index: 40;
+  margin: 0 0 0 20rem;
 
   img {
     display: block;
@@ -332,7 +334,7 @@ $header-height: 5rem;
 
 .mini-nav--logo {
   backface-visibility: hidden;
-  background-image: url("/img/Rackspace_Logo_wt.svg");
+  background-image: url("/img/Rackspace_Technology_Logo_RGB_WHT.svg");
   background-position: left center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -343,10 +345,11 @@ $header-height: 5rem;
   overflow: hidden;
   transition: all 0.15s linear;
   width: 110px;
+  background-color: $color-red;
 }
 
 .buttons-header {
-  background-color: #FFFFFF;
+  background-color: $color-white;
 }
 
 .buttons-nav-items,
@@ -354,47 +357,111 @@ $header-height: 5rem;
   margin: 1rem;
 }
 
+.buttons-nav-items {
+  display: flex;
+
+  li {
+    display: flex;
+
+    a {
+      margin: 0 0 0 1rem;
+    }
+
+    cursor: pointer;
+
+    ul {
+      display: none;
+      cursor: pointer;
+
+      li {
+        margin-bottom: .5em;
+
+        a {
+          color: $color-white;
+          text-decoration: none;
+        }
+      }
+    }
+
+    &:hover {
+      ul {
+        display: block;
+      }
+    }
+  }
+  .buttons-nav-item {
+    ul {
+      position: absolute;
+      padding-left: 0;
+      border-top: 1px solid $color-black;
+      border-radius: 3px;
+      z-index: 20;
+      text-align: right;
+      color: $color-white;
+      right: 2rem;
+      top: 3.15rem;
+    }
+  }
+  .buy-now {
+    ul {
+      background: $color-green;
+    }
+  }
+  .login {
+    ul {
+      background: $color-header-grey;
+    }
+  }
+}
+
 .blog-nav {
-  background-color: #000000;
+  background-color: $color-black;
   z-index: 2;
 }
 
 .main-nav-items {
-  .blog-nav{
+  .blog-nav {
     cursor: pointer;
     display: inline-block;
     position: relative;
-      .main-nav-items {
-        position: absolute;
-        display: none;
-        margin: 0;
-        background-color: #c9c6c1;
-        text-decoration: none;
-        list-style-type: none;
-        padding: 10px;
-        border-radius: 0 0 4px 4px;
-        li {
-          width: 220px;
-          border-radius: 4px;
-          a {
-            font-weight: 400;
-            color: #676781;
-            font-size: 14px;
-            line-height: 25px;
-            text-decoration: none;
-            text-transform: uppercase;
-            list-style-type: none;
-            &:hover, &:focus {
-              color: #FFFFFF;
-              background: transparent;
-            }
+
+    .main-nav-items {
+      position: absolute;
+      display: none;
+      margin: 0;
+      background-color: $color-light-grey;
+      text-decoration: none;
+      list-style-type: none;
+      padding: 10px;
+      border-radius: 0 0 4px 4px;
+
+      li {
+        width: 220px;
+        border-radius: 4px;
+
+        a {
+          font-weight: 400;
+          color: $color-dark-grey;
+          font-size: 14px;
+          line-height: 25px;
+          text-decoration: none;
+          text-transform: uppercase;
+          list-style-type: none;
+
+          &:hover,
+          &:focus {
+            color: $color-white;
+            background: transparent;
           }
         }
       }
-      &:hover, &:focus {
-        .main-nav-items {
-          display: grid;
-        }
+    }
+
+    &:hover,
+    &:focus {
+      .main-nav-items {
+        display: grid;
       }
+    }
   }
 }

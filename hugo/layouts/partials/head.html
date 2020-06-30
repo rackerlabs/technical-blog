@@ -42,7 +42,7 @@
 {{- with $.Site.Params.gtmid -}}
 <!-- Page Hiding Snippet (recommended) -->
 <style>.async-hide { opacity: 0 !important} </style>
-
+<script src="{{"js/scripts.min.js | relURL"}}" type="text/javascript"></script>
 <script>
 (function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;
 h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};

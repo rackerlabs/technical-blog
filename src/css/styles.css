@@ -25,6 +25,7 @@
 @import "components/toc.scss";
 @import "components/announcement.scss";
 @import "components/docs.scss";
+@import "components/blog.scss";
 
 /* Pages */
 @import "pages/page-about.scss";
