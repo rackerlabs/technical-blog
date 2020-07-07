@@ -1,5 +1,5 @@
 /* Config */
-$sidebar-width: 500px;
+$sidebar-width: 100%;
 
 .docs-container {
   display: block;
@@ -13,17 +13,16 @@ $sidebar-width: 500px;
 
 .sidebar {
   height: 0;
-  position: sticky;
+  position: relative;
   top: 6rem;
   transform: translateX(-$sidebar-width);
   transition: transform 0.15s linear;
-  width: 0;
+  width: auto;
   will-change: scroll-position;
   display: flex;
 
   .blog-sidebar {
     padding: 0 2rem;
-    border-left: 1px solid #ebebeb;
 
     .recent-posts {
       padding: 2rem 0;
@@ -40,6 +39,7 @@ $sidebar-width: 500px;
         background-color: #d6d6db;
         display: flex;
         justify-content: space-between;
+        width: 100%;
 
         a.active {
           border-bottom-color: #3498db;
@@ -54,10 +54,10 @@ $sidebar-width: 500px;
           border-bottom: solid 4px transparent;
           color: #474747;
           font-size: 12px;
-          line-height: 36px;
+          line-height: 1rem;
           text-align: center;
           display: flex;
-          padding: 0 2rem;
+          padding: 1rem 1rem;
           width: 100%;
         }
       }
@@ -102,11 +102,11 @@ $sidebar-width: 500px;
   }
 
   @media screen and (min-width: 860px) {
-    flex: 0 0 $sidebar-width;
+    flex: 0 0 30%;
     height: calc(100vh - 6rem);
     transform: translateX(0);
     vertical-align: top;
-    width: $sidebar-width;
+    width: auto;
   }
 }
 
