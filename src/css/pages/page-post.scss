@@ -2,7 +2,6 @@
   background: $color-white;
   min-height: 100vh;
   padding-bottom: 4rem;
-  padding-top: 5rem;
 
   .post--feature-image {
     margin-top: 0;
@@ -130,7 +129,8 @@
   }
 
   #single-post {
-    flex: 0 0 60%;
+    flex: 0 0 70%;
+    border-right: 1px solid #ebebeb;
     h3 {
       font-style: normal;
       font-weight: 400;
