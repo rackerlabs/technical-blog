@@ -1,7 +1,4 @@
 .footer {
-  background-image: url("/img/footer-spray.png");
-  background-position: top left;
-  background-repeat: repeat-x;
   background-color: #3B3F45;
   color: $color-white;
   font-size: 0.8rem;
@@ -9,8 +6,6 @@
   padding: 4rem 0 0;
   position: relative;
   z-index: 1;
-  background-size: 800px;
-  padding-top: 140px;
   text-align: left;
 
   /* Ensure intercom doesn't cover anything... */
