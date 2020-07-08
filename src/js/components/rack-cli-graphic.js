@@ -11,13 +11,13 @@ module.exports = angular
           staticImage.onload = function () {
             setTimeout(render, 300)
           }
-          staticImage.src = "/assets/src/img/rack-cli-static.png"
+          staticImage.src = "/img/rack-cli-static.png"
 
           var animatedImage = new Image()
           animatedImage.onload = function () {
             setTimeout(render, 300)
           }
-          animatedImage.src = "/assets/src/img/rack-cli-animated.gif"
+          animatedImage.src = "/img/rack-cli-animated.gif"
 
           // The images we have aren't scaled right for one another, so we have to
           // scale down the GIF.

@@ -1,7 +1,7 @@
-baseurl = "/blog"
+baseurl = "https://docs.rackspace.com/blog/"
 copyright = ""
 defaultContentLanguage = "en-us"
-destination = "../dist/blog/"
+destination = "../dist/"
 enableEmoji = true
 enableRobotsTXT = true
 languageCode = "en"
@@ -45,12 +45,12 @@ xhtml = false
 [[menu.footer]]
     name = "Developer Center"
     parent = "Developer Network"
-    url = "/"
+    url = "https://docs.rackspace.com"
     weight = 1
 [[menu.footer]]
     name = "API Documentation and User Guides"
     parent = "Developer Network"
-    url = "/docs"
+    url = "https://docs.rackspace.com/docs"
     weight = 2
 [[menu.footer]]
     name = "SDKs"
@@ -100,7 +100,7 @@ xhtml = false
 [[menu.footer]]
     name = "Style Guide for Technical Content"
     parent = "Other Information"
-    url = "https://developer.rackspace.com/docs/style-guide/"
+    url = " "
     weight = 12
 
 [[menu.main]]

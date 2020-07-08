@@ -4,23 +4,23 @@
 
 [build]
   command = "yarn build"
-  publish = "dist/blog"
+  publish = "dist"
 
 [context.deploy-preview]
-  publish = "dist/blog"
+  publish = "dist"
 
 [[plugins]]
   package = "netlify-plugin-algolia-index"
 
-[[redirects]]
-  from = "/docs"
-  to = "https://docs.rackspace.com/docs/"
-  status = 200
-  force = true
-  headers = {X-From = "Netlify"}
+# [[redirects]]
+#   from = "/docs"
+#   to = "https://docs.rackspace.com/docs/"
+#   status = 200
+#   force = true
+#   headers = {X-From = "Netlify"}
 [[redirects]]
   from = "/"
-  to = "https://docs.rackspace.com/"
+  to = "/blog/"
   status = 200
   force = true
   headers = {X-From = "Netlify"}
