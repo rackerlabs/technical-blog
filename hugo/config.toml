@@ -1,4 +1,4 @@
-baseurl = "https://docs.rackspace.com"
+baseurl = "https://docs-rackspace-com.netlify.app"
 copyright = ""
 defaultContentLanguage = "en-us"
 destination = "../dist/"
