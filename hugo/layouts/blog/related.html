@@ -5,14 +5,14 @@
             {{- with .Params.categories -}}
             {{- $len := len . -}}
             <span>in {{ range $index, $value := . }}
-                <a href="{{ relURL "/categories/"}}{{ urlize $value }}" class="post--category" data-category="{{ $value | lower }}">
+                <a href="{{ absURL "/categories/"}}{{ urlize $value }}" class="post--category" data-category="{{ $value | lower }}">
                 {{ $value | humanize }}
                 </a>{{ if not (eq $len ($index | add 1)) }}, {{- end -}}
                 {{- end -}}</span>
             {{- end -}}
         </span>
     </div>
-    <a href="{{ .RelPermalink | relURL }}"><h2 class="post-title">{{ .Params.headline | default .Title }}</h2></a>
+    <a href="{{ .RelPermalink | absURL }}"><h2 class="post-title">{{ .Params.headline | default .Title }}</h2></a>
     <p class="post-excerpt">
         {{- if .Summary -}}
         {{ markdownify .Summary | truncate 140  }}

@@ -1,5 +1,5 @@
 <article class="blog-post">
-  <a href="{{ .RelPermalink | relURL }}">
+  <a href="{{ .RelPermalink | absURL }}">
     <h2 class="post-title">{{ .Params.headline | default .Title }}</h2>
   </a>
   <div class="post-meta">
@@ -7,7 +7,7 @@
       {{- if .Params.AuthorAvatar -}}
       <img src="{{.Params.AuthorAvatar }}" class="post-avatar-image racker" alt="post avatar" />
       {{- else -}}
-      <img src="/img/avatar-default.svg" class="post-avatar-image" alt="post avatar" />
+      <img src="https://docs-rackspace-com.netlify.app/img/avatar-default.svg" class="post-avatar-image" alt="post avatar" />
       {{- end -}}
     </div>
     <a class="post-author" href="/blog/authors/{{ .Params.Author }}">{{ .Params.Author }}</a>
@@ -17,7 +17,7 @@
       {{- with .Params.categories -}}
       {{- $len := len . -}}
       <span>{{ range $index, $value := . }}
-        <a href="{{ relURL "/categories/"}}{{ urlize $value }}" class="post--category"
+        <a href="{{ absURL "/categories/"}}{{ urlize $value }}" class="post--category"
           data-category="{{ $value | lower }}">
           {{ $value | humanize }}
         </a>{{ if not (eq $len ($index | add 1)) }}, {{- end -}}
