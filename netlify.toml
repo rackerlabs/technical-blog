@@ -4,10 +4,10 @@
 
 [build]
   command = "yarn build"
-  publish = "dist"
+  publish = "dist/blog"
 
 [context.deploy-preview]
-  publish = "dist"
+  publish = "dist/blog"
 
 [[plugins]]
   package = "netlify-plugin-algolia-index"

@@ -1,7 +1,7 @@
 baseurl = "/blog"
 copyright = ""
 defaultContentLanguage = "en-us"
-destination = "../dist/"
+destination = "../dist/blog/"
 enableEmoji = true
 enableRobotsTXT = true
 languageCode = "en"
