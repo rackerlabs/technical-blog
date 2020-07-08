@@ -14,4 +14,3 @@ dist/
 .tmp/
 
 # Don't add files that are created in the build process
-
