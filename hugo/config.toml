@@ -1,4 +1,4 @@
-baseurl = "https://docs.rackspace.com/blog/"
+baseurl = "https://docs.rackspace.com"
 copyright = ""
 defaultContentLanguage = "en-us"
 destination = "../dist/"
