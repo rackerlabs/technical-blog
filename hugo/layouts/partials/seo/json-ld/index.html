@@ -15,7 +15,7 @@
   {{- end -}}
   {{- with .Params.images -}}
   {{- range first 6 . -}}
-  "image": "{{- .url | relURL -}}",
+  "image": "{{- .url | absURL -}}",
   {{- end -}}
   {{- end -}}
   {{- with .Site.Copyright -}}

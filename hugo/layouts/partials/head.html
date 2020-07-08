@@ -20,7 +20,7 @@
 {{- end -}}
 
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-<link rel="stylesheet" href="{{ "https://docs-rackspace-com.netlify.app/css/styles.min.css" }}" type="text/css" />
+<link rel="stylesheet" href="{{ "css/styles.min.css" | absURL }}?{{ readFile "static/css/styles.min.css" | md5 }}" type="text/css" />
 {{- if .IsHome -}}
 {{- range .Site.AllPages -}}
 {{- $section := .Section -}}
@@ -29,11 +29,11 @@
 {{- end -}}
 {{- end -}}
 {{- end -}}
-<link rel="manifest" href="{{ "/favicons/manifest.json" | relURL }}" />
-<link rel="apple-touch-icon" sizes="180x180" href="{{ "/favicons/favicon.ico" | relURL }}" />
-<link rel="icon" type="image/png" href="{{ "/favicons/favicon.ico" | relURL }}" sizes="32x32" />
-<link rel="icon" type="image/png" href="{{ "/favicons/favicon.ico" | relURL }}" sizes="16x16" />
-<link rel="mask-icon" href="{{ "/favicons/favicon.ico" | relURL }}" color="#00c7b7" />
+<link rel="manifest" href="{{ "/favicons/manifest.json" | absURL }}" />
+<link rel="apple-touch-icon" sizes="180x180" href="{{ "/favicons/favicon.ico" | absURL }}" />
+<link rel="icon" type="image/png" href="{{ "/favicons/favicon.ico" | absURL }}" sizes="32x32" />
+<link rel="icon" type="image/png" href="{{ "/favicons/favicon.ico" | absURL }}" sizes="16x16" />
+<link rel="mask-icon" href="{{ "/favicons/favicon.ico" | absURL }}" color="#00c7b7" />
 {{- with .OutputFormats.Get "RSS" -}}
   <link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ $title }}" />
   <link href="{{ .RelPermalink }}" rel="feed" type="application/rss+xml" title="{{ $title }}" />
@@ -42,7 +42,7 @@
 {{- with $.Site.Params.gtmid -}}
 <!-- Page Hiding Snippet (recommended) -->
 <style>.async-hide { opacity: 0 !important} </style>
-<script src="{{"https://docs-rackspace-com.netlify.app/js/scripts.min.js"}}" type="text/javascript"></script>
+<script src="{{"js/scripts.min.js | absURL"}}" type="text/javascript"></script>
 <script>
 (function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;
 h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
