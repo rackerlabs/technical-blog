@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "/blog"
 copyright = ""
 defaultContentLanguage = "en-us"
 destination = "../dist/"
@@ -50,17 +50,17 @@ xhtml = false
 [[menu.footer]]
     name = "API Documentation and User Guides"
     parent = "Developer Network"
-    url = "/"
+    url = "/docs"
     weight = 2
 [[menu.footer]]
     name = "SDKs"
     parent = "Developer Network"
-    url = "/"
+    url = "https://docs.rackspace.com/sdks/python/"
     weight = 3
 [[menu.footer]]
     name = "Rackspace How-To"
     parent = "Developer Network"
-    url = "/"
+    url = "https://support.rackspace.com/how-to/"
     weight = 4
 [[menu.footer]]
     name = "Technical Blog"
@@ -70,32 +70,37 @@ xhtml = false
 [[menu.footer]]
     name = "Rackspace Blog"
     parent = "Blogs"
-    url = "/"
+    url = "https://www.rackspace.com/blog"
     weight = 6
 [[menu.footer]]
     name = "Solve: Thought Leadership"
     parent = "Blogs"
-    url = "/"
+    url = "https://www.rackspace.com/solve"
     weight = 7
 [[menu.footer]]
     name = "Customer Stories"
     parent = "Other Information"
+    url = "https://www.rackspace.com/customer-stories"
     weight = 8
 [[menu.footer]]
     name = "Events"
     parent = "Other Information"
+    url = "https://www.rackspace.com/events"
     weight = 9
 [[menu.footer]]
     name = "Programs"
     parent = "Other Information"
+    url = "https://www.rackspace.com/responsibility"
     weight = 10
 [[menu.footer]]
     name = "Careers"
     parent = "Other Information"
+    url = "https://jobs.jobvite.com/rackspace/"
     weight = 11
 [[menu.footer]]
     name = "Style Guide for Technical Content"
     parent = "Other Information"
+    url = "https://developer.rackspace.com/docs/style-guide/"
     weight = 12
 
 [[menu.main]]
@@ -123,19 +128,19 @@ xhtml = false
     [[menu.main]]
         identifier = "rackspace-blog"
         name = "Rackspace Blog"
-        url = "/rackspace-blog"
+        url = "https://www.rackspace.com/blog"
         weight = 2
         parent = "blogs"
     [[menu.main]]
         identifier = "solve"
         name = "Solve: Thought Leadership"
-        url = "/solve"
+        url = "https://www.rackspace.com/solve"
         weight = 3
         parent = "blogs"
 [[menu.main]]
     identifier = "support_documentation"
     name = "Support Documentation"
-    url = "/"
+    url = "https://support.rackspace.com/"
     weight = 4
 [[menu.buttons]]
     identifier = "buynow"
