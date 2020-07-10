@@ -25,8 +25,8 @@ For ideas of topics to blog about, check out the end of this file!
          git remote add upstream git@github.com:rackerlabs/docs-developer-blog.git
          git checkout master
          git fetch upstream
-         git checkout -b name-of-your-branch
          git merge upstream/master
+         git checkout -b name-of-your-branch
       ```
 
 3. Create a new folder inside the `/hugo/content/blog` directory with the following naming
@@ -43,6 +43,7 @@ folder.
 
 The post should contain front-matter, an excerpt, and the actual content.
 
+<!--- update this section when front matter is complete
 ##### Front-matter
 
 Add Jekyll front-matter (or metadata) to the top of the file you created in
@@ -69,7 +70,7 @@ categories:
     - Other Category
 #
 # Use canonical entry if you are republishing a blog from another site, such as
-# your personal blog.  Do  NOT republish without the autor's explicit permission.
+# your personal blog.  Do  NOT republish without the author's explicit permission.
 #
 canonical: https://original-url.link.com/post-name/
 metaTitle:
@@ -153,7 +154,7 @@ If you'd like to use a category that is not in the list, please send an email
 to infodev@rackspace.com. To avoid being flooded with categories, which might apply
 to only one or two blogs, we have automated throttling. However, notify us so
 that we can discuss your ideas for a new category.
-
+--->
 ##### Excerpt
 
 Include an excerpt marker after your first paragraph or so to separate the
@@ -161,7 +162,7 @@ preview text that appears on the blog index page from the full article. To do
 so, use the following HTML comment:
 
 ```
-The excerpt paragraph, which should give teh reader a taste of what's to come.
+The excerpt paragraph, which should give the reader a taste of what's to come.
 
 <!-- more -->
 
