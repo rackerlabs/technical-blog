@@ -23,7 +23,7 @@ RAS Digital Experience solutions have been available on the Rackspace Technology
 Dedicated, Server Virtualization, Azure&reg;, and AWS&reg; offerings as a
 standard for the solutions.
 
-<!-- more -->
+<!--more-->
 
 On Tuesday, July 7, 2020, RAS Digital Experience expanded the infrastructure
 platforms on which the solutions are available. RAS Digital Experience for
