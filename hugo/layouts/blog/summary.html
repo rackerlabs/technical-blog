@@ -9,15 +9,15 @@
       {{- else -}}
       <img src="{{ "/img/avatar-default.svg" | absURL }}" class="post-avatar-image" alt="post avatar" />
       {{- end -}}
-    </div>
-    <a class="post-author" href="/blog/authors/{{ .Params.Author }}">{{ .Params.Author }}</a>
+    </div> 
+    <a class="post-author" data-author = "{{ .Params.Author }}" href="{{ "/blog/authors/"}}{{ urlize .Params.Author }}">{{ .Params.Author }}</a>
     |
     <span class="post-date">{{ dateFormat .Site.Params.dateFormat .Date.UTC }}</span>
     <div class="post-category" data-category="{{ .Section }}">
       {{- with .Params.categories -}}
       {{- $len := len . -}}
       <span>{{ range $index, $value := . }}
-        <a href="{{ absURL "/categories/"}}{{ urlize $value }}" class="post--category"
+        <a href="{{ "/categories/"}}{{ urlize $value }}" class="post--category"
           data-category="{{ $value | lower }}">
           {{ $value | humanize }}
         </a>{{ if not (eq $len ($index | add 1)) }}, {{- end -}}

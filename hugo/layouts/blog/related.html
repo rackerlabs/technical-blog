@@ -5,7 +5,7 @@
             {{- with .Params.categories -}}
             {{- $len := len . -}}
             <span>in {{ range $index, $value := . }}
-                <a href="{{ absURL "/categories/"}}{{ urlize $value }}" class="post--category" data-category="{{ $value | lower }}">
+                <a href="{{ "/categories/" }}{{ urlize $value }}" class="post--category" data-category="{{ $value | lower }}">
                 {{ $value | humanize }}
                 </a>{{ if not (eq $len ($index | add 1)) }}, {{- end -}}
                 {{- end -}}</span>
