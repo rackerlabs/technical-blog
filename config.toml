@@ -1,5 +1,5 @@
 baseurl = "/"
-theme = "rackspace-blogs"
+theme = "docs-developer-hugo-theme"
 copyright = ""
 defaultContentLanguage = "en-us"
 destination = "public"
