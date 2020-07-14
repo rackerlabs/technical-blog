@@ -1,0 +1,11 @@
+name = "Docs-Developer-Hugo-Theme"
+description = "Theme for the Docs Developer Blog Sites"
+homepage = "https://github.com/rackerlabs/docs-developer-hugo-theme"
+tags = ["docs-developer-hugo-theme"]
+features = []
+min_version = "0.0.1"
+
+[author]
+  name = "Rackelabs"
+  homepage = "https://github.com/rackerlabs"
+

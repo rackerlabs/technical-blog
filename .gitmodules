@@ -1,1 +1,4 @@
 
+[submodule "themes/docs-developer-hugo-theme"]
+	path = themes/docs-developer-hugo-theme
+	url = git@github.com:rackerlabs/docs-developer-hugo-theme.git

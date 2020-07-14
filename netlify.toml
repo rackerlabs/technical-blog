@@ -3,18 +3,22 @@
   NPM_VERSION = "6.14.5"
 
 [build]
-  command = "yarn build"
-  publish = "dist"
+  command = "make serve"
+  publish = "public"
 
 [context.deploy-preview]
-  publish = "dist"
+  publish = "public"
 
-[[plugins]]
-  package = "netlify-plugin-algolia-index"
 
 [[redirects]]
-  from = "/docs"
-  to = "https://developer.rackspace.com/docs/"
+  from = "https://docs.rackspace.com/blog/"
+  to = "https://docs-rackspace-com.netlify.app/blog/"
+  status = 200
+  force = true
+  headers = {X-From = "Netlify"}
+[[redirects]]
+  from = "https://docs.rackspace.com/css/*"
+  to = "https://docs-rackspace-com.netlify.app/css/*"
   status = 200
   force = true
   headers = {X-From = "Netlify"}

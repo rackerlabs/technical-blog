@@ -60,9 +60,9 @@ npm run build
 *The fresh production build of your site will end up in the `dist/` directory.*
 
 ## Environment Variables
-This project uses environment variables to handle the CircleCI deployment, as well as the Algolia index.
+This project uses environment variables to handle the deployment, as well as the Algolia index.
 
-For local development, environment variables can be included in `.env.js`. See `.env.js.stub` for the available variables.
+For local development, environment variables can be included in `.env`.
 
 # Project Structure
 ```
