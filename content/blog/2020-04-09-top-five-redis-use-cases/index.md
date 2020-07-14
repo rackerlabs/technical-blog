@@ -24,7 +24,7 @@ characteristics that influence these choices.
 
 <!--more-->
 
-![]({% asset_path 2020-04-09-top-five-redis-use-cases/Picture1.png %})
+![](Picture1.png)
 
 ### 1. Session cache
 

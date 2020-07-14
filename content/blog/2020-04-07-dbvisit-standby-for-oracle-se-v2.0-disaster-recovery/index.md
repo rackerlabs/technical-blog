@@ -68,7 +68,7 @@ Dbvisit Standby Version 8 consists of the following components:
 - **`dbvagent`**: Dbvisit Agent
 - **`dbvserver`**: Dbvisit Central Console, a web-based user interface
 
-![]({% asset_path 2020-04-07-dbvisit-standby-for-oracle-se-v2.0-disaster-recovery/Picture1.png %})
+![](Picture1.png)
 
 *Image Source*: [https://dbvisit.com/blog/dbvisit-standby-version-8-architecture-overview](https://dbvisit.com/blog/dbvisit-standby-version-8-architecture-overview)
 

@@ -40,7 +40,7 @@ environment.
 Sitecore Managed Cloud Premium customers who are using the following production
 environments can opt in to these DR design patterns and runbooks:
 
-![]({% asset_path 2020-03-24-rackspace-offers-sitecore-disaster-recovery-design-patterns/Picture1.png %})
+![](Picture1.png)
 
 This launch includes the following design patterns:
 

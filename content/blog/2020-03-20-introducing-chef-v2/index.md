@@ -53,7 +53,7 @@ Chef consists of the following main components:
 
 The following image shows a basic setup:
 
-![]({% asset_path 2020-03-20-introducing-chef-v2/Picture1.png %})
+![](Picture1.png)
 
 *Image Source*: [https://www.linode.com/docs/applications/configuration-management/beginners-guide-chef/](https://www.linode.com/docs/applications/configuration-management/beginners-guide-chef/)
 

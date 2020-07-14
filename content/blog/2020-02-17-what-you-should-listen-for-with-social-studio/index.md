@@ -22,7 +22,7 @@ you haven't listened to what they have to say first.
 
 <!--more-->
 
-![]({% asset_path 2020-02-17-what-you-should-listen-for-with-social-studio/Picture1.png %})
+![](Picture1.png)
 
 That's where *social listening* comes in. Social listening differs from social
 monitoring by offering a more nuanced, contextual look at what people are saying

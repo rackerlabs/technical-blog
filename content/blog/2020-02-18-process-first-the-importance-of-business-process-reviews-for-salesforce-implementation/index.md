@@ -24,7 +24,7 @@ and planning.
 
 <!--more-->
 
-![]({% asset_path 2020-02-18-process-first-the-importance-of-business-process-reviews-for-salesforce-implementation/Picture1.png %})
+![](Picture1.png)
 
 Things can quickly go askew when companies put the cart before the
 horse&mdash;by adopting a new technology tool without first clearly identifying

@@ -180,34 +180,34 @@ $header-height: 5rem;
       }
     }
 
-    @media screen and (min-width: 960px) {
-      display: none;
-    }
+    // @media screen and (min-width: 960px) {
+    //   display: none;
+    // }
 
-    @media screen and (min-width: 860px) {
-      .docs-nav-items {
-        display: none;
-      }
-    }
+    // @media screen and (min-width: 860px) {
+    //   .docs-nav-items {
+    //     display: none;
+    //   }
+    // }
 
-    @media screen and (min-width: 1100px) {
-      display: block;
-    }
+    // @media screen and (min-width: 1100px) {
+    //   display: block;
+    // }
   }
 
-  .mini-nav--toggle {
-    @media screen and (min-width: 960px) {
-      display: block;
-    }
+  // .mini-nav--toggle {
+  //   @media screen and (min-width: 960px) {
+  //     display: block;
+  //   }
 
-    @media screen and (min-width: 1100px) {
-      display: none;
-    }
-  }
+  //   @media screen and (min-width: 1100px) {
+  //     display: none;
+  //   }
+  // }
 }
 
 .nav {
-  display: none;
+  display: inline-block;
   position: relative;
   transition: all 0.15s linear;
   white-space: nowrap;
@@ -241,9 +241,9 @@ $header-height: 5rem;
       background-color: $color-red;
     }
 
-    @media screen and (min-width: 960px) {
-      display: none;
-    }
+    // @media screen and (min-width: 960px) {
+    //   display: none;
+    // }
   }
 
   @media screen and (min-width: 960px) {
