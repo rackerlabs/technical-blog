@@ -3,7 +3,7 @@
   NPM_VERSION = "6.14.5"
 
 [build]
-  command = "make serve"
+  command = "make build"
   publish = "public"
 
 [context.deploy-preview]
