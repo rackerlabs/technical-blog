@@ -10,7 +10,7 @@ metaDataFormat = "yaml"
 paginate = 10
 pluralizeListTitles = false
 relativeURLs = false
-title = "Technical Blog"
+title = "Rackspace Developer Center"
 [markup]
 defaultMarkdownHandler = "blackfriday"
 [markup.blackFriday]
@@ -41,7 +41,9 @@ unsafe = false
 xhtml = false
 
 [permalinks]
-    blog = "/:title/"
+    blog = "/blog/:title"
+    categories = "/blog/categories/:slug"
+    author = "/blog/author/:slug"
 
 [[menu.docs]]
     name = "Welcome"

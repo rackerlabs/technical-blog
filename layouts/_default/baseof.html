@@ -2,7 +2,7 @@
 <html {{ with .Site.LanguageCode }}lang="{{ . }}"{{ end }}>
   <head>
     {{- block "head" . -}}
-      <title>{{ block "title" . }}{{ with .Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
+      <title>{{ block "title" . }}{{ with .Title }}{{ . }} - {{ end }}{{ .Site.Title }}{{ end }}</title>
       {{- partial "head" . -}}
       {{- block "json-ld" . -}}
         {{/* This is where schema.org schemas get rendered for Google structured data */}}

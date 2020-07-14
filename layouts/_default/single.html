@@ -15,14 +15,14 @@
             <img src="{{ "/img/avatar-default.svg" | absURL }}" class="post-avatar-image" alt="post avatar" />
             {{- end -}}
           </div>
-          <a class="post-author" href="/author/{{ .Params.Author | absURL }}">{{ .Params.Author }}</a>
+          <a class="post-author" href="{{ "/blog/author/"}}{{ urlize .Params.Author }}">{{ .Params.Author }}</a>
           |
           <span class="post-date">{{ dateFormat .Site.Params.dateFormat .Date.UTC }}</span>
           <div class="post-category" data-category="{{ .Section }}">
             {{- with .Params.categories -}}
             {{- $len := len . -}}
             <span>{{ range $index, $value := . }}
-              <a href="{{ "/categories/"}}{{ urlize $value }}" class="post--category"
+              <a href="{{ "/blog/categories/"}}{{ urlize $value }}" class="post--category"
                 data-category="{{ $value | lower }}">
                 {{ $value | humanize }}
               </a>{{ if not (eq $len ($index | add 1)) }} / {{- end -}}

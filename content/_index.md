@@ -1,5 +1,5 @@
 ---
-title: Blog
+title: Developer Blog
 headline: Technical Blog
 textline: Welcome to the Technical blog!
 weight: 4
