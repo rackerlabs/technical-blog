@@ -102,7 +102,7 @@ $sidebar-width: 100%;
   }
 
   @media screen and (min-width: 860px) {
-    flex: 0 0 30%;
+    flex: 0 0 20%;
     height: calc(100vh - 6rem);
     transform: translateX(0);
     vertical-align: top;
@@ -236,5 +236,27 @@ $sidebar-width: 100%;
 .subscribe-feed {
   a:hover {
     opacity: 0.6;
+  }
+}
+
+.categories {
+  border-top: solid 1px #e0e0e0;
+
+  h5 {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: #636363;
+  }
+
+  ul {
+    font-size: 13px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li{
+      margin-bottom: .5em;
+    }
   }
 }

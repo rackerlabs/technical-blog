@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "https://docs.rackspace.com/"
 theme = "docs-developer-hugo-theme"
 copyright = ""
 defaultContentLanguage = "en-us"
