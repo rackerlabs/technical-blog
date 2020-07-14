@@ -23,6 +23,7 @@
   status = 200
   force = true
   headers = {X-From = "Netlify"}
+  
 [[redirects]]
   from = "https://docs.rackspace.com/favicons/*"
   to = "https://docs-rackspace-com.netlify.app/favicons/*"
