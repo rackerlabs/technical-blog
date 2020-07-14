@@ -128,6 +128,7 @@
   img {
     max-width: 100%;
   }
+
   span {
     font-weight: 600;
   }
@@ -135,9 +136,11 @@
   #single-post {
     flex: 0 0 70%;
     border-right: 1px solid #ebebeb;
+
     ul {
       list-style-type: disc;
       list-style: disc;
+
       li {
         list-style: disc;
       }
@@ -166,9 +169,14 @@
   a.cta.blue {
     background: #005ac8;
   }
+
+  a.cta.red {
+    background: #eb0000;
+  }
+
   a.cta.teal {
     background: #00bebc;
-}
+  }
 
   a.cta {
     border-radius: 1px;
@@ -205,12 +213,15 @@
         width: 100%;
         height: auto;
       }
+
       &::after {
         content: "RACKER";
         font-size: 12px;
         width: 100%;
       }
-      &::before, &::after {
+
+      &::before,
+      &::after {
         background: rgba(235, 0, 0, .8);
         color: #fff;
         left: 0;
@@ -220,6 +231,7 @@
         bottom: 0;
       }
     }
+
     .bio {
       font-size: 1.2rem;
     }
@@ -346,7 +358,6 @@
 
 .highlight {
   background: $color-black;
-  color: $color-light-grey;
   padding: 1em;
   margin-bottom: 3em;
   line-height: 1.1em;
@@ -358,9 +369,8 @@
   font-weight: 400;
 
   pre {
-    background-color: inherit;
+    background-color: transparent !important;
     border: none;
-    color: inherit;
     overflow-x: scroll;
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;

@@ -34,13 +34,16 @@ You will need to create a mailbox for this as your control panel credentials wil
 
 Once you're ready to use the API to send a message, you can add this to your Ruby application:
 
-{% codeblock lang:ruby %}def post_message
+{{< highlight go  >}}
+def post_message
   RestClient.post "https://api:key-XXXXXXXXXXXXX"\
   "@api.mailgun.net/v2/mail.domain.com/messages",
   :from => "DevOps Blog ",
   :to => "hart.hoover@rackspace.com, wayne.walls@rackspace.com",
   :subject => "Hello",
   :text => "Testing Mailgun!"
-end{% endcodeblock %}
+end
+{{< / highlight >}}
+
 
 Click [here](http://documentation.mailgun.net/api-intro.html) for more information on the Mailgun API. We're excited to welcome the "Mailgunners" as members of the Rackspace family!
