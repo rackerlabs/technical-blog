@@ -4,12 +4,88 @@ $header-height: 5rem;
   align-items: center;
   background-color: $color-black;
   border-bottom: 1px solid $color-grey;
-  display: flex;
   font-size: 14px;
   justify-content: space-between;
   padding: 0 2rem;
   width: 100%;
   z-index: 20;
+  .navbar {
+    padding: 0;
+    color: $color-white;
+
+    .nav-link {
+      color: $color-white;
+      font-weight: 500;
+      text-decoration: none;
+      transition: color 0.15s ease;
+
+      &:hover {
+        color: $color-white;
+      }
+
+      &.active {
+        color: $color-white;
+      }
+    }
+  }
+  .logo {
+    backface-visibility: hidden;
+    background-image: url("/img/Rackspace_Technology_Logo_RGB_WHT.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 90% 90%;
+    height: 65px;
+    transition: width 0.15s linear, opacity 0.15s ease;
+    width: 140px;
+    background-color: $color-red;
+    margin: 0;
+    padding: 0 1rem;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+  .dropdown-menu {
+    background-color: transparent;
+    border: 0px solid rgba(0, 0, 0, .15);
+  }
+  .dropdown-toggle::after {
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: 0em;
+    content: "";
+    border-top: .7em solid;
+    border-right: .4em solid transparent;
+    border-bottom: 0;
+    border-left: 0.4em solid transparent;
+  }
+  @media (min-width: 979px) {
+    .dropdown:hover > .dropdown-menu {
+      display: block;
+    }
+  }
+  .search {
+    margin: 1rem;
+    position: relative;
+
+    &::after {
+      background-image: url("/img/search.svg");
+      background-repeat: no-repeat;
+      background-size: 0.9rem;
+      content: "";
+      height: 100%;
+      left: 0.7rem;
+      opacity: 0.25;
+      position: absolute;
+      top: 0.65rem;
+      width: 2rem;
+      z-index: 10;
+    }
+
+    input {
+      padding-left: 2rem;
+    }
+  }
 
   .left-block {
     align-items: center;
@@ -19,26 +95,8 @@ $header-height: 5rem;
     overflow: hidden;
     transition: all 0.15s linear;
     width: 140px;
-    background-color: $color-red;
     margin: 1rem;
     padding: 0.25rem;
-
-    .logo {
-      backface-visibility: hidden;
-      background-image: url("/img/Rackspace_Technology_Logo_RGB_WHT.svg");
-      background-position: left center;
-      background-repeat: no-repeat;
-      background-size: 100% 100%;
-      height: 3rem;
-      line-height: 0;
-      overflow: hidden;
-      transition: width 0.15s linear, opacity 0.15s ease;
-      width: 100%;
-
-      &:hover {
-        opacity: 0.6;
-      }
-    }
 
     @media screen and (max-width: 700px) {
       width: 1.5rem;

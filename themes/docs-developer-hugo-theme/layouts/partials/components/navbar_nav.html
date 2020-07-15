@@ -1,14 +1,16 @@
-<ul class="main-nav-items">
+<ul class="main-nav-items navbar-nav mr-auto">
     {{- range . -}}
     {{- $isHeaderNav := (eq .Identifier "blogs") -}}
-    <li class="{{ if $isHeaderNav }} blog-nav {{ end }}">
+    <li class="nav-item {{ if $isHeaderNav }} blog-nav dropdown {{ end }}">
         {{- if .HasChildren -}}
-        <a href="{{ .URL | absURL }}"
-            class="nav-item">{{ .Pre }}&nbsp;{{ .Name }}&nbsp;{{ .Post }}</a>
-        {{- partial "components/navbar_nav.html" .Children . -}}
+        <a class="nav-link dropdown-toggle" href='#' id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            {{ .Pre }}&nbsp;{{ .Name }}&nbsp;{{ .Post }}
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                {{- partial "components/navbar_nav.html" .Children . -}}
+          </div>
         {{- else -}}
-        <a href="{{ .URL | absURL }}"
-            class="nav-item">{{ .Name }}</a>
+        <a href="{{ .URL | absURL }}" class="nav-link">{{ .Name }}</a>
         {{- end -}}
     </li>
     {{- end -}}
