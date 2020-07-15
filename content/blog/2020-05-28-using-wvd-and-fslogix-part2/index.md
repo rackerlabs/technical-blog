@@ -45,7 +45,7 @@ of the user's profile in a remote virtual hard disk (VHD), user profiles can be
 mounted instantly regardless of their size, and the user doesn’t notice changes
 to their profile if they move between hosts when they log off and back on.
 
-![]({% asset_path 2020-05-28-using-wvd-and-fslogix-part1-and-2/Picture4.png %})
+![](Picture4.png)
 
 1.	**Client connection**: The client connects to a Remote Desktop Gateway service
    at [https://rdweb.wvd.microsoft.com](https://rdweb.wvd.microsoft.com).

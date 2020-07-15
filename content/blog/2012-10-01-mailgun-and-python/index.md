@@ -81,7 +81,7 @@ These actions are where the really cool things start to happen. When you forward
 
 You can then take these difference parts of the parsed message and update your app with the data. The Python code below shows an example of what you would need to do in your Django app to handle the incoming messages:
 
-{% codeblock lang:python %}# Handler for HTTP POST to http://myhost.com/messages for the route defined above
+{{< highlight go  >}}# Handler for HTTP POST to http://myhost.com/messages for the route defined above
 def on_incoming_message(request):
 if request.method == 'POST':
 sender    = request.POST.get('sender')
@@ -99,6 +99,6 @@ file = request.FILES[key]
 
 # Returned text is ignored but HTTP status code matters:
 # Mailgun wants to see 2xx, otherwise it will make another attempt in 5 minutes
-return HttpResponse('OK'){% endcodeblock %}
+return HttpResponse('OK'){{ < / highlight >}}
 
 Mailgun routes are very powerful. For example, you can use regular expression captures and refer to captured values in your destination. With routes, you can also create email addresses (even on the fly) for every user or object or ID in your app to enable very granular behavior. To learn more about Routes, check out the [Routes](http://documentation.mailgun.net/user_manual.html#um-routes) section of the [User Manual](http://documentation.mailgun.net/user_manual.html#user-manual) or contact Mailgun [support](https://mailgun.net/support). The Mailgunners also wrote a [blog post](http://blog.mailgun.net/post/12482374892/handle-incoming-emails-like-a-pro-mailgun-api-2-0) on routes a while ago that has some good additional information. Over the next few weeks we’ll post additional how-tos and sample code, so let us know if there is anything you're wondering how to do!

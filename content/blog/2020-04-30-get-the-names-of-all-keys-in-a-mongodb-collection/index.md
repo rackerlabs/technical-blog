@@ -27,7 +27,7 @@ collection.
 
 <!--more-->
 
-![]({% asset_path 2020-04-30-get-the-names-of-all-keys-in-a-mongodb-collection/Picture1.png %})
+![](Picture1.png)
 
 Many MongoDB-as-a-Service companies, including [ObjectRocket](https://www.objectrocket.com/),
 offer an easy way to do this right in the user interface (UI). Seasoned MongoDB

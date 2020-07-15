@@ -33,7 +33,7 @@ can both help, depending on your marketing automation goals.
 
 <!--more-->
 
-![]({% asset_path 2020-05-12-similarities-and-differences-between-salesforce-marketing-cloud-and-pardot/photo1.png %})
+![](photo1.png)
 
 While both Salesforce Marketing Cloud and Pardot are marketing automation solutions, Pardot is a tool, and Salesforce Marketing Cloud is a toolkit.
 The latter offers clients more options when it comes to business-to-business (B2B) and business-to-customer (B2C) marketing. However, this doesn’t necessarily make it your best choice.

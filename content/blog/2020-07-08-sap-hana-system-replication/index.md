@@ -51,7 +51,7 @@ The primary system commits a transaction after replicating the redo logs. This
 process depends on the replication mode that you selected when you set up the
 system replication.
 
-![]({% asset_path 2020-07-08-sap-hana-system-replication/Picture1.png %})
+![](Picture1.png)
 
 *Image source*: [https://help.sap.com/viewer/4e9b18c116aa42fc84c7dbfd02111aba/2.0.05/en-US/fb06367a182945eb9048f2b0fb788325.html](https://help.sap.com/viewer/4e9b18c116aa42fc84c7dbfd02111aba/2.0.05/en-US/fb06367a182945eb9048f2b0fb788325.html)
 
@@ -123,7 +123,7 @@ data loss&mdash;you might lose data changes during a takeover.
 The following table gives a brief idea about each replication mode's behavior
 when the secondary system is not available:
 
-![]({% asset_path 2020-07-08-sap-hana-system-replication/Picture2.png %})
+![](Picture2.png)
 
 ### Operation Modes
 
@@ -143,7 +143,7 @@ log up to the latest delta data shipment.
 The following image shows this traffic on the transportation channel between the
 primary and secondary systems for the **delta_datashipping** operation mode:
 
-![]({% asset_path 2020-07-08-sap-hana-system-replication/Picture3.png %})
+![](Picture3.png)
 
 *Image source*: [https://help.sap.com/viewer/4e9b18c116aa42fc84c7dbfd02111aba/2.0.05/en-US/dcafdb5742314873b212ebf678d6a96a.html](https://help.sap.com/viewer/4e9b18c116aa42fc84c7dbfd02111aba/2.0.05/en-US/dcafdb5742314873b212ebf678d6a96a.html)
 
@@ -174,7 +174,7 @@ The following figure shows this traffic on the transportation channel between
 the primary and the secondary system for the **logreplay** and
 **logreplay_readaccess** operation modes:
 
-![]({% asset_path 2020-07-08-sap-hana-system-replication/Picture4.png %})
+![](Picture4.png)
 
 *Image source*: [https://help.sap.com/viewer/4e9b18c116aa42fc84c7dbfd02111aba/2.0.05/en-US/dcafdb5742314873b212ebf678d6a96a.htm](https://help.sap.com/viewer/4e9b18c116aa42fc84c7dbfd02111aba/2.0.05/en-US/dcafdb5742314873b212ebf678d6a96a.html)
 

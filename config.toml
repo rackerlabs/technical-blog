@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "https://docs-technical-blog.netlify.app/"
 theme = "docs-developer-hugo-theme"
 copyright = ""
 defaultContentLanguage = "en-us"
@@ -41,7 +41,7 @@ unsafe = false
 xhtml = false
 
 [permalinks]
-    blog = "/blog/:title"
+    blog = "/blog/:filename"
     categories = "/blog/categories/:slug"
     author = "/blog/author/:slug"
 
@@ -124,7 +124,7 @@ xhtml = false
     identifier = "blogs"
     name = "Blogs"
     url = "#"
-    post = "&#9660;"
+    post = ""
     weight = 3
     [[menu.main]]
         identifier = "technical-blog"

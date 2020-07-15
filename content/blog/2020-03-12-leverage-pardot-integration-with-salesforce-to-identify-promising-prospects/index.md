@@ -24,7 +24,7 @@ customer’s level of engagement.
 
 <!--more-->
 
-![]({% asset_path 2020-03-12-leverage-pardot-integration-with-salesforce-to-identify-promising-prospects/Picture1.png %})
+![](Picture1.png)
 
 Pardot has a variety of automation tools, including drip campaigns, where
 marketing teams can send a programmed series of emails to prospects and leads.

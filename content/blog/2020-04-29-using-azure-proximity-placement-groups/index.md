@@ -30,10 +30,10 @@ To set up a PsPing test, I choose one node with and without a proximity placemen
 
 Without a proximity placement group, the following image shows that the count column had a lowest latency of **.20** with a count of 3829, **.27** had 3740, and so forth. The lowest latency with the highest count is important. This shows our overall sends and the latency with which it correlates. We want a majority of the counts to be with the lowest latency.
 
-![]({% asset_path 2020-04-29-azure-ppg/withoutPPG.png %})
+![](withoutPPG.png)
 
 With a proximity placement group, the lowest latency was **.19** and had a count of 6800. 
 
-![]({% asset_path 2020-04-29-azure-ppg/withPPG.png %})
+![](withPPG.png)
 
 You can see the nodes with a proximity placement group had the lowest latency with a majority of packets. If you are not designing specifically for resiliency within a region, think about using a proximity placement group with your design patterns. For examples of adding a proximity placement group in your deployment, refer to the Microsoft [Azure Resource Manager (ARM) template example](https://azure.microsoft.com/en-us/blog/introducing-proximity-placement-groups/) or [PowerShell&reg; example](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/proximity-placement-groups).

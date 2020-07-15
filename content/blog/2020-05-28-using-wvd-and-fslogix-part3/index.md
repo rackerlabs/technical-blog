@@ -136,7 +136,7 @@ host to avoid this issue.
 **Name**: RaxAutomation|Exclude
 **Value**: Monitoring,Passport,Antimalware
 
-![]({% asset_path 2020-05-28-using-wvd-and-fslogix-part1-and-2/Picture5.png %})
+![](Picture5.png)
 
 #### Exchange attribute synchronization considerations
 

@@ -38,7 +38,7 @@ time to an acceptable threshold value with higher data protection.
 
 The following image shows a sample of Far Sync architecture:
 
-![]({% asset_path 2020-04-16-oracle-data-guard-far-sync-zero-data-loss/Picture1.png %})
+![](Picture1.png)
 
 *Image Source*: [https://www.oracle.com/technetwork/database/availability/farsync-2267608.pdf](https://www.oracle.com/technetwork/database/availability/farsync-2267608.pdf)
 

@@ -62,7 +62,7 @@ on this system, and this code checks that the hostname's destination addresses
 returned are on the same network as this system. If they are not on the same
 network, the addresses are considered equal.
 
-![]({% asset_path 2020-05-27-glibc-linux-dns-round-robin-explanation/Picture1.png %})
+![](Picture1.png)
 
 The following samples illustrate what this means:
 

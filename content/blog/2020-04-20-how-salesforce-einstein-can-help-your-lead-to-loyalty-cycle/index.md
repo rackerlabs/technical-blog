@@ -21,7 +21,7 @@ its AI platform, in 2016. The tool has been becoming more robust ever since.
 
 <!--more-->
 
-![]({% asset_path 2020-04-20-how-salesforce-einstein-can-help-your-lead-to-loyalty-cycle/photo1.png %})
+![](photo1.png)
 
 
 Einstein AI technology goes beyond helping just a single

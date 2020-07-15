@@ -31,7 +31,7 @@ a wide array of additional capabilities to Postgres.
 
 <!--more-->
 
-![]({% asset_path 2020-02-24-manage-postgresql-extensions-on-the-objectrocket-service/Picture1.png %})
+![](Picture1.png)
 
 We want to provide you with all of the tools you need to operate production
 databases on the ObjectRocket platform, so we’ve recently added the ability to
@@ -59,9 +59,9 @@ Because we regularly add extensions, running the query always provides the most
 up-to-date list. Following is the current list of both the available and allowed
 extensions on the ObjectRocket service:
 
-![]({% asset_path 2020-02-24-manage-postgresql-extensions-on-the-objectrocket-service/Picture2.png %})
+![](Picture2.png)
 
-![]({% asset_path 2020-02-24-manage-postgresql-extensions-on-the-objectrocket-service/Picture3.png %})
+![](Picture3.png)
 
 ### Loading extensions
 

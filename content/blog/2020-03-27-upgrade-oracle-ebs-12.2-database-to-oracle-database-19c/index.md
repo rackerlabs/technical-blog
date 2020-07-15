@@ -49,7 +49,7 @@ as a multitenant CDB. You should be familiar with the following terms:
 The following figure shows possible containers in a CDB and demonstrates that a
 CDB can support multiple PDBs in Database 19c:
 
-![]({% asset_path 2020-03-27-upgrade-oracle-ebs-12.2-database-to-oracle-database-19c/Picture1.png %})
+![](Picture1.png)
 
 *Image Source*: [https://docs.oracle.com/en/database/oracle/oracle-database/12.2/cncpt/img/admin112.png](https://docs.oracle.com/en/database/oracle/oracle-database/12.2/cncpt/img/admin112.png)
 

@@ -31,7 +31,7 @@ Marketing Cloud.
 
 <!--more-->
 
-![]({% asset_path 2020-02-27-which-departments-should-be-involved-in-setting-up-marketing-cloud-and-why/picture1.png %})
+![](picture1.png)
 
 When you’re ready to implement Marketing Cloud, you need to identify which departments to involve in the
 transition. You should also ensure that you have [well-developed processes in place](https://blog.rackspace.com/4-key-processes-need-capitalize-marketing-automation)

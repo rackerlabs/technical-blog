@@ -1,4 +1,4 @@
-HUGO_VERSION ?= 0.72.0
+HUGO_VERSION ?= 0.74.0
 CONTAINER_RUNTIME ?= docker
 
 install: checkDep

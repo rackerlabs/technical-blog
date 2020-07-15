@@ -53,7 +53,7 @@ images:
     # docker pull mongo:4.0.4
     # docker images
 
-![]({% asset_path 2020-03-04-deploy-mongodb-as-a-docker-container/Picture1.png %})
+![](Picture1.png)
 
 ### Deploy an instance of MongoDB as a container
 
@@ -69,7 +69,7 @@ container's ID. The docker `ps` command shows a list of running containers.
     # docker run -d -v /data/db:/data/db --name mymongo mongo:4.0.4
     # docker ps
 
-![]({% asset_path 2020-03-04-deploy-mongodb-as-a-docker-container/Picture2.png %})
+![](Picture2.png)
 
 ### Interact with the MongoDB Docker container with the shell
 
@@ -82,13 +82,13 @@ deployment, named **mymongo**, and start the bash shell:
 
     # docker exec -it mymongo bash
 
-![]({% asset_path 2020-03-04-deploy-mongodb-as-a-docker-container/Picture3.png %})
+![](Picture3.png)
 
 To launch the MongoDB shell client, run the following command:
 
     # mongo
 
-![]({% asset_path 2020-03-04-deploy-mongodb-as-a-docker-container/Picture4.png %})
+![](Picture4.png)
 
 From the MongoDB shell client, you can access all the functions outlined in the
 MongoDB documentation. For example, you can see what databases exist in your
@@ -96,7 +96,7 @@ instance with the following command:
 
     > show dbs
 
-![]({% asset_path 2020-03-04-deploy-mongodb-as-a-docker-container/Picture5.png %})
+![](Picture5.png)
 
 ### Conclusion
 

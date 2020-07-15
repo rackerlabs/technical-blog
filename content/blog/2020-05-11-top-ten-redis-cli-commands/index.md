@@ -23,7 +23,7 @@ around most of the client’s functionality and features.
 
 <!--more-->
 
-![]({% asset_path 2020-05-11-top-ten-redis-cli-commands/Picture1.png %})
+![](Picture1.png)
 
 Here are the top ten Redis commands:
 
