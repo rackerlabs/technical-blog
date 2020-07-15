@@ -498,7 +498,7 @@ $header-height: 5rem;
         border-radius: 4px;
 
         a {
-          font-weight: 400;
+          font-weight: 600;
           color: $color-dark-grey;
           font-size: 14px;
           line-height: 25px;
@@ -522,4 +522,8 @@ $header-height: 5rem;
       }
     }
   }
+}
+
+.bg-dark {
+  background-color: $color-black !important;
 }

@@ -41,7 +41,7 @@ unsafe = false
 xhtml = false
 
 [permalinks]
-    blog = "/blog/:title"
+    blog = "/blog/:filename"
     categories = "/blog/categories/:slug"
     author = "/blog/author/:slug"
 
