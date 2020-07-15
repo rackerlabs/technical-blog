@@ -11,5 +11,7 @@ public/
 hugo/public/
 dist/
 .tmp/
+resources/assets/
+resources/images
 
 # Don't add files that are created in the build process
