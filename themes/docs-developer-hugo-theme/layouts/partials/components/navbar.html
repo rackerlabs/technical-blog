@@ -11,7 +11,7 @@
         {{- if eq .Identifier "buynow" -}}
         <li class="nav-item buttons-nav-item buy-now" data-signed-out="true">
           <a class="buynow-button button small primary"
-            href="{{ .URL | absURL }}">{{ .Pre }}{{ .Name }}{{ .Post }}</a>
+            href="#">{{ .Pre }}{{ .Name }}{{ .Post }}</a>
             <ul>
               <li><a href="https://cart.rackspace.com/cloud">Rackspace Cloud</a></li>
               <li><a href="https://cart.rackspace.com/apps">Email &amp; Apps</a></li>
@@ -23,7 +23,7 @@
         {{- else if eq .Identifier "login" -}}
         <li class="nav-item buttons-nav-item login" data-signed-out="true">
           <a class="login-button button small secondary"
-            href="{{ .URL | absURL }}">{{ .Pre }}{{ .Name }}{{ .Post }}</a>
+            href="#">{{ .Pre }}{{ .Name }}{{ .Post }}</a>
             <ul>
               <li><a href="https://my.rackspace.com/portal/auth/login">MyRackspace Portal</a></li>
               <li><a href="https://mycloud.rackspace.com">Cloud Control Panel</a></li>

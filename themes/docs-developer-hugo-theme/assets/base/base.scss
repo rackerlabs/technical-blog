@@ -12,15 +12,19 @@ html,
 body {
   -webkit-appearance: none;
   background: $color-white;
-  color: $color-dark;
+  color: $color-black;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   word-wrap: break-word;
   word-break: break-word;
-  font-family: 'open-sans-regular' ,arial,sans-serif;
-  font-size: 14px;
+  font-family: 'titillium-regular','open-sans-regular' ,arial,sans-serif;
+  font-size: 1rem;
   line-height: 1.5;
   font-style: normal;
+  font-weight: 500;
+  p {
+    color: $color-black;
+  }
 }
 
 html.docs,
