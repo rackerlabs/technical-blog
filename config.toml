@@ -39,9 +39,10 @@ autoHeadingIDType = "github"
 hardWraps = false
 unsafe = false
 xhtml = false
+uglyURLs = false
 
 [permalinks]
-    blog = "/blog/:filename"
+    blog = "/blog/:title"
     categories = "/blog/categories/:slug"
     author = "/blog/author/:slug"
 

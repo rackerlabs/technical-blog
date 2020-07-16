@@ -408,6 +408,9 @@ $header-height: 5rem;
 
 .buttons-header {
   background-color: $color-white;
+  .navbar {
+    justify-content: flex-end;
+  }
 }
 
 .buttons-nav-items,

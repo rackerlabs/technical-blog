@@ -7,10 +7,6 @@ body.in-transition {
   transition: transform 0.9s ease;
 }
 
-.container {
-  padding: 0 8vw;
-}
-
 .section.center,
 .container.center {
   @media screen and (max-width: 700px) {
@@ -19,13 +15,8 @@ body.in-transition {
 }
 
 .section {
-  padding: 4rem 0;
   position: relative;
   z-index: 1;
-
-  @media screen and (min-width: 700px) {
-    padding: 8rem 0;
-  }
 }
 
 .center {
@@ -44,30 +35,6 @@ body.in-transition {
 
 .block-wrapper {
   display: flex;
-}
-
-.block-25 {
-  flex: 0 0 25%;
-}
-
-.block-30 {
-  flex: 0 0 30%;
-}
-
-.block-45 {
-  flex: 0 0 45%;
-}
-
-.block-50 {
-  flex: 0 0 50%;
-}
-
-.block-55 {
-  flex: 0 0 55%;
-}
-
-.block-70 {
-  flex: 0 0 70%;
 }
 
 /* Columns */

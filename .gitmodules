@@ -3,4 +3,3 @@
 	path = themes/docs-developer-hugo-theme
 	url = git@github.com:rackerlabs/docs-developer-hugo-theme.git
     branch = master
-	ignore = all
