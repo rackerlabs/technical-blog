@@ -19,21 +19,21 @@
 
 [[redirects]]
   from = "https://docs.rackspace.com/blog/"
-  to = "https://docs-rackspace-com.netlify.app/blog/"
+  to = "https://docs-technical-blog.netlify.app/blog/"
   status = 200
   force = true
   headers = {X-From = "Netlify"}
 
 [[redirects]]
   from = "https://docs.rackspace.com/img/*"
-  to = "https://docs-rackspace-com.netlify.app/img/*"
+  to = "https://docs-technical-blog.netlify.app/img/*"
   status = 200
   force = true
   headers = {X-From = "Netlify"}
   
 [[redirects]]
   from = "https://docs.rackspace.com/favicons/*"
-  to = "https://docs-rackspace-com.netlify.app/favicons/*"
+  to = "https://docs-technical-blog.netlify.app/favicons/*"
   status = 200
   force = true
   headers = {X-From = "Netlify"}
