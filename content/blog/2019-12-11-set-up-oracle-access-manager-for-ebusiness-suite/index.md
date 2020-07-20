@@ -16,8 +16,8 @@ metaTitle: "Set up Oracle Access Manager SSO in E-Business Suite"
 metaDescription: "This blog shows how you can integrate Oracle&reg; Access Manager (OAM) 11g with Oracle E-Business Suite (EBS) by using the WebGate agent."
 ogTitle: "Set up Oracle Access Manager SSO in E-Business Suite"
 ogDescription: "This blog shows how you can integrate Oracle&reg; Access Manager (OAM) 11g with Oracle E-Business Suite (EBS) by using Webgate agent."
+slug: "set up oracle access manager for ebusiness suite" 
 ---
-
 This blog shows how you can integrate Oracle&reg; Access Manager (OAM) 11g with
 Oracle E-Business Suite (EBS) by using the WebGate agent.
 

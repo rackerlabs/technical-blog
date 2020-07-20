@@ -12,6 +12,8 @@ metaTitle: "Four ways Salesforce admins can advocate for Salesforce adoption"
 metaDescription: "If you’re a Salesforce admin and you don’t have a commitment from everyone in your organization, it’s time to get to work."
 ogTitle: "Four ways Salesforce admins can advocate for Salesforce adoption"
 ogDescription: "If you’re a Salesforce admin and you don’t have a commitment from everyone in your organization, it’s time to get to work."
+slug: "four ways salesforce admins can advocate for salesforce adoption" 
+
 ---
 
 Using Salesforce&reg; to manage your customer and prospect data saves time and helps you stay organized. However, for Salesforce to make a difference, you need to get everyone on board. Buy-in from the whole company is key to effectively using a Customer Relationship Manager (CRM). Change can be hard for people, but getting buy-in from the whole organization is worth it in the long run. If you’re a Salesforce admin and you don’t have a commitment from everyone in your organization, it’s time to get to work.

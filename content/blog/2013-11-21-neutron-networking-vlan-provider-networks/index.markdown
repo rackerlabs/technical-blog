@@ -9,6 +9,7 @@ categories:
   - OpenStack
   - Neutron
   - Cloud Networks
+slug: 'neutron-networking-vlan-provider-networks'   
 ---
 
 In this multi-part blog series I intend to dive into the various components of the OpenStack Neutron project, and to also provide working examples of networking configurations for clouds built with [Rackspace Private Cloud](http://www.rackspace.com/cloud/private/) powered by [OpenStack](http://www.openstack.org) on Ubuntu 12.04 LTS.
@@ -23,15 +24,15 @@ VLAN segregation is often used in a web hosting environment where there’s one 
 
 The diagrams below are examples of traditional flat and vlan-segregated networks:
 
-{% img center 2013-11-21-neutron-networking-vlan-provider-networks/VLAN_Provider_1.1.png %}{% img center 2013-11-21-neutron-networking-vlan-provider-networks/VLAN_Provider_1.2.png %}
+![](VLAN_Provider_1.1.png)![](VLAN_Provider_1.2.png)
 
-{% img center 2013-11-21-neutron-networking-vlan-provider-networks/VLAN_Provider_1.3.png %}
+![](VLAN_Provider_1.3.png)
 
 ### VLAN tagging: What is it and how does it work?
 
 At a basic level on a Cisco switch there are two types of switchports: access ports and trunk ports. Switchports configured as access ports are placed into a single vlan and can communicate with other switchports in the same vlan. Switchports configured as trunks allow traffic from multiple vlans to traverse a single interface. The switch adds a tag to the Ethernet frame that contains the corresponding vlan ID as the frame enters the trunk. As the frame exits the trunk on the other side, the vlan  tag is stripped and the traffic forwarded to its destination. Common uses of trunk ports include uplinks to other switches and more importantly in our case, hypervisors serving virtual machines from various networks.
 
-{% img center 2013-11-21-neutron-networking-vlan-provider-networks/VLAN_Provider_1.4.png %}
+![](VLAN_Provider_1.4.png)
 
 ### VLAN Tagging: How does this apply to Neutron?
 
@@ -49,7 +50,7 @@ For this installment, a Cisco ASA 5510 will once again serve as the lead gateway
 
 A single interface on the servers will be used for both management and provider network connectivity.
 
-{% img center 2013-11-21-neutron-networking-vlan-provider-networks/VLAN_Provider_1.5.png %}
+![](VLAN_Provider_1.5.png)
 
 ### Networking: Configuration of network devices
 

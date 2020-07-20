@@ -22,6 +22,7 @@ metaTitle: "Top five Elasticsearch use cases"
 metaDescription: "At ObjectRocket, we've offered hosted Elasticsearch on our platform for a while now. We see clear trends among our customers and how they're using the product."
 ogTitle: "Top five Elasticsearch use cases"
 ogDescription: "At ObjectRocket, we've offered hosted Elasticsearch on our platform for a while now. We see clear trends among our customers and how they're using the product."
+slug: "top five elasticsearch use cases" 
 ---
 
 *Originally published on May 16, 2017, at ObjectRocket.com/blog.*

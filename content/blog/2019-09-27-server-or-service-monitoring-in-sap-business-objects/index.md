@@ -12,8 +12,9 @@ metaTitle: "Server or service monitoring in SAP BusinessObjects"
 metaDescription: "The new monitoring feature of the Central Management Console (CMC) allows administrators to monitor the usage and health of the SAP BusinessObjects (BO) system. "
 ogTitle: "Server or service monitoring in SAP BusinessObjects"
 ogDescription: "The new monitoring feature of the Central Management Console (CMC) allows administrators to monitor the usage and health of the SAP BusinessObjects (BO) system."
----
+slug: "server or service monitoring in sap business objects" 
 
+---
 The new monitoring feature of the Central Management Console (CMC) allows
 administrators to monitor the usage and health of the SAP&reg; BusinessObjects (BO)
 system.

@@ -14,8 +14,8 @@ metaTitle: "Introducing Chef v2"
 metaDescription: "This post introduces the Chef application by Chef and shows how the platform improves the way you administer hardware in a DevOps environment."
 ogTitle: "Introducing Chef v2"
 ogDescription: "This post introduces the Chef application by Chef and shows how the platform improves the way you administer hardware in a DevOps environment."
+slug: "introducing chef v2" 
 ---
-
 This post introduces the Chef application by Chef and shows how the platform
 improves the way you administer hardware in a DevOps environment.
 

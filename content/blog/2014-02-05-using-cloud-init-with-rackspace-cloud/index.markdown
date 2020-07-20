@@ -7,6 +7,7 @@ author: Trey Hoehne
 published: true
 categories:
   - Configuration Management
+slug: 'using-cloud-init-with-rackspace-cloud'   
 ---
 It goes without saying that booting and configuring a server manually
 every time you need one gets old fast. Thankfully there are a number of tools to help

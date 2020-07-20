@@ -7,6 +7,7 @@ author: Ziad Sawlha
 published: true
 categories:
   - General
+slug: 'automated-deployments-now-in-the-rackspace-control-panel' 
 ---
 
 The hardest part about using new technology is knowing where to begin. Spending
@@ -39,7 +40,7 @@ place with simple options that you could select to create your hosting environme
 From the blueprints, a configuration is automatically built on those best practices
 that can be immediately used.
 
-{% img center 2013-08-27-automated-deployments/blueprints.png %}
+![](blueprints.png)
 
 ### Like Chef or Puppet for the cloud
 
@@ -50,7 +51,7 @@ Deployments service comes in. This system looks at the entire topology and
 configures your environment (servers, load balancers and databases) in a holistic
 way, based on best practices, for you to run your application.
 
-{% img center 2013-08-27-automated-deployments/configure.png %}
+![](configure.png)
 
 When it is time to configure the application on a host machine, the Rackspace
 Deployments service uses Chef or Puppet. Ultimately, our deployment offering is
@@ -66,7 +67,7 @@ for prime time. The Rackspace Deployment Service is actively used by the experts
 who know how these applications should run and by Rackers who know how to support
 them if something goes awry.
 
-{% img center 2013-08-27-automated-deployments/build.png %}
+![](build.png)
 
 We are excited to roll out the Rackspace Deployments service and to get it in
 the hands of our customers. To get started, log into the [Rackspace Control Panel][5],

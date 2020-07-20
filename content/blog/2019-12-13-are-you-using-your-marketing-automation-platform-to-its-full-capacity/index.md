@@ -14,6 +14,7 @@ metaDescription: "If you’re using marketing automation only to send out an ema
 ogTitle: "Are you using your marketing automation platform to its full capacity?"
 ogDescription: "If you’re using marketing automation only to send out an email newsletter now and then, you’re missing out on powerful opportunities to engage your customers at every step along the path from lead to loyalty."
 canonical: https://blog.rackspace.com/are-you-using-your-marketing-automation-platform-to-its-full-capacity/
+slug: "are you using your marketing automation platform to its full capacity" 
 ---
 
 If you’re using marketing automation only to send out an email newsletter now

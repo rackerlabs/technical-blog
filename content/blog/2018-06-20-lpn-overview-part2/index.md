@@ -10,6 +10,7 @@ authorAvatar: 'https://s.gravatar.com/avatar/3533f66c2c0826e45a3cf9b8c64ef617'
 categories:
     - Oracle
     - Database
+slug: 'lpn-overview-part2'
 ---
 
 Originally published by Tricore: March 15, 2017

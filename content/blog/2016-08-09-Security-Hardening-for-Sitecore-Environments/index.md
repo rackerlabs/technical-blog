@@ -7,8 +7,9 @@ author: Bruce Lee, Grant Killian, Kelly Rusk, Jimmy Rudley
 published: true
 categories:
     - DevOps
----
+slug: 'Security-Hardening-for-Sitecore-Environments' 
 
+---
 # Security Hardening for Sitecore Environments
 
 We in the [Rackspace Managed Services for Sitecore](https://www.rackspace.com/digital/sitecore) team work with a variety of enterprise Sitecore projects.  Part of our implementation routine is to complete "security hardening" for Sitecore, which means applying the set of published security best-practices from Sitecore.

@@ -17,6 +17,7 @@ ogTitle: "Get all the names in a MongoDB collection"
 ogDescription: "To validate your schema, debug for typos in fields, or find
 fields that you shouldn't set, you need an understanding of all the keys
 in your MongoDB collection."
+slug: "get the names of all keys in a mongodb collection" 
 ---
 
 *Originally published on January 18, 2019 at ObjectRocket.com/blog.*

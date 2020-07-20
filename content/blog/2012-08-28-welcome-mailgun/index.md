@@ -10,9 +10,8 @@ categories:
   - jclouds
   - cloud files
   - java
+slug: "welcome mailgun"
 ---
-
-
 
 Rackspace has [acquired](http://www.rackspace.com/blog/we-are-acquiring-mailgun/) Mailgun. [Mailgun](http://www.mailgun.com/) simplifies email integration into websites and applications. Developers can easily use their powerful set of APIs to send, receive, and track email effortlessly – without managing an email server or becoming an expert in email setup, operations and deliverability. Mailgun is built for developers. It has server-side MIME assembly, which means that no libraries are required. The service allows you to receive event notifications via a webhook, and everything is priced to scale as you scale.
 

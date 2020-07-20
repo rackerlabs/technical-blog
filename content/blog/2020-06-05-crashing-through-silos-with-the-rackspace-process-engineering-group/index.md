@@ -28,7 +28,9 @@ ogDescription: "A grassroots foundation that needs to be agile,
 competitive, and innovative might enter markets without fully integrating
 organizations into core Rackspace tooling. Enter the Process Engineering Group
 (PEG)."
+slug: "mulesoft integration and api platform an introduction"
 ---
+
 <img src="/img/2020-06-05-crashing-through-silos-with-the-rackspace-process-engineering-group/Picture1.png" class="image-right">
 Let's face it.
 Every business unintentionally develops silos or divisions within business units,

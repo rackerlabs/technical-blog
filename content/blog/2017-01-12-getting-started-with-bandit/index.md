@@ -9,6 +9,7 @@ authorIsRacker: true
 categories:
     - security
     - OpenStack
+slug: 'getting-started-with-bandit' 
 ---
 
 One of the many benefits of using and working with Python is its ability to

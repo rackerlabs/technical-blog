@@ -9,8 +9,8 @@ authorIsRacker: true
 categories:
   - database
   - SQL Server
+slug: 'understanding-a-sql-server-execution-plan' 
 ---
-
 How do you read execution plans? From right to left, left to right, or by
 checking out costs? Or what about objects like index scans, table scans, and
 lookups? This blog discusses how to read a Microsoft&reg; SQL Server execution

@@ -12,6 +12,7 @@ metaTitle: "Setting up basic load balancing in Citrix NetScaler"
 metaDescription: "Setting up basic load balancing in Citrix NetScaler"
 ogTitle: "Setting up basic load balancing in Citrix NetScaler"
 ogDescription: "Setting up basic load balancing in Citrix NetScaler"
+slug: 'setting-up-basic-load-balancing-in-citrix-netscaler' 
 ---
 
 The NetScaler Application Delivery Controller (ADC) is a Citrix&reg; Systems

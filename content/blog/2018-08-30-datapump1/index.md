@@ -10,6 +10,8 @@ categories:
   - Oracle
   - database
   - architecture
+slug: 'datapump1'
+
 ---
 
 Originally published by TriCore: June 6, 2017

@@ -14,6 +14,7 @@ metaTitle: "How Rackspace supports VMware on AWS v4"
 metaDescription: "The Rackspace/AWS/VMware&reg; partnership provides you with a powerful combination of technologies for your cloud journey."
 ogTitle: "How Rackspace supports VMware on AWS v4"
 ogDescription: "The Rackspace/AWS/VMware&reg; partnership provides you with a powerful combination of technologies for your cloud journey."
+slug: "how rackspace supports vmware on aws v4" 
 ---
 
 Rackspace helps maximize virtualization advantages!

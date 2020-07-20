@@ -10,6 +10,7 @@ categories:
   - OSAD
   - OpenStack
   - Ansible
+slug: 'operating-your-openstack-cloud-using-ansible' 
 ---
 
 So you have spent months convincing your leadership to go with OpenStack.  Finally the keys of the cloud are turned over to you as the Cloud Operator, and you then look over at your co-workers and say “now what”.  The next set of phrases normally are something like: Now how do we best administer this cloud?  Cloud is suppose to be easier, right?

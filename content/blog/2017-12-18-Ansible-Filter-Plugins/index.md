@@ -9,6 +9,7 @@ authorIsRacker: true
 authorAvatar: 'https://www.gravatar.com/avatar/791617263c70278859e1b26c15d13eab'
 categories:
     - DevOps
+slug: 'Ansible-Filter-Plugins' 
 ---
 
 [Rackspace Application Services](https://www.rackspace.com/en-us/digital/rackspace-application-services) provides application support and management to a wide variety of customers ranging in size from small environments with only a few application servers to customers that run thousands of Java Virtual Machines (or JVMs) across their environment.  To help facilitate this, we heavily rely on [Ansible](https://www.ansible.com/) to help us automate implementation, troubleshooting, and maintenance tasks.  While Ansible is quite powerful and easy to use, many organizations do not take full advantage of some of the features that it provides.  In this article, we'll be discussing how you can extend Jinja2 and Ansible's built-in [filter plugins](https://docs.ansible.com/ansible/latest/dev_guide/developing_plugins.html#filter-plugins) and how you can craft a completely new filter plugin to make specific tasks easier.

@@ -10,6 +10,7 @@ authorAvatar: 'https://en.gravatar.com/userimage/151177997/5bed7e07ee47533cbd34b
 bio: “Jimmy Rudley is an Azure Architect at Rackspace and an active member of the Azure community. He focuses on solving large and complex architecture and automation problems within Azure."
 categories:
     - Azure
+slug: 'Azure-to-Alibaba-VPN' 
 ---
 
 Businesses today are becoming more multi-cloud than ever. When it comes to

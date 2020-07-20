@@ -8,8 +8,8 @@ published: true
 categories:
   - database
   - architecture
+slug: 'case-for-mongo-db-with-aem' 
 ---
-
 #### What is MongoDB?
 
 MongoDB is, among other things, a document-oriented NoSQL database. This means that it

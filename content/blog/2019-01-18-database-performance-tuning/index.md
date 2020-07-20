@@ -13,6 +13,7 @@ metaTitle: "Database performance tuning"
 metaDescription: "Techniques for troubleshooting and tuning Oracle databases."
 ogTitle: "Database performance tuning"
 ogDescription: "Techniques for troubleshooting and tuning Oracle databases."
+slug: 'database-performance-tuning'
 ---
 
 Doing performance tuning on your database is one of the most common and yet the

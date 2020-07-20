@@ -16,6 +16,7 @@ ogTitle: "Rackspace offers Managed Azure Kubernetes Service"
 ogDescription: "We are excited to announce that our most recent enhancement to our managed
 services helps our customers remove the difficulty of architecting, deploying,
 and operating Kubernetes&reg; at scale."
+slug: "Rackspace offers managed azure kubernetes service" 
 ---
 
 As a Microsoft&reg; Azure&reg; Expert Managed Service Provider, Rackspace is

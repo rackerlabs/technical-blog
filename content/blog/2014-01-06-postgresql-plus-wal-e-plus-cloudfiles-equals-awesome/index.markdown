@@ -7,6 +7,7 @@ author: Alex Gaynor
 published: true
 categories:
   - General
+slug: 'postgresql-plus-wal-e-plus-cloudfiles-equals-awesome'   
 ---
 
 If you're a big PostgreSQL fan like I am, you may have heard of a tool called
@@ -170,8 +171,7 @@ there:
 ```
 (postgresql-follower) $ sudo -u postgres psql
 postgres=# select count(*) from foobar;
-  count
-----------
+  countslug: ''   ----------
  10000001
 (1 row)
 

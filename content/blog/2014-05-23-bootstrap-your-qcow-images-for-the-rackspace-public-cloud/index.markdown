@@ -7,6 +7,7 @@ author: Mike Metral
 published: true
 categories:
   - OpenStack
+slug: 'bootstrap-your-qcow-images-for-the-rackspace-public-cloud'   
 ---
 
 In the world of Cloud Computing, hypervisors and disk image formats come in

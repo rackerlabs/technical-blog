@@ -37,6 +37,7 @@ metaTitle: "Announcing the launch of Rackspace Government Cloud on AWS"
 metaDescription: "Rackspace is proud to announce the general availability of Rackspace Government Cloud (RGC) on Amazon&reg; Web Services (AWS)."
 ogTitle: "Announcing the launch of Rackspace Government Cloud on AWS"
 ogDescription: "Rackspace is proud to announce the general availability of Rackspace Government Cloud (RGC) on Amazon&reg; Web Services (AWS)."
+slug: "announcing the launch of rackspace government cloud on aws" 
 ---
 
 Rackspace is proud to announce the general availability of Rackspace Government

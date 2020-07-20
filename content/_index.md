@@ -20,4 +20,5 @@ cta:
   calls_to_action: []
 private: false
 aliases: []
+slug: '/blog/'
 ---

@@ -8,6 +8,7 @@ authorIsRacker: true
 published: true
 categories:
   - Oracle
+slug: 'hyperion-smart-view-connections' 
 ---
 
 Originally published by TriCore: Sept 12, 2017

@@ -19,8 +19,8 @@ metaTitle: "Oracle GoldenGate microservices architecture"
 metaDescription: "You can use OGG MA to configure and manage data replication by using an HTML user interface."
 ogTitle: "Oracle GoldenGate microservices architecture"
 ogDescription: "You can use OGG MA to configure and manage data replication by using an HTML user interface."
+slug: "oracle goldengate microservices architecture" 
 ---
-
 Oracle&reg; GoldenGate&reg; supports two architectures: the classic architecture
 and the Oracle GoldenGate Microservices Architecture (OGG MA).
 

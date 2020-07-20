@@ -22,6 +22,7 @@ metaTitle: "Manage PostgreSQL extensions on the ObjectRocket service"
 metaDescription: "The PostgreSQL (Postgres) extensions ecosystem is extremely robust and provides a wide array of additional capabilities to Postgres."
 ogTitle: "Manage PostgreSQL extensions on the ObjectRocket service"
 ogDescription: "The PostgreSQL (Postgres) extensions ecosystem is extremely robust and provides a wide array of additional capabilities to Postgres."
+slug: "manage postgresql extensions on the objectrocket service" 
 ---
 
 *Originally published February 13, 2020 at ObjectRocket.com/blog.*

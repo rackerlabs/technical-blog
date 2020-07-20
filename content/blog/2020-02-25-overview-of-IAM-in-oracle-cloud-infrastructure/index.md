@@ -16,6 +16,7 @@ metaTitle: "Overview of IAM in Oracle Cloud Infrastructure"
 metaDescription: "This blog post introduces the Oracle&reg; Cloud Infrastructure (OCI) Identity and Access Management (IAM) components and shows some features that help you to manage Oracle cloud resources."
 ogTitle: "Overview of IAM in Oracle Cloud Infrastructure"
 ogDescription: "This blog post introduces the Oracle&reg; Cloud Infrastructure (OCI) Identity and Access Management (IAM) components and shows some features that help you to manage Oracle cloud resources."
+slug: "overview of IAM in oracle cloud infrastructure" 
 ---
 
 This blog post introduces the Oracle&reg; Cloud Infrastructure (OCI) Identity

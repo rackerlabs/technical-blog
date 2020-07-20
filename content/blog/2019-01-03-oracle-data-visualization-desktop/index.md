@@ -13,6 +13,7 @@ metaTitle: "Oracle Data Visualization Desktop"
 metaDescription: "How to use the Oracle Data Visualization Desktop to analyze data"
 ogTitle: "Oracle Data Visualization Desktop"
 ogDescription: "How to use the Oracle Data Visualization Desktop to analyze data"
+slug: "oracle data visualization desktop" 
 ---
 
 This blog covers how to use the Oracle&reg; Data Visualization Desktop (DVD) to

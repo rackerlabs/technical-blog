@@ -13,6 +13,7 @@ metaTitle: "Integrate Oracle EBS with OAM"
 metaDescription: "To integrate multiple E-Business Suites (EBS) with OAM for single sign-on, you need to perform integration steps on each Oracle E-Business Suite instance."
 ogTitle: "Integrate Oracle EBS with OAM"
 ogDescription: "To integrate multiple E-Business Suites (EBS) with OAM for single sign-on, you need to perform integration steps on each Oracle E-Business Suite instance."
+slug: "integrate oracle ebs with oam" 
 ---
 
 Oracle&reg; Access Manager (OAM) version 12.2.1.3 provides identity management and an

@@ -11,8 +11,8 @@ authorAvatar: 'https://www.gravatar.com/avatar/c1a75adb52f40016a480cee292527895'
 published: true
 categories:
   - General
+slug: 'principles-for-a-successful-developer-workshop' 
 ---
-
 <img class="blog-post right" src="qcon1.jpg"/>Running a successful developer workshop (aka tutorial) is really difficult. I've attended enough workshops that have gone poorly to know that for a fact. Participating in such a workshop can be very frustrating and a huge turn off for whatever technology is being presented. That translates directly into losing developer mindshare. I think we, as an industry, can do a better job of running developer workshops.
 
 <!--more-->

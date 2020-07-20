@@ -8,6 +8,7 @@ published: true
 categories:
   - openstack
   - osad
+slug: 'keystone-to-keystone-federation-with-openstack-ansible' 
 ---
 
 Federation support in OpenStack has been greatly improved in the Kilo release,

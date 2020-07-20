@@ -15,6 +15,7 @@ metaTitle: "Web proxy server and deployment"
 metaDescription: "This post discusses web proxy servers and how to deploy them."
 ogTitle: "Web proxy server and deployment"
 ogDescription: "This post discusses web proxy servers and how to deploy them."
+slug: "web proxy server and deployment" 
 ---
 
 A proxy server is a computer system that sits between the client that requests

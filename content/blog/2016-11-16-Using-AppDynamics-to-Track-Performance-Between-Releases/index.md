@@ -9,6 +9,7 @@ authorIsRacker: true
 authorAvatar: 'https://www.gravatar.com/avatar/791617263c70278859e1b26c15d13eab'
 categories:
     - DevOps
+slug: 'Using-AppDynamics-to-Track-Performance-Between-Releases' 
 ---
 
 As we've discussed in previous posts, [AppDynamics](https://www.appdynamics.com) is a powerful Application Performance Management (APM) tool that can be used to help tune performance in your application.  However, with many organizations adopting a CI/CD approach to their application development lifecycle, it can be difficult to determine how these frequent deployments are affecting application performance and end-user experience.

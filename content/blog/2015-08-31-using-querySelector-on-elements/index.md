@@ -9,8 +9,8 @@ authorAvatar: "https://s.gravatar.com/avatar/1846c8040fcf70e9b55bb7bfcdb78bc4"
 published: true
 categories:
   - General
+slug: 'using-querySelector-on-elements' 
 ---
-
 Modern browsers have APIs called `querySelector` and `querySelectorAll`. They
 find one or more elements matching a CSS selector. I'm assuming basic
 familiarity with CSS selectors: how you select elements, classes and ids. If

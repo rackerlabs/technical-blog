@@ -8,6 +8,7 @@ published: true
 categories:
   - OpenStack
   - OSAD
+slug: 'install-openstack-from-source' 
 ---
 
 Installing OpenStack has always been challenging. Due to the complexity and

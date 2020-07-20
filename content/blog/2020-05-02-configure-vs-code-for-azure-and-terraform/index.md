@@ -19,6 +19,7 @@ for Azure&reg; DevOps, Hashicorp&reg; Terraform&reg;, and Git repositories. "
 ogTitle: "Configure Visual Studio Code for Azure and Terraform"
 ogDescription: "This post describes how to easily configure and use Visual Studio&reg; Code
 for Azure&reg; DevOps, Hashicorp&reg; Terraform&reg;, and Git repositories. "
+slug: "configure vs code for azure and terraform" 
 ---
 
 This post describes how to easily configure and use Visual Studio&reg; Code (VS Code)

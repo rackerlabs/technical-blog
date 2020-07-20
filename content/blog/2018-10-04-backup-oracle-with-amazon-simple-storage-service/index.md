@@ -14,6 +14,7 @@ categories:
   - Oracle
   - database
   - aws
+slug: 'backup-oracle-with-amazon-simple-storage-service' 
 ---
 
 This blog post reviews how to use Amazon Simple Storage Service (S3), as storage

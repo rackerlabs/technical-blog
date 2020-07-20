@@ -11,6 +11,7 @@ Powered by VMware. Ning Zhang has years of experience in automation testing,
 performance testing, agile development and CI/CD."
 categories:
     - Automation
+slug: 'Introduction-to-load-and-performance-testing-with-gatling-tool' 
 ---
 
 This blog explores the fundamentals of Load and Performance Testing as well as
@@ -89,27 +90,27 @@ The following images show these dashboard metrics:
 
 **Indicators**
 
-{% img center 2018-11-29-Introduction-to-load-and-performance-testing-with-gatling-tool/charts-indicators.png %}
+![](charts-indicators.png)
 
 **Statistics**
 
-{% img center 2018-11-29-Introduction-to-load-and-performance-testing-with-gatling-tool/charts-statistics.png %}
+![](charts-statistics.png)
 
 **Active users over time**
 
-{% img center 2018-11-29-Introduction-to-load-and-performance-testing-with-gatling-tool/charts-users.png %}
+![](charts-users.png)
 
 **Requests per second over time**
 
-{% img center 2018-11-29-Introduction-to-load-and-performance-testing-with-gatling-tool/charts-requests-per-sec.png %}
+![](charts-requests-per-sec.png)
 
 **Response time percentiles over time**
 
-{% img center 2018-11-29-Introduction-to-load-and-performance-testing-with-gatling-tool/charts-response-percentiles-per-sec.png %}
+![](charts-response-percentiles-per-sec.png)
 
 **Response time distribution**
 
-{% img center 2018-11-29-Introduction-to-load-and-performance-testing-with-gatling-tool/charts-distrib.png %}
+![](charts-distrib.png)
 
 **Jenkins Gatling plugin**
 
@@ -119,7 +120,7 @@ Integration pipelines. For instance, you can choose the useful
 to keep track of a Gatling simulation providing performance trends across builds,
 and publish detailed reports for each build.
 
-{% img center 2018-11-29-Introduction-to-load-and-performance-testing-with-gatling-tool/jenkins-dashboard.png %}
+![](jenkins-dashboard.png)
 
 ### Run a simple performance test with Gatling
 
@@ -140,15 +141,15 @@ done with a Google Chrome browser on Mac in this demo.)
 
 2. Open proxy settings, and click **Advanced** at the bottom of the page.
 
-    {% img center 2018-11-29-Introduction-to-load-and-performance-testing-with-gatling-tool/configuring-browser-1.png %}
+    ![](configuring-browser-1.png)
 
-    {% img center 2018-11-29-Introduction-to-load-and-performance-testing-with-gatling-tool/configuring-browser-2.png %}
+    ![](configuring-browser-2.png)
 
 3. Go to Proxies tab, check **Web Proxy (HTTP)** and **Secure Web Proxy (HTTPS)**, and type the address (**127.0.0.1**) and the port (**8000**).
 
-    {% img center 2018-11-29-Introduction-to-load-and-performance-testing-with-gatling-tool/configuring-browser-3.png %}
+    ![](configuring-browser-3.png)
 
-    {% img center 2018-11-29-Introduction-to-load-and-performance-testing-with-gatling-tool/configuring-browser-4.png %}
+    ![](configuring-browser-4.png)
 
 4. Close the browser window.
 
@@ -173,14 +174,14 @@ Note that `Java.exe` is required to open the recorder window.
 
     2.6 Click **Start**.
 
-{% img center 2018-11-29-Introduction-to-load-and-performance-testing-with-gatling-tool/gatling-recorder-1.png %}
+![](gatling-recorder-1.png)
 
 <ol start=3>
     <li>  Open the Google Chrome browser, go to the URL: https://computer-database.gatling.io/, and try some operations on this page. The executed events can be observed in the recorder window. Click <b>Stop & Save</b>.</li>
 </ol>
 
 
-{% img center 2018-11-29-Introduction-to-load-and-performance-testing-with-gatling-tool/gatling-recorder-2.png %}
+![](gatling-recorder-2.png)
 
 #### Edit the Gatling script
 
@@ -188,7 +189,7 @@ After you finish the recording, find the simulation results stored in the folder
 _/gatling-charts-highcharts-bundle-3.0.1.1/user-files/simulations/gatlingExample_
 under the name _gatlingExampleSimulation.scala_. Here is the produced output:
 
-{% img center 2018-11-29-Introduction-to-load-and-performance-testing-with-gatling-tool/gatling-script.png %}
+![](gatling-script.png)
 
 The simulation script is written in Scala, and you can edit it based on the
 needs of your test scenario.
@@ -198,7 +199,7 @@ needs of your test scenario.
 Launch `gatling.sh` located in the bin directory, and you should see a menu
 with the simulation examples:
 
-{% img center 2018-11-29-Introduction-to-load-and-performance-testing-with-gatling-tool/gatling-script-output.png %}
+![](gatling-script-output.png)
 
 Select the ID number of the simulation that you want to execute. When the
 simulation is done, the console displays a link to the HTML reports.
@@ -219,7 +220,7 @@ for it. Check out available versions on [Maven Central](https://search.maven.org
 After creating a Maven project on your local, the setup in pom.xml file looks
 more or less like this:
 
-{% img center 2018-11-29-Introduction-to-load-and-performance-testing-with-gatling-tool/pom-xml.png %}
+![](pom-xml.png)
 
 In **pom.xml**, you can configure things like the multiple simulations’ execution,
 includes/excludes filters, etc. Check the

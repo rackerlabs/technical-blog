@@ -9,6 +9,7 @@ published: true
 categories:
   - Security
   - Cloud Servers
+slug: 'stats-from-an-ssh-honeypot' 
 ---
 
 I decided to run an ssh honeypot in my Cloud Server on the Internet.  While this

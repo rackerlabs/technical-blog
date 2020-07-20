@@ -8,6 +8,7 @@ published: true
 categories:
   - OpenStack
   - Neutron
+slug: 'beginning-to-understand-neutron-provider-and-tenant-networks-in-openstack'   
 ---
 
 OpenStack is composed of many different projects. The core projects

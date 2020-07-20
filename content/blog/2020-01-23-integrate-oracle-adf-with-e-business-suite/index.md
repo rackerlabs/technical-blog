@@ -16,8 +16,8 @@ metaTitle: "Integrate Oracle ADF with E-Business Suite"
 metaDescription: "The blog post explains how to integrate Oracle&reg; Application Development Framework (ADF) with E-Business Suite (EBS) Supply Planning Work Area (SWPA)."
 ogTitle: "Integrate Oracle ADF with E-Business Suite"
 ogDescription: "The blog post explains how to integrate Oracle&reg; Application Development Framework (ADF) with E-Business Suite (EBS) Supply Planning Work Area (SWPA)."
+slug: "integrate oracle adf with e-business suite" 
 ---
-
 The blog post explains how to integrate Oracle&reg; Application Development
 Framework (ADF) with E-Business Suite (EBS) Supply Planning Work Area (SWPA).
 

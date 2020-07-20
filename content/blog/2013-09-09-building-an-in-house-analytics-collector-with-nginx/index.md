@@ -6,7 +6,9 @@ comments: true
 author: Gabriel Preda
 published: true
 categories: []
+slug: 'building-an-in-house-analytics-collector-with-nginx' 
 ---
+
 There is a bigger need of web analytics out there than any single provider can offer (pun intended). Our in-house analytics system was tightly coupled into our web application because it grew along with it. It was about time we decoupled the analytics system.
 
 We needed something very...

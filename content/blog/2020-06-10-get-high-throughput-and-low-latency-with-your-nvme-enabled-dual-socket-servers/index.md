@@ -17,6 +17,7 @@ ogTitle: "Get high throughput and low latency with your socket servers"
 ogDescription: "In this blog post, I explore the impact of non-uniform memory
 access (NUMA) controls in Linux&reg; operating systems to determine the impact
 of latency and overall throughput."
+slug: "get high throughput and low latency with your nvme-enabled dual socket servers" 
 ---
 
 The need for access to high-speed, low-latency storage systems has become

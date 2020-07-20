@@ -17,6 +17,7 @@ metaTitle: "Introduction to Oracle Secure Backup in AWS"
 metaDescription: "You can backup Oracle&reg; databases in Amazon&reg; Web Services (AWS) starting with Oracle Database 9i Release 2 or later by using the Oracle Secure Backup (OSB) cloud module, but remember that OSB does not back up operating system files."
 ogTitle: "Introduction to Oracle Secure Backup in AWS"
 ogDescription: "You can backup Oracle&reg; databases in Amazon&reg; Web Services (AWS) starting with Oracle Database 9i Release 2 or later by using the Oracle Secure Backup (OSB) cloud module, but remember that OSB does not back up operating system files."
+slug: "introduction to oracle secure backup in aws" 
 ---
 
 You can backup Oracle&reg; databases in Amazon&reg; Web Services (AWS) starting

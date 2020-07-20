@@ -7,9 +7,11 @@ author: Allen Oster
 published: true
 categories:
   - General
+slug: 'why-i-use-saltstack' 
 ---
 
-{% img right 2013-08-16-join-the-great-salt-sprint/saltstack_logo.jpg 200 %}
+
+![](saltstack_logo.jpg)
 
 I am part of a team (along with Bruce Stringer and Jason Swindle) working on an
 internal application called Graffiti, which provides an easy way for front-line

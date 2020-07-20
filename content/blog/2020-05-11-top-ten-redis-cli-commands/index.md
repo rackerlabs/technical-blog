@@ -13,6 +13,7 @@ metaTitle: "Top ten Redis CLI commands"
 metaDescription: "Redis uses a very straightforward command line interface. Though it’s relatively simple, it does provide some interesting features that one might not expect. Let’s go over some of the basics and work our way around most of the client’s functionality and features."
 ogTitle: "Top ten Redis CLI commands"
 ogDescription: "Redis uses a very straightforward command line interface. Though it’s relatively simple, it does provide some interesting features that one might not expect. Let’s go over some of the basics and work our way around most of the client’s functionality and features."
+slug: "rackspace offers data modernization" 
 ---
 
 *Originally published on April 14, 2015, at ObjectRocket.com/blog.*

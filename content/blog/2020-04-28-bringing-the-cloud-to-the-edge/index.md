@@ -21,8 +21,8 @@ ogTitle: "Bringing the cloud to the edge"
 ogDescription: "Edge computing provides you with the capability to move
 application workloads anywhere that you need computing outside of your public
 or private cloud environment."
+slug: "bringing the cloud to the edge" 
 ---
-
 The internet of things (IoT) keeps expanding and creating opportunities in many
 different areas and thereby shaping new business models that meet customers'
 needs. Opportunities, productivity, and growth all rely on data.

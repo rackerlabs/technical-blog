@@ -9,8 +9,8 @@ authorIsRacker: true
 categories:
   - Oracle
   - database
+slug: 'ad-online-patching' 
 ---
-
 This blog describes the Oracle &reg; AD Online Patching (adop) utility phases, the patch
 process cycle steps, and some useful adop commands and tips.
 

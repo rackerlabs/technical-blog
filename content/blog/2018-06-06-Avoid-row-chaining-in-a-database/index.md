@@ -8,6 +8,7 @@ published: true
 authorIsRacker: true
 categories:
     - Oracle
+slug: 'Avoid-row-chaining-in-a-database' 
 ---
 
 Originally published by Tricore: Dec 21, 2017

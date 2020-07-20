@@ -8,6 +8,8 @@ published: true
 authorIsRacker: true
 categories:
     - General
+slug: 'oms-rollback'
+
 ---
 
 Originally published by TriCore: January 17, 2017

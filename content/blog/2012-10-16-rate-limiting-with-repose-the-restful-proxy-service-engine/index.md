@@ -7,8 +7,8 @@ author: Chad Lung
 categories:
   - General
   - OpenStack
+slug: 'rate limiting with repose the restful proxy service engine' 
 ---
-
 _Chad Lung is a software engineer on the Rackspace Cloud Integration team and
 is the maintainer of Atom Hopper. Be sure to check out his personal blog at
 [http://www.giantflyingsaucer.com/blog/](http://www.giantflyingsaucer.com/blog/)

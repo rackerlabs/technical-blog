@@ -8,6 +8,7 @@ published: true
 categories:
   - OpenStack
   - OSAD
+slug: 'install-openstack-from-source5' 
 ---
 
 This is the fifth installment in a series of installing OpenStack from source. The four previous articles can be found here:

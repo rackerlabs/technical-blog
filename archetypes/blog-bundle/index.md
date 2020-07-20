@@ -14,7 +14,10 @@ metaTitle: "{{ replace .Name "-" " " | title }}"
 metaDescription: "."
 ogTitle: "{{ replace .Name "-" " " | title }}"
 ogDescription: "."
+slug: '' 
+
 ---
+
 ### Overview
 <!---![](Picture1.png)--->
 ### Conclusion

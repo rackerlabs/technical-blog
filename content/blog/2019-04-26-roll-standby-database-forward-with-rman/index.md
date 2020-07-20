@@ -13,6 +13,7 @@ metaTitle: "Roll a standby database forward with RMAN"
 metaDescription: "This blog shows you how to use the Oracle&reg; Recovery Manager (RMAN) incremental backup to roll the standby database forward faster than by using a redo log apply."
 ogTitle: "Roll a standby database forward with RMAN"
 ogDescription: "This blog shows you how to use the Oracle&reg; Recovery Manager (RMAN) incremental backup to roll the standby database forward faster than by using a redo log apply."
+slug: "roll standby database forward with rman" 
 ---
 
 If a physical standby database loses or corrupts an archived redo data or

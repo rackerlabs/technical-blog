@@ -10,8 +10,8 @@ authorAvatar: 'https://s.gravatar.com/avatar/3533f66c2c0826e45a3cf9b8c64ef617'
 categories:
     - Oracle
     - Database
+slug: 'lpn-overview-part1' 
 ---
-
 Originally published by Tricore: March 14, 2017
 
 In this two-part series, we'll discuss License Plate Numbers (LPN) in

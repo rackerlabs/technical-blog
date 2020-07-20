@@ -16,6 +16,7 @@ metaTitle: "Enable Oracle audits at the operating system level"
 metaDescription: "Protect audit files from tampering."
 ogTitle: "Enable Oracle audits at the operating system level"
 ogDescription: "Protect audit files from tampering."
+slug: "enable oracle audits at the operating system level" 
 ---
 
 Occasionally, you might need to audit all the actions of the Oracle&reg; Database

@@ -20,8 +20,8 @@ configuration of version 9.3 on Linux&reg;."
 ogTitle: "PostgreSQL administration, Part 1"
 ogDescription: "This post introduces PostgreSQL and walks you through the installation and
 configuration of version 9.3 on Linux&reg;."
+slug: "postgresql administration part 1" 
 ---
-
 This post introduces PostgreSQL and walks you through the installation and
 configuration of version 9.3 on Linux&reg;.
 

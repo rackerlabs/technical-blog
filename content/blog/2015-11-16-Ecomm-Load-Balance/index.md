@@ -7,8 +7,8 @@ author: Jonathan Hurley
 published: true
 categories:
   - architecture
+slug: 'Ecomm-Load-Balance' 
 ---
-
 ### Prelude
 
 Before getting into the nuts and bolts of the load balancing architecture itself, it's

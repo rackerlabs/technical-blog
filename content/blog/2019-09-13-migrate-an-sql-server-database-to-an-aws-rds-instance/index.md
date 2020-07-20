@@ -13,6 +13,7 @@ metaTitle: "Migrate a SQL Server database to an AWS RDS instance"
 metaDescription: "This blog explains how to move a Microsoft&reg; SQL Server&reg; database to Amazon Relational Database Service (RDS)."
 ogTitle: "Migrate a SQL Server database to an AWS RDS instance"
 ogDescription: "This blog explains how to move a Microsoft&reg; SQL Server database to Amazon Relational Database Service (RDS)."
+slug: "migrate an sql server database to an aws rds instance" 
 ---
 
 This blog explains how to move a Microsoft&reg; SQL Server&reg; database hosted

@@ -13,6 +13,7 @@ metaTitle: "Understand the Oracle Exadata Smart Scan feature"
 metaDescription: "This blog delves into the details of the Oracle Exadata Smart Scan feature with usage samples."
 ogTitle: "Understand the Oracle Exadata Smart Scan feature"
 ogDescription: "This blog delves into the details of the Oracle Exadata Smart Scan feature with usage samples."
+slug: "oracle exadata smart scan feature" 
 ---
 
 This blog delves into the details of the Oracle&reg; Exadata&reg; Smart Scan

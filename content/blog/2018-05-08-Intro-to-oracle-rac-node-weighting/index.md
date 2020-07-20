@@ -9,8 +9,8 @@ authorIsRacker: true
 categories:
   - Oracle
   - database
+slug: 'Intro-to-oracle-rac-node-weighting' 
 ---
-
 In an Oracle Real Application Clusters (RAC) environment, all the
 instances or servers communicate with each other using high-speed interconnects
 on the private network. If the instance members in a RAC fail to ping or to

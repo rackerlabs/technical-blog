@@ -7,6 +7,7 @@ author: Angela Streeter
 published: true
 categories: []
 bio: "Angela Streeter is a cloud technology instructor at Rackspace, where she teaches OpenStack in public and private training sessions. Angela and her team spend their time evangelizing OpenStack through training, blogs and contributions. Angela graduated from Texas State University with a BS in computer science and a minor in mathematics. She has worked as a software developer and prior to the training team was a linux systems administrator at Rackspace for the customer support teams. Angela's twitter handle and freenode nick is angelastreeter. Angela blogs at http://streetstack.net."
+slug: 'adding-devices-to-an-existing-swift-cluster'   
 ---
 
 If you already have an existing Swift cluster and you would like to add additional storage, you can use the swift-ring-builder command on the ring builder files from any server that you have the utility installed on. Once you update the files, you will need to push them out to all the nodes in your cluster.

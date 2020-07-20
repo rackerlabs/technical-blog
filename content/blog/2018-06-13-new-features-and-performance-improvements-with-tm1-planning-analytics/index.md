@@ -8,8 +8,9 @@ published: true
 authorIsRacker: true
 categories:
     - General
----
+slug: 'new-features-and-performance-improvements-with-tm1-planning-analytics'
 
+---
 Originally published by Tricore: Sep 21, 2017
 
 Planning Analytics integrates business planning, performance measurement, and

@@ -9,6 +9,7 @@ categories:
   - Chef
   - Configuration Management
   - Cloud Servers
+slug: 'step-by-step-walkthrough-to-using-chef-to-bootstrap-windows-nodes-on-the-rackspace-cloud'   
 ---
 
 If you are a frequent reader of this blog you will have seen Hart's posts about "Cooking with Chef":

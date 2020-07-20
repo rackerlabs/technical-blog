@@ -17,8 +17,8 @@ categories:
     - Security
     - Developers
     - Orchestration
+slug: 'fanatical-quality-engineering-in-rackspace-vmware-area' 
 ---
-
 In Rackspace's VMware Practice Area, we value the quality of our products very
 much, and we believe that quality is a team effort. The Quality Engineering (QE)
 team works with the Development team, Project Management team, Product

@@ -10,8 +10,8 @@ authorAvatar: 'https://en.gravatar.com/userimage/151177997/5bed7e07ee47533cbd34b
 bio: “Jimmy Rudley is an Azure Architect at Rackspace and an active member of the Azure community. He focuses on solving large and complex architecture and automation problems within Azure."
 categories:
     - Azure
+slug: 'Automate-Azure-Basic-Web-App-Backups' 
 ---
-
 Azure provides backup and restore functionality when using a Standard or Premium
 App Service plan. That leaves web apps using a Basic App Service plan without a
 backup solution. In a perfect world, you would have everything in source control

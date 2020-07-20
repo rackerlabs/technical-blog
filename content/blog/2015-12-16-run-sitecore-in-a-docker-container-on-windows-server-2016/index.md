@@ -9,6 +9,8 @@ authorAvatar: 'https://en.gravatar.com/userimage/151177997/5bed7e07ee47533cbd34b
 bio: “Jimmy Rudley is an Azure Architect at Rackspace and an active member of the Azure community. He focuses on solving large and complex architecture and automation problems within Azure."
 categories:
   - Docker
+slug: 'run-sitecore-in-a-docker-container-on-windows-server-2016' 
+
 ---
 
 At SUGCON 2015, Rackspace and Hedgehog presented about how using Docker will shape the way we work with Sitecore, an ASP.Net web content management system. With the release of Windows Server 2016 Technical Preview 4, we are now able to run Sitecore in a Docker container. 

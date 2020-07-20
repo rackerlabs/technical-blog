@@ -9,9 +9,12 @@ authorIsRacker: true
 categories:
   - Oracle
   - database
+slug: 'odb-tuning1' 
+
 ---
 
 Originally published by TriCore: April 11, 2017
+
 
 This two-part blog post series covers new performance-tuning features of
 Oracle&reg; Database versions 12.1.0.1 and 12.1.0.2. Part 1 discusses the

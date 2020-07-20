@@ -9,6 +9,7 @@ authorIsRacker: true
 categories:
   - Oracle
   - database
+slug: 'troublsheooting-hung-databases-with-raddm' 
 ---
 
 Oracle&reg; Enterprise Manager (OEM) 12c and 13c includes many performance

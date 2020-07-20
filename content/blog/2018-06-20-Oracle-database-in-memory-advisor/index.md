@@ -10,8 +10,9 @@ categories:
   - Oracle
   - database
   - architecture
----
+slug: 'Oracle-database-in-memory-advisor' 
 
+---
 This post describes the Oracle&reg; In-Memory Advisor (IMA), a feature of
 Database 12c, and describes its benefits. This feature is available in Oracle
 Database version 12.1.0.2 and later.

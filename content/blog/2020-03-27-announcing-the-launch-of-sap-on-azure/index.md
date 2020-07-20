@@ -15,6 +15,7 @@ metaTitle: "Announcing the launch of SAP on Azure"
 metaDescription: "Rackspace just released a minor enhancement to Rackspace Application Services for SAP to help our SAP on Microsoft&reg; Azure&reg; customers migrate to SAP S/4HANA."
 ogTitle: "Announcing the launch of SAP on Azure"
 ogDescription: "Rackspace just released a minor enhancement to Rackspace Application Services for SAP to help our SAP on Microsoft&reg; Azure&reg; customers migrate to SAP S/4HANA."
+slug: "announcing the launch of sap on azure" 
 ---
 
 Rackspace just released a minor enhancement to Rackspace Application Services

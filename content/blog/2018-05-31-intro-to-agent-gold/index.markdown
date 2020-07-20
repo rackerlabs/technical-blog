@@ -8,6 +8,7 @@ published: true
 authorIsRacker: true
 categories:
     - Oracle
+slug: 'intro-to-agent-gold'   
 ---
 
 Originally published by Tricore: May 25, 2017

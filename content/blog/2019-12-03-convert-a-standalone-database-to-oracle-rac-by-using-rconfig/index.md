@@ -19,8 +19,8 @@ metaTitle: "Convert a standalone database to Oracle RAC by using rconfig"
 metaDescription: "Have you ever wondered how to convert a standalone database to an Oracle&reg; Real Application Clusters (RAC) database?"
 ogTitle: "Convert a standalone database to Oracle RAC by using rconfig"
 ogDescription: "Have you ever wondered how to convert a standalone database to an Oracle&reg; Real Application Clusters (RAC) database?"
+slug: "convert a standalone database to oracle rac by using rconfig" 
 ---
-
 Have you ever wondered how to convert a standalone database to an Oracle&reg;
 Real Application Clusters (RAC) database?
 

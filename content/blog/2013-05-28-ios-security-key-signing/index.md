@@ -6,8 +6,10 @@ comments: true
 author: Tokunbo George
 published: true
 categories: []
+slug: 'ios-security-key-signing' 
 ---
-{% img right 2013-05-28-ios-security-key-signing/xcode_icon.png 200 %}
+
+<img class='image-right' src='xcode_icon.png'/>
 At Rackspace, we're working very hard to support the ever-growing platform of mobile. We're working hard to design a cloud-based mobile platform for developers and on the next generation of our mobile applications. Over the years we have developed a number mobile applications to interact with our services, but we recently made a conscious decision to improve them to more "fanatical" standards.
 
 Possibly one of the hardest things about mobile testing is the infrastructure needed to support it. There are various vendors that provide some of this infrastructure, but there are few established best practices for how to build things in-house if you want to do more than run your tests on a local simulator. While we plan to rely on some of the work our friends at [Sauce Labs][1] have been cooking up, we also built a sizable chunk of testing infrastructure in-house.

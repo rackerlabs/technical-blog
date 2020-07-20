@@ -8,6 +8,7 @@ published: true
 categories:
   - Cloud Servers
   - OpenStack
+slug: 'introducing-boot-dot-rackspace-dot-com'   
 ---
 
 We have had a number of customers request the need to be able to create their own Cloud Servers images rather than taking snapshots from our base installs.  To fulfill this need, we are announcing a new tool as a preview today called [boot.rackspace.com](http://boot.rackspace.com).  The tool enables you to utilize the various Linux distributions installers to install directly to the disk of your Cloud Server. <!-- more -->
@@ -19,7 +20,7 @@ You will need to connect to the console of the Cloud Server in order to view the
 
 Each option will either kick off the install kernels from the various operating systems or automatically load up the ISO to the Cloud Server.  From there you can customize your Cloud Server to your hearts content and install directly to the OS disk.  Once completed, you can install the Rackspace Cloud Agent, take a snapshot, and then redeploy the image as your golden master.  We have also initially included a few useful tools like [Clonezilla](http://clonezilla.org/) for moving data around.
 
-{% img center 2014-01-23-introducing-boot-dot-rackspace-dot-com/brc-linux-menu.png %}
+![](brc-linux-menu.png)
 
 # Contributing
 We've put all the source for the iPXE scripts on [Github](https://github.com/rackerlabs/boot.rackspace.com/) and welcome contributions.  We've also written up some [how-to's](https://github.com/rackerlabs/boot.rackspace.com/wiki) on Rackspace Cloud Servers image creation which will enable you to create images just like our base images.

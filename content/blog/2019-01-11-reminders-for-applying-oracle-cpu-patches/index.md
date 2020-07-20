@@ -13,6 +13,7 @@ metaTitle: "Reminders for applying Oracle CPU patches"
 metaDescription: "Reminders and takeaways when applying CPU patches to R12.2 environments"
 ogTitle: "Reminders for applying Oracle CPU patches"
 ogDescription: "Reminders and takeaways when applying CPU patches to R12.2 environments"
+slug: 'reminders-for-applying-oracle-cpu-patches' 
 ---
 
 This blog reviews the importance of running an ADOP (Application DBA Online

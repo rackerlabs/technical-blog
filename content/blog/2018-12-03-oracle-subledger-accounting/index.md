@@ -9,6 +9,7 @@ authorIsRacker: true
 categories:
   - database
   - Oracle
+slug: 'oracle-subledger-accounting' 
 ---
 
 Originally published by TriCore: February 12, 2017

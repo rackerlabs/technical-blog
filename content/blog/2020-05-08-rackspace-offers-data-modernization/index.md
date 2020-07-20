@@ -18,6 +18,7 @@ ogTitle: "Rackspace now offers data modernization"
 ogDescription: "Not all organizations have developed the
 required technical skills and business processes to implement modern data analytics solutions.
 Rackspace can help with this."
+slug: "rackspace offers data modernization" 
 ---
 
 As data volume, variety, and sources quickly increase, businesses can struggle to manage

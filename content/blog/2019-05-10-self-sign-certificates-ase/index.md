@@ -14,6 +14,7 @@ metaTitle: "Self-sign certificates in Azure App Service environments"
 metaDescription: "When deploying Sitecore in to an Azure App Service, you have two options for setting up your search method."
 ogTitle: "Self-sign certificates in Azure App Service environments"
 ogDescription: "When deploying Sitecore in to an Azure App Service, you have two options for setting up your search method."
+slug: "self sign certificates ase" 
 ---
 
 When deploying Sitecore in to an Azure App Service, you have two options for

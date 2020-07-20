@@ -15,8 +15,8 @@ characteristics that influence these choices."
 ogTitle: "Top five Redis use cases"
 ogDescription: "This post explains some of the most common Redis use cases and different
 characteristics that influence these choices."
+slug: "top five redis use cases" 
 ---
-
 *Originally published November 7, 2017 at ObjectRocket.com/blog.*
 
 This post explains some of the most common Redis&trade; use cases and different

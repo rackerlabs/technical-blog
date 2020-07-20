@@ -7,6 +7,7 @@ author: Satheesh Kumar
 published: true
 categories:
   - General
+slug: 'cancelling-ajax-requests-in-angularjs-applications'   
 ---
 
 When we, at Rackspace were working on a data visualization dashboard which uses

@@ -14,6 +14,7 @@ metaTitle: "Using Azure Private Endpoint with web apps"
 metaDescription: "Configure Azure&reg; Private Endpoint with Azure web apps."
 ogTitle: "Using Azure Private Endpoint with web apps"
 ogDescription: "Configure Azure&reg; Private Endpoint with Azure web apps."
+slug: "using azure private endpoints with web apps" 
 ---
 
 Azure&reg; Private Endpoint provides private IP address access by using a network interface controller

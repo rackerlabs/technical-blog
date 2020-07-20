@@ -14,6 +14,7 @@ metaTitle: "Microsoft SQL Server log shipping on existing AlwaysOn databases"
 metaDescription: "This post discusses how to set up log shipping, which is a disaster recovery (DR) solution, with existing Microsoft&reg; SQL Server&reg; AlwaysOn-configured databases."
 ogTitle: "Microsoft SQL Server log shipping on existing AlwaysOn databases"
 ogDescription: "This post discusses how to set up log shipping, which is a disaster recovery (DR) solution, with existing Microsoft&reg; SQL Server&reg; AlwaysOn-configured databases."
+slug: "Microsoft SQL Server log shipping" 
 ---
 
 This post discusses how to set up log shipping, which is a disaster recovery

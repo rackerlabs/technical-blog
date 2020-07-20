@@ -10,6 +10,7 @@ authorAvatar: 'https://en.gravatar.com/userimage/151177997/5bed7e07ee47533cbd34b
 bio: “Jimmy Rudley is an Azure Architect at Rackspace and an active member of the Azure community. He focuses on solving large and complex architecture and automation problems within Azure."
 categories:
     - Azure
+slug: 'Default-Document-Azure-Storage-Account' 
 ---
 
 Azure provided the functionality to host static websites from an Azure Storage Account, but it did not support setting a default document. This functionality is in preview and should hit public preview this month. Let's take a look on how to test out this great feature.

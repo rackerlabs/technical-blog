@@ -8,6 +8,7 @@ authorIsRacker: true
 published: true
 categories:
   - Oracle
+slug: 'load-testing-oracle-databases' 
 ---
 
 Originally published by TriCore: Sept 7, 2017

@@ -17,6 +17,7 @@ metaTitle: "Using Social Studio to provide exceptional customer service"
 metaDescription: "Your customers are probably using social media, which means they are talking about your company and your products or services&mdash;whether you are listening or not."
 ogTitle: "Using Social Studio to provide exceptional customer service"
 ogDescription: "Your customers are probably using social media, which means they are talking about your company and your products or services&mdash;whether you are listening or not."
+slug: "2019-12-10-using-social-studio-to-provide-exceptional-customer-service" 
 ---
 
 Your customers are probably using social media, which means they are talking

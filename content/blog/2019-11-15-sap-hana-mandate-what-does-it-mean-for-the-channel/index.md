@@ -14,6 +14,7 @@ metaTitle: "How does the SAP HANA Mandate affect your business?"
 metaDescription: "In 2025, SAP will end mainstream maintenance and support for all ERP product installations that originated before SAP S4/HANA."
 ogTitle: "How does the SAP HANA Mandate affect your business?"
 ogDescription: "In 2025, SAP will end mainstream maintenance and support for all ERP product installations that originated before SAP S4/HANA."
+slug: "sap hana mandate what does it mean for the channel" 
 ---
 
 Systems, Applications and Products (SAP) products help companies manage their financials, logistics, human resources, and other business areas. SAP started as a mainframe-based, financial software package in 1973. It entered the client/server world in 1992 and began running in many operating systems and databases. In 2004, SAP became SAP Enterprise Resource Planning Central Component (ERP/ECC). It is estimated that more than 34% of all global transactions interact with SAP software at some point. More than 425,000 businesses use SAP and 80% of SAP's customer base is in the Small to Medium-sized Business (SMB) sector. 

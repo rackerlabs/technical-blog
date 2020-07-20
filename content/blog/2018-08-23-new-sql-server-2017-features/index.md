@@ -9,6 +9,7 @@ authorIsRacker: true
 categories:
     - Database
     - SQL Server
+slug: 'new-sql-server-2017-features' 
 ---
 
 Are you considering an upgrade to a more modern version of SQL Server? Are you

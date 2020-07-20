@@ -17,8 +17,8 @@ metaTitle: "Upgrade Oracle EBS 12.2 with Oracle Database 19c"
 metaDescription: "This blog post explores the steps to upgrade Oracle&reg; E-Business Suite (EBS) 12.2 with Oracle Database 19c."
 ogTitle: "Upgrade Oracle EBS 12.2 with Oracle Database 19c"
 ogDescription: "This blog post explores the steps to upgrade Oracle&reg; E-Business Suite (EBS) 12.2 with Oracle Database 19c."
+slug: "upgrade oracle ebs 12.2 database to oracle database 19c" 
 ---
-
 This post explores the steps to configure Oracle&reg; E-Business Suite (EBS)
 12.2 with Oracle Database 19c.
 

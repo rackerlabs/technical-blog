@@ -8,6 +8,8 @@ published: true
 authorIsRacker: true
 categories:
     - General
+slug: 'array-diagnostic-utility-reports-in-vmware-esxi' 
+
 ---
 
 This blog post shows you how to generate an Array Diagnostic Utility (ADU)

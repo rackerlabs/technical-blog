@@ -9,8 +9,8 @@ authorIsRacker: true
 categories:
     - Oracle
     - database
+slug: 'oracle-11g-calibrate-io-overview' 
 ---
-
 Every time an Oracle &reg; Database reads or writes data to a disk, the database
 generates disk input and output (I/O) operations. The performance of many
 software applications is limited by disk I/O, and applications that spend the

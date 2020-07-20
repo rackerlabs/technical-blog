@@ -16,6 +16,7 @@ ogTitle: "Data governance and Salesforce adoption success"
 ogDescription: "Data is a business's intellectual property. Whether your company is pursuing
 Salesforce&reg; implementation or is actively using Salesforce, you must have
 clean and accurate data."
+slug: "data governance and salesforce adoption success" 
 ---
 
 Data is a business's intellectual property. Whether your company is pursuing

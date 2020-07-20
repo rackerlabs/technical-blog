@@ -8,6 +8,7 @@ published: true
 authorIsRacker: true
 categories:
     - Oracle
+slug: 'upgrading-oracle-business-intelligence-discoverer-part-1' 
 ---
 
 Originally published by Tricore: May 17, 2017

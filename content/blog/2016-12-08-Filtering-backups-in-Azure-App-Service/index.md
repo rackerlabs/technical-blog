@@ -11,8 +11,8 @@ bio: “Jimmy Rudley is an Azure Architect at Rackspace and an active member of 
 categories:
     - DevOps
     - Azure
+slug: 'Filtering-backups-in-Azure-App-Service' 
 ---
-
 With Azure App Service, backing up your web app is available depending which App Service plan is choosen. With the introduction of larger applications moving to the cloud, certain files or folders do not need backed up. This is not something an end user can do in the Azure portal, so let's investigate how we can accomplish filtering of files or folders during the backup process.
 
 <!--more-->

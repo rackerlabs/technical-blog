@@ -6,8 +6,9 @@ comments: true
 author: Sudarshan Acharya
 published: true
 categories: []
+slug: 'getting-started-with-hadoop' 
 ---
-{% img right 2013-04-25-getting-started-with-hadoop/hortonworks.jpg 200 200 %}
+<img class='image-right' src='hortonworks.jpg'/>
 
 Getting started with a distributed system like Hadoop can be a daunting task for developers.From installing and configuring Hadoop to learning the basics of MapReduce and other add-on tools, the learning curve is pretty high.
 

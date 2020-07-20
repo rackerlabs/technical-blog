@@ -13,6 +13,7 @@ metaTitle: "Microsoft SQL Server advanced corruption and recovery"
 metaDescription: "Understand, detect, and repair SQL Server database corruption."
 ogTitle: "Microsoft SQL Server advanced corruption and recovery"
 ogDescription: "Understand, detect, and repair SQL Server database corruption."
+slug: "Microsoft SQL Server advanced corruption and recovery" 
 ---
 
 The blog describes corruptions that can occur at the database level in

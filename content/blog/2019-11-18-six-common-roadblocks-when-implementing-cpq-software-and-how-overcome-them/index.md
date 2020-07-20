@@ -14,6 +14,7 @@ metaDescription: "Significant growth also comes with increased complexity--if yo
 ogTitle: "Six common roadblocks when implementing CPQ software and how to overcome them"
 ogDescription: "Significant growth also comes with increased complexity--if your Configure, Price, Quote (CPQ) process isn’t growing with you, your pain points soon become evident."
 canonical: https://blog.rackspace.com/6-common-roadblocks-when-implementing-cpq-software-and-how-to-overcome-them/
+slug: "six common roadblocks when implementing cpq software and how overcome them" 
 ---
 
 Your company’s sales team is growing, and your books are in the black. While

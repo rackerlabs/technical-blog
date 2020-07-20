@@ -13,6 +13,7 @@ metaTitle: "Transfer SQL plans by using a SQL plan baseline"
 metaDescription: "This blog shows how to transfer the good execution plan from an instance (where query works fine) to another instance where query behaves poorly by using the SQL plan baseline feature."
 ogTitle: "Transfer SQL plans by using a SQL plan baseline"
 ogDescription: "This blog shows how to transfer the good execution plan from an instance (where query works fine) to another instance where query behaves poorly by using the SQL plan baseline feature."
+slug: "transfer sql plans by using sql plan baseline" 
 ---
 
 A particular SQL query might perform poorly on one database (such as production)

@@ -13,6 +13,7 @@ settling, and I’m always looking for an opportunity to do better and achieve
 greatness."
 categories:
   - Oracle
+slug: 'troubleshoot-oracle-goldengate-lag' 
 ---
 
 This blog offers suggestions for troubleshooting issues with Oracle&reg;

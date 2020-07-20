@@ -7,8 +7,9 @@ author: Kyle Claypool
 published: true
 categories:
   - General
----
+slug: 'agile-application-support-the-toyota-way' 
 
+---
 Agile. Scrum. Extreme programming. RAD. Lean. These terms all represent a
 departure from the traditional Waterfall development process in favor of a more
 rapid, iterative approach to application development. For companies with
@@ -23,7 +24,7 @@ toward common goals.
 
 <!-- more -->
 
-{% img center 2013-07-11-agile-application/reagan.png %}
+![](reagan.png)
 <p style="font-size: 70%; text-align: center">Image courtesy of the Reagan Library and Michael Evans</p>
 
 With agile development, those walls were primarily between the developers and
@@ -83,7 +84,7 @@ This should be common sense. If you fail to plan, you plan to fail. DCR built
 brand-new facilities specifically designed for efficient, lean workflows. They
 created a blueprint for success before ever breaking ground.
 
-{% img center 2013-07-11-agile-application/process.png %}
+![](process.png)
 
 Do your developers follow consistent coding standards? Consistent standards for
 logging errors and exceptions? Do they name variables, functions and classes
@@ -124,7 +125,7 @@ through the shop with minimal effort, without having to start the car. Walls
 between bays (even the paint booth!) were easily raised and lowered, allowing
 the car to move through the process as if on an assembly line.
 
-{% img center 2013-07-11-agile-application/car.png %}
+![](car.png)
 
 Your walls may be between your dev team and your ops team. Maybe your developers
 don’t have access to the production environment to monitor application health.
@@ -141,7 +142,7 @@ is placed for optimal efficiency. For DCR, this meant clearly defining the purpo
 for each repair bay, and then placing the right parts and tools (and ONLY the
 necessary tools) within optimal reach.
 
-{% img center 2013-07-11-agile-application/tools.png %}
+![](tools.png)
 
 What does this mean for your company? First, take a look at your physical
 environment. Is there evidence of silos between divisions, based purely on office
@@ -160,7 +161,7 @@ publicly, color-coded to show the good, the bad, and the ugly. If your key
 performance indicators (KPIs) are visible throughout the office, it creates a
 new degree of urgency:
 
-{% img center 2013-07-11-agile-application/metrics.png %}
+![](metrics.png)
 
 Just as importantly, a status board that shows all green creates a sense of
 pride. Your application is running at an all-time high load and all systems are

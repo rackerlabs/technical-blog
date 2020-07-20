@@ -8,6 +8,7 @@ published: true
 categories:
   - devops
   - automation
+slug: 'Managing-Windows-Servers-Remotely-with-PowerShell' 
 ---
 
 Automation in Windows has historically been a challenge due to lack of built in

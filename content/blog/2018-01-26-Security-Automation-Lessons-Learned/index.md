@@ -9,6 +9,7 @@ authorIsRacker: true
 categories:
     - Security
     - Automation
+slug: 'Security-Automation-Lessons-Learned' 
 ---
 
 There are many ways to approach the broad topic of "security automation". After

@@ -11,8 +11,9 @@ categories:
   - Automation
   - Python
   - architecture
----
+slug: 'scantron-a-distributed-nmap-scanner' 
 
+---
 ![scantron robot](scantron_300x300.jpg)
 
 ### Background

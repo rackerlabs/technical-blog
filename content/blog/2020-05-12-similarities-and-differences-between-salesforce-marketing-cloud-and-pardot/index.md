@@ -19,8 +19,8 @@ understand the importance of using marketing automation to connect their sales a
 ogTitle: "Similarities and differences between Salesforce Marketing Cloud and Pardot"
 ogDescription: "Most of our clients already
 understand the importance of using marketing automation to connect their sales and marketing efforts. Salesforce Marketing Cloud and Pardot can both help, depending on your marketing automation goals."
+slug: "similarities andv differences between salesforce marketing cloud and pardot" 
 ---
-
 Editor’s Note&mdash;In 2018, Chris Zullo presented at *London’s Calling* and *Southeast Dreamin’* with fellow Salesforce&reg; MVP
 Stephanie Foerst on the differences between Salesforce Marketing Cloud and Pardot. We asked him to share his
 thoughts on these dueling marketing automation tools. You can watch a recording of their

@@ -13,6 +13,7 @@ metaDescription: "With so many incredible features and powerful tools, it can be
 ogTitle: "How can your organization use Salesforce to its full capacity?"
 ogDescription: "With so many incredible features and powerful tools, it can be hard to unlock the full potential of a customer success platform like Salesforce."
 canonical: https://blog.rackspace.com/how-can-your-organization-use-salesforce-to-its-full-capacity/
+slug: "how can your organization use salesforce to its full capacity" 
 ---
 
 It is one thing to have access to Salesforce&reg; within your organization; it

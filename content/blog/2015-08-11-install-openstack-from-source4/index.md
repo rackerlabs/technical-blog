@@ -8,6 +8,7 @@ published: true
 categories:
   - OpenStack
   - OSAD
+slug: 'install-openstack-from-source4' 
 ---
 
 This is the fourth installment, in a series showing how to install OpenStack from source. In the three previous articles:

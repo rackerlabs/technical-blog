@@ -20,8 +20,9 @@ ogDescription: "Consider RackConnect Global to rapidly
 optimize and secure the entirety of your network core in a fully-managed
 fashion&mdash;a far more cost-effective solution than hiring multiple MPLS lines
 from the telephone company."
----
+slug: "link secure and optimize distributed it environments and workplaces with the rackspace network backbone" 
 
+---
 It's fair to liken managing an enterprise IT department to conducting an
 orchestra.
 

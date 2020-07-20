@@ -13,6 +13,7 @@ metaTitle: "Personalizing the retail experience with Salesforce"
 metaDescription: "In this blog, we look at the importance of creating a personalized customer experience in retail, how it can affect brick-and-mortar and e-commerce retailers, and how Salesforce can help."
 ogTitle: "Personalizing the retail experience with Salesforce"
 ogDescription: "In this blog, we look at the importance of creating a personalized customer experience in retail, how it can affect brick-and-mortar and e-commerce retailers, and how Salesforce can help."
+slug: "personalizing the retail experience with salesforce" 
 ---
 
 Customer experience is critical in retail for building engagement and generating

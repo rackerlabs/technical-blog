@@ -18,6 +18,7 @@ ogDescription: "Rackspace Fanatical Support for AWS recently launched the
 enhancement of cost optimization features in the Platform Essentials service
 block for North America region customers. Now we're expanding that offer to the
 Europe, Middle East, and Asia (EMEA) regions."
+slug: "announcing the launch of cost optimizer in platform essentials on aws" 
 ---
 
 Rackspace Fanatical Support&reg; for AWS recently launched the enhancement of cost

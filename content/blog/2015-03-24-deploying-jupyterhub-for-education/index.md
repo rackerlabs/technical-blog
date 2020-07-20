@@ -8,6 +8,7 @@ published: true
 categories:
   - python
   - docker
+slug: 'deploying-jupyterhub-for-education' 
 ---
 
 As a PhD student at UC Berkeley, my duties involve some amount of teaching; so, this semester (Spring 2015), as well as last spring, I have been a teaching assistant for a class taught by my advisor, [Tom Griffiths](https://cocosci.berkeley.edu/tom/). The class, called Computational Models of Cognition (COGSCI 131), aims to introduce students to computational models of human behavior. The problem sets are a mixture of simple programming assignments—usually requiring students to implement pieces of different models—and written answers, in which students report and interpret the results of their code.
@@ -18,7 +19,7 @@ In the past, the problem sets were written in MATLAB. This year, however, we dec
 
 There were two options for using the notebook in the class. The first (and more traditional) method would be to require students to install the notebook themselves on their own computers. To run it, they would have to first start the IPython notebook server from the command line, which would then give them access to the notebook files through the browser. The second (and more experimental) method would be to launch a server running [JupyterHub](https://github.com/jupyter/jupyterhub), which is a platform for hosting notebooks on a server with multiple users. Importantly, JupyterHub requires no installation on the part of the user—they simply go to a website, login, and immediately have access to the IPython notebook:
 
-{% img 2015-03-24-deploying-jupyterhub-for-education/jupyterhub.gif %}
+![](jupyterhub.gif)
 
 For a class of 220 students, ensuring that everybody would be able to install the correct version of the notebook—with the correct versions of the necessary packages like [NumPy](https://www.numpy.org/), [SciPy](https://www.scipy.org/scipylib/index.html), and [Matplotlib](https://matplotlib.org/)—would have been nearly impossible. On top of that, many students in this class have not used the command line before, and requiring that they use it to launch the notebook seemed both unfair to them, as well as a headache for us. In light of this, the second option of using JupyterHub seemed like the more attractive and feasible option.
 
@@ -78,7 +79,7 @@ Min added a few additional helper services, including an [activity logger](https
 
 Here is the full, glorious setup:
 
-{% img 2015-03-24-deploying-jupyterhub-for-education/setup.png %}
+![](setup.png)
 
 ## Going live!
 

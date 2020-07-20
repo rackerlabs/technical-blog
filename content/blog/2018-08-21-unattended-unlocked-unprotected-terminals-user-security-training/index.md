@@ -8,6 +8,7 @@ authorIsRacker: true
 published: true
 categories:
   - Security
+slug: 'unattended-unlocked-unprotected-terminals-user-security-training' 
 ---
 
 As part of our user security awareness training, we perform tests of our

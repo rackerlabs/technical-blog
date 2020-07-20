@@ -13,6 +13,7 @@ metaTitle: "Row-level security in SQL Server 2016"
 metaDescription: "."
 ogTitle: "Row-level security in SQL Server 2016"
 ogDescription: "."
+slug: "row level security in sql server 2016" 
 ---
 
 Microsoft&reg; has focused on security in SQL Server&reg;, and almost all releases

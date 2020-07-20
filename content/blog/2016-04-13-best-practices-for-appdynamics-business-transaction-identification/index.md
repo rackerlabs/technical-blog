@@ -9,8 +9,9 @@ authorIsRacker: true
 authorAvatar: 'https://www.gravatar.com/avatar/791617263c70278859e1b26c15d13eab'
 categories:
     - DevOps
----
+slug: 'best-practices-for-appdynamics-business-transaction-identification' 
 
+---
 [AppDynamics](https://www.appdynamics.com/) is a powerful Application Performance Management tool that, properly configured, can provide tremendous insight in to application and infrastructure performance bottlenecks and enable operations and development teams to rapidly identify and resolve issues.  Although AppDynamics collects and measures application performance data out of the box, some configuration and customization is necessary in order to reach its full capabilities.  This guide explains best practices around how to identify your application's critical _business transactions_ in order to get the most out of AppDynamics and, ultimately, the most out of your application and infrastructure.
 
 <!--more-->

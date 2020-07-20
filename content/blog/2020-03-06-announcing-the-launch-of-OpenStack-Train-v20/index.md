@@ -15,6 +15,7 @@ metaTitle: "Announcing the launch of OpenStack Train v20"
 metaDescription: "Rackspace is launching OpenStack Train v20, which is the latest open-source software release as part the OpenStack Ansible project."
 ogTitle: "Announcing the launch of OpenStack Train v20"
 ogDescription: "Rackspace is launching OpenStack Train v20, which is the latest open-source software release as part the OpenStack Ansible project."
+slug: "announcing the launch of OpenStack Train v20" 
 ---
 
 Rackspace is launching OpenStack&reg; Train v20, which is the latest open-source

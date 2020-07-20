@@ -8,6 +8,8 @@ published: true
 categories:
   - python
   - security
+slug: 'the-not-so-sorry-state-of-ssl-in-python'   
+
 ---
 ### Introduction
 TLS and SSL are two critical technologies which underly much of the secure

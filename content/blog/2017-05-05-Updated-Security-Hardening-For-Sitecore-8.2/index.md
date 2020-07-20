@@ -8,6 +8,8 @@ authorIsRacker: true
 published: true
 categories:
     - Devops
+slug: "Updated Security Hardening For Sitecore 8.2" 
+
 ---
 
 Last year, we shared [the foundation Rackspace uses for Sitecore security hardening in a blog](https://developer.rackspace.com/blog/Security-Hardening-for-Sitecore-Environments/) on this site.  We're due for an update now that Sitecore has published additional best practices, and, here at Rackspace, we've folded those recommendations into our PowerShell process for securing environments.  The [Rackspace Managed Services for Sitecore team](https://www.rackspace.com/digital/sitecore) incorporates this into our provisioning work program for enterprise Sitecore projects.

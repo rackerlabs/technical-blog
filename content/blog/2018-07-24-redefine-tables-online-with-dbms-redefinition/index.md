@@ -8,7 +8,7 @@ published: true
 authorIsRacker: true
 categories:
   - Oracle
-  - database
+  - databaseslug: 'redefine-tables-online-with-dbms-redefinition' 
 ---
 
 Online table redefinition allows you to restructure your Oracle&reg; table in

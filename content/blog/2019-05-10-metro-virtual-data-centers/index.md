@@ -13,6 +13,7 @@ metaTitle: "Metro virtual data centers"
 metaDescription: "To gain access to an on-premises database from the Oracle Integration Cloud Service, you need to install the Oracle Integration Cloud Service connectivity agent on an on-premises host."
 ogTitle: "Metro virtual data centers"
 ogDescription: "To gain access to an on-premises database from the Oracle Integration Cloud Service, you need to install the Oracle Integration Cloud Service connectivity agent on an on-premises host."
+slug: "metro virtual data centers" 
 ---
 
 As IT continues to grow, information systems are becoming more critical in

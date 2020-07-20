@@ -12,6 +12,7 @@ metaTitle: "Introduction to AWS and Oracle Cloud Services"
 metaDescription: "This blog compares Amazon Web Services to the Oracle Cloud, which is an infrastructure-as-a-service offering, and explores the features and services that both the providers support."
 ogTitle: "Intro to AWS and Oracle Cloud Services"
 ogDescription: "This blog compares Amazon Web Services to the Oracle Cloud, which is an infrastructure-as-a-service offering, and explores the features and services that both the providers support."
+slug: "intro to AWS and oracle cloud services" 
 ---
 
 This blog compares Amazon Web Services to the Oracle Cloud, which is an infrastructure-as-a-service offering, and explores the features and services that both the providers support.

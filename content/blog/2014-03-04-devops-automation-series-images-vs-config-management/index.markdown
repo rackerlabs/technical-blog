@@ -8,6 +8,7 @@ published: true
 categories:
   - DevOps
   - Configuration Management
+slug: 'devops-automation-series-images-vs-config-management'   
 ---
 
 
@@ -59,7 +60,7 @@ you configuration management tool.
 
 ### So, what to use...
 
-{% img center 2014-03-04-devops-automation-series-images-vs-config-management/advice_dog.png %}
+![](advice_dog.png)
 
 We recommend a slightly dynamic approach: use both. Use an image to build up a
 base, install the things needed everywhere like Chef, a custom version of

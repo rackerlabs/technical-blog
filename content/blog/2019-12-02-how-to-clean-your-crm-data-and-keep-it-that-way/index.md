@@ -14,6 +14,7 @@ metaDescription: "Integrating your CRM with other platforms, like marketing auto
 ogTitle: "How to clean your CRM data and keep it that day"
 ogDescription: "Integrating your CRM with other platforms, like marketing automation software, can create valuable ways to use data across multiple teams"
 canonical: https://blog.rackspace.com/how-to-clean-your-crm-data-and-keep-it-that-way/
+slug: "how to clean your crm data and keep it that way" 
 ---
 
 Many people think a customer relationship management (CRM) platform is only for

@@ -15,7 +15,9 @@ metaTitle: "Understanding Amazon Aurora HA strategies"
 metaDescription: "A look at several high availability strategies available in Amazon Aurora."
 ogTitle: "Understanding Amazon Aurora HA strategies"
 ogDescription: "A look at several high availability strategies available in Amazon Aurora."
+slug: 'Understanding-Amazon-Aurora-High-Availability' 
 ---
+
 If you are reading this, you have probably heard of Amazon Aurora. As you know,
 Amazon Aurora is a PaaS service provided by AWS as part of the RDS suite of services.
 It provides a fully managed relational database management system (RDBMS) that

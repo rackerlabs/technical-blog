@@ -12,6 +12,7 @@ metaTitle: "ABAP Programming approach to writing testable code"
 metaDescription: "If we cannot test code properly, it is a tedious task to modify or enhance it. Read on to learn more"
 ogTitle: "ABAP Programming approach to writing testable code"
 ogDescription: "If we cannot test code properly, it is a tedious task to modify or enhance it. Read on to learn more."
+slug: "ABAP programming approach to writing testable code" 
 ---
 
 No matter how good our code is, if we cannot test it properly, it is a tedious

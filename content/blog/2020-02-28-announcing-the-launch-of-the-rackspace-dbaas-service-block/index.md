@@ -22,6 +22,7 @@ metaTitle: "Announcing the launch of the ObjectRocket DBaaS Service Block"
 metaDescription: "Rackspace is launching production-tested datastores in ObjectRocket, a simple-to-use and dependable cloud Database-as-a-Service (DBaaS) platform."
 ogTitle: "Announcing the launch of the ObjectRocket DBaaS Service Block"
 ogDescription: "Rackspace is launching production-tested datastores in ObjectRocket, a simple-to-use and dependable cloud Database-as-a-Service (DBaaS) platform."
+slug: "announcing the launch of the rackspace dbaas service block" 
 ---
 
 Rackspace is launching production-tested datastores in ObjectRocket, a

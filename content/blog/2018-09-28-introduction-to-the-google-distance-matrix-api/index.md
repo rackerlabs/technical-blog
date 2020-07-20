@@ -8,8 +8,8 @@ published: true
 authorIsRacker: true
 categories:
     - general
+slug: 'introduction-to-the-google-distance-matrix-api' 
 ---
-
 This blog explains how the Google&reg; Distance Matrix API can be incorporated
 with Oracle&reg; E-business Suite (EBS) and can be used to determine the distance
 between two physical locations.

@@ -12,6 +12,7 @@ metaTitle: "Packet sniffers and how to protect yourself from them"
 metaDescription: "This post explores packet sniffers, which are a useful tool and a potential threat."
 ogTitle: "Packet sniffers and how to protect yourself from them"
 ogDescription: "This post explores packet sniffers, which are a useful tool and a potential threat."
+slug: "packet sniffers and how you protect yourself" 
 ---
 
 This post explores packet sniffers, which are a useful tool and a potential

@@ -9,6 +9,8 @@ authorIsRacker: true
 categories:
     - General
     - SQL Server
+slug: 'dynamic-data-masking-in-sql-server-2016'
+
 ---
 
 Originally published by Tricore: April 20, 2017

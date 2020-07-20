@@ -19,6 +19,7 @@ metaTitle: "Rackspace launches new database administration service block offerin
 metaDescription: "Rackspace has two DBA service blocks that offer access to world-class DBAs and database engineers at the level of support you and your database need. "
 ogTitle: "Rackspace launches new database administration service block offerings"
 ogDescription: "Rackspace has two DBA service blocks that offer access to world-class DBAs and database engineers at the level of support you and your database need."
+slug: "rackspace launches new database administration service block offerings" 
 ---
 
 Maintaining infrastructure, managing the back-end data environment, and tuning databases while keeping your data secure can be a major drain on IT resources.

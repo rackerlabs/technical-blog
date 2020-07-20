@@ -10,8 +10,8 @@ categories:
   - Oracle
   - database
   - architecture
+slug: 'hadoop-eco-basics-1' 
 ---
-
 Originally published by Tricore: July 10, 2017
 
 Apache&trade; Hadoop&reg; is an open source, Java-based framework that's

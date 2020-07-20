@@ -24,8 +24,8 @@ ogDescription:  "Undoubtedly, you're looking for ways to reduce capital expenses
 while still doing everything you can to keep your data secure. If so, consider
 the Rackspace public cloud offerings and Oracle&reg; Cloud Infrastructure (OCI)
 as the perfect fit to host your Oracle workload."
+slug: "oci for disaster recovery and non-production instances" 
 ---
-
 Undoubtedly, you're looking for ways to reduce capital expenses while still
 doing everything you can to keep your data secure. If so, consider the Rackspace
 public cloud offerings and Oracle&reg; Cloud Infrastructure (OCI) as the perfect

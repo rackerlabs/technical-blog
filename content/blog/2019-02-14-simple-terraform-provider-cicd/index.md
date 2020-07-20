@@ -19,6 +19,7 @@ categories:
   - aws
   - DevOps
   - Automation
+slug: 'simple-terraform-provider-cicd' 
 ---
 
 Terraform has gained a lot of popularity in the last couple years. Rackspace

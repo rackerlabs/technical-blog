@@ -9,6 +9,7 @@ authorIsRacker: true
 authorAvatar: 'https://gravatar.com/avatar/e7780474c27597a4395ac5eab894ab36'
 categories:
     - Openstack
+slug: 'Code-Dive-Openstack-Live-Migrations-Part-3' 
 ---
 
 In our previous [article]({% post_url 2018-04-20-Code-Dive-Openstack-Live-Migrations-Part-2 %}), we dove deeply into the Live Migration process by looking at how Conductor passes data back and forth between Scheduler and the Source and Destination Compute Nodes.  We have found a host machine at this point and verified that all of our preliminary checks will pass.

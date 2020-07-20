@@ -12,8 +12,8 @@ metaTitle: "Recover passwords for network devices"
 metaDescription: "Password recovery for network devices (Cisco ASA, Cisco Router, FortiGate Firewall)."
 ogTitle: "Recover passwords for network devices"
 ogDescription: "Password recovery for network devices (Cisco ASA, Cisco Router, FortiGate Firewall)."
+slug: 'recover-passwords-for-network-devices' 
 ---
-
 
 This blog explains how to recover the *enable password* and the *enable secret*
 passwords of the Cisco&reg; Adaptive Security Appliance (ASA) and Cisco router.

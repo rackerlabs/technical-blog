@@ -22,8 +22,9 @@ ogDescription: "Rackspace partners with Akamai&reg;, Cloudflare&reg;, and Imperv
 functionality, typically including a performance-boosting Content Delivery Network (CDN) and caching
 capability, as well as a web application firewall (WAF) for enhanced security and protection from Distributed
 Denial of Service (DDoS) attacks."
----
- 
+slug: "ddos protection for applications in a data center" 
+--- 
+
 Rackspace partners with Akamai&reg;, Cloudflare&reg;, and Imperva&reg; to provide best-in-class edge
 functionality, typically including a performance-boosting Content Delivery Network (CDN) and caching
 capability, as well as a web application firewall (WAF) for enhanced security and protection from Distributed

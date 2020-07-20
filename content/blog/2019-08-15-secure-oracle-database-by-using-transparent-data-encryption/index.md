@@ -18,6 +18,7 @@ metaTitle: "Secure an Oracle database by using Transparent Data Encryption"
 metaDescription: "How to use the advanced security option to secure sensitive data within an Oracle&reg; database by using Transparent Data Encryption (TDE)."
 ogTitle: "Secure an Oracle database by using Transparent Data Encryption"
 ogDescription: "How to use the advanced security option to secure sensitive data within an Oracle&reg; database by using Transparent Data Encryption (TDE)."
+slug: "secure oracle database by using transparent data encryption" 
 ---
 
 This blog covers the essentials of how to use the advanced security option to

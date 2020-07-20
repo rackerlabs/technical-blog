@@ -8,6 +8,7 @@ published: true
 authorIsRacker: true
 categories:
     - Oracle
+slug: 'edition-based-redefinition'
 ---
 
 Originally published by Tricore: May 5, 2017

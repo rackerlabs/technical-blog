@@ -8,8 +8,8 @@ published: true
 authorIsRacker: true
 categories:
     - General
+slug: 'vtls' 
 ---
-
 Originally published by TriCore: November 22, 2017
 
 A virtual tape library (VTL) is a data storage virtualization technology

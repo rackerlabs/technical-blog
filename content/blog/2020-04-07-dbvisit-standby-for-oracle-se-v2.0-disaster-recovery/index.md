@@ -17,6 +17,8 @@ Oracle Standard Edition 2 (SE2) databases."
 ogTitle: "Dbvisit Standby for Oracle SE v2.0 disaster recovery"
 ogDescription: "Dbvisit Standby is a replication tool for Oracle&reg; Standard Edition (SE) and
 Oracle Standard Edition 2 (SE2) databases."
+slug: "dbvisit standby for oracle se v2.0 disaster recovery" 
+
 ---
 
 Dbvisit Standby is a replication tool for Oracle&reg; Standard Edition (SE) and

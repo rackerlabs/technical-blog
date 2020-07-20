@@ -18,6 +18,7 @@ metaDescription: "."
 ogTitle: "Six best practices for managing and cleaning Salesforce data"
 ogDescription: "."
 canonical: https://blog.rackspace.com/6-best-practices-for-managing-and-cleaning-your-salesforce-data/
+slug: "six best practices for managing and cleaning salesforce data" 
 ---
 
 It’s no small task setting up Salesforce&reg;, particularly when it comes to

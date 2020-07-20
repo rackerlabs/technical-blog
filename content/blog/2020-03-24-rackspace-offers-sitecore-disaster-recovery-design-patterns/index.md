@@ -13,6 +13,7 @@ metaTitle: "Rackspace offers Sitecore disaster recovery design patterns"
 metaDescription: "Rackspace offers predefined design patterns from which clients can select for business continuity and disaster recovery (BC/DR) purposes."
 ogTitle: "Rackspace offers Sitecore disaster recovery design patterns"
 ogDescription: "Rackspace offers predefined design patterns from which clients can select for business continuity and disaster recovery (BC/DR) purposes."
+slug: "rackspace offers sitecore disaster recovery design patterns" 
 ---
 
 Rackspace offers predefined design patterns from which clients can select for

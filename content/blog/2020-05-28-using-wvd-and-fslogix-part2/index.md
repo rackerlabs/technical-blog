@@ -20,8 +20,8 @@ one could have predicted. Consider WVD."
 ogTitle: "Using Windows Virtual Desktop and FSLogix to accelerate working from home: Part 2"
 ogDescription: "The events unfolding in 2020 accelerated the adoption of remote work in ways no
 one could have predicted. Consider WVD."
+slug: "using wvd and fslogix part2" 
 ---
-
 This is part two of a three-part blog series on the ways Windows® Virtual Desktop
 (WVD)  solves for work anywhere scenarios and provides some important
 considerations for deploying the new service.

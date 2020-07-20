@@ -9,8 +9,8 @@ authorIsRacker: true
 categories:
     - Database
     - Cloud Servers
+slug: 'steps-to-migrate-multiple-iis-sites' 
 ---
-
 You may be asked to migrate multiple Internet Information Server (IIS) sites
 from on-site to the Cloud, but migrating individual sites is a long and daunting
 task. This blog discusses simplifying the process.

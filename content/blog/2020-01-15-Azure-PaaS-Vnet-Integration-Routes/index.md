@@ -14,6 +14,7 @@ metaTitle: "Azure PaaS VNet integration with a hub-and-spoke topology"
 metaDescription: "Troubleshooting PaaS VNet integration with a hub-and-spoke topology."
 ogTitle: "Azure PaaS VNet integration with a hub-and-spoke topology"
 ogDescription: "Troubleshooting PaaS VNet integration with a hub-and-spoke topology."
+slug: "Azure PaaS Vnet Integration Routes" 
 ---
 
 A colleague of mine sent me a message asking if I ever had an issue deploying an Azure&reg; web app

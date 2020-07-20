@@ -13,6 +13,7 @@ metaTitle: "Microsoft SQL Server database compatibility levels"
 metaDescription: "Database compatibility level, one of the database level settings, impacts how a database functions."
 ogTitle: "Microsoft SQL Server database compatibility levels"
 ogDescription: "Database compatibility level, one of the database level settings, impacts how a database functions."
+slug: "Microsoft SQL Server database compatibility levels" 
 ---
 
 Database compatibility level, one of the database level settings, impacts how a

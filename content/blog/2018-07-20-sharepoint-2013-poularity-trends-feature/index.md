@@ -8,6 +8,7 @@ published: true
 authorIsRacker: true
 categories:
     - general
+slug: 'sharepoint-2013-poularity-trends-feature' 
 ---
 
 Popularity Trends is a feature in SharePoint Server 2013 that enhances

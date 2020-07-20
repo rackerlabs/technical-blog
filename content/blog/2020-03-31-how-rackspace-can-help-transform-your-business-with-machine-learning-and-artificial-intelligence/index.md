@@ -25,8 +25,8 @@ data to make automated recommendations, take preemptive action, and streamline d
 ogTitle: "How Rackspace can help transform your business with machine learning and artificial intelligence"
 ogDescription: "Artificial Intelligence and Machine Learning (AI/ML) let businesses leverage
 data to make automated recommendations, take preemptive action, and streamline decision-making."
+slug: "how rackspace can help transform your business with machine learning and artificial intelligence" 
 ---
-
 In the current fast-moving business environment, successful organizations are always looking for ways to enhance their product offerings,
 improve business efficiency, and anticipate customer behavior. From supply chain optimization to fraud detection, there are opportunities
 in every industry, including retail, healthcare, and finance. Artificial Intelligence and Machine Learning (AI/ML) let businesses leverage
