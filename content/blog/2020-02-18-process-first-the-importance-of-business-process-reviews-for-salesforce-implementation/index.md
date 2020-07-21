@@ -13,6 +13,7 @@ metaTitle: "Process first: The importance of business process reviews for Salesf
 metaDescription: "The tremendous benefits of Salesforce don't come without vision and planning."
 ogTitle: "Process first: The importance of business process reviews for Salesforce implementation"
 ogDescription: "The tremendous benefits of Salesforce don't come without vision and planning."
+slug: "process first the importance of business process reviews for salesforce implementation"
 ---
 
 Tools like Salesforce&reg; can revolutionize how your business sells and

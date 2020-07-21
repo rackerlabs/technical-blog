@@ -8,6 +8,8 @@ published: true
 categories:
   - OpenStack
   - Neutron
+slug: "software defined networks in the havana release of openstack-part 2"   
+
 ---
 
 Software Defined Networks in the Havana release of Openstack – Part 2
@@ -39,7 +41,7 @@ from the VMs, the network path out of the VMs has changed. Using Neutron securit
 groups causes the nova-compute service to build the path from the VM to the OVS
 process as shown in the following diagram:
 
-{% img center 2014-02-10-software-defined-networks-in-the-havana-release-of-openstack-part-2/computenode1.png 744 504 %}
+![](computenode1.png)
 
 Looking at VM1, when it is created the VM's eth0 interface is connected to a
 Linux tap device tapxxx which is plugged into a newly created Linux bridge,

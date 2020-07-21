@@ -15,6 +15,7 @@ metaDescription: "Brief overview of the AZ-102 exam"
 ogTitle: "Microsoft Certified Azure Administrator Associate"
 ogDescription: "Brief overview of the AZ-102 exam"
 ogImage: "https://657cea1304d5d92ee105-33ee89321dddef28209b83f19f06774f.ssl.cf1.rackcdn.com/ms_party.gif-a52063dfec8f18b14d61f577c46e62ff35da3317f5264eaba5621880d28ad519.gif"
+slug: "MS Certified Azure Administrator Associate" 
 ---
 
 My thoughts on the AZ-102 exam!

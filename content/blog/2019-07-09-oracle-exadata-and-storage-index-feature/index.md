@@ -13,6 +13,7 @@ metaTitle: "Oracle Exadata and the storage index feature"
 metaDescription: "The Oracle&reg; Exadata&reg; system introduces storage indexes, a unique feature for improving database performance."
 ogTitle: "Oracle Exadata and the storage index feature"
 ogDescription: "The Oracle&reg; Exadata&reg; system introduces storage indexes, a unique feature for improving database performance."
+slug: "oracle exadata and storage index feature" 
 ---
 
 The Oracle&reg; Exadata&reg; system introduces storage indexes, which improve database

@@ -13,6 +13,7 @@ metaTitle: "Install the Oracle Integration Cloud Service connectivity agent on a
 metaDescription: "To gain access to an on-premises database from the Oracle Integration Cloud Service, you need to install the Oracle Integration Cloud Service connectivity agent on an on-premises host."
 ogTitle: "Install the Oracle Integration Cloud Service connectivity agent on an on-premises host"
 ogDescription: "To gain access to an on-premises database from the Oracle Integration Cloud Service, you need to install the Oracle Integration Cloud Service connectivity agent on an on-premises host."
+slug: "install oracle integration cloud connectivity agent on an on-premises host" 
 ---
 
 To gain access to or to establish a connection with an on-premises, standalone

@@ -9,8 +9,8 @@ authorIsRacker: true
 categories:
   - Docker
   - architecture
+slug: 'get-decked-out-for-docker' 
 ---
-
 Businesses compete to transform digitally, but most are restricted in some way
 or another from moving over to the cloud or to a new data center by existing
 applications or infrastructure. Docker&reg; comes to rescue and enables the

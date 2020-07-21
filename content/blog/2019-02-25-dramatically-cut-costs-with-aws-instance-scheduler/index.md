@@ -18,8 +18,8 @@ Maxim is likely snowboarding or hiking in the Alps."
 categories:
   - AWS
   - Automation
+slug: "dramatically cut costs with aws instance scheduler" 
 ---
-
 On-demand infrastructure, with its speed, agility, efficient use of resources
 and lower costs drives many organizations toward cloud adoption.
 

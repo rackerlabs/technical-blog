@@ -7,6 +7,7 @@ author: Sri Rajan
 published: true
 categories:
   - Security
+slug: 'protecting-sensitive-information-from-appearing-in-public-repos'   
 ---
 
 

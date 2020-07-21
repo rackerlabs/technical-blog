@@ -8,6 +8,8 @@ published: true
 authorIsRacker: true
 categories:
     - General
+slug: 'oemagent12c'
+
 ---
 
 Originally published by Tricore: June 26, 2017

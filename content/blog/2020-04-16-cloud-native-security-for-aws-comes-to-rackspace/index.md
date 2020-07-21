@@ -18,6 +18,7 @@ pulling threat information and alerts into your AWS environment."
 ogTitle: "Cloud Native Security for AWS comes to Rackspace"
 ogDescription: "The Rackspace Service Blocks for Cloud Native Security (CNS) integrates directly with the AWS Security Hub,
 pulling threat information and alerts into your AWS environment."
+slug: "cloud native security for aws comes to rackspace" 
 ---
 
 Amazon&reg; Web Services (AWS) has more native security products available than ever,

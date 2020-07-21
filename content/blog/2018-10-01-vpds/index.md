@@ -8,8 +8,8 @@ published: true
 authorIsRacker: true
 categories:
     - Oracle
+slug: 'vpds' 
 ---
-
 Originally published by TriCore: December 14, 2017
 
 Introduced in Oracle8i&trade;, Oracle&reg; Virtual Private Database (VPD) is

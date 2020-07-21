@@ -13,6 +13,7 @@ metaDescription: "This article reviews geofencing or geolocation&mdash;a capabil
 ogTitle: "Geofencing in FSL: why you should partner with an expert before starting"
 ogDescription: "This article reviews geofencing or geolocation&mdash;a capability within FSL. We discuss the definition of geofencing, as well as how and when you should expect to phase it into your FSL implementation."
 canonical: https://blog.rackspace.com/geofencing-in-fsl-why-you-should-partner-with-an-expert-before-starting/
+slug: "geofencing in fsl why you should partner with an expert before starting" 
 ---
 
 Salesforce&reg; Field Service Lightning (FSL) is an excellent choice if your

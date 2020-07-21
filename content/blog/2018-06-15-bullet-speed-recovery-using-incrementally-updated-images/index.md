@@ -9,6 +9,8 @@ authorIsRacker: true
 categories:
   - Oracle
   - database
+slug: 'bullet-speed-recovery-using-incrementally-updated-images' 
+
 ---
 
 Minimizing downtime and increasing the database availability are essential

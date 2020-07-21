@@ -10,6 +10,7 @@ categories:
   - Security
   - Automation
   - Python
+slug: 'insightvm-nexpose-slackbot' 
 ---
 
  A few months back, I decided to find a way to lighten the load of ad-hoc

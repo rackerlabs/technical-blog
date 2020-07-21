@@ -17,8 +17,8 @@ metaTitle: "Get started with ORAchk"
 metaDescription: "This blog post introduces Oracle&reg; ORAchk and shows you how to download, install, and use this database audit tool."
 ogTitle: "Get started with ORAchk"
 ogDescription: "This blog post introduces Oracle&reg; ORAchk and shows you how to download, install, and use this database audit tool."
+slug: "get started with ORAchk" 
 ---
-
 This blog post introduces Oracle&reg; ORAchk and shows you how to download,
 install, and use this database audit tool.
 

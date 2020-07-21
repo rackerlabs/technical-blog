@@ -9,6 +9,7 @@ authorIsRacker: true
 categories:
   - Oracle
   - database
+slug: 'odb-tuning2' 
 ---
 
 Originally published by TriCore: April 12, 2017
@@ -239,9 +240,7 @@ SQL> ALTER DATABASE FORCE FULL DATABASE CACHING;
 Database altered.
 
 SQL> SELECT force_full_db_caching FROM v$database;
-FOR
----
-YES
+FORslug: '' ---YES
 
 SQL> alter database open;
 Database altered.

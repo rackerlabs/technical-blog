@@ -8,6 +8,7 @@ published: true
 authorIsRacker: true
 categories:
   - database
+slug: 'change-the-oracle-apps-and-weblogic-password' 
 ---
 
 This blog outlines the steps to change the password for Oracle&reg;'s E-Business

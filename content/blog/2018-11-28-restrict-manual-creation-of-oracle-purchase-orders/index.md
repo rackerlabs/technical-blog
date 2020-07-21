@@ -9,6 +9,7 @@ authorIsRacker: true
 categories:
   - database
   - Oracle
+slug: 'restrict-manual-creation-of-oracle-purchase-orders' 
 ---
 
 Sometimes businesses require a requisition in order to raise a purchase order

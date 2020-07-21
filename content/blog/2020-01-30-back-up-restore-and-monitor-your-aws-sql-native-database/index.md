@@ -15,6 +15,7 @@ metaTitle: "Back up, restore, and monitor your AWS SQL native database"
 metaDescription: "This blog post discusses backing up, restoring, and monitoring SQL native databases in Amazon&reg; Web Services (AWS) Relational Database Service(RDS)."
 ogTitle: "Back up, restore, and monitor your AWS SQL native database"
 ogDescription: "This blog post discusses backing up, restoring, and monitoring SQL native databases in Amazon&reg; Web Services (AWS) Relational Database Service(RDS)."
+slug: "back up restore and monitor your aws sql native database" 
 ---
 
 A database backup results when you back up the operational state, architecture,

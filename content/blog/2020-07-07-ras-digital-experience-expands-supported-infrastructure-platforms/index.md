@@ -17,6 +17,7 @@ and customer Java&reg;-based applications are now available on Managed Google&re
 ogTitle: "RAS Digital Experience expands supported infrastructure platforms"
 ogDescription: "RAS Digital Experience for Adobe&reg; Experience Manager (AEM)
 and customer Java&reg;-based applications are now available on Managed Google&reg; Cloud Platform (MGCP)."
+slug: "ras digital experience expands supported infrastructure platforms" 
 ---
 
 RAS Digital Experience solutions have been available on the Rackspace Technology

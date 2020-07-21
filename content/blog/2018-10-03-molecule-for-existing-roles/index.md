@@ -15,6 +15,7 @@ categories:
     - DevOps
     - Ansible
     - Orchestration
+slug: 'molecule-for-existing-roles' 
 ---
 
 Ansible development is fast, and anyone using Ansible extensively has most likely
@@ -42,9 +43,7 @@ is shown in the following example:
     └── main.yml
 
 1 directory, 1 file
-~/Projects/example_playbooks/roles/apache_install$ cat tasks/main.yml
----
-# install and start apache
+~/Projects/example_playbooks/roles/apache_install$ cat tasks/main.ymlslug: '' ---# install and start apache
 - name: install apache
   yum:
     name: httpd
@@ -143,9 +142,7 @@ post. The primary (and possibly only) differences in our tests from the previous
 example is that we're testing for the `httpd` service rather than `nginx`.
 
 ```
-~/Projects/example_playbooks/roles/apache_install$ cat molecule/default/molecule.yml
----
-dependency:
+~/Projects/example_playbooks/roles/apache_install$ cat molecule/default/molecule.ymlslug: '' ---dependency:
   name: galaxy
 driver:
   name: vagrant

@@ -8,6 +8,7 @@ published: true
 authorIsRacker: true
 categories:
   - database
+slug: 'unplugging-and-plugging-multitenant-databases' 
 ---
 
 This blog discusses detaching one pluggable database (PDB) from the source

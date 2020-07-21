@@ -15,8 +15,8 @@ metaTitle: "DBA tips for handling Workflow Mailer issues"
 metaDescription: "This post discusses a few generic Oracle&reg; Workflow Notification Mailer issues that database administrators (DBAs) face daily."
 ogTitle: "DBA tips for handling Workflow Mailer issues"
 ogDescription: "This post discusses a few generic Oracle&reg; Workflow Notification Mailer issues that database administrators (DBAs) face daily."
+slug: "dba tips for handling workflow mailer issues" 
 ---
-
 This post discusses a few generic Oracle&reg; Workflow Notification Mailer issues that database administrators
 (DBAs) face daily.
 

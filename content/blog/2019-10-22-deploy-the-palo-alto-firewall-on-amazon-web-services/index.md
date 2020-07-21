@@ -13,6 +13,7 @@ metaTitle: "Deploy the Palo Alto firewall on Amazon Web Services"
 metaDescription: "This article provides the initial steps for deploying Palo Alto Firewall on AWS, but the configuration of advanced features in AWS is beyond the scope of this article."
 ogTitle: "Deploy the Palo Alto firewall on Amazon Web Services"
 ogDescription: "This article provides the initial steps for deploying Palo Alto Firewall on AWS, but the configuration of advanced features in AWS is beyond the scope of this article."
+slug: "deploy the palo alto firewall on amazon web services" 
 ---
 
 This article provides initial steps for deploying Palo Alto Firewall on AWS, but

@@ -21,8 +21,8 @@ metaTitle: "glibc Linux DNS round-robin explanation"
 metaDescription: "My friend wanted a better exaplanation of glibc Linux DNS round-robin, so here it is."
 ogTitle: "glibc Linux DNS round-robin explanation"
 ogDescription: "My friend wanted a better exaplanation of glibc Linux DNS round-robin, so here it is."
+slug: "glibc linux dns round-robin explanation" 
 ---
-
 A friend was trying to figure out what the GNU C Library (glibc) does with the
 round-robin domain name system (DNS) load balancing technique, and information
 about that is somewhat scarce. He expected it to randomly choose an address out

@@ -12,6 +12,7 @@ metaTitle: "What you should listen for with Social Studio"
 metaDescription: "You can't respond to people if you haven't listened to what they have to say first. Enter Social Studio."
 ogTitle: "What you should listen for with Social Studio"
 ogDescription: "You can't respond to people if you haven't listened to what they have to say first. Enter Social Studio."
+slug: "what you should listen for with social studio" 
 ---
 
 With all the digital channels of communication out there, you probably have

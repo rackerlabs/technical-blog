@@ -16,6 +16,7 @@ metaTitle: "Oracle Data Guard Far Sync&mdash;zero data loss"
 metaDescription: "In this blog, I discuss an Oracle&reg; for Data Guard feature, Far Sync."
 ogTitle: "Oracle Data Guard Far Sync&mdash;zero data loss"
 ogDescription: "In this blog, I discuss an Oracle&reg; for Data Guard feature, Far Sync."
+slug: "oracle data guard far sync zero data loss" 
 ---
 
 In this blog, I discuss an Oracle&reg; for Data Guard feature, Far Sync.

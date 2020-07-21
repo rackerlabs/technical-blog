@@ -14,8 +14,9 @@ metaDescription: "With features that act as guardrails on your sales process, Sa
 ogTitle: "Install guardrails on your sales process with Salesforce CPQ"
 ogDescription: "With features that act as guardrails on your sales process, Salesforce&reg; CPQ is just the tool you need to stay on track."
 canonical: https://blog.rackspace.com/installing-guardrails-on-your-sales-process-with-salesforce-cpq/
----
+slug: "install guardrails on your sale process with salesforce CPQ"
 
+---
 As your company grows, your sales process becomes more complicated. You might
 notice that your sales team slows down as your salespeople struggle to
 generate proposals and close sales in the same timely manner. What can you do

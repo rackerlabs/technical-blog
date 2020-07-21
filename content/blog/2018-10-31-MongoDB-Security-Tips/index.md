@@ -9,6 +9,7 @@ authorIsRacker: true
 categories:
   - database
   - security
+slug: 'MongoDB-Security-Tips' 
 ---
 
 Getting started with MongoDB&reg; is easy. However, you can run into several

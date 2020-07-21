@@ -23,8 +23,8 @@ in your Marketing Cloud implementation to be successful."
 ogTitle: "Which departments should be involved in setting up Marketing Cloud and why"
 ogDescription: "This blog explains which departments you should involve
 in your Marketing Cloud implementation to be successful."
+slug: "which departments should be involved in setting up marketing cloud and why" 
 ---
-
 It's easy to get wrapped up in the details and overlook the bigger picture when you’re implementing a new technology.
 Especially when you're implementing a wide-reaching marketing automation platform like Salesforce
 Marketing Cloud.

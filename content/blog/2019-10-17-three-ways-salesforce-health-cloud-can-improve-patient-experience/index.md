@@ -12,6 +12,7 @@ metaTitle: "Three ways Salesforce Health Cloud can improve patient experience"
 metaDescription: "This blog discusses three ways that SalesForce Health Cloud can help improve patient experience within the health care industry."
 ogDescription: "This blog discusses three ways that SalesForce Health Cloud can help improve patient experience within the health care industry."
 canonical: https://blog.rackspace.com/3-ways-salesforce-health-cloud-can-improve-patient-experience/
+slug: "three ways salesforce health cloud can improve patient experience" 
 ---
 
 Salesforce&reg; Health Cloud is a top-ranked healthcare customer relationship

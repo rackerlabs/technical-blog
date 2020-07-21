@@ -17,6 +17,7 @@ metaTitle: "Join Rackspace in the fight against COVID-19 with BOINC"
 metaDescription: "Find out how you can personally help fight COVID-19."
 ogTitle: "Join Rackspace in the fight against COVID-19 with BOINC"
 ogDescription: "Find out how you can personally help fight COVID-19."
+slug: "join rackspace in the fight against covid-19 with boinc" 
 ---
 
 Wherever you live in the world, you have probably been impacted by COVID-19,

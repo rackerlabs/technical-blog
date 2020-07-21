@@ -17,8 +17,8 @@ categories:
     - Security
     - Developers
     - Orchestration
+slug: 'fanatical-security-delivered-by-quality-engineering-security-team' 
 ---
-
 Our customers require us to develop software that is trustworthy and secure.
 Privacy also demands attention. To ignore the privacy concerns of users is to
 invite blocked deployments, litigation, negative media coverage, and mistrust.

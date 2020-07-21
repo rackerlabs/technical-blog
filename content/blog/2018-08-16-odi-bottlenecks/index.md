@@ -8,9 +8,9 @@ published: true
 authorIsRacker: true
 categories:
     - General
----
-
+slug: 'odi-bottlenecks'
 Originally published by TriCore: April 4, 2017
+---
 
 This blog post aims to help Oracle&reg; Data Integrator (ODI) designers,
 administrators, and system teams address performance bottlenecks

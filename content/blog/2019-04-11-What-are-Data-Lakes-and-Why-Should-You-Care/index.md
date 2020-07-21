@@ -15,8 +15,8 @@ metaTitle: "What are Data Lakes, and why should you care?"
 metaDescription: "A look at Data Lakes as a source of future business value."
 ogTitle: "What are Data Lakes, and why should you care?"
 ogDescription: "A look at Data Lakes as a source of future business value."
+slug: "What are Data Lakes and Why Should You Care" 
 ---
-
 In recent years, Data Lakes have moved from the technology boondocks to the
 prime beachfront real estate of the data sciences. Why is this happening, and
 why are they important? The short answer ... there's value in there.

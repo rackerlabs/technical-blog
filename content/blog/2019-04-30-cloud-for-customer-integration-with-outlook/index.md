@@ -12,6 +12,7 @@ metaTitle: "Cloud for Customer integration with Outlook"
 metaDescription: "This blog covers the Outlook add-in feature and discusses step-by-step instructions to integrate Outlook with SAP Cloud for Customer (C4C)."
 ogTitle: "Cloud for Customer integration with Outlook"
 ogDescription: "This blog covers the Outlook add-in feature and discusses step-by-step instructions to integrate Outlook with SAP Cloud for Customer (C4C)."
+slug: "cloud for customer integration with outlook" 
 ---
 
 SAP&reg; Hybris Cloud for Customer (C4C) is a cloud-based solution for effectively

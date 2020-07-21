@@ -10,7 +10,7 @@ authorIsRacker: true
 categories:
   - containers
   - aws
-
+slug: 'aws-app-mesh' 
 ---
 
 AWS App Mesh is the latest addition to the AWS product potfolio. To quote AWS:

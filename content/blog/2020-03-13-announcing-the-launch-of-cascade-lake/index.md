@@ -18,6 +18,7 @@ metaTitle: "Announcing the launch of Cascade Lake"
 metaDescription: "Rackspace has recently released the second generation of the Intel Xeon scalable architecture processor family, code-named Cascade Lake."
 ogTitle: "Announcing the launch of Cascade Lake"
 ogDescription: "Rackspace has recently released the second generation of the Intel Xeon scalable architecture processor family, code-named Cascade Lake."
+slug: "announcing the launch of cascade lake" 
 ---
 
 Rackspace has recently released the second generation of the Intel Xeon scalable

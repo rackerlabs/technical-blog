@@ -18,8 +18,8 @@ metaDescription: "Rackspace offers Cloud Native Security (CNS) for your Amazon&r
 ogTitle: "Cloud Native Security for AWS"
 ogDescription: "Rackspace offers Cloud Native Security (CNS) for your Amazon&reg; Web Services
 (AWS) environments."
+slug: "cloud native security for aws" 
 ---
-
 Rackspace offers Cloud Native Security (CNS) for your Amazon&reg; Web Services
 (AWS) environments.
 

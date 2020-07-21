@@ -7,6 +7,7 @@ author: Don Schenck
 published: true
 categories:
   - General
+slug: '11-things' 
 ---
 
 One of the more pressing needs in the world of open source software is the need

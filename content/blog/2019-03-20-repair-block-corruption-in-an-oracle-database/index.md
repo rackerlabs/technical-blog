@@ -13,6 +13,7 @@ metaTitle: "Repair block corruption in Oracle Database"
 metaDescription: "This post discusses how to repair multiple or single block corruption of datafiles, including system datafiles, in an Oracle database."
 ogTitle: "Repair block corruption in Oracle Database"
 ogDescription: "This post discusses how to repair multiple or single block corruption of datafiles, including system datafiles, in an Oracle database."
+slug: "repair block corruption in an oracle database" 
 ---
 
 This post discusses how to repair multiple or single block corruption of

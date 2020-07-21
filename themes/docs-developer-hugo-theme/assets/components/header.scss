@@ -15,9 +15,12 @@ $header-height: 5rem;
 
     .nav-link {
       color: $color-white;
-      font-weight: 500;
+      font-weight: bold;
       text-decoration: none;
       transition: color 0.15s ease;
+      text-transform: uppercase;
+      font-family: 'open-sans-regular', arial, sans-serif;
+      font-size: 1rem;
 
       &:hover {
         color: $color-white;
@@ -26,6 +29,9 @@ $header-height: 5rem;
       &.active {
         color: $color-white;
       }
+    }
+    li:hover {
+      background-color: $color-header-grey;
     }
   }
   .logo {

@@ -14,8 +14,8 @@ metaTitle: "Using Azure proximity placement groups"
 metaDescription: "Configure Azure&reg; proximity placement groups."
 ogTitle: "Using Azure proximity placement groups"
 ogDescription: "Configure Azure&reg; proximity placement groups."
+slug: "using azure proximity placement groups" 
 ---
-
 I hardly ever see the Azure&reg; proximity placement groups feature implemented for Infrastructure as a Service (IaaS) solutions. Do folks not know that this feature exists, or is it just one of the many components people forget when architecting? For those that do not know what a proximity placement group is, it is a logical grouping that tries to keep your virtual machines (VMs) physically close to each other to reduce network latency between those VMs.
 
 <!--more-->

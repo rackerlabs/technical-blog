@@ -10,8 +10,8 @@ bio: “Jimmy Rudley is an Azure Architect at Rackspace and an active member of 
 categories:
     - DevOps
     - Azure
+slug: 'Azure-WebApp-Extensions-with-ARM' 
 ---
-
 You may have found the extensions tab when browsing in an Azure Web App. Selecting extensions to add to an application is as easy as just pointing and clicking. Moving outside of the portal to an ARM template, things get a little bit tricky because documentation is lacking.
 
 <!--more-->

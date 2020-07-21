@@ -9,8 +9,8 @@ authorIsRacker: true
 categories:
   - Oracle
   - database
+slug: 'integrate-dicoverer-with-OAM' 
 ---
-
 This post shows you how to integrate Oracle&reg; Discoverer 11g with the single
 sign-on (SSO) solution delivered by Oracle Access Manager (OAM) 11g. It helps anyone
 who is looking for a one-stop login solution across different applications.

@@ -7,6 +7,7 @@ author: Hart Hoover
 published: true
 categories:
   - Mailgun
+slug: 'mailgun-offers-free-email-validation-api' 
 ---
 
 As many of you know, Rackspace acquired the transactional email provider Mailgun
@@ -23,7 +24,7 @@ account directly through the Cloud Control Panel!
 
 <!-- more -->
 
-{% img center 2013-08-06-mailgun/cp.png %}
+![](cp.png)
 
 Email validation is a hard problem that every single developer, building
 anything on the web, has to deal with.  We actually have been working on email
@@ -204,7 +205,7 @@ Email addresses are frequently mistyped. Instead of @yahoo.com, you might type
 misspelled word, we offer suggestions so you don’t miss mail due to a typo. Here’s
 what that looks like in the [jquery demo app][2] [[source][8]] we mentioned above.
 
-{% img center 2013-08-06-mailgun/email-validator.png %}
+![](email-validator.png)
 
 ### What we don’t provide
 

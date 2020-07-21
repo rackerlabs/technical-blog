@@ -18,8 +18,8 @@ metaTitle: "Announcing the launch of Rackspace Managed VMWare Cloud on AWS Disas
 metaDescription: "Rackspace announces the general availability of Rackspace Managed VMware Cloud&trade; on Amazon&reg; Web Services (AWS) Disaster Recovery Services powered by VMware Site Recovery."
 ogTitle: "Announcing the launch of Rackspace Managed VMWare Cloud on AWS Disaster Recovery Services"
 ogDescription: "Rackspace announces the general availability of Rackspace Managed VMware Cloud&trade; on Amazon&reg; Web Services (AWS) Disaster Recovery Services powered by VMware Site Recovery."
+slug: "Announcing the launch of rackspace managed.vmware cloud on aws disaster recovery services" 
 ---
-
 Rackspace announces the general availability of Rackspace Managed VMware Cloud&trade;
 (VMC) on Amazon&reg; Web Services (AWS) Disaster Recovery Services powered by
 VMware Site Recovery.

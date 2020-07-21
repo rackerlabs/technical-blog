@@ -13,7 +13,9 @@ metaTitle: "Benefits of strategic supply chain optimization"
 metaDescription: "This blog describes some of the benefits of strategic supply chain optimization."
 ogTitle: "Benefits of strategic supply chain optimization"
 ogDescription: "This blog describes some of the benefits of strategic supply chain optimization."
+slug: "benefits of strategic supply chain optimization" 
 ---
+
 This blog describes some of the benefits of strategic supply chain optimization.
 
 <!--more-->

@@ -15,6 +15,7 @@ management of business processes."
 categories:
   - database
   - architecture
+slug: 'introduction-to-apache-cassandra' 
 ---
 
 This blog gives an overview of the non-relational database, Apache Cassandra&trade;. It

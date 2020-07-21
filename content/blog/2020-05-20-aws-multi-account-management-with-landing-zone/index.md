@@ -25,6 +25,7 @@ ogDescription: "Currently, enterprises are looking for more sophisticated ways
 of managing their multi-account Amazon&reg; Web Services (AWS) environments with
 AWS best practices, while at the same time incorporating their internal
 governance and security mandates."
+slug: "aws multi-account management with landing zone" 
 ---
 
 Currently, enterprises are looking for more sophisticated ways of managing their

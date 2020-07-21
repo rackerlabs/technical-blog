@@ -19,6 +19,7 @@ metaTitle: "Recover the Oracle voting disk when its backup is missing"
 metaDescription: "This blog explores a scenario where you've lost an Oracle Cluster Registry (OCR) and voting disk, and the voting disk has no backup."
 ogTitle: "Recover the Oracle voting disk when its backup is missing"
 ogDescription: "This blog explores a scenario where you've lost an Oracle Cluster Registry (OCR) and voting disk, and the voting disk has no backup."
+slug: "recover the Oracle voting disk when its backup is missing" 
 ---
 
 This blog explores a scenario where you've lost an Oracle&reg; Cluster Registry

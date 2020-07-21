@@ -12,8 +12,8 @@ categories:
     - DevOps
     - Azure
     - SQL Server
+slug: 'Export-Azure-SQL-DB' 
 ---
-
 Azure SQL is Microsoft's answer to Platform as a Service for SQL Server. It extracts a lot of the day to day administrative tasks of managing an installation. Let’s take a look how a consumer of Azure SQL can export data to restore to a local on-premise installation.
 
 <!--more-->

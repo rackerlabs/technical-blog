@@ -20,6 +20,7 @@ ogTitle: "Create alerts for long-running backups on Azure"
 ogDescription: "This post explores how to monitor Microsoft&reg; Azure&reg;
 backups and, if they run long, use Log Analytics to trigger an alert on
 the servers."
+slug: "create alerts for long running backups on Azure" 
 ---
 
 This post explores how to monitor Microsoft&reg; Azure&reg; server

@@ -13,6 +13,7 @@ metaTitle: "Oracle EBS Applications disaster recovery"
 metaDescription: "Oracle EBS Applications disaster recovery set up."
 ogTitle: "Oracle EBS Applications disaster recovery"
 ogDescription: "Oracle EBS Applications disaster recovery set up."
+slug: 'Oracle-EBS-applications-disaster-recovery' 
 ---
 
 This blog covers the creation and maintenance of disaster recovery (DR) systems

@@ -7,6 +7,7 @@ author: W. Matthew Wilson
 published: true
 categories:
   - cloud files
+slug: 'upload-files-directly-to-rackspace-cloud-files-from-the-browser'   
 ---
 
 We needed to let users take files (possibly really big files) from their
@@ -20,8 +21,7 @@ This is available on github:
 
 <!-- more -->
 
-Run the example
----------------
+Run the exampleslug: ''   ---------------
 
 If you don't have a Rackspace account, you're not going to be able to
 run this example, so [go make one](https://developer.rackspace.com/devtrial/).
@@ -37,19 +37,18 @@ then do this stuff:
 Now open up [http://localhost:8765](http://localhost:8765) and you should see something like
 the screenshot in before-upload.png
 
-{% img https://github.com/216software/ajax-put-rackspace/raw/master/before-upload.png %}
+![](https://github.com/216software/ajax-put-rackspace/raw/master/before-upload.png)
 
 Now upload a file. Hopefully, you'll watch a pretty blue scrollbar track
 the upload's progress, and when it's done, you see something like what's
 in this screenshot:
 
-{% img 2013-11-19-upload-files-directly-to-rackspace-cloud-files-from-the-browser/after-upload.png %}
+![](after-upload.png)
 
 Click the DOWNLOAD button. You will get the file you uploaded, but named
 with a different name.
 
-How we did it
--------------
+How we did itslug: ''   -------------
 
 1.  Make a container in rackspace cloudfiles.
 2.  Set metadata on that container to allow CORS from the domain hosting our HTML file.
@@ -60,8 +59,7 @@ we use a [FileReader](https://developer.mozilla.org/en-US/docs/Web/API/FileReade
 to read the contents of the file into a buffer.
 6.  Use more javascript to do an ajax PUT to the temp URL created in step 3.
 
-The python part
----------------
+The python partslug: ''   ---------------
 
 The Pyrax package made this easy.
 
@@ -109,8 +107,7 @@ requests are allowed.
 
 Like I said, the python part is really pretty easy!
 
-Security considerations
------------------------
+Security considerationsslug: ''   -----------------------
 
 The Rackspace Cloud Files servers don't check if the request comes from
 from a user that authenticated with your web application.
@@ -121,8 +118,7 @@ can use curl or whatever tool they want to push a different file.
 When you make a temporary URL, you need to make sure that the right
 person and only the right person gets it.
 
-How to set the filename for downloads
--------------------------------------
+How to set the filename for downloadsslug: ''   -------------------------------------
 
 Don't worry about how I'm using ugly-looking uuid filenames in the
 upload URL.
@@ -140,8 +136,7 @@ extension, your operating system might get confused.
 The relevant rackspace documentation is
 here [https://docs.rackspace.com/files/api/v1/cf-devguide/content/TempURL_File_Name_Overrides-d1e213.html][4]
 
-The javascript part
--------------------
+The javascript partslug: ''   -------------------
 
 All the javascript lives in a big blob at the end of upload.html. It's a
 tangled mess of callbacks and closure variables.
@@ -234,8 +229,7 @@ And that's about it! If the example doesn't work for you, please let me
 know. And I hope somebody can clean up the javascript! Triple-nested
 callbacks ain't my idea of a good time.
 
-Alternate solutions
--------------------
+Alternate solutionsslug: ''   -------------------
 
 ### Handle the upload and then push to rackspace
 
@@ -268,8 +262,7 @@ that no matter how busy the application gets, we always have some idle
 workers, but that's a worst-case solution. That's like dealing with a
 weight problem by buying a bigger pair of pants.
 
-What about using async workers?
--------------------------------
+What about using async workers?slug: ''   -------------------------------
 
 Well, first of all, I want to get the files up to rackspace, and this
 way gets that done better.

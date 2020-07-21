@@ -10,7 +10,7 @@ categories:
   - Docker
   - Azure
   - aws
-
+slug: 'containers-and-cloud-portability' 
 ---
 
 One of the benefits of containers is the promise of portability.  The Docker&reg;

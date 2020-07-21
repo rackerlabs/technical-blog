@@ -9,7 +9,9 @@ published: true
 categories:
   - Python
   - aws
+slug: 'a-tutorial-on-application-development-using-vagrant-with-the-pycharm-ide' 
 ---
+
 I have spent the majority of my career as a Java developer.  As a result, I learned to be more productive using an IDE instead of an editor like Vi.  Even though Vi is still my editor of choice when I’m in a Linux shell, I don’t believe it’s practical when managing large Java projects.
 
 <!--more-->

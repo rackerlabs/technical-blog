@@ -14,6 +14,7 @@ metaTitle: "Static storage website with Azure Front Door"
 metaDescription: "How to configure an Azure storage static website in Azure Front Door"
 ogTitle: "Static storage website with Azure Front Door"
 ogDescription: "How to configure an Azure storage static website in Azure Front Door."
+slug: "Azure Front Door Storage Static Website" 
 ---
 
 One of the Azure multi-region topologies I have seen included an Azure Traffic Manager with Azure App Service Web Apps in each region. Some customers are cost conscious and would rather have a static web page display after a region failure with some generic message that there is a problem and it is being looked into. With the introduction of Azure Front Door, there are many capabilities that will not only enhance our live site, but will also serve as a cost-effective failover to a static website in a storage account.

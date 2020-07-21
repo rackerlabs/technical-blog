@@ -17,6 +17,7 @@ metaTitle: "Restoring statistics in Oracle Database"
 metaDescription: "This blog post explores when and how you might restore statistics in Oracle&reg; Database."
 ogTitle: "Restoring statistics in Oracle Database"
 ogDescription: "This blog post explores when and how you might restore statistics in Oracle&reg; Database."
+slug: "restoring statistics in oracle database" 
 ---
 
 This blog post explores when and how you might restore statistics in Oracle&reg;

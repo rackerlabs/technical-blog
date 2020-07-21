@@ -14,8 +14,9 @@ metaTitle: "New features in Oracle 18c"
 metaDescription: "This blog discusses the new interesting features introduced in Oracle Database 18c that make the life of DBA a little easier."
 ogTitle: "New features in Oracle version 18C"
 ogDescription: "This blog discusses the new interesting features introduced in Oracle Database 18c that make the life of DBA a little easier."
----
+slug: "new features in oracle  version 18c" 
 
+---
 This blog post discusses the new interesting features introduced in Oracle
 Database 18c that make the life of DBA a little easier.
 

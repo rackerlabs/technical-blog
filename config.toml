@@ -42,7 +42,7 @@ xhtml = false
 uglyURLs = false
 
 [permalinks]
-    blog = "/blog/:title"
+    blog = "/blog/:slug"
     categories = "/blog/categories/:slug"
     author = "/blog/author/:slug"
 

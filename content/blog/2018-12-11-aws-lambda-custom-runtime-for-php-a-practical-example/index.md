@@ -23,8 +23,8 @@ categories:
   - aws
   - Developers
 canonical: https://aws.amazon.com/blogs/apn/aws-lambda-custom-runtime-for-php-a-practical-example/
+slug: 'aws-lambda-custom-runtime-for-php-a-practical-example' 
 ---
-
 
 This year's AWS re:Invent was a nonstop, high-powered firehose of exciting new
 features and products. Native PHP support on Lambda wasn't one of those features,
@@ -525,9 +525,7 @@ that AWS has already open sourced. I am excited about what these new capabilitie
 could mean for PHP applications in 2019, and I look forward to seeing what you
 build with them. If you build something you'd like to share, use the Feedback tab,
 or reach out to me on [Twitter](https://twitter.com/michaelmoussa).
-
----
-
+slug: '' ---
 Are you excited about this and other recent AWS launch announcements? We'd love
 to help. Schedule [a free strategy session](https://go.rackspace.com/Ask-An-AWS-Expert.html)
 to discuss how Rackspace can assist you in taking advantage of new AWS products

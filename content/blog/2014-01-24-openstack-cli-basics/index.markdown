@@ -7,6 +7,7 @@ author: Jonathan Kelly
 published: true
 categories:
   - OpenStack
+slug: 'openstack-cli-basics'   
 ---
 
 

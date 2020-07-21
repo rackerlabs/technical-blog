@@ -7,6 +7,7 @@ author: Jesse Keating
 published: true
 categories:
   - ansible
+slug: 'rolling-deployments-with-ansible-and-cloud-load-balancers'   
 ---
 
 Recently a fellow Racker wrote a great post about [zero downtime deployments][0].

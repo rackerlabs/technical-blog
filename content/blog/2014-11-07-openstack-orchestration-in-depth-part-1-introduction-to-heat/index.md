@@ -10,8 +10,8 @@ categories:
   - Orchestration
   - AWS
 bio: "Miguel Grinberg is a software engineer with a background in web technologies and REST APIs. He is the author of the book \"Flask Web Development\" from O'Reilly Media, and has a blog at https://blog.miguelgrinberg.com, where he writes about a variety of topics including web development, robotics, photography and the occasional movie review. Miguel works as a Software Developer with the Rackspace Private Cloud team. He lives in Portland, Oregon with his wife, four kids, two dogs and a cat. Follow @miguelgrinberg on Twitter."
+slug: 'openstack-orchestration-in-depth-part-1-introduction-to-heat' 
 ---
-
 With this article I begin a series of hands-on developer oriented blog posts that
 explore OpenStack orchestration using
 [Heat](https://wiki.openstack.org/wiki/Heat).

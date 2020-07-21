@@ -8,8 +8,8 @@ published: true
 authorIsRacker: true
 categories:
     - General
+slug: 'using-iis-with-qlikview-and-cutom-users' 
 ---
-
 This blog describes best practices for the implementation architecture
 of the web client authentication solutions for QlikView&reg;.
 

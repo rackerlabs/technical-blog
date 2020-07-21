@@ -15,6 +15,7 @@ categories:
     - DevOps
     - OpenStack
     - Orchestration
+slug: 'using-terraform-with-rackspace-cloud' 
 ---
 
 # Using Terraform with Rackspace Public Cloud

@@ -9,8 +9,8 @@ categories:
   - OpenStack
   - Neutron
   - Cloud Networks
+slug: 'neutron-networking-l3-agent' 
 ---
-
 In this multi-part blog series I intend to dive into the various components of the OpenStack Neutron project and provide working examples of networking configurations for clouds built with [Rackspace Private Cloud](https://www.rackspace.com/cloud/private/) powered by [OpenStack](https://www.openstack.org) on Ubuntu 12.04 LTS.
 
 In the previous installment, [Neutron Networking: VLAN Provider Networks](https://developer.rackspace.com/blog/neutron-networking-vlan-provider-networks.html), I provided guidance on configuring networks in Neutron using VLAN tagging. In this fourth installment, I'll describe how to combine flat or VLAN provider networks with GRE-based tenant networks using the L3 agent and Neutron routers.<!--more-->
@@ -45,7 +45,7 @@ Neutron's implementation of floating IPs differs greatly from nova-networks, but
 
 A logical representation of this concept can be seen below:
 
-{% img center 2014-01-07-neutron-networking-l3-agent/l3_agent_1.1.png %}
+![](l3_agent_1.1.png)
 
 While logically it appears that floating IPs are associated directly with instances, in reality a floating IP is associated with a Neutron port. Other port associations include:
 
@@ -93,7 +93,7 @@ For this installment, a Cisco ASA 5510 will once again serve as the lead gateway
 
 A single interface on the servers will be used for both management and provider network connectivity. Neutron works with Open vSwitch to build peer-to-peer tunnels between hosts that serve to carry encapsulated *tenant* network traffic.
 
-{% img center 2014-01-07-neutron-networking-l3-agent/l3_agent_1.2.png %}
+![](l3_agent_1.2.png)
 
 
 ### Networking: L3 agent configuration

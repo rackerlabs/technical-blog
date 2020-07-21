@@ -9,6 +9,7 @@ published: true
 categories:
   - Oracle
   - database
+slug: 'convert-a-non-container-database-to-a-multitentant-pluggable-database' 
 ---
 
 Originally published by TriCore: August 29, 2017

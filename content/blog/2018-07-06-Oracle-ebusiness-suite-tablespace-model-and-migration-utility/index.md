@@ -9,6 +9,7 @@ authorIsRacker: true
 categories:
   - Oracle
   - database
+slug: 'Oracle-ebusiness-suite-tablespace-model-and-migration-utility' 
 ---
 
 This blog covers the process for converting a version 11i database

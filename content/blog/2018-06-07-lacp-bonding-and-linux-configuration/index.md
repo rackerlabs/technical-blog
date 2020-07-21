@@ -9,8 +9,8 @@ authorIsRacker: true
 categories:
     - Cloud-networks
     - Cloud Servers
+slug: 'lacp-bonding-and-linux-configuration' 
 ---
-
 This blog introduces Link Aggregation Control Protocol (LACP) bonding and
 provides step-by-step configuration of LACP bonding on Red Hat Enterprise Linux
 (RHEL) and CentOS operating systems versions 6 and 7.

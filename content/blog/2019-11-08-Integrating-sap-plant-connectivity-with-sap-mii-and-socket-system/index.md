@@ -12,6 +12,7 @@ metaTitle: "Integrating SAP Plant Connectivity with SAP MII and the socket syste
 metaDescription: "This blog describes the SAP&reg; Plant Connectivity (PCo) services and management tools that enable you to integrate with SAP Manufacturing Integration and Intelligence (MII) to create a variety of elements."
 ogTitle: "Integrating SAP Plant Connectivity with SAP MII and the socket system"
 ogDescription: "This blog describes the SAP&reg; Plant Connectivity (PCo) services and management tools that enable you to integrate with SAP Manufacturing Integration and Intelligence (MII) to create a variety of elements."
+slug: "Integrating sap plant connectivity with sap mii and socket system" 
 ---
 
 This blog describes the SAP&reg; Plant Connectivity (PCo) services and management

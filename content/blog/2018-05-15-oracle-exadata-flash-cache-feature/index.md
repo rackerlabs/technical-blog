@@ -10,8 +10,8 @@ categories:
   - Oracle
   - database
   - architecture
+slug: 'oracle-exadata-flash-cache-feature' 
 ---
-
 This blog discusses the Oracle Exadata Smart Flash Cache feature and its
 architecture, including the write-back flash cache feature.
 

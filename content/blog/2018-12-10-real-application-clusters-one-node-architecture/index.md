@@ -9,6 +9,7 @@ authorIsRacker: true
 categories:
   - database
   - Oracle
+slug: 'real-application-clusters-one-node-architecture' 
 ---
 
 This post discusses the Oracle&reg; Real Application Clusters (RAC) One Node

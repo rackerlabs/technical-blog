@@ -22,6 +22,7 @@ ogTitle: "Use the Oracle Forms APP\_MULTI package"
 ogDescription:  "The Oracle&reg APP\_MULTI package allows you to add
 multi-selection functionality to a form. This option is available in APPCORE
 Library."
+slug: "use the oracle forms app multi package" 
 ---
 
 The Oracle&reg; APP\_MULTI package enables you to add multi-selection functionality

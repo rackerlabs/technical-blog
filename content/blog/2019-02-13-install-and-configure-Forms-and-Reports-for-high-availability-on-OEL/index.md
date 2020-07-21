@@ -13,6 +13,7 @@ metaTitle: "Create and configure Forms and Reports for high availability on OEL"
 metaDescription: "This blog shows you how to install and configure  Forms and Reports version 12.2.1.3.0 on Oracle Enterprise Linux (OEL) version 7.2 server to ensure high availability."
 ogTitle: "Create and configure Forms and Reports for high availability on OELL"
 ogDescription: "This blog shows you how to install and configure Forms and Reports version 12.2.1.3.0 on Oracle Enterprise Linux (OEL) version 7.2 server to ensure high availability."
+slug: 'install-and-configure-Forms-and-Reports-for-high-availability-on-OEL' 
 ---
 
 This blog shows you how to install and configure Oracle&reg; Forms and

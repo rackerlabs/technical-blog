@@ -17,8 +17,8 @@ of the database and allow Oracle&reg; to query the data in those files."
 ogTitle: "Use Oracle external tables"
 ogDescription: "External tables receive data from the flat files stored outside
 of the database and allow Oracle&reg; to query the data in those files."
+slug: "use oracle external tables" 
 ---
-
 External tables receive data from the flat files stored outside of the database
 and allow Oracle&reg; to query the data in those files.
 

@@ -9,6 +9,7 @@ authorIsRacker: true
 authorAvatar: 'https://s.gravatar.com/avatar/9498305cda9dc4fe9d8f5873b09ff1e2'
 categories:
     - General
+slug: 'applications-monitoring-creating-a-smoother-financial-close' 
 ---
 
 One of the key points in supporting our customers is to make sure they have a

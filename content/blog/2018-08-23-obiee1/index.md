@@ -8,6 +8,8 @@ published: true
 authorIsRacker: false
 categories:
     - General
+slug: 'obiee1'
+
 ---
 
 Originally published by TriCore: August 2, 2016

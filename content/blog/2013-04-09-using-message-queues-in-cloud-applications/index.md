@@ -7,8 +7,10 @@ author: Hart Hoover
 published: true
 categories:
     - General
+slug: 'using-message-queues-in-cloud-applications' 
 ---
-{% img right 2013-04-09-using-message-queues-in-cloud-applications/pillar.png 160 160 %}
+
+<img class='image-right' src='pillar.png'/>
 
 You can consider message queues as a way to achieve parallel computing in an
 application. In this post, we dive into the different message queues out there

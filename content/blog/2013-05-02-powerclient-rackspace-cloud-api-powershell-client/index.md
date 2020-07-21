@@ -7,7 +7,9 @@ author: Mitch Robins
 published: true
 categories:
   - Cloud Servers
+slug: 'powerclient-rackspace-cloud-api-powershell-client' 
 ---
+
 ##Update (July 16, 2015)
 
 As of July 16th 2015, this client has been updated to use JSON requests
@@ -28,7 +30,7 @@ following for more information:
 
 <!-- more -->
 
-{% img right 2013-05-02-powershell/powershell.png 200 200 %}
+![](powershell.png)
 ##Who am I and why should you use this client?
 
 My name is Mitch Robins and I am currently a sales engineer in the SMB segement for Rackspace. Having 15+ years in the IT trenches with Windows (from desktop support to solutions architecture), this was the perfect opportunity to be able to contribute to the Windows community to help with cloud management and adoption. The idea for this client was born out of just that notion. There was a need for a Windows native API client, and we were in a good position to create something to enable the community at large could use. Over the last few months, we've spent quite a bit of personal and Rackspace sponsored time in getting this tool developed to specifically fill this gap and make life easier for Windows users.

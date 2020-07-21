@@ -16,8 +16,9 @@ metaDescription: "Initial thoughts on the Security Hub preview as announced at r
 ogTitle: "AWS security hub initial thoughts"
 ogDescription: "A discussion of the Security Hub preview as announced at re:Invent 2018"
 ogImage:
-
+slug: 'aws-security-hub-overview' 
 ---
+
 AWS Security Hub was announced in Andy Jassy's re:Invent 2018
 [Keynote(46:23)](https://youtu.be/ZOIkOnW640A?t=2783) and pitched as "a place to
 centrally manage security and compliance across your whole AWS environment

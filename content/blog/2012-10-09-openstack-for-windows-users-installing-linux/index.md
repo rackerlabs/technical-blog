@@ -7,8 +7,9 @@ author: Duan van der Westhuizen
 categories:
   - OpenStack
   - SQL Server
----
+slug: 'openstack for windows users installing linux'
 
+---
 _This is a guest post by Duan van der Westhuizen. Duan works at Rackspace in Enterprise Product Development and has been a Racker for almost 6 years. Duan started in our EMEA office where he also had roles in Business Intelligence and Customer Support. He has over 15 years of technology experience across various fields from technology strategy, engineering, development and database design. Duan is a tech at heart who is passionate about leading edge technologies and finding ways to solve market problems through new and innovative solutions._
 
 In this second post of my blog series about learning to deploy my own OpenStack private cloud, I tackle the installation of the operating system I will use to run OpenStack. I had to do quite a bit of groundwork to understand the basic installation and configurations to ensure I ended up with a running system. Below I document my steps, as well as outline the similarities with Windows Server and other Microsoft technologies.

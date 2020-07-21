@@ -10,8 +10,8 @@ categories:
   - Oracle
   - database
   - architecture
+slug: 'oracle-goldengate-basics' 
 ---
-
 This blog post explores the basics of Oracle&reg; GoldenGate&reg; and its
 functions. Because it's decoupled from the database architecture, GoldenGate
 facilitates heterogeneous and homogeneous real-time capture of transactional change data

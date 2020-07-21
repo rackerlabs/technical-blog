@@ -13,6 +13,7 @@ metaTitle: "Transparent data encryption with Oracle EBS"
 metaDescription: "Steps to apply Transparent Data Encryption to Oracles table columns"
 ogTitle: "Transparent data encryption with Oracle EBS"
 ogDescription: "Steps to apply Transparent Data Encryption to Oracles table columns"
+slug: 'transparent-data-encryption-with-oracle-ebs' 
 ---
 
 This blog discusses setting up Transparent Data Encryption (TDE) column-level

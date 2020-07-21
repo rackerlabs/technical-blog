@@ -13,6 +13,7 @@ metaDescription: "Salesforce Field Service Lightning helps make work easier for 
 ogTitle: "Seven ways Field Service Lightning helps field and service workers"
 ogDescription: "Salesforce Field Service Lightning helps make work easier for people in the field. It provides incredible transparency into the schedules and status of field workers’ tasks"
 canonical: https://blog.rackspace.com/7-ways-field-service-lighting-fsl-helps-field-and-service-workers/
+slug: "seven ways field service lighting fsl helps field and service workers" 
 ---
 
 The risk of your customers falling through the cracks is much higher if you do

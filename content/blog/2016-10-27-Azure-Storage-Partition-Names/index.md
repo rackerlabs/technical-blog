@@ -10,6 +10,8 @@ published: true
 categories:
     - DevOps
     - Azure
+slug: 'Azure-Storage-Partition-Names' 
+
 ---
 
 If you are using Microsoft&reg; Azure&reg; Blob Storage and have a heavy workload, here's something

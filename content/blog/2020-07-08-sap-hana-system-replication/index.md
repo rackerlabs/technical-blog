@@ -22,6 +22,7 @@ ogDescription: "Usually, you use system replication to support high availability
 and disaster recovery. SAP HANA system replication lets you copy and continuously
 synchronize a SAP HANA database to a secondary location on the same or another
 data center."
+slug: "sap hana system replication" 
 ---
 
 Usually, you use system replication to support high availability and disaster

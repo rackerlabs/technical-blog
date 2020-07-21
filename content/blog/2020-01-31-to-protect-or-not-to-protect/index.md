@@ -14,6 +14,7 @@ metaTitle: "To protect or not to protect"
 metaDescription: "The best-defended environment is useless if your customers cannot get to your site. Let's talk about network attacks."
 ogTitle: "To protect or not to protect"
 ogDescription: "The best-defended environment is useless if your customers cannot get to your site. Let's talk about network attacks."
+slug: "2020-01-31-to-protect-or-not-to-protect" 
 ---
 
 The best-defended environment is useless if your customers cannot get to your site.

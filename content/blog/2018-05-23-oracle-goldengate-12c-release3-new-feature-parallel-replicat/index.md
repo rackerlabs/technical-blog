@@ -15,8 +15,8 @@ categories:
   - Oracle
   - database
   - architecture
+slug: 'oracle-goldengate-12c-release3-new-feature-parallel-replicat' 
 ---
-
 Parallel Replicat is one of the new features introduced in Oracle &reg;
 GoldenGate 12c Release 3 (12.3.0.1). Parallel Replicat is designed to help users
 to quickly load data into their environments by using multiple parallel mappers

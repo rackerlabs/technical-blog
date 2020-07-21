@@ -22,8 +22,8 @@ metaTitle: "How to restore Postgres backups in ObjectRocket"
 metaDescription: "This post walks you though Point-in-Time Recovery (PITR) of Postgres on the ObjectRocket service."
 ogTitle: "How to restore Postgres backups in ObjectRocket"
 ogDescription: "This post walks you though Point-in-Time Recovery (PITR) of Postgres on the ObjectRocket service."
+slug: "how to restore postgres backups in objectrocket" 
 ---
-
 *Originally published on February 6, 2020 at ObjectRocket.com/blog.*
 
 Database administration duties include taking and restoring regular backups,

@@ -8,8 +8,8 @@ published: true
 authorIsRacker: true
 categories:
   - security
+slug: 'introduction-to-nex-generation-firewalls-with-cisco-firepower' 
 ---
-
 This blog explores Cisco&reg; FirePOWER&reg; technology and next-generation
 firewalls (NGFW). NGFWs are composed of Adaptive Security Appliances (ASA) and
 a software module that takes care of the main functions like application control,

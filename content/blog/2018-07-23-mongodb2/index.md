@@ -8,6 +8,8 @@ published: true
 authorIsRacker: true
 categories:
   - database
+slug: 'mongodb2' 
+
 ---
 
 Originally published by Tricore: Aug 24, 2017

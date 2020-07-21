@@ -11,6 +11,7 @@ categories:
 metaTitle: "Five benefits of moving to Salesforce Lightning"
 metaDescription: "This blog outlines five benefits of transitioning from Salesforce Classic to Salesforce Lightning."
 ogDescription: "This blog outlines five benefits of transitioning from Salesforce Classic to Salesforce Lightning."
+slug: "five benefits of moving to salesforce lightning" 
 ---
 
 As a Salesforce&reg; administrator, you probably know that it is in your organization’s

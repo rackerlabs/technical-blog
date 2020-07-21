@@ -16,7 +16,9 @@ ogTitle: "Features of SAP Web Dispatcher"
 ogDescription: "Features of Web Dispatcher include load distribution across the
 landscape of the incoming web requests, minimal configuration, and granular control of
 functions such as security or load balancing."
+slug: "features of sap web dispatcher" 
 ---
+
 
 This blog explains SAP&reg; Web Dispatcher, its features, and how to use it.
 

@@ -7,6 +7,7 @@ author: Louwrens Boonstra
 published: true
 categories:
   - Cloud Files
+slug: 'cloud-files-directory-listing'   
 ---
 
 My last holiday took me to Morocco, where me and a couple of friends used

@@ -9,6 +9,7 @@ authorIsRacker: false
 categories:
     - General
     - SQL Server
+slug: 'microsoft-power-bi' 
 ---
 
 Originally published by TriCore: November 7, 2017

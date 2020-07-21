@@ -17,8 +17,8 @@ some widely accepted techniques."
 ogTitle: "Data mining techniques"
 ogDescription: "This post introduces the concept of data mining and describes
 some widely accepted techniques."
+slug: "data mining techniques" 
 ---
-
 This post introduces the concept of data mining and describes some widely
 accepted techniques.
 

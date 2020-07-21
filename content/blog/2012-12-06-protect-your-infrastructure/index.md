@@ -6,7 +6,9 @@ comments: true
 author: Brandon Philips
 categories:
   - Cloud Networks
+slug: 'protect your infrastructure' 
 ---
+
 *This guest post was contributed by [Mr. Brandon Philips](http://www.linkedin.com/in/brandonphilips).
 Brandon is part of a small team of Rackers getting the Rackspace Cloud Monitoring
 Agent ready for launch. The Agent helps customers monitor the internals of their
@@ -28,7 +30,7 @@ bastion host.
 
 ### Security Architecture
 
-{% img center 2012-12-06-protect-your-infrastructure/arch.png %}
+![](arch.png)
 
 [Bastion hosts](https://en.wikipedia.org/wiki/Bastion_host) are simply a choke
 point that provides access to the hosts behind it only to authorized users. A

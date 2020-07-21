@@ -19,6 +19,7 @@ Developer Tools, and more. He is an AWS certified Solutions Architect. His hobbi
 include hiking the foothills of Colorado and walks with his wife and dogs."
 categories:
   - aws
+slug: 'amazon-fsx-replaces-file-shares' 
 ---
 
 Windows File Server have been one of the longest running methods for sharing files

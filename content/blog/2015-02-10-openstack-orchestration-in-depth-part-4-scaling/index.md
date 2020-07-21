@@ -9,8 +9,8 @@ categories:
   - Private Cloud
   - Orchestration
 bio: "Miguel Grinberg is a software engineer with a background in web technologies and REST APIs. He is the author of the book \"Flask Web Development\" from O'Reilly Media, and has a blog at https://blog.miguelgrinberg.com, where he writes about a variety of topics including web development, robotics, photography and the occasional movie review. Miguel works as a Software Developer with the Rackspace Private Cloud team. He lives in Portland, Oregon with his wife, four kids, two dogs and a cat. Follow @miguelgrinberg on Twitter."
+slug: 'openstack-orchestration-in-depth-part-4-scaling' 
 ---
-
 This is the fourth and last article in my series on OpenStack orchestration with Heat. In the previous articles, I gave you a gentle [introduction to Heat](/blog/openstack-orchestration-in-depth-part-1-introduction-to-heat), and then I showed you some techniques to orchestrate the deployment of [single](/blog/openstack-orchestration-in-depth-part-2-single-instance-deployments/) and [multiple](/blog/openstack-orchestration-in-depth-part-3-multi-instance-deployments/) instance applications on the cloud, all done with generic and reusable components.
 
 Today I'm going to discuss how Heat can help with one of the most important topics in cloud computing: scalability. Like in my previous articles, I'm going to give you actual examples that you can play with on your OpenStack cloud, so make sure you have an environment where you can run tests, whether it's a [Rackspace Private Cloud](https://www.rackspace.com/cloud/private/), [DevStack](https://devstack.org/) or any other OpenStack distribution that includes Heat.

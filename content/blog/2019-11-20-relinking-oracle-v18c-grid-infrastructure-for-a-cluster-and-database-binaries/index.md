@@ -13,6 +13,7 @@ metaTitle: "Relinking Oracle v18c grid infrastructure for cluster and database b
 metaDescription: "This blog provides insight about what relinking is, why it is required, and how you relink Oracle object files."
 ogTitle: "Relinking Oracle v18c grid infrastructure for cluster and database binaries"
 ogDescription: "This blog provides insight about what relinking is, why it is required, and how you relink Oracle object files."
+slug: "relinking oracle v18c grid infrastructure for a cluster and database binaries" 
 ---
 
 This blog provides insight about what relinking is, why it is required, and how you

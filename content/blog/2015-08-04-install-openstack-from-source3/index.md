@@ -8,6 +8,7 @@ published: true
 categories:
   - OpenStack
   - OSAD
+slug: 'install-openstack-from-source3' 
 ---
 
 In  [article one of this series](https://developer.rackspace.com/blog/install-openstack-from-source/), we started installing OpenStack from source, and, in [article two of this series](https://developer.rackspace.com/blog/install-openstack-from-source2/), we continued the process by installing glance and neutron onto the controller node.

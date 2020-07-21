@@ -20,6 +20,7 @@ metaTitle: "Get the most out of Einstein Engagement Scoring"
 metaDescription: "If your business has a corporate or enterprise license for Salesforce@reg; Marketing Cloud, and you aren’t using Einstein Engagement Scoring, you are missing a big opportunity to boost your email marketing and improve the return on investment (ROI) of your Marketing Cloud instance."
 ogTitle: "Get the most out of Einstein Engagement Scoring"
 ogDescription: "If your business has a corporate or enterprise license for Salesforce@reg; Marketing Cloud, and you aren’t using Einstein Engagement Scoring, you are missing a big opportunity to boost your email marketing and improve the return on investment (ROI) of your Marketing Cloud instance."
+slug: "get the most out of einstein engagement scoring" 
 ---
 
 If your business has a corporate or enterprise license for Salesforce&reg;

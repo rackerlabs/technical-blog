@@ -14,6 +14,7 @@ metaTitle: "Use the Azure Secret Store CSI driver in AKS"
 metaDescription: "Use the Azure&reg Secret Store CSI driver in AKS."
 ogTitle: "Use the Azure Secret Store CSI driver in AKS"
 ogDescription: "Use the Azure&reg Secret Store CSI driver in AKS."
+slug: "using the azure secrets store csi in aks driver" 
 ---
 
 If you have been using Azure&reg; Key Vault FlexVolume for Azure Kubernetes Service (AKS), it is

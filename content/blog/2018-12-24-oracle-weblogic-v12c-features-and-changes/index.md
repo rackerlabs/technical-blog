@@ -15,6 +15,7 @@ metaTitle: "Oracle v12c Weblogic features and changes"
 metaDescription: "Features and changes to Oracle's Weblogic in v12c"
 ogTitle: "Oracle v12c Weblogic features and changes"
 ogDescription: "Features and changes to Oracle's Weblogic in v12c"
+slug: 'oracle-weblogic-v12c-features-and-changes' 
 ---
 
 This blog covers some of the changes and new features of Oracle&reg; WebLogic

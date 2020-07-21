@@ -14,6 +14,7 @@ metaTitle: "Rackspace offers Dynamics 365 licenses and Dynamics 365 Sales profes
 metaDescription: "Rackspace is excited to announce the launch of professional services for Microsoft&reg; Dynamics 365 Sales online."
 ogTitle: "Rackspace offers Dynamics 365 licenses and Dynamics 365 Sales professional services"
 ogDescription: "Rackspace is excited to announce the launch of professional services for Microsoft&reg; Dynamics 365 Sales online."
+slug: "rackspace offers dynamics 365 licenses and dynamics 365 sales professional services" 
 ---
 
 Rackspace is excited to announce the launch of professional services for

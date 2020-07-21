@@ -15,6 +15,7 @@ categories:
     - DevOps
     - Ansible
     - Orchestration
+slug: 'molecule-for-ansible-role-creation' 
 ---
 
 In our Quality Engineering organization, we create, configure, and destroy a lot
@@ -152,9 +153,7 @@ looks for the configuration of instances, testing, linting, etc.
 *Heads up, a raw copy/pasta of the following code will result in an error. Read on to see why*
 
 ```
-~/Projects/example_playbooks/nginx_install$ cat molecule/default/molecule.yml
----
-dependency:
+~/Projects/example_playbooks/nginx_install$ cat molecule/default/molecule.ymlslug: '' ---dependency:
   name: galaxy
 driver:
   name: vagrant
@@ -189,9 +188,7 @@ modules we need for this is `yum` for package installation and `systemd` to star
 and enable the service.
 
 ```
-~/Projects/example_playbooks/nginx_install$ cat tasks/main.yml
----
-# tasks file for nginx_install
+~/Projects/example_playbooks/nginx_install$ cat tasks/main.ymlslug: '' ---# tasks file for nginx_install
 - name: Install epel-release for nginx
   yum:
     name: epel-release

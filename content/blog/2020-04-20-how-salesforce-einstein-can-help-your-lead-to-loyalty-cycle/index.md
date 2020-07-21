@@ -12,6 +12,7 @@ metaTitle: "How Salesforce Einstein can help your lead-to-loyalty cycle"
 metaDescription: "Salesforce&reg; has long been a leader when it comes to industry developments. One of the latest, most promising innovations is the use of artificial intelligence (AI) to oversee business interactions."
 ogTitle: "How Salesforce Einstein can help your lead-to-loyalty cycle"
 ogDescription: "Salesforce&reg; has long been a leader when it comes to industry developments. One of the latest, most promising innovations is the use of artificial intelligence (AI) to oversee business interactions."
+slug: "how salesforce einstein can help your lead to loyalty cycle" 
 ---
 
 Salesforce&reg; has long been a leader when it comes to industry developments. One of the latest, most promising

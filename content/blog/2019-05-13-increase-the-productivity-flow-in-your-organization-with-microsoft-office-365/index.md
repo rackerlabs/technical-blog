@@ -20,6 +20,7 @@ metaTitle: "Increase the productivity flow in your organization with Microsoft O
 metaDescription: "Business productivity software is continuously evolving and collaboration tools such as Microsoft Office 365 and Flow are becoming more common."
 ogTitle: "Increase the productivity flow in your organization with Microsoft Office 365"
 ogDescription: "Business productivity software is continuously evolving and collaboration tools such as Microsoft Office 365 and Flow are becoming more common."
+slug: "increase the productivity flow in your organization with microsoft office 365" 
 ---
 
 Business productivity software is continuously evolving and collaboration tools,

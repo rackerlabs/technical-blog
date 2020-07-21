@@ -7,6 +7,7 @@ author: Sriram Rajan
 published: true
 categories:
   - Chef
+slug: 'chef-server-backups'   
 ---
 
 There are few ways to backup a Chef server. Opscode has some documenation on

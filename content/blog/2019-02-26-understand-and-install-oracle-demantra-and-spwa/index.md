@@ -20,8 +20,8 @@ metaTitle: "Understand and install Oracle Demantra and SPWA"
 metaDescription: "This blog covers Oracle Demantra and Oracle Advance SPWA configuration with Oracle EBS and APS."
 ogTitle: "Understand and install Oracle Demantra and SPWA"
 ogDescription: "This blog covers Oracle Demantra and Oracle Advance SPWA configuration with Oracle EBS and APS."
+slug: "understand and install oracle demantra and spwa" 
 ---
-
 Demantra&reg; and advanced Supply Planning Work Area (SPWA) are demand management
 and supply chain management tools provided by Oracle&reg;. These products
 integrate with the Oracle E-Business Suite (EBS) and Oracle Advanced Planning

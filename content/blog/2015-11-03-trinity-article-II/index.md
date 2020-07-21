@@ -10,8 +10,8 @@ categories:
   - Docker
   - aws
 authorIsRacker: true
+slug: 'trinity-article-II' 
 ---
-
 ### I - Introduction
 
 In [Part I](https://developer.rackspace.com/blog/trinity-article-I/) of this series, we depicted a fictional scenario for agile development using a simple "Hello World" application composed of just a single UI layer. During this fanciful (albeit contrived) exposition, we glossed over many of the underlying details for the sake of brevity. In this article, we will take a little peek under the covers and explain in more depth how we achieved rapid, automated deployments of immutable application containers to remote test environments.

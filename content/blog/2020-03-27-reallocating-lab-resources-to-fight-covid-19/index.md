@@ -13,8 +13,8 @@ metaTitle: "Reallocating lab systems to fight COVID-19"
 metaDescription: "The events over the last few days concerning the Coronavirus has left us wondering what we could do to make this horrible turn of events a little better."
 ogTitle: "Reallocating lab systems to fight COVID-19"
 ogDescription: "The events over the last few days concerning the Coronavirus has left us wondering what we could do to make this horrible turn of events a little better."
+slug: "reallocating lab resources to fight covid-19" 
 ---
-
 The events over the last few days concerning the Coronavirus has left us
 wondering what we could do to make this horrible turn of events a little better.
 

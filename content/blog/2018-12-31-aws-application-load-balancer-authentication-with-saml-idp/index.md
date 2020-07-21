@@ -21,6 +21,7 @@ cycling, and trying to find less expensive hobbies."
 categories:
   - aws
   - Developers
+slug: 'aws-application-load-balancer-authentication-with-saml-idp' 
 ---
 
 User authentication is a common application requirement that has been solved

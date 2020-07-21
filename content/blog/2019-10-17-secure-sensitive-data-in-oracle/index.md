@@ -16,6 +16,7 @@ security numbers, bank account and routing numbers, and so on."
 ogTitle: "Secure sensitive data in Oracle"
 ogDescription: "Organizations face a major challenge securing sensitive data like social
 security numbers, bank account and routing numbers, and so on."
+slug: "secure sensitive data in oracle" 
 ---
 
 Organizations face a major challenge securing sensitive data like social

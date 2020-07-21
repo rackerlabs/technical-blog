@@ -3,20 +3,23 @@ layout: post
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 comments: true
-author: ""
-draft: true
-authorAvatar: ""
+author: 
+authorAvatar: ''
 bio: ""
 published: true
-authorIsRacker: ""
-categories: "{{ "General" }}"
-metaTitle: ""
-metaDescription: ""
+authorIsRacker: true
+categories:
+    - General
+metaTitle: "{{ replace .Name "-" " " | title }}"
+metaDescription: "."
+ogTitle: "{{ replace .Name "-" " " | title }}"
+ogDescription: "."
+slug: '' 
+
 ---
 
-
 ### Overview
-
-### How it works
-
-### Description
+<!---![](Picture1.png)--->
+### Conclusion
+<a class="cta purple" id="cta" href="https://www.rackspace.com/sap">Learn more about our SAP services.</a>
+Use the Feedback tab to make any comments or ask questions. You can also click **Sales Chat** to [chat now](https://www.rackspace.com/) and start the conversation.

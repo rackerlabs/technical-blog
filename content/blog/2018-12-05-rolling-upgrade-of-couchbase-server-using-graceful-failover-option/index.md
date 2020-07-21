@@ -8,6 +8,7 @@ published: true
 authorIsRacker: true
 categories:
   - database
+slug: 'rolling-upgrade-of-couchbase-server-using-graceful-failover-option' 
 ---
 
 There are many approaches to upgrading a multi-node Couchbase&reg; Server cluster.

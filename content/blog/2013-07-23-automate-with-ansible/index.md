@@ -7,6 +7,8 @@ author: Michael DeHaan
 published: true
 categories:
   - Ansible
+slug: 'automate-with-ansible' 
+
 ---
 
 This is a guest post written by Michael DeHaan, CTO at [AnsibleWorks][1].

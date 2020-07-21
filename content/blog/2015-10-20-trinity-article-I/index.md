@@ -10,8 +10,8 @@ categories:
   - Docker
   - architecture
 authorIsRacker: true
+slug: 'trinity-article-I' 
 ---
-
 ### I - Introduction
 
 This is the first of a two-part series that demonstrates a pain-free solution a developer could use to transition code from laptop to production. The fictional deployment scenario depicted in this post is one method that can significantly reduce operational overhead on the developer. This series will make use of technologies such as Git, Docker, Elastic Beanstalk, and other standard tools.

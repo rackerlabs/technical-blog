@@ -12,6 +12,7 @@ categories:
   - Devops
   - database
   - SQL Server
+slug: 'Sitecore-Perf-Boost-Addon' 
 ---
 
 Sitecore has the option of making use of TempDB in Sql Server to speed up your session state operations. What catches people off guard is the fact that tempdb is recreated at service restart of SQL Server. This becomes a problem when you have to recreate the table structure and user permissions inside tempdb.

@@ -12,6 +12,7 @@ metaTitle: "Exploring Flex ASM and other Oracle features"
 metaDescription: "This blog explains Flex ASM, ADVM and MGMTDB features and the associated benefits."
 ogTitle: "Exploring Flex ASM and other Oracle features"
 ogDescription: "This blog explains Flex ASM, ADVM and MGMTDB features and the associated benefits."
+slug: "exploring oracle asm and other features" 
 ---
 
 Oracle&reg; version 12.1.0.1 has incorporated two new features based on Hub and Leaf

@@ -23,8 +23,8 @@ ogTitle: "AWS Transit Gateway made easier with inter-region peering"
 ogDescription: "One of the fundamentals when setting up your AWS environment is
 the Virtual Private Cloud (VPC), which is essential to create boundaries between
 the public and private Internet. Transit Gateway makes managing this easy."
+slug: "aws transit gateway made easier with inter-region peering" 
 ---
-
 With Amazon&reg; Web Services (AWS), you have many paths to success and an
 abundance of tools at your disposal for meeting your individual goals based on your
 circumstances. Furthermore, AWS consistently adds new features and services to

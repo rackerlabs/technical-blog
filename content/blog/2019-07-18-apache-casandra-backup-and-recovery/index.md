@@ -18,8 +18,8 @@ metaTitle: "Apache Cassandra backup and recovery"
 metaDescription: "This blog shows you how to backup Apache Cassandra databases and restore them after a failure."
 ogTitle: "Apache Cassandra backup and recovery"
 ogDescription: "This blog shows you how to backup Apache Cassandra databases and restore them after a failure."
+slug: "apache casandra backup and recovery" 
 ---
-
 Database backup and recovery is one of the crucial day-to-day activities that a
 database administrator (DBA) performs. A database backup is a copy of your
 data that can be used to recover the data in the event of data loss.

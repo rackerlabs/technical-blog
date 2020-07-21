@@ -10,6 +10,8 @@ categories:
   - OSAD
   - OpenStack
   - Ansible
+slug: 'openstack-osad-and-nagios-against-the-world' 
+
 ---
 
 Through the course of technology, infrastructure and application monitoring have changed positions.  Not so long ago, monitoring was an afterthought when rolling out your new application or standing up your new rack of servers.  More recently, I have observed monitoring to be one of the first considerations, to the point where it is actually in the initial project plan.

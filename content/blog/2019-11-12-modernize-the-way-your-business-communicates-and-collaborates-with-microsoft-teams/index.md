@@ -14,6 +14,7 @@ metaTitle: "Modernize the way your business communicates and collaborates with M
 metaDescription: "My customers often ask how they can get the most out of their Office 365 subscription, and I always reply that they should start using Microsoft Teams!"
 ogTitle: "Modernize the way your business communicates and collaborates with Microsoft Teams"
 ogDescription: "My customers often ask how they can get the most out of their Office 365 subscription, and I always reply that they should start using Microsoft Teams!"
+slug: "modernize the way your business communicates and collaborates with microsoft teams" 
 ---
 
 One of the questions I get asked a lot by my customers is “How can I get the most out of my Office 365 subscription?” My answer is always “Start using Microsoft&reg; Teams!”

@@ -10,6 +10,7 @@ categories:
   - DevOps
   - Automation
 bio: 'Don Schenck is a Developer Advocate with the Developer Experience team at Rackspace, with a main focus on .NET technologies. Follow @DonSchenck on Twitter.'
+slug: 'Introducing-PoshStack-the-PowerShell-client-for-OpenStack' 
 ---
 
 ### Here's PoshStack

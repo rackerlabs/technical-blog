@@ -8,6 +8,7 @@ published: true
 authorIsRacker: true
 categories:
     - Oracle
+slug: 'oracle-general-ledger' 
 ---
 
 Originally published by TriCore: October 6, 2017

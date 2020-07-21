@@ -7,7 +7,9 @@ author: Tim Simmons
 published: true
 categories:
   - OpenStack
+slug: "getting started with openstack and designate"  
 ---
+
 
 **Note**: This guide has been merged into the official Designate documentation. You can see that document here:
 <https://designate.readthedocs.org/en/latest/getting-started.html>

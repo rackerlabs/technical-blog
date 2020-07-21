@@ -13,6 +13,7 @@ metaTitle: "Introduction to Oracle OSWatcher and reading logs"
 metaDescription: "Oracle&reg; OSWatcher is a utility that automatically looks for operating system issues and helps to determine their root causes."
 ogTitle: "Introduction to Oracle OSWatcher and reading logs"
 ogDescription: "Oracle&reg; OSWatcher is a utility that automatically looks for operating system issues and helps to determine their root causes."
+slug: "introduction to oracle oswatcher and reading logs" 
 ---
 
 Oracle&reg; OSWatcher is a utility that collects data from commands such as

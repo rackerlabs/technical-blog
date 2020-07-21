@@ -25,6 +25,7 @@ Services (ORDS), including the steps to install APEX and configure ORDS."
 ogTitle: "Install and configure Oracle APEX and ORDS"
 ogDescription: "This post describes Oracle&reg; Application Express (APEX) and Oracle REST Data
 Services (ORDS), including the steps to install APEX and configure ORDS."
+slug: "install and configure oracle apex and ords" 
 ---
 
 This post describes Oracle&reg; Application Express (APEX) and Oracle REST Data

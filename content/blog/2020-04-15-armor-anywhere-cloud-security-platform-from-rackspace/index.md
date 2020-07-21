@@ -21,6 +21,7 @@ metaTitle: "Armor Anywhere cloud security platform from Rackspace"
 metaDescription: "Last month, Rackspace launched Armor Anywhere for Amazon&reg; Web Services (AWS), Microsoft&reg; Azure, Google Cloud Platform (GCP), and private cloud platforms."
 ogTitle: "Armor Anywhere cloud security platform from Rackspace"
 ogDescription: "Last month, Rackspace launched Armor Anywhere for Amazon&reg; Web Services (AWS), Microsoft&reg; Azure, Google Cloud Platform (GCP), and private cloud platforms."
+slug: "armor anywhere cloud security platform from rackspace" 
 ---
 
 Rackspace offers the Armor Anywhere cloud security platform to help secure

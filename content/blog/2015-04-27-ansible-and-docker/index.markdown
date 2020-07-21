@@ -8,6 +8,7 @@ published: true
 categories:
   - ansible
   - docker
+slug: 'ansible-and-docker'   
 ---
 
 At first glance, [Ansible](http://www.ansible.com/) and [Docker](https://www.docker.com/) seem to be redundant. Both offer solutions to the configuration management problem through very different means, enabling you to reliably and repeatably manage complicated software deployments. While you certainly can use either on its own with great success, using both together can result in a fast, clean deployment process.
@@ -125,7 +126,6 @@ CMD ["--help"]
 We've been using Ansible and Docker together to ship projects like [Cloudpipe](https://github.com/cloudpipe/deploy) and [Deconst](https://github.com/deconst/deploy) and learning more about doing so every day. Both are great tools that let us manage deployments consistently, reliably, and rapidly, using a foundation of descriptive code that's version controlled.
 
 Happy shipping!
-
-----
+slug: ''   ----
 
 *Ash is a software developer on Rackspace's Developer Experience team. His interests include programming languages, continuous deployment, and plugging things into other things (we had to cover all the wall sockets). You can follow him [on Twitter](https://twitter.com/smashwilson) or watch him code [on GitHub](https://github.com/smashwilson).*

@@ -12,6 +12,7 @@ metaTitle: "How Salesforce Community Cloud helps you serve your customers, emplo
 metaDescription: "How Salesforce Community Cloud helps you serve your customers, employees, and partners"
 ogTitle: "How Salesforce Community Cloud helps you serve your customers, employees, and partners"
 ogDescription: "Salesforce&reg; Community Cloud offers a centralized platform for loyal customers, happy employees, and engaged partners."
+slug: "how salesforce community cloud helps you serve customers employees and partners" 
 ---
 
 Salesforce&reg; Community Cloud offers a centralized platform for loyal customers,

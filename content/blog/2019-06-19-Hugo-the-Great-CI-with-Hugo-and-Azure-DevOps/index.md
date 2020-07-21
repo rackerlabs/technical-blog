@@ -18,6 +18,7 @@ metaDescription: "How to set up your own Continous Integration Pipeline for a bl
 ogTitle: "CI with Hugo and Azure DevOps"
 ogDescription: "How to set up your own Continous Integration Pipeline for a blog using Azure DevOps and Hugo"
 ogImage: "https://657cea1304d5d92ee105-33ee89321dddef28209b83f19f06774f.ssl.cf1.rackcdn.com/hugo.jpg-592a10fb7bcc5cc7a65d34ec44bc3c67d3e1aeb89cb933cf322862d337a0954d.jpg"
+slug: "Hugo the Great CI with Hugo and Azure DevOps" 
 ---
 
 This post offers a small taste of Dutch history but, more importantly, an overview of how to user Azure DevOps to create a CI Pipeline for Hugo!

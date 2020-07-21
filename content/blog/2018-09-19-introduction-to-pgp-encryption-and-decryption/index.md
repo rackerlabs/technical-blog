@@ -8,6 +8,7 @@ published: true
 authorIsRacker: true
 categories:
     - security
+slug: 'introduction-to-pgp-encryption-and-decryption' 
 ---
 
 The GNU Privacy Guard (GPG) is a complete and free implementation of the

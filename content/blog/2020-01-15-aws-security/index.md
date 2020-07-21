@@ -15,7 +15,9 @@ metaTitle: "AWS security"
 metaDescription: "This blog post collects the Amazon&reg; Web Services (AWS) cloud security components from [their site](https://aws.amazon.com) and other sources, providing a convenient overview."
 ogTitle: "AWS security"
 ogDescription: "This blog post collects the Amazon&reg; Web Services (AWS) cloud security components from [their site](https://aws.amazon.com) and other sources, providing a convenient overview."
+slug: "aws security" 
 ---
+
 This blog post collects the Amazon&reg; Web Services (AWS) cloud security
 components from [their site](https://aws.amazon.com) and other sources,
 providing a convenient overview.

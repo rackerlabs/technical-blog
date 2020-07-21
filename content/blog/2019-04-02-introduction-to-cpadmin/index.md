@@ -13,8 +13,8 @@ metaTitle: "Intro to Concurrent Processing Command-Line Utility "
 metaDescription: "CPADMIN is user friendly and allows you to execute multiple tasks with a single command."
 ogTitle: Intro to Concurrent Processing Command-Line Utility "
 ogDescription: "CPADMIN is user friendly and allows you to execute multiple tasks with a single command."
+slug: "introduction to cpadmin" 
 ---
-
 
 Oracle&reg; has launched CPADMIN, a concurrent processing command-line utility
 for E-Business Suite&reg; (EBS) versions R12.1.3 and R12.2.x. CPADMIN is a

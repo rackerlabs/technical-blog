@@ -8,6 +8,7 @@ authorIsRacker: true
 published: true
 categories:
   - Security
+slug: 'sap-security' 
 ---
 
 Beginning with SAP&reg; version 4.0, you can use the Security Audit Log

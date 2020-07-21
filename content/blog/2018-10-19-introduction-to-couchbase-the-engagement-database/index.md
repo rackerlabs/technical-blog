@@ -8,8 +8,8 @@ published: true
 authorIsRacker: true
 categories:
   - database
+slug: 'introduction-to-couchbase-the-engagement-database' 
 ---
-
 This blog explores Couchbase&reg;, which is an open-source distributed NoSQL
 document and key-value database, released under the Apache&reg; 2.0 license.
 

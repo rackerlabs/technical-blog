@@ -13,8 +13,9 @@ metaDescription: "In the age of customer experience, businesses now rely on thei
 ogTitle: "Salesforce certifications infographic"
 ogDescription: "In the age of customer experience, businesses now rely on their customer relationship management (CRM) systems more than ever, and certifications are crucial."
 canonical: https://blog.rackspace.com/your-guide-to-salesforce-certifications-infographic/
----
+slug: "salesforce certification infographic" 
 
+---
 In the age of customer experience, businesses now rely on their customer
 relationship management (CRM) systems more than ever, and certifications are
 crucial.

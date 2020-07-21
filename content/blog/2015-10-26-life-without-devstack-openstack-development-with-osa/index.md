@@ -11,8 +11,8 @@ categories:
   - ansible
   - database
   - architecture
+slug: 'life-without-devstack-openstack-development-with-osa' 
 ---
-
 If you are an OpenStack contributor, you likely rely on DevStack for most of
 your work. DevStack is, and has been for a long time, the de-facto platform
 that contributors use for development, testing, and reviews. In this article, I
@@ -79,7 +79,7 @@ thousands of nodes.
 The following diagram shows the structure of an openstack-ansible private
 cloud:
 
-{% img center 2015-10-26-life-without-devstack-openstack-development-with-osa/osa-arch.jpg "openstack-ansible architecture" %}
+![](osa-arch.jpg)
 
 After looking at this, you are probably scratching your head thinking how can
 this project match the simplicity of DevStack for upstream development, given

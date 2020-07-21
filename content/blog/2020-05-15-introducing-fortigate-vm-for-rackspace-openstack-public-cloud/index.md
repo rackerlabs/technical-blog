@@ -17,6 +17,7 @@ Rackspace OpenStack Public Cloud."
 ogTitle: "Introducing the FortiGate-VM for Rackspace OpenStack Public Cloud"
 ogDescription: "Rackspace announces unlimited availability for the Fortinet® FortiGate-VM in
 Rackspace OpenStack Public Cloud."
+slug: "introducing fortigate vm for rackspace openstack public cloud" 
 ---
 
 Rackspace announces unlimited availability for the Fortinet® FortiGate-VM in

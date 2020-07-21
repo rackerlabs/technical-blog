@@ -17,8 +17,9 @@ metaDescription: "Rackspace sponsored the 2019 GCP Summits in Stockholm and Amst
 ogTitle: "Kubertetris"
 ogDescription: "Rackspace sponsored the 2019 GCP Summits in Stockholm and Amsterdam and challenged the attendees to a game of Kubertetris!"
 ogImage: "https://657cea1304d5d92ee105-33ee89321dddef28209b83f19f06774f.ssl.cf1.rackcdn.com/kubertetris-238d55c85d0b4c6d5060c42556dc378da26e317afd13b7eb50c9f29c65027f39.png"
----
+slug: "kubertetris" 
 
+---
 Rackspace sponsored the 2019 Google Cloud Platform (GCP&reg;) Summits in Stockholm and Amsterdam and challenged the attendees to a game of *Kubertetris*.
 
 <!--more-->

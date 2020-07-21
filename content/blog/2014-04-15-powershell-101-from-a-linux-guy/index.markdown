@@ -9,6 +9,7 @@ categories:
   - automation
   - DevOps
   - General
+slug: 'powershell-101-from-a-linux-guy'   
 ---
 
 Having spent my last 7 years concentrating mainly on Linux&reg; and related
@@ -246,8 +247,7 @@ ls .\SOFTWARE\Microsoft\Windows\CurrentVersion
 
 ### Quick reference
 
-Bash/Linux | PowerShell
---- | ---
+Bash/Linux | PowerShellslug: ''   --- | ---
 ls | ls
 mv | mv
 cp | cp

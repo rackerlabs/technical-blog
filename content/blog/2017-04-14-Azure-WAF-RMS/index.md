@@ -11,8 +11,8 @@ bio: “Jimmy Rudley is an Azure Architect at Rackspace and an active member of 
 categories:
     - DevOps
     - Azure
+slug: 'Azure-WAF-RMS' 
 ---
-
 As more web application workloads move to the cloud, organizations need to be concerned about attacks from the internet. External threats are scanning public IP ranges to find known vulnerabilities and exploit businesses. Let's take a look at the Azure Application Gateway (WAF), and see how it can be a part of our toolset for protecting our web applications.
 
 <!--more-->

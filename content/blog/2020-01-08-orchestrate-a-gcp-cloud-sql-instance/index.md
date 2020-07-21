@@ -18,8 +18,9 @@ Google Cloud Platform (GCP) Cloud SQL instance by using Ansible and Jenkins."
 ogTitle: "Orchestrate a GCP Cloud SQL instance"
 ogDescription: "This blog discusses how you can automate the creatation of a
 Google Cloud Platform (GCP) Cloud SQL instance by using Ansible and Jenkins."
----
+slug: "orchestrate a gcp cloud sql instance" 
 
+---
 This blog post discusses how you can automate the creation of a Google&reg; Cloud
 Platform (GCP) Cloud SQL instance by using Ansible&reg; and Jenkins&reg;. The blog also
 includes an example of spinning up a MySQL&reg; Cloud SQL instance, version 5.7,

@@ -20,8 +20,8 @@ ogTitle: "Business process automation saves the day"
 ogDescription: "Rackspace business automation offers the capabilities you don't see, which make
 the difference in your support, monitoring, and, most importantly, your business
 security and compliance."
+slug: "business process automation saves the day" 
 ---
-
 Rackspace business automation offers the capabilities you don't see, which make
 the difference in your support, monitoring, and, most importantly, your business
 security and compliance.

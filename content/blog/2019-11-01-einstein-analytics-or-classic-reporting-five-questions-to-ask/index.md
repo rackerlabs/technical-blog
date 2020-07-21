@@ -13,6 +13,8 @@ metaDescription: "Do you need Einstein Analytics instead of classic reporting? F
 ogTitle: "Einstein Analytics or Classic Reports&mdash;five questions to ask yourself"
 ogDescription: "Do you need Einstein Analytics instead of classic reporting? Five questions to ask yourself."
 canonical: https://blog.rackspace.com/do-i-need-einstein-analytics-instead-of-classic-reporting-5-questions-to-ask-yourself/
+
+slug: "einstein analytics or classic reporting five questions to ask" 
 ---
 
 Do you ever feel that the analytics you get from Salesforce&reg; Classic Reports

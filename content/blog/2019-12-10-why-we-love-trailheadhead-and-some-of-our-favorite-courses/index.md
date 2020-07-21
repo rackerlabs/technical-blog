@@ -14,8 +14,9 @@ metaDescription: "Use Trailhead courses to learn Saleforce in a fun and engaging
 ogTitle: "Trailhead: Why we love it and some of our favorite courses"
 ogDescription: "Use Trailhead courses to learn Saleforce in a fun and engaging way&mdash;there's something for everyone!"
 canonical: https://blog.rackspace.com/trailhead-why-do-we-love-it-and-which-are-our-favorite-courses/
----
+slug: "why we love trailheadhead and some of our favorite courses" 
 
+---
 The Trailhead&reg; training platform offers courses for everyone, from IT
 architects and engineers to marketers, to learn Salesforce&reg; in a fun and
 engaging way. In fact, it’s so engaging that about 200,000 people used it to

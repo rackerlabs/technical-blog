@@ -7,6 +7,7 @@ author: Alex Brandt
 published: true
 categories:
   - Database
+slug: '2014-03-03-the-odd-couple-mongodb-and-mysql'   
 ---
 
 The choices and combinations we have available during datastore selection

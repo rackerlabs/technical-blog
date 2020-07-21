@@ -13,8 +13,8 @@ metaTitle: "Introduction to transport layer security"
 metaDescription: "How does Transport Layer Security (TLS) differ from secure socket layer (SSL)."
 ogTitle: "Introduction to transport layer security"
 ogDescription: "How does Transport Layer Security (TLS) differ from secure socket layer (SSL)."
+slug: 'introduction-to-transport-layer-security' 
 ---
-
 This blog introduces transport layer security (TLS) and explains how it differs
 from secure socket layer (SSL). It also includes essential step-by-step instructions
 to enable TLS in Oracle&reg; E-Business Suite&reg; (EBS) R12.

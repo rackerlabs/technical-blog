@@ -13,6 +13,7 @@ metaTitle: "Microsoft SQL Server Query Store"
 metaDescription: "Understand, detect, and repair SQL Server database corruption."
 ogTitle: "Microsoft SQL Server Query Store"
 ogDescription: "Understand, detect, and repair SQL Server database corruption."
+slug: "Microsoft SQL Server query store" 
 ---
 
 Microsoft&reg; SQL Server&reg; Query Store, as the name suggests, is like a

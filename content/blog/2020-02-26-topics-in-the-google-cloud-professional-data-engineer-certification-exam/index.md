@@ -18,8 +18,8 @@ metaTitle: "Topics in the Google Cloud Professional Data Engineer certification 
 metaDescription: "In this post, I'm sharing all the primary resources that I used to study for this exam and topics covered in the exam."
 ogTitle: "Topics in the Google Cloud Professional Data Engineer certification exam"
 ogDescription: "In this post, I'm sharing all the primary resources that I used to study for this exam and topics covered in the exam."
+slug: "topics in the google cloud professional data engineer certification exam" 
 ---
-
 For a few years now, I've had an interest in the concepts of *machine learning (ML)*
 and wanted to know more. When I came across the Google&reg; Cloud Professional
 Data Engineer certification exam, I was intrigued about how ML concepts

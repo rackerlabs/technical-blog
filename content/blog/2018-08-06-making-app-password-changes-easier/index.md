@@ -9,8 +9,8 @@ published: true
 categories:
   - Security
   - Automation
+slug: 'making-app-password-changes-easier' 
 ---
-
  A common technical challenge for developers, operations, and IT security is
  the management of service account credentials used by applications.  Service
  accounts are needed to authorize different components for communication and

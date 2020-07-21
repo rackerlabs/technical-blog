@@ -13,8 +13,9 @@ metaTitle: "Now available: Sitecore v9.3"
 metaDescription: "Rackspace now offers Sitecore&reg; version 9.3, which includes several enhancements."
 ogTitle: "Now available: Sitecore v9.3"
 ogDescription: "Rackspace now offers Sitecore&reg; version 9.3, which includes several enhancements."
----
+slug: "now available sitecore v9.3" 
 
+---
 Rackspace now offers Sitecore&reg; version 9.3, which includes several enhancements.
 
 <!--more-->

@@ -9,6 +9,7 @@ authorIsRacker: true
 categories:
   - database
   - SQL Server
+slug: 'deprecated-and-discontinued-sql-server-2016-features' 
 ---
 
 Originally published by Tricore: June 14, 2017

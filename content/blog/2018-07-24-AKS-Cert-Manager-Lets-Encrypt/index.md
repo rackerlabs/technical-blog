@@ -10,8 +10,8 @@ authorAvatar: 'https://en.gravatar.com/userimage/151177997/5bed7e07ee47533cbd34b
 bio: “Jimmy Rudley is an Azure Architect at Rackspace and an active member of the Azure community. He focuses on solving large and complex architecture and automation problems within Azure."
 categories:
     - Azure
+slug: 'AKS-Cert-Manager-Lets-Encrypt' 
 ---
-
 Microsoft&reg; Azure&reg; recently went GA with their Azure Kubernetes Service,
 but following the Microsoft documentation for setting up an HTTPS ingress
 controller could make you go in circles. Let me share what I have found out

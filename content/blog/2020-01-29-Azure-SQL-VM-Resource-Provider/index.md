@@ -15,6 +15,7 @@ metaTitle: "Azure SQL virtual machine resource provider"
 metaDescription: "Configure Azure&reg; SQL Server virtual machines during deployment."
 ogTitle: "Azure SQL virtual machine resource provider"
 ogDescription: "Configure Azure&reg; SQL Server virtual machines during deployment."
+slug: "Azure SQL VM Resource Provider" 
 ---
 
 Most release pipelines have some automation to do after configuration to a

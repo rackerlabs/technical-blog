@@ -13,6 +13,7 @@ metaTitle: "Parse XML in PL/SQL"
 metaDescription: "This blog explores a few methods for handling XML data in Oracle&reg; PL/SQL."
 ogTitle: "Parse XML in PL/SQL"
 ogDescription: "This blog explores a few methods for handling XML data in Oracle&reg; PL/SQL."
+slug: "parse xml in pl sql" 
 ---
 
 This blog explores a few methods for handling XML data in Oracle&reg; PL/SQL. Learn more about our [database services](https://www.rackspace.com/dba-services).

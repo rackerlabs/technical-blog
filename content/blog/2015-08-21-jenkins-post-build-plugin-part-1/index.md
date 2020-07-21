@@ -7,6 +7,7 @@ author: Priti Changlani
 published: true
 categories:
   - jenkins
+slug: 'jenkins-post-build-plugin-part-1' 
 ---
 
 This is the first part of a two-part tutorial series to develop a Jenkins plugin

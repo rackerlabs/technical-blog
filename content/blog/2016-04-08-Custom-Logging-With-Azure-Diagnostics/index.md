@@ -11,8 +11,8 @@ bio: “Jimmy Rudley is an Azure Architect at Rackspace and an active member of 
 categories:
     - DevOps
     - Azure
+slug: 'Custom-Logging-With-Azure-Diagnostics' 
 ---
-
 Using the Azure diagnostic extension lets you capture a good set of metrics to help trend and diagnose your virtual machine. What a lot of people don't know is that you can configure it to capture custom log files.
 
 <!--more-->

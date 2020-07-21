@@ -17,8 +17,9 @@ metaTitle: "Deploy MongoDB as a Docker container"
 metaDescription: "This post explores the steps to deploy MongoDB as a Docker container."
 ogTitle: "Deploy MongoDB as a Docker container"
 ogDescription: "This post explores the steps to deploy MongoDB as a Docker container."
----
+slug: "deploy mongodb as a docker container" 
 
+---
 One of the most accessible NoSQL databases, MongoDB&reg;, has many available
 deployment options. In this post, I use Docker&reg; to deploy MongoDB as a
 container and use the shell client to interact with that container.

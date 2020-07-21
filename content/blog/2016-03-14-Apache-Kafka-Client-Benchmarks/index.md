@@ -7,6 +7,7 @@ author: Kaustav Haldar
 published: true
 categories:
     - Cloud monitoring
+slug: 'Apache-Kafka-Client-Benchmarks' 
 ---
 
 We have a large distributed system here at Rackspace, which we’re scaling and which currently processes 10 million metrics per minute. Part of the scaling effort required us to switch to using Apache Kafka for our message queues. We'll be looking at a few possible clients to explore our options and benchmarking their throughput. 

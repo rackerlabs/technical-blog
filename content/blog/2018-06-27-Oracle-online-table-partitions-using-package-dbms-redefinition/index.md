@@ -9,6 +9,7 @@ authorIsRacker: true
 categories:
   - Oracle
   - database
+slug: 'Oracle-online-table-partitions-using-package-dbms-redefinition' 
 ---
 
 Starting with Oracle&reg; 10g, you can partition tables online without any

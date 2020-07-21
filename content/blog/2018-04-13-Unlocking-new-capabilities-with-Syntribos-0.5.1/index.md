@@ -8,6 +8,7 @@ published: true
 authorIsRacker: true
 categories:
     - Openstack
+slug: 'Unlocking-new-capabilities-with-Syntribos-0.5.1' 
 ---
 
 It has been a while since the last official release of Syntribos - a whole

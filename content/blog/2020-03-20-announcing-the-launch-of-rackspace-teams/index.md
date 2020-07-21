@@ -16,6 +16,7 @@ ogTitle: "Announcing the launch of Rackspace Teams"
 ogDescription: "Rackspace Teams is a unique engagement model that we purposely developed based
 on feedback from customers who asked for the ability to gain in-depth cloud
 expertise on-demand without a long-term commitment to hire staff."
+slug: "announcing the launch of rackspace teams" 
 ---
 
 Rackspace Teams is a unique engagement model that we purposely developed based

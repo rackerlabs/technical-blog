@@ -8,8 +8,8 @@ published: true
 categories:
   - neutron
   - openstack
+slug: 'A-First-Look-at-RBAC-in-the-Liberty-Release-of-Neutron' 
 ---
-
 Over the last couple of years, we've seen OpenStack deployments shift from a public cloud model, where no one is trusted, to a private cloud model, where collaboration and shared resources between projects is required. As enterprises adopt OpenStack and integrate it into their infrastructure, new use cases continue to multiply, and existing limitations in APIs and data models have been brought to the forefront. One of the more exciting features to come out of Neutron development in the Liberty cycle that addresses a shortcoming is a framework for Role Based Access Control (RBAC).
 
 <!--more-->

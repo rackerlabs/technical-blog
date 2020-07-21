@@ -8,6 +8,7 @@ published: true
 authorIsRacker: true
 categories:
   - general
+slug: 'upgrade-netscaler-application-delivery-controller' 
 ---
 
 NetScaler&reg; Application Delivery Controller (ADC), Citrix&reg; Systems' core

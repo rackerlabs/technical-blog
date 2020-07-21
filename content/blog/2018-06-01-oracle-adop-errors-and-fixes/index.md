@@ -9,6 +9,7 @@ authorIsRacker: true
 categories:
   - Oracle
   - database
+slug: 'oracle-adop-errors-and-fixes' 
 ---
 
 Originally published by Tricore: Aug 14, 2017

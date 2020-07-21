@@ -14,6 +14,7 @@ metaTitle: "An overview of the Oracle Property Manager"
 metaDescription: "This blog highlights the Oracle Property Manager’s various features and functions."
 ogTitle: "An overview of Oracle Property Manager"
 ogDescription: "This blog highlights the Oracle Property Manager’s various features and functions."
+slug: "an overview of oracle property manager" 
 ---
 
 The Oracle&reg; Property Manager is part of the Oracle Real Estate Management

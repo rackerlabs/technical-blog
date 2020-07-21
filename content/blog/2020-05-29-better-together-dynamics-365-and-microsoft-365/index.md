@@ -27,8 +27,8 @@ ogTitle: "Better together: Dynamics 365 and Microsoft 365"
 ogDescription: "Recently, Rackspace launched license offerings for Microsoft&reg;
 Dynamics 365&reg; as well as professional services for the Dynamics 365 Sales
 application."
+slug: "better together dynamics 365 and microsoft 365" 
 ---
-
 Recently, Rackspace launched license offerings for Microsoft&reg; Dynamics 365&reg;
 as well as professional services for the Dynamics 365 Sales application.
 

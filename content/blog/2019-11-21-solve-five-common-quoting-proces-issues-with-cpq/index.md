@@ -14,6 +14,7 @@ metaDescription: "This post covers five of the most rampant quoting process issu
 ogTitle: "Solve five common quoting process issues with CPQ"
 ogDescription: "This post covers five of the most rampant quoting process issues we’ve seen and some solutions, along with a look at how CPQ can help mitigate these problems."
 canonical: https://blog.rackspace.com/5-common-quoting-process-issues-and-how-to-solve-them-with-cpq/
+slug: "solve five common quoting proces issues with cpq" 
 ---
 
 Beyond wasting time and causing frustration to both your staff and customers,

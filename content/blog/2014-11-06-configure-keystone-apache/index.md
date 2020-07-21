@@ -9,8 +9,8 @@ categories:
   - OpenStack
   - python
 bio: 'Matt Dorn is a Cloud Technology Instructor with Rackspace focused on helping IT teams around the world build private clouds with OpenStack. You can find his blog at https://www.madorn.com/'
+slug: 'configure-keystone-apache' 
 ---
-
 Keystone and many current OpenStack API components run in an [Eventlet](https://eventlet.net/) based http server.  Eventlet is designed to perform well in networked environments and handles everything in a single thread.
 
 The developers responsible for the Keystone project have recently recommended using Apache (with the mod_wsgi module) as a front-end rather than the traditional “Keystone” Eventlet-based process.

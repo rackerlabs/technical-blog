@@ -14,6 +14,7 @@ metaTitle: "Use XML Publisher to show charts"
 metaDescription: "This blog explains how to create Oracle&reg; XML Publisher reports with charts."
 ogTitle: "Use XML Publisher to show charts"
 ogDescription: "This blog explains how to create Oracle&reg; XML Publisher reports with charts."
+slug: "use xml publisher to show charts" 
 ---
 
 This blog explains how to create Oracle&reg; XML Publisher reports with charts.

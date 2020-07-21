@@ -15,7 +15,9 @@ metaTitle: "Understanding Amazon Aurora endpoints"
 metaDescription: "A look at the various Aurora endpoint types and when to use them."
 ogTitle: "Understanding Amazon Aurora endpoints"
 ogDescription: "A look at the various Aurora endpoint types and when to use them."
+slug: 'Understanding-Amazon-Aurora-Endpoints' 
 ---
+
 If you've ever used Aurora Read Replicas, you may have noticed that there are
 several different endpoints available.  The _Cluster Endpoint_, the _Reader Endpoint_,
 and _Instance Endpoints_... with all of these options, how do you know which one

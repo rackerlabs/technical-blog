@@ -10,8 +10,8 @@ categories:
   - Oracle
   - database
   - architecture
+slug: 'hadoop-eco2' 
 ---
-
 Originally published by Tricore: July 11, 2017
 
 In [Part 1](https://developer.rackspace.com/blog/hadoop-eco-basics-1/) of this

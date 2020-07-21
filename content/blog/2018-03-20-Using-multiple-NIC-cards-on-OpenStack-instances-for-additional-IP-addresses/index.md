@@ -8,6 +8,7 @@ published: true
 authorIsRacker: true
 categories:
     - Openstack
+slug: 'Using-multiple-NIC-cards-on-OpenStack-instances-for-additional-IP-addresses' 
 ---
 
 In my [previous series of articles](https://blog.rackspace.com/a-users-look-at-openstack-networking-part-5)

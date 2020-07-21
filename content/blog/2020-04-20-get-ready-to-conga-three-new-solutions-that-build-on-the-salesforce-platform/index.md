@@ -12,6 +12,7 @@ metaTitle: "Get ready to Conga: Three new solutions that build on the Salesforce
 metaDescription: "With Conga, you can create complicated documents like contracts, well-formatted Excel files, or simple quotes from your Salesforce data. "
 ogTitle: "Get ready to Conga: Three new solutions that build on the Salesforce platform"
 ogDescription: "With Conga, you can create complicated documents like contracts, well-formatted Excel files, or simple quotes from your Salesforce data."
+slug: "get ready to conga three new solutions that build on the salesforce platform" 
 ---
 
 Many companies are turning to cloud-based applications to increase the return on their Salesforce&reg; Customer Relationship Management (CRM) investment. Rackspace recently went onsite with [Conga&reg;] (https://conga.com) to get a more intimate understanding of their new offerings. Conga provides training on how to navigate their applications and more efficiently handle customer and prospect requests. Solutions from Conga can help streamline processes and align clients’ sales, marketing, and customer service strategies.
