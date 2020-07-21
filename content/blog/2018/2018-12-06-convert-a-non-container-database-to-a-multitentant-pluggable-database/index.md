@@ -37,7 +37,7 @@ have enough disk space to hold the converted CDB database.
 
 The following image shows the test scenario:
 
-{{<image src="" title="" alt="">}}(Picture1.png)
+{{<image src="Picture1.png" title="" alt="">}}
 
 ### Conversion tests
 

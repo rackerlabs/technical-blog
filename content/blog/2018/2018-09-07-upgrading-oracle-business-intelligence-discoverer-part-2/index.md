@@ -156,7 +156,7 @@ Query the Discoverer profile options looking for the following items:
 
 The following image shows these settings:
 
-{{<image src="" title="" alt="">}}(Picture1.png)
+{{<image src="Picture1" title="" alt="">}}
 
 ### Run the "Generate Business Views by Application" concurrent program
 

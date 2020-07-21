@@ -24,7 +24,7 @@ both the table and the data unavailable for a certain period, which is a less
 than favorable situation for businesses. This is when the ``DBMS_REDEFINITION``
 package saves the day, as shown in the following image:
 
-{{<image src="" title="" alt="">}}(Picture1.png)
+{{<image src="Picture1.png" title="" alt="">}}
 
 ### Purpose
 

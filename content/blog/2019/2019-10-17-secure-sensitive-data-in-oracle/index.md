@@ -68,7 +68,7 @@ Data Redaction has the following characteristics:
 
 Following are some examples of the different types of redaction:
 
-{{<image src="" title="" alt="">}}(Table1.png)
+{{<image src="Table1.png" title="" alt="">}}
 
 ### Exceptions for redaction
 
@@ -133,7 +133,7 @@ If no redaction is used, you display the data with the following statements:
     COLUMN EMAILADR    format a20
     SELECT * FROM CUSTOMERS
 
-{{<image src="" title="" alt="">}}(Picture0.png)
+{{<image src="Picture0.png" title="" alt="">}}
 
 #### Full redaction
 
@@ -156,7 +156,7 @@ In this example, the credit card data is always redacted because the expression
     END;
     /
 
-{{<image src="" title="" alt="">}}(Picture1.png)
+{{<image src="Picture1.png" title="" alt="">}}
 
 
 #### Partial redaction
@@ -180,7 +180,7 @@ To drop the previous policy, run the following command:
 
     execute DBMS_REDACT.drop_policy ('SAGARG','CUSTOMERS','REDACT_POLICY_CARD');
 
-{{<image src="" title="" alt="">}}(Picture2.png)
+{{<image src="Picture2.png" title="" alt="">}}
 
 You can also do partial redaction on other columns, if needed.
 
@@ -202,7 +202,7 @@ as shown in the following example:
     /
 
 
-{{<image src="" title="" alt="">}}(Picture3.png)
+{{<image src="Picture3.png" title="" alt="">}}
 
 #### Using regular expressions
 
@@ -226,7 +226,7 @@ addresses. The following example hides the beginning of the email address:
     END;
     /
 
-{{<image src="" title="" alt="">}}(Picture4.png)
+{{<image src="Picture4.png" title="" alt="">}}
 
 The parameter value for expression is always ‘1=1’, so the data is always redacted.
 
@@ -250,7 +250,7 @@ For example:
     END;
     /
 
-{{<image src="" title="" alt="">}}(Picture5.png)
+{{<image src="Picture5.png" title="" alt="">}}
 
 ### Conclusion
 

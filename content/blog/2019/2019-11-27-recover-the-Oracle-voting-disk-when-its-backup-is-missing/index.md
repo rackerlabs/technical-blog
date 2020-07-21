@@ -85,9 +85,9 @@ The sample scenario for this blog uses the following environment:
 
 Let's fix the following error:
 
-{{<image src="" title="" alt="">}}(Picture1.png)
+{{<image src="Picture1.png" title="" alt="">}}
 
-{{<image src="" title="" alt="">}}(Picture2.png)
+{{<image src="Picture2.png" title="" alt="">}}
 
     cssd(3980)]CRS-1714:Unable to discover any voting files,
     retrying discovery in 15 seconds; Details at (:CSSNM00070:)

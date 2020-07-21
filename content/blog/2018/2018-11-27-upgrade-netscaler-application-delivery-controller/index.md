@@ -56,7 +56,7 @@ Review the following prerequisites before beginning the upgrade:
 
 The following image shows a high-level overview of the ADC upgrade steps:
 
-{{<image src="" title="" alt="">}}(Picture1.png)
+{{<image src="Picture1.png" title="" alt="">}}
 
 **Note:** Always upgrade the secondary appliance first and then upgrade the
 primary appliance.
@@ -66,7 +66,7 @@ primary appliance.
 The following image shows the steps to upgrade the software on the secondary
 appliance.
 
-{{<image src="" title="" alt="">}}(Picture2.png)
+{{<image src="Picture2.png" title="" alt="">}}
 
 Image source: [https://docs.citrix.com/en-us/netscaler/12-1/upgrade-downgrade-netscaler-appliance/upgrade-downgrade-HA-pair.html](https://docs.citrix.com/en-us/netscaler/12-1/upgrade-downgrade-netscaler-appliance/upgrade-downgrade-HA-pair.html)
 
@@ -139,7 +139,7 @@ Image source: [https://docs.citrix.com/en-us/netscaler/12-1/upgrade-downgrade-ne
 The following image shows the steps to upgrade the software on the primary
 appliance:
 
-{{<image src="" title="" alt="">}}(Picture3.png)
+{{<image src="Picture3.png" title="" alt="">}}
 
 Image source: [https://docs.citrix.com/en-us/netscaler/12-1/upgrade-downgrade-netscaler-appliance/upgrade-downgrade-HA-pair.html](https://docs.citrix.com/en-us/netscaler/12-1/upgrade-downgrade-netscaler-appliance/upgrade-downgrade-HA-pair.html)
 

@@ -50,19 +50,19 @@ gmail ID:
 
 On the home page, click on **Select a project** as shown in the following image:
 
-{{<image src="" title="" alt="">}}(Picture1.png)
+{{<image src="Picture1.png" title="" alt="">}}
 
 To create a new project, enter the project name and click **Create** as shown
 in the following image.
 
-{{<image src="" title="" alt="">}}(Picture2.png)
+{{<image src="Picture2.png" title="" alt="">}}
 
 After the project is successfully completed, click **Select a project** again.
 
 To select the project that you just created, click on it in the list, as shown
 in the following image:
 
-{{<image src="" title="" alt="">}}(Picture3.png)
+{{<image src="Picture3.png" title="" alt="">}}
 
 #### Go to the API dashboard and enable the Distance Matrix
 
@@ -70,33 +70,33 @@ To go to the API dashboard, open the navigation menu by clicking on the
 hamburger menu in the upper-right corner (next to **Google Cloud Platform**).
 Then click **API & Services -> Dashboard**, as shown in the following image:
 
-{{<image src="" title="" alt="">}}(Picture4.png)
+{{<image src="Picture4.png" title="" alt="">}}
 
 To enable the Distance Matrix, click on **ENABLE APIS AND SERVICES**, as shown
 in the following image:
 
-{{<image src="" title="" alt="">}}(Picture5.png)
+{{<image src="Picture5.png" title="" alt="">}}
 
 Then, in the menu bar, search for "Distance Matrix API", as shown in the
 following image:
 
-{{<image src="" title="" alt="">}}(Picture6.png)
+{{<image src="Picture6.png" title="" alt="">}}
 
 Finally, click **Enable**.  The resulting screen is shown in the following image:
 
-{{<image src="" title="" alt="">}}(Picture7.png)
+{{<image src="Picture7.png" title="" alt="">}}
 
 #### Create an API key
 
 To create an API key, go to the **Credentials** tab, select **API key**, and
 click **Create credentials**, as shown in the following image:
 
-{{<image src="" title="" alt="">}}(Picture8.png)
+{{<image src="Picture8.png" title="" alt="">}}
 
 The API key (AIzaSyBEJa1xqGHtQkfhFlYUPG_HnDpsgTxStzM) was generated successfully,
 as shown in the following image:
 
-{{<image src="" title="" alt="">}}(Picture9.png)
+{{<image src="Picture9.png" title="" alt="">}}
 
 #### Get the distance between two locations
 
@@ -108,7 +108,7 @@ API Key.
 The URL fetches the distance in the form of an XML file (shown in the following
 image), which stores the distance between two places in the text tag.
 
-{{<image src="" title="" alt="">}}(Picture10.png)
+{{<image src="Picture10.png" title="" alt="">}}
 
 ### Use the API with Oracle EBS
 

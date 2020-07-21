@@ -41,72 +41,72 @@ by the cluster. The following images show the test cases performed for Flex ASM:
 
 Cluster ASM listener Node1:
 
-{{<image src="" title="" alt="">}}(Picture1.png)
+{{<image src="Picture1.png" title="" alt="">}}
 
 Cluster ASM listener Node2:
 
-{{<image src="" title="" alt="">}}(Picture2.png)
+{{<image src="Picture2.png" title="" alt="">}}(
 
 ### Flex ASM test case
 
 Use the following code to check the ASM cluster mode and state:
 
-{{<image src="" title="" alt="">}}(Picture3.png)
+{{<image src="Picture3.png" title="" alt="">}}
 
 Use the following code to check ASM status:
 
-{{<image src="" title="" alt="">}}(Picture4.png)
+{{<image src="Picture4.png" title="" alt="">}}
 
 Use the following code to check ASM configuration:
 
-{{<image src="" title="" alt="">}}(Picture5.png)
+{{<image src="Picture5.png" title="" alt="">}}
 
 **NOTE**: You can reduce an ASM instance count to a minimum of two by using the
 following command, which shows instances running on Node1:
 
     srvctl modify asm -count 2
 
-{{<image src="" title="" alt="">}}(Picture6.png)
+{{<image src="Picture6.png" title="" alt="">}}
 
 Then run the following code:
 
     srvctl status asm -node ushodld0001ca
 
-{{<image src="" title="" alt="">}}(Picture7.png)
+{{<image src="Picture7.png" title="" alt="">}}
 
 Now, you need to stop the ASM instance on Node1 by running the following command:
 
     srvctl stop asm -node ushodld0001ca -stopoption abort –force
 
-{{<image src="" title="" alt="">}}(Picture8.png)
+{{<image src="Picture8.png" title="" alt="">}}(
 
 Use the following code to check the status:
 
     srvctl status asm
 
-{{<image src="" title="" alt="">}}(Picture9.png)
+{{<image src="Picture9.png" title="" alt="">}}
 
 Use the following code to check the cluster:
 
     crsctl check cluster
 
-{{<image src="" title="" alt="">}}(Picture10.png)
+{{<image src="Picture10.png" title="" alt="">}}
 
 
 
 Use the following code to Verify that all the instances except ASM1 are running
 on Node1 because of Flex ASM:
 
-{{<image src="" title="" alt="">}}(Picture11.png)
+{{<image src="Picture11.png" title="" alt="">}}
 
 Use the following code to verify that instances are running fine on both the
 nodes even if ASM1 is down:
 
-{{<image src="" title="" alt="">}}(Picture12.png)
+{{<image src="Picture12.png" title="" alt="">}}
 
 Use the following code to check the ADVM proxy instance:
 
-{{<image src="" title="" alt="">}}(Picture13.png)
+{{<image src="Picture13.png" title="" alt="">}}
 
 ### Benefits of Flex ASM
 
@@ -138,17 +138,17 @@ master using the following command:
 
     oclumon manage -get MASTER
 
-{{<image src="" title="" alt="">}}(Picture14.png)
+{{<image src="Picture14.png" title="" alt="">}}
 
 This instance is managed by using the following SRVCTL commands:
 
     srvctl status mgmtdb
 
-{{<image src="" title="" alt="">}}(Picture15.png)
+{{<image src="Picture15.png" title="" alt="">}}
 
     srvctl config mgmtdb
 
-{{<image src="" title="" alt="">}}(Picture16.png)
+{{<image src="Picture16.png" title="" alt="">}}
 
 
 You can see the single listener associated with this database by running the
@@ -156,7 +156,7 @@ following command:
 
     ps -ef|grep MGMTLSNR.
 
-{{<image src="" title="" alt="">}}(Picture17.png)
+{{<image src="Picture17.png" title="" alt="">}}
 
 You can view information about MGMTDB from metalink doc - 1568402.1.
 

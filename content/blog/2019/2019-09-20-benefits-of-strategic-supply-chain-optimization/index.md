@@ -73,7 +73,7 @@ A strategic supply chain optimization in the service industry does the following
 
 The following diagram illustrates strategic supply chain optimization:
 
-{{<image src="" title="" alt="">}}(Picture1.png)
+{{<image src="Picture1.png" title="" alt="">}}
 
 ### Rackspace Offering
 

@@ -113,7 +113,7 @@ To integrate EBS R12.1 with OAM, you need to install and deploy all the services
 Oracle HTTP Server (OHS) and Weblogic&reg;, as shown in the following image. In R12.1, you need
 to manage more services, and it takes more resource hours to implement them in comparison to R12.2.
 
-{{<image src="" title="" alt="">}}(Picture1.png)
+{{<image src="Picture1.png" title="" alt="">}}
 
 *Source*: [https://blogs.oracle.com/ebstech/oracle-access-manager-11115-certified-with-e-business-suite-12](https://blogs.oracle.com/ebstech/oracle-access-manager-11115-certified-with-e-business-suite-12)
 
@@ -125,7 +125,7 @@ such as OAM. You need to configure and deploy Webgate and Accessgate. Deploy Web
 top of R12.2 OHS 11g home, and deploy Accessgate as a separate managed server on top of
 R12.2 WebLogic, as shown in the following image:
 
-{{<image src="" title="" alt="">}}(Picture2.png)
+{{<image src="Picture2.png" title="" alt="">}}
 
 *Source*: [https://blogs.oracle.com/ebstech/oracle-access-manager-11115-certified-with-e-business-suite-12](https://blogs.oracle.com/ebstech/oracle-access-manager-11115-certified-with-e-business-suite-12)
 

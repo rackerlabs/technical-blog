@@ -25,7 +25,7 @@ Because of this, Rackspace’s refreshed Core Values are a breath of fresh air a
 
 ### Excellence
 
-{{<image src="" title="" alt="">}}(CV-Excellence.png)
+{{<image src="CV-Excellence.png" title="" alt="">}}
 
 *We’re an accountable, disciplined, high-performing company with proven results.*
 
@@ -35,7 +35,7 @@ In a day where customers have unprecedented access to forums, rating sites, and 
 
 ### Customer-driven
 
-{{<image src="" title="" alt="">}}(CV-CustomerDriven.png)
+{{<image src="CV-CustomerDriven.png" title="" alt="">}}
 
 *We’re proactive, collaborative, and committed to success for our customers.*
 
@@ -43,7 +43,7 @@ In Support, we often work with other teams in a collaborative effort to assure t
 
 ### Expertise
 
-{{<image src="" title="" alt="">}}(CV-Expertise.png)
+{{<image src="CV-Expertise.png" title="" alt="">}}
 
 *We’re passionate learners, rooted in our customer’s business to provide unbiased solutions.*
 
@@ -53,7 +53,7 @@ Because we love learning, we are always open to other Racker ideas, incorporatin
 
 ### Agility
 
-{{<image src="" title="" alt="">}}(CV-Agility.png)
+{{<image src="CV-Agility.png" title="" alt="">}}
 
 *We’re adopting new technologies and evolving services to meet customers where they are in their journey.*
 
@@ -63,7 +63,7 @@ If Rackers can't remain agile, then their ability to provide excellent customer 
 
 ### Compassion
 
-{{<image src="" title="" alt="">}}(CV-Compassion.png)
+{{<image src="CV-Compassion.png" title="" alt="">}}
 
 *We’re one team doing the right thing for our customers, communities, and each other.*
 

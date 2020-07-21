@@ -85,7 +85,7 @@ connected SAP systems.
 
 The following diagram shows the SAP PCo architecture:
 
-{{<image src="" title="" alt="">}}(Picture1.png)
+{{<image src="Picture1.png" title="" alt="">}}
 
 *Image source:* [https://help.sap.com/doc/saphelp_pco15/15.0/en-US/46/a00344d44852b7e10000000a155369/frameset.htm](https://help.sap.com/doc/saphelp_pco15/15.0/en-US/46/a00344d44852b7e10000000a155369/frameset.htm)
 
@@ -138,14 +138,14 @@ The PCo Management Console, shown in the following image, is the WinForms
 application that provides the configuration and management of the PCo source
 and destination systems, agent instances, and notifications.
 
-{{<image src="" title="" alt="">}}(Picture2.png)
+{{<image src="Picture2.png" title="" alt="">}}
 
 *Image source:* [service.sap.com/instguides](service.sap.com/instguides) Go to
 **SAP Business Suite Applications -> SAP Manufacturing SAP Plant Connectivity -> SAP Plant Connectivity 15.1**.
 
 The following image shows the structure of the connection flow:
 
-{{<image src="" title="" alt="">}}(Picture3.png)
+{{<image src="Picture3.png" title="" alt="">}}
 
 *Image source:* [service.sap.com/instguides](service.sap.com/instguides) Go to
 **SAP Business Suite Applications -> SAP Manufacturing SAP Plant Connectivity -> SAP Plant Connectivity 15.1**.
@@ -166,7 +166,7 @@ Click **Source System**, provide the name, and select the source Agent type
 (`OPC DA`, `HAD`, `OLEDB`, `UA`, or `IP21`) as **Socket Agent** as shown in the
 following screenshot:
 
-{{<image src="" title="" alt="">}}(Picture4.png)
+{{<image src="Picture4.png" title="" alt="">}}
 
 ##### Set the socket type
 
@@ -182,12 +182,12 @@ following screenshot:
 Enter the terminator to identify the end of the message in the data stream and
 provide the length of the message in the data stream as shown in the following image:
 
-{{<image src="" title="" alt="">}}(Picture5.png)
+{{<image src="Picture5.png" title="" alt="">}}
 
 In the **Reliable Connection** tab, set the interval and number of retries if
 the connection fails, as shown in the following image:
 
-{{<image src="" title="" alt="">}}(Picture6.png)
+{{<image src="Picture6.png" title="" alt="">}}
 
 #### Create the destination system
 
@@ -198,14 +198,14 @@ Use the following steps to create the destination system:
 In the destination, choose the MII destination, enter a name, a description, and
 click **OK**.
 
-{{<image src="" title="" alt="">}}(Picture7.png)
+{{<image src="Picture7.png" title="" alt="">}}
 
 ##### Select server and MII version
 
 Select the server name, port number, version of MII software, and the user
 credentials that have the MII admin role access as shown in the following screenshot:
 
-{{<image src="" title="" alt="">}}(Picture8.png)
+{{<image src="Picture8.png" title="" alt="">}}
 
 ##### Test the connection
 
@@ -220,7 +220,7 @@ Use the following steps to create an agent:
 
 Choose the barcode source system as **source** and give the agent name and description.
 
-{{<image src="" title="" alt="">}}(Picture9.png)
+{{<image src="Picture9.png" title="" alt="">}}
 
 ##### Select the Bar
 
@@ -228,7 +228,7 @@ In the **Subscription Items** tab, select **Browse** at the bottom and select
 **Bar**. The **Bar Message** field is the input parameter name for **Bar**. The
 scanned barcode value is retrieved into this parameter.
 
-{{<image src="" title="" alt="">}}(Picture10.png)
+{{<image src="Picture10.png" title="" alt="">}}(
 
 ##### Set the port and port notification
 
@@ -236,7 +236,7 @@ In **Query Ports**, select `SAP MII` and give a new port number. Do not use this
 port with any other agents. Check other agent instances before
 assigning it.
 
-{{<image src="" title="" alt="">}}(Picture11.png)
+{{<image src="Picture11.png" title="" alt="">}}
 
 Go to the **Query Port** tab, select the first two options, `MII` and
 `MII before 12.2`, and then verify that the port number is available. The
@@ -246,11 +246,11 @@ a notification for this port.
 In destination, click **Add Destination**, select the destination MII system,
 and browse to the target transaction.
 
-{{<image src="" title="" alt="">}}(Picture12.png)
+{{<image src="Picture12.png" title="" alt="">}}
 
 In **Transaction**, select the input parameter to receive this barcode message.
 
-{{<image src="" title="" alt="">}}(Picture13.png)
+{{<image src="Picture13.png" title="" alt="">}}
 
 Click **Save** and start the agent instance. After you scan a barcode, PCo gets
 it and sends it to the MII transaction. In the MII transaction, you can process
@@ -261,7 +261,7 @@ the input data.
 After you create the source and the destination systems, you need to configure
 the PCo settings for connecting the MII application menu data server.
 
-{{<image src="" title="" alt="">}}(Picture14.png)
+{{<image src="Picture14.png" title="" alt="">}}
 
 The settings in the preceding image describe the system details of the PCo
 installation. You can use the same information in the SAP MII data server
@@ -281,14 +281,14 @@ host name to the SAP MII server host file, **C:\WINDOWS\system32\drivers\etc\hos
 Go to **SAP MII Menu -> Data Services -> Create Data Server** as shown in the
 following screenshot:
 
-{{<image src="" title="" alt="">}}(Picture15.png)
+{{<image src="Picture15.png" title="" alt="">}}
 
 ##### Select the connector type
 
 Select **Connector Type** from the drop-down menu and enter the server name and
 description fields.
 
-{{<image src="" title="" alt="">}}(Picture16.png)
+{{<image src="Picture16.png" title="" alt="">}}
 
 Fill in the fields as follows:
 
@@ -301,31 +301,31 @@ the PCo source.
 
 **Password**: Use the same credentials that you used to create the PCo source.
 
-{{<image src="" title="" alt="">}}(Picture17.png)
+{{<image src="Picture17.png" title="" alt="">}}
 
 After you enter the URL path, click **Next**. A new window displays for
 credentials, which should be the PCo Server Windows credentials.
 
-{{<image src="" title="" alt="">}}(Picture18.png)
+{{<image src="Picture18.png" title="" alt="">}}
 
 Fetch the agents that you created in the PCo Management Console.
 
-{{<image src="" title="" alt="">}}(Picture19.png)
+{{<image src="Picture19.png" title="" alt="">}}
 
 Click **Finish** and then check the **Enabled** check box as shown in the
 following screenshot:
 
-{{<image src="" title="" alt="">}}(Picture20.png)
+{{<image src="Picture20.png" title="" alt="">}}
 
 After the connection is successful, fill out the fields, as shown in the following
 screenshot:
 
-{{<image src="" title="" alt="">}}(Picture21.png)
+{{<image src="Picture21.png" title="" alt="">}}
 
 In the **Status** tab, the **Status** parameter should have a green **Running**
 value.
 
-{{<image src="" title="" alt="">}}(Picture22.png)
+{{<image src="Picture22.png" title="" alt="">}}
 
 #### Create SAP PCo notifications
 
@@ -339,16 +339,16 @@ desirable events such as confirmations.
 After you create the agent, right-click the agent in the list and select
 **Add Notification**.
 
-{{<image src="" title="" alt="">}}(Picture23.png)
+{{<image src="Picture23.png" title="" alt="">}}
 
 Enter the name and description and click **OK**.
 
-{{<image src="" title="" alt="">}}(Picture24.png)
+{{<image src="Picture24.png" title="" alt="">}}
 
 Select the **Subscription Items** tab and create a notification based on the
 trigger condition.
 
-{{<image src="" title="" alt="">}}(Picture25.png)
+{{<image src="Picture25.png" title="" alt="">}}
 
 The notification is active as soon as you create it.
 

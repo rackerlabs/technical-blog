@@ -66,14 +66,14 @@ maintenance tasks:
 
     The following screen displays:
 
-    {{<image src="" title="" alt="">}}(Picture1.png)
+    {{<image src="Picture1.png" title="" alt="">}}
 
 <ol start=3>
     <li>Enter <b>1</b> to display the <b>Administer Concurrent Managers</b> menu,
     as shown in the following image:</li>
 </ol>
 
-   {{<image src="" title="" alt="">}}(Picture2.png)
+   {{<image src="Picture2.png" title="" alt="">}}
 
 <ol start=4>
     <li>Choose the tasks to perform. When you're finished, press <b>R</b> to
@@ -82,7 +82,7 @@ maintenance tasks:
     Concurrent Requests</b> menu as shown in the following image:</li>
 </ol>
 
-   {{<image src="" title="" alt="">}}(Picture3.png)
+   {{<image src="Picture3.png" title="" alt="">}}
 
 ### Enable the CPADMIN utility in Oracle EBS
 

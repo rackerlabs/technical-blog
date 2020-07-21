@@ -57,7 +57,7 @@ is supported when you use DataGuard in physical-standby mode. In this case, a
 wallet containing the master key must be copied from the primary server to a
 physical standby server, as shown in the following image:
 
-{{<image src="" title="" alt="">}}(Picture1.png)
+{{<image src="Picture1.png" title="" alt="">}}
 Image source: [https://docs.oracle.com/cd/E11882\_01/network.112/e40393/asotrans.htm#ASOAG9567](https://docs.oracle.com/cd/E11882\_01/network.112/e40393/asotrans.htm#ASOAG9567)
 
 

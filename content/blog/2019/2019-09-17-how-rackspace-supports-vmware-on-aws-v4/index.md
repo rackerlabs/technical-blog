@@ -30,7 +30,7 @@ and network ports to connect to the world.
 
 The following image illustrates these layers:
 
-{{<image src="" title="" alt="">}}(Picture1.png)
+{{<image src="Picture1.png" title="" alt="">}}
 
 However, we can only run one OS on a computer at a time. Right?
 
@@ -40,7 +40,7 @@ Virtualization changed the way we use computers by enabling us to install and
 run more than one OS at the same time and to maximize all of the
 hardware power available in a given chassis, as shown in the following image:
 
-{{<image src="" title="" alt="">}}(Picture2.png)
+{{<image src="Picture2.png" title="" alt="">}}
 
 Virtualization software exists between the hardware layer and the OS.
 It acts like the hardware layer and *fools* any OS
@@ -67,7 +67,7 @@ VMware controls approximately 75% of the server virtualization market, the
 AWS/VMware partnership gives customers a very powerful, feature-rich, and
 flexible compute platform, as shown in the following image:
 
-{{<image src="" title="" alt="">}}(Picture3.png)
+{{<image src="Picture3.png" title="" alt="">}}
 
 VMworld&reg; announced the initial availability of VMware Cloud on AWS to
 create a *seamlessly integrated hybrid cloud* in 2017. This announcement followed

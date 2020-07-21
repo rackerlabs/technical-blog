@@ -54,7 +54,7 @@ exceeds 1 GB. You can increase the size of the CMC.
 To reach the monitoring section in the CMC, go to **Applications > Monitoring**
 as shown in the following monitoring default view:
 
-{{<image src="" title="" alt="">}}(Picture1.png)
+{{<image src="Picture1.png" title="" alt="">}}
 
 As you can see in the preceding image, there are five different tabs in this
 section: Dashboards, Metrics, Watchlists, Probes, and Alerts. The following
@@ -85,7 +85,7 @@ Metrics are individual pieces of information that help you to understand the
 overall health of different components of the system, as shown in the following
 image:
 
-{{<image src="" title="" alt="">}}(Picture2.png)
+{{<image src="Picture2.png" title="" alt="">}}
 
 Metrics are used to measure the health of a component. The metrics you define
 depend on the components that you are monitoring and your requirements. Examples
@@ -103,7 +103,7 @@ This tab helps monitor the watches created. The watches are thresholds for
 metrics that show you if the metric is in a healthy, warning, or danger status,
 as shown in the following image:
 
-{{<image src="" title="" alt="">}}(Picture3.png)
+{{<image src="Picture3.png" title="" alt="">}}
 
 The preceding image shows watches created by default. You can change these
 thresholds to adapt them to your system. Also, you can create notifications for
@@ -118,7 +118,7 @@ dashboard tab.
 Probes let you monitor the BO system by using simulated application workflows
 that run through software development kit-based scripts.
 
-{{<image src="" title="" alt="">}}(Picture4.png)
+{{<image src="Picture4.png" title="" alt="">}}
 
 The most interesting part of the CMC monitoring, probes are the most challenging
 part as well. You create probes by using a software development kit (SDK).
@@ -155,7 +155,7 @@ You can choose among the following system-generated default probes:
 
 This option lists the alerts that have been set up in the watchlist.
 
-{{<image src="" title="" alt="">}}(Picture5.png)
+{{<image src="Picture5.png" title="" alt="">}}
 
 You can see the different details of the alerts by clicking on each one. These
 alerts send emails and perform actions, depending on your watchlist configuration.

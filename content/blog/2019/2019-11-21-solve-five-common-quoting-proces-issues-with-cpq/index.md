@@ -24,7 +24,7 @@ customer requesting a quote from your company and receiving it.
 
 <!--more-->
 
-{{<image src="" title="" alt="">}}(Picture1.png)
+{{<image src="Picture1.png" title="" alt="">}}
 
 ### Introduction
 

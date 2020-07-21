@@ -90,7 +90,7 @@ Bypassing I/O equates to skipping physical reads and skipping physical reads
 helps save time. The following image provides a logical representation of how
 storage indexes work:
 
-{{<image src="" title="" alt="">}}(Picture1.png)
+{{<image src="Picture1.png" title="" alt="">}} 
 
 **Image source**: Oracle Exadata Recipes by John Clarke.
 

@@ -162,7 +162,7 @@ and remediating malware outbreaks with ease.
 
 The following image shows the FMC's dashboard:
 
-{{<image src="" title="" alt="">}}(Picture1.png)
+{{<image src="Picture1.png" title="" alt="">}}
 
 Image source: speaknetworks.com
 
@@ -171,7 +171,7 @@ Image source: speaknetworks.com
 The FMC provides unified management across the entire *attack continuum*—before,
 during, and after an attack as shown in the following image.
 
-{{<image src="" title="" alt="">}}(Picture2.png)
+{{<image src="Picture2.png" title="" alt="">}}
 
 Image source: Cisco
 
@@ -216,7 +216,7 @@ appliances.
 
 Supported models and services are shown in the following image:
 
-{{<image src="" title="" alt="">}}(Picture3.png)
+{{<image src="Picture3.png" title="" alt="">}}
 
 Image source: Cisco
 
@@ -288,7 +288,7 @@ and outside networks.
 -  The following figure shows the suggested network deployment for the ASA
 5506-X with the ASA FirePOWER module:
 
-{{<image src="" title="" alt="">}}(Picture4.png)
+{{<image src="Picture4.png" title="" alt="">}}
 
 Image source: Cisco
 

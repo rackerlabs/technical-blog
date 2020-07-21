@@ -73,9 +73,9 @@ after events such as database failovers, running out of disk space, or pauses.
 
 The following images show an example of this operation:
 
-{{<image src="" title="" alt="">}}
+{{<image src="Picture1.png" title="" alt="">}}
 
-{{<image src="" title="" alt="">}}
+{{<image src="Picture2.png" title="" alt="">}}
 
 #### Guidelines for indexing
 
@@ -252,7 +252,7 @@ monitor, alert, and avert potential transaction log issues.
 -	**sys.dm\_d\_stats\_histogram** is a new dynamic management view for examining
 statistics, as shown in the following image:
 
-{{<image src="" title="" alt="">}}
+{{<image src="Picture7.png" title="" alt="">}}
 
 -	**sys.dm\_os\_host\_info** exposes things like platform, distribution,
 service pack level, and language.

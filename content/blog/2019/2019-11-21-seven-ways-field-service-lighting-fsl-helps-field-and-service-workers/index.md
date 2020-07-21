@@ -25,7 +25,7 @@ frustrated&mdash;nobody wins.
 
 <!--more-->
 
-{{<image src="" title="" alt="">}}(Picture1.png)
+{{<image src="Picture1.png" title="" alt="">}}
 
 If these scenarios sound familiar, it is time to increase your company’s
 efficiency. This is where Salesforce&reg; Field Service Lightning (FSL) comes

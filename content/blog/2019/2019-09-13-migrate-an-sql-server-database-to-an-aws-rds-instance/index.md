@@ -120,7 +120,7 @@ file as the **MigrationTestDB** database:
        @restore_db_name = 'MigrationTestDB',
        @S3_arn_to_restore_from = 'arn:aws:s3:::ramkrdsrestore/MigrationTestDB2019-08-15 181640.bak'
 
-{{<image src="" title="" alt="">}}(Picture1.png)
+{{<image src="Picture1.png" title="" alt="">}}
 
 Note the parameters supplied to the stored procedure. You need to specify the
 following parameters:
@@ -136,7 +136,7 @@ track the status of the task with the following command:
 
 You can use the **TaskID** to track progress instead of **@db_name**.
 
-{{<image src="" title="" alt="">}}(Picture2.png)
+{{<image src="Picture2.png" title="" alt="">}}
 
 Be aware of the following concerns:
 

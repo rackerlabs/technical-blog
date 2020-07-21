@@ -81,7 +81,7 @@ In this example, we have already setup AlwasyOn between the primary replica
 server, called PRIMEHEAD, and your secondary replica, called HEAD2, as shown
 in the following image:
 
-{{<image src="" title="" alt="">}}(Picture1.png)
+{{<image src="Picture1.png" title="" alt="">}}
 
 This section provides a step-by-step solution to configure log shipping on a
 database that is already a part of an AlwaysOn AG.
@@ -103,14 +103,14 @@ Right-click on the database, select **Properties**, and click on the
 on the highlighted **Enable this as a primary database in a log shipping configuration**
 checkbox as shown in the following image:
 
-{{<image src="" title="" alt="">}}(Picture2.png)
+{{<image src="Picture1.png" title="" alt="">}}
 
 #### Step 3
 
 Click **Backup Setting** to configure the **LS Backup** option. Select the
 network-shared path for LS Backup, as shown in the following image:
 
-{{<image src="" title="" alt="">}}(Picture3.png)
+{{<image src="Picture3.png" title="" alt="">}}
 
 #### Step 4
 
@@ -121,14 +121,14 @@ However, in this scenario, use the default settings.
 
 To add a DR server, click **Add** as shown in the following image:
 
-{{<image src="" title="" alt="">}}(Picture4.png)
+{{<image src="Picture4.png" title="" alt="">}}
 
 #### Step 6
 
 Click **Connect** to connect to HEAD3, the DR server, as shown in the
 following image:
 
-{{<image src="" title="" alt="">}}(Picture5.png)
+{{<image src="Picture5.png" title="" alt="">}}
 
 #### Step 7
 
@@ -141,7 +141,7 @@ Click the **Copy Files** tab. In the **Destination folder for copied files**
 box, type the path where transaction log backups are copied. For this scenario,
 use **C:\LSCopyAlwaysOn** for the path, as shown in the following image:
 
-{{<image src="" title="" alt="">}}(Picture6.png)
+{{<image src="Picture6.png" title="" alt="">}}
 
 #### Step 9
 
@@ -153,17 +153,17 @@ In this example, we selected **No recovery mode**, which implies that the DR
 database is not accessible. If you select **Standby Mode**, the DR database is
 available to the end user in read-only mode.
 
-{{<image src="" title="" alt="">}}(Picture7.png)
+{{<image src="Picture7.png" title="" alt="">}}
 
 #### Step 10
 
 Click **OK** to start the log shipping.
 
-{{<image src="" title="" alt="">}}(Picture8.png)
+{{<image src="Picture8.png" title="" alt="">}}
 
 The following screen displays:
 
-{{<image src="" title="" alt="">}}(Picture9.png)
+{{<image src="Picture9.png" title="" alt="">}}
 
 #### Step 11
 
@@ -171,7 +171,7 @@ To check the log shipping status, right-click on the DR server, HEAD3, instances
 and select **Reports->Standard reports—>Transactional Log Shipping Status**. If
 the following screen appears, log shipping is healthy and working as expected.
 
-{{<image src="" title="" alt="">}}(Picture10.png)
+{{<image src="Picture10.png" title="" alt="">}}
 
 If an AG fail over between PRIMEHEAD and HEAD2 occurs, log shipping is interrupted
 until you configure it considering AG specifications.
@@ -191,7 +191,7 @@ fail over, complete the following steps:
 To do this, right-click on the AG and select the fail over option as shown in the
 following image:
 
-{{<image src="" title="" alt="">}}(Picture11.png)
+{{<image src="Picture11.png" title="" alt="">}}
 
 You can also accomplish this by using the following T-SQL commands to manually
 trigger an AG fail over:
@@ -204,7 +204,7 @@ trigger an AG fail over:
 
 After the fail over completes, the following window displays:
 
-{{<image src="" title="" alt="">}}(Picture12.png)
+{{<image src="Picture12.png" title="" alt="">}}
 
 #### Step 12
 
@@ -251,7 +251,7 @@ To do this, add the following code to the job step 1:
 
 The following image illustrates this:
 
-{{<image src="" title="" alt="">}}(Picture13.png)
+{{<image src="Picture13.png" title="" alt="">}}
 
 After making the preceding changes, notice that the LS backup job starts failing
 on secondary server but runs fine on the primary.
@@ -265,7 +265,7 @@ HEAD3 and disable the other set of jobs.
 
 The following image shows more details:
 
-{{<image src="" title="" alt="">}}(Picture14.png)
+{{<image src="Picture14.png" title="" alt="">}}
 
 Now, you have successfully configured log shipping on a database that is an
 existing part of an AlwaysOn AG. No matter which server is working as a primary

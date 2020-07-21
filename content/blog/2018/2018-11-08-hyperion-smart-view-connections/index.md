@@ -88,7 +88,7 @@ that can be viewed by all users.
 
 The following diagram shows the two connection types:
 
-{{<image src="" title="" alt="">}}(Picture1.png)
+{{<image src="Picture1.png" title="" alt="">}}
 
 In most cases, you find all your connections under **Shared Connections**.
 
@@ -117,7 +117,7 @@ To create a shared connection, perform the following steps:
 following image and select **Shared Connections**.
 3.	Log in by using a user ID and a password.
 
-{{<image src="" title="" alt="">}}(Picture2.png)
+{{<image src="Picture2.png" title="" alt="">}}
 
 ### Create private connections
 
@@ -132,7 +132,7 @@ perform the following steps:
 2.	In the Smart View panel, click the arrow next to the home as shown in the
 following image and select **Private Connections**.
 
-{{<image src="" title="" alt="">}}(Picture3.png)
+{{<image src="Picture3.png" title="" alt="">}}
 
 <ol start=3>
     <li> 	In the text box, shown in the following image, enter the URL, or the local
@@ -154,7 +154,7 @@ for the URL. The following list includes many of the most common URLs:
     </li>
 </ol>
 
-{{<image src="" title="" alt="">}}(Picture4.png)
+{{<image src="Picture4.png" title="" alt="">}}
 
 ### Conclusion
 

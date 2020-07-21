@@ -24,7 +24,7 @@ server to ensure high availability.
 
 The following diagram illustrates a high-availability model:
 
-{{<image src="" title="" alt="">}}(Picture1.png)
+{{<image src="Picture1.png" title="" alt="">}}
 
 To use this high-availability model, you need to perform the following tasks,
 which this blog covers in detail:
@@ -217,7 +217,7 @@ To continue the installation on node1, perform the following steps as prompted:
 12. On the **Managed Servers** page, add the Forms and Report servers and the
     managed servers on both node1 and node2 as shown in the following table:
 
-    {{<image src="" title="" alt="">}}(Picture2.png)
+    {{<image src="Picture2.png" title="" alt="">}}
 
 <ol start=13>
     <li>On <b>Clusters</b> page, keep the default values and click <b>Next</b>.</li>
@@ -227,14 +227,14 @@ To continue the installation on node1, perform the following steps as prompted:
     in the following table:</li>
 </ol>
 
-   {{<image src="" title="" alt="">}}(Picture3.png)
+   {{<image src="Picture3.png" title="" alt="">}}
 
 <ol start=17>
     <li>In <b>Coherence clusters</b>, keep the defaults and click <b>Next</b>.</li>
     <li>On the <b>Machine</b> Page, change the settings as shown in the following table:</li>
 </ol>
 
-   {{<image src="" title="" alt="">}}(Picture4.png)
+   {{<image src="Picture4.png" title="" alt="">}}
 
 <ol start=19>
     <li> On the <b>Assign Servers to Machine</b> page, add the <b>AdminServer</b>,
@@ -246,7 +246,7 @@ To continue the installation on node1, perform the following steps as prompted:
     entries, <b>forms2</b> and <b>ohs2</b>, as shown in the following table:</li>
 </ol>
 
-   {{<image src="" title="" alt="">}}(Picture5.png)
+   {{<image src="Picture5.png" title="" alt="">}}
 
 <ol start=23>
     <li>On the <b>OHS Server</b> page, select <b>System Component</b> <b>ohs1</b> and provide

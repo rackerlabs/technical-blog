@@ -107,7 +107,7 @@ Before trying to diagnose lag and potential bottlenecks in a GoldenGate
 environment, you should first understand the flow of data between the source and
 target databases, as shown in the following figure:
 
-{{<image src="" title="" alt="">}}(Picture1.png)
+{{<image src="Picture1.png" title="" alt="">}}
 
 Image source: [https://bit.ly/2OGREey](https://bit.ly/2OGREey)
 

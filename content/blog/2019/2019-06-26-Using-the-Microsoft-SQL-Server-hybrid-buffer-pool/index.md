@@ -77,7 +77,7 @@ option can be used with NTFS only.
 
 The following image illustrates DAX:
 
-{{<image src="" title="" alt="">}}(Picture1.png)
+{{<image src="Picture1.png" title="" alt="">}}
 
 *Source*: [https://docs.microsoft.com/en-us/windows-server/storage/storage-spaces/deploy-pmem](https://docs.microsoft.com/en-us/windows-server/storage/storage-spaces/deploy-pmem)
 

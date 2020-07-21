@@ -30,7 +30,7 @@ This blog explains how you can use Journey Builder to streamline the customer
 experience and internal processes at your B2B company.
 
 <!--more-->
-{{<image src="" title="" alt="">}}(Picture1.png)
+{{<image src="Picture1.png" title="" alt="">}}
 
 ### What is Journey Builder and how does it work?
 

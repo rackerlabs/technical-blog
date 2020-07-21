@@ -37,7 +37,7 @@ enabling TLS with EBS, you can avoid all of these problems.
 
 The following image illustrates the connection flow in EBS:
 
-{{<image src="" title="" alt="">}}(Picture1.png)
+{{<image src="Picture1.png" title="" alt="">}}
 
 Image source: Enabling TLS in Oracle E-Business Suite Release 12.1 (Doc ID 376700.1)
 
@@ -125,7 +125,7 @@ perform the following steps:
 Download the archive file onto your desktop, unzip the archive into new folder, and
 create a wallet. You should see two files, as shown in the following image:
 
-{{<image src="" title="" alt="">}}(Picture2.png)
+{{<image src="Picture2.png" title="" alt="">}}
 
 The file that starts with `a2e` is the main file, and the one that starts with
 `gd` is the intermediate file.
@@ -215,13 +215,13 @@ Perform the following steps to update the JDK **cacerts** file:
 
 Make the following TLS-related parameter changes in the XML file:
 
-{{<image src="" title="" alt="">}}(Picture3.png)
+{{<image src="Picture3.png" title="" alt="">}}
 
 </br>
 
 If you are using end-to-end TLS, make the following changes:
 
-{{<image src="" title="" alt="">}}(Picture4.png)
+{{<image src="Picture4.png" title="" alt="">}}
 
 </br>
 

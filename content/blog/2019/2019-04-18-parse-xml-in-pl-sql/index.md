@@ -34,7 +34,7 @@ functions provided by Oracle, such as `XMLELEMENT`, `XMLAGG`, `XMLTABLE`,
 
 The main built-in function used is `EXTRACT`, which is shown in the following image:
 
-{{<image src="" title="" alt="">}}(Picture1.png)
+{{<image src="Picture1.png" title="" alt="">}}
 
 *Image Source*: [https://docs.oracle.com/cd/B19306_01/server.102/b14200/img/extract_xml.gif](https://docs.oracle.com/cd/B19306_01/server.102/b14200/img/extract_xml.gif)
 

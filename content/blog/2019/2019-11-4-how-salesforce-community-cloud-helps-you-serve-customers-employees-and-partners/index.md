@@ -22,7 +22,7 @@ where members can communicate with each other and with the organization.
 
 <!--more-->
 
-{{<image src="" title="" alt="">}}(Picture1.png)
+{{<image src="Picture1.png" title="" alt="">}}
 
 Successful businesses rely on loyal customers, happy employees, and engaged
 partners. Loyal customers increase sales, satisfied employees ensure the business

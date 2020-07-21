@@ -75,7 +75,7 @@ sniffing software analyzes the captured data packet and presents the results to
 the network administrators in a user-friendly format so that they can interpret
 the data.
 
-{{<image src="" title="" alt="">}}(Picture1.png)
+{{<image src="Picture1.png" title="" alt="">}}
 
 *Image source:* [https://www.eccouncil.org/](https://www.eccouncil.org/)
 
@@ -139,7 +139,7 @@ The following roles use network analyzers:
 
 You can use filters to analyze captured data.
 
-{{<image src="" title="" alt="">}}(Picture2.png)
+{{<image src="Picture2.png" title="" alt="">}}
 
 *Image source:* [https://www.wireshark.org](https://www.wireshark.org)
 
@@ -160,7 +160,7 @@ secure information.
 
 The following image shows a Wireshark screen:
 
-{{<image src="" title="" alt="">}}(Picture3.png)
+{{<image src="Picture3.png" title="" alt="">}}
 
 *Image source:* [https://www.wireshark.org](https://www.wireshark.org)
 

@@ -38,7 +38,7 @@ redo log apply.
 
 The following image shows the incremental backup process:
 
-{{<image src="" title="" alt="">}}(Picture1.png)
+{{<image src="Picture1.png" title="" alt="">}}
 
 All the changes between the SCN of the original image copy and the SCN of the
 incremental backup are applied to the image.

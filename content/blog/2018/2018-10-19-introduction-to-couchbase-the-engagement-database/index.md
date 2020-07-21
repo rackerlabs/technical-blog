@@ -40,7 +40,7 @@ announced a merger and called the merged company Couchbase, Inc.
 This section describes the differences between three types of databases,
 transactional, analytic, and engagement databases, shown in the following image:
 
-{{<image src="" title="" alt="">}}(Picture1.png)
+{{<image src="Picture1.png" title="" alt="">}}
 
 Image source: [https://resources.couchbase.com/c/engagement-database-whitepaper?x=49kQ7H](https://resources.couchbase.com/c/engagement-database-whitepaper?x=49kQ7H)
 
@@ -117,7 +117,7 @@ synchronization.
 
 The following image shows a Couchbase Server cluster:
 
-{{<image src="" title="" alt="">}}(Picture2.png)
+{{<image src="Picture2.png" title="" alt="">}}
 
 Image source: [https://developer.couchbase.com/documentation/server/4.0/architecture/architecture-intro.html](https://developer.couchbase.com/documentation/server/4.0/architecture/architecture-intro.html)
 

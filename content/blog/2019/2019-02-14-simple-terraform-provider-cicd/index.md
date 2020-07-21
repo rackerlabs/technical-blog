@@ -117,11 +117,11 @@ Now just run your Terraform init/apply (don't forget to set a GITHUB_TOKEN first
 
 When you're done, you should now have a CodePipeline build going:
 
-{{<image src="" title="" alt="">}}(code-pipeline.png)
+{{<image src="code-pipeline.png" title="" alt="">}}
 
 And when that's done, you'll have the binaries in S3:
 
-{{<image src="" title="" alt="">}}(s3.png)
+{{<image src="s3.png" title="" alt="">}}
 
 Now just transfer the related binary to whatever environment you need it in!
 
