@@ -16,14 +16,16 @@ code {
   font-family: 'source-code-regular', 'Monaco', 'Courier New', monospace;
   font-style: normal;
   font-weight: 400;
+  span {
+    color: #e0e0d7 !important;
+  }
 }
 p, li {
   code {
-    background: #f2f2f2;
     border-radius: 2px;
     color: #1f5b83;
     padding: 0 .2em;
-    font-family: source-code-regular,Monaco,'Courier New',monospace;
+    font-family: 'source-code-regular',Monaco,'Courier New',monospace;
     font-style: normal;
     font-weight: 400;
 }
