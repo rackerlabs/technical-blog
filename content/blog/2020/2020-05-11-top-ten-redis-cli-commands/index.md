@@ -24,7 +24,7 @@ around most of the client’s functionality and features.
 
 <!--more-->
 
-{{<image src="" title="" alt="">}}(Picture1.png)
+{{<image src="Picture1.png" title="" alt="">}}(Picture1.png)
 
 Here are the top ten Redis commands:
 

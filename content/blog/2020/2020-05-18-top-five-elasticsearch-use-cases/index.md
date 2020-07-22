@@ -36,7 +36,7 @@ ObjectRocket platform.
 
 <!--more-->
 
-{{<image src="" title="" alt="">}}(Picture1.png)
+{{<image src="Picture1.png" title="" alt="">}}
 
 ### #1 – Logging and log analysis
 

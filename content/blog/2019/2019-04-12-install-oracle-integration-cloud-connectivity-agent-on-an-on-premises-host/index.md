@@ -73,7 +73,7 @@ Oracle Integration Cloud Service:
     <li>Click <b>Download</b> and then click <b>Connectivity Agent</b>.</li>
 </ol>
 
-{{<image src="Picture2.png" title="" alt="">}
+{{<image src="Picture2.png" title="" alt="">}}
 
 <ol start=5>
     <li>Move the downloaded installation software

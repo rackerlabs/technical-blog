@@ -27,7 +27,7 @@ and which should you scrub? How can your company decide?
 
 <!--more-->
 
-{{<image src="" title="" alt="">}}(Picture1.png)
+{{<image src="Picture1.png" title="" alt="">}}
 
 Rackspace has helped many clients implement and customize Salesforce, giving us
 a unique view on best practices and common mistakes,

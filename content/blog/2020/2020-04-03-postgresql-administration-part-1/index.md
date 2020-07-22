@@ -52,7 +52,7 @@ Unsurprisingly, PostgreSQL serves as the open-source relational database of
 choice for many people and organizations because of its powerful add-ons such
 as the popular PostGIS geospatial database extender.
 
-{{<image src="" title="" alt="">}}(Picture1.png)
+{{<image src="Picture1.png" title="" alt="">}}
 
 *Image Source*: [https://postgresql-database.blogspot.com/2013/08/postgresql-architecture.html](https://postgresql-database.blogspot.com/2013/08/postgresql-architecture.html)
 

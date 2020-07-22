@@ -73,7 +73,7 @@ response generated. For example, attackers can use an open memcached service to
 flood a victim by an amplification factor of up to 51,000 times the request size,
 as shown in the following table:
 
-{{<image src="" title="" alt="">}}(Picture1.png)
+{{<image src="Picture1.png" title="" alt="">}}
 
 *Image source*:[https://www.us-cert.gov/ncas/alerts/TA14-017A](https://www.us-cert.gov/ncas/alerts/TA14-017A)
 

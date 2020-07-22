@@ -86,7 +86,7 @@ processing is divided and also takes place on the storage tier.
 The following steps comprise traditional SQL processing, as shown in the
 following diagram:
 
-{{<image src="Picture1.png" title="" alt="">}
+{{<image src="Picture1.png" title="" alt="">}}
 
 1. A client submits a query.
 2. This action triggers a full table scan.

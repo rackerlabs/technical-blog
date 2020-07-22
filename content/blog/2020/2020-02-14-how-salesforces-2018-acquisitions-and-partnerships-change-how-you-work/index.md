@@ -23,7 +23,7 @@ already booming brand.
 
 <!--more-->
 
-{{<image src="" title="" alt="">}}(Picture1.png)
+{{<image src="Picture1.png" title="" alt="">}}
 
 It can be tough to stay on top of significant changes and how they might affect
 your organization. At Rackspace, we keep close tabs on everything Salesforce,

@@ -23,7 +23,7 @@ at every step along the path from lead to loyalty.
 
 <!--more-->
 
-{{<image src="" title="" alt="">}}(Picture1.png)
+{{<image src="Picture1.png" title="" alt="">}}
 
 You might feel overwhelmed by the number and variety of options your marketing
 automation platform offers. From qualifying and nurturing your leads to

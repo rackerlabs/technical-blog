@@ -55,11 +55,11 @@ steps work for other OSs.
 Installation packages differ for each OS, so download the correct package for
 your OS.
 
-{{<image src="" title="" alt="">}}(Picture1.png)
+{{<image src="Picture1.png" title="" alt="">}}
 
 2. Run the installer (`VSCodeUserSetup-{version}.exe`).
 
-{{<image src="" title="" alt="">}}(Picture2.png)
+{{<image src="Picture2.png" title="" alt="">}}
 
 The system installs VS Code in **C:\users\{username}\AppData\Local\Programs\Microsoft VS Code**.
 
@@ -72,12 +72,12 @@ Use the following steps to configure VS Code:
 The VS Code installation process puts a shortcut icon for VS Code on desktop as
 shown in the following image:
 
-{{<image src="" title="" alt="">}}(Picture3.png)
+{{<image src="Picture3.png" title="" alt="">}}
 
 Click on the icon to launch VS Code. This action opens an empty VS Code
 home page for the default configuration.
 
-{{<image src="" title="" alt="">}}(Picture4.png)
+{{<image src="Picture4.png" title="" alt="">}}
 
 #### 2. Install extensions
 
@@ -113,13 +113,13 @@ and Terraform extensions:
 To install the extension in VS Code, hover over to the extension tab given in
 VS Code or press `CTRL+SHIFT+X.`
 
-{{<image src="" title="" alt="">}}(Picture5.png)
+{{<image src="Picture5.png" title="" alt="">}}
 
 In the **Search** tab, search for each of the preceding extensions and install
 them one at a time. When the installations complete, the extension tab should be
 similar to the following image:
 
-{{<image src="" title="" alt="">}}(Picture6.png)
+{{<image src="Picture6.png" title="" alt="">}}
 
 Click on each extension to verify it is enabled.
 
@@ -127,7 +127,7 @@ Click on each extension to verify it is enabled.
 
 Create a test project in Azure DevOps and clone that project in VS Code.
 
-{{<image src="" title="" alt="">}}(Picture7.png)
+{{<image src="Picture7.png" title="" alt="">}}
 
 To clone this open project, click on the three dots on the right-hand side. A
 prompt asks you to clone it the project in an IDE, defaulting to VS Code.
@@ -137,7 +137,7 @@ Click on the block and follow the pop-up instructions to clone the entire projec
 When the project displays in VS Code, it should appear similar to the following
 image:
 
-{{<image src="" title="" alt="">}}(Picture8.png)
+{{<image src="Picture8.png" title="" alt="">}}
 
 ### Overview of the Vscode user interface.
 
@@ -152,7 +152,7 @@ explore them and see their features.
 
 The following image shows highlighted icons that you can use in your daily tasks:
 
-{{<image src="" title="" alt="">}}(Picture9.png)
+{{<image src="Picture9.png" title="" alt="">}}
 
 - **Green**: Change the toggle view mode.
 - **Blue**: Commit changes.
@@ -163,7 +163,7 @@ The following image shows highlighted icons that you can use in your daily tasks
 You can check your project and repository synchronization status in the VS Code
 status bar, as shown in the following image:
 
-{{<image src="" title="" alt="">}}(Picture10.png)
+{{<image src="Picture10.png" title="" alt="">}}
 
 Notice that the project name is **Test-Project** and has no bugs at this time. I'm
 working in the **master** branch. Also, the files have no bugs, as indicated by
@@ -171,9 +171,9 @@ the empty synchronization symbol.
 
 You can run PowerShell with Git commands in the VS Code IDE terminal.
 
-{{<image src="" title="" alt="">}}(Picture11.png)
+{{<image src="Picture11.png" title="" alt="">}}
 
-{{<image src="" title="" alt="">}}(Picture12.png)
+{{<image src="Picture12.png" title="" alt="">}}
 
 If you do not want to use the graphical Git operations (shown in the highlighted
 squares in the preceding screenshot), you can install and run Git BASH to open

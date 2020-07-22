@@ -305,7 +305,7 @@ with the SA account by using the password set from Azure Key Vault:
     mssql      ClusterIP      None         <none>        1433/TCP         20m
     mssql-lb   LoadBalancer   10.0.7.128   40.119.2.73   1433:31264/TCP   20m
 
-{{<image src="" title="" alt="">}}(ssms.png)
+{{<image src="ssms.png" title="" alt="">}}
 
 Using Azure Key Vault with AKS has never been easier. I hope this demo shows some possibilities of
 things that you can accomplish easily with the Azure Key Vault provider. 

@@ -136,7 +136,7 @@ host to avoid this issue.
 **Name**: RaxAutomation|Exclude
 **Value**: Monitoring,Passport,Antimalware
 
-{{<image src="" title="" alt="">}}(Picture5.png)
+{{<image src="Picture5.png" title="" alt="">}}
 
 #### Exchange attribute synchronization considerations
 

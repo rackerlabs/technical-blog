@@ -146,7 +146,7 @@ supporting databases. However, DBaaS provides so many more benefits, including:
 With automatic provisioning, ObjectRocket has your database production-ready in
 minutes.
 
-{{<image src="" title="" alt="">}}(Picture1.png)
+{{<image src="Picture1.png" title="" alt="">}}
 
 ### Conclusion
 

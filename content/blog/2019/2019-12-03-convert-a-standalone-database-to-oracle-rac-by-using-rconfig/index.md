@@ -41,7 +41,7 @@ database.
 
 The following image shows a sample **ConvertToRAC_AdminManaged.xml** file:
 
-{{<image src="" title="" alt="">}}(Picture1.png)
+{{<image src="Picture1.png" title="" alt="">}}
 
 ### Prerequisites for using rconfig
 
@@ -64,7 +64,7 @@ Use the following steps to convert your standalone database to RAC.
 
 You need to set the following parameters in **ConvertToRAC_AdminManaged.xml**:
 
-{{<image src="" title="" alt="">}}(Picture2.png)
+{{<image src="Picture2.png" title="" alt="">}}
 
 The `convert verify` option in **ConvertToRAC.xml** has three options:
 

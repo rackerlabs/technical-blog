@@ -62,7 +62,7 @@ on this system, and this code checks that the hostname's destination addresses
 returned are on the same network as this system. If they are not on the same
 network, the addresses are considered equal.
 
-{{<image src="" title="" alt="">}}(Picture1.png)
+{{<image src="Picture1.png" title="" alt="">}}
 
 The following samples illustrate what this means:
 

@@ -122,7 +122,7 @@ following code to update the main production table from the local table:
 The following image shows you how to load data from an external table to a
 regular table:
 
-{{<image src="" title="" alt="">}}(Picture1.png)
+{{<image src="Picture1.png" title="" alt="">}}
 
 *Image Source*: [https://dba.fyicenter.com/faq/oracle/Load-Data-from-External-Tables.html](https://dba.fyicenter.com/faq/oracle/Load-Data-from-External-Tables.html)
 

@@ -114,7 +114,7 @@ workers. For more recommendations from Microsoft, check out
 We recommend that you always validate your host pool sizing in a pilot
 deployment before rolling it out to production.
 
-{{<image src="" title="" alt="">}}(Picture1.png)
+{{<image src="Picture1.png" title="" alt="">}}
 
 #### Personal desktop experience
 
@@ -129,7 +129,7 @@ configurations. The following table provides the Microsoft description of the
 type of VM&mdash; it’s up to you to find ways to apply the hardware to specific
 WVD use cases.
 
-{{<image src="" title="" alt="">}}(Picture2.png)
+{{<image src="Picture2.png" title="" alt="">}}
 
 See the following links for more information on the VM types:
 
@@ -161,7 +161,7 @@ how the client displays the available applications to the users. Some major
 benefits are that remote apps are not limited to Microsoft or Office 365
 applications, and the profile data is kept inside the WVD system.
 
-{{<image src="" title="" alt="">}}(Picture3.png)
+{{<image src="Picture3.png" title="" alt="">}}
 
 #### MSIX App Attach–in preview
 

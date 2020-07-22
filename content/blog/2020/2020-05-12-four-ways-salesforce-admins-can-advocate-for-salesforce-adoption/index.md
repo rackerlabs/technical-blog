@@ -22,7 +22,7 @@ Here are some ways you can improve Salesforce adoption in your company.
 
 <!--more-->
 
-{{<image src="" title="" alt="">}}(photo1.png)
+{{<image src="photo1.png" title="" alt="">}}
 
 ### Figure out why people aren’t buying in
 

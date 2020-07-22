@@ -23,7 +23,7 @@ you haven't listened to what they have to say first.
 
 <!--more-->
 
-{{<image src="" title="" alt="">}}(Picture1.png)
+{{<image src="Picture1.png" title="" alt="">}}
 
 That's where *social listening* comes in. Social listening differs from social
 monitoring by offering a more nuanced, contextual look at what people are saying

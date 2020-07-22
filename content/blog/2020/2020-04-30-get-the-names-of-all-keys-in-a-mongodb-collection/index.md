@@ -28,7 +28,7 @@ collection.
 
 <!--more-->
 
-{{<image src="" title="" alt="">}}(Picture1.png)
+{{<image src="Picture1.png" title="" alt="">}}
 
 Many MongoDB-as-a-Service companies, including [ObjectRocket](https://www.objectrocket.com/),
 offer an easy way to do this right in the user interface (UI). Seasoned MongoDB

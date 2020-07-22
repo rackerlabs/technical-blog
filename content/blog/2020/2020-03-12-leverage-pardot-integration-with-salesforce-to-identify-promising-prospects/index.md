@@ -24,7 +24,7 @@ customer’s level of engagement.
 
 <!--more-->
 
-{{<image src="" title="" alt="">}}(Picture1.png)
+{{<image src="Picture1.png" title="" alt="">}}
 
 Pardot has a variety of automation tools, including drip campaigns, where
 marketing teams can send a programmed series of emails to prospects and leads.

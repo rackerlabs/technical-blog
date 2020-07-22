@@ -39,7 +39,7 @@ time to an acceptable threshold value with higher data protection.
 
 The following image shows a sample of Far Sync architecture:
 
-{{<image src="" title="" alt="">}}(Picture1.png)
+{{<image src="Picture1.png" title="" alt="">}}
 
 *Image Source*: [https://www.oracle.com/technetwork/database/availability/farsync-2267608.pdf](https://www.oracle.com/technetwork/database/availability/farsync-2267608.pdf)
 

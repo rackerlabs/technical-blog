@@ -25,7 +25,7 @@ continues to expand?
 
 <!--more-->
 
-{{<image src="" title="" alt="">}}(Picture1.png)
+{{<image src="Picture1.png" title="" alt="">}}
 
 With features that act as guardrails on your sales process,
 [Salesforce&reg; CPQ](https://www.salesforce.com/products/cpq/overview/)

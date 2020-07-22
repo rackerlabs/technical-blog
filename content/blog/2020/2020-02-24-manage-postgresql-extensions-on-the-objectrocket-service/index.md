@@ -32,7 +32,7 @@ a wide array of additional capabilities to Postgres.
 
 <!--more-->
 
-{{<image src="" title="" alt="">}}(Picture1.png)
+{{<image src="Picture1.png" title="" alt="">}}
 
 We want to provide you with all of the tools you need to operate production
 databases on the ObjectRocket platform, so we’ve recently added the ability to
@@ -60,9 +60,9 @@ Because we regularly add extensions, running the query always provides the most
 up-to-date list. Following is the current list of both the available and allowed
 extensions on the ObjectRocket service:
 
-{{<image src="" title="" alt="">}}(Picture2.png)
+{{<image src="Picture2.png" title="" alt="">}}
 
-{{<image src="" title="" alt="">}}(Picture3.png)
+{{<image src="Picture3.png" title="" alt="">}}
 
 ### Loading extensions
 

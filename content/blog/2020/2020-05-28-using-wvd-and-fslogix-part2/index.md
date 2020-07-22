@@ -45,7 +45,7 @@ of the user's profile in a remote virtual hard disk (VHD), user profiles can be
 mounted instantly regardless of their size, and the user doesn’t notice changes
 to their profile if they move between hosts when they log off and back on.
 
-{{<image src="" title="" alt="">}}(Picture4.png)
+{{<image src="Picture4.png" title="" alt="">}}
 
 1.	**Client connection**: The client connects to a Remote Desktop Gateway service
    at [https://rdweb.wvd.microsoft.com](https://rdweb.wvd.microsoft.com).

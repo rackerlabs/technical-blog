@@ -22,7 +22,7 @@ left motivated and re-energized in my Salesforce&reg; career.
 
 <!--more-->
 
-{{<image src="witness-success.png" title="" alt="">}
+{{<image src="witness-success.png" title="" alt="">}}
 
 WITness Success is a Women In Tech (WIT) event for everyone in the Salesforce
 ecosystem worldwide. This event brings together women of all backgrounds to

@@ -188,7 +188,7 @@ log in to the `node-2` Couchbase Web Console as `Administrator` and repeat Steps
 The following image shows the Couchbase Web Console after the upgrade and
 recovery of `node-1` is complete:
 
-{{<image src="Picture10-1.png" title="" alt="">}
+{{<image src="Picture10-1.png" title="" alt="">}}
 
 Note the following two new options on the left side menu, which are new in
 Version 5.5.0.

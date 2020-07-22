@@ -24,7 +24,7 @@ the biggest shopping season of the year.
 
 <!--more-->
 
-{{<image src="" title="" alt="">}}(picture1.png)
+{{<image src="picture1.png" title="" alt="">}}
 
 [Fifty-six percent of marketers](https://www.marketingcharts.com/brand-related-82815)
 cited retail personalization as the most exciting trend of the year. That means

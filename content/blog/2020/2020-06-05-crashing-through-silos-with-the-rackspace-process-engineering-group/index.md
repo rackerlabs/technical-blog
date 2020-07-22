@@ -113,7 +113,7 @@ Data Center Operations, and PEG.
 
 The three stages of push-button automation:
 
-{{<image src="" title="" alt="">}}(Picture3.png)
+{{<image src="Picture3.png" title="" alt="">}}
 
 When we closed the maintenance window, the following results occurred:
 

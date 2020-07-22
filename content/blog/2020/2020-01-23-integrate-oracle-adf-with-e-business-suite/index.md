@@ -85,7 +85,7 @@ Download the software from the following URL:
 
 [https://www.oracle.com/middleware/technologies/weblogic-server-installers-downloads.html](https://www.oracle.com/middleware/technologies/weblogic-server-installers-downloads.html)
 
-{{<image src="" title="" alt="">}}(Picture1.png)
+{{<image src="Picture1.png" title="" alt="">}}
 
 To install the WLS, use the following steps:
 
@@ -121,7 +121,7 @@ Download the software from the following URL:
 
 [https://www.oracle.com/tools/downloads/application-development-framework-downloads.html](https://www.oracle.com/tools/downloads/application-development-framework-downloads.html)
 
-{{<image src="" title="" alt="">}}(Picture2.png)
+{{<image src="Picture2.png" title="" alt="">}}
 
 To install the ADF Runtime, use the following steps:
 
@@ -229,7 +229,7 @@ following steps:
    **ascp_domain->Services->Persistent Stores -> New -> CreateFileStore**.
    The following **Create a File Store screen** displays:
 
-{{<image src="" title="" alt="">}}(Picture3.png)
+{{<image src="Picture3.png" title="" alt="">}}
 
 <ol start=5>
     <li>Enter mds-ascp-repos in the <b>Name</b> field.</li>

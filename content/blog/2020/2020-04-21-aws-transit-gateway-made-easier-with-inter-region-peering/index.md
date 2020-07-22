@@ -53,7 +53,7 @@ Amazon introduced AWS VPC peering, which makes this much easier. However, it did
 come with its limitations. One of the main ones is that connectivity is not
 transitive between VPCs.
 
-{{<image src="" title="" alt="">}}(Picture1.png)
+{{<image src="Picture1.png" title="" alt="">}}
 
 For example, in the preceding diagram, VPC A can talk to both B and C, but B
 and C cannot talk to each other. If B and C need to communicate to each other,
@@ -64,7 +64,7 @@ Eventually, you need to manage the connectivity between each VPC without having
 a central mechanism to route between VPCs. You can easily end up with a web
 similar to the one shown in the following image:
 
-{{<image src="" title="" alt="">}}(Picture2.png)
+{{<image src="Picture2.png" title="" alt="">}}
 
 ### Solution
 
@@ -75,7 +75,7 @@ Enter AWS Transit Gateway (TGW). TGW lets you do the following:
 - Manage VPCs that are in a different account than yours.
 - Create a hub and spoke network, as shown in the following diagram:
 
-{{<image src="" title="" alt="">}}(Picture3.png)
+{{<image src="Picture3.png" title="" alt="">}}
 
 Initially, TGW didn't support inter-region peering, which was a major concern,
 but Amazon resolved this problem and added it to the feature list. Now, you
@@ -92,7 +92,7 @@ The goal is that you should be able to ping the instances from:
 •	VPC A --> VPC B
 •	VPC C --> VPC D
 
-{{<image src="" title="" alt="">}}(Picture4.png)
+{{<image src="Picture4.png" title="" alt="">}}
 
 ### Deployment
 
@@ -104,18 +104,18 @@ Use the following steps to deploy TGW.
 
 Sign in to your AWS account, go to the VPC console, and select **Transit Gateway**.
 
-{{<image src="" title="" alt="">}}(Picture5.png)
+{{<image src="Picture5.png" title="" alt="">}}
 
 #### 2. Create the TGW
 
 Select **Create Transit Gateway**. Enter a name for the TGW. For this test,
 leave the rest as it is, and click **Create Transit Gateway**.
 
-{{<image src="" title="" alt="">}}(Picture6.png)
+{{<image src="Picture6.png" title="" alt="">}}
 
 It takes a few minutes for the TGW to become available.
 
-{{<image src="" title="" alt="">}}(Picture7.png)
+{{<image src="Picture7.png" title="" alt="">}}
 
 
 #### 3. Configure VPC A
@@ -134,14 +134,14 @@ d.	Select all the subnets to which you want TGW to route traffic.
 
 You must select at least one subnet and can select only one subnet per Availability Zone.
 
-{{<image src="" title="" alt="">}}(Picture8.png)
+{{<image src="Picture8.png" title="" alt="">}}
 
 #### 4. Configure VPC B
 
 Create a second attachment for VPC B following the preceding VPC A steps for VPC
 B. You now have two TGW attachments.
 
-{{<image src="" title="" alt="">}}(Picture9.png)
+{{<image src="Picture9.png" title="" alt="">}}
 
 #### 5. Configure route tables
 
@@ -149,7 +149,7 @@ Go to **Transit Gateway Route Tables** from the left-hand side to see the defaul
 route table. Notice two routes in the **Propagation** tab. Propagation occurred
 automatically based on the TGW you created in the first step.
 
-{{<image src="" title="" alt="">}}(Picture10.png)
+{{<image src="Picture10.png" title="" alt="">}}
 
 Let's try and ping the instance in VPC B from VPC A. What happens?
 
@@ -162,13 +162,13 @@ you need to set the returning destination route back to VPC A.
 
 The target is the TGW ID.
 
-{{<image src="" title="" alt="">}}(Picture11.png)
+{{<image src="Picture11.png" title="" alt="">}}
 
 Now, run the ping test again, and you should get a response. Well done!
 
 This completes the connection highlighted in green in the following diagram:
 
-{{<image src="" title="" alt="">}}(Picture12.png)
+{{<image src="Picture12.png" title="" alt="">}}
 
 #### 6. Configure inter-region TGW
 
@@ -177,12 +177,12 @@ to use the **Peering Connection** type to create a new TGW attachment to the TGW
 based in the second region, North Virginia. The following diagram shows the
 **TGW ID** I created for the outside North Virginia region in this demo:
 
-{{<image src="" title="" alt="">}}(Picture13.png)
+{{<image src="Picture13.png" title="" alt="">}}
 
 Go to the **n.virginia** TGW attachment console and notice a peering request in
 a pending state. Go ahead and accept the request.
 
-{{<image src="" title="" alt="">}}(Picture14.png)
+{{<image src="Picture14.png" title="" alt="">}}
 
 #### 7. Configure VPC C and D attachments
 
@@ -191,9 +191,9 @@ regions with the attachment type: **VPC**.
 
 The following diagrams shows the VPC C and D details:
 
-{{<image src="" title="" alt="">}}(Picture15.png)
+{{<image src="Picture15.png" title="" alt="">}}
 
-{{<image src="" title="" alt="">}}(Picture16.png)
+{{<image src="Picture16.png" title="" alt="">}}
 
 Use the following steps to configure the attachments:
 
@@ -203,11 +203,11 @@ inter-domain routing (CIDR) range of VPC D in **n.virginia** region.
 NOTE: Make sure to select the correct attachment that references the *peering*
 and not the *VPC attachment* type.
 
-{{<image src="" title="" alt="">}}(Picture17.png)
+{{<image src="Picture17.png" title="" alt="">}}
 
 b. Do the same action in the **n.virginia** region to route traffic to VPC C.
 
-{{<image src="" title="" alt="">}}(Picture18.png)
+{{<image src="Picture18.png" title="" alt="">}}
 
 #### 8. Configure the route table
 

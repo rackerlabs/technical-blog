@@ -38,7 +38,7 @@ ObjectRocket service.
 
 <!--more-->
 
-{{<image src="" title="" alt="">}}(Picture1.png)
+{{<image src="Picture1.png" title="" alt="">}}(Picture1.png)
 
 ### No-fuss backups
 
@@ -48,7 +48,7 @@ worth of backups at all times. You can view your backup times and the status of
 previous in our dashboard or by using the user interface (UI), as shown in the
 following image:
 
-{{<image src="" title="" alt="">}}(Picture2.png)
+{{<image src="Picture2.png" title="" alt="">}}
 
 ### Multiple restore options
 
@@ -79,16 +79,16 @@ minute so that we can see the point to which we restored.
 The following image shows the database, and you can see that the last timestamp
 was at 16:00:58 (UTC).
 
-{{<image src="" title="" alt="">}}(Picture3.png)
+{{<image src="Picture3.png" title="" alt="">}}
 
 To restore to the latest data in this database, provide the instance ID of the
 source instance to a new instance create call, as shown in the following image:
 
-{{<image src="" title="" alt="">}}(Picture4.png)
+{{<image src="Picture4.png" title="" alt="">}}
 
 After the instance restore completes, connect and check the last timestamp.
 
-{{<image src="" title="" alt="">}}(Picture5.png)
+{{<image src="Picture5.png" title="" alt="">}}
 
 As you can see, all of the data is there, and the new Postgres instance is fully
 caught up to the source Postgres instance.
@@ -104,28 +104,28 @@ backups, notice that each backup has a unique ID that you can use to identify
 it. In the following image, you can see that the system took the backup at
 15:36:15 (UTC):
 
-{{<image src="" title="" alt="">}}(Picture6.png)
+{{<image src="Picture6.png" title="" alt="">}}
 
 To restore to this exact backup, add the backup ID to the create call.
 
-{{<image src="" title="" alt="">}}(Picture7.png)
+{{<image src="Picture7.png" title="" alt="">}}
 
 After the instance loads, notice that the backup has data and timestamps from
 before the backup time of 15:36:15.
 
-{{<image src="" title="" alt="">}}(Picture8.png)
+{{<image src="Picture8.png" title="" alt="">}}
 
 #### Restore to a specific time
 
 To specify the time you’d like to restore from, provide the source instance ID
 and the time to restore to, as shown in the following image:
 
-{{<image src="" title="" alt="">}}(Picture9.png)
+{{<image src="Picture9.png" title="" alt="">}}
 
 In this case, I want to restore to 15:53:00. After the restore completes, you
 can see that the data only exists up to that time.
 
-{{<image src="" title="" alt="">}}(Picture10.png)
+{{<image src="Picture10.png" title="" alt="">}}
 
 If you look back at the preceding images, you might notice that we did have
 another timestamp at 15:53:00, which occurred at just over 0.8 seconds

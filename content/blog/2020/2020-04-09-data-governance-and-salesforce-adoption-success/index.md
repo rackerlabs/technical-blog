@@ -25,7 +25,7 @@ clean and accurate data.
 
 <!--more-->
 
-{{<image src="" title="" alt="">}}(Picture1.png)
+{{<image src="Picture1.png" title="" alt="">}}
 
 
 Having bad data can lead to failed implementations or costly resources to fix

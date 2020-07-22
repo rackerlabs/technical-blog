@@ -22,7 +22,7 @@ its AI platform, in 2016. The tool has been becoming more robust ever since.
 
 <!--more-->
 
-{{<image src="" title="" alt="">}}(photo1.png)
+{{<image src="photo1.png" title="" alt="">}}
 
 
 Einstein AI technology goes beyond helping just a single
