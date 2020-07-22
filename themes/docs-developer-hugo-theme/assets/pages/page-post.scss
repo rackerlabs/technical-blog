@@ -76,7 +76,9 @@
     font-weight: 600;
     line-height: normal;
   }
-
+  a[data-category="aws"], a[data-category="osad"] {
+    letter-spacing: -1.5px;
+  }
   .post--category {
     letter-spacing: 0;
 
@@ -171,10 +173,23 @@
         height: auto;
         max-width: 50%;
       }
+      .image-center {
+        margin: 0 0 1em 1em;
+        height: auto;
+        max-width: 50%;
+      }
       img {
         margin: 0 0 1em 1em;
         height: auto;
         max-width: 100%;
+      }
+    }
+    ol {
+      list-style-type: decimal;
+      li {
+        margin-left: 10px;
+        list-style-type: decimal;
+        font-size: 1.25rem;
       }
     }
   }

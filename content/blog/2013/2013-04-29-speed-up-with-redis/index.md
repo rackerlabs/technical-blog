@@ -9,7 +9,7 @@ categories: []
 slug: 'speed-up-with-redis' 
 ---
 
-<img class='image-right' src='/img/2013-04-29-speed-up-with-redis/redis_logo.png'/>
+<img class='image-right' src='/blog/speed-up-with-redis/redis_logo.png'/>
 
 Adding Redis to your application stack is a fantastic way to gain speed with existing applications. Many of our customers aren't running the latest and greatest new hotness NoSQL-using cloud thing. A lot of them port over a full stack of an existing applications that once only existed on bare metal servers, or use a hybrid environment with a big MySQL configuration on bare metal with web/app servers in the cloud.
 

@@ -247,7 +247,8 @@ ls .\SOFTWARE\Microsoft\Windows\CurrentVersion
 
 ### Quick reference
 
-Bash/Linux | PowerShellslug: ''   --- | ---
+Bash/Linux | PowerShell
+--- | ---
 ls | ls
 mv | mv
 cp | cp
@@ -265,6 +266,8 @@ diff | diff
 kill | kill
 time | measure-command
 if [condition] then something fi | if (condition) { something }
+-e file | Test-Path file
+for ((i=0; i < 10; i++)) ;  do  echo $i ; done | for ($i=0;$i -lt 10; $i++) { echo $i }
 -e file | Test-Path file
 for ((i=0; i < 10; i++)) ;  do  echo $i ; done | for ($i=0;$i -lt 10; $i++) { echo $i }
 

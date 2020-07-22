@@ -10,6 +10,8 @@ metaDataFormat = "yaml"
 paginate = 10
 pluralizeListTitles = false
 relativeURLs = false
+disablePathToLower = true
+uglyURLs = false
 title = "Rackspace Developer Center"
 [markup]
 defaultMarkdownHandler = "blackfriday"
@@ -39,7 +41,6 @@ autoHeadingIDType = "github"
 hardWraps = false
 unsafe = false
 xhtml = false
-uglyURLs = false
 
 [permalinks]
     blog = "/blog/:slug"
