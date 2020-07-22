@@ -14,7 +14,7 @@ metaTitle: "{{ slicestr .Name 11  | title | humanize }}"
 metaDescription: "."
 ogTitle: "{{ slicestr .Name 11  | title | humanize }}"
 ogDescription: "."
-slug: '' 
+slug: '{{ slicestr .Name 11  | title | humanize }}' 
 
 ---
 
@@ -27,7 +27,7 @@ Replace with short intro sentence or two.
 The following line shows how to add an image.  If you have no image, remove it. 
 If you have an image, add it to the post directory and replace the image name in the following line.
 
-![](Picture1.png)
+{{<image src="Picture1.png" title="" alt="">}}
 
 ### Conclusion
 

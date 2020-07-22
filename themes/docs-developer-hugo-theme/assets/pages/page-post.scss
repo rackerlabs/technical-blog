@@ -228,7 +228,7 @@
       }
 
       &::after {
-        content: "RACKER";
+        content: " ";
         font-size: 12px;
         width: 100%;
       }
@@ -356,7 +356,7 @@
 }
 
 .post-avatar::after {
-  content: 'RACKER';
+  content: '';
   font-size: 10px;
   width: 100%;
   background: rgba(235, 0, 0, .8);
@@ -388,5 +388,14 @@
     -webkit-overflow-scrolling: touch;
     padding-bottom: .5em;
     color: $color-white !important;
+  }
+}
+
+.figure {
+  img {
+    display: block;
+  }
+  span {
+    display: block;
   }
 }
