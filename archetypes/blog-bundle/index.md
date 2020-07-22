@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "{{ replace .Name "-" " " | title }}"
+title: "{{ slicestr .Name 11  | title | humanize }}"
 date: {{ .Date }}
 comments: true
 author: 
@@ -10,9 +10,9 @@ published: true
 authorIsRacker: true
 categories:
     - General
-metaTitle: "{{ replace .Name "-" " " | title }}"
+metaTitle: "{{ slicestr .Name 11  | title | humanize }}"
 metaDescription: "."
-ogTitle: "{{ replace .Name "-" " " | title }}"
+ogTitle: "{{ slicestr .Name 11  | title | humanize }}"
 ogDescription: "."
 slug: '' 
 
