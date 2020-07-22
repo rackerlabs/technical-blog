@@ -24,7 +24,10 @@ Replace with short intro sentence or two.
 
 ### Overview
 
-<!--![](Picture1.png)-->
+The following line shows how to add an image.  If you have no image, remove it. 
+If you have an image, add it to the post directory and replace the image name in the following line.
+
+![](Picture1.png)
 
 ### Conclusion
 
