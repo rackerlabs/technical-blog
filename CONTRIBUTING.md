@@ -83,7 +83,7 @@ We encourage a triangular workflow in GitHub as a best practice.
 1. Create a new directory within ```/content/blog/YYYY/``` that contains the inital ```.index.md``` 
    by using the following command:
   
-   ```hugo new --kind blog-bundle blog/YYYY-MM-DD-title-of-post```
+  ```hugo new --kind blog-bundle blog/YYYY/YYYY-MM-DD-title-of-post```
 
 **Note:** If your post has images,  place the image files within the newly created post folder.
 
