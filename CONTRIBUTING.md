@@ -1,4 +1,4 @@
-# Contributing to our Blog
+# Contribute to the Rackspace Technical Blog
 
 Authors who are informed and passionate about technology and IT write technical
 blogs that range from high-level, conceptual overviews to deep dives with
@@ -7,39 +7,87 @@ out of applications and platforms. Many also add a personal perspective to the
 conversation. These authors share their journeys, trials, and triumphs.
 
 First, thanks for your interest in contributing and helping us craft quality
-content for our official Technical Blog. Second, in order to make contributing
+content for our official Technical Blog. Second, to make contributing
 a pleasant experience while maintaining a visual and consistent content standard,
 complete these steps before writing and submitting a blog entry for publishing.
 
-For ideas of topics to blog about, check out the end of this file!
 
-#### Preparing for your blog entry
+## Prepare to contribute
+
+We encourage a triangular workflow in GitHub as a best practice.
 
 1. Fork this repo (https://github.com/rackerlabs/technical-blog), then
    clone your fork.
 
-2. Before you start working, make sure your local content is up-to-date and
-   merged with the right upstream branch:
+   ```bash
+   git clone git@github.com:<YOUR_GITHUB_ID>/technical-blog.git
+   cd technical-blog
+
+1. Add the original repo as the `upstream` remote.
+
+   ```bash
+   git remote add upstream git@github.com:rackerlabs/technical-blog.git
+   git remote update
+   ```
+
+1. Configure Git to always push to origin (your forked copy) using the current branch name.
+
+   ```bash
+   git config remote.pushdefault origin
+   git config push.default current
+   ```
+
+1. Prevent accidental commits directly to the master branch by using a pre-commit hook.
+   Note: These instructions work in the Bash shell and will overwrite the existing file if present.
+
+   ```bash
+   mkdir -p ~/.git/hooks
+   cat << 'EOF' > ~/.git/hooks/pre-commit
+   #!/usr/bin/env bash
+
+   current_branch=$(git symbolic-ref -q HEAD | sed -e 's|^refs/heads/||')
+
+   if [[ $current_branch = 'master' ]]; then
+      echo 'Direct commits to the master branch are not allowed.'
+      exit 1
+   fi
+   EOF
+   ```
+
+1. Set your local master branch to track `upstream/master`.
+
+   ```bash
+   git branch master -u upstream/master
+   ```
+1. Install Hugo on your local machine by using the following command:
+   
+   ```make install hugo```
+  
+## Create your blog post
+
+1. Always keep your fork up to date (rebase) before starting work.
 
       ```bash
-         git remote add upstream git@github.com:rackerlabs/docs-developer-blog.git
-         git checkout master
-         git fetch upstream
-         git merge upstream/master
-         git checkout -b name-of-your-branch
+      git checkout master
+      git fetch --all
+      git rebase upstream/master
+      git push origin master
+
+1. Create a new branch for your blog.
+
+      ```bash
+      git checkout -b name-of-your-branch
       ```
+1. Navigate to the root directory of your local copy of this repo using the command line.
 
-3. Create a new folder inside the `/hugo/content/blog` directory with the following naming
-   convention: `YYYY-MM-DD-title-of-your-post`, where `YYYY-MM-DD` is the
-   date you want your entry to be published.
+1. Create a new directory within ```/content/blog/YYYY/``` that contains the inital ```.index.md``` 
+   by using the following command:
+  
+  ```hugo new --kind blog-bundle blog/YYYY/YYYY-MM-DD-title-of-post```
 
-4. Within the newly created folder, create a new file with the following naming convention:
-   `index.md`.The published URL for your post becomes `https://docs.rackspace.com/blog/title-of-your-post/` when published.
+**Note:** If your post has images,  place the image files within the newly created post folder.
 
-**Note:** If your post has images, you should place the image files within the newly created
-folder.
-
-#### Formatting your post
+### Format your post
 
 The post should contain front-matter, an excerpt, and the actual content.
 
@@ -88,27 +136,6 @@ twitterTitle:
 ---
 ```
 
-**NOTE:** The "ogImage" _must_ be a fully-qualified URL. If you'd like to use an
-image asset that is being uploaded as part of your blog post, the pattern for the
-final URL is as follows:
-
-  `<rackspace CDN>/<image name>-<sha256 hash>.<image extension>`
-
-Where:
-
-  * `<rackspace CDN>` is `https://657cea1304d5d92ee105-33ee89321dddef28209b83f19f06774f.ssl.cf1.rackcdn.com`
-  * `<image name>` is the case-sensitive name of the image _not including the extension_.
-  * `<sha256 hash>` is the 64-character hex output from running the command `sha256sum /path/to/image`
-  * `<image extension>` is `jpg`, `png`, etc.
-
-Example:
-
-  * `https://657cea1304d5d92ee105-33ee89321dddef28209b83f19f06774f.ssl.cf1.rackcdn.com/default-og-image-46fb3587dedfdf950188fabbddd596d67e6b699374a7f4e36b43046d7a24fd09.jpg`
-
-If you'd like to use an image asset from your post that _shouldn't_ appear in
-the post itself, you can include `style="display: none"` on the `<img />` tag
-to hide it within the post while triggering the necessary plugin code to ensure
-it is made available on the CDN based on the preceding naming convention.
 
 Make sure that the dates in the file name and front-matter match.
 
@@ -155,93 +182,47 @@ to infodev@rackspace.com. To avoid being flooded with categories, which might ap
 to only one or two blogs, we have automated throttling. However, notify us so
 that we can discuss your ideas for a new category.
 --->
-##### Excerpt
+
+### Create an excerpt
 
 Include an excerpt marker after your first paragraph or so to separate the
 preview text that appears on the blog index page from the full article. To do
 so, use the following HTML comment:
 
-```
-The excerpt paragraph, which should give the reader a taste of what's to come.
+```html
+   The excerpt paragraph, which should give the reader a taste of what's to come.
 
-<!-- more -->
+   <!-- more -->
 
-The rest of your article.
+   The rest of your article.
 ```
 
 The marker comment ``<!-- more -->`` must be on its own line, starting at
 column 1, and separated from content on either side by a single blank line.
 
-##### Images
+### Include images
 
-**To include images in your blog**, place them  within their respective blog
+To include images in your blog, place them within their respective blog
 directory. Within your blog, use the following markup:
 
-```markdown
-![Alt text here]({% asset_path YYYY-MM-DD-title-of-your-post/filename.png %})
+```go
+{{- $image := resources.Get "YYYY-MM-DD-title-of-your-post/filename.png"-}}
 ```
 
-**To wrap text around an image on the right**, use code similar to the following:
-
-```
-<img class="blog-post right" src="{% asset_path 2015-06-17-built-an-app-on-openstack-at-qcon-ny-2015/qcon.png %}"/>Last week I went to QCon NY 2015 to be both a student and a teacher in their tutorial track. They follow the standard pattern of having 2 days of tutorials prior to the conference proper. To understand QCon a bit better, here's their mission statement.
-```
-
-##### Writing your post
+### Follow guidelines
 
 We recommend that you follow the [Style Guide](https://developer.rackspace.com/docs/style-guide/).
 
-##### Submitting your blog entries
+## Submit your blog entry as a pull request
 
 Follow these steps to submit your entry for publication.
 
-1. Submit a PR (pull request) against `master` branch.
+1. Submit a PR (pull request) against the `master` branch.
 2. Do everything in the PR template checklist.
-3. Once the PR successfully builds, you can preview your entry by clicking on
-   the preview link in the Git GUI.  Sometimes, if you push a new commit to your
-   PR, the changes don't show up in the new staging link.  To force a rebuild,
-   add a blank line to the bottom of your post and commit the change.
-4. When you're satisfied, the InfoDev team will do a quick editorial review
-   of the content and suggest changes, if necessary.
-5. After the content is ready to go, the InfoDev team will publish the blog on
-   the date that you selected.
+3. After the PR successfully builds, you can preview your post by clicking on the preview link in
+   the PR.
+4. When you're satisfied, ask the InfoDev team to do an editorial review and suggest changes, if
+   necessary.
+5. After the content is ready to go, the InfoDev team will publish the blog.
 
 Thanks again for your interest in contributing!
-
-##### Ideas to post about
-
-Updated from list of trending search terms in Rackspace sites on March 13, 2020:
-
-- actionable insights
-- apache kafka
-- binary tree
-- buffer
-- cloud gaming
-- cloud infrastructure
-- data structures
-- database performance
-- database security
-- dbase
-- design patterns
-- dgraph
-- elastic search
-- gig economy
-- google cloud next
-- image recognition
-- iterable
-- java ee
-- kibana
-- learn python
-- micron technology
-- mobile world congress
-- mongo db
-- mongodb management
-- multithreading
-- neo4j
-- numpy
-- postgres
-- redis
-- regular expressions
-- replica set
-- sharding
-- unstructured data
