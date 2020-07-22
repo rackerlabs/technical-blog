@@ -11,7 +11,7 @@ slug: 'why-i-use-saltstack'
 ---
 
 
-<img src="/img/2013-08-16-why-i-use-saltstack/saltstack_logo.jpg" class="image-right"/>
+<img src="/blog/why-i-use-saltstack/saltstack_logo.jpg" class="image-right"/>
 
 I am part of a team (along with Bruce Stringer and Jason Swindle) working on an
 internal application called Graffiti, which provides an easy way for front-line

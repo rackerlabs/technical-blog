@@ -8,7 +8,7 @@ published: true
 categories: []
 slug: 'displaying-prepared-code-with-syntax-highlighting-on-android' 
 ---
-<img class='image-right' src='/img/2013-04-22-displaying-prepared-code-with-syntax-highlighting-on-android/android_logo.jpg'/>
+<img class='image-right' src='/blog/displaying-prepared-code-with-syntax-highlighting-on-android/android_logo.jpg'/>
 
 I’m a fan of giving code snippets together with working demonstrations. I’m much more likely to trust code if I can see it and watch it work, as opposed to just reading it and hoping it still works. Has it been deprecated since it was written? Will it throw warnings? Did the author write this from memory, perhaps never even trying it? With a simple demonstration these questions disappear.
 
