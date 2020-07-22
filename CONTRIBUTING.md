@@ -11,6 +11,14 @@ content for our official Technical Blog. Second, to make contributing
 a pleasant experience while maintaining a visual and consistent content standard,
 complete these steps before writing and submitting a blog entry for publishing.
 
+## Prerequisites
+
+To contribute to this repository you must satisfy the following list of requirements:
+
+- Have an active GitHub account
+- Install Hugo on your local machine
+  -  ```make install hugo```
+
 ## Prepare to contribute
 
 We encourage a triangular workflow in GitHub as a best practice.
