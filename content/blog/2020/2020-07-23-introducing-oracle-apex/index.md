@@ -124,9 +124,8 @@ The following section comes from
 Oracle Application Express release 18.1 requires an Oracle Database release
 11.2.0.4 or later, including Enterprise Edition and Express Edition (Oracle Database XE).
 
-1. Download APEX 18.1 software [here](https://www.oracle.com/tools/downloads/apex-v191-downloads.html).
-
-2. Click **Accept** and download the Oracle APEX 18.1.0 software.
+Download APEX 18.1 software [here](https://www.oracle.com/tools/downloads/apex-v191-downloads.html)
+and click **Accept**.
 
 {{<image src="Picture3.png" title="" alt="">}}
 
@@ -293,6 +292,26 @@ In the browser, log in as an ADMIN user to the  Administration Services login pa
 [http://clone.localdomain.com:8080/apex/apex_admin](http://clone.localdomain.com:8080/apex/apex_admin).
 
 {{<image src="Picture4.png" title="" alt="">}}
+
+### header 3
+
+{{<image src="Picture1.png" title="" alt="">}}
+
+#### header 4
+
+{{<image src="Picture1.png" title="" alt="">}}
+
+##### header 5
+
+{{<image src="Picture1.png" title="" alt="">}}
+
+#### header 4
+
+{{<image src="Picture1.png" title="" alt="">}}
+
+### header 3&mdash;last one
+
+{{<image src="Picture1.png" title="" alt="">}}
 
 ### Conclusion
 
