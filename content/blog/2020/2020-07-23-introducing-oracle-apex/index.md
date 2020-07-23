@@ -37,7 +37,7 @@ low-code development&mdash;a visual development method using drag-and-drop eleme
 APEX enables you to adapt to changing requirements and empowers developers and
 your entire organization to be a part of the solution quickly.
 
-{{<image src="Picture1.png" title="" alt="">}}
+{{<image src="Picture10.png" title="" alt="">}}
 
 *Image source:* [https://apex.oracle.com/en/](https://apex.oracle.com/en/)
 
