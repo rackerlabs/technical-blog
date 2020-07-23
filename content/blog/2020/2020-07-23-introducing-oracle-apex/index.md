@@ -4,6 +4,12 @@ title: "Introducing Oracle Application Express"
 date: 2020-07-23
 comments: true
 author: Rohit Dogra
+authorAvatar: 'https://s.gravatar.com/avatar/c1212a2a656156405b4773b60514be2f'
+bio: "I've only worked with Rackspace for a year, but it feels like four years!
+Before Rackspace, I worked under the leadership of Tricore solutions. Currently,
+I'm an Oracle Database administrator, and previously, I was an Oracle Apps DBA.
+I have ten years of experience, including six years as an Core Oracle DBA and
+two more years as an Oracle Apps DBA."
 published: true
 authorIsRacker: true
 categories:
