@@ -6,7 +6,7 @@ comments: true
 author:
 authorAvatar: ""
 bio: ""
-published: false
+published: true
 authorIsRacker: true
 categories:
     - General
