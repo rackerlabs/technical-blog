@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "{{ slicestr .Name 11  | title | humanize }}"
-date: {{ .Date }}
+date: {{ now.Format "2006-01-02" }}
 comments: true
 author: 
-authorAvatar: ''
+authorAvatar: ""
 bio: ""
 published: true
 authorIsRacker: true
@@ -14,7 +14,7 @@ metaTitle: "{{ slicestr .Name 11  | title | humanize }}"
 metaDescription: "."
 ogTitle: "{{ slicestr .Name 11  | title | humanize }}"
 ogDescription: "."
-slug: '{{ slicestr .Name 11  | title | humanize }}' 
+slug: "{{ slicestr .Name 11  | title | lower }}" 
 
 ---
 
