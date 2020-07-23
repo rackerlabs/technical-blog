@@ -12,6 +12,7 @@ pluralizeListTitles = false
 relativeURLs = false
 disablePathToLower = true
 uglyURLs = false
+smartDashes = true
 title = "Rackspace Developer Center"
 [markup]
 defaultMarkdownHandler = "blackfriday"

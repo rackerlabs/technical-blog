@@ -1,6 +1,6 @@
 <div class="blog-post">
   <a href="{{ .RelPermalink }}">
-    <h2 class="post-title">{{ .Params.headline | default .Title }}</h2>
+    <h2 class="post-title">{{ .Params.headline | default .Title | markdownify }}</h2>
   </a>
   <div class="post-meta">
     <div class="post-avatar">
