@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "{{ slicestr .Name 11  | title | humanize }}"
-date: {{ substr .Name 0 10 }}
+title: "Test of archetype"
+date: 2020-12-31
 comments: true
 author:
 authorAvatar: ""
@@ -10,11 +10,11 @@ published: true
 authorIsRacker: true
 categories:
     - General
-metaTitle: "{{ slicestr .Name 11  | title | humanize }}"
+metaTitle: "Test of archetype"
 metaDescription: "."
-ogTitle: "{{ slicestr .Name 11  | title | humanize }}"
+ogTitle: "Test of archetype"
 ogDescription: "."
-slug: "{{ slicestr .Name 11  | title | lower }}"
+slug: "test-of-archetype"
 
 ---
 
