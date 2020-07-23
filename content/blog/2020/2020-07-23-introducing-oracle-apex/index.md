@@ -69,7 +69,7 @@ data. APEX has the following features:
 
 The [Oracle APEX Architecture document](https://apex.oracle.com/en/platform/architecture/)
 describes the APEX architecture clearly and succinctly.  This section contains
-the first part of that document:
+the first part of that document.
 
 #### Overview
 
