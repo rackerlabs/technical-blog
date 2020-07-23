@@ -28,7 +28,7 @@ low-code development&mdash;a visual development method using drag-and-drop eleme
 
 ### Introduction
 
-Apex enables you to adapt to changing requirements and empowers developers and
+APEX enables you to adapt to changing requirements and empowers developers and
 your entire organization to be a part of the solution quickly.
 
 {{<image src="Picture1.png" title="" alt="">}}
@@ -71,8 +71,10 @@ Oracle APEX uses a simple three-tier architecture where requests are sent from
 the browser, through a web server and then finally to the database. APEX executes
 all processing, data manipulation, and business logic in the database. This
 architecture guarantees zero-latency data access, top performance, and scalability.
-The following diagram highlights the process flow when a user requests or submits
-a page in Oracle APEX.
+
+When a user submits a page from APEX, the process flows from the page through
+Oracle REST Data Services (ORDS) to APEX and back again, as shown in the
+following image.
 
 {{<image src="Picture2.png" title="" alt="">}}
 
