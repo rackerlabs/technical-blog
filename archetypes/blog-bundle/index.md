@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "{{ slicestr .Name 11  | title | humanize }}"
-date: {{ now.Format "2006-01-02" }}
+date: {{ substr .Name 0 -10 }}
 comments: true
 author: 
 authorAvatar: ""
