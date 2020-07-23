@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Introducing Oracle Application Express"
-date: 2020-07-23
+date: 2020, July 7th
 comments: true
 author: Rohit Dogra
 authorAvatar: 'https://s.gravatar.com/avatar/c1212a2a656156405b4773b60514be2f'
