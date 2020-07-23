@@ -10,7 +10,7 @@ categories:
 slug: 'welcome-to-performance-cloud-servers-have-some-benchmarks'   
 ---
 
-<img class='image-right' src='/img/2013-11-05-welcome-to-performance-cloud-servers-have-some-benchmarks/brace-yourselves.png'/>
+<img class='image-right' src='/blog/welcome-to-performance-cloud-servers-have-some-benchmarks/brace-yourselves.png'/>
 
 
 Today, all of us at Rackspace are proud to roll out our new Performance Cloud Server offering. These are new flavors of Cloud Servers available to all customers as of today, providing higher performance from RAM to Disk I/O, and more. We've also rolled out a significant update to our [cloud control panel](http://mycloud.rackspace.com) to greatly improve the user experience of selecting flavors, operating systems and more.

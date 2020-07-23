@@ -192,12 +192,12 @@ so, use the following HTML comment:
 ```html
    The excerpt paragraph, which should give the reader a taste of what's to come.
 
-   <!-- more -->
+   <!--more-->
 
    The rest of your article.
 ```
 
-The marker comment ``<!-- more -->`` must be on its own line, starting at
+The marker comment ``<!--more-->`` must be on its own line, starting at
 column 1, and separated from content on either side by a single blank line.
 
 ### Include images

@@ -8,7 +8,7 @@ published: true
 categories: []
 slug: 'getting-started-with-hadoop' 
 ---
-<img class='image-right' src='/img/2013-04-25-getting-started-with-hadoop/hortonworks.jpg'/>
+<img class='image-right' src='/blog/getting-started-with-hadoop/hortonworks.jpg'/>
 
 Getting started with a distributed system like Hadoop can be a daunting task for developers.From installing and configuring Hadoop to learning the basics of MapReduce and other add-on tools, the learning curve is pretty high.
 

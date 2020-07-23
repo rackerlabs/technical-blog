@@ -66,7 +66,7 @@ try:
                           region=cloud_region)
 except pyrax.exc.AuthenticationFailed:
     print "Pyrax auth failed"
-{{< highlight go  >}}
+{{< /highlight >}}
 
 This is possible in all modern day languages.  The only places where this cannot be done is things like Yaml files which are more static. Even with Yaml you could create a wrapper that read environment variable and generates the Yaml file. The key here would be to *make sure* that the Yaml file is your public repository otherwise it defeats the purpose.
 

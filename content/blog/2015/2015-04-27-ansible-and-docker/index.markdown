@@ -17,10 +17,7 @@ There are two ways that you can combine them, both useful for different reasons.
 
 <!--more-->
 
-<img
-  src="cow-on-container.jpg"
-  alt="I'm pretty sure Ansible's EULA requires you to use a picture of a cow somewhere"
-  title="I'm pretty sure Ansible's EULA requires you to use a picture of a cow somewhere">
+{{<image src="cow-on-container.jpg" alt="I'm pretty sure Ansible's EULA requires you to use a picture of a cow somewhere" title="I'm pretty sure Ansible's EULA requires you to use a picture of a cow somewhere">}}
 
 ## Deploying Docker containers with Ansible
 
@@ -86,10 +83,7 @@ You can instruct the Docker daemon to restart your container any time its proces
 
 Setting it to `on-failure` allows the container to exit if its process exits cleanly (with a 0 status). If you're concerned about flapping, the number of restarts before Docker will give up can also be controlled by setting `restart_policy_retry` to a nonzero count.
 
-<img
-  src="cow-in-container.jpg"
-  alt="[muffled mooing noises]"
-  title="[muffled mooing noises]">
+{{<image src="cow-in-container.jpg" alt="[muffled mooing noises]" title="[muffled mooing noises]">}}
 
 ## Using Ansible to build Docker images
 
