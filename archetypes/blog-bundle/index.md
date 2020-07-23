@@ -4,7 +4,7 @@ title: "{{ slicestr .Name 11  | title | humanize }}"
 date: {{ substr .Name 0 10 }}
 comments: true
 author:
-authorAvatar: ""
+authorAvatar: ''
 bio: ""
 published: true
 authorIsRacker: true
