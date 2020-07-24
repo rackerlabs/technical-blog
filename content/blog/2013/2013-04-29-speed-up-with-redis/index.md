@@ -86,7 +86,7 @@ $start = microtime();   // start timing page exec
 
 // if cloudflare is enabled
 if ($cf) {
-    if (isset($_SERVER['HTTP_CF_CONNECTING_IP'])) {
+    if ($_SERVER['HTTP_CF_CONNECTING_IP']) {
         $_SERVER['REMOTE_ADDR'] = $_SERVER['HTTP_CF_CONNECTING_IP'];
     }
 }
@@ -107,7 +107,7 @@ $dkey = md5($domain);
 $ukey = md5($url);
 
 // check if page isn't a comment submission
-(isset($_SERVER['HTTP_CACHE_CONTROL']) && $_SERVER['HTTP_CACHE_CONTROL'] == 'max-age=0') ? $submit = 1 : $submit = 0;
+(($_SERVER['HTTP_CACHE_CONTROL']) && $_SERVER['HTTP_CACHE_CONTROL'] == 'max-age=0') ? $submit = 1 : $submit = 0;
 
 // check if logged in to wp
 $cookie = var_export($_COOKIE, true);
