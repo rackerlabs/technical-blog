@@ -40,7 +40,7 @@ Python is a widely popular language for data science. [Pandas](https://pandas.py
 
 The first step is to do some housekeeping and loading of libraries we will be using:
 
-```python
+{{< highlight python >}}
 
 %matplotlib inline
 import pandas as pd
@@ -48,37 +48,37 @@ import requests
 import StringIO as StringIO
 import numpy as np
 
-```
+{{< /highlight >}}
 
 Now let's load up the data. We will directly reference the CSV data directly on the webserver over SSL. This technique is very useful for fetching remote data sources without needing an interim fileserver or other infrastructure. Lastly we make the data available as a file for pandas.
 
-```python
+{{< highlight python >}}
 
 url = "https://data.baltimorecity.gov/api/views/2j28-xzd7/rows.csv?accessType=DOWNLOAD"
 r = requests.get(url)
 data = StringIO.StringIO(r.content)
 
-```
+{{< /highlight >}}
 
 Now lets load the data into a dataframe. A dataframe is a 2-dimensional labeled [data structure]((https://pandas.pydata.org/pandas-docs/version/0.16.1/dsintro.html#dataframe)) in Pandas. It has a suite of nice methods for loading data into it. In this case, our source is a CSV file. In the previous step we convert the resulting string into of type FILE, which is required by the method as the input datatype.
 
-```python
+{{< highlight python >}}
 
 dataframe = pd.read_csv(data,header=0)
 
-```
+{{< /highlight >}}
 Now we have everything loaded into a dataframe, we can start manipulating it with various methods to clean, normalize, group and sort the data. First, we want to remove the dollar signs in the AnnualSalary field and assign it as a float. This enables us to perform some aggregation on it.
 
-```python
+{{< highlight python >}}
 
 dataframe['AnnualSalary'] = dataframe['AnnualSalary'].str.lstrip('$')
 dataframe['AnnualSalary'] = dataframe['AnnualSalary'].astype(float)
 
-```
+{{< /highlight >}}
 
 Next step is to group the data, and aggregate with sum, mean, etc. Then we can sort and display.
 
-```python
+{{< highlight python >}}
 # group the data
 grouped = dataframe.groupby(['JobTitle'])['AnnualSalary']
 aggregated = grouped.agg([np.sum, np.mean, np.std, np.size, np.min, np.max])
@@ -88,37 +88,38 @@ pd.set_option('display.max_rows', 10000000)
 output = aggregated.sort(['amax'],ascending=0)
 output.head(15)
 
-```
+{{< /highlight >}}
+
 ![01](baltimore_salaries01.png)
 
 Ok, this is interesting. It shows that the State Attorney gets paid the most in the city, followed by executive roles, the Mayor, etc. I guess this isn't very surprising. But these are only individual jobs, not the entire spend by job role. After all, there is only 1 State Attorney. A better approach might be to group by JobTitle.
 
 
-```python
+{{< highlight python >}}
 output = aggregated.sort(['sum','size'],ascending=[0,1])
 output.head(15)
-```
+{{< /highlight >}}
 
 ![02](baltimore_salaries02.png)
 
 Hey now! Now we are getting somewhere. The salary for Police Officers looks pretty high compared to other roles. It also has 1866 employees fitting this role. Let's graph it. First, let's prepare the data as we want to see it in the graph. Specifically we want the sum of salary, sorted descending.
 
-```python
+{{< highlight python >}}
 aggregated = grouped.agg([np.sum])
 output = aggregated.sort(['sum'],ascending=0)
 output = output.head(15)
 output.rename(columns={'sum': 'Salary'}, inplace=True)
-```
+{{< /highlight >}}
 
 Then setup for a nice display and graph it:
 
-```python
+{{< highlight python >}}
 from matplotlib.ticker import FormatStrFormatter
 
 myplot = output.plot(kind='bar',title='Baltimore Total Annual Salary by Job Title - 2014')
 myplot.set_ylabel('$')
 myplot.yaxis.set_major_formatter(FormatStrFormatter('%d'))
-```
+{{< /highlight >}}
 
 ![graph](baltimore_salaries_graph.png)
 

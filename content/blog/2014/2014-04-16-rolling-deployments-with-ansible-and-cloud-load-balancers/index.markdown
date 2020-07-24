@@ -69,24 +69,24 @@ First lets check the health of the load balancer itself and [fail][6] early if t
 Next lets ensure our nodes are healthy:
 
 {{< highlight yaml >}}
-{% raw %}
+
 - name: pre-flight node health check
   fail: msg="Node {{ item.id }} is not healthy, abording deployment!"
   when: item.condition != 'ENABLED'
   with_items: lb.balancer.nodes
-{% endraw %}
+
 {{< /highlight >}}
 
 With those pre-flight checks out of the way, we can now create a group of hosts from the nodes. This uses the [add_host][7] module. We will set the name to the node ID then use the `ansible_ssh_host` variable to store the IP address to access them. We'll also set `ansible_ssh_user` to root, and set `lb_id` to the ID of the load balancer, which will use in a later play.
 
 {{< highlight yaml >}}
-{% raw %}
+
 - name: create node host group
   add_host: name={{ item.id }} ansible_ssh_host={{ item.address }}
             ansible_ssh_user=root lb_id={{ lb.balancer.id }}
             groups=web
   with_items: lb.balancer.nodes
-{% endraw %}
+
 {{< /highlight >}}
 
 Now that we've captured the load balancer data, done our pre-flight checks, and added our nodes we can get on with our deploy. This will be a new play using the group we just created, `web`:

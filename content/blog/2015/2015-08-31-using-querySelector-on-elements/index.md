@@ -21,7 +21,7 @@ you haven't used them, the Mozilla Developer Network has an excellent
 
 Imagine the following HTML page:
 
-```html
+{{< highlight html >}}
 <!DOCTYPE html>
 <html>
 <body>
@@ -35,7 +35,7 @@ Imagine the following HTML page:
     </div>
 </body>
 </html>
-```
+{{< /highlight >}}
 
 `document.querySelectorAll("div")` returns a `NodeList` of all of the `<div>`
 elements on the page. `document.querySelector("div.lonely")` returns that
@@ -48,19 +48,19 @@ document. Elements themselves also support both [`querySelector`][eqs] and
 descendants of that element. For example, the following expression will find
 images that are descendants of `#my-id`:
 
-```javascript
+{{< highlight javascript >}}
 document.querySelector("#my-id").querySelectorAll("img")
-```
+{{< /highlight >}}
 
 In the preceding sample HTML page, it finds `<img id="inside">` but not `<img
 id="outside">`.
 
 With that in mind, what do these two expressions do?
 
-```javascript
+{{< highlight javascript >}}
 document.querySelectorAll("#my-id div div");
 document.querySelector("#my-id").querySelectorAll("div div");
-```
+{{< /highlight >}}
 
 You might reasonably expect them to be equivalent. After all, one asks for
 `div` elements inside `div` elements inside `#my-id`, and the other asks for
@@ -68,10 +68,10 @@ You might reasonably expect them to be equivalent. After all, one asks for
 `#my-id`. However, when you look at [this JSbin][jsbin], you'll see that they
 produce very different results:
 
-```javascript
+{{< highlight javascript >}}
 document.querySelectorAll("#my-id div div").length === 1;
 document.querySelector("#my-id").querySelectorAll("div div").length === 3;
-```
+{{< /highlight >}}
 
 ### What is going on here?
 
@@ -88,13 +88,13 @@ relative to any particular element, not even the element you're calling
 This even works with elements *outside* the element you're calling
 `querySelectorAll` on. For example, this selector:
 
-```javascript
+{{< highlight javascript >}}
 document.querySelector("#my-id").querySelector("div div div")
-```
+{{< /highlight >}}
 
 ... matches `div.inner` in this snippet ([JSbin][jsbin2]):
 
-```html
+{{< highlight html >}}
 <!DOCTYPE html>
 <html>
   <body>
@@ -105,7 +105,7 @@ document.querySelector("#my-id").querySelector("div div div")
     </div>
   </body>
 </html>
-```
+{{< /highlight >}}
 
 I think this API is surprising, and the front-end engineers I've asked seem to
 agree with me. However, this is not a bug. It's definitely how the spec claims
@@ -122,9 +122,9 @@ of styles to part of the document. The element we're calling
 `querySelectorAll` on also counts as a scope, so this expression only
 matches `div.inner`:
 
-```javascript
+{{< highlight javascript >}}
 document.querySelector("#my-id").querySelectorAll(":scope div div");
-```
+{{< /highlight >}}
 
 Unfortunately, [browser support][scope-compat] for scoped CSS and the `:scope`
 pseudo-selector is extremely limited. Only recent versions of Firefox support

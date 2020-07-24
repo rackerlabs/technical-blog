@@ -6,7 +6,7 @@ comments: true
 author: Jordan Evans
 categories:
   - Cloud Servers
-slug: 'using a custom kernel with cloud servers' 
+slug: 'using-a-custom-kernel-with-cloud-servers' 
 
 ---
 
@@ -26,9 +26,9 @@ This needs to be done on Ubuntu 10.04, so spin up a vm or Cloud Server, and do t
 
 Lets start by installing some required packages
 
-```bash
+{{< highlight bash >}}
 $ sudo apt-get install build-essential pbuilder bc debiandoc-sgml libbogl-dev glibc-pic libslang2-pic libnewt-pic genext2fs mklibs genisoimage dosfstools syslinux tofrodos mtools po4a bf-utf-source fakeroot crash kexec-tools makedumpfile kernel-wedge
-```
+{{< /highlight >}}
 
 We will also need to add the following lines to `/etc/apt/sources.list`
 
@@ -41,19 +41,19 @@ deb http://archive.ubuntu.com/ubuntu/ lucid-security main/debian-installer
 
 After which you will need to run
 
-```bash
+{{< highlight bash >}}
 $ sudo apt-get update
-```
+{{< /highlight >}}
 
 Now that we have the pre-requisites out of the way, we can pull in the source for debian-installer. The following pulls in the source, untars it, changes to the build directory in the source, and makes the destination directory (where the completed iso will go)
 
-```bash
+{{< highlight bash >}}
 $ mkdir build && cd build
 $ apt-get source debian-installer
 $ tar zxvf debian-installer*.tar.gz
 $ cd debian-installer/build
 $ mkdir dest
-```
+{{< /highlight >}}
 
 # Building the Image
 
@@ -80,14 +80,14 @@ $ make build_netboot
 
 Finally, lets make sure it built our mini.iso
 
-```bash
+{{< highlight bash >}}
 $ ls dest/netboot/mini.iso
-```
+{{< /highlight >}}
 
 # Adding the Preseed
 Unfortunately, we aren't yet done. We have created an iso that runs off this newer kernel, but it won't install the kernel when used. Lets add a preseed that installs the right kernel (and, remove the old kernel).
 
-```bash
+{{< highlight bash>}}
 $ mkdir -p tmp/iso tmp/initrd.d
 $ mount -o loop -t iso9660 dest/netboot/mini.iso tmp/iso
 $ cp tmp/iso/initrd.gz tmp/
@@ -95,11 +95,11 @@ $ gunzip tmp/initrd.gz
 $ cd tmp/initrd.d
 $ cpio -i --make-directories < ../initrd
 $ vim preseed.cfg
-```
+{{< /highlight >}}
 
 The preseed file should look something like the following. Everything that is not adding our kernel or removing the 2.6 kernel is from a standard preseed most installers use, and can be customized as much as you like. In the form below, it closely resembles a regular alternate install.
 
-```bash
+{{< highlight bash >}}
 # Suggest LVM by default.
 d-i partman-auto/init_automatically_partition string some_device_lvm
 d-i partman-auto/init_automatically_partition seen false
@@ -120,11 +120,11 @@ oem-config oem-config/steps multiselect language, timezone, keyboard, user, netw
 # Remove 2.6 kernel
 d-i preseed/late_command string \
 in-target apt-get install -y linux-image-server-lts-backport-oneiric && in-target apt-get remove -y $(echo `expr match "$(in-target dpkg --get-selections | grep linux-image-2.6)" '\(linux-image-2\.6\...-..-server\)'`)
-```
+{{< /highlight >}}
 
 Lastly, we need to package up our initrd and rebuild the iso so we can use it!
 
-```bash
+{{< highlight bash >}}
 $ find ./ | cpio -H newc -o > ../initrd.gz
 $ cd ..
 # We mounted the iso read only, so make a copy to add the new initrd.gz to
@@ -132,7 +132,7 @@ $ mkdir new_iso
 $ cp -r iso/ new_iso/
 $ cp initrd.gz  new_iso/
 $ mkisofs -o dest/netboot/10.04_custom_kernel.iso -r -J -no-emul-boot -boot-load-size 4 -boot-info-table -b isolinux.bin -c isolinux.cat tmp/new_iso/
-```
+{{< /highlight >}}
 
 And we're done! `dest/netboot/10.04_custom_kernel.iso` contains your new iso that runs off, and installs, a 3.0 kernel.
 

@@ -41,7 +41,7 @@ can use an existing Vagrantfile that outlines a specific environment configurati
 or you can run Vagrant for the first time and it will create a Vagrantfile for you.  In this example, I’m going to use the following Vagrantfile:
 
 
-```ruby
+{{< highlight ruby >}}
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
@@ -114,7 +114,7 @@ Vagrant.configure(2) do |config|
   #   sudo apt-get install -y apache2
   # SHELL
 end
-```
+{{< /highlight >}}
 
 There’s a lot of information in this Vagrantfie, but one thing I want to point out is a parameter called `config.vm.box`.  Vagrant uses what they refer to as `boxes` to create VMs, which are base images stored in a repository managed by HashiCorp, the creator of Vagrant.  In this example, I’m using a box called `puphpet/ubuntu1404-x64`, which is an Ubuntu Trusty 14.04 LTS x64 VM.
 
@@ -136,12 +136,12 @@ Once the vagrant up process has finished, you can ssh into your VM by typing the
 
 At this point you are logged into your VM and can manage it the same way you would any other Linux server you ssh into.  If you `cd /vagrant`, you will see the Vagrantfile along with any other files in your host OS project directory where you typed `vagrant ssh`.  For example, I have a Python project called "juno" on my host OS in the same directory as my Vagrantfile.  In my Vagrant VM, I see this:
 
-```bash
+{{< highlight bash >}}
 vagrant@vagrant:/vagrant$ ls -l
 total 4
 drwxr-xr-x 1 vagrant vagrant 1292 Dec 15 03:55 juno
 -rw-r--r-- 1 vagrant vagrant 3158 Dec 15 03:59 Vagrantfile
-```
+{{< /highlight >}}
 
 Vagrant allows you to map directories on your host OS to directories on your VM.  They refer to this feature as "synced folders".  When you delete your VM, the files in these directories will not be deleted.
 

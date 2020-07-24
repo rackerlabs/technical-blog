@@ -23,7 +23,7 @@ ogTitle: "Introducing Oracle Application Express"
 ogDescription: "Could your organization be more agile, developing applications faster, cheaper,
 and more efficiently?  Consider using Oracle&reg; Application Express (APEX) and
 low-code development&mdash;a visual development method using drag-and-drop elements."
-slug: 'Introducing Oracle Application Express'
+slug: 'introducing-oracle-application-express'
 ---
 
 Could your organization be more agile, developing applications faster, cheaper,

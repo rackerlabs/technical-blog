@@ -105,7 +105,7 @@ MongoDB fits this bill very well.
 
 An example schema for classifieds would look something like the following (shamelessly re-implemented from [craigslist-clone](https://github.com/railslist/craigslist-clone)):
 
-```sql
+{{< highlight sql >}}
 CREATE TABLE `classifieds` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `title` varchar(75) COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -127,7 +127,7 @@ CREATE TABLE `classifieds` (
   `updated_at` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-```
+{{< /highlight >}}
 
 Of course, CraigsList most likely has a different schema and at the very least discovered their current schema after several iterations.
 Also, they may decide to change how their data is organized and change their schema again in the future.
@@ -140,14 +140,14 @@ To accomplish this we can use a combination of [SQLAlchemy](http://www.sqlalchem
 First, we need to get the data out of our MySQL instance.
 We will utilize SQLAlchemy to accomplish this and have it introspect our schema (making this code far more re-usable for this purpose).
 
-```python
+{{< highlight python >}}
 import sqlalchemy.schema
 
 m = sqlalchemy.schema.MetaData("mysql://root:I'm required why?@192.0.2.3/craigslist")
 m.reflect()
 
 print m.tables.keys()
-```
+{{< /highlight >}}
 
 If you're successfully connecting to your database, you'll see your keys (column names) printed out in standard python fashion: ``[u'classifieds', u'cities', u'subcategories', u'categories']``.
 We still need to get the individual data items out of these tables.
@@ -157,7 +157,7 @@ We now have our table definitions from the introspection.
 It is time to either create object maps or query those tables to get the data items they contain.
 The query below will extract our classifieds from the datastore (the other tables are left as an exercise to the reader).
 
-```python
+{{< highlight python >}}
 import sqlalchemy.sql
 
 connection = m.bind.connect()
@@ -170,7 +170,7 @@ result = connection.execute(query)
 
 for row in result:
     print dict(row.items())
-```
+{{< /highlight >}}
 
 This snippet uses our MySQL connection to query for all of the classifieds.
 It could easily be expanded to handle all tables, denormalizing the data to better fit the document style of MongoDB.
@@ -178,7 +178,7 @@ But for the purpose of this demonstration, we'll only be focusing on the classif
 
 The next sample shows how to connect to and insert a dictionary into pymongo:
 
-```python
+{{< highlight python >}}
 import pymongo
 
 client = pymongo.MongoClient('mongodb://192.0.2.2')
@@ -186,7 +186,7 @@ client = pymongo.MongoClient('mongodb://192.0.2.2')
 db = client['craigslist']
 collection = db['classifieds']
 collection.insert({'_id': 1})
-```
+{{< /highlight >}}
 
 The only problem now is how SQLAlchemy and MongoDB specify their IDs.
 SQLAlchemy uses a key of `id` whereas MongoDB uses a key of `_id`.

@@ -38,7 +38,7 @@ With these specific agents, the best way to determine the version of the existin
 Ultimately, when we're recording Ansible facts and using these to determine which agents need to be updated, we only care about the actual version number itself.  Enter a bit of Python for the custom filter plugin, which we simply drop in to the `filter_plugins/` directory in the root of your Ansible repository:
 
 
-```python
+{{< highlight python >}}
 # This filter plugin takes a string from the AppDynamics API and parses out
 # the actual version number.  For example, the API might return the following
 # version string:
@@ -62,7 +62,7 @@ class FilterModule(object):
 
 class AppDynamicsVersionFormat(Exception):
     pass
-```
+{{< /highlight >}}
 
 If you're unfamiliar with Python, all we're doing here is declaring a new FilterModule class that performs a simple regex evaluation on a string and, assuming it is correctly recognized as a valid AppDynamics agent version string, returns our nicely formatted version string.
 
@@ -74,7 +74,7 @@ To see our custom filter plugin in action, here is how we use it in our playbook
 
 Custom filter plugins provide a very powerful and, most importantly, repeatable way for you to manipulate data that you frequently have to with.  For a final example, prior to Ansible 2.4, Ansible had no way to convert from epoch time to human readable.  At the time, we were running Ansible 2.2 but this was a need that we had to record facts around installation times, maintenance execution times, etc.  Here is another simple fliter plugin that will convet epoch time to human readable format to further illustrate the concept:
 
-```python
+{{< highlight python >}}
 # This filter plugin will convert epoch time to human readable
 # in the format of '%Y-%m-%d' (i.e. 2017-05-31).  Ansible does not
 # have this functionality until version 2.4 when they will implement the
@@ -90,4 +90,4 @@ class FilterModule(object):
     def epoch2date(self, value):
         import time
         return time.strftime('%Y-%m-%d', time.localtime(value))
- ```
+{{< /highlight >}}

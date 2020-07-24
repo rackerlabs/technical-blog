@@ -28,7 +28,7 @@ Back in the early logstash days, I got started testing my configuration by makin
 
 First, let’s set up our logstash environment. Let’s create a directory called "logstash" in /opt, download the monolithic jar, and create a couple of files that help with the testing. To the code!
 
-```bash
+{{< highlight bash >}}
 mkdir -p /opt/logstash/{conf,bin}
 pushd /opt/logstash/bin
 curl -O 
@@ -53,17 +53,17 @@ fi
 \$myjava -jar \$lsjar agent -f \$conf
 EOFBIN
 chmod +x /opt/logstash/bin/logstash.sh
-```
+{{< /highlight >}}
 
 Now, to get started running our sample config, we will type some random stuff into the terminal. The monlithic jar takes a while to get started, so be patient!
 
-```bash
+{{< highlight bash >}}
 $ /opt/logstash/logstash.sh
 test!
 {"@source":"stdin://MYHOST/","@tags":[],"@fields":{},"@timestamp":"2013-03-
 29T18:13:01.601Z","@source_host":"MYHOST","@source_path":"/","@message":"te
 st!","@type":"stdin-type"}
-```
+{{< /highlight >}}
 
 As you can see, logstash output some structured data; @ symbols indicate variables such as source, timestamp, tags, type and message.
 
@@ -94,7 +94,7 @@ Since extra GNU utility calls are cheap and executed in the same subshell, we ca
  
 Let’s run it with the new config; hit CTRL+C to break out of the shell script and stop running logstash:
 
-```bash
+{{< highlight bash >}}
 $ ./logstash.sh 
 {"@source":"exec://MYHOST/","@tags":[],"@fields":{"command":"cat
 /proc/loadavg | awk '{print
@@ -102,7 +102,7 @@ $1,$2,$3}'","load_avg_1m":["0.35"],"load_avg_5m":["0.19"],"load_avg_15m":["
 0.07"]},"@timestamp":"2013-04-01T16:03:44.738Z","@source_host":"MYHOST","@s
 ource_path":"/","@message":"0.35 0.19 0.07\n","@type":"system-loadavg"}
 ^CSIGINT received, shutting down. {:level=>:warn}
-```
+{{< /highlight >}}
 
 We can see that the fields variable has some key things - I'm prettying up the output:
 

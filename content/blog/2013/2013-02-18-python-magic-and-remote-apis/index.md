@@ -7,7 +7,7 @@ author: Jesse Keating
 categories:
   - Python
   - Developers
-slug: 'python magic and remote apis' 
+slug: 'python-magic-and-remote-apis' 
 
 ---
 
@@ -39,14 +39,14 @@ provide authentication. Requests lets you create a session object that can
 have attributes that carry on to all web calls, such as a custom auth header
 with a token.
 
-```python
+{{< highlight python >}}
     resp = requests.get('https://URL/api/auth/USERNAME?password=DATA')
     resp.json()
       u'LONGSTRING'
     token = resp.json()
     session = requests.Session()
     session.headers.update({'X-Auth': token})
-```
+{{< /highlight >}}
 
 Now the session object can be used just like requests itself, and it'll
 include the new header we've added. While this was neat at first, I quickly
@@ -63,7 +63,7 @@ it caches the value for future getting.  My class sets some data during the
 init process, and creates a property for the session attribute, which can
 then be used in later functions, like a login or query function.
 
-```python
+{{< highlight python >}}
     class CServ(object):
         """A cservice object that we will interact with."""
 
@@ -120,11 +120,11 @@ then be used in later functions, like a login or query function.
 
             data = self.session.post(self.QAPI, json.dumps(bits))
             return data.json()
-```
+{{< /highlight >}}
 
 With this structure we can do things like:
 
-```python
+{{< highlight python >}}
     cserv = CServ()
     cserv.query('Computer.Computer', 432807, attributes=['name'])
       [{u'count': 1, u'load_arg': 432807, u'limit': 1, u'result':
@@ -132,7 +132,7 @@ With this structure we can do things like:
       [{u'name': u'silly.hostname.here.com'}], u'offset': 0,
 
       u'class': u'Computer.Computer'}]
-```
+{{< /highlight >}}
 
 We get back a json blob that has what the API returned to us. What happened
 was that the query function built up the information for the requests bit,
@@ -168,10 +168,10 @@ be a base class for any number of objects, like Computers, Accounts, etc..
 We can save a lot of code duplication by putting the shared bits in
 CServOBJ.
 
-```python
+{{< highlight python >}}
     class CServOBJ(CServ):
         """A base CServ object class to build from"""
-```
+{{< /highlight >}}
 
 Right now we don't need to overload the `__init__` method, so we can dive
 right into the magic. In python, when you attempt to access an object's
@@ -181,7 +181,7 @@ override it to make attribute access do something different. In our case, we
 want to do an API look up to get the value if we don't already have it, so
 we'll overload the function:
 
-```python
+{{< highlight python>}}
         def __getattr__(self, name):
             try:
                 return self.__dict__[name]
@@ -194,7 +194,7 @@ we'll overload the function:
                                     (self.API, self._qclass, self._qval, name))
             resp.raise_for_status()
             setattr(self, name, resp.json())
-```
+{{< /highlight >}}
 
 Objects in python also have a built in `__dict__` that keeps track of all
 the attributes. Our simple little bit of code will try to return the value
@@ -207,7 +207,7 @@ work happens behind the scenes to the bit of code just trying to access the
 attribute, and the lookup only happens once.  That's all we really need for
 now in the base class, lets create a Computer class.
 
-```python
+{{< highlight python >}}
     class Computer(CServOBJ):
         """A class to represent the Computer.Computer CServ API class"""
 
@@ -217,7 +217,7 @@ now in the base class, lets create a Computer class.
             self._qval = self.number
 
             super(Computer, self).__init__()
-```
+{{< /highlight >}}
 
 That's all there is to it.  `_qclass` is defined as a class attribute, it
 does not change per-object.  It is the class name passed into the remote
@@ -253,7 +253,7 @@ can hook that into `__dir__`.  But of course we only want to do this API
 call once (per object) so we will want to make it a property.  Since there
 is nothing API class specific we can put the code into the CServOBJ class:
 
-```python
+{{< highlight python >}}
         def __init__(self):
             self._attributes = None
             super(CServOBJ, self).__init__()
@@ -270,7 +270,7 @@ is nothing API class specific we can put the code into the CServOBJ class:
 
         def __dir__(self):
             return sorted(dir(type(self)) + list(self.__dict__) + self.attribs)
-```
+{{< /highlight >}}
 
 Since we are creating a property at this level we will grow an `__init__`
 function to prep for that. Then we define the attribs() function. A

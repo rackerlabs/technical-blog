@@ -37,7 +37,7 @@ confident it is in its discovery. Let's take a look at an example. Bandit
 knows about PyYAML and some of its past security vulnerabilities, so let's
 give it example some code that I wrote:
 
-```python
+{{< highlight python >}}
 # blog_ex.py
 import yaml
 
@@ -58,7 +58,7 @@ yaml_str = to_yaml({
     'author': 'Ian Cordasco',
 })
 parsed_yaml = from_yaml(yaml_str)
-```
+{{< /highlight >}}
 
 Running Bandit on this file results in:
 

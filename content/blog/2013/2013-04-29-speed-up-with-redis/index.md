@@ -46,7 +46,7 @@ Once Redis is installed and online, you need to configure your application to us
 
 The example below is from on a fantastic tutorial by [Jim Westgren](http://www.jimwestergren.com/wordpress-with-redis-as-a-frontend-cache/) and is specific to WordPress-based sites, but WordPress specific code can be stripped out for use with just about any website. Enjoy!
 
-```php
+{{< highlight php >}}
 <?php
 
 /*
@@ -195,4 +195,4 @@ function getmicrotime($t) {
 }
 
 ?>
-```
+{{< /highlight >}}

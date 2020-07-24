@@ -68,13 +68,13 @@ used regardless of a packet's flow through the iptables processing.
 Starting with VM1, which resides within the test tenant which has two VMs on this
 [pik kl0,.-network, we first find the port UUID for VM1:
 
-```bash
+{{< highlight bash >}}
 root@controller:~# neutron port-list
 +--------------------------------------+------+-------------------+---------------------------------------------------------------------------------+
 | id                                   | name | mac_address       | fixed_ips                                                                       |
 +--------------------------------------+------+-------------------+---------------------------------------------------------------------------------+
 | 67c49753-bf85-4eae-a5a3-faa48fdab983 |      | fa:16:3e:dc:be:eb | {"subnet_id": "fc54a4af-450d-405e-9337-fbdb7e94e008", "ip_address": "10.1.0.2"} |
-```
+{{< /highlight >}}
 
 The `xxx` used in the above drawing is the first 10 characters of the UUID,
 or `67c49753-bf`, for this VM. This information is needed when looking at the
@@ -102,7 +102,7 @@ Consider the trimmed output of the `iptables -L -n -v --line-numbers` command
 run on the compute node:
 
 
-```bash
+{{< highlight bash >}}
 root@openstack-ubu-compute:~# iptables -L -n -v --line-numbers
 
 Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
@@ -111,7 +111,7 @@ num   pkts bytes target                    prot opt in     out     source       
 2    12489 1110K neutron-openvswi-FORWARD  all  --  *      *       0.0.0.0/0            0.0.0.0/0
 3        2   616 nova-filter-top           all  --  *      *       0.0.0.0/0            0.0.0.0/0
 4        0     0 nova-compute-FORWARD      all  --  *      *       0.0.0.0/0            0.0.0.0/0
-```
+{{< /highlight >}}
 
 The `FORWARD` chain has a default policy of `ACCEPT` and references four chains.
 The match conditions for each of these rules are source **0.0.0.0/0** and
@@ -133,11 +133,11 @@ been added to allow inbound ICMP traffic and tcp traffic on port 22.
 
 The neutron-filter-top chain:
 
-```bash
+{{< highlight bash >}}
 Chain neutron-filter-top (2 references)
 num   pkts bytes target     prot opt in     out     source               destination
 1    3534K  668M neutron-openvswi-local  all  --  *      *       0.0.0.0/0            0.0.0.0/0
-```
+{{< /highlight >}}
 
 sends all packets to the neutron-openvswi-local chain. However the neutron-openvswi-local
 does not have any rules so the packet will return back to the FORWARD chain. In
@@ -145,12 +145,12 @@ this situation this set of chains does not affect any packets.
 
 In the chain neutron-openvswi-FORWARD the real work starts. Looking at this chain we see:
 
-```bash
+{{< highlight bash >}}
 Chain neutron-openvswi-FORWARD (1 references)
 num   pkts bytes target                        prot opt in     out     source               destination
 1     3598  283K neutron-openvswi-sg-chain  all  --  *      *       0.0.0.0/0            0.0.0.0/0            PHYSDEV match --physdev-out tap67c49753-bf --physdev-is-bridged
 2     3615  394K neutron-openvswi-sg-chain  all  --  *      *       0.0.0.0/0            0.0.0.0/0            PHYSDEV match --physdev-in tap67c49753-bf --physdev-is-bridged
-```
+{{< /highlight >}}
 
 Rules one and two in this chain send packets that match the conditions
 `--physdev-out tap67c49753-bf --physdev-is-bridged` or
@@ -162,13 +162,13 @@ interface attached to VM1, which we are considering in this example.
 Continuing with the chain neutron-openvswi-sg-chain, which is called by the
 previous chain:
 
-```bash
+{{< highlight bash >}}
 Chain neutron-openvswi-sg-chain (6 references)
 num   pkts bytes target                        prot opt in     out     source               destination
 1     3598  283K neutron-openvswi-i67c49753-b  all  --  *      *       0.0.0.0/0            0.0.0.0/0            PHYSDEV match --physdev-out tap67c49753-bf --physdev-is-bridged
 2     3615  394K neutron-openvswi-o67c49753-b  all  --  *      *       0.0.0.0/0            0.0.0.0/0            PHYSDEV match --physdev-in tap67c49753-bf --physdev-is-bridged
 3    11069 1012K ACCEPT     all  --  *      *       0.0.0.0/0            0.0.0.0/0
-```
+{{< /highlight >}}
 
 Rule one sends packets coming out of the bridge going to the interface
 tap67c49753-bf (the VM) to the chain neutron-openvswi-i67c49753-b. The next rule
@@ -185,7 +185,7 @@ chain.
 Now the chain  neutron-openvswi-i67c49753-b which processes the packets coming
 out of the bridge passing into the tap interface for the VM:
 
-```bash
+{{< highlight bash >}}
 Chain neutron-openvswi-i67c49753-b (1 references)
 num   pkts bytes target     prot opt in     out     source               destination
 1        0     0 DROP       all  --  *      *       0.0.0.0/0            0.0.0.0/0            state INVALID
@@ -195,7 +195,7 @@ num   pkts bytes target     prot opt in     out     source               destina
 5        4   240 RETURN     tcp  --  *      *       0.0.0.0/0            0.0.0.0/0            tcp dpt:22
 6        2   702 RETURN     udp  --  *      *       10.1.0.3             0.0.0.0/0            udp spt:67 dpt:68
 7        4  1256 neutron-openvswi-sg-fallback  all  --  *      *       0.0.0.0/0            0.0.0.0/0
-```
+{{< /highlight >}}
 
 This chain performs the checks for the security group rules. All packets in the
 invalid state are dropped (rule 1). Packets in the related or established state,
@@ -216,11 +216,11 @@ neutron-openvswi-sg-fallback.
 The chain neutron-openvswi-sg-fallback has one rule that will drop any packets
 entering this chain:
 
-```bash
+{{< highlight bash >}}
 Chain neutron-openvswi-sg-fallback (6 references)
 num   pkts bytes target                        prot opt in     out     source               destination
 1     1227 70668 DROP
-```
+{{< /highlight >}}
 
 So for a packet to continue to this VM, it must have matched one of the rules
 in the chain neutron-openvswi-i67c49753-b, or it is dropped.
@@ -228,7 +228,7 @@ in the chain neutron-openvswi-i67c49753-b, or it is dropped.
 Remember from the above that packets coming out of VM1 were directed to the chain
 neutron-openvswi-o67c49753-b:
 
-```bash
+{{< highlight bash >}}
 Chain neutron-openvswi-o67c49753-b (2 references)
 num   pkts bytes target     prot opt in     out     source               destination
 1        3   936 RETURN     udp  --  *      *       0.0.0.0/0            0.0.0.0/0            udp spt:68 dpt:67
@@ -238,7 +238,7 @@ num   pkts bytes target     prot opt in     out     source               destina
 5     3536  388K RETURN     all  --  *      *       0.0.0.0/0            0.0.0.0/0            state RELATED,ESTABLISHED
 6       76  4842 RETURN     all  --  *      *       0.0.0.0/0            0.0.0.0/0
 7        0     0 neutron-openvswi-sg-fallback  all  --  *      *       0.0.0.0/0            0.0.0.0/0
-```
+{{< /highlight >}}
 
 Looking at this chain rule by rule, first rule 1 allows DHCP request packets
 coming from the VM. Rule 2 sends all packets to the chain neutron-openvswi-s67c49753-b.
@@ -257,12 +257,12 @@ calling chain.
 
 The chain neutron-openvswi-s67c49753-b:
 
-```bash
+{{< highlight bash >}}
 Chain neutron-openvswi-s67c49753-b (1 references)
 num   pkts bytes target     prot opt in     out     source               destination
 1     3239  362K RETURN     all  --  *      *       10.1.0.2             0.0.0.0/0            MAC FA:16:3E:DC:BE:EB
 2        0     0 DROP       all  --  *      *       0.0.0.0/0            0.0.0.0/0                         all  --  *      *       0.0.0.0/0            0.0.0.0/0
-```
+{{< /highlight >}}
 
 Rule one returns all packets coming out of the VM with IP, 10.1.0.2 (the IP
 assigned to the VM) and with MAC address, FA:16:3E:DC:BE:EB, the MAC address
