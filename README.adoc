@@ -41,9 +41,20 @@ Alternatively, use the `make install` command to install Asciidoctor by using li
 and Bundler. You need to have the `gem` command in your path. For more information, see the
 link:https://rubygems.org/pages/download[Ruby Gem installation docs].
 
-====  Start a local server
+====  Build the documentation locally
 
-To view documents on your local site, you must start the Hugo server on your device.
+Build your content locally and check for build errors.
+
+1. Change directory to the root directory of your document repository.
+2. Run the following command:
+
+```sh
+make build-preview
+```
+
+====  Start a local web server
+
+To preview documents in a web browser such as Chrome, start the Hugo server on your device.
 
 Hugo has a live `serve` command that runs a small, lightweight web server on your computer so you can
 test your site locally without needing to upload it anywhere.  As you make changes to files in your project,
