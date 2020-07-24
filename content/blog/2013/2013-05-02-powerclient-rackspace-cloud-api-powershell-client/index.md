@@ -44,7 +44,7 @@ PowerClient is a Powershell based API client for Rackspace’s public cloud envi
 
 This Powershell module utilizes standard function definitions, and can be added to as needed, if you want to enable your own custom cmdlets (please contribute as you see fit!). Here is an example of one entire cmdlet, including its help documentation:
 
-```powershell
+{{< highlight powershell >}}
 function Get-CloudServerImages {
 
     Param(
@@ -121,7 +121,7 @@ c195ef3b-9195-4474-b6f7-16e5bd86acd0 CentOS 6.3                                 
 https://docs.rackspace.com/servers/api/v2/cs-devguide/content/Images-d1e4427.html
 #>
 }
-```
+{{< /highlight >}}
 
 As with any 3rd party script/module, please use this module at your own risk, even though I have tested it against my own personal account many times.
 
@@ -154,14 +154,14 @@ The way this script is built is as a Powershell module. Start by downloading as 
 
 For the sake of ease, place the "PowerClient" folder in the 2nd listed folder above. Once you’ve placed the folder in its new location, edit the “RSCloud.psm1” with Notepad (or you’re preferred text editor). In this file, the following lines need to be edited with you Rackspace cloud account information (place your information between the double quotes):
 
-```powershell
+{{< highlight powershell >}}
 ## Define Global Variables Needed for API Comms ##
 
 Set-Variable -Name CloudUsername -Value "" -Scope Global
 Set-Variable -Name CloudAPIKey -Value "" -Scope Global
 Set-Variable -Name CloudDDI -Value "" -Scope Global
 ## *The CloudDDI variable is your account number or tenant ID.  This can be found at the top right of your screen when logged into the Rackspace Cloud Control Panel*
-```
+{{< /highlight >}}
 
 After editing the file, please save it! You can then launch Powershell, and run `Import-Module PowerClient`. At this point, you should be able to run all the commands listed in the wiki (link below) at your leisure. 
 
@@ -178,4 +178,4 @@ Help for individual commands are built into the module and can be viewed by usin
 
 ##Video Walkthrough
 
-{% youtube OfHSAFmGQZo %}
+{{< youtube OfHSAFmGQZo >}}

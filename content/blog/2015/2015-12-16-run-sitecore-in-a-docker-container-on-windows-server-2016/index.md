@@ -28,27 +28,27 @@ My main objective is to take an existing Sitecore 8.0 installation on my laptop 
 
 Once you setup your Docker host, using the Microsoft PowerShell script, you need to create an IIS image. Use the following command to see a list of available images on your Docker host:
 
-```sh
+{{< highlight sh>}}
 docker images
-```
+{{< /highlight >}}
 
 You will see a list of available images on your Docker host.
 
-```sh
+{{< highlight sh>}}
 REPOSITORY          TAG                 IMAGE ID            CREATED             VIRTUAL SIZE
 windowsservercore   10.0.10586.0        6801d964fda5        6 weeks ago         0 B
 windowsservercore   latest              6801d964fda5        6 weeks ago         0 B
-```
+{{< /highlight >}}
 
 To search the Microsoft repo for what images are available, use the following command:
 
-```sh
+{{< highlight sh>}}
 docker search microsoft
-```
+{{< /highlight >}}
 
 You will see a list of images available to pull down.
 
-```sh
+{{< highlight sh>}}
 NAME                 DESCRIPTION                                     STARS     OFFICIAL   AUTOMATED
 microsoft/aspnet     ASP.NET 5 framework installed in a Windows...   1         [OK]       [OK]
 microsoft/django     Django installed in a Windows Server Core ...   1                    [OK]
@@ -66,7 +66,7 @@ microsoft/rails      Ruby on Rails installed in a Windows Serve...   1          
 microsoft/redis      Redis installed in a Windows Server Core b...   1                    [OK]
 microsoft/ruby       Ruby installed in a Windows Server Core ba...   1                    [OK]
 microsoft/sqlite     SQLite installed in a Windows Server Core ...   1                    [OK]
-```
+{{< /highlight >}}
 
 There is a good spread of images from Ruby, Redis, ASP.Net 5, IIS, etc. We could build our own image by launching a new container and installing IIS and ASP.Net, but let's pull an existing image instead.
 
@@ -74,32 +74,32 @@ On your Docker host, create a new directory called **c:\iisdemo**. We will use t
 
 To create a dockerfile, launch **notepad.exe** and type in the following instructions:
 
-```sh
+{{< highlight sh>}}
 FROM microsoft/iis
 #The FROM keyword sets the base image for subsequent instructions. We are telling docker to use the microsoft/iis image. We do not have this locally, but Docker is smart enough to pull it down locally for us.
 
 RUN dism /online /enable-feature /all /featurename:IIS-ASPNET45 /NoRestart
 #The RUN keyword will execute any commands in a new layer on top of the current image and commit the results. I am telling it to run dism to install the asp.net 4.5 features for IIS
-```
+{{< /highlight >}}
 
 Alternatively, we could use PowerShell to install asp.net 4.5. That dockerfile would look like
 
-```sh
+{{< highlight sh>}}
 FROM microsoft/iis
 RUN powershell -executionpolicy bypass -command "add-windowsfeature Web-Asp-Net45"
-```
+{{< /highlight >}}
 
 Please save your dockerfile to c:\iisdemo and call it "dockerfile". 
 
 Let's build the image, you'll need to execute the dockerfile by running
 
-```sh
+{{< highlight sh>}}
 docker build -t iisdemo c:\iisdemo\
-```
+{{< /highlight >}}
 
 The ` -t ` flag tags the new image as iisdemo and ` c:\iisdemo\ ` tells Docker where to look for the dockerfile. Following is an excerpt of the build process:
 
-```sh
+{{< highlight sh>}}
 c:\>docker build -t iisdemo c:\iisdemo\
 Sending build context to Docker daemon 2.048 kB
 Step 1 : FROM microsoft/iis
@@ -111,26 +111,26 @@ Status: Downloaded newer image for microsoft/iis:latest
  ---> 39b8f98ccaf1
 Step 2 : RUN dism /online /enable-feature /all /featurename:IIS-ASPNET45 /NoRestart
  ---> Running in c9f7059858d3
- ```
+{{< /highlight >}}
 
 If you now type
 
-```sh
+{{< highlight sh>}}
 docker images
-```
+{{< /highlight >}}
 
 You will see your new image in our local repo called iisdemo.
 Let's start our IIS web server container up and test to make sure we can connect. Before you start the container, you'll need the IP address of the container host, and you need to allow port 80 through the firewall.
 
 On the Docker host, open a PowerShell prompt and type:
 
-```sh
+{{< highlight sh>}}
 c:\>powershell
 Windows PowerShell
 Copyright (C) 2015 Microsoft Corporation. All rights reserved.
 
 PS C:\> New-NetFirewallRule -Name "TCP80" -DisplayName "HTTP on TCP/80" -Protocol tcp -LocalPort 80 -Action Allow -Enabled True
-```
+{{< /highlight >}}
 
 Exit out of your PowerShell prompt. Now you can build the iisdemo container by running
 
@@ -143,36 +143,36 @@ If I now browse from my laptop to the Docker VM host ip address, I am presented 
 
 I have a file called **raxcont.zip** which contains my Sitecore installation. There are a few ways to get the zip file into our container image, but I am going to copy it to my container host, and then use the ADD keyword in my dockerfile to copy it into my new container image. We can run a simple net use to grab our files and copy them to our Docker host
 
-```sh
+{{< highlight sh>}}
 mkdir c:\sitecore
 net use * \\ip\share
 copy z:\raxcont.zip c:\sitecore\
-```
+{{< /highlight >}}
 
 Launch **notepad.exe** to create a new dockerfile and paste the following into it
 
-```sh
+{{< highlight sh>}}
 FROM iisdemo
 RUN mkdir c:\sitecoreDocker
 WORKDIR /sitecoreDocker
 ADD raxcont.zip /sitecoreDocker/raxcont.zip
 RUN powershell -executionpolicy bypass -Command "expand-archive -Path 'c:\sitecoreDocker\raxcont.zip' -DestinationPath 'c:\inetpub\wwwroot\'"
 RUN /windows/system32/inetsrv/appcmd.exe set vdir "Default Web Site/" -physicalPath:"c:\inetpub\wwwroot\raxcont\website"
-```
+{{< /highlight >}}
 
 When we build from this dockerfile, it will use our iisdemo image, make a directory called c:\sitecoreDocker, add the file **raxcont.zip** to c:\sitecoreDocker\, unzip the file to c:\inetpub\wwwroot and finally set the default web site physical path to our unzipped location.
 
 Let's build our image by typing
 
-```sh
+{{< highlight sh>}}
 docker build -t sc c:\sitecore
-```
+{{< /highlight >}}
 
 We can now launch a container with our Sitecore deployment.
 
-```sh
+{{< highlight sh>}}
 docker run --rm -it -p 80:80 sc cmd
-```
+{{< /highlight >}}
 
 Browse to your docker host IP and the default sitecore page shows up.
 

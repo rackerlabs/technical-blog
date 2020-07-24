@@ -166,7 +166,8 @@ Save the changes to the file and then edit the following config file next.
 
 **http-logging.cfg.xml**
 
-{{< highlight go  >}}<?xml version="1.0" encoding="UTF-8"?>
+{{< highlight go  >}}
+<?xml version="1.0" encoding="UTF-8"?>
 
 <http-logging xmlns="http://docs.rackspacecloud.com/repose/http-logging/v1.0">
     <!-- The id attribute is to help the user easily identify the log -->
@@ -178,14 +179,16 @@ Save the changes to the file and then edit the following config file next.
             <file location="/var/log/repose/repose.log"/>
         </targets>
     </http-log>
-</http-logging>{{< / highlight >}}
+</http-logging>
+{{< / highlight >}}
 
 Save the changes to the file and then edit the following config file next.
 We're just setting a few simple defaults.
 
 **container.cfg.xml**
 
-{{< highlight go  >}}<?xml version="1.0" encoding="UTF-8"?>
+{{< highlight go  >}}
+<?xml version="1.0" encoding="UTF-8"?>
 
 <repose-container xmlns='http://docs.rackspacecloud.com/repose/container/v2.0'>
     <deployment-config http-port="8888" connection-timeout="30000" read-timeout="30000">
@@ -196,13 +199,15 @@ We're just setting a few simple defaults.
         <logging-configuration href="log4j.properties"/>
 
     </deployment-config>
-</repose-container>{{< / highlight >}}
+</repose-container>
+{{< / highlight >}}
 
 Save the changes to the file. The final file to modify is the following:
 
 **system-model.cfg.xml**
 
-{{< highlight go  >}}<?xml version="1.0" encoding="UTF-8"?>
+{{< highlight go  >}}
+<?xml version="1.0" encoding="UTF-8"?>
 
 <system-model xmlns="http://docs.rackspacecloud.com/repose/system-model/v2.0">
   <repose-cluster id="repose">
@@ -222,7 +227,8 @@ Save the changes to the file. The final file to modify is the following:
       <endpoint id="openrepose" protocol="http" hostname="localhost" root-path="/" port="8080" default="true"/>
     </destinations>
   </repose-cluster>
-</system-model>{{< / highlight >}}
+</system-model>
+{{< / highlight >}}
 
 This file is used to enable the filters that we want to use and to define the
 order in which they should be called. It also sets the endpoint which I pointed
@@ -265,7 +271,8 @@ Now, go ahead and modify the rate limiting file to accept 10 requests per second
 
 **rate-limiting.cfg.xml**
 
-{{< highlight go  >}}<?xml version="1.0" encoding="UTF-8"?>
+{{< highlight go  >}}
+<?xml version="1.0" encoding="UTF-8"?>
 
 <rate-limiting delegation="false" xmlns="http://docs.rackspacecloud.com/repose/rate-limiting/v1.0">
     <!--
@@ -286,7 +293,8 @@ Now, go ahead and modify the rate limiting file to accept 10 requests per second
     <limit-group id="standard-ip-limits-superuser" groups="IP_Super">
         <limit uri="/*" uri-regex="/(.*)" http-methods="GET" unit="SECOND" value="5" />
     </limit-group>
-</rate-limiting>{{< / highlight >}}
+</rate-limiting>
+{{< / highlight >}}
 
 You should be able to hit the API 10 times per second now.
 

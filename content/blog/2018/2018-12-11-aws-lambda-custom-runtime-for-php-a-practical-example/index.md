@@ -108,7 +108,7 @@ step, and then... read on!
 
 Now, let's compile PHP by running the following commands:
 
-```bash
+{{< highlight bash >}}
 # Update packages and install needed compilation dependencies
 sudo yum update -y
 sudo yum install autoconf bison gcc gcc-c++ libcurl-devel libxml2-devel -y
@@ -129,29 +129,29 @@ cd php-src-php-7.3.0
 ./buildconf --force
 ./configure --prefix=/home/ec2-user/php-7-bin/ --with-openssl=/usr/local/ssl --with-curl --with-zlib
 make install
-```
+{{< /highlight >}}
 
 Once that's all completed, run `/home/ec2-user/php-7-bin/bin/php -v` to verify
 all went well. You should see some variation of the following, depending on the
 version you installed:
 
-```bash
+{{< highlight bash >}}
 PHP 7.3.0 (cli) (built: Dec 11 2018 17:45:29) ( NTS )
 Copyright (c) 1997-2018 The PHP Group
 Zend Engine v3.3.0-dev, Copyright (c) 1998-2018 Zend Technologies
-```
+{{< /highlight >}}
 
 ### Preparing to write some code
 
 Now let's set up a working directory to package up and deploy our example:
 
-```bash
+{{< highlight bash >}}
 mkdir -p ~/php-example/{bin,src}/
 cd ~/php-example
 touch ./src/{hello,goodbye}.php
 touch ./bootstrap && chmod +x ./bootstrap
 cp ~/php-7-bin/bin/php ./bin
-```
+{{< /highlight >}}
 
 Which will give us this initial directory structure:
 
@@ -189,29 +189,29 @@ evolves.
 
 First, install Composer:
 
-```bash
+{{< highlight bash >}}
 curl -sS https://getcomposer.org/installer | ./bin/php
-```
+{{< /highlight >}}
 
 Which should output something like this:
 
-```bash
+{{< highlight bash >}}
 All settings correct for using Composer
 Downloading...
 
 Composer (version 1.8.0) successfully installed to: /home/ec2-user/php-example/composer.phar
 Use it: php composer.phar
-```
+{{< /highlight >}}
 
 Next, install Guzzle:
 
-```bash
+{{< highlight bash >}}
 ./bin/php composer.phar require guzzlehttp/guzzle
-```
+{{< /highlight >}}
 
 Which will give us this:
 
-```bash
+{{< highlight bash >}}
 Using version ^6.3 for guzzlehttp/guzzle
 ./composer.json has been updated
 Loading composer repositories with package information
@@ -225,7 +225,7 @@ Package operations: 5 installs, 0 updates, 0 removals
 guzzlehttp/guzzle suggests installing psr/log (Required for using the Log middleware)
 Writing lock file
 Generating autoload files
-```
+{{< /highlight >}}
 
 ### Building the custom runtime
 
@@ -244,7 +244,7 @@ use our PHP binary to execute the remainder of the code.
 
 Here's what our initial `bootstrap` script looks like:
 
-```php
+{{< highlight php >}}
 #!/opt/bin/php
 <?php
 
@@ -266,7 +266,7 @@ do {
     // Submit the response back to the runtime API.
     sendResponse($request['invocationId'], $response);
 } while (true);
-```
+{{< /highlight >}}
 
 The overall flow of things is fairly straightforward. We obtain the next request
 that needs to be handled, execute the code to handle it, submit a response, then
@@ -286,7 +286,7 @@ Now that we've got the overall structure of the request processing loop in place
 let's add the `getNextRequest()` and `sendResponse()` implementations to our
 `bootstrap`.
 
-```php
+{{< highlight php >}}
 function getNextRequest()
 {
     $client = new \GuzzleHttp\Client();
@@ -297,7 +297,7 @@ function getNextRequest()
         'payload' => json_decode((string) $response->getBody(), true)
     ];
 }
-```
+{{< /highlight >}}
 
 Here, we're making a `GET` request to the runtime API to obtain the next Lambda
 invocation that needs to be serviced. Each response will provide some information
@@ -307,7 +307,7 @@ We'll also grab the request payload to supply request parameters to our function
 We'll retrieve those and return a simple associative array to make these values
 available to the caller.
 
-```php
+{{< highlight php >}}
 function sendResponse($invocationId, $response)
 {
     $client = new \GuzzleHttp\Client();
@@ -316,7 +316,7 @@ function sendResponse($invocationId, $response)
         ['body' => $response]
     );
 }
-```
+{{< /highlight >}}
 
 To send the response, we `POST` back to the runtime API with whatever output
 text our functions return.
@@ -329,25 +329,25 @@ key with a value that they will say "Hello" or "Goodbye" to.
 
 Save the following to `src/hello.php`:
 
-```php
+{{< highlight php >}}
 <?php
 
 function hello($data)
 {
     return "Hello, {$data['name']}!";
 }
-```
+{{< /highlight >}}
 
 and save this to `src/goodbye.php`:
 
-```php
+{{< highlight php >}}
 <?php
 
 function goodbye($data)
 {
     return "Goodbye, {$data['name']}!";
 }
-```
+{{< /highlight >}}
 
 Before we create and test our custom runtime API and PHP functions, let's take
 a quick inventory. By now we should have the following items:
@@ -361,20 +361,20 @@ a quick inventory. By now we should have the following items:
 
 Let's prepare our layers and function code for publication!
 
-```bash
+{{< highlight bash >}}
 zip -r runtime.zip bin bootstrap
 zip -r vendor.zip vendor/
 zip hello.zip src/hello.php
 zip goodbye.zip src/goodbye.php
-```
+{{< /highlight >}}
 
 Before publishing everything, we'll need to make sure we're on a recent enough
 version of the AWS CLI that has the new Lambda capabilities available. The
 easiest way to do this is to just update to the latest version:
 
-```bash
+{{< highlight bash >}}
 sudo pip install --upgrade awscli
-```
+{{< /highlight >}}
 
 Now, we can publish our two layers.
 
@@ -389,7 +389,7 @@ Lambda:
 
 Save the following to `/tmp/trust-policy.json`:
 
-```json
+{{< highlight json >}}
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -402,23 +402,23 @@ Save the following to `/tmp/trust-policy.json`:
     }
   ]
 }
-```
+{{< /highlight >}}
 
 and then run:
 
-```bash
+{{< highlight bash >}}
 aws iam create-role \
     --role-name LambdaPhpExample \
     --path "/service-role/" \
     --assume-role-policy-document file:///tmp/trust-policy.json
-```
+{{< /highlight >}}
 
 Make note of the `Role.Arn` output value (e.g. `arn:aws:iam::XXXXXXXXXXXX:role/service-role/LambdaPhpExample`),
 which you'll need for the next steps.
 
 Now, let's create our `runtime` and `vendor` layers.
 
-```bash
+{{< highlight bash >}}
 aws lambda publish-layer-version \
     --layer-name php-example-runtime \
     --content fileb://runtime.zip \
@@ -428,7 +428,7 @@ aws lambda publish-layer-version \
     --layer-name php-example-vendor \
     --zip-file fileb://vendor.zip \
     --region us-east-1
-```
+{{< /highlight >}}
 
 Make note of each command's `LayerVersionArn` output value (e.g. `arn:aws:lambda:us-east-1:XXXXXXXXXXXX:layer:php-example-runtime:1`),
 which you'll need for the next steps.
@@ -436,7 +436,7 @@ which you'll need for the next steps.
 Now, let's create our two functions (be sure to replace the XXXXXXXXXXXX with
 your account number):
 
-```bash
+{{< highlight bash >}}
 aws lambda create-function \
      --function-name php-example-hello \
      --handler hello \
@@ -456,13 +456,13 @@ aws lambda create-function \
      --region us-east-1 \
      --layers "arn:aws:lambda:us-east-1:XXXXXXXXXXXX:layer:php-example-runtime:1" \
               "arn:aws:lambda:us-east-1:XXXXXXXXXXXX:layer:php-example-vendor:1"
-```
+{{< /highlight >}}
 
 ### Testing
 
 And finally, let's invoke them!
 
-```bash
+{{< highlight bash >}}
 aws lambda invoke \
     --function-name php-example-hello \
     --region us-east-1 \
@@ -478,13 +478,13 @@ aws lambda invoke \
     --query 'LogResult' \
     --output text \
     --payload '{"name": "World"}' goodbye-output.txt | base64 --decode
-```
+{{< /highlight >}}
 
 The `--query 'LogResult' --output text` parameters and `| base64 --decode`
 display the logging output you'd normally see in CloudWatch logs to the CLI. If
 all goes well, the output should look something like this:
 
-```bash
+{{< highlight bash >}}
 START RequestId: bf3a91af-f380-11e8-8a98-99a71fd9601e Version: $LATEST
 END RequestId: bf3a91af-f380-11e8-8a98-99a71fd9601e
 REPORT RequestId: bf3a91af-f380-11e8-8a98-99a71fd9601e	Init Duration: 141.20 ms	Duration: 74.11 ms	Billed Duration: 300 ms 	Memory Size: 128 MB	Max Memory Used: 38 MB
@@ -492,18 +492,18 @@ REPORT RequestId: bf3a91af-f380-11e8-8a98-99a71fd9601e	Init Duration: 141.20 ms	
 START RequestId: d14d2f9b-f380-11e8-8a98-99a71fd9601e Version: $LATEST
 END RequestId: d14d2f9b-f380-11e8-8a98-99a71fd9601e
 REPORT RequestId: d14d2f9b-f380-11e8-8a98-99a71fd9601e	Init Duration: 101.65 ms	Duration: 77.20 ms	Billed Duration: 200 ms 	Memory Size: 128 MB	Max Memory Used: 27 MB
-```
+{{< /highlight >}}
 
 Subsequent invocations of the same functions will not have Init phases (so long
 as there's an active runtime waiting to process new work), and the duration of
 the Invoke phase is generally lower. For example:
 
-```bash
+{{< highlight bash >}}
 REPORT RequestId: 4bbf021d-fd75-11e8-9129-574c933ae3eb	Duration: 4.41 ms	Billed Duration: 100 ms 	Memory Size: 128 MB	Max Memory Used: 38 MB
 REPORT RequestId: 4c97876f-fd75-11e8-becf-a9bea4741119	Duration: 9.59 ms	Billed Duration: 100 ms 	Memory Size: 128 MB	Max Memory Used: 38 MB
 REPORT RequestId: 4d298e9b-fd75-11e8-ac02-d96b0f356492	Duration: 2.68 ms	Billed Duration: 100 ms 	Memory Size: 128 MB	Max Memory Used: 38 MB
 REPORT RequestId: 4d971d18-fd75-11e8-a534-73dd2a333b34	Duration: 1.94 ms	Billed Duration: 100 ms 	Memory Size: 128 MB	Max Memory Used: 38 MB
-```
+{{< /highlight >}}
 
 A quick `cat` of the `hello-output.txt` and `goodbye-output.txt` files also
 reveals the `Hello, World!` and `Goodbye, World!` output, respectively.

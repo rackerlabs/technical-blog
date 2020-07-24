@@ -40,7 +40,7 @@ Compilation for automated builds into physical devices isn't terribly difficult 
 
 When it comes to the actual build step, it will look like this:
 
-```bash
+{{< highlight bash >}}
 security list-keychains
 
 security unlock-keychain -p <YOURPASSWORD> \
@@ -51,7 +51,7 @@ security unlock-keychain -p <YOURPASSWORD> \
 > CODE_SIGN_IDENTITY="iPhone Developer: \
 > Firstname Lastname (XXXXXXXXXX)" \
 > PROVISIONING_PROFILE="2823AD7F-XXXX-XXXX-XXXX-XXXXXXXXXXX"
-```
+{{< /highlight >}}
 
 Yeah, it’s only a few commands - three whole lines. Should be simple, right?
 
@@ -59,26 +59,26 @@ Well, there isn't a ton of documentation out there, which is why I'm writing thi
 
 Taking each line in turn:
 
-```bash
+{{< highlight bash >}}
 security list-keychains
-```
+{{< /highlight >}}
 
 The reason this command is there is for debugging. The reason debugging is nice is because when Jenkins runs a job on OSX, the loginkeys available are different from the loginkeys when you ssh. In particular, the login.keychain is locked when Jenkins runs a job under the build user. It is useful to see what was happening, although you can remove this command without causing harm.
 
-```bash
+{{< highlight bash >}}
 security unlock-keychain -p <YOURPASSWORD> \
 > $HOME/Library/Keychains/login.keychain
-```
+{{< /highlight >}}
 
 ssh'ing or physically logging in at the machine will unlock your login.keychain; Jenkins jobs don't ([see this URL][4] for a good explanation). Instead, we unlock the keychain explicitly. If we don't, the code signing in the xcodebuild command will cause OSX to give a popup window asking if xcodebuild has permission to sign code on your behalf. Because Jenkins jobs have no UI, the popup cannot appear and you'll see this in the build log: "user interaction is not allowed." This is OSX's way of saying "I tried to give a popup window to a process that had no GUI to see it."
 
-```bash
+{{< highlight bash >}}
 /usr/bin/xcodebuild -target "Rackspace Cloud" –configuration \
 > Release CODE_SIGNING_REQUIRED=Y \ 
 > CODE_SIGN_IDENTITY="iPhone Developer: \
 > Firstname Lastname (XXXXXXXXXX)" \
 > PROVISIONING_PROFILE="2823AD7F-XXXX-XXXX-XXXX-XXXXXXXXXXX"
-```
+{{< /highlight >}}
 
 This is the actual build command. I'll take this one apart option by option:
 
@@ -142,7 +142,7 @@ Now we want to wrap all of this stuff up in Jenkins. Note, we are not going to u
 
 To start in Jenkins, just do a freestyle job and add an "Execute Shell" step and paste in the xcodebuild command we mentioned earlier:
 
-```bash
+{{< highlight bash >}}
 security list-keychains
 
 security unlock-keychain -p <YOURPASSWORD> \
@@ -153,7 +153,7 @@ security unlock-keychain -p <YOURPASSWORD> \
 > CODE_SIGN_IDENTITY="iPhone Developer: \
 > Firstname Lastname (XXXXXXXXXX)" \
 > PROVISIONING_PROFILE="2823AD7F-XXXX-XXXX-XXXX-XXXXXXXXXXX"
-```
+{{< /highlight >}}
 
 But of course, change all the bits of data to match your own needs. This will get you as far as compiling.
 
@@ -166,10 +166,10 @@ So, now you have a properly signed app that will work on your device. How would 
 3. Make sure the iOS device is connected to the Mac Jenkins machine via USB
 4. Run this command:
 
-```bash
+{{< highlight bash >}}
 fruitstrap -i <UUID_OF_PHONE_NOT_PROVISIONFILE> -b \
 > ${WORKSPACE}/build/<target-build>/yourapp 
-```
+{{< /highlight >}}
 
 … or wherever xcodebuild ended up creating your .app dir.
 

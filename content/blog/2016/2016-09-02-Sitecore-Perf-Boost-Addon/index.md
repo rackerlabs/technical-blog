@@ -21,7 +21,7 @@ Sitecore has the option of making use of TempDB in Sql Server to speed up your s
 
 The script that creates the table structure and stored procedures to make use of TempDB is located in the extracted Sitecore zip file path **Sitecore 8.1 rev. xxxxxx\Databases\Scripts\**  The file **Sessions db performance boost.sql** This post will not go over what this file does. However, let me point out that it creates a stored procedure in the Master db that creates the table and index structure in the TempDB, but it does not set the permissions to actually access it. We can create a script using T-SQL that will reinitialize the table and index structure and re-create the user with correct permissions. This assumes that you ran **Sessions db performance boost.sql** already.
 
-```sh
+{{< highlight sh >}}
 
 exec [master].[dbo].[Sitecore_InitializeSessionState] --create the tables and indexes in TempDB
 
@@ -33,7 +33,7 @@ ALTER ROLE [db_datareader] ADD MEMBER [cdsAccount] -- assign the data reader rol
 ALTER ROLE [db_datawriter] ADD MEMBER [cdsAccount] -- assign the data writer role to our db user
 END
 
-```
+{{< /highlight >}}
 
 The T-SQL executes the stored procedure to re-initialize the table and index structure. Then it checks to see if the database user **cdsAccount** exists. If the user does not exist, it creates the user and assigns the data reader and data writer role to the account.
 

@@ -76,7 +76,7 @@
     font-weight: 600;
     line-height: normal;
   }
-  a[data-category="aws"], a[data-category="osad"] {
+  a[data-category="aws"], a[data-category="osad"], a[data-category="sdk"] {
     letter-spacing: -1.5px;
   }
   .post--category {
@@ -144,7 +144,7 @@
 
       li {
         list-style: disc;
-        margin-left: 1rem;
+        margin-left: 1.5rem;
       }
     }
 
@@ -356,6 +356,10 @@
     height: auto;
     display: block;
   }
+    li {
+      list-style-type: disc;
+      margin-left: 1.5rem;
+    }
 }
 
 .post-avatar {
@@ -401,7 +405,7 @@
   pre {
     background-color: transparent !important;
     border: none;
-    overflow-x: scroll;
+    overflow-x: auto;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     padding-bottom: .5em;
@@ -410,6 +414,7 @@
 }
 
 .figure {
+  margin: 1rem 0;
   img {
     display: block;
   }

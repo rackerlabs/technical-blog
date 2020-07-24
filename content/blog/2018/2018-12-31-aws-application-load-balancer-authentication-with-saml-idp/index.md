@@ -169,7 +169,7 @@ would appear in the **User pool attribute** dropdown with the `custom:` prefix.
 To see which claims are available to you, have a look at your IdP's
 `FederationMetadata.xml` file and look for tags in this format:
 
-```xml
+{{< highlight xml >}}
 <auth:ClaimType
   xmlns:auth="https://docs.oasis-open.org/wsfed/authorization/200706"
   uri="https://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress"
@@ -177,7 +177,7 @@ To see which claims are available to you, have a look at your IdP's
   <auth:DisplayName>Email</auth:DisplayName>
   <auth:Description>Email address of the user.</auth:Description>
 </auth:ClaimType>
-```
+{{< /highlight >}}
 
 **NOTE:** You must specify the full `uri` in the **SAML attribute** input - the
 simple `name` or `emailaddress` identifiers will not suffice.

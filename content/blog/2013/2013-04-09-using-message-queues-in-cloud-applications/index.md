@@ -98,7 +98,7 @@ RabbitMQ should be running and ready to handle messages to our worker, Celery.
 Now, run the following command to set up a Celery application to perform some
 work by creating a file called **tasks.py**:
 
-```python
+{{< highlight python >}}
 from celery import Celery
 
 celery = Celery('tasks', broker='amqp://guest@localhost//')
@@ -106,20 +106,20 @@ celery = Celery('tasks', broker='amqp://guest@localhost//')
 @celery.task
 def add(x, y):
     return x + y
-```
+{{< /highlight >}}
 
 In this file, we define a message broker (RabbitMQ) as well as defining a worker
 task that adds two numbers together. Next, we need to make sure Celery is
 running and try to run our task by running the following commands:
 
-```bash
+{{< highlight bash >}}
 celery -A tasks worker --loglevel=info
-```
+{{< /highlight >}}
 
-```python
+{{< highlight python >}}
 >>> from tasks import add
 >>> add.delay(4, 4)
-```
+{{< /highlight >}}
 
 Celery can store results in a database (or other
 [backend systems](http://docs.celeryproject.org/en/latest/userguide/tasks.html#task-result-backends))

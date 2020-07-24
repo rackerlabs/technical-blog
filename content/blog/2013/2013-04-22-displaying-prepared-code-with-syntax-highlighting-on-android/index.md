@@ -21,9 +21,9 @@ This formatting solution still uses [TextView](http://developer.android.com/refe
 
 Of course this is tedious at best, and for larger blocks this can be impractical. What we need is to generate formatted content from whole files. Luckily, Vim provides the highlighting we need as well as a way to export code in the format we are looking for.
 
-```bash
+{{< highlight bash >}}
 vim src/com/example/myapp/MyFile.java
-```
+{{< /highlight >}}
 
 We’ll be using Vim’s `:TOhtml` command, but don’t execute it just yet. As the name suggests, this command exports your file to HTML with appropriate CSS styling to match what you see in your Vim window. Yes, this command is standard in Vim; no, it doesn’t require any plugins. Nice, eh?
 

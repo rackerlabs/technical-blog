@@ -31,13 +31,13 @@ Ansible includes a [Docker module](http://docs.ansible.com/docker_module.html) t
 
 The minimum information that you can specify is the name of an image. It's good practice to also be explicit about the desired state, even though there's a default value. I also prefer to name my containers whenever I can, so that (1) the output of `docker ps` is as readable as possible and (2) the container is convenient to reference from other containers and tools later.
 
-```yaml
+{{< highlight yaml >}}
 - name: Database
   docker:
     name: database
     image: postgres:9.4
     state: started
-```
+{{< /highlight >}}
 
 This task will pull the latest Postgres image from DockerHub if it isn't present and then launch a single container. However, if any container called "database" is already running on the current host, it won't launch anything.
 
@@ -49,7 +49,7 @@ These two options, added in the recent Ansible 1.9.0 release, allow you to use t
 
 Using them together lets you keep a container up to date, keep its configuration up to date, and automatically propagate container restarts to any dependent containers. Handy!
 
-```yaml
+{{< highlight yaml >}}
 - name: My application
   docker:
     name: web
@@ -61,7 +61,7 @@ Using them together lets you keep a container up to date, keep its configuration
       SHH_SECRET: "{{ "{{ from_the_vault" }} }}"
     link:
     - "database:database"
-```
+{{< /highlight >}}
 
 I like to use these parameters on my own application containers, because they change often and because I can be sure I'm writing code that will gracefully handle the occasional restart. It's probably not a good idea to use them on containers that provide infrastructure services, like your database, because you won't want those to restart unless you really need them to!
 
@@ -71,7 +71,7 @@ Another important option you should consider using is `restart_policy`, which le
 
 You can instruct the Docker daemon to restart your container any time its process terminates by adding the `restart_policy` parameter:
 
-```yaml
+{{< highlight yaml >}}
 - name: My application
   docker:
     name: web
@@ -79,7 +79,7 @@ You can instruct the Docker daemon to restart your container any time its proces
     pull: always
     state: reloaded
     restart_policy: always
-```
+{{< /highlight >}}
 
 Setting it to `on-failure` allows the container to exit if its process exits cleanly (with a 0 status). If you're concerned about flapping, the number of restarts before Docker will give up can also be controlled by setting `restart_policy_retry` to a nonzero count.
 

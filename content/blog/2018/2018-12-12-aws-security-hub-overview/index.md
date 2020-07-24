@@ -92,13 +92,13 @@ SecurityHub.
 what GuardDuty has identified for us in this regard:
 
 
-``` bash
+{{< highlight bash>}}
 aws securityhub get-findings --filter '{"ResourceType": [ { "Comparison": "CONTAINS", "Value": "AwsEc2Instance" } ], "Type": [{"Comparison": "CONTAINS", "Value": "TTPs/Command and Control/CryptoCurrency:EC2-BitcoinTool.B!DNS"}] }'
-```
+{{< /highlight >}}
 
 And, indeed, we do have a match output in the **AWS Security Finding format**:
 
-```JSON
+{{< highlight json>}}
 {
     "Findings": [
         {
@@ -173,19 +173,19 @@ And, indeed, we do have a match output in the **AWS Security Finding format**:
         }
     ]
 }
-```
+{{< /highlight >}}
 
 * Let's create an `insight` with these filter criteria so that we can quickly
 isolate further findings of this type:
 
 
-```bash
+{{< highlight bash >}}
 aws securityhub create-insight --name "bitcoin miner"  --filter '{"ResourceType": [ { "Comparison": "CONTAINS", "Value": "AwsEc2Instance" } ], "Type": [{"Comparison": "CONTAINS", "Value": "TTPs/Command and Control/CryptoCurrency:EC2-BitcoinTool.B!DNS"}] }' --group-by AwsAccountId
 {
     "InsightArn": "arn:aws:securityhub:eu-west-1:9876123456789:insight/9876123456789/custom/45be0f15-d947-4bf7-8c27-83eef7487141"
 }
 
-```
+{{< /highlight >}}
 
 * There is no AWS CLI option to create an `action` just now, so we need to
 go to the **AWS Console -> SecurityHub -> Settings -> Custom actions**. Click
@@ -195,19 +195,19 @@ on **Create custom action**.
 
 * It's now time to create our **CloudWatch Events** rule:
 
-```bash
+{{< highlight bash >}}
 aws events put-rule --cli-input-json '{"Name": "SecHub", "EventPattern": "{\"source\":[\"aws.securityhub\"],\"resources\":[\"arn:aws:securityhub:eu-west-1:9876123456789:action/custom/bitcoin-miner-dns\"]}","State": "ENABLED"}'
 {
     "RuleArn": "arn:aws:events:eu-west-1:9876123456789:rule/SecHub"
 }
-```
+{{< /highlight >}}
 
 * For our `rule` `target`, we'll make use of an SNS topic which is already in
 use for other security notifications:
 
-```bash
+{{< highlight bash >}}
 aws events put-targets --rule SecHub --targets "Id"="1","Arn"="arn:aws:sns:eu-west-1:9876123456789:security_events"
-```
+{{< /highlight >}}
 
 our subscription to this topic looks like this:
 

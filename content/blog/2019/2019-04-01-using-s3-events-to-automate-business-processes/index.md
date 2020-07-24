@@ -89,7 +89,7 @@ Click **Create Function**.
 
 Skip down to the function code and paste in the following code:
 
-```javascript
+{{< highlight javascript>}}
 var aws = require('aws-sdk');
 var ssm = new aws.SSM();
 console.log('Loading function');
@@ -136,7 +136,7 @@ ssm.sendCommand(params, function(err, data) {
 });
 
 };
-```
+{{< /highlight >}}
 
 Scroll down to Execution role and click **View the role on the IAM console**
 
@@ -146,7 +146,7 @@ Click **Attach policy** and look for the **AmazonSSMAutomationRole**.
 
 Next, click on the policy name and go to the json tab and paste in the following:
 
-```json
+{{< highlight json>}}
 {
 	"Version": "2012-10-17",
 	"Statement": [
@@ -171,7 +171,7 @@ Next, click on the policy name and go to the json tab and paste in the following
 		}
 	]
 }
-```
+{{< /highlight >}}
 
 Replace the region _us-east-1_ and the account number _111111111111_ with your
 region and account number.
@@ -190,7 +190,7 @@ Document type is **Command**
 
 For the content, remove the {} brackets and enter in the document below:
 
-```json
+{{< highlight json>}}
 {
 	"schemaVersion": "1.2",
 	"description": "Sync an S3 Bucket to local directory",
@@ -222,7 +222,7 @@ For the content, remove the {} brackets and enter in the document below:
 		}
 	}
 }
-```
+{{< /highlight >}}
 
 Click **Create Document**
 

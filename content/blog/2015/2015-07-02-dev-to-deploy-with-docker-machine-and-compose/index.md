@@ -38,16 +38,16 @@ The application we're going to deploy is a simple guestbook. It's enough to demo
 
 We'll be working out of a repo on GitHub so let's start by cloning that repo.
 
-```bash
+{{< highlight bash >}}
 git clone https://github.com/rackerlabs/guestbook.git -b dmc guestbook
 cd guestbook
-```
+{{< /highlight >}}
 
 It's also pretty easy to lose track of what Docker host you're using below. I recommend setting this alias to help you easily find out what host you're talking to.
 
-```bash
+{{< highlight bash >}}
 alias de='env | grep DOCKER_'
-```
+{{< /highlight >}}
 
 Now you can just type `de` to see what Docker environment variables are set.
 
@@ -63,12 +63,12 @@ Our local development environment (dev env) is pretty simple because we don't ha
 
 We'll use docker-machine to create a Docker host for our containers. Then we configure Docker to use that host. Finally, docker-compose will bring up our entire dev env.
 
-```bash
+{{< highlight bash >}}
 docker-machine create --driver virtualbox guestbook-dev
 docker-machine ip guestbook-dev # note the Guestbook Dev IP Address
 eval "$(docker-machine env guestbook-dev)"
 docker-compose up
-```
+{{< /highlight >}}
 
 While that's running, read through [docker-compose.yml](https://github.com/rackerlabs/guestbook/blob/dmc/docker-compose.yml) to get a feel for what it's doing for us. It's well commented so it should be self-explanatory. Note how it extends [docker-compose-common.yml](https://github.com/rackerlabs/guestbook/blob/dmc/docker-compose-common.yml) as its basis for the common components. You can find the full description of the Docker Compose file format in the [docker-compose.yml reference](https://docs.docker.com/compose/yml/).
 
@@ -76,10 +76,10 @@ Once everything has downloaded and is running, we need to initialize the databas
 
 Open a new terminal and change to the guestbook dir.
 
-```bash
+{{< highlight bash >}}
 eval "$(docker-machine env guestbook-dev)"
 docker-compose run --rm --no-deps app python app.py create_db
-```
+{{< /highlight >}}
 
 Why go to the trouble of running a one-off container for this? Because docker-compose automatically injects the environment variables we need to connect to the database. No configuration for us to do.
 
@@ -95,20 +95,20 @@ Open app/templates/index.html in your favourite text editor. Make a change and s
 
 This part is trickier because we have to setup credentials and worry about security. If you don't have a Rackspace account, you can get free credit by [signing up for developer+](https://developer.rackspace.com/signup/). Once your account is ready, you need to [find your API key](https://support.rackspace.com/how-to/view-and-reset-your-api-key/). Set the following environment variables in your terminal.
 
-```bash
+{{< highlight bash >}}
 export OS_USERNAME=your-rackspace-username
 export OS_API_KEY=your-rackspace-api-key
 export OS_REGION_NAME=IAD
-```
+{{< /highlight >}}
 
 #### Initialize the environment
 
 We'll use docker-machine to create a Docker host for our containers.
 
-```bash
+{{< highlight bash >}}
 docker-machine create --driver rackspace guestbook
 docker-machine ip guestbook # note the Guestbook IP Address
-```
+{{< /highlight >}}
 
 #### Secure the environment
 
@@ -116,7 +116,7 @@ Disclaimer: This is not even close to the most secure configuration possible. Th
 
 Install [fail2ban]( https://www.fail2ban.org/) to prevent brute force login attempts on your server and setup a firewall with [ufw](https://help.ubuntu.com/community/UFW) to only allow the ports we need. Note that no output appears until the command is completely done so a bit of patience is required.
 
-```bash
+{{< highlight bash >}}
 docker-machine ssh guestbook "apt-get update"
 docker-machine ssh guestbook "apt-get -y install fail2ban"
 docker-machine ssh guestbook "ufw default deny"
@@ -124,13 +124,13 @@ docker-machine ssh guestbook "ufw allow ssh"
 docker-machine ssh guestbook "ufw allow http"
 docker-machine ssh guestbook "ufw allow 2376" # Docker
 docker-machine ssh guestbook "ufw --force enable"
-```
+{{< /highlight >}}
 
 #### Continue to initialize the environment
 
 Before we have Docker Compose build out our remote deployment, we need to set some environment variables for our database. These environment variables are used by the docker-compose-prod.yml file. We do this to prevent ourselves from committing sensitive data to GitHub.
 
-```bash
+{{< highlight bash >}}
 export MYSQL_USER=guestbook-admin
 export MYSQL_PASSWORD=$(hexdump -v -e '1/1 "%.2x"' -n 32 /dev/random)
 export MYSQL_ROOT_PASSWORD=$(hexdump -v -e '1/1 "%.2x"' -n 32 /dev/random)
@@ -138,23 +138,23 @@ export MYSQL_ROOT_PASSWORD=$(hexdump -v -e '1/1 "%.2x"' -n 32 /dev/random)
 echo "MYSQL_USER=$MYSQL_USER"
 echo "MYSQL_PASSWORD=$MYSQL_PASSWORD"
 echo "MYSQL_ROOT_PASSWORD=$MYSQL_ROOT_PASSWORD"
-```
+{{< /highlight >}}
 
 Now we configure Docker to use that host. Finally, docker-compose will build and run our containers in the background so we won't see any colourful log messages like we did in local development.
 
-```bash
+{{< highlight bash >}}
 eval "$(docker-machine env guestbook)"
 docker-compose --file docker-compose-prod.yml build
 docker-compose --file docker-compose-prod.yml up -d
-```
+{{< /highlight >}}
 
 While that's running, read through [docker-compose-prod.yml](https://github.com/rackerlabs/guestbook/blob/dmc/docker-compose-prod.yml) to get a feel for what it's doing for us. Note how it's given the default docker-compose.yml file name so we don't have to include the file name in the docker-compose commands. It's well commented so it should be self-explanatory. It too extends [docker-compose-common.yml](https://github.com/rackerlabs/guestbook/blob/dmc/docker-compose-common.yml) as its basis for the common components.
 
 Once everything is built and running, we need to initialize the database. We'll use a one-off container run of our app to run a python command that creates the table in our database.
 
-```bash
+{{< highlight bash >}}
 docker-compose --file docker-compose-prod.yml run --rm --no-deps app python app.py create_db
-```
+{{< /highlight >}}
 
 Now open your browser and go to the Guestbook IP Address you noted above. Sign our guestbook please.
 
@@ -166,10 +166,10 @@ Open app/templates/index.html in your favourite text editor. Make a change and s
 
 Now we deploy that change to the remote environment by running a couple of familiar commands.
 
-```bash
+{{< highlight bash >}}
 docker-compose --file docker-compose-prod.yml build
 docker-compose --file docker-compose-prod.yml up -d
-```
+{{< /highlight >}}
 
 Go back to your browser to the Guestbook IP Address and reload. Voila! Your change has appeared and your data is intact to boot.
 
