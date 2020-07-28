@@ -532,3 +532,10 @@ $header-height: 5rem;
 .bg-dark {
   background-color: $color-black !important;
 }
+
+@media (max-width: 575.98px) {
+  .buynow-button,
+  .login-button {
+    font-size: 11px !important;
+  }
+}
