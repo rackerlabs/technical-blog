@@ -12,122 +12,163 @@ authorIsRacker: true
 categories:
     - OpenStack
 metaTitle: "Designate and the Rackspace Technology OpenStack Private Cloud"
-metaDescription: "."
+metaDescription: "OpenStack&reg; Designate allows the Rackspace Technology
+OpenStack Private Cloud users to use DNS services in their environment."
 ogTitle: "Designate and the Rackspace Technology OpenStack Private Cloud"
-ogDescription: "."
+ogDescription: "OpenStack&reg; Designate allows the Rackspace Technology
+OpenStack Private Cloud users to use DNS services in their environment."
 slug: 'Designate and the Rackspace Technology OpenStack Private Cloud'
 
 ---
 
-
+OpenStack&reg; Designate allows the Rackspace Technology OpenStack Private Cloud
+users to use Domain Name Server (DNS) services in their environment.
 
 <!--more-->
 
 ### Overview
 
-
-
 {{<image src="Picture1.png" title="" alt="">}}
 
-OpenStack&reg; Designate allows Rackspace Technology’s Openstack Private Cloud users to use DNS services in their environment. This Rest API provides a simple, scalable, and flexible way to program and manage DNS.
+The Designate ReST API provides a simple, scalable, and flexible way to program
+and manage DNS.
 
-Openstack Designate provides a fully manage cloud-native solution for DNSaaS. This multi-tenant Rest API provides DNS services to end users while integrating fully with other OpenStack services. Some of the benefits of DNS are list below.
+Openstack Designate provides a fully manage cloud-native solution for DNS as a
+Service (DNSaaS). This multi-tenant ReST API provides DNS services to end users
+while integrating fully with other OpenStack services. The benefits of Designate
+include the following ones:
 
+- Standardizes DNS services in OpenStack
+- Is an open-source project that avoids vendor lock
+- Offers ReST API management of records and zones
+- Is multi-tenanted to allow hosting of multiple projects and keep corresponding
+  resources secure
+- Simplifies the DNS backend to a single point whereby users can avoid conflict
+  within their projects and tenants
+- Enables self-service through sub- and super-DNS names
+- Reduces deployment times for resources
+- Is integral to dynamic workloads and deployments such as Kubernetes&reg;
 
-Standardization of DNS services in OpenStack
-Designate is an open-source project that avoids vendor lock
-REST API management of records and zones
-Is multi-tenant to allow hosting of multiple projects and keep corresponding resources secure
-Simplifies DNS backend to a single point whereby users can avoid conflict within their projects and tenants
-Enable self-service through sub- and super-DNS names
-Reduces deployment times for resources
-Integral to dynamic workloads and deployments such as K8’s
+### Rackspace Private Cloud including Designate
 
+Rackspace Technology offers OpenStack Private Cloud with two products, RPC-O
+(based on OpenStack source code) and RPC-R (based on RedHat&reg; OSP version 13).
+With RPC-O (OpenStack *Stein* and *Train* releases) and RPC-R (*Queens* release),
+Rackspace is executing several important architecture changes to bring both
+products' architecture and capabilities closer together while improving the
+service with the addition of the following components:
 
+- Operating system upgrade
+- Shared-storage requirement
+- Bare metal provisioning (Ironic)
+- Octavia (Software load balancing)
+- DNS as Service (Designate)
+- Neutron open vSwitch plugin
+- HAProxy&reg; API load balancing
 
+Rackspace previously made some of these capabilities available in limited
+availability (LA) capacity with the Rackspace managed Kubernetes service. We now
+extend these for general availability.
 
-Bjoern’s version below:
+The architecture of a Rackspace managed cloud remains largely the same with minor
+changes, which ensures that you can migrate existing environments over time to
+the new design.
 
+The following sections explore the new components.
 
-Rackspace offers OpenStack Private Cloud with two products, RPC-O based on OpenStack source code and RPC-R based on RedHat OSP (currently 13).
-With the Stein OpenStack release and continuing with Train, Rackspace Private Cloud (RPC-O), along with RPC-R (Queens), Rackspace is executing several important architecture changes to bring both products architecturally and capabilities closer together while improving the service with the addition of
+#### Operating system upgrade (RPC-O)
 
-Operating System Upgrade
-Shared Storage Requirement
-Bare metal provisioning (Ironic)
-Octavia (Software Load Balancing)
-DNS as Service (Designate)
-Neutron open vSwitch plugin
-HAProxy API Load Balancing
+The operating system requirement has been updated to the Ubuntu&reg; 18.04 LTS
+Server release to accommodate the latest Dell&reg; and HP&reg; server platforms
+and OpenStack requirements.
 
-Some of these capabilities have already been used in earlier releases in limited availability (LA) capacity with the Rackspace managed Kubernetes service. We now extend these for general availability.
+Rackspace Technology fully manages this layer transparently for customers,
+including providing first-time automated operating system package updates.
 
-The architecture of a Rackspace managed cloud retained largely the same with minor changes,
-which ensures that you can migrate existing environments over time into the new design.
+#### Shared storage requirement
 
+The discovery of the CPU vulnerabilities, Spectre and Meltdown, has led to more
+frequent firmware, hardware-related changes, and host maintenance patches that
+require downtime. To eliminate workload impact during hardware maintenance, we
+require that all new RPC-O environments use shared storage for image and guest
+block storage. With shared storage, you can move virtual machines (guests) to
+other hosts almost instantly and eliminate any impact to compute hosts during
+maintenance. Consequently, the compute hosts are largely diskless. They use only
+local storage for the operating system and, if required, ephemeral storage. The
+concentration of disk space also reduces over-provisioning.
 
+#### Bare metal provisioning (Ironic)
 
-Operating System Upgrade (RPC-O)
+We now package Ironic, the OpenStack native, bare metal service, into every new
+deployment, allowing you to install the operating system image in an
+OpenStack-native way, with the compute (nova) API. Using the nova API enables
+you to reuse automation and features during host initialization, such as
+automated IP provisioning or user-data for scripting. You can also retain
+project-based resource control (quotas).
 
-The operating system requirement has been updated to the Ubuntu 18.04 LTS Server release to accommodate the latest Dell and HP server platforms and OpenStack requirements.
+#### Octavia (Software load balancing)
 
-Rackspace fully manages this layer transparently for customers, including providing first-time automated operating system package updates.
+Octavia is the reference implementation for load balancing. Load balancing
+distributes TCP/UDP protocol-based requests among multiple servers and makes the
+service scalable by allowing multiple servers to be behind one IP or web address.
+It also makes the system fault-tolerant by removing faulty servers from rotation
+until they are healthy again. Octavia achieves high availability load balancing
+through active-passive VM pairs and offers the following benefits:
 
+- Built-in active/passive high availability
+- Support for multiple listeners and pools
+- Support for L7 load balancing
+- Session persistence
+- Support for HTTP/TCP based health monitoring
+- Granular quota management
+- Support for HTTP header insertion
 
-Shared Storage Requirement
+#### DNS as Service (Designate)
 
-Since the discovery of the CPU vulnerabilities Spectre and Meltdown, the frequency of firmware and other hardware-related changes leads to an increase in host maintenances requiring downtime. To eliminate workload impact during hardware maintenance, we require all new RPC-O environments use shared storage for image and guest block storage.
-With shared storage, you can move virtual machines (guests) to other hosts almost instantly
-and eliminate any impact to compute hosts during maintenance.
-Consequently, the compute hosts are largely diskless. They use only local storage for the operating system and, if required, ephemeral storage. The concentration of disk space also reduces over provisioning.
+Designate provides a fully managed cloud-native solution for DNSaaS. This
+multi-tenant ReST API provides DNS services to end users while integrating fully
+with other OpenStack services.
 
+The API enables you to standardize DNS services with bind as a pre-configured
+DNS backend system to manage DNS records and zones.
 
-Bare metal provisioning (Ironic)
+Designate also supports multiple record types per entry. Integration with other
+orchestration platforms, such as Terraform&reg;, exists and further enables you
+to achieve your automation requirements.
 
-Ironic, the OpenStack native, bare metal service, is now packaged into every new deployment, allowing you to install the operating system image in an OpenStack-native way, with the compute (nova) API. Using the nova API enables you to reuse automation and features, such as automated IP provisioning or user-data for scripting, during host initialization.  You can also retain project-based resource control (quotas).
+#### Neutron open vSwitch plugin (RPC-O)
 
+The software-defined networking has up to this point been implemented with the
+Neutron API and Linux Bridge Agent plugin. The OpenStack community has been
+shifting to open vSwitch as a plugin for a long time and has provided many new
+features not available in the Linux Bridge plugin such as the following:
 
-Octavia (Software Load Balancing)
+- Redundant routers
+- Flow-based and optional hardware-accelerated routing
+- Additional support for tunnel protocols (beyond VXLAN)
+- Future integration into another software-defined networking (SDN) controller
 
-Octavia is the reference implementation for Load Balancing. Load Balancing distributes TCP/UDP protocol-based requests among multiple servers and makes the service scalable by allowing multiple servers to be behind one IP or web address. It also makes it fault-tolerant by removing faulty servers from rotation until they are healthy again.
-Octavia achieves high availability load balancing through active-passive VM pairs.
+#### HAProxy API load balancing
 
--Built-in active/passive high availability
--Support for multiple listeners and pools
--Support for L7 load balancing
--Session persistence
--Support for HTTP/TCP based health monitoring
--Granular quota management
--Support for HTTP header insertion
+We no longer use an F5 load balancer to balance the OpenStack API. Instead, we
+replaced the load balancer with fully managed and automated provisioning around
+HAProxy. This replacement reduces the overall cost and administration effort to
+keep the API endpoints up to date across OpenStack and other version upgrades.
 
+These new services follow a common goal to ensure that customers of RPC-O can
+further automate their processes while allowing other Rackspace products and
+teams to benefit from additional automation.
 
-DNS as Service (Designate)
-
-Designate provides a fully managed cloud-native solution for DNSaaS. This multi-tenant Rest API provides DNS services to end users while integrating fully with other OpenStack services.
-The API enables the standardization of DNS services with bind as pre-configured DNS backend system to manage DNS records and zones.
-
-Designate also supports multiple record types per entry. Integration with other orchestration platforms like Terraform exists and further enables you to achieve your automation requirements.
-
-
-Neutron open vSwitch plugin (RPC-O)
-
-The software-defined networking has up to this point been implemented with the Neutron API and Linux Bridge Agent plugin. The OpenStack community has been shifting to open vSwitch as a plugin for a long time and provided many new features not available at the Linux Bridge plugin such as the following:
-
--Redundant Routers
--Flow-based and optional hardware-accelerated routing
--Additional support for tunnel protocols (beyond VXLAN)
--Future integration into another SDN controller
-
-HAProxy API load balancing
-
-We no longer use an F5 load balancer to balance the OpenStack API. Instead, we replaced the load balancer with fully managed and automated provisioning around HAProxy. This replacement reduces the overall cost and administration effort to keep the API endpoints up to date across OpenStack and other version upgrades.
-
-These new services follow a common goal to ensure that customers of Rackspace Private Cloud OpenStack can further automate their processes while allowing other Rackspace products and teams to benefit from additional automation.
-
-Also, Rackspace managed Kubernetes (k8s) uses the listed services to automate the Kubernetes node management and installation. We integrate Designate and Octavia to expose cluster names and load-balanced services
+Also, Rackspace managed Kubernetes uses the listed services to automate the
+Kubernetes node management and installation. We integrate Designate and Octavia
+to expose cluster names and load-balanced services.
 
 ### Conclusion
 
+Rackspace Technology is pleased to  offer OpenStack&reg; Designate to our RPC-O
+users to improve their DNS operations.
+
 <a class="cta purple" id="cta" href="https://www.rackspace.com/openstack/private">Learn more about the Rackspace OpenStack Private Cloud.</a>
 
-Use the Feedback tab to make any comments or ask questions. You can also click **Sales Chat** to [chat now](https://www.rackspace.com/) and start the conversation.
+Use the Feedback tab to make any comments or ask questions. You can also click
+**Sales Chat** to [chat now](https://www.rackspace.com/) and start the conversation.
