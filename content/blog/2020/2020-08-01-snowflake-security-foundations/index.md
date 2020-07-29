@@ -30,8 +30,6 @@ customers, giving them a CICD first approach to source control for security and 
 
 <!--more-->
 
-## Snowflake security foundations  
-
 ### A CICD approach to Snowflake security   
 
 Database migration is one of those subjects that is somewhat of a dark art. Often companies set up the
