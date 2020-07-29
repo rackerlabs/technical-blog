@@ -33,14 +33,14 @@
 
 [[redirects]]
   from = "https://docs.rackspace.com/img/*"
-  to = "https://docs-technical-blog.netlify.app/img/:splat"
+  to = "https://docs-technical-blog.netlify.app/img/*"
   status = 200
   force = true
   headers = {X-From = "Netlify"}
   
 [[redirects]]
-  from = "https://docs.rackspace.com/favicons/favicon.ico"
-  to = "https://docs-technical-blog.netlify.app/favicons/favicon.ico"
+  from = "http://docs.rackspace.com/favicons/*"
+  to = "https://docs-technical-blog.netlify.app/favicons/*"
   status = 200
   force = true
   headers = {X-From = "Netlify"}
