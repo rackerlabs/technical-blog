@@ -27,7 +27,7 @@
   </div>
   <div class="post-desc">
     <p class="post-excerpt">
-      {{ .Summary }}
+      {{ .Summary | markdownify}}
       {{ if .Truncated }}
       <div class="post-read-more">
         <a href="{{ .RelPermalink }}" class="read-more">Read More</a>
