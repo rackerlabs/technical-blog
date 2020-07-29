@@ -15,7 +15,7 @@
             <img src="{{ "/img/avatar-default.svg" | absURL }}" class="post-avatar-image" alt="post avatar" />
             {{- end -}}
           </div>
-          <a class="post-author" href="{{ "/blog/author/"}}{{ urlize .Params.Author }}">{{ .Params.Author }}</a>
+          <a class="post-author" href="{{ "/blog/authors/"}}{{ urlize .Params.Author }}">{{ .Params.Author }}</a>
           |
           <span class="post-date">{{ dateFormat .Site.Params.dateFormat .Date.UTC }}</span>
           <ul class="post-category" data-category="{{ .Section }}">
@@ -42,7 +42,7 @@
           </div>
           <div class="author-info">
             <span class="name">{{ .Params.Author }}</span>
-            <div class="bio">{{ .Params.Bio }}</div>
+            <p class="bio">{{ .Params.Bio }}</p>
           </div>
         </div>
         {{- partial "components/share-bar" . -}}

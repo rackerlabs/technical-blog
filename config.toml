@@ -46,7 +46,7 @@ xhtml = false
 [permalinks]
     blog = "/blog/:slug"
     categories = "/blog/categories/:slug"
-    author = "/blog/author/:slug"
+    author = "/blog/authors/:slug"
 
 [[menu.docs]]
     name = "Welcome"
