@@ -3,7 +3,7 @@
 
 = Technical Blog
 
-https://app.netlify.com/sites/docs-rackspace-com/deploys[image:https://api.netlify.com/api/v1/badges/4abc18d8-6c6f-43f6-8d8c-f3a1749c263c/deploy-status[title="Netlify Status"]]
+https://app.netlify.com/sites/docs-rackspace-com/deploys[image:https://api.netlify.com/api/v1/badges/4abc18d8-6c6f-43f6-8d8c-f3a1749c263c/deploy-status[title="Netlify Status"]] https://github.com/rackerlabs/technical-blog/graphs/contributors[image:https://img.shields.io/github/contributors-anon/rackerlabs/technical-blog?style=plastic[title=GitHub contributors]]
 
 toc::[]
 
