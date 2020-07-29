@@ -39,8 +39,8 @@
   headers = {X-From = "Netlify"}
   
 [[redirects]]
-  from = "https://docs.rackspace.com/favicons/*"
-  to = "https://docs-technical-blog.netlify.app/favicons/:splat"
+  from = "https://docs.rackspace.com/favicons/favicon.ico"
+  to = "https://docs-technical-blog.netlify.app/favicons/favicon.ico"
   status = 200
   force = true
   headers = {X-From = "Netlify"}
