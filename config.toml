@@ -1,4 +1,4 @@
-baseurl = "https://docs-technical-blog.netlify.app/"
+baseurl = "/"
 theme = "docs-developer-hugo-theme"
 copyright = ""
 defaultContentLanguage = "en-us"
