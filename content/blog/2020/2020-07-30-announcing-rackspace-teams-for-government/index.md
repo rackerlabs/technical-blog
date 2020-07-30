@@ -70,10 +70,10 @@ customers and the vendors who support them are continuously looking to bring the
 speed and agility found in the private sector to bear on their solutions, and
 Rackspace Teams for Government enables that.
 
-### The Rackspace Teams for Government solution
+### The Rackspace Teams for Government (AWS) solution
 
-Rackspace Teams for Government addresses the preceding challenges by doing the
-following:
+Rackspace Teams for Government (AWS) addresses the preceding challenges by
+doing the following:
 
 - Focus on a collaborative partnership with customers.
 - Use disciplined agile project management methodologies.
@@ -86,12 +86,17 @@ following:
 
 ### How it works
 
-Organizations generally start with Rackspace Teams for Government to achieve
-FedRAMP authorization on Rackspace Government Cloud on AWS or when they need
-help to improve or optimize their existing authorized Rackspace Government Cloud
-on AWS deployment. Customers engage a Pod&mdash;a group of Rackers who are U.S.
-citizens.
+We provide on-demand access to highly skilled cloud experts to help you with
+your toughest mission challenges, and we have an extensive background in managed
+security and compliance. Organizations generally leverage Rackspace Teams for
+Government (AWS) to achieve FedRAMP authorization on Rackspace Government Cloud
+on AWS or when they need help to improve or optimize their existing authorized
+Rackspace Government Cloud on AWS deployment. However, Rackspace Teams for
+Government (AWS) is versatile and can be leveraged entirely on its own. With
+Teams, Rackspace Technology is here to help you deliver timely, high-quality AWS
+cloud solutions in support of your mission.
 
+Customers engage with a Pod&mdash;a group of Rackers who are U.S. citizens.
 A Pod consists of highly skilled senior and junior Rackers who proactively work
 with customers to scope, define, and deliver "mini" cloud projects. Pod Rackers
 use the Agile framework for software development and delivery. At the beginning
