@@ -57,7 +57,7 @@ Use the following instructions to download and install Compass:
    Enterprise Linux from [MongoDB](https://www.mongodb.com/download-center/compass?tck=docs_compass)
    as shown in the following image:
 
-{{<image src="Picture1.png" title="" alt="">}}
+   {{<image src="Picture1.png" title="" alt="">}}
 
 2. Run the following command to install Compass by using `yum`:
 
@@ -75,12 +75,12 @@ Use the following instructions to begin administering MongoDB from Compass:
    connection string or fill in the connection details, as shown in the following
    image:
 
-   {{<image src="Picture2.png" title="" alt="">}}
+      {{<image src="Picture2.png" title="" alt="">}}
 
 2. Connect to MongoDB from localhost on the default MongoDB port, `27017`, as
    shown in the following image:
 
-   {{<image src="Picture3.png" title="" alt="">}}
+      {{<image src="Picture3.png" title="" alt="">}}
 
 ### Create a new database
 
