@@ -3,7 +3,7 @@ layout: post
 title: "Snowflake Security Foundations - Overview"
 date: 2020-08-01
 comments: true
-author: Traey Hatch/Wei Wang
+author: Traey Hatch and Wei Wang
 published: true
 authorIsRacker: true
 authorAvatar: 'https://secure.gravatar.com/avatar/9dfc94655d2c7e6d819bc064141f8d60'
