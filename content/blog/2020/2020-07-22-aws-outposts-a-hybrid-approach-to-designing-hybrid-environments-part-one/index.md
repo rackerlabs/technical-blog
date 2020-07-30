@@ -152,9 +152,10 @@ However, what if hybrid was not so black and white? What if you could maintain
 your on-premises data centers, and somehow incorporate and leverage the power
 of AWS.
 
-### Coming soon
+### Next
 
-Part two of the series is coming soon, so stay tuned!
+[Part two of the series](https://docs.rackspace.com/blog/aws-outposts-a-hybrid-approach-to-designing-hybrid-environments-part-two/)
+is ready, so read on.
 
 <a class="cta purple" id="cta" href="https://www.rackspace.com/sap">Learn more about our SAP services.</a>
 
