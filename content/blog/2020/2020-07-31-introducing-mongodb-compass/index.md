@@ -57,7 +57,7 @@ Use the following instructions to download and install Compass:
    Enterprise Linux from [MongoDB](https://www.mongodb.com/download-center/compass?tck=docs_compass)
    as shown in the following image:
 
-   {{<image src="Picture1.png" title="" alt="">}}
+      {{<image src="Picture1.png" title="" alt="">}}
 
 2. Run the following command to install Compass by using `yum`:
 
@@ -90,12 +90,12 @@ Use the following instructions to create a new database in Compass:
 
 1. Click **CREATE DATABASE** as shown in the following image:
 
-   {{<image src="Picture4.png" title="" alt="">}}
+      {{<image src="Picture4.png" title="" alt="">}}
 
 2. Provide the database name, `test`, and collection name, `mongo_docs`, as
    shown in the following image:
 
-   {{<image src="Picture5.png" title="" alt="">}}
+      {{<image src="Picture5.png" title="" alt="">}}
 
 The preceding steps create a new database, **test**.
 
