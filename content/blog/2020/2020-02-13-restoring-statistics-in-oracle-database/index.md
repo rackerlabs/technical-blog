@@ -55,7 +55,7 @@ that period.
 
 The following image shows the SQL command to show the current retention period:
 
-{{<image src="Picture1.png" title="" alt="">}}
+{{<img src="Picture1.png" title="" alt="">}}
 
 To change the retention period, run the following command, where *xx* is the
 number of days that you want to use:
@@ -65,7 +65,7 @@ number of days that you want to use:
 The following query helps you to understand which historical data stats you can
 restore:
 
-{{<image src="Picture2.png" title="" alt="">}}
+{{<img src="Picture2.png" title="" alt="">}}
 
 **Note:** This example shows the statistics from the previously mentioned date
 and later.

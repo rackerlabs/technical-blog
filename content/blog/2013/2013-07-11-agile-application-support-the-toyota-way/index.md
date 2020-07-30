@@ -24,7 +24,7 @@ toward common goals.
 
 <!--more-->
 
-{{<image src="reagan.png" title="" alt="">}}
+{{<img src="reagan.png" title="" alt="">}}
 
 <p style="font-size: 70%; text-align: center">Image courtesy of the Reagan Library and Michael Evans</p>
 
@@ -86,7 +86,7 @@ brand-new facilities specifically designed for efficient, lean workflows. They
 created a blueprint for success before ever breaking ground.
 
 
-{{<image src="process.png" title="" alt="">}}
+{{<img src="process.png" title="" alt="">}}
 
 Do your developers follow consistent coding standards? Consistent standards for
 logging errors and exceptions? Do they name variables, functions and classes
@@ -128,7 +128,7 @@ between bays (even the paint booth!) were easily raised and lowered, allowing
 the car to move through the process as if on an assembly line.
 
 
-{{<image src="car.png" title="" alt="">}}
+{{<img src="car.png" title="" alt="">}}
 
 Your walls may be between your dev team and your ops team. Maybe your developers
 don’t have access to the production environment to monitor application health.
@@ -146,7 +146,7 @@ for each repair bay, and then placing the right parts and tools (and ONLY the
 necessary tools) within optimal reach.
 
 
-{{<image src="tools.png" title="" alt="">}}
+{{<img src="tools.png" title="" alt="">}}
 
 What does this mean for your company? First, take a look at your physical
 environment. Is there evidence of silos between divisions, based purely on office
@@ -165,7 +165,7 @@ publicly, color-coded to show the good, the bad, and the ugly. If your key
 performance indicators (KPIs) are visible throughout the office, it creates a
 new degree of urgency:
 
-{{<image src="metrics.png" title="" alt="">}}
+{{<img src="metrics.png" title="" alt="">}}
 
 Just as importantly, a status board that shows all green creates a sense of
 pride. Your application is running at an all-time high load and all systems are

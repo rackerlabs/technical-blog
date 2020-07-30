@@ -24,7 +24,7 @@ with you, your pain points soon become evident.
 
 <!--more-->
 
-{{<image src="Implementing-CPQ-Software.png" title="" alt="">}}
+{{<img src="Implementing-CPQ-Software.png" title="" alt="">}}
 
 
 Manually configuring quotes for individual clients leaves your sales team at a

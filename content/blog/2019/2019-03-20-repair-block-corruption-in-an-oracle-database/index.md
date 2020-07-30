@@ -34,7 +34,7 @@ databases.
 
 The following image shows a possible block corruption:
 
-{{<image src="Picture1.png" title="" alt="">}}
+{{<img src="Picture1.png" title="" alt="">}}
 
 *Image source*: [https://blog.toadworld.com/2017/12/01/block-corruption-in-an-oracle-database](https://blog.toadworld.com/2017/12/01/block-corruption-in-an-oracle-database)
 

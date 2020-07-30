@@ -89,7 +89,7 @@ two 1 GBPS Fast Ethernet links is more cost-effective than purchasing a single
 
 The following diagram illustrates the IEEE 802.3ad link aggregation policy:
 
-{{<image src="LAP-diagram.png" title="" alt="">}}
+{{<img src="LAP-diagram.png" title="" alt="">}}
 
 LACP is a mechanism for exchanging port and system information to create and
 maintain LAG bundles. The LAG bundle distributes MAC clients across the link

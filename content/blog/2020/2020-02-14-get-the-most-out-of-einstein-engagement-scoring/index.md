@@ -30,7 +30,7 @@ on investment (ROI) of your Marketing Cloud instance.
 
 <!--more-->
 
-{{<image src="Picture1.png" title="" alt="">}}
+{{<img src="Picture1.png" title="" alt="">}}
 
 The good news is that with a corporate or enterprise license, you automatically
 have access to Einstein Engagement Scoring. Even if your license isn’t corporate
@@ -55,7 +55,7 @@ maximize engagement and conversions. Einstein Engagement Scoring assigns scores 
 subscriber’s likelihood to stay subscribed, open an email, or click links within
 your email.
 
-{{<image src="Picture2.png" title="" alt="">}}
+{{<img src="Picture2.png" title="" alt="">}}
 
 Based on the historical behavior of your subscribers, Einstein Engagement
 Scoring segments your subscriber list into the following categories:
@@ -69,7 +69,7 @@ Scoring segments your subscriber list into the following categories:
 -  **Win-back or Dormant**: Subscribers who are unlikely to open or click on your
    emails and do not engage with your emails
 
-{{<image src="Picture3.png" title="" alt="">}}
+{{<img src="Picture3.png" title="" alt="">}}
 
 Because the scores are dependent on actions your subscribers have taken, the
 AI can't score your subscribers to whom you have sent no emails. To get the most
@@ -136,27 +136,27 @@ following steps to import your four segments into Journey Builder:
 
 1. Open your Journey Builder and create a new journey.
 
-   {{<image src="Picture4.png" title="" alt="">}}
+   {{<img src="Picture4.png" title="" alt="">}}
 
 <ol start=2>
     <li>Define the <b>Entry Source</b> or who gets these emails.</li>
 </ol>
 
-   {{<image src="Picture5.png" title="" alt="">}}
+   {{<img src="Picture5.png" title="" alt="">}}
 
-   {{<image src="Picture6.png" title="" alt="">}}
+   {{<img src="Picture6.png" title="" alt="">}}
 
 <ol start=3>
     <li>In the left-hand column of options, choose <b>Einstein Split.</b></li>
 </ol>
 
-   {{<image src="Picture7.png" title="" alt="">}}
+   {{<img src="Picture7.png" title="" alt="">}}
 
 <ol start=4>
     <li>Choose <b>Persona Split</b> as the type of split.</li>
 </ol>
 
-   {{<image src="Picture8.png" title="" alt="">}}
+   {{<img src="Picture8.png" title="" alt="">}}
 
 <ol start=5>
     <li>After you select <b>Persona Split</b>, Journey Builder automatically splits your
@@ -169,7 +169,7 @@ following steps to import your four segments into Journey Builder:
    for another group.</li>
 </ol>
 
-   {{<image src="Picture9.png" title="" alt="">}}
+   {{<img src="Picture9.png" title="" alt="">}}
 
 <ol start=6>
     <li>Now, you can craft a personalized journey in Journey Builder for each segment.
@@ -181,7 +181,7 @@ following steps to import your four segments into Journey Builder:
    a salesperson to call the subscriber.</li>
 </ol>
 
-   {{<image src="Picture10.png" title="" alt="">}}
+   {{<img src="Picture10.png" title="" alt="">}}
 
 For the best results, always conduct A/B testing to see what works well for each
 segment. Within your marketing automation, you can A/B test nearly every aspect

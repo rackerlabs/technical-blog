@@ -82,14 +82,14 @@ Use the following steps for the Oracle WebLogic Server 11gR1 (10.3.6) installati
 
 6. Select local JDK installed, as shown in the following image.
 
-   {{<image src="Picture1.png" title="" alt="">}}
+   {{<img src="Picture1.png" title="" alt="">}}
 
 <ol start=7>
     <li>Choose the product installation directories. Specify the WebLogic server
    location and the  Oracle Coherence location, as shown in the following image.</li>
 </ol>
 
-   {{<image src="Picture2.png" title="" alt="">}}
+   {{<img src="Picture2.png" title="" alt="">}}
 
 <ol start=8>
     <li>Review the installation summary and size.</li>
@@ -127,7 +127,7 @@ Use the following steps for the installation process:
    If the tablespaces are incorrect, modify them.  The following image shows
    this step:
 
-   {{<image src="Picture3.png" title="" alt="">}}
+   {{<img src="Picture3.png" title="" alt="">}}
 
 <ol start=7>
     <li>Review the summary and click <b>Create</b>.</li>
@@ -158,7 +158,7 @@ Use the following steps for the Discoverer installation:
 8. When installation is complete, review the details and click **Finish**, as
    shown in the following image:
 
-   {{<image src="Picture4.png" title="" alt="">}}
+   {{<img src="Picture4.png" title="" alt="">}}
 
 ####  Upgrade Discoverer 11.1.1.2 installation to 11.1.1.7
 
@@ -181,7 +181,7 @@ Use the following steps to upgrade Discoverer from version 11.1.1.2 to
 7. When installation is complete, review the details and click **Finish**, as
    shown in the following image:
 
-   {{<image src="Picture5.png" title="" alt="">}}
+   {{<img src="Picture5.png" title="" alt="">}}
 
 #### Configure the Discoverer instance
 
@@ -194,7 +194,7 @@ Use the following steps to configure the Discoverer instance:
 3. Choose **Create domain** and provide the username (``weblogic``), password, and
    domain name, as shown in the following image:
 
-   {{<image src="Picture6.png" title="" alt="">}}
+   {{<img src="Picture6.png" title="" alt="">}}
 
 <ol start=4>
     <li>Provide the Oracle support details in <b>Security Updates</b>.</li>
@@ -210,7 +210,7 @@ Use the following steps to configure the Discoverer instance:
    following image:</li>
 </ol>
 
-   {{<image src="Picture7.png" title="" alt="">}}
+   {{<img src="Picture7.png" title="" alt="">}}
 
 <ol start=7>
     <li>Select <b>Auto port config</b> to configure ports.</li>
@@ -240,7 +240,7 @@ Use the following steps to configure the Discoverer instance:
     <li>Review the installation details and click <b>Finish</b>, as shown in the
     following image:</li>
 </ol>
-    {{<image src="Picture8.png" title="" alt="">}}
+    {{<img src="Picture8.png" title="" alt="">}}
 
 ### Conclusion
 

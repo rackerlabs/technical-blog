@@ -38,7 +38,7 @@ for application integrations by using an enterprise service bus (ESB) instead of
 usual point-to-point application integrations, where every application connects
 to each other. The following image illustrates the ESB:
 
-{{<image src="Picture1.png" alt="" title="">}}
+{{<img src="Picture1.png" alt="" title="">}}
 
 MuleSoft supports different architectures in its integration capabilities,
 including the following architectures:

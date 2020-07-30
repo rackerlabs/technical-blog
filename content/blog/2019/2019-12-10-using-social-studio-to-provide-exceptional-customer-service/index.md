@@ -34,7 +34,7 @@ customer service.
 
 <!--more-->
 
-{{<image src="Picture1.png" title="" alt="">}}
+{{<img src="Picture1.png" title="" alt="">}}
 
 Salesforce’s [Social Studio](https://www.salesforce.com/products/service-cloud/features/social-customer-service/)
 lets you join your customers in conversation. Rackspace has helped companies
@@ -48,7 +48,7 @@ the capabilities of the tool, and respect your customers’ data.
 This blog discusses some best practices&mdash;and some mistakes to
 avoid&mdash;when using Social Studio to improve your customer service.
 
-{{<image src="Picture2.png" title="" alt="">}}
+{{<img src="Picture2.png" title="" alt="">}}
 
 ### Which teams can use Social Studio?
 
@@ -79,7 +79,7 @@ and 34% rated social media as a preferred channel for communication. If you are
 not serving your customers across the right social media channels, you are likely
 to be left in the dust.
 
-{{<image src="Picture3.png" title="" alt="">}}
+{{<img src="Picture3.png" title="" alt="">}}
 
 
 ### Use Social Studio to improve your customer service
@@ -107,7 +107,7 @@ on your customers’ needs. It is even sophisticated enough to apply context to
 the conversations, so your customer service team is not notified every time a
 company or product with a similar name is mentioned.
 
-{{<image src="Picture4.png" title="" alt="">}}
+{{<img src="Picture4.png" title="" alt="">}}
 
 ### Common mistakes to avoid
 

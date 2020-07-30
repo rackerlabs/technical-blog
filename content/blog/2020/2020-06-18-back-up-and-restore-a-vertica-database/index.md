@@ -80,7 +80,7 @@ these backups faster because the system does not copy the user data to an extern
 backup environment. Vertica copies only the catalog data and initiates
 Linux&reg;-based hard links within the file system.
 
-{{<image src="Picture1.png" alt="" title="">}}
+{{<img src="Picture1.png" alt="" title="">}}
 
 
 *Image source*: https://www.vertica.com/wp-content/uploads/2016/04/sidestep1.png
@@ -100,7 +100,7 @@ The backup and restoration flow consists of the following steps:
 5. Verify the backups in the backup location.
 6. Restore the full database or database objects on similar or different Vertica clusters.
 
-{{<image src="Picture2.png" alt="" title="">}}
+{{<img src="Picture2.png" alt="" title="">}}
 
 
 *Image source*: https://www.vertica.com/kb/Copy-and-Restore-Data-from-a-Vertica-Cluster-to-a-Backup/Content/BestPractices/Copy-and-Restore-Data-from-a-Vertica-Cluster-to-a-Backup.htm

@@ -102,9 +102,9 @@ performance requirements.
 
 The following images show some configuration options:
 
-{{<image src="Picture1.png" alt="Standard Configuration" title="Standard Configuration">}}
+{{<img src="Picture1.png" alt="Standard Configuration" title="Standard Configuration">}}
 
-{{<image src="Picture2.png" alt="Extended Configuration" title="Extended Configuration">}}
+{{<img src="Picture2.png" alt="Extended Configuration" title="Extended Configuration">}}
 
 
 ### Tuning

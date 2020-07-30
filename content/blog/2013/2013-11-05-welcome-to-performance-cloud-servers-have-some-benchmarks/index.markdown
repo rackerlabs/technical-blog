@@ -25,7 +25,7 @@ But you, as developers, probably want to know more. A lot more. I've spent sever
 
 Alright. So we've rolled out two new flavor classes of servers: Performance 1 and Performance 2:
 
-{{<image src="image2013-10-16_16_0_21.png" title="" alt="">}}
+{{<img src="image2013-10-16_16_0_21.png" title="" alt="">}}
 
 Both flavor groups will eventually phase out our current Cloud Server offering. These are completely RAID 10 SSD backed, Intel(R) Xeon(R) E5-2670 2.60GHz based systems (up to 32 vCPUs!) with 10GE networking (every host receives 40Gbps of network capacity - that alone accounts for huge gains when using [Cloud Block Storage](https://developer.rackspace.com/blog/happy-birthday-cloud-block-storage.html)). In the chart above, you can see how many vCPUs you get with each image, and I can tell you - they fly.
 
@@ -59,7 +59,7 @@ The *Performance 2* flavor class has a dedicated (non-oversubscribed) CPU and ne
 If you fire up the new control panel on [mycloud.rackspace.com](http://mycloud.rackspace.com) you'll see a lot of changes. If you're like me, and like the command line and fire up the **nova** CLI tool and do:
 
 
-{{<image src="nova-show.png" title="" alt="">}}
+{{<img src="nova-show.png" title="" alt="">}}
 
 
 As you can see, the new flavors are labeled by name - not ID. These match the names you'll find exposed in the control panel, making the experience much more cohesive between the command line tools / API and the control panel itself. This means firing one of them up off the command line is as simple as:
@@ -93,7 +93,7 @@ I’m a developer, and pretty much any time a vendor - even a well meaning one -
 
 #### Wait, what?
 
-{{<image src="dog-dude-wait-what.jpg" title="" alt="">}}
+{{<img src="dog-dude-wait-what.jpg" title="" alt="">}}
 
 Yeah, you're probably wondering what the **PV** and **PV-HVM** markers in that list are. As you probably know, Rackspace runs [OpenStack](http://www.openstack.org), and the key virtual machine component, Nova offers you a choice of [hypervisors](http://en.wikipedia.org/wiki/Hypervisor) to work with. Internally, our clusters use [Xen](http://www.xenproject.org/), an open source, scalable and powerful hypervisor. Hypervisors though are funny little animals - they actually operate within a [spectrum](http://wiki.xen.org/wiki/Virtualization_Spectrum), meaning you can virtualize some of the resources for guests, all, or some interesting mixture for your specific needs.
 
@@ -125,7 +125,7 @@ On a single-CPU machine it runs once with one copy of each test program running 
 
 First up: the 1GB, 1 CPU Performance Cloud Server ([click here for full size](http://7c5dfdbb739dc73f99cb-b85bd20d3e627e59093de9f95b53ad56.r58.cf5.rackcdn.com/unixbench_1gb.png)):
 
-{{<image src="unixbench_1gb.png" title="" alt="">}}
+{{<img src="unixbench_1gb.png" title="" alt="">}}
 
 What this shows is the results for each of the subtests, and then the final score (far right). As stated before, the average of 6 runs was used.
 
@@ -137,7 +137,7 @@ From the chart you can see IO operations alone are stunningly better.
 
 Next up: the 30GB, 8 CPU Performance Cloud Server, single process run ([click here for full size](http://7c5dfdbb739dc73f99cb-b85bd20d3e627e59093de9f95b53ad56.r58.cf5.rackcdn.com/unixbench_30gb_1proc.png)):
 
-{{<image src="unixbench_30gb_1proc.png" title="" alt="">}}
+{{<img src="unixbench_30gb_1proc.png" title="" alt="">}}
 
 * **30GB Next Gen (Current) 6 run average unixbench System Score**: 428.17 (baseline)
 * **30GB Performance PV 6 run average unixbench System Score**: 515.3 (~31% higher than baseline)
@@ -145,7 +145,7 @@ Next up: the 30GB, 8 CPU Performance Cloud Server, single process run ([click he
 
 And now the 30GB, 8 CPU Performance Cloud server, multiple process edition ([click here for full size](http://7c5dfdbb739dc73f99cb-b85bd20d3e627e59093de9f95b53ad56.r58.cf5.rackcdn.com/unixbench_30gb_8procs.png))
 
-{{<image src="unixbench_30gb_8procs.png" title="" alt="">}}
+{{<img src="unixbench_30gb_8procs.png" title="" alt="">}}
 
 * **30GB Next Gen (Current) 6 run average unixbench System Score**: 1546 (baseline)
 * **30GB Performance PV 6 run average unixbench System Score**: 1974.24 (~29% higher than baseline)
@@ -163,19 +163,19 @@ So, fio is an I/O tool meant to be used both for benchmark and stress/hardware v
 
 It spits out a lot of data, and sure - we could chart it but the results... Well, the charts look down right silly with an increase of almost 2000-5000% with IOPS jumping from 1-2k to 22k+. Just to show how silly, we charted just the IOPS across the 1GB and 30GB servers:
 
-{{<image src="fio_IOPS.png" title="" alt="">}}
+{{<img src="fio_IOPS.png" title="" alt="">}}
 
 That little sliver of blue? He's not the new Performance Cloud Server.
 
 That all said - the 1GB, 1 CPU Performance Cloud Server results ([click here for full size](http://7c5dfdbb739dc73f99cb-b85bd20d3e627e59093de9f95b53ad56.r58.cf5.rackcdn.com/fio_1gb.png)):
 
-{{<image src="fio_1gb.png" title="" alt="">}}
+{{<img src="fio_1gb.png" title="" alt="">}}
 
 As you can see - IOPS way up, latency way down - Aggregate bandwidth on a 1GB server? **Insanely high.** And almost uniformly a ~5000% increase over today's 1GB server.
 
 Now for the 30GB, 8 CPU Performance Cloud Server results ([click here for full size](http://7c5dfdbb739dc73f99cb-b85bd20d3e627e59093de9f95b53ad56.r58.cf5.rackcdn.com/fio_30gb.png)):
 
-{{<image src="fio_30gb.png" title="" alt="">}}
+{{<img src="fio_30gb.png" title="" alt="">}}
 
 On the 30GB Performance Cloud servers we see a consistent ~1900-2000% increase over the original cloud server. That's a lot of IOPS. So many IOPS.
 
@@ -189,17 +189,17 @@ The amusing part about this one - the kernel will kick in and execute your kerne
 
 Results! ([click here for full size](http://7c5dfdbb739dc73f99cb-b85bd20d3e627e59093de9f95b53ad56.r58.cf5.rackcdn.com/kernel_compile.png))
 
-{{<image src="kernel_compile.png" title="" alt="">}}
+{{<img src="kernel_compile.png" title="" alt="">}}
 
 1GB High Performance spreadsheet breakdown ([click here for full size](http://7c5dfdbb739dc73f99cb-b85bd20d3e627e59093de9f95b53ad56.r58.cf5.rackcdn.com/kernel1gb.png)):
 
-{{<image src="kernel1gb.png" title="" alt="">}}
+{{<img src="kernel1gb.png" title="" alt="">}}
 
 About a ~25% increase from baseline on the PV-HVM image - this really stresses the CPU more than anything - and these are single CPU boxes with 1GB of ram. What we can see is given the same base constraints the new Performance Cloud Server consistently improve from our baseline comparison.
 
 30GB High Performance spreadsheet breakdown ([click here for full size](http://7c5dfdbb739dc73f99cb-b85bd20d3e627e59093de9f95b53ad56.r58.cf5.rackcdn.com/kernel30gb.png)):
 
-{{<image src="kernel30gb.png" title="" alt="">}}
+{{<img src="kernel30gb.png" title="" alt="">}}
 
 We of course see an increase of ~20-42% here from baseline - better processors (but same number), better I/O, same amount of RAM - but again, painting the same overall improvement picture we've been seeing.
 
@@ -211,15 +211,15 @@ We of course see an increase of ~20-42% here from baseline - better processors (
 
 Ok, so you won't see any 1GB flavor results here - [PyPy](http://pypy.org/) needs oodles of RAM to generate it's rpython system, translations - make a just in time compiler, etc. You're going to need several GB of ram to build it from scratch. I did exactly this - I even skipped the part about using a pre-built rpython binary to do the translation and used the good old CPython 2.7.4 to make it even more pokey. But hey, it takes hours and draws fractals on your screen and like the kernel and other benchmarks, running it in parallel across 9+ servers makes ops people make this face:
 
-{{<image src="sadface.gif" title="" alt="">}}
+{{<img src="sadface.gif" title="" alt="">}}
 
 So, the graph ([click here for full size](http://7c5dfdbb739dc73f99cb-b85bd20d3e627e59093de9f95b53ad56.r58.cf5.rackcdn.com/kernel30gb.png)):
 
-{{<image src="pypy_translate.png " title="" alt="">}}
+{{<img src="pypy_translate.png " title="" alt="">}}
 
 And now the table ([click here for full size](http://7c5dfdbb739dc73f99cb-b85bd20d3e627e59093de9f95b53ad56.r58.cf5.rackcdn.com/pypy_build.png)):
 
-{{<image src="pypy_build.png" title="" alt="">}}
+{{<img src="pypy_build.png" title="" alt="">}}
 
 Again, just as in the kernel compile test - we see ~20% increases from baseline on the compile speed (yes - PyPy naturally takes that long to compile/translate). The story is the same as before though, consistent improvement.
 
@@ -227,7 +227,7 @@ Again, just as in the kernel compile test - we see ~20% increases from baseline 
 
 I've run you though a series of what I'd call **baseline** benchmarks - none of these really show off what one might call "real applications" though the benefits to real applications should be readily apparent. You've got a massively improved IO system, hot new Intel(R) Xeon(R) processors, more RAM options and oh - the boot times...
 
-{{<image src="boot-time.png" title="" alt="">}}
+{{<img src="boot-time.png" title="" alt="">}}
 
 Under a minute and a half to provision (from the command line) a 1GB Performance Cloud server. I don't know about you, but having fast boots from clean images, as well as all of the other goodies we've thrown into our completely OpenStack based offering is pretty exciting.
 
@@ -249,7 +249,7 @@ I'm really looking forward to seeing what these new Performance Cloud Servers, a
 
 Remember - want to test drive? Go ahead and use the [developer discount](https://developer.rackspace.com/devtrial/) - we're here to build amazing things, on open technology and with an open community for you. I couldn't be more proud!
 
-{{<image src="simba.gif" title="" alt="">}}
+{{<img src="simba.gif" title="" alt="">}}
 
 [1]: http://jessenoller.com/
 [2]: https://twitter.com/jessenoller

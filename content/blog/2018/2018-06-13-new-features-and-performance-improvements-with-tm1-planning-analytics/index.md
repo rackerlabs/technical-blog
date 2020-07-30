@@ -60,7 +60,7 @@ Several new API functions have been added in latest release of PAX.
 
 The following diagram shows a view of PAX:
 
-{{<image src="Pax2.png" title="" alt="">}}
+{{<img src="Pax2.png" title="" alt="">}}
 
 ### TM1 Web
 

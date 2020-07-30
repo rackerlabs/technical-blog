@@ -30,7 +30,7 @@ server hijacks the connection, represents itself as a client to the target
 server, and requests the resource on your behalf. If a reply is received, the
 proxy server returns it, establishing communication with the target server.
 
-{{<image src="Picture1.png" title="" alt="">}}
+{{<img src="Picture1.png" title="" alt="">}}
 
 *Image source*: Wikipedia [https://mn.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D0%BA%D1%81%D0%B8_%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80](https://https://mn.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D0%BA%D1%81%D0%B8_%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80)
 
@@ -65,7 +65,7 @@ Proxy servers have the following advantages:
 
 The following image shows basic web proxy architecture:
 
-{{<image src="Picture2.png" title="" alt="">}}
+{{<img src="Picture2.png" title="" alt="">}}
 
 As shown in the preceding image, you can install a web proxy server between the
 switch and the router. The following web proxy servers are a few of the ones
@@ -99,14 +99,14 @@ Use the following steps to download, install, and deploy a Wingate proxy server:
 2. Enter the 30-day trial license or your purchased license when prompted as
    shown in the following image:
 
-   {{<image src="Picture3.png" title="" alt="">}}
+   {{<img src="Picture3.png" title="" alt="">}}
 
 *Image source*: [https://www.indiamart.com/proddetail/linux-web-proxy-server-software-6220500388.html](https://www.indiamart.com/proddetail/linux-web-proxy-server-software-6220500388.html)
 
 The following image shows the network after deployment.  The left side shows
 the internal architecture, and the right side shows the external architecture.
 
-{{<image src="Picture4.png" title="" alt="">}}
+{{<img src="Picture4.png" title="" alt="">}}
 
 *Image source*: [https://docs.microsoft.com/en-us/iis/extensions/configuring-application-request-routing-arr/creating-a-forward-proxy-using-application-request-routing](https://docs.microsoft.com/en-us/iis/extensions/configuring-application-request-routing-arr/creating-a-forward-proxy-using-application-request-routing)
 
@@ -117,7 +117,7 @@ network by using a proxy server:
 
 1. Start Wingate. The following window with a left-side navigation pane displays:
 
-   {{<image src="Picture5.png" title="" alt="">}}
+   {{<img src="Picture5.png" title="" alt="">}}
 
 <ol start=2>
     <li>Select <b>Wingate>Web Access Control>Access Rule</b> and click <b>Add rule</b>.</li>
@@ -128,19 +128,19 @@ network by using a proxy server:
     as shown in the following image:
 </ol>
 
-   {{<image src="Picture6.png" title="" alt="">}}
+   {{<img src="Picture6.png" title="" alt="">}}
 
 <ol start=5>
    <li>Enable the time interval to block a website as shown in the following image:</li>
 </ol>
 
-   {{<image src="Picture7.png" title="" alt="">}}
+   {{<img src="Picture7.png" title="" alt="">}}
 
 <ol start=6>
     <li>Enable the time interval to block a website as shown in the following image:</li>
 </ol>
 
-   {{<image src="Picture8.png" title="" alt="">}}
+   {{<img src="Picture8.png" title="" alt="">}}
 
 <ol start=7>
     <li>Click <b>Finish</b> to block the site URL. When users try to access

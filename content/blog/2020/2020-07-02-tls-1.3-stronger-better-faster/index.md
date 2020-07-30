@@ -34,7 +34,7 @@ Data center and public cloud traffic are a little harder to gauge, but they
 could be between 50% and completely encrypted. Across all theaters, we are
 undeniably on our way to 100% encryption.
 
-{{<image src="Picture1.png" alt="" title="">}}
+{{<img src="Picture1.png" alt="" title="">}}
 
 While this trend has been growing, the IETF (Internet Engineering Task Force)
 released the latest version of TLS in August 2018. Here we are, a few years later,

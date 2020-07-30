@@ -31,7 +31,7 @@ tools.
 
 The following image shows the Power BI workflow:
 
-{{<image src="picture1.png" title="" alt="">}}
+{{<img src="picture1.png" title="" alt="">}}
 
 Source: [Microsoft Power BI
 Overview](https://www.slideshare.net/Netwoven/power-bi-overview-41399411).

@@ -83,7 +83,7 @@ QUIC is a cross-layer protocol that rides on top of UDP. It becomes its own prot
 all the good things from TCP (congestion control and loss recovery), TLS (cryptography and handshake),
 and all of the control aspects of HTTP/2 (multi-streaming).
 
-{{<image src="quic-protocol.png" alt="QUIC protocol" title="QUIC protocol">}}
+{{<img src="quic-protocol.png" alt="QUIC protocol" title="QUIC protocol">}}
 
 ### What are the benefits of QUIC?
 

@@ -37,12 +37,12 @@ then do this stuff:
 Now open up [http://localhost:8765](http://localhost:8765) and you should see something like
 the screenshot in before-upload.png
 
-{{<image src="https://github.com/216software/ajax-put-rackspace/raw/master/before-upload.png" title="" alt="">}}
+{{<img src="https://github.com/216software/ajax-put-rackspace/raw/master/before-upload.png" title="" alt="">}}
 Now upload a file. Hopefully, you'll watch a pretty blue scrollbar track
 the upload's progress, and when it's done, you see something like what's
 in this screenshot:
 
-{{<image src="after-upload.png" title="" alt="">}}
+{{<img src="after-upload.png" title="" alt="">}}
 
 Click the DOWNLOAD button. You will get the file you uploaded, but named
 with a different name.

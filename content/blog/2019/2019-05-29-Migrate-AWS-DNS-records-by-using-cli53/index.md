@@ -66,7 +66,7 @@ To verify cli53 on Windows, perform the following tasks:
 2. Change directory to the location where you downloaded the cli53 executable.
 3. Run the cli35 list command, as shown in the following image:
 
-{{<image src="Picture1.png" title="" alt="">}}
+{{<img src="Picture1.png" title="" alt="">}}
 
 #### Create an IAM user
 
@@ -82,7 +82,7 @@ Use the following instructions to create an IAM user:
 4. Enter your user name, select **Access type -> Programmatic Access** and
    click **Next: Permissions** as shown in the following image.
 
-{{<image src="Picture2.png" title="" alt="">}}
+{{<img src="Picture2.png" title="" alt="">}}
 
 <ol start=5>
   <li>Select <b>Attach existing policies directly</b>, type <b>route53</b> in
@@ -90,13 +90,13 @@ Use the following instructions to create an IAM user:
   policy, and click <b>Next: Review</b> as shown in the following image:</li>
 </ol>
 
-{{<image src="Picture3.png" title="" alt="">}}
+{{<img src="Picture3.png" title="" alt="">}}
 
 <ol start=6>
   <li>The following screen displays:</li>
 </ol>
 
-{{<image src="Picture4.png" title="" alt="">}}
+{{<img src="Picture4.png" title="" alt="">}}
 
 <ol start=7>
   <li>Click <b>Create User</b>. On the confirmation screen, shown in the
@@ -105,7 +105,7 @@ Use the following instructions to create an IAM user:
   file on your local machine.</li>
 </ol>
 
-{{<image src="Picture5.png" title="" alt="">}}
+{{<img src="Picture5.png" title="" alt="">}}
 
 <ol start=8>
   <li>Repeat the preceding steps for the target AWS account.</li>
@@ -120,7 +120,7 @@ parameters. Use the following instructions to export Route 53 DNS records:
 1. Go to your **.aws** home directory and find the **credentials** file as
 shown in the following image:
 
-{{<image src="Picture6.png" title="" alt="">}}
+{{<img src="Picture6.png" title="" alt="">}}
 
 <ol start=2>
   <li>Open the editor and update the file, <b>credentials</b>, with your
@@ -129,14 +129,14 @@ shown in the following image:
   file.</li>
 </ol>
 
-{{<image src="Picture7.png" title="" alt="">}}
+{{<img src="Picture7.png" title="" alt="">}}
 
 <ol start=3>
   <li>Open a command prompt and run the list command to verify that
   you are on the source AWS account as shown in the following image:</li>
 </ol>
 
-{{<image src="Picture8.png" title="" alt="">}}
+{{<img src="Picture8.png" title="" alt="">}}
 
 
 <ol start=4>
@@ -147,7 +147,7 @@ shown in the following image:
 
     C:\> cli53-windows-386.exe export <hosted-zone-name> > /path/to/file
 
-{{<image src="Picture9.png" title="" alt="">}}
+{{<img src="Picture9.png" title="" alt="">}}
 
 #### Import Route 53 records to the target account
 
@@ -165,11 +165,11 @@ name under $ORIGIN in the plain text file and save the file.
 
 The following image shows the DNS file before the record deletion:
 
-{{<image src="Picture10.png" title="" alt="">}}
+{{<img src="Picture10.png" title="" alt="">}}
 
 The following image shows the DNS file after the record deletion:
 
-{{<image src="Picture11.png" title="" alt="">}}
+{{<img src="Picture11.png" title="" alt="">}}
 
 <ol start=2>
   <li>Update the <b>credentials</b> file in your home directory to add the target
@@ -177,7 +177,7 @@ The following image shows the DNS file after the record deletion:
   shown in the following image:</li>
 </ol>
 
-{{<image src="Picture12.png" title="" alt="">}}
+{{<img src="Picture12.png" title="" alt="">}}
 
 <ol start=3>
   <li>Open a command prompt and verify that you have successfully switched to
@@ -185,7 +185,7 @@ The following image shows the DNS file after the record deletion:
   at the target site as shown in the following image:</li>
 </ol>
 
-{{<image src="Picture13.png" title="" alt="">}}
+{{<img src="Picture13.png" title="" alt="">}}
 
 <ol start=4>
   <li>If there is not already a hosted zone in the target AWS account, create
@@ -195,7 +195,7 @@ The following image shows the DNS file after the record deletion:
 
     C:\> cli53-windows-386.exe create <hosted-zone name> --comment ‘<comments>’
 
-{{<image src="Picture14.png" title="" alt="">}}
+{{<img src="Picture14.png" title="" alt="">}}
 
 <ol start=5>
   <li>Import the DNS records to the hosted zone on the target AWS account. Copy
@@ -204,7 +204,7 @@ The following image shows the DNS file after the record deletion:
 
     C:\> cli53-windows-386.exe import --file </path/to/file> <hosted-zone-name>
 
-{{<image src="Picture15.png" title="" alt="">}}
+{{<img src="Picture15.png" title="" alt="">}}
 
 <ol start=6>
   <li>Verify all of the DNS records on the target AWS account under the
@@ -212,9 +212,9 @@ The following image shows the DNS file after the record deletion:
   shown in the following images:</li>
 </ol>
 
-{{<image src="Picture16.png" title="" alt="">}}
+{{<img src="Picture16.png" title="" alt="">}}
 
-{{<image src="Picture17.png" title="" alt="">}}
+{{<img src="Picture17.png" title="" alt="">}}
 
 ### Conclusion
 

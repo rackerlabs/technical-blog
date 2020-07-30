@@ -79,7 +79,7 @@ controller. Every time this happens, this should create some measure of latency.
 This experiment determines the impact of local and non-local access, as shown in
 the following images:
 
-{{<image src="Picture1.png" title="" alt="">}}
+{{<img src="Picture1.png" title="" alt="">}}
 
 The test setup for this experiment leverages the Rackspace R740xd platform with
 12 NVMe devices and two Intel&reg; Cascade Lake -R 6242R processors. We have 12
@@ -106,12 +106,12 @@ where each of our NVMe devices was attached.
 
 The following image shows our system:
 
-{{<image src="Picture2.png" title="" alt="">}}
+{{<img src="Picture2.png" title="" alt="">}}
 
 With the output of `lspcu`, we could quickly determine what CPU cores were in
 each NUMA domain, as shown in the following image:
 
-{{<image src="Picture3.png" title="" alt="">}}
+{{<img src="Picture3.png" title="" alt="">}}
 
 With these details ironed out, we now know what CPU cores to leverage to access
 each NVMe device locally.
@@ -177,7 +177,7 @@ controls not leveraged, the system inconsistently ranged from a high of 6.2
 million to a low of 6.071 million IOPS. Although a single system doing over six
 million IOPs is insanely fast, no one wants to leave performance on the table.
 
-{{<image src="Picture4.png" title="" alt="">}}
+{{<img src="Picture4.png" title="" alt="">}}
 
 #### Average latency
 
@@ -187,7 +187,7 @@ latency of I/O operations during the ten test runs.
 The NUMA controlled benchmark showed very flat, predictable latencies that were
 lower overall than the non-NUMA controlled benchmark.
 
-{{<image src="Picture5.png" title="" alt="">}}
+{{<img src="Picture5.png" title="" alt="">}}
 
 #### Per-drive performance deviation
 
@@ -204,7 +204,7 @@ Without NUMA, your performance can vary by as much as 1.4 to 1.8 percent from
 run to run. With NUMA controls in place, the performance stayed within .02
 percent from run to run.  Now, that is consistent!
 
-{{<image src="Picture6.png" title="" alt="">}}
+{{<img src="Picture6.png" title="" alt="">}}
 
 ### Conclusion
 

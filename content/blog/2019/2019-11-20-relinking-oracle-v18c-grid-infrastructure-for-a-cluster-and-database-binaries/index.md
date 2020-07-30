@@ -83,7 +83,7 @@ Before starting the relink operation, you need to stop all the services that
 run from the **$ORACLE_HOME** directory. Shut down all the databases,
 listeners, Oracle Automatic Storage (ASM) instances, and cluster services.
 
-{{<image src="Picture1.png" title="" alt="">}}
+{{<img src="Picture1.png" title="" alt="">}}
 
 #### Root access required
 
@@ -92,7 +92,7 @@ Use root access to run the following command to unlock **GRID_HOME**:
     # cd GRID_HOME/crs/install
     # rootcrs.sh -unlock
 
-{{<image src="Picture2.png" title="" alt="">}}
+{{<img src="Picture2.png" title="" alt="">}}
 
 #### Oracle Grid Infrastructure cluster owner access required
 
@@ -101,19 +101,19 @@ following steps:
 
 Verify that the environment variables **$ORACLE_HOME** and **$PATH** are set properly.
 
-{{<image src="Picture3.png" title="" alt="">}}
+{{<img src="Picture3.png" title="" alt="">}}
 
 Take a backup of **$ORACLE_HOME/rdbms/lib/config.o** before executing the
 relink command.
 
-{{<image src="Picture4.png" title="" alt="">}}
+{{<img src="Picture4.png" title="" alt="">}}
 
 Execute the following commands to relink **GRID_HOME**:
 
     $ export ORACLE_HOME=Grid_home
     $ Grid_home/bin/relink all
 
-{{<image src="Picture5.png" title="" alt="">}}
+{{<img src="Picture5.png" title="" alt="">}}
 
 Review the relink log file for any errors.
 
@@ -126,17 +126,17 @@ Use root access to run the following commands to lock the **GRID-HOME** binaries
     # cd Grid_home/crs/install
     # rootcrs.sh -lock
 
-{{<image src="Picture6.png" title="" alt="">}}
+{{<img src="Picture6.png" title="" alt="">}}
 
 ### Relink Oracle database binaries
 
 Make sure the environment variables **$ORACLE_HOME** and **$PATH** are set properly.
 
-{{<image src="Picture7.png" title="" alt="">}}
+{{<img src="Picture7.png" title="" alt="">}}
 
 Before proceeding with relink command, set **umask** to `022`.
 
-{{<image src="Picture8.png" title="" alt="">}}
+{{<img src="Picture8.png" title="" alt="">}}
 
 Review the relink log file for any errors.
 

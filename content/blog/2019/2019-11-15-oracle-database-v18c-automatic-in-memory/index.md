@@ -54,7 +54,7 @@ AIM and has the following values:
 The following image shows the **INMEMORY\_AUTOMATIC\_LEVEL** parameter and how
 to modify its value:
 
-{{<image src="Picture1.png" title="" alt="">}}
+{{<img src="Picture1.png" title="" alt="">}}
 
 ### Set the time interval for AIM
 
@@ -62,7 +62,7 @@ Use the **DBMS\_INMEMORY\_ADMIN** package to set the time interval for the usage
 statistics that AIM checks. The default value is 31 days. You can change this
 setting as shown in the following example:
 
-{{<image src="Picture2.png" title="" alt="">}}
+{{<img src="Picture2.png" title="" alt="">}}
 
 ### Understand how AIM works
 
@@ -72,13 +72,13 @@ the `INMEMORY ENABLED` status for a schema. In the following example, you can
 see segment **TAB1** already shows in the populated segments lists because its
 priority is set to `HIGH`.
 
-{{<image src="Picture3.png" title="" alt="">}}
+{{<img src="Picture3.png" title="" alt="">}}
 
 Now, you can populate other tables with `INMEMORY ENABLED`. Tables are populated
 in an IM column store after you access the tables, as shown in the following
 example:
 
-{{<image src="Picture4.png" title="" alt="">}}
+{{<img src="Picture4.png" title="" alt="">}}
 
 Next, you can try to populate one more table, **EXAMPLE3**, with `HIGH` priority
 to give it preference over segments with priority of `NONE`. Querying
@@ -90,7 +90,7 @@ That is why AIM evicted the other cold segments (or segments having priority of
 those objects in the IM column store run fine&mdash;they get the remaining data
 that they do not find in the IM column store from the database.
 
-{{<image src="Picture5.png" title="" alt="">}}
+{{<img src="Picture5.png" title="" alt="">}}
 
 You can query **DBA\_INMEMORY\_AIMTASKS** to see the status of all the tasks
 created by AIM. **DBA\_INMEMORY\_AIMTASKDETAILS** lists all the details of
@@ -99,7 +99,7 @@ following image, you can see that no action has been taken on **TAB1** because
 its priority is `HIGH` and as explained earlier while populating table **EXAMPLE3**,
 the IM column store was under memory pressure so AIM evicted the other segments.
 
-{{<image src="Picture6.png" title="" alt="">}}
+{{<img src="Picture6.png" title="" alt="">}}
 
 ### Conclusion
 

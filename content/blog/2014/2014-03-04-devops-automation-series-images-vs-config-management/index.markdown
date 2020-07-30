@@ -60,7 +60,7 @@ you configuration management tool.
 
 ### So, what to use...
 
-{{<image src="advice_dog.png" title="" alt="">}}
+{{<img src="advice_dog.png" title="" alt="">}}
 
 We recommend a slightly dynamic approach: use both. Use an image to build up a
 base, install the things needed everywhere like Chef, a custom version of

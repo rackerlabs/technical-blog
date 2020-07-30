@@ -24,7 +24,7 @@ learn how to use Salesforce within Trailhead’s first year of existence.
 
 <!--more-->
 
-{{<image src="Picture1.png" title="" alt="">}}
+{{<img src="Picture1.png" title="" alt="">}}
 
 At Rackspace, we use Trailhead to sharpen our Salesforce skills and ensure that
 our technology implementations always deliver transformative business value. But

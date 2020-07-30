@@ -24,7 +24,7 @@ characteristics that influence these choices.
 
 <!--more-->
 
-{{<image src="Picture1.png" title="" alt="">}}
+{{<img src="Picture1.png" title="" alt="">}}
 
 ### 1. Session cache
 

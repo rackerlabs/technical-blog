@@ -60,7 +60,7 @@ an endpoint:
 After you provision the endpoint, the web app loses all inbound public connectivity because you associated a
 private IP address with the fully qualified domain name (FQDN) and Kudu&reg; URL. 
     
-{{<image src="endpointIp.png" title="" alt="">}}
+{{<img src="endpointIp.png" title="" alt="">}}
     
 If you are using the **azurewebsites.net** domain, you need to add a DNS zone to route traffic to the private
 IP address associated with the web app. With Sitecore, this would effectively break the application because I

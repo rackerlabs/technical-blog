@@ -33,7 +33,7 @@ on database efficiency for both employees and customers, as shown in the
 following image:
 
 
-{{<image src="Picture1.png" title="" alt="">}}
+{{<img src="Picture1.png" title="" alt="">}}
 
 
 ### Key features of the Oracle Property Manager

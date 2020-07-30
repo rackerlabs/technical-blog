@@ -78,7 +78,7 @@ To install DVD, download and run the installation file from
 
 The following image shows the DVD home page after installation.
 
-{{<image src="Picture1.png" title="" alt="">}}
+{{<img src="Picture1.png" title="" alt="">}}
 
 ### Features of DVD version 12.2.4
 
@@ -107,12 +107,12 @@ To create a project, use the following steps, as shown in the following image:
 
 4. Click **Data Set**.
 
-{{<image src="Picture2.png" title="" alt="">}}
+{{<img src="Picture2.png" title="" alt="">}}
 
 After you click **Data Set**, you must select from the data sources as shown in
 the following image:
 
-{{<image src="Picture3.png" title="" alt="">}}
+{{<img src="Picture3.png" title="" alt="">}}
 
 **From a File**: You can upload an Excel file (assuming the first row of the
 spreadsheet is column headings).
@@ -128,12 +128,12 @@ MySQL&reg;, MongoDB&reg;, and so on.
 When you select **From Database**, you see the available database connection
 types as shown in the following image:
 
-{{<image src="Picture4.png" title="" alt="">}}
+{{<img src="Picture4.png" title="" alt="">}}
 
 When you select **Oracle database**, you are prompted for connection details as
 shown in the following image:
 
-{{<image src="Picture5.png" title="" alt="">}}
+{{<img src="Picture5.png" title="" alt="">}}
 
 After the data source is connected, click on **Create Data Set** on the home page
 and select the tables to use by clicking on the available schemas in the database.
@@ -146,18 +146,18 @@ all the table columns in the data source. Drag identical columns to the dashboar
 data element, and click **Change Visualization Type** in the canvas as shown
 in the following image:
 
-{{<image src="Picture6.png" title="" alt="">}}
+{{<img src="Picture6.png" title="" alt="">}}
 
 The visualize canvas has a color section, which allows you to make the
 visualization more attractive by adding colors to measure values, as shown in
 the following image:
 
-{{<image src="Picture7.png" title="" alt="">}}
+{{<img src="Picture7.png" title="" alt="">}}
 
 The following image shows the project view after you add data elements to the
 dashboard:
 
-{{<image src="Picture8.png" title="" alt="">}}
+{{<img src="Picture8.png" title="" alt="">}}
 
 Each canvas at the bottom of the dashboard can have multiple visuals of data.
 
@@ -167,9 +167,9 @@ client logs to dashboard.
 
 The following images show the canvas view:
 
-{{<image src="Picture9.png" title="" alt="">}}
+{{<img src="Picture9.png" title="" alt="">}}
 
-{{<image src="Picture10.png" title="" alt="">}}
+{{<img src="Picture10.png" title="" alt="">}}
 
 ### Importing and sharing
 

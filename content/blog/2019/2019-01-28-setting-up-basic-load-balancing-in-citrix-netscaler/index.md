@@ -51,7 +51,7 @@ The following steps comprise the typical load balancing traffic flow for NetScal
 
 The following image shows this traffic flow:
 
-{{<image src="Picture1.png" title="" alt="">}}
+{{<img src="Picture1.png" title="" alt="">}}
 
 *Image Source:* [https://docs.citrix.com/en-us/netscaler/12/load-balancing/load-balancing-configure-monitors.html](https://docs.citrix.com/en-us/netscaler/12/load-balancing/load-balancing-configure-monitors.html)
 
@@ -77,7 +77,7 @@ To add the backend servers, perform the following steps:
 2. Select **Login > Configuration > Traffic Management > Load Balancing > Servers**.
 3. Click **Add**.
 
-   {{<image src="Picture2.png" title="" alt="">}}
+   {{<img src="Picture2.png" title="" alt="">}}
 
 <ol start=4>
     <li>Choose a naming convention for the first server and enter its IP address.
@@ -85,13 +85,13 @@ To add the backend servers, perform the following steps:
     <li>Click <b>Create</b>.</li>
 </ol>
 
-   {{<image src="Picture3.png" title="" alt="">}}(
+   {{<img src="Picture3.png" title="" alt="">}}(
 
 <ol start=6>
     <li>Repeat steps 3 and 4 for the other backend web servers.</li>
 </ol>
 
-   {{<image src="Picture4.png" title="" alt="">}}
+   {{<img src="Picture4.png" title="" alt="">}}
 
 #### Create a service group
 
@@ -101,20 +101,20 @@ To create a service group, perform the following steps:
    **Traffic Management > Load Balancing > Service Groups**.
 2. Click **Add**.
 
-   {{<image src="Picture5.png" title="" alt="">}}
+   {{<img src="Picture5.png" title="" alt="">}}
 
 <ol start=3>
     <li>Name the service group and set the protocol to <b>HTTP</b>.</li>
     <li>Click <b>OK</b>.</li>
 </ol>
 
-   {{<image src="Picture6.png" title="" alt="">}}
+   {{<img src="Picture6.png" title="" alt="">}}
 
 <ol start=5>
     <li>Click <b>No Service Group Member</b>.</li>
 </ol>
 
-   {{<image src="Picture7.png" title="" alt="">}}
+   {{<img src="Picture7.png" title="" alt="">}}
 
 <ol start=6>
     <li>Click <b>Server Based</b>.</li>
@@ -124,13 +124,13 @@ To create a service group, perform the following steps:
     <li>Click <b>Create</b>.</li>
 </ol>
 
-   {{<image src="Picture8.png" title="" alt="">}}
+   {{<img src="Picture8.png" title="" alt="">}}
 
 <ol start=10>
     <li>Click <b>OK</b>.</li>
 </ol>
 
-   {{<image src="Picture9.png" title="" alt="">}}
+   {{<img src="Picture9.png" title="" alt="">}}
 
 #### Change the monitoring
 
@@ -138,7 +138,7 @@ To change the monitoring, perform the following steps:
 
 1. Change the monitoring from `SNIP` to `Backend servers`.
 
-   {{<image src="Picture10.png" title="" alt="">}}
+   {{<img src="Picture10.png" title="" alt="">}}
 
 <ol start=2>
     <li>Click <b>No service Group Monitor Binding</b> and select the required
@@ -148,7 +148,7 @@ To change the monitoring, perform the following steps:
     <li>Click <b>Done</b>.</li>
 </ol>
 
-   {{<image src="Picture11.png" title="" alt="">}}
+   {{<img src="Picture11.png" title="" alt="">}}
 
 #### Create a virtual server
 
@@ -164,26 +164,26 @@ To create a virtual server, perform the following steps:
 6. Set the port to `80`.
 7. Click **OK**.
 
-   {{<image src="Picture12.png" title="" alt="">}}
+   {{<img src="Picture12.png" title="" alt="">}}
 
 <ol start=8>
     <li>Add the previously created group by clicking <b>No load balancing Virtual
    Servers Service Group Binding</b> and click <b>Select</b>.</li>
 </ol>
 
-   {{<image src="Picture13.png" title="" alt="">}}
+   {{<img src="Picture13.png" title="" alt="">}}
 
 <ol start=9>
     <li>Click <b>Bind</b> and click <b>Done</b>.</li>
 </ol>
 
-   {{<image src="Picture14.png" title="" alt="">}}
+   {{<img src="Picture14.png" title="" alt="">}}
 
 <ol start=10>
     <li>Save your work and wait for the VIP to come up.</li>
 </ol>
 
-   {{<image src="Picture15.png" title="" alt="">}}
+   {{<img src="Picture15.png" title="" alt="">}}
 
 ### Test the configuration
 
@@ -192,7 +192,7 @@ servers. When you refresh the page, you can see that the NetScaler is doing its
 job and balancing the requests across both back-end web servers as shown in the
 following image:
 
-   {{<image src="Picture16.png" title="" alt="">}}
+   {{<img src="Picture16.png" title="" alt="">}}
 
 ### Conclusion
 

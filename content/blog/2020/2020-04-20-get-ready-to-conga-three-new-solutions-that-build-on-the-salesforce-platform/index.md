@@ -19,7 +19,7 @@ Many companies are turning to cloud-based applications to increase the return on
 
 <!--more-->
 
-{{<image src="photo-1.png" title="" alt="">}}
+{{<img src="photo-1.png" title="" alt="">}}
 
 Conga is best known for its document generation solution. With Conga, you can create complicated documents like contracts, well-formatted Excel&reg; files, or simple quotes from your Salesforce&reg; data. However, Conga continues to evolve its product suite with the addition of three new solutions: Contracts, Sign, and ActionGrid. All three are strong additions to the Conga suite, and all aim to more efficiently organize, simplify, and automate data document generation.
 

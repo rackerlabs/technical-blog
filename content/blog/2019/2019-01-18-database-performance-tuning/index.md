@@ -52,7 +52,7 @@ After you have generated the AWR report, you can quickly see the **Top Timed
 Events** section in the AWR report, which identifies the problematic area, as
 shown in the following image:
 
-{{<image src="Picture1.png" title="" alt="">}}
+{{<img src="Picture1.png" title="" alt="">}}
 
 ### ADDM tuning Session
 
@@ -64,14 +64,14 @@ picture about database issues, Oracle has provided another tool for DBAs, ADDM.
 An ADDM tuning session follows a procedure similar to the manual tuning session.
 The following image shows a comparison:
 
-{{<image src="Picture2.png" title="" alt="">}}
+{{<img src="Picture2.png" title="" alt="">}}
 
 *Image source:  Oracle 11G Performance Tuning training manual*
 
 Retrieve ADDM reports by using SQL or through Oracle Enterprise Manager (OEM).
 The following image shows sample SQL:
 
-{{<image src="Picture3.png" title="" alt="">}}
+{{<img src="Picture3.png" title="" alt="">}}
 
 ### Bad SQL and execution plans
 
@@ -89,7 +89,7 @@ The following image shows sample output from the `EXPLAIN PLAN` command and
 identifies whether the query is using a full table scan or narrowing down the
 data by using some indexes:
 
-{{<image src="Picture4.png" title="" alt="">}}
+{{<img src="Picture4.png" title="" alt="">}}
 
 ADDM reports reflect whether you can achieve any performance benefit by creating
 some new indexes. You can also run the SQL Tuning Advisor from OEM to fine tune
@@ -109,13 +109,13 @@ solutions. SQL Tuning Advisor analyzes the following sources:
 
 The following screenshots show some examples:
 
-{{<image src="Picture5.png" title="" alt="">}}
+{{<img src="Picture5.png" title="" alt="">}}
 
-{{<image src="Picture6.png" title="" alt="">}}
+{{<img src="Picture6.png" title="" alt="">}}
 
-{{<image src="Picture7.png" title="" alt="">}}
+{{<img src="Picture7.png" title="" alt="">}}
 
-{{<image src="Picture8.png" title="" alt="">}}
+{{<img src="Picture8.png" title="" alt="">}}
 
 ### Long running requests
 
@@ -126,7 +126,7 @@ concurrent requests. The following image shows steps to collect this
 
 information:
 
-{{<image src="Picture9.png" title="" alt="">}}
+{{<img src="Picture9.png" title="" alt="">}}
 
 ### Oracle Database memory parameters
 
@@ -135,7 +135,7 @@ requires fine tuning because the cache hit ratio is lower for that cache than
 it is for other caches.  The following image shows a few of the top database
 parameters that you must consider for instance-wide memory tuning.
 
-{{<image src="Picture10.png" title="" alt="">}}
+{{<img src="Picture10.png" title="" alt="">}}
 
 *Image source:* [https://ora-performance-tuning.blogspot.com/2014/02/automatic-shared-memory-management.html](https://ora-performance-tuning.blogspot.com/2014/02/automatic-shared-memory-management.html)
 
@@ -143,7 +143,7 @@ parameters that you must consider for instance-wide memory tuning.
 
 The following table shows some common wait events and their possible causes:
 
-{{<image src="Picture11.png" title="" alt="">}}(
+{{<img src="Picture11.png" title="" alt="">}}(
 
 *Table source: Oracle Performance Tuning 11G OCP training manual,  chapter 20, page 24*
 

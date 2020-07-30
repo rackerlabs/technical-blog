@@ -37,7 +37,7 @@ low-code development&mdash;a visual development method using drag-and-drop eleme
 APEX enables you to adapt to changing requirements and empowers developers and
 your entire organization to be a part of the solution quickly.
 
-{{<image src="Picture1.png" title="" alt="">}}
+{{<img src="Picture1.png" title="" alt="">}}
 
 *Image source:* [https://apex.oracle.com/en/](https://apex.oracle.com/en/)
 
@@ -82,7 +82,7 @@ When a user submits a page from APEX, the process flows from the page through
 Oracle REST Data Services (ORDS) to APEX and back again, as shown in the
 following image.
 
-{{<image src="Picture2.png" title="" alt="">}}
+{{<img src="Picture2.png" title="" alt="">}}
 
 *Image source*: [https://apex.oracle.com/en/platform/architecture/](https://apex.oracle.com/en/platform/architecture/)
 
@@ -104,20 +104,20 @@ already have this Oracle RAD stack.
 
 ##### REST data services (ORDS)
 
-{{<image src="PictureR.png" title="" alt="" class="image-left">}} ORDS is a
+{{<img src="PictureR.png" title="" alt="" class="image-left">}} ORDS is a
 Java application that enables developers with SQL and database skills to develop
 REST APIs for Oracle Database, Oracle Database 12c JSON Document store, and the
 Oracle NoSQL Database.
 
 ##### APEX
 
-{{<image src="PictureA.png" title="" alt="" class="image-left">}}The Oracle
+{{<img src="PictureA.png" title="" alt="" class="image-left">}}The Oracle
 Database's native low-code development platform enables you to build stunning,
 scalable, secure apps, with world-class features, that can be deployed anywhere.
 
 ##### Database
 
-{{<image src="PictureD.png" title="" alt="" class="image-left">}}Oracle
+{{<img src="PictureD.png" title="" alt="" class="image-left">}}Oracle
 Database&mdash;the most complete, integrated, and secure database solution for
 any scale deployment. This solid foundation enables apps built using Oracle APEX
 to be enterprise ready from day one.
@@ -135,7 +135,7 @@ Oracle Application Express release 18.1 requires an Oracle Database release
 Download APEX 18.1 software [here](https://www.oracle.com/tools/downloads/apex-v191-downloads.html)
 and click **Accept**.
 
-{{<image src="Picture3.png" title="" alt="">}}
+{{<img src="Picture3.png" title="" alt="">}}
 
 #### Step 1: Unzip the APEX 18.1.0.00.45 software
 

@@ -28,7 +28,7 @@ to access this row, the system traverses more than one database block, which
 results in more input/output (I/O) operations, as shown in the following
 illustration:
 
-{{<image src="Picture1.png" title="" alt="">}}
+{{<img src="Picture1.png" title="" alt="">}}
 
 ### Basic assumption to test the scenario
 
@@ -68,7 +68,7 @@ created tablespace to gather the statistics.
 
         SELECT CHAIN_CNT FROM ALL_TABLES WHERE OWNER=’HR’ AND TBALE_NAME=’BIG_ROWS’;
 
-   {{<image src="screenshot.png" title="" alt="">}}
+   {{<img src="screenshot.png" title="" alt="">}}
 
 <ol start=5>
     <li> Create a tablespace with a different block size with the following command:</li>
@@ -101,7 +101,7 @@ created tablespace to gather the statistics.
        SELECT CHAIN\_CNT FROM ALL\_TABLES WHERE OWNER=’HR’ AND TABLE\_NAME=’BIG\_ROWS’;
 
 
-{{<image src="screenshot2.png" title="" alt="">}}
+{{<img src="screenshot2.png" title="" alt="">}}
 
 ### Index rebuild after moving a table
 

@@ -74,7 +74,7 @@ for integration.
 
 The following image shows the single instance architecture:
 
-{{<image src="Picture1.png" title="" alt="">}}
+{{<img src="Picture1.png" title="" alt="">}}
 
 #### Separate destination and source instances
 
@@ -84,7 +84,7 @@ instance must be a Demantra-certified version of APS.
 
 The following image shows the separate instances architecture:
 
-{{<image src="Picture2.png" title="" alt="">}}
+{{<img src="Picture2.png" title="" alt="">}}
 
 ### High-level installation steps for Demantra
 

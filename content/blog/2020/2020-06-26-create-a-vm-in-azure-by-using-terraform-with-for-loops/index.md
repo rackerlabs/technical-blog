@@ -63,11 +63,11 @@ Before creating the RGs, define a provider block for Terraform, so it understand
 that we are deploying Azure resources. Store this information for Terraform in
 a separate file called **providers.tf**:
 
-{{<image src="Picture1.png" alt="" title="">}}
+{{<img src="Picture1.png" alt="" title="">}}
 
 The RG code, **rg.tf**:
 
-{{<image src="Picture2.png" alt="" title="">}}
+{{<img src="Picture2.png" alt="" title="">}}
 
 
 #### Create the VNET and subnet files
@@ -76,11 +76,11 @@ Now, the second task is to create a VNet and a subnet for our VM.
 
 The VNet block, **vnet.tf**:
 
-{{<image src="Picture3.png" alt="" title="">}}
+{{<img src="Picture3.png" alt="" title="">}}
 
 And the subnet code, **subnet.tf**:
 
-{{<image src="Picture4.png" alt="" title="">}}
+{{<img src="Picture4.png" alt="" title="">}}
 
 #### Create the NIC file
 
@@ -91,7 +91,7 @@ suit me.
 
 The NIC code, **Nic.tf**:
 
-{{<image src="Picture5.png" alt="" title="">}}
+{{<img src="Picture5.png" alt="" title="">}}
 
 #### Create the storage file
 
@@ -102,7 +102,7 @@ call ourselves good Azure implementors.
 
 The Storage account file, **storage_account.tf**:
 
-{{<image src="Picture6.png" alt="" title="">}}
+{{<img src="Picture6.png" alt="" title="">}}
 
 
 #### Create the VM file
@@ -112,11 +112,11 @@ we used earlier, such as VM name, NIC name, disk name, and so on.
 
 Final code for our VM, **vm.tf**:
 
-{{<image src="Picture7.png" alt="" title="">}}
+{{<img src="Picture7.png" alt="" title="">}}
 
-{{<image src="Picture8.png" alt="" title="">}}
+{{<img src="Picture8.png" alt="" title="">}}
 
-{{<image src="Picture9.png" alt="" title="">}}
+{{<img src="Picture9.png" alt="" title="">}}
 
 
 #### Create the variable file
@@ -127,7 +127,7 @@ helps when you do giant builds.
 
 The variable file, **Variable.tf**:
 
-{{<image src="Picture10.png" alt="" title="">}}
+{{<img src="Picture10.png" alt="" title="">}}
 
 
 ### Build the VMs

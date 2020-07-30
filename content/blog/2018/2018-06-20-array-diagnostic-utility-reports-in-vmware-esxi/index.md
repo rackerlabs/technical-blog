@@ -52,7 +52,7 @@ server:
 
 The following image shows the preceding steps:
 
-{{<image src="Picture1.png" title="" alt="">}}
+{{<img src="Picture1.png" title="" alt="">}}
 
 ### Install the hpcucli utility
 
@@ -80,7 +80,7 @@ To generate and save an ADU report, use the following steps:
 
         /opt/hp # esxcli hpssacli cmd –q “controller all show status”
 
-{{<image src="Picture2.png" title="" alt="">}}
+{{<img src="Picture2.png" title="" alt="">}}
 
 <ol start=3>
   <li>Run the following command to generate an array configuration report:</li>
@@ -88,10 +88,10 @@ To generate and save an ADU report, use the following steps:
 
         /opt/hp # esxcli hpssacli cmd –q “controller slot=0  show config detail”
 
-{{<image src="Picture3.png" title="" alt="">}}
+{{<img src="Picture3.png" title="" alt="">}}
 
 
-{{<image src="Picture4.png" title="" alt="">}}
+{{<img src="Picture4.png" title="" alt="">}}
 
 
 <ol start=4>

@@ -61,14 +61,14 @@ Use the following steps to enable an Azure Backup report:
 Log in to the Azure portal, click the **All services blade**, and search for
 **Recovery Services vaults**.
 
-{{<image src="Picture1.png" title="" alt="">}}
+{{<img src="Picture1.png" title="" alt="">}}
 
 #### 2: Select a vault
 
 Select one of the recovery service vaults on which to enable **Backup Report**
 and monitor backup duration.
 
-{{<image src="Picture2.png" title="" alt="">}}
+{{<img src="Picture2.png" title="" alt="">}}
 
 #### 3: Choose Backup Report
 
@@ -77,13 +77,13 @@ Click the recovery vault blade, **Backup Reports**, and click **Diagnostics Sett
 **Note**: The preview **Backup Reports** feature might not be available in
 some regions.
 
-{{<image src="Picture3.png" title="" alt="">}}
+{{<img src="Picture3.png" title="" alt="">}}
 
 #### 4: Configure Backup Report
 
 To configure **Backup Report**, click on **Add diagnostic setting**.
 
-{{<image src="Picture4.png" title="" alt="">}}
+{{<img src="Picture4.png" title="" alt="">}}
 
 #### 5: Enable log streaming
 
@@ -94,11 +94,11 @@ To enable backup log streaming, fill in the name of the report, check
 **Send to Log Analytics**, check **AzureBackupReport** in the **Log** section,
 and click **Save**.
 
-{{<image src="Picture5.png" title="" alt="">}}
+{{<img src="Picture5.png" title="" alt="">}}
 
 The portal displays your report, as shown in the following image:
 
-{{<image src="Picture6.png" title="" alt="">}}
+{{<img src="Picture6.png" title="" alt="">}}
 
 ### KQL query to monitor server backups
 
@@ -148,18 +148,18 @@ selected during the report configuration.
 
 Copy and paste the preceding KQL query in the **Query** tab and click **Run**.
 
-{{<image src="Picture7.png" title="" alt="">}}
+{{<img src="Picture7.png" title="" alt="">}}
 
 Servers that took longer than three hours to complete display, as shown in
 the following output:
 
-{{<image src="Picture8.png" title="" alt="">}}
+{{<img src="Picture8.png" title="" alt="">}}
 
 #### 3: Create a new alert
 
 To set an alert for these servers, click **New Alert Rule**.
 
-{{<image src="Picture9.png" title="" alt="">}}
+{{<img src="Picture9.png" title="" alt="">}}
 
 #### 4: Configure the new alert
 
@@ -169,7 +169,7 @@ because I want to create an alert on every server and result.
 **Note**: You can also change the **Period** and **Frequency** of the alert, as
 needed.
 
-{{<image src="Picture10.png" title="" alt="">}}
+{{<img src="Picture10.png" title="" alt="">}}
 
 Configure other alert requirements, such as alert name, action group (email
 recipient), webhooks, and other conditions.

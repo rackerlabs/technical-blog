@@ -102,7 +102,7 @@ For the refreshable clone environment, take the following actions.
 
 1)  Create a production database and open it.
 
-{{<image src="Picture1.png" alt="" title="">}}
+{{<img src="Picture1.png" alt="" title="">}}
 
 2) Import the data from the **EXPDP** dumps that you took by using the `impdp`
    utility or importing an HR schema into **PURCH\_PDB**. For this example,
@@ -112,7 +112,7 @@ For the refreshable clone environment, take the following actions.
 
 After it finishes, validate the HR schema details, as shown in the following figure:
 
-{{<image src="Picture2.png" alt="" title="">}}
+{{<img src="Picture2.png" alt="" title="">}}
 
 
 ##### Actions to take on XCDB1:
@@ -130,7 +130,7 @@ location, use **CREATE\_FILE\_DEST** or **FILE\_NAME\_CONVERT**.
 The only addition is the **REFRESH MODE** attribute. To simplify this demonstration,
 I did not add any of the optional attributes.
 
-{{<image src="Picture3.png" alt="" title="">}}
+{{<img src="Picture3.png" alt="" title="">}}
 
 
 #### Find the refresh mode and production database details
@@ -139,7 +139,7 @@ You can query table **DBA_PDBS** to check details of the refreshable PDB mode,
 status, last refresh SCN, and its parent production database details. For
 **PDB2\_REFRO** PDB, check the output as shown in the following example:
 
-{{<image src="Picture4.png" alt="" title="">}}
+{{<img src="Picture4.png" alt="" title="">}}
 
 
 After you complete your task, you should convert the refreshable PDB back to
@@ -152,7 +152,7 @@ for refresh:
 
     ORA-65025: Pluggable database is not closed on all instances
 
-{{<image src="Picture5.png" alt="" title="">}}
+{{<img src="Picture5.png" alt="" title="">}}
 
 
 #### Change the refresh mode of the refreshable clone
@@ -174,13 +174,13 @@ If you try, the following error occurs:
     ORA-65118: operation affecting a pluggable database cannot be performed from
     another pluggable database.
 
-{{<image src="Picture6.png" alt="" title="">}}
+{{<img src="Picture6.png" alt="" title="">}}
 
 
 In manual refresh mode, you can refresh your cloned PDB as needed by using the
 following command:
 
-{{<image src="Picture7.png" alt="" title="">}}
+{{<img src="Picture7.png" alt="" title="">}}
 
 
 ##### Disable PDB refresh and convert a read-only clone to a read-write-enabled database
@@ -195,12 +195,12 @@ following error:
 
     ORA-65261: pluggable database PDB2_REFRO3 not enabled for refresh.
 
-{{<image src="Picture8.png" alt="" title="">}}
+{{<img src="Picture8.png" alt="" title="">}}
 
 
 After you disable refresh, the PDB has read-write access.
 
-{{<image src="Picture9.png" alt="" title="">}}
+{{<img src="Picture9.png" alt="" title="">}}
 
 
 #### Switch from production to the refreshable clone and vice versa.
@@ -231,7 +231,7 @@ Complete prerequisites 1 through 3 before executing the switchover command.
 
 Database link details:
 
-{{<image src="Picture10.png" alt="" title="">}}
+{{<img src="Picture10.png" alt="" title="">}}
 
 
 ##### Actions to take on XCDB1
@@ -239,7 +239,7 @@ Database link details:
 Check the database link details and find the database **open mode** by using
 **DBA\_DB\_LINKS** and **V$DATABASE**.
 
-{{<image src="Picture11.png" alt="" title="">}}
+{{<img src="Picture11.png" alt="" title="">}}
 
 
 After the switchover completes, the original source PDB **PURCH\_PDB** became

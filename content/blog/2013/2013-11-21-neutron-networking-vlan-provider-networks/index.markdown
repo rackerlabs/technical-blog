@@ -26,15 +26,15 @@ VLAN segregation is often used in a web hosting environment where there’s one 
 
 The diagrams below are examples of traditional flat and vlan-segregated networks:
 
-{{<image src="VLAN_Provider_1.1.png" title="" alt="">}}{{<image src="VLAN_Provider_1.2.png" title="" alt="">}}
+{{<img src="VLAN_Provider_1.1.png" title="" alt="">}}{{<img src="VLAN_Provider_1.2.png" title="" alt="">}}
 
-{{<image src="VLAN_Provider_1.3.png" title="" alt="">}}
+{{<img src="VLAN_Provider_1.3.png" title="" alt="">}}
 
 ### VLAN tagging: What is it and how does it work?
 
 At a basic level on a Cisco switch there are two types of switchports: access ports and trunk ports. Switchports configured as access ports are placed into a single vlan and can communicate with other switchports in the same vlan. Switchports configured as trunks allow traffic from multiple vlans to traverse a single interface. The switch adds a tag to the Ethernet frame that contains the corresponding vlan ID as the frame enters the trunk. As the frame exits the trunk on the other side, the vlan  tag is stripped and the traffic forwarded to its destination. Common uses of trunk ports include uplinks to other switches and more importantly in our case, hypervisors serving virtual machines from various networks.
 
-{{<image src="VLAN_Provider_1.4.png" title="" alt="">}}
+{{<img src="VLAN_Provider_1.4.png" title="" alt="">}}
 
 ### VLAN Tagging: How does this apply to Neutron?
 
@@ -52,7 +52,7 @@ For this installment, a Cisco ASA 5510 will once again serve as the lead gateway
 
 A single interface on the servers will be used for both management and provider network connectivity.
 
-{{<image src="VLAN_Provider_1.5.png" title="" alt="">}}
+{{<img src="VLAN_Provider_1.5.png" title="" alt="">}}
 
 ### Networking: Configuration of network devices
 

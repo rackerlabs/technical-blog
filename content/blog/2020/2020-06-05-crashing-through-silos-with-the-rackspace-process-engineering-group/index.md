@@ -31,7 +31,7 @@ organizations into core Rackspace tooling. Enter the Process Engineering Group
 slug: "crashing-through-silos-with-the-rackspace-process-engineering-group"
 ---
 
-<img src="/blog/crashing-through-silos-with-the-rackspace-process-engineering-group/Picture1.png" class="image-right">
+{{<img src="/blog/crashing-through-silos-with-the-rackspace-process-engineering-group/Picture1.png" class="image-right">}}
 Let's face it.
 Every business unintentionally develops silos or divisions within business units,
 and Rackspace is no different. A grassroots foundation that needs to be agile,
@@ -41,7 +41,7 @@ organizations into core Rackspace tooling. Enter the Process Engineering Group
 
 <!--more-->
 
-{{<image src="Picture2.png" class="image-right" alt="">}}PEG,
+{{<img src="Picture2.png" class="image-right">}}PEG,
 established in April 2014, is eighteen strong and pioneered this needed
 innovation, all while powering what would take thousands to accomplish. PEG
 operates as an extension of all Rackspace teams. They provide automation using
@@ -113,7 +113,7 @@ Data Center Operations, and PEG.
 
 The three stages of push-button automation:
 
-{{<image src="Picture3.png" title="" alt="">}}
+{{<img src="Picture3.png" title="" alt="">}}
 
 When we closed the maintenance window, the following results occurred:
 

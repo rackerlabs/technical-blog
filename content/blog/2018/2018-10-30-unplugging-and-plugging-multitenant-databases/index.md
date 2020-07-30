@@ -45,7 +45,7 @@ In this section, you learn how to unplug `PDB1` and `PDB2` from the source CDB
 Before making changes, the source PDBs are `MOUNTED` as shown in the following
 image:
 
-{{<image src="Picture1.png" title="" alt="">}}
+{{<img src="Picture1.png" title="" alt="">}}
 
 #### Validate PDB compatibility with the target CDB
 
@@ -152,7 +152,7 @@ commands:
 
 The result of these operations is shown in the following image:
 
-{{<image src="Picture2.png" title="" alt="">}}
+{{<img src="Picture2.png" title="" alt="">}}
 
 ##### Plug with the NOCOPY method
 
@@ -178,7 +178,7 @@ commands:
 
 The results of these operations are shown in the following image:
 
-{{<image src="Picture3.png" title="" alt="">}}
+{{<img src="Picture3.png" title="" alt="">}}
 
 List the data files of the plugged PDB by running the following commands:
 
@@ -208,7 +208,7 @@ An error message displays because the global unique identifier (GUID) is not
 unique. `PDB1` was already plugged using the COPY method, which caused this
 conflict with the GUID as shown in the following image:
 
-{{<image src="Picture4.png" title="" alt="">}}
+{{<img src="Picture4.png" title="" alt="">}}
 
 To address this, run the following code with the `AS CLONE` clause:
 
@@ -229,7 +229,7 @@ List the data files of the plugged PDB by running the following command:
 
 The results of these operations are shown in the following image:
 
-{{<image src="Picture5.png" title="" alt="">}}
+{{<img src="Picture5.png" title="" alt="">}}
 
 #### Open the plugged PDBs
 
