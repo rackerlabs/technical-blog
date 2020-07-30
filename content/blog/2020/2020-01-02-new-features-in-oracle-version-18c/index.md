@@ -74,7 +74,7 @@ common to every installation's **ORACLE\_HOME**. Migrating a database from one
 
     orapwd file=’$ORACLE_BASE/orapwtest18c’ password=oracle force=y format=12
 
-{{<image src="Picture1.png" title="" alt="">}}
+{{<img src="Picture1.png" title="" alt="">}}
 
 ### Read-only Oracle Home
 

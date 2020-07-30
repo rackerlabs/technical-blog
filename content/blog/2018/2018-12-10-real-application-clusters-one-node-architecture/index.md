@@ -141,7 +141,7 @@ installation zip file, unzip the file, and run `./runInstaller`.
 Click **Skip software updates** on the first installation window, then click
 **Next**.  Select options as shown in the following image:
 
-{{<image src="Picture1.png" title="" alt="">}}
+{{<img src="Picture1.png" title="" alt="">}}
 
 Then, click **Advanced Installation** in the next window.
 
@@ -150,9 +150,9 @@ Then, click **Advanced Installation** in the next window.
 Enter the cluster and SCAN name and ensure that they show the correct default
 nodes on the cluster node information screens as shown in the following images:
 
-{{<image src="Picture2.png" title="" alt="">}}
+{{<img src="Picture2.png" title="" alt="">}}
 
-{{<image src="Picture3.png" title="" alt="">}}
+{{<img src="Picture3.png" title="" alt="">}}
 
 #### Step 3: Configure and test SSH connectivity
 
@@ -160,27 +160,27 @@ Click **SSH Connectivity** to configure and test the password-less SSH
 connectivity by typing in the OS password for the user `grid` and select **Setup**
 as shown in the following images:
 
-{{<image src="Picture4.png" title="" alt="">}}
+{{<img src="Picture4.png" title="" alt="">}}
 
-{{<image src="Picture5.png" title="" alt="">}}
+{{<img src="Picture5.png" title="" alt="">}}
 
 #### Step 4: Select the network
 
 Choose the **Network Interface Name** and **Type** according to the subnet as
 shown in the following image. Associate one subnet with one interface only.
 
-{{<image src="Picture6.png" title="" alt="">}}
+{{<img src="Picture6.png" title="" alt="">}}
 
 Select **Oracle ASM** as the storage option and specify directories for the data
 storage as shown in the following image:
 
-{{<image src="Picture7.png" title="" alt="">}}
+{{<img src="Picture7.png" title="" alt="">}}
 
 #### Step 5: Select the group
 
 Be very careful while selecting the group, as shown in the following image:
 
-{{<image src="Picture8.png" title="" alt="">}}
+{{<img src="Picture8.png" title="" alt="">}}
 
 #### Step 6: Specify Grid directories
 
@@ -188,23 +188,23 @@ Specify the Oracle Grid infrastructure for cluster home base,the software
 directory for its HOME directory, and an inventory directory as shown in the
 following images:
 
-{{<image src="Picture9.png" title="" alt="">}}
+{{<img src="Picture9.png" title="" alt="">}}
 
-{{<image src="Picture10.png" title="" alt="">}}
+{{<img src="Picture10.png" title="" alt="">}}
 
-{{<image src="Picture11.png" title="" alt="">}}
+{{<img src="Picture11.png" title="" alt="">}}
 
 #### Step 7: Complete installation
 
 After the setup checks are finished, check **Ignore All** and click **Next** to
 run the installation as shown in the following image:
 
-{{<image src="Picture12.png" title="" alt="">}}(Picture12.png)
+{{<img src="Picture12.png" title="" alt="">}}(Picture12.png)
 
 After the installation completes, do not forget to run the `root.sh` file as
 shown in the following image:
 
-{{<image src="Picture13.png" title="" alt="">}}
+{{<img src="Picture13.png" title="" alt="">}}
 
 #### Step 8: Post-installation checks
 
@@ -245,7 +245,7 @@ the database.
 After following the  database installation steps, when prompted for Grid
 Installation Options, select them as shown in the following image:
 
-{{<image src="Picture14.png" title="" alt="">}}
+{{<img src="Picture14.png" title="" alt="">}}
 
 #### Step 3: Choose database configuration options
 
@@ -253,22 +253,22 @@ When prompted for the type of database configuration options and details, select
 them as shown in the following images and ensure that you select **Oracle
 Automatic Storage Method**, when asked for database storage:
 
-{{<image src="Picture15.png" title="" alt="">}}
+{{<img src="Picture15.png" title="" alt="">}}
 
-{{<image src="Picture16.png" title="" alt="">}}
+{{<img src="Picture16.png" title="" alt="">}}
 
-{{<image src="Picture17.png" title="" alt="">}}
+{{<img src="Picture17.png" title="" alt="">}}
 
 #### Step 4: Select Disk Group
 
 The Disk Group is created after the Grid installation. Select it as shown in the
 following image:
 
-{{<image src="Picture18.png" title="" alt="">}}
+{{<img src="Picture18.png" title="" alt="">}}
 
 Ignore any errors by checking **Ignore All** as shown in the following image:
 
-{{<image src="Picture19.png" title="" alt="">}}
+{{<img src="Picture19.png" title="" alt="">}}
 
 ### RAC One Node commands
 

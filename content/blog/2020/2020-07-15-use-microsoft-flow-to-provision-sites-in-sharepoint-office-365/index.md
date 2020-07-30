@@ -57,7 +57,7 @@ Steps to build the solution:
 Create a custom SharePoint list, **Site Creation Request**, with the first eight
 columns in **Figure 1**.
 
-{{<image src="Picture1.png" alt="" title="">}}
+{{<img src="Picture1.png" alt="" title="">}}
 
 **Figure 1** : Set of columns
 
@@ -75,7 +75,7 @@ format:
 - **Teams**: `STS#3`
 - **Communication Site**: `SITEPAGEPUBLISHING#0`
 
-{{<image src="Picture2.png" alt="" title="">}}
+{{<img src="Picture2.png" alt="" title="">}}
 
 
 **Figure 2** : Add an item to *site creation request* list
@@ -89,7 +89,7 @@ Use the following steps to create and schedule an MS Flow workflow:
 Build a scheduled flow, as shown in **Figure 3**, pass all the parameters, and
 click **Create**.
 
-{{<image src="Picture3.png" alt="" title="">}}
+{{<img src="Picture3.png" alt="" title="">}}
 
 
 **Figure 3**: Create the scheduled workflow
@@ -100,7 +100,7 @@ In the next screen, after the recurrence step, add two **Initialize Variable**
 actions for the **List Name** and **IsUniquePermission** variables, as shown in
 **Figure 4**.
 
-{{<image src="Picture4.png" alt="" title="">}}
+{{<img src="Picture4.png" alt="" title="">}}
 
 **Figure 4**: Add the *initialize* variable action
 
@@ -112,7 +112,7 @@ to No**, as shown in **Figure  5**.
 
 **Note**: The **Filter Query** parameter receives only **OData Query**.
 
-{{<image src="Picture5.png" alt="" title="">}}
+{{<img src="Picture5.png" alt="" title="">}}
 
 **Figure 5**: Add the *get items* action
 
@@ -121,7 +121,7 @@ to No**, as shown in **Figure  5**.
 Add the **Apply to each** action and select the value from the previous
 **Get Items** action, as shown in **Figure 6**.
 
-{{<image src="Picture6.png" alt="" title="">}}
+{{<img src="Picture6.png" alt="" title="">}}
 
 
 **Figure 6**: Add the **Apply to each** action
@@ -135,7 +135,7 @@ following command, as shown in **Figure 7**.
 
     split(item()['SiteTemplate']?['Value'],'-')
 
-{{<image src="Picture7.png" alt="" title="">}}
+{{<img src="Picture7.png" alt="" title="">}}
 
 
 **Figure 7**: Add the **Apply to each** action
@@ -175,7 +175,7 @@ The body parameter details include the following elements:
 
 - **UseUniquePermissions**:  Maps to the column **IsUniquePermission**.
 
-{{<image src="Picture8.png" alt="" title="">}}
+{{<img src="Picture8.png" alt="" title="">}}
 
 
 **Figure 8**: Add the HTTP request to provision the site
@@ -202,7 +202,7 @@ The details of the map request follow:
 **Note**: The highlighted value in **Figure 9** is the static name of the
 **Site Creation** list.
 
-{{<image src="Picture9.png" alt="" title="">}}
+{{<img src="Picture9.png" alt="" title="">}}
 
 
 **Figure 9**: Add the HTTP request to update an item
@@ -211,7 +211,7 @@ The details of the map request follow:
 
 Complete the **Apply to each** action, as shown in **Figure 10**.
 
-{{<image src="Picture10.png" alt="" title="">}}
+{{<img src="Picture10.png" alt="" title="">}}
 
 
 **Figure 10**: **Apply to each** block
@@ -220,7 +220,7 @@ Complete the **Apply to each** action, as shown in **Figure 10**.
 
 Complete the scheduled workflow, as shown in **Figure 11**.
 
-{{<image src="Picture11.png" alt="" title="">}}
+{{<img src="Picture11.png" alt="" title="">}}
 
 
 **Figure 11**: Complete the workflow for site creation

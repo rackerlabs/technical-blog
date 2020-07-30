@@ -28,7 +28,7 @@ users to use Domain Name Server (DNS) services in their environment.
 
 ### Overview
 
-{{<image src="Picture1.png" title="" alt="">}}
+{{<img src="Picture1.png" title="" alt="">}}
 
 The Designate ReST API provides a simple, scalable, and flexible way to program
 and manage DNS.

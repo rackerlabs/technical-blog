@@ -28,7 +28,7 @@ Linux x86-64 RedHat&reg; Enterprise Linux 5 Update Level 5+.
 
 The following diagram shows the OAM operational flow:
 
-{{<image src="Picture1.png" title="" alt="">}}
+{{<img src="Picture1.png" title="" alt="">}}
 
 
 ### Configure SSO for Discoverer
@@ -58,9 +58,9 @@ Use the following steps to register an OSSO agent (mod_sso):
 2. Under the **Agents** section, click the "+" with the dropdown symbol as
    shown in the following images:
 
-   {{<image src="Picture2.png" title="" alt="">}}
+   {{<img src="Picture2.png" title="" alt="">}}
 
-   {{<image src="Picture3.png" title="" alt="">}}
+   {{<img src="Picture3.png" title="" alt="">}}
 
 <ol start=3>
     <li>
@@ -68,7 +68,7 @@ Use the following steps to register an OSSO agent (mod_sso):
     </li>
 </ol>
 
-   {{<image src="Picture4.png" title="" alt="">}}
+   {{<img src="Picture4.png" title="" alt="">}}
 
 <ol start=4>
     <li>
@@ -86,11 +86,11 @@ Use the following steps to register an OSSO agent (mod_sso):
     </li>
 </ol>
 
-   {{<image src="Picture5.png" title="" alt="">}}
+   {{<img src="Picture5.png" title="" alt="">}}
 
-   {{<image src="Picture6.png" title="" alt="">}}
+   {{<img src="Picture6.png" title="" alt="">}}
 
-   {{<image src="Picture7.png" title="" alt="">}}
+   {{<img src="Picture7.png" title="" alt="">}}
 
 #### Update policies
 
@@ -101,9 +101,9 @@ Use the following steps to update authentication and authorization policies:
    Resource Policy** as shown in the
    following images:
 
-   {{<image src="Picture8.png" title="" alt="">}}
+   {{<img src="Picture8.png" title="" alt="">}}
 
-   {{<image src="Picture9.png" title="" alt="">}}
+   {{<img src="Picture9.png" title="" alt="">}}
 
 <ol start=2>
     <li>
@@ -112,14 +112,14 @@ Use the following steps to update authentication and authorization policies:
     </li>
 </ol>
 
-   {{<image src="Picture10.png" title="" alt="">}}
+   {{<img src="Picture10.png" title="" alt="">}}
 
 #### Copy the osso.conf file
 
 When you register the OSSO agent, the system creates `osso.conf` in
 $DOMAIN_HOME/output/<Agent Name>, as shown in the following image:
 
-{{<image src="Picture11.png" title="" alt="">}}
+{{<img src="Picture11.png" title="" alt="">}}
 
 Log in to your Discoverer server and check the file information as shown in the
 following example:
@@ -210,24 +210,24 @@ Validate the SSO configuration by accessing the following launchers:
 Browse to the URL, enter your SSO login, and click **Login** as shown in the
 following image:
 
-{{<image src="Picture12.png" title="" alt="">}}
+{{<img src="Picture12.png" title="" alt="">}}
 
 Fill in the details as shown in the following image:
 
-{{<image src="Picture13.png" title="" alt="">}}
+{{<img src="Picture13.png" title="" alt="">}}
 
 Click **Continue** and the system populates your user name automatically as
 shown in the following images:
 
-{{<image src="Picture14.png" title="" alt="">}}
+{{<img src="Picture14.png" title="" alt="">}}
 
-{{<image src="Picture15.png" title="" alt="">}}
+{{<img src="Picture15.png" title="" alt="">}}
 
-{{<image src="Picture16.png" title="" alt="">}}
+{{<img src="Picture16.png" title="" alt="">}}
 
-{{<image src="Picture17.png" title="" alt="">}}
+{{<img src="Picture17.png" title="" alt="">}}
 
-{{<image src="Picture18.png" title="" alt="">}}
+{{<img src="Picture18.png" title="" alt="">}}
 
 ### Conclusion
 

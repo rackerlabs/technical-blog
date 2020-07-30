@@ -73,14 +73,14 @@ Palo Alto image.
 2. Choose **Amazon Market Place**, and search for **Palo Alto**.
 3. Select **VM-Series Next Generation Firewall Bundle 2**.
 
-{{<image src="Picture1.png" title="" alt="">}}
+{{<img src="Picture1.png" title="" alt="">}}
 
 #### Step 4: Create an instance
 
 1. Launch a new EC2 instance by clicking the **Launch Instance** radio button
    as shown in the following image:
 
-{{<image src="Picture2.png" title="" alt="">}}
+{{<img src="Picture2.png" title="" alt="">}}
 
 <ol start=2>
     <li>To choose an Amazon Machine Image (AMI), go to AWS Marketplace. On the
@@ -88,14 +88,14 @@ Palo Alto image.
     Firewall Bundle 2</b>.</li>
     <li>Click <b>Select</b>.</li>
 </ol>
-{{<image src="Picture3.png" title="" alt="">}}
+{{<img src="Picture3.png" title="" alt="">}}
 
 <ol start=4>
     <li>Highlight the instance type <b>M3 Extra Large</b>.</li>
     <li>Click <b>Next: Configure Instance Details</b>.</li>
 </ol>
 
-{{<image src="Picture4.png" title="" alt="">}}
+{{<img src="Picture4.png" title="" alt="">}}
 
 <ol start=6>
     <li>Configure the instance details. Select <b>Management</b> for the subnet,
@@ -103,16 +103,16 @@ Palo Alto image.
     the following images:</li>
 </ol>
 
-{{<image src="Picture5.png" title="" alt="">}}
+{{<img src="Picture5.png" title="" alt="">}}
 
-{{<image src="Picture6.png" title="" alt="">}}
+{{<img src="Picture6.png" title="" alt="">}}
 
 <ol start=7>
     <li>Select <b>General Purpose SSD (Solid State Drive) (GP2) Volume type<\b>
     and click <b>Next: Add Tags</b>.</li>
 </ol>
 
-{{<image src="Picture7.png" title="" alt="">}}
+{{<img src="Picture7.png" title="" alt="">}}
 
 <ol start=8>
     <li>Keep the default settings for <b>Add Tags</b> and click
@@ -120,28 +120,28 @@ Palo Alto image.
     and click <b>Review and Launch</b>.</li>
 </ol>
 
-{{<image src="Picture8.png" title="" alt="">}}
+{{<img src="Picture8.png" title="" alt="">}}
 
-{{<image src="Picture9.png" title="" alt="">}}
+{{<img src="Picture9.png" title="" alt="">}}
 
 <ol start=9>
     <li>Review all the details of the instance and click <b>Launch</b>.</li>
 </ol>
 
-{{<image src="Picture10.png" title="" alt="">}}
+{{<img src="Picture10.png" title="" alt="">}}
 
 <ol start=10>
     <li>Select the key pair that you created previously and click <b>Launch Instances</b>.</li>
 </ol>
 
-{{<image src="Picture11.png" title="" alt="">}}
+{{<img src="Picture11.png" title="" alt="">}}
 
 <ol start=11>
     <li>Go to <b>Services -> EC2 -> Instances</b> and validate that the new
     instance is running as shown in the following image:</li>
 </ol>
 
-{{<image src="Picture12.png" title="" alt="">}}
+{{<img src="Picture12.png" title="" alt="">}}
 
 #### Configure the VPC
 
@@ -151,11 +151,11 @@ Palo Alto image.
    it from the Internet. Verify that the new associated Route Entry is listed
    under **Route Table**.
 
-{{<image src="Picture13.png" title="" alt="">}}
+{{<img src="Picture13.png" title="" alt="">}}
 
-{{<image src="Picture14.png" title="" alt="">}}
+{{<img src="Picture14.png" title="" alt="">}}
 
-{{<image src="Picture15.png" title="" alt="">}}
+{{<img src="Picture15.png" title="" alt="">}}
 
 #### Assign an IP address to the instance
 
@@ -163,9 +163,9 @@ Palo Alto image.
 2. Go to **Network & Security** on left hand side, choose **Elastic IPs**, and
    click **Allocate new address**.
 
-{{<image src="Picture16.png" title="" alt="">}}
+{{<img src="Picture16.png" title="" alt="">}}
 
-{{<image src="Picture17.png" title="" alt="">}}
+{{<img src="Picture17.png" title="" alt="">}}
 
 <ol start=3>
     <li>Click <b>Action -> Associate Address -> Assign the running instance</b>.</li>
@@ -173,9 +173,9 @@ Palo Alto image.
     <li>Click <b>Associate</b>.</li>
 </ol>
 
-{{<image src="Picture18.png" title="" alt="">}}
+{{<img src="Picture18.png" title="" alt="">}}
 
-{{<image src="Picture19.png" title="" alt="">}}
+{{<img src="Picture19.png" title="" alt="">}}
 
 #### Test the configuration
 
@@ -186,11 +186,11 @@ browser (for example, https://<public_IP>).
 
 The following images provide some examples of this test:
 
-{{<image src="Picture20.png" title="" alt="">}}
+{{<img src="Picture20.png" title="" alt="">}}
 
-{{<image src="Picture21.png" title="" alt="">}}
+{{<img src="Picture21.png" title="" alt="">}}
 
-{{<image src="Picture22.png" title="" alt="">}}
+{{<img src="Picture22.png" title="" alt="">}}
 
 #### Create a Palo Alto support account
 

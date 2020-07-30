@@ -110,7 +110,7 @@ Query Store includes the following reports:
 -	**Tracked Queries**: Track the execution of the most important queries in real
    time.
 
-{{<image src="Picture1.png" title="" alt="">}}
+{{<img src="Picture1.png" title="" alt="">}}
 
 ### Forcing Plans with Query Store
 
@@ -131,33 +131,33 @@ execution plan only for the upcoming query executions.
 The **Query Store -> Open Top Resource Consuming Queries** report lists queries
 that are resource intensive. Let’s select a query for examination:
 
-{{<image src="Picture2.png" title="" alt="">}}
+{{<img src="Picture2.png" title="" alt="">}}
 
 Hover your mouse over **Plan** to see related statistics.
 
-{{<image src="Picture3.png" title="" alt="">}}
+{{<img src="Picture3.png" title="" alt="">}}
 
 Let's compare different plans.
 
 **Plan 216 details:**
 
-{{<image src="Picture4.png" title="" alt="">}}
+{{<img src="Picture4.png" title="" alt="">}}
 
 **Plan 195 details:**
 
-{{<image src="Picture5.png" title="" alt="">}}
+{{<img src="Picture5.png" title="" alt="">}}
 
 The average duration for Plan 216 is lower, so it can be used to force this plan
 in further executions. Click on **Force Plan** to see a confirmation screen
 with the message “Do you want to force plan 216 for query 42?”
 
-{{<image src="Picture6.png" title="" alt="">}}
+{{<img src="Picture6.png" title="" alt="">}}
 
 Click **Yes**.  After the plan is forced, it is highlighted with a checkmark as
 shown in the following screenshot. In the future, this plan will be used by
 query optimizer for execution.
 
-{{<image src="Picture7.png" title="" alt="">}}
+{{<img src="Picture7.png" title="" alt="">}}
 
 ### Best Practices with Query Store
 

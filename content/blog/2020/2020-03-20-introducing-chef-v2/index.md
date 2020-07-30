@@ -53,7 +53,7 @@ Chef consists of the following main components:
 
 The following image shows a basic setup:
 
-{{<image src="Picture1.png" title="" alt="">}}
+{{<img src="Picture1.png" title="" alt="">}}
 
 *Image Source*: [https://www.linode.com/docs/applications/configuration-management/beginners-guide-chef/](https://www.linode.com/docs/applications/configuration-management/beginners-guide-chef/)
 

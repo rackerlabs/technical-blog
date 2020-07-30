@@ -23,7 +23,7 @@ receive a level of service that exceeds their expectations.
 
 <!--more-->
 
-{{<image src="Geofencing-in-FSL.png" title="" alt="">}}
+{{<img src="Geofencing-in-FSL.png" title="" alt="">}}
 
 This article reviews geofencing or geolocation&mdash;a capability within FSL. We
 discuss the definition of geofencing, as well as how and when you should expect

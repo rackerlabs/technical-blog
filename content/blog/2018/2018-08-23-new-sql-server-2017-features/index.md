@@ -73,9 +73,9 @@ after events such as database failovers, running out of disk space, or pauses.
 
 The following images show an example of this operation:
 
-{{<image src="Picture1.png" title="" alt="">}}
+{{<img src="Picture1.png" title="" alt="">}}
 
-{{<image src="Picture2.png" title="" alt="">}}
+{{<img src="Picture2.png" title="" alt="">}}
 
 #### Guidelines for indexing
 
@@ -111,7 +111,7 @@ use to improve query performance in SQL Server and SQL Database.
 
 There are three new query improvements as shown in the following diagram:
 
-{{<image src="Picture3.png" title="" alt="">}}
+{{<img src="Picture3.png" title="" alt="">}}
 
 -  **Batch mode memory grant feedback**: This feedback technique recalculates
 required memory for the execution plan and grants it from cache.
@@ -153,7 +153,7 @@ engine fix any problems related to the plan changes that are found.
 
 The automatic plan correction is shown in the following diagram:
 
-{{<image src="Picture4.png" title="" alt="">}}
+{{<img src="Picture4.png" title="" alt="">}}
 
 The following automatic tuning features are available:
 
@@ -162,9 +162,9 @@ SQL Database): It identifies problematic query execution plans and fixes the
 SQL plan performance problems. Automatic tuning is enabled using the following
 command:
 
-{{<image src="Picture5.png" title="" alt="">}}
+{{<img src="Picture5.png" title="" alt="">}}
 
-{{<image src="Picture6.png" title="" alt="">}}
+{{<img src="Picture6.png" title="" alt="">}}
 
 -	**Automatic index management** (available only in Azure SQL Database): It
 identifies indexes that should be added in your database and indexes that should
@@ -252,7 +252,7 @@ monitor, alert, and avert potential transaction log issues.
 -	**sys.dm\_d\_stats\_histogram** is a new dynamic management view for examining
 statistics, as shown in the following image:
 
-{{<image src="Picture7.png" title="" alt="">}}
+{{<img src="Picture7.png" title="" alt="">}}
 
 -	**sys.dm\_os\_host\_info** exposes things like platform, distribution,
 service pack level, and language.
@@ -299,7 +299,7 @@ statistics are collected and displayed:
 sessions to plans, as long as query profiling is enabled. The following image
 illustrates this:
 
-{{<image src="Picture8.png" title="" alt="">}}
+{{<img src="Picture8.png" title="" alt="">}}
 
 -	Showplan XML now includes information about the statistics used for a plan
 and, for actual plans, runtime metrics and the top 10 wait statistics

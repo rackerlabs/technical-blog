@@ -27,7 +27,7 @@ Remember that the last thing that we handled was preparing a dictionary fully of
 
 #### Exploration 1
 
-{{<image src="Conductor-1.png" title="Conductor Exploration Flow" alt="Conductor Exploration Flow">}}
+{{<img src="Conductor-1.png" title="Conductor Exploration Flow" alt="Conductor Exploration Flow">}}
 
 Conductor is a strange beast primarily designed to act as a go-between for compute nodes and the nova database with the goal of adding a layer of security to this process. This theoretically prevents the servers from accessing the database directly, however, in practice, Conductor winds up picking up more weight than some people think it should. When we left the Compute API, we were sent into the *nova.condutor.ComputeTaskAPI.live\_migrate\_instance*. Let's look at the class `ComputeTaskAPI`, which is stored in the *manager.py* file.
 
@@ -41,7 +41,7 @@ The following method is a pattern that is common within services Managers. When 
 
 #### Exploration 2
 
-{{<image src="Conductor-2.png" title="Conductor Exploration Flow" alt="Conductor Exploration Flow">}}
+{{<img src="Conductor-2.png" title="Conductor Exploration Flow" alt="Conductor Exploration Flow">}}
 
 Now, we actually enter the server meat and potatoes. The main purpose of the following method is to build a task object that keeps track of the progress and moves things along. This task also allows me to cancel to the live-migrate prematurely or, if I want to in later API versions, to issue a force complete. It also sets up some basic variables for later use. Some task work is done here, which I'm skipping over because it is more relevant to learning Conductor tasks than the live migration process itself. Breaking down the work here, we create a new "migration" object from the nova primitives set: *nova.objects.Migration*. This creates a basic dictionary set with empty values. Similar to instantiating a new class, this instantiates an empty python object with data that we expect. Next, I fill in some of this data that we already know (such as the instance data, source host, and migration type), create this task, and execute it. From here, the task execution handles the work. Find this task, once it is running, in *nova.conductor.tasks.live_migrate*.
 
@@ -68,7 +68,7 @@ class ComputeTaskManager(base.Base):
 
 #### Exploration 3
 
-{{<image src="Conductor-3.png" title="Conductor Exploration Flow" alt="Conductor Exploration Flow">}}
+{{<img src="Conductor-3.png" title="Conductor Exploration Flow" alt="Conductor Exploration Flow">}}
 
 Now, we enter the execution phase, where all of the heavy lifting begins and the chain to complete the migration starts. The following code first calls the scheduler to find a suitable destination. We will refer back to this method several times, because the code splits off completes several very important tasks before returning. Before calling scheduler, however, the method sets up some basic variables within its class definition that are overwritten by subsequent methods. It is important to understand that these are *class* variables or objects and are not method-owned - these variables are not passed around but instead overwrite the class data. Since many of the variables remain within the class, there is no reason for them to be returned or to require much input, and the methods might use these class variables as reference. Since so much is happening here, I've also placed comments inline in the code. Please pay attention to `#*#*#` lines - I will walk you through this as much as possible.
 
@@ -104,7 +104,7 @@ The first thing done here is verification that the instance is in an active stat
 
 #### Exploration 4
 
-{{<image src="Conductor-4.png" title="Conductor Exploration Flow" alt="Conductor Exploration Flow">}}
+{{<img src="Conductor-4.png" title="Conductor Exploration Flow" alt="Conductor Exploration Flow">}}
 
 Next, the method checks the power state of the instance. It pulls the data from the class instance variable that was set up in the INIT and which contains the *power\_state* field. An exception is created if this does not match a *running* or *paused* state. Assuming no exception, the execution moves on.
 
@@ -118,7 +118,7 @@ Next, the method checks the power state of the instance. It pulls the data from 
 
 #### Exploration 5
 
-{{<image src="Conductor-5.png" title="Conductor Exploration Flow" alt="Conductor Exploration Flow">}}
+{{<img src="Conductor-5.png" title="Conductor Exploration Flow" alt="Conductor Exploration Flow">}}
 
 We completed the active check (marked with an 'X' in the following code), and now the process ensures that the host is up. We head to another private method *\_check\_host\_is\_up*.
 
@@ -131,7 +131,7 @@ We completed the active check (marked with an 'X' in the following code), and no
 
 #### Exploration 6
 
-{{<image src="Conductor-6.png" title="Conductor Exploration Flow" alt="Conductor Exploration Flow">}}
+{{<img src="Conductor-6.png" title="Conductor Exploration Flow" alt="Conductor Exploration Flow">}}
 
 Here's another fairly simple check to verify that the source server is up and online. To do this, it reaches out to the    `servicegroup`, which is the database driver, to run some checks against down time. A long as this returns successfully, we move on again. There is not too much to say about this code, because it mostly relates to the database drivers.  If there's no exception here, we return to the execution.
 
@@ -145,7 +145,7 @@ Here's another fairly simple check to verify that the source server is up and on
 
 #### Exploration 7
 
-{{<image src="Conductor-7.png" title="Conductor Exploration Flow" alt="Conductor Exploration Flow">}}
+{{<img src="Conductor-7.png" title="Conductor Exploration Flow" alt="Conductor Exploration Flow">}}
 
 We have completed two basic checks and are skipping some migration allocation code (noted by the ellipses) because this section doesn't have much to do with the current discussion. The skipped sction gets heavilly into the Nova Placement API and the Allocations system, which is beyond the scope of current discussion.
 
@@ -167,7 +167,7 @@ Now that the instance and the source are both verified as good to go, it is time
 
 #### Exploration 8
 
-{{<image src="Conductor-8.png" title="Conductor Exploration Flow" alt="Conductor Exploration Flow">}}
+{{<img src="Conductor-8.png" title="Conductor Exploration Flow" alt="Conductor Exploration Flow">}}
 
 The following code works closely with the scheduler to find a destination and is a section that doesn't need much explantion. In general, we know that I provided a *requestSpec* to the class with the instance information for the kind of host I needed.  This information is piped to the scheduler to find a matching host in a loop. While we don't care too much about the scheduling parts, we do care about some checks that are run in the loop. This method, and the ones it calls, are revisited several times before we finally return our `destination` and `dest_node` to the *\_execute* method. See inline comments for more information.
 
@@ -192,7 +192,7 @@ The following code works closely with the scheduler to find a destination and is
 
 #### Exploration 9
 
-{{<image src="Conductor-9.png" title="Conductor Exploration Flow" alt="Conductor Exploration Flow">}}
+{{<img src="Conductor-9.png" title="Conductor Exploration Flow" alt="Conductor Exploration Flow">}}
 
 The first method called here (*\_check\_compatible\_with\_source\_hypervisor*) is quite short. This takes the host information of the source (stored in the class as *self.host*) and the destination (just *host*) and compares the versions of their platforms to see if there is compatability. Without compatability, an exception is triggered, which unsets the host and continues the loop. Interestingly, this method does return data in the form of the source info and destination info, however this information is not stored during the *\_find\_destination* call and is lost.
 
@@ -210,7 +210,7 @@ The first method called here (*\_check\_compatible\_with\_source\_hypervisor*) i
 
 #### Exploration 10
 
-{{<image src="Conductor-10.png" title="Conductor Exploration Flow" alt="Conductor Exploration Flow">}}
+{{<img src="Conductor-10.png" title="Conductor Exploration Flow" alt="Conductor Exploration Flow">}}
 
 
 Now that we completed these simple but important checks, we execute the *_call\_livem\_checks\_on\_host*. This beefy call leads us into several other methods. Again, it's worth noting that anything returned here is lost. We are just looking to find an exception or to continue. We do, however, set the class *migrate\_data* variable, which (as you may remember) was set to `None` during the class instantiation. This *migrate\_data* is filled with the returned values from *compute\_rpcapi.check\_can\_live\_migrate\_destination*.
@@ -233,7 +233,7 @@ As we prepare to traverse through RPC, we can be fairly certain about two things
 
 #### Exploration 11
 
-{{<image src="Conductor-11.png" title="Conductor Exploration Flow" alt="Conductor Exploration Flow">}}
+{{<img src="Conductor-11.png" title="Conductor Exploration Flow" alt="Conductor Exploration Flow">}}
 
 
 The execution is now at the compute manager on the destination, ready to run checks against the chosen destination, moving from Nova API manager to Conductor Manager to Destination Compute. This method is just a redirect (called by using RPC) into a private method.
@@ -248,7 +248,7 @@ The execution is now at the compute manager on the destination, ready to run che
 
 #### Exploration 12
 
-{{<image src="Conductor-12.png" title="Conductor Exploration Flow" alt="Conductor Exploration Flow">}}
+{{<img src="Conductor-12.png" title="Conductor Exploration Flow" alt="Conductor Exploration Flow">}}
 
 
 Now we need to handle some setup here and to make a few returns to this code, so let's step through it. First, we set up some variables for the source and destination by using the host variables that were passed to us from Conductor. Interestingly, it pulls the Destination host from its own *CONF* file, since this code is actually running on the destination now. Once that is done, the code is first passed over to *driver.check\_can\_live\_migrate\_destination*. It stores the returned data of this operation in *dest_check_data*. Because the driver is XenAPI, execution shifts there for now, and returns once the *dest\_check\_data* is filled in.
@@ -267,7 +267,7 @@ Regarding the Driver, Compute keeps credentials to manage its respective hypervi
 
 #### Exploration 13
 
-{{<image src="Conductor-13.png" title="Conductor Exploration Flow" alt="Conductor Exploration Flow">}}
+{{<img src="Conductor-13.png" title="Conductor Exploration Flow" alt="Conductor Exploration Flow">}}
 
 
 To find data in a driver, such as where that *check\_can\_live\_migrate\_destination* method lives, look in the *driver.py* file, which is similar to the routes for an API and tells us where to go. Let's take a look now, but I won't do this review in future explorations of the code. You can see from the imports that our new home is the *nova.virt.xenapi.vmops.check\_can\_live\_migrate\_destination* method. Remember, this is how you can find all calls to the *driver.call* methods. *From compute* is issuing commands directly to the driver that it controls by using its login credentials in the *Nova Conf* file.
@@ -284,7 +284,7 @@ To find data in a driver, such as where that *check\_can\_live\_migrate\_destina
 
 #### Exploration 14
 
-{{<image src="Conductor-14.png" title="Conductor Exploration Flow" alt="Conductor Exploration Flow">}}
+{{<img src="Conductor-14.png" title="Conductor Exploration Flow" alt="Conductor Exploration Flow">}}
 
 
 The following method makes sure that the destination is ready for use. First, it creates a new object from the primitives, like we have seen before, and the returned *dest\_check\_data* is saved. It then handles some specific actions depending on whether `Block Migration` was specified. In this case, I did not specify block migration, and I said that I did not have shared storage. This lack of shared storage means that the *\_ensure\_host\_in\_aggregate* call fails. Thus, the block\_migration boolean is set to `True` and execution continues into the `if block\_migration` code. See the inline comments in the following psuedocode for more details.
@@ -336,7 +336,7 @@ The following method makes sure that the destination is ready for use. First, it
 
 #### Exploration 15
 
-{{<image src="Conductor-15.png" title="Conductor Exploration Flow" alt="Conductor Exploration Flow">}}
+{{<img src="Conductor-15.png" title="Conductor Exploration Flow" alt="Conductor Exploration Flow">}}
 
 
 In the following code, the *migrate\_receive* call issues a warning through XenAPI. It sends XenAPI the *migrate\_receive* command including the nw\_ref, destination, and options details. These options can be `sr` references. Live migration, block migration, and xen return a token. This token signifies that the server is ready to accept the connection over the nw_ref that was specified to the host (in the parameters that were provided). This token is stored as the *dest\_check\_data.migrate\_send\_data* variable and is returned to Compute services *\_do\_check\_can\_live\_migrate\_destination* method.
@@ -356,7 +356,7 @@ In the following code, the *migrate\_receive* call issues a warning through XenA
 
 #### Exploration 16
 
-{{<image src="Conductor-16.png" title="Conductor Exploration Flow" alt="Conductor Exploration Flow">}}
+{{<img src="Conductor-16.png" title="Conductor Exploration Flow" alt="Conductor Exploration Flow">}}
 
 
 The inline comments from the code's author explain the following function pretty well. It just pulls the network reference for the management network. It's not a super important bit of code, but it does become more useful later. Additionally, the previous method uses this method as well, so it is useful to understand what is happening.
@@ -378,7 +378,7 @@ The inline comments from the code's author explain the following function pretty
 
 #### Exploration 17
 
-{{<image src="Conductor-17.png" title="Conductor Exploration Flow" alt="Conductor Exploration Flow">}}
+{{<img src="Conductor-17.png" title="Conductor Exploration Flow" alt="Conductor Exploration Flow">}}
 
 
 The execution now returns to the *\_do\_check\_can\_live\_migrate\_destination* call with a populated *dest_check_data*, which importantly contains the *migrate_send_data* field. Let's do a quick review. Notice that the method is suddenly no longer just checking a destination but now is also checking a source. We set *migrate_data* to the result of *compute.manager.check\_can\_live\_migrate\_source (compute\_rpcapi)*! More information is in the inline comments in the following code. Notice that we are moving through *compute\_rpcapi* again, which means that the code chunk runs on the source Compute node.
@@ -408,7 +408,7 @@ The execution now returns to the *\_do\_check\_can\_live\_migrate\_destination* 
 
 #### Exploration 18
 
-{{<image src="Conductor-18.png" title="Conductor Exploration Flow" alt="Conductor Exploration Flow">}}
+{{<img src="Conductor-18.png" title="Conductor Exploration Flow" alt="Conductor Exploration Flow">}}
 
 
 Just like before, I'm handing this over the XenAPI drivers to do the work, but first the process sets up some basic variables to send with it so that it gets a little easier for XenAPI.  This includes seeing if the server is volume-backed and getting basic block-device-mapping information. This information, however, does not contain Cinder target information (this will be important later for our XenAPI purposes). Once we have that, we move into the driver. The driver's outcome is stored as *result* and is then returned. This is a bit interesting because the name changes. Usually, OpenStack keeps these things standard to avoid this kind of confusion. Just know that *result* is stored in *migrate\_data*.
@@ -428,7 +428,7 @@ Just like before, I'm handing this over the XenAPI drivers to do the work, but f
 
 #### Exploration 19
 
-{{<image src="Conductor-19.png" title="Conductor Exploration Flow" alt="Conductor Exploration Flow">}}
+{{<img src="Conductor-19.png" title="Conductor Exploration Flow" alt="Conductor Exploration Flow">}}
 
 
 The primary focus of the following method is to run the XenAPI *assert_can_migrate* command. This command accepts mappings that are generated in the *\_call\_live\_migrate\_command* method, which is called and then just returns the untouched *dest\_check\_data* data. More information is in inline comments.
@@ -461,7 +461,7 @@ The primary focus of the following method is to run the XenAPI *assert_can_migra
 
 #### Exploration 20
 
-{{<image src="Conductor-20.png" title="Conductor Exploration Flow" alt="Conductor Exploration Flow">}}
+{{<img src="Conductor-20.png" title="Conductor Exploration Flow" alt="Conductor Exploration Flow">}}
 
 
 The following method calls the XenAPI driver to run the specified command. This method is used twice during the *live\_migration* process: once to run this assert, and again later to actually start the live migration process. The method generates maps from various resources to their owners. These maps are *Source Vif -> Destination Network* and *Source VDI -> Destination SR*. These maps could be used more intensively by the call (including such things as GPU and CPU maps), but we only use these two for our purposes. We send that data to the *call\_xenapi* method, which calls the *assert\_can\_migrate* method with which I called this method, and, if any of these maps fail, the process fires an exception. Essentially, it is looking at these maps to ensure that everything exists properly and is ready to accept the migration. Some extraneous content is trimmed here for simplicity. Note that nothing is returned here. We are inside of the *check\_can\_live\_migrate\_source* `try` block and just except or continue.
@@ -536,7 +536,7 @@ We finally return to execute, and I've marked what we have already completed wit
                 migrate_data=self.migrate_data)
 {{< /highlight >}}
 
-{{<image src="Conductor-21.png" title="Conductor Exploration Flow" alt="Conductor Exploration Flow">}}
+{{<img src="Conductor-21.png" title="Conductor Exploration Flow" alt="Conductor Exploration Flow">}}
 
 ### Conclusion
 

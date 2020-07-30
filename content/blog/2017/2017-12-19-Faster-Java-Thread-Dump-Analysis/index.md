@@ -28,8 +28,8 @@ Execute this command, wait 5-15 seconds, then repeat until you have three thread
 
 With these thread dumps in hand, we can point your browser to [https://fastthread.io](https://fastthread.io) and upload your thread dumps.  fastthread will give you a thorough analysis and point to potential problem spots that warrant further investigation.
 
-{{<image src="summary.png" title="Thread Dump Analysis Summary" alt="Thread Dump Analysis Summary">}}
+{{<img src="summary.png" title="Thread Dump Analysis Summary" alt="Thread Dump Analysis Summary">}}
 
-{{<image src="blocked_threads.png" title="Blocked Threads" alt="Blocked Threads">}}
+{{<img src="blocked_threads.png" title="Blocked Threads" alt="Blocked Threads">}}
 
 In the preceding images, you can see a small representation of some of the visual analysis that fastthread can provide.

@@ -35,7 +35,7 @@ organizations these days.
 Simply put, data mining extracts meaningful and useful information from a large
 set of raw data.
 
-{{<image src="Picture1.png" title="" alt="">}}
+{{<img src="Picture1.png" title="" alt="">}}
 
 The data and databases come from various data sources, and you can store them
 in different data warehouses. You might assume that *data mining* refers to the

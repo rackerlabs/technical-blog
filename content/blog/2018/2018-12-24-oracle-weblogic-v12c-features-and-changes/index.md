@@ -66,7 +66,7 @@ The patching directory is **/Oracle/Middleware/Oracle\_Home/OPatch**.
 
 The following image shows the WebLogic file structure:
 
-{{<image src="Picture1.png" title="" alt="">}}
+{{<img src="Picture1.png" title="" alt="">}}
 
 #### Dynamic cluster
 
@@ -80,11 +80,11 @@ Changes to dynamic clusters include the following items:
 The following image shows a cluster created with the **Round Robin** type in the
 WebLogic Console:
 
-{{<image src="Picture2.png" title="" alt="">}}
+{{<img src="Picture2.png" title="" alt="">}}
 
 The following image shows the dynamic cluster running status in the WebLogic Console:
 
-{{<image src="Picture3.png" title="" alt="">}}
+{{<img src="Picture3.png" title="" alt="">}}
 
 #### Dynamic server
 
@@ -95,7 +95,7 @@ Changes to dynamic server include the following items:
 
 The following image shows where to create a dynamic server in the WebLogic Console:
 
-{{<image src="Picture4.png" title="" alt="">}}
+{{<img src="Picture4.png" title="" alt="">}}
 
 #### Multitenancy
 

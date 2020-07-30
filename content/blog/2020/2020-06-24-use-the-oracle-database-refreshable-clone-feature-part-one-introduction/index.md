@@ -105,7 +105,7 @@ the pluggable database **PDB1** of container database **CDB1** to another
 container database **CDB2**. This action results in a hot-cloned version of
 **PDB1** named **PDB1\_REF\_CLONE**.
 
-{{<image src="Picture1.png" alt="Figure 1" title="Figure 1">}}
+{{<img src="Picture1.png" alt="Figure 1" title="Figure 1">}}
 
 **Figure 1**
 
@@ -145,12 +145,12 @@ Use the following statement to reverse the roles for source and clone PDBs:
 
 You can simplify this switchover process, as shown in the following figures:
 
-{{<image src="Picture2.png" alt="Figure 3" title="Figure 2">}}
+{{<img src="Picture2.png" alt="Figure 3" title="Figure 2">}}
 
 
 **Figure 2**
 
-{{<image src="Picture3.png" alt="Figure 3" title="Figure 3">}}
+{{<img src="Picture3.png" alt="Figure 3" title="Figure 3">}}
 
 
 **Figure 3**

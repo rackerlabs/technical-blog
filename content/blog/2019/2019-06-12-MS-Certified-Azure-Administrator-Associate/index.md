@@ -24,7 +24,7 @@ My thoughts on the AZ-102 exam!
 
 Some time ago, I passed the **AZ-102** exam and became a certified Microsoft&reg; Azure Administrator Associate (and, well, I guess that makes me **MC Triple A**). 
 
-{{<image src="ms_party.gif" title="" alt="">}}
+{{<img src="ms_party.gif" title="" alt="">}}
 
 This new certification more or less supersedes the earlier MCSA Cloud Platform certification. It also shows that Microsoft is transitioning to a certification structure similar to that of Amazon Web Services (AWS), Google Cloud Platform (GCP), and Alibaba, based on an associate and professional certification level. 
 

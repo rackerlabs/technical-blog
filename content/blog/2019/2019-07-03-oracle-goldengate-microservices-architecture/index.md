@@ -43,7 +43,7 @@ user interface.
 OGG MA has five main components. The following diagram illustrates how
 replication processes operate within a secure Rest API environment:
 
-{{<image src="Picture1.png" title="" alt="">}}
+{{<img src="Picture1.png" title="" alt="">}}
 
 **Image source**: [https://docs.oracle.com/goldengate/c1230/gg-winux/GGCON/img/logicalarch2.png](https://docs.oracle.com/goldengate/c1230/gg-winux/GGCON/img/logicalarch2.png)
 
@@ -139,7 +139,7 @@ of OGG MA, including the admin client.
 The admin client has more functions and is more usable in distributed
 configurations than GGSCI as shown in the following table:
 
-{{<image src="Picture2.png" title="" alt="">}}
+{{<img src="Picture2.png" title="" alt="">}}
 
 ### The key microservices architecture directories and variables
 
@@ -150,7 +150,7 @@ The design is composed of a read-only home directory, where you install
 GoldenGate and create a custom deployment-specific directory as shown in the
 following image:
 
-{{<image src="Picture3.png" title="" alt="">}}
+{{<img src="Picture3.png" title="" alt="">}}
 
 **Image source**: [https://docs.oracle.com/goldengate/c1230/gg-winux/GGCON/img/ggcon_dt_003a_dirstruc.png](https://docs.oracle.com/goldengate/c1230/gg-winux/GGCON/img/ggcon_dt_003a_dirstruc.png)
 

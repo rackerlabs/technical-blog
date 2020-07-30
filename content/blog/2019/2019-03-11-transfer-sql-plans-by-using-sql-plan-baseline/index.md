@@ -301,7 +301,7 @@ the new baseline:
 
 The following image shows how a SQL plan is selected when a baseline plan exists:
 
-{{<image src="Picture1.png" title="" alt="">}}
+{{<img src="Picture1.png" title="" alt="">}}
 
 *Image source*: Metalink Note Automatic SQL Plan Baselines (Doc ID 1930525.1)
 

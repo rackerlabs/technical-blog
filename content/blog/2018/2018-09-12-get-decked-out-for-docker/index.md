@@ -68,7 +68,7 @@ and volumes.
 The Docker client interacts with the server through the REST API or by using
 CLI commands, as shown in the following diagram:
 
-{{<image src="Picture1.png" title="" alt="">}}
+{{<img src="Picture1.png" title="" alt="">}}
 
 **Image source**: https://docs.docker.com/engine/images/engine-components-flow.png
 

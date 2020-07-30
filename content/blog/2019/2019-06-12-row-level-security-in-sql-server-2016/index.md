@@ -52,7 +52,7 @@ determine which user can see which rows and restrict any rows (or data) by
 designing a flexible and robust security policy for a table, as shown in the
 following image:
 
-{{<image src="Picture1.png" title="" alt="">}}
+{{<img src="Picture1.png" title="" alt="">}}
 
 *Image Source:* [https://sqlwithmanoj.com/2015/07/13/implementing-row-level-security-rls-with-sql-server-2016/](https://sqlwithmanoj.com/2015/07/13/implementing-row-level-security-rls-with-sql-server-2016/)
 
@@ -177,7 +177,7 @@ in Step 2:
 
 This code returns two rows, as shown below:
 
-{{<image src="Picture2.png" title="" alt="">}}(Picture2.png)
+{{<img src="Picture2.png" title="" alt="">}}(Picture2.png)
 
     EXECUTE AS USER = 'userJames';
     SELECT * FROM dbo.SalesFigures;
@@ -186,7 +186,7 @@ This code returns two rows, as shown below:
 
 This code returns one row, as shown below:
 
-{{<image src="Picture3.png" title="" alt="">}}(Picture3.png)
+{{<img src="Picture3.png" title="" alt="">}}(Picture3.png)
 
 ### Permissions
 

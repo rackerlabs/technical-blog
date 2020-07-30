@@ -38,14 +38,14 @@ another on the PO Line Block.
 To personalize at the PO Header Block, use the `WHEN VALIDATE RECORD` event, as
 shown in the following image.
 
-{{<image src="Picture1.png" title="" alt="">}}
+{{<img src="Picture1.png" title="" alt="">}}
 
 You need to add a condition to check whether the PO number (**SEGMENT1**) is
 null. If it is null, you can raise an error message. A null **SEGMENT1** means
 that you are trying to create a new PO on a purchase order form, so we need to
 restrict that here, as shown in the following image:
 
-{{<image src="Picture2.png" title="" alt="">}}
+{{<img src="Picture2.png" title="" alt="">}}
 
 To personalize at the PO line level, trap the PO creation in the
 `WHEN NEW BLOCK INSTANCE` event.
@@ -57,9 +57,9 @@ If the **SEGMENT1** at the PO header level is null, take the following actions:
 
 The following images demonstrate these actions:
 
-{{<image src="Picture3.png" title="" alt="">}}
+{{<img src="Picture3.png" title="" alt="">}}
 
-{{<image src="Picture4.png" title="" alt="">}}
+{{<img src="Picture4.png" title="" alt="">}}
 
 #### Option 2: Use menu exclusions
 
@@ -75,7 +75,7 @@ You should exclude the following functions:
 
 The following image shows this process:
 
-{{<image src="Picture5.png" title="" alt="">}}
+{{<img src="Picture5.png" title="" alt="">}}
 
 The limitation with menu exclusions is that a user is not able to edit the POs
 (which were created through the auto-create functionality) from responsibilities

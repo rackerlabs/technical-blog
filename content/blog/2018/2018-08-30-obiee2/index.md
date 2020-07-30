@@ -32,7 +32,7 @@ logo](picture1.png)
 The Oracle logo also appears on the login page, as shown in the following
 image:
 
-{{<image src="picture2.png" title="" alt="">}}
+{{<img src="picture2.png" title="" alt="">}}
 
 However, you'll probably want to use your own custom logo.
 

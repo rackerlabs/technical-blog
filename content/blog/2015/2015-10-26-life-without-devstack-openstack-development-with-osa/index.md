@@ -79,7 +79,7 @@ thousands of nodes.
 The following diagram shows the structure of an openstack-ansible private
 cloud:
 
-{{<image src="osa-arch.jpg" title="" alt="">}}
+{{<img src="osa-arch.jpg" title="" alt="">}}
 
 After looking at this, you are probably scratching your head thinking how can
 this project match the simplicity of DevStack for upstream development, given

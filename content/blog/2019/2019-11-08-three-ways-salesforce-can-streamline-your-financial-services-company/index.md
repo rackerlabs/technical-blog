@@ -26,7 +26,7 @@ more personally than ever before.
 
 <!--more-->
 
-{{<image src="streamline-salesforce.png" title="" alt="">}}
+{{<img src="streamline-salesforce.png" title="" alt="">}}
 
 As Strategic Alliance Executive at Rackspace, and formerly Regional Vice
 President at RelationEdge, I’ve worked with many financial services companies

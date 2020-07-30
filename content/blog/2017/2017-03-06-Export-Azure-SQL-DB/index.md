@@ -25,20 +25,20 @@ Clone or download my repo [Here](https://github.com/jrudley/export-AzureSqlDb) t
 * Azure subscription
 
 * resource group
-{{<image src="selectrg.png" title="Azure RG" alt="Azure RG">}}
+{{<img src="selectrg.png" title="Azure RG" alt="Azure RG">}}
 * Azure SQL Server
-{{<image src="selectazuresqlserver.png" title="Azure SQL Server" alt="Azure SQL Server">}}
+{{<img src="selectazuresqlserver.png" title="Azure SQL Server" alt="Azure SQL Server">}}
 * Azure SQL DB to export
-{{<image src="selectazuresqldb.png" title="Azure SQL Server DB" alt="Azure SQL Server DB">}}
+{{<img src="selectazuresqldb.png" title="Azure SQL Server DB" alt="Azure SQL Server DB">}}
 * Azure Sql Server Admin Password
-{{<image src="entersqladminpass.png" title="Azure SQL Server Admin Password" alt="Azure SQL Server Admin Password">}}
+{{<img src="entersqladminpass.png" title="Azure SQL Server Admin Password" alt="Azure SQL Server Admin Password">}}
 * Azure Storage Account
-{{<image src="selectstorageacct.png" title="Azure Storage Account" alt="Azure Storage Account">}}
+{{<img src="selectstorageacct.png" title="Azure Storage Account" alt="Azure Storage Account">}}
 * Azure Storage Container. Optionally, you can use the switch statusBar to give the progress of the export.
-{{<image src="selectstoragecontainer.png" title="Azure Storage Account Container" alt="Azure Storage Account Container">}}
+{{<img src="selectstoragecontainer.png" title="Azure Storage Account Container" alt="Azure Storage Account Container">}}
 
 The script will export out the BACPAC uri which you can download the BACPAC file
-{{<image src="uri.png" title="Azure BACPAC URI" alt="Azure BACPAC URI">}}
+{{<img src="uri.png" title="Azure BACPAC URI" alt="Azure BACPAC URI">}}
 
 <a class="cta red" id="cta" href="https://www.rackspace.com/dba-services">Learn more about Databases</a>
 

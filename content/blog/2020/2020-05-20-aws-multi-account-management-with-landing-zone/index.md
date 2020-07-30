@@ -88,7 +88,7 @@ reference source for CodePipeline.
 Because you have access to the source files, you can modify the code to fit your
 business needs. The following image shows the default Landing Zone deployment:
 
- {{<image src="Picture1.png" title="" alt="">}}
+ {{<img src="Picture1.png" title="" alt="">}}
 
 If you make any changes to the source, CodePipeline runs them in your infrastructure.
 Therefore, if you want to create a baseline Virtual Private Cloud (VPC) with

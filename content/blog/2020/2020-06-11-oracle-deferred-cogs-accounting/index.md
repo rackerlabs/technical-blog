@@ -73,7 +73,7 @@ DCOGS.
 To set up a DCOGS account, navigate to
 **Inventory -> Setup -> Organization -> Parameters -> Other Accounts**.
 
-{{<image src="Picture1.png" alt="" title="">}}
+{{<img src="Picture1.png" alt="" title="">}}
 
 If you upgrade from an older version, the system populates the DCOGS account
 with the COGS account if the organization parameter is null. You can change this
@@ -83,7 +83,7 @@ if needed.
 
 The following image shows the COGS data flow:
 
-{{<image src="Picture2.png" alt="" title="">}}
+{{<img src="Picture2.png" alt="" title="">}}
 
 
  The following sections describe how the enhancement handles various situations.

@@ -42,7 +42,7 @@ the Subledgers.
 The following image highlights the differences between the Subledger
 architecture in versions 11i and R12:
 
-{{<image src="Picture1.png" title="" alt="">}}
+{{<img src="Picture1.png" title="" alt="">}}
 
 Key features include the following items:
 

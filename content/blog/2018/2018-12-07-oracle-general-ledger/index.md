@@ -26,7 +26,7 @@ made in the `GL_INTERFACE` table.
 
 In this example, you'll complete the steps that appear in the following image:
 
-{{<image src="picture1.png" title="" alt="">}}
+{{<img src="picture1.png" title="" alt="">}}
 
 **Image source**: Author.
 

@@ -42,7 +42,7 @@
           </div>
           <div class="author-info">
             <span class="name">{{ .Params.Author }}</span>
-            <p class="bio">{{ .Params.Bio }}</p>
+            <p class="bio">{{ .Params.Bio | markdownify}}</p>
           </div>
         </div>
         {{- partial "components/share-bar" . -}}

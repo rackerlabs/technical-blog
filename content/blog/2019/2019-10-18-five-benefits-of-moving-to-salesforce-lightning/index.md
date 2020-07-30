@@ -22,7 +22,7 @@ is&mdash;how can you sell this critical step to your superiors and your team?
 This blog outlines five benefits of transitioning from Salesforce Classic to Salesforce Lightning.
 
 <!--more-->
-{{<image src="Picture1.png" title="" alt="">}}
+{{<img src="Picture1.png" title="" alt="">}}
 
 The following sections describe the five benefits you receive by transitioning
 from Classic to Lightning.

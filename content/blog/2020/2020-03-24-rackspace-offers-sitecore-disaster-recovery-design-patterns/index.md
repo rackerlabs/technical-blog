@@ -41,7 +41,7 @@ environment.
 Sitecore Managed Cloud Premium customers who are using the following production
 environments can opt in to these DR design patterns and runbooks:
 
-{{<image src="Picture1.png" title="" alt="">}}
+{{<img src="Picture1.png" title="" alt="">}}
 
 This launch includes the following design patterns:
 

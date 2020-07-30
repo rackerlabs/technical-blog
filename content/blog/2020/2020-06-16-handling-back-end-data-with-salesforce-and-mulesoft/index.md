@@ -68,7 +68,7 @@ has a variety of pre-built application and technology connectors for Oracle&reg;
 SAP&reg;, Amazon S3, and databases using a Java&reg; Database Connectivity (JDBC)
 connection, as shown in the following image:
 
-{{<image src="Picture1.png" alt="" title="">}}
+{{<img src="Picture1.png" alt="" title="">}}
 
 The solution, then, is to perform the following tasks:
 

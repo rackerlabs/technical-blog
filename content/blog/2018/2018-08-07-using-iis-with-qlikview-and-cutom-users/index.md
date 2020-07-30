@@ -58,7 +58,7 @@ the following image:
 
 - **Windows Authentication** should be ``Disabled``.
 
-{{<image src="Picture1.png" title="" alt="">}}
+{{<img src="Picture1.png" title="" alt="">}}
 
 #### Configure the AccessPointSettings file
 
@@ -70,7 +70,7 @@ statuses as shown in the following image:
 
 - **Windows Authentication** should be ``Enabled``.
 
-{{<image src="Picture2.png" title="" alt="">}}
+{{<img src="Picture2.png" title="" alt="">}}
 
 #### Set up QlikView for custom users
 
@@ -78,7 +78,7 @@ To set up QlikView for custom users, change the **Authorization** on the
 **Security** tab of the QlikView server to ``DMS authorization`` as shown in
 the following image:
 
-{{<image src="Picture3.png" title="" alt="">}}
+{{<img src="Picture3.png" title="" alt="">}}
 
 ### Set up the directory service and custom users
 
@@ -93,7 +93,7 @@ click **Edit**. This sets the default value to ``Custom``. Click **Apply** to
 save the setting and to open a new tab labeled **Users**, as shown in the
 following image:
 
-{{<image src="Picture4.png" title="" alt="">}}
+{{<img src="Picture4.png" title="" alt="">}}
 
 #### Add custom users
 
@@ -101,7 +101,7 @@ To add custom users, fill in the requested information in the **Users** tab for 
 click **Add**.  Then select the user and click **Apply**, as shown in the
 following image:
 
-{{<image src="Picture5.png" title="" alt="">}}
+{{<img src="Picture5.png" title="" alt="">}}
 
 #### Configure the Web Server to accept custom users
 
@@ -109,7 +109,7 @@ To configure the Web Server to accept custom users, change the **Type** to
 ``Custom User`` in the **Authentication** tab and set the **Login Address**
 to ``Alternate Login Page`` as shown in the following image:
 
-{{<image src="Picture6.png" title="" alt="">}}
+{{<img src="Picture6.png" title="" alt="">}}
 
 #### Set up the documents for DMS authentication
 
@@ -118,7 +118,7 @@ To set up the documents for DMS authentication, select a document in the
 username as shown in the following image. This can be done while the Publisher
 is doing a reload and distribution.
 
-{{<image src="Picture7.png" title="" alt="">}}
+{{<img src="Picture7.png" title="" alt="">}}
 
 ### Test the configuration
 
@@ -126,12 +126,12 @@ To test the configuration, insert your server name and in a web browser go to
 ``https://<servername>/qlikview``, as shown in the following
 image:
 
-{{<image src="Picture8.png" title="" alt="">}}
+{{<img src="Picture8.png" title="" alt="">}}
 
 Enter your username and password and click **Login**. The following image shows
 the result of user ``CUSTOM\BB`` logging in:
 
-{{<image src="Picture9.png" title="" alt="">}}
+{{<img src="Picture9.png" title="" alt="">}}
 
 ### Conclusion:
 

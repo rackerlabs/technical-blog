@@ -45,7 +45,7 @@ maintained as well.
 
 The following image illustrates the Parallel Replicat architecture:
 
-{{<image src="Replicat1.png" title="List cell command results" alt="List cell command results">}}
+{{<img src="Replicat1.png" title="List cell command results" alt="List cell command results">}}
 
 Image source: [https://bit.ly/2wsPZVv](https://bit.ly/2wsPZVv)
 
