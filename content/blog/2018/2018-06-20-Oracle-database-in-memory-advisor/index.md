@@ -80,7 +80,7 @@ is a component of the Oracle Database System Global Area (SGA).
 
 The following image illustrates dual-format architecture:
 
-{{<image src="Picture1.png" title="" alt="">}}
+{{<img src="Picture1.png" title="" alt="">}}
 
 Image source: [https://www.doag.org/formes/servlet/DocNavi?action=getFile&did=6770401&key=](https://www.doag.org/formes/servlet/DocNavi?action=getFile&did=6770401&key=)
 

@@ -52,21 +52,21 @@ Analytics application. To install this tool from EA, perform the following steps
 
 1. Choose **Create** on the top right of the window.
 
-{{<image src="Picture1.png" alt="" title="">}}
+{{<img src="Picture1.png" alt="" title="">}}
 
 
 <ol start=2>
     <li>Choose <b>Start From Template</b>.</li>
 </ol>
 
-{{<image src="Picture2.png" alt="" title="">}}
+{{<img src="Picture2.png" alt="" title="">}}
 
 
 <ol start=3>
     <li>Search for <b>Snapshot Analytics</b>.</li>
 </ol>
 
-{{<image src="Picture3.png" alt="" title="">}}
+{{<img src="Picture3.png" alt="" title="">}}
 
 
 <ol start=4>
@@ -74,7 +74,7 @@ Analytics application. To install this tool from EA, perform the following steps
    want to capture in your snapshotting dataset.</li>
 </ol>
 
-{{<image src="Picture4.png" alt="" title="">}}
+{{<img src="Picture4.png" alt="" title="">}}
 
 
 <ol start=5>
@@ -101,7 +101,7 @@ custom dashboards to compare the previous and current state of many data metrics
 and trends in your data. The app comes with a dashboard, **Snapshot Trend**, as
 shown in the following image:
 
-{{<image src="Picture5.png" alt="" title="">}}
+{{<img src="Picture5.png" alt="" title="">}}
 
 This dashboard is dynamic, depending on which fields you opt to capture. For
 example, if you captured the **Opportunity Stage**, you can choose **Stage** as
@@ -116,7 +116,7 @@ snapshotting compute expressions, augmented datasets, union datasets, and more.
 
 The following image shows a mockup of how to build snapshotting in Dataflow:
 
-{{<image src="Picture6.png" alt="" title="">}}
+{{<img src="Picture6.png" alt="" title="">}}
 
 **Source 1** can be any node or source of data that you can bring into a dataflow.
 This source could be a direct digest from standard or custom objects, an augmented
@@ -130,28 +130,28 @@ something, adding to it, and then putting it back.
 The following image shows this in the dataflow. You can replace **Source 1**
 with anything, including another Edgemart or digest.
 
-{{<image src="Picture7.png" alt="" title="">}}
+{{<img src="Picture7.png" alt="" title="">}}
 
 
 The only extra node required in **Source 1**, is the compute expression, which
 generates the current date, **Compute_Snapshot_Date**.
 
-{{<image src="Picture8.png" alt="" title="">}}
+{{<img src="Picture8.png" alt="" title="">}}
 
 
-{{<image src="Picture9.png" alt="" title="">}}
+{{<img src="Picture9.png" alt="" title="">}}
 
 
 Commonly, you create another compute expression, which creates a text version
 of this same snapshot date used for a dropdown filter.
 
-{{<image src="Picture10.png" alt="" title="">}}
+{{<img src="Picture10.png" alt="" title="">}}
 
 After you complete the dataflow work, you can hit save and schedule the dataflow
 to run as often as you'd like to snapshot the data, as shown in the following
 images:
 
-{{<image src="Picture11.png" alt="" title="">}}
+{{<img src="Picture11.png" alt="" title="">}}
 
 ### Conclusion
 

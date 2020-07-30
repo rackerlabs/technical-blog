@@ -67,13 +67,13 @@ Oracle Integration Cloud Service:
     name and password.
 3.  Click **Agent**.
 
-{{<image src="Picture1.png" title="" alt="">}}
+{{<img src="Picture1.png" title="" alt="">}}
 
 <ol start=4>
     <li>Click <b>Download</b> and then click <b>Connectivity Agent</b>.</li>
 </ol>
 
-{{<image src="Picture2.png" title="" alt="">}}
+{{<img src="Picture2.png" title="" alt="">}}
 
 <ol start=5>
     <li>Move the downloaded installation software
@@ -89,13 +89,13 @@ Service by using the following steps:
    your cloud administrator login ID and password, and create an agent group by
    clicking the **Agent Icon**.
 
-{{<image src="Picture1.png" title="" alt="">}}
+{{<img src="Picture1.png" title="" alt="">}}
 
 <ol start=2>
     <li>Click <b>Create Agent Group</b> and provide inputs as shown in the following image:</li>
 </ol>
 
-{{<image src="Picture4.png" title="" alt="">}}
+{{<img src="Picture4.png" title="" alt="">}}
 
 The inputs include the following items:
 

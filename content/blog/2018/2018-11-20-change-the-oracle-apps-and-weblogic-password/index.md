@@ -146,16 +146,16 @@ the options described in the following sections.
 To change the APPS pasword by using the WLS console, perform the following steps:
 
 1. Log in to the WLS Administration Console.
-   {{<image src="Picture1.png" title="" alt="">}}
+   {{<img src="Picture1.png" title="" alt="">}}
 2. Click **Lock & Edit** in the Change Center.
-   {{<image src="Picture2.png" title="" alt="">}}
+   {{<img src="Picture2.png" title="" alt="">}}
 3. In the Domain Structure tree, expand **Services**, and select **Data Sources**.
-   {{<image src="Picture3.png" title="" alt="">}}
+   {{<img src="Picture3.png" title="" alt="">}}
 4. On the **Summary of JDBC Data Sources** page, select **EBSDataSource**.
-   {{<image src="Picture4.png" title="" alt="">}}
+   {{<img src="Picture4.png" title="" alt="">}}
 5. On the **Settings for EBSDataSource** page, select the **Connection Pool** tab.
 6. Enter the new password in **Password**.
-   {{<image src="Picture5.png" title="" alt="">}}
+   {{<img src="Picture5.png" title="" alt="">}}
 7. Enter the new password in **Confirm Password**.
 8. Click **Save**.
 9. Click **Activate Changes** in the Change Center.

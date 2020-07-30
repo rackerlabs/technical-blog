@@ -69,7 +69,7 @@ into a column this is defined as encrypted, Oracle performs the following tasks:
 3) It uses that encryption key on the input value.
 4) It stores the encrypted data in the database.
 
-{{<image src="Picture1.png" title="" alt="">}}
+{{<img src="Picture1.png" title="" alt="">}}
 
 *Image source*: [https://docs.oracle.com/database/121/ASOAG/img/GUID-5FD3A3BB-441C-4C42-A520-1248974627B0-default.png](https://docs.oracle.com/database/121/ASOAG/img/GUID-5FD3A3BB-441C-4C42-A520-1248974627B0-default.png)
 
@@ -102,7 +102,7 @@ Next, run the following command to create the wallet:
 
     ALTER SYSTEM SET ENCRYPTION KEY [certificate_ID] IDENTIFIED BY password;
 
-{{<image src="Picture2.png" title="" alt="">}}
+{{<img src="Picture2.png" title="" alt="">}}
 
 - The wallet **password** is case sensitive. Enclose the password string in
   double quotation marks (" ").
@@ -111,7 +111,7 @@ Next, run the following command to create the wallet:
   identifier of a certificate stored in the Oracle wallet. You can search for a
   certificate_ID by querying the **V$WALLET** fixed view when the wallet is open.
 
-{{<image src="Picture3.png" title="" alt="">}}
+{{<img src="Picture3.png" title="" alt="">}}
 
 #### Open and close the wallet
 
@@ -130,19 +130,19 @@ up but the wallet is closed:
 
     alter system set encryption wallet close;
 
-{{<image src="Picture4.png" title="" alt="">}}
+{{<img src="Picture4.png" title="" alt="">}}
 
 Now, if you try to retrieve the data from an encrypted column, the following
 error message displays because the wallet is closed:
 
-{{<image src="Picture5.png" title="" alt="">}}
+{{<img src="Picture5.png" title="" alt="">}}
 
 To retrieve the data from an encrypted column, you need to open a wallet by
 using the following command:
 
     alter system set encryption wallet open identified by "oracle12345";
 
-{{<image src="Picture6.png" title="" alt="">}}
+{{<img src="Picture6.png" title="" alt="">}}
 
 Now you can retrieve data from the encrypted columns because the wallet is open.
 
@@ -152,7 +152,7 @@ Use the following command to create a table with an encrypted column:
 
     CREATE TABLE test2 (id number,name varchar2(20),s_s_num number ENCRYPT);
 
-{{<image src="Picture7.png" title="" alt="">}}
+{{<img src="Picture7.png" title="" alt="">}}
 
 
 #### Create tables using a non-default algorithm and the NO SALT option
@@ -167,7 +167,7 @@ option such as the following example:
 
     CREATE TABLE test3 (id number,name varchar2(20),s_s_num number ENCRYPT NO SALT,Ph_no number ENCRYPT USING '3DES168');
 
-{{<image src="Picture8.png" title="" alt="">}}
+{{<img src="Picture8.png" title="" alt="">}}
 
 Here, the **S\_S\_NUM** column is encrypted with the NO SALT option and the
 **PH_NO** column is created with a default SALT option.
@@ -175,7 +175,7 @@ Here, the **S\_S\_NUM** column is encrypted with the NO SALT option and the
 The following example shows that you can't create an index on the **PH_NO**
 column because you created it with the SALT option by default.
 
-{{<image src="Picture9.png" title="" alt="">}}
+{{<img src="Picture9.png" title="" alt="">}}
 
 ### Encrypt columns in existing tables
 
@@ -183,7 +183,7 @@ The following command encrypts a column in an existing table:
 
     ALTER TABLE test1 ADD (ssn VARCHAR2(11) ENCRYPT);
 
-{{<image src="Picture10.png" title="" alt="">}}
+{{<img src="Picture10.png" title="" alt="">}}
 
 ### Disable encryption on a column
 
@@ -191,7 +191,7 @@ The following command disables encryption on a column:
 
     ALTER TABLE test1 MODIFY (ssn DECRYPT);
 
-{{<image src="Picture11.png" title="" alt="">}}
+{{<img src="Picture11.png" title="" alt="">}}
 
 ### Restrictions on using TDE
 
@@ -199,21 +199,21 @@ Keep the following restrictions on using TDE in mind:
 
 - You cannot create any index other than a B-tree on an encrypted column.
 
-{{<image src="Picture12.png" title="" alt="">}}
+{{<img src="Picture12.png" title="" alt="">}}
 
 - Encryption is not allowed on external large objects (BFILE).
 
-{{<image src="Picture13.png" title="" alt="">}}
+{{<img src="Picture13.png" title="" alt="">}}
 
 - You cannot perform import or export operations if the wallet is closed.
 
 **Error because wallet is closed**
 
-{{<image src="Picture14.png" title="" alt="">}}
+{{<img src="Picture14.png" title="" alt="">}}
 
 **Success because wallet is open**
 
-{{<image src="Picture15.png" title="" alt="">}}
+{{<img src="Picture15.png" title="" alt="">}}
 
 ### Conclusion
 

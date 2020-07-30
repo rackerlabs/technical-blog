@@ -46,7 +46,7 @@ for a truly consistent hybrid experience.
 
 ### Introduction
 
-{{<image src="AWSOutposts.png" alt="AWS Outposts diagram" title="AWS Outposts diagram">}}
+{{<img src="AWSOutposts.png" alt="AWS Outposts diagram" title="AWS Outposts diagram">}}
 
 
 AWS Outposts is ideal for workloads that require low latency access to on-premises

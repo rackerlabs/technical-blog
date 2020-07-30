@@ -36,7 +36,7 @@ Internet storage service providers keep multiple, redundant copies of your data
 for availability and scalability purposes. Your organization benefits from this
 practice by having more reliable data.
 
-{{<image src="Picture1.png" title="" alt="">}}
+{{<img src="Picture1.png" title="" alt="">}}
 
 *Image source*: [https://www.oracle.com/technetwork/database/features/availability/twp-oracledbcloudbackup-130129.pdf](https://www.oracle.com/technetwork/database/features/availability/twp-oracledbcloudbackup-130129.pdf)
 

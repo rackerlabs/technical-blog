@@ -56,7 +56,7 @@ and restore it when required:
 The following image illustrates moving from a cloud cluster to a Cassandra
 cluster by using `sstableloader`:
 
-{{<image src="Picture1.png" title="" alt="">}}
+{{<img src="Picture1.png" title="" alt="">}}
 
 **Image source**: [https://dzone.com/articles/using-casandras-sstable-bulk](https://dzone.com/articles/using-casandras-sstable-bulk)
 

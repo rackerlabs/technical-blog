@@ -25,7 +25,7 @@ and planning.
 
 <!--more-->
 
-{{<image src="Picture1.png" title="" alt="">}}
+{{<img src="Picture1.png" title="" alt="">}}
 
 Things can quickly go askew when companies put the cart before the
 horse&mdash;by adopting a new technology tool without first clearly identifying

@@ -22,7 +22,7 @@ The adop utility is used to apply patches to Oracle E-Business Suite without
 significant system downtime.  The patch cycle consists of several phases as
 shown in the following diagram:
 
-{{<image src="PatchCycle.png" title="The online patching cycle" alt="The online patching cycle">}}
+{{<img src="PatchCycle.png" title="The online patching cycle" alt="The online patching cycle">}}
 
 Image Source: [https://docs.oracle.com/cd/E26401_01/doc.122/e22954/T202991T531065.htm](https://docs.oracle.com/cd/E26401_01/doc.122/e22954/T202991T531065.htm)
 

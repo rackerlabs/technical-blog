@@ -31,7 +31,7 @@ Marketing Cloud.
 
 <!--more-->
 
-{{<image src="picture1.png" title="" alt="">}}
+{{<img src="picture1.png" title="" alt="">}}
 
 When you’re ready to implement Marketing Cloud, you need to identify which departments to involve in the
 transition. You should also ensure that you have [well-developed processes in place](https://blog.rackspace.com/4-key-processes-need-capitalize-marketing-automation)

@@ -57,7 +57,7 @@ Big data = (Volume + Velocity + Variety) of data
 
 The following image provides a visualization of these concepts.
 
-{{<image src="picture1.png" title="3Vs (volume, variety, and velocity" alt="3Vs (volume, variety, and velocity">}}
+{{<img src="picture1.png" title="3Vs (volume, variety, and velocity" alt="3Vs (volume, variety, and velocity">}}
 
 Image source: [3Vs (volume, variety and
 velocity)](https://whatis.techtarget.com/definition/3Vs)

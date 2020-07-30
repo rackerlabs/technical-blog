@@ -26,7 +26,7 @@ To do this, we created a [temporary notebook service](https://tmpnb.org) in coll
 
 [tmpnb](https://github.com/jupyter/tmpnb) is a service that spawns new notebook servers, backed by Docker, for each user. Everyone gets their own sandbox to play in, assigned a unique path.
 
-{{<image src="https://cloud.githubusercontent.com/assets/836375/5909206/f0b156da-a573-11e4-8e3f-f65dfe9d23b8.png" alt="tmpnb architecture" title="tmpnb architecture">}}
+{{<img src="https://cloud.githubusercontent.com/assets/836375/5909206/f0b156da-a573-11e4-8e3f-f65dfe9d23b8.png" alt="tmpnb architecture" title="tmpnb architecture">}}
 
 When a user visits a tmpnb, they're actually hitting an [http proxy](https://github.com/jupyter/configurable-http-proxy) which routes initial traffic to tmpnb's orchestrator. From here a new user container is set up and a new route (e.g. `/user/fX104pghHEha/tree`) is assigned on the proxy.
 
@@ -52,7 +52,7 @@ After some smooth sailing, we watched as it ticked toward our 512 user mark. Aft
 
 This bit us in a couple ways. In order to scale across hosts we'd need to put the proxy and tmpnb in front of multiple docker hosts (note: this is pre-docker [swarm](https://github.com/docker/swarm)). Trying to swap largely untested bits out from underneath in production, while also dealing with the proxy issues did not sound ideal. Instead, [Min RK](https://github.com/minrk) quickly whipped up the tmpnb-redirector which uses the `/stats` endpoint to redirect users to new servers. This made rotating old nodes out easy as well.
 
-{{<image src="https://cloud.githubusercontent.com/assets/836375/5913707/3b282e20-a5ae-11e4-9768-c22089b70497.png" alt="Redirect tmpnb nodes" title="Redirect tmpnb nodes">}}
+{{<img src="https://cloud.githubusercontent.com/assets/836375/5913707/3b282e20-a5ae-11e4-9768-c22089b70497.png" alt="Redirect tmpnb nodes" title="Redirect tmpnb nodes">}}
 
 ## Closing up
 

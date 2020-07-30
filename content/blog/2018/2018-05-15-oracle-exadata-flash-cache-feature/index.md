@@ -44,14 +44,14 @@ as shown in the following example:
 
     CELLCLI> list cell attributes flashcachemode
 
-{{<image src="ListCellResult.png" title="List cell command results" alt="List cell command results">}}
+{{<img src="ListCellResult.png" title="List cell command results" alt="List cell command results">}}
 
 To display details, use the `list cell detail` command, as shown in the following
 example:
 
     CELLCLI> list cell detail
 
-{{<image src="ListCellDetailsResult.png" title="List cell details command results" alt="List cell details command results">}}
+{{<img src="ListCellDetailsResult.png" title="List cell details command results" alt="List cell details command results">}}
 
 
 ### Write-back flash cache benefits
@@ -78,7 +78,7 @@ The following table shows the performance that the Exadata Smart Flash Cache
 provides at the database level for the various Exadata X4 configurations.
 
 
-{{<image src="ExadataPerformanceTable.png" title="Exadata performance table" alt="Exadata performance table">}}
+{{<img src="ExadataPerformanceTable.png" title="Exadata performance table" alt="Exadata performance table">}}
 
 Source: [https://www.oracle.com/technetwork/database/exadata/exadata-smart-flash-cache-366203.pdf](https://www.oracle.com/technetwork/database/exadata/exadata-smart-flash-cache-366203.pdf), page 7
 

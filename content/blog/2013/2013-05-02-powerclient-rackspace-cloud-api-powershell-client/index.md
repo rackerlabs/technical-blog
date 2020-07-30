@@ -30,7 +30,7 @@ following for more information:
 
 <!--more-->
 
-{{<image src="powershell.png" title="" alt="">}}
+{{<img src="powershell.png" title="" alt="">}}
 
 ##Who am I and why should you use this client?
 

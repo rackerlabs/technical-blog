@@ -55,7 +55,7 @@ Example XML data file:
        </DATA_RECORD>
     </main>
 
-{{<image src="Picture1.png" title="" alt="">}}
+{{<img src="Picture1.png" title="" alt="">}}
 
 In an `rtf` template, insert an object of chart type from the XML Publisher add-in.
 
@@ -88,7 +88,7 @@ Click the **Advanced** tab and paste the following text:
       </LocalGridData>
     </Graph>
 
-{{<image src="Picture2.png" title="" alt="">}}
+{{<img src="Picture2.png" title="" alt="">}}
 
 This creates a dummy chart image on the template. Use this image to size the chart as you need it in the output.
 
@@ -173,11 +173,11 @@ Example XML data file:
        </DATA_RECORD>
     </main>
 
-{{<image src="Picture1.png" title="" alt="">}}
+{{<img src="Picture1.png" title="" alt="">}}
 
 In the `rtf` template, insert an object of chart type from Publisher Add-In.
 
-{{<image src="Picture5.png" title="" alt="">}}
+{{<img src="Picture5.png" title="" alt="">}}
 
 Click the **Advanced** tab and paste the following text:
 
@@ -204,7 +204,7 @@ Click the **Advanced** tab and paste the following text:
        </LocalGridData>
     </Graph>
 
-{{<image src="Picture6.png" title="" alt="">}}
+{{<img src="Picture6.png" title="" alt="">}}
 
 #### Explanation of pie chart XML
 
@@ -313,7 +313,7 @@ Click the **Advanced** tab and paste the following text:
        </LocalGridData>
     </Graph>
 
-{{<image src="Picture9.png" title="" alt="">}}
+{{<img src="Picture9.png" title="" alt="">}}
 
 This creates a dummy chart image on the template. Use this image to size the chart as you need it in the output.
 

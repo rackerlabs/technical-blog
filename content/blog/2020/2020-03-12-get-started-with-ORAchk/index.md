@@ -52,15 +52,15 @@ Use the following steps to download ORAchk:
    [AHF - Including TFA and ORAchk (Doc ID 2550798.1](https://support.oracle.com/epmos/faces/DocContentDisplay?_afrLoop=314622412757815&parent=ORAchk&sourceId=download&id=2550798.1&_afrWindowMode=0&_adf.ctrl-state=hg9do8tvw_4#quickstart)
    as shown in the following image:
 
-  {{<image src="Picture1.png" title="" alt="">}}
+  {{<img src="Picture1.png" title="" alt="">}}
 
 2) Click **Download TFA & ORAchk**  as shown in the following image:
 
-   {{<image src="Picture2.png" title="" alt="">}}
+   {{<img src="Picture2.png" title="" alt="">}}
 
    The following download option displays:
 
-   {{<image src="Picture3.png" title="" alt="">}}
+   {{<img src="Picture3.png" title="" alt="">}}
 
 3) Select a download version. We recommend that you download the Linux&reg; version,
    *TFA & ORAchk/EXAchk for Linux*.

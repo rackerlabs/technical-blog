@@ -48,7 +48,7 @@ Neutron's implementation of floating IPs differs greatly from nova-networks, but
 
 A logical representation of this concept can be seen below:
 
-{{<image src="l3_agent_1.1.png" title="" alt="">}}
+{{<img src="l3_agent_1.1.png" title="" alt="">}}
 
 While logically it appears that floating IPs are associated directly with instances, in reality a floating IP is associated with a Neutron port. Other port associations include:
 
@@ -96,7 +96,7 @@ For this installment, a Cisco ASA 5510 will once again serve as the lead gateway
 
 A single interface on the servers will be used for both management and provider network connectivity. Neutron works with Open vSwitch to build peer-to-peer tunnels between hosts that serve to carry encapsulated *tenant* network traffic.
 
-{{<image src="l3_agent_1.2.png" title="" alt="">}}
+{{<img src="l3_agent_1.2.png" title="" alt="">}}
 
 
 ### Networking: L3 agent configuration

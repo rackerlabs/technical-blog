@@ -26,7 +26,7 @@ develop a workable plan of action.
 
 <!--more-->
 
-{{<image src="picture1.png" title="" alt="">}}
+{{<img src="picture1.png" title="" alt="">}}
 
 ### Identify adoption benchmarks
 

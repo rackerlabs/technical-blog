@@ -25,7 +25,7 @@ still be on the fence.
 
 <!--more-->
 
-{{<image src="picture1.png" title="" alt="">}}
+{{<img src="picture1.png" title="" alt="">}}
 
 At Rackspace, we specialize in helping our clients succeed with the right
 technology solutions. We have helped many businesses make the change from Classic

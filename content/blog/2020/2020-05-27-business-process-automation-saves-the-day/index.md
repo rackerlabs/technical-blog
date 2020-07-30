@@ -48,7 +48,7 @@ This post shares a story about one of the ingredients in the secret sauce behind
 all of those pillars that make Rackspace the #1 Managed Cloud Company&mdash;automation
 driven by world-class process engineering.
 
-{{<image src="Picture1.png" title="" alt="">}}
+{{<img src="Picture1.png" title="" alt="">}}
 
 This diagram highlights the ecosystem that enables our Automation team's Process
 Engineering Group (PEG) to execute world-class vulnerability management, device
@@ -156,11 +156,11 @@ To deliver Fanatical Experience, PEG:
 On behalf of the teams comprising Rackspace Business Automation, I'm proud to
 share their success story.
 
-{{<image src="Picture2.png" title="" alt="">}}
+{{<img src="Picture2.png" title="" alt="">}}
 
-{{<image src="Picture3.png" title="" alt="">}}
+{{<img src="Picture3.png" title="" alt="">}}
 
-{{<image src="Picture4.png" title="" alt="">}}
+{{<img src="Picture4.png" title="" alt="">}}
 
 Use the Feedback tab to make any comments or ask questions.
 

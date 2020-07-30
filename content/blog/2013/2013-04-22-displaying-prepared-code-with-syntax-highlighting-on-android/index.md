@@ -54,7 +54,7 @@ Then we can put this file into a Textview as follows in our Activity.
 
 You’ll probably want to set the TextView’s `android:textColor` and `android:background` to make your content stand out. Here’s a screenshot of the final effect from my demo app.
 
-{{<image src="android.png" title="" alt="">}}
+{{<img src="android.png" title="" alt="">}}
 
 
 Not bad, eh?

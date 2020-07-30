@@ -42,7 +42,7 @@ Web Dispatcher architecture has the following characteristics:
 
 The following image illustrates Web Dispatcher architecture:
 
-{{<image src="Picture1.png" title="" alt="">}}
+{{<img src="Picture1.png" title="" alt="">}}
 
 *Source*: [https://help.sap.com](https://help.sap.com)
 

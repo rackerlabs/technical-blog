@@ -72,7 +72,7 @@ or Ansible among others.
 
 Look for future articles describing how to leverage these concepts further using DSC.
 
-{{<image src="PoshCode.png" alt="" title="Example">}}
+{{<img src="PoshCode.png" alt="" title="Example">}}
 
 ### Further reading
 

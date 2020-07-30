@@ -26,7 +26,7 @@ Throughout the article, I share some code and explain what's going on or highlig
 
 #### Exploration 1
 
-{{<image src="Nova-API-1.png" title="Nova-API Exploration Flow" alt="Nova-API Exploration Flow">}}
+{{<img src="Nova-API-1.png" title="Nova-API Exploration Flow" alt="Nova-API Exploration Flow">}}
 
 Let's first examine the nova-client instruction:
 
@@ -38,7 +38,7 @@ I submitted a request for a live-migration without --block-migrate and without a
 
 #### Exploration 2
 
-{{<image src="Nova-API-2.png" title="Nova-API Exploration Flow" alt="Nova-API Exploration Flow">}}
+{{<img src="Nova-API-2.png" title="Nova-API Exploration Flow" alt="Nova-API Exploration Flow">}}
 
 The *osapi\_compute* service is defined in *nova.openstack.compute.wsgi.py* with a simple *init_application* method. This tells us that *nova.openstack.compute* is the home of the API methods. The operation then looks for the *live_migration* call in the built-in list of routes within the *nova.openstack.compute.wsgi* service. These routes are defined and tell us where to look for the API method that handles this action.
 
@@ -56,7 +56,7 @@ The *osapi\_compute* service is defined in *nova.openstack.compute.wsgi.py* with
 
 #### Exploration 3
 
-{{<image src="Nova-API-3.png" title="Nova-API Exploration Flow" alt="Nova-API Exploration Flow">}}
+{{<img src="Nova-API-3.png" title="Nova-API Exploration Flow" alt="Nova-API Exploration Flow">}}
 
 The Route list is defined to tell our request where to go. A migration request is a server action, so it triggers the `action` request, which sends us into `server_controller`, which resolves down to `migrate_server` / `nova.api.openstack.compute`. The request for a live_migration sends the specific request of *os\_migrateLive* to identify the correct method to use and then continues.
 
@@ -79,7 +79,7 @@ The Route list is defined to tell our request where to go. A migration request i
 
 #### Exploration 4
 
-{{<image src="Nova-API-4.png" title="Nova-API Exploration Flow" alt="Nova-API Exploration Flow">}}
+{{<img src="Nova-API-4.png" title="Nova-API Exploration Flow" alt="Nova-API Exploration Flow">}}
 
 Here the API sets a couple of important variables. It looks at the first if the `--block-migrate` flag was included. The default behavior of *block_migration* is to contain the `auto` key unless overridden by including the `--block-migrate` parameter. If the `auto` key is still included, set this to `None`, otherwise set it to a Boolean rather than `True`. We get the instance information because this is vital for migrating an instance and passing the instance, context, and block_migration over to the Compute API, which is resolved down to *nova.compute.API.live_migrate*. Finally, you can see that we actually get to this code by the reference of the `@wsgi.action` profiler
 
@@ -111,7 +111,7 @@ class MigrateServerController():
 
 #### Exploration 5
 
-{{<image src="Nova-API-5.png" title="Nova-API Exploration Flow" alt="Nova-API Exploration Flow">}}
+{{<img src="Nova-API-5.png" title="Nova-API Exploration Flow" alt="Nova-API Exploration Flow">}}
 
 We have made the rounds through the basic Nova API service and kicked off the asynchronous request to start the live migration. I issued this request , which sent a *os-migrateLive* action by using the nova client. We traced this through the confusing WSGI process, which eventually set the *block\_migration* variable and the instance variable, passing them both to the *self.compute_api.live\_migrate* method. We know (by looking at the imports at the beginning of the previous psuedocode sample) that we can resolve this to be *nova.compute.api.live\_migrate*.
 
@@ -136,7 +136,7 @@ def live_migrate():
 
 #### Exploration 6
 
-{{<image src="Nova-API-6.png" title="Nova-API Exploration Flow" alt="Nova-API Exploration Flow">}}
+{{<img src="Nova-API-6.png" title="Nova-API Exploration Flow" alt="Nova-API Exploration Flow">}}
 
 This almost simple chunk of code sets up a new dictionary with the scheduled host name, but, because I didn't specify this, it's unimportant for our needs. We see from this code that the process calls one of two locations, depending on whether the async setting is included or not. The code also reveals that "async" is essentially a live_migration, because this code calls *self.conductor\_compute\_rpcapi.live\_migrate\_instance*. I kept the includes for this operation to show where it leads.
 
@@ -159,7 +159,7 @@ This almost simple chunk of code sets up a new dictionary with the scheduled hos
 
 #### Exploration 7
 
-{{<image src="Nova-API-7.png" title="Nova-API Exploration Flow" alt="Nova-API Exploration Flow">}}
+{{<img src="Nova-API-7.png" title="Nova-API Exploration Flow" alt="Nova-API Exploration Flow">}}
 
 At this point, we run into the problem mentioned previously regarding the RPC service, which enters a land of extreme abstraction. While my knowledge of how these RPC services work is limited, essentially it defines a namespace and sends a message to that namespace through a chosen messenger service. Thus far, we have remained in the Nova API services, but now we are passing a message for Conductor nodes themselves to pick up and begin to work within their own managers. The RPC call for this looks like the following, with the `kw` variable here being the payload passed through messenger.
 

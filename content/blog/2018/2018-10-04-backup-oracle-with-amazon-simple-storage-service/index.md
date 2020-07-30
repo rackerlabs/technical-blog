@@ -35,7 +35,7 @@ worldwide.
 
 The following image illustrates the S3 concept:
 
-{{<image src="Picture1.png" title="" alt="">}}
+{{<img src="Picture1.png" title="" alt="">}}
 
 ### Oracle Secure Backup cloud module
 
@@ -65,13 +65,13 @@ The first step in getting started with the OSB cloud module is to sign up for
 Amazon S3. You can do this by visiting the [Amazon S3 website](https://aws.amazon.com/s3 ),
 as shown in the following image:
 
-{{<image src="Picture2.png" title="" alt="">}}
+{{<img src="Picture2.png" title="" alt="">}}
 
 After registration, users get a pair of access identifiers called
 the **Access key ID** and the **Secret Access key**, as shown in the following
 image:
 
-{{<image src="Picture3.png" title="" alt="">}}
+{{<img src="Picture3.png" title="" alt="">}}
 
 To find your access key ID and secret access key:
  
@@ -206,7 +206,7 @@ created within Amazon S3.
 You can also verify the results of the backup from the AWS console as shown in
 the following image:
 
-{{<image src="Picture4.png" title="" alt="">}}
+{{<img src="Picture4.png" title="" alt="">}}
 
 ### Conclusion
 

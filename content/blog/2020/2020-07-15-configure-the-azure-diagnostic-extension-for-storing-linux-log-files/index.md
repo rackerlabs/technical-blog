@@ -84,7 +84,7 @@ az vm run-command invoke -g $rgName -n $vmName --command-id RunShellScript --scr
 
 I used curl against the Nginx endpoint again to generate new log entries and noticed in the **omsagent.log** file that I now have an INFO message **2020-07-10 21:50:04 +0000 [info]: following tail of /var/log/nginx/access.log**. 
 
-In the Azure table storage, Azure automatically created a table and populated new entries successfully {{<image src="table.png" alt="" title="">}}
+In the Azure table storage, Azure automatically created a table and populated new entries successfully {{<img src="table.png" alt="" title="">}}
 
 ### Parting thought
 

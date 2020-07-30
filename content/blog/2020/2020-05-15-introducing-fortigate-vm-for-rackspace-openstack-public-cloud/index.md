@@ -58,7 +58,7 @@ Whether you are a user connecting to a VPN on your smart phone, a network
 administrator setting firewall policies, or a DevOps engineer planning to
 provision secure environments quickly, the FortiGate-VM has you covered.
 
-{{<image src="Picture1.png" title="" alt="">}}
+{{<img src="Picture1.png" title="" alt="">}}
 
 ### Not just a firewall: A true universal threat manager
 

@@ -25,7 +25,7 @@ to use data across multiple teams.
 
 <!--more-->
 
-{{<image src="picture1.png" title="" alt="">}}
+{{<img src="picture1.png" title="" alt="">}}
 
 Everyone loses when the data stored in your CRM is disorganized, incomplete, or
 contains duplicates. The teams trying to use this data&mdash;like sales,

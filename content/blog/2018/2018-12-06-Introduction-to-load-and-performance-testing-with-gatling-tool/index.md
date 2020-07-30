@@ -90,27 +90,27 @@ The following images show these dashboard metrics:
 
 **Indicators**
 
-{{<image src="charts-indicators.png" title="" alt="">}}
+{{<img src="charts-indicators.png" title="" alt="">}}
 
 **Statistics**
 
-{{<image src="charts-statistics.png" title="" alt="">}}
+{{<img src="charts-statistics.png" title="" alt="">}}
 
 **Active users over time**
 
-{{<image src="charts-users.png" title="" alt="">}}
+{{<img src="charts-users.png" title="" alt="">}}
 
 **Requests per second over time**
 
-{{<image src="charts-requests-per-sec.png" title="" alt="">}}
+{{<img src="charts-requests-per-sec.png" title="" alt="">}}
 
 **Response time percentiles over time**
 
-{{<image src="charts-response-percentiles-per-sec.png" title="" alt="">}}
+{{<img src="charts-response-percentiles-per-sec.png" title="" alt="">}}
 
 **Response time distribution**
 
-{{<image src="charts-distrib.png" title="" alt="">}}
+{{<img src="charts-distrib.png" title="" alt="">}}
 
 **Jenkins Gatling plugin**
 
@@ -120,7 +120,7 @@ Integration pipelines. For instance, you can choose the useful
 to keep track of a Gatling simulation providing performance trends across builds,
 and publish detailed reports for each build.
 
-{{<image src="jenkins-dashboard.png" title="" alt="">}}
+{{<img src="jenkins-dashboard.png" title="" alt="">}}
 
 ### Run a simple performance test with Gatling
 
@@ -141,15 +141,15 @@ done with a Google Chrome browser on Mac in this demo.)
 
 2. Open proxy settings, and click **Advanced** at the bottom of the page.
 
-    {{<image src="configuring-browser-1.png" title="" alt="">}}
+    {{<img src="configuring-browser-1.png" title="" alt="">}}
 
-    {{<image src="configuring-browser-2.png" title="" alt="">}}
+    {{<img src="configuring-browser-2.png" title="" alt="">}}
 
 3. Go to Proxies tab, check **Web Proxy (HTTP)** and **Secure Web Proxy (HTTPS)**, and type the address (**127.0.0.1**) and the port (**8000**).
 
-    {{<image src="configuring-browser-3.png" title="" alt="">}}
+    {{<img src="configuring-browser-3.png" title="" alt="">}}
 
-    {{<image src="configuring-browser-4.png" title="" alt="">}}
+    {{<img src="configuring-browser-4.png" title="" alt="">}}
 
 4. Close the browser window.
 
@@ -174,14 +174,14 @@ Note that `Java.exe` is required to open the recorder window.
 
     2.6 Click **Start**.
 
-{{<image src="gatling-recorder-1.png" title="" alt="">}}
+{{<img src="gatling-recorder-1.png" title="" alt="">}}
 
 <ol start=3>
     <li>  Open the Google Chrome browser, go to the URL: https://computer-database.gatling.io/, and try some operations on this page. The executed events can be observed in the recorder window. Click <b>Stop & Save</b>.</li>
 </ol>
 
 
-{{<image src="gatling-recorder-2.png" title="" alt="">}}
+{{<img src="gatling-recorder-2.png" title="" alt="">}}
 
 #### Edit the Gatling script
 
@@ -189,7 +189,7 @@ After you finish the recording, find the simulation results stored in the folder
 _/gatling-charts-highcharts-bundle-3.0.1.1/user-files/simulations/gatlingExample_
 under the name _gatlingExampleSimulation.scala_. Here is the produced output:
 
-{{<image src="gatling-script.png" title="" alt="">}}
+{{<img src="gatling-script.png" title="" alt="">}}
 
 The simulation script is written in Scala, and you can edit it based on the
 needs of your test scenario.
@@ -199,7 +199,7 @@ needs of your test scenario.
 Launch `gatling.sh` located in the bin directory, and you should see a menu
 with the simulation examples:
 
-{{<image src="gatling-script-output.png" title="" alt="">}}
+{{<img src="gatling-script-output.png" title="" alt="">}}
 
 Select the ID number of the simulation that you want to execute. When the
 simulation is done, the console displays a link to the HTML reports.
@@ -220,7 +220,7 @@ for it. Check out available versions on [Maven Central](https://search.maven.org
 After creating a Maven project on your local, the setup in pom.xml file looks
 more or less like this:
 
-{{<image src="pom-xml.png" title="" alt="">}}
+{{<img src="pom-xml.png" title="" alt="">}}
 
 In **pom.xml**, you can configure things like the multiple simulations’ execution,
 includes/excludes filters, etc. Check the

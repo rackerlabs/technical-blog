@@ -33,7 +33,7 @@ to a form. This option is available in APPCORE Library.
 By using the APP\_MULTI package, you can select single or multiple records and
 process them as needed. The following image illustrates random record selection:
 
-{{<image src="Picture1.png" title="" alt="">}}
+{{<img src="Picture1.png" title="" alt="">}}
 
 *Image Source*: [https://i36.me/images/oracle/ebs/ebs_frm_lnchse_with_app_multi_01.jpg](https://i36.me/images/oracle/ebs/ebs_frm_lnchse_with_app_multi_01.jpg)
 

@@ -23,7 +23,7 @@ slug: "what is interaction studio and how does it drive transformative business 
 
 <!--more-->
 
-{{<image src="Interaction-studio.png" title="" alt="">}}
+{{<img src="Interaction-studio.png" title="" alt="">}}
 
 How much could you increase sales at your company, if you could meet your
 customers where they are on the buyer’s journey and guide them toward your

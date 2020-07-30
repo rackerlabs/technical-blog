@@ -21,10 +21,10 @@ Microsoft has not announced the public preview by this blog's publish date, but,
 
 Use the following steps to set up a static wesite:
 
-1. Create a new storage account and make sure to set the account kind to ``StorageV2`` and the location to ``West Central US``. {{<image src="create.png" title="storage account" alt="storage account">}}
+1. Create a new storage account and make sure to set the account kind to ``StorageV2`` and the location to ``West Central US``. {{<img src="create.png" title="storage account" alt="storage account">}}
 2. After the Storage Account resource has been created, open up the storage account from the blade, which displays a Static website (preview) setting window.
 3. Click on the window and select **Enabled**, which brings up two text boxes to set the index document name and the error document path. The index document name is the default document that is selected when a user browses to the primary endpoint that was generated. The error document path is the 404 page.
-4. Fill in the file names that you plan to use and select **Save**. {{<image src="configure.png" title="configure" alt="configure">}}
+4. Fill in the file names that you plan to use and select **Save**. {{<img src="configure.png" title="configure" alt="configure">}}
 
 I created the following sample index.html to generate the date:
 
@@ -67,7 +67,7 @@ I then created the following sample 404.html page:
 
 I noticed that I couldn't find the web container when using Azure Storage Explorer, but I could click the $web container and use the browser preview functionality to upload the index document name and error document files to the $web container.
 
-When I browsed to the primary endpoint URL, my default document was being used. {{<image src="default.png" title="default" alt="default">}} I also tested out a 404 error, which worked as expected. {{<image src="404.png" title="404" alt="404">}} You can download the html files from this [repo]( https://github.com/jrudley/staticwebsite).
+When I browsed to the primary endpoint URL, my default document was being used. {{<img src="default.png" title="default" alt="default">}} I also tested out a 404 error, which worked as expected. {{<img src="404.png" title="404" alt="404">}} You can download the html files from this [repo]( https://github.com/jrudley/staticwebsite).
 
 
 

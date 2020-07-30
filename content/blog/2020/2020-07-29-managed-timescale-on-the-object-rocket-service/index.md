@@ -37,7 +37,7 @@ store to the ObjectRocket platform in both AWS&reg; and GCP&reg;.
 
 ### Overview
 
-{{<image src="Picture1.png" title="" alt="">}}
+{{<img src="Picture1.png" title="" alt="">}}
 
 Whether or not you took advantage of our beta release earlier this year, as a
 quick reminder, your hosted TimescaleDB&reg; instance comes with:

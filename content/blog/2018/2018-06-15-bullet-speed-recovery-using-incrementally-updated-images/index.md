@@ -52,7 +52,7 @@ Before using an image copy backup strategy, keep in mind the following considera
 
 The following image shows an incrementally updated backup:
 
-{{<image src="Image1.png" title="" alt="">}}
+{{<img src="Image1.png" title="" alt="">}}
 
 ### Sample code
 
