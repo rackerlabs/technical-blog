@@ -63,7 +63,7 @@ cloud operations.
 
 ### Under the hood
 
-{{<image src="Picture1.png" title="" alt=""  class="image-right">}} The AWS
+{{<img src="Picture1.png" title="" alt=""  class="image-right">}} The AWS
 Outpost enclosure, pictured on the right, is delivered in 42U rack, measuring
 80in x 24in x 48in. These measurements align with traditional full-rack
 specifications and should come as no surprise to anyone who has ever set foot
@@ -120,13 +120,13 @@ Hence, AWS Outposts is not an inexpensive hybrid option. Just to give you an ide
 I pulled the least and most expensive options from the AWS Outposts pricing page,
 shown in the following image:
 
-{{<image src="Picture2.png" title="" alt="">}}
+{{<img src="Picture2.png" title="" alt="">}}
 
 *Image source*: [https://aws.amazon.com/outposts/pricing/](https://aws.amazon.com/outposts/pricing/)
 
 #### Networking
 
-{{<image src="Picture3.png" title="" alt=""  class="image-right">}} Outposts has
+{{<img src="Picture3.png" title="" alt=""  class="image-right">}} Outposts has
 two important networking features that provide the foundation for the complete
 hybrid experience: VPC Extension and Local Gateway. VPC Extension provides the
 ability for organizations to extend their AWS cloud-based VPCs into their
