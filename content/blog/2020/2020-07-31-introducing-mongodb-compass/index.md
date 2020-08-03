@@ -4,8 +4,8 @@ title: "Introducing MongoDB Compass"
 date: 2020-07-31
 comments: true
 author: Sandeep Malik
-authorAvatar: ''
-bio: ""
+authorAvatar: 'https://gravatar.com/avatar/76d7fd8c7c9571af83722bff445e0ebd'
+bio: "I am a senior Database Administrator, who works on Oracle Database (9i,10g,11g,12c,19c), Oracle Apps (E-Business Suite - 11i, R12.1), SQL Server (2012,14,16,17), Cassandra, MongoDB and Hadoop administration."
 published: true
 authorIsRacker: true
 categories:
