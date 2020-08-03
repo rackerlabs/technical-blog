@@ -56,8 +56,8 @@ before reading this installment.
 ### Ordering an Outpost Unit&mdash;What goes into creating a new Site
 
 There is quite a bit of information required before you ever see the AWS truck
-backing up to your loading ramp with an Outpost&reg; rack, and the first step is
-to create a **New Site** through the AWS&reg; console. After you log into Amazon,
+backing up to your loading ramp with an Outpost rack, and the first step is
+to create a **New Site** through the AWS console. After you log into Amazon,
 select the Outpost service, which lives under the **Compute** service submenu.
 
 On the creation page, enter an Outpost name, an optional description, a Site ID,
@@ -91,7 +91,7 @@ rack was so hot it scorched my arm.
 Obviously, AWS would like to ensure that you don't put their equipment in that
 sort of peril, before agreeing to drop one off at your facility.
 
-**Key questions**
+##### Key questions
 
 - Temperature range of 41° to 104° F (5° to 40° C)
 - Humidity Range 10° F (-12° C) 8% Relative Humidity to 70°F (21° C) and 80%
@@ -103,7 +103,7 @@ sort of peril, before agreeing to drop one off at your facility.
 
 The third grouping of questions requires a simple **yes** or **no** response and focuses on the facility's clearance requirements.
 
-**Key questions**
+##### Key questions
 
 - Loading dock can accommodate rack crate (94" high by 54" wide by 48" deep)
 - Access path from Loading Dock to Rack install location
@@ -116,7 +116,7 @@ The fourth series of questions concerns rack position requirements. This
 information ranges from the weight restrictions to basic physical security
 constraints, such as bringing an AWS laptop into the facility.
 
-**Key questions**
+##### Key questions
 
 - Max Weight Supported at Install Site
 - Bracing Requirements
@@ -133,7 +133,7 @@ These power-related questions provide AWS with the data they need to select the
 appropriate UPS and PDUs to power the device correctly and allow for a graceful
 shutdown in the event of an emergency.
 
-**Key questions**
+##### Key questions
 
 - Power Draw
 - Breaker Location
@@ -148,11 +148,13 @@ network engineer. The networking questions are relatively simple, and you need
 these details to ensure AWS incorporates the correct network interface cards
 into the build.
 
-**Key questions**
+##### Key questions
 
 - Uplink Speed (1Gbps, 10Gbps, 40Gbps, 100Gbps)
 - Fiber Type (Single-mode or Multi-Mode)
 - Optical Standard
+
+#### Complete your site creation
 
 After you complete the questionnaire, you are ready to finalize your site creation.
 Enter a name for your site, enter an optional description, and select **Create Site**
@@ -179,7 +181,7 @@ clients trying to up their hybrid game. When combined with the ever-growing
 arsenal of AWS cloud-native tools, Outposts can leverage cloud technology from
 the confines of a customer-owned data center.
 
-Here are my TOP TEN takeaways from my review of this new AWS Service:
+Here are my **top ten** takeaways from my review of this new AWS Service:
 
 1. AWS Outposts extends access to cloud-native services from within your local datacenter.
 2. Outposts seamlessly bridges on-premises networks with AWS VPCs and availability zones.
@@ -191,8 +193,6 @@ Here are my TOP TEN takeaways from my review of this new AWS Service:
 8. Outposts offers a wide range of instance bundles, including General Purpose, Compute Optimized, Memory Optimized, Graphics Optimized, and I/O Optimized instance types.
 9. Outposts offers a wide range of local services,  including EC2, ECS, EKS, EBS, RDS, EMR, and S3.
 10. Outposts addresses many of the inherent issues often associated with hybrid cloud infrastructures.
-
-We hope you enjoyed this series on AWS Outposts!
 
 <a class="cta teal" id="cta" href="https://www.rackspace.com/sap">Learn more about our SAP services.</a>
 
