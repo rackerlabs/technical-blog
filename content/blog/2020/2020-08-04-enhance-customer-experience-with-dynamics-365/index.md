@@ -47,7 +47,7 @@ management (CRM) solution to help foster those customer relationships. Through
 a strategic partnership, Rackspace Technology can accommodate pricing options
 for both customers who want to take a more self-directed approach and customers
 who require more personalized attention for a Microsoft&reg; Dynamics 365&reg;
-sales or customer service implementation. Core sales management or service
+Sales or Customer Service product implementation. Core sales management or service
 management implementations can take as little as six weeks so you can quickly
 start managing customer engagements.
 
@@ -82,7 +82,7 @@ Dynamics 365 offers the following advantages:
   creates operational efficiencies. When you use Outlook or Teams, you do not
   need to enter your credentials again to access your Dynamics 365 application.
   Furthermore, the Sales and Customer Service apps have role-based security
-  options to control what you can access within the Dynamics 365 application.
+  options to control what your users can access within the Dynamics 365 application.
 
 - **Scalability**: After you are up and running with the core functionality of
   your Dynamics 365 CRM applications, you can choose from the following  options
@@ -105,8 +105,8 @@ as your business grows.
 
 ### What's Next?
 
-There are a few things that you can do as you think about or prepare to implement
-a CRM solution. Here are some questions you can start thinking through as you
+There are a few things that you can do as you prepare to implement a CRM
+solution. Here are some questions you can start thinking through as you
 prepare to engage Rackspace Technology.
 
 1. Ensure that you understand how you currently manage opportunities or services
