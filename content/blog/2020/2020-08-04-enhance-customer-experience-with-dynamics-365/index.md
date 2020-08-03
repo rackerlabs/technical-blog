@@ -46,7 +46,7 @@ midsize businesses can't invest heavily in a proper customer relationship
 management (CRM) solution to help foster those customer relationships. Through
 a strategic partnership, Rackspace Technology can accommodate pricing options
 for both customers who want to take a more self-directed approach and customers
-who require more personalized attention for a Microsoft&reg; Dynamics 365@reg;
+who require more personalized attention for a Microsoft&reg; Dynamics 365&reg;
 sales or customer service implementation. Core sales management or service
 management implementations can take as little as six weeks so you can quickly
 start managing customer engagements.
@@ -74,7 +74,7 @@ Dynamics 365 offers the following advantages:
   a contact, they can see both open opportunities and open cases with a timeline
   of events.
 
-{{<img src="Picture2.png" title="" alt="">}}
+    {{<img src="Picture2.png" title="" alt="">}}
 
 - **Secure and Efficient**: Dynamics 365 works with Azure Active Directory to
   establish a connection as well as provide a single sign-on across Microsoft
