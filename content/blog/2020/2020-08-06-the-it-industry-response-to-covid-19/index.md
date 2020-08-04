@@ -4,7 +4,7 @@ title: "The IT industry response to Covid-19"
 date: 2020-08-06
 comments: true
 author: Richard Harris
-authorAvatar: ''
+authorAvatar: 'https://www.rackspace.com/sites/default/files/authors/Untitled%20design_0.png'
 bio: "Richard Harris is a Virtualization Engineer IV on the Technology and
 Engineering Services team at Rackspace. Richard joined Rackspace in 2004 working
 on Windows Server 2000 and 2003 and has been working in IT for over 25 years.
@@ -84,7 +84,7 @@ Many companies never expected to have full-time remote workers, but due to the
 sudden impact of Covid-19, those requirements had to change instantly. How do
 you easily move from no remote workers to everyone being a remote worker? How do
 you bolster security within your business to keep out unwanted issues like
-ransomware? The answers to questions like there are as vast and complex as the
+ransomware? The answers to questions like these are as vast and complex as the
 businesses that now require these services. Once again, IT needs to be there to
 provide solutions to these businesses.
 
