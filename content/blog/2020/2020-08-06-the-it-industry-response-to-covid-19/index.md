@@ -5,7 +5,12 @@ date: 2020-08-06
 comments: true
 author: Richard Harris
 authorAvatar: ''
-bio: ""
+bio: "Richard Harris is a Virtualization Engineer IV on the Technology and
+Engineering Services team at Rackspace. Richard joined Rackspace in 2004 working
+on Windows Server 2000 and 2003 and has been working in IT for over 25 years.
+A VMware vExpert, Richard has been working with VMware for over 11 years and
+spoke at VMworld Barcelona in 2019 regarding VMware Skyline. When not working,
+Richard enjoys spending time in his RV with his family and riding motorcycles."
 published: true
 authorIsRacker: true
 categories:
@@ -27,12 +32,12 @@ globe, and every business type has felt some impact.
 
 ### The impact of Covid-19 on businesses
 
-For example:
+For example, different businesses with new problems include the following:
 
--large IT firms have hundreds of new remote workers
--small bakeries need to find an online ordering solution
--legal offices offer their customers remote video appointments
--fast food businesses provide curbside pick-up
+- large IT firms have hundreds of new remote workers
+- small bakeries need to find an online ordering solution
+- legal offices offer their customers remote video appointments
+- fast food businesses provide curbside pick-up
 
 Lots of companies have had their entire roadmap changed in the IT world and have
 scrambled to find their new normal. As many of us continue our daily lives at
