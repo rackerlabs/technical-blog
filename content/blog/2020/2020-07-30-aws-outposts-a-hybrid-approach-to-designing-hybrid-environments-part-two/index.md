@@ -48,7 +48,7 @@ This three-part series examines the following topics:
 - How to begin your Outposts journey by setting up a site
 
 If you haven't already seen it, read
-[Part one of this series(https://docs.rackspace.com/blog/aws-outposts-a-hybrid-approach-to-designing-hybrid-environments-part-one/),
+[Part one of this series](https://docs.rackspace.com/blog/aws-outposts-a-hybrid-approach-to-designing-hybrid-environments-part-one/),
 before reading this installment.
 
 ### AWS Outposts&mdash;Public cloud re-imagined
@@ -173,7 +173,8 @@ a data center near you.
 
 ### Coming soon
 
-Part three of the series is coming soon, so stay tuned!
+[Part three of the series](https://docs.rackspace.com/blog/aws-outposts-a-hybrid-approach-to-designing-hybrid-environments-part-three/)
+is ready, so read on.
 
 <a class="cta red" id="cta" href="https://www.rackspace.com/sap">Learn more about our SAP services.</a>
 
