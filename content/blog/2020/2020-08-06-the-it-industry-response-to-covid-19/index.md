@@ -14,7 +14,7 @@ metaTitle: "The IT industry response to Covid-19"
 metaDescription: "The world has changed dramatically with Covid-19 impacting
 folks around the globe, and every business type has felt some impact."
 ogTitle: "The IT industry response to Covid-19"
-ogDescription: The world has changed dramatically with Covid-19 impacting folks
+ogDescription: "The world has changed dramatically with Covid-19 impacting folks
 around the globe, and every business type has felt some impact."
 slug: "the-it-industry-response-to-covid-19"
 
