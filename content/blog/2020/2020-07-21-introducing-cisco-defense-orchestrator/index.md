@@ -78,8 +78,8 @@ security policies, offering the following advantages:
   documented changes made over time through the CDO portal. Rollback to a
   last-known-good configuration at any time.
   
-- **Imporove security**: Apply policy and objects across multiple devices and
-  locations enabling consistent security postures and configurations.
+- **Improve security**: Apply policy and objects across multiple devices and
+  locations, enabling consistent security postures and configurations.
 
 ### Conclusion
 
