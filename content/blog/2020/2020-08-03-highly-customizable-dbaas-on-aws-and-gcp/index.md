@@ -26,6 +26,7 @@ design that works with every business's unique challenges. This is why we've
 launched Private DBaaS, the same great databases we offer on our regular platform
 except in a dedicated environment."
 slug: "highly-customizable-dbaas-on-aws-and-gcp"
+canonical: https://www.objectrocket.com/blog/private-dbaas/highly-customizable-dbaas-on-aws-and-gcp/
 
 ---
 
