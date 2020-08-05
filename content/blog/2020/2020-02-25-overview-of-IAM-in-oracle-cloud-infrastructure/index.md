@@ -136,6 +136,8 @@ To request a service limit increase, perform the following steps:
            <li style="margin-left:2em">Resource</li>
            <li style="margin-left:2em; padding-bottom: 0;">Reason for the request</li>
     </li>
+</ol>
+<ol start=3>
     <li>Click <b>Submit Request</b>.</li>
 </ol>
 
