@@ -42,8 +42,10 @@ the following steps:
 1) Click on the **App Service Plan** of the web app where you configured VNet integration and select
    **Networking** from the blade. Select **Click here** to manage under **VNet Integration**.
    ![navigation](navigation.png)
+   
 2) Click on the VNet that is acting as the hub VNet.
    ![hubvnet](drillDown.png)
+   
 3) Click on **Sync Network**.
    ![sync](syncNetwork.png)
 
