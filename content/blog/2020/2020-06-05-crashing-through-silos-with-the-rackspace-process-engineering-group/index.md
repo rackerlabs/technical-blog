@@ -65,14 +65,14 @@ PEG formed four strategic alliances with Rackspace to support our customers:
 Through these alliances, PEG remains agile, accounting for lifecycle events.
 
 What is a lifecycle event? Glad you asked.  Automation is only as good as its
-result, and if the result equals a Fanatical Experience&trade;, it's a lifecycle
+result, and if the result equals Fantical Experience&trade;, it's a lifecycle
 event.
 
 ### Use case
 
 The following current use case demonstrates how PEG encompasses the Rackspace core
 values through expertise and agility to connect a myriad of independent events
-that result in a Fanatical Experience.
+that result in Fanatical Experience.
 
 Cisco support set devices **5505|5510|5520** as end-of-life. In late 2018, PEG
 worked with the Customer Success teams to notify customers that they had a year

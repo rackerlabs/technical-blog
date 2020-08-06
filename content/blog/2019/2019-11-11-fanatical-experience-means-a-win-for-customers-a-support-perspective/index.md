@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "A Fanatical Experience Means a Win for Customers - A Support Perspective"
+title: "Fanatical Experience Means a Win for Customers - A Support Perspective"
 date: 2019-11-12
 comments: true
 author: Shaun Crumpler
@@ -10,18 +10,18 @@ authorAvatar: 'https://secure.gravatar.com/avatar/c26423ec960c158dbdbcbee1f61ea7
 bio: "Shaun Crumpler is a 7 year Racker, who focuses on applying his MBA to the technical space to evolve and transform processes, promoting change and agility.  His technical expertise spans Linux operating systems, the Rackspace Public Cloud infrastructure, and the AWS infrastructure.  He was awarded the Fanatical Jacket, Rackspace’s highest honor, because of the focus that he places on fanatically supporting not only external customers, but internal customers as well."
 categories:
     - General
-metaTitle: "A Fanatical Experience Means a Win for Customers - A Support Perspective"
+metaTitle: "Fanatical Experience Means a Win for Customers - A Support Perspective"
 metaDescription: "This post explores how the Rackspace Core Values affect the Support team."
-ogTitle: "A Fanatical Experience Means a Win for Customers - A Support Perspective"
+ogTitle: "Fanatical Experience Means a Win for Customers - A Support Perspective"
 ogDescription: "This post explores how the Rackspace Core Values affect the Support team."
-slug: "a fanatical experience means a win for customers a support perspective" 
+slug: "fanatical-experience-means-a-win-for-customers-a-support-perspective"
 ---
 
 Working in technical support comes with its own unique set of challenges and opportunities, but it also means that we get the satisfaction of remaining at the forefront of technical change as things move so rapidly and new hosting services and products change seemingly quicker than a new iPhone can be released.
 
 <!--more-->
 
-Because of this, Rackspace’s refreshed Core Values are a breath of fresh air as they have been simplified through not merely offering the *Fanatical Support* that the company is known for, but by targeting the entire customer journey, from the very first contact with Rackspace, to create a **Fanatical Experience**&reg; for customers.
+Because of this, Rackspace’s refreshed Core Values are a breath of fresh air as they have been simplified through not merely offering the *Fanatical Support&reg;* that the company is known for, but by targeting the entire customer journey, from the very first contact with Rackspace, to create **Fanatical Experience**&trade; for customers.
 
 ### Excellence
 
@@ -49,7 +49,7 @@ In Support, we often work with other teams in a collaborative effort to assure t
 
 One of the top strengths that we see most often in support is **learner**.  Because of this, there is never a shortage of Rackers learning the newest technologies to assure that we remain at the front of technological advancements and assure a quality team with an amazing level of knowledge behind it to help its support.
 
-Because we love learning, we are always open to other Racker ideas, incorporating various perspectives and ways to view problems. This enables us to grow technically and professionally and thus offer a higher level of expertise for customers to provide a Fanatical experience.
+Because we love learning, we are always open to other Racker ideas, incorporating various perspectives and ways to view problems. This enables us to grow technically and professionally and thus offer a higher level of expertise for customers to provide Fanatical Experience.
 
 ### Agility
 
@@ -69,6 +69,6 @@ If Rackers can't remain agile, then their ability to provide excellent customer 
 
 Sure we give back through donations to charities, both in money and time, but the compassion piece of the Core Values puzzle is so very much more. We used to have an ideology of treating fellow Rackers like friends and family, but we understood that we left out a group that is just as important to Rackspace: customers.
 
-We are here for our customers, and only through providing great service and products to them do we get to live in this symbiotic relationship. Through our gains from providing a **Fanatical Experience**, we are empowered to give back to the community.
+We are here for our customers, and only through providing great service and products to them do we get to live in this symbiotic relationship. Through our gains from providing **Fanatical Experience**, we are empowered to give back to the community.
 
-The new Core Values focus on a the customer experience, and at the heart of that is the support that we hope and expect to continue to provide to customers, both internal and external. The goal of Rackspace still remains the same&mdash;to provide the type of experience that customers deserve in each and every interaction with Rackspace. That is, a **Fanatical Experience**.
+The new Core Values focus on a the customer experience, and at the heart of that is the support that we hope and expect to continue to provide to customers, both internal and external. The goal of Rackspace still remains the same&mdash;to provide the type of experience that customers deserve in each and every interaction with Rackspace. That is, **Fanatical Experience**.
