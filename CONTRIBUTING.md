@@ -11,16 +11,14 @@ content for our official Technical Blog. Second, to make contributing
 a pleasant experience while maintaining a visual and consistent content standard,
 complete these steps before writing and submitting a blog entry for publishing.
 
-
 ## Prepare to contribute
 
 We encourage a triangular workflow in GitHub as a best practice.
 
-1. Fork this repo (https://github.com/rackerlabs/technical-blog), then
-   clone your fork.
+1. Fork this repo in GitHub (https://github.com/rackerlabs/technical-blog), then clone your fork.
 
    ```bash
-   git clone git@github.com:<YOUR_GITHUB_ID>/technical-blog.git
+   git clone --depth 1 --shallow-submodules git@github.com:<YOUR_GITHUB_ID>/technical-blog.git
    cd technical-blog
 
 1. Add the original repo as the `upstream` remote.
@@ -38,10 +36,11 @@ We encourage a triangular workflow in GitHub as a best practice.
    ```
 
 1. Prevent accidental commits directly to the master branch by using a pre-commit hook.
-   Note: These instructions work in the Bash shell and will overwrite the existing file if present.
+**Note: These instructions work for the Bash shell and will overwrite an existing `pre-commit` file if present.**
 
    ```bash
    mkdir -p ~/.git/hooks
+   # Cut and paste this command into your shell:
    cat << 'EOF' > ~/.git/hooks/pre-commit
    #!/usr/bin/env bash
 
@@ -59,8 +58,9 @@ We encourage a triangular workflow in GitHub as a best practice.
    ```bash
    git branch master -u upstream/master
    ```
-1. Install Hugo on your local machine by using the following command:
-   
+
+1. Install the build tools on your local machine by using the following command:
+
    ```make install hugo```
   
 ## Create your blog post
@@ -78,12 +78,15 @@ We encourage a triangular workflow in GitHub as a best practice.
       ```bash
       git checkout -b name-of-your-branch
       ```
+
 1. Navigate to the root directory of your local copy of this repo using the command line.
 
 1. Create a new directory within ```/content/blog/YYYY/``` that contains the inital ```.index.md``` 
    by using the following command:
   
-  ```hugo new --kind blog-bundle blog/YYYY/YYYY-MM-DD-title-of-post```
+   ```sh
+   hugo new --kind blog-bundle blog/YYYY/YYYY-MM-DD-title-of-post
+   ```
 
 **Note:** If your post has images,  place the image files within the newly created post folder.
 
