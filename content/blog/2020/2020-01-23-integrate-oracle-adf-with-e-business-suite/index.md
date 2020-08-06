@@ -28,19 +28,19 @@ Framework (ADF) with E-Business Suite (EBS) Supply Planning Work Area (SWPA).
 Oracle describes ADF in
 [Oracle Fusion Middleware Understanding Oracle Application Development Framework](https://docs.oracle.com/middleware/1212/adf/ADFCG/intro.htm#ADFCG111) in the following way:
 
-“Oracle Application Development Framework (Oracle ADF) is an end-to-end
-application framework that builds on Java EE standards and open-source
-technologies to simplify and accelerate implementing enterprise applications.
-Oracle ADF is suitable for enterprise developers who want to create applications
-that search, display, create, modify, and validate data using web, mobile, and
-desktop interfaces.
-
-“You can use the whole Oracle ADF framework to create an application, or you
-can use parts of the framework in combination with the other technologies.
-Throughout this guide, applications that contain any ADF technologies are
-generally referred to as ADF applications. Web applications that incorporate
-ADF technologies throughout the business service, model, controller, and view
-layers are referred to as Fusion web applications.”
+>Oracle Application Development Framework (Oracle ADF) is an end-to-end
+>application framework that builds on Java EE standards and open-source
+>technologies to simplify and accelerate implementing enterprise applications.
+>Oracle ADF is suitable for enterprise developers who want to create applications
+>that search, display, create, modify, and validate data using web, mobile, and
+>desktop interfaces.
+>
+>You can use the whole Oracle ADF framework to create an application, or you
+>can use parts of the framework in combination with the other technologies.
+>Throughout this guide, applications that contain any ADF technologies are
+>generally referred to as ADF applications. Web applications that incorporate
+>ADF technologies throughout the business service, model, controller, and view
+>layers are referred to as Fusion web applications.
 
 
 ### SWPA
