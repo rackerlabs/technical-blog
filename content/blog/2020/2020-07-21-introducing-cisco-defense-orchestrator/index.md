@@ -86,7 +86,7 @@ security policies, offering the following advantages:
 As we take this step into CDO management for our Cisco and expanded security
 appliances, Rackspace will lean more on our security partners to deliver
 scalable, efficient, and secure solutions. By doing so, we can meet your needs
-faster and provide a Fanatical Experience&trade; and expert security knowledge
+faster and provide Fanatical Experience&trade; and expert security knowledge
 across multiple clouds and physical infrastructures. This, in turn, opens up the
 opportunity for Rackspace Technology to support security appliances anywhere you
 deploy them in the future.

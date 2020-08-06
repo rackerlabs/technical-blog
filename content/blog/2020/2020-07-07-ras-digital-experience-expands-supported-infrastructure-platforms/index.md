@@ -39,7 +39,7 @@ Private Cloud-VMware&reg; (RPC-V) on Tuesday, July 7, 2020. There is a
 caveat&mdash;you knew there had to be one.
 
 We don't offer Digital Experience solutions on RPC-V on AWS at this time. We
-need to conduct additional engineering work to ensure a Fanatical Experience on
+need to conduct additional engineering work to ensure Fanatical Experience&trade; on
 that platform.
 
 The RAS Digital team is continuously listening to customer requests and market
