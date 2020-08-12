@@ -257,4 +257,5 @@ Further, you also learn to debug various errors while performing the SSO/OID
 <a class="cta blue" id="cta" href="https://www.rackspace.com/dba-services">Learn more about Databases.</a>
 
 Use the Feedback tab to make any comments or ask questions. You can also click
-**Sales Chat** to [chat now](https://www.rackspace.com/) and start the conversation.
+**Sales Chat** to [chat now](https://www.rackspace.com/) and start the
+conversation.
