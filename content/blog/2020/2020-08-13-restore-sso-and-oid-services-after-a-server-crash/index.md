@@ -4,7 +4,7 @@ title: "Restore SSO and OID services after a server crash"
 date: 2020-08-13
 comments: true
 author: Abhishek Shukla
-authorAvatar: 'https://s.gravatar.com/avatar/4c6a0fc4429bdc391832b6af39ab8058'
+authorAvatar: 'https://2.gravatar.com/userimage/191238188/88086f4370c46cbf11e5171378bd77b1'
 bio: "I am an Oracle Apps DBA with over 14 years of experience, currently
 associated with Rackspace Technology. Other than technology, nature excites me.
 I'm avidly into travelling and bonsai making. Presently based in India."
@@ -257,5 +257,4 @@ Further, you also learn to debug various errors while performing the SSO/OID
 <a class="cta blue" id="cta" href="https://www.rackspace.com/dba-services">Learn more about Databases.</a>
 
 Use the Feedback tab to make any comments or ask questions. You can also click
-**Sales Chat** to [chat now](https://www.rackspace.com/) and start the
-conversation.
+**Sales Chat** to [chat now](https://www.rackspace.com/) and start the conversation.
