@@ -9,12 +9,11 @@
 #       your local blog git repo.
 #
 # Process:
-# 1) Get the dates to compare from the arguments passed in
+# 1) Get the year from the argumennt passed in
 # 2) Get the list of TCT Rackers
 # 3) Go to blog repo content directory (assumption: you are in the script dir)
 # 3) Use for loop to go through all *md files in each content sub dir
-#    and list all file names and directories where:
-#       last_modified_date is between begin and end dates (from the script arguments)
+#    and list all file names and directories where post was written by TCTer
 #
 # Updates:
 #
