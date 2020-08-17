@@ -82,10 +82,10 @@ To fix this, open up each init job YAML file and add a `nodeSelector` entry targ
         - name: sitecore-docker-registry
 ```
 
-After this step completes, if the job has errored out this example, delete the job and apply the new init YAML files.
+After editing the YAML file, delete the failed job and apply the new init YAML files.
 Describing the pod should show a status of **ContainerCreating** and a **Node-Selectors** set to windows {{<img src="solr.png" alt="" title="">}}
 
 ### Parting thought
 
-I have informed Sitecore about the issuing the node selector for the Kubernetes jobs, but in the meantime, it is an
+I have informed Sitecore about the missing node selector for the Kubernetes jobs, but in the meantime, it is an
 easy fix to edit the YAML files. For more information about windows containers, reference the [kubernetes documentation](https://kubernetes.io/docs/setup/production-environment/windows/user-guide-windows-containers/).
