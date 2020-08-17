@@ -158,7 +158,7 @@ useful feature provided by the tool. FSLogix solutions include:
   the applications from all but a specific allowed group.
 
 - **Java version masking**: If you have applications that require varying versions
-  of Java&ref;, you can create rules to only provide the old version of Java to
+  of Java&reg;, you can create rules to only provide the old version of Java to
   that application.
 
 See [Part three](https://developer.rackspace.com/blog/using-wvd-and-fslogix-part3/)
