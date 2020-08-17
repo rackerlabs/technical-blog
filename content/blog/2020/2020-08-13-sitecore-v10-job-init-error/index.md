@@ -1,42 +1,48 @@
 ---
 layout: post
-title: "Sitecore v10 Kubernetes Job Error"
+title: "Sitecore v10 Kubernetes job error"
 date: 2020-08-13
 comments: true
 author: Jimmy Rudley
 published: true
 authorIsRacker: true
 authorAvatar: 'https://www.gravatar.com/avatar/fb085c1ba865548f330e7d4995c0bf7e'
-bio: "Jimmy Rudley is an Azure&reg; Architect at Rackspace and an active member of the Azure community. He focuses on solving large and complex architecture and automation problems within Azure."
+bio: "Jimmy Rudley is an Azure&reg; Architect at Rackspace and an active member of the Azure community. He focuses
+on solving large and complex architecture and automation problems within Azure."
 categories:
     - Azure
-metaTitle: "Sitecore v10 Kubernetes Job Error"
-metaDescription: "Sitecore v10 Kubernetes Job Error"
-ogTitle: "Sitecore v10 Kubernetes Job Error"
-ogDescription: "Sitecore v10 Kubernetes Job Error"
+metaTitle: "Sitecore v10 Kubernetes job error"
+metaDescription: "Sitecore v10 Kubernetes job error"
+ogTitle: "Sitecore v10 Kubernetes job error"
+ogDescription: "Sitecore v10 Kubernetes job error"
 slug: 'Sitecore-v10-Kubernetes-Job-Error'
 ---
 
-With the release of Sitecore&reg; Version 10, Kubernetes&reg; is now a supported option. This opens up such great benefits such as better resource utilization, version controlled images and overall ease of operations. While building out an automated pipeline, I came across an error during the Kubernetes job step. Let's dive in and show the fix I used in order to have successful deployments.
+With the release of Sitecore&reg; version 10, Kubernetes&reg; is now a supported option. This opens up some great
+benefits, such as better resource utilization, version-controlled images, and overall operations ease. While building
+out an automated pipeline, I came across an error during the Kubernetes job step. Let's dive in and see the fix I used
+to get successful deployments.
 
 <!--more-->
 
 ### Configuration
 
-Following the install document, you deploy the ingress controller, secrets then the external dependencies. These dependencies include Redis, MSSQL and Solr. Looking at the helm install command below, you notice a nodeSelector is being used to target a linux node for the nginx ingress. While Sitecore runs on Windows containers, this informs us that we need to have Linux and Windows nodes for a full Sitecore deployment.
+Following the install document, you deploy the ingress controller, secrets, and then the external dependencies. These
+dependencies include Redis&reg;, MSSQL&reg;, and Solr&trade;. Looking at the following helm install command, notice it
+uses a `nodeSelector` to target a Linux&reg; node for the Nginx&reg; ingress. While Sitecore runs on Windows&reg; containers,
+this usage informs us that we need to have Linux and Windows nodes for a full Sitecore deployment.
 
 ```
 helm repo add stable https://kubernetes-charts.storage.googleapis.com/
 helm install nginx-ingress stable/nginx-ingress --set controller.replicaCount=1 --set controller.nodeSelector."beta\.kubernetes\.io/os"=linux --set defaultBackend.nodeSelector."beta\.kubernetes\.io/os"=linux --set-string controller.config.proxy-body-size=10m --set controller.service.externalTrafficPolicy=Local
-
 kubectl apply -k ./secrets/
-
 kubectl apply -f ./external/
-
 kubectl apply -f ./init/
 ```
 
-Each step of my deploy was going smooth until I hit the init yaml's which run jobs within Kubernetes. While monitoring my pods, I noticed **ErrImagePull** for the solr initilization job. I ran a **kubectl describe pod solr-init-m5dgj** to view more information. The output is below:
+Each step of my deploy went smoothly until I hit the init YAML step, which runs jobs within Kubernetes. While monitoring
+my pods, I noticed **ErrImagePull** for the solr initialization job. I ran a **kubectl describe pod solr-init-m5dgj**
+command to view more information, which yielded the following output:
 
 ```
 QoS Class:       BestEffort
@@ -54,10 +60,19 @@ Events:
   Normal   BackOff    2m41s (x7 over 4m32s)  kubelet, aks-nodepool1-19665653-vmss000001  Back-off pulling image "scr.sitecore.com/sxp/sitecore-xm1-solr-init:10.0.0-ltsc2019"
   ```
 
-  Having worked with kubernetes for a while, I instantly spotted the error. While the message is giving a x509 certificate error, look at the node the job was assigned on. **aks-nodepool1-19665653-vmss000001** is a linux node and the image being pulled has ltsc2019 which is an indicator for windows. Since I am using AKS, the Windows VMSS nodes are named with a structure of aksnpwin000000,aksnpwin000001, etc. A windows image cannot run off a linux node. The question comes up on why was this randomly working in previous deploys? Well, the kubernetes scheduler handles placement of where to run the job, but we can target specific nodes based on operating system. Auditing the Sitecore deployment yaml files, I noticed they were indeed targeting windows nodes, but the init job's were missing this entry. I verified this by looking at the describe pod output above which has **Node-Selectors:  <none>** set to none.
+Having worked with Kubernetes for a while, I instantly spotted the error. While the message gave an x509 certificate
+error, look at the job's assigned node. **aks-nodepool1-19665653-vmss000001** is a Linux node, and the image it pulled
+has `ltsc2019`, which is an indicator for Windows. Because I used AKS, the Windows VMSS nodes are named with a structure
+of **aksnpwin000000**, **aksnpwin000001**, and so on. A Windows image cannot run off a Linux node. 
 
-  In order to fix this, open up each init job yaml file and add a nodeSelector entry targeting the operating system windows. 
-  ```
+The question comes up about why this randomly worked in previous deploys? Well, the Kubernetes scheduler handles the placement
+of where to run the job, but we can target specific nodes based on the operating system. Auditing the Sitecore deployment YAML
+files, I noticed they were indeed targeting Windows nodes, but the init jobs were missing this entry. I verified this by
+looking at the describe pod output above, which has `Node-Selectors: <none>` set to `none`.
+
+To fix this, open up each init job YAML file and add a `nodeSelector` entry targeting the operating system, `Windows`.
+
+```
   spec:
   template:
     spec:
@@ -67,9 +82,10 @@ Events:
         - name: sitecore-docker-registry
 ```
 
-Once this step is done, if the job has errored out like above, delete the job and apply the new init yaml files. Describing the pod should show a status of **ContainerCreating** and a **Node-Selectors** set to windows {{<img src="solr.png" alt="" title="">}}
+After this step completes, if the job has errored out this example, delete the job and apply the new init YAML files.
+Describing the pod should show a status of **ContainerCreating** and a **Node-Selectors** set to windows {{<img src="solr.png" alt="" title="">}}
 
 ### Parting thought
 
-I have informed Sitecore of the issing node selector for the Kubernetes jobs, but in the mean time, it is an easy fix just to edit the yaml files. For more information about windows containers, please reference the [kubernetes documentation](https://kubernetes.io/docs/setup/production-environment/windows/user-guide-windows-containers/)
-
+I have informed Sitecore about the issuing the node selector for the Kubernetes jobs, but in the meantime, it is an
+easy fix to edit the YAML files. For more information about windows containers, reference the [kubernetes documentation](https://kubernetes.io/docs/setup/production-environment/windows/user-guide-windows-containers/).
