@@ -86,9 +86,9 @@ To fix this, open up each init job YAML file and add a `nodeSelector` entry targ
 After editing the YAML file, delete the failed job and apply the new init YAML files.
 
 Describing the pod should show a status of **ContainerCreating** and a **Node-Selectors** set
-to Windows.
+to Windows, as shown in the following image:
 
-{{ <img src="solr.png" alt="" title=""> }}
+{{<img src="solr.png" alt="" title="">}}
 
 ### Parting thought
 
