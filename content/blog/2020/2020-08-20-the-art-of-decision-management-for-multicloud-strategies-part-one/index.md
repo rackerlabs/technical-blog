@@ -32,7 +32,7 @@ decisions for managing your multicloud environment.
 ### Why multicloud strategies?
 
 In recent years, cloud computing has become instrumental for companies of
-various sizes who want to undertake major business transformation. Its
+various sizes who want to undertake a major business transformation. Its
 flexibility, scalability, and high availability offer clear advantages for
 businesses to save costs, experiment with new ideas, and pursue business
 innovation.
@@ -49,9 +49,9 @@ provider.
 
 Businesses that opt-in for a multicloud strategy usually lean on a handful of
 reasons&mdash;the more popular ones being data sovereignty, user proximity,
-considerations for performance, reliability, and availability. And for some
+considerations for performance, reliability, and availability. For some
 other companies, it might just be a policy to avoid vendor lock-in. Regardless
-of which drivers prevail, businesses have to make lots of important decisions,
+of which drivers prevail, businesses have to make many important decisions,
 and in many cases, these decisions are not intuitive and straight-forward.
 
 ### Decision management is instrumental to an effective multicloud strategy
