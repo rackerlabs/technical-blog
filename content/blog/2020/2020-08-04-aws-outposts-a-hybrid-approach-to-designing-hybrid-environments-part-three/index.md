@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Aws Outposts: A hybrid approach to designing hybrid environments&dash;Part Three"
+title: "Aws Outposts: A hybrid approach to designing hybrid environments&mdash;Part Three"
 date: 2020-08-04
 comments: true
 author: Wayne Zettler
@@ -25,9 +25,9 @@ published: true
 authorIsRacker: true
 categories:
     - General
-metaTitle: "Aws Outposts: A hybrid approach to designing hybrid environments&dash;Part Three"
+metaTitle: "Aws Outposts: A hybrid approach to designing hybrid environments&mdash;Part Three"
 metaDescription: "."
-ogTitle: "Aws Outposts:A hybrid approach to designing hybrid environments&dash;Part Three"
+ogTitle: "Aws Outposts:A hybrid approach to designing hybrid environments&mdash;Part Three"
 ogDescription: "."
 slug: "aws-outposts-a-hybrid-approach-to-designing-hybrid-environments-part-three"
 
