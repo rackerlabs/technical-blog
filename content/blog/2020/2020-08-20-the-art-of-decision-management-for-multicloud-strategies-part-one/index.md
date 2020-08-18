@@ -127,7 +127,7 @@ target cloud platforms:
 
 The high-level plan in **Figure 1** provides initial guiding principles for the
 company to implement its multicloud strategies. The company might need to execute
-the strategy, however, at the individual application level Many factors can
+the strategy, however, at the individual application level. Many factors can
 influence individual applications so that they don't follow these principles,
 and these factors could well be valid exceptions.
 
