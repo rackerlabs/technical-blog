@@ -3,7 +3,7 @@ layout: post
 title: "The art of decision management for multicloud strategies&mdash;Part One"
 date: 2020-08-20
 comments: true
-author:
+author: Wilfred Wah
 authorAvatar: ''
 bio: ""
 published: true
