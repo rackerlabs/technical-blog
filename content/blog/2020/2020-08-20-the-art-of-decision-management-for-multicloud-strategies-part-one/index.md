@@ -4,8 +4,12 @@ title: "The art of decision management for multicloud strategies&mdash;Part One"
 date: 2020-08-20
 comments: true
 author: Wilfred Wah
-authorAvatar: ''
-bio: ""
+authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-UR3DD1J83-93420d85dfea-512'
+bio: "Wilfred is a Principal Consultant of Advisory Services, Rackspace
+Technology North Asia. His area of expertise includes cloud migration assessment,
+cloud economics, people transformation, cloud adoption strategy, and the
+transformation roadmap. He has more than 15 years of consultancy experience with
+major vendors such as Dell/EMC, SAS, and AWS before joining Rackspace."
 published: true
 authorIsRacker: true
 categories:
@@ -122,9 +126,9 @@ target cloud platforms:
 *Figure 1: High-level planning for multicloud strategies*
 
 The high-level plan in **Figure 1** provides initial guiding principles for the
-company to implement its multicloud strategies. The company needs to apply the
-strategy execution, however, at the individual application level. Many factors
-can influence individual applications so that they don't follow these principles,
+company to implement its multicloud strategies. The company might need to execute
+the strategy, however, at the individual application level Many factors can
+influence individual applications so that they don't follow these principles,
 and these factors could well be valid exceptions.
 
 A Cloud Decision Management Process (CDMP) helps the company lay out a
@@ -134,7 +138,8 @@ migration filters and platform evaluation criteria. The company can then execute
 the CDMP and reference its recommendation for individual applications before
 making a final decision on the hosting cloud platforms.
 
-When functioning effectively, the CDMP helps you to the following tasks:
+When functioning effectively, the CDMP helps you successfully perform the
+following tasks:
 
 - Orchestrate crucial technical information and insights about individual applications
 - Incorporate different constraints and key dependencies for the cloud adoption
