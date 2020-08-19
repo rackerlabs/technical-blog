@@ -65,8 +65,9 @@ Administration node, where you are running the WLS Administrator.
 
 {{<img src="Picture1.png" title="" alt="">}}
 
-3. Add a saved name to identify the connection for access easily and click
-**Save**.
+<ol start=3>
+    <li>Add a saved name to identify the connection for access easily and click <b>Save</b>.</li>
+</ol>
 
 #### Step 2: Configure the tunnel
 
@@ -75,13 +76,15 @@ and click **Add**.
 
 {{<img src="Picture2.png" title="" alt="">}}
 
-2. Click **Add** to open the PuTTY configuration window.
+<ol start=2>
+    <li>Click <b>Add</b> to open the PuTTY configuration window.</li>
+</ol>
 
 {{<img src="Picture3.png" title="" alt="">}}
 
 #### Step 3: Save the settings
 
-1. In the left-panel, click **Session** and click **Save**.
+In the left-panel, click **Session** and click **Save**.
 
 {{<img src="Picture4.png" title="" alt="">}}
 
