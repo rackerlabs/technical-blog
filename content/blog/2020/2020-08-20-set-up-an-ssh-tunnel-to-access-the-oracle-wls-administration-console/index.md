@@ -66,6 +66,7 @@ Administration node, where you are running the WLS Administrator.
 {{<img src="Picture1.png" title="" alt="">}}
 
 <ol start=3>
+    <br>
     <li>Add a saved name to identify the connection for access easily and click <b>Save</b>.</li>
 </ol>
 
@@ -81,6 +82,8 @@ and click **Add**.
 </ol>
 
 {{<img src="Picture3.png" title="" alt="">}}
+
+<br>
 
 #### Step 3: Save the settings
 
