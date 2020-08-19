@@ -3,9 +3,10 @@ layout: post
 title: "Set up an SSH tunnel to access the Oracle WLS Administration Console"
 date: 2020-08-20
 comments: true
-author:
-authorAvatar: ''
-bio: ""
+author: Sunil Rathod
+authorAvatar: 'https://s.gravatar.com/avatar/c3a915969820000d5dc4fc4f04ad8276'
+bio: "I enjoy working as Oracle Apps DBA with more than 12 years of experience
+in various Oracle technologies."
 published: true
 authorIsRacker: true
 categories:
