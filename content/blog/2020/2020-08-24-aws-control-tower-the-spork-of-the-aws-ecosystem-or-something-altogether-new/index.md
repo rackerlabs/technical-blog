@@ -72,7 +72,7 @@ mesmerized by this odd tool, which I later learned is called a *spork*. I
 marveled at this beautifully crafted piece of plastic, a perfect blend of fork
 and spoon, clearly the result of some unholy union in the silverware drawer.
 
-{{<img src="Picture1.png" title="" alt=""  class="image-left">>}} For the
+{{<img src="Picture1.png" title="" alt="" class="image-left">}} For the
 briefest moment, I knew how Ariel must have felt when she first held her
 dinglehopper. This brilliant contraption had the spearing capability of the
 conventional fork, coupled with the spoon's unrivaled scooping capability. I
@@ -254,7 +254,7 @@ requirements is half the battle. If we learned anything from Ariel, it is that
 while you can certainly use a fork to brush your hair, there is probably a
 better tool for the job, and those decisions can carry far greater impacts to
 cost and operational efficiency when you're dealing with the AWS cloud
-infrastructure. {{<img src="Picture4.png" title="" alt=""  class="image-right">>}}
+infrastructure. {{<img src="Picture4.png" title="" alt="" class="image-right">}}
 
 ### Summary
 
@@ -274,7 +274,7 @@ most cases, sometimes it pays to seek optimizations and leverage a spork-like
 utensil that blends multiple functionalities into a single tool. If your
 organization is looking to embark on a cloud project, be it proof of concept (POC)
 or complete enterprise migration, leveraging a qualified AWS partner or the AWS
-professional services team is never a bad idea. {{<img src="Picture5.png" title="" alt=""  class="image-right">>}}
+professional services team is never a bad idea. {{<img src="Picture5.png" title="" alt="" class="image-right">}}
 
 <a class="cta blue" id="cta" href="https://www.rackspace.com/sap">Learn more about our AWS services.</a>
 
