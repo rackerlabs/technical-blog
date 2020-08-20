@@ -4,7 +4,7 @@ title: "Rackspace Technology makes network security a reality"
 date: 2020-08-18
 comments: true
 author: Phil Sprofera
-authorAvatar: ''
+authorAvatar: 'https://nam12.safelinks.protection.outlook.com/?url=https%3A%2F%2Fmedia-exp1.licdn.com%2Fdms%2Fimage%2FC4D03AQEqRloibv206w%2Fprofile-displayphoto-shrink_100_100%2F0%3Fe%3D1603324800%26v%3Dbeta%26t%3DVccxZYcP1H4xef2V5l5PnE4ug_fFTSA0yLR-W07LXjE&data=02%7C01%7Ccat.lookabaugh%40RACKSPACE.COM%7Cafff862224344a46a28508d84552eb8b%7C570057f473ef41c8bcbb08db2fc15c2b%7C0%7C0%7C637335569727849616&sdata=YIp%2BFr7gOWxGn31BoHTjPTHgl%2Fwc3UseifQEd1bcGz4%3D&reserved=0'
 bio: ""
 published: true
 authorIsRacker: true
