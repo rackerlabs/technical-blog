@@ -249,12 +249,13 @@ are unfamiliar with the processes or best-practices associated with creating a
 landing zone according to the AWS Well-Architected Framework principles. In that
 case, organizations might need to seek outside help from the AWS Partner Network.
 
-Like any project, knowing which tool to leverage to address the identified
+{{<img src="Picture4.png" title="" alt="" class="image-right">}}Like any
+project, knowing which tool to leverage to address the identified
 requirements is half the battle. If we learned anything from Ariel, it is that
 while you can certainly use a fork to brush your hair, there is probably a
 better tool for the job, and those decisions can carry far greater impacts to
 cost and operational efficiency when you're dealing with the AWS cloud
-infrastructure. {{<img src="Picture4.png" title="" alt="" class="image-right">}}
+infrastructure.
 
 ### Summary
 
@@ -263,7 +264,8 @@ account structure without sacrificing security or compliance considerations. It
 harnesses the power of keystone AWS services to create, monitor, restrict, audit,
 assess, build, and manage AWS OUs and their associated AWS accounts.
 
-This remarkable tool negates the need for deep technical expertise to grow your
+{{<img src="Picture5.png" title="" alt="" class="image-right">}}This remarkable
+tool negates the need for deep technical expertise to grow your
 environment and provides a repeated and blueprint-driven framework for expansion.
 While Control Tower is a robust service, it might not always be the best tool
 for the job. Organizations that require greater customization levels, have
@@ -274,7 +276,7 @@ most cases, sometimes it pays to seek optimizations and leverage a spork-like
 utensil that blends multiple functionalities into a single tool. If your
 organization is looking to embark on a cloud project, be it proof of concept (POC)
 or complete enterprise migration, leveraging a qualified AWS partner or the AWS
-professional services team is never a bad idea. {{<img src="Picture5.png" title="" alt="" class="image-right">}}
+professional services team is never a bad idea.
 
 <a class="cta blue" id="cta" href="https://www.rackspace.com/sap">Learn more about our AWS services.</a>
 
