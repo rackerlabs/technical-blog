@@ -24,7 +24,8 @@ needs into an architectural design, leveraging AWS cloud infrastructure."
 published: true
 authorIsRacker: true
 categories:
-    - General
+    - AWS
+    - DevOps
 metaTitle: "AWS Outposts: A hybrid approach to designing hybrid environments&mdash;Part Two"
 metaDescription: "."
 ogTitle: "AWS Outposts: A hybrid approach to designing hybrid environments&mdash;Part Two"
@@ -171,12 +172,12 @@ reexamine their cloud approach. Now that you are aware of what makes up an
 Outposts rack, let's examine what it takes to get a unit ordered and routed to
 a data center near you.
 
-### Coming soon
+### Next
 
 [Part three of the series](https://docs.rackspace.com/blog/aws-outposts-a-hybrid-approach-to-designing-hybrid-environments-part-three/)
 is ready, so read on.
 
-<a class="cta red" id="cta" href="https://www.rackspace.com/sap">Learn more about our SAP services.</a>
+<a class="cta red" id="cta" href="https://www.rackspace.com/managed-aws">Learn more about our AWS services.</a>
 
 Use the Feedback tab to make any comments or ask questions. You can also click
 **Sales Chat** to [chat now](https://www.rackspace.com/) and start the conversation.

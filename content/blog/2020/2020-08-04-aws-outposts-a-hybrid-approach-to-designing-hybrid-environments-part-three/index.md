@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Aws Outposts: A hybrid approach to designing hybrid environments&mdash;Part Three"
+title: "AWS Outposts: A hybrid approach to designing hybrid environments&mdash;Part Three"
 date: 2020-08-04
 comments: true
 author: Wayne Zettler
@@ -24,10 +24,11 @@ needs into an architectural design, leveraging AWS cloud infrastructure."
 published: true
 authorIsRacker: true
 categories:
-    - General
-metaTitle: "Aws Outposts: A hybrid approach to designing hybrid environments&mdash;Part Three"
+    - AWS
+    - DevOps
+metaTitle: "AWS Outposts: A hybrid approach to designing hybrid environments&mdash;Part Three"
 metaDescription: "."
-ogTitle: "Aws Outposts:A hybrid approach to designing hybrid environments&mdash;Part Three"
+ogTitle: "AWS Outposts:A hybrid approach to designing hybrid environments&mdash;Part Three"
 ogDescription: "."
 slug: "aws-outposts-a-hybrid-approach-to-designing-hybrid-environments-part-three"
 
@@ -194,7 +195,7 @@ Here are my **top ten** takeaways from my review of this new AWS Service:
 9. Outposts offers a wide range of local services,  including EC2, ECS, EKS, EBS, RDS, EMR, and S3.
 10. Outposts addresses many of the inherent issues often associated with hybrid cloud infrastructures.
 
-<a class="cta teal" id="cta" href="https://www.rackspace.com/sap">Learn more about our SAP services.</a>
+<a class="cta teal" id="cta" href="https://www.rackspace.com/managed-aws">Learn more about our AWS services.</a>
 
 Use the Feedback tab to make any comments or ask questions. You can also click
 **Sales Chat** to [chat now](https://www.rackspace.com/) and start the conversation.
