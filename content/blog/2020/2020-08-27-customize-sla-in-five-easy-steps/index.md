@@ -117,11 +117,13 @@ A SLAM is a group of AADs defined for the Subledger modules.
 
 {{<img src="Picture6.png" title="" alt="">}}
 
+<br>
+
 #### Step 5: Attach the SLAM to the Ledger
 
 1. Select **Payables > Setup > Accounting Setups > Ledger Setup > Define > Accounting Setups**.
 
-{{<img src="Picture7.png" title="" alt="">}}
+      {{<img src="Picture7.png" title="" alt="">}}
 
 2. Attach the SLAM created in Step 4 and complete the Ledger setups.
 
