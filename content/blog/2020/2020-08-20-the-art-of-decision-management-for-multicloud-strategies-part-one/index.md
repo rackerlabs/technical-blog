@@ -148,7 +148,7 @@ following tasks:
 
 ### Continue
 
-Part two of this series is coming soon, and I'll add the link here. Stay tuned!
+To learn more, read [Part Two](https://docs.rackspace.com/blog/the-art-of-decision-management-for-multicloud-strategies-part-two/) of this series.
 
 Use the Feedback tab to make any comments or ask questions. You can also click
 **Sales Chat** to [chat now](https://www.rackspace.com/) and start the conversation.
