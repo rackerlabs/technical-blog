@@ -50,7 +50,7 @@ performance.
 With the addition of the Amsterdam and Frankfurt colocation data centers,
 Rackspace customers can now deploy their own hardware investments and various
 flavors of Rackspace Managed Private Cloud in concurrently maintainable data
-centers.This lets them leverage [RackConnect Global](https://www.rackspace.com/cloud-connectivity/rackconnect/global)
+centers. This lets them leverage [RackConnect Global](https://www.rackspace.com/cloud-connectivity/rackconnect/global)
 to directly connect with all the major public cloud zones across the continent
 over Rackspace’s private, low latency backbone. The *east-west* traffic flowing
 between the colocation workloads and the public clouds avoids the public internet,
