@@ -220,7 +220,7 @@ target platforms based on a list of scenario options. The business multiplier,
 which models the business impact, doubles the initial scores to capture more
 weight for this evaluation epic in the final recommendation.
 
-{{<img src="Picture1.png" title="" alt="">}}
+{{<img src="Picture5.png" title="" alt="">}}
 
 *Figure 5 – CDMP Stage 2 Cloud Platform Evaluation Schema*
 
