@@ -4,8 +4,11 @@ title: "Declare data independence within the new Rackspace colocation data cente
 date: 2020-09-01
 comments: true
 author: Michael Levy
-authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U8QQG71NC-dc99b5d4013a-192'
-bio: ""
+authorAvatar: 'https://s.gravatar.com/avatar/1f70cf15c8fb3ae717b55c61c5ad6eb5'
+bio: "Product Director for the Rackspace colocation and connectivity practices.
+Was part of core team that spun Cyxtera out from CenturyLink. Started career as
+a market research analyst at 451 Research covering the data center services
+space. Lives in Manhattan with wife, daughter, and dog."
 published: true
 authorIsRacker: true
 categories:
