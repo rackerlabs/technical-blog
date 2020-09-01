@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Rackspace best practise to clone a Peoplesoft environment"
+title: "Rackspace best practise to clone a PeopleSoft environment"
 date: 2020-09-02
 comments: true
 author: Gaurav Sehgal
@@ -10,11 +10,11 @@ published: true
 authorIsRacker: true
 categories:
     - General
-metaTitle: "Rackspace best practise to clone a Peoplesoft environment"
+metaTitle: "Rackspace best practise to clone a PeopleSoft environment"
 metaDescription: "Refreshing a PeopleSoft non-production environment with your
 production environment can become a monthly, weekly, or even daily activity,
 depending on the business needs."
-ogTitle: "Rackspace best practise to clone a Peoplesoft environment"
+ogTitle: "Rackspace best practise to clone a PeopleSoft environment"
 ogDescription: "Refreshing a PeopleSoft non-production environment with your
 production environment can become a monthly, weekly, or even daily activity,
 depending on the business needs."
@@ -22,7 +22,7 @@ slug: "rackspace-best-practise-to-clone-a-peoplesoft-environment"
 
 ---
 
-Refreshing a PeopleSoft non-production environment with your production
+Refreshing a PeopleSoft&reg; non-production environment with your production
 environment can become a monthly, weekly, or even daily activity, depending on
 the business needs.
 
