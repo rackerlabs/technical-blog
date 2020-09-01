@@ -6,7 +6,7 @@ comments: true
 author: Manoj Singh
 published: true
 authorIsRacker: true
-authorAvatar: 'https://media-exp1.licdn.com/dms/image/C5103AQE6tfHUm-whiw/profile-displayphoto-shrink_200_200/0?e=1593043200&v=beta&t=OPNBn8Pl4CYK6aqbqvXaTWs7n5TXPAglIB__-P4CuFk'
+authorAvatar: 'https://media-exp1.licdn.com/dms/image/C5103AQE6tfHUm-whiw/profile-displayphoto-shrink_400_400/0?e=1604534400&v=beta&t=OMamAJU8g0yLvfVqmQIJ8kpd_62B_8lTY-FnfykN3l0'
 bio: "I have over ten years of  IT experience in Apps DBA, Core DBA, Cloud DBA,
 Database Architect, and middleware as a IT Consultant. I'm also experienced in
 cloud architecture analysis, migration planning, and migration execution. My
@@ -25,7 +25,7 @@ Services (ORDS), including the steps to install APEX and configure ORDS."
 ogTitle: "Install and configure Oracle APEX and ORDS"
 ogDescription: "This post describes Oracle&reg; Application Express (APEX) and Oracle REST Data
 Services (ORDS), including the steps to install APEX and configure ORDS."
-slug: "install and configure oracle apex and ords" 
+slug: "install and configure oracle apex and ords"
 ---
 
 This post describes Oracle&reg; Application Express (APEX) and Oracle REST Data

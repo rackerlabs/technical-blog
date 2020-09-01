@@ -1,0 +1,818 @@
+Abhinav, Kumar
+authorAvatar: n/a
+bio: n/a
+
+Adan, Edwin
+authorAvatar: n/a
+bio: "Edwin Adan is a Senior Network Security Engineer with over 10 years of
+experience helping businesses achieve resilient and secure IP communications
+between their systems, data, people, and customers. Certified across multiple
+vendor technologies and always one to take pride in his work, Edwin continues
+to upskill and contribute to the hybrid and multi-cloud journeys of today's
+thriving organizations."
+
+Agarwal, Saurabh
+authorAvatar: 'https://s.gravatar.com/avatar/35520014182eaf668b9dad65bfc38c62'
+bio: "I am a SharePoint professional with 11 Years of work experience in
+development and administration in various flavors of SharePoint including
+SharePoint On-Prem versions and cloud-based technologies like Azure and
+SharePoint O365."
+
+Ahmed, Ilham
+authorAvatar: ''
+bio: n/a
+
+Ahmed, Sabeehah
+authorAvatar: 'https://s.gravatar.com/avatar/e0a659be1385d03db4ca9eed09b1826d'
+bio: "Sabeehah Ahmed is a Solutions Architect specializing in Google Cloud. She
+creates detailed design solutions to meet customer requirements. Sabeehah
+studied Biomedical Engineering at university, where she learned about medical
+devices. And she loves desserts, especially anything with chocolate."
+
+Anand, Vikrant
+authorAvatar: 'https://s.gravatar.com/avatar/98991c72835ea03135094fb2a1b6e3c0'
+bio: "Vikrant is a database consultant with extensive work in database technical
+support, production database administration, database migration, design and
+architecture for several business areas. He has vast experience interacting with
+national and international clients from various business areas and a good
+understanding of requirement analysis and database technology implementation."
+
+Arora, Raj
+authorAvatar: ''
+bio: n/a
+
+Bajpai, Ajay
+authorAvatar: 'https://s.gravatar.com/avatar/d2fdad3daba2885b34efce74a90bb1b1'
+bio: "I am a finance professional&mdash;Chartered Accountant (Equivalent to CPA)
+with 19 years of work experience managing a diverse team to achieve finance
+business process service delivery and migration, ERP, financial system
+implementation, customer management, development and delivery of strategic
+finance and technology investment roadmaps."
+
+Ballard, Charlie
+authorAvatar: 'https://s.gravatar.com/avatar/9ded7b3f5e28bcd3d61292b06475a631'
+bio: "Charlie is a *Certified Mulesoft Integration Architect* and an 18-times
+*Certified Salesforce Architect*. He has worked as a Salesforce and Mulesoft end
+user, administrator, developer, consultant, and architect since 2011 and has
+worked with organizations in a variety of industries across the globe."
+
+Batham, Bhupendra
+authorAvatar: 'https://s.gravatar.com/avatar/e64fc7787bc24eac1a8c969c4eceda44'
+bio: "Bhupendra Batham has more than 12 of experience with Oracle technology
+and currently works at Rackspace. He is enthusiastic, a quick learner, and
+always learns new technologies. His strengths include analytical thinking,
+problem solving, learning from mistakes, and working well under pressure."
+
+Bhatnagar, Amit Kumar
+authorAvatar: 'https://s.gravatar.com/avatar/c9c74dd30299675961e5160a4fbb05fe'
+bio: "Amit is a DBA with 14+ years of excellent professional exposure and
+experience in Oracle/Mysql/Vertica/Postgres/NoSQL(Cassandra)/MongoDB database
+servers, with extensive knowledge of the functional areas of business
+administration and the application of information technology for efficient
+management of business processes."
+
+Bhatnagar, Vinit
+authorAvatar: 'https://s.gravatar.com/avatar/60a7335f926a020472128ac628189940'
+bio: "Vinit Bhatnagar has 15+ years of experience in Oracle Financials. Vinit
+has worked on many implementations and supports projects across industries."
+
+Belke, Emily
+authorAvatar: 'https://s.gravatar.com/avatar/4a7de5d7772b14826cca8496c410ba88'
+bio: n/a
+
+Benmbarek, Mustapha
+authorAvatar: 'https://s.gravatar.com/avatar/0299204313e4fc8d8c722748fa21a6b2?s=80'
+bio: Mustapha works with startups and companies of any size to support their
+innovation. In his role as Solutions Architect at Rackspace, he leverages his
+experience to help people bring their ideas to life, providing guidance and
+technical assistance on cloud-based and AWS architectures.
+
+Bonig, Matthew
+authorAvatar: 'https://s.gravatar.com/avatar/17fefeb3c1832175bf6fbe9841368292'
+bio: "As a Senior Software Engineer at Rackspace, Matthew draws upon his 15
+years of web application development experience to help architect highly-available,
+fault-tolerant, scalable, and secure AWS environments composed of a wide range
+of services in the AWS portfolio, including Compute, Storage, Database,
+Networking, Developer Tools, and more. He is an AWS certified Solutions Architect.
+His hobbies include hiking the foothills of Colorado and walks with his wife
+and dogs."
+
+Booth, Karisa
+authorAvatar: 'http://0.gravatar.com/avatar/c5a8a633797f4b8c85b5b5bad605cd18'
+bio: "Karisa is an experienced Cloud Architect with a demonstrated history of
+working in the information technology and services industry. She is skilled in
+working with a variety of verticals including non-profit organizations, higher
+education, retail, and HLS as well as providing technical evaluations, program
+execution, Customer Relationship Management (CRM), event management, and
+marketing/technology. Karisa is passionate about cloud technology and marketing
+and about combining these to create unique solutions for clients."
+
+education, retail, and HLS; providing technical evaluations, program execution,
+Customer Relationship Management (CRM), event management, and marketing/tech.
+Karisa is passionate about cloud technology and marketing and combining these
+to create unique solutions for clients."
+
+Brinkman, Michiel
+authorAvatar: 'https://gravatar.com/avatar/e360e0501d74b0de5be9250474951354'
+bio: "Michiel Brinkman is a Solutions Architect working for Rackspace from
+Amsterdam, The Netherlands. Multi-cloud certified with a strong engineering
+background."
+
+Bose, Bhaskar
+authorAvatar: 'https://s.gravatar.com/avatar/c2846c487f5d07873a3ba9977ddb5f5b'
+bio: "I'm passionate about the latest in tech and everything digital. I love
+music, reading, cooking, living in interesting times (aren't we all?), and
+learning new skills."
+
+Bryden, Tony
+authorAvatar: 'https://gravatar.com/avatar/21c63797cd8d01de8db2bd0512f8e6d1'
+bio: "Tony Bryden is a nine-year Racker and currently leads the vision behind
+the Rackspace ServiceNow Platform and ITSM modernization. Formerly, he was the
+Automation Product Manager and was also vital in the recent deployment by Rackspace
+of MoogSoft&trade;."
+
+Carbone, Denise
+authorAvatar: 'https://s.gravatar.com/avatar/621ec460934803c15e9b2c4ff6cbf75f'
+bio: n/a
+
+Carter, Nikki
+authorAvatar: 'https://gravatar.com/avatar/3177b82ffcbe59f1f3e6e155d3c94e7a'
+bio: "Nikki Carter is a Content Strategist on the Digital Marketing Services
+Team at RelationEdge. She has extensive experience creating and editing content
+and marketing assets for a variety of verticals, including healthcare, technology,
+and wellness. Nikki is passionate about freedom, telling the truth, and supporting
+other women/non-binary folks of color."
+
+Chauhan, Dushyant
+authorAvatar: 'https://gravatar.com/avatar/1817fa128828e2dbdd87e8e713a0cac0'
+bio: "As a Racker, I am having a good experience as Oracle APPS DBA and
+exploring new technology."
+
+Colbert, Charlotte
+authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U0DLJC8ES-600c79e3c0b5-512'
+bio: "I am a 13+year Racker and am currently a Product Manager V for the RAS
+Digital experience portfolio."
+
+Cortez, Teresa
+authorAvatar: 'https://secure.gravatar.com/avatar/889f88c8dacf485d4c00f7c6fcfd51f8'
+bio: "Teresa Cortez is a Product Manager working with Dynamics 365 from Microsoft.
+Formerly she implemented Dynamics 365 Business Central as a Senior Consultant
+and has been implementing Microsoft ERP solutions for the past five years. Her
+passion to learn continuously and to provide customers with enhanced business
+process solutions, which is what guided her to the technology services industry.
+Teresa holds a Business-Economics degree from the University of San Diego, and
+a Master of Business Administration degree from California State University, San
+Marcos. She also formerly served as the Vice President of Stella’s Kids Association,
+a non-profit organization. In her free time, Teresa enjoys camping (or better yet,
+glamping) at the beach or the sand dunes with her family."
+
+Croce, Steve
+authorAvatar: 'https://gravatar.com/avatar/56d03e2d0f853cff39c129cab3761d49'
+bio: "As Senior Product Manager for the ObjectRocket Database-as-a-Service
+offering and Head of User Experience for ObjectRocket, Steve oversees the
+day-to-day planning, development, and optimization of ObjectRocket-supported
+database technologies, clouds, and features. A product manager by day, he still
+likes to embrace his engineer roots by night and develop with Elasticsearch,
+SQL, Kubernetes, and web application stacks. He's spoken at
+KubeCon + CloudNativeCon, OpenStack summit, Percona Live, and various Rackspace
+events."
+
+Croteau, Paul
+authorAvatar: 'https://en.gravatar.com/userimage/1316548/544d0908ada5d93056e89afc7d240c23.png?size=200'
+bio: "Paul Croteau is the Channel CTO at Rackspace, where he works with partners
+to enable their understanding of technology, the Rackspace portfolio, and the
+state of the industry. With more than 25 years of information technology
+experience including roles in engineering, sales, account management, and
+technical training, Paul’s experience helps him relate with partners and
+customers at all levels within an organization. His energy and passion for
+technology have been helpful in creating successful sales engagements and
+exceptional customer experiences with partners of all sizes. Paul originally
+joined Rackspace in 2005. Previous employers include AT&T, HP, and Accenture.
+Paul is based in San Antonio, Texas. Outside of work, Paul is a professional
+musician and composer and is married with two teenagers and a house full of pets."
+
+Crumpler, Shaun
+authorAvatar: 'https://secure.gravatar.com/avatar/c26423ec960c158dbdbcbee1f61ea7b5'
+bio: "Shaun Crumpler is a 7 year Racker, who focuses on applying his MBA to the
+technical space to evolve and transform processes, promoting change and agility.
+His technical expertise spans Linux operating systems, the Rackspace Public
+Cloud infrastructure, and the AWS infrastructure.  He was awarded the Fanatical
+Jacket, Rackspace’s highest honor, because of the focus that he places on
+fanatically supporting not only external customers, but internal customers as well."
+
+Dhiman, Vivek
+authorAvatar: 'https://s.gravatar.com/avatar/d29da50d9ece9c12e208afaa0de68cd5'
+bio: "I've been a Racker for eight years and have 13+ years of Oracle DBA
+experience. Currently, I work on Oracle, MongoDB, and other NoSQL databases."
+
+Dihingra, Sundeep
+authorAvatar: 'https://s.gravatar.com/avatar/48fed1de86eefae0457dffea1b4bcf64'
+bio: "Working as a Senior DBA for the last 15 years, Sundeep has solid expertise
+in almost all Oracle-related products, services, and issues."
+
+Dixit, Narendra
+authorAvatar: 'https://s.gravatar.com/avatar/2ea19c113ac5dd7ab4879607f1468950'
+bio: "Narendra is a passionate Oracle-technologies explorer with rich technical
+experience covering fourteen years in Oracle Technologies. These include Oracle
+Applications, Oracle E-Business Suite, Oracle Database administration, Oracle
+Fusion Middleware, Oracle SOA Suite administration and integration with Oracle
+Applications, Oracle Demantra administration and integration with Oracle ASCP,
+Oracle Cloud Infrastructure, and Oracle DBaaS administration."
+
+Dogra, Rohit
+authorAvatar: 'https://s.gravatar.com/avatar/c1212a2a656156405b4773b60514be2f'
+bio: "I've only worked with Rackspace for a year, but it feels like four years!
+Before Rackspace, I worked under the leadership of Tricore solutions. Currently,
+I'm an Oracle Database administrator, and previously, I was an Oracle Apps DBA.
+I have ten years of experience, including six years as an Core Oracle DBA and
+two more years as an Oracle Apps DBA."
+
+Drown, Daniel
+authorAvatar: 'https://s.gravatar.com/avatar/3995b2d776949a99f3fdae386eca40ce'
+bio: "Back in 2001, Dan joined Datapipe as employee number 23. Aware that technology
+can be confusing, Dan liked that Datapipe's mission was to make it easier for
+people to get their internet presence up and running. Our customers must have
+liked that too, as the company grew quickly. There have been many challenges
+along the way, and Dan has enjoyed learning new skills and technologies to adapt
+to the industry's changes. Now, nineteen years later Dan is proud to be a Racker,
+and is committed to Rackspace's vision of being the best service provider."
+
+Engle, Joe
+authorAvatar: ''
+bio: n/a
+
+Evans, Chris
+authorAvatar: ''
+bio: "Chris Evans is a Senior Cybersecurity Architect with a desire for securing
+environments. In his current role at Rackspace, he architects the managed
+security operations, ensuring Rackspace’s customers are secured now and prepared
+for the future. Chris has more than 13 years’ experience dealing with IT,
+network engineering, security operations, security architecture, and management
+of technical teams and capabilities. Chris spent 10 years in the military,
+defending networks from Advanced Persistent Threats, and has managed security
+operations teams across all levels. You can follow Chris on LinkedIn at
+linkedin.com/in/Christopher-a-evans."
+
+Friedman, Jordan
+authorAvatar: 'https://s.gravatar.com/avatar/f2f71a634ccd1e79ea3b3b317f8b4161'
+bio: n/a
+
+Garratt, Nick
+authorAvatar: 'https://s.gravatar.com/avatar/749cf70eafe03795015019c1047be85f'
+bio: "Nick Garratt is a Principal Architect in the Rackspace Managed Public
+Clouds Product Architecture Team."
+
+Gates, Jason
+authorAvatar: 'https://s.gravatar.com/avatar/ff2ec8ee582b2e949109b7fd353734f2'
+bio: n/a
+
+Gembali, Balaganesh
+authorAvatar: 'https://secure.gravatar.com/avatar/ce5ceb1aa8757ef235ddaa21265863eb'
+bio: "I am a Software Techie by profession. I've been an Oracle Database
+Administrator since I began my career and worked for top IT companies. I have
+14 years of IT experience and currently work for Rackspace as a Senior Oracle
+Apps DBA. I am passionate about electronic gadgets, travelling, exploring, and
+tasting delicious food."
+
+Greguska, Kari
+authorAvatar: ''
+bio: n/a
+
+Gupta, Nihar
+authorAvatar: n/a
+bio: "Nihar Gupta, Director of Data Solutions. With over 10 years of experience
+working with high-growth SaaS/Tech companies, Nihar has helped companies achieve
+their growth objectives through product management, strategic partnerships,
+corporate development efforts, and executing cross-functional strategic initiatives.
+At Rackspace, Nihar played an integral role in crafting the company's database
+strategy following the ObjectRocket acquisition through a build/buy/partner
+framework for approaching new database markets.  Since then, he has been on the
+ObjectRocket leadership team focused on product management and executing critical
+partnerships that underpin 70%+ of ObjectRocket revenue and hasmost recently been
+focused on building out Rackspace's Artificial Intelligence and Machine Learning
+(AI/ML) solution. With a significant breadth of experience across strategy,
+finance, product, sales and marketing, Nihar currently serves as the executive
+leader for Rackspace Data Solutions.Prior to Rackspace, Nihar spent 4 years at
+Deloitte Consulting and led high performing teams as a Management Consulting
+Manager.  Nihar has an MBA of University of Texas-Austin and a bachelor’s degree
+from UC-Berkeley in Electrical Engineering and Computer Science."
+
+Gupta, Praveen
+authorAvatar: 'https://secure.gravatar.com/avatar/9b15aeb3fffbd8eb9f6040435c24cc21'
+bio: "I've been a Racker for nine years and have 10+ years of Oracle DBA experience.
+Currently, I work on Oracle, MongoDB, and other NoSQL databases."
+
+Hackney, Aaron
+authorAvatar: 'https://s.gravatar.com/avatar/df523dfa8824b1c0046596f3ab981a9c'
+bio: "Aaron Hackney is a Principal Architect passionately focused on next-generation
+firewall, application delivery, network security, and cybersecurity at Rackspace.
+Aaron holds a B.S. from Illinois State University, an M.S. in Computer Science
+from the University of Illinois, and is a San Antonio LSA Class 38 alum. You can
+follow him at @hacksbrain512 on Twitter, and he blogs at https://hacksbrain.com
+on cybersecurity, beer, travel, and photography."
+
+Harris, Richard
+authorAvatar: 'https://www.rackspace.com/sites/default/files/authors/Untitled%20design_0.png'
+bio: "Richard Harris is a Virtualization Engineer IV on the Technology and
+Engineering Services team at Rackspace. Richard joined Rackspace in 2004 working
+on Windows Server 2000 and 2003 and has been working in IT for over 25 years.
+A VMware vExpert, Richard has been working with VMware for over 11 years and
+spoke at VMworld Barcelona in 2019 regarding VMware Skyline. When not working,
+Richard enjoys spending time in his RV with his family and riding motorcycles."
+
+Hatch,  Trey
+authorAvatar: n/a
+bio: "I build things, large and small, digital and tangible. Find me writing
+about tech, building new things, and experimenting with my 3d printer."
+
+Hawthorn, Rob
+authorAvatar: 'https://s.gravatar.com/avatar/c44cfe09d207a9f1529d2280dec8583a'
+bio: n/a
+
+Hersh, Emilie
+authorAvatar: 'https://s.gravatar.com/avatar/9503bfb5fa8e3de9f007e5c12591d6d8'
+bio: n/a
+
+Heywood, Celia
+authorAvatar: 'http://0.gravatar.com/avatar/76b6d0b3a7daec2a8e3e25f17ff7ead7'
+bio: n/a
+
+Holloway, Keiran
+authorAvatar: 'https://s.gravatar.com/avatar/02d9e9c7b2e66ab7f451198e22374be1'
+bio: "Keiran Holloway is a Senior Lead Infrastructure Engineer focusing on Amazon
+Web Services and has been with Rackspace for 6 years. His primary focus is
+ensuring that all AWS solutions are designed and implemented in a way which are
+both fit for purpose but also closely aligned with key business outcomes. Keiran
+is responsible for working with some of the largest enterprise clients within
+the EMEA region and brings almost 20 years of hosting and infrastructure experience.
+Throughout this extensive past, Keiran built out a strong understanding of
+best-of-breed cloud practices, thought leadership, and in-depth domain knowledge
+across various technology platforms. Find out more at LinkedIn:
+[https://www.linkedin.com/in/keiran-holloway](https://www.linkedin.com/in/keiran-holloway).
+
+Hong, James
+authorAvatar: n/a
+bio: "James has always been interested in anything and everything technology
+since he was 5 years old. Started out with just exploring the internet and
+tinkering with computers during the dial-up era to learning programming in junior
+high and eventually graduating from University of Illinois Urbana-Champaign with
+a bachelor’s in Computer Science. James is currently a Product Manager at
+ObjectRocket creating exciting new features for Redis and Elasticsearch."
+
+Hornbeck, Ash
+authorAvatar: https://www.gravatar.com/avatar/f96915d3f29e5623f9a9ff8c7cb3148f'
+bio: "Ash Hornbeck is a Sr. Product Architect on the Rackspace Managed Public
+Clouds Product Architecture Team."
+
+Johnson, Derek
+authorAvatar: 'https://s.gravatar.com/avatar/19e8fe9c0b86b792f8065cad11364cf7'
+bio: "An accomplished product development fanatic with an emphasis on execution,
+Derek has significant product management, product marketing, and program management
+experience across a broad range of industries with a track record for growing
+businesses and product lines from the ground up. Under Derek’s management, the
+ObjectRocket MongoDB and Redis offering grew extensively. In 2019, Derek took
+over developing the Rackspace DBA Services offering to flesh out the capabilities
+while working side by side with sales stakeholders, solutions architects, customer
+success managers, and service delivery engineers."
+
+Kalkhundiya, Kailash
+authorAvatar: 'https://gravatar.com/avatar/36ea6795bf5e6bfc103f34a38a303060'
+bio: "I'm an Oracle DBA with experience on the different flavors of Oracle RDBMS.
+I'm also certified on the AWS cloud platform and PostgreSQL. I am passionate
+about learning new things in different RDBMS environments and about Python, as
+a programing language."
+
+Kaminski, Brooks
+authorAvatar: 'https://gravatar.com/avatar/e7780474c27597a4395ac5eab894ab36'
+bio: n/a
+
+King, Brian
+authorAvatar: 'https://gravatar.com/avatar/f1f1a0738d42c8fa0a92ccded0fe4c97'
+bio: "A Racker since 2011, Brian specializes in Openstack, virtualization, and
+IaaS. When not working, he enjoys electric guitars, pinball, and karaoke."
+
+Kolb, Dan
+authorAvatar: 'https://gravatar.com/avatar/fbdcdc8fcc8d2ae995d763dc6ed144d4'
+bio: "Dan Kolb is a Software Developer in Test in the Rackspace Private Cloud
+Powered by VMware. Dan spends his time improving products and services through
+his passion and evangelization of automation and open source software."
+
+Krawczynski, David
+authorAvatar: 'https://s.gravatar.com/avatar/99399c9f2a456f6f1be216d6ddde8b11'
+bio: "Finding a balance for family, old cars, and IT while living by my mantra
+that 'luck is equal parts strength and spirit'!"
+
+Krpan, Janice
+authorAvatar: 'https://s.gravatar.com/avatar/7662b14a4b4ce42f1a0775b2a93634c4'
+bio: n/a
+
+Kukreja, Sharad
+authorAvatar: 'https://s.gravatar.com/avatar/3533f66c2c0826e45a3cf9b8c64ef617'
+bio: n/a
+
+Kumar, Anil
+authorAvatar: 'https://s.gravatar.com/avatar/3f1352f21438061d35ff20470433f3da'
+bio: n/a
+
+Kumar, Binit
+authorAvatar: 'https://s.gravatar.com/avatar/fa095e4b2e5de083e30a714448e71451'
+bio: "Accomplished Database Consultant with years of in-depth knowledge and
+experience in building and administering business solutions based on Oracle and
+NoSQL (MongoDB, Couchbase and Cassandra) database engines and technologies."
+
+Kumar, Gourav
+authorAvatar: 'https://s.gravatar.com/avatar/ea51707a4a182959177d9b8244835571'
+bio: "An Azure professional, blog writer, and community contributor with a soft
+corner of PowerShell. I'm learning Terraform and travelling my road to be on top."
+
+Kumar, Manish
+authorAvatar: 'https://s.gravatar.com/avatar/7f73ff8ddbc33505beb7a14033611a06'
+bio: "I've been a Racker for three years and have 14+ years of Oracle DBA
+experience. Currently, I work on Oracle, MongoDB, and other NoSQL databases."
+
+Kumar, Sanjiv
+authorAvatar: n/a
+bio: "Sanjiv is an Application Support Architect who is responsible for onboarding
+clients with regard to implementation and operations of the eCommerce platform."
+
+Kumar, Vikas
+authorAvatar: 'https://s.gravatar.com/avatar/02d1f0f4f3f24ee84e33211a51a0b237'
+bio: "I've been a Racker for two years and have more than ten years of Oracle&reg;
+DBA experience. Currently, I work on Oracle, MongoDB&reg;, and other NoSQL databases."
+
+Lara, Roman
+authorAvatar: 'https://s.gravatar.com/avatar/e9ef88c66315a7f955c4352a7ad2182a'
+bio: "Roman Lara is a Senior Engineer on the Rackspace specialized DDoS Response
+Team and has been a Racker in various roles since 2009. He is responsible for
+driving the design, build, and maintenance of Rackspace DDoS Mitigation
+infrastructure and services. Roman is a high-energy, hands-on leader whose
+knowledge and experience of threat trends helps develop and create powerful
+mitigation strategies through Fanatical Support."
+
+Levy, Michael
+authorAvatar: 'https://s.gravatar.com/avatar/1f70cf15c8fb3ae717b55c61c5ad6eb5'
+bio: "Product Director for the Rackspace colocation and connectivity practices.
+Was part of core team that spun Cyxtera out from CenturyLink. Started career as
+a market research analyst at 451 Research covering the data center services
+space. Lives in Manhattan with wife, daughter, and dog."
+
+Mahajan, Mithun
+authorAvatar: 'https://s.gravatar.com/avatar/c109845839f4934583f4a5438b463064'
+bio: "Hi There ! I’m Mithun, a passionate Oracle Database Administrator working
+with Rackspace. I get excited to get into database-related challenges and work
+on then till they're resolved. When I'm free, I like watching movies, gardening,
+and playing video games. Join me as I learn, as I connect, and as I find DBA
+solutions."
+
+Malik, Sandeep
+authorAvatar: 'https://gravatar.com/avatar/76d7fd8c7c9571af83722bff445e0ebd'
+bio: "I am a senior Database Administrator, who works on Oracle Database
+(9i,10g,11g,12c,19c), Oracle Apps (E-Business Suite - 11i, R12.1), SQL Server
+(2012,14,16,17), Cassandra, MongoDB and Hadoop administration."
+
+Mattson, Josh
+authorAvatar: 'http://www.gravatar.com/avatar/791617263c70278859e1b26c15d13eab'
+bio: n/a
+
+McLaughlin, Mitchell
+authorAvatar: authorAvatar: 'https://media-exp1.licdn.com/dms/image/C5603AQH5r2hzui051w/profile-displayphoto-shrink_100_100/0?e=1596672000&v=beta&t=ar809F1WbFhkJXAvxbf12x6Dh0PmTaGgyeQqgKrATWA'
+bio: "Mitchell is proficient in Salesforce CRM development, administration, and
+analysis with 5+ years of experience implementing and developing complex solutions
+for enterprise clients. Mitchell is an 8x Salesforce certified developer and
+Analytics Champions group member specifically focused on Sales Cloud and Einstein
+Analytics. His background in Full Stack and .NET development also makes him an
+ideal candidate to help with Salesforce Integrations."
+
+Messerli, Antony
+authorAvatar: 'https://www.gravatar.com/avatar/53b5341ace963caa36117f64a3353185'
+bio: "Antony Messerli is a Principal Engineer at Rackspace who heads up the
+Global Infrastructure Engineering team responsible for hardware development and
+engineering.  He is a 17 year Racker with a background in hardware development,
+software engineering, and building large scale IaaS clouds."
+
+Mick, Jason
+authorAvatar: n/a
+bio: "I have been with Rackspace Global Infrastructure Engineering for 9 years.
+During my tenure I have focused on the design and development of compute platforms
+that optimize scale and cost for Rackspace customers. Leveraging strong partner
+relationships, I also lead the majority of our future hardware technology
+investigations."
+
+Mishra, Manoj
+authorAvatar: 'https://s.gravatar.com/avatar/9498305cda9dc4fe9d8f5873b09ff1e2'
+bio: n/a
+
+Mora, Marcus
+authorAvatar: 'https://s.gravatar.com/avatar/fda78cf603258190627b41b20b3f3d61'
+bio: "Marcus Mora is a seven-year Racker and original member of the Process
+Engineering Group (PEG). Marcus was hired as a Junior Process Engineer, rose to
+Senior Engineer, and now manages PEG at Rackspace. Marcus started in consultative
+sales, and he uses those skill sets in combination with his process engineering
+experience to assist the team. Marcus's strengths include responsibility,
+achiever, and relator, which all contribute to his strong desire to grow the
+Rackspace family and strengthen its service and usefulness to internal and
+external customers."
+
+Moussa, Michael
+authorAvatar: 'https://s.gravatar.com/avatar/81ae346c8dd994251b697bea342c8fd7'
+bio: "As a Senior Product Architect at Rackspace, Michael draws upon his 20
+years of web application development experience to help architect highly-available,
+fault-tolerant, scalable, and secure AWS environments composed of a wide range
+of services in the AWS portfolio, including Compute, Storage, Database,
+Networking, Developer Tools, and more. He is an AWS APN Ambassador and holds
+several AWS certifications. In his spare time, he enjoys homebrewing his
+award-winning beer, cycling, and trying to find less expensive hobbies."
+
+Myoung,Sam
+authorAvatar: 'https://s.gravatar.com/avatar/7632808463e741b328ea3ce18f80b935'
+bio: "Sam Myoung is a product manager with over 11 years of experiences in the IT
+industry with an emphasis on data analytics."
+
+Olivier, Sarah
+authorAvatar: 'https://s.gravatar.com/avatar/17c40729ddeea22c93734e4d0870fb85'
+bio: n/a
+
+Pandey, Amit kumar
+authorAvatar: 'https://s.gravatar.com/avatar/c6bddf3d409b0e1975d01962a7317e2b'
+bio: n/a
+
+Parsons, Will
+authorAvatar: 'https://gravatar.com/avatar/7e23218fb3986389a7eb5a7d488d6cc1'
+bio: "Will Parsons is a Solutions Architect who has worked in technical and
+customer-facing roles at Rackspace since 2008. Will helps businesses of all sizes
+design both dedicated and cloud environments for websites and applications, with
+an emphasis on performance and security."
+
+Patel, Tejashkumar
+authorAvatar: 'https://s.gravatar.com/avatar/93f8a2afa4b179946cc23ac18a0ff8a5'
+bio: "I am a Database Administrator with more than a decade of experience in
+various RDBMSs, Big Data and NoSQL database technologies, and the cloud platform."
+
+Peterson, Taylor
+authorAvatar: ''
+bio: n/a
+
+Piva, Lauren
+authorAvatar: 'https://s.gravatar.com/avatar/bbd32264e5b49be8f1515f6a64b1f1e2'
+bio: n/a
+
+Plummer, Adam
+authorAvatar: 'https://s.gravatar.com/avatar/c2945c57e1812f8b455101e1a2e49cac'
+bio: "I am continually energized by the increasing importance and relevance of
+technology's place in solving business challenges. My mission is to uncover
+opportunities to help companies realize true business transformation, with
+technology as a key catalyst."
+
+Ranganathan, Nirmal
+authorAvatar: 'https://s.gravatar.com/avatar/152da1a0a80d81265a5cd1b40e16d465'
+bio: "Nirmal is a Principal Architect and Product Manager at Rackspace
+responsible for building Rackspace's Data Analytics and Artificial Intelligence
+and Machine Learning solutions as part of our Data Services portfolio. Nirmal
+works closely with our Alliances, Partners, and Customers to create the most
+effective and efficient analytics and machine learning solutions to enable our
+customers to focus on driving a data driven culture within their organizations
+and become leaders in their respective segments. Before this, Nirmal was a
+consultant in our Professional Services organization and provided recommendations
+and solutions for a wide variety of industry verticals around large scale databases
+and data processing, data analytics, and data warehousing in the cloud and machine
+learning/artificial intelligence. Nirmal has a strong background in cloud and
+distributed systems, having contributed to various open-source projects from
+Cassandra to OpenStack."
+
+Rathod, Sunil
+authorAvatar: 'https://s.gravatar.com/avatar/c3a915969820000d5dc4fc4f04ad8276'
+bio: "I enjoy working as Oracle Apps DBA with more than 12 years of experience
+in various Oracle technologies."
+
+Ross, John
+authorAvatar: 'https://s.gravatar.com/avatar/1e38fb66f5cebe18724102a37f3e1caf'
+bio: "John Ross is a Senior Product Manager at Rackspace for SAP Solutions and
+Services. He has more than 20 years of experience in technology working with a
+wide variety of customers across multiple industries. John is based in Orlando,
+Florida. Follow him on Twitter at **@johnrossjr**."
+
+Rozin, Maxim
+authorAvatar: ''
+bio: "Maxim Rozin is a Principal Engineer and a Product Manager at Rackspace,
+where he has worked since 2009. He spent the last 18 years in IT and holds all
+five of the Associate and Professional-level AWS certifications. When he is not
+at work, Maxim is likely snowboarding or hiking in the Alps."
+
+Rudley, Jimmy
+authorAvatar: 'https://en.gravatar.com/userimage/151177997/5bed7e07ee47533cbd34b951d463bcb7.jpg'
+bio: “Jimmy Rudley is an Azure Architect at Rackspace and an active member of
+the Azure community. He focuses on solving large and complex architecture and
+automation problems within Azure."
+
+Shah, Shyamal
+authorAvatar: 'https://s.gravatar.com/avatar/a2fa9027325fb8e285d4c677ecf715e9'
+bio: "Shyamal leads a team of Oracle&reg; experts that provide technical managed
+services for 100+ Oracle enterprise resource planning (ERP) customers across
+different industries and verticals. Shyamal is an Oracle thought leader and played
+an integral role in building our OCI practice within Rackspace."
+
+Sharma, Anubhav
+authorAvatar: 'https://s.gravatar.com/avatar/3ea62cab3c36ad848af5e53cf7610516'
+bio: "I’m Anubhav, an Oracle Database Administrator working with Rackspace.
+Currently, I work on Oracle, MongoDB, and other NoSQL database technologies."
+
+Sharma, Hemant
+authorAvatar: 'https://s.gravatar.com/avatar/62a512ada4789514ddecc061e501be64'
+bio: "I am a Sr. Database Administrator with many years of experience as a DBA
+in the IT industry. I share my knowledge about the latest database technologies
+via my blog in a simple and effective way."
+
+Sharma, Ravi kant
+authorAvatar: 'http://0.gravatar.com/avatar/c7776b42759c729500163fc6588221ac'
+bio: "I am ambitious and driven. I thrive on challenge and constantly set goals
+for myself, so I have something to strive toward. I’m not comfortable with
+settling, and I’m always looking for an opportunity to do better and achieve
+greatness."
+
+Shukla, Abhishek
+authorAvatar: 'https://2.gravatar.com/userimage/191238188/88086f4370c46cbf11e5171378bd77b1'
+bio: "I am an Oracle Apps DBA with over 14 years of experience, currently
+associated with Rackspace Technology. Other than technology, nature excites me.
+I'm avidly into travelling and bonsai making. Presently based in India."
+
+Singh, Kanwerjeet
+authorAvatar: 'https://s.gravatar.com/avatar/f73f72ee82679fc3d9e52f277a83e410'
+bio: "Hey, I’m Kanwer: Oracle DBA and always looking to explore new database technologies."
+
+Singh, Manoj
+authorAvatar: 'https://media-exp1.licdn.com/dms/image/C5103AQE6tfHUm-whiw/profile-displayphoto-shrink_400_400/0?e=1604534400&v=beta&t=OMamAJU8g0yLvfVqmQIJ8kpd_62B_8lTY-FnfykN3l0'
+bio: "I have over ten years of  IT experience in Apps DBA, Core DBA, Cloud DBA,
+Database Architect, and middleware as a IT Consultant. I'm also experienced in
+cloud architecture analysis, migration planning, and migration execution. My
+proven effectiveness in building good client interaction and partnering with
+senior business leaders serve me well, as do my excellent facilitation skills
+in conducting walkthroughs, brainstorming sessions, and core team meetings. I'm
+an OCI-certified cloud DBA with expertise in Oracle Database 9i, 10g, 11g,12c
+and Oracle E-Business Suite 11i ,R12&R12.2. I also have extensive experience in
+release and change management, project management, and IT infrastructure."
+
+Smith, Andy
+authorAvatar: n/a
+bio: "Andy Smith has been with Rackspace since 2018 and is currently the Senior
+Product Manager for Rackspace’s Managed VMware Cloud on AWS solutions. Andy
+brings more than 20 years’ experience working in IT and for IT solutions
+companies, and has spent the last decade helping customers deploy and get the
+most out of private and hybrid cloud solutions. When not working, Andy enjoys
+hiking, skiing, and playing and watching hockey."
+
+Sprofera, Phil
+authorAvatar: 'https://nam12.safelinks.protection.outlook.com/?url=https%3A%2F%2Fmedia-exp1.licdn.com%2Fdms%2Fimage%2FC4D03AQEqRloibv206w%2Fprofile-displayphoto-shrink_100_100%2F0%3Fe%3D1603324800%26v%3Dbeta%26t%3DVccxZYcP1H4xef2V5l5PnE4ug_fFTSA0yLR-W07LXjE&data=02%7C01%7Ccat.lookabaugh%40RACKSPACE.COM%7Cafff862224344a46a28508d84552eb8b%7C570057f473ef41c8bcbb08db2fc15c2b%7C0%7C0%7C637335569727849616&sdata=YIp%2BFr7gOWxGn31BoHTjPTHgl%2Fwc3UseifQEd1bcGz4%3D&reserved=0'
+bio: "I'm a 12+ year Racker&mdash;all in the Networking and Security roles&mdash;
+with 20+ year experience in security field. I'm at my best when I am teaching
+folks about technology and processes drawn from the years of knowledge that I
+have compiled over time. Currently, I'm perusing the CISSP certification using
+those years of knowledge. I enjoy volunteering my time through my affiliation
+with the 501st costuming group. Helping sick children is a passion of mine, and
+I enjoy fund raising for Extra-Life.org and Make-a-Wish (wish.org)."
+
+
+Srivastava, Deepanker
+authorAvatar: 'https://s.gravatar.com/avatar/305aead3fa98ed419b5b47b2f6c9b780'
+bio: n/a
+
+Stoyka, Matt
+authorAvatar: 'https://s.gravatar.com/avatar/d08dd094c720fa0e4689178952959231'
+bio: n/a
+
+Stubbs, Walter
+authorAvatar: 'https://0.gravatar.com/avatar/82a7a0dd2ccc5b707da699191be87ecf'
+bio: "Walter Stubbs is a Microsoft Certified Solutions Associate, and one of
+the Lead Email Technicians in Cloud Office. Walter joined Rackspace in 2018 and
+has been supporting the Office 365 environment from day one. His passion for
+helping others combined with his knowledge of Office 365 helps him provide a
+Fanatical Experience for Rackspace customers everyday."
+
+Tharmarajah, Nilojan
+authorAvatar: 'https://s.gravatar.com/avatar/685794a71af4ba6a72bb679304669e9a'
+bio: "I am a Specialist Solutions Architect at Rackspace. In my younger days, I earned a degree in
+Information Systems from City University, London, United Kingdom. I have close to 15 years of technical
+IT experience in various industries, from maintaining data centers for multiple companies to deploying
+cloud infrastructure for a global media company. With my experience, I now help companies from various
+industries develop solutions for their environment in the cloud and act as a sounding board to advise
+customers on their technical challenges."
+
+Toews, Everett
+authorAvatar: 'https://www.gravatar.com/avatar/c1a75adb52f40016a480cee292527895'
+bio: “Everett Toews a Developer Advocate at Rackspace making the cloud easy to
+use for developers and operators. Sometimes dev, sometimes ops, and sometimes
+advocate. He's interested in composing systems using APIs, SDKs, CLIs, and
+Docker. He likes to teach what he learns along the way.”
+
+
+Vats, Nagendra
+authorAvatar: 'https://s.gravatar.com/avatar/2d0745dbb9f09137658e8c05b7fec824'
+bio: "I am an IT professional with keen interest in Data Science and reporting.
+Love to Drive, listen music and follow Cricket."
+
+Verma, Vivek
+authorAvatar: 'https://s.gravatar.com/avatar/ea77be7be4ebf7aed353087f677104be'
+bio: "I'm a consultant working on Oracle E-Business Suite and related products.
+As an Amazon Cloud Solutions Architect Associate, I am passionate about the
+Cloud Platform. Python and Chef are works in progress."
+
+Vinodh, Chakrala
+authorAvatar: 'https://s.gravatar.com/avatar/72046bfed0f329b284a8992ea3fc920b'
+bio: "I am a SAP BASIS administrator. I have hands-on experience with SAP&reg;
+end-to-end implementations, migrations, installations, and upgrades on different
+databases (such as HANA&reg;, Oracle&reg;, MSSQL&reg;, Sybase&reg;, DB2&reg;,
+and Max DB) and operating system platforms (including Windows&reg; and Linux&reg;).
+I also have expertise on SAP components such as S4 HANA, ECC, BW, Solution
+Manager, PO, Fiori, SAP Cloud connector, Web Dispatcher, and BOBJ."
+
+Vue, Winnie
+authorAvatar: ''
+bio: n/a
+
+Whitehead, Chris
+authorAvatar: 'https://s.gravatar.com/avatar/286b19b54ad30b4f0d25a4ac679744a8'
+bio: n/a
+
+Wiese, Joe
+authorAvatar: 'https://s.gravatar.com/avatar/0efd04b476144df76914f2eb1fbf86de'
+bio: "I have been developing server solutions for Rackspace and our customers
+since 2006. I began my time at Rackspace in our original data center in downtown
+San Antonio in 2004. I also spent six years in the US Navy, where I worked on
+the most advanced weapons system in the Navy at that time."
+
+Wilensky, Jeff
+authorAvatar: 'https://s.gravatar.com/avatar/017eaa68c10c8d1b95aacf7d34557a28'
+bio: n/a
+
+Wilfred Wah
+authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-UR3DD1J83-93420d85dfea-512'
+bio: "Wilfred is a Principal Consultant of Advisory Services, Rackspace
+Technology North Asia. His area of expertise includes cloud migration assessment,
+cloud economics, people transformation, cloud adoption strategy, and the
+transformation roadmap. He has more than 15 years of consultancy experience with
+major vendors such as Dell/EMC, SAS, and AWS before joining Rackspace."
+
+Winfrey, Lorenzo
+authorAvatar: 'https://s.gravatar.com/avatar/4946b45863e87d1a876eeb2873af2593'
+bio: "As Product Manager for the Rackspace Government Solutions (RGS), Lorenzo D.
+Winfrey is responsible for multiple areas, including product vision and strategy,
+roadmap development, and branding for the RGS portfolio. Lorenzo’s leadership
+objective is to ensure all our solutions have a customer focus and are built
+to the highest quality, while aggressively pursuing integration of new value added
+technology. Before joining Rackspace in April 2019, Lorenzo was Chief of
+Architecture and Standards for the Defense Intelligence Agency (DIA), where he
+managed a portfolio of over $50 million in annual operating budget. Lorenzo’s
+extensive career in information technology includes leading DIA’s AWS Cloud
+Broker Team, managing the operations of the Microsoft&reg; System Center Configuration
+Manager enterprise solution, and pioneering the development and deployment of
+the agency’s first cloud native, web-based application to track near real-time
+cloud spend, utilization, and schedule. While serving at DIA, Lorenzo was awarded
+the Award for Exceptional Civilian Service, the agency's highest civilian award,
+which recognizes excellence, initiative, and outstanding contributions over a
+period of several years. Lorenzo brings to Rackspace a compelling combination
+of technical expertise and strategic leadership experience. He firmly believes
+that leadership is a discipline that should be studied and practiced. Lorenzo
+has become known for sharing his reading lists with all who will listen. He
+enjoys creating content, reading, and the occasional video game. Hailing from
+Augusta, Georgia, Lorenzo now lives in Waldorf, Maryland with his family. He
+holds a Bachelor’s of Science from Claflin University. Lorenzo is based in the
+company’s Reston, Virginia office."
+
+Xin, Michael
+authorAvatar: 'https://s.gravatar.com/avatar/5c2bae8f6f4c9669249888f5b8e1f5b0'
+bio: "Michael Xin is a senior QE/Security manager in Rackspace. He is leading
+VMware QE team and QE Security team. Michael is passionate about quality and
+security for Rackspace products. Michael has years of experience in application
+security, security SDLC, test automation, cloud computing, agile development
+and CI/CD."
+
+Yelemane, Ravishekhar
+authorAvatar: 'https://s.gravatar.com/avatar/1d5246c5ac05e979d88dc05ae240a30b'
+bio: "I’m an Oracle Apps DBA working with Rackspace. I work on a variety of
+Oracle Products, including databases, E-Business Suite, and Fusion Middleware
+applications, and I'm an OCI Architect Associate."
+
+Zettler, Wayne
+authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U010VPCKG3D-ebaa348e7951-512'
+bio: "I like to consider myself a hybrid technologist with over 20 years of
+combined experience in leadership roles, engineering deployment roles, pre-sales
+solutions architect roles, and quota-carrying B2B sales consulting roles. I am
+happiest when I'm working directly with clients to transform their organizations
+using AWS as the catalyst for change. My passion lies in driving cloud-based
+project design through business-drivers analysis, resulting in well-architected
+AWS information technology solutions. I pride myself on being capable of having
+extremely granular technical conversations with an organization's top engineers,
+while still being able to relate the information to non-technical C-suite executive
+team members. My diverse work experience allows me to view client transformation
+engagements through multiple different lenses. I've been the person to sell the
+solutions, I've been the person to design the solutions, and once upon a time,
+I was even the person to deliver the solutions. Like all solutions architects
+worth their weight in salt, my focus is on extracting the foundational business
+requirements at the core of all cloud migration initiatives and translating those
+needs into an architectural design, leveraging AWS cloud infrastructure."
+
+Zullo, Chris
+authorAvatar: 'https://s.gravatar.com/avatar/475ef03557ebebc76180795000996012'
+bio: "Boston born and bred sports geek with a twist. Unabashed sports nut and
+technology enthusiast. Living in the cloud literally and figuratively as a
+SaaS (Software as a Service) advocate who wants to see as much of the world in
+person as manageable."
