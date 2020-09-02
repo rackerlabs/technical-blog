@@ -28,7 +28,8 @@ decisions for managing your multicloud environment.
 
 If you missed them, check out
 [Part One](https://docs.rackspace.com/blog/the-art-of-decision-management-for-multicloud-strategies-part-one/)
-and [Part Two](https://docs.rackspace.com/blog/the-art-of-decision-management-for-multicloud-strategies-part-two/).
+and [Part Two](https://docs.rackspace.com/blog/the-art-of-decision-management-for-multicloud-strategies-part-two/)
+of the series.
 
 <!--more-->
 
