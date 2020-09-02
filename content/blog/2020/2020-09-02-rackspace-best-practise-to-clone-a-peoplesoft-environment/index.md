@@ -4,8 +4,11 @@ title: "Rackspace best practise to clone a PeopleSoft environment"
 date: 2020-09-02
 comments: true
 author: Gaurav Sehgal
-authorAvatar: ''
-bio: ""
+authorAvatar: 'https://s.gravatar.com/avatar/ee4a362c5b0504c7d2260b4ea38023e1'
+bio: "I work as a PeopleSoft Lead at Rackspace Technology. I have a total of
+12 years of experience in analyzing, designing, administering, upgrading,
+and supporting  the following PeopleSoft applications: HRMS, FSCM, EPM, Portal,
+and CRM."
 published: true
 authorIsRacker: true
 categories:
