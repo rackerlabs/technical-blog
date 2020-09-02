@@ -33,11 +33,11 @@ If you missed it, check out [Part One](https://docs.rackspace.com/blog/the-art-o
 
 ### The approach for developing a multicloud decision management process
 
-CDMP is an application-centric process that ultimately recommends which target
-cloud platforms that individual applications should be landing. You can execute
-this in two stages: Workload Filtering and Application Grouping, followed by
-Cloud Platform Evaluation and Recommendation. Each of these stages has its unique
-objectives and target outcomes.
+Cloud Decision Management Process (CDMP) is an application-centric process that
+ultimately recommends which target cloud platforms that individual applications
+should be landing. You can execute this in two stages: Workload Filtering and
+Application Grouping, followed by Cloud Platform Evaluation and Recommendation.
+Each of these stages has its unique objectives and target outcomes.
 
 #### CDMP Stage 1: Workload Filtering and Platform Association
 
@@ -89,7 +89,7 @@ and Operations.
 
 {{<img src="Picture3.png" title="" alt="">}}
 
-*Figure 3 – Domain Areas for CDMP Filtering Questions*
+*Figure 3: Domain Areas for CDMP Filtering Questions*
 
 Figure 3 illustrates examples of the filtering questions that you can set for
 the four domain areas. You should focus on those questions that will help
@@ -171,7 +171,7 @@ perspectives, but this is not an exhaustive list.
 
 {{<img src="Picture4.png" title="" alt="">}}
 
-*Figure 4 – Cloud Platforms Evaluation Criteria*
+*Figure 4: Cloud Platforms Evaluation Criteria*
 
 These perspectives and criteria are relevant consideration regardless of how the
 company wants to approach assessing the target cloud platforms, be it with
@@ -222,7 +222,7 @@ weight for this evaluation epic in the final recommendation.
 
 {{<img src="Picture5.png" title="" alt="">}}
 
-*Figure 5 – CDMP Stage 2 Cloud Platform Evaluation Schema*
+*Figure 5: CDMP Stage 2 Cloud Platform Evaluation Schema*
 
 This example also shows why CDMP is essentially a consensus-building process.
 The evaluation epic has to be a common concern from the majority of stakeholders.
@@ -237,6 +237,10 @@ overall interest.
 ### Continue
 
 Part three of this series is coming soon, and I'll add the link here. Stay tuned!
+To learn more, read
+[Part Three](https://docs.rackspace.com/blog/the-art-of-decision-management-for-multicloud-strategies-part-three/)
+of this series.
+
 
 Use the Feedback tab to make any comments or ask questions. You can also click
 **Sales Chat** to [chat now](https://www.rackspace.com/) and start the conversation.
