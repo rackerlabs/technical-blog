@@ -145,10 +145,7 @@
       li {
         list-style: disc;
         margin-left: 1.5rem;
-<<<<<<< HEAD
-=======
         list-style-type: disc !important;
->>>>>>> e819ff78af45c10a39d482d94fc4c1dd3b4cd715
       }
     }
 
@@ -297,7 +294,6 @@
 
 .author--avatar {
   $avatar-size: 2.25rem;
-
   border-radius: calc($avatar-size / 2);
   height: $avatar-size;
   overflow: hidden;
