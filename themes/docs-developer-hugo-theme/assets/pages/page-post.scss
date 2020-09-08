@@ -145,6 +145,10 @@
       li {
         list-style: disc;
         margin-left: 1.5rem;
+<<<<<<< HEAD
+=======
+        list-style-type: disc !important;
+>>>>>>> e819ff78af45c10a39d482d94fc4c1dd3b4cd715
       }
     }
 
@@ -427,4 +431,11 @@
   span {
     display: block;
   }
+}
+
+.image-left {
+  margin: 0 0 1em 1em;
+  float: left;
+  height: auto;
+  max-width: 50%;
 }
