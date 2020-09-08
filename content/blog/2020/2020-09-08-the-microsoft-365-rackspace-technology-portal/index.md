@@ -62,7 +62,7 @@ licenses. You can also create users, assign licenses, reset passwords, and manag
 access. A premium yet straightforward design experience makes onboarding and
 offboarding users a breeze.
 
-{{<img src="1_User Management.png" title="" alt="">}}
+{{<img src="1_UserManagement.png" title="" alt="">}}
 
 ### Informative and transparent
 
@@ -74,7 +74,7 @@ products, including add-ons, in one list with detailed descriptions and actual
 pricing. Our search engine uses weighted search algorithms to help you find the
 right product match quickly.
 
-{{<img src="2_List Products.png" title="" alt="">}}
+{{<img src="2_ListProducts.png" title="" alt="">}}
 
 One of our favorite portal features is the intuitive dashboard that displays how
 many licenses are assigned and how many are available for use. We provide
@@ -105,7 +105,7 @@ We have various articles to guide you and your end-users onboard into the modern
 workplace and continue to add features to demonstrate the benefit of moving to
 the Cloud with Rackspace Technology.
 
-{{<img src="5_Support Tool.png" title="" alt="">}}
+{{<img src="5_SupportTool.png" title="" alt="">}}
 
 However, technology can never fully replace the energy and expertise of our
 Fanatical Experience Support team. You will always get 24x7x365 access to our
