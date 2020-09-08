@@ -173,12 +173,6 @@
         height: auto;
         max-width: 50%;
       }
-      .image-left {
-        margin: 0 0 1em 1em;
-        float: left;
-        height: auto;
-        max-width: 50%;
-      }
       .image-center {
         margin: 0 0 1em 1em;
         height: auto;
@@ -427,4 +421,11 @@
   span {
     display: block;
   }
+}
+
+.image-left {
+  margin: 0 0 1em 1em;
+  float: left;
+  height: auto;
+  max-width: 50%;
 }
