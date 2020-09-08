@@ -120,7 +120,7 @@ Rackspace Support team. The issue is given a critical ticket status and
 automatically queued in the Rackpsace’s ticketing system. That ticket references
 a knowledge base article that contains the SOP for troubleshooting and resolving
 the issue. Thus, issues are proactively identified and resolved on time by our
-24/7/365 Support teams to provide you with a Fanatical Experience.
+24/7/365 Support teams to provide you with Fanatical Experience&trade;.
 
 #### Value
 
@@ -129,7 +129,7 @@ due to errors and issue tracking was more efficient.
 
 ### Conclusion
 
-By utilizing application monitoring, organizations can proactively resolve
+By using application monitoring, organizations can proactively resolve
 issues. This helps to prevent spikes in issues during peak period close and
 enables a smoother and more timely financial period-close. This tool also
 identifies any breakdowns in business processes and helps us to design potential

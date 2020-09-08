@@ -6,7 +6,7 @@ comments: true
 author: Mitchell McLaughlin
 published: true
 authorIsRacker: true
-authorAvatar: 'https://media-exp1.licdn.com/dms/image/C5603AQH5r2hzui051w/profile-displayphoto-shrink_100_100/0?e=1596672000&v=beta&t=ar809F1WbFhkJXAvxbf12x6Dh0PmTaGgyeQqgKrATWA'
+authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-UEC44BDB6-e6ec6e591568-512'
 bio: "Mitchell is proficient in Salesforce CRM development, administration, and
 analysis with 5+ years of experience implementing and developing complex solutions
 for enterprise clients. Mitchell is an 8x Salesforce certified developer and

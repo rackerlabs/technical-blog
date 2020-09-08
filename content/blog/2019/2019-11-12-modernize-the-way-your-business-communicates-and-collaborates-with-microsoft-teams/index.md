@@ -7,7 +7,7 @@ author: Walter Stubbs
 published: true
 authorIsRacker: true
 authorAvatar: 'https://0.gravatar.com/avatar/82a7a0dd2ccc5b707da699191be87ecf'
-bio: "Walter Stubbs is a Microsoft Certified Solutions Associate, and one of the Lead Email Technicians in Cloud Office. Walter joined Rackspace in 2018 and has been supporting the Office 365 environment from day one. His passion for helping others combined with his knowledge of Office 365 helps him provide a Fanatical Experience for Rackspace customers everyday."
+bio: "Walter Stubbs is a Microsoft Certified Solutions Associate, and one of the Lead Email Technicians in Cloud Office. Walter joined Rackspace in 2018 and has been supporting the Office 365 environment from day one. His passion for helping others combined with his knowledge of Office 365 helps him provide Fanatical Experience for Rackspace customers everyday."
 categories:
   - General
 metaTitle: "Modernize the way your business communicates and collaborates with Microsoft Teams"
