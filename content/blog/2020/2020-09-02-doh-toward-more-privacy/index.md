@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "DoHU+2014toward more privacy"
+title: "DoH—toward more privacy"
 date: 2020-09-02
 comments: true
 author: Mustapha Benmbarek
