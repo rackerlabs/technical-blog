@@ -145,6 +145,7 @@
       li {
         list-style: disc;
         margin-left: 1.5rem;
+        list-style-type: disc !important;
       }
     }
 
@@ -170,6 +171,12 @@
       .image-right {
         margin: 0 0 1em 1em;
         float: right;
+        height: auto;
+        max-width: 50%;
+      }
+      .image-left {
+        margin: 0 0 1em 1em;
+        float: left;
         height: auto;
         max-width: 50%;
       }
@@ -287,7 +294,6 @@
 
 .author--avatar {
   $avatar-size: 2.25rem;
-
   border-radius: calc($avatar-size / 2);
   height: $avatar-size;
   overflow: hidden;
