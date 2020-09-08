@@ -565,6 +565,16 @@ technology's place in solving business challenges. My mission is to uncover
 opportunities to help companies realize true business transformation, with
 technology as a key catalyst."
 
+Rajan, Rini
+authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U0GJV1T3R-8641766ec683-512'
+bio: "Rini Rajan is a Technical Product Manager working with Microsoft 365 and
+Dynamics 365 products. Her primary focus is  developing features for the Rackspace
+Microsoft 365 Portal. She has 12+ years of IT experience, 9 of which she has spent
+at Rackspace Technology. She holds an Electronics & Telecommunication Engineering
+degree from Goa University and a Master of Business Administration from Virginia
+Tech. Rini is currently based in the company’s Blacksburg, Virginia office. In
+her free time, she enjoys hiking in the Blue Ridge Mountains with her family."
+
 Ranganathan, Nirmal
 authorAvatar: 'https://s.gravatar.com/avatar/152da1a0a80d81265a5cd1b40e16d465'
 bio: "Nirmal is a Principal Architect and Product Manager at Rackspace

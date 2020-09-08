@@ -4,8 +4,14 @@ title: "The Microsoft 365 Rackspace Technology portal"
 date: 2020-09-08
 comments: true
 author: Rini Rajan
-authorAvatar: ''
-bio: ""
+authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U0GJV1T3R-8641766ec683-512'
+bio: "Rini Rajan is a Technical Product Manager working with Microsoft 365 and
+Dynamics 365 products. Her primary focus is  developing features for the Rackspace
+Microsoft 365 Portal. She has 12+ years of IT experience, 9 of which she has spent
+at Rackspace Technology. She holds an Electronics & Telecommunication Engineering
+degree from Goa University and a Master of Business Administration from Virginia
+Tech. Rini is currently based in the company’s Blacksburg, Virginia office. In
+her free time, she enjoys hiking in the Blue Ridge Mountains with her family."
 published: true
 authorIsRacker: true
 categories:
