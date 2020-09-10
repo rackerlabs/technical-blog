@@ -272,7 +272,7 @@ Restart all the application services.
 
 Capacity planning and testing with consideration for future growth is paramount
 to a well-designed SOA database growth management strategy. So, don't limit your
-decisions to only current requirements. If production needs expand, your design
+decisions to only current requirements. If production needs to expand, your design
 might be insufficient and require downtime to resolve.
 
 Carefully balance the need for database maintenance and Online Transactional
