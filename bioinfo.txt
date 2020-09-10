@@ -630,6 +630,11 @@ services for 100+ Oracle enterprise resource planning (ERP) customers across
 different industries and verticals. Shyamal is an Oracle thought leader and played
 an integral role in building our OCI practice within Rackspace."
 
+Shaik, Ameer
+authorAvatar: 'https://s.gravatar.com/avatar/11cb87616468b3ea73cca55c5c46c5c6'
+bio: "I have a cool nature, a positive attitude, and I like everything I do to
+be well-organized."
+
 Sharma, Anubhav
 authorAvatar: 'https://s.gravatar.com/avatar/3ea62cab3c36ad848af5e53cf7610516'
 bio: "I’m Anubhav, an Oracle Database Administrator working with Rackspace.
