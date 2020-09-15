@@ -160,9 +160,7 @@ on both clouds to install Oracle E-Business Suite or other Oracle related produc
 with application services running on the Azure Cloud and database services running
 on Oracle Cloud.
 
-### Conclusion
-
-<a class="cta purple" id="cta" href="https://www.rackspace.com/sap">Learn more about our SAP services.</a>
+<a class="cta purple" id="cta" href="https://www.rackspace.com/dba-services">Learn more about Databases.</a>
 
 Use the Feedback tab to make any comments or ask questions. You can also click
 **Sales Chat** to [chat now](https://www.rackspace.com/) and start the conversation.
