@@ -95,19 +95,19 @@ ExpressConnect and OCI FastConnect.
 2. Create a virtual network gateway. When enabled, FastPath sends network traffic
    directly to virtual machines in the virtual network, bypassing the gateway.
 
-a. For **Gateway Type**, select **ExpressRoute**.
+   a. For **Gateway Type**, select **ExpressRoute**.
 
-b. For **SKU**, select **Ultra Performance** or **ErGw3AZ** to enable FastPath.
+   b. For **SKU**, select **Ultra Performance** or **ErGw3AZ** to enable FastPath.
 
 3. Create an ExpressRoute circuit.
 
-a. For **Provider**, select **Oracle Cloud FastConnect**.
+   a. For **Provider**, select **Oracle Cloud FastConnect**.
 
-b.  For **Peering Location**, select **Washington DC**.
+   b.  For **Peering Location**, select **Washington DC**.
 
-c. Select **1Gbps** for **Bandwidth** to match the configuration on the FastConnect.
+   c. Select **1Gbps** for **Bandwidth** to match the configuration on the FastConnect.
 
-{{<img src="Picture2.png" title="" alt="">}}
+   {{<img src="Picture2.png" title="" alt="">}}
 
 4. Create a Virtual Machine.
 
