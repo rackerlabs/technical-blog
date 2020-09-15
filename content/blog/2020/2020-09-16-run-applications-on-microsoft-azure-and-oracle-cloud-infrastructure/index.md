@@ -113,7 +113,7 @@ ExpressConnect and OCI FastConnect.
 
 5. Verify the ExpressRoute deployment.
 
-  {{<img src="Picture3.png" title="" alt="">}}
+   {{<img src="Picture3.png" title="" alt="">}}
 
 6. Log in to Oracle Cloud. Create a Virtual Cloud Network. When creating the VCN,
    ensure that the IP address space in the OCI virtual cloud network does not
@@ -124,9 +124,9 @@ ExpressConnect and OCI FastConnect.
    as the **PROVIDER** and copy the Service Key from Azure ExpressRoute for the
    **PROVIDER SERVICE KEY**.
 
-  {{<img src="Picture4.png" title="" alt="">}}
+   {{<img src="Picture4.png" title="" alt="">}}
 
-  {{<img src="Picture5.png" title="" alt="">}}
+   {{<img src="Picture5.png" title="" alt="">}}
 
 8. Create a compute instance.
 
@@ -136,21 +136,21 @@ ExpressConnect and OCI FastConnect.
 
    a. Verify that the FastConnect connection state is **Provisioned**.
 
-   {{<img src="Picture6.png" title="" alt="">}}
+      {{<img src="Picture6.png" title="" alt="">}}
 
    b. Verify that the Azure ExpressRoute provider status is **Provisioned** and
-   the peerings display.
+      the peerings display.
 
-   {{<img src="Picture7.png" title="" alt="">}}
+      {{<img src="Picture7.png" title="" alt="">}}
 
    c. Test the connection by using SSH from the OCI server to the Azure server.
 
-   {{<img src="Picture8.png" title="" alt="">}}
+      {{<img src="Picture8.png" title="" alt="">}}
 
    d. Verify the connection from the other side by pinging the OCI server from
-   the Azure server.
+      the Azure server.
 
-   {{<img src="Picture9.png" title="" alt="">}}
+      {{<img src="Picture9.png" title="" alt="">}}
 
 ### Conclusion
 
