@@ -44,7 +44,7 @@ You can also integrate Oracle applications with Azure Active Directory to set
 up single-sign-on to log in to Oracle application by using your Azure Active
 Directory (AD) credentials. With this integration, you can take advantage of the
 best of both clouds. Microsoft and Oracle have tested Oracle Applications on a
-multi-cloud architecture and confirmed that the performance meets standards set
+multicloud architecture and confirmed that the performance meets standards set
 by Oracle for Oracle Apps.
 
 ### OCI FastConnect
