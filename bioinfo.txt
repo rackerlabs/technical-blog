@@ -39,6 +39,11 @@ architecture for several business areas. He has vast experience interacting with
 national and international clients from various business areas and a good
 understanding of requirement analysis and database technology implementation."
 
+Antony, Rincy
+authorAvatar: 'https://s.gravatar.com/avatar/aa52b129abea1598099d0444ab824898'
+bio: "I am an applications DBA with more than 15 yrs of experience and currently
+work with Rackspace."
+
 Arora, Raj
 authorAvatar: ''
 bio: n/a
