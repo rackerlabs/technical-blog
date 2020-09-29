@@ -264,6 +264,13 @@ Friedman, Jordan
 authorAvatar: 'https://s.gravatar.com/avatar/f2f71a634ccd1e79ea3b3b317f8b4161'
 bio: n/a
 
+Gariya, Diwan S.
+authorAvatar: 'https://s.gravatar.com/avatar/a18f70f10968f6a64e0ff3267943e13b'
+bio: "With an MBA degree and 10+ years of experience as Peoplesoft Admin
+consultant, I keep on upgrading myself and learning new technology.
+I always believe in chasing dreams that ultimately motivate me to achieve my
+life goals. I love traveling and trekking. Thank you!"
+
 Garratt, Nick
 authorAvatar: 'https://s.gravatar.com/avatar/749cf70eafe03795015019c1047be85f'
 bio: "Nick Garratt is a Principal Architect in the Rackspace Managed Public
