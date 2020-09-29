@@ -166,8 +166,6 @@ experience, and expertise to implement this product successfully.
 
 Contact our experts today to set up ASP for your PeopleSoft applications.
 
-### Conclusion
-
 <a class="cta purple" id="cta" href="https://www.rackspace.com/security">Learn more about our Security services.</a>
 
 Use the Feedback tab to make any comments or ask questions. You can also click
