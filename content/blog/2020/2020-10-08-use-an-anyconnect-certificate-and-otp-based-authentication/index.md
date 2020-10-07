@@ -42,13 +42,13 @@ Use the following steps to implement certificate and OTP-based authentication
 for an existing AnyConnect&reg; environment:
 
 - Check and synch the time
-- Activate & configure local CA server
+- Activate and configure local CA server
 - Create user accounts for all users eligible to obtain an identity certificate from ASA
 - Create a tunnel group that uses certificate-based authentication
 - Change the VPN authentication to the certificate
 - Create a map certificate to the connection profile
 
-### Verify certificate-bases authentication
+### Set up certificate-based authentication
 
 Perform the following steps to verify certificate-based authentication for
 AnyConnect remote access VPN:
@@ -87,8 +87,8 @@ the users eligible to obtain an ASA identity certificate.
 
 Take note of the OTP and keep it handy.
 
-Download and import the certificate by browsing to
-**https://\<firewall IP address\>/+CSCOCA/+enroll log** and logging in with your
+To download and import the certificate, browse to
+**https://\<firewall IP address\>/+CSCOCA/+enroll log** and log in with your
 username and OTP as shown in the following image.
 
 {{<img src="Picture1.png" title="" alt="">}}
@@ -114,7 +114,7 @@ Run the following commands to change the VPN authentication to the certificate:
 
 #### 6. Create a map certificate
 
-Run the following commands to create a certificate map to the tunnel group, so
+Run the following commands to create a certificate map to the tunnel group so
 ASA uses the right user connection profiles for users authenticating with
 identity certificates:
 
@@ -125,7 +125,7 @@ identity certificates:
 
 #### 7. Connect to the VPN portal
 
-After you complete the preceding steps, users should now be prompted for
+After you complete the preceding steps, the system will prompt users for
 certificate-based authentication when they connect to the VPN portal, as shown
 in the following image:
 
@@ -134,8 +134,8 @@ in the following image:
 ### Conclusion
 
 By using the steps in this post, you can easily configure certificate-based
-authentication for Cisco AnyConnect Remote access VPN and setup the authentication
-process using the inbuild CA server. You can also use a third-party, paid CA
+authentication for Cisco AnyConnect Remote access VPN and set up the authentication
+process with the built-in CA server. You can also use a third-party, paid CA
 server in production to meet the regulatory compliance and standard requirements.
 
 <a class="cta blue" id="cta" href="https://www.rackspace.com/security">Learn more about our security services.</a>
