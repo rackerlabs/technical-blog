@@ -11,7 +11,8 @@ Group Co-leader&mdash;@ChicagoSFDCUG and Salesforce MVP Hall of Fame (HoF) membe
 published: true
 authorIsRacker: true
 categories:
-    - General
+    - Security
+    - Salesforce
 metaTitle: "Salesforce and multifactor authentication"
 metaDescription: "You should consider implementing multi-factor authentication
 (MFA)&mdash;it helps to prevent common attacks such as phishing, keyloggers, and
