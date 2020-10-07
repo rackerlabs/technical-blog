@@ -5,7 +5,9 @@ date: 2020-10-08
 comments: true
 author: Denise Carbone
 authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-UDLC1UD52-e0f6060b6e13-512'
-bio: "Rackspace Technology Manager, Professional Services Delivery"
+bio: "Rackspace Technology Manager, Professional Services Delivery. I've been a
+Salesforce Certified Administrator since 2008 and I'm a Chicago Salesforce Admin
+Group Co-leader&mdash;@ChicagoSFDCUG and Salesforce MVP Hall of Fame (HoF) member."
 published: true
 authorIsRacker: true
 categories:
