@@ -139,8 +139,10 @@ Automation Product Manager and was also vital in the recent deployment by Racksp
 of MoogSoft&trade;."
 
 Carbone, Denise
-authorAvatar: 'https://s.gravatar.com/avatar/621ec460934803c15e9b2c4ff6cbf75f'
-bio: n/a
+authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-UDLC1UD52-e0f6060b6e13-512'
+bio: "Rackspace Technology Manager, Professional Services Delivery. I've been a
+Salesforce Certified Administrator since 2008 and I'm a Chicago Salesforce Admin
+Group Co-leader&mdash;@ChicagoSFDCUG and Salesforce MVP Hall of Fame (HoF) member."
 
 Carter, Nikki
 authorAvatar: 'https://gravatar.com/avatar/3177b82ffcbe59f1f3e6e155d3c94e7a'
@@ -463,6 +465,10 @@ infrastructure and services. Roman is a high-energy, hands-on leader whose
 knowledge and experience of threat trends helps develop and create powerful
 mitigation strategies through Fanatical Support."
 
+Lee, Kiat
+authorAvatar: n/a
+bio: "I am a Technical Consultant at Rackspace Technology."
+
 Levy, Michael
 authorAvatar: 'https://s.gravatar.com/avatar/1f70cf15c8fb3ae717b55c61c5ad6eb5'
 bio: "Product Director for the Rackspace colocation and connectivity practices.
@@ -484,12 +490,18 @@ bio: "I am a senior Database Administrator, who works on Oracle Database
 (9i,10g,11g,12c,19c), Oracle Apps (E-Business Suite - 11i, R12.1), SQL Server
 (2012,14,16,17), Cassandra, MongoDB and Hadoop administration."
 
+Mandal, Mayukh
+authorAvatar: 'https://s.gravatar.com/avatar/35e95902333a1613f6bc516a411d8ee3'
+bio: "I am an enthusiastic, self-motivated, reliable, responsible, punctual,
+dedicated, organized, methodical, hard working, and fun-loving person having 7+
+years of rich experience in Computer networking and network security."
+
 Mattson, Josh
 authorAvatar: 'http://www.gravatar.com/avatar/791617263c70278859e1b26c15d13eab'
 bio: n/a
 
 McLaughlin, Mitchell
-authorAvatar: authorAvatar: 'https://media-exp1.licdn.com/dms/image/C5603AQH5r2hzui051w/profile-displayphoto-shrink_100_100/0?e=1596672000&v=beta&t=ar809F1WbFhkJXAvxbf12x6Dh0PmTaGgyeQqgKrATWA'
+authorAvatar: 'https://media-exp1.licdn.com/dms/image/C5603AQH5r2hzui051w/profile-displayphoto-shrink_100_100/0?e=1596672000&v=beta&t=ar809F1WbFhkJXAvxbf12x6Dh0PmTaGgyeQqgKrATWA'
 bio: "Mitchell is proficient in Salesforce CRM development, administration, and
 analysis with 5+ years of experience implementing and developing complex solutions
 for enterprise clients. Mitchell is an 8x Salesforce certified developer and
