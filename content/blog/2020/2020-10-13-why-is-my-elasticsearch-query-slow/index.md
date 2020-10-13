@@ -44,36 +44,42 @@ The first step is to take a look at how long it takes for you to send a query to
 The Elasticsearch docs can be a little unclear on how to turn on the slow logs,
 so I show some examples below.
 
-First, there are two versions of slow logs in Elasticsearch: index slow
-logs and search slow logs. Since the issue we’re trying to resolve involves slow queries,
-we focus on search slow logs. However, if the issue resolved around performance issues
+First, there are two versions of slow logs in Elasticsearch: index slow logs and search slow logs. Since the issue we’re trying to resolve involves slow queries,
+we focus on search slow logs. However, if this was about performance issues
 while indexing/adding documents, then we would look at the index slow logs.
 
-Slow logs are turned off by default on all versions of Elasticsearch, so
-you’ll have to make a few updates to both the cluster settings and the
-index settings. These examples are for working with elasticsearch 6.2, but you
-can find all previous version here. Simply replace the $ES_version with the
-version that you are working on,for example 5.5 here.
-Send a put request to the _cluster API to define the level of slow log
+All versions of Elasticsearch turn off slow logs by default, so
+you have to make a few updates to both the cluster settings and the index settings.
+The following examples deal with with Elasticsearch 6.2, but you
+can find information about [previous versions here](https://www.elastic.co/guide/en/elasticsearch/reference/index.html). Replace the $ES_version with the
+version that you are working on,for [example 5.5 here](https://www.elastic.co/guide/en/elasticsearch/reference/5.5/index-modules-slowlog.html).
+
+- Send a put request to the **_cluster API** to define the level of slow log
 that you want to turn on: warn, info, debug, and trace.
-(More info on logging levels.)
-curl -XPUT http://localhost:$ES_PORT/_cluster/settings -H ‘Content-Type: application/json’ -d’
+([More info on logging levels.](https://stackoverflow.com/questions/2031163/when-to-use-the-different-log-levels))
 
-{{<img src="Picture1.png" title="" alt="">}}
+    curl -XPUT http://localhost:$ES_PORT/_cluster/settings -H ‘Content-Type: application/json’ -d’
 
-All slow logging is enabled on the index level, so you can again send a request to the
-index _settings API to turn on, but will also have to add to your index template
+        {
+    "transient" : {
+    "logger.index.search.slowlog" : "DEBUG",
+    "logger.index.indexing.slowlog" : "DEBUG"
+    }
+    }'
+
+Elasticsearch enables all slow logging on the index level, so you can again send a request to the
+index _settings API to turn on, but you also have to add to your index template
 if you are rotating your indexes monthly, quarterly, etc.
-Adjust the API call to the index settings to match the slow log time threshold
-you want to hit. (You can set to 0s to profile the instance and collect all queries
-being sent, and a -1 to turn off the slow log.)
-Use the log level setting you chose to use in the _clustersettings.
-In this example, “DEBUG”.
-ES_PORT is a persistent environmental variable.
 
-{{<img src="Picture1.png" title="" alt="">}}
+- Adjust the API call to the index settings to match the slow log time threshold
+  you want to hit. (You can set to 0s to profile the instance and collect all queries
+  being sent, and a &ndash;1 to turn off the slow log.)
+- Use the log level setting you chose to use in the _clustersettings.
+  In this example, “DEBUG”. ES_PORT is a persistent environmental variable.
 
-Now, you will need to collect the logs. The slow logs are generated per shard
+    curl -XPUT http://localhost:$ES_PORT/*/_settings?pretty -H 'Content-Type: application/json' -d '{"index.search.slowlog.threshold.query.debug": "-1","index.search.slowlog.threshold.fetch.debug": "-1",}'
+
+Now, need to collect the logs. The slow logs are generated per shard
 and gathered per data node . If you only have one data node that holds
 five primary shards (this is the default value), you will see five entries
 for one query in the slow logs. As searches in Elasticsearch happen inside
