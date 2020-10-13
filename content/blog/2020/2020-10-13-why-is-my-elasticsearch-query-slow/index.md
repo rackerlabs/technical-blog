@@ -81,16 +81,18 @@ if you are rotating your indexes monthly, quarterly, etc.
 
 Now, need to collect the logs. The slow logs are generated per shard
 and gathered per data node . If you only have one data node that holds
-five primary shards (this is the default value), you will see five entries
+five primary shards (the default value), you will see five entries
 for one query in the slow logs. As searches in Elasticsearch happen inside
 each shard, you’ll see one for each shard. Slow Logs are stored per data node
- in the following default
- location: /var/log/elasticsearch/$ClusterID_index_slowlog_query and /var/log/elasticsearch/$ClusterID_index_slowlog_fetch.
+in the following default
+**location: /var/log/elasticsearch/$ClusterID_index_slowlog_query and /var/log/elasticsearch/$ClusterID_index_slowlog_fetch**.
 As you can see, the search slow logs are again broken down into separate log files based on
-the phase of search: fetch and query. Now that we have results in the logs,
+the phase of search: fetch and query.
+
+Now that we have results in the logs,
 we can pull an entry and take it apart.
 
-{{<img src="Picture1.png" title="" alt="">}}
+    [2018-05-21T12:35:53,352][DEBUG ][index.search.slowlog.query] [DwOfjJF] [blogpost-slowlogs][4] took[1s],    took_millis[0], types[], stats[], search_type[QUERY_THEN_FETCH], total_shards[5], source[{"query":{"match":{"name":    {"query":"hello world", "operator":"OR","prefix_length":0,"max_expansions":50,"fuzzy_transpositions" :true, "lenient":false,"zero_terms_query": "NONE","boost":1.0}}},"sort":[{"price": {"order":"desc"}}]}],
 
 Here, you see:
 
@@ -103,20 +105,20 @@ Here, you see:
 - Time took
 - The body of the query (_source>)
 
-Once we obtain the query that we identify as taking too long, we have some tools at
+Once we obtain the query that we identify as taking too long, there are some tools at
 our disposal to break down the query:
 
-- Profile API
+#### Profile API
 The profile API provides pages of information on your search and breaks down what happened
 in each shard, right down to the individual timing of each search component.
 The more detailed the search, the more verbose the _profile output.
 
-- The Kibana profiling tool
+#### The Kibana profiling tool
 This goes hand in hand with the _profileAPI. It gives a nice visual waterfall
 representation of the individual search components and the time that they take
 to complete. Again, this allows you to easily pick out the problem area of the query.
 
-### Two Phases of Elasticsearch: Query then Fetch
+### Two phases of Elasticsearch: query then Ffetch
 
 Now we’ve identified a query that is slow and we’ve run it through a profiler.
 Looking at the individual component time results has not made your search faster,
@@ -124,7 +126,7 @@ though. Now what? Understanding how queries work, going through two phases
 (below), allows you to redesign your query in a way that gets the best results
 from Elasticsearch – both in terms of speed and in relevancy.
 
-### Query Phase
+### Query phase
 
 - The query is accepted by the coordinator node.
 - The coordinator identifies the index (or indices) that are being searched.
@@ -144,7 +146,7 @@ or they could be scattered across several shards.)
 
 Once a list is returned, the master presents the documents in the _hits section of the query response.
 
-### Result Scores
+### Result scores
 
 The result scores are key in Elasticsearch. Typically, when you are using a
 search engine, you want the most accurate results. For example, if you’re
