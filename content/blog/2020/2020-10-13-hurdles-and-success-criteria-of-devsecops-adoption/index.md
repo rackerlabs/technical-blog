@@ -3,7 +3,7 @@ layout: post
 title: "Hurdles and success criteria of DevSecOps adoption"
 date: 2020-10-13
 comments: true
-author: Kiat Lee
+author: Lee Kiat Lian
 authorAvatar: 'https://s.gravatar.com/avatar/16df6abbd9b443cd7329e381df239dc7'
 bio: "Lee is Technical Consultant of Advisory Services, Rackspace Technology,
 South East Asia. Over 25 years in PS consultancy services, his area of expertise
