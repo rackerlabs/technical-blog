@@ -12,6 +12,8 @@ published: true
 authorIsRacker: true
 categories:
     - Database
+    - ObjectRocket
+canonical: https://www.objectrocket.com/blog/elasticsearch/why-is-my-elasticsearch-query-slow/
 metaTitle: "Why is my Elasticsearch query slow?"
 metaDescription: "One frequent Elasticsearch support request that Rackspace Technology
 receives is 'Can you help with my response time?' or
@@ -23,6 +25,8 @@ receives is 'Can you help with my response time?' or
 slug: "why-is-my-elasticsearch-query-slow"
 
 ---
+
+Originally published on May 29, 2018 at ObjectRocket.com/blog.
 
 One frequent Elasticsearch support request that Rackspace Technology
 receives is “Can you help with my response time?” or
