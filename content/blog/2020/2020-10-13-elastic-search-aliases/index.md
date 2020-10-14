@@ -3,17 +3,25 @@ layout: post
 title: "Elastic search aliases"
 date: 2020-10-13
 comments: true
-author: "Steve Croce"
+author: Steve Croce
 authorAvatar: 'https://gravatar.com/avatar/56d03e2d0f853cff39c129cab3761d49'
-bio: "Product Leader of ObjectRocket Database as a Service at Rackspace. A seasoned product leader and motivated team player with experience across technologies and disciplines. Steve loves to collaborate and invent alongside talented people in both his professional and personal life and bring that energy to everything he works on."
+bio: "As Senior Product Manager for the ObjectRocket Database-as-a-Service
+offering and Head of User Experience for ObjectRocket, Steve oversees the
+day-to-day planning, development, and optimization of ObjectRocket-supported
+database technologies, clouds, and features. A product manager by day, he still
+likes to embrace his engineer roots by night and develop with Elasticsearch,
+SQL, Kubernetes, and web application stacks. He's spoken at
+KubeCon + CloudNativeCon, OpenStack summit, Percona Live, and various Rackspace
+events."
 published: true
 authorIsRacker: true
-categories: "Database" "ObjectRocket"
-    - General 
+categories: 
+    - Database
+    - ObjectRocket 
 metaTitle: "Elastic search aliases"
 metaDescription: "Review Elasticsearch Aliases."
 ogTitle: "Elastic search aliases"
-ogDescription: "In this article, We will go over **Elasticsearch** aliases to celebrate  access to our alias action in ObjectRocket’s hosted Curator implementation. We will also review the advantages of Elasticsearch aliases and how you can use them."
+ogDescription: "In this article, We will go over Elasticsearch aliases to celebrate  access to our alias action in ObjectRocket’s hosted Curator implementation. We will also review the advantages of Elasticsearch aliases and how you can use them."
 slug: "elastic-search-aliases"
 canonical: https://www.objectrocket.com/blog/elasticsearch/elasticsearch-aliases/
 ---
