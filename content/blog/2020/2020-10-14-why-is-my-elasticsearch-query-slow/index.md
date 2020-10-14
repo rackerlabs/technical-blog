@@ -85,7 +85,7 @@ if you are rotating your indexes monthly, quarterly, etc.
 - Use the same log level setting you used in the _clustersettings.
   In this example, “DEBUG”. ES_PORT is a persistent environmental variable.
 
-    curl -XPUT http://localhost:$ES_PORT/*/_settings?pretty -H 'Content-Type: application/json' -d '{"index.search.slowlog.threshold.query.debug": "-1","index.search.slowlog.threshold.fetch.debug": "-1",}'
+    curl -XPUT http://localhost:$ES_PORT/*/_settings?pretty -H 'Content-Type: application/json' -d '{"index.search.slowlog.threshold.query.debug": "-1","index.search.slowlog. threshold.fetch.debug": "-1",}'
 
 Now, need to collect the logs. The slow logs are generated per shard
 and gathered per data node. If you only have one data node that holds
