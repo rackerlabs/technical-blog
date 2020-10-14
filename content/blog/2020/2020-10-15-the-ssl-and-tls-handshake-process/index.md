@@ -107,8 +107,8 @@ new cipher suites easier like RC4, Triple DES, AES, IDEA, and so on.
   and application data in an ad hoc way, while TLS relies on HMAC.
 
 SSL and TLS are cryptographic protocols that authenticate data transfer between
-servers, applications, systems, and end users. SSL was a first of its kind of
-cryptographic protocol, and TLS is a recently upgraded version of SSL.
+servers, applications, systems, and end users. SSL was the first cryptographic
+protocol of its kind, and TLS is a recently upgraded version of SSL.
 
 **Note**: In a nutshell, SSL is obsolete, and TLS is the new name of the older
 protocol that everyone uses to meet the latest encryption standard. Technically,
