@@ -14,12 +14,12 @@ categories:
     - Database
 metaTitle: "Why is my Elasticsearch query slow?"
 metaDescription: "One frequent Elasticsearch support request that Rackspace Technology
-receives is “Can you help with my response time?” or
-“My queries are taking a long time, what can I do?”
+receives is 'Can you help with my response time?' or
+'My queries are taking a long time, what can I do?'"
 ogTitle: "Why is my Elasticsearch query slow?"
 ogDescription: "One frequent Elasticsearch support request that Rackspace Technology
-receives is “Can you help with my response time?” or
-“My queries are taking a long time, what can I do?”
+receives is 'Can you help with my response time?' or
+'My queries are taking a long time, what can I do?'"
 slug: "why-is-my-elasticsearch-query-slow"
 
 ---
