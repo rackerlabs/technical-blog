@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Elastic search aliases"
-date: 2020-10-13
+date: 2020-10-18
 comments: true
 author: Steve Croce
 authorAvatar: 'https://gravatar.com/avatar/56d03e2d0f853cff39c129cab3761d49'
