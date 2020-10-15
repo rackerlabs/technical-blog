@@ -4,8 +4,9 @@ title: "The SSL and TLS handshake process"
 date: 2020-10-15
 comments: true
 author: Narayanaswamy Thota
-authorAvatar: ''
-bio: ""
+authorAvatar: 'https://s.gravatar.com/avatar/cfa94cc905a24b77c0001f2d3edfea95'
+bio: "I will find new habits, new thoughts, new rules. I will become something else.
+Today, I have 5+ years of experience in computer networking and network security."
 published: true
 authorIsRacker: true
 categories:
@@ -159,7 +160,7 @@ information is one of the essential aspects of surviving in the IT world because
 data leaks and thefts can damage an organization's reputation and adversely impact
 customers. End-to-end encryption is a must for ensuring safe data transfer.
 
-<a class="cta blue" id="cta" href="https://www.rackspace.com/professional-services/data">Learn more about Rackspace Data Services.</a>
+<a class="cta blue" id="cta" href="https://www.rackspace.com/security">Learn more about our Security services.</a>
 
 Use the Feedback tab to make any comments or ask questions. You can also click
 **Sales Chat** to [chat now](https://www.rackspace.com/) and start the conversation.
