@@ -109,7 +109,7 @@ defaultMarkdownHandler = "goldmark"
 [[menu.footer]]
     name = "Technical Blog"
     parent = "Blogs"
-    url = "https://docs.rackspace.com/blog"
+    url = "/blog"
     weight = 5
 [[menu.footer]]
     name = "Rackspace Blog"
@@ -166,7 +166,7 @@ defaultMarkdownHandler = "goldmark"
     [[menu.main]]
         identifier = "technical-blog"
         name ="Technical Blog"
-        url ="https://docs.rackspace.com/blog"
+        url ="/blog"
         weight = 1
         parent = "blogs"
     [[menu.main]]
