@@ -9,18 +9,16 @@ $header-height: 5rem;
   padding: 0 2rem;
   width: 100%;
   z-index: 20;
+
   .navbar {
     padding: 0;
     color: $color-white;
 
     .nav-link {
       color: $color-white;
-      font-weight: bold;
+      font-weight: 510;
       text-decoration: none;
       transition: color 0.15s ease;
-      text-transform: uppercase;
-      font-family: 'open-sans-regular', arial, sans-serif;
-      font-size: 1rem;
 
       &:hover {
         color: $color-white;
@@ -30,17 +28,15 @@ $header-height: 5rem;
         color: $color-white;
       }
     }
-    li:hover {
-      background-color: $color-header-grey;
-    }
   }
+
   .logo {
     backface-visibility: hidden;
-    background-image: url("/img/Rackspace_Technology_Logo_RGB_WHT.svg");
+    background-image: url(img/Rackspace_Technology_Logo_RGB_WHT.svg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 90% 90%;
-    height: 75px;
+    height: 65px;
     transition: width 0.15s linear, opacity 0.15s ease;
     width: 140px;
     background-color: $color-red;
@@ -51,10 +47,12 @@ $header-height: 5rem;
       opacity: 0.6;
     }
   }
+
   .dropdown-menu {
     background-color: transparent;
     border: 0px solid rgba(0, 0, 0, .15);
   }
+
   .dropdown-toggle::after {
     display: inline-block;
     margin-left: .255em;
@@ -65,28 +63,30 @@ $header-height: 5rem;
     border-bottom: 0;
     border-left: 0.4em solid transparent;
   }
+
   @media (min-width: 979px) {
-    .dropdown:hover > .dropdown-menu {
+    .dropdown:hover>.dropdown-menu {
       display: block;
     }
   }
+
   .search {
     margin: 1rem;
     position: relative;
 
-    &::after {
-      background-image: url("/img/search.svg");
-      background-repeat: no-repeat;
-      background-size: 0.9rem;
-      content: "";
-      height: 100%;
-      left: 0.7rem;
-      opacity: 0.25;
-      position: absolute;
-      top: 0.65rem;
-      width: 2rem;
-      z-index: 10;
-    }
+    // &::after {
+    //   background-image: url("/img/search.svg");
+    //   background-repeat: no-repeat;
+    //   background-size: 0.9rem;
+    //   content: "";
+    //   height: 100%;
+    //   left: 0.7rem;
+    //   opacity: 0.25;
+    //   position: absolute;
+    //   top: 0.65rem;
+    //   width: 2rem;
+    //   z-index: 10;
+    // }
 
     input {
       padding-left: 2rem;
@@ -108,7 +108,7 @@ $header-height: 5rem;
       width: 1.5rem;
 
       .logo {
-        background-image: url("/img/Rackspace_Technology_Logo_RGB_WHT.svg");
+        background-image: url(img/Rackspace_Technology_Logo_RGB_WHT.svg);
       }
     }
   }
@@ -122,22 +122,44 @@ $header-height: 5rem;
     margin: 1rem;
     position: relative;
 
-    &::after {
-      background-image: url("/img/search.svg");
-      background-repeat: no-repeat;
-      background-size: 0.9rem;
-      content: "";
-      height: 100%;
-      left: 0.7rem;
-      opacity: 0.25;
-      position: absolute;
-      top: 0.65rem;
-      width: 2rem;
-      z-index: 10;
-    }
+    // &::after {
+    //   background-image: url("/img/search.svg");
+    //   background-repeat: no-repeat;
+    //   background-size: 0.9rem;
+    //   content: "";
+    //   height: 100%;
+    //   left: 0.7rem;
+    //   opacity: 0.25;
+    //   position: absolute;
+    //   top: 0.65rem;
+    //   width: 2rem;
+    //   z-index: 10;
+    // }
 
     input {
       padding-left: 2rem;
+      min-width: 40rem;
+      min-height: 3rem;
+      font-size: 1rem;
+      font-style: italic;
+    }
+
+    button {
+      position: relative;
+      top: 0;
+      right: 0;
+      cursor: pointer;
+      border-width: 0;
+      outline-width: 0;
+      font-size: 20px;
+      padding: 11px;
+      background: none;
+      color: #555;
+      transition: all 0.15s linear;
+      background-color: $color-white;
+      .button-text {
+        display: none;
+      }
     }
   }
 }
@@ -222,12 +244,12 @@ $header-height: 5rem;
 
           a {
             color: $color-copy-dark;
-            font-weight: 400;
+            font-weight: 510;
             text-decoration: none;
 
             &.active {
               color: $color-brand;
-              font-weight: 600;
+              font-weight: 610;
             }
           }
         }
@@ -271,7 +293,7 @@ $header-height: 5rem;
 }
 
 .nav {
-  display: inline-block;
+  display: flex;
   position: relative;
   transition: all 0.15s linear;
   white-space: nowrap;
@@ -317,7 +339,7 @@ $header-height: 5rem;
 
 .nav {
   li {
-    display: inline;
+    display: block;
     list-style: none;
     margin-right: 1.5rem;
     text-transform: uppercase;
@@ -328,7 +350,7 @@ $header-height: 5rem;
 
     .nav-item {
       color: $color-white;
-      font-weight: 500;
+      font-weight: 510;
       text-decoration: none;
       transition: color 0.15s ease;
 
@@ -342,16 +364,15 @@ $header-height: 5rem;
     }
 
     a {
-      color: $color-white;
       font-size: 14px;
-      font-weight: 400;
+      font-weight: 510;
       font-family: "open-sans-bold", Arial, sans-serif;
       font-style: normal;
 
-      &:hover,
-      &.active {
-        background-color: $color-black;
-      }
+      // &:hover,
+      // &.active {
+      //   background-color: $color-black;
+      // }
 
       &.active {
         background: fadeout(shade(white, 3%), 5%);
@@ -414,9 +435,6 @@ $header-height: 5rem;
 
 .buttons-header {
   background-color: $color-white;
-  .navbar {
-    justify-content: flex-end;
-  }
 }
 
 .buttons-nav-items,
@@ -427,9 +445,9 @@ $header-height: 5rem;
 .buttons-nav-items {
   display: flex;
 
-  li {
+  .buttons-nav-item {
     display: flex;
-    margin: 0 1rem;
+    margin: 1rem;
     cursor: pointer;
 
     ul {
@@ -446,12 +464,13 @@ $header-height: 5rem;
       }
     }
 
-    &:hover {
-      ul {
-        display: block;
-      }
-    }
+    // &:hover {
+    //   ul {
+    //     display: block;
+    //   }
+    // }
   }
+
   .buttons-nav-item {
     ul {
       position: absolute;
@@ -461,15 +480,17 @@ $header-height: 5rem;
       z-index: 20;
       text-align: right;
       color: $color-white;
-      right: 2rem;
-      top: 3.15rem;
+      right: 0;
+      top: 75%;
     }
   }
+
   .buy-now {
     ul {
       background: $color-green;
     }
   }
+
   .login {
     ul {
       background: $color-header-grey;
@@ -503,7 +524,7 @@ $header-height: 5rem;
         border-radius: 4px;
 
         a {
-          font-weight: 600;
+          font-weight: 610;
           color: $color-dark-grey;
           font-size: 14px;
           line-height: 25px;
@@ -533,9 +554,70 @@ $header-height: 5rem;
   background-color: $color-black !important;
 }
 
-@media (max-width: 575.98px) {
-  .buynow-button,
-  .login-button {
-    font-size: 11px !important;
+.system-status {
+  text-transform: uppercase;
+  font-size: 0.8rem !important;
+  background-color: $color-white !important;
+  &:hover {
+    background-color: $color-white !important;
+    text-decoration: underline;
   }
 }
+
+.search-head {
+  background-color: #212121 !important;
+  .support-h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 10px 19px 10px 19px;
+  }
+}
+
+
+.gsc-control-cse {
+  padding: 0 !important;
+}
+
+.bg-light {
+  background-color: $color-white !important;
+}
+li, button, a {
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 700px) {
+ .nav li {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 700px) {
+  .buy-now {
+     margin-top: 1rem;
+     margin-bottom: 1rem;
+   }
+ }
+
+ @media screen and (max-width: 991px) {
+   .mobile-search {
+     display: inline-block !important;
+     background-color: $color-black !important;
+   }
+   .desktop-search {
+     display: none !important;
+   }
+   .buttons-nav-item {
+    flex: auto;
+  }
+ }
+
+ @media screen and (min-width: 992px) {
+  .mobile-search {
+    display: none !important;
+    background-color: $color-black !important;
+  }
+  .desktop-search {
+    display: inline-block !important;
+  }
+ }
