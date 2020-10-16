@@ -3,20 +3,30 @@ layout: post
 title: "Clustered elasticsearch indexing shard and replica best practices"
 date: 2020-10-19
 comments: true
-author:
-authorAvatar: ''
-bio: ""
+author: Steve Croce
+authorAvatar: 'https://gravatar.com/avatar/56d03e2d0f853cff39c129cab3761d49'
+bio: "As Senior Product Manager for the ObjectRocket Database-as-a-Service
+offering and Head of User Experience for ObjectRocket, Steve oversees the
+day-to-day planning, development, and optimization of ObjectRocket-supported
+database technologies, clouds, and features. A product manager by day, he still
+likes to embrace his engineer roots by night and develop with Elasticsearch,
+SQL, Kubernetes, and web application stacks. He's spoken at
+KubeCon + CloudNativeCon, OpenStack summit, Percona Live, and various Rackspace
+events."
 published: true
 authorIsRacker: true
 categories:
-    - General
+    - Database
+    - ObjectRocket
 metaTitle: "Clustered elasticsearch indexing shard and replica best practices"
-metaDescription: "."
+metaDescription: "Elasticsearch is awesome at spreading data across your cluster, but you should learn to adjust your default settings when your clusters begin to grow."
 ogTitle: "Clustered elasticsearch indexing shard and replica best practices"
 ogDescription: "."
 slug: "clustered-elasticsearch-indexing-shard-and-replica-best-practices"
-
+canonical: https://www.objectrocket.com/blog/elasticsearch/clustered-elasticsearch-best-practices/
 ---
+
+*Originally published on Nov 27, 2020 at ObjectRocket.com/blog.*
 
 Elasticsearch&reg; is awesome at spreading data across your cluster with the default settings, but once your cluster begins to grow, you should adjust your default settings to enhance effectiveness. Let’s go over some of the basics of sharding and provide some indexing and shard best practices.
 
