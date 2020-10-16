@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Why is my Elasticsearch query slow?"
-date: 2020-10-14
+date: 2020-10-16
 comments: true
 author: Paul Rossmeier
 authorAvatar: 'https://s.gravatar.com/avatar/6ac8427cdb85521fd14f1bceb8702e69'
