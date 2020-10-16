@@ -4,7 +4,7 @@ title: "Why is my Elasticsearch query slow?"
 date: 2020-10-14
 comments: true
 author: Paul Rossmeier
-authorAvatar: ''
+authorAvatar: 'https://s.gravatar.com/avatar/6ac8427cdb85521fd14f1bceb8702e69'
 bio: "Paul began his Rackspace career in 2013 as a member of the Cloud Office team.
 He then worked on RAX GTS Linux before transitioning to a Data management role. He is currently a Database administrator with certifications as an Elasticsearch engineer
 and Red Hat Certified administrator'. Paul has been happily married for 17 years with 2 children. He enjoys learning new technologies, collecting video game memorabilia and moonlighting as a turntable DJ."
