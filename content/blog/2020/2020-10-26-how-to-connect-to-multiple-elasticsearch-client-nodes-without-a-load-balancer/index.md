@@ -35,11 +35,11 @@ to connect to all of them.
 
 <!--more-->
 
-{{<img src="picture1.jpg" title="" alt="">}}
-
 Depending on your preferences, you might see a single connection to a single node as a point of cluster failure. A load
 balancer *can* prove effective to manage a pool of connections. However, Elasticsearch is designed to work without a load
 balancer. In this blog post, we go over how to use all of the clients we provide in Elasticsearch.
+
+{{<img src="picture1.jpg" title="" alt="">}}
 
 ### The Python setup
 
