@@ -29,7 +29,7 @@ canonical: https://www.objectrocket.com/blog/elasticsearch/elasticsearch-and-loa
 
 *Originally published on Nov 10, 2017, at ObjectRocket.com/blog.*
 
-{{<img src="picture2.jpg" title="" alt=""> class="image-right">}}Since all Rackspace ObjectRocket for Elasticsearch&reg;
+{{<img src="picture2.jpg" title="" alt="" class="image-right">}}Since all Rackspace ObjectRocket for Elasticsearch&reg;
 clusters come with multiple client nodes, a common question we get from our customers is why we don’t provide a load balancer
 to connect to all of them.
 
