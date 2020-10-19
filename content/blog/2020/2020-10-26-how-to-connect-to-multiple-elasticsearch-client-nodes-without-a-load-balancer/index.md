@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to connect to multiple elasticsearch client nodes without a load balancer"
+title: "How to connect to multiple Elasticsearch client nodes without a load balancer"
 date: 2020-10-26
 comments: true
 author: Steve Croce
@@ -18,10 +18,10 @@ authorIsRacker: true
 categories:
     - Database
     - ObjectRocket
-metaTitle: "How to connect to multiple elasticsearch client nodes without a load balancer"
-metaDescription: "Learn how to set up a load balancer with Elasticsearch"
-ogTitle: "How to connect to multiple elasticsearch client nodes without a load balancer"
-ogDescription: "Learn how to set up a load balancer with Elasticsearch"
+metaTitle: "How to connect to multiple Elasticsearch client nodes without a load balancer"
+metaDescription: "Learn how to set up a load balancer with Elasticsearch."
+ogTitle: "How to connect to multiple Elasticsearch client nodes without a load balancer"
+ogDescription: "Learn how to set up a load balancer with Elasticsearch."
 slug: "how-to-connect-to-multiple-elasticsearch-client-nodes-without-a-load-balancer"
 canonical: https://www.objectrocket.com/blog/elasticsearch/elasticsearch-and-load-balancers/
 
@@ -29,15 +29,19 @@ canonical: https://www.objectrocket.com/blog/elasticsearch/elasticsearch-and-loa
 
 *Originally published on Nov 10, 2017, at ObjectRocket.com/blog.*
 
-### How to connect to multiple Elasticsearch&reg; client nodes without a load balancer
+{{<img src="picture2.jpg" title="" alt=""> class="image-right">}}Since all Rackspace ObjectRocket for Elasticsearch&reg;
+clusters come with multiple client nodes, a common question we get from our customers is why we don’t provide a load balancer
+to connect to all of them.
+
+<!--more-->
 
 {{<img src="picture1.jpg" title="" alt="">}}
 
-Since all Rackspace&reg; ObjectRocket&reg; for Elasticsearch clusters come with multiple client nodes, a common question we get from our customers is why we don’t provide a load balancer to connect to all of them.
+Depending on your preferences, you might see a single connection to a single node as a point of cluster failure. A load
+balancer *can* prove effective to manage a pool of connections. However, Elasticsearch is designed to work without a load
+balancer. In this blog post, we go over how to use all of the clients we provide in Elasticsearch.
 
-{{<img src="picture2.jpg" title="" alt="">}}
-
-Depending on your preferences, you might see a single connection to a single node as a point of cluster failure. A load balancer **can** prove effective to manage a pool of connections. Elasticsearch **IS** designed to work without a load balancer. In this blog post, we will go  over the ways to use all of the clients we provide in Elasticsearch.
+### The Python setup
 
 Let’s look at the Python&reg; setup:
 
@@ -52,7 +56,9 @@ Let’s look at the Python&reg; setup:
         ca_certs=certifi.where(),
     )
 
-The first argument shows you that Elasticsearch accepts a list of hosts. That means the client can continue with the setup on their own. The setup is similar for other tools, like [Beats](https://www.objectrocket.com/resource/what-are-elasticsearch-beats/). The setup script would be similar to this:
+The first argument shows you that Elasticsearch accepts a list of hosts. That means the client can continue with the
+setup on their own. The setup is similar to other tools, like [Beats](https://www.objectrocket.com/resource/what-are-elasticsearch-beats/).
+The setup script would be similar to the following example:
 
     output:
     elasticsearch:
@@ -62,25 +68,33 @@ The first argument shows you that Elasticsearch accepts a list of hosts. That me
     username: "YOUR_USERNAME"
     password: "YOUR_PASSWORD"
 
-Most tools and clients available support multiple hosts, to make it easy for you, we include connection snippets in the ObjectRocket UI for Python, Ruby, C#, Java, Javascript, Go, Logstash, and Beats. Just pick the technology you’re using and then copy the snippet with your hostnames pre-populated.
+Most tools and clients available support multiple hosts. To make it easy for you, we include connection snippets in the
+ObjectRocket UI for Python&reg;, Ruby, C#, Java&reg;, Javascript&reg;, Go, Logstash, and Beats. Just pick the technology
+you’re using and then copy the snippet with your hostnames pre-populated.
 
 {{<img src="picture3.png" title="" alt="">}}
 
-#### Alternatives for applications that won’t take multiple hosts
+### Alternatives for applications that won’t take multiple hosts
 
-A few applications don’t make a list of hosts. The most notable is [Kibana](https://www.objectrocket.com/resource/why-use-kibana-for-data-visualization/), which accepts a single host. To work around this, there are a couple of alternatives.
+A few applications don’t make a list of hosts. The most notable is [Kibana&reg;](https://www.objectrocket.com/resource/why-use-kibana-for-data-visualization/), which accepts a single host. To work around this, you can use a couple of alternatives.
 
 #### Point each part of your app at a different client
 
-For non-mission-critical uses and applications, it is acceptable to point at a single client node. Unless the application has a super-high request rate, a single client should be able to manage the load. If you have a number of these types of applications, just point each one at a different client to balance the load.
+For non-mission-critical uses and applications, you can point at a single client node. Unless the application has a
+super-high request rate, a single client should be able to manage the load. If you have a number of these types of
+applications, just point each one at a different client to balance the load.
 
 #### Load balance locally
 
-In the few cases where the client/application doesn’t support it and you  need redundancy in client connections, you can set up local load-balancing. You can do this with nginx&reg; and HAProxy&reg;and others, or just set up a local hostname in DNS (Domain Name System) that will round-robin between the Elasticsearch clients. Once again, we see very few cases where this is necessary, but there are solutions available when it does come up.
+In the few cases where the client or application doesn’t support it, and you need redundancy in client connections, you
+can set up local load-balancing. You can do this with nginx&reg;, HAProxy&reg;, and others, or just set up a local hostname
+in Domain Name System (DNS) that uses round-robin between the Elasticsearch clients. Once again, we see very few cases where
+this is necessary, but there are solutions available when it does come up.
 
 ### Conclusion
 
-Almost every scenario you come across will allow you to supply a list of hosts that handle the balancing for you, but, in a pinch, there are examples out there to help you load balance locally.
+Almost every scenario you come across allows you to supply a list of hosts that handle the balancing for you, but, in a pinch,
+there are examples out there to help you load balance locally.
 
 <a class="cta red" id="cta" href="https://www.rackspace.com/data/dba-services">Learn more about Rackspace DBA Services.</a>
 
