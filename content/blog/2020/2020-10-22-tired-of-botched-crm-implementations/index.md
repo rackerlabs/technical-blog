@@ -39,7 +39,7 @@ was intended)? This experience is a common struggle many businesses have encount
 ### Introduction
 
 Leaders invest in applications with only the best intentions. They want to empower their
-users with a management solution (other than excel) that efficiently tracks opportunities
+users with a management solution (other than Excel&reg;) that efficiently tracks opportunities
 and customer information. Leaders even engage subject matter experts and invest in training
 support to help improve end-user adoption. Yet despite these best efforts, implementations
 still fail.
@@ -94,7 +94,7 @@ overview shows everything included in Dynamics 365 Sales OnTrack:
 -  OnTrack training access
 
 **Break/fix support** is included in all plans, but the Premium and Preferred plans include
-support for *How-do-I** questions. This support provides users access to experienced Dynamics
+support for *How-do-I* questions. This support provides users access to experienced Dynamics
 365 Sales professionals for basic questions, without worrying about being charged for every
 question they ask. 
 
@@ -114,7 +114,7 @@ creates a system that is so complicated, no one knows how to operate it properly
 
 I compare this to going to the grocery store hungry. You start adding things to your cart
 that weren't on your list.  Then you get home and realize you don't have enough room in
-your refrigerator (or belly) for all that food! YOu waste lots of money and literally throw
+your refrigerator (or belly) for all that food! You waste lots of money and literally throw
 food in the garbage. 
 
 Staying on the grocery shopping analogy, assume you are trying a new recipe for the first
