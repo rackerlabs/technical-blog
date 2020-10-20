@@ -82,7 +82,7 @@ priority for AWS. This is no secret because Amazon has released many security fe
 the years for easy adoption. It can be challenging to align all of this into a cohesive
 solution without having a dedicated team to set up and manage the security features. 
 
-Rackspace Cloud-Native Security 
+### Rackspace Cloud-Native Security 
 
 Rackspace's Cloud-Native Security (CNS) [Service Block](https://www.rackspace.com/cloud/public/service-blocks)
 is a managed security service offering that brings in a dedicated 24/7 Security Operations
