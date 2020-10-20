@@ -1,3 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://cdn.jsdelivr.net/npm/instantsearch.css@7.3.1/themes/algolia-min.css");
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css");
+
 /* Base */
 @import "base/palette.scss";
 @import "base/typography.scss";
@@ -26,6 +34,9 @@
 @import "components/announcement.scss";
 @import "components/docs.scss";
 @import "components/blog.scss";
+@import "components/spin-up.scss";
+@import "components/docs-apis.scss";
+@import "components/rack-cli.scss";
 
 /* Pages */
 @import "pages/page-about.scss";

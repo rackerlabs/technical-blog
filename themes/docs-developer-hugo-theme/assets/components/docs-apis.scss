@@ -1,0 +1,85 @@
+
+.docs-apis {
+    h1 {
+        font-family: 'titillium-bold',arial,sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        margin-bottom: .25em;
+    }
+    h1+p {
+        margin: 0 auto;
+    }
+    .tools-promos {
+        .promo {
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            padding: 5rem;
+        }
+    }
+    .card {
+        box-shadow: 0 0 0 rgba(0,0,0,.25);
+        margin-bottom: 1.5em;
+        -webkit-transition: all .1s ease-out;
+        -ms-transition: all .1s ease-out;
+        transition: all .1s ease-out;
+        width: calc(100% - 2px);
+        .card-content {
+            border: 1px solid #e6e6e6;
+            border-bottom-left-radius: 1px;
+            border-bottom-right-radius: 1px;
+            border-top: 0;
+        }
+        .card-image {
+            padding-top: 20px;
+            svg {
+                height: 36px;
+                width: 36px;
+            }
+        }
+        .card-title {
+            padding: .5em .5em 0;
+            border-top-left-radius: 2px;
+            border-top-right-radius: 2px;
+        }
+        .card-body {
+            padding: 3em 30px;
+        }
+        .card-action {
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 1.5em;
+            text-transform: uppercase;
+        }
+        .card-subtitle {
+            display: inline-block;
+            text-transform: uppercase;
+            span {
+                background: #fff;
+                .fa {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    .card.yellow {
+        border-top: solid 1px #e6e6e6;
+        .card-subtitle {
+            color: #efc75e;
+        }
+        .card-action {
+            color: #efc75e;
+        }
+        .card-subtitle:before {
+            background: #efc75e;
+        }
+    }
+    .card.red {
+        border-top: solid 1px #e6e6e6;
+        .card-subtitle {
+            color: #e74c3c;
+        }
+        .card-subtitle:before {
+            background: #e74c3c;
+        }
+    }
+}
