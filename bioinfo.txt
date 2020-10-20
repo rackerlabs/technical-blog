@@ -505,6 +505,11 @@ bio: "I am an enthusiastic, self-motivated, reliable, responsible, punctual,
 dedicated, organized, methodical, hard working, and fun-loving person having 7+
 years of rich experience in Computer networking and network security."
 
+Marshall, Joe
+authorAvatar: n/a
+bio: "Joe is a web application developer, independent security researcher, 
+and writer. His first book, Hands-On Bug Hunting for Penetration Testers, is out now."
+
 Mattson, Josh
 authorAvatar: 'http://www.gravatar.com/avatar/791617263c70278859e1b26c15d13eab'
 bio: n/a
