@@ -217,7 +217,7 @@ ghrepo_new = "https://github.com/rackerlabs/technical-blog/issues/new"
 images = ["/img"]
 
 [params.algolia]
-  vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink", "description", "created_by", "created_date", "last_modified_by", "last_modified_date", "author"]
+  vars = ["title", "summary", "date", "permalink", "description", "author", "content", "order", "cannonical"]
   params = ["categories", "tags", "description", "author"]
 
 
