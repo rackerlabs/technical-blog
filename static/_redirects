@@ -1,1 +1,3 @@
-/getLatestKialiOperator https://raw.githubusercontent.com/kiali/kiali-operator/master/deploy/deploy-kiali-operator.sh
+# Main Redirects
+
+/  /blog  200
