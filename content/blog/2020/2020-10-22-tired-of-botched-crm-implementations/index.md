@@ -73,15 +73,15 @@ support.
 
 ### Dynamics 365 Sales OnTrack Packages
 
-There are three packages to choose from: Premium, Preferred, and Basic.  The Basic plan is
-for customers who are comfortable implementing and learning the solution on their own but
-want access to training material and self-directed support. On the other hand, Premium and
-Preferred packages are for customers looking for more hands-on support as they implement
-and learn how to use Dynamics 365 Sales.
+There are three packages to choose from: Premium, Preferred, and Essentials. The Essentials
+plan is for customers who are comfortable implementing and learning the solution on their
+own but want access to training material and self-directed support. On the other hand,
+Premium and Preferred packages are for customers looking for more hands-on support as they
+implement and learn how to use Dynamics 365 Sales.
 
 We base the packages on fixed-fee pricing, consisting of a one-time initial configuration
-fee plus a monthly fee based on the number of users and package selected. The following
-overview shows everything included in Dynamics 365 Sales OnTrack: 
+fee plus a monthly fee based on the number of users and package selected. Dynamics 365
+Sales OnTrack includes the following elements: 
 
 -  Configuration of one Dynamics 365 Sales business unit
 -  Data-migration
