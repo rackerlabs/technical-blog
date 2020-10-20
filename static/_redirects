@@ -1,3 +1,4 @@
 # Main Redirects
 
-/  /blog  200
+/blog  /  200
+
