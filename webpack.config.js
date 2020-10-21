@@ -41,6 +41,7 @@ module.exports = {
       // from .env.js
       ALGOLIA_APP_ID: JSON.stringify(process.env.ALGOLIA_APP_ID),
       ALGOLIA_SEARCH_KEY: JSON.stringify(process.env.ALGOLIA_SEARCH_KEY),
-      ALGOLIA_BLOG_INDEX: JSON.stringify(process.env.ALGOLIA_BLOG_INDEX)
+      ALGOLIA_BLOG_INDEX: JSON.stringify(process.env.ALGOLIA_BLOG_INDEX),
+      AlGOLIA_SUPPORT_INDEX: JSON.stringify(process.env.AlGOLIA_SUPPORT_INDEX)
     })],
 };
