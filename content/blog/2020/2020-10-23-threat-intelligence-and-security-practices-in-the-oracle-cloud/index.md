@@ -5,7 +5,7 @@ date: 2020-10-23
 comments: true
 author: Nishant Singh
 authorAvatar: 'https://s.gravatar.com/avatar/c5f65aef94a507631cbafce24ca162bc'
-bio: "I'm and Oracle Functional Consultant with 10+ years of experience."
+bio: "I'm an Oracle Functional Consultant with 10+ years of experience."
 published: true
 authorIsRacker: true
 categories:
