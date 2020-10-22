@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to connect to multiple Elasticsearch client nodes without a load balancer"
+title: "How to connect to multiple Elasticsearch client nodes without a load balancer&mdash;Part One"
 date: 2020-10-26
 comments: true
 author: Steve Croce
@@ -18,11 +18,11 @@ authorIsRacker: true
 categories:
     - Database
     - ObjectRocket
-metaTitle: "How to connect to multiple Elasticsearch client nodes without a load balancer"
+metaTitle: "How to connect to multiple Elasticsearch client nodes without a load balancer&mdash;Part One"
 metaDescription: "Learn how to set up a load balancer with Elasticsearch."
-ogTitle: "How to connect to multiple Elasticsearch client nodes without a load balancer"
+ogTitle: "How to connect to multiple Elasticsearch client nodes without a load balancer&mdash;Part One"
 ogDescription: "Learn how to set up a load balancer with Elasticsearch."
-slug: "how-to-connect-to-multiple-elasticsearch-client-nodes-without-a-load-balancer"
+slug: "how-to-connect-to-multiple-elasticsearch-client-nodes-without-a-load-balancer-part-one"
 canonical: https://www.objectrocket.com/blog/elasticsearch/elasticsearch-and-load-balancers/
 
 ---
