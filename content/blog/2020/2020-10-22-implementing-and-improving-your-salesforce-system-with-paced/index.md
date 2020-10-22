@@ -18,7 +18,8 @@ slug: "implementing-and-improving-your-salesforce-system-with-paced"
 
 ---
 
-Use PACED for a successful technology implementation experience.
+Use PACED for a successful technology implementation experience so that your
+systems stays relevant as you continue to evolve your business.
 
 <!--more-->
 
