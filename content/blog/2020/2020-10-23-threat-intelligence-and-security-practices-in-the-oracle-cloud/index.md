@@ -114,7 +114,7 @@ environment:
    to analyze the threat and to link the information with specific actions that can block,
    prevent, or mitigate the threat. For example, when a SQL Injection (SQLI) attack occurs,
    a security response team can introduce a blocking signature in the Web Application
-   Firewall (WAF) or perform a code change and patch a vulnerability.
+   Firewall (WAF) or perform a code change and patch a vulnerability."
  
 #### Threat Intelligence and DevSecOps
 
@@ -122,7 +122,7 @@ environment:
 continues, "Threat intelligence is primarily used by security teams, whether pen testers,
 security incident responders, or security architects, to defend and mitigate against
 emerging threats during operate and monitor phases of the DevSecOps cycle. It's also a
-valuable source of information for many roles in a DevSecOps culture and engineering model."
+valuable source of information for many roles in a DevSecOps culture and engineering model.
 
 {{<img src="Picture5.png" title="" alt="">}}
 
@@ -148,7 +148,7 @@ commonly performed in the code (design) phase of DevSecOps."
 1. "Ensure we can accurately and consistently identify and assess threats against Oracle SaaS.
  
 2. "Adjust the prioritization of security DevSecOps engineering activities and projects
-   based on findings from our threat intelligence program."
+   based on findings from our threat intelligence program.
  
 3. "Collaborate and share our feeds, analysis, and insights with other security lines of
    business inside Oracle."
