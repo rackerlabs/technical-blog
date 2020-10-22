@@ -47,13 +47,13 @@
   # don't launch browser automatically
   autoLaunch = false
 
-[[plugins]]
-  package = "@netlify/plugin-sitemap"
+# [[plugins]]
+#   package = "@netlify/plugin-sitemap"
 
-  [plugins.inputs]
-  buildDir = "public"
-  prettyURLs = true
-  trailingSlash = true
+#   [plugins.inputs]
+#   buildDir = "public"
+#   prettyURLs = true
+#   trailingSlash = true
 
 
 [[plugins]]
