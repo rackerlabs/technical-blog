@@ -16,7 +16,6 @@ metaDescription: "This post introduces the concept of Threat Intelligence."
 ogTitle: "Threat Intelligence and security practices in the Oracle Cloud"
 ogDescription: "This post introduces the concept of Threat Intelligence."
 slug: "threat-intelligence-and-security-practices-in-the-oracle-cloud"
-
 ---
 
 [The Oracle&reg; Cloud Security Practices team](https://www.oracle.com/corporate/security-practices/),
