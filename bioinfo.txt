@@ -400,6 +400,14 @@ over developing the Rackspace DBA Services offering to flesh out the capabilitie
 while working side by side with sales stakeholders, solutions architects, customer
 success managers, and service delivery engineers."
 
+Kalar, Erika
+authorAvatar: n/a
+bio: "I'm a content jack-of-all-trades. From large, complex websites and apps to 
+trade show digital experiences, social media, and press releases, I've delivered 
+content in just about every form. My blend of technical writing, UX product writing,
+and content marketing experience has served me well in every position 
+I've held over the years."
+
 Kalkhundiya, Kailash
 authorAvatar: 'https://gravatar.com/avatar/36ea6795bf5e6bfc103f34a38a303060'
 bio: "I'm an Oracle DBA with experience on the different flavors of Oracle RDBMS.
