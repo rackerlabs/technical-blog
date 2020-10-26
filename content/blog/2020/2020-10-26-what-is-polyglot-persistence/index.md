@@ -4,7 +4,6 @@ title: "What is polyglot persistence?"
 date: 2020-10-26
 comments: true
 author: Erika Kalar
-authorAvatar: 'n/a'
 bio: "I'm a content jack-of-all-trades. From large, complex websites and apps to 
 trade show digital experiences, social media, and press releases, I've delivered 
 content in just about every form. My blend of technical writing, UX product writing,
