@@ -9,6 +9,7 @@ contentLoaded().then(() => {
    */
   try {
     let lastRenderArgs;
+    let renderHTML = ``;
 
     const infiniteHits = instantsearch.connectors.connectInfiniteHits(
       (renderArgs, isFirstRender) => {
@@ -43,89 +44,49 @@ contentLoaded().then(() => {
         container.querySelector('ul').innerHTML = hits
           .map(
             (hit) => {
-              let renderHTML = ``;
               const entities = new Entities();
-              if (hit.categories != null && hit.date != null && hit.date != '' && hit.url != null && hit.author != null) {
-                renderHTML += `<li class="hit-item-single">
-                <div class="row">
-                  <div class="col-sm-12">
-                    <p class="search-product">
-                      <a class="search-product-link" href="/blog/">Blog</a> &nbsp; > &nbsp; <a class="search-product-link" href=/blog/${hit.categories}>${hit.categories}</a>
-                    </p> 
-                    <h2>
-                      <a class="search-title" href=/blog/${hit.url}>${instantsearch.highlight({ attribute: 'title', hit })}</a>
-                    </h2>
-                    <a class="search-summary-link" href=/blog/${hit.url}>
-                      <p class="search-summary">${instantsearch.highlight({ attribute: 'content', hit })}</p>
-                    </a>
-                    <span class="search-author" > By &nbsp; ${instantsearch.highlight({ attribute: 'author', hit })}</span>
-                    <span class="search-date">${moment(hit.date).format('LL')}</span> 
+              if (hit.categories) {
+                if (hit.categories != null && hit.date != null && hit.date != '' && hit.url != null && hit.author != null) {
+                  renderHTML += `<li class="hit-item-single">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <p class="search-product">
+                        <a class="search-product-link" href="/blog/">Blog</a> &nbsp; > &nbsp; <a class="search-product-link" href=/blog/${hit.categories}>${hit.categories}</a>
+                      </p> 
+                      <h2>
+                        <a class="search-title" href=/blog/${hit.url}>${instantsearch.highlight({ attribute: 'title', hit })}</a>
+                      </h2>
+                      <a class="search-summary-link" href=/blog/${hit.url}>
+                        <p class="search-summary">${instantsearch.highlight({ attribute: 'content', hit })}</p>
+                      </a>
+                      <span class="search-author" > By &nbsp; ${instantsearch.highlight({ attribute: 'author', hit })}</span>
+                      <span class="search-date">${moment(hit.date).format('LL')}</span> 
+                  </div>
                 </div>
-              </div>
-            </li>`;
-                return entities.decode(renderHTML);
-              } else {
-                return `<span></span>`;
-              }
-            }
-          )
-          .join('');
-      }
-    );
-    const supportInfiniteHits = instantsearch.connectors.connectInfiniteHits(
-      (renderArgs, isFirstRender) => {
-        const {
-          hits,
-          showMore,
-          widgetParams
-        } = renderArgs;
-        const {
-          container
-        } = widgetParams;
-
-        lastRenderArgs = renderArgs;
-
-        if (isFirstRender) {
-          const sentinel = document.createElement('div');
-          container.appendChild(document.createElement('ul'));
-          container.appendChild(sentinel);
-          const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-              if (entry.isIntersecting && !lastRenderArgs.isLastPage) {
-                showMore();
-              }
-            });
-          });
-
-          observer.observe(sentinel);
-
-          return;
-        }
-
-        container.querySelector('ul').innerHTML = hits
-          .map(
-            (hit) => {
-              let renderHTML = ``;
-              const entities = new Entities();
-              if (hit.product_url != null && hit.created_by != null && hit.created_by != '' && hit.created_date != null && !hit.permalink.includes('all-articles')) {
-                renderHTML += `<li class="hit-item-single">
-                <div class="row">
-                  <div class="col-sm-12">
-                    <p class="search-product">
-                      <a class="search-product-link" href="/support/how-to/">How-To</a> &nbsp; > &nbsp; <a class="search-product-link" href=/support/how-to/${hit.product_url}>${hit.product}</a>
-                    </p> 
-                    <h2>
-                      <a class="search-title" href=/support/how-to/${hit.permalink}>${instantsearch.highlight({ attribute: 'title', hit })}</a>
-                    </h2>
-                    <a class="search-summary-link" href=/support/how-to/${hit.permalink}>
-                      <p class="search-summary">${instantsearch.highlight({ attribute: 'content', hit })}</p>
-                    </a>
-                    <span class="search-author" > By &nbsp; ${instantsearch.highlight({ attribute: 'created_by', hit })}</span>
-                    <span class="search-date">${hit.last_modified_date}</span> 
+              </li>`;
+                  return entities.decode(renderHTML);
+                }
+              } else if (hit.product) {
+                if (hit.product_url != null && hit.created_by != null && hit.created_by != '' && hit.created_date != null && !hit.permalink.includes('all-articles')) {
+                  renderHTML += `<li class="hit-item-single">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <p class="search-product">
+                        <a class="search-product-link" href="/support/how-to/">How-To</a> &nbsp; > &nbsp; <a class="search-product-link" href=/support/how-to/${hit.product_url}>${hit.product}</a>
+                      </p> 
+                      <h2>
+                        <a class="search-title" href=/support/how-to/${hit.permalink}>${instantsearch.highlight({ attribute: 'title', hit })}</a>
+                      </h2>
+                      <a class="search-summary-link" href=/support/how-to/${hit.permalink}>
+                        <p class="search-summary">${instantsearch.highlight({ attribute: 'content', hit })}</p>
+                      </a>
+                      <span class="search-author" > By &nbsp; ${instantsearch.highlight({ attribute: 'created_by', hit })}</span>
+                      <span class="search-date">${hit.last_modified_date}</span> 
+                  </div>
                 </div>
-              </div>
-            </li>`;
-                return entities.decode(renderHTML);
+              </li>`;
+                  return entities.decode(renderHTML);
+                } 
               } else {
                 return `<span></span>`;
               }
@@ -177,12 +138,10 @@ contentLoaded().then(() => {
       indexName: ALGOLIA_BLOG_INDEX,
       searchClient: searchClient,
       searchFunction(helper) {
-        const blogHitsContainer = document.querySelector('#blogHits');
-        const supportHitsContainer = document.querySelector('#supportHits');
+        const hitsContainer = document.querySelector('#hits');
         const paginationContainer = document.querySelector('#pagination');
         const statsContainer = document.querySelector('#stats');
-        blogHitsContainer.style.display = helper.state.query === '' ? 'none' : '';
-        supportHitsContainer.style.display = helper.state.query === '' ? 'none' : '';
+        hitsContainer.style.display = helper.state.query === '' ? 'none' : '';
         paginationContainer.style.display = helper.state.query === '' ? 'none' : '';
         statsContainer.style.display = helper.state.query === '' ? 'none' : '';
         helper.search();
@@ -212,12 +171,12 @@ contentLoaded().then(() => {
         ]
       }),
       instantsearch.widgets.index({ indexName: AlGOLIA_SUPPORT_INDEX }).addWidgets([
-        supportInfiniteHits({
-          container: document.querySelector('#supportHits')
+        infiniteHits({
+          container: document.querySelector('#hits')
         }),
       ]),
       infiniteHits({
-        container: document.querySelector('#blogHits')
+        container: document.querySelector('#hits')
       }),
       customStats({
         container: document.querySelector('#stats'),
@@ -228,7 +187,7 @@ contentLoaded().then(() => {
     console.warn(err)
   }
   /**
-   * Actvate smooth scrolling for the entire
+   * Activate smooth scrolling for the entire
    * website for hash links
    */
   SmoothScroll();
