@@ -68,6 +68,7 @@ server for this demo. Download the file
 {{<img src="Picture1.png" title="" alt="">}}
 
 <br>
+<br>
 
 2. Select the tables that are needed to be archived. The ones not supporting StretchDB
    display greyed out.
@@ -75,11 +76,13 @@ server for this demo. Download the file
 {{<img src="Picture2.png" title="" alt="">}}
 
 <br>
+<br>
 
 3. When prompted, sign in to your Azure environment.
 
 {{<img src="Picture3.png" title="" alt="">}}
 
+<br>
 <br>
 
 4. After you sign in to your Azure account, select the subscription and region where you
@@ -88,11 +91,13 @@ server for this demo. Download the file
 {{<img src="Picture4.png" title="" alt="">}}
 
 <br>
+<br>
 
 5. Provide the password for DMK.
 
 {{<img src="Picture5.png" title="" alt="">}}
 
+<br>
 <br>
 
 6. Create an Azure firewall rule for communication.
@@ -100,11 +105,13 @@ server for this demo. Download the file
 {{<img src="Picture6.png" title="" alt="">}}
 
 <br>
+<br>
 
 7. Review the summary and click **Finish**.
 
 {{<img src="Picture7.png" title="" alt="">}}
 
+<br>
 <br>
 
 8. On successful completion, the following screen displays. We can also check the generated
@@ -112,6 +119,7 @@ server for this demo. Download the file
 
 {{<img src="Picture8.png" title="" alt="">}}
 
+<br>
 <br>
  
 9. Now, let's verify the data migrated to Azure SQL DBs. Connect to Azure SQL DB from your
@@ -121,11 +129,13 @@ server for this demo. Download the file
 {{<img src="Picture9.png" title="" alt="">}}
 
 <br>
+<br>
 
 The following image shows the table we created:
 
 {{<img src="Picture10.png" title="" alt="">}}
 
+<br>
 <br>
  
 ### Conclusion 
