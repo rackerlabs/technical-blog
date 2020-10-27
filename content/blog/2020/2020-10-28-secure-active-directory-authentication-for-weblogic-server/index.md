@@ -20,8 +20,8 @@ slug: "secure-active-directory-authentication-for-weblogic-server"
 
 ---
 
-This post explains how to secure Microsoft&reg; Active Directory (AD) authentication by
-using Secure Sockets Layer (SSL).
+This post explains how to secure Microsoft&reg; Active Directory&reg; (AD) authentication
+by using Secure Sockets Layer (SSL).
 
 <!--more-->
 
@@ -53,7 +53,6 @@ authenticates the credentials through myRealm based on the configuration.
            
 *Image source: [https://subscription.packtpub.com/book/networking_and_servers/9781849686969/8/ch08lvl1sec62/using-an-external-ldap-server](https://subscription.packtpub.com/book/networking_and_servers/9781849686969/8/ch08lvl1sec62/using-an-external-ldap-server)*
 
-<br>
 <br>
       
 LDAP is the bridge that connects WebLogic with AD.
@@ -150,10 +149,8 @@ certificates.
 
 - **Root Certificate**: A root certificate is a digital certificate that belongs to the
   issuing CA, which closely guards the root certificate.
- 
 - **Intermediate Certificate**: Intermediate certificates act as middlemen between the
   protected root certificates and the server certificates issued out to the public. 
- 
 - **Server Certificate**: The server certificate is the one issued to a specific domain.
 
 ### Step 2: Receive the certificate from the Authority and import it to the KeyStore
@@ -310,9 +307,6 @@ The following example is for non-secure authentications. However, after you impl
 the connection should be secure.
   
 {{<img src="Picture5.png" title="" alt="">}}
-
-<br>
-<br>
 
 ### Conclusion
 
