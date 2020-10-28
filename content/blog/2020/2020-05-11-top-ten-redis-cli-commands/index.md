@@ -13,7 +13,7 @@ metaTitle: "Top ten Redis CLI commands"
 metaDescription: "Redis uses a very straightforward command line interface. Though it’s relatively simple, it does provide some interesting features that one might not expect. Let’s go over some of the basics and work our way around most of the client’s functionality and features."
 ogTitle: "Top ten Redis CLI commands"
 ogDescription: "Redis uses a very straightforward command line interface. Though it’s relatively simple, it does provide some interesting features that one might not expect. Let’s go over some of the basics and work our way around most of the client’s functionality and features."
-slug: "rackspace offers data modernization" 
+slug: "top ten redis cli commands"
 ---
 
 *Originally published on April 14, 2015, at ObjectRocket.com/blog.*
@@ -113,12 +113,12 @@ To generate some simple diagnostic information about the Redis instance that you
 
     cweid@strange:~$ redis-cli -h 127.0.0.1 -p 6379 -a mysupersecretpassword --stat
     ------- data ------ --------------------- load -------------------- - child -
-    keys       mem      clients blocked requests            connections          
-    0          790.80K  1       0       122 (+0)            16          
-    0          790.80K  1       0       123 (+1)            16          
-    0          790.80K  1       0       124 (+1)            16          
-    0          790.80K  1       0       125 (+1)            16          
-    0          790.80K  1       0       126 (+1)            16          
+    keys       mem      clients blocked requests            connections
+    0          790.80K  1       0       122 (+0)            16
+    0          790.80K  1       0       123 (+1)            16
+    0          790.80K  1       0       124 (+1)            16
+    0          790.80K  1       0       125 (+1)            16
+    0          790.80K  1       0       126 (+1)            16
 
 This command provides the following information:
 

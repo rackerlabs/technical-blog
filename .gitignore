@@ -14,5 +14,8 @@ dist/
 resources/_gen
 
 # Don't add files that are created in the build process
-
 static/assets
+
+# Vale local styles
+.github/styles/Google
+.github/styles/Microsoft

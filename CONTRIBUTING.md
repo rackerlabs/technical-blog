@@ -59,9 +59,13 @@ We encourage a triangular workflow in GitHub as a best practice.
    git branch master -u upstream/master
    ```
 
-1. Install the build tools on your local machine by using the following command:
+1. Install the build tools on your local machine by using one of the following commands:
 
    ```make install hugo```
+   
+   or
+   
+   ```brew install hugo```
   
 ## Create your blog post
 
