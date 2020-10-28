@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Are you prepared for disaster recovery a comparison of public cloud options"
+title: "Are you prepared for disaster recovery? A comparison of public cloud options&mdash;Part One"
 date: 2020-10-22
 comments: true
 author: Zahid Mustafa
@@ -10,11 +10,14 @@ published: true
 authorIsRacker: true
 categories:
     - General
-metaTitle: "Are you prepared for disaster recovery a comparison of public cloud options"
-metaDescription: "."
-ogTitle: "Are you prepared for disaster recovery a comparison of public cloud options"
-ogDescription: "."
-slug: "are-you-prepared-for-disaster-recovery-a-comparison-of-public-cloud-options"
+    - DevOps
+metaTitle: "Are you prepared for disaster recovery? A comparison of public cloud options&mdash;Part One"
+metaDescription: "This is part one of a three-part series explores disaster-recovery options, from models to
+environments to public cloud offerings. Are you ready?"
+ogTitle: "Are you prepared for disaster recovery? A comparison of public cloud options&mdash;Part One"
+ogDescription: "This is part one of a three-part series explores disaster-recovery options, from models to
+environments to public cloud offerings. Are you ready?"
+slug: "are-you-prepared-for-disaster-recovery-a-comparison-of-public-cloud-options-part-one"
 
 ---
 
@@ -138,10 +141,10 @@ environment at a secondary site. Both sites are active and share the day-to-day 
 load. In a disaster situation, the secondary site takes over and is sized sufficiently to
 handle normal production loads. 
 
-### Coming Soon
+### What's next?
 
-Part two of this series on disaster preparation continues is coming next week, so be sure
-to come back and learn more.
+Check out [Part two](https://docs.rackspace.com/blog/are-you-prepared-for-disaster-recovery-a-comparison-of-public-cloud-options-part-two/)
+of this series on disaster preparation.
 
 <a class="cta red" id="cta" href="https://www.rackspace.com/professional-services">Learn more about our Professional Services.</a>
 
