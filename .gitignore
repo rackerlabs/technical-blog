@@ -13,4 +13,6 @@ dist/
 .tmp/
 resources/_gen
 
-# Don't add files that are created in the build process
+# Vale local styles
+.github/styles/Google
+.github/styles/Microsoft

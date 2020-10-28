@@ -400,6 +400,14 @@ over developing the Rackspace DBA Services offering to flesh out the capabilitie
 while working side by side with sales stakeholders, solutions architects, customer
 success managers, and service delivery engineers."
 
+Kalar, Erika
+authorAvatar: n/a
+bio: "I'm a content jack-of-all-trades. From large, complex websites and apps to 
+trade show digital experiences, social media, and press releases, I've delivered 
+content in just about every form. My blend of technical writing, UX product writing,
+and content marketing experience has served me well in every position 
+I've held over the years."
+
 Kalkhundiya, Kailash
 authorAvatar: 'https://gravatar.com/avatar/36ea6795bf5e6bfc103f34a38a303060'
 bio: "I'm an Oracle DBA with experience on the different flavors of Oracle RDBMS.
@@ -474,9 +482,12 @@ infrastructure and services. Roman is a high-energy, hands-on leader whose
 knowledge and experience of threat trends helps develop and create powerful
 mitigation strategies through Fanatical Support."
 
-Lee, Kiat
-authorAvatar: n/a
-bio: "I am a Technical Consultant at Rackspace Technology."
+Lee, Kiat Lian
+authorAvatar: 'https://s.gravatar.com/avatar/16df6abbd9b443cd7329e381df239dc7'
+bio: "Lee is Technical Consultant of Advisory Services, Rackspace Technology,
+South East Asia. Over 25 years in PS consultancy services, his area of expertise
+includes cloud architecture design, IAM and cloud security solutioning, DevSecOps
+adoption and transformation, cloud migration assessment, and adoption strategy."
 
 Levy, Michael
 authorAvatar: 'https://s.gravatar.com/avatar/1f70cf15c8fb3ae717b55c61c5ad6eb5'
@@ -504,6 +515,11 @@ authorAvatar: 'https://s.gravatar.com/avatar/35e95902333a1613f6bc516a411d8ee3'
 bio: "I am an enthusiastic, self-motivated, reliable, responsible, punctual,
 dedicated, organized, methodical, hard working, and fun-loving person having 7+
 years of rich experience in Computer networking and network security."
+
+Marshall, Joe
+authorAvatar: n/a
+bio: "Joe is a web application developer, independent security researcher, 
+and writer. His first book, Hands-On Bug Hunting for Penetration Testers, is out now."
 
 Mattson, Josh
 authorAvatar: 'http://www.gravatar.com/avatar/791617263c70278859e1b26c15d13eab'
@@ -536,6 +552,12 @@ investigations."
 Mishra, Manoj
 authorAvatar: 'https://s.gravatar.com/avatar/9498305cda9dc4fe9d8f5873b09ff1e2'
 bio: n/a
+
+Misra, Vashali
+authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U7D5AHGAU-bbe8d4bb28c6-512'
+bio: "I am a SQL Server DBA at Rackspace Technology APJ Region. My area of expertise is
+SQL Server, and I'm slowly and steadily gaining experience into the cloud technologies. I
+have 9 Years of experience with major projects like Dowjones, MarketWatch, Regeneron, etc."
 
 Mora, Marcus
 authorAvatar: 'https://s.gravatar.com/avatar/fda78cf603258190627b41b20b3f3d61'
@@ -570,6 +592,12 @@ bio: n/a
 Pandey, Amit kumar
 authorAvatar: 'https://s.gravatar.com/avatar/c6bddf3d409b0e1975d01962a7317e2b'
 bio: n/a
+
+Pandey, Laxmi
+authorAvatar: 'https://s.gravatar.com/avatar/d73e3eeb196b5f3992a38b072e1a7760'
+bio: "With 9+ years of professional experience in IT industry, I am a good observer,
+learner, and deliberative person. I handle responsibilities smoothly and manage my
+work-life balance."
 
 Parsons, Will
 authorAvatar: 'https://gravatar.com/avatar/7e23218fb3986389a7eb5a7d488d6cc1'
@@ -635,6 +663,15 @@ bio: "John Ross is a Senior Product Manager at Rackspace for SAP Solutions and
 Services. He has more than 20 years of experience in technology working with a
 wide variety of customers across multiple industries. John is based in Orlando,
 Florida. Follow him on Twitter at **@johnrossjr**."
+
+Rossmeir, Paul
+authorAvatar: 'https://s.gravatar.com/avatar/6ac8427cdb85521fd14f1bceb8702e69'
+bio: "Paul began his Rackspace career in 2013 as a member of the Cloud Office team.
+He then worked on RAX GTS Linux before transitioning to a Data management role. He is
+currently a Database administrator with certifications as an Elasticsearch engineer
+and a Red Hat Certified administrator. Paul has been happily married for 17 years with two
+children. He enjoys learning new technologies, collecting video game memorabilia and
+moonlighting as a turntable DJ."
 
 Rozin, Maxim
 authorAvatar: ''
@@ -708,6 +745,10 @@ an OCI-certified cloud DBA with expertise in Oracle Database 9i, 10g, 11g,12c
 and Oracle E-Business Suite 11i ,R12&R12.2. I also have extensive experience in
 release and change management, project management, and IT infrastructure."
 
+Singh, Nishant
+authorAvatar: 'https://s.gravatar.com/avatar/c5f65aef94a507631cbafce24ca162bc'
+bio: "I'm an Oracle Functional Consultant with 10+ years of experience."
+
 Smith, Andy
 authorAvatar: n/a
 bio: "Andy Smith has been with Rackspace since 2018 and is currently the Senior
@@ -752,6 +793,11 @@ IT experience in various industries, from maintaining data centers for multiple 
 cloud infrastructure for a global media company. With my experience, I now help companies from various
 industries develop solutions for their environment in the cloud and act as a sounding board to advise
 customers on their technical challenges."
+
+Thota, Narayanaswamy
+authorAvatar: 'https://s.gravatar.com/avatar/cfa94cc905a24b77c0001f2d3edfea95'
+bio: "I will find new habits, new thoughts, new rules. I will become something else.
+Today, I have 5+ years of experience in computer networking and network security."
 
 Toews, Everett
 authorAvatar: 'https://www.gravatar.com/avatar/c1a75adb52f40016a480cee292527895'
