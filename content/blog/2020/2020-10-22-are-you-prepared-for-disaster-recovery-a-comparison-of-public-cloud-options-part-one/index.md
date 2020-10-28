@@ -4,8 +4,6 @@ title: "Are you prepared for disaster recovery? A comparison of public cloud opt
 date: 2020-10-22
 comments: true
 author: Zahid Mustafa
-authorAvatar: ''
-bio: ""
 published: true
 authorIsRacker: true
 categories:

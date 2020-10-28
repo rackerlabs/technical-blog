@@ -3,9 +3,7 @@ layout: post
 title: "Are you prepared for disaster recovery? A comparison of public cloud options&mdash;Part Two"
 date: 2020-10-29
 comments: true
-author:
-authorAvatar: ''
-bio: ""
+author: Zahid Mustafa
 published: true
 authorIsRacker: true
 categories:
