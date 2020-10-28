@@ -10,7 +10,12 @@ contentLoaded().then(() => {
   try {
     let lastRenderArgs;
     let renderHTML = ``;
-
+    algoliasearchNetlify({
+      appId: ALGOLIA_NETLIFY_APP_ID,
+      apiKey: ALGOLIA_NETLIFY_SEARCH_KEY,
+      siteId: ALGOLIA_SITE_ID,
+      branch: ALGOLIA_NETLIFY_BRANCH,
+    });
     const infiniteHits = instantsearch.connectors.connectInfiniteHits(
       (renderArgs, isFirstRender) => {
         const {
@@ -116,7 +121,7 @@ contentLoaded().then(() => {
       }
       widgetParams.container.innerHTML = `${count}`;
     };
-    const algoliaClient = algoliasearch(ALGOLIA_APP_ID, ALGOLIA_SEARCH_KEY);
+    const algoliaClient = algoliasearch(ALGOLIA_NETLIFY_APP_ID, ALGOLIA_NETLIFY_SEARCH_KEY);
     const searchClient = {
       search(requests) {
         if (requests.every(({ params }) => !params.query)) {
@@ -135,7 +140,7 @@ contentLoaded().then(() => {
     // Create the custom widget
     const customStats = instantsearch.connectors.connectStats(renderStats);
     const search = instantsearch({
-      indexName: ALGOLIA_BLOG_INDEX,
+      indexName: ALGOLIA_NETLIFY_INDEX,
       searchClient: searchClient,
       searchFunction(helper) {
         const hitsContainer = document.querySelector('#hits');
@@ -170,7 +175,7 @@ contentLoaded().then(() => {
           '*'
         ]
       }),
-      instantsearch.widgets.index({ indexName: AlGOLIA_SUPPORT_INDEX }).addWidgets([
+      instantsearch.widgets.index({ indexName: AlGOLIA_NETLIFY_INDEX }).addWidgets([
         infiniteHits({
           container: document.querySelector('#hits')
         }),
