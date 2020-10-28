@@ -4,8 +4,10 @@ title: "Secure Active Directory authentication for Weblogic Server"
 date: 2020-10-28
 comments: true
 author: Laxmi Pandey
-authorAvatar: ''
-bio: ""
+authorAvatar: 'https://s.gravatar.com/avatar/d73e3eeb196b5f3992a38b072e1a7760'
+bio: "With 9+ years of professional experience in IT industry, I am a good observer,
+learner, and deliberative person. I handle responsibilities smoothly and manage my
+work-life balance."
 published: true
 authorIsRacker: true
 categories:
@@ -195,7 +197,7 @@ Use the following commands to import the certificates in order to the KeyStore,
 
     [user@host cert]$ keytool -import -trustcacerts -alias AliasName_intermediate -file intermediate.cer -keystore your_domain.jks -storepass ****
 
-    [user@host cert]$ keytool -import -trustcacerts -alias Alias_Name -file urmserver.cer -keystore your_domain.jks -storepass ******
+    [user@host cert]$ keytool -import -trustcacerts -alias Alias_Name -file your_domain.cer -keystore your_domain.jks -storepass ******
  
 #### 2C: Validate the KeyStore
 
@@ -253,7 +255,7 @@ you initially fetched to **$DOMAIN_HOME/config/fmwconfig/ovd/default/keystores/a
 
     [user@host cert]$ keytool -import -trustcacerts -alias root -file root.cer -keystore adapters.jks -storepass ***
     [user@host cert]$ keytool -import -trustcacerts -alias intermediate -file Intermediate.cer -keystore adapters.jks -storepass ***
-    [user@host cert]$ keytool -import -trustcacerts -alias urmdev -file host.cer -keystore adapters.jks -storepass ***
+    [user@host cert]$ keytool -import -trustcacerts -alias Alias_Name -file your_domain.cer -keystore adapters.jks -storepass ***
 
 ### Step 4: Secure the provider implementation
 
