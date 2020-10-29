@@ -81,7 +81,7 @@ controls necessary for supporting government customers.
 
 ### Included services
 
-When you choose Rackspace Government Cloud on VMware Private Cloud, you get the following
+When you choose Rackspace Government Cloud on VMware, you get the following
 services, delivered by a team who truly understands the specific requirements of government
 and public sector customers:
 
