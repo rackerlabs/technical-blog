@@ -9,9 +9,38 @@
 <meta name="application-name" content="{{ $title }}" />
 <meta name="msapplication-config" content="/favicons/browserconfig.xml" />
 <meta name="theme-color" content="#ffffff" />
-<meta name="description" content="{{ if .IsHome }}{{ $.Site.Params.description }}{{ else }}{{ .Description }}{{ end }} /">
-{{- with .Keywords -}}
-<meta name="keywords" content="{{ . }}" />
+<meta name="description" content="{{ .Title }}">
+{{ if .Params.summary }}
+<meta name="summary" content="{{ .Params.summary }}">
+{{ else if .Site.Params.summary }}
+<meta name="summary" content="{{ .Site.Params.summary }}">
+{{ else }}
+<meta name="summary" content="{{ .Summary }}">
+{{ end }}
+{{ if .Params.keywords }}
+<meta name="keywords" content="{{ .Params.keywords }}">
+{{ else if .Site.Params.keywords }}
+<meta name="keywords" content="{{ .Site.Params.keywords }}">
+{{ end }}
+<meta property="url" content="{{ .Site.Params.permalink }}">
+<meta property="author" content="{{ .Site.Params.author }}">
+<meta property="date" content="{{ .Site.Params.date }}"> 
+<!-- og meta tags -->
+<meta property="og:url" content="{{ .Site.BaseURL }}">
+{{ if .Params.description }}
+<meta property="og:description" content="{{ .Params.description }}">
+{{ else if .Site.Params.description }}
+<meta property="og:description" content="{{ .Site.Params.description }}">
+{{ end }}
+{{ if .Params.keywords }}
+<meta property="og:keywords" content="{{ .Params.keywords }}">
+{{ else if .Site.Params.keywords }}
+<meta property="og:keywords" content="{{ .Site.Params.keywords }}">
+{{ end }}
+{{- if eq (getenv "HUGO_ENV") "production" | or (eq $.Site.Params.env "production") -}}
+<meta name="robots" content="index, follow" />
+{{- else -}}
+<meta name="robots" content="noindex, nofollow" />
 {{- end -}}
 
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">

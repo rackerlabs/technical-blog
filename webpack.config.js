@@ -39,14 +39,18 @@ module.exports = {
       // Provide enviroment variable defaults
       // from .env
       ALGOLIA_APP_ID: JSON.stringify(process.env.ALGOLIA_APP_ID),
-      ALGOLIA_NETLIFY_APP_ID: JSON.stringify(process.env.ALGOLIA_NETLIFY_APP_ID),
+      ALGOLIA_NETLIFY_BLOG_APP_ID: JSON.stringify(process.env.ALGOLIA_NETLIFY_BLOG_APP_ID),
+      ALGOLIA_NETLIFY_SUPPORT_APP_ID: JSON.stringify(process.env.ALGOLIA_NETLIFY_SUPPORT_APP_ID),
       ALGOLIA_SEARCH_KEY: JSON.stringify(process.env.ALGOLIA_SEARCH_KEY),
-      ALGOLIA_NETLIFY_SEARCH_KEY: JSON.stringify(process.env.ALGOLIA_NETLIFY_SEARCH_KEY),
+      ALGOLIA_NETLIFY_BLOG_SEARCH_KEY: JSON.stringify(process.env.ALGOLIA_NETLIFY_BLOG_SEARCH_KEY),
+      ALGOLIA_NETLIFY_SUPPORT_SEARCH_KEY: JSON.stringify(process.env.ALGOLIA_NETLIFY_SUPPORT_SEARCH_KEY),
       ALGOLIA_BLOG_INDEX: JSON.stringify(process.env.ALGOLIA_BLOG_INDEX),
       ALGOLIA_SUPPORT_INDEX: JSON.stringify(process.env.ALGOLIA_SUPPORT_INDEX),
       ALGOLIA_PUBLIC_INDEX: JSON.stringify(process.env.ALGOLIA_PUBLIC_INDEX),
-      ALGOLIA_NETLIFY_INDEX: JSON.stringify(process.env.ALGOLIA_NETLIFY_INDEX),
+      ALGOLIA_NETLIFY_BLOG_INDEX: JSON.stringify(process.env.ALGOLIA_NETLIFY_BLOG_INDEX),
+      ALGOLIA_NETLIFY_SUPPORT_INDEX: JSON.stringify(process.env.ALGOLIA_NETLIFY_SUPPORT_INDEX),
       ALGOLIA_ADMIN_KEY: JSON.stringify(process.env.ALGOLIA_ADMIN_KEY),
-      ALGOLIA_SITE_ID: JSON.stringify(process.env.ALGOLIA_SITE_ID)
+      ALGOLIA_SITE_ID: JSON.stringify(process.env.ALGOLIA_SITE_ID),
+      ALGOLIA_NETLIFY_BRANCH: JSON.stringify(process.env.ALGOLIA_NETLIFY_BRANCH)
     })],
 };
