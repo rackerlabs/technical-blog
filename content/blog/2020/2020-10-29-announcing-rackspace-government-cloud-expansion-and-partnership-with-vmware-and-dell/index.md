@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Announcing Rackspace Government Cloud on VMware Private Cloud, general release"
+title: "Announcing Rackspace Government Cloud expansion and partnership with VMware and Dell"
 date: 2020-10-29
 comments: true
 author: Lorenzo Winfrey
@@ -33,32 +33,49 @@ published: true
 authorIsRacker: true
 categories:
     - General
-metaTitle: "Announcing Rackspace Government Cloud on VMware Private Cloud, general release"
-metaDescription: "Rackspace is proud to announce the general availability of Rackspace
-Government Cloud (RGC) on VMware&reg; Private Cloud."
-ogTitle: "Announcing Rackspace Government Cloud on VMware Private Cloud, general release"
-ogDescription: "Rackspace is proud to announce the general availability of Rackspace
-Government Cloud (RGC) on VMware&reg; Private Cloud."
-slug: "rackspace-government-cloud-on-vmware-private-cloud-general-release"
+metaTitle: "Announcing Rackspace Government Cloud expansion and partnership with VMware and Dell"
+metaDescription: "Rackspace Technology doubles down on Rackspace Government Cloud (RGC),
+expanding into the U.K. and leveraging strategic partners, VMware® and Dell Technologies&reg;."
+ogTitle: "Announcing Rackspace Government Cloud expansion and partnership with VMware and Dell"
+ogDescription: "Rackspace Technology doubles down on Rackspace Government Cloud (RGC),
+expanding into the U.K. and leveraging strategic partners, VMware® and Dell Technologies&reg;."
+slug: "announcing-rackspace-government-cloud-expansion-and-partnership-with-vmware-and-dell"
 
 ---
 
-Rackspace is proud to announce the general availability of Rackspace Government Cloud (RGC)
-on VMware&reg; Private Cloud.
+Rackspace Technology doubles down on Rackspace Government Cloud (RGC), expanding into the
+U.K. and leveraging strategic partners, VMware&reg; and Dell Technologies&reg;.
 
 <!--more-->
+
+### Announcements
+
+Rackspace Technology (NASDAQ: RXT), a leading end-to-end multicloud technology solutions
+company, recently made the following announcements:
+
+[VMware](https://www.globenewswire.com/news-release/2020/09/29/2100794/0/en/Rackspace-Technology-Makes-Significant-Investment-in-Extending-its-VMware-Multicloud-Solutions.html):
+Rackspace Technology is strengthening our strategic alliance with VMware by expanding our
+managed services across VMware-based multicloud solutions.
+
+[Dell](https://www.globenewswire.com/news-release/2020/09/28/2100021/0/en/Rackspace-Technology-Expands-Options-to-Hybrid-Cloud.html):
+We are working with Dell Technologies to create new modernized solutions for multicloud.
+Rackspace Technology is expanding its Rackspace Private Cloud powered by VMware (RPCV)
+portfolio with the Dell Technologies Cloud Platform (DTCP).
 
 ### Overview
 
 Rackspace offers this solution as a direct result of validated customer demand and
 observation of increasing government customer security requirements, both in the U.S. and
-the U.K. The solution couples the Rackspace-tested and guaranteed-secure VMware platform
-design with a comprehensive, managed, ITIL-aligned service wrap that meets the stringent
-security requirements of government departments and public sector organizations.
+the U.K. The solution couples our tested and secured VMware platform design with a
+comprehensive, managed, ITIL-aligned service wrap that meets the stringent security
+requirements of government departments and public sector organizations. As a Dell Titanium
+Partner and VMware Principal Partner, Rackspace Technology extends years of experience, a
+wealth of expertise, and proven architecture so that customers receive optimal advantages
+from these leading technologies. 
 
 The solution provides you with a dedicated private cloud platform designed to meet current
 security guidance from both the U.K. and U.S. national cybersecurity authorities. We host
-your platform in secure cabinets within Rackspace Government data centers and supported the
+your platform in secure cabinets within Rackspace Government data centers and support the
 service with suitably security-cleared sovereign staff, experienced in the enhanced
 controls necessary for supporting government customers. 
 
@@ -77,7 +94,7 @@ and public sector customers:
 - Comprehensive system security services as standard, including enterprise-grade endpoint
   protection, file integrity monitoring, and host-based Intrusion Prevention Systems (IPS)
   and Intrusion Detection Systems (IDS)
-- Unique combination of automation, accredited tooling, and human expertise, enabling
+- A unique combination of automation, accredited tooling, and human expertise, enabling
   governance and operations support
 - Support for NHS Digital and National Center for State Courts (NCSC) and Cabinet Office
   accreditation audits in the U.K.
@@ -90,21 +107,27 @@ control your environment's security components from the physical facilities to t
 and virtualization layer. 
 
 Within the U.K., we provide this service through our Public Services Network (PSN)
-service-provider accredited, secure management platform, RGC Central. This walled-garden
+service-provider-accredited, secure management platform, *RGC Central**. This walled-garden
 environment ensures complete separation between your solution and the Rackspace corporate
 network. The environment hosts stand-alone, accredited support tools with customers managed
 as individual tenants within each tool. This approach ensures that we secure and separate
 all sensitive customer data and that customers have support solutions that meet their own
 security requirements.
 
-Within the U.S., Rackspace remains a leader in the FedRAMP authorization-enablement space,
-powering 13 FedRAMP ATOs built on the Rackspace-managed service. We provide 24x7x365
+Within the U.S., Rackspace Technology remains a leader in the FedRAMP authorization-enablement
+space, powering 15 FedRAMP ATOs built on our managed service. We provide 24x7x365
 hybrid-cloud management, operational support, and security services as a packaged,
-on-demand, audited, and pay-as-you-go service. Rackspace also handles approximately 80% of
-the operational and documentation burden of your environment's security and compliance
+on-demand, audited, and pay-as-you-go service. Rackspace Technology also handles approximately
+80% of the operational and documentation burden of your environment's security and compliance
 requirements to help you receive a FedRAMP ATO.
 
-<a class="cta purple" id="cta" href="https://www.rackspace.com/fedramp">Learn more about Rackspace FedRAMP services.</a>
+### Conclusion
+
+As a result of these enhanced strategic alignments with VMware and Dell, Rackspace
+Technology is expanding its portfolio with both RPCV and DTCP and bringing that innovation
+to our government customers.
+
+<a class="cta purple" id="cta" href="https://www.rackspace.com/industry/government">Learn more about Rackspace Technology Government Solutions.</a>
 
 Use the Feedback tab to make any comments or ask questions. You can also click
 **Sales Chat** to [chat now](https://www.rackspace.com/) and start the conversation.
