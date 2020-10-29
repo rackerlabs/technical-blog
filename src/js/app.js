@@ -10,13 +10,13 @@ contentLoaded().then(() => {
   try {
     let lastRenderArgs;
     let renderHTML = ``;
-    algoliasearchNetlify({
-      appId: ALGOLIA_NETLIFY_APP_ID,
-      apiKey: ALGOLIA_NETLIFY_SEARCH_KEY,
-      siteId: ALGOLIA_SITE_ID,
-      branch: ALGOLIA_NETLIFY_BRANCH,
-    });
-    const infiniteHits = instantsearch.connectors.connectInfiniteHits(
+    // algoliasearchNetlify({
+    //   appId: ALGOLIA_NETLIFY_APP_ID,
+    //   apiKey: ALGOLIA_NETLIFY_SEARCH_KEY,
+    //   siteId: ALGOLIA_SITE_ID,
+    //   branch: ALGOLIA_NETLIFY_BRANCH,
+    // });
+    const blogInfiniteHits = instantsearch.connectors.connectInfiniteHits(
       (renderArgs, isFirstRender) => {
         const {
           hits,
@@ -26,9 +26,7 @@ contentLoaded().then(() => {
         const {
           container
         } = widgetParams;
-
         lastRenderArgs = renderArgs;
-
         if (isFirstRender) {
           const sentinel = document.createElement('div');
           container.appendChild(document.createElement('ul'));
@@ -40,19 +38,15 @@ contentLoaded().then(() => {
               }
             });
           });
-
           observer.observe(sentinel);
-
           return;
         }
-
         container.querySelector('ul').innerHTML = hits
           .map(
             (hit) => {
               const entities = new Entities();
-              if (hit.categories) {
-                if (hit.categories != null && hit.date != null && hit.date != '' && hit.url != null && hit.author != null) {
-                  renderHTML += `<li class="hit-item-single">
+              if (hit.categories != null && hit.date != null && hit.date != '' && hit.url != null && hit.author != null) {
+                renderHTML = `<li class="hit-item-single">
                   <div class="row">
                     <div class="col-sm-12">
                       <p class="search-product">
@@ -69,11 +63,46 @@ contentLoaded().then(() => {
                   </div>
                 </div>
               </li>`;
-                  return entities.decode(renderHTML);
-                }
-              } else if (hit.product) {
-                if (hit.product_url != null && hit.created_by != null && hit.created_by != '' && hit.created_date != null && !hit.permalink.includes('all-articles')) {
-                  renderHTML += `<li class="hit-item-single">
+              } else {
+                renderHTML = `<span></span>`
+              }
+              return entities.decode(renderHTML);
+            }
+          )
+          .join('');
+      }
+    );
+    const supportInfiniteHits = instantsearch.connectors.connectInfiniteHits(
+      (renderArgs, isFirstRender) => {
+        const {
+          hits,
+          showMore,
+          widgetParams
+        } = renderArgs;
+        const {
+          container
+        } = widgetParams;
+        lastRenderArgs = renderArgs;
+        if (isFirstRender) {
+          const sentinel = document.createElement('div');
+          container.appendChild(document.createElement('ul'));
+          container.appendChild(sentinel);
+          const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting && !lastRenderArgs.isLastPage) {
+                showMore();
+              }
+            });
+          });
+          observer.observe(sentinel);
+          return;
+        }
+        container.querySelector('ul').innerHTML = hits
+          .map(
+            (hit) => {
+              const entities = new Entities();
+              if (hit.product_url != null && hit.created_by != null && hit.created_by != '' && hit.created_date != null && !hit.permalink.includes('all-articles')) {
+                renderHTML = `<li class="hit-item-single">
                   <div class="row">
                     <div class="col-sm-12">
                       <p class="search-product">
@@ -90,11 +119,10 @@ contentLoaded().then(() => {
                   </div>
                 </div>
               </li>`;
-                  return entities.decode(renderHTML);
-                } 
               } else {
-                return `<span></span>`;
+                renderHTML = `<span></span>`
               }
+              return entities.decode(renderHTML);
             }
           )
           .join('');
@@ -121,10 +149,12 @@ contentLoaded().then(() => {
       }
       widgetParams.container.innerHTML = `${count}`;
     };
-    const algoliaClient = algoliasearch(ALGOLIA_NETLIFY_APP_ID, ALGOLIA_NETLIFY_SEARCH_KEY);
+    const algoliaClient = algoliasearch(ALGOLIA_APP_ID, ALGOLIA_SEARCH_KEY);
     const searchClient = {
       search(requests) {
-        if (requests.every(({ params }) => !params.query)) {
+        if (requests.every(({
+            params
+          }) => !params.query)) {
           return Promise.resolve({
             results: requests.map(() => ({
               hits: [],
@@ -133,20 +163,23 @@ contentLoaded().then(() => {
             })),
           });
         }
-    
         return algoliaClient.search(requests);
       },
     };
     // Create the custom widget
     const customStats = instantsearch.connectors.connectStats(renderStats);
     const search = instantsearch({
-      indexName: ALGOLIA_NETLIFY_INDEX,
+      indexName: ALGOLIA_BLOG_INDEX,
       searchClient: searchClient,
       searchFunction(helper) {
+        const blogHitsContainer = document.querySelector('#blog-hits');
+        const supportHitsContainer = document.querySelector('#support-hits');
         const hitsContainer = document.querySelector('#hits');
         const paginationContainer = document.querySelector('#pagination');
         const statsContainer = document.querySelector('#stats');
         hitsContainer.style.display = helper.state.query === '' ? 'none' : '';
+        blogHitsContainer.style.display = helper.state.query === '' ? 'none' : '';
+        supportHitsContainer.style.display = helper.state.query === '' ? 'none' : '';
         paginationContainer.style.display = helper.state.query === '' ? 'none' : '';
         statsContainer.style.display = helper.state.query === '' ? 'none' : '';
         helper.search();
@@ -175,13 +208,15 @@ contentLoaded().then(() => {
           '*'
         ]
       }),
-      instantsearch.widgets.index({ indexName: AlGOLIA_NETLIFY_INDEX }).addWidgets([
-        infiniteHits({
-          container: document.querySelector('#hits')
+      instantsearch.widgets.index({
+        indexName: AlGOLIA_SUPPORT_INDEX
+      }).addWidgets([
+        supportInfiniteHits({
+          container: document.querySelector('#support-hits')
         }),
       ]),
-      infiniteHits({
-        container: document.querySelector('#hits')
+      blogInfiniteHits({
+        container: document.querySelector('#blog-hits')
       }),
       customStats({
         container: document.querySelector('#stats'),
@@ -196,5 +231,4 @@ contentLoaded().then(() => {
    * website for hash links
    */
   SmoothScroll();
-
 })
