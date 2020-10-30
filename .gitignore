@@ -16,4 +16,4 @@ resources/_gen
 # Don't add files that are created in the build process
 .netlify
 Gemfile.lock
-static/assets/
+static/assets
