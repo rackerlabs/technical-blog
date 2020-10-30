@@ -17,10 +17,10 @@ contentLoaded().then(() => {
     //   let lastRenderArgs;
     //   let renderHTML = ``;
       algoliasearchNetlify({
-        appId: ALGOLIA_NETLIFY_BLOG_APP_ID,
-        apiKey: ALGOLIA_NETLIFY_BLOG_SEARCH_KEY,
+        appId: ALGOLIA_APP_ID,
+        apiKey: ALGOLIA_SEARCH_KEY,
         siteId: ALGOLIA_SITE_ID,
-        branch: ALGOLIA_NETLIFY_BRANCH,
+        branch: ALGOLIA_BRANCH,
         analytics: true,                              // Enable search analytics
         autocomplete: {
           hitsPerPage: 5,                             // Amount of results to display
