@@ -40,7 +40,6 @@ a dedicated team to manage and operate the effort. Security threats come in many
 forms. For example, cybercrime has increased by 600% due to the COVID19 outbreak. Very few
 would have predicted a pandemic would open us to more cybercrime.
 
-
 <!--more-->
 
 ### Introduction
