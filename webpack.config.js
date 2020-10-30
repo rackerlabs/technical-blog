@@ -9,29 +9,39 @@ const webpack = require("webpack");
 dotenv.config();
 module.exports = {
   entry: [
-    path.resolve('src', 'js', 'app.js'),
-    path.resolve('src', 'styles', 'app.css'),
+    path.resolve('src', 'js', 'index.js'),
+    path.resolve('src', 'css', 'app.scss'),
   ],
-  output: {
-    path: path.resolve('static', 'assets'),
-    filename: 'bundle.js',
-  },
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: ['babel-loader'],
       },
       {
-        test: /\.css$/,
+        test: /\.scss$/,
         use: [
           MiniCssExtractPlugin.loader,
           'css-loader',
-          'postcss-loader',
+          'postcss-loader'
         ],
       },
     ],
+  },
+  resolve: {
+    extensions: ['.jsx', '.scss', '.css', '.js'],
+    modules: [
+      path.resolve(__dirname, "node_modules"),
+    ],
+  },
+  output: {
+    path: path.resolve('static', 'assets'),
+    filename: 'bundle.js',
+  },
+  watchOptions: {
+    aggregateTimeout: 300,
+    poll: 1000
   },
   plugins: [
     new MiniCssExtractPlugin(),
