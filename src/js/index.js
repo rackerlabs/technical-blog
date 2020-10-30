@@ -14,15 +14,24 @@ contentLoaded().then(() => {
      * Enable search
      */
     try {
-      let lastRenderArgs;
-      let renderHTML = ``;
+    //   let lastRenderArgs;
+    //   let renderHTML = ``;
       algoliasearchNetlify({
         appId: ALGOLIA_NETLIFY_BLOG_APP_ID,
         apiKey: ALGOLIA_NETLIFY_BLOG_SEARCH_KEY,
         siteId: ALGOLIA_SITE_ID,
-        branch: ALGOLIA_NETLIFY_BRANCH
+        branch: ALGOLIA_NETLIFY_BRANCH,
+        analytics: true,                              // Enable search analytics
+        autocomplete: {
+          hitsPerPage: 5,                             // Amount of results to display
+          inputSelector: 'input[type=search]',        // CSS selector of your search input(s)
+        },
+        color: '#3c4fe0',                             // Main color
+        debug: false,                                 // Debug mode (keeps the autocomplete open)
+        silenceWarnings: false,                       // Disable warnings (e.g. no search input found)
+        poweredBy: true, 
       });
-      const infiniteHits = instantsearch.connectors.connectInfiniteHits(
+      /* const infiniteHits = instantsearch.connectors.connectInfiniteHits(
         (renderArgs, isFirstRender) => {
           const {
             hits,
@@ -260,7 +269,7 @@ contentLoaded().then(() => {
           container: document.querySelector('#stats'),
         })
       ]);
-      search.start();
+      search.start(); */
     } catch (err) {
       console.warn(err)
     }
@@ -268,5 +277,5 @@ contentLoaded().then(() => {
      * Activate smooth scrolling for the entire
      * website for hash links
      */
-    SmoothScroll();
+    /* SmoothScroll(); */
   })
