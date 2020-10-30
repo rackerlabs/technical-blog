@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Rackspace Cloud Native Security v0.3"
+title: "Rackspace Cloud Native Security"
 date: 2020-10-22
 comments: true
 author: Nilojan Tharmarajah
@@ -15,21 +15,21 @@ published: true
 authorIsRacker: true
 categories:
     - Security
-metaTitle: "Rackspace Cloud Native Security v0.3"
+metaTitle: "Rackspace Cloud Native Security"
 metaDescription: "In 2009, over 12 million malware infections were reported globally. By
 2018, this increased to over 812 million detected threats. The sophistication of these
 attacks multiplies rapidly&mdash;it's a nearly impossible task to be on top of security
 threats without having a dedicated team to manage and operate the effort. Security threats
 come in many different forms. For example, cybercrime has increased by 600% due to the
 COVID19 outbreak. Very few would have predicted a pandemic would open us to more cybercrime."
-ogTitle: "Rackspace Cloud Native Security v0.3"
+ogTitle: "Rackspace Cloud Native Security"
 ogDescription: "In 2009, over 12 million malware infections were reported globally. By 2018,
 this increased to over 812 million detected threats. The sophistication of these attacks
 multiplies rapidly&mdash;it's a nearly impossible task to be on top of security threats
 without having a dedicated team to manage and operate the effort. Security threats come in
 many different forms. For example, cybercrime has increased by 600% due to the COVID19
 outbreak. Very few would have predicted a pandemic would open us to more cybercrime."
-slug: "rackspace-clould-native-security-v0.3"
+slug: "rackspace-clould-native-security"
 
 ---
 
@@ -39,7 +39,6 @@ rapidly&mdash;it's a nearly impossible task to be on top of security threats wit
 a dedicated team to manage and operate the effort. Security threats come in many different
 forms. For example, cybercrime has increased by 600% due to the COVID19 outbreak. Very few
 would have predicted a pandemic would open us to more cybercrime.
-
 
 <!--more-->
 
