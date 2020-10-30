@@ -18,7 +18,7 @@ contentLoaded().then(() => {
     //   let renderHTML = ``;
       algoliasearchNetlify({
         appId: ALGOLIA_APP_ID,
-        apiKey: ALGOLIA_SEARCH_API_KEY,
+        apiKey: ALGOLIA_API_KEY,
         siteId: ALGOLIA_SITE_ID,
         branch: ALGOLIA_BRANCH,
         analytics: true,                              // Enable search analytics
