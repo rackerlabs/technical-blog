@@ -19,7 +19,7 @@ slug: "six-steps-to-salesforce-adoption"
 ---
 
 There are six key steps to Salesforce adoption that ensure strength in your
-adoption by your team & help guarantee that your Salesforce adoption is
+adoption by your team and help guarantee that your Salesforce adoption is
 efficient and effective.
 <!--more-->
 
