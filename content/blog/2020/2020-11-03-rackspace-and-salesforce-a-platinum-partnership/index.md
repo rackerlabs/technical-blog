@@ -32,7 +32,7 @@ honor less than one year after receiving Gold Partner status.
 
 {{<img src="Picture1.png" title="" alt="">}}
 
-So what does *Platinum** status actually mean? How does this fit into the future of our
+So what does *Platinum* status actually mean? How does this fit into the future of our
 company as it continues to grow? And what impact will this have on our clients?
 
 In this post, I share my thoughts on what Platinum Status means for Rackspace Technology
@@ -40,8 +40,8 @@ as we continue to expand our offerings as a full-service Salesforce Implementati
 
 ### What is Platinum status?
 
-The Salesforce partner program is best in class, and Salesforce reserves Platinum status
-for very few partners, ranking implementation partners are in tiers. To be included in this
+The Salesforce partner program is *best in class**, and Salesforce rankins implementation
+partners in tiers, reserving Platinum status for very few partners. To be included in this
 group of impressive companies is quite an honor. Salesforce assessed our annual contract
 value (ACV) and ACV growth, certifications and specializations, customer satisfaction, and
 customer stories to evaluate the company and designate it a platinum partner. In 2017, we
@@ -72,7 +72,7 @@ support clients throughout the entire lead process.
 Our clients are looking for one partner that can deliver across the entire process from
 lead generation, through lead nurturing, all the way to building customer loyalty.
 
-### A Bright Future for Rackspace Technologye and our clients
+### A Bright Future for Rackspace Technology and our clients
 
 We are thankful for all of our clients who allowed us to help them transform their
 businesses. Achieving Platinum status shows it’s time for us to work even harder to bring
@@ -82,8 +82,8 @@ to businesses.
 Our clients are looking for one partner that can be their digital marketing agency, their
 marketing automation specialist, and their Salesforce core technology partner. As a
 full-service partner, we can now impact every aspect of our clients’ businesses&mdash;process,
-technology, creative. Rackspace Technology can support all of it, and we plan to continue
-to expand our capabilities to provide value in all of those areas and beyond.
+technology, and creative. Rackspace Technology can support all of it, and we plan to continue
+expanding our capabilities to provide value in all of those areas and beyond.
 
 Platinum status is an achievement, but it’s not a reason to slow down. Rather, it’s an
 occasion for us to take stock and double down on our focus on quality and excellence.
