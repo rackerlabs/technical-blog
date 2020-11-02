@@ -25,7 +25,7 @@ slug: "introducing-role-based-access-control-on-objectrocket"
 
 ---
 
-Sharing logins is lame. It’s a necessary evil, though; there are some scenarios where you just have to.
+Sharing logins is lame. It’s a necessary evil however and there are some scenarios where you just have to.
 When it comes to SaaS offerings, it can be a real challenge as teams get larger and you don’t want to
 give everyone full control. The clear solution is Role-Based Access Control (RBAC) and today we’re
 enabling RBAC features on our brand new hosting platform.
@@ -34,17 +34,14 @@ enabling RBAC features on our brand new hosting platform.
 
 ### What is Role-Based Access Control
 
-The following line shows how to add an image.  If you have no image, remove it.
-If you have an image, add it to the post directory and replace the image name in the following line.
-
-There are lots of definitions out there for RBAC, but NIST offers a pretty succinct definition:
+There are lots of definitions for RBAC, but the National Institute of Standards and Technology (NIST) offers a pretty succinct definition:
 
 “A model for controlling access to resources where permitted actions on resources are identified
 with roles rather than with individual subject identities.”
 
 Pretty simple. Your access to a piece of information or action is based on an assigned role.
 Let’s look at how this applies to something like Database as a Service. There are a number of
-obvious things you’d want to do, like:
+obvious things to do:
 
 - Create a database
 - Delete a database
@@ -59,13 +56,13 @@ There are also some other actions to think about:
 Without RBAC, everyone has access to everything. If you can log in, you can do all the things.
 For example, you may want someone from accounting to be able to view billing and payment
 information. However, you definitely don’t want to give that person the ability to mistakenly
-delete a database. That’s where RBAC comes in; you would create a role like “Billing”
-which only grants users with that assigned role the ability to view billing information
+delete a database. That’s where RBAC comes in. You create a role like “Billing”
+which only grants assigned users the ability to view billing information
 and nothing else.
 
 ### How this Works on ObjectRocket
 
-Back when you first signed up for our service (if you haven’t yet, go check it out at https://app.objectrocket.cloud),
+When you first signed up for our service (if you haven’t yet, go check it out at https://app.objectrocket.cloud),
 the first thing you did was create an organization. An organization is just our way of grouping all of your users together.
 By creating an account and an organization, you just became an “owner”. Congratulations!
 
@@ -134,7 +131,6 @@ and give them different roles. For now, those roles and privileges are:
     <td>✓</td>
   </tr>
 </table>
-E
 
 This gives you the ability to specify an owner (you can also have multiple owners) that do everything,
 then limit access to the other members of your team. You can have a select few that manage the databases
@@ -146,22 +142,22 @@ This is just a starting point and we’ll be adding greater customization down t
 
 ### Getting Started
 
-If you’ve already signed up, or going create a new account now, you are automatically the owner of
+If you’ve already signed up, or going to create a new account now, you are automatically the owner of
 your organization. From there, adding new users is as simple as:
 
-{{<img src="RBAC-Users-Permissions.png" title="" alt="">}}
+{{<img src="RBAC-Users-Permissions.png" title="assigning user permissions" alt="user premissions">}}
 
-#. Click Users on the main menu in Mission Control.
-#. Click Invite New User
+#. Click **Users** on the main menu in Mission Control.
+#. Click **Invite New User** .
 #. Enter an email address and role
 
 That’s it!
 
-From there, your invited user gets an invitation email. Once they click that link in the email and
+From there, your invited user gets an email. Once they click that link in the email and
 sign up, they’ll show up in your users list.
 
-There are a few rules where we need to get Support involved, like trying to invite a user who is
-already part of another organization. However, our Support team is always there to help you resolve any.
+There are a few cases where you would need to get Support involved, like trying to invite a user who is
+already part of another organization. However, our Support team is always there to help you.
 
 We hope you’re as excited about this feature as we are, so go check it out now!
 
