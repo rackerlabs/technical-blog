@@ -24,6 +24,7 @@ ogDescription: "."
 slug: "introducing-role-based-access-control-on-objectrocket"
 
 ---
+*Originally published on September 25, 2019, at ObjectRocket.com/blog*
 
 Sharing logins is lame. It’s a necessary evil however and there are some scenarios where you just have to.
 When it comes to SaaS offerings, it can be a real challenge as teams get larger and you don’t want to
