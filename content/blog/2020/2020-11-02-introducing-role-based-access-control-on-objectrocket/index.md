@@ -161,7 +161,7 @@ already part of another organization. However, our Support team is always there 
 
 We hope you’re as excited about this feature as we are, so go check it out now!
 
-<a class="cta purple" id="cta" href="https://www.rackspace.com/sap">Learn more about our SAP services.</a>
+<a class="cta purple" id="cta" href="https://www.objectrocket.com">Learn more about ObjectRocket</a>
 
 Use the Feedback tab to make any comments or ask questions. You can also click
 **Sales Chat** to [chat now](https://www.rackspace.com/) and start the conversation.
