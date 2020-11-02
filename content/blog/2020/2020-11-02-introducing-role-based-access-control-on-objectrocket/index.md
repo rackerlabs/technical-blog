@@ -145,11 +145,11 @@ This is just a starting point and we’ll be adding greater customization down t
 If you’ve already signed up, or going to create a new account now, you are automatically the owner of
 your organization. From there, adding new users is as simple as:
 
-{{<img src="RBAC-Users-Permissions.png" title="assigning user permissions" alt="user premissions">}}
+{{<img src="RBAC-Users-Permissions.png" title="" alt="user premissions">}}
 
-1.Click **Users** on the main menu in Mission Control.
-2.Click **Invite New User** .
-3.Enter an email address and role
+1. Click **Users** on the main menu in Mission Control.
+2. Click **Invite New User** .
+3. Enter an email address and role
 
 That’s it!
 
