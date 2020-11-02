@@ -16,21 +16,21 @@ contentLoaded().then(() => {
     try {
     //   let lastRenderArgs;
     //   let renderHTML = ``;
-    //   algoliasearchNetlify({
-    //     appId: ALGOLIA_APP_ID,
-    //     apiKey: ALGOLIA_API_KEY,
-    //     siteId: ALGOLIA_SITE_ID,
-    //     branch: ALGOLIA_BRANCH,
-    //     analytics: true,                              // Enable search analytics
-    //     autocomplete: {
-    //       hitsPerPage: 5,                             // Amount of results to display
-    //       inputSelector: 'input[type=search]',        // CSS selector of your search input(s)
-    //     },
-    //     color: '#3c4fe0',                             // Main color
-    //     debug: false,                                 // Debug mode (keeps the autocomplete open)
-    //     silenceWarnings: false,                       // Disable warnings (e.g. no search input found)
-    //     poweredBy: true, 
-    //   });
+      algoliasearchNetlify({
+        appId: ALGOLIA_APP_ID,
+        apiKey: ALGOLIA_API_KEY,
+        siteId: ALGOLIA_SITE_ID,
+        branch: ALGOLIA_BRANCH,
+        analytics: true,                              // Enable search analytics
+        autocomplete: {
+          hitsPerPage: 5,                             // Amount of results to display
+          inputSelector: 'input[type=search]',        // CSS selector of your search input(s)
+        },
+        color: '#3c4fe0',                             // Main color
+        debug: false,                                 // Debug mode (keeps the autocomplete open)
+        silenceWarnings: false,                       // Disable warnings (e.g. no search input found)
+        poweredBy: true, 
+      });
       /* const infiniteHits = instantsearch.connectors.connectInfiniteHits(
         (renderArgs, isFirstRender) => {
           const {
@@ -277,5 +277,5 @@ contentLoaded().then(() => {
      * Activate smooth scrolling for the entire
      * website for hash links
      */
-    /* SmoothScroll(); */
+    SmoothScroll();
   })

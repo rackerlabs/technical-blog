@@ -6,6 +6,7 @@
 @import url("https://cdn.jsdelivr.net/npm/instantsearch.css@7.3.1/themes/algolia-min.css");
 @import url("https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css");
 
+
 /* Base */
 @import "base/palette.scss";
 @import "base/typography.scss";
@@ -43,3 +44,4 @@
 @import "pages/page-docs.scss";
 @import "pages/page-blog.scss";
 @import "pages/page-post.scss";
+@import "pages/algolia-netlify.scss";
