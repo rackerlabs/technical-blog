@@ -11,11 +11,11 @@ authorIsRacker: true
 categories:
     - Database
     - ObjectRocket
-metaTitle: title: "Get started with ObjectRocket CockroachDB"
+metaTitle: "Get started with ObjectRocket CockroachDB"
 metaDescription: "Traditionally, NoSQL&reg; databases scale better than SQL&reg; databases
 because of their non-relational nature. CockroachDB bridges the gap between NoSQL and SQL
 databases by providing scalability."
-ogTitle: title: "Get started with ObjectRocket CockroachDB"
+ogTitle: "Get started with ObjectRocket CockroachDB"
 ogDescription: "Traditionally, NoSQL&reg; databases scale better than SQL&reg; databases
 because of their non-relational nature. CockroachDB bridges the gap between NoSQL and SQL
 databases by providing scalability."
