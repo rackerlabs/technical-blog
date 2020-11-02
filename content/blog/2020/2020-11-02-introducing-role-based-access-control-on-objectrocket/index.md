@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Introducing role based access control on objectrocket"
+title: "Introducing role-based access control on ObjectRocket"
 date: 2020-11-02
 comments: true
 author: Steve Croce
@@ -17,23 +17,27 @@ published: true
 authorIsRacker: true
 categories:
     - General
-metaTitle: "Introducing role based access control on objectrocket"
-metaDescription: "."
-ogTitle: "Introducing role based access control on objectrocket"
-ogDescription: "."
+metaTitle: "Introducing role-based access control on ObjectRocket"
+metaDescription: "When it comes to SaaS offerings, it can be a real challenge as teams get larger and you don’t want to
+give everyone full control. The clear solution is Role-Based Access Control (RBAC) and we’ve
+enabled RBAC features on our brand new hosting platform."
+ogTitle: "Introducing role-based access control on ObjectRocket"
+ogDescription: "When it comes to SaaS offerings, it can be a real challenge as teams get larger and you don’t want to
+give everyone full control. The clear solution is Role-Based Access Control (RBAC) and we’ve
+enabled RBAC features on our brand new hosting platform."
 slug: "introducing-role-based-access-control-on-objectrocket"
 
 ---
 *Originally published on September 25, 2019, at ObjectRocket.com/blog*
 
-Sharing logins is lame. It’s a necessary evil however and there are some scenarios where you just have to.
-When it comes to SaaS offerings, it can be a real challenge as teams get larger and you don’t want to
-give everyone full control. The clear solution is Role-Based Access Control (RBAC) and today we’re
-enabling RBAC features on our brand new hosting platform.
+Sharing logins is lame. It’s a necessary evil, however, and there are some scenarios where you just have to.
+When it comes to Software-as-a-service (SaaS) offerings, it can be a real challenge as teams get larger and you don’t want to
+give everyone full control. The clear solution is Role-Based Access Control (RBAC), and we’ve
+enabled RBAC features on our hosting platform.
 
 <!--more-->
 
-### What is Role-Based Access Control
+### What is RBAC?
 
 There are lots of definitions for RBAC, but the National Institute of Standards and Technology (NIST) offers a pretty succinct definition:
 
@@ -41,8 +45,8 @@ There are lots of definitions for RBAC, but the National Institute of Standards 
 with roles rather than with individual subject identities.”
 
 Pretty simple. Your access to a piece of information or action is based on an assigned role.
-Let’s look at how this applies to something like Database as a Service. There are a number of
-obvious things to do:
+Let’s look at how this applies to something like Database-as-a-Service. There are a number of
+obvious things you can do:
 
 - Create a database
 - Delete a database
@@ -50,24 +54,23 @@ obvious things to do:
 
 There are also some other actions to think about:
 
-- Viewing and updating payment information
-- Viewing metrics
-- Inviting other users to the account
+- View and update payment information
+- View metrics
+- Invite other users to the account
 
 Without RBAC, everyone has access to everything. If you can log in, you can do all the things.
-For example, you may want someone from accounting to be able to view billing and payment
+For example, you might want someone from accounting to be able to view billing and payment
 information. However, you definitely don’t want to give that person the ability to mistakenly
-delete a database. That’s where RBAC comes in. You create a role like “Billing”
-which only grants assigned users the ability to view billing information
-and nothing else.
+delete a database. That’s where RBAC comes in. You create a role like *Billing”*, which grants assigned
+users the ability to view billing information only and do nothing else.
 
-### How this Works on ObjectRocket
+### How this works on ObjectRocket
 
 When you first signed up for our service (if you haven’t yet, go check it out at https://app.objectrocket.cloud),
 the first thing you did was create an organization. An organization is just our way of grouping all of your users together.
-By creating an account and an organization, you just became an “owner”. Congratulations!
+When you create an account an organization, you become an *owner*. Congratulations!
 
-Now, with our launch of RBAC controls in our dashboard’s UI, you can invite other people to your organization
+Now, by using the RBAC controls in our dashboard UI, you can invite other people to your organization
 and give them different roles. For now, those roles and privileges are:
 
 <table>
@@ -133,36 +136,36 @@ and give them different roles. For now, those roles and privileges are:
   </tr>
 </table>
 
-This gives you the ability to specify an owner (you can also have multiple owners) that do everything,
-then limit access to the other members of your team. You can have a select few that manage the databases
-themselves, but just give read-only access to the developers that just need to connect to the database
+RBAC gives you the ability to specify an owner (or multiple owners) that can do everything,
+and limit access for the other members of your team. You can have a select few that manage the databases
+themselves, and give read-only access to the developers that just need to connect to the database
 from their application. You can give just metrics access to an analyst who only needs to see stats on
-your databases. Finally, you can limit access of the people keeping the books to only the billing information.
+your databases. Finally, you can limit the access of the book-keepers to only billing information.
 
-This is just a starting point and we’ll be adding greater customization down the road.
+This is just a starting point, and we continue to add greater customization.
 
-### Getting Started
+### Getting started
 
-If you’ve already signed up, or going to create a new account now, you are automatically the owner of
-your organization. From there, adding new users is as simple as:
+If you’ve already signed up, or plan to create a new account, you automatically become the owner of
+your organization. From there, adding new users is as simple as performing the followong steps:
 
 {{<img src="RBAC-Users-Permissions.png" title="" alt="user premissions">}}
 
-1. Click **Users** on the main menu in Mission Control.
-2. Click **Invite New User** .
-3. Enter an email address and role
+1. Click **Users** on the main menu in **Mission Control**.
+2. Click **Invite New User**.
+3. Enter an email address and role.
 
 That’s it!
 
-From there, your invited user gets an email. Once they click that link in the email and
-sign up, they’ll show up in your users list.
+From there, your invited user gets an email. After they click that link in the email and
+sign up, they show up in your **User** list.
 
-There are a few cases where you would need to get Support involved, like trying to invite a user who is
-already part of another organization. However, our Support team is always there to help you.
+There are a few cases where you might need to get Support involved, such as trying to invite a user who is
+already part of another organization, and our Support team is always here to help you.
 
-We hope you’re as excited about this feature as we are, so go check it out now!
+Check out our RBAC feature!
 
-<a class="cta purple" id="cta" href="https://www.objectrocket.com">Learn more about ObjectRocket</a>
+<a class="cta purple" id="cta" href="https://www.objectrocket.com">Learn more about ObjectRocket.</a>
 
 Use the Feedback tab to make any comments or ask questions. You can also click
 **Sales Chat** to [chat now](https://www.rackspace.com/) and start the conversation.
