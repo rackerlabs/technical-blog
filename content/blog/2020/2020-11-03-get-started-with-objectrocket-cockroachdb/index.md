@@ -87,10 +87,11 @@ started with CockroachDB on the ObjectRocket platform:
 {{<img src="picture8.png" title="" alt="">}}
 
 8. Connect to the instance by using these steps:
-    1. Install the CockroachDB command-line client (CLI) following the instructions.
-    2. In your ObjectRocket UI **Mission Control**, click the **Connect** tab and copy the connection string
+
+    a. Install the CockroachDB command-line client (CLI) following the instructions.
+    b. In your ObjectRocket UI **Mission Control**, click the **Connect** tab and copy the connection string
        provided, simlar to the following example: `postgres://DBUSER:DBPASS@ingress.w89sujpz.launchpad.objectrocket.cloud:2166/DBNAME?sslmode=require`
-    3. In your terminal, use the CockroachDB command line client to run the command: `cockroach sql --url "postgres://DBUSER:DBPASS@ingress.w89sujpz.launchpad.objectrocket.cloud:2166/demo?sslmode=require"`
+    c. In your terminal, use the CockroachDB command line client to run the command: `cockroach sql --url "postgres://DBUSER:DBPASS@ingress.w89sujpz.launchpad.objectrocket.cloud:2166/demo?sslmode=require"`
 
 If you’re connecting through a programming language such as Python&reg;, PHP&trade;, Java&reg;, Ruby, or
 Node.js&reg;, you can find information on client drivers at [https://www.cockroachlabs.com/docs/stable/install-client-drivers.html](https://www.cockroachlabs.com/docs/stable/install-client-drivers.html).
