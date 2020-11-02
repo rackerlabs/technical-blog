@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Introducing role based access control on objectrocket"
-date: 2020-10-30
+date: 2020-11-2
 comments: true
 author: Steve Croce
 authorAvatar: 'https://gravatar.com/avatar/56d03e2d0f853cff39c129cab3761d49'
@@ -26,7 +26,7 @@ slug: "introducing-role-based-access-control-on-objectrocket"
 ---
 
 Sharing logins is lame. It’s a necessary evil, though; there are some scenarios where you just have to.
-When it comes to aaS offerings, it can be a real challenge as teams get larger and you don’t want to
+When it comes to SaaS offerings, it can be a real challenge as teams get larger and you don’t want to
 give everyone full control. The clear solution is Role-Based Access Control (RBAC) and today we’re
 enabling RBAC features on our brand new hosting platform.
 
@@ -72,7 +72,69 @@ By creating an account and an organization, you just became an “owner”. Cong
 Now, with our launch of RBAC controls in our dashboard’s UI, you can invite other people to your organization
 and give them different roles. For now, those roles and privileges are:
 
-TABLE HERE
+<table>
+  <tr>
+    <th>Role</th>
+    <th>Manage UI Users</th>
+    <th>Create / Update / Delete Instances</th>
+    <th>List and view Instances</th>
+    <th>Manage ACL and DB users</th>
+    <th>View ACL and DB Users</th>
+    <th>View Metrics</th>
+    <th>Manage Billing</th>
+  </tr>
+  <tr>
+    <td>Owner</td>
+    <td>✓</td>
+    <td>✓</td>
+    <td>✓</td>
+    <td>✓</td>
+    <td>✓</td>
+    <td>✓</td>
+    <td>✓</td>
+  </tr>
+  <tr>
+    <td>Admin</td>
+    <td>x</td>
+    <td>✓</td>
+    <td>✓</td>
+    <td>✓</td>
+    <td>✓</td>
+    <td>✓</td>
+    <td>✓</td>
+  </tr>
+  <tr>
+    <td>Read Only</td>
+    <td>x</td>
+    <td>x</td>
+    <td>✓</td>
+    <td>x</td>
+    <td>✓</td>
+    <td>✓</td>
+    <td>x</td>
+  </tr>
+    <tr>
+    <td>Metrics</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+    <td>✓</td>
+    <td>x</td>
+  </tr>
+    <tr>
+    <td>Billing</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+    <td>✓</td>
+  </tr>
+</table>
+E
 
 This gives you the ability to specify an owner (you can also have multiple owners) that do everything,
 then limit access to the other members of your team. You can have a select few that manage the databases
