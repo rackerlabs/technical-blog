@@ -4,7 +4,8 @@ title: "Get started with ObjectRocket CockroachDB"
 date: 2020-11-03
 comments: true
 author: Sam Hagin
-bio: "Seasoned Data Engineer, System Administrator, and Web Development professional with over 7 years of combined experience working with Linux, Apache, MySQL, MongoDB, ElasticSearch, PHP, Python, Perl, HTML, CSS, JavaScript"
+bio: "Seasoned Data Engineer, System Administrator, and Web Development professional with over 7 years of
+combined experience working with Linux, Apache, MySQL, MongoDB, ElasticSearch, PHP, Python, Perl, HTML, CSS, JavaScript"
 published: true
 authorIsRacker: true
 categories:
