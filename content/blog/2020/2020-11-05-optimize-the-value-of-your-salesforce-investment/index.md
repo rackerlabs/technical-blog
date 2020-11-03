@@ -50,10 +50,6 @@ Salesforce to fit your business needs. Some prevalent apps include the following
 - Accounting and ERP integration, and more. 
 
 Rackspace can help you with implementation, new enhancements, ongoing projects, and recurring Salesforce maintenance.</br>
-<br>
-<br>
-<br>
-<br>
 
 ### Training and Evolution
 
@@ -63,6 +59,11 @@ Rackspace, can offer custom training options based on your business needs to
 allow for advanced projects, improve system utilization, and allow you to
 explore new capabilities and tools. We start by understanding your business
 process first, and then apply the right technology.</br>
+
+<br>
+<br>
+<br>
+<br>
 
 ### Salesforce Local and Partner Events
 
