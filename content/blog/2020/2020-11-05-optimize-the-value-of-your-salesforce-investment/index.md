@@ -3,7 +3,7 @@ layout: post
 title: "Optimize the value of your Salesforce investment"
 date: 2020-11-05
 comments: true
-author: Racker
+author: Rackspace Salesforce Team
 published: true
 authorIsRacker: true
 categories:
@@ -23,7 +23,7 @@ These are some of the capabilities and solutions achievable with Salesforce&reg;
 
 <!--more-->
 
-{{<img src="value.jpg" title="" width="200" height="200" alt="">}}
+{{<img src="value.jpg" title="" width="50" height="50" alt="">}}
 
 Salesforce is much more than a Customer Relationship Management (CRM) system. It
 is an enterprise-wide software solution that allows you to run many aspects of
@@ -53,7 +53,7 @@ Rackspace can help you with implementation, new enhancements, ongoing projects, 
 
 ### Training and Evolution
 
-{{<img src="training.png" title="" width="100" height="100" alt="" class="image-left">}}
+{{<img src="training.png" title="" width="50" height="50" alt="" class="image-left">}}
 Salesforce can evolve with your business. Salesforce Preferred Partners such as
 Rackspace, can offer custom training options based on your business needs to
 allow for advanced projects, improve system utilization, and allow you to
