@@ -851,13 +851,17 @@ Wilensky, Jeff
 authorAvatar: 'https://s.gravatar.com/avatar/017eaa68c10c8d1b95aacf7d34557a28'
 bio: n/a
 
-Wilfred Wah
+Wilfred, Wah
 authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-UR3DD1J83-93420d85dfea-512'
 bio: "Wilfred is a Principal Consultant of Advisory Services, Rackspace
 Technology North Asia. His area of expertise includes cloud migration assessment,
 cloud economics, people transformation, cloud adoption strategy, and the
 transformation roadmap. He has more than 15 years of consultancy experience with
 major vendors such as Dell/EMC, SAS, and AWS before joining Rackspace."
+
+Wilkins, Kymberly
+authorAvatar: 
+
 
 Winfrey, Lorenzo
 authorAvatar: 'https://s.gravatar.com/avatar/4946b45863e87d1a876eeb2873af2593'
