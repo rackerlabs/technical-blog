@@ -7,7 +7,6 @@ author: Rackspace Salesforce Team
 published: true
 authorIsRacker: true
 categories:
-    - General
     - Salesforce
 metaTitle: "Optimize the value of your Salesforce investment"
 metaDescription: "Salesforce services and events portfolio enables you to
