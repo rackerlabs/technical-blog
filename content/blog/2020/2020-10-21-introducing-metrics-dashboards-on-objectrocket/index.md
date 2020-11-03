@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Introducing metrics dashboards on objectrocket"
+title: "Introducing metrics dashboards on ObjectRocket"
 date: 2020-10-21
 comments: true
 author: Steve Croce
@@ -18,10 +18,10 @@ authorIsRacker: true
 categories:
     - Database
     - ObjectRocket
-metaTitle: "Introducing metrics dashboards on objectrocket"
+metaTitle: "Introducing metrics dashboards on ObjectRocket"
 metaDescription: "Maintaining an accurate picture of what’s going on with your data store and what impact your latest
 application changes are having on the performance of your database is incredibly important."
-ogTitle: "Introducing metrics dashboards on objectrocket"
+ogTitle: "Introducing metrics dashboards on ObjectRocket"
 ogDescription: "Maintaining an accurate picture of what’s going on with your data store and what impact your latest
 application changes are having on the performance of your database is incredibly important."
 slug: "introducing-metrics-dashboards-on-objectrocket"
