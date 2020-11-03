@@ -62,7 +62,7 @@ The Application Express installation files, in **$ORACLE_HOME/apex/utilities/ora
 include two utilities, **APEXExport.class** and **APEXEportSplitter.class**, which you can
 use to export your APEX applications.
  
-#### 1. Preparation
+#### Step 1: Preparation
 
 To prepare for the backup, perform the following steps:
 
@@ -72,7 +72,7 @@ To prepare for the backup, perform the following steps:
    from [here](https://www.oracle.com/database/technologies/jdbcdriver-ucp-downloads.html)
    and place the file in **$ORACLE_HOME/jdbc/lib**.
  
-#### 2. Set the environment source file
+#### Step :. Set the environment source file
  
 1. Create or update **apex.env** with the following content:
  
@@ -85,7 +85,7 @@ To prepare for the backup, perform the following steps:
  
 2. Source the environment file, **apex.env**.
  
-#### 3. Find your workspace ID
+#### Step 3: Find your workspace ID
 
 Use the workspace ID to take the export. Use the following database queries to retrieve
 the workspace ID information:
@@ -109,7 +109,7 @@ SQL> select workspace_id,workspace,schemas from apex_workspaces;
 *Source:* [https://docs.oracle.com/cd/E14373_01/apirefs.32/e13369/apex_app.htm#AEAPI214](https://docs.oracle.com/cd/E14373_01/apirefs.32/e13369/apex_app.htm#AEAPI214)
 
  
-#### 4. Take the backup
+#### Step 4: Take the backup
 
 Perform the following steps to take the backup:
 
