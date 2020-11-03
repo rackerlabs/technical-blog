@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Postgresql on Rackspace Object Rocket reaches general availability"
+title: "PostgreSQL on Rackspace ObjectRocket reaches general availability"
 date: 2020-10-29
 comments: true
 author: Steve Croce
@@ -18,9 +18,9 @@ authorIsRacker: true
 categories:
     - Database
     - ObjectRocket
-metaTitle: "Postgresql on Rackspace Object Rocket reaches general availability"
+metaTitle: "PostgreSQL on Rackspace ObjectRocket reaches general availability"
 metaDescription: "We first made our PostgreSQL service available in 2019, and we're pleased to announce that PostgreSQL is Generally Available (GA)."
-ogTitle: "Postgres backups and how to restore them on object rocket"
+ogTitle: "PostgreSQL on Rackspace ObjectRocket reaches general availability"
 ogDescription: "We first made our PostgreSQL service available in 2019, and we're pleased to announce that PostgreSQL is Generally Available (GA)."
 slug: "postgres-on-rackspace-objectrocket-reaches-general-availability"
 canonical: https://www.objectrocket.com/blog/postgresql/pachyderm-on-the-loose-postgresql-on-objectrocket-has-reached-general-availability/
