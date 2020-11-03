@@ -23,7 +23,7 @@ These are some of the capabilities and solutions achievable with Salesforce&reg;
 
 <!--more-->
 
-{{<img src="value.jpg" title="" alt="">}}
+{{<img src="value.jpg" title="" width="200" height="200" alt="">}}
 
 Salesforce is much more than a Customer Relationship Management (CRM) system. It
 is an enterprise-wide software solution that allows you to run many aspects of
@@ -34,7 +34,7 @@ regardless of your business model. Take a look into the Salesforce Ecosystem.
 
 ### Salesforce capabilities and AppExchange
 
-{{<img src="appexchange.png" title="" alt="" class="image-right">}}
+{{<img src="appexchange.png" title="" width="100" height="100" alt="" class="image-right">}}
 You can run your Sales, Marketing, Customer Service and Support,
 Business Intelligence, Accounting, Project Planning/Tracking, and more initiatives on the
 Salesforce platform. The [AppExchange](https://appexchange.salesforce.com/) has
@@ -62,7 +62,7 @@ process first, and then apply the right technology.</br>
 
 ### Salesforce Local and Partner Events
 
-{{<img src="dreamforce.jpg" title="" alt="" width="200"  class="image-right">}}
+{{<img src="dreamforce.jpg" title="" alt="" width="100" height="100"  class="image-right">}}
 
 In addition to the annual Salesforce user conference Dreamforce, there are also
 hundreds of [local and partner events](http://www.salesforce.com/events/). 
