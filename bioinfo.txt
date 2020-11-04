@@ -400,6 +400,12 @@ over developing the Rackspace DBA Services offering to flesh out the capabilitie
 while working side by side with sales stakeholders, solutions architects, customer
 success managers, and service delivery engineers."
 
+K, Sandeep
+authorAvatar: 'https://s.gravatar.com/avatar/684d0432fcd3c1308b73ddd4e4c997f6'
+bio: "I am Sandeep and have 9+ years of Experience and I am expert in oracle apps dba. I
+also have hands-on knowledge on Oracle products like Oracle EBS 11i,R12 and R12.2, Demantra,
+JDE CNC, Oracle Transportation Management, OBIEE, Inspyrus, and Hyperion."
+
 Kalar, Erika
 authorAvatar: n/a
 bio: "I'm a content jack-of-all-trades. From large, complex websites and apps to 
