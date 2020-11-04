@@ -6,10 +6,10 @@ import PropTypes from 'prop-types';
 const Hit = ({ hit }) => (
   <div className="row">
     <div className="col-sm-12">
-      <p className="search-title">
-        <a className="search-link" href="/blog">Blog</a>&nbsp;`{'>'}`&nbsp;
+      <span className="search-title">
+        <a className="search-link" href="/blog">Blog</a>&nbsp;&gt;&nbsp;
         <a className="search-link" href="/blog">{hit.categories}</a>
-      </p>
+      </span>
       <Highlight attribute="title" hit={hit} tagName="mark"/>
       <Highlight attribute="summary" hit={hit} tagName="mark"/>
       <span className="search-author" > By &nbsp; <Highlight attribute="author" hit={hit} tagName="mark" /></span>
