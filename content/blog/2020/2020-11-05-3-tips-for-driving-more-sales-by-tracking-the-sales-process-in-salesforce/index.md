@@ -14,14 +14,23 @@ authorIsRacker: true
 categories:
     - Salesforce
 metaTitle: "3 tips for driving more sales by tracking the sales process in salesforce"
-metaDescription: "."
+metaDescription: "Business operations are critical and require a specific sequence of steps to
+ensure a successful outcome. Training, a sales handbook and well configure
+Salesforce metrics are some of the strategize that can make your sales process
+more dynamic"
 ogTitle: "3 tips for driving more sales by tracking the sales process in salesforce"
-ogDescription: "."
+ogDescription: "Business operations are critical and require a specific sequence of steps to
+ensure a successful outcome. Training, a sales handbook and well configure
+Salesforce metrics are some of the strategize that can make your sales process
+more dynamic"
 slug: "3-tips-for-driving-more-sales-by-tracking-the-sales-process-in-salesforce"
 
 ---
 
-Replace with short intro sentence or two.
+Business operations are critical and require a specific sequence of steps to
+ensure a successful outcome. Training, a sales handbook and well configure
+Salesforce metrics are some of the strategize that can make your sales process
+more dynamic
 
 <!--more-->
 
