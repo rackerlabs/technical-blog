@@ -3,7 +3,11 @@ layout: post
 title: "How to take APEX backups"
 date: 2020-11-04
 comments: true
-author: K Sandeep
+author: Sandeep K
+authorAvatar: 'https://s.gravatar.com/avatar/684d0432fcd3c1308b73ddd4e4c997f6'
+bio: "I am Sandeep and have 9+ years of Experience and I am expert in oracle apps dba. I
+also have hands-on knowledge on Oracle products like Oracle EBS 11i,R12 and R12.2, Demantra,
+JDE CNC, Oracle Transportation Management, OBIEE, Inspyrus, and Hyperion."
 published: true
 authorIsRacker: true
 categories:
