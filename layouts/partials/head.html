@@ -9,7 +9,7 @@
 <meta name="application-name" content="{{ $title }}" />
 <meta name="msapplication-config" content="/favicons/browserconfig.xml" />
 <meta name="theme-color" content="#ffffff" />
-<meta name="description" content="{{ .Title }}">
+<meta name="description" content="{{ .Params.summary }}">
 {{ if .Params.summary }}
 <meta name="summary" content="{{ .Params.summary }}">
 {{ else if .Site.Params.summary }}
@@ -22,21 +22,9 @@
 {{ else if .Site.Params.keywords }}
 <meta name="keywords" content="{{ .Site.Params.keywords }}">
 {{ end }}
-<meta property="url" content="{{ .Params.slug }}">
-<meta property="author" content="{{ .Params.author }}">
-<meta property="date" content="{{ .Params.date }}"> 
-<!-- og meta tags -->
-<meta property="og:url" content="{{ .Site.BaseURL }}">
-{{ if .Params.description }}
-<meta property="og:description" content="{{ .Params.description }}">
-{{ else if .Site.Params.description }}
-<meta property="og:description" content="{{ .Site.Params.description }}">
-{{ end }}
-{{ if .Params.keywords }}
-<meta property="og:keywords" content="{{ .Params.keywords }}">
-{{ else if .Site.Params.keywords }}
-<meta property="og:keywords" content="{{ .Site.Params.keywords }}">
-{{ end }}
+<meta property="url" name="url" content="{{ .Params.slug }}">
+<meta property="author" name="author" content="{{ .Params.author }}">
+<meta property="date" name="date" content="{{ .Params.date }}">
 <!-- {{- if eq (getenv "HUGO_ENV") "production" | or (eq $.Site.Params.env "production") -}}
 <meta name="robots" content="index, follow" />
 {{- else -}}
