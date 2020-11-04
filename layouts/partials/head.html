@@ -39,10 +39,8 @@
 {{ end }}
 {{ if .Params.categories }}
 <meta name="category" property="category" content="{{ .Params.categories}}">
-{{ else if .Site.Params.categories }}
-<meta name="category" property="category" content="{{ .Site.Params.categories }}">
 {{ else }}
-<meta name="category" property="category" content="{{ .Categories }}">
+<meta name="category" property="category" content="{{ .Site.Params.categories }}">
 {{ end }}
 <!-- {{- if eq (getenv "HUGO_ENV") "production" | or (eq $.Site.Params.env "production") -}}
 <meta name="robots" content="index, follow" />
