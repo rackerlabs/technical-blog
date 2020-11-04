@@ -3,7 +3,7 @@ layout: post
 title: "Make the most of your CRM"
 date: 2020-11-04
 comments: true
-author: Racker
+author: Rackspace Salesforce Team
 published: true
 authorIsRacker: true
 categories:
@@ -20,7 +20,7 @@ slug: "make-the-most-of-your-crm"
 
 ---
 
-The great thing about the Salesforce platform is its customizability.
+The great thing about the Salesforce&reg; platform is its customizability.
 You can start with some basic capabilities and customize the platform to address
 the changing needs of your business.
 
