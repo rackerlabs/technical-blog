@@ -9,22 +9,41 @@
 <meta name="application-name" content="{{ $title }}" />
 <meta name="msapplication-config" content="/favicons/browserconfig.xml" />
 <meta name="theme-color" content="#ffffff" />
-<meta name="description" content="{{ .Params.summary }}">
 {{ if .Params.summary }}
-<meta name="summary" content="{{ .Params.summary }}">
+<meta name="description" property="description" content="{{ .Params.summary }}">
 {{ else if .Site.Params.summary }}
-<meta name="summary" content="{{ .Site.Params.summary }}">
+<meta name="description" property="description" content="{{ .Site.Params.summary }}">
 {{ else }}
-<meta name="summary" content="{{ .Summary }}">
+<meta name="description" property="description" content="{{ .Summary }}">
 {{ end }}
-{{ if .Params.keywords }}
-<meta name="keywords" content="{{ .Params.keywords }}">
-{{ else if .Site.Params.keywords }}
-<meta name="keywords" content="{{ .Site.Params.keywords }}">
-{{ end }}
+{{ if .Params.slug }}
 <meta property="url" name="url" content="{{ .Params.slug }}">
-<meta property="author" name="author" content="{{ .Params.author }}">
-<meta property="date" name="date" content="{{ .Params.date }}">
+{{ else if .Site.Params.slug }}
+<meta property="url" name="url" content="{{ .Site.Params.slug }}">
+{{ else }}
+<meta property="url" name="url" content="{{ .Slug }}">
+{{ end }}
+{{ if .Params.author }}
+<meta name="authors" property="authors" content="{{ .Params.author }}">
+{{ else if .Site.Params.author }}
+<meta name="authors" property="authors" content="{{ .Site.Params.author }}">
+{{ else }}
+<meta name="authors" property="authors" content="{{ .Author }}">
+{{ end }}
+{{ if .Params.date }}
+<meta name="datePublished" property="datePublished" content="{{ .Params.date }}">
+{{ else if .Site.Params.date }}
+<meta name="datePublished" property="datePublished" content="{{ .Site.Params.date }}">
+{{ else }}
+<meta name="datePublished" property="datePublished" content="{{ .Date }}">
+{{ end }}
+{{ if .Params.categories }}
+<meta name="category" property="category" content="{{ .Params.categories}}">
+{{ else if .Site.Params.categories }}
+<meta name="category" property="category" content="{{ .Site.Params.categories }}">
+{{ else }}
+<meta name="category" property="category" content="{{ .Categories }}">
+{{ end }}
 <!-- {{- if eq (getenv "HUGO_ENV") "production" | or (eq $.Site.Params.env "production") -}}
 <meta name="robots" content="index, follow" />
 {{- else -}}
