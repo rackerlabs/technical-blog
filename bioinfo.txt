@@ -626,7 +626,7 @@ authorAvatar: 'https://s.gravatar.com/avatar/bbd32264e5b49be8f1515f6a64b1f1e2'
 bio: n/a
 
 Plummer, Adam
-authorAvatar: 'https://s.gravatar.com/avatar/c2945c57e1812f8b455101e1a2e49cac'
+authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-UBG0V7BFZ-1302fe3c1384-512'
 bio: "I am continually energized by the increasing importance and relevance of
 technology's place in solving business challenges. My mission is to uncover
 opportunities to help companies realize true business transformation, with
