@@ -9,8 +9,7 @@ const webpack = require("webpack");
 dotenv.config();
 module.exports = {
   entry: [
-    path.resolve('src', 'js', 'index.js'),
-    path.resolve('src', 'css', 'app.scss'),
+    path.resolve('src', 'js', 'index.js')
   ],
   module: {
     rules: [

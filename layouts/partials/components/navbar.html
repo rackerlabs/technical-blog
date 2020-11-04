@@ -1,5 +1,4 @@
 {{- $isHome := .IsHome -}}
-{{- $isDocs := (eq .Section "docs") -}}
 {{- $isBlogs := (eq .Section "blog") -}}
 
 
@@ -32,6 +31,7 @@
           <li><a href="https://cp.rackspace.com">Cloud Office Control Panel</a></li>
         </ul>
       </div>
+      {{- if or $isBlogs -}}
       <div class="nav-item buttons-nav-item" data-signed-out="true">
         <span data-tooltip="Click Here for Search" data-tooltip-position="top" class="mobile-search">
           <button type="button" class="btn btn-white" data-toggle="modal" data-placement="top"
@@ -42,10 +42,11 @@
       </div>
       {{- end -}}
       {{- end -}}
+      {{- end -}}
   </nav>
 </header>
 
-<header class="header {{ if $isDocs }} docs {{ end }}">
+<header class="header">
   <nav class="nav navbar navbar-expand-lg navbar-dark bg-dark">
     <a href="https://www.rackspace.com/" title="Go to homepage" class="logo navbar-brand"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -54,11 +55,13 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       {{- partial "components/navbar_nav.html" .Site.Menus.main . -}}
+      {{- if or $isBlogs -}}
       <span data-tooltip="Click Here for Search" data-tooltip-position="top" class="desktop-search">
         <button type="button" class="btn btn-white" data-toggle="modal" data-placement="top" data-target="#searchModal">
           <i class="fa fa-search" aria-hidden="true"></i>
         </button>
       </span>
+      {{- end -}}
     </div>
   </nav>
 </header>

@@ -49,7 +49,6 @@
 {{ $style := resources.Get "styles.scss" | toCSS | minify | fingerprint }} 
 <link rel="stylesheet" href="{{ $style.Permalink }}" emotion="🤩">
 
-<link rel="stylesheet" href="assets/main.css" emotion="🤩">
 
 <link rel="apple-touch-icon" sizes="180x180" href="/favicons/favicon.ico" />
 <link rel="icon" type="image/png" href="/favicons/favicon.ico" sizes="32x32" />
