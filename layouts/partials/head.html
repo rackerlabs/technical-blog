@@ -67,10 +67,9 @@
 <meta name="robots" content="index, follow" />
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@0/dist/algoliasearchNetlify.css" />
 {{ $style := resources.Get "styles.scss" | toCSS | minify | fingerprint }} 
 <link rel="stylesheet" href="{{ $style.Permalink }}" emotion="🤩">
-
 
 <link rel="apple-touch-icon" sizes="180x180" href="/favicons/favicon.ico" />
 <link rel="icon" type="image/png" href="/favicons/favicon.ico" sizes="32x32" />
