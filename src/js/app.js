@@ -1,70 +1,54 @@
-import contentLoaded from "content-loaded";
-import SmoothScroll from "./imports/smoothScroll";
-const Entities = require('html-entities').AllHtmlEntities;
-// import algoliasearch from 'algoliasearch/lite';
-// import PropTypes from 'prop-types';
+import algoliasearch from 'algoliasearch/lite';
+import React, { Component } from 'react';
+import { InstantSearch, SearchBox, Configure } from 'react-instantsearch-dom';
+import InfiniteHits from './InfiniteHits';
+import { connectStateResults } from "react-instantsearch/connectors"
 
-import moment from "moment";
+const algoliaClient = algoliasearch(
+  ALGOLIA_APP_ID,
+  ALGOLIA_API_KEY
+);
 
-// import React, { Component } from "react";
-// import {
-//   InstantSearch,
-//   Hits,
-//   SearchBox,
-//   Pagination,
-//   Highlight,
-//   ClearRefinements,
-//   RefinementList,
-//   Configure,
-// } from 'react-instantsearch-dom';
+const Results = connectStateResults(
+  ({ searchState, searchResults, children }) =>
+    searchResults && searchResults.nbHits !== 0 ? (
+      children
+    ) : (
+      <span></span>
+    )
+);
+const searchClient = {
+    search(requests) {
+        if (
+            requests.every(({ params }) => !params.query.trim()
+            )) {
+            return Promise.resolve({
+                results: requests.map(() => ({
+                    hits: [],
+                    nbHits: 0,
+                    nbPages: 0,
+                    processingTimeMS: 0,
+                })),
+            });
+        }
+        return algoliaClient.search(requests);
+    }
+};
 
-// const algoliaClient = algoliasearch(ALGOLIA_NETLIFY_BLOG_APP_ID, ALGOLIA_NETLIFY_BLOG_SEARCH_KEY);
-// const searchClient = {
-//   search(requests) {
-//     if (requests.every(({
-//         params
-//     }) => !params.query)) {
-//       return Promise.resolve({
-//         results: requests.map(() => ({
-//           hits: [],
-//           nbHits: 0,
-//           nbPages: 0,
-//         })),
-//       });
-//     }
-//     return algoliaClient.search(requests);
-//   },
-// };
-// class App extends Component {
-//   render() {
-//     return (
-//       <div className="ais-InstantSearch">
-//         <InstantSearch indexName={ALGOLIA_NETLIFY_BLOG_INDEX} searchClient={searchClient}>
-//           <div className="right-panel">
-//             <SearchBox />
-//             <Hits hitComponent={Hit} />
-//             <Pagination />
-//           </div>
-//         </InstantSearch>
-//       </div>
-//     )
-//   }
-// }
-// function Hit(props) {
-//   return (
-//     <div>
-//       <div className="hit-name">
-//         <Highlight attribute="title" hit={props.hit} />
-//       </div>
-//       <div className="hit-description">
-//         <Highlight attribute="content" hit={props.hit} />
-//       </div>
-//     </div>
-//   );
-// }
+class App extends Component {
+  render() {
+    return (
+      <div className="ais-InstantSearch">
+        <InstantSearch indexName={ALGOLIA_BLOG_INDEX} searchClient={searchClient}>
+          <Configure hitsPerPage={16} />
+          <SearchBox className="searchbox" translations={{ placeholder: 'Search across Blogs', }} showLoadingIndicator />
+            <Results>
+              <InfiniteHits minHitsPerPage={16} />
+            </Results>
+        </InstantSearch>
+      </div>
+    );
+  }
+}
 
-// Hit.propTypes = {
-//   hit: PropTypes.object.isRequired,
-// };
-
-// export default App;
+export default App;
