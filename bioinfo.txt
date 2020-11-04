@@ -836,6 +836,14 @@ Vue, Winnie
 authorAvatar: ''
 bio: n/a
 
+Wah, Wilfred
+authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-UR3DD1J83-93420d85dfea-512'
+bio: "Wilfred is a Principal Consultant of Advisory Services, Rackspace
+Technology North Asia. His area of expertise includes cloud migration assessment,
+cloud economics, people transformation, cloud adoption strategy, and the
+transformation roadmap. He has more than 15 years of consultancy experience with
+major vendors such as Dell/EMC, SAS, and AWS before joining Rackspace."
+
 Whitehead, Chris
 authorAvatar: 'https://s.gravatar.com/avatar/286b19b54ad30b4f0d25a4ac679744a8'
 bio: n/a
@@ -851,17 +859,14 @@ Wilensky, Jeff
 authorAvatar: 'https://s.gravatar.com/avatar/017eaa68c10c8d1b95aacf7d34557a28'
 bio: n/a
 
-Wilfred, Wah
-authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-UR3DD1J83-93420d85dfea-512'
-bio: "Wilfred is a Principal Consultant of Advisory Services, Rackspace
-Technology North Asia. His area of expertise includes cloud migration assessment,
-cloud economics, people transformation, cloud adoption strategy, and the
-transformation roadmap. He has more than 15 years of consultancy experience with
-major vendors such as Dell/EMC, SAS, and AWS before joining Rackspace."
-
 Wilkins, Kymberly
-authorAvatar: 
-
+authorAvatar: n/a
+bio: "Principal Engineer, Solutions Architect, Database Team Manager, trusted advisor,
+and technical evangelist in the NoSQL arena. Kimberly now works mainly with NoSQL technologies
+such as MongoDB, supporting pre-sale and post-sale efforts and client on-boarding and support. 
+She is passionate about emerging technology and trends (including AR/VR/MR, AI, ML, DL as well
+IoT/EoT/IIoT and blockchain topics), while also investigating new data store offerings such as
+DocumentDB, QLDB, Snowflake, and more as they come along."
 
 Winfrey, Lorenzo
 authorAvatar: 'https://s.gravatar.com/avatar/4946b45863e87d1a876eeb2873af2593'
