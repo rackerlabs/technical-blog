@@ -1,23 +1,10 @@
 User-agent: Algolia Crawler
 Disallow: /
-
-User-agent: Algolia Crawler
 Disallow: /categories/
-
-User-agent: Algolia Crawler
 Disallow: /blog/
-
-User-agent: Algolia Crawler
 Disallow: /author/
-
-User-agent: Algolia Crawler
-Disallow: /404/
-
-User-agent: Algolia Crawler
+Disallow: /404
 Disallow: /blog/page/*
-
-User-agent: Algolia Crawler
-Disallow: /author/*
-
-User-agent: Algolia Crawler
-Disallow: /categories/*
+Disallow: /author/page/*
+Disallow: /blog/authors/*
+Disallow: /blog/categories/*
