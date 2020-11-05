@@ -42,7 +42,7 @@ Sentinels handle the failover by rewriting the configuration files on the runnin
 Say we have a primary **A** replicating to replicas **B** and **C**. We have three sentinels (**s1**, **s2**, **s3**) running on our
 application servers, which write to Redis. At this point, **A** (our current primary) goes offline. Our sentinels all see **A** as
 offline and send `SDOWN` messages to each other. Then they all agree that **A** is down, so they set **A** to `ODOWN` status. From
-here, an election happens to see who is most ahead, and in this case, they choose **B** to be the new master.
+here, an election happens to see who is most ahead, and in this case, they choose **B** to be the new primary.
 
 They modify the config file for **B** so that server no longer depends on any instances. Meanwhile, they modify the config file for
 **C** rewrites so that it becomes a replica of **B** instead of **A**. From here, everything continues as normal. If **A** comes
