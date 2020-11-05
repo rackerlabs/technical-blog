@@ -4,6 +4,13 @@ title: "Are you prepared for disaster recovery? A comparison of public cloud opt
 date: 2020-10-29
 comments: true
 author: Zahid Mustafa
+authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-UEX7ARXEH-c06eeae9a67c-192'
+bio: "I'm a Cloud Solutions Architect with a proven track record of successful delivery.
+With over 23 years industry experience, my client base has ranged from FTSE 100 companies
+to large public sector bodies. This breadth of experience has enabled me to gain a skill
+set covering the full life cycle from initial strategy, requirements planning, architecture
+and system design through to post-production support. My experience includes Disaster
+Recovery planning, design, and testing over many years, both on-premises and on public cloud."
 published: true
 authorIsRacker: true
 categories:
@@ -26,7 +33,7 @@ environments to public cloud offerings. Are you ready?
 
 This three-part series explores disaster-recovery options, from models to environments to
 public cloud offerings. Are you ready?  If you haven't read it, check out
-[Part one](https://docs.rackspace.com/blog/are-you-prepared-for-disaster-recovery-a-comparison-of-public-cloud-options-part-one/).
+[Part One](https://docs.rackspace.com/blog/are-you-prepared-for-disaster-recovery-a-comparison-of-public-cloud-options-part-one/).
 
 ### Disaster recovery on-premises versus cloud
 
@@ -187,12 +194,12 @@ infrastructure-as-a-service (IaaS) model, from primary to secondary zones and re
 Common examples include Data Guard replication for Oracle® databases or always-on availability
 groups for SQL Server. 
 
-### Coming Soon
+### What's next?
 
-Part three of this series on disaster preparation continues is coming next week, so be sure
-to come back and learn more about AWS and GCP DR offerings.
+Check out [Part Three](https://docs.rackspace.com/blog/are-you-prepared-for-disaster-recovery-a-comparison-of-public-cloud-options-part-three/)
+of this series on disaster preparation to learn more about AWS and GCP DR offerings.
 
-<a class="cta red" id="cta" href="https://www.rackspace.com/professional-services">Learn more about our Professional Services.</a>
+<a class="cta blue" id="cta" href="https://www.rackspace.com/professional-services">Learn more about our Professional Services.</a>
 
 Use the Feedback tab to make any comments or ask questions. You can also click
 **Sales Chat** to [chat now](https://www.rackspace.com/) and start the conversation.

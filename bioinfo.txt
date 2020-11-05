@@ -586,6 +586,15 @@ Networking, Developer Tools, and more. He is an AWS APN Ambassador and holds
 several AWS certifications. In his spare time, he enjoys homebrewing his
 award-winning beer, cycling, and trying to find less expensive hobbies."
 
+Mustafa, Zahid
+authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-UEX7ARXEH-c06eeae9a67c-192'
+bio: "I'm a Cloud Solutions Architect with a proven track record of successful delivery.
+With over 23 years industry experience, my client base has ranged from FTSE 100 companies
+to large public sector bodies. This breadth of experience has enabled me to gain a skill
+set covering the full life cycle from initial strategy, requirements planning, architecture
+and system design through to post-production support. My experience includes Disaster
+Recovery planning, design, and testing over many years, both on-premises and on public cloud."
+
 Myoung,Sam
 authorAvatar: 'https://s.gravatar.com/avatar/7632808463e741b328ea3ce18f80b935'
 bio: "Sam Myoung is a product manager with over 11 years of experiences in the IT
