@@ -5,6 +5,7 @@ Disallow: /blog/
 Disallow: /author/
 Disallow: /404
 Disallow: /blog/page/*
+Disallow: /author/*
 Disallow: /author/page/*
 Disallow: /blog/authors/*
 Disallow: /blog/categories/*
