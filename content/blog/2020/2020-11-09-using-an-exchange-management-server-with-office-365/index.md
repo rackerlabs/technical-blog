@@ -21,7 +21,7 @@ slug: "using-an-exchange-management-server-with-office-365"
 ---
 
 Microsoft Office 365&reg; offers a wide assortment of great features to improve productivity,
-collaboration, improved security, device management, and so much more. For IT people, this
+collaboration, security, device management, and so much more. For IT people, this
 adds another layer of management, including how to manage those users. 
 
 <!--more-->
