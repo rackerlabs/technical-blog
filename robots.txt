@@ -17,7 +17,7 @@ User-agent: Algolia Crawler
 Disallow: /blog/page/*
 
 User-agent: Algolia Crawler
-Disallow: /author/*/page/*
+Disallow: /author/*
 
 User-agent: Algolia Crawler
-Disallow: /categories/*/page/*
+Disallow: /categories/*
