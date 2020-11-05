@@ -217,7 +217,7 @@ images = ["/img"]
 
 [params.algolia]
   vars = ["title", "summary", "date", "permalink", "description", "author", "content", "order", "cannonical"]
-  params = ["categories", "tags", "description", "author"]
+  params = ["categories", "description", "author"]
 
 
 [related]
@@ -237,13 +237,9 @@ weight = 150
 name = "categories"
 weight = 150
 [[related.indices]]
-name = "tags"
-weight = 100
-[[related.indices]]
 name = "date"
 pattern = "2006"
 weight = 10
 [taxonomies]
 author = "author"
 category = "categories"
-tag = "tags"

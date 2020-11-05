@@ -1,5 +1,5 @@
 [build.environment]
-  HUGO_VERSION = "0.77.0"
+  HUGO_VERSION = "0.78.1"
   NPM_VERSION = "7.0.3"
   NODE_VERSION = "15.0.1"
 
