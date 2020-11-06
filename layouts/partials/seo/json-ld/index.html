@@ -4,41 +4,30 @@
   "@context": "http://schema.org",
   "@type": "WebSite",
   {{- if .Params.slug -}}
-  "url": "{{- .Params.slug -}}"
+  "url": "{{- .Params.slug -}}",
   {{- else if .Site.Params.slug -}}
-  "url": "{{- .Site.Params.slug -}}"
-  {{- else -}}
-  "url": "{{- .Slug -}}"
+  "url": "{{- .Site.Params.slug -}}",
   {{- end -}}
-  {{- if .Site.Params.Author -}}
+  {{- if .Site.Params.author -}}
   "author": {
     "@type": "Person",
-    "name": "{{- .Site.Params.Author -}}"
-  }
-  {{- else if .Params.Author -}}
+    "name": "{{- .Site.Params.author -}}"
+  },
+  {{- else if .Params.author -}}
   "author": {
     "@type": "Person",
-    "name": "{{- .Params.Author -}}"
-  }
-  {{- else -}}
-  "author": {
-    "@type": "Person",
-    "name": "{{- .Author -}}"
-  }
+    "name": "{{- .Params.author -}}"
+  },
   {{- end -}}
   {{- if .Site.Params.summary -}}
-  "description": "{{- .Site.Params.Summary -}}
+  "description": "{{- .Site.Params.summary -}}",
   {{- else if .Params.summary -}}
-  "description": "{{- .Params.Summary -}}
-  {{- else -}}
-  "description": "{{- .Summary -}}
+  "description": "{{- .Params.summary -}}",
   {{- end -}}
   {{- if .Site.Params.date -}}
-  "datePublished": "{{- .Site.Params.date -}}
+  "datePublished": "{{- .Site.Params.date -}}",
   {{- else if .Params.date -}}
-  "datePublished": "{{- .Params.date -}}
-  {{- else -}}
-  "datePublished": "{{- .Date -}}
+  "datePublished": "{{- .Params.date -}}",
   {{- end -}}
   "title": "{{- .Site.Title -}}"
 }
