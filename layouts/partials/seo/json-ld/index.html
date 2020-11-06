@@ -31,6 +31,11 @@
   {{- else if .Params.date -}}
   "datePublished": "{{- .Params.date -}}",
   {{- end -}}
+  {{- if .Site.Params.categories -}}
+  "category": "{{- .Site.Params.categories -}}",
+  {{- else if .Params.categories -}}
+  "category": "{{- .Params.categories -}}",
+  {{- end -}}
   "title": "{{- .Site.Title -}}"
 }
 </script>

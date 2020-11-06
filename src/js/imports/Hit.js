@@ -21,8 +21,10 @@ const Hit = ({ hit }) => (
       <a className="search-summary-link" href={`/support/how-to/${hit.url}`}>
         <p className="search-summary"><Highlight attribute="summary" hit={hit} /></p>
       </a>
-      <span className="search-author" > By &nbsp; <a className="search-author-link" href={`/support/how-to/${hit.author}`}><Highlight attribute="author" hit={hit} tagName="mark" /></a></span>
-      <span className="search-date">{moment(hit.date).format('LL')}</span>
+      <span className="search-author" > By &nbsp; { hit.authors.map(function(item, index) {
+        return <li key={`${index}`}><a className="search-author-link" href={`/support/how-to/${item}`}>{ (index ? ', ' : '') + item }</a></li>;
+          })}</span>
+      <span className="search-date">{moment(hit.datePublished).format('LL')}</span>
     </div>
   </div>
 );
