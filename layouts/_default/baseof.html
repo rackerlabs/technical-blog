@@ -5,6 +5,10 @@
   {{- block "head" . -}}
   <title>{{ block "title" . }}{{ with .Title | markdownify }}{{ . }} - {{ end }}{{ .Site.Title | markdownify }}{{ end }}</title>
   {{- partial "head" . -}}
+  {{- block "json-ld" . -}}
+        {{/* This is where schema.org schemas get rendered for Google structured data */}}
+        {{- partial "seo/json-ld/index" . -}}
+  {{- end -}}
   {{- end -}}
 </head>
 

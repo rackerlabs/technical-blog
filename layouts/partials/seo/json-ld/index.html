@@ -38,7 +38,7 @@
 
   {{- if .Site.Params.date -}}
   "datePublished": "{{- .Site.Params.date -}}
-  {{- else if .Params.date-}}
+  {{- else if .Params.date -}}
   "datePublished": "{{- .Params.date -}}
   {{- else -}}
   "datePublished": "{{- .Date -}}
