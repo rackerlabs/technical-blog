@@ -32,9 +32,9 @@
     <meta name="datePublished" property="article:published_time" content="{{ .Site.Params.date }}">
 {{ end }}
 {{ if .Params.categories }}
-    <meta name="category" property="product:category" content="{{ delimit .Params.categories ", " }}">
+    <meta name="category" property="product:category" content="[{{ delimit .Params.categories ", " }}]">
 {{ else if .Site.Params.categories }}
-    <meta name="category" property="product:category" content="{{ delimit .Site.Params.categories ", " }}">
+    <meta name="category" property="product:category" content="[{{ delimit .Site.Params.categories ", " }}]">
 {{ end }}
 
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
