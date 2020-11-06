@@ -23,6 +23,8 @@
   "description": "{{- .Site.Params.summary -}}",
   {{- else if .Params.summary -}}
   "description": "{{- .Params.summary -}}",
+  {{- else -}}
+  "description": "{{- .Summary -}}",
   {{- end -}}
   {{- if .Site.Params.date -}}
   "datePublished": "{{- .Site.Params.date -}}",
