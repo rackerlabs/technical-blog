@@ -26,7 +26,9 @@ slug: "objectrocket-elasticsearch-on-aws-has-landed"
 canonical: https://www.objectrocket.com/blog/elasticsearch/objectrocket-elasticsearch-on-aws-has-landed/
 ---
 
-Replace with short intro sentence or two.
+*Originally published on Sep 17, 2019, at ObjectRocket.com/blog*
+
+We are happy to announce that Rackspace ObjectRocket's offerings now include Elasticsearch version 7.2.1 (plus earlier versions), hosted on our ObjectRocket platform.
 
 <!--more-->
 
@@ -34,22 +36,22 @@ Replace with short intro sentence or two.
 
 ### General Availability = Stability and Support
 
-ObjectRocket has been offering a hosted Elasticsearch offering since version 1.5. We have a lot of time and experience invested in our original hosting platform, which has been running for four years, so we’re confident in our ability to host and support all of our customers’ needs, no matter what they are. We are happy to announce that our offerings now include Elasticsearch version 7.2.1 (plus earlier versions), hosted on our new ObjectRocket platform.
+Rackspace ObjectRocket has been offering a hosted Elasticsearch offering since version 1.5. We have a lot of time and experience invested in our original hosting platform, which has been running for five years, so we’re confident in our ability to host and support all of our customers’ needs, no matter what they are. We are happy to announce that our offerings include Elasticsearch version 7.2.1 (plus earlier versions), hosted on our new ObjectRocket platform.
 When we set out to build a whole new hosting platform almost two years ago, we started on the long path of building up that experience and confidence into a new and more powerful platform. We took it as an opportunity to improve upon the original product, but we have taken a slow and measured approach in launching our new product to ensure it was just right. The top two priorities are production-ready stability, and our support teams have the right tools to do what they do best.
 
-This product entered alpha a year ago, and we quickly got one of our first customers to participate in a load test with a production workload. Since then, we continued to refine and then entered Beta in March of this year. From there, we continued on another six months of testing, improvements, and refinements to get us to General Availability. Our team, our platform, and the product itself is ready for whatever you want to throw at it.
+This product entered alpha two years ago, and we quickly got one of our first customers to participate in a load test with a production workload. Since then, we continued to refine and then entered Beta in March 2019. From there, we continued on another six months of testing, improvements, and refinements to get us to General Availability. Our team, our platform, and the product itself is ready for whatever you want to throw at it.
 
 #### Elasticsearch Features Available Today
 
 Along with stability and support, we’re launching with a complete list of features:
 
 + **Security:** We protect your cluster with TLS encrypted connections, ACLs/IP whitelisting, role-based access control, and encryption at rest.
-+ **Dedicated Clustered Instances:** Your instance runs on a minimum of three dedicated containers. No limits on indexes, connections, or anything. The full cluster is yours.
++ **Dedicated Clustered Instances:** Your instance runs on a minimum of three dedicated containers. No limits on indexes or connections. 
 + **Kibana and Cerebro Included:** All instances come with an instance of Kibana for visualization and Cerebro for admin tools.
 + **Automated Scaling:** Our API enables you to add nodes to your cluster when you need them and remove nodes when you don’t.
 + **Stats and Monitoring:** Our metrics service provides visibility into the performance and status of your instance.
 
-That’s just a sampling of what we have in place today, and there’s a lot more coming soon! Contact us with any questions about our General Availability release of Elasticsearch on our new hosting platform, or for more information about our offerings.
+That’s just a sampling of what we have in place today, and there’s a lot more coming! Contact us with any questions about our General Availability release of Elasticsearch on our new hosting platform, or for more information about our offerings.
 
 <a class="cta teal" id="cta" href="https://www.rackspace.com/data/dba-services">Learn more about Rackspace DBA Services.</a>
 
