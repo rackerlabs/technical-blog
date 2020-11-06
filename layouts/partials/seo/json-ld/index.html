@@ -9,8 +9,7 @@
   "url": "{{- .Site.Params.slug -}}"
   {{- else -}}
   "url": "{{- .Slug -}}"
-  {{- end -}},
-
+  {{- end -}}
   {{- if .Site.Params.Author -}}
   "author": {
     "@type": "Person",
@@ -27,7 +26,6 @@
     "name": "{{- .Author -}}"
   }
   {{- end -}}
-
   {{- if .Site.Params.summary -}}
   "description": "{{- .Site.Params.Summary -}}
   {{- else if .Params.summary -}}
@@ -35,7 +33,6 @@
   {{- else -}}
   "description": "{{- .Summary -}}
   {{- end -}}
-
   {{- if .Site.Params.date -}}
   "datePublished": "{{- .Site.Params.date -}}
   {{- else if .Params.date -}}
@@ -43,7 +40,6 @@
   {{- else -}}
   "datePublished": "{{- .Date -}}
   {{- end -}}
-
   "title": "{{- .Site.Title -}}"
-
 }
+</script>

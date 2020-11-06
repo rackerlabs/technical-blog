@@ -9,9 +9,6 @@ outputs:
 - Algolia
 date: 2017-12-31
 description: 'Technical Blog'
-author: []
-categories: []
-tags: []
 cta:
   headline: ''
   textline: ''
