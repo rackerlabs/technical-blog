@@ -89,10 +89,24 @@ bio: n/a
 
 Benmbarek, Mustapha
 authorAvatar: 'https://s.gravatar.com/avatar/0299204313e4fc8d8c722748fa21a6b2?s=80'
-bio: Mustapha works with startups and companies of any size to support their
+bio: "Mustapha works with startups and companies of any size to support their
 innovation. In his role as Solutions Architect at Rackspace, he leverages his
 experience to help people bring their ideas to life, providing guidance and
-technical assistance on cloud-based and AWS architectures.
+technical assistance on cloud-based and AWS architectures."
+
+Berry, Tana
+authorAvatar: n/a
+bio: "At ObjectRocket (a Rackspace company) Tana moved over to 
+the marketing side of the house, learned new magic on how to get out the word 
+about our great DBaaS offerings, and leveraged my previous content 
+and community experience. Tana was focused on creating technical marketing content 
+(mostly blogs) and social media (yay Twitter!), plus doing a bit of work with 
+the dev teams on tech docs. This role took me back full circle to databases, 
+where I started out 20+ years ago. ;-) Rackspace ObjectRocket provides database expertise
+and management of several popular DBs in the Cloud; they do the database work, 
+and enable developers to focus on their application's product design and coding, 
+not the underlying DB."
+
 
 Bonig, Matthew
 authorAvatar: 'https://s.gravatar.com/avatar/17fefeb3c1832175bf6fbe9841368292'
