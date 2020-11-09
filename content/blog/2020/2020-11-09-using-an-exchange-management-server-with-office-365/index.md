@@ -4,6 +4,11 @@ title: "Using an Exchange Management Server with Office 365"
 date: 2020-11-09
 comments: true
 author: Aaron Medrano
+authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U0DENQ9JL-fac56480a789-512'
+bio: "I am a Windows System Engineer at Rackspace Technology and an experienced Lead
+Technician with a demonstrated history of working in the Information Technology and Services
+industry. I'm skilled in research, product development, customer service, and problem
+solving&mdash;a strong engineering professional, graduated from San Antonio College."
 published: true
 authorIsRacker: true
 categories:
