@@ -70,19 +70,6 @@ and currently works at Rackspace. He is enthusiastic, a quick learner, and
 always learns new technologies. His strengths include analytical thinking,
 problem solving, learning from mistakes, and working well under pressure."
 
-Bhatnagar, Amit Kumar
-authorAvatar: 'https://s.gravatar.com/avatar/c9c74dd30299675961e5160a4fbb05fe'
-bio: "Amit is a DBA with 14+ years of excellent professional exposure and
-experience in Oracle/Mysql/Vertica/Postgres/NoSQL(Cassandra)/MongoDB database
-servers, with extensive knowledge of the functional areas of business
-administration and the application of information technology for efficient
-management of business processes."
-
-Bhatnagar, Vinit
-authorAvatar: 'https://s.gravatar.com/avatar/60a7335f926a020472128ac628189940'
-bio: "Vinit Bhatnagar has 15+ years of experience in Oracle Financials. Vinit
-has worked on many implementations and supports projects across industries."
-
 Belke, Emily
 authorAvatar: 'https://s.gravatar.com/avatar/4a7de5d7772b14826cca8496c410ba88'
 bio: n/a
@@ -96,17 +83,29 @@ technical assistance on cloud-based and AWS architectures."
 
 Berry, Tana
 authorAvatar: n/a
-bio: "At ObjectRocket (a Rackspace company) Tana moved over to 
+bio: "At ObjectRocket (a Rackspace company), I moved over to 
 the marketing side of the house, learned new magic on how to get out the word 
 about our great DBaaS offerings, and leveraged my previous content 
-and community experience. Tana was focused on creating technical marketing content 
+and community experience. I focused on creating technical marketing content 
 (mostly blogs) and social media (yay Twitter!), plus doing a bit of work with 
 the dev teams on tech docs. This role took me back full circle to databases, 
 where I started out 20+ years ago. ;-) Rackspace ObjectRocket provides database expertise
-and management of several popular DBs in the Cloud; they do the database work, 
+and management of several popular databases in the Cloud&mdash;they do the database work, 
 and enable developers to focus on their application's product design and coding, 
 not the underlying DB."
 
+Bhatnagar, Amit Kumar
+authorAvatar: 'https://s.gravatar.com/avatar/c9c74dd30299675961e5160a4fbb05fe'
+bio: "Amit is a DBA with 14+ years of excellent professional exposure and
+experience in Oracle/Mysql/Vertica/Postgres/NoSQL(Cassandra)/MongoDB database
+servers, with extensive knowledge of the functional areas of business
+administration and the application of information technology for efficient
+management of business processes."
+
+Bhatnagar, Vinit
+authorAvatar: 'https://s.gravatar.com/avatar/60a7335f926a020472128ac628189940'
+bio: "Vinit Bhatnagar has 15+ years of experience in Oracle Financials. Vinit
+has worked on many implementations and supports projects across industries."
 
 Bonig, Matthew
 authorAvatar: 'https://s.gravatar.com/avatar/17fefeb3c1832175bf6fbe9841368292'
