@@ -84,7 +84,6 @@ bio: "Vinit Bhatnagar has 15+ years of experience in Oracle Financials. Vinit
 has worked on many implementations and supports projects across industries."
 
 Beebe, Erik
-authorAvatar: n/a
 bio: "Build and manage effective teams. Design, build and manage 
 reliable infrastructure, networks, processes. Datacenter, infrastructure planning. 
 Databases (MongoDB, MySQL, etc.). Containers and virtualization 
