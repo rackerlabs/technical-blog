@@ -545,6 +545,13 @@ Mattson, Josh
 authorAvatar: 'http://www.gravatar.com/avatar/791617263c70278859e1b26c15d13eab'
 bio: n/a
 
+Medrano, Aaron
+authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U0DENQ9JL-fac56480a789-512'
+bio: "I am a Windows System Engineer at Rackspace Technology and an experienced Lead
+Technician with a demonstrated history of working in the Information Technology and Services
+industry. I'm skilled in research, product development, customer service, and problem
+solving&mdash;a strong engineering professional, graduated from San Antonio College."
+
 McLaughlin, Mitchell
 authorAvatar: 'https://media-exp1.licdn.com/dms/image/C5603AQH5r2hzui051w/profile-displayphoto-shrink_100_100/0?e=1596672000&v=beta&t=ar809F1WbFhkJXAvxbf12x6Dh0PmTaGgyeQqgKrATWA'
 bio: "Mitchell is proficient in Salesforce CRM development, administration, and
