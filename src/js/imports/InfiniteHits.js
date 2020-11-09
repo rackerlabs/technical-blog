@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
-import { connectInfiniteHits } from 'react-instantsearch-dom';
+import { connectInfiniteHits, Configure, connectStats } from 'react-instantsearch-dom';
 import PropTypes from 'prop-types';
 import Hit from './Hit';
 
+const Stats = ({ nbHits }) => (
+  <p className="statsLine">
+    Found {nbHits} results found
+  </p>
+);
 
+const CustomStats = connectStats(Stats);
 class InfiniteHits extends Component {
   static propTypes = {
     hits: PropTypes.arrayOf(PropTypes.object).isRequired,
@@ -37,6 +43,8 @@ class InfiniteHits extends Component {
 
     return (
       <div className="hits">
+        <Configure attributesToSnippet={['title', 'description:80']} />
+        <CustomStats />
         <ul>
           {hits.map(hit => (
             <li key={hit.objectID} className="hit-item-single">

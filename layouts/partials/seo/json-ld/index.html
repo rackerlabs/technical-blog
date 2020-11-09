@@ -27,9 +27,9 @@
   "description": "{{- .Summary -}}",
   {{- end -}}
   {{- if .Site.Params.date -}}
-  "datePublished": "{{- .Site.Params.date -}}",
+  "image": "{{- .Site.Params.date.Format "January 2, 2006" -}}",
   {{- else if .Params.date -}}
-  "datePublished": "{{- .Params.date -}}",
+  "image": "{{- .Params.date.Format "January 2, 2006" -}}",
   {{- end -}}
   "title": "{{- .Site.Title -}}"
 }

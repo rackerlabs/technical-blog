@@ -10,12 +10,16 @@ const algoliaClient = algoliasearch(
 );
 
 const Results = connectStateResults(
-  ({ searchState, searchResults, children }) =>
-    searchResults && searchResults.nbHits !== 0 ? (
-      children
-    ) : (
-      <span></span>
-    )
+  ({ searchState, searchResults, children }) => {
+    console.log('state:: ', searchState.query);
+    if (searchState.query && searchResults && searchResults.nbHits !== 0) {
+      return children;
+    } else if (searchState.query && searchResults && searchResults.nbHits === 0) {
+      return (<div className="no-results"><h3>No Results found</h3><p>It seems we can't find any results based on your search.</p></div>);
+    } else {
+      return (<span></span>);
+    }
+  }
 );
 const searchClient = {
     search(requests) {

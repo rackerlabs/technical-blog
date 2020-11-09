@@ -17,7 +17,7 @@
       {{- with .Params.categories -}}
       {{- $len := len . -}}
       <span>{{ range $index, $value := . }}
-        <a href="{{ "/blog/categories/"}}{{  $value | urlize | lower }}" class="post--category"
+        <a href="{{ "/blog/categories/"}}{{  $value | urlize }}" class="post--category"
           data-category="{{ $value | lower }}">
           {{ $value | humanize }}
         </a>{{ if not (eq $len ($index | add 1)) }}, {{- end -}}

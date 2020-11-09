@@ -14,6 +14,7 @@ uglyURLs = false
 smartDashes = true
 title = "Rackspace Developer Center"
 canonifyURLs = true
+enableGitInfo = true
 [markup]
 defaultMarkdownHandler = "goldmark"
 [markup.asciidocExt]
@@ -75,6 +76,14 @@ defaultMarkdownHandler = "goldmark"
     ordered = false
     startLevel = 2
 
+[frontmatter]
+date = ["date", "publishDate", "lastmod"]
+lastmod = [":git", "lastmod", "date", "publishDate"]
+publishDate = ["publishDate", "date"]
+expiryDate = ["expiryDate"]
+categories = ["categories"]
+title = ["title"]
+description = ["description"]
 
 [permalinks]
     blog = "/blog/:slug"
