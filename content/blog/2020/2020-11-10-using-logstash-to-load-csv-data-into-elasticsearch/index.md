@@ -11,11 +11,12 @@ categories:
     - Database
     - ObjectRocket
 metaTitle: "Using logstash to load csv data into elasticsearch"
-metaDescription: metaDescription: "Do you have a brand new Elasticsearch&reg; instance, but all your useful data you’d like to search lives in a **CSV** file? No problem. Logstash&reg; makes turning almost any data into something easily searchable in an Elasticsearch index."
+metaDescription: "Do you have a brand new Elasticsearch&reg; instance, but all your useful data you’d like to search lives in a **CSV** file? No problem. Logstash&reg; makes turning almost any data into something easily searchable in an Elasticsearch index."
 ogTitle: "Using logstash to load csv data into elasticsearch"
-ogDescription: metaDescription: "Do you have a brand new Elasticsearch&reg; instance, but all your useful data you’d like to search lives in a **CSV** file? No problem. Logstash&reg; makes turning almost any data into something easily searchable in an Elasticsearch index."
+ogDescription: "Do you have a brand new Elasticsearch&reg; instance, but all your useful data you’d like to search lives in a **CSV** file? No problem. Logstash&reg; makes turning almost any data into something easily searchable in an Elasticsearch index."
 slug: "using-logstash-to-load-csv-data-into-elasticsearch"
 canonical: https://www.objectrocket.com/blog/elasticsearch/using-logstash-for-csv-data-elasticsearch/
+
 ---
 
 *Originally published on Sep 10, 2015, at ObjectRocket.com/blog*
