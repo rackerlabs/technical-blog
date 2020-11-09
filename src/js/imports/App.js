@@ -11,7 +11,6 @@ const algoliaClient = algoliasearch(
 
 const Results = connectStateResults(
   ({ searchState, searchResults, children }) => {
-    console.log('state:: ', searchState.query);
     if (searchState.query && searchResults && searchResults.nbHits !== 0) {
       return children;
     } else if (searchState.query && searchResults && searchResults.nbHits === 0) {
