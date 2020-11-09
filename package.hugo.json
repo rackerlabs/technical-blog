@@ -3,5 +3,5 @@
   "version": "1.0.0",
   "description": "Technical Blog Site for Rackspace",
   "private": true,
-  "main": "app.js"
+  "main": "index.js"
 }
