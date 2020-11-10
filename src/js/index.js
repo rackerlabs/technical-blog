@@ -6,7 +6,7 @@ ReactDOM.render(<App />, document.getElementById('search'));
 
 contentLoaded().then(() => { 
     try {
-        var atomicalgolia = require("atomic-algolia")
+        var atomicalgolia = require("atomic-algolia");
         var indexName = ALGOLIA_INDEX_NAME
         var indexPath = "../public/algolia.json"
         var cb = function(error, result) {
