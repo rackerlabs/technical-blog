@@ -107,6 +107,23 @@ authorAvatar: 'https://s.gravatar.com/avatar/60a7335f926a020472128ac628189940'
 bio: "Vinit Bhatnagar has 15+ years of experience in Oracle Financials. Vinit
 has worked on many implementations and supports projects across industries."
 
+Beebe, Erik
+bio: "Build and manage effective teams. Design, build and manage 
+reliable infrastructure, networks, processes. Datacenter, infrastructure planning. 
+Databases (MongoDB, MySQL, etc.). Containers and virtualization 
+(OpenVZ, LXC, Proxmox, Docker, KVM, etc). Storage engineering."
+
+Belke, Emily
+authorAvatar: 'https://s.gravatar.com/avatar/4a7de5d7772b14826cca8496c410ba88'
+bio: n/a
+
+Benmbarek, Mustapha
+authorAvatar: 'https://s.gravatar.com/avatar/0299204313e4fc8d8c722748fa21a6b2?s=80'
+bio: Mustapha works with startups and companies of any size to support their
+innovation. In his role as Solutions Architect at Rackspace, he leverages his
+experience to help people bring their ideas to life, providing guidance and
+technical assistance on cloud-based and AWS architectures.
+
 Bonig, Matthew
 authorAvatar: 'https://s.gravatar.com/avatar/17fefeb3c1832175bf6fbe9841368292'
 bio: "As a Senior Software Engineer at Rackspace, Matthew draws upon his 15
