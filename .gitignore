@@ -17,3 +17,7 @@ resources/_gen
 .netlify
 Gemfile.lock
 static/assets
+
+# Vale local styles
+.github/styles/Google
+.github/styles/Microsoft

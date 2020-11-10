@@ -15,7 +15,7 @@ Adding Redis to your application stack is a fantastic way to gain speed with exi
 
 In any case, we advise that customers use caching... EVERYWHERE. Adding Redis to your application stack can greatly improve site speeds when used as a cache.<!--more-->
 
-##What's Redis?
+### What's Redis?
 
 From the "[Introduction to Redis](http://redis.io/topics/introduction)" page at [redis.io](http://redis.io):
 
@@ -23,7 +23,7 @@ From the "[Introduction to Redis](http://redis.io/topics/introduction)" page at 
 
 Want to try Redis? Check out [http://try.redis.io/](http://try.redis.io/)
 
-##Why Redis?
+### Why Redis?
 
 There is a [ton](http://www.quora.com/Redis-vs-Memcached-which-one-should-I-use-for-a-web-based-application) of [debate](http://stackoverflow.com/questions/2873249/is-memcached-a-dinosaur-in-comparison-to-redis) out there on whether to use Redis or Memcached as a cache. Both are great, but Redis provides a few features over Memcached:
 
@@ -31,7 +31,7 @@ There is a [ton](http://www.quora.com/Redis-vs-Memcached-which-one-should-I-use-
 * Key/Value vs. Objects: Redis is more advanced in what it can store
 * Selective deletion of cached items
 
-##How do I set this up?
+### How do I set this up?
 
 You can [install Redis](http://redis.io/download) on a Cloud Server if you like, but I recommend setting up a Redis instance at [RedisToGo](http://redistogo.com/). The instances are configured with Redis already, and RedisToGo makes Redis easy to scale. Other features of RedisToGo:
 

@@ -10,7 +10,7 @@ categories:
 slug: 'powerclient-rackspace-cloud-api-powershell-client' 
 ---
 
-##Update (July 16, 2015)
+### Update (July 16, 2015)
 
 As of July 16th 2015, this client has been updated to use JSON requests
 ONLY. All XML references have been removed at this time. Several new
@@ -32,11 +32,11 @@ following for more information:
 
 {{<img src="powershell.png" title="" alt="">}}
 
-##Who am I and why should you use this client?
+### Who am I and why should you use this client?
 
 My name is Mitch Robins and I am currently a sales engineer in the SMB segement for Rackspace. Having 15+ years in the IT trenches with Windows (from desktop support to solutions architecture), this was the perfect opportunity to be able to contribute to the Windows community to help with cloud management and adoption. The idea for this client was born out of just that notion. There was a need for a Windows native API client, and we were in a good position to create something to enable the community at large could use. Over the last few months, we've spent quite a bit of personal and Rackspace sponsored time in getting this tool developed to specifically fill this gap and make life easier for Windows users.
 
-##What is PowerClient?
+### What is PowerClient?
 
 For Rackspace Cloud and Openstack deployments, there is a fantastic CLI called `python-novaclient`. It's Python based and works natively within just about any Linux distribution you can think of, and can even be adapted to work in Windows. However, if you're a systems administrator or work in IT operations as an "uptime czar" like me, you know just how convoluted the process can be of implementing native Linux tools within Windows. That type of setup just doesn't fly for managing a PRODUCTION deployment. You want to be able to use natively supported and functional tools, without the potential headache of having something fail because it wasn't meant for use within the Windows eco-system. Enter PowerClient.
 
@@ -56,7 +56,7 @@ function Get-CloudServerImages {
     Set-Variable -Name DFWImageURI -Value "https://dfw.servers.api.rackspacecloud.com/v2/$CloudDDI/images/detail.xml"
     Set-Variable -Name ORDImageURI -Value "https://ord.servers.api.rackspacecloud.com/v2/$CloudDDI/images/detail.xml"
 
-## Using conditional logic to route requests to the relevant API per data center
+### Using conditional logic to route requests to the relevant API per data center
 if ($Region -eq "DFW"){
 
     ## Authentication token check/retrieval
@@ -70,7 +70,7 @@ if ($Region -eq "DFW"){
     $ServerImageListDFWFinal.Images.Image | Sort-Object Name | ft $ImageListTable -AutoSize
     }
 
-## See first "if" block for notes on each line##
+### See first "if" block for notes on each line##
 elseif ($Region -eq "ORD"){
 
     Get-AuthToken
@@ -155,12 +155,15 @@ The way this script is built is as a Powershell module. Start by downloading as 
 For the sake of ease, place the "PowerClient" folder in the 2nd listed folder above. Once you’ve placed the folder in its new location, edit the “RSCloud.psm1” with Notepad (or you’re preferred text editor). In this file, the following lines need to be edited with you Rackspace cloud account information (place your information between the double quotes):
 
 {{< highlight powershell >}}
-## Define Global Variables Needed for API Comms ##
+
+### Define Global Variables Needed for API Comms ##
 
 Set-Variable -Name CloudUsername -Value "" -Scope Global
 Set-Variable -Name CloudAPIKey -Value "" -Scope Global
 Set-Variable -Name CloudDDI -Value "" -Scope Global
-## *The CloudDDI variable is your account number or tenant ID.  This can be found at the top right of your screen when logged into the Rackspace Cloud Control Panel*
+
+### The CloudDDI variable is your account number or tenant ID.  This can be found at the top right of your screen when logged into the Rackspace Cloud Control Panel
+
 {{< /highlight >}}
 
 After editing the file, please save it! You can then launch Powershell, and run `Import-Module PowerClient`. At this point, you should be able to run all the commands listed in the wiki (link below) at your leisure. 
@@ -171,7 +174,7 @@ Help for individual commands are built into the module and can be viewed by usin
 
 <https://github.com/drmmarsunited/rackspacecloud_powershell/wiki>
 
-##Pro tips!
+### Pro tips!
 
 * Maximize your window and screen buffer sizes to get the most output possible in your Powershell window.
 * Towards the top of the module, every command has an alias that is commented out. You can uncomment these lines to make using this module even easier for yourself and other administrators.
