@@ -96,7 +96,7 @@ and public sector customers:
   and Intrusion Detection Systems (IDS)
 - A unique combination of automation, accredited tooling, and human expertise, enabling
   governance and operations support
-- Support for NHS Digital and National Center for State Courts (NCSC) and Cabinet Office
+- Support for NHS Digital and National Cyber Security Centre (NCSC) and Cabinet Office
   accreditation audits in the U.K.
 - Support for FedRAMP Authority to Operate (ATO) in the U.S.
 
@@ -107,7 +107,7 @@ control your environment's security components from the physical facilities to t
 and virtualization layer. 
 
 Within the U.K., we provide this service through our Public Services Network (PSN)
-service-provider-accredited, secure management platform, *RGC Central**. This walled-garden
+service-provider-accredited, secure management platform, *RGC Central*. This walled-garden
 environment ensures complete separation between your solution and the Rackspace corporate
 network. The environment hosts stand-alone, accredited support tools with customers managed
 as individual tenants within each tool. This approach ensures that we secure and separate
