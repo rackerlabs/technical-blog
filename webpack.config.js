@@ -48,10 +48,9 @@ module.exports = {
       // Provide enviroment variable defaults
       // from .env
       ALGOLIA_APP_ID: JSON.stringify(process.env.ALGOLIA_APP_ID),
-      ALGOLIA_API_KEY: JSON.stringify(process.env.ALGOLIA_API_KEY),
-      ALGOLIA_SITE_ID: JSON.stringify(process.env.ALGOLIA_SITE_ID),
-      ALGOLIA_BRANCH: JSON.stringify(process.env.ALGOLIA_BRANCH),
-      ALGOLIA_SUPPORT_INDEX: JSON.stringify(process.env.ALGOLIA_SUPPORT_INDEX),
-      ALGOLIA_BLOG_INDEX: JSON.stringify(process.env.ALGOLIA_BLOG_INDEX),
+      ALGOLIA_ADMIN_KEY: JSON.stringify(process.env.ALGOLIA_ADMIN_KEY),
+      ALGOLIA_INDEX_NAME: JSON.stringify(process.env.ALGOLIA_INDEX_NAME),
+      ALGOLIA_INDEX_FILE: JSON.stringify(process.env.ALGOLIA_INDEX_FILE),
+      ALGOLIA_SEARCH_KEY: JSON.stringify(process.env.ALGOLIA_SEARCH_KEY),
     })],
 };

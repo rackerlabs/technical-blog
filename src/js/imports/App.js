@@ -6,7 +6,7 @@ import { connectStateResults } from "react-instantsearch/connectors"
 
 const algoliaClient = algoliasearch(
   ALGOLIA_APP_ID,
-  ALGOLIA_API_KEY
+  ALGOLIA_SEARCH_KEY
 );
 
 const Results = connectStateResults(
@@ -42,7 +42,7 @@ class App extends Component {
   render() {
     return (
       <div className="ais-InstantSearch">
-        <InstantSearch indexName={ALGOLIA_BLOG_INDEX} searchClient={searchClient}>
+        <InstantSearch indexName={ALGOLIA_INDEX_NAME} searchClient={searchClient}>
           <Configure hitsPerPage={16} />
           <SearchBox className="searchbox" translations={{ placeholder: 'Search across Blogs', }} showLoadingIndicator />
             <Results>

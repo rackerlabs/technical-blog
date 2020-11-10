@@ -9,12 +9,13 @@
         "start": "run-p start:*",
         "start:hugo": "make serve",
         "start:webpack": "webpack --mode=development --watch",
-        "build": "make install && rm -rf static/assets && run-s build:webpack build:hugo",
+        "build": "make install && rm -rf static/assets && run-s build:webpack build:hugo && npm run algolia",
         "build:local": "rm -rf static/assets && run-s build:webpack build:hugo",
         "build:hugo": "make build",
         "build:webpack": "webpack --mode=production",
         "link-checker": "lct -f external_urls.txt >> link-checker.log",
-        "markdown-link-checker": "remark -u validate-links . 2>&1 | tee log-file.txt"
+        "markdown-link-checker": "remark -u validate-links . 2>&1 | tee log-file.txt",
+        "algolia": "atomic-algolia"
     },
     "devDependencies": {
         "@babel/core": "^7.12.1",
