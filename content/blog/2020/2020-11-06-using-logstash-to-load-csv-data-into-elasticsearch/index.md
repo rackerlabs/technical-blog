@@ -4,7 +4,6 @@ title: "Using Logstash to load CSV data into Elasticsearch"
 date: 2020-11-06
 comments: true
 author: Erik Beebe
-authorAvatar: 'https://s.gravatar.com/avatar/4a7de5d7772b14826cca8496c410ba88'
 bio: "Build and manage effective teams. Design, build and manage reliable infrastructure, networks, processes. Datacenter, infrastructure planning. Databases (MongoDB, MySQL, etc.). Containers and virtualization (OpenVZ, LXC, Proxmox, Docker, KVM, etc). Storage engineering."
 published: true
 authorIsRacker: true
