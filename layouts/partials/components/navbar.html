@@ -31,7 +31,6 @@
           <li><a href="https://cp.rackspace.com">Cloud Office Control Panel</a></li>
         </ul>
       </div>
-      {{- if or $isBlogs -}}
       <div class="nav-item buttons-nav-item" data-signed-out="true">
         <span data-tooltip="Click Here for Search" data-tooltip-position="top" class="mobile-search">
           <button type="button" class="btn btn-white" data-toggle="modal" data-placement="top"
@@ -40,7 +39,6 @@
           </button>
         </span>
       </div>
-      {{- end -}}
       {{- end -}}
       {{- end -}}
   </nav>
@@ -55,13 +53,11 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       {{- partial "components/navbar_nav.html" .Site.Menus.main . -}}
-      {{- if or $isBlogs -}}
       <span data-tooltip="Click Here for Search" data-tooltip-position="top" class="desktop-search">
         <button type="button" class="btn btn-white" data-toggle="modal" data-placement="top" data-target="#searchModal">
           <i class="fa fa-search" aria-hidden="true"></i>
         </button>
       </span>
-      {{- end -}}
     </div>
   </nav>
 </header>
