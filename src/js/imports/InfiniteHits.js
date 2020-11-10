@@ -43,7 +43,7 @@ class InfiniteHits extends Component {
 
     return (
       <div className="hits">
-        <Configure attributesToSnippet={['title', 'description:80']} />
+        <Configure attributesToSnippet={['title', 'content:80']} />
         <CustomStats />
         <ul>
           {hits.map(hit => (
