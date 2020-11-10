@@ -23,7 +23,7 @@ const Hit = ({ hit }) => {
           <a className="search-summary-link" href={`/blog/${hit.url}`}>
             <p className="search-summary"><Snippet hit={hit} attribute="content" tagName="mark"/></p>
           </a>
-          <span className="search-author" > By &nbsp; <a className="search-author-link" href={`/blog/authors/${hit.author.replace(/\s+/g, '-')}`}>{hit.author}</a></span>
+          <span className="search-author" > By &nbsp; <a className="search-author-link" href={`/blog/authors/${hit.author.replace(/\s+/g, '-')}`}><Highlight attribute="author" hit={hit} /></a></span>
           <span className="search-date">{moment(hit.date).format('LL')}</span>
         </div>
       </div>
