@@ -70,6 +70,30 @@ and currently works at Rackspace. He is enthusiastic, a quick learner, and
 always learns new technologies. His strengths include analytical thinking,
 problem solving, learning from mistakes, and working well under pressure."
 
+Belke, Emily
+authorAvatar: 'https://s.gravatar.com/avatar/4a7de5d7772b14826cca8496c410ba88'
+bio: n/a
+
+Benmbarek, Mustapha
+authorAvatar: 'https://s.gravatar.com/avatar/0299204313e4fc8d8c722748fa21a6b2?s=80'
+bio: "Mustapha works with startups and companies of any size to support their
+innovation. In his role as Solutions Architect at Rackspace, he leverages his
+experience to help people bring their ideas to life, providing guidance and
+technical assistance on cloud-based and AWS architectures."
+
+Berry, Tana
+authorAvatar: n/a
+bio: "At ObjectRocket (a Rackspace company), I moved over to 
+the marketing side of the house, learned new magic on how to get out the word 
+about our great DBaaS offerings, and leveraged my previous content 
+and community experience. I focused on creating technical marketing content 
+(mostly blogs) and social media (yay Twitter!), plus doing a bit of work with 
+the dev teams on tech docs. This role took me back full circle to databases, 
+where I started out 20+ years ago. ;-) Rackspace ObjectRocket provides database expertise
+and management of several popular databases in the Cloud&mdash;they do the database work, 
+and enable developers to focus on their application's product design and coding, 
+not the underlying DB."
+
 Bhatnagar, Amit Kumar
 authorAvatar: 'https://s.gravatar.com/avatar/c9c74dd30299675961e5160a4fbb05fe'
 bio: "Amit is a DBA with 14+ years of excellent professional exposure and
@@ -88,7 +112,6 @@ bio: "Build and manage effective teams. Design, build and manage
 reliable infrastructure, networks, processes. Datacenter, infrastructure planning. 
 Databases (MongoDB, MySQL, etc.). Containers and virtualization 
 (OpenVZ, LXC, Proxmox, Docker, KVM, etc). Storage engineering."
-
 
 Belke, Emily
 authorAvatar: 'https://s.gravatar.com/avatar/4a7de5d7772b14826cca8496c410ba88'
@@ -537,6 +560,13 @@ and writer. His first book, Hands-On Bug Hunting for Penetration Testers, is out
 Mattson, Josh
 authorAvatar: 'http://www.gravatar.com/avatar/791617263c70278859e1b26c15d13eab'
 bio: n/a
+
+Medrano, Aaron
+authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U0DENQ9JL-fac56480a789-512'
+bio: "I am a Windows System Engineer at Rackspace Technology and an experienced Lead
+Technician with a demonstrated history of working in the Information Technology and Services
+industry. I'm skilled in research, product development, customer service, and problem
+solving&mdash;a strong engineering professional, graduated from San Antonio College."
 
 McLaughlin, Mitchell
 authorAvatar: 'https://media-exp1.licdn.com/dms/image/C5603AQH5r2hzui051w/profile-displayphoto-shrink_100_100/0?e=1596672000&v=beta&t=ar809F1WbFhkJXAvxbf12x6Dh0PmTaGgyeQqgKrATWA'
