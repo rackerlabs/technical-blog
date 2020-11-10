@@ -7,6 +7,12 @@ author: Matt Stoyka
 published: true
 authorIsRacker: true
 authorAvatar: 'https://s.gravatar.com/avatar/d08dd094c720fa0e4689178952959231'
+bio: "As Rackspace's Chief Solutions Officer, Matt Stoyka leads the company's portfolio of
+solutions and services. This integrated suite of offerings enables Rackspace to adapt to
+our customer's evolving needs and provide Fanatical Experience™. Matt is also responsible
+for strategic partner and alliance relationships and customer relationships across
+Rackspace’s parent company portfolio. He is also a board member of Big Brothers Big Sisters
+of San Diego County."
 categories:
     - Salesforce
 metaTitle: "Is Salesforce the right solution for your company?"

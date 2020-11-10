@@ -70,6 +70,30 @@ and currently works at Rackspace. He is enthusiastic, a quick learner, and
 always learns new technologies. His strengths include analytical thinking,
 problem solving, learning from mistakes, and working well under pressure."
 
+Belke, Emily
+authorAvatar: 'https://s.gravatar.com/avatar/4a7de5d7772b14826cca8496c410ba88'
+bio: n/a
+
+Benmbarek, Mustapha
+authorAvatar: 'https://s.gravatar.com/avatar/0299204313e4fc8d8c722748fa21a6b2?s=80'
+bio: "Mustapha works with startups and companies of any size to support their
+innovation. In his role as Solutions Architect at Rackspace, he leverages his
+experience to help people bring their ideas to life, providing guidance and
+technical assistance on cloud-based and AWS architectures."
+
+Berry, Tana
+authorAvatar: n/a
+bio: "At ObjectRocket (a Rackspace company), I moved over to 
+the marketing side of the house, learned new magic on how to get out the word 
+about our great DBaaS offerings, and leveraged my previous content 
+and community experience. I focused on creating technical marketing content 
+(mostly blogs) and social media (yay Twitter!), plus doing a bit of work with 
+the dev teams on tech docs. This role took me back full circle to databases, 
+where I started out 20+ years ago. ;-) Rackspace ObjectRocket provides database expertise
+and management of several popular databases in the Cloud&mdash;they do the database work, 
+and enable developers to focus on their application's product design and coding, 
+not the underlying DB."
+
 Bhatnagar, Amit Kumar
 authorAvatar: 'https://s.gravatar.com/avatar/c9c74dd30299675961e5160a4fbb05fe'
 bio: "Amit is a DBA with 14+ years of excellent professional exposure and
@@ -82,6 +106,12 @@ Bhatnagar, Vinit
 authorAvatar: 'https://s.gravatar.com/avatar/60a7335f926a020472128ac628189940'
 bio: "Vinit Bhatnagar has 15+ years of experience in Oracle Financials. Vinit
 has worked on many implementations and supports projects across industries."
+
+Beebe, Erik
+bio: "Build and manage effective teams. Design, build and manage 
+reliable infrastructure, networks, processes. Datacenter, infrastructure planning. 
+Databases (MongoDB, MySQL, etc.). Containers and virtualization 
+(OpenVZ, LXC, Proxmox, Docker, KVM, etc). Storage engineering."
 
 Belke, Emily
 authorAvatar: 'https://s.gravatar.com/avatar/4a7de5d7772b14826cca8496c410ba88'
@@ -400,6 +430,12 @@ over developing the Rackspace DBA Services offering to flesh out the capabilitie
 while working side by side with sales stakeholders, solutions architects, customer
 success managers, and service delivery engineers."
 
+K, Sandeep
+authorAvatar: 'https://s.gravatar.com/avatar/684d0432fcd3c1308b73ddd4e4c997f6'
+bio: "I am Sandeep and have 9+ years of Experience and I am expert in oracle apps dba. I
+also have hands-on knowledge on Oracle products like Oracle EBS 11i,R12 and R12.2, Demantra,
+JDE CNC, Oracle Transportation Management, OBIEE, Inspyrus, and Hyperion."
+
 Kalar, Erika
 authorAvatar: n/a
 bio: "I'm a content jack-of-all-trades. From large, complex websites and apps to 
@@ -525,6 +561,13 @@ Mattson, Josh
 authorAvatar: 'http://www.gravatar.com/avatar/791617263c70278859e1b26c15d13eab'
 bio: n/a
 
+Medrano, Aaron
+authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U0DENQ9JL-fac56480a789-512'
+bio: "I am a Windows System Engineer at Rackspace Technology and an experienced Lead
+Technician with a demonstrated history of working in the Information Technology and Services
+industry. I'm skilled in research, product development, customer service, and problem
+solving&mdash;a strong engineering professional, graduated from San Antonio College."
+
 McLaughlin, Mitchell
 authorAvatar: 'https://media-exp1.licdn.com/dms/image/C5603AQH5r2hzui051w/profile-displayphoto-shrink_100_100/0?e=1596672000&v=beta&t=ar809F1WbFhkJXAvxbf12x6Dh0PmTaGgyeQqgKrATWA'
 bio: "Mitchell is proficient in Salesforce CRM development, administration, and
@@ -580,6 +623,15 @@ Networking, Developer Tools, and more. He is an AWS APN Ambassador and holds
 several AWS certifications. In his spare time, he enjoys homebrewing his
 award-winning beer, cycling, and trying to find less expensive hobbies."
 
+Mustafa, Zahid
+authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-UEX7ARXEH-c06eeae9a67c-192'
+bio: "I'm a Cloud Solutions Architect with a proven track record of successful delivery.
+With over 23 years industry experience, my client base has ranged from FTSE 100 companies
+to large public sector bodies. This breadth of experience has enabled me to gain a skill
+set covering the full life cycle from initial strategy, requirements planning, architecture
+and system design through to post-production support. My experience includes Disaster
+Recovery planning, design, and testing over many years, both on-premises and on public cloud."
+
 Myoung,Sam
 authorAvatar: 'https://s.gravatar.com/avatar/7632808463e741b328ea3ce18f80b935'
 bio: "Sam Myoung is a product manager with over 11 years of experiences in the IT
@@ -620,7 +672,7 @@ authorAvatar: 'https://s.gravatar.com/avatar/bbd32264e5b49be8f1515f6a64b1f1e2'
 bio: n/a
 
 Plummer, Adam
-authorAvatar: 'https://s.gravatar.com/avatar/c2945c57e1812f8b455101e1a2e49cac'
+authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-UBG0V7BFZ-1302fe3c1384-512'
 bio: "I am continually energized by the increasing importance and relevance of
 technology's place in solving business challenges. My mission is to uncover
 opportunities to help companies realize true business transformation, with
@@ -775,7 +827,12 @@ bio: n/a
 
 Stoyka, Matt
 authorAvatar: 'https://s.gravatar.com/avatar/d08dd094c720fa0e4689178952959231'
-bio: n/a
+bio: "As Rackspace's Chief Solutions Officer, Matt Stoyka leads the company's portfolio of
+solutions and services. This integrated suite of offerings enables Rackspace to adapt to
+our customer's evolving needs and provide Fanatical Experience™. Matt is also responsible
+for strategic partner and alliance relationships and customer relationships across
+Rackspace’s parent company portfolio. He is also a board member of Big Brothers Big Sisters
+of San Diego County."
 
 Stubbs, Walter
 authorAvatar: 'https://0.gravatar.com/avatar/82a7a0dd2ccc5b707da699191be87ecf'
@@ -831,6 +888,14 @@ Vue, Winnie
 authorAvatar: ''
 bio: n/a
 
+Wah, Wilfred
+authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-UR3DD1J83-93420d85dfea-512'
+bio: "Wilfred is a Principal Consultant of Advisory Services, Rackspace
+Technology North Asia. His area of expertise includes cloud migration assessment,
+cloud economics, people transformation, cloud adoption strategy, and the
+transformation roadmap. He has more than 15 years of consultancy experience with
+major vendors such as Dell/EMC, SAS, and AWS before joining Rackspace."
+
 Whitehead, Chris
 authorAvatar: 'https://s.gravatar.com/avatar/286b19b54ad30b4f0d25a4ac679744a8'
 bio: n/a
@@ -846,13 +911,14 @@ Wilensky, Jeff
 authorAvatar: 'https://s.gravatar.com/avatar/017eaa68c10c8d1b95aacf7d34557a28'
 bio: n/a
 
-Wilfred Wah
-authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-UR3DD1J83-93420d85dfea-512'
-bio: "Wilfred is a Principal Consultant of Advisory Services, Rackspace
-Technology North Asia. His area of expertise includes cloud migration assessment,
-cloud economics, people transformation, cloud adoption strategy, and the
-transformation roadmap. He has more than 15 years of consultancy experience with
-major vendors such as Dell/EMC, SAS, and AWS before joining Rackspace."
+Wilkins, Kymberly
+authorAvatar: n/a
+bio: "Principal Engineer, Solutions Architect, Database Team Manager, trusted advisor,
+and technical evangelist in the NoSQL arena. Kimberly now works mainly with NoSQL technologies
+such as MongoDB, supporting pre-sale and post-sale efforts and client on-boarding and support. 
+She is passionate about emerging technology and trends (including AR/VR/MR, AI, ML, DL as well
+IoT/EoT/IIoT and blockchain topics), while also investigating new data store offerings such as
+DocumentDB, QLDB, Snowflake, and more as they come along."
 
 Winfrey, Lorenzo
 authorAvatar: 'https://s.gravatar.com/avatar/4946b45863e87d1a876eeb2873af2593'
