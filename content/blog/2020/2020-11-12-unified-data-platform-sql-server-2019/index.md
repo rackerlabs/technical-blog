@@ -3,13 +3,16 @@ layout: post
 title: "Unified data platform: SQL Server 2019"
 date: 2020-11-12
 comments: true
-author:
-authorAvatar: ''
-bio: ""
+author: Vashali Misra
+authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U7D5AHGAU-bbe8d4bb28c6-512'
+bio: "I am a SQL Server DBA at Rackspace Technology APJ Region. My area of expertise is
+SQL Server, and I'm slowly and steadily gaining experience into the cloud technologies. I
+have 9 Years of experience with major projects like Dowjones, MarketWatch, Regeneron, etc."
 published: true
 authorIsRacker: true
 categories:
-    - General
+    - database
+    - SQL Server
 metaTitle: "Unified data platform: SQL Server 2019"
 metaDescription: "SQL Server 2019 offers a unified data platform."
 ogTitle: "Unified data platform: SQL Server 2019"
