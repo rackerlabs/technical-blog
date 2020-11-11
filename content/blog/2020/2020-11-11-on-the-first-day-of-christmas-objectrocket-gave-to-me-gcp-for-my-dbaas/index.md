@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "On the first day"
+title: "On the first day of Christmas ObjectRocket gave to me GCP for my DBAAS "
 date: 2020-11-11
 comments: true
 author: Steve Croce
@@ -18,7 +18,7 @@ authorIsRacker: true
 categories:
     - Database
     - ObjectRocket
-metaTitle: "On the first day"
+metaTitle: "On the first day of Christmas ObjectRocket gave to me GCP for my DBAAS"
 metaDescription: "We’re pleased to announce that the Rackspace ObjectRocket platform is generally available on Google Cloud Platform (GCP)!"
 ogTitle: "On the first day"
 ogDescription: "We’re pleased to announce that the Rackspace ObjectRocket platform is generally available on Google Cloud Platform (GCP)!"
