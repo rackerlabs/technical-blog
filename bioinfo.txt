@@ -276,9 +276,9 @@ along the way, and Dan has enjoyed learning new skills and technologies to adapt
 to the industry's changes. Now, nineteen years later Dan is proud to be a Racker,
 and is committed to Rackspace's vision of being the best service provider."
 
-Engle, Joe
+Engel, Joe
 authorAvatar: ''
-bio: n/a
+bio: "Outgoing, friendly, and resourceful SRE with a passion for data, automation, and scripting."
 
 Evans, Chris
 authorAvatar: ''
