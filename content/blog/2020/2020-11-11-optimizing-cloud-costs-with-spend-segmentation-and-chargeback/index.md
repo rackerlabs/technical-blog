@@ -5,7 +5,7 @@ date: 2020-11-11
 comments: true
 author: Richard Hoyer
 authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U011ANERH3N-f55181031d4b-512'
-bio: "Lead Cloud Business Consultant at Rackspace Technology"
+bio: "Rich Hoyer is Director of FinOps at Onica, a Rackspace Company. Rich began his career in finance, conducting valuation analysis of mergers and acquisitions. After business school, he began a career in technology, founding a small business to provide outsourced IT to other small businesses. He got his first exposure to the public cloud after he sold his business and conducted his first cloud migration at Zenoss. Since then, he has been combining his finance and technology experiences as practitioner in FinOps, first at Cloudability and subsequently at Onica."
 published: true
 authorIsRacker: true
 categories:
