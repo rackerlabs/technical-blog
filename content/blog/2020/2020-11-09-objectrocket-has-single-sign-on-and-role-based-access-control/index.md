@@ -22,7 +22,7 @@ metaTitle: "ObjectRocket has single sign-on and role-based access control"
 metaDescription: "If you read the ObjectRocket blog, you’re likely aware that we have several new features in our platform, and today we'll talk about our new authentication system for the new platform and some related changes."
 ogTitle: "ObjectRocket has single sign-on and role-based access control"
 ogDescription: "If you read the ObjectRocket blog, you’re likely aware that we have several new features in our platform, and today we'll talk about our new authentication system for the new platform and some related changes."
-slug: "single-sign-on-and-role-based-access-control-are-coming-to-objectrocket"
+slug: "objectrocket-has-single-sign-on-and-role-based-access-control"
 canonical: https://www.objectrocket.com/blog/features/single-sign-on-and-role-based-access-control-are-coming-to-objectrocket/
 ---
 
