@@ -83,15 +83,15 @@ technical assistance on cloud-based and AWS architectures."
 
 Berry, Tana
 authorAvatar: n/a
-bio: "At ObjectRocket (a Rackspace company), I moved over to 
-the marketing side of the house, learned new magic on how to get out the word 
-about our great DBaaS offerings, and leveraged my previous content 
-and community experience. I focused on creating technical marketing content 
-(mostly blogs) and social media (yay Twitter!), plus doing a bit of work with 
-the dev teams on tech docs. This role took me back full circle to databases, 
+bio: "At ObjectRocket (a Rackspace company), I moved over to
+the marketing side of the house, learned new magic on how to get out the word
+about our great DBaaS offerings, and leveraged my previous content
+and community experience. I focused on creating technical marketing content
+(mostly blogs) and social media (yay Twitter!), plus doing a bit of work with
+the dev teams on tech docs. This role took me back full circle to databases,
 where I started out 20+ years ago. ;-) Rackspace ObjectRocket provides database expertise
-and management of several popular databases in the Cloud&mdash;they do the database work, 
-and enable developers to focus on their application's product design and coding, 
+and management of several popular databases in the Cloud&mdash;they do the database work,
+and enable developers to focus on their application's product design and coding,
 not the underlying DB."
 
 Bhatnagar, Amit Kumar
@@ -108,9 +108,9 @@ bio: "Vinit Bhatnagar has 15+ years of experience in Oracle Financials. Vinit
 has worked on many implementations and supports projects across industries."
 
 Beebe, Erik
-bio: "Build and manage effective teams. Design, build and manage 
-reliable infrastructure, networks, processes. Datacenter, infrastructure planning. 
-Databases (MongoDB, MySQL, etc.). Containers and virtualization 
+bio: "Build and manage effective teams. Design, build and manage
+reliable infrastructure, networks, processes. Datacenter, infrastructure planning.
+Databases (MongoDB, MySQL, etc.). Containers and virtualization
 (OpenVZ, LXC, Proxmox, Docker, KVM, etc). Storage engineering."
 
 Belke, Emily
@@ -438,10 +438,10 @@ JDE CNC, Oracle Transportation Management, OBIEE, Inspyrus, and Hyperion."
 
 Kalar, Erika
 authorAvatar: n/a
-bio: "I'm a content jack-of-all-trades. From large, complex websites and apps to 
-trade show digital experiences, social media, and press releases, I've delivered 
+bio: "I'm a content jack-of-all-trades. From large, complex websites and apps to
+trade show digital experiences, social media, and press releases, I've delivered
 content in just about every form. My blend of technical writing, UX product writing,
-and content marketing experience has served me well in every position 
+and content marketing experience has served me well in every position
 I've held over the years."
 
 Kalkhundiya, Kailash
@@ -518,6 +518,15 @@ infrastructure and services. Roman is a high-energy, hands-on leader whose
 knowledge and experience of threat trends helps develop and create powerful
 mitigation strategies through Fanatical Support."
 
+Lawrie, Ross
+authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U0117C3A83Y-a149d745d934-192'
+bio: "As a Customer Solution Architect, Ross brings nearly 10 years of
+experience in AWS to help our customers achieve success and scale on AWS.
+Every day, he revels in the opportunity to explore brand new technologies, push
+his knowledge and experience forward, and take on challenges from our
+customers. Having been through many Cloud migrations and transformations,
+he's thrilled to empower and energize organizations to embrace AWS."
+
 Lee, Kiat Lian
 authorAvatar: 'https://s.gravatar.com/avatar/16df6abbd9b443cd7329e381df239dc7'
 bio: "Lee is Technical Consultant of Advisory Services, Rackspace Technology,
@@ -554,7 +563,7 @@ years of rich experience in Computer networking and network security."
 
 Marshall, Joe
 authorAvatar: n/a
-bio: "Joe is a web application developer, independent security researcher, 
+bio: "Joe is a web application developer, independent security researcher,
 and writer. His first book, Hands-On Bug Hunting for Penetration Testers, is out now."
 
 Mattson, Josh
@@ -915,7 +924,7 @@ Wilkins, Kymberly
 authorAvatar: n/a
 bio: "Principal Engineer, Solutions Architect, Database Team Manager, trusted advisor,
 and technical evangelist in the NoSQL arena. Kimberly now works mainly with NoSQL technologies
-such as MongoDB, supporting pre-sale and post-sale efforts and client on-boarding and support. 
+such as MongoDB, supporting pre-sale and post-sale efforts and client on-boarding and support.
 She is passionate about emerging technology and trends (including AR/VR/MR, AI, ML, DL as well
 IoT/EoT/IIoT and blockchain topics), while also investigating new data store offerings such as
 DocumentDB, QLDB, Snowflake, and more as they come along."
