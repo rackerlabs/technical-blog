@@ -389,7 +389,7 @@ authorAvatar: 'https://s.gravatar.com/avatar/9503bfb5fa8e3de9f007e5c12591d6d8'
 bio: n/a
 
 Heywood, Celia
-authorAvatar: 'http://0.gravatar.com/avatar/76b6d0b3a7daec2a8e3e25f17ff7ead7'
+authorAvatar: 'https://0.gravatar.com/avatar/76b6d0b3a7daec2a8e3e25f17ff7ead7'
 bio: n/a
 
 Holloway, Keiran
@@ -562,7 +562,7 @@ bio: "Joe is a web application developer, independent security researcher,
 and writer. His first book, Hands-On Bug Hunting for Penetration Testers, is out now."
 
 Mattson, Josh
-authorAvatar: 'http://www.gravatar.com/avatar/791617263c70278859e1b26c15d13eab'
+authorAvatar: 'https://www.gravatar.com/avatar/791617263c70278859e1b26c15d13eab'
 bio: n/a
 
 Medrano, Aaron
@@ -773,7 +773,7 @@ in the IT industry. I share my knowledge about the latest database technologies
 via my blog in a simple and effective way."
 
 Sharma, Ravi kant
-authorAvatar: 'http://0.gravatar.com/avatar/c7776b42759c729500163fc6588221ac'
+authorAvatar: 'https://0.gravatar.com/avatar/c7776b42759c729500163fc6588221ac'
 bio: "I am ambitious and driven. I thrive on challenge and constantly set goals
 for myself, so I have something to strive toward. I’m not comfortable with
 settling, and I’m always looking for an opportunity to do better and achieve

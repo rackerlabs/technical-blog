@@ -4,7 +4,7 @@ title: "Five ways to drive more sales with salesforce"
 date: 2020-11-13
 comments: true
 author: Celia Heywood
-authorAvatar: 'http://0.gravatar.com/avatar/76b6d0b3a7daec2a8e3e25f17ff7ead7'
+authorAvatar: 'https://0.gravatar.com/avatar/76b6d0b3a7daec2a8e3e25f17ff7ead7'
 published: true
 authorIsRacker: true
 categories:
