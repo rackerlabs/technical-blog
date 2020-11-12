@@ -86,7 +86,7 @@ forecasting. This is why it’s essential that anyone considering a move to the
 cloud has a well-developed strategy for segmenting cloud spend. That strategy
 begins with assembling the right combination of FinOps capabilities.
 
-The Rackspace Technolgy Onica FinOps team can help by providing Cloud Financial Analysts to
+The Rackspace Technology Onica FinOps team can help by providing Cloud Financial Analysts to
 [assess and optimize your internal FinOps capabilities](https://onica.com/services/cloud-cost-optimization/),
 while providing high-impact, near-term recommendations for optimal cost savings. If you’re ready to start
 implementing measures that can help you assess and optimize your
