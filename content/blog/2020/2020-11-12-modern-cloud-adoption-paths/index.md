@@ -5,7 +5,7 @@ date: 2020-11-12
 comments: true
 author: Ross Lawrie
 authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U0117C3A83Y-a149d745d934-192'
-bio: "Ross is a Customer Solution Architect for Rackspace Technology."
+bio: "As a Customer Solution Architect, Ross brings nearly 10 years of experience in AWS to help our customers achieve success and scale on AWS. Every day, he revels in the opportunity to explore brand new technologies, push his knowledge and experience forward, and take on challenges from our customers. Having been through many Cloud migrations and transformations, he's thrilled to empower and energize organizations to embrace AWS."
 published: true
 authorIsRacker: true
 categories:
