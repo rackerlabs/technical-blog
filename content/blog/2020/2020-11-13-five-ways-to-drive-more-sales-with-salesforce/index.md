@@ -10,23 +10,22 @@ authorIsRacker: true
 categories:
     - General
 metaTitle: "Five ways to drive more sales with salesforce"
-metaDescription: "."
+metaDescription: "Did you know that Salesforce can actually help you drive sales? Sales teams are often only
+using Salesforce as a glorified Rolodex when they could be leveraging so much more. Improve
+your sales using Salesforce in the following ways."
 ogTitle: "Five ways to drive more sales with salesforce"
-ogDescription: "."
+ogDescription: "Did you know that Salesforce can actually help you drive sales? Sales teams are often only
+using Salesforce as a glorified Rolodex when they could be leveraging so much more. Improve
+your sales using Salesforce in the following ways."
 slug: "five-ways-to-drive-more-sales-with-salesforce"
 
 ---
 
-Replace with short intro sentence or two.
-
-<!--more-->
-
-
-
-
 Did you know that Salesforce can actually help you drive sales? Sales teams are often only
 using Salesforce as a glorified Rolodex when they could be leveraging so much more. Improve
 your sales using Salesforce in the following ways:
+
+<!--more-->
 
 ### 1) Set up web-to-lead
 
