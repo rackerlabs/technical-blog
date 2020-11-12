@@ -73,7 +73,8 @@ allocated, organizations achieve the following advantages:
 
 Learn more about best practices for creating segmentation and chargeback of
 cloud spend data in the
-[Improving Cloud Cost Transparency and Management whitepaper](https://insights.onica.com/improving-cloud-cost-transparency-management).
+[Improving Cloud Cost Transparency and Management](https://insights.onica.com/improving-cloud-cost-transparency-management)
+white paper.
 
 ### The end game: Managing profitability
 
