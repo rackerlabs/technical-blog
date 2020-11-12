@@ -14,7 +14,7 @@ metaTitle: "Optimizing cloud costs with spend segmentation and chargeback"
 metaDescription: "Many public cloud customers are struggling to control costs, facing common challenges such as budget overruns or a lack of visibility into the drivers of spend. While elasticity in peaks and valleys of usage is a major benefit of a cloud environment, that same flexibility can cause you to incur costs and overrun budgets in advance of organizations’ ability to control them.  To effectively control cloud costs, you need the right combination of measurement and governance tools."
 ogTitle: "Optimizing cloud costs with spend segmentation and chargeback"
 ogDescription: "To effectively control cloud costs, you need the right combination of measurement and governance tools."
-slug: "optimizing-cloud-costs-with-spend-segmentatino-and-chargeback"
+slug: "optimizing-cloud-costs-with-spend-segmentation-and-chargeback"
 canonical: https://onica.com/blog/cost/optimizing-cloud-costs-with-spend-segmentation-chargeback/
 
 ---
@@ -96,4 +96,3 @@ Use the Feedback tab to make any comments or ask questions. You can also
 [chat now](https://www.rackspace.com/#chat) to start the conversation.
 
 <a class="cta purple" id="cta" href="https://onica.com/services/cloud-cost-optimization/">Learn more about cloud cost optimization.</a>
-
