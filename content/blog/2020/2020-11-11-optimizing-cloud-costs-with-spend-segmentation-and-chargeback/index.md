@@ -14,7 +14,7 @@ metaTitle: "Optimizing cloud costs with spend segmentation and chargeback"
 metaDescription: "Many public cloud customers are struggling to control costs, facing common challenges such as budget overruns or a lack of visibility into the drivers of spend. While elasticity in peaks and valleys of usage is a major benefit of a cloud environment, that same flexibility can cause you to incur costs and overrun budgets in advance of organizations’ ability to control them.  To effectively control cloud costs, you need the right combination of measurement and governance tools."
 ogTitle: "Optimizing cloud costs with spend segmentation and chargeback"
 ogDescription: "To effectively control cloud costs, you need the right combination of measurement and governance tools."
-slug: "optimizing-cloud-costs-with-spend-segmentatino-and-chargeback"
+slug: "optimizing-cloud-costs-with-spend-segmentation-and-chargeback"
 canonical: https://onica.com/blog/cost/optimizing-cloud-costs-with-spend-segmentation-chargeback/
 
 ---
@@ -73,7 +73,8 @@ allocated, organizations achieve the following advantages:
 
 Learn more about best practices for creating segmentation and chargeback of
 cloud spend data in the
-[Improving Cloud Cost Transparency and Management whitepaper](https://insights.onica.com/improving-cloud-cost-transparency-management).
+[Improving Cloud Cost Transparency and Management](https://insights.onica.com/improving-cloud-cost-transparency-management)
+white paper.
 
 ### The end game: Managing profitability
 
@@ -86,7 +87,7 @@ forecasting. This is why it’s essential that anyone considering a move to the
 cloud has a well-developed strategy for segmenting cloud spend. That strategy
 begins with assembling the right combination of FinOps capabilities.
 
-The Rackspace Technolgy Onica FinOps team can help by providing Cloud Financial Analysts to
+The Rackspace Technology Onica FinOps team can help by providing Cloud Financial Analysts to
 [assess and optimize your internal FinOps capabilities](https://onica.com/services/cloud-cost-optimization/),
 while providing high-impact, near-term recommendations for optimal cost savings. If you’re ready to start
 implementing measures that can help you assess and optimize your
