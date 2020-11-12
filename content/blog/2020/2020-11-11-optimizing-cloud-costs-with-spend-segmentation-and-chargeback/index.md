@@ -97,4 +97,3 @@ Use the Feedback tab to make any comments or ask questions. You can also
 [chat now](https://www.rackspace.com/#chat) to start the conversation.
 
 <a class="cta purple" id="cta" href="https://onica.com/services/cloud-cost-optimization/">Learn more about cloud cost optimization.</a>
-
