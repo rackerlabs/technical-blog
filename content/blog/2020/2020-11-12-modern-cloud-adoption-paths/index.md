@@ -19,6 +19,8 @@ canonical: https://onica.com/modern-cloud-adoption/modern-cloud-adoption-paths/
 
 ---
 
+*Originally published on August 8, 2020 at Onica.com/blog*
+
 Cloud computing has been one of the more prominent technological phenomena in
 recent years, seeing companies across geographies and industries turning to
 cloud services to access a range of features and capabilities that augment
