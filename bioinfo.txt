@@ -212,7 +212,7 @@ offering and Head of User Experience for ObjectRocket, Steve oversees the
 day-to-day planning, development, and optimization of ObjectRocket-supported
 database technologies, clouds, and features. A product manager by day, he still
 likes to embrace his engineer roots by night and develop with Elasticsearch,
-SQL, Kubernetes, and web application stacks. He's spoken at
+SQL, Kubernetes, and web application stacks. He has spoken at
 KubeCon + CloudNativeCon, OpenStack summit, Percona Live, and various Rackspace
 events."
 
@@ -389,7 +389,7 @@ authorAvatar: 'https://s.gravatar.com/avatar/9503bfb5fa8e3de9f007e5c12591d6d8'
 bio: n/a
 
 Heywood, Celia
-authorAvatar: 'http://0.gravatar.com/avatar/76b6d0b3a7daec2a8e3e25f17ff7ead7'
+authorAvatar: 'https://0.gravatar.com/avatar/76b6d0b3a7daec2a8e3e25f17ff7ead7'
 bio: n/a
 
 Holloway, Keiran
@@ -418,6 +418,10 @@ Hornbeck, Ash
 authorAvatar: https://www.gravatar.com/avatar/f96915d3f29e5623f9a9ff8c7cb3148f'
 bio: "Ash Hornbeck is a Sr. Product Architect on the Rackspace Managed Public
 Clouds Product Architecture Team."
+
+Hoyer, Richard
+authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U011ANERH3N-f55181031d4b-512'
+bio: "Rich Hoyer is Director of FinOps at Onica, a Rackspace Company. Rich began his career in finance, conducting valuation analysis of mergers and acquisitions. After business school, he began a career in technology, founding a small business to provide outsourced IT to other small businesses. He got his first exposure to the public cloud after he sold his business and conducted his first cloud migration at Zenoss. Since then, he has been combining his finance and technology experiences as practitioner in FinOps, first at Cloudability and subsequently at Onica."
 
 Johnson, Derek
 authorAvatar: 'https://s.gravatar.com/avatar/19e8fe9c0b86b792f8065cad11364cf7'
@@ -567,7 +571,7 @@ bio: "Joe is a web application developer, independent security researcher,
 and writer. His first book, Hands-On Bug Hunting for Penetration Testers, is out now."
 
 Mattson, Josh
-authorAvatar: 'http://www.gravatar.com/avatar/791617263c70278859e1b26c15d13eab'
+authorAvatar: 'https://www.gravatar.com/avatar/791617263c70278859e1b26c15d13eab'
 bio: n/a
 
 Medrano, Aaron
@@ -778,7 +782,7 @@ in the IT industry. I share my knowledge about the latest database technologies
 via my blog in a simple and effective way."
 
 Sharma, Ravi kant
-authorAvatar: 'http://0.gravatar.com/avatar/c7776b42759c729500163fc6588221ac'
+authorAvatar: 'https://0.gravatar.com/avatar/c7776b42759c729500163fc6588221ac'
 bio: "I am ambitious and driven. I thrive on challenge and constantly set goals
 for myself, so I have something to strive toward. I’m not comfortable with
 settling, and I’m always looking for an opportunity to do better and achieve
