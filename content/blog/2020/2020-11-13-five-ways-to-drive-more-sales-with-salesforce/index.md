@@ -58,7 +58,7 @@ strategies.
 
 ### 4) Better coordination across teams
 
-{{<img src="coordination.png" title="" alt="" class="image-left">}} Ever had multiple
+{{<img src="coordination.jpg" title="" alt="" class="image-left">}} Ever had multiple
 sales reps call the same customer in the same week without any coordination?
 Would you even know? If you have been contacted by the same company several times, you know
 this does not increase your desire to buy from them. That is why it is important to make
