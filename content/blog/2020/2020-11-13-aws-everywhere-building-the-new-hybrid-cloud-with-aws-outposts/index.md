@@ -11,9 +11,13 @@ authorIsRacker: true
 categories:
     - General
 metaTitle: "AWS Everywhere: Building the New Hybrid Cloud with AWS Outposts"
-metaDescription: "."
+metaDescription: "As organizations continue to grapple with their hybrid strategy,
+Amazon Web Services&reg; (AWS) Outposts has emerged as a powerful hybrid enabler that can
+seamlessly extend your AWS footprint from on-premises to the cloud."
 ogTitle: "AWS Everywhere: Building the New Hybrid Cloud with AWS Outposts"
-ogDescription: ""
+ogDescription: "As organizations continue to grapple with their hybrid strategy,
+Amazon Web Services&reg; (AWS) Outposts has emerged as a powerful hybrid enabler that can
+seamlessly extend your AWS footprint from on-premises to the cloud."
 slug: "aws-everywhere-building-the-new-hybrid-cloud-with-aws-outposts"
 
 ---
