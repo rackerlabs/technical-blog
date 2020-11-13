@@ -44,12 +44,12 @@ powered by AWS Outposts.
 ### Redefining hybrid with AWS Outposts
 
 As public cloud adoption has evolved, so have the
-`approaches used for hybrid deployments<https://onica.com/videos/implementing-hybrid-cloud-architectures-with-aws/>`_.
+[approaches used for hybrid deployments](https://onica.com/videos/implementing-hybrid-cloud-architectures-with-aws/).
 One of the most interesting developments in
 recent years is the global introduction of AWS Outposts
 at the tail end of 2018.
 
-`AWS Outposts<https://onica.com/amazon-web-services/aws-outposts/>`_
+[AWS Outposts](https://onica.com/amazon-web-services/aws-outposts/)
 is a fully managed service that extends
 the AWS platform into virtually any data-center location via a
 pre-built, pre-configured, consistent, and evolving hardware
@@ -97,7 +97,7 @@ cloud migration journey.
 If you’re interested in learning more about AWS Outposts
 or want to discuss whether it’s the right fit for your unique
 use cases, join Onica and AWS for our AWS Outposts webinar
-`Hybrid 2.0: Cloud Native Anywhere Powered by AWS Outposts<https://www.brighttalk.com/webcast/16423/419469>`_.
+[Hybrid 2.0: Cloud Native Anywhere Powered by AWS Outposts](https://www.brighttalk.com/webcast/16423/419469).
 We share some top considerations for your AWS Outposts adoption
 and best practices for your AWS Outposts migration
 project, pricing models, location, implementation, optimization, and beyond.
