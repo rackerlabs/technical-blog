@@ -1,0 +1,6 @@
+<!-- image -->
+<span class="caption-wrapper">
+  <img {{ with .Get "class" }}class="{{.}}"{{ end }} src="{{ .Get "src" }}" title="{{ .Get "title" }}" alt="{{ .Get "title" }}">
+  <span class="caption-text">{{ .Get "title" }}</span>
+</span>
+<!-- image -->
