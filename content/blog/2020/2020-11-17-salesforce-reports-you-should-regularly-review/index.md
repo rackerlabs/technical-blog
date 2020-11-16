@@ -29,7 +29,7 @@ slug: "salesforce-reports-you-should-regularly-review"
 
 ---
 
-One of the values of using Salesforce is having your data in one place and being able to
+One of the values of using Salesforce&reg; is having your data in one place and being able to
 access real-time reports. There are many reports to run and evaluate, including pre-built
 and custom reports. As a leader, you should regularly review certain reports and activities,
 including lead source effectiveness, customer engagement, sales pipeline, and sales
