@@ -3,11 +3,9 @@ layout: post
 title: "AWS Everywhere: Building the new hybrid cloud with AWS Outposts"
 date: 2020-11-13
 comments: true
-author: Matt Charoenrath
-authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U0118EALE77-fa48a7c11b02-512'
-bio: "Senior Manager, Marketing, Rackspace Technology. I'm a marketing leader experienced in growing brands while scaling and
-modernizing marketing organizations through a balance of creativity, process, and technology to captivate audiences and achieve
-results."
+author: Rackspace Technology Onica team
+authorAvatar:
+bio:
 published: true
 authorIsRacker: true
 categories:
