@@ -9,7 +9,6 @@ import { Snippet } from 'react-instantsearch-dom';
 const Hit = ({ hit }) => {
   const entities = new Entities();
   if (hit.categories != null && hit.date != null && hit.date != '' && hit.url != null && hit.author != null) {
-    hit.categories.map(category => console.log(category));
     return (
       <div className="row">
         <div className="col-sm-12">
