@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Amazon Redshift: Best practices for optimizing query performance"
-date: 2020-11-13
+date: 2020-11-17
 comments: true
 author: Scott Peters
 authorAvatar: 'https://en.gravatar.com/scottpeters6940'
@@ -9,7 +9,7 @@ bio: ""
 published: true
 authorIsRacker: true
 categories:
-    - General
+    - Database
 metaTitle: "Amazon Redshift: Best practices for optimizing query performance"
 metaDescription: "Amazon Redshift is a powerful data warehouse service from Amazon Web Services (AWS)
 that simplifies data management and analytics."
@@ -23,14 +23,14 @@ slug: "amazon-redshift-best-practices-for-optimizing-query-performance"
 *Originally published on June 17, 2020 at Onica.com/blog*
 
 
-Across a plethora of industries, organizations look to use data analytics
-for operations and other functions that are critical to success. However, as
-data volumes grow, the management and value-extraction from data can get increasingly complex.
+Organizations across a plethora of industries look to use data analytics
+for operations and other functions critical to success. However, as
+data volumes grow, management and value-extraction can become increasingly complex.
 <!--more-->
 
 ### Amazon Redshift
 
-Amazon Redshift is a powerful data warehouse service from Amazon Web Services (AWS)
+Amazon Redshift is a powerful data warehouse service from Amazon Web Services&reg; (AWS)
 that simplifies data management and analytics. Let’s take a look at Amazon Redshift
 and some best practices you can implement to optimize data querying performance.
 
@@ -47,21 +47,21 @@ for analytics from data lakes.
 Amazon Redshift takes storage for data analytics one level further,
 amalgamating the qualities of data lakes and warehouses into a
 “lake house” approach. It allows the querying of large exabyte-scale
-data lakes while being cost-effective, minimizing data redundancy,
+data lakes while remaining cost-effective, minimizing data redundancy,
 and minimizing maintenance overhead and operational costs.
 
 ### Amazon Redshift architecture
 
 To rapidly process complex queries on big data sets,
 Amazon Redshift architecture supports massively parallel processing (MPP)
-that distributes the job across multiple compute nodes for concurrent processing.
+that distributes the job across many compute nodes for concurrent processing.
 
-These nodes are grouped into clusters and each cluster consists of three types of nodes:
+These nodes are grouped into clusters. Each cluster consists of three types of nodes:
 
 **Leader Node** manages connections, acts as the SQL endpoint, and coordinates parallel SQL processing.
 
 **Compute Nodes** composed of “slices,” execute queries in parallel on data stored in a
-columnar format, in 1 MB immutable blocks. An Amazon Redshift cluster can contain between 1&mdash;128
+columnar format, in 1 MB immutable blocks. An Amazon Redshift cluster can contain between 1 and 128
 compute nodes, portioned into slides that contain the table data and act as a local processing zone.
 
 **Amazon Redshift Spectrum Nodes** execute queries against an Amazon S3 data lake.
@@ -87,11 +87,11 @@ You can also optimize querying performance through some WLM configuration parame
 
 **Query monitoring** rules that can help you manage expensive or runaway queries.
 
-**Short query** acceleration which helps you prioritize short-running queries over longer-running queries,
+**Short query** acceleration that helps you prioritize short-running queries over longer-running queries by
 using machine learning algorithms to predict querying execution time.
 
 **Concurrency scaling** helps you add multiple transient clusters in seconds,
-to accelerate concurrent read queries.
+to speed up concurrent read queries.
 
 ### WLM best practices
 
