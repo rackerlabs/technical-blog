@@ -1,1 +1,4 @@
-/getLatestKialiOperator https://raw.githubusercontent.com/kiali/kiali-operator/master/deploy/deploy-kiali-operator.sh
+# Main Redirects
+https://blog-site-search.netlify.app/       https://blog-site-search.netlify.app/blog/      200
+https://blog-site-search.netlify.app/*      https://blog-site-search.netlify.app/blog/*     200
+
