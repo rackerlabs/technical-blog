@@ -4,14 +4,8 @@
 {{- define "main" -}}
 <main class="blog-list-wrapper">
   {{- partial "components/search-modal" . -}}
-  <div class="row">
-    <div class="col-sm-12">
-      {{- partial "components/headline" . -}}
-    </div>
-    <div class="col-sm-12">
-      {{- partial "components/announcement" . -}}
-    </div>
-  </div>
+  {{- partial "components/headline" . -}}
+  {{- partial "components/announcement" . -}}
   <div class="container-fluid">
     <div class="row section-blog-list">
       <div class="col-sm-12 col-md-10 col-lg-10">
