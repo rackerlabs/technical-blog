@@ -5,7 +5,9 @@ date: 2020-11-17
 comments: true
 author: Scott Peters
 authorAvatar: 'https://secure.gravatar.com/avatar/95c3ff3cba90e0eb906d033fc05cfe30'
-bio: ""
+bio: "Scott Peters is a Lead Data Science Architect at Rackspace Technology.
+He has been working with AWS since 2013, and with Rackspace Technology since 2018.
+With a background in software development, he excels in application migration, software architecture, and big data engineering."
 published: true
 authorIsRacker: true
 categories:
