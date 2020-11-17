@@ -1,0 +1,16 @@
+{{- /* $index is an array of json objects that we'll submit to Algolia */ -}}
+{{- $index := slice -}}
+{{- range site.RegularPages -}}
+  {{- $page := . -}}
+  {{- /* Split long posts into 2000-word chunks for less noise in results */ -}}
+  {{- $chunked := slice -}}
+  {{- $post_len := len .PlainWords -}}
+  {{- range $i := (seq 0 50000 $post_len) -}}
+    {{- $chunked = $chunked | append (delimit (first 1000 (after $i $page.PlainWords) ) " " ) -}}
+  {{- end -}}
+  {{- /* Add each chunk to $index with different object IDs */ -}}
+  {{- range $i, $c := $chunked -}}
+    {{- $index = $index | append (dict "objectID" (print $page.File.UniqueID "_" $i) "content" ($c | markdownify | plainify) "order" $i "title" ($page.Title | markdownify | plainify)  "author" ($page.Params.Author | markdownify | plainify) "layout" $page.Params.Layout "date" $page.Params.Date "comments" $page.Params.Comments "authorIsRacker" $page.Params.AuthorIsRacker "authorAvatar" $page.Params.AuthorAvatar "categories" $page.Params.Categories "summary" ($page.Summary | markdownify | plainify) "canonical" $page.Params.Canonical "url" $page.Params.Slug ) -}}
+  {{- end -}}
+{{- end -}}
+{{- $index | jsonify -}}
