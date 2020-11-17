@@ -4,7 +4,7 @@ title: "Amazon Redshift: Best practices for optimizing query performance"
 date: 2020-11-17
 comments: true
 author: Scott Peters
-authorAvatar: 'https://en.gravatar.com/scottpeters6940'
+authorAvatar: 'https://secure.gravatar.com/avatar/95c3ff3cba90e0eb906d033fc05cfe30'
 bio: ""
 published: true
 authorIsRacker: true
