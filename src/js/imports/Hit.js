@@ -2,12 +2,10 @@ import React from 'react';
 import Highlight from './Highlight';
 import PropTypes from 'prop-types';
 import moment from 'moment';
-const Entities = require('html-entities').AllHtmlEntities;
 import Snippet from './Snippet';
 
 
 const Hit = ({ hit }) => {
-  const entities = new Entities();
   if (hit.categories != null && hit.date != null && hit.date != '' && hit.url != null && hit.author != null) {
     return (
       <div className="row">
