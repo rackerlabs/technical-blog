@@ -605,6 +605,10 @@ that optimize scale and cost for Rackspace customers. Leveraging strong partner
 relationships, I also lead the majority of our future hardware technology
 investigations."
 
+Miller, Eric 
+authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U010VQY2JLA-47bbb9b85ab3-512'
+bio: 
+
 Mishra, Manoj
 authorAvatar: 'https://s.gravatar.com/avatar/9498305cda9dc4fe9d8f5873b09ff1e2'
 bio: n/a
