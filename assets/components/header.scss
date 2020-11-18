@@ -13,7 +13,6 @@ $header-height: 5rem;
   .navbar {
     padding: 0;
     color: $color-white;
-    max-height: 60px;
 
     .nav-link {
       color: $color-white;
@@ -619,5 +618,8 @@ li, button, a {
   }
   .desktop-search {
     display: inline-block !important;
+  }
+  .navbar{
+    max-height: 60px;
   }
  }
