@@ -1,5 +1,5 @@
 <div class="blog-post">
-  <a href="{{ .RelPermalink }}">
+  <a href="{{ .RelPermalink | urlize }}">
     <h2 class="post-title">{{ .Params.headline | default .Title | markdownify }}</h2>
   </a>
   <div class="post-meta">

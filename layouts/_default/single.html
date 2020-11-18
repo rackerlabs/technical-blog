@@ -2,7 +2,7 @@
   {{- partial "seo/json-ld/index" . -}}
 {{- end -}}
 {{- define "main" -}}
-<main id="post-container" class="blog-list-wrapper">
+<div id="post-container" class="blog-list-wrapper">
   {{- partial "components/headline" . -}}
   {{- partial "components/announcement" . -}}
   {{- partial "components/search-modal" . -}}
@@ -57,5 +57,5 @@
       </div>
     </div>
   </div>
-</main>
+</div>
 {{- end -}}
