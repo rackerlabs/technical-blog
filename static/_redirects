@@ -1,4 +1,3 @@
 # Main Redirects
-/       /blog/      301
-/*      /blog/*     301
+/       /blog      200
 
