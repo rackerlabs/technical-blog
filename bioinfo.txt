@@ -39,6 +39,13 @@ architecture for several business areas. He has vast experience interacting with
 national and international clients from various business areas and a good
 understanding of requirement analysis and database technology implementation."
 
+Anderson, Sean 
+authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U011FERSZU6-afd65608be4d-512'
+bio: "Sean Anderson, Team Lead, Cloud Business Consulting. Sean helps companies 
+transform their technology organizations and execute cost-efficient innovation 
+in the Cloud. Before joining Onica, Sean led operations at MyTime, 
+a top enterprise B2B SaaS provider."
+
 Antony, Rincy
 authorAvatar: 'https://s.gravatar.com/avatar/aa52b129abea1598099d0444ab824898'
 bio: "I am an applications DBA with more than 15 yrs of experience and currently
@@ -589,6 +596,14 @@ for enterprise clients. Mitchell is an 8x Salesforce certified developer and
 Analytics Champions group member specifically focused on Sales Cloud and Einstein
 Analytics. His background in Full Stack and .NET development also makes him an
 ideal candidate to help with Salesforce Integrations."
+
+McQuade, Mark
+authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U0119UAG3PH-16653531535c-512'
+bio: "Mark is an AWS and Cloud-Based Solution Specialist, Knowledge Addict, 
+Relationship Builder, and Practice Manager of Data Science & Engineering at Onica. 
+His passion is in the data, artificial intelligence, and machine learning areas. 
+He also loves promoting AWS data and ML services through webinars and events and 
+passing his knowledge onto others."
 
 Messerli, Antony
 authorAvatar: 'https://www.gravatar.com/avatar/53b5341ace963caa36117f64a3353185'
