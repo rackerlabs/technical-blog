@@ -19,6 +19,8 @@ cannonical: https://onica.com/blog/serverless/lamp-stack-evolution-from-virtual-
 
 ---
 
+*Originally published on November 1, 2019 at Onica.com/blog*
+
 Replace with short intro sentence or two.
 
 <!--more-->
