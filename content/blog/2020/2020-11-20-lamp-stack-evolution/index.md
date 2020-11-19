@@ -15,7 +15,7 @@ metaDescription: "."
 ogTitle: "LAMP stack evolution: From virtual machines to serverless with AWS Amplify and AWS AppSync"
 ogDescription: "."
 slug: "lamp-stack-evolution-from-virtual-machines-to-serverless"
-cannonical: https://onica.com/blog/serverless/lamp-stack-evolution-from-virtual-machines-to-serverless-with-aws-amplify-and-aws-appsync/
+canonical: https://onica.com/blog/serverless/lamp-stack-evolution-from-virtual-machines-to-serverless-with-aws-amplify-and-aws-appsync/
 
 ---
 
