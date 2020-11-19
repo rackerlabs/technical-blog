@@ -44,6 +44,8 @@ In order to use SageMaker Studio, it first needs to be enabled in your AWS accou
 3. Navigate to the SageMaker dashboard, and click “SageMaker Studio” in the upper left.
 4. Choose “create new”, accept the defaults, and click “Submit”. During the setup process, you must create an IAM role.
 
+Hello
+
 
 
 
