@@ -1,15 +1,18 @@
 {{- define "main" -}}
-<section class="hero">
-    <div class="hero--content">
-        <div class="container">
-            <div class="hero--text-block">
-                <h1 class="hero--title">Page not found</h1>
-                <div class="hero--sub">What you're looking for isn't here!</div>
-                <div class="hero-cta">
-                    <a href="/" class="button primary big">Back to home</a>
-                </div>
-            </div>
-        </div>
+    <div class="headline404">
+        <h2>Developer Center</h2>
+        <br>  
     </div>
-</section>
+    {{- partial "components/announcement" . -}}
+    {{- partial "components/search-modal" . -}}
+    <div class="content404">
+        <h1>Page Not Found</h1>
+        <p>Sorry, we couldn't find the page you were looking for. The page might have moved or have been deleted.</p>
+        <p>For information about Rackspace products and services, see:</p>
+        <ul>
+            <li><a href="https://www.rackspace.com/">rackspace.com</a></li>
+            <li><a href="https://support.rackspace.com/">support.rackspace.com</a></li>
+            <li><a href="https://docs.rackspace.com/">docs.rackspace.com</a></li>
+        </ul>
+    </div>
 {{- end -}}
