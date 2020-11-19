@@ -21,6 +21,7 @@ ogDescription: "Snowflake has been enormously popular with data teams, large and
 Snowflake offers flexibilty, operational efficiency, and an impressive pace of adding new,
 time-saving features. Our article discusses how we build a Snowflake architecture for our
 customers, giving them a CICD first approach to source control for security and schema definitions."
+slug: snowflake-security-foundations-overview
 ---
 
 Snowflake has been enormously popular with data teams, large and small.

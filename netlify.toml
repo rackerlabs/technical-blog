@@ -1,49 +1,23 @@
 [build.environment]
-  HUGO_VERSION = "0.74.3"
+  HUGO_VERSION = "0.78.1"
+  NPM_VERSION = "7.0.3"
+  NODE_VERSION = "15.0.1"
 
 [build]
-  command = "make build"
+  command = "npm run build"
   publish = "public"
+
+[context.production]
+  publish = "public"
+  command = "npm run build"
 
 [context.deploy-preview]
-  command = "make build-preview"
   publish = "public"
+  command = "npm run build"
 
-
-[[redirects]]
-  from = "https://docs-technical-blog.netlify.app/"
-  to = "https://docs-technical-blog.netlify.app/blog/"
-  status = 200
-  force = true
-  headers = {X-From = "Netlify"}
-
-[[redirects]]
-  from = "/"
-  to = "/blog/"
-  status = 200
-  force = true
-  headers = {X-From = "Netlify"}
-
-[[redirects]]
-  from = "https://docs.rackspace.com/blog/"
-  to = "https://docs-technical-blog.netlify.app/blog/"
-  status = 200
-  force = true
-  headers = {X-From = "Netlify"}
-
-[[redirects]]
-  from = "https://docs.rackspace.com/img/*"
-  to = "https://docs-technical-blog.netlify.app/img/*"
-  status = 200
-  force = true
-  headers = {X-From = "Netlify"}
-  
-[[redirects]]
-  from = "https://docs.rackspace.com/favicons/*"
-  to = "https://docs-technical-blog.netlify.app/favicons/*"
-  status = 200
-  force = true
-  headers = {X-From = "Netlify"}
+[context.staging]
+  publish = "public"
+  command = "npm run build"
 
 [[headers]]
   for = "/img/*"
@@ -58,3 +32,48 @@
   [headers.values]
     Cache-Control = "public, s-max-age=604800"
 
+[[plugins]]
+  package = "netlify-plugin-hugo-cache-resources"
+	[plugins.inputs]
+	debug = true
+
+[dev]
+  framework = "#custom"
+  # only start Hugo, `netlify dev` builds/serves functions itself
+  command = "npm start"
+  # swap ports to keep consistent w/ normal local server
+  targetPort = 1314
+  port = 1313
+  # don't launch browser automatically
+  autoLaunch = false
+
+[[plugins]]
+  package = "@netlify/plugin-sitemap"
+
+  [plugins.inputs]
+  buildDir = "public"
+  prettyURLs = true
+  trailingSlash = true
+
+
+[[plugins]]
+  package = "netlify-plugin-a11y"
+
+  # all inputs are optional, we just show you the defaults below
+  [plugins.inputs]
+  
+  # required config
+  checkPaths = ['/'] # you can give an array of directories or paths to html files, that you want to run a11y checks on
+
+  # optional config
+  # ignoreDirectories = ['/admin']  # explicitly ignore these directories
+
+  resultMode = "warn" # is "error" by default
+
+  # Developer only
+  debugMode = true # extra logging for plugin developers
+
+# [[plugins]]
+# package = "@algolia/netlify-plugin-crawler"
+#   [plugins.inputs]
+#   branches = ['staging']

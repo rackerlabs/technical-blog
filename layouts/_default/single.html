@@ -1,7 +1,11 @@
+{{- define "json-ld" -}}
+  {{- partial "seo/json-ld/index" . -}}
+{{- end -}}
 {{- define "main" -}}
-<main id="post-container" class="blog-list-wrapper">
+<div id="post-container" class="blog-list-wrapper">
   {{- partial "components/headline" . -}}
   {{- partial "components/announcement" . -}}
+  {{- partial "components/search-modal" . -}}
   <div class="container-fluid">
     <div class="row">
       <div class="col-sm-12 col-md-10 col-lg-10" id="single-post">
@@ -53,5 +57,5 @@
       </div>
     </div>
   </div>
-</main>
+</div>
 {{- end -}}

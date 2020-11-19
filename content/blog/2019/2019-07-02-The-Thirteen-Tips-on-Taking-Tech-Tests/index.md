@@ -18,7 +18,7 @@ metaDescription: "Yes, I can speak Cloud...I learned it from a book."
 ogTitle: "The thirteen tips on taking tech tests"
 ogDescription: "Yes, I can speak Cloud...I learned it from a book."
 ogImage: "https://657cea1304d5d92ee105-33ee89321dddef28209b83f19f06774f.ssl.cf1.rackcdn.com/light_brigade.jpg-081b772662f1fc8d15d6cbf9081ffd25ea74aefdd04d68ac871bb2d8a280f8e.jpg"
-slug: "The Thirteen Tips on Taking Tech Tests" 
+slug: "the-thirteen-tips-on-taking-tech-tests" 
 ---
 
 **T**he **t**hirteen **t**ips to **t**ake **t**ech **t**ests
