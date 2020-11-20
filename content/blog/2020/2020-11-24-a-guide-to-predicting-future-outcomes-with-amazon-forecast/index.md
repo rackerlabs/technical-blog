@@ -49,8 +49,6 @@ the following elements:
 - Expected earnings generated from sales
 - Areas where investments need to be made or pulled to meet the company’s desired goals
 
-{{<img src="picture1.png" title="" alt="">}}
-
 Accurate forecasting is extremely vital. For example, under-forecasting product demand can lead to lost opportunities,
 while over-forecasting can leave a company with wasted resources and sunk costs. Similarly, under-forecasting financials can
 leave a company with no option but to undercut prices, while over-forecasting can lead to depleted cash reserves.
@@ -76,16 +74,12 @@ Amazon Forecast is a fully automated and fully managed machine learning service 
 with up to 50% improvement over traditional methods. The service is simple to use and requires no deep learning experience.
 From a security perspective, your data and your models are fully secure and encrypted in line with AWS’ security standards.
 
-{{<img src="picture2.png" title="" alt="">}}
-
 The technology behind Amazon Forecast begins with three types of data from your **Amazon S3** repositories&mdash;historical data,
 related data, and item data&mdash;that you feed into the service. Amazon Forecast then adds in relevant built-in datasets to enrich
 the data further and automatically train the best ML model for you, selected through AutoML. After you train the model, it generates
 accurate forecasts through the console or private API.
 
 #### Behind the scenes
-
-{{<img src="picture3.png" title="" alt="">}}
 
 Amazon Forecast performs multiple processes in the background that the user does not have to manage. These range from loading and
 inspecting data, training models with multiple diagrams, selecting hyperparameters for optimization, selecting the most accurate
@@ -119,9 +113,6 @@ and item metadata) that detail a set of changing parameters over a series of tim
 
 Each dataset requires you to associate a dataset type and a dataset domain that defines a forecasting use case. You
 can use prebuilt domains provided by Amazon Forecast or make custom ones for your use case.
-
-{{<img src="picture4.png" title="" alt="">}}
-
 #### Dataset types
 
 Each domain can have up to three dataset types, based on the type of data you want to include in the training.
@@ -158,8 +149,6 @@ the following elements:
 Predictor metrics help evaluate the accuracy of an algorithm for various forecasting scenarios. Amazon Forecast uses
 backtesting, or testing a model on historical data, to produce these metrics.
 
-{{<img src="picture5.png" title="" alt="">}}
-
 Evaluation parameters, specified in the predefined algorithms, split the dataset into training data and testing data
 that the algorithm processes in training and testing stages. A set of metrics help you effectively evaluate forecasts,
 including the following ones:
@@ -174,8 +163,6 @@ The uncertainty associated with forecasts, compared to the target result, shows 
 quantiles exist upon which Amazon Forecast provides predictions and calculates errors&mdash;10%, 50%, and 90%. A P90
 quantile, for example, predicts that 90% of the time the true value is less than the predicted value. A P50 quantile
 predicts that 50% of the time the true value is less than predicted.
-
-{{<img src="picture6.png" title="" alt="">}}
 
 #### Algorithms
 
@@ -198,8 +185,6 @@ After you create a predictor, calling the [CreateForecast](https://docs.aws.amaz
 operation helps you create a forecast. During this process, Amazon Forecast trains a model on the entire dataset before hosting
 the model and doing inference. Amazon Forecast creates a forecast for every item `item_id` in the dataset group that trained the
 predictor. After this process completes, you can query the forecast or export it to your Amazon S3 bucket for future use.
-
-{{<img src="picture7.png" title="" alt="">}}
 
 YOu can express forecasts produced by using Amazon Forecast through visualizations. You can go into the console and view the
 forecast, retrieve the forecasts through a private API, and export them in the **.csv** format.
