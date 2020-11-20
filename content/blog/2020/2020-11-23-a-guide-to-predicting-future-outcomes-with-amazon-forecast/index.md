@@ -51,7 +51,7 @@ the following elements:
 
 {{<img src="picture1.png" title="" alt="">}}
 
-Accurate forecasting is therefore extremely vital. For example, under-forecasting product demand can lead to lost opportunities,
+Accurate forecasting is extremely vital. For example, under-forecasting product demand can lead to lost opportunities,
 while over-forecasting can leave a company with wasted resources and sunk costs. Similarly, under-forecasting financials can
 leave a company with no option but to undercut prices, while over-forecasting can lead to depleted cash reserves.
 
