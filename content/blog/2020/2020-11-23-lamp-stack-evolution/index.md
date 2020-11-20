@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "LAMP stack evolution: From virtual machines to serverless with AWS Amplify and AWS AppSync"
-date: 2020-11-20
+date: 2020-11-23
 comments: true
 author: Irina Geiman
 authorAvatar: ''
