@@ -1,0 +1,36 @@
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  {{- if .Params.slug -}}
+  "url": "{{- .Params.slug -}}",
+  {{- else if .Site.Params.slug -}}
+  "url": "{{- .Site.Params.slug -}}",
+  {{- end -}}
+  {{- if .Site.Params.author -}}
+  "author": {
+    "@type": "Person",
+    "name": "{{- .Site.Params.author -}}"
+  },
+  {{- else if .Params.author -}}
+  "author": {
+    "@type": "Person",
+    "name": "{{- .Params.author -}}"
+  },
+  {{- end -}}
+  {{- if .Site.Params.summary -}}
+  "description": "{{- .Site.Params.summary -}}",
+  {{- else if .Params.summary -}}
+  "description": "{{- .Params.summary -}}",
+  {{- else -}}
+  "description": "{{- .Summary -}}",
+  {{- end -}}
+  {{- if .Site.Params.date -}}
+  "image": "{{- .Site.Params.date.Format "January 2, 2006" -}}",
+  {{- else if .Params.date -}}
+  "image": "{{- .Params.date.Format "January 2, 2006" -}}",
+  {{- end -}}
+  "title": "{{- .Site.Title -}}"
+}
+</script>
