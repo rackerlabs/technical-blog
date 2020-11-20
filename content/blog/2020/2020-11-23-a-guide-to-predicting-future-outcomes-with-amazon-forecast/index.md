@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "A guide to predicting future outcomes with amazon forecast"
-date: 2020-11-19
+date: 2020-11-23
 comments: true
 author: Mark McQuade
 authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U0119UAG3PH-16653531535c-512'
