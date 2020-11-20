@@ -320,6 +320,12 @@ Administrator since I began my career and worked for top IT companies. I have
 Apps DBA. I am passionate about electronic gadgets, travelling, exploring, and
 tasting delicious food."
 
+Miller, Eric
+authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U010VQY2JLA-47bbb9b85ab3-512'
+bio: "Accomplished tech leader, with 20 years of career success in Enterprise IT. 
+Provides strategic consulting leadership with a proven track record of practice 
+building in the Amazon Partner Network (APN) ecosystem." 
+
 Rossmeier, Paul
 authorAvatar: ''
 bio: Paul began his Rackspace career in 2013 as a member of the Cloud Office team.
