@@ -23,7 +23,7 @@ As the COVID-19 pandemic unfolds, organizations are stepping up their business
 continuity strategies to help employees work from home without a hitch.
 While many organizations are currently experiencing the challenges of becoming a
 remote workforce overnight, there are solutions that can make it possible to be
-productive today, and then get back to normal as soon as possible.
+productive today, and then get back to normal quickly.
 
 <!--more-->
 
@@ -42,7 +42,7 @@ These solutions help overcome enablement challenges, especially if remote workin
 
 #### What if I only need temporary or occasional remote work?
 
-If you have end users who don't often work remotely or only need to occasionally work remotely,
+If you have end users who don't often work remotely or only need to do so occasionally,
 Amazon WorkSpaces supports both always-on and on-demand with hibernation capabilities.
 This provides flexibility and cost-effectiveness for temporary workers or occasional remote work.
 
@@ -69,7 +69,7 @@ environment, and team readiness for remote work, we can help you determine, depl
 manage the ideal mix of solutions for your business. Contact us to discuss your unique circumstances.
 
 
-<a class="cta purple" id="cta" href="https://www.rackspace.com/onica">Learn more about our AWS services.</a>
+<a class="cta purple" id="cta" href="https://www.rackspace.com/onica">Learn more about our AWS Business Continuity services.</a>
 
 Use the Feedback tab to make any comments or ask questions. You can also click
 **Sales Chat** to [chat now](https://www.rackspace.com/) and start the conversation.
