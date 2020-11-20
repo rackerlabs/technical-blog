@@ -54,7 +54,7 @@ In order to use SageMaker Studio, it first needs to be enabled in your AWS accou
 
 [Notebooks](https://docs.aws.amazon.com/sagemaker/latest/dg/nbi.html) is a feature of SageMaker that allows a user to provision [Jupyter Notebook](https://jupyter.org/) instances to use for data exploration and experimentation. If you’ve used SageMaker Notebooks previously, the first thing you will notice is SageMaker Studio eliminates the need to manually provision a Jupyter notebook instance. When a user clicks **Open Studio** from the console, SageMaker Studio takes care of provisioning a notebook instance behind the scenes, which is very convenient.
 
-#### Not your usual Jupyter UI!
+#### Not your usual Jupyter UI
 
 Upon first use, Jupyter users will immediately notice the SageMaker Studio team has invested a great deal of effort into improving the standard Jupyter UI. The Studio UI features a very nice default dark appearance, an integrated file browser, and top and side nav menus that make it look and feel like a real, first class IDE. Also, there is a **Launcher tab** for executing common tasks, like launching a new notebook or opening a terminal session. Jupyter is a significant upgrade over the default Jupyter experience.
 
