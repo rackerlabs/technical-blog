@@ -1,21 +1,15 @@
 ---
 layout: post
-<<<<<<< HEAD:content/blog/2020/2020-11-23-a-guide-to-predicting-future-outcomes-with-amazon-forecast/index.md
-title: "A guide to predicting future outcomes with amazon forecast"
-date: 2020-11-23
-=======
 title: "A guide to predicting future outcomes with Amazon Forecast"
-date: 2020-11-19
->>>>>>> eca982edc73f52070cd70f695bacb0105733dab8:content/blog/2020/2020-11-19-a-guide-to-predicting-future-outcomes-with-amazon-forecast/index.md
+date: 2020-11-23
 comments: true
 author: Mark McQuade
 authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U0119UAG3PH-16653531535c-512'
 bio: "Mark is an AWS and Cloud-Based Solution Specialist, Knowledge Addict, 
 Relationship Builder, and Practice Manager of Data Science & Engineering at Onica,
-a Rackspace Technology company. 
-His passion is in the data, artificial intelligence, and machine learning areas. 
-He also loves promoting AWS data and ML services through webinars and events and 
-passing his knowledge onto others."
+a Rackspace Technology company. His passion is in the data, artificial intelligence, 
+and machine learning areas. He also loves promoting AWS data and ML services through 
+webinars and events and passing his knowledge onto others."
 published: true
 authorIsRacker: true
 categories:
