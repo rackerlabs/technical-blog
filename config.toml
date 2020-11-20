@@ -1,5 +1,4 @@
 baseurl = "/"
-theme = "docs-developer-hugo-theme"
 copyright = ""
 defaultContentLanguage = "en-us"
 destination = "public"
@@ -10,10 +9,12 @@ metaDataFormat = "yaml"
 paginate = 10
 pluralizeListTitles = false
 relativeURLs = false
-disablePathToLower = false
+disablePathToLower = true
 uglyURLs = false
 smartDashes = true
 title = "Rackspace Developer Center"
+canonifyURLs = true
+enableGitInfo = true
 [markup]
 defaultMarkdownHandler = "goldmark"
 [markup.asciidocExt]
@@ -75,6 +76,14 @@ defaultMarkdownHandler = "goldmark"
     ordered = false
     startLevel = 2
 
+[frontmatter]
+date = ["date", "publishDate", "lastmod"]
+lastmod = [":git", "lastmod", "date", "publishDate"]
+publishDate = ["publishDate", "date"]
+expiryDate = ["expiryDate"]
+categories = ["categories"]
+title = ["title"]
+description = ["description"]
 
 [permalinks]
     blog = "/blog/:slug"
@@ -108,7 +117,7 @@ defaultMarkdownHandler = "goldmark"
 [[menu.footer]]
     name = "Technical Blog"
     parent = "Blogs"
-    url = "https://docs.rackspace.com/blog"
+    url = "/blog"
     weight = 5
 [[menu.footer]]
     name = "Rackspace Blog"
@@ -165,7 +174,7 @@ defaultMarkdownHandler = "goldmark"
     [[menu.main]]
         identifier = "technical-blog"
         name ="Technical Blog"
-        url ="https://docs.rackspace.com/blog"
+        url ="/blog"
         weight = 1
         parent = "blogs"
     [[menu.main]]
@@ -197,25 +206,29 @@ defaultMarkdownHandler = "goldmark"
     weight = 6
 
 
-[outputFormats.OpenSearch]
-baseName = "opensearch"
-isPlainText = true
-mediaType = "application/xml"
-
-[outputFormats.Redirects]
-baseName = "redirects"
-isPlainText = true
-mediatype = "application/json"
-notAlternative = true
 [outputs]
-home = ["HTML", "RSS", "OpenSearch", "Redirects"]
+home = ["HTML", "RSS", "Algolia"]
+
+[outputFormats.Algolia]
+baseName = "algolia"
+isPlainText = true
+mediaType = "application/json"
+notAlternative = true
+
+
 [params]
 dateformat = "January 2, 2006"
-description = "Rackspace Developer documentation using static site generator and headless CMS"
+description = "Rackspace Developer documentation using Hugo, Netlify and Algolia"
 ghrepo = "https://github.com/rackerlabs/technical-blog"
 ghrepo_edit = "https://github.com/rackerlabs/technical-blog/edit/master/hugo/content/"
 ghrepo_new = "https://github.com/rackerlabs/technical-blog/issues/new"
 images = ["/img"]
+
+[params.algolia]
+  vars = ["title", "summary", "date", "permalink", "description", "author", "content", "order", "cannonical"]
+  params = ["categories", "description", "author"]
+
+
 [related]
 includeNewer = true
 threshold = 10
@@ -233,13 +246,9 @@ weight = 150
 name = "categories"
 weight = 150
 [[related.indices]]
-name = "tags"
-weight = 100
-[[related.indices]]
 name = "date"
 pattern = "2006"
 weight = 10
 [taxonomies]
 author = "author"
 category = "categories"
-tag = "tags"

@@ -1,11 +1,10 @@
 {{- define "main" -}}
-<main class="blog-list-wrapper">
+<div class="blog-list-wrapper">
   <div class="row">
     <div class="col-sm-12">
       {{- partial "components/headline" . -}}
-    </div>
-    <div class="col-sm-12">
       {{- partial "components/announcement" . -}}
+      {{- partial "components/search-modal" . -}}
     </div>
   </div>
   <div class="container-fluid">
@@ -23,5 +22,5 @@
       </div>
     </div>
   </div>
-</main>
+</div>
 {{- end -}}
