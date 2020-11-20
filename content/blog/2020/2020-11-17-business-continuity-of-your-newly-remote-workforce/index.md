@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Business continuity for your (newly) remote workforce"
-date: 2020-11-23
+date: 2020-11-17
 comments: true
 author: Michael Bordash
 authorAvatar: ''
