@@ -46,6 +46,17 @@ transform their technology organizations and execute cost-efficient innovation
 in the Cloud. Before joining Onica, Sean led operations at MyTime, 
 a top enterprise B2B SaaS provider."
 
+
+bio: "Entrepreneurial, data-driven problem-solver with deep experience in strategy, 
+marketing, analytics, and operations. At Rackspace Onica, he advises Fortune 500 companies, 
+Unicorn startups, and other industry-leading companies on AWS cloud adoption, 
+cost efficiency, and tech-org management. Previously, he led business operations 
+at MyTime, a rapid-growth enterprise SaaS startup, which he helped 
+grow from 0 to 15,000 customers, scale from seven to 100+ FTEs, 
+and close two rounds of funding." 
+
+
+
 Antony, Rincy
 authorAvatar: 'https://s.gravatar.com/avatar/aa52b129abea1598099d0444ab824898'
 bio: "I am an applications DBA with more than 15 yrs of experience and currently
