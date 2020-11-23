@@ -4,8 +4,12 @@ title: "Business continuity for your (newly) remote workforce"
 date: 2020-11-17
 comments: true
 author: Michael Bordash
-authorAvatar: ''
-bio: ""
+authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U010X4TFVUK-5e9a058432f2-512'
+bio: "Michael Bordash is a Rackspace Lead Cloud Architect, helping customers across
+various industries fully realize their cloud native potential.  Michael had been
+involved with enterprise software development, testing, and performance analysis for
+15 years with IBM prior to joining Onica and builds upon that experience designing
+and implementing world class cloud-based solutions."
 published: true
 authorIsRacker: true
 categories:
