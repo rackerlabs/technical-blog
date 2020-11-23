@@ -601,6 +601,14 @@ Analytics Champions group member specifically focused on Sales Cloud and Einstei
 Analytics. His background in Full Stack and .NET development also makes him an
 ideal candidate to help with Salesforce Integrations."
 
+McQuade, Mark
+authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U0119UAG3PH-16653531535c-512'
+bio: "Mark is an AWS and Cloud-Based Solution Specialist, Knowledge Addict, 
+Relationship Builder, and Practice Manager of Data Science & Engineering at 
+Rackspace Onica. His passion is in the data, artificial intelligence, and 
+machine learning areas. He also loves promoting AWS data and ML services through 
+webinars and events and passing his knowledge onto others.
+
 Messerli, Antony
 authorAvatar: 'https://www.gravatar.com/avatar/53b5341ace963caa36117f64a3353185'
 bio: "Antony Messerli is a Principal Engineer at Rackspace who heads up the
