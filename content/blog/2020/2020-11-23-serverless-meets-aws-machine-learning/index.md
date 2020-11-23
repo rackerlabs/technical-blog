@@ -11,74 +11,76 @@ authorIsRacker: true
 categories:
     - General
 metaTitle: "Serverless meets AWS machine learning: Improving business outcomes with Amazon Comprehend and Amazon Rekognition"
-metaDescription: "."
+metaDescription: "In this post, I take a closer look at the business requirements of the
+owner of my imaginary nail polish salon. As the business owner, I want to drive
+value to my business from the data that was previously unavailable or not
+fully processed and analyzed."
 ogTitle: "Serverless meets AWS machine learning: Improving business outcomes with Amazon Comprehend and Amazon Rekognition"
-ogDescription: "."
+ogDescription: "In this post, I take a closer look at the business requirements of the
+owner of my imaginary nail polish salon. As the business owner, I want to drive
+value to my business from the data that was previously unavailable or not
+fully processed and analyzed."
 slug: "serverless-meets-aws-machine-learning"
 canonical: https://onica.com/blog/serverless/serverless-meets-aws-machine-learning-improving-business-outcomes-with-amazon-comprehend-and-amazon-rekognition/
 
 ---
 
-In the first blog post in this series, I presented several architectural
-patterns that can be used to implement a simple website for showcasing images
-of nail polish designs for my imaginary nail polish salon. Among the approaches
-presented, the two serverless architectures
-with static website hosting were close runners, and allowed me to build a
-high performing and highly scalable solution that is quick to provision and
-easy to manage.
+In the [first blog post](https://docs.rackspace.com/blog/lamp-stack-evolution-from-virtual-machines-to-serverless/)
+in this series, I presented several architectural patterns that you can use to implement a simple website
+for showcasing images of nail polish designs for my imaginary nail polish salon. Among the approaches
+presented, the two serverless architectures with static website hosting were close runners that both allowed me
+to build a high performing and highly scalable solution that is quick to provision and easy to manage.
 
 <!--more-->
 
-Ultimately I decided in favour of AWS Amplify with AWS
-AppSync due to the built-in support for web and mobile applications, and
+Ultimately, I decided in favour of AWS&reg; Amplify&reg; with AWS
+AppSync due to the built-in support for web and mobile applications and
 the speed of full stack development provided by the AWS Amplify ecosystem.
 
-In this post, I will take a closer look at the business requirements of the
-owner of my imaginary nail polish salon. As the business owner, I will drive
+In this post, I take a closer look at the business requirements of the
+owner of my imaginary nail polish salon. As the business owner, I want to drive
 value to my business from the data that was previously unavailable or not
 fully processed and analyzed. Moreover, I want my employees (designers) to
-spend their time in a creative and efficient way, working on new designs and
+spend their time in a creative and efficient way, working on new designs, and
 serving the customers without distractions. Therefore, I would like to
-automate the mundane tasks of site moderation and processing customers
+automate the mundane tasks of site moderation and processing customer
 feedback. I need a reliable and objective way to evaluate the designs, the
 satisfaction level of my customers, and the performance of my employees and
 my business as a whole. As a business owner, I am looking for help in
-answering the questions below:
+answering the following questions:
 
 - Is my customer base growing?
 - Are there any customer concerns that require immediate escalation and my involvement?
 - What designs are “hot” this season?
 - Which designers are doing an exceptional job?
-- What is the customer satisfaction trend, do we improve over time?
+- What is the customer satisfaction trend? Do we improve over time?
 
-All these questions can be answered via AWS Machine Learning and Data
-Analytics services featured in the design diagram below.
+We can answer all these questions through the AWS Machine Learning and Data
+Analytics services featured in the following design diagram:
 
 {{<img src="aws-serverless-1.png" title="" alt="">}}
 
-### Adding a new image - Auto moderation flow
+### Adding a new image&mdash;auto-moderation flow
 
-The site moderation task should be automated as much as possible. Hiring
+I want to automate the site moderation task as much as possible. Hiring
 moderators or having my current employees do the routine task of reviewing
 uploaded images and filtering out inappropriate ones might have a negative
 impact on designers’ productivity and my budget. On the other hand,
 inappropriate content, uploaded either by mistake or deliberately, can cause
 irreparable damage to the reputation of my business. Thus, every picture
-should go through filters and I should be notified in case of attempted abuse.
+should go through filters, and the system should notify me in case of attempted abuse.
 
-The flow below will utilize an AWS Machine Learning service, Amazon
-Rekognition, that uses a pre-trained image identification model to identify
-objects featured in images. The outcome of an image upload will depend on the
-objects that are auto-identified in the image: if one of the labels returned
-by Amazon Rekognition is “manicure”, the image will be successfully
-processed. In case there is no “manicure” label, the image metadata will not
-be sent to Amazon DynamoDB, and thus the image will not be visible to the
-customers.
+The following flow below uses an AWS Machine Learning service, Amazon&reg;
+Rekognition&reg;, which uses a pre-trained image identification model to identify
+objects featured in images. The outcome of an image upload depends on the
+objects that are auto-identified in the image. If one of the labels returned
+by Amazon Rekognition is `manicure`, the image processes successfully.
+In case there is no `manicure` label, the system doesn't send the image metadata
+to Amazon DynamoDB, and thus the image is not visible to the customers.
 
-An attempt to upload moderated content will result in a notification being
-sent to the business owner (by email or SMS) with the identity of the
-offender. Since all users are required to be authenticated to be able to
-upload images, the origin of the upload attempt will be easily obtainable.
+If someone tries to upload moderated content, the business owners gets a notification
+(by email or SMS) with the offender's identity. Because all users must be authenticated to
+upload images, the origin of the upload attempt is easily obtainable.
 
 Here is an example of Amazon ElasticSearch entry with the labels that Amazon
 Rekognition assigned to a legitimate image featuring a nail polish design.
