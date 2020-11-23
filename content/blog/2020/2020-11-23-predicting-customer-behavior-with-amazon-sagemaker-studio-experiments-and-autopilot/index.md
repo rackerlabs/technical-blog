@@ -80,7 +80,7 @@ You can assign, group, and organize these trials into experiments. Experiments i
 interface to browse your active and past experiments, compare trials on key performance metrics, and identify the best performing models.
 
 Under the hood of **SageMaker Studio Experiments** is 
-SageMaker AutoPilot](https://docs.aws.amazon.com/sagemaker/latest/dg/autopilot-automate-model-development.html),
+[SageMaker AutoPilot](https://docs.aws.amazon.com/sagemaker/latest/dg/autopilot-automate-model-development.html),
 which is the AWS implementation of [AutoML](https://en.wikipedia.org/wiki/Automated_machine_learning). AutoPilot simplifies the
 machine learning process by:
 
