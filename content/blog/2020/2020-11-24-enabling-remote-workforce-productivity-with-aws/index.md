@@ -23,6 +23,8 @@ canonical: https://onica.com/blog/business-continuity/enabling-remote-workforce-
 
 ---
 
+*Originally published in Mar 2020, at Onica.com/blog*
+
 A large majority of the global workforce has begun to work remotely. Despite the quick and urgent change, experienced, top cloud providers such as AWS&reg; are helping facilitate a smooth transition through their suite of services. If you are an organization that utilizes legacy software and applications to run the bulk of your business activities, and don't have a remote work plan in place, now is an important time to look at what options are available to support your employees to help them maintain productivity, while avoiding further workforce disruption.
 
 <!--more-->
