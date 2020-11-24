@@ -29,7 +29,7 @@ canonical: https://onica.com/blog/data-analytics/simplifying-data-lakes-with-aws
 *Originally pubished in Jan, 2020 at Onica.com/blog*
 
 AWS Lake Formation&reg; is a service by Amazon&reg; that makes it easy to set up secure data lakes, 
-accelerating the process from months to mere weeks. Data lakes are centralized, curated, and secured 
+accelerating the process from months to weeks. Data lakes are centralized, curated, and secured 
 repositories of data that can be stored and analyzed to guide business decisions and procure insights. 
 
 
