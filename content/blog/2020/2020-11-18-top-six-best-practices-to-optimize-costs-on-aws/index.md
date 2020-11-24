@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Top six best practices to optimize costs on aws"
+title: "Top six best practices to optimize costs on AWS"
 date: 2020-11-18
 comments: true
 author: Sean Anderson
