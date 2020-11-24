@@ -145,6 +145,8 @@ Networking, Developer Tools, and more. He is an AWS certified Solutions Architec
 His hobbies include hiking the foothills of Colorado and walks with his wife
 and dogs."
 
+
+
 Booth, Karisa
 authorAvatar: 'http://0.gravatar.com/avatar/c5a8a633797f4b8c85b5b5bad605cd18'
 bio: "Karisa is an experienced Cloud Architect with a demonstrated history of
@@ -155,10 +157,13 @@ execution, Customer Relationship Management (CRM), event management, and
 marketing/technology. Karisa is passionate about cloud technology and marketing
 and about combining these to create unique solutions for clients."
 
-education, retail, and HLS; providing technical evaluations, program execution,
-Customer Relationship Management (CRM), event management, and marketing/tech.
-Karisa is passionate about cloud technology and marketing and combining these
-to create unique solutions for clients."
+Bordash, Michael
+authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U010X4TFVUK-5e9a058432f2-512'
+bio: "Michael Bordash is a Rackspace Lead Cloud Architect, helping customers 
+across various industries fully realize their cloud native potential.  
+Michael had been involved with enterprise software development, testing, and 
+performance analysis for 15 years with IBM prior to joining Onica and builds upon 
+that experience designing and implementing world class cloud-based solutions."
 
 Brinkman, Michiel
 authorAvatar: 'https://gravatar.com/avatar/e360e0501d74b0de5be9250474951354'
@@ -331,14 +336,11 @@ Administrator since I began my career and worked for top IT companies. I have
 Apps DBA. I am passionate about electronic gadgets, travelling, exploring, and
 tasting delicious food."
 
-Rossmeier, Paul
-authorAvatar: ''
-bio: Paul began his Rackspace career in 2013 as a member of the Cloud Office team.
-He then worked on RAX GTS Linux before transitioning to a Data management role.
-He is currently a Database administrator with certifications as an Elasticsearch
-engineer and Red Hat Certified administrator'. Paul has been happily married
-for 17 years with 2 children. He enjoys learning new technologies,
-collecting video game memorabilia and moonlighting as a turntable DJ.
+Miller, Eric
+authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U010VQY2JLA-47bbb9b85ab3-512'
+bio: "Accomplished tech leader, with 20 years of career success in Enterprise IT. 
+Provides strategic consulting leadership with a proven track record of practice 
+building in the Amazon Partner Network (APN) ecosystem." 
 
 Greguska, Kari
 authorAvatar: ''
@@ -601,6 +603,14 @@ Analytics Champions group member specifically focused on Sales Cloud and Einstei
 Analytics. His background in Full Stack and .NET development also makes him an
 ideal candidate to help with Salesforce Integrations."
 
+McQuade, Mark
+authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U0119UAG3PH-16653531535c-512'
+bio: "Mark is an AWS and Cloud-Based Solution Specialist, Knowledge Addict, 
+Relationship Builder, and Practice Manager of Data Science & Engineering at 
+Rackspace Onica. His passion is in the data, artificial intelligence, and 
+machine learning areas. He also loves promoting AWS data and ML services through 
+webinars and events and passing his knowledge onto others.
+
 Messerli, Antony
 authorAvatar: 'https://www.gravatar.com/avatar/53b5341ace963caa36117f64a3353185'
 bio: "Antony Messerli is a Principal Engineer at Rackspace who heads up the
@@ -615,6 +625,10 @@ During my tenure I have focused on the design and development of compute platfor
 that optimize scale and cost for Rackspace customers. Leveraging strong partner
 relationships, I also lead the majority of our future hardware technology
 investigations."
+
+Miller, Eric 
+authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U010VQY2JLA-47bbb9b85ab3-512'
+bio: 
 
 Mishra, Manoj
 authorAvatar: 'https://s.gravatar.com/avatar/9498305cda9dc4fe9d8f5873b09ff1e2'
