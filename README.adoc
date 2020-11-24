@@ -103,8 +103,8 @@ If everything is working as expected you should see output similar to the follow
   Cleaned          |     0
 
 Built in 3116 ms
-Watching for changes in /Users/ravi7895/workspace/rackerlabs/technical-blog/{archetypes,assets,content,i18n,layouts,package.hugo.json,package.json,postcss.config.js,static}
-Watching for config changes in /Users/ravi7895/workspace/rackerlabs/technical-blog/config.toml
+Watching for changes in /rackerlabs/technical-blog/{archetypes,assets,content,i18n,layouts,package.hugo.json,package.json,postcss.config.js,static}
+Watching for config changes in /rackerlabs/technical-blog/config.toml
 Environment: "development"
 Serving pages from memory
 Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender

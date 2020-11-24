@@ -145,6 +145,8 @@ Networking, Developer Tools, and more. He is an AWS certified Solutions Architec
 His hobbies include hiking the foothills of Colorado and walks with his wife
 and dogs."
 
+
+
 Booth, Karisa
 authorAvatar: 'http://0.gravatar.com/avatar/c5a8a633797f4b8c85b5b5bad605cd18'
 bio: "Karisa is an experienced Cloud Architect with a demonstrated history of
@@ -155,10 +157,13 @@ execution, Customer Relationship Management (CRM), event management, and
 marketing/technology. Karisa is passionate about cloud technology and marketing
 and about combining these to create unique solutions for clients."
 
-education, retail, and HLS; providing technical evaluations, program execution,
-Customer Relationship Management (CRM), event management, and marketing/tech.
-Karisa is passionate about cloud technology and marketing and combining these
-to create unique solutions for clients."
+Bordash, Michael
+authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U010X4TFVUK-5e9a058432f2-512'
+bio: "Michael Bordash is a Rackspace Lead Cloud Architect, helping customers 
+across various industries fully realize their cloud native potential.  
+Michael had been involved with enterprise software development, testing, and 
+performance analysis for 15 years with IBM prior to joining Onica and builds upon 
+that experience designing and implementing world class cloud-based solutions."
 
 Brinkman, Michiel
 authorAvatar: 'https://gravatar.com/avatar/e360e0501d74b0de5be9250474951354'
@@ -605,6 +610,7 @@ Relationship Builder, and Practice Manager of Data Science & Engineering at Onic
 His passion is in the data, artificial intelligence, and machine learning areas. 
 He also loves promoting AWS data and ML services through webinars and events and 
 passing his knowledge onto others."
+
 
 Messerli, Antony
 authorAvatar: 'https://www.gravatar.com/avatar/53b5341ace963caa36117f64a3353185'
