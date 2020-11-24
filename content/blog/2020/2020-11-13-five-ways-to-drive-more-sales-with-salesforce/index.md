@@ -8,7 +8,7 @@ authorAvatar: 'https://0.gravatar.com/avatar/76b6d0b3a7daec2a8e3e25f17ff7ead7'
 published: true
 authorIsRacker: true
 categories:
-    - General
+    - Salesforce
 metaTitle: "Five ways to drive more sales with salesforce"
 metaDescription: "Did you know that Salesforce can actually help you drive sales? Sales teams are often only
 using Salesforce as a glorified Rolodex when they could be leveraging so much more. Improve
