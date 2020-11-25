@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Different types of OCI servers in the cloud"
-date: 2020-11-25
+date: 2020-11-26
 comments: true
 author: D.V. Bhanu Prakash
 authorAvatar: ''
@@ -45,7 +45,7 @@ Oracle says that OCI offers the following instances:
   running applications that do not require the performance and resources (CPU, memory,
   network bandwidth, storage) of an entire physical machine.
 
-An Oracle Cloud Infrastructure VM compute instance runs on the same hardware as a bare metal
+"An Oracle Cloud Infrastructure VM compute instance runs on the same hardware as a bare metal
 instance, leveraging the same cloud-optimized hardware, firmware, software stack, and
 networking infrastructure."
 
