@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Simplifying data lakes with aws lake formation"
+title: "Simplifying data lakes with AWS lake formation"
 date: 2020-11-25
 comments: true
 author: Mark McQuade
@@ -13,12 +13,12 @@ passing his knowledge onto others."
 published: true
 authorIsRacker: true
 categories:
-    - General
-metaTitle: "Simplifying data lakes with aws lake formation"
+    - AWS
+metaTitle: "Simplifying data lakes with AWS lake formation"
 metaDescription: "AWS Lake Formation is a service by Amazon that makes it easy to set up secure data lakes, 
 accelerating the process from months to mere weeks. Data lakes are centralized, curated, and secured 
 repositories of data that you can store and analyze to make business decisions and procure insights."
-ogTitle: "Simplifying data lakes with aws lake formation"
+ogTitle: "Simplifying data lakes with AWS lake formation"
 ogDescription: "AWS Lake Formation is a service by Amazon that makes it easy to set up secure data lakes, 
 accelerating the process from months to mere weeks. Data lakes are centralized, curated, and secured 
 repositories of data that you can store and analyze to make business decisions and procure insights."
