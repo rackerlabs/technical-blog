@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Different types of OCI servers in the cloud"
-date: 2020-11-26
+date: 2020-11-25
 comments: true
 author: D.V. Bhanu Prakash
 authorAvatar: ''
