@@ -4,7 +4,7 @@ title: "Simplifying data lakes with AWS lake formation"
 date: 2020-11-25
 comments: true
 author: Mark McQuade
-authorAvatar: ‘https://ca.slack-edge.com/T07TWTBTP-U0119UAG3PH-16653531535c-512'
+authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U0119UAG3PH-16653531535c-512'
 bio: "Mark is an AWS and Cloud-Based Solution Specialist, Knowledge Addict, 
 Relationship Builder, and Practice Manager of Data Science & Engineering at Onica. 
 His passion is in the data, artificial intelligence, and machine learning areas. 
