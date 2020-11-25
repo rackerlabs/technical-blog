@@ -15,10 +15,10 @@ authorIsRacker: true
 categories:
     - General
 metaTitle: "A guide to predicting future outcomes with Amazon Forecast"
-metaDescription: "Amazon Forecast is a fully managed, machine learning service by AWS. Amazon Forecast can predict future performance and product 
+metaDescription: "Amazon Forecast is a fully managed machine-learning service by AWS. Amazon Forecast can predict future performance and product 
 demand across a wide spectrum of industries from retail to healthcare."
 ogTitle: "A guide to predicting future outcomes with Amazon Forecast"
-ogDescription: "Amazon Forecast is a fully managed, machine learning service by AWS. Amazon Forecast can predict future performance and product demand 
+ogDescription: "Amazon Forecast is a fully managed machine-learning service by AWS. Amazon Forecast can predict future performance and product demand 
 across a wide spectrum of industries from retail to healthcare."
 slug: "a-guide-to-predicting-future-outcomes-with-amazon-forecast"
 canonical: https://onica.com/blog/ai-machine-learning/a-guide-to-predicting-future-outcomes-with-amazon-forecast/
@@ -27,7 +27,7 @@ canonical: https://onica.com/blog/ai-machine-learning/a-guide-to-predicting-futu
 
 *Originally published in April 2019, at Onica.com/blog*
 
-Amazon Forecast&reg; is a fully managed, machine learning service by AWS&reg;, designed to help users produce highly
+Amazon Forecast&reg; is a fully managed machine-learning service by AWS&reg;, designed to help users produce highly
 accurate forecasts from time-series data. Amazon&reg; uses machine learning to solve hard forecasting problems since
 2000, improving 15X in accuracy over the last two decades. **Amazon Forecast** is perfect for a variety of business
 use cases, from financial and resource planning to predicting future performance and product demand across a wide
@@ -61,7 +61,7 @@ leave a company with no option but to undercut prices, while over-forecasting ca
 
 1. **Look backward**
 
-In the first step, begin by looking at historical data that preferably contains identification in the form of timestamps, items,
+Begin by looking at historical data that preferably contains identification in the form of timestamps, items,
 and values. These provide baseline data.
 
 2.  **Identify trends**
@@ -143,7 +143,7 @@ Each domain can have up to three dataset types, based on the type of data you wa
 
 #### Predictors
 
-Amazon Forecast generates forecasts based on time-series data, or **predictors**. During training, accuracy
+Amazon Forecast generates forecasts based on time-series data or **predictors**. During training, accuracy
 metrics evaluate each predictor when selecting a model to generate forecasts. To create a predictor, you need
 the following elements:
 
@@ -174,8 +174,8 @@ To learn more about these metrics, take a look at the [Amazon Forecast documenta
 
 The uncertainty associated with forecasts, compared to the target result, shows in prediction quantiles. Three distinct
 quantiles exist upon which Amazon Forecast provides predictions and calculates errors&mdash;10%, 50%, and 90%. A P90
-quantile, for example, predicts that 90% of the time the true value is less than the predicted value. A P50 quantile
-predicts that 50% of the time the true value is less than predicted.
+quantile, for example, predicts that 90% of the time, the true value is less than the predicted value. A P50 quantile
+predicts that 50% of the time, the true value is less than predicted.
 
 {{<img src="picture6.png" title="" alt="">}}
 
@@ -183,13 +183,13 @@ predicts that 50% of the time the true value is less than predicted.
 
 A broad set of different algorithms power Amazon Forecast, some of which include:
 
-+ **An auto-regressive integrated moving average** (ARIMA), which is a classical approach to model autocorrelations
-  that works well with a small amount of time-series data.
++ **An auto-regressive integrated moving average** (ARIMA), which is a classical approach to model autocorrelations,
+  works well with a small amount of time-series data.
 
 + **Error trend seasonality** (ETS), which uses exponential smoothing, works with a small number of time-series data
   to find trends, seasonality, and residual.
 
-+ **DeepAr++**, which is an algorithm used widely internally at Amazon for mission-critical decisions. It performs well
++ **DeepAr++**, which is an algorithm used widely internally at Amazon for mission-critical decisions, performs well
   with many related time-series and cold-stat problems.
 
 Learn about the other algorithms used in Amazon Forecast, by watching our [webinar](https://onica.com/videos/predicting-the-future-with-amazon-forecast-march-2020/) or reading [Amazon’s documentation](https://docs.aws.amazon.com/forecast/latest/dg/aws-forecast-choosing-recipes.html).
