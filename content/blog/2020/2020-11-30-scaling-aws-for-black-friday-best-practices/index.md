@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Scaling AWS for Black Friday: Best practices"
-date: 2020-11-25
+date: 2020-11-30
 comments: true
 author: Matt Charoenrath
 authorAvatar: ''
