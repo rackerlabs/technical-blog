@@ -26,7 +26,7 @@ slug: "simplifying-data-lakes-with-aws-lake-formation"
 canonical: https://onica.com/blog/data-analytics/simplifying-data-lakes-with-aws-lake-formation/
 ---
 
-*Originally pubished in Jan, 2020 at Onica.com/blog*
+*Originally published in Jan, 2020 at Onica.com/blog*
 
 AWS Lake Formation&reg; is a service by Amazon&reg; that makes it easy to set up secure data lakes, 
 accelerating the process from months to mere weeks. Data lakes are centralized, curated, and secured 
@@ -177,7 +177,7 @@ These permissions might be specific to each user, with individually selectable o
 
 Finally, after the data has been ingested and you have defined security permissions, queries run by using Amazon services, 
 such as Amazon Athena, that use the data in the data lake tables. You can see an example of a user with permission 
-to run a **SELECT** statement that analyzes the data in the tables through Amazon Athena in teh following image (left window). 
+to run a **SELECT** statement that analyzes the data in the tables through Amazon Athena in the following image (left window). 
 Notice that a user who has not been provided access (right window) can see the tables but cannot run any queries.
 
 {{<img src="picture7.png" title="" alt="">}}
