@@ -84,9 +84,9 @@ The process of building data lakes involves the following steps:
 
 This entire process can be quite cumbersome due to the complexities of some of these steps such as 
 data cleansing, preparation, and security configuration. Furthermore, the preceding steps must be 
-rinsed and repeated for different data sets, users, and end-services. Adding to the complexity of the process, 
-over the life of the data lake, you need to take further manual steps, such as managing and monitoring ETL jobs, 
-updating metadata based on data changes, maintaining cleansing scripts, and more. All this 
+rinsed and repeated for different data sets, users, and end-services. Adding to the complexity of 
+the process, over the life of the data lake, you need to take further manual steps, such as 
+managing and monitoring ETL jobs, updating metadata based on data changes, maintaining cleansing scripts, and more. All this 
 manual work time-consuming, but it also makes the process quite error-prone, which is undesirable for enterprise use.
 
 ### AWS Lake Formation&mdash;simplifying data lakes
