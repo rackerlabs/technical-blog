@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Key management and HSMs for AWS workloads"
-date: 2020-12-01
+date: 2020-11-30
 comments: true
 author: Ilya Ayzenshtok
 authorAvatar: ''
