@@ -20,6 +20,8 @@ canonical: https://onica.com/industries/retail/leveraging-aws-to-prepare-your-ec
 
 ---
 
+*Originally published on October 1, 2019 at Onica.com/blog*
+
 If you run or support an online retail platform, you are well aware of the
 perils of having to deal with high volume traffic during major sales or
 the holiday season, which can unfortunately lead to website crashes,
