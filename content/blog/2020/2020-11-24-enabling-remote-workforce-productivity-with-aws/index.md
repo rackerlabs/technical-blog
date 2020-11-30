@@ -13,7 +13,7 @@ that experience designing and implementing world-class cloud-based solutions."
 published: true
 authorIsRacker: true
 categories:
-    - General
+    - AWS
 metaTitle: "Enabling remote workforce productivity with AWS"
 metaDescription: "We live in a uniquely challenging world today, where we find ourselves in an unpredictable situation.
 Organizations across industries have shown inspiring efforts with programs to support the fight against COVID-19 and
