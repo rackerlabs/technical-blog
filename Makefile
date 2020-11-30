@@ -1,6 +1,5 @@
 HUGO_VERSION ?= 0.78.1
 HUGO_EXTENDED = "extended_"
-CONTAINER_RUNTIME ?= docker
 # Show build warnings, posts tagged as draft, and posts with a future date
 PREVIEW_ARGS = --path-warnings --verbose --buildDrafts --buildFuture
 
