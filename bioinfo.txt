@@ -145,8 +145,6 @@ Networking, Developer Tools, and more. He is an AWS certified Solutions Architec
 His hobbies include hiking the foothills of Colorado and walks with his wife
 and dogs."
 
-
-
 Booth, Karisa
 authorAvatar: 'http://0.gravatar.com/avatar/c5a8a633797f4b8c85b5b5bad605cd18'
 bio: "Karisa is an experienced Cloud Architect with a demonstrated history of
@@ -197,6 +195,12 @@ Team at RelationEdge. She has extensive experience creating and editing content
 and marketing assets for a variety of verticals, including healthcare, technology,
 and wellness. Nikki is passionate about freedom, telling the truth, and supporting
 other women/non-binary folks of color."
+
+Charoenrath, Matt
+authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U0118EALE77-fa48a7c11b02-72'
+bio: "Marketing leader experienced in growing brands while scaling and 
+modernizing marketing organizations through a balance of creativity, 
+process & technology to captivate audiences and achieve results."
 
 Chauhan, Dushyant
 authorAvatar: 'https://gravatar.com/avatar/1817fa128828e2dbdd87e8e713a0cac0'
