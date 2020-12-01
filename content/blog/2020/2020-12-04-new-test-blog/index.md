@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Aws systems manager run command simplify hybrid cloud management"
+title: "New test Blog"
 date: 2020-12-04
 comments: true
 author: Matt Charoenrath
