@@ -11,9 +11,11 @@ authorIsRacker: true
 categories:
     - General
 metaTitle: "Onica featured in techtargets iot cloud platform comparison"
-metaDescription: "."
+metaDescription: "On April 30, 2019 Onica’s CTO, Tolga Tarhan, was featured in TechTarget’s IoT platform
+comparison article."
 ogTitle: "Onica featured in techtargets iot cloud platform comparison"
-ogDescription: "."
+ogDescription: "On April 30, 2019 Onica’s CTO, Tolga Tarhan, was featured in TechTarget’s IoT platform
+comparison article."
 slug: "onica-featured-in-techtargets-iot-cloud-platform-comparison"
 
 ---
