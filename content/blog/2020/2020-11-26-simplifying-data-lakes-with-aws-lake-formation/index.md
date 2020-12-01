@@ -49,8 +49,8 @@ data platforms need to scale a thousand times to be sufficient for fifteen years
 Data varieties and volumes are increasing quickly with a plethora of use cases ranging from feeding 
 machine learning (ML) algorithms developed by data scientists to building statistical visualizations and 
 using the generated insights to guide business decisions. By using the data, you can anticipate customer behavior, 
-make a variety of predictions or forecasts, automate processes to improve efficiency, and enhance 
-product offerings with speed and availability in addition to automating customer service. These use cases 
+make a variety of predictions or forecasts, automate processes to improve efficiency, enhance 
+product offerings with speed and availability, and automate customer service. These use cases 
 require that the data is secure and available in real-time, and with growing numbers of people accessing data, 
 it is important that data platforms are flexible and scalable.
 
@@ -64,7 +64,7 @@ the demands of data today and in the future because they grow at a rapid pace.
 As centralized repositories of data, data lakes allow the storage of structured and unstructured data at any scale. 
 Amazon S3&reg;, an object storage service offered by AWS, is an industry-leading scalable, available, secure, and 
 high-performance platform on which you can build data lakes. A large number of Fortune 500 companies and 
-enterprise companies use Amazon S3 for their data lakes including Pfizer&reg;, Vanguard&reg;, Electronic Arts&reg;, Adobe&reg;, HBO&reg;, 
+enterprise companies use Amazon S3 for their data lakes, including Pfizer&reg;, Vanguard&reg;, Electronic Arts&reg;, Adobe&reg;, HBO&reg;, 
 Expedia&reg;, and many more. These companies choose to take advantage of data lakes for their flexibility to 
 support relational and non-relational data, the ability to scale to any size diverse set of analytics, and 
 features such as ML tools, high availability, and low cost.
@@ -82,7 +82,7 @@ The process of building data lakes involves the following steps:
 5. After you ingest and clean the data, set metadata access policies in place.
 6. You must configure access to analytics services to make the data available appropriately.
 
-This entire process can be quite cumbersome due to the complexities of some of these steps such as 
+This entire process can be quite cumbersome due to the complexities of some of these steps, such as 
 data cleansing, preparation, and security configuration. Furthermore, the preceding steps must be 
 rinsed and repeated for different data sets, users, and end-services. Adding to the complexity of 
 the process, over the life of the data lake, you need to take further manual steps, such as 
@@ -139,7 +139,7 @@ AWS Lake Formation offers text-based, faceted search across all metadata, allowi
 stewards, and others as table properties. Furthermore, data sensitivity levels, column definitions, and other column properties 
 are available as well.
 
-### Real time auditing and monitoring
+### Real-time auditing and monitoring
 
 {{<img src="picture4.png" title="" alt="">}}
 
