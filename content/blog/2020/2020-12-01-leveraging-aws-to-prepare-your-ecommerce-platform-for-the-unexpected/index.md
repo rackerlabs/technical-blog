@@ -4,8 +4,8 @@ title: "Leveraging AWS to prepare your eCommerce platform for the unexpected"
 date: 2020-12-01
 comments: true
 author: Matt van Zanten
-authorAvatar: ''
-bio: ""
+authorAvatar: 'https://www.gravatar.com/avatar/a35f27a2675b998fcbcc393c7380848f?s=200'
+bio: "Matt is a Cloud Architect at Rackspace Onica with over 7 years of experience in AWS supporting small to large scale customers in fields such as, technology, healthcare and finance. His experience includes developing and implementing automations, pipelines, containerized workloads, highly available infrastructure as well as system and application performance monitoring."
 published: true
 authorIsRacker: true
 categories:
