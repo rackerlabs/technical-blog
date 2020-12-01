@@ -39,15 +39,15 @@ architecture for several business areas. He has vast experience interacting with
 national and international clients from various business areas and a good
 understanding of requirement analysis and database technology implementation."
 
-Anderson, Sean 
+Anderson, Sean
 authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U011FERSZU6-afd65608be4d-512'
-bio: "Entrepreneurial, data-driven problem-solver with deep experience in strategy, 
-marketing, analytics, and operations. At Rackspace Onica, he advises Fortune 500 companies, 
-Unicorn startups, and other industry-leading companies on AWS cloud adoption, 
-cost efficiency, and tech-org management. Previously, he led business operations 
-at MyTime, a rapid-growth enterprise SaaS startup, which he helped 
-grow from 0 to 15,000 customers, scale from seven to 100+ FTEs, 
-and close two rounds of funding." 
+bio: "Entrepreneurial, data-driven problem-solver with deep experience in strategy,
+marketing, analytics, and operations. At Rackspace Onica, he advises Fortune 500 companies,
+Unicorn startups, and other industry-leading companies on AWS cloud adoption,
+cost efficiency, and tech-org management. Previously, he led business operations
+at MyTime, a rapid-growth enterprise SaaS startup, which he helped
+grow from 0 to 15,000 customers, scale from seven to 100+ FTEs,
+and close two rounds of funding."
 
 
 Antony, Rincy
@@ -159,10 +159,10 @@ and about combining these to create unique solutions for clients."
 
 Bordash, Michael
 authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U010X4TFVUK-5e9a058432f2-512'
-bio: "Michael Bordash is a Rackspace Lead Cloud Architect, helping customers 
-across various industries fully realize their cloud native potential.  
-Michael had been involved with enterprise software development, testing, and 
-performance analysis for 15 years with IBM prior to joining Onica and builds upon 
+bio: "Michael Bordash is a Rackspace Lead Cloud Architect, helping customers
+across various industries fully realize their cloud native potential.
+Michael had been involved with enterprise software development, testing, and
+performance analysis for 15 years with IBM prior to joining Onica and builds upon
 that experience designing and implementing world class cloud-based solutions."
 
 Brinkman, Michiel
@@ -338,9 +338,9 @@ tasting delicious food."
 
 Miller, Eric
 authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U010VQY2JLA-47bbb9b85ab3-512'
-bio: "Accomplished tech leader, with 20 years of career success in Enterprise IT. 
-Provides strategic consulting leadership with a proven track record of practice 
-building in the Amazon Partner Network (APN) ecosystem." 
+bio: "Accomplished tech leader, with 20 years of career success in Enterprise IT.
+Provides strategic consulting leadership with a proven track record of practice
+building in the Amazon Partner Network (APN) ecosystem."
 
 Greguska, Kari
 authorAvatar: ''
@@ -605,10 +605,10 @@ ideal candidate to help with Salesforce Integrations."
 
 McQuade, Mark
 authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U0119UAG3PH-16653531535c-512'
-bio: "Mark is an AWS and Cloud-Based Solution Specialist, Knowledge Addict, 
-Relationship Builder, and Practice Manager of Data Science & Engineering at 
-Rackspace Onica. His passion is in the data, artificial intelligence, and 
-machine learning areas. He also loves promoting AWS data and ML services through 
+bio: "Mark is an AWS and Cloud-Based Solution Specialist, Knowledge Addict,
+Relationship Builder, and Practice Manager of Data Science & Engineering at
+Rackspace Onica. His passion is in the data, artificial intelligence, and
+machine learning areas. He also loves promoting AWS data and ML services through
 webinars and events and passing his knowledge onto others.
 
 Messerli, Antony
@@ -626,9 +626,9 @@ that optimize scale and cost for Rackspace customers. Leveraging strong partner
 relationships, I also lead the majority of our future hardware technology
 investigations."
 
-Miller, Eric 
+Miller, Eric
 authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U010VQY2JLA-47bbb9b85ab3-512'
-bio: 
+bio:
 
 Mishra, Manoj
 authorAvatar: 'https://s.gravatar.com/avatar/9498305cda9dc4fe9d8f5873b09ff1e2'
@@ -905,6 +905,13 @@ use for developers and operators. Sometimes dev, sometimes ops, and sometimes
 advocate. He's interested in composing systems using APIs, SDKs, CLIs, and
 Docker. He likes to teach what he learns along the way.”
 
+van Zanten, Matt
+authorAvatar: 'https://www.gravatar.com/avatar/a35f27a2675b998fcbcc393c7380848f?s=200'
+bio: "Matt is a Cloud Architect at Rackspace Onica with over 7 years of
+experience in AWS supporting small to large scale customers in fields such
+as, technology, healthcare and finance. His experience includes developing
+and implementing automations, pipelines, containerized workloads, highly
+available infrastructure as well as system and application performance monitoring."
 
 Vats, Nagendra
 authorAvatar: 'https://s.gravatar.com/avatar/2d0745dbb9f09137658e8c05b7fec824'
