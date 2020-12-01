@@ -4,8 +4,11 @@ title: "Key management and HSMs for AWS workloads"
 date: 2020-12-01
 comments: true
 author: Ilya Ayzenshtok
-authorAvatar: ''
-bio: ""
+authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-USAM1L5H6-ffb06d8c49dc-192'
+bio: "Ilya is a Solution Architect, Technology Advisor, and DevOps Consultant, with broad experience in
+enterprise systems and various consumer-facing projects. Focusing on business needs above technology, he 
+provides pragmatic solutions to actual problems and makes sure that business and technical stakeholders
+understand each other."
 published: true
 authorIsRacker: true
 categories:
@@ -221,9 +224,9 @@ or organization, all the major cloud providers&mdash;and AWS in particular&mdash
 excellent services to reduce your operational expenses and risk factors in your cloud
 workloads.
 
-<a class="cta purple" id="cta" href="https://www.rackspace.com/managed-hosting">Learn more about Rackspace Managed Hosting.</a>
+<a class="cta purple" id="cta" href="https://www.rackspace.com/security/cloud-native-security">Learn more about Rackspace Managed Cloud-native Security.</a>
 
-<a class="cta red" id="cta" href="https://www.rackspace.com/cloud/aws">Learn more about Rackspace Amazon Web Services for the Cloud.</a>
+<a class="cta red" id="cta" href="https://www.rackspace.com/cloud/aws">Explore Rackspace Amazon Web Services for the Cloud.</a>
 
 Use the Feedback tab to make any comments or ask questions. You can also click
 **Sales Chat** to [chat now](https://www.rackspace.com/) and start the conversation.
