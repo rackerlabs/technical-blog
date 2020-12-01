@@ -16,6 +16,7 @@ ogTitle: "Leveraging AWS for a successful data engineering strategy"
 ogDescription: "The transformation of data engineering over the past years has been so profound that 
 organizations not utilizing new methods and technologies are missing out on major business benefits."
 slug: "leveraging-aws-for-a-successful-data-engineering-strategy"
+canonical: https://onica.com/blog/data-analytics/aws-data-engineering-strategy/
 
 ---
 
