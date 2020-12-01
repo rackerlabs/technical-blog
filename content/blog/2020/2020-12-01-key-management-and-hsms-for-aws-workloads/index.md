@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Key management and HSMs for AWS workloads"
-date: 2020-11-30
+date: 2020-12-01
 comments: true
 author: Ilya Ayzenshtok
 authorAvatar: ''
@@ -28,12 +28,12 @@ slug: "key-management-and-hsms-for-aws-workloads"
 Managing the cryptography infrastructure required for a project or a company has
 traditionally been a challenging task, to put it mildly. It requires a highly-specialized
 and rare skillset and poses a substantial technological and legal risk in perhaps the most
-sensitive areas of your applications
+sensitive areas of your applications.
 
 <!--more-->
 
 Therefore, it is a huge relief that with all the complexities that come with cloud migration,
-all public cloud providers are doing their best to simplif&mdash;or outright take
+all public cloud providers are doing their best to simplify&mdash;or outright take
 over&mdash;your crypto infrastructure needs.
 
 AWS&reg;, in particular, seems to recognize that there are different scenarios their
@@ -71,15 +71,15 @@ custom SSL/TLS traffic termination.
 ### AWS Key Management Service (KMS)
 
 [AWS Key Management Service (KMS)](https://aws.amazon.com/kms/) is essentially a central
-hub for key management and data encryption in AWS:
+hub for key management and data encryption in AWS. It offers the following benefits:
 
-- KMS is a fully-managed, secure, resilient, and compliant AWS service that provides
+- **Fully-managed, secure, resilient, and compliant**: KMS is an AWS service that provides
   centralized key management for your managed resources and applications in the cloud.
-- KMS is integrated with other AWS services, making it easy to encrypt your data at-rest.
-- AWS Encryption SDK allows you to use KMS-backed data encryption and digital signatures
-  in your applications.
-- KMS provides fine-grained access control to the keys used for encryption.
-- KMS integrates with AWS CloudTrail to provide you the detailed audit trails of every key
+- **Integrated with other AWS services**: KMS makes it easy to encrypt your data at-rest.
+- **Includes AWS Encryption SDK**: This tool allows you to use KMS-backed data encryption and
+  digital signatures in your applications.
+- **Fine-grained access control**: KMS offers this level of control to the keys used for encryption.
+- **Audit trails**: KMS integrates with AWS CloudTrail to provide you the detailed audit trails of every key
   operation.
 
 As we'll see later, integration with other services is still a key feature
@@ -108,9 +108,9 @@ Indeed, compliance is often a critical point in an enterprise context, especiall
 regulated industries. Coming back to KMS, according to the
 [product's Features page](https://aws.amazon.com/kms/features/):
 
-"The AWS KMS cryptographic module is validated, or in the process of being validated, at
-[FIPS 140-2](https://en.wikipedia.org/wiki/FIPS_140-2) Level 2 overall with Level 3 for
-several other categories, including physical security."
+    "The AWS KMS cryptographic module is validated, or in the process of being validated, at
+    [FIPS 140-2](https://en.wikipedia.org/wiki/FIPS_140-2) Level 2 overall with Level 3 for
+    several other categories, including physical security."
 
 While KMS is more than adequate for the vast majority of use cases, there are times where
 *storing* the keys in KMS is not an option, usually due to compliance requirements. According
@@ -222,6 +222,8 @@ excellent services to reduce your operational expenses and risk factors in your 
 workloads.
 
 <a class="cta purple" id="cta" href="https://www.rackspace.com/managed-hosting">Learn more about Rackspace Managed Hosting.</a>
+
+<a class="cta red" id="cta" href="https://www.rackspace.com/cloud/aws">Learn more about Rackspace Amazon Web Services for the Cloud.</a>
 
 Use the Feedback tab to make any comments or ask questions. You can also click
 **Sales Chat** to [chat now](https://www.rackspace.com/) and start the conversation.
