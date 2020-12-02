@@ -7,7 +7,7 @@ author: Rackspace Onica team
 published: true
 authorIsRacker: true
 categories:
-    - General
+    - AWS
 metaTitle: "Onica featured in TechTarget's IoT cloud platform comparison"
 metaDescription: "On April 30, 2019 Onica’s CTO, Tolga Tarhan, was featured in TechTarget’s IoT platform
 comparison article."
