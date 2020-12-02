@@ -13,6 +13,11 @@ vendor technologies and always one to take pride in his work, Edwin continues
 to upskill and contribute to the hybrid and multi-cloud journeys of today's
 thriving organizations."
 
+Adnan, Ahmad
+authorAvatar: n/a
+bio: "Leading Big Data and DevOps Architecture for Transformation Projects by using 
+the AWS Cloud."
+
 Agarwal, Saurabh
 authorAvatar: 'https://s.gravatar.com/avatar/35520014182eaf668b9dad65bfc38c62'
 bio: "I am a SharePoint professional with 11 Years of work experience in
