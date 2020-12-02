@@ -15,7 +15,7 @@ thriving organizations."
 
 Adnan, Ahmad
 authorAvatar: n/a
-bio: "Leading Big Data and DevOps Architecture for Transformation Projects using 
+bio: "Leading Big Data and DevOps Architecture for Transformation Projects by using 
 the AWS Cloud."
 
 Agarwal, Saurabh
