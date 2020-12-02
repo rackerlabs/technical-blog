@@ -16,7 +16,7 @@ metaDescription: "On July 19, 2019, Capital One announced that an attacker gaine
 million American and Canadian customer records containing sensitive data such as social security numbers,
 names, and dates of birth."
 ogTitle: "Capital One data breach: Two security controls you should review"
-ogDescription: On July 19, 2019, Capital One announced that an attacker gained access to over 100 million
+ogDescription: "On July 19, 2019, Capital One announced that an attacker gained access to over 100 million
 American and Canadian customer records containing sensitive data such as social security numbers, names,
 and dates of birth."
 slug: "capital-one-data-breach-two-security-controls-you-should-review"
