@@ -11,12 +11,16 @@ authorIsRacker: true
 categories:
     - Cloud Servers
 metaTitle: "How to promote business growth with application modernization"
-metaDescription: "."
+metaDescription: "Cloud migration has become a growing norm in business. However, many
+businesses that migrate are not maximizing the potential of the cloud."
 ogTitle: "How to promote business growth with application modernization"
-ogDescription: "."
+ogDescription: "Cloud migration has become a growing norm in business. However, many
+businesses that migrate are not maximizing the potential of the cloud."
 slug: "how-to-promote-business-growth-with-application-modernization"
 
 ---
+
+*Originally published on April 2, 2019 on Onica.com/blog*
 
 Cloud migration has become a growing norm in business. However, many
 businesses that migrate are not maximizing the potential of the cloud. Despite
@@ -62,7 +66,7 @@ There are a number of important considerations once you decide to make your appl
 ### Understanding your application architecture
 
 First and foremost is understanding your application architecture. This not only means thinking
-about which AWS services to deploy your application against, but also thinking through how to
+about which Amazon Web Services&reg; (AWS) services to deploy your application against, but also thinking through how to
 manage availability, scalability, performance, and cost. Thankfully, AWS has a set of best practices
 and example templates to consult. Rather than starting from square one, there are
 guidelines to help make your architecture run efficiently.
