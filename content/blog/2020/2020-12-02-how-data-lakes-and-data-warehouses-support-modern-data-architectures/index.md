@@ -1,13 +1,14 @@
 ---
 layout: post
 title: "How data lakes and data warehouses support modern data architectures"
-date: 2020-12-1
+date: 2020-12-02
 comments: true
 author: Adnan Ahmad
 published: true
 authorIsRacker: true
 categories:
     - General
+    - DevOps
 metaTitle: "How data lakes and data warehouses support modern data architectures"
 metaDescription: "Now more than ever, businesses need to leverage data, not only to stay relevant
 in a highly competitive landscape but also to find new competitive edges."
