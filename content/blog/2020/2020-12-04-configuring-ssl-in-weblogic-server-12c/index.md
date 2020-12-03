@@ -227,7 +227,7 @@ following image:
 #### Step 8: Configure the WebLogic Managed Servers
 
 To configure all the WebLogic Managed Servers to use the new custom key store and
-certificate for SSL connections, repeat steps **6a - 6k**. You need to use different SSL
+certificate for SSL connections, repeat steps **7a - 7k**. You need to use different SSL
 port values for each WebLogic Managed Server. For example, use `ManagedServer01: SSL port - 9001`,
 `ManagedServer02: SSL port - 9002`, `ManagedServer03: SSL port - 9003`, and so on.
 
