@@ -4,8 +4,13 @@ title: "Adobe Experience Manager in the Cloud"
 date: 2020-12-04
 comments: true
 author: John Jubela
-authorAvatar: ''
-bio: ""
+authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U0BUR9C2C-f10477fcb7d9-512'
+bio: “John Jubela is an AWS Certified Senior Solution Architect on the Rackspace
+Application Services Team at Rackspace. John has over 10 years of experience in the cloud
+hosting industry and has been working with customers on deploying their AEM applications
+since 2012. When John isn’t providing fanatical support to Rackspace customers, he spends
+time with his family most likely hiking, riding bikes, or enjoying another outdoor activity.
+John currently lives in San Antonio Texas and has been a Racker for over 10 years.”
 published: true
 authorIsRacker: true
 categories:
@@ -47,8 +52,8 @@ and products, it just makes sense for many organizations.
 ### Adobe Experience Manager Licensing
 
 So, we know public cloud adoption is extremely popular these days. Now let's talk about
-Adobe&reg; Experience Manager (AEM). AEM, an industry-leading Enterprise Content Management
-System (CMS) or Digital Experience Platform (DXP), has been sold as an on-premise license
+Adobe&reg; Experience Manager (AEM). AEM is an industry-leading Enterprise Content Management
+System (CMS) or Digital Experience Platform (DXP) that has been sold as an on-premise license
 for many years, going back to the Day Software *Communiqué* and later CQ5 days. Adobe
 purchased Day Software in 2010 and quickly renamed the CMS software to CQ5 and later Adobe
 Experience Manager.
@@ -64,8 +69,8 @@ licensing model and move their AEM deployments over to a public cloud managed by
 
 There is currently a strong push from Adobe to move AEM customers from an on-premise
 licensing model to their AMS hosting platform or ever their new AEM as a Cloud Service product.
-Some customers give in to Adobe sales pressure and make the move from on-premise, and others
-choose to keep their on-premise licensing.  
+Some customers give in and make the move from on-premise, and others choose to keep their
+on-premise licensing.  
 
 By keeping their on-premise licensing, they can deploy and manage AEM on their own cloud
 platform on their own terms. The Adobe hosting models do make sense for a certain customer
@@ -112,9 +117,9 @@ also managing and monitoring their AEM application from an operations perspectiv
 service enables our AEM customers to focus on creating content, pushing new code, and
 creating overall great end-user experiences for their customers. Currently, we manage around
 500 AEM servers for our install base. Our AEM customer profile is typically a long-term
-customer with higher than average NPS scores. We've assisted the customer in upgrades from
-5.x to the current version of 6.5. We've also helped our customers with their own transitions
-from dedicated hosting to the public cloud.
+customer with higher than average NPS scores. We've assisted these customers with upgrades
+from 5.x all the way to the current version of 6.5. We've also helped our customers with
+their own transitions from dedicated hosting to the public cloud.
 
 ### AEM on AWS
 
