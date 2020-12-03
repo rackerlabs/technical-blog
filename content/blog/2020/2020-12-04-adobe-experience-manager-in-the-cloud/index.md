@@ -4,6 +4,7 @@ title: "Adobe Experience Manager in the Cloud"
 date: 2020-12-04
 comments: true
 author: John Jubela
+authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U0BUR9C2C-f10477fcb7d9-512'
 published: true
 authorIsRacker: true
 categories:
