@@ -4,13 +4,6 @@ title: "Adobe Experience Manager in the Cloud"
 date: 2020-12-04
 comments: true
 author: John Jubela
-authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U0BUR9C2C-f10477fcb7d9-512'
-bio: “John Jubela is an AWS Certified Senior Solution Architect on the Rackspace
-Application Services Team at Rackspace. John has over 10 years of experience in the cloud
-hosting industry and has been working with customers on deploying their AEM applications
-since 2012. When John isn’t providing fanatical support to Rackspace customers, he spends
-time with his family most likely hiking, riding bikes, or enjoying another outdoor activity.
-John currently lives in San Antonio Texas and has been a Racker for over 10 years.”
 published: true
 authorIsRacker: true
 categories:
