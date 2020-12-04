@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The six best ways to reduce costs on aws"
+title: "The six best ways to reduce costs on AWS"
 date: 2020-12-01
 comments: true
 author: Matt Charoenrath
@@ -11,12 +11,12 @@ process & technology to captivate audiences and achieve results."
 published: true
 authorIsRacker: true
 categories:
-    - General
-metaTitle: "The six best ways to reduce costs on aws"
+    - AWS
+metaTitle: "The six best ways to reduce costs on AWS"
 metaDescription: "Finding the IT budget for new business initiatives can be a handful. It’s easy for companies 
 to tie up excess spend in current tooling without realizing it. This blogpost offers you six things you can do 
 to help improve your infrastructure while freeing up spend for other business initiatives."
-ogTitle: "The six best ways to reduce costs on aws"
+ogTitle: "The six best ways to reduce costs on AWS"
 ogDescription: "Finding the IT budget for new business initiatives can be a handful. It’s easy for companies 
 to tie up excess spend in current tooling without realizing it. This blogpost offers you six things you can do 
 to help improve your infrastructure while freeing up spend for other business initiatives."
