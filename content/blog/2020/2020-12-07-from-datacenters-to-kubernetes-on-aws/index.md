@@ -3,7 +3,7 @@ layout: post
 title: "From data centers to Kubernetes on AWS"
 date: 2020-12-07
 comments: true
-author: Mark Charoenrath 
+author: Matt Charoenrath 
 authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U0118EALE77-fa48a7c11b02-72'
 bio: "Marketing leader experienced in growing brands while scaling and 
 modernizing marketing organizations through a balance of creativity, 
