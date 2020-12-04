@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Five ways to drive more sales with salesforce"
+title: "Five ways to drive more sales with Salesforce"
 date: 2020-11-13
 comments: true
 author: Celia Heywood
@@ -9,11 +9,11 @@ published: true
 authorIsRacker: true
 categories:
     - Salesforce
-metaTitle: "Five ways to drive more sales with salesforce"
+metaTitle: "Five ways to drive more sales with Salesforce"
 metaDescription: "Did you know that Salesforce can actually help you drive sales? Sales teams are often only
 using Salesforce as a glorified Rolodex when they could be leveraging so much more. Improve
 your sales using Salesforce in the following ways."
-ogTitle: "Five ways to drive more sales with salesforce"
+ogTitle: "Five ways to drive more sales with Salesforce"
 ogDescription: "Did you know that Salesforce can actually help you drive sales? Sales teams are often only
 using Salesforce as a glorified Rolodex when they could be leveraging so much more. Improve
 your sales using Salesforce in the following ways."
