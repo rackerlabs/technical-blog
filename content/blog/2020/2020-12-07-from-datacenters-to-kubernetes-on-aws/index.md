@@ -84,7 +84,7 @@ ensure that community recommendations would align properly with the goals of the
 on AWS was a viable solution for workload, we put together a team of Onica and internal client
 engineers to facilitate the migration.
 
-#### A multi-faceted migration approach
+#### A multi-faceted migration approach
 
 To conduct mass migrations, the integrated team developed tools to help the different development teams
 use Kubernetes easily without having to learn the deep intricacies of the Kubernetes platform. This process resulted
