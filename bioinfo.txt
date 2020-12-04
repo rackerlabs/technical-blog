@@ -698,6 +698,11 @@ bio: "With 9+ years of professional experience in IT industry, I am a good obser
 learner, and deliberative person. I handle responsibilities smoothly and manage my
 work-life balance."
 
+Pandey, Manish
+authorAvatar: 'https://s.gravatar.com/avatar/08fafec4e5679f9b0ecfbda350b43c31'
+bio: "I work as a Senior Consultant in the Oracle Applications, Databases, and Fusion Middleware
+domains and constantly learn and share new technological advancements across the industry."
+
 Parsons, Will
 authorAvatar: 'https://gravatar.com/avatar/7e23218fb3986389a7eb5a7d488d6cc1'
 bio: "Will Parsons is a Solutions Architect who has worked in technical and
