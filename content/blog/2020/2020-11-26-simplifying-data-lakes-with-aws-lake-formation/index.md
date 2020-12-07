@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "Simplifying data lakes with AWS lake formation"
-date: 2020-11-25
+date: 2020-11-26
 comments: true
 author: Mark McQuade
-authorAvatar: ‘https://ca.slack-edge.com/T07TWTBTP-U0119UAG3PH-16653531535c-512'
+authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U0119UAG3PH-16653531535c-512'
 bio: "Mark is an AWS and Cloud-Based Solution Specialist, Knowledge Addict, 
 Relationship Builder, and Practice Manager of Data Science & Engineering at Onica. 
 His passion is in the data, artificial intelligence, and machine learning areas. 
@@ -196,4 +196,5 @@ AWS Lake Formation to quickly, reliably, and cost-effectively build your data la
 
 Use the Feedback tab to make any comments or ask questions. You can also click
 **Sales Chat** to [chat now](https://www.rackspace.com/) and start the conversation.
+
 
