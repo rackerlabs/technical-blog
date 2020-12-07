@@ -903,7 +903,7 @@ authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-UTA9EJ5T8-ece2a1ba3f39-512'
 bio: "Combining deep hands-on knowledge of technology with creative solutions 
 to business problems, Tolga has built and led organizations that deliver 
 world-class software products. A software engineer and entrepreneur by trade, 
-He has 16 years of successive experience in executive roles (CTO, CEO) 
+he has 16 years of successive experience in executive roles (CTO, CEO) 
 leading organizations that build great products and deliver exceptional services."
 
 Tharmarajah, Nilojan
