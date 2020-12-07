@@ -13,6 +13,11 @@ vendor technologies and always one to take pride in his work, Edwin continues
 to upskill and contribute to the hybrid and multi-cloud journeys of today's
 thriving organizations."
 
+Adnan, Ahmad
+authorAvatar: n/a
+bio: "Leading Big Data and DevOps Architecture for Transformation Projects by using 
+the AWS Cloud."
+
 Agarwal, Saurabh
 authorAvatar: 'https://s.gravatar.com/avatar/35520014182eaf668b9dad65bfc38c62'
 bio: "I am a SharePoint professional with 11 Years of work experience in
@@ -39,15 +44,15 @@ architecture for several business areas. He has vast experience interacting with
 national and international clients from various business areas and a good
 understanding of requirement analysis and database technology implementation."
 
-Anderson, Sean 
+Anderson, Sean
 authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U011FERSZU6-afd65608be4d-512'
-bio: "Entrepreneurial, data-driven problem-solver with deep experience in strategy, 
-marketing, analytics, and operations. At Rackspace Onica, he advises Fortune 500 companies, 
-Unicorn startups, and other industry-leading companies on AWS cloud adoption, 
-cost efficiency, and tech-org management. Previously, he led business operations 
-at MyTime, a rapid-growth enterprise SaaS startup, which he helped 
-grow from 0 to 15,000 customers, scale from seven to 100+ FTEs, 
-and close two rounds of funding." 
+bio: "Entrepreneurial, data-driven problem-solver with deep experience in strategy,
+marketing, analytics, and operations. At Rackspace Onica, he advises Fortune 500 companies,
+Unicorn startups, and other industry-leading companies on AWS cloud adoption,
+cost efficiency, and tech-org management. Previously, he led business operations
+at MyTime, a rapid-growth enterprise SaaS startup, which he helped
+grow from 0 to 15,000 customers, scale from seven to 100+ FTEs,
+and close two rounds of funding."
 
 
 Antony, Rincy
@@ -145,8 +150,6 @@ Networking, Developer Tools, and more. He is an AWS certified Solutions Architec
 His hobbies include hiking the foothills of Colorado and walks with his wife
 and dogs."
 
-
-
 Booth, Karisa
 authorAvatar: 'http://0.gravatar.com/avatar/c5a8a633797f4b8c85b5b5bad605cd18'
 bio: "Karisa is an experienced Cloud Architect with a demonstrated history of
@@ -159,10 +162,10 @@ and about combining these to create unique solutions for clients."
 
 Bordash, Michael
 authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U010X4TFVUK-5e9a058432f2-512'
-bio: "Michael Bordash is a Rackspace Lead Cloud Architect, helping customers 
-across various industries fully realize their cloud native potential.  
-Michael had been involved with enterprise software development, testing, and 
-performance analysis for 15 years with IBM prior to joining Onica and builds upon 
+bio: "Michael Bordash is a Rackspace Lead Cloud Architect, helping customers
+across various industries fully realize their cloud native potential.
+Michael had been involved with enterprise software development, testing, and
+performance analysis for 15 years with IBM prior to joining Onica and builds upon
 that experience designing and implementing world class cloud-based solutions."
 
 Brinkman, Michiel
@@ -197,6 +200,12 @@ Team at RelationEdge. She has extensive experience creating and editing content
 and marketing assets for a variety of verticals, including healthcare, technology,
 and wellness. Nikki is passionate about freedom, telling the truth, and supporting
 other women/non-binary folks of color."
+
+Charoenrath, Matt
+authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U0118EALE77-fa48a7c11b02-72'
+bio: "Marketing leader experienced in growing brands while scaling and 
+modernizing marketing organizations through a balance of creativity, 
+process & technology to captivate audiences and achieve results."
 
 Chauhan, Dushyant
 authorAvatar: 'https://gravatar.com/avatar/1817fa128828e2dbdd87e8e713a0cac0'
@@ -338,9 +347,9 @@ tasting delicious food."
 
 Miller, Eric
 authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U010VQY2JLA-47bbb9b85ab3-512'
-bio: "Accomplished tech leader, with 20 years of career success in Enterprise IT. 
-Provides strategic consulting leadership with a proven track record of practice 
-building in the Amazon Partner Network (APN) ecosystem." 
+bio: "Accomplished tech leader, with 20 years of career success in Enterprise IT.
+Provides strategic consulting leadership with a proven track record of practice
+building in the Amazon Partner Network (APN) ecosystem."
 
 Greguska, Kari
 authorAvatar: ''
@@ -605,10 +614,10 @@ ideal candidate to help with Salesforce Integrations."
 
 McQuade, Mark
 authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U0119UAG3PH-16653531535c-512'
-bio: "Mark is an AWS and Cloud-Based Solution Specialist, Knowledge Addict, 
-Relationship Builder, and Practice Manager of Data Science & Engineering at 
-Rackspace Onica. His passion is in the data, artificial intelligence, and 
-machine learning areas. He also loves promoting AWS data and ML services through 
+bio: "Mark is an AWS and Cloud-Based Solution Specialist, Knowledge Addict,
+Relationship Builder, and Practice Manager of Data Science & Engineering at
+Rackspace Onica. His passion is in the data, artificial intelligence, and
+machine learning areas. He also loves promoting AWS data and ML services through
 webinars and events and passing his knowledge onto others.
 
 Messerli, Antony
@@ -626,9 +635,9 @@ that optimize scale and cost for Rackspace customers. Leveraging strong partner
 relationships, I also lead the majority of our future hardware technology
 investigations."
 
-Miller, Eric 
+Miller, Eric
 authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U010VQY2JLA-47bbb9b85ab3-512'
-bio: 
+bio:
 
 Mishra, Manoj
 authorAvatar: 'https://s.gravatar.com/avatar/9498305cda9dc4fe9d8f5873b09ff1e2'
@@ -688,6 +697,11 @@ authorAvatar: 'https://s.gravatar.com/avatar/d73e3eeb196b5f3992a38b072e1a7760'
 bio: "With 9+ years of professional experience in IT industry, I am a good observer,
 learner, and deliberative person. I handle responsibilities smoothly and manage my
 work-life balance."
+
+Pandey, Manish
+authorAvatar: 'https://s.gravatar.com/avatar/08fafec4e5679f9b0ecfbda350b43c31'
+bio: "I work as a Senior Consultant in the Oracle Applications, Databases, and Fusion Middleware
+domains and constantly learn and share new technological advancements across the industry."
 
 Parsons, Will
 authorAvatar: 'https://gravatar.com/avatar/7e23218fb3986389a7eb5a7d488d6cc1'
@@ -848,6 +862,10 @@ companies, and has spent the last decade helping customers deploy and get the
 most out of private and hybrid cloud solutions. When not working, Andy enjoys
 hiking, skiing, and playing and watching hockey."
 
+Sollie, Matt
+authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U010UUJU2D8-41b9d5577634-72'
+bio: n/a
+
 Sprofera, Phil
 authorAvatar: 'https://nam12.safelinks.protection.outlook.com/?url=https%3A%2F%2Fmedia-exp1.licdn.com%2Fdms%2Fimage%2FC4D03AQEqRloibv206w%2Fprofile-displayphoto-shrink_100_100%2F0%3Fe%3D1603324800%26v%3Dbeta%26t%3DVccxZYcP1H4xef2V5l5PnE4ug_fFTSA0yLR-W07LXjE&data=02%7C01%7Ccat.lookabaugh%40RACKSPACE.COM%7Cafff862224344a46a28508d84552eb8b%7C570057f473ef41c8bcbb08db2fc15c2b%7C0%7C0%7C637335569727849616&sdata=YIp%2BFr7gOWxGn31BoHTjPTHgl%2Fwc3UseifQEd1bcGz4%3D&reserved=0'
 bio: "I'm a 12+ year Racker&mdash;all in the Networking and Security roles&mdash;
@@ -901,6 +919,13 @@ use for developers and operators. Sometimes dev, sometimes ops, and sometimes
 advocate. He's interested in composing systems using APIs, SDKs, CLIs, and
 Docker. He likes to teach what he learns along the way.”
 
+van Zanten, Matt
+authorAvatar: 'https://www.gravatar.com/avatar/a35f27a2675b998fcbcc393c7380848f?s=200'
+bio: "Matt is a Cloud Architect at Rackspace Onica with over 7 years of
+experience in AWS supporting small to large scale customers in fields such
+as, technology, healthcare and finance. His experience includes developing
+and implementing automations, pipelines, containerized workloads, highly
+available infrastructure as well as system and application performance monitoring."
 
 Vats, Nagendra
 authorAvatar: 'https://s.gravatar.com/avatar/2d0745dbb9f09137658e8c05b7fec824'
