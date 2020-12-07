@@ -11,7 +11,7 @@ process, and technology to captivate audiences and achieve results."
 published: true
 authorIsRacker: true
 categories:
-    - General
+    - AWS
 metaTitle: "Why AWS for Microsoft workloads"
 metaDescription: "Many enterprise companies are starting to move away from the traditional IT operations these workloads run on and migrate to the AWS Cloud for its efficiency, agility, and cost-effective nature."
 ogTitle: "Why AWS for Microsoft workloads"
