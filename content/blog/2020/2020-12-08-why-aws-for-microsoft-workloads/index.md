@@ -13,12 +13,10 @@ authorIsRacker: true
 categories:
     - General
 metaTitle: "Why AWS for Microsoft Workloads"
-metaDescription: "Many enterprise companies are starting to move away from the traditional IT operations these workloads run on and migrate to the AWS Cloud for its efficiency, agility, and cost-effective nature.
-."
+metaDescription: "Many enterprise companies are starting to move away from the traditional IT operations these workloads run on and migrate to the AWS Cloud for its efficiency, agility, and cost-effective nature."
 ogTitle: "Why AWS for Microsoft Workloads"
-ogDescription: Many enterprise companies are starting to move away from the traditional IT operations these workloads run on and migrate to the AWS Cloud for its efficiency, agility, and cost-effective nature.
-."
-slug: "why-AWS-for-Microsoft-Workloads"
+ogDescription: Many enterprise companies are starting to move away from the traditional IT operations these workloads run on and migrate to the AWS Cloud for its efficiency, agility, and cost-effective nature."
+slug: "Why-AWS-for-Microsoft-Workloads"
 canonical: https://onica.com/blog/microsoft-on-aws/why-aws-for-microsoft-workloads/
 
 ---
