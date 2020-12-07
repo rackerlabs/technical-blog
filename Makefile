@@ -24,7 +24,7 @@ build-preview:
 build:
 	rm -rf public
 	@hugo version
-	hugo $(PREVIEW_ARGS)
+	hugo
 
 serve:
 	@hugo $(PREVIEW_ARGS) serve
