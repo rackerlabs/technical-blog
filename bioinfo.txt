@@ -1009,6 +1009,14 @@ Augusta, Georgia, Lorenzo now lives in Waldorf, Maryland with his family. He
 holds a Bachelor’s of Science from Claflin University. Lorenzo is based in the
 company’s Reston, Virginia office."
 
+Woo, Mency 
+authorAvatar: ''
+bio: "7X AWS-certified, 2X GCP-certified Cloud solutions architect. 
+Diverse experience in DevOps, CI/CD and infrastructure as code. Passionate about 
+the intersection of business interests and technological innovations, 
+design/implementation of scalable tools and processes that align 
+business requirements, R&D endeavours and IT initiatives."
+
 Xin, Michael
 authorAvatar: 'https://s.gravatar.com/avatar/5c2bae8f6f4c9669249888f5b8e1f5b0'
 bio: "Michael Xin is a senior QE/Security manager in Rackspace. He is leading
