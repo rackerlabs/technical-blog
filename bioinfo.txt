@@ -898,6 +898,14 @@ has been supporting the Office 365 environment from day one. His passion for
 helping others combined with his knowledge of Office 365 helps him provide a
 Fanatical Experience for Rackspace customers everyday."
 
+Tarhan, Tolga
+authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-UTA9EJ5T8-ece2a1ba3f39-512'
+bio: "Combining deep hands-on knowledge of technology with creative solutions 
+to business problems, Tolga has built and led organizations that deliver 
+world-class software products. A software engineer and entrepreneur by trade, 
+he has 16 years of successive experience in executive roles (CTO, CEO) 
+leading organizations that build great products and deliver exceptional services."
+
 Tharmarajah, Nilojan
 authorAvatar: 'https://s.gravatar.com/avatar/685794a71af4ba6a72bb679304669e9a'
 bio: "I am a Specialist Solutions Architect at Rackspace. In my younger days, I earned a degree in
