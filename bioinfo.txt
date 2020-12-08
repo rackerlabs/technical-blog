@@ -264,6 +264,10 @@ Cloud infrastructure, and the AWS infrastructure.  He was awarded the Fanatical
 Jacket, Rackspace’s highest honor, because of the focus that he places on
 fanatically supporting not only external customers, but internal customers as well."
 
+Dang, Chirag
+authorAvatar: ''
+bio: ""
+
 Dhiman, Vivek
 authorAvatar: 'https://s.gravatar.com/avatar/d29da50d9ece9c12e208afaa0de68cd5'
 bio: "I've been a Racker for eight years and have 13+ years of Oracle DBA
