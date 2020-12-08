@@ -50,7 +50,7 @@ makes migration simple.
 
 #### Easily deploy and manage Windows Server applications
 
-In 2008, AWS launched Windows Server-based instances. As a a Gold-certified member of the Microsoft Partner Network, AWS has
+In 2008, AWS launched Windows Server-based instances. As a Gold-certified member of the Microsoft Partner Network, AWS has
 continuously worked to make [Windows workloads](https://onica.com/blog/microsoft-on-aws/why-aws-for-microsoft-workloads/)
 available on the AWS Cloud. Microsoft and AWS have several mutual customers running Windows workloads on AWS today.
 
