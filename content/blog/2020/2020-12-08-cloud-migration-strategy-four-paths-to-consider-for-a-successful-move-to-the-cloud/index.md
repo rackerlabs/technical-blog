@@ -112,7 +112,7 @@ A high level of maturity is necessary for making these decisions, whether thatâ€
 This is the essence of Migration-as-Code and is the primary way Onica, operates its [migrations](https://onica.com/aws-cloud-migration/).
 
 This is not necessarily always an option, however. The major factors that play into this option are the obvious ones: time and money.
-An organization mighgt not have the engineering resources or maturity to implement a custom, cloud-native solution to an off-the-shelf
+An organization might not have the engineering resources or maturity to implement a custom, cloud-native solution to an off-the-shelf
 application currently in use today. 
 
 Even in-house applications might not be worth refactoring within the given time, or other business priorities make it an impossibility.
