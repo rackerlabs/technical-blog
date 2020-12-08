@@ -15,8 +15,6 @@ metaTitle: "Introduction to Always Free Autonomous Database"
 metaDescription: "This post introduces *autonomous database* and describes how to create
 and use the Always Free Autonomous Database option on the Oracle Cloud Infrastructure."
 ogTitle: "Introduction to Always Free Autonomous Database"
-ogDescription: "This post introduces *autonomous database* and describes how to create and
-use the Always Free Autonomous Database option on the Oracle Cloud Infrastructure."
 slug: "introduction-to-always-free-autonomous-database"
 
 ---
