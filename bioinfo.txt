@@ -931,6 +931,12 @@ use for developers and operators. Sometimes dev, sometimes ops, and sometimes
 advocate. He's interested in composing systems using APIs, SDKs, CLIs, and
 Docker. He likes to teach what he learns along the way.”
 
+Vadgama, Hitesh
+authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-UD9LTRKFX-ddadc26195d0-192'
+bio: "Hitesh is an Azure Solutions Architect at Rackspace, with broad experience working
+with various customers across a multitude of industry verticals to help solve technical
+problems and deliver fit-for-purpose solutions."
+
 van Zanten, Matt
 authorAvatar: 'https://www.gravatar.com/avatar/a35f27a2675b998fcbcc393c7380848f?s=200'
 bio: "Matt is a Cloud Architect at Rackspace Onica with over 7 years of
