@@ -86,6 +86,11 @@ and currently works at Rackspace. He is enthusiastic, a quick learner, and
 always learns new technologies. His strengths include analytical thinking,
 problem solving, learning from mistakes, and working well under pressure."
 
+Battistella, Fernando
+authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U0117GP9MSR-52a71a10bcbf-512'
+bio: "Senior Solutions Architect at Onica, a Rackspace Technology Company"
+
+
 Belke, Emily
 authorAvatar: 'https://s.gravatar.com/avatar/4a7de5d7772b14826cca8496c410ba88'
 bio: n/a
