@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Aws container services how does it work"
+title: "AWS container services how does it work"
 date: 2020-12-09
 comments: true
 author: Fernando Battistella
@@ -10,9 +10,9 @@ published: true
 authorIsRacker: true
 categories:
     - AWS
-metaTitle: "Aws container services how does it work"
+metaTitle: "AWS container services how does it work"
 metaDescription: "AWS&reg; Containers offer a lightweight way to consistently port software environments for applications. This makes them a great resource for developers looking to improve infrastructure efficiency, becoming the new normal over virtual machines (VMs)."
-ogTitle: "Aws container services how does it work"
+ogTitle: "AWS container services how does it work"
 ogDescription: "AWS&reg; Containers offer a lightweight way to consistently port software environments for applications. This makes them a great resource for developers looking to improve infrastructure efficiency, becoming the new normal over virtual machines (VMs)."
 slug: "aws-container-services-how-does-it-work"
 canonical: https://onica.com/blog/containers/aws-container-services/
