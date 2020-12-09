@@ -265,8 +265,8 @@ Jacket, Rackspace’s highest honor, because of the focus that he places on
 fanatically supporting not only external customers, but internal customers as well."
 
 Dang, Chirag
-authorAvatar: ''
-bio: ""
+authorAvatar: 'https://secure.gravatar.com/avatar/7b23adc494ecb33bebdb986533b0a64c'
+bio: "Oracle Application DBA at Rackspace Technology."
 
 Dhiman, Vivek
 authorAvatar: 'https://s.gravatar.com/avatar/d29da50d9ece9c12e208afaa0de68cd5'

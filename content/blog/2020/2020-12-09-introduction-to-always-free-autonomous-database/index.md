@@ -4,8 +4,8 @@ title: "Introduction to Always Free Autonomous Database"
 date: 2020-12-09
 comments: true
 author: Chirag Dang
-authorAvatar: ''
-bio: ""
+authorAvatar: 'https://secure.gravatar.com/avatar/7b23adc494ecb33bebdb986533b0a64c'
+bio: "Oracle Application DBA at Rackspace Technology."
 published: true
 authorIsRacker: true
 categories:
