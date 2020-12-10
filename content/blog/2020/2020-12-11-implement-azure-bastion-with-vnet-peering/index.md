@@ -59,8 +59,8 @@ which does a great job of providing an overview of the product and its purpose.
 
 In this example walkthrough, I use the Azure portal to deploy a Bastion in a hub VNET and
 show you the steps to successfully establish a connection through peering to target virtual
-machines (VMs) that reside in spoke VNETs. Each has one VM in the same region as the Bastion
-and another in a different region. 
+machines (VMs) that reside in spoke VNETs. We will have one target VM in the same region
+as the Bastion and another Target VM in a different region.
 
 #### Creation of target VMs in each spoke VNET
 
@@ -68,7 +68,7 @@ Because this walkthrough focuses on deploying the Bastion and making the relevan
 I won't bore you with VM creation instructions. Therefore, I have already deployed the
 following in my subscription: 
  
-**Windows&reg; VM:**
+Windows&reg; VM:
 
 - **Name**: WindowsVM01
 - **Region**: UK South
@@ -77,7 +77,7 @@ following in my subscription:
 - **VNET**: UKS-VNET01-SPOKE01 (192.168.1.0/24)
 - **Subnet**: UKS-VNET01-SPOKE01-SN01 (192.168.1.0/27)
   
-**Linux&reg; (Ubuntu operating system) VM:**
+Linux&reg; (Ubuntu operating system) VM:
 
 - **Name**: LinuxVM01
 - **Region**: East US
@@ -124,7 +124,7 @@ Use the following steps to go through this demo with me:
 8. That's it for the Bastion resource creation part. Grab yourself a quick beverage while
    the resources deploy, which usually takes no more than five minutes. 
  
-### Configure Network Security Group (NSGs) rules
+### Configure Network Security Group (NSG) rules
 
 Because the Bastion is a managed service, Microsoft hardens it by default. However, NSGs
 need to be applied to secure the subnet in which the Bastion host resides and apply the
@@ -227,7 +227,7 @@ each of the Spoke VNETs where the target VMs reside so that traffic can flow.
  
 21. I followed the same process used in steps 16-20 to configure peering between
     UKS-VNET02-HUB01 and the second spoke VNET EUS-VNET01-SPOKE01 where LinuxVM01 resides,
-    but simply change the peering names slightly. 
+    but simply change the peering names accordingly. 
  
 ### Connect to the target VMs
  
@@ -252,8 +252,8 @@ using the Bastion successfully. Let's give it a go!
 25. Now, connect to LinuxVM01, which resides in a spoke VNET in a different region
     (East US) to the Hub VNET. I navigate to the VM and select **Bastion** as the connection
     method, just like I did for WindowsVM01. 
-26. I enter my admin login credentials and click **Connect **. I used a username/password
-    combination for this demo, but for a production setup, it's wise to SSH keys.
+26. I enter my admin login credentials and click **Connect**. I used a username/password
+    combination for this demo, but for a production setup, it's wise to use SSH keys.
  
 {{<img src="Picture14.png" title="" alt="">}}
  
