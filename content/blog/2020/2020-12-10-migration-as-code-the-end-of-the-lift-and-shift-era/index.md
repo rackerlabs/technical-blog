@@ -80,7 +80,7 @@ To understand the Migration-as-Code method, you need to understand the agile and
 The Migration-as-Code method builds CI/CD pipelines that promote automation and create sustainability. Applications are the unit of
 work, and everything takes place on the application level, with delivery focused on applications moved in and out of environments
 one piece at a time. Applications identify deployment patterns and reuse them for simplification of future migration needs. This
-also simplifies quality assurance and applicatiopn security because code reviews them easily. The pipeline format also allows for
+also simplifies quality assurance and application security because code reviews them easily. The pipeline format also allows for
 greater adaptability down the road because you can test and try new things in the environment at a quicker speed.
 
 The ultimate result is a migration that takes place in less time and with less wasted investment. Instead of being one and done,
