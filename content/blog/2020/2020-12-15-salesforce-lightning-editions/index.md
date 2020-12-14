@@ -91,7 +91,6 @@ New Lightning Unlimited includes the following additional feature:
 changes you are considering will work and not cause any problems before you make them in
 your live environment.
 
-
 ### We can help
 
 If you are ready to benefit from these exciting new features and Lighting Editions and need
