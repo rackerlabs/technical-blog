@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Accelerate your business with iot"
+title: "Accelerate your business with IoT"
 date: 2020-12-15
 comments: true
 author: Tolga Tarhan
