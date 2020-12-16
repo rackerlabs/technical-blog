@@ -210,7 +210,7 @@ Charoenrath, Matt
 authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U0118EALE77-fa48a7c11b02-72'
 bio: "Marketing leader experienced in growing brands while scaling and 
 modernizing marketing organizations through a balance of creativity, 
-process & technology to captivate audiences and achieve results."
+process, and technology to captivate audiences and achieve results."
 
 Chauhan, Dushyant
 authorAvatar: 'https://gravatar.com/avatar/1817fa128828e2dbdd87e8e713a0cac0'
@@ -931,10 +931,15 @@ Today, I have 5+ years of experience in computer networking and network security
 
 Toews, Everett
 authorAvatar: 'https://www.gravatar.com/avatar/c1a75adb52f40016a480cee292527895'
-bio: “Everett Toews a Developer Advocate at Rackspace making the cloud easy to
+bio: "Everett Toews a Developer Advocate at Rackspace making the cloud easy to
 use for developers and operators. Sometimes dev, sometimes ops, and sometimes
 advocate. He's interested in composing systems using APIs, SDKs, CLIs, and
-Docker. He likes to teach what he learns along the way.”
+Docker. He likes to teach what he learns along the way."
+
+Tyagi, Akash
+authorAvatar: 'https://www.gravatar.com/avatar/75aa0b43c05912b65f3915d7e672ad64'
+bio: "I'm an Oracle Apps DBA, working at Rackspace Technology. I have decent experience in
+Database Administration."
 
 Vadgama, Hitesh
 authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-UD9LTRKFX-ddadc26195d0-192'
