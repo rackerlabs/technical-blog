@@ -19,6 +19,8 @@ canonical: https://onica.com/blog/how-to/how-to-kibana-default-index-pattern/
 
 ---
 
+*Originally published in Sept 2019 on Onica.com/blog*
+
 For Amazon Elasticsearch Service users, Kibana is an invaluable plugin for
 exploring their cluster’s indices and mapped documents within.
 
