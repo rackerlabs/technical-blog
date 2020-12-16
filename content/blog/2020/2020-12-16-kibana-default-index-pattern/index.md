@@ -9,11 +9,13 @@ bio: ""
 published: true
 authorIsRacker: true
 categories:
-    - General
+    - AWS
 metaTitle: "How-To: Kibana default index pattern"
-metaDescription: "For Amazon Elasticsearch Service users, Kibana is an invaluable plugin for exploring their cluster’s indices and mapped documents within."
+metaDescription: "For Amazon Elasticsearch&reg; Service users, Kibana&reg; is an invaluable plugin for exploring their
+cluster’s indices and mapped documents within."
 ogTitle: "How-To: Kibana default index pattern"
-ogDescription: "For Amazon Elasticsearch Service users, Kibana is an invaluable plugin for exploring their cluster’s indices and mapped documents within."
+ogDescription: "For Amazon Elasticsearch&reg; Service users, Kibana&reg; is an invaluable plugin for exploring their
+cluster’s indices and mapped documents within."
 slug: "how-to-kibana-default-index-pattern"
 canonical: https://onica.com/blog/how-to/how-to-kibana-default-index-pattern/
 
@@ -21,7 +23,7 @@ canonical: https://onica.com/blog/how-to/how-to-kibana-default-index-pattern/
 
 *Originally published in Sept 2019 on Onica.com/blog*
 
-For Amazon Elasticsearch Service users, Kibana is an invaluable plugin for
+For Amazon Elasticsearch&reg; Service users, Kibana&reg; is an invaluable plugin for
 exploring their cluster’s indices and mapped documents within.
 
 <!--more-->
@@ -29,7 +31,7 @@ exploring their cluster’s indices and mapped documents within.
 ### Who should read this?
 
 - Do you need to create an index pattern in Kibana and mark it as the default
-  programmatically (so that your users aren’t faced with an extraneous choice)?
+  programmatically (so that your users don’t face an extraneous choice)?
 - Have you been tasked with provisioning canned queries in Kibana?
 - Did an Amazon Elasticsearch Service version upgrade cause your default index
   patterns to stop defaulting?  In other words, did an unofficial method of
@@ -54,77 +56,76 @@ console.
 
 #### Fresh clusters don’t have any index patterns defined
 
-Because there aren’t any index patterns out-of-the-box, the user will be
-prompted to create one. Our plan is to automate the creation of this index pattern.
+Because there aren’t any index patterns out-of-the-box, the user gets
+prompted to create one. We plan to automate the creation of this index pattern.
 
 #### Index patterns don’t mark themselves as default
 
 Even after you create an index, manually or otherwise, the pattern isn’t
-marked as default. Kibana will prompt the user to select a default index
-pattern. Ideally, we’ll automate this step as well.  Herein lies the secret
+marked as default. Kibana prompts the user to select a default index
+pattern. Ideally, we’ll automate this step as well. Herein lies the secret
 sauce of this how-to.
 
 ### What we're going to do
 
 1. Set up a request path to an Amazon Elasticsearch Service cluster
-   with aws-es-kibana
-2. Create an index pattern
-3. Retrieve the newly created index pattern
-4. Use the index pattern as a template for newly provisioned clusters
-5. Set the index pattern as the default programmatically
+   with `aws-es-kibana`.
+2. Create an index pattern.
+3. Retrieve the newly created index pattern.
+4. Use the index pattern as a template for newly provisioned clusters.
+5. Set the index pattern as the default programmatically.
 
 ### Prerequisities
 
-For this how-to, you’ll need curl or
-[awscurl](https://github.com/okigan/awscurl) installed. Go ahead and do
-this now.
+For this how-to, you need to install curl or
+[`awscurl`](https://github.com/okigan/awscurl). Go ahead and do this now.
 
-[aws-es-kibana](https://github.com/santthosh/aws-es-kibana) provides a
+[`aws-es-kibana`](https://github.com/santthosh/aws-es-kibana) provides a
 convenient way to access your cluster on AWS. If you don’t have it
-already, you’ll need [nodejs](https://nodejs.org/) installed before you can
-install aws-es-kibana.
+already, you need to install [`nodejs`](https://nodejs.org/) before you can
+install `aws-es-kibana`.
 
-Last, but not least, create an Amazon Elasticsearch Service domain if you
+Last but not least, create an Amazon Elasticsearch Service domain if you
 don’t already have one on hand.
 
-1. Log into the AWS Console.
-2. Select Elasticsearch Service.
-3. Select Create a new domain.
+1. Log in to the AWS Console.
+2. Select **Elasticsearch Service**.
+3. Select **Create a new domain**.
 4. Follow the wizard steps and wait a few minutes for the cluster to
    become available.
 
-### Starting aws-es-kibana
+### Start aws-es-kibana
 
-aws-es-kibana is a super handy proxy for interacting with Amazon
+`aws-es-kibana` is a super handy proxy for interacting with Amazon
 Elasticsearch Service. You don’t have to worry about V4 signing your
-requests – this is done on your behalf using your configured AWS
-credentials.  You might also notice that in our examples we use `http` and
-not `https`.  Not to worry – the cluster is still secure.  aws-es-kibana
+requests&mdash;this happens when you use your configured AWS
+credentials. You might also notice that in our examples we use `http` and
+not `https`. Not to worry&mdash;the cluster is still secure. `aws-es-kibana`
 provides SSL termination so that when we request something in `http`, the
-request will be completed on our behalf using `https`.  Additionally, the
+request completes on our behalf using `https`.  Additionally, the
 paths of the URIs are structured specifically for Amazon Elasticsearch
-Service; please adapt as necessary for your specifics.
+Service. Adapt as necessary for your specifics.
 
 1. Follow the
    [installation instructions](https://github.com/santthosh/aws-es-kibana)
-   for aws-es-kibana.
+   for `aws-es-kibana`.
 
 2. [Be sure your AWS credentials are configured](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/setup-credentials.html).
 
-3. Log in to the AWS Console and retrieve the host name of your Amazon Elasticsearch Service cluster.
+3. Log in to the AWS Console and retrieve the hostname of your Amazon Elasticsearch Service cluster.
 
-   1. Select `Elasticsearch Service`
-   2. Select your Amazon Elasticsearch Service domain
-      e.g. `dev-cluster`
-   3. Take note of the host name embedded within the Endpoint field.
-      e.g. `dev-cluster-4c5si47uztlr5p4liw3xh63tia.us-east-1.es.amazonaws.com`
+   1. Select **Elasticsearch Service**.
+   2. Select your Amazon Elasticsearch Service domain, such as
+      `dev-cluster`.
+   3. Take note of the hostname embedded within the Endpoint field, such as
+      `dev-cluster-4c5si47uztlr5p4liw3xh63tia.us-east-1.es.amazonaws.com`.
 
 4. `aws-es-kibana HOST_NAME`
-5. Confirm you can access your cluster by curling or pointing with your browser.
+5. Confirm you can access your cluster by using curl or pointing with your browser.
 
        curl http://localhost:9200/
 
-   You should see something like the following:
+   You should see something similar to the following:
 
        {
          "name" : "I6Fnsqt",
@@ -148,14 +149,14 @@ All set?  Let’s move on.
 
 ### Bring your own index pattern
 
-Or skip to the next section – we’ll provide one for you to use.
+Or skip to the next section&mdash;we can provide one for you to use.
 
 #### Generate the index pattern
 
 You can create your own index pattern by hand, but we’re going to rely on
-Kibana to generate one for us.  Use the Kibana web console to create the
-index pattern first. You can use the wizard when you first login, or you can
-do it later using the following steps:
+Kibana to generate one for us. Use the Kibana web console to create the
+index pattern first. You can use the wizard when you first log in, or you can
+do it later by using the following steps:
 
 1. Log in to the Kibana console.
 
@@ -169,34 +170,33 @@ do it later using the following steps:
 7. Select a Time Filter field name.
 8. Select **Show advanced options**.
 9. In Custom index pattern ID, enter something that makes sense to you. I’m
-   using `logging-all`. If you don’t choose an id, one will be generated for
-   you, which you’ll have to identify on your own later.
+   using `logging-all`. If you don’t choose an id, one is generated for
+   you, which you have to identify on your own later.
 10. Finally, select **Create index pattern**.
 
-Now, we’ll get a hold of the JSON we need with curl. In order to do that, we
-need to discover the id of the object we’ve created.
+Now, we get a hold of the JSON we need with curl. To do that, we
+need to discover the ID of the object we’ve created.
 
 #### Search for the index pattern
 
     awscurl –service es -H ‘Content-Type: application/json; charset=utf-8’ -H ‘kbn-xsrf: true’ -XGET ‘http://YOUR_ENDPOINT/_plugin/kibana/api/saved_objects/_find’
 
-The object you’re looking for has a key named `type` with a value
-of `index-pattern`.  After you know the id, you can fetch its content
-directly.  In this example, the id is `logging-all`.
+The object you’re looking for has a key named **type** with a value
+of `index-pattern`.  After you know the ID, you can fetch its content
+directly. In this example, the ID is `logging-all`.
 
-#### Get a specific index pattern by id
+#### Get a specific index pattern by ID
 
     awscurl –service es -H ‘Content-Type: application/json; charset=utf-8’ -H ‘kbn-xsrf: true’ -XGET ‘http://YOUR_ENDPOINT/_plugin/kibana/api/saved_objects/index-pattern/logging-all’
 
-Before re-using the result by sending it up to Kibana, you’ll need to remove
-some attributes – `id`, `type`, `updated_at`, and `version`. Thankfully,
-Kibana will let you know which properties it doesn’t like if/when you attempt
-to POST your index pattern should you forget to alter it beforehand.
+Before re-using the result by sending it up to Kibana, you need to remove
+some attributes: `id`, `type`, `updated_at`, and `version`. Thankfully,
+Kibana lets you know which properties it doesn’t like when you attempt
+to POST your index pattern if you forget to alter it beforehand.
 
 #### Transmit index patter to Amazon Elasticsearech Service
 
-Once you have your index pattern in hand, we’re going to use the officially
-supported
+After you have your index pattern in hand, use the officially supported
 [Saved Objects API](https://www.elastic.co/guide/en/kibana/master/saved-objects-api.html)
 to install it in Kibana.
 
@@ -214,8 +214,8 @@ with `logging-`:
     }
     '
 
-If you inspect the path, you’ll see we’re giving the index pattern an id
-of `logging-all`.​
+If you inspect the path, you can see we gave the index pattern an ID
+of `logging-all`.
 
 ### Where’s my default index pattern?
 
@@ -235,13 +235,13 @@ Or maybe Google.
 
 Maybe Google just a little while longer.
 
-`POST` to `.kibana/config/5.6.4` … How old is this forum post?
+`POST` to `.kibana/config/5.6.4`? How old is this forum post?
 
 `POST` to `api/kibana/settings/defaultIndex`? Well, which path is it?
 
 Why are none of these commands working?!
 
-### Just make it default please
+### Just make it default, please
 
 Sure thing!
 
@@ -256,15 +256,14 @@ Sure thing!
 That’s it.
 
 What is that, you ask?  It’s the same request that the Kibana web console uses
-to mark an index pattern as default. Remember to change the logging-all value
-to match the id of your index pattern. Though undocumented, it has been
-tested on Amazon Elasticsearch Service / Kibana 6.3. If it’s good enough for
+to mark an index pattern as default. Remember to change the **logging-all** value
+to match the ID of your index pattern. Though undocumented, it has been
+tested on Amazon Elasticsearch Service and Kibana 6.3. If it’s good enough for
 the Kibana web console, it’s good enough for me.
 
 Armed with this technique, you can provision and configure your Amazon
 Elasticsearch Service clusters with reliability and confidence! Thanks for
 reading!
-
 
 <a class="cta teal" id="cta" href="https://www.rackspace.com/aws">Learn more about our AWS services.</a>
 
