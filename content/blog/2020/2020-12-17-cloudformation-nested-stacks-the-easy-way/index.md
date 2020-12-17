@@ -8,7 +8,7 @@ authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U0117UYBDUG-fd2a49c05890-512'
 bio: "Ethan is a Sr. Manager, Architecture and Engineering for Rackspace Technologies.
 He loves working in and around the cloud, with a penchant for Kubernetes, Automation,
 and generally making customer's lives easier. Based in Austin, Texas, he spend his free time
-work running, spending time with family, and being outside every possible moment."
+running, spending time with family, and being outside for every possible moment."
 published: true
 authorIsRacker: true
 categories:
@@ -22,61 +22,61 @@ slug: "cloudFormation-nested-stacks-the-easy-way"
 ---
 
 Nested Stacks are a great way to deploy your infrastructure in a modular fashion.
-Isolating resources into logical groups allows us to keep our CloudFormation scripts small,
-limit blast radius of changes, and provide an easy way to manage various resources in more
-specific templates. There are a few inherit challenges that we face when using this great
+Isolating resources into logical groups keeps CloudFormation scripts small,
+limits blast radius of changes, and provides an easy way to manage various resources in more
+specific templates. There are a few inherit challenges to using this great
 technology, and the one we are focusing on today is version control of our child templates.
 
 <!--more-->
 
 ### What is CloudFormation stack?
 
-A stack is a collection of AWS resources (defined by the AWS CloudFormation template),
-which you can manage as a single unit. By creating templates for service or application
-architectures you want, AWS CloudFormation will use those templates for quick and reliable
-provisioning. CloudFormation allows you to use a simple text file, serving as the single
+A stack is a collection of Amazon Web Service&reg;(AWS) resources (defined by the AWS CloudFormation template),
+that you can manage as a single unit. By creating templates for service or application
+architectures, AWS CloudFormation uses those templates for quick and reliable
+provisioning. CloudFormation lets you use a simple text file as the single
 source of truth, to model and provision (in an automated and secure manner) all the
-resources needed for your applications across all regions and accounts.
+resources you need for your applications across all regions and accounts.
 
-### Version control of child templates – sync your git repo to S3
+### Version control of child templates&mdash;sync your git repo to S3
 
-As the URL requirement for nested stacks requires a(n) S3 URL, making changes can quickly become
-a hassle when there are several child templates that need to be maintained. Enter a great
-quick-start by AWS that gets us 80% of the way there. This quick-start will create Lambda
-functions that will take the contents of your git repo and upload a ZIP of them to S3. This
+As the address requirement for nested stacks requires a S3 URL, making changes can become
+a hassle when there are several child templates to maintain. Enter a great
+quick-start by AWS that gets you 80% of the way there. This quick-start will create Lambda
+functions that take the contents of your git repo and upload a ZIP of them to S3. This
 is a great solution, but a ZIP file might not fit your organization’s needs, especially
-if we want to use the files directly via URL.
+if you want to use the files directly via URL.
 
-We at Onica have faced this challenge numerous times, and as a result have modified the AWS
+Rackspace Technology has faced this challenge many times, as a result we modified the AWS
 provided scripts to actually deposit the contents of your repo while maintaining the original
-directory structure found with your repo. Our method involves taking the code from the AWS
-provided scripts and hosting them within your own S3 bucket, allowing us to modify the Lambda
-functions at our leisure. Use the following steps to create a stack that makes the necessary
+directory structure. This method involves taking the code from the AWS
+provided scripts and hosting them within your own S3 bucket, letting us modify the Lambda
+functions as we like. Use the following steps to create a stack that makes the necessary
 modifications.
 
-**Note:** These steps can be followed to illustrate the process. You can also simply create
-the S3 bucket and use the Cloudformation template at the end of this blog.
+**Note:** Follow these steps to complete the process. You can also simply create
+the S3 bucket and use the CloudFormation template at the end of this blog.
 
-### Step 1: configure the initial stack for use
+### Step 1:configure the initial stack for use
 
-Using the quick-start guide, follow the steps for configuration, ensuring you
+Using the quick-start guide, follow the steps for configuration. Be sure to
 configure for the **Git pull endpoint strategy**, not the **Zip download endpoint** strategy.
-This initial configuration will consist of setting up the webhook in your repo,
-configuring an SSH keypair, and deploying the Lambda functions. Once this is in-place,
-be sure to do a test to verify everything is working correctly.
+This initial configuration consists of setting up the webhook in your repo,
+configuring an SSH keypair, and deploying the Lambda functions. After this,
+test to verify everything is working.
 
-While we won’t dive into detail on these steps as they are outlined in the quick start guide,
-the basics are creating a bucket for your repo objects to live, providing the IP ranges for
-your preferred repo, and designating the buckets to pull the quick-start files from. This
-will take 15-20 minutes, and all steps are well-defined within the guide.
+We won’t discuss the details of these steps because they are outlined in the quick start guide.
+The basics are: creating a bucket for your repo objects to live, providing the IP ranges for
+your preferred repo, and designating the buckets to pull the quick-start files from. This process
+takes 15 to 20 minutes.
 
-IMPORTANT: Do not modify the AWS Quick Start Configuration parameters at this time.
-We will do so later.
+**IMPORTANT:** Do not modify the AWS Quick Start Configuration parameters at this time.
+We will do this later.
 
-### Step 2: copy scripts to your own S3 bucket
+### Step 2:copy scripts to your own S3 bucket
 
-Once you have run the template for the first time, all of the necessary script
-will be copied to a bucket within your account. We want to create our own bucket
+When you run the template for the first time, all the necessary scripts
+are copied to a bucket in your account. We want to create our own bucket
 with a friendlier name so we can house and modify the code. Our new bucket should
 have a simple name, something like “[companyname]-quickstarts”.
 
