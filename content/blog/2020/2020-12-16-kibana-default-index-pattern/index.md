@@ -1,11 +1,9 @@
 ---
 layout: post
 title: "How-To: Kibana default index pattern"
-date: 2020-12-16
+date: 2020-12-17
 comments: true
 author: Shaun Ediger
-authorAvatar: ''
-bio: ""
 published: true
 authorIsRacker: true
 categories:
