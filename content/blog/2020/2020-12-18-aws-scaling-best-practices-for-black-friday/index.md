@@ -39,29 +39,30 @@ in traffic is about more than turning on a few switches.
 
 Use the following AWS auto scaling best practices and tools to prepare for high traffic events:
 
-1. Measure everything with CloudWatch. Monitor performance of all critical
+1. **Measure everything with [CloudWatch](https://aws.amazon.com/cloudwatch/)**. Monitor performance of all critical
    assets during high traffic events. Set alarms and notifications for key performance metrics conservatively,
    to alert the right person, or automate the right action.
-2. Use Auto Scaling. Put the necessary resources into an Auto Scaling group. Groups allow you
+2. **Use [Auto Scaling](https://aws.amazon.com/autoscaling/)**. Put the necessary resources into an Auto Scaling group. Groups allow you
    to treat multiple instances as a single object to scale specific instance types with specific resources together.
    Auto Scaling performs regular health checks on EC2 instances and will automatically replace instances
    that fail the health check. Auto Scaling also supports the PCI-compliant processing, storage, and transmission of credit card data.
-3. Leverage Elastic Load Balancing. This can automatically distribute incoming application
+3. **Leverage [Elastic Load Balancing](https://aws.amazon.com/elasticloadbalancing)**.
+   This can automatically distribute incoming application
    traffic across multiple instances in your Auto Scaling group. Elastic Load Balancing can also
    balance traffic across multiple regions and Availability Zones.
-4. Use Route 53 to scale your DNS. If you use Amazon Route 53 to route DNS queries to your load balancer,
+4. **Use [Route 53](https://aws.amazon.com/route53/) to scale your DNS**. If you use Amazon Route 53 to route DNS queries to your load balancer,
    you can also use Route 53 to configure DNS failover for your load balancer. In this configuration,
    Amazon Route 53 checks the health of the registered EC2 instances for the load balancer to determine
    whether they are available, and routes them the most available resource.
-5. Improve performance with AWS ElastiCache. This improves the performance of your applications by
+5. **Improve performance with [AWS ElastiCache](https://aws.amazon.com/elasticache/)**. This improves the performance of your applications by
    allowing you to retrieve information from fast, managed, in-memory data stores, instead of relying
    entirely on slower disk-based databases. ElastiCache automatically detects and replaces failed nodes,
    and reduces the risk of overloaded databases, which slow website and application load times.
-6. Test, test and test some more. Use historical metrics to help forecast and model future traffic,
+6. **Test, test and test some more**. Use historical metrics to help forecast and model future traffic,
    and to estimate your resource needs. Create scripts that mimic forecasted behavior and
    test against them. Hold surprise drills that force the team to react to problems.
    AWS also offers vulnerability and penetration testing for qualifying businesses.
-7. Think like a customer. Remember, scaling for huge shopping events isn’t just about keeping your network
+7. **Think like a customer**. Remember, scaling for huge shopping events isn’t just about keeping your network
    up and running. It’s about delivering a great shopping experience for your customers. If your network
    is too slow or is unavailable you might lose more than a shopping cart.
 
