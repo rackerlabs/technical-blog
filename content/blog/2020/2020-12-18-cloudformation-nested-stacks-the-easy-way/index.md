@@ -14,29 +14,32 @@ authorIsRacker: true
 categories:
     - AWS
 metaTitle: "CloudFormation nested stacks&mdash;the easy way"
-metaDescription: "Nested Stacks are a great way to deploy your infrastructure in a modular fashion."
+metaDescription: "Nested stacks are a great way to deploy your infrastructure in a modular fashion."
 ogTitle: "CloudFormation nested stacks&mdash;the easy way"
-ogDescription: "Nested Stacks are a great way to deploy your infrastructure in a modular fashion."
+ogDescription: "Nested stacks are a great way to deploy your infrastructure in a modular fashion."
 slug: "cloudFormation-nested-stacks-the-easy-way"
+canonical: https://onica.com/blog/containers/cloudformation-nested-stacks/
 
 ---
+
+*Originally published in Nov 2017 on Onica.com/blog*
 
 Nested Stacks are a great way to deploy your infrastructure in a modular fashion.
 Isolating resources into logical groups keeps CloudFormation scripts small,
 limits blast radius of changes, and provides an easy way to manage various resources in more
-specific templates. There are a few inherit challenges to using this great
+specific templates. There are a few inherent challenges to using this great
 technology, and the one we're focusing on today is version control for child templates.
 
 <!--more-->
 
 ### What is CloudFormation stack?
 
-A stack is a collection of Amazon Web Service&reg;(AWS) resources
+A stack is a collection of Amazon Web Service&reg; (AWS) resources
 (defined by the AWS [CloudFormation template](https://aws.amazon.com/cloudformation/resources/templates/)),
 that you can manage as a single unit. By creating templates for service or application
 architectures, AWS CloudFormation uses those templates for quick and reliable
 provisioning. CloudFormation lets you use a simple text file as the single
-source of truth, to model and provision (in an automated and secure manner) all the
+source of truth to model and provision (in an automated and secure manner) all the
 resources you need for your applications across all regions and accounts.
 
 ### Version control of child templates&mdash;sync your git repo to S3
@@ -48,10 +51,10 @@ a hassle when there are several child templates to maintain. AWS has a great
 [quick-start](https://s3.amazonaws.com/quickstart-reference/git2s3/latest/doc/git-to-amazon-s3-using-webhooks.pdf)
 that gets you 80% of the way there. This quick-start creates Lambda
 functions that take the contents of your git repo and uploads them as a ZIP to S3. This
-is a great solution, but a ZIP file might not fit your organization’s needs, especially
+is a great solution, but a ZIP file might not fit your organization's needs, especially
 if you want to use the files directly via URL.
 
-Rackspace Technology has faced this challenge many times, as a result we modified the AWS
+Rackspace Technology has faced this challenge many times. As a result, we modified the AWS
 provided scripts to actually deposit the contents of your repo while maintaining the original
 directory structure. This method involves taking the code from the AWS
 provided scripts and hosting them within your own S3 bucket, allowing you to change the Lambda
@@ -61,46 +64,46 @@ modifications.
 **Note:** Follow these steps to complete the process. You can also simply create
 the S3 bucket and use the CloudFormation template at the end of this blog.
 
-### Step 1:configure the initial stack for use
+### Step 1: Configure the initial stack for use
 
 Using the quick-start guide, follow the steps for configuration. Be sure to
-configure for the **Git pull endpoint strategy**, not the **Zip download endpoint** strategy.
+configure for the **Git pull endpoint strategy** and not the **Zip download endpoint** strategy.
 This initial configuration consists of setting up the webhook in your repo,
 configuring an SSH keypair, and deploying the Lambda functions. Finally,
 test to verify everything is working.
 
 We won’t discuss the details of these steps because they are covered in the quick-start guide.
-The basics are: creating a bucket for your repo objects, providing the IP ranges for
-your preferred repo, and designating the buckets to pull the quick-start files from. This process
+The basics are: create a bucket for your repo objects, provide the IP ranges for
+your preferred repo, and designate the buckets from which to pull the quick-start files. This process
 takes 15 to 20 minutes.
 
 **IMPORTANT:** Don't change the AWS Quick Start Configuration parameters at this time.
 You will do this later.
 
-### Step 2:copy scripts to your own S3 bucket
+### Step 2: Copy scripts to your own S3 bucket
 
 When you run the template for the first time, all the necessary scripts
 are copied to a bucket in your account. Create your own bucket
-with a friendlier name so youcan house and change the code. The new bucket should
-have a simple name, something like “[companyname]-quickstarts”.
+with a friendlier name so you can house and change the code. The new bucket should
+have a simple name, something like `[companyname]-quickstarts`.
 
     aws s3api create-bucket --bucket [BucketName --region [Region] --create-bucket-configuration LocationConstraint=[Region]
 
-The initial setup will creates a bucket in your account with the following
-pattern: [stackname]-lambdazipsbucket-[randomhash]. Take the contents of this
-bucket(including folder structure) and copy them to the new custom bucket.
+The initial setup creates a bucket in your account with the following
+pattern: `[stackname]-lambdazipsbucket-[randomhash]`. Copy the contents of this
+bucket (including folder structure) to the new custom bucket.
 
-The following command can be used to quickly move the files:
+You can use the following command to quickly move the files:
 
     aws s3 cp s3://[SourceBucketName]/ s3://[TargetBucket]/ --recursive
 
 You should now have all the lambda scripts in your bucket.
 
-### Step 3: modify the lambda function
+### Step 3: Modify the lambda function
 
 There is only one Lambda function that needs to change. You can find it at
-`s3://[BucketName]/git2s3/latest/lambdas/GitPullS3.zip`. Pull down a copy of this
-zip file, unzip it, and replace the file `lambda_function.py` with the following script:
+**s3://[BucketName]/git2s3/latest/lambdas/GitPullS3.zip**. Pull down a copy of this
+zip file, unzip it, and then replace the file **lambda_function.py** with the following script:
 
     from pygit2 import Keypair,credentials,discover_repository,Repository,clone_repository,RemoteCallbacks
     from boto3 import client,resource
@@ -278,9 +281,10 @@ zip file, unzip it, and replace the file `lambda_function.py` with the following
             shutil.rm('/tmp/id_rsa.pub')
         return 'Successfully updated %s' % repo_nam
 
-Once replaced, repack the zip file with the same name and upload to your S3 bucket, replacing the existing `GitPullS3.zip` file.
+Once replaced, repack the zip file with the same name and upload it to your S3
+bucket, replacing the existing **GitPullS3.zip** file.
 
-### Step 4:modify the CloudFormation template to use custom code
+### Step 4: Modify the CloudFormation template to use custom code
 
 You need to redeploy your CloudFormation template to source the code from your S3 bucket instead of the AWS Quick Start bucket.
 You must redeploy instead of perform a Stack Update because the existing IAM roles causes a CopyObject error when you
@@ -296,7 +300,7 @@ switch to a new S3 bucket as the source for the configuration files.
 ### Bonus
 
 While the steps above will get you there, it would be even easier to use a pre-created template with
-all modifications in place. Please find the Cloudformation JSON file and python script on our
+all modifications in place. You can find the Cloudformation JSON file and python script on our
 [public github](https://github.com/corpinfo/git-s3-sync).
 
 Happy coding!
