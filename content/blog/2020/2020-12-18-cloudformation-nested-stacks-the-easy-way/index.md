@@ -13,7 +13,7 @@ published: true
 authorIsRacker: true
 categories:
     - General
-metaTitle: "CloudFormation nested stacks&mdash;the easy way""
+metaTitle: "CloudFormation nested stacks&mdash;the easy way"
 metaDescription: "Nested Stacks are a great way to deploy your infrastructure in a modular fashion."
 ogTitle: "CloudFormation nested stacks&mdash;the easy way"
 ogDescription: "Nested Stacks are a great way to deploy your infrastructure in a modular fashion."
