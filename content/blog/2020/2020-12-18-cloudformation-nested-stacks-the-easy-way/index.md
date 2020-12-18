@@ -12,7 +12,7 @@ running, with his family, and being outside for every possible moment."
 published: true
 authorIsRacker: true
 categories:
-    - General
+    - AWS
 metaTitle: "CloudFormation nested stacks&mdash;the easy way"
 metaDescription: "Nested Stacks are a great way to deploy your infrastructure in a modular fashion."
 ogTitle: "CloudFormation nested stacks&mdash;the easy way"
@@ -301,7 +301,7 @@ all modifications in place. Please find the Cloudformation JSON file and python 
 
 Happy coding!
 
-<a class="cta purple" id="cta" href="https://www.rackspace.com/sap">Learn more about our SAP services.</a>
+<a class="cta purple" id="cta" href="https://www.rackspace.com/onica">Learn more about our AWS services.</a>
 
 Use the Feedback tab to make any comments or ask questions. You can also click
 **Sales Chat** to [chat now](https://www.rackspace.com/) and start the conversation.
