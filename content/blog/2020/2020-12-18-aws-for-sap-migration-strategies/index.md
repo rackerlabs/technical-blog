@@ -4,6 +4,7 @@ title: "AWS for SAP&mdash;Migration strategies"
 date: 2020-12-18
 comments: true
 author: Sam Yeo
+authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-UGM7Y1K88-07fe86b8fe61-512'
 bio: "Sam Yeo is a Senior Solution Architect at Rackspace Technology.
 Prior to this, Sam worked as a Solution Manager at Accenture and Basis Consultant at SAP.
 Sam holds a BSc Computing and MBA from The University of Adelaide."

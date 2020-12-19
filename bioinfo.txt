@@ -1059,6 +1059,12 @@ bio: "I’m an Oracle Apps DBA working with Rackspace. I work on a variety of
 Oracle Products, including databases, E-Business Suite, and Fusion Middleware
 applications, and I'm an OCI Architect Associate."
 
+Yeo, Sam
+authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-UGM7Y1K88-07fe86b8fe61-512'
+bio: "Sam Yeo is a Senior Solution Architect at Rackspace Technology.
+Prior to this, Sam worked as a Solution Manager at Accenture and Basis Consultant at SAP.
+Sam holds a BSc Computing and MBA from The University of Adelaide."
+
 Zettler, Wayne
 authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U010VPCKG3D-ebaa348e7951-512'
 bio: "I like to consider myself a hybrid technologist with over 20 years of
