@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "When to use Elastic Beanstalk Custom AMI versus Standard AMI"
+title: "When to use an Elastic Beanstalk custom AMI versus a standard AMI"
 date: 2020-12-22
 comments: true
 author: Matt Charoenrath 
@@ -12,9 +12,9 @@ published: true
 authorIsRacker: true
 categories:
     - AWS
-metaTitle: "When to use elastic Beanstalk Custom AMI versus standard AMI"
+metaTitle: "When to use an Elastic Beanstalk custom AMI versus a standard AMI"
 metaDescription: "Understanding the difference between a standard AMI and a custom AMI is important so you can choose the best possible service for your particular needs."
-ogTitle: "When to use elastic beanstalk custom ami versus standard ami"
+ogTitle: "When to use an Elastic beanstalk custom AMI versus a standard AMI"
 ogDescription: "Understanding the difference between a standard AMI and a custom AMI is important so you can choose the best possible service for your particular needs."
 slug: "when-to-use-elastic-beanstalk-custom-ami-versus-standard-ami"
 canonical: https://onica.com/blog/devops/elastic-beanstalk-custom-ami-vs-standard-ami/
