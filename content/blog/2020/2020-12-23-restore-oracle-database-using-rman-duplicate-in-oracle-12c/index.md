@@ -73,7 +73,7 @@ following script into it:
 
 Use the following command to run the script:
 
-    $ cat rman_full_HOT_DATABASENAME.sh
+    $ nohup sh rman_full_HOT_DATABASENAME.sh &
 
 **Cold backup**
 
@@ -104,7 +104,7 @@ following script into it:
 
   Use the following command to run the script:
 
-        $ cat rman_full_COLD_DATABASENAME.sh
+        $ nohup sh rman_full_COLD_DATABASENAME.sh &
 
 ### Pre-refresh tasks
 
@@ -211,7 +211,7 @@ Create a file called **dblink.sh** and paste the following script into it:
 
 Then run the following command to execute the script:
 
-    $ cat dblink.sh
+    $ nohup sh dblink.sh &
 
 
 #### Preserve all synonyms
@@ -231,7 +231,7 @@ into it:
 
 Then run the following command to execute the script:
 
-    $ cat Synonyms_query.sql
+    $ nohup sqlplus / as sysdba @Synonyms_query.sql > Synonyms_query.log &
 
 **Export method**
 
@@ -243,7 +243,7 @@ Create a file called **synonyms.sh** and paste the following script into it:
 
 Then run the following command to execute the script:
 
-    $ cat synonyms.sh
+    $ nohup sh synonyms.sh &
 
 
 #### Preserve all user passwords
@@ -272,7 +272,7 @@ into it:
 
 Then run the following command to execute the script:
 
-    $ cat usders_password.sql
+    $ nohup sqlplus / as sysdba @usders_password.sql > usders_password.log &
 
 #### Preserve all grant/object, Grant/system, and Grant/roles
 
@@ -284,7 +284,7 @@ Create a file called **grant.sh** and paste the following script into it:
 
 Then run the following command to execute the script:
 
-    $ cat grant.sh
+    $ nohup sh grant.sh &
 
 
 #### Preserve all general information
@@ -356,7 +356,7 @@ Create a file called **prerefresh.sql** and paste the following script into it:
 
 Then run the following command to execute the script:
 
-    $ cat prerefresh.sql
+    $ nohup sqlplus / as sysdba @prerefresh.sql > prerefresh.log &
 
 
 #### Copy pfile and spfile
