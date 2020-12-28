@@ -15,7 +15,7 @@ thriving organizations."
 
 Adnan, Ahmad
 authorAvatar: n/a
-bio: "Leading Big Data and DevOps Architecture for Transformation Projects by using 
+bio: "Leading Big Data and DevOps Architecture for Transformation Projects by using
 the AWS Cloud."
 
 Agarwal, Saurabh
@@ -208,8 +208,8 @@ other women/non-binary folks of color."
 
 Charoenrath, Matt
 authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U0118EALE77-fa48a7c11b02-72'
-bio: "Marketing leader experienced in growing brands while scaling and 
-modernizing marketing organizations through a balance of creativity, 
+bio: "Marketing leader experienced in growing brands while scaling and
+modernizing marketing organizations through a balance of creativity,
 process, and technology to captivate audiences and achieve results."
 
 Chauhan, Dushyant
@@ -739,6 +739,13 @@ technology's place in solving business challenges. My mission is to uncover
 opportunities to help companies realize true business transformation, with
 technology as a key catalyst."
 
+Rai, Pradeep
+authorAvatar: 'https://s.gravatar.com/avatar/3bb999276b2817f44c8be712ff7f36ab'
+bio: "I am currently an Oracle DBA with 18 years of experience and am well
+versed with the Oracle technologies. I am also looking into cloud database
+infrastructure. I also have experience with other than Oracle databases
+such as Mongo dB and Cassandra."
+
 Rajan, Rini
 authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U0GJV1T3R-8641766ec683-512'
 bio: "Rini Rajan is a Technical Product Manager working with Microsoft 365 and
@@ -909,10 +916,10 @@ Fanatical Experience for Rackspace customers everyday."
 
 Tarhan, Tolga
 authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-UTA9EJ5T8-ece2a1ba3f39-512'
-bio: "Combining deep hands-on knowledge of technology with creative solutions 
-to business problems, Tolga has built and led organizations that deliver 
-world-class software products. A software engineer and entrepreneur by trade, 
-he has 16 years of successive experience in executive roles (CTO, CEO) 
+bio: "Combining deep hands-on knowledge of technology with creative solutions
+to business problems, Tolga has built and led organizations that deliver
+world-class software products. A software engineer and entrepreneur by trade,
+he has 16 years of successive experience in executive roles (CTO, CEO)
 leading organizations that build great products and deliver exceptional services."
 
 Tharmarajah, Nilojan
@@ -1037,12 +1044,12 @@ Augusta, Georgia, Lorenzo now lives in Waldorf, Maryland with his family. He
 holds a Bachelor’s of Science from Claflin University. Lorenzo is based in the
 company’s Reston, Virginia office."
 
-Woo, Mency 
+Woo, Mency
 authorAvatar: ''
-bio: "Seven-time AWS-certified and twice GCP-certified Cloud solutions architect. 
-Diverse experience in DevOps, CI/CD, and infrastructure as code. Passionate about 
-the intersection of business interests and technological innovations, 
-design/implementation of scalable tools and processes that align 
+bio: "Seven-time AWS-certified and twice GCP-certified Cloud solutions architect.
+Diverse experience in DevOps, CI/CD, and infrastructure as code. Passionate about
+the intersection of business interests and technological innovations,
+design/implementation of scalable tools and processes that align
 business requirements, R&D endeavors, and IT initiatives."
 
 Xin, Michael
