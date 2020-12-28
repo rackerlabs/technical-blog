@@ -76,7 +76,7 @@ Following are just some of the benefits of using Amazon Aurora:
 - Easy migration with no down-time
 - Significant cost savings
 
-### Did you miss our Deep Dive on Amazon Aurora Event?
+### Did you miss our Deep Dive on Amazon Aurora event?
 
 Check out our
 [video recap](https://www.youtube.com/watch?v=SRQOc29RLU0&feature=youtu.be&ab_channel=CorpInfo)
