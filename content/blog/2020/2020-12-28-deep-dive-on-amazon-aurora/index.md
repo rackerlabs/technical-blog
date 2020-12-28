@@ -48,15 +48,16 @@ migrate intensive workloads, is very attractive for companies looking
 to improve their operations by moving to the cloud. An added benefit of
 the AWS database migration service is that the customer no longer has to
 provision storage. This service has quickly become one of the most
-effective AWS services available. CorpInfo has done a really good
-job compiling Amazon Aurora's highlights, and we have made those highlights
+effective AWS services available. CorpInfo has done a great
+job compiling Amazon Aurora's highlights, which we have made
 available to you in the following document:
 [Amazon Aurora deep dive](https://s3-us-west-1.amazonaws.com/corpinfowebsiteuploads/content/uploads/2016/04/14120846/Deep-Dive-on-Amazon-Aurora.pdf). 
 
-Most relational databases were not designed for the cloud, having
-various layers of functionality in a monolithic stack. When organizations
+Most relational databases were not designed for the cloud because they 
+have various layers of functionality in a monolithic stack. When organizations
 try to scale out these databases, they end up replicating the same
-stack resulting in problems such as availability, cost, and flexibility.
+stack resulting in problems such as availability, cost, and lack 
+of flexibility.
 
 Amazon Aurora can solve your database challenges. Aurora is Amazon’s highly
 secure and fully managed MySQL-compatible relational database engine. The
@@ -66,7 +67,7 @@ availability benefits of hosting in the AWS Cloud.
 
 ### Why are organizations using Amazon Aurora?
 
-Following are just some of the benefits of using Amazon Aurora:
+The following list are just some of the benefits of using Amazon Aurora:
 
 - Easy to use, and more efficient
 - Highly available simplified storage management
