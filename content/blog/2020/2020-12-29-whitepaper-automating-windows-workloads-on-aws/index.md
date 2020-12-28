@@ -23,19 +23,30 @@ canonical: https://onica.com/blog/microsoft-on-aws/whitepaper-automating-windows
 
 *Originally published in Jun 2016, at Onica.com/blog*
 
-This blog post provides you with a download of CorpInfo&reg;-Onica’s complimentary whitepaper which includes a technical lab on a new approach for scaling your environment in AWS&reg; with Windows&reg; PowerShell and EC2 Run Command. 
+This blog post provides you with a download of CorpInfo&reg;-Onica’s
+complimentary whitepaper which includes a technical lab on a new
+approach for scaling your environment in Amazon Web Services&reg; (AWS)
+with Windows&reg; PowerShell and EC2 Run Command. 
 
 <!--more-->
 
-If you’re a Microsoft&reg; shop looking to remove the complexities of managing and scaling your data center or an organization wanting to accelerate your deployment into AWS, this whitepaper is for you. 
+If you’re a Microsoft&reg; shop looking to remove the complexities of
+managing and scaling your data center or an organization wanting to
+accelerate your deployment into AWS, this whitepaper is for you. 
 
-### Scale your current environment to enjoy all of the AWS benefits.
+### Scale your current environment to enjoy all of the AWS benefits
 
-Whether you’re running Microsoft Windows, SQL Server, Exchange, SharePoint, or custom .NET applications, you can rely on the secure global infrastructure of Amazon Web Services to easily run any Microsoft Windows Server applications in the cloud. Our whitepaper will provide you with step-by-step instructions on how to scale your current environment to enjoy all of the benefits AWS has to offer for management, administration, workload reliability, visibility, and cross-platform support.
+Whether you’re running Microsoft Windows, SQL Server, Exchange,
+SharePoint, or custom .NET applications, you can rely on the secure global
+infrastructure of Amazon Web Services to easily run any Microsoft Windows
+Server applications in the cloud. Our whitepaper provides you with step-by-step
+instructions on how to scale your current environment to enjoy all of the
+benefits AWS has to offer for management, administration, workload
+reliability, visibility, and cross-platform support.
 
-Download our technical lab's slides [here](https://onica.com/blog/microsoft-on-aws/whitepaper-automating-windows-workloads-aws/)
+- Download our technical lab's slides [here](https://onica.com/blog/microsoft-on-aws/whitepaper-automating-windows-workloads-aws/)
 
-Learn how to automate your Windows Workloads with our [lab guide whitepaper](https://insights.corpinfo.com/windows-on-aws-whitepaper)
+- Learn how to automate your Windows Workloads with our [lab guide whitepaper](https://insights.corpinfo.com/windows-on-aws-whitepaper)
 
 We hope you enjoy our slides and whitepaper and they prove effective in helping you reach all your IT goals.
 
