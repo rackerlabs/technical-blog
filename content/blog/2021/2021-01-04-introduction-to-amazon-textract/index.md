@@ -16,6 +16,7 @@ ogTitle: "Introduction to Amazon Textract"
 ogDescription: "Amazon Textract is an automatic text and data extraction service, designed to simplify and accelerate advanced data extraction processes. Built to harness the power of machine learning, Amazon Textract exceeds the capabilities of simple optical character recognition software, identifying and extracting the contents of fields in forms as well as information stored in tables."
 slug: "introduction-to-amazon-textract"
 canonical: https://onica.com/blog/ai-machine-learning/introduction-to-amazon-textract/
+
 ---
 
 *Orginally published in Dec 2019, at Onica.com/blog* 
@@ -56,7 +57,7 @@ Amazon Textract utilizes machine learning to instantly process documents with ac
 
 Intelligent structured data extraction also allows for some rather useful features. Once data is procured, you can index it in Amazon Elasticsearch so that you can search for specific data from thousands of documents quickly. Extracted data can also automate form processing without human intervention &mdash;allowing processes like loan approval by banks to initiate without requiring manual review.
 
-In addition to all of this, Amazon Textract provides processing and extraction services at a very low cost. There are no upfront commitments or long-term contracts and you pay for only the capacity that you use.
+In addition to all of this, Amazon Textract provides processing and extraction services at a very low cost. There are no upfront commitments or longterm contracts and you pay for only the capacity that you use.
 
 Amazon Textract is a powerful service that eases and accelerates data extraction &mdash;one of the most fundamental processes for any business. If you’d like to learn more about Amazon Textract and see specific examples of how it can prove to be significantly more useful than other data extraction methods, watch our webinar on [Getting Started with Amazon Textract](https://onica.com/videos/getting-started-with-amazon-textract/).
 
@@ -67,3 +68,4 @@ Ready to get started? [Get in touch with our team](https://onica.com/contact/) t
 
 Use the Feedback tab to make any comments or ask questions. You can also click
 **Sales Chat** to [chat now](https://www.rackspace.com/) and start the conversation.
+
