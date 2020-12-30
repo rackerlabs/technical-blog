@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Postgres backups and how to restore them on object rocket"
+title: "Postgres backups and how to restore them on ObjectRocket"
 date: 2020-10-27
 comments: true
 author: Steve Croce
@@ -28,8 +28,7 @@ canonical: https://www.objectrocket.com/blog/postgresql/postgres-backups-and-how
 
 *Originally published on Feb 6, 2020, at ObjectRocket.com/blog*
 
-Regular backups and the ability to restore them is a critical piece of database system administration. At Rackspace
-ObjectRocket, we provide you with daily backups with two-week retention by default on all of our database products. 
+Regular backups and the ability to restore them is a critical piece of database system administration. At ObjectRocket, a Rackspace Technology company, we provide you with daily backups with two-week retention by default on all of our database products. 
 
 <!--more-->
 
