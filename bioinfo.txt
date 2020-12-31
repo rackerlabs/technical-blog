@@ -360,6 +360,12 @@ bio: "Accomplished tech leader, with 20 years of career success in Enterprise IT
 Provides strategic consulting leadership with a proven track record of practice
 building in the Amazon Partner Network (APN) ecosystem."
 
+Gogineni, Venkata,
+authorAvatar: 'https://secure.gravatar.com/avatar/9e51ecbb063f9454b1de2217cc5b0dff'
+bio: "I'm working as Oracle DBA and Apps DBA for 14 yrs. I've been involved in
+Handling Database, Applications, and Middleware operations. I've completed
+Oracle OCA, OCP, and cloud certifications."
+
 Greguska, Kari
 authorAvatar: ''
 bio: n/a
