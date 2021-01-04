@@ -11,7 +11,7 @@ process and technology to captivate audiences and achieve results."
 published: true
 authorIsRacker: true
 categories:
-    - AQWS
+    - AWS
 metaTitle: "Scaling Windows workloads in AWS"
 metaDescription: "On May 12th we held an event in Santa Monica, at the Amazon offices, on scaling Windows Workloads in AWS. The agenda included a technical presentation from our CTO and AWS Solutions Architect Kevin Epstein, an interactive demonstration on how to quickly scale large volumes of Windows workloads in AWS using PowerShell and EC2 Run Command, and a discussion on AWS best practices and making the business case for AWS managed services in your organization."
 ogTitle: "Scaling Windows workloads in AWS"
@@ -23,11 +23,11 @@ canonical: https://onica.com/blog/microsoft-on-aws/scaling-windows-workloads-in-
 
 *Originally published in May 2016, at Onica.com/blog*
 
-On May 12th we held a Lunch + Lab event in Santa Monica, at the Amazon&reg;
-offices on scaling Windows&reg; Workloads in Amazon Web Services&reg; (AWS).
+On May 12th, 2016, we held a Lunch + Lab event in Santa Monica, at the Amazon&reg;
+offices on scaling Windows&reg; workloads in Amazon Web Services&reg; (AWS).
 The agenda included a technical presentation from our CTO and AWS
 Solutions Architect Kevin Epstein, an interactive demonstration on how to
-quickly scale large volumes of Windows workloads in AWS using PowerShell
+quickly scale large volumes of Windows workloads in AWS using PowerShell&reg;
 and EC2 Run Command, and a discussion on AWS best practices and making
 the business case for AWS managed services in your organization. 
 
@@ -44,16 +44,16 @@ less. In the case of Windows, there are many challenges around some legacy
 security models’ dependency on active directory, reboot pains, heavy software
 packages, and only being able to bootstrap to a point. 
 
-The DevOps process is helping solve some of these challenges as we start
+The DevOps process ihelps to solve some of these challenges as we start
 thinking of our *infrastructure as code* and follow a well-defined pattern
 of build, test, and deploy&mdash;with automated testing as the goal. AWS makes
 the DevOps process easy. Tools like AWS OpsWorks, EC2 Simple Systems
 Manager, Elastic Beanstalk, CloudFormation, CodePipeline, and CodeDeploy
 are helping IT to innovate faster, increase the number of deployments, decrease
-the time between deployments, and automate to consistently deliver stable
-predictable, and secure environments.
+the time between deployments, and automate to deliver stable,
+predictable, and secure environments consistently.
 
-### Scaling Windows Workloads in AWS
+### Scaling Windows workloads in AWS
 
 At Onica, a Rackspace Technology company, we have put together a document
 where you can find some of the Scaling Windows Workloads workshop
