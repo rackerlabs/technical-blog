@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "A guide to customizing the customer journey with amazon personalize"
+title: "A guide to customizing the customer journey with Amazon Personalize"
 date: 2020-11-25
 comments: true
 author: Mark McQuade
