@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "AWS scaling best practices for Black Friday"
-date: 2020-12-18
+date: 2021-01-04
 comments: true
 author: Matt Charoenrath
 authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U0118EALE77-fa48a7c11b02-72'
@@ -13,21 +13,26 @@ authorIsRacker: true
 categories:
     - AWS
 metaTitle: "AWS scaling best practices for Black Friday"
-metaDescription: "."
+metaDescription: "High traffic events like Black Friday and Cyber Monday highlight the importance of
+Amazon Web Services&reg;(AWS)
+auto scaling best practices."
 ogTitle: "AWS scaling best practices for Black Friday"
-ogDescription: "."
+ogDescription: "High traffic events like Black Friday and Cyber Monday highlight the importance of
+Amazon Web Services&reg;(AWS)
+auto scaling best practices."
 slug: "aws-scaling-best-practices-for-black-friday"
 
 ---
 
-High traffic events like Black Friday and Cyber Monday highlight Amazon Web Services&reg;(AWS)
+High traffic events like Black Friday and Cyber Monday highlight the importance of
+Amazon Web Services&reg;(AWS)
 auto scaling best practices. Online shopping during the four-day window
 has become an international phenomenon, with traffic increasing by 20 to 25 percent each year.
-You want to ensure your e-commerce site is ready for this surge and for any unexpected spikes in demand.
+Ensure your e-commerce site is ready for this surge and for any unexpected spikes in demand.
 
 <!--more-->
 The ability to scale based on demand is one of the chief reasons businesses move their infrastructures to
-the cloud. AWS offers plenty of best practices for building scalability into your infrastructure: vertical
+the cloud. AWS offers many best practices for building scalability into your infrastructure: vertical
 scalability (moving to higher-capacity instances) and horizontal scalability (adding more instances) to
 respond to traffic surges.
 
@@ -67,7 +72,7 @@ Use the following AWS auto scaling best practices and tools to prepare for high 
    is too slow or is unavailable you might lose more than a shopping cart.
 
 Black Friday is one of many events that can cause spikes in traffic. It’s important to be prepared for
-these events year round, not just when they’re expected. You can train your teams to use
+these events year round, not just when they’re expected. You can train your teams to deploy
 these tools and best practices on short notice in the event of some unplanned surge.
 
 ### Need help preparing for Black Friday with auto scaling?
