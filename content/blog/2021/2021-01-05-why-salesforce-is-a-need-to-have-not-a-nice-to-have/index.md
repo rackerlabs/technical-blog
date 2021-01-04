@@ -7,7 +7,7 @@ author: Rackspace Salesforce Team
 published: true
 authorIsRacker: true
 categories:
-    - Saslesforce
+    - Salesforce
 metaTitle: "Why Salesforce is a need to have, not a nice to have"
 metaDescription: "Let’s take a look at five reasons you need to have Salesforce."
 ogTitle: "Why Salesforce is a need to have, not a nice to have"
