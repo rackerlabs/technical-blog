@@ -44,7 +44,7 @@ less. In the case of Windows, there are many challenges around some legacy
 security models’ dependency on active directory, reboot pains, heavy software
 packages, and only being able to bootstrap to a point. 
 
-The DevOps process ihelps to solve some of these challenges as we start
+The DevOps process helps to solve some of these challenges as we start
 thinking of our *infrastructure as code* and follow a well-defined pattern
 of build, test, and deploy&mdash;with automated testing as the goal. AWS makes
 the DevOps process easy. Tools like AWS OpsWorks, EC2 Simple Systems
