@@ -32,9 +32,6 @@ through the Automated Clearing House Network.
 
 ### Overview
 
-
-{{<img src="Picture1.png" title="" alt="">}}
-
 A NACHA file is a payment instruction file sent or uploaded to a bank portal to execute a
 mass payment batch. This file is formatted according to NACHA specifications and varies by
 bank. Many banks that support the NACHA file, including Wells Fargo&reg;, Bank of
@@ -64,7 +61,7 @@ provided by Oracle.
  
 Navigate to **XML Publisher Responsibility > Templates > Create template**.
 
-<image 1>
+{{<img src="Picture1.png" title="" alt="">}}
 
 Use the following settings:
 
@@ -77,7 +74,7 @@ as a base and modify it as per your bank or business requirements.*
  
 Navigate to **Payables Manager: Setup > Payments > Payments Administrator > Formats > Formats**.
 
-<image 2>
+{{<img src="Picture2.png" title="" alt="">}}
 
 Use the following settings:
 
@@ -103,7 +100,7 @@ Use the following settings:
 
 Click **Apply**.
 
-<image 3>
+{{<img src="Picture3.png" title="" alt="">}}
       
  #### 3. Payment Process Profile Setup
  
@@ -119,7 +116,7 @@ Use the following settings:
 
 Click **Apply**.
       
- <image 4>
+{{<img src="Picture4.png" title="" alt="">}}
  
 ### Generate the NACHA file
 
@@ -129,7 +126,7 @@ Use the following steps to generate the NACHA file:
  
 Navigate to **Payables Manager > Invoices > Entry > Invoices**.
 
-<image 5>
+{{<img src="Picture5.png" title="" alt="">}}
 
 Ensure that the supplier has the payment method as `Electronic`, and the invoice is in
 `Validated Status`.
@@ -138,7 +135,7 @@ Ensure that the supplier has the payment method as `Electronic`, and the invoice
 
 Navigate to **Payables Manager > Payments > Entry > Payments Manager**.
 
-<image 6>
+{{<img src="Picture6.png" title="" alt="">}}
       
 
 Perform the following steps:
@@ -149,21 +146,21 @@ Perform the following steps:
 
 3. Select `Electronic` payment method.
  
-<image 7>
+{{<img src="Picture7.png" title="" alt="">}}
 
 4. Enter your bank account, payment document, and PPP. Then click **Submit**.
  
- <image 8>
+{{<img src="Picture8.png" title="" alt="">}}
      
 5. Refresh the status and wait till the PPR status is `Confirmed`.
  
 6. Navigate to **View > Requests > Find**.
  
-<image 9>
+{{<img src="Picture9.png" title="" alt="">}}
 
 7. Find  *Format Payment Instructions* with text output and click **View output**.
  
-<image 10>
+{{<img src="Picture10.png" title="" alt="">}}
       
 The output from *Format Payment Instructions* is the NACHA file generated from the
 preceding invoice and its payment. You can save this to your local desktop and upload it
