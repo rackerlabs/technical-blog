@@ -82,7 +82,7 @@ Use the following settings:
 - **Instruction Extract**: Version 1.0 
 - **XML Publisher Template**: US NACHA CCD Format
  
-#### 3. Payment Documents
+#### 3. Payment documents
 
 Assume that you have already created your Banks, Bank Branches, and Bank Account. In this
 step, you attach the Payment Format `US NACHA CCD Format` to the Payment Document.
@@ -95,14 +95,16 @@ Use the following settings:
 - **Name**: XXXX NACHA
 - **Paper Stock Type**: Blank Stock 
 - **Format**: US NACHA CCD Format
-- **First Available Document Number **: 100001
+- **First Available Document Number**: 100001
 - **Last Available Document Number**: 999999
 
 Click **Apply**.
 
 {{<img src="Picture3.png" title="" alt="">}}
+
+<br/>
       
- #### 3. Payment Process Profile Setup
+#### 4. Payment process profile setup
  
 Navigate to **Payables Manager > Setup > Payment > Payment Administrator > Payment Process Profiles**
 and click **Create**.
@@ -122,7 +124,7 @@ Click **Apply**.
 
 Use the following steps to generate the NACHA file:
 
-#### 1. Enter invoice for a supplier.
+#### 1. Enter invoice for a supplier
  
 Navigate to **Payables Manager > Invoices > Entry > Invoices**.
 
@@ -148,6 +150,8 @@ Perform the following steps:
  
 {{<img src="Picture7.png" title="" alt="">}}
 
+<br/>
+
 4. Enter your bank account, payment document, and PPP. Then click **Submit**.
  
 {{<img src="Picture8.png" title="" alt="">}}
@@ -157,6 +161,8 @@ Perform the following steps:
 6. Navigate to **View > Requests > Find**.
  
 {{<img src="Picture9.png" title="" alt="">}}
+
+<br/>
 
 7. Find  *Format Payment Instructions* with text output and click **View output**.
  
