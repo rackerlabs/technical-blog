@@ -114,7 +114,7 @@ the action. However, if you manage lifecycle policies correctly, no user should 
 a human is prone to error. Leveraging automation ensures the stability of your environment, and AWS gives us the tools to make
 automation a reality with S3 Bucket lifecycle policies easily.
 
-### Virtual Private Cloud (VPC)
+### Virtual Private Cloud (VPC)
 
 A simple concept that many organizations lose track of is the segmentation of the network&mdash;segmenting the EC2 instances from the databases,
 specifically. Controlling the access to the database to a specific security group so only certain instances can communicate to the database
