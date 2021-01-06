@@ -57,7 +57,7 @@ Use the following steps to set up the format:
 #### 1. XML templates
 
 Create an XML publisher template in this step by using the seeded *US NACHA CCD Format*
-provided by Oracle.
+ provided by Oracle.
  
 Navigate to **XML Publisher Responsibility > Templates > Create template**.
 
@@ -102,6 +102,7 @@ Click **Apply**.
 
 {{<img src="Picture3.png" title="" alt="">}}
 
+<br>
 <br>
       
 #### 4. Payment process profile setup
@@ -151,6 +152,7 @@ Perform the following steps:
 {{<img src="Picture7.png" title="" alt="">}}
 
 <br>
+<br>
 
 4. Enter your bank account, payment document, and PPP. Then click **Submit**.
  
@@ -162,6 +164,7 @@ Perform the following steps:
  
 {{<img src="Picture9.png" title="" alt="">}}
 
+<br>
 <br>
 
 7. Find  *Format Payment Instructions* with text output and click **View output**.
