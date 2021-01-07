@@ -35,7 +35,7 @@ compliance in Amazon Web Services (AWS&reg;).
 
 ### Key points on HIPAA compliance in AWS
 
-Achieving [HIPAA compliance])https://onica.com/amazon-web-services/hipaa-compliant-aws-solutions/ in any environment
+Achieving [HIPAA compliance](https://onica.com/amazon-web-services/hipaa-compliant-aws-solutions/) in any environment
 requires some basic organizational implementations to comply with regulations. The following suggestions and best
 practices help you achieve and maintain HIPAA compliance in Amazon Web Services (AWS&reg;).
 
