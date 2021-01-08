@@ -1,26 +1,32 @@
 ---
 layout: post
-title: "How Rackspace uses CloudEndure to accelerate workload migration to AWS"
+title: "How Rackspace uses CloudEndure to accelerate workload migration to AWS: Part One"
 date: 2021-01-07
 comments: true
 author: Alan Day
-authorAvatar: ''
-bio: ""
+authorAvatar: 'https://secure.gravatar.com/avatar/0dc361f321c2930e25867da99636b17a'
+bio: "As an experienced and results-driven IT Professional with 19 years' experience within
+both the public and private sectors, I draw on competencies and expertise spanning multiple
+platforms and configurations related to pre-sales, consultancy, architecture & design,
+implementation, and configuration. I love being outdoors and walking the dog each day to
+rack up the miles and keep fit. I'm passionate about cooking and spend much of my free time
+researching recipes from around the world. Some dishes are more successful than others after
+translation to the plate, but it's always a good night!"
 published: true
 authorIsRacker: true
 categories:
     - AWS
-metaTitle: "How Rackspace uses CloudEndure to accelerate workload migration to AWS"
+metaTitle: "How Rackspace uses CloudEndure to accelerate workload migration to AWS: Part One"
 metaDescription: "Enterprises have a longer road to travel than their smaller SME
 counterparts when transforming and migrating multiple workloads to the cloud. For many
 large organizations, the same question tends to be at the top of the priority list: how do
 we migrate workloads quickly and efficiently to meet business objectives?"
-ogTitle: "How Rackspace uses CloudEndure to accelerate workload migration to AWS"
+ogTitle: "How Rackspace uses CloudEndure to accelerate workload migration to AWS: Part One"
 ogDescription: "Enterprises have a longer road to travel than their smaller SME counterparts
 when transforming and migrating multiple workloads to the cloud. For many large organizations,
 the same question tends to be at the top of the priority list: how do we migrate workloads
 quickly and efficiently to meet business objectives?"
-slug: "how-rackspace-uses-cloudendure-to-accelerate-workload-migration-to-aws"
+slug: "how-rackspace-uses-cloudendure-to-accelerate-workload-migration-to-aws-part-one"
 canonical: https://aws.amazon.com/blogs/apn/how-rackspace-uses-cloudendure-to-accelerate-workloads-migration-to-aws/
 
 ---
