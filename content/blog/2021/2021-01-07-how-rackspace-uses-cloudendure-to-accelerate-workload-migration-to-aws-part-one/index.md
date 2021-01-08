@@ -50,8 +50,8 @@ However, the size and complexity of the initial migration can be complicated for
 enterprises, which is why we see migrations taking much longer for large organizations that
 want to make the transition. 
 
-This post explains how to migrate (*lift and shift**) multiple workloads at speed using
-Amazon Web Services (AWS&reg;) [CloudEndure™ Migration]( https://aws.amazon.com/cloudendure-migration/)
+This two-part series explains how to migrate (*lift and shift**) multiple workloads at speed
+by using Amazon Web Services (AWS&reg;) [CloudEndure™ Migration]( https://aws.amazon.com/cloudendure-migration/)
 and how Rackspace can help guide this migration. 
 
 Rackspace, an AWS Partner Network (APN) Premier Consulting Partner and Managed Services
@@ -61,7 +61,6 @@ solution provides full IP connectivity between your data center and AWS while au
 access to staff members via
 [AWS client VPN]( https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/what-is.html) services. 
  
-
 ### Designing the solution
 
 For simplicity, let’s start with a single (Target) AWS Account with two Amazon
@@ -137,8 +136,8 @@ From a high-level solution perspective, we perform the following tasks:
 
 ### Next step
 
-In Part Two of this post, coming next week, I describe the AWS Transit Gateway and AWS
-Client VPN configuration.
+In [Part Two](https://docs.rackspace.com/blog/how-rackspace-uses-cloudendure-to-accelerate-workload-migration-to-aws-part-two/)
+of this series, I describe how to configure the AWS Transit Gateway and AWS Client VPN.
 
 At Rackspace, our Professional Services teams wrap governance and process around a migration
 into AWS. Through clear project management, we make sure to migrate applications into AWS
