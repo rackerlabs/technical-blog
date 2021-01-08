@@ -102,11 +102,11 @@ this is the NAT Gateway.
 ### AWS Client VPN configuration
 
 AWS VPN users can traverse different networks connected through AWS Transit Gateway if
-authorized to do so. If you add users to groups within AWS Directory Services, you
-authorize them to access specific networks through the configuration of AWS Client VPN.
-You can configure authentication through Active Directory, mutual (certificate-based), and
-SSO through SAML-Based federated authentication. The remainder of this post focuses on
-providing authorization via Active Directory group membership.
+authorized to do so. You can configure authorization and authentication with Active
+Directory, mutual (certificate-based), and SSO through SAML-Based federated authentication.
+By adding users to groups within AWS Directory Services, you can authorize them to access
+specific networks through AWS Client VPN configuration. The remainder of this post focuses
+on providing authorization via Active Directory group membership.
 
 #### Preparation
 
@@ -165,10 +165,10 @@ When adding a new route, we use the subnets associated with the VPC selected dur
 Client VPN endpoint creation (Step3) as the next hop. Network packets are then routed via
 the VPC router to the Transit Gateway.
 
-#### Configure the Client VPN
-
 For redundancy, I have created two routes for each destination by using subnets from both
-zones of the associated VPC attached to Client VPN endpoint 
+zones of the associated VPC attached to Client VPN endpoint.
+
+#### Configure the Client VPN
 
 The AWS VPN client is free to download. To connect to the AWS Client VPN service, use the
 following steps to get up and running:
