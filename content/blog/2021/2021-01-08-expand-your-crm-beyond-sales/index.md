@@ -14,16 +14,16 @@ Solutions Group and ARC."
 published: true
 authorIsRacker: true
 categories:
-    - General
+    - Salesforce
 metaTitle: "Expand your CRM beyond sales"
-metaDescription: "."
+metaDescription: "The power of Salesforce. So much more than just tracking sales."
 ogTitle: "Expand your CRM beyond sales"
-ogDescription: "."
+ogDescription: "The power of Salesforce. So much more than just tracking sales."
 slug: "expand-your-crm-beyond-sales"
 
 ---
 
-Replace with short intro sentence or two.
+The power of Salesforce. So much more than just tracking sales.
 
 <!--more-->
 
@@ -55,15 +55,12 @@ most organizations – whether for-profit or not-for-profit.
 
 ### We can help
 
-<a class="cta purple" id="cta" href="https://www.rackspace.com/sap">Contact
-us</a> to learn how your organization can benefit from a CRM and all the tools it can
+<a class="cta blue" id="cta" href="https://www.rackspace.com/applications/salesforce">Contact us</a> to learn how
+your organization can benefit from Salesforce and all the tools it can
 offer.
 
-RelationEdge helps companies implement Salesforce—providing a custom engineered
+Rackspace helps companies implement Salesforce—providing a custom engineered
 solution that will allow you to better market, sell, and service your customers.
 Then we provide ongoing services and support, evolving the platform to meet
 changing business needs and ensuring you continue to get the most value from
 your investment over time.
-
-You can also click on [chat now](https://www.rackspace.com/) and start the
-conversation.
