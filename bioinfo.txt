@@ -273,6 +273,16 @@ Dang, Chirag
 authorAvatar: 'https://secure.gravatar.com/avatar/7b23adc494ecb33bebdb986533b0a64c'
 bio: "Oracle Application DBA at Rackspace Technology."
 
+Day, Alan
+authorAvatar: 'https://secure.gravatar.com/avatar/0dc361f321c2930e25867da99636b17a'
+bio: "As an experienced and results-driven IT Professional with 19 years' experience within
+both the public and private sectors, I draw on competencies and expertise spanning multiple
+platforms and configurations related to pre-sales, consultancy, architecture & design,
+implementation, and configuration. I love being outdoors and walking the dog each day to
+rack up the miles and keep fit. I'm passionate about cooking and spend much of my free time
+researching recipes from around the world. Some dishes are more successful than others after
+translation to the plate, but it's always a good night!"
+
 Dhiman, Vivek
 authorAvatar: 'https://s.gravatar.com/avatar/d29da50d9ece9c12e208afaa0de68cd5'
 bio: "I've been a Racker for eight years and have 13+ years of Oracle DBA
