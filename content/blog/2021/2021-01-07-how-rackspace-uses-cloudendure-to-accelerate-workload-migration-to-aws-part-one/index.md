@@ -102,8 +102,9 @@ Connecting multiple accounts from different regions is outside of the scope of t
 However, if you find yourself in that situation, then
 [AWS Direct Connect Gateway]( https://docs.aws.amazon.com/directconnect/latest/UserGuide/direct-connect-gateways.html),
 AWS Transit Gateway, and Transit Gateway peering can provide a highly secure, high-bandwidth
-solution between regions. This AWS re:Invent reference architecture session runs through
-this nicely. 
+solution between regions. This
+[AWS re:Invent reference architecture session](https://www.youtube.com/watch?v=9Nikqn_02Oc)
+runs through this nicely. 
 
 ### High-level solution overview 
 
