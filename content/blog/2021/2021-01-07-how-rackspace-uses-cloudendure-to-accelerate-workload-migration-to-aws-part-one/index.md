@@ -56,8 +56,8 @@ and how Rackspace can help guide this migration.
 
 Rackspace, an AWS Partner Network (APN) Premier Consulting Partner and Managed Services
 Provider (MSP), has created reusable design artifacts together with automation to describe
-and deploy a collection of AWS services capable of hosting CloudEndure Migration. This
-solution provides full IP connectivity between your data center and AWS while authenticating
+and deploy a collection of AWS services capable of hosting CloudEndure. This solution
+provides full IP connectivity between your data center and AWS while authenticating
 access to staff members via
 [AWS client VPN]( https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/what-is.html) services. 
  
@@ -87,7 +87,7 @@ migration, CloudEndure deploys [Amazon Elastic Compute Cloud]( https://aws.amazo
 as long as they are in the same AWS account as the CloudEndure project.  
 
 The following diagram illustrates AWS Transit Gateway connecting multiple VPCs from different
-accounts within the same region. BY using [AWS Resource Access Manager]( https://aws.amazon.com/ram/)
+accounts within the same region. By using [AWS Resource Access Manager]( https://aws.amazon.com/ram/)
 (RAM), you can share Transit Gateway and connect VPCs in different accounts. We recommend
 that you create a separate CloudEndure project for each AWS account because sharing EC2
 images between accounts is a manual process and can significantly impact timelines depending
@@ -122,9 +122,8 @@ From a high-level solution perspective, we perform the following tasks:
 - Use AWS Transit Gateway to provide full IP connectivity by consolidating connections from
   VPCs, Direct Connect circuits, and VPN tunnels. By creating a connected network, we enable
   data transfer between the source data center and all destination VPCs.
-- Use [AWS Simple AD]( https://docs.aws.amazon.com/directoryservice/latest/admin-guide/directory_simple_ad.html)
-  to provide authentication to AWS Client VPN users and allow staff the flexibility to work
-  from home or the office. 
+- Use AWS Simple AD to provide authentication to AWS Client VPN users and allow staff the
+  flexibility to work from home or the office. 
 - Provision CloudEndure replication instances automatically to perform server replication
   activities from the CloudEndure console.
 - Provision test servers  from replicated images to perform basic operating system checks
