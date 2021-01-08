@@ -108,7 +108,7 @@ You can configure authentication through Active Directory, mutual (certificate-b
 SSO through SAML-Based federated authentication. The remainder of this post focuses on
 providing authorization via Active Directory group membership.
 
-#### Prepare for the Client VPN
+#### Preparation
 
 I have detailed the main steps to set up AWS Client VPN in this section. Refer to
 [AWS documentation]( https://docs.aws.amazon.com/) for detailed instructions.
@@ -149,13 +149,13 @@ is operational.
 The AWS Client VPN route table provides routes to each of the destination networks available
 in the solution. In this example, we can see the following routes.
 
-- **Default Route**: Created automatically by AWS when we associate subnets from the VPC
+- **Default route**: Created automatically by AWS when we associate subnets from the VPC
   that Client VPC is associated with.
 
-- **Route to Datacentre**: Added manually to provide access to the source data center. The
+- **Route to data center**: Added manually to provide access to the source data center. The
   route goes via AWS Transit Gateway.
 
-- **Migration Target VPC**: Added manually to provide access to the migration target network.
+- **Migration target VPC**: Added manually to provide access to the migration target network.
   This route goes via AWS Transit Gateway if it is external to the VPC associated with AWS
   Client VPC.
 
