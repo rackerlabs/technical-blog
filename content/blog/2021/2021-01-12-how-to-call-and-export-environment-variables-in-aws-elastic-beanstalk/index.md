@@ -39,7 +39,7 @@ Lets take the following as our `.ebextensions/00-variables.config` file. This is
     "aws: elasticbeanstalk:application:environent":
     envvar1: value1
 
-#### `commands` and `container_commands`
+#### commands and container_commands
 
 `echo`output
 
