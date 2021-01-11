@@ -3,29 +3,37 @@ layout: post
 title: "How to call and export environment variables in AWS Elastic Beanstalk"
 date: 2021-01-12
 comments: true
+author: Rackspace Team
 published: true
 authorIsRacker: true
 categories:
     - AWS
 metaTitle: "How to call and export environment variables in AWS Elastic Beanstalk"
-metaDescription: "The AWS Elastic Beanstalk documentation doesn't tell you how to export environment variables,or set for top level shell commands. We use variables for all kinds of things so we decided to create a how-to guide for calling and viewing environment variables in ebextension config files."
+metaDescription: "The AWS Elastic Beanstalk documentation doesn't tell you how to export environment variables or set
+top-level shell commands. We use variables for all kinds of things so we decided to create a how-to guide for calling and
+viewing environment variables in ebextension config files."
 ogTitle: "How to call and export environment variables in AWS Elastic Beanstalk"
-ogDescription: "The AWS Elastic Beanstalk documentation doesn't tell you how to export environment variables, or set for top level shell commands. We use variables for all kinds of things so we decided to create a how-to guide for calling and viewing environment variables in ebextension config files."
+ogDescription: "The AWS Elastic Beanstalk documentation doesn't tell you how to export environment variables or set
+top-level shell commands. We use variables for all kinds of things so we decided to create a how-to guide for calling and
+viewing environment variables in ebextension config files."
 slug: "how-to-call-and-export-environment-variables-in-aws-elastic-beanstalk"
 canonical: https://onica.com/blog/how-to/aws-elastic-beanstalk-environment-variables/
 ---
 
 *Originally published in Apr 2017, at Onica.com/blog*
 
-The AWS&reg; Elastic Beanstalk&reg; documentation doesn't tell you how to export environment variables &mdash;or set for top-level shell commands. We use variables for all kinds of things so we decided to create a how-to guide for calling and viewing environment variables in *ebextension* config files.
+The AWS&reg; Elastic Beanstalk&reg; documentation doesn't tell you how to export environment variables or set
+top-level shell commands. We use variables for all kinds of things, so we decided to create a how-to guide for
+calling and viewing environment variables in *ebextension* config files.
 
 <!--more-->
 
-In this post we’ll dive into several ways to export environment variables, set for top-level shell commands, and see how they show up under different circumstances:
+In this post, we dive into several ways to export environment variables, set top-level shell commands, and see
+how they show up under different circumstances.
 
 ### Environment variables in ebextension config files: How to call and export in Elastic Beanstalk
 
-Lets take the following as our `.ebextensions/00-variables.config` file. This will be the basis for all of our tests:
+Lets take the following as our `.ebextensions/00-variables.config` file. This is the basis for all of our tests:
 
     option_settings:
     "aws: elasticbeanstalk:application:environent":
@@ -35,8 +43,8 @@ Lets take the following as our `.ebextensions/00-variables.config` file. This wi
 
 `echo`output
 
-The first test is see how we can use these two in the **commands** and **container_commands**
-sections of an ebextensions config file:
+The first test is to see how we can use these two in the **commands** and **container_commands**
+sections of an ebextensions configuration file:
 
     commands:
     a00_command_line_test:
@@ -53,13 +61,13 @@ Here are the results:
     $ cat /tmp/c00_command_line_test
     value1
 
-The `/tmp/a00_command_line_test`file ends up being empty while 
-the latter `/tmp/c00_command_line_test` file has the `value1` value
+The **/tmp/a00_command_line_test** file ends up being empty while 
+the latter **/tmp/c00_command_line_test** file has the `value1` value
 in it as expected.
 
-You can't see the `envvar1` variable when you use it in `commands`.
+You can't see the **envvar1** variable when you use it in **commands**.
 
-To force this you can use the `env:` option along with the `command:` `option:`
+To force this you can use the **env:** option along with the **command:** option:
 
     commands:
         a00_command_line_test:
@@ -93,123 +101,129 @@ all Elastic Beanstalk AMIs:
     $ cat /tmp/c01_command_line_test
     value1$
 
-Both files have the variable in it, but there’s no newline. This is due to the `echo``
-command above natively adding a newline. We like this command in shell scripts like so:
+Both files have the variable in it, but there’s no newline. This is due to the `echo`
+command above natively adding a newline. We use this command in shell scripts as shown
+in the following example:
 
     somevar=$(/opt/elasticbeanstalk/bin/get-config environment -k envvar1)
 
 `files`
 
-The next tests we did were around the files directive. We created two files &mdash;a bash script and a python script. Each one tests the ability to:
+The next tests we did were around the files directive. We created two files&mdash;a bash script and a python script.
+Each one tests the ability to do the following actions:
 
 1. Simply just call an environment variable when run.
 2. Use the `backtick + curly brace + Fn::GetOptionSetting` command embedded in the file.
 3. Use the `get-config` command.
 
-    files:
+       files:
 
-      "/tmp/00_file_test.sh":
-        content: |
-          #!/bin/sh
-          env_method_1=$envvar1
-          echo $env_method_1
+        "/tmp/00_file_test.sh":
+          content: |
+            #!/bin/sh
+            env_method_1=$envvar1
+            echo $env_method_1
 
-    env_method_2=`{"Fn::GetOptionSetting": {"Namespace": 
-    "aws:elasticbeanstalk:application:environment", "OptionName": 
+       env_method_2=`{"Fn::GetOptionSetting": {"Namespace": 
+       "aws:elasticbeanstalk:application:environment", "OptionName": 
           "envvar1", "DefaultValue": "my_default_value"}}`
           echo $env_method_2
 
-    env_method_3=$(/opt/elasticbeanstalk/bin/get-config 
-    environment -k envvar1)
+       env_method_3=$(/opt/elasticbeanstalk/bin/get-config 
+       environment -k envvar1)
           echo $env_method_3
 
-    group: root
-    mode: "000755"
-    owner: root
+       group: root
+       mode: "000755"
+       owner: root
 
-    "/tmp/00_file_test.py":
-        content: |
-        #!/usr/bin/env python
-        import os, subprocess
+       "/tmp/00_file_test.py":
+          content: |
+          #!/usr/bin/env python
+          import os, subprocess
 
-    try: 
-    env_method_1 = os.environ['envvar1']
-        print(env_method_1)
+       try: 
+       env_method_1 = os.environ['envvar1']
+          print(env_method_1)
     
-    except:
-    print("Failed to get env_method_1")
+       except:
+       print("Failed to get env_method_1")
 
-    try:
-    env_method_2 = "`{"Fn::GetOptionSetting": {"Namespace": 
-    "aws:elasticbeanstalk:application:environment", "OptionName": 
-    "envvar1", "DefaultValue": "my_default_value"}}`"
+       try:
+       env_method_2 = "`{"Fn::GetOptionSetting": {"Namespace": 
+       "aws:elasticbeanstalk:application:environment", "OptionName": 
+       "envvar1", "DefaultValue": "my_default_value"}}`"
            print(env_method_2)
 
-    except:
-    print("Failed to get env_method_2")
+       except:
+       print("Failed to get env_method_2")
 
-     try:
-     env_method_3 = subprocess.check_output
-    (['/opt/elasticbeanstalk/bin/get-config', 
-    'environment', '-k', 'envvar1'])
+       try:
+       env_method_3 = subprocess.check_output
+       (['/opt/elasticbeanstalk/bin/get-config', 
+       'environment', '-k', 'envvar1'])
             print(env_method_3)
 
-    except:
-    print("Failed to get env_method_3")
+       except:
+       print("Failed to get env_method_3")
 
-    group: root
-    mode: "000755"
-    owner: root
+       group: root
+       mode: "000755"
+       owner: root
 
     The result of the `files` directive are these files:
 
-    $ cat /tmp/00_file_test.sh
-    #!/bin/sh
-    env_method_1=$envvar1
-    echo $env_method_1
+       $ cat /tmp/00_file_test.sh
+       #!/bin/sh
+       env_method_1=$envvar1
+       echo $env_method_1
 
-    env_method_2=value1
-    echo $env_method_2
+       env_method_2=value1
+       echo $env_method_2
 
-    env_method_3=$
-    (/opt/elasticbeanstalk/bin/get-config environment 
-    -k envvar1)
-    echo $env_method_3
+       env_method_3=$
+       (/opt/elasticbeanstalk/bin/get-config environment 
+       -k envvar1)
+       echo $env_method_3
 
-    $ cat /tmp/00_file_test.py
-    #!/usr/bin/env python
-    import os, subprocess
+       $ cat /tmp/00_file_test.py
+       #!/usr/bin/env python
+       import os, subprocess
 
-    try:
-    env_method_1 = os.environ['envvar1']
-    print(env_method_1)
+       try:
+       env_method_1 = os.environ['envvar1']
+       print(env_method_1)
 
-    except:
-    print("Failed to get env_method_1")
+       except:
+       print("Failed to get env_method_1")
 
-    try:
-    env_method_2 = "value1"
-      print(env_method_2)
+       try:
+       env_method_2 = "value1"
+       print(env_method_2)
     
-    except:
-    print("Failed to get env_method_2")
+       except:
+       print("Failed to get env_method_2")
 
-    try:
-    env_method_3 = subprocess.check_output
-    (['/opt/elasticbeanstalk/bin/get-config', 'environment',
-     '-k', 'envvar1'])
-      print(env_method_3)
+       try:
+       env_method_3 = subprocess.check_output
+       (['/opt/elasticbeanstalk/bin/get-config', 'environment',
+        '-k', 'envvar1'])
+         print(env_method_3)
 
-    except:
-    print("Failed to get env_method_3")
+       except:
+       print("Failed to get env_method_3")
 
 #### It is very important to notice how this affects scripts
 
-In the second test on both the shell script and the python script, the variable is already embedded into the script. You can run either script at any time under any user and it’ll always have the right variable there. The variable is ‘set’ when you create the file &mdash;at deploy time, rather than evaluating the variable when it is run.
+In the second test on both the shell script and the python script, the variable is already embedded into the script.
+You can run either script at any time under any user, and it always has the right variable there. The variable is 
+set when you create the file at deploy time, rather than evaluating the variable when it runs.
 
-If the environment variable changes and this file is not updated &mdash;say it is removed from the **ebextentions** config file but still called by another script, or program, it will then have the wrong variable in it.
+If the environment variable changes and this file is not updated&mdash;say you remove it from the **ebextentions**
+configuration file, but another script or program can call it&mdash;it will then have the wrong variable in it.
 
-The other two tests: `env_method_1` and `env_method_3` still gather the environment variable when they’re run. Lets run them under `commands` and `container_commands` and check out the results:
+The other two tests: `env_method_1` and `env_method_3` still gather the environment variable when they’re run. Lets
+run them under **commands** and **container_commands** and check out the results:
 
     commands:
         a20_files_test:
@@ -244,9 +258,10 @@ The other two tests: `env_method_1` and `env_method_3` still gather the environm
     value1
     value1
 
-As we can see from these results, the `commands` doesn't seem to see the `$envvar1` variable in `env_method_1` of either script. Otherwise, all scripts pick up all other variables.
+As we can see from these results, the **commands** doesn't seem to see the `$envvar1` variable in `env_method_1` of
+either script. Otherwise, all scripts pick up all other variables.
 
-Next, I’ll run these as standard `ec2-user` via ssh:
+Next, we run these as the standard `ec2-user` by using SecureShell&reg; (ssh):
 
     $ /tmp/00_file_test.sh
     value1
@@ -260,7 +275,7 @@ Next, I’ll run these as standard `ec2-user` via ssh:
     Permission denied @ rb_sysopen - 
     /opt/elasticbeanstalk/deploy/configuration/containerconfiguration
 
-As you can see, `sudo` is required for the `get-config` command. Lets try that:
+As you can see, you need to use `sudo` for the `get-config` command. Lets try that:
 
     $ sudo /tmp/00_file_test.sh
 
@@ -272,7 +287,8 @@ As you can see, `sudo` is required for the `get-config` command. Lets try that:
     value1
     value1
 
-Running them as `root` &mdash;via sudo, yields effectively the same results as running under `commands`. However, if we run them under the webserver user &mdash;via the actual webserver:
+Running them as `root` with `sudo` yields effectively the same results as running under **commands**. However,
+if we run them under the webserver user via the actual webserver, we get the following result:
 
     $ cat /var/app/current/index.php
     <?php
@@ -292,11 +308,14 @@ Running them as `root` &mdash;via sudo, yields effectively the same results as r
     Failed to get env_method_3
     $
 
-As you can see, the webserver has the environment variables set but the `get-config` command is still limited to the `root` user, therefore it fails. 
+As you can see, the webserver has the environment variables set, but the `get-config` command is still limited to
+the `root` user. Therefore, it fails. 
 
 ### All done
 
-Hopefully, these experiments shed some light on how Elastic Beanstalk uses environment variables. We see all tools as having their place and believe each one of the methods above has appropriate use cases &mdash;it’ll be up to you to determine which method(s) you want to use and in which situations.
+Hopefully, these experiments shed some light on how Elastic Beanstalk uses environment variables. We see all tools
+as having their place and believe each of the preceding methods has appropriate use cases. It's up to you to determine
+which method you want to use in which specific situation.
 
 <a class="cta blue" id="cta" href="https://www.rackspace.com/cloud/aws">Learn more about Rackspace AWS services.</a>
 
