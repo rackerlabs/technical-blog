@@ -14,34 +14,45 @@ authorIsRacker: true
 categories:
     - General
 metaTitle: "Using spot instances with Kubernetes kops"
-metaDescription: "Running containerized applications with Amazon EKS is a popular choice, but one that still requires a certain amount of manual configuration. There are several ways to get cheaper instances for your kops cluster, and we’ll go through them in this article."
+metaDescription: "Running containerized applications with Amazon EKS is a popular choice, but one that still requires a certain amount of manual configuration. There are several ways to get cheaper instances for your kops cluster, and we go through them in this article."
 ogTitle: "Using spot instances with Kubernetes kops"
-ogDescription: "Running containerized applications with Amazon EKS is a popular choice, but one that still requires a certain amount of manual configuration. There are several ways to get cheaper instances for your kops cluster, and we’ll go through them in this article."
+ogDescription: "Running containerized applications with Amazon EKS is a popular choice, but one that still requires a certain amount of manual configuration. There are several ways to get cheaper instances for your kops cluster, and we go through them in this article."
 slug: "using-spot-instances-with-kubernetes-kops"
 canonical: https://onica.com/blog/devops/aws-spot-instances-with-kubernetes-kops/
 ---
 
 *Originally published in May 2018, at Onica.com/blog*
 
-Running containerized applications with [Amazon EKS](https://onica.com/blog/aws-announcements/product-announcements-aws/) is a popular choice, but one that still requires a certain amount of manual configuration. There are several ways to get cheaper instances for your [kops](https://github.com/kubernetes/kops) cluster, and we’ll go through them in this article.
+Running containerized applications with [Amazon EKS](https://onica.com/blog/aws-announcements/product-announcements-aws/) is a
+popular choice, but it still requires a certain amount of manual configuration. There are several ways to get cheaper instances
+for your [Kubernetes&reg; Operations (kops)](https://github.com/kubernetes/kops) cluster, and we go through them in this article.
 
 <!--more-->
 
 ### How do AWS Spot Instances work?
 
-A Spot Instance is an unused EC2&reg; instance that’s available for use at up to ninety percent less than On-Demand pricing. If you are flexible about when your applications run and if your applications can be interrupted, then you can lower your costs significantly. AWS Spot Instances&reg; are well-suited for data analysis, containerized workloads, batch jobs, background processing, optional tasks, and other test and development workloads.
+A Spot Instance is an unused EC2&reg; instance that’s available for use at up to ninety percent less than On-Demand pricing.
+If you are flexible about when your applications run and if your applications can be interrupted, you can lower your costs
+significantly. AWS Spot Instances&reg; are well-suited for data analysis, containerized workloads, batch jobs, background
+processing, optional tasks, and other test and development workloads.
 
-The hourly Spot price is determined by supply and demand trends for EC2 spare capacity. You can see the current and historical Spot prices through the AWS Management Console&reg;. If the Spot price exceeds your maximum price for a given instance &mdash;or if capacity is no longer available, your instance will automatically stop.
+The hourly Spot price is determined by supply and demand trends for EC2 spare capacity. You can see the current and historical
+Spot prices through the AWS Management Console&reg;. If the Spot price exceeds your maximum price for a given instance, or
+if capacity is no longer available, your instance automatically stops.
 
-### Optimize spot instance costs for your kops clusters: Edit a running cluster
+Let's consider how you can optimize spot instance costs for your kops clusters: 
 
-All methods revolve around kops’ cluster management YAML file. For the first example, we’ll update a running Kubernetes&reg; cluster.
+### Edit a running cluster
 
-1. #### Kops edit instancegroups nodes
+All methods revolve around kops’ cluster management YAML file. For the first example, lets update a running
+Kubernetes&reg; cluster.
 
-We’ll adjust the running nodes’ `maxPrice``
+#### 1. Kops edit instancegroups nodes
 
-See below if you’d like to run a master as a spot instance. Running the command `kops edit instancegroups nodes` will open your editor with a YAML file. Add a line of `maxPrice: "x.xx"` just above `maxSize` similar to the following file:
+Adjust the `maxPrice` for running nodes.
+
+See the next example if you’d like to run a master as a spot instance. Running the command `kops edit instancegroups nodes`
+opens your editor with a YAML file. Add a line of `maxPrice: "x.xx"` just above `maxSize` similar to the following file:
 
         apiVersion: kops/v1alpha2
         kind: InstanceGroup
@@ -67,9 +78,9 @@ See below if you’d like to run a master as a spot instance. Running the comman
 
 Now, save your edit.
 
-**Note:** If you’d like to run your master(s) as spot instances, first you’ll need to run kops get instancegroups
+**Note:** If you’d like to run your masters as spot instances, you need first to run `kops get instancegroups`.
 
-That will have an output similar to:
+That produces an output similar to the following example:
 
         Using cluster from kubectl context: nfox.k8s.local
 
@@ -79,12 +90,12 @@ That will have an output similar to:
         master-us-west-2c   Master  m3.medium       1       1       us-west-2c
         nodes               Node    t2.medium       2       2       us-west-2a,us-west-2b,us-west-2c
 
-From there, use `kops edit instancegroup master-us-west-2a` or substitute with your other master names. 
+From there, use `kops edit instancegroup master-us-west-2a` or substitute your other master names. 
 Then follow the preceding directions for adding `maxPrice`.
 
-2. #### Kops update cluster –yes
+#### 2. Kops update cluster –yes
 
-Running the `kops update cluster` command will make sure the edit is saved in S3. This will not affect running instances:
+Running the `kops update cluster` command makes sure the edit is saved in S3. This does not affect running instances:
 
         Using cluster from kubectl context: nfox.k8s.local
         I0513 17:48:36.097401    4290 apply_cluster.go:456] Gossip DNS: skipping DNS validation
@@ -107,9 +118,9 @@ Running the `kops update cluster` command will make sure the edit is saved in S3
 
             Must specify --yes to apply changes
 
-Notice the `SpotPrice -> 0.20` under `LaunchConfiguration/nodes.nfox.k8s.local`
+Notice the `SpotPrice -> 0.20` under `LaunchConfiguration/nodes.nfox.k8s.local`.
 
-Now, add the `--yes` flag to your command and you should see an output like this:
+Now, add the `--yes` flag to your command, and you should see an output like this:
 
         $ kops update cluster --yes
         Using cluster from kubectl context: nfox.k8s.local
@@ -128,9 +139,10 @@ Now, add the `--yes` flag to your command and you should see an output like this
 
         Changes may require instances to restart: kops rolling-update cluster
 
-3. #### Kops rolling-update cluster [–yes]
+#### 3. Kops rolling-update cluster [–yes]
 
-You’ll probably want to run **kops rolling-update cluster** first. This will give a report of what kops will do. Usually, your report will look something like the following:
+You probably want to run `kops rolling-update cluster` first. This gives a report of what kops will do. Usually,
+your report looks similar to the following:
 
             Using cluster from kubectl context: nfox.k8s.local
 
@@ -140,11 +152,12 @@ You’ll probably want to run **kops rolling-update cluster** first. This will g
 
             Must specify --yes to rolling-update.
 
-Once you’re happy, run `kops rolling-update cluster --yes`
+After you’re happy, run `kops rolling-update cluster --yes`.
 
-At this point kops will start doing a rolling update of all of your instances. It’ll first empty an instance, terminate it and replace it with a spot price instance.
+At this point, kops starts a rolling update of all of your instances. It first empties an instance, terminates
+it, and replaces it with a spot price instance.
 
-The output would be similar to:
+The output is similar to:
 
             Using cluster from kubectl context: nfox.k8s.local
             NAME			    STATUS		NEEDUPDATE	READY	MIN	MAX	NODES
@@ -172,7 +185,7 @@ The output would be similar to:
             I0513 18:08:14.287260    4373 instancegroups.go:249] Cluster validated.
             I0513 18:08:14.287333    4373 rollingupdate.go:193] Rolling update completed for cluster "nfox.k8s.local"!
 
-Now I can validate my nodes are running with spot instances with this command:
+Now, validate that your nodes are running with spot instances by using the following command:
 
             aws ec2 describe-instances \
                 --filters \
@@ -197,43 +210,47 @@ And the output should show something similar in your environment:
 
 ### Create a cluster with spot pricing
 
-In a perfect world, you’d create a cluster from the ground up with spot pricing instead of on demand. However, there is no way to utilize spot pricing from the kops command line. The only way to do it is to use a YAML file:
+In a perfect world, you create a cluster from the ground up with spot pricing instead of on-demand. However,
+there is no way to use spot pricing from the kops command line. The only way to do it is to use a YAML file:
 
-1. #### Create a YAML file from your existing kops create cluster command
+#### 1. Create a YAML file from your existing kops create cluster command
 
-We’ll modify your existing `kops create cluster` command to create a YAML file. For example, if our original cluster command is:
+Modify your existing `kops create cluster` command to create a YAML file. For example, if our original cluster command is:
 
             kops create cluster \
                 --name nfox.k8s.local \
                 --zones=us-west-2a,us-west-2b,us-west-2c \
                 --state=s3://my-kops-bucket
 
-**Note:** you’ll need an S3 bucket created beforehand to hold the kops state. In this case, it’s `my-kops-bucket`.
+**Note:** You need an S3 bucket created beforehand to hold the kops state. In this case, it’s `my-kops-bucket`.
 
-You’d simply add the following to your command `--dry-run --output yaml`&mdash;though you’ll want to capture it to a file. So we’ll pipe it through `tee`.
+Simply add the following to your command `--dry-run --output yaml`.  If you want to capture it to a file, pipe it through `tee`.
 
-2. #### Edit the YAML file
+#### 2. Edit the YAML file
 
-Now we’d edit the `nfox.k8s.local.yaml` file like above:
+Now, edit the `nfox.k8s.local.yaml` file as shown previously:
 
 1. Scroll to the bottom.
 2. Edit the InstanceGroup by adding the `maxPrice: "x.xx"` line just above `maxSize`
 3. Save the file.
 
-3. #### Create the cluster with these three commands
+#### 3. Create the cluster with these three commands:
 
             kops create -f nfox.k8s.local.yaml
             kops create secret sshpublickey admin -i ~/.ssh/id_rsa
             kops update cluster --yes
 
-Because the `kops create cluster command` line handles the SSH key for you, we need to create the admin user with our own ssh private key before we actually apply everything to the cluster &mdash;third command.
+Because the `kops create cluster command` line handles the SSH key for you, you need to create the admin user with your
+own ssh private key before actually applying everything to the cluster in the third command, `kops update`.
 
-While Amazon EKS helps simplify running Kubernetes workflows, we hope this quick guide will prove helpful in optimizing instance costs for your kops clusters.
+### Conclusion
 
-#### Want to read more AWS How-To guides from Onica, a Rackspace Technology company?
+While Amazon EKS simplifies running Kubernetes workflows, we hope this quick guide helps optimize instance costs for your
+kops clusters.
 
-Check out our [resources](https://onica.com/resources/)
+Want to read more AWS How-To guides from Onica, a Rackspace Technology company? Check out our [resources](https://onica.com/resources/)
 
 <a class="cta teal" id="cta" href="https://www.rackspace.com/cloud/aws">Learn more about Rackspace AWS services.</a>
 
-Use the Feedback tab to make any comments or ask questions. You can also click **Sales Chat** to [chat now](https://www.rackspace.com/) and start the conversation.
+Use the Feedback tab to make any comments or ask questions. You can also click **Sales Chat** to [chat now](https://www.rackspace.com/)
+and start the conversation.
