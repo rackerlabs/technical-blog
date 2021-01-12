@@ -12,11 +12,11 @@ authorIsRacker: false
 categories:
     - General
 metaTitle: "Visualizing deep RL performance"
-metaDescription: “What tools do you use for visualization? You often hear this question in
+metaDescription: "What tools do you use for visualization? You often hear this question in
 deep learning and reinforcement learning (RL), which is even more common among those
 beginning to gain interest and run experiments."
 ogTitle: "Visualizing deep RL performance"
-ogDescription: “What tools do you use for visualization? You often hear this question in
+ogDescription: "What tools do you use for visualization? You often hear this question in
 deep learning and reinforcement learning (RL), which is even more common among those
 beginning to gain interest and run experiments."
 slug: "visualizing-deep-rl-performance"
