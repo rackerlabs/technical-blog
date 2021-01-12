@@ -492,6 +492,13 @@ bio: "I am Sandeep and have 9+ years of Experience and I am expert in oracle app
 also have hands-on knowledge on Oracle products like Oracle EBS 11i,R12 and R12.2, Demantra,
 JDE CNC, Oracle Transportation Management, OBIEE, Inspyrus, and Hyperion."
 
+Kalamaro, Roy 
+authorAvatar: 'https://ca.slack-edge.com/T092PUK16-U2TEASPJ9-g256bc697d78-512'
+bio: "Extensive experience in Cloud Computing technologies, security, containerized solutions, 
+Linux OS administration (Debian and RPM based), Windows servers and networking.
+Highly passionate about automation, immutable infrastructure through code and utilizing 
+cloud native services to follow best practices."
+
 Kalar, Erika
 authorAvatar: n/a
 bio: "I'm a content jack-of-all-trades. From large, complex websites and apps to
