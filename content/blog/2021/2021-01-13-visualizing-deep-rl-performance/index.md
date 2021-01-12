@@ -5,7 +5,8 @@ date: 2021-01-13
 comments: true
 author: Jeff Braga
 authorAvatar: 'https://media-exp1.licdn.com/dms/image/C4D03AQFptkIR8O6f9Q/profile-displayphoto-shrink_800_800/0/1610392281416?e=1616025600&v=beta&t=jWsHg5at51Qg99bAgomPJGrcOrdNuMoZ3Sxk0Qdi-sM'
-bio: "Find me at https://www.linkedin.com/in/jeffrey-braga-3167a512/"
+bio: "Jeff is currently an MSCS Student at Drexel University. Find him at
+https://www.linkedin.com/in/jeffrey-braga-3167a512/."
 published: true
 authorIsRacker: false
 categories:
