@@ -336,6 +336,13 @@ defending networks from Advanced Persistent Threats, and has managed security
 operations teams across all levels. You can follow Chris on LinkedIn at
 linkedin.com/in/Christopher-a-evans."
 
+Fox, Nate 
+authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U010X7DPYTV-64948ceb6a70-512'
+bio: "Over 20 years of progressive experience in the field of Information Technology 
+with in-depth knowledge and experience in systems planning, design, configuration, 
+and management. Reliable self-starter with the ability to plan, design, implement, 
+and manage small, medium, and large systems."
+
 Friedman, Jordan
 authorAvatar: 'https://s.gravatar.com/avatar/f2f71a634ccd1e79ea3b3b317f8b4161'
 bio: n/a
