@@ -353,8 +353,12 @@ bio: "Nick Garratt is a Principal Architect in the Rackspace Managed Public
 Clouds Product Architecture Team."
 
 Gates, Jason
-authorAvatar: 'https://s.gravatar.com/avatar/ff2ec8ee582b2e949109b7fd353734f2'
-bio: n/a
+authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-UCMG3FH50-6903d26991a4-512'
+bio: "Jason Gates serves as the global leader of Business Transformation Services
+at Rackspace. With over 20 years of business consulting experience, Jason has
+provided management consulting, business process, renewable energy integration,
+IT strategy, and IT system integration services at companies like Booze Allen Hamilton,
+ACME Business Consulting, Forsythe Solutions Group, and ARC."
 
 Gembali, Balaganesh
 authorAvatar: 'https://secure.gravatar.com/avatar/ce5ceb1aa8757ef235ddaa21265863eb'
@@ -363,12 +367,6 @@ Administrator since I began my career and worked for top IT companies. I have
 14 years of IT experience and currently work for Rackspace as a Senior Oracle
 Apps DBA. I am passionate about electronic gadgets, travelling, exploring, and
 tasting delicious food."
-
-Miller, Eric
-authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U010VQY2JLA-47bbb9b85ab3-512'
-bio: "Accomplished tech leader, with 20 years of career success in Enterprise IT.
-Provides strategic consulting leadership with a proven track record of practice
-building in the Amazon Partner Network (APN) ecosystem."
 
 Gogineni, Venkata,
 authorAvatar: 'https://secure.gravatar.com/avatar/9e51ecbb063f9454b1de2217cc5b0dff'
@@ -662,7 +660,9 @@ investigations."
 
 Miller, Eric
 authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U010VQY2JLA-47bbb9b85ab3-512'
-bio:
+bio: "Accomplished tech leader, with 20 years of career success in Enterprise IT.
+Provides strategic consulting leadership with a proven track record of practice
+building in the Amazon Partner Network (APN) ecosystem."
 
 Mishra, Manoj
 authorAvatar: 'https://s.gravatar.com/avatar/9498305cda9dc4fe9d8f5873b09ff1e2'
