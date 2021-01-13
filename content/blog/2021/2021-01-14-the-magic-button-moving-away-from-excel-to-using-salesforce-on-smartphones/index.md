@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The magic button moving away from excel to using salesforce on smartphones"
+title: "The magic button moving away from Excel to using Salesforce on smartphones"
 date: 2021-01-14
 comments: true
 author: Rackspace Salesforce Team
@@ -8,18 +8,18 @@ published: true
 authorIsRacker: true
 categories:
     - General
-metaTitle: "The magic button moving away from excel to using salesforce on smartphones"
-metaDescription: "It  takes a couple of steps to use your Salesforce out of the
-comfort of your mobile device, let's take a look!"
-ogTitle: "The magic button moving away from excel to using salesforce on smartphones"
-ogDescription: "It  takes a couple of steps to use your Salesforce out of the
-comfort of your mobile device, let's take a look!"
+metaTitle: "The magic button moving away from Excel to using Salesforce on smartphones"
+metaDescription: "It  takes a couple of steps to use your Salesforce from the
+comfort of your mobile device. Let's take a look!"
+ogTitle: "The magic button moving away from Excel to using Salesforce on smartphones"
+ogDescription: "It  takes a couple of steps to use your Salesforce from the
+comfort of your mobile device. Let's take a look!"
 slug: "the-magic-button-moving-away-from-excel-to-using-salesforce-on-smartphones"
 
 ---
 
-It  takes a couple of steps to use your Salesforce out of the comfort of
-your mobile device, let's take a look!
+It  takes a couple of steps to use your Salesforce from the comfort of
+your mobile device. Let's take a look!
 
 <!--more-->
 
@@ -27,11 +27,11 @@ your mobile device, let's take a look!
 
 At Dreamforce 2014, with the advent of the [Salesforce1 mobile app](https://www.salesforce.com/solutions/mobile/overview/), Marc Benioff
 challenged executives to run their business from their phone. Is this notion a
-myth, or can your company operate via magic buttons on smartphones?
+myth, or can your company operate through magic buttons on smartphones?
 
 {{<img src="1.jpg" title="" alt="" width="150" style="float:right">}}If your
-business processes are mature and logical, this concept is not mythical;
-however, you must have a clear vision and take deliberate steps to achieve it.
+business processes are mature and logical, this concept is not mythical.
+However, you must have a clear vision and take deliberate steps to achieve it.
 
 Here’s how…
 
@@ -43,10 +43,10 @@ processes, important logic, and key calculations. It also enables rapid
 iteration in a simple tool that most people are familiar with.
 
 With that said, using Excel (or a similar utility) is not a good strategy for
-long-term sustainment since it does not bring users into a real-time
+long-term sustainment. Why? It does not bring users into a real-time
 collaborative environment, allow you to tailor permissions and requirements for
 different departments, or automate any workflows. Lucky for your business,
-Salesforce.com has addressed all of these areas brilliantly.
+**Salesforce.com** has addressed all of these areas brilliantly.
 
 ### Step 2: Bake It In
 
@@ -58,44 +58,42 @@ with automation.
 
 From an expense perspective, it is arguably much less costly to fine-tune the
 model in Excel than it is to engage developers to write custom code each time
-the model shifts; however, there is naturally a tipping point for every business
+the model shifts. However, naturally a tipping point exists for every business
 where the automation investment pays for itself and is completely justifiable
 from a scalability perspective.
 
-Be on the lookout for these signs that you are nearing this inflection point:
+Be on the lookout for the following signs that you are nearing this inflection point:
 
-It has been a few months since anything core to the model needed to be changed.
-You are experiencing business growth that is causing people to put in extra time
-doing high volume manual work that is completely based on a logic that a
-computer would understand. You are suffering the ills of human error within this
-same manual work and the time to recover from the errors is hindering your
-business velocity.
+- It has been a few months since anything core to the model needed to be changed.
+- You are experiencing business growth that is causing people to put in extra time
+  doing high volume manual work that is completely based on a logic that a
+  computer would understand.
+- You are suffering the ills of human error within this same manual work and the
+  time to recover from the errors hinders your business velocity.
 
 ### Step 3: Automate it
 
 {{<img src="3.png" title="" alt="" width="200" style="float:right">}}Now that
 you are comfortable that your model will sustain your business processes for the
-foreseeable future—again, “foreseeable” will vary for each business model—build
-automation to mimic the functions in the model, while bringing teams together
+foreseeable future&mdash;again, keep in mind that *foreseeable* varies for each business
+model&dash;build automation to mimic the functions in the model while bringing teams together
 into a single platform.
 
-swimlanesNow is the time to consider your business “swim lanes” (i.e., which
+Now is the time to consider your business *swim lanes* (identifying which
 system or person is handling each step in the process), as well as the rules
-that will ensure accurate data at the right point in the business process.
+that ensure accurate data at the right point in the business process.
 
-Once determined, create rules that the system can enforce for you so that your
-processes will flow efficiently and your key reports will be complete and
-accurate.
+After you determine that, create rules that the system can enforce for you so that your
+processes flow efficiently and your key reports are complete and accurate.
 
 ### Step 4: Pare it back
 
 It is normal during the process of building automation to introduce a lot of
 complexity into a system. Luckily, Salesforce users do not need to see the
-complexity for it to function properly, so much of the fields used to house
-calculations, for example, can be removed from view and be allowed to hum along
-quietly in the background.
+complexity for it to function properly, so you can remove from view many of the
+calculation fields, for example, and allow them to hum along quietly in the background.
 
-Carefully consider what each team needs to be able to see within your system and
+Carefully consider what each team needs to see within your system and
 simplify the user interface per function to help them focus on their specific
 processes.
 
@@ -104,32 +102,32 @@ processes.
 Now we finally get to talk about magic buttons!
 
 At this point in the process, you have simplified the interface and are
-fine-tuning how users will navigate the business process from start to finish.
+fine-tuning how users navigate the business process from start to finish.
 Within Salesforce, you can easily make the right buttons appear to the users
 when it’s the right time to take that specific action. You can even build a
-“wizard” that will guide them through every decision point and use a case in
+*wizard* to guide them through every decision point and use a case in
 your business process.
 
-This is also where it is wise to exercise caution…
+However, this is also where it is wise to exercise caution ...
 
 Building buttons that logically appear when needed is not overly complex or
-costly, so if the logic behind the buttons needs to change occasionally and you
-need to outsource that work, it is not a costly venture. BUT… if you have built
-a fully automated wizard and need to make changes, that will likely require the
+costly. Thus, if the logic behind the buttons needs to change occasionally and you
+need to outsource that work, it is not a costly venture. Yet, if you have built
+a fully automated wizard and need to make changes, that might require the
 skills of a developer, which is generally more costly and involved. That is why
-it is important to “bake in” your model before this step.
+it is important to *bake in* your model before this step.
 
 ### Step 6: Put it on their phone
 
-Although the Salesforce1 Mobile App can be downloaded and used for most basic
+Although you can download the `Salesforce1 Mobile App` and use it for most basic
 Salesforce functions out of the box, you can also customize the application for
 your specific business processes.
 
-If you have defined any “magic buttons” or guided flows, you can also extend
+If you have defined any *magic buttons* or guided flows, you can also extend
 those functions to the mobile application so that every aspect of your business
 can run from mobile devices.
 
-It would, however, be difficult—or perhaps impossible—to jump immediately to
+However, it would be difficult&mdash;or perhaps impossible&mdash;to jump immediately to
 this level of business maturity without first: modeling, baking in, automating,
 paring back, and fine-tuning.
 
