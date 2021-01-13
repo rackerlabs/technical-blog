@@ -18,7 +18,7 @@ slug: "the-magic-button-moving-away-from-excel-to-using-salesforce-on-smartphone
 
 ---
 
-It  takes a couple of steps to use your Salesforce from the comfort of
+It  takes a couple of steps to use your Salesforce&reg; from the comfort of
 your mobile device. Let's take a look!
 
 <!--more-->
@@ -38,7 +38,7 @@ Here’s how…
 ### Step 1: Model your processes
 
 Many companies are sheepish to admit that they are running their business with
-Excel. I would argue that this is a great way to model and nail down your
+Excel&reg;. I would argue that this is a great way to model and nail down your
 processes, important logic, and key calculations. It also enables rapid
 iteration in a simple tool that most people are familiar with.
 
