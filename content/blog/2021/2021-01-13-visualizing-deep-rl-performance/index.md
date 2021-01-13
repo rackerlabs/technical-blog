@@ -145,7 +145,7 @@ line 381, you see the foundation of another addition in the form of an Open AI g
 
 With most of the work done in roughly thirty lines of code, this adds a powerful additional
 level of visualization beyond merely recording gameplay. You can now see the **q** values
-used with Bellman’s equation updating compared to actions available to the agent as the
+relating to the action selection process updating compared to actions available to the agent as the
 gameplay ensues. On the C51 and PPO implementations, this changes slightly as well based
 upon the algorithm. These can serve as useful templates and starting points for writing your
 own additional visual aids within OpenAI gym. Here are two examples of the recordings from
@@ -158,7 +158,7 @@ my own runs on the early Activision games Freeway and Tennis:
 ### My results
 
 Let’s take a look at my results to see how four of the algorithms offered with CleanRL
-compared on three games: Ms. Pacman, Yars Revenge, and Frostbite. These runs are officially
+compared on three games: Ms. Pacman, Yars Revenge, and Gopher. These runs are officially
 part of the project benchmark now.
 
 {{<img src="Picture6.png" title="" alt="">}}
