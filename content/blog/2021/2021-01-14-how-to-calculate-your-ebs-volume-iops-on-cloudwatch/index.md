@@ -100,7 +100,7 @@ Now that we have both Read and Write Throughput sums for the closest data-point 
 **Note:** By choosing a one-minute period, we could have gotten more precise numbers within a minute. However, if there
 are no major disk Ops spikes within those 15 minutes, it should suffice.
 
-Remeber the formula we presented in the beginning?
+Remember the formula we presented in the beginning?
 
     IOPS USED = (READ THROUGHPUT + WRITE THROUGHPUT) / Time (in seconds)
 
