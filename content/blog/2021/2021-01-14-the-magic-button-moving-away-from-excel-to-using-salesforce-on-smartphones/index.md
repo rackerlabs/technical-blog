@@ -7,7 +7,7 @@ author: Rackspace Salesforce Team
 published: true
 authorIsRacker: true
 categories:
-    - General
+    - Salesforce
 metaTitle: "The magic button moving away from Excel to using Salesforce on smartphones"
 metaDescription: "It  takes a couple of steps to use your Salesforce from the
 comfort of your mobile device. Let's take a look!"
