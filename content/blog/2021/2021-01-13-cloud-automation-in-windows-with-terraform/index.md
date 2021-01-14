@@ -72,13 +72,13 @@ Before we get started, let’s look at some of the more crafty functions and fea
 **Sequential script execution in Windows&reg;**. We are shipping several payloads of scripts to the Windows instances
 for bootstrapping. The challenge here is for a single script to handle the following functions:
 
-##### A.  Restart Windows
+##### A. Restart Windows
 
 You can restart Windows by typing the following command in the command line:
 
         Restart-Computer –Force
 
-##### B.  Login automatically
+##### B. Log in automatically
 
 This takes a little more work but nothing crazy. This script uses the registry to tell Windows to restart, what
 credentials to use, and how many times to log in automatically. All of these values are standard Registry
@@ -272,7 +272,7 @@ environment, your routes might be more complex.
               }
             }
 
-##### Association of the route table to the main route table.
+##### Association of the route table to the main route table
 
             ### Main Route Table ###
             resource “aws_main_route_table_association” “main” {
@@ -307,7 +307,7 @@ Now, we associate our previously created DHCP Option Set with our VPC. If we did
             dhcp_options_id = “${aws_vpc_dhcp_options.dns_resolver.id}”
             }
 
-##### Creation of the security groups and rules. 
+##### Creation of the security groups and rules
 
 You might be wondering why we bothered with a Route table when we can control inbound and outbound traffic with Security
 Groups. The answer is that we need the DHCP Option Sets so our servers can route properly to the AD instance.
