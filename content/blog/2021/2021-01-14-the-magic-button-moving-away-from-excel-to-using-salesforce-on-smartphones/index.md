@@ -29,7 +29,7 @@ At Dreamforce 2014, with the advent of the [Salesforce1 mobile app](https://www.
 challenged executives to run their business from their phone. Is this notion a
 myth, or can your company operate through magic buttons on smartphones?
 
-{{<img src="image1.jpg" title="" alt="" style="float:right">}}If your
+{{<img src="image1.png" title="" alt="" style="float:right">}}If your
 business processes are mature and logical, this concept is not mythical.
 However, you must have a clear vision and take deliberate steps to achieve it.
 
@@ -50,7 +50,7 @@ different departments, or automate any workflows. Lucky for your business,
 
 ### Step 2: Bake It In
 
-{{<img src="image2.jpg" title="" alt="" style="float:right">}}Allow your
+{{<img src="image2.png" title="" alt="" style="float:right">}}Allow your
 model to evolve, and then run your business using it for a while (which will
 vary depending on your business model). The longer you have been running stable
 processes in Excel, the more likely you are ready to replace those utilities
