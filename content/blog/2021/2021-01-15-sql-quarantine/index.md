@@ -72,7 +72,6 @@ time, such as the following example:
 {{<img src="Picture1.png" title="" alt="">}}
 
 **Figure 1: Runaway  Sql Statement**
-
 *Image Source: https://www.oracle.com/technetwork/database/bi-datawarehousing/twp-optimizer-with-oracledb-19c-5324206.pdf*
  
 #### Find out about quarantined objects
@@ -90,7 +89,6 @@ concurrently, utilizing CPU to nearly 100% of its capacity.
 {{<img src="Picture2.png" title="" alt="">}}
             
 **Figure 2: CPU consumed by Runaway SQL**
-
 *Image Source: https://www.oracle.com/technetwork/database/bi-datawarehousing/twp-optimizer-with-oracledb-19c-5324206.pdf*
 
 ### SQL Quarantine
@@ -107,7 +105,6 @@ before execution, they no longer consume system resources after being quarantine
 {{<img src="Picture2.png" title="" alt="">}}
   
 **Figure  3: CPU saved by SQL quarantine**
-
 *Image Source: https://www.oracle.com/technetwork/database/bi-datawarehousing/twp-optimizer-with-oracledb-19c-5324206.pdf*
 
 #### Steps to use the quarantine feature
