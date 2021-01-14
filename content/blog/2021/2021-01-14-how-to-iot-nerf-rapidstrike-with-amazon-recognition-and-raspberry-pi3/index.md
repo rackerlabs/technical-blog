@@ -8,7 +8,7 @@ published: true
 authorIsRacker: true
 categories:
     - AWS
-metaTitle: "How to IoT Nerf Rapidstrike with Amazon Recognition and Raspberry Pi3"
+metaTitle: "IoT Nerf Rapidstrike with Amazon Recognition and Raspberry Pi3"
 metaDescription: "Our team of AWS IoT-certified experts can rapidly prototype your IoT concept and have it up and running at lightning speed."
 ogTitle: "How to IoT Nerf Rapidstrike with Amazon Recognition and Raspberry Pi3"
 ogDescription: "Our team of AWS IoT-certified experts can rapidly prototype your IoT concept and have it up and running at lightning speed."
