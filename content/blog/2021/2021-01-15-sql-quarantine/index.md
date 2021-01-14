@@ -188,7 +188,8 @@ Here you need to assign the grants and assign consumer groups to the users.
 
 8. Assign users to resource consumer groups.
 
-        begin    dbms_resource_manager.set_initial_consumer_group('DBA1','SQL_LIMIT');
+        begin
+        dbms_resource_manager.set_initial_consumer_group('DBA1','SQL_LIMIT');
         end;
         /
 
