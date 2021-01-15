@@ -30,8 +30,9 @@ addresses the first pillar, *operational excellence*.
 
 <!--more-->
 
-{{<img src="Picture1.png" title="" alt="" style="float:right">}}Business operations play an
-increasing role in how companies can truly transform business
+{{<img src="Picture1.png" title="" alt="">}}
+
+Business operations play an increasing role in how companies can truly transform business
 through cloud computing. Operational excellence is one of the five *pillars*, or areas of
 focus in the AWS WAF. The AWS WAF operational excellence pillar covers best practices around
 developing robust, repeatable processes for all aspects of managing your cloud infrastructure.
