@@ -127,7 +127,7 @@ standards-based tasks and processes to successfully manage daily operations.
 
 Learn more about the other Well-Architected Framework pillars in this series:
 
-- Security
+- [Security](https://docs.rackspace.com/blog/aws-waf-pillar-two-secutity-tools-and-best-practises/)
 - Reliability
 - Performance Efficiency
 - Cost Optimization
