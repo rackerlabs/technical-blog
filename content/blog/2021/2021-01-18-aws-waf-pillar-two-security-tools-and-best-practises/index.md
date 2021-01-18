@@ -125,18 +125,18 @@ and recovery.
   encrypted RDS&reg; or DynamoDB&reg; database and issue tokens to your end applications.
 - The AWS Key Management Service provides an easy-to-use, secure, and redundant
   key-management service.
-  - Data at rest describes stored data on your AWS infrastructure. Amazon storage products
-    such as S3, EBS, and RDS all support encryption. You can also protect stored data from
-    unauthorized access by using AWS Key Management Service. Data in transit is unstored
-    data that moves between services within your AWS environment and to and from end users.
-    AWS supports HTTPS for endpoint communication to provide encryption in transit and AWS
-    Certificate Manager to support encryption in transit between systems.
-  - Data backup and recovery are critical in the event of data deletion or destruction due
-    to a disaster or malicious attack. Amazon RDS performs regular backups, and you can
-    take periodic snapshots of EBS data. Amazon designed  S3 for the *11 9’s of durability*
-    for data that is likely to be reused. You can configure S3 to create copies of the
-    content that can be duplicated in locations and accounts for additional protection.
-    Amazon Glacier is a lower-cost storage product to archive data for long-term backup.
+- Data at rest describes stored data on your AWS infrastructure. Amazon storage products
+  such as S3, EBS, and RDS all support encryption. You can also protect stored data from
+  unauthorized access by using AWS Key Management Service. Data in transit is unstored
+  data that moves between services within your AWS environment and to and from end users.
+  AWS supports HTTPS for endpoint communication to provide encryption in transit and AWS
+  Certificate Manager to support encryption in transit between systems.
+- Data backup and recovery are critical in the event of data deletion or destruction due
+  to a disaster or malicious attack. Amazon RDS performs regular backups, and you can
+  take periodic snapshots of EBS data. Amazon designed  S3 for the *11 9’s of durability*
+  for data that is likely to be reused. You can configure S3 to create copies of the
+  content that can be duplicated in locations and accounts for additional protection.
+  Amazon Glacier is a lower-cost storage product to archive data for long-term backup.
 
 #### Incident response
 
