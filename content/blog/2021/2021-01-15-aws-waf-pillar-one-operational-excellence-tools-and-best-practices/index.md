@@ -16,7 +16,7 @@ ogTitle: "AWS WAF pillar one: Operational excellence tools and best practices"
 ogDescription: "Operational Excellence is one of the five *pillars*, or areas of
 focus in the AWS WAF. The AWS WAF Operational Excellence Pillar covers best practices around
 developing robust, repeatable processes for all aspects of managing your cloud infrastructure."
-slug: "aws-waf-pillar-one-operational-excellence-tools-and-best-practises"
+slug: "aws-waf-pillar-one-operational-excellence-tools-and-best-practices"
 canonical: https://onica.com/blog/managed-services/aws-waf-operational-excellence/
 
 ---
@@ -127,8 +127,8 @@ standards-based tasks and processes to successfully manage daily operations.
 
 Learn more about the other Well-Architected Framework pillars in this series:
 
-- [Security](https://docs.rackspace.com/blog/aws-waf-pillar-two-secutity-tools-and-best-practises/)
-- Reliability
+- [Security](https://docs.rackspace.com/blog/aws-waf-pillar-two-secutity-tools-and-best-practices/)
+- [Reliability](https://docs.rackspace.com/blog/aws-waf-pillar-three-reliability-tools-and-best-practices/)
 - Performance Efficiency
 - Cost Optimization
 
