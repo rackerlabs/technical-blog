@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AWS WAF pillar two: Security tools and best practises"
+title: "AWS WAF pillar two: Security tools and best practices"
 date: 2021-01-18
 comments: true
 author: Rackspace Onica Team
@@ -8,15 +8,15 @@ published: true
 authorIsRacker: true
 categories:
     - AWS
-metaTitle: "AWS WAF pillar two: Security tools and best practises"
+metaTitle: "AWS WAF pillar two: Security tools and best practices"
 metaDescription: "Security is the second pillar in the AWS WAF, probably because “Is it safe?”
 is among the first questions many companies ask when considering migrating infrastructure,
 services, and applications to the cloud."
-ogTitle: "AWS WAF pillar two: Security tools and best practises"
+ogTitle: "AWS WAF pillar two: Security tools and best practices"
 ogDescription: "Security is the second pillar in the AWS WAF, probably because “Is it safe?”
 is among the first questions many companies ask when considering migrating infrastructure,
 services, and applications to the cloud."
-slug: "aws-waf-pillar-two-security-tools-and-best-practises"
+slug: "aws-waf-pillar-two-security-tools-and-best-practices"
 
 ---
 
@@ -58,11 +58,12 @@ of concern:
 - **Data Protection**
 - **Incident Response**
 
-### The WAF Security Pillar: AWS Tools and Best Practices
+### The WAF security pillar: AWS tools and best practices
 
-This post summarizes the AWS Well-Architected Framework: Security Pillar document. We
-examine each area of the WAF Security Pillar and review the AWS tools and best practices
-that you can use to address each one.
+This post summarizes the
+[AWS Well-Architected Framework: Security Pillar](https://wa.aws.amazon.com/wat.pillar.security.en.html)
+document. We examine each area of the WAF Security Pillar and review the AWS tools and best
+practices that you can use to address each one.
 
 #### Identity and access management
 
@@ -155,8 +156,8 @@ tools you need to be safe and responsible.
 
 Learn more about the other Well-Architected Framework pillars in this series:
 
-- [Operational Excellence](https://docs.rackspace.com/blog/aws-waf-pillar-one-operational-excellence-tools-and-best-practises/)
-- Reliability
+- [Operational Excellence](https://docs.rackspace.com/blog/aws-waf-pillar-one-operational-excellence-tools-and-best-practices/)
+- [Reliability](https://docs.rackspace.com/blog/aws-waf-pillar-three-reliability-tools-and-best-practices/)
 - Performance Efficiency
 - Cost Optimization
 
