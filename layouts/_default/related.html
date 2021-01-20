@@ -6,7 +6,7 @@
             {{- $len := len . -}}
             <span>in {{ range $index, $value := . }}
                 <a href="{{ "/categories/" }}{{ $value | urlize }}" class="post--category" data-category="{{ $value | lower }}">
-                {{ $value | humanize }}
+                {{ $value }}
                 </a>{{ if not (eq $len ($index | add 1)) }}, {{- end -}}
                 {{- end -}}</span>
             {{- end -}}

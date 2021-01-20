@@ -173,7 +173,7 @@ description = ["description"]
     weight = 3
     [[menu.main]]
         identifier = "technical-blog"
-        name ="Technical Blog"
+        name ="Expert Insights Tech Blog"
         url ="/blog"
         weight = 1
         parent = "blogs"
