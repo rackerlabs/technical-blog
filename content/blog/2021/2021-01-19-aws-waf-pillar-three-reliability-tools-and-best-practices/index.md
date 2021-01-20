@@ -156,7 +156,7 @@ Learn more about the other Well-Architected Framework pillars in this series:
 
 - [Operational Excellence](https://docs.rackspace.com/blog/aws-waf-pillar-one-operational-excellence-tools-and-best-practices/)
 - [Security](https://docs.rackspace.com/blog/aws-waf-pillar-two-security-tools-and-best-practices/)
-- Performance Efficiency
+- [Performance Efficiency](https://docs.rackspace.com/blog/aws-waf-pillar-four-performance-efficiency-tools-and-best-practices/)
 - Cost Optimization
 
 <a class="cta teal" id="cta" href="https://www.rackspace.com/cloud/aws">Learn more about Rackspace AWS services.</a>
