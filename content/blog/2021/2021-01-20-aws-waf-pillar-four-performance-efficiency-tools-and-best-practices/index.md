@@ -24,33 +24,51 @@ slug: "aws-waf-pillar-four-performance-efficiency-tools-and-best-practices"
 
 ---
 
-
+Efficient business operations play an increasing role in how companies can truly transform
+business through cloud computing. 
 
 <!--more-->
 
 {{<img src="Picture1.png" title="" alt="">}}
 
-AWS Performance Efficiency Tools & Best Practices
+Harnessing the full power of the [AWS cloud](https://onica.com/amazon-web-services/)
+involves far more than building a solid technical infrastructure. Amazon developed the
+[Well-Architected Framework (WAF)](https://aws.amazon.com/architecture/well-architected/?wa-lens-whitepapers.sort-by=item.additionalFields.sortDate&wa-lens-whitepapers.sort-order=desc)
+to enable companies to build the most secure, high-performing, resilient, and efficient
+infrastructure possible for their businesses.
 
-
-Harnessing the full power of the [AWS cloud](https://onica.com/amazon-web-services/) involves far more than building a solid technical infrastructure. Amazon developed the [Well-Architected Framework (WAF)](https://aws.amazon.com/architecture/well-architected/?wa-lens-whitepapers.sort-by=item.additionalFields.sortDate&wa-lens-whitepapers.sort-order=desc) to enable companies to build the most secure, high-performing, resilient, and efficient infrastructure possible for their businesses.
-Business operations play an increasing role in how companies can truly transform business through cloud computing. 
-
-Operational Excellence, one of the five “pillars,” or areas of focus in the AWS WAF, covers best practices around developing robust, repeatable processes for all aspects of managing your cloud infrastructure.
+Operational excellence, one of the five pillars or areas of focus in the AWS WAF, covers
+best practices around developing robust, repeatable processes for all aspects of managing
+your cloud infrastructure.
 
 ### Operational Excellence in the AWS cloud starts with preparation
 
-Like a pilot runs through a pre-flight checklist before takeoff, AWS recommends using operational checklists to ensure that your workloads are ready for production operation and prevent migrating untested workloads to production.
+Like a pilot runs through a pre-flight checklist before takeoff, AWS recommends using
+operational checklists to ensure that your workloads are ready for production operation
+and prevent migrating untested workloads to production.
 
 #### Use checklists
+
 Create and use the following checklists for operational excellence in AWS:
-- **Operational Checklist**: Create an operational checklist that you use to evaluate if you are ready to operate the workload.
-- **Planning checklist**: This might seem redundant, but you should have a plan that syncs with company events, milestones, and roadmaps to stay in front of events that might cause sudden increases in traffic and requests for specific resources, where network performance could impact a company’s revenue or reputation.
-- **Security checklist**: Security is among the most misunderstood features of the cloud. Develop a detailed security checklist and use it to ensure that you are ready to securely operate the workload and respond to any security event or attack.
+
+- **Operational Checklist**: Create an operational checklist that you use to evaluate if
+  you are ready to operate the workload.
+- **Planning checklist**: This might seem redundant, but you should have a plan that syncs
+  with company events, milestones, and roadmaps to stay in front of events that might cause
+  sudden increases in traffic and requests for specific resources, where network performance
+  could impact a company’s revenue or reputation.
+- **Security checklist**: Security is among the most misunderstood features of the cloud.
+  Develop a detailed security checklist and use it to ensure that you are ready to securely
+  operate the workload and respond to any security event or attack.
 
 #### AWS configuration management best practices
 
-You should document how you monitor, measure, and manage your architecture, your environments, and the configuration parameters for resources within them in a way that allows you to easily identify components for tracking and troubleshooting. Changes to configurations should also be trackable and automated. Within a configuration management database (CMDB), you should record a detailed resource tracking program by using tags, metadata, and thorough, accessible documentation of your entire architecture and infrastructure configuration.
+You should document how you monitor, measure, and manage your architecture, your environments,
+and the configuration parameters for resources within them in a way that allows you to
+easily identify components for tracking and troubleshooting. Changes to configurations
+should also be trackable and automated. Within a configuration management database (CMDB),
+you should record a detailed resource tracking program by using tags, metadata, and thorough,
+accessible documentation of your entire architecture and infrastructure configuration.
 
 ### Automate cloud deployment
 
