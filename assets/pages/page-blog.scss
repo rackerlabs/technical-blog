@@ -98,8 +98,11 @@ img[src$="cloudformation-launch-stack.png"] {
   }
   .tagline {
     display: block;
-    font-size: 15px;
+    font-size: 18px;
     text-transform: uppercase;
+    margin-top: 0;
+    padding-bottom: 0;
+    width: 30%;
 }
 }
 
