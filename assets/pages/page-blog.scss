@@ -81,6 +81,12 @@ img[src$="cloudformation-launch-stack.png"] {
   background-size: cover;
   z-index: 1;
   padding: 120px 100px 120px 100px;
+  @media screen and (max-width: 499px) {
+    padding: 40px 100px;
+  }
+  @media (min-width: 500px) and (max-width: 800px) {
+    padding: 100px 100px;
+  }
   h1 {
     font-family: "titillium-light",arial,sans-serif;
     font-style: normal;
