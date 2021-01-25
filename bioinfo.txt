@@ -336,6 +336,13 @@ defending networks from Advanced Persistent Threats, and has managed security
 operations teams across all levels. You can follow Chris on LinkedIn at
 linkedin.com/in/Christopher-a-evans."
 
+Fox, Nate 
+authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U010X7DPYTV-64948ceb6a70-512'
+bio: "Over 20 years of progressive experience in the field of Information Technology 
+with in-depth knowledge and experience in systems planning, design, configuration, 
+and management. Reliable self-starter with the ability to plan, design, implement, 
+and manage small, medium, and large systems."
+
 Friedman, Jordan
 authorAvatar: 'https://s.gravatar.com/avatar/f2f71a634ccd1e79ea3b3b317f8b4161'
 bio: n/a
@@ -353,8 +360,12 @@ bio: "Nick Garratt is a Principal Architect in the Rackspace Managed Public
 Clouds Product Architecture Team."
 
 Gates, Jason
-authorAvatar: 'https://s.gravatar.com/avatar/ff2ec8ee582b2e949109b7fd353734f2'
-bio: n/a
+authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-UCMG3FH50-6903d26991a4-512'
+bio: "Jason Gates serves as the global leader of Business Transformation Services
+at Rackspace. With over 20 years of business consulting experience, Jason has
+provided management consulting, business process, renewable energy integration,
+IT strategy, and IT system integration services at companies like Booze Allen Hamilton,
+ACME Business Consulting, Forsythe Solutions Group, and ARC."
 
 Gembali, Balaganesh
 authorAvatar: 'https://secure.gravatar.com/avatar/ce5ceb1aa8757ef235ddaa21265863eb'
@@ -363,12 +374,6 @@ Administrator since I began my career and worked for top IT companies. I have
 14 years of IT experience and currently work for Rackspace as a Senior Oracle
 Apps DBA. I am passionate about electronic gadgets, travelling, exploring, and
 tasting delicious food."
-
-Miller, Eric
-authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U010VQY2JLA-47bbb9b85ab3-512'
-bio: "Accomplished tech leader, with 20 years of career success in Enterprise IT.
-Provides strategic consulting leadership with a proven track record of practice
-building in the Amazon Partner Network (APN) ecosystem."
 
 Gogineni, Venkata,
 authorAvatar: 'https://secure.gravatar.com/avatar/9e51ecbb063f9454b1de2217cc5b0dff'
@@ -486,6 +491,13 @@ authorAvatar: 'https://s.gravatar.com/avatar/684d0432fcd3c1308b73ddd4e4c997f6'
 bio: "I am Sandeep and have 9+ years of Experience and I am expert in oracle apps dba. I
 also have hands-on knowledge on Oracle products like Oracle EBS 11i,R12 and R12.2, Demantra,
 JDE CNC, Oracle Transportation Management, OBIEE, Inspyrus, and Hyperion."
+
+Kalamaro, Roy 
+authorAvatar: 'https://ca.slack-edge.com/T092PUK16-U2TEASPJ9-g256bc697d78-512'
+bio: "Extensive experience in Cloud Computing technologies, security, containerized solutions, 
+Linux OS administration (Debian and RPM based), Windows servers and networking.
+Highly passionate about automation, immutable infrastructure through code and utilizing 
+cloud native services to follow best practices."
 
 Kalar, Erika
 authorAvatar: n/a
@@ -662,7 +674,9 @@ investigations."
 
 Miller, Eric
 authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U010VQY2JLA-47bbb9b85ab3-512'
-bio:
+bio: "Accomplished tech leader, with 20 years of career success in Enterprise IT.
+Provides strategic consulting leadership with a proven track record of practice
+building in the Amazon Partner Network (APN) ecosystem."
 
 Mishra, Manoj
 authorAvatar: 'https://s.gravatar.com/avatar/9498305cda9dc4fe9d8f5873b09ff1e2'
