@@ -112,7 +112,7 @@ Security is a significant concern for organizations operating in or moving to
 the cloud. Rackspace accepts the responsibility of securing your data and gaining
 your trust as you continue your journey in the cloud.
 
-Visit [www.rackspace.com](https://www.rackspace.com) and click **Sales Chat**
-to get started.
+Use the Feedback tab to make any comments or ask questions. You can also click
+**Let's Talk** to [start the conversation](https://www.rackspace.com/).
 
 Use the Feedback tab to make any comments or ask questions.

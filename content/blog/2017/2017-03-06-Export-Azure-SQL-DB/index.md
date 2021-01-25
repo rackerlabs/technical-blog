@@ -42,7 +42,7 @@ The script will export out the BACPAC uri which you can download the BACPAC file
 
 <a class="cta red" id="cta" href="https://www.rackspace.com/dba-services">Learn more about Databases</a>
 
-Visit [www.rackspace.com](https://www.rackspace.com) and click **Sales Chat**
-to get started.
+Use the Feedback tab to make any comments or ask questions. You can also click
+**Let's Talk** to [start the conversation](https://www.rackspace.com/).
 
 Use the Feedback tab to make any comments or ask questions.

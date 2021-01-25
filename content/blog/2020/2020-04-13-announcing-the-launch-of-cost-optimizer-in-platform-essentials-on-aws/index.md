@@ -88,7 +88,7 @@ saved an average of 37%. We look forward to expanding delivery of this service
 to EMEA in addition to North America, and in the future, we will expand to other
 regions and public clouds!
 
-Visit [www.rackspace.com](https://www.rackspace.com) and click **Sales Chat**
-to get started.
+Use the Feedback tab to make any comments or ask questions. You can also click
+**Let's Talk** to [start the conversation](https://www.rackspace.com/).
 
 Use the Feedback tab to make any comments or ask questions.

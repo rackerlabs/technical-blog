@@ -232,7 +232,7 @@ addition of inter-region peering with TGW has made life that little bit simpler
 when managing multiple VPCs located in various regions around the globe.
 
 Use the Feedback tab to make any comments or ask questions. You can also
-visit [www.rackspace.com](https://www.rackspace.com) and click **Sales Chat**
-to get started.
+Use the Feedback tab to make any comments or ask questions. You can also click
+**Let's Talk** to [start the conversation](https://www.rackspace.com/).
 
 <a class="cta blue" id="cta" href="https://www.rackspace.com/managed-aws">Learn more about our AWS services.</a>

@@ -90,8 +90,8 @@ the threat information directly from the AWS tools into our SEIM and analyze the
 data to stay a step ahead.
 
 Use the Feedback tab to make any comments or ask questions. You can also
-visit [www.rackspace.com](https://www.rackspace.com) and click **Sales Chat**
-to get started.
+Use the Feedback tab to make any comments or ask questions. You can also click
+**Let's Talk** to [start the conversation](https://www.rackspace.com/).
 
 <a class="cta blue" id="cta" href="https://www.rackspace.com/resources/rackspace-service-blocks-cloud-native-security-aws">Learn more about our CNS for AWS services.</a>
 
