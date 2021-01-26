@@ -291,5 +291,3 @@ I hope you are starting to realize the amazing power Heat templates give you ove
 
 Use the Feedback tab to make any comments or ask questions. You can also click
 **Let's Talk** to [start the conversation](https://www.rackspace.com/).
-
-Use the Feedback tab to make any comments or ask questions.
