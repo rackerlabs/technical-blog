@@ -134,8 +134,8 @@ Both tools have great offerings when you need to set up a multi-account solution
 with AWS best practices. It’s just a matter of which solution best meets your
 business needs.
 
-Use the Feedback tab to make any comments or ask questions. You can also
+<a class="cta teal" id="cta" href="https://www.rackspace.com/managed-aws">Learn more about our AWS services.</a>
+
 Use the Feedback tab to make any comments or ask questions. You can also click
 **Let's Talk** to [start the conversation](https://www.rackspace.com/).
 
-<a class="cta teal" id="cta" href="https://www.rackspace.com/managed-aws">Learn more about our AWS services.</a>
