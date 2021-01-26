@@ -177,5 +177,3 @@ in this blog were tested on Oracle Release 12.1.3.
 
 Use the Feedback tab to make any comments or ask questions. You can also click
 **Let's Talk** to [start the conversation](https://www.rackspace.com/).
-
-Use the Feedback tab to make any comments or ask questions.
