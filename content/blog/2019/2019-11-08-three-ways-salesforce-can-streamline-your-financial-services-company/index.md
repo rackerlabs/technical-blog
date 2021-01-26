@@ -120,5 +120,3 @@ gets the best solution in the most reasonable time frame possible.
 
 Use the Feedback tab to make any comments or ask questions. You can also click
 **Let's Talk** to [start the conversation](https://www.rackspace.com/).
-
-Use the Feedback tab to make any comments or ask questions.
