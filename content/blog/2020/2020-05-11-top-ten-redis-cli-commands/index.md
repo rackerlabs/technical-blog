@@ -179,7 +179,6 @@ options really helps you analyze a problematic Redis server.
 
 <a class="cta blue" id="cta" href="https://www.rackspace.com/data/dba-services">Learn more about Rackspace DBA Services.</a>
 
-Visit [www.rackspace.com](https://www.rackspace.com) and click **Sales Chat**
-to get started.
+Use the Feedback tab to make any comments or ask questions. You can also click
+**Let's Talk** to [start the conversation](https://www.rackspace.com/).
 
-Use the Feedback tab to make any comments or ask questions.

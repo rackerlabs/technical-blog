@@ -74,7 +74,6 @@ QA, and production. Rackspace experts tailor this service to your specific workf
 while implementing relevant best practices.
 
 
-Visit [www.rackspace.com](https://www.rackspace.com) and click **Sales Chat**
-to get started.
+Use the Feedback tab to make any comments or ask questions. You can also click
+**Let's Talk** to [start the conversation](https://www.rackspace.com/).
 
-Use the Feedback tab to make any comments or ask questions.

@@ -98,7 +98,5 @@ OpenStack Train v20 includes enhancements to the following OpenStack services:
 
 <a class="cta teal" id="cta" href="https://www.rackspace.com/openstack/private">Learn more about Rackspace OpenStack Private Cloud</a>
 
-Visit [www.rackspace.com](https://www.rackspace.com) and click **Sales Chat**
-to get started.
-
-Use the Feedback tab to make any comments or ask questions.
+Use the Feedback tab to make any comments or ask questions. You can also click
+**Let's Talk** to [start the conversation](https://www.rackspace.com/).

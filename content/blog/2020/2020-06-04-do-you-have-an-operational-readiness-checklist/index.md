@@ -167,7 +167,5 @@ It's worth noting this is a non-exhaustive list, and additional considerations
 depend on your organization. If you need any support with getting cloud-ready,
 Rackspace is here to help.
 
-Visit [www.rackspace.com](https://www.rackspace.com) and click **Sales Chat**
-to get started.
-
-Use the Feedback tab to make any comments or ask questions.
+Use the Feedback tab to make any comments or ask questions. You can also click
+**Let's Talk** to [start the conversation](https://www.rackspace.com/).

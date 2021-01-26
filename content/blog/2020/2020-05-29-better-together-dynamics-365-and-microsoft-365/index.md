@@ -106,7 +106,6 @@ Dynamics 365, see [Reinvent business productivity with Microsoft Dynamics 365 an
   <a class="cta blue" id="cta" href="https://www.rackspace.com/microsoft/dynamics-365?_ga=2.8614320.403771553.1589302934-2080275108.1581706274">Learn more about our Dynamics 365 offerings.</a>
 {{< /rawhtml >}}
 
-Visit [www.rackspace.com](https://www.rackspace.com) and click **Sales Chat**
-to get started.
+Use the Feedback tab to make any comments or ask questions. You can also click
+**Let's Talk** to [start the conversation](https://www.rackspace.com/).
 
-Use the Feedback tab to make any comments or ask questions.
