@@ -230,5 +230,3 @@ We now have the major OpenStack processes running on the controller node, and in
 
 Use the Feedback tab to make any comments or ask questions. You can also click
 **Let's Talk** to [start the conversation](https://www.rackspace.com/).
-
-Use the Feedback tab to make any comments or ask questions.
