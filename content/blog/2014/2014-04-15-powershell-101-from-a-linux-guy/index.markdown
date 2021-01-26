@@ -287,5 +287,3 @@ for ((i=0; i < 10; i++)) ;  do  echo $i ; done | for ($i=0;$i -lt 10; $i++) { ec
 
 Use the Feedback tab to make any comments or ask questions. You can also click
 **Let's Talk** to [start the conversation](https://www.rackspace.com/).
-
-Use the Feedback tab to make any comments or ask questions.
