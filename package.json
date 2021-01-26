@@ -10,7 +10,7 @@
         "start:hugo": "make serve",
         "start:webpack": "webpack --mode=development --watch",
         "build": "make install && rm -rf static/assets && run-s build:webpack build:hugo && npm run algolia",
-        "build-preview": "make install && rm -rf static/assets && run-s build:webpack build:hugo-preview && npm run algolia",
+        "build-preview": "make install && rm -rf static/assets && run-s build:webpack build:hugo-preview",
         "build:local": "rm -rf static/assets && run-s build:webpack build:hugo && npm run algolia",
         "build:hugo": "make build",
         "build:hugo-preview": "make build-preview",
