@@ -145,7 +145,6 @@ decisions without the infrastructure provided by the cloud. The flight to the
 cloud is well underway.  Who knows where we'll end up? Next stop, the southern
 hemisphere of Mars cloud region.
 
-Visit [www.rackspace.com](https://www.rackspace.com) and click **Sales Chat**
-to get started.
+Use the Feedback tab to make any comments or ask questions. You can also click
+**Let's Talk** to [start the conversation](https://www.rackspace.com/).
 
-Use the Feedback tab to make any comments or ask questions.

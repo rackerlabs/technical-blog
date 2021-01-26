@@ -685,7 +685,5 @@ I hope you'll join me again for the next part of
 
 <a class="cta purple" id="cta" href="https://www.rackspace.com/solutions/it-transformation">Learn more about IT Transformation</a>
 
-Visit [www.rackspace.com](https://www.rackspace.com) and click **Sales Chat**
-to get started.
-
-Use the Feedback tab to make any comments or ask questions.
+Use the Feedback tab to make any comments or ask questions. You can also click
+**Let's Talk** to [start the conversation](https://www.rackspace.com/).

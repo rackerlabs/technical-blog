@@ -89,12 +89,6 @@ We provide certified security experts in our fully-staffed global SOC. We pull
 the threat information directly from the AWS tools into our SEIM and analyze the
 data to stay a step ahead.
 
-Use the Feedback tab to make any comments or ask questions. You can also
-visit [www.rackspace.com](https://www.rackspace.com) and click **Sales Chat**
-to get started.
-
-<a class="cta blue" id="cta" href="https://www.rackspace.com/resources/rackspace-service-blocks-cloud-native-security-aws">Learn more about our CNS for AWS services.</a>
-
 ### Helpful resources
 
 - Joint webinar with AWS: [Cloud Native Application Security: Have You Covered All Your Bases?](https://www.brighttalk.com/webcast/17680/387904?utm_source=Rackspace&utm_medium=brighttalk&utm_campaign=387904).
@@ -102,3 +96,9 @@ to get started.
 - Ebook: [AWS Shared Responsibility Model](https://s3.amazonaws.com/files.newscred.com/88cab60542c8158bc82f733cce512786).
 
 - Rackspace Fanatical Support for AWS: [Cloud Native Security](https://developer.rackspace.com/docs/fanatical-support-aws/cloud-native-security/)
+
+<a class="cta blue" id="cta" href="https://www.rackspace.com/resources/rackspace-service-blocks-cloud-native-security-aws">Learn more about our CNS for AWS services.</a>
+
+Use the Feedback tab to make any comments or ask questions. You can also click
+**Let's Talk** to [start the conversation](https://www.rackspace.com/).
+

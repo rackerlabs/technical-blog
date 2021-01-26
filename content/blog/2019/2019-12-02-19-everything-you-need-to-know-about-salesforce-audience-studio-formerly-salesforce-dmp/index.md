@@ -141,7 +141,5 @@ Contact our team of technology and marketing experts to get started with Salesfo
 
 <a class="cta blue" id="cta" href="https://www.rackspace.com/salesforce">Learn more about Salesforce Customer Relationship Management (CRM)</a>
 
-Visit [www.rackspace.com](https://www.rackspace.com) and click **Sales Chat**
-to get started.
-
-Use the Feedback tab to make any comments or ask questions.
+Use the Feedback tab to make any comments or ask questions. You can also click
+**Let's Talk** to [start the conversation](https://www.rackspace.com/).
