@@ -36,7 +36,7 @@ and [this Stack Overflow question](https://stackoverflow.com/questions/18858120/
 we made it our mission to figure out how to get instances that were missing a tag through
 the AWS command line interface (CLI) instead of using external tools like jq or python.
 
-### The `--Query` Parameter, JMESPath, and filtering
+### The --Query Parameter, JMESPath, and filtering
 
 [JMESPath](https://jmespath.org/) is the engine behind the **--query** parameter in AWS
 CLI. In its most basic form, it helps you filter out or traverse JSON. AWS has
@@ -49,7 +49,7 @@ Using the bracket and a question mark triggers the JMESPath filter: `[? ... ]`
 #### Find an instance with a specific tag
 
 For example, many people want to get the instance **Name** tag and the **InstanceId**. You
-can do this by using the filter for the `Tags → Key=='Name'`, as shown in the following
+can do this by using the filter for the `Tags -> Key=='Name'`, as shown in the following
 example:
 
     aws ec2 describe-instances \
