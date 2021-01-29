@@ -3,7 +3,7 @@ layout: post
 title: "How to use the AWS CLI to find untagged instances"
 date: 2021-01-29
 comments: true
-author: Onica team
+author: Rackspace Onica team
 published: true
 authorIsRacker: true
 categories:
