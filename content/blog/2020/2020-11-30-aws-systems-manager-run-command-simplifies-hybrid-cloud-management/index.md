@@ -3,15 +3,11 @@ layout: post
 title: "AWS Systems Manager run command simplifies hybrid cloud management"
 date: 2020-11-30
 comments: true
-author: Matt Charoenrath
-authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U0118EALE77-fa48a7c11b02-72'
-bio: "Marketing leader experienced in growing brands while scaling and 
-modernizing marketing organizations through a balance of creativity, 
-process & technology to captivate audiences and achieve results."
+author: Rackspace Onica Team
 published: true
 authorIsRacker: true
 categories:
-    - General
+    - AWS
 metaTitle: "AWS Systems Manager run command simplifies hybrid cloud management"
 metaDescription: "Although a hybrid cloud environment is not always ideal, clients who are 
 facing certain limitations in their workloads might need it. If that’s your situation, we want to make sure 
