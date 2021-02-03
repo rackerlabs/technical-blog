@@ -3,11 +3,7 @@ layout: post
 title: "The six best ways to reduce costs on AWS"
 date: 2020-12-01
 comments: true
-author: Matt Charoenrath
-authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U0118EALE77-fa48a7c11b02-72'
-bio: "Marketing leader experienced in growing brands while scaling and 
-modernizing marketing organizations through a balance of creativity, 
-process & technology to captivate audiences and achieve results."
+author: Rackspace Onica Team
 published: true
 authorIsRacker: true
 categories:
@@ -27,10 +23,11 @@ canonical: https://onica.com/blog/managed-services/best-ways-to-reduce-costs-in-
 
 *Originally published in May 2019 at Onica.com/blog*
 
-According to Gartner, without cloud cost optimization, businesses could be overspending by more than 
-70% in the cloud. It’s easy for companies to tie up excess spend in current tooling without realizing it. 
-This post offers six things you can do to help improve your infrastructure while freeing up spend
-for other business initiatives.
+According to [Gartner](https://www.gartner.com/en), without cloud cost optimization,
+businesses could be overspending by more than 70% in the cloud. It’s easy for companies to
+tie up excess spend in current tooling without realizing it. This post offers six things
+you can do to help improve your infrastructure while freeing up spend for other business
+initiatives.
 
 <!--more-->
 

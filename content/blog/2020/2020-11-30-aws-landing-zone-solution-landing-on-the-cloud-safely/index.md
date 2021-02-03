@@ -3,11 +3,7 @@ layout: post
 title: "AWS Landing Zone solution: Landing on the Cloud safely"
 date: 2020-11-30
 comments: true
-author: Matt Charoenrath
-authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U0118EALE77-fa48a7c11b02-72'
-bio: "Marketing leader experienced in growing brands while scaling and 
-modernizing marketing organizations through a balance of creativity, 
-process & technology to captivate audiences and achieve results."
+author: Rackspace Onica Team
 published: true
 authorIsRacker: true
 categories:
