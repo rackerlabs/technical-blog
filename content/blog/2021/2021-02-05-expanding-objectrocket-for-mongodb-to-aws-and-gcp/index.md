@@ -3,17 +3,15 @@ layout: post
 title: "Expanding ObjectRocket for MongoDB to AWS and GCP"
 date: 2021-02-05
 comments: true
-author: Steve Croce
+author: James Hong
 published: true
 authorIsRacker: true
-authorAvatar: 'https://gravatar.com/avatar/56d03e2d0f853cff39c129cab3761d49'
-bio: "As Senior Product Manager for the ObjectRocket Database-as-a-Service
-offering and Head of User Experience for ObjectRocket, Steve oversees the
-day-to-day planning, development, and optimization of ObjectRocket-supported
-database technologies, clouds, and features. A product manager by day, he still
-likes to embrace his engineer roots by night and develop with Elasticsearch,
-SQL, Kubernetes, and Django. He's spoken at KubeCon + CloudNativeCon, OpenStack summit,
-Percona Live, and various Rackspace events."
+bio: "James has always been interested in anything and everything technology
+since he was 5 years old. Started out with just exploring the internet and
+tinkering with computers during the dial-up era to learning programming in junior
+high and eventually graduating from University of Illinois Urbana-Champaign with
+a bachelor’s in Computer Science. James is currently a Product Manager at
+ObjectRocket creating exciting new features for Redis and Elasticsearch."
 categories:
     - Database
     - ObjectRocket
