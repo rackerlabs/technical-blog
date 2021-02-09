@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Install PeoplSoft by using DPK"
+title: "Install PeopleSoft by using DPK"
 date: 2021-02-10
 comments: true
 author: Ankit Kumar
@@ -8,9 +8,9 @@ published: true
 authorIsRacker: true
 categories:
     - General
-metaTitle: "Install PeoplSoft by using DPK"
+metaTitle: "Install PeopleSoft by using DPK"
 metaDescription: "This post explains the PeopleSoft DPK installation steps and the available options."
-ogTitle: "Install PeoplSoft by using DPK"
+ogTitle: "Install PeopleSoft by using DPK"
 ogDescription: "This post explains the PeopleSoft DPK installation steps and the available options."
 slug: "install-peoplesoft-by-using-dpk"
 
@@ -19,7 +19,7 @@ slug: "install-peoplesoft-by-using-dpk"
 Before the release of PeopleTools 8.56 (in the year 2017), you had to download all
 PeopleSoft&reg; components (web server, application server, Java, and creation of domains)
 and install them individually on the server. However, with automation and innovation picking
-up pace, Oracle&reg; has started delivering a deployment package (DPK) that you can use to
+up pace, Oracle&reg; now provides a deployment package (DPK) that you can use to
 install everything at once. 
 
 <!--more-->
