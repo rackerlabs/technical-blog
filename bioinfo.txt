@@ -545,6 +545,10 @@ Kumar, Anil
 authorAvatar: 'https://s.gravatar.com/avatar/3f1352f21438061d35ff20470433f3da'
 bio: n/a
 
+Kumar, Ankit
+authorAvatar: ''
+bio: n/a
+
 Kumar, Binit
 authorAvatar: 'https://s.gravatar.com/avatar/fa095e4b2e5de083e30a714448e71451'
 bio: "Accomplished Database Consultant with years of in-depth knowledge and
@@ -964,6 +968,11 @@ Thota, Narayanaswamy
 authorAvatar: 'https://s.gravatar.com/avatar/cfa94cc905a24b77c0001f2d3edfea95'
 bio: "I will find new habits, new thoughts, new rules. I will become something else.
 Today, I have 5+ years of experience in computer networking and network security."
+
+Tiwari, Brijesh
+authorAvatar: 'https://s.gravatar.com/avatar/d7873b7924eea8eb4f71d9ef733d4cbb'
+bio: "I am a passionate Oracle Apps DBA with more than 12 years of experience in Oracle
+products."
 
 Toews, Everett
 authorAvatar: 'https://www.gravatar.com/avatar/c1a75adb52f40016a480cee292527895'
