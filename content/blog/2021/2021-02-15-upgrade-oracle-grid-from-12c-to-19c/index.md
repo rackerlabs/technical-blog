@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Upgrade Oracle Grid from 12c to 19c"
-date: 2021-02-12
+date: 2021-02-15
 comments: true
 author: Brijesh Tiwari
 authorAvatar: 'https://s.gravatar.com/avatar/d7873b7924eea8eb4f71d9ef733d4cbb'
