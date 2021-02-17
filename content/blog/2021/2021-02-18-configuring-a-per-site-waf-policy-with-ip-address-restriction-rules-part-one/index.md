@@ -5,7 +5,7 @@ date: 2021-02-18
 comments: true
 author: Hitesh Vadgama
 authorAvatar: 'https://secure.gravatar.com/avatar/d4498b60dfc7b2727de0dd451c67df5b'
-bio: "bio: "Hitesh is an Azure Solutions Architect at Rackspace, with broad experience working
+bio: "Hitesh is an Azure Solutions Architect at Rackspace, with broad experience working
 with various customers across a multitude of industry verticals to help solve technical
 problems and deliver fit-for-purpose solutions."
 published: true
