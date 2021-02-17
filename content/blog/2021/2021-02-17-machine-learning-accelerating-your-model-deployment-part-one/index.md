@@ -12,9 +12,6 @@ machine learning areas. He also loves promoting AWS data and ML services through
 webinars and events and passing his knowledge onto others.
 published: true
 authorIsRacker: true
-categories:
-    - General
-    - AWS
 metaTitle: "Machine learning: Accelerating your model deployment&mdash;Part one"
 metaDescription: "Leading companies have begun to use machine learning and artificial
 intelligence to learn from this data and harness it for predictive analytics. This shift,
