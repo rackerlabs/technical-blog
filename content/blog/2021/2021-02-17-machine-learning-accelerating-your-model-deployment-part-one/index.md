@@ -9,9 +9,12 @@ bio: "Mark is an AWS and Cloud-Based Solution Specialist, Knowledge Addict,
 Relationship Builder, and Practice Manager of Data Science & Engineering at
 Rackspace Onica. His passion is in the data, artificial intelligence, and
 machine learning areas. He also loves promoting AWS data and ML services through
-webinars and events and passing his knowledge onto others.
+webinars and events and passing his knowledge onto others."
 published: true
 authorIsRacker: true
+categories:
+    - General
+    - AWS
 metaTitle: "Machine learning: Accelerating your model deployment&mdash;Part one"
 metaDescription: "Leading companies have begun to use machine learning and artificial
 intelligence to learn from this data and harness it for predictive analytics. This shift,
