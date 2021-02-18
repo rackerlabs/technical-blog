@@ -100,7 +100,8 @@ items in this walkthrough:
 
 ### Next steps
 
-Stay tuned for post 2 in this series, which covers the Application Gateway configuration.
+Stay tuned for [post 2](https://docs.rackspace.com/blog/configuring-a-per-site-waf-policy-with-ip-address-restriction-rules-part-two/)
+in this series, which covers the Application Gateway configuration.
 
 <a class="cta red" id="cta" href="https://www.rackspace.com/security/application-security">Learn more about our web application security services.</a>
 
