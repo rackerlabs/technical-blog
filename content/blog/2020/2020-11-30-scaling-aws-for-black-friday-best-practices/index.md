@@ -3,13 +3,11 @@ layout: post
 title: "Scaling AWS for Black Friday: Best practices"
 date: 2020-11-30
 comments: true
-author: Matt Charoenrath
-authorAvatar: ''
-bio: ""
+author: Rackspace Onica Team
 published: true
 authorIsRacker: true
 categories:
-    - General
+    - AWS
 metaTitle: "Scaling AWS for Black Friday: Best practices"
 metaDescription: "Events like Black Friday and Cyber Monday can pose a challenging endeavor for eCommerce sites and online businesses, who need to ensure that their online infrastructures can scale and maintain strength under abnormally high traffic loads."
 ogTitle: "Scaling AWS for Black Friday: Best practices"

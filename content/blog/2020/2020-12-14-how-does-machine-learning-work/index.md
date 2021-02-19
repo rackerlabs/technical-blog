@@ -3,15 +3,11 @@ layout: post
 title: "How does machine learning work"
 date: 2020-12-14
 comments: true
-author: Matt Charoenrath
-authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U0118EALE77-fa48a7c11b02-72'
-bio: "Marketing leader experienced in growing brands while scaling and 
-modernizing marketing organizations through a balance of creativity, 
-process & technology to captivate audiences and achieve results."
+author: Rackspace Onica Team
 published: true
 authorIsRacker: true
 categories:
-    - General
+    - AWS
 metaTitle: "How does machine learning work"
 metaDescription: "The terms AI, ML, and DL can cause confusion in how they’re related. Artificial intelligence is an umbrella term in this case, with machine learning being a subset of AI, and deep learning being a subset of machine learning."
 ogTitle: "How does machine learning work"
