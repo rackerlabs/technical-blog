@@ -35,7 +35,6 @@ begun to use machine learning (ML) and artificial intelligence (AI) to learn fro
 and harness it for predictive analytics. This shift, however, comes with significant
 challenges.
 
-
 <!--more-->
 
 ### Overview
@@ -107,7 +106,8 @@ tools they are comfortable with.
 
 ### Next steps
 
-Part 2 of this series explores Rackspace Technology's Model Factory Framework, which aims
+[Part 2](https://docs.rackspace.com/blog/machine-learning-accelerating-your-model-deployment-part-one/)
+of this series explores Rackspace Technology's Model Factory Framework, which aims
 to provide such a solution, further accelerating the time to ML model deployment in
 production. If you'd like to see the Model Factory Framework in action and get a deeper
 look into how you can incorporate it into your ML initiatives, watch our
