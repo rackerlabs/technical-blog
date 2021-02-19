@@ -115,7 +115,7 @@ description = ["description"]
     url = "https://support.rackspace.com/how-to/"
     weight = 4
 [[menu.footer]]
-    name = "Technical Blog"
+    name = "Expert Insights Tech Blog"
     parent = "Blogs"
     url = "/blog"
     weight = 5
