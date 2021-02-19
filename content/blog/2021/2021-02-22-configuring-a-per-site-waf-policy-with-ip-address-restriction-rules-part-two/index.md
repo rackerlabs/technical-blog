@@ -59,6 +59,7 @@ called `vmPool01`.
 {{<img src="Picture3.png" title="" alt="">}}
 
 </br>
+<br/>
 
 #### HTTP Settings
 
@@ -89,7 +90,8 @@ The following screenshot shows the **HttpSettings01** object for reference:
 
 {{<img src="Picture5.png" title="" alt="">}}
 
-<br/>
+<p>
+</p>
 
 #### Frontend IP configurations
 
