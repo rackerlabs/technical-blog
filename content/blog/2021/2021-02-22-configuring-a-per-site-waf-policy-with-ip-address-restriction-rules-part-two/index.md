@@ -48,6 +48,9 @@ I configured.
  
 {{<img src="Picture2.png" title="" alt="">}}
 
+<br>
+</br>
+
 2. On the Rules tab, I left the default ruleset of OWASP 3.0 and Advanced rule
    configuration disabled. 
 
@@ -58,8 +61,8 @@ called `vmPool01`.
 
 {{<img src="Picture3.png" title="" alt="">}}
 
+<br>
 </br>
-<br/>
 
 #### HTTP Settings
 
@@ -70,6 +73,8 @@ called `vmPool01`.
 
 {{<img src="Picture4.png" title="" alt="">}}
 
+<br>
+</br>
 
 2. In the configuration for each object, I have the following:
 
@@ -90,8 +95,8 @@ The following screenshot shows the **HttpSettings01** object for reference:
 
 {{<img src="Picture5.png" title="" alt="">}}
 
-<p>
-</p>
+<br>
+</br>
 
 #### Frontend IP configurations
 
@@ -99,6 +104,9 @@ The Application Gateway has a public IP address that I used to create DNS A reco
 my two websites.
 
 {{<img src="Picture6.png" title="" alt="">}}
+
+<br>
+</br>
 
 #### Listeners
 
@@ -109,6 +117,9 @@ my two websites.
 - **Site2_Listener**: corresponding to **site2.hiteshvadgama.co.uk**
 
 {{<img src="Picture7.png" title="" alt="">}}
+
+<br>
+</br>
  
 2. In the configuration for each Listener, I have the following:
 
@@ -123,6 +134,9 @@ Following is a screenshot of the **Site1_Listener** for reference:
 
 {{<img src="Picture8.png" title="" alt="">}}
 
+<br>
+</br>
+
 #### Rules
 
 1. I created a routing rule for each Listener:
@@ -135,10 +149,16 @@ Following is a screenshot of the **Site1_Listener** for reference:
 
 {{<img src="Picture9.png" title="" alt="">}}
 
+<br>
+</br>
+
 3. For **Site2_Rule** backend targets, I again have **backend pool** (`vmPool01`) but this
    time with the **HTTPSettings02** object.
    
 {{<img src="Picture10.png" title="" alt="">}}
+
+<br>
+</br>
 
 ### Next steps
 
