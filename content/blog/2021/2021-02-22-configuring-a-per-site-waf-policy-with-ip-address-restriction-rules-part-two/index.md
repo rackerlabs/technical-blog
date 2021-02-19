@@ -58,8 +58,8 @@ called `vmPool01`.
 
 {{<img src="Picture3.png" title="" alt="">}}
 
-<br/>
 </br>
+
 #### HTTP Settings
 
 1. I created an object for each website:
@@ -89,8 +89,8 @@ The following screenshot shows the **HttpSettings01** object for reference:
 
 {{<img src="Picture5.png" title="" alt="">}}
 
-<p>
-</p>
+<br/>
+
 #### Frontend IP configurations
 
 The Application Gateway has a public IP address that I used to create DNS A records to map
