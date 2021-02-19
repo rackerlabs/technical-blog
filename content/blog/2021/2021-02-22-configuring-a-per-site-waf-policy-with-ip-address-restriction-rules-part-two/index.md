@@ -29,8 +29,9 @@ slug: "configuring-a-per-site-waf-policy-with-ip-address-restriction-rules-part-
 
 In [Part one](https://docs.rackspace.com/blog/configuring-a-per-site-waf-policy-with-ip-address-restriction-rules-part-one/)
 of this three-part series, I introduced the concept of per-site web application firewalls
-(WAFs) with IP address rule restrictions and set the stage for this demonstration. In this
-post, I present the Application Gateway configuration.
+(WAFs) with IP address rule restrictions and set the stage for this demonstration. Part one
+also lays out the assumptions for the implementation walkthrough. In this post, I present
+the Application Gateway configuration.
 
 <!--more-->
 
@@ -57,6 +58,8 @@ called `vmPool01`.
 
 {{<img src="Picture3.png" title="" alt="">}}
 
+<br/>
+</br>
 #### HTTP Settings
 
 1. I created an object for each website:
@@ -86,6 +89,8 @@ The following screenshot shows the **HttpSettings01** object for reference:
 
 {{<img src="Picture5.png" title="" alt="">}}
 
+<p>
+</p>
 #### Frontend IP configurations
 
 The Application Gateway has a public IP address that I used to create DNS A records to map
