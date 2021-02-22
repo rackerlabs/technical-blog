@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Configuring a per site WAF policy with IP address restriction rules: Part two"
+title: "Configuring a per-site WAF policy with IP address restriction rules: Part two"
 date: 2021-02-22
 comments: true
 author: Hitesh Vadgama
@@ -13,12 +13,12 @@ authorIsRacker: true
 categories:
     - Azure
     - Security
-metaTitle: "Configuring a per site WAF policy with IP address restriction rules: Part two"
+metaTitle: "Configuring a per-site WAF policy with IP address restriction rules: Part two"
 metaDescription: "In this series of posts, I run through a simplified configuration to
 demonstrate how to apply a per-site WAF policy to an Application Gateway to control inbound
 access based on IP-based restrictions to one of two test IIS websites running on a single
 Windows VM."
-ogTitle: "Configuring a per site WAF policy with IP address restriction rules: Part two"
+ogTitle: "Configuring a per-site WAF policy with IP address restriction rules: Part two"
 ogDescription: "In this series of posts, I run through a simplified configuration to
 demonstrate how to apply a per-site WAF policy to an Application Gateway to control inbound
 access based on IP-based restrictions to one of two test IIS websites running on a single
@@ -162,8 +162,8 @@ Following is a screenshot of the **Site1_Listener** for reference:
 
 ### Next steps
 
-Stay tuned for post 3 in this series, which concludes the series with WAF policy
-configuration and testing the custom rule.
+[Post 3](https://docs.rackspace.com/blog/configuring-a-per-site-waf-policy-with-ip-address-restriction-rules-part-)
+concludes the series with WAF policy configuration and testing the custom rule.
 
 <a class="cta blue" id="cta" href="https://www.rackspace.com/security/application-security">Learn more about our web application security services.</a>
 
