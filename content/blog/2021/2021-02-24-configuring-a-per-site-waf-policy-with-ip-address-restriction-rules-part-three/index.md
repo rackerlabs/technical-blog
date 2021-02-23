@@ -28,9 +28,9 @@ slug: "configuring-a-per-site-waf-policy-with-ip-address-restriction-rules-part-
 ---
 
 As I mentioned in the introduction in
-[Part one](https://docs.rackspace.com/blog/configuring-a-per-site-waf-policy-with-ip-address-restriction-rules-part-one/)),
+[Part one](https://docs.rackspace.com/blog/configuring-a-per-site-waf-policy-with-ip-address-restriction-rules-part-one/),
 the end goal is to demonstrate how to control inbound access based on IP address restrictions
-limited to one of my two websites running on a Windows&reg; virtual machine (VM).
+to one of my two websites running on the Windows&reg; virtual machine (VM).
 [Part two of the series](https://docs.rackspace.com/blog/configuring-a-per-site-waf-policy-with-ip-address-restriction-rules-part-two/)
 laid the foundation with the the Application Gateway configuration. Now, in this final post
 of the series, I walk thorough the Web Application Firewall (WAF) policy creation and test
