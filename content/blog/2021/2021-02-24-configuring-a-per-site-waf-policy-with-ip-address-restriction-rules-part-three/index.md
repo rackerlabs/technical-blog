@@ -29,20 +29,22 @@ slug: "configuring-a-per-site-waf-policy-with-ip-address-restriction-rules-part-
 
 As I mentioned in the introduction in
 [Part one](https://docs.rackspace.com/blog/configuring-a-per-site-waf-policy-with-ip-address-restriction-rules-part-one/)),
-I intend to demonstrate how to control inbound access based on IP address restrictions
-limited to one of two websites running on a Windows&reg; virtual machine (VM).
+the end goal is to demonstrate how to control inbound access based on IP address restrictions
+limited to one of my two websites running on a Windows&reg; virtual machine (VM).
 [Part two of the series](https://docs.rackspace.com/blog/configuring-a-per-site-waf-policy-with-ip-address-restriction-rules-part-two/)
-covered the Application Gateway configuration, and now I apply the ip-address restrictions
-to **site2.hiteshvadgama.co.uk**.  
+laid the foundation with the the Application Gateway configuration. Now, in this final post
+of the series, I walk thorough the Web Application Firewall (WAF) policy creation and test
+the custom rule. I will restrict access to **site2.hiteshvadgama.co.uk**.  
 
 <!--more-->
 
 ### WAF policy configuration
 
-The following steps show how to create a per-site Web Application Firewall (WAF) policy
-with an IP-based access control rule and assign it to the Application Gateway and
-**Site2_Listener**, which we know from the earlier HTTP Settings section is the listener
-that corresponds to **site2.hiteshvadgama.co.uk**.
+The following steps show how to create a per-site WAF policy with an IP-based access
+control rule and assign it to the Application Gateway and **Site2_Listener**, which we know
+from the earlier
+[HTTP Settings section in Part two](https://docs.rackspace.com/blog/configuring-a-per-site-waf-policy-with-ip-address-restriction-rules-part-two/)
+is the listener that corresponds to **site2.hiteshvadgama.co.uk**.
 
 1. Search for *WAF* in the marketplace, select the **Web Application Firewall (WAF) by Microsoft**
    service, and click **Create**.
@@ -78,9 +80,9 @@ that corresponds to **site2.hiteshvadgama.co.uk**.
 5. On the **Custom rules** tab, I selected **Add custom rule**. 
 6. I gave the rule a **name** and a **priority**. As a best practice, assign priority in
    increments of five to make it easier to change the order of rules in the future.
-7. For the **IF** statement under **Conditions**, I selected **IP address **as the
+7. For the **IF** statement under **Conditions**, I selected **IP address** as the
    **Match Type** and **Does contain** as the operation. For my test, I want the rule to
-   block access if the IP address matches my local machine, so I did an IP lookup of m
+   block access if the IP address matches my local machine, so I did an IP lookup of the
    machine and added it under **IP address or range**. 
 8. For the **THEN** statement, I selected **Deny traffic** and clicked **Add** to save the
    custom rule. 
