@@ -64,12 +64,12 @@ The following diagram provides a conceptual illustration of my goal:
 
 This three-post series covers the following elements of the implementation walkthrough:
 
-**Post 1:**
+**[Post 1](https://docs.rackspace.com/blog/configuring-a-per-site-waf-policy-with-ip-address-restriction-rules-part-one/):**
 
 1. Introduction
 2. Assumptions
 
-**Post 2:**
+**[Post 2](https://docs.rackspace.com/blog/configuring-a-per-site-waf-policy-with-ip-address-restriction-rules-part-two/):**
 
 Application Gateway configuration:
 
@@ -80,7 +80,7 @@ Application Gateway configuration:
 5. Listeners
 6. Rules
 
-**Post 3:**
+**[Post 3](https://docs.rackspace.com/blog/configuring-a-per-site-waf-policy-with-ip-address-restriction-rules-part-three/):**
 
 1. WAF policy configuration
 2. Testing the custom rule
