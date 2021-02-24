@@ -28,10 +28,10 @@ slug: "configuring-a-per-site-waf-policy-with-ip-address-restriction-rules-part-
 ---
 
 In [Part one](https://docs.rackspace.com/blog/configuring-a-per-site-waf-policy-with-ip-address-restriction-rules-part-one/)
-of this three-part series, I introduced the concept of per-site web application firewalls
-(WAFs) with IP address rule restrictions and set the stage for this demonstration. Part one
-also lays out the assumptions for the implementation walkthrough. In this post, I present
-the Application Gateway configuration.
+of this three-part series, I introduced the concept of the per-site web application firewall
+(WAF) Policy with IP address rule restrictions and set the stage for this demonstration.
+Part one also lays out the assumptions for the implementation walkthrough. In this post,
+I present the Application Gateway configuration.
 
 <!--more-->
 
@@ -162,7 +162,7 @@ Following is a screenshot of the **Site1_Listener** for reference:
 
 ### Next steps
 
-[Post 3](https://docs.rackspace.com/blog/configuring-a-per-site-waf-policy-with-ip-address-restriction-rules-part-)
+[Post 3](https://docs.rackspace.com/blog/configuring-a-per-site-waf-policy-with-ip-address-restriction-rules-part-three)
 concludes the series with WAF policy configuration and testing the custom rule.
 
 <a class="cta blue" id="cta" href="https://www.rackspace.com/security/application-security">Learn more about our web application security services.</a>
