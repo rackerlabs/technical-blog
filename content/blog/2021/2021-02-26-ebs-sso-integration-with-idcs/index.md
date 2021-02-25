@@ -97,7 +97,7 @@ instance. You can use the same WebLogic server for all EBS Asserter-managed serv
 
 Perform the following configuration steps:
 
-#### 1. Create an application user on EBS
+##### 1. Create an application user on EBS
 
 To create a user for EBS Asserter to communicate with EBS applications, perform the
 following steps from the [Oracle Asserter documentation](https://www.oracle.com/webfolder/technetwork/tutorials/obe/cloud/idcs/ebs_asserter_obe/ebs-asserter.html):
@@ -119,7 +119,7 @@ following steps from the [Oracle Asserter documentation](https://www.oracle.com/
 7. Select **Apps Schema Connect Role** and click **Select**. 
 8. Provide justification as **EBS asserter service user** and click **Save**.
 
-#### 2. Create EBS system administrator in IDCS
+##### 2. Create EBS system administrator in IDCS
 
 Perform the following steps from [Oracle Asserter documentation](https://www.oracle.com/webfolder/technetwork/tutorials/obe/cloud/idcs/ebs_asserter_obe/ebs-asserter.html)
 to create a user in IDCS that communicates to the system administrator in EBS applications.
@@ -138,7 +138,7 @@ to create a user in IDCS that communicates to the system administrator in EBS ap
 4. After you create the user in IDCS, log in to EBS applications and update the sysadmin
 user email address to match the IDCS sysadmin address.
 
-#### 3. Register the EBS Asserter with EBS applications
+##### 3. Register the EBS Asserter with EBS applications
 
 Perform the following steps from [Oracle Asserter documentation](https://www.oracle.com/webfolder/technetwork/tutorials/obe/cloud/idcs/ebs_asserter_obe/ebs-asserter.html)
 to register the EBS Asserter with EBS:
@@ -161,7 +161,8 @@ to register the EBS Asserter with EBS:
 
 5. Copy the generated **EBSDB_ebsasserter.example.com.dbc** file to the EBS Asserter server and make a note of the **APPL_SERVER_ID**.
  
-#### 4. Register EBS Asserter in IDCS
+##### 4. Register EBS Asserter in IDCS
+
 Perform the following steps from [Oracle Asserter documentation](https://www.oracle.com/webfolder/technetwork/tutorials/obe/cloud/idcs/ebs_asserter_obe/ebs-asserter.html) to create a confidential application to represent EBS asserter:
 
 1. Log in to the IDCS console and expand the navigation and then click applications.
@@ -194,7 +195,7 @@ Perform the following steps from [Oracle Asserter documentation](https://www.ora
 
 {{<img src="Picture3.png" title="" alt="">}}
 
-#### 5. Create a WebLogic wallet
+##### 5. Create a WebLogic wallet
 
 According to [Oracle Asserter documentation](https://www.oracle.com/webfolder/technetwork/tutorials/obe/cloud/idcs/ebs_asserter_obe/ebs-asserter.html),
 for security purposes, you need to register client ID, client secret, and IDCS URL in the
@@ -214,18 +215,18 @@ documentation:
      - **Enter Client Secret**: Enter the **Client Secret** for the client ID.
      - **Enter IDCS base URL**: Enter the IDCS base URL.
 
-#### 6. Update the configuration file
+##### 6. Update the configuration file
 
 Update EBS Asserter configuration file, **bridge.properties** with EBS instance and IDCS
 details.
 
-#### 7. Deploy EBS Asserter
+##### 7. Deploy EBS Asserter
 
 Perform the following steps from
 [Oracle Asserter documentation](https://www.oracle.com/webfolder/technetwork/tutorials/obe/cloud/idcs/ebs_asserter_obe/ebs-asserter.html)
 to create a new data source and deploy the EBS Asserter application.
 
-##### Define the data source
+#### Define the data source
 
 1. Log in to the EBS Asserter WebLogic console and select **Data Sources**.
 2. Click **New** and select **Generic Data Source**.
@@ -252,7 +253,7 @@ to create a new data source and deploy the EBS Asserter application.
 
 7. Click **Test Configuration**.
 
-##### Deploy EBS Asserter on the WebLogic server
+#### Deploy EBS Asserter on the WebLogic server
 
 1. Log in to the EBS Asserter WebLogic console and click **Lock & Edit**.
 2. Click **Deployments** and **Install**. 
@@ -262,7 +263,7 @@ to create a new data source and deploy the EBS Asserter application.
 6. Accept the default values and click **Finish**.
 7. Click **Activate Changes**.
 
-#### 8. Update EBS profiles
+##### 8. Update EBS profiles
 
 Update the following EBS profiles:
 
@@ -271,7 +272,7 @@ Update the following EBS profiles:
 - **Applications SSO Type**: `SSWA_SSO`
 - **FND_SEC_ALLOW_UNRESTRICTED_REDIRECT**: `Yes`
 
-#### 9. Restart and test
+##### 9. Restart and test
 
 Restart the EBS services and test your SSO logins.
 
