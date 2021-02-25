@@ -4,6 +4,9 @@ title: "Oracle Data Visualization Desktop"
 date: 2019-01-03
 comments: true
 author: Praveen Muthyala
+authorAvatar:  'https://s.gravatar.com/avatar/d88522fef1ff73c43f8a30bc316d5b6a'
+bio: "I am an Oracle Applications DBA with 10 years of experience and am well versed with
+Oracle technologies. Currently associated with Rackspace Technology."
 published: true
 authorIsRacker: true
 categories:
@@ -24,7 +27,7 @@ analyze data.
 ### Introduction
 
 Oracle's DVD version 12.2.4.3, released in May 2018, makes it easy to visualize
-data. You can upload datafiles or connect to database by using available data
+data. You can upload data files or connect to a database by using available data
 sources.
 
 DVD is a single-user desktop application that provides visualization functionality
@@ -89,7 +92,7 @@ DVD features include the following items:
 -	Machine learning (ML) capabilities to make predictions and intelligent suggestions
 -	Data flow enhancements
 -	Data source editor changes
--	Updates to projects and visualizations including map backgrounds
+-	Updates to projects and visualizations, including map backgrounds
 
 ### Create a project and choose a data set
 

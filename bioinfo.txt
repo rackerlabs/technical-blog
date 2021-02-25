@@ -721,6 +721,11 @@ set covering the full life cycle from initial strategy, requirements planning, a
 and system design through to post-production support. My experience includes Disaster
 Recovery planning, design, and testing over many years, both on-premises and on public cloud."
 
+Muthyala, Pravenn
+authorAvatar: 'https://s.gravatar.com/avatar/d88522fef1ff73c43f8a30bc316d5b6a'
+bio: "I am an Oracle Applications DBA with 10 years of experience and am well versed with
+Oracle technologies. Currently associated with Rackspace Technology."
+
 Myoung,Sam
 authorAvatar: 'https://s.gravatar.com/avatar/7632808463e741b328ea3ce18f80b935'
 bio: "Sam Myoung is a product manager with over 11 years of experiences in the IT
