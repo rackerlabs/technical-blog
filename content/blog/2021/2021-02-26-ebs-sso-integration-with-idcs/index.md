@@ -13,33 +13,25 @@ categories:
     - database
     - oracle
 metaTitle: "EBS SSO integration with IDCS"
-metaDescription: "."
+metaDescription: "The post introduces Oracle Identity Cloud Service (IDCS) integration with
+the existing Oracle&reg; e-Business Suite&reg; (EBS) environments."
 ogTitle: "EBS SSO integration with IDCS"
-ogDescription: "."
+ogDescription: "The post introduces Oracle Identity Cloud Service (IDCS) integration with
+the existing Oracle&reg; e-Business Suite&reg; (EBS) environments."
 slug: "ebs-sso-integration-with-idcs"
 
 ---
 
-Replace with short intro sentence or two.
+The post introduces Oracle Identity Cloud Service (IDCS) integration with the existing
+Oracle&reg; e-Business Suite&reg; (EBS) environments.
 
 <!--more-->
 
-### Overview
-
-The following line shows how to add an image.  If you have no image, remove it.
-If you have an image, add it to the post directory and replace the image name in the following line.
-
-{{<img src="Picture1.png" title="" alt="">}}
-
-EBS SSO integration with IDCS
-
 ### Introduction
  
-The post introduces Oracle Identity Cloud Service (IDCS) integration with the existing
-Oracle&reg; e-Business Suite&reg; (EBS) environments. IDCS is an Oracle cloud-based Identity
-platform, which enables SSO services to access EBS applications. It does not require any
-installations. Oracle Cloud maintains everything, including backup, recovery, patching,
-upgrade, and scaling.
+IDCS is an Oracle cloud-based Identity platform, which enables SSO services to access EBS
+applications. It does not require any installations. Oracle Cloud maintains everything,
+including backup, recovery, patching, upgrade, and scaling.
 
 You need only one component called EBS Asserter, which IDCS provides to implement SSO
 for Oracle e-Business Suite and other applications.
