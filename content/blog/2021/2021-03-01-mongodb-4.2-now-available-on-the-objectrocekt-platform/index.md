@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "MongoDB 4.2 now available on the ObjectRocket platform"
-date: 2021-02-05
+date: 2021-03-01
 comments: true
 author: Antonios Giannopoulos
 published: true
