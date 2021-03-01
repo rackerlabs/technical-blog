@@ -4,6 +4,10 @@ title: "MongoDB 4.2 now available on the ObjectRocket platform"
 date: 2021-03-01
 comments: true
 author: Antonios Giannopoulos
+authorAvatar: 'https://s.gravatar.com/avatar/b80ec45cfc44a962313d8e16e0381be4?s=80'
+bio: "I am a Database Administrator at Rackspace supporting MongoDB and Cassandra. I have
+18 years experience in databases and system engineering. I really enjoy challenges in
+sharding and schema design and love migrations from Relational to the NoSQL world."
 published: true
 authorIsRacker: true
 categories:
@@ -14,7 +18,7 @@ metaTitle: "MongoDB 4.2 now available on the ObjectRocket platform"
 metaDescription: "."
 ogTitle: "MongoDB 4.2 now available on the ObjectRocket platform"
 ogDescription: "."
-slug: "expanding-objectrocket-for-mongodb-to-aws-and-gcp"
+slug: "mongodb-4.2-now-available-on-the-objectrocket-platform"
 
 ---
 
