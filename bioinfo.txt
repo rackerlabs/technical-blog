@@ -353,6 +353,13 @@ consultant, I keep on upgrading myself and learning new technology.
 I always believe in chasing dreams that ultimately motivate me to achieve my
 life goals. I love traveling and trekking. Thank you!"
 
+Garkoti, Ravi
+authorAvatar: 'https://s.gravatar.com/avatar/86e568635f3bcdc31d4a322d3451449c'
+bio: "I am an IT professional working for Rackspace Technologies with 9+ years of
+experience in the field of Oracle Database and ERP system. Also a keen learner of cloud
+technology with certification in AWS and OCI. Before working with Rackspace, I was
+associated with HCL, IBM, and Wipro."
+
 Garratt, Nick
 authorAvatar: 'https://s.gravatar.com/avatar/749cf70eafe03795015019c1047be85f'
 bio: "Nick Garratt is a Principal Architect in the Rackspace Managed Public

@@ -4,8 +4,11 @@ title: "A brief overview of AWS DBMS services"
 date: 2021-03-04
 comments: true
 author: Ravi Garkoti 
-authorAvatar: ''
-bio: ""
+authorAvatar: 'https://s.gravatar.com/avatar/86e568635f3bcdc31d4a322d3451449c'
+bio: "I am an IT professional working for Rackspace Technologies with 9+ years of
+experience in the field of Oracle Database and ERP system. Also a keen learner of cloud
+technology with certification in AWS and OCI. Before working with Rackspace, I was
+associated with HCL, IBM, and Wipro."
 published: true
 authorIsRacker: true
 categories:
