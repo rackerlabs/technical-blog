@@ -15,15 +15,21 @@ categories:
     - SQL Server
     - Azure
 metaTitle: "Unified data platform: Part two&mdash;data virtualization through PolyBase"
-metaDescription: "."
+metaDescription: "In this series, I dig deep into how to achieve data virtualization through PolyBase&reg;.
+This post covers the introduction and demo prerequisites."
 ogTitle: "Unified data platform: Part two&mdash;data virtualization through PolyBase"
-ogDescription: "."
+ogDescription: "In this series, I dig deep into how to achieve data virtualization through PolyBase&reg;.
+This post covers the introduction and demo prerequisites."
 slug: "unified-data-platform-part-two-data-virtualization-through-polybase"
 
 ---
 
 I am excited to finally extend my earlier blog post 
 [Unified Data Platform - SQL 2019](https://docs.rackspace.com/blog/unified-data-platform-sql-server-2019/).
+
+In this series, I dig deep into how to achieve data virtualization through PolyBase&reg;.
+This post covers the introduction and demo prerequisites. Part Three, gets to the demo
+itself.
 
 <!--more-->
 
@@ -39,12 +45,6 @@ To refresh your memory, recall that the previous post covered the following item
    - Data Lake through HDFS
    - Big Data, ML, Streaming through Apache Spark
 3. Management and Monitoring using Azure&reg; Data Studio (ADS)
-
-### Introduction
-
-In this series, I dig deep into how to achieve data virtualization through PolyBase&reg;.
-This post covers the introduction and demo prerequisites. Part Three, gets to the demo
-itself.
 
 ### Introduction
 
@@ -263,7 +263,8 @@ Perform the following steps to create an Azure Storage account:
  
 <br/>
 
-###### 4. Create an Azure container
+
+##### 4. Create an Azure container
 
 To create an Azure container, go to the created Azure storage account, click on **Containers**
 in the left pane, and then click on **+Container**.
@@ -274,7 +275,8 @@ in the left pane, and then click on **+Container**.
  
 <br/>
 
-###### 5. Place a data file in the container
+
+##### 5. Place a data file in the container
 
 At this stage, create a text data file and upload it to the container.
 
