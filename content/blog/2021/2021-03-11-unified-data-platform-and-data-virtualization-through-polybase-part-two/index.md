@@ -73,6 +73,8 @@ previously. You can get it by performing the following steps:
 4. The keys display on the right-hand pane.
 5. Copy and use them in the preceding query.
 
+<br/>
+
 ##### 3. Create an external data source by using the credentials you created
 
 Run the following query to create the external data source. After you create it, you can
