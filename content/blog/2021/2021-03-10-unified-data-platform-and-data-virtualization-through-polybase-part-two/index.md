@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Unified data platform: Part two&mdash;data virtualization through PolyBase"
+title: "Unified data platform and data virtualization through PolyBase: Part One"
 date: 2021-03-10
 comments: true
 author: Vashali Misra
@@ -14,21 +14,21 @@ categories:
     - database
     - SQL Server
     - Azure
-metaTitle: "Unified data platform: Part two&mdash;data virtualization through PolyBase"
+metaTitle: "Unified data platform and data virtualization through PolyBase: Part One"
 metaDescription: "In this series, I dig deep into how to achieve data virtualization through PolyBase&reg;.
 This post covers the introduction and demo prerequisites."
-ogTitle: "Unified data platform: Part two&mdash;data virtualization through PolyBase"
+ogTitle: "Unified data platform and data virtualization through PolyBase: Part One"
 ogDescription: "In this series, I dig deep into how to achieve data virtualization through PolyBase&reg;.
 This post covers the introduction and demo prerequisites."
-slug: "unified-data-platform-part-two-data-virtualization-through-polybase"
+slug: "unified-data-platform-and-data-virtualization-through-polybase-part-one"
 
 ---
 
-I am excited to finally extend my earlier blog post 
+I am excited to finally build on my earlier blog post 
 [Unified Data Platform - SQL 2019](https://docs.rackspace.com/blog/unified-data-platform-sql-server-2019/).
 
 In this series, I dig deep into how to achieve data virtualization through PolyBase&reg;.
-This post covers the introduction and demo prerequisites. Part Three, gets to the demo
+This post covers the introduction and demo prerequisites, and Part Two gets to the demo
 itself.
 
 <!--more-->
@@ -135,7 +135,7 @@ feature. Keep clicking **Next** till you reach the very last screen.  Then, clic
  
 <br/>
 
-2. Click **Installation Type** in the sidebar, select **Add features to an existing instance**,
+2. After you reach the **Installation Type** window, select **Add features to an existing instance**,
    and select the required instance from the drop-down menu.
 
 {{<img src="Picture4.png" title="" alt="">}}
@@ -144,7 +144,7 @@ feature. Keep clicking **Next** till you reach the very last screen.  Then, clic
  
 <br/>
 
-3. Click **Feature Selection** from the sidebar and select the polybase features.
+3. After you reach the **Feature Selection** window, select the PolyBase features.
 
 {{<img src="Picture5.png" title="" alt="">}}
   
@@ -152,7 +152,7 @@ feature. Keep clicking **Next** till you reach the very last screen.  Then, clic
  
 <br/>
 
-4. Click **Polybase Configuration** in the sidebar and select
+4. In the **Polybase Configuration** window, select
    **Use this SQL Server as standalone Polybase-enabled instance**.
 
 {{<img src="Picture6.png" title="" alt="">}}
@@ -204,7 +204,7 @@ To enable PolyBase, run the following steps:
 
 3. Run the following query:
 
-        Reconfigure with override 
+        Reconfigure
 
    This query is important. Without this step, errors can appear during external file
    format creation in the steps covered in Part Three of this series.
@@ -306,7 +306,7 @@ Data Source Administrator to create and configure ODBC DSNs.
 
 ### Next steps
 
-You have successfully completed the prerequisites for the PolyBase demo.  Part Three,
+You have successfully completed the prerequisites for the PolyBase demo.  Part Two,
 coming soon, presents the demo.
 
 <a class="cta purple" id="cta" href="https://www.rackspace.com/data">Learn more about our Data services.</a>

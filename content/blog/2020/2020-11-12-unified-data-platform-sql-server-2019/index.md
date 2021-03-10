@@ -96,10 +96,9 @@ applications, any organization can become more successful.
 ### Conclusion
 
 I know this is a broad topic and a single post is not enough, so I will provide deep dives
-into the individual SQL 2019 aspects in my future posts. Stay tuned!
+into the individual SQL 2019 aspects in my future posts.
 
-[Part 2](https://docs.rackspace.com/blog/unified-data-platform-part-two-data-virtualization-through-polybase/): published March 10, 2021
-[Part 3](): published March 12, 2021
+[Explore data virtualization with PolyBase in a two-part series](https://docs.rackspace.com/blog/unified-data-platform-and-data-virtualization-through-polybase-part-two/).
 
 <a class="cta red" id="cta" href="https://www.rackspace.com/data">Learn more about our Data services.</a>
 
