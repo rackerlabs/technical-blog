@@ -139,7 +139,7 @@ validate that PolyBase helps us to fetch external data.  Run the following query
 
     Select * from <Tablename>
 
-{{<img src="Picture15png" title="" alt="">}}
+{{<img src="Picture5.png" title="" alt="">}}
   
 *Figure 5*
  
