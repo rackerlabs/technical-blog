@@ -111,6 +111,8 @@ Run the following query:
 
 **Note**: Because it's a comma-separated text file, the **FIELD_TERMINATOR** is ``‘,’``.
 
+<br/>  
+
 ##### 5. Create an external table
 
 Run the following query:
