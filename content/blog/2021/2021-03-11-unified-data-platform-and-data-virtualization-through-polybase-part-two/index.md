@@ -25,8 +25,8 @@ slug: "unified-data-platform-and-data-virtualization-through-polybase-part-two"
 ---
 
 In [Part One](https://docs.rackspace.com/blog/unified-data-platform-and-data-virtualization-through-polybase-part-one/)
-of this UDP data validation through PolyBase series, I introduced PolyBase and provided the
-prerequisites for this demo.  In this final installment, you can dive into the demo.
+of this UDP data virtualization through PolyBase series, I introduced PolyBase and provided
+the prerequisites for this demo.  In this final installment, you can dive into the demo.
 
 <!--more-->
 
@@ -162,7 +162,7 @@ and present those experiences in an upcoming blog.
 
 Stay Tuned!
 
-<a class="cta purple" id="cta" href="https://www.rackspace.com/data">Learn more about our Data services.</a>
+<a class="cta teal" id="cta" href="https://www.rackspace.com/data">Learn more about our Data services.</a>
 
 Use the Feedback tab to make any comments or ask questions. You can also click
 **Let's Talk** to [start the conversation](https://www.rackspace.com/).
