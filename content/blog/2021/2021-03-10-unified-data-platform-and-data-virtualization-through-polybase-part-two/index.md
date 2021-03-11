@@ -3,11 +3,7 @@ layout: post
 title: "Unified data platform and data virtualization through PolyBase: Part One"
 date: 2021-03-10
 comments: true
-author: Vashali Misra
-authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U7D5AHGAU-bbe8d4bb28c6-512'
-bio: "I am a SQL Server DBA at Rackspace Technology APJ Region. My area of expertise is
-SQL Server, and I'm slowly and steadily gaining experience into the cloud technologies. I
-have 9 Years of experience with major projects like Dowjones, MarketWatch, Regeneron, etc."
+
 published: true
 authorIsRacker: true
 categories:
@@ -28,8 +24,9 @@ I am excited to finally build on my earlier blog post
 [Unified Data Platform - SQL 2019](https://docs.rackspace.com/blog/unified-data-platform-sql-server-2019/).
 
 In this series, I dig deep into how to achieve data virtualization through PolyBase&reg;.
-This post covers the introduction and demo prerequisites, and Part Two gets to the demo
-itself.
+This post covers the introduction and demo prerequisites, and 
+[Part Two](https://docs.rackspace.com/blog/unified-data-platform-and-data-virtualization-through-polybase-part-two/)
+gets to the demo itself.
 
 <!--more-->
 
@@ -37,7 +34,7 @@ itself.
 
 To refresh your memory, recall that the previous post covered the following items:
 
-1. Evolution of SQL Server &reg; from DB Engine to the Unified Data Platform
+1. Evolution of SQL Server&reg; from DB Engine to the Unified Data Platform
 2. SQL 2019 presents Unified Data Platform using:  
    - SQL DB Engine for OLTP
    - Data Virtualization through Polybase
@@ -89,7 +86,7 @@ image shows a simple illustration of SQL Polybase:
 <br/>
 
 Now that you know the basics of Polybase, I want to share a demo that fetches data from an
-Azure blob external source by using SQL PolyBase. The post covers the prerequisites for
+Azure blob external source by using SQL PolyBase. This post covers the prerequisites for
 the demo.
 
 ### Demo prerequisites
@@ -304,10 +301,11 @@ Data Source Administrator to create and configure ODBC DSNs.
  
 <br/>
 
-### Next steps
+### Next step
 
-You have successfully completed the prerequisites for the PolyBase demo.  Part Two,
-coming soon, presents the demo.
+You have successfully completed the prerequisites for the PolyBase demo.
+[Part Two](https://docs.rackspace.com/blog/unified-data-platform-and-data-virtualization-through-polybase-part-two/)
+presents the demo.
 
 <a class="cta purple" id="cta" href="https://www.rackspace.com/data">Learn more about our Data services.</a>
 
