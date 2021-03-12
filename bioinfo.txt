@@ -888,6 +888,11 @@ for myself, so I have something to strive toward. I’m not comfortable with
 settling, and I’m always looking for an opportunity to do better and achieve
 greatness."
 
+Sharma, Suryakant
+authorAvatar: 'https://0.gravatar.com/avatar/68b2358efadbf76113a7fd8e86545cb9'
+bio: "I am an Oracle Apps DBA with over 10 years of experience, currently associated with
+Rackspace Technology."
+
 Shukla, Abhishek
 authorAvatar: 'https://2.gravatar.com/userimage/191238188/88086f4370c46cbf11e5171378bd77b1'
 bio: "I am an Oracle Apps DBA with over 14 years of experience, currently
