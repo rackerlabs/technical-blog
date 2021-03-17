@@ -52,19 +52,22 @@ Perform the following steps to create a compartment:
 Log in to the Oracle cloud URL ([https://www.oracle.com/cloud/sign-in.html](https://www.oracle.com/cloud/sign-in.html)).
 
 {{<img src="Picture1.png" title="" alt="">}}
- 
+
+<br>
 <br/>
 
 Enter your account details and press **Next**. 
 
 {{<img src="Picture2.png" title="" alt="">}}
- 
+
+<br>
 <br/>
 
 Finally, enter your username and password and click **Sign in**.
 
 {{<img src="Picture3.png" title="" alt="">}}
 
+<br>
 <br/>
 
 Now, you can see the Oracle Cloud Console.
@@ -77,6 +80,7 @@ After you log into the Oracle cloud, create compartments by using the following 
 
 {{<img src="Picture4.png" title="" alt="">}}
 
+<br>
 <br/>
   
 2. Click **Create compartment** and fill in the following details:
@@ -87,6 +91,7 @@ After you log into the Oracle cloud, create compartments by using the following 
 
 {{<img src="Picture5.png" title="" alt="">}}
 
+<br>
 <br/>
 
 3. Click **Create Compartment**.
@@ -103,10 +108,12 @@ Perform the following steps to create the VCN:
 
 {{<img src="Picture6.png" title="" alt="">}}
 
+<br>
 <br/>
 
 {{<img src="Picture7.png" title="" alt="">}}
 
+<br>
 <br/>
 
 2. Select the compartment you created previously.
@@ -119,7 +126,8 @@ Perform the following steps to create the VCN:
 Then click **Create virtual cloud Network**.
 
 {{<img src="Picture8.png" title="" alt="">}}
- 
+
+<br>
 <br/>
 
 ### Third: Create the DBaaS database
@@ -128,12 +136,14 @@ Then click **Create virtual cloud Network**.
 
 {{<img src="Picture9.png" title="" alt="">}}
 
+<br>
 <br/>
 
 2. Select your compartment and click **Create DB System**.
 
 {{<img src="Picture10.png" title="" alt="">}}
 
+<br>
 <br/>
 
 3. Enter the required details:
@@ -144,6 +154,7 @@ Then click **Create virtual cloud Network**.
 
 {{<img src="Picture11.png" title="" alt="">}}
 
+<br>
 <br/>
 
 **Select a shape type**: Choose a shape type. I selected `Virtual machine`.
@@ -153,6 +164,7 @@ Application Clusters (RAC), then choose two nodes. Otherwise, select one node.
 
 {{<img src="Picture12.png" title="" alt="">}}
 
+<br>
 <br/>
 
 **Oracle Database software edition**: Select the edition. 
@@ -160,6 +172,7 @@ Application Clusters (RAC), then choose two nodes. Otherwise, select one node.
 
 {{<img src="Picture13.png" title="" alt="">}}
 
+<br>
 <br/>
 
 **Available storage (GB)**: Select the available storage size.
@@ -168,10 +181,12 @@ Application Clusters (RAC), then choose two nodes. Otherwise, select one node.
 
 {{<img src="Picture14.png" title="" alt="">}}
 
+<br>
 <br/>
 
 {{<img src="Picture15.png" title="" alt="">}}
 
+<br>
 <br/>
 
 **Choose a license type**: Choose `Bring your Own License(BYOL)`.
@@ -179,18 +194,21 @@ Application Clusters (RAC), then choose two nodes. Otherwise, select one node.
 
 {{<img src="Picture16.png" title="" alt="">}}
 
+<br>
 <br/>
 
 **Hostname prefix**: Enter the hostname prefix.
 
 {{<img src="Picture17.png" title="" alt="">}}
 
+<br>
 <br/>
 
 Click **Next**. 
 
 {{<img src="Picture18.png" title="" alt="">}}
 
+<br>
 <br/>
 
 **Database name**: Enter the database name.
@@ -199,24 +217,28 @@ Click **Next**.
 
 {{<img src="Picture19.png" title="" alt="">}}
 
+<br>
 <br/>
 
 **Create administrator credentials**: Create new credentials.
 
 {{<img src="Picture20.png" title="" alt="">}}
 
+<br>
 <br/>
 
 **Select workload type**: Enter the workload type.
 
 {{<img src="Picture21.png" title="" alt="">}}
 
+<br>
 <br/>
 
 **Configure database backups**: If you want to configure the database, select the checkbox.
 
 {{<img src="Picture22.png" title="" alt="">}}
 
+<br>
 <br/>
 
 And finally, click **Create DB System**.
