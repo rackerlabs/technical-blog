@@ -577,6 +577,10 @@ authorAvatar: n/a
 bio: "Sanjiv is an Application Support Architect who is responsible for onboarding
 clients with regard to implementation and operations of the eCommerce platform."
 
+Kumar, Santosh
+authorAvatar: 'https://s.gravatar.com/avatar/0d3c022f6dc5245d2602222d67cf86fa'
+bio: "Rackspace expert, at your service!"
+
 Kumar, Vikas
 authorAvatar: 'https://s.gravatar.com/avatar/02d1f0f4f3f24ee84e33211a51a0b237'
 bio: "I've been a Racker for two years and have more than ten years of Oracle&reg;

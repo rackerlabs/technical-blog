@@ -4,8 +4,8 @@ title: "Create an Oracle Database (DBaaS) in the cloud"
 date: 2021-03-18
 comments: true
 author: Santosh Kumar
-authorAvatar: ''
-bio: ""
+authorAvatar: 'https://s.gravatar.com/avatar/0d3c022f6dc5245d2602222d67cf86fa'
+bio: "Rackspace expert, at your service!"
 published: true
 authorIsRacker: true
 categories:
