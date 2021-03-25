@@ -154,10 +154,9 @@ to date, as illustrated in the following example:
 [fault tolerance](https://docs.objectrocket.com/mongodb_available_plans.html)
 combine with [disaster recovery](https://www.rackspace.com/sites/default/files/white-papers/SEC-CDS-Disaster_Recovery-12102.pdf)
 on the ObjectRocket platform. Plus, we back all of this up with smart people&mdash;keeping
-you safe and stable during your peak times. Visit our
-[Managed MongoDB](https://www.rackspace.com/data/managed-nosql/mongodb) page to learn more. 
+you safe and stable during your peak times.
 
-<a class="cta blue" id="cta" href="https://www.rackspace.com/data/objectrocket-dbaas">Learn more ObjectRocket at Rackspace.</a>
+<a class="cta blue" id="cta" href="https://www.rackspace.com/data/managed-nosql/mongodb">Learn more about Managed MongoDB.</a>
 
 Use the Feedback tab to make any comments or ask questions. You can also click
 **Let's Talk** to [start the conversation](https://www.rackspace.com/).
