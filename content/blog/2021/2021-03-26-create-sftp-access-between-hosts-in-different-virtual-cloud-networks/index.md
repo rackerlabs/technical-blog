@@ -65,31 +65,52 @@ Now, let's create the local peering and see how it provides access to
 2. Navigate to **Networking>Virtual Cloud Network**.
  
 {{<img src="Picture1.png" title="" alt="">}}
- 
+
+<br>
+<br/>
+
  3. Select the source compartment.
  
 {{<img src="Picture2.png" title="" alt="">}}
- 
+
+<br>
+<br/>
+
 4. Click **Local Peering Gateways** and then click **Create Local Peering Gateways**.
  
 {{<img src="Picture3.png" title="" alt="">}}
  
+<br>
+<br/>
+
 5. Enter a name for the peering gateway, select compartment, and click **Create**.
  
 {{<img src="Picture4.png" title="" alt="">}}
  
+<br>
+<br/>
+
 6. Select the subnet of the source host.
 
 {{<img src="Picture5.png" title="" alt="">}}
+
+<br>
+<br/>
 
 7. Click on the **Route table** assigned to the subnet.
 
 {{<img src="Picture6.png" title="" alt="">}}
 
+<br>
+<br/>
+
 8. Click **Add Route Rules**.
  
 {{<img src="Picture7.png" title="" alt="">}}
  
+<br>
+<br/>
+
 9. Enter the following details:
 
 - **Target type**: Local Peering Gateway
@@ -98,6 +119,9 @@ Now, let's create the local peering and see how it provides access to
 - **Target Local Peering Gateway**: Name of the gateway that you created in Step 4.
 
 {{<img src="Picture8.png" title="" alt="">}}
+
+<br>
+<br/>
 
 10. Now, try to access **172.xx.xx.2** from the host **irbproddbs1**.
  
