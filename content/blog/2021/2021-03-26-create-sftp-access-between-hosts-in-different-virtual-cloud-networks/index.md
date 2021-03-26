@@ -142,8 +142,8 @@ Now, let's create the local peering and see how it provides access to
                 100%  44KB 44.0KB/s  00:00
         sftp>
 
-This process opened access to 172.xx.xx.2 (DEV APPS server) from the host **proddbs1**
-(PROD DB server), and you can copy files from **proddbs1** to 172.xx.xx.2. However,
+This process opened access to **172.xx.xx.2** (DEV APPS server) from the host **proddbs1**
+(PROD DB server), and you can copy files from **proddbs1** to **172.xx.xx.2**. However,
 it didn’t open access to proddbs1 from **172.xx.xx.2**, so you can’t copy the files in
 the other direction.
 
