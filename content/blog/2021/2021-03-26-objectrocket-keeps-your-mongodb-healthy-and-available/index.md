@@ -3,7 +3,7 @@ layout: post
 title: "ObjectRocket keeps your MongoDB healthy and available"
 date: 2021-03-26
 comments: true
-author:
+author: Remus Catrina
 authorAvatar: 'https://27gugn2cjlf23by7ems65e21-wpengine.netdna-ssl.com/wp-content/uploads/RCA-JPEG-e1605803561623-100x100.jpg'
 bio: "Remus Catrina is a NoSQL Data Engineer and Oracle Architect for ObjectRocket, a
 Database-as-a-Service platform offering by Rackspace Technology. As a member of the
