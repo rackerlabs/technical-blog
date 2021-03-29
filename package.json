@@ -56,7 +56,7 @@
         "content-loaded": "^1.2.1",
         "dotenv": "^8.2.0",
         "glob": "^7.1.6",
-        "globby": "^11.0.1",
+        "globby": "^11.0.3",
         "highlight.js": "^10.4.1",
         "html-webpack-plugin": "^4.5.0",
         "hyperlink": "^4.6.0",
