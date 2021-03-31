@@ -104,56 +104,56 @@ description = ["description"]
     parent = "Developer Network"
     url = "https://docs.rackspace.com/docs"
     weight = 2
-[[menu.footer]]
-    name = "SDKs"
-    parent = "Developer Network"
-    url = "https://docs.rackspace.com/sdks/python/"
-    weight = 3
+# [[menu.footer]]
+#     name = "SDKs"
+#     parent = "Developer Network"
+#     url = "https://docs.rackspace.com/sdks/python/"
+#     weight = 3
 [[menu.footer]]
     name = "Rackspace How-To"
     parent = "Developer Network"
     url = "https://support.rackspace.com/how-to/"
-    weight = 4
+    weight = 3
 [[menu.footer]]
     name = "Expert Insights Tech Blog"
     parent = "Blogs"
     url = "/blog"
-    weight = 5
+    weight = 4
 [[menu.footer]]
     name = "Rackspace Blog"
     parent = "Blogs"
     url = "https://www.rackspace.com/blog"
-    weight = 6
+    weight = 5
 [[menu.footer]]
     name = "Solve: Thought Leadership"
     parent = "Blogs"
     url = "https://www.rackspace.com/solve"
-    weight = 7
+    weight = 6
 [[menu.footer]]
     name = "Customer Stories"
     parent = "Other Information"
     url = "https://www.rackspace.com/customer-stories"
-    weight = 8
+    weight = 7
 [[menu.footer]]
     name = "Events"
     parent = "Other Information"
     url = "https://www.rackspace.com/events"
-    weight = 9
+    weight = 8
 [[menu.footer]]
     name = "Programs"
     parent = "Other Information"
     url = "https://www.rackspace.com/responsibility"
-    weight = 10
+    weight = 9
 [[menu.footer]]
     name = "Careers"
     parent = "Other Information"
     url = "https://jobs.jobvite.com/rackspace/"
-    weight = 11
+    weight = 10
 [[menu.footer]]
     name = "Style Guide for Technical Content"
     parent = "Other Information"
     url = "https://docs.rackspace.com/docs/style-guide/"
-    weight = 12
+    weight = 11
 
 [[menu.main]]
     identifier = "developer_home"
