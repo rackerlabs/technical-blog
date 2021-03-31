@@ -353,6 +353,13 @@ consultant, I keep on upgrading myself and learning new technology.
 I always believe in chasing dreams that ultimately motivate me to achieve my
 life goals. I love traveling and trekking. Thank you!"
 
+Garkoti, Ravi
+authorAvatar: 'https://s.gravatar.com/avatar/86e568635f3bcdc31d4a322d3451449c'
+bio: "I am an IT professional working for Rackspace Technologies with 9+ years of
+experience in the field of Oracle Database and ERP system. Also a keen learner of cloud
+technology with certification in AWS and OCI. Before working with Rackspace, I was
+associated with HCL, IBM, and Wipro."
+
 Garratt, Nick
 authorAvatar: 'https://s.gravatar.com/avatar/749cf70eafe03795015019c1047be85f'
 bio: "Nick Garratt is a Principal Architect in the Rackspace Managed Public
@@ -570,6 +577,10 @@ authorAvatar: n/a
 bio: "Sanjiv is an Application Support Architect who is responsible for onboarding
 clients with regard to implementation and operations of the eCommerce platform."
 
+Kumar, Santosh
+authorAvatar: 'https://s.gravatar.com/avatar/0d3c022f6dc5245d2602222d67cf86fa'
+bio: "Rackspace expert, at your service!"
+
 Kumar, Vikas
 authorAvatar: 'https://s.gravatar.com/avatar/02d1f0f4f3f24ee84e33211a51a0b237'
 bio: "I've been a Racker for two years and have more than ten years of Oracle&reg;
@@ -720,6 +731,11 @@ to large public sector bodies. This breadth of experience has enabled me to gain
 set covering the full life cycle from initial strategy, requirements planning, architecture
 and system design through to post-production support. My experience includes Disaster
 Recovery planning, design, and testing over many years, both on-premises and on public cloud."
+
+Muthyala, Pravenn
+authorAvatar: 'https://s.gravatar.com/avatar/d88522fef1ff73c43f8a30bc316d5b6a'
+bio: "I am an Oracle Applications DBA with 10 years of experience and am well versed with
+Oracle technologies. Currently associated with Rackspace Technology."
 
 Myoung,Sam
 authorAvatar: 'https://s.gravatar.com/avatar/7632808463e741b328ea3ce18f80b935'
@@ -875,6 +891,11 @@ bio: "I am ambitious and driven. I thrive on challenge and constantly set goals
 for myself, so I have something to strive toward. I’m not comfortable with
 settling, and I’m always looking for an opportunity to do better and achieve
 greatness."
+
+Sharma, Suryakant
+authorAvatar: 'https://0.gravatar.com/avatar/68b2358efadbf76113a7fd8e86545cb9'
+bio: "I am an Oracle Apps DBA with over 10 years of experience, currently associated with
+Rackspace Technology."
 
 Shukla, Abhishek
 authorAvatar: 'https://2.gravatar.com/userimage/191238188/88086f4370c46cbf11e5171378bd77b1'
