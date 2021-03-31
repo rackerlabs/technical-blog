@@ -58,7 +58,7 @@
         "glob": "^7.1.6",
         "globby": "^11.0.3",
         "highlight.js": "^10.4.1",
-        "html-webpack-plugin": "^4.5.0",
+        "html-webpack-plugin": "^4.5.2",
         "hyperlink": "^4.6.0",
         "instantsearch.js": "^4.8.1",
         "jquery": "^3.5.1",
