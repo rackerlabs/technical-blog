@@ -25,7 +25,7 @@ data.
 
 <!--more-->
 
-### introduction
+### Introduction
 
 After you encrypt data, only authorized users or applications can access it. Oracle uses
 tools and processes to authenticate, authorize, and audit databases but not the OS data
@@ -73,7 +73,7 @@ and decrypts the TDE table key, which in turn encrypts and decrypts data in the 
 
 </br>
 
-##### 2. Transparent Data Encryption tablespace encryption:
+##### 2. Transparent Data Encryption tablespace encryption
 
 All objects created in the encrypted tablespace are automatically encrypted. It helps you
 to encrypt the entire table or multiple columns.
