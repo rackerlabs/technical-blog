@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Enabling successful cloud adoption with an effective operating model: Part one"
-date: 2021-04-06
+date: 2021-04-07
 comments: true
 author: Wilfred Wah
 bio: "Wilfred is a Principal Consultant of Advisory Services, Rackspace
@@ -111,7 +111,7 @@ consumers to interact effectively to support the business needs. Figure 2 profil
 functions between service providers and service consumers out of an abstract operating
 model framework.
 
-{{<img src="Picture2.png" title="Figure 2: Operating Model Framework" alt="" class="image-left">}}
+{{<img src="Picture2.png" title="" alt="" class="image-left">}}
 We can always view the core functions of the entire ITSM ecosystem as technologies
 covering application and platform, intersecting with responsibilities covering engineering
 (build) and operations (support). If we position the end-users at the top and the cloud
@@ -206,7 +206,7 @@ model becomes more intuitive.
 Stay tuned for the concluding part of this series on enabling successful cloud adoption
 with an effective operating model.
 
-<a class="cta purple" id="cta" href="https://www.rackspace.com/sap">Learn more about our SAP services.</a>
+<a class="cta purple" id="cta" href="https://www.rackspace.com/cloud/cloud-migration">Learn more about Cloud adoption and migration.</a>
 
 Use the Feedback tab to make any comments or ask questions. You can also click
 **Let's Talk** to [start the conversation](https://www.rackspace.com/).
