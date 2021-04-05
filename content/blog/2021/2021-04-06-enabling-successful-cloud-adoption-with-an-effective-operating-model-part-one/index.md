@@ -111,7 +111,7 @@ consumers to interact effectively to support the business needs. Figure 2 profil
 functions between service providers and service consumers out of an abstract operating
 model framework.
 
-{{<img src="Picture2.png" title="Figure 2: Operating Model Framework" alt="" class="right">}}
+{{<img src="Picture2.png" title="Figure 2: Operating Model Framework" alt="" class="image-left">}}
 We can always view the core functions of the entire ITSM ecosystem as technologies
 covering application and platform, intersecting with responsibilities covering engineering
 (build) and operations (support). If we position the end-users at the top and the cloud
