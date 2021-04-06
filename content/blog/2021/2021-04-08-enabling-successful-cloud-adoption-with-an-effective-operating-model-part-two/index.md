@@ -102,6 +102,7 @@ differentiates the business and the platform risks associated with security, com
 and other non-functional requirements. These risks eventually outweigh the capacity and
 capability of a single outcome-based team. 
 
+{{<img src="Picture5.png" title="" alt="" class="image-right">}}
 As illustrated on the left-hand side of Figure 5, while the developers focus on innovation
 and coding business logic, the overall outcome-based team is burdened to take care of
 non-functional features of the application stack on the right. These include infrastructure,
@@ -109,7 +110,6 @@ operations, security, and finance. Risks associated with these aspects will grow
 application expands to cover more functionalities and integrates with more application
 modules to deliver the desired outcomes.
 
-{{<img src="Picture5.png" title="" alt="" class="image-left">}}
 Because all applications share the same non-functional risks, it makes sense that an
 expanded CPE team can manage them as shared services. This CPE team can adopt the DevOps
 practice at the platform layer to build, manage, and operate all non-functional features
@@ -124,7 +124,7 @@ include designing and building actual infrastructure, operations, and security c
 rather than just setting standards and guardrails. They maintain their own Agile pipeline
 of work and deploy methods and tooling to progress through a CI/CD process. 
 
-{{<img src="Picture6.png" title="" alt="" class="image-right">}}
+{{<img src="Picture6.png" title="" alt="" class="image-left">}}
 Most companies having highly mature cloud adoption should converge into a sustainable
 operating model similar to Figure 6. This applies to both legacy systems and new builds.
 The legacy systems are retired and replaced by modernized software inclusive of PaaS and
