@@ -37,7 +37,7 @@ I created a VM in VirtualBox and assigned the VM 4 GB of RAM and gave it 8 GB of
 
 There are various steps you have to go through when installing the Ubuntu operating system. The screenshot below shows these steps:
 
-{{<img src="ubuntu_installer.jpg" title="" alt="">}}
+{{<img src="/blog/openstack-for-windows-users-installing-linux/ubuntu_installer.jpg" title="" alt="">}}
 
 
 
@@ -108,7 +108,7 @@ ext2 and ext4 are file systems, similar to the native Windows FAT and NTFS file 
 
 Up to this point I only installed the core Ubuntu operating system. The following screen allowed me to select additional packages to install. I selected OpenSSH, Lamp Server and Virtual Machine Host.
 
-{{<img src="software_selection.jpg" title="" alt="">}}
+{{<img src="/blog/openstack-for-windows-users-installing-linux/software_selection.jpg" title="" alt="">}}
 
 
 **OpenSSH**: This component runs on the server and listens for connections over the SSH protocol. With this component running you can remotely control your server as well as transfer files to the server. Similar to Terminal Server on Windows, which is needed to accept Remote Desktop Connections.
@@ -133,7 +133,7 @@ This was a trickier than expected. There’s no Windows GUI anymore, so I couldn
 
 I now had this screen in front of me:
 
-{{<img src="login.jpg" title="" alt="">}}
+{{<img src="/blog/openstack-for-windows-users-installing-linux/login.jpg" title="" alt="">}}
 
 
 Next steps: figure out how to login, and then download and install OpenStack. No doubt there will be many more lessons to learn as I continue this project. Thanks for reading!

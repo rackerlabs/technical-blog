@@ -156,7 +156,7 @@ Query the Discoverer profile options looking for the following items:
 
 The following image shows these settings:
 
-{{<img src="Picture1" title="" alt="">}}
+{{<img src="/blog/upgrading-oracle-business-intelligence-discoverer-part-2/Picture1" title="" alt="">}}
 
 ### Run the "Generate Business Views by Application" concurrent program
 

@@ -91,7 +91,7 @@ transition to a more effective operation.
 
 The following image shows the steps in the business supply chain:
 
-{{<img src="EndToEndSupplyChain.png" title="Supply chain steps" alt="Supply chain steps">}}
+{{<img src="/blog/Modern-supply-chain-made-simple-by-cloud-infrastructure/EndToEndSupplyChain.png" title="Supply chain steps" alt="Supply chain steps">}}
 
 
 This section explores how the cloud simplifies the following five steps of the

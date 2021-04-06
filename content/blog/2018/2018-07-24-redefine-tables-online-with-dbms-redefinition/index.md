@@ -8,7 +8,8 @@ published: true
 authorIsRacker: true
 categories:
   - Oracle
-  - databaseslug: 'redefine-tables-online-with-dbms-redefinition' 
+  - database
+slug: 'redefine-tables-online-with-dbms-redefinition' 
 ---
 
 Online table redefinition allows you to restructure your Oracle&reg; table in
@@ -24,7 +25,7 @@ both the table and the data unavailable for a certain period, which is a less
 than favorable situation for businesses. This is when the ``DBMS_REDEFINITION``
 package saves the day, as shown in the following image:
 
-{{<img src="Picture1.png" title="" alt="">}}
+{{<img src="/blog/redefine-tables-online-with-dbms-redefinition/Picture1.png" title="" alt="">}}
 
 ### Purpose
 

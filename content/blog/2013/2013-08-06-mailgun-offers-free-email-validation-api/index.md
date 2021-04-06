@@ -24,7 +24,7 @@ account directly through the Cloud Control Panel!
 
 <!--more-->
 
-{{<img src="cp.png" title="" alt="">}}
+{{<img src="/blog/mailgun-offers-free-email-validation-api/cp.png" title="" alt="">}}
 
 Email validation is a hard problem that every single developer, building
 anything on the web, has to deal with.  We actually have been working on email
@@ -205,7 +205,7 @@ Email addresses are frequently mistyped. Instead of @yahoo.com, you might type
 misspelled word, we offer suggestions so you don’t miss mail due to a typo. Here’s
 what that looks like in the [jquery demo app][2] [[source][8]] we mentioned above.
 
-{{<img src="email-validator.png" title="" alt="">}}
+{{<img src="/blog/mailgun-offers-free-email-validation-api/email-validator.png" title="" alt="">}}
 
 ### What we don’t provide
 

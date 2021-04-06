@@ -58,23 +58,23 @@ nova boot --image=7c526505-bc72-4e3c-8d9a-e700c0acf299 --flavor=performance1-2 m
 * Once the VM is **Active**, click on the **Actions** available in the **Server
   Details**, and select **Connect Via Console**.
 
-{{<img src="connect_via_console.png" title="" alt="">}}
+{{<img src="/blog/custom-images-via-boot-dot-rackspace-dot-com-training-wheels-included/connect_via_console.png" title="" alt="">}}
 
 #### 3. Select Linux Operating Systems from the Boot Menu
 
-{{<img src="menu.png" title="" alt="">}}
+{{<img src="/blog/custom-images-via-boot-dot-rackspace-dot-com-training-wheels-included/menu.png" title="" alt="">}}
 
 #### 4. Select the Ubuntu operating system from the list of Distros
 
-{{<img src="distro.png" title="" alt="">}}
+{{<img src="/blog/custom-images-via-boot-dot-rackspace-dot-com-training-wheels-included/distro.png" title="" alt="">}}
 
 #### 5. Select 12.04 from the list of Versions
 
-{{<img src="version.png" title="" alt="">}}
+{{<img src="/blog/custom-images-via-boot-dot-rackspace-dot-com-training-wheels-included/version.png" title="" alt="">}}
 
 #### 6. Select the Ubuntu operating system install from the the Boot Paramaters
 
-{{<img src="params.png" title="" alt="">}}
+{{<img src="/blog/custom-images-via-boot-dot-rackspace-dot-com-training-wheels-included/params.png" title="" alt="">}}
 
 #### 7. Proceed through the install & setup accordingly
 
@@ -86,7 +86,7 @@ In addition to custom modifications, make sure to do the following:
 * Select OpenSSH server during the software install process.
 * Install the GRUB boot loader to the master boot record.
 
-{{<img src="install.png" title="" alt="">}}
+{{<img src="/blog/custom-images-via-boot-dot-rackspace-dot-com-training-wheels-included/install.png" title="" alt="">}}
 
 #### 8. Reboot from local hdd
 
@@ -95,7 +95,7 @@ disconnects. Reconnect to the console, but this time, select to boot
 from the Local HDD because we've already installed the OS and because iPXE by
 default does a netboot.
 
-{{<img src="localboot.png" title="" alt="">}}
+{{<img src="/blog/custom-images-via-boot-dot-rackspace-dot-com-training-wheels-included/localboot.png" title="" alt="">}}
 
 #### 9. Instance configuration required by Rackspace
 
@@ -103,7 +103,7 @@ To configure the instance, you must first get to the prompt. You can do
 this via the console from the browser or by SSH'ing into the VM (SSH may be easier to work
 with).
 
-{{<img src="os_console.png" title="" alt="">}}
+{{<img src="/blog/custom-images-via-boot-dot-rackspace-dot-com-training-wheels-included/os_console.png" title="" alt="">}}
 
 Run the following command to install curl:
 
@@ -163,7 +163,7 @@ to have a clean, pristine image:
 In the **Server Details**, select **Create Image** to snapshot the image as-is and
 give it a name, such as `my_ubuntu_1204`.
 
-{{<img src="create_image.png" title="" alt="">}}
+{{<img src="/blog/custom-images-via-boot-dot-rackspace-dot-com-training-wheels-included/create_image.png" title="" alt="">}}
 
 #### 13. Set metadata for the image
 

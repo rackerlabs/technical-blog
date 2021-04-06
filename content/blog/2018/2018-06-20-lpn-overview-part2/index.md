@@ -47,7 +47,7 @@ steps:
 
 2. From the **Miscellaneous Issue** page, select **Responsibility > WHSE Mgmt > Warehousing > Inventory > Issues > Misc Issue**.
 
-{{<img src="picture1.png" title="Screenshot" alt="Screenshot">}}
+{{<img src="/blog/lpn-overview-part2/picture1.png" title="Screenshot" alt="Screenshot">}}
 
 <ol start=3>
    <li>In the <b>Acct</b> field, enter the adjustment account for the issue and
@@ -72,7 +72,7 @@ To perform a subinventory LPN transfer, use the following steps:
 2. From the **Sub Transfer** page, select **Responsibility > WHSE Mgmt >
    Warehousing > Inventory > Transfers > Sub Transfer**.
 
-{{<img src="picture2.png" title="Screenshot" alt="Screenshot">}}
+{{<img src="/blog/lpn-overview-part2/picture2.png" title="Screenshot" alt="Screenshot">}}
 
 <ol start=3>
    <li>Enter the <b>LPN</b> you want to transfer from.</li>
@@ -99,7 +99,7 @@ organizations. To perform a direct inter-organization LPN transfer, use the foll
 2. From the **Sub Transfer** page, select **Responsibility > WHSE Mgmt >
    Warehousing > Inventory > Transfers > Org Transfer**.
 
-{{<img src="picture3.png" title="Screenshot" alt="Screenshot">}}
+{{<img src="/blog/lpn-overview-part2/picture3.png" title="Screenshot" alt="Screenshot">}}
 
 <ol start=3>
    <li>If necessary, enter the organization to transfer <b>from</b>.</li>

@@ -55,7 +55,7 @@ There are many different architectures that can be configured, ranging from a
 simple unidirectional architecture to a more complex peer-to-peer one. Refer to
 the following image to see the various topologies supported by GoldenGate.
 
-{{<img src="Picture1.png" title="" alt="">}}
+{{<img src="/blog/oracle-goldengate-basics/Picture1.png" title="" alt="">}}
 
 **Image Source:** https://www.vitalsofttech.com/goldengate-replication-topologies/
 
@@ -64,7 +64,7 @@ the following image to see the various topologies supported by GoldenGate.
 The following image shows the components, or processes, of the GoldenGate
 architecture, which are described in this section:
 
-{{<img src="Picture2.png" title="" alt="">}}
+{{<img src="/blog/oracle-goldengate-basics/Picture2.png" title="" alt="">}}
 
 **Image source**: https://www.vitalsofttech.com/wp-content/uploads/2013/06/GoldenGate-Replication.jpg
 
@@ -175,7 +175,7 @@ Classic Replicat has the following characteristics:
 
 The following image illustrates classic Replicat:
 
-{{<img src="Picture3.png" title="" alt="">}}
+{{<img src="/blog/oracle-goldengate-basics/Picture3.png" title="" alt="">}}
 
 **Image source**: https://docs.oracle.com/GoldenGate/1212/gg-winux/GIORA/img/integratedapply.jpg
 
@@ -190,7 +190,7 @@ committed order.
 
 The following image illustrates coordinated Replicat:
 
-{{<img src="Picture4.png" title="" alt="">}}
+{{<img src="/blog/oracle-goldengate-basics/Picture4.png" title="" alt="">}}
 
 **Image source**: https://www.red-gate.com/simple-talk/sql/oracle/oracle-GoldenGate-12c-new-features-part-2/
 
@@ -208,7 +208,7 @@ target database.
 
 The following image illustrates integrated Replicat:
 
-{{<img src="Picture5.png" title="" alt="">}}
+{{<img src="/blog/oracle-goldengate-basics/Picture5.png" title="" alt="">}}
 
 **Image source**: https://docs.oracle.com/GoldenGate/1212/gg-winux/GIORA/process_mode.htm#GIORA212
 

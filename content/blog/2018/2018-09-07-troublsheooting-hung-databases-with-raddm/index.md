@@ -94,18 +94,18 @@ Open a terminal session and try to connect to the database. Notice that the sess
 has not yet started. With a connection not established, you can't log in to the
 database because of the hung condition as shown in the following image:
 
-{{<img src="Picture1.png" title="" alt="">}}
+{{<img src="/blog/troublsheooting-hung-databases-with-raddm/Picture1.png" title="" alt="">}}
 
 Now, go to OEM and under the **Target** menu, select `Databases for Troubleshooting`
 and search for the database name. As shown in the following image, I am searching
 for `CAC****1P`.
 
-{{<img src="Picture2.png" title="" alt="">}}
+{{<img src="/blog/troublsheooting-hung-databases-with-raddm/Picture2.png" title="" alt="">}}
 
 Click on the database name. It might take a little time, so wait to refresh. In
 a bit, you see the error message highlighted in the following image:
 
-{{<img src="Picture3.png" title="" alt="">}}
+{{<img src="/blog/troublsheooting-hung-databases-with-raddm/Picture3.png" title="" alt="">}}
 
 For this database instance, this is where Real-Time ADDM is going to be very
 useful for the database administrator (DBA) to diagnose the situation. Let's
@@ -114,19 +114,19 @@ go to the **Performance** menu and select `Real-Time ADDM`, which takes you to t
 screen shown in the following image. In this situation, Real-Time ADDM uses a
 direct connection because the instance is hanging.
 
-{{<img src="Picture4.png" title="" alt="">}}
+{{<img src="/blog/troublsheooting-hung-databases-with-raddm/Picture4.png" title="" alt="">}}
 
 You must use SYSDBA credentials for the Real-Time ADDM connection in a hung
 situation, as shown in the following image:
 
-{{<img src="Picture5.png" title="" alt="">}}(Picture5.png)
+{{<img src="/blog/troublsheooting-hung-databases-with-raddm/Picture5.png" title="" alt="">}}(Picture5.png)
 
 
 After the diagnostic mode connection is established, you can read ASH data directly
 in memory, starting from the previous hour. After login, you can view the top
 activity at the top of the activity program as shown in the following image:
 
-{{<img src="Picture6.png" title="" alt="">}}
+{{<img src="/blog/troublsheooting-hung-databases-with-raddm/Picture6.png" title="" alt="">}}
 
 You can see that the issue which is causing the database to hang. In this example,
 it relates to the application weight class. To counter this situation, you need
@@ -136,18 +136,18 @@ samples to determine the issues. To stop after 10 minutes, click **STOP**. After
 this is done, Real-Time ADDM shows findings based on priority. The following
 image indicates the analysis under the **Findings** tab.
 
-{{<img src="Picture7.png" title="" alt="">}}
+{{<img src="/blog/troublsheooting-hung-databases-with-raddm/Picture7.png" title="" alt="">}}
 
 In this example, it shows unresolved or session wait chains, causing the database
 to hang. Recommendations to fix the issue are indicated in the following image:
 
-{{<img src="Picture8.png" title="" alt="">}}
+{{<img src="/blog/troublsheooting-hung-databases-with-raddm/Picture8.png" title="" alt="">}}
 In this example, Real-Time ADDM recommended (as shown in the preceding image)
 that you kill a particular session. To get more information about the process
 that needs to be terminated, go to the **Hang Data** tab, as shown in the
 following image:
 
-{{<img src="Picture9.png" title="" alt="">}}
+{{<img src="/blog/troublsheooting-hung-databases-with-raddm/Picture9.png" title="" alt="">}}
 
 Click on **Final Blockers** to see the blocker session summary. As recommended,
 kill the session for which you have the session details at the database level
@@ -156,13 +156,13 @@ to database, the only option available is to kill the OS Process ID. To do that,
 open a terminal and kill the session causing issue as shown in the following
 image:
 
-{{<img src="Picture10.png" title="" alt="">}}
+{{<img src="/blog/troublsheooting-hung-databases-with-raddm/Picture10.png" title="" alt="">}}
 
 After that, you can see that the blocked session can proceed in the Real-Time ADDM
 analysis window. Now try to connect with an SQL Plus connection from terminal, and
 this time the connection succeeds as shown in the following image:
 
-{{<img src="Picture11.png" title="" alt="">}}
+{{<img src="/blog/troublsheooting-hung-databases-with-raddm/Picture11.png" title="" alt="">}}
 
 ### Conclusion
 

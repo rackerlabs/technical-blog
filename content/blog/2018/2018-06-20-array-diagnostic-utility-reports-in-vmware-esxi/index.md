@@ -52,7 +52,7 @@ server:
 
 The following image shows the preceding steps:
 
-{{<img src="Picture1.png" title="" alt="">}}
+{{<img src="/blog/array-diagnostic-utility-reports-in-vmware-esxi/Picture1.png" title="" alt="">}}
 
 ### Install the hpcucli utility
 
@@ -80,7 +80,7 @@ To generate and save an ADU report, use the following steps:
 
         /opt/hp # esxcli hpssacli cmd –q “controller all show status”
 
-{{<img src="Picture2.png" title="" alt="">}}
+{{<img src="/blog/array-diagnostic-utility-reports-in-vmware-esxi/Picture2.png" title="" alt="">}}
 
 <ol start=3>
   <li>Run the following command to generate an array configuration report:</li>
@@ -88,10 +88,10 @@ To generate and save an ADU report, use the following steps:
 
         /opt/hp # esxcli hpssacli cmd –q “controller slot=0  show config detail”
 
-{{<img src="Picture3.png" title="" alt="">}}
+{{<img src="/blog/array-diagnostic-utility-reports-in-vmware-esxi/Picture3.png" title="" alt="">}}
 
 
-{{<img src="Picture4.png" title="" alt="">}}
+{{<img src="/blog/array-diagnostic-utility-reports-in-vmware-esxi/Picture4.png" title="" alt="">}}
 
 
 <ol start=4>

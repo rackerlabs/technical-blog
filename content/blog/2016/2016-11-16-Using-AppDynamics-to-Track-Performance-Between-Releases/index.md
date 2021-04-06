@@ -29,7 +29,7 @@ The process is simple enough.  We can use cURL we can plug in the appropriate va
 
 In this example, I've hard-coded the release number, but it should be trivial to include your release number as a variable here for greater flexibility.  After executing this API call, we can now see the event within the AppDynamics console:
 
-{{<img src="deployment_event.png" title="Deployment Event" alt="Deployment Event">}}
+{{<img src="/blog/Using-AppDynamics-to-Track-Performance-Between-Releases/deployment_event.png" title="Deployment Event" alt="Deployment Event">}}
 
 ### Release Comparison
 
@@ -37,5 +37,5 @@ Now that we have our deployments automatically being recorded within AppDynamics
 
 The Compare Releases functionality is straight forward.  All we have to do is pick a time frame before the recorded release time and pick one after the recorded release time to compare.  AppDynamics will allow us to compare performance in broad and granular capacities.
 
-{{<img src="compare_releases.png" title="Compare Releases" alt="Compare Releases">}}
+{{<img src="blog/Using-AppDynamics-to-Track-Performance-Between-Releases/compare_releases.png" title="Compare Releases" alt="Compare Releases">}}
 

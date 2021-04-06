@@ -82,7 +82,7 @@ SQL query:
 The following image shows the query and results:
 
 
-{{<img src="QueryResponse.png" title="List cell command results" alt="List cell command results">}}
+{{<img src="/blog/oracle-11g-calibrate-io-overview/QueryResponse.png" title="List cell command results" alt="List cell command results">}}
 
 **Note:** Only one calibration can be performed on a database instance at a time.
 
@@ -126,7 +126,7 @@ The following image shows the output from a ``DBMS_RESOURCE_MANAGER.CALIBRATE_IO
 procedure:
 
 
-{{<img src="CalibrationResponse.png" title="List cell command results" alt="List cell command results">}}
+{{<img src="/blog/oracle-11g-calibrate-io-overview/CalibrationResponse.png" title="List cell command results" alt="List cell command results">}}
 
 ### Calibration considerations
 

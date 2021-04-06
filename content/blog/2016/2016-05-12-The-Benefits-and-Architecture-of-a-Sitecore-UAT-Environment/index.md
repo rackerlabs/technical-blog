@@ -78,7 +78,7 @@ Successful UAT is part infrastructure, part governance. Creating a repeatable an
 
 The following example offers a sample UAT environment that highlights the data connections and flows across a multi-region Sitecore Farm that mirrors a Production environment in its architecture. Notice that content is refreshed via the Production Master database over the UAT Master database (we will explore options to perform this momentarily). This assumes connections to external APIs that are dedicated to UAT and that it is using Sitecore xDB functionality with [ObjectRocket](https://objectrocket.com/) as the MongoDB backend.
 
-{{<img src="ExampleUATArchitecture.png" title="Example UAT Architecture" alt="">}}
+{{<img src="/blog/The-Benefits-and-Architecture-of-a-Sitecore-UAT-Environment/ExampleUATArchitecture.png" title="Example UAT Architecture" alt="">}}
 
 The process for refreshing the UAT environment is as follows:
 

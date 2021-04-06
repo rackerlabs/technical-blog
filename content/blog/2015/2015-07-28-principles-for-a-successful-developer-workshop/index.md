@@ -100,7 +100,7 @@ If your audience can't read/see your presentation, it's very frustrating. Make y
 
 ### <a name="get-help"></a>Get help
 
-<img class="blog-post image-right" src="qcon2.jpg"/>It's dangerous to go alone! Get help if at all possible. You can't possibly be at the front teaching and be giving hands on help in the audience at the same time. And people will need hands on help.
+<img class="blog-post image-right" src="/blog/principles-for-a-successful-developer-workshop/qcon2.jpg"/>It's dangerous to go alone! Get help if at all possible. You can't possibly be at the front teaching and be giving hands on help in the audience at the same time. And people will need hands on help.
 
 Have colleagues act as teaching assistants. Depending on the audience, you may want to make an effort to have at least one teaching assistant familiar with Windows. If your colleagues can't make it to the conference, seriously consider reaching out to others you know (or may not know so well) who are attending the conference. Those Developer Advocate/Evangelist/Relations types tend to be a helpful bunch. :) Also, you can always encourage attendees to help each other.
 

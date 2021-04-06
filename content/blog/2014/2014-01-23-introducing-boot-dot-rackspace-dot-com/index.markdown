@@ -22,7 +22,7 @@ You will need to connect to the console of the Cloud Server in order to view the
 
 Each option will either kick off the install kernels from the various operating systems or automatically load up the ISO to the Cloud Server.  From there you can customize your Cloud Server to your hearts content and install directly to the OS disk.  Once completed, you can install the Rackspace Cloud Agent, take a snapshot, and then redeploy the image as your golden master.  We have also initially included a few useful tools like [Clonezilla](http://clonezilla.org/) for moving data around.
 
-{{<img src="brc-linux-menu.png" title="" alt="">}}
+{{<img src="/blog/introducing-boot-dot-rackspace-dot-com/brc-linux-menu.png" title="" alt="">}}
 
 # Contributing
 We've put all the source for the iPXE scripts on [Github](https://github.com/rackerlabs/boot.rackspace.com/) and welcome contributions.  We've also written up some [how-to's](https://github.com/rackerlabs/boot.rackspace.com/wiki) on Rackspace Cloud Servers image creation which will enable you to create images just like our base images.

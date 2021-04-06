@@ -80,11 +80,11 @@ main categories:
 - Workflow Issues
 - Resolution Recommended
 
-<img src="Picture1.png" width=600 />
+<img src="/blog/applications-monitoring-creating-a-smoother-financial-close/Picture1.png" width=600 />
 
-<img src="Picture2.png" width=600 />
+<img src="/blog/applications-monitoring-creating-a-smoother-financial-close/Picture2.png" width=600 />
 
-<img src="Picture3.png" width=600 />
+<img src="/blog/applications-monitoring-creating-a-smoother-financial-close/Picture3.png" width=600 />
 
 #### How we use the reports
 

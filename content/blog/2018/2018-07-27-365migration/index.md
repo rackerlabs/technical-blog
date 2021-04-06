@@ -9,8 +9,8 @@ authorIsRacker: false
 categories:
     - General
 slug: '365migration'
-Originally published by TriCore: March 27, 2017
 ---
+Originally published by TriCore: March 27, 2017
 
 If you're considering migrating your email systems to Microsoft&reg; Office
 365&reg;, there are a variety of migration methods. The best fit depends on
