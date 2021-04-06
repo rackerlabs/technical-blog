@@ -27,7 +27,7 @@ slug: "enabling-successful-cloud-adoption-with-an-effective-operating-model-part
 ---
 
 If you haven't read it already start with
-[Part one of this two part series]().
+[Part one of this two-part series](https://docs.rackspace.com/blog/enabling-successful-cloud-adoption-with-an-effective-operating-model-part-one).
 Then read the rest of the story about the cloud operating model here.
 
 <!--more-->
