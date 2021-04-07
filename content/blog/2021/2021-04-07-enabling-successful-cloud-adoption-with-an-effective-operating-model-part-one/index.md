@@ -111,7 +111,6 @@ consumers to interact effectively to support the business needs. Figure 2 profil
 functions between service providers and service consumers out of an abstract operating
 model framework.
 
-{{<img src="Picture2.png" title="" alt="" class="image-left">}}
 We can always view the core functions of the entire ITSM ecosystem as technologies
 covering application and platform, intersecting with responsibilities covering engineering
 (build) and operations (support). If we position the end-users at the top and the cloud
@@ -122,14 +121,15 @@ application team. The application team consumes those services to develop and de
 required application services, which unlock the business capabilities to the end-users who
 run the applications.
 
+{{<img src="Picture2sm.png" title="" alt="" class="image-left">}}
 The elasticity, automation, and the on-demand nature of resource and service deployment on
 Cloud platforms have enabled companies to operate their IT environment effectively with
 DevOps. Rather than having different teams assuming responsibilities associated with each
 of the four quadrants of the operating model, companies can set up special-purpose teams
 comprising skills to operate technologies and resources across multiple quadrants to achieve
-target outcomes. This structure removes the traditional organization boundary, limiting each
-team to a singular responsibility or activity area, and accelerating the operations and
-changes associated with routine work and business innovation.
+target outcomes. This structure removes the traditional organization boundary, delimiting
+each team from a singular responsibility or activity area and accelerating the operations
+and changes associated with routine work and business innovation.
 
 To illustrate the preceding concept and understand why the operating model should vary
 during cloud adoption, you can think of a hypothetical scenario in which a company develops
@@ -167,8 +167,8 @@ all platform services, collectively assuming all responsibilities associated wit
 engineering and platform operations (such as the lower half of the operating model).  
 
 When the company transfers its workloads to the Cloud, the suitable operating model depends
-on how it can leverage DevOps to effectively build, maintain, and operate the transferring
-application. 
+on how well it can leverage DevOps to effectively build, maintain, and operate the
+transferring application. 
 
 Due to their monolithic design and tightly-coupled architecture, many activity-based teams
 usually maintain traditional legacy applications. Each team focuses on only one well-defined
