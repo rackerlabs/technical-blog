@@ -52,11 +52,11 @@ Next, obtain a new token and sweep from 100 concurrent connections to 1000 conne
 
 Apache2 was installed using the configuration that comes in the Keystone source code, running behind Apache using mod_wsgi. The OpenStack Keystone/Apache reference configuration uses 5 wsgi processes with 1 thread per process. The NGINX configuration from my blog article uses 10 uwsgi processes and 2 threads per process, which I used in my initial comparison. Although these potentially could give vastly different  levels of performance due to the number of additional processes available to NGINX, both NGINX and Apache came very close to each other's maximum number of transactions per second (see the graphs below). This is due to the fact that it the performance limiter is the keystone code and not the web-server code. To establish this, I used `top` to monitor the CPU load while running a load test. For Apache, the wsgi processes completely dominated as the top consumers of the CPU and uwsgi processes for NGINX. These processes are the ones running the Keystone code.
 
-{{<img src="apache-nginx-keystone10.png" title="Illustration 1 Apache vs Nginx 10 to 100 Concurrent Connections" alt="Illustration 1 Apache vs Nginx 100 to 1000 Concurrent Connections">}}
+{{<img src="/blog/apache-nginx-keystone-performance/apache-nginx-keystone10.png" title="Illustration 1 Apache vs Nginx 10 to 100 Concurrent Connections" alt="Illustration 1 Apache vs Nginx 100 to 1000 Concurrent Connections">}}
 
 Illustration 1 shows the results from 10 to 100 concurrent connections for both servers, which gave vary similar results. However as seen below, they both ran into problems running from 100 to 1000 concurrent connections (Illustration 2). At 200 concurrent connections, both servers were overwhelmed and started having a large number of failed transactions.
 
-{{<img src="apache-nginx-keystone100.png" title="Illustration 2 Apache vs Nginx 10 to 100 Concurrent Connections" alt="Illustration 2 Apache vs Nginx 100 to 1000 Concurrent Connections">}}
+{{<img src="/blog/apache-nginx-keystone-performance/apache-nginx-keystone100.png" title="Illustration 2 Apache vs Nginx 10 to 100 Concurrent Connections" alt="Illustration 2 Apache vs Nginx 100 to 1000 Concurrent Connections">}}
 
 At the higher numbers of concurrent connections, the log files of both servers show 503 errors, happening when the server tried to connect to the wsgi or uwsgi processes running Keystone. The errors occured due to a lack of available connections.
 
@@ -117,11 +117,11 @@ in /etc/security/limits.conf
 
 After tuning, the 10 to 100 connections chart is virtually identical (Illustration 3) to the stock chart (Illustration 1).
 
-{{<img src="apache-nginx-tuned10.png" title="Illustration 3 Apache vs Nginx 10 to 100 Concurrent Connections" alt="Illustration 3 Apache vs Nginx 10 to 100 Concurrent Connections">}}
+{{<img src="/blog/apache-nginx-keystone-performance/apache-nginx-tuned10.png" title="Illustration 3 Apache vs Nginx 10 to 100 Concurrent Connections" alt="Illustration 3 Apache vs Nginx 10 to 100 Concurrent Connections">}}
 
 However the 100 to 1000 connects chart shows a different picture. NGINX was able to handle up to 1000 concurrent connections without a problem, but Apache started having failed transactions above 700 concurrent connections. At this point, siege starts reporting failed transactions (503 errors) along with the longest transaction time for Apache growing to over 80 seconds..
 
-{{<img src="apache-nginx-tuned100.png" title="Illustration 4 Apache vs Nginx 10 to 100 Concurrent Connections" alt="Illustration 4 Apache vs Nginx 10 to 100 Concurrent Connections">}}
+{{<img src="/blog/apache-nginx-keystone-performance/apache-nginx-tuned100.png" title="Illustration 4 Apache vs Nginx 10 to 100 Concurrent Connections" alt="Illustration 4 Apache vs Nginx 10 to 100 Concurrent Connections">}}
 
 Since NGINX uses uwsgi, the uwsgi  listen parameter sets the socket listen queue size. This provides some buffering between NGINX and the uwsi processes, which seems to prevent NGINX from overrunning uwsgi for the loads tested. Apache does not have any such buffer when running wsgi. Perhaps changing Apache to use uwsgi would be helpful in heavily loaded situations.
 

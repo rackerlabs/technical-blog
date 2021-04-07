@@ -34,7 +34,7 @@ RAC 12c Release 2 based on the new node-weighting feature.
 
 The following image illustrates the node-weighting alorithm.
 
-{{<img src="NodeWeightinginOracle.png" title="Node Weighting in Oracle" alt="Node Weighting in Oracle">}}
+{{<img src="/blog/Intro-to-oracle-rac-node-weighting/NodeWeightinginOracle.png" title="Node Weighting in Oracle" alt="Node Weighting in Oracle">}}
 
 Source: [https://goo.gl/images/qarxrq](https://goo.gl/images/qarxrq)
 

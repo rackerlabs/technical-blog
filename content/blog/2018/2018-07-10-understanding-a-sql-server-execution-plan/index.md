@@ -59,7 +59,7 @@ indicator. It displays the number of records and the data size. Each line is
 thicker or thinner based on the data volume returned by the operation as shown
 by the following illustration:
 
-{{<img src="Picture1.png" title="" alt="">}}
+{{<img src="/blog/understanding-a-sql-server-execution-plan/Picture1.png" title="" alt="">}}
 
 If you have many objects, you need a better way to get an overview of the amount
 of data processed by each operation. Download the SentryOne Plan Explorer and
@@ -71,7 +71,7 @@ you need. To get the data processing view, change the view by selecting the
 ``Data size in MB`` option as shown in the following image. Your goal is to find
 an opportunity to reduce the overall data processing.
 
-{{<img src="Picture2.png" title="" alt="">}}
+{{<img src="/blog/understanding-a-sql-server-execution-plan/Picture2.png" title="" alt="">}}
 
 If you need to reduce the I/O stress, you might look at the ``SET STATISTICS IO ON``
 T-SQL value to get an overall idea of the I/O usage for the query. You should
@@ -102,7 +102,7 @@ following image, the **Clustered Index Seek** operator executed one time to get
 100 records, and SQL estimates 356 records. The difference could be due to
 outdated statistics or query performance.
 
-{{<img src="Picture3.png" title="" alt="">}}
+{{<img src="/blog/understanding-a-sql-server-execution-plan/Picture3.png" title="" alt="">}}
 
 ### Execution iterations
 
@@ -113,7 +113,7 @@ the other operations with higher costs, this might have proved to be a costly
 choice. Such operations have a high impact on query performance despite having
 a cluster index.  Row ID (RID) lookups are a similar operation for the heap.
 
-{{<img src="Picture4.png" title="" alt="">}}
+{{<img src="/blog/understanding-a-sql-server-execution-plan/Picture4.png" title="" alt="">}}
 
 ### Temporary database
 
@@ -128,7 +128,7 @@ variables have no statistics, so the plan always returns 1 and 1K in new release
 until the option to recompile is used. Thus, table variables are not a good choice
 for a large number of records.
 
-{{<img src="Picture5.png" title="" alt="">}}
+{{<img src="/blog/understanding-a-sql-server-execution-plan/Picture5.png" title="" alt="">}}
 
 ### Sort operator
 
@@ -141,7 +141,7 @@ sorted data to an application.
 
 The following image shows the sort cost:
 
-{{<img src="Picture6.png" title="" alt="">}}
+{{<img src="/blog/understanding-a-sql-server-execution-plan/Picture6.png" title="" alt="">}}
 
 ### Spool operator
 
@@ -153,7 +153,7 @@ Table/Index, and so on. SQL Server uses spool when it is better to refer to a
 temp work table rather than going back to the source table for intermediate
 result sets. The following image shows an example:
 
-{{<img src="Picture7.png" title="" alt="">}}
+{{<img src="/blog/understanding-a-sql-server-execution-plan/Picture7.png" title="" alt="">}}
 
 With spool, it is important to notice the number of rebinds and rewinds. Rewind
 is costlier than rebind. For example, in the following image, the operator shows
@@ -162,7 +162,7 @@ data. It returns each operator from table spool to table scan to get each record
 in rewinds. Rebind means it got the data from spool and didn’t return for the
 table scan.
 
-{{<img src="Picture8.png" title="" alt="">}}
+{{<img src="/blog/understanding-a-sql-server-execution-plan/Picture8.png" title="" alt="">}}
 
 ### Hash and nested loop operators
 

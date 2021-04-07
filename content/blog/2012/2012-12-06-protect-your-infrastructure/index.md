@@ -30,7 +30,7 @@ bastion host.
 
 ### Security Architecture
 
-{{<img src="arch.png" title="" alt="">}}
+{{<img src="/blog/protect-your-infrastructure/arch.png" title="" alt="">}}
 
 
 [Bastion hosts](https://en.wikipedia.org/wiki/Bastion_host) are simply a choke

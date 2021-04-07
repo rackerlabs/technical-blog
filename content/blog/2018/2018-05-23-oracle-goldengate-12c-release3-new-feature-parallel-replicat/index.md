@@ -45,7 +45,7 @@ maintained as well.
 
 The following image illustrates the Parallel Replicat architecture:
 
-{{<img src="Replicat1.png" title="List cell command results" alt="List cell command results">}}
+{{<img src="/blog/oracle-goldengate-12c-release3-new-feature-parallel-replicat/Replicat1.png" title="List cell command results" alt="List cell command results">}}
 
 Image source: [https://bit.ly/2wsPZVv](https://bit.ly/2wsPZVv)
 

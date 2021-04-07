@@ -162,7 +162,7 @@ and remediating malware outbreaks with ease.
 
 The following image shows the FMC's dashboard:
 
-{{<img src="Picture1.png" title="" alt="">}}
+{{<img src="/blog/introduction-to-nex-generation-firewalls-with-cisco-firepower/Picture1.png" title="" alt="">}}
 
 Image source: speaknetworks.com
 
@@ -171,7 +171,7 @@ Image source: speaknetworks.com
 The FMC provides unified management across the entire *attack continuum*—before,
 during, and after an attack as shown in the following image.
 
-{{<img src="Picture2.png" title="" alt="">}}
+{{<img src="/blog/introduction-to-nex-generation-firewalls-with-cisco-firepower/Picture2.png" title="" alt="">}}
 
 Image source: Cisco
 
@@ -216,7 +216,7 @@ appliances.
 
 Supported models and services are shown in the following image:
 
-{{<img src="Picture3.png" title="" alt="">}}
+{{<img src="/blog/introduction-to-nex-generation-firewalls-with-cisco-firepower/Picture3.png" title="" alt="">}}
 
 Image source: Cisco
 
@@ -288,7 +288,7 @@ and outside networks.
 -  The following figure shows the suggested network deployment for the ASA
 5506-X with the ASA FirePOWER module:
 
-{{<img src="Picture4.png" title="" alt="">}}
+{{<img src="/blog/introduction-to-nex-generation-firewalls-with-cisco-firepower/Picture4.png" title="" alt="">}}
 
 Image source: Cisco
 
@@ -388,27 +388,27 @@ operating costs with fewer devices to manage and deploy.
   <tr>If you liked this blog, share it by using the following icons:</tr>
   <tr>
    <td>
-       <img src="line-tile.png" width=50 >
+       <img src="/blog/introduction-to-nex-generation-firewalls-with-cisco-firepower/line-tile.png" width=50 >
     </td>
     <td>
       <a href="https://twitter.com/home?status=https%3A//developer.rackspace.com/blog/applications-monitoring-creating-a-smoother-financial-close/">
-        <img src="shareT.png">
+        <img src="/blog/introduction-to-nex-generation-firewalls-with-cisco-firepower/shareT.png">
       </a>
     </td>
     <td>
-       <img src="line-tile.png" width=50 >
+       <img src="/blog/introduction-to-nex-generation-firewalls-with-cisco-firepower/line-tile.png" width=50 >
     </td>
     <td>
       <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//developer.rackspace.com/blog/applications-monitoring-creating-a-smoother-financial-close/">
-        <img src="shareFB.png">
+        <img src="/blog/introduction-to-nex-generation-firewalls-with-cisco-firepower/shareFB.png">
       </a>
     </td>
     <td>
-       <img src="line-tile.png" width=50 >
+       <img src="/blog/introduction-to-nex-generation-firewalls-with-cisco-firepower/line-tile.png" width=50 >
     </td>
     <td>
       <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//developer.rackspace.com/blog/applications-monitoring-creating-a-smoother-financial-close&summary=&source=">
-        <img src="shareL.png">
+        <img src="/blog/introduction-to-nex-generation-firewalls-with-cisco-firepower/shareL.png">
       </a>
     </td>
   </tr>

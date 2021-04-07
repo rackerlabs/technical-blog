@@ -72,7 +72,7 @@ or Ansible among others.
 
 Look for future articles describing how to leverage these concepts further using DSC.
 
-{{<img src="PoshCode.png" alt="" title="Example">}}
+{{<img src="/blog/Managing-Windows-Servers-Remotely-with-PowerShell/PoshCode.png" alt="" title="Example">}}
 
 ### Further reading
 

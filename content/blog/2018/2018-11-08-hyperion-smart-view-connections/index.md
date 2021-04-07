@@ -88,7 +88,7 @@ that can be viewed by all users.
 
 The following diagram shows the two connection types:
 
-{{<img src="Picture1.png" title="" alt="">}}
+{{<img src="/blog/hyperion-smart-view-connections/Picture1.png" title="" alt="">}}
 
 In most cases, you find all your connections under **Shared Connections**.
 
@@ -132,7 +132,7 @@ perform the following steps:
 2.	In the Smart View panel, click the arrow next to the home as shown in the
 following image and select **Private Connections**.
 
-{{<img src="Picture3.png" title="" alt="">}}
+{{<img src="/blog/hyperion-smart-view-connections/Picture3.png" title="" alt="">}}
 
 <ol start=3>
     <li> 	In the text box, shown in the following image, enter the URL, or the local
@@ -154,7 +154,7 @@ for the URL. The following list includes many of the most common URLs:
     </li>
 </ol>
 
-{{<img src="Picture4.png" title="" alt="">}}
+{{<img src="/blog/hyperion-smart-view-connections/Picture4.png" title="" alt="">}}
 
 ### Conclusion
 

@@ -16,7 +16,7 @@ If you need to run MySQL on the Rackspace Cloud, you have two fundamental choice
 
 Let’s begin with performance. The graph below compares the various Cloud Database instance sizes, from 512 MB to 16 GB. Results shown are the average of five test iterations:
 
-{{<img src="cloudsrv.jpg" title="MySQL Performance - Cloud Servers" alt="MySQL Performance - Cloud Servers">}}
+{{<img src="/blog/cloud-servers-vs-cloud-databases/cloudsrv.jpg" title="MySQL Performance - Cloud Servers" alt="MySQL Performance - Cloud Servers">}}
 
 
 *Performance was measured using sysbench, table size 2 million rows, run from a 4 GB Cloud Server client with 200Mbps of network throughput.*
@@ -24,13 +24,13 @@ Let’s begin with performance. The graph below compares the various Cloud Datab
 Now let’s compare the performance of Cloud Databases with Cloud Servers, again with the same testing criteria in place:
 
 
-{{<img src="compare.jpg" title="MySQL Performance - Cloud Servers" alt="MySQL Performance - Cloud Servers">}}
+{{<img src="/blog/cloud-servers-vs-cloud-databases/compare.jpg" title="MySQL Performance - Cloud Servers" alt="MySQL Performance - Cloud Servers">}}
 
 The results indicate that Cloud Databases generally perform better than their Cloud Server counterparts, especially when under load. When we factor price into the equation, the right choice becomes a bit more dependent on application load and requirements. The cost of a Cloud Database varies depending on how much storage you need; if I assume 10 GB of storage for the sake of discussion, the number of transactions you get per dollar works out as follows:
 
 
 
-{{<img src="value.jpg" title="Transactions per Dollar - Cloud Servers vs. Cloud Databases">}}
+{{<img src="/blog/cloud-servers-vs-cloud-databases/value.jpg" title="Transactions per Dollar - Cloud Servers vs. Cloud Databases">}}
 
 The harder the server works, the greater the performance margin is for Cloud Databases. As this margin increases, it exceeds the price difference between Cloud Databases and Cloud Servers, making Cloud Databases a better value.
 

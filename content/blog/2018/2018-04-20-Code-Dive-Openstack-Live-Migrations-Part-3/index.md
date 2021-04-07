@@ -51,7 +51,7 @@ We have the instance ref and the host ref, which can be used by the code to pull
 
 #### Exploration 1
 
-{{<img src="Compute-1.png" title="Compute Exploration Flow" alt="Compute Exploration Flow">}}
+{{<img src="/blog/Code-Dive-Openstack-Live-Migrations-Part-3/Compute-1.png" title="Compute Exploration Flow" alt="Compute Exploration Flow">}}
 
 To begin, we start (as always) by transferring the RPC call into a private method.  Some additional work is handled this time, however.  Because this process can take a significant amount of time to run, we do not want RPC to be hung up waiting for the *\_do\_live\_migration* method to return. Therefore, an Eventlet thread is spawned. This Eventlet thread continues to run, and RPC returns its worker to the pool.  From here, *\_do\_live\_migration* is essentially told to _fork_ off and handle its business, and we continue into that method.
 
@@ -71,7 +71,7 @@ To begin, we start (as always) by transferring the RPC call into a private metho
 
 #### Exploration 2
 
-{{<img src="Compute-2.png" title="Compute Exploration Flow" alt="Compute Exploration Flow">}}
+{{<img src="/blog/Code-Dive-Openstack-Live-Migrations-Part-3/Compute-2.png" title="Compute Exploration Flow" alt="Compute Exploration Flow">}}
 
 
 This is the beginning of the prep phase for the live migration proper. The migration status is set to `Preparing`, and because I'm running a *block\_migration*, I gather details about the disk information and get basic BDM information again (remember, this information was discarded during the scheduling phase and only host details were returned). This very basic information is pulled and thrown into the *pre\_live\_migration* through *computeRPC* once again. I save the result of this as *migrate\_data*.  Note here that I actually pass the current *migrate\_data* (which was once the *dest\_check\_data*), so the variable is overwritten with the returned result of *pre\_live\_migration* method. Let's look briefly into the *get\_disk\_info* method here for clarity. Once the *pre\_live\_migration* method finishes, we return to this method to continue.
@@ -93,7 +93,7 @@ Note:  We are running through *ComputeRPC* here again because our first steps ac
 
 #### Exploration 3
 
-{{<img src="Compute-3.png" title="Compute Exploration Flow" alt="Compute Exploration Flow">}}
+{{<img src="/blog/Code-Dive-Openstack-Live-Migrations-Part-3/Compute-3.png" title="Compute Exploration Flow" alt="Compute Exploration Flow">}}
 
 
 This is a case where XenAPI actually doesn't implement this work, but it just passes the check, relying on this to be done later.
@@ -107,7 +107,7 @@ This is a case where XenAPI actually doesn't implement this work, but it just pa
 
 #### Exploration 4
 
-{{<img src="Compute-4.png" title="Compute Exploration Flow" alt="Compute Exploration Flow">}}
+{{<img src="/blog/Code-Dive-Openstack-Live-Migrations-Part-3/Compute-4.png" title="Compute Exploration Flow" alt="Compute Exploration Flow">}}
 
 
 This method handles a decent amount of complicated work. First, it pulls the more complete Block Device Mappings including the Cinder Target information and uses that information to set up attachments for the volumes within the \_volume\_API. It then pulls networking information again, and it passes the data into the driver's version of this method (`pre_live_migration`) to handle the heavy work. The result of the driver's *pre\_live\_migration* call is saved as *migrate\_data*. Once completed, execution moves on, sets up any needed networks on the host machine, and sets up the filtering rules before returning *migrate\_data*. The following code has been significantly trimmed for clarity. Notice that *migrate\_data* is passed and overridden, and that the code is running on the destination.
@@ -138,7 +138,7 @@ This method handles a decent amount of complicated work. First, it pulls the mor
 
 #### Exploration 5
 
-{{<img src="Compute-5.png" title="Compute Exploration Flow" alt="Compute Exploration Flow">}}
+{{<img src="/blog/Code-Dive-Openstack-Live-Migrations-Part-3/Compute-5.png" title="Compute Exploration Flow" alt="Compute Exploration Flow">}}
 
 
 The following simple method just adds more data to the *migrate\_data* object. The volumes are connected on the destination hypervisor by passing the bdm information, which was gathered in the previous method, into *connect\_block\_device\_volumes*. This code delves deeply into Cinder, but we don't need to focus on that right now. Just know that they are now attached on the destination. The code also creates interim networks and that the SR Mapping and VIF mapping for both of these are stored in the *migrate\_data* field.
@@ -155,7 +155,7 @@ There is now even more data in the *dest\_check\_data* (or *migrate\_data*) fiel
 
 #### Exploration 6
 
-{{<img src="Compute-6.png" title="Compute Exploration Flow" alt="Compute Exploration Flow">}}
+{{<img src="/blog/Code-Dive-Openstack-Live-Migrations-Part-3/Compute-6.png" title="Compute Exploration Flow" alt="Compute Exploration Flow">}}
 
 
 Now that the *pre\_live\_migration* method has completed, execution moves on (which leaves us just a status change away from a "running" status (YAY!)) and into the driver's *live\_migration* code. Nothing is returned from here, and it is just a `try:` and `except:` block execution. From here, the driver handles the rest of the process.
@@ -182,7 +182,7 @@ Now that the *pre\_live\_migration* method has completed, execution moves on (wh
 
 #### Exploration 7
 
-{{<img src="Compute-7.png" title="Compute Exploration Flow" alt="Compute Exploration Flow">}}
+{{<img src="/blog/Code-Dive-Openstack-Live-Migrations-Part-3/Compute-7.png" title="Compute Exploration Flow" alt="Compute Exploration Flow">}}
 
 
 The name of the following method actually changes a bit on the way into the driver for XenAPI, so it's a bit confusing. We are getting really close to the end here and have come a monumental distance in these code lines. Now, it's time for the driver to go ahead and start doing its thing. The method gathers some basic data once again, because often the needed data is not returned. The method then fills in even more data in *migrate_data* and issues the XenAPI Migrate command! This means that XenAPI begins the mirror, and the process is legitimately kicked off. This process handles getting the VM started on the destination, transferring the RAM states, and so on. This just leaves the OpenStack drivers to do the cleanup. More comments are inline in the following code. Once the long, long *migrate\_send* command completes, the *post\_method* executes.
@@ -221,7 +221,7 @@ The way that *post\_method* is called is a bit interesting, because it is define
 
 #### Exploration 8
 
-{{<img src="Compute-8.png" title="Compute Exploration Flow" alt="Compute Exploration Flow">}}
+{{<img src="/blog/Code-Dive-Openstack-Live-Migrations-Part-3/Compute-8.png" title="Compute Exploration Flow" alt="Compute Exploration Flow">}}
 
 
 Remember that the execution didn't move through RPC to get here, so the code is still running on the source. So far, execution was transferred to RPC to only handle the destination checks before bouncing back to source again. From now on, code runs on the source. The following method handles the cleanup actions that need to be done. It gathers BDM records (again!) and terminates and detaches the volumes from the source hypervisor, preparing to switch around networking information. This method gets very long, so we'll walk through it a little at a time and follow its cleanup steps where applicable. More comments are inline in the code.
@@ -265,7 +265,7 @@ Remember that the execution didn't move through RPC to get here, so the code is 
 
 #### Exploration 9
 
-{{<img src="Compute-9.png" title="Compute Exploration Flow" alt="Compute Exploration Flow">}}
+{{<img src="/blog/Code-Dive-Openstack-Live-Migrations-Part-3/Compute-9.png" title="Compute Exploration Flow" alt="Compute Exploration Flow">}}
 
 
 In the following code, the vif connections for the VM on the source are deleted, effectively stopping any connectivity to the source. This traverses two methods, so let's take a look at both. The first method just calls  *\_delete\_networks\_and\_bridges*. This method then calls the vif\_driver to call *delete\_network\_and\_bridge*. Kind of a long way around to get to the work, but you can see the *vif\_driver* defined here as well.
@@ -295,7 +295,7 @@ Looking at a sample *nova.conf*, notice what that *CONF.xenserver.vif\_driver* v
 
 #### Exploration 10
 
-{{<img src="Compute-10.png" title="Compute Exploration Flow" alt="Compute Exploration Flow">}}
+{{<img src="/blog/Code-Dive-Openstack-Live-Migrations-Part-3/Compute-10.png" title="Compute Exploration Flow" alt="Compute Exploration Flow">}}
 
 
 The *nova.virt.xenapi.vif.XenAPIOpenVswitchDriver.delete\_network\_and\_bridge* method is very intense and again out of our scope, but feel free to look at this code on your own.  It destroys the OVS port bindings for the bridge, vif, and patch ports, and tears down the rest of the environment for routing to this VIF. Now that's done, let's look back at the Compute *post\_live\_migration* with a bit more code trimming. I've marked where left off with (X) in the following code.
@@ -330,7 +330,7 @@ Beyond the (X), you can see that now some cleanup is being handled on the destin
 
 #### Exploration 11
 
-{{<img src="Compute-11.png" title="Compute Exploration Flow" alt="Compute Exploration Flow">}}
+{{<img src="/blog/Code-Dive-Openstack-Live-Migrations-Part-3/Compute-11.png" title="Compute Exploration Flow" alt="Compute Exploration Flow">}}
 
 
 The following is another beefcake of a method, which handles actions on the destination and also reaches out to the source to tear even more information down. I added more comments inline so that we can keep our (read: **my**) thoughts straight.
@@ -388,7 +388,7 @@ The following is another beefcake of a method, which handles actions on the dest
 
 #### Exploration 12
 
-{{<img src="Compute-12.png" title="Compute Exploration Flow" alt="Compute Exploration Flow">}}
+{{<img src="/blog/Code-Dive-Openstack-Live-Migrations-Part-3/Compute-12.png" title="Compute Exploration Flow" alt="Compute Exploration Flow">}}
 
 Now we can return to *\_post\_live\_migration* again, with more trimmed down psuedocode in the following sample to see where we left off marked with an (X).
 

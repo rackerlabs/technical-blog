@@ -128,7 +128,7 @@ was executed.
 
 ### <a name="understanding-the-project-structure"></a>Understanding the project structure
 
-<img class="blog-post image-right" src="project_structure.png"/>
+<img class="blog-post image-right" src="/blog/jenkins-post-build-plugin-part-1/project_structure.png"/>
 Opening the project in IntelliJ IDEA should display the project structure in the left
 pane.
 
@@ -146,7 +146,7 @@ plugin name and description.
     <name>Test Example</name>
     <description>testExample</description>
 
-<img class="blog-post" src="info.png"/>
+<img class="blog-post" src="/blog/jenkins-post-build-plugin-part-1/info.png"/>
 
 **Tip:**
 
@@ -201,9 +201,9 @@ When you see the preceding info message, type
 the plugin is now present in the installed plugin list. This is where the debugger,
 running in the background, performed its magic!
 
-<img class="blog-post image-center" src="plugin_installed.png"/>
+<img class="blog-post image-center" src="/blog/jenkins-post-build-plugin-part-1/plugin_installed.png"/>
 
-<img class="blog-post image-right" src="maven-projects.png"/>
+<img class="blog-post image-right" src="/blog/jenkins-post-build-plugin-part-1/maven-projects.png"/>
 
 ### <a name="more-with-maven"></a>More with Maven
 

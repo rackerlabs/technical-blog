@@ -86,7 +86,7 @@ Cassandra includes the following features:
 
 The following image shows Cassandra's architecture:
 
-{{<img src="Arch.png" title="" alt="">}}
+{{<img src="/blog/introduction-to-apache-cassandra/Arch.png" title="" alt="">}}
 
 Image source: [Cassandra Community Webinar](https://www.slideshare.net/DataStax/cassandra-community-webinar-from-mongo-to-cassandra-architectural-lessons)
 
