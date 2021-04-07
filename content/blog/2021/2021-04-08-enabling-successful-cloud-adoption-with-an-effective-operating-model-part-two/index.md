@@ -154,10 +154,9 @@ optimizes cloud benefits for companies:
 
 - From the IT perspective, the CPE ensures security, compliance, operational excellence,
   and cost optimization by codifying the platform services. This automates Cloud
-  governance with necessary guardrails and minimizes manual intervention.
-
-The DevOps on the platform layer provides shared services and keeps the overall cloud
-environment secured and highly efficient. 
+  governance with necessary guardrails and minimizes manual intervention.The DevOps on the
+  platform layer provides shared services and keeps the overall cloud environment secured
+  and highly efficient. 
 
 That said, DDOM is just a framework and not the ultimate operating model for all workloads
 running on Cloud. The most appropriate operating model always depends on the strategic
