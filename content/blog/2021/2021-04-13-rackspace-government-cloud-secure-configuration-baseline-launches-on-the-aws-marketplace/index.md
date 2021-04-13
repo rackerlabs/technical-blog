@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Rackspace Government Cloud Secure Configuration Baseline launches on the AWS Marketplace"
-date: 2021-04-15
+date: 2021-04-13
 comments: true
 author: Lorenzo Winfrey
 authorIsRacker: true
@@ -91,7 +91,7 @@ mandated compliance requirements.
 ### Conclusion
 
 Within the U.S., Rackspace Technology remains a leader in the FedRAMP authorization-enablement
-space, powering 15 FedRAMP ATOs built on our managed service. We provide 24x7x365 hybrid-cloud
+space, powering 16 FedRAMP ATOs built on our managed service. We provide 24x7x365 hybrid-cloud
 management, operational support, and security services as a packaged, on-demand, audited,
 and pay-as-you-go service. Rackspace Technology also handles approximately 80% of the
 operational and documentation burden of your environment’s security and compliance requirements
