@@ -4,8 +4,8 @@ title: "PyMongo and other Python modules for database engines"
 date: 2021-04-13
 comments: true
 author: Dinesh Miriam
-authorAvatar: ''
-bio: ""
+authorAvatar: 'https://www.gravatar.com/avatar/e1ae1c5c065d9f67ac50936847f2b83d'
+bio: "I am a Senior Database administrator with experience on SQL and NoSQL databases."
 published: true
 authorIsRacker: true
 categories:
