@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Rackspace Government Cloud Secure Configuration Baseline launches on the AWS Marketplace"
-date: 2020-12-04
+date: 2021-04-15
 comments: true
 author: Lorenzo Winfrey
 authorIsRacker: true
@@ -11,7 +11,7 @@ Winfrey is responsible for multiple areas including product vision and strategy,
 roadmap development, and branding for the RGS portfolio. Lorenzo’s leadership
 objective is to ensure all our solutions have a customer focus and are built
 to the highest quality while aggressively pursuing integration of new value added
-technology. Prior to joining Rackspace in April 2019, Lorenzo was Chief of
+technology. Before joining Rackspace in April 2019, Lorenzo was Chief of
 Architecture and Standards for the Defense Intelligence Agency (DIA) where he
 managed a portfolio of over $50 million in annual operating budget. Lorenzo’s
 extensive career in information technology includes leading DIA’s AWS Cloud
