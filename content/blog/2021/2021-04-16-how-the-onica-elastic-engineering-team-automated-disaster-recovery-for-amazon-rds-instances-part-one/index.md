@@ -4,8 +4,13 @@ title: "How the Onica Elastic Engineering team automated disaster recovery for A
 date: 2021-04-16
 comments: true
 author: Oliver Fletcher
-authorAvatar: ''
-bio: "Oliver is a Cloud Architect on the Elastic Engineering team at Onica, a Rackspace Technology Company."
+authorAvatar: 'https://en.gravatar.com/oliverfletcher8'
+bio: "I've been designing, developing, and building distributed systems since
+2008 in both hands-on and leadership roles. I am a forward thinker who looks
+outwards for new ideas, transparent, and a results-driven technology leader. I
+understand the importance of organisational culture, teams, and growing
+relationships. I'm a Cloud Architect on the Elastic Engineering team at Onica, a
+Rackspace Technology Company."
 published: true
 authorIsRacker: true
 categories:
@@ -41,19 +46,20 @@ should be for workloads so they can select a DR strategy that’s best suited fo
 their AWS workloads. Through defining a common understanding of RTO and RPO
 requirements, organizations can adequately design for disaster recovery solutions.
 
-In this post, I discuss how Onica’s Elastic Engineering team co-created a solution
-with a client that leverages serverless architecture and enables an automated
-backup and restore for [Amazon Relational Database Service (Amazon RDS&reg;)](https://aws.amazon.com/rds/)
+In this post, I discuss how the Elastic Engineering team at [Onica](https://onica.com/),
+a [Rackspace Technology](https://www.rackspace.com/), co-created a solution with
+a client that leverages serverless architecture and enables an automated backup
+and restore for
+[Amazon Relational Database Service (Amazon RDS&reg;)](https://aws.amazon.com/rds/)
 instances.
 
 A backup and restore DR strategy backs up your data by using point-in-time backups
 to a DR location and restores this data when necessary to recover from a disaster
 event.
 
-[Onica](https://onica.com/), a [Rackspace Technology](https://www.rackspace.com/)
-company, is an [AWS Premier Consulting Partner](https://partners.amazonaws.com/partners/001E000000heMPCIA2/Onica)
+Onica is an [AWS Premier Consulting Partner](https://partners.amazonaws.com/partners/001E000000heMPCIA2/Onica)
 with multiple AWS Competencies and the Amazon RDS Service Delivery validation.
-Onica is also a member of the AWS Managed Service Provider (MSP) and
+We are also a member of the AWS Managed Service Provider (MSP) and
 Well-Architected Partner programs.
 
 ### Adopt a DR strategy while reducing operational overhead
@@ -269,7 +275,7 @@ This post, Part One, describes the necessary components of the deployment, comin
 in Part Two of this two-part series describing a serverless DR implementation.
 Stay tuned!
 
-<a class="cta purple" id="cta" href="https://onica.com/services/professional-services-on-demand/">Learn more about Onica and the services we provide.</a>
+<a class="cta purple" id="cta" href="https://www.rackspace.com/solutions/elastic-engineering">Learn more about Rackspace Elastic Engineering.</a>
 
 Use the Feedback tab to make any comments or ask questions. You can also click
 **Let's Talk** to [start the conversation](https://www.rackspace.com/).
