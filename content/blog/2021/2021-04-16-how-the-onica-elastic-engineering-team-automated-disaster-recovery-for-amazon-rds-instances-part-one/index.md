@@ -47,7 +47,7 @@ their AWS workloads. Through defining a common understanding of RTO and RPO
 requirements, organizations can adequately design for disaster recovery solutions.
 
 In this post, I discuss how the Elastic Engineering team at [Onica](https://onica.com/),
-a [Rackspace Technology](https://www.rackspace.com/), co-created a solution with
+a [Rackspace Technology company](https://www.rackspace.com/), co-created a solution with
 a client that leverages serverless architecture and enables an automated backup
 and restore for
 [Amazon Relational Database Service (Amazon RDS&reg;)](https://aws.amazon.com/rds/)
