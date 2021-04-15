@@ -4,7 +4,7 @@ title: "How the Onica Elastic Engineering team automated disaster recovery for A
 date: 2021-04-16
 comments: true
 author: Oliver Fletcher
-authorAvatar: 'https://en.gravatar.com/oliverfletcher8'
+authorAvatar: 'https://secure.gravatar.com/avatar/c995a09e236f55b82451a9f8a6add9ad'
 bio: "I've been designing, developing, and building distributed systems since
 2008 in both hands-on and leadership roles. I am a forward thinker who looks
 outwards for new ideas, transparent, and a results-driven technology leader. I
