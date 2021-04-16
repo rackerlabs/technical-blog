@@ -68,7 +68,7 @@ deployment.
 
 The solution uses variable files as input into the CloudFormation templates that
 deploy the solution’s auxiliary services. See the
-[sections for the auxiliary services](https://docs.rackspace.com/blog/how-the-onica-elastic-engineering-team-automated-disaster-recovery-for-amazon-rds-instances-part-one/)
+[Solution: Auxiliary services section](https://docs.rackspace.com/blog/how-the-onica-elastic-engineering-team-automated-disaster-recovery-for-amazon-rds-instances-part-one/)
 for their applicable environment variables.
 
 The following table outlines the standard variables defined for all Stacker
@@ -83,7 +83,7 @@ environment variable files.
 The following steps outline the commands you need to run to build each of the
 solution’s services on AWS. Ensure you have already cloned the GitHub repository.
 
-#### AWS Lambda Functions
+##### AWS Lambda Functions
 
 1. Change directory to **/dev** directory and run the following command to deploy
    each Lambda function:
@@ -100,7 +100,7 @@ solution’s services on AWS. Ensure you have already cloned the GitHub reposito
     - Module to deploy:
         - 1: **lambdas/onica-rds-dr-backup-restore.sls**
 
-#### Amazon SNS
+##### Amazon SNS
 
 Change directory to /dev directory and run the following command to deploy the
 SNS topic and subscriptions:
@@ -109,7 +109,7 @@ SNS topic and subscriptions:
 - Module to deploy:
   - 4: **cloudformation/onica-rds-dr-sns.cfn**
 
-#### RDS Event Subscriptions
+##### RDS Event Subscriptions
 
 Change directory to **/dev** directory and run the following command to deploy
 the RDS event subscriptions:
@@ -118,7 +118,7 @@ the RDS event subscriptions:
 - Module to deploy:
   - 5: **cloudformation/onica-rds-dr-rds-event.cfn**
 
-#### AWS Key Management Service
+##### AWS Key Management Service
 
 Change directory to **/dr** directory and run the following command to deploy
 the KMS Key used to encrypt the RDS instance snapshots:
@@ -132,19 +132,15 @@ the KMS Key used to encrypt the RDS instance snapshots:
 For RPO, it’s important to understand the initial snapshot creation needs to
 finish before the database instance can return to the *available state* again.
 The DB instance needs to be in this state to accept a new snapshot creation
-request.
-
-I highly recommend you schedule the time for the RDS Backup Lambda to run so that
-the primary RDS instance aligns with the minimum RPO value possible in your
-environment.
+request. I highly recommend you schedule the time for the RDS Backup Lambda to
+run so that the primary RDS instance aligns with the minimum RPO value possible
+in your environment.
 
 For RTO, many architectural factors determine this, such as the size of your
 database, the distance between the two regions, and the instance type you chose
-to restore your database.
-
-Because of the sheer number of variables at play when calculating the *average*
-RTO, I recommend testing your DR solution to get a valid estimate specific to
-your use case.
+to restore your database. Because of the sheer number of variables at play when
+calculating the *average* RTO, I recommend testing your DR solution to get a
+valid estimate specific to your use case.
 
 ### Cost considerations
 
@@ -156,10 +152,8 @@ As far as storage cost is concerned, there is no additional charge for backup
 storage of up to 100 percent of your total database storage for a region. Because
 you don’t have an Amazon RDS instance in the secondary (DR) region, you incur a
 backup storage cost for the snapshots in Amazon S3 billed at standard
-[Amazon S3 rates](https://aws.amazon.com/s3/pricing/).
-
-Additionally, you incur a data transfer cost to copy the snapshot from S3 in
-Region 1 to Region 2.
+[Amazon S3 rates](https://aws.amazon.com/s3/pricing/). Additionally, you incur a
+data transfer cost to copy the snapshot from S3 in Region 1 to Region 2.
 
 For a comprehensive cost estimate, use the free
 [Simple Monthly Calculator](https://calculator.s3.amazonaws.com/index.html).
