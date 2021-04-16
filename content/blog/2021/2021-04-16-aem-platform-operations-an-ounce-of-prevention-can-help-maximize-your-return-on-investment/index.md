@@ -42,8 +42,8 @@ outage, or upgrade activity:
 AEM is a dynamic and highly customizable content delivery system. Each
 installation is different, and a heavily used AEM Platform changes constantly.
 Because companies constantly update and use digital assets, content,
-configuration elements, and code., it’s fortunate that Adobe releases service
-packs, security fixes, version upgrades, and improvements on a regular basis.  
+configuration elements, and code, Adobe releases service packs, security fixes,
+version upgrades, and improvements on a regular basis.
 
 ### What is Health Assessment?
 
