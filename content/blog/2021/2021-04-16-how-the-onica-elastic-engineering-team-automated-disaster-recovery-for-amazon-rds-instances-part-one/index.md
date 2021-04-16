@@ -269,11 +269,11 @@ The RDS event subscriptions need to include a comma-delimited list of the RDS
 instances. We define the list in the **dev-us-east-2** environment file and also
 the value for the **DBInstances** parameter.
 
-### Coming up
+### Next step
 
-This post, Part One, describes the necessary components of the deployment, coming
-in Part Two of this two-part series describing a serverless DR implementation.
-Stay tuned!
+This post, Part One, describes the necessary components of the deployment.
+[Part Two of this two-part series](https://docs.rackspace.com/blog/how-the-onica-elastic-engineering-team-automated-disaster-recovery-for-amazon-rds-instances-part-two/)
+describes a serverless DR implementation of our solution.
 
 <a class="cta purple" id="cta" href="https://www.rackspace.com/solutions/elastic-engineering">Learn more about Rackspace Elastic Engineering.</a>
 
