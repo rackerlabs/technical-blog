@@ -50,7 +50,7 @@ Its main goals encourage GitOps best practices, avoid convoluted Makefiles or
 scripts (enabling identical deployments from a workstation or CI job) and enable
 developers and admins to use the best tool for any given job.
 
-#### Prerequisites
+##### Prerequisites
 
 - Run the following command to install Runway by using `pipenv`:
        `pipenv install runway`
@@ -58,7 +58,7 @@ developers and admins to use the best tool for any given job.
   for the RDS Backup Restore function.Add the DB subnet group name for the **rds_subnet_group** variable in the **serverless.yaml** file for the
   environment variables.
 
-#### Stacker environment variables
+##### Stacker environment variables
 
 [Stacker](https://stacker.readthedocs.io/en/latest/terminology.html#blueprint)
 is an open-source tool and library used to create and update multiple
@@ -78,12 +78,12 @@ environment variable files.
 
 </br>
 
-#### Stacker Environment Variables
+##### Stacker Environment Variables
 
 The following steps outline the commands you need to run to build each of the
 solution’s services on AWS. Ensure you have already cloned the GitHub repository.
 
-##### AWS Lambda Functions
+#### AWS Lambda Functions
 
 1. Change directory to **/dev** directory and run the following command to deploy
    each Lambda function:
@@ -100,7 +100,7 @@ solution’s services on AWS. Ensure you have already cloned the GitHub reposito
     - Module to deploy:
         - 1: **lambdas/onica-rds-dr-backup-restore.sls**
 
-##### Amazon SNS
+#### Amazon SNS
 
 Change directory to /dev directory and run the following command to deploy the
 SNS topic and subscriptions:
@@ -109,7 +109,7 @@ SNS topic and subscriptions:
 - Module to deploy:
   - 4: **cloudformation/onica-rds-dr-sns.cfn**
 
-##### RDS Event Subscriptions
+#### RDS Event Subscriptions
 
 Change directory to **/dev** directory and run the following command to deploy
 the RDS event subscriptions:
@@ -118,7 +118,7 @@ the RDS event subscriptions:
 - Module to deploy:
   - 5: **cloudformation/onica-rds-dr-rds-event.cfn**
 
-##### AWS Key Management Service
+#### AWS Key Management Service
 
 Change directory to **/dr** directory and run the following command to deploy
 the KMS Key used to encrypt the RDS instance snapshots:
