@@ -32,7 +32,7 @@ canonical: (https://aws.amazon.com/blogs/apn/how-onicas-elastic-engineering-team
 *Originally published on the [AWS Partner Network (APN) Blog](https://aws.amazon.com/blogs/apn/how-onicas-elastic-engineering-team-automated-disaster-recovery-for-amazon-rds-instances/)*
 
 If you haven't seen it, check out
-[part one of this two-part series](https://docs.rackspace.com/blog/how-the-onica-elastic-engineering-team-automated-disaster-recovery-for-amazon-rds-instances-part-one/),
+[part one of this two-part series](https://docs.rackspace.com/blog/how-the-onica-elastic-engineering-team-automated-disaster-recovery-for-amazon-rds-instances-part-one/)
 before reading about the serverless DR implementation of our solution.
 
 <!--more-->
