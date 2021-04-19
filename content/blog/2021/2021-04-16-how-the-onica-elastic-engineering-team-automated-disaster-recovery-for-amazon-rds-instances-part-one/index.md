@@ -84,7 +84,7 @@ to define an [AWS Lambda&reg;](https://aws.amazon.com/lambda/) function in the
 Python&reg; 3 programming language to automate these DR tasks.
 
 The solution also incorporates proactive monitoring and alerting to ensure
-engineers can monitor the backup processes. It enables engineers to have
+engineers can monitor the backup processes. It enables engineers to
 identify when a DR event occurs in their primary AWS region.
 [Amazon CloudWatch&reg;](https://aws.amazon.com/cloudwatch/),
 [Amazon Simple Notification Service&reg; (SNS)](https://aws.amazon.com/sns/?whats-new-cards.sort-by=item.additionalFields.postDateTime&whats-new-cards.sort-order=desc),
