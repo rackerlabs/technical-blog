@@ -203,10 +203,10 @@ model becomes more intuitive.
 
 ### Next Steps
 
-Stay tuned for the concluding part of this series on enabling successful cloud adoption
-with an effective operating model.
+Check out [part two](https://docs.rackspace.com/blog/enabling-successful-cloud-adoption-with-an-effective-operating-model-part-two/)
+of this series on enabling successful cloud adoption with an effective operating model.
 
-<a class="cta purple" id="cta" href="https://www.rackspace.com/cloud/cloud-migration">Learn more about Cloud adoption and migration.</a>
+<a class="cta teal" id="cta" href="https://www.rackspace.com/cloud/cloud-migration">Learn more about Cloud adoption and migration.</a>
 
 Use the Feedback tab to make any comments or ask questions. You can also click
 **Let's Talk** to [start the conversation](https://www.rackspace.com/).
