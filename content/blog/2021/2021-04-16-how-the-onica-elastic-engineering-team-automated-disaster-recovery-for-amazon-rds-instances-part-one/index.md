@@ -43,8 +43,8 @@ You can adopt a [number of strategies](https://docs.aws.amazon.com/wellarchitec
 to meet requirements to ensure business continuity. However, organizations should
 understand what their [Recovery Point Objective (RPO) and Recovery Time Objective (RTO)](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/disaster-recovery-dr-objectives.html)
 should be for workloads so they can select a DR strategy that’s best suited for
-their AWS workloads. Through defining a common understanding of RTO and RPO
-requirements, organizations can adequately design for disaster recovery solutions.
+their AWS workloads. Organizations can adequately design disaster recovery
+solutions by defining a common understanding of RTO and RPO requirements.
 
 In this post, I discuss how the Elastic Engineering team at [Onica](https://onica.com/),
 a [Rackspace Technology company](https://www.rackspace.com/), co-created a solution with
@@ -65,7 +65,7 @@ Well-Architected Partner programs.
 ### Adopt a DR strategy while reducing operational overhead
 
 Effectively managing a backup and restore strategy can be burdensome, requiring
-manual input and additional toil for engineers. Through the use of automation,
+manual input and additional toil for engineers. By using automation,
 serverless architecture, and proactive monitoring, organizations can reduce
 operational overhead and focus on unlocking trapped value.
 
@@ -79,7 +79,7 @@ not occur, the solution manages the deletion of snapshots in the primary region
 after they’re copied and retains those in the DR region for only a set number of
 retention days.
 
-The solution makes use of the [AWS Boto3 SDK](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html)
+The solution uses the [AWS Boto3 SDK](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html)
 to define an [AWS Lambda&reg;](https://aws.amazon.com/lambda/) function in the
 Python&reg; 3 programming language to automate these DR tasks.
 
@@ -91,12 +91,12 @@ identify when a DR event occurs in their primary AWS region.
 and [RDS event subscriptions](https://aws.amazon.com/premiumsupport/knowledge-center/create-rds-event-subscription/)
 enable this insight.
 
-Through the use of [AWS CloudFormation&reg;](https://docs.aws.amazon.com/cloudformation/index.html)
+By using [AWS CloudFormation&reg;](https://docs.aws.amazon.com/cloudformation/index.html)
 and open-source tools such as [Runway](https://docs.onica.com/projects/runway/en/release/getting_started.html),
 [Stacker](https://stacker.readthedocs.io/en/latest/), and the
 [Serverless Framework](https://www.serverless.com/framework/docs/), the solution
-leverages infrastructure as code (IaC) so it can be treated as application code
-through source control and deployed in a repeatable fashion.
+leverages infrastructure as code (IaC) so you can treat it as application code
+through source control and deploy it in a repeatable fashion.
 
 ### Solution workflow and architecture
 
@@ -169,7 +169,7 @@ environment variables to be set within the **serverless.yml** file.
 
 The RDS Backup Cleanup function leverages the boto3 library to delete the RDS
 instance snapshots created by the RDS Backup Lambda from the primary region’s S3
-bucket and the DR region’s S3 bucket. This is done by using the
+bucket and the DR region’s S3 bucket. Do this by using the
 `[delete_db_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_snapshot)`
 method from the Boto3 SDK.
 
@@ -196,7 +196,7 @@ This Lambda also requires a number of environment variables to be set within the
 
 The RDS Backup Restore function leverages the Boto3 SDK to restore the RDS
 instance snapshots created by the RDS Backup Lambda from the primary region’s S3
-bucket to a new RDS instance the DR region. This is done by using the
+bucket to a new RDS instance the DR region. Do this by using the
 `[restore_db_instance_from_db_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.restore_db_instance_from_db_snapshot)`
 method from the Boto3 SDK.
 
@@ -239,24 +239,23 @@ The DR region for the RDS Backup Copy Lambda function leverages
 [AWS Key Management Service (KMS)](https://aws.amazon.com/kms/). The solution
 uses the key that CloudFormation provisions to encrypt the RDS snapshot created
 in the DR region when it initiates the RDS Backup Copy Lambda Function. This
-ensures the the system protects the snapshot data in the DR region.
+ensures the system protects the snapshot data in the DR region.
 
 The KMS key requires us to define an
 [AWS Identity and Access Management (IAM&reg;)](https://aws.amazon.com/iam/#:~:text=AWS%20Identity%20and%20Access%20Management%20(IAM)%20enables%20you%20to%20manage,offered%20at%20no%20additional%20charge)
-role in the **dev-us-east-2** environment file. The **KMSIAMRole0** parameter is
-the value we need to define. This role will be granted administrator access for
-the KMS key in the DR region; details of the actions can be found in the
-**kms.yaml** file.
+role in the **dev-us-east-2** environment file. We define the **KMSIAMRole0** parameter value
+and grant administrator access to the role for the KMS key in the DR region. You can
+find details of the actions in the **kms.yaml** file.
 
 #### Amazon SNS
 
 We use CloudFormation to deploy SNS topics and subscriptions. The solution uses
 SNS topics to capture RDS events for both the availability and backup categories.
 To ensure proactive monitoring, the solution provisions SNS subscriptions to
-enable the system to send email alerts to DevOps engineers. When the RDS snapshot
-completes or an outage occurs for the RDS instances, SNS sends an email.
+enable the system to send email alerts to DevOps engineers. SNS sends an email
+when the RDS snapshot completes or an outage occurs for the RDS instances.
 
-The SNS subscriptions requires us to set an email in the **dev-us-east-2**
+The SNS subscriptions require us to set an email in the **dev-us-east-2**
 environment file. Define the value for the **RDSSNSEmail** parameter.
 
 #### Amazon RDS Event Subscriptions
