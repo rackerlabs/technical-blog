@@ -2,7 +2,7 @@
 {{- $isBlogs := (eq .Section "blog") -}}
 
 
-<header class="header buttons-header">
+<header class="header buttons-header" data-nosnippet>
   <nav class="nav navbar navbar-light bg-light justify-content-end buttons-nav-items">
       {{- range .Site.Menus.buttons -}}
       {{- if eq .Identifier "buynow" -}}
