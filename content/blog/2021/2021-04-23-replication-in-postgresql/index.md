@@ -40,7 +40,7 @@ implement streaming replication of a PostgreSQL database.
 Now, it's time to understand the replication modes, models, and types of replication in
 PostgreSQL and learn about write-ahead logging.
 
-##### Asynchronous and synchronous modes
+#### Asynchronous and synchronous modes
 
 The following diagram shows the modes of PostgreSQL replication:
 
@@ -59,7 +59,7 @@ transaction. In this mode of replication,  source and replica servers are always
 The drawback is that if a replica server goes down or can't complete a transaction, the
 source server goes into a hung state.  
 
-##### Single- and Multi-source replication models
+#### Single- and Multi-source replication models
 
 With **Single-source** replication, you have only one source server and one or more
 replica servers. The source sends the replication transactions to all replicas. 
@@ -73,7 +73,7 @@ changes on one source database, that source server replicates the changes to the
 table rows on the other source servers. For this model to succeed, you need to employ
 conflict resolution schemes to prevent duplicate primary keys and other issues.
  
-##### Types of Replication
+#### Types of Replication
 
 There are three types of replication:
 
@@ -89,7 +89,7 @@ There are three types of replication:
   limitations. It cannot replicate Truncate, large objects like (lob, blob, clob ),
   sequences, schemas, and DDL.
  
-##### Write-ahead logging
+#### Write-ahead logging
 
 Before you start using streaming replication, you should understand write-ahead logging
 (WAL) and how it works.
@@ -124,7 +124,7 @@ occur:
 Here are the steps to set up streaming replication in PostgreSQL between a source and one
 replica:
 
-##### Step 1 
+#### Step 1 
 
 First, we need to ensure that both source and replica servers have passwordless SSH
 authentication configured. If not, we need to configure it by using `ssh-keygen`.
@@ -136,14 +136,14 @@ To learn about passwordless SSH configuration, see
     Replica node 192.168.24.29
     Username `postgres` on both source and replica.
  
-###### Step 2
+#### Step 2
 
 Run the following commands on both servers to stop the firewall:
 
     $ sudo systemctl stop firewalld
     $ sudo systemctl disable firewalld
 
-###### Step 3
+#### Step 3
  
 1. On the source server, go to the data directory:
 
@@ -171,7 +171,7 @@ Run the following commands on both servers to stop the firewall:
 
 6. Restart the server to reflect the changes.
 
-##### Step 4
+#### Step 4
 
 On the replica server:
 
@@ -191,7 +191,7 @@ On the replica server:
 These commands copy all data from the data directory of the source database to the replica
 data directory and create the **recovery.conf** file.
 
-##### Steps 5
+#### Steps 5
 
 After the base backup completes, you need to check for **recovery.conf** files. Any server
 with a **recovery.conf** file in the data directory is a replica server and contains the
@@ -206,7 +206,7 @@ The file should appear as follows:
     Standby_mode = ‘on’
     Primary_conninfo = ‘user=postgres passfile=’’/home/postgres/.pgpass’’ host=192.168.24.28 port=5432 sslmode=disable sslcompression=0 target_session_attrs=any’
  
-##### Step 6
+#### Step 6
 
 Now start the server and validate the changes:
 
