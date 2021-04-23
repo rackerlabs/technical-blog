@@ -124,7 +124,7 @@ occur:
 Here are the steps to set up streaming replication in PostgreSQL between a source and one
 replica:
 
-#### Step 1 
+#### Step one 
 
 First, we need to ensure that both source and replica servers have passwordless SSH
 authentication configured. If not, we need to configure it by using `ssh-keygen`.
@@ -136,14 +136,14 @@ To learn about passwordless SSH configuration, see
     Replica node 192.168.24.29
     Username `postgres` on both source and replica.
  
-#### Step 2
+#### Step two
 
 Run the following commands on both servers to stop the firewall:
 
     $ sudo systemctl stop firewalld
     $ sudo systemctl disable firewalld
 
-#### Step 3
+#### Step three
  
 1. On the source server, go to the data directory:
 
@@ -171,7 +171,7 @@ Run the following commands on both servers to stop the firewall:
 
 6. Restart the server to reflect the changes.
 
-#### Step 4
+#### Step four
 
 On the replica server:
 
@@ -191,7 +191,7 @@ On the replica server:
 These commands copy all data from the data directory of the source database to the replica
 data directory and create the **recovery.conf** file.
 
-#### Steps 5
+#### Step five
 
 After the base backup completes, you need to check for **recovery.conf** files. Any server
 with a **recovery.conf** file in the data directory is a replica server and contains the
@@ -206,7 +206,9 @@ The file should appear as follows:
     Standby_mode = ‘on’
     Primary_conninfo = ‘user=postgres passfile=’’/home/postgres/.pgpass’’ host=192.168.24.28 port=5432 sslmode=disable sslcompression=0 target_session_attrs=any’
  
-#### Step 6
+ <br/>
+ 
+#### Step six
 
 Now start the server and validate the changes:
 
@@ -264,15 +266,15 @@ Now start the server and validate the changes:
         postgres  1358 
         1748  0 11:31 ?        00:00:04 postgres: wal receiver process   streaming 0/50000E34
  
-The sender and receiver transactions should be the same, and the replica is always in
-read-only mode.
+   The sender and receiver transactions should be the same, and the replica is always in
+   read-only mode.
  
-By default, replication is in asynchronous mode. To change to synchronous replication, go
-to the source server and make the following change to **postgresql.conf**:
+5. (optional) By default, replication is in asynchronous mode. To change to synchronous
+   replication, go to the source server and make the following change to **postgresql.conf**:
  
         synchronous_standby_names=’*’ in 
         
-And restart the services:
+   Then, restart the services:
 
         $ /usr/local/pgsql-11/bin/pg_ctl -D /var/lib/pgsql/11/ restart
  
