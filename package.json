@@ -46,7 +46,7 @@
         "algoliasearch": "^4.9.0",
         "angular": "^1.8.1",
         "angular-sanitize": "^1.8.1",
-        "assets-webpack-plugin": "^7.0.0",
+        "assets-webpack-plugin": "^7.1.0",
         "atomic-algolia": "^0.3.19",
         "axios": "^0.21.1",
         "bootstrap": "^4.5.2",
