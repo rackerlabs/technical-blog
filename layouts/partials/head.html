@@ -31,29 +31,13 @@
 <meta name="datePublished" property="article:published_time">
 {{ end }}
 {{ if .Params.categories }}
-{{- with .Params.categories -}}
-{{- $len := len . -}}
-{{ range $index, $value := . }}
-<meta name="category" property="product:category" content="{{ $value }}">
-{{- end -}}
-{{- end -}}
+<meta name="keywords" property="article:tag" content="{{ .Params.categories }}">
 {{ else if .Site.Params.categories }}
-{{- with .Params.categories -}}
-{{- $len := len . -}}
-{{ range $index, $value := . }}
-<meta name="category" property="product:category" content="{{ $value }}">
-{{- end -}}
-{{- end -}}
-{{ else }}
-<meta name="category" property="product:category">
-{{ end }}
-{{ if .Params.keywords }}
-<meta name="keywords" property="article:tag" content="{{ .Params.keywords }}">
-{{ else if .Site.Params.keywords }}
-<meta name="keywords" property="article:tag" content="{{ .Site.Params.keywords }}">
+<meta name="keywords" property="article:tag" content="{{ .Site.Params.categories }}">
 {{ else }}
 <meta name="keywords" property="article:tag">
 {{ end }}
+<meta name="category" property="article:section" content="Expert Insights"
 
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
