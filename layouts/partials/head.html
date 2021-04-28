@@ -14,7 +14,7 @@
 {{ else if .Site.Params.summary }}
 <meta name="description" property="og:description" content="{{ .Site.Params.summary }}" />
 {{ else }}
-<meta name="Algolia crawler" content="noindex">
+<meta name="description" property="og:description" />
 {{ end }}
 {{ if .Params.author }}
 <meta name="authors" property="article:author" content="{{ .Params.author }}" />
