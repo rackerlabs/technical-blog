@@ -1,14 +1,14 @@
 ---
 layout: post
 title: "Rackspace Technology and Platform9 partnership simplifies Kubernetes adoption"
-date: 2021-2021-
+date: 2021-04-29
 comments: true
 author: Sherman Donegan, Chris Jones
 published: true
 authorIsRacker: true
 categories:
     - DevOps
-canaonical: https://www.rackspace.com/blog/rackspace-and-platform9-partnership-simplifies-kubernetes-adoption
+canonical: https://www.rackspace.com/blog/rackspace-and-platform9-partnership-simplifies-kubernetes-adoption
 metaTitle: "Rackspace Technology and Platform9 partnership simplifies Kubernetes adoption"
 metaDescription: "."
 ogTitle: "Rackspace Technology and Platform9 partnership simplifies Kubernetes adoption"
