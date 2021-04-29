@@ -4,7 +4,6 @@ title: "Visualizing deep RL performance"
 date: 2021-01-13
 comments: true
 author: Jeff Braga
-authorAvatar: 'https://www.google.com/imgres?imgurl=https%3A%2F%2Fmedia-exp1.licdn.com%2Fdms%2Fimage%2FC4D03AQFptkIR8O6f9Q%2Fprofile-displayphoto-shrink_800_800%2F0%2F1610392281416%3Fe%3D1616025600%26v%3Dbeta%26t%3DjWsHg5at51Qg99bAgomPJGrcOrdNuMoZ3Sxk0Qdi-sM&imgrefurl=https%3A%2F%2Fdocs.rackspace.com%2Fblog%2Fauthors%2FJeff-Braga&tbnid=1b8-yde1NV8InM&vet=12ahUKEwiA--v8gKTwAhURZawKHQKrB7cQMygAegQIARA3..i&docid=HewywyBjjMGCjM&w=800&h=800&q=jeff%20braga%20rackspace&ved=2ahUKEwiA--v8gKTwAhURZawKHQKrB7cQMygAegQIARA3'
 bio: "Jeff is currently an MSCS Student at Drexel University. Find him at
 https://www.linkedin.com/in/jeffrey-braga-3167a512/."
 published: true
