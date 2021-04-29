@@ -70,10 +70,9 @@ transaction.
 
 **Personalization and bookmarks**: Users may work in different ways, so what is
 important to one person is not necessarily important to another. Personalization
-provides each user the flexibility to modify their views on different pages, such
-as adding fields or adding columns. Users can modify their views by adding or
-removing columns, filtering on various column data, and entering data more quickly
-by hiding unnecessary fields.
+provides each user the flexibility to modify their views on different pages.
+Users can modify their views by adding or removing columns, filtering on various
+column data, and entering data more quickly by hiding unnecessary fields.
 
 Also, users can select a field on entry forms and set it to **Quick Entry**,
 improving productivity. Quick Entry lets users easily navigate the fields they
@@ -92,7 +91,7 @@ platform, including Azure&reg;, Microsoft 365, Dynamics 365, and the Power
 Platform. Share your business challenges with us so we can help find you the
 right solution. Reach out to our specialist to learn more about our offerings.
 
-<a class="cta purple" id="cta" href="https://www.rackspace.com/applications/erp">Learn more about our ERP services.</a>
+<a class="cta purple" id="cta" href="https://www.rackspace.com/applications/dynamics-365">Learn more about our Dynamics 365.</a>
 
 Use the Feedback tab to make any comments or ask questions. You can also click
 **Let's Talk** to [start the conversation](https://www.rackspace.com/).
