@@ -16,6 +16,7 @@ ogTitle: "AWS WAF pillar two: Security tools and best practices"
 ogDescription: "Security is the second pillar in the AWS WAF, probably because “Is it safe?”
 is among the first questions many companies ask when considering migrating infrastructure,
 services, and applications to the cloud."
+canonical: https://onica.com/blog/security/aws-security-best-practices/
 slug: "aws-waf-pillar-two-security-tools-and-best-practices"
 
 ---
