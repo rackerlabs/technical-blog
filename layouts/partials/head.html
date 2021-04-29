@@ -37,9 +37,14 @@
 {{ else }}
 <meta name="Algolia crawler" content="noindex">
 {{ end }}
-<meta name="category" property="article:section" content="Expert Insights" />
+<meta name="category" property="article:section" content="Insights" />
 {{ if .Data.Singular }}
     <meta name="Algolia crawler" content="noindex">
+{{ end }}
+{{ if .Params.canonical }}
+<link rel="canonical" href="{{ .Params.canonical }}">
+{{ else }}
+<link rel="canonical" href="{{ .Permalink }}">
 {{ end }}
 
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
