@@ -32,13 +32,13 @@ Dynamics 365&reg; Business Central, a comprehensive enterprise resource planning
 
 <!--more-->
 
-• Financials
-• Purchasing and sales
-• Customer relationship
-• Projects
-• Supply chain management
-• Warehouse and inventory
-• Manufacturing and service order management
+- Financials
+- Purchasing and sales
+- Customer relationship
+- Projects
+- Supply chain management
+- Warehouse and inventory
+- Manufacturing and service order management
 
 Furthermore, if you need something to fit your unique business requirements,
 there is probably an app, a pre-built integrated application, for that. With
