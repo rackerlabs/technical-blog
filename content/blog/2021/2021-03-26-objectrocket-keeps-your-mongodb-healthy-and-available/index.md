@@ -18,6 +18,7 @@ metaTitle: "ObjectRocket keeps your MongoDB healthy and available"
 metaDescription: "At Rackspace, the ObjectRocket team can help you manage your MongoDB&reg; databases."
 ogTitle: "ObjectRocket keeps your MongoDB healthy and available"
 ogDescription: "At Rackspace, the ObjectRocket team can help you manage your MongoDB&reg; databases."
+canonical: https://www.objectrocket.com/blog/mongodb/how-objectrocket-keeps-your-mongodb-up/
 slug: "objectrocket-keeps-your-mongodb-healthy-and-available"
 
 ---
