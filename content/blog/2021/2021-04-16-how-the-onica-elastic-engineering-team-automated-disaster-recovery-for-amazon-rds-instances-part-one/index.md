@@ -25,7 +25,7 @@ ogDescription: "This post discusses how Onica co-created a solution with a
 client that leverages serverless architecture and enables an automated backup
 and restore for Amazon RDS instances."
 slug: "how-the-onica-elastic-engineering-team-automated-disaster-recovery-for-amazon-rds-instances-part-one"
-canonical: (https://aws.amazon.com/blogs/apn/how-onicas-elastic-engineering-team-automated-disaster-recovery-for-amazon-rds-instances/
+canonical: https://aws.amazon.com/blogs/apn/how-onicas-elastic-engineering-team-automated-disaster-recovery-for-amazon-rds-instances/
 
 ---
 
