@@ -9,13 +9,7 @@
 <meta name="application-name" content="{{ $title }}" />
 <meta name="msapplication-config" content="/favicons/browserconfig.xml" />
 <meta name="theme-color" content="#ffffff" />
-{{ if .Params.summary }}
-<meta name="description" property="og:description" content="{{ .Params.summary }}" />
-{{ else if .Site.Params.summary }}
-<meta name="description" property="og:description" content="{{ .Site.Params.summary }}" />
-{{ else }}
-<meta name="description" property="og:description" />
-{{ end }}
+
 {{ if .Params.author }}
 <meta name="authors" property="article:author" content="{{ .Params.author }}" />
 {{ else if .Site.Params.author }}
