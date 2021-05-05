@@ -1,23 +1,21 @@
 [build.environment]
-  HUGO_VERSION = "0.78.2"
-  NPM_VERSION = "7.0.3"
-  NODE_VERSION = "15.0.1"
+  HUGO_VERSION = "0.83.1"
 
 [build]
-  command = "npm run build"
+  command = "make build"
   publish = "public"
 
 [context.production]
   publish = "public"
-  command = "npm run build"
+  command = "make build"
 
 [context.deploy-preview]
   publish = "public"
-  command = "npm run build-preview"
+  command = "make build-preview"
 
 [context.staging]
   publish = "public"
-  command = "npm run build"
+  command = "make build"
   
 [[headers]]
   for = "/*"
@@ -56,10 +54,23 @@
   package = "@netlify/plugin-sitemap"
 
   [plugins.inputs]
-  buildDir = "public"
-  prettyURLs = true
-  trailingSlash = true
+  baseUrl = "https://docs.rackspace.com/blog"
 
+[[plugins]]
+  package = "netlify-plugin-submit-sitemap"
+
+	[plugins.inputs]
+
+	# The base url of your site (optional, default = main URL set in Netlify)
+	baseUrl = "https://docs.rackspace.com/blog"
+
+	# Path to the sitemap URL (optional, default = /sitemap.xml)
+	sitemapPath = "/sitemap.xml"
+
+	# Enabled providers to submit sitemap to (optional, default = 'google', 'bing', 'yandex'). Possible providers are currently only 'google', 'bing', 'yandex'.
+	providers = [
+		"google"
+	]
 
 [[plugins]]
   package = "netlify-plugin-a11y"
@@ -78,7 +89,13 @@
   # Developer only
   debugMode = true # extra logging for plugin developers
 
-# [[plugins]]
-# package = "@algolia/netlify-plugin-crawler"
-#   [plugins.inputs]
-#   branches = ['staging']
+[[plugins]]
+  package = "@netlify/plugin-lighthouse"
+
+  # optional, fails build when a category is below a threshold
+  # [plugins.inputs.thresholds]
+  #   performance = 0.9
+  #   accessibility = 0.9
+  #   best-practices = 0.9
+  #   seo = 0.9
+  #   pwa = 0.9
