@@ -3,13 +3,11 @@ layout: post
 title: "AWS WAF pillar five: Cost optimization tools and best practices"
 date: 2021-01-21
 comments: true
-author:
-authorAvatar: ''
-bio: ""
+author: Rackspace Onica Team
 published: true
 authorIsRacker: true
 categories:
-    - General
+    - AWS
 metaTitle: "AWS WAF pillar five: Cost optimization tools and best practices"
 metaDescription: "AWS cost optimization is at the heart of the Amazon cloud experience.
 After all, the ability to do more with less&mdash;accelerate business with lower
@@ -18,6 +16,7 @@ ogTitle: "AWS WAF pillar five: Cost optimization tools and best practices"
 ogDescription: "AWS cost optimization is at the heart of the Amazon cloud experience.
 After all, the ability to do more with less&mdash;accelerate business with lower
 infrastructure costs&mdash;is the promise of the cloud."
+canonical: https://onica.com/blog/managed-services/aws-cost-optimization/
 slug: "aws-waf-pillar-five-cost-optimization-tools-and-best-practices"
 
 ---

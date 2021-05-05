@@ -16,6 +16,7 @@ ogTitle: "AWS WAF pillar three: Reliability tools and best practices"
 ogDescription: "The WAF reliability pillar emphasizes three areas of concern: Foundations,
 Change Management, and Failure Management. This post examines each area and reviews the AWS
 tools and best practices that you can use to address each one."
+canonical: https://onica.com/blog/migration/aws-reliability/
 slug: "aws-waf-pillar-three-reliability-tools-and-best-practices"
 
 ---

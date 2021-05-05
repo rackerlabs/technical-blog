@@ -20,6 +20,7 @@ systems to deliver business value and continually improve processes and procedur
 helps organizations spread the benefits of cloud adoption beyond the IT department and
 ensure that the cloud infrastructure can efficiently manage changes, respond to events,
 and automate standards-based tasks and processes to manage daily operations successfully."
+canonical: https://onica.com/blog/migration/aws-waf-performance-efficiency-pillar-tools/
 slug: "aws-waf-pillar-four-performance-efficiency-tools-and-best-practices"
 
 ---
