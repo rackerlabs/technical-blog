@@ -148,7 +148,7 @@ Run the following steps to prepare to clean up the nodes:
 
 Run `adautoconfig` on database and application nodes.
 
-**DB nodes**
+DB nodes:
 
 1. Log onto DR database node1 as `oracle` and run the following commands:
 
@@ -162,7 +162,7 @@ Run `adautoconfig` on database and application nodes.
        $ cd $ORACLE_HOME/appsutil/scripts/<CONTEXT_NAME>/
        $ sh adautocfg.sh
 
-**Application nodes: Run FS**
+Application nodes&mdash;Run FS:
 
 1. Log onto the DR application node1 as `applmgr` and run the following commands:
 
@@ -190,7 +190,7 @@ Run `adautoconfig` on database and application nodes.
        $ cd $ADMIN_SCRIPTS_HOME
        $ sh adautocfg.sh
 
- **Application nodes: Patch FS**
+ Application nodes&mdash;Patch FS
 
 1. Log onto the DR application node1 as `applmgr` and run the following commands:
 
