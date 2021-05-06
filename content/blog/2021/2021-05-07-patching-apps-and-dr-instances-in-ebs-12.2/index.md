@@ -59,7 +59,7 @@ The process involves designing a simple system and putting it in place for
 application switchover. If you experience a disaster on the application side,
 this system must remain in sync with the primary site at all patch levels.
 
-#### 1. Convert DR to Snapshot Standby from Physical standby
+##### 1. Convert DR to Snapshot Standby from Physical standby
 
 First, disable archive log shipping and convert the primary DR database to
 standby snapshot mode:
@@ -96,7 +96,7 @@ snapshot standby mode:
        ------------       ----------------
        YES                PHYSICAL STANDBY
 
-#### 2. Shutdown the DR database to apply database patches
+##### 2. Shutdown the DR database to apply database patches
 
 Shut down the database on both the nodes and apply the database patches. Run the
 following commands to apply database patches:
@@ -110,7 +110,7 @@ following commands to apply database patches:
 Use the preceding steps to apply the database patches on all Real Application
 Cluster (RAC) system nodes.
 
-#### 3. Convert the database to snapshot mode
+##### 3. Convert the database to snapshot mode
 
 Convert the DR database to snapshot standby mode and run auto-config after the
 nodes cleanup:
@@ -132,7 +132,7 @@ result, the production and DR file systems might not remain the same. The
 following steps address this concern. These steps, which your run on the DB and
 APPS nodes, remove any production references in the DR database.
 
-##### Cleanup the nodes
+#### Cleanup the nodes
 
 Run the following steps to prepare to clean up the nodes:
 
@@ -144,7 +144,7 @@ Run the following steps to prepare to clean up the nodes:
        exec fnd_conc_clone.setup_clean;
        truncate table applsys.adop_valid_nodes;
 
-##### Execute Autoconfig on all application and database tiers
+#### Execute Autoconfig on all application and database tiers
 
 Run `adautoconfig` on database and application nodes.
 
@@ -218,7 +218,7 @@ Application nodes&mdash;Run FS:
        $ cd $ADMIN_SCRIPTS_HOME
        $ sh adautocfg.sh
 
-#### 4. Flip the file systems for DR apps if they do not match the PROD system
+##### 4. Flip the file systems for DR apps if they do not match the PROD system
 
 You need to execute the following steps only if there is a difference between the
 RUN and PATCH file systems for PROD and DR servers. If they are the same, you
@@ -237,7 +237,7 @@ Execute the following steps on all DR APPS tier nodes:
 
 The DR is now ready for application patching.
 
-#### 5. Apply application patches to DR application nodes in downtime mode
+##### 5. Apply application patches to DR application nodes in downtime mode
 
 First, because you keep the application services at the DR down, you apply
 patches to the RUN file system in downtime mode by performing the following steps:
@@ -266,7 +266,7 @@ the changes made to the RUN file system clone over to the Patch file system:
 $. drinstance.env
 $adop phase=fs_clone
 
-#### 6. Convert the DR back to physical standby after the application DR patching finishes
+##### 6. Convert the DR back to physical standby after the application DR patching finishes
 
 Finally, you need to convert the DR database back to physical standby mode,
 enable `redo apply` to the DR database, and resume archive-log shipping from the
