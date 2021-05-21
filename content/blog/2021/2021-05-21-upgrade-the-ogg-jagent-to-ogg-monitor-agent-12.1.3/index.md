@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Upgrade the ogg jagent to ogg monitor agent 12.1.3"
+title: "Upgrade the OGG jagent to OGG Monitor Agent 12.1.3"
 date: 2021-05-21
 comments: true
 author: Laxmanna Rao Majji
@@ -11,9 +11,9 @@ authorIsRacker: true
 categories:
     - Oracle
     - Database
-metaTitle: "Upgrade the ogg jagent to ogg monitor agent 12.1.3"
+metaTitle: "Upgrade the OGG jagent to OGG Monitor Agent 12.1.3"
 metaDescription: "In this post, I show how to upgrade the OGG 12c jagent."
-ogTitle: "Upgrade the ogg jagent to ogg monitor agent 12.1.3"
+ogTitle: "Upgrade the OGG jagent to OGG Monitor Agent 12.1.3"
 ogDescription: "In this post, I show how to upgrade the OGG 12c jagent."
 slug: "upgrade-the-ogg-jagent-to-ogg-monitor-agent-12.1.3"
 
