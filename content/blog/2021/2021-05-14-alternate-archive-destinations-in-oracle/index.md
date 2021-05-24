@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Alternate archive destniations in Oracle"
+title: "Alternate archive destinations in Oracle"
 date: 2021-05-14
 comments: true
 author: Jay Vardhan
@@ -11,10 +11,10 @@ authorIsRacker: true
 categories:
     - Oracle
     - Database
-metaTitle: "Alternate archive destniations in Oracle"
+metaTitle: "Alternate archive destinations in Oracle"
 metaDescription: "Archiving Oracle&reg; databases lets you retain and store data
 for the long term, but what happens if you run out of space?"
-ogTitle: "Alternate archive destniations in Oracle"
+ogTitle: "Alternate archive destinations in Oracle"
 ogDescription: "Archiving Oracle&reg; databases lets you retain and store data
 for the long term, but what happens if you run out of space?"
 slug: "alternate-archive-destniations-in-oracle"
@@ -151,7 +151,7 @@ shown in the following output:
 Oracle always tries to archive to the primary destination, and the automatic
 failback to the primary destination works in version 12c. After you clean up the
 primary destination and make it available for archiving, Oracle continues to
-rchiving the redo logs to the primary destination without reporting any errors
+archiving the redo logs to the primary destination without reporting any errors
 or failback message in the alert log file, as shown in the following example
 where I queried **v$archived_log**:
 
