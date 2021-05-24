@@ -151,7 +151,7 @@ shown in the following output:
 Oracle always tries to archive to the primary destination, and the automatic
 failback to the primary destination works in version 12c. After you clean up the
 primary destination and make it available for archiving, Oracle continues to
-rchiving the redo logs to the primary destination without reporting any errors
+archiving the redo logs to the primary destination without reporting any errors
 or failback message in the alert log file, as shown in the following example
 where I queried **v$archived_log**:
 
