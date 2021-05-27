@@ -4,8 +4,11 @@ title: "Replication in PostgresSQL"
 date: 2021-04-23
 comments: true
 author: Shailesh Kumar
-authorAvatar: ''
-bio: ""
+authorAvatar: 'https://s.gravatar.com/avatar/3bf8558f37055ca7efe45c2445e04483'
+bio: "I am an Oracle DBA who strives to enrich and enhance my career where I get adequate
+exposure of my skills and the opportunity for career growth. Also, I love learning about
+new databases, using my knowledge, and contributing to the success of the organization
+through my sincere efforts. Finally, I continue exploring PostgreSQL."
 published: true
 authorIsRacker: true
 categories:
