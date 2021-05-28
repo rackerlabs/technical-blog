@@ -35,7 +35,7 @@ You can use the SYSAUX tablespace to perform the following tasks:
 
 - Avoid SYSTEM tablespace fragmentation caused by install and deinstall options.
 - Avoid risking  SYSTEM tablespace corruption and out-of-space situations.
-- Reduced maintenance for the database administrator.
+- Reduce maintenance for the database administrator.
 - Store and reduce tablespaces for all auxiliary database metadata related to
   Oracle options and features, such as the following items:
 
