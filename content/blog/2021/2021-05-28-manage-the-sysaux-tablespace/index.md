@@ -75,8 +75,10 @@ following actions:
 
 1. Set the SYSAUX tablespace to **AUTOEXTEND off**.
 2. Confirm the **STATISTICS_LEVEL** value.
+
        - The **ALL** value is sometimes resource-intensive.
        - The **Basic** and **Typical** values tend to consume fewer resources.
+
 3. Check how you use advisors, baselines, and SQL tuning sets. Advisors need to
    retain information in snapshots even if you plan to drop the snapshot range.
 4. Run a query to determine which sysaux_occupant consumes the most space in the
@@ -111,6 +113,8 @@ example sets the retention period to 5760 minutes (or four days:
 
     SQL> execute DBMS_WORKLOAD_REPOSITORY.MODIFY_SNAPSHOT(RETENTION=>5760);
 
+</br>
+
 #### Check the largest object in the SYSAUX tablespace
 
 Run the following query to identify the largest occupant in the tablespace:
@@ -128,6 +132,8 @@ unless the **move** procedure is null.
 The following example moves WKSYS occupant in XYZ tablespace:
 
     SQL> execute WKSYS.MOVE_WK(‘XYZ’);
+
+</br>
 
 #### Check the Active Session History (ASH)
 
