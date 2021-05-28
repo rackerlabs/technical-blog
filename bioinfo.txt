@@ -581,6 +581,13 @@ Kumar, Santosh
 authorAvatar: 'https://s.gravatar.com/avatar/0d3c022f6dc5245d2602222d67cf86fa'
 bio: "Rackspace expert, at your service!"
 
+Kumar, Shailesh
+authorAvatar: 'https://s.gravatar.com/avatar/3bf8558f37055ca7efe45c2445e04483'
+bio: "I am an Oracle DBA who strives to enrich and enhance my career where I get adequate
+exposure of my skills and the opportunity for career growth. Also, I love learning about
+new databases, using my knowledge, and contributing to the success of the organization
+through my sincere efforts. Finally, I continue exploring PostgreSQL."
+
 Kumar, Vikas
 authorAvatar: 'https://s.gravatar.com/avatar/02d1f0f4f3f24ee84e33211a51a0b237'
 bio: "I've been a Racker for two years and have more than ten years of Oracle&reg;
@@ -922,6 +929,13 @@ in conducting walkthroughs, brainstorming sessions, and core team meetings. I'm
 an OCI-certified cloud DBA with expertise in Oracle Database 9i, 10g, 11g,12c
 and Oracle E-Business Suite 11i ,R12&R12.2. I also have extensive experience in
 release and change management, project management, and IT infrastructure."
+
+Singh, Nirbay Kumar
+authorAvatar: 'https://s.gravatar.com/avatar/11d7e7657ab5b33e814e9f697fec368c'
+bio: "I have over nine years of excellent professional exposure and experience
+in Oracle database and GoldenGate, with extensive knowledge of the functional
+areas of business administration and the application of information technology
+for efficient business process management."
 
 Singh, Nishant
 authorAvatar: 'https://s.gravatar.com/avatar/c5f65aef94a507631cbafce24ca162bc'

@@ -3,17 +3,21 @@ layout: post
 title: "Manage the SYSAUX tablespace"
 date: 2021-05-28
 comments: true
-author:
-authorAvatar: ''
-bio: ""
+author: Nirbhay Kumar Singh
+authorAvatar: 'https://s.gravatar.com/avatar/11d7e7657ab5b33e814e9f697fec368c'
+bio: "I have over nine years of excellent professional exposure and experience
+in Oracle database and GoldenGate, with extensive knowledge of the functional
+areas of business administration and the application of information technology
+for efficient business process management."
 published: true
 authorIsRacker: true
 categories:
-    - General
+    - Database
+    - Oracle
 metaTitle: "Manage the SYSAUX tablespace"
-metaDescription: "."
+metaDescription: "This post explores how to manage the SYSAUX tablespace as it grows."
 ogTitle: "Manage the SYSAUX tablespace"
-ogDescription: "."
+ogDescription: "This post explores how to manage the SYSAUX tablespace as it grows."
 slug: "manage-the-sysaux-tablespace"
 
 ---
