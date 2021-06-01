@@ -77,8 +77,8 @@ difficulty degree, showing progress over time&mdash;all these elements can
 combine to turn the most mundane subject into an engaging game.
 
 Acknowledging participation and rewarding winners is also an important part of
-what makes CTFs fun. In 2021, e-gift cards and non-fungible tokens, or NFT-based
-badges, or rewards are the way to go.
+what makes CTFs fun. In 2021, prizes based on e-gift cards and non-fungible
+tokens (NFT) are the way to go.
 
 #### #2 Fictional
 
