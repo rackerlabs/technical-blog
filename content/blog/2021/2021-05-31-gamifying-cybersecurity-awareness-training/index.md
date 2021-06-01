@@ -4,6 +4,10 @@ title: "Gamifying cybersecurity awareness training"
 date: 2021-05-31
 comments: true
 author: Cliff Sigler
+authorAvatar: 'https://s.gravatar.com/avatar/94804bf59c9ca40f1724655a7cbf8924'
+bio: "I'm a Senior Cloud Security Architect at Rackspace Technology. I love helping
+Rackspace customers integrate security into their CI/CD pipelines. In my spare time,
+I enjoy leading the Rackspace Capture the Flag (CTF) group and competing in CTF competitions."
 published: true
 authorIsRacker: true
 categories:
@@ -11,11 +15,11 @@ categories:
 metaTitle: "Gamifying cybersecurity awareness training"
 metaDescription: "Instead of educating and empowering employees to be
 cybersecurity superheroes all year long, cybersecurity awareness training tends
-to be a quickly forgotten nonevent.  Let's change that!"
+to be a quickly forgotten nonevent. Let's change that!"
 ogTitle: "Gamifying cybersecurity awareness training"
 ogDescription: "Instead of educating and empowering employees to be
 cybersecurity superheroes all year long, cybersecurity awareness training tends
-to be a quickly forgotten nonevent.  Let's change that!"
+to be a quickly forgotten nonevent. Let's change that!"
 slug: "gamifying-cybersecurity-awareness-training"
 
 ---
