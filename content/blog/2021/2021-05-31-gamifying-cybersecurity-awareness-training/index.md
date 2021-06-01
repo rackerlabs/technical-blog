@@ -16,7 +16,7 @@ ogTitle: "Gamifying cybersecurity awareness training"
 ogDescription: "Instead of educating and empowering employees to be
 cybersecurity superheroes all year long, cybersecurity awareness training tends
 to be a quickly forgotten nonevent.  Let's change that!"
-slug: "gamifying-cybersecurity-awareess-training"
+slug: "gamifying-cybersecurity-awareness-training"
 
 ---
 
