@@ -169,11 +169,11 @@ Location of log/configuration files: Find the files in the following locations:
 - **Unix and Linux&reg; systems**: **/tmp/autoupgrade**
 - **Microsoft&reg; Windows&reg;**: **C:\Users\name\AppData\Local\Temp\autoupgrade**
 
-Default configuration file name: **autoupgrade <YYYYMMMMMHHMMSS>.cfg**, where
-**YYYY** is year, **MMMM** is month, **HH** is hour, **MM** is minute, and
-**SS** is second
+Default configuration file name: **autoupgrade <YYYYMMMMMHHMMSS>.cfg** (where
+**YYYY** is year, **MMMM** is month, **HH** is hours, **MM** is minutes, and
+**SS** is seconds)
 
-#### AutoUpgrade prerequisites
+***AutoUpgrade prerequisites***
 
 - JDK 8 (Also available in binary since 12.1 release)
 - The same rules apply for the manual upgrade as for the upgrade compatibility.
@@ -188,7 +188,7 @@ Default configuration file name: **autoupgrade <YYYYMMMMMHHMMSS>.cfg**, where
 
 {{<img src="Picture1.png" title="" alt="">}}
 
-#### What to upgrade or not with AutoUpgrade
+***What to upgrade or not with AutoUpgrade***
 
 The following list shows what to upgrade or avoid upgrading with AutoUpgrade:
 
@@ -199,11 +199,9 @@ The following list shows what to upgrade or avoid upgrading with AutoUpgrade:
 - Upgrade RAC databases.
 - Not compatible with Grid infrastructure upgrades.
 
-#### How to set up, upgrade, monitor, and use AutoUpgrade
+Perform the following steps to set up and use AutoUpgrade:
 
-Perform the following steps to use AutoUpgrade:
-
-###### Set up
+***Set up:***
 
 1. Oracle recommends checking the current version and downloading the latest
    from MOS 2485457.1 for the upgrade.
@@ -235,7 +233,7 @@ or a PowerShell&reg; script or batch file, as shown in the following image:
 
 {{<img src="Picture4.png" title="" alt="">}}
   
-###### Upgrade the same source and target
+***Upgrade the same source and target:***
 
 To upgrade the same server source and target Oracle Database, use the following
 sequence as recommended by Oracle:
@@ -244,7 +242,7 @@ sequence as recommended by Oracle:
 2. `java –jar autoupgrade.jar -config_values "" -mode fix`
 3. `java –jar autoupgrade.jar -config_values "" -mode deploy`
 
-###### Upgrade a different source and target
+***Upgrade a different source and target:***
 
 For different source and target Oracle product upgrades, use the `analyze` and
 `fix` commands from the previous step on the source and use the following
@@ -252,7 +250,7 @@ For different source and target Oracle product upgrades, use the `analyze` and
 
 `java –jar autoupgrade.jar -config_values "" -mode upgrade`
 
-###### Monitor the upgrade
+***Monitor the upgrade:***
 
 You can monitoring AutoUpgrade by using the console, the HTML file in log
 location, and log files for validation and monitoring from the following
@@ -271,7 +269,7 @@ locations:
   - ./temp
 - /database_2
 
-###### Use AutoUpgrade
+***Use AutoUpgrade:***
 
 **Important**: Here are some tips for the usage of commands in the AutoUpgrade
 console:
