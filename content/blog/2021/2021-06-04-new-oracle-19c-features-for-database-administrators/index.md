@@ -294,7 +294,7 @@ performance caused by a lack of indexes or poor index performance. Don't forget
 to check the usage of the Oracle 19c new features on your test environment before
 putting into an action plan on the production environment.
 
-<a class="cta teal" id="cta" href="https://www.rackspace.com/data/database">Learn more about our Database services.</a>
+<a class="cta teal" id="cta" href="https://www.rackspace.com/data/databases">Learn more about our Database services.</a>
 
 Use the Feedback tab to make any comments or ask questions. You can also
 [start a conversation with us](https://www.rackspace.com/contact).
