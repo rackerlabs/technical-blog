@@ -54,7 +54,7 @@ Following are the new features that make database administrator (DBA) tasks easi
 
 The following sections explore these features in more depth.
 
-#### DBCA silent mode
+##### DBCA silent mode
 
 Use DBCA silent mode for cloning or relocating a PDB, CDB, or non-CDB database,
 as shown in the following examples:
@@ -73,7 +73,7 @@ as shown in the following examples:
 
        dbca -silent -createDuplicateDB -gdbName test -primaryDBConnectionString <Hostname>:1521/orcl.us.rackspace.com -sid test -databaseConfigType SINGLE -initParams db_unique_name=test -sysPassword XXXXX
 
-#### Dry-run validation in Grid upgrades
+##### Dry-run validation in Grid upgrades
 
 This feature makes automation and prechecks tasks as real as possible by
 providing similar inputs and outputs that a DBA would use for upgrade tasks.
@@ -94,7 +94,7 @@ proceed with an actual upgrade. Use the following syntax to perform this task:
 
 runInstaller -silent –waitforcompletion -detachHome ORACLE_HOME=<> -local
 
-#### Flashback in Data Guard
+##### Flashback in Data Guard
 
 The primary database and standby are now available in the same current state.
 The standby is in sync with primary even if you flashback the primary database
@@ -102,7 +102,7 @@ by using the flashback feature.  In previous releases of the Oracle up to versio
 19c, you had to perform a manual process to keep the standby in the same state
 and synced with the primary.
 
-#### Oracle Active Data Guard with DML and PL/SQL
+##### Oracle Active Data Guard with DML and PL/SQL
 
 You can now use DML and PL/SQL in standby mode. As an Oracle Active Data Guard
 user, you can run DML statements or PL/SQL codes at the database level. Also,
@@ -123,7 +123,7 @@ and commands:
        ALTER SESSION ENABLE ADG_REDIRECT_DML ;
        ALTER SESSION ENABLE ADL_REDIRECT_PLSQL ;
 
-#### Network trace and log file automatic purging
+##### Network trace and log file automatic purging
 
 Oracle introduced Automatic Diagnostic Repository (ADR) and non-ADR listener
 parameters to control log and trace file retention. Following are the parameters
@@ -139,7 +139,7 @@ to 0, they work without limitation. You can set the following non-zero limits:
 - **TRACE\_FILELEN\_listener**: Specifies size the maximum listener trace file
   size in KB (Default: Unlimited).
 
-#### Automatic index feature
+##### Automatic index feature
 
 The newly introduced package lets you use SQL Access Advisor for automatic task
 configuration of index creation, rebuild, and analysis. The following packages
@@ -151,28 +151,29 @@ work with it:
 Use the **DBA_INDEXES** column, **AUTO**, to ensure that auto index configuration
 created an index.
 
-#### Imaged-based Oracle client installation
+##### Imaged-based Oracle client installation
 
 Admin clients can now do image-based Oracle client installation the same as
 Oracle Database software binaries.
 
-#### AutoUpgrade Introduction
+##### AutoUpgrade
 
 You can upgrade Oracle Databases automatically by using the AutoUpgrade feature.
 The configuration file is the base of this feature. By using it, you can guide
 the AutoUpgrade process, controlling the many Oracle Database upgrade options.
 
-**AutoUpgrade utility**: **oracle_home/rdbms/admin/autoupgrade.jar**
+AutoUpgrade utility: **oracle_home/rdbms/admin/autoupgrade.jar**
 
-**Location of log/configuration files**:
+Location of log/configuration files: Find the files in the following locations:
 
-- Unix and Linux&reg; systems: **/tmp/autoupgrade**
-- Microsoft&reg; Windows&reg;: **C:\Users\name\AppData\Local\Temp\autoupgrade**
-- Default configuration file name: **autoupgrade <YYYYMMMMMHHMMSS>.cfg**, where
-  **YYYY** is year, **MMMM** is month, **HH** is hour, **MM** is minute, and
-  **SS** is second
+- **Unix and Linux&reg; systems**: **/tmp/autoupgrade**
+- **Microsoft&reg; Windows&reg;**: **C:\Users\name\AppData\Local\Temp\autoupgrade**
 
-##### AutoUpgrade prerequisites
+Default configuration file name: **autoupgrade <YYYYMMMMMHHMMSS>.cfg**, where
+**YYYY** is year, **MMMM** is month, **HH** is hour, **MM** is minute, and
+**SS** is second
+
+#### AutoUpgrade prerequisites
 
 - JDK 8 (Also available in binary since 12.1 release)
 - The same rules apply for the manual upgrade as for the upgrade compatibility.
@@ -187,7 +188,7 @@ the AutoUpgrade process, controlling the many Oracle Database upgrade options.
 
 {{<img src="Picture1.png" title="" alt="">}}
 
-##### What to upgrade or not with AutoUpgrade
+#### What to upgrade or not with AutoUpgrade
 
 The following list shows what to upgrade or avoid upgrading with AutoUpgrade:
 
@@ -202,7 +203,7 @@ The following list shows what to upgrade or avoid upgrading with AutoUpgrade:
 
 Perform the following steps to use AutoUpgrade:
 
-##### Set up
+###### Set up
 
 1. Oracle recommends checking the current version and downloading the latest
    from MOS 2485457.1 for the upgrade.
@@ -234,7 +235,7 @@ or a PowerShell&reg; script or batch file, as shown in the following image:
 
 {{<img src="Picture4.png" title="" alt="">}}
   
-##### Upgrade the same source and target
+###### Upgrade the same source and target
 
 To upgrade the same server source and target Oracle Database, use the following
 sequence as recommended by Oracle:
@@ -243,7 +244,7 @@ sequence as recommended by Oracle:
 2. `java –jar autoupgrade.jar -config_values "" -mode fix`
 3. `java –jar autoupgrade.jar -config_values "" -mode deploy`
 
-##### Upgrade a different source and target
+###### Upgrade a different source and target
 
 For different source and target Oracle product upgrades, use the `analyze` and
 `fix` commands from the previous step on the source and use the following
@@ -251,7 +252,7 @@ For different source and target Oracle product upgrades, use the `analyze` and
 
 `java –jar autoupgrade.jar -config_values "" -mode upgrade`
 
-##### Monitor the upgrade
+###### Monitor the upgrade
 
 You can monitoring AutoUpgrade by using the console, the HTML file in log
 location, and log files for validation and monitoring from the following
@@ -270,7 +271,7 @@ locations:
   - ./temp
 - /database_2
 
-##### Using AutoUpgrade
+###### Use AutoUpgrade
 
 **Important**: Here are some tips for the usage of commands in the AutoUpgrade
 console:
