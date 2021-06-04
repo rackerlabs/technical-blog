@@ -782,7 +782,7 @@ an emphasis on performance and security."
 Patel, Tejashkumar
 authorAvatar: 'https://s.gravatar.com/avatar/93f8a2afa4b179946cc23ac18a0ff8a5'
 bio: "I am a Database Administrator with more than a decade of experience in
-various RDBMSs, Big Data and NoSQL database technologies, and the cloud platform."
+various RDBMS, Big Data, and NoSQL database technologies, and the cloud platform."
 
 Peterson, Taylor
 authorAvatar: ''
@@ -913,6 +913,12 @@ authorAvatar: 'https://2.gravatar.com/userimage/191238188/88086f4370c46cbf11e517
 bio: "I am an Oracle Apps DBA with over 14 years of experience, currently
 associated with Rackspace Technology. Other than technology, nature excites me.
 I'm avidly into travelling and bonsai making. Presently based in India."
+
+Sigler, Cliff
+authorAvatar: 'https://s.gravatar.com/avatar/94804bf59c9ca40f1724655a7cbf8924'
+bio: "I'm a Senior Cloud Security Architect at Rackspace Technology. I love helping
+Rackspace customers integrate security into their CI/CD pipelines. In my spare time,
+I enjoy leading the Rackspace Capture the Flag (CTF) group and competing in CTF competitions."
 
 Singh, Kanwerjeet
 authorAvatar: 'https://s.gravatar.com/avatar/f73f72ee82679fc3d9e52f277a83e410'
