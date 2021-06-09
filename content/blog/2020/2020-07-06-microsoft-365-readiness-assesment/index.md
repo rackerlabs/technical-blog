@@ -112,5 +112,4 @@ that foundation, you can focus on what you do best&mdash;growing your business.
 
 <a class="cta blue" id="cta" href="https://www.rackspace.com/microsoft/office-365/rackspace-application-services">Learn more about our application-level services and guidance for Office 365.</a>
 
-Use the Feedback tab to make any comments or ask questions. You can also click
-**Let's Talk** to [start the conversation](https://www.rackspace.com/).
+Use the Feedback tab to make any comments or ask questions. You can also [start a conversation with us](https://www.rackspace.com/contact).

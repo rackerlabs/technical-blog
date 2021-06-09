@@ -99,6 +99,5 @@ data to stay a step ahead.
 
 <a class="cta blue" id="cta" href="https://www.rackspace.com/resources/rackspace-service-blocks-cloud-native-security-aws">Learn more about our CNS for AWS services.</a>
 
-Use the Feedback tab to make any comments or ask questions. You can also click
-**Let's Talk** to [start the conversation](https://www.rackspace.com/).
+Use the Feedback tab to make any comments or ask questions. You can also [start a conversation with us](https://www.rackspace.com/contact).
 

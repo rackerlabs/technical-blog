@@ -201,6 +201,5 @@ moving toward it.
 
 <a class="cta blue" id="cta" href="https://www.rackspace.com/data/aws-data">Learn more about our AWS data services.</a>
 
-Use the Feedback tab to make any comments or ask questions. You can also click
-**Let's Talk** to [start the conversation](https://www.rackspace.com/).
+Use the Feedback tab to make any comments or ask questions. You can also [start a conversation with us](https://www.rackspace.com/contact).
 

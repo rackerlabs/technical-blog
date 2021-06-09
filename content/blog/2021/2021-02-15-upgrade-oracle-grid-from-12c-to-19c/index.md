@@ -240,6 +240,5 @@ smooth and accurate process compared to the earlier versions.
 
 <a class="cta red" id="cta" href="https://www.rackspace.com/data/databases">Learn more about our Data services.</a>
 
-Use the Feedback tab to make any comments or ask questions. You can also click
-**Let's Talk** to [start the conversation](https://www.rackspace.com/).
+Use the Feedback tab to make any comments or ask questions. You can also [start a conversation with us](https://www.rackspace.com/contact).
 

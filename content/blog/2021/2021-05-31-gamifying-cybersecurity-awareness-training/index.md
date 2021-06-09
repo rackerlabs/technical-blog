@@ -152,5 +152,4 @@ can focus on making engaging content.
 
 <a class="cta purple" id="cta" href="https://www.rackspace.com/security/security-strategy">Learn more about our Security strategy services.</a>
 
-Use the Feedback tab to make any comments or ask questions. You can also click
-**Let's Talk** to [start the conversation](https://www.rackspace.com/).
+Use the Feedback tab to make any comments or ask questions. You can also [start a conversation with us](https://www.rackspace.com/contact).
