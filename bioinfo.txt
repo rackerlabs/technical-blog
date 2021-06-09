@@ -98,7 +98,8 @@ bio: n/a
 Bellam, Kiran
 authorAvatar: 'https://s.gravatar.com/avatar/2bb9b2c35079af6fc525081b04c15470'
 bio: "I expertly manage technical support operations, diligently troubleshooting
-issues to identify root causes and prevent recurrences."
+issues to identify root causes and prevent recurrences. My areas of expertise
+include: OBIEE, OAS, and OBIA."
 
 Benmbarek, Mustapha
 authorAvatar: 'https://s.gravatar.com/avatar/0299204313e4fc8d8c722748fa21a6b2?s=80'

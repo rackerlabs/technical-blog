@@ -6,7 +6,8 @@ comments: true
 author: Kiran Bellam
 authorAvatar: 'https://s.gravatar.com/avatar/2bb9b2c35079af6fc525081b04c15470'
 bio: "I expertly manage technical support operations, diligently troubleshooting
-issues to identify root causes and prevent recurrences."
+issues to identify root causes and prevent recurrences. My areas of expertise
+include: OBIEE, OAS, and OBIA."
 published: true
 authorIsRacker: true
 categories:
