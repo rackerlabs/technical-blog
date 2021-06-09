@@ -4,18 +4,23 @@ title: "Transfer an RPD for OBIEE with a web browser"
 date: 2021-06-09
 comments: true
 author: Kiran Bellam
-authorAvatar: ''
-bio: ""
+authorAvatar: 'https://s.gravatar.com/avatar/2bb9b2c35079af6fc525081b04c15470'
+bio: "I expertly manage technical support operations, diligently troubleshooting
+issues to identify root causes and prevent recurrences."
 published: true
 authorIsRacker: true
 categories:
-    - General
+    - Oracle
+    - Database
 metaTitle: "Transfer an RPD for OBIEE with a web browser"
-metaDescription: "."
+metaDescription: "The blog discusses how to download and upload the Repository Database (RPD) for
+Oracle&reg; Business Intelligence Enterprise Edition (OBIEE) 12C by using HTML
+code in your web browser."
 ogTitle: "Transfer an RPD for OBIEE with a web browser"
-ogDescription: "."
+ogDescription: "The blog discusses how to download and upload the Repository Database (RPD) for
+Oracle&reg; Business Intelligence Enterprise Edition (OBIEE) 12C by using HTML
+code in your web browser."
 slug: "transfer-an-rpd-for-obiee-with-a-web-browser"
-
 ---
 
 The blog discusses how to download and upload the Repository Database (RPD) for
