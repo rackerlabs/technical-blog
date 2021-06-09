@@ -95,6 +95,12 @@ Belke, Emily
 authorAvatar: 'https://s.gravatar.com/avatar/4a7de5d7772b14826cca8496c410ba88'
 bio: n/a
 
+Bellam, Kiran
+authorAvatar: 'https://s.gravatar.com/avatar/2bb9b2c35079af6fc525081b04c15470'
+bio: "I expertly manage technical support operations, diligently troubleshooting
+issues to identify root causes and prevent recurrences. My areas of expertise
+include: OBIEE, OAS, and OBIA."
+
 Benmbarek, Mustapha
 authorAvatar: 'https://s.gravatar.com/avatar/0299204313e4fc8d8c722748fa21a6b2?s=80'
 bio: "Mustapha works with startups and companies of any size to support their
