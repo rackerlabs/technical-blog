@@ -5,7 +5,7 @@ date: 2021-06-15
 comments: true
 author: Dishant Singh
 authorAvatar: 'https://s.gravatar.com/avatar/63d8415cb98789eeca859cb4823bc966'
-bio: "I specializ in the following areas: Oracle APPS DBA 11i+R12, DBA,
+bio: "I specialize in the following areas: Oracle APPS DBA 11i+R12, DBA,
 PMEC™, and LSSWB™. I also have Oracle cloud certifications (Infrastructure
 Architect Associate, Autonomous Database Cloud, Infrastructure Operations
 Associate, and Infrastructure Foundations)."
@@ -35,7 +35,7 @@ The following reasons might account for a lag between a primary and a standby si
 
 1. Network bandwidth issues between primary and standby databases.
 2. Unavailability of the standby database.
-3. An accidental deletion of archive redo data on the primary database.
+3. Accidental deletion of archive redo data on the primary database.
 
 You can sync primary and standby environments by copying and applying archive
 logs from the primary site, but this process is very time-consuming.
@@ -47,7 +47,7 @@ logs on the primary that the system never applied to the standby database.
 ### Steps to recover a physical standby database by using an incremental RMAN backup
 
 To set up this scenario, I manually removed some of the archive logs from the
-primary site to simulate either corrupt logs or missing logs.
+primary site to simulate corrupt logs or missing logs.
 
 ##### Step 1: Check the sync status of primary and standby site
 
@@ -106,9 +106,9 @@ Now, you need to re-enable **LOG_ARCHIVE_DEST_STATE_2** (set to `ENABLE`):
 </br>
 
 As expected, the standby cannot continue applying the logs because some of the
-logs are missing from the primary site
+logs are missing from the primary site.
 
-Finally, cancel the recovery and shut down the standy instance:
+Finally, cancel the recovery and shut down the standby instance:
 
 {{<img src="Picture7.png" title="" alt="">}}
 
@@ -180,7 +180,7 @@ Now, catalog the backup process:
 
 ##### Step 8: Catalog existing data files
 
-Also, catalog your exising data files:
+Also, catalog your existing data files:
 
 {{<img src="Picture14.png" title="" alt="">}}
 
@@ -188,7 +188,7 @@ Also, catalog your exising data files:
 
 ##### Step 9: Switch the existing data files
 
-Switch all existing datafiles to their image copies:
+Switch all existing data files to their image copies:
 
 {{<img src="Picture15.png" title="" alt="">}}
 
@@ -204,7 +204,7 @@ Now, recover your database:
 
 </br>
 
-This concludes the standby refresh. Just a few more steps to go!
+This step concludes the standby refresh. Just a few more steps to go!
 
 ##### Step 11: Check the sync status
 
