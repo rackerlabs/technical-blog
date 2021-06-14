@@ -926,6 +926,13 @@ bio: "I'm a Senior Cloud Security Architect at Rackspace Technology. I love help
 Rackspace customers integrate security into their CI/CD pipelines. In my spare time,
 I enjoy leading the Rackspace Capture the Flag (CTF) group and competing in CTF competitions."
 
+Singh, Dishant
+authorAvatar: 'https://s.gravatar.com/avatar/63d8415cb98789eeca859cb4823bc966'
+bio: "I specializ in the following areas: Oracle APPS DBA 11i+R12, DBA,
+PMEC™, and LSSWB™. I also have Oracle cloud certifications (Infrastructure
+Architect Associate, Autonomous Database Cloud, Infrastructure Operations
+Associate, and Infrastructure Foundations)."
+
 Singh, Kanwerjeet
 authorAvatar: 'https://s.gravatar.com/avatar/f73f72ee82679fc3d9e52f277a83e410'
 bio: "Hey, I’m Kanwer: Oracle DBA and always looking to explore new database technologies."
