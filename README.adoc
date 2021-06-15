@@ -16,7 +16,15 @@ The website is written in link:https://asciidoctor.org/docs/asciidoc-syntax-quic
 The Docs site runs on top of Hugo. To run an instance locally you need to either install
 Hugo and AsciiDoctor locally.
 
+
 === Local set up
+```sh
+ npm i -g netlify-cli
+ netlify init
+ netlify build
+ netlify dev
+ netlify deploy
+```
 
 ==== Install Hugo and AsciiDoctor locally
 
@@ -51,7 +59,7 @@ Build your content locally and check for build errors.
 2. Run the following command:
 
 ```sh
-npm run build:local
+netlify build
 ```
 
 ====  Start a local web server
@@ -67,7 +75,7 @@ To start the Hugo server, perform the following steps:
 1. Change directory to the root directory of your document repository.
 2. Run the following command:
 
-`npm start`
+`netlify dev`
 
 The Hugo server displays some messages while it starts up.  The last line should be:
 
@@ -85,7 +93,7 @@ This running instance should support live reload. Changes you make to files shou
 updated in your running instance.
 
 Some files may not be supported for live reload. If you are not automatically seeing your changes live
-you may need to restart the server. You can restart the server by pressing 'ctrl-c' and running `npm start`
+you may need to restart the server. You can restart the server by pressing 'ctrl-c' and running `netlify dev`
 again.
 
 If everything is working as expected you should see output similar to the following example:
@@ -120,7 +128,7 @@ updated in your running instance.
 
 Some files may not be supported for live reload. If you are not automatically seeing your changes live
 you may need to restart the server. You can restart the server by pressing 'ctrl-c' and running 
-`npm start` again.
+`netlify dev` again.
 
 ==  Project directory structure
 
