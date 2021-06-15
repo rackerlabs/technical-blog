@@ -3,11 +3,7 @@ layout: post
 title: "Transforming automated testing in the cloud with AI and ML"
 date: 2021-06-15
 comments: true
-author: Bhaskar Bose, Prasanna Lakshminarasimha, and Chris Tallis
-authorAvatar: 'https://s.gravatar.com/avatar/c2846c487f5d07873a3ba9977ddb5f5b'
-bio: "I'm passionate about the latest in tech and everything digital. I love
-music, reading, cooking, living in interesting times (aren't we all?), and
-learning new skills."
+author: Prasanna Lakshminarasimha and Chris Tallis
 published: true
 authorIsRacker: true
 categories:
