@@ -3,7 +3,7 @@ layout: post
 title: "Transforming automated testing in the cloud with AI and ML"
 date: 2021-06-15
 comments: true
-author: Bhaskar Bose
+author: Bhaskar Bose, Prasanna Lakshminarasimha, and Chris Tallis
 authorAvatar: 'https://s.gravatar.com/avatar/c2846c487f5d07873a3ba9977ddb5f5b'
 bio: "I'm passionate about the latest in tech and everything digital. I love
 music, reading, cooking, living in interesting times (aren't we all?), and
@@ -55,7 +55,7 @@ these factors, the future of application testing has to be rapid, accurate,
 continuous, and not resource-intensive, which is everything the traditional
 manual testing approach is not.  
 
-### Use cases 
+### Use cases
 
 Following are some AI/ML use cases:
 
@@ -92,7 +92,7 @@ integrated AI/ML tools and are the preferred choice.
 ### Resources and expertise
 
 According to the Tech Beacon [World Quality Report](https://content.microfocus.com/world-quality-report-2020-21-tb/world-quality-report-digital-transformation?utm_source=techbeacon&utm_medium=referral&utm_campaign=00172440),
-88% of enterprises consider *testing with AI and testing of AI* as the strongest
+88% of enterprises consider testing *with* AI and testing *of* AI as the strongest
 growth portion of their test-automation efforts, while 80% plan to put more AI
 trials/proofs-of-concept in place.
 
