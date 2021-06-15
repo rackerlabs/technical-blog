@@ -928,7 +928,7 @@ I enjoy leading the Rackspace Capture the Flag (CTF) group and competing in CTF 
 
 Singh, Dishant
 authorAvatar: 'https://s.gravatar.com/avatar/63d8415cb98789eeca859cb4823bc966'
-bio: "I specializ in the following areas: Oracle APPS DBA 11i+R12, DBA,
+bio: "I specialize in the following areas: Oracle APPS DBA 11i+R12, DBA,
 PMEC™, and LSSWB™. I also have Oracle cloud certifications (Infrastructure
 Architect Associate, Autonomous Database Cloud, Infrastructure Operations
 Associate, and Infrastructure Foundations)."
