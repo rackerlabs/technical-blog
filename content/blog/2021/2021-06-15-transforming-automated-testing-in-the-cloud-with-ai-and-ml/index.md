@@ -28,8 +28,8 @@ slug: "transforming-automated-testing-in-the-cloud-with-ai-and-ml"
 While the artificial intelligence (AI)/machine learning (ML) phenomenon has been
 around for quite some time now, it was only in 2020 that digital transformation,
 and an overall shift to the cloud, became imperative for organizations of all
-sizes and sectors. Also, with the remote economy on a steady rise, the focus on
-high-quality, readily scalable applications on the cloud has taken center stage
+sizes and in all sectors. Also, with the remote economy steadily rising, the focus
+on high-quality, readily scalable applications on the cloud has taken center stage
 on the average CTO's agenda.
 
 <!--more-->
