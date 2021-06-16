@@ -3,7 +3,12 @@ layout: post
 title: "Transforming automated testing in the cloud with AI and ML"
 date: 2021-06-15
 comments: true
-author: Prasanna Lakshminarasimha and Chris Tallis
+author: Prasanna Lakshminarasimha
+bio: “Prasanna heads the Applications & Data Delivery Department in Rackspace
+EMEA. He has more than two decades of experience working across Digital Strategy,
+Consulting, Transformation, Delivery, Enterprise Architecture, Presales, Business
+Development, Offering Development, and M&A. His current focus areas include Cloud
+Native Development and Test Automation.”
 published: true
 authorIsRacker: true
 categories:
