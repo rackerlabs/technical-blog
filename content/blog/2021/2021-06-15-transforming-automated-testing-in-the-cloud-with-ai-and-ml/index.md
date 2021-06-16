@@ -3,11 +3,13 @@ layout: post
 title: "Transforming automated testing in the cloud with AI and ML"
 date: 2021-06-15
 comments: true
-author: Bhaskar Bose, Prasanna Lakshminarasimha, and Chris Tallis
-authorAvatar: 'https://s.gravatar.com/avatar/c2846c487f5d07873a3ba9977ddb5f5b'
-bio: "I'm passionate about the latest in tech and everything digital. I love
-music, reading, cooking, living in interesting times (aren't we all?), and
-learning new skills."
+author: Prasanna Lakshminarasimha
+authorAvatar: 'https://raxglobal.sharepoint.com/sites/ProfessionalServices-UK/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FProfessionalServices%2DUK%2FShared%20Documents%2FService%20Dev%2FBacklog%2FApplication%20Testing%20Service%2FPrasanna%20Profile%20Photo%5Flarge%2Ejpg&parent=%2Fsites%2FProfessionalServices%2DUK%2FShared%20Documents%2FService%20Dev%2FBacklog%2FApplication%20Testing%20Service&p=true&originalPath=aHR0cHM6Ly9yYXhnbG9iYWwuc2hhcmVwb2ludC5jb20vOmk6L3MvUHJvZmVzc2lvbmFsU2VydmljZXMtVUsvRVNjdDJQZ0JZeU5MdlV2SXR3UWcxaGNCem10b1U2VXpNUHNpNFh2amNuZndvdz9ydGltZT1pRWlfQThZdzJVZw'
+bio: “Prasanna heads the Applications & Data Delivery Department in Rackspace
+EMEA. He has more than two decades of experience working across Digital Strategy,
+Consulting, Transformation, Delivery, Enterprise Architecture, Presales, Business
+Development, Offering Development, and M&A. His current focus areas include Cloud
+Native Development and Test Automation.”
 published: true
 authorIsRacker: true
 categories:
