@@ -4,12 +4,11 @@ title: "Transforming automated testing in the cloud with AI and ML"
 date: 2021-06-15
 comments: true
 author: Prasanna Lakshminarasimha
-authorAvatar: 'https://raxglobal.sharepoint.com/sites/ProfessionalServices-UK/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FProfessionalServices%2DUK%2FShared%20Documents%2FService%20Dev%2FBacklog%2FApplication%20Testing%20Service%2FPrasanna%20Profile%20Photo%5Flarge%2Ejpg&parent=%2Fsites%2FProfessionalServices%2DUK%2FShared%20Documents%2FService%20Dev%2FBacklog%2FApplication%20Testing%20Service&p=true&originalPath=aHR0cHM6Ly9yYXhnbG9iYWwuc2hhcmVwb2ludC5jb20vOmk6L3MvUHJvZmVzc2lvbmFsU2VydmljZXMtVUsvRVNjdDJQZ0JZeU5MdlV2SXR3UWcxaGNCem10b1U2VXpNUHNpNFh2amNuZndvdz9ydGltZT1pRWlfQThZdzJVZw'
-bio: “Prasanna heads the Applications & Data Delivery Department in Rackspace
+bio: "Prasanna heads the Applications & Data Delivery Department in Rackspace
 EMEA. He has more than two decades of experience working across Digital Strategy,
 Consulting, Transformation, Delivery, Enterprise Architecture, Presales, Business
 Development, Offering Development, and M&A. His current focus areas include Cloud
-Native Development and Test Automation.”
+Native Development and Test Automation."
 published: true
 authorIsRacker: true
 categories:
@@ -28,8 +27,8 @@ slug: "transforming-automated-testing-in-the-cloud-with-ai-and-ml"
 While the artificial intelligence (AI)/machine learning (ML) phenomenon has been
 around for quite some time now, it was only in 2020 that digital transformation,
 and an overall shift to the cloud, became imperative for organizations of all
-sizes and sectors. Also, with the remote economy on a steady rise, the focus on
-high-quality, readily scalable applications on the cloud has taken center stage
+sizes and in all sectors. Also, with the remote economy steadily rising, the focus
+on high-quality, readily scalable applications on the cloud has taken center stage
 on the average CTO's agenda.
 
 <!--more-->
