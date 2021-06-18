@@ -4,6 +4,7 @@ title: "Transforming automated testing in the cloud with AI and ML"
 date: 2021-06-15
 comments: true
 author: Prasanna Lakshminarasimha
+authorAvatar: 'https://media-exp1.licdn.com/dms/image/C4E03AQHlzFDZggxqbg/profile-displayphoto-shrink_200_200/0/1517763412582?e=1629331200&v=beta&t=2U9gQkpY1S8Pn3kUdvc__oKaH3SwcMpkG2qtifSvCWo'
 bio: "Prasanna heads the Applications & Data Delivery Department in Rackspace
 EMEA. He has more than two decades of experience working across Digital Strategy,
 Consulting, Transformation, Delivery, Enterprise Architecture, Presales, Business
