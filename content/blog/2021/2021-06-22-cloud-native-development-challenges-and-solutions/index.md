@@ -5,7 +5,7 @@ date: 2021-06-22
 comments: true
 author: Jim Rosser
 authorAvatar: ''
-bio: ""
+bio: "Need biography and link to author image (perhaps from gravatar.com or linked in)."
 published: true
 authorIsRacker: true
 categories:
