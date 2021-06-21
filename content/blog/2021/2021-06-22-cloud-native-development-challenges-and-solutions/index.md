@@ -104,15 +104,20 @@ the full potential of the cloud:
 
 - Free [two-hour strategy session](https://www.rackspace.com/lp/app-modernization-2-hour-strategy-session)
   on the Application Modernization Assessment and Advisory service
+- [Application Modernization Assessment and Advisory service](https://www.rackspace.com/lp/application-modernization-assessment-and-advisory)
 - [AWS Serverless Enablement and Ideation Workshop](https://www.rackspace.com/lp/application-modernization-assessment-and-advisory)
 - [Application Modernization at Scale](https://www.rackspace.com/lp/serverless-enablement-workshop)
-- [Register now](https://www.rackspace.com/lp/modernization-scale)
-  to join us for a virtual discussion with technology experts to learn how to
-  accelerate your journey to modern applications leveraging cloud-native
-  technologies.
+
+### Another opportunity
 
 Discover your ideal modernization path and unlock the full potential of the
 cloud-native alternative.
+
+Interested in learning how to identify the right application modernization
+approach for your business? [Register now](https://www.rackspace.com/lp/modernization-scale)
+to join us for a virtual discussion with technology experts to learn how to
+accelerate your journey to modern applications leveraging cloud-native
+technologies.
 
 <a class="cta purple" id="cta" href="https://www.rackspace.com/hub/modern-cloud-applications">Let our experts guide you on your cloud-native journey.</a>
 
