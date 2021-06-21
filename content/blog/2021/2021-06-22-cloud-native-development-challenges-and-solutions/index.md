@@ -4,8 +4,20 @@ title: "Cloud-native development: Challenges and solutions"
 date: 2021-06-22
 comments: true
 author: Jim Rosser
-authorAvatar: ''
-bio: "Need biography and link to author image (perhaps from gravatar.com or linked in)."
+authorAvatar: 'https://media-exp1.licdn.com/dms/image/C5603AQGwu-a4bQR74w/profile-displayphoto-shrink_200_200/0/1599065801832?e=1629936000&v=beta&t=1yLosckPWGpaJK9RyQL-VO9X3-CH_Dwmt7Xhq0Kcni4'
+bio: "As a Customer Solutions Architect, Jim partners with AWS-focused Onica
+account executives, in both the enterprise and mid-market verticals, to extract
+C-level-aligned business initiatives, as well as gathering technical project
+requirements to achieve the client's expected outcomes. Jim leverages the robust
+services portfolio offered by Onica-Rackspace to customize the optimal delivery
+method of either Elastic Engineering or Professional Services based on the
+specific criteria of a given engagement. Jim brings thought-leadership and
+client-focused guidance to every discussion making him one of the most passionate
+and tech-savvy contributors within the organization. Jim's experience working
+directly within the Professional Services organization allows him to leverage
+application design and development on top of his abilities within the solutions
+architect skill set. While adept with most of the principal hyperscaler platforms,
+he prefers to work with customers on AWS adoption."
 published: true
 authorIsRacker: true
 categories:
@@ -90,10 +102,10 @@ on their readiness to adopt so that you can plan your modernization roadmap
 with confidence. We've developed the following paths to help you better unlock
 the full potential of the cloud:
 
-- Free two-hour strategy session on the Application Modernization Assessment &
-  Advisory service {add link?}
-- AWS Serverless Enablement & Ideation Workshop {add link?}
-- Application Modernization at Scale {add link?}
+- Free [two-hour strategy session](https://www.rackspace.com/lp/app-modernization-2-hour-strategy-session)
+  on the Application Modernization Assessment and Advisory service
+- [AWS Serverless Enablement and Ideation Workshop](https://www.rackspace.com/lp/application-modernization-assessment-and-advisory)
+- [Application Modernization at Scale](https://www.rackspace.com/lp/serverless-enablement-workshop)
 
 ### Summary
 
@@ -101,9 +113,10 @@ Discover your ideal modernization path and unlock the full potential of the
 cloud-native alternative.
 
 Interested in learning how to identify the appropriate application modernization
-approach for your business? Register now {add link} to join us for a virtual
-discussion with technology experts to learn how to accelerate your journey to
-modern applications leveraging cloud-native technologies.
+approach for your business? [Register now](https://www.rackspace.com/lp/modernization-scale)
+to join us for a virtual discussion with technology experts to learn how to
+accelerate your journey to modern applications leveraging cloud-native
+technologies.
 
 <a class="cta purple" id="cta" href="https://www.rackspace.com/solutions">Let our experts guide you on your cloud-native journey.</a>
 
