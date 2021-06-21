@@ -115,7 +115,7 @@ cloud-native alternative.
 
 Interested in learning how to identify the right application modernization
 approach for your business? [Register now](https://www.brighttalk.com/webcast/17680/495173?utm_source=RackspaceTechnology&utm_medium=brighttalk&utm_campaign=495173)
-to join us for a virtual discussion with technology e]xperts to learn how to
+to join us for a virtual discussion with technology experts to learn how to
 accelerate your journey to modern applications leveraging cloud-native
 technologies.
 
