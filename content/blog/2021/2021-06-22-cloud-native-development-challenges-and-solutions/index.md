@@ -22,7 +22,7 @@ published: true
 authorIsRacker: true
 categories:
     - General
-    - DevOps
+    - AWS
 metaTitle: "Cloud-native development: Challenges and solutions"
 metaDescription: "We are excited to announce enhanced full-lifecycle
 cloud-native development Professional Services capabilities to better help our
