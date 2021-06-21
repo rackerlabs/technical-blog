@@ -106,7 +106,7 @@ the full potential of the cloud:
   on the Application Modernization Assessment and Advisory service
 - [Application Modernization Assessment and Advisory service](https://www.rackspace.com/lp/application-modernization-assessment-and-advisory)
 - [AWS Serverless Enablement and Ideation Workshop](https://www.rackspace.com/lp/serverless-enablement-workshop)
-- [Application Modernization at Scale](https://www.rackspace.com/lp/application-modernization-assessment-and-advisory)
+- [Application Modernization at Scale](https://www.rackspace.com/lp/modernization-scale)
 
 ### Another opportunity
 
@@ -114,8 +114,8 @@ Discover your ideal modernization path and unlock the full potential of the
 cloud-native alternative.
 
 Interested in learning how to identify the right application modernization
-approach for your business? [Register now](https://www.rackspace.com/lp/modernization-scale)
-to join us for a virtual discussion with technology experts to learn how to
+approach for your business? [Register now](https://www.brighttalk.com/webcast/17680/495173?utm_source=RackspaceTechnology&utm_medium=brighttalk&utm_campaign=495173)
+to join us for a virtual discussion with technology e]xperts to learn how to
 accelerate your journey to modern applications leveraging cloud-native
 technologies.
 
