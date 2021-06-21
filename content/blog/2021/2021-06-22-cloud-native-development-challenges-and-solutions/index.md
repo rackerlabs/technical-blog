@@ -105,8 +105,8 @@ the full potential of the cloud:
 - Free [two-hour strategy session](https://www.rackspace.com/lp/app-modernization-2-hour-strategy-session)
   on the Application Modernization Assessment and Advisory service
 - [Application Modernization Assessment and Advisory service](https://www.rackspace.com/lp/application-modernization-assessment-and-advisory)
-- [AWS Serverless Enablement and Ideation Workshop](https://www.rackspace.com/lp/application-modernization-assessment-and-advisory)
-- [Application Modernization at Scale](https://www.rackspace.com/lp/serverless-enablement-workshop)
+- [AWS Serverless Enablement and Ideation Workshop](https://www.rackspace.com/lp/serverless-enablement-workshop)
+- [Application Modernization at Scale](https://www.rackspace.com/lp/application-modernization-assessment-and-advisory)
 
 ### Another opportunity
 
