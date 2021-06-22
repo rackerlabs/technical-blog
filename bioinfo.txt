@@ -850,6 +850,22 @@ Services. He has more than 20 years of experience in technology working with a
 wide variety of customers across multiple industries. John is based in Orlando,
 Florida. Follow him on Twitter at **@johnrossjr**."
 
+Rosser, Jim
+authorAvatar: 'https://media-exp1.licdn.com/dms/image/C5603AQGwu-a4bQR74w/profile-displayphoto-shrink_200_200/0/1599065801832?e=1629936000&v=beta&t=1yLosckPWGpaJK9RyQL-VO9X3-CH_Dwmt7Xhq0Kcni4'
+bio: "As a Customer Solutions Architect, Jim partners with AWS-focused Onica
+account executives, in both the enterprise and mid-market verticals, to extract
+C-level-aligned business initiatives, as well as gathering technical project
+requirements to achieve the client's expected outcomes. Jim leverages the robust
+services portfolio offered by Onica-Rackspace to customize the optimal delivery
+method of either Elastic Engineering or Professional Services based on the
+specific criteria of a given engagement. Jim brings thought-leadership and
+client-focused guidance to every discussion making him one of the most passionate
+and tech-savvy contributors within the organization. Jim's experience working
+directly within the Professional Services organization allows him to leverage
+application design and development on top of his abilities within the solutions
+architect skill set. While adept with most of the principal hyperscaler platforms,
+he prefers to work with customers on AWS adoption."
+
 Rossmeir, Paul
 authorAvatar: 'https://s.gravatar.com/avatar/6ac8427cdb85521fd14f1bceb8702e69'
 bio: "Paul began his Rackspace career in 2013 as a member of the Cloud Office team.
