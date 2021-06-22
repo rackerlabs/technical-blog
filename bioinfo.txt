@@ -341,6 +341,15 @@ defending networks from Advanced Persistent Threats, and has managed security
 operations teams across all levels. You can follow Chris on LinkedIn at
 linkedin.com/in/Christopher-a-evans."
 
+Fletcher, Oliver
+authorAvatar: 'https://secure.gravatar.com/avatar/c995a09e236f55b82451a9f8a6add9ad'
+bio: "I've been designing, developing, and building distributed systems since
+2008 in both hands-on and leadership roles. I am a forward thinker who looks
+outwards for new ideas, transparent, and a results-driven technology leader. I
+understand the importance of organizational culture, teams, and growing
+relationships. I'm a Cloud Architect on the Elastic Engineering team at Onica, a
+Rackspace Technology Company."
+
 Fox, Nate 
 authorAvatar: 'https://ca.slack-edge.com/T07TWTBTP-U010X7DPYTV-64948ceb6a70-512'
 bio: "Over 20 years of progressive experience in the field of Information Technology 
