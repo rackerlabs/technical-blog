@@ -26,8 +26,8 @@ slug: "the-importance-of-gitops-moving-towards-cloud-native"
 
 ---
 
-As your organization adopts Cloud Native architectures, a shift in mindset must
-take place.
+As your organization adopts Cloud Native architectures, you need to shift your
+mindset.
 
 <!--more-->
 
