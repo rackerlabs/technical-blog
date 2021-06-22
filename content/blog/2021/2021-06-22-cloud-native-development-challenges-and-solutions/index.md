@@ -63,7 +63,8 @@ architecture while leveraging our AWS expertise across the following use cases:
 - Break up the monolith into microservices.
 - Refactor legacy on-prem desktop applications and deliver them in a SaaS model
   through cloud-based web or mobile applications.
-- Build real-time event-driven companion applications for IoT solutions.
+- Build serverless applications for real-time and event-driven use cases, such
+  as IoT or video streaming.
 
 While companies take steps toward modernizing their applications,  the complexity
 of public cloud technologies and modern architectures and the new processes and
