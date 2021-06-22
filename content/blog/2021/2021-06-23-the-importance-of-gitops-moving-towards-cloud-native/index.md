@@ -48,7 +48,7 @@ describe declaratively.
 Enable GitOps by using declarative configuration languages to define services
 and platforms. Then, use a source control repository to manage and deploy code
 through continuous deployment. GitOps also leverages Kubernetes Operators or
-infrastructure tooling to manage the state for the defined configuration to
+infrastructure tools to manage the state for the defined configuration to
 ensure drift does not occur.
 
 ### GitOps principles
@@ -57,8 +57,8 @@ The following sections describe four key principles for GitOps:
 
 #### 1. Declare the service or platform through code
 
-Tooling such as Kustomize&reg;, Helm&reg;, Terraform&reg;, and Ansible&reg;,
-declares services and platforms through configuration languages. You store the
+Tools, such as Kustomize&reg;, Helm&reg;, Terraform&reg;, and Ansible&reg;,
+declare services and platforms through configuration languages. You store the
 repository for the templates and manifests in a git-based source control system
 to enable a single source of truth for DevOps or SRE teams.
 
@@ -74,11 +74,11 @@ requests and ensure faster recovery times when you need to do a rollback.
 
 #### 3. Detect and manage drift across services and platforms
 
-By integrating infrastructure tooling or Kubernetes Operators into the GitOps
+By integrating infrastructure tools or Kubernetes Operators into the GitOps
 process, you ensure that the services and platforms defined through code stay
 aligned with the repository. You achieve this by enabling Kubernetes Operators
 or infrastructure tools to monitor the current state of services or platforms
-and ensure that the system reconciles desired state when drift occurs.
+and ensure that the system reconciles the desired state when drift occurs.
 
 #### 4. Automate services and platform deployments with continuous integration
 
@@ -91,39 +91,38 @@ model, engineers push code to the environment repository that hosts the code for
 either the service or platform. This then triggers a build or change in the
 environment by using the Kubernetes Operator or infrastructure tools.
 
-{{<img src="Picture1.png" title="" alt="">}}
+{{<img src="pull-model.png" title="" alt="">}}
 
 </br>
 
-{{<img src="Picture1.png" title="" alt="">}}
+{{<img src="push-model.png" title="" alt="">}}
 
 </br>
 
 ### GitOps benefits
 
 GitOps can enable an effective foundation for building Cloud Native applications.
-The key principles of GitOps highlight the following key benefits for
-organizations:
+The key principles of GitOps highlight the following benefits for organizations:
 
 #### Faster time to market through continuous deployment
 
 You can increase the acceleration of new features and products to market by using
 GitOps practices, processes, and tools. This enables engineering teams to automate
-deployments, enabling faster release rates to help gain faster customer feedback
-and thus improve customer satisfaction.
+deployments, enabling faster release rates to help gain quick customer feedback
+and improve customer satisfaction.
 
 #### Improved reliability of platforms and services
 
 As you define the services or platforms declaratively through code, you can
 integrate code testing into the CI/CD pipelines. Through this integration, you
-can enable approval, testing, and rollback processes for changes. This process
+can enable approval, testing, and rollback processes for changes. This
 helps improve the overall reliability and mean time to recovery or mean time to
 restore (MTTR) of applications when deploying new changes to the environment.
 
 #### Standardized and consistent deployments
 
 The end-to-end process for deploying or changing services or platforms becomes
-standardized and consistent through using GitOps processes, practices, and tooling.
+standardized and consistent when you use GitOps processes, practices, and tooling.
 As they manage service and platform configuration through code, engineers can
 understand the current and past states by viewing the repository branch logs.
 
