@@ -32,8 +32,6 @@ upgrading in part 2.
 
 ### Overview
 
-{{<img src="Picture1.png" title="" alt="">}}
-
 In part 1, I focus on installing Oracle 19c on a Windows&reg; environment.
 You might wonder if you can install Oracle DB 19c on the x32 bit Windows
 operating system, but the answer is no. Oracle 19c is compatible with only
@@ -64,7 +62,7 @@ Select the `Set Up Software Only` radio button because you want to install the
 software without creating an Oracle database. In my case, I already have an Oracle
 database version 11g.
 
-<image1>
+{{<img src="Picture1.png" title="" alt="">}}
 
 ##### Step 2
 
@@ -72,7 +70,7 @@ Select the `Single instance database installation` radio button because you're
 not installing an Oracle Real Application Cluster (RAC) database, which can have
 multiple instances.
 
-<image2>
+{{<img src="Picture2.png" title="" alt="">}}
 
 ##### Step 3
 
@@ -86,7 +84,7 @@ If you want to install the standard edition, then select `Standard Edition 2`.
 The Enterprise edition has additional costs compared to the Standard edition,
 and the choice is up to you.
 
-<image3>
+{{<img src="Picture3.png" title="" alt="">}}
 
 ##### Step 4
 
@@ -103,7 +101,7 @@ account you specify needs to be a Windows local user. The Oracle installer
 creates this account automatically to run the Windows Oracle services for the
 Oracle home.
 
-<image4>
+{{<img src="Picture4.png" title="" alt="">}}
 
 ##### Step 5
 
@@ -111,7 +109,7 @@ Specify the location of the Oracle base. In this case, I selected **D:\app**.
 Again, you can change this directory at your convenience or opt for the default
 one.
 
-<image5>
+{{<img src="Picture5.png" title="" alt="">}}
 
 ##### Step 6
 
@@ -132,28 +130,28 @@ Database installation to avoid any issues with Oracle 19c.
 
 Click install if no error occurs.
 
-<image6>
+{{<img src="Picture6.png" title="" alt="">}}
 
 ##### Step 7
 
 The installer shows you the summary, including the Oracle base, Oracle software
 location, Oracle database edition, and Oracle home user.
 
-<image7>
+{{<img src="Picture7.png" title="" alt="">}}
 
 ##### Step 8
 
 The installer starts the Oracle 19c installation. If you get any errors during
 the installation, you need to fix them to complete the installation successfully.
 
-<image8>
+{{<img src="Picture8.png" title="" alt="">}}
 
 ##### Step 9
 
 The installer shows you the final successful page with the following output if
 no errors occurred during the installation.
 
-<image9>
+{{<img src="Picture9.png" title="" alt="">}}
 
 ### Conclusion
 
