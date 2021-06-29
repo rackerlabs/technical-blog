@@ -14,10 +14,10 @@ authorIsRacker: true
 categories:
     - Database
     - Oracle
-metaTitle: "Install Oracle 19c for Windows&mdashPart One""
-metaDescription: " In this two-part blog post series, I cover installing in part 1 and upgrading in part 2."
-ogTitle: "Install Oracle 19c for Windows&mdashPart One""
-ogDescription: " In this two-part blog post series, I cover installing in part 1 and upgrading in part 2."
+metaTitle: "Install Oracle 19c for Windows&mdashPart One"
+metaDescription: "In this two-part blog post series, I cover installing in part 1 and upgrading in part 2."
+ogTitle: "Install Oracle 19c for Windows&mdashPart One"
+ogDescription: "In this two-part blog post series, I cover installing in part 1 and upgrading in part 2."
 slug: "install-oracle-19c-for-windows-part-one"
 
 ---
