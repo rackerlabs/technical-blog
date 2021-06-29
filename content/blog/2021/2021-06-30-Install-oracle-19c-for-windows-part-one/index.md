@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Install Oracle 19c for Windows&mdashPart One"
+title: "Install Oracle 19c for Windows&mdash;Part One"
 date: 2021-06-30
 comments: true
 author: Pradeep Rai
@@ -14,9 +14,9 @@ authorIsRacker: true
 categories:
     - Database
     - Oracle
-metaTitle: "Install Oracle 19c for Windows&mdashPart One"
+metaTitle: "Install Oracle 19c for Windows&mdash;Part One"
 metaDescription: "In this two-part blog post series, I cover installing in part 1 and upgrading in part 2."
-ogTitle: "Install Oracle 19c for Windows&mdashPart One"
+ogTitle: "Install Oracle 19c for Windows&mdash;Part One"
 ogDescription: "In this two-part blog post series, I cover installing in part 1 and upgrading in part 2."
 slug: "install-oracle-19c-for-windows-part-one"
 
