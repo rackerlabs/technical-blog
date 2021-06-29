@@ -12,8 +12,8 @@ such as Mongo dB and Cassandra."
 published: true
 authorIsRacker: true
 categories:
-    - Oracle
     - Database
+    - Oracle
 metaTitle: "Install Oracle 19c for Windows&mdashPart One""
 metaDescription: " In this two-part blog post series, I cover installing in part 1 and upgrading in part 2."
 ogTitle: "Install Oracle 19c for Windows&mdashPart One""
