@@ -8,7 +8,7 @@
   {{- partial "components/search-modal" . -}}
   <div class="container-fluid">
     <div class="row">
-      <div class="col-sm-12 col-md-10 col-lg-10" id="single-post">
+      <div class="col-sm-12 col-md-10 col-lg-10 content" id="single-post">
         <div class="container">
         <h1 class="post--title">{{ .Params.headline | default .Title | markdownify}}</h1>
         <div class="post-meta">
