@@ -31,8 +31,7 @@ If you have an image, add it to the post directory and replace the image name in
 
 ### Conclusion
 
-<a class="cta purple" id="cta" href="https://www.rackspace.com/sap">Learn more about our SAP services.</a>
+<a class="cta purple" id="cta" href="https://www.rackspace.com/data/databases">Learn more about our Database services.</a>
 
-Use the Feedback tab to make any comments or ask questions. You can also click
-**Let's Talk** to [start the conversation](https://www.rackspace.com/).
-
+Use the Feedback tab to make any comments or ask questions. You can also
+[start a conversation with us](https://www.rackspace.com/contact).

@@ -4,8 +4,11 @@ title: "Replication in PostgresSQL"
 date: 2021-04-23
 comments: true
 author: Shailesh Kumar
-authorAvatar: ''
-bio: ""
+authorAvatar: 'https://s.gravatar.com/avatar/3bf8558f37055ca7efe45c2445e04483'
+bio: "I am an Oracle DBA who strives to enrich and enhance my career where I get adequate
+exposure of my skills and the opportunity for career growth. Also, I love learning about
+new databases, using my knowledge, and contributing to the success of the organization
+through my sincere efforts. Finally, I continue exploring PostgreSQL."
 published: true
 authorIsRacker: true
 categories:
@@ -290,6 +293,5 @@ standby server if the primary goes down.
 
 <a class="cta teal" id="cta" href="https://www.rackspace.com/data/databases">Learn more about our Data services.</a>
 
-Use the Feedback tab to make any comments or ask questions. You can also click
-**Let's Talk** to [start the conversation](https://www.rackspace.com/).
+Use the Feedback tab to make any comments or ask questions. You can also [start a conversation with us](https://www.rackspace.com/contact).
 

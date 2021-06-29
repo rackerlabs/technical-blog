@@ -106,6 +106,5 @@ tools, further strengthens our ability to serve you.
 
 <a class="cta purple" id="cta" href="https://www.rackspace.com/mulesoft">Learn more about Rackspace Integration and API Management Services.</a>
 
-Use the Feedback tab to make any comments or ask questions. You can also click
-**Let's Talk** to [start the conversation](https://www.rackspace.com/).
+Use the Feedback tab to make any comments or ask questions. You can also [start a conversation with us](https://www.rackspace.com/contact).
 

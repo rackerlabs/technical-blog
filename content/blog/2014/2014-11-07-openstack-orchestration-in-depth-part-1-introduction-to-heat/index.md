@@ -267,5 +267,4 @@ applications, which is Heat's bread and butter. I hope to see you then!
 
 <a class="cta teal" id="cta" href="https://www.rackspace.com/solutions/it-transformation">Learn more about IT Transformation</a>
 
-Use the Feedback tab to make any comments or ask questions. You can also click
-**Let's Talk** to [start the conversation](https://www.rackspace.com/).
+Use the Feedback tab to make any comments or ask questions. You can also [start a conversation with us](https://www.rackspace.com/contact).

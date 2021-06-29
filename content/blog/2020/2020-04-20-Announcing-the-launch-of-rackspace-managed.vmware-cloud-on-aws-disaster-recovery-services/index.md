@@ -115,5 +115,4 @@ and expertise to get you there quickly and cost-effectively.
 
 <a class="cta teal" id="cta" href="https://www.rackspace.com/vmware/vmc-on-aws">Learn more about Managed VMware Cloud on AWS.</a>
 
-Use the Feedback tab to make any comments or ask questions. You can also click
-**Let's Talk** to [start the conversation](https://www.rackspace.com/).
+Use the Feedback tab to make any comments or ask questions. You can also [start a conversation with us](https://www.rackspace.com/contact).
