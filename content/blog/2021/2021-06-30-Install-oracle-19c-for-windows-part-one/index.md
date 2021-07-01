@@ -15,9 +15,9 @@ categories:
     - Database
     - Oracle
 metaTitle: "Install Oracle 19c for Windows&mdash;Part One"
-metaDescription: "In this two-part blog post series, I cover installing in part 1 and upgrading in part 2."
+metaDescription: "In this two-part blog post series, I cover installing and upgrading version 19c."
 ogTitle: "Install Oracle 19c for Windows&mdash;Part One"
-ogDescription: "In this two-part blog post series, I cover installing in part 1 and upgrading in part 2."
+ogDescription: "In this two-part blog post series, I cover installing and upgrading version 19c."
 slug: "install-oracle-19c-for-windows-part-one"
 
 ---
@@ -25,14 +25,13 @@ slug: "install-oracle-19c-for-windows-part-one"
 Oracle&reg; 19c Database is the latest release of a widely adopted automation
 database in the market and enterprises. Stability is an important element of the
 Oracle Database 19c component of the Oracle Database 12c (Release 12.2) family of
-products. In this two-part blog post series, I cover installing in part 1 and
-upgrading in part 2.
+products. In this two-part blog post series, I cover installing and upgrading version 19c.
 
 <!--more-->
 
 ### Overview
 
-In part 1, I focus on installing Oracle 19c on a Windows&reg; environment.
+In part one, I focus on installing Oracle 19c on a Windows&reg; environment.
 You might wonder if you can install Oracle DB 19c on the x32 bit Windows
 operating system, but the answer is no. Oracle 19c is compatible with only
 x64bit Windows.
