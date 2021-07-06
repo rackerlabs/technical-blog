@@ -157,7 +157,8 @@ no errors occurred during the installation.
 With the help of this blog post, you can easily understand and follow the
 Oracle 19c installation steps in the Windows environment.
 
-Stay tuned for the second part of this series, where I discuss upgrading your
+To learn how to upgrade your Oracle 11 Database to 19c, see
+[Part Two]((https://docs.rackspace.com/blog/upgrade-oracle-11-to-19c-for-windows-part-two/)).
 database.
 
 <a class="cta teal" id="cta" href="https://www.rackspace.com/data/databases">Learn more about our Database services.</a>
