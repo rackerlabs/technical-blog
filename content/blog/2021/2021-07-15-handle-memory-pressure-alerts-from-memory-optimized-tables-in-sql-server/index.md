@@ -14,7 +14,7 @@ published: true
 authorIsRacker: true
 categories:
     - Database
-    - SQL Server
+    - SQLServer
 metaTitle: "Handle memory pressure alerts from memory-optimized tables in SQL Server"
 metaDescription: "This post discusses how to resolve one of the exceptional scenarios you might
 experience because of memory pressure on SQL Server&reg; 2019 (Enterprise Edition)
