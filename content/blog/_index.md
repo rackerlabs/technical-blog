@@ -6,7 +6,6 @@ weight: 4
 outputs:
 - HTML
 - RSS
-- Algolia
 date: 2017-12-31
 description: 'Technical Blog'
 author: []
