@@ -8,13 +8,13 @@ authorAvatar: 'https://s.gravatar.com/avatar/66a55c04f72802eb218cea410e4498b8'
 bio: "Sachin is a Microsoft SQL Server DBA with over 12 years of total experience.
 Sachin currently works at Rackspace Technology and handles Cloud Office
 (Productivity: Email and apps) projects. Sachin performs all DBA and BI
-activities for the project and works closely with product managers and development
+activities for the project and works closely with product managers and development."
 teams.
 published: true
 authorIsRacker: true
 categories:
     - Database
-    - SQLServer
+    - SQL Server
 metaTitle: "Handle memory pressure alerts from memory-optimized tables in SQL Server"
 metaDescription: "This post discusses how to resolve one of the exceptional scenarios you might
 experience because of memory pressure on SQL Server&reg; 2019 (Enterprise Edition)

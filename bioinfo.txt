@@ -593,7 +593,7 @@ bio: "Sachin is a Microsoft SQL Server DBA with over 12 years of total experienc
 Sachin currently works at Rackspace Technology and handles Cloud Office
 (Productivity: Email and apps) projects. Sachin performs all DBA and BI
 activities for the project and works closely with product managers and development
-teams.
+teams."
 
 Kumar, Sanjiv
 authorAvatar: n/a
