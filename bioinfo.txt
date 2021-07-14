@@ -587,6 +587,14 @@ authorAvatar: 'https://s.gravatar.com/avatar/7f73ff8ddbc33505beb7a14033611a06'
 bio: "I've been a Racker for three years and have 14+ years of Oracle DBA
 experience. Currently, I work on Oracle, MongoDB, and other NoSQL databases."
 
+Kumar, Sachin
+authorAvatar: 'https://s.gravatar.com/avatar/66a55c04f72802eb218cea410e4498b8'
+bio: "Sachin is a Microsoft SQL Server DBA with over 12 years of total experience.
+Sachin currently works at Rackspace Technology and handles Cloud Office
+(Productivity: Email and apps) projects. Sachin performs all DBA and BI
+activities for the project and works closely with product managers and development
+teams.
+
 Kumar, Sanjiv
 authorAvatar: n/a
 bio: "Sanjiv is an Application Support Architect who is responsible for onboarding
