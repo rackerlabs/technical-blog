@@ -47,7 +47,7 @@ running the following commands:
 `verify asciidoctor -v`
 `verify gem —help`
 
-Alternatively, use the `npm install` command to install Asciidoctor by using link:https://rubygems.org[Ruby Gem]
+Alternatively, use the `make install` command to install Asciidoctor by using link:https://rubygems.org[Ruby Gem]
 and Bundler. You need to have the `gem` command in your path. For more information, see the
 link:https://rubygems.org/pages/download[Ruby Gem installation docs].
 
@@ -99,25 +99,34 @@ again.
 If everything is working as expected you should see output similar to the following example:
 
 ```
+Start building sites …
+hugo v0.84.2+extended darwin/amd64 BuildDate=unknown
+
                    | EN-US
 -------------------+--------
-  Pages            |  1217
-  Paginator pages  |   154
-  Non-page files   |  1292
-  Static files     |    30
+  Pages            |  1466
+  Paginator pages  |   199
+  Non-page files   |  1759
+  Static files     |    43
   Processed images |     0
-  Aliases          |   354
+  Aliases          |   406
   Sitemaps         |     1
   Cleaned          |     0
 
-Built in 3116 ms
-Watching for changes in /rackerlabs/technical-blog/{archetypes,assets,content,i18n,layouts,package.hugo.json,package.json,postcss.config.js,static}
+Built in 2232 ms
+Watching for changes in /rackerlabs/technical-blog/{archetypes,content,i18n,layouts,static}
 Watching for config changes in /rackerlabs/technical-blog/config.toml
 Environment: "development"
 Serving pages from memory
 Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
 Web Server is available at //localhost:1313/ (bind address 127.0.0.1)
 Press Ctrl+C to stop
+
+   ┌─────────────────────────────────────────────────┐
+   │                                                 │
+   │   ◈ Server now ready on http://localhost:8888   │
+   │                                                 │
+   └─────────────────────────────────────────────────┘
 
 ```
 
