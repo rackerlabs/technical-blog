@@ -24,7 +24,7 @@ them to your personal network storage (P drive).
 ### Overview
 
 You should create a folder on
-your P drive that you will use to store the emails.  Please read the following
+your P drive that you will use to store the emails.  Read the next
 options you have when you need to save email(s), and then see below
 for detailed instructions.  You must use Outlook (not Outlook Web App) to follow these instructions.
 
