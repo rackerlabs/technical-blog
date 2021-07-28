@@ -359,5 +359,4 @@ Here some suggestions:
 
 If you find a problem, open a GitHub issue.
 
-If you need additional assistance, contact us at [info-dev@rackspace.com](mailto:info-dev@rackspace.com).
 
