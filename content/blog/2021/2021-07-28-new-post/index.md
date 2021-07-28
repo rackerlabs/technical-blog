@@ -8,7 +8,7 @@ published: true
 authorIsRacker: true
 categories:
     - General
-metaTitle: "How to save important emails for future reference
+metaTitle: "How to save important emails for future reference"
 metaDescription: "When you need to save important emails, we recommend that you save them to your personal network storage (P drive)."
 ogTitle: "How to save important emails for future reference"
 ogDescription: "When you need to save important emails, we recommend that you save them to your personal network storage (P drive)."
