@@ -132,6 +132,7 @@ Clone your fork on your local machine:
       git fetch --all
       git rebase upstream/master
       git push origin master
+      ```
 
 2. Create a new branch for your blog.
 
@@ -289,16 +290,22 @@ Follow these steps to submit your post for publication:
 
     a. Add your new content and image files, if any:
     
-       `git add index.md`
-       `git add Picture1.png`
+       ```
+       git add index.md
+       git add Picture1.png
+       ```
        
     b. Commit the file:
     
-       `git commit -m "Created a post about how to take advantage of Salesforce to improve sales and customer management."`
+       ```
+       git commit -m "Created a post about how to take advantage of Salesforce to improve sales and customer management."
+       ```
        
     c. Push the change:
     
-       `git push upstream`
+       ```
+       git push upstream
+       ```
        
     d. In your web browser, navigate to **https://github.com/rackerlabs/technical-blog**. Log in if you are
        not already signed on.
@@ -320,7 +327,9 @@ Follow these steps to submit your post for publication:
    staging landing page, then paste the slug for your article (from the **index.md** metadata)
    at the end of the URL after `blog/`. For example:
    
-   `https://deploy-preview-399--docs-technical-blog.netlify.app/blog/take-advantage-of-saleforce/`
+   ```
+   https://deploy-preview-399--docs-technical-blog.netlify.app/blog/take-advantage-of-saleforce/
+   ```
    
 8. If you need to make any changes, modify the files in your local repo and push the changes up to the PR. Then,
    preview the article again.
