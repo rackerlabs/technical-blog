@@ -8,7 +8,7 @@ published: true
 authorIsRacker: true
 categories:
     - General
-metaTitle: "How to save important emails for future reference"
+metaTitle: "How to save important emails for future reference
 metaDescription: "When you need to save important emails, we recommend that you save them to your personal network storage (P drive)."
 ogTitle: "How to save important emails for future reference"
 ogDescription: "When you need to save important emails, we recommend that you save them to your personal network storage (P drive)."
@@ -16,14 +16,14 @@ slug: "new-post"
 
 ---
 
-Replace with short intro sentence or two.
+When you need to save important emails, we recommend that you save
+them to your personal network storage (P drive).
 
 <!--more-->
 
 ### Overview
 
-When you need to save important emails, we recommend that you save
-them to your personal network storage (P drive).  You should create a folder on
+You should create a folder on
 your P drive that you will use to store the emails.  Please read the following
 options you have when you need to save email(s), and then see below
 for detailed instructions.  You must use Outlook (not Outlook Web App) to follow these instructions.
@@ -68,7 +68,7 @@ more content
 
 ### Conclusion
 
-This post demonstrated.
+This post demonstrated stuff.
 
 <a class="cta red" id="cta" href="https://www.rackspace.com/data/databases">Learn more about our Database services.</a>
 
