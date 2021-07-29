@@ -66,7 +66,7 @@ This will create appsutil.zip in /admin/out.
 
 6. Copy or FTP the appsutil.zip file to the RDBMS ORACLE_HOME, then run the following
 
-<code> $unzip -o appsutil.zip <code>
+<code>$unzip -o appsutil.zip</code>
 
 7. Run adautocfg.sh on DB node
 
