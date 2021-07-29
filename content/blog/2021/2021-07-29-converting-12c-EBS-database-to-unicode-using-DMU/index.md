@@ -79,17 +79,25 @@ Perform the following steps to prepare to use the DMU:
  
 {{<img src="picture-1.png" title="" alt="">}}
  
+</br>
+ 
 6. Select the `Install the DMU repository` checkbox.
  
 {{<img src="picture-2.png" title="" alt="">}}
+ 
+</br>
  
 7. Click **Next**.
  
 {{<img src="picture-3.png" title="" alt="">}}
  
+</br>
+ 
 Click **Next** and then **Finish**.
  
 {{<img src="picture-4.png" title="" alt="">}}
+ 
+</br>
  
 The preceding message displays after the repository installs successfully.
  
@@ -101,13 +109,19 @@ Now scan the data dictionary and the application schemas:
  
 {{<img src="picture-5.png" title="" alt="">}}
  
+</br>
+ 
 2. Click **Next**:
  
 {{<img src="picture-6.png" title="" alt="">}}
  
+</br>
+  
 3. Click **Next** to change the number of scanning processes and the scan size to speed up the DMU scan.
  
 {{<img src="picture-7.png" title="" alt="">}}
+ 
+</br>
  
 4. Click **Finish**.
  
@@ -115,19 +129,27 @@ Now scan the data dictionary and the application schemas:
  
 {{<img src="picture-9.png" title="" alt="">}}
  
+</br>
+ 
 The following screenshot shows the scan in progress:
  
 {{<img src="picture-10.png" title="" alt="">}}
  
+</br>
+ 
 The following screenshot confirms the complete database scan:
  
 {{<img src="picture-11.png" title="" alt="">}}
+ 
+</br>
  
 ### 4. Cleanse sys schemas and application schemas
  
 After scanning, you need to look at the data using the **Database Scan Report** as illustrated in the following image:
  
 {{<img src="picture-12.png" title="" alt="">}}
+ 
+</br>
  
 Notice that your actual data shown in the DMU is in the following columns:
  
@@ -149,11 +171,15 @@ To perform bulk cleansing, perform the following steps:
  
 {{<img src="picture-13.png" title="" alt="">}}
  
+</br>
+ 
 ### 5. Convert the database
  
  After fixing all the issues, right-click on the Database connection, select the **Convert Database** option, and click **Convert**. 
  
 {{<img src="picture-14.png" title="" alt="">}}
+ 
+</br>
  
 Accept all the defaults by clicking the **Next**. The **Migration Status** tab also shows the conversion status when it completes.
  
@@ -161,9 +187,13 @@ Migration in progress:
  
 {{<img src="picture-15.png" title="" alt="">}}
  
+</br>
+ 
 Migration is complete as indicated by the **Status** panel:
  
 {{<img src="picture-16.png" title="" alt="">}}
+ 
+</br>
  
 ### 6. EBS-related post-migration steps
  
@@ -176,17 +206,17 @@ This section includes steps 3.1.4 through 3.3 from Doc ID 393861.1 Update Databa
 2. On the Apps tier, execute the following commands:
  
         $ ls $ORACLE_CONFIG_HOME/reports/Tk2Motif_AL32UTF8.rgb
-/u01/app/appdi/DEV/inst/apps/MKS_mksdbcs/ora/10.1.2/reports/Tk2Motif_AL32UTF8.rgb
+        /u01/app/appdi/DEV/inst/apps/MKS_mksdbcs/ora/10.1.2/reports/Tk2Motif_AL32UTF8.rgb
         $ ls $ORACLE_HOME/guicommon/tk/admin/Tk2Motif_UTF8.rgb /u01/app/appdi/DEV/apps/tech_st/10.1.2/guicommon/tk/admin/Tk2Motif_UTF8.rgb
         $ cd $ORACLE_CONFIG_HOME/reports/
         $ cp Tk2Motif_AL32UTF8.rgb $ORACLE_CONFIG_HOME/reports/Tk2Motif_AL32UTF8_backup.rgb
         $ grep -i fontMapCs Tk2Motif_AL32UTF8.rgb
-   !Tk2Motif*fontMapCs: iso8859-2=EE8ISO8859P2
-   Tk2Motif*fontMapCs: iso8859-1=UTF8
-         $ vi Tk2Motif_AL32UTF8.rgb
-         $ grep -i fontMapCs Tk2Motif_AL32UTF8.rgb
-   !Tk2Motif*fontMapCs: iso8859-2=EE8ISO8859P2
-   Tk2Motif*fontMapCs: iso8859-1=AL32UTF8
+        !Tk2Motif*fontMapCs: iso8859-2=EE8ISO8859P2
+        Tk2Motif*fontMapCs: iso8859-1=UTF8
+        $ vi Tk2Motif_AL32UTF8.rgb
+        $ grep -i fontMapCs Tk2Motif_AL32UTF8.rgb
+        !Tk2Motif*fontMapCs: iso8859-2=EE8ISO8859P2
+        Tk2Motif*fontMapCs: iso8859-1=AL32UTF8
  
 3. Execute the following command and verify **NLS_LANG** is in the Application env file:
  
