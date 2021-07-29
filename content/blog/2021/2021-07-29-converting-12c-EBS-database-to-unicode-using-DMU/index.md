@@ -157,7 +157,7 @@ To perform bulk cleansing, perform the following steps:
  
 Accept all the defaults by clicking the **Next**. The **Migration Status** tab also shows the conversion status when it completes.
  
-Migration in progress:
+Migration in progress: 
  
 {{<img src="Picture15.png" title="" alt="">}}
  
