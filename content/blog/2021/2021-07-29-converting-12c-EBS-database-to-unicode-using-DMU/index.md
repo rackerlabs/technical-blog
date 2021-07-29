@@ -77,19 +77,19 @@ Perform the following steps to prepare to use the DMU:
  
 5. Save the connection.
  
-{{<img src="Picture1.png" title="" alt="">}}
+{{<img src="picture-1.png" title="" alt="">}}
  
 6. Select the `Install the DMU repository` checkbox.
  
-{{<img src="Picture2.png" title="" alt="">}}
+{{<img src="picture-2.png" title="" alt="">}}
  
 7. Click **Next**.
  
-{{<img src="Picture3.png" title="" alt="">}}
+{{<img src="picture-3.png" title="" alt="">}}
  
 Click **Next** and then **Finish**.
  
-{{<img src="Picture4.png" title="" alt="">}}
+{{<img src="picture-4.png" title="" alt="">}}
  
 The preceding message displays after the repository installs successfully.
  
@@ -99,35 +99,35 @@ Now scan the data dictionary and the application schemas:
  
 1. When you right-click on the DB connection name, you see the following navigation list to select and scan the database:
  
-{{<img src="Picture5.png" title="" alt="">}}
+{{<img src="picture-5.png" title="" alt="">}}
  
 2. Click **Next**:
  
-{{<img src="Picture6.png" title="" alt="">}}
+{{<img src="picture-6.png" title="" alt="">}}
  
 3. Click **Next** to change the number of scanning processes and the scan size to speed up the DMU scan.
  
-{{<img src="Picture7.png" title="" alt="">}}
+{{<img src="picture-7.png" title="" alt="">}}
  
 4. Click **Finish**.
  
-{{<img src="Picture8.png" title="" alt="">}}
+{{<img src="picture-8.png" title="" alt="">}}
  
-{{<img src="Picture9.png" title="" alt="">}}
+{{<img src="picture-9.png" title="" alt="">}}
  
 The following screenshot shows the scan in progress:
  
-{{<img src="Picture10.png" title="" alt="">}}
+{{<img src="picture-10.png" title="" alt="">}}
  
 The following screenshot confirms the complete database scan:
  
-{{<img src="Picture11.png" title="" alt="">}}
+{{<img src="picture-11.png" title="" alt="">}}
  
 ### 4. Cleanse sys schemas and application schemas
  
 After scanning, you need to look at the data using the **Database Scan Report** as illustrated in the following image:
  
-{{<img src="Picture12.png" title="" alt="">}}
+{{<img src="picture-12.png" title="" alt="">}}
  
 Notice that your actual data shown in the DMU is in the following columns:
  
@@ -147,23 +147,23 @@ To perform bulk cleansing, perform the following steps:
  
 4. You need to clear all the warnings before proceeding to the conversion steps. Sometimes you need to open a service request (SR) to confirm some issue or data purge during cleansing.
  
-{{<img src="Picture13.png" title="" alt="">}}
+{{<img src="picture-13.png" title="" alt="">}}
  
 ### 5. Convert the database
  
  After fixing all the issues, right-click on the Database connection, select the **Convert Database** option, and click **Convert**. 
  
-{{<img src="Picture14.png" title="" alt="">}}
+{{<img src="picture-14.png" title="" alt="">}}
  
 Accept all the defaults by clicking the **Next**. The **Migration Status** tab also shows the conversion status when it completes.
  
 Migration in progress:   
  
-{{<img src="Picture15.png" title="" alt="">}}
+{{<img src="picture-15.png" title="" alt="">}}
  
 Migration is complete as indicated by the **Status** panel:
  
-{{<img src="Picture16.png" title="" alt="">}}
+{{<img src="picture-16.png" title="" alt="">}}
  
 ### 6. EBS-related post-migration steps
  
