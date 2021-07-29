@@ -286,22 +286,16 @@ Follow these steps to submit your post for publication:
 
     a. Add your new content and image files, if any:
     
-       ```bash
-       git add index.md
-       git add Picture1.png
-       ```
+         git add index.md
+         git add Picture1.png
        
     b. Commit the file:
     
-       ```bash
-       git commit -m "Created a post about how to take advantage of Salesforce to improve sales and customer management."
-       ```
+         git commit -m "Created a post about how to take advantage of Salesforce to improve sales and customer management."
        
     c. Push the change:
-    
-       ```bash
-       git push upstream
-       ```
+
+         git push upstream
        
     d. In your web browser, navigate to **https://github.com/rackerlabs/technical-blog**. Log in if you are
        not already signed on.
