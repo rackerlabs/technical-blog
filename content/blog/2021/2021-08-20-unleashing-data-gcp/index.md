@@ -111,16 +111,24 @@ All the above-described phases can be demonstrated with respect to the sample da
 Request a live demo: vijaykumar.jangamashetti@rackspace.com 
 
 Reference Links: 
+
 https://cloud.google.com/bigquery
+
 https://cloud.google.com/storage
+
 https://cloud.google.com/dataflow
+
 https://cloud.google.com/pubsub
+
 https://cloud.google.com/looker
+
 https://cloud.google.com/solutions/smart-analytics
 
 
 
-<a class="cta purple" id="cta" href="https://www.rackspace.com/data/databases">Learn more about our Database services.</a>
+<a class="cta purple" id="cta" href="https://www.rackspace.com/data/google-cloud-data">Learn more about our Google Cloud Data</a>
+
+<a class="cta purple" id="cta" href="https://www.rackspace.com/lp/gcp-data-discovery-workshop">Book your Google Cloud Data Discovery Workshop</a>
 
 Use the Feedback tab to make any comments or ask questions. You can also
 [start a conversation with us](https://www.rackspace.com/contact).
