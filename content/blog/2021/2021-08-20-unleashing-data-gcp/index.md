@@ -19,6 +19,7 @@ authorIsRacker: true
 categories:
     - General
     - GCP
+    - Data
 metaTitle: "Unleashing the superpowers of data with Google Cloud"
 metaDescription: "This article 
 aims to offer a phased approach starting from simple data analytics to complex data 
