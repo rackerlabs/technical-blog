@@ -112,7 +112,7 @@ All the above-described phases can be demonstrated with respect to the sample da
 
 Request a live demo: vijaykumar.jangamashetti@rackspace.com 
 
-References: cloud.google.com/bigquery, cloud.google.com/storage, cloud.google.com/dataflow, cloud.google.com/pubsub, cloud.google.com/looker, cloud.google.com/solutions/smart-analytics 
+References: cloud.google.com/bigquery, cloud.google.com/storage, cloud.google.com/dataflow, cloud.google.com/pubsub, cloud.google.com/looker, cloud.google.com/solutions/smart-analytics  
 
 <a class="cta purple" id="cta" href="https://www.rackspace.com/data/google-cloud-data">Learn more about our Google Cloud Data</a>
 
