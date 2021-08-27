@@ -3,13 +3,13 @@ layout: post
 title: "How Rackspace uses AWS Systems Manager for instance patching across multi-cloud and hybrid environments"
 date: 2021-08-27
 comments: true
-author: Ryan Walker, Tiffany Chen, Winnie Chen
+author: Winnie Chen, Tiffany Chen, Ryan Walker 
 authorAvatar: ''
 bio: ""
 published: true
 authorIsRacker: true
 categories:
-    - General
+    - AWS
 metaTitle: "How Rackspace uses AWS Systems Manager for instance patching across multi-cloud 
 and hybrid environments"
 metaDescription: "In this post, we explain how Rackspace uses AWS Systems Manager (SSM) 
