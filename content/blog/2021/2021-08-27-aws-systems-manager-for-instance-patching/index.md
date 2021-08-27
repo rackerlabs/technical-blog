@@ -3,7 +3,7 @@ layout: post
 title: "How Rackspace uses AWS Systems Manager for instance patching across multi-cloud and hybrid environments"
 date: 2021-08-27
 comments: true
-author:
+author: Ryan Walker, Tiffany Chen, Winnie Chen
 authorAvatar: ''
 bio: ""
 published: true
@@ -27,11 +27,7 @@ slug: "aws-systems-manager-for-instance-patching"
 ---
 
 Now that cloud technology has become ubiquitous, companies have many options for hosting 
-servers and building out solutions. 
-
-<!--more-->
-
-From the use of multiple cloud providers to bare metal devices to private cloud, or even 
+servers and building out solutions. From the use of multiple cloud providers to bare metal devices to private cloud, or even 
 to on-premises resources, <a href="https://www.rackspace.com/">Rackspace</a> engages with customers across a diverse portfolio of 
 providers. The customer’s structure can stem from a business need (for example, an interest 
 in diversifying their cloud presence). Or it might be due to the early stage of their 
@@ -39,6 +35,8 @@ migration to a cloud environment. The customer might be waiting for their on-pre
 contracts to end. No matter the reason, customers commonly ask the same question: How can 
 we consolidate our patching across multiple cloud platforms and hybrid and on-premises 
 environments? 
+
+<!--more-->
 
 In multi-platform situations, managing virtual machines (VMs) across each platform can be 
 tedious and time-consuming. In many cases, administrators must use Secure Shell (SSH) or 
@@ -100,8 +98,8 @@ Figure 1 shows the entire architecture:
 
 
 {{<img src="Picture1.png" title="" alt="Interaction between signed instance data, Rackspace Enrollment API, SSM enrollment workflow, Systems Manager, and more.">}}
-Figure 1: Centralized management of multi-cloud and multi-platform instances through 
-Rackspace and Systems Manager
+<i>Figure 1: Centralized management of multi-cloud and multi-platform instances through 
+Rackspace and Systems Manager</i>
 
 Next, Rackspace needed to devise a solution to properly handle managed instances from 
 different customers. One idea was to use a single AWS account to host managed instances 
@@ -122,12 +120,12 @@ To take advantage of consolidated management and patching, sign in to your Racks
 account at https://manage.rackspace.com and navigate to the VM Management portal to enroll. 
 
 {{<img src="Picture2.png" title="" alt="From the My Accounts menu, under Services, VM Management is highlighted. ">}}
-Figure 2: VM Management from Rackspace portal
+<1>Figure 2: VM Management from Rackspace portal</i>
 
 If you aren’t already enrolled, you will see the following:
 
 {{<img src="Picture3.png" title="" alt="The text on the page says there are no VMs on your account with VM Management. There is a Learn More About VM Management button on the page.">}}
-Figure 3: VM Management page for Rackspace account enrollment
+<i>Figure 3: VM Management page for Rackspace account enrollment</i>
 
 Choose the Learn More About VM Management button. Your Rackspace account team will contact 
 you to discuss your patching requirements and the onboarding process. In most cases, 
@@ -170,7 +168,7 @@ label defined what patch group this VM should be enrolled in, if it is not provi
 the VM will be enrolled in a default patch group.
 
 {{<img src="Picture4.png" title="" alt="The Create an instance page in Google Cloud Platform displays fields for name, labels, Region, zone, metadata, and more.">}}
-Figure 4: Create an instance in Google Cloud Platform
+<i>Figure 4: Create an instance in Google Cloud Platform</i>
 
 2.	The SSM Agent is installed on the instance and activated in the systems account. The 
 patch group defined in the “rackspace-addon-patching-patchgroup” label on the GCP VM is 
@@ -178,13 +176,13 @@ copied over to the Patch Group tag on the managed instance. The Patch Group tag 
 VM to a specific patch baseline that indicates what patches are installed.
 
 {{<img src="Picture5.png" title="" alt="SSM Agent">}}
-Figure 5: SSM Agent 
+<i>Figure 5: SSM Agent </i>
 
 {{<img src="Picture6.png" title="" alt="The Fleet Manager page of the Systems Manager console includes tabs for Managed instances and Settings. The Managed instances tab is selected and displays the instance ID, instance name, SSM Agent ping status (in this example, Online), operating system (Ubuntu), and SSM Agent version.">}}
-Figure 6: Fleet Manager in AWS Systems Manager of systems account
+<i>Figure 6: Fleet Manager in AWS Systems Manager of systems account</i>
 
 {{<img src="Picture7.png" title="" alt="The details page for the instance includes Instance overview and Tags sections.">}}
-Figure 7: Managed instance in Systems Manager console
+<i>Figure 7: Managed instance in Systems Manager console</i>
 
 3.	Rackspace’s automation sets up Systems Manager options like maintenance windows, targets, 
 inventory, and custom patch baselines on the AWS systems account. By default, custom patch 
@@ -195,25 +193,25 @@ created that correspond to the age of patches installed – “early” for patc
 patches that are 14 or more days old. 
 
 {{<img src="Picture8.png" title="" alt="On the Patch Manager page, the Patch groups tab is selected. The table displays patch baseline associations.">}}
-Figure 8: Patch baseline associations in the Systems Manager console 
+<i>Figure 8: Patch baseline associations in the Systems Manager console </i>
 
 
 {{<img src="Picture9.png" title="" alt="Under Maintenance windows, the table displays columns for Window ID, Name, State, and Next execution time.">}}
-Figure 9: Maintenance window in the Systems Manager console
+<i>Figure 9: Maintenance window in the Systems Manager console</i>
 
 
 {{<img src="Picture10.png" title="" alt="The Targets page for the window ID displays targets by ID, name, owner information, and more.">}}
-Figure 10: Targets in the Systems Manager console
+<i>Figure 10: Targets in the Systems Manager console</i>
 
 4.	The managed instance is displayed in Rackspace’s interface. You get a consolidated view of the instances and information, such as which patch was applied, its version, and so on.
 
 
 {{<img src="Picture11.png" title="" alt="Patching table displays provider, account name, instances, online instances, pending OS updates, pending agent updates, and run success.">}}
-Figure 11: Consolidated view of patching across platforms on Rackspace site
+<i>Figure 11: Consolidated view of patching across platforms on Rackspace site</i>
 
 
 {{<img src="Picture11.png" title="" alt="Updates table displays install status, description, classification, name, severity, and install time.">}}
-Figure 12: Detailed view of patch activity per instance on Rackspace site
+<i>Figure 12: Detailed view of patch activity per instance on Rackspace site</i>
 
 
 ### Conclusion
