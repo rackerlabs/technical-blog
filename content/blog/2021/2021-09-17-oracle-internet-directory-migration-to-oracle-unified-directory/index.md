@@ -9,14 +9,14 @@ bio: ""
 published: false
 authorISRacker: true
 categories:
- -Oracle
- metaTitle: "Oracle Internet Directory Migration to Oracle Unified Directory" 
- metaDescription: "The blog introduces Oracle Internet Directory (OID) migration to Oracle Unified Directory (OUD) and third-party directory servers."
- ogTitle: "Oracle Internet Directory Migration to Oracle Unified Directory"
- ogDescription: The blog introduces Oracle Internet Directory (OID) migration to Oracle Unified Directory (OUD) and third-party directory servers."
- slug: "oracle-internet-directory-migration-to-oracle-unified directory"
-
- ---
+ - Oracle
+metaTitle: "Oracle Internet Directory Migration to Oracle Unified Directory" 
+metaDescription: "The blog introduces Oracle Internet Directory (OID) migration to Oracle Unified Directory (OUD) and third-party directory servers."
+ogTitle: "Oracle Internet Directory Migration to Oracle Unified Directory"
+ogDescription: The blog introduces Oracle Internet Directory (OID) migration to Oracle Unified Directory (OUD) and third-party directory servers."
+slug: "oracle-internet-directory-migration-to-oracle-unified directory"
+---
+ 
  **Oracle Internet Directory** is a Lightweight Directory Access Protocol (LDAP) server which uses external oracle database to store the data and provides single sign-on solutions for Oracle Applications.
 
 •	OID provides high performance for large applications.
@@ -44,21 +44,22 @@ There are two approaches for migrating OID to OUD:
 Pre Step
 
 You need to enable External change log as a pre-step to proceed with migration. The External Change log (ECL) is available by default on any server instance that includes both Directory server and Replication server. The ECL is enabled when directory server is configured as part of replication topology during installation, or you can configure replication by running **dereplication** command.
+
 Example:
 
-`$ dsreplication enable-changelog -h localhost -p 4444 -D "cn=directory manager" -j pwd-file -r 8989 -b dc=example,dc=com -X -n`
+    $ dsreplication enable-changelog -h localhost -p 4444 -D "cn=directory manager" -j pwd-file -r 8989 -b dc=example,dc=com -X -n
 
 Verify change log is enabled, by running below command.
 
-`ldapsearch -h <HOSTNAME> -p <PORT> -D "cn=<DM_ADMIN>" -w <PASSWORD> -s base -b "" "objectclass=*" namingContexts
-version: 1
-dn:
-namingContexts: cn=changelog
-namingContexts: <SUFFIX_DN>`
+   ldapsearch -h <HOSTNAME> -p <PORT> -D "cn=<DM_ADMIN>" -w <PASSWORD> -s base -b "" "objectclass=*" namingContexts
+   version: 1
+   dn:
+   namingContexts: cn=changelog
+   namingContexts: <SUFFIX_DN>
 
-DIP and OID are configured and deployed 
+**DIP** and **OID** are configured and deployed.
 
-![](Picture2.png)
+{{<img src="Picture2.png" title="" alt="">}}
 
 **Enable SSL on OID**
 
@@ -66,15 +67,17 @@ DIP-OID synchronization is possible with SSL mode only, you need to create OID w
 
 _Steps to create OID Self signed Certificate:_
 
-![](Picture3.png)
+{{<img src="Picture3.png" title="" alt="">}}
 
 Export Trusted certificate and copy it to Oracle Wallet manager. 
-![](Picture4.png)
+
+{{<img src="Picture4.png" title="" alt="">}}
 
 Create OID Wallet from OWM and copy trusted certificate to wallet
-![](Picture5.png)
 
-![](Picture6.png)
+{{<img src="Picture5.png" title="" alt="">}}
+
+{{<img src="Picture6.png" title="" alt="">}}
 
 
 Bind to OID1 in SSL mode using below command.
@@ -123,13 +126,13 @@ disconnect()`
 You need to create Suffix_dn entry in OID to populate OUD data.  It is very important to choose which suffix to create and it will be directly used during synchronization profile management.
 Select parent directory as shown in the following screenshot.
 
-![](Picture7.png)
+{{<img src="Picture7.png" title="" alt="">}}
 
 _Create Synchronization profile_
 
 Go to Menu > select OID in Identity and Access > OID Administration and select Synchronization profile as shown in the following image.
 
-![](Picture8.png)
+{{<img src="Picture8.png" title="" alt="">}}
 
 Create below 2 Synchronization profiles.
 
@@ -137,20 +140,20 @@ OUD > OID: OUDImport
 
 OID > OUD: OUDExport
 
-![](Picture9.png)
+{{<img src="Picture9.png" title="" alt="">}}
 
 You need to decide whether OID should be used as a source or destination while creating synchronization profile.
 
-![](Picture10.png)
+{{<img src="Picture10.png" title="" alt="">}}
 
 Use host name and port as OID hostname and port number as OID is being used as a source.
 Once above mapping is complete, OUDImport /OUDExport maps “ou=people, dc=people,dc=com” on each side as reflected in the following screenshot.
 
-![](Picture11.png)
+{{<img src="Picture11.png" title="" alt="">}}
 
 Once mapping is enabled, by default the following attributes get automatically mapped.
 
-![](Picture12.png)
+{{<img src="Picture11.png" title="" alt="">}}
 
 **Bootstrapping data from OID to OUD**
 
@@ -223,11 +226,12 @@ _Syntax for Schemasync_
 
 Once the above command is executed, verify DN details in the Destination directory server.
 
-**Conclusion**
+### Conclusion
 
 The methods show in this post to migrate existing OID store to OUD to support large applications to enable single sign-on solutions. OUD provides high performance in users authentication process as LDAP server stores date. Migration steps are very straightforward to implement in any type of applications.
 
-**Reference Links** :
+**Reference Links**
+ 
 https://docs.oracle.com/cd/E48246_01/reference.1111/e10035/syntax_odip.htm#BEHCFFGJ
 
 OUD - Synchronizing OUD With OID Using DIP (OID Used as a Backend Store) (Doc ID 1510011.1)
