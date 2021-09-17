@@ -19,13 +19,13 @@ slug: "oracle-internet-directory-migration-to-oracle-unified directory"
  
  **Oracle Internet Directory** is a Lightweight Directory Access Protocol (LDAP) server which uses external oracle database to store the data and provides single sign-on solutions for Oracle Applications.
 
-•	OID provides high performance for large applications.
-
-•	OID is the most secure directory services providing security at each level from the data in transit to storage or backup.
 
 
 <!--more-->
 
+•	OID provides high performance for large applications.
+
+•	OID is the most secure directory services providing security at each level from the data in transit to storage or backup.
 •	It provides Storage and Synchronization services.
 
 Oracle Unified Directory is an Oracle next generation all in one directory solution with storage, proxy, synchronizing and virtualization capabilities. This LDAP server is completely written in JAVA for large supports scalable deployments to provide high performance.
