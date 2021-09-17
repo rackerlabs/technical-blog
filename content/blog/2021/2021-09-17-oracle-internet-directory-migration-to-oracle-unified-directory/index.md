@@ -23,11 +23,12 @@ slug: "oracle-internet-directory-migration-to-oracle-unified directory"
 
 •	OID is the most secure directory services providing security at each level from the data in transit to storage or backup.
 
+
+<!--more-->
+
 •	It provides Storage and Synchronization services.
 
 Oracle Unified Directory is an Oracle next generation all in one directory solution with storage, proxy, synchronizing and virtualization capabilities. This LDAP server is completely written in JAVA for large supports scalable deployments to provide high performance.
-<!--more-->
-
 You can use OUD for completing the following:
 
 •	LDAP Directory server to store data.
