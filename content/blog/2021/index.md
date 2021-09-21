@@ -3,7 +3,7 @@ layout: post
 title: "Cloning a database using the DBCA command in Oracle 19c"
 date: 2021-09-23
 comments: true
-author: Oliver Fletcher
+author: Santosh Kumar
 authorAvatar: <ask2santosh>
 bio: ""
 published: true
