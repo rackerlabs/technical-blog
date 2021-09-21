@@ -40,10 +40,10 @@ Pre-steps to be completed include:-
 1.	Install Oracle Database 19c in the target host, or you can create RDBMS19c tar from source and untar in the target node. Or you can use rsync command from source to target to make the RDBMS same as the source.
 2.	Create xml file to run perl adclonectx.pl and provide details. After 19c RDBMS install/create, you need to create context file for target DB node. Following is the command to create the context file in the target DB node. 
 
-`[oraki@nglusnj bin]$ perl adclonectx.pl \
-> contextfile=/u02/oracle/KCON/product/19.3/appsutil/NYAPP_nglusnj.xml
-                     Copyright (c) 2011, 2015 Oracle Corporation
-                        Redwood Shores, California, USA
+`[oraki@nglusnj bin]$ perl adclonectx.pl \`
+`> contextfile=/u02/oracle/KCON/product/19.3/appsutil/NYAPP_nglusnj.xml`
+                     `Copyright (c) 2011, 2015 Oracle Corporation`
+                        `Redwood Shores, California, USA`
 
                         Oracle E-Business Suite Rapid Clone
 
