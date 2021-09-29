@@ -19,7 +19,7 @@ slug: " cloning-a-database-using-the-DBCA-command-in-Oracle-19c"
 
 ---
 
-"This blog introduces the methods on how to use Database Configuration Assistant (DBCA), a new feature in Oracle 19c to clone a remote pluggable database (PDB) into a container database (CDB) without taking backup of the source database."
+This blog introduces the methods on how to use Database Configuration Assistant (DBCA), a new feature in Oracle 19c to clone a remote pluggable database (PDB) into a container database (CDB) without taking backup of the source database.
 
 <!--more-->
 
