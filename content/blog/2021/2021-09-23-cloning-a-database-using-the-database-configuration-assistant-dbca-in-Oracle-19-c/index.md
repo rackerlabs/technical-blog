@@ -3,8 +3,8 @@ layout: post
 title: "Cloning a database using the DBCA command in Oracle 19c"
 date: 2021-09-23
 comments: true
-author: Oliver Fletcher
-authorAvatar: <ask2santosh>
+author: Santosh Kumar
+authorAvatar: https://www.gravatar.com/avatar/0d3c022f6dc5245d2602222d67cf86fa
 bio: ""
 published: true
 authorisRacker: true
@@ -12,7 +12,7 @@ categories:
 - Oracle
 - Database
 metaTitle: "Cloning a database using the DBCA command in Oracle 19c"
-metaDescription: "This blog introduces the methods on how to use Database Configuration Assistant (DBCA), a new feature in Oracle 19c to clone a remote pluggable database (PDB) into a container database (CDB) without taking backup of the source database."
+metaDescription: This blog introduces the methods on how to use Database Configuration Assistant (DBCA), a new feature in Oracle 19c to clone a remote pluggable database (PDB) into a container database (CDB) without taking backup of the source database.
 ogTitle: "Cloning a database using the DBCA command in Oracle 19c"
 ogDescription: "This blog introduces the methods on how to use Database Configuration Assistant (DBCA), a new feature in Oracle 19c to clone a remote pluggable database (PDB) into a container database (CDB) without taking backup of the source database."
 slug: " cloning-a-database-using-the-DBCA-command-in-Oracle-19c" 
@@ -202,11 +202,6 @@ With this the cloning is complete. You need to validate and match the DBF file f
 
 ### Conclusion
 
-Cloning PDBs Using DBCA, a new feature in Oracle 19c in silent Mode is the simplest way to clone the database in a minimal time. You are not required to take backup of the source database and copy that backup pieces to the target host for cloning which also helps save time. 
-Important links:-
-
-https://docs.oracle.com/en/database/oracle/oracle-database/19/errmg/DBT-00001.html#GUID-05C1A5C2-217B-4489-AFA7-EBF3CCB2578A   >>>  For Error.
-
-https://docs.oracle.com/en/database/oracle/oracle-database/19/admin/creating-and-configuring-an-oracle-database.html#GUID-6EDDC43D-9BD6-4096-8192-7E548B826360  >> For Syntax and Parameters
+Cloning PDBs Using DBCA, a new feature in Oracle 19c in silent mode is the simplest way to clone the database in a minimal time. You are not required to take backup of the source database and copy that backup pieces to the target host for cloning which also helps save time. 
 
 
