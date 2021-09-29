@@ -94,14 +94,15 @@ select * from dba_indexes where index_type='DOMAIN' and
 
    ### 11. Create the export parameter file
 Copy $AU_TOP/patch/115/import/auexpdp.dat from the App node and edit as per the requirement.
-`==> diff auexpdp.dat auexpdp.dat.orig <<  /u01/oracle/patches/12c_db/backup/expimp
-8c8`
+
+`diff auexpdp.dat auexpdp.dat.orig` <<  `/u01/oracle/patches/12c_db/backup/expimp`
+`8c8`
 `< filesize=5368709120`
 ---
-> filesize=1048576000
-12,13d11
-< PARALLEL=5
-< EXCLUDE=STATISTICS
+> `filesize=1048576000`
+`12,13d11`
+`< PARALLEL=5`
+`< EXCLUDE=STATISTICS`
 
 Create directory as required.
 
@@ -110,13 +111,17 @@ SQL> `create` or replace directory `dmpdir as '/u01/oracle/patches/12c_db/backup
 Directory created.
 ### 12. Ensure no patching cycle is active.
 
->Node Name       Node Type  Phase           Status          Started              Finished             Elapsed
---------------- ---------- --------------- --------------- -------------------- -------------------- ------------
->Appnode     master     PREPARE         COMPLETED       2017/05/20 23:01:31  2017/05/20 23:24:45  0:23:14
-                           APPLY           COMPLETED       2017/05/20 23:53:09  2017/05/20 23:53:39  0:00:30
-                           FINALIZE        COMPLETED       2017/05/20 23:55:55  2017/05/20 23:56:14  0:00:19
-                           CUTOVER         COMPLETED       2017/05/20 23:58:57  2017/05/21 00:09:50  0:10:53
-                           CLEANUP         COMPLETED       2017/05/21 01:59:13  2017/05/21 01:59:44  0:00:31
+Node Name       Node Type  Phase           Status          Started              Finished             Elapsed
+------------------------------------------------------------------------------ 
+`Appnode     master     PREPARE         COMPLETED`       
+`2017/05/20 23:01:31  2017/||05/20 23:24:45  0:23:14`
+` APPLY           COMPLETED`       
+`2017/05/20 23:53:09  2017/05/20 23:53:39  0:00:30`
+`FINALIZE        COMPLETED       2017/05/20 23:55:55`
+`2017/05/20 23:56:14  0:00:19`
+`CUTOVER         COMPLETED`
+`2017/05/20 23:58:57  2017/05/21 00:09:50  0:10:53`
+`CLEANUP         COMPLETED       2017/05/21 01:59:13  2017/05/21 01:59:44  0:00:31`
 
 ### 13.	Shut down the application server processes
 
@@ -136,12 +141,14 @@ Directory created.
 
 `SQL> select OWNER, AW_NAME ,PAGESPACES from dba_aws where owner != 'SYS' order by 1,2;`
 
->OWNER           AW_NAME         PAGESPACES
+
+>`OWNER           AW_NAME         PAGESPACES`
 --------------- --------------- ----------
->APPS            ODPCODE               1123
-APPS            XWDEVKIT              1106
-APPS            XWDEVKIT_BACKUP       1106
-FPA             FPAPJP                 505
+`>APPS            ODPCODE               1123`
+
+`APPS            XWDEVKIT              1106`
+`APPS            XWDEVKIT_BACKUP       1106`
+`FPA             FPAPJP                 505`
 
 2. SQL> create or replace directory AW_DIR as `'/u01/oracle/patches/12c_db/backup/MGR_DIR';`
 
@@ -247,12 +254,16 @@ PL/SQL procedure successfully completed.
 select owner, object_name, object_type from dba_objects where status <> 'VALID';
 
 
-SQL> select owner, object_name, object_type,status from dba_objects where status <> 'VALID' and object_name like '%OLAP%';
-SYS             OLAPIBOOTSTRAP                 FUNCTION            INVALID
-SYS             OLAPIHANDSHAKE                 FUNCTION            INVALID
-PUBLIC          OLAPIBOOTSTRAP                 SYNONYM             INVALID
-PUBLIC          OLAPIHANDSHAKE                 SYNONYM             INVALID
-APPS            PA_OLAP_PVT                    PACKAGE BODY        INVALID
+`SQL> select owner, object_name, object_type,status from dba_objects where status` ` <> 'VALID' and object_name like '%OLAP%';`
+`SYS             OLAPIBOOTSTRAP                 FUNCTION            INVALID`
+
+`SYS             OLAPIHANDSHAKE                 FUNCTION            INVALID`
+
+`PUBLIC          OLAPIBOOTSTRAP                 SYNONYM             INVALID`
+
+`PUBLIC          OLAPIHANDSHAKE                 SYNONYM             INVALID`
+
+`APPS            PA_OLAP_PVT                    PACKAGE BODY        INVALID`
 
 `SQL> drop FUNCTION sys.OLAPIBOOTSTRAP;`
 
@@ -274,9 +285,9 @@ Synonym dropped.
 
 Package body dropped.
 
-SQL> select owner, object_name, object_type,status from dba_objects where status <> 'VALID' and object_name like '%OLAP%';
+`SQL> select owner, object_name, object_type,status from dba_objects where status` ` <> 'VALID' and object_name like '%OLAP%'; `
 
-no rows selected
+`no rows selected`
 
 >> Execute the following steps on target 12c 64 bit database where are you are performing the upgrade.
 
@@ -440,7 +451,7 @@ If an Oracle Wallet is used:
 SQL> alter system set encryption wallet open identified by "<strong_password>";
 alter database open;
 
-select * from v$encryption_wallet;
+`select * from v$encryption_wallet;`
 <img src=Picture2.png title="" alt="">
 
 ### 28. Copy all the database preparation scripts to target Oracle home to setup sys/system schemas.
