@@ -4,7 +4,7 @@ title: "Upgrade Database to 12C using TDE Tablespace Encryption"
 date: 2021-09-29
 comments: true
 author: Naveen Kumar
-authorAvatar: "https://gravatar.com/avatar/70c362bf85dfd3416e8cecdc9cd93460"
+authorAvatar: https://gravatar.com/avatar/70c362bf85dfd3416e8cecdc9cd93460
 bio: ""
 published: true
 authorisRacker: true
