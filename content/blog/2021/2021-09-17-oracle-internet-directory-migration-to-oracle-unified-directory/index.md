@@ -7,7 +7,7 @@ comments: true
 author: Praveen Muthyala
 authorAvatar: 'https://s.gravatar.com/avatar/abbeca3f6a8205c81f5ccc5e1b806c7b?s=80'
 bio: ""
-published: false
+published: true
 authorISRacker: true
 categories:
  - Oracle
