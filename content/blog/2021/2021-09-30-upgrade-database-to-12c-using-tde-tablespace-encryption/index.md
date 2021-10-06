@@ -5,7 +5,7 @@ date: 2021-10-01
 comments: true
 author: Naveen Kumar
 authorAvatar: 
-bio: ""
+bio: "https://www.gravatar.com/avatar/70c362bf85dfd3416e8cecdc9cd93460"
 published: true
 authorisRacker: true
 categories: 
