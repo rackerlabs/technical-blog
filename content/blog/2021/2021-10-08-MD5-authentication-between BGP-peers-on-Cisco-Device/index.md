@@ -24,7 +24,7 @@ The Border Gateway Protocol (BGP) is a standardized exterior gateway protocol de
 <!--more-->
 
 ### Introduction 
-BGP peers can be configured with MD5 algorithm (introduced in RFC 2385) which support routing authentication. When MD5 authentication is enabled, it computes an MD5 cryptographic hash over the TCP “pseudo header”, which includes the IP addresses used, the BGP packet carried in the TCP segment and a secret password. The resulting MD5 hash is then put in a TCP option in the TCP header and the packet is sent on its way. (The password isn’t transmitted.) The other side performs the same MD5 calculation and checks the result against the MD5 hash in the TCP header. If the two MD5 hashes are same, then we can be reasonably sure of two things:
+BGP peers can be configured with an MD5 algorithm (introduced in RFC 2385) which support routing authentication. When MD5 authentication is enabled, it computes an MD5 cryptographic hash over the TCP “pseudo header”, which includes the IP addresses used, the BGP packet carried in the TCP segment and a secret password. The resulting MD5 hash is then put in a TCP option in the TCP header and the packet is sent on its way. (The password isn’t transmitted.) The other side performs the same MD5 calculation and checks the result against the MD5 hash in the TCP header. If the two MD5 hashes are same, then we can be reasonably sure of two things:
 
 1.	The sender of the packet also knows the secret password
 2.	The TCP segment and its contents weren’t modified during transit
