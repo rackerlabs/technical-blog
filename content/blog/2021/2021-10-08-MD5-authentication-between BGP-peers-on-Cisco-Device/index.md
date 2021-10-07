@@ -15,7 +15,7 @@ metaTitle: "MD5 Authentication Between BGP Peers on Cisco Device"
 metaDescription: "This blog explains the Border Gateway Protocol which is a standardized exterior protocol designed to exchange routing information across autonomous systems (AS) on the Internet."
 ogTitle: "MD5 Authentication Between BGP Peers on Cisco Device"
 ogDescription: "This blog explains the Border Gateway Protocol which is a standardized exterior protocol designed to exchange routing information across autonomous systems (AS) on the Internet"
-slug: "md5-authentication-between-bgp-oeers-on-cisco-device" 
+slug: "md5-authentication-between-bgp-peers-on-cisco-device" 
 
 ---
 
