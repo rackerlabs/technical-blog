@@ -196,4 +196,4 @@ Similarly, if the two routers have different passwords configured, the following
 
 ### _Conclusion_ 
 By following the above steps, you can easily configure BGP with the MD5 authentication. 
-However, you should always implement other security & compliance mechanism as a layered structure to strengthen the overall network security.
+However, you should always implement other security & compliance mechanisms as a layered structure to strengthen the overall network security.
