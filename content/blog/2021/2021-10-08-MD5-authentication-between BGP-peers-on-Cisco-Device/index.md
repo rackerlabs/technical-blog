@@ -31,7 +31,7 @@ BGP peers can be configured with an MD5 algorithm (introduced in RFC 2385) which
 If any attacker sends spoofed TCP reset packets, the MD5 hash will be missing, or it will be incorrect. The router simply ignores those packets and the BGP session is unaffected.
 
 ### Overview
-There are few steps that need to be performed to complete this activity. Such as, creating network topology, configure hostname, configure interface IP, Configure External Border Gateway Protocol (EBGP)between Site A & site B, configure MD5 authentication, verification, and troubleshooting.
+There are a few steps that need to be performed to complete this activity. Such as, creating network topology, configure hostname, configure interface IP, Configure External Border Gateway Protocol (EBGP)between Site A & site B, configure MD5 authentication, verification, and troubleshooting.
 ### Topology
 <img src=Picture1.jpg title="" alt="">
 
