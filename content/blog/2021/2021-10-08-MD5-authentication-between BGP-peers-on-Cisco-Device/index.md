@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "MD5 Authentication Between BGP Peers on Cisco Device"
-date: 2021-10-08
+date: 2021-10-07
 comments: true
 author: Mayukh Mandal
 authorAvatar: https://www.gravatar.com/avatar/35e95902333a1613f6bc516a411d8ee3
