@@ -19,13 +19,12 @@ slug: "deception-technology–the-new-frontier-of-defense-against-cyberthreats"
 
 ---
 
-### Introduction to Deception Technology concept
 Deception technology is a new and exciting frontier for cyber resilience against bad actors and cyber threats.
 
 <!--more-->
 
-### Introduction to Deception Technology concept
-Deception technology is a new and exciting frontier for cyber resilience against bad actors and cyber threats. This agent-less technology is designed to prevent malware attacks and actual human hackers from entering the network, with early detection, continuous interaction with the bad actor while sending reports in real-time.
+### Introduction to the Deception Technology concept
+Deception technology is a new technology in cybersecurity against bad actors and cyber threats. This agent-less technology is designed to prevent malware attacks and actual human hackers from entering the network, with early detection, continuous interaction with the bad actor while sending reports in real-time.
 
 ### How does the technology work?
 Imagine a bad actor trying to hack into a secure network of a large financial institution (not quite fictional, because these incidents happen all the time). They’ve used some password hacking or employed a brute force tool to break into the network. They plant user agents to connect to the host machine, and lie in wait, to connect to one or more host users, preferably one with elevated access permissions and rights. If they are successful in connecting to the host agents within the network, they can easily carry out the planned attack. 
