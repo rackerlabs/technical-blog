@@ -55,7 +55,7 @@ These vulnerabilities of the listener also extend to other Oracle products using
 
 #### Listener Overview
 
-The _lsnrctl_ is the tool for starting and stopping the listener process (tnslsnr). _tnslnsr_ starts and verifies the _listener.ora_ and _sqlnet.ora_ files for port numbers and database service names. The _tnslnsr_ processes starts with a binary owner, usually the "ORACLE" account on UNIX or Linux. 
+The _lsnrctl_ is the tool for starting and stopping the listener process (tnslsnr). _tnslnsr_ starts and verifies the _listener.ora_ and _sqlnet.ora_ files for port numbers and database service names. The _tnslnsr_ processes starts with a binary owner, usually the "Oracle" account on UNIX or Linux. 
 
 #### Steps to secure Oracle Listener-
 
@@ -89,7 +89,7 @@ The _lsnrctl_ is the tool for starting and stopping the listener process (tnslsn
 
 ### Disable Default Listener
 
-: You should give a unique name to the Database instance and avoid using the default name “Listener” as the name.
+You should give a unique name to the Database instance and avoid using the default name “Listener” as the name.
 
 An additional step is to create a dope Listener named ‘listener’ by following the steps explained. This configuration will give errors and not allow a Listener named ‘listener’ from starting. 
 
