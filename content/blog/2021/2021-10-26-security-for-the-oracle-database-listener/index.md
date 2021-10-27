@@ -29,7 +29,7 @@ The Oracle Database listener is a module that connects an instance of the Oracle
 
 The Oracle Database Listener module is vital for database operations. Security of the Database Listener is a critical issue. The security of the entire database is dependent on the security of the listener because the Database Listener allows a user to login into the database and is configured in a different manner than the Oracle database. This, therefore, centers the security of the database on the Listener and is dependent on it.
 
-Previous versions of the Oracle database (prior to version 10g) had reported security vulnerabilities with the database listener. However, the newer versions (11g and 12c) had many settings changed, to ensure that the listener was more secure. 
+Previous versions of the Oracle database (prior to version 10g) had reported security vulnerabilities with the database listener. However, the settings in the newer versions (11g and 12c) have been changed to ensure that the listener is more secure.
 
 ### Security Attacks
 
@@ -55,7 +55,7 @@ These vulnerabilities of the listener also extend to other Oracle products using
 
 #### Listener Overview
 
-The _lsnrctl_ is the tool for starting and stopping the listener process (tnslsnr). _tnslnsr_ starts and verifies the _listener.ora_ and _sqlnet.ora_ files for port numbers and database service names. The _tnslnsr_ processes starts with a binary owner, usually the "oracle" account on UNIX or Linux. 
+The _lsnrctl_ is the tool for starting and stopping the listener process (tnslsnr). _tnslnsr_ starts and verifies the _listener.ora_ and _sqlnet.ora_ files for port numbers and database service names. The _tnslnsr_ processes starts with a binary owner, usually the "ORACLE" account on UNIX or Linux. 
 
 #### Steps to secure Oracle Listener-
 
@@ -89,7 +89,7 @@ The _lsnrctl_ is the tool for starting and stopping the listener process (tnslsn
 
 ### Disable Default Listener
 
-Do not name the Listener ‘Listener’, use a unique name as Database instance name.
+: You should give a unique name to the Database instance and avoid using the default name “Listener” as the name.
 
 An additional step is to create a dope Listener named ‘listener’ by following the steps explained. This configuration will give errors and not allow a Listener named ‘listener’ from starting. 
 
@@ -179,7 +179,7 @@ VNCR should not be unbalanced with Valid Node Checking and is the replacement of
 ### Block SQL*Net on Firewalls and Isolate on Network
 The important recommendation for database security is to reduce physical access to the database. SQL*Net traffic also should not go through firewalls unless it is really required. Firewall filters must be made to only pass SQL*Net traffic from known application and web servers. SQL*Net connections from application servers in the Load balancer should be permitted only to access mentioned database servers.
 
-Few applications must need direct access to the database through SQL*Net connections. If applications really require direct SQL*Net access, setup firewall filters based on a host and port number.
+Few applications require direct access to the database through SQLNet connections. For such applications, setup firewall filters based on a host and port number.
 
 ### Remove Unused Services
 If _listener.ora_ files are copied between instances, then the copied files may have old and useful entries. Validate all services in the listener.ora to conform if they are used. Remove services not actively used.
