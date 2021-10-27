@@ -27,7 +27,7 @@ The Oracle Database listener is a module that connects an instance of the Oracle
 
 ### Why protect the database listener?
 
-The Oracle Database Listener module is vital for database operations. Security of the Database Listener is a critical issue. The security of the entire database is dependent on the security of the listener because the Database Listener allows a user to login into the database and is configured in a different manner than the Oracle database. This, therefore, centers the security of the database on the Listener and is dependent on it.
+The Oracle Database Listener module is vital for database operations. Maintaining the security of the Database Listener is a critical issue. The security of the entire database is dependent on the security of the listener because the Database Listener allows a user to login into the database and is configured in a different manner than the Oracle database. This, therefore, centers the security of the database on the Listener and is dependent on it.
 
 Previous versions of the Oracle database (prior to version 10g) had reported security vulnerabilities with the database listener. However, the settings in the newer versions (11g and 12c) have been changed to ensure that the listener is more secure.
 
