@@ -48,7 +48,7 @@ Now, let's see the logic behind this program. I have created a flow diagram for 
 
 Image 1: Flow Diagram of logic (Designed via draw.io)
 
-_**Note_: Email IDs of the users will be captured from user data (Tables: USR21 & ADR6)
+_**Note_: Email IDs  of the users will be captured from user data (Tables: USR21 & ADR6)
 In-case email id is not maintained in user data, email will be sent to the person running this program.
 
 
