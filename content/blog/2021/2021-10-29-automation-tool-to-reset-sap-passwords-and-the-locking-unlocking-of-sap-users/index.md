@@ -4,8 +4,8 @@ title: "Automation Tool to reset SAP passwords and the locking/unlocking of SAP 
 date: 2021-10-29
 comments: true
 author: Akash Jain
-authorAvatar: ''
-bio: ""
+authorAvatar: 'https://www.gravatar.com/avatar/8fe4f5baf432276890bb9446b77ca758'
+bio: "Agile, results-oriented consultant with 11+ years of development and team management experience in providing integrated business solutions to diverse clients globally. Love to do singing and sketching in my free time."
 published: true
 authorIsRacker: true
 categories:
