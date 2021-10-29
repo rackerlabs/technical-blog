@@ -73,7 +73,7 @@ To trigger emails, CL_BCS class is used.
 
 ### Email Structure:
 
-<img src=Picture2.png title"" alt "">
+<img src="Picture2.png" title="" alt="">
 
 Image 2: Email structure (Designed via draw.io)
 
