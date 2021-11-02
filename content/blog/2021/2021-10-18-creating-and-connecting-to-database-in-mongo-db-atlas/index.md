@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Creating and connecting to a database in MongoDB Atlas"
-date: 2021-10-18
+date: 2021-11-02
 comments: true
 author: D.V. Prakash
 authorAvatar: ''
