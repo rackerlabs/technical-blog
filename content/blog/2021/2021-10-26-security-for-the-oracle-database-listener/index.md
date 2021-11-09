@@ -4,7 +4,7 @@ title: "Security for Oracle Database Listener"
 date: 2021-10-26
 comments: true
 author: Ganesh Chikkala
-authorAvatar: 'https://secure.gravatar.com/avatar/23e09164b925d83e64435b6a39bcf136'
+authorAvatar: 'https://secure.gravatar.com/avatar/834ffcd8c692ca9fd16ac51740f97020'
 bio: "I am an Oracle Application DBA, Oracle DBA and Cloud DBA. I’ve completed Oracle OCA, OCP, and cloud certifications."
 published: true
 authorIsRacker: true
