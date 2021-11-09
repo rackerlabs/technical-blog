@@ -4,13 +4,12 @@ title: "Configuring TDE with AlwaysOn Availability Group"
 date: 2021-11-09
 comments: true
 author: Rachamallu Jayaprakash Reddy
-authorAvatar:'https://secure.gravatar.com/avatar/6af0bef05e6a7e43b108c62b13127952' 
+authorAvatar:'' 
 bio: ""
 published: true
 authorisRacker: true
 categories: 
 - SQL Server
-- Database
 metaTitle: "Configuring TDE with AlwaysOn Availability Group"
 metaDescription: "This blog demonstrates the detailed steps needed to set up Transparent Data Encryption with AlwaysOn Availability Group."
 ogTitle: "Configuring TDE with AlwaysOn Availability Group"
