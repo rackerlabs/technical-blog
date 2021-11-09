@@ -4,13 +4,12 @@ title: "Configuring TDE with AlwaysOn Availability Group"
 date: 2021-11-09
 comments: true
 author: Rachamallu Jayaprakash Reddy
-authorAvatar:'https://secure.gravatar.com/avatar/6af0bef05e6a7e43b108c62b13127952' 
+authorAvatar:'' 
 bio: ""
 published: true
 authorisRacker: true
 categories: 
-- SQL Server
-- Database
+- General
 metaTitle: "Configuring TDE with AlwaysOn Availability Group"
 metaDescription: "This blog demonstrates the detailed steps needed to set up Transparent Data Encryption with AlwaysOn Availability Group."
 ogTitle: "Configuring TDE with AlwaysOn Availability Group"
@@ -162,7 +161,7 @@ Step 7: Primary Instance - Enabling TDE Encryption
 
 Step 9: AG health Validation
 
-As I had already created the master key and certificate on both replicas in our previous scenarios, we can skip steps 1,2,4,5,6,7. You just need to create DEK and enable the TDE from steps 3 and 7.
+As I had already created the  master key and certificate on both replicas in our previous scenarios, we can skip steps 1,2,4,5,6,7. You just need to create DEK and enable the TDE from steps 3 and 7.
 
 •	Primary replica: node1
 
