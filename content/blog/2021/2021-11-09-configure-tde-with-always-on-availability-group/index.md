@@ -35,7 +35,7 @@ The SQL Server provides Transparent Data Encryption (TDE) for encrypting the phy
 
 •	SQL Server 2019 - Standard, Evaluation, Developer, Enterprise
 
-### Let’s explore on how to Configure TDE with AlwaysOn Availability Group in the following scenarios.
+### Let’s explore about how to Configure TDE with AlwaysOn Availability Group in the following scenarios.
 1.	Adding TDE encrypted database to AG group.
 2.	Configure TDE to the database which is already existing in the AG group.
 3.	Rotating Expired Certificate
