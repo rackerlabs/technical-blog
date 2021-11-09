@@ -3,13 +3,14 @@ layout: post
 title: "Configuring TDE with AlwaysOn Availability Group"
 date: 2021-11-09
 comments: true
-author: Rachamallu  Jayaprakash Reddy
-authorAvatar:'' 
+author: Rachamallu Jayaprakash Reddy
+authorAvatar:'https://secure.gravatar.com/avatar/6af0bef05e6a7e43b108c62b13127952' 
 bio: ""
 published: true
 authorisRacker: true
 categories: 
 - SQL Server
+- Database
 metaTitle: "Configuring TDE with AlwaysOn Availability Group"
 metaDescription: "This blog demonstrates the detailed steps needed to set up Transparent Data Encryption with AlwaysOn Availability Group."
 ogTitle: "Configuring TDE with AlwaysOn Availability Group"
@@ -34,7 +35,7 @@ The SQL Server provides Transparent Data Encryption (TDE) for encrypting the phy
 
 •	SQL Server 2019 - Standard, Evaluation, Developer, Enterprise
 
-### Let’s explore about how to Configure TDE with AlwaysOn Availability Group in the following scenarios.
+### Let’s explore on how to Configure TDE with AlwaysOn Availability Group in the following scenarios.
 1.	Adding TDE encrypted database to AG group.
 2.	Configuring TDE to the database which is already existing in the AG group.
 3.	Rotating Expired Certificate
@@ -225,3 +226,10 @@ Save the expired TDE certificates for a while to restore any older backup. The n
 
 ### Conclusion
 The SQL Server provides Transparent Data Encryption (TDE) for encrypting the physical files to protect customer’s confidential information. In this blog, I have described various scenarios to configure TDE for the AlwaysOn availability group databases. 
+
+### Reference Links:
+https://techcommunity.microsoft.com/t5/sql-server-support/how-to-add-a-tde-encrypted-database-to-an-availability-group/ba-p/318490
+
+https://docs.microsoft.com/en-us/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-ver15
+
+https://docs.microsoft.com/en-us/sql/database-engine/availability-groups/windows/encrypted-databases-with-always-on-availability-groups-sql-server?view=sql-server-ver15
