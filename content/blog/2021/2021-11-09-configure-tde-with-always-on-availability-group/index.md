@@ -4,7 +4,7 @@ title: "Configuring TDE with AlwaysOn Availability Group"
 date: 2021-11-09
 comments: true
 author: Rachamallu Jayaprakash Reddy
-authorAvatar:'https://secure.gravatar.com/avatar/6af0bef05e6a7e43b108c62b13127952' 
+authorAvatar: "https://secure.gravatar.com/avatar/6af0bef05e6a7e43b108c62b13127952"
 bio: ""
 published: true
 authorisRacker: true
