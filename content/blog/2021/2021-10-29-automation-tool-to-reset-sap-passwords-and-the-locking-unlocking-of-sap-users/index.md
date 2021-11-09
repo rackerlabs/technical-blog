@@ -4,8 +4,8 @@ title: "Automation Tool to reset SAP passwords and the locking/unlocking of SAP 
 date: 2021-10-29
 comments: true
 author: Akash Jain
-authorAvatar: ''
-bio: ""
+authorAvatar: 'https://www.gravatar.com/avatar/8fe4f5baf432276890bb9446b77ca758'
+bio: "Agile, results-oriented consultant with 11+ years of development and team management experience in providing integrated business solutions to diverse clients globally. Love to do singing and sketching in my free time."
 published: true
 authorIsRacker: true
 categories:
@@ -28,9 +28,9 @@ During the  discussion, I realized that they get multiple requests for resetting
 I have discussed the steps to automate in this blog. 
 
 ### Input for the program
-There are two inputs:
+There are two required inputs to run the program:
 
- - _User ID_ - This is to get User ID for which action to be taken. Tool can get multiple User IDs at a time.
+ - _User ID_ - This is to get User ID for which action to be taken. The tool can receive multiple User IDs at a time. 
 - _Radio Buttons_ (Password Reset, User Lock, User Unlock) - This is to give options to user to select relevant action to be taken.
 
 
@@ -51,14 +51,6 @@ Image 1: Flow Diagram of logic (Designed via draw.io)
 _**Note_: Email IDs of the users will be captured from user data (Tables: USR21 & ADR6)
 In-case email id is not maintained in user data, email will be sent to the person running this program.
 
-
-#### 1. Declare the service or platform through code
-
-Tools, such as Kustomize&reg;, Helm&reg;, Terraform&reg;, and Ansible&reg;,
-declare services and platforms through configuration languages. You store the
-repository for the templates and manifests in a git-based source control system
-to enable a single source of truth for DevOps or SRE teams.
-
 #### Function modules used inside the program:
 
 •	BAPI_USER_CHANGE - To change/reset password
@@ -73,7 +65,7 @@ To trigger emails, CL_BCS class is used.
 
 ### Email Structure:
 
-<img src=Picture2.png title"" alt "">
+<img src="Picture2.png" title="" alt="">
 
 Image 2: Email structure (Designed via draw.io)
 
@@ -82,6 +74,5 @@ Image 2: Email structure (Designed via draw.io)
 
 Only SAP Security Team or immediate managers would be authorized to use this program.
 
-### References:
-Nothing as such, just self-exploring was sufficient to ideate and implement this tool.
-Draw.io was used to design flow diagram.
+### Conclusion:
+I hope you find the above steps helpful in setting up the automation tool for setting passwords in SAP. If you need further assistance then feel free to reach out to me at Akash.Jain@rackspace.com.

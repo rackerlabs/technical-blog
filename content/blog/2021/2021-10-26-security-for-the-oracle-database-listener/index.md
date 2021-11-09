@@ -4,7 +4,7 @@ title: "Security for Oracle Database Listener"
 date: 2021-10-26
 comments: true
 author: Ganesh Chikkala
-authorAvatar: 'https://secure.gravatar.com/avatar/c995a09e236f55b82451a9f8a6add9ad'
+authorAvatar: 'https://secure.gravatar.com/avatar/23e09164b925d83e64435b6a39bcf136'
 bio: "I am an Oracle Application DBA, Oracle DBA and Cloud DBA. I’ve completed Oracle OCA, OCP, and cloud certifications."
 published: true
 authorIsRacker: true
@@ -23,7 +23,7 @@ The Oracle Database listener is a module that connects an instance of the Oracle
 
 <!--more-->
 
-The Oracle Database listener is a module that connects an instance of the Oracle Database and its client. The listener accepts the connection through the default port (1521) or other ports, allowing the client to login into the database. 
+The listener accepts the connection through the default port (1521) or other ports, allowing the client to login into the database. 
 
 ### Why protect the database listener?
 
