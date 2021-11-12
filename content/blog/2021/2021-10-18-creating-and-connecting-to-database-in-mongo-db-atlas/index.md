@@ -38,7 +38,7 @@ Collection: It is a group of MongoDB documents. It is equal to a table in sql da
 
 To compare oracle sql and nosql MongoDB objects we can compare as below.
 
-<img src=Picture1.png title="" alt="">
+<img src=Picture-1.png title="" alt="">
 
 ### Cloud Options
 
