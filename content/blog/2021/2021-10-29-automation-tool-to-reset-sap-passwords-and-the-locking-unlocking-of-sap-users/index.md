@@ -76,3 +76,13 @@ Only SAP Security Team or immediate managers would be authorized to use this pro
 
 ### Conclusion:
 I hope you find the above steps helpful in setting up the automation tool for setting passwords in SAP. If you need further assistance then feel free to reach out to me at Akash.Jain@rackspace.com.
+
+
+
+<a class="cta purple" id="cta" href="https://www.rackspace.com/applications/sap">Learn about Rackspace SAP Managed Services.</a>
+
+<a class="cta purple" id="cta" href="https://www.rackspace.com/security/application-security"> Learn about Rackspace Application Security.</a>
+
+
+Use the Feedback tab to make any comments or ask questions. You can also
+[start a conversation with us](https://www.rackspace.com/contact).
