@@ -4,7 +4,7 @@ title: "Configuring TDE with AlwaysOn Availability Group"
 date: 2021-11-09
 comments: true
 author: Rachamallu Jayaprakash Reddy
-authorAvatar:'https://secure.gravatar.com/avatar/6af0bef05e6a7e43b108c62b13127952' 
+authorAvatar: ""
 bio: ""
 published: true
 authorisRacker: true
@@ -225,11 +225,4 @@ _Step 5: AG health Validation:_
 Save the expired TDE certificates for a while to restore any older backup. The new certificate will only be used when you are restoring the databases which were backed up since the key rotation.
 
 ### Conclusion
-The SQL Server provides Transparent Data Encryption (TDE) for encrypting the physical files to protect customer’s confidential information. In this blog, I have described various scenarios to configure TDE for the AlwaysOn availability group databases. 
-
-### Reference Links:
-https://techcommunity.microsoft.com/t5/sql-server-support/how-to-add-a-tde-encrypted-database-to-an-availability-group/ba-p/318490
-
-https://docs.microsoft.com/en-us/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-ver15
-
-https://docs.microsoft.com/en-us/sql/database-engine/availability-groups/windows/encrypted-databases-with-always-on-availability-groups-sql-server?view=sql-server-ver15
+The SQL Server provides Transparent Data Encryption (TDE) for encrypting the physical files to protect customer’s confidential information. In this blog, I have described various scenarios to configure TDE for the AlwaysOn availability group databases.
