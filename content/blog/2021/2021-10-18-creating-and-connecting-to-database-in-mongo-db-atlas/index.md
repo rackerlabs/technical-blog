@@ -127,3 +127,9 @@ I have created a “Training” Database in below screenshot with single click a
 ### Conclusion
 
 This process describes how we can create a cluster in ATLAS and MongoDB database in the cluster. 
+
+
+<a class="cta purple" id="cta" href="https://www.rackspace.com/applications/oracle">Learn about Rackspace NoSQL Data Management.</a>
+
+Use the Feedback tab to make any comments or ask questions. You can also
+[start a conversation with us](https://www.rackspace.com/contact).
