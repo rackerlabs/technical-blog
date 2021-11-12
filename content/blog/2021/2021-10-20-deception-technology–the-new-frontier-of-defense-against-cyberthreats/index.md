@@ -43,3 +43,13 @@ Network administrators also have the advantage of shutting down the entire attac
 This out-of-the-box technology has the capability, unlike its predecessors, of preventing high profile hacks. The process of deception technology even provides options to the hackers to choose between ‘good data’ and ‘bad data’, and if hackers choose the ‘good data’, they proceed to the next steps towards accessing the organization’s database. However, they are eventually stopped and reported with synthetic user agents reporting their activities, every step of the way.
 ### Conclusion:
 Deception technology, such as those being offered by Illusive Networks, an Israel based company, has been very well received by financial institutions, banks, insurance, and healthcare companies, which rely heavily on keeping their customer and transactional data safe. This technology holds promise for the future of cybersecurity, wherein it is poised to expose bad actors and actual hackers trying to breach networks actively, and not just with passive tools like malware and phishing tools. This new and exciting technology brings about a new dimension in companies’ cybersecurity arsenals to protect data and expose actual threats and malicious actors.
+
+
+
+<a class="cta purple" id="cta" href="https://www.rackspace.com/security/network-security">Learn about Rackspace Network Security.</a>
+
+<a class="cta purple" id="cta" href="https://www.rackspace.com/security/zero-trust"> Learn about Rackspace Zero Trust Security.</a>
+
+
+Use the Feedback tab to make any comments or ask questions. You can also
+[start a conversation with us](https://www.rackspace.com/contact).
