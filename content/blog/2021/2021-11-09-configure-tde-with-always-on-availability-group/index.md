@@ -5,7 +5,7 @@ date: 2021-11-09
 comments: true
 author: Rachamallu Jayaprakash Reddy
 authorAvatar: "https://secure.gravatar.com/avatar/6af0bef05e6a7e43b108c62b13127952"
-bio: ""
+bio: "Experienced DBA with a demonstrated history of working in the information technology and services industry. Skilled in MS SQL Server, Migration Projects, Database Administration, High Availability Techniques & Performance Tuning. Strong engineering professional with a Masters of Technology- M. Tech focused in Computer Science from JNTUH College of Engineering, Hyderabad."
 published: true
 authorisRacker: true
 categories: 
