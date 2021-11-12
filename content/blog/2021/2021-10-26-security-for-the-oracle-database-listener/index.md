@@ -196,11 +196,6 @@ The Oracle Database Listener is a crucial component in the entire Oracle Databas
 Citation Credits: www.integrigy.com, joordsblog.vandernoord.eu, www.stigviewer.com
 
     
-<a class="cta purple" id="cta" href="https://www.rackspace.com/cloud/oracle">Learn about Rackspace Cloud Infrastructure.</a>
-
-<a class="cta purple" id="cta" href="https://www.rackspace.com/security/application-security"> Learn about Rackspace Application Security.</a>
-
-
 <a class="cta purple" id="cta" href="https://www.rackspace.com/cloud/oracle">Learn about Rackspace Oracle Cloud Infrastructure.</a>
 
 <a class="cta purple" id="cta" href="https://www.rackspace.com/security/application-security"> Learn about Rackspace Application Security.</a>
