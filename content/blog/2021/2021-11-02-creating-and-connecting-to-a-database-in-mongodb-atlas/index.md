@@ -1,121 +1,135 @@
 ---
 layout: post
-title: "Brief Overview of the Oracle Block Chain Table"
-date: 2021-11-08
+title: "Creating and connecting to a database in MongoDB Atlas"
+date: 2021-10-18
 comments: true
-author: Ravi Garkoti
-authorAvatar: 
+author: D.V. Prakash
+authorAvatar: ''
 bio: ""
 published: true
-authorisRacker: true
-categories: 
-- Oracle
-
-metaTitle: "Brief Overview of the Oracle Block Chain Table"
-metaDescription: "This blog explains the Oracle Blockchain - A blockchain is a tabulated series of records, which are also called blocks, that are linked together. The contents of each block comprises a cryptographic hash of the previous block, a timestamp, as well as transaction data."
-ogTitle: "Brief Overview of the Oracle Block Chain Table"
-ogDescription: "This blog explains the Oracle Blockchain - A blockchain is a tabulated series of records, which are also called blocks, that are linked together. The contents of each block comprises a cryptographic hash of the previous block, a timestamp, as well as transaction data."
-slug: "brief-overview-of-the-oracle-block-chain-table" 
+authorIsRacker: true
+categories:
+    - Database
+metaTitle: "Creating and connecting to a database in MongoDB Atlas"
+metaDescription: "MongoDB is one of NOSQL databases in market which are used for general purpose, and it is open-source document database and build on C++."
+ogTitle: "Creating and connecting to a database in MongoDB Atlas"
+ogDescription: "MongoDB is one of NOSQL databases in market which are used for general purpose, and it is open-source document database and build on C++."
+slug: "creating-and-connecting-to-a-database-in-mongodb-atlas"
 
 ---
 
-A blockchain is a tabulated series of records, which are also called blocks, that are linked together. The contents of each block comprises a cryptographic hash of the previous block, a timestamp, as well as transaction data.
-As each block contains information about the immediate block before him, a chain is formed. Hence, blockchains are resistant to changes in their data because once recorded, any change in a block will change all blocks after it.
+MongoDB is one of the NOSQL databases in the market which are used for general purposes, and it is an open-source document database and built on C++.
 
 <!--more-->
+This blog demonstrates the below  items
+1.	Creating a Cluster in the cloud
 
-### Cryptographic Hash Function 
+2.	Installing Mongodb Compass to connect
+
+3.	Connecting to MongoDB cluster using Compass 
+
+4.	Creating a Database
+
+### Terminology used in MongoDB:
+
+Database: It is a Physical Container  for collections.
+
+Collection: It is a group of MongoDB documents. It is equal to a table in sql databases such as oracle.
+
+To compare oracle sql and nosql MongoDB objects we can compare as below.
 
 <img src=Picture1.png title="" alt="">
 
-A cryptographic hash function is a mathematical algorithm that takes input data of an arbitrary size and converts it into output of a fixed size. 
-Hash function is expected to have following features :
-•	Same input will give same output always
-•	No to same input have same output 
-•	A small change in input will change output drastically
+### Cloud Options
 
-Some popular hash functions are 
-•	MD5
-
-•	SHA-1
-
-•	SHA-2
-
-•	SHA-3
-
-•	BLAKE2
-
-### Blockchain tables in Oracle
-Oracle Blockchain tables are add only tables in which only insert operations are allowed. Deleting rows is either prohibited or restricted based on time which is pre defined. Hash function is part of  row metadata and helps in making it tamper proof
-Blockchain Tables will be available with Oracle Database 21c and will also become available in 19c database when 19.10 Release is available .
-This feature is a component of the Oracle Database so a new setup will be required.
-
-Indexing and partitioning is allowed in blockchain table. 
-Blockchain tables can be used along with (regular) tables in transactions and queries.
+MongoDB Atlas is a global cloud database service built on AWS, Azure, and Google cloud.
+We can deploy ,operate and scale a MongoDB database in just a few clicks. 
+Here  we will discuss on creating MongoDB  in Cloud.
+Login to 
+https://cloud.mongodb.com/  using google account.
+We can create a database using the below steps after logging to https://cloud.mongodb.com
 
 <img src=Picture2.png title="" alt="">
 
-Blockchain tables are used to implement centralized blockchain applications where the central authority is the Oracle Database. It provides organizations with more customization and control to  decide who can work on chain. Participants must have privileges to insert data into the blockchain table. Blockchain content  is defined and managed by the application. Centralized blockchains are provide higher throughput and lower latency in transactions 
-Rows in a blockchain table are corruption free. Each row has a hash value which is generated using row data and has value of previous row. If any row is changed it will cause all subsequent chain to change since hash values will be updated
+Click on Build a Database.Choose the free option “Shared” for now 
 
-### Example of Blockchain tables 
+<img src=Picture3.png title="" alt="">
 
-### Create the blockchain table 
-CREATE BLOCKCHAIN TABLE command  requires additional condition to be stated. The NO DROP, NO DELETE, HASHING USING, and VERSION clauses are mandatory.
+<img src=Picture4.png title="" alt="">
 
-`CREATE BLOCKCHAIN TABLE emp (employee_id NUMBER, department_id NUMBER) NO DROP` `UNTIL 90 DAYS IDLE NO DELETE LOCKED HASHING USING "SHA2_512" VERSION "v1";`
+Select any of Cloud service provider, here I chose Azure.
 
-We can use `user_blockchain_tables` view to check attributes of blockchain table
+<img src=Picture5.png title="" alt="">
 
-`SELECT row_retention, row_retention_locked, table_inactivity_retention,` `hash_algorithm FROM user_blockchain_tables WHERE table_name='EMP';` 
-`ROW_RETENTION ROW TABLE_INACTIVITY_RETENTION HASH_ALG `
-`------------- --- -------------------------- --------` 
-`               YES                        90 SHA2_512`
+<img src=Picture6.png title="" alt="">
 
-### Description of the table
+Click on "Create Cluster"
 
-Standard describe command will show only visible columns. USER_TAB_COLS view displays all internal column used to store internal information.
+<img src=Picture6-1.png title="" alt="">
 
-`SELECT internal_column_id "Col ID", SUBSTR(column_name,1,30) "Column Name", SUBSTR`
-` (data_type,1,30) "Data Type", data_length "Data Length" FROM user_tab_cols` WHERE 
+<img src=Picture7.png title="" alt="">
 
-`table_name = 'LEDGER_EMP' ORDER BY internal_column_id;` 
+Once the cluster is created ,in network access,  add the IP entry to get access from your local desktop.
 
-`Col ID 			Column Name    			Data Type Data Length `
+<img src=Picture8.png title="" alt="">
 
-`---------- ------------------------ ---------------------------- -----` 
+We also create database user for cluster to access cluster.
 
-`1 			EMPLOYEE_ID 					NUMBER 22 `
+<img src=Picture9.png title="" alt="">
 
-`2 			Department_ID 				NUMBER 22` 
+We then use MongoDB Compass to connect to the cluster.
 
-`3 			ORABCTAB_INST_ID$ 				NUMBER 22`
-
-### Insert row into the blockchain table
-
-`INSERT INTO emp VALUES (106,12000);`
-
-`SELECT ORABCTAB_CHAIN_ID$, ORABCTAB_SEQ_NUM$, ORABCTAB_CREATION_TIME$,`
-`ORABCTAB_USER_NUMBER$, ORABCTAB_HASH$ FROM emp;`
-
-### Delete, Drop and Truncate
-You can delete rows in a blockchain table only by using the DBMS_BLOCKCHAIN_TABLE package, and only rows that are outside the retention period. Standard delete command will not work for blockchain table.
-
-`DBMS_BLOCKCHAIN_TABLE.DELETE_EXPIRED_ROWS`
-`(   schema_name 		 IN VARCHAR2,`
-`table_name 	         IN VARCHAR2,` 
-`   before_timestamp 	   IN TIMESTAMP WITH TIME ZONE DEFAULT NULL,`
-`   number_of_rows_deleted     OUT NUMBER);`
-
-If you created the table with the NO DELETE LOCKED attribute then you can never subsequently modify the row retention period for the purpose of deletion. 
-You can only increase the retention value of block chain table and drop command will work only when retention period is over. 
-Truncate command is not allowed for blockchain table.
+<img src=Picture10.png title="" alt="">
 
 
 
-<a class="cta purple" id="cta" href="https://www.rackspace.com/applications/oracle">Learn about Rackspace Oracle Applications Services.</a>
 
-<a class="cta purple" id="cta" href="https://www.rackspace.com/cloud/oracle"> Learn about Rackspace Oracle Cloud Infrastructure.</a>
+### Installing MongoDB Compass:
+
+Download software using URL ,for windows File (mongodb-windows-x86_64-5.0.3-signed.msi)
+{https://www.mongodb.com/try/download/community}
+
+<img src=Picture11.png title="" alt="">
+
+<img src=Picture12.png title="" alt="">
+
+
+<img src=Picture13.png title="" alt="">
+
+
+<img src=Picture14.png title="" alt="">
+
+<img src=Picture15.png title="" alt="">
+
+<img src=Picture16.png title="" alt="">
+
+<img src=Picture17.png title="" alt="">
+
+
+### Once Installed open Mongodb Compass
+
+
+<img src=Picture18.png title="" alt="">
+
+
+In the connection string paste the URL  saved above.
+
+Here we can see all the databases in the cluster
+
+<img src=Picture19.png title="" alt="">
+
+I have created a “Training” Database in below screenshot with single click as create database.
+
+<img src=Picture20.png title="" alt="">
+
+<img src=Picture21.png title="" alt="">
+
+### Conclusion
+
+This process describes how we can create a cluster in ATLAS and MongoDB database in the cluster. 
+
+
+<a class="cta purple" id="cta" href="https://www.rackspace.com/applications/oracle">Learn about Rackspace NoSQL Data Management.</a>
 
 
 Use the Feedback tab to make any comments or ask questions. You can also
