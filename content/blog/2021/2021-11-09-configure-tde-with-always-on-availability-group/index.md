@@ -226,10 +226,3 @@ Save the expired TDE certificates for a while to restore any older backup. The n
 
 ### Conclusion
 The SQL Server provides Transparent Data Encryption (TDE) for encrypting the physical files to protect customer’s confidential information. In this blog, I have described various scenarios to configure TDE for the AlwaysOn availability group databases. 
-
-### Reference Links:
-https://techcommunity.microsoft.com/t5/sql-server-support/how-to-add-a-tde-encrypted-database-to-an-availability-group/ba-p/318490
-
-https://docs.microsoft.com/en-us/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-ver15
-
-https://docs.microsoft.com/en-us/sql/database-engine/availability-groups/windows/encrypted-databases-with-always-on-availability-groups-sql-server?view=sql-server-ver15
