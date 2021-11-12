@@ -113,10 +113,8 @@ Truncate command is not allowed for blockchain table.
 
 
 
-<a class="cta purple" id="cta" href="https://www.rackspace.com/applications/oracle">Learn about Rackspace Oracle Applications Services.</a>
 
-<a class="cta purple" id="cta" href="https://www.rackspace.com/cloud/oracle"> Learn about Rackspace Oracle Cloud Infrastructure.</a>
-
+<a class="cta purple" id="cta" href="https://www.rackspace.com/data/managed-nosql">Learn about Rackspace NoSQL Data Management.</a>
 
 Use the Feedback tab to make any comments or ask questions. You can also
 [start a conversation with us](https://www.rackspace.com/contact).
