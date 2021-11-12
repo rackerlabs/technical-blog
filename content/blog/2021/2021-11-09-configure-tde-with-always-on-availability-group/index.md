@@ -226,3 +226,13 @@ Save the expired TDE certificates for a while to restore any older backup. The n
 
 ### Conclusion
 The SQL Server provides Transparent Data Encryption (TDE) for encrypting the physical files to protect customer’s confidential information. In this blog, I have described various scenarios to configure TDE for the AlwaysOn availability group databases. 
+
+
+
+<a class="cta purple" id="cta" href="https://www.rackspace.com/security/data-privacy-protection">Learn about Rackspace Data Protection.</a>
+
+<a class="cta purple" id="cta" href="https://www.rackspace.com/data/databases"> Learn about Rackspace Database Services.</a>
+
+
+Use the Feedback tab to make any comments or ask questions. You can also
+[start a conversation with us](https://www.rackspace.com/contact).
