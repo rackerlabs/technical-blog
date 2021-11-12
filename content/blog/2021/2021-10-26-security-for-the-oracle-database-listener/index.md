@@ -194,3 +194,13 @@ By default, logging is not enabled (LOG_STATUS=OFF). When logging is enabled, th
 The Oracle Database Listener is a crucial component in the entire Oracle Database ecosystem and is one of its more vulnerable elements. Ensuring that the listener is well protected from threats and attacks ensures that the entire Oracle Database instance remains secure and protected from security vulnerabilities and threats, both internal and external.
 
 Citation Credits: www.integrigy.com, joordsblog.vandernoord.eu, www.stigviewer.com
+
+    
+    
+<a class="cta purple" id="cta" href="https://www.rackspace.com/cloud/oracle">Learn about Rackspace Cloud Infrastructure.</a>
+
+<a class="cta purple" id="cta" href="https://www.rackspace.com/security/application-security"> Learn about Rackspace Application Security.</a>
+
+
+Use the Feedback tab to make any comments or ask questions. You can also
+[start a conversation with us](https://www.rackspace.com/contact).
