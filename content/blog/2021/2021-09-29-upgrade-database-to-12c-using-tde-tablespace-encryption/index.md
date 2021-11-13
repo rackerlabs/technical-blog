@@ -614,3 +614,13 @@ f.	Click "Submit"
 
 ### _Conclusion_
 By following all above steps we are performing 12C database upgrade along with enabling Tablespace level Encryption.
+
+  
+  
+<a class="cta purple" id="cta" href="https://www.rackspace.com/data/managed-sql">Learn about Rackspace Managed SQL Databases.</a>
+
+<a class="cta purple" id="cta" href="https://www.rackspace.com/data/databases"> Learn about Rackspace Database Services.</a>
+
+
+Use the Feedback tab to make any comments or ask questions. You can also
+[start a conversation with us](https://www.rackspace.com/contact).
