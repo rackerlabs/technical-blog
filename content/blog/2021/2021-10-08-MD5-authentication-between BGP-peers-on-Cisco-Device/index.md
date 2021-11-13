@@ -197,3 +197,13 @@ Similarly, if the two routers have different passwords configured, the following
 ### _Conclusion_ 
 By following the above steps, you can easily configure BGP with the MD5 authentication. 
 However, you should always implement other security & compliance mechanisms as a layered structure to strengthen the overall network security.
+
+
+
+<a class="cta purple" id="cta" href="https://www.rackspace.com/security/network-security">Learn about Rackspace Network Security.</a>
+
+<a class="cta purple" id="cta" href="https://www.rackspace.com/security/cloud-native-security"> Learn about Rackspace Cloud Native Security.</a>
+
+
+Use the Feedback tab to make any comments or ask questions. You can also
+[start a conversation with us](https://www.rackspace.com/contact).
