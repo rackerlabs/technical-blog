@@ -205,3 +205,11 @@ With this the cloning is complete. You need to validate and match the DBF file f
 Cloning PDBs Using DBCA, a new feature in Oracle 19c in silent mode is the simplest way to clone the database in a minimal time. You are not required to take backup of the source database and copy that backup pieces to the target host for cloning which also helps save time. 
 
 
+
+<a class="cta purple" id="cta" href="https://www.rackspace.com/data/managed-sql">Learn about Rackspace Managed SQL Databases.</a>
+
+<a class="cta purple" id="cta" href="https://www.rackspace.com/data/databases"> Learn about Rackspace Database Services.</a>
+
+
+Use the Feedback tab to make any comments or ask questions. You can also
+[start a conversation with us](https://www.rackspace.com/contact).
