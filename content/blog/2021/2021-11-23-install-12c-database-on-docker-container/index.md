@@ -4,7 +4,7 @@ title: "Install 12c database on Docker container"
 date: 2021-11-23
 comments: true
 author: Kondapalli Sreeharsha
-authorAvatar: ''
+authorAvatar: 'https://secure.gravatar.com/avatar/fcc90ae2c7d8cb9bd7c789ffe89539af'
 bio: ""
 published: true
 authorIsRacker: true
@@ -125,15 +125,15 @@ _Copy and paste the command on command prompt_
 `database-enterprise:12.2.0.1-slim`
 `docker.io/store/oracle/database-enterprise:12.2.0.1-slim`
 
-#### 4. Once image downloaded. Then run it with docker run.
+#### 4) Once image downloaded. Then run it with docker run.
 `C:\Users\***>docker run -d -p 1521:1521 --name oracle store/oracle`
 `database-enterprise:12.2.0.1-slim`
 `fe350459c427436a0f6b4418bf7296db7f80e0dac02ff0141c373944034cafcf`
 
-#### 5. Once done start the database
+#### 5) Once done start the database
 `C:\Users\***>docker start oracle Oracle`
 
-#### 6. Check the containers.
+#### 6) Check the containers.
 `C:\Users\***>docker ps`
 `CONTAINER ID   IMAGE`                                            `COMMAND                  CREATED `         `STATUS`                   `PORTS                                                 NAMES`
 `fe350459c427   store/oracle/database-enterprise:12.2.0.1-slim` 
@@ -147,7 +147,7 @@ We can see the same on docker desktop
 
 <img src="Picture6.png" title="" alt="">
 
-#### 7. Now connect to the database.
+#### 7) Now connect to the database.
 
 `C:\Users\****>docker exec -it oracle bash -c "source /home/oracle/.`
 
