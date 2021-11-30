@@ -57,7 +57,7 @@ Step 4: - if you want to change database master key encryption password the you 
 
 <img src=Picture6.png title="" alt="">
 
-### Case 2: When database master key encryption password is unknown.
+#### Case 2: When database master key encryption password is unknown.
 
 In case if you are not aware about the password and source is accessible. Just use step4 from case1 to change the password and follow the procedure in step 1. Else use the following steps as an alternate.     
 This is only possible when instance where database is getting restored is not using any other key as steps involved here is restoring the instance service master key.
