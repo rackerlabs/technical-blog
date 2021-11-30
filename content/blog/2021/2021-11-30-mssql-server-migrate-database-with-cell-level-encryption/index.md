@@ -38,8 +38,7 @@ Data security is one of the critical aspect in database management. When we are 
 
 As we did not open the database master key hence decryption of data is not possible, also DMK is not encrypted by current instance service master key hence you see such issue, we have many solutions to resolve this, so let’s talk about them one by one. 
 
-#### Case 1 
- - When database master key encryption password is known.
+#### Case 1 - When database master key encryption password is known.
 
 Step 1: - Open database master key using password and decrypt the data.
 
