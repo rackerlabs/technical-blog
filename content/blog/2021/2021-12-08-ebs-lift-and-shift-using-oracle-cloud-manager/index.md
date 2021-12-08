@@ -4,7 +4,7 @@ title: "EBS Lift and Shift Using Cloud Manager"
 date: 2021-12-08
 comments: true
 author: Shyam Addagudi
-authorAvatar: 'https://secure.gravatar.com/avatar/'
+authorAvatar: 'https://secure.gravatar.com/avatar/1680a2aebbce8c7b3c54c1d857fcf4ba'
 bio: ""
 published: true
 authorIsRacker: true
