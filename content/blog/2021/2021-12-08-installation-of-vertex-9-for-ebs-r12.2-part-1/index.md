@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Installation of Vertex 9 for EBS R12.2-Part 1"
-date: 2021-06-23
+date: 2021-12-08
 comments: true
 author: N.S. Ganesh Chikkala
 authorAvatar: 'https://secure.gravatar.com/avatar/834ffcd8c692ca9fd16ac51740f97020'
