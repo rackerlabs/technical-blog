@@ -4,7 +4,7 @@ title: "Installation of Vertex 9 for EBS R12.2-Part 1"
 date: 2021-06-23
 comments: true
 author: N.S. Ganesh Chikkala
-authorAvatar: 'https://secure.gravatar.com/avatar/c995a09e236f55b82451a9f8a6add9ad'
+authorAvatar: 'https://secure.gravatar.com/avatar/834ffcd8c692ca9fd16ac51740f97020'
 bio: "I am an Oracle Application DBA and an Oracle DBA, primarily concentrating on Oracle E-Business Suite (EBS) and its native technology stacks , such as Oracle Database, Application Server, and Fusion Middleware components. I’ve completed Oracle OCA, OCP, and cloud certifications."
 published: true
 authorIsRacker: true
