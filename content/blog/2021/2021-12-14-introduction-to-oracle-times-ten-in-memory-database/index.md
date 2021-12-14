@@ -40,10 +40,6 @@ Besides being memory optimized, Times Ten also provides high throughput, ensures
 •	3 major releases since 2005: 6.0, 7.0, 11gR2,18c Release 1
 
 
-### GitOps principles
-
-The following sections describe four key principles for GitOps:
-
 ### Overview of Oracle Timesten 
 
 Oracle TimesTen In-Memory Database is an in-memory, relational database management system with persistence and high availability. Originally designed and implemented at Hewlett-Packard labs in Palo Alto, California, TimesTen spun out into a separate startup in 1996 and was acquired by Oracle Corporation in 2005.
