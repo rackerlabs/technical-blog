@@ -52,7 +52,7 @@ Times Ten can not only be used as a standalone in-memory database, but also prov
 
 <img src=Picture1.png title="" alt="">
 
-_Image source: http://luna-ext.di.fc.ul.pt/oracle11g/timesten.112/e14261/overview.htm_
+Image source: http://luna-ext.di.fc.ul.pt/oracle11g/timesten.112/e14261/overview.htm
 
 Each TimesTen data store has exactly two checkpoint files. A checkpoint is called every 10 minutes by default; this writes the dirty memory pages to the first checkpoint file, and then the next checkpoint uses the other checkpoint file. Write transactions are placed in an in-memory buffer first, then flushed to the log files.  
 
@@ -70,7 +70,7 @@ The customer may switch from BUFFERED LOGGING to DURABLE COMMIT at any time by c
 
 <img src=Picture2.png title="" alt="">
 
-_Image Source: https://www.oracle.com/technetwork/database/windows/ds-imdb-cache-1-129794.pdf_
+Image Source: https://www.oracle.com/technetwork/database/windows/ds-imdb-cache-1-129794.pdf
 
 The above graph shows the average transaction response time measured for each of the 7 transaction types. 
 
@@ -120,7 +120,7 @@ The key principles of GitOps highlight the following benefits for organizations:
 
 <img src=picture3.png title="" alt="">
 
-_Image Source: https://www.oracle.com/database/technologies/timesten-cache.html_
+Image Source: https://www.oracle.com/database/technologies/timesten-cache.html
 
 
 
@@ -148,7 +148,7 @@ Write Operations are passed through to Oracle and automatically refreshed to Tim
 
 <img src=picture4.png title="" alt="">
 
-_Image Source: https://docs.oracle.com/cd/E18283_01/timesten.112/e14261/cache.htm_
+Image Source: https://docs.oracle.com/cd/E18283_01/timesten.112/e14261/cache.htm
 
 
 Cache Connect in Oracle enables the user to cache a subset of their Oracle database into TimesTen to provide better response time and throughput to the frequently accessed data. 
