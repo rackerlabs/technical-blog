@@ -161,6 +161,9 @@ Switch to Oracle user to connect with the _SQLPLUS_
 <img src=Picture18.png title="" alt="">
 
 
+
+
+
 <img src=Picture19.png title="" alt="">
 
 ### Conclusion
