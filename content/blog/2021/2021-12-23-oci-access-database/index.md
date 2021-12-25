@@ -5,7 +5,9 @@ date: 2021-12-23
 comments: true
 author: Ravishekhar Yelemane
 authorAvatar: 'https://secure.gravatar.com/avatar/1d5246c5ac05e979d88dc05ae240a30b'
-bio: ""
+bio: "I’m Ravishekhar Yelemane, an Oracle Apps DBA working with Rackspace.
+Working on variety of Oracle Products (Databases, E-Business Suite, Fusion Middleware Applications)
+Am an OCI Architect Associate"
 published: true
 authorIsRacker: true
 categories:
