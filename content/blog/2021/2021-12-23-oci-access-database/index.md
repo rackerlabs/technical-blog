@@ -4,7 +4,7 @@ title: "Create/Connect Database in OCI on Public Subnet"
 date: 2021-12-23
 comments: true
 author: Ravishekhar Yelemane
-authorAvatar: 'https://secure.gravatar.com/avatar/'
+authorAvatar: 'https://secure.gravatar.com/avatar/1d5246c5ac05e979d88dc05ae240a30b'
 bio: ""
 published: true
 authorIsRacker: true
