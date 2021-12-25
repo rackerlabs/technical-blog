@@ -34,14 +34,10 @@ The steps in the entire process can comprise the following:
 Considering that the following pre-requisites are already in place: 
 -	Oracle Cloud Account (Free Trial/Paid Version)
 -	The Network Configuration for Virtual Machine (VM)/ Bare Metal (BM) should be configured
-
->	Public Subnet
-
->	Security List & Open Port 22 & 1521
-
->	Internet Gateway
-
->   Route Table
+-	Public Subnet
+-	Security List & Open Port 22 & 1521
+-	Internet Gateway
+-   Route Table
 
 #### Let us begin by generating SSH key pairs in OCI:
 
