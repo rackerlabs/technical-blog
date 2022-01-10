@@ -4,7 +4,7 @@ title: "Oracle Internet Directory Migration to Oracle Unified Directory"
 date: 2022-01-10
 comments: true
 author: Praveen Muthyala
-authorAvatar: 'https://secure.gravatar.com/avatar/c995a09e236f55b82451a9f8a6add9ad'
+authorAvatar: ''
 bio: ""
 published: true
 authorIsRacker: true
