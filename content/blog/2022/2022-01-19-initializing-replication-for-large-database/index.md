@@ -23,11 +23,6 @@ This blog demonstrates the detailed steps needed to set up transactional replica
 
 <!--more-->
 
-This shift includes understanding new service models and frameworks and defining
-new processes to move towards Cloud Native sustainably. Through transformation
-efforts, you need to define and adopt effective processes and frameworks that
-enable engineering teams to deliver standardized services and ensure reliability
-and security.
 
 ### Introduction
 
@@ -81,11 +76,6 @@ Select Articles to replicate:
 
 #### Step 3: In our case, we are using a database backup file instead of a snapshot so we will leave them blank and click on next, as shown in the following snapshot.
 
-
-You can increase the acceleration of new features and products to market by using
-GitOps practices, processes, and tools. This enables engineering teams to automate
-deployments, enabling faster release rates to help gain quick customer feedback
-and improve customer satisfaction.
 
 <img src=Picture4.png title="" alt="">
 
