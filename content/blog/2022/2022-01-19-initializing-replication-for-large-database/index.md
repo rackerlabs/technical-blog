@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Initiating replication for a large database"
+title: "Initiliazing replication for a large database"
 date: 2022-01-19
 comments: true
 author: Rachamallu Jayaprakash Reddy 
