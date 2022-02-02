@@ -210,13 +210,13 @@ As mentioned earlier, PTF allows you to make minor modifications to existing tes
 
 In order, to perform actions like add, update or delete, PeopleSoft Test Framework (PTF) users’ needs to have either of the following permission list assigned by the security specialist:
 
-Permission List	 Role
+Permission | List |	 Role
 ______________________________
-PTPT3400	PTF Administrator
+PTPT3400   |	PTF | Administrator
 ______________________________
-PTPT3700	PTF Editor
+PTPT3700   |	PTF  |Editor
 ______________________________
-PTPT3600	PTF User
+PTPT3600   |	PTF | User
 ______________________________
 
 
