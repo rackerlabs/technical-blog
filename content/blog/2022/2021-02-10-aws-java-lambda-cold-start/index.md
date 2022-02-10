@@ -23,7 +23,7 @@ The SignupService team at Rackspace decided to move the Signup application from 
 
 <!--more-->
 
-We did successful POCs with basic lambdas. However, when started building JAVA Lambda functions for our applications, our struggle with the infamous Lambda Cold Start too started. We gathered statistics on different lambda response times and implemented solutions to optimize them. This blog covers the steps taken to optimize lambda performance and its outcomes.
+We did successful POCs with basic Lambdas. However, when started building JAVA Lambda functions for our applications, our struggle with the infamous Lambda Cold Start too started. We gathered statistics on different Lambda response times and implemented solutions to optimize them. This blog covers the steps taken to optimize Lambda performance and its outcomes.
 
 ### Lambda and Lambda Response Times
 
@@ -37,13 +37,13 @@ Lambdas are serverless. After a brief period of inactivity, servers shut down (g
 
 _Ref: https://docs.aws.amazon.com/lambda/latest/dg/runtimes-context.html_
 
-After carefully analysing the response time, we noticed that Lambda has a Billed duration for execution and Init duration for initializing servers with dependencies. During a given initialization time of 10 seconds, we get CPU burst (fast processors) for loading configurations. If the initialization does not happen within the given time (likely for heavy dependencies), the handler instance gets killed and then re-initialized, causing the delay we witnessed. The initialization should happen in less than 10 seconds to solve this issue. 
+After carefully analysing the response time, we noticed that Lambda has a Billed duration for execution and INIT duration for initializing servers with dependencies. During a given initialization time of 10 seconds, we get CPU burst (fast processors) for loading configurations. If the initialization does not happen within the given time (likely for heavy dependencies), the handler instance gets killed and then re-initialized, causing the delay we witnessed. The initialization should happen in less than 10 seconds to solve this issue. 
 
 
 ### Optimizing JAVA Lambdas
 
-Recommended optimization techniques like _Increasing the allocated memory to Lambda and removing duplicate maven dependencies for the lambda java code_ were helpful but insufficient to resolve the issue. After going through best practices on AWS resources and discussions on Github, we experimented with the following changes that reduced lambda initialization time:
-Initialized lambda handler in the static block
+Recommended optimization techniques like _Increasing the allocated memory to Lambda and removing duplicate maven dependencies for the lambda java code_ were helpful but insufficient to resolve the issue. After going through best practices on AWS resources and discussions on Github, we experimented with the following changes that reduced Lambda initialization time:
+Initialized Lambda handler in the static block
 
 
 <img src=Picture3.png title="" alt="">
@@ -60,16 +60,16 @@ _Included below database configuration._
 _This setting is used to control whether we should consult the JDBC metadata to determine certain Settings default values when the database may not be available (mainly in tools usage)._
 
 
-This helped in establishing the DB connection during lambda execution rather than lambda initialization and reduced INIT time for lambda. We didn’t notice any other changes as for the DB calls but decided not to go ahead with this change for any unnoticeable effects it might have on database configuration.
+This helped in establishing the DB connection during Lambda execution rather than Lambda initialization and reduced INIT time for Lambda. We didn’t notice any other changes as for the DB calls but decided not to go ahead with this change for any unnoticeable effects it might have on database configuration.
 
 After these changes, INIT duration came down to 6-7 seconds and a single Lambda’s total execution time significantly reduced to ~10 secs. 
 
 #### Lastly, we decoupled the database module #### 
-(most expensive call) from individual lambdas and created a standalone lambda for all database calls. This step had multiple benefits: there was no need to establish database connections for each lambda and standalone lambda remained warm since all the requests for database queries were processed by it. 
+_most expensive call_ from individual Lambdas and created a standalone Lambda for all database calls. This step had multiple benefits: there was no need to establish database connections for each Lambda and standalone Lambda remained warm since all the requests for database queries were processed by it. 
 
 
 ### Outcome
-Following these techniques, the cold start time finally came down from 30-40 seconds (for one Lambda) to under 10-12 seconds (for single API call including 4-5 lambdas). There are other methods to improve lambda performance like lambda warmers, CloudWatch alarms, provisioned concurrency etc. 
+Following these techniques, the cold start time finally came down from 30-40 seconds (for one Lambda) to under 10-12 seconds (for single API call including 4-5 Lambdas). There are other methods to improve Lambda performance like Lambda warmers, CloudWatch alarms, provisioned concurrency etc. 
 
 Though serverless is the future, it can be challenging to migrate JAVA based legacy applications with heavy frameworks to serverless. Analysis of other migration options like lift and shift migration, hybrid migration model etc. should be done to decide on the best approach.
 
