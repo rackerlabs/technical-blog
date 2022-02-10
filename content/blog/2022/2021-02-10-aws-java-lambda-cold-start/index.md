@@ -51,11 +51,11 @@ Initialized Lambda handler in the static block
 _Used @ComponentScan annotation for loading configurations than @Import_
 
 
-<img src=Picture4.png title="" alt="">
+<img src=Picture6.png title="" alt="">
 
 _Included below database configuration._
 
-<img src=Picture5.png title="" alt="">
+<img src=Picture4.png title="" alt="">
 
 _This setting is used to control whether we should consult the JDBC metadata to determine certain Settings default values when the database may not be available (mainly in tools usage)._
 
