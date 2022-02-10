@@ -51,7 +51,7 @@ Initialized Lambda handler in the static block
 _Used @ComponentScan annotation for loading configurations than @Import_
 
 
-<img src=Capture.png title="" alt="">
+<img src=PictureX.png title="" alt="">
 
 _Included below database configuration._
 
