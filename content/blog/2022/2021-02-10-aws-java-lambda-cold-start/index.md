@@ -51,13 +51,15 @@ Initialized Lambda handler in the static block
 _Used @ComponentScan annotation for loading configurations than @Import_
 
 
-<img src=Picture4.png title="" alt="">
+<img src=Capture.png title="" alt="">
 
 _Included below database configuration._
 
-<img src=Picture5.png title="" alt="">
+<img src=Picture4.png title="" alt="">
 
 _This setting is used to control whether we should consult the JDBC metadata to determine certain Settings default values when the database may not be available (mainly in tools usage)._
+
+<img src=Picture6.png title="" alt="">
 
 
 This helped in establishing the DB connection during Lambda execution rather than Lambda initialization and reduced INIT time for Lambda. We didn’t notice any other changes as for the DB calls but decided not to go ahead with this change for any unnoticeable effects it might have on database configuration.
