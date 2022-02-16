@@ -1,20 +1,20 @@
 ---
 layout: post
 title: "Oracle Far Sync Instances"
-date: 2022-02-15
+date: 2022-02-16
 comments: true
 author: Satyakam Mishra
-authorAvatar: 'https://secure.gravatar.com/avatar/c995a09e236f55b82451a9f8a6add9ad'
+authorAvatar: 'https://secure.gravatar.com/avatar/'
 bio: ""
 published: true
 authorIsRacker: true
 categories:
-    - General
-    - DevOps
+    - Databases
+    - Oracle
 metaTitle: "Oracle Far Sync Instances"
 metaDescription: "A remote Oracle Data Guard instance sometimes receives redo data from its primary database, and then, sends that redo data to the other member(s) of the Oracle Data Guard configuration. This activity consumes very little resources in terms of disk space and processing. "
 ogTitle: "Oracle Far Sync Instances- A Zero Data Loss Feature"
-ogDescription: "A remote Oracle Data Guard instance sometimes receives redo data from its primary database, and then, sends that redo data to the other member(s) of the Oracle Data Guard configuration. This activity consumes very little resources in terms of disk space and processing "
+ogDescription: "A remote Oracle Data Guard instance sometimes receives redo data from its primary database, and then, sends that redo data to the other member(s) of the Oracle Data Guard configuration. This activity consumes very little resources in terms of disk space and processing. "
 slug: "oracle-far-sync-instances"
 
 ---
@@ -29,7 +29,7 @@ A primary database fully utilizes the redo transport option while communicating 
 In many Primary-Standby Database configurations, primary database ships redo to a standby database via asynchronous transport option. In this type of config setting, there is a high risk of data loss during database failover scenario. 
 
 To ensure zero data-loss, if synchronous redo transport setup is used then it may not be a feasible option because commit response may have some impact at the primary, due to network latency between primary and standby.
-At this point, Far Sync instance plays a vital role. Far sync instance resides close to a Primary Database. This minimizes the impact of on/off  commit response time up to an acceptable time-threshold. The distance between Far Sync instance and Primary database always be within a smaller and an acceptable network latency time. This setup provides a better data protection. In case primary fails, assuming that the Far Sync instance was completely in-sync with the Primary at the time of failure, the Far Sync will start coordinating with the standby database(s) and migrate the final redo logs to standbys, which are not yet synced with Far Sync. This final redo logs shipping then makes the standby database(s) completely synched with failed primary. This is known as “zero-data-loss” scenario followed by a good failover to standby.
+At this point, Far Sync instance plays a vital role. Far sync instance resides close to a Primary Database. This minimizes the impact of on/off  commit response time up to an acceptable time-threshold. The distance between Far Sync instance and Primary database should always be within a smaller and an acceptable network latency time. This setup provides a better data protection. In case primary fails, assuming that the Far Sync instance was completely in-sync with the Primary at the time of failure, the Far Sync will start coordinating with the standby database(s) and migrate the final redo logs to standbys, which are not yet synced with Far Sync. This final redo logs shipping then makes the standby database(s) completely synched with failed primary. This is known as “zero-data-loss” scenario followed by a good failover to standby.
 
 <img src="Picture2.png" title="" alt="">
 
@@ -72,8 +72,13 @@ To ensure more protection from system or network failures, you can opt for build
 
 ### Supported Protection Modes for Far Sync Instances  
 
+
 There are two types of protection mode available in the Far Sync instance configuration:
+
+
 a)	Maximum Availability Mode: In this mode, Far Sync instance resides comparatively closer to the primary database to reduce network latency. This mode uses Synchronous transport as a primary service for redo transport.
+
+
 
 b)	Maximum Performance Mode: In this mode, primary database uses the asynchronous redo primary service to the Far Sync instance destination for redo transport. Regardless of the physical distance between Far Sync and the primary instance, the high network latencies do not impact redo tractions if remote destination uses the asynchronous transport. A Far Sync instance can provide more benefits to Oracle Data Guard configurations which have more than one remote destination. Almost zero-incremental effect for every remote destination adds to the Data Guard configuration. A Far Sync instance also takes care of a redo transport compression and offloads it from a primary including serving the rest of the standbys in the configuration. To achieve better performance, you need to ensure that the number of destinations is high.
 
