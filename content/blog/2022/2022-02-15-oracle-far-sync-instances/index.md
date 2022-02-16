@@ -4,7 +4,7 @@ title: "Oracle Far Sync Instances"
 date: 2022-02-15
 comments: true
 author: Satyakam Mishra
-authorAvatar: 'https://secure.gravatar.com/avatar/c995a09e236f55b82451a9f8a6add9ad'
+authorAvatar: 'https://secure.gravatar.com/avatar/'
 bio: ""
 published: true
 authorIsRacker: true
