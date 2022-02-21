@@ -3,8 +3,8 @@ layout: post
 title: "VMware Cloud Director: An Introduction"
 date: 2022-02-21
 comments: true
-author: 
-authorAvatar: 'https://secure.gravatar.com/avatar/'
+author: Amine Badaoui
+authorAvatar: 'https://secure.gravatar.com/avatar/4773f2881d905eb157bc8ad84c69f6f7'
 bio: ""
 published: true
 authorIsRacker: true
