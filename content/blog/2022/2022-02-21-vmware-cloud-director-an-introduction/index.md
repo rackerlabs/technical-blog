@@ -51,6 +51,13 @@ VMware Cloud Director isn’t vSphere, It introduces various new terminologies a
 
 **At Rackspace, we’ve enjoyed the many benefits VMware Cloud Director brings as it has allowed us to engineer a VMware-based cloud solution that delivers some amazing customer benefits once thought not possible on VMware. In this series over the next few weeks, I’ll provide an overview of some of the key features of VMware Cloud Director and our learnings.  The series will cover the following topics so be sure to check back for new posts.** 
 
+-	VCD  Autosacaling
+-	VCD Terraform interaction
+-	VCD Tanzu integration
+-	VCD 3.0 New Features
+-	VCD Storage Policies
+-	VCD VCF Integration
+
 <a class="cta red" id="cta" href="https://www.rackspace.com/cloud/vmware">Let our experts guide you on your VMware journey.</a>
 
 Use the Feedback tab to make any comments or ask questions. You can also
