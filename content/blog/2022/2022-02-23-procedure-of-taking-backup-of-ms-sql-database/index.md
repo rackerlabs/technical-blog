@@ -53,19 +53,31 @@ It includes all log entries that were absent in the previous transaction log bac
 
 #### Step 1: Select database which you want to take the backup of and click on the right, you will see a screen pop as shown in the following snapshot. Then Go to the task and select 'backup.'
 
+
 <img src=Picture1.png title="" alt="">
+
+
 
 #### Step 2. Select backup type (Full\diff\log) and make sure to check destination path which is where the backup file will be created. 
 
+
 <img src=Picture2.png title="" alt="">
+
+
 
 #### Step 3. Go to Backup option & and select the compress backup if required.
 
+
 <img src=Picture3.png title="" alt="">
+
+
 
 #### Step 4. Go to add button and select the path where you want to keep the backup file. Make sure the backup location is accessible.
 
+
 <img src=Picture4.png title="" alt="">
+
+
 
 #### Step 5. Select the path and type of the backup file name with .BAK and click ok.
 
@@ -75,22 +87,31 @@ Extension of Backup:
 3. For Differential (.dif) 
 4.	For File & File group (.fil)
 
+
 <img src=Picture5.png title="" alt="">
+
 
 #### Step 6. Go to Ok button.
 
+
 <img src=Picture6.png title="" alt="">
 
+
 #### Step 7. Go to OK button then again OK
+
 
 <img src=Picture7.png title="" alt="">
 
 
+
 #### Step 8. Backup has been completed and click ok again.
+
 
 <img src=Picture8.png title="" alt="">
 
+
 #### Step 9. Check the Backup file where you keep the backup.
+
 
 <img src=Picture9.png title="" alt="">
 
