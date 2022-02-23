@@ -23,11 +23,17 @@ slug: "vmware-cloud-director-an-introduction "
 <!--more-->
 
 •	VCD Overview
+
 •	VCD Autoscaling
+
 •	VCD Terraform interaction
+
 •	VCD Tanzu integration
+
 •	VCD 3.0 New Features
+
 •	VCD Storage Policies
+
 •	VCD VCF Integration
 
 
