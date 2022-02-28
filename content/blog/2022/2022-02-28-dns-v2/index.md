@@ -22,7 +22,7 @@ At Rackspace Technology, we’re constantly upgrading and updating our systems t
 
 <!--more-->
 
-At Rackspace Technology, we’re constantly upgrading and updating our systems to meet the security and convenience of our customers. To this end, we have worked on creating a new Cloud DNS API. This evolved version will help our customers manage their DNS in a more convenient and easy to manage set of processes. The key differentiators of the DNS v2 against the previous versions are outlined below:
+To this end, we have worked on creating a new Cloud DNS API. This evolved version will help our customers manage their DNS in a more convenient and easy to manage set of processes. The key differentiators of the DNS v2 against the previous versions are outlined below:
 We’ve created a new Cloud DNS API which we’re calling v2. The Cloud DNS v1 API will continue to be supported and work as before, but v2 brings with it several enhancements:
 
 
@@ -38,7 +38,7 @@ We’ve created a new Cloud DNS API which we’re calling v2. The Cloud DNS v1 A
 
 -	We’ve made the code base easier to understand and maintain, so we can deliver new features quicker than ever before
 
-With the new DNS v2, customers can easily maintain their DNS with the added advantage of up-to-date documentation, simpler operations and a more robust and efficient DNS architecture. IT also adds the added benefits of handling more volume and faster turnaround times with synchronous endpoints and faster feature delivery.
+With the new DNS v2, customers can easily maintain their DNS with the added advantage of up-to-date documentation, simpler operations and a more robust and efficient DNS architecture. It also adds the added benefits of handling more volume and faster turnaround times with synchronous endpoints and faster feature delivery.
 
 
 <a class="cta red" id="cta" href="https://www.rackspace.com/cloud/bare-metal">Let our experts guide you on your Managed Hosting Journey.</a>
