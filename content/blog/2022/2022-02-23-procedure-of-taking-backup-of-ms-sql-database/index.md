@@ -3,7 +3,7 @@ layout: post
 title: "Procedure of taking backup of MS SQL Database"
 date: 2022-02-23
 comments: true
-author: 
+author: Ravi Kant Sharma
 authorAvatar: 'https://secure.gravatar.com/avatar/c7776b42759c729500163fc6588221ac'
 bio: ""
 published: true
