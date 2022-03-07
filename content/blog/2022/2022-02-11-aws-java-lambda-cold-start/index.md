@@ -44,7 +44,7 @@ Recommended optimization techniques like Increasing the allocated memory to Lamb
 _Initialized Lambda handler in the static block_
 
 <img src=Picture3.png title="" alt="">
-_@ Import annotation for loading configurations than @ComponentScan_
+@ Import annotation for loading configurations than @ComponentScan
 
 
 <img src=Picture4.png title="" alt="">
