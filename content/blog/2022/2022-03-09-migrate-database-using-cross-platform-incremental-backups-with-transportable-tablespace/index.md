@@ -55,7 +55,7 @@ On the source database server, from the operating system owner Oracle, download 
 *Step 1.5)* **Create necessary backup locations**
 
 **a)On source:**
--	Location of the source database backups created from xttdriver.pl script during stage 2 as defined by in the xtt.properties file refer step 1.6.
+-	Location of the source database backups created from xttdriver.pl script during stage 2 as defined by in the xtt.properties file, refer step 1.6.
 
 _Note: xttconvert scripts won’t support compressed backup so kindly ensure the directory we create has enough space to hold space equal to source database size._
 
