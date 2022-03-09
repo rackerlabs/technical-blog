@@ -19,7 +19,7 @@ slug: "migrate-database-using-cross-platform-incremental-backups-with-transporta
 
 ---
 
-The transportable tablespace feature enables to move a set of applications from one Oracle database to another desired Oracle database. 
+The transportable tablespace feature enables the user to move a set of applications from one Oracle database to another desired Oracle database. 
 
 <!--more-->
 
