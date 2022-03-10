@@ -4,7 +4,7 @@ title: "Migrate database using cross-platform incremental backups with transport
 date: 2022-03-09
 comments: true
 author: Anil Kumar Kampiri
-authorAvatar: 'https://secure.gravatar.com/avatar/'
+authorAvatar: 'https://secure.gravatar.com/avatar/a1f38e61622643d571b436ed655a7565'
 bio: ""
 published: true
 authorIsRacker: true
