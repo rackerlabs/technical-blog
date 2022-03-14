@@ -70,7 +70,7 @@ An Organization Virtual Data Center (OVDC) is a subset of the resources that are
 I hope this was helpful. In the next article we will look at allocation models which determines how and when resources are committed. 
 
 
-<a class="cta red" id="cta" href="https://docs.rackspace.com/blog/vmware-cloud-director-an-introduction/">Follow our VMware CLoud Directory Blog Series.</a>
+<a class="cta red" id="cta" href="https://docs.rackspace.com/blog/vmware-cloud-director-an-introduction/">Follow our VMware Cloud Director Blog Series.</a>
 
 <a class="cta red" id="cta" href="https://www.rackspace.com/cloud/vmware"> Let our experts guide you on your VMware Journey.</a>
 
