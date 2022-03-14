@@ -67,6 +67,9 @@ While VMware cloud director is a best in class platform for delivering infrastru
 VMware Cloud Director isn’t vSphere, It introduces various new terminologies and concepts that are quite different, it also requires a new way of thinking to manage and operate. In the next few articles we will go through VMware Cloud Director core concepts and various day 2 operations so stay tuned!
 
 
+<a class="cta red" id="cta" href="https://docs.rackspace.com/blog/VMware-cloud-director-logical-constructs/"> Click here to read the next part of the VMware Cloud Director Blog Series .</a>
+
+
 <a class="cta red" id="cta" href="https://www.rackspace.com/cloud/vmware">Let our experts guide you on your VMware journey.</a>
 
 Use the Feedback tab to make any comments or ask questions. You can also
