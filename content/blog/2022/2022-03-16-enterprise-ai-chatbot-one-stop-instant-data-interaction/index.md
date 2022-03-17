@@ -4,7 +4,7 @@ title: "Enterprise AI-Chatbot: One-stop instant data interaction"
 date: 2022-03-16
 comments: true
 author: Prashanth Soma
-authorAvatar: 'https://secure.gravatar.com/avatar/'
+authorAvatar: 'https://secure.gravatar.com/avatar/7e1fed4731840026d1161a6ff1aa9170'
 bio: "Prashanth is a GCP AI/ML Cloud Solution Specialist and Delivery Architect of Professional Services at Rackspace. He is passionate about data, artificial intelligence, and machine learning. He loves promoting GCP AI/ML services through webinars and events and sharing his knowledge."
 published: true
 authorIsRacker: true
