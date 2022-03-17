@@ -60,14 +60,13 @@ _Fig. Conversational AI Building blocks_
 Google Dialogflow conversational AI framework is the out of the box chatbot offering from Google Cloud Platform. AWS Amazon Lex, Azure Bot framework, IBM Watson Assistant, Servicenow Virtual Agent, SAP CAI, etc. are some of the other cloud chat service offerings. These cloud conversational AI services are advantageous in seamlessly integrating with enterprise data cloud and their consuming applications. Promote better ways for user engagement to interact with the bot on various conversational user interfaces like mobile apps, web apps, IVRs, enterprise communication channels, etc. The chat services analyze multiple input forms like, text or audio inputs and support text-to-speech and speech-to-text conversations.
 
 ### Conclusion
-
-By using cross platform incremental backups with transportable tablespace migration can be done with reduced downtime across platforms. However, datatype restriction and limitation apply to transportable tablespace please refer to oracle article (Doc ID 1454872.1) for the complete supported platform and datatype.
+The enterprise AI - Chatbot will be the one-stop solution for all the business data needs. Enables interactive enterprise data interaction, anywhere anytime, accurate, and instant critical answers on-demand. Saves dashboard navigation efforts for finding right data KPI/metric or report. Users can access the bot from any of their existing communication channels or messaging platforms. Not dependent on any additional mobile or web application. Involves zero learning about bot. These enterprise data cloud integrations powered chatbots translate business user’s natural language conversations to data queries. Enables users to freely interact without the need to structure their queries. Provides context aware human like interactions and supports first level of automation. Reduces technology gaps for querying data and, avoids IT or SPOC dependency and the hours to days of efforts required for a quick data check or data extraction. Also, enables conversation history and voice assistance. 
 
 Watch Rackspace Google Next’21 On-demand [session](https://www.youtube.com/watch?v=SPnDPvF8ApY) to view enterprise Conversational AI bot in action.
 
 ### Next Steps
 
-Take advantage of our Complimentary [AI Discovery Session](https://www.rackspace.com/lp/ai-ml-consultation) with an AI Solution Architect to learn more about how your business can leverage Conversational AI on google cloud platform.
+Take advantage of our Complimentary [AI Discovery Session](https://www.rackspace.com/lp/ai-ml-consultation) with an AI Solution Architect to learn more about how your business can leverage Conversational AI.
 
 
 <a class="cta red" id="cta" href="https://www.rackspace.com/data/ai-machine-learning">Let our experts guide you on your AI and Machine Learning journey.</a>
