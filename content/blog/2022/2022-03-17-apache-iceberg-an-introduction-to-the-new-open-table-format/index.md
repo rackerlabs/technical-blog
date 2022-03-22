@@ -60,6 +60,7 @@ Apache Iceberg is a new table format design, which addresses the issues faced by
 
 <img src=Picture1.png title="" alt="">
 
+Source: https://iceberg.apache.org/spec/
 
 -	The [design structure](https://iceberg.apache.org/spec/) of Apache Iceberg is different from Apache Hive, where the metadata layer and data layer are managed and maintained on object storage like Hadoop, s3, etc.
 -	It uses a file structure (metadata and manifest files) that is managed in the metadata layer. Each commit at any timeline is stored as an event on the data layer when data is added.  The metadata layer manages the snapshot list. Additionally, it supports integration with multiple query engines,
