@@ -5,7 +5,7 @@ date: 2022-03-23
 comments: true
 author: Tejashkumar Patel
 authorAvatar: 'https://secure.gravatar.com/avatar/93f8a2afa4b179946cc23ac18a0ff8a5'
-bio: ""
+bio: "A Database Administrator with more than a decade years of experience in various RDBMS, Bigdata/NoSQL database technologies, and cloud platform."
 published: true
 authorIsRacker: true
 categories:
