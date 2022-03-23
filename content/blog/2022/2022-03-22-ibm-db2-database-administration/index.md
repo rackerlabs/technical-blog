@@ -3,7 +3,7 @@ layout: post
 title: "IBM DB2 Database Administration"
 date: 2022-03-23
 comments: true
-author: TejashKumar Patel
+author: Tejashkumar Patel
 authorAvatar: 'https://secure.gravatar.com/avatar/93f8a2afa4b179946cc23ac18a0ff8a5'
 bio: ""
 published: true
