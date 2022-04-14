@@ -4,7 +4,7 @@ title: "Oracle 21c New Features"
 date: 2022-04-14
 comments: true
 author: Ruhi Sharma
-authorAvatar: 'https://secure.gravatar.com/avatar/'
+authorAvatar: 'https://secure.gravatar.com/avatar/f0aa80ebad418a10b4219126c755c52e'
 bio: ""
 published: true
 authorIsRacker: true
