@@ -10,10 +10,10 @@ published: true
 authorIsRacker: true
 categories:
     - Oracle
-metaTitle: "Oracle EBS R12.2 ADOP Issues Fixes/Workarounds"
-metaDescription: "In this blog I have discussed fixes/workaround issues faced by our customers on ADOP."
-ogTitle: "Oracle EBS R12.2 ADOP Issues Fixes/Workarounds"
-ogDescription: "In this blog I have discussed fixes/workaround issues faced by our customers on ADOP."
+metaTitle: "Oracle EBS R12.2 ADOP Issues Fixesand Workarounds"
+metaDescription: "In this blog I have discussed fixesand Workaround issues faced by our customers on ADOP."
+ogTitle: "Oracle EBS R12.2 ADOP Issues Fixes and Workarounds"
+ogDescription: "In this blog I have discussed fixes and workaround issues faced by our customers on ADOP."
 slug: "oracle-ebs-r12-2-adop-issues-fixes-workarounds"
 
 ---
