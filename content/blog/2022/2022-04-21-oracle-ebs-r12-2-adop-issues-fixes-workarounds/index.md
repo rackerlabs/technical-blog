@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Oracle EBS R12.2 ADOP Issues Fixes/Workarounds"
-date: 2022-04-21
+date: 2022-04-22
 comments: true
 author:Vijaya Kumar Dosapati 
 authorAvatar: 'https://www.gravatar.com/avatar/7e15e65271e4e139033afaf7dbe8a3ed'
