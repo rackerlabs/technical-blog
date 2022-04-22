@@ -10,7 +10,7 @@ published: true
 authorIsRacker: true
 categories:
     - Oracle
-    - Databases
+    - Database
 metaTitle: "Oracle EBS R12.2 ADOP Issues Fixes/Workarounds"
 metaDescription: "In this blog I have discussed fixes/workaround issues faced by our customers on ADOP."
 ogTitle: "Oracle EBS R12.2 ADOP Issues Fixes/Workarounds"
