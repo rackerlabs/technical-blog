@@ -5,8 +5,7 @@ date: 2022-05-05
 comments: true
 author: Anka Rao Ambepalli
 authorAvatar: 'https://secure.gravatar.com/avatar/0b7d874d1ea3632a745e612bcb4eca3a'
-bio: "[19:41] Anka Rao Ambepalli
-I have total of 8 years experience in IT industry. I have good exposure to Bigdata and cloud technologies. Extensively worked on creating data pipelines in airflow and have good data analytics skills."
+bio: "I have total of 8 years experience in IT industry. I have good exposure to Bigdata and cloud technologies. Extensively worked on creating data pipelines in airflow and have good data analytics skills."
 published: true
 authorIsRacker: true
 categories:
