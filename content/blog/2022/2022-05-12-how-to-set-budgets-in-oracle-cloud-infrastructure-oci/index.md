@@ -4,13 +4,13 @@ title: "How to set Budgets in Oracle cloud infrastructure (OCI)"
 date: 2022-05-12
 comments: true
 author: Santosh Kumar
-authorAvatar: 'https://secure.gravatar.com/avatar/c995a09e236f55b82451a9f8a6add9ad'
+authorAvatar: 'https://secure.gravatar.com/avatar/'
 bio: ""
 published: true
 authorIsRacker: true
 categories:
     - Oracle
-    - General
+    - Database
 metaTitle: "How to set Budgets in Oracle cloud infrastructure (OCI)"
 metaDescription: "A budget is an option provided in OCI console by which you can track Oracle Cloud Infrastructure (OCI) spending."
 ogTitle: "How to set Budgets in Oracle cloud infrastructure (OCI)"
@@ -138,7 +138,7 @@ Cost plays a vital role in any of the cloud services. OCI provides the feature t
 
 
 
-<a class="cta red" id="cta" href="https://www.rackspace.com/hub/modern-cloud-applications">Let our experts guide you on your cloud-native journey.</a>
+<a class="cta red" id="cta" href="https://www.rackspace.com/data/managed-sql">Let our experts guide you on your Oracle database journey.</a>
 
 Use the Feedback tab to make any comments or ask questions. You can also
 [start a conversation with us](https://www.rackspace.com/contact).
