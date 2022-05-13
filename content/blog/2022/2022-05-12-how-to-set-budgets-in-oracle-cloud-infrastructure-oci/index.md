@@ -4,7 +4,7 @@ title: "How to set Budgets in Oracle cloud infrastructure (OCI)"
 date: 2022-05-12
 comments: true
 author: Santosh Kumar
-authorAvatar: 'https://secure.gravatar.com/avatar/'
+authorAvatar: 'https://secure.gravatar.com/avatar/0d3c022f6dc5245d2602222d67cf86fa'
 bio: ""
 published: true
 authorIsRacker: true
