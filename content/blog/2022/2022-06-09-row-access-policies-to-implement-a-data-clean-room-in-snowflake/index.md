@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Row Access Policies to Implement a Data Clean Room in Snowflake"
-date: 2022-06-029
+date: 2022-06-09
 comments: true
 author: Cristian Scutaru 
 authorAvatar: 'https://secure.gravatar.com/avatar/a3d4c57f7fe0ebfa4bd2aba864618eaf'
