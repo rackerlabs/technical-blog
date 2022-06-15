@@ -116,8 +116,8 @@ select exists(select * from mary_table m join jack_table j on m.say = j.say) as 
 Allow Mary to set her secret the same as Jack’s, just to test the functionality here: 
 
 ```
-`use role mary;`
-`update mary_table set say='I am great';`
+use role mary;
+update mary_table set say='I am great';
 ```
 
 Now this will return True:
