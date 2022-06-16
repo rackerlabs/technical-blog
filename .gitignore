@@ -21,3 +21,4 @@ static/assets
 # Vale local styles
 .github/styles/Google
 .github/styles/Microsoft
+.hugo_build.lock

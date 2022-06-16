@@ -24,7 +24,6 @@ It’s common for advertisers to ask for more analytics from their publishers. T
 
 Two such partners may have their own private lists of users, customers, and products, that they cannot share with each other. Because of PII and other privacy concerns, or simply because this is valuable proprietary data. 
 
-
 <!--more-->
 
 However, they could eventually try to derive some information with real business value. For instance, they could try to internally match their customers and see how many they have in common. But how and where to combine those lists, when both parties do not want to share the details?
@@ -34,12 +33,9 @@ I wrote several times in the past about [this famous puzzle](https://medium.com/
 
 *How can two millionaires (Alice and Bob) determine whose net worth is higher without telling each other how much money they each have?*
 
-
-
 You see how similar the problem is with the scenario described before. And we used to implement this in Snowflake with a secure view and a secure function, but not without challenges: 
 
-<img src=Picture1.png title="" alt="">
-
+<img src=yao-millionaires-problem.png title="" alt="">
 
 A while ago, I challenged my coworkers (and my fellow Snowflake “Data Superheroes”) with a variation of the problem, to avoid looking for a solution by simply googling. And let’s implement this simple variation here, in Snowflake: 
 
@@ -49,7 +45,7 @@ A while ago, I challenged my coworkers (and my fellow Snowflake “Data Superher
 
 Let’s start by implementing the infrastructure, which is straightforward. We create both tables in a separate test database, but each owned and accessed by two different roles: Jack and Mary.
 
-```
+{{< highlight sql >}}
 use role accountadmin;
 use warehouse compute_wh;
 create or replace database yao_db;
@@ -63,29 +59,31 @@ grant role mary to role accountadmin;
 grant usage on database yao_db to role mary;
 grant usage, create table on schema yao_db.public to role mary;
 grant operate, usage on warehouse compute_wh to role mary;
-```
+{{< /highlight >}}
+
 Let’s create the “secret” tables now. Jack creates his table, Mary creates hers.
 
-```
+{{< highlight sql >}}
 use role jack;
 create or replace table jack_table(say text) as select 'I am great';
 select * from jack_table;
 use role mary;
 create or replace table mary_table(say text) as select 'Friday it is';
 select * from mary_table;
-```
+{{< /highlight >}}
 
 Test that Jack cannot see indeed Mary’s table, and Mary cannot access Jack’s:
-```
+
+{{< highlight sql >}}
 use role jack;
 select * from mary_table;
 use role mary;
 select * from jack_table;
-```
+{{< /highlight >}}
 
 And now the big hack, this is how we do it! Mary will be allowed to create a row access policy, which will be attached to her table and the column with her secret. The policy says that when the current role is Jack, the current statement (e.g. the SQL query he tries to execute) can be only the text defined there. Which simply joins the tables and returns True if the secrets are the same. Without giving up what is actually stored.
 
-```
+{{< highlight sql >}}
 use role accountadmin;
 grant create row access policy on schema yao_db.public to role mary;
 
@@ -96,54 +94,53 @@ create or replace row access policy mary_policy as (say text)
   or current_statement() = 'select exists(select * from mary_table m join jack_table j on m.say = j.say) as result;';
 alter table mary_table
   add row access policy mary_policy on (say);
-```
-
+{{< /highlight >}}
 
 And yes, now Mary can safely grant Jack access to her table. But remember that Jack cannot see raw table data. In fact, he can see nothing else! The only thing Jack can do is to run the exact query that Mary allowed him to execute. That will return only True or False. 
 
-```   
+{{< highlight sql >}}
 grant select on table mary_table to role jack;
-```
+{{< /highlight >}}
 
 With the Jack role, let’s check if it works indeed. It works and this will return False:
 
-```
+{{< highlight sql >}}
 use role jack;
 select * from mary_table;
 select exists(select * from mary_table m join jack_table j on m.say = j.say) as result;
-```
+{{< /highlight >}}
 
 Allow Mary to set her secret the same as Jack’s, just to test the functionality here: 
 
-```
+{{< highlight sql >}}
 use role mary;
 update mary_table set say='I am great';
-```
+{{< /highlight >}}
 
 Now this will return True:
 
-```
+{{< highlight sql >}}
 use role jack;
 select exists(select * from mary_table m join jack_table j on m.say = j.say) as result;
-```
+{{< /highlight >}}
 
 It is important to remember that the query should be called exactly as it has been defined in the policy. You may not add, change, or remove any blank space, new line, or alias, because this will make it a different new query.
 
 The following query, that changed the m alias to mm, will always return False:
 
-```
+{{< highlight sql >}}
 select exists(select * from mary_table mm join jack_table j on mm.say = j.say) as result;
-```
+{{< /highlight >}}
+
 ### Data Clean Rooms in real life
 
 I wrote a while ago [another article with a concrete example.](https://medium.com/snowflake/snowflake-data-clean-rooms-with-row-access-policies-4892ea266bab) 
 
 Here below the Consumer – which can be a separate Snowflake partner account – has its own list of associates he doesn’t want to share. The Producer – which can be your Snowflake account – has a list of customers you don’t want to share. The names of the associates and the customers are PII (Personally Identifiable Information), which by law you cannot share with any third-party. 
 
-<img src=Picture11.png title="" alt="">
+<img src=data-clean-room.png title="" alt="">
 
 You saved the total sales value for each of your customers. And this is your very valuable proprietary information, you may never want to share this with anyone. However, you may extract some business value by allowing your partner account to eventually derive some information. Only for those customers and associates with the same names, assuming they are the same persons, you may allow a query that groups by their profession and returns the sales as an average value. [Properly matching records by name it’s another story](https://medium.com/infostrux-solutions/how-to-properly-match-records-in-a-snowflake-data-clean-room-4bdfdcbcb56c), for another time.
-
 
 Your row access policy may define even more than one single query a third-party can run. It’s recommended to store all these allowed statements into a separate table that you own. 
 
@@ -158,8 +155,6 @@ While we deal with separate Snowflake account, you must also create a read-only 
 -	Many companies partner together on a lot of issues. They each have their proprietary data and sensitive data they cannot share because of legal issues. But it is still possible to derive some valuable information without exposing the rest.
 
 -	Snowflake made it very easy lately, when most other ways to implement a Data Clean Room are rather unsafe and complicated. Row access policies allow you to grant access to only a few statements that you know for sure will return predictable data. For the rest, both you and your partner are totally protected.
-
-
 
 <a class="cta purple" id="cta" href="https://www.rackspace.com/data/data-warehouses">Let our experts guide you on your Data Warehousing journey.</a>
 
