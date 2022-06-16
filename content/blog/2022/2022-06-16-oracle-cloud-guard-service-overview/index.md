@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Oracle Cloud Guard Service Overview"
-date: 2021-06-16
+date: 2022-06-16
 comments: true
 author: Ashish Malik
 authorAvatar: 'https://secure.gravatar.com/avatar/34310b153b29c26b510303ac8a4f6cec'
@@ -10,12 +10,12 @@ published: true
 authorisRacker: true
 categories: 
 - Oracle
-- Security
+- Database
 metaTitle: "Oracle Cloud Guard Service Overview"
 metaDescription: "I have been working on Oracle Cloud technologies since 2018 and based on my experience, the goal of the cloud vendor is to educate customers about the potential benefits of the cloud and their IT teams of its implementation and migrations."
 ogTitle: "Oracle Cloud Guard Service Overview"
 ogDescription: "I have been working on Oracle Cloud technologies since 2018 and based on my experience, the goal of the cloud vendor is to educate customers about the potential benefits of the cloud and their IT teams of its implementation and migrations."
-slug: "oracle-cloud-guard-service-overview" 
+slug: "oracle-cloud-guard-service-overview"
 
 ---
 
