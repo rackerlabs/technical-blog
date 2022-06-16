@@ -30,39 +30,45 @@ In this blog we will create a Kubernetes cluster in AWS with minimal steps. No t
 
 Create an AWS VPC with public and private subnets. Replace the *region-code* with any AWS region that is supported by AWS EKS(Elastic Kubernetes Service). Replace the name *my-eks-vpc-stack* with any name you like. 
 
-`aws cloudformation create-stack \`
-`--region region-code \`
-`--stack-name my-eks-vpc-stack \`
-
---template-url: https://amazon-eks.s3.us-west-2.amazonaws.com/cloudformation/2020-10-29/amazon-eks-vpc-private-subnets.yaml
+{{< highlight bash >}}
+aws cloudformation create-stack \
+  --region region-code \
+  --stack-name my-eks-vpc-stack \
+  --template-url https://amazon-eks.s3.us-west-2.amazonaws.com/cloudformation/2020-10-29/amazon-eks-vpc-private-subnets.yaml
+{{< /highlight >}}
 
 Create an AWS IAM role to be assumed by your K8S cluster and add policies to that role. K8S cluster will make calls to other AWS services (like S3,ELB etc) on your behalf via this role.
 To create a role, copy the below code to a file and name it as *eks_role.json*
 
-`  "Version": "2012-10-17",`  
-`  "Statement": [`
-  `{`
-  `    "Effect": "Allow",`
-`      "Principal": {`
-`        "Service": "eks.amazonaws.com"`
-`      },`
-`      "Action": "sts:AssumeRole"`
-`    }`
-`  ]`
-`}`
+{{< highlight json >}}
+  "Version": "2012-10-17",  
+  "Statement": [
+  {
+      "Effect": "Allow",
+      "Principal": {
+        "Service": "eks.amazonaws.com"
+      },
+      "Action": "sts:AssumeRole"
+    }
+  ]
+}
+{{< /highlight >}}
 
 Run below command to actually create the role in AWS account
 
-`aws iam create-role \`
-`  --role-name myAmazonEKSRole \`
-`  --assume-role-policy-document file://"eks_role.json"`
+{{< highlight bash >}}
+aws iam create-role \
+  --role-name myAmazonEKSRole \
+  --assume-role-policy-document file://"eks_role.json"
+{{< /highlight >}}
 
 Attach the required EKS managed policy to this role
 
-`aws iam attach-role-policy \`
-
-` --policy-arn arn:aws:iam::aws:policy/AmazonEKSClusterPolicy \`
- ` --role-name myAmazonEKSRole`
+{{< highlight bash >}}
+aws iam attach-role-policy \
+ --policy-arn arn:aws:iam::aws:policy/AmazonEKSClusterPolicy \
+ --role-name myAmazonEKSRole
+{{< /highlight >}}
 
 Open the AWS console at : https://console.aws.amazon.com/eks/home#/clusters  to create a  minimal EKS cluster
 
@@ -71,7 +77,6 @@ Open the AWS console at : https://console.aws.amazon.com/eks/home#/clusters  to 
 You will see a similar webpage as below. 
 
 <img src=Picture1.png title="" alt="">
-
 
 Click on **Create Cluster**  and fill the form as below:
 - **Name**: my-eks-cluster
@@ -89,11 +94,15 @@ Proceed ahead only after the EKS cluster is in active state.
 Configure your workstation/laptop to send request to the newly created AWS EKS cluster
 Give the _region-code_ same as where EKS cluster is provisioned above.
 
-`aws eks update-kubeconfig --region region-code --name my-eks-cluster`
+{{< highlight bash >}}
+aws eks update-kubeconfig --region region-code --name my-eks-cluster
+{{< /highlight >}}
 
 To verify you are able to communicate to EKS cluster from your workstation, run below command
 
-`kubectl get svc`
+{{< highlight bash >}}
+kubectl get svc
+{{< /highlight >}}
 
 You will see similar output.
 
@@ -103,44 +112,48 @@ Create an IAM role that will be assumed by the EC2 nodes that will act as worker
 
 Copy the below content in a file and name it *eks-node-group-role.json*
 
-`{`
-`  "Version": "2012-10-17",`
-`  "Statement": [`
-`    {`
-`      "Effect": "Allow",`
-`      "Principal": {`
-`        "Service": "ec2.amazonaws.com"`
-`      },`
-`      "Action": "sts:AssumeRole"`
-`    }`
-`  ]`
-`}`
+{{< highlight json >}}
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Principal": {
+        "Service": "ec2.amazonaws.com"
+      },
+      "Action": "sts:AssumeRole"
+    }
+  ]
+}
+{{< /highlight >}}
 
 Create the node IAM role
 
-`aws iam create-role \`
-`  --role-name myEKSNodeRole \`
-`  --assume-role-policy-document file://"eks-node-group-role.json"`
+{{< highlight bash >}}
+aws iam create-role \
+  --role-name myEKSNodeRole \
+  --assume-role-policy-document file://"eks-node-group-role.json"
+{{< /highlight >}}
 
 Add required EKS  managed policies to above role
 
-`aws iam attach-role-policy \`
+{{< highlight bash >}}
+aws iam attach-role-policy \
+  --policy-arn arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy \
+  --role-name myEKSNodeRole
 
-`--policy-arn arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy \`
-`  --role-name myEKSNodeRole`
+aws iam attach-role-policy \
+  --policy-arn arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryFullAccess \
+  --role-name myEKSNodeRole
 
-`aws iam attach-role-policy \`
-`  --policy-arn arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryFullAccess \`
-`  --role-name myEKSNodeRole`
+aws iam attach-role-policy \
+  --policy-arn arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly \
+  --role-name myEKSNodeRole
 
-`aws iam attach-role-policy \`
-`  --policy-arn arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly \`
-`  --role-name myEKSNodeRole`
-
-`aws iam attach-role-policy \`
-`  --policy-arn arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy \`
-
-`  --role-name myEKSNodeRole`
+aws iam attach-role-policy \
+  --policy-arn arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy \
+  --role-name myEKSNodeRole
+{{< /highlight >}}
 
 **
 
@@ -164,8 +177,6 @@ To verify if your EKS cluster is running fine, run below command
 You should see similar output.
 <img src=Picture4.png title="" alt="">
 
-
-
 <a class="cta purple" id="cta" href="https://www.rackspace.com/cloud/aws">Learn about Rackspace Managed AWS Services.</a>
 
 <a class="cta purple" id="cta" href="https://www.rackspace.com/applications/cloud-native"> Learn about Rackspace Cloud Native Technologies.</a>
@@ -173,7 +184,3 @@ You should see similar output.
 
 Use the Feedback tab to make any comments or ask questions. You can also
 [start a conversation with us](https://www.rackspace.com/contact).
-
-
-
-

@@ -69,8 +69,10 @@ DEVCDB    READ WRITE           ECC
 
 #### 2. Install WebLogic Server
 
-`sh $ECC_BASE/Oracle/quickInstall/envSetup.sh`
-`   select Install WebLogic Server - Select 2    `
+{{< highlight bash >}}
+sh $ECC_BASE/Oracle/quickInstall/envSetup.sh
+   select Install WebLogic Server - Select 2
+{{< /highlight >}}
 
 <img src=Picture4.png title="" alt="">
 <img src=Picture5.png title="" alt="">
