@@ -48,11 +48,11 @@ Once you execute this script, it will add a new data file named TestDB_1 in N:\ 
  
 Now, after adding the data file start DBCC emptyfile operation on TestDB database. The syntax will be:
 
-```
+{{< highlight >}}
 use YOURDATABASE
 go
 dbcc shrinkfile(‘mdfFileName’,emptyfile)
-```
+{{< /highlight >}}
 
 So in our case it will be:
 
@@ -132,3 +132,5 @@ Once this data movement activity is complete, please run database maintenance jo
 
 Use the Feedback tab to make any comments or ask questions. You can also
 [start a conversation with us](https://www.rackspace.com/contact).
+
+
