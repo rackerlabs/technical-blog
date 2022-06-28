@@ -123,8 +123,7 @@ This is because there is system information within the original file, which cann
 Once this data movement activity is complete, please run database maintenance jobs:
 -- Index optimize job
 -- Integrity check job
--- Full database backup job.
-
+-- Full database backup job
 
 
 <a class="cta purple" id="cta" href="https://www.rackspace.com/data/managed-sql"> Learn about Rackspace Managed Relational Databases.</a>
