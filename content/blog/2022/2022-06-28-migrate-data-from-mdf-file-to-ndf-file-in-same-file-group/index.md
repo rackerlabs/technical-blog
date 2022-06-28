@@ -47,11 +47,14 @@ Once you execute this script, it will add a new data file named TestDB_1 in N:\ 
  
 Now, after adding the data file start DBCC emptyfile operation on TestDB database. The syntax will be:
 
-```
+
+{{< highlight >}}
+
 use YOURDATABASE
 go
 dbcc shrinkfile(‘mdfFileName’,emptyfile)
-```
+
+{{< /highlight >}}
 
 So in our case it will be:
 
@@ -62,6 +65,7 @@ USE [TestDB]
 go
 
 DBCC shrinkfile ('TestDB’,emptyfile)
+
 {{< /highlight >}}
 
 Here TestDB is the logical name of the file from which we want to remove the data i.e our mdf file.
@@ -95,7 +99,15 @@ order by A.TYPE desc, A.NAME;
 For our approach, we wanted the ndf to be at around 500 GB, so once the ndf reach this size, we can stop the emptyfile operation.
 Once emptyfile operation is stopped, we need to manually reclaim the free space in mdf by using below query:
 
-`DBCC Shrinkfile('TestDB', 1500000)` --  We need to change the size in smaller chunks
+
+{{< highlight >}}
+
+DBCC Shrinkfile('TestDB', 1500000) --  
+
+
+{{< /highlight >}}
+
+We need to change the size in smaller chunks
 
 
 Now our mdf was 2 TB, we moved 500 GB to ndf, hence 500 GB is reclaimable from mdf, which we just reclaimed using above query.
@@ -104,7 +116,11 @@ We can repeat this step multiple time to move the data between datafiles, manual
 
 One thing to note while using emptyfile on mdf that you won’t be able to fully empty the contents of the primary data file with file ID 1. In order to get the file ID number, run this script.
 
-`select file_id, name,physical_name from sys.database_files`
+{{< highlight>}}
+
+select file_id, name,physical_name from sys.database_files
+
+{{< /highlight >}}
 
 <img src=Picture3.png title="" alt="">
 
