@@ -34,7 +34,7 @@ Our data file is hosted in N:\ drive and we will be creating another file in the
 **Solution**: Follow below steps to split the data between multiple SQL Server data files. 
 First, we need to add a secondary data file in which we will be inserting out data. It will be added as ndf (next data file). Run below script to add additional data file on TestDB database
 
-{{< highlight >}} 
+{{< highlight sql >}} 
 USE [master]
 GO
 ALTER DATABASE [TestDB] ADD FILE ( NAME = N'TestDB_1', FILENAME = 
@@ -48,7 +48,7 @@ Once you execute this script, it will add a new data file named TestDB_1 in N:\ 
 Now, after adding the data file start DBCC emptyfile operation on TestDB database. The syntax will be:
 
 
-{{< highlight >}}
+{{< highlight sql >}}
 
 use YOURDATABASE
 go
@@ -58,7 +58,7 @@ dbcc shrinkfile(‘mdfFileName’,emptyfile)
 
 So in our case it will be:
 
-{{< highlight >}}
+{{< highlight sql >}}
 
 USE [TestDB]
 
@@ -72,7 +72,7 @@ Here TestDB is the logical name of the file from which we want to remove the dat
 Now once we started this operation, we need to keep track, how much the data is moved from mdf to ndf. You can use below query to keep the track of the same:
 
 
-{{< highlight >}}
+{{< highlight sql >}}
 
 USE [TestDB]
 GO
@@ -100,7 +100,7 @@ For our approach, we wanted the ndf to be at around 500 GB, so once the ndf reac
 Once emptyfile operation is stopped, we need to manually reclaim the free space in mdf by using below query:
 
 
-{{< highlight >}}
+{{< highlight sql >}}
 
 DBCC Shrinkfile('TestDB', 1500000) --  
 
@@ -116,7 +116,7 @@ We can repeat this step multiple time to move the data between datafiles, manual
 
 One thing to note while using emptyfile on mdf that you won’t be able to fully empty the contents of the primary data file with file ID 1. In order to get the file ID number, run this script.
 
-{{< highlight>}}
+{{< highlight sql >}}
 
 select file_id, name,physical_name from sys.database_files
 
