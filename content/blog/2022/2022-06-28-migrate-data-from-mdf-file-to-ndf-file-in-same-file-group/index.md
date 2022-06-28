@@ -3,22 +3,21 @@ layout: post
 title: "Migrate data from mdf file to ndf file in same file group"
 date: 2022-06-28
 comments: true
-author: Shubham Sharma 
-authorAvatar: 'https://secure.gravatar.com/avatar/'
+author: Shubham Sharma
+authorAvatar: 'https://s.gravatar.com/avatar/'
 bio: ""
 published: true
 authorIsRacker: true
 categories:
     - SQL
     - Database
-
 metaTitle: "Migrate data from mdf file to ndf file in same file group"
-metaDescription: "Learn how to migrate data from mdf files to ndf files in the same file group"
+metaDescription: "Migrate data from mdf file to ndf file in same file group"
 ogTitle: "Migrate data from mdf file to ndf file in same file group"
-ogDescription: "Learn how to migrate data from mdf files to ndf files in the same file group"
+ogDescription: "Migrate data from mdf file to ndf file in same file group"
 slug: "migrate-data-from-mdf-file-to-ndf-file-in-same-file-group"
-
 ---
+
 
 **Problem:** Database integrity job was failing due to IOPS issue for TestDB database which is more than 2 TB in size. Due to large file size, it is becoming difficult to manage the database.
 
@@ -48,15 +47,16 @@ Once you execute this script, it will add a new data file named TestDB_1 in N:\ 
  
 Now, after adding the data file start DBCC emptyfile operation on TestDB database. The syntax will be:
 
-{{< highlight >}}
+```
 use YOURDATABASE
 go
 dbcc shrinkfile(‘mdfFileName’,emptyfile)
-{{< /highlight >}}
+```
 
 So in our case it will be:
 
 {{< highlight >}}
+
 USE [TestDB]
 
 go
@@ -123,7 +123,8 @@ This is because there is system information within the original file, which cann
 Once this data movement activity is complete, please run database maintenance jobs:
 -- Index optimize job
 -- Integrity check job
--- Full database backup job
+-- Full database backup job.
+
 
 
 <a class="cta purple" id="cta" href="https://www.rackspace.com/data/managed-sql"> Learn about Rackspace Managed Relational Databases.</a>
@@ -131,5 +132,3 @@ Once this data movement activity is complete, please run database maintenance jo
 
 Use the Feedback tab to make any comments or ask questions. You can also
 [start a conversation with us](https://www.rackspace.com/contact).
-
-
