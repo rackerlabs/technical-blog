@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Migrate data from mdf file to ndf file in same file group"
-date: 2022-06-27
+date: 2022-06-28
 comments: true
 author: Shubham Sharma 
 authorAvatar: 'https://secure.gravatar.com/avatar/'
@@ -11,7 +11,7 @@ authorIsRacker: true
 categories:
     - SQL
     - Database
-    
+
 metaTitle: "Migrate data from mdf file to ndf file in same file group"
 metaDescription: "Learn how to migrate data from mdf files to ndf files in the same file group"
 ogTitle: "Migrate data from mdf file to ndf file in same file group"
