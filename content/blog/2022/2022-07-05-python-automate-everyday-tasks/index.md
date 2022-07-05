@@ -29,11 +29,10 @@ Here are the three basic and the most important Python code snippets for interac
 ### 1. Create a Pivot Table:
 To create a pivot table, you require pandas and numpy modules. The first requires you to import these modules. Next, you need to read the data and ingest it into a variable. The *.pivot_table()* method creates the pivot table by providing necessary arguments such as index, values, columns and aggregate function. Finally, you save the pivot output in another excel.
 
-{{< highlight python >}}
+{{< Highlight Python >}}
 
 import pandas as pd
 import numpy as np
-
 
 datasource = pd.read_excel(r'C:\Users\')
 #### Reading source data using .read_excel() method
@@ -54,14 +53,14 @@ print(pivot_output)
 #### Save the pivot on the excel sheet
 pivot_output.to_excel(r'C:\Users\', sheet_name='Sheet1', startrow=5)
 
-{{< /highlight >}}
+{{< / Highlight >}}
 
 
 ###  2.	Refresh Pivot Table/Power Query
 
 In this we use the win32com library to refresh the pivot table. First, create an object and open the excel application. Using the object, open the excel file containing the pivot table by providing the source path. *RefreshAll()* method used on the excel instance refreshes all the data connections.
 
-{{< highlight python >}}
+{{< Highlight Python >}}
 
 import win32com.client
 #### win32com library for refresh operation
@@ -83,14 +82,14 @@ wb.Save()
 #### Quit
 xlapp.Quit()
 
-{{< /highlight python >}}
+{{< / Highlight >}}
 
 
 ### 3.	Formatting excel - Unmerge cells:
 
 Openpyxl is the most popular library for formatting excel. Here, you use a ‘for’ loop to iterate over the merged cells everywhere in the active sheet and apply the *.unmerge_cells()* method to get the output.
 
-{{< highlight python >}}
+{{< / Highlight Python >}}
 
 Import openpyxl as xl
 #### openpyxl library for formatting excel
@@ -106,7 +105,7 @@ ws = wb.active
 for i in sorted(ws.merged_cells.ranges):
     ws.unmerge_cells(str(i)) 			# Use .unmerge method
 
-{{< /highlight >}}
+{{< / Highlight >}}
 
 **NOTE:** Important Note: install all the libraries beforehand. (example: run “pip install pandas” in command prompt to install pandas)
 
