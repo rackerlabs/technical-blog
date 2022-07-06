@@ -29,7 +29,7 @@ Here are the three basic and the most important Python code snippets for interac
 ### 1. Create a Pivot Table:
 To create a pivot table, you require pandas and numpy modules. The first requires you to import these modules. Next, you need to read the data and ingest it into a variable. The *.pivot_table()* method creates the pivot table by providing necessary arguments such as index, values, columns and aggregate function. Finally, you save the pivot output in another excel.
 
-{{< Highlight Python >}}
+{{< Highlight >}}
 
 import pandas as pd
 import numpy as np
@@ -60,7 +60,7 @@ pivot_output.to_excel(r'C:\Users\', sheet_name='Sheet1', startrow=5)
 
 In this we use the win32com library to refresh the pivot table. First, create an object and open the excel application. Using the object, open the excel file containing the pivot table by providing the source path. *RefreshAll()* method used on the excel instance refreshes all the data connections.
 
-{{< Highlight Python >}}
+{{< Highlight >}}
 
 import win32com.client
 #### win32com library for refresh operation
@@ -89,7 +89,7 @@ xlapp.Quit()
 
 Openpyxl is the most popular library for formatting excel. Here, you use a ‘for’ loop to iterate over the merged cells everywhere in the active sheet and apply the *.unmerge_cells()* method to get the output.
 
-{{< Highlight Python >}}
+{{< Highlight >}}
 
 Import openpyxl as xl
 #### openpyxl library for formatting excel
