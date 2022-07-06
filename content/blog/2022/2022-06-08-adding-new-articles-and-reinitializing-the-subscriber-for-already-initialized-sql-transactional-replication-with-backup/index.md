@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Adding new articles and reinitializing the subscriber for already initialized SQL transactional replication with backup"
+title: "Adding new articles & reinitializing the existing SQL Server transactional replication "
 date: 2022-06-08
 comments: true
 author: Rachamallu Jayaprakash Reddy
