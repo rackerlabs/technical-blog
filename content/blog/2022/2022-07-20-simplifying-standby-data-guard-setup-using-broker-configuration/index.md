@@ -42,9 +42,7 @@ First, find out how many redolog group are already there at primary PRODP using 
 
 
 {{< highlight sql >}}
-
 SQL> select l.group#,l.status,lf.member,l.bytes/1024/1024 size_Mb from v$log l, v$logfile lf where l.group#=lf.group#;
-
 {{< /highlight sql >}}
 
 <img src=Picture1.png title="" alt="">
@@ -100,24 +98,20 @@ One can check if it is getting in sync with the primary database using the follo
 **On primary:**
 
 {{< highlight sql >}}
-
 select thread#, max(sequence#) "Last Primary Seq Generated"
 from v$archived_log val, v$database vdb
 where val.resetlogs_change# = vdb.resetlogs_change#
 group by thread# order by 1;  
-
 {{< /highlight sql >}}
 
 **On Standby:**
 
 {{< highlight sql >}}
-
 select thread#, max(sequence#) "Last Standby Seq Applied"
 from v$archived_log val, v$database vdb
 where val.resetlogs_change# = vdb.resetlogs_change#
 and val.applied in ('YES','IN-MEMORY')
 group by thread# order by 1;
-
 {{< /highlight sql >}}
 
 Now that we have a fully functional standby data guard, I will discuss the following two terms:
@@ -135,25 +129,20 @@ One may now connect to both current primary and current standby to check if redo
 **On Primary**
 
 {{< highlight sql >}}
-
 select thread#, max(sequence#) "Last Primary Seq Generated"
 from v$archived_log val, v$database vdb
 where val.resetlogs_change# = vdb.resetlogs_change#
 group by thread# order by 1;  
-
-
 {{< /highlight sql >}}
 
 **On Standby**: 
 
 {{< highlight sql >}}
-
 select thread#, max(sequence#) "Last Standby Seq Applied"
 from v$archived_log val, v$database vdb
 where val.resetlogs_change# = vdb.resetlogs_change#
 and val.applied in ('YES','IN-MEMORY')
 group by thread# order by 1;
-
 {{< /highlight sql >}}
 
 
