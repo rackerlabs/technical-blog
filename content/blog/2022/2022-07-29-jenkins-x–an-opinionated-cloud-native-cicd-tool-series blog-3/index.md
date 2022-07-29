@@ -10,7 +10,7 @@ published: true
 authorIsRacker: true
 categories:
     - Automation
-    - DevOps
+    - Jenkins-X
 metaTitle: "Jenkins X – An opinionated cloud native CICD tool (series blog-3)"
 metaDescription: "Install Jenkins X on AWS EKS cluster"
 ogTitle: "Install Jenkins X on AWS EKS cluster"
