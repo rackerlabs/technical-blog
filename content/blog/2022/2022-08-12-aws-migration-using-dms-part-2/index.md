@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AWS Migration Using DMS Series Part-1"
+title: "AWS Migration Using DMS Series Part-2"
 date: 2022-08-12
 comments: true
 author: Ankita Garg
