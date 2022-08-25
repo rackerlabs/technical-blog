@@ -22,8 +22,6 @@ This blog demonstrates the detailed steps needed during the DR testing with reve
  
 <!--more-->
 
-### Describing Version Control
-
 ### Introduction
 One common task for every DBA is to make sure that all mission-critical SQL Server instances and the databases within them are available around the clock to keep the business up and running by minimizing or no business disruptions.
 When your primary location experiences a geographical disaster like an earthquake, flood, or fire the business must be prepared by recovering or resuming the services from a geographically different location. 
