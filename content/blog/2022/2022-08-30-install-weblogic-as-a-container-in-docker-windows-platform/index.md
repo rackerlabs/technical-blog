@@ -100,7 +100,7 @@ https://hub.docker.com/r/ismaleiva90/weblogic12
 :\Users\kond1394>docker run -d -p 49163:7001 -p 49164:7002 -p 49165:5556 ismaleiva90/weblogic12:latest
 ```
 
-3.	Access weblogic using following port.
+3.	**Access weblogic using following port.**
 
 
         http://localhost:49163/console
