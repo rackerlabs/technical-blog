@@ -21,7 +21,7 @@ slug: "migrate-data-from-mdf-file-to-ndf-file-in-same-file-group"
 ---
 ### Introduction
 
-This blog discusses the various steps that can be taken to migrate data from an mdf file to an ndf file in the same file group.
+This blog discusses the various steps that can be taken to migrate data from an mdf file to an ndf file within the same file group.
 
 
 <!--more-->
