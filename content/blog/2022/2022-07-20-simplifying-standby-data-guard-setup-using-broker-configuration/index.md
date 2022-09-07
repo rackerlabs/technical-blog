@@ -18,14 +18,15 @@ ogDescription: "With Growing business demands and volume, grows the necessity of
 slug: "simplifying-standby-data-guard-setup-using-broker-configuration"
 
 ---
-With Growing business demands and volume, grows the necessity of having a fault tolerant system. A system that will still be available in case of any natural disaster. There are scenarios when the system needs to be taken down for scheduled maintenance. But what if the business demands do not allow the system to be taken down? The answer is to have a Disaster Recovery site (DR). 
+With Growing business demands and volume, grows the necessity of having a fault tolerant system. A system that will still be available in case of any natural disaster. There are scenarios when systems need to be taken down for scheduled maintenance. But what if the business demands do not allow the system to be taken down? The answer is to have a Disaster Recovery site (DR). 
 
 <!--more-->
 
-The DR will act as primary site in all cases mentioned above. Oracle provides its own disaster recovery solution called Standby Data guard. Building and maintaining a data guard manually is a complex process. Oracle provides a tool called, ‘broker’, which enables one to setup and maintain the data guard with ease. I have in this article discussed about how to setup a Standby data guard and perform switch over and failover using broker.
+The DR will act as primary site in all cases mentioned above. Oracle provides its own disaster recovery solution called Standby Data guard. Building and maintaining a data guard manually is a complex process. Oracle provides a tool called, ‘broker’, which enables one to setup and maintain the data guard with ease. I have, in this article, discussed about how to setup a Standby data guard and perform switch over and failover using the
+ broker.
 
 
-Assuming one needs to build the standby data guard from scratch, I will not be delving deep into prerequisites like server RPM, kernel settings for the server to host an Oracle Database. I will jump straight into technical steps that involves building and syncing a data guard with primary and will discuss a couple of scenarios where we make the data guard as primary to simulate natural disaster situation.
+Assuming one needs to build the standby data guard from scratch, I will not be delving deep into prerequisites like server RPM, kernel settings for the server to host an Oracle Database. I will jump straight into technical steps that involves building and syncing a data guard with *primary* and will discuss a couple of scenarios where we make the data guard as primary to simulate natural disaster situation.
 
 
 First thing first, take a backup of primary database and restore it at the DR site.
@@ -116,7 +117,8 @@ group by thread# order by 1;
 
 Now that we have a fully functional standby data guard, I will discuss the following two terms:
 
-**Switchover:** This is the case when we switch the role of primary and standby databases. That means, we will make the primary database as standby, and the standby database as primary. When will we require to do such activity? The answer is when we need to bring down the primary database for maintenance activities, but the business must be operational. In that case, we will switch the role of the databases, carry out the maintenance activity in the new standby database (which was the actual primary database before switchover), then we will again do a switchover to revert the roles of databases to original.
+**Switchover:** This is the case when we switch the role of primary and standby databases. That means, we will make the primary database as standby, and the standby database as primary. When will we be
+ required to do such activity? The answer is when we need to bring down the primary database for maintenance activities, but the business must be operational. In that case, we will switch the role of the databases, carry out the maintenance activity in the new standby database (which was the actual primary database before switchover), then we will again do a switchover to revert the roles of databases to original.
 
 **Failover:**  Failover is performed when, the primary site is completely inaccessible due to any natural calamity or other reasons. In this scenario, we will make the standby database as primary, and let the business run on top of it. When the primary site is restored, one may configure it as a standby database site, and do a switch over to go back to the original state of the databases.
 
@@ -166,12 +168,12 @@ Now that, primary database is running at the standby site, and standby database 
 
 ### Conclusion
 
-In summary, Data Guard provides an efficient and comprehensive disaster recovery and high availability solution. 
-Easy-to-manage switchover and failover capabilities allow role reversals between primary and standby databases, minimizing the downtime of the primary database for planned and unplanned outages.
+In summary, Data Guard provides an efficient and comprehensive disaster recovery and high availability solution, 
+easy-to-manage switchover and failover capabilities allow role reversals between primary and standby databases, minimizing the downtime of the primary database for planned and unplanned outages.
 The Data Guard broker provides a simple command-line interface to automate management and operational tasks across multiple databases in a Data Guard configuration. 
 The broker also monitors all the systems within a single Data Guard configuration.
 
-That’s not all, if we enable the fast-start failover, the broker automatically fails over to standby site, minimizing time, effort, and the downtime.
+That’s not all, if we enable the fast-start failover, the broker automatically fails over to standby site, minimizing time, effort, and downtime.
 
 
 <a class="cta purple" id="cta" href="https://www.rackspace.com/applications/oracle">Learn about Rackspace Managed Oracle Applications.</a>
