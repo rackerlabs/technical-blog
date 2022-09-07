@@ -10,7 +10,7 @@ published: true
 authorisRacker: true
 categories: 
 - Automation
-- General
+- Python
 
 metaTitle: "Python: Automate Everyday Tasks!"
 metaDescription: "This blog explains three different actions that can be automated and performed with Python on Excel"
@@ -20,14 +20,14 @@ slug: "python-automate-everyday-tasks"
 
 ---
 
-Excel is the most basic tool used worldwide. Irrespective of the company size, be it corporate bigwigs to local grocery shops, or maintaining a personal vacation budget, excel is a common tool used by all. Since every basic tabulation of data is preferred in an excel format, it’s only logical to keep it that way. However, automating recurring Excel tasks can be challenging, but we need not give up such a useful and widely accepted format altogether. One would argue the use of Power Query to automate a few steps or maybe VBA as an alternate, however, these methods are not much portable.
+Excel is one of the most popular tools used worldwide. Irrespective of the company size, be it corporate bigwigs or local grocery shops, or even maintaining a personal vacation budget, excel is a common tool used by all. Since every basic tabulation of data is preferred in an excel format, it’s only logical to keep it that way. However, automating recurring Excel tasks can be challenging, but we need not give up such a useful and widely accepted format altogether. One would argue the use of Power Query to automate a few steps or maybe VBA as an alternate, however, these methods are not very portable.
 
 <!--more-->
 
-Here are the three basic and the most important Python code snippets for interacting with excel (The below codes incorporate reading and writing data into the excel workbook):
+Here are three basic and the most important Python code snippets for interacting with excel (The below codes incorporate reading and writing data into the excel workbook):
 
 ### 1. Create a Pivot Table:
-To create a pivot table, you require pandas and numpy modules. The first requires you to import these modules. Next, you need to read the data and ingest it into a variable. The *.pivot_table()* method creates the pivot table by providing necessary arguments such as index, values, columns and aggregate function. Finally, you save the pivot output in another excel.
+To create a pivot table, you require *pandas* and *numpy* modules. The first requires you to import these modules. Next, you need to read the data and ingest it into a variable. The *.pivot_table()* method creates the pivot table by providing necessary arguments such as index, values, columns and aggregate functions. Finally, you save the pivot output in another excel.
 
 {{< highlight python >}}
 
@@ -58,7 +58,7 @@ pivot_output.to_excel(r'C:\Users\', sheet_name='Sheet1', startrow=5)
 
 ###  2.	Refresh Pivot Table/Power Query
 
-In this we use the win32com library to refresh the pivot table. First, create an object and open the excel application. Using the object, open the excel file containing the pivot table by providing the source path. *RefreshAll()* method used on the excel instance refreshes all the data connections.
+In this we use the *win32com* library to refresh the pivot table. First, create an object and open the excel application. Using the object, open the excel file containing the pivot table by providing the source path. *RefreshAll()* method used on the excel instance refreshes all the data connections.
 
 {{< highlight python >}}
 
@@ -111,7 +111,7 @@ for i in sorted(ws.merged_cells.ranges):
 
 
 ### Conclusion
-In the past, almost all my work, personal or professional, required me to create pivots or perform filtering data in excel. Excel is simple to use but the recurring tasks that too on a tightly scheduled workday seem a lot. Hence, I started looking for automation techniques. Python got the spotlight because of the huge library support it has, and I had completed a lot of projects during my learning phase. It is thrilling to see how by running a query can get repetitive tasks completed magically in seconds without opening a workbook. I hope you find the blog useful. Stay tuned for more on automation using Python. 
+In the past, almost all my work, personal or professional, required me to create pivots or perform filtering data in excel. Excel is simple to use but the recurring tasks, that too on a tightly scheduled workday, seem a lot. Hence, I started looking for automation techniques. Python got the spotlight because of the huge library support it has, and I had completed a lot of projects during my learning phase. It is thrilling to see how by running a query can get repetitive tasks completed magically in seconds without opening a workbook. I hope you find the blog useful. Stay tuned for more on automation using Python. 
 
 
 <a class="cta purple" id="cta" href="https://www.rackspace.com/data/managed-sql"> Learn about Rackspace Managed Relational Databases.</a>
