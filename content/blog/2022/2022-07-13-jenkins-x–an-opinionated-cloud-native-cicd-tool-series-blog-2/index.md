@@ -77,7 +77,7 @@ Enter your bot account name and click on **Invite**
 
 Add your bot account as owner in your git organization account and click on send invitation.
 
-You will get an invitation link in your bot account registered email. Accept the invitation and your bot account is added to your GitHub organization account.
+You will get an invitation link in your bot account's registered email. Accept the invitation and your bot account is added to your GitHub organization account.
 
 
 
