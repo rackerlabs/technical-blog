@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "How to Install PeopleSoft Cloud Manager in Oracle Cloud Infrastructure (OCI)"
-date: 2022-08-30
+date: 2022-09-16
 comments: true
-author: Kondapalli Sreeharsha
+author: Saikiran Munigela
 authorAvatar: 'https://secure.gravatar.com/avatar/'
 bio: ""
 published: true
