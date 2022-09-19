@@ -9,9 +9,9 @@ bio: ""
 published: true
 authorIsRacker: true
 categories:
-    - Docker
-    - Weblogic
-    - Containers
+    - Oracle
+    - Applications
+    - Cloud Native
 metaTitle: "How to Install PeopleSoft Cloud Manager in Oracle Cloud Infrastructure (OCI)"
 metaDescription: "What is PeopleSoft Cloud Manager?
 PeopleSoft Cloud Manager is a framework to provision and manage PeopleSoft environments on Oracle Cloud Infrastructure (OCI). PeopleSoft Cloud Manager is delivered through Oracle Cloud Marketplace.  This tool gives customers the ability to automate the process of the installation and deployment of PeopleSoft applications on OCI.
