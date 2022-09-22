@@ -13,7 +13,7 @@ categories:
     - Oracle
 
 metaTitle:"Setup Autonomous DB Monitoring in OMC"
-"
+
 metaDescription: "This Blog will show you, how to setup a Autonomous Database Monitoring in Oracle Management Cloud."
 ogTitle: "Setup Autonomous DB Monitoring in OMC"
 ogDescription: "This Blog will show you, how to setup a Autonomous Database Monitoring in Oracle Management Cloud."
