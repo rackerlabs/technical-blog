@@ -57,12 +57,6 @@ Click on "Add Profile"
 
 <img src=Picture7.png title="" alt="">
 
-`C:\Users\kond1394>docker pull ismaleiva90/weblogic12`
-
- - 2. **To start the docker machine with 7001, 7002 and 5556 ports opened:**
-
-`docker run -d -p 49163:7001 -p 49164:7002 -p 49165:5556 ismaleiva90/weblogic12:latest`
-
 <img src=Picture8.png title="" alt="">
 
 
