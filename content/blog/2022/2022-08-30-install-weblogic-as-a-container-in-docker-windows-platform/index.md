@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Install WebLogic as a container in Docker Windows Platform"
-date: 2022-08-30
+date: 2022-09-02
 comments: true
 author: Kondapalli Sreeharsha
 authorAvatar: 'https://secure.gravatar.com/avatar/fcc90ae2c7d8cb9bd7c789ffe89539af'
