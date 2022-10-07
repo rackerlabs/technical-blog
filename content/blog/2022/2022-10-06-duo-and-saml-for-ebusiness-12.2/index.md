@@ -106,7 +106,7 @@ In the steps Orchestration tab, you need to add three steps with Duonuiversal, u
 <img src=Picture10.png title="" alt="">
 
 ----------------------------------------------------------------------------------------------------
-
+----------------------------------------------------------------------------------------------------
 In duo portal, icons created by duo admin team and in Access manager we perform the following steps: 
 
 #### Step 1: Enable the Federation Services 
