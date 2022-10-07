@@ -81,7 +81,7 @@ Then click on activate to change "Activation Status" to Activated
 Once the plugin  is activated, you need to create a custom authentication module.
 
 In the next step, you need to Modify Plugins, the *UserIdentificationPlugIn* and *UserAuthenticationPlugIn* 
-for parameter KEY_IDENTITY_STORE_REF to OIDIdentityStore 
+for parameter -  KEY_IDENTITY_STORE_REF to OIDIdentityStore 
 
 <img src=Picture5.png title="" alt="">
 In Oracle Access manager Console, click on “Authentication Modules”, under "Plug-ins"
