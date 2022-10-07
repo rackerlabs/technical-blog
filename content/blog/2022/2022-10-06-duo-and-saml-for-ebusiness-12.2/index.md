@@ -105,7 +105,7 @@ In the steps Orchestration tab, you need to add three steps with Duonuiversal, u
 <img src=Picture9.png title="" alt="">
 <img src=Picture10.png title="" alt="">
 
-======================================================================================
+----------------------------------------------------------------------------------------------------
 
 In duo portal, icons created by duo admin team and in Access manager we perform the following steps: 
 
