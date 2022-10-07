@@ -107,7 +107,6 @@ In the steps Orchestration tab, you need to add three steps with Duonuiversal, u
 
 
 **Implementing SAML to enable single click  Authentication from Duo central**
-
 ----------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
 In duo portal, icons created by duo admin team and in Access manager we perform the following steps: 
