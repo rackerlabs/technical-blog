@@ -61,7 +61,7 @@ Following is the given screenshot Navigation to Enable MFA in Azure-AD.
 
 **Step 8**: Navigate on grant and click on same controls as given in the following screenshot.
 
-<img src=Picture9   .png title="" alt="">
+<img src=Picture9.png title="" alt="">
 
 **Step 9** : Navigate to right pane of window -----> select grant access then tick mark checkbox “**Required Multi-factor authentication**”.
 
