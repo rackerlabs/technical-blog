@@ -26,12 +26,16 @@ Security has always been a pressing concern even for the most seasoned DBA. Rega
 
 #### Components
 There are mainly 3 levels which requires security 
--	Server 
+
+Server 
 -	Database 
 -	Object 
 
-  - **Server Level**: Server is the topmost level in connecting to the SQL Instances / Databases.
+**Server Level**: Server is the topmost level in connecting to the SQL Instances / Databases.
+
+
 **Database Level**: Once connected to the Server, User need to access the Database.
+
 
 **Object Level**: Once connected to the database User need to access objects like tables stored procedures functions etc.
 
@@ -50,7 +54,7 @@ For providing security we have 3 processes:
 1.	Windows Login 
 2.	SQL Server Login
 - **Windows Login**: its nothing but a Domain User / AD User / Local Admin / Windows Admin
-**SQL Login**: This will be created inside the SQL Server with a User ID and a Password.
+- **SQL Login**: This will be created inside the SQL Server with a User ID and a Password.
 
 #### SQL Server Authentication and Authorization:
 
@@ -72,11 +76,11 @@ During the Installation, in SQL Server we must choose the authentication of both
 
 <img src=Picture1.png title="" alt="">
 
-*During the installation*
+        During the installation
 
 <img src=Picture2.png title="" alt="">
 
-*Post Installation*
+        Post Installation
 
 Below is the Image that shows us the features / Options available in MS SQL Server in Terms of Security. The same can be viewed from SQL Server Management Studio (SSMS).
 
