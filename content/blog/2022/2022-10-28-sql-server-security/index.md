@@ -27,7 +27,7 @@ Security has always been a pressing concern even for the most seasoned DBA. Rega
 #### Components
 There are mainly 3 levels which requires security 
 
-Server 
+- Server 
 -	Database 
 -	Object 
 
