@@ -18,7 +18,7 @@ ogDescription: "MFA is where users are prompted /required to authenticate with a
 slug: "enabling-multi-factor-authentication-mfa-in-azure-ad"
 
 ---
-#### Introduction (Overview)
+
 
 MFA is where users are prompted /required to authenticate with additional verification using additional form of identity verification. 
 
