@@ -4,7 +4,7 @@ title: "SQL Server Security"
 date: 2022-10-28
 comments: true
 author: Sandesh Kumar Jonnala
-authorAvatar: 'https://secure.gravatar.com/avatar/'
+authorAvatar: 'https://secure.gravatar.com/avatar/cc79ecfa755daad6484a2763ca44890b'
 bio: ""
 published: true
 authorIsRacker: true
@@ -27,7 +27,7 @@ Security has always been a pressing concern even for the most seasoned DBA. Rega
 #### Components
 There are mainly 3 levels which requires security 
 
-Server 
+- Server 
 -	Database 
 -	Object 
 
