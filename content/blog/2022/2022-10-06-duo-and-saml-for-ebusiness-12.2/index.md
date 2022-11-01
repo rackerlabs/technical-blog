@@ -19,7 +19,7 @@ ogDescription: "This blog covers steps on how to implement Multi Factor Authenti
 slug: "implementation-of-duo-and-saml-in-e-business-suite-12.2"
 
 ---
-### Introduction: 
+
 This blog covers steps on how to implement Multi Factor Authentication (MFA) for E-business suite, and Security Assertion Markup Language (SAML).
 
 
