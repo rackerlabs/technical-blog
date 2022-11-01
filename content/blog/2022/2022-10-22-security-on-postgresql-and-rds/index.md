@@ -18,7 +18,7 @@ ogDescription: "This Document describes how to set up the security in PostgreSQL
 slug: "security-on-postgresql-and-rds"
 
 ---
-#### Introduction 
+
 
 This Document describes how to set up the security in PostgreSQL and AWS Aurora and best practices. The Database security referrers to a set of procedures and policies that safeguard data. It becomes crucial to understand its significance.
 
