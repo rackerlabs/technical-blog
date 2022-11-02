@@ -9,7 +9,7 @@ bio: ""
 published: true
 authorIsRacker: true
 categories:
-    - Azure
+    - Database
     - Security
 metaTitle: "Enabling Multi-Factor Authentication (MFA) in Azure AD"
 metaDescription: "MFA is where users are prompted /required to authenticate with additional verification using additional form of identity verification. "
