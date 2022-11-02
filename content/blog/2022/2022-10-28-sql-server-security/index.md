@@ -4,7 +4,7 @@ title: "SQL Server Security"
 date: 2022-10-28
 comments: true
 author: Sandesh Kumar Jonnala
-authorAvatar: 'https://secure.gravatar.com/avatar/'
+authorAvatar: 'https://secure.gravatar.com/avatar/cc79ecfa755daad6484a2763ca44890b'
 bio: ""
 published: true
 authorIsRacker: true
