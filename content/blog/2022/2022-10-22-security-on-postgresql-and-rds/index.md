@@ -9,7 +9,7 @@ bio: ""
 published: true
 authorIsRacker: true
 categories:
-    - Postgresql
+    - Database
     - Security
 metaTitle: "Security on PostgreSQL and RDS"
 metaDescription: "This Document describes how to set up the security in PostgreSQL and AWS Aurora and best practices."
