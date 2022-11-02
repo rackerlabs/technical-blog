@@ -9,7 +9,7 @@ bio: ""
 published: true
 authorIsRacker: true
 categories:
-    - SQL Server
+    - Database
     - Security
 metaTitle: "SQL Server Security"
 metaDescription: "Security has always been a pressing concern even for the most seasoned DBA. Regardless of versions and Editions, Majorly the SQL databases are constantly under threat as they hold sensitive data and that is where the malicious hackers want access to."
