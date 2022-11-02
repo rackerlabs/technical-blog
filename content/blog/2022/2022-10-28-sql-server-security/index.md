@@ -18,7 +18,7 @@ ogDescription: "Security has always been a pressing concern even for the most se
 slug: "sql-server-security"
 
 ---
-Security has always been a pressing concern even for the most seasoned DBA. Regardless of versions and editions,  SQL databases are majorly  under constant threat as they hold sensitive data, and that is what the malicious hackers want access to.
+Security has always been a pressing concern even for the most seasoned DBA. Regardless of versions and editions,  SQL databases are under constant threat as they hold sensitive data, and that is what the malicious hackers want to access.
 
 <!--more-->
 
