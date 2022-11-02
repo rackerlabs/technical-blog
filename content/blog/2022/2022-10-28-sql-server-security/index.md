@@ -18,8 +18,6 @@ ogDescription: "Security has always been a pressing concern even for the most se
 slug: "sql-server-security"
 
 ---
-#### Introduction 
-
 Security has always been a pressing concern even for the most seasoned DBA. Regardless of versions and editions,  SQL databases are majorly  under constant threat as they hold sensitive data, and that is what the malicious hackers want access to.
 
 <!--more-->
@@ -28,8 +26,8 @@ Security has always been a pressing concern even for the most seasoned DBA. Rega
 There are mainly 3 levels which require security 
 
 - Server 
--	Database 
--	Object 
+- Database 
+- Object 
 
 **Server Level**: Server is the topmost level in connecting to the SQL Instances / databases.
 
@@ -53,7 +51,7 @@ There are mainly 3 levels which require security
 #### SQL Servers allows 2 Types of Logins
 1.	Windows Login 
 2.	SQL Server Login
-- **Windows Login**: It is a domain user / AD user / local ddmin / Windows admin
+- **Windows Login**: It is a domain user / AD user / local admin / Windows admin
 - **SQL Login**: This will be created inside the SQL Server with a user ID and a password.
 
 #### SQL Server Authentication and Authorization:
@@ -64,7 +62,7 @@ SQL Server supports 2 Types of authentication
 1.	Windows level authentication
 2.	SQL Server level authentication
 
-Every user who wants to connect to a server / database must exist with a username / login name and a strong password.
+Every user who wants to connect to a server / the database must exist with a username / login name and a strong password.
 
 #### Windows Authentication:
 	Windows authentication is integrated with an Active Directory where the username / login name must exist under the same. When a Windows user tries to access the SQL Instance, the SQL Server Database Engine validates the credentials of the user against the Windows Principal Token. Once a user is validated against the Windows Principal Token, they will not be needed to provide separate SQL credentials until and unless the user is from an untrusted domain.
