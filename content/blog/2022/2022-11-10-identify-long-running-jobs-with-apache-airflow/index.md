@@ -9,7 +9,7 @@ bio: ""
 published: true
 authorIsRacker: true
 categories:
-    - Apache
+    - GCP
     - Automation
     
 metaTitle: "Identify Long Running Jobs with Apache Airflow"
