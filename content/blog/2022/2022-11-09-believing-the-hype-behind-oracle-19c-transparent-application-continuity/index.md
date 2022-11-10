@@ -196,7 +196,7 @@ While it is certainly possible to relocate the database service as part of insta
 - **Test 7**:  Session has an update or delete in progress when the service is relocated.
 - **Result**:  Session state is saved and the transaction replayed on the new instance.  Generally takes about as long as the original update, plus rollback, plus original update again.
 
-      *4.2.2 UCP*
+ *4.2.2 UCP*
 
 - **Test 1**:  Sessions in the connection pool are idle, service is relocated.
 - **Result**:  Sessions are automatically (gradually) moved to new instance within a few seconds.
