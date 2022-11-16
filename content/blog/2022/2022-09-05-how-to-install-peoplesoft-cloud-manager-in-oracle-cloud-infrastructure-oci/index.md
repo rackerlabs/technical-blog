@@ -33,7 +33,7 @@ PeopleSoft Cloud Manager is a framework to provision and  manage PeopleSoft envi
 ### Prerequisites:
 -	One should have subscription to Oracle Cloud Infrastructure
 -	Create a Virtual Cloud Network (VCN) with related resources like Subnets, Internet Gateway, Route Table and Default Security list
--	Edit the security lists to allow access to ports to be used in PeopleSoft Cloud Manager instance
+-	Edit the security lists  to allow access to ports to be used in PeopleSoft Cloud Manager instance
 
 ### Minimum Requirements to manage PeopleSoft Applications using PeopleSoft Cloud Manager:
 
