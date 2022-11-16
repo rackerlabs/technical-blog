@@ -4,7 +4,7 @@ title: "How to Install PeopleSoft Cloud Manager in Oracle Cloud Infrastructure (
 date: 2022-09-16
 comments: true
 author: Saikiran Munigela
-authorAvatar: 'https://secure.gravatar.com/avatar/'
+authorAvatar: 'https://secure.gravatar.com/avatar/e3e44d025b5e8ab89333215a0424dc08'
 bio: ""
 published: true
 authorIsRacker: true
