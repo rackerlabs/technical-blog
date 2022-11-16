@@ -4,7 +4,7 @@ title: "Setup Autonomous DB Monitoring in OMC"
 date: 2022-09-22
 comments: true
 author: Venkata Gogineni
-authorAvatar: 'https://secure.gravatar.com/avatar/'
+authorAvatar: 'https://secure.gravatar.com/avatar/9e51ecbb063f9454b1de2217cc5b0dff'
 bio: ""
 published: true
 authorIsRacker: true
