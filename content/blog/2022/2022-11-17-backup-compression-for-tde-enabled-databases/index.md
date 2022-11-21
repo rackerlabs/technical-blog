@@ -4,7 +4,7 @@ title: "Backup Compression for TDE-enabled Databases"
 date: 2022-11-17
 comments: true
 author: LKD Naidu
-authorAvatar: 'https://secure.gravatar.com/avatar/c995a09e236f55b82451a9f8a6add9ad'
+authorAvatar: 'https://secure.gravatar.com/avatar/'
 bio: ""
 published: true
 authorIsRacker: true
