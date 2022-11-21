@@ -1,30 +1,29 @@
 ---
 layout: post
-title:"Backup Compression for TDE-enabled Databases"
+title: "Backup Compression for TDE-enabled Databases"
 date: 2022-11-17
 comments: true
-author: LKD Naidu
-authorAvatar:'https://secure.gravatar.com/avatar/'
+author: Oliver Fletcher
+authorAvatar: 'https://secure.gravatar.com/avatar/c995a09e236f55b82451a9f8a6add9ad'
 bio: ""
 published: true
 authorIsRacker: true
 categories:
     - Databases
-    - SQL Server
+    - SQL
 metaTitle: "Backup Compression for TDE-enabled Databases"
-metaDescription: "TheSQL Server 2008 and later versions provide many powerful features, and among those, Backup Compression and Transparent Data Encryption (TDE) are very useful to compress your backups and Enable the encryption at database level. However, if  we use both these options on the same database then we have the limitation of leveraging both these features up to SQL 2016 version."
+metaDescription: "The SQL Server 2008 and later versions provide many powerful features, and among those, Backup Compression and Transparent Data Encryption (TDE) are very useful to compress your backups and Enable the encryption at database level. However, if  we use both these options on the same database then we have the limitation of leveraging both these features up to SQL 2016 version."
 ogTitle: "Backup Compression for TDE-enabled Databases"
-ogDescription: "TheSQL Server 2008 and later versions provide many powerful features, and among those, Backup Compression and Transparent Data Encryption (TDE) are very useful to compress your backups and Enable the encryption at database level. However, if  we use both these options on the same database then we have the limitation of leveraging both these features up to SQL 2016 version."
-slug: "backup-compression-for-tde-enabled-databases "
-
+ogDescription: "The SQL Server 2008 and later versions provide many powerful features, and among those, Backup Compression and Transparent Data Encryption (TDE) are very useful to compress your backups and Enable the encryption at database level. However, if  we use both these options on the same database then we have the limitation of leveraging both these features up to SQL 2016 version."
+slug: "backup-compression-for-tde-enabled-databases"
 ---
 
-TheSQL Server 2008 and later versions provide many powerful features, and among those, Backup Compression and Transparent Data Encryption (TDE) are very useful to compress your backups and Enable the encryption at database level. However, if  we use both these options on the same database then we have the limitation of leveraging both these features up to SQL 2016 version.
+The SQL Server 2008 and later versions provide many powerful features, and among those, Backup Compression and Transparent Data Encryption (TDE) are very useful to compress your backups and Enable the encryption at database level. However, if  we use both these options on the same database then we have the limitation of leveraging both these features up to SQL 2016 version.
 
 <!--more-->
 
 ### Introduction
-And I will discuss these very limitations and the solution for this blog. 
+I will discuss these very limitations and the solution for this blog. 
 
 Recently, we faced issues on TDE-enabled databases related to enabled backup compression. Log shipping was configured and working fine on TDE enabled database initially but due to some reasons, Log shipping was broken. We have tried to fix the issue by restoring the Full/Diff/Log backups from prod to DR server, yet the issue was not fixed, and different errors kept popping up in each phase. 
 - Environment: SQL Server 2016 
