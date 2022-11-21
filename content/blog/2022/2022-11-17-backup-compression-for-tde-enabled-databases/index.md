@@ -26,7 +26,7 @@ The SQL Server 2008 and later versions provide many powerful features, and among
 
 I will discuss these very limitations and the solution for this blog. 
 
-Recently, we faced issues on TDE-enabled databases related to enabled backup compression. Log shipping was configured and working fine on TDE enabled database initially but due to some reasons, Log shipping was broken. We have tried to fix the issue by restoring the Full/Diff/Log backups from prod to DR server, yet the issue was not fixed, and different errors kept popping up in each phase. 
+Recently, we faced issues on TDE- enabled databases related to enabled backup compression. Log shipping was configured and working fine on TDE enabled database initially but due to some reasons, Log shipping was broken. We have tried to fix the issue by restoring the Full/Diff/Log backups from prod to DR server, yet the issue was not fixed, and different errors kept popping up in each phase. 
 - Environment: SQL Server 2016 
 While restoring log backup files on the DR server we got the following error. 
 
