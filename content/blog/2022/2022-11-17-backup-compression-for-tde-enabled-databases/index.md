@@ -54,7 +54,7 @@ Backup database LKD to disk=’Path’ with Format, MAXTRANSFERSIZE= 65537  , st
 
 After restoring the above backup file on DR successfully, take a few log backups using the format option and restore ON DR successfully. 
 
-<u>  By implementing the above steps, Log shipping starts working!</u>
+ By implementing the above steps, Log shipping starts working!
 
 #### Improvement
 
