@@ -5,7 +5,7 @@ date: 2022-11-28
 comments: true
 author: LKD Naidu
 authorAvatar: 'https://secure.gravatar.com/avatar/'
-bio: ""
+bio: " "
 published: true
 authorIsRacker: true
 categories:
