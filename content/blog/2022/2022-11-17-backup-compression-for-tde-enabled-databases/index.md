@@ -1,19 +1,19 @@
 ---
 layout: post
-title: "Backup Compression for TDE-enabled Databases"
+title: "Backup Compression for TDE enabled Databases"
 date: 2022-11-28
 comments: true
 author: LKD Naidu
-authorAvatar: 'https://secure.gravatar.com/avatar/'
+authorAvatar: 'https://secure.gravatar.com/avatar/xyz'
 bio: ""
 published: true
 authorIsRacker: true
 categories:
     - Databases
     - SQL Server
-metaTitle: "Backup Compression for TDE-enabled Databases"
+metaTitle: "Backup Compression for TDE enabled Databases"
 metaDescription: "The SQL Server 2008 and later versions provide many powerful features, and among those, Backup Compression and Transparent Data Encryption (TDE) are very useful to compress your backups and Enable the encryption at database  level."
-ogTitle: "Backup Compression for TDE-enabled Databases"
+ogTitle: "Backup Compression for TDE enabled Databases"
 ogDescription: "The SQL Server 2008 and later versions provide many powerful features, and among those, Backup Compression and Transparent Data Encryption (TDE) are very useful to compress your backups and Enable the encryption at database level."
 slug: "backup-compression-for-tde-enabled-databases"
 
