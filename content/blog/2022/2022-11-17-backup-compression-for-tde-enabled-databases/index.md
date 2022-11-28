@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Backup Compression for TDE-enabled Databases"
-date: 2022-11-28
+date: 2022-11-17
 comments: true
 author: LKD Naidu
 authorAvatar: 'https://secure.gravatar.com/avatar/'
