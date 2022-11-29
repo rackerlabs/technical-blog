@@ -1,19 +1,17 @@
 ---
 layout: post
-title: "Backup Compression for TDE-enabled Databases"
-date: 2022-11-17
 comments: true
 author: LKD Naidu
-authorAvatar: 'https://secure.gravatar.com/avatar/'
+authorAvatar: 'https://secure.gravatar.com/avatar/xyz'
 bio: ""
 published: true
 authorIsRacker: true
 categories:
     - Databases
     - SQL Server
-metaTitle: "Backup Compression for TDE-enabled Databases"
+metaTitle: "Backup Compression for TDE enabled DBs"
 metaDescription: "The SQL Server 2008 and later versions provide many powerful features, and among those, Backup Compression and Transparent Data Encryption (TDE) are very useful to compress your backups and Enable the encryption at database  level."
-ogTitle: "Backup Compression for TDE-enabled Databases"
+ogTitle: "Backup Compression for TDE enabled DBs"
 ogDescription: "The SQL Server 2008 and later versions provide many powerful features, and among those, Backup Compression and Transparent Data Encryption (TDE) are very useful to compress your backups and Enable the encryption at database level."
 slug: "backup-compression-for-tde-enabled-databases"
 
@@ -27,7 +25,7 @@ The SQL Server 2008 and later versions provide many powerful features, and among
 
 I will discuss these very limitations and the solution for this blog. 
 
-Recently, we faced issues on TDE-enabled databases related to enabled backup compression. Log shipping was configured and working fine on TDE enabled database initially but due to some reasons, Log shipping was broken. We have tried to fix the issue by restoring the Full/Diff/Log backups from prod to DR server, yet the issue was not fixed, and different errors kept popping up in each phase. 
+Recently, we faced issues on TDE-enabled databases related to enabled backup compression. Log shipping was configured, and working fine on TDE enabled database initially but due to some reasons, Log shipping was broken. We have tried to fix the issue by restoring the Full/Diff/Log backups from prod to DR server, yet the issue was not fixed, and different errors kept popping up in each phase. 
 - Environment: SQL Server 2016 
 While restoring log backup files on the DR server we got the following error. 
 
