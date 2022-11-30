@@ -128,15 +128,6 @@ SELECT * from cdc.[fn_cdc_get_all_changes_...] (@from_lsn, @to_lsn, 'all')
 By following the above steps, one can reconfigure change data capture with same settings with which it was configured. This article is useful in cases where one is not able to fix the errors in CDC jobs and wants to reconfigure change data capture from scratch. It is also useful in migration cases where one need to configure change data capture on new servers with same set of tables and settings as on existing one.
 
 
-
-
-
-
-### Conclusion
-
-We should use Format and MAXTRANSFERSIZE options while taking compression backup on TDE enabled database and backup files should be in a single file to restore on other servers. Hope you will find this blog helpful and are able to reconfigure  log shipping on TDE enabled database hassle free. 
-
-
 <a class="cta purple" id="cta" href="https://www.rackspace.com/data/managed-sql">Learn about Rackspace Managed SQL Databases.</a>
 
 <a class="cta purple" id="cta" href="https://www.rackspace.com/data/databases"> Learn about Rackspace Database Services.</a>
