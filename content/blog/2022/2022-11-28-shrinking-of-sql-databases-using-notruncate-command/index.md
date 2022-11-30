@@ -31,12 +31,12 @@ We received a request from a customer to review the SQL server database disk uti
 
 Though the recommendation was not to shrink the data file, yet the customer insisted that we shrink the data file. Hence, we started by shrinking the data file into smaller chunks by using the following command.
 
-{{<highlight sql>}}
+```
 USE [Test]
 GO
 DBCC SHRINKFILE (N'Test_data' , 1024, TRUNCATEONLY)
 GO
-{{</highlight sql>}}
+```
 
 ***TRUNCATE ONLY***
 
@@ -47,13 +47,13 @@ By using the above method, we almost claimed 250 GB successfully. After that shr
 
 Finally, we executed the dbcc shrink file command with the notruncate option to rearrange the data and create free space at end of the data file.
 
-{{<highlight sql>}}
+```
 
 USE [Test]
 GO
 DBCC SHRINKFILE (N'Test_data' , Notruncate)
 GO
-{{</highlight sql>}}
+```
 
 
 #### Data before Notruncate:
