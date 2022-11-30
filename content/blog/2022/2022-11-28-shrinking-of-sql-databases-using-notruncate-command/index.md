@@ -40,7 +40,7 @@ GO
 
 ***TRUNCATE ONLY***
 
-The command helps free the space at the end of the file to the operating system. This option doesn't move pages inside the data file, and it shrinks only to the last assigned extent.
+The command helps free the space at the end of the file for the operating system. This option doesn't move pages inside the data file, and it shrinks only to the last assigned extent.
 By using the above method, we almost claimed 250 GB successfully. After that shrinking is not getting processed even running for several days. After understanding the data file architecture, it was identified that DBCC SHRINKFILE (N'Test_data' , 1024, TRUNCATEONLY) **releases the free space at the end of the data file and it doesn’t release the remaining space in the middle of the data file.** 
 
 ***DBCC Shrinkfile with Notruncate***
