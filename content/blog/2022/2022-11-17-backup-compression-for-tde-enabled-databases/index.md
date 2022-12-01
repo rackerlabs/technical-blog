@@ -5,7 +5,7 @@ date: 2022-11-17
 comments: true
 author: LKD Naidu
 authorAvatar: 'https://secure.gravatar.com/avatar/9b61fbb0583b6296493dcfd3ce360e19'
-bio: ""
+bio: "SQL Server Performance Tuning Expert - Specialist"
 published: true
 authorIsRacker: true
 categories:
