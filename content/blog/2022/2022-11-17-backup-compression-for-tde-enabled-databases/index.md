@@ -5,7 +5,7 @@ date: 2022-11-17
 comments: true
 author: LKD Naidu
 authorAvatar: 'https://secure.gravatar.com/avatar/9b61fbb0583b6296493dcfd3ce360e19'
-bio: "SQL Server Performance Tuning Expert - Specialist"
+bio: "SQL Server Performance Tuning Expert - Specialist. I am a Database technologist and SQL Server professional with years of IT and SQL Server experience. I am Microsoft Certified Professional and my areas of expertise are SQL Server disaster recovery, auditing, and compliance , Performance tuning , Designing & implementing High availability solutions and  DB Migration, providing RCA  to customers. The technologies currently working on are SQL Server, PowerShell, T-SQL, Oracle and AWS an Azure."
 published: true
 authorIsRacker: true
 categories:
