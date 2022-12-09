@@ -3,8 +3,8 @@ layout: post
 title: "Backup SQL database to blob container and restore it to another Server"
 date: 2022-12-08
 comments: true
-author: Ravi Agarwal
-authorAvatar: 'https://secure.gravatar.com/avatar/67808fd0fb7fb16112fdb8e9c6e93e67'
+author: Anil Kumar
+authorAvatar: 'https://secure.gravatar.com/avatar/3f1352f21438061d35ff20470433f3da'
 bio: ""
 published: true
 authorIsRacker: true
