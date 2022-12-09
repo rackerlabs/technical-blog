@@ -76,15 +76,12 @@ Now go to the security + networking section under storage account open Access ke
 
 Open query analyzer from SSMS. Give the credential name, Storage account name and paste the secret key that you copied earlier from the storage account access keys. Now execute the following statement to create a credential for the blob container. 
 
-{{< highlight sql >}}
-
-
+```
 CREATE CREDENTIAL [DBBackupCred] 
 WITH IDENTITY = 'sqlrestore123'  -- Storage Account Name
 ,SECRET = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX==' -- Access key
 GO
-
-{{< /highlight >}}
+```
 
 <img src=Picture5.png title="" alt="">
 
@@ -106,13 +103,13 @@ Restore SQL DB from Blob container:
 
 Open query analyzer from SSMS. Give the credential name, Storage account name and paste the secret key that you copied earlier from the storage account access keys. Now execute the following statement and create the credential for the blob container. 
 
-{{< highlight sql >}}
+```
 
 CREATE CREDENTIAL [DBBackupCred] 
 WITH IDENTITY = 'sqlrestore123'  -- Storage Account Name
 ,SECRET = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX==' -- Access key
 GO
-{{< /highlight >}}
+```
 
 **NOTE:** *The same query/statement is executed on both servers with the same secret key.*
 
@@ -126,14 +123,14 @@ Go to the blob container, and list down the available backups in the container. 
 
 Open query analyzer from SSMS. Give the credential name, Storage account name and paste the secret key that you copied earlier from the storage account access keys. Now execute the following statement to restore the backup from the blob container. 
 
-{{< highlight >}}
+```
 
 CREATE CREDENTIAL [DBBackupCred] 
 WITH IDENTITY = 'sqlrestore123'  -- Storage Account Name
 ,SECRET = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX==' -- Access key
 GO
+```
 
-{{< /highlight >}}
 
 <img src=Picture10.png title="" alt="">
 
