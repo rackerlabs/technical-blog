@@ -32,7 +32,7 @@ ________________________________________________________________________________
 
 2. Create the init file in $ORACLE_HOME/hs/admin as follows:
 
- {{< highlight sql >}}
+ ```
 [oracle@ip_machine admin]$ cat initORADB.ora
 HS_FDS_CONNECT_INFO = ORADB
 HS_FDS_SHAREABLE_NAME = /usr/lib64/libodbc.so
@@ -43,7 +43,7 @@ HS_NLS_LENGTH_SEMANTICS = CHAR
 HS_NLS_NCHAR = UCS2
 HS_FDS_PROC_IS_FUNC = TRUE
 HS_FDS_RESULTSET_SUPPORT = TRUE
-{< /highlight>}
+```
 
 ```
 set LD_LIBRARY_PATH=/opt/microsoft/msodbcsql17/lib64:/usr/lib64:/apps/oracle/product/12.2.0/dbhome_1/lib
@@ -71,7 +71,7 @@ AutoTranslate=No
 
 4. Create the listener or add it to the existing listener. In this case, I am creating a new listener and initializing the same. 
 
-{{< highlight sql >}}
+```
 MSSQL =
  (DESCRIPTION_LIST =
   (DESCRIPTION =
@@ -87,7 +87,7 @@ SID_LIST_MSSQL =
   (ENVS = "LD_LIBRARY_PATH=/opt/microsoft/msodbcsql17/lib64/libmsodbcsql-17.5.so.2.1:/opt/microsoft/msodbcsql17/lib64:/usr/lib64:/apps/oracle/product/12.2.0/dbhome_1/lib")
  )
 )
-{{< highlight >}}
+```
 
 5.  Add the TNS Entry in $ORACLE_HOME/network/admin
 ```
