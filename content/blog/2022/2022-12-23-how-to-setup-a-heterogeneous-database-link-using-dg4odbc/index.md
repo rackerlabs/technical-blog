@@ -20,10 +20,11 @@ slug: "how-to-setup-a-heterogeneous-database-link-using-dg4odbc"
 
 ---
 
-#### Introduction
+
 
 Nowadays companies use different database technologies for keeping their data and often they need to access data from one data source to another data source. However, as the data is on different database products, it does not work, and this takes up lots of effort on part of the developer to intermix data between different databases.
 <!--more-->
+#### Introduction
 
 This blog discusses how one can access data with cross-platform/cross-technology databases using the Database Link object. Through the following example, I will explain how to access data between ORACLE and an MS-SQL database using DBLINK. 
 ____________________________________________________________________________________________
