@@ -22,7 +22,7 @@ slug: "rds-instance-and-read-replica"
 The blog discusses how to configure Relational Database Service (RDS) instances and their read replica. It also explains how to promote read replicas to a new standalone instance. 
 <!--more-->
 
-. Read replica is useful when we have reporting applications that are only using the select command on the database. Read replicas cannot be used for the update or delete operation and these are just used for reporting purposes. However, before getting into the configuration steps, let’s understand RDS a little better. 
+Read replica is useful when we have reporting applications that are only using the select command on the database. Read replicas cannot be used for the update or delete operation and these are just used for reporting purposes. However, before getting into the configuration steps, let’s understand RDS a little better. 
 
 **Amazon RDS: What is RDS?**
 
