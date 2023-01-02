@@ -4,7 +4,7 @@ title: "RDS Instance and Read replica"
 date: 2022-12-29
 comments: true
 author: Vinay Kumar
-authorAvatar: 'https://secure.gravatar.com/avatar/fe760f04d55e5c342a5c0150d92085eb'
+authorAvatar: 'https://secure.gravatar.com/avatar/c49d4c48e0b6672a4e74e5ddc72af910'
 bio: ""
 published: true
 authorIsRacker: true
