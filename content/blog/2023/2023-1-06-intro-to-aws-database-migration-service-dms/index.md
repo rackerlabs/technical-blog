@@ -19,7 +19,7 @@ slug: "intro-to-aws-database-migration-service-dms"
 
 ---
 
-This blog introduces the AWS database migration service, a cloud-based tool, used extensively for migrating databases to the cloud.
+This blog introduces the AWS database migration  service, a cloud-based tool, used extensively for migrating databases to the cloud.
 <!--more-->
 
 #### Introduction
