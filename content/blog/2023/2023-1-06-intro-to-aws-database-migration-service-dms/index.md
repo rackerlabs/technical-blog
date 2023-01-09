@@ -40,7 +40,7 @@ When migrating the database as per the scenario, DMS is not alone which is being
 The following tools can be used as per the requirements:
 -	AWS DMS (Database migration service)
 -	Schema conversion tool (SCT)
--	Migration playbooks (best practices & migration templates)
+-	Migration playbooks (best practices &  migration templates)
 
 
 **Type of migration and tools**
