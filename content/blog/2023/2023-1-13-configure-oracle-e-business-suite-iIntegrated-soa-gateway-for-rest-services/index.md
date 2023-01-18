@@ -19,7 +19,7 @@ slug: "configure-oracle-e-business-suite-integrated-soa-gateway-for-rests-servic
 
 ---
 
-If we are planning to use Rest Services provided by Integrated SOA Gateway (ISG), the first step is to ensure that our EBS instance is configured to use it. The prerequisite is that we should know the E-Business Suite concepts, Patching and backend components
+If we are planning to use Rest Services provided by Integrated SOA Gateway (ISG), the first step is to ensure that our EBS instance is configured to use it. The prerequisite is that we should know the E-Business Suite concepts, patching and backend components.
 <!--more-->
 
 #### Introduction
