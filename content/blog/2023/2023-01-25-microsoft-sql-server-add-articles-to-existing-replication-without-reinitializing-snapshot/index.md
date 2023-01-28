@@ -245,37 +245,7 @@ GO
 
 --11.Monitor the replication for sometime. 
 
-{{ < /highlight> }}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+{{ < /highlight > }}
 
 
 <a class="cta purple" id="cta" href="https://www.rackspace.com/data/managed-sql">Learn about Rackspace Managed SQL Databases.</a>
