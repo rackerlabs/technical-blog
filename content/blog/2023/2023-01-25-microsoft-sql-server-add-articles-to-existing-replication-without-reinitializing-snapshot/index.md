@@ -33,7 +33,7 @@ The following are the various kinds of memory tuning methods that are available:
 **What we are trying to achieve:** 
 
 Adding a fresh article to a replication is always a tedious task and specially when publisher is big in size or we have customizations in the subscription level. We don’t want to spend hours on reinitializing entire subscription or lose all customization happening on the subscriber for business needs.
-For such cases we have a option to add article in exiting publication without generating the whole snapshot. Let's see how we can accomplish this.  
+For such cases we have a option  to add article in exiting publication without generating the whole snapshot. Let's see how we can accomplish this.  
 
 
 **Existing Replication details:-**
