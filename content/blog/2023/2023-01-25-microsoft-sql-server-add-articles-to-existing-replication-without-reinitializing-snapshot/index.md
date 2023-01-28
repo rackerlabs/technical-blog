@@ -99,15 +99,14 @@ For such cases we have a option to add article in exiting publication without ge
 
 Scripts Used for Demo:
 
-{{< highlight sql>}}
 
 /********************Steps to add articles in to exiting replication ********************/
 
---1.	Ensure exiting replication is healthy.  
---2.	First, change the allow_anonymous property of the publication to FALSE
+1.	Ensure exiting replication is healthy.  
+2.	First, change the allow_anonymous property of the publication to FALSE
 /*       Note :- Anonymous subscriptions can be created for the given publication, and immediate_sync must also be true. 
 Cannot be changed for peer-to-peer publications. */
- 
+ ```
 USE AdventureWorks2019 -- <Replace Your DB Name>
 GO
 EXEC sp_changepublication
@@ -115,14 +114,14 @@ EXEC sp_changepublication
 @property = N'allow_anonymous',
 @value = 'FALSE'
 GO
-
---3.	Next, disable change immediate_sync
+```
+3. Next, disable change immediate_sync
 /*Note :- Immediate_sync feature instructs Replication to maintain Snapshot BCP files and distributed transactions 
 in the Distribution database should a new subscriber be created (or reinit) within the Retention period.  By default, 
 this information is purged as soon as existing subscribers receive the transactions.  By keeping the Snapshot and transactions for hours or days, 
 new subscribers can 1) Use old snapshot files, and 2) apply all pending changes since the snapshot.  New Subscribers (or reinit) 
 would not need to have a �fresh� snapshot generated.*/
-
+```
 USE AdventureWorks2019 -- <Replace Your DB Name>
 GO
 EXEC sp_changepublication
@@ -130,9 +129,9 @@ EXEC sp_changepublication
 @property = N'immediate_sync',
 @value = 'FALSE'
 GO
-
- --4.	Add article and invalidate the snapshot (New articles :- [Production].[Product] and [Person].[Person])
-
+```
+ 4.	Add article and invalidate the snapshot (New articles :- [Production].[Product] and [Person].[Person])
+```
 USE AdventureWorks2019 -- <Replace Your DB Name>
 GO
 EXEC sp_addarticle
@@ -148,9 +147,9 @@ EXEC sp_addarticle
 @source_owner = N'Person',
 @source_object =N'Person',
 @force_invalidate_snapshot=1
-
---5.Refresh Subscription so that we can generate new snapshot 
-
+```
+5. Refresh Subscription so that we can generate new snapshot 
+```
 USE AdventureWorks2019 -- <Replace Your DB Name>
 Go
 Exec sp_addsubscription
@@ -162,17 +161,17 @@ Exec sp_addsubscription
 @update_mode = N'read only'
 GO 
 
---Note --
+**Note :-**
 /*When using pull subscription use below command  */
 --EXEC sp_refreshsubscriptions @publication = N'Adventureworks2016-Pub'
 
 --6.Now, start Snapshot Agent using Replication monitor for publisher "AdvWorks-Publication"
 	 
---Note :- You should notice that bulk-insert statements are created only for 2 article instead of all articles.
---7.	Check if log reader agent is running and replicating transactions.
+**--Note :-** You should notice that bulk-insert statements are created only for 2 article instead of all articles.
+7.	Check if log reader agent is running and replicating transactions.
 
---8.Ensure articles are added to publisher � Now you can see 15 articles in the list. 
-
+8. Ensure articles are added to publisher � Now you can see 15 articles in the list. 
+```
 use AdventureWorks2019
 go
 SELECT
@@ -222,19 +221,20 @@ FROM dbo.syspublications sp
 JOIN dbo.sysarticles sa ON sp.pubid = sa.pubid
 JOIN dbo.syssubscriptions s ON sa.artid = s.artid
 JOIN master.dbo.sysservers srv ON s.srvid = srv.srvid
+```
 
 
-
---9.First, change the immediate_sync property of the publication to true
-
+9. First, change the immediate_sync property of the publication to true
+```
 USE AdventureWorks2019 -- <Replace Your DB Name>
 Go
 EXEC sp_changepublication
 @publication = N'AdvWorks-Publication',
 @property = N'immediate_sync',
 @value = 'TRUE'
-
---10.Next, enable change allow_anonymous
+```
+10. Next, enable change allow_anonymous
+```
 USE AdventureWorks2019 -- <Replace Your DB Name>
 Go
 EXEC sp_changepublication
@@ -242,8 +242,8 @@ EXEC sp_changepublication
 @property = N'allow_anonymous',
 @value = 'TRUE'
 GO
+```
 
-{{ < / highlight > }}
 
 11. Monitor the replication for sometime. 
 
