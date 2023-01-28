@@ -245,36 +245,7 @@ GO
 
 --11.Monitor the replication for sometime. 
 
-{{ < /highlight> }}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+{{ < / highlight > }}
 
 
 
