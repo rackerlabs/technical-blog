@@ -243,9 +243,11 @@ EXEC sp_changepublication
 @value = 'TRUE'
 GO
 
---11.Monitor the replication for sometime. 
-
 {{ < / highlight > }}
+
+11. Monitor the replication for sometime. 
+
+
 
 
 <a class="cta purple" id="cta" href="https://www.rackspace.com/data/managed-sql">Learn about Rackspace Managed SQL Databases.</a>
