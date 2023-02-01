@@ -4,7 +4,7 @@ title: "Microsoft SQL Server - Add Articles to Existing Replication Without Rein
 date: 2023-01-25
 comments: true
 author: Varun Jha
-authorAvatar: 'https://secure.gravatar.com/avatar/'
+authorAvatar: 'https://secure.gravatar.com/avatar/000f2b0d724501b27116cd5f3007e171'
 bio: ""
 published: true
 authorIsRacker: true
