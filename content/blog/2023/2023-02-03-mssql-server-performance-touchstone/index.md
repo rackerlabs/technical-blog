@@ -12,7 +12,7 @@ categories:
     - MS SQL
     - Dtabases
 metaTitle: "MSSQL Server Performance Touchstone"
-metaDescription: "This blog covers detailed information about the solution we have developed using a variety of software to assist DBA team members to create quick graphical presentations of performance data collected from the performance monitor using following tasks:"
+metaDescription: "This blog covers detailed information about the solution we have developed using a variety of software to assist the DBA team members to create quick graphical presentations of performance data collected from the performance monitor using following tasks:"
 ogTitle: "MSSQL Server Performance Touchstone"
 ogDescription: "This blog covers detailed information about the solution we have developed using a variety of software to assist DBA team members to create quick graphical presentations of performance data collected from the performance monitor using following tasks"
 slug: "MSSQL Server Performance Touchstone"
@@ -129,7 +129,7 @@ Once you've collected the performance data, you can use the .blg file to convert
 
 #### Conclusion
 
-This article covers detailed information about the solution we have  created to help DBA Team members create quick graphical presentations of performance data collected from the performance monitor. These graphs can be used for multiple purposes, like resource utilization report creation for SQL Server, performance benchmarking for SQL Server, and resource utilization comparison between two servers. 
+This article covers detailed information about the solution we have created to help DBA Team members create quick graphical presentations of performance data collected from the performance monitor. These graphs can be used for multiple purposes, like resource utilization report creation for SQL Server, performance benchmarking for SQL Server, and resource utilization comparison between two servers. 
 
 
 
