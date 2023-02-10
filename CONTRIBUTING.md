@@ -42,50 +42,86 @@ have a GitHub account, you can sign up for one [https://github.com/join](https:/
 This method of contributing content is intended for Business Rackers that have minimum experience with GitHub and no development experience.
 It is ideal for Rackers in the company that need to add blog posts related to their customer facing products or services.
 
+#### Create a New Branch
 - Visit the main page of the rackerlabs/technical-blog github repository https://github.com/rackerlabs/technical-blog
 - Click the blue branches link
+
 <img width="402" alt="01_branches-link" src="https://user-images.githubusercontent.com/14296817/218183305-92a84714-0bc8-45d3-b4b7-77c8a6d4ff55.png">
-- Click the green `New Branch` button
-- <img width="662" alt="02-new-branch-button" src="https://user-images.githubusercontent.com/14296817/218183692-4b1f2809-1e47-423e-b523-2b158e530add.png">
-- Enter a new branch name (No spaces and No Caps allowed)
-- <img width="686" alt="03-name-new-branch" src="https://user-images.githubusercontent.com/14296817/218183973-4b9b92b5-0bf4-40fd-94a5-c9479c03512f.png">
-- Click the Green `Create Branch` button
-- You should see your new branch name listed in `Your Branches` and/or `Active Branches`
-- <img width="471" alt="04_new-branch-name-listed" src="https://user-images.githubusercontent.com/14296817/218184804-8d51e549-e804-4c58-a0dd-a235f1bfee98.png">
+
+Click the green `New Branch` button
+<img width="662" alt="02-new-branch-button" src="https://user-images.githubusercontent.com/14296817/218183692-4b1f2809-1e47-423e-b523-2b158e530add.png">
+
+Enter a new branch name (No spaces and No Caps allowed) and click the Green `Create Branch` button
+<img width="686" alt="03-name-new-branch" src="https://user-images.githubusercontent.com/14296817/218183973-4b9b92b5-0bf4-40fd-94a5-c9479c03512f.png">
+
+You should see your new branch name listed in `Your Branches` and/or `Active Branches`
+<img width="471" alt="04_new-branch-name-listed" src="https://user-images.githubusercontent.com/14296817/218184804-8d51e549-e804-4c58-a0dd-a235f1bfee98.png">
+
 - Click your new branch name in blue link
-- The branch dropdown at top of page will change from master to your new branch name. This means that your are looking at new alternate branch, timeline or copy of files that you can add/edit/delete.
-- <img width="528" alt="05_new-branch-shown-in-dropdown" src="https://user-images.githubusercontent.com/14296817/218185403-fdc56275-acc4-4d4c-aa66-d18cef7e57a8.png">
-- Select the `Content` folder to step into that directory
-- <img width="324" alt="06_select-content-folder" src="https://user-images.githubusercontent.com/14296817/218185586-1b30d2be-3d76-4b1d-bc6e-d1543a2f1c46.png">
-- Select the `Blog` folder to step into that directory
-- <img width="315" alt="07_select-blog-folder" src="https://user-images.githubusercontent.com/14296817/218185684-236d1900-1018-41ec-8031-5cc76c3eba20.png">
-- Select the folder/directory of the year that your new blog post will relate to
-- <img width="302" alt="08_select-the-year-folder" src="https://user-images.githubusercontent.com/14296817/218186166-486cbd05-a329-42d5-8629-36fa87e333b3.png">
-- You will see a list of folders (One for each article) that belong to the same year/parent folder
+- The branch dropdown at top of page will change from master to your new branch name.
+- This means you are looking at a new alternate branch, timeline or copy of files that you can add/edit/delete.
+<img width="528" alt="05_new-branch-shown-in-dropdown" src="https://user-images.githubusercontent.com/14296817/218185403-fdc56275-acc4-4d4c-aa66-d18cef7e57a8.png">
+
+#### Navigate to the Blog Content files
+Select the `Content` folder to step into that directory
+<img width="324" alt="06_select-content-folder" src="https://user-images.githubusercontent.com/14296817/218185586-1b30d2be-3d76-4b1d-bc6e-d1543a2f1c46.png">
+
+Select the `Blog` folder to step into that directory
+<img width="315" alt="07_select-blog-folder" src="https://user-images.githubusercontent.com/14296817/218185684-236d1900-1018-41ec-8031-5cc76c3eba20.png">
+
+Select the folder/directory of the year that your new blog post will relate to
+<img width="302" alt="08_select-the-year-folder" src="https://user-images.githubusercontent.com/14296817/218186166-486cbd05-a329-42d5-8629-36fa87e333b3.png">
+
+You will see a list of folders (One for each article) that belong to the same year/parent folder
 
 ### Creating a New Folder and Article
-- At this point you should see the breadcrumbs or folder path at the top of the page which indicates you are inside a folder/directory for the year you selected.
+At this point you should see the breadcrumbs or folder path at the top of the page which indicates you are inside a folder/directory for the year you selected.
 <img width="1396" alt="10_create-new-file-dropdown" src="https://user-images.githubusercontent.com/14296817/218186527-6db4e622-f037-4ac1-9b8b-90dbb0cfa9c2.png">
+
 - Select the `Add File` drop-down from the right of the page
 - Choose `Create New File`
 - In the blank field to the left, enter a folder name that follows the naming convention of the year, month, day, and article title
 <img width="1342" alt="11_add-title-for-article-folder" src="https://user-images.githubusercontent.com/14296817/218187163-c371775a-f993-4c16-800a-f713a7ff10c7.png">
-- Add a `/` forward slash to the end of the title and you will be allowed to enter a name of the article file
-- <img width="1353" alt="12_add-article-title" src="https://user-images.githubusercontent.com/14296817/218187690-c95f4813-6557-4455-b786-685978152304.png">
-- Enter `index.md` for the article title
-- <img width="1373" alt="13_name-article-index" src="https://user-images.githubusercontent.com/14296817/218187789-268f119b-cbb6-4f10-9721-1f13d8fea0a7.png">
+
+Add a `/` forward slash to the end of the title and you will be allowed to enter a name of the article file
+<img width="1353" alt="12_add-article-title" src="https://user-images.githubusercontent.com/14296817/218187690-c95f4813-6557-4455-b786-685978152304.png">
+
+Enter `index.md` for the article title
+<img width="1373" alt="13_name-article-index" src="https://user-images.githubusercontent.com/14296817/218187789-268f119b-cbb6-4f10-9721-1f13d8fea0a7.png">
 - The white body of the page below shows the `Edit file` tab with line numbers for this new `.md` file that uses the Markdown language
 - Enter your content in this tab with basic text
 
-Entering Blog Article Content
+#### Entering Blog Article Content
 - To indicate headings you can use `#` followed by a space to indicate an H1, an `##` followed by a space to indicate and H2 and so on.
 - To indicate bullet lists you can enter a dash `-` at the start of a new line
 - To add an image you can click and drag a file from your desktop to the specific line, or use the attach files gray bar at the bottom of the page
 - <img width="614" alt="14_bottom-commit-panel-example" src="https://user-images.githubusercontent.com/14296817/218189444-6aa5ef85-1fd3-48ca-ab85-b2f7ed60972e.png">
 
-Make a Commit to save your changes
+#### Make a Commit to save your changes
 At the bottom of your new page is a `Commit changes` panel.
+![15_bottom-commit-panel-example](https://user-images.githubusercontent.com/14296817/218196002-78e4a3a8-7c14-423c-890e-86452d311764.png)
 
+- Enter a commit message that is a short title describing your changes. Only capitalize the first letter and use present tense.
+- Choose your email associated to your github account if not already displayed
+- IMPORTANT Choose the first radio button option that displays the new branch you are on.
+- DO NOT PROCEED IF THE OPTION SAYS "MASTER" or "MAIN" as the branch name.
+- If your branch name is listed correctly, then select the `Commit Changes` button
+
+#### Create a Pull Request for your new Article
+Your changes exist on a new branch and you will need to create a "Pull Request". A Pull Request is used to request that your changes be merged into the master branch. A Pull Request is required to be reviewed by a fellow Racker.
+- Go to the main technical-blog GitHub repository page https://github.com/rackerlabs/technical-blog
+- You should see a green banner that shows you have made changes
+- Select the green "Compare and Create Pull Request" button
+- Add a title to your Pull Request
+- Add an initial comment/description
+- Review the files and changes at the bottom of the page
+- If everything is correct, the click the green "Create Pull Request" button
+
+#### Pull Request Review
+Have your designated Racker, Leader, Manager or Subject Matter Expert (SME) review your pull request. They can review, recommend changes, and approve. An approval is required for your changes to be accepted and merged into the master branch that is published to the live technical blog website.
+
+#### Merging a Pull Request
+Merging a Pull Request can be done by you, or your designated reviewer once an approval has been applied.
 
 ### Contributing with your own GitHub Fork
 #### Create a fork of this repository
