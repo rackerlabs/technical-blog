@@ -29,15 +29,19 @@ Cisco has confirmed that this vulnerability does not affect the following Cisco 
 * NX-OS Software (native docker is supported in all releases) 
 
 For a Cisco network device to be affected by the vulnerability, it must meet all following requirements: 
-Affected platforms: 
+
+
+1. Affected platforms: 
 * 800 Series Industrial ISRs
 * CGR1000 Compute Modules
 * IC3000 Industrial Compute Gateways (releases 1.2.1 and later run native docker)
 * IR510 WPAN Industrial Routers 
 
-Operation System: IOS-XE 
-Affected Feature: IOx feature enabled/running (disabled by default) 
-Dockerd not in present as a part of the IOx feature. 
+2. Operation System: IOS-XE 
+
+3. Affected Feature: IOx feature enabled/running (disabled by default) 
+
+4. Dockerd not in present as a part of the IOx feature. 
 
 Our security teams are actively monitoring the situation and, to date, have not identified any associated impacted systems. 
 
