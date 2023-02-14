@@ -4,7 +4,6 @@ title: "Rackspace Response to Cisco Security Advisory"
 date: 2023-02-14
 comments: true
 author: Marc Nourani
-authorAvatar: 'https://secure.gravatar.com/avatar/'
 bio: ""
 published: true
 authorIsRacker: truew
@@ -30,14 +29,14 @@ Cisco has confirmed that this vulnerability does not affect the following Cisco 
 * NX-OS Software (native docker is supported in all releases) 
 
 For a Cisco network device to be affected by the vulnerability, it must meet all following requirements: 
-1. Affected platforms: 
-  a. 800 Series Industrial ISRs 
-  b. CGR1000 Compute Modules 
-  c. IC3000 Industrial Compute Gateways (releases 1.2.1 and later run native docker) 
-  d. IR510 WPAN Industrial Routers 
-2. Operation System: IOS-XE 
-3. Affected Feature: IOx feature enabled/running (disabled by default) 
-4. Dockerd not in present as a part of the IOx feature. 
+Affected platforms: 
+* 800 Series Industrial ISRs
+* CGR1000 Compute Modules
+* IC3000 Industrial Compute Gateways (releases 1.2.1 and later run native docker)
+* IR510 WPAN Industrial Routers 
+Operation System: IOS-XE 
+Affected Feature: IOx feature enabled/running (disabled by default) 
+Dockerd not in present as a part of the IOx feature. 
 
 Our security teams are actively monitoring the situation and, to date, have not identified any associated impacted systems. 
 
