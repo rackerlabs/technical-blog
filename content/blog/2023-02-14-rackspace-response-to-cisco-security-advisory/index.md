@@ -34,6 +34,7 @@ Affected platforms:
 * CGR1000 Compute Modules
 * IC3000 Industrial Compute Gateways (releases 1.2.1 and later run native docker)
 * IR510 WPAN Industrial Routers 
+
 Operation System: IOS-XE 
 Affected Feature: IOx feature enabled/running (disabled by default) 
 Dockerd not in present as a part of the IOx feature. 
