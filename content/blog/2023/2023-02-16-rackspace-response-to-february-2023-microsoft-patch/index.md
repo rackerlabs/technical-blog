@@ -24,14 +24,14 @@ Rackspace Technology is aware of recently published security vulnerabilities imp
 
 For those customers not using Rackspace Managed Patching we recommend patching devices as soon as possible to mitigate these vulnerabilities. Customers not using our Managed Patching Service can install the latest Windows Updates themselves or can request that Rackspace perform patching by contacting Rackspace Support.
 
+Below you will find a partial list of vulnerabilities Rackspace is highlighting impacting Microsoft Windows Graphic Component, Word, Servers, and Exchange. For a full list of February Security, you can follow this link: https://msrc.microsoft.com/update-guide/releaseNote/2023-Feb
+
 | Vulnerability          | Details                                                                                           |
 |------------------------|---------------------------------------------------------------------------------------------------|
 | **CVE-2023-21689**     | Microsoft Protected Extensible Authentication Protocol (PEAP) Remote Code Execution Vulnerability |
 | **Impact**             | Remote Code Execution |
 | **Affected Software:** | All supported versions of Windows |
 | **More Information:**  | https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-21689 |
-
-Below you will find a partial list of vulnerabilities Rackspace is highlighting impacting Microsoft Windows Graphic Component, Word, Servers, and Exchange. For a full list of February Security, you can follow this link: https://msrc.microsoft.com/update-guide/releaseNote/2023-Feb
 
 | Vulnerability          | Details                                                                                           |
 |------------------------|---------------------------------------------------------------------------------------------------|
