@@ -18,7 +18,7 @@ slug: "rackspace-response-to-f5-security-advisory"
 
 ---
 
-Rackspace Technology is aware of recently published security vulnerabilities impacting F5 BIG-IP devices on code versions 13+. Our partner F5 published an article on February 2023, available here: https://my.f5.com/manage/s/article/K000130496.
+Rackspace Technology is  aware of recently published security vulnerabilities impacting F5 BIG-IP devices on code versions 13+. Our partner F5 published an article on February 2023, available here: https://my.f5.com/manage/s/article/K000130496.
 
 Rackspace standard F5 deployments are designed with an architecture that prevents public access to management network segments, management IPs, and management APIs. Our best practices do not expose the iControl SOAP API to the public internet. 
 
