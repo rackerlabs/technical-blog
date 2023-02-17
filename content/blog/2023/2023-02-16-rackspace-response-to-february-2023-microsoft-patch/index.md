@@ -14,7 +14,7 @@ metaTitle: "Rackspace Response to February 2023 Microsoft Patch Tuesday Security
 metaDescription: "Rackspace Technology is aware of recently published security vulnerabilities impacting the Microsoft Windows Operating Systems. On February 14, 2023 Microsoft issued patches for 80 vulnerabilities, of which 9 are critical and 3 are actively exploited as 0-days."
 ogTitle: "Rackspace Response to February 2023 Microsoft Patch Tuesday Security Advisory"
 ogDescription: "Rackspace Technology is aware of recently published security vulnerabilities impacting the Microsoft Windows Operating Systems. On February 14, 2023 Microsoft issued patches for 80 vulnerabilities, of which 9 are critical and 3 are actively exploited as 0-days."
-slug: "rackspace-response-to-f5-security-advisory"
+slug: "rackspace-response-to-february-2023-microsoft-patch-tuesday-security-advisory"
 
 ---
 
