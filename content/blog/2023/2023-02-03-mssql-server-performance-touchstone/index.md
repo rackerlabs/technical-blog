@@ -10,7 +10,7 @@ published: true
 authorIsRacker: true
 categories:
     - MS SQL
-    - Dtabases
+    - Databases
 metaTitle: "MSSQL Server Performance Touchstone"
 metaDescription: "This blog covers detailed information about the solution we have developed using a variety of software to assist DBA team members to create quick graphical presentations of performance data collected from the performance monitor using following tasks:"
 ogTitle: "MSSQL Server Performance Touchstone"
