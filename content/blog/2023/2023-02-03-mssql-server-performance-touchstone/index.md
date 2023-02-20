@@ -4,7 +4,7 @@ title: "MSSQL Server Performance Touchstone"
 date: 2023-02-03
 comments: true
 author: Sachin Dehran
-authorAvatar: 'https://secure.gravatar.com/avatar/'
+authorAvatar: 'https://secure.gravatar.com/avatar/dbf3a52993c5efa89836f9920a1be7bb'
 bio: ""
 published: true
 authorIsRacker: true
