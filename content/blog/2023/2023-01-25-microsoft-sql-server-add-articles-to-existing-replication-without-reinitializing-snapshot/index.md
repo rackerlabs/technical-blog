@@ -97,14 +97,15 @@ For such cases we have a option to add article in exiting publication without ge
 <img src=Picture12.png title="" alt="">
 
 
-Scripts Used for Demo:
+Scripts Used for Demo: 
 
+{{< highlight sql>}}
 
 
 /********************Steps to add articles in to exiting replication ********************/
 
-1.	Ensure exiting replication is healthy.  
-2.	First, change the allow_anonymous property of the publication to FALSE
+--1.	Ensure exiting replication is healthy.  
+--2.	First, change the allow_anonymous property of the publication to FALSE
 /*       Note :- Anonymous subscriptions can be created for the given publication, and immediate_sync must also be true. 
 Cannot be changed for peer-to-peer publications. */
  
@@ -116,7 +117,7 @@ EXEC sp_changepublication
 @value = 'FALSE'
 GO
 
-3.	Next, disable change immediate_sync
+--3.	Next, disable change immediate_sync
 /*Note :- Immediate_sync feature instructs Replication to maintain Snapshot BCP files and distributed transactions 
 in the Distribution database should a new subscriber be created (or reinit) within the Retention period.  By default, 
 this information is purged as soon as existing subscribers receive the transactions.  By keeping the Snapshot and transactions for hours or days, 
@@ -131,7 +132,7 @@ EXEC sp_changepublication
 @value = 'FALSE'
 GO
 
- 4.	Add article and invalidate the snapshot (New articles :- [Production].[Product] and [Person].[Person])
+ --4.	Add article and invalidate the snapshot (New articles :- [Production].[Product] and [Person].[Person])
 
 USE AdventureWorks2019 -- <Replace Your DB Name>
 GO
@@ -149,7 +150,7 @@ EXEC sp_addarticle
 @source_object =N'Person',
 @force_invalidate_snapshot=1
 
-5.Refresh Subscription so that we can generate new snapshot 
+--5.Refresh Subscription so that we can generate new snapshot 
 
 USE AdventureWorks2019 -- <Replace Your DB Name>
 Go
@@ -244,6 +245,9 @@ EXEC sp_changepublication
 GO
 
 --11.Monitor the replication for sometime. 
+
+{{< /highlight >}}
+
 
 
 
