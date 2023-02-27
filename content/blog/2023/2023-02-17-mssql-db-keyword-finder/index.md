@@ -19,12 +19,13 @@ slug: "mssql-db-keyword-finder"
 
 ---
 
-     This blog covers detailed information about the solution script we can use to search for the location of specific data in multiple MSSQL databases at the table and column level. 
+This blog covers detailed information about the solution script we can use to search for the location of specific data in multiple MSSQL databases at the table and column level. 
 
 <!--more-->
 
 #### Introduction
--	This is a T-SQL script where we need to provide just the keyword we are looking for, and after executing in master DB context, it will return us a systematic result set in a table that contains the location (database, schema, table, column) where the data containing the provided keyword is present.rs.
+
+- This is a T-SQL script where we need to provide just the keyword we are looking for, and after executing in master DB context, it will return us a systematic result set in a table that contains the location (database, schema, table, column) where the data containing the provided keyword is present.rs.
 
 
 #### Why did we create this solution?
