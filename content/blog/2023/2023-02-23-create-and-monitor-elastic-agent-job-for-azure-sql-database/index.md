@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Create and monitor elastic agent job for Azure SQL database."
-date: 2022-12-08
+date: 2023-02-27
 comments: true
 author: Ravi Agarwal
 authorAvatar: 'https://secure.gravatar.com/avatar/67808fd0fb7fb16112fdb8e9c6e93e67'
