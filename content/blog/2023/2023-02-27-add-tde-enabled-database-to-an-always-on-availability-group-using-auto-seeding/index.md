@@ -37,7 +37,7 @@ TDE encrypts database data files with a Database Encryption Key secured by a Cer
 - **Auto Seeding –** 
 With SQL Server 2016, a new technique known as Automatic Seeding was added to add databases to availability groups. With this technique, full database backups are performed using Microsoft SQL Server Virtual Device Interface (VDI), which are then streamed over the network to all accessible secondary replicas where they are restored and added to the availability group.
 
-- Availability
+- **Availability
 TDE was included in Microsoft SQL Server 2008, 2008 R2, 2012, 2014, 2016, and 2017 in Evaluation, Developer, Enterprise, and Datacentre versions. In SQL Server 2019, Microsoft made it available in the Standard edition as well.
 
 *In this blog, will demonstrate how to (Presuming database is already TDE enabled) -* 
