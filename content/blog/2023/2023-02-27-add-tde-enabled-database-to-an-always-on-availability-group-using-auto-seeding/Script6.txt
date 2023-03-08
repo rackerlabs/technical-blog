@@ -1,0 +1,5 @@
+-- Add database to AG
+
+Use master
+GO
+ALTER AVAILABILITY GROUP [AGTest] ADD DATABASE [TDEDemo];

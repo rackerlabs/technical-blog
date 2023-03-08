@@ -1,0 +1,9 @@
+-- Backup the certificate and private key on the primary replica to restore on Secondary replica
+
+Use Master
+Go
+BACKUP CERTIFICATE TDEDemoCert
+TO FILE='\\SQLNODE2\TDECertificate\TDEDemoCert'
+WITH PRIVATE KEY (FILE='\\SQLNODE2\TDECertificate\TDEDemoCert_private',
+ENCRYPTION BY PASSWORD='qLswuG?tIJ*gemop_3*I')
+GO
