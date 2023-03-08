@@ -1,0 +1,3 @@
+-- Validate the progress using DMV
+
+select local_database_name, remote_machine_name, role_desc,internal_state_desc, transfer_rate_bytes_per_second/1024/1024 as transfer_rate_MB_per_second ,transferred_size_bytes/1024/1024 as transferred_size_MB,database_size_bytes/1024/1024 as Database_Size_MB,is_compression_enabled from sys.dm_hadr_physical_seeding_stats
