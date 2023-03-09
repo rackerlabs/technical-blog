@@ -54,6 +54,23 @@ TDE was included in Microsoft SQL Server 2008, 2008 R2, 2012, 2014, 2016, and 20
 
 <img src=Picture2.png title="" alt="">
 
+-- Validate transparent data encryption in SQL Server.
+
+
+{< highlight sql >}
+
+USE MASTER;
+GO
+SELECT db.name,db.is_encrypted,dm.encryption_state,dm.percent_complete,
+dm.key_algorithm,dm.key_length
+FROM sys.databases db
+LEFT OUTER JOIN 
+sys.dm_database_encryption_keys dm
+ON db.database_id = dm.database_id where is_encrypted = 1;
+GO
+
+{< /highlight> }
+
 State 3 in encryption state means database is encrypted.
 *Run following query to get further details about TDE -* 
 
