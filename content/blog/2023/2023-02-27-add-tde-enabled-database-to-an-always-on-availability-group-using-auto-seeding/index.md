@@ -71,7 +71,7 @@ GO
 
 {< /highlight> }
 
-State 3 in encryption state means database is encrypted.
+State 3 in encryption state means that database is encrypted.
 *Run following query to get further details about TDE -* 
 
 <img src=Picture3.png title="" alt="">
