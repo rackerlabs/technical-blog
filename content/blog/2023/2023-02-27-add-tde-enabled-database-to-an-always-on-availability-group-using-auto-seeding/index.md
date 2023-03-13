@@ -83,7 +83,7 @@ Once done, enable automatic seeding mode by running below code on Primary replic
 
 <img src=Picture8.png title="" alt="">
 
-- Step 2. Step 2 **Enable Trace Flag for compression in Automatic Seeding for Always on Availability Groups on Primary**
+- Step 2. Step 2 **Enable  Trace Flag for compression in Automatic Seeding for Always on Availability Groups on Primary**
 
 By default, compression is not enabled for the automatic seeding streaming. We can add trace flag 9657 to enable the compression either in start-up parameter or using DBCC TRACEON command. 
 Below command will enable the trace flag at a global level.
