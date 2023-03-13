@@ -1,8 +1,0 @@
--- Create certificate on the secondary replica from the primary replica certificate
-Use Master
-GO
-CREATE CERTIFICATE SQLAG2_TDE_certificate
-FROM FILE = '\\SQLNODE2\TDECertificate\TDEDemoCert'
-WITH Private KEY (
-FILE = '\\SQLNODE2\TDECertificate\TDEDemoCert_private',
-Decryption BY Password = 'qLswuG?tIJ*gemop_3*I');
