@@ -4,7 +4,7 @@ title: "Add TDE enabled database to an Always on Availability group using AutoSe
 date: 2023-02-27
 comments: true
 author: Santosh Kumar
-authorAvatar: 'https://secure.gravatar.com/avatar/'
+authorAvatar: 'https://secure.gravatar.com/avatar/650cefb31c34e6b6bec39b3b46053bec'
 bio: ""
 published: true
 authorIsRacker: true
