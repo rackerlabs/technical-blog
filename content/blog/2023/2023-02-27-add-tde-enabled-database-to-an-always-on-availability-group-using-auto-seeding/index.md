@@ -4,7 +4,7 @@ title: "Add TDE enabled database to an Always on Availability group using AutoSe
 date: 2023-02-27
 comments: true
 author: Santosh Kumar
-authorAvatar: 'https://secure.gravatar.com/avatar/650cefb31c34e6b6bec39b3b46053bec'
+authorAvatar: 'https://secure.gravatar.com/avatar/'
 bio: ""
 published: true
 authorIsRacker: true
@@ -27,7 +27,7 @@ This blog explains the steps needed to set up Transparent Data Encryption (TDE) 
 #### Introduction
 
 - **Always on -** 
-Beginning with SQL Server 2012, A new high availability and DR solution was introduced, Always On. By offering a failover environment for availability databases that failover jointly and are a part of an availability group, it improves availability.
+Beginning with SQL Server 2012, A new high availability and DR solution was introduced, Always On. By offering a failover environment for availability databases that failover jointly and are a part of an availability group, it improves  availability.
 
 - **TDE -**
 The "data at rest" encryption technology known as SQL Server Transparent Data Encryption, or TDE, is made available as an Enterprise Edition feature in SQL Server 2008. Instead of encrypting the data directly using the Advanced Encryption Standard (AES) or Triple DES (3DES), The physical files utilised by the SQL Server database's data, logs, backups, and snapshots are encrypted in real time by TDE.
@@ -37,7 +37,7 @@ TDE encrypts database data files with a Database Encryption Key secured by a Cer
 - **Auto Seeding –** 
 With SQL Server 2016, a new technique known as Automatic Seeding was added to add databases to availability groups. With this technique, full database backups are performed using Microsoft SQL Server Virtual Device Interface (VDI), which are then streamed over the network to all accessible secondary replicas where they are restored and added to the availability group.
 
-- Availability
+- **Availability
 TDE was included in Microsoft SQL Server 2008, 2008 R2, 2012, 2014, 2016, and 2017 in Evaluation, Developer, Enterprise, and Datacentre versions. In SQL Server 2019, Microsoft made it available in the Standard edition as well.
 
 *In this blog, will demonstrate how to (Presuming database is already TDE enabled) -* 
@@ -54,12 +54,18 @@ TDE was included in Microsoft SQL Server 2008, 2008 R2, 2012, 2014, 2016, and 20
 
 <img src=Picture2.png title="" alt="">
 
+-- Validate transparent data encryption in SQL Server.
+
+[Script1.txt](https://github.com/rackerlabs/technical-blog/files/10933152/Script1.txt)
+
+
 State 3 in encryption state means database is encrypted.
 *Run following query to get further details about TDE -* 
 
 <img src=Picture3.png title="" alt="">
 
 **Step 2 - Backup the certificate and private key on the primary replica to restore on Secondary replica using query**
+[Script2.txt](https://github.com/rackerlabs/technical-blog/files/10933175/Script2.txt)
 
 <img src=Picture4.png title="" alt="">
 
@@ -67,8 +73,10 @@ State 3 in encryption state means database is encrypted.
     <img src=Picture5.png title="" alt="">
 
 **Step 3 - Create certificate on the secondary replica from the primary replica certificate (Step 2) using query**
-
+[Script3.txt](https://github.com/rackerlabs/technical-blog/files/10933182/Script3.txt)
+    
 <img src=Picture6.png title="" alt="">
+[Script4.txt](https://github.com/rackerlabs/technical-blog/files/10933260/Script4.txt)
 
 -	**Add Database in Always on AG using AutoSeeding mode.**
 Distributing encryption certificates among all the participating replicas is necessary before adding a database to AG.
@@ -81,9 +89,12 @@ In our case, we have executed on both SQLNode1 and SQLNode2.
 
 Once done, enable automatic seeding mode by running below code on Primary replica for each replica in the AG - 
 
+[Script5.txt](https://github.com/rackerlabs/technical-blog/files/10933298/Script5.txt)
+
+
 <img src=Picture8.png title="" alt="">
 
-- Step 2. Step 2 **Enable Trace Flag for compression in Automatic Seeding for Always on Availability Groups on Primary**
+- Step 2. **Enable Trace Flag for compression in Automatic Seeding for Always on Availability Groups on Primary**
 
 By default, compression is not enabled for the automatic seeding streaming. We can add trace flag 9657 to enable the compression either in start-up parameter or using DBCC TRACEON command. 
 Below command will enable the trace flag at a global level.
@@ -101,6 +112,7 @@ Databases that are already encrypted using TDE encryption cannot be added to an 
 <img src=Picture10.png title="" alt="">
 
 This means that we need to add the database to the Availability group using TSQL using query -
+[Script6.txt](https://github.com/rackerlabs/technical-blog/files/10933311/Script6.txt)
 
 
 <img src=Picture11.png title="" alt="">
@@ -109,6 +121,10 @@ This means that we need to add the database to the Availability group using TSQL
 <img src=Picture12.png title="" alt="">
 
 Step 4. **Validate the progress using DMV using query -**
+
+[Script7.txt](https://github.com/rackerlabs/technical-blog/files/10933318/Script7.txt)
+
+
 
 Step 5. **Validate AG Status in Dashboard**
 
