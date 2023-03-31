@@ -64,11 +64,11 @@ The Rackspace Elastic Engineering team determined that replacing the core AMI bu
 
 #### The Rackspace Elastic Engineering solution has some key improvements, specifically:
 
--	Decoupled architecture supporting asynchronous steps and retry mechanisms.
--	Robust governance and security controls, including encryption enforcement.
--	Automated security scanning integration and codified approvals workflow following principles of least privilege.
--	Reusable components to support various architectures and versions of operating systems.
--	Automated ChatOps notifications with a custom Slack app supporting user interactions.
+1.	Decoupled architecture supporting asynchronous steps and retry mechanisms.
+2.	Robust governance and security controls, including encryption enforcement.
+3.	Automated security scanning integration and codified approvals workflow following principles of least privilege.
+4.	Reusable components to support various architectures and versions of operating systems.
+5.	Automated ChatOps notifications with a custom Slack app supporting user interactions.
 
 
 
