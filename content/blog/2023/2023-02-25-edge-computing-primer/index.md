@@ -71,6 +71,3 @@ This has given birth to the latest paradigm in distributed systems, Edge Computi
    Centralized cloud computing is still one of the least expensive and most effective ways to store or archive large data sets or process non-time-sensitive information. However, for operations that require low latency or near real-time data processing, such as device control and orchestration, edge compute in a distributed cloud is the way to go. When used together, centralized cloud and edge cloud architectures can provide more efficient workflows, allowing businesses to process and store actionable data in the network tier that makes the most sense for any given application, workload, or use case. Rackspace Technology has worked with clients from prototype to production, applying our collection of hardware, cloud platforms, application, and analytics accelerators to fast track the development of their IoT & Edge solutions
 
 <a class="cta purple" id="cta" href="https://www.rackspace.com/applications/iot-edge"> Learn more about our Edge capabilities 
-    
-Use the Feedback tab to make any comments or ask questions. You can also
-[start a conversation with us](https://www.rackspace.com/contact).
