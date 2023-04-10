@@ -41,11 +41,10 @@ To implement observability – let’s consider a use case where you want to mon
 
 Views used to implement this use case –  
 
-{<highlight sql>}
+```
 
 "SNOWFLAKE"."ACCOUNT_USAGE"."QUERY_HISTORY" 
-
-{< /highlight >}
+```
 
 **Identifying long running queries**
 You can run simple SQL to identify the queries which have run for a long duration and identify warehouses used to run these queries.  
@@ -64,7 +63,7 @@ You can use below SQL to capture long running queries -
 
 You can get the query_ids and warehouse for a long time. Let's gather more details on the same for optimization. You can use below query -
 
-{< highlight sql >}
+```
 
 select  
 * 
@@ -72,11 +71,11 @@ FROM snowflake.account_usage.query_history
 WHERE  
 query_id ='01a6f799-0501-da0c-0046-be83002021de'; 
 
-{< / highlight >}
+```
 
 You can use SQL to identify queries to analyze them for performance tuning or optimization. You can also use ranking to rank the top queries and use them as reporting, dashboard to report to Ops or Engineering teams.   
-{< highlight sql >}
 
+```
 select * from 
 ( 
 select  
@@ -90,8 +89,7 @@ WHERE
 QUERY_TYPE NOT IN ('DESCRIBE', 'SHOW') 
 )long_queries 
 where rank is between 1 and 10; 
-
-{< / highlight >}
+```
 
 **Logging these details on dashboard for monitoring**
 
