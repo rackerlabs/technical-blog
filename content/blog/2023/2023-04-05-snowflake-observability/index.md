@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Snow Flake Observability"
-date: 2023-04-05
+title: "Snowflake Observability"
+date: 2023-04-06
 comments: true
 author: Pooja Kelgaonkar
 authorAvatar: 'https://secure.gravatar.com/avatar/'
