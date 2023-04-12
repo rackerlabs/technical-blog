@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Snow Flake Observability"
+title: "Snowflake Observability"
 date: 2023-04-05
 comments: true
 author: Pooja Kelgaonkar
@@ -11,9 +11,9 @@ authorIsRacker: true
 categories:
     - Snow Flake
     - Data
-metaTitle: "Snow Flake Observability"
+metaTitle: "Snowflake Observability"
 metaDescription: "Snowflake has transformed the way we store, process, and analyze data in the cloud. Like any other technology, it's not resistant to issues."
-ogTitle: "Snow Flake Observability"
+ogTitle: "Snowflake Observability"
 ogDescription: "Snowflake has transformed the way we store, process, and analyze data in the cloud. Like any other technology, it's not resistant to issues."
 slug: "snow-flake-observability"
 
