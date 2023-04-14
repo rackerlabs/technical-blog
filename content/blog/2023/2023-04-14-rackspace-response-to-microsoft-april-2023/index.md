@@ -12,7 +12,7 @@ categories:
     - Windows
     - Security
 metaTitle: "Rackspace Response to April 2023 Microsoft Patch Tuesday Security Advisory . "
-slug: racksoace-response-to- microsot-april-m2023
+slug: rackspace-response-to-microsoft-april-2023
 metaDescription: Rackspace Response to April 2023 Microsoft Patch Tuesday Security Advisory  ""
 
 ---
