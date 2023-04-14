@@ -17,7 +17,7 @@ metaDescription: Rackspace Response to April 2023 Microsoft Patch Tuesday Securi
 
 ---
 
-     This blog covers detailed information about the solution script we can use to search for the location of specific data in multiple MSSQL databases at the table and column level. 
+This blog covers detailed information about the solution script we can use to search for the location of specific data in multiple MSSQL databases at the table and column level. 
 
 <!--more-->
 Rackspace Technology is aware that Microsoft recently published security vulnerabilities impacting Windows Operating Systems and other products. Microsoft issued patches for one actively exploited zero-day vulnerability (CVE-2023-28252) and 97 flaws, of which 7 are classified as critical. A full list of April 2023 Microsoft Patch Tuesday Security Advisories is available here: https://msrc.microsoft.com/update-guide/releaseNote/2023-Apr) 
@@ -38,7 +38,7 @@ Should you have any questions or require assistance in responding to these vulne
 
 
 
-a class="cta purple" id="cta" href="https://www.rackspace.com/data/managed-sql"> Learn about Rackspace Managed SQL Services.</a>
+<a class="cta purple" id="cta" href="https://www.rackspace.com/data/managed-sql"> Learn about Rackspace Managed SQL Services.</a>
 
 <a class="cta purple" id="cta" href="https://www.rackspace.com/data/databases"> Learn about Rackspace Database Services.</a>
 
