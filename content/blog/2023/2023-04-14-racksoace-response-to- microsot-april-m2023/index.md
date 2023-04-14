@@ -31,9 +31,6 @@ Additionally, on 11 April 2023, SAP Security Patch Day saw the release of 19 new
 Our security teams are actively monitoring the situation and will provide any associated updates via this blog. 
 
 Should you have any questions or require assistance in responding to these vulnerabilities, please contact a support Racker via https://www.rackspace.com/login. 
-
- Should you have any questions or require assistance in responding to these vulnerabilities, please contact a support Racker via https://www.rackspace.com/login. 
-
  
 
 
