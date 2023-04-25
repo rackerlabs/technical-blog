@@ -11,14 +11,13 @@ authorIsRacker: true
 categories:
     - Oracle
     -Security
-    
 metaTitle: "Rackspace Advisory for Oracle Application"
 metaDescription: "Rackspace Technology is aware that Oracle recently published the following security vulnerabilities impacting Oracle's GoldenGate"
 ogTitle: "ackspace Advisory for Oracle Applications"
 ogDescription: "Rackspace Technology is aware that Oracle recently published the following security vulnerabilities impacting Oracle's GoldenGate."
 slug: "rackspace-Advisory-for-oraclea pplication"
-
 ---
+
 Rackspace Technology is aware that Oracle recently published the following security
 
 <!--more-->
