@@ -1,5 +1,4 @@
 ---
-l---
 layout: post
 title: "Rebuid System Databases"
 date: 2023-04-25
@@ -10,15 +9,13 @@ bio: ""
 published: true
 authorIsRacker: true
 categories:
-    - Databases
-    - MSSQL
+    -Databases
+    -MSSQL
 metaTitle: "Rebuild System Databases."
 metaDescription: "Sometimes it so happens that we cannot start a SQL Server instance because a system database corruption"
 ogTitle: "rebuild-system-databases"
 ogDescription: "Sometimes it so happens that we cannot start a SQL Server instance because a system database corruption."
 slug: "rebuild-system-databases"
-
-
 ---
 
     Sometimes it so happens that we cannot start a SQL Server instance because a system database corruption.
