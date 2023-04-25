@@ -18,9 +18,6 @@ ogDescription: "Sometimes it so happens that we cannot start a SQL Server instan
 slug: "rebuild-system-databases"
 ---
 
-    Sometimes it so happens that we cannot start a SQL Server instance because a system database corruption.
-
-<!--more-->
 
 #### Introduction
 
