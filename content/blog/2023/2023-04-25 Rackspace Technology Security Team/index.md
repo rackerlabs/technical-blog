@@ -1,6 +1,6 @@
 ---
 layout: post
-title:"Rackspace Advisory for Oracle Applications"
+title: "Rackspace Advisory for Oracle Applications"
 date: 2023-04-24
 comments: true
 author: Marc Nourani
@@ -11,13 +11,13 @@ authorIsRacker: true
 categories:
     - Oracle
     - Security
- metaTitle: "Rackspace Advisory for Oracle Application"
+metaTitle: "Rackspace Advisory for Oracle Application"
 metaDescription: "Rackspace Technology is aware that Oracle recently published the following security vulnerabilities impacting Oracle's GoldenGate"
 ogTitle: "ackspace Advisory for Oracle Applications"
 ogDescription: "Rackspace Technology is aware that Oracle recently published the following security vulnerabilities impacting Oracle's GoldenGate."
-slug: "rackspace-advisory-for-oracle application"
-
+slug: "rackspace-advisory-for-oracle-application"
 ---
+
 Rackspace Technology is aware that Oracle recently published the following security
 
 <!--more-->
