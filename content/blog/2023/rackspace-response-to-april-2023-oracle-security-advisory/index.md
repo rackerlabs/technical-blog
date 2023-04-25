@@ -18,7 +18,7 @@ ogDescription: "Rackspace Technology is aware that Oracle recently published the
 slug: "rackspace-advisory-for-oracle-application"
 ---
 
-Rackspace Technology is aware that Oracle recently published the following security vulnerabilities impacting Oracle's GoldenGate, Fusion Middleware, Hyperion, and other products. One Oracle vulnerability addressed is CVE-2022-22965, otherwise known as the Spring4Shell vulnerability. Spring4Shell is a zero-day vulnerability that was first observed being exploited in April 2022,  which allows threat actors to remotely execute code on Java Spring Framework web applications.
+Rackspace Technology is  aware that Oracle recently published the following security vulnerabilities impacting Oracle's GoldenGate, Fusion Middleware, Hyperion, and other products. One Oracle vulnerability addressed is CVE-2022-22965, otherwise known as the Spring4Shell vulnerability. Spring4Shell is a zero-day vulnerability that was first observed being exploited in April 2022,  which allows threat actors to remotely execute code on Java Spring Framework web applications.
 
  
 
