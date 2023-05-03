@@ -2,7 +2,7 @@
 l---
 layout: post
 title: "Rebuid System Databases"
-date: 2023-04-07
+date: 2023-04-25
 comments: true
 author: LKD Naidu
 authorAvatar: 'https://secure.gravatar.com/avatar/'
@@ -29,7 +29,7 @@ slug: "rebuild-system-databases"
 
 **Rebuilding the MSDB database process:**
 
-1.  First we need to verify the reason of failure in the SQL Error logs or windows logs and troubleshoot accordingly. If database is corrupt then please restore MSDB  database same as a normal user database if backup is available.
+1.  First we need to verify the reason of failure in the SQL Error logs or windows logs and troubleshoot accordingly. If database is corrupt then please restore MSDB  database same as a normal user database if backup is available
 
 <img src=Picture1.png title= "" alt="">
 
