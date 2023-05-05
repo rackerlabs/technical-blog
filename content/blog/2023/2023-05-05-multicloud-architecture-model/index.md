@@ -4,7 +4,7 @@ title: “Multi-Cloud Architecture Models”
 date: 2023-05-05
 comments: true
 author: Scott Beckford
-authorAvatar: 'https://secure.gravatar.com/avatar/'
+authorAvatar: 'https://s.gravatar.com/avatar/e7c2a4f3904d251ef363c37ee9b69fd4?s=80'
 bio: ""
 published: true
 authorIsRacker: true
