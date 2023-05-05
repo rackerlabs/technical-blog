@@ -14,9 +14,9 @@ categories:
     - Azure
     - GCP
 metaTitle: "Multi-Cloud Architecture Models"
-metaDescription: “Demystifying Multi-Cloud Models: Choosing the Right Approach for Your Organization”
+metaDescription: “Demystifying Multi-Cloud Models - Choosing the Right Approach for Your Organization”
 ogTitle: “Multi-Cloud Architecture Models”
-ogDescription: “Demystifying Multi-Cloud Models: Choosing the Right Approach for Your Organization”
+ogDescription: “Demystifying Multi-Cloud Models - Choosing the Right Approach for Your Organization”
 
 ---
 
