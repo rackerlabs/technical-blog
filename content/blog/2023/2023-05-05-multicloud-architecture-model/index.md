@@ -76,8 +76,8 @@ The best-of-breed multi-cloud model involves selecting the best cloud services f
 
 The Active Active model is the hardest of all to successfully achieve, it involves running the same cloud agnostic workload across multiple clouds, this model is well suited to running K8s containerised workloads.
  
-#### Diagram
-An example situation is illustrated in the diagram below, where a fictitious company has chosen AWS as their preferred Single cloud, and expands out the options detailed in the hyperscaler options (1,3,4,5) above.
+### Diagram
+An example situation is illustrated in the diagram below, where a fictitious company has chosen AWS as their preferred Single cloud, and is looking to expand out into a multicloud solution using the hyperscaler models (1,3,4,5) above.
 
 <img src=multicloud-All-in-One.drawio.png title=multi-cloud alt= multi-cloud>
 
