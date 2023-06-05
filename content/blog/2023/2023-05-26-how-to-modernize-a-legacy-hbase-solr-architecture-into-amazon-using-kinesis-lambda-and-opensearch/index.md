@@ -15,10 +15,11 @@ metaTitle: ""How to Modernize a Legacy Hbase/Solr Architecture into Amazon using
 metaDescription: "As technology advances and business requirements change, organizations may find themselves needing to migrate away from legacy data processing systems like HBase, Solr, and HBase Indexer."
 ogTitle: "How to Modernize a Legacy Hbase/Solr Architecture into Amazon using Kinesis, Lambda, and Opensearch"
 ogDescription: "As technology advances and business requirements change, organizations may find themselves needing to migrate away from legacy data processing systems like HBase, Solr, and HBase Indexer."
-slug: "how-to-modernize-a-legacy-hbase-solr-architecture-into-amazon-using-kinesis-lambda-and-opensearch "
+slug: "how-to-modernize-a-legacy-hbase-solr-architecture-into-amazon-using-kinesis-lambda-and-opensearch"
 ---
 
-As technology advances and business requirements change, organizations may find themselves needing to migrate away from legacy data processing systems like HBase, Solr, and HBase Indexer. While these systems may have served their purpose in the past, they may no longer be sufficient for the needs of modern data platforms because of the challenges of scalability and maintenance.  
+As technology advances and business requirements change, organizations may find themselves needing to migrate away from legacy data processing systems like HBase, Solr, and HBase Indexer. While these systems may have served their purpose in the past, they may no longer be sufficient for the needs of modern data platforms because of the challenges of scalability and maintenance. 
+
 <!--more-->
 
 #### Overview
@@ -149,7 +150,7 @@ The bottom workflow describes what it takes to replace the Hbase indexer
 ```
 - b.	If you Type == “Put” (it means it is an insert or update)
 - c.	Look up the Hbase Document by row key
-- i.	Example reference of retrieving a record is here - <img src=Picture6.png title="" alt=""> streaming-endpoint-for-apache-hbase/KinesisHandler.java at main · awslabs/streaming-endpoint-for-apache-hbase 
+- i.	Example reference of retrieving a record is here - streaming-endpoint-for-apache-hbase/KinesisHandler.java at main · awslabs/streaming-endpoint-for-apache-hbase 
 - d.	With the Opensearch API update the entire record (or only the selected fields depending on your business case)
 e.	If Type == “Delete”
 f.	Look up the HBase Document by row key
