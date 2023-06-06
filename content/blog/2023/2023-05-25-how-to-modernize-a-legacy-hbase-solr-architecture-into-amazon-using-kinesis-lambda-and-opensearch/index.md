@@ -11,11 +11,12 @@ authorIsRacker: true
 categories:
     - Data
     - DevOps
-metaTitle: ""How to Modernize a Legacy Hbase/Solr Architecture into Amazon using Kinesis, Lambda, and Opensearch"
+metaTitle: "How to Modernize a Legacy Hbase/Solr Architecture into Amazon using Kinesis, Lambda, and Opensearch"
 metaDescription: "As technology advances and business requirements change, organizations may find themselves needing to migrate away from legacy data processing systems like HBase, Solr, and HBase Indexer."
 ogTitle: "How to Modernize a Legacy Hbase/Solr Architecture into Amazon using Kinesis, Lambda, and Opensearch"
 ogDescription: "As technology advances and business requirements change, organizations may find themselves needing to migrate away from legacy data processing systems like HBase, Solr, and HBase Indexer."
-slug: "how-to-modernize-a-legacy-hbase-solr-architecture-into-amazon-using-kinesis-lambda-and-opensearch "
+slug: "how-to-modernize-a-legacy-hbase-solr-architecture-into-amazon-using-kinesis-lambda-and-opensearch"
+
 ---
 
 As technology advances and business requirements change, organizations may find themselves needing to migrate away from legacy data processing systems like HBase, Solr, and HBase Indexer. While these systems may have served their purpose in the past, they may no longer be sufficient for the needs of modern data platforms because of the challenges of scalability and maintenance.  
@@ -177,7 +178,9 @@ When EMR is provisioned, these are steps that need to be taken during set-up
 "hbase.replication.compression-enabled": "false"
 ```
 3.	Run below command at HBase Shell prompt to add replication peer into HBase
+
 - a.	 add_peer 'Kinesis_endpoint', ENDPOINT_CLASSNAME => 'com.amazonaws.hbase.StreamingReplicationEndpoint'
+
 4.	Run below command at HBase Shell prompt to enable table replication    
 
 - a.	*enable_table_replication "YOUR_BASE_TABLE”*
