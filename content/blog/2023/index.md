@@ -126,7 +126,7 @@ This approach is built in to an accelerator platform created and used by the Rac
 
 
 
-<a class="cta purple" id="cta" href="https://www.rackspace.com/applications/cloud-native">Learn about Rackspace Native Development.</a>
+<a class="cta purple" id="cta" href="https://www.rackspace.com/applications/cloud-native">Learn about Rackspace Cloud Native Development.</a>
 
 
 Use the Feedback tab to make any comments or ask questions. You can also
