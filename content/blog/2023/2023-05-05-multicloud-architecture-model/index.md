@@ -59,23 +59,38 @@ Lets explore the Cloud Operating Model options:
 ### Single Cloud
 
 After choosing a hyperscaler and migrating your business to the cloud, there are many opportunities to rearchitect and refactor applications to really make the most of the cloud native services offered.  Tight integrations to CSP specific tooling really bring great benefits, and for many customers, the high availability and multi-region offerings from each of the CSPs is enough.  On top of that, it is much easier to manage a smaller CCoE when there is only skills and certifications of one cloud provider to factor in.
+
+Pros: A specialised team dealing with Cloud Native tooling can maximise the business benefit moving to cloud.
+Cons: Vendor Lock-in.
  
 ### Hybrid Multi-cloud (Public/Private Cloud + On Premise)
 
 The hybrid multi-cloud model involves using a combination of public cloud, private cloud, and on-premises infrastructure to meet business requirements. This approach allows organisations to leverage the scalability and agility of public clouds while retaining control over sensitive data and critical applications in private or on-premises environments. For example, an organisation may use a public cloud provider for non-sensitive data and applications, a private cloud for sensitive data and regulatory compliance, and on-premises infrastructure for mission-critical workloads.
+
+Pros: Lower latency to your data.
+Cons: Double overheads - this approach still requires an on-premise team and all the associated costs of running a datacentre.
  
 ### Preferred Cloud + Secondary Cloud
 
-There are often business grounds where a business case can be made to use a secondary cloud for specific workloads.  This may be because a certain feature is not available, or a 3rd party partner is involved. Workloads running on the secondary cloud are often managed on a "business case exception" basis.
+There are often business grounds where a business case can be made to use a secondary cloud for specific workloads.  This may be because a certain feature is not available, or a 3rd party partner operates within a specific cloud. Workloads running on the secondary cloud are often managed on a "business case exception" basis.
+
+Pros: Maintain vendor support or specific products and reduce data transfer costs between clouds.
+Cons: Double overheads - Cloud team needs to be proficient in operating two clouds.
  
 ### Distributed Workloads (Best of Breed)
 
-The best-of-breed multi-cloud model involves selecting the best cloud services from different providers for different applications or workloads. This approach allows organizations to leverage the unique strengths of different cloud platforms, such as AWS, Azure, Google Cloud, or other niche providers, to meet specific business requirements. For example, an organisation may choose AWS for its robust machine learning capabilities, Azure for its seamless integration with Microsoft Office tools, and Google Cloud for its data analytics and machine learning capabilities.
+The best-of-breed multi-cloud model involves selecting the best cloud services from different providers for different applications or workloads. This approach allows organizations to leverage the unique strengths of different cloud platforms, such as AWS, Azure, Google Cloud, or other niche providers, to meet specific business requirements. For example, an organisation may choose AWS for its robust machine learning capabilities, Azure for its seamless integration with Microsoft Windows and Office suite, and Google Cloud for its data analytics and machine learning capabilities.
+
+Pros: Most flexibility.  Customise the workload placement strategy to suit your business requirements.  
+Cons: Triple overheads - Cloud team needs to be proficient in operating three clouds.
  
 ### Active-Active Multi-cloud
 
 The Active Active model is the hardest of all to successfully achieve, it involves running the same cloud agnostic workload across multiple clouds, this model is well suited to running K8s containerised workloads.
- 
+
+Pros: near realtime redistribution of workloads possible according to your criteria.  (think, follow the sun around the world using solar green energy, or snap instance pricing) 
+Cons: replace Vendor lock-in with framework/platform/tools lock-in instead.
+
 ### Illustration
 An example situation is illustrated in the diagram below, where a fictitious company has chosen AWS as their preferred Single cloud, and is looking to expand out into a multicloud solution using the hyperscaler models (1,3,4,5) above.
 
