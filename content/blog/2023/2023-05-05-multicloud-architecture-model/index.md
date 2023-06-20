@@ -22,7 +22,6 @@ ogDescription: “Demystifying Multi-Cloud Models - Choosing the Right Approach 
 
 Selecting the right multi-cloud model for your organisation can be tricky, in this blog post, we'll discuss the different types of multi-cloud models and help you determine which one is right for your organisation.
 
-
 <!--more-->
 
 ### Introduction
@@ -37,17 +36,20 @@ Multi-cloud offers many benefits:
 - Best of Breed - CSP specific niche best of … (GCP - K8’s, Azure - Windows, AWS - machine learning)
 
 But also comes with many challenges:
-- Security - a larger attack surface means implementing controls across multiple clouds is a much bigger challenge.
+- Vulnerability - a larger attack surface means implementing controls across multiple clouds is a much bigger challenge.
 - FinOps - cloud native tooling doesn’t provide a cross platform view.
 - Connectivity - private networking across multiple clouds is a real challenge for even the most seasoned network engineers.
 - Compliance - managing compliance across multiple clouds can double or triple the existing whack-a-mole challenge for DevSecOps teams.
 - Cost - cloud costs don’t scale linearly (less discount on savings plans) + internal costs (multiple CCoEs)
-- Requires Multi skilled support teams
+- Training - experienced Multi-cloud engineers come at a price, if you can find them at all!
 - Standardised Account provisioning/Identity and Access Management needs to be carefully thought out to keep good hygiene.
 - Standardised Observability - support teams and business management need a clear and concise view of whats happening at any one time.
+- IAM - Managing user identities, roles, and access privileges across multiple cloud environments requires a centralized IAM strategy.
+- Data Protection - encryption, access controls, and data classification mechanisms must be consistently applied and managed across all clouds to prevent unauthorized access or data leakage.
+- Network Security - secure multicloud connectivity to protect data in transit and prevent unauthorized access requires a well thought design.
+- Architecture Consistency - Organizations must ensure consistent  practices and policies across all cloud providers to maintain a unified and effective security posture.
 
-If you are starting out fresh and wanting to move to a multi-cloud model, from an architectural point of view there are a few choices of operating model which can bring different benefits and different challenges.  
-Selecting the right multi-cloud model for your organisation can be tricky, in this blog post, we'll discuss the different types of multi-cloud models and help you determine which one is right for your organisation.
+### Multi-cloud Operating Models
 
 Lets explore the Cloud Operating Model options:
 1. Single Cloud
@@ -60,26 +62,26 @@ Lets explore the Cloud Operating Model options:
 
 After choosing a hyperscaler and migrating your business to the cloud, there are many opportunities to rearchitect and refactor applications to really make the most of the cloud native services offered.  Tight integrations to CSP specific tooling really bring great benefits, and for many customers, the high availability and multi-region offerings from each of the CSPs is enough.  On top of that, it is much easier to manage a smaller CCoE when there is only skills and certifications of one cloud provider to factor in.
 
-Pros: A specialised team dealing with Cloud Native tooling can maximise the business benefit moving to cloud.
+Pros: Easiest to get started, a specialised team dealing with Cloud Native tooling can maximise the business benefit moving to cloud.
 Cons: Vendor Lock-in.
  
 ### Hybrid Multi-cloud (Public/Private Cloud + On Premise)
 
-The hybrid multi-cloud model involves using a combination of public cloud, private cloud, and on-premises infrastructure to meet business requirements. This approach allows organisations to leverage the scalability and agility of public clouds while retaining control over sensitive data and critical applications in private or on-premises environments. For example, an organisation may use a public cloud provider for non-sensitive data and applications, a private cloud for sensitive data and regulatory compliance, and on-premises infrastructure for mission-critical workloads.
+While not strictly Multi-cloud in the Hyperscaler sense, the hybrid multi-cloud model involves using a combination of public cloud, private cloud, and on-premises infrastructure to meet business requirements. This approach allows organisations to leverage the scalability and agility of public clouds while retaining control over sensitive data and critical applications in private or on-premises environments. For example, an organisation may use a public cloud provider for non-sensitive data and applications, a private cloud for sensitive data and regulatory compliance, and on-premises infrastructure for mission-critical workloads.
 
-Pros: Lower latency to your data.
+Pros: Low latency to data and tight controls over sovereignty.
 Cons: Double overheads - this approach still requires an on-premise team and all the associated costs of running a datacentre.
  
 ### Preferred Cloud + Secondary Cloud
 
 There are often business grounds where a business case can be made to use a secondary cloud for specific workloads.  This may be because a certain feature is not available, or a 3rd party partner operates within a specific cloud. Workloads running on the secondary cloud are often managed on a "business case exception" basis.
 
-Pros: Maintain vendor support or specific products and reduce data transfer costs between clouds.
-Cons: Double overheads - Cloud team needs to be proficient in operating two clouds.
+Pros: Maintain vendor support for specific products and reduce data transfer costs between clouds.
+Cons: Double overheads - Maintaining Two Landing Zones means the Cloud team needs to be proficient in operating two clouds.
  
 ### Distributed Workloads (Best of Breed)
 
-The best-of-breed multi-cloud model involves selecting the best cloud services from different providers for different applications or workloads. This approach allows organizations to leverage the unique strengths of different cloud platforms, such as AWS, Azure, Google Cloud, or other niche providers, to meet specific business requirements. For example, an organisation may choose AWS for its robust machine learning capabilities, Azure for its seamless integration with Microsoft Windows and Office suite, and Google Cloud for its data analytics and machine learning capabilities.
+The distributed workload or best-of-breed multi-cloud model involves selecting the best cloud services from different providers for different applications or workloads. This approach allows organizations to leverage the unique strengths of different cloud platforms, such as AWS, Azure, Google Cloud, or other providers, to meet specific business requirements. For example, an organisation may choose AWS for hosting ec2 linux workloads, Azure for cost efficient Microsoft Windows hosting, and Google Cloud for its data analytics and machine learning capabilities.
 
 Pros: Most flexibility.  Customise the workload placement strategy to suit your business requirements.  
 Cons: Triple overheads - Cloud team needs to be proficient in operating three clouds.
@@ -88,7 +90,7 @@ Cons: Triple overheads - Cloud team needs to be proficient in operating three cl
 
 The Active Active model is the hardest of all to successfully achieve, it involves running the same cloud agnostic workload across multiple clouds, this model is well suited to running K8s containerised workloads.
 
-Pros: near realtime redistribution of workloads possible according to your criteria.  (think, follow the sun around the world using solar green energy, or snap instance pricing) 
+Pros: near realtime redistribution of workloads possible according to your criteria.  (think, follow the sun around the world using solar green energy, or snap instance pricing)
 Cons: replace Vendor lock-in with framework/platform/tools lock-in instead.
 
 ### Illustration
@@ -96,8 +98,11 @@ An example situation is illustrated in the diagram below, where a fictitious com
 
 <img src=multicloud-All-in-One.drawio.png title=multi-cloud alt= multi-cloud>
 
+not discussed is the worst option of running everything in every cloud, as of course this is not a good use of money, time or resources.
 
 ### Conclusion
+However you choose to run your Cloud it must be backed by a solid strategy which understands how utilising the cloud supports your business.  From the cloud strategy, a workload placement strategy can be derived, helping you to choose which workloads should go in which cloud.  Selection criteria might be based on Security and Compliance, Functional Requirements (eg: Windows SQL on Azure), Operational Requirements (Licensing), Infrastructure (linux compute on AWS EC2), Cost, or even sustainability (C02 emissions).
+
 Ultimately, a multi-cloud model can provide companies with greater agility, scalability, and resilience, enabling them to quickly adapt to changing market conditions and drive growth, but it comes at a cost.
-If you want to talk multi-cloud, please send me a private message, or better yet, come and talk to our sales team here at Rackspace, we are always happy to help!
+If you want to talk multi-cloud, please send me a private message, or better yet, come and talk to our team here at Rackspace, we are always happy to help!
 
